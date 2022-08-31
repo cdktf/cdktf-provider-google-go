@@ -1,0 +1,15 @@
+// Prebuilt google Provider for Terraform CDK (cdktf)
+package google
+
+
+type ComputeSecurityPolicyAdvancedOptionsConfig struct {
+	// JSON body parsing. Supported values include: "DISABLED", "STANDARD".
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_security_policy#json_parsing ComputeSecurityPolicy#json_parsing}
+	JsonParsing *string `field:"optional" json:"jsonParsing" yaml:"jsonParsing"`
+	// Logging level. Supported values include: "NORMAL", "VERBOSE".
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_security_policy#log_level ComputeSecurityPolicy#log_level}
+	LogLevel *string `field:"optional" json:"logLevel" yaml:"logLevel"`
+}
+

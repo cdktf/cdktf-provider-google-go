@@ -1,0 +1,11 @@
+// Prebuilt google Provider for Terraform CDK (cdktf)
+package google
+
+
+type ComputeSubnetworkSecondaryIpRange struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_subnetwork#ip_cidr_range ComputeSubnetwork#ip_cidr_range}.
+	IpCidrRange *string `field:"optional" json:"ipCidrRange" yaml:"ipCidrRange"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_subnetwork#range_name ComputeSubnetwork#range_name}.
+	RangeName *string `field:"optional" json:"rangeName" yaml:"rangeName"`
+}
+

@@ -1,0 +1,19 @@
+// Prebuilt google Provider for Terraform CDK (cdktf)
+package google
+
+
+type ComputeResourcePolicySnapshotSchedulePolicySnapshotProperties struct {
+	// Whether to perform a 'guest aware' snapshot.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_resource_policy#guest_flush ComputeResourcePolicy#guest_flush}
+	GuestFlush interface{} `field:"optional" json:"guestFlush" yaml:"guestFlush"`
+	// A set of key-value pairs.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_resource_policy#labels ComputeResourcePolicy#labels}
+	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
+	// Cloud Storage bucket location to store the auto snapshot (regional or multi-regional).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_resource_policy#storage_locations ComputeResourcePolicy#storage_locations}
+	StorageLocations *[]*string `field:"optional" json:"storageLocations" yaml:"storageLocations"`
+}
+

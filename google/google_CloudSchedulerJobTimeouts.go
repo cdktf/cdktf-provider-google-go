@@ -1,0 +1,13 @@
+// Prebuilt google Provider for Terraform CDK (cdktf)
+package google
+
+
+type CloudSchedulerJobTimeouts struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloud_scheduler_job#create CloudSchedulerJob#create}.
+	Create *string `field:"optional" json:"create" yaml:"create"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloud_scheduler_job#delete CloudSchedulerJob#delete}.
+	Delete *string `field:"optional" json:"delete" yaml:"delete"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloud_scheduler_job#update CloudSchedulerJob#update}.
+	Update *string `field:"optional" json:"update" yaml:"update"`
+}
+
