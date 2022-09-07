@@ -30,6 +30,14 @@ type Cloudfunctions2FunctionServiceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudfunctions2_function#min_instance_count Cloudfunctions2Function#min_instance_count}
 	MinInstanceCount *float64 `field:"optional" json:"minInstanceCount" yaml:"minInstanceCount"`
+	// secret_environment_variables block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudfunctions2_function#secret_environment_variables Cloudfunctions2Function#secret_environment_variables}
+	SecretEnvironmentVariables interface{} `field:"optional" json:"secretEnvironmentVariables" yaml:"secretEnvironmentVariables"`
+	// secret_volumes block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudfunctions2_function#secret_volumes Cloudfunctions2Function#secret_volumes}
+	SecretVolumes interface{} `field:"optional" json:"secretVolumes" yaml:"secretVolumes"`
 	// Name of the service associated with a Function.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudfunctions2_function#service Cloudfunctions2Function#service}

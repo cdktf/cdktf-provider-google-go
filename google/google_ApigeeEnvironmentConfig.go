@@ -60,6 +60,10 @@ type ApigeeEnvironmentConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// node_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/apigee_environment#node_config ApigeeEnvironment#node_config}
+	NodeConfig *ApigeeEnvironmentNodeConfig `field:"optional" json:"nodeConfig" yaml:"nodeConfig"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/apigee_environment#timeouts ApigeeEnvironment#timeouts}

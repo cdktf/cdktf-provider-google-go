@@ -54,6 +54,10 @@ func (a *jsiiProxy_ApigeeOrganization) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeOrganization) validatePutPropertiesParameters(value *ApigeeOrganizationProperties) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeOrganization) validatePutTimeoutsParameters(value *ApigeeOrganizationTimeouts) error {
 	return nil
 }

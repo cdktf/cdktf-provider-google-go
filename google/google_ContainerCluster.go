@@ -180,6 +180,8 @@ type ContainerCluster interface {
 	ResourceUsageExportConfig() ContainerClusterResourceUsageExportConfigOutputReference
 	ResourceUsageExportConfigInput() *ContainerClusterResourceUsageExportConfig
 	SelfLink() *string
+	ServiceExternalIpsConfig() ContainerClusterServiceExternalIpsConfigOutputReference
+	ServiceExternalIpsConfigInput() *ContainerClusterServiceExternalIpsConfig
 	ServicesIpv4Cidr() *string
 	Subnetwork() *string
 	SetSubnetwork(val *string)
@@ -244,6 +246,7 @@ type ContainerCluster interface {
 	PutPrivateClusterConfig(value *ContainerClusterPrivateClusterConfig)
 	PutReleaseChannel(value *ContainerClusterReleaseChannel)
 	PutResourceUsageExportConfig(value *ContainerClusterResourceUsageExportConfig)
+	PutServiceExternalIpsConfig(value *ContainerClusterServiceExternalIpsConfig)
 	PutTimeouts(value *ContainerClusterTimeouts)
 	PutVerticalPodAutoscaling(value *ContainerClusterVerticalPodAutoscaling)
 	PutWorkloadIdentityConfig(value *ContainerClusterWorkloadIdentityConfig)
@@ -297,6 +300,7 @@ type ContainerCluster interface {
 	ResetRemoveDefaultNodePool()
 	ResetResourceLabels()
 	ResetResourceUsageExportConfig()
+	ResetServiceExternalIpsConfig()
 	ResetSubnetwork()
 	ResetTimeouts()
 	ResetVerticalPodAutoscaling()
@@ -1456,6 +1460,26 @@ func (j *jsiiProxy_ContainerCluster) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerCluster) ServiceExternalIpsConfig() ContainerClusterServiceExternalIpsConfigOutputReference {
+	var returns ContainerClusterServiceExternalIpsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"serviceExternalIpsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) ServiceExternalIpsConfigInput() *ContainerClusterServiceExternalIpsConfig {
+	var returns *ContainerClusterServiceExternalIpsConfig
+	_jsii_.Get(
+		j,
+		"serviceExternalIpsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerCluster) ServicesIpv4Cidr() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2448,6 +2472,17 @@ func (c *jsiiProxy_ContainerCluster) PutResourceUsageExportConfig(value *Contain
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutServiceExternalIpsConfig(value *ContainerClusterServiceExternalIpsConfig) {
+	if err := c.validatePutServiceExternalIpsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putServiceExternalIpsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutTimeouts(value *ContainerClusterTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -2861,6 +2896,14 @@ func (c *jsiiProxy_ContainerCluster) ResetResourceUsageExportConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetResourceUsageExportConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetServiceExternalIpsConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetServiceExternalIpsConfig",
 		nil, // no parameters
 	)
 }

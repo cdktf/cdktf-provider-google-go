@@ -44,6 +44,8 @@ type MonitoringNotificationChannelConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/monitoring_notification_channel#enabled MonitoringNotificationChannel#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/monitoring_notification_channel#force_delete MonitoringNotificationChannel#force_delete}.
+	ForceDelete interface{} `field:"optional" json:"forceDelete" yaml:"forceDelete"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/monitoring_notification_channel#id MonitoringNotificationChannel#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

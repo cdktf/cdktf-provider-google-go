@@ -38,6 +38,9 @@ type MonitoringNotificationChannel interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
+	ForceDelete() interface{}
+	SetForceDelete(val interface{})
+	ForceDeleteInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -119,6 +122,7 @@ type MonitoringNotificationChannel interface {
 	ResetDescription()
 	ResetDisplayName()
 	ResetEnabled()
+	ResetForceDelete()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -248,6 +252,26 @@ func (j *jsiiProxy_MonitoringNotificationChannel) EnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringNotificationChannel) ForceDelete() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDelete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringNotificationChannel) ForceDeleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDeleteInput",
 		&returns,
 	)
 	return returns
@@ -609,6 +633,17 @@ func (j *jsiiProxy_MonitoringNotificationChannel)SetEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringNotificationChannel)SetForceDelete(val interface{}) {
+	if err := j.validateSetForceDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDelete",
 		val,
 	)
 }
@@ -976,6 +1011,14 @@ func (m *jsiiProxy_MonitoringNotificationChannel) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringNotificationChannel) ResetForceDelete() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetForceDelete",
 		nil, // no parameters
 	)
 }

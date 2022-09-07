@@ -46,6 +46,14 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validate
 	return nil
 }
 
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validatePutSecretEnvironmentVariablesParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validatePutSecretVolumesParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

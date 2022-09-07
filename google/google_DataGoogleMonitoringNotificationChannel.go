@@ -30,6 +30,7 @@ type DataGoogleMonitoringNotificationChannel interface {
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
 	Enabled() cdktf.IResolvable
+	ForceDelete() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -198,6 +199,16 @@ func (j *jsiiProxy_DataGoogleMonitoringNotificationChannel) Enabled() cdktf.IRes
 	_jsii_.Get(
 		j,
 		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleMonitoringNotificationChannel) ForceDelete() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"forceDelete",
 		&returns,
 	)
 	return returns

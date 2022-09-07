@@ -66,6 +66,8 @@ type ApigeeOrganization interface {
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
+	Properties() ApigeeOrganizationPropertiesOutputReference
+	PropertiesInput() *ApigeeOrganizationProperties
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -119,6 +121,7 @@ type ApigeeOrganization interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProperties(value *ApigeeOrganizationProperties)
 	PutTimeouts(value *ApigeeOrganizationTimeouts)
 	ResetAnalyticsRegion()
 	ResetAuthorizedNetwork()
@@ -129,6 +132,7 @@ type ApigeeOrganization interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProperties()
 	ResetRetention()
 	ResetRuntimeDatabaseEncryptionKeyName()
 	ResetRuntimeType()
@@ -403,6 +407,26 @@ func (j *jsiiProxy_ApigeeOrganization) ProjectIdInput() *string {
 	_jsii_.Get(
 		j,
 		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeOrganization) Properties() ApigeeOrganizationPropertiesOutputReference {
+	var returns ApigeeOrganizationPropertiesOutputReference
+	_jsii_.Get(
+		j,
+		"properties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeOrganization) PropertiesInput() *ApigeeOrganizationProperties {
+	var returns *ApigeeOrganizationProperties
+	_jsii_.Get(
+		j,
+		"propertiesInput",
 		&returns,
 	)
 	return returns
@@ -991,6 +1015,17 @@ func (a *jsiiProxy_ApigeeOrganization) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_ApigeeOrganization) PutProperties(value *ApigeeOrganizationProperties) {
+	if err := a.validatePutPropertiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putProperties",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_ApigeeOrganization) PutTimeouts(value *ApigeeOrganizationTimeouts) {
 	if err := a.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1054,6 +1089,14 @@ func (a *jsiiProxy_ApigeeOrganization) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApigeeOrganization) ResetProperties() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProperties",
 		nil, // no parameters
 	)
 }

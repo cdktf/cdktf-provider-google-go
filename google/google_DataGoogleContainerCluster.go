@@ -106,6 +106,7 @@ type DataGoogleContainerCluster interface {
 	ResourceLabels() cdktf.StringMap
 	ResourceUsageExportConfig() DataGoogleContainerClusterResourceUsageExportConfigList
 	SelfLink() *string
+	ServiceExternalIpsConfig() DataGoogleContainerClusterServiceExternalIpsConfigList
 	ServicesIpv4Cidr() *string
 	Subnetwork() *string
 	// Experimental.
@@ -838,6 +839,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) SelfLink() *string {
 	_jsii_.Get(
 		j,
 		"selfLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) ServiceExternalIpsConfig() DataGoogleContainerClusterServiceExternalIpsConfigList {
+	var returns DataGoogleContainerClusterServiceExternalIpsConfigList
+	_jsii_.Get(
+		j,
+		"serviceExternalIpsConfig",
 		&returns,
 	)
 	return returns

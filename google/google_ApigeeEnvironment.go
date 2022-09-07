@@ -61,6 +61,8 @@ type ApigeeEnvironment interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NodeConfig() ApigeeEnvironmentNodeConfigOutputReference
+	NodeConfigInput() *ApigeeEnvironmentNodeConfig
 	OrgId() *string
 	SetOrgId(val *string)
 	OrgIdInput() *string
@@ -107,12 +109,14 @@ type ApigeeEnvironment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutNodeConfig(value *ApigeeEnvironmentNodeConfig)
 	PutTimeouts(value *ApigeeEnvironmentTimeouts)
 	ResetApiProxyType()
 	ResetDeploymentType()
 	ResetDescription()
 	ResetDisplayName()
 	ResetId()
+	ResetNodeConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -347,6 +351,26 @@ func (j *jsiiProxy_ApigeeEnvironment) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeEnvironment) NodeConfig() ApigeeEnvironmentNodeConfigOutputReference {
+	var returns ApigeeEnvironmentNodeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"nodeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeEnvironment) NodeConfigInput() *ApigeeEnvironmentNodeConfig {
+	var returns *ApigeeEnvironmentNodeConfig
+	_jsii_.Get(
+		j,
+		"nodeConfigInput",
 		&returns,
 	)
 	return returns
@@ -852,6 +876,17 @@ func (a *jsiiProxy_ApigeeEnvironment) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_ApigeeEnvironment) PutNodeConfig(value *ApigeeEnvironmentNodeConfig) {
+	if err := a.validatePutNodeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putNodeConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_ApigeeEnvironment) PutTimeouts(value *ApigeeEnvironmentTimeouts) {
 	if err := a.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -899,6 +934,14 @@ func (a *jsiiProxy_ApigeeEnvironment) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApigeeEnvironment) ResetNodeConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNodeConfig",
 		nil, // no parameters
 	)
 }

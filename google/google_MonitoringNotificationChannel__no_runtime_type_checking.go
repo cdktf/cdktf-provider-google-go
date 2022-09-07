@@ -82,6 +82,10 @@ func (j *jsiiProxy_MonitoringNotificationChannel) validateSetEnabledParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_MonitoringNotificationChannel) validateSetForceDeleteParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringNotificationChannel) validateSetIdParameters(val *string) error {
 	return nil
 }

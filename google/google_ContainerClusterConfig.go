@@ -243,6 +243,10 @@ type ContainerClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#resource_usage_export_config ContainerCluster#resource_usage_export_config}
 	ResourceUsageExportConfig *ContainerClusterResourceUsageExportConfig `field:"optional" json:"resourceUsageExportConfig" yaml:"resourceUsageExportConfig"`
+	// service_external_ips_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#service_external_ips_config ContainerCluster#service_external_ips_config}
+	ServiceExternalIpsConfig *ContainerClusterServiceExternalIpsConfig `field:"optional" json:"serviceExternalIpsConfig" yaml:"serviceExternalIpsConfig"`
 	// The name or self_link of the Google Compute Engine subnetwork in which the cluster's instances are launched.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#subnetwork ContainerCluster#subnetwork}

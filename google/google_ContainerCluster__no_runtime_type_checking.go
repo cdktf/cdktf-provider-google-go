@@ -142,6 +142,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutResourceUsageExportConfigParamet
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutServiceExternalIpsConfigParameters(value *ContainerClusterServiceExternalIpsConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutTimeoutsParameters(value *ContainerClusterTimeouts) error {
 	return nil
 }
