@@ -30,6 +30,9 @@ type ContainerClusterNodePoolAutoscalingOutputReference interface {
 	Fqn() *string
 	InternalValue() *ContainerClusterNodePoolAutoscaling
 	SetInternalValue(val *ContainerClusterNodePoolAutoscaling)
+	LocationPolicy() *string
+	SetLocationPolicy(val *string)
+	LocationPolicyInput() *string
 	MaxNodeCount() *float64
 	SetMaxNodeCount(val *float64)
 	MaxNodeCountInput() *float64
@@ -44,6 +47,12 @@ type ContainerClusterNodePoolAutoscalingOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TotalMaxNodeCount() *float64
+	SetTotalMaxNodeCount(val *float64)
+	TotalMaxNodeCountInput() *float64
+	TotalMinNodeCount() *float64
+	SetTotalMinNodeCount(val *float64)
+	TotalMinNodeCountInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -68,6 +77,11 @@ type ContainerClusterNodePoolAutoscalingOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetLocationPolicy()
+	ResetMaxNodeCount()
+	ResetMinNodeCount()
+	ResetTotalMaxNodeCount()
+	ResetTotalMinNodeCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -133,6 +147,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) InternalV
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) LocationPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) LocationPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) MaxNodeCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -188,6 +222,46 @@ func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) Terraform
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) TotalMaxNodeCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalMaxNodeCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) TotalMaxNodeCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalMaxNodeCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) TotalMinNodeCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalMinNodeCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) TotalMinNodeCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalMinNodeCountInput",
 		&returns,
 	)
 	return returns
@@ -254,6 +328,17 @@ func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference)SetInterna
 	)
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference)SetLocationPolicy(val *string) {
+	if err := j.validateSetLocationPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"locationPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference)SetMaxNodeCount(val *float64) {
 	if err := j.validateSetMaxNodeCountParameters(val); err != nil {
 		panic(err)
@@ -294,6 +379,28 @@ func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference)SetTerrafo
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference)SetTotalMaxNodeCount(val *float64) {
+	if err := j.validateSetTotalMaxNodeCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"totalMaxNodeCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference)SetTotalMinNodeCount(val *float64) {
+	if err := j.validateSetTotalMinNodeCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"totalMinNodeCount",
 		val,
 	)
 }
@@ -482,6 +589,46 @@ func (c *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) ResetLocationPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLocationPolicy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) ResetMaxNodeCount() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaxNodeCount",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) ResetMinNodeCount() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMinNodeCount",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) ResetTotalMaxNodeCount() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTotalMaxNodeCount",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) ResetTotalMinNodeCount() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTotalMinNodeCount",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

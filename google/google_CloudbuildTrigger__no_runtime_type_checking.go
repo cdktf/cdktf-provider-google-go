@@ -134,6 +134,10 @@ func (j *jsiiProxy_CloudbuildTrigger) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
+func (j *jsiiProxy_CloudbuildTrigger) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudbuildTrigger) validateSetNameParameters(val *string) error {
 	return nil
 }

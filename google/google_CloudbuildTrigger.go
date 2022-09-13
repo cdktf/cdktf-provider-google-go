@@ -74,6 +74,9 @@ type CloudbuildTrigger interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -164,6 +167,7 @@ type CloudbuildTrigger interface {
 	ResetIgnoredFiles()
 	ResetIncludeBuildLogs()
 	ResetIncludedFiles()
+	ResetLocation()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -527,6 +531,26 @@ func (j *jsiiProxy_CloudbuildTrigger) Lifecycle() *cdktf.TerraformResourceLifecy
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTrigger) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTrigger) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
 		&returns,
 	)
 	return returns
@@ -972,6 +996,17 @@ func (j *jsiiProxy_CloudbuildTrigger)SetLifecycle(val *cdktf.TerraformResourceLi
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudbuildTrigger)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
 		val,
 	)
 }
@@ -1469,6 +1504,14 @@ func (c *jsiiProxy_CloudbuildTrigger) ResetIncludedFiles() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIncludedFiles",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudbuildTrigger) ResetLocation() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

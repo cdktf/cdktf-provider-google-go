@@ -173,6 +173,14 @@ func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) validateSetLocationPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) validateSetMaxNodeCountParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -198,6 +206,22 @@ func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) validateS
 }
 
 func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) validateSetTotalMaxNodeCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) validateSetTotalMinNodeCountParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

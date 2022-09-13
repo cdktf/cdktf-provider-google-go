@@ -11,6 +11,7 @@ import (
 
 type DataGoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference interface {
 	cdktf.ComplexObject
+	ChainName() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,6 +79,16 @@ type DataGoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutp
 // The jsii proxy struct for DataGoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference
 type jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) ChainName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"chainName",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) ComplexObjectIndex() interface{} {

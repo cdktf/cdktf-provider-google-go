@@ -161,6 +161,9 @@ type GoogleProvider interface {
 	DatastoreCustomEndpoint() *string
 	SetDatastoreCustomEndpoint(val *string)
 	DatastoreCustomEndpointInput() *string
+	DatastreamCustomEndpoint() *string
+	SetDatastreamCustomEndpoint(val *string)
+	DatastreamCustomEndpointInput() *string
 	DeploymentManagerCustomEndpoint() *string
 	SetDeploymentManagerCustomEndpoint(val *string)
 	DeploymentManagerCustomEndpointInput() *string
@@ -413,6 +416,7 @@ type GoogleProvider interface {
 	ResetDataprocCustomEndpoint()
 	ResetDataprocMetastoreCustomEndpoint()
 	ResetDatastoreCustomEndpoint()
+	ResetDatastreamCustomEndpoint()
 	ResetDeploymentManagerCustomEndpoint()
 	ResetDialogflowCustomEndpoint()
 	ResetDialogflowCxCustomEndpoint()
@@ -1467,6 +1471,26 @@ func (j *jsiiProxy_GoogleProvider) DatastoreCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"datastoreCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) DatastreamCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datastreamCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) DatastreamCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datastreamCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3189,6 +3213,14 @@ func (j *jsiiProxy_GoogleProvider)SetDatastoreCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetDatastreamCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"datastreamCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetDeploymentManagerCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4128,6 +4160,14 @@ func (g *jsiiProxy_GoogleProvider) ResetDatastoreCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDatastoreCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetDatastreamCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDatastreamCustomEndpoint",
 		nil, // no parameters
 	)
 }

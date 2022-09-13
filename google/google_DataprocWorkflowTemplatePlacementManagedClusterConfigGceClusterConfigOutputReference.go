@@ -52,6 +52,8 @@ type DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutput
 	ServiceAccountScopes() *[]*string
 	SetServiceAccountScopes(val *[]*string)
 	ServiceAccountScopesInput() *[]*string
+	ShieldedInstanceConfig() DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference
+	ShieldedInstanceConfigInput() *DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig
 	Subnetwork() *string
 	SetSubnetwork(val *string)
 	SubnetworkInput() *string
@@ -95,6 +97,7 @@ type DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutput
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutNodeGroupAffinity(value *DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity)
 	PutReservationAffinity(value *DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinity)
+	PutShieldedInstanceConfig(value *DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig)
 	ResetInternalIpOnly()
 	ResetMetadata()
 	ResetNetwork()
@@ -103,6 +106,7 @@ type DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutput
 	ResetReservationAffinity()
 	ResetServiceAccount()
 	ResetServiceAccountScopes()
+	ResetShieldedInstanceConfig()
 	ResetSubnetwork()
 	ResetTags()
 	ResetZone()
@@ -326,6 +330,26 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	_jsii_.Get(
 		j,
 		"serviceAccountScopesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference) ShieldedInstanceConfig() DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference {
+	var returns DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"shieldedInstanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference) ShieldedInstanceConfigInput() *DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig {
+	var returns *DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig
+	_jsii_.Get(
+		j,
+		"shieldedInstanceConfigInput",
 		&returns,
 	)
 	return returns
@@ -801,6 +825,17 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	)
 }
 
+func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference) PutShieldedInstanceConfig(value *DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig) {
+	if err := d.validatePutShieldedInstanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putShieldedInstanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference) ResetInternalIpOnly() {
 	_jsii_.InvokeVoid(
 		d,
@@ -861,6 +896,14 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClust
 	_jsii_.InvokeVoid(
 		d,
 		"resetServiceAccountScopes",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference) ResetShieldedInstanceConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetShieldedInstanceConfig",
 		nil, // no parameters
 	)
 }

@@ -58,6 +58,10 @@ func (b *jsiiProxy_BigtableTable) validatePutColumnFamilyParameters(value interf
 	return nil
 }
 
+func (b *jsiiProxy_BigtableTable) validatePutTimeoutsParameters(value *BigtableTableTimeouts) error {
+	return nil
+}
+
 func validateBigtableTable_IsConstructParameters(x interface{}) error {
 	return nil
 }

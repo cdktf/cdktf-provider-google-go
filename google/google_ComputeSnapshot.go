@@ -15,6 +15,9 @@ type ComputeSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ChainName() *string
+	SetChainName(val *string)
+	ChainNameInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -124,6 +127,7 @@ type ComputeSnapshot interface {
 	PutSnapshotEncryptionKey(value *ComputeSnapshotSnapshotEncryptionKey)
 	PutSourceDiskEncryptionKey(value *ComputeSnapshotSourceDiskEncryptionKey)
 	PutTimeouts(value *ComputeSnapshotTimeouts)
+	ResetChainName()
 	ResetDescription()
 	ResetId()
 	ResetLabels()
@@ -156,6 +160,26 @@ func (j *jsiiProxy_ComputeSnapshot) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSnapshot) ChainName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"chainName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSnapshot) ChainNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"chainNameInput",
 		&returns,
 	)
 	return returns
@@ -631,6 +655,17 @@ func NewComputeSnapshot_Override(c ComputeSnapshot, scope constructs.Construct, 
 	)
 }
 
+func (j *jsiiProxy_ComputeSnapshot)SetChainName(val *string) {
+	if err := j.validateSetChainNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"chainName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeSnapshot)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -1042,6 +1077,14 @@ func (c *jsiiProxy_ComputeSnapshot) PutTimeouts(value *ComputeSnapshotTimeouts) 
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeSnapshot) ResetChainName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetChainName",
+		nil, // no parameters
 	)
 }
 

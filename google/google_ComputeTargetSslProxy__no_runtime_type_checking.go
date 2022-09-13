@@ -66,6 +66,10 @@ func (j *jsiiProxy_ComputeTargetSslProxy) validateSetBackendServiceParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ComputeTargetSslProxy) validateSetCertificateMapParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeTargetSslProxy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

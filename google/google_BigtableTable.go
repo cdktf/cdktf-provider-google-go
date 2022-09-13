@@ -76,6 +76,8 @@ type BigtableTable interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() BigtableTableTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -102,6 +104,7 @@ type BigtableTable interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutColumnFamily(value interface{})
+	PutTimeouts(value *BigtableTableTimeouts)
 	ResetColumnFamily()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -109,6 +112,7 @@ type BigtableTable interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetSplitKeys()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -399,6 +403,26 @@ func (j *jsiiProxy_BigtableTable) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableTable) Timeouts() BigtableTableTimeoutsOutputReference {
+	var returns BigtableTableTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableTable) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -793,6 +817,17 @@ func (b *jsiiProxy_BigtableTable) PutColumnFamily(value interface{}) {
 	)
 }
 
+func (b *jsiiProxy_BigtableTable) PutTimeouts(value *BigtableTableTimeouts) {
+	if err := b.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigtableTable) ResetColumnFamily() {
 	_jsii_.InvokeVoid(
 		b,
@@ -829,6 +864,14 @@ func (b *jsiiProxy_BigtableTable) ResetSplitKeys() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetSplitKeys",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigtableTable) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

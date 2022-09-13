@@ -62,6 +62,10 @@ func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) validateSetLocationPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) validateSetMaxNodeCountParameters(val *float64) error {
 	return nil
 }
@@ -75,6 +79,14 @@ func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) validateS
 }
 
 func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) validateSetTotalMaxNodeCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolAutoscalingOutputReference) validateSetTotalMinNodeCountParameters(val *float64) error {
 	return nil
 }
 

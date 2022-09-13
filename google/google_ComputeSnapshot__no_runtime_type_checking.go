@@ -70,6 +70,10 @@ func validateComputeSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSnapshot) validateSetChainNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSnapshot) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

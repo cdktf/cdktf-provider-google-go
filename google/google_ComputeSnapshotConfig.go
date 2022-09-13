@@ -36,6 +36,16 @@ type ComputeSnapshotConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_snapshot#source_disk ComputeSnapshot#source_disk}
 	SourceDisk *string `field:"required" json:"sourceDisk" yaml:"sourceDisk"`
+	// Creates the new snapshot in the snapshot chain labeled with the  specified name.
+	//
+	// The chain name must be 1-63 characters long and
+	// comply with RFC1035. This is an uncommon option only for advanced
+	// service owners who needs to create separate snapshot chains, for
+	// example, for chargeback tracking.  When you describe your snapshot
+	// resource, this field is visible only if it has a non-empty value.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_snapshot#chain_name ComputeSnapshot#chain_name}
+	ChainName *string `field:"optional" json:"chainName" yaml:"chainName"`
 	// An optional description of this resource.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_snapshot#description ComputeSnapshot#description}

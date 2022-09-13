@@ -30,6 +30,7 @@ type DataGoogleContainerClusterNodePoolAutoscalingOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterNodePoolAutoscaling
 	SetInternalValue(val *DataGoogleContainerClusterNodePoolAutoscaling)
+	LocationPolicy() *string
 	MaxNodeCount() *float64
 	MinNodeCount() *float64
 	// Experimental.
@@ -40,6 +41,8 @@ type DataGoogleContainerClusterNodePoolAutoscalingOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TotalMaxNodeCount() *float64
+	TotalMinNodeCount() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -129,6 +132,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoscalingOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoscalingOutputReference) LocationPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationPolicy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoscalingOutputReference) MaxNodeCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -164,6 +177,26 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoscalingOutputReference)
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoscalingOutputReference) TotalMaxNodeCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalMaxNodeCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoscalingOutputReference) TotalMinNodeCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"totalMinNodeCount",
 		&returns,
 	)
 	return returns

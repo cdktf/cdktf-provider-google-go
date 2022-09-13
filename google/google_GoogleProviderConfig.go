@@ -103,6 +103,8 @@ type GoogleProviderConfig struct {
 	DataprocMetastoreCustomEndpoint *string `field:"optional" json:"dataprocMetastoreCustomEndpoint" yaml:"dataprocMetastoreCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#datastore_custom_endpoint GoogleProvider#datastore_custom_endpoint}.
 	DatastoreCustomEndpoint *string `field:"optional" json:"datastoreCustomEndpoint" yaml:"datastoreCustomEndpoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#datastream_custom_endpoint GoogleProvider#datastream_custom_endpoint}.
+	DatastreamCustomEndpoint *string `field:"optional" json:"datastreamCustomEndpoint" yaml:"datastreamCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#deployment_manager_custom_endpoint GoogleProvider#deployment_manager_custom_endpoint}.
 	DeploymentManagerCustomEndpoint *string `field:"optional" json:"deploymentManagerCustomEndpoint" yaml:"deploymentManagerCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#dialogflow_custom_endpoint GoogleProvider#dialogflow_custom_endpoint}.

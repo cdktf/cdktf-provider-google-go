@@ -133,6 +133,13 @@ type AppEngineFlexibleAppVersionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/app_engine_flexible_app_version#runtime_main_executable_path AppEngineFlexibleAppVersion#runtime_main_executable_path}
 	RuntimeMainExecutablePath *string `field:"optional" json:"runtimeMainExecutablePath" yaml:"runtimeMainExecutablePath"`
+	// The identity that the deployed version will run as.
+	//
+	// Admin API will use the App Engine Appspot service account as
+	// default if this field is neither provided in app.yaml file nor through CLI flag.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/app_engine_flexible_app_version#service_account AppEngineFlexibleAppVersion#service_account}
+	ServiceAccount *string `field:"optional" json:"serviceAccount" yaml:"serviceAccount"`
 	// Current serving status of this version.
 	//
 	// Only the versions with a SERVING status create instances and can be billed. Default value: "SERVING" Possible values: ["SERVING", "STOPPED"]

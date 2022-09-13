@@ -3,6 +3,13 @@ package google
 
 
 type ComputeResourcePolicySnapshotSchedulePolicySnapshotProperties struct {
+	// Creates the new snapshot in the snapshot chain labeled with the  specified name.
+	//
+	// The chain name must be 1-63 characters long and comply
+	// with RFC1035.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_resource_policy#chain_name ComputeResourcePolicy#chain_name}
+	ChainName *string `field:"optional" json:"chainName" yaml:"chainName"`
 	// Whether to perform a 'guest aware' snapshot.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_resource_policy#guest_flush ComputeResourcePolicy#guest_flush}

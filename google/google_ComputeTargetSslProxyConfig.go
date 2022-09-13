@@ -36,13 +36,13 @@ type ComputeTargetSslProxyConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_target_ssl_proxy#name ComputeTargetSslProxy#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// A list of SslCertificate resources that are used to authenticate connections between users and the load balancer.
+	// A reference to the CertificateMap resource uri that identifies a certificate map associated with the given target proxy.
 	//
-	// At least one
-	// SSL certificate must be specified.
+	// This field can only be set for global target proxies.
+	// Accepted format is '//certificatemanager.googleapis.com/projects/{project}/locations/{location}/certificateMaps/{resourceName}'.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_target_ssl_proxy#ssl_certificates ComputeTargetSslProxy#ssl_certificates}
-	SslCertificates *[]*string `field:"required" json:"sslCertificates" yaml:"sslCertificates"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_target_ssl_proxy#certificate_map ComputeTargetSslProxy#certificate_map}
+	CertificateMap *string `field:"optional" json:"certificateMap" yaml:"certificateMap"`
 	// An optional description of this resource.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_target_ssl_proxy#description ComputeTargetSslProxy#description}
@@ -60,6 +60,13 @@ type ComputeTargetSslProxyConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_target_ssl_proxy#proxy_header ComputeTargetSslProxy#proxy_header}
 	ProxyHeader *string `field:"optional" json:"proxyHeader" yaml:"proxyHeader"`
+	// A list of SslCertificate resources that are used to authenticate connections between users and the load balancer.
+	//
+	// At least one
+	// SSL certificate must be specified.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_target_ssl_proxy#ssl_certificates ComputeTargetSslProxy#ssl_certificates}
+	SslCertificates *[]*string `field:"optional" json:"sslCertificates" yaml:"sslCertificates"`
 	// A reference to the SslPolicy resource that will be associated with the TargetSslProxy resource.
 	//
 	// If not set, the TargetSslProxy

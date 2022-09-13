@@ -11,6 +11,9 @@ import (
 
 type ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference interface {
 	cdktf.ComplexObject
+	ChainName() *string
+	SetChainName(val *string)
+	ChainNameInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -71,6 +74,7 @@ type ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReferenc
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetChainName()
 	ResetGuestFlush()
 	ResetLabels()
 	ResetStorageLocations()
@@ -87,6 +91,26 @@ type ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReferenc
 // The jsii proxy struct for ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference
 type jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) ChainName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"chainName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) ChainNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"chainNameInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) ComplexObjectIndex() interface{} {
@@ -244,6 +268,17 @@ func NewComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputRefer
 		"@cdktf/provider-google.ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
+	)
+}
+
+func (j *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference)SetChainName(val *string) {
+	if err := j.validateSetChainNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"chainName",
+		val,
 	)
 }
 
@@ -519,6 +554,14 @@ func (c *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicySnapshotProperties
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) ResetChainName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetChainName",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) ResetGuestFlush() {

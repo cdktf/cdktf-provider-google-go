@@ -173,6 +173,14 @@ func (j *jsiiProxy_ContainerNodePoolAutoscalingOutputReference) validateSetInter
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNodePoolAutoscalingOutputReference) validateSetLocationPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePoolAutoscalingOutputReference) validateSetMaxNodeCountParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -198,6 +206,22 @@ func (j *jsiiProxy_ContainerNodePoolAutoscalingOutputReference) validateSetTerra
 }
 
 func (j *jsiiProxy_ContainerNodePoolAutoscalingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolAutoscalingOutputReference) validateSetTotalMaxNodeCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolAutoscalingOutputReference) validateSetTotalMinNodeCountParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
