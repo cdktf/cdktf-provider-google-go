@@ -28,6 +28,9 @@ type DataGoogleServiceAccountJwt interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExpiresIn() *float64
+	SetExpiresIn(val *float64)
+	ExpiresInInput() *float64
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -90,6 +93,7 @@ type DataGoogleServiceAccountJwt interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDelegates()
+	ResetExpiresIn()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -164,6 +168,26 @@ func (j *jsiiProxy_DataGoogleServiceAccountJwt) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleServiceAccountJwt) ExpiresIn() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expiresIn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleServiceAccountJwt) ExpiresInInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expiresInInput",
 		&returns,
 	)
 	return returns
@@ -392,6 +416,17 @@ func (j *jsiiProxy_DataGoogleServiceAccountJwt)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGoogleServiceAccountJwt)SetExpiresIn(val *float64) {
+	if err := j.validateSetExpiresInParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expiresIn",
 		val,
 	)
 }
@@ -688,6 +723,14 @@ func (d *jsiiProxy_DataGoogleServiceAccountJwt) ResetDelegates() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDelegates",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGoogleServiceAccountJwt) ResetExpiresIn() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExpiresIn",
 		nil, // no parameters
 	)
 }

@@ -45,7 +45,7 @@ type DialogflowCxFlowConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/dialogflow_cx_flow#nlu_settings DialogflowCxFlow#nlu_settings}
 	NluSettings *DialogflowCxFlowNluSettings `field:"optional" json:"nluSettings" yaml:"nluSettings"`
-	// The agent to create a flow for.  Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
+	// The agent to create a flow for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/dialogflow_cx_flow#parent DialogflowCxFlow#parent}
 	Parent *string `field:"optional" json:"parent" yaml:"parent"`

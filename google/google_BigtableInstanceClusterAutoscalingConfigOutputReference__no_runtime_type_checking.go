@@ -74,6 +74,10 @@ func (j *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) validateSetStorageTargetParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -57,7 +57,7 @@ type DialogflowCxPageConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/dialogflow_cx_page#language_code DialogflowCxPage#language_code}
 	LanguageCode *string `field:"optional" json:"languageCode" yaml:"languageCode"`
-	// The flow to create a page for.  Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
+	// The flow to create a page for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/dialogflow_cx_page#parent DialogflowCxPage#parent}
 	Parent *string `field:"optional" json:"parent" yaml:"parent"`

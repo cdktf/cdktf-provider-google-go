@@ -62,6 +62,10 @@ func (j *jsiiProxy_DataGoogleServiceAccountJwt) validateSetDelegatesParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleServiceAccountJwt) validateSetExpiresInParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleServiceAccountJwt) validateSetIdParameters(val *string) error {
 	return nil
 }

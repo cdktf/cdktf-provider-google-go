@@ -115,7 +115,7 @@ type ComputeInstanceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_instance#reservation_affinity ComputeInstance#reservation_affinity}
 	ReservationAffinity *ComputeInstanceReservationAffinity `field:"optional" json:"reservationAffinity" yaml:"reservationAffinity"`
-	// A list of short names or self_links of resource policies to attach to the instance.
+	// A list of self_links of resource policies to attach to the instance.
 	//
 	// Currently a max of 1 resource policy is supported.
 	//

@@ -39,6 +39,9 @@ type BigtableInstanceClusterAutoscalingConfigOutputReference interface {
 	MinNodes() *float64
 	SetMinNodes(val *float64)
 	MinNodesInput() *float64
+	StorageTarget() *float64
+	SetStorageTarget(val *float64)
+	StorageTargetInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,6 +74,7 @@ type BigtableInstanceClusterAutoscalingConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetStorageTarget()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -196,6 +200,26 @@ func (j *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) MinN
 	return returns
 }
 
+func (j *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) StorageTarget() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"storageTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) StorageTargetInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"storageTargetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -306,6 +330,17 @@ func (j *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference)SetMi
 	_jsii_.Set(
 		j,
 		"minNodes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference)SetStorageTarget(val *float64) {
+	if err := j.validateSetStorageTargetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageTarget",
 		val,
 	)
 }
@@ -516,6 +551,14 @@ func (b *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) Inte
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) ResetStorageTarget() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetStorageTarget",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

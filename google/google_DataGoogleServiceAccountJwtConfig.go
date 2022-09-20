@@ -28,6 +28,12 @@ type DataGoogleServiceAccountJwtConfig struct {
 	TargetServiceAccount *string `field:"required" json:"targetServiceAccount" yaml:"targetServiceAccount"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/d/service_account_jwt#delegates DataGoogleServiceAccountJwt#delegates}.
 	Delegates *[]*string `field:"optional" json:"delegates" yaml:"delegates"`
+	// Number of seconds until the JWT expires.
+	//
+	// If set and non-zero an `exp` claim will be added to the payload derived from the current timestamp plus expires_in seconds.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/d/service_account_jwt#expires_in DataGoogleServiceAccountJwt#expires_in}
+	ExpiresIn *float64 `field:"optional" json:"expiresIn" yaml:"expiresIn"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/d/service_account_jwt#id DataGoogleServiceAccountJwt#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

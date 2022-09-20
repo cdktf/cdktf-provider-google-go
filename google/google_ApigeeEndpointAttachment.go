@@ -19,6 +19,7 @@ type ApigeeEndpointAttachment interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectionState() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -139,6 +140,16 @@ func (j *jsiiProxy_ApigeeEndpointAttachment) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeEndpointAttachment) ConnectionState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionState",
 		&returns,
 	)
 	return returns
