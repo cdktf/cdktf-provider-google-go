@@ -26,6 +26,9 @@ type AppEngineStandardAppVersionVpcAccessConnectorOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EgressSetting() *string
+	SetEgressSetting(val *string)
+	EgressSettingInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *AppEngineStandardAppVersionVpcAccessConnector
@@ -65,6 +68,7 @@ type AppEngineStandardAppVersionVpcAccessConnectorOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEgressSetting()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -105,6 +109,26 @@ func (j *jsiiProxy_AppEngineStandardAppVersionVpcAccessConnectorOutputReference)
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppEngineStandardAppVersionVpcAccessConnectorOutputReference) EgressSetting() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"egressSetting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppEngineStandardAppVersionVpcAccessConnectorOutputReference) EgressSettingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"egressSettingInput",
 		&returns,
 	)
 	return returns
@@ -216,6 +240,17 @@ func (j *jsiiProxy_AppEngineStandardAppVersionVpcAccessConnectorOutputReference)
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppEngineStandardAppVersionVpcAccessConnectorOutputReference)SetEgressSetting(val *string) {
+	if err := j.validateSetEgressSettingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"egressSetting",
 		val,
 	)
 }
@@ -448,6 +483,14 @@ func (a *jsiiProxy_AppEngineStandardAppVersionVpcAccessConnectorOutputReference)
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AppEngineStandardAppVersionVpcAccessConnectorOutputReference) ResetEgressSetting() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEgressSetting",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AppEngineStandardAppVersionVpcAccessConnectorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

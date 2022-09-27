@@ -19,5 +19,9 @@ type StorageTransferJobTransferSpecTransferOptions struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/storage_transfer_job#overwrite_objects_already_existing_in_sink StorageTransferJob#overwrite_objects_already_existing_in_sink}
 	OverwriteObjectsAlreadyExistingInSink interface{} `field:"optional" json:"overwriteObjectsAlreadyExistingInSink" yaml:"overwriteObjectsAlreadyExistingInSink"`
+	// When to overwrite objects that already exist in the sink. If not set, overwrite behavior is determined by overwriteObjectsAlreadyExistingInSink.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/storage_transfer_job#overwrite_when StorageTransferJob#overwrite_when}
+	OverwriteWhen *string `field:"optional" json:"overwriteWhen" yaml:"overwriteWhen"`
 }
 

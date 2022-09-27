@@ -62,6 +62,10 @@ func (r *jsiiProxy_RedisInstance) validatePutMaintenanceScheduleParameters(value
 	return nil
 }
 
+func (r *jsiiProxy_RedisInstance) validatePutPersistenceConfigParameters(value *RedisInstancePersistenceConfig) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisInstance) validatePutTimeoutsParameters(value *RedisInstanceTimeouts) error {
 	return nil
 }

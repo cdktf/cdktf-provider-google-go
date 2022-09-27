@@ -85,6 +85,8 @@ type RedisInstance interface {
 	// The tree node.
 	Node() constructs.Node
 	Nodes() RedisInstanceNodesList
+	PersistenceConfig() RedisInstancePersistenceConfigOutputReference
+	PersistenceConfigInput() *RedisInstancePersistenceConfig
 	PersistenceIamIdentity() *string
 	Port() *float64
 	Project() *string
@@ -165,6 +167,7 @@ type RedisInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMaintenancePolicy(value *RedisInstanceMaintenancePolicy)
 	PutMaintenanceSchedule(value *RedisInstanceMaintenanceSchedule)
+	PutPersistenceConfig(value *RedisInstancePersistenceConfig)
 	PutTimeouts(value *RedisInstanceTimeouts)
 	ResetAlternativeLocationId()
 	ResetAuthEnabled()
@@ -180,6 +183,7 @@ type RedisInstance interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPersistenceConfig()
 	ResetProject()
 	ResetReadReplicasMode()
 	ResetRedisConfigs()
@@ -611,6 +615,26 @@ func (j *jsiiProxy_RedisInstance) Nodes() RedisInstanceNodesList {
 	_jsii_.Get(
 		j,
 		"nodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisInstance) PersistenceConfig() RedisInstancePersistenceConfigOutputReference {
+	var returns RedisInstancePersistenceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"persistenceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisInstance) PersistenceConfigInput() *RedisInstancePersistenceConfig {
+	var returns *RedisInstancePersistenceConfig
+	_jsii_.Get(
+		j,
+		"persistenceConfigInput",
 		&returns,
 	)
 	return returns
@@ -1522,6 +1546,17 @@ func (r *jsiiProxy_RedisInstance) PutMaintenanceSchedule(value *RedisInstanceMai
 	)
 }
 
+func (r *jsiiProxy_RedisInstance) PutPersistenceConfig(value *RedisInstancePersistenceConfig) {
+	if err := r.validatePutPersistenceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putPersistenceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RedisInstance) PutTimeouts(value *RedisInstanceTimeouts) {
 	if err := r.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1625,6 +1660,14 @@ func (r *jsiiProxy_RedisInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisInstance) ResetPersistenceConfig() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPersistenceConfig",
 		nil, // no parameters
 	)
 }

@@ -58,6 +58,10 @@ func (j *jsiiProxy_AppEngineStandardAppVersionVpcAccessConnectorOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_AppEngineStandardAppVersionVpcAccessConnectorOutputReference) validateSetEgressSettingParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppEngineStandardAppVersionVpcAccessConnectorOutputReference) validateSetInternalValueParameters(val *AppEngineStandardAppVersionVpcAccessConnector) error {
 	return nil
 }

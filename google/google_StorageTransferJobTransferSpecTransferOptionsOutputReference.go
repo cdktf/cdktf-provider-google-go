@@ -39,6 +39,9 @@ type StorageTransferJobTransferSpecTransferOptionsOutputReference interface {
 	OverwriteObjectsAlreadyExistingInSink() interface{}
 	SetOverwriteObjectsAlreadyExistingInSink(val interface{})
 	OverwriteObjectsAlreadyExistingInSinkInput() interface{}
+	OverwriteWhen() *string
+	SetOverwriteWhen(val *string)
+	OverwriteWhenInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -74,6 +77,7 @@ type StorageTransferJobTransferSpecTransferOptionsOutputReference interface {
 	ResetDeleteObjectsFromSourceAfterTransfer()
 	ResetDeleteObjectsUniqueInSink()
 	ResetOverwriteObjectsAlreadyExistingInSink()
+	ResetOverwriteWhen()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -199,6 +203,26 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference) OverwriteWhen() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"overwriteWhen",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference) OverwriteWhenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"overwriteWhenInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -309,6 +333,17 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference)
 	_jsii_.Set(
 		j,
 		"overwriteObjectsAlreadyExistingInSink",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference)SetOverwriteWhen(val *string) {
+	if err := j.validateSetOverwriteWhenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"overwriteWhen",
 		val,
 	)
 }
@@ -541,6 +576,14 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference)
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverwriteObjectsAlreadyExistingInSink",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference) ResetOverwriteWhen() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOverwriteWhen",
 		nil, // no parameters
 	)
 }

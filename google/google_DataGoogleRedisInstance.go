@@ -61,6 +61,7 @@ type DataGoogleRedisInstance interface {
 	// The tree node.
 	Node() constructs.Node
 	Nodes() DataGoogleRedisInstanceNodesList
+	PersistenceConfig() DataGoogleRedisInstancePersistenceConfigList
 	PersistenceIamIdentity() *string
 	Port() *float64
 	Project() *string
@@ -423,6 +424,16 @@ func (j *jsiiProxy_DataGoogleRedisInstance) Nodes() DataGoogleRedisInstanceNodes
 	_jsii_.Get(
 		j,
 		"nodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleRedisInstance) PersistenceConfig() DataGoogleRedisInstancePersistenceConfigList {
+	var returns DataGoogleRedisInstancePersistenceConfigList
+	_jsii_.Get(
+		j,
+		"persistenceConfig",
 		&returns,
 	)
 	return returns

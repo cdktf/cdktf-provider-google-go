@@ -36,6 +36,10 @@ type CloudfunctionsFunctionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudfunctions_function#build_environment_variables CloudfunctionsFunction#build_environment_variables}
 	BuildEnvironmentVariables *map[string]*string `field:"optional" json:"buildEnvironmentVariables" yaml:"buildEnvironmentVariables"`
+	// Name of the Cloud Build Custom Worker Pool that should be used to build the function.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudfunctions_function#build_worker_pool CloudfunctionsFunction#build_worker_pool}
+	BuildWorkerPool *string `field:"optional" json:"buildWorkerPool" yaml:"buildWorkerPool"`
 	// Description of the function.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudfunctions_function#description CloudfunctionsFunction#description}

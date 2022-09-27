@@ -46,6 +46,10 @@ func (c *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) va
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) validatePutJsonCustomConfigParameters(value *ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

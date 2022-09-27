@@ -19,6 +19,9 @@ type CloudfunctionsFunction interface {
 	BuildEnvironmentVariables() *map[string]*string
 	SetBuildEnvironmentVariables(val *map[string]*string)
 	BuildEnvironmentVariablesInput() *map[string]*string
+	BuildWorkerPool() *string
+	SetBuildWorkerPool(val *string)
+	BuildWorkerPoolInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -179,6 +182,7 @@ type CloudfunctionsFunction interface {
 	PutTimeouts(value *CloudfunctionsFunctionTimeouts)
 	ResetAvailableMemoryMb()
 	ResetBuildEnvironmentVariables()
+	ResetBuildWorkerPool()
 	ResetDescription()
 	ResetDockerRegistry()
 	ResetDockerRepository()
@@ -259,6 +263,26 @@ func (j *jsiiProxy_CloudfunctionsFunction) BuildEnvironmentVariablesInput() *map
 	_jsii_.Get(
 		j,
 		"buildEnvironmentVariablesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfunctionsFunction) BuildWorkerPool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"buildWorkerPool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfunctionsFunction) BuildWorkerPoolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"buildWorkerPoolInput",
 		&returns,
 	)
 	return returns
@@ -1056,6 +1080,17 @@ func (j *jsiiProxy_CloudfunctionsFunction)SetBuildEnvironmentVariables(val *map[
 	)
 }
 
+func (j *jsiiProxy_CloudfunctionsFunction)SetBuildWorkerPool(val *string) {
+	if err := j.validateSetBuildWorkerPoolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"buildWorkerPool",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CloudfunctionsFunction)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -1680,6 +1715,14 @@ func (c *jsiiProxy_CloudfunctionsFunction) ResetBuildEnvironmentVariables() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetBuildEnvironmentVariables",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudfunctionsFunction) ResetBuildWorkerPool() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBuildWorkerPool",
 		nil, // no parameters
 	)
 }

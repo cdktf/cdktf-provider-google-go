@@ -102,6 +102,10 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference) validateSetInternalValueParam
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) validateSetJsonExtensionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryJobLoadOutputReference) validateSetMaxBadRecordsParameters(val *float64) error {
 	return nil
 }

@@ -30,6 +30,8 @@ type ComputeSecurityPolicyAdvancedOptionsConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *ComputeSecurityPolicyAdvancedOptionsConfig
 	SetInternalValue(val *ComputeSecurityPolicyAdvancedOptionsConfig)
+	JsonCustomConfig() ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference
+	JsonCustomConfigInput() *ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig
 	JsonParsing() *string
 	SetJsonParsing(val *string)
 	JsonParsingInput() *string
@@ -68,6 +70,8 @@ type ComputeSecurityPolicyAdvancedOptionsConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutJsonCustomConfig(value *ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig)
+	ResetJsonCustomConfig()
 	ResetJsonParsing()
 	ResetLogLevel()
 	// Produce the Token's value at resolution time.
@@ -130,6 +134,26 @@ func (j *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) JsonCustomConfig() ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference {
+	var returns ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference
+	_jsii_.Get(
+		j,
+		"jsonCustomConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) JsonCustomConfigInput() *ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig {
+	var returns *ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig
+	_jsii_.Get(
+		j,
+		"jsonCustomConfigInput",
 		&returns,
 	)
 	return returns
@@ -484,6 +508,25 @@ func (c *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) In
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) PutJsonCustomConfig(value *ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig) {
+	if err := c.validatePutJsonCustomConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putJsonCustomConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) ResetJsonCustomConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetJsonCustomConfig",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) ResetJsonParsing() {

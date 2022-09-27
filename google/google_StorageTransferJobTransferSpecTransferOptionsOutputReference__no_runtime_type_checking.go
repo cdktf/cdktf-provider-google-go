@@ -74,6 +74,10 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference) validateSetOverwriteWhenParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageTransferJobTransferSpecTransferOptionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

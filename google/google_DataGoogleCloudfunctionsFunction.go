@@ -15,6 +15,7 @@ type DataGoogleCloudfunctionsFunction interface {
 	cdktf.TerraformDataSource
 	AvailableMemoryMb() *float64
 	BuildEnvironmentVariables() cdktf.StringMap
+	BuildWorkerPool() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -150,6 +151,16 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunction) BuildEnvironmentVariables()
 	_jsii_.Get(
 		j,
 		"buildEnvironmentVariables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunction) BuildWorkerPool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"buildWorkerPool",
 		&returns,
 	)
 	return returns

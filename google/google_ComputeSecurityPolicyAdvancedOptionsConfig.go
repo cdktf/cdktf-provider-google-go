@@ -3,6 +3,10 @@ package google
 
 
 type ComputeSecurityPolicyAdvancedOptionsConfig struct {
+	// json_custom_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_security_policy#json_custom_config ComputeSecurityPolicy#json_custom_config}
+	JsonCustomConfig *ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig `field:"optional" json:"jsonCustomConfig" yaml:"jsonCustomConfig"`
 	// JSON body parsing. Supported values include: "DISABLED", "STANDARD".
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_security_policy#json_parsing ComputeSecurityPolicy#json_parsing}
