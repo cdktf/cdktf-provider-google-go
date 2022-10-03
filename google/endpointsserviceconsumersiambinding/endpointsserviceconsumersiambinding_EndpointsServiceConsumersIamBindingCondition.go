@@ -1,0 +1,12 @@
+package endpointsserviceconsumersiambinding
+
+
+type EndpointsServiceConsumersIamBindingCondition struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/endpoints_service_consumers_iam_binding#expression EndpointsServiceConsumersIamBinding#expression}.
+	Expression *string `field:"required" json:"expression" yaml:"expression"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/endpoints_service_consumers_iam_binding#title EndpointsServiceConsumersIamBinding#title}.
+	Title *string `field:"required" json:"title" yaml:"title"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/endpoints_service_consumers_iam_binding#description EndpointsServiceConsumersIamBinding#description}.
+	Description *string `field:"optional" json:"description" yaml:"description"`
+}
+

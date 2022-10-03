@@ -1,0 +1,6 @@
+package datagoogledataprocmetastoreservice
+
+
+type DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfig struct {
+}
+

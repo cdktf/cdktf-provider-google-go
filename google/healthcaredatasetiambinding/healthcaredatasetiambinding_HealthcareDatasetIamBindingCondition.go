@@ -1,0 +1,12 @@
+package healthcaredatasetiambinding
+
+
+type HealthcareDatasetIamBindingCondition struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/healthcare_dataset_iam_binding#expression HealthcareDatasetIamBinding#expression}.
+	Expression *string `field:"required" json:"expression" yaml:"expression"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/healthcare_dataset_iam_binding#title HealthcareDatasetIamBinding#title}.
+	Title *string `field:"required" json:"title" yaml:"title"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/healthcare_dataset_iam_binding#description HealthcareDatasetIamBinding#description}.
+	Description *string `field:"optional" json:"description" yaml:"description"`
+}
+

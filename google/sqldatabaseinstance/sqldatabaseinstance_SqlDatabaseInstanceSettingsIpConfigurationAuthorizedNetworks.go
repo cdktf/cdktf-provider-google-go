@@ -1,0 +1,12 @@
+package sqldatabaseinstance
+
+
+type SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#value SqlDatabaseInstance#value}.
+	Value *string `field:"required" json:"value" yaml:"value"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#expiration_time SqlDatabaseInstance#expiration_time}.
+	ExpirationTime *string `field:"optional" json:"expirationTime" yaml:"expirationTime"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#name SqlDatabaseInstance#name}.
+	Name *string `field:"optional" json:"name" yaml:"name"`
+}
+

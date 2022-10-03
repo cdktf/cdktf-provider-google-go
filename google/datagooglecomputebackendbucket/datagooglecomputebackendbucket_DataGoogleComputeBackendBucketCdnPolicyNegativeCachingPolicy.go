@@ -1,0 +1,6 @@
+package datagooglecomputebackendbucket
+
+
+type DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicy struct {
+}
+

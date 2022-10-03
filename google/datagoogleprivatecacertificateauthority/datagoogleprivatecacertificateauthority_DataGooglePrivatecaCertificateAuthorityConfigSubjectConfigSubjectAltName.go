@@ -1,0 +1,6 @@
+package datagoogleprivatecacertificateauthority
+
+
+type DataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectAltName struct {
+}
+

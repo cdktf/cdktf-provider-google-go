@@ -1,0 +1,6 @@
+package datagooglesqldatabaseinstance
+
+
+type DataGoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks struct {
+}
+

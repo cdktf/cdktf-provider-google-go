@@ -1,0 +1,6 @@
+package datagooglecomputeresourcepolicy
+
+
+type DataGoogleComputeResourcePolicySnapshotSchedulePolicySnapshotProperties struct {
+}
+

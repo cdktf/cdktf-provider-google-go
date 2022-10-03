@@ -1,0 +1,6 @@
+package datagooglecloudfunctionsfunction
+
+
+type DataGoogleCloudfunctionsFunctionSecretEnvironmentVariables struct {
+}
+

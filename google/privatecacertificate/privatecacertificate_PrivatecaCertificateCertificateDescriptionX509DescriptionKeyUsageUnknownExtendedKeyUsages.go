@@ -1,0 +1,6 @@
+package privatecacertificate
+
+
+type PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsages struct {
+}
+

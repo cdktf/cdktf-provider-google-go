@@ -1,0 +1,6 @@
+package datagooglecomputeresourcepolicy
+
+
+type DataGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks struct {
+}
+

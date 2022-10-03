@@ -1,0 +1,6 @@
+package datagooglemonitoringnotificationchannel
+
+
+type DataGoogleMonitoringNotificationChannelSensitiveLabels struct {
+}
+
