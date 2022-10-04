@@ -91,6 +91,17 @@ func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) vali
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) validatePutFilterParameters(value *ContainerClusterNotificationConfigPubsubFilter) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")

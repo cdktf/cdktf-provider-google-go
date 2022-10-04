@@ -85,6 +85,14 @@ func (j *jsiiProxy_TagsTagKey) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_TagsTagKey) validateSetPurposeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TagsTagKey) validateSetPurposeDataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TagsTagKey) validateSetShortNameParameters(val *string) error {
 	return nil
 }

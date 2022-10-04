@@ -12,6 +12,7 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/google/d/sql_database_instance google_sql_database_instance}.
 type DataGoogleSqlDatabaseInstance interface {
 	cdktf.TerraformDataSource
+	AvailableMaintenanceVersions() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Clone() DataGoogleSqlDatabaseInstanceCloneList
@@ -46,6 +47,7 @@ type DataGoogleSqlDatabaseInstance interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaintenanceVersion() *string
 	MasterInstanceName() *string
 	Name() *string
 	SetName(val *string)
@@ -120,6 +122,16 @@ type DataGoogleSqlDatabaseInstance interface {
 // The jsii proxy struct for DataGoogleSqlDatabaseInstance
 type jsiiProxy_DataGoogleSqlDatabaseInstance struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) AvailableMaintenanceVersions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"availableMaintenanceVersions",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) CdktfStack() cdktf.TerraformStack {
@@ -287,6 +299,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) Lifecycle() *cdktf.TerraformRe
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) MaintenanceVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceVersion",
 		&returns,
 	)
 	return returns

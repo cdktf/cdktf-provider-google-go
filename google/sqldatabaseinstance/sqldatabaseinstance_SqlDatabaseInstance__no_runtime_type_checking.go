@@ -101,6 +101,10 @@ func (j *jsiiProxy_SqlDatabaseInstance) validateSetLifecycleParameters(val *cdkt
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstance) validateSetMaintenanceVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstance) validateSetMasterInstanceNameParameters(val *string) error {
 	return nil
 }

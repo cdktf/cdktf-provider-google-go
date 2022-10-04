@@ -52,6 +52,8 @@ type StorageTransferJob interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	NotificationConfig() StorageTransferJobNotificationConfigOutputReference
+	NotificationConfigInput() *StorageTransferJobNotificationConfig
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -103,9 +105,11 @@ type StorageTransferJob interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutNotificationConfig(value *StorageTransferJobNotificationConfig)
 	PutSchedule(value *StorageTransferJobSchedule)
 	PutTransferSpec(value *StorageTransferJobTransferSpec)
 	ResetId()
+	ResetNotificationConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -302,6 +306,26 @@ func (j *jsiiProxy_StorageTransferJob) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJob) NotificationConfig() StorageTransferJobNotificationConfigOutputReference {
+	var returns StorageTransferJobNotificationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"notificationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJob) NotificationConfigInput() *StorageTransferJobNotificationConfig {
+	var returns *StorageTransferJobNotificationConfig
+	_jsii_.Get(
+		j,
+		"notificationConfigInput",
 		&returns,
 	)
 	return returns
@@ -814,6 +838,17 @@ func (s *jsiiProxy_StorageTransferJob) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_StorageTransferJob) PutNotificationConfig(value *StorageTransferJobNotificationConfig) {
+	if err := s.validatePutNotificationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putNotificationConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StorageTransferJob) PutSchedule(value *StorageTransferJobSchedule) {
 	if err := s.validatePutScheduleParameters(value); err != nil {
 		panic(err)
@@ -840,6 +875,14 @@ func (s *jsiiProxy_StorageTransferJob) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageTransferJob) ResetNotificationConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNotificationConfig",
 		nil, // no parameters
 	)
 }

@@ -32,6 +32,12 @@ type CertificateManagerCertificateSelfManagedOutputReference interface {
 	Fqn() *string
 	InternalValue() *CertificateManagerCertificateSelfManaged
 	SetInternalValue(val *CertificateManagerCertificateSelfManaged)
+	PemCertificate() *string
+	SetPemCertificate(val *string)
+	PemCertificateInput() *string
+	PemPrivateKey() *string
+	SetPemPrivateKey(val *string)
+	PemPrivateKeyInput() *string
 	PrivateKeyPem() *string
 	SetPrivateKeyPem(val *string)
 	PrivateKeyPemInput() *string
@@ -67,6 +73,10 @@ type CertificateManagerCertificateSelfManagedOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCertificatePem()
+	ResetPemCertificate()
+	ResetPemPrivateKey()
+	ResetPrivateKeyPem()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +157,46 @@ func (j *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) PemCertificate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pemCertificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) PemCertificateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pemCertificateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) PemPrivateKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pemPrivateKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) PemPrivateKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pemPrivateKeyInput",
 		&returns,
 	)
 	return returns
@@ -260,6 +310,28 @@ func (j *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference)SetIn
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference)SetPemCertificate(val *string) {
+	if err := j.validateSetPemCertificateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pemCertificate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference)SetPemPrivateKey(val *string) {
+	if err := j.validateSetPemPrivateKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pemPrivateKey",
 		val,
 	)
 }
@@ -481,6 +553,38 @@ func (c *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) Inte
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) ResetCertificatePem() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCertificatePem",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) ResetPemCertificate() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPemCertificate",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) ResetPemPrivateKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPemPrivateKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) ResetPrivateKeyPem() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPrivateKeyPem",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

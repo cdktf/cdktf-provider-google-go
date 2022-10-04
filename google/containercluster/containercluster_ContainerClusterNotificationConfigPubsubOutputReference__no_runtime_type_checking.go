@@ -45,6 +45,10 @@ func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) vali
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) validatePutFilterParameters(value *ContainerClusterNotificationConfigPubsubFilter) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

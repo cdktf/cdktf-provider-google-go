@@ -29,7 +29,7 @@ type SqlDatabaseInstanceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#clone SqlDatabaseInstance#clone}
 	Clone *SqlDatabaseInstanceClone `field:"optional" json:"clone" yaml:"clone"`
-	// Used to block Terraform from deleting a SQL Instance.
+	// Used to block Terraform from deleting a SQL Instance. Defaults to true.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#deletion_protection SqlDatabaseInstance#deletion_protection}
 	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
@@ -40,6 +40,10 @@ type SqlDatabaseInstanceConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Maintenance version.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#maintenance_version SqlDatabaseInstance#maintenance_version}
+	MaintenanceVersion *string `field:"optional" json:"maintenanceVersion" yaml:"maintenanceVersion"`
 	// The name of the instance that will act as the master in the replication setup.
 	//
 	// Note, this requires the master to have binary_log_enabled set, as well as existing backups.

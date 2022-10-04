@@ -28,6 +28,8 @@ type ContainerClusterNotificationConfigPubsubOutputReference interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
+	Filter() ContainerClusterNotificationConfigPubsubFilterOutputReference
+	FilterInput() *ContainerClusterNotificationConfigPubsubFilter
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ContainerClusterNotificationConfigPubsub
@@ -67,6 +69,8 @@ type ContainerClusterNotificationConfigPubsubOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutFilter(value *ContainerClusterNotificationConfigPubsubFilter)
+	ResetFilter()
 	ResetTopic()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) Enab
 	_jsii_.Get(
 		j,
 		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) Filter() ContainerClusterNotificationConfigPubsubFilterOutputReference {
+	var returns ContainerClusterNotificationConfigPubsubFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) FilterInput() *ContainerClusterNotificationConfigPubsubFilter {
+	var returns *ContainerClusterNotificationConfigPubsubFilter
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -482,6 +506,25 @@ func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) Inte
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) PutFilter(value *ContainerClusterNotificationConfigPubsubFilter) {
+	if err := c.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) ResetFilter() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFilter",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) ResetTopic() {

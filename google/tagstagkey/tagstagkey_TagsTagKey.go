@@ -62,6 +62,12 @@ type TagsTagKey interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	Purpose() *string
+	SetPurpose(val *string)
+	PurposeData() *map[string]*string
+	SetPurposeData(val *map[string]*string)
+	PurposeDataInput() *map[string]*string
+	PurposeInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	ShortName() *string
@@ -107,6 +113,8 @@ type TagsTagKey interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPurpose()
+	ResetPurposeData()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -333,6 +341,46 @@ func (j *jsiiProxy_TagsTagKey) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TagsTagKey) Purpose() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"purpose",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TagsTagKey) PurposeData() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"purposeData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TagsTagKey) PurposeDataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"purposeDataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TagsTagKey) PurposeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"purposeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TagsTagKey) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -547,6 +595,28 @@ func (j *jsiiProxy_TagsTagKey)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TagsTagKey)SetPurpose(val *string) {
+	if err := j.validateSetPurposeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"purpose",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TagsTagKey)SetPurposeData(val *map[string]*string) {
+	if err := j.validateSetPurposeDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"purposeData",
 		val,
 	)
 }
@@ -821,6 +891,22 @@ func (t *jsiiProxy_TagsTagKey) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TagsTagKey) ResetPurpose() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetPurpose",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TagsTagKey) ResetPurposeData() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetPurposeData",
 		nil, // no parameters
 	)
 }

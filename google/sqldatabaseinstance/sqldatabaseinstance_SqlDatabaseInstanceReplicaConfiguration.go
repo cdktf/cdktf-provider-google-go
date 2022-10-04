@@ -14,7 +14,7 @@ type SqlDatabaseInstanceReplicaConfiguration struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#client_key SqlDatabaseInstance#client_key}
 	ClientKey *string `field:"optional" json:"clientKey" yaml:"clientKey"`
-	// The number of seconds between connect retries.
+	// The number of seconds between connect retries. MySQL's default is 60 seconds.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#connect_retry_interval SqlDatabaseInstance#connect_retry_interval}
 	ConnectRetryInterval *float64 `field:"optional" json:"connectRetryInterval" yaml:"connectRetryInterval"`

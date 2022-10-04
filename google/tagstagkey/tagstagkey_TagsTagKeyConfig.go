@@ -40,6 +40,18 @@ type TagsTagKeyConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Optional. A purpose cannot be changed once set.
+	//
+	// A purpose denotes that this Tag is intended for use in policies of a specific policy engine, and will involve that policy engine in management operations involving this Tag. Possible values: ["GCE_FIREWALL"]
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/tags_tag_key#purpose TagsTagKey#purpose}
+	Purpose *string `field:"optional" json:"purpose" yaml:"purpose"`
+	// Optional. Purpose data cannot be changed once set.
+	//
+	// Purpose data corresponds to the policy system that the tag is intended for. For example, the GCE_FIREWALL purpose expects data in the following format: 'network = "<project-name>/<vpc-name>"'.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/tags_tag_key#purpose_data TagsTagKey#purpose_data}
+	PurposeData *map[string]*string `field:"optional" json:"purposeData" yaml:"purposeData"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/tags_tag_key#timeouts TagsTagKey#timeouts}

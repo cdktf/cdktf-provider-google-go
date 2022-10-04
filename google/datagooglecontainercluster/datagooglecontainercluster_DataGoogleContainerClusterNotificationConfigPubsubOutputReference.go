@@ -26,6 +26,7 @@ type DataGoogleContainerClusterNotificationConfigPubsubOutputReference interface
 	// Experimental.
 	CreationStack() *[]*string
 	Enabled() cdktf.IResolvable
+	Filter() DataGoogleContainerClusterNotificationConfigPubsubFilterList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterNotificationConfigPubsub
@@ -113,6 +114,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNotificationConfigPubsubOutputRefer
 	_jsii_.Get(
 		j,
 		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNotificationConfigPubsubOutputReference) Filter() DataGoogleContainerClusterNotificationConfigPubsubFilterList {
+	var returns DataGoogleContainerClusterNotificationConfigPubsubFilterList
+	_jsii_.Get(
+		j,
+		"filter",
 		&returns,
 	)
 	return returns

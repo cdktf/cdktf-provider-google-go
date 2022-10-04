@@ -180,6 +180,22 @@ func (j *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) validateSetPemCertificateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) validateSetPemPrivateKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CertificateManagerCertificateSelfManagedOutputReference) validateSetPrivateKeyPemParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

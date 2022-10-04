@@ -75,6 +75,7 @@ type SecretManagerSecretVersion interface {
 	TerraformResourceType() *string
 	Timeouts() SecretManagerSecretVersionTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Version() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -407,6 +408,16 @@ func (j *jsiiProxy_SecretManagerSecretVersion) TimeoutsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretManagerSecretVersion) Version() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"version",
 		&returns,
 	)
 	return returns

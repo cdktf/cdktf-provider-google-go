@@ -53,6 +53,10 @@ func (s *jsiiProxy_StorageTransferJob) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (s *jsiiProxy_StorageTransferJob) validatePutNotificationConfigParameters(value *StorageTransferJobNotificationConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageTransferJob) validatePutScheduleParameters(value *StorageTransferJobSchedule) error {
 	return nil
 }
