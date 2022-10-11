@@ -39,6 +39,10 @@ type ComputeBackendBucketConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_backend_bucket#cdn_policy ComputeBackendBucket#cdn_policy}
 	CdnPolicy *ComputeBackendBucketCdnPolicy `field:"optional" json:"cdnPolicy" yaml:"cdnPolicy"`
+	// Compress text responses using Brotli or gzip compression, based on the client's Accept-Encoding header. Possible values: ["AUTOMATIC", "DISABLED"].
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_backend_bucket#compression_mode ComputeBackendBucket#compression_mode}
+	CompressionMode *string `field:"optional" json:"compressionMode" yaml:"compressionMode"`
 	// Headers that the HTTP/S load balancer should add to proxied responses.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_backend_bucket#custom_response_headers ComputeBackendBucket#custom_response_headers}

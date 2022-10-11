@@ -1,0 +1,6 @@
+package datagooglecloudfunctions2function
+
+
+type DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariables struct {
+}
+

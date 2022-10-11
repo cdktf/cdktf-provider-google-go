@@ -17,6 +17,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "cdnPolicy", GoGetter: "CdnPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "circuitBreakers", GoGetter: "CircuitBreakers"},
+			_jsii_.MemberProperty{JsiiProperty: "compressionMode", GoGetter: "CompressionMode"},
 			_jsii_.MemberProperty{JsiiProperty: "connectionDrainingTimeoutSec", GoGetter: "ConnectionDrainingTimeoutSec"},
 			_jsii_.MemberProperty{JsiiProperty: "consistentHash", GoGetter: "ConsistentHash"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},

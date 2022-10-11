@@ -16,6 +16,7 @@ type DataGoogleComputeBackendBucket interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CdnPolicy() DataGoogleComputeBackendBucketCdnPolicyList
+	CompressionMode() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -137,6 +138,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendBucket) CdnPolicy() DataGoogleCompute
 	_jsii_.Get(
 		j,
 		"cdnPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendBucket) CompressionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compressionMode",
 		&returns,
 	)
 	return returns

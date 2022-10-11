@@ -21,6 +21,7 @@ type DataGoogleStorageBucket interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	CustomPlacementConfig() DataGoogleStorageBucketCustomPlacementConfigList
 	DefaultEventBasedHold() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
@@ -152,6 +153,16 @@ func (j *jsiiProxy_DataGoogleStorageBucket) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucket) CustomPlacementConfig() DataGoogleStorageBucketCustomPlacementConfigList {
+	var returns DataGoogleStorageBucketCustomPlacementConfigList
+	_jsii_.Get(
+		j,
+		"customPlacementConfig",
 		&returns,
 	)
 	return returns

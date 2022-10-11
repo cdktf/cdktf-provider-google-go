@@ -97,6 +97,10 @@ func (j *jsiiProxy_ComputeBackendService) validateSetAffinityCookieTtlSecParamet
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendService) validateSetCompressionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendService) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

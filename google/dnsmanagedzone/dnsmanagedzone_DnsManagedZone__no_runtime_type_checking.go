@@ -53,6 +53,10 @@ func (d *jsiiProxy_DnsManagedZone) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (d *jsiiProxy_DnsManagedZone) validatePutCloudLoggingConfigParameters(value *DnsManagedZoneCloudLoggingConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsManagedZone) validatePutDnssecConfigParameters(value *DnsManagedZoneDnssecConfig) error {
 	return nil
 }

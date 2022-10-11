@@ -53,6 +53,10 @@ func (d *jsiiProxy_DatastreamConnectionProfile) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamConnectionProfile) validatePutBigqueryProfileParameters(value *DatastreamConnectionProfileBigqueryProfile) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamConnectionProfile) validatePutForwardSshConnectivityParameters(value *DatastreamConnectionProfileForwardSshConnectivity) error {
 	return nil
 }

@@ -23,6 +23,9 @@ type ComputeBackendService interface {
 	CdnPolicyInput() *ComputeBackendServiceCdnPolicy
 	CircuitBreakers() ComputeBackendServiceCircuitBreakersOutputReference
 	CircuitBreakersInput() *ComputeBackendServiceCircuitBreakers
+	CompressionMode() *string
+	SetCompressionMode(val *string)
+	CompressionModeInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -168,6 +171,7 @@ type ComputeBackendService interface {
 	ResetBackend()
 	ResetCdnPolicy()
 	ResetCircuitBreakers()
+	ResetCompressionMode()
 	ResetConnectionDrainingTimeoutSec()
 	ResetConsistentHash()
 	ResetCustomRequestHeaders()
@@ -292,6 +296,26 @@ func (j *jsiiProxy_ComputeBackendService) CircuitBreakersInput() *ComputeBackend
 	_jsii_.Get(
 		j,
 		"circuitBreakersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) CompressionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compressionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) CompressionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compressionModeInput",
 		&returns,
 	)
 	return returns
@@ -958,6 +982,17 @@ func (j *jsiiProxy_ComputeBackendService)SetAffinityCookieTtlSec(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ComputeBackendService)SetCompressionMode(val *string) {
+	if err := j.validateSetCompressionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"compressionMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeBackendService)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -1554,6 +1589,14 @@ func (c *jsiiProxy_ComputeBackendService) ResetCircuitBreakers() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetCircuitBreakers",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendService) ResetCompressionMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCompressionMode",
 		nil, // no parameters
 	)
 }

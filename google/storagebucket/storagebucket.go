@@ -18,6 +18,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cors", GoGetter: "Cors"},
 			_jsii_.MemberProperty{JsiiProperty: "corsInput", GoGetter: "CorsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "customPlacementConfig", GoGetter: "CustomPlacementConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "customPlacementConfigInput", GoGetter: "CustomPlacementConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultEventBasedHold", GoGetter: "DefaultEventBasedHold"},
 			_jsii_.MemberProperty{JsiiProperty: "defaultEventBasedHoldInput", GoGetter: "DefaultEventBasedHoldInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
@@ -58,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putCors", GoMethod: "PutCors"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomPlacementConfig", GoMethod: "PutCustomPlacementConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putEncryption", GoMethod: "PutEncryption"},
 			_jsii_.MemberMethod{JsiiMethod: "putLifecycleRule", GoMethod: "PutLifecycleRule"},
 			_jsii_.MemberMethod{JsiiMethod: "putLogging", GoMethod: "PutLogging"},
@@ -69,6 +72,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requesterPays", GoGetter: "RequesterPays"},
 			_jsii_.MemberProperty{JsiiProperty: "requesterPaysInput", GoGetter: "RequesterPaysInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCors", GoMethod: "ResetCors"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomPlacementConfig", GoMethod: "ResetCustomPlacementConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultEventBasedHold", GoMethod: "ResetDefaultEventBasedHold"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEncryption", GoMethod: "ResetEncryption"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForceDestroy", GoMethod: "ResetForceDestroy"},
@@ -182,6 +186,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StorageBucketCorsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfig",
+		reflect.TypeOf((*StorageBucketCustomPlacementConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference",
+		reflect.TypeOf((*StorageBucketCustomPlacementConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataLocations", GoGetter: "DataLocations"},
+			_jsii_.MemberProperty{JsiiProperty: "dataLocationsInput", GoGetter: "DataLocationsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_StorageBucketCustomPlacementConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

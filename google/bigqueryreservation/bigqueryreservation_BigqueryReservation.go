@@ -14,6 +14,9 @@ type BigqueryReservation interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Concurrency() *float64
+	SetConcurrency(val *float64)
+	ConcurrencyInput() *float64
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -49,6 +52,9 @@ type BigqueryReservation interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MultiRegionAuxiliary() interface{}
+	SetMultiRegionAuxiliary(val interface{})
+	MultiRegionAuxiliaryInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -104,9 +110,11 @@ type BigqueryReservation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *BigqueryReservationTimeouts)
+	ResetConcurrency()
 	ResetId()
 	ResetIgnoreIdleSlots()
 	ResetLocation()
+	ResetMultiRegionAuxiliary()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -132,6 +140,26 @@ func (j *jsiiProxy_BigqueryReservation) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryReservation) Concurrency() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"concurrency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryReservation) ConcurrencyInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"concurrencyInput",
 		&returns,
 	)
 	return returns
@@ -272,6 +300,26 @@ func (j *jsiiProxy_BigqueryReservation) LocationInput() *string {
 	_jsii_.Get(
 		j,
 		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryReservation) MultiRegionAuxiliary() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multiRegionAuxiliary",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryReservation) MultiRegionAuxiliaryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multiRegionAuxiliaryInput",
 		&returns,
 	)
 	return returns
@@ -457,6 +505,17 @@ func NewBigqueryReservation_Override(b BigqueryReservation, scope constructs.Con
 	)
 }
 
+func (j *jsiiProxy_BigqueryReservation)SetConcurrency(val *float64) {
+	if err := j.validateSetConcurrencyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"concurrency",
+		val,
+	)
+}
+
 func (j *jsiiProxy_BigqueryReservation)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -532,6 +591,17 @@ func (j *jsiiProxy_BigqueryReservation)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryReservation)SetMultiRegionAuxiliary(val interface{}) {
+	if err := j.validateSetMultiRegionAuxiliaryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"multiRegionAuxiliary",
 		val,
 	)
 }
@@ -827,6 +897,14 @@ func (b *jsiiProxy_BigqueryReservation) PutTimeouts(value *BigqueryReservationTi
 	)
 }
 
+func (b *jsiiProxy_BigqueryReservation) ResetConcurrency() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetConcurrency",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BigqueryReservation) ResetId() {
 	_jsii_.InvokeVoid(
 		b,
@@ -847,6 +925,14 @@ func (b *jsiiProxy_BigqueryReservation) ResetLocation() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetLocation",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryReservation) ResetMultiRegionAuxiliary() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetMultiRegionAuxiliary",
 		nil, // no parameters
 	)
 }

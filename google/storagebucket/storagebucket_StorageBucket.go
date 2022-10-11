@@ -26,6 +26,8 @@ type StorageBucket interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	CustomPlacementConfig() StorageBucketCustomPlacementConfigOutputReference
+	CustomPlacementConfigInput() *StorageBucketCustomPlacementConfig
 	DefaultEventBasedHold() interface{}
 	SetDefaultEventBasedHold(val interface{})
 	DefaultEventBasedHoldInput() interface{}
@@ -132,6 +134,7 @@ type StorageBucket interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCors(value interface{})
+	PutCustomPlacementConfig(value *StorageBucketCustomPlacementConfig)
 	PutEncryption(value *StorageBucketEncryption)
 	PutLifecycleRule(value interface{})
 	PutLogging(value *StorageBucketLogging)
@@ -140,6 +143,7 @@ type StorageBucket interface {
 	PutVersioning(value *StorageBucketVersioning)
 	PutWebsite(value *StorageBucketWebsite)
 	ResetCors()
+	ResetCustomPlacementConfig()
 	ResetDefaultEventBasedHold()
 	ResetEncryption()
 	ResetForceDestroy()
@@ -228,6 +232,26 @@ func (j *jsiiProxy_StorageBucket) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) CustomPlacementConfig() StorageBucketCustomPlacementConfigOutputReference {
+	var returns StorageBucketCustomPlacementConfigOutputReference
+	_jsii_.Get(
+		j,
+		"customPlacementConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) CustomPlacementConfigInput() *StorageBucketCustomPlacementConfig {
+	var returns *StorageBucketCustomPlacementConfig
+	_jsii_.Get(
+		j,
+		"customPlacementConfigInput",
 		&returns,
 	)
 	return returns
@@ -1157,6 +1181,17 @@ func (s *jsiiProxy_StorageBucket) PutCors(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_StorageBucket) PutCustomPlacementConfig(value *StorageBucketCustomPlacementConfig) {
+	if err := s.validatePutCustomPlacementConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCustomPlacementConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StorageBucket) PutEncryption(value *StorageBucketEncryption) {
 	if err := s.validatePutEncryptionParameters(value); err != nil {
 		panic(err)
@@ -1238,6 +1273,14 @@ func (s *jsiiProxy_StorageBucket) ResetCors() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCors",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetCustomPlacementConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomPlacementConfig",
 		nil, // no parameters
 	)
 }

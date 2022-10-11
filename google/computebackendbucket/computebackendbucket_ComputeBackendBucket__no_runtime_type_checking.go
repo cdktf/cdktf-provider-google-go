@@ -69,6 +69,10 @@ func (j *jsiiProxy_ComputeBackendBucket) validateSetBucketNameParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendBucket) validateSetCompressionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendBucket) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

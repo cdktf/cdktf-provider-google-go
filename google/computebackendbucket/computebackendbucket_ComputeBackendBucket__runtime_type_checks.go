@@ -150,6 +150,14 @@ func (j *jsiiProxy_ComputeBackendBucket) validateSetBucketNameParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendBucket) validateSetCompressionModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendBucket) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

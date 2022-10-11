@@ -14,6 +14,8 @@ type DnsManagedZone interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CloudLoggingConfig() DnsManagedZoneCloudLoggingConfigOutputReference
+	CloudLoggingConfigInput() *DnsManagedZoneCloudLoggingConfig
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -120,11 +122,13 @@ type DnsManagedZone interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCloudLoggingConfig(value *DnsManagedZoneCloudLoggingConfig)
 	PutDnssecConfig(value *DnsManagedZoneDnssecConfig)
 	PutForwardingConfig(value *DnsManagedZoneForwardingConfig)
 	PutPeeringConfig(value *DnsManagedZonePeeringConfig)
 	PutPrivateVisibilityConfig(value *DnsManagedZonePrivateVisibilityConfig)
 	PutTimeouts(value *DnsManagedZoneTimeouts)
+	ResetCloudLoggingConfig()
 	ResetDescription()
 	ResetDnssecConfig()
 	ResetForceDestroy()
@@ -159,6 +163,26 @@ func (j *jsiiProxy_DnsManagedZone) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsManagedZone) CloudLoggingConfig() DnsManagedZoneCloudLoggingConfigOutputReference {
+	var returns DnsManagedZoneCloudLoggingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"cloudLoggingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsManagedZone) CloudLoggingConfigInput() *DnsManagedZoneCloudLoggingConfig {
+	var returns *DnsManagedZoneCloudLoggingConfig
+	_jsii_.Get(
+		j,
+		"cloudLoggingConfigInput",
 		&returns,
 	)
 	return returns
@@ -1015,6 +1039,17 @@ func (d *jsiiProxy_DnsManagedZone) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DnsManagedZone) PutCloudLoggingConfig(value *DnsManagedZoneCloudLoggingConfig) {
+	if err := d.validatePutCloudLoggingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCloudLoggingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DnsManagedZone) PutDnssecConfig(value *DnsManagedZoneDnssecConfig) {
 	if err := d.validatePutDnssecConfigParameters(value); err != nil {
 		panic(err)
@@ -1067,6 +1102,14 @@ func (d *jsiiProxy_DnsManagedZone) PutTimeouts(value *DnsManagedZoneTimeouts) {
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DnsManagedZone) ResetCloudLoggingConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCloudLoggingConfig",
+		nil, // no parameters
 	)
 }
 

@@ -57,6 +57,10 @@ func (s *jsiiProxy_StorageBucket) validatePutCorsParameters(value interface{}) e
 	return nil
 }
 
+func (s *jsiiProxy_StorageBucket) validatePutCustomPlacementConfigParameters(value *StorageBucketCustomPlacementConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucket) validatePutEncryptionParameters(value *StorageBucketEncryption) error {
 	return nil
 }

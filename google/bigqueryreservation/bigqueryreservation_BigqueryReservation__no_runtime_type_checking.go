@@ -61,6 +61,10 @@ func validateBigqueryReservation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryReservation) validateSetConcurrencyParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryReservation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -78,6 +82,10 @@ func (j *jsiiProxy_BigqueryReservation) validateSetLifecycleParameters(val *cdkt
 }
 
 func (j *jsiiProxy_BigqueryReservation) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BigqueryReservation) validateSetMultiRegionAuxiliaryParameters(val interface{}) error {
 	return nil
 }
 

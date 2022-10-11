@@ -53,6 +53,10 @@ type ComputeBackendServiceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_backend_service#circuit_breakers ComputeBackendService#circuit_breakers}
 	CircuitBreakers *ComputeBackendServiceCircuitBreakers `field:"optional" json:"circuitBreakers" yaml:"circuitBreakers"`
+	// Compress text responses using Brotli or gzip compression, based on the client's Accept-Encoding header. Possible values: ["AUTOMATIC", "DISABLED"].
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_backend_service#compression_mode ComputeBackendService#compression_mode}
+	CompressionMode *string `field:"optional" json:"compressionMode" yaml:"compressionMode"`
 	// Time for which instance will be drained (not accept new connections, but still work to finish started).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_backend_service#connection_draining_timeout_sec ComputeBackendService#connection_draining_timeout_sec}

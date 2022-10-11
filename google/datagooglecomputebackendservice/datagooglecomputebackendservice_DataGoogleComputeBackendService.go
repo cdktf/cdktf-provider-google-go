@@ -18,6 +18,7 @@ type DataGoogleComputeBackendService interface {
 	CdktfStack() cdktf.TerraformStack
 	CdnPolicy() DataGoogleComputeBackendServiceCdnPolicyList
 	CircuitBreakers() DataGoogleComputeBackendServiceCircuitBreakersList
+	CompressionMode() *string
 	ConnectionDrainingTimeoutSec() *float64
 	ConsistentHash() DataGoogleComputeBackendServiceConsistentHashList
 	// Experimental.
@@ -174,6 +175,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) CircuitBreakers() DataGoogle
 	_jsii_.Get(
 		j,
 		"circuitBreakers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendService) CompressionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compressionMode",
 		&returns,
 	)
 	return returns

@@ -53,6 +53,10 @@ func (s *jsiiProxy_SqlUser) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
+func (s *jsiiProxy_SqlUser) validatePutPasswordPolicyParameters(value *SqlUserPasswordPolicy) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlUser) validatePutSqlServerUserDetailsParameters(value *SqlUserSqlServerUserDetails) error {
 	return nil
 }

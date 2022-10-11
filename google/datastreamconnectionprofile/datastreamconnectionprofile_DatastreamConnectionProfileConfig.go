@@ -31,6 +31,10 @@ type DatastreamConnectionProfileConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/datastream_connection_profile#location DatastreamConnectionProfile#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
+	// bigquery_profile block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/datastream_connection_profile#bigquery_profile DatastreamConnectionProfile#bigquery_profile}
+	BigqueryProfile *DatastreamConnectionProfileBigqueryProfile `field:"optional" json:"bigqueryProfile" yaml:"bigqueryProfile"`
 	// forward_ssh_connectivity block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/datastream_connection_profile#forward_ssh_connectivity DatastreamConnectionProfile#forward_ssh_connectivity}

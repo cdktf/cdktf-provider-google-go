@@ -12,6 +12,8 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/google/r/datastream_connection_profile google_datastream_connection_profile}.
 type DatastreamConnectionProfile interface {
 	cdktf.TerraformResource
+	BigqueryProfile() DatastreamConnectionProfileBigqueryProfileOutputReference
+	BigqueryProfileInput() *DatastreamConnectionProfileBigqueryProfile
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -114,12 +116,14 @@ type DatastreamConnectionProfile interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBigqueryProfile(value *DatastreamConnectionProfileBigqueryProfile)
 	PutForwardSshConnectivity(value *DatastreamConnectionProfileForwardSshConnectivity)
 	PutGcsProfile(value *DatastreamConnectionProfileGcsProfile)
 	PutMysqlProfile(value *DatastreamConnectionProfileMysqlProfile)
 	PutOracleProfile(value *DatastreamConnectionProfileOracleProfile)
 	PutPostgresqlProfile(value *DatastreamConnectionProfilePostgresqlProfile)
 	PutTimeouts(value *DatastreamConnectionProfileTimeouts)
+	ResetBigqueryProfile()
 	ResetForwardSshConnectivity()
 	ResetGcsProfile()
 	ResetId()
@@ -145,6 +149,26 @@ type DatastreamConnectionProfile interface {
 // The jsii proxy struct for DatastreamConnectionProfile
 type jsiiProxy_DatastreamConnectionProfile struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DatastreamConnectionProfile) BigqueryProfile() DatastreamConnectionProfileBigqueryProfileOutputReference {
+	var returns DatastreamConnectionProfileBigqueryProfileOutputReference
+	_jsii_.Get(
+		j,
+		"bigqueryProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamConnectionProfile) BigqueryProfileInput() *DatastreamConnectionProfileBigqueryProfile {
+	var returns *DatastreamConnectionProfileBigqueryProfile
+	_jsii_.Get(
+		j,
+		"bigqueryProfileInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DatastreamConnectionProfile) CdktfStack() cdktf.TerraformStack {
@@ -946,6 +970,17 @@ func (d *jsiiProxy_DatastreamConnectionProfile) OverrideLogicalId(newLogicalId *
 	)
 }
 
+func (d *jsiiProxy_DatastreamConnectionProfile) PutBigqueryProfile(value *DatastreamConnectionProfileBigqueryProfile) {
+	if err := d.validatePutBigqueryProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putBigqueryProfile",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatastreamConnectionProfile) PutForwardSshConnectivity(value *DatastreamConnectionProfileForwardSshConnectivity) {
 	if err := d.validatePutForwardSshConnectivityParameters(value); err != nil {
 		panic(err)
@@ -1009,6 +1044,14 @@ func (d *jsiiProxy_DatastreamConnectionProfile) PutTimeouts(value *DatastreamCon
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DatastreamConnectionProfile) ResetBigqueryProfile() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBigqueryProfile",
+		nil, // no parameters
 	)
 }
 

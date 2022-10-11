@@ -60,6 +60,8 @@ type SqlUser interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordPolicy() SqlUserPasswordPolicyOutputReference
+	PasswordPolicyInput() *SqlUserPasswordPolicy
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -111,6 +113,7 @@ type SqlUser interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutPasswordPolicy(value *SqlUserPasswordPolicy)
 	PutSqlServerUserDetails(value *SqlUserSqlServerUserDetails)
 	PutTimeouts(value *SqlUserTimeouts)
 	ResetDeletionPolicy()
@@ -120,6 +123,7 @@ type SqlUser interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPassword()
+	ResetPasswordPolicy()
 	ResetProject()
 	ResetSqlServerUserDetails()
 	ResetTimeouts()
@@ -354,6 +358,26 @@ func (j *jsiiProxy_SqlUser) PasswordInput() *string {
 	_jsii_.Get(
 		j,
 		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlUser) PasswordPolicy() SqlUserPasswordPolicyOutputReference {
+	var returns SqlUserPasswordPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"passwordPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlUser) PasswordPolicyInput() *SqlUserPasswordPolicy {
+	var returns *SqlUserPasswordPolicy
+	_jsii_.Get(
+		j,
+		"passwordPolicyInput",
 		&returns,
 	)
 	return returns
@@ -910,6 +934,17 @@ func (s *jsiiProxy_SqlUser) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_SqlUser) PutPasswordPolicy(value *SqlUserPasswordPolicy) {
+	if err := s.validatePutPasswordPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putPasswordPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlUser) PutSqlServerUserDetails(value *SqlUserSqlServerUserDetails) {
 	if err := s.validatePutSqlServerUserDetailsParameters(value); err != nil {
 		panic(err)
@@ -968,6 +1003,14 @@ func (s *jsiiProxy_SqlUser) ResetPassword() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlUser) ResetPasswordPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPasswordPolicy",
 		nil, // no parameters
 	)
 }
