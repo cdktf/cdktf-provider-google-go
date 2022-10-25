@@ -29,6 +29,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference
 	// Experimental.
 	Fqn() *string
 	GpuPartitionSize() *string
+	GpuSharingConfig() DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList
 	InternalValue() *DataGoogleContainerClusterNodePoolNodeConfigGuestAccelerator
 	SetInternalValue(val *DataGoogleContainerClusterNodePoolNodeConfigGuestAccelerator)
 	// Experimental.
@@ -134,6 +135,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorO
 	_jsii_.Get(
 		j,
 		"gpuPartitionSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference) GpuSharingConfig() DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList
+	_jsii_.Get(
+		j,
+		"gpuSharingConfig",
 		&returns,
 	)
 	return returns

@@ -17,6 +17,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "createTime", GoGetter: "CreateTime"},
+			_jsii_.MemberProperty{JsiiProperty: "cryptoKeyConfig", GoGetter: "CryptoKeyConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "cryptoKeyConfigInput", GoGetter: "CryptoKeyConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dataprocServiceAccount", GoGetter: "DataprocServiceAccount"},
 			_jsii_.MemberProperty{JsiiProperty: "dataprocServiceAccountInput", GoGetter: "DataprocServiceAccountInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
@@ -59,11 +61,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putCryptoKeyConfig", GoMethod: "PutCryptoKeyConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkConfig", GoMethod: "PutNetworkConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCryptoKeyConfig", GoMethod: "ResetCryptoKeyConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataprocServiceAccount", GoMethod: "ResetDataprocServiceAccount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableStackdriverLogging", GoMethod: "ResetEnableStackdriverLogging"},
@@ -106,6 +110,44 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceConfig",
 		reflect.TypeOf((*DataFusionInstanceConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceCryptoKeyConfig",
+		reflect.TypeOf((*DataFusionInstanceCryptoKeyConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceCryptoKeyConfigOutputReference",
+		reflect.TypeOf((*DataFusionInstanceCryptoKeyConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "keyReference", GoGetter: "KeyReference"},
+			_jsii_.MemberProperty{JsiiProperty: "keyReferenceInput", GoGetter: "KeyReferenceInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataFusionInstanceCryptoKeyConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfig",

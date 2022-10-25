@@ -163,6 +163,44 @@ func init() {
 		reflect.TypeOf((*BigqueryTableExternalDataConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptions",
+		reflect.TypeOf((*BigqueryTableExternalDataConfigurationAvroOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference",
+		reflect.TypeOf((*BigqueryTableExternalDataConfigurationAvroOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "useAvroLogicalTypes", GoGetter: "UseAvroLogicalTypes"},
+			_jsii_.MemberProperty{JsiiProperty: "useAvroLogicalTypesInput", GoGetter: "UseAvroLogicalTypesInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptions",
 		reflect.TypeOf((*BigqueryTableExternalDataConfigurationCsvOptions)(nil)).Elem(),
 	)
@@ -308,6 +346,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autodetect", GoGetter: "Autodetect"},
 			_jsii_.MemberProperty{JsiiProperty: "autodetectInput", GoGetter: "AutodetectInput"},
+			_jsii_.MemberProperty{JsiiProperty: "avroOptions", GoGetter: "AvroOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "avroOptionsInput", GoGetter: "AvroOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberProperty{JsiiProperty: "compression", GoGetter: "Compression"},
@@ -339,9 +379,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxBadRecords", GoGetter: "MaxBadRecords"},
 			_jsii_.MemberProperty{JsiiProperty: "maxBadRecordsInput", GoGetter: "MaxBadRecordsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAvroOptions", GoMethod: "PutAvroOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putCsvOptions", GoMethod: "PutCsvOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putGoogleSheetsOptions", GoMethod: "PutGoogleSheetsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putHivePartitioningOptions", GoMethod: "PutHivePartitioningOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAvroOptions", GoMethod: "ResetAvroOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompression", GoMethod: "ResetCompression"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionId", GoMethod: "ResetConnectionId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCsvOptions", GoMethod: "ResetCsvOptions"},

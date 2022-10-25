@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package bigquerytable
 
@@ -42,6 +41,10 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) valida
 }
 
 func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validatePutAvroOptionsParameters(value *BigqueryTableExternalDataConfigurationAvroOptions) error {
 	return nil
 }
 

@@ -99,6 +99,9 @@ type AppEngineStandardAppVersion interface {
 	RuntimeInput() *string
 	Service() *string
 	SetService(val *string)
+	ServiceAccount() *string
+	SetServiceAccount(val *string)
+	ServiceAccountInput() *string
 	ServiceInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -167,6 +170,7 @@ type AppEngineStandardAppVersion interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRuntimeApiVersion()
+	ResetServiceAccount()
 	ResetThreadsafe()
 	ResetTimeouts()
 	ResetVersionId()
@@ -676,6 +680,26 @@ func (j *jsiiProxy_AppEngineStandardAppVersion) Service() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AppEngineStandardAppVersion) ServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppEngineStandardAppVersion) ServiceAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppEngineStandardAppVersion) ServiceInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1008,6 +1032,17 @@ func (j *jsiiProxy_AppEngineStandardAppVersion)SetService(val *string) {
 	_jsii_.Set(
 		j,
 		"service",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppEngineStandardAppVersion)SetServiceAccount(val *string) {
+	if err := j.validateSetServiceAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccount",
 		val,
 	)
 }
@@ -1477,6 +1512,14 @@ func (a *jsiiProxy_AppEngineStandardAppVersion) ResetRuntimeApiVersion() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRuntimeApiVersion",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppEngineStandardAppVersion) ResetServiceAccount() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetServiceAccount",
 		nil, // no parameters
 	)
 }

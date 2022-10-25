@@ -25,6 +25,8 @@ type DataFusionInstance interface {
 	// Experimental.
 	SetCount(val *float64)
 	CreateTime() *string
+	CryptoKeyConfig() DataFusionInstanceCryptoKeyConfigOutputReference
+	CryptoKeyConfigInput() *DataFusionInstanceCryptoKeyConfig
 	DataprocServiceAccount() *string
 	SetDataprocServiceAccount(val *string)
 	DataprocServiceAccountInput() *string
@@ -133,8 +135,10 @@ type DataFusionInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCryptoKeyConfig(value *DataFusionInstanceCryptoKeyConfig)
 	PutNetworkConfig(value *DataFusionInstanceNetworkConfig)
 	PutTimeouts(value *DataFusionInstanceTimeouts)
+	ResetCryptoKeyConfig()
 	ResetDataprocServiceAccount()
 	ResetDescription()
 	ResetEnableStackdriverLogging()
@@ -211,6 +215,26 @@ func (j *jsiiProxy_DataFusionInstance) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFusionInstance) CryptoKeyConfig() DataFusionInstanceCryptoKeyConfigOutputReference {
+	var returns DataFusionInstanceCryptoKeyConfigOutputReference
+	_jsii_.Get(
+		j,
+		"cryptoKeyConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFusionInstance) CryptoKeyConfigInput() *DataFusionInstanceCryptoKeyConfig {
+	var returns *DataFusionInstanceCryptoKeyConfig
+	_jsii_.Get(
+		j,
+		"cryptoKeyConfigInput",
 		&returns,
 	)
 	return returns
@@ -1162,6 +1186,17 @@ func (d *jsiiProxy_DataFusionInstance) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DataFusionInstance) PutCryptoKeyConfig(value *DataFusionInstanceCryptoKeyConfig) {
+	if err := d.validatePutCryptoKeyConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCryptoKeyConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataFusionInstance) PutNetworkConfig(value *DataFusionInstanceNetworkConfig) {
 	if err := d.validatePutNetworkConfigParameters(value); err != nil {
 		panic(err)
@@ -1181,6 +1216,14 @@ func (d *jsiiProxy_DataFusionInstance) PutTimeouts(value *DataFusionInstanceTime
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataFusionInstance) ResetCryptoKeyConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCryptoKeyConfig",
+		nil, // no parameters
 	)
 }
 

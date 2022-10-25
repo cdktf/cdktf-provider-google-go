@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package containernodepool
 
@@ -42,6 +41,10 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigGuestAcceleratorOutputReference) v
 }
 
 func (c *jsiiProxy_ContainerNodePoolNodeConfigGuestAcceleratorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigGuestAcceleratorOutputReference) validatePutGpuSharingConfigParameters(value interface{}) error {
 	return nil
 }
 

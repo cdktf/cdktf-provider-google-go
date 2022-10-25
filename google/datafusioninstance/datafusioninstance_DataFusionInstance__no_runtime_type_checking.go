@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datafusioninstance
 
@@ -50,6 +49,10 @@ func (d *jsiiProxy_DataFusionInstance) validateInterpolationForAttributeParamete
 }
 
 func (d *jsiiProxy_DataFusionInstance) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFusionInstance) validatePutCryptoKeyConfigParameters(value *DataFusionInstanceCryptoKeyConfig) error {
 	return nil
 }
 

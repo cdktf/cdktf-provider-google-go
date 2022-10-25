@@ -25,16 +25,12 @@ type SqlUserSqlServerUserDetailsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SqlUserSqlServerUserDetails
 	SetInternalValue(val *SqlUserSqlServerUserDetails)
 	ServerRoles() *[]*string
-	SetServerRoles(val *[]*string)
-	ServerRolesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,8 +63,6 @@ type SqlUserSqlServerUserDetailsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetDisabled()
-	ResetServerRoles()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -114,21 +108,11 @@ func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference) CreationStack() *
 	return returns
 }
 
-func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference) Disabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"disabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference) DisabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"disabledInput",
 		&returns,
 	)
 	return returns
@@ -164,16 +148,6 @@ func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference) ServerRoles() *[]
 	return returns
 }
 
-func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference) ServerRolesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"serverRolesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -195,29 +169,29 @@ func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference) TerraformResource
 }
 
 
-func NewSqlUserSqlServerUserDetailsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlUserSqlServerUserDetailsOutputReference {
+func NewSqlUserSqlServerUserDetailsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SqlUserSqlServerUserDetailsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewSqlUserSqlServerUserDetailsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewSqlUserSqlServerUserDetailsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_SqlUserSqlServerUserDetailsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlUser.SqlUserSqlServerUserDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewSqlUserSqlServerUserDetailsOutputReference_Override(s SqlUserSqlServerUserDetailsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSqlUserSqlServerUserDetailsOutputReference_Override(s SqlUserSqlServerUserDetailsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google.sqlUser.SqlUserSqlServerUserDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -244,17 +218,6 @@ func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference)SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference)SetDisabled(val interface{}) {
-	if err := j.validateSetDisabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"disabled",
-		val,
-	)
-}
-
 func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference)SetInternalValue(val *SqlUserSqlServerUserDetails) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -262,17 +225,6 @@ func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference)SetInternalValue(v
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference)SetServerRoles(val *[]*string) {
-	if err := j.validateSetServerRolesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"serverRoles",
 		val,
 	)
 }
@@ -483,22 +435,6 @@ func (s *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference) InterpolationForA
 	)
 
 	return returns
-}
-
-func (s *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference) ResetDisabled() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetDisabled",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference) ResetServerRoles() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetServerRoles",
-		nil, // no parameters
-	)
 }
 
 func (s *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

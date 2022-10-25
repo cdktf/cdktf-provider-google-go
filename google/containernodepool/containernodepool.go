@@ -249,6 +249,69 @@ func init() {
 		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigGuestAccelerator",
 		reflect.TypeOf((*ContainerNodePoolNodeConfigGuestAccelerator)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfig",
+		reflect.TypeOf((*ContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList",
+		reflect.TypeOf((*ContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference",
+		reflect.TypeOf((*ContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "gpuSharingStrategy", GoGetter: "GpuSharingStrategy"},
+			_jsii_.MemberProperty{JsiiProperty: "gpuSharingStrategyInput", GoGetter: "GpuSharingStrategyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxSharedClientsPerGpu", GoGetter: "MaxSharedClientsPerGpu"},
+			_jsii_.MemberProperty{JsiiProperty: "maxSharedClientsPerGpuInput", GoGetter: "MaxSharedClientsPerGpuInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGpuSharingStrategy", GoMethod: "ResetGpuSharingStrategy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxSharedClientsPerGpu", GoMethod: "ResetMaxSharedClientsPerGpu"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigGuestAcceleratorList",
 		reflect.TypeOf((*ContainerNodePoolNodeConfigGuestAcceleratorList)(nil)).Elem(),
@@ -292,11 +355,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "gpuPartitionSize", GoGetter: "GpuPartitionSize"},
 			_jsii_.MemberProperty{JsiiProperty: "gpuPartitionSizeInput", GoGetter: "GpuPartitionSizeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "gpuSharingConfig", GoGetter: "GpuSharingConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "gpuSharingConfigInput", GoGetter: "GpuSharingConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putGpuSharingConfig", GoMethod: "PutGpuSharingConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCount", GoMethod: "ResetCount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGpuPartitionSize", GoMethod: "ResetGpuPartitionSize"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGpuSharingConfig", GoMethod: "ResetGpuSharingConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

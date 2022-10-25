@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package sqluser
 
@@ -57,15 +56,7 @@ func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference) validateSetComple
 	return nil
 }
 
-func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference) validateSetDisabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference) validateSetInternalValueParameters(val *SqlUserSqlServerUserDetails) error {
-	return nil
-}
-
-func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference) validateSetServerRolesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -77,7 +68,7 @@ func (j *jsiiProxy_SqlUserSqlServerUserDetailsOutputReference) validateSetTerraf
 	return nil
 }
 
-func validateNewSqlUserSqlServerUserDetailsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSqlUserSqlServerUserDetailsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

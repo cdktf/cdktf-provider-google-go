@@ -63,10 +63,6 @@ type SqlUserConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_user#project SqlUser#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
-	// sql_server_user_details block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_user#sql_server_user_details SqlUser#sql_server_user_details}
-	SqlServerUserDetails *SqlUserSqlServerUserDetails `field:"optional" json:"sqlServerUserDetails" yaml:"sqlServerUserDetails"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_user#timeouts SqlUser#timeouts}

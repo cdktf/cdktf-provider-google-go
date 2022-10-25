@@ -33,6 +33,8 @@ type ContainerClusterNodeConfigGuestAcceleratorOutputReference interface {
 	GpuPartitionSize() *string
 	SetGpuPartitionSize(val *string)
 	GpuPartitionSizeInput() *string
+	GpuSharingConfig() ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigList
+	GpuSharingConfigInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -70,8 +72,10 @@ type ContainerClusterNodeConfigGuestAcceleratorOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutGpuSharingConfig(value interface{})
 	ResetCount()
 	ResetGpuPartitionSize()
+	ResetGpuSharingConfig()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -163,6 +167,26 @@ func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Gp
 	_jsii_.Get(
 		j,
 		"gpuPartitionSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) GpuSharingConfig() ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigList {
+	var returns ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigList
+	_jsii_.Get(
+		j,
+		"gpuSharingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) GpuSharingConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gpuSharingConfigInput",
 		&returns,
 	)
 	return returns
@@ -520,6 +544,17 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) In
 	return returns
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) PutGpuSharingConfig(value interface{}) {
+	if err := c.validatePutGpuSharingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putGpuSharingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) ResetCount() {
 	_jsii_.InvokeVoid(
 		c,
@@ -532,6 +567,14 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Re
 	_jsii_.InvokeVoid(
 		c,
 		"resetGpuPartitionSize",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) ResetGpuSharingConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGpuSharingConfig",
 		nil, // no parameters
 	)
 }

@@ -16,6 +16,10 @@ type BigqueryTableExternalDataConfiguration struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_table#source_uris BigqueryTable#source_uris}
 	SourceUris *[]*string `field:"required" json:"sourceUris" yaml:"sourceUris"`
+	// avro_options block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_table#avro_options BigqueryTable#avro_options}
+	AvroOptions *BigqueryTableExternalDataConfigurationAvroOptions `field:"optional" json:"avroOptions" yaml:"avroOptions"`
 	// The compression type of the data source. Valid values are "NONE" or "GZIP".
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_table#compression BigqueryTable#compression}

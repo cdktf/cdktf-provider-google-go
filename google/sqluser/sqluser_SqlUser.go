@@ -75,8 +75,7 @@ type SqlUser interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	SqlServerUserDetails() SqlUserSqlServerUserDetailsOutputReference
-	SqlServerUserDetailsInput() *SqlUserSqlServerUserDetails
+	SqlServerUserDetails() SqlUserSqlServerUserDetailsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -114,7 +113,6 @@ type SqlUser interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutPasswordPolicy(value *SqlUserPasswordPolicy)
-	PutSqlServerUserDetails(value *SqlUserSqlServerUserDetails)
 	PutTimeouts(value *SqlUserTimeouts)
 	ResetDeletionPolicy()
 	ResetHost()
@@ -125,7 +123,6 @@ type SqlUser interface {
 	ResetPassword()
 	ResetPasswordPolicy()
 	ResetProject()
-	ResetSqlServerUserDetails()
 	ResetTimeouts()
 	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
@@ -433,21 +430,11 @@ func (j *jsiiProxy_SqlUser) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SqlUser) SqlServerUserDetails() SqlUserSqlServerUserDetailsOutputReference {
-	var returns SqlUserSqlServerUserDetailsOutputReference
+func (j *jsiiProxy_SqlUser) SqlServerUserDetails() SqlUserSqlServerUserDetailsList {
+	var returns SqlUserSqlServerUserDetailsList
 	_jsii_.Get(
 		j,
 		"sqlServerUserDetails",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SqlUser) SqlServerUserDetailsInput() *SqlUserSqlServerUserDetails {
-	var returns *SqlUserSqlServerUserDetails
-	_jsii_.Get(
-		j,
-		"sqlServerUserDetailsInput",
 		&returns,
 	)
 	return returns
@@ -945,17 +932,6 @@ func (s *jsiiProxy_SqlUser) PutPasswordPolicy(value *SqlUserPasswordPolicy) {
 	)
 }
 
-func (s *jsiiProxy_SqlUser) PutSqlServerUserDetails(value *SqlUserSqlServerUserDetails) {
-	if err := s.validatePutSqlServerUserDetailsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		s,
-		"putSqlServerUserDetails",
-		[]interface{}{value},
-	)
-}
-
 func (s *jsiiProxy_SqlUser) PutTimeouts(value *SqlUserTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1019,14 +995,6 @@ func (s *jsiiProxy_SqlUser) ResetProject() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetProject",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SqlUser) ResetSqlServerUserDetails() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetSqlServerUserDetails",
 		nil, // no parameters
 	)
 }

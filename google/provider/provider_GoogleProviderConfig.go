@@ -62,6 +62,8 @@ type GoogleProviderConfig struct {
 	CloudFunctionsCustomEndpoint *string `field:"optional" json:"cloudFunctionsCustomEndpoint" yaml:"cloudFunctionsCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#cloud_identity_custom_endpoint GoogleProvider#cloud_identity_custom_endpoint}.
 	CloudIdentityCustomEndpoint *string `field:"optional" json:"cloudIdentityCustomEndpoint" yaml:"cloudIdentityCustomEndpoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#cloud_ids_custom_endpoint GoogleProvider#cloud_ids_custom_endpoint}.
+	CloudIdsCustomEndpoint *string `field:"optional" json:"cloudIdsCustomEndpoint" yaml:"cloudIdsCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#cloud_iot_custom_endpoint GoogleProvider#cloud_iot_custom_endpoint}.
 	CloudIotCustomEndpoint *string `field:"optional" json:"cloudIotCustomEndpoint" yaml:"cloudIotCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#cloud_resource_manager_custom_endpoint GoogleProvider#cloud_resource_manager_custom_endpoint}.
