@@ -132,6 +132,10 @@ func (j *jsiiProxy_StorageBucket) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_StorageBucket) validateSetPublicAccessPreventionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBucket) validateSetRequesterPaysParameters(val interface{}) error {
 	return nil
 }

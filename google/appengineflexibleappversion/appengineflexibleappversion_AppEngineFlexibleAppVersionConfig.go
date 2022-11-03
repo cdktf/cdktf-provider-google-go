@@ -53,7 +53,9 @@ type AppEngineFlexibleAppVersionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/app_engine_flexible_app_version#default_expiration AppEngineFlexibleAppVersion#default_expiration}
 	DefaultExpiration *string `field:"optional" json:"defaultExpiration" yaml:"defaultExpiration"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/app_engine_flexible_app_version#delete_service_on_destroy AppEngineFlexibleAppVersion#delete_service_on_destroy}.
+	// If set to 'true', the service will be deleted if it is the last version.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/app_engine_flexible_app_version#delete_service_on_destroy AppEngineFlexibleAppVersion#delete_service_on_destroy}
 	DeleteServiceOnDestroy interface{} `field:"optional" json:"deleteServiceOnDestroy" yaml:"deleteServiceOnDestroy"`
 	// deployment block.
 	//
@@ -109,7 +111,9 @@ type AppEngineFlexibleAppVersionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/app_engine_flexible_app_version#nobuild_files_regex AppEngineFlexibleAppVersion#nobuild_files_regex}
 	NobuildFilesRegex *string `field:"optional" json:"nobuildFilesRegex" yaml:"nobuildFilesRegex"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/app_engine_flexible_app_version#noop_on_destroy AppEngineFlexibleAppVersion#noop_on_destroy}.
+	// If set to 'true', the application version will not be deleted.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/app_engine_flexible_app_version#noop_on_destroy AppEngineFlexibleAppVersion#noop_on_destroy}
 	NoopOnDestroy interface{} `field:"optional" json:"noopOnDestroy" yaml:"noopOnDestroy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/app_engine_flexible_app_version#project AppEngineFlexibleAppVersion#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`

@@ -22,6 +22,7 @@ type DataGoogleContainerCluster interface {
 	ConfidentialNodes() DataGoogleContainerClusterConfidentialNodesList
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	CostManagementConfig() DataGoogleContainerClusterCostManagementConfigList
 	// Experimental.
 	Count() *float64
 	// Experimental.
@@ -238,6 +239,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) ConstructNodeMetadata() *map[stri
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) CostManagementConfig() DataGoogleContainerClusterCostManagementConfigList {
+	var returns DataGoogleContainerClusterCostManagementConfigList
+	_jsii_.Get(
+		j,
+		"costManagementConfig",
 		&returns,
 	)
 	return returns

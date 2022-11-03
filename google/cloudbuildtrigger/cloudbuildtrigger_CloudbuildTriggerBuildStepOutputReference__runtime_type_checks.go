@@ -266,6 +266,14 @@ func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetNamePar
 	return nil
 }
 
+func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetScriptParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetSecretEnvParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

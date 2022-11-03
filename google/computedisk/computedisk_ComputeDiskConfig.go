@@ -110,6 +110,20 @@ type ComputeDiskConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_disk#snapshot ComputeDisk#snapshot}
 	Snapshot *string `field:"optional" json:"snapshot" yaml:"snapshot"`
+	// The source disk used to create this disk.
+	//
+	// You can provide this as a partial or full URL to the resource.
+	// For example, the following are valid values:
+	//
+	// https://www.googleapis.com/compute/v1/projects/{project}/zones/{zone}/disks/{disk}
+	// https://www.googleapis.com/compute/v1/projects/{project}/regions/{region}/disks/{disk}
+	// projects/{project}/zones/{zone}/disks/{disk}
+	// projects/{project}/regions/{region}/disks/{disk}
+	// zones/{zone}/disks/{disk}
+	// regions/{region}/disks/{disk}
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_disk#source_disk ComputeDisk#source_disk}
+	SourceDisk *string `field:"optional" json:"sourceDisk" yaml:"sourceDisk"`
 	// source_image_encryption_key block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_disk#source_image_encryption_key ComputeDisk#source_image_encryption_key}

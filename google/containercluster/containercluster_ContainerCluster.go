@@ -33,6 +33,8 @@ type ContainerCluster interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	CostManagementConfig() ContainerClusterCostManagementConfigOutputReference
+	CostManagementConfigInput() *ContainerClusterCostManagementConfig
 	// Experimental.
 	Count() *float64
 	// Experimental.
@@ -228,6 +230,7 @@ type ContainerCluster interface {
 	PutBinaryAuthorization(value *ContainerClusterBinaryAuthorization)
 	PutClusterAutoscaling(value *ContainerClusterClusterAutoscaling)
 	PutConfidentialNodes(value *ContainerClusterConfidentialNodes)
+	PutCostManagementConfig(value *ContainerClusterCostManagementConfig)
 	PutDatabaseEncryption(value *ContainerClusterDatabaseEncryption)
 	PutDefaultSnatStatus(value *ContainerClusterDefaultSnatStatus)
 	PutDnsConfig(value *ContainerClusterDnsConfig)
@@ -255,6 +258,7 @@ type ContainerCluster interface {
 	ResetClusterAutoscaling()
 	ResetClusterIpv4Cidr()
 	ResetConfidentialNodes()
+	ResetCostManagementConfig()
 	ResetDatabaseEncryption()
 	ResetDatapathProvider()
 	ResetDefaultMaxPodsPerNode()
@@ -464,6 +468,26 @@ func (j *jsiiProxy_ContainerCluster) ConstructNodeMetadata() *map[string]interfa
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) CostManagementConfig() ContainerClusterCostManagementConfigOutputReference {
+	var returns ContainerClusterCostManagementConfigOutputReference
+	_jsii_.Get(
+		j,
+		"costManagementConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) CostManagementConfigInput() *ContainerClusterCostManagementConfig {
+	var returns *ContainerClusterCostManagementConfig
+	_jsii_.Get(
+		j,
+		"costManagementConfigInput",
 		&returns,
 	)
 	return returns
@@ -2284,6 +2308,17 @@ func (c *jsiiProxy_ContainerCluster) PutConfidentialNodes(value *ContainerCluste
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutCostManagementConfig(value *ContainerClusterCostManagementConfig) {
+	if err := c.validatePutCostManagementConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCostManagementConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutDatabaseEncryption(value *ContainerClusterDatabaseEncryption) {
 	if err := c.validatePutDatabaseEncryptionParameters(value); err != nil {
 		panic(err)
@@ -2559,6 +2594,14 @@ func (c *jsiiProxy_ContainerCluster) ResetConfidentialNodes() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetConfidentialNodes",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetCostManagementConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCostManagementConfig",
 		nil, // no parameters
 	)
 }

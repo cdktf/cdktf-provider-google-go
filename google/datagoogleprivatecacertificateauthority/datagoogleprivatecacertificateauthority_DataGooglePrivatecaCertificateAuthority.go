@@ -73,6 +73,7 @@ type DataGooglePrivatecaCertificateAuthority interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	SkipGracePeriod() cdktf.IResolvable
 	State() *string
 	SubordinateConfig() DataGooglePrivatecaCertificateAuthoritySubordinateConfigList
 	// Experimental.
@@ -476,6 +477,16 @@ func (j *jsiiProxy_DataGooglePrivatecaCertificateAuthority) RawOverrides() inter
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePrivatecaCertificateAuthority) SkipGracePeriod() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"skipGracePeriod",
 		&returns,
 	)
 	return returns

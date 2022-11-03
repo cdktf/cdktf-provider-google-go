@@ -76,6 +76,10 @@ func (d *jsiiProxy_DatastreamConnectionProfile) validatePutPostgresqlProfilePara
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamConnectionProfile) validatePutPrivateConnectivityParameters(value *DatastreamConnectionProfilePrivateConnectivity) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamConnectionProfile) validatePutTimeoutsParameters(value *DatastreamConnectionProfileTimeouts) error {
 	return nil
 }

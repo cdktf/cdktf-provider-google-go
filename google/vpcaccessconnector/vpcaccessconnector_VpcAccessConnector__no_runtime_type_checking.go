@@ -52,6 +52,10 @@ func (v *jsiiProxy_VpcAccessConnector) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (v *jsiiProxy_VpcAccessConnector) validatePutSubnetParameters(value *VpcAccessConnectorSubnet) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcAccessConnector) validatePutTimeoutsParameters(value *VpcAccessConnectorTimeouts) error {
 	return nil
 }
@@ -76,7 +80,19 @@ func (j *jsiiProxy_VpcAccessConnector) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_VpcAccessConnector) validateSetMachineTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_VpcAccessConnector) validateSetMaxInstancesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcAccessConnector) validateSetMaxThroughputParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_VpcAccessConnector) validateSetMinInstancesParameters(val *float64) error {
 	return nil
 }
 

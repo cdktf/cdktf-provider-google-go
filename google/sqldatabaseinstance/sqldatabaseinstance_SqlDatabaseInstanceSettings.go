@@ -86,6 +86,10 @@ type SqlDatabaseInstanceSettings struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#sql_server_audit_config SqlDatabaseInstance#sql_server_audit_config}
 	SqlServerAuditConfig *SqlDatabaseInstanceSettingsSqlServerAuditConfig `field:"optional" json:"sqlServerAuditConfig" yaml:"sqlServerAuditConfig"`
+	// The timezone to be used by the database engine (supported only for SQL Server), in SQL Server timezone format.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#time_zone SqlDatabaseInstance#time_zone}
+	TimeZone *string `field:"optional" json:"timeZone" yaml:"timeZone"`
 	// A set of key/value user label pairs to assign to the instance.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#user_labels SqlDatabaseInstance#user_labels}

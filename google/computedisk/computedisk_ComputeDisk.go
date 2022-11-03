@@ -89,6 +89,10 @@ type ComputeDisk interface {
 	Snapshot() *string
 	SetSnapshot(val *string)
 	SnapshotInput() *string
+	SourceDisk() *string
+	SetSourceDisk(val *string)
+	SourceDiskId() *string
+	SourceDiskInput() *string
 	SourceImageEncryptionKey() ComputeDiskSourceImageEncryptionKeyOutputReference
 	SourceImageEncryptionKeyInput() *ComputeDiskSourceImageEncryptionKey
 	SourceImageId() *string
@@ -152,6 +156,7 @@ type ComputeDisk interface {
 	ResetProvisionedIops()
 	ResetSize()
 	ResetSnapshot()
+	ResetSourceDisk()
 	ResetSourceImageEncryptionKey()
 	ResetSourceSnapshotEncryptionKey()
 	ResetTimeouts()
@@ -572,6 +577,36 @@ func (j *jsiiProxy_ComputeDisk) SnapshotInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeDisk) SourceDisk() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeDisk) SourceDiskId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDiskId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeDisk) SourceDiskInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDiskInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeDisk) SourceImageEncryptionKey() ComputeDiskSourceImageEncryptionKeyOutputReference {
 	var returns ComputeDiskSourceImageEncryptionKeyOutputReference
 	_jsii_.Get(
@@ -933,6 +968,17 @@ func (j *jsiiProxy_ComputeDisk)SetSnapshot(val *string) {
 	_jsii_.Set(
 		j,
 		"snapshot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeDisk)SetSourceDisk(val *string) {
+	if err := j.validateSetSourceDiskParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceDisk",
 		val,
 	)
 }
@@ -1315,6 +1361,14 @@ func (c *jsiiProxy_ComputeDisk) ResetSnapshot() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSnapshot",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeDisk) ResetSourceDisk() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSourceDisk",
 		nil, // no parameters
 	)
 }

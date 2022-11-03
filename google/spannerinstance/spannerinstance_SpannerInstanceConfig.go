@@ -35,7 +35,11 @@ type SpannerInstanceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/spanner_instance#display_name SpannerInstance#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/spanner_instance#force_destroy SpannerInstance#force_destroy}.
+	// When deleting a spanner instance, this boolean option will delete all backups of this instance.
+	//
+	// This must be set to true if you created a backup manually in the console.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/spanner_instance#force_destroy SpannerInstance#force_destroy}
 	ForceDestroy interface{} `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/spanner_instance#id SpannerInstance#id}.
 	//

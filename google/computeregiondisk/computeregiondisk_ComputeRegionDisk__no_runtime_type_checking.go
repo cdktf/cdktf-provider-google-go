@@ -120,6 +120,10 @@ func (j *jsiiProxy_ComputeRegionDisk) validateSetSnapshotParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionDisk) validateSetSourceDiskParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionDisk) validateSetTypeParameters(val *string) error {
 	return nil
 }

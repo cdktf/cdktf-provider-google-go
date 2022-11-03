@@ -25,12 +25,17 @@ type DnsRecordSetRoutingPolicyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableGeoFencing() interface{}
+	SetEnableGeoFencing(val interface{})
+	EnableGeoFencingInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Geo() DnsRecordSetRoutingPolicyGeoList
 	GeoInput() interface{}
 	InternalValue() *DnsRecordSetRoutingPolicy
 	SetInternalValue(val *DnsRecordSetRoutingPolicy)
+	PrimaryBackup() DnsRecordSetRoutingPolicyPrimaryBackupOutputReference
+	PrimaryBackupInput() *DnsRecordSetRoutingPolicyPrimaryBackup
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,8 +71,11 @@ type DnsRecordSetRoutingPolicyOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutGeo(value interface{})
+	PutPrimaryBackup(value *DnsRecordSetRoutingPolicyPrimaryBackup)
 	PutWrr(value interface{})
+	ResetEnableGeoFencing()
 	ResetGeo()
+	ResetPrimaryBackup()
 	ResetWrr()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -114,6 +122,26 @@ func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) CreationStack() *[]
 	return returns
 }
 
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) EnableGeoFencing() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableGeoFencing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) EnableGeoFencingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableGeoFencingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -149,6 +177,26 @@ func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) InternalValue() *Dn
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) PrimaryBackup() DnsRecordSetRoutingPolicyPrimaryBackupOutputReference {
+	var returns DnsRecordSetRoutingPolicyPrimaryBackupOutputReference
+	_jsii_.Get(
+		j,
+		"primaryBackup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) PrimaryBackupInput() *DnsRecordSetRoutingPolicyPrimaryBackup {
+	var returns *DnsRecordSetRoutingPolicyPrimaryBackup
+	_jsii_.Get(
+		j,
+		"primaryBackupInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +288,17 @@ func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference)SetComplexObjectIsFr
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference)SetEnableGeoFencing(val interface{}) {
+	if err := j.validateSetEnableGeoFencingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableGeoFencing",
 		val,
 	)
 }
@@ -474,6 +533,17 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) PutGeo(value interf
 	)
 }
 
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) PutPrimaryBackup(value *DnsRecordSetRoutingPolicyPrimaryBackup) {
+	if err := d.validatePutPrimaryBackupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPrimaryBackup",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) PutWrr(value interface{}) {
 	if err := d.validatePutWrrParameters(value); err != nil {
 		panic(err)
@@ -485,10 +555,26 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) PutWrr(value interf
 	)
 }
 
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) ResetEnableGeoFencing() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnableGeoFencing",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) ResetGeo() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetGeo",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) ResetPrimaryBackup() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrimaryBackup",
 		nil, // no parameters
 	)
 }

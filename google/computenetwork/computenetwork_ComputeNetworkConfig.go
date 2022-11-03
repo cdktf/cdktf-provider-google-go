@@ -38,7 +38,9 @@ type ComputeNetworkConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_network#auto_create_subnetworks ComputeNetwork#auto_create_subnetworks}
 	AutoCreateSubnetworks interface{} `field:"optional" json:"autoCreateSubnetworks" yaml:"autoCreateSubnetworks"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_network#delete_default_routes_on_create ComputeNetwork#delete_default_routes_on_create}.
+	// If set to 'true', default routes ('0.0.0.0/0') will be deleted immediately after network creation. Defaults to 'false'.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_network#delete_default_routes_on_create ComputeNetwork#delete_default_routes_on_create}
 	DeleteDefaultRoutesOnCreate interface{} `field:"optional" json:"deleteDefaultRoutesOnCreate" yaml:"deleteDefaultRoutesOnCreate"`
 	// An optional description of this resource. The resource must be recreated to modify this field.
 	//

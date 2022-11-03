@@ -58,6 +58,7 @@ type DataGoogleStorageBucket interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	PublicAccessPrevention() *string
 	// Experimental.
 	RawOverrides() interface{}
 	RequesterPays() cdktf.IResolvable
@@ -353,6 +354,16 @@ func (j *jsiiProxy_DataGoogleStorageBucket) Provider() cdktf.TerraformProvider {
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucket) PublicAccessPrevention() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicAccessPrevention",
 		&returns,
 	)
 	return returns

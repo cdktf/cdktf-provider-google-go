@@ -66,6 +66,8 @@ type DataGoogleComputeDisk interface {
 	SelfLink() *string
 	Size() *float64
 	Snapshot() *string
+	SourceDisk() *string
+	SourceDiskId() *string
 	SourceImageEncryptionKey() DataGoogleComputeDiskSourceImageEncryptionKeyList
 	SourceImageId() *string
 	SourceSnapshotEncryptionKey() DataGoogleComputeDiskSourceSnapshotEncryptionKeyList
@@ -422,6 +424,26 @@ func (j *jsiiProxy_DataGoogleComputeDisk) Snapshot() *string {
 	_jsii_.Get(
 		j,
 		"snapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeDisk) SourceDisk() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeDisk) SourceDiskId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDiskId",
 		&returns,
 	)
 	return returns

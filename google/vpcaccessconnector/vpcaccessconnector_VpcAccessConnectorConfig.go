@@ -32,10 +32,22 @@ type VpcAccessConnectorConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/vpc_access_connector#ip_cidr_range VpcAccessConnector#ip_cidr_range}
 	IpCidrRange *string `field:"optional" json:"ipCidrRange" yaml:"ipCidrRange"`
+	// Machine type of VM Instance underlying connector. Default is e2-micro.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/vpc_access_connector#machine_type VpcAccessConnector#machine_type}
+	MachineType *string `field:"optional" json:"machineType" yaml:"machineType"`
+	// Maximum value of instances in autoscaling group underlying the connector.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/vpc_access_connector#max_instances VpcAccessConnector#max_instances}
+	MaxInstances *float64 `field:"optional" json:"maxInstances" yaml:"maxInstances"`
 	// Maximum throughput of the connector in Mbps, must be greater than 'min_throughput'. Default is 300.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/vpc_access_connector#max_throughput VpcAccessConnector#max_throughput}
 	MaxThroughput *float64 `field:"optional" json:"maxThroughput" yaml:"maxThroughput"`
+	// Minimum value of instances in autoscaling group underlying the connector.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/vpc_access_connector#min_instances VpcAccessConnector#min_instances}
+	MinInstances *float64 `field:"optional" json:"minInstances" yaml:"minInstances"`
 	// Minimum throughput of the connector in Mbps. Default and min is 200.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/vpc_access_connector#min_throughput VpcAccessConnector#min_throughput}
@@ -50,6 +62,10 @@ type VpcAccessConnectorConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/vpc_access_connector#region VpcAccessConnector#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
+	// subnet block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/vpc_access_connector#subnet VpcAccessConnector#subnet}
+	Subnet *VpcAccessConnectorSubnet `field:"optional" json:"subnet" yaml:"subnet"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/vpc_access_connector#timeouts VpcAccessConnector#timeouts}

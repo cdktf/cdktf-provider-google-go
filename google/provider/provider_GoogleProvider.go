@@ -45,6 +45,9 @@ type GoogleProvider interface {
 	Batching() *GoogleProviderBatching
 	SetBatching(val *GoogleProviderBatching)
 	BatchingInput() *GoogleProviderBatching
+	BigqueryAnalyticsHubCustomEndpoint() *string
+	SetBigqueryAnalyticsHubCustomEndpoint(val *string)
+	BigqueryAnalyticsHubCustomEndpointInput() *string
 	BigqueryConnectionCustomEndpoint() *string
 	SetBigqueryConnectionCustomEndpoint(val *string)
 	BigqueryConnectionCustomEndpointInput() *string
@@ -381,6 +384,7 @@ type GoogleProvider interface {
 	ResetArtifactRegistryCustomEndpoint()
 	ResetAssuredWorkloadsCustomEndpoint()
 	ResetBatching()
+	ResetBigqueryAnalyticsHubCustomEndpoint()
 	ResetBigqueryConnectionCustomEndpoint()
 	ResetBigQueryCustomEndpoint()
 	ResetBigqueryDataTransferCustomEndpoint()
@@ -714,6 +718,26 @@ func (j *jsiiProxy_GoogleProvider) BatchingInput() *GoogleProviderBatching {
 	_jsii_.Get(
 		j,
 		"batchingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) BigqueryAnalyticsHubCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bigqueryAnalyticsHubCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) BigqueryAnalyticsHubCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bigqueryAnalyticsHubCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -2940,6 +2964,14 @@ func (j *jsiiProxy_GoogleProvider)SetBatching(val *GoogleProviderBatching) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetBigqueryAnalyticsHubCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"bigqueryAnalyticsHubCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetBigqueryConnectionCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3895,6 +3927,14 @@ func (g *jsiiProxy_GoogleProvider) ResetBatching() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetBatching",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetBigqueryAnalyticsHubCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBigqueryAnalyticsHubCustomEndpoint",
 		nil, // no parameters
 	)
 }

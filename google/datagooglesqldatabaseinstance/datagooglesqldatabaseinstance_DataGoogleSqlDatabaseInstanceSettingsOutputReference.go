@@ -55,6 +55,7 @@ type DataGoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Tier() *string
+	TimeZone() *string
 	UserLabels() cdktf.StringMap
 	Version() *float64
 	// Experimental.
@@ -341,6 +342,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) Tier() 
 	_jsii_.Get(
 		j,
 		"tier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) TimeZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZone",
 		&returns,
 	)
 	return returns

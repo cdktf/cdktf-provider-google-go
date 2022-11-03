@@ -57,6 +57,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "selfLink", GoGetter: "SelfLink"},
 			_jsii_.MemberProperty{JsiiProperty: "size", GoGetter: "Size"},
 			_jsii_.MemberProperty{JsiiProperty: "snapshot", GoGetter: "Snapshot"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceDisk", GoGetter: "SourceDisk"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceDiskId", GoGetter: "SourceDiskId"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceImageEncryptionKey", GoGetter: "SourceImageEncryptionKey"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceImageId", GoGetter: "SourceImageId"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceSnapshotEncryptionKey", GoGetter: "SourceSnapshotEncryptionKey"},

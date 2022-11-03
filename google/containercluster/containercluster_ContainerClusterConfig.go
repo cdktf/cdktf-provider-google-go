@@ -47,6 +47,10 @@ type ContainerClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#confidential_nodes ContainerCluster#confidential_nodes}
 	ConfidentialNodes *ContainerClusterConfidentialNodes `field:"optional" json:"confidentialNodes" yaml:"confidentialNodes"`
+	// cost_management_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#cost_management_config ContainerCluster#cost_management_config}
+	CostManagementConfig *ContainerClusterCostManagementConfig `field:"optional" json:"costManagementConfig" yaml:"costManagementConfig"`
 	// database_encryption block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#database_encryption ContainerCluster#database_encryption}

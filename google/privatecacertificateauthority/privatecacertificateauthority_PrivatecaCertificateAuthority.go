@@ -96,6 +96,9 @@ type PrivatecaCertificateAuthority interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SkipGracePeriod() interface{}
+	SetSkipGracePeriod(val interface{})
+	SkipGracePeriodInput() interface{}
 	State() *string
 	SubordinateConfig() PrivatecaCertificateAuthoritySubordinateConfigOutputReference
 	SubordinateConfigInput() *PrivatecaCertificateAuthoritySubordinateConfig
@@ -152,6 +155,7 @@ type PrivatecaCertificateAuthority interface {
 	ResetOverrideLogicalId()
 	ResetPemCaCertificate()
 	ResetProject()
+	ResetSkipGracePeriod()
 	ResetSubordinateConfig()
 	ResetTimeouts()
 	ResetType()
@@ -620,6 +624,26 @@ func (j *jsiiProxy_PrivatecaCertificateAuthority) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PrivatecaCertificateAuthority) SkipGracePeriod() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipGracePeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatecaCertificateAuthority) SkipGracePeriodInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipGracePeriodInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PrivatecaCertificateAuthority) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -953,6 +977,17 @@ func (j *jsiiProxy_PrivatecaCertificateAuthority)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PrivatecaCertificateAuthority)SetSkipGracePeriod(val interface{}) {
+	if err := j.validateSetSkipGracePeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipGracePeriod",
 		val,
 	)
 }
@@ -1316,6 +1351,14 @@ func (p *jsiiProxy_PrivatecaCertificateAuthority) ResetProject() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrivatecaCertificateAuthority) ResetSkipGracePeriod() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSkipGracePeriod",
 		nil, // no parameters
 	)
 }

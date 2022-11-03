@@ -48,6 +48,10 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validatePutGeoParam
 	return nil
 }
 
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validatePutPrimaryBackupParameters(value *DnsRecordSetRoutingPolicyPrimaryBackup) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validatePutWrrParameters(value interface{}) error {
 	return nil
 }
@@ -61,6 +65,10 @@ func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validateSetComplexO
 }
 
 func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validateSetEnableGeoFencingParameters(val interface{}) error {
 	return nil
 }
 

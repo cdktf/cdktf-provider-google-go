@@ -40,7 +40,10 @@ type DataGoogleVpcAccessConnector interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MachineType() *string
+	MaxInstances() *float64
 	MaxThroughput() *float64
+	MinInstances() *float64
 	MinThroughput() *float64
 	Name() *string
 	SetName(val *string)
@@ -62,6 +65,7 @@ type DataGoogleVpcAccessConnector interface {
 	RegionInput() *string
 	SelfLink() *string
 	State() *string
+	Subnet() DataGoogleVpcAccessConnectorSubnetList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -224,11 +228,41 @@ func (j *jsiiProxy_DataGoogleVpcAccessConnector) Lifecycle() *cdktf.TerraformRes
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleVpcAccessConnector) MachineType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"machineType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleVpcAccessConnector) MaxInstances() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInstances",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleVpcAccessConnector) MaxThroughput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"maxThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleVpcAccessConnector) MinInstances() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minInstances",
 		&returns,
 	)
 	return returns
@@ -359,6 +393,16 @@ func (j *jsiiProxy_DataGoogleVpcAccessConnector) State() *string {
 	_jsii_.Get(
 		j,
 		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleVpcAccessConnector) Subnet() DataGoogleVpcAccessConnectorSubnetList {
+	var returns DataGoogleVpcAccessConnectorSubnetList
+	_jsii_.Get(
+		j,
+		"subnet",
 		&returns,
 	)
 	return returns

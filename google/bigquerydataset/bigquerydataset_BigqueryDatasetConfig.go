@@ -65,7 +65,12 @@ type BigqueryDatasetConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_dataset#default_table_expiration_ms BigqueryDataset#default_table_expiration_ms}
 	DefaultTableExpirationMs *float64 `field:"optional" json:"defaultTableExpirationMs" yaml:"defaultTableExpirationMs"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_dataset#delete_contents_on_destroy BigqueryDataset#delete_contents_on_destroy}.
+	// If set to 'true', delete all the tables in the dataset when destroying the resource;
+	//
+	// otherwise,
+	// destroying the resource will fail if tables are present.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_dataset#delete_contents_on_destroy BigqueryDataset#delete_contents_on_destroy}
 	DeleteContentsOnDestroy interface{} `field:"optional" json:"deleteContentsOnDestroy" yaml:"deleteContentsOnDestroy"`
 	// A user-friendly description of the dataset.
 	//
@@ -97,6 +102,12 @@ type BigqueryDatasetConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_dataset#location BigqueryDataset#location}
 	Location *string `field:"optional" json:"location" yaml:"location"`
+	// Defines the time travel window in hours.
+	//
+	// The value can be from 48 to 168 hours (2 to 7 days).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_dataset#max_time_travel_hours BigqueryDataset#max_time_travel_hours}
+	MaxTimeTravelHours *string `field:"optional" json:"maxTimeTravelHours" yaml:"maxTimeTravelHours"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_dataset#project BigqueryDataset#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.

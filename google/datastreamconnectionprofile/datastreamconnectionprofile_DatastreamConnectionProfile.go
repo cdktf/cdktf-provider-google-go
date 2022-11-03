@@ -70,6 +70,8 @@ type DatastreamConnectionProfile interface {
 	OracleProfileInput() *DatastreamConnectionProfileOracleProfile
 	PostgresqlProfile() DatastreamConnectionProfilePostgresqlProfileOutputReference
 	PostgresqlProfileInput() *DatastreamConnectionProfilePostgresqlProfile
+	PrivateConnectivity() DatastreamConnectionProfilePrivateConnectivityOutputReference
+	PrivateConnectivityInput() *DatastreamConnectionProfilePrivateConnectivity
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -122,6 +124,7 @@ type DatastreamConnectionProfile interface {
 	PutMysqlProfile(value *DatastreamConnectionProfileMysqlProfile)
 	PutOracleProfile(value *DatastreamConnectionProfileOracleProfile)
 	PutPostgresqlProfile(value *DatastreamConnectionProfilePostgresqlProfile)
+	PutPrivateConnectivity(value *DatastreamConnectionProfilePrivateConnectivity)
 	PutTimeouts(value *DatastreamConnectionProfileTimeouts)
 	ResetBigqueryProfile()
 	ResetForwardSshConnectivity()
@@ -134,6 +137,7 @@ type DatastreamConnectionProfile interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPostgresqlProfile()
+	ResetPrivateConnectivity()
 	ResetProject()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -476,6 +480,26 @@ func (j *jsiiProxy_DatastreamConnectionProfile) PostgresqlProfileInput() *Datast
 	_jsii_.Get(
 		j,
 		"postgresqlProfileInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamConnectionProfile) PrivateConnectivity() DatastreamConnectionProfilePrivateConnectivityOutputReference {
+	var returns DatastreamConnectionProfilePrivateConnectivityOutputReference
+	_jsii_.Get(
+		j,
+		"privateConnectivity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamConnectionProfile) PrivateConnectivityInput() *DatastreamConnectionProfilePrivateConnectivity {
+	var returns *DatastreamConnectionProfilePrivateConnectivity
+	_jsii_.Get(
+		j,
+		"privateConnectivityInput",
 		&returns,
 	)
 	return returns
@@ -1036,6 +1060,17 @@ func (d *jsiiProxy_DatastreamConnectionProfile) PutPostgresqlProfile(value *Data
 	)
 }
 
+func (d *jsiiProxy_DatastreamConnectionProfile) PutPrivateConnectivity(value *DatastreamConnectionProfilePrivateConnectivity) {
+	if err := d.validatePutPrivateConnectivityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPrivateConnectivity",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatastreamConnectionProfile) PutTimeouts(value *DatastreamConnectionProfileTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1115,6 +1150,14 @@ func (d *jsiiProxy_DatastreamConnectionProfile) ResetPostgresqlProfile() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPostgresqlProfile",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatastreamConnectionProfile) ResetPrivateConnectivity() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrivateConnectivity",
 		nil, // no parameters
 	)
 }

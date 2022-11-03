@@ -111,6 +111,17 @@ func (v *jsiiProxy_VpcAccessConnector) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (v *jsiiProxy_VpcAccessConnector) validatePutSubnetParameters(value *VpcAccessConnectorSubnet) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (v *jsiiProxy_VpcAccessConnector) validatePutTimeoutsParameters(value *VpcAccessConnectorTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -187,7 +198,31 @@ func (j *jsiiProxy_VpcAccessConnector) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_VpcAccessConnector) validateSetMachineTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VpcAccessConnector) validateSetMaxInstancesParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VpcAccessConnector) validateSetMaxThroughputParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_VpcAccessConnector) validateSetMinInstancesParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

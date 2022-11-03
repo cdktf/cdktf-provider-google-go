@@ -112,6 +112,10 @@ func (j *jsiiProxy_BigqueryDataset) validateSetLocationParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryDataset) validateSetMaxTimeTravelHoursParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryDataset) validateSetProjectParameters(val *string) error {
 	return nil
 }

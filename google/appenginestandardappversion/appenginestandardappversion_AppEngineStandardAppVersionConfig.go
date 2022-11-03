@@ -47,7 +47,9 @@ type AppEngineStandardAppVersionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/app_engine_standard_app_version#basic_scaling AppEngineStandardAppVersion#basic_scaling}
 	BasicScaling *AppEngineStandardAppVersionBasicScaling `field:"optional" json:"basicScaling" yaml:"basicScaling"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/app_engine_standard_app_version#delete_service_on_destroy AppEngineStandardAppVersion#delete_service_on_destroy}.
+	// If set to 'true', the service will be deleted if it is the last version.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/app_engine_standard_app_version#delete_service_on_destroy AppEngineStandardAppVersion#delete_service_on_destroy}
 	DeleteServiceOnDestroy interface{} `field:"optional" json:"deleteServiceOnDestroy" yaml:"deleteServiceOnDestroy"`
 	// Environment variables available to the application.
 	//
@@ -85,7 +87,9 @@ type AppEngineStandardAppVersionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/app_engine_standard_app_version#manual_scaling AppEngineStandardAppVersion#manual_scaling}
 	ManualScaling *AppEngineStandardAppVersionManualScaling `field:"optional" json:"manualScaling" yaml:"manualScaling"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/app_engine_standard_app_version#noop_on_destroy AppEngineStandardAppVersion#noop_on_destroy}.
+	// If set to 'true', the application version will not be deleted.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/app_engine_standard_app_version#noop_on_destroy AppEngineStandardAppVersion#noop_on_destroy}
 	NoopOnDestroy interface{} `field:"optional" json:"noopOnDestroy" yaml:"noopOnDestroy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/app_engine_standard_app_version#project AppEngineStandardAppVersion#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`

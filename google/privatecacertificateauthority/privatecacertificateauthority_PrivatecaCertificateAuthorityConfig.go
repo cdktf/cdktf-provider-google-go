@@ -39,9 +39,16 @@ type PrivatecaCertificateAuthorityConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/privateca_certificate_authority#pool PrivatecaCertificateAuthority#pool}
 	Pool *string `field:"required" json:"pool" yaml:"pool"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/privateca_certificate_authority#deletion_protection PrivatecaCertificateAuthority#deletion_protection}.
+	// Whether or not to allow Terraform to destroy the CertificateAuthority.
+	//
+	// Unless this field is set to false
+	// in Terraform state, a 'terraform destroy' or 'terraform apply' that would delete the instance will fail.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/privateca_certificate_authority#deletion_protection PrivatecaCertificateAuthority#deletion_protection}
 	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/privateca_certificate_authority#desired_state PrivatecaCertificateAuthority#desired_state}.
+	// Desired state of the CertificateAuthority. Set this field to 'STAGED' to create a 'STAGED' root CA.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/privateca_certificate_authority#desired_state PrivatecaCertificateAuthority#desired_state}
 	DesiredState *string `field:"optional" json:"desiredState" yaml:"desiredState"`
 	// The name of a Cloud Storage bucket where this CertificateAuthority will publish content, such as the CA certificate and CRLs.
 	//
@@ -87,6 +94,13 @@ type PrivatecaCertificateAuthorityConfig struct {
 	PemCaCertificate *string `field:"optional" json:"pemCaCertificate" yaml:"pemCaCertificate"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/privateca_certificate_authority#project PrivatecaCertificateAuthority#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// If this flag is set, the Certificate Authority will be deleted as soon as possible without a 30-day grace period where undeletion would have been allowed.
+	//
+	// If you proceed, there will be no way to recover this CA.
+	// Use with care. Defaults to 'false'.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/privateca_certificate_authority#skip_grace_period PrivatecaCertificateAuthority#skip_grace_period}
+	SkipGracePeriod interface{} `field:"optional" json:"skipGracePeriod" yaml:"skipGracePeriod"`
 	// subordinate_config block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/privateca_certificate_authority#subordinate_config PrivatecaCertificateAuthority#subordinate_config}

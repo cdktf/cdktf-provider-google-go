@@ -72,6 +72,7 @@ type RedisInstancePersistenceConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetPersistenceMode()
+	ResetRdbSnapshotPeriod()
 	ResetRdbSnapshotStartTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -534,6 +535,14 @@ func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) ResetPersisten
 	_jsii_.InvokeVoid(
 		r,
 		"resetPersistenceMode",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisInstancePersistenceConfigOutputReference) ResetRdbSnapshotPeriod() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRdbSnapshotPeriod",
 		nil, // no parameters
 	)
 }

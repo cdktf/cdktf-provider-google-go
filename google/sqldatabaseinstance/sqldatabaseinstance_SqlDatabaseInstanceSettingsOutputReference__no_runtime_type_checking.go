@@ -140,6 +140,10 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetTierPa
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetTimeZoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetUserLabelsParameters(val *map[string]*string) error {
 	return nil
 }

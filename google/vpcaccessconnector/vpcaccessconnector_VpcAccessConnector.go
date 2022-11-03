@@ -46,9 +46,18 @@ type VpcAccessConnector interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MachineType() *string
+	SetMachineType(val *string)
+	MachineTypeInput() *string
+	MaxInstances() *float64
+	SetMaxInstances(val *float64)
+	MaxInstancesInput() *float64
 	MaxThroughput() *float64
 	SetMaxThroughput(val *float64)
 	MaxThroughputInput() *float64
+	MinInstances() *float64
+	SetMinInstances(val *float64)
+	MinInstancesInput() *float64
 	MinThroughput() *float64
 	SetMinThroughput(val *float64)
 	MinThroughputInput() *float64
@@ -78,6 +87,8 @@ type VpcAccessConnector interface {
 	RegionInput() *string
 	SelfLink() *string
 	State() *string
+	Subnet() VpcAccessConnectorSubnetOutputReference
+	SubnetInput() *VpcAccessConnectorSubnet
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -111,10 +122,14 @@ type VpcAccessConnector interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutSubnet(value *VpcAccessConnectorSubnet)
 	PutTimeouts(value *VpcAccessConnectorTimeouts)
 	ResetId()
 	ResetIpCidrRange()
+	ResetMachineType()
+	ResetMaxInstances()
 	ResetMaxThroughput()
+	ResetMinInstances()
 	ResetMinThroughput()
 	ResetNetwork()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -122,6 +137,7 @@ type VpcAccessConnector interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
+	ResetSubnet()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -268,6 +284,46 @@ func (j *jsiiProxy_VpcAccessConnector) Lifecycle() *cdktf.TerraformResourceLifec
 	return returns
 }
 
+func (j *jsiiProxy_VpcAccessConnector) MachineType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"machineType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcAccessConnector) MachineTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"machineTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcAccessConnector) MaxInstances() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInstances",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcAccessConnector) MaxInstancesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInstancesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcAccessConnector) MaxThroughput() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -283,6 +339,26 @@ func (j *jsiiProxy_VpcAccessConnector) MaxThroughputInput() *float64 {
 	_jsii_.Get(
 		j,
 		"maxThroughputInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcAccessConnector) MinInstances() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minInstances",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcAccessConnector) MinInstancesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minInstancesInput",
 		&returns,
 	)
 	return returns
@@ -448,6 +524,26 @@ func (j *jsiiProxy_VpcAccessConnector) State() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VpcAccessConnector) Subnet() VpcAccessConnectorSubnetOutputReference {
+	var returns VpcAccessConnectorSubnetOutputReference
+	_jsii_.Get(
+		j,
+		"subnet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcAccessConnector) SubnetInput() *VpcAccessConnectorSubnet {
+	var returns *VpcAccessConnectorSubnet
+	_jsii_.Get(
+		j,
+		"subnetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcAccessConnector) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -596,6 +692,28 @@ func (j *jsiiProxy_VpcAccessConnector)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
+func (j *jsiiProxy_VpcAccessConnector)SetMachineType(val *string) {
+	if err := j.validateSetMachineTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"machineType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcAccessConnector)SetMaxInstances(val *float64) {
+	if err := j.validateSetMaxInstancesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxInstances",
+		val,
+	)
+}
+
 func (j *jsiiProxy_VpcAccessConnector)SetMaxThroughput(val *float64) {
 	if err := j.validateSetMaxThroughputParameters(val); err != nil {
 		panic(err)
@@ -603,6 +721,17 @@ func (j *jsiiProxy_VpcAccessConnector)SetMaxThroughput(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxThroughput",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcAccessConnector)SetMinInstances(val *float64) {
+	if err := j.validateSetMinInstancesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minInstances",
 		val,
 	)
 }
@@ -909,6 +1038,17 @@ func (v *jsiiProxy_VpcAccessConnector) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (v *jsiiProxy_VpcAccessConnector) PutSubnet(value *VpcAccessConnectorSubnet) {
+	if err := v.validatePutSubnetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putSubnet",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VpcAccessConnector) PutTimeouts(value *VpcAccessConnectorTimeouts) {
 	if err := v.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -936,10 +1076,34 @@ func (v *jsiiProxy_VpcAccessConnector) ResetIpCidrRange() {
 	)
 }
 
+func (v *jsiiProxy_VpcAccessConnector) ResetMachineType() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetMachineType",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcAccessConnector) ResetMaxInstances() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetMaxInstances",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VpcAccessConnector) ResetMaxThroughput() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetMaxThroughput",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcAccessConnector) ResetMinInstances() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetMinInstances",
 		nil, // no parameters
 	)
 }
@@ -980,6 +1144,14 @@ func (v *jsiiProxy_VpcAccessConnector) ResetRegion() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcAccessConnector) ResetSubnet() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetSubnet",
 		nil, // no parameters
 	)
 }

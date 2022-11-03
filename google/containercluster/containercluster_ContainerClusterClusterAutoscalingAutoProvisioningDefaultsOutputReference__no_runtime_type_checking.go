@@ -60,6 +60,14 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validateSetDiskSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validateSetDiskTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validateSetImageTypeParameters(val *string) error {
 	return nil
 }

@@ -89,6 +89,10 @@ type ComputeRegionDisk interface {
 	Snapshot() *string
 	SetSnapshot(val *string)
 	SnapshotInput() *string
+	SourceDisk() *string
+	SetSourceDisk(val *string)
+	SourceDiskId() *string
+	SourceDiskInput() *string
 	SourceSnapshotEncryptionKey() ComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference
 	SourceSnapshotEncryptionKeyInput() *ComputeRegionDiskSourceSnapshotEncryptionKey
 	SourceSnapshotId() *string
@@ -144,6 +148,7 @@ type ComputeRegionDisk interface {
 	ResetRegion()
 	ResetSize()
 	ResetSnapshot()
+	ResetSourceDisk()
 	ResetSourceSnapshotEncryptionKey()
 	ResetTimeouts()
 	ResetType()
@@ -562,6 +567,36 @@ func (j *jsiiProxy_ComputeRegionDisk) SnapshotInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionDisk) SourceDisk() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) SourceDiskId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDiskId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) SourceDiskInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDiskInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionDisk) SourceSnapshotEncryptionKey() ComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference {
 	var returns ComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference
 	_jsii_.Get(
@@ -873,6 +908,17 @@ func (j *jsiiProxy_ComputeRegionDisk)SetSnapshot(val *string) {
 	_jsii_.Set(
 		j,
 		"snapshot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionDisk)SetSourceDisk(val *string) {
+	if err := j.validateSetSourceDiskParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceDisk",
 		val,
 	)
 }
@@ -1225,6 +1271,14 @@ func (c *jsiiProxy_ComputeRegionDisk) ResetSnapshot() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSnapshot",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionDisk) ResetSourceDisk() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSourceDisk",
 		nil, // no parameters
 	)
 }

@@ -44,6 +44,7 @@ type DataGoogleServiceAccount interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Member() *string
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -243,6 +244,16 @@ func (j *jsiiProxy_DataGoogleServiceAccount) Lifecycle() *cdktf.TerraformResourc
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleServiceAccount) Member() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"member",
 		&returns,
 	)
 	return returns

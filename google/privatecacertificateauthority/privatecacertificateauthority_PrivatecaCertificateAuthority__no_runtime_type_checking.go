@@ -132,6 +132,10 @@ func (j *jsiiProxy_PrivatecaCertificateAuthority) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_PrivatecaCertificateAuthority) validateSetSkipGracePeriodParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivatecaCertificateAuthority) validateSetTypeParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ type StorageBucketConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/storage_bucket#project StorageBucket#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// Prevents public access to a bucket.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/storage_bucket#public_access_prevention StorageBucket#public_access_prevention}
+	PublicAccessPrevention *string `field:"optional" json:"publicAccessPrevention" yaml:"publicAccessPrevention"`
 	// Enables Requester Pays on a storage bucket.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/storage_bucket#requester_pays StorageBucket#requester_pays}

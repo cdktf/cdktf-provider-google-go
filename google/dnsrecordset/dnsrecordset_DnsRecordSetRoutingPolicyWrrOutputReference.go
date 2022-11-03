@@ -27,6 +27,8 @@ type DnsRecordSetRoutingPolicyWrrOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HealthCheckedTargets() DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference
+	HealthCheckedTargetsInput() *DnsRecordSetRoutingPolicyWrrHealthCheckedTargets
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Rrdatas() *[]*string
@@ -67,6 +69,9 @@ type DnsRecordSetRoutingPolicyWrrOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutHealthCheckedTargets(value *DnsRecordSetRoutingPolicyWrrHealthCheckedTargets)
+	ResetHealthCheckedTargets()
+	ResetRrdatas()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -117,6 +122,26 @@ func (j *jsiiProxy_DnsRecordSetRoutingPolicyWrrOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyWrrOutputReference) HealthCheckedTargets() DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference {
+	var returns DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference
+	_jsii_.Get(
+		j,
+		"healthCheckedTargets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyWrrOutputReference) HealthCheckedTargetsInput() *DnsRecordSetRoutingPolicyWrrHealthCheckedTargets {
+	var returns *DnsRecordSetRoutingPolicyWrrHealthCheckedTargets
+	_jsii_.Get(
+		j,
+		"healthCheckedTargetsInput",
 		&returns,
 	)
 	return returns
@@ -481,6 +506,33 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyWrrOutputReference) InterpolationFor
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyWrrOutputReference) PutHealthCheckedTargets(value *DnsRecordSetRoutingPolicyWrrHealthCheckedTargets) {
+	if err := d.validatePutHealthCheckedTargetsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putHealthCheckedTargets",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyWrrOutputReference) ResetHealthCheckedTargets() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHealthCheckedTargets",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyWrrOutputReference) ResetRrdatas() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRrdatas",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DnsRecordSetRoutingPolicyWrrOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -330,6 +330,14 @@ func (j *jsiiProxy_ComputeDisk) validateSetSnapshotParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_ComputeDisk) validateSetSourceDiskParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeDisk) validateSetTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

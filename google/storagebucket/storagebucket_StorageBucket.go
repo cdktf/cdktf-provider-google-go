@@ -81,6 +81,9 @@ type StorageBucket interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicAccessPrevention() *string
+	SetPublicAccessPrevention(val *string)
+	PublicAccessPreventionInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	RequesterPays() interface{}
@@ -155,6 +158,7 @@ type StorageBucket interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetPublicAccessPrevention()
 	ResetRequesterPays()
 	ResetRetentionPolicy()
 	ResetStorageClass()
@@ -537,6 +541,26 @@ func (j *jsiiProxy_StorageBucket) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StorageBucket) PublicAccessPrevention() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicAccessPrevention",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) PublicAccessPreventionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicAccessPreventionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageBucket) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -905,6 +929,17 @@ func (j *jsiiProxy_StorageBucket)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucket)SetPublicAccessPrevention(val *string) {
+	if err := j.validateSetPublicAccessPreventionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicAccessPrevention",
 		val,
 	)
 }
@@ -1353,6 +1388,14 @@ func (s *jsiiProxy_StorageBucket) ResetProject() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetPublicAccessPrevention() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPublicAccessPrevention",
 		nil, // no parameters
 	)
 }

@@ -82,6 +82,9 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	Tier() *string
 	SetTier(val *string)
 	TierInput() *string
+	TimeZone() *string
+	SetTimeZone(val *string)
+	TimeZoneInput() *string
 	UserLabels() *map[string]*string
 	SetUserLabels(val *map[string]*string)
 	UserLabelsInput() *map[string]*string
@@ -136,6 +139,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ResetPasswordValidationPolicy()
 	ResetPricingPlan()
 	ResetSqlServerAuditConfig()
+	ResetTimeZone()
 	ResetUserLabels()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -582,6 +586,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) TierInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) TimeZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) TimeZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timeZoneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) UserLabels() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -790,6 +814,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetTier(val *strin
 	_jsii_.Set(
 		j,
 		"tier",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetTimeZone(val *string) {
+	if err := j.validateSetTimeZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timeZone",
 		val,
 	)
 }
@@ -1222,6 +1257,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetSqlServerAud
 	_jsii_.InvokeVoid(
 		s,
 		"resetSqlServerAuditConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetTimeZone() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeZone",
 		nil, // no parameters
 	)
 }

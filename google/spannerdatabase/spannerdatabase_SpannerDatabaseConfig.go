@@ -41,7 +41,12 @@ type SpannerDatabaseConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/spanner_database#ddl SpannerDatabase#ddl}
 	Ddl *[]*string `field:"optional" json:"ddl" yaml:"ddl"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/spanner_database#deletion_protection SpannerDatabase#deletion_protection}.
+	// Whether or not to allow Terraform to destroy the instance.
+	//
+	// Unless this field is set to false
+	// in Terraform state, a 'terraform destroy' or 'terraform apply' that would delete the instance will fail.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/spanner_database#deletion_protection SpannerDatabase#deletion_protection}
 	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// encryption_config block.
 	//

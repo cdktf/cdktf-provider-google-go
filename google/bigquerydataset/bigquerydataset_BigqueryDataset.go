@@ -74,6 +74,9 @@ type BigqueryDataset interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MaxTimeTravelHours() *string
+	SetMaxTimeTravelHours(val *string)
+	MaxTimeTravelHoursInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -136,6 +139,7 @@ type BigqueryDataset interface {
 	ResetId()
 	ResetLabels()
 	ResetLocation()
+	ResetMaxTimeTravelHours()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -496,6 +500,26 @@ func (j *jsiiProxy_BigqueryDataset) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryDataset) MaxTimeTravelHours() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxTimeTravelHours",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDataset) MaxTimeTravelHoursInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxTimeTravelHoursInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryDataset) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -787,6 +811,17 @@ func (j *jsiiProxy_BigqueryDataset)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryDataset)SetMaxTimeTravelHours(val *string) {
+	if err := j.validateSetMaxTimeTravelHoursParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxTimeTravelHours",
 		val,
 	)
 }
@@ -1158,6 +1193,14 @@ func (b *jsiiProxy_BigqueryDataset) ResetLocation() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetLocation",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryDataset) ResetMaxTimeTravelHours() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetMaxTimeTravelHours",
 		nil, // no parameters
 	)
 }

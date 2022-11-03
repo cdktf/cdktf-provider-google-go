@@ -28,6 +28,12 @@ type ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference i
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DiskSize() *float64
+	SetDiskSize(val *float64)
+	DiskSizeInput() *float64
+	DiskType() *string
+	SetDiskType(val *string)
+	DiskTypeInput() *string
 	// Experimental.
 	Fqn() *string
 	ImageType() *string
@@ -74,6 +80,8 @@ type ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference i
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBootDiskKmsKey()
+	ResetDiskSize()
+	ResetDiskType()
 	ResetImageType()
 	ResetOauthScopes()
 	ResetServiceAccount()
@@ -137,6 +145,46 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) DiskSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"diskSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) DiskSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"diskSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) DiskType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) DiskTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskTypeInput",
 		&returns,
 	)
 	return returns
@@ -299,6 +347,28 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference)SetDiskSize(val *float64) {
+	if err := j.validateSetDiskSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference)SetDiskType(val *string) {
+	if err := j.validateSetDiskTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"diskType",
 		val,
 	)
 }
@@ -559,6 +629,22 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	_jsii_.InvokeVoid(
 		c,
 		"resetBootDiskKmsKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ResetDiskSize() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDiskSize",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ResetDiskType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDiskType",
 		nil, // no parameters
 	)
 }

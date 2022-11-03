@@ -428,6 +428,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rdbSnapshotStartTime", GoGetter: "RdbSnapshotStartTime"},
 			_jsii_.MemberProperty{JsiiProperty: "rdbSnapshotStartTimeInput", GoGetter: "RdbSnapshotStartTimeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPersistenceMode", GoMethod: "ResetPersistenceMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRdbSnapshotPeriod", GoMethod: "ResetRdbSnapshotPeriod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRdbSnapshotStartTime", GoMethod: "ResetRdbSnapshotStartTime"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

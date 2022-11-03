@@ -43,7 +43,13 @@ type MonitoringNotificationChannelConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/monitoring_notification_channel#enabled MonitoringNotificationChannel#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/monitoring_notification_channel#force_delete MonitoringNotificationChannel#force_delete}.
+	// If true, the notification channel will be deleted regardless of its use in alert policies (the policies will be updated to remove the channel).
+	//
+	// If false, channels that are still
+	// referenced by an existing alerting policy will fail to be
+	// deleted in a delete operation.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/monitoring_notification_channel#force_delete MonitoringNotificationChannel#force_delete}
 	ForceDelete interface{} `field:"optional" json:"forceDelete" yaml:"forceDelete"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/monitoring_notification_channel#id MonitoringNotificationChannel#id}.
 	//

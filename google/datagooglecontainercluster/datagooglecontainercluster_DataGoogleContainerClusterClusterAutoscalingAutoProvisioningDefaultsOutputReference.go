@@ -26,6 +26,8 @@ type DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputR
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DiskSize() *float64
+	DiskType() *string
 	// Experimental.
 	Fqn() *string
 	ImageType() *string
@@ -115,6 +117,26 @@ func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningD
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) DiskSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"diskSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) DiskType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskType",
 		&returns,
 	)
 	return returns

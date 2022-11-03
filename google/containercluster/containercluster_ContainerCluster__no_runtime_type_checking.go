@@ -72,6 +72,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutConfidentialNodesParameters(valu
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutCostManagementConfigParameters(value *ContainerClusterCostManagementConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutDatabaseEncryptionParameters(value *ContainerClusterDatabaseEncryption) error {
 	return nil
 }

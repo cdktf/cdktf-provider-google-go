@@ -40,6 +40,7 @@ type DataGoogleBigqueryDefaultServiceAccount interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Member() *string
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -207,6 +208,16 @@ func (j *jsiiProxy_DataGoogleBigqueryDefaultServiceAccount) Lifecycle() *cdktf.T
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleBigqueryDefaultServiceAccount) Member() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"member",
 		&returns,
 	)
 	return returns

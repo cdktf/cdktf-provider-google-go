@@ -44,6 +44,10 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyGeoOutputReference) validateInterpol
 	return nil
 }
 
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyGeoOutputReference) validatePutHealthCheckedTargetsParameters(value *DnsRecordSetRoutingPolicyGeoHealthCheckedTargets) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsRecordSetRoutingPolicyGeoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

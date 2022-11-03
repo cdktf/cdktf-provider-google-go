@@ -93,6 +93,8 @@ type ComputeRouterNat interface {
 	Router() *string
 	SetRouter(val *string)
 	RouterInput() *string
+	Rules() ComputeRouterNatRulesList
+	RulesInput() interface{}
 	SourceSubnetworkIpRangesToNat() *string
 	SetSourceSubnetworkIpRangesToNat(val *string)
 	SourceSubnetworkIpRangesToNatInput() *string
@@ -141,6 +143,7 @@ type ComputeRouterNat interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLogConfig(value *ComputeRouterNatLogConfig)
+	PutRules(value interface{})
 	PutSubnetwork(value interface{})
 	PutTimeouts(value *ComputeRouterNatTimeouts)
 	ResetDrainNatIps()
@@ -157,6 +160,7 @@ type ComputeRouterNat interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
+	ResetRules()
 	ResetSubnetwork()
 	ResetTcpEstablishedIdleTimeoutSec()
 	ResetTcpTransitoryIdleTimeoutSec()
@@ -582,6 +586,26 @@ func (j *jsiiProxy_ComputeRouterNat) RouterInput() *string {
 	_jsii_.Get(
 		j,
 		"routerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterNat) Rules() ComputeRouterNatRulesList {
+	var returns ComputeRouterNatRulesList
+	_jsii_.Get(
+		j,
+		"rules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterNat) RulesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rulesInput",
 		&returns,
 	)
 	return returns
@@ -1258,6 +1282,17 @@ func (c *jsiiProxy_ComputeRouterNat) PutLogConfig(value *ComputeRouterNatLogConf
 	)
 }
 
+func (c *jsiiProxy_ComputeRouterNat) PutRules(value interface{}) {
+	if err := c.validatePutRulesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRules",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRouterNat) PutSubnetwork(value interface{}) {
 	if err := c.validatePutSubnetworkParameters(value); err != nil {
 		panic(err)
@@ -1372,6 +1407,14 @@ func (c *jsiiProxy_ComputeRouterNat) ResetRegion() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterNat) ResetRules() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRules",
 		nil, // no parameters
 	)
 }
