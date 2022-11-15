@@ -64,6 +64,14 @@ func validateMlEngineModel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMlEngineModel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMlEngineModel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MlEngineModel) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

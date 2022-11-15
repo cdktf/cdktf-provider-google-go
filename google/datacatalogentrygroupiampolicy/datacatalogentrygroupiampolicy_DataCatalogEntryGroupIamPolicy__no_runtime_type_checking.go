@@ -56,6 +56,14 @@ func validateDataCatalogEntryGroupIamPolicy_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataCatalogEntryGroupIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataCatalogEntryGroupIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCatalogEntryGroupIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

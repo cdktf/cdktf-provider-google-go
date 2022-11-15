@@ -72,6 +72,14 @@ func validateComputeResourcePolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeResourcePolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeResourcePolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeResourcePolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

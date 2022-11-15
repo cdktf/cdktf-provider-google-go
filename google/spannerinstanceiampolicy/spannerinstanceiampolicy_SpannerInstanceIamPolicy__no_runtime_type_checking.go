@@ -56,6 +56,14 @@ func validateSpannerInstanceIamPolicy_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateSpannerInstanceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpannerInstanceIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpannerInstanceIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -76,6 +76,14 @@ func validateComputePacketMirroring_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputePacketMirroring_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputePacketMirroring_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputePacketMirroring) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

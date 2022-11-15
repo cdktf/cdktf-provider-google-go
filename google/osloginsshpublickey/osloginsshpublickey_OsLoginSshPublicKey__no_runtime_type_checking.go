@@ -60,6 +60,14 @@ func validateOsLoginSshPublicKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOsLoginSshPublicKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOsLoginSshPublicKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OsLoginSshPublicKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

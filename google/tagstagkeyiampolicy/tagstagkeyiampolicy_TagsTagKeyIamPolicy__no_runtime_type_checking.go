@@ -56,6 +56,14 @@ func validateTagsTagKeyIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTagsTagKeyIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTagsTagKeyIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TagsTagKeyIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateMonitoringMetricDescriptor_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateMonitoringMetricDescriptor_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitoringMetricDescriptor_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringMetricDescriptor) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

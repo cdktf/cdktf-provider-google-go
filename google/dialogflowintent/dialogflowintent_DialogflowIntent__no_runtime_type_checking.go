@@ -60,6 +60,14 @@ func validateDialogflowIntent_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDialogflowIntent_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDialogflowIntent_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowIntent) validateSetActionParameters(val *string) error {
 	return nil
 }

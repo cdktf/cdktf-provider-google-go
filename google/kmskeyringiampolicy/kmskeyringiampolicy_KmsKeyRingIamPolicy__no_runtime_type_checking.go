@@ -56,6 +56,14 @@ func validateKmsKeyRingIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKmsKeyRingIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKmsKeyRingIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsKeyRingIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

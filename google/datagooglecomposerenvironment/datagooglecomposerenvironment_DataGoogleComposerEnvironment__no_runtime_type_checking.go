@@ -56,6 +56,14 @@ func validateDataGoogleComposerEnvironment_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataGoogleComposerEnvironment_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleComposerEnvironment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComposerEnvironment) validateSetIdParameters(val *string) error {
 	return nil
 }

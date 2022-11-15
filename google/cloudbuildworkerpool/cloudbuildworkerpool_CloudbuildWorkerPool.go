@@ -2,10 +2,10 @@ package cloudbuildworkerpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v3/cloudbuildworkerpool/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v4/cloudbuildworkerpool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -719,6 +719,44 @@ func CloudbuildWorkerPool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CloudbuildWorkerPool_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCloudbuildWorkerPool_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CloudbuildWorkerPool_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCloudbuildWorkerPool_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

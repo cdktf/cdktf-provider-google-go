@@ -72,6 +72,14 @@ func validateComputeRouterNat_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeRouterNat_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeRouterNat_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterNat) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package storagedefaultobjectaccesscontrol
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v3/storagedefaultobjectaccesscontrol/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v4/storagedefaultobjectaccesscontrol/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -635,6 +635,44 @@ func StorageDefaultObjectAccessControl_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func StorageDefaultObjectAccessControl_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStorageDefaultObjectAccessControl_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func StorageDefaultObjectAccessControl_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStorageDefaultObjectAccessControl_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

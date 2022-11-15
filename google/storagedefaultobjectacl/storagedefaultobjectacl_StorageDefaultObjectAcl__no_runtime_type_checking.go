@@ -56,6 +56,14 @@ func validateStorageDefaultObjectAcl_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateStorageDefaultObjectAcl_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageDefaultObjectAcl_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageDefaultObjectAcl) validateSetBucketParameters(val *string) error {
 	return nil
 }

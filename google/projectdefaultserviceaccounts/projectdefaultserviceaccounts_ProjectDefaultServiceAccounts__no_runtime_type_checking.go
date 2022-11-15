@@ -60,6 +60,14 @@ func validateProjectDefaultServiceAccounts_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateProjectDefaultServiceAccounts_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectDefaultServiceAccounts_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectDefaultServiceAccounts) validateSetActionParameters(val *string) error {
 	return nil
 }

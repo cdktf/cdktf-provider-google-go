@@ -56,6 +56,14 @@ func validateStorageBucketIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStorageBucketIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageBucketIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBucketIamPolicy) validateSetBucketParameters(val *string) error {
 	return nil
 }

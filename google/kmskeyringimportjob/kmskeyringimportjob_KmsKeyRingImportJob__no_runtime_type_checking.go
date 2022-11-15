@@ -60,6 +60,14 @@ func validateKmsKeyRingImportJob_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKmsKeyRingImportJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKmsKeyRingImportJob_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsKeyRingImportJob) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

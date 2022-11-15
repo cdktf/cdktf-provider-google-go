@@ -60,6 +60,14 @@ func validateComputeRegionSslCertificate_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateComputeRegionSslCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeRegionSslCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionSslCertificate) validateSetCertificateParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateNetworkServicesEdgeCacheKeyset_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateNetworkServicesEdgeCacheKeyset_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkServicesEdgeCacheKeyset_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

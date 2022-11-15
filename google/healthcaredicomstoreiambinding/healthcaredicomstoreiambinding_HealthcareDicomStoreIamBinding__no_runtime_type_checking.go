@@ -60,6 +60,14 @@ func validateHealthcareDicomStoreIamBinding_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateHealthcareDicomStoreIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHealthcareDicomStoreIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareDicomStoreIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

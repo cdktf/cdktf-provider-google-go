@@ -76,6 +76,14 @@ func validateBigqueryJob_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBigqueryJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBigqueryJob_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryJob) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

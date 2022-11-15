@@ -56,6 +56,14 @@ func validateDataGoogleStorageTransferProjectServiceAccount_IsConstructParameter
 	return nil
 }
 
+func validateDataGoogleStorageTransferProjectServiceAccount_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleStorageTransferProjectServiceAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataprocJobIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataprocJobIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataprocJobIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocJobIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

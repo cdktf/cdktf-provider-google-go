@@ -56,6 +56,14 @@ func validateBillingSubaccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBillingSubaccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBillingSubaccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BillingSubaccount) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

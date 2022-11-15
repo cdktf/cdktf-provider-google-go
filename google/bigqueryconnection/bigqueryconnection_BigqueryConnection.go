@@ -2,10 +2,10 @@ package bigqueryconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v3/bigqueryconnection/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v4/bigqueryconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -760,6 +760,44 @@ func BigqueryConnection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryConnection.BigqueryConnection",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BigqueryConnection_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBigqueryConnection_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.bigqueryConnection.BigqueryConnection",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BigqueryConnection_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBigqueryConnection_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.bigqueryConnection.BigqueryConnection",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -64,6 +64,14 @@ func validateLoggingProjectSink_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLoggingProjectSink_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLoggingProjectSink_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingProjectSink) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

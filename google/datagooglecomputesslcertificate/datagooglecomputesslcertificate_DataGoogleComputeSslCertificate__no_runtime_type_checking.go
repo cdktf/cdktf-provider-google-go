@@ -56,6 +56,14 @@ func validateDataGoogleComputeSslCertificate_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateDataGoogleComputeSslCertificate_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleComputeSslCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeSslCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

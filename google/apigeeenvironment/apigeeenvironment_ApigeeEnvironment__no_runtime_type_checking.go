@@ -64,6 +64,14 @@ func validateApigeeEnvironment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApigeeEnvironment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApigeeEnvironment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigeeEnvironment) validateSetApiProxyTypeParameters(val *string) error {
 	return nil
 }

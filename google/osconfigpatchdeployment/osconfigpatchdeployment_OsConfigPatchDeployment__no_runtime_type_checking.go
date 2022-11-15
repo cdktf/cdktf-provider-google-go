@@ -80,6 +80,14 @@ func validateOsConfigPatchDeployment_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateOsConfigPatchDeployment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOsConfigPatchDeployment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OsConfigPatchDeployment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

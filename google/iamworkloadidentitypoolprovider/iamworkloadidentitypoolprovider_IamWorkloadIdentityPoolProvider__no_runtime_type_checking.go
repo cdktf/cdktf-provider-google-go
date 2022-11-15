@@ -68,6 +68,14 @@ func validateIamWorkloadIdentityPoolProvider_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateIamWorkloadIdentityPoolProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIamWorkloadIdentityPoolProvider_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamWorkloadIdentityPoolProvider) validateSetAttributeConditionParameters(val *string) error {
 	return nil
 }

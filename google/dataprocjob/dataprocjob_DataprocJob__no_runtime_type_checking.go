@@ -100,6 +100,14 @@ func validateDataprocJob_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataprocJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataprocJob_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocJob) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

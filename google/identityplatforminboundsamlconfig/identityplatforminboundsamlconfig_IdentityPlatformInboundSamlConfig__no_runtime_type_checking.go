@@ -68,6 +68,14 @@ func validateIdentityPlatformInboundSamlConfig_IsConstructParameters(x interface
 	return nil
 }
 
+func validateIdentityPlatformInboundSamlConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIdentityPlatformInboundSamlConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityPlatformInboundSamlConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

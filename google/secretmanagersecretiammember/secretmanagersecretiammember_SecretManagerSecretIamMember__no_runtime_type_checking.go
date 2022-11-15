@@ -60,6 +60,14 @@ func validateSecretManagerSecretIamMember_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateSecretManagerSecretIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecretManagerSecretIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretManagerSecretIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

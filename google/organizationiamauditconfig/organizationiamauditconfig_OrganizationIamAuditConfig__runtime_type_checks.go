@@ -150,6 +150,22 @@ func validateOrganizationIamAuditConfig_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateOrganizationIamAuditConfig_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateOrganizationIamAuditConfig_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OrganizationIamAuditConfig) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

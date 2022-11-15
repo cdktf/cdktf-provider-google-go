@@ -96,6 +96,14 @@ func validateComputeInstanceTemplate_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateComputeInstanceTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeInstanceTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplate) validateSetCanIpForwardParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateCloudAssetOrganizationFeed_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateCloudAssetOrganizationFeed_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudAssetOrganizationFeed_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudAssetOrganizationFeed) validateSetAssetNamesParameters(val *[]*string) error {
 	return nil
 }

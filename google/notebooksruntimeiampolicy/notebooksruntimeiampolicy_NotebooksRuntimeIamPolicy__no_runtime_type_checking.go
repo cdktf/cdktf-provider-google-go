@@ -56,6 +56,14 @@ func validateNotebooksRuntimeIamPolicy_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateNotebooksRuntimeIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNotebooksRuntimeIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotebooksRuntimeIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

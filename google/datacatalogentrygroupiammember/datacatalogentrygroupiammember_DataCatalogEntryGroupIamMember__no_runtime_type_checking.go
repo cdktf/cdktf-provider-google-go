@@ -60,6 +60,14 @@ func validateDataCatalogEntryGroupIamMember_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataCatalogEntryGroupIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataCatalogEntryGroupIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCatalogEntryGroupIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

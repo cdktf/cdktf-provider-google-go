@@ -60,6 +60,14 @@ func validateBillingAccountIamMember_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateBillingAccountIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBillingAccountIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BillingAccountIamMember) validateSetBillingAccountIdParameters(val *string) error {
 	return nil
 }

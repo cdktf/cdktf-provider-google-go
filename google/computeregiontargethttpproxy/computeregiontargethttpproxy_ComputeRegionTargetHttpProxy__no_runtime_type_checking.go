@@ -60,6 +60,14 @@ func validateComputeRegionTargetHttpProxy_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateComputeRegionTargetHttpProxy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeRegionTargetHttpProxy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionTargetHttpProxy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

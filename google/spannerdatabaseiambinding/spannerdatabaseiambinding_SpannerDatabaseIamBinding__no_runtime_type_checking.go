@@ -60,6 +60,14 @@ func validateSpannerDatabaseIamBinding_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateSpannerDatabaseIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpannerDatabaseIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpannerDatabaseIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

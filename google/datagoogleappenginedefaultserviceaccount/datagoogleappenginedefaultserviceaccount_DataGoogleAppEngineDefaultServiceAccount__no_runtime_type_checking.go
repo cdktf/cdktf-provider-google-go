@@ -56,6 +56,14 @@ func validateDataGoogleAppEngineDefaultServiceAccount_IsConstructParameters(x in
 	return nil
 }
 
+func validateDataGoogleAppEngineDefaultServiceAccount_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleAppEngineDefaultServiceAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

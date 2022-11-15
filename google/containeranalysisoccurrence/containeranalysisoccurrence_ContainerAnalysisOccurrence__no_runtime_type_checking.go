@@ -64,6 +64,14 @@ func validateContainerAnalysisOccurrence_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateContainerAnalysisOccurrence_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateContainerAnalysisOccurrence_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAnalysisOccurrence) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

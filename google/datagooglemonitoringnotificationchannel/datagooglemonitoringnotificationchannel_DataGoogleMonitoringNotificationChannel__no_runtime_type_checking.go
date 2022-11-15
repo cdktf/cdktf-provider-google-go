@@ -56,6 +56,14 @@ func validateDataGoogleMonitoringNotificationChannel_IsConstructParameters(x int
 	return nil
 }
 
+func validateDataGoogleMonitoringNotificationChannel_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleMonitoringNotificationChannel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleMonitoringNotificationChannel) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

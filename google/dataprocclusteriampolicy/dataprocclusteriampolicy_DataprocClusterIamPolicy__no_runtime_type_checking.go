@@ -56,6 +56,14 @@ func validateDataprocClusterIamPolicy_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataprocClusterIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataprocClusterIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocClusterIamPolicy) validateSetClusterParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateAppEngineDomainMapping_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppEngineDomainMapping_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppEngineDomainMapping_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppEngineDomainMapping) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

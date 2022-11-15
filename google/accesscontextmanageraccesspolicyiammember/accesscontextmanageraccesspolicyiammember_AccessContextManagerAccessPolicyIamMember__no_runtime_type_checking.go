@@ -60,6 +60,14 @@ func validateAccessContextManagerAccessPolicyIamMember_IsConstructParameters(x i
 	return nil
 }
 
+func validateAccessContextManagerAccessPolicyIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAccessContextManagerAccessPolicyIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessContextManagerAccessPolicyIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateDnsPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDnsPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDnsPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DnsPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

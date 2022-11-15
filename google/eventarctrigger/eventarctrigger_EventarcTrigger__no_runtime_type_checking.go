@@ -72,6 +72,14 @@ func validateEventarcTrigger_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEventarcTrigger_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEventarcTrigger_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventarcTrigger) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

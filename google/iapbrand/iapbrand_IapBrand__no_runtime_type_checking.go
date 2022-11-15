@@ -60,6 +60,14 @@ func validateIapBrand_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIapBrand_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIapBrand_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IapBrand) validateSetApplicationTitleParameters(val *string) error {
 	return nil
 }

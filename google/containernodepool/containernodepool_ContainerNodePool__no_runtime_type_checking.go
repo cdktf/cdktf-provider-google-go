@@ -76,6 +76,14 @@ func validateContainerNodePool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateContainerNodePool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateContainerNodePool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePool) validateSetClusterParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateAccessContextManagerAccessLevelCondition_IsConstructParameters(x in
 	return nil
 }
 
+func validateAccessContextManagerAccessLevelCondition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAccessContextManagerAccessLevelCondition_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessContextManagerAccessLevelCondition) validateSetAccessLevelParameters(val *string) error {
 	return nil
 }

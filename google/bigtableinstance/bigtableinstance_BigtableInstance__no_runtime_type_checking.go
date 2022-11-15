@@ -60,6 +60,14 @@ func validateBigtableInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBigtableInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBigtableInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigtableInstance) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

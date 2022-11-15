@@ -60,6 +60,14 @@ func validateKmsSecretCiphertext_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKmsSecretCiphertext_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKmsSecretCiphertext_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsSecretCiphertext) validateSetAdditionalAuthenticatedDataParameters(val *string) error {
 	return nil
 }

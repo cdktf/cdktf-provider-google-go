@@ -56,6 +56,14 @@ func validateDataGoogleAccessApprovalFolderServiceAccount_IsConstructParameters(
 	return nil
 }
 
+func validateDataGoogleAccessApprovalFolderServiceAccount_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleAccessApprovalFolderServiceAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleAccessApprovalFolderServiceAccount) validateSetFolderIdParameters(val *string) error {
 	return nil
 }

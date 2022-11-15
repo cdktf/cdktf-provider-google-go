@@ -72,6 +72,14 @@ func validateOrganizationPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOrganizationPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOrganizationPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrganizationPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

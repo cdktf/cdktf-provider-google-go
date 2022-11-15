@@ -60,6 +60,14 @@ func validateActiveDirectoryDomain_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateActiveDirectoryDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateActiveDirectoryDomain_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ActiveDirectoryDomain) validateSetAdminParameters(val *string) error {
 	return nil
 }

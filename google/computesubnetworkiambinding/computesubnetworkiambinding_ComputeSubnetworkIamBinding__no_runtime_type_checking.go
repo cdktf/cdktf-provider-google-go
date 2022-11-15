@@ -60,6 +60,14 @@ func validateComputeSubnetworkIamBinding_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateComputeSubnetworkIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeSubnetworkIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSubnetworkIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

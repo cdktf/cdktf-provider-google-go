@@ -60,6 +60,14 @@ func validateServiceNetworkingPeeredDnsDomain_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateServiceNetworkingPeeredDnsDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServiceNetworkingPeeredDnsDomain_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

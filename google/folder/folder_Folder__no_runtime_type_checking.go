@@ -60,6 +60,14 @@ func validateFolder_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFolder_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFolder_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Folder) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

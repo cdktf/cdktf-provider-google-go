@@ -60,6 +60,14 @@ func validateComputeProjectMetadata_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeProjectMetadata_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeProjectMetadata_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeProjectMetadata) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

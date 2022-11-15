@@ -80,6 +80,14 @@ func validateDnsManagedZone_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDnsManagedZone_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDnsManagedZone_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DnsManagedZone) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

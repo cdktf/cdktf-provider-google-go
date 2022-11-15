@@ -119,6 +119,22 @@ func validateDataGoogleComputeSslCertificate_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateDataGoogleComputeSslCertificate_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataGoogleComputeSslCertificate_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeSslCertificate) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

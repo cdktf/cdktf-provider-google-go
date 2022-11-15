@@ -56,6 +56,14 @@ func validateDataGoogleComputeGlobalForwardingRule_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDataGoogleComputeGlobalForwardingRule_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleComputeGlobalForwardingRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRule) validateSetIdParameters(val *string) error {
 	return nil
 }

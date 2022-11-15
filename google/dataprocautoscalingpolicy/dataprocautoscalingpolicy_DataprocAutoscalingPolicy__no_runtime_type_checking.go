@@ -72,6 +72,14 @@ func validateDataprocAutoscalingPolicy_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataprocAutoscalingPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataprocAutoscalingPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocAutoscalingPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

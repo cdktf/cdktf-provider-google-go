@@ -60,6 +60,14 @@ func validateAccessContextManagerServicePerimeterResource_IsConstructParameters(
 	return nil
 }
 
+func validateAccessContextManagerServicePerimeterResource_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAccessContextManagerServicePerimeterResource_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessContextManagerServicePerimeterResource) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

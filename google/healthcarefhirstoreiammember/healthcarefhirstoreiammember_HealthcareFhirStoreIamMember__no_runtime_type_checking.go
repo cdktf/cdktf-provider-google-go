@@ -60,6 +60,14 @@ func validateHealthcareFhirStoreIamMember_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateHealthcareFhirStoreIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHealthcareFhirStoreIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareFhirStoreIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

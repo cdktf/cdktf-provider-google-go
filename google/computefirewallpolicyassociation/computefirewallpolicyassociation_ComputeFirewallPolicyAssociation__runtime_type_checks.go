@@ -130,6 +130,22 @@ func validateComputeFirewallPolicyAssociation_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateComputeFirewallPolicyAssociation_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateComputeFirewallPolicyAssociation_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeFirewallPolicyAssociation) validateSetAttachmentTargetParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -72,6 +72,14 @@ func validateHealthcareHl7V2Store_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateHealthcareHl7V2Store_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHealthcareHl7V2Store_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareHl7V2Store) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

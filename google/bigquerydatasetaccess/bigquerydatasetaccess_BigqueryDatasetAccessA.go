@@ -2,10 +2,10 @@ package bigquerydatasetaccess
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v3/bigquerydatasetaccess/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v4/bigquerydatasetaccess/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -781,6 +781,44 @@ func BigqueryDatasetAccessA_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.bigqueryDatasetAccess.BigqueryDatasetAccessA",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BigqueryDatasetAccessA_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBigqueryDatasetAccessA_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.bigqueryDatasetAccess.BigqueryDatasetAccessA",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BigqueryDatasetAccessA_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBigqueryDatasetAccessA_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.bigqueryDatasetAccess.BigqueryDatasetAccessA",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

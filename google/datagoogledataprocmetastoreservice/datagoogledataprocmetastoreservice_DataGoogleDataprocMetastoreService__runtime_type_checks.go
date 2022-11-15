@@ -119,6 +119,22 @@ func validateDataGoogleDataprocMetastoreService_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataGoogleDataprocMetastoreService_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataGoogleDataprocMetastoreService_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleDataprocMetastoreService) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

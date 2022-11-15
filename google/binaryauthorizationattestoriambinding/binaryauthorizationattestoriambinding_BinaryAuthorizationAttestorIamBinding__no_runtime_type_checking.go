@@ -60,6 +60,14 @@ func validateBinaryAuthorizationAttestorIamBinding_IsConstructParameters(x inter
 	return nil
 }
 
+func validateBinaryAuthorizationAttestorIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBinaryAuthorizationAttestorIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BinaryAuthorizationAttestorIamBinding) validateSetAttestorParameters(val *string) error {
 	return nil
 }

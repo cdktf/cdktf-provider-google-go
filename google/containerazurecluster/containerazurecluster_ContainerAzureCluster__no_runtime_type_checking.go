@@ -76,6 +76,14 @@ func validateContainerAzureCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateContainerAzureCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateContainerAzureCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAzureCluster) validateSetAnnotationsParameters(val *map[string]*string) error {
 	return nil
 }

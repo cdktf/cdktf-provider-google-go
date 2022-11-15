@@ -60,6 +60,14 @@ func validateCloudIdsEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudIdsEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudIdsEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudIdsEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataGoogleSecretManagerSecret_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataGoogleSecretManagerSecret_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleSecretManagerSecret_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleSecretManagerSecret) validateSetIdParameters(val *string) error {
 	return nil
 }

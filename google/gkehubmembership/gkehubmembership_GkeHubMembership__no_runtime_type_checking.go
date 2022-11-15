@@ -68,6 +68,14 @@ func validateGkeHubMembership_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGkeHubMembership_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGkeHubMembership_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GkeHubMembership) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

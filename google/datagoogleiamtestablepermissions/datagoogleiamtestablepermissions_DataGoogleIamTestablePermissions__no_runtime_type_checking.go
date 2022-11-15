@@ -56,6 +56,14 @@ func validateDataGoogleIamTestablePermissions_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateDataGoogleIamTestablePermissions_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleIamTestablePermissions_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleIamTestablePermissions) validateSetCustomSupportLevelParameters(val *string) error {
 	return nil
 }

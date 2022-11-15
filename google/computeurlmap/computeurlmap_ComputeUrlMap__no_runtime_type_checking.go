@@ -84,6 +84,14 @@ func validateComputeUrlMap_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeUrlMap_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeUrlMap_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeUrlMap) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateDialogflowCxEntityType_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDialogflowCxEntityType_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDialogflowCxEntityType_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxEntityType) validateSetAutoExpansionModeParameters(val *string) error {
 	return nil
 }

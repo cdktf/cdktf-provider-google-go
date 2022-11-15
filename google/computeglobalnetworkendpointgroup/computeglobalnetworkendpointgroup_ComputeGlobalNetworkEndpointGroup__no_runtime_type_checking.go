@@ -60,6 +60,14 @@ func validateComputeGlobalNetworkEndpointGroup_IsConstructParameters(x interface
 	return nil
 }
 
+func validateComputeGlobalNetworkEndpointGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeGlobalNetworkEndpointGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateComputeProjectDefaultNetworkTier_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateComputeProjectDefaultNetworkTier_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeProjectDefaultNetworkTier_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeProjectDefaultNetworkTier) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateIapAppEngineServiceIamPolicy_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateIapAppEngineServiceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIapAppEngineServiceIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IapAppEngineServiceIamPolicy) validateSetAppIdParameters(val *string) error {
 	return nil
 }

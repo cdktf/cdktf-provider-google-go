@@ -163,6 +163,22 @@ func validateMemcacheInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMemcacheInstance_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateMemcacheInstance_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MemcacheInstance) validateSetAuthorizedNetworkParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

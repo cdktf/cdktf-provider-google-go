@@ -60,6 +60,14 @@ func validateApigeeNatAddress_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApigeeNatAddress_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApigeeNatAddress_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigeeNatAddress) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

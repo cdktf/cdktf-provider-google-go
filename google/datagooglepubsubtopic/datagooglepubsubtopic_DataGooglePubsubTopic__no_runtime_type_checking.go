@@ -56,6 +56,14 @@ func validateDataGooglePubsubTopic_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataGooglePubsubTopic_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGooglePubsubTopic_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGooglePubsubTopic) validateSetIdParameters(val *string) error {
 	return nil
 }

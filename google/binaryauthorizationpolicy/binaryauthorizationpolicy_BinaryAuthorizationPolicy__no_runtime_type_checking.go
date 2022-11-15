@@ -72,6 +72,14 @@ func validateBinaryAuthorizationPolicy_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateBinaryAuthorizationPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBinaryAuthorizationPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BinaryAuthorizationPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

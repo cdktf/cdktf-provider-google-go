@@ -72,6 +72,14 @@ func validateMonitoringSlo_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMonitoringSlo_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitoringSlo_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringSlo) validateSetCalendarPeriodParameters(val *string) error {
 	return nil
 }

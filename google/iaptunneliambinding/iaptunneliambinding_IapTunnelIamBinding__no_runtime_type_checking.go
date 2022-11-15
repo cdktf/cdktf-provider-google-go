@@ -60,6 +60,14 @@ func validateIapTunnelIamBinding_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIapTunnelIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIapTunnelIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IapTunnelIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

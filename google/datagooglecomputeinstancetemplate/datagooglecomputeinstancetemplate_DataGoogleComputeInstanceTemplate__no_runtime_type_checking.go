@@ -56,6 +56,14 @@ func validateDataGoogleComputeInstanceTemplate_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataGoogleComputeInstanceTemplate_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleComputeInstanceTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) validateSetFilterParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateMonitoringMonitoredProject_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateMonitoringMonitoredProject_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitoringMonitoredProject_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringMonitoredProject) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package loggingorganizationexclusion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v3/loggingorganizationexclusion/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v4/loggingorganizationexclusion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -591,6 +591,44 @@ func LoggingOrganizationExclusion_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.loggingOrganizationExclusion.LoggingOrganizationExclusion",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LoggingOrganizationExclusion_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLoggingOrganizationExclusion_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.loggingOrganizationExclusion.LoggingOrganizationExclusion",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LoggingOrganizationExclusion_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLoggingOrganizationExclusion_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.loggingOrganizationExclusion.LoggingOrganizationExclusion",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -60,6 +60,14 @@ func validateSqlSourceRepresentationInstance_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateSqlSourceRepresentationInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSqlSourceRepresentationInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

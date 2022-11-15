@@ -56,6 +56,14 @@ func validateLoggingBillingAccountExclusion_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateLoggingBillingAccountExclusion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLoggingBillingAccountExclusion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingBillingAccountExclusion) validateSetBillingAccountParameters(val *string) error {
 	return nil
 }

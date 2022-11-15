@@ -56,6 +56,14 @@ func validateDataGoogleContainerRegistryRepository_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDataGoogleContainerRegistryRepository_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleContainerRegistryRepository_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleContainerRegistryRepository) validateSetIdParameters(val *string) error {
 	return nil
 }

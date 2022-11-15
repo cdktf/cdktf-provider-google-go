@@ -60,6 +60,14 @@ func validateCloudRunServiceIamMember_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateCloudRunServiceIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudRunServiceIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunServiceIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

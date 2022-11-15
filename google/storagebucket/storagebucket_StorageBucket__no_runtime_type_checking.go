@@ -92,6 +92,14 @@ func validateStorageBucket_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStorageBucket_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageBucket_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBucket) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

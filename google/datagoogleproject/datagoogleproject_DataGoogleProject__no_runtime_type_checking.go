@@ -56,6 +56,14 @@ func validateDataGoogleProject_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataGoogleProject_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleProject_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleProject) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateGameServicesRealm_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGameServicesRealm_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGameServicesRealm_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GameServicesRealm) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

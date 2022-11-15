@@ -60,6 +60,14 @@ func validatePubsubTopicIamBinding_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePubsubTopicIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePubsubTopicIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PubsubTopicIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

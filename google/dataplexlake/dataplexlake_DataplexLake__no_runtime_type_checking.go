@@ -64,6 +64,14 @@ func validateDataplexLake_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataplexLake_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataplexLake_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataplexLake) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

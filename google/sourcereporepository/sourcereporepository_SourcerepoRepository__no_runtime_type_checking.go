@@ -64,6 +64,14 @@ func validateSourcerepoRepository_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSourcerepoRepository_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSourcerepoRepository_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SourcerepoRepository) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

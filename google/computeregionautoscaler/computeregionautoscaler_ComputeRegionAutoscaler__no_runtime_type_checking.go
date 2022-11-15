@@ -64,6 +64,14 @@ func validateComputeRegionAutoscaler_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateComputeRegionAutoscaler_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeRegionAutoscaler_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionAutoscaler) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

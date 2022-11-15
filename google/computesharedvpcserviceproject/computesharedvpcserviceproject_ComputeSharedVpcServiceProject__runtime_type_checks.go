@@ -130,6 +130,22 @@ func validateComputeSharedVpcServiceProject_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateComputeSharedVpcServiceProject_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateComputeSharedVpcServiceProject_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSharedVpcServiceProject) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

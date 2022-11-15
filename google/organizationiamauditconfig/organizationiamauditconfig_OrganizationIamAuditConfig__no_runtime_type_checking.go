@@ -60,6 +60,14 @@ func validateOrganizationIamAuditConfig_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateOrganizationIamAuditConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOrganizationIamAuditConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrganizationIamAuditConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataGoogleSourcerepoRepository_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataGoogleSourcerepoRepository_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleSourcerepoRepository_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleSourcerepoRepository) validateSetIdParameters(val *string) error {
 	return nil
 }

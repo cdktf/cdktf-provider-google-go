@@ -60,6 +60,14 @@ func validateIdentityPlatformOauthIdpConfig_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateIdentityPlatformOauthIdpConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIdentityPlatformOauthIdpConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) validateSetClientIdParameters(val *string) error {
 	return nil
 }

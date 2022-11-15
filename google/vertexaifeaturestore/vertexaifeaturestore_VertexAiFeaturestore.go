@@ -2,10 +2,10 @@ package vertexaifeaturestore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v3/vertexaifeaturestore/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v4/vertexaifeaturestore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -699,6 +699,44 @@ func VertexAiFeaturestore_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestore",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VertexAiFeaturestore_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVertexAiFeaturestore_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestore",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VertexAiFeaturestore_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVertexAiFeaturestore_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestore",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

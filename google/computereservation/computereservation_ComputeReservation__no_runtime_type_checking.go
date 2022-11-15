@@ -68,6 +68,14 @@ func validateComputeReservation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeReservation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeReservation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeReservation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

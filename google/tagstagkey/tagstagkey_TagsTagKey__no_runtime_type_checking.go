@@ -60,6 +60,14 @@ func validateTagsTagKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTagsTagKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTagsTagKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TagsTagKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

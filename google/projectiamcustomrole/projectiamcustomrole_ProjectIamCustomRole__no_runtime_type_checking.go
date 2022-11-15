@@ -56,6 +56,14 @@ func validateProjectIamCustomRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateProjectIamCustomRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectIamCustomRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectIamCustomRole) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

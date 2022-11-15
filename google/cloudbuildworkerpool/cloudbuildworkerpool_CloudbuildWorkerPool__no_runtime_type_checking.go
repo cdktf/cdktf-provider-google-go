@@ -68,6 +68,14 @@ func validateCloudbuildWorkerPool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudbuildWorkerPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudbuildWorkerPool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudbuildWorkerPool) validateSetAnnotationsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataGoogleComputeInstanceSerialPort_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataGoogleComputeInstanceSerialPort_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleComputeInstanceSerialPort_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceSerialPort) validateSetIdParameters(val *string) error {
 	return nil
 }

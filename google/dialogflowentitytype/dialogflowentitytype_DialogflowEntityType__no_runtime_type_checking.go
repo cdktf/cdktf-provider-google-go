@@ -64,6 +64,14 @@ func validateDialogflowEntityType_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDialogflowEntityType_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDialogflowEntityType_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowEntityType) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

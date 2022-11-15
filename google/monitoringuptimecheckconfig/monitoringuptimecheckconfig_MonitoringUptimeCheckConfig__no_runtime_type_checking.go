@@ -80,6 +80,14 @@ func validateMonitoringUptimeCheckConfig_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateMonitoringUptimeCheckConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitoringUptimeCheckConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetCheckerTypeParameters(val *string) error {
 	return nil
 }

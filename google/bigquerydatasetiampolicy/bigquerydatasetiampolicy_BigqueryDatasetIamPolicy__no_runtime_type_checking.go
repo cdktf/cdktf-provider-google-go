@@ -56,6 +56,14 @@ func validateBigqueryDatasetIamPolicy_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateBigqueryDatasetIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBigqueryDatasetIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryDatasetIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

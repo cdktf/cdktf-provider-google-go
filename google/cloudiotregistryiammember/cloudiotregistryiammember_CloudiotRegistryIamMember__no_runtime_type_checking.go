@@ -60,6 +60,14 @@ func validateCloudiotRegistryIamMember_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateCloudiotRegistryIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudiotRegistryIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudiotRegistryIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

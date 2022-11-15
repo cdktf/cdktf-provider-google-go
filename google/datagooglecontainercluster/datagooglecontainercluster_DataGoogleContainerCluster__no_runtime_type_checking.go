@@ -56,6 +56,14 @@ func validateDataGoogleContainerCluster_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataGoogleContainerCluster_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleContainerCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleContainerCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

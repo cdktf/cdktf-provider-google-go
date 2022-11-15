@@ -60,6 +60,14 @@ func validateDataflowJob_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataflowJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataflowJob_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataflowJob) validateSetAdditionalExperimentsParameters(val *[]*string) error {
 	return nil
 }

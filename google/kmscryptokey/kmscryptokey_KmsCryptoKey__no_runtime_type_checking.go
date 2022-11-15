@@ -64,6 +64,14 @@ func validateKmsCryptoKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKmsCryptoKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKmsCryptoKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsCryptoKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

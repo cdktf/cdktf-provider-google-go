@@ -68,6 +68,14 @@ func validateCloudIdentityGroupMembership_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateCloudIdentityGroupMembership_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudIdentityGroupMembership_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudIdentityGroupMembership) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

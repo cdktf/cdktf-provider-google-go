@@ -64,6 +64,14 @@ func validateComputeAutoscaler_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeAutoscaler_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeAutoscaler_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeAutoscaler) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

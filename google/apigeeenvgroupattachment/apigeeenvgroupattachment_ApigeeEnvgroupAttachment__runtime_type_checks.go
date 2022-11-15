@@ -130,6 +130,22 @@ func validateApigeeEnvgroupAttachment_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateApigeeEnvgroupAttachment_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateApigeeEnvgroupAttachment_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApigeeEnvgroupAttachment) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

@@ -56,6 +56,14 @@ func validateDataGoogleCloudfunctions2Function_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataGoogleCloudfunctions2Function_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleCloudfunctions2Function_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleCloudfunctions2Function) validateSetIdParameters(val *string) error {
 	return nil
 }

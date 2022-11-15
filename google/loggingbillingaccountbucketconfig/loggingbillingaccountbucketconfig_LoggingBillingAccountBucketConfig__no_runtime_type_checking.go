@@ -56,6 +56,14 @@ func validateLoggingBillingAccountBucketConfig_IsConstructParameters(x interface
 	return nil
 }
 
+func validateLoggingBillingAccountBucketConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLoggingBillingAccountBucketConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingBillingAccountBucketConfig) validateSetBillingAccountParameters(val *string) error {
 	return nil
 }

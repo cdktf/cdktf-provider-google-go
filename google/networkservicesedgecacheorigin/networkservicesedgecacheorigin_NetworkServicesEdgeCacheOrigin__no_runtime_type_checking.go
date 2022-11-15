@@ -64,6 +64,14 @@ func validateNetworkServicesEdgeCacheOrigin_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateNetworkServicesEdgeCacheOrigin_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkServicesEdgeCacheOrigin_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

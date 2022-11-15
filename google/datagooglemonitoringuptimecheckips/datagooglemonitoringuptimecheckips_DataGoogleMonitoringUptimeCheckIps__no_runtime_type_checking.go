@@ -56,6 +56,14 @@ func validateDataGoogleMonitoringUptimeCheckIps_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataGoogleMonitoringUptimeCheckIps_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleMonitoringUptimeCheckIps_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleMonitoringUptimeCheckIps) validateSetIdParameters(val *string) error {
 	return nil
 }

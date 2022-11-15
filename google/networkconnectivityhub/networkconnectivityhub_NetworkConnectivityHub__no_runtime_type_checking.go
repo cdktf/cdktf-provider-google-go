@@ -60,6 +60,14 @@ func validateNetworkConnectivityHub_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNetworkConnectivityHub_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkConnectivityHub_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkConnectivityHub) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

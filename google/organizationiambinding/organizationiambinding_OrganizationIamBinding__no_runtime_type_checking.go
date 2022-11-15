@@ -60,6 +60,14 @@ func validateOrganizationIamBinding_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOrganizationIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOrganizationIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrganizationIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

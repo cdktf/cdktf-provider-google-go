@@ -60,6 +60,14 @@ func validateIdentityPlatformConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIdentityPlatformConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIdentityPlatformConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityPlatformConfig) validateSetAutodeleteAnonymousUsersParameters(val interface{}) error {
 	return nil
 }

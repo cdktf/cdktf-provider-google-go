@@ -60,6 +60,14 @@ func validateArtifactRegistryRepositoryIamMember_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateArtifactRegistryRepositoryIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateArtifactRegistryRepositoryIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

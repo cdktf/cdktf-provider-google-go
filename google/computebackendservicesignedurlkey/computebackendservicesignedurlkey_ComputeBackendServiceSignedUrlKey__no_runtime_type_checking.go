@@ -60,6 +60,14 @@ func validateComputeBackendServiceSignedUrlKey_IsConstructParameters(x interface
 	return nil
 }
 
+func validateComputeBackendServiceSignedUrlKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeBackendServiceSignedUrlKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateSetBackendServiceParameters(val *string) error {
 	return nil
 }

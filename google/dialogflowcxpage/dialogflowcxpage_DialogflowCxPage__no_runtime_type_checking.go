@@ -76,6 +76,14 @@ func validateDialogflowCxPage_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDialogflowCxPage_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDialogflowCxPage_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxPage) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

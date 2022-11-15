@@ -60,6 +60,14 @@ func validateAccessContextManagerGcpUserAccessBinding_IsConstructParameters(x in
 	return nil
 }
 
+func validateAccessContextManagerGcpUserAccessBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAccessContextManagerGcpUserAccessBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateSetAccessLevelsParameters(val *[]*string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateComputeDiskResourcePolicyAttachment_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateComputeDiskResourcePolicyAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeDiskResourcePolicyAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeDiskResourcePolicyAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

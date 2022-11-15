@@ -56,6 +56,14 @@ func validateDataGoogleMonitoringIstioCanonicalService_IsConstructParameters(x i
 	return nil
 }
 
+func validateDataGoogleMonitoringIstioCanonicalService_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleMonitoringIstioCanonicalService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) validateSetCanonicalServiceParameters(val *string) error {
 	return nil
 }

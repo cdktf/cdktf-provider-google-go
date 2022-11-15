@@ -56,6 +56,14 @@ func validateDataGoogleComputeRouter_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataGoogleComputeRouter_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleComputeRouter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeRouter) validateSetIdParameters(val *string) error {
 	return nil
 }

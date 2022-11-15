@@ -76,6 +76,14 @@ func validateContainerAwsCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateContainerAwsCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateContainerAwsCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAwsCluster) validateSetAnnotationsParameters(val *map[string]*string) error {
 	return nil
 }

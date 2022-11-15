@@ -56,6 +56,14 @@ func validateDataGoogleStorageObjectSignedUrl_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateDataGoogleStorageObjectSignedUrl_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleStorageObjectSignedUrl_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleStorageObjectSignedUrl) validateSetBucketParameters(val *string) error {
 	return nil
 }

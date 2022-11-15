@@ -60,6 +60,14 @@ func validateSqlDatabase_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSqlDatabase_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSqlDatabase_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabase) validateSetCharsetParameters(val *string) error {
 	return nil
 }

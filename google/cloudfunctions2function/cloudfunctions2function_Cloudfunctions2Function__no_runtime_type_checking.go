@@ -72,6 +72,14 @@ func validateCloudfunctions2Function_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateCloudfunctions2Function_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudfunctions2Function_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cloudfunctions2Function) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

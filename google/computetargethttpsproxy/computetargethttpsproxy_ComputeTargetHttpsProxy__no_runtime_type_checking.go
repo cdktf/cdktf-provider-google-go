@@ -60,6 +60,14 @@ func validateComputeTargetHttpsProxy_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateComputeTargetHttpsProxy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeTargetHttpsProxy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeTargetHttpsProxy) validateSetCertificateMapParameters(val *string) error {
 	return nil
 }

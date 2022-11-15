@@ -60,6 +60,14 @@ func validateApigeeEnvironmentIamBinding_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateApigeeEnvironmentIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApigeeEnvironmentIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigeeEnvironmentIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

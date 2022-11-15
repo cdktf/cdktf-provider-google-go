@@ -60,6 +60,14 @@ func validateSccSourceIamMember_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSccSourceIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSccSourceIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SccSourceIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

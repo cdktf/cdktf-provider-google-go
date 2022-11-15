@@ -130,6 +130,22 @@ func validateAccessContextManagerAccessPolicyIamBinding_IsConstructParameters(x 
 	return nil
 }
 
+func validateAccessContextManagerAccessPolicyIamBinding_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateAccessContextManagerAccessPolicyIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

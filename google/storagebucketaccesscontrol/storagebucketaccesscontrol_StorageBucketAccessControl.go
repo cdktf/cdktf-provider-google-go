@@ -2,10 +2,10 @@ package storagebucketaccesscontrol
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v3/storagebucketaccesscontrol/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v4/storagebucketaccesscontrol/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -568,6 +568,44 @@ func StorageBucketAccessControl_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.storageBucketAccessControl.StorageBucketAccessControl",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func StorageBucketAccessControl_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStorageBucketAccessControl_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.storageBucketAccessControl.StorageBucketAccessControl",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func StorageBucketAccessControl_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStorageBucketAccessControl_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.storageBucketAccessControl.StorageBucketAccessControl",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -88,6 +88,14 @@ func validateComputeRegionHealthCheck_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateComputeRegionHealthCheck_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeRegionHealthCheck_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionHealthCheck) validateSetCheckIntervalSecParameters(val *float64) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validatePubsubLiteReservation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePubsubLiteReservation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePubsubLiteReservation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PubsubLiteReservation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

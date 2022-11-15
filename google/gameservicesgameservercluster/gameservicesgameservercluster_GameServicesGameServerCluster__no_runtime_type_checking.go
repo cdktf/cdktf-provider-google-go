@@ -64,6 +64,14 @@ func validateGameServicesGameServerCluster_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateGameServicesGameServerCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGameServicesGameServerCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GameServicesGameServerCluster) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

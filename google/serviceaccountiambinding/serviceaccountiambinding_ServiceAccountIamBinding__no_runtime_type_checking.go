@@ -60,6 +60,14 @@ func validateServiceAccountIamBinding_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateServiceAccountIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServiceAccountIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceAccountIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

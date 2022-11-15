@@ -68,6 +68,14 @@ func validateDataFusionInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataFusionInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataFusionInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFusionInstance) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

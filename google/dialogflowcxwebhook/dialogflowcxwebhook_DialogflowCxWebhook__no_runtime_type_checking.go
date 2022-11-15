@@ -68,6 +68,14 @@ func validateDialogflowCxWebhook_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDialogflowCxWebhook_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDialogflowCxWebhook_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxWebhook) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

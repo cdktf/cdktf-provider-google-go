@@ -56,6 +56,14 @@ func validateComputeSubnetworkIamPolicy_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateComputeSubnetworkIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeSubnetworkIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSubnetworkIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

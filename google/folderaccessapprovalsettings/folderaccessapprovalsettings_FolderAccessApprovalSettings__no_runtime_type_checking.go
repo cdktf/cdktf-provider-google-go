@@ -64,6 +64,14 @@ func validateFolderAccessApprovalSettings_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateFolderAccessApprovalSettings_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFolderAccessApprovalSettings_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FolderAccessApprovalSettings) validateSetActiveKeyVersionParameters(val *string) error {
 	return nil
 }

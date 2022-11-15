@@ -64,6 +64,14 @@ func validateLoggingFolderSink_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLoggingFolderSink_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLoggingFolderSink_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingFolderSink) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

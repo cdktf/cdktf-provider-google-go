@@ -119,6 +119,22 @@ func validateDataprocAutoscalingPolicyIamPolicy_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataprocAutoscalingPolicyIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataprocAutoscalingPolicyIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

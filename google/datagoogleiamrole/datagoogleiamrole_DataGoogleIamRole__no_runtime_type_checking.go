@@ -56,6 +56,14 @@ func validateDataGoogleIamRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataGoogleIamRole_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleIamRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleIamRole) validateSetIdParameters(val *string) error {
 	return nil
 }

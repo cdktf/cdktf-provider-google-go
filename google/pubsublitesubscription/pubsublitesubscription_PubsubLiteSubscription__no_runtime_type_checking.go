@@ -64,6 +64,14 @@ func validatePubsubLiteSubscription_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePubsubLiteSubscription_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePubsubLiteSubscription_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PubsubLiteSubscription) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

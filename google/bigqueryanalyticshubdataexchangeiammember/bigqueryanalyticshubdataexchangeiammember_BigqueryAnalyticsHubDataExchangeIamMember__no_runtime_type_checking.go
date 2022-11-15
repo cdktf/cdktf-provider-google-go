@@ -60,6 +60,14 @@ func validateBigqueryAnalyticsHubDataExchangeIamMember_IsConstructParameters(x i
 	return nil
 }
 
+func validateBigqueryAnalyticsHubDataExchangeIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBigqueryAnalyticsHubDataExchangeIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

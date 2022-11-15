@@ -56,6 +56,14 @@ func validatePrivatecaCaPoolIamPolicy_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validatePrivatecaCaPoolIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePrivatecaCaPoolIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivatecaCaPoolIamPolicy) validateSetCaPoolParameters(val *string) error {
 	return nil
 }

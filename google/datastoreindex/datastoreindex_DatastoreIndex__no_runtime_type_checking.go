@@ -64,6 +64,14 @@ func validateDatastoreIndex_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDatastoreIndex_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatastoreIndex_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatastoreIndex) validateSetAncestorParameters(val *string) error {
 	return nil
 }

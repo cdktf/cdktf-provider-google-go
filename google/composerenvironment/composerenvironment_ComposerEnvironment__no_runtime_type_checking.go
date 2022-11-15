@@ -64,6 +64,14 @@ func validateComposerEnvironment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComposerEnvironment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComposerEnvironment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComposerEnvironment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

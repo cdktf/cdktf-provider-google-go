@@ -60,6 +60,14 @@ func validateComputeNetworkPeering_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeNetworkPeering_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeNetworkPeering_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeNetworkPeering) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

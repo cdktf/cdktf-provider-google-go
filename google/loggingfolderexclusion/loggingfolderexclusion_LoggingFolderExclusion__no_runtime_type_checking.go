@@ -56,6 +56,14 @@ func validateLoggingFolderExclusion_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLoggingFolderExclusion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLoggingFolderExclusion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingFolderExclusion) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

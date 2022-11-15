@@ -64,6 +64,14 @@ func validateLoggingBillingAccountSink_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateLoggingBillingAccountSink_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLoggingBillingAccountSink_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingBillingAccountSink) validateSetBillingAccountParameters(val *string) error {
 	return nil
 }

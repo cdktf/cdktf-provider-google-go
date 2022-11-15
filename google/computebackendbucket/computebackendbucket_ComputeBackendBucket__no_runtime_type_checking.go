@@ -64,6 +64,14 @@ func validateComputeBackendBucket_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeBackendBucket_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeBackendBucket_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendBucket) validateSetBucketNameParameters(val *string) error {
 	return nil
 }

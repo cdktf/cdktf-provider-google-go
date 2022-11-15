@@ -64,6 +64,14 @@ func validateMonitoringNotificationChannel_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateMonitoringNotificationChannel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitoringNotificationChannel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringNotificationChannel) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

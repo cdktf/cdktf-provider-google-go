@@ -56,6 +56,14 @@ func validateDataGoogleDnsRecordSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataGoogleDnsRecordSet_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleDnsRecordSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleDnsRecordSet) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateFilestoreSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFilestoreSnapshot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFilestoreSnapshot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FilestoreSnapshot) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

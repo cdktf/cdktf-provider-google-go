@@ -72,6 +72,14 @@ func validateBigqueryDataTransferConfig_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateBigqueryDataTransferConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBigqueryDataTransferConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryDataTransferConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

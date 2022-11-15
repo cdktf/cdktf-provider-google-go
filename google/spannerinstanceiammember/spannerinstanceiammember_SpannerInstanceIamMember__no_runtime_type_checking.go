@@ -60,6 +60,14 @@ func validateSpannerInstanceIamMember_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateSpannerInstanceIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpannerInstanceIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpannerInstanceIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

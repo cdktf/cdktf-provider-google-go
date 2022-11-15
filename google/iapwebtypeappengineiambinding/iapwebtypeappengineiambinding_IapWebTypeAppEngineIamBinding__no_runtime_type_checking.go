@@ -60,6 +60,14 @@ func validateIapWebTypeAppEngineIamBinding_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateIapWebTypeAppEngineIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIapWebTypeAppEngineIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IapWebTypeAppEngineIamBinding) validateSetAppIdParameters(val *string) error {
 	return nil
 }

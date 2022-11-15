@@ -60,6 +60,14 @@ func validateComputeTargetPool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeTargetPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeTargetPool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeTargetPool) validateSetBackupPoolParameters(val *string) error {
 	return nil
 }

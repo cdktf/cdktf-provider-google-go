@@ -60,6 +60,14 @@ func validateCloudiotRegistryIamBinding_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateCloudiotRegistryIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudiotRegistryIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudiotRegistryIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateIapWebIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIapWebIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIapWebIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IapWebIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

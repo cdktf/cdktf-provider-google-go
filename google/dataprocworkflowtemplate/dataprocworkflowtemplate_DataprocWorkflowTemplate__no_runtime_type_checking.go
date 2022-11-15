@@ -72,6 +72,14 @@ func validateDataprocWorkflowTemplate_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataprocWorkflowTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataprocWorkflowTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocWorkflowTemplate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

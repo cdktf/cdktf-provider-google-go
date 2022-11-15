@@ -60,6 +60,14 @@ func validateComputeHttpsHealthCheck_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateComputeHttpsHealthCheck_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeHttpsHealthCheck_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeHttpsHealthCheck) validateSetCheckIntervalSecParameters(val *float64) error {
 	return nil
 }

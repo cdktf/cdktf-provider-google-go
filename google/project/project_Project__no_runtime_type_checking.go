@@ -60,6 +60,14 @@ func validateProject_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateProject_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProject_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Project) validateSetAutoCreateNetworkParameters(val interface{}) error {
 	return nil
 }

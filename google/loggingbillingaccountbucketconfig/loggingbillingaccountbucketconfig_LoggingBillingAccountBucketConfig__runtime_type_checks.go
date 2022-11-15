@@ -119,6 +119,22 @@ func validateLoggingBillingAccountBucketConfig_IsConstructParameters(x interface
 	return nil
 }
 
+func validateLoggingBillingAccountBucketConfig_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateLoggingBillingAccountBucketConfig_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LoggingBillingAccountBucketConfig) validateSetBillingAccountParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

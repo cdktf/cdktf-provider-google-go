@@ -60,6 +60,14 @@ func validateComputeTargetTcpProxy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeTargetTcpProxy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeTargetTcpProxy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeTargetTcpProxy) validateSetBackendServiceParameters(val *string) error {
 	return nil
 }

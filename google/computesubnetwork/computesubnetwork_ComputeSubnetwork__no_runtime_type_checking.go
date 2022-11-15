@@ -68,6 +68,14 @@ func validateComputeSubnetwork_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeSubnetwork_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeSubnetwork_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSubnetwork) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataGoogleComputeLbIpRanges_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataGoogleComputeLbIpRanges_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleComputeLbIpRanges_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeLbIpRanges) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,14 @@ func validateMemcacheInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMemcacheInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMemcacheInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemcacheInstance) validateSetAuthorizedNetworkParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataGoogleBigqueryDefaultServiceAccount_IsConstructParameters(x int
 	return nil
 }
 
+func validateDataGoogleBigqueryDefaultServiceAccount_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleBigqueryDefaultServiceAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleBigqueryDefaultServiceAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

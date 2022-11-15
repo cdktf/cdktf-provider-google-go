@@ -152,6 +152,22 @@ func validateCloudAssetOrganizationFeed_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateCloudAssetOrganizationFeed_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateCloudAssetOrganizationFeed_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudAssetOrganizationFeed) validateSetAssetNamesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

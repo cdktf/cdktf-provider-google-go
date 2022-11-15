@@ -80,6 +80,14 @@ func validateNotebooksInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNotebooksInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNotebooksInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotebooksInstance) validateSetBootDiskSizeGbParameters(val *float64) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateComputeDiskIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeDiskIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeDiskIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeDiskIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

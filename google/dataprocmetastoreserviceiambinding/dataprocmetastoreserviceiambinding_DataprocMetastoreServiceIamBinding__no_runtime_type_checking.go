@@ -60,6 +60,14 @@ func validateDataprocMetastoreServiceIamBinding_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataprocMetastoreServiceIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataprocMetastoreServiceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocMetastoreServiceIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

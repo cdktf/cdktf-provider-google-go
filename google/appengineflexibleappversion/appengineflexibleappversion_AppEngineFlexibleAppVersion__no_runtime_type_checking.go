@@ -108,6 +108,14 @@ func validateAppEngineFlexibleAppVersion_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateAppEngineFlexibleAppVersion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppEngineFlexibleAppVersion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppEngineFlexibleAppVersion) validateSetBetaSettingsParameters(val *map[string]*string) error {
 	return nil
 }

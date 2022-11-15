@@ -60,6 +60,14 @@ func validateIdentityPlatformTenant_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIdentityPlatformTenant_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIdentityPlatformTenant_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityPlatformTenant) validateSetAllowPasswordSignupParameters(val interface{}) error {
 	return nil
 }

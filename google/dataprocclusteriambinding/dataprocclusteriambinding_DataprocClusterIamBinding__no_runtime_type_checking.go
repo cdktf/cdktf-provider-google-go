@@ -60,6 +60,14 @@ func validateDataprocClusterIamBinding_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataprocClusterIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataprocClusterIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocClusterIamBinding) validateSetClusterParameters(val *string) error {
 	return nil
 }

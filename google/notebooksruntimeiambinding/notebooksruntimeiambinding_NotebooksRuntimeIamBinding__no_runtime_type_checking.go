@@ -60,6 +60,14 @@ func validateNotebooksRuntimeIamBinding_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateNotebooksRuntimeIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNotebooksRuntimeIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotebooksRuntimeIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

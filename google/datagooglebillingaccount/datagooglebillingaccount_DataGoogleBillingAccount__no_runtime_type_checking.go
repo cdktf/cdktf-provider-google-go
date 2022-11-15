@@ -56,6 +56,14 @@ func validateDataGoogleBillingAccount_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataGoogleBillingAccount_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleBillingAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleBillingAccount) validateSetBillingAccountParameters(val *string) error {
 	return nil
 }

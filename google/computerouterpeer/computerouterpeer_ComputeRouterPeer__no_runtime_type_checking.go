@@ -68,6 +68,14 @@ func validateComputeRouterPeer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeRouterPeer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeRouterPeer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterPeer) validateSetAdvertisedGroupsParameters(val *[]*string) error {
 	return nil
 }

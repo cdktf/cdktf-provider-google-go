@@ -60,6 +60,14 @@ func validateStorageObjectAccessControl_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateStorageObjectAccessControl_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageObjectAccessControl_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageObjectAccessControl) validateSetBucketParameters(val *string) error {
 	return nil
 }

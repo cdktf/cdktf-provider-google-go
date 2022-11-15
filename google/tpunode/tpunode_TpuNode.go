@@ -2,10 +2,10 @@ package tpunode
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v3/tpunode/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v4/tpunode/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -836,6 +836,44 @@ func TpuNode_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.tpuNode.TpuNode",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func TpuNode_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateTpuNode_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.tpuNode.TpuNode",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func TpuNode_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateTpuNode_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.tpuNode.TpuNode",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

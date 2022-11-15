@@ -92,6 +92,14 @@ func validateComputeBackendService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeBackendService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeBackendService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendService) validateSetAffinityCookieTtlSecParameters(val *float64) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateComputeNodeGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeNodeGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeNodeGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeNodeGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

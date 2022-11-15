@@ -64,6 +64,14 @@ func validateAppEngineApplicationUrlDispatchRules_IsConstructParameters(x interf
 	return nil
 }
 
+func validateAppEngineApplicationUrlDispatchRules_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppEngineApplicationUrlDispatchRules_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

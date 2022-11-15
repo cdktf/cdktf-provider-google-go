@@ -56,6 +56,14 @@ func validateDataGoogleContainerRegistryImage_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateDataGoogleContainerRegistryImage_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleContainerRegistryImage_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleContainerRegistryImage) validateSetDigestParameters(val *string) error {
 	return nil
 }

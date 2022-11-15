@@ -60,6 +60,14 @@ func validateStorageHmacKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStorageHmacKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageHmacKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageHmacKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

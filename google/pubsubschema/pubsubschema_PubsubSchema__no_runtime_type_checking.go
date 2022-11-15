@@ -60,6 +60,14 @@ func validatePubsubSchema_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePubsubSchema_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePubsubSchema_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PubsubSchema) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

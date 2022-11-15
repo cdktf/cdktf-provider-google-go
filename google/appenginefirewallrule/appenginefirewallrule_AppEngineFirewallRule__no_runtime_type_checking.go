@@ -60,6 +60,14 @@ func validateAppEngineFirewallRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppEngineFirewallRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppEngineFirewallRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppEngineFirewallRule) validateSetActionParameters(val *string) error {
 	return nil
 }

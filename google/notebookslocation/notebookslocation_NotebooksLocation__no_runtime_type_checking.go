@@ -60,6 +60,14 @@ func validateNotebooksLocation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNotebooksLocation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNotebooksLocation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotebooksLocation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateCertificateManagerCertificate_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateCertificateManagerCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCertificateManagerCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CertificateManagerCertificate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

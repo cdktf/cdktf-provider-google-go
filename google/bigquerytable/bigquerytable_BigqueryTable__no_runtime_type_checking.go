@@ -80,6 +80,14 @@ func validateBigqueryTable_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBigqueryTable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBigqueryTable_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryTable) validateSetClusteringParameters(val *[]*string) error {
 	return nil
 }

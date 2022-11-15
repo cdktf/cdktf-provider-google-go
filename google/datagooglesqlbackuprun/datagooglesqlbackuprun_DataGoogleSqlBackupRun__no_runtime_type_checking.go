@@ -56,6 +56,14 @@ func validateDataGoogleSqlBackupRun_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataGoogleSqlBackupRun_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleSqlBackupRun_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleSqlBackupRun) validateSetBackupIdParameters(val *float64) error {
 	return nil
 }

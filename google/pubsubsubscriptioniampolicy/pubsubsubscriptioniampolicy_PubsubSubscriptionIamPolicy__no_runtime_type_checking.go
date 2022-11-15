@@ -56,6 +56,14 @@ func validatePubsubSubscriptionIamPolicy_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validatePubsubSubscriptionIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePubsubSubscriptionIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PubsubSubscriptionIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

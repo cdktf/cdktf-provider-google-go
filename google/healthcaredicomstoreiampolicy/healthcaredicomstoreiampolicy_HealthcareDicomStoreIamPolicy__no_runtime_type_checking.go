@@ -56,6 +56,14 @@ func validateHealthcareDicomStoreIamPolicy_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateHealthcareDicomStoreIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHealthcareDicomStoreIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

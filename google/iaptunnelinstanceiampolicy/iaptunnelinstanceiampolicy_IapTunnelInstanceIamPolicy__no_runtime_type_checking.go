@@ -56,6 +56,14 @@ func validateIapTunnelInstanceIamPolicy_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateIapTunnelInstanceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIapTunnelInstanceIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IapTunnelInstanceIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

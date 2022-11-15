@@ -60,6 +60,14 @@ func validateComputeImageIamMember_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeImageIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeImageIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeImageIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

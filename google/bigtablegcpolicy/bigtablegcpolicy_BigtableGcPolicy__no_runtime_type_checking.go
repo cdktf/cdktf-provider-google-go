@@ -64,6 +64,14 @@ func validateBigtableGcPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBigtableGcPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBigtableGcPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigtableGcPolicy) validateSetColumnFamilyParameters(val *string) error {
 	return nil
 }

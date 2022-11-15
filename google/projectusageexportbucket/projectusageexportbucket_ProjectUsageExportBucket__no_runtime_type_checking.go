@@ -60,6 +60,14 @@ func validateProjectUsageExportBucket_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateProjectUsageExportBucket_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateProjectUsageExportBucket_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectUsageExportBucket) validateSetBucketNameParameters(val *string) error {
 	return nil
 }

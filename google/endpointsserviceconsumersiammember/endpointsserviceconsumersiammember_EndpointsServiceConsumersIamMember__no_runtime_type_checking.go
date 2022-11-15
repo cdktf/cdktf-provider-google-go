@@ -60,6 +60,14 @@ func validateEndpointsServiceConsumersIamMember_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateEndpointsServiceConsumersIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEndpointsServiceConsumersIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EndpointsServiceConsumersIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

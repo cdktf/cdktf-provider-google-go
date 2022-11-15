@@ -60,6 +60,14 @@ func validateNotebooksInstanceIamMember_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateNotebooksInstanceIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNotebooksInstanceIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotebooksInstanceIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

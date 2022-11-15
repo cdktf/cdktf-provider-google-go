@@ -56,6 +56,14 @@ func validateDataprocMetastoreServiceIamPolicy_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataprocMetastoreServiceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataprocMetastoreServiceIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

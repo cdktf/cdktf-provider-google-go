@@ -60,6 +60,14 @@ func validateComputeAddress_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeAddress_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeAddress_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeAddress) validateSetAddressParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validatePrivatecaCertificateTemplateIamPolicy_IsConstructParameters(x inter
 	return nil
 }
 
+func validatePrivatecaCertificateTemplateIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePrivatecaCertificateTemplateIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) validateSetCertificateTemplateParameters(val *string) error {
 	return nil
 }

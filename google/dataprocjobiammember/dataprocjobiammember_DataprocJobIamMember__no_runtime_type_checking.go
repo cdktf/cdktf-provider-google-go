@@ -60,6 +60,14 @@ func validateDataprocJobIamMember_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataprocJobIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataprocJobIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocJobIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validatePubsubSubscriptionIamMember_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validatePubsubSubscriptionIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePubsubSubscriptionIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PubsubSubscriptionIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

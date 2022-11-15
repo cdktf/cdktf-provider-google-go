@@ -60,6 +60,14 @@ func validateSpannerInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSpannerInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpannerInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpannerInstance) validateSetConfigParameters(val *string) error {
 	return nil
 }

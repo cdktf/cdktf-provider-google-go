@@ -282,6 +282,22 @@ func validateAppEngineFlexibleAppVersion_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateAppEngineFlexibleAppVersion_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateAppEngineFlexibleAppVersion_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AppEngineFlexibleAppVersion) validateSetBetaSettingsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

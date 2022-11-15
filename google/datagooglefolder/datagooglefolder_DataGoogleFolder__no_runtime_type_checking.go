@@ -56,6 +56,14 @@ func validateDataGoogleFolder_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataGoogleFolder_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleFolder_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleFolder) validateSetFolderParameters(val *string) error {
 	return nil
 }

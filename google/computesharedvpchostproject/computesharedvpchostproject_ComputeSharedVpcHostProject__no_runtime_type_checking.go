@@ -60,6 +60,14 @@ func validateComputeSharedVpcHostProject_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateComputeSharedVpcHostProject_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeSharedVpcHostProject_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSharedVpcHostProject) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

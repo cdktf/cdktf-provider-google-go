@@ -60,6 +60,14 @@ func validateIapTunnelInstanceIamMember_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateIapTunnelInstanceIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIapTunnelInstanceIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IapTunnelInstanceIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

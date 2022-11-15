@@ -64,6 +64,14 @@ func validateTpuNode_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTpuNode_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTpuNode_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TpuNode) validateSetAcceleratorTypeParameters(val *string) error {
 	return nil
 }

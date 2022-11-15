@@ -72,6 +72,14 @@ func validateFolderOrganizationPolicy_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateFolderOrganizationPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFolderOrganizationPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FolderOrganizationPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDocumentAiProcessor_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDocumentAiProcessor_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDocumentAiProcessor_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocumentAiProcessor) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

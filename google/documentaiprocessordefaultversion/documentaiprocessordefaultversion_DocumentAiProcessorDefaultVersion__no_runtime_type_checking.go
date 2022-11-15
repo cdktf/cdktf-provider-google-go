@@ -60,6 +60,14 @@ func validateDocumentAiProcessorDefaultVersion_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDocumentAiProcessorDefaultVersion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDocumentAiProcessorDefaultVersion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocumentAiProcessorDefaultVersion) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

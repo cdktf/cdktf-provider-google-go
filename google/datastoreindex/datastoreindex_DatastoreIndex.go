@@ -2,10 +2,10 @@ package datastoreindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v3/datastoreindex/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v4/datastoreindex/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -582,6 +582,44 @@ func DatastoreIndex_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.datastoreIndex.DatastoreIndex",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DatastoreIndex_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDatastoreIndex_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.datastoreIndex.DatastoreIndex",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DatastoreIndex_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDatastoreIndex_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.datastoreIndex.DatastoreIndex",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

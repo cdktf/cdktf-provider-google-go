@@ -60,6 +60,14 @@ func validateSccSourceIamBinding_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSccSourceIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSccSourceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SccSourceIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

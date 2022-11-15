@@ -64,6 +64,14 @@ func validateSccNotificationConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSccNotificationConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSccNotificationConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SccNotificationConfig) validateSetConfigIdParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateBigqueryReservationAssignment_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateBigqueryReservationAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBigqueryReservationAssignment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryReservationAssignment) validateSetAssigneeParameters(val *string) error {
 	return nil
 }

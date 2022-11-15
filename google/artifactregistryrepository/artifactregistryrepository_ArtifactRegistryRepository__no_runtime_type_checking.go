@@ -64,6 +64,14 @@ func validateArtifactRegistryRepository_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateArtifactRegistryRepository_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateArtifactRegistryRepository_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ArtifactRegistryRepository) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

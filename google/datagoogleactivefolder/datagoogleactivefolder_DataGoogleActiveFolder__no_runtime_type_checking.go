@@ -56,6 +56,14 @@ func validateDataGoogleActiveFolder_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataGoogleActiveFolder_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleActiveFolder_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleActiveFolder) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

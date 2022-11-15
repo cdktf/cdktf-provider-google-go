@@ -72,6 +72,14 @@ func validateOsConfigOsPolicyAssignment_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateOsConfigOsPolicyAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOsConfigOsPolicyAssignment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OsConfigOsPolicyAssignment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

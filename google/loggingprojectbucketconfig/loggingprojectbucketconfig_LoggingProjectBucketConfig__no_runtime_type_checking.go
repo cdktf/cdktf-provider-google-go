@@ -56,6 +56,14 @@ func validateLoggingProjectBucketConfig_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateLoggingProjectBucketConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLoggingProjectBucketConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetBucketIdParameters(val *string) error {
 	return nil
 }

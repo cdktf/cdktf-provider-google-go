@@ -56,6 +56,14 @@ func validateApigeeEnvironmentIamPolicy_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateApigeeEnvironmentIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApigeeEnvironmentIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigeeEnvironmentIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

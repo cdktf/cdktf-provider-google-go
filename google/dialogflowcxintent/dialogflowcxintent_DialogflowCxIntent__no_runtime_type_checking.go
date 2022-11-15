@@ -68,6 +68,14 @@ func validateDialogflowCxIntent_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDialogflowCxIntent_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDialogflowCxIntent_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxIntent) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -289,6 +289,22 @@ func validateComputeInstanceTemplate_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateComputeInstanceTemplate_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateComputeInstanceTemplate_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplate) validateSetCanIpForwardParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

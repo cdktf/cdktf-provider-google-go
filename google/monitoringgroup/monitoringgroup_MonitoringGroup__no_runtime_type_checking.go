@@ -60,6 +60,14 @@ func validateMonitoringGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMonitoringGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitoringGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

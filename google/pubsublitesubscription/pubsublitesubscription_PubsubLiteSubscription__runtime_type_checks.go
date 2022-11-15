@@ -141,6 +141,22 @@ func validatePubsubLiteSubscription_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePubsubLiteSubscription_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validatePubsubLiteSubscription_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PubsubLiteSubscription) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

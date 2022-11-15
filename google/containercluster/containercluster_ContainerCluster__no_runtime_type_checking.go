@@ -164,6 +164,14 @@ func validateContainerCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateContainerCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateContainerCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerCluster) validateSetClusterIpv4CidrParameters(val *string) error {
 	return nil
 }

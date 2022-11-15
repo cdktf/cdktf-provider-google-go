@@ -60,6 +60,14 @@ func validateLoggingLogView_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLoggingLogView_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLoggingLogView_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingLogView) validateSetBucketParameters(val *string) error {
 	return nil
 }

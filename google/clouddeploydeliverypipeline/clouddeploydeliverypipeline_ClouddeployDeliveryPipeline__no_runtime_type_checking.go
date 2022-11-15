@@ -64,6 +64,14 @@ func validateClouddeployDeliveryPipeline_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateClouddeployDeliveryPipeline_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateClouddeployDeliveryPipeline_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClouddeployDeliveryPipeline) validateSetAnnotationsParameters(val *map[string]*string) error {
 	return nil
 }

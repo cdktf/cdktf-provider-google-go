@@ -64,6 +64,14 @@ func validateComputeManagedSslCertificate_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateComputeManagedSslCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeManagedSslCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeManagedSslCertificate) validateSetCertificateIdParameters(val *float64) error {
 	return nil
 }

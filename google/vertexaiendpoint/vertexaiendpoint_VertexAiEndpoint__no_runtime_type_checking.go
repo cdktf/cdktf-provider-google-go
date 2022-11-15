@@ -64,6 +64,14 @@ func validateVertexAiEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVertexAiEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVertexAiEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VertexAiEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateOrganizationAccessApprovalSettings_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateOrganizationAccessApprovalSettings_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOrganizationAccessApprovalSettings_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrganizationAccessApprovalSettings) validateSetActiveKeyVersionParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateDataCatalogTag_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataCatalogTag_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataCatalogTag_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCatalogTag) validateSetColumnParameters(val *string) error {
 	return nil
 }

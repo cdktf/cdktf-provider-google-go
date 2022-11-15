@@ -68,6 +68,14 @@ func validateCloudRunDomainMapping_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudRunDomainMapping_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudRunDomainMapping_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunDomainMapping) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

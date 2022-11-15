@@ -72,6 +72,14 @@ func validateCloudRunService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudRunService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudRunService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunService) validateSetAutogenerateRevisionNameParameters(val interface{}) error {
 	return nil
 }

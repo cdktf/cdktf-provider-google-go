@@ -64,6 +64,14 @@ func validateMonitoringCustomService_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateMonitoringCustomService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitoringCustomService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringCustomService) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

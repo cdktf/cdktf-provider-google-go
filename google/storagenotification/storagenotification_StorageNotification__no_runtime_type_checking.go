@@ -56,6 +56,14 @@ func validateStorageNotification_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStorageNotification_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageNotification_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageNotification) validateSetBucketParameters(val *string) error {
 	return nil
 }

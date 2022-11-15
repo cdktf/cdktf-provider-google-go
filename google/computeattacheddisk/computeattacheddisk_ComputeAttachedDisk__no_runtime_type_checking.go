@@ -60,6 +60,14 @@ func validateComputeAttachedDisk_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeAttachedDisk_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeAttachedDisk_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeAttachedDisk) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateBigqueryConnectionIamBinding_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateBigqueryConnectionIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBigqueryConnectionIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryConnectionIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

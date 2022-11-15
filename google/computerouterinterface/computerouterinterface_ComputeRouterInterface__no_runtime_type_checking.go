@@ -60,6 +60,14 @@ func validateComputeRouterInterface_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeRouterInterface_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeRouterInterface_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterInterface) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

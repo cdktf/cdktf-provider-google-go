@@ -64,6 +64,14 @@ func validateBigqueryRoutine_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBigqueryRoutine_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBigqueryRoutine_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryRoutine) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -119,6 +119,22 @@ func validateDataGoogleComputeRegionInstanceGroup_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDataGoogleComputeRegionInstanceGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataGoogleComputeRegionInstanceGroup_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeRegionInstanceGroup) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

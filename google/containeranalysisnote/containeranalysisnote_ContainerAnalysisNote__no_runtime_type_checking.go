@@ -68,6 +68,14 @@ func validateContainerAnalysisNote_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateContainerAnalysisNote_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateContainerAnalysisNote_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAnalysisNote) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

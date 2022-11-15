@@ -60,6 +60,14 @@ func validateIapClient_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIapClient_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIapClient_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IapClient) validateSetBrandParameters(val *string) error {
 	return nil
 }

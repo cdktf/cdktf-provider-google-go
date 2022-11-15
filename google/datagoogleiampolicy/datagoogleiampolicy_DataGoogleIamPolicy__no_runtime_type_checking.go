@@ -64,6 +64,14 @@ func validateDataGoogleIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataGoogleIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

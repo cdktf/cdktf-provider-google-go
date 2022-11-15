@@ -60,6 +60,14 @@ func validateActiveDirectoryDomainTrust_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateActiveDirectoryDomainTrust_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateActiveDirectoryDomainTrust_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ActiveDirectoryDomainTrust) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

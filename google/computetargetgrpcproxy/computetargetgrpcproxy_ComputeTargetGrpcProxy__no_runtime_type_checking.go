@@ -60,6 +60,14 @@ func validateComputeTargetGrpcProxy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeTargetGrpcProxy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeTargetGrpcProxy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeTargetGrpcProxy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

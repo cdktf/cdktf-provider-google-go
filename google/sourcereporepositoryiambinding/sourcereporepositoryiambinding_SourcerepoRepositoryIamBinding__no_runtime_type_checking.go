@@ -60,6 +60,14 @@ func validateSourcerepoRepositoryIamBinding_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateSourcerepoRepositoryIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSourcerepoRepositoryIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SourcerepoRepositoryIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

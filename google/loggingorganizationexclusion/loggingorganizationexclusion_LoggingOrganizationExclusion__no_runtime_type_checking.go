@@ -56,6 +56,14 @@ func validateLoggingOrganizationExclusion_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateLoggingOrganizationExclusion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLoggingOrganizationExclusion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingOrganizationExclusion) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

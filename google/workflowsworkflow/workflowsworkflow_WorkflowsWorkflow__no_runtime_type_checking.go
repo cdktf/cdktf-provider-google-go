@@ -60,6 +60,14 @@ func validateWorkflowsWorkflow_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWorkflowsWorkflow_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWorkflowsWorkflow_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkflowsWorkflow) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

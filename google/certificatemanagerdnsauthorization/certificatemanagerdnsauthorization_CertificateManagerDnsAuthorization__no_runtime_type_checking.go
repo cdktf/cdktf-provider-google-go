@@ -60,6 +60,14 @@ func validateCertificateManagerDnsAuthorization_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateCertificateManagerDnsAuthorization_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCertificateManagerDnsAuthorization_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateDataplexZone_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataplexZone_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataplexZone_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataplexZone) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

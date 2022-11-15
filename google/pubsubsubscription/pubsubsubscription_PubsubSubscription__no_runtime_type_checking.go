@@ -80,6 +80,14 @@ func validatePubsubSubscription_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePubsubSubscription_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePubsubSubscription_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PubsubSubscription) validateSetAckDeadlineSecondsParameters(val *float64) error {
 	return nil
 }

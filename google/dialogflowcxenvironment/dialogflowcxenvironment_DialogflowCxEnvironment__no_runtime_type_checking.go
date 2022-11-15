@@ -64,6 +64,14 @@ func validateDialogflowCxEnvironment_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDialogflowCxEnvironment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDialogflowCxEnvironment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxEnvironment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

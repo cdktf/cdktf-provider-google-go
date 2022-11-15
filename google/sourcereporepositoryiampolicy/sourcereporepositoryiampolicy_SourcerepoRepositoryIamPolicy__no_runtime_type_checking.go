@@ -56,6 +56,14 @@ func validateSourcerepoRepositoryIamPolicy_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateSourcerepoRepositoryIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSourcerepoRepositoryIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

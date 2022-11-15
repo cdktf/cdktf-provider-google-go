@@ -72,6 +72,14 @@ func validateComputeRegionNetworkEndpointGroup_IsConstructParameters(x interface
 	return nil
 }
 
+func validateComputeRegionNetworkEndpointGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeRegionNetworkEndpointGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionNetworkEndpointGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateComputeServiceAttachment_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateComputeServiceAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeServiceAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeServiceAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

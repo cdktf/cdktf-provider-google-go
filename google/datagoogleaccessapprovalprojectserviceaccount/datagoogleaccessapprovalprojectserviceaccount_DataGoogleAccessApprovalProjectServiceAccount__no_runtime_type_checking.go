@@ -56,6 +56,14 @@ func validateDataGoogleAccessApprovalProjectServiceAccount_IsConstructParameters
 	return nil
 }
 
+func validateDataGoogleAccessApprovalProjectServiceAccount_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleAccessApprovalProjectServiceAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleAccessApprovalProjectServiceAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

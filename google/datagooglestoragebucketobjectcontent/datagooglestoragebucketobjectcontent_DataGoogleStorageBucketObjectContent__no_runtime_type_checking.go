@@ -56,6 +56,14 @@ func validateDataGoogleStorageBucketObjectContent_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDataGoogleStorageBucketObjectContent_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleStorageBucketObjectContent_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleStorageBucketObjectContent) validateSetBucketParameters(val *string) error {
 	return nil
 }

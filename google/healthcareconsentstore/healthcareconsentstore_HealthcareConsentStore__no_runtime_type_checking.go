@@ -60,6 +60,14 @@ func validateHealthcareConsentStore_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateHealthcareConsentStore_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHealthcareConsentStore_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareConsentStore) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataGoogleSqlDatabaseInstance_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataGoogleSqlDatabaseInstance_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleSqlDatabaseInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) validateSetIdParameters(val *string) error {
 	return nil
 }

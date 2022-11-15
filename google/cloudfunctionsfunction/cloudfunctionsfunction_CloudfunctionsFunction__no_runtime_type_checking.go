@@ -76,6 +76,14 @@ func validateCloudfunctionsFunction_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudfunctionsFunction_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudfunctionsFunction_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfunctionsFunction) validateSetAvailableMemoryMbParameters(val *float64) error {
 	return nil
 }

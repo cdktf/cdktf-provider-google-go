@@ -76,6 +76,14 @@ func validateBillingBudget_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBillingBudget_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBillingBudget_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BillingBudget) validateSetBillingAccountParameters(val *string) error {
 	return nil
 }

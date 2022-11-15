@@ -60,6 +60,14 @@ func validateAccessContextManagerAccessPolicyIamBinding_IsConstructParameters(x 
 	return nil
 }
 
+func validateAccessContextManagerAccessPolicyIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAccessContextManagerAccessPolicyIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

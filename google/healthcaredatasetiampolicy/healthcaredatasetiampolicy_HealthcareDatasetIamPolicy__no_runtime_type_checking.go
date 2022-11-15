@@ -56,6 +56,14 @@ func validateHealthcareDatasetIamPolicy_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateHealthcareDatasetIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHealthcareDatasetIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareDatasetIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

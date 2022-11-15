@@ -56,6 +56,14 @@ func validateDataGoogleComputeDisk_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataGoogleComputeDisk_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleComputeDisk_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeDisk) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,14 @@ func validatePrivatecaCertificateTemplate_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validatePrivatecaCertificateTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePrivatecaCertificateTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivatecaCertificateTemplate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

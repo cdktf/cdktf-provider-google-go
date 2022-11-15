@@ -64,6 +64,14 @@ func validateDataLossPreventionDeidentifyTemplate_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDataLossPreventionDeidentifyTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataLossPreventionDeidentifyTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -119,6 +119,22 @@ func validateDataGoogleStorageObjectSignedUrl_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateDataGoogleStorageObjectSignedUrl_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataGoogleStorageObjectSignedUrl_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleStorageObjectSignedUrl) validateSetBucketParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

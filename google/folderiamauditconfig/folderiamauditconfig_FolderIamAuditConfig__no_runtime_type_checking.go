@@ -60,6 +60,14 @@ func validateFolderIamAuditConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFolderIamAuditConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFolderIamAuditConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FolderIamAuditConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

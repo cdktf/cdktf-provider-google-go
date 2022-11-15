@@ -68,6 +68,14 @@ func validateDataLossPreventionJobTrigger_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataLossPreventionJobTrigger_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataLossPreventionJobTrigger_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataLossPreventionJobTrigger) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

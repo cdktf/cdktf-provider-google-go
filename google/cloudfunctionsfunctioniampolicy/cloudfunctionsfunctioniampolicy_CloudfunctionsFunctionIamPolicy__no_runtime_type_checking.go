@@ -56,6 +56,14 @@ func validateCloudfunctionsFunctionIamPolicy_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateCloudfunctionsFunctionIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudfunctionsFunctionIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfunctionsFunctionIamPolicy) validateSetCloudFunctionParameters(val *string) error {
 	return nil
 }

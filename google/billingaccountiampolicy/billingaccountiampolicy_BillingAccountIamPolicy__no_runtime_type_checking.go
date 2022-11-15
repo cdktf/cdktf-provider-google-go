@@ -56,6 +56,14 @@ func validateBillingAccountIamPolicy_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateBillingAccountIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBillingAccountIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BillingAccountIamPolicy) validateSetBillingAccountIdParameters(val *string) error {
 	return nil
 }

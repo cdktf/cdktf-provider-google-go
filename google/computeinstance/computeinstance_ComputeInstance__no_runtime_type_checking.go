@@ -104,6 +104,14 @@ func validateComputeInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstance) validateSetAllowStoppingForUpdateParameters(val interface{}) error {
 	return nil
 }

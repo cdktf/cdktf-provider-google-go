@@ -2,10 +2,10 @@ package vertexaidataset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v3/vertexaidataset/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v4/vertexaidataset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -673,6 +673,44 @@ func VertexAiDataset_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.vertexAiDataset.VertexAiDataset",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VertexAiDataset_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVertexAiDataset_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.vertexAiDataset.VertexAiDataset",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VertexAiDataset_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVertexAiDataset_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.vertexAiDataset.VertexAiDataset",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

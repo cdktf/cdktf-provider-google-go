@@ -68,6 +68,14 @@ func validateComputeNodeTemplate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeNodeTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeNodeTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeNodeTemplate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

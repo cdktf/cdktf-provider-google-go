@@ -56,6 +56,14 @@ func validateBigtableTableIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBigtableTableIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBigtableTableIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigtableTableIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

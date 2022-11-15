@@ -60,6 +60,14 @@ func validateComputeInstanceGroupNamedPortA_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateComputeInstanceGroupNamedPortA_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeInstanceGroupNamedPortA_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

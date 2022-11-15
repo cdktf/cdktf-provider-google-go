@@ -92,6 +92,14 @@ func validateCloudbuildTrigger_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudbuildTrigger_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudbuildTrigger_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudbuildTrigger) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

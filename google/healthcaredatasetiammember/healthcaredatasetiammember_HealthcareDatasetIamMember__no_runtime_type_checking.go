@@ -60,6 +60,14 @@ func validateHealthcareDatasetIamMember_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateHealthcareDatasetIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateHealthcareDatasetIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareDatasetIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

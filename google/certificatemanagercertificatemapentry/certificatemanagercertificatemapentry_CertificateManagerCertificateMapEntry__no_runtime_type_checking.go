@@ -60,6 +60,14 @@ func validateCertificateManagerCertificateMapEntry_IsConstructParameters(x inter
 	return nil
 }
 
+func validateCertificateManagerCertificateMapEntry_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCertificateManagerCertificateMapEntry_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CertificateManagerCertificateMapEntry) validateSetCertificatesParameters(val *[]*string) error {
 	return nil
 }

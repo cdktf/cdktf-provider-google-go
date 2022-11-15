@@ -56,6 +56,14 @@ func validateDataGoogleTagsTagValue_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataGoogleTagsTagValue_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleTagsTagValue_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleTagsTagValue) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

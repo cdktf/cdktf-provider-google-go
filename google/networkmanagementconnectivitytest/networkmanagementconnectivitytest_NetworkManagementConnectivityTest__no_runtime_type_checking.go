@@ -68,6 +68,14 @@ func validateNetworkManagementConnectivityTest_IsConstructParameters(x interface
 	return nil
 }
 
+func validateNetworkManagementConnectivityTest_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkManagementConnectivityTest_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

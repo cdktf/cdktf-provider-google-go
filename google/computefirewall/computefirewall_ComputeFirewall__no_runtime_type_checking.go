@@ -72,6 +72,14 @@ func validateComputeFirewall_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeFirewall_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeFirewall_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeFirewall) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

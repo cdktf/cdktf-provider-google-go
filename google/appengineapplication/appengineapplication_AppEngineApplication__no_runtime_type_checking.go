@@ -68,6 +68,14 @@ func validateAppEngineApplication_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppEngineApplication_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppEngineApplication_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppEngineApplication) validateSetAuthDomainParameters(val *string) error {
 	return nil
 }

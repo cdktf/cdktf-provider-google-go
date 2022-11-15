@@ -60,6 +60,14 @@ func validateFirebaserulesRelease_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFirebaserulesRelease_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFirebaserulesRelease_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FirebaserulesRelease) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

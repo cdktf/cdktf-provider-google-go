@@ -60,6 +60,14 @@ func validatePrivatecaCertificateTemplateIamMember_IsConstructParameters(x inter
 	return nil
 }
 
+func validatePrivatecaCertificateTemplateIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePrivatecaCertificateTemplateIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateSetCertificateTemplateParameters(val *string) error {
 	return nil
 }

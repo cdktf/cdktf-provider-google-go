@@ -72,6 +72,14 @@ func validateMonitoringAlertPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMonitoringAlertPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMonitoringAlertPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringAlertPolicy) validateSetCombinerParameters(val *string) error {
 	return nil
 }

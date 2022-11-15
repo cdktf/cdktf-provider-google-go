@@ -76,6 +76,14 @@ func validateSqlDatabaseInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSqlDatabaseInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSqlDatabaseInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstance) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

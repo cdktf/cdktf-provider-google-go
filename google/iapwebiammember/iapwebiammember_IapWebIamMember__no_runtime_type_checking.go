@@ -60,6 +60,14 @@ func validateIapWebIamMember_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIapWebIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIapWebIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IapWebIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package datagooglecomputerouterstatus
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v3/datagooglecomputerouterstatus/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v4/datagooglecomputerouterstatus/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -506,6 +506,44 @@ func DataGoogleComputeRouterStatus_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataGoogleComputeRouterStatus_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataGoogleComputeRouterStatus_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataGoogleComputeRouterStatus_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataGoogleComputeRouterStatus_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

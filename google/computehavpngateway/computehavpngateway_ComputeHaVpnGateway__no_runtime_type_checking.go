@@ -64,6 +64,14 @@ func validateComputeHaVpnGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateComputeHaVpnGateway_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComputeHaVpnGateway_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeHaVpnGateway) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

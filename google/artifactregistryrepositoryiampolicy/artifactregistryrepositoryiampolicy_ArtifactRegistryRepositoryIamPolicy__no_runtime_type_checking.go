@@ -56,6 +56,14 @@ func validateArtifactRegistryRepositoryIamPolicy_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateArtifactRegistryRepositoryIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateArtifactRegistryRepositoryIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ArtifactRegistryRepositoryIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

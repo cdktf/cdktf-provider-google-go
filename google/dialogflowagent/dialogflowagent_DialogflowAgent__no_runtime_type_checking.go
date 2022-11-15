@@ -60,6 +60,14 @@ func validateDialogflowAgent_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDialogflowAgent_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDialogflowAgent_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowAgent) validateSetApiVersionParameters(val *string) error {
 	return nil
 }

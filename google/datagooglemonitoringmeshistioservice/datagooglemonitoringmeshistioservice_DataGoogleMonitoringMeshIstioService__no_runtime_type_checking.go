@@ -56,6 +56,14 @@ func validateDataGoogleMonitoringMeshIstioService_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDataGoogleMonitoringMeshIstioService_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleMonitoringMeshIstioService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleMonitoringMeshIstioService) validateSetIdParameters(val *string) error {
 	return nil
 }

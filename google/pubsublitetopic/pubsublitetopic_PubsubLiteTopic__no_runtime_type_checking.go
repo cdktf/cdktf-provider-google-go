@@ -72,6 +72,14 @@ func validatePubsubLiteTopic_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePubsubLiteTopic_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePubsubLiteTopic_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PubsubLiteTopic) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

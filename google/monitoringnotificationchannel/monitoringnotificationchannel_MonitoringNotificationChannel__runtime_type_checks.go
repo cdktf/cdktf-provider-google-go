@@ -141,6 +141,22 @@ func validateMonitoringNotificationChannel_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateMonitoringNotificationChannel_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateMonitoringNotificationChannel_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringNotificationChannel) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

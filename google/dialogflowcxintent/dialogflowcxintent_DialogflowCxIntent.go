@@ -2,10 +2,10 @@ package dialogflowcxintent
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v3/dialogflowcxintent/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v4/dialogflowcxintent/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -746,6 +746,44 @@ func DialogflowCxIntent_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntent",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DialogflowCxIntent_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDialogflowCxIntent_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntent",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DialogflowCxIntent_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDialogflowCxIntent_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntent",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)
