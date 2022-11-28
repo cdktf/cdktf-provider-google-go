@@ -80,6 +80,10 @@ func validateEventarcTrigger_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_EventarcTrigger) validateSetChannelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventarcTrigger) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

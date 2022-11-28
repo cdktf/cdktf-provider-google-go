@@ -10,6 +10,8 @@ import (
 
 type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference interface {
 	cdktf.ComplexObject
+	AddSignatures() NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignaturesOutputReference
+	AddSignaturesInput() *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignatures
 	CacheKeyPolicy() NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyCacheKeyPolicyOutputReference
 	CacheKeyPolicyInput() *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyCacheKeyPolicy
 	CacheMode() *string
@@ -52,9 +54,14 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPol
 	SignedRequestKeyset() *string
 	SetSignedRequestKeyset(val *string)
 	SignedRequestKeysetInput() *string
+	SignedRequestMaximumExpirationTtl() *string
+	SetSignedRequestMaximumExpirationTtl(val *string)
+	SignedRequestMaximumExpirationTtlInput() *string
 	SignedRequestMode() *string
 	SetSignedRequestMode(val *string)
 	SignedRequestModeInput() *string
+	SignedTokenOptions() NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptionsOutputReference
+	SignedTokenOptionsInput() *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptions
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -87,7 +94,10 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPol
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAddSignatures(value *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignatures)
 	PutCacheKeyPolicy(value *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyCacheKeyPolicy)
+	PutSignedTokenOptions(value *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptions)
+	ResetAddSignatures()
 	ResetCacheKeyPolicy()
 	ResetCacheMode()
 	ResetClientTtl()
@@ -96,7 +106,9 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPol
 	ResetNegativeCaching()
 	ResetNegativeCachingPolicy()
 	ResetSignedRequestKeyset()
+	ResetSignedRequestMaximumExpirationTtl()
 	ResetSignedRequestMode()
+	ResetSignedTokenOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -110,6 +122,26 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPol
 // The jsii proxy struct for NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference
 type jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference) AddSignatures() NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignaturesOutputReference {
+	var returns NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignaturesOutputReference
+	_jsii_.Get(
+		j,
+		"addSignatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference) AddSignaturesInput() *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignatures {
+	var returns *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignatures
+	_jsii_.Get(
+		j,
+		"addSignaturesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference) CacheKeyPolicy() NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyCacheKeyPolicyOutputReference {
@@ -322,6 +354,26 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRou
 	return returns
 }
 
+func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference) SignedRequestMaximumExpirationTtl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"signedRequestMaximumExpirationTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference) SignedRequestMaximumExpirationTtlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"signedRequestMaximumExpirationTtlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference) SignedRequestMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -337,6 +389,26 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRou
 	_jsii_.Get(
 		j,
 		"signedRequestModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference) SignedTokenOptions() NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptionsOutputReference {
+	var returns NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"signedTokenOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference) SignedTokenOptionsInput() *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptions {
+	var returns *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptions
+	_jsii_.Get(
+		j,
+		"signedTokenOptionsInput",
 		&returns,
 	)
 	return returns
@@ -496,6 +568,17 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRou
 	_jsii_.Set(
 		j,
 		"signedRequestKeyset",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference)SetSignedRequestMaximumExpirationTtl(val *string) {
+	if err := j.validateSetSignedRequestMaximumExpirationTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"signedRequestMaximumExpirationTtl",
 		val,
 	)
 }
@@ -719,6 +802,17 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRou
 	return returns
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference) PutAddSignatures(value *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignatures) {
+	if err := n.validatePutAddSignaturesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putAddSignatures",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference) PutCacheKeyPolicy(value *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyCacheKeyPolicy) {
 	if err := n.validatePutCacheKeyPolicyParameters(value); err != nil {
 		panic(err)
@@ -727,6 +821,25 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRou
 		n,
 		"putCacheKeyPolicy",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference) PutSignedTokenOptions(value *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptions) {
+	if err := n.validatePutSignedTokenOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putSignedTokenOptions",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference) ResetAddSignatures() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAddSignatures",
+		nil, // no parameters
 	)
 }
 
@@ -794,10 +907,26 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRou
 	)
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference) ResetSignedRequestMaximumExpirationTtl() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSignedRequestMaximumExpirationTtl",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference) ResetSignedRequestMode() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetSignedRequestMode",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyOutputReference) ResetSignedTokenOptions() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSignedTokenOptions",
 		nil, // no parameters
 	)
 }

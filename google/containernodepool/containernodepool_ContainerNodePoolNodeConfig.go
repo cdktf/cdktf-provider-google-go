@@ -42,6 +42,12 @@ type ContainerNodePoolNodeConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_node_pool#local_ssd_count ContainerNodePool#local_ssd_count}
 	LocalSsdCount *float64 `field:"optional" json:"localSsdCount" yaml:"localSsdCount"`
+	// Type of logging agent that is used as the default value for node pools in the cluster.
+	//
+	// Valid values include DEFAULT and MAX_THROUGHPUT.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_node_pool#logging_variant ContainerNodePool#logging_variant}
+	LoggingVariant *string `field:"optional" json:"loggingVariant" yaml:"loggingVariant"`
 	// The name of a Google Compute Engine machine type.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_node_pool#machine_type ContainerNodePool#machine_type}

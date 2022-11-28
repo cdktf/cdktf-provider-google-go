@@ -60,6 +60,10 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validateSetExecutionTimeoutParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

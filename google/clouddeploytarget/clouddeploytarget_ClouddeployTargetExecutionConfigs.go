@@ -12,6 +12,12 @@ type ClouddeployTargetExecutionConfigs struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/clouddeploy_target#artifact_storage ClouddeployTarget#artifact_storage}
 	ArtifactStorage *string `field:"optional" json:"artifactStorage" yaml:"artifactStorage"`
+	// Optional.
+	//
+	// Execution timeout for a Cloud Build Execution. This must be between 10m and 24h in seconds format. If unspecified, a default timeout of 1h is used.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/clouddeploy_target#execution_timeout ClouddeployTarget#execution_timeout}
+	ExecutionTimeout *string `field:"optional" json:"executionTimeout" yaml:"executionTimeout"`
 	// Optional. Google service account to use for execution. If unspecified, the project execution service account (-compute@developer.gserviceaccount.com) is used.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/clouddeploy_target#service_account ClouddeployTarget#service_account}

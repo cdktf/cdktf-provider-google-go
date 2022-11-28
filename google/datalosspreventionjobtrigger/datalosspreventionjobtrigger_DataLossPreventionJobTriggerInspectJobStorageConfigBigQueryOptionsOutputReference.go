@@ -29,6 +29,15 @@ type DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputRef
 	Fqn() *string
 	InternalValue() *DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions
 	SetInternalValue(val *DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions)
+	RowsLimit() *float64
+	SetRowsLimit(val *float64)
+	RowsLimitInput() *float64
+	RowsLimitPercent() *float64
+	SetRowsLimitPercent(val *float64)
+	RowsLimitPercentInput() *float64
+	SampleMethod() *string
+	SetSampleMethod(val *string)
+	SampleMethodInput() *string
 	TableReference() DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceOutputReference
 	TableReferenceInput() *DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReference
 	// Experimental.
@@ -64,6 +73,9 @@ type DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputRef
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutTableReference(value *DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReference)
+	ResetRowsLimit()
+	ResetRowsLimitPercent()
+	ResetSampleMethod()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,6 +136,66 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) RowsLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rowsLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) RowsLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rowsLimitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) RowsLimitPercent() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rowsLimitPercent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) RowsLimitPercentInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rowsLimitPercentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) SampleMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sampleMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) SampleMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sampleMethodInput",
 		&returns,
 	)
 	return returns
@@ -226,6 +298,39 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference)SetRowsLimit(val *float64) {
+	if err := j.validateSetRowsLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rowsLimit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference)SetRowsLimitPercent(val *float64) {
+	if err := j.validateSetRowsLimitPercentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rowsLimitPercent",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference)SetSampleMethod(val *string) {
+	if err := j.validateSetSampleMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sampleMethod",
 		val,
 	)
 }
@@ -446,6 +551,30 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
 		d,
 		"putTableReference",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) ResetRowsLimit() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRowsLimit",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) ResetRowsLimitPercent() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRowsLimitPercent",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) ResetSampleMethod() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSampleMethod",
+		nil, // no parameters
 	)
 }
 

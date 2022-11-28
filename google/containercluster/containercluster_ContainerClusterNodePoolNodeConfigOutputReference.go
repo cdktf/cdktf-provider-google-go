@@ -53,6 +53,9 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	LocalSsdCount() *float64
 	SetLocalSsdCount(val *float64)
 	LocalSsdCountInput() *float64
+	LoggingVariant() *string
+	SetLoggingVariant(val *string)
+	LoggingVariantInput() *string
 	MachineType() *string
 	SetMachineType(val *string)
 	MachineTypeInput() *string
@@ -136,6 +139,7 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetImageType()
 	ResetLabels()
 	ResetLocalSsdCount()
+	ResetLoggingVariant()
 	ResetMachineType()
 	ResetMetadata()
 	ResetMinCpuPlatform()
@@ -389,6 +393,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) LocalSsdCo
 	_jsii_.Get(
 		j,
 		"localSsdCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) LoggingVariant() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loggingVariant",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) LoggingVariantInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loggingVariantInput",
 		&returns,
 	)
 	return returns
@@ -797,6 +821,17 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference)SetLocalSsd
 	_jsii_.Set(
 		j,
 		"localSsdCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference)SetLoggingVariant(val *string) {
+	if err := j.validateSetLoggingVariantParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"loggingVariant",
 		val,
 	)
 }
@@ -1253,6 +1288,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetLocal
 	_jsii_.InvokeVoid(
 		c,
 		"resetLocalSsdCount",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetLoggingVariant() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLoggingVariant",
 		nil, // no parameters
 	)
 }

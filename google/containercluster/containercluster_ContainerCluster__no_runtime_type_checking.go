@@ -128,6 +128,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutNodePoolParameters(value interfa
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutNodePoolDefaultsParameters(value *ContainerClusterNodePoolDefaults) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutNotificationConfigParameters(value *ContainerClusterNotificationConfig) error {
 	return nil
 }
@@ -205,6 +209,10 @@ func (j *jsiiProxy_ContainerCluster) validateSetEnableIntranodeVisibilityParamet
 }
 
 func (j *jsiiProxy_ContainerCluster) validateSetEnableKubernetesAlphaParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerCluster) validateSetEnableL4IlbSubsettingParameters(val interface{}) error {
 	return nil
 }
 

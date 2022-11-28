@@ -44,6 +44,10 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) validatePutPubSubParameters(value *DataLossPreventionJobTriggerInspectJobActionsPubSub) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) validatePutSaveFindingsParameters(value *DataLossPreventionJobTriggerInspectJobActionsSaveFindings) error {
 	return nil
 }

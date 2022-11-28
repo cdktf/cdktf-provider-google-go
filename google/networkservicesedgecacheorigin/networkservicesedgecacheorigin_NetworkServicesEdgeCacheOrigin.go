@@ -12,6 +12,8 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/google/r/network_services_edge_cache_origin google_network_services_edge_cache_origin}.
 type NetworkServicesEdgeCacheOrigin interface {
 	cdktf.TerraformResource
+	AwsV4Authentication() NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference
+	AwsV4AuthenticationInput() *NetworkServicesEdgeCacheOriginAwsV4Authentication
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -120,8 +122,10 @@ type NetworkServicesEdgeCacheOrigin interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAwsV4Authentication(value *NetworkServicesEdgeCacheOriginAwsV4Authentication)
 	PutTimeout(value *NetworkServicesEdgeCacheOriginTimeout)
 	PutTimeouts(value *NetworkServicesEdgeCacheOriginTimeouts)
+	ResetAwsV4Authentication()
 	ResetDescription()
 	ResetFailoverOrigin()
 	ResetId()
@@ -149,6 +153,26 @@ type NetworkServicesEdgeCacheOrigin interface {
 // The jsii proxy struct for NetworkServicesEdgeCacheOrigin
 type jsiiProxy_NetworkServicesEdgeCacheOrigin struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) AwsV4Authentication() NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference {
+	var returns NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference
+	_jsii_.Get(
+		j,
+		"awsV4Authentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) AwsV4AuthenticationInput() *NetworkServicesEdgeCacheOriginAwsV4Authentication {
+	var returns *NetworkServicesEdgeCacheOriginAwsV4Authentication
+	_jsii_.Get(
+		j,
+		"awsV4AuthenticationInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) CdktfStack() cdktf.TerraformStack {
@@ -1053,6 +1077,17 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) OverrideLogicalId(newLogicalI
 	)
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) PutAwsV4Authentication(value *NetworkServicesEdgeCacheOriginAwsV4Authentication) {
+	if err := n.validatePutAwsV4AuthenticationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putAwsV4Authentication",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) PutTimeout(value *NetworkServicesEdgeCacheOriginTimeout) {
 	if err := n.validatePutTimeoutParameters(value); err != nil {
 		panic(err)
@@ -1072,6 +1107,14 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) PutTimeouts(value *NetworkSer
 		n,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetAwsV4Authentication() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAwsV4Authentication",
+		nil, // no parameters
 	)
 }
 

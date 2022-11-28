@@ -100,6 +100,10 @@ func (j *jsiiProxy_ComputeRouterInterface) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterInterface) validateSetRedundantInterfaceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterInterface) validateSetRegionParameters(val *string) error {
 	return nil
 }

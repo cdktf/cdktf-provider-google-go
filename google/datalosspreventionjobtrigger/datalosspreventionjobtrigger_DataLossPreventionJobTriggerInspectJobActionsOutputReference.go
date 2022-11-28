@@ -29,6 +29,8 @@ type DataLossPreventionJobTriggerInspectJobActionsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	PubSub() DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference
+	PubSubInput() *DataLossPreventionJobTriggerInspectJobActionsPubSub
 	SaveFindings() DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference
 	SaveFindingsInput() *DataLossPreventionJobTriggerInspectJobActionsSaveFindings
 	// Experimental.
@@ -63,7 +65,10 @@ type DataLossPreventionJobTriggerInspectJobActionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPubSub(value *DataLossPreventionJobTriggerInspectJobActionsPubSub)
 	PutSaveFindings(value *DataLossPreventionJobTriggerInspectJobActionsSaveFindings)
+	ResetPubSub()
+	ResetSaveFindings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,6 +129,26 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference)
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PubSub() DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference {
+	var returns DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference
+	_jsii_.Get(
+		j,
+		"pubSub",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PubSubInput() *DataLossPreventionJobTriggerInspectJobActionsPubSub {
+	var returns *DataLossPreventionJobTriggerInspectJobActionsPubSub
+	_jsii_.Get(
+		j,
+		"pubSubInput",
 		&returns,
 	)
 	return returns
@@ -438,6 +463,17 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference)
 	return returns
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PutPubSub(value *DataLossPreventionJobTriggerInspectJobActionsPubSub) {
+	if err := d.validatePutPubSubParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPubSub",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PutSaveFindings(value *DataLossPreventionJobTriggerInspectJobActionsSaveFindings) {
 	if err := d.validatePutSaveFindingsParameters(value); err != nil {
 		panic(err)
@@ -446,6 +482,22 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference)
 		d,
 		"putSaveFindings",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) ResetPubSub() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPubSub",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) ResetSaveFindings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSaveFindings",
+		nil, // no parameters
 	)
 }
 

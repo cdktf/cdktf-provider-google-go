@@ -71,6 +71,7 @@ type ContainerClusterClusterAutoscalingOutputReference interface {
 	PutAutoProvisioningDefaults(value *ContainerClusterClusterAutoscalingAutoProvisioningDefaults)
 	PutResourceLimits(value interface{})
 	ResetAutoProvisioningDefaults()
+	ResetEnabled()
 	ResetResourceLimits()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -523,6 +524,14 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) ResetAutoP
 	_jsii_.InvokeVoid(
 		c,
 		"resetAutoProvisioningDefaults",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnabled",
 		nil, // no parameters
 	)
 }

@@ -44,6 +44,14 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validatePutManagementParameters(value *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validatePutShieldedInstanceConfigParameters(value *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

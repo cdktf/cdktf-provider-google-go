@@ -45,6 +45,9 @@ type GoogleProvider interface {
 	Batching() *GoogleProviderBatching
 	SetBatching(val *GoogleProviderBatching)
 	BatchingInput() *GoogleProviderBatching
+	BeyondcorpCustomEndpoint() *string
+	SetBeyondcorpCustomEndpoint(val *string)
+	BeyondcorpCustomEndpointInput() *string
 	BigqueryAnalyticsHubCustomEndpoint() *string
 	SetBigqueryAnalyticsHubCustomEndpoint(val *string)
 	BigqueryAnalyticsHubCustomEndpointInput() *string
@@ -384,6 +387,7 @@ type GoogleProvider interface {
 	ResetArtifactRegistryCustomEndpoint()
 	ResetAssuredWorkloadsCustomEndpoint()
 	ResetBatching()
+	ResetBeyondcorpCustomEndpoint()
 	ResetBigqueryAnalyticsHubCustomEndpoint()
 	ResetBigqueryConnectionCustomEndpoint()
 	ResetBigQueryCustomEndpoint()
@@ -718,6 +722,26 @@ func (j *jsiiProxy_GoogleProvider) BatchingInput() *GoogleProviderBatching {
 	_jsii_.Get(
 		j,
 		"batchingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) BeyondcorpCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"beyondcorpCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) BeyondcorpCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"beyondcorpCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -2964,6 +2988,14 @@ func (j *jsiiProxy_GoogleProvider)SetBatching(val *GoogleProviderBatching) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetBeyondcorpCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"beyondcorpCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetBigqueryAnalyticsHubCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3965,6 +3997,14 @@ func (g *jsiiProxy_GoogleProvider) ResetBatching() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetBatching",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetBeyondcorpCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBeyondcorpCustomEndpoint",
 		nil, // no parameters
 	)
 }

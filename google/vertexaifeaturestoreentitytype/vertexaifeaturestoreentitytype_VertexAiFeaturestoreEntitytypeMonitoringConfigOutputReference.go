@@ -10,6 +10,8 @@ import (
 
 type VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference interface {
 	cdktf.ComplexObject
+	CategoricalThresholdConfig() VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference
+	CategoricalThresholdConfigInput() *VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -27,8 +29,12 @@ type VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	ImportFeaturesAnalysis() VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference
+	ImportFeaturesAnalysisInput() *VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis
 	InternalValue() *VertexAiFeaturestoreEntitytypeMonitoringConfig
 	SetInternalValue(val *VertexAiFeaturestoreEntitytypeMonitoringConfig)
+	NumericalThresholdConfig() VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference
+	NumericalThresholdConfigInput() *VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig
 	SnapshotAnalysis() VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference
 	SnapshotAnalysisInput() *VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis
 	// Experimental.
@@ -63,7 +69,13 @@ type VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCategoricalThresholdConfig(value *VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig)
+	PutImportFeaturesAnalysis(value *VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis)
+	PutNumericalThresholdConfig(value *VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig)
 	PutSnapshotAnalysis(value *VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis)
+	ResetCategoricalThresholdConfig()
+	ResetImportFeaturesAnalysis()
+	ResetNumericalThresholdConfig()
 	ResetSnapshotAnalysis()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -78,6 +90,26 @@ type VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference interface {
 // The jsii proxy struct for VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference
 type jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) CategoricalThresholdConfig() VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference {
+	var returns VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference
+	_jsii_.Get(
+		j,
+		"categoricalThresholdConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) CategoricalThresholdConfigInput() *VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig {
+	var returns *VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig
+	_jsii_.Get(
+		j,
+		"categoricalThresholdConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -120,11 +152,51 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference
 	return returns
 }
 
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) ImportFeaturesAnalysis() VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference {
+	var returns VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference
+	_jsii_.Get(
+		j,
+		"importFeaturesAnalysis",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) ImportFeaturesAnalysisInput() *VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis {
+	var returns *VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis
+	_jsii_.Get(
+		j,
+		"importFeaturesAnalysisInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) InternalValue() *VertexAiFeaturestoreEntitytypeMonitoringConfig {
 	var returns *VertexAiFeaturestoreEntitytypeMonitoringConfig
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) NumericalThresholdConfig() VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference {
+	var returns VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference
+	_jsii_.Get(
+		j,
+		"numericalThresholdConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) NumericalThresholdConfigInput() *VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig {
+	var returns *VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig
+	_jsii_.Get(
+		j,
+		"numericalThresholdConfigInput",
 		&returns,
 	)
 	return returns
@@ -439,6 +511,39 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference
 	return returns
 }
 
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) PutCategoricalThresholdConfig(value *VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig) {
+	if err := v.validatePutCategoricalThresholdConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putCategoricalThresholdConfig",
+		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) PutImportFeaturesAnalysis(value *VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis) {
+	if err := v.validatePutImportFeaturesAnalysisParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putImportFeaturesAnalysis",
+		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) PutNumericalThresholdConfig(value *VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig) {
+	if err := v.validatePutNumericalThresholdConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putNumericalThresholdConfig",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) PutSnapshotAnalysis(value *VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis) {
 	if err := v.validatePutSnapshotAnalysisParameters(value); err != nil {
 		panic(err)
@@ -447,6 +552,30 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference
 		v,
 		"putSnapshotAnalysis",
 		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) ResetCategoricalThresholdConfig() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetCategoricalThresholdConfig",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) ResetImportFeaturesAnalysis() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetImportFeaturesAnalysis",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) ResetNumericalThresholdConfig() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetNumericalThresholdConfig",
+		nil, // no parameters
 	)
 }
 

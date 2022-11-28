@@ -33,8 +33,10 @@ type DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputR
 	ImageType() *string
 	InternalValue() *DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaults
 	SetInternalValue(val *DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaults)
+	Management() DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementList
 	OauthScopes() *[]*string
 	ServiceAccount() *string
+	ShieldedInstanceConfig() DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -172,6 +174,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningD
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) Management() DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementList {
+	var returns DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementList
+	_jsii_.Get(
+		j,
+		"management",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) OauthScopes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -187,6 +199,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningD
 	_jsii_.Get(
 		j,
 		"serviceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ShieldedInstanceConfig() DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigList {
+	var returns DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigList
+	_jsii_.Get(
+		j,
+		"shieldedInstanceConfig",
 		&returns,
 	)
 	return returns

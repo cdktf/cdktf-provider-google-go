@@ -28,6 +28,8 @@ type GoogleProviderConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#batching GoogleProvider#batching}
 	Batching *GoogleProviderBatching `field:"optional" json:"batching" yaml:"batching"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#beyondcorp_custom_endpoint GoogleProvider#beyondcorp_custom_endpoint}.
+	BeyondcorpCustomEndpoint *string `field:"optional" json:"beyondcorpCustomEndpoint" yaml:"beyondcorpCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#bigquery_analytics_hub_custom_endpoint GoogleProvider#bigquery_analytics_hub_custom_endpoint}.
 	BigqueryAnalyticsHubCustomEndpoint *string `field:"optional" json:"bigqueryAnalyticsHubCustomEndpoint" yaml:"bigqueryAnalyticsHubCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#bigquery_connection_custom_endpoint GoogleProvider#bigquery_connection_custom_endpoint}.

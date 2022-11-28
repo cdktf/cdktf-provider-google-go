@@ -64,6 +64,10 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) validateSetManagedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

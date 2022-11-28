@@ -14,6 +14,10 @@ type EventarcTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Channel() *string
+	SetChannel(val *string)
+	ChannelInput() *string
+	Conditions() cdktf.StringMap
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -117,6 +121,7 @@ type EventarcTrigger interface {
 	PutMatchingCriteria(value interface{})
 	PutTimeouts(value *EventarcTriggerTimeouts)
 	PutTransport(value *EventarcTriggerTransport)
+	ResetChannel()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -146,6 +151,36 @@ func (j *jsiiProxy_EventarcTrigger) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventarcTrigger) Channel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"channel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventarcTrigger) ChannelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"channelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventarcTrigger) Conditions() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"conditions",
 		&returns,
 	)
 	return returns
@@ -568,6 +603,17 @@ func NewEventarcTrigger_Override(e EventarcTrigger, scope constructs.Construct, 
 		"@cdktf/provider-google.eventarcTrigger.EventarcTrigger",
 		[]interface{}{scope, id, config},
 		e,
+	)
+}
+
+func (j *jsiiProxy_EventarcTrigger)SetChannel(val *string) {
+	if err := j.validateSetChannelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"channel",
+		val,
 	)
 }
 
@@ -1009,6 +1055,14 @@ func (e *jsiiProxy_EventarcTrigger) PutTransport(value *EventarcTriggerTransport
 		e,
 		"putTransport",
 		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EventarcTrigger) ResetChannel() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetChannel",
+		nil, // no parameters
 	)
 }
 

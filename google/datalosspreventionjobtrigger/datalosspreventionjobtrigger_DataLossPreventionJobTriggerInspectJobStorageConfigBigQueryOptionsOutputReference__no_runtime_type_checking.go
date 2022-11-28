@@ -64,6 +64,18 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
 	return nil
 }
 
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) validateSetRowsLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) validateSetRowsLimitPercentParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) validateSetSampleMethodParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

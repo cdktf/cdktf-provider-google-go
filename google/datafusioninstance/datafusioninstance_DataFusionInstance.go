@@ -37,6 +37,9 @@ type DataFusionInstance interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EnableRbac() interface{}
+	SetEnableRbac(val interface{})
+	EnableRbacInput() interface{}
 	EnableStackdriverLogging() interface{}
 	SetEnableStackdriverLogging(val interface{})
 	EnableStackdriverLoggingInput() interface{}
@@ -141,6 +144,7 @@ type DataFusionInstance interface {
 	ResetCryptoKeyConfig()
 	ResetDataprocServiceAccount()
 	ResetDescription()
+	ResetEnableRbac()
 	ResetEnableStackdriverLogging()
 	ResetEnableStackdriverMonitoring()
 	ResetId()
@@ -285,6 +289,26 @@ func (j *jsiiProxy_DataFusionInstance) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFusionInstance) EnableRbac() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableRbac",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFusionInstance) EnableRbacInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableRbacInput",
 		&returns,
 	)
 	return returns
@@ -799,6 +823,17 @@ func (j *jsiiProxy_DataFusionInstance)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DataFusionInstance)SetEnableRbac(val interface{}) {
+	if err := j.validateSetEnableRbacParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableRbac",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataFusionInstance)SetEnableStackdriverLogging(val interface{}) {
 	if err := j.validateSetEnableStackdriverLoggingParameters(val); err != nil {
 		panic(err)
@@ -1277,6 +1312,14 @@ func (d *jsiiProxy_DataFusionInstance) ResetDescription() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFusionInstance) ResetEnableRbac() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnableRbac",
 		nil, // no parameters
 	)
 }

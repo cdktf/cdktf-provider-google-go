@@ -32,6 +32,9 @@ type SqlDatabaseInstanceSettingsInsightsConfigOutputReference interface {
 	QueryInsightsEnabled() interface{}
 	SetQueryInsightsEnabled(val interface{})
 	QueryInsightsEnabledInput() interface{}
+	QueryPlansPerMinute() *float64
+	SetQueryPlansPerMinute(val *float64)
+	QueryPlansPerMinuteInput() *float64
 	QueryStringLength() *float64
 	SetQueryStringLength(val *float64)
 	QueryStringLengthInput() *float64
@@ -74,6 +77,7 @@ type SqlDatabaseInstanceSettingsInsightsConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetQueryInsightsEnabled()
+	ResetQueryPlansPerMinute()
 	ResetQueryStringLength()
 	ResetRecordApplicationTags()
 	ResetRecordClientAddress()
@@ -157,6 +161,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Que
 	_jsii_.Get(
 		j,
 		"queryInsightsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) QueryPlansPerMinute() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"queryPlansPerMinute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) QueryPlansPerMinuteInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"queryPlansPerMinuteInput",
 		&returns,
 	)
 	return returns
@@ -310,6 +334,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetQ
 	_jsii_.Set(
 		j,
 		"queryInsightsEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference)SetQueryPlansPerMinute(val *float64) {
+	if err := j.validateSetQueryPlansPerMinuteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"queryPlansPerMinute",
 		val,
 	)
 }
@@ -559,6 +594,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) Res
 	_jsii_.InvokeVoid(
 		s,
 		"resetQueryInsightsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) ResetQueryPlansPerMinute() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetQueryPlansPerMinute",
 		nil, // no parameters
 	)
 }

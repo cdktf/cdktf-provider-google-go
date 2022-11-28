@@ -138,6 +138,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberProperty{JsiiProperty: "threadsPerCore", GoGetter: "ThreadsPerCore"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "visibleCoreCount", GoGetter: "VisibleCoreCount"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesOutputReference{}

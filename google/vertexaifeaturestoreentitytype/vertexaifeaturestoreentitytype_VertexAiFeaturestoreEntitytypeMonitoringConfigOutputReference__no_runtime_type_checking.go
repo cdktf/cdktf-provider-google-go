@@ -44,6 +44,18 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) validatePutCategoricalThresholdConfigParameters(value *VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) validatePutImportFeaturesAnalysisParameters(value *VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) validatePutNumericalThresholdConfigParameters(value *VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) validatePutSnapshotAnalysisParameters(value *VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis) error {
 	return nil
 }

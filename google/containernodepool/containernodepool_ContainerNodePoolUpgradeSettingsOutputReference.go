@@ -10,6 +10,8 @@ import (
 
 type ContainerNodePoolUpgradeSettingsOutputReference interface {
 	cdktf.ComplexObject
+	BlueGreenSettings() ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference
+	BlueGreenSettingsInput() *ContainerNodePoolUpgradeSettingsBlueGreenSettings
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,6 +37,9 @@ type ContainerNodePoolUpgradeSettingsOutputReference interface {
 	MaxUnavailable() *float64
 	SetMaxUnavailable(val *float64)
 	MaxUnavailableInput() *float64
+	Strategy() *string
+	SetStrategy(val *string)
+	StrategyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +72,11 @@ type ContainerNodePoolUpgradeSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutBlueGreenSettings(value *ContainerNodePoolUpgradeSettingsBlueGreenSettings)
+	ResetBlueGreenSettings()
+	ResetMaxSurge()
+	ResetMaxUnavailable()
+	ResetStrategy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -80,6 +90,26 @@ type ContainerNodePoolUpgradeSettingsOutputReference interface {
 // The jsii proxy struct for ContainerNodePoolUpgradeSettingsOutputReference
 type jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) BlueGreenSettings() ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference {
+	var returns ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"blueGreenSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) BlueGreenSettingsInput() *ContainerNodePoolUpgradeSettingsBlueGreenSettings {
+	var returns *ContainerNodePoolUpgradeSettingsBlueGreenSettings
+	_jsii_.Get(
+		j,
+		"blueGreenSettingsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) ComplexObjectIndex() interface{} {
@@ -167,6 +197,26 @@ func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) MaxUnavailab
 	_jsii_.Get(
 		j,
 		"maxUnavailableInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) Strategy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"strategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) StrategyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"strategyInput",
 		&returns,
 	)
 	return returns
@@ -271,6 +321,17 @@ func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference)SetMaxUnavail
 	_jsii_.Set(
 		j,
 		"maxUnavailable",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference)SetStrategy(val *string) {
+	if err := j.validateSetStrategyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"strategy",
 		val,
 	)
 }
@@ -481,6 +542,49 @@ func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) PutBlueGreenSettings(value *ContainerNodePoolUpgradeSettingsBlueGreenSettings) {
+	if err := c.validatePutBlueGreenSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putBlueGreenSettings",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) ResetBlueGreenSettings() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBlueGreenSettings",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) ResetMaxSurge() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaxSurge",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) ResetMaxUnavailable() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaxUnavailable",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) ResetStrategy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStrategy",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

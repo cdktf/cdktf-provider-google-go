@@ -50,6 +50,10 @@ type DataFusionInstanceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/data_fusion_instance#description DataFusionInstance#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// Option to enable granular role-based access control.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/data_fusion_instance#enable_rbac DataFusionInstance#enable_rbac}
+	EnableRbac interface{} `field:"optional" json:"enableRbac" yaml:"enableRbac"`
 	// Option to enable Stackdriver Logging.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/data_fusion_instance#enable_stackdriver_logging DataFusionInstance#enable_stackdriver_logging}

@@ -30,6 +30,7 @@ type DataGoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference interfac
 	InternalValue() *DataGoogleSqlDatabaseInstanceSettingsInsightsConfig
 	SetInternalValue(val *DataGoogleSqlDatabaseInstanceSettingsInsightsConfig)
 	QueryInsightsEnabled() cdktf.IResolvable
+	QueryPlansPerMinute() *float64
 	QueryStringLength() *float64
 	RecordApplicationTags() cdktf.IResolvable
 	RecordClientAddress() cdktf.IResolvable
@@ -135,6 +136,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsInsightsConfigOutputRefe
 	_jsii_.Get(
 		j,
 		"queryInsightsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) QueryPlansPerMinute() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"queryPlansPerMinute",
 		&returns,
 	)
 	return returns

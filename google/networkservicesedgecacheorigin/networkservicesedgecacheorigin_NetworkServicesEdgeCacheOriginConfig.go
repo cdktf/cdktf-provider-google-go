@@ -36,6 +36,10 @@ type NetworkServicesEdgeCacheOriginConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/network_services_edge_cache_origin#origin_address NetworkServicesEdgeCacheOrigin#origin_address}
 	OriginAddress *string `field:"required" json:"originAddress" yaml:"originAddress"`
+	// aws_v4_authentication block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/network_services_edge_cache_origin#aws_v4_authentication NetworkServicesEdgeCacheOrigin#aws_v4_authentication}
+	AwsV4Authentication *NetworkServicesEdgeCacheOriginAwsV4Authentication `field:"optional" json:"awsV4Authentication" yaml:"awsV4Authentication"`
 	// A human-readable description of the resource.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/network_services_edge_cache_origin#description NetworkServicesEdgeCacheOrigin#description}

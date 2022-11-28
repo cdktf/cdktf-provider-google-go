@@ -191,6 +191,14 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetQueryPlansPerMinuteParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetQueryStringLengthParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

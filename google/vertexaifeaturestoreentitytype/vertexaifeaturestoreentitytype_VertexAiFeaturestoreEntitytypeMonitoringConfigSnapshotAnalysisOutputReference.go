@@ -32,6 +32,12 @@ type VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReferen
 	Fqn() *string
 	InternalValue() *VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis
 	SetInternalValue(val *VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis)
+	MonitoringIntervalDays() *float64
+	SetMonitoringIntervalDays(val *float64)
+	MonitoringIntervalDaysInput() *float64
+	StalenessDays() *float64
+	SetStalenessDays(val *float64)
+	StalenessDaysInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -65,6 +71,8 @@ type VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReferen
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDisabled()
+	ResetMonitoringIntervalDays()
+	ResetStalenessDays()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,6 +153,46 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysi
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference) MonitoringIntervalDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"monitoringIntervalDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference) MonitoringIntervalDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"monitoringIntervalDaysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference) StalenessDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"stalenessDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference) StalenessDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"stalenessDaysInput",
 		&returns,
 	)
 	return returns
@@ -238,6 +286,28 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysi
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference)SetMonitoringIntervalDays(val *float64) {
+	if err := j.validateSetMonitoringIntervalDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"monitoringIntervalDays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference)SetStalenessDays(val *float64) {
+	if err := j.validateSetStalenessDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stalenessDays",
 		val,
 	)
 }
@@ -454,6 +524,22 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysi
 	_jsii_.InvokeVoid(
 		v,
 		"resetDisabled",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference) ResetMonitoringIntervalDays() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetMonitoringIntervalDays",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference) ResetStalenessDays() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetStalenessDays",
 		nil, // no parameters
 	)
 }

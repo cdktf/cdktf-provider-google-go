@@ -52,6 +52,10 @@ type ComputeRouterInterfaceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_router_interface#project ComputeRouterInterface#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// The name of the interface that is redundant to this interface.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_router_interface#redundant_interface ComputeRouterInterface#redundant_interface}
+	RedundantInterface *string `field:"optional" json:"redundantInterface" yaml:"redundantInterface"`
 	// The region this interface's router sits in.
 	//
 	// If not specified, the project region will be used. Changing this forces a new interface to be created.

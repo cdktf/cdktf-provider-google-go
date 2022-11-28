@@ -41,12 +41,16 @@ type ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference i
 	ImageTypeInput() *string
 	InternalValue() *ContainerClusterClusterAutoscalingAutoProvisioningDefaults
 	SetInternalValue(val *ContainerClusterClusterAutoscalingAutoProvisioningDefaults)
+	Management() ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference
+	ManagementInput() *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement
 	OauthScopes() *[]*string
 	SetOauthScopes(val *[]*string)
 	OauthScopesInput() *[]*string
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
+	ShieldedInstanceConfig() ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference
+	ShieldedInstanceConfigInput() *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,12 +83,16 @@ type ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutManagement(value *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement)
+	PutShieldedInstanceConfig(value *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig)
 	ResetBootDiskKmsKey()
 	ResetDiskSize()
 	ResetDiskType()
 	ResetImageType()
+	ResetManagement()
 	ResetOauthScopes()
 	ResetServiceAccount()
+	ResetShieldedInstanceConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -230,6 +238,26 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) Management() ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference {
+	var returns ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference
+	_jsii_.Get(
+		j,
+		"management",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ManagementInput() *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement {
+	var returns *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement
+	_jsii_.Get(
+		j,
+		"managementInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) OauthScopes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -265,6 +293,26 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	_jsii_.Get(
 		j,
 		"serviceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ShieldedInstanceConfig() ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference {
+	var returns ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"shieldedInstanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ShieldedInstanceConfigInput() *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig {
+	var returns *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig
+	_jsii_.Get(
+		j,
+		"shieldedInstanceConfigInput",
 		&returns,
 	)
 	return returns
@@ -625,6 +673,28 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	return returns
 }
 
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) PutManagement(value *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement) {
+	if err := c.validatePutManagementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putManagement",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) PutShieldedInstanceConfig(value *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig) {
+	if err := c.validatePutShieldedInstanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putShieldedInstanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ResetBootDiskKmsKey() {
 	_jsii_.InvokeVoid(
 		c,
@@ -657,6 +727,14 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ResetManagement() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetManagement",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ResetOauthScopes() {
 	_jsii_.InvokeVoid(
 		c,
@@ -669,6 +747,14 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	_jsii_.InvokeVoid(
 		c,
 		"resetServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ResetShieldedInstanceConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetShieldedInstanceConfig",
 		nil, // no parameters
 	)
 }

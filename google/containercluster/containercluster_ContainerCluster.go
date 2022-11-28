@@ -70,6 +70,9 @@ type ContainerCluster interface {
 	EnableKubernetesAlpha() interface{}
 	SetEnableKubernetesAlpha(val interface{})
 	EnableKubernetesAlphaInput() interface{}
+	EnableL4IlbSubsetting() interface{}
+	SetEnableL4IlbSubsetting(val interface{})
+	EnableL4IlbSubsettingInput() interface{}
 	EnableLegacyAbac() interface{}
 	SetEnableLegacyAbac(val interface{})
 	EnableLegacyAbacInput() interface{}
@@ -145,6 +148,8 @@ type ContainerCluster interface {
 	SetNodeLocations(val *[]*string)
 	NodeLocationsInput() *[]*string
 	NodePool() ContainerClusterNodePoolList
+	NodePoolDefaults() ContainerClusterNodePoolDefaultsOutputReference
+	NodePoolDefaultsInput() *ContainerClusterNodePoolDefaults
 	NodePoolInput() interface{}
 	NodeVersion() *string
 	SetNodeVersion(val *string)
@@ -244,6 +249,7 @@ type ContainerCluster interface {
 	PutNetworkPolicy(value *ContainerClusterNetworkPolicy)
 	PutNodeConfig(value *ContainerClusterNodeConfig)
 	PutNodePool(value interface{})
+	PutNodePoolDefaults(value *ContainerClusterNodePoolDefaults)
 	PutNotificationConfig(value *ContainerClusterNotificationConfig)
 	PutPrivateClusterConfig(value *ContainerClusterPrivateClusterConfig)
 	PutReleaseChannel(value *ContainerClusterReleaseChannel)
@@ -269,6 +275,7 @@ type ContainerCluster interface {
 	ResetEnableBinaryAuthorization()
 	ResetEnableIntranodeVisibility()
 	ResetEnableKubernetesAlpha()
+	ResetEnableL4IlbSubsetting()
 	ResetEnableLegacyAbac()
 	ResetEnableShieldedNodes()
 	ResetEnableTpu()
@@ -291,6 +298,7 @@ type ContainerCluster interface {
 	ResetNodeConfig()
 	ResetNodeLocations()
 	ResetNodePool()
+	ResetNodePoolDefaults()
 	ResetNodeVersion()
 	ResetNotificationConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -708,6 +716,26 @@ func (j *jsiiProxy_ContainerCluster) EnableKubernetesAlphaInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableKubernetesAlphaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) EnableL4IlbSubsetting() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableL4IlbSubsetting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) EnableL4IlbSubsettingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableL4IlbSubsettingInput",
 		&returns,
 	)
 	return returns
@@ -1238,6 +1266,26 @@ func (j *jsiiProxy_ContainerCluster) NodePool() ContainerClusterNodePoolList {
 	_jsii_.Get(
 		j,
 		"nodePool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) NodePoolDefaults() ContainerClusterNodePoolDefaultsOutputReference {
+	var returns ContainerClusterNodePoolDefaultsOutputReference
+	_jsii_.Get(
+		j,
+		"nodePoolDefaults",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) NodePoolDefaultsInput() *ContainerClusterNodePoolDefaults {
+	var returns *ContainerClusterNodePoolDefaults
+	_jsii_.Get(
+		j,
+		"nodePoolDefaultsInput",
 		&returns,
 	)
 	return returns
@@ -1774,6 +1822,17 @@ func (j *jsiiProxy_ContainerCluster)SetEnableKubernetesAlpha(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableKubernetesAlpha",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerCluster)SetEnableL4IlbSubsetting(val interface{}) {
+	if err := j.validateSetEnableL4IlbSubsettingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableL4IlbSubsetting",
 		val,
 	)
 }
@@ -2500,6 +2559,17 @@ func (c *jsiiProxy_ContainerCluster) PutNodePool(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutNodePoolDefaults(value *ContainerClusterNodePoolDefaults) {
+	if err := c.validatePutNodePoolDefaultsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNodePoolDefaults",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutNotificationConfig(value *ContainerClusterNotificationConfig) {
 	if err := c.validatePutNotificationConfigParameters(value); err != nil {
 		panic(err)
@@ -2724,6 +2794,14 @@ func (c *jsiiProxy_ContainerCluster) ResetEnableKubernetesAlpha() {
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) ResetEnableL4IlbSubsetting() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableL4IlbSubsetting",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) ResetEnableLegacyAbac() {
 	_jsii_.InvokeVoid(
 		c,
@@ -2896,6 +2974,14 @@ func (c *jsiiProxy_ContainerCluster) ResetNodePool() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetNodePool",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetNodePoolDefaults() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNodePoolDefaults",
 		nil, // no parameters
 	)
 }

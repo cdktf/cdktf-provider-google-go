@@ -44,6 +44,10 @@ func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) validat
 	return nil
 }
 
+func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) validatePutGkeClustersParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) validatePutNetworksParameters(value interface{}) error {
 	return nil
 }

@@ -27,6 +27,8 @@ type DnsManagedZonePrivateVisibilityConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GkeClusters() DnsManagedZonePrivateVisibilityConfigGkeClustersList
+	GkeClustersInput() interface{}
 	InternalValue() *DnsManagedZonePrivateVisibilityConfig
 	SetInternalValue(val *DnsManagedZonePrivateVisibilityConfig)
 	Networks() DnsManagedZonePrivateVisibilityConfigNetworksList
@@ -63,7 +65,9 @@ type DnsManagedZonePrivateVisibilityConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutGkeClusters(value interface{})
 	PutNetworks(value interface{})
+	ResetGkeClusters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -114,6 +118,26 @@ func (j *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) Fqn() *
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) GkeClusters() DnsManagedZonePrivateVisibilityConfigGkeClustersList {
+	var returns DnsManagedZonePrivateVisibilityConfigGkeClustersList
+	_jsii_.Get(
+		j,
+		"gkeClusters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) GkeClustersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gkeClustersInput",
 		&returns,
 	)
 	return returns
@@ -438,6 +462,17 @@ func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) Interpo
 	return returns
 }
 
+func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) PutGkeClusters(value interface{}) {
+	if err := d.validatePutGkeClustersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putGkeClusters",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) PutNetworks(value interface{}) {
 	if err := d.validatePutNetworksParameters(value); err != nil {
 		panic(err)
@@ -446,6 +481,14 @@ func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) PutNetw
 		d,
 		"putNetworks",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) ResetGkeClusters() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGkeClusters",
+		nil, // no parameters
 	)
 }
 

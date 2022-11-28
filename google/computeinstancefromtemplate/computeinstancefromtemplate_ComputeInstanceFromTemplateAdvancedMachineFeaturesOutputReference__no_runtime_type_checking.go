@@ -76,6 +76,10 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) validateSetVisibleCoreCountParameters(val *float64) error {
+	return nil
+}
+
 func validateNewComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

@@ -44,6 +44,10 @@ func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) validateInte
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) validatePutBlueGreenSettingsParameters(value *ContainerNodePoolUpgradeSettingsBlueGreenSettings) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -65,6 +69,10 @@ func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) validateSetM
 }
 
 func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) validateSetMaxUnavailableParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) validateSetStrategyParameters(val *string) error {
 	return nil
 }
 

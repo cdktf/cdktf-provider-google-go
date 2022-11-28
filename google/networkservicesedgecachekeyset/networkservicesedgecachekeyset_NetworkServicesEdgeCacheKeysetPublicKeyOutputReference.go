@@ -32,6 +32,9 @@ type NetworkServicesEdgeCacheKeysetPublicKeyOutputReference interface {
 	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Managed() interface{}
+	SetManaged(val interface{})
+	ManagedInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,8 @@ type NetworkServicesEdgeCacheKeysetPublicKeyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetManaged()
+	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +152,26 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) Managed() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"managed",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) ManagedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"managedInput",
 		&returns,
 	)
 	return returns
@@ -260,6 +285,17 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetInt
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetManaged(val interface{}) {
+	if err := j.validateSetManagedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managed",
 		val,
 	)
 }
@@ -481,6 +517,22 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) Inter
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) ResetManaged() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetManaged",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) ResetValue() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetValue",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

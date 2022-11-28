@@ -48,6 +48,10 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) validatePutDatasetParam
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) validatePutRoutineParameters(value *BigqueryDatasetAccessRoutine) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) validatePutViewParameters(value *BigqueryDatasetAccessView) error {
 	return nil
 }

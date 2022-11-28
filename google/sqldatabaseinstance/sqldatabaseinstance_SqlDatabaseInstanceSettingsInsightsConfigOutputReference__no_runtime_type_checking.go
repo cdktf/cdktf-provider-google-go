@@ -64,6 +64,10 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetQueryPlansPerMinuteParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetQueryStringLengthParameters(val *float64) error {
 	return nil
 }

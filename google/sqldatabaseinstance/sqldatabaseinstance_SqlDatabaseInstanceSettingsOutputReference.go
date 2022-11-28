@@ -33,6 +33,9 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectorEnforcement() *string
+	SetConnectorEnforcement(val *string)
+	ConnectorEnforcementInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -127,6 +130,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ResetAvailabilityType()
 	ResetBackupConfiguration()
 	ResetCollation()
+	ResetConnectorEnforcement()
 	ResetDatabaseFlags()
 	ResetDiskAutoresize()
 	ResetDiskAutoresizeLimit()
@@ -271,6 +275,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ComplexObjectIsFr
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ConnectorEnforcement() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectorEnforcement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ConnectorEnforcementInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectorEnforcementInput",
 		&returns,
 	)
 	return returns
@@ -719,6 +743,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetComplexObjectIs
 	)
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetConnectorEnforcement(val *string) {
+	if err := j.validateSetConnectorEnforcementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connectorEnforcement",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetDiskAutoresize(val interface{}) {
 	if err := j.validateSetDiskAutoresizeParameters(val); err != nil {
 		panic(err)
@@ -1161,6 +1196,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetCollation() 
 	_jsii_.InvokeVoid(
 		s,
 		"resetCollation",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetConnectorEnforcement() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetConnectorEnforcement",
 		nil, // no parameters
 	)
 }

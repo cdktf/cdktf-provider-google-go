@@ -215,6 +215,14 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) validateSetVisibleCoreCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")

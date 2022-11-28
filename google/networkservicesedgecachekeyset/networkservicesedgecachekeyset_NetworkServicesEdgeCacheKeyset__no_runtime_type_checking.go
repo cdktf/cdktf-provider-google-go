@@ -60,6 +60,10 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validatePutTimeoutsParameters
 	return nil
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) validatePutValidationSharedKeysParameters(value interface{}) error {
+	return nil
+}
+
 func validateNetworkServicesEdgeCacheKeyset_IsConstructParameters(x interface{}) error {
 	return nil
 }

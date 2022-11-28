@@ -52,6 +52,10 @@ func (c *jsiiProxy_ComputeRegionUrlMap) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionUrlMap) validatePutDefaultRouteActionParameters(value *ComputeRegionUrlMapDefaultRouteAction) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionUrlMap) validatePutDefaultUrlRedirectParameters(value *ComputeRegionUrlMapDefaultUrlRedirect) error {
 	return nil
 }

@@ -112,6 +112,10 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetLocalS
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetLoggingVariantParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetMachineTypeParameters(val *string) error {
 	return nil
 }

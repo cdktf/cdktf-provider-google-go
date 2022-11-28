@@ -90,6 +90,17 @@ func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) validateInte
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) validatePutBlueGreenSettingsParameters(value *ContainerNodePoolUpgradeSettingsBlueGreenSettings) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -180,6 +191,14 @@ func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) validateSetM
 }
 
 func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) validateSetMaxUnavailableParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsOutputReference) validateSetStrategyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

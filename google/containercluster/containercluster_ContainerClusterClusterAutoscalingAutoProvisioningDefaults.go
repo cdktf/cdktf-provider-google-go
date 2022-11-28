@@ -18,6 +18,10 @@ type ContainerClusterClusterAutoscalingAutoProvisioningDefaults struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#image_type ContainerCluster#image_type}
 	ImageType *string `field:"optional" json:"imageType" yaml:"imageType"`
+	// management block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#management ContainerCluster#management}
+	Management *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement `field:"optional" json:"management" yaml:"management"`
 	// Scopes that are used by NAP when creating node pools.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#oauth_scopes ContainerCluster#oauth_scopes}
@@ -26,5 +30,9 @@ type ContainerClusterClusterAutoscalingAutoProvisioningDefaults struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#service_account ContainerCluster#service_account}
 	ServiceAccount *string `field:"optional" json:"serviceAccount" yaml:"serviceAccount"`
+	// shielded_instance_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#shielded_instance_config ContainerCluster#shielded_instance_config}
+	ShieldedInstanceConfig *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig `field:"optional" json:"shieldedInstanceConfig" yaml:"shieldedInstanceConfig"`
 }
 

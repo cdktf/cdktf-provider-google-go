@@ -41,6 +41,7 @@ type DataGoogleContainerCluster interface {
 	EnableBinaryAuthorization() cdktf.IResolvable
 	EnableIntranodeVisibility() cdktf.IResolvable
 	EnableKubernetesAlpha() cdktf.IResolvable
+	EnableL4IlbSubsetting() cdktf.IResolvable
 	EnableLegacyAbac() cdktf.IResolvable
 	EnableShieldedNodes() cdktf.IResolvable
 	EnableTpu() cdktf.IResolvable
@@ -87,6 +88,7 @@ type DataGoogleContainerCluster interface {
 	NodeConfig() DataGoogleContainerClusterNodeConfigList
 	NodeLocations() *[]*string
 	NodePool() DataGoogleContainerClusterNodePoolList
+	NodePoolDefaults() DataGoogleContainerClusterNodePoolDefaultsList
 	NodeVersion() *string
 	NotificationConfig() DataGoogleContainerClusterNotificationConfigList
 	Operation() *string
@@ -369,6 +371,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) EnableKubernetesAlpha() cdktf.IRe
 	_jsii_.Get(
 		j,
 		"enableKubernetesAlpha",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) EnableL4IlbSubsetting() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableL4IlbSubsetting",
 		&returns,
 	)
 	return returns
@@ -709,6 +721,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) NodePool() DataGoogleContainerClu
 	_jsii_.Get(
 		j,
 		"nodePool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) NodePoolDefaults() DataGoogleContainerClusterNodePoolDefaultsList {
+	var returns DataGoogleContainerClusterNodePoolDefaultsList
+	_jsii_.Get(
+		j,
+		"nodePoolDefaults",
 		&returns,
 	)
 	return returns

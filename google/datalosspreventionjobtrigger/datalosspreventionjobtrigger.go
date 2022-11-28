@@ -132,7 +132,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "pubSub", GoGetter: "PubSub"},
+			_jsii_.MemberProperty{JsiiProperty: "pubSubInput", GoGetter: "PubSubInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putPubSub", GoMethod: "PutPubSub"},
 			_jsii_.MemberMethod{JsiiMethod: "putSaveFindings", GoMethod: "PutSaveFindings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPubSub", GoMethod: "ResetPubSub"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSaveFindings", GoMethod: "ResetSaveFindings"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "saveFindings", GoGetter: "SaveFindings"},
 			_jsii_.MemberProperty{JsiiProperty: "saveFindingsInput", GoGetter: "SaveFindingsInput"},
@@ -142,6 +147,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobActionsPubSub",
+		reflect.TypeOf((*DataLossPreventionJobTriggerInspectJobActionsPubSub)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference",
+		reflect.TypeOf((*DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "topic", GoGetter: "Topic"},
+			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -340,7 +383,16 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putTableReference", GoMethod: "PutTableReference"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRowsLimit", GoMethod: "ResetRowsLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRowsLimitPercent", GoMethod: "ResetRowsLimitPercent"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSampleMethod", GoMethod: "ResetSampleMethod"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "rowsLimit", GoGetter: "RowsLimit"},
+			_jsii_.MemberProperty{JsiiProperty: "rowsLimitInput", GoGetter: "RowsLimitInput"},
+			_jsii_.MemberProperty{JsiiProperty: "rowsLimitPercent", GoGetter: "RowsLimitPercent"},
+			_jsii_.MemberProperty{JsiiProperty: "rowsLimitPercentInput", GoGetter: "RowsLimitPercentInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sampleMethod", GoGetter: "SampleMethod"},
+			_jsii_.MemberProperty{JsiiProperty: "sampleMethodInput", GoGetter: "SampleMethodInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tableReference", GoGetter: "TableReference"},
 			_jsii_.MemberProperty{JsiiProperty: "tableReferenceInput", GoGetter: "TableReferenceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

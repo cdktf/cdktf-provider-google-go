@@ -52,6 +52,10 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validatePutAwsV4AuthenticationParameters(value *NetworkServicesEdgeCacheOriginAwsV4Authentication) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validatePutTimeoutParameters(value *NetworkServicesEdgeCacheOriginTimeout) error {
 	return nil
 }

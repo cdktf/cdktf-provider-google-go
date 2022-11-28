@@ -104,6 +104,10 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetComple
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetConnectorEnforcementParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetDiskAutoresizeParameters(val interface{}) error {
 	return nil
 }

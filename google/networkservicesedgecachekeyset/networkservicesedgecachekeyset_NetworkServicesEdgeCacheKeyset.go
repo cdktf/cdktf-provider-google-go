@@ -77,6 +77,8 @@ type NetworkServicesEdgeCacheKeyset interface {
 	TerraformResourceType() *string
 	Timeouts() NetworkServicesEdgeCacheKeysetTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	ValidationSharedKeys() NetworkServicesEdgeCacheKeysetValidationSharedKeysList
+	ValidationSharedKeysInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -104,6 +106,7 @@ type NetworkServicesEdgeCacheKeyset interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutPublicKey(value interface{})
 	PutTimeouts(value *NetworkServicesEdgeCacheKeysetTimeouts)
+	PutValidationSharedKeys(value interface{})
 	ResetDescription()
 	ResetId()
 	ResetLabels()
@@ -111,7 +114,9 @@ type NetworkServicesEdgeCacheKeyset interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetPublicKey()
 	ResetTimeouts()
+	ResetValidationSharedKeys()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -422,6 +427,26 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) TimeoutsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) ValidationSharedKeys() NetworkServicesEdgeCacheKeysetValidationSharedKeysList {
+	var returns NetworkServicesEdgeCacheKeysetValidationSharedKeysList
+	_jsii_.Get(
+		j,
+		"validationSharedKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) ValidationSharedKeysInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validationSharedKeysInput",
 		&returns,
 	)
 	return returns
@@ -865,6 +890,17 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) PutTimeouts(value *NetworkSer
 	)
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) PutValidationSharedKeys(value interface{}) {
+	if err := n.validatePutValidationSharedKeysParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putValidationSharedKeys",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) ResetDescription() {
 	_jsii_.InvokeVoid(
 		n,
@@ -905,10 +941,26 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) ResetProject() {
 	)
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) ResetPublicKey() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetPublicKey",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeyset) ResetValidationSharedKeys() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetValidationSharedKeys",
 		nil, // no parameters
 	)
 }

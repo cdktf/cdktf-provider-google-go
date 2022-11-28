@@ -67,6 +67,9 @@ type ComputeRouterInterface interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RedundantInterface() *string
+	SetRedundantInterface(val *string)
+	RedundantInterfaceInput() *string
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -117,6 +120,7 @@ type ComputeRouterInterface interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRedundantInterface()
 	ResetRegion()
 	ResetTimeouts()
 	ResetVpnTunnel()
@@ -360,6 +364,26 @@ func (j *jsiiProxy_ComputeRouterInterface) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterInterface) RedundantInterface() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redundantInterface",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterInterface) RedundantInterfaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redundantInterfaceInput",
 		&returns,
 	)
 	return returns
@@ -621,6 +645,17 @@ func (j *jsiiProxy_ComputeRouterInterface)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterInterface)SetRedundantInterface(val *string) {
+	if err := j.validateSetRedundantInterfaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"redundantInterface",
 		val,
 	)
 }
@@ -971,6 +1006,14 @@ func (c *jsiiProxy_ComputeRouterInterface) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterInterface) ResetRedundantInterface() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRedundantInterface",
 		nil, // no parameters
 	)
 }

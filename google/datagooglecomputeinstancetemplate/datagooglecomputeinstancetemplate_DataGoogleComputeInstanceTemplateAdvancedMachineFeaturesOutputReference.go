@@ -39,6 +39,7 @@ type DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesOutputReference int
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	ThreadsPerCore() *float64
+	VisibleCoreCount() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -163,6 +164,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesOutpu
 	_jsii_.Get(
 		j,
 		"threadsPerCore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesOutputReference) VisibleCoreCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"visibleCoreCount",
 		&returns,
 	)
 	return returns

@@ -2,6 +2,10 @@ package networkservicesedgecacheservice
 
 
 type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicy struct {
+	// add_signatures block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/network_services_edge_cache_service#add_signatures NetworkServicesEdgeCacheService#add_signatures}
+	AddSignatures *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignatures `field:"optional" json:"addSignatures" yaml:"addSignatures"`
 	// cache_key_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/network_services_edge_cache_service#cache_key_policy NetworkServicesEdgeCacheService#cache_key_policy}
@@ -87,15 +91,30 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPol
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/network_services_edge_cache_service#signed_request_keyset NetworkServicesEdgeCacheService#signed_request_keyset}
 	SignedRequestKeyset *string `field:"optional" json:"signedRequestKeyset" yaml:"signedRequestKeyset"`
+	// Limit how far into the future the expiration time of a signed request may be.
+	//
+	// When set, a signed request is rejected if its expiration time is later than now + signedRequestMaximumExpirationTtl, where now is the time at which the signed request is first handled by the CDN.
+	//
+	// - The TTL must be > 0.
+	// - Fractions of a second are not allowed.
+	//
+	// By default, signedRequestMaximumExpirationTtl is not set and the expiration time of a signed request may be arbitrarily far into future.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/network_services_edge_cache_service#signed_request_maximum_expiration_ttl NetworkServicesEdgeCacheService#signed_request_maximum_expiration_ttl}
+	SignedRequestMaximumExpirationTtl *string `field:"optional" json:"signedRequestMaximumExpirationTtl" yaml:"signedRequestMaximumExpirationTtl"`
 	// Whether to enforce signed requests.
 	//
 	// The default value is DISABLED, which means all content is public, and does not authorize access.
 	//
 	// You must also set a signedRequestKeyset to enable signed requests.
 	//
-	// When set to REQUIRE_SIGNATURES, all matching requests will have their signature validated. Requests that were not signed with the corresponding private key, or that are otherwise invalid (expired, do not match the signature, IP address, or header) will be rejected with a HTTP 403 and (if enabled) logged. Possible values: ["DISABLED", "REQUIRE_SIGNATURES"]
+	// When set to REQUIRE_SIGNATURES, all matching requests will have their signature validated. Requests that were not signed with the corresponding private key, or that are otherwise invalid (expired, do not match the signature, IP address, or header) will be rejected with a HTTP 403 and (if enabled) logged. Possible values: ["DISABLED", "REQUIRE_SIGNATURES", "REQUIRE_TOKENS"]
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/network_services_edge_cache_service#signed_request_mode NetworkServicesEdgeCacheService#signed_request_mode}
 	SignedRequestMode *string `field:"optional" json:"signedRequestMode" yaml:"signedRequestMode"`
+	// signed_token_options block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/network_services_edge_cache_service#signed_token_options NetworkServicesEdgeCacheService#signed_token_options}
+	SignedTokenOptions *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicySignedTokenOptions `field:"optional" json:"signedTokenOptions" yaml:"signedTokenOptions"`
 }
 

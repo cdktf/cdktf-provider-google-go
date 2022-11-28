@@ -31,6 +31,10 @@ type ComputeRegionUrlMapConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_region_url_map#name ComputeRegionUrlMap#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// default_route_action block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_region_url_map#default_route_action ComputeRegionUrlMap#default_route_action}
+	DefaultRouteAction *ComputeRegionUrlMapDefaultRouteAction `field:"optional" json:"defaultRouteAction" yaml:"defaultRouteAction"`
 	// The full or partial URL of the defaultService resource to which traffic is directed if none of the hostRules match.
 	//
 	// If defaultRouteAction is additionally specified, advanced

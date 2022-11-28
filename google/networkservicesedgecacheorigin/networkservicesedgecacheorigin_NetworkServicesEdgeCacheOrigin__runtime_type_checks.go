@@ -111,6 +111,17 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validatePutAwsV4AuthenticationParameters(value *NetworkServicesEdgeCacheOriginAwsV4Authentication) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validatePutTimeoutParameters(value *NetworkServicesEdgeCacheOriginTimeout) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

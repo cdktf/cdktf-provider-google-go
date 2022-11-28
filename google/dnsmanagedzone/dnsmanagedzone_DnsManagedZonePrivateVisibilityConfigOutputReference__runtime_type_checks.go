@@ -90,6 +90,37 @@ func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) validat
 	return nil
 }
 
+func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) validatePutGkeClustersParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DnsManagedZonePrivateVisibilityConfigGkeClusters:
+		value := value.(*[]*DnsManagedZonePrivateVisibilityConfigGkeClusters)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DnsManagedZonePrivateVisibilityConfigGkeClusters:
+		value_ := value.([]*DnsManagedZonePrivateVisibilityConfigGkeClusters)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DnsManagedZonePrivateVisibilityConfigGkeClusters; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigOutputReference) validatePutNetworksParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

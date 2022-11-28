@@ -25,6 +25,8 @@ type ComputeRegionUrlMap interface {
 	// Experimental.
 	SetCount(val *float64)
 	CreationTimestamp() *string
+	DefaultRouteAction() ComputeRegionUrlMapDefaultRouteActionOutputReference
+	DefaultRouteActionInput() *ComputeRegionUrlMapDefaultRouteAction
 	DefaultService() *string
 	SetDefaultService(val *string)
 	DefaultServiceInput() *string
@@ -115,11 +117,13 @@ type ComputeRegionUrlMap interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDefaultRouteAction(value *ComputeRegionUrlMapDefaultRouteAction)
 	PutDefaultUrlRedirect(value *ComputeRegionUrlMapDefaultUrlRedirect)
 	PutHostRule(value interface{})
 	PutPathMatcher(value interface{})
 	PutTest(value interface{})
 	PutTimeouts(value *ComputeRegionUrlMapTimeouts)
+	ResetDefaultRouteAction()
 	ResetDefaultService()
 	ResetDefaultUrlRedirect()
 	ResetDescription()
@@ -193,6 +197,26 @@ func (j *jsiiProxy_ComputeRegionUrlMap) CreationTimestamp() *string {
 	_jsii_.Get(
 		j,
 		"creationTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionUrlMap) DefaultRouteAction() ComputeRegionUrlMapDefaultRouteActionOutputReference {
+	var returns ComputeRegionUrlMapDefaultRouteActionOutputReference
+	_jsii_.Get(
+		j,
+		"defaultRouteAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionUrlMap) DefaultRouteActionInput() *ComputeRegionUrlMapDefaultRouteAction {
+	var returns *ComputeRegionUrlMapDefaultRouteAction
+	_jsii_.Get(
+		j,
+		"defaultRouteActionInput",
 		&returns,
 	)
 	return returns
@@ -995,6 +1019,17 @@ func (c *jsiiProxy_ComputeRegionUrlMap) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionUrlMap) PutDefaultRouteAction(value *ComputeRegionUrlMapDefaultRouteAction) {
+	if err := c.validatePutDefaultRouteActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDefaultRouteAction",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionUrlMap) PutDefaultUrlRedirect(value *ComputeRegionUrlMapDefaultUrlRedirect) {
 	if err := c.validatePutDefaultUrlRedirectParameters(value); err != nil {
 		panic(err)
@@ -1047,6 +1082,14 @@ func (c *jsiiProxy_ComputeRegionUrlMap) PutTimeouts(value *ComputeRegionUrlMapTi
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionUrlMap) ResetDefaultRouteAction() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDefaultRouteAction",
+		nil, // no parameters
 	)
 }
 

@@ -35,6 +35,12 @@ type EventarcTriggerConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/eventarc_trigger#name EventarcTrigger#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// Optional.
+	//
+	// The name of the channel associated with the trigger in `projects/{project}/locations/{location}/channels/{channel}` format. You must provide a channel to receive events from Eventarc SaaS partners.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/eventarc_trigger#channel EventarcTrigger#channel}
+	Channel *string `field:"optional" json:"channel" yaml:"channel"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/eventarc_trigger#id EventarcTrigger#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

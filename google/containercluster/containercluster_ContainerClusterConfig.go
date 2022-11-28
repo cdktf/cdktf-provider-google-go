@@ -97,6 +97,10 @@ type ContainerClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#enable_kubernetes_alpha ContainerCluster#enable_kubernetes_alpha}
 	EnableKubernetesAlpha interface{} `field:"optional" json:"enableKubernetesAlpha" yaml:"enableKubernetesAlpha"`
+	// Whether L4ILB Subsetting is enabled for this cluster.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#enable_l4_ilb_subsetting ContainerCluster#enable_l4_ilb_subsetting}
+	EnableL4IlbSubsetting interface{} `field:"optional" json:"enableL4IlbSubsetting" yaml:"enableL4IlbSubsetting"`
 	// Whether the ABAC authorizer is enabled for this cluster.
 	//
 	// When enabled, identities in the system, including service accounts, nodes, and controllers, will have statically granted permissions beyond those provided by the RBAC configuration or IAM. Defaults to false.
@@ -202,6 +206,10 @@ type ContainerClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#node_pool ContainerCluster#node_pool}
 	NodePool interface{} `field:"optional" json:"nodePool" yaml:"nodePool"`
+	// node_pool_defaults block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#node_pool_defaults ContainerCluster#node_pool_defaults}
+	NodePoolDefaults *ContainerClusterNodePoolDefaults `field:"optional" json:"nodePoolDefaults" yaml:"nodePoolDefaults"`
 	// The Kubernetes version on the nodes.
 	//
 	// Must either be unset or set to the same value as min_master_version on create. Defaults to the default version set by GKE which is not necessarily the latest version. This only affects nodes in the default node pool. While a fuzzy version can be specified, it's recommended that you specify explicit versions as Terraform will see spurious diffs when fuzzy versions are used. See the google_container_engine_versions data source's version_prefix field to approximate fuzzy versions in a Terraform-compatible way. To update nodes in other node pools, use the version attribute on the node pool.

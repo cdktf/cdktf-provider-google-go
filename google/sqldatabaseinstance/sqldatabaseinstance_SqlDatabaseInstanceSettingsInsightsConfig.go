@@ -6,6 +6,12 @@ type SqlDatabaseInstanceSettingsInsightsConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#query_insights_enabled SqlDatabaseInstance#query_insights_enabled}
 	QueryInsightsEnabled interface{} `field:"optional" json:"queryInsightsEnabled" yaml:"queryInsightsEnabled"`
+	// Number of query execution plans captured by Insights per minute for all queries combined.
+	//
+	// Between 0 and 20. Default to 5.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#query_plans_per_minute SqlDatabaseInstance#query_plans_per_minute}
+	QueryPlansPerMinute *float64 `field:"optional" json:"queryPlansPerMinute" yaml:"queryPlansPerMinute"`
 	// Maximum query length stored in bytes. Between 256 and 4500. Default to 1024.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#query_string_length SqlDatabaseInstance#query_string_length}

@@ -40,6 +40,8 @@ type BigqueryDatasetAccessOutputReference interface {
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
+	Routine() BigqueryDatasetAccessRoutineOutputReference
+	RoutineInput() *BigqueryDatasetAccessRoutine
 	SpecialGroup() *string
 	SetSpecialGroup(val *string)
 	SpecialGroupInput() *string
@@ -81,11 +83,13 @@ type BigqueryDatasetAccessOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDataset(value *BigqueryDatasetAccessDataset)
+	PutRoutine(value *BigqueryDatasetAccessRoutine)
 	PutView(value *BigqueryDatasetAccessView)
 	ResetDataset()
 	ResetDomain()
 	ResetGroupByEmail()
 	ResetRole()
+	ResetRoutine()
 	ResetSpecialGroup()
 	ResetUserByEmail()
 	ResetView()
@@ -229,6 +233,26 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) RoleInput() *string {
 	_jsii_.Get(
 		j,
 		"roleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) Routine() BigqueryDatasetAccessRoutineOutputReference {
+	var returns BigqueryDatasetAccessRoutineOutputReference
+	_jsii_.Get(
+		j,
+		"routine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) RoutineInput() *BigqueryDatasetAccessRoutine {
+	var returns *BigqueryDatasetAccessRoutine
+	_jsii_.Get(
+		j,
+		"routineInput",
 		&returns,
 	)
 	return returns
@@ -649,6 +673,17 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) PutDataset(value *Bigqu
 	)
 }
 
+func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) PutRoutine(value *BigqueryDatasetAccessRoutine) {
+	if err := b.validatePutRoutineParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putRoutine",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) PutView(value *BigqueryDatasetAccessView) {
 	if err := b.validatePutViewParameters(value); err != nil {
 		panic(err)
@@ -688,6 +723,14 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) ResetRole() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetRole",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) ResetRoutine() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRoutine",
 		nil, // no parameters
 	)
 }

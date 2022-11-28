@@ -10,6 +10,7 @@ import (
 
 type DataGoogleContainerClusterNodePoolUpgradeSettingsOutputReference interface {
 	cdktf.ComplexObject
+	BlueGreenSettings() DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,6 +32,7 @@ type DataGoogleContainerClusterNodePoolUpgradeSettingsOutputReference interface 
 	SetInternalValue(val *DataGoogleContainerClusterNodePoolUpgradeSettings)
 	MaxSurge() *float64
 	MaxUnavailable() *float64
+	Strategy() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,6 +78,16 @@ type DataGoogleContainerClusterNodePoolUpgradeSettingsOutputReference interface 
 // The jsii proxy struct for DataGoogleContainerClusterNodePoolUpgradeSettingsOutputReference
 type jsiiProxy_DataGoogleContainerClusterNodePoolUpgradeSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolUpgradeSettingsOutputReference) BlueGreenSettings() DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsList {
+	var returns DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsList
+	_jsii_.Get(
+		j,
+		"blueGreenSettings",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleContainerClusterNodePoolUpgradeSettingsOutputReference) ComplexObjectIndex() interface{} {
@@ -143,6 +155,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolUpgradeSettingsOutputRefere
 	_jsii_.Get(
 		j,
 		"maxUnavailable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolUpgradeSettingsOutputReference) Strategy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"strategy",
 		&returns,
 	)
 	return returns
