@@ -31,6 +31,10 @@ type LoggingOrganizationBucketConfigConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/logging_organization_bucket_config#organization LoggingOrganizationBucketConfig#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
+	// cmek_settings block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/logging_organization_bucket_config#cmek_settings LoggingOrganizationBucketConfig#cmek_settings}
+	CmekSettings *LoggingOrganizationBucketConfigCmekSettings `field:"optional" json:"cmekSettings" yaml:"cmekSettings"`
 	// An optional description for this bucket.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/logging_organization_bucket_config#description LoggingOrganizationBucketConfig#description}

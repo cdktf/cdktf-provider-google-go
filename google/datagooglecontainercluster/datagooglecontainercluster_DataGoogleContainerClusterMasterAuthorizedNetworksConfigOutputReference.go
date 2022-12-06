@@ -28,6 +28,7 @@ type DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference int
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GcpPublicCidrsAccessEnabled() cdktf.IResolvable
 	InternalValue() *DataGoogleContainerClusterMasterAuthorizedNetworksConfig
 	SetInternalValue(val *DataGoogleContainerClusterMasterAuthorizedNetworksConfig)
 	// Experimental.
@@ -122,6 +123,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutpu
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) GcpPublicCidrsAccessEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"gcpPublicCidrsAccessEnabled",
 		&returns,
 	)
 	return returns

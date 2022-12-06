@@ -44,11 +44,27 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) validat
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutCorsPolicyParameters(value *ComputeRegionUrlMapDefaultRouteActionCorsPolicy) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutFaultInjectionPolicyParameters(value *ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutRequestMirrorPolicyParameters(value *ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy) error {
 	return nil
 }
 
 func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutRetryPolicyParameters(value *ComputeRegionUrlMapDefaultRouteActionRetryPolicy) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutTimeoutParameters(value *ComputeRegionUrlMapDefaultRouteActionTimeout) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutUrlRewriteParameters(value *ComputeRegionUrlMapDefaultRouteActionUrlRewrite) error {
 	return nil
 }
 

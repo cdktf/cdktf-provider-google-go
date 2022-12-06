@@ -42,6 +42,9 @@ type ContainerClusterPrivateClusterConfigOutputReference interface {
 	MasterIpv4CidrBlockInput() *string
 	PeeringName() *string
 	PrivateEndpoint() *string
+	PrivateEndpointSubnetwork() *string
+	SetPrivateEndpointSubnetwork(val *string)
+	PrivateEndpointSubnetworkInput() *string
 	PublicEndpoint() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -76,9 +79,11 @@ type ContainerClusterPrivateClusterConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutMasterGlobalAccessConfig(value *ContainerClusterPrivateClusterConfigMasterGlobalAccessConfig)
+	ResetEnablePrivateEndpoint()
 	ResetEnablePrivateNodes()
 	ResetMasterGlobalAccessConfig()
 	ResetMasterIpv4CidrBlock()
+	ResetPrivateEndpointSubnetwork()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -244,6 +249,26 @@ func (j *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) PrivateE
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) PrivateEndpointSubnetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateEndpointSubnetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) PrivateEndpointSubnetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateEndpointSubnetworkInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) PublicEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -364,6 +389,17 @@ func (j *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference)SetMaster
 	_jsii_.Set(
 		j,
 		"masterIpv4CidrBlock",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference)SetPrivateEndpointSubnetwork(val *string) {
+	if err := j.validateSetPrivateEndpointSubnetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateEndpointSubnetwork",
 		val,
 	)
 }
@@ -587,6 +623,14 @@ func (c *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) PutMaste
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) ResetEnablePrivateEndpoint() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnablePrivateEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) ResetEnablePrivateNodes() {
 	_jsii_.InvokeVoid(
 		c,
@@ -607,6 +651,14 @@ func (c *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) ResetMas
 	_jsii_.InvokeVoid(
 		c,
 		"resetMasterIpv4CidrBlock",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) ResetPrivateEndpointSubnetwork() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPrivateEndpointSubnetwork",
 		nil, // no parameters
 	)
 }

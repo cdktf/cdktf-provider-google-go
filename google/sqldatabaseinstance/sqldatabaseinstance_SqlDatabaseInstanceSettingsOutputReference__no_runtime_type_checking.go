@@ -56,6 +56,10 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutDataba
 	return nil
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutDenyMaintenancePeriodParameters(value *SqlDatabaseInstanceSettingsDenyMaintenancePeriod) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutInsightsConfigParameters(value *SqlDatabaseInstanceSettingsInsightsConfig) error {
 	return nil
 }

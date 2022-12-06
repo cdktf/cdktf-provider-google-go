@@ -90,6 +90,28 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) validat
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutCorsPolicyParameters(value *ComputeRegionUrlMapDefaultRouteActionCorsPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutFaultInjectionPolicyParameters(value *ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutRequestMirrorPolicyParameters(value *ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -102,6 +124,28 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) validat
 }
 
 func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutRetryPolicyParameters(value *ComputeRegionUrlMapDefaultRouteActionRetryPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutTimeoutParameters(value *ComputeRegionUrlMapDefaultRouteActionTimeout) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutUrlRewriteParameters(value *ComputeRegionUrlMapDefaultRouteActionUrlRewrite) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

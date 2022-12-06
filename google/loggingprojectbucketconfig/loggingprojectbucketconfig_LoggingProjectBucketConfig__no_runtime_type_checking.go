@@ -52,6 +52,10 @@ func (l *jsiiProxy_LoggingProjectBucketConfig) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (l *jsiiProxy_LoggingProjectBucketConfig) validatePutCmekSettingsParameters(value *LoggingProjectBucketConfigCmekSettings) error {
+	return nil
+}
+
 func validateLoggingProjectBucketConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }

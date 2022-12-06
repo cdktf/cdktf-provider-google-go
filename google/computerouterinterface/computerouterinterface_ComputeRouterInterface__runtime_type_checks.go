@@ -219,6 +219,14 @@ func (j *jsiiProxy_ComputeRouterInterface) validateSetNameParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterInterface) validateSetPrivateIpAddressParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterInterface) validateSetProjectParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -290,6 +298,14 @@ func (j *jsiiProxy_ComputeRouterInterface) validateSetRegionParameters(val *stri
 }
 
 func (j *jsiiProxy_ComputeRouterInterface) validateSetRouterParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRouterInterface) validateSetSubnetworkParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -17,6 +17,8 @@ type LoggingProjectBucketConfig interface {
 	BucketIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CmekSettings() LoggingProjectBucketConfigCmekSettingsOutputReference
+	CmekSettingsInput() *LoggingProjectBucketConfigCmekSettings
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -103,6 +105,8 @@ type LoggingProjectBucketConfig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCmekSettings(value *LoggingProjectBucketConfigCmekSettings)
+	ResetCmekSettings()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_LoggingProjectBucketConfig) CdktfStack() cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoggingProjectBucketConfig) CmekSettings() LoggingProjectBucketConfigCmekSettingsOutputReference {
+	var returns LoggingProjectBucketConfigCmekSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"cmekSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoggingProjectBucketConfig) CmekSettingsInput() *LoggingProjectBucketConfigCmekSettings {
+	var returns *LoggingProjectBucketConfigCmekSettings
+	_jsii_.Get(
+		j,
+		"cmekSettingsInput",
 		&returns,
 	)
 	return returns
@@ -848,6 +872,25 @@ func (l *jsiiProxy_LoggingProjectBucketConfig) OverrideLogicalId(newLogicalId *s
 		l,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (l *jsiiProxy_LoggingProjectBucketConfig) PutCmekSettings(value *LoggingProjectBucketConfigCmekSettings) {
+	if err := l.validatePutCmekSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putCmekSettings",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LoggingProjectBucketConfig) ResetCmekSettings() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetCmekSettings",
+		nil, // no parameters
 	)
 }
 

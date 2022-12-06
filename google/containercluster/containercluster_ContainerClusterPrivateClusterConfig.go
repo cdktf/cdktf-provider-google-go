@@ -7,7 +7,7 @@ type ContainerClusterPrivateClusterConfig struct {
 	// When false, either endpoint can be used. This field only applies to private clusters, when enable_private_nodes is true.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#enable_private_endpoint ContainerCluster#enable_private_endpoint}
-	EnablePrivateEndpoint interface{} `field:"required" json:"enablePrivateEndpoint" yaml:"enablePrivateEndpoint"`
+	EnablePrivateEndpoint interface{} `field:"optional" json:"enablePrivateEndpoint" yaml:"enablePrivateEndpoint"`
 	// Enables the private cluster feature, creating a private endpoint on the cluster.
 	//
 	// In a private cluster, nodes only have RFC 1918 private addresses and communicate with the master's private endpoint via private networking.
@@ -24,5 +24,9 @@ type ContainerClusterPrivateClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#master_ipv4_cidr_block ContainerCluster#master_ipv4_cidr_block}
 	MasterIpv4CidrBlock *string `field:"optional" json:"masterIpv4CidrBlock" yaml:"masterIpv4CidrBlock"`
+	// Subnetwork in cluster's network where master's endpoint will be provisioned.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#private_endpoint_subnetwork ContainerCluster#private_endpoint_subnetwork}
+	PrivateEndpointSubnetwork *string `field:"optional" json:"privateEndpointSubnetwork" yaml:"privateEndpointSubnetwork"`
 }
 

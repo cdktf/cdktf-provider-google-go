@@ -92,6 +92,10 @@ func (j *jsiiProxy_ComputeRouterInterface) validateSetNameParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterInterface) validateSetPrivateIpAddressParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterInterface) validateSetProjectParameters(val *string) error {
 	return nil
 }
@@ -109,6 +113,10 @@ func (j *jsiiProxy_ComputeRouterInterface) validateSetRegionParameters(val *stri
 }
 
 func (j *jsiiProxy_ComputeRouterInterface) validateSetRouterParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRouterInterface) validateSetSubnetworkParameters(val *string) error {
 	return nil
 }
 

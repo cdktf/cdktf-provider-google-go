@@ -593,6 +593,48 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDenyMaintenancePeriod",
+		reflect.TypeOf((*SqlDatabaseInstanceSettingsDenyMaintenancePeriod)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference",
+		reflect.TypeOf((*SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "endDate", GoGetter: "EndDate"},
+			_jsii_.MemberProperty{JsiiProperty: "endDateInput", GoGetter: "EndDateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "startDate", GoGetter: "StartDate"},
+			_jsii_.MemberProperty{JsiiProperty: "startDateInput", GoGetter: "StartDateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "time", GoGetter: "Time"},
+			_jsii_.MemberProperty{JsiiProperty: "timeInput", GoGetter: "TimeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig",
 		reflect.TypeOf((*SqlDatabaseInstanceSettingsInsightsConfig)(nil)).Elem(),
 	)
@@ -872,6 +914,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "databaseFlags", GoGetter: "DatabaseFlags"},
 			_jsii_.MemberProperty{JsiiProperty: "databaseFlagsInput", GoGetter: "DatabaseFlagsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "denyMaintenancePeriod", GoGetter: "DenyMaintenancePeriod"},
+			_jsii_.MemberProperty{JsiiProperty: "denyMaintenancePeriodInput", GoGetter: "DenyMaintenancePeriodInput"},
 			_jsii_.MemberProperty{JsiiProperty: "diskAutoresize", GoGetter: "DiskAutoresize"},
 			_jsii_.MemberProperty{JsiiProperty: "diskAutoresizeInput", GoGetter: "DiskAutoresizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "diskAutoresizeLimit", GoGetter: "DiskAutoresizeLimit"},
@@ -908,6 +952,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putActiveDirectoryConfig", GoMethod: "PutActiveDirectoryConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putBackupConfiguration", GoMethod: "PutBackupConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putDatabaseFlags", GoMethod: "PutDatabaseFlags"},
+			_jsii_.MemberMethod{JsiiMethod: "putDenyMaintenancePeriod", GoMethod: "PutDenyMaintenancePeriod"},
 			_jsii_.MemberMethod{JsiiMethod: "putInsightsConfig", GoMethod: "PutInsightsConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putIpConfiguration", GoMethod: "PutIpConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putLocationPreference", GoMethod: "PutLocationPreference"},
@@ -921,6 +966,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCollation", GoMethod: "ResetCollation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectorEnforcement", GoMethod: "ResetConnectorEnforcement"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabaseFlags", GoMethod: "ResetDatabaseFlags"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDenyMaintenancePeriod", GoMethod: "ResetDenyMaintenancePeriod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskAutoresize", GoMethod: "ResetDiskAutoresize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskAutoresizeLimit", GoMethod: "ResetDiskAutoresizeLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskSize", GoMethod: "ResetDiskSize"},

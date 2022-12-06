@@ -47,6 +47,15 @@ type SqlDatabaseConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database#collation SqlDatabase#collation}
 	Collation *string `field:"optional" json:"collation" yaml:"collation"`
+	// The deletion policy for the database.
+	//
+	// Setting ABANDON allows the resource
+	// to be abandoned rather than deleted. This is useful for Postgres, where databases cannot be
+	// deleted from the API if there are users other than cloudsqlsuperuser with access. Possible
+	// values are: "ABANDON".
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database#deletion_policy SqlDatabase#deletion_policy}
+	DeletionPolicy *string `field:"optional" json:"deletionPolicy" yaml:"deletionPolicy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database#id SqlDatabase#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

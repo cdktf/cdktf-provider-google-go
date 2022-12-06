@@ -76,6 +76,9 @@ type ContainerClusterNodeConfigOutputReference interface {
 	PreemptibleInput() interface{}
 	ReservationAffinity() ContainerClusterNodeConfigReservationAffinityOutputReference
 	ReservationAffinityInput() *ContainerClusterNodeConfigReservationAffinity
+	ResourceLabels() *map[string]*string
+	SetResourceLabels(val *map[string]*string)
+	ResourceLabelsInput() *map[string]*string
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -147,6 +150,7 @@ type ContainerClusterNodeConfigOutputReference interface {
 	ResetOauthScopes()
 	ResetPreemptible()
 	ResetReservationAffinity()
+	ResetResourceLabels()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
 	ResetSpot()
@@ -558,6 +562,26 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) ReservationAffinit
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResourceLabels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResourceLabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceLabelsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) ServiceAccount() *string {
 	var returns *string
 	_jsii_.Get(
@@ -898,6 +922,17 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference)SetPreemptible(val 
 	_jsii_.Set(
 		j,
 		"preemptible",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference)SetResourceLabels(val *map[string]*string) {
+	if err := j.validateSetResourceLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceLabels",
 		val,
 	)
 }
@@ -1352,6 +1387,14 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetReservationAf
 	_jsii_.InvokeVoid(
 		c,
 		"resetReservationAffinity",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetResourceLabels() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetResourceLabels",
 		nil, // no parameters
 	)
 }

@@ -37,6 +37,7 @@ type DataGoogleContainerClusterNodePoolOutputReference interface {
 	MaxPodsPerNode() *float64
 	Name() *string
 	NamePrefix() *string
+	NetworkConfig() DataGoogleContainerClusterNodePoolNetworkConfigList
 	NodeConfig() DataGoogleContainerClusterNodePoolNodeConfigList
 	NodeCount() *float64
 	NodeLocations() *[]*string
@@ -214,6 +215,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolOutputReference) NamePrefix
 	_jsii_.Get(
 		j,
 		"namePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolOutputReference) NetworkConfig() DataGoogleContainerClusterNodePoolNetworkConfigList {
+	var returns DataGoogleContainerClusterNodePoolNetworkConfigList
+	_jsii_.Get(
+		j,
+		"networkConfig",
 		&returns,
 	)
 	return returns

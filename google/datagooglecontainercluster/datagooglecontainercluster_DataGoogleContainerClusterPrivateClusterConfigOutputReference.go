@@ -35,6 +35,7 @@ type DataGoogleContainerClusterPrivateClusterConfigOutputReference interface {
 	MasterIpv4CidrBlock() *string
 	PeeringName() *string
 	PrivateEndpoint() *string
+	PrivateEndpointSubnetwork() *string
 	PublicEndpoint() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -188,6 +189,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterPrivateClusterConfigOutputReference
 	_jsii_.Get(
 		j,
 		"privateEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterPrivateClusterConfigOutputReference) PrivateEndpointSubnetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateEndpointSubnetwork",
 		&returns,
 	)
 	return returns

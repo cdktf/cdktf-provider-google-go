@@ -32,6 +32,7 @@ type DataGoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DatabaseFlags() DataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsList
+	DenyMaintenancePeriod() DataGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodList
 	DiskAutoresize() cdktf.IResolvable
 	DiskAutoresizeLimit() *float64
 	DiskSize() *float64
@@ -193,6 +194,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) Databas
 	_jsii_.Get(
 		j,
 		"databaseFlags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) DenyMaintenancePeriod() DataGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodList {
+	var returns DataGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodList
+	_jsii_.Get(
+		j,
+		"denyMaintenancePeriod",
 		&returns,
 	)
 	return returns

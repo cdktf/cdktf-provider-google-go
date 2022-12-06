@@ -183,6 +183,14 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) validateSetIncludeHttpHeadersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) validateSetIncludeNamedCookiesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

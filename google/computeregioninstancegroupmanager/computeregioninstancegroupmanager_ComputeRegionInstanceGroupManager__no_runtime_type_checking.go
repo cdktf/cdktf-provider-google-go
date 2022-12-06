@@ -116,6 +116,10 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetLifecycleParame
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetListManagedInstancesResultsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionInstanceGroupManager) validateSetNameParameters(val *string) error {
 	return nil
 }

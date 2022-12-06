@@ -20,11 +20,15 @@ type ComputeRegionUrlMapDefaultRouteActionOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	CorsPolicy() ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference
+	CorsPolicyInput() *ComputeRegionUrlMapDefaultRouteActionCorsPolicy
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FaultInjectionPolicy() ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference
+	FaultInjectionPolicyInput() *ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComputeRegionUrlMapDefaultRouteAction
@@ -41,6 +45,10 @@ type ComputeRegionUrlMapDefaultRouteActionOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Timeout() ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference
+	TimeoutInput() *ComputeRegionUrlMapDefaultRouteActionTimeout
+	UrlRewrite() ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference
+	UrlRewriteInput() *ComputeRegionUrlMapDefaultRouteActionUrlRewrite
 	WeightedBackendServices() ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList
 	WeightedBackendServicesInput() interface{}
 	// Experimental.
@@ -67,11 +75,19 @@ type ComputeRegionUrlMapDefaultRouteActionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCorsPolicy(value *ComputeRegionUrlMapDefaultRouteActionCorsPolicy)
+	PutFaultInjectionPolicy(value *ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy)
 	PutRequestMirrorPolicy(value *ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy)
 	PutRetryPolicy(value *ComputeRegionUrlMapDefaultRouteActionRetryPolicy)
+	PutTimeout(value *ComputeRegionUrlMapDefaultRouteActionTimeout)
+	PutUrlRewrite(value *ComputeRegionUrlMapDefaultRouteActionUrlRewrite)
 	PutWeightedBackendServices(value interface{})
+	ResetCorsPolicy()
+	ResetFaultInjectionPolicy()
 	ResetRequestMirrorPolicy()
 	ResetRetryPolicy()
+	ResetTimeout()
+	ResetUrlRewrite()
 	ResetWeightedBackendServices()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,11 +124,51 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) Complex
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) CorsPolicy() ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference {
+	var returns ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"corsPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) CorsPolicyInput() *ComputeRegionUrlMapDefaultRouteActionCorsPolicy {
+	var returns *ComputeRegionUrlMapDefaultRouteActionCorsPolicy
+	_jsii_.Get(
+		j,
+		"corsPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) FaultInjectionPolicy() ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference {
+	var returns ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"faultInjectionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) FaultInjectionPolicyInput() *ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy {
+	var returns *ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy
+	_jsii_.Get(
+		j,
+		"faultInjectionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -193,6 +249,46 @@ func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) Terrafo
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) Timeout() ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference {
+	var returns ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference
+	_jsii_.Get(
+		j,
+		"timeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) TimeoutInput() *ComputeRegionUrlMapDefaultRouteActionTimeout {
+	var returns *ComputeRegionUrlMapDefaultRouteActionTimeout
+	_jsii_.Get(
+		j,
+		"timeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) UrlRewrite() ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference {
+	var returns ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference
+	_jsii_.Get(
+		j,
+		"urlRewrite",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) UrlRewriteInput() *ComputeRegionUrlMapDefaultRouteActionUrlRewrite {
+	var returns *ComputeRegionUrlMapDefaultRouteActionUrlRewrite
+	_jsii_.Get(
+		j,
+		"urlRewriteInput",
 		&returns,
 	)
 	return returns
@@ -487,6 +583,28 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) Interpo
 	return returns
 }
 
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) PutCorsPolicy(value *ComputeRegionUrlMapDefaultRouteActionCorsPolicy) {
+	if err := c.validatePutCorsPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCorsPolicy",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) PutFaultInjectionPolicy(value *ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy) {
+	if err := c.validatePutFaultInjectionPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putFaultInjectionPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) PutRequestMirrorPolicy(value *ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy) {
 	if err := c.validatePutRequestMirrorPolicyParameters(value); err != nil {
 		panic(err)
@@ -509,6 +627,28 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) PutRetr
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) PutTimeout(value *ComputeRegionUrlMapDefaultRouteActionTimeout) {
+	if err := c.validatePutTimeoutParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTimeout",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) PutUrlRewrite(value *ComputeRegionUrlMapDefaultRouteActionUrlRewrite) {
+	if err := c.validatePutUrlRewriteParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putUrlRewrite",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) PutWeightedBackendServices(value interface{}) {
 	if err := c.validatePutWeightedBackendServicesParameters(value); err != nil {
 		panic(err)
@@ -517,6 +657,22 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) PutWeig
 		c,
 		"putWeightedBackendServices",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) ResetCorsPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCorsPolicy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) ResetFaultInjectionPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFaultInjectionPolicy",
+		nil, // no parameters
 	)
 }
 
@@ -532,6 +688,22 @@ func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) ResetRe
 	_jsii_.InvokeVoid(
 		c,
 		"resetRetryPolicy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) ResetTimeout() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTimeout",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionUrlMapDefaultRouteActionOutputReference) ResetUrlRewrite() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUrlRewrite",
 		nil, // no parameters
 	)
 }

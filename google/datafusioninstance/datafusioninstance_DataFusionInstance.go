@@ -12,6 +12,7 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/google/r/data_fusion_instance google_data_fusion_instance}.
 type DataFusionInstance interface {
 	cdktf.TerraformResource
+	ApiEndpoint() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -37,6 +38,9 @@ type DataFusionInstance interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisplayName() *string
+	SetDisplayName(val *string)
+	DisplayNameInput() *string
 	EnableRbac() interface{}
 	SetEnableRbac(val interface{})
 	EnableRbacInput() interface{}
@@ -46,6 +50,8 @@ type DataFusionInstance interface {
 	EnableStackdriverMonitoring() interface{}
 	SetEnableStackdriverMonitoring(val interface{})
 	EnableStackdriverMonitoringInput() interface{}
+	EventPublishConfig() DataFusionInstanceEventPublishConfigOutputReference
+	EventPublishConfigInput() *DataFusionInstanceEventPublishConfig
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -75,6 +81,7 @@ type DataFusionInstance interface {
 	Options() *map[string]*string
 	SetOptions(val *map[string]*string)
 	OptionsInput() *map[string]*string
+	P4ServiceAccount() *string
 	PrivateInstance() interface{}
 	SetPrivateInstance(val interface{})
 	PrivateInstanceInput() interface{}
@@ -113,6 +120,9 @@ type DataFusionInstance interface {
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
+	Zone() *string
+	SetZone(val *string)
+	ZoneInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -139,14 +149,17 @@ type DataFusionInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCryptoKeyConfig(value *DataFusionInstanceCryptoKeyConfig)
+	PutEventPublishConfig(value *DataFusionInstanceEventPublishConfig)
 	PutNetworkConfig(value *DataFusionInstanceNetworkConfig)
 	PutTimeouts(value *DataFusionInstanceTimeouts)
 	ResetCryptoKeyConfig()
 	ResetDataprocServiceAccount()
 	ResetDescription()
+	ResetDisplayName()
 	ResetEnableRbac()
 	ResetEnableStackdriverLogging()
 	ResetEnableStackdriverMonitoring()
+	ResetEventPublishConfig()
 	ResetId()
 	ResetLabels()
 	ResetNetworkConfig()
@@ -159,6 +172,7 @@ type DataFusionInstance interface {
 	ResetRegion()
 	ResetTimeouts()
 	ResetVersion()
+	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -172,6 +186,16 @@ type DataFusionInstance interface {
 // The jsii proxy struct for DataFusionInstance
 type jsiiProxy_DataFusionInstance struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DataFusionInstance) ApiEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiEndpoint",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataFusionInstance) CdktfStack() cdktf.TerraformStack {
@@ -294,6 +318,26 @@ func (j *jsiiProxy_DataFusionInstance) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataFusionInstance) DisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFusionInstance) DisplayNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataFusionInstance) EnableRbac() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -349,6 +393,26 @@ func (j *jsiiProxy_DataFusionInstance) EnableStackdriverMonitoringInput() interf
 	_jsii_.Get(
 		j,
 		"enableStackdriverMonitoringInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFusionInstance) EventPublishConfig() DataFusionInstanceEventPublishConfigOutputReference {
+	var returns DataFusionInstanceEventPublishConfigOutputReference
+	_jsii_.Get(
+		j,
+		"eventPublishConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFusionInstance) EventPublishConfigInput() *DataFusionInstanceEventPublishConfig {
+	var returns *DataFusionInstanceEventPublishConfig
+	_jsii_.Get(
+		j,
+		"eventPublishConfigInput",
 		&returns,
 	)
 	return returns
@@ -509,6 +573,16 @@ func (j *jsiiProxy_DataFusionInstance) OptionsInput() *map[string]*string {
 	_jsii_.Get(
 		j,
 		"optionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFusionInstance) P4ServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"p4ServiceAccount",
 		&returns,
 	)
 	return returns
@@ -744,6 +818,26 @@ func (j *jsiiProxy_DataFusionInstance) VersionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataFusionInstance) Zone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFusionInstance) ZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/google/r/data_fusion_instance google_data_fusion_instance} Resource.
 func NewDataFusionInstance(scope constructs.Construct, id *string, config *DataFusionInstanceConfig) DataFusionInstance {
@@ -819,6 +913,17 @@ func (j *jsiiProxy_DataFusionInstance)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataFusionInstance)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"displayName",
 		val,
 	)
 }
@@ -989,6 +1094,17 @@ func (j *jsiiProxy_DataFusionInstance)SetVersion(val *string) {
 	_jsii_.Set(
 		j,
 		"version",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataFusionInstance)SetZone(val *string) {
+	if err := j.validateSetZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zone",
 		val,
 	)
 }
@@ -1270,6 +1386,17 @@ func (d *jsiiProxy_DataFusionInstance) PutCryptoKeyConfig(value *DataFusionInsta
 	)
 }
 
+func (d *jsiiProxy_DataFusionInstance) PutEventPublishConfig(value *DataFusionInstanceEventPublishConfig) {
+	if err := d.validatePutEventPublishConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putEventPublishConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataFusionInstance) PutNetworkConfig(value *DataFusionInstanceNetworkConfig) {
 	if err := d.validatePutNetworkConfigParameters(value); err != nil {
 		panic(err)
@@ -1316,6 +1443,14 @@ func (d *jsiiProxy_DataFusionInstance) ResetDescription() {
 	)
 }
 
+func (d *jsiiProxy_DataFusionInstance) ResetDisplayName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataFusionInstance) ResetEnableRbac() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1336,6 +1471,14 @@ func (d *jsiiProxy_DataFusionInstance) ResetEnableStackdriverMonitoring() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetEnableStackdriverMonitoring",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFusionInstance) ResetEventPublishConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEventPublishConfig",
 		nil, // no parameters
 	)
 }
@@ -1416,6 +1559,14 @@ func (d *jsiiProxy_DataFusionInstance) ResetVersion() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetVersion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataFusionInstance) ResetZone() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetZone",
 		nil, // no parameters
 	)
 }

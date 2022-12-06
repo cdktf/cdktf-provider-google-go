@@ -80,6 +80,10 @@ type ContainerClusterNodeConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#reservation_affinity ContainerCluster#reservation_affinity}
 	ReservationAffinity *ContainerClusterNodeConfigReservationAffinity `field:"optional" json:"reservationAffinity" yaml:"reservationAffinity"`
+	// The GCE resource labels (a map of key/value pairs) to be applied to the node pool.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#resource_labels ContainerCluster#resource_labels}
+	ResourceLabels *map[string]*string `field:"optional" json:"resourceLabels" yaml:"resourceLabels"`
 	// The Google Cloud Platform Service Account to be used by the node VMs.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#service_account ContainerCluster#service_account}

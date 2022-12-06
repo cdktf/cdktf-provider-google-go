@@ -76,6 +76,10 @@ func (j *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validateSetPrivateEndpointSubnetworkParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

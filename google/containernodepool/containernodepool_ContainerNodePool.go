@@ -67,6 +67,8 @@ type ContainerNodePool interface {
 	NamePrefix() *string
 	SetNamePrefix(val *string)
 	NamePrefixInput() *string
+	NetworkConfig() ContainerNodePoolNetworkConfigOutputReference
+	NetworkConfigInput() *ContainerNodePoolNetworkConfig
 	// The tree node.
 	Node() constructs.Node
 	NodeConfig() ContainerNodePoolNodeConfigOutputReference
@@ -131,6 +133,7 @@ type ContainerNodePool interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscaling(value *ContainerNodePoolAutoscaling)
 	PutManagement(value *ContainerNodePoolManagement)
+	PutNetworkConfig(value *ContainerNodePoolNetworkConfig)
 	PutNodeConfig(value *ContainerNodePoolNodeConfig)
 	PutTimeouts(value *ContainerNodePoolTimeouts)
 	PutUpgradeSettings(value *ContainerNodePoolUpgradeSettings)
@@ -142,6 +145,7 @@ type ContainerNodePool interface {
 	ResetMaxPodsPerNode()
 	ResetName()
 	ResetNamePrefix()
+	ResetNetworkConfig()
 	ResetNodeConfig()
 	ResetNodeCount()
 	ResetNodeLocations()
@@ -452,6 +456,26 @@ func (j *jsiiProxy_ContainerNodePool) NamePrefixInput() *string {
 	_jsii_.Get(
 		j,
 		"namePrefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePool) NetworkConfig() ContainerNodePoolNetworkConfigOutputReference {
+	var returns ContainerNodePoolNetworkConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePool) NetworkConfigInput() *ContainerNodePoolNetworkConfig {
+	var returns *ContainerNodePoolNetworkConfig
+	_jsii_.Get(
+		j,
+		"networkConfigInput",
 		&returns,
 	)
 	return returns
@@ -1181,6 +1205,17 @@ func (c *jsiiProxy_ContainerNodePool) PutManagement(value *ContainerNodePoolMana
 	)
 }
 
+func (c *jsiiProxy_ContainerNodePool) PutNetworkConfig(value *ContainerNodePoolNetworkConfig) {
+	if err := c.validatePutNetworkConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNetworkConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerNodePool) PutNodeConfig(value *ContainerNodePoolNodeConfig) {
 	if err := c.validatePutNodeConfigParameters(value); err != nil {
 		panic(err)
@@ -1274,6 +1309,14 @@ func (c *jsiiProxy_ContainerNodePool) ResetNamePrefix() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetNamePrefix",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePool) ResetNetworkConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNetworkConfig",
 		nil, // no parameters
 	)
 }

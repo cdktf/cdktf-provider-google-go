@@ -218,6 +218,14 @@ func (j *jsiiProxy_BigtableGcPolicy) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_BigtableGcPolicy) validateSetDeletionPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BigtableGcPolicy) validateSetGcRulesParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

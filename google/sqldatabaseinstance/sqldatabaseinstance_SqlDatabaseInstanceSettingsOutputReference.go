@@ -43,6 +43,8 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	CreationStack() *[]*string
 	DatabaseFlags() SqlDatabaseInstanceSettingsDatabaseFlagsList
 	DatabaseFlagsInput() interface{}
+	DenyMaintenancePeriod() SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference
+	DenyMaintenancePeriodInput() *SqlDatabaseInstanceSettingsDenyMaintenancePeriod
 	DiskAutoresize() interface{}
 	SetDiskAutoresize(val interface{})
 	DiskAutoresizeInput() interface{}
@@ -119,6 +121,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	PutActiveDirectoryConfig(value *SqlDatabaseInstanceSettingsActiveDirectoryConfig)
 	PutBackupConfiguration(value *SqlDatabaseInstanceSettingsBackupConfiguration)
 	PutDatabaseFlags(value interface{})
+	PutDenyMaintenancePeriod(value *SqlDatabaseInstanceSettingsDenyMaintenancePeriod)
 	PutInsightsConfig(value *SqlDatabaseInstanceSettingsInsightsConfig)
 	PutIpConfiguration(value *SqlDatabaseInstanceSettingsIpConfiguration)
 	PutLocationPreference(value *SqlDatabaseInstanceSettingsLocationPreference)
@@ -132,6 +135,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ResetCollation()
 	ResetConnectorEnforcement()
 	ResetDatabaseFlags()
+	ResetDenyMaintenancePeriod()
 	ResetDiskAutoresize()
 	ResetDiskAutoresizeLimit()
 	ResetDiskSize()
@@ -325,6 +329,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DatabaseFlagsInpu
 	_jsii_.Get(
 		j,
 		"databaseFlagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DenyMaintenancePeriod() SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference {
+	var returns SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference
+	_jsii_.Get(
+		j,
+		"denyMaintenancePeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DenyMaintenancePeriodInput() *SqlDatabaseInstanceSettingsDenyMaintenancePeriod {
+	var returns *SqlDatabaseInstanceSettingsDenyMaintenancePeriod
+	_jsii_.Get(
+		j,
+		"denyMaintenancePeriodInput",
 		&returns,
 	)
 	return returns
@@ -1094,6 +1118,17 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutDatabaseFlags(
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutDenyMaintenancePeriod(value *SqlDatabaseInstanceSettingsDenyMaintenancePeriod) {
+	if err := s.validatePutDenyMaintenancePeriodParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putDenyMaintenancePeriod",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutInsightsConfig(value *SqlDatabaseInstanceSettingsInsightsConfig) {
 	if err := s.validatePutInsightsConfigParameters(value); err != nil {
 		panic(err)
@@ -1212,6 +1247,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetDatabaseFlag
 	_jsii_.InvokeVoid(
 		s,
 		"resetDatabaseFlags",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetDenyMaintenancePeriod() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDenyMaintenancePeriod",
 		nil, // no parameters
 	)
 }

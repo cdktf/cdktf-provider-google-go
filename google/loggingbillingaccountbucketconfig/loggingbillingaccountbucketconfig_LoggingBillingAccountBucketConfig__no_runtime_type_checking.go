@@ -52,6 +52,10 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateOverrideLogicalIdP
 	return nil
 }
 
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validatePutCmekSettingsParameters(value *LoggingBillingAccountBucketConfigCmekSettings) error {
+	return nil
+}
+
 func validateLoggingBillingAccountBucketConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }

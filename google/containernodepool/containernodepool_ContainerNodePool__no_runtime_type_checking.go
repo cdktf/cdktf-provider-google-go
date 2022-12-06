@@ -60,6 +60,10 @@ func (c *jsiiProxy_ContainerNodePool) validatePutManagementParameters(value *Con
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePool) validatePutNetworkConfigParameters(value *ContainerNodePoolNetworkConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePool) validatePutNodeConfigParameters(value *ContainerNodePoolNodeConfig) error {
 	return nil
 }

@@ -31,6 +31,14 @@ type BigtableGcPolicyConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigtable_gc_policy#table BigtableGcPolicy#table}
 	Table *string `field:"required" json:"table" yaml:"table"`
+	// The deletion policy for the GC policy.
+	//
+	// Setting ABANDON allows the resource
+	// to be abandoned rather than deleted. This is useful for GC policy as it cannot be deleted
+	// in a replicated instance. Possible values are: "ABANDON".
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigtable_gc_policy#deletion_policy BigtableGcPolicy#deletion_policy}
+	DeletionPolicy *string `field:"optional" json:"deletionPolicy" yaml:"deletionPolicy"`
 	// Serialized JSON string for garbage collection policy. Conflicts with "mode", "max_age" and "max_version".
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigtable_gc_policy#gc_rules BigtableGcPolicy#gc_rules}
@@ -48,7 +56,9 @@ type BigtableGcPolicyConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigtable_gc_policy#max_version BigtableGcPolicy#max_version}
 	MaxVersion interface{} `field:"optional" json:"maxVersion" yaml:"maxVersion"`
-	// If multiple policies are set, you should choose between UNION OR INTERSECTION.
+	// NOTE: 'gc_rules' is more flexible, and should be preferred over this field for new resources.
+	//
+	// This field may be deprecated in the future. If multiple policies are set, you should choose between UNION OR INTERSECTION.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigtable_gc_policy#mode BigtableGcPolicy#mode}
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`

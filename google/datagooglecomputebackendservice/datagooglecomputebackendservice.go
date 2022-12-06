@@ -197,6 +197,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "includeHost", GoGetter: "IncludeHost"},
+			_jsii_.MemberProperty{JsiiProperty: "includeHttpHeaders", GoGetter: "IncludeHttpHeaders"},
 			_jsii_.MemberProperty{JsiiProperty: "includeNamedCookies", GoGetter: "IncludeNamedCookies"},
 			_jsii_.MemberProperty{JsiiProperty: "includeProtocol", GoGetter: "IncludeProtocol"},
 			_jsii_.MemberProperty{JsiiProperty: "includeQueryString", GoGetter: "IncludeQueryString"},

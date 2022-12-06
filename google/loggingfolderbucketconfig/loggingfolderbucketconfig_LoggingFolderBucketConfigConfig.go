@@ -31,6 +31,10 @@ type LoggingFolderBucketConfigConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/logging_folder_bucket_config#location LoggingFolderBucketConfig#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
+	// cmek_settings block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/logging_folder_bucket_config#cmek_settings LoggingFolderBucketConfig#cmek_settings}
+	CmekSettings *LoggingFolderBucketConfigCmekSettings `field:"optional" json:"cmekSettings" yaml:"cmekSettings"`
 	// An optional description for this bucket.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/logging_folder_bucket_config#description LoggingFolderBucketConfig#description}

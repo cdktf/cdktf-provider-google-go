@@ -56,6 +56,12 @@ type ComputeRegionInstanceGroupManagerConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Pagination behavior of the listManagedInstances API method for this managed instance group.
+	//
+	// Valid values are: "PAGELESS", "PAGINATED". If PAGELESS (default), Pagination is disabled for the group's listManagedInstances API method. maxResults and pageToken query parameters are ignored and all instances are returned in a single response. If PAGINATED, pagination is enabled, maxResults and pageToken query parameters are respected.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_region_instance_group_manager#list_managed_instances_results ComputeRegionInstanceGroupManager#list_managed_instances_results}
+	ListManagedInstancesResults *string `field:"optional" json:"listManagedInstancesResults" yaml:"listManagedInstancesResults"`
 	// named_port block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_region_instance_group_manager#named_port ComputeRegionInstanceGroupManager#named_port}

@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataFusionInstance) validatePutCryptoKeyConfigParameters(valu
 	return nil
 }
 
+func (d *jsiiProxy_DataFusionInstance) validatePutEventPublishConfigParameters(value *DataFusionInstanceEventPublishConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFusionInstance) validatePutNetworkConfigParameters(value *DataFusionInstanceNetworkConfig) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (j *jsiiProxy_DataFusionInstance) validateSetDataprocServiceAccountParamete
 }
 
 func (j *jsiiProxy_DataFusionInstance) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataFusionInstance) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }
 
@@ -141,6 +149,10 @@ func (j *jsiiProxy_DataFusionInstance) validateSetTypeParameters(val *string) er
 }
 
 func (j *jsiiProxy_DataFusionInstance) validateSetVersionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataFusionInstance) validateSetZoneParameters(val *string) error {
 	return nil
 }
 

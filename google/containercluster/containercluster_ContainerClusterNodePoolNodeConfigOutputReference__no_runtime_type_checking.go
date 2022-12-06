@@ -140,6 +140,10 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSetResourceLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSetServiceAccountParameters(val *string) error {
 	return nil
 }

@@ -31,6 +31,10 @@ type LoggingBillingAccountBucketConfigConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/logging_billing_account_bucket_config#location LoggingBillingAccountBucketConfig#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
+	// cmek_settings block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/logging_billing_account_bucket_config#cmek_settings LoggingBillingAccountBucketConfig#cmek_settings}
+	CmekSettings *LoggingBillingAccountBucketConfigCmekSettings `field:"optional" json:"cmekSettings" yaml:"cmekSettings"`
 	// An optional description for this bucket.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/logging_billing_account_bucket_config#description LoggingBillingAccountBucketConfig#description}

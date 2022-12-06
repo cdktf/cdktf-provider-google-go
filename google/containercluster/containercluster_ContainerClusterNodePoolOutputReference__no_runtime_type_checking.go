@@ -52,6 +52,10 @@ func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) validatePutManagemen
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) validatePutNetworkConfigParameters(value *ContainerClusterNodePoolNetworkConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) validatePutNodeConfigParameters(value *ContainerClusterNodePoolNodeConfig) error {
 	return nil
 }

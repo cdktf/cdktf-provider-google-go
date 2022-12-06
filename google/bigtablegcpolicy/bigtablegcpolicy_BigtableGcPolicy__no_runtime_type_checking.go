@@ -80,6 +80,10 @@ func (j *jsiiProxy_BigtableGcPolicy) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_BigtableGcPolicy) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigtableGcPolicy) validateSetGcRulesParameters(val *string) error {
 	return nil
 }

@@ -6,7 +6,7 @@ type CloudRunServiceTemplateSpecContainersPorts struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloud_run_service#container_port CloudRunService#container_port}
 	ContainerPort *float64 `field:"optional" json:"containerPort" yaml:"containerPort"`
-	// If specified, used to specify which protocol to use. Allowed values are "http1" and "h2c".
+	// If specified, used to specify which protocol to use. Allowed values are "http1" (HTTP/1) and "h2c" (HTTP/2 end-to-end).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloud_run_service#name CloudRunService#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`

@@ -17,6 +17,8 @@ type LoggingOrganizationBucketConfig interface {
 	BucketIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CmekSettings() LoggingOrganizationBucketConfigCmekSettingsOutputReference
+	CmekSettingsInput() *LoggingOrganizationBucketConfigCmekSettings
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -103,6 +105,8 @@ type LoggingOrganizationBucketConfig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCmekSettings(value *LoggingOrganizationBucketConfigCmekSettings)
+	ResetCmekSettings()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_LoggingOrganizationBucketConfig) CdktfStack() cdktf.Terraform
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoggingOrganizationBucketConfig) CmekSettings() LoggingOrganizationBucketConfigCmekSettingsOutputReference {
+	var returns LoggingOrganizationBucketConfigCmekSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"cmekSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoggingOrganizationBucketConfig) CmekSettingsInput() *LoggingOrganizationBucketConfigCmekSettings {
+	var returns *LoggingOrganizationBucketConfigCmekSettings
+	_jsii_.Get(
+		j,
+		"cmekSettingsInput",
 		&returns,
 	)
 	return returns
@@ -848,6 +872,25 @@ func (l *jsiiProxy_LoggingOrganizationBucketConfig) OverrideLogicalId(newLogical
 		l,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (l *jsiiProxy_LoggingOrganizationBucketConfig) PutCmekSettings(value *LoggingOrganizationBucketConfigCmekSettings) {
+	if err := l.validatePutCmekSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putCmekSettings",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LoggingOrganizationBucketConfig) ResetCmekSettings() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetCmekSettings",
+		nil, // no parameters
 	)
 }
 

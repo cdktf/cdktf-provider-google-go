@@ -30,6 +30,9 @@ type SqlDatabase interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DeletionPolicy() *string
+	SetDeletionPolicy(val *string)
+	DeletionPolicyInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -107,6 +110,7 @@ type SqlDatabase interface {
 	PutTimeouts(value *SqlDatabaseTimeouts)
 	ResetCharset()
 	ResetCollation()
+	ResetDeletionPolicy()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -203,6 +207,26 @@ func (j *jsiiProxy_SqlDatabase) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabase) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabase) DeletionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -505,6 +529,17 @@ func (j *jsiiProxy_SqlDatabase)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabase)SetDeletionPolicy(val *string) {
+	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionPolicy",
 		val,
 	)
 }
@@ -888,6 +923,14 @@ func (s *jsiiProxy_SqlDatabase) ResetCollation() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCollation",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabase) ResetDeletionPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDeletionPolicy",
 		nil, // no parameters
 	)
 }

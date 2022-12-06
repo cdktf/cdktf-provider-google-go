@@ -59,6 +59,9 @@ type ComputeRegionInstanceGroupManager interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ListManagedInstancesResults() *string
+	SetListManagedInstancesResults(val *string)
+	ListManagedInstancesResultsInput() *string
 	Name() *string
 	SetName(val *string)
 	NamedPort() ComputeRegionInstanceGroupManagerNamedPortList
@@ -146,6 +149,7 @@ type ComputeRegionInstanceGroupManager interface {
 	ResetDistributionPolicyTargetShape()
 	ResetDistributionPolicyZones()
 	ResetId()
+	ResetListManagedInstancesResults()
 	ResetNamedPort()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -399,6 +403,26 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManager) Lifecycle() *cdktf.Terrafo
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) ListManagedInstancesResults() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listManagedInstancesResults",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) ListManagedInstancesResultsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listManagedInstancesResultsInput",
 		&returns,
 	)
 	return returns
@@ -861,6 +885,17 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManager)SetLifecycle(val *cdktf.Ter
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager)SetListManagedInstancesResults(val *string) {
+	if err := j.validateSetListManagedInstancesResultsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"listManagedInstancesResults",
 		val,
 	)
 }
@@ -1329,6 +1364,14 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) ResetListManagedInstancesResults() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetListManagedInstancesResults",
 		nil, // no parameters
 	)
 }

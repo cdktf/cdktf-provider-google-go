@@ -28,6 +28,7 @@ type DataGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference inter
 	// Experimental.
 	Fqn() *string
 	IncludeHost() cdktf.IResolvable
+	IncludeHttpHeaders() *[]*string
 	IncludeNamedCookies() *[]*string
 	IncludeProtocol() cdktf.IResolvable
 	IncludeQueryString() cdktf.IResolvable
@@ -127,6 +128,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputR
 	_jsii_.Get(
 		j,
 		"includeHost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) IncludeHttpHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeHttpHeaders",
 		&returns,
 	)
 	return returns

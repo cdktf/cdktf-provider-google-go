@@ -54,6 +54,9 @@ type ComputeRouterInterface interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PrivateIpAddress() *string
+	SetPrivateIpAddress(val *string)
+	PrivateIpAddressInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -76,6 +79,9 @@ type ComputeRouterInterface interface {
 	Router() *string
 	SetRouter(val *string)
 	RouterInput() *string
+	Subnetwork() *string
+	SetSubnetwork(val *string)
+	SubnetworkInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -119,9 +125,11 @@ type ComputeRouterInterface interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrivateIpAddress()
 	ResetProject()
 	ResetRedundantInterface()
 	ResetRegion()
+	ResetSubnetwork()
 	ResetTimeouts()
 	ResetVpnTunnel()
 	SynthesizeAttributes() *map[string]interface{}
@@ -319,6 +327,26 @@ func (j *jsiiProxy_ComputeRouterInterface) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRouterInterface) PrivateIpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateIpAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterInterface) PrivateIpAddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateIpAddressInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRouterInterface) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -424,6 +452,26 @@ func (j *jsiiProxy_ComputeRouterInterface) RouterInput() *string {
 	_jsii_.Get(
 		j,
 		"routerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterInterface) Subnetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterInterface) SubnetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetworkInput",
 		&returns,
 	)
 	return returns
@@ -619,6 +667,17 @@ func (j *jsiiProxy_ComputeRouterInterface)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ComputeRouterInterface)SetPrivateIpAddress(val *string) {
+	if err := j.validateSetPrivateIpAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateIpAddress",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeRouterInterface)SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
@@ -678,6 +737,17 @@ func (j *jsiiProxy_ComputeRouterInterface)SetRouter(val *string) {
 	_jsii_.Set(
 		j,
 		"router",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterInterface)SetSubnetwork(val *string) {
+	if err := j.validateSetSubnetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subnetwork",
 		val,
 	)
 }
@@ -1002,6 +1072,14 @@ func (c *jsiiProxy_ComputeRouterInterface) ResetOverrideLogicalId() {
 	)
 }
 
+func (c *jsiiProxy_ComputeRouterInterface) ResetPrivateIpAddress() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPrivateIpAddress",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeRouterInterface) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1022,6 +1100,14 @@ func (c *jsiiProxy_ComputeRouterInterface) ResetRegion() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterInterface) ResetSubnetwork() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSubnetwork",
 		nil, // no parameters
 	)
 }

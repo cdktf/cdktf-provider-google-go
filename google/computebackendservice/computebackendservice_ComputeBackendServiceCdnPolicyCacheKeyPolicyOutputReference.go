@@ -30,6 +30,9 @@ type ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference interface {
 	IncludeHost() interface{}
 	SetIncludeHost(val interface{})
 	IncludeHostInput() interface{}
+	IncludeHttpHeaders() *[]*string
+	SetIncludeHttpHeaders(val *[]*string)
+	IncludeHttpHeadersInput() *[]*string
 	IncludeNamedCookies() *[]*string
 	SetIncludeNamedCookies(val *[]*string)
 	IncludeNamedCookiesInput() *[]*string
@@ -80,6 +83,7 @@ type ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIncludeHost()
+	ResetIncludeHttpHeaders()
 	ResetIncludeNamedCookies()
 	ResetIncludeProtocol()
 	ResetIncludeQueryString()
@@ -155,6 +159,26 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) 
 	_jsii_.Get(
 		j,
 		"includeHostInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) IncludeHttpHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeHttpHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) IncludeHttpHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeHttpHeadersInput",
 		&returns,
 	)
 	return returns
@@ -347,6 +371,17 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference)S
 	_jsii_.Set(
 		j,
 		"includeHost",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference)SetIncludeHttpHeaders(val *[]*string) {
+	if err := j.validateSetIncludeHttpHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeHttpHeaders",
 		val,
 	)
 }
@@ -629,6 +664,14 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) 
 	_jsii_.InvokeVoid(
 		c,
 		"resetIncludeHost",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) ResetIncludeHttpHeaders() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIncludeHttpHeaders",
 		nil, // no parameters
 	)
 }

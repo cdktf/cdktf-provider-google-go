@@ -140,6 +140,10 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetPreemp
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetResourceLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetServiceAccountParameters(val *string) error {
 	return nil
 }

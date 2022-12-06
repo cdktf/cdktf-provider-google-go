@@ -31,6 +31,10 @@ type LoggingProjectBucketConfigConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/logging_project_bucket_config#project LoggingProjectBucketConfig#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
+	// cmek_settings block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/logging_project_bucket_config#cmek_settings LoggingProjectBucketConfig#cmek_settings}
+	CmekSettings *LoggingProjectBucketConfigCmekSettings `field:"optional" json:"cmekSettings" yaml:"cmekSettings"`
 	// An optional description for this bucket.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/logging_project_bucket_config#description LoggingProjectBucketConfig#description}

@@ -42,6 +42,10 @@ type SqlDatabaseInstanceSettings struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#database_flags SqlDatabaseInstance#database_flags}
 	DatabaseFlags interface{} `field:"optional" json:"databaseFlags" yaml:"databaseFlags"`
+	// deny_maintenance_period block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#deny_maintenance_period SqlDatabaseInstance#deny_maintenance_period}
+	DenyMaintenancePeriod *SqlDatabaseInstanceSettingsDenyMaintenancePeriod `field:"optional" json:"denyMaintenancePeriod" yaml:"denyMaintenancePeriod"`
 	// Enables auto-resizing of the storage size. Defaults to true.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#disk_autoresize SqlDatabaseInstance#disk_autoresize}

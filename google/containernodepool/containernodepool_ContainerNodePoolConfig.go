@@ -60,6 +60,10 @@ type ContainerNodePoolConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_node_pool#name_prefix ContainerNodePool#name_prefix}
 	NamePrefix *string `field:"optional" json:"namePrefix" yaml:"namePrefix"`
+	// network_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_node_pool#network_config ContainerNodePool#network_config}
+	NetworkConfig *ContainerNodePoolNetworkConfig `field:"optional" json:"networkConfig" yaml:"networkConfig"`
 	// node_config block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_node_pool#node_config ContainerNodePool#node_config}

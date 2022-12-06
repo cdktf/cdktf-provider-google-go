@@ -47,6 +47,8 @@ type ContainerClusterNodePoolOutputReference interface {
 	NamePrefix() *string
 	SetNamePrefix(val *string)
 	NamePrefixInput() *string
+	NetworkConfig() ContainerClusterNodePoolNetworkConfigOutputReference
+	NetworkConfigInput() *ContainerClusterNodePoolNetworkConfig
 	NodeConfig() ContainerClusterNodePoolNodeConfigOutputReference
 	NodeConfigInput() *ContainerClusterNodePoolNodeConfig
 	NodeCount() *float64
@@ -94,6 +96,7 @@ type ContainerClusterNodePoolOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAutoscaling(value *ContainerClusterNodePoolAutoscaling)
 	PutManagement(value *ContainerClusterNodePoolManagement)
+	PutNetworkConfig(value *ContainerClusterNodePoolNetworkConfig)
 	PutNodeConfig(value *ContainerClusterNodePoolNodeConfig)
 	PutUpgradeSettings(value *ContainerClusterNodePoolUpgradeSettings)
 	ResetAutoscaling()
@@ -102,6 +105,7 @@ type ContainerClusterNodePoolOutputReference interface {
 	ResetMaxPodsPerNode()
 	ResetName()
 	ResetNamePrefix()
+	ResetNetworkConfig()
 	ResetNodeConfig()
 	ResetNodeCount()
 	ResetNodeLocations()
@@ -307,6 +311,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) NamePrefixInput() *s
 	_jsii_.Get(
 		j,
 		"namePrefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) NetworkConfig() ContainerClusterNodePoolNetworkConfigOutputReference {
+	var returns ContainerClusterNodePoolNetworkConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) NetworkConfigInput() *ContainerClusterNodePoolNetworkConfig {
+	var returns *ContainerClusterNodePoolNetworkConfig
+	_jsii_.Get(
+		j,
+		"networkConfigInput",
 		&returns,
 	)
 	return returns
@@ -800,6 +824,17 @@ func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) PutManagement(value 
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) PutNetworkConfig(value *ContainerClusterNodePoolNetworkConfig) {
+	if err := c.validatePutNetworkConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNetworkConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) PutNodeConfig(value *ContainerClusterNodePoolNodeConfig) {
 	if err := c.validatePutNodeConfigParameters(value); err != nil {
 		panic(err)
@@ -866,6 +901,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) ResetNamePrefix() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetNamePrefix",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) ResetNetworkConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNetworkConfig",
 		nil, // no parameters
 	)
 }
