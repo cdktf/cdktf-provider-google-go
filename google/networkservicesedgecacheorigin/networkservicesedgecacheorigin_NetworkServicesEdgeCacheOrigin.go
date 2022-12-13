@@ -65,6 +65,10 @@ type NetworkServicesEdgeCacheOrigin interface {
 	OriginAddress() *string
 	SetOriginAddress(val *string)
 	OriginAddressInput() *string
+	OriginOverrideAction() NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference
+	OriginOverrideActionInput() *NetworkServicesEdgeCacheOriginOriginOverrideAction
+	OriginRedirect() NetworkServicesEdgeCacheOriginOriginRedirectOutputReference
+	OriginRedirectInput() *NetworkServicesEdgeCacheOriginOriginRedirect
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
@@ -123,6 +127,8 @@ type NetworkServicesEdgeCacheOrigin interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAwsV4Authentication(value *NetworkServicesEdgeCacheOriginAwsV4Authentication)
+	PutOriginOverrideAction(value *NetworkServicesEdgeCacheOriginOriginOverrideAction)
+	PutOriginRedirect(value *NetworkServicesEdgeCacheOriginOriginRedirect)
 	PutTimeout(value *NetworkServicesEdgeCacheOriginTimeout)
 	PutTimeouts(value *NetworkServicesEdgeCacheOriginTimeouts)
 	ResetAwsV4Authentication()
@@ -131,6 +137,8 @@ type NetworkServicesEdgeCacheOrigin interface {
 	ResetId()
 	ResetLabels()
 	ResetMaxAttempts()
+	ResetOriginOverrideAction()
+	ResetOriginRedirect()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -410,6 +418,46 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) OriginAddressInput() *string 
 	_jsii_.Get(
 		j,
 		"originAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) OriginOverrideAction() NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference {
+	var returns NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference
+	_jsii_.Get(
+		j,
+		"originOverrideAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) OriginOverrideActionInput() *NetworkServicesEdgeCacheOriginOriginOverrideAction {
+	var returns *NetworkServicesEdgeCacheOriginOriginOverrideAction
+	_jsii_.Get(
+		j,
+		"originOverrideActionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) OriginRedirect() NetworkServicesEdgeCacheOriginOriginRedirectOutputReference {
+	var returns NetworkServicesEdgeCacheOriginOriginRedirectOutputReference
+	_jsii_.Get(
+		j,
+		"originRedirect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) OriginRedirectInput() *NetworkServicesEdgeCacheOriginOriginRedirect {
+	var returns *NetworkServicesEdgeCacheOriginOriginRedirect
+	_jsii_.Get(
+		j,
+		"originRedirectInput",
 		&returns,
 	)
 	return returns
@@ -1088,6 +1136,28 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) PutAwsV4Authentication(value 
 	)
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) PutOriginOverrideAction(value *NetworkServicesEdgeCacheOriginOriginOverrideAction) {
+	if err := n.validatePutOriginOverrideActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putOriginOverrideAction",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) PutOriginRedirect(value *NetworkServicesEdgeCacheOriginOriginRedirect) {
+	if err := n.validatePutOriginRedirectParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putOriginRedirect",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) PutTimeout(value *NetworkServicesEdgeCacheOriginTimeout) {
 	if err := n.validatePutTimeoutParameters(value); err != nil {
 		panic(err)
@@ -1154,6 +1224,22 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetMaxAttempts() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetMaxAttempts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetOriginOverrideAction() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetOriginOverrideAction",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetOriginRedirect() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetOriginRedirect",
 		nil, // no parameters
 	)
 }

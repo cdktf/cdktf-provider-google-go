@@ -44,6 +44,10 @@ type ComputeSecurityPolicyConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_security_policy#project ComputeSecurityPolicy#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// recaptcha_options_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_security_policy#recaptcha_options_config ComputeSecurityPolicy#recaptcha_options_config}
+	RecaptchaOptionsConfig *ComputeSecurityPolicyRecaptchaOptionsConfig `field:"optional" json:"recaptchaOptionsConfig" yaml:"recaptchaOptionsConfig"`
 	// rule block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_security_policy#rule ComputeSecurityPolicy#rule}

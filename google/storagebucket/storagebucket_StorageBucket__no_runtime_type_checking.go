@@ -52,6 +52,10 @@ func (s *jsiiProxy_StorageBucket) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (s *jsiiProxy_StorageBucket) validatePutAutoclassParameters(value *StorageBucketAutoclass) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucket) validatePutCorsParameters(value interface{}) error {
 	return nil
 }

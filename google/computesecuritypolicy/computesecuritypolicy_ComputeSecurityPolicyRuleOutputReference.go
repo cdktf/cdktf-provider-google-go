@@ -33,6 +33,8 @@ type ComputeSecurityPolicyRuleOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
+	HeaderAction() ComputeSecurityPolicyRuleHeaderActionOutputReference
+	HeaderActionInput() *ComputeSecurityPolicyRuleHeaderAction
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Match() ComputeSecurityPolicyRuleMatchOutputReference
@@ -79,10 +81,12 @@ type ComputeSecurityPolicyRuleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutHeaderAction(value *ComputeSecurityPolicyRuleHeaderAction)
 	PutMatch(value *ComputeSecurityPolicyRuleMatch)
 	PutRateLimitOptions(value *ComputeSecurityPolicyRuleRateLimitOptions)
 	PutRedirectOptions(value *ComputeSecurityPolicyRuleRedirectOptions)
 	ResetDescription()
+	ResetHeaderAction()
 	ResetPreview()
 	ResetRateLimitOptions()
 	ResetRedirectOptions()
@@ -176,6 +180,26 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) HeaderAction() ComputeSecurityPolicyRuleHeaderActionOutputReference {
+	var returns ComputeSecurityPolicyRuleHeaderActionOutputReference
+	_jsii_.Get(
+		j,
+		"headerAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) HeaderActionInput() *ComputeSecurityPolicyRuleHeaderAction {
+	var returns *ComputeSecurityPolicyRuleHeaderAction
+	_jsii_.Get(
+		j,
+		"headerActionInput",
 		&returns,
 	)
 	return returns
@@ -624,6 +648,17 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) InterpolationForAtt
 	return returns
 }
 
+func (c *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) PutHeaderAction(value *ComputeSecurityPolicyRuleHeaderAction) {
+	if err := c.validatePutHeaderActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putHeaderAction",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) PutMatch(value *ComputeSecurityPolicyRuleMatch) {
 	if err := c.validatePutMatchParameters(value); err != nil {
 		panic(err)
@@ -661,6 +696,14 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) ResetDescription() 
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) ResetHeaderAction() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHeaderAction",
 		nil, // no parameters
 	)
 }

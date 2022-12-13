@@ -60,6 +60,10 @@ func (c *jsiiProxy_ComputeSecurityPolicy) validatePutAdvancedOptionsConfigParame
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSecurityPolicy) validatePutRecaptchaOptionsConfigParameters(value *ComputeSecurityPolicyRecaptchaOptionsConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSecurityPolicy) validatePutRuleParameters(value interface{}) error {
 	return nil
 }

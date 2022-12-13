@@ -52,7 +52,7 @@ type VertexAiIndexConfig struct {
 	Metadata *VertexAiIndexMetadata `field:"optional" json:"metadata" yaml:"metadata"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/vertex_ai_index#project VertexAiIndex#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
-	// The region of the Metadata Store. eg us-central1.
+	// The region of the index. eg us-central1.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/vertex_ai_index#region VertexAiIndex#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`

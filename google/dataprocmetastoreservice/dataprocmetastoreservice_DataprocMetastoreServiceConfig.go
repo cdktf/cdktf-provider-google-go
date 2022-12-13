@@ -64,6 +64,10 @@ type DataprocMetastoreServiceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/dataproc_metastore_service#network DataprocMetastoreService#network}
 	Network *string `field:"optional" json:"network" yaml:"network"`
+	// network_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/dataproc_metastore_service#network_config DataprocMetastoreService#network_config}
+	NetworkConfig *DataprocMetastoreServiceNetworkConfig `field:"optional" json:"networkConfig" yaml:"networkConfig"`
 	// The TCP port at which the metastore service is reached. Default: 9083.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/dataproc_metastore_service#port DataprocMetastoreService#port}

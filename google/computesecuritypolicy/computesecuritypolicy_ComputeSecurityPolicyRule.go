@@ -20,6 +20,10 @@ type ComputeSecurityPolicyRule struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_security_policy#description ComputeSecurityPolicy#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// header_action block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_security_policy#header_action ComputeSecurityPolicy#header_action}
+	HeaderAction *ComputeSecurityPolicyRuleHeaderAction `field:"optional" json:"headerAction" yaml:"headerAction"`
 	// When set to true, the action specified above is not enforced.
 	//
 	// Stackdriver logs for requests that trigger a preview action are annotated as such.

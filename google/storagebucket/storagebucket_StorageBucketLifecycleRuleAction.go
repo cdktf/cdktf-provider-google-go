@@ -2,7 +2,7 @@ package storagebucket
 
 
 type StorageBucketLifecycleRuleAction struct {
-	// The type of the action of this Lifecycle Rule. Supported values include: Delete and SetStorageClass.
+	// The type of the action of this Lifecycle Rule. Supported values include: Delete, SetStorageClass and AbortIncompleteMultipartUpload.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/storage_bucket#type StorageBucket#type}
 	Type *string `field:"required" json:"type" yaml:"type"`

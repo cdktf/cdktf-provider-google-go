@@ -116,6 +116,9 @@ type GoogleProvider interface {
 	CloudRunCustomEndpoint() *string
 	SetCloudRunCustomEndpoint(val *string)
 	CloudRunCustomEndpointInput() *string
+	CloudRunV2CustomEndpoint() *string
+	SetCloudRunV2CustomEndpoint(val *string)
+	CloudRunV2CustomEndpointInput() *string
 	CloudSchedulerCustomEndpoint() *string
 	SetCloudSchedulerCustomEndpoint(val *string)
 	CloudSchedulerCustomEndpointInput() *string
@@ -410,6 +413,7 @@ type GoogleProvider interface {
 	ResetCloudIotCustomEndpoint()
 	ResetCloudResourceManagerCustomEndpoint()
 	ResetCloudRunCustomEndpoint()
+	ResetCloudRunV2CustomEndpoint()
 	ResetCloudSchedulerCustomEndpoint()
 	ResetCloudTasksCustomEndpoint()
 	ResetComposerCustomEndpoint()
@@ -1192,6 +1196,26 @@ func (j *jsiiProxy_GoogleProvider) CloudRunCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"cloudRunCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) CloudRunV2CustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudRunV2CustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) CloudRunV2CustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudRunV2CustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3172,6 +3196,14 @@ func (j *jsiiProxy_GoogleProvider)SetCloudRunCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetCloudRunV2CustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"cloudRunV2CustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetCloudSchedulerCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4181,6 +4213,14 @@ func (g *jsiiProxy_GoogleProvider) ResetCloudRunCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetCloudRunCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetCloudRunV2CustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCloudRunV2CustomEndpoint",
 		nil, // no parameters
 	)
 }

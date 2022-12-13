@@ -32,6 +32,8 @@ type ContainerClusterMonitoringConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *ContainerClusterMonitoringConfig
 	SetInternalValue(val *ContainerClusterMonitoringConfig)
+	ManagedPrometheus() ContainerClusterMonitoringConfigManagedPrometheusOutputReference
+	ManagedPrometheusInput() *ContainerClusterMonitoringConfigManagedPrometheus
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +66,8 @@ type ContainerClusterMonitoringConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutManagedPrometheus(value *ContainerClusterMonitoringConfigManagedPrometheus)
+	ResetManagedPrometheus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +148,26 @@ func (j *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) InternalValu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) ManagedPrometheus() ContainerClusterMonitoringConfigManagedPrometheusOutputReference {
+	var returns ContainerClusterMonitoringConfigManagedPrometheusOutputReference
+	_jsii_.Get(
+		j,
+		"managedPrometheus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) ManagedPrometheusInput() *ContainerClusterMonitoringConfigManagedPrometheus {
+	var returns *ContainerClusterMonitoringConfigManagedPrometheus
+	_jsii_.Get(
+		j,
+		"managedPrometheusInput",
 		&returns,
 	)
 	return returns
@@ -447,6 +471,25 @@ func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) PutManagedPrometheus(value *ContainerClusterMonitoringConfigManagedPrometheus) {
+	if err := c.validatePutManagedPrometheusParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putManagedPrometheus",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) ResetManagedPrometheus() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetManagedPrometheus",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

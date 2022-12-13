@@ -74,6 +74,8 @@ type GoogleProviderConfig struct {
 	CloudResourceManagerCustomEndpoint *string `field:"optional" json:"cloudResourceManagerCustomEndpoint" yaml:"cloudResourceManagerCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#cloud_run_custom_endpoint GoogleProvider#cloud_run_custom_endpoint}.
 	CloudRunCustomEndpoint *string `field:"optional" json:"cloudRunCustomEndpoint" yaml:"cloudRunCustomEndpoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#cloud_run_v2_custom_endpoint GoogleProvider#cloud_run_v2_custom_endpoint}.
+	CloudRunV2CustomEndpoint *string `field:"optional" json:"cloudRunV2CustomEndpoint" yaml:"cloudRunV2CustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#cloud_scheduler_custom_endpoint GoogleProvider#cloud_scheduler_custom_endpoint}.
 	CloudSchedulerCustomEndpoint *string `field:"optional" json:"cloudSchedulerCustomEndpoint" yaml:"cloudSchedulerCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#cloud_tasks_custom_endpoint GoogleProvider#cloud_tasks_custom_endpoint}.

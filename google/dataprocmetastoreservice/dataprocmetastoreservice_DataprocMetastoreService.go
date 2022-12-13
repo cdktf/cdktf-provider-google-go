@@ -63,6 +63,8 @@ type DataprocMetastoreService interface {
 	Name() *string
 	Network() *string
 	SetNetwork(val *string)
+	NetworkConfig() DataprocMetastoreServiceNetworkConfigOutputReference
+	NetworkConfigInput() *DataprocMetastoreServiceNetworkConfig
 	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
@@ -130,6 +132,7 @@ type DataprocMetastoreService interface {
 	PutEncryptionConfig(value *DataprocMetastoreServiceEncryptionConfig)
 	PutHiveMetastoreConfig(value *DataprocMetastoreServiceHiveMetastoreConfig)
 	PutMaintenanceWindow(value *DataprocMetastoreServiceMaintenanceWindow)
+	PutNetworkConfig(value *DataprocMetastoreServiceNetworkConfig)
 	PutTimeouts(value *DataprocMetastoreServiceTimeouts)
 	ResetDatabaseType()
 	ResetEncryptionConfig()
@@ -139,6 +142,7 @@ type DataprocMetastoreService interface {
 	ResetLocation()
 	ResetMaintenanceWindow()
 	ResetNetwork()
+	ResetNetworkConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -427,6 +431,26 @@ func (j *jsiiProxy_DataprocMetastoreService) Network() *string {
 	_jsii_.Get(
 		j,
 		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocMetastoreService) NetworkConfig() DataprocMetastoreServiceNetworkConfigOutputReference {
+	var returns DataprocMetastoreServiceNetworkConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocMetastoreService) NetworkConfigInput() *DataprocMetastoreServiceNetworkConfig {
+	var returns *DataprocMetastoreServiceNetworkConfig
+	_jsii_.Get(
+		j,
+		"networkConfigInput",
 		&returns,
 	)
 	return returns
@@ -1166,6 +1190,17 @@ func (d *jsiiProxy_DataprocMetastoreService) PutMaintenanceWindow(value *Datapro
 	)
 }
 
+func (d *jsiiProxy_DataprocMetastoreService) PutNetworkConfig(value *DataprocMetastoreServiceNetworkConfig) {
+	if err := d.validatePutNetworkConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putNetworkConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataprocMetastoreService) PutTimeouts(value *DataprocMetastoreServiceTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1237,6 +1272,14 @@ func (d *jsiiProxy_DataprocMetastoreService) ResetNetwork() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocMetastoreService) ResetNetworkConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNetworkConfig",
 		nil, // no parameters
 	)
 }

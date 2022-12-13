@@ -69,6 +69,8 @@ type ComputeSecurityPolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RecaptchaOptionsConfig() ComputeSecurityPolicyRecaptchaOptionsConfigOutputReference
+	RecaptchaOptionsConfigInput() *ComputeSecurityPolicyRecaptchaOptionsConfig
 	Rule() ComputeSecurityPolicyRuleList
 	RuleInput() interface{}
 	SelfLink() *string
@@ -110,6 +112,7 @@ type ComputeSecurityPolicy interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAdaptiveProtectionConfig(value *ComputeSecurityPolicyAdaptiveProtectionConfig)
 	PutAdvancedOptionsConfig(value *ComputeSecurityPolicyAdvancedOptionsConfig)
+	PutRecaptchaOptionsConfig(value *ComputeSecurityPolicyRecaptchaOptionsConfig)
 	PutRule(value interface{})
 	PutTimeouts(value *ComputeSecurityPolicyTimeouts)
 	ResetAdaptiveProtectionConfig()
@@ -120,6 +123,7 @@ type ComputeSecurityPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRecaptchaOptionsConfig()
 	ResetRule()
 	ResetTimeouts()
 	ResetType()
@@ -393,6 +397,26 @@ func (j *jsiiProxy_ComputeSecurityPolicy) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicy) RecaptchaOptionsConfig() ComputeSecurityPolicyRecaptchaOptionsConfigOutputReference {
+	var returns ComputeSecurityPolicyRecaptchaOptionsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"recaptchaOptionsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicy) RecaptchaOptionsConfigInput() *ComputeSecurityPolicyRecaptchaOptionsConfig {
+	var returns *ComputeSecurityPolicyRecaptchaOptionsConfig
+	_jsii_.Get(
+		j,
+		"recaptchaOptionsConfigInput",
 		&returns,
 	)
 	return returns
@@ -936,6 +960,17 @@ func (c *jsiiProxy_ComputeSecurityPolicy) PutAdvancedOptionsConfig(value *Comput
 	)
 }
 
+func (c *jsiiProxy_ComputeSecurityPolicy) PutRecaptchaOptionsConfig(value *ComputeSecurityPolicyRecaptchaOptionsConfig) {
+	if err := c.validatePutRecaptchaOptionsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRecaptchaOptionsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeSecurityPolicy) PutRule(value interface{}) {
 	if err := c.validatePutRuleParameters(value); err != nil {
 		panic(err)
@@ -1002,6 +1037,14 @@ func (c *jsiiProxy_ComputeSecurityPolicy) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicy) ResetRecaptchaOptionsConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRecaptchaOptionsConfig",
 		nil, // no parameters
 	)
 }

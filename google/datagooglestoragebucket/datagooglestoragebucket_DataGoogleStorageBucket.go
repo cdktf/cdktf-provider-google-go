@@ -12,6 +12,7 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/google/d/storage_bucket google_storage_bucket}.
 type DataGoogleStorageBucket interface {
 	cdktf.TerraformDataSource
+	Autoclass() DataGoogleStorageBucketAutoclassList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -117,6 +118,16 @@ type DataGoogleStorageBucket interface {
 // The jsii proxy struct for DataGoogleStorageBucket
 type jsiiProxy_DataGoogleStorageBucket struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucket) Autoclass() DataGoogleStorageBucketAutoclassList {
+	var returns DataGoogleStorageBucketAutoclassList
+	_jsii_.Get(
+		j,
+		"autoclass",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleStorageBucket) CdktfStack() cdktf.TerraformStack {

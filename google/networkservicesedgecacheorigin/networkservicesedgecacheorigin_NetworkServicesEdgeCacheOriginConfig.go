@@ -79,6 +79,14 @@ type NetworkServicesEdgeCacheOriginConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/network_services_edge_cache_origin#max_attempts NetworkServicesEdgeCacheOrigin#max_attempts}
 	MaxAttempts *float64 `field:"optional" json:"maxAttempts" yaml:"maxAttempts"`
+	// origin_override_action block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/network_services_edge_cache_origin#origin_override_action NetworkServicesEdgeCacheOrigin#origin_override_action}
+	OriginOverrideAction *NetworkServicesEdgeCacheOriginOriginOverrideAction `field:"optional" json:"originOverrideAction" yaml:"originOverrideAction"`
+	// origin_redirect block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/network_services_edge_cache_origin#origin_redirect NetworkServicesEdgeCacheOrigin#origin_redirect}
+	OriginRedirect *NetworkServicesEdgeCacheOriginOriginRedirect `field:"optional" json:"originRedirect" yaml:"originRedirect"`
 	// The port to connect to the origin on.
 	//
 	// Defaults to port 443 for HTTP2 and HTTPS protocols, and port 80 for HTTP.

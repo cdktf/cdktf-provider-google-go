@@ -44,6 +44,10 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) validateInterpolati
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) validatePutHeaderActionParameters(value *ComputeSecurityPolicyRuleHeaderAction) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) validatePutMatchParameters(value *ComputeSecurityPolicyRuleMatch) error {
 	return nil
 }

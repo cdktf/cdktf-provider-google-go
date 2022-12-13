@@ -30,6 +30,7 @@ type DataGoogleContainerClusterMonitoringConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterMonitoringConfig
 	SetInternalValue(val *DataGoogleContainerClusterMonitoringConfig)
+	ManagedPrometheus() DataGoogleContainerClusterMonitoringConfigManagedPrometheusList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,6 +133,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterMonitoringConfigOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterMonitoringConfigOutputReference) ManagedPrometheus() DataGoogleContainerClusterMonitoringConfigManagedPrometheusList {
+	var returns DataGoogleContainerClusterMonitoringConfigManagedPrometheusList
+	_jsii_.Get(
+		j,
+		"managedPrometheus",
 		&returns,
 	)
 	return returns
