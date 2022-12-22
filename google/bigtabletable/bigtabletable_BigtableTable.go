@@ -26,6 +26,9 @@ type BigtableTable interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DeletionProtection() *string
+	SetDeletionProtection(val *string)
+	DeletionProtectionInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -105,6 +108,7 @@ type BigtableTable interface {
 	PutColumnFamily(value interface{})
 	PutTimeouts(value *BigtableTableTimeouts)
 	ResetColumnFamily()
+	ResetDeletionProtection()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -182,6 +186,26 @@ func (j *jsiiProxy_BigtableTable) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableTable) DeletionProtection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableTable) DeletionProtectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -472,6 +496,17 @@ func (j *jsiiProxy_BigtableTable)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigtableTable)SetDeletionProtection(val *string) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
 		val,
 	)
 }
@@ -869,6 +904,14 @@ func (b *jsiiProxy_BigtableTable) ResetColumnFamily() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetColumnFamily",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigtableTable) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDeletionProtection",
 		nil, // no parameters
 	)
 }

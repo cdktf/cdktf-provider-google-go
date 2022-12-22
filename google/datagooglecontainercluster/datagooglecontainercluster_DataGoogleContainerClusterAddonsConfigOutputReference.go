@@ -31,6 +31,7 @@ type DataGoogleContainerClusterAddonsConfigOutputReference interface {
 	Fqn() *string
 	GcePersistentDiskCsiDriverConfig() DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigList
 	GcpFilestoreCsiDriverConfig() DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigList
+	GkeBackupAgentConfig() DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigList
 	HorizontalPodAutoscaling() DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingList
 	HttpLoadBalancing() DataGoogleContainerClusterAddonsConfigHttpLoadBalancingList
 	InternalValue() *DataGoogleContainerClusterAddonsConfig
@@ -158,6 +159,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) GcpFil
 	_jsii_.Get(
 		j,
 		"gcpFilestoreCsiDriverConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) GkeBackupAgentConfig() DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigList {
+	var returns DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigList
+	_jsii_.Get(
+		j,
+		"gkeBackupAgentConfig",
 		&returns,
 	)
 	return returns

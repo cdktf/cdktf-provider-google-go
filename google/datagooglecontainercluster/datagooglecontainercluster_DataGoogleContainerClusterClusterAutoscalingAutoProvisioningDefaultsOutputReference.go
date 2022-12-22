@@ -34,6 +34,7 @@ type DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputR
 	InternalValue() *DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaults
 	SetInternalValue(val *DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaults)
 	Management() DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementList
+	MinCpuPlatform() *string
 	OauthScopes() *[]*string
 	ServiceAccount() *string
 	ShieldedInstanceConfig() DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigList
@@ -45,6 +46,7 @@ type DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputR
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UpgradeSettings() DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -184,6 +186,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningD
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) MinCpuPlatform() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"minCpuPlatform",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) OauthScopes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -229,6 +241,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningD
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) UpgradeSettings() DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsList {
+	var returns DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsList
+	_jsii_.Get(
+		j,
+		"upgradeSettings",
 		&returns,
 	)
 	return returns

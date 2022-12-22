@@ -43,6 +43,9 @@ type ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference i
 	SetInternalValue(val *ContainerClusterClusterAutoscalingAutoProvisioningDefaults)
 	Management() ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference
 	ManagementInput() *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement
+	MinCpuPlatform() *string
+	SetMinCpuPlatform(val *string)
+	MinCpuPlatformInput() *string
 	OauthScopes() *[]*string
 	SetOauthScopes(val *[]*string)
 	OauthScopesInput() *[]*string
@@ -59,6 +62,8 @@ type ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference i
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UpgradeSettings() ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference
+	UpgradeSettingsInput() *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -85,14 +90,17 @@ type ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference i
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutManagement(value *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement)
 	PutShieldedInstanceConfig(value *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig)
+	PutUpgradeSettings(value *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings)
 	ResetBootDiskKmsKey()
 	ResetDiskSize()
 	ResetDiskType()
 	ResetImageType()
 	ResetManagement()
+	ResetMinCpuPlatform()
 	ResetOauthScopes()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
+	ResetUpgradeSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -258,6 +266,26 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) MinCpuPlatform() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"minCpuPlatform",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) MinCpuPlatformInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"minCpuPlatformInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) OauthScopes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -333,6 +361,26 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) UpgradeSettings() ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference {
+	var returns ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"upgradeSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) UpgradeSettingsInput() *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings {
+	var returns *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings
+	_jsii_.Get(
+		j,
+		"upgradeSettingsInput",
 		&returns,
 	)
 	return returns
@@ -439,6 +487,17 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference)SetMinCpuPlatform(val *string) {
+	if err := j.validateSetMinCpuPlatformParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minCpuPlatform",
 		val,
 	)
 }
@@ -695,6 +754,17 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) PutUpgradeSettings(value *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings) {
+	if err := c.validatePutUpgradeSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putUpgradeSettings",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ResetBootDiskKmsKey() {
 	_jsii_.InvokeVoid(
 		c,
@@ -735,6 +805,14 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ResetMinCpuPlatform() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMinCpuPlatform",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ResetOauthScopes() {
 	_jsii_.InvokeVoid(
 		c,
@@ -755,6 +833,14 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	_jsii_.InvokeVoid(
 		c,
 		"resetShieldedInstanceConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ResetUpgradeSettings() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUpgradeSettings",
 		nil, // no parameters
 	)
 }

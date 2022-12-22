@@ -22,6 +22,12 @@ type ContainerClusterClusterAutoscalingAutoProvisioningDefaults struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#management ContainerCluster#management}
 	Management *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement `field:"optional" json:"management" yaml:"management"`
+	// Minimum CPU platform to be used by this instance.
+	//
+	// The instance may be scheduled on the specified or newer CPU platform. Applicable values are the friendly names of CPU platforms, such as Intel Haswell.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#min_cpu_platform ContainerCluster#min_cpu_platform}
+	MinCpuPlatform *string `field:"optional" json:"minCpuPlatform" yaml:"minCpuPlatform"`
 	// Scopes that are used by NAP when creating node pools.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#oauth_scopes ContainerCluster#oauth_scopes}
@@ -34,5 +40,9 @@ type ContainerClusterClusterAutoscalingAutoProvisioningDefaults struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#shielded_instance_config ContainerCluster#shielded_instance_config}
 	ShieldedInstanceConfig *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig `field:"optional" json:"shieldedInstanceConfig" yaml:"shieldedInstanceConfig"`
+	// upgrade_settings block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#upgrade_settings ContainerCluster#upgrade_settings}
+	UpgradeSettings *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings `field:"optional" json:"upgradeSettings" yaml:"upgradeSettings"`
 }
 

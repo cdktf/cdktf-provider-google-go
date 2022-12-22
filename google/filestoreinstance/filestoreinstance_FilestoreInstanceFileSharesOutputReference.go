@@ -37,6 +37,7 @@ type FilestoreInstanceFileSharesOutputReference interface {
 	NameInput() *string
 	NfsExportOptions() FilestoreInstanceFileSharesNfsExportOptionsList
 	NfsExportOptionsInput() interface{}
+	SourceBackup() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -191,6 +192,16 @@ func (j *jsiiProxy_FilestoreInstanceFileSharesOutputReference) NfsExportOptionsI
 	_jsii_.Get(
 		j,
 		"nfsExportOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstanceFileSharesOutputReference) SourceBackup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceBackup",
 		&returns,
 	)
 	return returns

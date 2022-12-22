@@ -54,6 +54,7 @@ type DataGoogleContainerCluster interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GatewayApiConfig() DataGoogleContainerClusterGatewayApiConfigList
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -451,6 +452,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) GatewayApiConfig() DataGoogleContainerClusterGatewayApiConfigList {
+	var returns DataGoogleContainerClusterGatewayApiConfigList
+	_jsii_.Get(
+		j,
+		"gatewayApiConfig",
 		&returns,
 	)
 	return returns

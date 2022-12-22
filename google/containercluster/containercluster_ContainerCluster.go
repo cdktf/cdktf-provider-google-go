@@ -91,6 +91,8 @@ type ContainerCluster interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GatewayApiConfig() ContainerClusterGatewayApiConfigOutputReference
+	GatewayApiConfigInput() *ContainerClusterGatewayApiConfig
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -239,6 +241,7 @@ type ContainerCluster interface {
 	PutDatabaseEncryption(value *ContainerClusterDatabaseEncryption)
 	PutDefaultSnatStatus(value *ContainerClusterDefaultSnatStatus)
 	PutDnsConfig(value *ContainerClusterDnsConfig)
+	PutGatewayApiConfig(value *ContainerClusterGatewayApiConfig)
 	PutIpAllocationPolicy(value *ContainerClusterIpAllocationPolicy)
 	PutLoggingConfig(value *ContainerClusterLoggingConfig)
 	PutMaintenancePolicy(value *ContainerClusterMaintenancePolicy)
@@ -279,6 +282,7 @@ type ContainerCluster interface {
 	ResetEnableLegacyAbac()
 	ResetEnableShieldedNodes()
 	ResetEnableTpu()
+	ResetGatewayApiConfig()
 	ResetId()
 	ResetInitialNodeCount()
 	ResetIpAllocationPolicy()
@@ -836,6 +840,26 @@ func (j *jsiiProxy_ContainerCluster) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) GatewayApiConfig() ContainerClusterGatewayApiConfigOutputReference {
+	var returns ContainerClusterGatewayApiConfigOutputReference
+	_jsii_.Get(
+		j,
+		"gatewayApiConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) GatewayApiConfigInput() *ContainerClusterGatewayApiConfig {
+	var returns *ContainerClusterGatewayApiConfig
+	_jsii_.Get(
+		j,
+		"gatewayApiConfigInput",
 		&returns,
 	)
 	return returns
@@ -2449,6 +2473,17 @@ func (c *jsiiProxy_ContainerCluster) PutDnsConfig(value *ContainerClusterDnsConf
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutGatewayApiConfig(value *ContainerClusterGatewayApiConfig) {
+	if err := c.validatePutGatewayApiConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putGatewayApiConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutIpAllocationPolicy(value *ContainerClusterIpAllocationPolicy) {
 	if err := c.validatePutIpAllocationPolicyParameters(value); err != nil {
 		panic(err)
@@ -2822,6 +2857,14 @@ func (c *jsiiProxy_ContainerCluster) ResetEnableTpu() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnableTpu",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetGatewayApiConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGatewayApiConfig",
 		nil, // no parameters
 	)
 }

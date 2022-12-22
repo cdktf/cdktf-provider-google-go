@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/google/r/logging_metric google_logging_metric}.
 type LoggingMetric interface {
 	cdktf.TerraformResource
+	BucketName() *string
+	SetBucketName(val *string)
+	BucketNameInput() *string
 	BucketOptions() LoggingMetricBucketOptionsOutputReference
 	BucketOptionsInput() *LoggingMetricBucketOptions
 	// Experimental.
@@ -113,10 +116,12 @@ type LoggingMetric interface {
 	PutBucketOptions(value *LoggingMetricBucketOptions)
 	PutMetricDescriptor(value *LoggingMetricMetricDescriptor)
 	PutTimeouts(value *LoggingMetricTimeouts)
+	ResetBucketName()
 	ResetBucketOptions()
 	ResetDescription()
 	ResetId()
 	ResetLabelExtractors()
+	ResetMetricDescriptor()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -136,6 +141,26 @@ type LoggingMetric interface {
 // The jsii proxy struct for LoggingMetric
 type jsiiProxy_LoggingMetric struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_LoggingMetric) BucketName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoggingMetric) BucketNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketNameInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_LoggingMetric) BucketOptions() LoggingMetricBucketOptionsOutputReference {
@@ -525,6 +550,17 @@ func NewLoggingMetric_Override(l LoggingMetric, scope constructs.Construct, id *
 		"@cdktf/provider-google.loggingMetric.LoggingMetric",
 		[]interface{}{scope, id, config},
 		l,
+	)
+}
+
+func (j *jsiiProxy_LoggingMetric)SetBucketName(val *string) {
+	if err := j.validateSetBucketNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bucketName",
+		val,
 	)
 }
 
@@ -969,6 +1005,14 @@ func (l *jsiiProxy_LoggingMetric) PutTimeouts(value *LoggingMetricTimeouts) {
 	)
 }
 
+func (l *jsiiProxy_LoggingMetric) ResetBucketName() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetBucketName",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LoggingMetric) ResetBucketOptions() {
 	_jsii_.InvokeVoid(
 		l,
@@ -997,6 +1041,14 @@ func (l *jsiiProxy_LoggingMetric) ResetLabelExtractors() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetLabelExtractors",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoggingMetric) ResetMetricDescriptor() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetMetricDescriptor",
 		nil, // no parameters
 	)
 }

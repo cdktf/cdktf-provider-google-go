@@ -18,6 +18,10 @@ type ContainerClusterAddonsConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#gcp_filestore_csi_driver_config ContainerCluster#gcp_filestore_csi_driver_config}
 	GcpFilestoreCsiDriverConfig *ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig `field:"optional" json:"gcpFilestoreCsiDriverConfig" yaml:"gcpFilestoreCsiDriverConfig"`
+	// gke_backup_agent_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#gke_backup_agent_config ContainerCluster#gke_backup_agent_config}
+	GkeBackupAgentConfig *ContainerClusterAddonsConfigGkeBackupAgentConfig `field:"optional" json:"gkeBackupAgentConfig" yaml:"gkeBackupAgentConfig"`
 	// horizontal_pod_autoscaling block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#horizontal_pod_autoscaling ContainerCluster#horizontal_pod_autoscaling}

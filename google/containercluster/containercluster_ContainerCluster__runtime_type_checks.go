@@ -210,6 +210,17 @@ func (c *jsiiProxy_ContainerCluster) validatePutDnsConfigParameters(value *Conta
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutGatewayApiConfigParameters(value *ContainerClusterGatewayApiConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutIpAllocationPolicyParameters(value *ContainerClusterIpAllocationPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

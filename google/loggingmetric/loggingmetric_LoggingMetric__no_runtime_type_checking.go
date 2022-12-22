@@ -76,6 +76,10 @@ func validateLoggingMetric_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_LoggingMetric) validateSetBucketNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingMetric) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -115,6 +115,10 @@ type ContainerClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#enable_tpu ContainerCluster#enable_tpu}
 	EnableTpu interface{} `field:"optional" json:"enableTpu" yaml:"enableTpu"`
+	// gateway_api_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#gateway_api_config ContainerCluster#gateway_api_config}
+	GatewayApiConfig *ContainerClusterGatewayApiConfig `field:"optional" json:"gatewayApiConfig" yaml:"gatewayApiConfig"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#id ContainerCluster#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

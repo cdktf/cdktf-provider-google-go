@@ -198,6 +198,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putNfsExportOptions", GoMethod: "PutNfsExportOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNfsExportOptions", GoMethod: "ResetNfsExportOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceBackup", GoGetter: "SourceBackup"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

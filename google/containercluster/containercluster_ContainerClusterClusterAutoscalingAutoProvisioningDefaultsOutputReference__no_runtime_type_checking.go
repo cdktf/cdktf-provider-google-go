@@ -52,6 +52,10 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validatePutUpgradeSettingsParameters(value *ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 }
 
 func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validateSetInternalValueParameters(val *ContainerClusterClusterAutoscalingAutoProvisioningDefaults) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validateSetMinCpuPlatformParameters(val *string) error {
 	return nil
 }
 

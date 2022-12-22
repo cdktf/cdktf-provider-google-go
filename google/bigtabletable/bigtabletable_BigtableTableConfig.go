@@ -31,6 +31,10 @@ type BigtableTableConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigtable_table#column_family BigtableTable#column_family}
 	ColumnFamily interface{} `field:"optional" json:"columnFamily" yaml:"columnFamily"`
+	// A field to make the table protected against data loss i.e. when set to PROTECTED, deleting the table, the column families in the table, and the instance containing the table would be prohibited. If not provided, currently deletion protection will be set to UNPROTECTED as it is the API default value.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigtable_table#deletion_protection BigtableTable#deletion_protection}
+	DeletionProtection *string `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigtable_table#id BigtableTable#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

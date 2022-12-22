@@ -60,6 +60,10 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutGcpFi
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutGkeBackupAgentConfigParameters(value *ContainerClusterAddonsConfigGkeBackupAgentConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutHorizontalPodAutoscalingParameters(value *ContainerClusterAddonsConfigHorizontalPodAutoscaling) error {
 	return nil
 }
