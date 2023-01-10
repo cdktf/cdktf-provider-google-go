@@ -11,6 +11,7 @@ import (
 type DataGoogleCloudfunctions2FunctionServiceConfigOutputReference interface {
 	cdktf.ComplexObject
 	AllTrafficOnLatestRevision() cdktf.IResolvable
+	AvailableCpu() *string
 	AvailableMemory() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -35,6 +36,7 @@ type DataGoogleCloudfunctions2FunctionServiceConfigOutputReference interface {
 	InternalValue() *DataGoogleCloudfunctions2FunctionServiceConfig
 	SetInternalValue(val *DataGoogleCloudfunctions2FunctionServiceConfig)
 	MaxInstanceCount() *float64
+	MaxInstanceRequestConcurrency() *float64
 	MinInstanceCount() *float64
 	SecretEnvironmentVariables() DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList
 	SecretVolumes() DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesList
@@ -96,6 +98,16 @@ func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigOutputReference
 	_jsii_.Get(
 		j,
 		"allTrafficOnLatestRevision",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigOutputReference) AvailableCpu() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availableCpu",
 		&returns,
 	)
 	return returns
@@ -196,6 +208,16 @@ func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigOutputReference
 	_jsii_.Get(
 		j,
 		"maxInstanceCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigOutputReference) MaxInstanceRequestConcurrency() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInstanceRequestConcurrency",
 		&returns,
 	)
 	return returns

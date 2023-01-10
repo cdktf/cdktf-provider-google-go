@@ -42,6 +42,10 @@ type SqlDatabaseInstanceSettings struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#database_flags SqlDatabaseInstance#database_flags}
 	DatabaseFlags interface{} `field:"optional" json:"databaseFlags" yaml:"databaseFlags"`
+	// Configuration to protect against accidental instance deletion.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#deletion_protection_enabled SqlDatabaseInstance#deletion_protection_enabled}
+	DeletionProtectionEnabled interface{} `field:"optional" json:"deletionProtectionEnabled" yaml:"deletionProtectionEnabled"`
 	// deny_maintenance_period block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#deny_maintenance_period SqlDatabaseInstance#deny_maintenance_period}

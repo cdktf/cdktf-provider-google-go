@@ -65,8 +65,15 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 	SetSource(val *string)
 	SourceImage() *string
 	SetSourceImage(val *string)
+	SourceImageEncryptionKey() ComputeInstanceTemplateDiskSourceImageEncryptionKeyOutputReference
+	SourceImageEncryptionKeyInput() *ComputeInstanceTemplateDiskSourceImageEncryptionKey
 	SourceImageInput() *string
 	SourceInput() *string
+	SourceSnapshot() *string
+	SetSourceSnapshot(val *string)
+	SourceSnapshotEncryptionKey() ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference
+	SourceSnapshotEncryptionKeyInput() *ComputeInstanceTemplateDiskSourceSnapshotEncryptionKey
+	SourceSnapshotInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -103,6 +110,8 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDiskEncryptionKey(value *ComputeInstanceTemplateDiskDiskEncryptionKey)
+	PutSourceImageEncryptionKey(value *ComputeInstanceTemplateDiskSourceImageEncryptionKey)
+	PutSourceSnapshotEncryptionKey(value *ComputeInstanceTemplateDiskSourceSnapshotEncryptionKey)
 	ResetAutoDelete()
 	ResetBoot()
 	ResetDeviceName()
@@ -116,6 +125,9 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 	ResetResourcePolicies()
 	ResetSource()
 	ResetSourceImage()
+	ResetSourceImageEncryptionKey()
+	ResetSourceSnapshot()
+	ResetSourceSnapshotEncryptionKey()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -422,6 +434,26 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SourceImage() *st
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SourceImageEncryptionKey() ComputeInstanceTemplateDiskSourceImageEncryptionKeyOutputReference {
+	var returns ComputeInstanceTemplateDiskSourceImageEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SourceImageEncryptionKeyInput() *ComputeInstanceTemplateDiskSourceImageEncryptionKey {
+	var returns *ComputeInstanceTemplateDiskSourceImageEncryptionKey
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SourceImageInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -437,6 +469,46 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SourceInput() *st
 	_jsii_.Get(
 		j,
 		"sourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SourceSnapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceSnapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SourceSnapshotEncryptionKey() ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference {
+	var returns ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SourceSnapshotEncryptionKeyInput() *ComputeInstanceTemplateDiskSourceSnapshotEncryptionKey {
+	var returns *ComputeInstanceTemplateDiskSourceSnapshotEncryptionKey
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) SourceSnapshotInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceSnapshotInput",
 		&returns,
 	)
 	return returns
@@ -675,6 +747,17 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetSourceImage(val
 	)
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetSourceSnapshot(val *string) {
+	if err := j.validateSetSourceSnapshotParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceSnapshot",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -905,6 +988,28 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) PutDiskEncryption
 	)
 }
 
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) PutSourceImageEncryptionKey(value *ComputeInstanceTemplateDiskSourceImageEncryptionKey) {
+	if err := c.validatePutSourceImageEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSourceImageEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) PutSourceSnapshotEncryptionKey(value *ComputeInstanceTemplateDiskSourceSnapshotEncryptionKey) {
+	if err := c.validatePutSourceSnapshotEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSourceSnapshotEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ResetAutoDelete() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1005,6 +1110,30 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ResetSourceImage(
 	_jsii_.InvokeVoid(
 		c,
 		"resetSourceImage",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ResetSourceImageEncryptionKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSourceImageEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ResetSourceSnapshot() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSourceSnapshot",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ResetSourceSnapshotEncryptionKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSourceSnapshotEncryptionKey",
 		nil, // no parameters
 	)
 }

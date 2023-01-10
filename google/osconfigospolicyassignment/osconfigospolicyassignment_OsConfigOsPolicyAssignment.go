@@ -80,6 +80,9 @@ type OsConfigOsPolicyAssignment interface {
 	Rollout() OsConfigOsPolicyAssignmentRolloutOutputReference
 	RolloutInput() *OsConfigOsPolicyAssignmentRollout
 	RolloutState() *string
+	SkipAwaitRollout() interface{}
+	SetSkipAwaitRollout(val interface{})
+	SkipAwaitRolloutInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -124,6 +127,7 @@ type OsConfigOsPolicyAssignment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetSkipAwaitRollout()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -500,6 +504,26 @@ func (j *jsiiProxy_OsConfigOsPolicyAssignment) RolloutState() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OsConfigOsPolicyAssignment) SkipAwaitRollout() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipAwaitRollout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OsConfigOsPolicyAssignment) SkipAwaitRolloutInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipAwaitRolloutInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OsConfigOsPolicyAssignment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -706,6 +730,17 @@ func (j *jsiiProxy_OsConfigOsPolicyAssignment)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OsConfigOsPolicyAssignment)SetSkipAwaitRollout(val interface{}) {
+	if err := j.validateSetSkipAwaitRolloutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipAwaitRollout",
 		val,
 	)
 }
@@ -1048,6 +1083,14 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignment) ResetProject() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OsConfigOsPolicyAssignment) ResetSkipAwaitRollout() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSkipAwaitRollout",
 		nil, // no parameters
 	)
 }

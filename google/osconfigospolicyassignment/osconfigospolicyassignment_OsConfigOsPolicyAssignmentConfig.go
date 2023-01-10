@@ -52,6 +52,10 @@ type OsConfigOsPolicyAssignmentConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/os_config_os_policy_assignment#project OsConfigOsPolicyAssignment#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// Set to true to skip awaiting rollout during resource creation and update.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/os_config_os_policy_assignment#skip_await_rollout OsConfigOsPolicyAssignment#skip_await_rollout}
+	SkipAwaitRollout interface{} `field:"optional" json:"skipAwaitRollout" yaml:"skipAwaitRollout"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/os_config_os_policy_assignment#timeouts OsConfigOsPolicyAssignment#timeouts}

@@ -31,6 +31,8 @@ type DataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference interfa
 	InfoTypeTransformationsInput() *DataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformations
 	InternalValue() *DataLossPreventionDeidentifyTemplateDeidentifyConfig
 	SetInternalValue(val *DataLossPreventionDeidentifyTemplateDeidentifyConfig)
+	RecordTransformations() DataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsOutputReference
+	RecordTransformationsInput() *DataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformations
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +66,9 @@ type DataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference interfa
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutInfoTypeTransformations(value *DataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformations)
+	PutRecordTransformations(value *DataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformations)
+	ResetInfoTypeTransformations()
+	ResetRecordTransformations()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +149,26 @@ func (j *jsiiProxy_DataLossPreventionDeidentifyTemplateDeidentifyConfigOutputRef
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) RecordTransformations() DataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsOutputReference {
+	var returns DataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsOutputReference
+	_jsii_.Get(
+		j,
+		"recordTransformations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) RecordTransformationsInput() *DataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformations {
+	var returns *DataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformations
+	_jsii_.Get(
+		j,
+		"recordTransformationsInput",
 		&returns,
 	)
 	return returns
@@ -446,6 +471,33 @@ func (d *jsiiProxy_DataLossPreventionDeidentifyTemplateDeidentifyConfigOutputRef
 		d,
 		"putInfoTypeTransformations",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) PutRecordTransformations(value *DataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformations) {
+	if err := d.validatePutRecordTransformationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRecordTransformations",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) ResetInfoTypeTransformations() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetInfoTypeTransformations",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) ResetRecordTransformations() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRecordTransformations",
+		nil, // no parameters
 	)
 }
 

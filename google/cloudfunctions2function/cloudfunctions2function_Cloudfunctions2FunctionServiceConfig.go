@@ -6,6 +6,10 @@ type Cloudfunctions2FunctionServiceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudfunctions2_function#all_traffic_on_latest_revision Cloudfunctions2Function#all_traffic_on_latest_revision}
 	AllTrafficOnLatestRevision interface{} `field:"optional" json:"allTrafficOnLatestRevision" yaml:"allTrafficOnLatestRevision"`
+	// The number of CPUs used in a single container instance. Default value is calculated from available memory.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudfunctions2_function#available_cpu Cloudfunctions2Function#available_cpu}
+	AvailableCpu *string `field:"optional" json:"availableCpu" yaml:"availableCpu"`
 	// The amount of memory available for a function.
 	//
 	// Defaults to 256M. Supported units are k, M, G, Mi, Gi. If no unit is
@@ -25,6 +29,10 @@ type Cloudfunctions2FunctionServiceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudfunctions2_function#max_instance_count Cloudfunctions2Function#max_instance_count}
 	MaxInstanceCount *float64 `field:"optional" json:"maxInstanceCount" yaml:"maxInstanceCount"`
+	// Sets the maximum number of concurrent requests that each instance can receive. Defaults to 1.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudfunctions2_function#max_instance_request_concurrency Cloudfunctions2Function#max_instance_request_concurrency}
+	MaxInstanceRequestConcurrency *float64 `field:"optional" json:"maxInstanceRequestConcurrency" yaml:"maxInstanceRequestConcurrency"`
 	// The limit on the minimum number of function instances that may coexist at a given time.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudfunctions2_function#min_instance_count Cloudfunctions2Function#min_instance_count}

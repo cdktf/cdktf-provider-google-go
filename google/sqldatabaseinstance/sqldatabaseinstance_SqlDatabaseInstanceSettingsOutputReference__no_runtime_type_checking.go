@@ -112,6 +112,10 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetDiskAutoresizeParameters(val interface{}) error {
 	return nil
 }

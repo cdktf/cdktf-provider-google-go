@@ -67,6 +67,7 @@ type ComputeBackendService interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GeneratedId() *float64
 	HealthChecks() *[]*string
 	SetHealthChecks(val *[]*string)
 	HealthChecksInput() *[]*string
@@ -526,6 +527,16 @@ func (j *jsiiProxy_ComputeBackendService) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) GeneratedId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"generatedId",
 		&returns,
 	)
 	return returns

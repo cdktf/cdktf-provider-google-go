@@ -86,6 +86,8 @@ type GoogleProviderConfig struct {
 	ComputeCustomEndpoint *string `field:"optional" json:"computeCustomEndpoint" yaml:"computeCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#container_analysis_custom_endpoint GoogleProvider#container_analysis_custom_endpoint}.
 	ContainerAnalysisCustomEndpoint *string `field:"optional" json:"containerAnalysisCustomEndpoint" yaml:"containerAnalysisCustomEndpoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#container_attached_custom_endpoint GoogleProvider#container_attached_custom_endpoint}.
+	ContainerAttachedCustomEndpoint *string `field:"optional" json:"containerAttachedCustomEndpoint" yaml:"containerAttachedCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#container_aws_custom_endpoint GoogleProvider#container_aws_custom_endpoint}.
 	ContainerAwsCustomEndpoint *string `field:"optional" json:"containerAwsCustomEndpoint" yaml:"containerAwsCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#container_azure_custom_endpoint GoogleProvider#container_azure_custom_endpoint}.
@@ -134,6 +136,8 @@ type GoogleProviderConfig struct {
 	FirestoreCustomEndpoint *string `field:"optional" json:"firestoreCustomEndpoint" yaml:"firestoreCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#game_services_custom_endpoint GoogleProvider#game_services_custom_endpoint}.
 	GameServicesCustomEndpoint *string `field:"optional" json:"gameServicesCustomEndpoint" yaml:"gameServicesCustomEndpoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#gke_backup_custom_endpoint GoogleProvider#gke_backup_custom_endpoint}.
+	GkeBackupCustomEndpoint *string `field:"optional" json:"gkeBackupCustomEndpoint" yaml:"gkeBackupCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#gke_hub_custom_endpoint GoogleProvider#gke_hub_custom_endpoint}.
 	GkeHubCustomEndpoint *string `field:"optional" json:"gkeHubCustomEndpoint" yaml:"gkeHubCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#healthcare_custom_endpoint GoogleProvider#healthcare_custom_endpoint}.
@@ -144,6 +148,8 @@ type GoogleProviderConfig struct {
 	IamCredentialsCustomEndpoint *string `field:"optional" json:"iamCredentialsCustomEndpoint" yaml:"iamCredentialsCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#iam_custom_endpoint GoogleProvider#iam_custom_endpoint}.
 	IamCustomEndpoint *string `field:"optional" json:"iamCustomEndpoint" yaml:"iamCustomEndpoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#iam_workforce_pool_custom_endpoint GoogleProvider#iam_workforce_pool_custom_endpoint}.
+	IamWorkforcePoolCustomEndpoint *string `field:"optional" json:"iamWorkforcePoolCustomEndpoint" yaml:"iamWorkforcePoolCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#iap_custom_endpoint GoogleProvider#iap_custom_endpoint}.
 	IapCustomEndpoint *string `field:"optional" json:"iapCustomEndpoint" yaml:"iapCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#identity_platform_custom_endpoint GoogleProvider#identity_platform_custom_endpoint}.

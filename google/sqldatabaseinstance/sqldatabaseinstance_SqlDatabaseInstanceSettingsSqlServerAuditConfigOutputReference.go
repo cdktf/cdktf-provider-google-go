@@ -70,6 +70,7 @@ type SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBucket()
 	ResetRetentionInterval()
 	ResetUploadInterval()
 	// Produce the Token's value at resolution time.
@@ -517,6 +518,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReferenc
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference) ResetBucket() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBucket",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference) ResetRetentionInterval() {

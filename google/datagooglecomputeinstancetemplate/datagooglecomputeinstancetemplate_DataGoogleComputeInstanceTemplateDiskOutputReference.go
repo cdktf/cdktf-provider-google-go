@@ -42,6 +42,9 @@ type DataGoogleComputeInstanceTemplateDiskOutputReference interface {
 	ResourcePolicies() *[]*string
 	Source() *string
 	SourceImage() *string
+	SourceImageEncryptionKey() DataGoogleComputeInstanceTemplateDiskSourceImageEncryptionKeyList
+	SourceSnapshot() *string
+	SourceSnapshotEncryptionKey() DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -265,6 +268,36 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) SourceI
 	_jsii_.Get(
 		j,
 		"sourceImage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) SourceImageEncryptionKey() DataGoogleComputeInstanceTemplateDiskSourceImageEncryptionKeyList {
+	var returns DataGoogleComputeInstanceTemplateDiskSourceImageEncryptionKeyList
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) SourceSnapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceSnapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) SourceSnapshotEncryptionKey() DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyList {
+	var returns DataGoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyList
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKey",
 		&returns,
 	)
 	return returns

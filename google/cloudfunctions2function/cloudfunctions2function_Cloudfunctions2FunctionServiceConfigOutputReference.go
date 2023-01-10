@@ -13,6 +13,9 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	AllTrafficOnLatestRevision() interface{}
 	SetAllTrafficOnLatestRevision(val interface{})
 	AllTrafficOnLatestRevisionInput() interface{}
+	AvailableCpu() *string
+	SetAvailableCpu(val *string)
+	AvailableCpuInput() *string
 	AvailableMemory() *string
 	SetAvailableMemory(val *string)
 	AvailableMemoryInput() *string
@@ -45,6 +48,9 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	MaxInstanceCount() *float64
 	SetMaxInstanceCount(val *float64)
 	MaxInstanceCountInput() *float64
+	MaxInstanceRequestConcurrency() *float64
+	SetMaxInstanceRequestConcurrency(val *float64)
+	MaxInstanceRequestConcurrencyInput() *float64
 	MinInstanceCount() *float64
 	SetMinInstanceCount(val *float64)
 	MinInstanceCountInput() *float64
@@ -103,10 +109,12 @@ type Cloudfunctions2FunctionServiceConfigOutputReference interface {
 	PutSecretEnvironmentVariables(value interface{})
 	PutSecretVolumes(value interface{})
 	ResetAllTrafficOnLatestRevision()
+	ResetAvailableCpu()
 	ResetAvailableMemory()
 	ResetEnvironmentVariables()
 	ResetIngressSettings()
 	ResetMaxInstanceCount()
+	ResetMaxInstanceRequestConcurrency()
 	ResetMinInstanceCount()
 	ResetSecretEnvironmentVariables()
 	ResetSecretVolumes()
@@ -145,6 +153,26 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) AllTraff
 	_jsii_.Get(
 		j,
 		"allTrafficOnLatestRevisionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) AvailableCpu() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availableCpu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) AvailableCpuInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"availableCpuInput",
 		&returns,
 	)
 	return returns
@@ -285,6 +313,26 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) MaxInsta
 	_jsii_.Get(
 		j,
 		"maxInstanceCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) MaxInstanceRequestConcurrency() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInstanceRequestConcurrency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) MaxInstanceRequestConcurrencyInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInstanceRequestConcurrencyInput",
 		&returns,
 	)
 	return returns
@@ -519,6 +567,17 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetAllTra
 	)
 }
 
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetAvailableCpu(val *string) {
+	if err := j.validateSetAvailableCpuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"availableCpu",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetAvailableMemory(val *string) {
 	if err := j.validateSetAvailableMemoryParameters(val); err != nil {
 		panic(err)
@@ -592,6 +651,17 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetMaxIns
 	_jsii_.Set(
 		j,
 		"maxInstanceCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference)SetMaxInstanceRequestConcurrency(val *float64) {
+	if err := j.validateSetMaxInstanceRequestConcurrencyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxInstanceRequestConcurrency",
 		val,
 	)
 }
@@ -900,6 +970,14 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ResetAll
 	)
 }
 
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ResetAvailableCpu() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAvailableCpu",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ResetAvailableMemory() {
 	_jsii_.InvokeVoid(
 		c,
@@ -928,6 +1006,14 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ResetMax
 	_jsii_.InvokeVoid(
 		c,
 		"resetMaxInstanceCount",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) ResetMaxInstanceRequestConcurrency() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaxInstanceRequestConcurrency",
 		nil, // no parameters
 	)
 }

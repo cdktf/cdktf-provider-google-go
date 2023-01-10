@@ -52,6 +52,8 @@ type ComputeImage interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	ImageEncryptionKey() ComputeImageImageEncryptionKeyOutputReference
+	ImageEncryptionKeyInput() *ComputeImageImageEncryptionKey
 	LabelFingerprint() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
@@ -127,6 +129,7 @@ type ComputeImage interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutGuestOsFeatures(value interface{})
+	PutImageEncryptionKey(value *ComputeImageImageEncryptionKey)
 	PutRawDisk(value *ComputeImageRawDisk)
 	PutTimeouts(value *ComputeImageTimeouts)
 	ResetDescription()
@@ -134,6 +137,7 @@ type ComputeImage interface {
 	ResetFamily()
 	ResetGuestOsFeatures()
 	ResetId()
+	ResetImageEncryptionKey()
 	ResetLabels()
 	ResetLicenses()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -355,6 +359,26 @@ func (j *jsiiProxy_ComputeImage) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeImage) ImageEncryptionKey() ComputeImageImageEncryptionKeyOutputReference {
+	var returns ComputeImageImageEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"imageEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeImage) ImageEncryptionKeyInput() *ComputeImageImageEncryptionKey {
+	var returns *ComputeImageImageEncryptionKey
+	_jsii_.Get(
+		j,
+		"imageEncryptionKeyInput",
 		&returns,
 	)
 	return returns
@@ -1133,6 +1157,17 @@ func (c *jsiiProxy_ComputeImage) PutGuestOsFeatures(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_ComputeImage) PutImageEncryptionKey(value *ComputeImageImageEncryptionKey) {
+	if err := c.validatePutImageEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putImageEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeImage) PutRawDisk(value *ComputeImageRawDisk) {
 	if err := c.validatePutRawDiskParameters(value); err != nil {
 		panic(err)
@@ -1191,6 +1226,14 @@ func (c *jsiiProxy_ComputeImage) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeImage) ResetImageEncryptionKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetImageEncryptionKey",
 		nil, // no parameters
 	)
 }

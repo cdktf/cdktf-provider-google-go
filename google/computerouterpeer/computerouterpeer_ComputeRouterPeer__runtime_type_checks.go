@@ -391,6 +391,14 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetRouterParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) validateSetRouterApplianceInstanceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewComputeRouterPeerParameters(scope constructs.Construct, id *string, config *ComputeRouterPeerConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

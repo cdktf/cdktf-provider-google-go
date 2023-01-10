@@ -80,6 +80,8 @@ type ContainerNodePool interface {
 	SetNodeLocations(val *[]*string)
 	NodeLocationsInput() *[]*string
 	Operation() *string
+	PlacementPolicy() ContainerNodePoolPlacementPolicyOutputReference
+	PlacementPolicyInput() *ContainerNodePoolPlacementPolicy
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -135,6 +137,7 @@ type ContainerNodePool interface {
 	PutManagement(value *ContainerNodePoolManagement)
 	PutNetworkConfig(value *ContainerNodePoolNetworkConfig)
 	PutNodeConfig(value *ContainerNodePoolNodeConfig)
+	PutPlacementPolicy(value *ContainerNodePoolPlacementPolicy)
 	PutTimeouts(value *ContainerNodePoolTimeouts)
 	PutUpgradeSettings(value *ContainerNodePoolUpgradeSettings)
 	ResetAutoscaling()
@@ -152,6 +155,7 @@ type ContainerNodePool interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPlacementPolicy()
 	ResetProject()
 	ResetTimeouts()
 	ResetUpgradeSettings()
@@ -556,6 +560,26 @@ func (j *jsiiProxy_ContainerNodePool) Operation() *string {
 	_jsii_.Get(
 		j,
 		"operation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePool) PlacementPolicy() ContainerNodePoolPlacementPolicyOutputReference {
+	var returns ContainerNodePoolPlacementPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"placementPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePool) PlacementPolicyInput() *ContainerNodePoolPlacementPolicy {
+	var returns *ContainerNodePoolPlacementPolicy
+	_jsii_.Get(
+		j,
+		"placementPolicyInput",
 		&returns,
 	)
 	return returns
@@ -1227,6 +1251,17 @@ func (c *jsiiProxy_ContainerNodePool) PutNodeConfig(value *ContainerNodePoolNode
 	)
 }
 
+func (c *jsiiProxy_ContainerNodePool) PutPlacementPolicy(value *ContainerNodePoolPlacementPolicy) {
+	if err := c.validatePutPlacementPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPlacementPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerNodePool) PutTimeouts(value *ContainerNodePoolTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1349,6 +1384,14 @@ func (c *jsiiProxy_ContainerNodePool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePool) ResetPlacementPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPlacementPolicy",
 		nil, // no parameters
 	)
 }

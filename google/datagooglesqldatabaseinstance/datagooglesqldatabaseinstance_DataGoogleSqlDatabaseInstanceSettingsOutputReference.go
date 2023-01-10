@@ -32,6 +32,7 @@ type DataGoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DatabaseFlags() DataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsList
+	DeletionProtectionEnabled() cdktf.IResolvable
 	DenyMaintenancePeriod() DataGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodList
 	DiskAutoresize() cdktf.IResolvable
 	DiskAutoresizeLimit() *float64
@@ -194,6 +195,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) Databas
 	_jsii_.Get(
 		j,
 		"databaseFlags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabled",
 		&returns,
 	)
 	return returns

@@ -136,6 +136,9 @@ type GoogleProvider interface {
 	ContainerAnalysisCustomEndpoint() *string
 	SetContainerAnalysisCustomEndpoint(val *string)
 	ContainerAnalysisCustomEndpointInput() *string
+	ContainerAttachedCustomEndpoint() *string
+	SetContainerAttachedCustomEndpoint(val *string)
+	ContainerAttachedCustomEndpointInput() *string
 	ContainerAwsCustomEndpoint() *string
 	SetContainerAwsCustomEndpoint(val *string)
 	ContainerAwsCustomEndpointInput() *string
@@ -212,6 +215,9 @@ type GoogleProvider interface {
 	GameServicesCustomEndpoint() *string
 	SetGameServicesCustomEndpoint(val *string)
 	GameServicesCustomEndpointInput() *string
+	GkeBackupCustomEndpoint() *string
+	SetGkeBackupCustomEndpoint(val *string)
+	GkeBackupCustomEndpointInput() *string
 	GkeHubCustomEndpoint() *string
 	SetGkeHubCustomEndpoint(val *string)
 	GkeHubCustomEndpointInput() *string
@@ -227,6 +233,9 @@ type GoogleProvider interface {
 	IamCustomEndpoint() *string
 	SetIamCustomEndpoint(val *string)
 	IamCustomEndpointInput() *string
+	IamWorkforcePoolCustomEndpoint() *string
+	SetIamWorkforcePoolCustomEndpoint(val *string)
+	IamWorkforcePoolCustomEndpointInput() *string
 	IapCustomEndpoint() *string
 	SetIapCustomEndpoint(val *string)
 	IapCustomEndpointInput() *string
@@ -419,6 +428,7 @@ type GoogleProvider interface {
 	ResetComposerCustomEndpoint()
 	ResetComputeCustomEndpoint()
 	ResetContainerAnalysisCustomEndpoint()
+	ResetContainerAttachedCustomEndpoint()
 	ResetContainerAwsCustomEndpoint()
 	ResetContainerAzureCustomEndpoint()
 	ResetContainerCustomEndpoint()
@@ -443,11 +453,13 @@ type GoogleProvider interface {
 	ResetFirebaserulesCustomEndpoint()
 	ResetFirestoreCustomEndpoint()
 	ResetGameServicesCustomEndpoint()
+	ResetGkeBackupCustomEndpoint()
 	ResetGkeHubCustomEndpoint()
 	ResetHealthcareCustomEndpoint()
 	ResetIamBetaCustomEndpoint()
 	ResetIamCredentialsCustomEndpoint()
 	ResetIamCustomEndpoint()
+	ResetIamWorkforcePoolCustomEndpoint()
 	ResetIapCustomEndpoint()
 	ResetIdentityPlatformCustomEndpoint()
 	ResetImpersonateServiceAccount()
@@ -1331,6 +1343,26 @@ func (j *jsiiProxy_GoogleProvider) ContainerAnalysisCustomEndpointInput() *strin
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) ContainerAttachedCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"containerAttachedCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ContainerAttachedCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"containerAttachedCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) ContainerAwsCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1831,6 +1863,26 @@ func (j *jsiiProxy_GoogleProvider) GameServicesCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) GkeBackupCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkeBackupCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) GkeBackupCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkeBackupCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) GkeHubCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1926,6 +1978,26 @@ func (j *jsiiProxy_GoogleProvider) IamCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"iamCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) IamWorkforcePoolCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamWorkforcePoolCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) IamWorkforcePoolCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamWorkforcePoolCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3244,6 +3316,14 @@ func (j *jsiiProxy_GoogleProvider)SetContainerAnalysisCustomEndpoint(val *string
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetContainerAttachedCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"containerAttachedCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetContainerAwsCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3436,6 +3516,14 @@ func (j *jsiiProxy_GoogleProvider)SetGameServicesCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetGkeBackupCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"gkeBackupCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetGkeHubCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3472,6 +3560,14 @@ func (j *jsiiProxy_GoogleProvider)SetIamCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"iamCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetIamWorkforcePoolCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"iamWorkforcePoolCustomEndpoint",
 		val,
 	)
 }
@@ -4265,6 +4361,14 @@ func (g *jsiiProxy_GoogleProvider) ResetContainerAnalysisCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetContainerAttachedCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContainerAttachedCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetContainerAwsCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -4457,6 +4561,14 @@ func (g *jsiiProxy_GoogleProvider) ResetGameServicesCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetGkeBackupCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGkeBackupCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetGkeHubCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -4493,6 +4605,14 @@ func (g *jsiiProxy_GoogleProvider) ResetIamCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIamCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetIamWorkforcePoolCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIamWorkforcePoolCustomEndpoint",
 		nil, // no parameters
 	)
 }

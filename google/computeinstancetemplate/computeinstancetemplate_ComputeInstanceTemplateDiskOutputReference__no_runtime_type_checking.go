@@ -48,6 +48,14 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validatePutDiskEn
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validatePutSourceImageEncryptionKeyParameters(value *ComputeInstanceTemplateDiskSourceImageEncryptionKey) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validatePutSourceSnapshotEncryptionKeyParameters(value *ComputeInstanceTemplateDiskSourceSnapshotEncryptionKey) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -109,6 +117,10 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetSource
 }
 
 func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetSourceImageParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetSourceSnapshotParameters(val *string) error {
 	return nil
 }
 

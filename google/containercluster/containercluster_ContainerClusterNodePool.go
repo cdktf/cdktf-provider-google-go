@@ -50,6 +50,10 @@ type ContainerClusterNodePool struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#node_locations ContainerCluster#node_locations}
 	NodeLocations *[]*string `field:"optional" json:"nodeLocations" yaml:"nodeLocations"`
+	// placement_policy block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#placement_policy ContainerCluster#placement_policy}
+	PlacementPolicy *ContainerClusterNodePoolPlacementPolicy `field:"optional" json:"placementPolicy" yaml:"placementPolicy"`
 	// upgrade_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#upgrade_settings ContainerCluster#upgrade_settings}

@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeImage) validatePutGuestOsFeaturesParameters(value inte
 	return nil
 }
 
+func (c *jsiiProxy_ComputeImage) validatePutImageEncryptionKeyParameters(value *ComputeImageImageEncryptionKey) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeImage) validatePutRawDiskParameters(value *ComputeImageRawDisk) error {
 	return nil
 }

@@ -43,6 +43,9 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	CreationStack() *[]*string
 	DatabaseFlags() SqlDatabaseInstanceSettingsDatabaseFlagsList
 	DatabaseFlagsInput() interface{}
+	DeletionProtectionEnabled() interface{}
+	SetDeletionProtectionEnabled(val interface{})
+	DeletionProtectionEnabledInput() interface{}
 	DenyMaintenancePeriod() SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference
 	DenyMaintenancePeriodInput() *SqlDatabaseInstanceSettingsDenyMaintenancePeriod
 	DiskAutoresize() interface{}
@@ -135,6 +138,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ResetCollation()
 	ResetConnectorEnforcement()
 	ResetDatabaseFlags()
+	ResetDeletionProtectionEnabled()
 	ResetDenyMaintenancePeriod()
 	ResetDiskAutoresize()
 	ResetDiskAutoresizeLimit()
@@ -329,6 +333,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DatabaseFlagsInpu
 	_jsii_.Get(
 		j,
 		"databaseFlagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabledInput",
 		&returns,
 	)
 	return returns
@@ -774,6 +798,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetConnectorEnforc
 	_jsii_.Set(
 		j,
 		"connectorEnforcement",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetDeletionProtectionEnabled(val interface{}) {
+	if err := j.validateSetDeletionProtectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtectionEnabled",
 		val,
 	)
 }
@@ -1247,6 +1282,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetDatabaseFlag
 	_jsii_.InvokeVoid(
 		s,
 		"resetDatabaseFlags",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetDeletionProtectionEnabled() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDeletionProtectionEnabled",
 		nil, // no parameters
 	)
 }

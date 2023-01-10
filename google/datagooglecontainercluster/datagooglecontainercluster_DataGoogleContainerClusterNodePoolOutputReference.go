@@ -41,6 +41,7 @@ type DataGoogleContainerClusterNodePoolOutputReference interface {
 	NodeConfig() DataGoogleContainerClusterNodePoolNodeConfigList
 	NodeCount() *float64
 	NodeLocations() *[]*string
+	PlacementPolicy() DataGoogleContainerClusterNodePoolPlacementPolicyList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -255,6 +256,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolOutputReference) NodeLocati
 	_jsii_.Get(
 		j,
 		"nodeLocations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolOutputReference) PlacementPolicy() DataGoogleContainerClusterNodePoolPlacementPolicyList {
+	var returns DataGoogleContainerClusterNodePoolPlacementPolicyList
+	_jsii_.Get(
+		j,
+		"placementPolicy",
 		&returns,
 	)
 	return returns

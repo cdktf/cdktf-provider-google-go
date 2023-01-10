@@ -66,6 +66,23 @@ type ComputeInstanceTemplateDisk struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_instance_template#source_image ComputeInstanceTemplate#source_image}
 	SourceImage *string `field:"optional" json:"sourceImage" yaml:"sourceImage"`
+	// source_image_encryption_key block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_instance_template#source_image_encryption_key ComputeInstanceTemplate#source_image_encryption_key}
+	SourceImageEncryptionKey *ComputeInstanceTemplateDiskSourceImageEncryptionKey `field:"optional" json:"sourceImageEncryptionKey" yaml:"sourceImageEncryptionKey"`
+	// The source snapshot to create this disk.
+	//
+	// When creating
+	// a new instance, one of initializeParams.sourceSnapshot,
+	// initializeParams.sourceImage, or disks.source is
+	// required except for local SSD.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_instance_template#source_snapshot ComputeInstanceTemplate#source_snapshot}
+	SourceSnapshot *string `field:"optional" json:"sourceSnapshot" yaml:"sourceSnapshot"`
+	// source_snapshot_encryption_key block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_instance_template#source_snapshot_encryption_key ComputeInstanceTemplate#source_snapshot_encryption_key}
+	SourceSnapshotEncryptionKey *ComputeInstanceTemplateDiskSourceSnapshotEncryptionKey `field:"optional" json:"sourceSnapshotEncryptionKey" yaml:"sourceSnapshotEncryptionKey"`
 	// The type of Google Compute Engine disk, can be either "SCRATCH" or "PERSISTENT".
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_instance_template#type ComputeInstanceTemplate#type}

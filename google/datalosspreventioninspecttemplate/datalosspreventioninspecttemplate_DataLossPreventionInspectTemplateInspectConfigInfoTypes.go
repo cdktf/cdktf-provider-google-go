@@ -9,5 +9,9 @@ type DataLossPreventionInspectTemplateInspectConfigInfoTypes struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/data_loss_prevention_inspect_template#name DataLossPreventionInspectTemplate#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// Version of the information type to use. By default, the version is set to stable.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/data_loss_prevention_inspect_template#version DataLossPreventionInspectTemplate#version}
+	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 

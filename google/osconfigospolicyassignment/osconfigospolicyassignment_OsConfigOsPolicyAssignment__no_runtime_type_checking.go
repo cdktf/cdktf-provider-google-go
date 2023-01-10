@@ -112,6 +112,10 @@ func (j *jsiiProxy_OsConfigOsPolicyAssignment) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_OsConfigOsPolicyAssignment) validateSetSkipAwaitRolloutParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewOsConfigOsPolicyAssignmentParameters(scope constructs.Construct, id *string, config *OsConfigOsPolicyAssignmentConfig) error {
 	return nil
 }

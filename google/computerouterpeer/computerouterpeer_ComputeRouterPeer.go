@@ -95,6 +95,9 @@ type ComputeRouterPeer interface {
 	RegionInput() *string
 	Router() *string
 	SetRouter(val *string)
+	RouterApplianceInstance() *string
+	SetRouterApplianceInstance(val *string)
+	RouterApplianceInstanceInput() *string
 	RouterInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -145,6 +148,7 @@ type ComputeRouterPeer interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
+	ResetRouterApplianceInstance()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -591,6 +595,26 @@ func (j *jsiiProxy_ComputeRouterPeer) Router() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) RouterApplianceInstance() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routerApplianceInstance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) RouterApplianceInstanceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routerApplianceInstanceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRouterPeer) RouterInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -885,6 +909,17 @@ func (j *jsiiProxy_ComputeRouterPeer)SetRouter(val *string) {
 	_jsii_.Set(
 		j,
 		"router",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterPeer)SetRouterApplianceInstance(val *string) {
+	if err := j.validateSetRouterApplianceInstanceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routerApplianceInstance",
 		val,
 	)
 }
@@ -1272,6 +1307,14 @@ func (c *jsiiProxy_ComputeRouterPeer) ResetRegion() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterPeer) ResetRouterApplianceInstance() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRouterApplianceInstance",
 		nil, // no parameters
 	)
 }

@@ -45,6 +45,7 @@ type DataGoogleComputeBackendService interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GeneratedId() *float64
 	HealthChecks() *[]*string
 	Iap() DataGoogleComputeBackendServiceIapList
 	Id() *string
@@ -325,6 +326,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendService) GeneratedId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"generatedId",
 		&returns,
 	)
 	return returns

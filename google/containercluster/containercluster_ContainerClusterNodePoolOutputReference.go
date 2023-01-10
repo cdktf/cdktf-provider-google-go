@@ -57,6 +57,8 @@ type ContainerClusterNodePoolOutputReference interface {
 	NodeLocations() *[]*string
 	SetNodeLocations(val *[]*string)
 	NodeLocationsInput() *[]*string
+	PlacementPolicy() ContainerClusterNodePoolPlacementPolicyOutputReference
+	PlacementPolicyInput() *ContainerClusterNodePoolPlacementPolicy
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -98,6 +100,7 @@ type ContainerClusterNodePoolOutputReference interface {
 	PutManagement(value *ContainerClusterNodePoolManagement)
 	PutNetworkConfig(value *ContainerClusterNodePoolNetworkConfig)
 	PutNodeConfig(value *ContainerClusterNodePoolNodeConfig)
+	PutPlacementPolicy(value *ContainerClusterNodePoolPlacementPolicy)
 	PutUpgradeSettings(value *ContainerClusterNodePoolUpgradeSettings)
 	ResetAutoscaling()
 	ResetInitialNodeCount()
@@ -109,6 +112,7 @@ type ContainerClusterNodePoolOutputReference interface {
 	ResetNodeConfig()
 	ResetNodeCount()
 	ResetNodeLocations()
+	ResetPlacementPolicy()
 	ResetUpgradeSettings()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
@@ -391,6 +395,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) NodeLocationsInput()
 	_jsii_.Get(
 		j,
 		"nodeLocationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) PlacementPolicy() ContainerClusterNodePoolPlacementPolicyOutputReference {
+	var returns ContainerClusterNodePoolPlacementPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"placementPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolOutputReference) PlacementPolicyInput() *ContainerClusterNodePoolPlacementPolicy {
+	var returns *ContainerClusterNodePoolPlacementPolicy
+	_jsii_.Get(
+		j,
+		"placementPolicyInput",
 		&returns,
 	)
 	return returns
@@ -846,6 +870,17 @@ func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) PutNodeConfig(value 
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) PutPlacementPolicy(value *ContainerClusterNodePoolPlacementPolicy) {
+	if err := c.validatePutPlacementPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPlacementPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) PutUpgradeSettings(value *ContainerClusterNodePoolUpgradeSettings) {
 	if err := c.validatePutUpgradeSettingsParameters(value); err != nil {
 		panic(err)
@@ -933,6 +968,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) ResetNodeLocations()
 	_jsii_.InvokeVoid(
 		c,
 		"resetNodeLocations",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolOutputReference) ResetPlacementPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPlacementPolicy",
 		nil, // no parameters
 	)
 }

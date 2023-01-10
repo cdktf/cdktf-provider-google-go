@@ -465,6 +465,7 @@ func init() {
 		reflect.TypeOf((*DataGoogleCloudfunctions2FunctionServiceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allTrafficOnLatestRevision", GoGetter: "AllTrafficOnLatestRevision"},
+			_jsii_.MemberProperty{JsiiProperty: "availableCpu", GoGetter: "AvailableCpu"},
 			_jsii_.MemberProperty{JsiiProperty: "availableMemory", GoGetter: "AvailableMemory"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -487,6 +488,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxInstanceCount", GoGetter: "MaxInstanceCount"},
+			_jsii_.MemberProperty{JsiiProperty: "maxInstanceRequestConcurrency", GoGetter: "MaxInstanceRequestConcurrency"},
 			_jsii_.MemberProperty{JsiiProperty: "minInstanceCount", GoGetter: "MinInstanceCount"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "secretEnvironmentVariables", GoGetter: "SecretEnvironmentVariables"},

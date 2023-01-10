@@ -80,6 +80,10 @@ type ContainerNodePoolConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_node_pool#node_locations ContainerNodePool#node_locations}
 	NodeLocations *[]*string `field:"optional" json:"nodeLocations" yaml:"nodeLocations"`
+	// placement_policy block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_node_pool#placement_policy ContainerNodePool#placement_policy}
+	PlacementPolicy *ContainerNodePoolPlacementPolicy `field:"optional" json:"placementPolicy" yaml:"placementPolicy"`
 	// The ID of the project in which to create the node pool.
 	//
 	// If blank, the provider-configured project will be used.

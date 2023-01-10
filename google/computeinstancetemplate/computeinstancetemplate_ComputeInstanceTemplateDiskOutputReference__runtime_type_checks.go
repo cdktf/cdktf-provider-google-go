@@ -101,6 +101,28 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validatePutDiskEn
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validatePutSourceImageEncryptionKeyParameters(value *ComputeInstanceTemplateDiskSourceImageEncryptionKey) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validatePutSourceSnapshotEncryptionKeyParameters(value *ComputeInstanceTemplateDiskSourceSnapshotEncryptionKey) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -311,6 +333,14 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetSource
 }
 
 func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetSourceImageParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetSourceSnapshotParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

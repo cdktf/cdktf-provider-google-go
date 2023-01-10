@@ -140,6 +140,10 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetRouterParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) validateSetRouterApplianceInstanceParameters(val *string) error {
+	return nil
+}
+
 func validateNewComputeRouterPeerParameters(scope constructs.Construct, id *string, config *ComputeRouterPeerConfig) error {
 	return nil
 }

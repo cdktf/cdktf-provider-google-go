@@ -5,7 +5,7 @@ type SqlDatabaseInstanceSettingsSqlServerAuditConfig struct {
 	// The name of the destination bucket (e.g., gs://mybucket).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#bucket SqlDatabaseInstance#bucket}
-	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
+	Bucket *string `field:"optional" json:"bucket" yaml:"bucket"`
 	// How long to keep generated audit files.
 	//
 	// A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"..
