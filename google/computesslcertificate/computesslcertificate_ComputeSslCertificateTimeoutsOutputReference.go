@@ -2,9 +2,9 @@ package computesslcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v4/computesslcertificate/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v5/computesslcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
