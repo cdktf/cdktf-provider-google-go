@@ -36,6 +36,7 @@ type ComputeRegionSslCertificate interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	ExpireTime() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -243,6 +244,16 @@ func (j *jsiiProxy_ComputeRegionSslCertificate) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionSslCertificate) ExpireTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expireTime",
 		&returns,
 	)
 	return returns

@@ -90,6 +90,28 @@ func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference) 
 	return nil
 }
 
+func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference) validatePutNodeGroupAffinityParameters(value *DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference) validatePutReservationAffinityParameters(value *DataprocClusterClusterConfigGceClusterConfigReservationAffinity) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference) validatePutShieldedInstanceConfigParameters(value *DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

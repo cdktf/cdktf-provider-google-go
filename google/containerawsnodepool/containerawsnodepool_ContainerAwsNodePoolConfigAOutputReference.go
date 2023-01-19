@@ -10,6 +10,8 @@ import (
 
 type ContainerAwsNodePoolConfigAOutputReference interface {
 	cdktf.ComplexObject
+	AutoscalingMetricsCollection() ContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference
+	AutoscalingMetricsCollectionInput() *ContainerAwsNodePoolConfigAutoscalingMetricsCollection
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -86,11 +88,13 @@ type ContainerAwsNodePoolConfigAOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAutoscalingMetricsCollection(value *ContainerAwsNodePoolConfigAutoscalingMetricsCollection)
 	PutConfigEncryption(value *ContainerAwsNodePoolConfigConfigEncryption)
 	PutProxyConfig(value *ContainerAwsNodePoolConfigProxyConfig)
 	PutRootVolume(value *ContainerAwsNodePoolConfigRootVolume)
 	PutSshConfig(value *ContainerAwsNodePoolConfigSshConfig)
 	PutTaints(value interface{})
+	ResetAutoscalingMetricsCollection()
 	ResetInstanceType()
 	ResetLabels()
 	ResetProxyConfig()
@@ -112,6 +116,26 @@ type ContainerAwsNodePoolConfigAOutputReference interface {
 // The jsii proxy struct for ContainerAwsNodePoolConfigAOutputReference
 type jsiiProxy_ContainerAwsNodePoolConfigAOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) AutoscalingMetricsCollection() ContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference {
+	var returns ContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference
+	_jsii_.Get(
+		j,
+		"autoscalingMetricsCollection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) AutoscalingMetricsCollectionInput() *ContainerAwsNodePoolConfigAutoscalingMetricsCollection {
+	var returns *ContainerAwsNodePoolConfigAutoscalingMetricsCollection
+	_jsii_.Get(
+		j,
+		"autoscalingMetricsCollectionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) ComplexObjectIndex() interface{} {
@@ -708,6 +732,17 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) InterpolationForA
 	return returns
 }
 
+func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) PutAutoscalingMetricsCollection(value *ContainerAwsNodePoolConfigAutoscalingMetricsCollection) {
+	if err := c.validatePutAutoscalingMetricsCollectionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAutoscalingMetricsCollection",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) PutConfigEncryption(value *ContainerAwsNodePoolConfigConfigEncryption) {
 	if err := c.validatePutConfigEncryptionParameters(value); err != nil {
 		panic(err)
@@ -760,6 +795,14 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) PutTaints(value i
 		c,
 		"putTaints",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) ResetAutoscalingMetricsCollection() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAutoscalingMetricsCollection",
+		nil, // no parameters
 	)
 }
 

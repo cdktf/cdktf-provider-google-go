@@ -10,6 +10,10 @@ type ContainerAwsNodePoolConfigA struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_aws_node_pool#iam_instance_profile ContainerAwsNodePool#iam_instance_profile}
 	IamInstanceProfile *string `field:"required" json:"iamInstanceProfile" yaml:"iamInstanceProfile"`
+	// autoscaling_metrics_collection block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_aws_node_pool#autoscaling_metrics_collection ContainerAwsNodePool#autoscaling_metrics_collection}
+	AutoscalingMetricsCollection *ContainerAwsNodePoolConfigAutoscalingMetricsCollection `field:"optional" json:"autoscalingMetricsCollection" yaml:"autoscalingMetricsCollection"`
 	// Optional. The AWS instance type. When unspecified, it defaults to `m5.large`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_aws_node_pool#instance_type ContainerAwsNodePool#instance_type}

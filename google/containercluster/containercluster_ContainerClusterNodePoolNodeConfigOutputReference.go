@@ -47,9 +47,13 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ImageTypeInput() *string
 	InternalValue() *ContainerClusterNodePoolNodeConfig
 	SetInternalValue(val *ContainerClusterNodePoolNodeConfig)
+	KubeletConfig() ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference
+	KubeletConfigInput() *ContainerClusterNodePoolNodeConfigKubeletConfig
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
+	LinuxNodeConfig() ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference
+	LinuxNodeConfigInput() *ContainerClusterNodePoolNodeConfigLinuxNodeConfig
 	LocalSsdCount() *float64
 	SetLocalSsdCount(val *float64)
 	LocalSsdCountInput() *float64
@@ -129,6 +133,8 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	PutGcfsConfig(value *ContainerClusterNodePoolNodeConfigGcfsConfig)
 	PutGuestAccelerator(value interface{})
 	PutGvnic(value *ContainerClusterNodePoolNodeConfigGvnic)
+	PutKubeletConfig(value *ContainerClusterNodePoolNodeConfigKubeletConfig)
+	PutLinuxNodeConfig(value *ContainerClusterNodePoolNodeConfigLinuxNodeConfig)
 	PutReservationAffinity(value *ContainerClusterNodePoolNodeConfigReservationAffinity)
 	PutShieldedInstanceConfig(value *ContainerClusterNodePoolNodeConfigShieldedInstanceConfig)
 	PutTaint(value interface{})
@@ -140,7 +146,9 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetGuestAccelerator()
 	ResetGvnic()
 	ResetImageType()
+	ResetKubeletConfig()
 	ResetLabels()
+	ResetLinuxNodeConfig()
 	ResetLocalSsdCount()
 	ResetLoggingVariant()
 	ResetMachineType()
@@ -362,6 +370,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) InternalVa
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) KubeletConfig() ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference {
+	var returns ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference
+	_jsii_.Get(
+		j,
+		"kubeletConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) KubeletConfigInput() *ContainerClusterNodePoolNodeConfigKubeletConfig {
+	var returns *ContainerClusterNodePoolNodeConfigKubeletConfig
+	_jsii_.Get(
+		j,
+		"kubeletConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) Labels() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -377,6 +405,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) LabelsInpu
 	_jsii_.Get(
 		j,
 		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) LinuxNodeConfig() ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference {
+	var returns ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"linuxNodeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) LinuxNodeConfigInput() *ContainerClusterNodePoolNodeConfigLinuxNodeConfig {
+	var returns *ContainerClusterNodePoolNodeConfigLinuxNodeConfig
+	_jsii_.Get(
+		j,
+		"linuxNodeConfigInput",
 		&returns,
 	)
 	return returns
@@ -1211,6 +1259,28 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutGvnic(v
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutKubeletConfig(value *ContainerClusterNodePoolNodeConfigKubeletConfig) {
+	if err := c.validatePutKubeletConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putKubeletConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutLinuxNodeConfig(value *ContainerClusterNodePoolNodeConfigLinuxNodeConfig) {
+	if err := c.validatePutLinuxNodeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putLinuxNodeConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutReservationAffinity(value *ContainerClusterNodePoolNodeConfigReservationAffinity) {
 	if err := c.validatePutReservationAffinityParameters(value); err != nil {
 		panic(err)
@@ -1311,10 +1381,26 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetImage
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetKubeletConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKubeletConfig",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetLabels() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetLinuxNodeConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLinuxNodeConfig",
 		nil, // no parameters
 	)
 }

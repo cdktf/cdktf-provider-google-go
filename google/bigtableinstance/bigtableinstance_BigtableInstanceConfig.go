@@ -21,6 +21,8 @@ type BigtableInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name (also called Instance Id in the Cloud Console) of the Cloud Bigtable instance.
 	//
+	// Must be 6-33 characters and must only contain hyphens, lowercase letters and numbers.
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigtable_instance#name BigtableInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// cluster block.

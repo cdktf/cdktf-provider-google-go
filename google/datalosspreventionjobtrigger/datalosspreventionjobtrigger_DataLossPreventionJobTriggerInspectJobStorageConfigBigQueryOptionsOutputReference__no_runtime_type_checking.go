@@ -44,6 +44,10 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) validatePutIdentifyingFieldsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) validatePutTableReferenceParameters(value *DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReference) error {
 	return nil
 }

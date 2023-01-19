@@ -56,6 +56,14 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutGvnicPa
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutKubeletConfigParameters(value *ContainerClusterNodeConfigKubeletConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutLinuxNodeConfigParameters(value *ContainerClusterNodeConfigLinuxNodeConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutReservationAffinityParameters(value *ContainerClusterNodeConfigReservationAffinity) error {
 	return nil
 }

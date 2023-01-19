@@ -44,6 +44,10 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) validateInterpola
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) validatePutAutoscalingMetricsCollectionParameters(value *ContainerAwsNodePoolConfigAutoscalingMetricsCollection) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) validatePutConfigEncryptionParameters(value *ContainerAwsNodePoolConfigConfigEncryption) error {
 	return nil
 }

@@ -23,7 +23,7 @@ type BigtableTableConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigtable_table#instance_name BigtableTable#instance_name}
 	InstanceName *string `field:"required" json:"instanceName" yaml:"instanceName"`
-	// The name of the table.
+	// The name of the table. Must be 1-50 characters and must only contain hyphens, underscores, periods, letters and numbers.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigtable_table#name BigtableTable#name}
 	Name *string `field:"required" json:"name" yaml:"name"`

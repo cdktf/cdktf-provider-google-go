@@ -28,6 +28,7 @@ type DataGoogleComputeRegionSslCertificate interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	ExpireTime() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -190,6 +191,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionSslCertificate) Description() *string 
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionSslCertificate) ExpireTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expireTime",
 		&returns,
 	)
 	return returns

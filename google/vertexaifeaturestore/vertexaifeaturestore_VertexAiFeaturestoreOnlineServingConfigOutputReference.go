@@ -32,6 +32,8 @@ type VertexAiFeaturestoreOnlineServingConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *VertexAiFeaturestoreOnlineServingConfig
 	SetInternalValue(val *VertexAiFeaturestoreOnlineServingConfig)
+	Scaling() VertexAiFeaturestoreOnlineServingConfigScalingOutputReference
+	ScalingInput() *VertexAiFeaturestoreOnlineServingConfigScaling
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +66,9 @@ type VertexAiFeaturestoreOnlineServingConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutScaling(value *VertexAiFeaturestoreOnlineServingConfigScaling)
+	ResetFixedNodeCount()
+	ResetScaling()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +149,26 @@ func (j *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigOutputReference) Scaling() VertexAiFeaturestoreOnlineServingConfigScalingOutputReference {
+	var returns VertexAiFeaturestoreOnlineServingConfigScalingOutputReference
+	_jsii_.Get(
+		j,
+		"scaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigOutputReference) ScalingInput() *VertexAiFeaturestoreOnlineServingConfigScaling {
+	var returns *VertexAiFeaturestoreOnlineServingConfigScaling
+	_jsii_.Get(
+		j,
+		"scalingInput",
 		&returns,
 	)
 	return returns
@@ -447,6 +472,33 @@ func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigOutputReference) Inter
 	)
 
 	return returns
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigOutputReference) PutScaling(value *VertexAiFeaturestoreOnlineServingConfigScaling) {
+	if err := v.validatePutScalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putScaling",
+		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigOutputReference) ResetFixedNodeCount() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetFixedNodeCount",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigOutputReference) ResetScaling() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetScaling",
+		nil, // no parameters
+	)
 }
 
 func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -32,12 +32,20 @@ type ContainerNodePoolNodeConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_node_pool#image_type ContainerNodePool#image_type}
 	ImageType *string `field:"optional" json:"imageType" yaml:"imageType"`
+	// kubelet_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_node_pool#kubelet_config ContainerNodePool#kubelet_config}
+	KubeletConfig *ContainerNodePoolNodeConfigKubeletConfig `field:"optional" json:"kubeletConfig" yaml:"kubeletConfig"`
 	// The map of Kubernetes labels (key/value pairs) to be applied to each node.
 	//
 	// These will added in addition to any default label(s) that Kubernetes may apply to the node.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_node_pool#labels ContainerNodePool#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
+	// linux_node_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_node_pool#linux_node_config ContainerNodePool#linux_node_config}
+	LinuxNodeConfig *ContainerNodePoolNodeConfigLinuxNodeConfig `field:"optional" json:"linuxNodeConfig" yaml:"linuxNodeConfig"`
 	// The number of local SSD disks to be attached to the node.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_node_pool#local_ssd_count ContainerNodePool#local_ssd_count}

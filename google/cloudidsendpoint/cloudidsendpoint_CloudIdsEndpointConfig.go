@@ -48,6 +48,10 @@ type CloudIdsEndpointConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloud_ids_endpoint#project CloudIdsEndpoint#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// Configuration for threat IDs excluded from generating alerts. Limit: 99 IDs.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloud_ids_endpoint#threat_exceptions CloudIdsEndpoint#threat_exceptions}
+	ThreatExceptions *[]*string `field:"optional" json:"threatExceptions" yaml:"threatExceptions"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloud_ids_endpoint#timeouts CloudIdsEndpoint#timeouts}

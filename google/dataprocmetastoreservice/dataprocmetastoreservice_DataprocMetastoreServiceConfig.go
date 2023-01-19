@@ -78,6 +78,10 @@ type DataprocMetastoreServiceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/dataproc_metastore_service#release_channel DataprocMetastoreService#release_channel}
 	ReleaseChannel *string `field:"optional" json:"releaseChannel" yaml:"releaseChannel"`
+	// telemetry_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/dataproc_metastore_service#telemetry_config DataprocMetastoreService#telemetry_config}
+	TelemetryConfig *DataprocMetastoreServiceTelemetryConfig `field:"optional" json:"telemetryConfig" yaml:"telemetryConfig"`
 	// The tier of the service. Possible values: ["DEVELOPER", "ENTERPRISE"].
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/dataproc_metastore_service#tier DataprocMetastoreService#tier}

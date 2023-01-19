@@ -82,6 +82,9 @@ type CloudIdsEndpoint interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	ThreatExceptions() *[]*string
+	SetThreatExceptions(val *[]*string)
+	ThreatExceptionsInput() *[]*string
 	Timeouts() CloudIdsEndpointTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UpdateTime() *string
@@ -117,6 +120,7 @@ type CloudIdsEndpoint interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetThreatExceptions()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -463,6 +467,26 @@ func (j *jsiiProxy_CloudIdsEndpoint) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudIdsEndpoint) ThreatExceptions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"threatExceptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudIdsEndpoint) ThreatExceptionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"threatExceptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudIdsEndpoint) Timeouts() CloudIdsEndpointTimeoutsOutputReference {
 	var returns CloudIdsEndpointTimeoutsOutputReference
 	_jsii_.Get(
@@ -661,6 +685,17 @@ func (j *jsiiProxy_CloudIdsEndpoint)SetSeverity(val *string) {
 	_jsii_.Set(
 		j,
 		"severity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudIdsEndpoint)SetThreatExceptions(val *[]*string) {
+	if err := j.validateSetThreatExceptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"threatExceptions",
 		val,
 	)
 }
@@ -970,6 +1005,14 @@ func (c *jsiiProxy_CloudIdsEndpoint) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudIdsEndpoint) ResetThreatExceptions() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetThreatExceptions",
 		nil, // no parameters
 	)
 }

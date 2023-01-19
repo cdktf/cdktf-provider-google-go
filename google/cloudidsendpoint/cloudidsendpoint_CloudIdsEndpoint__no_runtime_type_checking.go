@@ -108,6 +108,10 @@ func (j *jsiiProxy_CloudIdsEndpoint) validateSetSeverityParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_CloudIdsEndpoint) validateSetThreatExceptionsParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewCloudIdsEndpointParameters(scope constructs.Construct, id *string, config *CloudIdsEndpointConfig) error {
 	return nil
 }

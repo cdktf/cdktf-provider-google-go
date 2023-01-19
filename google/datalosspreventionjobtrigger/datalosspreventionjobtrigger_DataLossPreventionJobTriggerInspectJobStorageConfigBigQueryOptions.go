@@ -6,6 +6,10 @@ type DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/data_loss_prevention_job_trigger#table_reference DataLossPreventionJobTrigger#table_reference}
 	TableReference *DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReference `field:"required" json:"tableReference" yaml:"tableReference"`
+	// identifying_fields block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/data_loss_prevention_job_trigger#identifying_fields DataLossPreventionJobTrigger#identifying_fields}
+	IdentifyingFields interface{} `field:"optional" json:"identifyingFields" yaml:"identifyingFields"`
 	// Max number of rows to scan.
 	//
 	// If the table has more rows than this value, the rest of the rows are omitted.

@@ -36,7 +36,9 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	ImageType() *string
 	InternalValue() *DataGoogleContainerClusterNodeConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodeConfig)
+	KubeletConfig() DataGoogleContainerClusterNodeConfigKubeletConfigList
 	Labels() cdktf.StringMap
+	LinuxNodeConfig() DataGoogleContainerClusterNodeConfigLinuxNodeConfigList
 	LocalSsdCount() *float64
 	LoggingVariant() *string
 	MachineType() *string
@@ -220,11 +222,31 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Internal
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) KubeletConfig() DataGoogleContainerClusterNodeConfigKubeletConfigList {
+	var returns DataGoogleContainerClusterNodeConfigKubeletConfigList
+	_jsii_.Get(
+		j,
+		"kubeletConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Labels() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) LinuxNodeConfig() DataGoogleContainerClusterNodeConfigLinuxNodeConfigList {
+	var returns DataGoogleContainerClusterNodeConfigLinuxNodeConfigList
+	_jsii_.Get(
+		j,
+		"linuxNodeConfig",
 		&returns,
 	)
 	return returns

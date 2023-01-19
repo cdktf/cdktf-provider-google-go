@@ -44,6 +44,10 @@ func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigOutputReference) valid
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigOutputReference) validatePutScalingParameters(value *VertexAiFeaturestoreOnlineServingConfigScaling) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_CloudIdsEndpointTimeoutsOutputReference) validateSetTerraform
 	return nil
 }
 
+func (j *jsiiProxy_CloudIdsEndpointTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewCloudIdsEndpointTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

@@ -92,6 +92,8 @@ type DataprocMetastoreService interface {
 	ServiceIdInput() *string
 	State() *string
 	StateMessage() *string
+	TelemetryConfig() DataprocMetastoreServiceTelemetryConfigOutputReference
+	TelemetryConfigInput() *DataprocMetastoreServiceTelemetryConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -133,6 +135,7 @@ type DataprocMetastoreService interface {
 	PutHiveMetastoreConfig(value *DataprocMetastoreServiceHiveMetastoreConfig)
 	PutMaintenanceWindow(value *DataprocMetastoreServiceMaintenanceWindow)
 	PutNetworkConfig(value *DataprocMetastoreServiceNetworkConfig)
+	PutTelemetryConfig(value *DataprocMetastoreServiceTelemetryConfig)
 	PutTimeouts(value *DataprocMetastoreServiceTimeouts)
 	ResetDatabaseType()
 	ResetEncryptionConfig()
@@ -149,6 +152,7 @@ type DataprocMetastoreService interface {
 	ResetPort()
 	ResetProject()
 	ResetReleaseChannel()
+	ResetTelemetryConfig()
 	ResetTier()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -601,6 +605,26 @@ func (j *jsiiProxy_DataprocMetastoreService) StateMessage() *string {
 	_jsii_.Get(
 		j,
 		"stateMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocMetastoreService) TelemetryConfig() DataprocMetastoreServiceTelemetryConfigOutputReference {
+	var returns DataprocMetastoreServiceTelemetryConfigOutputReference
+	_jsii_.Get(
+		j,
+		"telemetryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocMetastoreService) TelemetryConfigInput() *DataprocMetastoreServiceTelemetryConfig {
+	var returns *DataprocMetastoreServiceTelemetryConfig
+	_jsii_.Get(
+		j,
+		"telemetryConfigInput",
 		&returns,
 	)
 	return returns
@@ -1201,6 +1225,17 @@ func (d *jsiiProxy_DataprocMetastoreService) PutNetworkConfig(value *DataprocMet
 	)
 }
 
+func (d *jsiiProxy_DataprocMetastoreService) PutTelemetryConfig(value *DataprocMetastoreServiceTelemetryConfig) {
+	if err := d.validatePutTelemetryConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTelemetryConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataprocMetastoreService) PutTimeouts(value *DataprocMetastoreServiceTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1312,6 +1347,14 @@ func (d *jsiiProxy_DataprocMetastoreService) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocMetastoreService) ResetTelemetryConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTelemetryConfig",
 		nil, // no parameters
 	)
 }

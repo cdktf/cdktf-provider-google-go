@@ -57,6 +57,7 @@ type DataGoogleContainerEngineVersions interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ReleaseChannelDefaultVersion() cdktf.StringMap
+	ReleaseChannelLatestVersion() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -320,6 +321,16 @@ func (j *jsiiProxy_DataGoogleContainerEngineVersions) ReleaseChannelDefaultVersi
 	_jsii_.Get(
 		j,
 		"releaseChannelDefaultVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerEngineVersions) ReleaseChannelLatestVersion() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"releaseChannelLatestVersion",
 		&returns,
 	)
 	return returns

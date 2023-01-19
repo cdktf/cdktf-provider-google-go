@@ -44,6 +44,14 @@ func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference) 
 	return nil
 }
 
+func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference) validatePutNodeGroupAffinityParameters(value *DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference) validatePutReservationAffinityParameters(value *DataprocClusterClusterConfigGceClusterConfigReservationAffinity) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigOutputReference) validatePutShieldedInstanceConfigParameters(value *DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig) error {
 	return nil
 }
