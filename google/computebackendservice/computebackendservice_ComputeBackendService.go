@@ -55,6 +55,9 @@ type ComputeBackendService interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EdgeSecurityPolicy() *string
+	SetEdgeSecurityPolicy(val *string)
+	EdgeSecurityPolicyInput() *string
 	EnableCdn() interface{}
 	SetEnableCdn(val interface{})
 	EnableCdnInput() interface{}
@@ -178,6 +181,7 @@ type ComputeBackendService interface {
 	ResetCustomRequestHeaders()
 	ResetCustomResponseHeaders()
 	ResetDescription()
+	ResetEdgeSecurityPolicy()
 	ResetEnableCdn()
 	ResetHealthChecks()
 	ResetIap()
@@ -467,6 +471,26 @@ func (j *jsiiProxy_ComputeBackendService) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) EdgeSecurityPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edgeSecurityPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) EdgeSecurityPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edgeSecurityPolicyInput",
 		&returns,
 	)
 	return returns
@@ -1071,6 +1095,17 @@ func (j *jsiiProxy_ComputeBackendService)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeBackendService)SetEdgeSecurityPolicy(val *string) {
+	if err := j.validateSetEdgeSecurityPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"edgeSecurityPolicy",
 		val,
 	)
 }
@@ -1686,6 +1721,14 @@ func (c *jsiiProxy_ComputeBackendService) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendService) ResetEdgeSecurityPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEdgeSecurityPolicy",
 		nil, // no parameters
 	)
 }

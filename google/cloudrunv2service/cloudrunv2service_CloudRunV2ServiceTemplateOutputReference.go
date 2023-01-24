@@ -10,6 +10,9 @@ import (
 
 type CloudRunV2ServiceTemplateOutputReference interface {
 	cdktf.ComplexObject
+	Annotations() *map[string]*string
+	SetAnnotations(val *map[string]*string)
+	AnnotationsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -94,6 +97,7 @@ type CloudRunV2ServiceTemplateOutputReference interface {
 	PutScaling(value *CloudRunV2ServiceTemplateScaling)
 	PutVolumes(value interface{})
 	PutVpcAccess(value *CloudRunV2ServiceTemplateVpcAccess)
+	ResetAnnotations()
 	ResetContainers()
 	ResetEncryptionKey()
 	ResetExecutionEnvironment()
@@ -118,6 +122,26 @@ type CloudRunV2ServiceTemplateOutputReference interface {
 // The jsii proxy struct for CloudRunV2ServiceTemplateOutputReference
 type jsiiProxy_CloudRunV2ServiceTemplateOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) Annotations() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) AnnotationsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotationsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) ComplexObjectIndex() interface{} {
@@ -435,6 +459,17 @@ func NewCloudRunV2ServiceTemplateOutputReference_Override(c CloudRunV2ServiceTem
 		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference)SetAnnotations(val *map[string]*string) {
+	if err := j.validateSetAnnotationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"annotations",
+		val,
 	)
 }
 
@@ -797,6 +832,14 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) PutVpcAccess(value 
 		c,
 		"putVpcAccess",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) ResetAnnotations() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAnnotations",
+		nil, // no parameters
 	)
 }
 

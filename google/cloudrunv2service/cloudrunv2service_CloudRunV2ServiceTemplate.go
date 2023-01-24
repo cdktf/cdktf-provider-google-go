@@ -2,6 +2,10 @@ package cloudrunv2service
 
 
 type CloudRunV2ServiceTemplate struct {
+	// KRM-style annotations for the resource.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloud_run_v2_service#annotations CloudRunV2Service#annotations}
+	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
 	// containers block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloud_run_v2_service#containers CloudRunV2Service#containers}

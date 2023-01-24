@@ -64,6 +64,10 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateResolvePara
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetAnnotationsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

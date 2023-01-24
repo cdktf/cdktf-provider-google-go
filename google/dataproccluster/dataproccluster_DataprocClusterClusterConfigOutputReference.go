@@ -28,6 +28,8 @@ type DataprocClusterClusterConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataprocMetricConfig() DataprocClusterClusterConfigDataprocMetricConfigOutputReference
+	DataprocMetricConfigInput() *DataprocClusterClusterConfigDataprocMetricConfig
 	EncryptionConfig() DataprocClusterClusterConfigEncryptionConfigOutputReference
 	EncryptionConfigInput() *DataprocClusterClusterConfigEncryptionConfig
 	EndpointConfig() DataprocClusterClusterConfigEndpointConfigOutputReference
@@ -93,6 +95,7 @@ type DataprocClusterClusterConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAutoscalingConfig(value *DataprocClusterClusterConfigAutoscalingConfig)
+	PutDataprocMetricConfig(value *DataprocClusterClusterConfigDataprocMetricConfig)
 	PutEncryptionConfig(value *DataprocClusterClusterConfigEncryptionConfig)
 	PutEndpointConfig(value *DataprocClusterClusterConfigEndpointConfig)
 	PutGceClusterConfig(value *DataprocClusterClusterConfigGceClusterConfig)
@@ -105,6 +108,7 @@ type DataprocClusterClusterConfigOutputReference interface {
 	PutSoftwareConfig(value *DataprocClusterClusterConfigSoftwareConfig)
 	PutWorkerConfig(value *DataprocClusterClusterConfigWorkerConfig)
 	ResetAutoscalingConfig()
+	ResetDataprocMetricConfig()
 	ResetEncryptionConfig()
 	ResetEndpointConfig()
 	ResetGceClusterConfig()
@@ -188,6 +192,26 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) CreationStack() 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) DataprocMetricConfig() DataprocClusterClusterConfigDataprocMetricConfigOutputReference {
+	var returns DataprocClusterClusterConfigDataprocMetricConfigOutputReference
+	_jsii_.Get(
+		j,
+		"dataprocMetricConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) DataprocMetricConfigInput() *DataprocClusterClusterConfigDataprocMetricConfig {
+	var returns *DataprocClusterClusterConfigDataprocMetricConfig
+	_jsii_.Get(
+		j,
+		"dataprocMetricConfigInput",
 		&returns,
 	)
 	return returns
@@ -795,6 +819,17 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutAutoscalingCo
 	)
 }
 
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutDataprocMetricConfig(value *DataprocClusterClusterConfigDataprocMetricConfig) {
+	if err := d.validatePutDataprocMetricConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putDataprocMetricConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutEncryptionConfig(value *DataprocClusterClusterConfigEncryptionConfig) {
 	if err := d.validatePutEncryptionConfigParameters(value); err != nil {
 		panic(err)
@@ -920,6 +955,14 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) ResetAutoscaling
 	_jsii_.InvokeVoid(
 		d,
 		"resetAutoscalingConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) ResetDataprocMetricConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDataprocMetricConfig",
 		nil, // no parameters
 	)
 }

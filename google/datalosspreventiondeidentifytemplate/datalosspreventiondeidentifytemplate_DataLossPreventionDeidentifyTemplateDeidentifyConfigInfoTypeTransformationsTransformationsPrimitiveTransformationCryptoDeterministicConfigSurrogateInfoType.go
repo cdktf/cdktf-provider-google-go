@@ -8,5 +8,9 @@ type DataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformations
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/data_loss_prevention_deidentify_template#name DataLossPreventionDeidentifyTemplate#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
+	// Optional version name for this InfoType.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/data_loss_prevention_deidentify_template#version DataLossPreventionDeidentifyTemplate#version}
+	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 

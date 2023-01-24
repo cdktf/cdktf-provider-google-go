@@ -50,6 +50,8 @@ type ComposerEnvironmentConfigAOutputReference interface {
 	NodeCountInput() *float64
 	PrivateEnvironmentConfig() ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference
 	PrivateEnvironmentConfigInput() *ComposerEnvironmentConfigPrivateEnvironmentConfig
+	RecoveryConfig() ComposerEnvironmentConfigRecoveryConfigOutputReference
+	RecoveryConfigInput() *ComposerEnvironmentConfigRecoveryConfig
 	SoftwareConfig() ComposerEnvironmentConfigSoftwareConfigOutputReference
 	SoftwareConfigInput() *ComposerEnvironmentConfigSoftwareConfig
 	// Experimental.
@@ -96,6 +98,7 @@ type ComposerEnvironmentConfigAOutputReference interface {
 	PutMasterAuthorizedNetworksConfig(value *ComposerEnvironmentConfigMasterAuthorizedNetworksConfig)
 	PutNodeConfig(value *ComposerEnvironmentConfigNodeConfig)
 	PutPrivateEnvironmentConfig(value *ComposerEnvironmentConfigPrivateEnvironmentConfig)
+	PutRecoveryConfig(value *ComposerEnvironmentConfigRecoveryConfig)
 	PutSoftwareConfig(value *ComposerEnvironmentConfigSoftwareConfig)
 	PutWebServerConfig(value *ComposerEnvironmentConfigWebServerConfig)
 	PutWebServerNetworkAccessControl(value *ComposerEnvironmentConfigWebServerNetworkAccessControl)
@@ -108,6 +111,7 @@ type ComposerEnvironmentConfigAOutputReference interface {
 	ResetNodeConfig()
 	ResetNodeCount()
 	ResetPrivateEnvironmentConfig()
+	ResetRecoveryConfig()
 	ResetSoftwareConfig()
 	ResetWebServerConfig()
 	ResetWebServerNetworkAccessControl()
@@ -362,6 +366,26 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PrivateEnvironment
 	_jsii_.Get(
 		j,
 		"privateEnvironmentConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) RecoveryConfig() ComposerEnvironmentConfigRecoveryConfigOutputReference {
+	var returns ComposerEnvironmentConfigRecoveryConfigOutputReference
+	_jsii_.Get(
+		j,
+		"recoveryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) RecoveryConfigInput() *ComposerEnvironmentConfigRecoveryConfig {
+	var returns *ComposerEnvironmentConfigRecoveryConfig
+	_jsii_.Get(
+		j,
+		"recoveryConfigInput",
 		&returns,
 	)
 	return returns
@@ -824,6 +848,17 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutPrivateEnvironm
 	)
 }
 
+func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutRecoveryConfig(value *ComposerEnvironmentConfigRecoveryConfig) {
+	if err := c.validatePutRecoveryConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRecoveryConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutSoftwareConfig(value *ComposerEnvironmentConfigSoftwareConfig) {
 	if err := c.validatePutSoftwareConfigParameters(value); err != nil {
 		panic(err)
@@ -928,6 +963,14 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) ResetPrivateEnviro
 	_jsii_.InvokeVoid(
 		c,
 		"resetPrivateEnvironmentConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) ResetRecoveryConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRecoveryConfig",
 		nil, // no parameters
 	)
 }

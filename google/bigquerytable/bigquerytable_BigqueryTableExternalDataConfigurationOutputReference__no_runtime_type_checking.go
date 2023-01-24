@@ -96,6 +96,10 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateSetReferenceFileSchemaUriParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateSetSchemaParameters(val *string) error {
 	return nil
 }

@@ -17,6 +17,8 @@ type BillingBudgetBudgetFilter struct {
 	// this is a list of credit types to be subtracted from gross cost to determine the spend for threshold calculations. See a list of acceptable credit type values.
 	// If creditTypesTreatment is not INCLUDE_SPECIFIED_CREDITS, this field must be empty.
 	//
+	// *Note:** If the field has a value in the config and needs to be removed, the field has to be an emtpy array in the config.
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/billing_budget#credit_types BillingBudget#credit_types}
 	CreditTypes *[]*string `field:"optional" json:"creditTypes" yaml:"creditTypes"`
 	// Specifies how credits should be treated when determining spend for threshold calculations. Default value: "INCLUDE_ALL_CREDITS" Possible values: ["INCLUDE_ALL_CREDITS", "EXCLUDE_ALL_CREDITS", "INCLUDE_SPECIFIED_CREDITS"].
@@ -54,6 +56,8 @@ type BillingBudgetBudgetFilter struct {
 	// the parent account, usage from the parent account will be included.
 	// If the field is omitted, the report will include usage from the parent
 	// account and all subaccounts, if they exist.
+	//
+	// *Note:** If the field has a value in the config and needs to be removed, the field has to be an emtpy array in the config.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/billing_budget#subaccounts BillingBudget#subaccounts}
 	Subaccounts *[]*string `field:"optional" json:"subaccounts" yaml:"subaccounts"`

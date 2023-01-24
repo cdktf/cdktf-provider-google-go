@@ -27,6 +27,12 @@ type CloudRunV2ServiceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloud_run_v2_service#template CloudRunV2Service#template}
 	Template *CloudRunV2ServiceTemplate `field:"required" json:"template" yaml:"template"`
+	// Unstructured key value map that may be set by external tools to store and arbitrary metadata.
+	//
+	// They are not queryable and should be preserved when modifying objects. Cloud Run will populate some annotations using 'run.googleapis.com' or 'serving.knative.dev' namespaces. This field follows Kubernetes annotations' namespacing, limits, and rules. More info: https://kubernetes.io/docs/user-guide/annotations
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloud_run_v2_service#annotations CloudRunV2Service#annotations}
+	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
 	// binary_authorization block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloud_run_v2_service#binary_authorization CloudRunV2Service#binary_authorization}

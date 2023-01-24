@@ -38,6 +38,10 @@ type ComposerEnvironmentConfigA struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/composer_environment#private_environment_config ComposerEnvironment#private_environment_config}
 	PrivateEnvironmentConfig *ComposerEnvironmentConfigPrivateEnvironmentConfig `field:"optional" json:"privateEnvironmentConfig" yaml:"privateEnvironmentConfig"`
+	// recovery_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/composer_environment#recovery_config ComposerEnvironment#recovery_config}
+	RecoveryConfig *ComposerEnvironmentConfigRecoveryConfig `field:"optional" json:"recoveryConfig" yaml:"recoveryConfig"`
 	// software_config block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/composer_environment#software_config ComposerEnvironment#software_config}

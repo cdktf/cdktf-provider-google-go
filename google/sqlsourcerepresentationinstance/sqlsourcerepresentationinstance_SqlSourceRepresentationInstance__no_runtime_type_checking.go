@@ -68,11 +68,27 @@ func validateSqlSourceRepresentationInstance_IsTerraformResourceParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetCaCertificateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetClientCertificateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetClientKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetDatabaseVersionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetDumpFilePathParameters(val *string) error {
 	return nil
 }
 
@@ -92,6 +108,10 @@ func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetNameParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetPasswordParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetPortParameters(val *float64) error {
 	return nil
 }
@@ -105,6 +125,10 @@ func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetProvisionersParam
 }
 
 func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetUsernameParameters(val *string) error {
 	return nil
 }
 

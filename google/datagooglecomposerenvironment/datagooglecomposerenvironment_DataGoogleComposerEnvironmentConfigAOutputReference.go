@@ -40,6 +40,7 @@ type DataGoogleComposerEnvironmentConfigAOutputReference interface {
 	NodeConfig() DataGoogleComposerEnvironmentConfigNodeConfigList
 	NodeCount() *float64
 	PrivateEnvironmentConfig() DataGoogleComposerEnvironmentConfigPrivateEnvironmentConfigList
+	RecoveryConfig() DataGoogleComposerEnvironmentConfigRecoveryConfigList
 	SoftwareConfig() DataGoogleComposerEnvironmentConfigSoftwareConfigList
 	// Experimental.
 	TerraformAttribute() *string
@@ -246,6 +247,16 @@ func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigAOutputReference) PrivateE
 	_jsii_.Get(
 		j,
 		"privateEnvironmentConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigAOutputReference) RecoveryConfig() DataGoogleComposerEnvironmentConfigRecoveryConfigList {
+	var returns DataGoogleComposerEnvironmentConfigRecoveryConfigList
+	_jsii_.Get(
+		j,
+		"recoveryConfig",
 		&returns,
 	)
 	return returns

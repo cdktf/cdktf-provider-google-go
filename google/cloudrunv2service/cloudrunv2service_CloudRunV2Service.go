@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/google/r/cloud_run_v2_service google_cloud_run_v2_service}.
 type CloudRunV2Service interface {
 	cdktf.TerraformResource
+	Annotations() *map[string]*string
+	SetAnnotations(val *map[string]*string)
+	AnnotationsInput() *map[string]*string
 	BinaryAuthorization() CloudRunV2ServiceBinaryAuthorizationOutputReference
 	BinaryAuthorizationInput() *CloudRunV2ServiceBinaryAuthorization
 	// Experimental.
@@ -136,6 +139,7 @@ type CloudRunV2Service interface {
 	PutTemplate(value *CloudRunV2ServiceTemplate)
 	PutTimeouts(value *CloudRunV2ServiceTimeouts)
 	PutTraffic(value interface{})
+	ResetAnnotations()
 	ResetBinaryAuthorization()
 	ResetClient()
 	ResetClientVersion()
@@ -164,6 +168,26 @@ type CloudRunV2Service interface {
 // The jsii proxy struct for CloudRunV2Service
 type jsiiProxy_CloudRunV2Service struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CloudRunV2Service) Annotations() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) AnnotationsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotationsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CloudRunV2Service) BinaryAuthorization() CloudRunV2ServiceBinaryAuthorizationOutputReference {
@@ -746,6 +770,17 @@ func NewCloudRunV2Service_Override(c CloudRunV2Service, scope constructs.Constru
 	)
 }
 
+func (j *jsiiProxy_CloudRunV2Service)SetAnnotations(val *map[string]*string) {
+	if err := j.validateSetAnnotationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"annotations",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CloudRunV2Service)SetClient(val *string) {
 	if err := j.validateSetClientParameters(val); err != nil {
 		panic(err)
@@ -1228,6 +1263,14 @@ func (c *jsiiProxy_CloudRunV2Service) PutTraffic(value interface{}) {
 		c,
 		"putTraffic",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2Service) ResetAnnotations() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAnnotations",
+		nil, // no parameters
 	)
 }
 

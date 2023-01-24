@@ -128,6 +128,10 @@ func (j *jsiiProxy_ComputeBackendService) validateSetDescriptionParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendService) validateSetEdgeSecurityPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendService) validateSetEnableCdnParameters(val interface{}) error {
 	return nil
 }

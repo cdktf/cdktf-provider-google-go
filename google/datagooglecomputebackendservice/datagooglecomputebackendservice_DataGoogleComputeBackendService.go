@@ -35,6 +35,7 @@ type DataGoogleComputeBackendService interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	EdgeSecurityPolicy() *string
 	EnableCdn() cdktf.IResolvable
 	Fingerprint() *string
 	// Experimental.
@@ -276,6 +277,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendService) EdgeSecurityPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edgeSecurityPolicy",
 		&returns,
 	)
 	return returns

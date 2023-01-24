@@ -52,6 +52,9 @@ type BigqueryTableExternalDataConfigurationOutputReference interface {
 	MaxBadRecords() *float64
 	SetMaxBadRecords(val *float64)
 	MaxBadRecordsInput() *float64
+	ReferenceFileSchemaUri() *string
+	SetReferenceFileSchemaUri(val *string)
+	ReferenceFileSchemaUriInput() *string
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
@@ -105,6 +108,7 @@ type BigqueryTableExternalDataConfigurationOutputReference interface {
 	ResetHivePartitioningOptions()
 	ResetIgnoreUnknownValues()
 	ResetMaxBadRecords()
+	ResetReferenceFileSchemaUri()
 	ResetSchema()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -351,6 +355,26 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) MaxBad
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ReferenceFileSchemaUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"referenceFileSchemaUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ReferenceFileSchemaUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"referenceFileSchemaUriInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) Schema() *string {
 	var returns *string
 	_jsii_.Get(
@@ -543,6 +567,17 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference)SetMaxB
 	_jsii_.Set(
 		j,
 		"maxBadRecords",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference)SetReferenceFileSchemaUri(val *string) {
+	if err := j.validateSetReferenceFileSchemaUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"referenceFileSchemaUri",
 		val,
 	)
 }
@@ -892,6 +927,14 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ResetM
 	_jsii_.InvokeVoid(
 		b,
 		"resetMaxBadRecords",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ResetReferenceFileSchemaUri() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetReferenceFileSchemaUri",
 		nil, // no parameters
 	)
 }

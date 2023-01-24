@@ -68,6 +68,10 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validatePutPrivate
 	return nil
 }
 
+func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validatePutRecoveryConfigParameters(value *ComposerEnvironmentConfigRecoveryConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validatePutSoftwareConfigParameters(value *ComposerEnvironmentConfigSoftwareConfig) error {
 	return nil
 }

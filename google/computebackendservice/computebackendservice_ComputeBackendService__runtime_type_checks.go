@@ -335,6 +335,14 @@ func (j *jsiiProxy_ComputeBackendService) validateSetDescriptionParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendService) validateSetEdgeSecurityPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendService) validateSetEnableCdnParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

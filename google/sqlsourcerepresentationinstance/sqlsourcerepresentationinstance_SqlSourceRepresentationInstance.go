@@ -12,8 +12,17 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/google/r/sql_source_representation_instance google_sql_source_representation_instance}.
 type SqlSourceRepresentationInstance interface {
 	cdktf.TerraformResource
+	CaCertificate() *string
+	SetCaCertificate(val *string)
+	CaCertificateInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientCertificate() *string
+	SetClientCertificate(val *string)
+	ClientCertificateInput() *string
+	ClientKey() *string
+	SetClientKey(val *string)
+	ClientKeyInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -31,6 +40,9 @@ type SqlSourceRepresentationInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DumpFilePath() *string
+	SetDumpFilePath(val *string)
+	DumpFilePathInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -54,6 +66,9 @@ type SqlSourceRepresentationInstance interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Password() *string
+	SetPassword(val *string)
+	PasswordInput() *string
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
@@ -81,6 +96,9 @@ type SqlSourceRepresentationInstance interface {
 	TerraformResourceType() *string
 	Timeouts() SqlSourceRepresentationInstanceTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Username() *string
+	SetUsername(val *string)
+	UsernameInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -107,14 +125,20 @@ type SqlSourceRepresentationInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *SqlSourceRepresentationInstanceTimeouts)
+	ResetCaCertificate()
+	ResetClientCertificate()
+	ResetClientKey()
+	ResetDumpFilePath()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPassword()
 	ResetPort()
 	ResetProject()
 	ResetRegion()
 	ResetTimeouts()
+	ResetUsername()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -130,11 +154,71 @@ type jsiiProxy_SqlSourceRepresentationInstance struct {
 	internal.Type__cdktfTerraformResource
 }
 
+func (j *jsiiProxy_SqlSourceRepresentationInstance) CaCertificate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"caCertificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) CaCertificateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"caCertificateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlSourceRepresentationInstance) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) ClientCertificate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) ClientCertificateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientCertificateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) ClientKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) ClientKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientKeyInput",
 		&returns,
 	)
 	return returns
@@ -195,6 +279,26 @@ func (j *jsiiProxy_SqlSourceRepresentationInstance) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) DumpFilePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dumpFilePath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) DumpFilePathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dumpFilePathInput",
 		&returns,
 	)
 	return returns
@@ -305,6 +409,26 @@ func (j *jsiiProxy_SqlSourceRepresentationInstance) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) Password() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"password",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) PasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordInput",
 		&returns,
 	)
 	return returns
@@ -450,6 +574,26 @@ func (j *jsiiProxy_SqlSourceRepresentationInstance) TimeoutsInput() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_SqlSourceRepresentationInstance) Username() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"username",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) UsernameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/google/r/sql_source_representation_instance google_sql_source_representation_instance} Resource.
 func NewSqlSourceRepresentationInstance(scope constructs.Construct, id *string, config *SqlSourceRepresentationInstanceConfig) SqlSourceRepresentationInstance {
@@ -477,6 +621,39 @@ func NewSqlSourceRepresentationInstance_Override(s SqlSourceRepresentationInstan
 		"@cdktf/provider-google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstance",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance)SetCaCertificate(val *string) {
+	if err := j.validateSetCaCertificateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"caCertificate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance)SetClientCertificate(val *string) {
+	if err := j.validateSetClientCertificateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientCertificate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance)SetClientKey(val *string) {
+	if err := j.validateSetClientKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientKey",
+		val,
 	)
 }
 
@@ -514,6 +691,17 @@ func (j *jsiiProxy_SqlSourceRepresentationInstance)SetDependsOn(val *[]*string) 
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance)SetDumpFilePath(val *string) {
+	if err := j.validateSetDumpFilePathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dumpFilePath",
 		val,
 	)
 }
@@ -570,6 +758,17 @@ func (j *jsiiProxy_SqlSourceRepresentationInstance)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_SqlSourceRepresentationInstance)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"password",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SqlSourceRepresentationInstance)SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
@@ -618,6 +817,17 @@ func (j *jsiiProxy_SqlSourceRepresentationInstance)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"username",
 		val,
 	)
 }
@@ -899,6 +1109,38 @@ func (s *jsiiProxy_SqlSourceRepresentationInstance) PutTimeouts(value *SqlSource
 	)
 }
 
+func (s *jsiiProxy_SqlSourceRepresentationInstance) ResetCaCertificate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCaCertificate",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlSourceRepresentationInstance) ResetClientCertificate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetClientCertificate",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlSourceRepresentationInstance) ResetClientKey() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetClientKey",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlSourceRepresentationInstance) ResetDumpFilePath() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDumpFilePath",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlSourceRepresentationInstance) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -911,6 +1153,14 @@ func (s *jsiiProxy_SqlSourceRepresentationInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlSourceRepresentationInstance) ResetPassword() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPassword",
 		nil, // no parameters
 	)
 }
@@ -943,6 +1193,14 @@ func (s *jsiiProxy_SqlSourceRepresentationInstance) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlSourceRepresentationInstance) ResetUsername() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUsername",
 		nil, // no parameters
 	)
 }

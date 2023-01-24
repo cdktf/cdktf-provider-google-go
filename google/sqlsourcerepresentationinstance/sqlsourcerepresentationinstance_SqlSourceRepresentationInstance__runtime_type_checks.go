@@ -146,6 +146,30 @@ func validateSqlSourceRepresentationInstance_IsTerraformResourceParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetCaCertificateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetClientCertificateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetClientKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -187,6 +211,14 @@ func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetDatabaseVersionPa
 	return nil
 }
 
+func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetDumpFilePathParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetHostParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -212,6 +244,14 @@ func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetLifecycleParamete
 }
 
 func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetPasswordParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -282,6 +322,14 @@ func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetProvisionersParam
 }
 
 func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetUsernameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

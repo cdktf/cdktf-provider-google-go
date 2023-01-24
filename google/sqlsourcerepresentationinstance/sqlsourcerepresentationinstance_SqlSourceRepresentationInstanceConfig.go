@@ -31,11 +31,35 @@ type SqlSourceRepresentationInstanceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_source_representation_instance#name SqlSourceRepresentationInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// The CA certificate on the external server. Include only if SSL/TLS is used on the external server.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_source_representation_instance#ca_certificate SqlSourceRepresentationInstance#ca_certificate}
+	CaCertificate *string `field:"optional" json:"caCertificate" yaml:"caCertificate"`
+	// The client certificate on the external server.
+	//
+	// Required only for server-client authentication. Include only if SSL/TLS is used on the external server.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_source_representation_instance#client_certificate SqlSourceRepresentationInstance#client_certificate}
+	ClientCertificate *string `field:"optional" json:"clientCertificate" yaml:"clientCertificate"`
+	// The private key file for the client certificate on the external server.
+	//
+	// Required only for server-client authentication. Include only if SSL/TLS is used on the external server.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_source_representation_instance#client_key SqlSourceRepresentationInstance#client_key}
+	ClientKey *string `field:"optional" json:"clientKey" yaml:"clientKey"`
+	// A file in the bucket that contains the data from the external server.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_source_representation_instance#dump_file_path SqlSourceRepresentationInstance#dump_file_path}
+	DumpFilePath *string `field:"optional" json:"dumpFilePath" yaml:"dumpFilePath"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_source_representation_instance#id SqlSourceRepresentationInstance#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// The password for the replication user account.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_source_representation_instance#password SqlSourceRepresentationInstance#password}
+	Password *string `field:"optional" json:"password" yaml:"password"`
 	// The externally accessible port for the source database server. Defaults to 3306.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_source_representation_instance#port SqlSourceRepresentationInstance#port}
@@ -50,5 +74,9 @@ type SqlSourceRepresentationInstanceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_source_representation_instance#timeouts SqlSourceRepresentationInstance#timeouts}
 	Timeouts *SqlSourceRepresentationInstanceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// The replication user account on the external server.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_source_representation_instance#username SqlSourceRepresentationInstance#username}
+	Username *string `field:"optional" json:"username" yaml:"username"`
 }
 

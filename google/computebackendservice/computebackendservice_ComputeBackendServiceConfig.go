@@ -77,6 +77,10 @@ type ComputeBackendServiceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_backend_service#description ComputeBackendService#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// The resource URL for the edge security policy associated with this backend service.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_backend_service#edge_security_policy ComputeBackendService#edge_security_policy}
+	EdgeSecurityPolicy *string `field:"optional" json:"edgeSecurityPolicy" yaml:"edgeSecurityPolicy"`
 	// If true, enable Cloud CDN for this BackendService.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_backend_service#enable_cdn ComputeBackendService#enable_cdn}

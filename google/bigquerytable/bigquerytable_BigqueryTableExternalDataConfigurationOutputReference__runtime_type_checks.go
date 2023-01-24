@@ -279,6 +279,14 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateSetReferenceFileSchemaUriParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateSetSchemaParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -6,6 +6,10 @@ type DataprocClusterClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/dataproc_cluster#autoscaling_config DataprocCluster#autoscaling_config}
 	AutoscalingConfig *DataprocClusterClusterConfigAutoscalingConfig `field:"optional" json:"autoscalingConfig" yaml:"autoscalingConfig"`
+	// dataproc_metric_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/dataproc_cluster#dataproc_metric_config DataprocCluster#dataproc_metric_config}
+	DataprocMetricConfig *DataprocClusterClusterConfigDataprocMetricConfig `field:"optional" json:"dataprocMetricConfig" yaml:"dataprocMetricConfig"`
 	// encryption_config block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/dataproc_cluster#encryption_config DataprocCluster#encryption_config}

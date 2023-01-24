@@ -52,6 +52,12 @@ type BigqueryTableExternalDataConfiguration struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_table#max_bad_records BigqueryTable#max_bad_records}
 	MaxBadRecords *float64 `field:"optional" json:"maxBadRecords" yaml:"maxBadRecords"`
+	// When creating an external table, the user can provide a reference file with the table schema.
+	//
+	// This is enabled for the following formats: AVRO, PARQUET, ORC.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_table#reference_file_schema_uri BigqueryTable#reference_file_schema_uri}
+	ReferenceFileSchemaUri *string `field:"optional" json:"referenceFileSchemaUri" yaml:"referenceFileSchemaUri"`
 	// A JSON schema for the external table.
 	//
 	// Schema is required for CSV and JSON formats and is disallowed for Google Cloud Bigtable, Cloud Datastore backups, and Avro formats when using external tables.
