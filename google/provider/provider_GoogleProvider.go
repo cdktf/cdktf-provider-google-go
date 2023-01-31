@@ -224,6 +224,9 @@ type GoogleProvider interface {
 	HealthcareCustomEndpoint() *string
 	SetHealthcareCustomEndpoint(val *string)
 	HealthcareCustomEndpointInput() *string
+	Iam2CustomEndpoint() *string
+	SetIam2CustomEndpoint(val *string)
+	Iam2CustomEndpointInput() *string
 	IamBetaCustomEndpoint() *string
 	SetIamBetaCustomEndpoint(val *string)
 	IamBetaCustomEndpointInput() *string
@@ -359,6 +362,9 @@ type GoogleProvider interface {
 	TagsCustomEndpoint() *string
 	SetTagsCustomEndpoint(val *string)
 	TagsCustomEndpointInput() *string
+	TagsLocationCustomEndpoint() *string
+	SetTagsLocationCustomEndpoint(val *string)
+	TagsLocationCustomEndpointInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -456,6 +462,7 @@ type GoogleProvider interface {
 	ResetGkeBackupCustomEndpoint()
 	ResetGkeHubCustomEndpoint()
 	ResetHealthcareCustomEndpoint()
+	ResetIam2CustomEndpoint()
 	ResetIamBetaCustomEndpoint()
 	ResetIamCredentialsCustomEndpoint()
 	ResetIamCustomEndpoint()
@@ -502,6 +509,7 @@ type GoogleProvider interface {
 	ResetStorageCustomEndpoint()
 	ResetStorageTransferCustomEndpoint()
 	ResetTagsCustomEndpoint()
+	ResetTagsLocationCustomEndpoint()
 	ResetTpuCustomEndpoint()
 	ResetUserProjectOverride()
 	ResetVertexAiCustomEndpoint()
@@ -1923,6 +1931,26 @@ func (j *jsiiProxy_GoogleProvider) HealthcareCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) Iam2CustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iam2CustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) Iam2CustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iam2CustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) IamBetaCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2813,6 +2841,26 @@ func (j *jsiiProxy_GoogleProvider) TagsCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) TagsLocationCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagsLocationCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) TagsLocationCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tagsLocationCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -3540,6 +3588,14 @@ func (j *jsiiProxy_GoogleProvider)SetHealthcareCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetIam2CustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"iam2CustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetIamBetaCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3880,6 +3936,14 @@ func (j *jsiiProxy_GoogleProvider)SetTagsCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"tagsCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetTagsLocationCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"tagsLocationCustomEndpoint",
 		val,
 	)
 }
@@ -4585,6 +4649,14 @@ func (g *jsiiProxy_GoogleProvider) ResetHealthcareCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetIam2CustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIam2CustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetIamBetaCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -4933,6 +5005,14 @@ func (g *jsiiProxy_GoogleProvider) ResetTagsCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTagsCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetTagsLocationCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTagsLocationCustomEndpoint",
 		nil, // no parameters
 	)
 }

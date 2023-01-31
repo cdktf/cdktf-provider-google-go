@@ -103,6 +103,9 @@ type ComputeRouterNat interface {
 	TcpEstablishedIdleTimeoutSec() *float64
 	SetTcpEstablishedIdleTimeoutSec(val *float64)
 	TcpEstablishedIdleTimeoutSecInput() *float64
+	TcpTimeWaitTimeoutSec() *float64
+	SetTcpTimeWaitTimeoutSec(val *float64)
+	TcpTimeWaitTimeoutSecInput() *float64
 	TcpTransitoryIdleTimeoutSec() *float64
 	SetTcpTransitoryIdleTimeoutSec(val *float64)
 	TcpTransitoryIdleTimeoutSecInput() *float64
@@ -163,6 +166,7 @@ type ComputeRouterNat interface {
 	ResetRules()
 	ResetSubnetwork()
 	ResetTcpEstablishedIdleTimeoutSec()
+	ResetTcpTimeWaitTimeoutSec()
 	ResetTcpTransitoryIdleTimeoutSec()
 	ResetTimeouts()
 	ResetUdpIdleTimeoutSec()
@@ -671,6 +675,26 @@ func (j *jsiiProxy_ComputeRouterNat) TcpEstablishedIdleTimeoutSecInput() *float6
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRouterNat) TcpTimeWaitTimeoutSec() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tcpTimeWaitTimeoutSec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterNat) TcpTimeWaitTimeoutSecInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tcpTimeWaitTimeoutSecInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRouterNat) TcpTransitoryIdleTimeoutSec() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1017,6 +1041,17 @@ func (j *jsiiProxy_ComputeRouterNat)SetTcpEstablishedIdleTimeoutSec(val *float64
 	_jsii_.Set(
 		j,
 		"tcpEstablishedIdleTimeoutSec",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterNat)SetTcpTimeWaitTimeoutSec(val *float64) {
+	if err := j.validateSetTcpTimeWaitTimeoutSecParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tcpTimeWaitTimeoutSec",
 		val,
 	)
 }
@@ -1469,6 +1504,14 @@ func (c *jsiiProxy_ComputeRouterNat) ResetTcpEstablishedIdleTimeoutSec() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTcpEstablishedIdleTimeoutSec",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterNat) ResetTcpTimeWaitTimeoutSec() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTcpTimeWaitTimeoutSec",
 		nil, // no parameters
 	)
 }

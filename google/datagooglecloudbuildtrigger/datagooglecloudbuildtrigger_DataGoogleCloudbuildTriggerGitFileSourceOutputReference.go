@@ -27,6 +27,7 @@ type DataGoogleCloudbuildTriggerGitFileSourceOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GithubEnterpriseConfig() *string
 	InternalValue() *DataGoogleCloudbuildTriggerGitFileSource
 	SetInternalValue(val *DataGoogleCloudbuildTriggerGitFileSource)
 	Path() *string
@@ -115,6 +116,16 @@ func (j *jsiiProxy_DataGoogleCloudbuildTriggerGitFileSourceOutputReference) Fqn(
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerGitFileSourceOutputReference) GithubEnterpriseConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"githubEnterpriseConfig",
 		&returns,
 	)
 	return returns

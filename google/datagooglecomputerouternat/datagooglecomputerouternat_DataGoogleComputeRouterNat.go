@@ -72,6 +72,7 @@ type DataGoogleComputeRouterNat interface {
 	SourceSubnetworkIpRangesToNat() *string
 	Subnetwork() DataGoogleComputeRouterNatSubnetworkList
 	TcpEstablishedIdleTimeoutSec() *float64
+	TcpTimeWaitTimeoutSec() *float64
 	TcpTransitoryIdleTimeoutSec() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -461,6 +462,16 @@ func (j *jsiiProxy_DataGoogleComputeRouterNat) TcpEstablishedIdleTimeoutSec() *f
 	_jsii_.Get(
 		j,
 		"tcpEstablishedIdleTimeoutSec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRouterNat) TcpTimeWaitTimeoutSec() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tcpTimeWaitTimeoutSec",
 		&returns,
 	)
 	return returns

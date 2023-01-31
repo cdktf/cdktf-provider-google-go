@@ -56,6 +56,10 @@ type ComputeNodeGroupConfig struct {
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_node_group#project ComputeNodeGroup#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// share_settings block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_node_group#share_settings ComputeNodeGroup#share_settings}
+	ShareSettings *ComputeNodeGroupShareSettings `field:"optional" json:"shareSettings" yaml:"shareSettings"`
 	// The total number of nodes in the node group. One of 'initial_size' or 'size' must be specified.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_node_group#size ComputeNodeGroup#size}

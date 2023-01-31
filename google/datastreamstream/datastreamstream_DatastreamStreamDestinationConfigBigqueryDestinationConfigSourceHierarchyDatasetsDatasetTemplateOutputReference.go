@@ -32,6 +32,9 @@ type DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDa
 	Fqn() *string
 	InternalValue() *DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplate
 	SetInternalValue(val *DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplate)
+	KmsKeyName() *string
+	SetKmsKeyName(val *string)
+	KmsKeyNameInput() *string
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
@@ -68,6 +71,7 @@ type DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDa
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDatasetIdPrefix()
+	ResetKmsKeyName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigSou
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference) KmsKeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference) KmsKeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyNameInput",
 		&returns,
 	)
 	return returns
@@ -261,6 +285,17 @@ func (j *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigSou
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference)SetKmsKeyName(val *string) {
+	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyName",
 		val,
 	)
 }
@@ -488,6 +523,14 @@ func (d *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigSou
 	_jsii_.InvokeVoid(
 		d,
 		"resetDatasetIdPrefix",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference) ResetKmsKeyName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKmsKeyName",
 		nil, // no parameters
 	)
 }

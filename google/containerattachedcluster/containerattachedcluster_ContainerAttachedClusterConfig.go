@@ -58,6 +58,10 @@ type ContainerAttachedClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_attached_cluster#authorization ContainerAttachedCluster#authorization}
 	Authorization *ContainerAttachedClusterAuthorization `field:"optional" json:"authorization" yaml:"authorization"`
+	// Policy to determine what flags to send on delete.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_attached_cluster#deletion_policy ContainerAttachedCluster#deletion_policy}
+	DeletionPolicy *string `field:"optional" json:"deletionPolicy" yaml:"deletionPolicy"`
 	// A human readable description of this attached cluster. Cannot be longer than 255 UTF-8 encoded bytes.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_attached_cluster#description ContainerAttachedCluster#description}

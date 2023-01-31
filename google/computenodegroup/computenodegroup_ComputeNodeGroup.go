@@ -79,6 +79,8 @@ type ComputeNodeGroup interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	ShareSettings() ComputeNodeGroupShareSettingsOutputReference
+	ShareSettingsInput() *ComputeNodeGroupShareSettings
 	Size() *float64
 	SetSize(val *float64)
 	SizeInput() *float64
@@ -120,6 +122,7 @@ type ComputeNodeGroup interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscalingPolicy(value *ComputeNodeGroupAutoscalingPolicy)
 	PutMaintenanceWindow(value *ComputeNodeGroupMaintenanceWindow)
+	PutShareSettings(value *ComputeNodeGroupShareSettings)
 	PutTimeouts(value *ComputeNodeGroupTimeouts)
 	ResetAutoscalingPolicy()
 	ResetDescription()
@@ -132,6 +135,7 @@ type ComputeNodeGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetShareSettings()
 	ResetSize()
 	ResetTimeouts()
 	ResetZone()
@@ -475,6 +479,26 @@ func (j *jsiiProxy_ComputeNodeGroup) SelfLink() *string {
 	_jsii_.Get(
 		j,
 		"selfLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeNodeGroup) ShareSettings() ComputeNodeGroupShareSettingsOutputReference {
+	var returns ComputeNodeGroupShareSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"shareSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeNodeGroup) ShareSettingsInput() *ComputeNodeGroupShareSettings {
+	var returns *ComputeNodeGroupShareSettings
+	_jsii_.Get(
+		j,
+		"shareSettingsInput",
 		&returns,
 	)
 	return returns
@@ -1052,6 +1076,17 @@ func (c *jsiiProxy_ComputeNodeGroup) PutMaintenanceWindow(value *ComputeNodeGrou
 	)
 }
 
+func (c *jsiiProxy_ComputeNodeGroup) PutShareSettings(value *ComputeNodeGroupShareSettings) {
+	if err := c.validatePutShareSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putShareSettings",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeNodeGroup) PutTimeouts(value *ComputeNodeGroupTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1131,6 +1166,14 @@ func (c *jsiiProxy_ComputeNodeGroup) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeNodeGroup) ResetShareSettings() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetShareSettings",
 		nil, // no parameters
 	)
 }

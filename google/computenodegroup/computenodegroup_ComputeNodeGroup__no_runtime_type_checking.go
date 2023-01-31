@@ -60,6 +60,10 @@ func (c *jsiiProxy_ComputeNodeGroup) validatePutMaintenanceWindowParameters(valu
 	return nil
 }
 
+func (c *jsiiProxy_ComputeNodeGroup) validatePutShareSettingsParameters(value *ComputeNodeGroupShareSettings) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeNodeGroup) validatePutTimeoutsParameters(value *ComputeNodeGroupTimeouts) error {
 	return nil
 }

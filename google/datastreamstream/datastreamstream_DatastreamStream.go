@@ -28,6 +28,9 @@ type DatastreamStream interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	CustomerManagedEncryptionKey() *string
+	SetCustomerManagedEncryptionKey(val *string)
+	CustomerManagedEncryptionKeyInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -123,6 +126,7 @@ type DatastreamStream interface {
 	PutTimeouts(value *DatastreamStreamTimeouts)
 	ResetBackfillAll()
 	ResetBackfillNone()
+	ResetCustomerManagedEncryptionKey()
 	ResetDesiredState()
 	ResetId()
 	ResetLabels()
@@ -221,6 +225,26 @@ func (j *jsiiProxy_DatastreamStream) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStream) CustomerManagedEncryptionKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerManagedEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStream) CustomerManagedEncryptionKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerManagedEncryptionKeyInput",
 		&returns,
 	)
 	return returns
@@ -611,6 +635,17 @@ func (j *jsiiProxy_DatastreamStream)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatastreamStream)SetCustomerManagedEncryptionKey(val *string) {
+	if err := j.validateSetCustomerManagedEncryptionKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customerManagedEncryptionKey",
 		val,
 	)
 }
@@ -1071,6 +1106,14 @@ func (d *jsiiProxy_DatastreamStream) ResetBackfillNone() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetBackfillNone",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatastreamStream) ResetCustomerManagedEncryptionKey() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCustomerManagedEncryptionKey",
 		nil, // no parameters
 	)
 }

@@ -31,6 +31,9 @@ type ContainerAttachedCluster interface {
 	// Experimental.
 	SetCount(val *float64)
 	CreateTime() *string
+	DeletionPolicy() *string
+	SetDeletionPolicy(val *string)
+	DeletionPolicyInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -136,6 +139,7 @@ type ContainerAttachedCluster interface {
 	PutTimeouts(value *ContainerAttachedClusterTimeouts)
 	ResetAnnotations()
 	ResetAuthorization()
+	ResetDeletionPolicy()
 	ResetDescription()
 	ResetId()
 	ResetLoggingConfig()
@@ -255,6 +259,26 @@ func (j *jsiiProxy_ContainerAttachedCluster) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAttachedCluster) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAttachedCluster) DeletionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -750,6 +774,17 @@ func (j *jsiiProxy_ContainerAttachedCluster)SetCount(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ContainerAttachedCluster)SetDeletionPolicy(val *string) {
+	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionPolicy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContainerAttachedCluster)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1217,6 +1252,14 @@ func (c *jsiiProxy_ContainerAttachedCluster) ResetAuthorization() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAuthorization",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAttachedCluster) ResetDeletionPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeletionPolicy",
 		nil, // no parameters
 	)
 }

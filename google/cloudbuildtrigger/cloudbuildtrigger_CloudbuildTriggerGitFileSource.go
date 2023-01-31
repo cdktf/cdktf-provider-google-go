@@ -10,6 +10,10 @@ type CloudbuildTriggerGitFileSource struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudbuild_trigger#repo_type CloudbuildTrigger#repo_type}
 	RepoType *string `field:"required" json:"repoType" yaml:"repoType"`
+	// The full resource name of the github enterprise config. Format: projects/{project}/locations/{location}/githubEnterpriseConfigs/{id}. projects/{project}/githubEnterpriseConfigs/{id}.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudbuild_trigger#github_enterprise_config CloudbuildTrigger#github_enterprise_config}
+	GithubEnterpriseConfig *string `field:"optional" json:"githubEnterpriseConfig" yaml:"githubEnterpriseConfig"`
 	// The branch, tag, arbitrary ref, or SHA version of the repo to use when resolving the  filename (optional).
 	//
 	// This field respects the same syntax/resolution as described here: https://git-scm.com/docs/gitrevisions

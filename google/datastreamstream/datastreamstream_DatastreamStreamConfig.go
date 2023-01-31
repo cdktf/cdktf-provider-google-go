@@ -47,6 +47,13 @@ type DatastreamStreamConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/datastream_stream#backfill_none DatastreamStream#backfill_none}
 	BackfillNone *DatastreamStreamBackfillNone `field:"optional" json:"backfillNone" yaml:"backfillNone"`
+	// A reference to a KMS encryption key.
+	//
+	// If provided, it will be used to encrypt the data. If left blank, data
+	// will be encrypted using an internal Stream-specific encryption key provisioned through KMS.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/datastream_stream#customer_managed_encryption_key DatastreamStream#customer_managed_encryption_key}
+	CustomerManagedEncryptionKey *string `field:"optional" json:"customerManagedEncryptionKey" yaml:"customerManagedEncryptionKey"`
 	// Desired state of the Stream.
 	//
 	// Set this field to 'RUNNING' to start the stream, and 'PAUSED' to pause the stream.

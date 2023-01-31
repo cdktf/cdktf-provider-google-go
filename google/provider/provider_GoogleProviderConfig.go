@@ -142,6 +142,8 @@ type GoogleProviderConfig struct {
 	GkeHubCustomEndpoint *string `field:"optional" json:"gkeHubCustomEndpoint" yaml:"gkeHubCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#healthcare_custom_endpoint GoogleProvider#healthcare_custom_endpoint}.
 	HealthcareCustomEndpoint *string `field:"optional" json:"healthcareCustomEndpoint" yaml:"healthcareCustomEndpoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#iam2_custom_endpoint GoogleProvider#iam2_custom_endpoint}.
+	Iam2CustomEndpoint *string `field:"optional" json:"iam2CustomEndpoint" yaml:"iam2CustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#iam_beta_custom_endpoint GoogleProvider#iam_beta_custom_endpoint}.
 	IamBetaCustomEndpoint *string `field:"optional" json:"iamBetaCustomEndpoint" yaml:"iamBetaCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#iam_credentials_custom_endpoint GoogleProvider#iam_credentials_custom_endpoint}.
@@ -228,6 +230,8 @@ type GoogleProviderConfig struct {
 	StorageTransferCustomEndpoint *string `field:"optional" json:"storageTransferCustomEndpoint" yaml:"storageTransferCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#tags_custom_endpoint GoogleProvider#tags_custom_endpoint}.
 	TagsCustomEndpoint *string `field:"optional" json:"tagsCustomEndpoint" yaml:"tagsCustomEndpoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#tags_location_custom_endpoint GoogleProvider#tags_location_custom_endpoint}.
+	TagsLocationCustomEndpoint *string `field:"optional" json:"tagsLocationCustomEndpoint" yaml:"tagsLocationCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#tpu_custom_endpoint GoogleProvider#tpu_custom_endpoint}.
 	TpuCustomEndpoint *string `field:"optional" json:"tpuCustomEndpoint" yaml:"tpuCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#user_project_override GoogleProvider#user_project_override}.

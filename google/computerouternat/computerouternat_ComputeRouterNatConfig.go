@@ -116,6 +116,10 @@ type ComputeRouterNatConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_router_nat#tcp_established_idle_timeout_sec ComputeRouterNat#tcp_established_idle_timeout_sec}
 	TcpEstablishedIdleTimeoutSec *float64 `field:"optional" json:"tcpEstablishedIdleTimeoutSec" yaml:"tcpEstablishedIdleTimeoutSec"`
+	// Timeout (in seconds) for TCP connections that are in TIME_WAIT state. Defaults to 120s if not set.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_router_nat#tcp_time_wait_timeout_sec ComputeRouterNat#tcp_time_wait_timeout_sec}
+	TcpTimeWaitTimeoutSec *float64 `field:"optional" json:"tcpTimeWaitTimeoutSec" yaml:"tcpTimeWaitTimeoutSec"`
 	// Timeout (in seconds) for TCP transitory connections. Defaults to 30s if not set.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_router_nat#tcp_transitory_idle_timeout_sec ComputeRouterNat#tcp_transitory_idle_timeout_sec}

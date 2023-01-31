@@ -152,6 +152,10 @@ func (j *jsiiProxy_ComputeRouterNat) validateSetTcpEstablishedIdleTimeoutSecPara
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterNat) validateSetTcpTimeWaitTimeoutSecParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterNat) validateSetTcpTransitoryIdleTimeoutSecParameters(val *float64) error {
 	return nil
 }

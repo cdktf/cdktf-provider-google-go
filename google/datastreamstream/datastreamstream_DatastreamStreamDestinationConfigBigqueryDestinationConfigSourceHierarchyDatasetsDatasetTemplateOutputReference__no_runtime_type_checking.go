@@ -64,6 +64,10 @@ func (j *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigSou
 	return nil
 }
 
+func (j *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference) validateSetKmsKeyNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference) validateSetLocationParameters(val *string) error {
 	return nil
 }

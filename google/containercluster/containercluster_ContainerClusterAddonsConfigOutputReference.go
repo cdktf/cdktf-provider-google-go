@@ -22,6 +22,8 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfigConnectorConfig() ContainerClusterAddonsConfigConfigConnectorConfigOutputReference
+	ConfigConnectorConfigInput() *ContainerClusterAddonsConfigConfigConnectorConfig
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -78,6 +80,7 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudrunConfig(value *ContainerClusterAddonsConfigCloudrunConfig)
+	PutConfigConnectorConfig(value *ContainerClusterAddonsConfigConfigConnectorConfig)
 	PutDnsCacheConfig(value *ContainerClusterAddonsConfigDnsCacheConfig)
 	PutGcePersistentDiskCsiDriverConfig(value *ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig)
 	PutGcpFilestoreCsiDriverConfig(value *ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig)
@@ -86,6 +89,7 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	PutHttpLoadBalancing(value *ContainerClusterAddonsConfigHttpLoadBalancing)
 	PutNetworkPolicyConfig(value *ContainerClusterAddonsConfigNetworkPolicyConfig)
 	ResetCloudrunConfig()
+	ResetConfigConnectorConfig()
 	ResetDnsCacheConfig()
 	ResetGcePersistentDiskCsiDriverConfig()
 	ResetGcpFilestoreCsiDriverConfig()
@@ -143,6 +147,26 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ComplexObjectIsF
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ConfigConnectorConfig() ContainerClusterAddonsConfigConfigConnectorConfigOutputReference {
+	var returns ContainerClusterAddonsConfigConfigConnectorConfigOutputReference
+	_jsii_.Get(
+		j,
+		"configConnectorConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ConfigConnectorConfigInput() *ContainerClusterAddonsConfigConfigConnectorConfig {
+	var returns *ContainerClusterAddonsConfigConfigConnectorConfig
+	_jsii_.Get(
+		j,
+		"configConnectorConfigInput",
 		&returns,
 	)
 	return returns
@@ -618,6 +642,17 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutCloudrunConfi
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutConfigConnectorConfig(value *ContainerClusterAddonsConfigConfigConnectorConfig) {
+	if err := c.validatePutConfigConnectorConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putConfigConnectorConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutDnsCacheConfig(value *ContainerClusterAddonsConfigDnsCacheConfig) {
 	if err := c.validatePutDnsCacheConfigParameters(value); err != nil {
 		panic(err)
@@ -699,6 +734,14 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ResetCloudrunCon
 	_jsii_.InvokeVoid(
 		c,
 		"resetCloudrunConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ResetConfigConnectorConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetConfigConnectorConfig",
 		nil, // no parameters
 	)
 }

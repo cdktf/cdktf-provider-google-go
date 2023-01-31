@@ -29,6 +29,10 @@ type DataLossPreventionJobTriggerInspectJobActionsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	PublishFindingsToCloudDataCatalog() DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalogOutputReference
+	PublishFindingsToCloudDataCatalogInput() *DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog
+	PublishSummaryToCscc() DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference
+	PublishSummaryToCsccInput() *DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc
 	PubSub() DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference
 	PubSubInput() *DataLossPreventionJobTriggerInspectJobActionsPubSub
 	SaveFindings() DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference
@@ -65,8 +69,12 @@ type DataLossPreventionJobTriggerInspectJobActionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPublishFindingsToCloudDataCatalog(value *DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog)
+	PutPublishSummaryToCscc(value *DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc)
 	PutPubSub(value *DataLossPreventionJobTriggerInspectJobActionsPubSub)
 	PutSaveFindings(value *DataLossPreventionJobTriggerInspectJobActionsSaveFindings)
+	ResetPublishFindingsToCloudDataCatalog()
+	ResetPublishSummaryToCscc()
 	ResetPubSub()
 	ResetSaveFindings()
 	// Produce the Token's value at resolution time.
@@ -129,6 +137,46 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference)
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PublishFindingsToCloudDataCatalog() DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalogOutputReference {
+	var returns DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalogOutputReference
+	_jsii_.Get(
+		j,
+		"publishFindingsToCloudDataCatalog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PublishFindingsToCloudDataCatalogInput() *DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog {
+	var returns *DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog
+	_jsii_.Get(
+		j,
+		"publishFindingsToCloudDataCatalogInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PublishSummaryToCscc() DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference {
+	var returns DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference
+	_jsii_.Get(
+		j,
+		"publishSummaryToCscc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PublishSummaryToCsccInput() *DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc {
+	var returns *DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc
+	_jsii_.Get(
+		j,
+		"publishSummaryToCsccInput",
 		&returns,
 	)
 	return returns
@@ -463,6 +511,28 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference)
 	return returns
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PutPublishFindingsToCloudDataCatalog(value *DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog) {
+	if err := d.validatePutPublishFindingsToCloudDataCatalogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPublishFindingsToCloudDataCatalog",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PutPublishSummaryToCscc(value *DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc) {
+	if err := d.validatePutPublishSummaryToCsccParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPublishSummaryToCscc",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PutPubSub(value *DataLossPreventionJobTriggerInspectJobActionsPubSub) {
 	if err := d.validatePutPubSubParameters(value); err != nil {
 		panic(err)
@@ -482,6 +552,22 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference)
 		d,
 		"putSaveFindings",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) ResetPublishFindingsToCloudDataCatalog() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPublishFindingsToCloudDataCatalog",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) ResetPublishSummaryToCscc() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPublishSummaryToCscc",
+		nil, // no parameters
 	)
 }
 

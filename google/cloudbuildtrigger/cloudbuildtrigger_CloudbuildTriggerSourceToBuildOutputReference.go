@@ -27,6 +27,9 @@ type CloudbuildTriggerSourceToBuildOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GithubEnterpriseConfig() *string
+	SetGithubEnterpriseConfig(val *string)
+	GithubEnterpriseConfigInput() *string
 	InternalValue() *CloudbuildTriggerSourceToBuild
 	SetInternalValue(val *CloudbuildTriggerSourceToBuild)
 	Ref() *string
@@ -70,6 +73,7 @@ type CloudbuildTriggerSourceToBuildOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetGithubEnterpriseConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -120,6 +124,26 @@ func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) Fqn() *string 
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) GithubEnterpriseConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"githubEnterpriseConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) GithubEnterpriseConfigInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"githubEnterpriseConfigInput",
 		&returns,
 	)
 	return returns
@@ -261,6 +285,17 @@ func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference)SetComplexObjec
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference)SetGithubEnterpriseConfig(val *string) {
+	if err := j.validateSetGithubEnterpriseConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"githubEnterpriseConfig",
 		val,
 	)
 }
@@ -515,6 +550,14 @@ func (c *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) ResetGithubEnterpriseConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGithubEnterpriseConfig",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

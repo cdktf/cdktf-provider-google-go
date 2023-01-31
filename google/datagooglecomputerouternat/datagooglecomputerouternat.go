@@ -62,6 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "subnetwork", GoGetter: "Subnetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "tcpEstablishedIdleTimeoutSec", GoGetter: "TcpEstablishedIdleTimeoutSec"},
+			_jsii_.MemberProperty{JsiiProperty: "tcpTimeWaitTimeoutSec", GoGetter: "TcpTimeWaitTimeoutSec"},
 			_jsii_.MemberProperty{JsiiProperty: "tcpTransitoryIdleTimeoutSec", GoGetter: "TcpTransitoryIdleTimeoutSec"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},

@@ -56,6 +56,10 @@ func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) validateSetCom
 	return nil
 }
 
+func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) validateSetGithubEnterpriseConfigParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) validateSetInternalValueParameters(val *CloudbuildTriggerSourceToBuild) error {
 	return nil
 }

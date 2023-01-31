@@ -48,6 +48,10 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutCloud
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutConfigConnectorConfigParameters(value *ContainerClusterAddonsConfigConfigConnectorConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutDnsCacheConfigParameters(value *ContainerClusterAddonsConfigDnsCacheConfig) error {
 	return nil
 }

@@ -27,6 +27,7 @@ type DataGoogleCloudbuildTriggerSourceToBuildOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GithubEnterpriseConfig() *string
 	InternalValue() *DataGoogleCloudbuildTriggerSourceToBuild
 	SetInternalValue(val *DataGoogleCloudbuildTriggerSourceToBuild)
 	Ref() *string
@@ -114,6 +115,16 @@ func (j *jsiiProxy_DataGoogleCloudbuildTriggerSourceToBuildOutputReference) Fqn(
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerSourceToBuildOutputReference) GithubEnterpriseConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"githubEnterpriseConfig",
 		&returns,
 	)
 	return returns

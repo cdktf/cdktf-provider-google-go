@@ -88,6 +88,10 @@ func (j *jsiiProxy_DatastreamStream) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_DatastreamStream) validateSetCustomerManagedEncryptionKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatastreamStream) validateSetDesiredStateParameters(val *string) error {
 	return nil
 }

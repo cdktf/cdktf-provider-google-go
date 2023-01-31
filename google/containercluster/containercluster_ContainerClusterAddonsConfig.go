@@ -6,6 +6,10 @@ type ContainerClusterAddonsConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#cloudrun_config ContainerCluster#cloudrun_config}
 	CloudrunConfig *ContainerClusterAddonsConfigCloudrunConfig `field:"optional" json:"cloudrunConfig" yaml:"cloudrunConfig"`
+	// config_connector_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#config_connector_config ContainerCluster#config_connector_config}
+	ConfigConnectorConfig *ContainerClusterAddonsConfigConfigConnectorConfig `field:"optional" json:"configConnectorConfig" yaml:"configConnectorConfig"`
 	// dns_cache_config block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#dns_cache_config ContainerCluster#dns_cache_config}
