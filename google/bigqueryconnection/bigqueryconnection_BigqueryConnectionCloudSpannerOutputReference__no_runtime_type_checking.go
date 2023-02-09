@@ -76,6 +76,10 @@ func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) validateSetUse
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) validateSetUseServerlessAnalyticsParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewBigqueryConnectionCloudSpannerOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

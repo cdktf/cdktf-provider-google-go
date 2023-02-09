@@ -43,6 +43,9 @@ type BigqueryConnectionCloudSpannerOutputReference interface {
 	UseParallelism() interface{}
 	SetUseParallelism(val interface{})
 	UseParallelismInput() interface{}
+	UseServerlessAnalytics() interface{}
+	SetUseServerlessAnalytics(val interface{})
+	UseServerlessAnalyticsInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type BigqueryConnectionCloudSpannerOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetUseParallelism()
+	ResetUseServerlessAnalytics()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -193,6 +197,26 @@ func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) UseParallelism
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) UseServerlessAnalytics() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useServerlessAnalytics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) UseServerlessAnalyticsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useServerlessAnalyticsInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewBigqueryConnectionCloudSpannerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryConnectionCloudSpannerOutputReference {
 	_init_.Initialize()
@@ -294,6 +318,17 @@ func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference)SetUseParalleli
 	_jsii_.Set(
 		j,
 		"useParallelism",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference)SetUseServerlessAnalytics(val interface{}) {
+	if err := j.validateSetUseServerlessAnalyticsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useServerlessAnalytics",
 		val,
 	)
 }
@@ -488,6 +523,14 @@ func (b *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) ResetUseParall
 	_jsii_.InvokeVoid(
 		b,
 		"resetUseParallelism",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) ResetUseServerlessAnalytics() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetUseServerlessAnalytics",
 		nil, // no parameters
 	)
 }

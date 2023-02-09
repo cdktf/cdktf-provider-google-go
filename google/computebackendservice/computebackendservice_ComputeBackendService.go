@@ -86,6 +86,8 @@ type ComputeBackendService interface {
 	LoadBalancingScheme() *string
 	SetLoadBalancingScheme(val *string)
 	LoadBalancingSchemeInput() *string
+	LocalityLbPolicies() ComputeBackendServiceLocalityLbPoliciesList
+	LocalityLbPoliciesInput() interface{}
 	LocalityLbPolicy() *string
 	SetLocalityLbPolicy(val *string)
 	LocalityLbPolicyInput() *string
@@ -167,6 +169,7 @@ type ComputeBackendService interface {
 	PutCircuitBreakers(value *ComputeBackendServiceCircuitBreakers)
 	PutConsistentHash(value *ComputeBackendServiceConsistentHash)
 	PutIap(value *ComputeBackendServiceIap)
+	PutLocalityLbPolicies(value interface{})
 	PutLogConfig(value *ComputeBackendServiceLogConfig)
 	PutOutlierDetection(value *ComputeBackendServiceOutlierDetection)
 	PutSecuritySettings(value *ComputeBackendServiceSecuritySettings)
@@ -187,6 +190,7 @@ type ComputeBackendService interface {
 	ResetIap()
 	ResetId()
 	ResetLoadBalancingScheme()
+	ResetLocalityLbPolicies()
 	ResetLocalityLbPolicy()
 	ResetLogConfig()
 	ResetOutlierDetection()
@@ -651,6 +655,26 @@ func (j *jsiiProxy_ComputeBackendService) LoadBalancingSchemeInput() *string {
 	_jsii_.Get(
 		j,
 		"loadBalancingSchemeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) LocalityLbPolicies() ComputeBackendServiceLocalityLbPoliciesList {
+	var returns ComputeBackendServiceLocalityLbPoliciesList
+	_jsii_.Get(
+		j,
+		"localityLbPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) LocalityLbPoliciesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localityLbPoliciesInput",
 		&returns,
 	)
 	return returns
@@ -1601,6 +1625,17 @@ func (c *jsiiProxy_ComputeBackendService) PutIap(value *ComputeBackendServiceIap
 	)
 }
 
+func (c *jsiiProxy_ComputeBackendService) PutLocalityLbPolicies(value interface{}) {
+	if err := c.validatePutLocalityLbPoliciesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putLocalityLbPolicies",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeBackendService) PutLogConfig(value *ComputeBackendServiceLogConfig) {
 	if err := c.validatePutLogConfigParameters(value); err != nil {
 		panic(err)
@@ -1769,6 +1804,14 @@ func (c *jsiiProxy_ComputeBackendService) ResetLoadBalancingScheme() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetLoadBalancingScheme",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendService) ResetLocalityLbPolicies() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLocalityLbPolicies",
 		nil, // no parameters
 	)
 }

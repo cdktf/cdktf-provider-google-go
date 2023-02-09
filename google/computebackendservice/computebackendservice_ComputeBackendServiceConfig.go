@@ -114,6 +114,10 @@ type ComputeBackendServiceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_backend_service#load_balancing_scheme ComputeBackendService#load_balancing_scheme}
 	LoadBalancingScheme *string `field:"optional" json:"loadBalancingScheme" yaml:"loadBalancingScheme"`
+	// locality_lb_policies block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_backend_service#locality_lb_policies ComputeBackendService#locality_lb_policies}
+	LocalityLbPolicies interface{} `field:"optional" json:"localityLbPolicies" yaml:"localityLbPolicies"`
 	// The load balancing algorithm used within the scope of the locality. The possible values are:.
 	//
 	// 'ROUND_ROBIN': This is a simple policy in which each healthy backend

@@ -72,6 +72,10 @@ func (c *jsiiProxy_ComputeBackendService) validatePutIapParameters(value *Comput
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendService) validatePutLocalityLbPoliciesParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendService) validatePutLogConfigParameters(value *ComputeBackendServiceLogConfig) error {
 	return nil
 }

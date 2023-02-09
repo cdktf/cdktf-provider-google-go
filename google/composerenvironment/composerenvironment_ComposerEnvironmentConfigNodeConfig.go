@@ -48,7 +48,7 @@ type ComposerEnvironmentConfigNodeConfig struct {
 	Subnetwork *string `field:"optional" json:"subnetwork" yaml:"subnetwork"`
 	// The list of instance tags applied to all node VMs.
 	//
-	// Tags are used to identify valid sources or targets for network firewalls. Each tag within the list must comply with RFC1035. Cannot be updated. This field is supported for Cloud Composer environments in versions composer-1.*.*-airflow-*.*.*.
+	// Tags are used to identify valid sources or targets for network firewalls. Each tag within the list must comply with RFC1035. Cannot be updated.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/composer_environment#tags ComposerEnvironment#tags}
 	Tags *[]*string `field:"optional" json:"tags" yaml:"tags"`

@@ -30,8 +30,12 @@ type BigqueryConnectionAzureOutputReference interface {
 	CustomerTenantId() *string
 	SetCustomerTenantId(val *string)
 	CustomerTenantIdInput() *string
+	FederatedApplicationClientId() *string
+	SetFederatedApplicationClientId(val *string)
+	FederatedApplicationClientIdInput() *string
 	// Experimental.
 	Fqn() *string
+	Identity() *string
 	InternalValue() *BigqueryConnectionAzure
 	SetInternalValue(val *BigqueryConnectionAzure)
 	ObjectId() *string
@@ -68,6 +72,7 @@ type BigqueryConnectionAzureOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetFederatedApplicationClientId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -153,11 +158,41 @@ func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) CustomerTenantIdInput
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) FederatedApplicationClientId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"federatedApplicationClientId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) FederatedApplicationClientIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"federatedApplicationClientIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) Identity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identity",
 		&returns,
 	)
 	return returns
@@ -270,6 +305,17 @@ func (j *jsiiProxy_BigqueryConnectionAzureOutputReference)SetCustomerTenantId(va
 	_jsii_.Set(
 		j,
 		"customerTenantId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryConnectionAzureOutputReference)SetFederatedApplicationClientId(val *string) {
+	if err := j.validateSetFederatedApplicationClientIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"federatedApplicationClientId",
 		val,
 	)
 }
@@ -491,6 +537,14 @@ func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) ResetFederatedApplicationClientId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetFederatedApplicationClientId",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

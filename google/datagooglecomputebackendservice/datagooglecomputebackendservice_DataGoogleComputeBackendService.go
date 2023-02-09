@@ -57,6 +57,7 @@ type DataGoogleComputeBackendService interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LoadBalancingScheme() *string
+	LocalityLbPolicies() DataGoogleComputeBackendServiceLocalityLbPoliciesList
 	LocalityLbPolicy() *string
 	LogConfig() DataGoogleComputeBackendServiceLogConfigList
 	Name() *string
@@ -407,6 +408,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) LoadBalancingScheme() *strin
 	_jsii_.Get(
 		j,
 		"loadBalancingScheme",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendService) LocalityLbPolicies() DataGoogleComputeBackendServiceLocalityLbPoliciesList {
+	var returns DataGoogleComputeBackendServiceLocalityLbPoliciesList
+	_jsii_.Get(
+		j,
+		"localityLbPolicies",
 		&returns,
 	)
 	return returns

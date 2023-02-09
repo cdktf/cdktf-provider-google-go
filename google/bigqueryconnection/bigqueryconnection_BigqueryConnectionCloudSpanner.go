@@ -10,5 +10,11 @@ type BigqueryConnectionCloudSpanner struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_connection#use_parallelism BigqueryConnection#use_parallelism}
 	UseParallelism interface{} `field:"optional" json:"useParallelism" yaml:"useParallelism"`
+	// If the serverless analytics service should be used to read data from Cloud Spanner.
+	//
+	// useParallelism must be set when using serverless analytics
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_connection#use_serverless_analytics BigqueryConnection#use_serverless_analytics}
+	UseServerlessAnalytics interface{} `field:"optional" json:"useServerlessAnalytics" yaml:"useServerlessAnalytics"`
 }
 

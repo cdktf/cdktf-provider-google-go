@@ -37,6 +37,7 @@ type BigqueryConnectionCloudSqlOutputReference interface {
 	InstanceIdInput() *string
 	InternalValue() *BigqueryConnectionCloudSql
 	SetInternalValue(val *BigqueryConnectionCloudSql)
+	ServiceAccountId() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -193,6 +194,16 @@ func (j *jsiiProxy_BigqueryConnectionCloudSqlOutputReference) InternalValue() *B
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryConnectionCloudSqlOutputReference) ServiceAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountId",
 		&returns,
 	)
 	return returns

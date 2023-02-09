@@ -60,6 +60,10 @@ func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) validateSetCustomerTe
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) validateSetFederatedApplicationClientIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryConnectionAzureOutputReference) validateSetInternalValueParameters(val *BigqueryConnectionAzure) error {
 	return nil
 }
