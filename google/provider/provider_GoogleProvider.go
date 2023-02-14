@@ -27,6 +27,9 @@ type GoogleProvider interface {
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
+	AlloydbCustomEndpoint() *string
+	SetAlloydbCustomEndpoint(val *string)
+	AlloydbCustomEndpointInput() *string
 	ApigeeCustomEndpoint() *string
 	SetApigeeCustomEndpoint(val *string)
 	ApigeeCustomEndpointInput() *string
@@ -399,6 +402,7 @@ type GoogleProvider interface {
 	ResetAccessToken()
 	ResetActiveDirectoryCustomEndpoint()
 	ResetAlias()
+	ResetAlloydbCustomEndpoint()
 	ResetApigeeCustomEndpoint()
 	ResetApikeysCustomEndpoint()
 	ResetAppEngineCustomEndpoint()
@@ -626,6 +630,26 @@ func (j *jsiiProxy_GoogleProvider) AliasInput() *string {
 	_jsii_.Get(
 		j,
 		"aliasInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) AlloydbCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alloydbCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) AlloydbCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alloydbCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3081,6 +3105,14 @@ func (j *jsiiProxy_GoogleProvider)SetAlias(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetAlloydbCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"alloydbCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetApigeeCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4141,6 +4173,14 @@ func (g *jsiiProxy_GoogleProvider) ResetAlias() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAlias",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetAlloydbCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAlloydbCustomEndpoint",
 		nil, // no parameters
 	)
 }

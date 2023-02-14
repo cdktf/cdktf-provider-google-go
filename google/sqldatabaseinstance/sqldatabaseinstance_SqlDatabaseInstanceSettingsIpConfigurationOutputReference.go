@@ -30,6 +30,9 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnablePrivatePathForGoogleCloudServices() interface{}
+	SetEnablePrivatePathForGoogleCloudServices(val interface{})
+	EnablePrivatePathForGoogleCloudServicesInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SqlDatabaseInstanceSettingsIpConfiguration
@@ -78,6 +81,7 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	PutAuthorizedNetworks(value interface{})
 	ResetAllocatedIpRange()
 	ResetAuthorizedNetworks()
+	ResetEnablePrivatePathForGoogleCloudServices()
 	ResetIpv4Enabled()
 	ResetPrivateNetwork()
 	ResetRequireSsl()
@@ -161,6 +165,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Cr
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) EnablePrivatePathForGoogleCloudServices() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrivatePathForGoogleCloudServices",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) EnablePrivatePathForGoogleCloudServicesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrivatePathForGoogleCloudServicesInput",
 		&returns,
 	)
 	return returns
@@ -323,6 +347,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetEnablePrivatePathForGoogleCloudServices(val interface{}) {
+	if err := j.validateSetEnablePrivatePathForGoogleCloudServicesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePrivatePathForGoogleCloudServices",
 		val,
 	)
 }
@@ -602,6 +637,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Re
 	_jsii_.InvokeVoid(
 		s,
 		"resetAuthorizedNetworks",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetEnablePrivatePathForGoogleCloudServices() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnablePrivatePathForGoogleCloudServices",
 		nil, // no parameters
 	)
 }

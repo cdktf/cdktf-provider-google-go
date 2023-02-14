@@ -106,6 +106,12 @@ type ComputeInstanceTemplateConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_instance_template#reservation_affinity ComputeInstanceTemplate#reservation_affinity}
 	ReservationAffinity *ComputeInstanceTemplateReservationAffinity `field:"optional" json:"reservationAffinity" yaml:"reservationAffinity"`
+	// A list of self_links of resource policies to attach to the instance.
+	//
+	// Currently a max of 1 resource policy is supported.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_instance_template#resource_policies ComputeInstanceTemplate#resource_policies}
+	ResourcePolicies *[]*string `field:"optional" json:"resourcePolicies" yaml:"resourcePolicies"`
 	// scheduling block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_instance_template#scheduling ComputeInstanceTemplate#scheduling}

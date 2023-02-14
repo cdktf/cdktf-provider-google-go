@@ -31,6 +31,10 @@ type DatastreamStreamBackfillAllOutputReference interface {
 	SetInternalValue(val *DatastreamStreamBackfillAll)
 	MysqlExcludedObjects() DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference
 	MysqlExcludedObjectsInput() *DatastreamStreamBackfillAllMysqlExcludedObjects
+	OracleExcludedObjects() DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference
+	OracleExcludedObjectsInput() *DatastreamStreamBackfillAllOracleExcludedObjects
+	PostgresqlExcludedObjects() DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference
+	PostgresqlExcludedObjectsInput() *DatastreamStreamBackfillAllPostgresqlExcludedObjects
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,7 +68,11 @@ type DatastreamStreamBackfillAllOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutMysqlExcludedObjects(value *DatastreamStreamBackfillAllMysqlExcludedObjects)
+	PutOracleExcludedObjects(value *DatastreamStreamBackfillAllOracleExcludedObjects)
+	PutPostgresqlExcludedObjects(value *DatastreamStreamBackfillAllPostgresqlExcludedObjects)
 	ResetMysqlExcludedObjects()
+	ResetOracleExcludedObjects()
+	ResetPostgresqlExcludedObjects()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,6 +153,46 @@ func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference) MysqlExcludedObje
 	_jsii_.Get(
 		j,
 		"mysqlExcludedObjectsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference) OracleExcludedObjects() DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference {
+	var returns DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference
+	_jsii_.Get(
+		j,
+		"oracleExcludedObjects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference) OracleExcludedObjectsInput() *DatastreamStreamBackfillAllOracleExcludedObjects {
+	var returns *DatastreamStreamBackfillAllOracleExcludedObjects
+	_jsii_.Get(
+		j,
+		"oracleExcludedObjectsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference) PostgresqlExcludedObjects() DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference {
+	var returns DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference
+	_jsii_.Get(
+		j,
+		"postgresqlExcludedObjects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamBackfillAllOutputReference) PostgresqlExcludedObjectsInput() *DatastreamStreamBackfillAllPostgresqlExcludedObjects {
+	var returns *DatastreamStreamBackfillAllPostgresqlExcludedObjects
+	_jsii_.Get(
+		j,
+		"postgresqlExcludedObjectsInput",
 		&returns,
 	)
 	return returns
@@ -450,10 +498,48 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) PutMysqlExcludedO
 	)
 }
 
+func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) PutOracleExcludedObjects(value *DatastreamStreamBackfillAllOracleExcludedObjects) {
+	if err := d.validatePutOracleExcludedObjectsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOracleExcludedObjects",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) PutPostgresqlExcludedObjects(value *DatastreamStreamBackfillAllPostgresqlExcludedObjects) {
+	if err := d.validatePutPostgresqlExcludedObjectsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPostgresqlExcludedObjects",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) ResetMysqlExcludedObjects() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMysqlExcludedObjects",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) ResetOracleExcludedObjects() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOracleExcludedObjects",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) ResetPostgresqlExcludedObjects() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPostgresqlExcludedObjects",
 		nil, // no parameters
 	)
 }

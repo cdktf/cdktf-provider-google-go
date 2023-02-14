@@ -67,7 +67,13 @@ type ComputeNetworkConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_network#internal_ipv6_range ComputeNetwork#internal_ipv6_range}
 	InternalIpv6Range *string `field:"optional" json:"internalIpv6Range" yaml:"internalIpv6Range"`
-	// Maximum Transmission Unit in bytes. The minimum value for this field is 1460 and the maximum value is 1500 bytes.
+	// Maximum Transmission Unit in bytes.
+	//
+	// The default value is 1460 bytes.
+	// The minimum value for this field is 1300 and the maximum value is 8896 bytes (jumbo frames).
+	// Note that packets larger than 1500 bytes (standard Ethernet) can be subject to TCP-MSS clamping or dropped
+	// with an ICMP 'Fragmentation-Needed' message if the packets are routed to the Internet or other VPCs
+	// with varying MTUs.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_network#mtu ComputeNetwork#mtu}
 	Mtu *float64 `field:"optional" json:"mtu" yaml:"mtu"`

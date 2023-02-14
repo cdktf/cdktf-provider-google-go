@@ -14,6 +14,8 @@ type GoogleProviderConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#alias GoogleProvider#alias}
 	Alias *string `field:"optional" json:"alias" yaml:"alias"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#alloydb_custom_endpoint GoogleProvider#alloydb_custom_endpoint}.
+	AlloydbCustomEndpoint *string `field:"optional" json:"alloydbCustomEndpoint" yaml:"alloydbCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#apigee_custom_endpoint GoogleProvider#apigee_custom_endpoint}.
 	ApigeeCustomEndpoint *string `field:"optional" json:"apigeeCustomEndpoint" yaml:"apigeeCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#apikeys_custom_endpoint GoogleProvider#apikeys_custom_endpoint}.

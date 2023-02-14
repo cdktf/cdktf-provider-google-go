@@ -12,6 +12,12 @@ type SqlDatabaseInstanceSettingsIpConfiguration struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#authorized_networks SqlDatabaseInstance#authorized_networks}
 	AuthorizedNetworks interface{} `field:"optional" json:"authorizedNetworks" yaml:"authorizedNetworks"`
+	// Whether Google Cloud services such as BigQuery are allowed to access data in this Cloud SQL instance over a private IP connection.
+	//
+	// SQLSERVER database type is not supported.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/sql_database_instance#enable_private_path_for_google_cloud_services SqlDatabaseInstance#enable_private_path_for_google_cloud_services}
+	EnablePrivatePathForGoogleCloudServices interface{} `field:"optional" json:"enablePrivatePathForGoogleCloudServices" yaml:"enablePrivatePathForGoogleCloudServices"`
 	// Whether this Cloud SQL instance should be assigned a public IPV4 address.
 	//
 	// At least ipv4_enabled must be enabled or a private_network must be configured.

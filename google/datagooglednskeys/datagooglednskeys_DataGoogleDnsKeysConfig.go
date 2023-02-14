@@ -19,14 +19,21 @@ type DataGoogleDnsKeysConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/d/dns_keys#managed_zone DataGoogleDnsKeys#managed_zone}.
-	ManagedZone *string `field:"required" json:"managedZone" yaml:"managedZone"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/d/dns_keys#id DataGoogleDnsKeys#id}.
+	// The Name of the zone.
 	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/d/dns_keys#project DataGoogleDnsKeys#project}.
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/d/dns_keys#managed_zone DataGoogleDnsKeys#managed_zone}
+	ManagedZone *string `field:"required" json:"managedZone" yaml:"managedZone"`
+	// key_signing_keys block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/d/dns_keys#key_signing_keys DataGoogleDnsKeys#key_signing_keys}
+	KeySigningKeys interface{} `field:"optional" json:"keySigningKeys" yaml:"keySigningKeys"`
+	// The ID of the project for the Google Cloud.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/d/dns_keys#project DataGoogleDnsKeys#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// zone_signing_keys block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/d/dns_keys#zone_signing_keys DataGoogleDnsKeys#zone_signing_keys}
+	ZoneSigningKeys interface{} `field:"optional" json:"zoneSigningKeys" yaml:"zoneSigningKeys"`
 }
 

@@ -44,6 +44,10 @@ func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) validateInte
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) validatePutDigestsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -56,7 +60,7 @@ func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) validateSetInternalValueParameters(val *DataGoogleDnsKeysZoneSigningKeys) error {
+func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

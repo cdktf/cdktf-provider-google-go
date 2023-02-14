@@ -44,6 +44,10 @@ type ComputeExternalVpnGatewayConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_external_vpn_gateway#interface ComputeExternalVpnGateway#interface}
 	Interface interface{} `field:"optional" json:"interface" yaml:"interface"`
+	// Labels for the external VPN gateway resource.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_external_vpn_gateway#labels ComputeExternalVpnGateway#labels}
+	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_external_vpn_gateway#project ComputeExternalVpnGateway#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// Indicates the redundancy type of this external VPN gateway Possible values: ["FOUR_IPS_REDUNDANCY", "SINGLE_IP_INTERNALLY_REDUNDANT", "TWO_IPS_REDUNDANCY"].

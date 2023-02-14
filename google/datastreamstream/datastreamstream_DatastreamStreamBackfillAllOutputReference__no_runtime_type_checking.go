@@ -48,6 +48,14 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validatePutMysqlE
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validatePutOracleExcludedObjectsParameters(value *DatastreamStreamBackfillAllOracleExcludedObjects) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validatePutPostgresqlExcludedObjectsParameters(value *DatastreamStreamBackfillAllPostgresqlExcludedObjects) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

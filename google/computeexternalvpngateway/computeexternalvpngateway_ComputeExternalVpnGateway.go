@@ -44,6 +44,9 @@ type ComputeExternalVpnGateway interface {
 	IdInput() *string
 	Interface() ComputeExternalVpnGatewayInterfaceList
 	InterfaceInput() interface{}
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -108,6 +111,7 @@ type ComputeExternalVpnGateway interface {
 	ResetDescription()
 	ResetId()
 	ResetInterface()
+	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -264,6 +268,26 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) InterfaceInput() interface{} {
 	_jsii_.Get(
 		j,
 		"interfaceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeExternalVpnGateway) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeExternalVpnGateway) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -522,6 +546,17 @@ func (j *jsiiProxy_ComputeExternalVpnGateway)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeExternalVpnGateway)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -897,6 +932,14 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) ResetInterface() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetInterface",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeExternalVpnGateway) ResetLabels() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLabels",
 		nil, // no parameters
 	)
 }

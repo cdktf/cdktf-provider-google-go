@@ -48,6 +48,14 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutMysql
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutOracleSourceConfigParameters(value *DatastreamStreamSourceConfigOracleSourceConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutPostgresqlSourceConfigParameters(value *DatastreamStreamSourceConfigPostgresqlSourceConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

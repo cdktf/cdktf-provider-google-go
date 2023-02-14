@@ -56,7 +56,7 @@ func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference) validateSetInternalValueParameters(val *DataGoogleDnsKeysZoneSigningKeysDigests) error {
+func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

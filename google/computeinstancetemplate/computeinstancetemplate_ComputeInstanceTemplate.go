@@ -104,6 +104,9 @@ type ComputeInstanceTemplate interface {
 	RegionInput() *string
 	ReservationAffinity() ComputeInstanceTemplateReservationAffinityOutputReference
 	ReservationAffinityInput() *ComputeInstanceTemplateReservationAffinity
+	ResourcePolicies() *[]*string
+	SetResourcePolicies(val *[]*string)
+	ResourcePoliciesInput() *[]*string
 	Scheduling() ComputeInstanceTemplateSchedulingOutputReference
 	SchedulingInput() *ComputeInstanceTemplateScheduling
 	SelfLink() *string
@@ -178,6 +181,7 @@ type ComputeInstanceTemplate interface {
 	ResetProject()
 	ResetRegion()
 	ResetReservationAffinity()
+	ResetResourcePolicies()
 	ResetScheduling()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
@@ -718,6 +722,26 @@ func (j *jsiiProxy_ComputeInstanceTemplate) ReservationAffinityInput() *ComputeI
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplate) ResourcePolicies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourcePolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplate) ResourcePoliciesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourcePoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplate) Scheduling() ComputeInstanceTemplateSchedulingOutputReference {
 	var returns ComputeInstanceTemplateSchedulingOutputReference
 	_jsii_.Get(
@@ -1102,6 +1126,17 @@ func (j *jsiiProxy_ComputeInstanceTemplate)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplate)SetResourcePolicies(val *[]*string) {
+	if err := j.validateSetResourcePoliciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourcePolicies",
 		val,
 	)
 }
@@ -1633,6 +1668,14 @@ func (c *jsiiProxy_ComputeInstanceTemplate) ResetReservationAffinity() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetReservationAffinity",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceTemplate) ResetResourcePolicies() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetResourcePolicies",
 		nil, // no parameters
 	)
 }

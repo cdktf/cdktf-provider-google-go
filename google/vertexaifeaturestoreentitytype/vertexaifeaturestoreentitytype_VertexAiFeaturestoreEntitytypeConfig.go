@@ -23,6 +23,10 @@ type VertexAiFeaturestoreEntitytypeConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/vertex_ai_featurestore_entitytype#featurestore VertexAiFeaturestoreEntitytype#featurestore}
 	Featurestore *string `field:"required" json:"featurestore" yaml:"featurestore"`
+	// Optional. Description of the EntityType.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/vertex_ai_featurestore_entitytype#description VertexAiFeaturestoreEntitytype#description}
+	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/vertex_ai_featurestore_entitytype#id VertexAiFeaturestoreEntitytype#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

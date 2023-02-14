@@ -111,6 +111,68 @@ func (d *jsiiProxy_DataGoogleDnsKeys) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleDnsKeys) validatePutKeySigningKeysParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataGoogleDnsKeysKeySigningKeys:
+		value := value.(*[]*DataGoogleDnsKeysKeySigningKeys)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataGoogleDnsKeysKeySigningKeys:
+		value_ := value.([]*DataGoogleDnsKeysKeySigningKeys)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataGoogleDnsKeysKeySigningKeys; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataGoogleDnsKeys) validatePutZoneSigningKeysParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DataGoogleDnsKeysZoneSigningKeys:
+		value := value.(*[]*DataGoogleDnsKeysZoneSigningKeys)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DataGoogleDnsKeysZoneSigningKeys:
+		value_ := value.([]*DataGoogleDnsKeysZoneSigningKeys)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataGoogleDnsKeysZoneSigningKeys; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func validateDataGoogleDnsKeys_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
@@ -130,14 +192,6 @@ func validateDataGoogleDnsKeys_IsTerraformDataSourceParameters(x interface{}) er
 func validateDataGoogleDnsKeys_IsTerraformElementParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataGoogleDnsKeys) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

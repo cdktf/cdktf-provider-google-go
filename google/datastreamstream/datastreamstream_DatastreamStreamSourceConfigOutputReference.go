@@ -31,6 +31,10 @@ type DatastreamStreamSourceConfigOutputReference interface {
 	SetInternalValue(val *DatastreamStreamSourceConfig)
 	MysqlSourceConfig() DatastreamStreamSourceConfigMysqlSourceConfigOutputReference
 	MysqlSourceConfigInput() *DatastreamStreamSourceConfigMysqlSourceConfig
+	OracleSourceConfig() DatastreamStreamSourceConfigOracleSourceConfigOutputReference
+	OracleSourceConfigInput() *DatastreamStreamSourceConfigOracleSourceConfig
+	PostgresqlSourceConfig() DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference
+	PostgresqlSourceConfigInput() *DatastreamStreamSourceConfigPostgresqlSourceConfig
 	SourceConnectionProfile() *string
 	SetSourceConnectionProfile(val *string)
 	SourceConnectionProfileInput() *string
@@ -67,6 +71,11 @@ type DatastreamStreamSourceConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutMysqlSourceConfig(value *DatastreamStreamSourceConfigMysqlSourceConfig)
+	PutOracleSourceConfig(value *DatastreamStreamSourceConfigOracleSourceConfig)
+	PutPostgresqlSourceConfig(value *DatastreamStreamSourceConfigPostgresqlSourceConfig)
+	ResetMysqlSourceConfig()
+	ResetOracleSourceConfig()
+	ResetPostgresqlSourceConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +156,46 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) MysqlSourceConfi
 	_jsii_.Get(
 		j,
 		"mysqlSourceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) OracleSourceConfig() DatastreamStreamSourceConfigOracleSourceConfigOutputReference {
+	var returns DatastreamStreamSourceConfigOracleSourceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"oracleSourceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) OracleSourceConfigInput() *DatastreamStreamSourceConfigOracleSourceConfig {
+	var returns *DatastreamStreamSourceConfigOracleSourceConfig
+	_jsii_.Get(
+		j,
+		"oracleSourceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) PostgresqlSourceConfig() DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference {
+	var returns DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"postgresqlSourceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) PostgresqlSourceConfigInput() *DatastreamStreamSourceConfigPostgresqlSourceConfig {
+	var returns *DatastreamStreamSourceConfigPostgresqlSourceConfig
+	_jsii_.Get(
+		j,
+		"postgresqlSourceConfigInput",
 		&returns,
 	)
 	return returns
@@ -480,6 +529,52 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) PutMysqlSourceCo
 		d,
 		"putMysqlSourceConfig",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) PutOracleSourceConfig(value *DatastreamStreamSourceConfigOracleSourceConfig) {
+	if err := d.validatePutOracleSourceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOracleSourceConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) PutPostgresqlSourceConfig(value *DatastreamStreamSourceConfigPostgresqlSourceConfig) {
+	if err := d.validatePutPostgresqlSourceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPostgresqlSourceConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) ResetMysqlSourceConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMysqlSourceConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) ResetOracleSourceConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOracleSourceConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) ResetPostgresqlSourceConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPostgresqlSourceConfig",
+		nil, // no parameters
 	)
 }
 

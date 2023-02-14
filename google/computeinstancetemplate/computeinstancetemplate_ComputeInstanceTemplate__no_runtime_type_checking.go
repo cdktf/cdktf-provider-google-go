@@ -168,6 +168,10 @@ func (j *jsiiProxy_ComputeInstanceTemplate) validateSetRegionParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplate) validateSetResourcePoliciesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplate) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }

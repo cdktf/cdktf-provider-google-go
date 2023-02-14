@@ -84,6 +84,10 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) validateSetIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_ComputeExternalVpnGateway) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeExternalVpnGateway) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

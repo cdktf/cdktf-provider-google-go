@@ -29,11 +29,12 @@ type DataGoogleDnsKeysZoneSigningKeysOutputReference interface {
 	CreationTime() *string
 	Description() *string
 	Digests() DataGoogleDnsKeysZoneSigningKeysDigestsList
+	DigestsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Id() *string
-	InternalValue() *DataGoogleDnsKeysZoneSigningKeys
-	SetInternalValue(val *DataGoogleDnsKeysZoneSigningKeys)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	IsActive() cdktf.IResolvable
 	KeyLength() *float64
 	KeyTag() *float64
@@ -70,6 +71,8 @@ type DataGoogleDnsKeysZoneSigningKeysOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDigests(value interface{})
+	ResetDigests()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -155,6 +158,16 @@ func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) Digests() Da
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) DigestsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"digestsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -175,8 +188,8 @@ func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) Id() *string
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) InternalValue() *DataGoogleDnsKeysZoneSigningKeys {
-	var returns *DataGoogleDnsKeysZoneSigningKeys
+func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -295,7 +308,7 @@ func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference)SetInternalValue(val *DataGoogleDnsKeysZoneSigningKeys) {
+func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,6 +525,25 @@ func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) PutDigests(value interface{}) {
+	if err := d.validatePutDigestsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putDigests",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) ResetDigests() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDigests",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

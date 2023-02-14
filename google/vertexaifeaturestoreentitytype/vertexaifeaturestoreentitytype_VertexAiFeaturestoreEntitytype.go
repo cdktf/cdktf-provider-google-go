@@ -29,6 +29,9 @@ type VertexAiFeaturestoreEntitytype interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	Etag() *string
 	Featurestore() *string
 	SetFeaturestore(val *string)
@@ -105,6 +108,7 @@ type VertexAiFeaturestoreEntitytype interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMonitoringConfig(value *VertexAiFeaturestoreEntitytypeMonitoringConfig)
 	PutTimeouts(value *VertexAiFeaturestoreEntitytypeTimeouts)
+	ResetDescription()
 	ResetId()
 	ResetLabels()
 	ResetMonitoringConfig()
@@ -183,6 +187,26 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytype) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytype) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytype) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -501,6 +525,17 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytype)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytype)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -872,6 +907,14 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) PutTimeouts(value *VertexAiFe
 		v,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytype) ResetDescription() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetDescription",
+		nil, // no parameters
 	)
 }
 

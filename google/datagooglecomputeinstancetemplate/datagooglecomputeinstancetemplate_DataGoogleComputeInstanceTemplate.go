@@ -76,6 +76,7 @@ type DataGoogleComputeInstanceTemplate interface {
 	RawOverrides() interface{}
 	Region() *string
 	ReservationAffinity() DataGoogleComputeInstanceTemplateReservationAffinityList
+	ResourcePolicies() *[]*string
 	Scheduling() DataGoogleComputeInstanceTemplateSchedulingList
 	SelfLink() *string
 	ServiceAccount() DataGoogleComputeInstanceTemplateServiceAccountList
@@ -511,6 +512,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) ReservationAffinity() Data
 	_jsii_.Get(
 		j,
 		"reservationAffinity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) ResourcePolicies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourcePolicies",
 		&returns,
 	)
 	return returns
