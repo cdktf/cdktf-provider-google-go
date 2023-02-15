@@ -1,6 +1,0 @@
-package dataprocworkflowtemplate
-
-
-type DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfig struct {
-}
-

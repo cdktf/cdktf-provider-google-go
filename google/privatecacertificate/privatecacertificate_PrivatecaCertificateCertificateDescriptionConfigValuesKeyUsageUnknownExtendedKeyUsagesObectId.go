@@ -1,6 +1,0 @@
-package privatecacertificate
-
-
-type PrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsagesObectId struct {
-}
-

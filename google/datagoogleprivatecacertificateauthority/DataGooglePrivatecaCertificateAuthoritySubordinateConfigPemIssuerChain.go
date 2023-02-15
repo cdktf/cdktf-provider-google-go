@@ -1,0 +1,6 @@
+package datagoogleprivatecacertificateauthority
+
+
+type DataGooglePrivatecaCertificateAuthoritySubordinateConfigPemIssuerChain struct {
+}
+

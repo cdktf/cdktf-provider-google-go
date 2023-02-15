@@ -1,0 +1,6 @@
+package datagooglecloudrunservice
+
+
+type DataGoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReference struct {
+}
+

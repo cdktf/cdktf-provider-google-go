@@ -1,0 +1,238 @@
+package computeperinstanceconfig
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v5/jsii"
+
+	"github.com/cdktf/cdktf-provider-google-go/google/v5/computeperinstanceconfig/internal"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+type ComputePerInstanceConfigPreservedStateDiskList interface {
+	cdktf.ComplexList
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	// The attribute on the parent resource this class is referencing.
+	TerraformAttribute() *string
+	SetTerraformAttribute(val *string)
+	// The parent resource.
+	TerraformResource() cdktf.IInterpolatingParent
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	WrapsSet() *bool
+	SetWrapsSet(val *bool)
+	// Experimental.
+	ComputeFqn() *string
+	Get(index *float64) ComputePerInstanceConfigPreservedStateDiskOutputReference
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for ComputePerInstanceConfigPreservedStateDiskList
+type jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList struct {
+	internal.Type__cdktfComplexList
+}
+
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList) InternalValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList) WrapsSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"wrapsSet",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewComputePerInstanceConfigPreservedStateDiskList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputePerInstanceConfigPreservedStateDiskList {
+	_init_.Initialize()
+
+	if err := validateNewComputePerInstanceConfigPreservedStateDiskListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList{}
+
+	_jsii_.Create(
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateDiskList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewComputePerInstanceConfigPreservedStateDiskList_Override(c ComputePerInstanceConfigPreservedStateDiskList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateDiskList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		c,
+	)
+}
+
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"wrapsSet",
+		val,
+	)
+}
+
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList) Get(index *float64) ComputePerInstanceConfigPreservedStateDiskOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
+		panic(err)
+	}
+	var returns ComputePerInstanceConfigPreservedStateDiskOutputReference
+
+	_jsii_.Invoke(
+		c,
+		"get",
+		[]interface{}{index},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

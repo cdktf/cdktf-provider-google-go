@@ -1,6 +1,0 @@
-package datagooglestoragebucketobjectcontent
-
-
-type DataGoogleStorageBucketObjectContentCustomerEncryption struct {
-}
-

@@ -1,6 +1,0 @@
-package datagooglecloudfunctions2function
-
-
-type DataGoogleCloudfunctions2FunctionEventTriggerEventFilters struct {
-}
-

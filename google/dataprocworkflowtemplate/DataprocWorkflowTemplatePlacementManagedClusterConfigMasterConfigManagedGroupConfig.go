@@ -1,0 +1,6 @@
+package dataprocworkflowtemplate
+
+
+type DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfig struct {
+}
+

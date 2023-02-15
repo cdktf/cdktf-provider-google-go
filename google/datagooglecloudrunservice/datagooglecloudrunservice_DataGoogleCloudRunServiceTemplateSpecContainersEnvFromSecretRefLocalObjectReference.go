@@ -1,6 +1,0 @@
-package datagooglecloudrunservice
-
-
-type DataGoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReference struct {
-}
-

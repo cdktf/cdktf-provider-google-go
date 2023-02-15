@@ -1,6 +1,0 @@
-package identityplatformtenantinboundsamlconfig
-
-
-type IdentityPlatformTenantInboundSamlConfigSpConfigSpCertificates struct {
-}
-

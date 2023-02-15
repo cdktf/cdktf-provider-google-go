@@ -1,6 +1,0 @@
-package datagooglecomputeresourcepolicy
-
-
-type DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStopSchedule struct {
-}
-

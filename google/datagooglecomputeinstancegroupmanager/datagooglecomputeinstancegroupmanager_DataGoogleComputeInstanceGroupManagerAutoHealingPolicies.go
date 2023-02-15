@@ -1,6 +1,0 @@
-package datagooglecomputeinstancegroupmanager
-
-
-type DataGoogleComputeInstanceGroupManagerAutoHealingPolicies struct {
-}
-

@@ -1,6 +1,0 @@
-package datagooglecomputeinstancetemplate
-
-
-type DataGoogleComputeInstanceTemplateDiskSourceImageEncryptionKey struct {
-}
-

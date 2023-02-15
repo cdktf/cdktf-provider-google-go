@@ -1,6 +1,0 @@
-package datagooglesqldatabaseinstances
-
-
-type DataGoogleSqlDatabaseInstancesInstancesSettingsDatabaseFlags struct {
-}
-

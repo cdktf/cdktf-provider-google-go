@@ -1,6 +1,0 @@
-package datagoogledataprocmetastoreservice
-
-
-type DataGoogleDataprocMetastoreServiceNetworkConfigConsumers struct {
-}
-

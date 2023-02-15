@@ -1,6 +1,0 @@
-package datagooglebeyondcorpappconnector
-
-
-type DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccount struct {
-}
-

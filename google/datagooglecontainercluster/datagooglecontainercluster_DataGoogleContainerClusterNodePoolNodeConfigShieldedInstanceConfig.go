@@ -1,6 +1,0 @@
-package datagooglecontainercluster
-
-
-type DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfig struct {
-}
-

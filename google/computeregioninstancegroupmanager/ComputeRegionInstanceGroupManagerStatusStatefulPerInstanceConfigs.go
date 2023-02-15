@@ -1,0 +1,6 @@
+package computeregioninstancegroupmanager
+
+
+type ComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigs struct {
+}
+

@@ -1,0 +1,6 @@
+package datagooglecomposerenvironment
+
+
+type DataGoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy struct {
+}
+

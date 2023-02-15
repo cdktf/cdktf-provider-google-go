@@ -1,0 +1,6 @@
+package datagooglesqldatabaseinstances
+
+
+type DataGoogleSqlDatabaseInstancesInstancesSettingsBackupConfiguration struct {
+}
+

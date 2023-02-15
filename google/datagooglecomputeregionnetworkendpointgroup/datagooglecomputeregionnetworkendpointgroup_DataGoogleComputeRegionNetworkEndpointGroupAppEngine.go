@@ -1,6 +1,0 @@
-package datagooglecomputeregionnetworkendpointgroup
-
-
-type DataGoogleComputeRegionNetworkEndpointGroupAppEngine struct {
-}
-

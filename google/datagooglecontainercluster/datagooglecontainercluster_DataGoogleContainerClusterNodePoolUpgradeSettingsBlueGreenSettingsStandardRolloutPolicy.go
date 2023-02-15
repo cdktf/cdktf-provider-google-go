@@ -1,6 +1,0 @@
-package datagooglecontainercluster
-
-
-type DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy struct {
-}
-

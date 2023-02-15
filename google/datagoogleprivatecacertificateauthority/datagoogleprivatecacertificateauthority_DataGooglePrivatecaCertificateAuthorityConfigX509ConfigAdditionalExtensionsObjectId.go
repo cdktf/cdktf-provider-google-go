@@ -1,6 +1,0 @@
-package datagoogleprivatecacertificateauthority
-
-
-type DataGooglePrivatecaCertificateAuthorityConfigX509ConfigAdditionalExtensionsObjectId struct {
-}
-

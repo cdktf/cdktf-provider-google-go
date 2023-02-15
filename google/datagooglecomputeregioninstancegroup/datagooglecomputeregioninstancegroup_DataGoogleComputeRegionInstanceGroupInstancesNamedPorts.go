@@ -1,6 +1,0 @@
-package datagooglecomputeregioninstancegroup
-
-
-type DataGoogleComputeRegionInstanceGroupInstancesNamedPorts struct {
-}
-

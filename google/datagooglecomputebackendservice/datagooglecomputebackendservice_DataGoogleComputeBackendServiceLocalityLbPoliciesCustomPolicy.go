@@ -1,6 +1,0 @@
-package datagooglecomputebackendservice
-
-
-type DataGoogleComputeBackendServiceLocalityLbPoliciesCustomPolicy struct {
-}
-

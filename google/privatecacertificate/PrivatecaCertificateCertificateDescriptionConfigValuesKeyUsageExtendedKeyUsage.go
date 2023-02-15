@@ -1,0 +1,6 @@
+package privatecacertificate
+
+
+type PrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageExtendedKeyUsage struct {
+}
+

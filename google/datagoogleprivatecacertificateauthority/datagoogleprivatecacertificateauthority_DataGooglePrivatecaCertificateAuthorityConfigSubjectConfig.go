@@ -1,6 +1,0 @@
-package datagoogleprivatecacertificateauthority
-
-
-type DataGooglePrivatecaCertificateAuthorityConfigSubjectConfig struct {
-}
-

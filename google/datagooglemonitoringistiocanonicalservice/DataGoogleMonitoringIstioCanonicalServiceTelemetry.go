@@ -1,0 +1,6 @@
+package datagooglemonitoringistiocanonicalservice
+
+
+type DataGoogleMonitoringIstioCanonicalServiceTelemetry struct {
+}
+

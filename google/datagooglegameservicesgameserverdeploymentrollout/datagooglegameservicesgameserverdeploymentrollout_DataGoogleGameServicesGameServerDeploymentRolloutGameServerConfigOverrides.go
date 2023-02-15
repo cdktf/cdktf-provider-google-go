@@ -1,6 +1,0 @@
-package datagooglegameservicesgameserverdeploymentrollout
-
-
-type DataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverrides struct {
-}
-

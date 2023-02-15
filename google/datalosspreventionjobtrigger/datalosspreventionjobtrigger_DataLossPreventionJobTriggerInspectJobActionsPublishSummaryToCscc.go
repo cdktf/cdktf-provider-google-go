@@ -1,6 +1,0 @@
-package datalosspreventionjobtrigger
-
-
-type DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc struct {
-}
-

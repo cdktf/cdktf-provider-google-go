@@ -1,0 +1,6 @@
+package privatecacertificate
+
+
+type PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltName struct {
+}
+

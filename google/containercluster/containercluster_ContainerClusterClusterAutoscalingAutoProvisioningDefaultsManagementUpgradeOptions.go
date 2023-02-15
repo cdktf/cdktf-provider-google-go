@@ -1,6 +1,0 @@
-package containercluster
-
-
-type ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptions struct {
-}
-

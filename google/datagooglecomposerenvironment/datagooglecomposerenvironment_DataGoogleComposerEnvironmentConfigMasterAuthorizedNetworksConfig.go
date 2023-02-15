@@ -1,6 +1,0 @@
-package datagooglecomposerenvironment
-
-
-type DataGoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfig struct {
-}
-

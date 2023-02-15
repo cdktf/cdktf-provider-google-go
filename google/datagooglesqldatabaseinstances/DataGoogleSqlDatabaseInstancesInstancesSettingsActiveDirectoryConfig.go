@@ -1,0 +1,6 @@
+package datagooglesqldatabaseinstances
+
+
+type DataGoogleSqlDatabaseInstancesInstancesSettingsActiveDirectoryConfig struct {
+}
+

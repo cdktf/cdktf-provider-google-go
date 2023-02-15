@@ -1,0 +1,18 @@
+package cloudbuildtrigger
+
+
+type CloudbuildTriggerGithubPush struct {
+	// Regex of branches to match.  Specify only one of branch or tag.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudbuild_trigger#branch CloudbuildTrigger#branch}
+	Branch *string `field:"optional" json:"branch" yaml:"branch"`
+	// When true, only trigger a build if the revision regex does NOT match the git_ref regex.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudbuild_trigger#invert_regex CloudbuildTrigger#invert_regex}
+	InvertRegex interface{} `field:"optional" json:"invertRegex" yaml:"invertRegex"`
+	// Regex of tags to match.  Specify only one of branch or tag.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudbuild_trigger#tag CloudbuildTrigger#tag}
+	Tag *string `field:"optional" json:"tag" yaml:"tag"`
+}
+

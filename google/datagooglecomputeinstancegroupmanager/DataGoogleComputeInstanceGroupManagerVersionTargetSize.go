@@ -1,0 +1,6 @@
+package datagooglecomputeinstancegroupmanager
+
+
+type DataGoogleComputeInstanceGroupManagerVersionTargetSize struct {
+}
+

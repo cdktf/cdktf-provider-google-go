@@ -1,6 +1,0 @@
-package datagooglesecretmanagersecret
-
-
-type DataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryption struct {
-}
-
