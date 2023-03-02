@@ -22,5 +22,11 @@ type ComputeDiskDiskEncryptionKey struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_disk#raw_key ComputeDisk#raw_key}
 	RawKey *string `field:"optional" json:"rawKey" yaml:"rawKey"`
+	// Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit  customer-supplied encryption key to either encrypt or decrypt  this resource.
+	//
+	// You can provide either the rawKey or the rsaEncryptedKey.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_disk#rsa_encrypted_key ComputeDisk#rsa_encrypted_key}
+	RsaEncryptedKey *string `field:"optional" json:"rsaEncryptedKey" yaml:"rsaEncryptedKey"`
 }
 

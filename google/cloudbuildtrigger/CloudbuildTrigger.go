@@ -14,6 +14,8 @@ type CloudbuildTrigger interface {
 	cdktf.TerraformResource
 	ApprovalConfig() CloudbuildTriggerApprovalConfigOutputReference
 	ApprovalConfigInput() *CloudbuildTriggerApprovalConfig
+	BitbucketServerTriggerConfig() CloudbuildTriggerBitbucketServerTriggerConfigOutputReference
+	BitbucketServerTriggerConfigInput() *CloudbuildTriggerBitbucketServerTriggerConfig
 	BuildAttribute() CloudbuildTriggerBuildOutputReference
 	BuildAttributeInput() *CloudbuildTriggerBuild
 	// Experimental.
@@ -146,6 +148,7 @@ type CloudbuildTrigger interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutApprovalConfig(value *CloudbuildTriggerApprovalConfig)
+	PutBitbucketServerTriggerConfig(value *CloudbuildTriggerBitbucketServerTriggerConfig)
 	PutBuildAttribute(value *CloudbuildTriggerBuild)
 	PutGitFileSource(value *CloudbuildTriggerGitFileSource)
 	PutGithub(value *CloudbuildTriggerGithub)
@@ -155,6 +158,7 @@ type CloudbuildTrigger interface {
 	PutTriggerTemplate(value *CloudbuildTriggerTriggerTemplate)
 	PutWebhookConfig(value *CloudbuildTriggerWebhookConfig)
 	ResetApprovalConfig()
+	ResetBitbucketServerTriggerConfig()
 	ResetBuildAttribute()
 	ResetDescription()
 	ResetDisabled()
@@ -210,6 +214,26 @@ func (j *jsiiProxy_CloudbuildTrigger) ApprovalConfigInput() *CloudbuildTriggerAp
 	_jsii_.Get(
 		j,
 		"approvalConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTrigger) BitbucketServerTriggerConfig() CloudbuildTriggerBitbucketServerTriggerConfigOutputReference {
+	var returns CloudbuildTriggerBitbucketServerTriggerConfigOutputReference
+	_jsii_.Get(
+		j,
+		"bitbucketServerTriggerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTrigger) BitbucketServerTriggerConfigInput() *CloudbuildTriggerBitbucketServerTriggerConfig {
+	var returns *CloudbuildTriggerBitbucketServerTriggerConfig
+	_jsii_.Get(
+		j,
+		"bitbucketServerTriggerConfigInput",
 		&returns,
 	)
 	return returns
@@ -1361,6 +1385,17 @@ func (c *jsiiProxy_CloudbuildTrigger) PutApprovalConfig(value *CloudbuildTrigger
 	)
 }
 
+func (c *jsiiProxy_CloudbuildTrigger) PutBitbucketServerTriggerConfig(value *CloudbuildTriggerBitbucketServerTriggerConfig) {
+	if err := c.validatePutBitbucketServerTriggerConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putBitbucketServerTriggerConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudbuildTrigger) PutBuildAttribute(value *CloudbuildTriggerBuild) {
 	if err := c.validatePutBuildAttributeParameters(value); err != nil {
 		panic(err)
@@ -1453,6 +1488,14 @@ func (c *jsiiProxy_CloudbuildTrigger) ResetApprovalConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetApprovalConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudbuildTrigger) ResetBitbucketServerTriggerConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBitbucketServerTriggerConfig",
 		nil, // no parameters
 	)
 }

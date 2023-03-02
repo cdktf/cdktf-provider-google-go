@@ -104,6 +104,10 @@ func (j *jsiiProxy_SqlDatabaseInstance) validateSetIdParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstance) validateSetInstanceTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

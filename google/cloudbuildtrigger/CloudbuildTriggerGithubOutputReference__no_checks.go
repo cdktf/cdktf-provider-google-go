@@ -64,6 +64,10 @@ func (j *jsiiProxy_CloudbuildTriggerGithubOutputReference) validateSetComplexObj
 	return nil
 }
 
+func (j *jsiiProxy_CloudbuildTriggerGithubOutputReference) validateSetEnterpriseConfigResourceNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudbuildTriggerGithubOutputReference) validateSetInternalValueParameters(val *CloudbuildTriggerGithub) error {
 	return nil
 }

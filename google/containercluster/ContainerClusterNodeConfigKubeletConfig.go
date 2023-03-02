@@ -14,5 +14,9 @@ type ContainerClusterNodeConfigKubeletConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#cpu_cfs_quota_period ContainerCluster#cpu_cfs_quota_period}
 	CpuCfsQuotaPeriod *string `field:"optional" json:"cpuCfsQuotaPeriod" yaml:"cpuCfsQuotaPeriod"`
+	// Controls the maximum number of processes allowed to run in a pod.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#pod_pids_limit ContainerCluster#pod_pids_limit}
+	PodPidsLimit *float64 `field:"optional" json:"podPidsLimit" yaml:"podPidsLimit"`
 }
 

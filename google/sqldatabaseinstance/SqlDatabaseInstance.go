@@ -54,6 +54,8 @@ type SqlDatabaseInstance interface {
 	SetId(val *string)
 	IdInput() *string
 	InstanceType() *string
+	SetInstanceType(val *string)
+	InstanceTypeInput() *string
 	IpAddress() SqlDatabaseInstanceIpAddressList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -142,6 +144,7 @@ type SqlDatabaseInstance interface {
 	ResetDeletionProtection()
 	ResetEncryptionKeyName()
 	ResetId()
+	ResetInstanceType()
 	ResetMaintenanceVersion()
 	ResetMasterInstanceName()
 	ResetName()
@@ -385,6 +388,16 @@ func (j *jsiiProxy_SqlDatabaseInstance) InstanceType() *string {
 	_jsii_.Get(
 		j,
 		"instanceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance) InstanceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceTypeInput",
 		&returns,
 	)
 	return returns
@@ -839,6 +852,17 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_SqlDatabaseInstance)SetInstanceType(val *string) {
+	if err := j.validateSetInstanceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instanceType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SqlDatabaseInstance)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1284,6 +1308,14 @@ func (s *jsiiProxy_SqlDatabaseInstance) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstance) ResetInstanceType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetInstanceType",
 		nil, // no parameters
 	)
 }

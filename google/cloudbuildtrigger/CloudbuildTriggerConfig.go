@@ -23,6 +23,10 @@ type CloudbuildTriggerConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudbuild_trigger#approval_config CloudbuildTrigger#approval_config}
 	ApprovalConfig *CloudbuildTriggerApprovalConfig `field:"optional" json:"approvalConfig" yaml:"approvalConfig"`
+	// bitbucket_server_trigger_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudbuild_trigger#bitbucket_server_trigger_config CloudbuildTrigger#bitbucket_server_trigger_config}
+	BitbucketServerTriggerConfig *CloudbuildTriggerBitbucketServerTriggerConfig `field:"optional" json:"bitbucketServerTriggerConfig" yaml:"bitbucketServerTriggerConfig"`
 	// build block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloudbuild_trigger#build CloudbuildTrigger#build}

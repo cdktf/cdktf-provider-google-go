@@ -32,6 +32,7 @@ type DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference interface 
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterNodeConfigKubeletConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodeConfigKubeletConfig)
+	PodPidsLimit() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -154,6 +155,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputRefere
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference) PodPidsLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"podPidsLimit",
 		&returns,
 	)
 	return returns

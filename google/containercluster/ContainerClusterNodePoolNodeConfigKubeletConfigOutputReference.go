@@ -38,6 +38,9 @@ type ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *ContainerClusterNodePoolNodeConfigKubeletConfig
 	SetInternalValue(val *ContainerClusterNodePoolNodeConfigKubeletConfig)
+	PodPidsLimit() *float64
+	SetPodPidsLimit(val *float64)
+	PodPidsLimitInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCpuCfsQuota()
 	ResetCpuCfsQuotaPeriod()
+	ResetPodPidsLimit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) PodPidsLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"podPidsLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) PodPidsLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"podPidsLimitInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -307,6 +331,17 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference)SetPodPidsLimit(val *float64) {
+	if err := j.validateSetPodPidsLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"podPidsLimit",
 		val,
 	)
 }
@@ -531,6 +566,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	_jsii_.InvokeVoid(
 		c,
 		"resetCpuCfsQuotaPeriod",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetPodPidsLimit() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPodPidsLimit",
 		nil, // no parameters
 	)
 }

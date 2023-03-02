@@ -13,6 +13,7 @@ import (
 type DataGoogleCloudbuildTrigger interface {
 	cdktf.TerraformDataSource
 	ApprovalConfig() DataGoogleCloudbuildTriggerApprovalConfigList
+	BitbucketServerTriggerConfig() DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigList
 	BuildAttribute() DataGoogleCloudbuildTriggerBuildList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -132,6 +133,16 @@ func (j *jsiiProxy_DataGoogleCloudbuildTrigger) ApprovalConfig() DataGoogleCloud
 	_jsii_.Get(
 		j,
 		"approvalConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudbuildTrigger) BitbucketServerTriggerConfig() DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigList {
+	var returns DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigList
+	_jsii_.Get(
+		j,
+		"bitbucketServerTriggerConfig",
 		&returns,
 	)
 	return returns

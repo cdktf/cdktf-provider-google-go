@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudbuildTrigger) validatePutApprovalConfigParameters(value 
 	return nil
 }
 
+func (c *jsiiProxy_CloudbuildTrigger) validatePutBitbucketServerTriggerConfigParameters(value *CloudbuildTriggerBitbucketServerTriggerConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudbuildTrigger) validatePutBuildAttributeParameters(value *CloudbuildTriggerBuild) error {
 	return nil
 }

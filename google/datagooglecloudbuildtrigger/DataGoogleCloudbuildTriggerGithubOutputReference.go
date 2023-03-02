@@ -25,6 +25,7 @@ type DataGoogleCloudbuildTriggerGithubOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnterpriseConfigResourceName() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleCloudbuildTriggerGithub
@@ -105,6 +106,16 @@ func (j *jsiiProxy_DataGoogleCloudbuildTriggerGithubOutputReference) CreationSta
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerGithubOutputReference) EnterpriseConfigResourceName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enterpriseConfigResourceName",
 		&returns,
 	)
 	return returns

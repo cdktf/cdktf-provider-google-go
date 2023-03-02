@@ -72,6 +72,10 @@ func (j *jsiiProxy_ComputeDiskDiskEncryptionKeyOutputReference) validateSetRawKe
 	return nil
 }
 
+func (j *jsiiProxy_ComputeDiskDiskEncryptionKeyOutputReference) validateSetRsaEncryptedKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeDiskDiskEncryptionKeyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

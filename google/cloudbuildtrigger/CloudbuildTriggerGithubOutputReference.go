@@ -25,6 +25,9 @@ type CloudbuildTriggerGithubOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnterpriseConfigResourceName() *string
+	SetEnterpriseConfigResourceName(val *string)
+	EnterpriseConfigResourceNameInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *CloudbuildTriggerGithub
@@ -73,6 +76,7 @@ type CloudbuildTriggerGithubOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPullRequest(value *CloudbuildTriggerGithubPullRequest)
 	PutPush(value *CloudbuildTriggerGithubPush)
+	ResetEnterpriseConfigResourceName()
 	ResetName()
 	ResetOwner()
 	ResetPullRequest()
@@ -117,6 +121,26 @@ func (j *jsiiProxy_CloudbuildTriggerGithubOutputReference) CreationStack() *[]*s
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTriggerGithubOutputReference) EnterpriseConfigResourceName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enterpriseConfigResourceName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTriggerGithubOutputReference) EnterpriseConfigResourceNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enterpriseConfigResourceNameInput",
 		&returns,
 	)
 	return returns
@@ -288,6 +312,17 @@ func (j *jsiiProxy_CloudbuildTriggerGithubOutputReference)SetComplexObjectIsFrom
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudbuildTriggerGithubOutputReference)SetEnterpriseConfigResourceName(val *string) {
+	if err := j.validateSetEnterpriseConfigResourceNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enterpriseConfigResourceName",
 		val,
 	)
 }
@@ -552,6 +587,14 @@ func (c *jsiiProxy_CloudbuildTriggerGithubOutputReference) PutPush(value *Cloudb
 		c,
 		"putPush",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudbuildTriggerGithubOutputReference) ResetEnterpriseConfigResourceName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnterpriseConfigResourceName",
+		nil, // no parameters
 	)
 }
 
