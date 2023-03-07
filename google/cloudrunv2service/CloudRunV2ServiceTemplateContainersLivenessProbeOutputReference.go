@@ -30,6 +30,8 @@ type CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference interface {
 	FailureThresholdInput() *float64
 	// Experimental.
 	Fqn() *string
+	Grpc() CloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference
+	GrpcInput() *CloudRunV2ServiceTemplateContainersLivenessProbeGrpc
 	HttpGet() CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference
 	HttpGetInput() *CloudRunV2ServiceTemplateContainersLivenessProbeHttpGet
 	InitialDelaySeconds() *float64
@@ -77,9 +79,11 @@ type CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutGrpc(value *CloudRunV2ServiceTemplateContainersLivenessProbeGrpc)
 	PutHttpGet(value *CloudRunV2ServiceTemplateContainersLivenessProbeHttpGet)
 	PutTcpSocket(value *CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket)
 	ResetFailureThreshold()
+	ResetGrpc()
 	ResetHttpGet()
 	ResetInitialDelaySeconds()
 	ResetPeriodSeconds()
@@ -155,6 +159,26 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeOutputReferen
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference) Grpc() CloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference {
+	var returns CloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference
+	_jsii_.Get(
+		j,
+		"grpc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference) GrpcInput() *CloudRunV2ServiceTemplateContainersLivenessProbeGrpc {
+	var returns *CloudRunV2ServiceTemplateContainersLivenessProbeGrpc
+	_jsii_.Get(
+		j,
+		"grpcInput",
 		&returns,
 	)
 	return returns
@@ -603,6 +627,17 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeOutputReferen
 	return returns
 }
 
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference) PutGrpc(value *CloudRunV2ServiceTemplateContainersLivenessProbeGrpc) {
+	if err := c.validatePutGrpcParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putGrpc",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference) PutHttpGet(value *CloudRunV2ServiceTemplateContainersLivenessProbeHttpGet) {
 	if err := c.validatePutHttpGetParameters(value); err != nil {
 		panic(err)
@@ -629,6 +664,14 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeOutputReferen
 	_jsii_.InvokeVoid(
 		c,
 		"resetFailureThreshold",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference) ResetGrpc() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGrpc",
 		nil, // no parameters
 	)
 }

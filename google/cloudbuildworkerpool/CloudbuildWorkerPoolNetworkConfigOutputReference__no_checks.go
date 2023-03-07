@@ -64,6 +64,10 @@ func (j *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference) validateSetPeeredNetworkIpRangeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

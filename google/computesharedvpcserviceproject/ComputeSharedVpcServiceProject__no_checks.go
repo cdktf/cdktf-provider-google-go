@@ -72,6 +72,10 @@ func (j *jsiiProxy_ComputeSharedVpcServiceProject) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSharedVpcServiceProject) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSharedVpcServiceProject) validateSetHostProjectParameters(val *string) error {
 	return nil
 }

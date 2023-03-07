@@ -20,6 +20,8 @@ type ContainerAzureCluster interface {
 	AzureRegion() *string
 	SetAzureRegion(val *string)
 	AzureRegionInput() *string
+	AzureServicesAuthentication() ContainerAzureClusterAzureServicesAuthenticationOutputReference
+	AzureServicesAuthenticationInput() *ContainerAzureClusterAzureServicesAuthentication
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Client() *string
@@ -129,11 +131,14 @@ type ContainerAzureCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthorization(value *ContainerAzureClusterAuthorization)
+	PutAzureServicesAuthentication(value *ContainerAzureClusterAzureServicesAuthentication)
 	PutControlPlane(value *ContainerAzureClusterControlPlane)
 	PutFleet(value *ContainerAzureClusterFleet)
 	PutNetworking(value *ContainerAzureClusterNetworking)
 	PutTimeouts(value *ContainerAzureClusterTimeouts)
 	ResetAnnotations()
+	ResetAzureServicesAuthentication()
+	ResetClient()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -211,6 +216,26 @@ func (j *jsiiProxy_ContainerAzureCluster) AzureRegionInput() *string {
 	_jsii_.Get(
 		j,
 		"azureRegionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) AzureServicesAuthentication() ContainerAzureClusterAzureServicesAuthenticationOutputReference {
+	var returns ContainerAzureClusterAzureServicesAuthenticationOutputReference
+	_jsii_.Get(
+		j,
+		"azureServicesAuthentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureCluster) AzureServicesAuthenticationInput() *ContainerAzureClusterAzureServicesAuthentication {
+	var returns *ContainerAzureClusterAzureServicesAuthentication
+	_jsii_.Get(
+		j,
+		"azureServicesAuthenticationInput",
 		&returns,
 	)
 	return returns
@@ -1147,6 +1172,17 @@ func (c *jsiiProxy_ContainerAzureCluster) PutAuthorization(value *ContainerAzure
 	)
 }
 
+func (c *jsiiProxy_ContainerAzureCluster) PutAzureServicesAuthentication(value *ContainerAzureClusterAzureServicesAuthentication) {
+	if err := c.validatePutAzureServicesAuthenticationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAzureServicesAuthentication",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerAzureCluster) PutControlPlane(value *ContainerAzureClusterControlPlane) {
 	if err := c.validatePutControlPlaneParameters(value); err != nil {
 		panic(err)
@@ -1195,6 +1231,22 @@ func (c *jsiiProxy_ContainerAzureCluster) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) ResetAzureServicesAuthentication() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAzureServicesAuthentication",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) ResetClient() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetClient",
 		nil, // no parameters
 	)
 }

@@ -56,6 +56,10 @@ func (c *jsiiProxy_ContainerAzureCluster) validatePutAuthorizationParameters(val
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAzureCluster) validatePutAzureServicesAuthenticationParameters(value *ContainerAzureClusterAzureServicesAuthentication) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAzureCluster) validatePutControlPlaneParameters(value *ContainerAzureClusterControlPlane) error {
 	return nil
 }

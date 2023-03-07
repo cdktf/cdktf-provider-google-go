@@ -34,6 +34,14 @@ type StorageTransferJobTransferSpec struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/storage_transfer_job#posix_data_source StorageTransferJob#posix_data_source}
 	PosixDataSource *StorageTransferJobTransferSpecPosixDataSource `field:"optional" json:"posixDataSource" yaml:"posixDataSource"`
+	// Specifies the agent pool name associated with the posix data source. When unspecified, the default name is used.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/storage_transfer_job#sink_agent_pool_name StorageTransferJob#sink_agent_pool_name}
+	SinkAgentPoolName *string `field:"optional" json:"sinkAgentPoolName" yaml:"sinkAgentPoolName"`
+	// Specifies the agent pool name associated with the posix data source. When unspecified, the default name is used.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/storage_transfer_job#source_agent_pool_name StorageTransferJob#source_agent_pool_name}
+	SourceAgentPoolName *string `field:"optional" json:"sourceAgentPoolName" yaml:"sourceAgentPoolName"`
 	// transfer_options block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/storage_transfer_job#transfer_options StorageTransferJob#transfer_options}

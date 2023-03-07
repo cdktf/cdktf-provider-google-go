@@ -32,6 +32,9 @@ type CloudbuildWorkerPoolNetworkConfigOutputReference interface {
 	PeeredNetwork() *string
 	SetPeeredNetwork(val *string)
 	PeeredNetworkInput() *string
+	PeeredNetworkIpRange() *string
+	SetPeeredNetworkIpRange(val *string)
+	PeeredNetworkIpRangeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +67,7 @@ type CloudbuildWorkerPoolNetworkConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPeeredNetworkIpRange()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +148,26 @@ func (j *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference) PeeredNetwo
 	_jsii_.Get(
 		j,
 		"peeredNetworkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference) PeeredNetworkIpRange() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"peeredNetworkIpRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference) PeeredNetworkIpRangeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"peeredNetworkIpRangeInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +261,17 @@ func (j *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference)SetPeeredNet
 	_jsii_.Set(
 		j,
 		"peeredNetwork",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference)SetPeeredNetworkIpRange(val *string) {
+	if err := j.validateSetPeeredNetworkIpRangeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"peeredNetworkIpRange",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (c *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference) Interpolati
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference) ResetPeeredNetworkIpRange() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPeeredNetworkIpRange",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

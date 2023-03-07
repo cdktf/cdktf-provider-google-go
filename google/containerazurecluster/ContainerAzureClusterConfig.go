@@ -29,12 +29,6 @@ type ContainerAzureClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_azure_cluster#azure_region ContainerAzureCluster#azure_region}
 	AzureRegion *string `field:"required" json:"azureRegion" yaml:"azureRegion"`
-	// Name of the AzureClient.
-	//
-	// The `AzureClient` resource must reside on the same GCP project and region as the `AzureCluster`. `AzureClient` names are formatted as `projects/<project-number>/locations/<region>/azureClients/<client-id>`. See Resource Names (https:cloud.google.com/apis/design/resource_names) for more details on Google Cloud resource names.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_azure_cluster#client ContainerAzureCluster#client}
-	Client *string `field:"required" json:"client" yaml:"client"`
 	// control_plane block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_azure_cluster#control_plane ContainerAzureCluster#control_plane}
@@ -65,6 +59,16 @@ type ContainerAzureClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_azure_cluster#annotations ContainerAzureCluster#annotations}
 	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
+	// azure_services_authentication block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_azure_cluster#azure_services_authentication ContainerAzureCluster#azure_services_authentication}
+	AzureServicesAuthentication *ContainerAzureClusterAzureServicesAuthentication `field:"optional" json:"azureServicesAuthentication" yaml:"azureServicesAuthentication"`
+	// Name of the AzureClient.
+	//
+	// The `AzureClient` resource must reside on the same GCP project and region as the `AzureCluster`. `AzureClient` names are formatted as `projects/<project-number>/locations/<region>/azureClients/<client-id>`. See Resource Names (https:cloud.google.com/apis/design/resource_names) for more details on Google Cloud resource names.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_azure_cluster#client ContainerAzureCluster#client}
+	Client *string `field:"optional" json:"client" yaml:"client"`
 	// Optional. A human readable description of this cluster. Cannot be longer than 255 UTF-8 encoded bytes.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_azure_cluster#description ContainerAzureCluster#description}

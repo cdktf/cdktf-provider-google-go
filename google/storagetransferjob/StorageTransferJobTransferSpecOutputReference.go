@@ -45,6 +45,12 @@ type StorageTransferJobTransferSpecOutputReference interface {
 	PosixDataSinkInput() *StorageTransferJobTransferSpecPosixDataSink
 	PosixDataSource() StorageTransferJobTransferSpecPosixDataSourceOutputReference
 	PosixDataSourceInput() *StorageTransferJobTransferSpecPosixDataSource
+	SinkAgentPoolName() *string
+	SetSinkAgentPoolName(val *string)
+	SinkAgentPoolNameInput() *string
+	SourceAgentPoolName() *string
+	SetSourceAgentPoolName(val *string)
+	SourceAgentPoolNameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -96,6 +102,8 @@ type StorageTransferJobTransferSpecOutputReference interface {
 	ResetObjectConditions()
 	ResetPosixDataSink()
 	ResetPosixDataSource()
+	ResetSinkAgentPoolName()
+	ResetSourceAgentPoolName()
 	ResetTransferOptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -322,6 +330,46 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) PosixDataSourc
 	return returns
 }
 
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) SinkAgentPoolName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sinkAgentPoolName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) SinkAgentPoolNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sinkAgentPoolNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) SourceAgentPoolName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceAgentPoolName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) SourceAgentPoolNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceAgentPoolNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -419,6 +467,28 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetInternalValu
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetSinkAgentPoolName(val *string) {
+	if err := j.validateSetSinkAgentPoolNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sinkAgentPoolName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecOutputReference)SetSourceAgentPoolName(val *string) {
+	if err := j.validateSetSourceAgentPoolNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceAgentPoolName",
 		val,
 	)
 }
@@ -790,6 +860,22 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) ResetPosixData
 	_jsii_.InvokeVoid(
 		s,
 		"resetPosixDataSource",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) ResetSinkAgentPoolName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSinkAgentPoolName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageTransferJobTransferSpecOutputReference) ResetSourceAgentPoolName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSourceAgentPoolName",
 		nil, // no parameters
 	)
 }
