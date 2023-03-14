@@ -1,0 +1,1097 @@
+package bigquerycapacitycommitment
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v5/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/cdktf/cdktf-provider-google-go/google/v5/bigquerycapacitycommitment/internal"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+// Represents a {@link https://www.terraform.io/docs/providers/google/r/bigquery_capacity_commitment google_bigquery_capacity_commitment}.
+type BigqueryCapacityCommitment interface {
+	cdktf.TerraformResource
+	CapacityCommitmentId() *string
+	SetCapacityCommitmentId(val *string)
+	CapacityCommitmentIdInput() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	CommitmentEndTime() *string
+	CommitmentStartTime() *string
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	EnforceSingleAdminProjectPerOrg() *string
+	SetEnforceSingleAdminProjectPerOrg(val *string)
+	EnforceSingleAdminProjectPerOrgInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
+	Name() *string
+	// The tree node.
+	Node() constructs.Node
+	Plan() *string
+	SetPlan(val *string)
+	PlanInput() *string
+	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	RenewalPlan() *string
+	SetRenewalPlan(val *string)
+	RenewalPlanInput() *string
+	SlotCount() *float64
+	SetSlotCount(val *float64)
+	SlotCountInput() *float64
+	State() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() BigqueryCapacityCommitmentTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *BigqueryCapacityCommitmentTimeouts)
+	ResetCapacityCommitmentId()
+	ResetEnforceSingleAdminProjectPerOrg()
+	ResetId()
+	ResetLocation()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetProject()
+	ResetRenewalPlan()
+	ResetTimeouts()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for BigqueryCapacityCommitment
+type jsiiProxy_BigqueryCapacityCommitment struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) CapacityCommitmentId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"capacityCommitmentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) CapacityCommitmentIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"capacityCommitmentIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) CommitmentEndTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"commitmentEndTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) CommitmentStartTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"commitmentStartTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) EnforceSingleAdminProjectPerOrg() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enforceSingleAdminProjectPerOrg",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) EnforceSingleAdminProjectPerOrgInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enforceSingleAdminProjectPerOrgInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) Plan() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"plan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) PlanInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"planInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) Project() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"project",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) RenewalPlan() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"renewalPlan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) RenewalPlanInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"renewalPlanInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) SlotCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"slotCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) SlotCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"slotCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) Timeouts() BigqueryCapacityCommitmentTimeoutsOutputReference {
+	var returns BigqueryCapacityCommitmentTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/google/r/bigquery_capacity_commitment google_bigquery_capacity_commitment} Resource.
+func NewBigqueryCapacityCommitment(scope constructs.Construct, id *string, config *BigqueryCapacityCommitmentConfig) BigqueryCapacityCommitment {
+	_init_.Initialize()
+
+	if err := validateNewBigqueryCapacityCommitmentParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_BigqueryCapacityCommitment{}
+
+	_jsii_.Create(
+		"@cdktf/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitment",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/google/r/bigquery_capacity_commitment google_bigquery_capacity_commitment} Resource.
+func NewBigqueryCapacityCommitment_Override(b BigqueryCapacityCommitment, scope constructs.Construct, id *string, config *BigqueryCapacityCommitmentConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitment",
+		[]interface{}{scope, id, config},
+		b,
+	)
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment)SetCapacityCommitmentId(val *string) {
+	if err := j.validateSetCapacityCommitmentIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"capacityCommitmentId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment)SetEnforceSingleAdminProjectPerOrg(val *string) {
+	if err := j.validateSetEnforceSingleAdminProjectPerOrgParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enforceSingleAdminProjectPerOrg",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment)SetPlan(val *string) {
+	if err := j.validateSetPlanParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"plan",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment)SetRenewalPlan(val *string) {
+	if err := j.validateSetRenewalPlanParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"renewalPlan",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryCapacityCommitment)SetSlotCount(val *float64) {
+	if err := j.validateSetSlotCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"slotCount",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func BigqueryCapacityCommitment_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBigqueryCapacityCommitment_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitment",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BigqueryCapacityCommitment_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBigqueryCapacityCommitment_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitment",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BigqueryCapacityCommitment_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBigqueryCapacityCommitment_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitment",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func BigqueryCapacityCommitment_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitment",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) AddOverride(path *string, value interface{}) {
+	if err := b.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := b.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		b,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		b,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := b.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		b,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := b.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		b,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := b.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		b,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := b.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		b,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := b.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		b,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) GetStringAttribute(terraformAttribute *string) *string {
+	if err := b.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		b,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := b.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		b,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		b,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) OverrideLogicalId(newLogicalId *string) {
+	if err := b.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) PutTimeouts(value *BigqueryCapacityCommitmentTimeouts) {
+	if err := b.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) ResetCapacityCommitmentId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCapacityCommitmentId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) ResetEnforceSingleAdminProjectPerOrg() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetEnforceSingleAdminProjectPerOrg",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) ResetId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) ResetLocation() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetLocation",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) ResetProject() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) ResetRenewalPlan() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRenewalPlan",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		b,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		b,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
