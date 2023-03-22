@@ -12,6 +12,8 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/google/r/data_fusion_instance google_data_fusion_instance}.
 type DataFusionInstance interface {
 	cdktf.TerraformResource
+	Accelerators() DataFusionInstanceAcceleratorsList
+	AcceleratorsInput() interface{}
 	ApiEndpoint() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -148,10 +150,12 @@ type DataFusionInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAccelerators(value interface{})
 	PutCryptoKeyConfig(value *DataFusionInstanceCryptoKeyConfig)
 	PutEventPublishConfig(value *DataFusionInstanceEventPublishConfig)
 	PutNetworkConfig(value *DataFusionInstanceNetworkConfig)
 	PutTimeouts(value *DataFusionInstanceTimeouts)
+	ResetAccelerators()
 	ResetCryptoKeyConfig()
 	ResetDataprocServiceAccount()
 	ResetDescription()
@@ -186,6 +190,26 @@ type DataFusionInstance interface {
 // The jsii proxy struct for DataFusionInstance
 type jsiiProxy_DataFusionInstance struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DataFusionInstance) Accelerators() DataFusionInstanceAcceleratorsList {
+	var returns DataFusionInstanceAcceleratorsList
+	_jsii_.Get(
+		j,
+		"accelerators",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataFusionInstance) AcceleratorsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceleratorsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataFusionInstance) ApiEndpoint() *string {
@@ -1375,6 +1399,17 @@ func (d *jsiiProxy_DataFusionInstance) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DataFusionInstance) PutAccelerators(value interface{}) {
+	if err := d.validatePutAcceleratorsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAccelerators",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataFusionInstance) PutCryptoKeyConfig(value *DataFusionInstanceCryptoKeyConfig) {
 	if err := d.validatePutCryptoKeyConfigParameters(value); err != nil {
 		panic(err)
@@ -1416,6 +1451,14 @@ func (d *jsiiProxy_DataFusionInstance) PutTimeouts(value *DataFusionInstanceTime
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataFusionInstance) ResetAccelerators() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAccelerators",
+		nil, // no parameters
 	)
 }
 

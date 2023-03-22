@@ -38,6 +38,8 @@ type PrivatecaCertificateAuthorityConfigX509ConfigOutputReference interface {
 	SetInternalValue(val *PrivatecaCertificateAuthorityConfigX509Config)
 	KeyUsage() PrivatecaCertificateAuthorityConfigX509ConfigKeyUsageOutputReference
 	KeyUsageInput() *PrivatecaCertificateAuthorityConfigX509ConfigKeyUsage
+	NameConstraints() PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference
+	NameConstraintsInput() *PrivatecaCertificateAuthorityConfigX509ConfigNameConstraints
 	PolicyIds() PrivatecaCertificateAuthorityConfigX509ConfigPolicyIdsList
 	PolicyIdsInput() interface{}
 	// Experimental.
@@ -75,9 +77,11 @@ type PrivatecaCertificateAuthorityConfigX509ConfigOutputReference interface {
 	PutAdditionalExtensions(value interface{})
 	PutCaOptions(value *PrivatecaCertificateAuthorityConfigX509ConfigCaOptions)
 	PutKeyUsage(value *PrivatecaCertificateAuthorityConfigX509ConfigKeyUsage)
+	PutNameConstraints(value *PrivatecaCertificateAuthorityConfigX509ConfigNameConstraints)
 	PutPolicyIds(value interface{})
 	ResetAdditionalExtensions()
 	ResetAiaOcspServers()
+	ResetNameConstraints()
 	ResetPolicyIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -219,6 +223,26 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigOutputReference)
 	_jsii_.Get(
 		j,
 		"keyUsageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigOutputReference) NameConstraints() PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference {
+	var returns PrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference
+	_jsii_.Get(
+		j,
+		"nameConstraints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigOutputReference) NameConstraintsInput() *PrivatecaCertificateAuthorityConfigX509ConfigNameConstraints {
+	var returns *PrivatecaCertificateAuthorityConfigX509ConfigNameConstraints
+	_jsii_.Get(
+		j,
+		"nameConstraintsInput",
 		&returns,
 	)
 	return returns
@@ -577,6 +601,17 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigOutputReference)
 	)
 }
 
+func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigOutputReference) PutNameConstraints(value *PrivatecaCertificateAuthorityConfigX509ConfigNameConstraints) {
+	if err := p.validatePutNameConstraintsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putNameConstraints",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigOutputReference) PutPolicyIds(value interface{}) {
 	if err := p.validatePutPolicyIdsParameters(value); err != nil {
 		panic(err)
@@ -600,6 +635,14 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigOutputReference)
 	_jsii_.InvokeVoid(
 		p,
 		"resetAiaOcspServers",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigOutputReference) ResetNameConstraints() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNameConstraints",
 		nil, // no parameters
 	)
 }

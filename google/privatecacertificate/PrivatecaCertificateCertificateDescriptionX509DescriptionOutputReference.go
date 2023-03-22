@@ -33,6 +33,7 @@ type PrivatecaCertificateCertificateDescriptionX509DescriptionOutputReference in
 	InternalValue() *PrivatecaCertificateCertificateDescriptionX509Description
 	SetInternalValue(val *PrivatecaCertificateCertificateDescriptionX509Description)
 	KeyUsage() PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageList
+	NameConstraints() PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList
 	PolicyIds() PrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsList
 	// Experimental.
 	TerraformAttribute() *string
@@ -166,6 +167,16 @@ func (j *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionOutp
 	_jsii_.Get(
 		j,
 		"keyUsage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionOutputReference) NameConstraints() PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList {
+	var returns PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList
+	_jsii_.Get(
+		j,
+		"nameConstraints",
 		&returns,
 	)
 	return returns

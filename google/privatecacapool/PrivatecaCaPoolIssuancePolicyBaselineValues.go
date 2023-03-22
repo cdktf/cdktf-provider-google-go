@@ -18,6 +18,10 @@ type PrivatecaCaPoolIssuancePolicyBaselineValues struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/privateca_ca_pool#aia_ocsp_servers PrivatecaCaPool#aia_ocsp_servers}
 	AiaOcspServers *[]*string `field:"optional" json:"aiaOcspServers" yaml:"aiaOcspServers"`
+	// name_constraints block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/privateca_ca_pool#name_constraints PrivatecaCaPool#name_constraints}
+	NameConstraints *PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints `field:"optional" json:"nameConstraints" yaml:"nameConstraints"`
 	// policy_ids block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/privateca_ca_pool#policy_ids PrivatecaCaPool#policy_ids}

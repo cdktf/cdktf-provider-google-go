@@ -18,6 +18,10 @@ type PrivatecaCertificateConfigX509Config struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/privateca_certificate#ca_options PrivatecaCertificate#ca_options}
 	CaOptions *PrivatecaCertificateConfigX509ConfigCaOptions `field:"optional" json:"caOptions" yaml:"caOptions"`
+	// name_constraints block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/privateca_certificate#name_constraints PrivatecaCertificate#name_constraints}
+	NameConstraints *PrivatecaCertificateConfigX509ConfigNameConstraints `field:"optional" json:"nameConstraints" yaml:"nameConstraints"`
 	// policy_ids block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/privateca_certificate#policy_ids PrivatecaCertificate#policy_ids}

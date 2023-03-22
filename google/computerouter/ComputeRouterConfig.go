@@ -42,9 +42,7 @@ type ComputeRouterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_router#description ComputeRouter#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Field to indicate if a router is dedicated to use with encrypted Interconnect Attachment (IPsec-encrypted Cloud Interconnect feature).
-	//
-	// Not currently available publicly.
+	// Indicates if a router is dedicated for use with encrypted VLAN attachments (interconnectAttachments).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_router#encrypted_interconnect_router ComputeRouter#encrypted_interconnect_router}
 	EncryptedInterconnectRouter interface{} `field:"optional" json:"encryptedInterconnectRouter" yaml:"encryptedInterconnectRouter"`

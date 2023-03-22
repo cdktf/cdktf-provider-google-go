@@ -38,6 +38,8 @@ type PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference interface {
 	SetInternalValue(val *PrivatecaCaPoolIssuancePolicyBaselineValues)
 	KeyUsage() PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference
 	KeyUsageInput() *PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsage
+	NameConstraints() PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsOutputReference
+	NameConstraintsInput() *PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints
 	PolicyIds() PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList
 	PolicyIdsInput() interface{}
 	// Experimental.
@@ -75,9 +77,11 @@ type PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference interface {
 	PutAdditionalExtensions(value interface{})
 	PutCaOptions(value *PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptions)
 	PutKeyUsage(value *PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsage)
+	PutNameConstraints(value *PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints)
 	PutPolicyIds(value interface{})
 	ResetAdditionalExtensions()
 	ResetAiaOcspServers()
+	ResetNameConstraints()
 	ResetPolicyIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -219,6 +223,26 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference) K
 	_jsii_.Get(
 		j,
 		"keyUsageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference) NameConstraints() PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsOutputReference {
+	var returns PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsOutputReference
+	_jsii_.Get(
+		j,
+		"nameConstraints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference) NameConstraintsInput() *PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints {
+	var returns *PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints
+	_jsii_.Get(
+		j,
+		"nameConstraintsInput",
 		&returns,
 	)
 	return returns
@@ -577,6 +601,17 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference) P
 	)
 }
 
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference) PutNameConstraints(value *PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints) {
+	if err := p.validatePutNameConstraintsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putNameConstraints",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference) PutPolicyIds(value interface{}) {
 	if err := p.validatePutPolicyIdsParameters(value); err != nil {
 		panic(err)
@@ -600,6 +635,14 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference) R
 	_jsii_.InvokeVoid(
 		p,
 		"resetAiaOcspServers",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference) ResetNameConstraints() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNameConstraints",
 		nil, // no parameters
 	)
 }

@@ -18,6 +18,10 @@ type PrivatecaCertificateAuthorityConfigX509Config struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/privateca_certificate_authority#aia_ocsp_servers PrivatecaCertificateAuthority#aia_ocsp_servers}
 	AiaOcspServers *[]*string `field:"optional" json:"aiaOcspServers" yaml:"aiaOcspServers"`
+	// name_constraints block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/privateca_certificate_authority#name_constraints PrivatecaCertificateAuthority#name_constraints}
+	NameConstraints *PrivatecaCertificateAuthorityConfigX509ConfigNameConstraints `field:"optional" json:"nameConstraints" yaml:"nameConstraints"`
 	// policy_ids block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/privateca_certificate_authority#policy_ids PrivatecaCertificateAuthority#policy_ids}

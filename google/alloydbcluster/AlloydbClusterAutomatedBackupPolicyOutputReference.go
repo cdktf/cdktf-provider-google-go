@@ -88,6 +88,7 @@ type AlloydbClusterAutomatedBackupPolicyOutputReference interface {
 	ResetLocation()
 	ResetQuantityBasedRetention()
 	ResetTimeBasedRetention()
+	ResetWeeklySchedule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -703,6 +704,14 @@ func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) ResetTime
 	_jsii_.InvokeVoid(
 		a,
 		"resetTimeBasedRetention",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) ResetWeeklySchedule() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetWeeklySchedule",
 		nil, // no parameters
 	)
 }

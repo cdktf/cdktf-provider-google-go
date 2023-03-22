@@ -131,6 +131,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLocation", GoMethod: "ResetLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQuantityBasedRetention", GoMethod: "ResetQuantityBasedRetention"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeBasedRetention", GoMethod: "ResetTimeBasedRetention"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWeeklySchedule", GoMethod: "ResetWeeklySchedule"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

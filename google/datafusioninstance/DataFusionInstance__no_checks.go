@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataFusionInstance) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (d *jsiiProxy_DataFusionInstance) validatePutAcceleratorsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFusionInstance) validatePutCryptoKeyConfigParameters(value *DataFusionInstanceCryptoKeyConfig) error {
 	return nil
 }

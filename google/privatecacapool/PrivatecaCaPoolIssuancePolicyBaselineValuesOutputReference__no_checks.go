@@ -56,6 +56,10 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference) v
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference) validatePutNameConstraintsParameters(value *PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference) validatePutPolicyIdsParameters(value interface{}) error {
 	return nil
 }
