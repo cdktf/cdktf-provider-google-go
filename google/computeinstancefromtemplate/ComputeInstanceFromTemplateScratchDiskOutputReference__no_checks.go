@@ -64,6 +64,10 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) validateSetSizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

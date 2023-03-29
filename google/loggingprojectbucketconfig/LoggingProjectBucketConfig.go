@@ -36,6 +36,9 @@ type LoggingProjectBucketConfig interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EnableAnalytics() interface{}
+	SetEnableAnalytics(val interface{})
+	EnableAnalyticsInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -108,6 +111,7 @@ type LoggingProjectBucketConfig interface {
 	PutCmekSettings(value *LoggingProjectBucketConfigCmekSettings)
 	ResetCmekSettings()
 	ResetDescription()
+	ResetEnableAnalytics()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -233,6 +237,26 @@ func (j *jsiiProxy_LoggingProjectBucketConfig) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoggingProjectBucketConfig) EnableAnalytics() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAnalytics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoggingProjectBucketConfig) EnableAnalyticsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAnalyticsInput",
 		&returns,
 	)
 	return returns
@@ -523,6 +547,17 @@ func (j *jsiiProxy_LoggingProjectBucketConfig)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoggingProjectBucketConfig)SetEnableAnalytics(val interface{}) {
+	if err := j.validateSetEnableAnalyticsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableAnalytics",
 		val,
 	)
 }
@@ -898,6 +933,14 @@ func (l *jsiiProxy_LoggingProjectBucketConfig) ResetDescription() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoggingProjectBucketConfig) ResetEnableAnalytics() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetEnableAnalytics",
 		nil, // no parameters
 	)
 }

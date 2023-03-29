@@ -54,6 +54,8 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	LabelsInput() *map[string]*string
 	LinuxNodeConfig() ContainerNodePoolNodeConfigLinuxNodeConfigOutputReference
 	LinuxNodeConfigInput() *ContainerNodePoolNodeConfigLinuxNodeConfig
+	LocalNvmeSsdBlockConfig() ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference
+	LocalNvmeSsdBlockConfigInput() *ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig
 	LocalSsdCount() *float64
 	SetLocalSsdCount(val *float64)
 	LocalSsdCountInput() *float64
@@ -135,6 +137,7 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	PutGvnic(value *ContainerNodePoolNodeConfigGvnic)
 	PutKubeletConfig(value *ContainerNodePoolNodeConfigKubeletConfig)
 	PutLinuxNodeConfig(value *ContainerNodePoolNodeConfigLinuxNodeConfig)
+	PutLocalNvmeSsdBlockConfig(value *ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig)
 	PutReservationAffinity(value *ContainerNodePoolNodeConfigReservationAffinity)
 	PutShieldedInstanceConfig(value *ContainerNodePoolNodeConfigShieldedInstanceConfig)
 	PutTaint(value interface{})
@@ -149,6 +152,7 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	ResetKubeletConfig()
 	ResetLabels()
 	ResetLinuxNodeConfig()
+	ResetLocalNvmeSsdBlockConfig()
 	ResetLocalSsdCount()
 	ResetLoggingVariant()
 	ResetMachineType()
@@ -425,6 +429,26 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) LinuxNodeConfigIn
 	_jsii_.Get(
 		j,
 		"linuxNodeConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) LocalNvmeSsdBlockConfig() ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference {
+	var returns ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference
+	_jsii_.Get(
+		j,
+		"localNvmeSsdBlockConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) LocalNvmeSsdBlockConfigInput() *ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig {
+	var returns *ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig
+	_jsii_.Get(
+		j,
+		"localNvmeSsdBlockConfigInput",
 		&returns,
 	)
 	return returns
@@ -1281,6 +1305,17 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutLinuxNodeConfi
 	)
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutLocalNvmeSsdBlockConfig(value *ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig) {
+	if err := c.validatePutLocalNvmeSsdBlockConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putLocalNvmeSsdBlockConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutReservationAffinity(value *ContainerNodePoolNodeConfigReservationAffinity) {
 	if err := c.validatePutReservationAffinityParameters(value); err != nil {
 		panic(err)
@@ -1401,6 +1436,14 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetLinuxNodeCon
 	_jsii_.InvokeVoid(
 		c,
 		"resetLinuxNodeConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetLocalNvmeSsdBlockConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLocalNvmeSsdBlockConfig",
 		nil, // no parameters
 	)
 }

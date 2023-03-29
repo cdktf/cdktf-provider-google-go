@@ -80,6 +80,10 @@ func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetDescriptionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetEnableAnalyticsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -30,6 +30,7 @@ type DataGoogleComputeInstanceScratchDiskOutputReference interface {
 	Interface() *string
 	InternalValue() *DataGoogleComputeInstanceScratchDisk
 	SetInternalValue(val *DataGoogleComputeInstanceScratchDisk)
+	Size() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,6 +133,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceScratchDiskOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceScratchDiskOutputReference) Size() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"size",
 		&returns,
 	)
 	return returns

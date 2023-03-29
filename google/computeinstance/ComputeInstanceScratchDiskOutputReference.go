@@ -32,6 +32,9 @@ type ComputeInstanceScratchDiskOutputReference interface {
 	InterfaceInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Size() *float64
+	SetSize(val *float64)
+	SizeInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +67,7 @@ type ComputeInstanceScratchDiskOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +148,26 @@ func (j *jsiiProxy_ComputeInstanceScratchDiskOutputReference) InternalValue() in
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceScratchDiskOutputReference) Size() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"size",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceScratchDiskOutputReference) SizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"sizeInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +261,17 @@ func (j *jsiiProxy_ComputeInstanceScratchDiskOutputReference)SetInternalValue(va
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceScratchDiskOutputReference)SetSize(val *float64) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"size",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (c *jsiiProxy_ComputeInstanceScratchDiskOutputReference) InterpolationForAt
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ComputeInstanceScratchDiskOutputReference) ResetSize() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSize",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ComputeInstanceScratchDiskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

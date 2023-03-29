@@ -38,6 +38,8 @@ type GoogleProviderConfig struct {
 	BigqueryConnectionCustomEndpoint *string `field:"optional" json:"bigqueryConnectionCustomEndpoint" yaml:"bigqueryConnectionCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#big_query_custom_endpoint GoogleProvider#big_query_custom_endpoint}.
 	BigQueryCustomEndpoint *string `field:"optional" json:"bigQueryCustomEndpoint" yaml:"bigQueryCustomEndpoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#bigquery_datapolicy_custom_endpoint GoogleProvider#bigquery_datapolicy_custom_endpoint}.
+	BigqueryDatapolicyCustomEndpoint *string `field:"optional" json:"bigqueryDatapolicyCustomEndpoint" yaml:"bigqueryDatapolicyCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#bigquery_data_transfer_custom_endpoint GoogleProvider#bigquery_data_transfer_custom_endpoint}.
 	BigqueryDataTransferCustomEndpoint *string `field:"optional" json:"bigqueryDataTransferCustomEndpoint" yaml:"bigqueryDataTransferCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google#bigquery_reservation_custom_endpoint GoogleProvider#bigquery_reservation_custom_endpoint}.

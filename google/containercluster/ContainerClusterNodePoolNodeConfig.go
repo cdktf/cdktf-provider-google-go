@@ -46,6 +46,10 @@ type ContainerClusterNodePoolNodeConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#linux_node_config ContainerCluster#linux_node_config}
 	LinuxNodeConfig *ContainerClusterNodePoolNodeConfigLinuxNodeConfig `field:"optional" json:"linuxNodeConfig" yaml:"linuxNodeConfig"`
+	// local_nvme_ssd_block_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#local_nvme_ssd_block_config ContainerCluster#local_nvme_ssd_block_config}
+	LocalNvmeSsdBlockConfig *ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig `field:"optional" json:"localNvmeSsdBlockConfig" yaml:"localNvmeSsdBlockConfig"`
 	// The number of local SSD disks to be attached to the node.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}

@@ -6,5 +6,9 @@ type ComputeInstanceScratchDisk struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_instance#interface ComputeInstance#interface}
 	Interface *string `field:"required" json:"interface" yaml:"interface"`
+	// The size of the disk in gigabytes. One of 375 or 3000.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_instance#size ComputeInstance#size}
+	Size *float64 `field:"optional" json:"size" yaml:"size"`
 }
 

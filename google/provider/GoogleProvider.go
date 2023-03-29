@@ -60,6 +60,9 @@ type GoogleProvider interface {
 	BigQueryCustomEndpoint() *string
 	SetBigQueryCustomEndpoint(val *string)
 	BigQueryCustomEndpointInput() *string
+	BigqueryDatapolicyCustomEndpoint() *string
+	SetBigqueryDatapolicyCustomEndpoint(val *string)
+	BigqueryDatapolicyCustomEndpointInput() *string
 	BigqueryDataTransferCustomEndpoint() *string
 	SetBigqueryDataTransferCustomEndpoint(val *string)
 	BigqueryDataTransferCustomEndpointInput() *string
@@ -413,6 +416,7 @@ type GoogleProvider interface {
 	ResetBigqueryAnalyticsHubCustomEndpoint()
 	ResetBigqueryConnectionCustomEndpoint()
 	ResetBigQueryCustomEndpoint()
+	ResetBigqueryDatapolicyCustomEndpoint()
 	ResetBigqueryDataTransferCustomEndpoint()
 	ResetBigqueryReservationCustomEndpoint()
 	ResetBigtableCustomEndpoint()
@@ -850,6 +854,26 @@ func (j *jsiiProxy_GoogleProvider) BigQueryCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"bigQueryCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) BigqueryDatapolicyCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bigqueryDatapolicyCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) BigqueryDatapolicyCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bigqueryDatapolicyCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3196,6 +3220,14 @@ func (j *jsiiProxy_GoogleProvider)SetBigQueryCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetBigqueryDatapolicyCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"bigqueryDatapolicyCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetBigqueryDataTransferCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4261,6 +4293,14 @@ func (g *jsiiProxy_GoogleProvider) ResetBigQueryCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetBigQueryCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetBigqueryDatapolicyCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBigqueryDatapolicyCustomEndpoint",
 		nil, // no parameters
 	)
 }

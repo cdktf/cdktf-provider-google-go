@@ -64,6 +64,10 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutLinuxN
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutLocalNvmeSsdBlockConfigParameters(value *ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutReservationAffinityParameters(value *ContainerNodePoolNodeConfigReservationAffinity) error {
 	return nil
 }

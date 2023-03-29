@@ -31,6 +31,20 @@ type BigqueryDatasetConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_dataset#access BigqueryDataset#access}
 	Access interface{} `field:"optional" json:"access" yaml:"access"`
+	// Defines the default collation specification of future tables created in the dataset.
+	//
+	// If a table is created in this dataset without table-level
+	// default collation, then the table inherits the dataset default collation,
+	// which is applied to the string fields that do not have explicit collation
+	// specified. A change to this field affects only tables created afterwards,
+	// and does not alter the existing tables.
+	//
+	// The following values are supported:
+	// - 'und:ci': undetermined locale, case insensitive.
+	// - '': empty string. Default to case-sensitive behavior.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_dataset#default_collation BigqueryDataset#default_collation}
+	DefaultCollation *string `field:"optional" json:"defaultCollation" yaml:"defaultCollation"`
 	// default_encryption_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_dataset#default_encryption_configuration BigqueryDataset#default_encryption_configuration}
@@ -85,6 +99,13 @@ type BigqueryDatasetConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// TRUE if the dataset and its table names are case-insensitive, otherwise FALSE.
+	//
+	// By default, this is FALSE, which means the dataset and its table names are
+	// case-sensitive. This field does not affect routine references.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_dataset#is_case_insensitive BigqueryDataset#is_case_insensitive}
+	IsCaseInsensitive interface{} `field:"optional" json:"isCaseInsensitive" yaml:"isCaseInsensitive"`
 	// The labels associated with this dataset. You can use these to organize and group your datasets.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_dataset#labels BigqueryDataset#labels}

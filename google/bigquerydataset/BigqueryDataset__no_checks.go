@@ -84,6 +84,10 @@ func (j *jsiiProxy_BigqueryDataset) validateSetDatasetIdParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryDataset) validateSetDefaultCollationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryDataset) validateSetDefaultPartitionExpirationMsParameters(val *float64) error {
 	return nil
 }
@@ -105,6 +109,10 @@ func (j *jsiiProxy_BigqueryDataset) validateSetFriendlyNameParameters(val *strin
 }
 
 func (j *jsiiProxy_BigqueryDataset) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BigqueryDataset) validateSetIsCaseInsensitiveParameters(val interface{}) error {
 	return nil
 }
 
