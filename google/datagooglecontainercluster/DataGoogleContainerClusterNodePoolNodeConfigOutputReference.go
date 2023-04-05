@@ -10,6 +10,7 @@ import (
 
 type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	cdktf.ComplexObject
+	AdvancedMachineFeatures() DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesList
 	BootDiskKmsKey() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -101,6 +102,16 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 // The jsii proxy struct for DataGoogleContainerClusterNodePoolNodeConfigOutputReference
 type jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) AdvancedMachineFeatures() DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesList
+	_jsii_.Get(
+		j,
+		"advancedMachineFeatures",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) BootDiskKmsKey() *string {

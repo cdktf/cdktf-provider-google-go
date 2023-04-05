@@ -76,6 +76,10 @@ func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validateSetStackTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

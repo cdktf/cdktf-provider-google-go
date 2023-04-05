@@ -44,6 +44,10 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateInterpolat
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutAdvancedMachineFeaturesParameters(value *ContainerClusterNodeConfigAdvancedMachineFeatures) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutGcfsConfigParameters(value *ContainerClusterNodeConfigGcfsConfig) error {
 	return nil
 }

@@ -38,5 +38,7 @@ type DataGoogleComputeInstanceTemplateConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/d/compute_instance_template#project DataGoogleComputeInstanceTemplate#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/d/compute_instance_template#self_link_unique DataGoogleComputeInstanceTemplate#self_link_unique}.
+	SelfLinkUnique *string `field:"optional" json:"selfLinkUnique" yaml:"selfLinkUnique"`
 }
 

@@ -77,6 +77,12 @@ type ComputeNetworkConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_network#mtu ComputeNetwork#mtu}
 	Mtu *float64 `field:"optional" json:"mtu" yaml:"mtu"`
+	// Set the order that Firewall Rules and Firewall Policies are evaluated.
+	//
+	// Needs to be either 'AFTER_CLASSIC_FIREWALL' or 'BEFORE_CLASSIC_FIREWALL' Default 'AFTER_CLASSIC_FIREWALL' Default value: "AFTER_CLASSIC_FIREWALL" Possible values: ["BEFORE_CLASSIC_FIREWALL", "AFTER_CLASSIC_FIREWALL"]
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_network#network_firewall_policy_enforcement_order ComputeNetwork#network_firewall_policy_enforcement_order}
+	NetworkFirewallPolicyEnforcementOrder *string `field:"optional" json:"networkFirewallPolicyEnforcementOrder" yaml:"networkFirewallPolicyEnforcementOrder"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_network#project ComputeNetwork#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The network-wide routing mode to use.

@@ -10,6 +10,8 @@ import (
 
 type ContainerClusterNodeConfigOutputReference interface {
 	cdktf.ComplexObject
+	AdvancedMachineFeatures() ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference
+	AdvancedMachineFeaturesInput() *ContainerClusterNodeConfigAdvancedMachineFeatures
 	BootDiskKmsKey() *string
 	SetBootDiskKmsKey(val *string)
 	BootDiskKmsKeyInput() *string
@@ -132,6 +134,7 @@ type ContainerClusterNodeConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAdvancedMachineFeatures(value *ContainerClusterNodeConfigAdvancedMachineFeatures)
 	PutGcfsConfig(value *ContainerClusterNodeConfigGcfsConfig)
 	PutGuestAccelerator(value interface{})
 	PutGvnic(value *ContainerClusterNodeConfigGvnic)
@@ -142,6 +145,7 @@ type ContainerClusterNodeConfigOutputReference interface {
 	PutShieldedInstanceConfig(value *ContainerClusterNodeConfigShieldedInstanceConfig)
 	PutTaint(value interface{})
 	PutWorkloadMetadataConfig(value *ContainerClusterNodeConfigWorkloadMetadataConfig)
+	ResetAdvancedMachineFeatures()
 	ResetBootDiskKmsKey()
 	ResetDiskSizeGb()
 	ResetDiskType()
@@ -182,6 +186,26 @@ type ContainerClusterNodeConfigOutputReference interface {
 // The jsii proxy struct for ContainerClusterNodeConfigOutputReference
 type jsiiProxy_ContainerClusterNodeConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) AdvancedMachineFeatures() ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference {
+	var returns ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference
+	_jsii_.Get(
+		j,
+		"advancedMachineFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) AdvancedMachineFeaturesInput() *ContainerClusterNodeConfigAdvancedMachineFeatures {
+	var returns *ContainerClusterNodeConfigAdvancedMachineFeatures
+	_jsii_.Get(
+		j,
+		"advancedMachineFeaturesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) BootDiskKmsKey() *string {
@@ -1250,6 +1274,17 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) InterpolationForAt
 	return returns
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutAdvancedMachineFeatures(value *ContainerClusterNodeConfigAdvancedMachineFeatures) {
+	if err := c.validatePutAdvancedMachineFeaturesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAdvancedMachineFeatures",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutGcfsConfig(value *ContainerClusterNodeConfigGcfsConfig) {
 	if err := c.validatePutGcfsConfigParameters(value); err != nil {
 		panic(err)
@@ -1357,6 +1392,14 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutWorkloadMetadat
 		c,
 		"putWorkloadMetadataConfig",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetAdvancedMachineFeatures() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAdvancedMachineFeatures",
+		nil, // no parameters
 	)
 }
 

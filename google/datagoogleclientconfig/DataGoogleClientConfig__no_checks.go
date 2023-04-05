@@ -64,10 +64,6 @@ func validateDataGoogleClientConfig_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleClientConfig) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGoogleClientConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

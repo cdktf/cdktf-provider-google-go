@@ -44,6 +44,10 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateInterpola
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutAdvancedMachineFeaturesParameters(value *ContainerNodePoolNodeConfigAdvancedMachineFeatures) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutGcfsConfigParameters(value *ContainerNodePoolNodeConfigGcfsConfig) error {
 	return nil
 }

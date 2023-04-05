@@ -44,6 +44,10 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateIn
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePutAdvancedMachineFeaturesParameters(value *ContainerClusterNodePoolNodeConfigAdvancedMachineFeatures) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePutGcfsConfigParameters(value *ContainerClusterNodePoolNodeConfigGcfsConfig) error {
 	return nil
 }

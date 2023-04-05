@@ -26,5 +26,11 @@ type ContainerClusterIpAllocationPolicy struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#services_secondary_range_name ContainerCluster#services_secondary_range_name}
 	ServicesSecondaryRangeName *string `field:"optional" json:"servicesSecondaryRangeName" yaml:"servicesSecondaryRangeName"`
+	// The IP Stack type of the cluster.
+	//
+	// Choose between IPV4 and IPV4_IPV6. Default type is IPV4 Only if not set
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#stack_type ContainerCluster#stack_type}
+	StackType *string `field:"optional" json:"stackType" yaml:"stackType"`
 }
 

@@ -33,6 +33,7 @@ type DataGoogleContainerClusterIpAllocationPolicyOutputReference interface {
 	SetInternalValue(val *DataGoogleContainerClusterIpAllocationPolicy)
 	ServicesIpv4CidrBlock() *string
 	ServicesSecondaryRangeName() *string
+	StackType() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -165,6 +166,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) 
 	_jsii_.Get(
 		j,
 		"servicesSecondaryRangeName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) StackType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stackType",
 		&returns,
 	)
 	return returns

@@ -41,6 +41,9 @@ type ContainerClusterIpAllocationPolicyOutputReference interface {
 	ServicesSecondaryRangeName() *string
 	SetServicesSecondaryRangeName(val *string)
 	ServicesSecondaryRangeNameInput() *string
+	StackType() *string
+	SetStackType(val *string)
+	StackTypeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -77,6 +80,7 @@ type ContainerClusterIpAllocationPolicyOutputReference interface {
 	ResetClusterSecondaryRangeName()
 	ResetServicesIpv4CidrBlock()
 	ResetServicesSecondaryRangeName()
+	ResetStackType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -222,6 +226,26 @@ func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) ServicesSe
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) StackType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stackType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) StackTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stackTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -343,6 +367,17 @@ func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference)SetServices
 	_jsii_.Set(
 		j,
 		"servicesSecondaryRangeName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference)SetStackType(val *string) {
+	if err := j.validateSetStackTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stackType",
 		val,
 	)
 }
@@ -583,6 +618,14 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) ResetServi
 	_jsii_.InvokeVoid(
 		c,
 		"resetServicesSecondaryRangeName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) ResetStackType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStackType",
 		nil, // no parameters
 	)
 }

@@ -108,6 +108,10 @@ func (j *jsiiProxy_ComputeNetwork) validateSetNameParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_ComputeNetwork) validateSetNetworkFirewallPolicyEnforcementOrderParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeNetwork) validateSetProjectParameters(val *string) error {
 	return nil
 }

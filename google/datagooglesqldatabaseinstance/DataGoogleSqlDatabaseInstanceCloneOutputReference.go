@@ -26,6 +26,7 @@ type DataGoogleSqlDatabaseInstanceCloneOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DatabaseNames() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleSqlDatabaseInstanceClone
@@ -114,6 +115,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceCloneOutputReference) CreationSt
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceCloneOutputReference) DatabaseNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"databaseNames",
 		&returns,
 	)
 	return returns

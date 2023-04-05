@@ -2,6 +2,10 @@ package containercluster
 
 
 type ContainerClusterNodeConfig struct {
+	// advanced_machine_features block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#advanced_machine_features ContainerCluster#advanced_machine_features}
+	AdvancedMachineFeatures *ContainerClusterNodeConfigAdvancedMachineFeatures `field:"optional" json:"advancedMachineFeatures" yaml:"advancedMachineFeatures"`
 	// The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/container_cluster#boot_disk_kms_key ContainerCluster#boot_disk_kms_key}

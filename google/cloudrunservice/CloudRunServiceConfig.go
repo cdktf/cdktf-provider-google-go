@@ -23,7 +23,7 @@ type CloudRunServiceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/cloud_run_service#location CloudRunService#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
-	// Name must be unique within a namespace, within a Cloud Run region.
+	// Name must be unique within a Google Cloud project and region.
 	//
 	// Is required when creating resources. Name is primarily intended
 	// for creation idempotence and configuration definition. Cannot be updated.

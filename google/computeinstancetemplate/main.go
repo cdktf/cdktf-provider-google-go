@@ -114,6 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "scheduling", GoGetter: "Scheduling"},
 			_jsii_.MemberProperty{JsiiProperty: "schedulingInput", GoGetter: "SchedulingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "selfLink", GoGetter: "SelfLink"},
+			_jsii_.MemberProperty{JsiiProperty: "selfLinkUnique", GoGetter: "SelfLinkUnique"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAccount", GoGetter: "ServiceAccount"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAccountInput", GoGetter: "ServiceAccountInput"},
 			_jsii_.MemberProperty{JsiiProperty: "shieldedInstanceConfig", GoGetter: "ShieldedInstanceConfig"},

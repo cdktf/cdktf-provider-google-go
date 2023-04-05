@@ -52,6 +52,14 @@ func (d *jsiiProxy_DataGoogleDnsKeys) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleDnsKeys) validatePutKeySigningKeysParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataGoogleDnsKeys) validatePutZoneSigningKeysParameters(value interface{}) error {
+	return nil
+}
+
 func validateDataGoogleDnsKeys_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -61,10 +69,6 @@ func validateDataGoogleDnsKeys_IsTerraformDataSourceParameters(x interface{}) er
 }
 
 func validateDataGoogleDnsKeys_IsTerraformElementParameters(x interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataGoogleDnsKeys) validateSetIdParameters(val *string) error {
 	return nil
 }
 

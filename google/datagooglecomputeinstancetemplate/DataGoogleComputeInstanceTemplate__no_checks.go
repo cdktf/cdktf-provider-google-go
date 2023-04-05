@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) validateSetProjectParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) validateSetSelfLinkUniqueParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataGoogleComputeInstanceTemplateParameters(scope constructs.Construct, id *string, config *DataGoogleComputeInstanceTemplateConfig) error {
 	return nil
 }

@@ -60,6 +60,10 @@ func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) validateSetComplexOb
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) validateSetDatabaseNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) validateSetInternalValueParameters(val *SqlDatabaseInstanceClone) error {
 	return nil
 }

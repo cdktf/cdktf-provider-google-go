@@ -79,6 +79,9 @@ type DataGoogleComputeInstanceTemplate interface {
 	ResourcePolicies() *[]*string
 	Scheduling() DataGoogleComputeInstanceTemplateSchedulingList
 	SelfLink() *string
+	SelfLinkUnique() *string
+	SetSelfLinkUnique(val *string)
+	SelfLinkUniqueInput() *string
 	ServiceAccount() DataGoogleComputeInstanceTemplateServiceAccountList
 	ShieldedInstanceConfig() DataGoogleComputeInstanceTemplateShieldedInstanceConfigList
 	Tags() *[]*string
@@ -122,6 +125,7 @@ type DataGoogleComputeInstanceTemplate interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetSelfLinkUnique()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -547,6 +551,26 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) SelfLinkUnique() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"selfLinkUnique",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) SelfLinkUniqueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"selfLinkUniqueInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) ServiceAccount() DataGoogleComputeInstanceTemplateServiceAccountList {
 	var returns DataGoogleComputeInstanceTemplateServiceAccountList
 	_jsii_.Get(
@@ -741,6 +765,17 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplate)SetProvider(val cdktf.Terra
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplate)SetSelfLinkUnique(val *string) {
+	if err := j.validateSetSelfLinkUniqueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"selfLinkUnique",
 		val,
 	)
 }
@@ -1055,6 +1090,14 @@ func (d *jsiiProxy_DataGoogleComputeInstanceTemplate) ResetProject() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGoogleComputeInstanceTemplate) ResetSelfLinkUnique() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSelfLinkUnique",
 		nil, // no parameters
 	)
 }

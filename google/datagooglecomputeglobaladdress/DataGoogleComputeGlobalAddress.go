@@ -13,6 +13,7 @@ import (
 type DataGoogleComputeGlobalAddress interface {
 	cdktf.TerraformDataSource
 	Address() *string
+	AddressType() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -43,8 +44,11 @@ type DataGoogleComputeGlobalAddress interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Network() *string
+	NetworkTier() *string
 	// The tree node.
 	Node() constructs.Node
+	PrefixLength() *float64
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -52,16 +56,19 @@ type DataGoogleComputeGlobalAddress interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	Purpose() *string
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
 	Status() *string
+	Subnetwork() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Users() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -112,6 +119,16 @@ func (j *jsiiProxy_DataGoogleComputeGlobalAddress) Address() *string {
 	_jsii_.Get(
 		j,
 		"address",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeGlobalAddress) AddressType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addressType",
 		&returns,
 	)
 	return returns
@@ -237,11 +254,41 @@ func (j *jsiiProxy_DataGoogleComputeGlobalAddress) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeGlobalAddress) Network() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeGlobalAddress) NetworkTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkTier",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeGlobalAddress) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeGlobalAddress) PrefixLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"prefixLength",
 		&returns,
 	)
 	return returns
@@ -277,6 +324,16 @@ func (j *jsiiProxy_DataGoogleComputeGlobalAddress) Provider() cdktf.TerraformPro
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeGlobalAddress) Purpose() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"purpose",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeGlobalAddress) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -307,6 +364,16 @@ func (j *jsiiProxy_DataGoogleComputeGlobalAddress) Status() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeGlobalAddress) Subnetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetwork",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeGlobalAddress) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -332,6 +399,16 @@ func (j *jsiiProxy_DataGoogleComputeGlobalAddress) TerraformResourceType() *stri
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeGlobalAddress) Users() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"users",
 		&returns,
 	)
 	return returns

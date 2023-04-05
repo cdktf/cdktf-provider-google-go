@@ -110,6 +110,7 @@ type ComputeInstanceTemplate interface {
 	Scheduling() ComputeInstanceTemplateSchedulingOutputReference
 	SchedulingInput() *ComputeInstanceTemplateScheduling
 	SelfLink() *string
+	SelfLinkUnique() *string
 	ServiceAccount() ComputeInstanceTemplateServiceAccountOutputReference
 	ServiceAccountInput() *ComputeInstanceTemplateServiceAccount
 	ShieldedInstanceConfig() ComputeInstanceTemplateShieldedInstanceConfigOutputReference
@@ -767,6 +768,16 @@ func (j *jsiiProxy_ComputeInstanceTemplate) SelfLink() *string {
 	_jsii_.Get(
 		j,
 		"selfLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplate) SelfLinkUnique() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"selfLinkUnique",
 		&returns,
 	)
 	return returns
