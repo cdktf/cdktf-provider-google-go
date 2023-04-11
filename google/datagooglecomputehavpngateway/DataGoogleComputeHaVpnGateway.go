@@ -59,6 +59,7 @@ type DataGoogleComputeHaVpnGateway interface {
 	SetRegion(val *string)
 	RegionInput() *string
 	SelfLink() *string
+	StackType() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -327,6 +328,16 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) SelfLink() *string {
 	_jsii_.Get(
 		j,
 		"selfLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) StackType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stackType",
 		&returns,
 	)
 	return returns

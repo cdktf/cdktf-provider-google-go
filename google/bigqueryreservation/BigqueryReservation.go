@@ -12,6 +12,8 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/google/r/bigquery_reservation google_bigquery_reservation}.
 type BigqueryReservation interface {
 	cdktf.TerraformResource
+	Autoscale() BigqueryReservationAutoscaleOutputReference
+	AutoscaleInput() *BigqueryReservationAutoscale
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Concurrency() *float64
@@ -31,6 +33,9 @@ type BigqueryReservation interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Edition() *string
+	SetEdition(val *string)
+	EditionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -109,8 +114,11 @@ type BigqueryReservation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutoscale(value *BigqueryReservationAutoscale)
 	PutTimeouts(value *BigqueryReservationTimeouts)
+	ResetAutoscale()
 	ResetConcurrency()
+	ResetEdition()
 	ResetId()
 	ResetIgnoreIdleSlots()
 	ResetLocation()
@@ -133,6 +141,26 @@ type BigqueryReservation interface {
 // The jsii proxy struct for BigqueryReservation
 type jsiiProxy_BigqueryReservation struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_BigqueryReservation) Autoscale() BigqueryReservationAutoscaleOutputReference {
+	var returns BigqueryReservationAutoscaleOutputReference
+	_jsii_.Get(
+		j,
+		"autoscale",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryReservation) AutoscaleInput() *BigqueryReservationAutoscale {
+	var returns *BigqueryReservationAutoscale
+	_jsii_.Get(
+		j,
+		"autoscaleInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_BigqueryReservation) CdktfStack() cdktf.TerraformStack {
@@ -200,6 +228,26 @@ func (j *jsiiProxy_BigqueryReservation) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryReservation) Edition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryReservation) EditionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"editionInput",
 		&returns,
 	)
 	return returns
@@ -539,6 +587,17 @@ func (j *jsiiProxy_BigqueryReservation)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryReservation)SetEdition(val *string) {
+	if err := j.validateSetEditionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"edition",
 		val,
 	)
 }
@@ -924,6 +983,17 @@ func (b *jsiiProxy_BigqueryReservation) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (b *jsiiProxy_BigqueryReservation) PutAutoscale(value *BigqueryReservationAutoscale) {
+	if err := b.validatePutAutoscaleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putAutoscale",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigqueryReservation) PutTimeouts(value *BigqueryReservationTimeouts) {
 	if err := b.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -935,10 +1005,26 @@ func (b *jsiiProxy_BigqueryReservation) PutTimeouts(value *BigqueryReservationTi
 	)
 }
 
+func (b *jsiiProxy_BigqueryReservation) ResetAutoscale() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAutoscale",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BigqueryReservation) ResetConcurrency() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetConcurrency",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryReservation) ResetEdition() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetEdition",
 		nil, // no parameters
 	)
 }

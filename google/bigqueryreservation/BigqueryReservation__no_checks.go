@@ -52,6 +52,10 @@ func (b *jsiiProxy_BigqueryReservation) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryReservation) validatePutAutoscaleParameters(value *BigqueryReservationAutoscale) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryReservation) validatePutTimeoutsParameters(value *BigqueryReservationTimeouts) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (j *jsiiProxy_BigqueryReservation) validateSetConcurrencyParameters(val *fl
 }
 
 func (j *jsiiProxy_BigqueryReservation) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BigqueryReservation) validateSetEditionParameters(val *string) error {
 	return nil
 }
 

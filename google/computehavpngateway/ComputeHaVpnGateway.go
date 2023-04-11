@@ -71,6 +71,9 @@ type ComputeHaVpnGateway interface {
 	SetRegion(val *string)
 	RegionInput() *string
 	SelfLink() *string
+	StackType() *string
+	SetStackType(val *string)
+	StackTypeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -115,6 +118,7 @@ type ComputeHaVpnGateway interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
+	ResetStackType()
 	ResetTimeouts()
 	ResetVpnInterfaces()
 	SynthesizeAttributes() *map[string]interface{}
@@ -392,6 +396,26 @@ func (j *jsiiProxy_ComputeHaVpnGateway) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeHaVpnGateway) StackType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stackType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeHaVpnGateway) StackTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stackTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeHaVpnGateway) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -619,6 +643,17 @@ func (j *jsiiProxy_ComputeHaVpnGateway)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeHaVpnGateway)SetStackType(val *string) {
+	if err := j.validateSetStackTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stackType",
 		val,
 	)
 }
@@ -947,6 +982,14 @@ func (c *jsiiProxy_ComputeHaVpnGateway) ResetRegion() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeHaVpnGateway) ResetStackType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStackType",
 		nil, // no parameters
 	)
 }

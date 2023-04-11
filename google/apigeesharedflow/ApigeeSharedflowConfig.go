@@ -27,7 +27,7 @@ type ApigeeSharedflowConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/apigee_sharedflow#name ApigeeSharedflow#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'.
+	// The Apigee Organization name associated with the Apigee instance.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/apigee_sharedflow#org_id ApigeeSharedflow#org_id}
 	OrgId *string `field:"required" json:"orgId" yaml:"orgId"`

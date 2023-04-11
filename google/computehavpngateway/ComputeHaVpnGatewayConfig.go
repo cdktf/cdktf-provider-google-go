@@ -50,6 +50,12 @@ type ComputeHaVpnGatewayConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_ha_vpn_gateway#region ComputeHaVpnGateway#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
+	// The stack type for this VPN gateway to identify the IP protocols that are enbaled.
+	//
+	// If not specified, IPV4_ONLY will be used. Default value: "IPV4_ONLY" Possible values: ["IPV4_ONLY", "IPV4_IPV6"]
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_ha_vpn_gateway#stack_type ComputeHaVpnGateway#stack_type}
+	StackType *string `field:"optional" json:"stackType" yaml:"stackType"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_ha_vpn_gateway#timeouts ComputeHaVpnGateway#timeouts}

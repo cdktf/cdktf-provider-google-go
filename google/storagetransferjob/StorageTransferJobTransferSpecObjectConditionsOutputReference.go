@@ -35,6 +35,12 @@ type StorageTransferJobTransferSpecObjectConditionsOutputReference interface {
 	IncludePrefixesInput() *[]*string
 	InternalValue() *StorageTransferJobTransferSpecObjectConditions
 	SetInternalValue(val *StorageTransferJobTransferSpecObjectConditions)
+	LastModifiedBefore() *string
+	SetLastModifiedBefore(val *string)
+	LastModifiedBeforeInput() *string
+	LastModifiedSince() *string
+	SetLastModifiedSince(val *string)
+	LastModifiedSinceInput() *string
 	MaxTimeElapsedSinceLastModification() *string
 	SetMaxTimeElapsedSinceLastModification(val *string)
 	MaxTimeElapsedSinceLastModificationInput() *string
@@ -75,6 +81,8 @@ type StorageTransferJobTransferSpecObjectConditionsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetExcludePrefixes()
 	ResetIncludePrefixes()
+	ResetLastModifiedBefore()
+	ResetLastModifiedSince()
 	ResetMaxTimeElapsedSinceLastModification()
 	ResetMinTimeElapsedSinceLastModification()
 	// Produce the Token's value at resolution time.
@@ -177,6 +185,46 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecObjectConditionsOutputReference
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecObjectConditionsOutputReference) LastModifiedBefore() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastModifiedBefore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecObjectConditionsOutputReference) LastModifiedBeforeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastModifiedBeforeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecObjectConditionsOutputReference) LastModifiedSince() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastModifiedSince",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecObjectConditionsOutputReference) LastModifiedSinceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastModifiedSinceInput",
 		&returns,
 	)
 	return returns
@@ -321,6 +369,28 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecObjectConditionsOutputReference
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecObjectConditionsOutputReference)SetLastModifiedBefore(val *string) {
+	if err := j.validateSetLastModifiedBeforeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lastModifiedBefore",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecObjectConditionsOutputReference)SetLastModifiedSince(val *string) {
+	if err := j.validateSetLastModifiedSinceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lastModifiedSince",
 		val,
 	)
 }
@@ -567,6 +637,22 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecObjectConditionsOutputReference
 	_jsii_.InvokeVoid(
 		s,
 		"resetIncludePrefixes",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageTransferJobTransferSpecObjectConditionsOutputReference) ResetLastModifiedBefore() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLastModifiedBefore",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageTransferJobTransferSpecObjectConditionsOutputReference) ResetLastModifiedSince() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLastModifiedSince",
 		nil, // no parameters
 	)
 }

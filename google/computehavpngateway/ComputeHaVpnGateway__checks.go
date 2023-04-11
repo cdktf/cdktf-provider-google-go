@@ -312,6 +312,14 @@ func (j *jsiiProxy_ComputeHaVpnGateway) validateSetRegionParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_ComputeHaVpnGateway) validateSetStackTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewComputeHaVpnGatewayParameters(scope constructs.Construct, id *string, config *ComputeHaVpnGatewayConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

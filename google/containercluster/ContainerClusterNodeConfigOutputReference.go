@@ -36,6 +36,8 @@ type ContainerClusterNodeConfigOutputReference interface {
 	DiskType() *string
 	SetDiskType(val *string)
 	DiskTypeInput() *string
+	EphemeralStorageLocalSsdConfig() ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference
+	EphemeralStorageLocalSsdConfigInput() *ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() ContainerClusterNodeConfigGcfsConfigOutputReference
@@ -135,6 +137,7 @@ type ContainerClusterNodeConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAdvancedMachineFeatures(value *ContainerClusterNodeConfigAdvancedMachineFeatures)
+	PutEphemeralStorageLocalSsdConfig(value *ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig)
 	PutGcfsConfig(value *ContainerClusterNodeConfigGcfsConfig)
 	PutGuestAccelerator(value interface{})
 	PutGvnic(value *ContainerClusterNodeConfigGvnic)
@@ -149,6 +152,7 @@ type ContainerClusterNodeConfigOutputReference interface {
 	ResetBootDiskKmsKey()
 	ResetDiskSizeGb()
 	ResetDiskType()
+	ResetEphemeralStorageLocalSsdConfig()
 	ResetGcfsConfig()
 	ResetGuestAccelerator()
 	ResetGvnic()
@@ -293,6 +297,26 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) DiskTypeInput() *s
 	_jsii_.Get(
 		j,
 		"diskTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) EphemeralStorageLocalSsdConfig() ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference {
+	var returns ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference
+	_jsii_.Get(
+		j,
+		"ephemeralStorageLocalSsdConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) EphemeralStorageLocalSsdConfigInput() *ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig {
+	var returns *ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig
+	_jsii_.Get(
+		j,
+		"ephemeralStorageLocalSsdConfigInput",
 		&returns,
 	)
 	return returns
@@ -1285,6 +1309,17 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutAdvancedMachine
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutEphemeralStorageLocalSsdConfig(value *ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig) {
+	if err := c.validatePutEphemeralStorageLocalSsdConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putEphemeralStorageLocalSsdConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutGcfsConfig(value *ContainerClusterNodeConfigGcfsConfig) {
 	if err := c.validatePutGcfsConfigParameters(value); err != nil {
 		panic(err)
@@ -1423,6 +1458,14 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetDiskType() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDiskType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetEphemeralStorageLocalSsdConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEphemeralStorageLocalSsdConfig",
 		nil, // no parameters
 	)
 }

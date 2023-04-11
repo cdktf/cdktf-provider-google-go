@@ -52,11 +52,23 @@ func (a *jsiiProxy_ArtifactRegistryRepository) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepository) validatePutDockerConfigParameters(value *ArtifactRegistryRepositoryDockerConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepository) validatePutMavenConfigParameters(value *ArtifactRegistryRepositoryMavenConfig) error {
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepository) validatePutRemoteRepositoryConfigParameters(value *ArtifactRegistryRepositoryRemoteRepositoryConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepository) validatePutTimeoutsParameters(value *ArtifactRegistryRepositoryTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepository) validatePutVirtualRepositoryConfigParameters(value *ArtifactRegistryRepositoryVirtualRepositoryConfig) error {
 	return nil
 }
 
@@ -101,6 +113,10 @@ func (j *jsiiProxy_ArtifactRegistryRepository) validateSetLifecycleParameters(va
 }
 
 func (j *jsiiProxy_ArtifactRegistryRepository) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepository) validateSetModeParameters(val *string) error {
 	return nil
 }
 

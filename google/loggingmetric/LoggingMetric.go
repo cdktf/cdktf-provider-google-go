@@ -36,6 +36,9 @@ type LoggingMetric interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	Disabled() interface{}
+	SetDisabled(val interface{})
+	DisabledInput() interface{}
 	Filter() *string
 	SetFilter(val *string)
 	FilterInput() *string
@@ -119,6 +122,7 @@ type LoggingMetric interface {
 	ResetBucketName()
 	ResetBucketOptions()
 	ResetDescription()
+	ResetDisabled()
 	ResetId()
 	ResetLabelExtractors()
 	ResetMetricDescriptor()
@@ -248,6 +252,26 @@ func (j *jsiiProxy_LoggingMetric) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoggingMetric) Disabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoggingMetric) DisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disabledInput",
 		&returns,
 	)
 	return returns
@@ -598,6 +622,17 @@ func (j *jsiiProxy_LoggingMetric)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoggingMetric)SetDisabled(val interface{}) {
+	if err := j.validateSetDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disabled",
 		val,
 	)
 }
@@ -1025,6 +1060,14 @@ func (l *jsiiProxy_LoggingMetric) ResetDescription() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoggingMetric) ResetDisabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDisabled",
 		nil, // no parameters
 	)
 }

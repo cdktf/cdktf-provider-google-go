@@ -111,6 +111,17 @@ func (a *jsiiProxy_ArtifactRegistryRepository) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepository) validatePutDockerConfigParameters(value *ArtifactRegistryRepositoryDockerConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepository) validatePutMavenConfigParameters(value *ArtifactRegistryRepositoryMavenConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -122,7 +133,29 @@ func (a *jsiiProxy_ArtifactRegistryRepository) validatePutMavenConfigParameters(
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepository) validatePutRemoteRepositoryConfigParameters(value *ArtifactRegistryRepositoryRemoteRepositoryConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepository) validatePutTimeoutsParameters(value *ArtifactRegistryRepositoryTimeouts) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepository) validatePutVirtualRepositoryConfigParameters(value *ArtifactRegistryRepositoryVirtualRepositoryConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -239,6 +272,14 @@ func (j *jsiiProxy_ArtifactRegistryRepository) validateSetLifecycleParameters(va
 }
 
 func (j *jsiiProxy_ArtifactRegistryRepository) validateSetLocationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepository) validateSetModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

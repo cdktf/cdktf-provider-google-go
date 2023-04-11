@@ -76,6 +76,10 @@ func (j *jsiiProxy_BigqueryCapacityCommitment) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryCapacityCommitment) validateSetEditionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryCapacityCommitment) validateSetEnforceSingleAdminProjectPerOrgParameters(val *string) error {
 	return nil
 }

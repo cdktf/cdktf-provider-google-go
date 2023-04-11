@@ -108,6 +108,10 @@ func (j *jsiiProxy_ComputeHaVpnGateway) validateSetRegionParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_ComputeHaVpnGateway) validateSetStackTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewComputeHaVpnGatewayParameters(scope constructs.Construct, id *string, config *ComputeHaVpnGatewayConfig) error {
 	return nil
 }

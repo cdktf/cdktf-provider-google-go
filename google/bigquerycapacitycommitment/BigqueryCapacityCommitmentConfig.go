@@ -19,7 +19,7 @@ type BigqueryCapacityCommitmentConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Capacity commitment plan. Valid values are FLEX, TRIAL, MONTHLY, ANNUAL.
+	// Capacity commitment plan. Valid values are at https://cloud.google.com/bigquery/docs/reference/reservations/rpc/google.cloud.bigquery.reservation.v1#commitmentplan.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_capacity_commitment#plan BigqueryCapacityCommitment#plan}
 	Plan *string `field:"required" json:"plan" yaml:"plan"`
@@ -36,6 +36,10 @@ type BigqueryCapacityCommitmentConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_capacity_commitment#capacity_commitment_id BigqueryCapacityCommitment#capacity_commitment_id}
 	CapacityCommitmentId *string `field:"optional" json:"capacityCommitmentId" yaml:"capacityCommitmentId"`
+	// The edition type. Valid values are STANDARD, ENTERPRISE, ENTERPRISE_PLUS.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_capacity_commitment#edition BigqueryCapacityCommitment#edition}
+	Edition *string `field:"optional" json:"edition" yaml:"edition"`
 	// If true, fail the request if another project in the organization has a capacity commitment.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_capacity_commitment#enforce_single_admin_project_per_org BigqueryCapacityCommitment#enforce_single_admin_project_per_org}
@@ -53,7 +57,7 @@ type BigqueryCapacityCommitmentConfig struct {
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The plan this capacity commitment is converted to after commitmentEndTime passes.
 	//
-	// Once the plan is changed, committed period is extended according to commitment plan. Only applicable for ANNUAL and TRIAL commitments.
+	// Once the plan is changed, committed period is extended according to commitment plan. Only applicable some commitment plans.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_capacity_commitment#renewal_plan BigqueryCapacityCommitment#renewal_plan}
 	RenewalPlan *string `field:"optional" json:"renewalPlan" yaml:"renewalPlan"`

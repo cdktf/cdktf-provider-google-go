@@ -30,12 +30,20 @@ type BigqueryReservationConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_reservation#slot_capacity BigqueryReservation#slot_capacity}
 	SlotCapacity *float64 `field:"required" json:"slotCapacity" yaml:"slotCapacity"`
+	// autoscale block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_reservation#autoscale BigqueryReservation#autoscale}
+	Autoscale *BigqueryReservationAutoscale `field:"optional" json:"autoscale" yaml:"autoscale"`
 	// Maximum number of queries that are allowed to run concurrently in this reservation.
 	//
 	// This is a soft limit due to asynchronous nature of the system and various optimizations for small queries. Default value is 0 which means that concurrency will be automatically set based on the reservation size.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_reservation#concurrency BigqueryReservation#concurrency}
 	Concurrency *float64 `field:"optional" json:"concurrency" yaml:"concurrency"`
+	// The edition type. Valid values are STANDARD, ENTERPRISE, ENTERPRISE_PLUS.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_reservation#edition BigqueryReservation#edition}
+	Edition *string `field:"optional" json:"edition" yaml:"edition"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/bigquery_reservation#id BigqueryReservation#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

@@ -32,6 +32,8 @@ type ArtifactRegistryRepository interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DockerConfig() ArtifactRegistryRepositoryDockerConfigOutputReference
+	DockerConfigInput() *ArtifactRegistryRepositoryDockerConfig
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -61,6 +63,9 @@ type ArtifactRegistryRepository interface {
 	LocationInput() *string
 	MavenConfig() ArtifactRegistryRepositoryMavenConfigOutputReference
 	MavenConfigInput() *ArtifactRegistryRepositoryMavenConfig
+	Mode() *string
+	SetMode(val *string)
+	ModeInput() *string
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -77,6 +82,8 @@ type ArtifactRegistryRepository interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RemoteRepositoryConfig() ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference
+	RemoteRepositoryConfigInput() *ArtifactRegistryRepositoryRemoteRepositoryConfig
 	RepositoryId() *string
 	SetRepositoryId(val *string)
 	RepositoryIdInput() *string
@@ -89,6 +96,8 @@ type ArtifactRegistryRepository interface {
 	Timeouts() ArtifactRegistryRepositoryTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UpdateTime() *string
+	VirtualRepositoryConfig() ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference
+	VirtualRepositoryConfigInput() *ArtifactRegistryRepositoryVirtualRepositoryConfig
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -114,19 +123,26 @@ type ArtifactRegistryRepository interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDockerConfig(value *ArtifactRegistryRepositoryDockerConfig)
 	PutMavenConfig(value *ArtifactRegistryRepositoryMavenConfig)
+	PutRemoteRepositoryConfig(value *ArtifactRegistryRepositoryRemoteRepositoryConfig)
 	PutTimeouts(value *ArtifactRegistryRepositoryTimeouts)
+	PutVirtualRepositoryConfig(value *ArtifactRegistryRepositoryVirtualRepositoryConfig)
 	ResetDescription()
+	ResetDockerConfig()
 	ResetId()
 	ResetKmsKeyName()
 	ResetLabels()
 	ResetLocation()
 	ResetMavenConfig()
+	ResetMode()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRemoteRepositoryConfig()
 	ResetTimeouts()
+	ResetVirtualRepositoryConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -217,6 +233,26 @@ func (j *jsiiProxy_ArtifactRegistryRepository) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepository) DockerConfig() ArtifactRegistryRepositoryDockerConfigOutputReference {
+	var returns ArtifactRegistryRepositoryDockerConfigOutputReference
+	_jsii_.Get(
+		j,
+		"dockerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepository) DockerConfigInput() *ArtifactRegistryRepositoryDockerConfig {
+	var returns *ArtifactRegistryRepositoryDockerConfig
+	_jsii_.Get(
+		j,
+		"dockerConfigInput",
 		&returns,
 	)
 	return returns
@@ -382,6 +418,26 @@ func (j *jsiiProxy_ArtifactRegistryRepository) MavenConfigInput() *ArtifactRegis
 	return returns
 }
 
+func (j *jsiiProxy_ArtifactRegistryRepository) Mode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepository) ModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ArtifactRegistryRepository) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -447,6 +503,26 @@ func (j *jsiiProxy_ArtifactRegistryRepository) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepository) RemoteRepositoryConfig() ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference {
+	var returns ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference
+	_jsii_.Get(
+		j,
+		"remoteRepositoryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepository) RemoteRepositoryConfigInput() *ArtifactRegistryRepositoryRemoteRepositoryConfig {
+	var returns *ArtifactRegistryRepositoryRemoteRepositoryConfig
+	_jsii_.Get(
+		j,
+		"remoteRepositoryConfigInput",
 		&returns,
 	)
 	return returns
@@ -527,6 +603,26 @@ func (j *jsiiProxy_ArtifactRegistryRepository) UpdateTime() *string {
 	_jsii_.Get(
 		j,
 		"updateTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepository) VirtualRepositoryConfig() ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference {
+	var returns ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference
+	_jsii_.Get(
+		j,
+		"virtualRepositoryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepository) VirtualRepositoryConfigInput() *ArtifactRegistryRepositoryVirtualRepositoryConfig {
+	var returns *ArtifactRegistryRepositoryVirtualRepositoryConfig
+	_jsii_.Get(
+		j,
+		"virtualRepositoryConfigInput",
 		&returns,
 	)
 	return returns
@@ -670,6 +766,17 @@ func (j *jsiiProxy_ArtifactRegistryRepository)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepository)SetMode(val *string) {
+	if err := j.validateSetModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mode",
 		val,
 	)
 }
@@ -981,6 +1088,17 @@ func (a *jsiiProxy_ArtifactRegistryRepository) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepository) PutDockerConfig(value *ArtifactRegistryRepositoryDockerConfig) {
+	if err := a.validatePutDockerConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putDockerConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepository) PutMavenConfig(value *ArtifactRegistryRepositoryMavenConfig) {
 	if err := a.validatePutMavenConfigParameters(value); err != nil {
 		panic(err)
@@ -988,6 +1106,17 @@ func (a *jsiiProxy_ArtifactRegistryRepository) PutMavenConfig(value *ArtifactReg
 	_jsii_.InvokeVoid(
 		a,
 		"putMavenConfig",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepository) PutRemoteRepositoryConfig(value *ArtifactRegistryRepositoryRemoteRepositoryConfig) {
+	if err := a.validatePutRemoteRepositoryConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putRemoteRepositoryConfig",
 		[]interface{}{value},
 	)
 }
@@ -1003,10 +1132,29 @@ func (a *jsiiProxy_ArtifactRegistryRepository) PutTimeouts(value *ArtifactRegist
 	)
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepository) PutVirtualRepositoryConfig(value *ArtifactRegistryRepositoryVirtualRepositoryConfig) {
+	if err := a.validatePutVirtualRepositoryConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putVirtualRepositoryConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepository) ResetDescription() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepository) ResetDockerConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDockerConfig",
 		nil, // no parameters
 	)
 }
@@ -1051,6 +1199,14 @@ func (a *jsiiProxy_ArtifactRegistryRepository) ResetMavenConfig() {
 	)
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepository) ResetMode() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMode",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepository) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1067,10 +1223,26 @@ func (a *jsiiProxy_ArtifactRegistryRepository) ResetProject() {
 	)
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepository) ResetRemoteRepositoryConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRemoteRepositoryConfig",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepository) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepository) ResetVirtualRepositoryConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetVirtualRepositoryConfig",
 		nil, // no parameters
 	)
 }

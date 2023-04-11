@@ -1,0 +1,6 @@
+package datagoogleartifactregistryrepository
+
+
+type DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies struct {
+}
+

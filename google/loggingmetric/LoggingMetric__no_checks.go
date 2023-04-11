@@ -88,6 +88,10 @@ func (j *jsiiProxy_LoggingMetric) validateSetDescriptionParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_LoggingMetric) validateSetDisabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingMetric) validateSetFilterParameters(val *string) error {
 	return nil
 }
