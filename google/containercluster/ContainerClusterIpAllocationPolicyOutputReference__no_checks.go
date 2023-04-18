@@ -44,6 +44,10 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validateIn
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validatePutPodCidrOverprovisionConfigParameters(value *ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

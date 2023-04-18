@@ -68,6 +68,10 @@ type ClouddeployTargetConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/clouddeploy_target#require_approval ClouddeployTarget#require_approval}
 	RequireApproval interface{} `field:"optional" json:"requireApproval" yaml:"requireApproval"`
+	// run block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/clouddeploy_target#run ClouddeployTarget#run}
+	Run *ClouddeployTargetRun `field:"optional" json:"run" yaml:"run"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/clouddeploy_target#timeouts ClouddeployTarget#timeouts}

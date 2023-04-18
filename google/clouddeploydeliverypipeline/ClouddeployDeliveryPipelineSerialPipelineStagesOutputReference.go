@@ -2,9 +2,9 @@ package clouddeploydeliverypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v5/clouddeploydeliverypipeline/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v6/clouddeploydeliverypipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -32,6 +32,8 @@ type ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference interface {
 	Profiles() *[]*string
 	SetProfiles(val *[]*string)
 	ProfilesInput() *[]*string
+	Strategy() ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference
+	StrategyInput() *ClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	TargetId() *string
 	SetTargetId(val *string)
 	TargetIdInput() *string
@@ -67,7 +69,9 @@ type ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutStrategy(value *ClouddeployDeliveryPipelineSerialPipelineStagesStrategy)
 	ResetProfiles()
+	ResetStrategy()
 	ResetTargetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReferenc
 	_jsii_.Get(
 		j,
 		"profilesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) Strategy() ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference {
+	var returns ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference
+	_jsii_.Get(
+		j,
+		"strategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) StrategyInput() *ClouddeployDeliveryPipelineSerialPipelineStagesStrategy {
+	var returns *ClouddeployDeliveryPipelineSerialPipelineStagesStrategy
+	_jsii_.Get(
+		j,
+		"strategyInput",
 		&returns,
 	)
 	return returns
@@ -485,10 +509,29 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReferenc
 	return returns
 }
 
+func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) PutStrategy(value *ClouddeployDeliveryPipelineSerialPipelineStagesStrategy) {
+	if err := c.validatePutStrategyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putStrategy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) ResetProfiles() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProfiles",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) ResetStrategy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStrategy",
 		nil, // no parameters
 	)
 }

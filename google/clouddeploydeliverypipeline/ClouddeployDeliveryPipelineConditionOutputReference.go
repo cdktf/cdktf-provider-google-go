@@ -2,9 +2,9 @@ package clouddeploydeliverypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v5/clouddeploydeliverypipeline/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v6/clouddeploydeliverypipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,6 +31,7 @@ type ClouddeployDeliveryPipelineConditionOutputReference interface {
 	SetInternalValue(val *ClouddeployDeliveryPipelineCondition)
 	PipelineReadyCondition() ClouddeployDeliveryPipelineConditionPipelineReadyConditionList
 	TargetsPresentCondition() ClouddeployDeliveryPipelineConditionTargetsPresentConditionList
+	TargetsTypeCondition() ClouddeployDeliveryPipelineConditionTargetsTypeConditionList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -143,6 +144,16 @@ func (j *jsiiProxy_ClouddeployDeliveryPipelineConditionOutputReference) TargetsP
 	_jsii_.Get(
 		j,
 		"targetsPresentCondition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployDeliveryPipelineConditionOutputReference) TargetsTypeCondition() ClouddeployDeliveryPipelineConditionTargetsTypeConditionList {
+	var returns ClouddeployDeliveryPipelineConditionTargetsTypeConditionList
+	_jsii_.Get(
+		j,
+		"targetsTypeCondition",
 		&returns,
 	)
 	return returns

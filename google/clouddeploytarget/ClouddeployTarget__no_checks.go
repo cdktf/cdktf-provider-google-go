@@ -64,6 +64,10 @@ func (c *jsiiProxy_ClouddeployTarget) validatePutGkeParameters(value *Clouddeplo
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployTarget) validatePutRunParameters(value *ClouddeployTargetRun) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployTarget) validatePutTimeoutsParameters(value *ClouddeployTargetTimeouts) error {
 	return nil
 }

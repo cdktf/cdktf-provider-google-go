@@ -44,6 +44,10 @@ func (c *jsiiProxy_ContainerNodePoolNetworkConfigOutputReference) validateInterp
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePoolNetworkConfigOutputReference) validatePutPodCidrOverprovisionConfigParameters(value *ContainerNodePoolNetworkConfigPodCidrOverprovisionConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePoolNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

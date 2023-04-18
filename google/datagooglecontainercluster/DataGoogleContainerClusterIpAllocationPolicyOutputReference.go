@@ -2,9 +2,9 @@ package datagooglecontainercluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v5/datagooglecontainercluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglecontainercluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,6 +31,7 @@ type DataGoogleContainerClusterIpAllocationPolicyOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterIpAllocationPolicy
 	SetInternalValue(val *DataGoogleContainerClusterIpAllocationPolicy)
+	PodCidrOverprovisionConfig() DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigList
 	ServicesIpv4CidrBlock() *string
 	ServicesSecondaryRangeName() *string
 	StackType() *string
@@ -146,6 +147,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) PodCidrOverprovisionConfig() DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigList {
+	var returns DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigList
+	_jsii_.Get(
+		j,
+		"podCidrOverprovisionConfig",
 		&returns,
 	)
 	return returns

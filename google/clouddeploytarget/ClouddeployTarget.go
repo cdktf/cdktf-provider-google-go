@@ -2,10 +2,10 @@ package clouddeploytarget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v5/clouddeploytarget/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v6/clouddeploytarget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -84,6 +84,8 @@ type ClouddeployTarget interface {
 	RequireApproval() interface{}
 	SetRequireApproval(val interface{})
 	RequireApprovalInput() interface{}
+	Run() ClouddeployTargetRunOutputReference
+	RunInput() *ClouddeployTargetRun
 	TargetId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -123,6 +125,7 @@ type ClouddeployTarget interface {
 	PutAnthosCluster(value *ClouddeployTargetAnthosCluster)
 	PutExecutionConfigs(value interface{})
 	PutGke(value *ClouddeployTargetGke)
+	PutRun(value *ClouddeployTargetRun)
 	PutTimeouts(value *ClouddeployTargetTimeouts)
 	ResetAnnotations()
 	ResetAnthosCluster()
@@ -136,6 +139,7 @@ type ClouddeployTarget interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRequireApproval()
+	ResetRun()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -517,6 +521,26 @@ func (j *jsiiProxy_ClouddeployTarget) RequireApprovalInput() interface{} {
 	_jsii_.Get(
 		j,
 		"requireApprovalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployTarget) Run() ClouddeployTargetRunOutputReference {
+	var returns ClouddeployTargetRunOutputReference
+	_jsii_.Get(
+		j,
+		"run",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployTarget) RunInput() *ClouddeployTargetRun {
+	var returns *ClouddeployTargetRun
+	_jsii_.Get(
+		j,
+		"runInput",
 		&returns,
 	)
 	return returns
@@ -1084,6 +1108,17 @@ func (c *jsiiProxy_ClouddeployTarget) PutGke(value *ClouddeployTargetGke) {
 	)
 }
 
+func (c *jsiiProxy_ClouddeployTarget) PutRun(value *ClouddeployTargetRun) {
+	if err := c.validatePutRunParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRun",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ClouddeployTarget) PutTimeouts(value *ClouddeployTargetTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1171,6 +1206,14 @@ func (c *jsiiProxy_ClouddeployTarget) ResetRequireApproval() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRequireApproval",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClouddeployTarget) ResetRun() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRun",
 		nil, // no parameters
 	)
 }
