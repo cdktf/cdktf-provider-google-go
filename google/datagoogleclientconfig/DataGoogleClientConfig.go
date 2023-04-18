@@ -2,14 +2,14 @@ package datagoogleclientconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagoogleclientconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagoogleclientconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/client_config google_client_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/client_config google_client_config}.
 type DataGoogleClientConfig interface {
 	cdktf.TerraformDataSource
 	AccessToken() *string
@@ -18,9 +18,9 @@ type DataGoogleClientConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataGoogleClientConfig) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleClientConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleClientConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -289,7 +289,7 @@ func (j *jsiiProxy_DataGoogleClientConfig) Zone() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/client_config google_client_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/client_config google_client_config} Data Source.
 func NewDataGoogleClientConfig(scope constructs.Construct, id *string, config *DataGoogleClientConfigConfig) DataGoogleClientConfig {
 	_init_.Initialize()
 
@@ -307,7 +307,7 @@ func NewDataGoogleClientConfig(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/client_config google_client_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/client_config google_client_config} Data Source.
 func NewDataGoogleClientConfig_Override(d DataGoogleClientConfig, scope constructs.Construct, id *string, config *DataGoogleClientConfigConfig) {
 	_init_.Initialize()
 
@@ -318,7 +318,10 @@ func NewDataGoogleClientConfig_Override(d DataGoogleClientConfig, scope construc
 	)
 }
 
-func (j *jsiiProxy_DataGoogleClientConfig)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleClientConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

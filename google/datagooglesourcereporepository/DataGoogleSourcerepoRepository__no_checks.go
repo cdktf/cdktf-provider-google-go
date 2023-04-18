@@ -64,6 +64,10 @@ func validateDataGoogleSourcerepoRepository_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleSourcerepoRepository) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleSourcerepoRepository) validateSetIdParameters(val *string) error {
 	return nil
 }

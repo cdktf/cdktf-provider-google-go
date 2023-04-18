@@ -76,6 +76,10 @@ func (j *jsiiProxy_BigqueryConnectionIamMember) validateSetConnectionIdParameter
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryConnectionIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryConnectionIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

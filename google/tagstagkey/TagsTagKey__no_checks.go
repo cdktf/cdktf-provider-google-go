@@ -72,6 +72,10 @@ func (j *jsiiProxy_TagsTagKey) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_TagsTagKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TagsTagKey) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

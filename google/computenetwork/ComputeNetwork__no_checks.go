@@ -76,6 +76,10 @@ func (j *jsiiProxy_ComputeNetwork) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_ComputeNetwork) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeNetwork) validateSetDeleteDefaultRoutesOnCreateParameters(val interface{}) error {
 	return nil
 }

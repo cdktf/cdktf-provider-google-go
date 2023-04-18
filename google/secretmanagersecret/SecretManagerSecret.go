@@ -2,14 +2,14 @@ package secretmanagersecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/secretmanagersecret/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/secretmanagersecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/secret_manager_secret google_secret_manager_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/secret_manager_secret google_secret_manager_secret}.
 type SecretManagerSecret interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SecretManagerSecret interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -171,8 +171,8 @@ func (j *jsiiProxy_SecretManagerSecret) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerSecret) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SecretManagerSecret) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -522,7 +522,7 @@ func (j *jsiiProxy_SecretManagerSecret) TtlInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/secret_manager_secret google_secret_manager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/secret_manager_secret google_secret_manager_secret} Resource.
 func NewSecretManagerSecret(scope constructs.Construct, id *string, config *SecretManagerSecretConfig) SecretManagerSecret {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewSecretManagerSecret(scope constructs.Construct, id *string, config *Secr
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/secret_manager_secret google_secret_manager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/secret_manager_secret google_secret_manager_secret} Resource.
 func NewSecretManagerSecret_Override(s SecretManagerSecret, scope constructs.Construct, id *string, config *SecretManagerSecretConfig) {
 	_init_.Initialize()
 
@@ -562,7 +562,10 @@ func (j *jsiiProxy_SecretManagerSecret)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecret)SetCount(val *float64) {
+func (j *jsiiProxy_SecretManagerSecret)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -88,6 +88,10 @@ func (j *jsiiProxy_AssuredWorkloadsWorkload) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_AssuredWorkloadsWorkload) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AssuredWorkloadsWorkload) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

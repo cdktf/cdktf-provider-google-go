@@ -2,14 +2,14 @@ package eventarctrigger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/eventarctrigger/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/eventarctrigger/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/eventarc_trigger google_eventarc_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/eventarc_trigger google_eventarc_trigger}.
 type EventarcTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -25,9 +25,9 @@ type EventarcTrigger interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -206,8 +206,8 @@ func (j *jsiiProxy_EventarcTrigger) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_EventarcTrigger) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EventarcTrigger) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -577,7 +577,7 @@ func (j *jsiiProxy_EventarcTrigger) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/eventarc_trigger google_eventarc_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/eventarc_trigger google_eventarc_trigger} Resource.
 func NewEventarcTrigger(scope constructs.Construct, id *string, config *EventarcTriggerConfig) EventarcTrigger {
 	_init_.Initialize()
 
@@ -595,7 +595,7 @@ func NewEventarcTrigger(scope constructs.Construct, id *string, config *Eventarc
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/eventarc_trigger google_eventarc_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/eventarc_trigger google_eventarc_trigger} Resource.
 func NewEventarcTrigger_Override(e EventarcTrigger, scope constructs.Construct, id *string, config *EventarcTriggerConfig) {
 	_init_.Initialize()
 
@@ -628,7 +628,10 @@ func (j *jsiiProxy_EventarcTrigger)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventarcTrigger)SetCount(val *float64) {
+func (j *jsiiProxy_EventarcTrigger)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

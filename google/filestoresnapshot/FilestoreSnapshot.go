@@ -2,14 +2,14 @@ package filestoresnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/filestoresnapshot/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/filestoresnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/filestore_snapshot google_filestore_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/filestore_snapshot google_filestore_snapshot}.
 type FilestoreSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type FilestoreSnapshot interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -163,8 +163,8 @@ func (j *jsiiProxy_FilestoreSnapshot) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_FilestoreSnapshot) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_FilestoreSnapshot) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -484,7 +484,7 @@ func (j *jsiiProxy_FilestoreSnapshot) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/filestore_snapshot google_filestore_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/filestore_snapshot google_filestore_snapshot} Resource.
 func NewFilestoreSnapshot(scope constructs.Construct, id *string, config *FilestoreSnapshotConfig) FilestoreSnapshot {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewFilestoreSnapshot(scope constructs.Construct, id *string, config *Filest
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/filestore_snapshot google_filestore_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/filestore_snapshot google_filestore_snapshot} Resource.
 func NewFilestoreSnapshot_Override(f FilestoreSnapshot, scope constructs.Construct, id *string, config *FilestoreSnapshotConfig) {
 	_init_.Initialize()
 
@@ -524,7 +524,10 @@ func (j *jsiiProxy_FilestoreSnapshot)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FilestoreSnapshot)SetCount(val *float64) {
+func (j *jsiiProxy_FilestoreSnapshot)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

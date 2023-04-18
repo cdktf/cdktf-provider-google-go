@@ -64,6 +64,10 @@ func validateDataGoogleServiceAccountIdToken_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleServiceAccountIdToken) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleServiceAccountIdToken) validateSetDelegatesParameters(val *[]*string) error {
 	return nil
 }

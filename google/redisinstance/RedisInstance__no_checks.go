@@ -100,6 +100,10 @@ func (j *jsiiProxy_RedisInstance) validateSetConnectModeParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_RedisInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisInstance) validateSetCustomerManagedKeyParameters(val *string) error {
 	return nil
 }

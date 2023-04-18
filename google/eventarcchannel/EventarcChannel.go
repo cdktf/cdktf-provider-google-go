@@ -2,14 +2,14 @@ package eventarcchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/eventarcchannel/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/eventarcchannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/eventarc_channel google_eventarc_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/eventarc_channel google_eventarc_channel}.
 type EventarcChannel interface {
 	cdktf.TerraformResource
 	ActivationToken() *string
@@ -22,9 +22,9 @@ type EventarcChannel interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	CryptoKeyName() *string
 	SetCryptoKeyName(val *string)
@@ -173,8 +173,8 @@ func (j *jsiiProxy_EventarcChannel) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_EventarcChannel) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EventarcChannel) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -494,7 +494,7 @@ func (j *jsiiProxy_EventarcChannel) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/eventarc_channel google_eventarc_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/eventarc_channel google_eventarc_channel} Resource.
 func NewEventarcChannel(scope constructs.Construct, id *string, config *EventarcChannelConfig) EventarcChannel {
 	_init_.Initialize()
 
@@ -512,7 +512,7 @@ func NewEventarcChannel(scope constructs.Construct, id *string, config *Eventarc
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/eventarc_channel google_eventarc_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/eventarc_channel google_eventarc_channel} Resource.
 func NewEventarcChannel_Override(e EventarcChannel, scope constructs.Construct, id *string, config *EventarcChannelConfig) {
 	_init_.Initialize()
 
@@ -534,7 +534,10 @@ func (j *jsiiProxy_EventarcChannel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EventarcChannel)SetCount(val *float64) {
+func (j *jsiiProxy_EventarcChannel)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

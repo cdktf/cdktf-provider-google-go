@@ -2,14 +2,14 @@ package datagooglecomputeaddress
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglecomputeaddress/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglecomputeaddress/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/compute_address google_compute_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/compute_address google_compute_address}.
 type DataGoogleComputeAddress interface {
 	cdktf.TerraformDataSource
 	Address() *string
@@ -19,9 +19,9 @@ type DataGoogleComputeAddress interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataGoogleComputeAddress) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeAddress) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleComputeAddress) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -439,7 +439,7 @@ func (j *jsiiProxy_DataGoogleComputeAddress) Users() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/compute_address google_compute_address} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/compute_address google_compute_address} Data Source.
 func NewDataGoogleComputeAddress(scope constructs.Construct, id *string, config *DataGoogleComputeAddressConfig) DataGoogleComputeAddress {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewDataGoogleComputeAddress(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/compute_address google_compute_address} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/compute_address google_compute_address} Data Source.
 func NewDataGoogleComputeAddress_Override(d DataGoogleComputeAddress, scope constructs.Construct, id *string, config *DataGoogleComputeAddressConfig) {
 	_init_.Initialize()
 
@@ -468,7 +468,10 @@ func NewDataGoogleComputeAddress_Override(d DataGoogleComputeAddress, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeAddress)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleComputeAddress)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

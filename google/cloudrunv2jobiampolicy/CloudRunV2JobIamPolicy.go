@@ -2,14 +2,14 @@ package cloudrunv2jobiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/cloudrunv2jobiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/cloudrunv2jobiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/cloud_run_v2_job_iam_policy google_cloud_run_v2_job_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloud_run_v2_job_iam_policy google_cloud_run_v2_job_iam_policy}.
 type CloudRunV2JobIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CloudRunV2JobIamPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -150,8 +150,8 @@ func (j *jsiiProxy_CloudRunV2JobIamPolicy) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2JobIamPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudRunV2JobIamPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_CloudRunV2JobIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/cloud_run_v2_job_iam_policy google_cloud_run_v2_job_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloud_run_v2_job_iam_policy google_cloud_run_v2_job_iam_policy} Resource.
 func NewCloudRunV2JobIamPolicy(scope constructs.Construct, id *string, config *CloudRunV2JobIamPolicyConfig) CloudRunV2JobIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewCloudRunV2JobIamPolicy(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/cloud_run_v2_job_iam_policy google_cloud_run_v2_job_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloud_run_v2_job_iam_policy google_cloud_run_v2_job_iam_policy} Resource.
 func NewCloudRunV2JobIamPolicy_Override(c CloudRunV2JobIamPolicy, scope constructs.Construct, id *string, config *CloudRunV2JobIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_CloudRunV2JobIamPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2JobIamPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_CloudRunV2JobIamPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

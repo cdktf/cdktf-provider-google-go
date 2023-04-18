@@ -2,14 +2,14 @@ package logginglogview
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/logginglogview/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/logginglogview/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/logging_log_view google_logging_log_view}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/logging_log_view google_logging_log_view}.
 type LoggingLogView interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -24,9 +24,9 @@ type LoggingLogView interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -183,8 +183,8 @@ func (j *jsiiProxy_LoggingLogView) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_LoggingLogView) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LoggingLogView) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -474,7 +474,7 @@ func (j *jsiiProxy_LoggingLogView) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/logging_log_view google_logging_log_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/logging_log_view google_logging_log_view} Resource.
 func NewLoggingLogView(scope constructs.Construct, id *string, config *LoggingLogViewConfig) LoggingLogView {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewLoggingLogView(scope constructs.Construct, id *string, config *LoggingLo
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/logging_log_view google_logging_log_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/logging_log_view google_logging_log_view} Resource.
 func NewLoggingLogView_Override(l LoggingLogView, scope constructs.Construct, id *string, config *LoggingLogViewConfig) {
 	_init_.Initialize()
 
@@ -525,7 +525,10 @@ func (j *jsiiProxy_LoggingLogView)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LoggingLogView)SetCount(val *float64) {
+func (j *jsiiProxy_LoggingLogView)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ComputeExternalVpnGateway) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeExternalVpnGateway) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

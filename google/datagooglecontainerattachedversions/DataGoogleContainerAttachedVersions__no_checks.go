@@ -64,6 +64,10 @@ func validateDataGoogleContainerAttachedVersions_IsTerraformElementParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleContainerAttachedVersions) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleContainerAttachedVersions) validateSetIdParameters(val *string) error {
 	return nil
 }

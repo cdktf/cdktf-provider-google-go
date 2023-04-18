@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) validateSetCanonic
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleMonitoringIstioCanonicalService) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_ApigeeEnvKeystore) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_ApigeeEnvKeystore) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigeeEnvKeystore) validateSetEnvIdParameters(val *string) error {
 	return nil
 }

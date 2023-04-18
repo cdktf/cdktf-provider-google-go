@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataFusionInstanceIamBinding) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataFusionInstanceIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFusionInstanceIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

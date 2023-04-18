@@ -2,14 +2,14 @@ package iamworkloadidentitypool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/iamworkloadidentitypool/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/iamworkloadidentitypool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/iam_workload_identity_pool google_iam_workload_identity_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iam_workload_identity_pool google_iam_workload_identity_pool}.
 type IamWorkloadIdentityPool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type IamWorkloadIdentityPool interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_IamWorkloadIdentityPool) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPool) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IamWorkloadIdentityPool) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -451,7 +451,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPool) WorkloadIdentityPoolIdInput() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/iam_workload_identity_pool google_iam_workload_identity_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iam_workload_identity_pool google_iam_workload_identity_pool} Resource.
 func NewIamWorkloadIdentityPool(scope constructs.Construct, id *string, config *IamWorkloadIdentityPoolConfig) IamWorkloadIdentityPool {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewIamWorkloadIdentityPool(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/iam_workload_identity_pool google_iam_workload_identity_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iam_workload_identity_pool google_iam_workload_identity_pool} Resource.
 func NewIamWorkloadIdentityPool_Override(i IamWorkloadIdentityPool, scope constructs.Construct, id *string, config *IamWorkloadIdentityPoolConfig) {
 	_init_.Initialize()
 
@@ -491,7 +491,10 @@ func (j *jsiiProxy_IamWorkloadIdentityPool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPool)SetCount(val *float64) {
+func (j *jsiiProxy_IamWorkloadIdentityPool)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

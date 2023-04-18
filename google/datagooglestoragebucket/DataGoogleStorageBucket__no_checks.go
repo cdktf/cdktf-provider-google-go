@@ -64,6 +64,10 @@ func validateDataGoogleStorageBucket_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleStorageBucket) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleStorageBucket) validateSetIdParameters(val *string) error {
 	return nil
 }

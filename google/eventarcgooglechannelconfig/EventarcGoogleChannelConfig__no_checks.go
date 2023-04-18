@@ -72,6 +72,10 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_EventarcGoogleChannelConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventarcGoogleChannelConfig) validateSetCryptoKeyNameParameters(val *string) error {
 	return nil
 }

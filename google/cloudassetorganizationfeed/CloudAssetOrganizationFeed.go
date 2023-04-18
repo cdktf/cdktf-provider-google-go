@@ -2,14 +2,14 @@ package cloudassetorganizationfeed
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/cloudassetorganizationfeed/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/cloudassetorganizationfeed/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/cloud_asset_organization_feed google_cloud_asset_organization_feed}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloud_asset_organization_feed google_cloud_asset_organization_feed}.
 type CloudAssetOrganizationFeed interface {
 	cdktf.TerraformResource
 	AssetNames() *[]*string
@@ -35,9 +35,9 @@ type CloudAssetOrganizationFeed interface {
 	SetContentType(val *string)
 	ContentTypeInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -268,8 +268,8 @@ func (j *jsiiProxy_CloudAssetOrganizationFeed) ContentTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CloudAssetOrganizationFeed) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudAssetOrganizationFeed) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -509,7 +509,7 @@ func (j *jsiiProxy_CloudAssetOrganizationFeed) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/cloud_asset_organization_feed google_cloud_asset_organization_feed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloud_asset_organization_feed google_cloud_asset_organization_feed} Resource.
 func NewCloudAssetOrganizationFeed(scope constructs.Construct, id *string, config *CloudAssetOrganizationFeedConfig) CloudAssetOrganizationFeed {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewCloudAssetOrganizationFeed(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/cloud_asset_organization_feed google_cloud_asset_organization_feed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloud_asset_organization_feed google_cloud_asset_organization_feed} Resource.
 func NewCloudAssetOrganizationFeed_Override(c CloudAssetOrganizationFeed, scope constructs.Construct, id *string, config *CloudAssetOrganizationFeedConfig) {
 	_init_.Initialize()
 
@@ -593,7 +593,10 @@ func (j *jsiiProxy_CloudAssetOrganizationFeed)SetContentType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudAssetOrganizationFeed)SetCount(val *float64) {
+func (j *jsiiProxy_CloudAssetOrganizationFeed)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

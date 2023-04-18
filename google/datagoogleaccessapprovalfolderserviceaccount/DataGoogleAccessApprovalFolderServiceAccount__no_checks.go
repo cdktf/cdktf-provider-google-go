@@ -64,6 +64,10 @@ func validateDataGoogleAccessApprovalFolderServiceAccount_IsTerraformElementPara
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleAccessApprovalFolderServiceAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleAccessApprovalFolderServiceAccount) validateSetFolderIdParameters(val *string) error {
 	return nil
 }

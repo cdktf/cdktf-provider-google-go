@@ -64,6 +64,10 @@ func validateDataGoogleVpcAccessConnector_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleVpcAccessConnector) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleVpcAccessConnector) validateSetIdParameters(val *string) error {
 	return nil
 }

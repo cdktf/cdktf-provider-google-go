@@ -76,6 +76,10 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytype) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytype) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VertexAiFeaturestoreEntitytype) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

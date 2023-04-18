@@ -2,14 +2,14 @@ package secretmanagersecretiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/secretmanagersecretiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/secretmanagersecretiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding}.
 type SecretManagerSecretIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type SecretManagerSecretIamBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -173,8 +173,8 @@ func (j *jsiiProxy_SecretManagerSecretIamBinding) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerSecretIamBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SecretManagerSecretIamBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_SecretManagerSecretIamBinding) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding} Resource.
 func NewSecretManagerSecretIamBinding(scope constructs.Construct, id *string, config *SecretManagerSecretIamBindingConfig) SecretManagerSecretIamBinding {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewSecretManagerSecretIamBinding(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding} Resource.
 func NewSecretManagerSecretIamBinding_Override(s SecretManagerSecretIamBinding, scope constructs.Construct, id *string, config *SecretManagerSecretIamBindingConfig) {
 	_init_.Initialize()
 
@@ -454,7 +454,10 @@ func (j *jsiiProxy_SecretManagerSecretIamBinding)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretIamBinding)SetCount(val *float64) {
+func (j *jsiiProxy_SecretManagerSecretIamBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

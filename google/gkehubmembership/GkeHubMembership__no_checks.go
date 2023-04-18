@@ -80,6 +80,10 @@ func (j *jsiiProxy_GkeHubMembership) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_GkeHubMembership) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GkeHubMembership) validateSetIdParameters(val *string) error {
 	return nil
 }

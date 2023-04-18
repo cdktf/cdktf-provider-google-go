@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataCatalogTaxonomyIamMember) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataCatalogTaxonomyIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCatalogTaxonomyIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

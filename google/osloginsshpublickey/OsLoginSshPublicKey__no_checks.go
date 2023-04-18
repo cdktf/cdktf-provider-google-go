@@ -72,6 +72,10 @@ func (j *jsiiProxy_OsLoginSshPublicKey) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_OsLoginSshPublicKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OsLoginSshPublicKey) validateSetExpirationTimeUsecParameters(val *string) error {
 	return nil
 }

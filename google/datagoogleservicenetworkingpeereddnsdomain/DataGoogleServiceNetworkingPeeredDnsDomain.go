@@ -2,14 +2,14 @@ package datagoogleservicenetworkingpeereddnsdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagoogleservicenetworkingpeereddnsdomain/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagoogleservicenetworkingpeereddnsdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/service_networking_peered_dns_domain google_service_networking_peered_dns_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/service_networking_peered_dns_domain google_service_networking_peered_dns_domain}.
 type DataGoogleServiceNetworkingPeeredDnsDomain interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGoogleServiceNetworkingPeeredDnsDomain interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) ConstructNodeMeta
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -372,7 +372,7 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) TerraformResource
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/service_networking_peered_dns_domain google_service_networking_peered_dns_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/service_networking_peered_dns_domain google_service_networking_peered_dns_domain} Data Source.
 func NewDataGoogleServiceNetworkingPeeredDnsDomain(scope constructs.Construct, id *string, config *DataGoogleServiceNetworkingPeeredDnsDomainConfig) DataGoogleServiceNetworkingPeeredDnsDomain {
 	_init_.Initialize()
 
@@ -390,7 +390,7 @@ func NewDataGoogleServiceNetworkingPeeredDnsDomain(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/service_networking_peered_dns_domain google_service_networking_peered_dns_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/service_networking_peered_dns_domain google_service_networking_peered_dns_domain} Data Source.
 func NewDataGoogleServiceNetworkingPeeredDnsDomain_Override(d DataGoogleServiceNetworkingPeeredDnsDomain, scope constructs.Construct, id *string, config *DataGoogleServiceNetworkingPeeredDnsDomainConfig) {
 	_init_.Initialize()
 
@@ -401,7 +401,10 @@ func NewDataGoogleServiceNetworkingPeeredDnsDomain_Override(d DataGoogleServiceN
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -64,6 +64,10 @@ func validateDataGoogleMonitoringAppEngineService_IsTerraformElementParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleMonitoringAppEngineService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleMonitoringAppEngineService) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package computepacketmirroring
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/computepacketmirroring/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/computepacketmirroring/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/compute_packet_mirroring google_compute_packet_mirroring}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring}.
 type ComputePacketMirroring interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type ComputePacketMirroring interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -191,8 +191,8 @@ func (j *jsiiProxy_ComputePacketMirroring) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_ComputePacketMirroring) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ComputePacketMirroring) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -522,7 +522,7 @@ func (j *jsiiProxy_ComputePacketMirroring) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_packet_mirroring google_compute_packet_mirroring} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring} Resource.
 func NewComputePacketMirroring(scope constructs.Construct, id *string, config *ComputePacketMirroringConfig) ComputePacketMirroring {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewComputePacketMirroring(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_packet_mirroring google_compute_packet_mirroring} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring} Resource.
 func NewComputePacketMirroring_Override(c ComputePacketMirroring, scope constructs.Construct, id *string, config *ComputePacketMirroringConfig) {
 	_init_.Initialize()
 
@@ -562,7 +562,10 @@ func (j *jsiiProxy_ComputePacketMirroring)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputePacketMirroring)SetCount(val *float64) {
+func (j *jsiiProxy_ComputePacketMirroring)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

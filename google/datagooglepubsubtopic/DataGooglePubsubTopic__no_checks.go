@@ -64,6 +64,10 @@ func validateDataGooglePubsubTopic_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataGooglePubsubTopic) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGooglePubsubTopic) validateSetIdParameters(val *string) error {
 	return nil
 }

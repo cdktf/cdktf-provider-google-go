@@ -72,6 +72,10 @@ func (j *jsiiProxy_PubsubTopicIamMember) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_PubsubTopicIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PubsubTopicIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

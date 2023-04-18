@@ -6,7 +6,7 @@ type ArtifactRegistryRepositoryDockerConfig struct {
 	//
 	// This does not prevent tags from being created.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/artifact_registry_repository#immutable_tags ArtifactRegistryRepository#immutable_tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/artifact_registry_repository#immutable_tags ArtifactRegistryRepository#immutable_tags}
 	ImmutableTags interface{} `field:"optional" json:"immutableTags" yaml:"immutableTags"`
 }
 

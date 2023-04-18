@@ -64,6 +64,10 @@ func validateDataGoogleArtifactRegistryRepository_IsTerraformElementParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) validateSetIdParameters(val *string) error {
 	return nil
 }

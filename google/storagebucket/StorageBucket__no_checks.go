@@ -108,6 +108,10 @@ func (j *jsiiProxy_StorageBucket) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_StorageBucket) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBucket) validateSetDefaultEventBasedHoldParameters(val interface{}) error {
 	return nil
 }

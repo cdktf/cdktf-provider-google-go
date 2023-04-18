@@ -2,14 +2,14 @@ package healthcareconsentstoreiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/healthcareconsentstoreiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/healthcareconsentstoreiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding}.
 type HealthcareConsentStoreIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -26,9 +26,9 @@ type HealthcareConsentStoreIamBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Dataset() *string
 	SetDataset(val *string)
 	DatasetInput() *string
@@ -192,8 +192,8 @@ func (j *jsiiProxy_HealthcareConsentStoreIamBinding) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareConsentStoreIamBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_HealthcareConsentStoreIamBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -413,7 +413,7 @@ func (j *jsiiProxy_HealthcareConsentStoreIamBinding) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding} Resource.
 func NewHealthcareConsentStoreIamBinding(scope constructs.Construct, id *string, config *HealthcareConsentStoreIamBindingConfig) HealthcareConsentStoreIamBinding {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewHealthcareConsentStoreIamBinding(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/healthcare_consent_store_iam_binding google_healthcare_consent_store_iam_binding} Resource.
 func NewHealthcareConsentStoreIamBinding_Override(h HealthcareConsentStoreIamBinding, scope constructs.Construct, id *string, config *HealthcareConsentStoreIamBindingConfig) {
 	_init_.Initialize()
 
@@ -464,7 +464,10 @@ func (j *jsiiProxy_HealthcareConsentStoreIamBinding)SetConsentStoreId(val *strin
 	)
 }
 
-func (j *jsiiProxy_HealthcareConsentStoreIamBinding)SetCount(val *float64) {
+func (j *jsiiProxy_HealthcareConsentStoreIamBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

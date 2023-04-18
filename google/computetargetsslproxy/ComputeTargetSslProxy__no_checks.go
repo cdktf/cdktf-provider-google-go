@@ -80,6 +80,10 @@ func (j *jsiiProxy_ComputeTargetSslProxy) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ComputeTargetSslProxy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeTargetSslProxy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

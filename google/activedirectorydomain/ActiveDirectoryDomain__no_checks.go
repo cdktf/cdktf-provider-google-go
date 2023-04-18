@@ -80,6 +80,10 @@ func (j *jsiiProxy_ActiveDirectoryDomain) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ActiveDirectoryDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ActiveDirectoryDomain) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package accesscontextmanagerserviceperimeterresource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/accesscontextmanagerserviceperimeterresource/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/accesscontextmanagerserviceperimeterresource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource}.
 type AccessContextManagerServicePerimeterResource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type AccessContextManagerServicePerimeterResource interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterResource) ConstructNodeMe
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterResource) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AccessContextManagerServicePerimeterResource) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterResource) TimeoutsInput()
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource} Resource.
 func NewAccessContextManagerServicePerimeterResource(scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterResourceConfig) AccessContextManagerServicePerimeterResource {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewAccessContextManagerServicePerimeterResource(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource} Resource.
 func NewAccessContextManagerServicePerimeterResource_Override(a AccessContextManagerServicePerimeterResource, scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterResourceConfig) {
 	_init_.Initialize()
 
@@ -396,7 +396,10 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterResource)SetConnection(va
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterResource)SetCount(val *float64) {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterResource)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

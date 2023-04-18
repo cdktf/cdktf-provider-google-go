@@ -2,14 +2,14 @@ package kmskeyringiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/kmskeyringiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/kmskeyringiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/kms_key_ring_iam_member google_kms_key_ring_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/kms_key_ring_iam_member google_kms_key_ring_iam_member}.
 type KmsKeyRingIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type KmsKeyRingIamMember interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_KmsKeyRingIamMember) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_KmsKeyRingIamMember) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_KmsKeyRingIamMember) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_KmsKeyRingIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/kms_key_ring_iam_member google_kms_key_ring_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/kms_key_ring_iam_member google_kms_key_ring_iam_member} Resource.
 func NewKmsKeyRingIamMember(scope constructs.Construct, id *string, config *KmsKeyRingIamMemberConfig) KmsKeyRingIamMember {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewKmsKeyRingIamMember(scope constructs.Construct, id *string, config *KmsK
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/kms_key_ring_iam_member google_kms_key_ring_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/kms_key_ring_iam_member google_kms_key_ring_iam_member} Resource.
 func NewKmsKeyRingIamMember_Override(k KmsKeyRingIamMember, scope constructs.Construct, id *string, config *KmsKeyRingIamMemberConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_KmsKeyRingIamMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRingIamMember)SetCount(val *float64) {
+func (j *jsiiProxy_KmsKeyRingIamMember)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

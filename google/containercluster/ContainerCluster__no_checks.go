@@ -188,6 +188,10 @@ func (j *jsiiProxy_ContainerCluster) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_ContainerCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerCluster) validateSetDatapathProviderParameters(val *string) error {
 	return nil
 }

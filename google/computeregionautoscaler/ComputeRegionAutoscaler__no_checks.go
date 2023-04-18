@@ -76,6 +76,10 @@ func (j *jsiiProxy_ComputeRegionAutoscaler) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionAutoscaler) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionAutoscaler) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

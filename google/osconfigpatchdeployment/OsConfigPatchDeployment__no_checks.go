@@ -92,6 +92,10 @@ func (j *jsiiProxy_OsConfigPatchDeployment) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_OsConfigPatchDeployment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OsConfigPatchDeployment) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

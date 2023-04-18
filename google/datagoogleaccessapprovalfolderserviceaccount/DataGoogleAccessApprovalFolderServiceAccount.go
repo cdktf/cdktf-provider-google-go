@@ -2,14 +2,14 @@ package datagoogleaccessapprovalfolderserviceaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagoogleaccessapprovalfolderserviceaccount/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagoogleaccessapprovalfolderserviceaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/access_approval_folder_service_account google_access_approval_folder_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/access_approval_folder_service_account google_access_approval_folder_service_account}.
 type DataGoogleAccessApprovalFolderServiceAccount interface {
 	cdktf.TerraformDataSource
 	AccountEmail() *string
@@ -18,9 +18,9 @@ type DataGoogleAccessApprovalFolderServiceAccount interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataGoogleAccessApprovalFolderServiceAccount) ConstructNodeMe
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAccessApprovalFolderServiceAccount) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleAccessApprovalFolderServiceAccount) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataGoogleAccessApprovalFolderServiceAccount) TerraformResour
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/access_approval_folder_service_account google_access_approval_folder_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/access_approval_folder_service_account google_access_approval_folder_service_account} Data Source.
 func NewDataGoogleAccessApprovalFolderServiceAccount(scope constructs.Construct, id *string, config *DataGoogleAccessApprovalFolderServiceAccountConfig) DataGoogleAccessApprovalFolderServiceAccount {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataGoogleAccessApprovalFolderServiceAccount(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/access_approval_folder_service_account google_access_approval_folder_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/access_approval_folder_service_account google_access_approval_folder_service_account} Data Source.
 func NewDataGoogleAccessApprovalFolderServiceAccount_Override(d DataGoogleAccessApprovalFolderServiceAccount, scope constructs.Construct, id *string, config *DataGoogleAccessApprovalFolderServiceAccountConfig) {
 	_init_.Initialize()
 
@@ -332,7 +332,10 @@ func NewDataGoogleAccessApprovalFolderServiceAccount_Override(d DataGoogleAccess
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAccessApprovalFolderServiceAccount)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleAccessApprovalFolderServiceAccount)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

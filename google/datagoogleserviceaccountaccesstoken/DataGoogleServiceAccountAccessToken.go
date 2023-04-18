@@ -2,14 +2,14 @@ package datagoogleserviceaccountaccesstoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagoogleserviceaccountaccesstoken/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagoogleserviceaccountaccesstoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/service_account_access_token google_service_account_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/service_account_access_token google_service_account_access_token}.
 type DataGoogleServiceAccountAccessToken interface {
 	cdktf.TerraformDataSource
 	AccessToken() *string
@@ -18,9 +18,9 @@ type DataGoogleServiceAccountAccessToken interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Delegates() *[]*string
 	SetDelegates(val *[]*string)
 	DelegatesInput() *[]*string
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataGoogleServiceAccountAccessToken) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountAccessToken) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleServiceAccountAccessToken) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -363,7 +363,7 @@ func (j *jsiiProxy_DataGoogleServiceAccountAccessToken) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/service_account_access_token google_service_account_access_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/service_account_access_token google_service_account_access_token} Data Source.
 func NewDataGoogleServiceAccountAccessToken(scope constructs.Construct, id *string, config *DataGoogleServiceAccountAccessTokenConfig) DataGoogleServiceAccountAccessToken {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewDataGoogleServiceAccountAccessToken(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/service_account_access_token google_service_account_access_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/service_account_access_token google_service_account_access_token} Data Source.
 func NewDataGoogleServiceAccountAccessToken_Override(d DataGoogleServiceAccountAccessToken, scope constructs.Construct, id *string, config *DataGoogleServiceAccountAccessTokenConfig) {
 	_init_.Initialize()
 
@@ -392,7 +392,10 @@ func NewDataGoogleServiceAccountAccessToken_Override(d DataGoogleServiceAccountA
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountAccessToken)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleServiceAccountAccessToken)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_FirestoreIndex) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_FirestoreIndex) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FirestoreIndex) validateSetDatabaseParameters(val *string) error {
 	return nil
 }

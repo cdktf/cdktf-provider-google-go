@@ -2,14 +2,14 @@ package identityplatformoauthidpconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/identityplatformoauthidpconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/identityplatformoauthidpconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config}.
 type IdentityPlatformOauthIdpConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,9 +27,9 @@ type IdentityPlatformOauthIdpConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -204,8 +204,8 @@ func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -475,7 +475,7 @@ func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
 func NewIdentityPlatformOauthIdpConfig(scope constructs.Construct, id *string, config *IdentityPlatformOauthIdpConfigConfig) IdentityPlatformOauthIdpConfig {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewIdentityPlatformOauthIdpConfig(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
 func NewIdentityPlatformOauthIdpConfig_Override(i IdentityPlatformOauthIdpConfig, scope constructs.Construct, id *string, config *IdentityPlatformOauthIdpConfigConfig) {
 	_init_.Initialize()
 
@@ -537,7 +537,10 @@ func (j *jsiiProxy_IdentityPlatformOauthIdpConfig)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformOauthIdpConfig)SetCount(val *float64) {
+func (j *jsiiProxy_IdentityPlatformOauthIdpConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package projectservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/projectservice/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/projectservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/project_service google_project_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/project_service google_project_service}.
 type ProjectService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ProjectService interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_ProjectService) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_ProjectService) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ProjectService) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -405,7 +405,7 @@ func (j *jsiiProxy_ProjectService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/project_service google_project_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/project_service google_project_service} Resource.
 func NewProjectService(scope constructs.Construct, id *string, config *ProjectServiceConfig) ProjectService {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewProjectService(scope constructs.Construct, id *string, config *ProjectSe
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/project_service google_project_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/project_service google_project_service} Resource.
 func NewProjectService_Override(p ProjectService, scope constructs.Construct, id *string, config *ProjectServiceConfig) {
 	_init_.Initialize()
 
@@ -445,7 +445,10 @@ func (j *jsiiProxy_ProjectService)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectService)SetCount(val *float64) {
+func (j *jsiiProxy_ProjectService)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

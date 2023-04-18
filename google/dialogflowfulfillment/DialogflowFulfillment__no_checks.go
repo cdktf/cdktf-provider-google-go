@@ -80,6 +80,10 @@ func (j *jsiiProxy_DialogflowFulfillment) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_DialogflowFulfillment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowFulfillment) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

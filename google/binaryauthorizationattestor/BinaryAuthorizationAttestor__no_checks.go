@@ -76,6 +76,10 @@ func (j *jsiiProxy_BinaryAuthorizationAttestor) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_BinaryAuthorizationAttestor) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BinaryAuthorizationAttestor) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

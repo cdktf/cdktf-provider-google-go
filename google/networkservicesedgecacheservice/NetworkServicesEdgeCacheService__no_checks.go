@@ -80,6 +80,10 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheService) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_NetworkServicesEdgeCacheService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkServicesEdgeCacheService) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

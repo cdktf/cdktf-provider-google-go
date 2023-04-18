@@ -2,14 +2,14 @@ package datagooglecomputezones
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglecomputezones/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglecomputezones/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/compute_zones google_compute_zones}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/compute_zones google_compute_zones}.
 type DataGoogleComputeZones interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGoogleComputeZones interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataGoogleComputeZones) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeZones) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleComputeZones) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataGoogleComputeZones) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/compute_zones google_compute_zones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/compute_zones google_compute_zones} Data Source.
 func NewDataGoogleComputeZones(scope constructs.Construct, id *string, config *DataGoogleComputeZonesConfig) DataGoogleComputeZones {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataGoogleComputeZones(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/compute_zones google_compute_zones} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/compute_zones google_compute_zones} Data Source.
 func NewDataGoogleComputeZones_Override(d DataGoogleComputeZones, scope constructs.Construct, id *string, config *DataGoogleComputeZonesConfig) {
 	_init_.Initialize()
 
@@ -370,7 +370,10 @@ func NewDataGoogleComputeZones_Override(d DataGoogleComputeZones, scope construc
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeZones)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleComputeZones)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

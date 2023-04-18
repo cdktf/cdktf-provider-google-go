@@ -76,6 +76,10 @@ func (j *jsiiProxy_VertexAiEndpoint) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_VertexAiEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VertexAiEndpoint) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

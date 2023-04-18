@@ -2,14 +2,14 @@ package organizationiamauditconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/organizationiamauditconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/organizationiamauditconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/organization_iam_audit_config google_organization_iam_audit_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/organization_iam_audit_config google_organization_iam_audit_config}.
 type OrganizationIamAuditConfig interface {
 	cdktf.TerraformResource
 	AuditLogConfig() OrganizationIamAuditConfigAuditLogConfigList
@@ -23,9 +23,9 @@ type OrganizationIamAuditConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_OrganizationIamAuditConfig) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OrganizationIamAuditConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -366,7 +366,7 @@ func (j *jsiiProxy_OrganizationIamAuditConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/organization_iam_audit_config google_organization_iam_audit_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/organization_iam_audit_config google_organization_iam_audit_config} Resource.
 func NewOrganizationIamAuditConfig(scope constructs.Construct, id *string, config *OrganizationIamAuditConfigConfig) OrganizationIamAuditConfig {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewOrganizationIamAuditConfig(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/organization_iam_audit_config google_organization_iam_audit_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/organization_iam_audit_config google_organization_iam_audit_config} Resource.
 func NewOrganizationIamAuditConfig_Override(o OrganizationIamAuditConfig, scope constructs.Construct, id *string, config *OrganizationIamAuditConfigConfig) {
 	_init_.Initialize()
 
@@ -406,7 +406,10 @@ func (j *jsiiProxy_OrganizationIamAuditConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationIamAuditConfig)SetCount(val *float64) {
+func (j *jsiiProxy_OrganizationIamAuditConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_SpannerInstanceIamPolicy) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_SpannerInstanceIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpannerInstanceIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -84,6 +84,10 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFile) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigeeKeystoresAliasesKeyCertFile) validateSetEnvironmentParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package datagooglevpcaccessconnector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglevpcaccessconnector/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglevpcaccessconnector/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/vpc_access_connector google_vpc_access_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/vpc_access_connector google_vpc_access_connector}.
 type DataGoogleVpcAccessConnector interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGoogleVpcAccessConnector interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataGoogleVpcAccessConnector) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVpcAccessConnector) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleVpcAccessConnector) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -439,7 +439,7 @@ func (j *jsiiProxy_DataGoogleVpcAccessConnector) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/vpc_access_connector google_vpc_access_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/vpc_access_connector google_vpc_access_connector} Data Source.
 func NewDataGoogleVpcAccessConnector(scope constructs.Construct, id *string, config *DataGoogleVpcAccessConnectorConfig) DataGoogleVpcAccessConnector {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewDataGoogleVpcAccessConnector(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/vpc_access_connector google_vpc_access_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/vpc_access_connector google_vpc_access_connector} Data Source.
 func NewDataGoogleVpcAccessConnector_Override(d DataGoogleVpcAccessConnector, scope constructs.Construct, id *string, config *DataGoogleVpcAccessConnectorConfig) {
 	_init_.Initialize()
 
@@ -468,7 +468,10 @@ func NewDataGoogleVpcAccessConnector_Override(d DataGoogleVpcAccessConnector, sc
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVpcAccessConnector)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleVpcAccessConnector)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

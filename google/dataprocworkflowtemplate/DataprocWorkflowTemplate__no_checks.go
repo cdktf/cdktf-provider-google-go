@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataprocWorkflowTemplate) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataprocWorkflowTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocWorkflowTemplate) validateSetDagTimeoutParameters(val *string) error {
 	return nil
 }

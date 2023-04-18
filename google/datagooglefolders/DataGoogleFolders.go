@@ -2,14 +2,14 @@ package datagooglefolders
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglefolders/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglefolders/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/folders google_folders}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/folders google_folders}.
 type DataGoogleFolders interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGoogleFolders interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataGoogleFolders) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleFolders) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleFolders) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataGoogleFolders) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/folders google_folders} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/folders google_folders} Data Source.
 func NewDataGoogleFolders(scope constructs.Construct, id *string, config *DataGoogleFoldersConfig) DataGoogleFolders {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataGoogleFolders(scope constructs.Construct, id *string, config *DataGo
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/folders google_folders} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/folders google_folders} Data Source.
 func NewDataGoogleFolders_Override(d DataGoogleFolders, scope constructs.Construct, id *string, config *DataGoogleFoldersConfig) {
 	_init_.Initialize()
 
@@ -321,7 +321,10 @@ func NewDataGoogleFolders_Override(d DataGoogleFolders, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_DataGoogleFolders)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleFolders)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

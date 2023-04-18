@@ -2,14 +2,14 @@ package computeimageiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/computeimageiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/computeimageiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/compute_image_iam_member google_compute_image_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_image_iam_member google_compute_image_iam_member}.
 type ComputeImageIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type ComputeImageIamMember interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -173,8 +173,8 @@ func (j *jsiiProxy_ComputeImageIamMember) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_ComputeImageIamMember) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ComputeImageIamMember) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_ComputeImageIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_image_iam_member google_compute_image_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_image_iam_member google_compute_image_iam_member} Resource.
 func NewComputeImageIamMember(scope constructs.Construct, id *string, config *ComputeImageIamMemberConfig) ComputeImageIamMember {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewComputeImageIamMember(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_image_iam_member google_compute_image_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_image_iam_member google_compute_image_iam_member} Resource.
 func NewComputeImageIamMember_Override(c ComputeImageIamMember, scope constructs.Construct, id *string, config *ComputeImageIamMemberConfig) {
 	_init_.Initialize()
 
@@ -454,7 +454,10 @@ func (j *jsiiProxy_ComputeImageIamMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeImageIamMember)SetCount(val *float64) {
+func (j *jsiiProxy_ComputeImageIamMember)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

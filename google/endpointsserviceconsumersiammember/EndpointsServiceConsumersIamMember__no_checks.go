@@ -76,6 +76,10 @@ func (j *jsiiProxy_EndpointsServiceConsumersIamMember) validateSetConsumerProjec
 	return nil
 }
 
+func (j *jsiiProxy_EndpointsServiceConsumersIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EndpointsServiceConsumersIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

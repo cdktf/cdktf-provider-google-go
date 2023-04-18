@@ -100,6 +100,10 @@ func (j *jsiiProxy_ContainerNodePool) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNodePool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePool) validateSetIdParameters(val *string) error {
 	return nil
 }

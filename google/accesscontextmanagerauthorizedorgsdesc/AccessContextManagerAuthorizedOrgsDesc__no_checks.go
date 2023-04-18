@@ -84,6 +84,10 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) validateSetIdParameters(val *string) error {
 	return nil
 }

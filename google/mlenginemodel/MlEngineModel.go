@@ -2,14 +2,14 @@ package mlenginemodel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/mlenginemodel/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/mlenginemodel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/ml_engine_model google_ml_engine_model}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/ml_engine_model google_ml_engine_model}.
 type MlEngineModel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MlEngineModel interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultVersion() MlEngineModelDefaultVersionOutputReference
 	DefaultVersionInput() *MlEngineModelDefaultVersion
 	// Experimental.
@@ -170,8 +170,8 @@ func (j *jsiiProxy_MlEngineModel) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_MlEngineModel) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MlEngineModel) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -501,7 +501,7 @@ func (j *jsiiProxy_MlEngineModel) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/ml_engine_model google_ml_engine_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/ml_engine_model google_ml_engine_model} Resource.
 func NewMlEngineModel(scope constructs.Construct, id *string, config *MlEngineModelConfig) MlEngineModel {
 	_init_.Initialize()
 
@@ -519,7 +519,7 @@ func NewMlEngineModel(scope constructs.Construct, id *string, config *MlEngineMo
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/ml_engine_model google_ml_engine_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/ml_engine_model google_ml_engine_model} Resource.
 func NewMlEngineModel_Override(m MlEngineModel, scope constructs.Construct, id *string, config *MlEngineModelConfig) {
 	_init_.Initialize()
 
@@ -541,7 +541,10 @@ func (j *jsiiProxy_MlEngineModel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MlEngineModel)SetCount(val *float64) {
+func (j *jsiiProxy_MlEngineModel)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

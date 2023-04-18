@@ -2,14 +2,14 @@ package billingbudget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/billingbudget/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/billingbudget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/billing_budget google_billing_budget}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/billing_budget google_billing_budget}.
 type BillingBudget interface {
 	cdktf.TerraformResource
 	AllUpdatesRule() BillingBudgetAllUpdatesRuleOutputReference
@@ -30,9 +30,9 @@ type BillingBudget interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -242,8 +242,8 @@ func (j *jsiiProxy_BillingBudget) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_BillingBudget) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_BillingBudget) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -463,7 +463,7 @@ func (j *jsiiProxy_BillingBudget) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/billing_budget google_billing_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/billing_budget google_billing_budget} Resource.
 func NewBillingBudget(scope constructs.Construct, id *string, config *BillingBudgetConfig) BillingBudget {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewBillingBudget(scope constructs.Construct, id *string, config *BillingBud
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/billing_budget google_billing_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/billing_budget google_billing_budget} Resource.
 func NewBillingBudget_Override(b BillingBudget, scope constructs.Construct, id *string, config *BillingBudgetConfig) {
 	_init_.Initialize()
 
@@ -514,7 +514,10 @@ func (j *jsiiProxy_BillingBudget)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BillingBudget)SetCount(val *float64) {
+func (j *jsiiProxy_BillingBudget)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

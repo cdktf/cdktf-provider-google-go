@@ -2,14 +2,14 @@ package certificatemanagercertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/certificatemanagercertificate/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/certificatemanagercertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/certificate_manager_certificate google_certificate_manager_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/certificate_manager_certificate google_certificate_manager_certificate}.
 type CertificateManagerCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CertificateManagerCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -166,8 +166,8 @@ func (j *jsiiProxy_CertificateManagerCertificate) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_CertificateManagerCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CertificateManagerCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -477,7 +477,7 @@ func (j *jsiiProxy_CertificateManagerCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/certificate_manager_certificate google_certificate_manager_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/certificate_manager_certificate google_certificate_manager_certificate} Resource.
 func NewCertificateManagerCertificate(scope constructs.Construct, id *string, config *CertificateManagerCertificateConfig) CertificateManagerCertificate {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewCertificateManagerCertificate(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/certificate_manager_certificate google_certificate_manager_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/certificate_manager_certificate google_certificate_manager_certificate} Resource.
 func NewCertificateManagerCertificate_Override(c CertificateManagerCertificate, scope constructs.Construct, id *string, config *CertificateManagerCertificateConfig) {
 	_init_.Initialize()
 
@@ -517,7 +517,10 @@ func (j *jsiiProxy_CertificateManagerCertificate)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_CertificateManagerCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_CertificateManagerCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

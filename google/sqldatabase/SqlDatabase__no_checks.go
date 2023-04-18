@@ -80,6 +80,10 @@ func (j *jsiiProxy_SqlDatabase) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabase) validateSetDeletionPolicyParameters(val *string) error {
 	return nil
 }

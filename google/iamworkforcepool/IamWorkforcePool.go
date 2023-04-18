@@ -2,14 +2,14 @@ package iamworkforcepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/iamworkforcepool/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/iamworkforcepool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/iam_workforce_pool google_iam_workforce_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iam_workforce_pool google_iam_workforce_pool}.
 type IamWorkforcePool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type IamWorkforcePool interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -166,8 +166,8 @@ func (j *jsiiProxy_IamWorkforcePool) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkforcePool) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IamWorkforcePool) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -497,7 +497,7 @@ func (j *jsiiProxy_IamWorkforcePool) WorkforcePoolIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/iam_workforce_pool google_iam_workforce_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iam_workforce_pool google_iam_workforce_pool} Resource.
 func NewIamWorkforcePool(scope constructs.Construct, id *string, config *IamWorkforcePoolConfig) IamWorkforcePool {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewIamWorkforcePool(scope constructs.Construct, id *string, config *IamWork
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/iam_workforce_pool google_iam_workforce_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iam_workforce_pool google_iam_workforce_pool} Resource.
 func NewIamWorkforcePool_Override(i IamWorkforcePool, scope constructs.Construct, id *string, config *IamWorkforcePoolConfig) {
 	_init_.Initialize()
 
@@ -537,7 +537,10 @@ func (j *jsiiProxy_IamWorkforcePool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamWorkforcePool)SetCount(val *float64) {
+func (j *jsiiProxy_IamWorkforcePool)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

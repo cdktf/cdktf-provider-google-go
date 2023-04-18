@@ -68,6 +68,10 @@ func (j *jsiiProxy_KmsCryptoKeyIamPolicy) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_KmsCryptoKeyIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsCryptoKeyIamPolicy) validateSetCryptoKeyIdParameters(val *string) error {
 	return nil
 }

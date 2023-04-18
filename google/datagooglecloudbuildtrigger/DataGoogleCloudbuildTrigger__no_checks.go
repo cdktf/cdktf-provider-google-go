@@ -64,6 +64,10 @@ func validateDataGoogleCloudbuildTrigger_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleCloudbuildTrigger) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleCloudbuildTrigger) validateSetIdParameters(val *string) error {
 	return nil
 }

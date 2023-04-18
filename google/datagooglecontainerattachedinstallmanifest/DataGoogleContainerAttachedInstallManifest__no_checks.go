@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGoogleContainerAttachedInstallManifest) validateSetCluste
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleContainerAttachedInstallManifest) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleContainerAttachedInstallManifest) validateSetIdParameters(val *string) error {
 	return nil
 }

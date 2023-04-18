@@ -72,6 +72,10 @@ func (j *jsiiProxy_StorageDefaultObjectAcl) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_StorageDefaultObjectAcl) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageDefaultObjectAcl) validateSetIdParameters(val *string) error {
 	return nil
 }

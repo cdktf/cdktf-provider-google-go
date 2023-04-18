@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGoogleSqlBackupRun) validateSetBackupIdParameters(val *fl
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleSqlBackupRun) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleSqlBackupRun) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package cloudiotdevice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/cloudiotdevice/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/cloudiotdevice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/cloudiot_device google_cloudiot_device}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloudiot_device google_cloudiot_device}.
 type CloudiotDevice interface {
 	cdktf.TerraformResource
 	Blocked() interface{}
@@ -25,9 +25,9 @@ type CloudiotDevice interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Credentials() CloudiotDeviceCredentialsList
 	CredentialsInput() interface{}
 	// Experimental.
@@ -205,8 +205,8 @@ func (j *jsiiProxy_CloudiotDevice) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_CloudiotDevice) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudiotDevice) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -586,7 +586,7 @@ func (j *jsiiProxy_CloudiotDevice) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/cloudiot_device google_cloudiot_device} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloudiot_device google_cloudiot_device} Resource.
 func NewCloudiotDevice(scope constructs.Construct, id *string, config *CloudiotDeviceConfig) CloudiotDevice {
 	_init_.Initialize()
 
@@ -604,7 +604,7 @@ func NewCloudiotDevice(scope constructs.Construct, id *string, config *CloudiotD
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/cloudiot_device google_cloudiot_device} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloudiot_device google_cloudiot_device} Resource.
 func NewCloudiotDevice_Override(c CloudiotDevice, scope constructs.Construct, id *string, config *CloudiotDeviceConfig) {
 	_init_.Initialize()
 
@@ -637,7 +637,10 @@ func (j *jsiiProxy_CloudiotDevice)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudiotDevice)SetCount(val *float64) {
+func (j *jsiiProxy_CloudiotDevice)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

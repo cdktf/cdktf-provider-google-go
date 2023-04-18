@@ -72,6 +72,10 @@ func (j *jsiiProxy_ComputeRegionDiskIamMember) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionDiskIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionDiskIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

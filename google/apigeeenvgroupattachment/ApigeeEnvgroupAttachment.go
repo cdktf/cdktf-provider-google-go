@@ -2,14 +2,14 @@ package apigeeenvgroupattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/apigeeenvgroupattachment/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/apigeeenvgroupattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/apigee_envgroup_attachment google_apigee_envgroup_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/apigee_envgroup_attachment google_apigee_envgroup_attachment}.
 type ApigeeEnvgroupAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ApigeeEnvgroupAttachment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_ApigeeEnvgroupAttachment) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeEnvgroupAttachment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApigeeEnvgroupAttachment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -367,7 +367,7 @@ func (j *jsiiProxy_ApigeeEnvgroupAttachment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/apigee_envgroup_attachment google_apigee_envgroup_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/apigee_envgroup_attachment google_apigee_envgroup_attachment} Resource.
 func NewApigeeEnvgroupAttachment(scope constructs.Construct, id *string, config *ApigeeEnvgroupAttachmentConfig) ApigeeEnvgroupAttachment {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewApigeeEnvgroupAttachment(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/apigee_envgroup_attachment google_apigee_envgroup_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/apigee_envgroup_attachment google_apigee_envgroup_attachment} Resource.
 func NewApigeeEnvgroupAttachment_Override(a ApigeeEnvgroupAttachment, scope constructs.Construct, id *string, config *ApigeeEnvgroupAttachmentConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_ApigeeEnvgroupAttachment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvgroupAttachment)SetCount(val *float64) {
+func (j *jsiiProxy_ApigeeEnvgroupAttachment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package vertexaitensorboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/vertexaitensorboard/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/vertexaitensorboard/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/vertex_ai_tensorboard google_vertex_ai_tensorboard}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/vertex_ai_tensorboard google_vertex_ai_tensorboard}.
 type VertexAiTensorboard interface {
 	cdktf.TerraformResource
 	BlobStoragePathPrefix() *string
@@ -22,9 +22,9 @@ type VertexAiTensorboard interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -177,8 +177,8 @@ func (j *jsiiProxy_VertexAiTensorboard) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiTensorboard) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VertexAiTensorboard) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -508,7 +508,7 @@ func (j *jsiiProxy_VertexAiTensorboard) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/vertex_ai_tensorboard google_vertex_ai_tensorboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/vertex_ai_tensorboard google_vertex_ai_tensorboard} Resource.
 func NewVertexAiTensorboard(scope constructs.Construct, id *string, config *VertexAiTensorboardConfig) VertexAiTensorboard {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewVertexAiTensorboard(scope constructs.Construct, id *string, config *Vert
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/vertex_ai_tensorboard google_vertex_ai_tensorboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/vertex_ai_tensorboard google_vertex_ai_tensorboard} Resource.
 func NewVertexAiTensorboard_Override(v VertexAiTensorboard, scope constructs.Construct, id *string, config *VertexAiTensorboardConfig) {
 	_init_.Initialize()
 
@@ -548,7 +548,10 @@ func (j *jsiiProxy_VertexAiTensorboard)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiTensorboard)SetCount(val *float64) {
+func (j *jsiiProxy_VertexAiTensorboard)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

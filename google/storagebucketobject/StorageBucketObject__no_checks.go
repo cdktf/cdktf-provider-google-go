@@ -104,6 +104,10 @@ func (j *jsiiProxy_StorageBucketObject) validateSetContentTypeParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_StorageBucketObject) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBucketObject) validateSetDetectMd5HashParameters(val *string) error {
 	return nil
 }

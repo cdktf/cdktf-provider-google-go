@@ -64,6 +64,10 @@ func validateDataGoogleClientOpenidUserinfo_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleClientOpenidUserinfo) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

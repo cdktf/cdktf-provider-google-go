@@ -2,14 +2,14 @@ package computeglobaladdress
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/computeglobaladdress/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/computeglobaladdress/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/compute_global_address google_compute_global_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_global_address google_compute_global_address}.
 type ComputeGlobalAddress interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -27,9 +27,9 @@ type ComputeGlobalAddress interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -216,8 +216,8 @@ func (j *jsiiProxy_ComputeGlobalAddress) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ComputeGlobalAddress) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -547,7 +547,7 @@ func (j *jsiiProxy_ComputeGlobalAddress) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_global_address google_compute_global_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_global_address google_compute_global_address} Resource.
 func NewComputeGlobalAddress(scope constructs.Construct, id *string, config *ComputeGlobalAddressConfig) ComputeGlobalAddress {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewComputeGlobalAddress(scope constructs.Construct, id *string, config *Com
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_global_address google_compute_global_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_global_address google_compute_global_address} Resource.
 func NewComputeGlobalAddress_Override(c ComputeGlobalAddress, scope constructs.Construct, id *string, config *ComputeGlobalAddressConfig) {
 	_init_.Initialize()
 
@@ -609,7 +609,10 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeGlobalAddress)SetCount(val *float64) {
+func (j *jsiiProxy_ComputeGlobalAddress)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

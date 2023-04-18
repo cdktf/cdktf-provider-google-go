@@ -2,14 +2,14 @@ package endpointsserviceconsumersiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/endpointsserviceconsumersiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/endpointsserviceconsumersiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/endpoints_service_consumers_iam_member google_endpoints_service_consumers_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/endpoints_service_consumers_iam_member google_endpoints_service_consumers_iam_member}.
 type EndpointsServiceConsumersIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -26,9 +26,9 @@ type EndpointsServiceConsumersIamMember interface {
 	SetConsumerProject(val *string)
 	ConsumerProjectInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -192,8 +192,8 @@ func (j *jsiiProxy_EndpointsServiceConsumersIamMember) ConsumerProjectInput() *s
 	return returns
 }
 
-func (j *jsiiProxy_EndpointsServiceConsumersIamMember) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EndpointsServiceConsumersIamMember) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -413,7 +413,7 @@ func (j *jsiiProxy_EndpointsServiceConsumersIamMember) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/endpoints_service_consumers_iam_member google_endpoints_service_consumers_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/endpoints_service_consumers_iam_member google_endpoints_service_consumers_iam_member} Resource.
 func NewEndpointsServiceConsumersIamMember(scope constructs.Construct, id *string, config *EndpointsServiceConsumersIamMemberConfig) EndpointsServiceConsumersIamMember {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewEndpointsServiceConsumersIamMember(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/endpoints_service_consumers_iam_member google_endpoints_service_consumers_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/endpoints_service_consumers_iam_member google_endpoints_service_consumers_iam_member} Resource.
 func NewEndpointsServiceConsumersIamMember_Override(e EndpointsServiceConsumersIamMember, scope constructs.Construct, id *string, config *EndpointsServiceConsumersIamMemberConfig) {
 	_init_.Initialize()
 
@@ -464,7 +464,10 @@ func (j *jsiiProxy_EndpointsServiceConsumersIamMember)SetConsumerProject(val *st
 	)
 }
 
-func (j *jsiiProxy_EndpointsServiceConsumersIamMember)SetCount(val *float64) {
+func (j *jsiiProxy_EndpointsServiceConsumersIamMember)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

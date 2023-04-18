@@ -92,6 +92,10 @@ func (j *jsiiProxy_DataprocMetastoreService) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataprocMetastoreService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocMetastoreService) validateSetDatabaseTypeParameters(val *string) error {
 	return nil
 }

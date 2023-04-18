@@ -80,6 +80,10 @@ func (j *jsiiProxy_ClouddeployDeliveryPipeline) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ClouddeployDeliveryPipeline) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClouddeployDeliveryPipeline) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

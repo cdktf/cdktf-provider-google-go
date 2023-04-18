@@ -76,6 +76,10 @@ func (j *jsiiProxy_ComputeRegionSslCertificate) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionSslCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionSslCertificate) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

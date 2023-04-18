@@ -2,14 +2,14 @@ package dataprocjobiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/dataprocjobiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/dataprocjobiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/dataproc_job_iam_binding google_dataproc_job_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataproc_job_iam_binding google_dataproc_job_iam_binding}.
 type DataprocJobIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type DataprocJobIamBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -177,8 +177,8 @@ func (j *jsiiProxy_DataprocJobIamBinding) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataprocJobIamBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataprocJobIamBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -438,7 +438,7 @@ func (j *jsiiProxy_DataprocJobIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/dataproc_job_iam_binding google_dataproc_job_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataproc_job_iam_binding google_dataproc_job_iam_binding} Resource.
 func NewDataprocJobIamBinding(scope constructs.Construct, id *string, config *DataprocJobIamBindingConfig) DataprocJobIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewDataprocJobIamBinding(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/dataproc_job_iam_binding google_dataproc_job_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataproc_job_iam_binding google_dataproc_job_iam_binding} Resource.
 func NewDataprocJobIamBinding_Override(d DataprocJobIamBinding, scope constructs.Construct, id *string, config *DataprocJobIamBindingConfig) {
 	_init_.Initialize()
 
@@ -478,7 +478,10 @@ func (j *jsiiProxy_DataprocJobIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocJobIamBinding)SetCount(val *float64) {
+func (j *jsiiProxy_DataprocJobIamBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

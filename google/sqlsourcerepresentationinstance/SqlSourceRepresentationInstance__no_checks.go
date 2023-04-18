@@ -84,6 +84,10 @@ func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetDatabaseVersionParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataprocClusterIamMember) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataprocClusterIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocClusterIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

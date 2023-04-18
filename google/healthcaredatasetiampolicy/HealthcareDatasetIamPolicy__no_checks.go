@@ -68,6 +68,10 @@ func (j *jsiiProxy_HealthcareDatasetIamPolicy) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareDatasetIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareDatasetIamPolicy) validateSetDatasetIdParameters(val *string) error {
 	return nil
 }

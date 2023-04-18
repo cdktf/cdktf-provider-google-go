@@ -80,6 +80,10 @@ func (j *jsiiProxy_ComputeReservation) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_ComputeReservation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeReservation) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

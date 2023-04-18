@@ -64,6 +64,10 @@ func validateDataGoogleKmsSecretCiphertext_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleKmsSecretCiphertext) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleKmsSecretCiphertext) validateSetCryptoKeyParameters(val *string) error {
 	return nil
 }

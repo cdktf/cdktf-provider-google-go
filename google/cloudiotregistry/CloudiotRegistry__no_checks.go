@@ -80,6 +80,10 @@ func (j *jsiiProxy_CloudiotRegistry) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_CloudiotRegistry) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudiotRegistry) validateSetHttpConfigParameters(val *map[string]*string) error {
 	return nil
 }

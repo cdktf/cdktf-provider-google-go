@@ -72,6 +72,10 @@ func (j *jsiiProxy_ComputeSubnetworkIamBinding) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSubnetworkIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSubnetworkIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

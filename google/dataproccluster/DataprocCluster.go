@@ -2,14 +2,14 @@ package dataproccluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/dataproccluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/dataproccluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/dataproc_cluster google_dataproc_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataproc_cluster google_dataproc_cluster}.
 type DataprocCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type DataprocCluster interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -186,8 +186,8 @@ func (j *jsiiProxy_DataprocCluster) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataprocCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataprocCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -477,7 +477,7 @@ func (j *jsiiProxy_DataprocCluster) VirtualClusterConfigInput() *DataprocCluster
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/dataproc_cluster google_dataproc_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataproc_cluster google_dataproc_cluster} Resource.
 func NewDataprocCluster(scope constructs.Construct, id *string, config *DataprocClusterConfig) DataprocCluster {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewDataprocCluster(scope constructs.Construct, id *string, config *Dataproc
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/dataproc_cluster google_dataproc_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataproc_cluster google_dataproc_cluster} Resource.
 func NewDataprocCluster_Override(d DataprocCluster, scope constructs.Construct, id *string, config *DataprocClusterConfig) {
 	_init_.Initialize()
 
@@ -517,7 +517,10 @@ func (j *jsiiProxy_DataprocCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocCluster)SetCount(val *float64) {
+func (j *jsiiProxy_DataprocCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

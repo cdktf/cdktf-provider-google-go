@@ -84,6 +84,10 @@ func (j *jsiiProxy_CloudbuildWorkerPool) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_CloudbuildWorkerPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudbuildWorkerPool) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

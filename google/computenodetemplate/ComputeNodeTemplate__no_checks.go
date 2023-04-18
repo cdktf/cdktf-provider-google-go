@@ -80,6 +80,10 @@ func (j *jsiiProxy_ComputeNodeTemplate) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_ComputeNodeTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeNodeTemplate) validateSetCpuOvercommitTypeParameters(val *string) error {
 	return nil
 }

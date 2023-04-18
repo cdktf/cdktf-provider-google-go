@@ -84,6 +84,10 @@ func (j *jsiiProxy_ComputeResourcePolicy) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ComputeResourcePolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeResourcePolicy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

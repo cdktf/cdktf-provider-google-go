@@ -64,6 +64,10 @@ func validateDataGoogleSqlDatabase_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }

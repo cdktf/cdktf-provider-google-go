@@ -2,14 +2,14 @@ package cloudidsendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/cloudidsendpoint/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/cloudidsendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/cloud_ids_endpoint google_cloud_ids_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloud_ids_endpoint google_cloud_ids_endpoint}.
 type CloudIdsEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CloudIdsEndpoint interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -167,8 +167,8 @@ func (j *jsiiProxy_CloudIdsEndpoint) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_CloudIdsEndpoint) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudIdsEndpoint) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -518,7 +518,7 @@ func (j *jsiiProxy_CloudIdsEndpoint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/cloud_ids_endpoint google_cloud_ids_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloud_ids_endpoint google_cloud_ids_endpoint} Resource.
 func NewCloudIdsEndpoint(scope constructs.Construct, id *string, config *CloudIdsEndpointConfig) CloudIdsEndpoint {
 	_init_.Initialize()
 
@@ -536,7 +536,7 @@ func NewCloudIdsEndpoint(scope constructs.Construct, id *string, config *CloudId
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/cloud_ids_endpoint google_cloud_ids_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloud_ids_endpoint google_cloud_ids_endpoint} Resource.
 func NewCloudIdsEndpoint_Override(c CloudIdsEndpoint, scope constructs.Construct, id *string, config *CloudIdsEndpointConfig) {
 	_init_.Initialize()
 
@@ -558,7 +558,10 @@ func (j *jsiiProxy_CloudIdsEndpoint)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudIdsEndpoint)SetCount(val *float64) {
+func (j *jsiiProxy_CloudIdsEndpoint)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

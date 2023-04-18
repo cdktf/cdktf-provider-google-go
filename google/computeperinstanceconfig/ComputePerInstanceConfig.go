@@ -2,14 +2,14 @@ package computeperinstanceconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/computeperinstanceconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/computeperinstanceconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/compute_per_instance_config google_compute_per_instance_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_per_instance_config google_compute_per_instance_config}.
 type ComputePerInstanceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ComputePerInstanceConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_ComputePerInstanceConfig) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_ComputePerInstanceConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ComputePerInstanceConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -500,7 +500,7 @@ func (j *jsiiProxy_ComputePerInstanceConfig) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_per_instance_config google_compute_per_instance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_per_instance_config google_compute_per_instance_config} Resource.
 func NewComputePerInstanceConfig(scope constructs.Construct, id *string, config *ComputePerInstanceConfigConfig) ComputePerInstanceConfig {
 	_init_.Initialize()
 
@@ -518,7 +518,7 @@ func NewComputePerInstanceConfig(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_per_instance_config google_compute_per_instance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_per_instance_config google_compute_per_instance_config} Resource.
 func NewComputePerInstanceConfig_Override(c ComputePerInstanceConfig, scope constructs.Construct, id *string, config *ComputePerInstanceConfigConfig) {
 	_init_.Initialize()
 
@@ -540,7 +540,10 @@ func (j *jsiiProxy_ComputePerInstanceConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputePerInstanceConfig)SetCount(val *float64) {
+func (j *jsiiProxy_ComputePerInstanceConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

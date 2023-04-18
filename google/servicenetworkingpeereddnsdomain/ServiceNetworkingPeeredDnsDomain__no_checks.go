@@ -72,6 +72,10 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) validateSetDnsSuffixParameters(val *string) error {
 	return nil
 }

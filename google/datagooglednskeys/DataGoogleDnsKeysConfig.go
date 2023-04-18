@@ -8,7 +8,7 @@ type DataGoogleDnsKeysConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -21,19 +21,19 @@ type DataGoogleDnsKeysConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Name of the zone.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/d/dns_keys#managed_zone DataGoogleDnsKeys#managed_zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/dns_keys#managed_zone DataGoogleDnsKeys#managed_zone}
 	ManagedZone *string `field:"required" json:"managedZone" yaml:"managedZone"`
 	// key_signing_keys block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/d/dns_keys#key_signing_keys DataGoogleDnsKeys#key_signing_keys}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/dns_keys#key_signing_keys DataGoogleDnsKeys#key_signing_keys}
 	KeySigningKeys interface{} `field:"optional" json:"keySigningKeys" yaml:"keySigningKeys"`
 	// The ID of the project for the Google Cloud.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/d/dns_keys#project DataGoogleDnsKeys#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/dns_keys#project DataGoogleDnsKeys#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// zone_signing_keys block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/d/dns_keys#zone_signing_keys DataGoogleDnsKeys#zone_signing_keys}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/dns_keys#zone_signing_keys DataGoogleDnsKeys#zone_signing_keys}
 	ZoneSigningKeys interface{} `field:"optional" json:"zoneSigningKeys" yaml:"zoneSigningKeys"`
 }
 

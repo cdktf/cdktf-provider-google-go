@@ -68,6 +68,10 @@ func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamPolicy) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamPolicy) validateSetDataPolicyIdParameters(val *string) error {
 	return nil
 }

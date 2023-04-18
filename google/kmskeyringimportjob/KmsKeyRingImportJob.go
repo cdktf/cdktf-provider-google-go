@@ -2,14 +2,14 @@ package kmskeyringimportjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/kmskeyringimportjob/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/kmskeyringimportjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/kms_key_ring_import_job google_kms_key_ring_import_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/kms_key_ring_import_job google_kms_key_ring_import_job}.
 type KmsKeyRingImportJob interface {
 	cdktf.TerraformResource
 	Attestation() KmsKeyRingImportJobAttestationList
@@ -22,9 +22,9 @@ type KmsKeyRingImportJob interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -166,8 +166,8 @@ func (j *jsiiProxy_KmsKeyRingImportJob) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_KmsKeyRingImportJob) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_KmsKeyRingImportJob) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -457,7 +457,7 @@ func (j *jsiiProxy_KmsKeyRingImportJob) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/kms_key_ring_import_job google_kms_key_ring_import_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/kms_key_ring_import_job google_kms_key_ring_import_job} Resource.
 func NewKmsKeyRingImportJob(scope constructs.Construct, id *string, config *KmsKeyRingImportJobConfig) KmsKeyRingImportJob {
 	_init_.Initialize()
 
@@ -475,7 +475,7 @@ func NewKmsKeyRingImportJob(scope constructs.Construct, id *string, config *KmsK
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/kms_key_ring_import_job google_kms_key_ring_import_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/kms_key_ring_import_job google_kms_key_ring_import_job} Resource.
 func NewKmsKeyRingImportJob_Override(k KmsKeyRingImportJob, scope constructs.Construct, id *string, config *KmsKeyRingImportJobConfig) {
 	_init_.Initialize()
 
@@ -497,7 +497,10 @@ func (j *jsiiProxy_KmsKeyRingImportJob)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRingImportJob)SetCount(val *float64) {
+func (j *jsiiProxy_KmsKeyRingImportJob)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

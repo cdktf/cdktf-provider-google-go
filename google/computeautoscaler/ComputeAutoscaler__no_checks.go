@@ -76,6 +76,10 @@ func (j *jsiiProxy_ComputeAutoscaler) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_ComputeAutoscaler) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeAutoscaler) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_EventarcChannel) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_EventarcChannel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EventarcChannel) validateSetCryptoKeyNameParameters(val *string) error {
 	return nil
 }

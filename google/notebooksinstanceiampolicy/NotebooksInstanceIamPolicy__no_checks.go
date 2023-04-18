@@ -68,6 +68,10 @@ func (j *jsiiProxy_NotebooksInstanceIamPolicy) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_NotebooksInstanceIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotebooksInstanceIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

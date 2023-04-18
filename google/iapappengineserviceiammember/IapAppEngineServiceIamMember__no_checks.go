@@ -76,6 +76,10 @@ func (j *jsiiProxy_IapAppEngineServiceIamMember) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_IapAppEngineServiceIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IapAppEngineServiceIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

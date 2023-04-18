@@ -80,6 +80,10 @@ func (j *jsiiProxy_StorageTransferJob) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_StorageTransferJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageTransferJob) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

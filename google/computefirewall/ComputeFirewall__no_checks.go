@@ -84,6 +84,10 @@ func (j *jsiiProxy_ComputeFirewall) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_ComputeFirewall) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeFirewall) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

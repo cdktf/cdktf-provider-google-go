@@ -76,6 +76,10 @@ func (j *jsiiProxy_KmsSecretCiphertext) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_KmsSecretCiphertext) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsSecretCiphertext) validateSetCryptoKeyParameters(val *string) error {
 	return nil
 }

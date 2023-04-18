@@ -2,14 +2,14 @@ package iapclient
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/iapclient/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/iapclient/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/iap_client google_iap_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iap_client google_iap_client}.
 type IapClient interface {
 	cdktf.TerraformResource
 	Brand() *string
@@ -25,9 +25,9 @@ type IapClient interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -177,8 +177,8 @@ func (j *jsiiProxy_IapClient) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IapClient) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IapClient) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -378,7 +378,7 @@ func (j *jsiiProxy_IapClient) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/iap_client google_iap_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iap_client google_iap_client} Resource.
 func NewIapClient(scope constructs.Construct, id *string, config *IapClientConfig) IapClient {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewIapClient(scope constructs.Construct, id *string, config *IapClientConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/iap_client google_iap_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iap_client google_iap_client} Resource.
 func NewIapClient_Override(i IapClient, scope constructs.Construct, id *string, config *IapClientConfig) {
 	_init_.Initialize()
 
@@ -429,7 +429,10 @@ func (j *jsiiProxy_IapClient)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IapClient)SetCount(val *float64) {
+func (j *jsiiProxy_IapClient)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

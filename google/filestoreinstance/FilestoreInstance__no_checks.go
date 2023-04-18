@@ -80,6 +80,10 @@ func (j *jsiiProxy_FilestoreInstance) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_FilestoreInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FilestoreInstance) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

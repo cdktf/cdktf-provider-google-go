@@ -80,6 +80,10 @@ func (j *jsiiProxy_DeploymentManagerDeployment) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DeploymentManagerDeployment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DeploymentManagerDeployment) validateSetCreatePolicyParameters(val *string) error {
 	return nil
 }

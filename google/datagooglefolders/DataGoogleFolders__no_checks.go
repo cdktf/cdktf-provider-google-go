@@ -64,6 +64,10 @@ func validateDataGoogleFolders_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleFolders) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleFolders) validateSetIdParameters(val *string) error {
 	return nil
 }

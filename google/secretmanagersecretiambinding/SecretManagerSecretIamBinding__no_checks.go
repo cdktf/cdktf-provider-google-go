@@ -72,6 +72,10 @@ func (j *jsiiProxy_SecretManagerSecretIamBinding) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_SecretManagerSecretIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretManagerSecretIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

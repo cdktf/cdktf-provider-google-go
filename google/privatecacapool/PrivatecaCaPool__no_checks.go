@@ -80,6 +80,10 @@ func (j *jsiiProxy_PrivatecaCaPool) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_PrivatecaCaPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivatecaCaPool) validateSetIdParameters(val *string) error {
 	return nil
 }

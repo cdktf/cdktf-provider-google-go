@@ -2,14 +2,14 @@ package datagoogleprojects
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagoogleprojects/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagoogleprojects/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/projects google_projects}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/projects google_projects}.
 type DataGoogleProjects interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGoogleProjects interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataGoogleProjects) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleProjects) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleProjects) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataGoogleProjects) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/projects google_projects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/projects google_projects} Data Source.
 func NewDataGoogleProjects(scope constructs.Construct, id *string, config *DataGoogleProjectsConfig) DataGoogleProjects {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataGoogleProjects(scope constructs.Construct, id *string, config *DataG
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/projects google_projects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/projects google_projects} Data Source.
 func NewDataGoogleProjects_Override(d DataGoogleProjects, scope constructs.Construct, id *string, config *DataGoogleProjectsConfig) {
 	_init_.Initialize()
 
@@ -321,7 +321,10 @@ func NewDataGoogleProjects_Override(d DataGoogleProjects, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProjects)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleProjects)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

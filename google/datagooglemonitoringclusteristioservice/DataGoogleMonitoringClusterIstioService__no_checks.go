@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGoogleMonitoringClusterIstioService) validateSetClusterNa
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleMonitoringClusterIstioService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleMonitoringClusterIstioService) validateSetIdParameters(val *string) error {
 	return nil
 }

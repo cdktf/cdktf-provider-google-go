@@ -2,14 +2,14 @@ package vertexaidataset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/vertexaidataset/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/vertexaidataset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/vertex_ai_dataset google_vertex_ai_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/vertex_ai_dataset google_vertex_ai_dataset}.
 type VertexAiDataset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type VertexAiDataset interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -164,8 +164,8 @@ func (j *jsiiProxy_VertexAiDataset) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiDataset) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VertexAiDataset) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -485,7 +485,7 @@ func (j *jsiiProxy_VertexAiDataset) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/vertex_ai_dataset google_vertex_ai_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/vertex_ai_dataset google_vertex_ai_dataset} Resource.
 func NewVertexAiDataset(scope constructs.Construct, id *string, config *VertexAiDatasetConfig) VertexAiDataset {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewVertexAiDataset(scope constructs.Construct, id *string, config *VertexAi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/vertex_ai_dataset google_vertex_ai_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/vertex_ai_dataset google_vertex_ai_dataset} Resource.
 func NewVertexAiDataset_Override(v VertexAiDataset, scope constructs.Construct, id *string, config *VertexAiDatasetConfig) {
 	_init_.Initialize()
 
@@ -525,7 +525,10 @@ func (j *jsiiProxy_VertexAiDataset)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiDataset)SetCount(val *float64) {
+func (j *jsiiProxy_VertexAiDataset)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

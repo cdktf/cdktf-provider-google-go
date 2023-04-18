@@ -92,6 +92,10 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterPeer) validateSetEnableParameters(val interface{}) error {
 	return nil
 }

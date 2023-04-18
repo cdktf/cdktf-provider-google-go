@@ -2,14 +2,14 @@ package bigqueryjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/bigqueryjob/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/bigqueryjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/bigquery_job google_bigquery_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/bigquery_job google_bigquery_job}.
 type BigqueryJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type BigqueryJob interface {
 	Copy() BigqueryJobCopyOutputReference
 	CopyInput() *BigqueryJobCopy
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -197,8 +197,8 @@ func (j *jsiiProxy_BigqueryJob) CopyInput() *BigqueryJobCopy {
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryJob) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_BigqueryJob) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -558,7 +558,7 @@ func (j *jsiiProxy_BigqueryJob) UserEmail() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/bigquery_job google_bigquery_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/bigquery_job google_bigquery_job} Resource.
 func NewBigqueryJob(scope constructs.Construct, id *string, config *BigqueryJobConfig) BigqueryJob {
 	_init_.Initialize()
 
@@ -576,7 +576,7 @@ func NewBigqueryJob(scope constructs.Construct, id *string, config *BigqueryJobC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/bigquery_job google_bigquery_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/bigquery_job google_bigquery_job} Resource.
 func NewBigqueryJob_Override(b BigqueryJob, scope constructs.Construct, id *string, config *BigqueryJobConfig) {
 	_init_.Initialize()
 
@@ -598,7 +598,10 @@ func (j *jsiiProxy_BigqueryJob)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryJob)SetCount(val *float64) {
+func (j *jsiiProxy_BigqueryJob)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_CloudTasksQueueIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudTasksQueueIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

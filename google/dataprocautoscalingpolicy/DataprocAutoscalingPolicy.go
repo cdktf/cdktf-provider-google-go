@@ -2,14 +2,14 @@ package dataprocautoscalingpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/dataprocautoscalingpolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/dataprocautoscalingpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/dataproc_autoscaling_policy google_dataproc_autoscaling_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataproc_autoscaling_policy google_dataproc_autoscaling_policy}.
 type DataprocAutoscalingPolicy interface {
 	cdktf.TerraformResource
 	BasicAlgorithm() DataprocAutoscalingPolicyBasicAlgorithmOutputReference
@@ -23,9 +23,9 @@ type DataprocAutoscalingPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -183,8 +183,8 @@ func (j *jsiiProxy_DataprocAutoscalingPolicy) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DataprocAutoscalingPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataprocAutoscalingPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -464,7 +464,7 @@ func (j *jsiiProxy_DataprocAutoscalingPolicy) WorkerConfigInput() *DataprocAutos
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/dataproc_autoscaling_policy google_dataproc_autoscaling_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataproc_autoscaling_policy google_dataproc_autoscaling_policy} Resource.
 func NewDataprocAutoscalingPolicy(scope constructs.Construct, id *string, config *DataprocAutoscalingPolicyConfig) DataprocAutoscalingPolicy {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewDataprocAutoscalingPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/dataproc_autoscaling_policy google_dataproc_autoscaling_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataproc_autoscaling_policy google_dataproc_autoscaling_policy} Resource.
 func NewDataprocAutoscalingPolicy_Override(d DataprocAutoscalingPolicy, scope constructs.Construct, id *string, config *DataprocAutoscalingPolicyConfig) {
 	_init_.Initialize()
 
@@ -504,7 +504,10 @@ func (j *jsiiProxy_DataprocAutoscalingPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataprocAutoscalingPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_DataprocAutoscalingPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

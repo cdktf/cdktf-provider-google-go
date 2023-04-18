@@ -72,6 +72,10 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

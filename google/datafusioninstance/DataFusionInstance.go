@@ -2,14 +2,14 @@ package datafusioninstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datafusioninstance/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datafusioninstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/data_fusion_instance google_data_fusion_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/data_fusion_instance google_data_fusion_instance}.
 type DataFusionInstance interface {
 	cdktf.TerraformResource
 	Accelerators() DataFusionInstanceAcceleratorsList
@@ -24,9 +24,9 @@ type DataFusionInstance interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	CryptoKeyConfig() DataFusionInstanceCryptoKeyConfigOutputReference
 	CryptoKeyConfigInput() *DataFusionInstanceCryptoKeyConfig
@@ -252,8 +252,8 @@ func (j *jsiiProxy_DataFusionInstance) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstance) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataFusionInstance) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -863,7 +863,7 @@ func (j *jsiiProxy_DataFusionInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/data_fusion_instance google_data_fusion_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/data_fusion_instance google_data_fusion_instance} Resource.
 func NewDataFusionInstance(scope constructs.Construct, id *string, config *DataFusionInstanceConfig) DataFusionInstance {
 	_init_.Initialize()
 
@@ -881,7 +881,7 @@ func NewDataFusionInstance(scope constructs.Construct, id *string, config *DataF
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/data_fusion_instance google_data_fusion_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/data_fusion_instance google_data_fusion_instance} Resource.
 func NewDataFusionInstance_Override(d DataFusionInstance, scope constructs.Construct, id *string, config *DataFusionInstanceConfig) {
 	_init_.Initialize()
 
@@ -903,7 +903,10 @@ func (j *jsiiProxy_DataFusionInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstance)SetCount(val *float64) {
+func (j *jsiiProxy_DataFusionInstance)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

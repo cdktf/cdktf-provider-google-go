@@ -80,6 +80,10 @@ func (j *jsiiProxy_CloudIdentityGroupMembership) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_CloudIdentityGroupMembership) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudIdentityGroupMembership) validateSetGroupParameters(val *string) error {
 	return nil
 }

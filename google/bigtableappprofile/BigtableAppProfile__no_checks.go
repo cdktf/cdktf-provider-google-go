@@ -80,6 +80,10 @@ func (j *jsiiProxy_BigtableAppProfile) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_BigtableAppProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigtableAppProfile) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

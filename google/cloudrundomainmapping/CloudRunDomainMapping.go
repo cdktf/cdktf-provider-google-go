@@ -2,14 +2,14 @@ package cloudrundomainmapping
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/cloudrundomainmapping/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/cloudrundomainmapping/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/cloud_run_domain_mapping google_cloud_run_domain_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloud_run_domain_mapping google_cloud_run_domain_mapping}.
 type CloudRunDomainMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CloudRunDomainMapping interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -156,8 +156,8 @@ func (j *jsiiProxy_CloudRunDomainMapping) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunDomainMapping) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudRunDomainMapping) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -437,7 +437,7 @@ func (j *jsiiProxy_CloudRunDomainMapping) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/cloud_run_domain_mapping google_cloud_run_domain_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloud_run_domain_mapping google_cloud_run_domain_mapping} Resource.
 func NewCloudRunDomainMapping(scope constructs.Construct, id *string, config *CloudRunDomainMappingConfig) CloudRunDomainMapping {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewCloudRunDomainMapping(scope constructs.Construct, id *string, config *Cl
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/cloud_run_domain_mapping google_cloud_run_domain_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloud_run_domain_mapping google_cloud_run_domain_mapping} Resource.
 func NewCloudRunDomainMapping_Override(c CloudRunDomainMapping, scope constructs.Construct, id *string, config *CloudRunDomainMappingConfig) {
 	_init_.Initialize()
 
@@ -477,7 +477,10 @@ func (j *jsiiProxy_CloudRunDomainMapping)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudRunDomainMapping)SetCount(val *float64) {
+func (j *jsiiProxy_CloudRunDomainMapping)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

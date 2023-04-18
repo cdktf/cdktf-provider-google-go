@@ -2,14 +2,14 @@ package bigqueryconnectioniammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/bigqueryconnectioniammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/bigqueryconnectioniammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/bigquery_connection_iam_member google_bigquery_connection_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/bigquery_connection_iam_member google_bigquery_connection_iam_member}.
 type BigqueryConnectionIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -26,9 +26,9 @@ type BigqueryConnectionIamMember interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -197,8 +197,8 @@ func (j *jsiiProxy_BigqueryConnectionIamMember) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryConnectionIamMember) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_BigqueryConnectionIamMember) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -438,7 +438,7 @@ func (j *jsiiProxy_BigqueryConnectionIamMember) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/bigquery_connection_iam_member google_bigquery_connection_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/bigquery_connection_iam_member google_bigquery_connection_iam_member} Resource.
 func NewBigqueryConnectionIamMember(scope constructs.Construct, id *string, config *BigqueryConnectionIamMemberConfig) BigqueryConnectionIamMember {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewBigqueryConnectionIamMember(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/bigquery_connection_iam_member google_bigquery_connection_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/bigquery_connection_iam_member google_bigquery_connection_iam_member} Resource.
 func NewBigqueryConnectionIamMember_Override(b BigqueryConnectionIamMember, scope constructs.Construct, id *string, config *BigqueryConnectionIamMemberConfig) {
 	_init_.Initialize()
 
@@ -489,7 +489,10 @@ func (j *jsiiProxy_BigqueryConnectionIamMember)SetConnectionId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionIamMember)SetCount(val *float64) {
+func (j *jsiiProxy_BigqueryConnectionIamMember)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

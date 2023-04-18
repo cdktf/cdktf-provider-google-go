@@ -72,6 +72,10 @@ func (j *jsiiProxy_ComputeDiskResourcePolicyAttachment) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_ComputeDiskResourcePolicyAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeDiskResourcePolicyAttachment) validateSetDiskParameters(val *string) error {
 	return nil
 }

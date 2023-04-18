@@ -64,6 +64,10 @@ func validateDataGoogleKmsCryptoKeyVersion_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersion) validateSetCryptoKeyParameters(val *string) error {
 	return nil
 }

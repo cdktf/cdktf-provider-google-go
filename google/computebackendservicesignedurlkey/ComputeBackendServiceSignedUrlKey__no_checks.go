@@ -76,6 +76,10 @@ func (j *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package memcacheinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/memcacheinstance/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/memcacheinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/memcache_instance google_memcache_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/memcache_instance google_memcache_instance}.
 type MemcacheInstance interface {
 	cdktf.TerraformResource
 	AuthorizedNetwork() *string
@@ -24,9 +24,9 @@ type MemcacheInstance interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -209,8 +209,8 @@ func (j *jsiiProxy_MemcacheInstance) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_MemcacheInstance) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MemcacheInstance) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -650,7 +650,7 @@ func (j *jsiiProxy_MemcacheInstance) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/memcache_instance google_memcache_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/memcache_instance google_memcache_instance} Resource.
 func NewMemcacheInstance(scope constructs.Construct, id *string, config *MemcacheInstanceConfig) MemcacheInstance {
 	_init_.Initialize()
 
@@ -668,7 +668,7 @@ func NewMemcacheInstance(scope constructs.Construct, id *string, config *Memcach
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/memcache_instance google_memcache_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/memcache_instance google_memcache_instance} Resource.
 func NewMemcacheInstance_Override(m MemcacheInstance, scope constructs.Construct, id *string, config *MemcacheInstanceConfig) {
 	_init_.Initialize()
 
@@ -701,7 +701,10 @@ func (j *jsiiProxy_MemcacheInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MemcacheInstance)SetCount(val *float64) {
+func (j *jsiiProxy_MemcacheInstance)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

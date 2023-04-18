@@ -76,6 +76,10 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

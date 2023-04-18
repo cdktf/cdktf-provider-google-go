@@ -88,6 +88,10 @@ func (j *jsiiProxy_CloudRunV2Job) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunV2Job) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunV2Job) validateSetIdParameters(val *string) error {
 	return nil
 }

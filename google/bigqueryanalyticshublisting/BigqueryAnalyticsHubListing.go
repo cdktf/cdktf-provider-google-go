@@ -2,14 +2,14 @@ package bigqueryanalyticshublisting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/bigqueryanalyticshublisting/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/bigqueryanalyticshublisting/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing}.
 type BigqueryAnalyticsHubListing interface {
 	cdktf.TerraformResource
 	BigqueryDataset() BigqueryAnalyticsHubListingBigqueryDatasetOutputReference
@@ -26,9 +26,9 @@ type BigqueryAnalyticsHubListing interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataExchangeId() *string
 	SetDataExchangeId(val *string)
 	DataExchangeIdInput() *string
@@ -231,8 +231,8 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -652,7 +652,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
 func NewBigqueryAnalyticsHubListing(scope constructs.Construct, id *string, config *BigqueryAnalyticsHubListingConfig) BigqueryAnalyticsHubListing {
 	_init_.Initialize()
 
@@ -670,7 +670,7 @@ func NewBigqueryAnalyticsHubListing(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
 func NewBigqueryAnalyticsHubListing_Override(b BigqueryAnalyticsHubListing, scope constructs.Construct, id *string, config *BigqueryAnalyticsHubListingConfig) {
 	_init_.Initialize()
 
@@ -703,7 +703,10 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetCount(val *float64) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListing)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_DocumentAiProcessorDefaultVersion) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_DocumentAiProcessorDefaultVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocumentAiProcessorDefaultVersion) validateSetIdParameters(val *string) error {
 	return nil
 }

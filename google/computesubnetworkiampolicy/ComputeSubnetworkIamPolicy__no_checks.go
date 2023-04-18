@@ -68,6 +68,10 @@ func (j *jsiiProxy_ComputeSubnetworkIamPolicy) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSubnetworkIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSubnetworkIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

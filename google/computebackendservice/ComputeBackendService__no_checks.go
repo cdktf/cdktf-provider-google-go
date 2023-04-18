@@ -120,6 +120,10 @@ func (j *jsiiProxy_ComputeBackendService) validateSetConnectionDrainingTimeoutSe
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendService) validateSetCustomRequestHeadersParameters(val *[]*string) error {
 	return nil
 }

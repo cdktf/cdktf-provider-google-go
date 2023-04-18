@@ -76,6 +76,10 @@ func (j *jsiiProxy_IapBrand) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_IapBrand) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IapBrand) validateSetIdParameters(val *string) error {
 	return nil
 }

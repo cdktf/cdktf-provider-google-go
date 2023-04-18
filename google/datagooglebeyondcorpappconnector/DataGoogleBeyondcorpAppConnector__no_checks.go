@@ -64,6 +64,10 @@ func validateDataGoogleBeyondcorpAppConnector_IsTerraformElementParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleBeyondcorpAppConnector) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleBeyondcorpAppConnector) validateSetIdParameters(val *string) error {
 	return nil
 }

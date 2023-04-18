@@ -84,6 +84,10 @@ func (j *jsiiProxy_DialogflowAgent) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_DialogflowAgent) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowAgent) validateSetDefaultLanguageCodeParameters(val *string) error {
 	return nil
 }

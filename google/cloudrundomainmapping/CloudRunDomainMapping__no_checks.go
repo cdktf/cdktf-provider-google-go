@@ -80,6 +80,10 @@ func (j *jsiiProxy_CloudRunDomainMapping) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunDomainMapping) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunDomainMapping) validateSetIdParameters(val *string) error {
 	return nil
 }

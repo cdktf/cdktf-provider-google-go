@@ -2,14 +2,14 @@ package kmskeyringiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/kmskeyringiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/kmskeyringiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/kms_key_ring_iam_binding google_kms_key_ring_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/kms_key_ring_iam_binding google_kms_key_ring_iam_binding}.
 type KmsKeyRingIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type KmsKeyRingIamBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_KmsKeyRingIamBinding) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_KmsKeyRingIamBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_KmsKeyRingIamBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_KmsKeyRingIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/kms_key_ring_iam_binding google_kms_key_ring_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/kms_key_ring_iam_binding google_kms_key_ring_iam_binding} Resource.
 func NewKmsKeyRingIamBinding(scope constructs.Construct, id *string, config *KmsKeyRingIamBindingConfig) KmsKeyRingIamBinding {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewKmsKeyRingIamBinding(scope constructs.Construct, id *string, config *Kms
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/kms_key_ring_iam_binding google_kms_key_ring_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/kms_key_ring_iam_binding google_kms_key_ring_iam_binding} Resource.
 func NewKmsKeyRingIamBinding_Override(k KmsKeyRingIamBinding, scope constructs.Construct, id *string, config *KmsKeyRingIamBindingConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_KmsKeyRingIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsKeyRingIamBinding)SetCount(val *float64) {
+func (j *jsiiProxy_KmsKeyRingIamBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

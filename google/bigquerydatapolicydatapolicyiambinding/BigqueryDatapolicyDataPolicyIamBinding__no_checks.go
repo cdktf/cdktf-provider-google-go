@@ -72,6 +72,10 @@ func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamBinding) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamBinding) validateSetDataPolicyIdParameters(val *string) error {
 	return nil
 }

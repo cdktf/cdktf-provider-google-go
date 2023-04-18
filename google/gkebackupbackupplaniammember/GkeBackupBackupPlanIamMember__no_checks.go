@@ -72,6 +72,10 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_GkeBackupBackupPlanIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GkeBackupBackupPlanIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

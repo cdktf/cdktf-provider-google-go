@@ -2,14 +2,14 @@ package projectiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/projectiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/projectiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/project_iam_member google_project_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/project_iam_member google_project_iam_member}.
 type ProjectIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type ProjectIamMember interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_ProjectIamMember) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_ProjectIamMember) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ProjectIamMember) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_ProjectIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/project_iam_member google_project_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/project_iam_member google_project_iam_member} Resource.
 func NewProjectIamMember(scope constructs.Construct, id *string, config *ProjectIamMemberConfig) ProjectIamMember {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewProjectIamMember(scope constructs.Construct, id *string, config *Project
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/project_iam_member google_project_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/project_iam_member google_project_iam_member} Resource.
 func NewProjectIamMember_Override(p ProjectIamMember, scope constructs.Construct, id *string, config *ProjectIamMemberConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_ProjectIamMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ProjectIamMember)SetCount(val *float64) {
+func (j *jsiiProxy_ProjectIamMember)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

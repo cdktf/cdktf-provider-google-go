@@ -108,6 +108,10 @@ func (j *jsiiProxy_CloudbuildTrigger) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_CloudbuildTrigger) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudbuildTrigger) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

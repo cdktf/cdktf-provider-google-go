@@ -72,6 +72,10 @@ func (j *jsiiProxy_ComputeAttachedDisk) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_ComputeAttachedDisk) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeAttachedDisk) validateSetDeviceNameParameters(val *string) error {
 	return nil
 }

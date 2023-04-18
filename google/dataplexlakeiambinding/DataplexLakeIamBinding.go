@@ -2,14 +2,14 @@ package dataplexlakeiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/dataplexlakeiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/dataplexlakeiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/dataplex_lake_iam_binding google_dataplex_lake_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataplex_lake_iam_binding google_dataplex_lake_iam_binding}.
 type DataplexLakeIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type DataplexLakeIamBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -177,8 +177,8 @@ func (j *jsiiProxy_DataplexLakeIamBinding) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataplexLakeIamBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataplexLakeIamBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -438,7 +438,7 @@ func (j *jsiiProxy_DataplexLakeIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/dataplex_lake_iam_binding google_dataplex_lake_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataplex_lake_iam_binding google_dataplex_lake_iam_binding} Resource.
 func NewDataplexLakeIamBinding(scope constructs.Construct, id *string, config *DataplexLakeIamBindingConfig) DataplexLakeIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewDataplexLakeIamBinding(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/dataplex_lake_iam_binding google_dataplex_lake_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataplex_lake_iam_binding google_dataplex_lake_iam_binding} Resource.
 func NewDataplexLakeIamBinding_Override(d DataplexLakeIamBinding, scope constructs.Construct, id *string, config *DataplexLakeIamBindingConfig) {
 	_init_.Initialize()
 
@@ -478,7 +478,10 @@ func (j *jsiiProxy_DataplexLakeIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataplexLakeIamBinding)SetCount(val *float64) {
+func (j *jsiiProxy_DataplexLakeIamBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

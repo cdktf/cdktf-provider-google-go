@@ -80,6 +80,10 @@ func (j *jsiiProxy_GameServicesGameServerCluster) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_GameServicesGameServerCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GameServicesGameServerCluster) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

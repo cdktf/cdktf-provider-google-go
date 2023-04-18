@@ -80,6 +80,10 @@ func (j *jsiiProxy_ComputeRegionDisk) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionDisk) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionDisk) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_ComputeDiskIamBinding) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ComputeDiskIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeDiskIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

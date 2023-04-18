@@ -64,6 +64,10 @@ func validateDataGoogleDataprocMetastoreService_IsTerraformElementParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleDataprocMetastoreService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleDataprocMetastoreService) validateSetIdParameters(val *string) error {
 	return nil
 }

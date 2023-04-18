@@ -92,6 +92,10 @@ func (j *jsiiProxy_ContainerAwsNodePool) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAwsNodePool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAwsNodePool) validateSetIdParameters(val *string) error {
 	return nil
 }

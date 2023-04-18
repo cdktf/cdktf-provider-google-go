@@ -2,14 +2,14 @@ package datagooglemonitoringnotificationchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglemonitoringnotificationchannel/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglemonitoringnotificationchannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/monitoring_notification_channel google_monitoring_notification_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/monitoring_notification_channel google_monitoring_notification_channel}.
 type DataGoogleMonitoringNotificationChannel interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGoogleMonitoringNotificationChannel interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataGoogleMonitoringNotificationChannel) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringNotificationChannel) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleMonitoringNotificationChannel) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -444,7 +444,7 @@ func (j *jsiiProxy_DataGoogleMonitoringNotificationChannel) VerificationStatus()
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/monitoring_notification_channel google_monitoring_notification_channel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/monitoring_notification_channel google_monitoring_notification_channel} Data Source.
 func NewDataGoogleMonitoringNotificationChannel(scope constructs.Construct, id *string, config *DataGoogleMonitoringNotificationChannelConfig) DataGoogleMonitoringNotificationChannel {
 	_init_.Initialize()
 
@@ -462,7 +462,7 @@ func NewDataGoogleMonitoringNotificationChannel(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/monitoring_notification_channel google_monitoring_notification_channel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/monitoring_notification_channel google_monitoring_notification_channel} Data Source.
 func NewDataGoogleMonitoringNotificationChannel_Override(d DataGoogleMonitoringNotificationChannel, scope constructs.Construct, id *string, config *DataGoogleMonitoringNotificationChannelConfig) {
 	_init_.Initialize()
 
@@ -473,7 +473,10 @@ func NewDataGoogleMonitoringNotificationChannel_Override(d DataGoogleMonitoringN
 	)
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringNotificationChannel)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleMonitoringNotificationChannel)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

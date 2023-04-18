@@ -2,9 +2,9 @@ package projectservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/projectservice/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/projectservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

@@ -64,6 +64,10 @@ func validateDataGoogleNetblockIpRanges_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleNetblockIpRanges) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleNetblockIpRanges) validateSetIdParameters(val *string) error {
 	return nil
 }

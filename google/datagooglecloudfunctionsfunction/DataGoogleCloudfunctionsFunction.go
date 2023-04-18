@@ -2,14 +2,14 @@ package datagooglecloudfunctionsfunction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglecloudfunctionsfunction/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglecloudfunctionsfunction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/cloudfunctions_function google_cloudfunctions_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function}.
 type DataGoogleCloudfunctionsFunction interface {
 	cdktf.TerraformDataSource
 	AvailableMemoryMb() *float64
@@ -20,9 +20,9 @@ type DataGoogleCloudfunctionsFunction interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -185,8 +185,8 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunction) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctionsFunction) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunction) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -626,7 +626,7 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunction) VpcConnectorEgressSettings(
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/cloudfunctions_function google_cloudfunctions_function} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function} Data Source.
 func NewDataGoogleCloudfunctionsFunction(scope constructs.Construct, id *string, config *DataGoogleCloudfunctionsFunctionConfig) DataGoogleCloudfunctionsFunction {
 	_init_.Initialize()
 
@@ -644,7 +644,7 @@ func NewDataGoogleCloudfunctionsFunction(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/cloudfunctions_function google_cloudfunctions_function} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function} Data Source.
 func NewDataGoogleCloudfunctionsFunction_Override(d DataGoogleCloudfunctionsFunction, scope constructs.Construct, id *string, config *DataGoogleCloudfunctionsFunctionConfig) {
 	_init_.Initialize()
 
@@ -655,7 +655,10 @@ func NewDataGoogleCloudfunctionsFunction_Override(d DataGoogleCloudfunctionsFunc
 	)
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctionsFunction)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunction)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

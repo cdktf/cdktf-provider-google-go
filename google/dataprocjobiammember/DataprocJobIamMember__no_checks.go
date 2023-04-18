@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataprocJobIamMember) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_DataprocJobIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocJobIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

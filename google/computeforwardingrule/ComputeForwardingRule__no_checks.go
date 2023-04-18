@@ -88,6 +88,10 @@ func (j *jsiiProxy_ComputeForwardingRule) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ComputeForwardingRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeForwardingRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

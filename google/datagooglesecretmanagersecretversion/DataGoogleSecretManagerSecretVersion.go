@@ -2,14 +2,14 @@ package datagooglesecretmanagersecretversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglesecretmanagersecretversion/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglesecretmanagersecretversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/secret_manager_secret_version google_secret_manager_secret_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/secret_manager_secret_version google_secret_manager_secret_version}.
 type DataGoogleSecretManagerSecretVersion interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGoogleSecretManagerSecretVersion interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecretVersion) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerSecretVersion) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleSecretManagerSecretVersion) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecretVersion) VersionInput() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/secret_manager_secret_version google_secret_manager_secret_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/secret_manager_secret_version google_secret_manager_secret_version} Data Source.
 func NewDataGoogleSecretManagerSecretVersion(scope constructs.Construct, id *string, config *DataGoogleSecretManagerSecretVersionConfig) DataGoogleSecretManagerSecretVersion {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewDataGoogleSecretManagerSecretVersion(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/secret_manager_secret_version google_secret_manager_secret_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/secret_manager_secret_version google_secret_manager_secret_version} Data Source.
 func NewDataGoogleSecretManagerSecretVersion_Override(d DataGoogleSecretManagerSecretVersion, scope constructs.Construct, id *string, config *DataGoogleSecretManagerSecretVersionConfig) {
 	_init_.Initialize()
 
@@ -413,7 +413,10 @@ func NewDataGoogleSecretManagerSecretVersion_Override(d DataGoogleSecretManagerS
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerSecretVersion)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleSecretManagerSecretVersion)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

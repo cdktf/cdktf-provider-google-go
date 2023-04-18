@@ -68,6 +68,10 @@ func (j *jsiiProxy_FolderIamPolicy) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_FolderIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FolderIamPolicy) validateSetFolderParameters(val *string) error {
 	return nil
 }

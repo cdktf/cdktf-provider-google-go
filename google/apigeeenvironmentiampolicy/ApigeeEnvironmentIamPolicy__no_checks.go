@@ -68,6 +68,10 @@ func (j *jsiiProxy_ApigeeEnvironmentIamPolicy) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ApigeeEnvironmentIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigeeEnvironmentIamPolicy) validateSetEnvIdParameters(val *string) error {
 	return nil
 }

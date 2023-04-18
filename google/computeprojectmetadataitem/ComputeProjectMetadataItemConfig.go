@@ -8,7 +8,7 @@ type ComputeProjectMetadataItemConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -21,13 +21,13 @@ type ComputeProjectMetadataItemConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The metadata key to set.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_project_metadata_item#key ComputeProjectMetadataItem#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_project_metadata_item#key ComputeProjectMetadataItem#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// The value to set for the given metadata key.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_project_metadata_item#value ComputeProjectMetadataItem#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_project_metadata_item#value ComputeProjectMetadataItem#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_project_metadata_item#id ComputeProjectMetadataItem#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_project_metadata_item#id ComputeProjectMetadataItem#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,11 +36,11 @@ type ComputeProjectMetadataItemConfig struct {
 	//
 	// If it is not provided, the provider project is used.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_project_metadata_item#project ComputeProjectMetadataItem#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_project_metadata_item#project ComputeProjectMetadataItem#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/compute_project_metadata_item#timeouts ComputeProjectMetadataItem#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_project_metadata_item#timeouts ComputeProjectMetadataItem#timeouts}
 	Timeouts *ComputeProjectMetadataItemTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

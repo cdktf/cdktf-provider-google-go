@@ -2,14 +2,14 @@ package gameservicesgameserverdeploymentrollout
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/gameservicesgameserverdeploymentrollout/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/gameservicesgameserverdeploymentrollout/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout}.
 type GameServicesGameServerDeploymentRollout interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GameServicesGameServerDeploymentRollout interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultGameServerConfig() *string
 	SetDefaultGameServerConfig(val *string)
 	DefaultGameServerConfigInput() *string
@@ -154,8 +154,8 @@ func (j *jsiiProxy_GameServicesGameServerDeploymentRollout) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_GameServicesGameServerDeploymentRollout) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GameServicesGameServerDeploymentRollout) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GameServicesGameServerDeploymentRollout) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Resource.
 func NewGameServicesGameServerDeploymentRollout(scope constructs.Construct, id *string, config *GameServicesGameServerDeploymentRolloutConfig) GameServicesGameServerDeploymentRollout {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGameServicesGameServerDeploymentRollout(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Resource.
 func NewGameServicesGameServerDeploymentRollout_Override(g GameServicesGameServerDeploymentRollout, scope constructs.Construct, id *string, config *GameServicesGameServerDeploymentRolloutConfig) {
 	_init_.Initialize()
 
@@ -455,7 +455,10 @@ func (j *jsiiProxy_GameServicesGameServerDeploymentRollout)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_GameServicesGameServerDeploymentRollout)SetCount(val *float64) {
+func (j *jsiiProxy_GameServicesGameServerDeploymentRollout)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

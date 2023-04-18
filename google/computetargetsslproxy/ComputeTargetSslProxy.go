@@ -2,14 +2,14 @@ package computetargetsslproxy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/computetargetsslproxy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/computetargetsslproxy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/compute_target_ssl_proxy google_compute_target_ssl_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_target_ssl_proxy google_compute_target_ssl_proxy}.
 type ComputeTargetSslProxy interface {
 	cdktf.TerraformResource
 	BackendService() *string
@@ -27,9 +27,9 @@ type ComputeTargetSslProxy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -212,8 +212,8 @@ func (j *jsiiProxy_ComputeTargetSslProxy) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_ComputeTargetSslProxy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ComputeTargetSslProxy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -533,7 +533,7 @@ func (j *jsiiProxy_ComputeTargetSslProxy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_target_ssl_proxy google_compute_target_ssl_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_target_ssl_proxy google_compute_target_ssl_proxy} Resource.
 func NewComputeTargetSslProxy(scope constructs.Construct, id *string, config *ComputeTargetSslProxyConfig) ComputeTargetSslProxy {
 	_init_.Initialize()
 
@@ -551,7 +551,7 @@ func NewComputeTargetSslProxy(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_target_ssl_proxy google_compute_target_ssl_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_target_ssl_proxy google_compute_target_ssl_proxy} Resource.
 func NewComputeTargetSslProxy_Override(c ComputeTargetSslProxy, scope constructs.Construct, id *string, config *ComputeTargetSslProxyConfig) {
 	_init_.Initialize()
 
@@ -595,7 +595,10 @@ func (j *jsiiProxy_ComputeTargetSslProxy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeTargetSslProxy)SetCount(val *float64) {
+func (j *jsiiProxy_ComputeTargetSslProxy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

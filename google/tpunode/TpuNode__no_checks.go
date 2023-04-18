@@ -84,6 +84,10 @@ func (j *jsiiProxy_TpuNode) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_TpuNode) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TpuNode) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

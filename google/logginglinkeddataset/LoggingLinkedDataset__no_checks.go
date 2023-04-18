@@ -80,6 +80,10 @@ func (j *jsiiProxy_LoggingLinkedDataset) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_LoggingLinkedDataset) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingLinkedDataset) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataplexzone
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/dataplexzone/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/dataplexzone/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/dataplex_zone google_dataplex_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataplex_zone google_dataplex_zone}.
 type DataplexZone interface {
 	cdktf.TerraformResource
 	AssetStatus() DataplexZoneAssetStatusList
@@ -22,9 +22,9 @@ type DataplexZone interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -188,8 +188,8 @@ func (j *jsiiProxy_DataplexZone) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_DataplexZone) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataplexZone) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -599,7 +599,7 @@ func (j *jsiiProxy_DataplexZone) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/dataplex_zone google_dataplex_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataplex_zone google_dataplex_zone} Resource.
 func NewDataplexZone(scope constructs.Construct, id *string, config *DataplexZoneConfig) DataplexZone {
 	_init_.Initialize()
 
@@ -617,7 +617,7 @@ func NewDataplexZone(scope constructs.Construct, id *string, config *DataplexZon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/dataplex_zone google_dataplex_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataplex_zone google_dataplex_zone} Resource.
 func NewDataplexZone_Override(d DataplexZone, scope constructs.Construct, id *string, config *DataplexZoneConfig) {
 	_init_.Initialize()
 
@@ -639,7 +639,10 @@ func (j *jsiiProxy_DataplexZone)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataplexZone)SetCount(val *float64) {
+func (j *jsiiProxy_DataplexZone)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

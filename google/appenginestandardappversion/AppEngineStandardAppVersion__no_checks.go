@@ -108,6 +108,10 @@ func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppEngineStandardAppVersion) validateSetDeleteServiceOnDestroyParameters(val interface{}) error {
 	return nil
 }

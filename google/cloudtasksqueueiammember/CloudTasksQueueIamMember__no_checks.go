@@ -72,6 +72,10 @@ func (j *jsiiProxy_CloudTasksQueueIamMember) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_CloudTasksQueueIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudTasksQueueIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package computeregiontargethttpproxy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/computeregiontargethttpproxy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/computeregiontargethttpproxy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/compute_region_target_http_proxy google_compute_region_target_http_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_region_target_http_proxy google_compute_region_target_http_proxy}.
 type ComputeRegionTargetHttpProxy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ComputeRegionTargetHttpProxy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -160,8 +160,8 @@ func (j *jsiiProxy_ComputeRegionTargetHttpProxy) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpProxy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ComputeRegionTargetHttpProxy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -461,7 +461,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpProxy) UrlMapInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource.
 func NewComputeRegionTargetHttpProxy(scope constructs.Construct, id *string, config *ComputeRegionTargetHttpProxyConfig) ComputeRegionTargetHttpProxy {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewComputeRegionTargetHttpProxy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource.
 func NewComputeRegionTargetHttpProxy_Override(c ComputeRegionTargetHttpProxy, scope constructs.Construct, id *string, config *ComputeRegionTargetHttpProxyConfig) {
 	_init_.Initialize()
 
@@ -501,7 +501,10 @@ func (j *jsiiProxy_ComputeRegionTargetHttpProxy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionTargetHttpProxy)SetCount(val *float64) {
+func (j *jsiiProxy_ComputeRegionTargetHttpProxy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

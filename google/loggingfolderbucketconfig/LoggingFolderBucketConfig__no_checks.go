@@ -76,6 +76,10 @@ func (j *jsiiProxy_LoggingFolderBucketConfig) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_LoggingFolderBucketConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingFolderBucketConfig) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

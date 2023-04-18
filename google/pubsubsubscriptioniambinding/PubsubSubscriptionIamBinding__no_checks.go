@@ -72,6 +72,10 @@ func (j *jsiiProxy_PubsubSubscriptionIamBinding) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_PubsubSubscriptionIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PubsubSubscriptionIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataprocmetastoreserviceiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/dataprocmetastoreserviceiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/dataprocmetastoreserviceiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding}.
 type DataprocMetastoreServiceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type DataprocMetastoreServiceIamBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -177,8 +177,8 @@ func (j *jsiiProxy_DataprocMetastoreServiceIamBinding) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceIamBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataprocMetastoreServiceIamBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -438,7 +438,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceIamBinding) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding} Resource.
 func NewDataprocMetastoreServiceIamBinding(scope constructs.Construct, id *string, config *DataprocMetastoreServiceIamBindingConfig) DataprocMetastoreServiceIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewDataprocMetastoreServiceIamBinding(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding} Resource.
 func NewDataprocMetastoreServiceIamBinding_Override(d DataprocMetastoreServiceIamBinding, scope constructs.Construct, id *string, config *DataprocMetastoreServiceIamBindingConfig) {
 	_init_.Initialize()
 
@@ -478,7 +478,10 @@ func (j *jsiiProxy_DataprocMetastoreServiceIamBinding)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceIamBinding)SetCount(val *float64) {
+func (j *jsiiProxy_DataprocMetastoreServiceIamBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

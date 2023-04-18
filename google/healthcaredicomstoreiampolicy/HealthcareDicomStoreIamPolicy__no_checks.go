@@ -68,6 +68,10 @@ func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareDicomStoreIamPolicy) validateSetDicomStoreIdParameters(val *string) error {
 	return nil
 }

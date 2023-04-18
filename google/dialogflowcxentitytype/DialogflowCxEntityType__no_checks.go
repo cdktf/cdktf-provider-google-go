@@ -84,6 +84,10 @@ func (j *jsiiProxy_DialogflowCxEntityType) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_DialogflowCxEntityType) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxEntityType) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

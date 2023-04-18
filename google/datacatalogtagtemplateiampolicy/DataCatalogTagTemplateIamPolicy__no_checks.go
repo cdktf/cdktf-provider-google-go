@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamPolicy) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataCatalogTagTemplateIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCatalogTagTemplateIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

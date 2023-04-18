@@ -2,14 +2,14 @@ package filestorebackup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/filestorebackup/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/filestorebackup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/filestore_backup google_filestore_backup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/filestore_backup google_filestore_backup}.
 type FilestoreBackup interface {
 	cdktf.TerraformResource
 	CapacityGb() *string
@@ -22,9 +22,9 @@ type FilestoreBackup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -180,8 +180,8 @@ func (j *jsiiProxy_FilestoreBackup) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_FilestoreBackup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_FilestoreBackup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -551,7 +551,7 @@ func (j *jsiiProxy_FilestoreBackup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/filestore_backup google_filestore_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/filestore_backup google_filestore_backup} Resource.
 func NewFilestoreBackup(scope constructs.Construct, id *string, config *FilestoreBackupConfig) FilestoreBackup {
 	_init_.Initialize()
 
@@ -569,7 +569,7 @@ func NewFilestoreBackup(scope constructs.Construct, id *string, config *Filestor
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/filestore_backup google_filestore_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/filestore_backup google_filestore_backup} Resource.
 func NewFilestoreBackup_Override(f FilestoreBackup, scope constructs.Construct, id *string, config *FilestoreBackupConfig) {
 	_init_.Initialize()
 
@@ -591,7 +591,10 @@ func (j *jsiiProxy_FilestoreBackup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FilestoreBackup)SetCount(val *float64) {
+func (j *jsiiProxy_FilestoreBackup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

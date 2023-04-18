@@ -64,6 +64,10 @@ func validateDataGoogleComputeAddresses_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComputeAddresses) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeAddresses) validateSetFilterParameters(val *string) error {
 	return nil
 }

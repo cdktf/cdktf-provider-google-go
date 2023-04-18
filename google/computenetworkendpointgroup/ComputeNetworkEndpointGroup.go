@@ -2,14 +2,14 @@ package computenetworkendpointgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/computenetworkendpointgroup/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/computenetworkendpointgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/compute_network_endpoint_group google_compute_network_endpoint_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_network_endpoint_group google_compute_network_endpoint_group}.
 type ComputeNetworkEndpointGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ComputeNetworkEndpointGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultPort() *float64
 	SetDefaultPort(val *float64)
 	DefaultPortInput() *float64
@@ -171,8 +171,8 @@ func (j *jsiiProxy_ComputeNetworkEndpointGroup) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_ComputeNetworkEndpointGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ComputeNetworkEndpointGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -522,7 +522,7 @@ func (j *jsiiProxy_ComputeNetworkEndpointGroup) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_network_endpoint_group google_compute_network_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_network_endpoint_group google_compute_network_endpoint_group} Resource.
 func NewComputeNetworkEndpointGroup(scope constructs.Construct, id *string, config *ComputeNetworkEndpointGroupConfig) ComputeNetworkEndpointGroup {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewComputeNetworkEndpointGroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_network_endpoint_group google_compute_network_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_network_endpoint_group google_compute_network_endpoint_group} Resource.
 func NewComputeNetworkEndpointGroup_Override(c ComputeNetworkEndpointGroup, scope constructs.Construct, id *string, config *ComputeNetworkEndpointGroupConfig) {
 	_init_.Initialize()
 
@@ -562,7 +562,10 @@ func (j *jsiiProxy_ComputeNetworkEndpointGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeNetworkEndpointGroup)SetCount(val *float64) {
+func (j *jsiiProxy_ComputeNetworkEndpointGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

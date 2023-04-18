@@ -72,6 +72,10 @@ func (j *jsiiProxy_ApigeeSharedflowDeployment) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ApigeeSharedflowDeployment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigeeSharedflowDeployment) validateSetEnvironmentParameters(val *string) error {
 	return nil
 }

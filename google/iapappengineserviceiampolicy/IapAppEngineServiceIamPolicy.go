@@ -2,14 +2,14 @@ package iapappengineserviceiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/iapappengineserviceiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/iapappengineserviceiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy}.
 type IapAppEngineServiceIamPolicy interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -24,9 +24,9 @@ type IapAppEngineServiceIamPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_IapAppEngineServiceIamPolicy) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_IapAppEngineServiceIamPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IapAppEngineServiceIamPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_IapAppEngineServiceIamPolicy) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy} Resource.
 func NewIapAppEngineServiceIamPolicy(scope constructs.Construct, id *string, config *IapAppEngineServiceIamPolicyConfig) IapAppEngineServiceIamPolicy {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewIapAppEngineServiceIamPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy} Resource.
 func NewIapAppEngineServiceIamPolicy_Override(i IapAppEngineServiceIamPolicy, scope constructs.Construct, id *string, config *IapAppEngineServiceIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -441,7 +441,10 @@ func (j *jsiiProxy_IapAppEngineServiceIamPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IapAppEngineServiceIamPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_IapAppEngineServiceIamPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

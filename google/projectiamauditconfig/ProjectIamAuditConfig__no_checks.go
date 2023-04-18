@@ -72,6 +72,10 @@ func (j *jsiiProxy_ProjectIamAuditConfig) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ProjectIamAuditConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectIamAuditConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

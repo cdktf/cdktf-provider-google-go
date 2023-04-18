@@ -92,6 +92,10 @@ func (j *jsiiProxy_CloudSchedulerJob) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_CloudSchedulerJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudSchedulerJob) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

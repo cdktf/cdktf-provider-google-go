@@ -2,14 +2,14 @@ package datagooglesqldatabases
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglesqldatabases/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglesqldatabases/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/sql_databases google_sql_databases}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/sql_databases google_sql_databases}.
 type DataGoogleSqlDatabases interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGoogleSqlDatabases interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Databases() DataGoogleSqlDatabasesDatabasesList
 	// Experimental.
 	DependsOn() *[]*string
@@ -125,8 +125,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabases) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabases) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleSqlDatabases) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -316,7 +316,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabases) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/sql_databases google_sql_databases} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/sql_databases google_sql_databases} Data Source.
 func NewDataGoogleSqlDatabases(scope constructs.Construct, id *string, config *DataGoogleSqlDatabasesConfig) DataGoogleSqlDatabases {
 	_init_.Initialize()
 
@@ -334,7 +334,7 @@ func NewDataGoogleSqlDatabases(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/sql_databases google_sql_databases} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/sql_databases google_sql_databases} Data Source.
 func NewDataGoogleSqlDatabases_Override(d DataGoogleSqlDatabases, scope constructs.Construct, id *string, config *DataGoogleSqlDatabasesConfig) {
 	_init_.Initialize()
 
@@ -345,7 +345,10 @@ func NewDataGoogleSqlDatabases_Override(d DataGoogleSqlDatabases, scope construc
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabases)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleSqlDatabases)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

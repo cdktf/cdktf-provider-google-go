@@ -112,6 +112,10 @@ func (j *jsiiProxy_DataprocJob) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataprocJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocJob) validateSetForceDeleteParameters(val interface{}) error {
 	return nil
 }

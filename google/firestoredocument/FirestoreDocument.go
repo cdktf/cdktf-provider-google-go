@@ -2,14 +2,14 @@ package firestoredocument
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/firestoredocument/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/firestoredocument/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/firestore_document google_firestore_document}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/firestore_document google_firestore_document}.
 type FirestoreDocument interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type FirestoreDocument interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	Database() *string
 	SetDatabase(val *string)
@@ -180,8 +180,8 @@ func (j *jsiiProxy_FirestoreDocument) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_FirestoreDocument) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_FirestoreDocument) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -471,7 +471,7 @@ func (j *jsiiProxy_FirestoreDocument) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/firestore_document google_firestore_document} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/firestore_document google_firestore_document} Resource.
 func NewFirestoreDocument(scope constructs.Construct, id *string, config *FirestoreDocumentConfig) FirestoreDocument {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewFirestoreDocument(scope constructs.Construct, id *string, config *Firest
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/firestore_document google_firestore_document} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/firestore_document google_firestore_document} Resource.
 func NewFirestoreDocument_Override(f FirestoreDocument, scope constructs.Construct, id *string, config *FirestoreDocumentConfig) {
 	_init_.Initialize()
 
@@ -522,7 +522,10 @@ func (j *jsiiProxy_FirestoreDocument)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FirestoreDocument)SetCount(val *float64) {
+func (j *jsiiProxy_FirestoreDocument)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

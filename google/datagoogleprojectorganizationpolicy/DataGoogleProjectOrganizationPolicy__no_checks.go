@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGoogleProjectOrganizationPolicy) validateSetConstraintPar
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleProjectOrganizationPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleProjectOrganizationPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

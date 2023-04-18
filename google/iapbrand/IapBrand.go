@@ -2,14 +2,14 @@ package iapbrand
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/iapbrand/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/iapbrand/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/iap_brand google_iap_brand}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iap_brand google_iap_brand}.
 type IapBrand interface {
 	cdktf.TerraformResource
 	ApplicationTitle() *string
@@ -24,9 +24,9 @@ type IapBrand interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -171,8 +171,8 @@ func (j *jsiiProxy_IapBrand) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IapBrand) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IapBrand) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,7 +402,7 @@ func (j *jsiiProxy_IapBrand) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/iap_brand google_iap_brand} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iap_brand google_iap_brand} Resource.
 func NewIapBrand(scope constructs.Construct, id *string, config *IapBrandConfig) IapBrand {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewIapBrand(scope constructs.Construct, id *string, config *IapBrandConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/iap_brand google_iap_brand} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iap_brand google_iap_brand} Resource.
 func NewIapBrand_Override(i IapBrand, scope constructs.Construct, id *string, config *IapBrandConfig) {
 	_init_.Initialize()
 
@@ -453,7 +453,10 @@ func (j *jsiiProxy_IapBrand)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IapBrand)SetCount(val *float64) {
+func (j *jsiiProxy_IapBrand)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

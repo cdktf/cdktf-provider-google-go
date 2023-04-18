@@ -72,6 +72,10 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterResource) validateSetConn
 	return nil
 }
 
+func (j *jsiiProxy_AccessContextManagerServicePerimeterResource) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessContextManagerServicePerimeterResource) validateSetIdParameters(val *string) error {
 	return nil
 }

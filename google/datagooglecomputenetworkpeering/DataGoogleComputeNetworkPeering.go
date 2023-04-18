@@ -2,14 +2,14 @@ package datagooglecomputenetworkpeering
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglecomputenetworkpeering/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglecomputenetworkpeering/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/compute_network_peering google_compute_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/compute_network_peering google_compute_network_peering}.
 type DataGoogleComputeNetworkPeering interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGoogleComputeNetworkPeering interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataGoogleComputeNetworkPeering) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkPeering) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleComputeNetworkPeering) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -405,7 +405,7 @@ func (j *jsiiProxy_DataGoogleComputeNetworkPeering) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/compute_network_peering google_compute_network_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/compute_network_peering google_compute_network_peering} Data Source.
 func NewDataGoogleComputeNetworkPeering(scope constructs.Construct, id *string, config *DataGoogleComputeNetworkPeeringConfig) DataGoogleComputeNetworkPeering {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewDataGoogleComputeNetworkPeering(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/compute_network_peering google_compute_network_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/compute_network_peering google_compute_network_peering} Data Source.
 func NewDataGoogleComputeNetworkPeering_Override(d DataGoogleComputeNetworkPeering, scope constructs.Construct, id *string, config *DataGoogleComputeNetworkPeeringConfig) {
 	_init_.Initialize()
 
@@ -434,7 +434,10 @@ func NewDataGoogleComputeNetworkPeering_Override(d DataGoogleComputeNetworkPeeri
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkPeering)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleComputeNetworkPeering)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

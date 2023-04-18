@@ -2,14 +2,14 @@ package datastoreindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datastoreindex/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datastoreindex/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/datastore_index google_datastore_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/datastore_index google_datastore_index}.
 type DatastoreIndex interface {
 	cdktf.TerraformResource
 	Ancestor() *string
@@ -24,9 +24,9 @@ type DatastoreIndex interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -175,8 +175,8 @@ func (j *jsiiProxy_DatastoreIndex) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_DatastoreIndex) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DatastoreIndex) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -416,7 +416,7 @@ func (j *jsiiProxy_DatastoreIndex) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/datastore_index google_datastore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/datastore_index google_datastore_index} Resource.
 func NewDatastoreIndex(scope constructs.Construct, id *string, config *DatastoreIndexConfig) DatastoreIndex {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewDatastoreIndex(scope constructs.Construct, id *string, config *Datastore
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/datastore_index google_datastore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/datastore_index google_datastore_index} Resource.
 func NewDatastoreIndex_Override(d DatastoreIndex, scope constructs.Construct, id *string, config *DatastoreIndexConfig) {
 	_init_.Initialize()
 
@@ -467,7 +467,10 @@ func (j *jsiiProxy_DatastoreIndex)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatastoreIndex)SetCount(val *float64) {
+func (j *jsiiProxy_DatastoreIndex)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataflowJob) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataflowJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataflowJob) validateSetEnableStreamingEngineParameters(val interface{}) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_CloudiotRegistryIamBinding) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_CloudiotRegistryIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudiotRegistryIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package apigeeinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/apigeeinstance/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/apigeeinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/apigee_instance google_apigee_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/apigee_instance google_apigee_instance}.
 type ApigeeInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type ApigeeInstance interface {
 	SetConsumerAcceptList(val *[]*string)
 	ConsumerAcceptListInput() *[]*string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -195,8 +195,8 @@ func (j *jsiiProxy_ApigeeInstance) ConsumerAcceptListInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeInstance) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApigeeInstance) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -556,7 +556,7 @@ func (j *jsiiProxy_ApigeeInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/apigee_instance google_apigee_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/apigee_instance google_apigee_instance} Resource.
 func NewApigeeInstance(scope constructs.Construct, id *string, config *ApigeeInstanceConfig) ApigeeInstance {
 	_init_.Initialize()
 
@@ -574,7 +574,7 @@ func NewApigeeInstance(scope constructs.Construct, id *string, config *ApigeeIns
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/apigee_instance google_apigee_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/apigee_instance google_apigee_instance} Resource.
 func NewApigeeInstance_Override(a ApigeeInstance, scope constructs.Construct, id *string, config *ApigeeInstanceConfig) {
 	_init_.Initialize()
 
@@ -607,7 +607,10 @@ func (j *jsiiProxy_ApigeeInstance)SetConsumerAcceptList(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeInstance)SetCount(val *float64) {
+func (j *jsiiProxy_ApigeeInstance)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

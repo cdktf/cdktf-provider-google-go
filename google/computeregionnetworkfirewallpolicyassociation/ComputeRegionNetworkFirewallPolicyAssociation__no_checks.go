@@ -76,6 +76,10 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateSetCon
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) validateSetFirewallPolicyParameters(val *string) error {
 	return nil
 }

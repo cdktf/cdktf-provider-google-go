@@ -2,14 +2,14 @@ package kmscryptokeyiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/kmscryptokeyiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/kmscryptokeyiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy}.
 type KmsCryptoKeyIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type KmsCryptoKeyIamPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CryptoKeyId() *string
 	SetCryptoKeyId(val *string)
 	CryptoKeyIdInput() *string
@@ -142,8 +142,8 @@ func (j *jsiiProxy_KmsCryptoKeyIamPolicy) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_KmsCryptoKeyIamPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -343,7 +343,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy} Resource.
 func NewKmsCryptoKeyIamPolicy(scope constructs.Construct, id *string, config *KmsCryptoKeyIamPolicyConfig) KmsCryptoKeyIamPolicy {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewKmsCryptoKeyIamPolicy(scope constructs.Construct, id *string, config *Km
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy} Resource.
 func NewKmsCryptoKeyIamPolicy_Override(k KmsCryptoKeyIamPolicy, scope constructs.Construct, id *string, config *KmsCryptoKeyIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func (j *jsiiProxy_KmsCryptoKeyIamPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_KmsCryptoKeyIamPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_KmsKeyRing) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_KmsKeyRing) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsKeyRing) validateSetIdParameters(val *string) error {
 	return nil
 }

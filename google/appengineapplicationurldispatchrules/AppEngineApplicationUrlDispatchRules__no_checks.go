@@ -76,6 +76,10 @@ func (j *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppEngineApplicationUrlDispatchRules) validateSetIdParameters(val *string) error {
 	return nil
 }

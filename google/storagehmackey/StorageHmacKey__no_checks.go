@@ -72,6 +72,10 @@ func (j *jsiiProxy_StorageHmacKey) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_StorageHmacKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageHmacKey) validateSetIdParameters(val *string) error {
 	return nil
 }

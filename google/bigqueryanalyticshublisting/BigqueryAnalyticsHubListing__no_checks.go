@@ -88,6 +88,10 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryAnalyticsHubListing) validateSetDataExchangeIdParameters(val *string) error {
 	return nil
 }

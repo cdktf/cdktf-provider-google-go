@@ -76,6 +76,10 @@ func (j *jsiiProxy_StorageObjectAccessControl) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_StorageObjectAccessControl) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageObjectAccessControl) validateSetEntityParameters(val *string) error {
 	return nil
 }

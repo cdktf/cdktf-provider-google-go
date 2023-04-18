@@ -72,6 +72,10 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

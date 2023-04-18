@@ -2,14 +2,14 @@ package identityplatformconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/identityplatformconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/identityplatformconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/identity_platform_config google_identity_platform_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/identity_platform_config google_identity_platform_config}.
 type IdentityPlatformConfig interface {
 	cdktf.TerraformResource
 	AutodeleteAnonymousUsers() interface{}
@@ -24,9 +24,9 @@ type IdentityPlatformConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -168,8 +168,8 @@ func (j *jsiiProxy_IdentityPlatformConfig) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IdentityPlatformConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -369,7 +369,7 @@ func (j *jsiiProxy_IdentityPlatformConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/identity_platform_config google_identity_platform_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/identity_platform_config google_identity_platform_config} Resource.
 func NewIdentityPlatformConfig(scope constructs.Construct, id *string, config *IdentityPlatformConfigConfig) IdentityPlatformConfig {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewIdentityPlatformConfig(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/identity_platform_config google_identity_platform_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/identity_platform_config google_identity_platform_config} Resource.
 func NewIdentityPlatformConfig_Override(i IdentityPlatformConfig, scope constructs.Construct, id *string, config *IdentityPlatformConfigConfig) {
 	_init_.Initialize()
 
@@ -420,7 +420,10 @@ func (j *jsiiProxy_IdentityPlatformConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformConfig)SetCount(val *float64) {
+func (j *jsiiProxy_IdentityPlatformConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

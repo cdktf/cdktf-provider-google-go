@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGoogleStorageBucketObject) validateSetBucketParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleStorageBucketObject) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleStorageBucketObject) validateSetIdParameters(val *string) error {
 	return nil
 }

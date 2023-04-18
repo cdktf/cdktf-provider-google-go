@@ -2,14 +2,14 @@ package vertexaifeaturestore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/vertexaifeaturestore/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/vertexaifeaturestore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/vertex_ai_featurestore google_vertex_ai_featurestore}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/vertex_ai_featurestore google_vertex_ai_featurestore}.
 type VertexAiFeaturestore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type VertexAiFeaturestore interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -170,8 +170,8 @@ func (j *jsiiProxy_VertexAiFeaturestore) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeaturestore) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VertexAiFeaturestore) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -511,7 +511,7 @@ func (j *jsiiProxy_VertexAiFeaturestore) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/vertex_ai_featurestore google_vertex_ai_featurestore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/vertex_ai_featurestore google_vertex_ai_featurestore} Resource.
 func NewVertexAiFeaturestore(scope constructs.Construct, id *string, config *VertexAiFeaturestoreConfig) VertexAiFeaturestore {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewVertexAiFeaturestore(scope constructs.Construct, id *string, config *Ver
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/vertex_ai_featurestore google_vertex_ai_featurestore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/vertex_ai_featurestore google_vertex_ai_featurestore} Resource.
 func NewVertexAiFeaturestore_Override(v VertexAiFeaturestore, scope constructs.Construct, id *string, config *VertexAiFeaturestoreConfig) {
 	_init_.Initialize()
 
@@ -551,7 +551,10 @@ func (j *jsiiProxy_VertexAiFeaturestore)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeaturestore)SetCount(val *float64) {
+func (j *jsiiProxy_VertexAiFeaturestore)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package computefirewall
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/computefirewall/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/computefirewall/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/compute_firewall google_compute_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_firewall google_compute_firewall}.
 type ComputeFirewall interface {
 	cdktf.TerraformResource
 	Allow() ComputeFirewallAllowList
@@ -23,9 +23,9 @@ type ComputeFirewall interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationTimestamp() *string
 	Deny() ComputeFirewallDenyList
 	DenyInput() interface{}
@@ -227,8 +227,8 @@ func (j *jsiiProxy_ComputeFirewall) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_ComputeFirewall) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ComputeFirewall) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -738,7 +738,7 @@ func (j *jsiiProxy_ComputeFirewall) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_firewall google_compute_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_firewall google_compute_firewall} Resource.
 func NewComputeFirewall(scope constructs.Construct, id *string, config *ComputeFirewallConfig) ComputeFirewall {
 	_init_.Initialize()
 
@@ -756,7 +756,7 @@ func NewComputeFirewall(scope constructs.Construct, id *string, config *ComputeF
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_firewall google_compute_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_firewall google_compute_firewall} Resource.
 func NewComputeFirewall_Override(c ComputeFirewall, scope constructs.Construct, id *string, config *ComputeFirewallConfig) {
 	_init_.Initialize()
 
@@ -778,7 +778,10 @@ func (j *jsiiProxy_ComputeFirewall)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeFirewall)SetCount(val *float64) {
+func (j *jsiiProxy_ComputeFirewall)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

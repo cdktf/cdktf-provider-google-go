@@ -72,6 +72,10 @@ func (j *jsiiProxy_ApigeeNatAddress) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_ApigeeNatAddress) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigeeNatAddress) validateSetIdParameters(val *string) error {
 	return nil
 }

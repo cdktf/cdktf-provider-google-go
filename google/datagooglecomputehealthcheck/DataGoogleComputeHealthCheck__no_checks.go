@@ -64,6 +64,10 @@ func validateDataGoogleComputeHealthCheck_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComputeHealthCheck) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeHealthCheck) validateSetIdParameters(val *string) error {
 	return nil
 }

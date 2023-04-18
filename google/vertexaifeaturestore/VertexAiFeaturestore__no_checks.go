@@ -80,6 +80,10 @@ func (j *jsiiProxy_VertexAiFeaturestore) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_VertexAiFeaturestore) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VertexAiFeaturestore) validateSetForceDestroyParameters(val interface{}) error {
 	return nil
 }

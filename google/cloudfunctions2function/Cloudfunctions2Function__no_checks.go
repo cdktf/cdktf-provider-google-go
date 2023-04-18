@@ -84,6 +84,10 @@ func (j *jsiiProxy_Cloudfunctions2Function) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_Cloudfunctions2Function) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cloudfunctions2Function) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

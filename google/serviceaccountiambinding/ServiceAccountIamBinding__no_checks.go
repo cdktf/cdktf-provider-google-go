@@ -72,6 +72,10 @@ func (j *jsiiProxy_ServiceAccountIamBinding) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ServiceAccountIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceAccountIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

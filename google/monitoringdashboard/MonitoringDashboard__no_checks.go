@@ -72,6 +72,10 @@ func (j *jsiiProxy_MonitoringDashboard) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_MonitoringDashboard) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringDashboard) validateSetDashboardJsonParameters(val *string) error {
 	return nil
 }

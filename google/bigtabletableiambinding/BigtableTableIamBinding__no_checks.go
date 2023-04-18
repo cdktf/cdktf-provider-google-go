@@ -72,6 +72,10 @@ func (j *jsiiProxy_BigtableTableIamBinding) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_BigtableTableIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigtableTableIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

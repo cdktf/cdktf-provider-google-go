@@ -80,6 +80,10 @@ func (j *jsiiProxy_OrganizationAccessApprovalSettings) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_OrganizationAccessApprovalSettings) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrganizationAccessApprovalSettings) validateSetIdParameters(val *string) error {
 	return nil
 }

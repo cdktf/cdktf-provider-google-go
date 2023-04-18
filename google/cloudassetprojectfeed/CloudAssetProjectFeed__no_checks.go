@@ -96,6 +96,10 @@ func (j *jsiiProxy_CloudAssetProjectFeed) validateSetContentTypeParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_CloudAssetProjectFeed) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudAssetProjectFeed) validateSetFeedIdParameters(val *string) error {
 	return nil
 }

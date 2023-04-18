@@ -64,6 +64,10 @@ func validateDataGoogleCloudRunLocations_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleCloudRunLocations) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleCloudRunLocations) validateSetIdParameters(val *string) error {
 	return nil
 }

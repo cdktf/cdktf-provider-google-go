@@ -2,14 +2,14 @@ package datacatalogentrygroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datacatalogentrygroup/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datacatalogentrygroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/data_catalog_entry_group google_data_catalog_entry_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/data_catalog_entry_group google_data_catalog_entry_group}.
 type DataCatalogEntryGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DataCatalogEntryGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataCatalogEntryGroup) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogEntryGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCatalogEntryGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -440,7 +440,7 @@ func (j *jsiiProxy_DataCatalogEntryGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/data_catalog_entry_group google_data_catalog_entry_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/data_catalog_entry_group google_data_catalog_entry_group} Resource.
 func NewDataCatalogEntryGroup(scope constructs.Construct, id *string, config *DataCatalogEntryGroupConfig) DataCatalogEntryGroup {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewDataCatalogEntryGroup(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/data_catalog_entry_group google_data_catalog_entry_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/data_catalog_entry_group google_data_catalog_entry_group} Resource.
 func NewDataCatalogEntryGroup_Override(d DataCatalogEntryGroup, scope constructs.Construct, id *string, config *DataCatalogEntryGroupConfig) {
 	_init_.Initialize()
 
@@ -480,7 +480,10 @@ func (j *jsiiProxy_DataCatalogEntryGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataCatalogEntryGroup)SetCount(val *float64) {
+func (j *jsiiProxy_DataCatalogEntryGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

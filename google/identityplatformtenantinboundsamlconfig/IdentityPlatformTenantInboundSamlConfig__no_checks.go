@@ -80,6 +80,10 @@ func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

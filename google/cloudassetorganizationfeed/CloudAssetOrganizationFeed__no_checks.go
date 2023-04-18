@@ -96,6 +96,10 @@ func (j *jsiiProxy_CloudAssetOrganizationFeed) validateSetContentTypeParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CloudAssetOrganizationFeed) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudAssetOrganizationFeed) validateSetFeedIdParameters(val *string) error {
 	return nil
 }

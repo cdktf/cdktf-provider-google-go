@@ -72,6 +72,10 @@ func (j *jsiiProxy_HealthcareDicomStoreIamBinding) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareDicomStoreIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareDicomStoreIamBinding) validateSetDicomStoreIdParameters(val *string) error {
 	return nil
 }

@@ -84,6 +84,10 @@ func (j *jsiiProxy_ComputeDisk) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_ComputeDisk) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeDisk) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

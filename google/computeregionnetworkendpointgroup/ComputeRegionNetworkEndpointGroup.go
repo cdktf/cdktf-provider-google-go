@@ -2,14 +2,14 @@ package computeregionnetworkendpointgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/computeregionnetworkendpointgroup/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/computeregionnetworkendpointgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/compute_region_network_endpoint_group google_compute_region_network_endpoint_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group}.
 type ComputeRegionNetworkEndpointGroup interface {
 	cdktf.TerraformResource
 	AppEngine() ComputeRegionNetworkEndpointGroupAppEngineOutputReference
@@ -27,9 +27,9 @@ type ComputeRegionNetworkEndpointGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -242,8 +242,8 @@ func (j *jsiiProxy_ComputeRegionNetworkEndpointGroup) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkEndpointGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ComputeRegionNetworkEndpointGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -583,7 +583,7 @@ func (j *jsiiProxy_ComputeRegionNetworkEndpointGroup) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource.
 func NewComputeRegionNetworkEndpointGroup(scope constructs.Construct, id *string, config *ComputeRegionNetworkEndpointGroupConfig) ComputeRegionNetworkEndpointGroup {
 	_init_.Initialize()
 
@@ -601,7 +601,7 @@ func NewComputeRegionNetworkEndpointGroup(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource.
 func NewComputeRegionNetworkEndpointGroup_Override(c ComputeRegionNetworkEndpointGroup, scope constructs.Construct, id *string, config *ComputeRegionNetworkEndpointGroupConfig) {
 	_init_.Initialize()
 
@@ -623,7 +623,10 @@ func (j *jsiiProxy_ComputeRegionNetworkEndpointGroup)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkEndpointGroup)SetCount(val *float64) {
+func (j *jsiiProxy_ComputeRegionNetworkEndpointGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

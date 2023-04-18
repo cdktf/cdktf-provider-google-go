@@ -64,6 +64,10 @@ func validateDataGoogleComputeLbIpRanges_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComputeLbIpRanges) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeLbIpRanges) validateSetIdParameters(val *string) error {
 	return nil
 }

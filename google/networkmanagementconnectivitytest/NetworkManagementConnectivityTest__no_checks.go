@@ -80,6 +80,10 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

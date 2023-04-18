@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataprocAutoscalingPolicyIamMember) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_DataprocAutoscalingPolicyIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocAutoscalingPolicyIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -92,6 +92,10 @@ func (j *jsiiProxy_DnsManagedZone) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_DnsManagedZone) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DnsManagedZone) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

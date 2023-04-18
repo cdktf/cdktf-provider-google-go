@@ -72,6 +72,10 @@ func (j *jsiiProxy_ComputeSharedVpcHostProject) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSharedVpcHostProject) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSharedVpcHostProject) validateSetIdParameters(val *string) error {
 	return nil
 }

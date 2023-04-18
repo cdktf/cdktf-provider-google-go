@@ -72,6 +72,10 @@ func (j *jsiiProxy_StorageNotification) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_StorageNotification) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageNotification) validateSetCustomAttributesParameters(val *map[string]*string) error {
 	return nil
 }

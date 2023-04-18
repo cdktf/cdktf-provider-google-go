@@ -76,6 +76,10 @@ func (j *jsiiProxy_VpcAccessConnector) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_VpcAccessConnector) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcAccessConnector) validateSetIdParameters(val *string) error {
 	return nil
 }

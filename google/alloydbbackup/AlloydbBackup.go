@@ -2,14 +2,14 @@ package alloydbbackup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/alloydbbackup/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/alloydbbackup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/alloydb_backup google_alloydb_backup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/alloydb_backup google_alloydb_backup}.
 type AlloydbBackup interface {
 	cdktf.TerraformResource
 	BackupId() *string
@@ -27,9 +27,9 @@ type AlloydbBackup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -208,8 +208,8 @@ func (j *jsiiProxy_AlloydbBackup) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbBackup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AlloydbBackup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -529,7 +529,7 @@ func (j *jsiiProxy_AlloydbBackup) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/alloydb_backup google_alloydb_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/alloydb_backup google_alloydb_backup} Resource.
 func NewAlloydbBackup(scope constructs.Construct, id *string, config *AlloydbBackupConfig) AlloydbBackup {
 	_init_.Initialize()
 
@@ -547,7 +547,7 @@ func NewAlloydbBackup(scope constructs.Construct, id *string, config *AlloydbBac
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/alloydb_backup google_alloydb_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/alloydb_backup google_alloydb_backup} Resource.
 func NewAlloydbBackup_Override(a AlloydbBackup, scope constructs.Construct, id *string, config *AlloydbBackupConfig) {
 	_init_.Initialize()
 
@@ -591,7 +591,10 @@ func (j *jsiiProxy_AlloydbBackup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlloydbBackup)SetCount(val *float64) {
+func (j *jsiiProxy_AlloydbBackup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

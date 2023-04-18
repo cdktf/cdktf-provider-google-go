@@ -72,6 +72,10 @@ func (j *jsiiProxy_HealthcareConsentStore) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareConsentStore) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareConsentStore) validateSetDatasetParameters(val *string) error {
 	return nil
 }

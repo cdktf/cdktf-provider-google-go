@@ -64,6 +64,10 @@ func validateDataGoogleComputeResourcePolicy_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComputeResourcePolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeResourcePolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

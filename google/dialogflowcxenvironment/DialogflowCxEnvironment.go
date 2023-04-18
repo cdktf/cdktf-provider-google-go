@@ -2,14 +2,14 @@ package dialogflowcxenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/dialogflowcxenvironment/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/dialogflowcxenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/dialogflow_cx_environment google_dialogflow_cx_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dialogflow_cx_environment google_dialogflow_cx_environment}.
 type DialogflowCxEnvironment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DialogflowCxEnvironment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -155,8 +155,8 @@ func (j *jsiiProxy_DialogflowCxEnvironment) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxEnvironment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DialogflowCxEnvironment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -426,7 +426,7 @@ func (j *jsiiProxy_DialogflowCxEnvironment) VersionConfigsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/dialogflow_cx_environment google_dialogflow_cx_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dialogflow_cx_environment google_dialogflow_cx_environment} Resource.
 func NewDialogflowCxEnvironment(scope constructs.Construct, id *string, config *DialogflowCxEnvironmentConfig) DialogflowCxEnvironment {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewDialogflowCxEnvironment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/dialogflow_cx_environment google_dialogflow_cx_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dialogflow_cx_environment google_dialogflow_cx_environment} Resource.
 func NewDialogflowCxEnvironment_Override(d DialogflowCxEnvironment, scope constructs.Construct, id *string, config *DialogflowCxEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -466,7 +466,10 @@ func (j *jsiiProxy_DialogflowCxEnvironment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxEnvironment)SetCount(val *float64) {
+func (j *jsiiProxy_DialogflowCxEnvironment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

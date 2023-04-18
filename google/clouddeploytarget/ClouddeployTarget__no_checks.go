@@ -92,6 +92,10 @@ func (j *jsiiProxy_ClouddeployTarget) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_ClouddeployTarget) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClouddeployTarget) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_AppEngineDomainMapping) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_AppEngineDomainMapping) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppEngineDomainMapping) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

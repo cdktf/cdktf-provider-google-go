@@ -64,6 +64,10 @@ func validateDataGoogleKmsKeyRing_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleKmsKeyRing) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleKmsKeyRing) validateSetIdParameters(val *string) error {
 	return nil
 }

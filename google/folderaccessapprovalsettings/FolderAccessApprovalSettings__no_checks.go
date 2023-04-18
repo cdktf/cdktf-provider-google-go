@@ -80,6 +80,10 @@ func (j *jsiiProxy_FolderAccessApprovalSettings) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_FolderAccessApprovalSettings) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FolderAccessApprovalSettings) validateSetFolderIdParameters(val *string) error {
 	return nil
 }

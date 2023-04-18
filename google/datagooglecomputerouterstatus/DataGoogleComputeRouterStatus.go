@@ -2,14 +2,14 @@ package datagooglecomputerouterstatus
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglecomputerouterstatus/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglecomputerouterstatus/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/compute_router_status google_compute_router_status}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/compute_router_status google_compute_router_status}.
 type DataGoogleComputeRouterStatus interface {
 	cdktf.TerraformDataSource
 	BestRoutes() DataGoogleComputeRouterStatusBestRoutesList
@@ -19,9 +19,9 @@ type DataGoogleComputeRouterStatus interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataGoogleComputeRouterStatus) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRouterStatus) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleComputeRouterStatus) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -362,7 +362,7 @@ func (j *jsiiProxy_DataGoogleComputeRouterStatus) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/compute_router_status google_compute_router_status} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/compute_router_status google_compute_router_status} Data Source.
 func NewDataGoogleComputeRouterStatus(scope constructs.Construct, id *string, config *DataGoogleComputeRouterStatusConfig) DataGoogleComputeRouterStatus {
 	_init_.Initialize()
 
@@ -380,7 +380,7 @@ func NewDataGoogleComputeRouterStatus(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/compute_router_status google_compute_router_status} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/compute_router_status google_compute_router_status} Data Source.
 func NewDataGoogleComputeRouterStatus_Override(d DataGoogleComputeRouterStatus, scope constructs.Construct, id *string, config *DataGoogleComputeRouterStatusConfig) {
 	_init_.Initialize()
 
@@ -391,7 +391,10 @@ func NewDataGoogleComputeRouterStatus_Override(d DataGoogleComputeRouterStatus, 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRouterStatus)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleComputeRouterStatus)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -100,6 +100,10 @@ func (j *jsiiProxy_CloudfunctionsFunction) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_CloudfunctionsFunction) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfunctionsFunction) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

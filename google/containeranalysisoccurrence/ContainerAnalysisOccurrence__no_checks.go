@@ -76,6 +76,10 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAnalysisOccurrence) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAnalysisOccurrence) validateSetIdParameters(val *string) error {
 	return nil
 }

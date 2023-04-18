@@ -80,6 +80,10 @@ func (j *jsiiProxy_AccessContextManagerAccessLevel) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_AccessContextManagerAccessLevel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessContextManagerAccessLevel) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

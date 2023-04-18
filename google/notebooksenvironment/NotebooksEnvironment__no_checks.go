@@ -80,6 +80,10 @@ func (j *jsiiProxy_NotebooksEnvironment) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_NotebooksEnvironment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotebooksEnvironment) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

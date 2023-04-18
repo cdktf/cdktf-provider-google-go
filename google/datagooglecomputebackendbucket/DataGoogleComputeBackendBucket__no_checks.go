@@ -64,6 +64,10 @@ func validateDataGoogleComputeBackendBucket_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComputeBackendBucket) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeBackendBucket) validateSetIdParameters(val *string) error {
 	return nil
 }

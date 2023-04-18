@@ -72,6 +72,10 @@ func (j *jsiiProxy_BigtableInstance) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_BigtableInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigtableInstance) validateSetDeletionProtectionParameters(val interface{}) error {
 	return nil
 }

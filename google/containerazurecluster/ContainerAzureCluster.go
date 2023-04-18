@@ -2,14 +2,14 @@ package containerazurecluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/containerazurecluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/containerazurecluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/container_azure_cluster google_container_azure_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/container_azure_cluster google_container_azure_cluster}.
 type ContainerAzureCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -36,9 +36,9 @@ type ContainerAzureCluster interface {
 	ControlPlane() ContainerAzureClusterControlPlaneOutputReference
 	ControlPlaneInput() *ContainerAzureClusterControlPlane
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -311,8 +311,8 @@ func (j *jsiiProxy_ContainerAzureCluster) ControlPlaneInput() *ContainerAzureClu
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAzureCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ContainerAzureCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -702,7 +702,7 @@ func (j *jsiiProxy_ContainerAzureCluster) WorkloadIdentityConfig() ContainerAzur
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/container_azure_cluster google_container_azure_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/container_azure_cluster google_container_azure_cluster} Resource.
 func NewContainerAzureCluster(scope constructs.Construct, id *string, config *ContainerAzureClusterConfig) ContainerAzureCluster {
 	_init_.Initialize()
 
@@ -720,7 +720,7 @@ func NewContainerAzureCluster(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/container_azure_cluster google_container_azure_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/container_azure_cluster google_container_azure_cluster} Resource.
 func NewContainerAzureCluster_Override(c ContainerAzureCluster, scope constructs.Construct, id *string, config *ContainerAzureClusterConfig) {
 	_init_.Initialize()
 
@@ -775,7 +775,10 @@ func (j *jsiiProxy_ContainerAzureCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureCluster)SetCount(val *float64) {
+func (j *jsiiProxy_ContainerAzureCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

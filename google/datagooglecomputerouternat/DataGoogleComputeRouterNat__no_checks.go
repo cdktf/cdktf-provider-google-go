@@ -64,6 +64,10 @@ func validateDataGoogleComputeRouterNat_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComputeRouterNat) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeRouterNat) validateSetIdParameters(val *string) error {
 	return nil
 }

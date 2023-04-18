@@ -76,6 +76,10 @@ func (j *jsiiProxy_HealthcareConsentStoreIamBinding) validateSetConsentStoreIdPa
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareConsentStoreIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareConsentStoreIamBinding) validateSetDatasetParameters(val *string) error {
 	return nil
 }

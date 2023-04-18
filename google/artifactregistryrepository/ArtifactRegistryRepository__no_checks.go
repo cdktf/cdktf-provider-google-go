@@ -88,6 +88,10 @@ func (j *jsiiProxy_ArtifactRegistryRepository) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ArtifactRegistryRepository) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ArtifactRegistryRepository) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

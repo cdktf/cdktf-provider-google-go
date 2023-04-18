@@ -88,6 +88,10 @@ func (j *jsiiProxy_ProjectOrganizationPolicy) validateSetConstraintParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ProjectOrganizationPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ProjectOrganizationPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

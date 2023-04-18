@@ -80,6 +80,10 @@ func (j *jsiiProxy_AlloydbBackup) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_AlloydbBackup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlloydbBackup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

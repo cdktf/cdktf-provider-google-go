@@ -76,6 +76,10 @@ func (j *jsiiProxy_ComputeSslCertificate) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSslCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSslCertificate) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package iaptunneliammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/iaptunneliammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/iaptunneliammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/iap_tunnel_iam_member google_iap_tunnel_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iap_tunnel_iam_member google_iap_tunnel_iam_member}.
 type IapTunnelIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type IapTunnelIamMember interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -170,8 +170,8 @@ func (j *jsiiProxy_IapTunnelIamMember) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_IapTunnelIamMember) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IapTunnelIamMember) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_IapTunnelIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/iap_tunnel_iam_member google_iap_tunnel_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iap_tunnel_iam_member google_iap_tunnel_iam_member} Resource.
 func NewIapTunnelIamMember(scope constructs.Construct, id *string, config *IapTunnelIamMemberConfig) IapTunnelIamMember {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewIapTunnelIamMember(scope constructs.Construct, id *string, config *IapTu
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/iap_tunnel_iam_member google_iap_tunnel_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iap_tunnel_iam_member google_iap_tunnel_iam_member} Resource.
 func NewIapTunnelIamMember_Override(i IapTunnelIamMember, scope constructs.Construct, id *string, config *IapTunnelIamMemberConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_IapTunnelIamMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IapTunnelIamMember)SetCount(val *float64) {
+func (j *jsiiProxy_IapTunnelIamMember)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

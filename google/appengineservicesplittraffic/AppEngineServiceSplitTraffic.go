@@ -2,14 +2,14 @@ package appengineservicesplittraffic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/appengineservicesplittraffic/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/appengineservicesplittraffic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/app_engine_service_split_traffic google_app_engine_service_split_traffic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/app_engine_service_split_traffic google_app_engine_service_split_traffic}.
 type AppEngineServiceSplitTraffic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type AppEngineServiceSplitTraffic interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -153,8 +153,8 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppEngineServiceSplitTraffic) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -404,7 +404,7 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/app_engine_service_split_traffic google_app_engine_service_split_traffic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/app_engine_service_split_traffic google_app_engine_service_split_traffic} Resource.
 func NewAppEngineServiceSplitTraffic(scope constructs.Construct, id *string, config *AppEngineServiceSplitTrafficConfig) AppEngineServiceSplitTraffic {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewAppEngineServiceSplitTraffic(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/app_engine_service_split_traffic google_app_engine_service_split_traffic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/app_engine_service_split_traffic google_app_engine_service_split_traffic} Resource.
 func NewAppEngineServiceSplitTraffic_Override(a AppEngineServiceSplitTraffic, scope constructs.Construct, id *string, config *AppEngineServiceSplitTrafficConfig) {
 	_init_.Initialize()
 
@@ -444,7 +444,10 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetCount(val *float64) {
+func (j *jsiiProxy_AppEngineServiceSplitTraffic)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

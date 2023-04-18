@@ -84,6 +84,10 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_PrivatecaCertificateTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivatecaCertificateTemplate) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

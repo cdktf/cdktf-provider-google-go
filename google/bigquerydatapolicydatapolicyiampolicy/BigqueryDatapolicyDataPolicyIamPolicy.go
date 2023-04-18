@@ -2,14 +2,14 @@ package bigquerydatapolicydatapolicyiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/bigquerydatapolicydatapolicyiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/bigquerydatapolicydatapolicyiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/bigquery_datapolicy_data_policy_iam_policy google_bigquery_datapolicy_data_policy_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/bigquery_datapolicy_data_policy_iam_policy google_bigquery_datapolicy_data_policy_iam_policy}.
 type BigqueryDatapolicyDataPolicyIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type BigqueryDatapolicyDataPolicyIamPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataPolicyId() *string
 	SetDataPolicyId(val *string)
 	DataPolicyIdInput() *string
@@ -150,8 +150,8 @@ func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamPolicy) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamPolicy) TerraformResourceType(
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/bigquery_datapolicy_data_policy_iam_policy google_bigquery_datapolicy_data_policy_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/bigquery_datapolicy_data_policy_iam_policy google_bigquery_datapolicy_data_policy_iam_policy} Resource.
 func NewBigqueryDatapolicyDataPolicyIamPolicy(scope constructs.Construct, id *string, config *BigqueryDatapolicyDataPolicyIamPolicyConfig) BigqueryDatapolicyDataPolicyIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewBigqueryDatapolicyDataPolicyIamPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/bigquery_datapolicy_data_policy_iam_policy google_bigquery_datapolicy_data_policy_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/bigquery_datapolicy_data_policy_iam_policy google_bigquery_datapolicy_data_policy_iam_policy} Resource.
 func NewBigqueryDatapolicyDataPolicyIamPolicy_Override(b BigqueryDatapolicyDataPolicyIamPolicy, scope constructs.Construct, id *string, config *BigqueryDatapolicyDataPolicyIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamPolicy)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package datagooglecomputenetworkendpointgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglecomputenetworkendpointgroup/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglecomputenetworkendpointgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/compute_network_endpoint_group google_compute_network_endpoint_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/compute_network_endpoint_group google_compute_network_endpoint_group}.
 type DataGoogleComputeNetworkEndpointGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGoogleComputeNetworkEndpointGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultPort() *float64
 	// Experimental.
 	DependsOn() *[]*string
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroup) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -420,7 +420,7 @@ func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroup) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/compute_network_endpoint_group google_compute_network_endpoint_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/compute_network_endpoint_group google_compute_network_endpoint_group} Data Source.
 func NewDataGoogleComputeNetworkEndpointGroup(scope constructs.Construct, id *string, config *DataGoogleComputeNetworkEndpointGroupConfig) DataGoogleComputeNetworkEndpointGroup {
 	_init_.Initialize()
 
@@ -438,7 +438,7 @@ func NewDataGoogleComputeNetworkEndpointGroup(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/compute_network_endpoint_group google_compute_network_endpoint_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/compute_network_endpoint_group google_compute_network_endpoint_group} Data Source.
 func NewDataGoogleComputeNetworkEndpointGroup_Override(d DataGoogleComputeNetworkEndpointGroup, scope constructs.Construct, id *string, config *DataGoogleComputeNetworkEndpointGroupConfig) {
 	_init_.Initialize()
 
@@ -449,7 +449,10 @@ func NewDataGoogleComputeNetworkEndpointGroup_Override(d DataGoogleComputeNetwor
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroup)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleComputeNetworkEndpointGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

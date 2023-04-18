@@ -4,7 +4,7 @@ package dialogflowcxpage
 type DialogflowCxPageEventHandlersTriggerFulfillmentMessages struct {
 	// text block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google/r/dialogflow_cx_page#text DialogflowCxPage#text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
 	Text *DialogflowCxPageEventHandlersTriggerFulfillmentMessagesText `field:"optional" json:"text" yaml:"text"`
 }
 

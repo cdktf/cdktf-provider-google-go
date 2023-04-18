@@ -84,6 +84,10 @@ func (j *jsiiProxy_ComputeBackendBucket) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendBucket) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendBucket) validateSetCustomResponseHeadersParameters(val *[]*string) error {
 	return nil
 }

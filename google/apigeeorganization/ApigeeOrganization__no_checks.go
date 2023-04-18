@@ -88,6 +88,10 @@ func (j *jsiiProxy_ApigeeOrganization) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_ApigeeOrganization) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigeeOrganization) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

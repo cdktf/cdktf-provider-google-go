@@ -76,6 +76,10 @@ func (j *jsiiProxy_ContainerAzureClient) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAzureClient) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAzureClient) validateSetIdParameters(val *string) error {
 	return nil
 }

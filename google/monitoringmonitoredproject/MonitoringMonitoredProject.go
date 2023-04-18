@@ -2,14 +2,14 @@ package monitoringmonitoredproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/monitoringmonitoredproject/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/monitoringmonitoredproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/monitoring_monitored_project google_monitoring_monitored_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/monitoring_monitored_project google_monitoring_monitored_project}.
 type MonitoringMonitoredProject interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MonitoringMonitoredProject interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -146,8 +146,8 @@ func (j *jsiiProxy_MonitoringMonitoredProject) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringMonitoredProject) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MonitoringMonitoredProject) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -367,7 +367,7 @@ func (j *jsiiProxy_MonitoringMonitoredProject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/monitoring_monitored_project google_monitoring_monitored_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/monitoring_monitored_project google_monitoring_monitored_project} Resource.
 func NewMonitoringMonitoredProject(scope constructs.Construct, id *string, config *MonitoringMonitoredProjectConfig) MonitoringMonitoredProject {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewMonitoringMonitoredProject(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/monitoring_monitored_project google_monitoring_monitored_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/monitoring_monitored_project google_monitoring_monitored_project} Resource.
 func NewMonitoringMonitoredProject_Override(m MonitoringMonitoredProject, scope constructs.Construct, id *string, config *MonitoringMonitoredProjectConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_MonitoringMonitoredProject)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringMonitoredProject)SetCount(val *float64) {
+func (j *jsiiProxy_MonitoringMonitoredProject)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -84,6 +84,10 @@ func (j *jsiiProxy_ComputeNodeGroup) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_ComputeNodeGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeNodeGroup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

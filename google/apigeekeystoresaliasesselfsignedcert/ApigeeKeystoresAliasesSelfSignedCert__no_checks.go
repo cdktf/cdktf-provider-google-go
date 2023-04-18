@@ -88,6 +88,10 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateSetEnvironmentParameters(val *string) error {
 	return nil
 }

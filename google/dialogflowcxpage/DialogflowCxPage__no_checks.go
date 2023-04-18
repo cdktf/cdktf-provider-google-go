@@ -88,6 +88,10 @@ func (j *jsiiProxy_DialogflowCxPage) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_DialogflowCxPage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxPage) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

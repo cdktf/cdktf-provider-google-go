@@ -96,6 +96,10 @@ func (j *jsiiProxy_ComputeUrlMap) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_ComputeUrlMap) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeUrlMap) validateSetDefaultServiceParameters(val *string) error {
 	return nil
 }

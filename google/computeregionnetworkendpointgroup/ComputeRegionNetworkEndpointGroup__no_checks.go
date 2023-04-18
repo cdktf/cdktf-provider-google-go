@@ -84,6 +84,10 @@ func (j *jsiiProxy_ComputeRegionNetworkEndpointGroup) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionNetworkEndpointGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionNetworkEndpointGroup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

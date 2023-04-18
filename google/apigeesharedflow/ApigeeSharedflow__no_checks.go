@@ -76,6 +76,10 @@ func (j *jsiiProxy_ApigeeSharedflow) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_ApigeeSharedflow) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigeeSharedflow) validateSetDetectMd5HashParameters(val *string) error {
 	return nil
 }

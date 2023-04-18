@@ -64,6 +64,10 @@ func validateDataGoogleComputeRegionSslCertificate_IsTerraformElementParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComputeRegionSslCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeRegionSslCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

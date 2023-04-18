@@ -2,14 +2,14 @@ package beyondcorpappconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/beyondcorpappconnection/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/beyondcorpappconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/beyondcorp_app_connection google_beyondcorp_app_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/beyondcorp_app_connection google_beyondcorp_app_connection}.
 type BeyondcorpAppConnection interface {
 	cdktf.TerraformResource
 	ApplicationEndpoint() BeyondcorpAppConnectionApplicationEndpointOutputReference
@@ -26,9 +26,9 @@ type BeyondcorpAppConnection interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -213,8 +213,8 @@ func (j *jsiiProxy_BeyondcorpAppConnection) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpAppConnection) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_BeyondcorpAppConnection) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -524,7 +524,7 @@ func (j *jsiiProxy_BeyondcorpAppConnection) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/beyondcorp_app_connection google_beyondcorp_app_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/beyondcorp_app_connection google_beyondcorp_app_connection} Resource.
 func NewBeyondcorpAppConnection(scope constructs.Construct, id *string, config *BeyondcorpAppConnectionConfig) BeyondcorpAppConnection {
 	_init_.Initialize()
 
@@ -542,7 +542,7 @@ func NewBeyondcorpAppConnection(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/beyondcorp_app_connection google_beyondcorp_app_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/beyondcorp_app_connection google_beyondcorp_app_connection} Resource.
 func NewBeyondcorpAppConnection_Override(b BeyondcorpAppConnection, scope constructs.Construct, id *string, config *BeyondcorpAppConnectionConfig) {
 	_init_.Initialize()
 
@@ -575,7 +575,10 @@ func (j *jsiiProxy_BeyondcorpAppConnection)SetConnectors(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpAppConnection)SetCount(val *float64) {
+func (j *jsiiProxy_BeyondcorpAppConnection)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

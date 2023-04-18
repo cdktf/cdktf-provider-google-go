@@ -64,6 +64,10 @@ func validateDataGoogleComputeSubnetwork_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComputeSubnetwork) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeSubnetwork) validateSetIdParameters(val *string) error {
 	return nil
 }

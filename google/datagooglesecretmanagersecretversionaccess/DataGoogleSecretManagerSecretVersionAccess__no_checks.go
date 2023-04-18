@@ -64,6 +64,10 @@ func validateDataGoogleSecretManagerSecretVersionAccess_IsTerraformElementParame
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleSecretManagerSecretVersionAccess) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleSecretManagerSecretVersionAccess) validateSetIdParameters(val *string) error {
 	return nil
 }

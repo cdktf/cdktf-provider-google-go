@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataGoogleStorageObjectSignedUrl) validateSetContentTypeParam
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleStorageObjectSignedUrl) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleStorageObjectSignedUrl) validateSetCredentialsParameters(val *string) error {
 	return nil
 }

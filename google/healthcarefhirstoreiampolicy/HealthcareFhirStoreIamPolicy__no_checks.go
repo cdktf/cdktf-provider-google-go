@@ -68,6 +68,10 @@ func (j *jsiiProxy_HealthcareFhirStoreIamPolicy) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareFhirStoreIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareFhirStoreIamPolicy) validateSetFhirStoreIdParameters(val *string) error {
 	return nil
 }

@@ -88,6 +88,10 @@ func (j *jsiiProxy_MonitoringSlo) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_MonitoringSlo) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringSlo) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

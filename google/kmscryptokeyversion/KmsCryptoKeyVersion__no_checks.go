@@ -72,6 +72,10 @@ func (j *jsiiProxy_KmsCryptoKeyVersion) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_KmsCryptoKeyVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsCryptoKeyVersion) validateSetCryptoKeyParameters(val *string) error {
 	return nil
 }

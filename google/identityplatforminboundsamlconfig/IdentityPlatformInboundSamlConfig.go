@@ -2,14 +2,14 @@ package identityplatforminboundsamlconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/identityplatforminboundsamlconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/identityplatforminboundsamlconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config}.
 type IdentityPlatformInboundSamlConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type IdentityPlatformInboundSamlConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -159,8 +159,8 @@ func (j *jsiiProxy_IdentityPlatformInboundSamlConfig) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformInboundSamlConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IdentityPlatformInboundSamlConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -450,7 +450,7 @@ func (j *jsiiProxy_IdentityPlatformInboundSamlConfig) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config} Resource.
 func NewIdentityPlatformInboundSamlConfig(scope constructs.Construct, id *string, config *IdentityPlatformInboundSamlConfigConfig) IdentityPlatformInboundSamlConfig {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewIdentityPlatformInboundSamlConfig(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config} Resource.
 func NewIdentityPlatformInboundSamlConfig_Override(i IdentityPlatformInboundSamlConfig, scope constructs.Construct, id *string, config *IdentityPlatformInboundSamlConfigConfig) {
 	_init_.Initialize()
 
@@ -490,7 +490,10 @@ func (j *jsiiProxy_IdentityPlatformInboundSamlConfig)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformInboundSamlConfig)SetCount(val *float64) {
+func (j *jsiiProxy_IdentityPlatformInboundSamlConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package datagooglepubsubsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglepubsubsubscription/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglepubsubsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/pubsub_subscription google_pubsub_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/pubsub_subscription google_pubsub_subscription}.
 type DataGooglePubsubSubscription interface {
 	cdktf.TerraformDataSource
 	AckDeadlineSeconds() *float64
@@ -19,9 +19,9 @@ type DataGooglePubsubSubscription interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeadLetterPolicy() DataGooglePubsubSubscriptionDeadLetterPolicyList
 	// Experimental.
 	DependsOn() *[]*string
@@ -157,8 +157,8 @@ func (j *jsiiProxy_DataGooglePubsubSubscription) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscription) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGooglePubsubSubscription) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -448,7 +448,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscription) Topic() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/pubsub_subscription google_pubsub_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/pubsub_subscription google_pubsub_subscription} Data Source.
 func NewDataGooglePubsubSubscription(scope constructs.Construct, id *string, config *DataGooglePubsubSubscriptionConfig) DataGooglePubsubSubscription {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewDataGooglePubsubSubscription(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/pubsub_subscription google_pubsub_subscription} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/pubsub_subscription google_pubsub_subscription} Data Source.
 func NewDataGooglePubsubSubscription_Override(d DataGooglePubsubSubscription, scope constructs.Construct, id *string, config *DataGooglePubsubSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -477,7 +477,10 @@ func NewDataGooglePubsubSubscription_Override(d DataGooglePubsubSubscription, sc
 	)
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscription)SetCount(val *float64) {
+func (j *jsiiProxy_DataGooglePubsubSubscription)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

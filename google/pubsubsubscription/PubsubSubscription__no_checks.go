@@ -96,6 +96,10 @@ func (j *jsiiProxy_PubsubSubscription) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_PubsubSubscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PubsubSubscription) validateSetEnableExactlyOnceDeliveryParameters(val interface{}) error {
 	return nil
 }

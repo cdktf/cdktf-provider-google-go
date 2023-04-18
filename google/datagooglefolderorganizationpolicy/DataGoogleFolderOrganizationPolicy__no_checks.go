@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) validateSetConstraintPara
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleFolderOrganizationPolicy) validateSetFolderParameters(val *string) error {
 	return nil
 }

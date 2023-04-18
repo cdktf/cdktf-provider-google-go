@@ -2,14 +2,14 @@ package pubsublitesubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/pubsublitesubscription/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/pubsublitesubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/pubsub_lite_subscription google_pubsub_lite_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/pubsub_lite_subscription google_pubsub_lite_subscription}.
 type PubsubLiteSubscription interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type PubsubLiteSubscription interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeliveryConfig() PubsubLiteSubscriptionDeliveryConfigOutputReference
 	DeliveryConfigInput() *PubsubLiteSubscriptionDeliveryConfig
 	// Experimental.
@@ -161,8 +161,8 @@ func (j *jsiiProxy_PubsubLiteSubscription) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_PubsubLiteSubscription) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PubsubLiteSubscription) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -452,7 +452,7 @@ func (j *jsiiProxy_PubsubLiteSubscription) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/pubsub_lite_subscription google_pubsub_lite_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/pubsub_lite_subscription google_pubsub_lite_subscription} Resource.
 func NewPubsubLiteSubscription(scope constructs.Construct, id *string, config *PubsubLiteSubscriptionConfig) PubsubLiteSubscription {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewPubsubLiteSubscription(scope constructs.Construct, id *string, config *P
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/pubsub_lite_subscription google_pubsub_lite_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/pubsub_lite_subscription google_pubsub_lite_subscription} Resource.
 func NewPubsubLiteSubscription_Override(p PubsubLiteSubscription, scope constructs.Construct, id *string, config *PubsubLiteSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -492,7 +492,10 @@ func (j *jsiiProxy_PubsubLiteSubscription)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubLiteSubscription)SetCount(val *float64) {
+func (j *jsiiProxy_PubsubLiteSubscription)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

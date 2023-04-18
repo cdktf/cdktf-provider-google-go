@@ -72,6 +72,10 @@ func (j *jsiiProxy_ComputeTargetHttpProxy) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_ComputeTargetHttpProxy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeTargetHttpProxy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

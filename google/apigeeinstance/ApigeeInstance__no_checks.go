@@ -76,6 +76,10 @@ func (j *jsiiProxy_ApigeeInstance) validateSetConsumerAcceptListParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_ApigeeInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigeeInstance) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

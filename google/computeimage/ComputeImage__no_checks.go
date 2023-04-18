@@ -84,6 +84,10 @@ func (j *jsiiProxy_ComputeImage) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_ComputeImage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeImage) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

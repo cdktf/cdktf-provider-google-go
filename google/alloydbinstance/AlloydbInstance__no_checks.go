@@ -92,6 +92,10 @@ func (j *jsiiProxy_AlloydbInstance) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_AlloydbInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlloydbInstance) validateSetDatabaseFlagsParameters(val *map[string]*string) error {
 	return nil
 }

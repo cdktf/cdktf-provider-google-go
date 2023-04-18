@@ -2,14 +2,14 @@ package datagooglecomposerimageversions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglecomposerimageversions/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglecomposerimageversions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/composer_image_versions google_composer_image_versions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/composer_image_versions google_composer_image_versions}.
 type DataGoogleComposerImageVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGoogleComposerImageVersions interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataGoogleComposerImageVersions) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComposerImageVersions) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleComposerImageVersions) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataGoogleComposerImageVersions) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/composer_image_versions google_composer_image_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/composer_image_versions google_composer_image_versions} Data Source.
 func NewDataGoogleComposerImageVersions(scope constructs.Construct, id *string, config *DataGoogleComposerImageVersionsConfig) DataGoogleComposerImageVersions {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataGoogleComposerImageVersions(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/composer_image_versions google_composer_image_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/composer_image_versions google_composer_image_versions} Data Source.
 func NewDataGoogleComposerImageVersions_Override(d DataGoogleComposerImageVersions, scope constructs.Construct, id *string, config *DataGoogleComposerImageVersionsConfig) {
 	_init_.Initialize()
 
@@ -346,7 +346,10 @@ func NewDataGoogleComposerImageVersions_Override(d DataGoogleComposerImageVersio
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComposerImageVersions)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleComposerImageVersions)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

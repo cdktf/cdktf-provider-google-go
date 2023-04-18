@@ -2,14 +2,14 @@ package datafusioninstanceiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datafusioninstanceiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datafusioninstanceiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/data_fusion_instance_iam_policy google_data_fusion_instance_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/data_fusion_instance_iam_policy google_data_fusion_instance_iam_policy}.
 type DataFusionInstanceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DataFusionInstanceIamPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -150,8 +150,8 @@ func (j *jsiiProxy_DataFusionInstanceIamPolicy) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataFusionInstanceIamPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_DataFusionInstanceIamPolicy) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/data_fusion_instance_iam_policy google_data_fusion_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/data_fusion_instance_iam_policy google_data_fusion_instance_iam_policy} Resource.
 func NewDataFusionInstanceIamPolicy(scope constructs.Construct, id *string, config *DataFusionInstanceIamPolicyConfig) DataFusionInstanceIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewDataFusionInstanceIamPolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/data_fusion_instance_iam_policy google_data_fusion_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/data_fusion_instance_iam_policy google_data_fusion_instance_iam_policy} Resource.
 func NewDataFusionInstanceIamPolicy_Override(d DataFusionInstanceIamPolicy, scope constructs.Construct, id *string, config *DataFusionInstanceIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_DataFusionInstanceIamPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_DataFusionInstanceIamPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

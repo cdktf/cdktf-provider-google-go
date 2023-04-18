@@ -2,14 +2,14 @@ package datagooglestoragebucket
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglestoragebucket/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglestoragebucket/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/storage_bucket google_storage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/storage_bucket google_storage_bucket}.
 type DataGoogleStorageBucket interface {
 	cdktf.TerraformDataSource
 	Autoclass() DataGoogleStorageBucketAutoclassList
@@ -19,9 +19,9 @@ type DataGoogleStorageBucket interface {
 	ConstructNodeMetadata() *map[string]interface{}
 	Cors() DataGoogleStorageBucketCorsList
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomPlacementConfig() DataGoogleStorageBucketCustomPlacementConfigList
 	DefaultEventBasedHold() cdktf.IResolvable
 	// Experimental.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_DataGoogleStorageBucket) Cors() DataGoogleStorageBucketCorsLi
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucket) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleStorageBucket) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -501,7 +501,7 @@ func (j *jsiiProxy_DataGoogleStorageBucket) Website() DataGoogleStorageBucketWeb
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/storage_bucket google_storage_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/storage_bucket google_storage_bucket} Data Source.
 func NewDataGoogleStorageBucket(scope constructs.Construct, id *string, config *DataGoogleStorageBucketConfig) DataGoogleStorageBucket {
 	_init_.Initialize()
 
@@ -519,7 +519,7 @@ func NewDataGoogleStorageBucket(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/storage_bucket google_storage_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/storage_bucket google_storage_bucket} Data Source.
 func NewDataGoogleStorageBucket_Override(d DataGoogleStorageBucket, scope constructs.Construct, id *string, config *DataGoogleStorageBucketConfig) {
 	_init_.Initialize()
 
@@ -530,7 +530,10 @@ func NewDataGoogleStorageBucket_Override(d DataGoogleStorageBucket, scope constr
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucket)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleStorageBucket)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

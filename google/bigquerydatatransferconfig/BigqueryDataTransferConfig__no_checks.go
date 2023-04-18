@@ -84,6 +84,10 @@ func (j *jsiiProxy_BigqueryDataTransferConfig) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryDataTransferConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryDataTransferConfig) validateSetDataRefreshWindowDaysParameters(val *float64) error {
 	return nil
 }

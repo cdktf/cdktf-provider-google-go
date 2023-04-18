@@ -64,6 +64,10 @@ func validateDataGoogleComputeHaVpnGateway_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) validateSetIdParameters(val *string) error {
 	return nil
 }

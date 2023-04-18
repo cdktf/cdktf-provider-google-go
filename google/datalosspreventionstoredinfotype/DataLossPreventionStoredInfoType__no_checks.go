@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataLossPreventionStoredInfoType) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

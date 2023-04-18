@@ -2,14 +2,14 @@ package gameservicesgameserverconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/gameservicesgameserverconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/gameservicesgameserverconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/game_services_game_server_config google_game_services_game_server_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/game_services_game_server_config google_game_services_game_server_config}.
 type GameServicesGameServerConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type GameServicesGameServerConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -189,8 +189,8 @@ func (j *jsiiProxy_GameServicesGameServerConfig) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_GameServicesGameServerConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GameServicesGameServerConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -510,7 +510,7 @@ func (j *jsiiProxy_GameServicesGameServerConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/game_services_game_server_config google_game_services_game_server_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/game_services_game_server_config google_game_services_game_server_config} Resource.
 func NewGameServicesGameServerConfig(scope constructs.Construct, id *string, config *GameServicesGameServerConfigConfig) GameServicesGameServerConfig {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewGameServicesGameServerConfig(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/game_services_game_server_config google_game_services_game_server_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/game_services_game_server_config google_game_services_game_server_config} Resource.
 func NewGameServicesGameServerConfig_Override(g GameServicesGameServerConfig, scope constructs.Construct, id *string, config *GameServicesGameServerConfigConfig) {
 	_init_.Initialize()
 
@@ -561,7 +561,10 @@ func (j *jsiiProxy_GameServicesGameServerConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GameServicesGameServerConfig)SetCount(val *float64) {
+func (j *jsiiProxy_GameServicesGameServerConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

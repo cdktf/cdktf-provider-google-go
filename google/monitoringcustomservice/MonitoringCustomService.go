@@ -2,14 +2,14 @@ package monitoringcustomservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/monitoringcustomservice/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/monitoringcustomservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/monitoring_custom_service google_monitoring_custom_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/monitoring_custom_service google_monitoring_custom_service}.
 type MonitoringCustomService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MonitoringCustomService interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_MonitoringCustomService) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringCustomService) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MonitoringCustomService) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -441,7 +441,7 @@ func (j *jsiiProxy_MonitoringCustomService) UserLabelsInput() *map[string]*strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/monitoring_custom_service google_monitoring_custom_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/monitoring_custom_service google_monitoring_custom_service} Resource.
 func NewMonitoringCustomService(scope constructs.Construct, id *string, config *MonitoringCustomServiceConfig) MonitoringCustomService {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewMonitoringCustomService(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/monitoring_custom_service google_monitoring_custom_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/monitoring_custom_service google_monitoring_custom_service} Resource.
 func NewMonitoringCustomService_Override(m MonitoringCustomService, scope constructs.Construct, id *string, config *MonitoringCustomServiceConfig) {
 	_init_.Initialize()
 
@@ -481,7 +481,10 @@ func (j *jsiiProxy_MonitoringCustomService)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MonitoringCustomService)SetCount(val *float64) {
+func (j *jsiiProxy_MonitoringCustomService)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

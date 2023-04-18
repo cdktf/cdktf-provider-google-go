@@ -2,14 +2,14 @@ package sqluser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/sqluser/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/sqluser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/sql_user google_sql_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/sql_user google_sql_user}.
 type SqlUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SqlUser interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeletionPolicy() *string
 	SetDeletionPolicy(val *string)
 	DeletionPolicyInput() *string
@@ -170,8 +170,8 @@ func (j *jsiiProxy_SqlUser) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SqlUser) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SqlUser) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -511,7 +511,7 @@ func (j *jsiiProxy_SqlUser) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/sql_user google_sql_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/sql_user google_sql_user} Resource.
 func NewSqlUser(scope constructs.Construct, id *string, config *SqlUserConfig) SqlUser {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewSqlUser(scope constructs.Construct, id *string, config *SqlUserConfig) S
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/sql_user google_sql_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/sql_user google_sql_user} Resource.
 func NewSqlUser_Override(s SqlUser, scope constructs.Construct, id *string, config *SqlUserConfig) {
 	_init_.Initialize()
 
@@ -551,7 +551,10 @@ func (j *jsiiProxy_SqlUser)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqlUser)SetCount(val *float64) {
+func (j *jsiiProxy_SqlUser)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

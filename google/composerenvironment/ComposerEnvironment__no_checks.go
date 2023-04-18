@@ -76,6 +76,10 @@ func (j *jsiiProxy_ComposerEnvironment) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_ComposerEnvironment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComposerEnvironment) validateSetIdParameters(val *string) error {
 	return nil
 }

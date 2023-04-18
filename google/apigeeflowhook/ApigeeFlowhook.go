@@ -2,14 +2,14 @@ package apigeeflowhook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/apigeeflowhook/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/apigeeflowhook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/apigee_flowhook google_apigee_flowhook}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/apigee_flowhook google_apigee_flowhook}.
 type ApigeeFlowhook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type ApigeeFlowhook interface {
 	SetContinueOnError(val interface{})
 	ContinueOnErrorInput() interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -179,8 +179,8 @@ func (j *jsiiProxy_ApigeeFlowhook) ContinueOnErrorInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeFlowhook) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApigeeFlowhook) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -450,7 +450,7 @@ func (j *jsiiProxy_ApigeeFlowhook) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/apigee_flowhook google_apigee_flowhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/apigee_flowhook google_apigee_flowhook} Resource.
 func NewApigeeFlowhook(scope constructs.Construct, id *string, config *ApigeeFlowhookConfig) ApigeeFlowhook {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewApigeeFlowhook(scope constructs.Construct, id *string, config *ApigeeFlo
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/apigee_flowhook google_apigee_flowhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/apigee_flowhook google_apigee_flowhook} Resource.
 func NewApigeeFlowhook_Override(a ApigeeFlowhook, scope constructs.Construct, id *string, config *ApigeeFlowhookConfig) {
 	_init_.Initialize()
 
@@ -501,7 +501,10 @@ func (j *jsiiProxy_ApigeeFlowhook)SetContinueOnError(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApigeeFlowhook)SetCount(val *float64) {
+func (j *jsiiProxy_ApigeeFlowhook)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

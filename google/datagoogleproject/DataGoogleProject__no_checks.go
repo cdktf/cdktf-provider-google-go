@@ -64,6 +64,10 @@ func validateDataGoogleProject_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleProject) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleProject) validateSetIdParameters(val *string) error {
 	return nil
 }

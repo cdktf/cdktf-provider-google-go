@@ -72,6 +72,10 @@ func (j *jsiiProxy_FolderIamBinding) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_FolderIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FolderIamBinding) validateSetFolderParameters(val *string) error {
 	return nil
 }

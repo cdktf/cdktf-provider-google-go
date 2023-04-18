@@ -2,14 +2,14 @@ package binaryauthorizationpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/binaryauthorizationpolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/binaryauthorizationpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/binary_authorization_policy google_binary_authorization_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/binary_authorization_policy google_binary_authorization_policy}.
 type BinaryAuthorizationPolicy interface {
 	cdktf.TerraformResource
 	AdmissionWhitelistPatterns() BinaryAuthorizationPolicyAdmissionWhitelistPatternsList
@@ -25,9 +25,9 @@ type BinaryAuthorizationPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultAdmissionRule() BinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference
 	DefaultAdmissionRuleInput() *BinaryAuthorizationPolicyDefaultAdmissionRule
 	// Experimental.
@@ -202,8 +202,8 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_BinaryAuthorizationPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -453,7 +453,7 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/binary_authorization_policy google_binary_authorization_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/binary_authorization_policy google_binary_authorization_policy} Resource.
 func NewBinaryAuthorizationPolicy(scope constructs.Construct, id *string, config *BinaryAuthorizationPolicyConfig) BinaryAuthorizationPolicy {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewBinaryAuthorizationPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/binary_authorization_policy google_binary_authorization_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/binary_authorization_policy google_binary_authorization_policy} Resource.
 func NewBinaryAuthorizationPolicy_Override(b BinaryAuthorizationPolicy, scope constructs.Construct, id *string, config *BinaryAuthorizationPolicyConfig) {
 	_init_.Initialize()
 
@@ -493,7 +493,10 @@ func (j *jsiiProxy_BinaryAuthorizationPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BinaryAuthorizationPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_BinaryAuthorizationPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

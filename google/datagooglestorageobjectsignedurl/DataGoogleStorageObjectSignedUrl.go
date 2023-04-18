@@ -2,14 +2,14 @@ package datagooglestorageobjectsignedurl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglestorageobjectsignedurl/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglestorageobjectsignedurl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/storage_object_signed_url google_storage_object_signed_url}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/storage_object_signed_url google_storage_object_signed_url}.
 type DataGoogleStorageObjectSignedUrl interface {
 	cdktf.TerraformDataSource
 	Bucket() *string
@@ -26,9 +26,9 @@ type DataGoogleStorageObjectSignedUrl interface {
 	SetContentType(val *string)
 	ContentTypeInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Credentials() *string
 	SetCredentials(val *string)
 	CredentialsInput() *string
@@ -208,8 +208,8 @@ func (j *jsiiProxy_DataGoogleStorageObjectSignedUrl) ContentTypeInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleStorageObjectSignedUrl) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleStorageObjectSignedUrl) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -459,7 +459,7 @@ func (j *jsiiProxy_DataGoogleStorageObjectSignedUrl) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/storage_object_signed_url google_storage_object_signed_url} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/storage_object_signed_url google_storage_object_signed_url} Data Source.
 func NewDataGoogleStorageObjectSignedUrl(scope constructs.Construct, id *string, config *DataGoogleStorageObjectSignedUrlConfig) DataGoogleStorageObjectSignedUrl {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewDataGoogleStorageObjectSignedUrl(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/storage_object_signed_url google_storage_object_signed_url} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/storage_object_signed_url google_storage_object_signed_url} Data Source.
 func NewDataGoogleStorageObjectSignedUrl_Override(d DataGoogleStorageObjectSignedUrl, scope constructs.Construct, id *string, config *DataGoogleStorageObjectSignedUrlConfig) {
 	_init_.Initialize()
 
@@ -521,7 +521,10 @@ func (j *jsiiProxy_DataGoogleStorageObjectSignedUrl)SetContentType(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageObjectSignedUrl)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleStorageObjectSignedUrl)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

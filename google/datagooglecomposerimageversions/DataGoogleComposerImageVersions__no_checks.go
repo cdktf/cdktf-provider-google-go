@@ -64,6 +64,10 @@ func validateDataGoogleComposerImageVersions_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComposerImageVersions) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComposerImageVersions) validateSetIdParameters(val *string) error {
 	return nil
 }

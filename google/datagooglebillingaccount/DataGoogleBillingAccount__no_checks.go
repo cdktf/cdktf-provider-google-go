@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGoogleBillingAccount) validateSetBillingAccountParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleBillingAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleBillingAccount) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

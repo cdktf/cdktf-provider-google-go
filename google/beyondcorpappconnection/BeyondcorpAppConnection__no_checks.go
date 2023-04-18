@@ -84,6 +84,10 @@ func (j *jsiiProxy_BeyondcorpAppConnection) validateSetConnectorsParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_BeyondcorpAppConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BeyondcorpAppConnection) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

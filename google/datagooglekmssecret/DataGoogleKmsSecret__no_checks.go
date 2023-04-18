@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataGoogleKmsSecret) validateSetCiphertextParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleKmsSecret) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleKmsSecret) validateSetCryptoKeyParameters(val *string) error {
 	return nil
 }

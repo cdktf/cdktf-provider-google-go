@@ -124,6 +124,10 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplate) validateSetDeletionProtectionParameters(val interface{}) error {
 	return nil
 }

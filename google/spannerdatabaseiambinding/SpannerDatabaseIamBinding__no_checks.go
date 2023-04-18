@@ -72,6 +72,10 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_SpannerDatabaseIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpannerDatabaseIamBinding) validateSetDatabaseParameters(val *string) error {
 	return nil
 }

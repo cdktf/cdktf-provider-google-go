@@ -96,6 +96,10 @@ func (j *jsiiProxy_ContainerAttachedCluster) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAttachedCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAttachedCluster) validateSetDeletionPolicyParameters(val *string) error {
 	return nil
 }

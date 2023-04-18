@@ -112,6 +112,10 @@ func (j *jsiiProxy_ComputeRegionBackendService) validateSetConnectionDrainingTim
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionBackendService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionBackendService) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

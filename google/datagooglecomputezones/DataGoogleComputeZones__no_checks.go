@@ -64,6 +64,10 @@ func validateDataGoogleComputeZones_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComputeZones) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeZones) validateSetIdParameters(val *string) error {
 	return nil
 }

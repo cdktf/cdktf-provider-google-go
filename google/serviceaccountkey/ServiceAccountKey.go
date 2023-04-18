@@ -2,14 +2,14 @@ package serviceaccountkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/serviceaccountkey/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/serviceaccountkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/service_account_key google_service_account_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/service_account_key google_service_account_key}.
 type ServiceAccountKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ServiceAccountKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -163,8 +163,8 @@ func (j *jsiiProxy_ServiceAccountKey) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_ServiceAccountKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ServiceAccountKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -484,7 +484,7 @@ func (j *jsiiProxy_ServiceAccountKey) ValidBefore() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/service_account_key google_service_account_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/service_account_key google_service_account_key} Resource.
 func NewServiceAccountKey(scope constructs.Construct, id *string, config *ServiceAccountKeyConfig) ServiceAccountKey {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewServiceAccountKey(scope constructs.Construct, id *string, config *Servic
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/service_account_key google_service_account_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/service_account_key google_service_account_key} Resource.
 func NewServiceAccountKey_Override(s ServiceAccountKey, scope constructs.Construct, id *string, config *ServiceAccountKeyConfig) {
 	_init_.Initialize()
 
@@ -524,7 +524,10 @@ func (j *jsiiProxy_ServiceAccountKey)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountKey)SetCount(val *float64) {
+func (j *jsiiProxy_ServiceAccountKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -88,6 +88,10 @@ func (j *jsiiProxy_IamWorkforcePoolProvider) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_IamWorkforcePoolProvider) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamWorkforcePoolProvider) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

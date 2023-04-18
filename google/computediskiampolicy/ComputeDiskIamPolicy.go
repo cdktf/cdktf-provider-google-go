@@ -2,14 +2,14 @@ package computediskiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/computediskiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/computediskiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/compute_disk_iam_policy google_compute_disk_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_disk_iam_policy google_compute_disk_iam_policy}.
 type ComputeDiskIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ComputeDiskIamPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -150,8 +150,8 @@ func (j *jsiiProxy_ComputeDiskIamPolicy) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_ComputeDiskIamPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ComputeDiskIamPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_ComputeDiskIamPolicy) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_disk_iam_policy google_compute_disk_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_disk_iam_policy google_compute_disk_iam_policy} Resource.
 func NewComputeDiskIamPolicy(scope constructs.Construct, id *string, config *ComputeDiskIamPolicyConfig) ComputeDiskIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewComputeDiskIamPolicy(scope constructs.Construct, id *string, config *Com
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_disk_iam_policy google_compute_disk_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_disk_iam_policy google_compute_disk_iam_policy} Resource.
 func NewComputeDiskIamPolicy_Override(c ComputeDiskIamPolicy, scope constructs.Construct, id *string, config *ComputeDiskIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_ComputeDiskIamPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeDiskIamPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_ComputeDiskIamPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

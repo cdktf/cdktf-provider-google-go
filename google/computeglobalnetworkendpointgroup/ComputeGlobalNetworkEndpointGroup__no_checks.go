@@ -72,6 +72,10 @@ func (j *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validateSetDefaultPortParameters(val *float64) error {
 	return nil
 }

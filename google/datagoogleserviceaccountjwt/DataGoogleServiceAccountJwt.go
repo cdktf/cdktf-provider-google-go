@@ -2,14 +2,14 @@ package datagoogleserviceaccountjwt
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagoogleserviceaccountjwt/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagoogleserviceaccountjwt/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/service_account_jwt google_service_account_jwt}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/service_account_jwt google_service_account_jwt}.
 type DataGoogleServiceAccountJwt interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGoogleServiceAccountJwt interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Delegates() *[]*string
 	SetDelegates(val *[]*string)
 	DelegatesInput() *[]*string
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataGoogleServiceAccountJwt) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountJwt) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleServiceAccountJwt) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -363,7 +363,7 @@ func (j *jsiiProxy_DataGoogleServiceAccountJwt) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/service_account_jwt google_service_account_jwt} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/service_account_jwt google_service_account_jwt} Data Source.
 func NewDataGoogleServiceAccountJwt(scope constructs.Construct, id *string, config *DataGoogleServiceAccountJwtConfig) DataGoogleServiceAccountJwt {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewDataGoogleServiceAccountJwt(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/service_account_jwt google_service_account_jwt} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/service_account_jwt google_service_account_jwt} Data Source.
 func NewDataGoogleServiceAccountJwt_Override(d DataGoogleServiceAccountJwt, scope constructs.Construct, id *string, config *DataGoogleServiceAccountJwtConfig) {
 	_init_.Initialize()
 
@@ -392,7 +392,10 @@ func NewDataGoogleServiceAccountJwt_Override(d DataGoogleServiceAccountJwt, scop
 	)
 }
 
-func (j *jsiiProxy_DataGoogleServiceAccountJwt)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleServiceAccountJwt)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

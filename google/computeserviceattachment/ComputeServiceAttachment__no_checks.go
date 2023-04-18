@@ -84,6 +84,10 @@ func (j *jsiiProxy_ComputeServiceAttachment) validateSetConsumerRejectListsParam
 	return nil
 }
 
+func (j *jsiiProxy_ComputeServiceAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeServiceAttachment) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

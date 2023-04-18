@@ -72,6 +72,10 @@ func (j *jsiiProxy_SccMuteConfig) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_SccMuteConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SccMuteConfig) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataGoogleActiveFolder_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleActiveFolder) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleActiveFolder) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

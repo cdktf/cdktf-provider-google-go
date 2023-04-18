@@ -72,6 +72,10 @@ func (j *jsiiProxy_StorageBucketAcl) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_StorageBucketAcl) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBucketAcl) validateSetDefaultAclParameters(val *string) error {
 	return nil
 }

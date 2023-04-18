@@ -88,6 +88,10 @@ func (j *jsiiProxy_ComputePacketMirroring) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_ComputePacketMirroring) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputePacketMirroring) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

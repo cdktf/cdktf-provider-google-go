@@ -80,6 +80,10 @@ func (j *jsiiProxy_BigqueryReservation) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryReservation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryReservation) validateSetEditionParameters(val *string) error {
 	return nil
 }

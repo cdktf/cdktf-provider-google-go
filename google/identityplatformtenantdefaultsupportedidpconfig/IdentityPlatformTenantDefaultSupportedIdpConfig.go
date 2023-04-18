@@ -2,14 +2,14 @@ package identityplatformtenantdefaultsupportedidpconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/identityplatformtenantdefaultsupportedidpconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/identityplatformtenantdefaultsupportedidpconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config}.
 type IdentityPlatformTenantDefaultSupportedIdpConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,9 +27,9 @@ type IdentityPlatformTenantDefaultSupportedIdpConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -200,8 +200,8 @@ func (j *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) ConstructNod
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -461,7 +461,7 @@ func (j *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) TimeoutsInpu
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config} Resource.
 func NewIdentityPlatformTenantDefaultSupportedIdpConfig(scope constructs.Construct, id *string, config *IdentityPlatformTenantDefaultSupportedIdpConfigConfig) IdentityPlatformTenantDefaultSupportedIdpConfig {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewIdentityPlatformTenantDefaultSupportedIdpConfig(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config} Resource.
 func NewIdentityPlatformTenantDefaultSupportedIdpConfig_Override(i IdentityPlatformTenantDefaultSupportedIdpConfig, scope constructs.Construct, id *string, config *IdentityPlatformTenantDefaultSupportedIdpConfigConfig) {
 	_init_.Initialize()
 
@@ -523,7 +523,10 @@ func (j *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig)SetConnection
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig)SetCount(val *float64) {
+func (j *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_DnsPolicy) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DnsPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DnsPolicy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

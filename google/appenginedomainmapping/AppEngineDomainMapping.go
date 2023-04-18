@@ -2,14 +2,14 @@ package appenginedomainmapping
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/appenginedomainmapping/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/appenginedomainmapping/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/app_engine_domain_mapping google_app_engine_domain_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/app_engine_domain_mapping google_app_engine_domain_mapping}.
 type AppEngineDomainMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type AppEngineDomainMapping interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -156,8 +156,8 @@ func (j *jsiiProxy_AppEngineDomainMapping) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineDomainMapping) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppEngineDomainMapping) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -427,7 +427,7 @@ func (j *jsiiProxy_AppEngineDomainMapping) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/app_engine_domain_mapping google_app_engine_domain_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/app_engine_domain_mapping google_app_engine_domain_mapping} Resource.
 func NewAppEngineDomainMapping(scope constructs.Construct, id *string, config *AppEngineDomainMappingConfig) AppEngineDomainMapping {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewAppEngineDomainMapping(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/app_engine_domain_mapping google_app_engine_domain_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/app_engine_domain_mapping google_app_engine_domain_mapping} Resource.
 func NewAppEngineDomainMapping_Override(a AppEngineDomainMapping, scope constructs.Construct, id *string, config *AppEngineDomainMappingConfig) {
 	_init_.Initialize()
 
@@ -467,7 +467,10 @@ func (j *jsiiProxy_AppEngineDomainMapping)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppEngineDomainMapping)SetCount(val *float64) {
+func (j *jsiiProxy_AppEngineDomainMapping)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

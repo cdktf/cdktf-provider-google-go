@@ -72,6 +72,10 @@ func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

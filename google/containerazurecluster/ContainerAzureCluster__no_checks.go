@@ -104,6 +104,10 @@ func (j *jsiiProxy_ContainerAzureCluster) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAzureCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAzureCluster) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

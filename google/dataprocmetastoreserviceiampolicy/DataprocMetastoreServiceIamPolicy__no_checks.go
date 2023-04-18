@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocMetastoreServiceIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

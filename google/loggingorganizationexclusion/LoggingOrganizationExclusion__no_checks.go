@@ -68,6 +68,10 @@ func (j *jsiiProxy_LoggingOrganizationExclusion) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_LoggingOrganizationExclusion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingOrganizationExclusion) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

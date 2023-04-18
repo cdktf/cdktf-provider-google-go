@@ -72,6 +72,10 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_IapWebBackendServiceIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IapWebBackendServiceIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

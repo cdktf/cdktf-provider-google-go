@@ -2,14 +2,14 @@ package bigqueryreservationassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/bigqueryreservationassignment/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/bigqueryreservationassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/bigquery_reservation_assignment google_bigquery_reservation_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/bigquery_reservation_assignment google_bigquery_reservation_assignment}.
 type BigqueryReservationAssignment interface {
 	cdktf.TerraformResource
 	Assignee() *string
@@ -24,9 +24,9 @@ type BigqueryReservationAssignment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -178,8 +178,8 @@ func (j *jsiiProxy_BigqueryReservationAssignment) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryReservationAssignment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_BigqueryReservationAssignment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -449,7 +449,7 @@ func (j *jsiiProxy_BigqueryReservationAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/bigquery_reservation_assignment google_bigquery_reservation_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/bigquery_reservation_assignment google_bigquery_reservation_assignment} Resource.
 func NewBigqueryReservationAssignment(scope constructs.Construct, id *string, config *BigqueryReservationAssignmentConfig) BigqueryReservationAssignment {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewBigqueryReservationAssignment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/bigquery_reservation_assignment google_bigquery_reservation_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/bigquery_reservation_assignment google_bigquery_reservation_assignment} Resource.
 func NewBigqueryReservationAssignment_Override(b BigqueryReservationAssignment, scope constructs.Construct, id *string, config *BigqueryReservationAssignmentConfig) {
 	_init_.Initialize()
 
@@ -500,7 +500,10 @@ func (j *jsiiProxy_BigqueryReservationAssignment)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_BigqueryReservationAssignment)SetCount(val *float64) {
+func (j *jsiiProxy_BigqueryReservationAssignment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

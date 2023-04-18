@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

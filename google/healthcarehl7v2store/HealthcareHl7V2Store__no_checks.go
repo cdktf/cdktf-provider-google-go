@@ -84,6 +84,10 @@ func (j *jsiiProxy_HealthcareHl7V2Store) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareHl7V2Store) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareHl7V2Store) validateSetDatasetParameters(val *string) error {
 	return nil
 }

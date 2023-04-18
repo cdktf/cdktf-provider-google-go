@@ -76,6 +76,10 @@ func (j *jsiiProxy_BillingAccountIamMember) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_BillingAccountIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BillingAccountIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

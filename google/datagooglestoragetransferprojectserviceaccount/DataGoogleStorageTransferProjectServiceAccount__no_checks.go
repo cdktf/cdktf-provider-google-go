@@ -64,6 +64,10 @@ func validateDataGoogleStorageTransferProjectServiceAccount_IsTerraformElementPa
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

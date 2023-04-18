@@ -64,6 +64,10 @@ func validateDataGoogleComputeDisk_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComputeDisk) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeDisk) validateSetIdParameters(val *string) error {
 	return nil
 }

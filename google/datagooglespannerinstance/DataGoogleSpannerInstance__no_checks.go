@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGoogleSpannerInstance) validateSetConfigParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleSpannerInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleSpannerInstance) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

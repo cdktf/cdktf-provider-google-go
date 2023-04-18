@@ -64,6 +64,10 @@ func validateDataGoogleLoggingProjectCmekSettings_IsTerraformElementParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleLoggingProjectCmekSettings) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleLoggingProjectCmekSettings) validateSetIdParameters(val *string) error {
 	return nil
 }

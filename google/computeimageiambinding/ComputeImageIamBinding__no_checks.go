@@ -72,6 +72,10 @@ func (j *jsiiProxy_ComputeImageIamBinding) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_ComputeImageIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeImageIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

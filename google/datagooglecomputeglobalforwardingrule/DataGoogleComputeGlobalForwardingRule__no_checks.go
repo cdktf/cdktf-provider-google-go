@@ -64,6 +64,10 @@ func validateDataGoogleComputeGlobalForwardingRule_IsTerraformElementParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRule) validateSetIdParameters(val *string) error {
 	return nil
 }

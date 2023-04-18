@@ -2,14 +2,14 @@ package tagstagkeyiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/tagstagkeyiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/tagstagkeyiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/tags_tag_key_iam_member google_tags_tag_key_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/tags_tag_key_iam_member google_tags_tag_key_iam_member}.
 type TagsTagKeyIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type TagsTagKeyIamMember interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_TagsTagKeyIamMember) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_TagsTagKeyIamMember) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_TagsTagKeyIamMember) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_TagsTagKeyIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/tags_tag_key_iam_member google_tags_tag_key_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/tags_tag_key_iam_member google_tags_tag_key_iam_member} Resource.
 func NewTagsTagKeyIamMember(scope constructs.Construct, id *string, config *TagsTagKeyIamMemberConfig) TagsTagKeyIamMember {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewTagsTagKeyIamMember(scope constructs.Construct, id *string, config *Tags
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/tags_tag_key_iam_member google_tags_tag_key_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/tags_tag_key_iam_member google_tags_tag_key_iam_member} Resource.
 func NewTagsTagKeyIamMember_Override(t TagsTagKeyIamMember, scope constructs.Construct, id *string, config *TagsTagKeyIamMemberConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_TagsTagKeyIamMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TagsTagKeyIamMember)SetCount(val *float64) {
+func (j *jsiiProxy_TagsTagKeyIamMember)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

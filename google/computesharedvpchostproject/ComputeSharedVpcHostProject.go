@@ -2,14 +2,14 @@ package computesharedvpchostproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/computesharedvpchostproject/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/computesharedvpchostproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/compute_shared_vpc_host_project google_compute_shared_vpc_host_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_shared_vpc_host_project google_compute_shared_vpc_host_project}.
 type ComputeSharedVpcHostProject interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ComputeSharedVpcHostProject interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_ComputeSharedVpcHostProject) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSharedVpcHostProject) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ComputeSharedVpcHostProject) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,7 +333,7 @@ func (j *jsiiProxy_ComputeSharedVpcHostProject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_shared_vpc_host_project google_compute_shared_vpc_host_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_shared_vpc_host_project google_compute_shared_vpc_host_project} Resource.
 func NewComputeSharedVpcHostProject(scope constructs.Construct, id *string, config *ComputeSharedVpcHostProjectConfig) ComputeSharedVpcHostProject {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewComputeSharedVpcHostProject(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_shared_vpc_host_project google_compute_shared_vpc_host_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_shared_vpc_host_project google_compute_shared_vpc_host_project} Resource.
 func NewComputeSharedVpcHostProject_Override(c ComputeSharedVpcHostProject, scope constructs.Construct, id *string, config *ComputeSharedVpcHostProjectConfig) {
 	_init_.Initialize()
 
@@ -373,7 +373,10 @@ func (j *jsiiProxy_ComputeSharedVpcHostProject)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSharedVpcHostProject)SetCount(val *float64) {
+func (j *jsiiProxy_ComputeSharedVpcHostProject)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

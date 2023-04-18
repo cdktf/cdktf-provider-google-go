@@ -76,6 +76,10 @@ func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

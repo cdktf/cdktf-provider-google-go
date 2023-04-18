@@ -84,6 +84,10 @@ func (j *jsiiProxy_AppEngineApplication) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_AppEngineApplication) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppEngineApplication) validateSetDatabaseTypeParameters(val *string) error {
 	return nil
 }

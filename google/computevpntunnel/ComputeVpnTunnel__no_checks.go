@@ -72,6 +72,10 @@ func (j *jsiiProxy_ComputeVpnTunnel) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_ComputeVpnTunnel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeVpnTunnel) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

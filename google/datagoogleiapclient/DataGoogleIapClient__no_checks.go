@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataGoogleIapClient) validateSetClientIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleIapClient) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleIapClient) validateSetIdParameters(val *string) error {
 	return nil
 }

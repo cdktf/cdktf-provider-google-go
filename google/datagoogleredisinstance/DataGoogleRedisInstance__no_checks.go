@@ -64,6 +64,10 @@ func validateDataGoogleRedisInstance_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleRedisInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleRedisInstance) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_IapWebIamPolicy) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_IapWebIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IapWebIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

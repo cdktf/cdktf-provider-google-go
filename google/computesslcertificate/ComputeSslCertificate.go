@@ -2,14 +2,14 @@ package computesslcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/computesslcertificate/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/computesslcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/compute_ssl_certificate google_compute_ssl_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_ssl_certificate google_compute_ssl_certificate}.
 type ComputeSslCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -25,9 +25,9 @@ type ComputeSslCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -195,8 +195,8 @@ func (j *jsiiProxy_ComputeSslCertificate) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSslCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ComputeSslCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -496,7 +496,7 @@ func (j *jsiiProxy_ComputeSslCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_ssl_certificate google_compute_ssl_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_ssl_certificate google_compute_ssl_certificate} Resource.
 func NewComputeSslCertificate(scope constructs.Construct, id *string, config *ComputeSslCertificateConfig) ComputeSslCertificate {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewComputeSslCertificate(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_ssl_certificate google_compute_ssl_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_ssl_certificate google_compute_ssl_certificate} Resource.
 func NewComputeSslCertificate_Override(c ComputeSslCertificate, scope constructs.Construct, id *string, config *ComputeSslCertificateConfig) {
 	_init_.Initialize()
 
@@ -547,7 +547,10 @@ func (j *jsiiProxy_ComputeSslCertificate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeSslCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_ComputeSslCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

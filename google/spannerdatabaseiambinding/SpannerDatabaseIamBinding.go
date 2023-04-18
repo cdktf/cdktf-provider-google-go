@@ -2,14 +2,14 @@ package spannerdatabaseiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/spannerdatabaseiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/spannerdatabaseiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/spanner_database_iam_binding google_spanner_database_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/spanner_database_iam_binding google_spanner_database_iam_binding}.
 type SpannerDatabaseIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type SpannerDatabaseIamBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
@@ -176,8 +176,8 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SpannerDatabaseIamBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -437,7 +437,7 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/spanner_database_iam_binding google_spanner_database_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/spanner_database_iam_binding google_spanner_database_iam_binding} Resource.
 func NewSpannerDatabaseIamBinding(scope constructs.Construct, id *string, config *SpannerDatabaseIamBindingConfig) SpannerDatabaseIamBinding {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewSpannerDatabaseIamBinding(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/spanner_database_iam_binding google_spanner_database_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/spanner_database_iam_binding google_spanner_database_iam_binding} Resource.
 func NewSpannerDatabaseIamBinding_Override(s SpannerDatabaseIamBinding, scope constructs.Construct, id *string, config *SpannerDatabaseIamBindingConfig) {
 	_init_.Initialize()
 
@@ -477,7 +477,10 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpannerDatabaseIamBinding)SetCount(val *float64) {
+func (j *jsiiProxy_SpannerDatabaseIamBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package datacatalogpolicytagiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datacatalogpolicytagiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datacatalogpolicytagiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/data_catalog_policy_tag_iam_member google_data_catalog_policy_tag_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/data_catalog_policy_tag_iam_member google_data_catalog_policy_tag_iam_member}.
 type DataCatalogPolicyTagIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type DataCatalogPolicyTagIamMember interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DataCatalogPolicyTagIamMember) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogPolicyTagIamMember) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataCatalogPolicyTagIamMember) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DataCatalogPolicyTagIamMember) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/data_catalog_policy_tag_iam_member google_data_catalog_policy_tag_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/data_catalog_policy_tag_iam_member google_data_catalog_policy_tag_iam_member} Resource.
 func NewDataCatalogPolicyTagIamMember(scope constructs.Construct, id *string, config *DataCatalogPolicyTagIamMemberConfig) DataCatalogPolicyTagIamMember {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewDataCatalogPolicyTagIamMember(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/data_catalog_policy_tag_iam_member google_data_catalog_policy_tag_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/data_catalog_policy_tag_iam_member google_data_catalog_policy_tag_iam_member} Resource.
 func NewDataCatalogPolicyTagIamMember_Override(d DataCatalogPolicyTagIamMember, scope constructs.Construct, id *string, config *DataCatalogPolicyTagIamMemberConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_DataCatalogPolicyTagIamMember)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_DataCatalogPolicyTagIamMember)SetCount(val *float64) {
+func (j *jsiiProxy_DataCatalogPolicyTagIamMember)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

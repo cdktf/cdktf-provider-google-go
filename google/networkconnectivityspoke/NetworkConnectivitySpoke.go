@@ -2,14 +2,14 @@ package networkconnectivityspoke
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/networkconnectivityspoke/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/networkconnectivityspoke/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/network_connectivity_spoke google_network_connectivity_spoke}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke}.
 type NetworkConnectivitySpoke interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type NetworkConnectivitySpoke interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -176,8 +176,8 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_NetworkConnectivitySpoke) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -567,7 +567,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/network_connectivity_spoke google_network_connectivity_spoke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke} Resource.
 func NewNetworkConnectivitySpoke(scope constructs.Construct, id *string, config *NetworkConnectivitySpokeConfig) NetworkConnectivitySpoke {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewNetworkConnectivitySpoke(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/network_connectivity_spoke google_network_connectivity_spoke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke} Resource.
 func NewNetworkConnectivitySpoke_Override(n NetworkConnectivitySpoke, scope constructs.Construct, id *string, config *NetworkConnectivitySpokeConfig) {
 	_init_.Initialize()
 
@@ -607,7 +607,10 @@ func (j *jsiiProxy_NetworkConnectivitySpoke)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivitySpoke)SetCount(val *float64) {
+func (j *jsiiProxy_NetworkConnectivitySpoke)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_ComputeTargetGrpcProxy) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_ComputeTargetGrpcProxy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeTargetGrpcProxy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

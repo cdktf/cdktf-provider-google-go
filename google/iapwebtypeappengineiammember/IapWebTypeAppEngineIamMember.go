@@ -2,14 +2,14 @@ package iapwebtypeappengineiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/iapwebtypeappengineiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/iapwebtypeappengineiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/iap_web_type_app_engine_iam_member google_iap_web_type_app_engine_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iap_web_type_app_engine_iam_member google_iap_web_type_app_engine_iam_member}.
 type IapWebTypeAppEngineIamMember interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -26,9 +26,9 @@ type IapWebTypeAppEngineIamMember interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -193,8 +193,8 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamMember) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamMember) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IapWebTypeAppEngineIamMember) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamMember) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/iap_web_type_app_engine_iam_member google_iap_web_type_app_engine_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iap_web_type_app_engine_iam_member google_iap_web_type_app_engine_iam_member} Resource.
 func NewIapWebTypeAppEngineIamMember(scope constructs.Construct, id *string, config *IapWebTypeAppEngineIamMemberConfig) IapWebTypeAppEngineIamMember {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewIapWebTypeAppEngineIamMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/iap_web_type_app_engine_iam_member google_iap_web_type_app_engine_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/iap_web_type_app_engine_iam_member google_iap_web_type_app_engine_iam_member} Resource.
 func NewIapWebTypeAppEngineIamMember_Override(i IapWebTypeAppEngineIamMember, scope constructs.Construct, id *string, config *IapWebTypeAppEngineIamMemberConfig) {
 	_init_.Initialize()
 
@@ -465,7 +465,10 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IapWebTypeAppEngineIamMember)SetCount(val *float64) {
+func (j *jsiiProxy_IapWebTypeAppEngineIamMember)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

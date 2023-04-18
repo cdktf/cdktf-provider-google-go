@@ -76,6 +76,10 @@ func (j *jsiiProxy_LoggingProjectSink) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_LoggingProjectSink) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingProjectSink) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

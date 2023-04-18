@@ -76,6 +76,10 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_IamAccessBoundaryPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamAccessBoundaryPolicy) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

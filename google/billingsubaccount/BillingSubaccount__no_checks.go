@@ -68,6 +68,10 @@ func (j *jsiiProxy_BillingSubaccount) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_BillingSubaccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BillingSubaccount) validateSetDeletionPolicyParameters(val *string) error {
 	return nil
 }

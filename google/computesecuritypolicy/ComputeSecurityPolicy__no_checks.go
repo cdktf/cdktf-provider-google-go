@@ -88,6 +88,10 @@ func (j *jsiiProxy_ComputeSecurityPolicy) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSecurityPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSecurityPolicy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

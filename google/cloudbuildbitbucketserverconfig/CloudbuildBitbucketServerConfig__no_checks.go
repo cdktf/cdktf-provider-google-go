@@ -88,6 +88,10 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudbuildBitbucketServerConfig) validateSetHostUriParameters(val *string) error {
 	return nil
 }

@@ -88,6 +88,10 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

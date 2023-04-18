@@ -2,14 +2,14 @@ package datalosspreventiondeidentifytemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datalosspreventiondeidentifytemplate/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datalosspreventiondeidentifytemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template}.
 type DataLossPreventionDeidentifyTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DataLossPreventionDeidentifyTemplate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeidentifyConfig() DataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference
 	DeidentifyConfigInput() *DataLossPreventionDeidentifyTemplateDeidentifyConfig
 	// Experimental.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -415,7 +415,7 @@ func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
 func NewDataLossPreventionDeidentifyTemplate(scope constructs.Construct, id *string, config *DataLossPreventionDeidentifyTemplateConfig) DataLossPreventionDeidentifyTemplate {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewDataLossPreventionDeidentifyTemplate(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
 func NewDataLossPreventionDeidentifyTemplate_Override(d DataLossPreventionDeidentifyTemplate, scope constructs.Construct, id *string, config *DataLossPreventionDeidentifyTemplateConfig) {
 	_init_.Initialize()
 
@@ -455,7 +455,10 @@ func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate)SetCount(val *float64) {
+func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

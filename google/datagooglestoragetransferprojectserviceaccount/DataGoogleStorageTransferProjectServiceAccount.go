@@ -2,14 +2,14 @@ package datagooglestoragetransferprojectserviceaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglestoragetransferprojectserviceaccount/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglestoragetransferprojectserviceaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/storage_transfer_project_service_account google_storage_transfer_project_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/storage_transfer_project_service_account google_storage_transfer_project_service_account}.
 type DataGoogleStorageTransferProjectServiceAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGoogleStorageTransferProjectServiceAccount interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -124,8 +124,8 @@ func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) ConstructNode
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) TerraformReso
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/storage_transfer_project_service_account google_storage_transfer_project_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/storage_transfer_project_service_account google_storage_transfer_project_service_account} Data Source.
 func NewDataGoogleStorageTransferProjectServiceAccount(scope constructs.Construct, id *string, config *DataGoogleStorageTransferProjectServiceAccountConfig) DataGoogleStorageTransferProjectServiceAccount {
 	_init_.Initialize()
 
@@ -333,7 +333,7 @@ func NewDataGoogleStorageTransferProjectServiceAccount(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/storage_transfer_project_service_account google_storage_transfer_project_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/storage_transfer_project_service_account google_storage_transfer_project_service_account} Data Source.
 func NewDataGoogleStorageTransferProjectServiceAccount_Override(d DataGoogleStorageTransferProjectServiceAccount, scope constructs.Construct, id *string, config *DataGoogleStorageTransferProjectServiceAccountConfig) {
 	_init_.Initialize()
 
@@ -344,7 +344,10 @@ func NewDataGoogleStorageTransferProjectServiceAccount_Override(d DataGoogleStor
 	)
 }
 
-func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

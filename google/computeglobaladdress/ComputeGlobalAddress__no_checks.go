@@ -80,6 +80,10 @@ func (j *jsiiProxy_ComputeGlobalAddress) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_ComputeGlobalAddress) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeGlobalAddress) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

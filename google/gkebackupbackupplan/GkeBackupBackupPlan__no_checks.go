@@ -88,6 +88,10 @@ func (j *jsiiProxy_GkeBackupBackupPlan) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GkeBackupBackupPlan) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GkeBackupBackupPlan) validateSetDeactivatedParameters(val interface{}) error {
 	return nil
 }

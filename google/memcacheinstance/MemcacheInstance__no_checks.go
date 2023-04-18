@@ -88,6 +88,10 @@ func (j *jsiiProxy_MemcacheInstance) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_MemcacheInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemcacheInstance) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

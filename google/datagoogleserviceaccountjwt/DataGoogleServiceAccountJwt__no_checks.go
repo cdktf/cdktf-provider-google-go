@@ -64,6 +64,10 @@ func validateDataGoogleServiceAccountJwt_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleServiceAccountJwt) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleServiceAccountJwt) validateSetDelegatesParameters(val *[]*string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package notebooksruntimeiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/notebooksruntimeiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/notebooksruntimeiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy}.
 type NotebooksRuntimeIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type NotebooksRuntimeIamPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -150,8 +150,8 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy} Resource.
 func NewNotebooksRuntimeIamPolicy(scope constructs.Construct, id *string, config *NotebooksRuntimeIamPolicyConfig) NotebooksRuntimeIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewNotebooksRuntimeIamPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy} Resource.
 func NewNotebooksRuntimeIamPolicy_Override(n NotebooksRuntimeIamPolicy, scope constructs.Construct, id *string, config *NotebooksRuntimeIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_NotebooksRuntimeIamPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

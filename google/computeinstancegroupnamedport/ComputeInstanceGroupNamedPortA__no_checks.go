@@ -72,6 +72,10 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) validateSetGroupParameters(val *string) error {
 	return nil
 }

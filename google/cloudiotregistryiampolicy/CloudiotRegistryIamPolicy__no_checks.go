@@ -68,6 +68,10 @@ func (j *jsiiProxy_CloudiotRegistryIamPolicy) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_CloudiotRegistryIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudiotRegistryIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

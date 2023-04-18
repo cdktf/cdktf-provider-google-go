@@ -2,14 +2,14 @@ package datagooglekmssecretciphertext
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglekmssecretciphertext/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglekmssecretciphertext/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/kms_secret_ciphertext google_kms_secret_ciphertext}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/kms_secret_ciphertext google_kms_secret_ciphertext}.
 type DataGoogleKmsSecretCiphertext interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -18,9 +18,9 @@ type DataGoogleKmsSecretCiphertext interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CryptoKey() *string
 	SetCryptoKey(val *string)
 	CryptoKeyInput() *string
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataGoogleKmsSecretCiphertext) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleKmsSecretCiphertext) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleKmsSecretCiphertext) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataGoogleKmsSecretCiphertext) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/kms_secret_ciphertext google_kms_secret_ciphertext} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/kms_secret_ciphertext google_kms_secret_ciphertext} Data Source.
 func NewDataGoogleKmsSecretCiphertext(scope constructs.Construct, id *string, config *DataGoogleKmsSecretCiphertextConfig) DataGoogleKmsSecretCiphertext {
 	_init_.Initialize()
 
@@ -333,7 +333,7 @@ func NewDataGoogleKmsSecretCiphertext(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/kms_secret_ciphertext google_kms_secret_ciphertext} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/kms_secret_ciphertext google_kms_secret_ciphertext} Data Source.
 func NewDataGoogleKmsSecretCiphertext_Override(d DataGoogleKmsSecretCiphertext, scope constructs.Construct, id *string, config *DataGoogleKmsSecretCiphertextConfig) {
 	_init_.Initialize()
 
@@ -344,7 +344,10 @@ func NewDataGoogleKmsSecretCiphertext_Override(d DataGoogleKmsSecretCiphertext, 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleKmsSecretCiphertext)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleKmsSecretCiphertext)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_LoggingBillingAccountSink) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_LoggingBillingAccountSink) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingBillingAccountSink) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

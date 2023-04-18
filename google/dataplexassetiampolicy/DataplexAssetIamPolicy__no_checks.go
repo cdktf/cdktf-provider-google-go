@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataplexAssetIamPolicy) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_DataplexAssetIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataplexAssetIamPolicy) validateSetDataplexZoneParameters(val *string) error {
 	return nil
 }

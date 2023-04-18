@@ -72,6 +72,10 @@ func (j *jsiiProxy_ResourceManagerLien) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_ResourceManagerLien) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResourceManagerLien) validateSetIdParameters(val *string) error {
 	return nil
 }

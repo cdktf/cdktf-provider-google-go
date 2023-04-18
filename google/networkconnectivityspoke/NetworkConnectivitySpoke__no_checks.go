@@ -84,6 +84,10 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_NetworkConnectivitySpoke) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkConnectivitySpoke) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

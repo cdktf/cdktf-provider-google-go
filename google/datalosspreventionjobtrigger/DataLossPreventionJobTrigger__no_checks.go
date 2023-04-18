@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataLossPreventionJobTrigger) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataLossPreventionJobTrigger) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataLossPreventionJobTrigger) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

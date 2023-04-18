@@ -2,14 +2,14 @@ package pubsubschema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/pubsubschema/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/pubsubschema/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/pubsub_schema google_pubsub_schema}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/pubsub_schema google_pubsub_schema}.
 type PubsubSchema interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type PubsubSchema interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Definition() *string
 	SetDefinition(val *string)
 	DefinitionInput() *string
@@ -154,8 +154,8 @@ func (j *jsiiProxy_PubsubSchema) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSchema) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PubsubSchema) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -405,7 +405,7 @@ func (j *jsiiProxy_PubsubSchema) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/pubsub_schema google_pubsub_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/pubsub_schema google_pubsub_schema} Resource.
 func NewPubsubSchema(scope constructs.Construct, id *string, config *PubsubSchemaConfig) PubsubSchema {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewPubsubSchema(scope constructs.Construct, id *string, config *PubsubSchem
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/pubsub_schema google_pubsub_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/pubsub_schema google_pubsub_schema} Resource.
 func NewPubsubSchema_Override(p PubsubSchema, scope constructs.Construct, id *string, config *PubsubSchemaConfig) {
 	_init_.Initialize()
 
@@ -445,7 +445,10 @@ func (j *jsiiProxy_PubsubSchema)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubSchema)SetCount(val *float64) {
+func (j *jsiiProxy_PubsubSchema)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

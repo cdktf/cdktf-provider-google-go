@@ -76,6 +76,10 @@ func (j *jsiiProxy_PrivatecaCaPoolIamMember) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_PrivatecaCaPoolIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivatecaCaPoolIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

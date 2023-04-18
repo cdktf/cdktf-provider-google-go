@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataCatalogPolicyTag) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_DataCatalogPolicyTag) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataCatalogPolicyTag) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

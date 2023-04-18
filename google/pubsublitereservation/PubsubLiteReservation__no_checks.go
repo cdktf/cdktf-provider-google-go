@@ -72,6 +72,10 @@ func (j *jsiiProxy_PubsubLiteReservation) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_PubsubLiteReservation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PubsubLiteReservation) validateSetIdParameters(val *string) error {
 	return nil
 }

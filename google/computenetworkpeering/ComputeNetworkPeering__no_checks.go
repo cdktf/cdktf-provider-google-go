@@ -72,6 +72,10 @@ func (j *jsiiProxy_ComputeNetworkPeering) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ComputeNetworkPeering) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeNetworkPeering) validateSetExportCustomRoutesParameters(val interface{}) error {
 	return nil
 }

@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataFusionInstance) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_DataFusionInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataFusionInstance) validateSetDataprocServiceAccountParameters(val *string) error {
 	return nil
 }

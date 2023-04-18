@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataplexLakeIamMember) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_DataplexLakeIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataplexLakeIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

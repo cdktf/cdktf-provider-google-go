@@ -64,6 +64,10 @@ func validateDataGoogleComputeDefaultServiceAccount_IsTerraformElementParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComputeDefaultServiceAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeDefaultServiceAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

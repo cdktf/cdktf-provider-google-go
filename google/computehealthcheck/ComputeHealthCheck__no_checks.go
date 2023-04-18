@@ -104,6 +104,10 @@ func (j *jsiiProxy_ComputeHealthCheck) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_ComputeHealthCheck) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeHealthCheck) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

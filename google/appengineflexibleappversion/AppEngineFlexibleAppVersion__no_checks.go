@@ -124,6 +124,10 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersion) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_AppEngineFlexibleAppVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppEngineFlexibleAppVersion) validateSetDefaultExpirationParameters(val *string) error {
 	return nil
 }

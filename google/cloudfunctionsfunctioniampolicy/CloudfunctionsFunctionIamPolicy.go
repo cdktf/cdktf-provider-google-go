@@ -2,14 +2,14 @@ package cloudfunctionsfunctioniampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/cloudfunctionsfunctioniampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/cloudfunctionsfunctioniampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy}.
 type CloudfunctionsFunctionIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type CloudfunctionsFunctionIamPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -170,8 +170,8 @@ func (j *jsiiProxy_CloudfunctionsFunctionIamPolicy) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionIamPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudfunctionsFunctionIamPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionIamPolicy) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy} Resource.
 func NewCloudfunctionsFunctionIamPolicy(scope constructs.Construct, id *string, config *CloudfunctionsFunctionIamPolicyConfig) CloudfunctionsFunctionIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewCloudfunctionsFunctionIamPolicy(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy} Resource.
 func NewCloudfunctionsFunctionIamPolicy_Override(c CloudfunctionsFunctionIamPolicy, scope constructs.Construct, id *string, config *CloudfunctionsFunctionIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -442,7 +442,10 @@ func (j *jsiiProxy_CloudfunctionsFunctionIamPolicy)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionIamPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_CloudfunctionsFunctionIamPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

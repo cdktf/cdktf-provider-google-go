@@ -72,6 +72,10 @@ func (j *jsiiProxy_DialogflowCxVersion) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_DialogflowCxVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxVersion) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_CloudIdentityGroup) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_CloudIdentityGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudIdentityGroup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

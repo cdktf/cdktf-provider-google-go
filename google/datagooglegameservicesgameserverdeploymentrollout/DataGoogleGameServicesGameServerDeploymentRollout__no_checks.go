@@ -64,6 +64,10 @@ func validateDataGoogleGameServicesGameServerDeploymentRollout_IsTerraformElemen
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleGameServicesGameServerDeploymentRollout) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleGameServicesGameServerDeploymentRollout) validateSetDeploymentIdParameters(val *string) error {
 	return nil
 }

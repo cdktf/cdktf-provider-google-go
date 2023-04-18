@@ -68,6 +68,10 @@ func validateDataGoogleComputeNetworkPeering_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComputeNetworkPeering) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeNetworkPeering) validateSetIdParameters(val *string) error {
 	return nil
 }

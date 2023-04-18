@@ -2,14 +2,14 @@ package datagooglebeyondcorpappgateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/datagooglebeyondcorpappgateway/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/datagooglebeyondcorpappgateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/d/beyondcorp_app_gateway google_beyondcorp_app_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/beyondcorp_app_gateway google_beyondcorp_app_gateway}.
 type DataGoogleBeyondcorpAppGateway interface {
 	cdktf.TerraformDataSource
 	AllocatedConnections() DataGoogleBeyondcorpAppGatewayAllocatedConnectionsList
@@ -18,9 +18,9 @@ type DataGoogleBeyondcorpAppGateway interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DataGoogleBeyondcorpAppGateway) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBeyondcorpAppGateway) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleBeyondcorpAppGateway) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -406,7 +406,7 @@ func (j *jsiiProxy_DataGoogleBeyondcorpAppGateway) Uri() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/beyondcorp_app_gateway google_beyondcorp_app_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/beyondcorp_app_gateway google_beyondcorp_app_gateway} Data Source.
 func NewDataGoogleBeyondcorpAppGateway(scope constructs.Construct, id *string, config *DataGoogleBeyondcorpAppGatewayConfig) DataGoogleBeyondcorpAppGateway {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewDataGoogleBeyondcorpAppGateway(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/d/beyondcorp_app_gateway google_beyondcorp_app_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/beyondcorp_app_gateway google_beyondcorp_app_gateway} Data Source.
 func NewDataGoogleBeyondcorpAppGateway_Override(d DataGoogleBeyondcorpAppGateway, scope constructs.Construct, id *string, config *DataGoogleBeyondcorpAppGatewayConfig) {
 	_init_.Initialize()
 
@@ -435,7 +435,10 @@ func NewDataGoogleBeyondcorpAppGateway_Override(d DataGoogleBeyondcorpAppGateway
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBeyondcorpAppGateway)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleBeyondcorpAppGateway)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package computeattacheddisk
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/computeattacheddisk/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/computeattacheddisk/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/compute_attached_disk google_compute_attached_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_attached_disk google_compute_attached_disk}.
 type ComputeAttachedDisk interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ComputeAttachedDisk interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -161,8 +161,8 @@ func (j *jsiiProxy_ComputeAttachedDisk) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_ComputeAttachedDisk) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ComputeAttachedDisk) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -452,7 +452,7 @@ func (j *jsiiProxy_ComputeAttachedDisk) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_attached_disk google_compute_attached_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_attached_disk google_compute_attached_disk} Resource.
 func NewComputeAttachedDisk(scope constructs.Construct, id *string, config *ComputeAttachedDiskConfig) ComputeAttachedDisk {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewComputeAttachedDisk(scope constructs.Construct, id *string, config *Comp
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/compute_attached_disk google_compute_attached_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/compute_attached_disk google_compute_attached_disk} Resource.
 func NewComputeAttachedDisk_Override(c ComputeAttachedDisk, scope constructs.Construct, id *string, config *ComputeAttachedDiskConfig) {
 	_init_.Initialize()
 
@@ -492,7 +492,10 @@ func (j *jsiiProxy_ComputeAttachedDisk)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComputeAttachedDisk)SetCount(val *float64) {
+func (j *jsiiProxy_ComputeAttachedDisk)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

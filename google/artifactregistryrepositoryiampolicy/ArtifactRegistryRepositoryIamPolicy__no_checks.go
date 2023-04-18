@@ -68,6 +68,10 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamPolicy) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_ArtifactRegistryRepositoryIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ArtifactRegistryRepositoryIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

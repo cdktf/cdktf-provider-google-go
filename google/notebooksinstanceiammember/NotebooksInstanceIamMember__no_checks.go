@@ -72,6 +72,10 @@ func (j *jsiiProxy_NotebooksInstanceIamMember) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_NotebooksInstanceIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotebooksInstanceIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

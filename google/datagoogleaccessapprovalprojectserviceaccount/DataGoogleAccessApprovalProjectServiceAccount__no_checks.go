@@ -64,6 +64,10 @@ func validateDataGoogleAccessApprovalProjectServiceAccount_IsTerraformElementPar
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleAccessApprovalProjectServiceAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleAccessApprovalProjectServiceAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

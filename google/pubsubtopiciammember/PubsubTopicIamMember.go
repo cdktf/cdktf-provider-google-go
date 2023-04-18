@@ -2,14 +2,14 @@ package pubsubtopiciammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/pubsubtopiciammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/pubsubtopiciammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/pubsub_topic_iam_member google_pubsub_topic_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/pubsub_topic_iam_member google_pubsub_topic_iam_member}.
 type PubsubTopicIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type PubsubTopicIamMember interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -173,8 +173,8 @@ func (j *jsiiProxy_PubsubTopicIamMember) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopicIamMember) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PubsubTopicIamMember) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_PubsubTopicIamMember) TopicInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/pubsub_topic_iam_member google_pubsub_topic_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/pubsub_topic_iam_member google_pubsub_topic_iam_member} Resource.
 func NewPubsubTopicIamMember(scope constructs.Construct, id *string, config *PubsubTopicIamMemberConfig) PubsubTopicIamMember {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewPubsubTopicIamMember(scope constructs.Construct, id *string, config *Pub
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/pubsub_topic_iam_member google_pubsub_topic_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/pubsub_topic_iam_member google_pubsub_topic_iam_member} Resource.
 func NewPubsubTopicIamMember_Override(p PubsubTopicIamMember, scope constructs.Construct, id *string, config *PubsubTopicIamMemberConfig) {
 	_init_.Initialize()
 
@@ -454,7 +454,10 @@ func (j *jsiiProxy_PubsubTopicIamMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicIamMember)SetCount(val *float64) {
+func (j *jsiiProxy_PubsubTopicIamMember)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

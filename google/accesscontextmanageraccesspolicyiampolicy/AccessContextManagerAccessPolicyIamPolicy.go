@@ -2,14 +2,14 @@ package accesscontextmanageraccesspolicyiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v6/accesscontextmanageraccesspolicyiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v7/accesscontextmanageraccesspolicyiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google/r/access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy}.
 type AccessContextManagerAccessPolicyIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type AccessContextManagerAccessPolicyIamPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_AccessContextManagerAccessPolicyIamPolicy) ConstructNodeMetad
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessPolicyIamPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AccessContextManagerAccessPolicyIamPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -343,7 +343,7 @@ func (j *jsiiProxy_AccessContextManagerAccessPolicyIamPolicy) TerraformResourceT
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy} Resource.
 func NewAccessContextManagerAccessPolicyIamPolicy(scope constructs.Construct, id *string, config *AccessContextManagerAccessPolicyIamPolicyConfig) AccessContextManagerAccessPolicyIamPolicy {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewAccessContextManagerAccessPolicyIamPolicy(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google/r/access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/resources/access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy} Resource.
 func NewAccessContextManagerAccessPolicyIamPolicy_Override(a AccessContextManagerAccessPolicyIamPolicy, scope constructs.Construct, id *string, config *AccessContextManagerAccessPolicyIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func (j *jsiiProxy_AccessContextManagerAccessPolicyIamPolicy)SetConnection(val i
 	)
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessPolicyIamPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_AccessContextManagerAccessPolicyIamPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
