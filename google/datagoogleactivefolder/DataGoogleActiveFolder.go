@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/active_folder google_active_folder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/data-sources/active_folder google_active_folder}.
 type DataGoogleActiveFolder interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataGoogleActiveFolder) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/active_folder google_active_folder} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/data-sources/active_folder google_active_folder} Data Source.
 func NewDataGoogleActiveFolder(scope constructs.Construct, id *string, config *DataGoogleActiveFolderConfig) DataGoogleActiveFolder {
 	_init_.Initialize()
 
@@ -333,7 +333,7 @@ func NewDataGoogleActiveFolder(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.0/docs/data-sources/active_folder google_active_folder} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/data-sources/active_folder google_active_folder} Data Source.
 func NewDataGoogleActiveFolder_Override(d DataGoogleActiveFolder, scope constructs.Construct, id *string, config *DataGoogleActiveFolderConfig) {
 	_init_.Initialize()
 
