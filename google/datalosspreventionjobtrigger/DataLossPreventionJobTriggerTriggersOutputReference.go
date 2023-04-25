@@ -29,6 +29,8 @@ type DataLossPreventionJobTriggerTriggersOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Manual() DataLossPreventionJobTriggerTriggersManualOutputReference
+	ManualInput() *DataLossPreventionJobTriggerTriggersManual
 	Schedule() DataLossPreventionJobTriggerTriggersScheduleOutputReference
 	ScheduleInput() *DataLossPreventionJobTriggerTriggersSchedule
 	// Experimental.
@@ -63,7 +65,9 @@ type DataLossPreventionJobTriggerTriggersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutManual(value *DataLossPreventionJobTriggerTriggersManual)
 	PutSchedule(value *DataLossPreventionJobTriggerTriggersSchedule)
+	ResetManual()
 	ResetSchedule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -125,6 +129,26 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerTriggersOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerTriggersOutputReference) Manual() DataLossPreventionJobTriggerTriggersManualOutputReference {
+	var returns DataLossPreventionJobTriggerTriggersManualOutputReference
+	_jsii_.Get(
+		j,
+		"manual",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerTriggersOutputReference) ManualInput() *DataLossPreventionJobTriggerTriggersManual {
+	var returns *DataLossPreventionJobTriggerTriggersManual
+	_jsii_.Get(
+		j,
+		"manualInput",
 		&returns,
 	)
 	return returns
@@ -439,6 +463,17 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerTriggersOutputReference) Interpol
 	return returns
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerTriggersOutputReference) PutManual(value *DataLossPreventionJobTriggerTriggersManual) {
+	if err := d.validatePutManualParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putManual",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerTriggersOutputReference) PutSchedule(value *DataLossPreventionJobTriggerTriggersSchedule) {
 	if err := d.validatePutScheduleParameters(value); err != nil {
 		panic(err)
@@ -447,6 +482,14 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerTriggersOutputReference) PutSched
 		d,
 		"putSchedule",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerTriggersOutputReference) ResetManual() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetManual",
+		nil, // no parameters
 	)
 }
 

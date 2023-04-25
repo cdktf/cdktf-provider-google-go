@@ -23,20 +23,20 @@ type DataGoogleComputeForwardingRuleConfig struct {
 	//
 	// provided by the client when the resource is created. The name must be 1-63 characters long, and comply with [RFC1035](https://www.ietf.org/rfc/rfc1035.txt). Specifically, the name must be 1-63 characters long and match the regular expression `[a-z]([-a-z0-9]*[a-z0-9])?` which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/data-sources/compute_forwarding_rule#name DataGoogleComputeForwardingRule#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/data-sources/compute_forwarding_rule#name DataGoogleComputeForwardingRule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/data-sources/compute_forwarding_rule#id DataGoogleComputeForwardingRule#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/data-sources/compute_forwarding_rule#id DataGoogleComputeForwardingRule#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The project this resource belongs in.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/data-sources/compute_forwarding_rule#project DataGoogleComputeForwardingRule#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/data-sources/compute_forwarding_rule#project DataGoogleComputeForwardingRule#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The location of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/data-sources/compute_forwarding_rule#region DataGoogleComputeForwardingRule#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/data-sources/compute_forwarding_rule#region DataGoogleComputeForwardingRule#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

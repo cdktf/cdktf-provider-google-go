@@ -29,17 +29,17 @@ type ComputeDiskConfig struct {
 	// characters must be a dash, lowercase letter, or digit, except the last
 	// character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_disk#name ComputeDisk#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_disk#name ComputeDisk#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// An optional description of this resource. Provide this property when you create the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_disk#description ComputeDisk#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_disk#description ComputeDisk#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// disk_encryption_key block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_disk#disk_encryption_key ComputeDisk#disk_encryption_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_disk#disk_encryption_key ComputeDisk#disk_encryption_key}
 	DiskEncryptionKey *ComputeDiskDiskEncryptionKey `field:"optional" json:"diskEncryptionKey" yaml:"diskEncryptionKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_disk#id ComputeDisk#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_disk#id ComputeDisk#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -56,11 +56,11 @@ type ComputeDiskConfig struct {
 	// For instance, the image 'centos-6-v20180104' includes its family name 'centos-6'.
 	// These images can be referred by family name here.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_disk#image ComputeDisk#image}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_disk#image ComputeDisk#image}
 	Image *string `field:"optional" json:"image" yaml:"image"`
 	// Labels to apply to this disk.  A list of key->value pairs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_disk#labels ComputeDisk#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_disk#labels ComputeDisk#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// Physical block size of the persistent disk, in bytes.
 	//
@@ -70,13 +70,13 @@ type ComputeDiskConfig struct {
 	// If an unsupported value is requested, the error message will list
 	// the supported values for the caller's project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_disk#physical_block_size_bytes ComputeDisk#physical_block_size_bytes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_disk#physical_block_size_bytes ComputeDisk#physical_block_size_bytes}
 	PhysicalBlockSizeBytes *float64 `field:"optional" json:"physicalBlockSizeBytes" yaml:"physicalBlockSizeBytes"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_disk#project ComputeDisk#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_disk#project ComputeDisk#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// Indicates how many IOPS must be provisioned for the disk.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_disk#provisioned_iops ComputeDisk#provisioned_iops}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_disk#provisioned_iops ComputeDisk#provisioned_iops}
 	ProvisionedIops *float64 `field:"optional" json:"provisionedIops" yaml:"provisionedIops"`
 	// Size of the persistent disk, specified in GB.
 	//
@@ -94,7 +94,7 @@ type ComputeDiskConfig struct {
 	// You can add 'lifecycle.prevent_destroy' in the config to prevent destroying
 	// and recreating.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_disk#size ComputeDisk#size}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_disk#size ComputeDisk#size}
 	Size *float64 `field:"optional" json:"size" yaml:"size"`
 	// The source snapshot used to create this disk.
 	//
@@ -108,7 +108,7 @@ type ComputeDiskConfig struct {
 	// 'global/snapshots/snapshot'
 	// 'snapshot'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_disk#snapshot ComputeDisk#snapshot}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_disk#snapshot ComputeDisk#snapshot}
 	Snapshot *string `field:"optional" json:"snapshot" yaml:"snapshot"`
 	// The source disk used to create this disk.
 	//
@@ -122,29 +122,29 @@ type ComputeDiskConfig struct {
 	// zones/{zone}/disks/{disk}
 	// regions/{region}/disks/{disk}
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_disk#source_disk ComputeDisk#source_disk}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_disk#source_disk ComputeDisk#source_disk}
 	SourceDisk *string `field:"optional" json:"sourceDisk" yaml:"sourceDisk"`
 	// source_image_encryption_key block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_disk#source_image_encryption_key ComputeDisk#source_image_encryption_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_disk#source_image_encryption_key ComputeDisk#source_image_encryption_key}
 	SourceImageEncryptionKey *ComputeDiskSourceImageEncryptionKey `field:"optional" json:"sourceImageEncryptionKey" yaml:"sourceImageEncryptionKey"`
 	// source_snapshot_encryption_key block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_disk#source_snapshot_encryption_key ComputeDisk#source_snapshot_encryption_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_disk#source_snapshot_encryption_key ComputeDisk#source_snapshot_encryption_key}
 	SourceSnapshotEncryptionKey *ComputeDiskSourceSnapshotEncryptionKey `field:"optional" json:"sourceSnapshotEncryptionKey" yaml:"sourceSnapshotEncryptionKey"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_disk#timeouts ComputeDisk#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_disk#timeouts ComputeDisk#timeouts}
 	Timeouts *ComputeDiskTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// URL of the disk type resource describing which disk type to use to create the disk.
 	//
 	// Provide this when creating the disk.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_disk#type ComputeDisk#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_disk#type ComputeDisk#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 	// A reference to the zone where the disk resides.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_disk#zone ComputeDisk#zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_disk#zone ComputeDisk#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
 

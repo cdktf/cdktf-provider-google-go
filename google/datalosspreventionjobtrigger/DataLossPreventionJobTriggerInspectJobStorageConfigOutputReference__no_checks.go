@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigOutputRefe
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigOutputReference) validatePutHybridOptionsParameters(value *DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptions) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigOutputReference) validatePutTimespanConfigParameters(value *DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfig) error {
 	return nil
 }

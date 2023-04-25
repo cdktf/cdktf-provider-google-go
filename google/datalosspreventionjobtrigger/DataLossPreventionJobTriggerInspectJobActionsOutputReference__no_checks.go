@@ -44,6 +44,14 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) validatePutDeidentifyParameters(value *DataLossPreventionJobTriggerInspectJobActionsDeidentify) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) validatePutJobNotificationEmailsParameters(value *DataLossPreventionJobTriggerInspectJobActionsJobNotificationEmails) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) validatePutPublishFindingsToCloudDataCatalogParameters(value *DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog) error {
 	return nil
 }

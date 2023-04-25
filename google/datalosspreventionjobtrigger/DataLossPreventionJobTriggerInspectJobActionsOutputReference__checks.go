@@ -90,6 +90,28 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) validatePutDeidentifyParameters(value *DataLossPreventionJobTriggerInspectJobActionsDeidentify) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) validatePutJobNotificationEmailsParameters(value *DataLossPreventionJobTriggerInspectJobActionsJobNotificationEmails) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) validatePutPublishFindingsToCloudDataCatalogParameters(value *DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

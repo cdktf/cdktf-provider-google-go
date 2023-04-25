@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_ssl_policy google_compute_ssl_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_ssl_policy google_compute_ssl_policy}.
 type ComputeSslPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -497,7 +497,7 @@ func (j *jsiiProxy_ComputeSslPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_ssl_policy google_compute_ssl_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_ssl_policy google_compute_ssl_policy} Resource.
 func NewComputeSslPolicy(scope constructs.Construct, id *string, config *ComputeSslPolicyConfig) ComputeSslPolicy {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewComputeSslPolicy(scope constructs.Construct, id *string, config *Compute
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/compute_ssl_policy google_compute_ssl_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/compute_ssl_policy google_compute_ssl_policy} Resource.
 func NewComputeSslPolicy_Override(c ComputeSslPolicy, scope constructs.Construct, id *string, config *ComputeSslPolicyConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/data-sources/logging_project_cmek_settings google_logging_project_cmek_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/data-sources/logging_project_cmek_settings google_logging_project_cmek_settings}.
 type DataGoogleLoggingProjectCmekSettings interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -338,7 +338,7 @@ func (j *jsiiProxy_DataGoogleLoggingProjectCmekSettings) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/data-sources/logging_project_cmek_settings google_logging_project_cmek_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/data-sources/logging_project_cmek_settings google_logging_project_cmek_settings} Data Source.
 func NewDataGoogleLoggingProjectCmekSettings(scope constructs.Construct, id *string, config *DataGoogleLoggingProjectCmekSettingsConfig) DataGoogleLoggingProjectCmekSettings {
 	_init_.Initialize()
 
@@ -356,7 +356,7 @@ func NewDataGoogleLoggingProjectCmekSettings(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/data-sources/logging_project_cmek_settings google_logging_project_cmek_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/data-sources/logging_project_cmek_settings google_logging_project_cmek_settings} Data Source.
 func NewDataGoogleLoggingProjectCmekSettings_Override(d DataGoogleLoggingProjectCmekSettings, scope constructs.Construct, id *string, config *DataGoogleLoggingProjectCmekSettingsConfig) {
 	_init_.Initialize()
 

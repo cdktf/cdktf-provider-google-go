@@ -44,6 +44,10 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerTriggersOutputReference) validate
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerTriggersOutputReference) validatePutManualParameters(value *DataLossPreventionJobTriggerTriggersManual) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerTriggersOutputReference) validatePutScheduleParameters(value *DataLossPreventionJobTriggerTriggersSchedule) error {
 	return nil
 }

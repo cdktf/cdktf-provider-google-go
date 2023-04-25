@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/healthcare_dicom_store_iam_member google_healthcare_dicom_store_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/healthcare_dicom_store_iam_member google_healthcare_dicom_store_iam_member}.
 type HealthcareDicomStoreIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_HealthcareDicomStoreIamMember) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/healthcare_dicom_store_iam_member google_healthcare_dicom_store_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/healthcare_dicom_store_iam_member google_healthcare_dicom_store_iam_member} Resource.
 func NewHealthcareDicomStoreIamMember(scope constructs.Construct, id *string, config *HealthcareDicomStoreIamMemberConfig) HealthcareDicomStoreIamMember {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewHealthcareDicomStoreIamMember(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/healthcare_dicom_store_iam_member google_healthcare_dicom_store_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/healthcare_dicom_store_iam_member google_healthcare_dicom_store_iam_member} Resource.
 func NewHealthcareDicomStoreIamMember_Override(h HealthcareDicomStoreIamMember, scope constructs.Construct, id *string, config *HealthcareDicomStoreIamMemberConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/pubsub_topic_iam_binding google_pubsub_topic_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/pubsub_topic_iam_binding google_pubsub_topic_iam_binding}.
 type PubsubTopicIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_PubsubTopicIamBinding) TopicInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/pubsub_topic_iam_binding google_pubsub_topic_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/pubsub_topic_iam_binding google_pubsub_topic_iam_binding} Resource.
 func NewPubsubTopicIamBinding(scope constructs.Construct, id *string, config *PubsubTopicIamBindingConfig) PubsubTopicIamBinding {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewPubsubTopicIamBinding(scope constructs.Construct, id *string, config *Pu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/pubsub_topic_iam_binding google_pubsub_topic_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/pubsub_topic_iam_binding google_pubsub_topic_iam_binding} Resource.
 func NewPubsubTopicIamBinding_Override(p PubsubTopicIamBinding, scope constructs.Construct, id *string, config *PubsubTopicIamBindingConfig) {
 	_init_.Initialize()
 

@@ -33,6 +33,8 @@ type DataLossPreventionJobTriggerInspectJobStorageConfigOutputReference interfac
 	DatastoreOptionsInput() *DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptions
 	// Experimental.
 	Fqn() *string
+	HybridOptions() DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsOutputReference
+	HybridOptionsInput() *DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptions
 	InternalValue() *DataLossPreventionJobTriggerInspectJobStorageConfig
 	SetInternalValue(val *DataLossPreventionJobTriggerInspectJobStorageConfig)
 	// Experimental.
@@ -72,10 +74,12 @@ type DataLossPreventionJobTriggerInspectJobStorageConfigOutputReference interfac
 	PutBigQueryOptions(value *DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions)
 	PutCloudStorageOptions(value *DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptions)
 	PutDatastoreOptions(value *DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptions)
+	PutHybridOptions(value *DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptions)
 	PutTimespanConfig(value *DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfig)
 	ResetBigQueryOptions()
 	ResetCloudStorageOptions()
 	ResetDatastoreOptions()
+	ResetHybridOptions()
 	ResetTimespanConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -187,6 +191,26 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigOutputRefe
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigOutputReference) HybridOptions() DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsOutputReference {
+	var returns DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"hybridOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigOutputReference) HybridOptionsInput() *DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptions {
+	var returns *DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptions
+	_jsii_.Get(
+		j,
+		"hybridOptionsInput",
 		&returns,
 	)
 	return returns
@@ -544,6 +568,17 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigOutputRefe
 	)
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigOutputReference) PutHybridOptions(value *DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptions) {
+	if err := d.validatePutHybridOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putHybridOptions",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigOutputReference) PutTimespanConfig(value *DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfig) {
 	if err := d.validatePutTimespanConfigParameters(value); err != nil {
 		panic(err)
@@ -575,6 +610,14 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigOutputRefe
 	_jsii_.InvokeVoid(
 		d,
 		"resetDatastoreOptions",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigOutputReference) ResetHybridOptions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHybridOptions",
 		nil, // no parameters
 	)
 }

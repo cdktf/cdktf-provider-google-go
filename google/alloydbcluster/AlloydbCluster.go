@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
 type AlloydbCluster interface {
 	cdktf.TerraformResource
 	AutomatedBackupPolicy() AlloydbClusterAutomatedBackupPolicyOutputReference
@@ -123,7 +123,6 @@ type AlloydbCluster interface {
 	ResetId()
 	ResetInitialUser()
 	ResetLabels()
-	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -555,7 +554,7 @@ func (j *jsiiProxy_AlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbClusterConfig) AlloydbCluster {
 	_init_.Initialize()
 
@@ -573,7 +572,7 @@ func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.62.1/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster_Override(a AlloydbCluster, scope constructs.Construct, id *string, config *AlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1064,14 +1063,6 @@ func (a *jsiiProxy_AlloydbCluster) ResetLabels() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetLabels",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AlloydbCluster) ResetLocation() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetLocation",
 		nil, // no parameters
 	)
 }

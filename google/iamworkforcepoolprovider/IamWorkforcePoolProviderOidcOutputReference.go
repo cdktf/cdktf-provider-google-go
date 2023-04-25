@@ -43,6 +43,8 @@ type IamWorkforcePoolProviderOidcOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WebSsoConfig() IamWorkforcePoolProviderOidcWebSsoConfigOutputReference
+	WebSsoConfigInput() *IamWorkforcePoolProviderOidcWebSsoConfig
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,6 +69,8 @@ type IamWorkforcePoolProviderOidcOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutWebSsoConfig(value *IamWorkforcePoolProviderOidcWebSsoConfig)
+	ResetWebSsoConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -187,6 +191,26 @@ func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) TerraformResourc
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) WebSsoConfig() IamWorkforcePoolProviderOidcWebSsoConfigOutputReference {
+	var returns IamWorkforcePoolProviderOidcWebSsoConfigOutputReference
+	_jsii_.Get(
+		j,
+		"webSsoConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) WebSsoConfigInput() *IamWorkforcePoolProviderOidcWebSsoConfig {
+	var returns *IamWorkforcePoolProviderOidcWebSsoConfig
+	_jsii_.Get(
+		j,
+		"webSsoConfigInput",
 		&returns,
 	)
 	return returns
@@ -481,6 +505,25 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) InterpolationFor
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) PutWebSsoConfig(value *IamWorkforcePoolProviderOidcWebSsoConfig) {
+	if err := i.validatePutWebSsoConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putWebSsoConfig",
+		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) ResetWebSsoConfig() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetWebSsoConfig",
+		nil, // no parameters
+	)
 }
 
 func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

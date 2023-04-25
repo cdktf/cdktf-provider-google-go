@@ -44,6 +44,10 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validateInterpol
 	return nil
 }
 
+func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validatePutWebSsoConfigParameters(value *IamWorkforcePoolProviderOidcWebSsoConfig) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
