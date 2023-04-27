@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/data-sources/secret_manager_secret_version google_secret_manager_secret_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/data-sources/secret_manager_secret_version google_secret_manager_secret_version}.
 type DataGoogleSecretManagerSecretVersion interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecretVersion) VersionInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/data-sources/secret_manager_secret_version google_secret_manager_secret_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/data-sources/secret_manager_secret_version google_secret_manager_secret_version} Data Source.
 func NewDataGoogleSecretManagerSecretVersion(scope constructs.Construct, id *string, config *DataGoogleSecretManagerSecretVersionConfig) DataGoogleSecretManagerSecretVersion {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewDataGoogleSecretManagerSecretVersion(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.0/docs/data-sources/secret_manager_secret_version google_secret_manager_secret_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/data-sources/secret_manager_secret_version google_secret_manager_secret_version} Data Source.
 func NewDataGoogleSecretManagerSecretVersion_Override(d DataGoogleSecretManagerSecretVersion, scope constructs.Construct, id *string, config *DataGoogleSecretManagerSecretVersionConfig) {
 	_init_.Initialize()
 
