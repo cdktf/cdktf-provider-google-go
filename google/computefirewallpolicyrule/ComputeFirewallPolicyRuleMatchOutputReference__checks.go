@@ -194,7 +194,39 @@ func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetCom
 	return nil
 }
 
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetDestAddressGroupsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetDestFqdnsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetDestIpRangesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetDestRegionCodesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetDestThreatIntelligencesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -210,7 +242,39 @@ func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetInt
 	return nil
 }
 
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcAddressGroupsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcFqdnsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcIpRangesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcRegionCodesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcThreatIntelligencesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

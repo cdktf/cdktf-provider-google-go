@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
 type AlloydbCluster interface {
 	cdktf.TerraformResource
 	AutomatedBackupPolicy() AlloydbClusterAutomatedBackupPolicyOutputReference
@@ -38,6 +38,9 @@ type AlloydbCluster interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EncryptionConfig() AlloydbClusterEncryptionConfigOutputReference
+	EncryptionConfigInput() *AlloydbClusterEncryptionConfig
+	EncryptionInfo() AlloydbClusterEncryptionInfoList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -116,10 +119,12 @@ type AlloydbCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutomatedBackupPolicy(value *AlloydbClusterAutomatedBackupPolicy)
+	PutEncryptionConfig(value *AlloydbClusterEncryptionConfig)
 	PutInitialUser(value *AlloydbClusterInitialUser)
 	PutTimeouts(value *AlloydbClusterTimeouts)
 	ResetAutomatedBackupPolicy()
 	ResetDisplayName()
+	ResetEncryptionConfig()
 	ResetId()
 	ResetInitialUser()
 	ResetLabels()
@@ -268,6 +273,36 @@ func (j *jsiiProxy_AlloydbCluster) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) EncryptionConfig() AlloydbClusterEncryptionConfigOutputReference {
+	var returns AlloydbClusterEncryptionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) EncryptionConfigInput() *AlloydbClusterEncryptionConfig {
+	var returns *AlloydbClusterEncryptionConfig
+	_jsii_.Get(
+		j,
+		"encryptionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) EncryptionInfo() AlloydbClusterEncryptionInfoList {
+	var returns AlloydbClusterEncryptionInfoList
+	_jsii_.Get(
+		j,
+		"encryptionInfo",
 		&returns,
 	)
 	return returns
@@ -554,7 +589,7 @@ func (j *jsiiProxy_AlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbClusterConfig) AlloydbCluster {
 	_init_.Initialize()
 
@@ -572,7 +607,7 @@ func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster_Override(a AlloydbCluster, scope constructs.Construct, id *string, config *AlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1005,6 +1040,17 @@ func (a *jsiiProxy_AlloydbCluster) PutAutomatedBackupPolicy(value *AlloydbCluste
 	)
 }
 
+func (a *jsiiProxy_AlloydbCluster) PutEncryptionConfig(value *AlloydbClusterEncryptionConfig) {
+	if err := a.validatePutEncryptionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putEncryptionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlloydbCluster) PutInitialUser(value *AlloydbClusterInitialUser) {
 	if err := a.validatePutInitialUserParameters(value); err != nil {
 		panic(err)
@@ -1039,6 +1085,14 @@ func (a *jsiiProxy_AlloydbCluster) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) ResetEncryptionConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEncryptionConfig",
 		nil, // no parameters
 	)
 }

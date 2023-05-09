@@ -9,9 +9,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/data-sources/compute_global_forwarding_rule google_compute_global_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/data-sources/compute_global_forwarding_rule google_compute_global_forwarding_rule}.
 type DataGoogleComputeGlobalForwardingRule interface {
 	cdktf.TerraformDataSource
+	BaseForwardingRule() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -66,6 +67,7 @@ type DataGoogleComputeGlobalForwardingRule interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	SourceIpRanges() *[]*string
 	Target() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -116,6 +118,16 @@ type DataGoogleComputeGlobalForwardingRule interface {
 // The jsii proxy struct for DataGoogleComputeGlobalForwardingRule
 type jsiiProxy_DataGoogleComputeGlobalForwardingRule struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRule) BaseForwardingRule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"baseForwardingRule",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRule) CdktfStack() cdktf.TerraformStack {
@@ -418,6 +430,16 @@ func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRule) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRule) SourceIpRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceIpRanges",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRule) Target() *string {
 	var returns *string
 	_jsii_.Get(
@@ -459,7 +481,7 @@ func (j *jsiiProxy_DataGoogleComputeGlobalForwardingRule) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/data-sources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/data-sources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Data Source.
 func NewDataGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *string, config *DataGoogleComputeGlobalForwardingRuleConfig) DataGoogleComputeGlobalForwardingRule {
 	_init_.Initialize()
 
@@ -477,7 +499,7 @@ func NewDataGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/data-sources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/data-sources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Data Source.
 func NewDataGoogleComputeGlobalForwardingRule_Override(d DataGoogleComputeGlobalForwardingRule, scope constructs.Construct, id *string, config *DataGoogleComputeGlobalForwardingRuleConfig) {
 	_init_.Initialize()
 

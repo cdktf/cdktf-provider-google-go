@@ -31,6 +31,8 @@ type AlloydbClusterAutomatedBackupPolicyOutputReference interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
+	EncryptionConfig() AlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference
+	EncryptionConfigInput() *AlloydbClusterAutomatedBackupPolicyEncryptionConfig
 	// Experimental.
 	Fqn() *string
 	InternalValue() *AlloydbClusterAutomatedBackupPolicy
@@ -79,11 +81,13 @@ type AlloydbClusterAutomatedBackupPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutEncryptionConfig(value *AlloydbClusterAutomatedBackupPolicyEncryptionConfig)
 	PutQuantityBasedRetention(value *AlloydbClusterAutomatedBackupPolicyQuantityBasedRetention)
 	PutTimeBasedRetention(value *AlloydbClusterAutomatedBackupPolicyTimeBasedRetention)
 	PutWeeklySchedule(value *AlloydbClusterAutomatedBackupPolicyWeeklySchedule)
 	ResetBackupWindow()
 	ResetEnabled()
+	ResetEncryptionConfig()
 	ResetLabels()
 	ResetLocation()
 	ResetQuantityBasedRetention()
@@ -169,6 +173,26 @@ func (j *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) EnabledIn
 	_jsii_.Get(
 		j,
 		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) EncryptionConfig() AlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference {
+	var returns AlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) EncryptionConfigInput() *AlloydbClusterAutomatedBackupPolicyEncryptionConfig {
+	var returns *AlloydbClusterAutomatedBackupPolicyEncryptionConfig
+	_jsii_.Get(
+		j,
+		"encryptionConfigInput",
 		&returns,
 	)
 	return returns
@@ -627,6 +651,17 @@ func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) Interpola
 	return returns
 }
 
+func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) PutEncryptionConfig(value *AlloydbClusterAutomatedBackupPolicyEncryptionConfig) {
+	if err := a.validatePutEncryptionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putEncryptionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) PutQuantityBasedRetention(value *AlloydbClusterAutomatedBackupPolicyQuantityBasedRetention) {
 	if err := a.validatePutQuantityBasedRetentionParameters(value); err != nil {
 		panic(err)
@@ -672,6 +707,14 @@ func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) ResetEnab
 	_jsii_.InvokeVoid(
 		a,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) ResetEncryptionConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEncryptionConfig",
 		nil, // no parameters
 	)
 }

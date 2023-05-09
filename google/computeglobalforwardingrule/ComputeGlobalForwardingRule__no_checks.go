@@ -132,6 +132,10 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetProvisionersParameter
 	return nil
 }
 
+func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetSourceIpRangesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetTargetParameters(val *string) error {
 	return nil
 }

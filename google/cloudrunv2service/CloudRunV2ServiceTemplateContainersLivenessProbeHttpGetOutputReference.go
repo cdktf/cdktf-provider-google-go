@@ -34,6 +34,9 @@ type CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference inte
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference inte
 	PutHttpHeaders(value interface{})
 	ResetHttpHeaders()
 	ResetPath()
+	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +178,26 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutput
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -262,6 +286,17 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutput
 	_jsii_.Set(
 		j,
 		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutput
 	_jsii_.InvokeVoid(
 		c,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPort",
 		nil, // no parameters
 	)
 }

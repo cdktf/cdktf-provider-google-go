@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/alloydb_backup google_alloydb_backup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/alloydb_backup google_alloydb_backup}.
 type AlloydbBackup interface {
 	cdktf.TerraformResource
 	BackupId() *string
@@ -38,6 +38,9 @@ type AlloydbBackup interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EncryptionConfig() AlloydbBackupEncryptionConfigOutputReference
+	EncryptionConfigInput() *AlloydbBackupEncryptionConfig
+	EncryptionInfo() AlloydbBackupEncryptionInfoList
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -113,8 +116,10 @@ type AlloydbBackup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionConfig(value *AlloydbBackupEncryptionConfig)
 	PutTimeouts(value *AlloydbBackupTimeouts)
 	ResetDescription()
+	ResetEncryptionConfig()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -252,6 +257,36 @@ func (j *jsiiProxy_AlloydbBackup) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbBackup) EncryptionConfig() AlloydbBackupEncryptionConfigOutputReference {
+	var returns AlloydbBackupEncryptionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbBackup) EncryptionConfigInput() *AlloydbBackupEncryptionConfig {
+	var returns *AlloydbBackupEncryptionConfig
+	_jsii_.Get(
+		j,
+		"encryptionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbBackup) EncryptionInfo() AlloydbBackupEncryptionInfoList {
+	var returns AlloydbBackupEncryptionInfoList
+	_jsii_.Get(
+		j,
+		"encryptionInfo",
 		&returns,
 	)
 	return returns
@@ -528,7 +563,7 @@ func (j *jsiiProxy_AlloydbBackup) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/alloydb_backup google_alloydb_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/alloydb_backup google_alloydb_backup} Resource.
 func NewAlloydbBackup(scope constructs.Construct, id *string, config *AlloydbBackupConfig) AlloydbBackup {
 	_init_.Initialize()
 
@@ -546,7 +581,7 @@ func NewAlloydbBackup(scope constructs.Construct, id *string, config *AlloydbBac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/alloydb_backup google_alloydb_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/alloydb_backup google_alloydb_backup} Resource.
 func NewAlloydbBackup_Override(a AlloydbBackup, scope constructs.Construct, id *string, config *AlloydbBackupConfig) {
 	_init_.Initialize()
 
@@ -968,6 +1003,17 @@ func (a *jsiiProxy_AlloydbBackup) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_AlloydbBackup) PutEncryptionConfig(value *AlloydbBackupEncryptionConfig) {
+	if err := a.validatePutEncryptionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putEncryptionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlloydbBackup) PutTimeouts(value *AlloydbBackupTimeouts) {
 	if err := a.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -983,6 +1029,14 @@ func (a *jsiiProxy_AlloydbBackup) ResetDescription() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbBackup) ResetEncryptionConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEncryptionConfig",
 		nil, // no parameters
 	)
 }

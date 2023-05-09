@@ -25,20 +25,44 @@ type ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DestAddressGroups() *[]*string
+	SetDestAddressGroups(val *[]*string)
+	DestAddressGroupsInput() *[]*string
+	DestFqdns() *[]*string
+	SetDestFqdns(val *[]*string)
+	DestFqdnsInput() *[]*string
 	DestIpRanges() *[]*string
 	SetDestIpRanges(val *[]*string)
 	DestIpRangesInput() *[]*string
+	DestRegionCodes() *[]*string
+	SetDestRegionCodes(val *[]*string)
+	DestRegionCodesInput() *[]*string
+	DestThreatIntelligences() *[]*string
+	SetDestThreatIntelligences(val *[]*string)
+	DestThreatIntelligencesInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComputeRegionNetworkFirewallPolicyRuleMatch
 	SetInternalValue(val *ComputeRegionNetworkFirewallPolicyRuleMatch)
 	Layer4Configs() ComputeRegionNetworkFirewallPolicyRuleMatchLayer4ConfigsList
 	Layer4ConfigsInput() interface{}
+	SrcAddressGroups() *[]*string
+	SetSrcAddressGroups(val *[]*string)
+	SrcAddressGroupsInput() *[]*string
+	SrcFqdns() *[]*string
+	SetSrcFqdns(val *[]*string)
+	SrcFqdnsInput() *[]*string
 	SrcIpRanges() *[]*string
 	SetSrcIpRanges(val *[]*string)
 	SrcIpRangesInput() *[]*string
+	SrcRegionCodes() *[]*string
+	SetSrcRegionCodes(val *[]*string)
+	SrcRegionCodesInput() *[]*string
 	SrcSecureTags() ComputeRegionNetworkFirewallPolicyRuleMatchSrcSecureTagsList
 	SrcSecureTagsInput() interface{}
+	SrcThreatIntelligences() *[]*string
+	SetSrcThreatIntelligences(val *[]*string)
+	SrcThreatIntelligencesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,9 +97,17 @@ type ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLayer4Configs(value interface{})
 	PutSrcSecureTags(value interface{})
+	ResetDestAddressGroups()
+	ResetDestFqdns()
 	ResetDestIpRanges()
+	ResetDestRegionCodes()
+	ResetDestThreatIntelligences()
+	ResetSrcAddressGroups()
+	ResetSrcFqdns()
 	ResetSrcIpRanges()
+	ResetSrcRegionCodes()
 	ResetSrcSecureTags()
+	ResetSrcThreatIntelligences()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -121,6 +153,46 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) C
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestAddressGroups() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destAddressGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestAddressGroupsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destAddressGroupsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestFqdns() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destFqdns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestFqdnsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destFqdnsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestIpRanges() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -136,6 +208,46 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) D
 	_jsii_.Get(
 		j,
 		"destIpRangesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestRegionCodes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destRegionCodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestRegionCodesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destRegionCodesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestThreatIntelligences() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destThreatIntelligences",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestThreatIntelligencesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destThreatIntelligencesInput",
 		&returns,
 	)
 	return returns
@@ -181,6 +293,46 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) L
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcAddressGroups() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcAddressGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcAddressGroupsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcAddressGroupsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcFqdns() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcFqdns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcFqdnsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcFqdnsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcIpRanges() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -201,6 +353,26 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) S
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcRegionCodes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcRegionCodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcRegionCodesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcRegionCodesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcSecureTags() ComputeRegionNetworkFirewallPolicyRuleMatchSrcSecureTagsList {
 	var returns ComputeRegionNetworkFirewallPolicyRuleMatchSrcSecureTagsList
 	_jsii_.Get(
@@ -216,6 +388,26 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) S
 	_jsii_.Get(
 		j,
 		"srcSecureTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcThreatIntelligences() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcThreatIntelligences",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcThreatIntelligencesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcThreatIntelligencesInput",
 		&returns,
 	)
 	return returns
@@ -291,6 +483,28 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)Se
 	)
 }
 
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetDestAddressGroups(val *[]*string) {
+	if err := j.validateSetDestAddressGroupsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destAddressGroups",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetDestFqdns(val *[]*string) {
+	if err := j.validateSetDestFqdnsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destFqdns",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetDestIpRanges(val *[]*string) {
 	if err := j.validateSetDestIpRangesParameters(val); err != nil {
 		panic(err)
@@ -298,6 +512,28 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)Se
 	_jsii_.Set(
 		j,
 		"destIpRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetDestRegionCodes(val *[]*string) {
+	if err := j.validateSetDestRegionCodesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destRegionCodes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetDestThreatIntelligences(val *[]*string) {
+	if err := j.validateSetDestThreatIntelligencesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destThreatIntelligences",
 		val,
 	)
 }
@@ -313,6 +549,28 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)Se
 	)
 }
 
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetSrcAddressGroups(val *[]*string) {
+	if err := j.validateSetSrcAddressGroupsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"srcAddressGroups",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetSrcFqdns(val *[]*string) {
+	if err := j.validateSetSrcFqdnsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"srcFqdns",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetSrcIpRanges(val *[]*string) {
 	if err := j.validateSetSrcIpRangesParameters(val); err != nil {
 		panic(err)
@@ -320,6 +578,28 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)Se
 	_jsii_.Set(
 		j,
 		"srcIpRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetSrcRegionCodes(val *[]*string) {
+	if err := j.validateSetSrcRegionCodesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"srcRegionCodes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetSrcThreatIntelligences(val *[]*string) {
+	if err := j.validateSetSrcThreatIntelligencesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"srcThreatIntelligences",
 		val,
 	)
 }
@@ -554,10 +834,58 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) P
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetDestAddressGroups() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDestAddressGroups",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetDestFqdns() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDestFqdns",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetDestIpRanges() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDestIpRanges",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetDestRegionCodes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDestRegionCodes",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetDestThreatIntelligences() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDestThreatIntelligences",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetSrcAddressGroups() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSrcAddressGroups",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetSrcFqdns() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSrcFqdns",
 		nil, // no parameters
 	)
 }
@@ -570,10 +898,26 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) R
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetSrcRegionCodes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSrcRegionCodes",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetSrcSecureTags() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSrcSecureTags",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetSrcThreatIntelligences() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSrcThreatIntelligences",
 		nil, // no parameters
 	)
 }

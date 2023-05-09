@@ -44,6 +44,10 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validateInterp
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validatePutBypassCacheOnRequestHeadersParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validatePutCacheKeyPolicyParameters(value *ComputeBackendServiceCdnPolicyCacheKeyPolicy) error {
 	return nil
 }

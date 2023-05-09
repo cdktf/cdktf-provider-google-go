@@ -29,6 +29,8 @@ type DataLossPreventionJobTriggerInspectJobOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InspectConfig() DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference
+	InspectConfigInput() *DataLossPreventionJobTriggerInspectJobInspectConfig
 	InspectTemplateName() *string
 	SetInspectTemplateName(val *string)
 	InspectTemplateNameInput() *string
@@ -69,7 +71,9 @@ type DataLossPreventionJobTriggerInspectJobOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutActions(value interface{})
+	PutInspectConfig(value *DataLossPreventionJobTriggerInspectJobInspectConfig)
 	PutStorageConfig(value *DataLossPreventionJobTriggerInspectJobStorageConfig)
+	ResetInspectConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -140,6 +144,26 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) Fqn() 
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) InspectConfig() DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference {
+	var returns DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference
+	_jsii_.Get(
+		j,
+		"inspectConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) InspectConfigInput() *DataLossPreventionJobTriggerInspectJobInspectConfig {
+	var returns *DataLossPreventionJobTriggerInspectJobInspectConfig
+	_jsii_.Get(
+		j,
+		"inspectConfigInput",
 		&returns,
 	)
 	return returns
@@ -506,6 +530,17 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) PutAct
 	)
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) PutInspectConfig(value *DataLossPreventionJobTriggerInspectJobInspectConfig) {
+	if err := d.validatePutInspectConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putInspectConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) PutStorageConfig(value *DataLossPreventionJobTriggerInspectJobStorageConfig) {
 	if err := d.validatePutStorageConfigParameters(value); err != nil {
 		panic(err)
@@ -514,6 +549,14 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) PutSto
 		d,
 		"putStorageConfig",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) ResetInspectConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetInspectConfig",
+		nil, // no parameters
 	)
 }
 

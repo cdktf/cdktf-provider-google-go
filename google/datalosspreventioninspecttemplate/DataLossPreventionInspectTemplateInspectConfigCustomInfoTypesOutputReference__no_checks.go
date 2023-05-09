@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypes
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference) validatePutSurrogateTypeParameters(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateType) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

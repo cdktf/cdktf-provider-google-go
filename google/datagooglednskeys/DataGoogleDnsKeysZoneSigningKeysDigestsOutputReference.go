@@ -28,8 +28,8 @@ type DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference interface {
 	Digest() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataGoogleDnsKeysZoneSigningKeysDigests
+	SetInternalValue(val *DataGoogleDnsKeysZoneSigningKeysDigests)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference) InternalValue() *DataGoogleDnsKeysZoneSigningKeysDigests {
+	var returns *DataGoogleDnsKeysZoneSigningKeysDigests
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference)SetInternalValue(val *DataGoogleDnsKeysZoneSigningKeysDigests) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

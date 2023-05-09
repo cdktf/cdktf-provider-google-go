@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/compute_autoscaler google_compute_autoscaler}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/compute_autoscaler google_compute_autoscaler}.
 type ComputeAutoscaler interface {
 	cdktf.TerraformResource
 	AutoscalingPolicy() ComputeAutoscalerAutoscalingPolicyOutputReference
@@ -473,7 +473,7 @@ func (j *jsiiProxy_ComputeAutoscaler) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/compute_autoscaler google_compute_autoscaler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/compute_autoscaler google_compute_autoscaler} Resource.
 func NewComputeAutoscaler(scope constructs.Construct, id *string, config *ComputeAutoscalerConfig) ComputeAutoscaler {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewComputeAutoscaler(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/compute_autoscaler google_compute_autoscaler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/compute_autoscaler google_compute_autoscaler} Resource.
 func NewComputeAutoscaler_Override(c ComputeAutoscaler, scope constructs.Construct, id *string, config *ComputeAutoscalerConfig) {
 	_init_.Initialize()
 

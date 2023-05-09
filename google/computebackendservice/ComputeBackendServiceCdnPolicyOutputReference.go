@@ -10,6 +10,8 @@ import (
 
 type ComputeBackendServiceCdnPolicyOutputReference interface {
 	cdktf.ComplexObject
+	BypassCacheOnRequestHeaders() ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList
+	BypassCacheOnRequestHeadersInput() interface{}
 	CacheKeyPolicy() ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference
 	CacheKeyPolicyInput() *ComputeBackendServiceCdnPolicyCacheKeyPolicy
 	CacheMode() *string
@@ -86,8 +88,10 @@ type ComputeBackendServiceCdnPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutBypassCacheOnRequestHeaders(value interface{})
 	PutCacheKeyPolicy(value *ComputeBackendServiceCdnPolicyCacheKeyPolicy)
 	PutNegativeCachingPolicy(value interface{})
+	ResetBypassCacheOnRequestHeaders()
 	ResetCacheKeyPolicy()
 	ResetCacheMode()
 	ResetClientTtl()
@@ -110,6 +114,26 @@ type ComputeBackendServiceCdnPolicyOutputReference interface {
 // The jsii proxy struct for ComputeBackendServiceCdnPolicyOutputReference
 type jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) BypassCacheOnRequestHeaders() ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList {
+	var returns ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList
+	_jsii_.Get(
+		j,
+		"bypassCacheOnRequestHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) BypassCacheOnRequestHeadersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bypassCacheOnRequestHeadersInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) CacheKeyPolicy() ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference {
@@ -708,6 +732,17 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) InterpolationF
 	return returns
 }
 
+func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) PutBypassCacheOnRequestHeaders(value interface{}) {
+	if err := c.validatePutBypassCacheOnRequestHeadersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putBypassCacheOnRequestHeaders",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) PutCacheKeyPolicy(value *ComputeBackendServiceCdnPolicyCacheKeyPolicy) {
 	if err := c.validatePutCacheKeyPolicyParameters(value); err != nil {
 		panic(err)
@@ -727,6 +762,14 @@ func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) PutNegativeCac
 		c,
 		"putNegativeCachingPolicy",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) ResetBypassCacheOnRequestHeaders() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBypassCacheOnRequestHeaders",
+		nil, // no parameters
 	)
 }
 

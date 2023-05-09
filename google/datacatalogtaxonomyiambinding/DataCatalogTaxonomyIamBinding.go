@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/data_catalog_taxonomy_iam_binding google_data_catalog_taxonomy_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/data_catalog_taxonomy_iam_binding google_data_catalog_taxonomy_iam_binding}.
 type DataCatalogTaxonomyIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_DataCatalogTaxonomyIamBinding) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/data_catalog_taxonomy_iam_binding google_data_catalog_taxonomy_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/data_catalog_taxonomy_iam_binding google_data_catalog_taxonomy_iam_binding} Resource.
 func NewDataCatalogTaxonomyIamBinding(scope constructs.Construct, id *string, config *DataCatalogTaxonomyIamBindingConfig) DataCatalogTaxonomyIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewDataCatalogTaxonomyIamBinding(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/data_catalog_taxonomy_iam_binding google_data_catalog_taxonomy_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/data_catalog_taxonomy_iam_binding google_data_catalog_taxonomy_iam_binding} Resource.
 func NewDataCatalogTaxonomyIamBinding_Override(d DataCatalogTaxonomyIamBinding, scope constructs.Construct, id *string, config *DataCatalogTaxonomyIamBindingConfig) {
 	_init_.Initialize()
 

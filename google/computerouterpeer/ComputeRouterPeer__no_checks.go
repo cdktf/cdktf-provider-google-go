@@ -100,6 +100,10 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetEnableParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) validateSetEnableIpv6Parameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterPeer) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -109,6 +113,10 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetInterfaceParameters(val *string
 }
 
 func (j *jsiiProxy_ComputeRouterPeer) validateSetIpAddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) validateSetIpv6NexthopAddressParameters(val *string) error {
 	return nil
 }
 
@@ -125,6 +133,10 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetPeerAsnParameters(val *float64)
 }
 
 func (j *jsiiProxy_ComputeRouterPeer) validateSetPeerIpAddressParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) validateSetPeerIpv6NexthopAddressParameters(val *string) error {
 	return nil
 }
 

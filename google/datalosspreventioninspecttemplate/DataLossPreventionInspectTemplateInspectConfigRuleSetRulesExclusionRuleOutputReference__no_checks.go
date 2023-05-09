@@ -48,6 +48,10 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExc
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleOutputReference) validatePutExcludeByHotwordParameters(value *DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotword) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleOutputReference) validatePutExcludeInfoTypesParameters(value *DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes) error {
 	return nil
 }

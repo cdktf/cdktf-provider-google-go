@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template}.
 type DataLossPreventionDeidentifyTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,6 +24,7 @@ type DataLossPreventionDeidentifyTemplate interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateTime() *string
 	DeidentifyConfig() DataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference
 	DeidentifyConfigInput() *DataLossPreventionDeidentifyTemplateDeidentifyConfig
 	// Experimental.
@@ -75,6 +76,7 @@ type DataLossPreventionDeidentifyTemplate interface {
 	TerraformResourceType() *string
 	Timeouts() DataLossPreventionDeidentifyTemplateTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	UpdateTime() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -159,6 +161,16 @@ func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
 		&returns,
 	)
 	return returns
@@ -414,8 +426,18 @@ func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) TimeoutsInput() interfa
 	return returns
 }
 
+func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
 func NewDataLossPreventionDeidentifyTemplate(scope constructs.Construct, id *string, config *DataLossPreventionDeidentifyTemplateConfig) DataLossPreventionDeidentifyTemplate {
 	_init_.Initialize()
 
@@ -433,7 +455,7 @@ func NewDataLossPreventionDeidentifyTemplate(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
 func NewDataLossPreventionDeidentifyTemplate_Override(d DataLossPreventionDeidentifyTemplate, scope constructs.Construct, id *string, config *DataLossPreventionDeidentifyTemplateConfig) {
 	_init_.Initialize()
 

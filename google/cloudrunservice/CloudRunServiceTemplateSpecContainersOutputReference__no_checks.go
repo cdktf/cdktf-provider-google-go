@@ -52,11 +52,19 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validat
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validatePutLivenessProbeParameters(value *CloudRunServiceTemplateSpecContainersLivenessProbe) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validatePutPortsParameters(value interface{}) error {
 	return nil
 }
 
 func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validatePutResourcesParameters(value *CloudRunServiceTemplateSpecContainersResources) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) validatePutStartupProbeParameters(value *CloudRunServiceTemplateSpecContainersStartupProbe) error {
 	return nil
 }
 

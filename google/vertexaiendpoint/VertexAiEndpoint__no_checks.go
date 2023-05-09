@@ -120,6 +120,10 @@ func (j *jsiiProxy_VertexAiEndpoint) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_VertexAiEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewVertexAiEndpointParameters(scope constructs.Construct, id *string, config *VertexAiEndpointConfig) error {
 	return nil
 }

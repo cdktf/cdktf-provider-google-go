@@ -4,7 +4,7 @@ package apigeeorganization
 type ApigeeOrganizationProperties struct {
 	// property block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/apigee_organization#property ApigeeOrganization#property}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/apigee_organization#property ApigeeOrganization#property}
 	Property interface{} `field:"optional" json:"property" yaml:"property"`
 }
 

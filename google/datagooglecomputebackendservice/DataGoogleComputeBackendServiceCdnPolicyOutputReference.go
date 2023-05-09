@@ -10,6 +10,7 @@ import (
 
 type DataGoogleComputeBackendServiceCdnPolicyOutputReference interface {
 	cdktf.ComplexObject
+	BypassCacheOnRequestHeaders() DataGoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList
 	CacheKeyPolicy() DataGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyList
 	CacheMode() *string
 	ClientTtl() *float64
@@ -83,6 +84,16 @@ type DataGoogleComputeBackendServiceCdnPolicyOutputReference interface {
 // The jsii proxy struct for DataGoogleComputeBackendServiceCdnPolicyOutputReference
 type jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyOutputReference) BypassCacheOnRequestHeaders() DataGoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList {
+	var returns DataGoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList
+	_jsii_.Get(
+		j,
+		"bypassCacheOnRequestHeaders",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyOutputReference) CacheKeyPolicy() DataGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyList {

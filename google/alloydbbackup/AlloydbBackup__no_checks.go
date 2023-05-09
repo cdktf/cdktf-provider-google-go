@@ -52,6 +52,10 @@ func (a *jsiiProxy_AlloydbBackup) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbBackup) validatePutEncryptionConfigParameters(value *AlloydbBackupEncryptionConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbBackup) validatePutTimeoutsParameters(value *AlloydbBackupTimeouts) error {
 	return nil
 }

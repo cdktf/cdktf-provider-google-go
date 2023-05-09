@@ -17,8 +17,6 @@ type DataGoogleDnsKeysZoneSigningKeysList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -61,16 +59,6 @@ func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysList) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysList) InternalValue() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"internalValue",
 		&returns,
 	)
 	return returns
@@ -131,17 +119,6 @@ func NewDataGoogleDnsKeysZoneSigningKeysList_Override(d DataGoogleDnsKeysZoneSig
 		"@cdktf/provider-google.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysList)SetInternalValue(val interface{}) {
-	if err := j.validateSetInternalValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"internalValue",
-		val,
 	)
 }
 

@@ -12,10 +12,6 @@ func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

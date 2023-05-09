@@ -9,9 +9,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule}.
 type ComputeGlobalForwardingRule interface {
 	cdktf.TerraformResource
+	BaseForwardingRule() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -91,6 +92,9 @@ type ComputeGlobalForwardingRule interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	SourceIpRanges() *[]*string
+	SetSourceIpRanges(val *[]*string)
+	SourceIpRangesInput() *[]*string
 	Target() *string
 	SetTarget(val *string)
 	TargetInput() *string
@@ -143,6 +147,7 @@ type ComputeGlobalForwardingRule interface {
 	ResetOverrideLogicalId()
 	ResetPortRange()
 	ResetProject()
+	ResetSourceIpRanges()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -157,6 +162,16 @@ type ComputeGlobalForwardingRule interface {
 // The jsii proxy struct for ComputeGlobalForwardingRule
 type jsiiProxy_ComputeGlobalForwardingRule struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ComputeGlobalForwardingRule) BaseForwardingRule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"baseForwardingRule",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeGlobalForwardingRule) CdktfStack() cdktf.TerraformStack {
@@ -569,6 +584,26 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeGlobalForwardingRule) SourceIpRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceIpRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeGlobalForwardingRule) SourceIpRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceIpRangesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeGlobalForwardingRule) Target() *string {
 	var returns *string
 	_jsii_.Get(
@@ -640,7 +675,7 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewComputeGlobalForwardingRule(scope constructs.Construct, id *string, config *ComputeGlobalForwardingRuleConfig) ComputeGlobalForwardingRule {
 	_init_.Initialize()
 
@@ -658,7 +693,7 @@ func NewComputeGlobalForwardingRule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewComputeGlobalForwardingRule_Override(c ComputeGlobalForwardingRule, scope constructs.Construct, id *string, config *ComputeGlobalForwardingRuleConfig) {
 	_init_.Initialize()
 
@@ -854,6 +889,17 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeGlobalForwardingRule)SetSourceIpRanges(val *[]*string) {
+	if err := j.validateSetSourceIpRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceIpRanges",
 		val,
 	)
 }
@@ -1249,6 +1295,14 @@ func (c *jsiiProxy_ComputeGlobalForwardingRule) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeGlobalForwardingRule) ResetSourceIpRanges() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSourceIpRanges",
 		nil, // no parameters
 	)
 }

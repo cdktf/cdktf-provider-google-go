@@ -60,7 +60,23 @@ func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetCom
 	return nil
 }
 
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetDestAddressGroupsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetDestFqdnsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetDestIpRangesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetDestRegionCodesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetDestThreatIntelligencesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -68,7 +84,23 @@ func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetInt
 	return nil
 }
 
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcAddressGroupsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcFqdnsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcIpRangesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcRegionCodesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateSetSrcThreatIntelligencesParameters(val *[]*string) error {
 	return nil
 }
 

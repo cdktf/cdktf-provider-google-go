@@ -34,8 +34,10 @@ type DataGoogleCloudRunServiceTemplateSpecContainersOutputReference interface {
 	Image() *string
 	InternalValue() *DataGoogleCloudRunServiceTemplateSpecContainers
 	SetInternalValue(val *DataGoogleCloudRunServiceTemplateSpecContainers)
+	LivenessProbe() DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeList
 	Ports() DataGoogleCloudRunServiceTemplateSpecContainersPortsList
 	Resources() DataGoogleCloudRunServiceTemplateSpecContainersResourcesList
+	StartupProbe() DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -185,6 +187,16 @@ func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersOutputReference) LivenessProbe() DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeList {
+	var returns DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeList
+	_jsii_.Get(
+		j,
+		"livenessProbe",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersOutputReference) Ports() DataGoogleCloudRunServiceTemplateSpecContainersPortsList {
 	var returns DataGoogleCloudRunServiceTemplateSpecContainersPortsList
 	_jsii_.Get(
@@ -200,6 +212,16 @@ func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersOutputReferenc
 	_jsii_.Get(
 		j,
 		"resources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersOutputReference) StartupProbe() DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeList {
+	var returns DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeList
+	_jsii_.Get(
+		j,
+		"startupProbe",
 		&returns,
 	)
 	return returns

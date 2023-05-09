@@ -43,6 +43,8 @@ type DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReferenc
 	RegexInput() *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesRegex
 	StoredType() DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesStoredTypeOutputReference
 	StoredTypeInput() *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesStoredType
+	SurrogateType() DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateTypeOutputReference
+	SurrogateTypeInput() *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateType
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,11 +81,13 @@ type DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReferenc
 	PutInfoType(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoType)
 	PutRegex(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesRegex)
 	PutStoredType(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesStoredType)
+	PutSurrogateType(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateType)
 	ResetDictionary()
 	ResetExclusionType()
 	ResetLikelihood()
 	ResetRegex()
 	ResetStoredType()
+	ResetSurrogateType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -264,6 +268,26 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypes
 	_jsii_.Get(
 		j,
 		"storedTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference) SurrogateType() DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateTypeOutputReference {
+	var returns DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateTypeOutputReference
+	_jsii_.Get(
+		j,
+		"surrogateType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference) SurrogateTypeInput() *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateType {
+	var returns *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateType
+	_jsii_.Get(
+		j,
+		"surrogateTypeInput",
 		&returns,
 	)
 	return returns
@@ -624,6 +648,17 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypes
 	)
 }
 
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference) PutSurrogateType(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateType) {
+	if err := d.validatePutSurrogateTypeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSurrogateType",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference) ResetDictionary() {
 	_jsii_.InvokeVoid(
 		d,
@@ -660,6 +695,14 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypes
 	_jsii_.InvokeVoid(
 		d,
 		"resetStoredType",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference) ResetSurrogateType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSurrogateType",
 		nil, // no parameters
 	)
 }

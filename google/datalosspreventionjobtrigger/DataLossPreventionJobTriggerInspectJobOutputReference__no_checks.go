@@ -48,6 +48,10 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) valida
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) validatePutInspectConfigParameters(value *DataLossPreventionJobTriggerInspectJobInspectConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) validatePutStorageConfigParameters(value *DataLossPreventionJobTriggerInspectJobStorageConfig) error {
 	return nil
 }

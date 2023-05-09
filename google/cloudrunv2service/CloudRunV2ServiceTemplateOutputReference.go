@@ -54,6 +54,9 @@ type CloudRunV2ServiceTemplateOutputReference interface {
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
+	SessionAffinity() interface{}
+	SetSessionAffinity(val interface{})
+	SessionAffinityInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -106,6 +109,7 @@ type CloudRunV2ServiceTemplateOutputReference interface {
 	ResetRevision()
 	ResetScaling()
 	ResetServiceAccount()
+	ResetSessionAffinity()
 	ResetTimeout()
 	ResetVolumes()
 	ResetVpcAccess()
@@ -354,6 +358,26 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) ServiceAccountInput
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) SessionAffinity() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sessionAffinity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) SessionAffinityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sessionAffinityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -568,6 +592,17 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference)SetServiceAccount(va
 	_jsii_.Set(
 		j,
 		"serviceAccount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference)SetSessionAffinity(val interface{}) {
+	if err := j.validateSetSessionAffinityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sessionAffinity",
 		val,
 	)
 }
@@ -903,6 +938,14 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) ResetServiceAccount
 	_jsii_.InvokeVoid(
 		c,
 		"resetServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) ResetSessionAffinity() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSessionAffinity",
 		nil, // no parameters
 	)
 }

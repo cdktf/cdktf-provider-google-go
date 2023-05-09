@@ -44,6 +44,10 @@ func (d *jsiiProxy_DataLossPreventionDeidentifyTemplateDeidentifyConfigOutputRef
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) validatePutImageTransformationsParameters(value *DataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformations) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) validatePutInfoTypeTransformationsParameters(value *DataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformations) error {
 	return nil
 }

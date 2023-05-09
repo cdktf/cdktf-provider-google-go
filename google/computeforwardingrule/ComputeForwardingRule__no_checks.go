@@ -52,7 +52,7 @@ func (c *jsiiProxy_ComputeForwardingRule) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (c *jsiiProxy_ComputeForwardingRule) validatePutServiceDirectoryRegistrationsParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeForwardingRule) validatePutServiceDirectoryRegistrationsParameters(value *ComputeForwardingRuleServiceDirectoryRegistrations) error {
 	return nil
 }
 
@@ -157,6 +157,10 @@ func (j *jsiiProxy_ComputeForwardingRule) validateSetRegionParameters(val *strin
 }
 
 func (j *jsiiProxy_ComputeForwardingRule) validateSetServiceLabelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeForwardingRule) validateSetSourceIpRangesParameters(val *[]*string) error {
 	return nil
 }
 

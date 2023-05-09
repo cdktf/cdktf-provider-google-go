@@ -35,6 +35,9 @@ type CloudRunV2ServiceTemplateContainersResourcesOutputReference interface {
 	Limits() *map[string]*string
 	SetLimits(val *map[string]*string)
 	LimitsInput() *map[string]*string
+	StartupCpuBoost() interface{}
+	SetStartupCpuBoost(val interface{})
+	StartupCpuBoostInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type CloudRunV2ServiceTemplateContainersResourcesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCpuIdle()
 	ResetLimits()
+	ResetStartupCpuBoost()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +178,26 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) StartupCpuBoost() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"startupCpuBoost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) StartupCpuBoostInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"startupCpuBoostInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -273,6 +297,17 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference)S
 	_jsii_.Set(
 		j,
 		"limits",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference)SetStartupCpuBoost(val interface{}) {
+	if err := j.validateSetStartupCpuBoostParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"startupCpuBoost",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	_jsii_.InvokeVoid(
 		c,
 		"resetLimits",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) ResetStartupCpuBoost() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStartupCpuBoost",
 		nil, // no parameters
 	)
 }

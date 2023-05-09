@@ -100,6 +100,10 @@ func (j *jsiiProxy_CertificateManagerCertificate) validateSetLifecycleParameters
 	return nil
 }
 
+func (j *jsiiProxy_CertificateManagerCertificate) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CertificateManagerCertificate) validateSetNameParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutput
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference) validateSetPortParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

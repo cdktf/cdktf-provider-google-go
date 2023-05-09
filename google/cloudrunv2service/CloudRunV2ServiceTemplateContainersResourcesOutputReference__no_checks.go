@@ -68,6 +68,10 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) validateSetStartupCpuBoostParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersResourcesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

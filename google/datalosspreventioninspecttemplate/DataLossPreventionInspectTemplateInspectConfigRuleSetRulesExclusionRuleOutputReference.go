@@ -27,6 +27,8 @@ type DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleOutp
 	CreationStack() *[]*string
 	Dictionary() DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryOutputReference
 	DictionaryInput() *DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionary
+	ExcludeByHotword() DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordOutputReference
+	ExcludeByHotwordInput() *DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotword
 	ExcludeInfoTypes() DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesOutputReference
 	ExcludeInfoTypesInput() *DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes
 	// Experimental.
@@ -71,9 +73,11 @@ type DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleOutp
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDictionary(value *DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionary)
+	PutExcludeByHotword(value *DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotword)
 	PutExcludeInfoTypes(value *DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes)
 	PutRegex(value *DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleRegex)
 	ResetDictionary()
+	ResetExcludeByHotword()
 	ResetExcludeInfoTypes()
 	ResetRegex()
 	// Produce the Token's value at resolution time.
@@ -136,6 +140,26 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExc
 	_jsii_.Get(
 		j,
 		"dictionaryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleOutputReference) ExcludeByHotword() DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordOutputReference {
+	var returns DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordOutputReference
+	_jsii_.Get(
+		j,
+		"excludeByHotword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleOutputReference) ExcludeByHotwordInput() *DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotword {
+	var returns *DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotword
+	_jsii_.Get(
+		j,
+		"excludeByHotwordInput",
 		&returns,
 	)
 	return returns
@@ -532,6 +556,17 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExc
 	)
 }
 
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleOutputReference) PutExcludeByHotword(value *DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotword) {
+	if err := d.validatePutExcludeByHotwordParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putExcludeByHotword",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleOutputReference) PutExcludeInfoTypes(value *DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes) {
 	if err := d.validatePutExcludeInfoTypesParameters(value); err != nil {
 		panic(err)
@@ -558,6 +593,14 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExc
 	_jsii_.InvokeVoid(
 		d,
 		"resetDictionary",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleOutputReference) ResetExcludeByHotword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExcludeByHotword",
 		nil, // no parameters
 	)
 }

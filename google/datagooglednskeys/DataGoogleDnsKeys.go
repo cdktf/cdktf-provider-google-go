@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/data-sources/dns_keys google_dns_keys}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/data-sources/dns_keys google_dns_keys}.
 type DataGoogleDnsKeys interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -34,7 +34,6 @@ type DataGoogleDnsKeys interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	KeySigningKeys() DataGoogleDnsKeysKeySigningKeysList
-	KeySigningKeysInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -60,7 +59,6 @@ type DataGoogleDnsKeys interface {
 	// Experimental.
 	TerraformResourceType() *string
 	ZoneSigningKeys() DataGoogleDnsKeysZoneSigningKeysList
-	ZoneSigningKeysInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -86,14 +84,10 @@ type DataGoogleDnsKeys interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutKeySigningKeys(value interface{})
-	PutZoneSigningKeys(value interface{})
-	ResetKeySigningKeys()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	ResetZoneSigningKeys()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -194,16 +188,6 @@ func (j *jsiiProxy_DataGoogleDnsKeys) KeySigningKeys() DataGoogleDnsKeysKeySigni
 	_jsii_.Get(
 		j,
 		"keySigningKeys",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGoogleDnsKeys) KeySigningKeysInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"keySigningKeysInput",
 		&returns,
 	)
 	return returns
@@ -329,18 +313,8 @@ func (j *jsiiProxy_DataGoogleDnsKeys) ZoneSigningKeys() DataGoogleDnsKeysZoneSig
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDnsKeys) ZoneSigningKeysInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"zoneSigningKeysInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/data-sources/dns_keys google_dns_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/data-sources/dns_keys google_dns_keys} Data Source.
 func NewDataGoogleDnsKeys(scope constructs.Construct, id *string, config *DataGoogleDnsKeysConfig) DataGoogleDnsKeys {
 	_init_.Initialize()
 
@@ -358,7 +332,7 @@ func NewDataGoogleDnsKeys(scope constructs.Construct, id *string, config *DataGo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/data-sources/dns_keys google_dns_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/data-sources/dns_keys google_dns_keys} Data Source.
 func NewDataGoogleDnsKeys_Override(d DataGoogleDnsKeys, scope constructs.Construct, id *string, config *DataGoogleDnsKeysConfig) {
 	_init_.Initialize()
 
@@ -703,36 +677,6 @@ func (d *jsiiProxy_DataGoogleDnsKeys) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (d *jsiiProxy_DataGoogleDnsKeys) PutKeySigningKeys(value interface{}) {
-	if err := d.validatePutKeySigningKeysParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putKeySigningKeys",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataGoogleDnsKeys) PutZoneSigningKeys(value interface{}) {
-	if err := d.validatePutZoneSigningKeysParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putZoneSigningKeys",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataGoogleDnsKeys) ResetKeySigningKeys() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetKeySigningKeys",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataGoogleDnsKeys) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -745,14 +689,6 @@ func (d *jsiiProxy_DataGoogleDnsKeys) ResetProject() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetProject",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataGoogleDnsKeys) ResetZoneSigningKeys() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetZoneSigningKeys",
 		nil, // no parameters
 	)
 }

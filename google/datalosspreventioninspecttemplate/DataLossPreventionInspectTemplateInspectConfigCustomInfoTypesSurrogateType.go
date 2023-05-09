@@ -1,0 +1,6 @@
+package datalosspreventioninspecttemplate
+
+
+type DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateType struct {
+}
+

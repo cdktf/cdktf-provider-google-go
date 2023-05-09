@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/certificate_manager_certificate google_certificate_manager_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/certificate_manager_certificate google_certificate_manager_certificate}.
 type CertificateManagerCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -49,6 +49,9 @@ type CertificateManagerCertificate interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
 	Managed() CertificateManagerCertificateManagedOutputReference
 	ManagedInput() *CertificateManagerCertificateManaged
 	Name() *string
@@ -113,6 +116,7 @@ type CertificateManagerCertificate interface {
 	ResetDescription()
 	ResetId()
 	ResetLabels()
+	ResetLocation()
 	ResetManaged()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -281,6 +285,26 @@ func (j *jsiiProxy_CertificateManagerCertificate) Lifecycle() *cdktf.TerraformRe
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificateManagerCertificate) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificateManagerCertificate) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
 		&returns,
 	)
 	return returns
@@ -477,7 +501,7 @@ func (j *jsiiProxy_CertificateManagerCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/certificate_manager_certificate google_certificate_manager_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/certificate_manager_certificate google_certificate_manager_certificate} Resource.
 func NewCertificateManagerCertificate(scope constructs.Construct, id *string, config *CertificateManagerCertificateConfig) CertificateManagerCertificate {
 	_init_.Initialize()
 
@@ -495,7 +519,7 @@ func NewCertificateManagerCertificate(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/certificate_manager_certificate google_certificate_manager_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/certificate_manager_certificate google_certificate_manager_certificate} Resource.
 func NewCertificateManagerCertificate_Override(c CertificateManagerCertificate, scope constructs.Construct, id *string, config *CertificateManagerCertificateConfig) {
 	_init_.Initialize()
 
@@ -584,6 +608,17 @@ func (j *jsiiProxy_CertificateManagerCertificate)SetLifecycle(val *cdktf.Terrafo
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificateManagerCertificate)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
 		val,
 	)
 }
@@ -959,6 +994,14 @@ func (c *jsiiProxy_CertificateManagerCertificate) ResetLabels() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificateManagerCertificate) ResetLocation() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

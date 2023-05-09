@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -157,6 +157,9 @@ type GoogleProvider interface {
 	Credentials() *string
 	SetCredentials(val *string)
 	CredentialsInput() *string
+	DatabaseMigrationServiceCustomEndpoint() *string
+	SetDatabaseMigrationServiceCustomEndpoint(val *string)
+	DatabaseMigrationServiceCustomEndpointInput() *string
 	DataCatalogCustomEndpoint() *string
 	SetDataCatalogCustomEndpoint(val *string)
 	DataCatalogCustomEndpointInput() *string
@@ -447,6 +450,7 @@ type GoogleProvider interface {
 	ResetContainerAzureCustomEndpoint()
 	ResetContainerCustomEndpoint()
 	ResetCredentials()
+	ResetDatabaseMigrationServiceCustomEndpoint()
 	ResetDataCatalogCustomEndpoint()
 	ResetDataflowCustomEndpoint()
 	ResetDataFusionCustomEndpoint()
@@ -1494,6 +1498,26 @@ func (j *jsiiProxy_GoogleProvider) CredentialsInput() *string {
 	_jsii_.Get(
 		j,
 		"credentialsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) DatabaseMigrationServiceCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseMigrationServiceCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) DatabaseMigrationServiceCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseMigrationServiceCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3060,7 +3084,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3078,7 +3102,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -3464,6 +3488,14 @@ func (j *jsiiProxy_GoogleProvider)SetCredentials(val *string) {
 	_jsii_.Set(
 		j,
 		"credentials",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetDatabaseMigrationServiceCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"databaseMigrationServiceCustomEndpoint",
 		val,
 	)
 }
@@ -4541,6 +4573,14 @@ func (g *jsiiProxy_GoogleProvider) ResetCredentials() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetCredentials",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetDatabaseMigrationServiceCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDatabaseMigrationServiceCustomEndpoint",
 		nil, // no parameters
 	)
 }

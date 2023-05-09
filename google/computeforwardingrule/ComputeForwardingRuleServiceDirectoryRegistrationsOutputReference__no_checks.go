@@ -56,7 +56,7 @@ func (j *jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference) validateSetInternalValueParameters(val *ComputeForwardingRuleServiceDirectoryRegistrations) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsOutputRefer
 	return nil
 }
 
-func validateNewComputeForwardingRuleServiceDirectoryRegistrationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewComputeForwardingRuleServiceDirectoryRegistrationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

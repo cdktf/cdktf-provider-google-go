@@ -56,6 +56,10 @@ func (a *jsiiProxy_AlloydbCluster) validatePutAutomatedBackupPolicyParameters(va
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbCluster) validatePutEncryptionConfigParameters(value *AlloydbClusterEncryptionConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbCluster) validatePutInitialUserParameters(value *AlloydbClusterInitialUser) error {
 	return nil
 }

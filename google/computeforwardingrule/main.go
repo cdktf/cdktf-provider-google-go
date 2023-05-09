@@ -18,6 +18,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "allPortsInput", GoGetter: "AllPortsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "backendService", GoGetter: "BackendService"},
 			_jsii_.MemberProperty{JsiiProperty: "backendServiceInput", GoGetter: "BackendServiceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "baseForwardingRule", GoGetter: "BaseForwardingRule"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
@@ -95,6 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceDirectoryRegistrations", GoMethod: "ResetServiceDirectoryRegistrations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceLabel", GoMethod: "ResetServiceLabel"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceIpRanges", GoMethod: "ResetSourceIpRanges"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubnetwork", GoMethod: "ResetSubnetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTarget", GoMethod: "ResetTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
@@ -104,6 +106,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "serviceLabel", GoGetter: "ServiceLabel"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceLabelInput", GoGetter: "ServiceLabelInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceName", GoGetter: "ServiceName"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceIpRanges", GoGetter: "SourceIpRanges"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceIpRangesInput", GoGetter: "SourceIpRangesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "subnetwork", GoGetter: "Subnetwork"},
 			_jsii_.MemberProperty{JsiiProperty: "subnetworkInput", GoGetter: "SubnetworkInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -131,27 +135,6 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrations",
 		reflect.TypeOf((*ComputeForwardingRuleServiceDirectoryRegistrations)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrationsList",
-		reflect.TypeOf((*ComputeForwardingRuleServiceDirectoryRegistrationsList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",

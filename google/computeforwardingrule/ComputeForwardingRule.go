@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/compute_forwarding_rule google_compute_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule}.
 type ComputeForwardingRule interface {
 	cdktf.TerraformResource
 	AllowGlobalAccess() interface{}
@@ -21,6 +21,7 @@ type ComputeForwardingRule interface {
 	BackendService() *string
 	SetBackendService(val *string)
 	BackendServiceInput() *string
+	BaseForwardingRule() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -108,12 +109,15 @@ type ComputeForwardingRule interface {
 	SetRegion(val *string)
 	RegionInput() *string
 	SelfLink() *string
-	ServiceDirectoryRegistrations() ComputeForwardingRuleServiceDirectoryRegistrationsList
-	ServiceDirectoryRegistrationsInput() interface{}
+	ServiceDirectoryRegistrations() ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference
+	ServiceDirectoryRegistrationsInput() *ComputeForwardingRuleServiceDirectoryRegistrations
 	ServiceLabel() *string
 	SetServiceLabel(val *string)
 	ServiceLabelInput() *string
 	ServiceName() *string
+	SourceIpRanges() *[]*string
+	SetSourceIpRanges(val *[]*string)
+	SourceIpRangesInput() *[]*string
 	Subnetwork() *string
 	SetSubnetwork(val *string)
 	SubnetworkInput() *string
@@ -153,7 +157,7 @@ type ComputeForwardingRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutServiceDirectoryRegistrations(value interface{})
+	PutServiceDirectoryRegistrations(value *ComputeForwardingRuleServiceDirectoryRegistrations)
 	PutTimeouts(value *ComputeForwardingRuleTimeouts)
 	ResetAllowGlobalAccess()
 	ResetAllPorts()
@@ -176,6 +180,7 @@ type ComputeForwardingRule interface {
 	ResetRegion()
 	ResetServiceDirectoryRegistrations()
 	ResetServiceLabel()
+	ResetSourceIpRanges()
 	ResetSubnetwork()
 	ResetTarget()
 	ResetTimeouts()
@@ -249,6 +254,16 @@ func (j *jsiiProxy_ComputeForwardingRule) BackendServiceInput() *string {
 	_jsii_.Get(
 		j,
 		"backendServiceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeForwardingRule) BaseForwardingRule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"baseForwardingRule",
 		&returns,
 	)
 	return returns
@@ -714,8 +729,8 @@ func (j *jsiiProxy_ComputeForwardingRule) SelfLink() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) ServiceDirectoryRegistrations() ComputeForwardingRuleServiceDirectoryRegistrationsList {
-	var returns ComputeForwardingRuleServiceDirectoryRegistrationsList
+func (j *jsiiProxy_ComputeForwardingRule) ServiceDirectoryRegistrations() ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference {
+	var returns ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference
 	_jsii_.Get(
 		j,
 		"serviceDirectoryRegistrations",
@@ -724,8 +739,8 @@ func (j *jsiiProxy_ComputeForwardingRule) ServiceDirectoryRegistrations() Comput
 	return returns
 }
 
-func (j *jsiiProxy_ComputeForwardingRule) ServiceDirectoryRegistrationsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ComputeForwardingRule) ServiceDirectoryRegistrationsInput() *ComputeForwardingRuleServiceDirectoryRegistrations {
+	var returns *ComputeForwardingRuleServiceDirectoryRegistrations
 	_jsii_.Get(
 		j,
 		"serviceDirectoryRegistrationsInput",
@@ -759,6 +774,26 @@ func (j *jsiiProxy_ComputeForwardingRule) ServiceName() *string {
 	_jsii_.Get(
 		j,
 		"serviceName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeForwardingRule) SourceIpRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceIpRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeForwardingRule) SourceIpRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceIpRangesInput",
 		&returns,
 	)
 	return returns
@@ -855,7 +890,7 @@ func (j *jsiiProxy_ComputeForwardingRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewComputeForwardingRule(scope constructs.Construct, id *string, config *ComputeForwardingRuleConfig) ComputeForwardingRule {
 	_init_.Initialize()
 
@@ -873,7 +908,7 @@ func NewComputeForwardingRule(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.63.1/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewComputeForwardingRule_Override(c ComputeForwardingRule, scope constructs.Construct, id *string, config *ComputeForwardingRuleConfig) {
 	_init_.Initialize()
 
@@ -1146,6 +1181,17 @@ func (j *jsiiProxy_ComputeForwardingRule)SetServiceLabel(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceLabel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeForwardingRule)SetSourceIpRanges(val *[]*string) {
+	if err := j.validateSetSourceIpRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceIpRanges",
 		val,
 	)
 }
@@ -1438,7 +1484,7 @@ func (c *jsiiProxy_ComputeForwardingRule) OverrideLogicalId(newLogicalId *string
 	)
 }
 
-func (c *jsiiProxy_ComputeForwardingRule) PutServiceDirectoryRegistrations(value interface{}) {
+func (c *jsiiProxy_ComputeForwardingRule) PutServiceDirectoryRegistrations(value *ComputeForwardingRuleServiceDirectoryRegistrations) {
 	if err := c.validatePutServiceDirectoryRegistrationsParameters(value); err != nil {
 		panic(err)
 	}
@@ -1608,6 +1654,14 @@ func (c *jsiiProxy_ComputeForwardingRule) ResetServiceLabel() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetServiceLabel",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeForwardingRule) ResetSourceIpRanges() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSourceIpRanges",
 		nil, // no parameters
 	)
 }

@@ -104,6 +104,10 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetServiceA
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetSessionAffinityParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
