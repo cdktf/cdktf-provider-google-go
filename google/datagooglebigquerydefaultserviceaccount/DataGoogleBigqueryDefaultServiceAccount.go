@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/data-sources/bigquery_default_service_account google_bigquery_default_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/data-sources/bigquery_default_service_account google_bigquery_default_service_account}.
 type DataGoogleBigqueryDefaultServiceAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -304,7 +304,7 @@ func (j *jsiiProxy_DataGoogleBigqueryDefaultServiceAccount) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/data-sources/bigquery_default_service_account google_bigquery_default_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/data-sources/bigquery_default_service_account google_bigquery_default_service_account} Data Source.
 func NewDataGoogleBigqueryDefaultServiceAccount(scope constructs.Construct, id *string, config *DataGoogleBigqueryDefaultServiceAccountConfig) DataGoogleBigqueryDefaultServiceAccount {
 	_init_.Initialize()
 
@@ -322,7 +322,7 @@ func NewDataGoogleBigqueryDefaultServiceAccount(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/data-sources/bigquery_default_service_account google_bigquery_default_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/data-sources/bigquery_default_service_account google_bigquery_default_service_account} Data Source.
 func NewDataGoogleBigqueryDefaultServiceAccount_Override(d DataGoogleBigqueryDefaultServiceAccount, scope constructs.Construct, id *string, config *DataGoogleBigqueryDefaultServiceAccountConfig) {
 	_init_.Initialize()
 

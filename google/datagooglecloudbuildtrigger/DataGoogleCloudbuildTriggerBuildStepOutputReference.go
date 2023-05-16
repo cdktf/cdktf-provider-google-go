@@ -10,6 +10,8 @@ import (
 
 type DataGoogleCloudbuildTriggerBuildStepOutputReference interface {
 	cdktf.ComplexObject
+	AllowExitCodes() *[]*float64
+	AllowFailure() cdktf.IResolvable
 	Args() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -86,6 +88,26 @@ type DataGoogleCloudbuildTriggerBuildStepOutputReference interface {
 // The jsii proxy struct for DataGoogleCloudbuildTriggerBuildStepOutputReference
 type jsiiProxy_DataGoogleCloudbuildTriggerBuildStepOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildStepOutputReference) AllowExitCodes() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"allowExitCodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildStepOutputReference) AllowFailure() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowFailure",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildStepOutputReference) Args() *[]*string {

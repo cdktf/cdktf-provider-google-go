@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job}.
 type CloudRunV2Job interface {
 	cdktf.TerraformResource
 	BinaryAuthorization() CloudRunV2JobBinaryAuthorizationOutputReference
@@ -623,7 +623,7 @@ func (j *jsiiProxy_CloudRunV2Job) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewCloudRunV2Job(scope constructs.Construct, id *string, config *CloudRunV2JobConfig) CloudRunV2Job {
 	_init_.Initialize()
 
@@ -641,7 +641,7 @@ func NewCloudRunV2Job(scope constructs.Construct, id *string, config *CloudRunV2
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewCloudRunV2Job_Override(c CloudRunV2Job, scope constructs.Construct, id *string, config *CloudRunV2JobConfig) {
 	_init_.Initialize()
 

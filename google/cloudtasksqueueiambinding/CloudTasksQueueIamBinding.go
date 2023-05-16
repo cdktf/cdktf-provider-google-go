@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/cloud_tasks_queue_iam_binding google_cloud_tasks_queue_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/resources/cloud_tasks_queue_iam_binding google_cloud_tasks_queue_iam_binding}.
 type CloudTasksQueueIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_CloudTasksQueueIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/cloud_tasks_queue_iam_binding google_cloud_tasks_queue_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/resources/cloud_tasks_queue_iam_binding google_cloud_tasks_queue_iam_binding} Resource.
 func NewCloudTasksQueueIamBinding(scope constructs.Construct, id *string, config *CloudTasksQueueIamBindingConfig) CloudTasksQueueIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewCloudTasksQueueIamBinding(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/cloud_tasks_queue_iam_binding google_cloud_tasks_queue_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/resources/cloud_tasks_queue_iam_binding google_cloud_tasks_queue_iam_binding} Resource.
 func NewCloudTasksQueueIamBinding_Override(c CloudTasksQueueIamBinding, scope constructs.Construct, id *string, config *CloudTasksQueueIamBindingConfig) {
 	_init_.Initialize()
 

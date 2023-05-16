@@ -575,10 +575,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxBadRecordsInput", GoGetter: "MaxBadRecordsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "nullMarker", GoGetter: "NullMarker"},
 			_jsii_.MemberProperty{JsiiProperty: "nullMarkerInput", GoGetter: "NullMarkerInput"},
+			_jsii_.MemberProperty{JsiiProperty: "parquetOptions", GoGetter: "ParquetOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "parquetOptionsInput", GoGetter: "ParquetOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "projectionFields", GoGetter: "ProjectionFields"},
 			_jsii_.MemberProperty{JsiiProperty: "projectionFieldsInput", GoGetter: "ProjectionFieldsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putDestinationEncryptionConfiguration", GoMethod: "PutDestinationEncryptionConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putDestinationTable", GoMethod: "PutDestinationTable"},
+			_jsii_.MemberMethod{JsiiMethod: "putParquetOptions", GoMethod: "PutParquetOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimePartitioning", GoMethod: "PutTimePartitioning"},
 			_jsii_.MemberProperty{JsiiProperty: "quote", GoGetter: "Quote"},
 			_jsii_.MemberProperty{JsiiProperty: "quoteInput", GoGetter: "QuoteInput"},
@@ -593,6 +596,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetJsonExtension", GoMethod: "ResetJsonExtension"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxBadRecords", GoMethod: "ResetMaxBadRecords"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNullMarker", GoMethod: "ResetNullMarker"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParquetOptions", GoMethod: "ResetParquetOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProjectionFields", GoMethod: "ResetProjectionFields"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQuote", GoMethod: "ResetQuote"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSchemaUpdateOptions", GoMethod: "ResetSchemaUpdateOptions"},
@@ -619,6 +623,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BigqueryJobLoadOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadParquetOptions",
+		reflect.TypeOf((*BigqueryJobLoadParquetOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadParquetOptionsOutputReference",
+		reflect.TypeOf((*BigqueryJobLoadParquetOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enableListInference", GoGetter: "EnableListInference"},
+			_jsii_.MemberProperty{JsiiProperty: "enableListInferenceInput", GoGetter: "EnableListInferenceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enumAsString", GoGetter: "EnumAsString"},
+			_jsii_.MemberProperty{JsiiProperty: "enumAsStringInput", GoGetter: "EnumAsStringInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnableListInference", GoMethod: "ResetEnableListInference"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnumAsString", GoMethod: "ResetEnumAsString"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BigqueryJobLoadParquetOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

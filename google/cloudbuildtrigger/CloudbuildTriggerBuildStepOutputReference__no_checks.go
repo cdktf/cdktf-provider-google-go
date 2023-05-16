@@ -52,6 +52,14 @@ func (c *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateResolvePar
 	return nil
 }
 
+func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetAllowExitCodesParameters(val *[]*float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetAllowFailureParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudbuildTriggerBuildStepOutputReference) validateSetArgsParameters(val *[]*string) error {
 	return nil
 }

@@ -63,6 +63,8 @@ type BigqueryJobLoadOutputReference interface {
 	NullMarker() *string
 	SetNullMarker(val *string)
 	NullMarkerInput() *string
+	ParquetOptions() BigqueryJobLoadParquetOptionsOutputReference
+	ParquetOptionsInput() *BigqueryJobLoadParquetOptions
 	ProjectionFields() *[]*string
 	SetProjectionFields(val *[]*string)
 	ProjectionFieldsInput() *[]*string
@@ -120,6 +122,7 @@ type BigqueryJobLoadOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDestinationEncryptionConfiguration(value *BigqueryJobLoadDestinationEncryptionConfiguration)
 	PutDestinationTable(value *BigqueryJobLoadDestinationTable)
+	PutParquetOptions(value *BigqueryJobLoadParquetOptions)
 	PutTimePartitioning(value *BigqueryJobLoadTimePartitioning)
 	ResetAllowJaggedRows()
 	ResetAllowQuotedNewlines()
@@ -132,6 +135,7 @@ type BigqueryJobLoadOutputReference interface {
 	ResetJsonExtension()
 	ResetMaxBadRecords()
 	ResetNullMarker()
+	ResetParquetOptions()
 	ResetProjectionFields()
 	ResetQuote()
 	ResetSchemaUpdateOptions()
@@ -439,6 +443,26 @@ func (j *jsiiProxy_BigqueryJobLoadOutputReference) NullMarkerInput() *string {
 	_jsii_.Get(
 		j,
 		"nullMarkerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) ParquetOptions() BigqueryJobLoadParquetOptionsOutputReference {
+	var returns BigqueryJobLoadParquetOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"parquetOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryJobLoadOutputReference) ParquetOptionsInput() *BigqueryJobLoadParquetOptions {
+	var returns *BigqueryJobLoadParquetOptions
+	_jsii_.Get(
+		j,
+		"parquetOptionsInput",
 		&returns,
 	)
 	return returns
@@ -1102,6 +1126,17 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) PutDestinationTable(value *Bi
 	)
 }
 
+func (b *jsiiProxy_BigqueryJobLoadOutputReference) PutParquetOptions(value *BigqueryJobLoadParquetOptions) {
+	if err := b.validatePutParquetOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putParquetOptions",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigqueryJobLoadOutputReference) PutTimePartitioning(value *BigqueryJobLoadTimePartitioning) {
 	if err := b.validatePutTimePartitioningParameters(value); err != nil {
 		panic(err)
@@ -1197,6 +1232,14 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) ResetNullMarker() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetNullMarker",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryJobLoadOutputReference) ResetParquetOptions() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetParquetOptions",
 		nil, // no parameters
 	)
 }

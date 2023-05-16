@@ -1,0 +1,6 @@
+package datalosspreventionjobtrigger
+
+
+type DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver struct {
+}
+

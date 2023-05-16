@@ -37,6 +37,8 @@ type DataLossPreventionJobTriggerInspectJobActionsOutputReference interface {
 	PublishFindingsToCloudDataCatalogInput() *DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog
 	PublishSummaryToCscc() DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference
 	PublishSummaryToCsccInput() *DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc
+	PublishToStackdriver() DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference
+	PublishToStackdriverInput() *DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver
 	PubSub() DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference
 	PubSubInput() *DataLossPreventionJobTriggerInspectJobActionsPubSub
 	SaveFindings() DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference
@@ -77,12 +79,14 @@ type DataLossPreventionJobTriggerInspectJobActionsOutputReference interface {
 	PutJobNotificationEmails(value *DataLossPreventionJobTriggerInspectJobActionsJobNotificationEmails)
 	PutPublishFindingsToCloudDataCatalog(value *DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog)
 	PutPublishSummaryToCscc(value *DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc)
+	PutPublishToStackdriver(value *DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver)
 	PutPubSub(value *DataLossPreventionJobTriggerInspectJobActionsPubSub)
 	PutSaveFindings(value *DataLossPreventionJobTriggerInspectJobActionsSaveFindings)
 	ResetDeidentify()
 	ResetJobNotificationEmails()
 	ResetPublishFindingsToCloudDataCatalog()
 	ResetPublishSummaryToCscc()
+	ResetPublishToStackdriver()
 	ResetPubSub()
 	ResetSaveFindings()
 	// Produce the Token's value at resolution time.
@@ -225,6 +229,26 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference)
 	_jsii_.Get(
 		j,
 		"publishSummaryToCsccInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PublishToStackdriver() DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference {
+	var returns DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference
+	_jsii_.Get(
+		j,
+		"publishToStackdriver",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PublishToStackdriverInput() *DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver {
+	var returns *DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver
+	_jsii_.Get(
+		j,
+		"publishToStackdriverInput",
 		&returns,
 	)
 	return returns
@@ -603,6 +627,17 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference)
 	)
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PutPublishToStackdriver(value *DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver) {
+	if err := d.validatePutPublishToStackdriverParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPublishToStackdriver",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) PutPubSub(value *DataLossPreventionJobTriggerInspectJobActionsPubSub) {
 	if err := d.validatePutPubSubParameters(value); err != nil {
 		panic(err)
@@ -653,6 +688,14 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference)
 	_jsii_.InvokeVoid(
 		d,
 		"resetPublishSummaryToCscc",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsOutputReference) ResetPublishToStackdriver() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPublishToStackdriver",
 		nil, // no parameters
 	)
 }

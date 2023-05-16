@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/compute_network_peering google_compute_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/resources/compute_network_peering google_compute_network_peering}.
 type ComputeNetworkPeering interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -76,6 +76,9 @@ type ComputeNetworkPeering interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	StackType() *string
+	SetStackType(val *string)
+	StackTypeInput() *string
 	State() *string
 	StateDetails() *string
 	// Experimental.
@@ -120,6 +123,7 @@ type ComputeNetworkPeering interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStackType()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -426,6 +430,26 @@ func (j *jsiiProxy_ComputeNetworkPeering) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeNetworkPeering) StackType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stackType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeNetworkPeering) StackTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stackTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeNetworkPeering) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -497,7 +521,7 @@ func (j *jsiiProxy_ComputeNetworkPeering) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/compute_network_peering google_compute_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/resources/compute_network_peering google_compute_network_peering} Resource.
 func NewComputeNetworkPeering(scope constructs.Construct, id *string, config *ComputeNetworkPeeringConfig) ComputeNetworkPeering {
 	_init_.Initialize()
 
@@ -515,7 +539,7 @@ func NewComputeNetworkPeering(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.64.0/docs/resources/compute_network_peering google_compute_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/resources/compute_network_peering google_compute_network_peering} Resource.
 func NewComputeNetworkPeering_Override(c ComputeNetworkPeering, scope constructs.Construct, id *string, config *ComputeNetworkPeeringConfig) {
 	_init_.Initialize()
 
@@ -678,6 +702,17 @@ func (j *jsiiProxy_ComputeNetworkPeering)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeNetworkPeering)SetStackType(val *string) {
+	if err := j.validateSetStackTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stackType",
 		val,
 	)
 }
@@ -1003,6 +1038,14 @@ func (c *jsiiProxy_ComputeNetworkPeering) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeNetworkPeering) ResetStackType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStackType",
 		nil, // no parameters
 	)
 }

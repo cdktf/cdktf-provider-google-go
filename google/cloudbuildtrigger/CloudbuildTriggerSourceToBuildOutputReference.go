@@ -74,6 +74,7 @@ type CloudbuildTriggerSourceToBuildOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetGithubEnterpriseConfig()
+	ResetUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -556,6 +557,14 @@ func (c *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) ResetGithubEnt
 	_jsii_.InvokeVoid(
 		c,
 		"resetGithubEnterpriseConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference) ResetUri() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUri",
 		nil, // no parameters
 	)
 }

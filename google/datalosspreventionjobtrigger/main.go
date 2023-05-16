@@ -354,18 +354,22 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publishFindingsToCloudDataCatalogInput", GoGetter: "PublishFindingsToCloudDataCatalogInput"},
 			_jsii_.MemberProperty{JsiiProperty: "publishSummaryToCscc", GoGetter: "PublishSummaryToCscc"},
 			_jsii_.MemberProperty{JsiiProperty: "publishSummaryToCsccInput", GoGetter: "PublishSummaryToCsccInput"},
+			_jsii_.MemberProperty{JsiiProperty: "publishToStackdriver", GoGetter: "PublishToStackdriver"},
+			_jsii_.MemberProperty{JsiiProperty: "publishToStackdriverInput", GoGetter: "PublishToStackdriverInput"},
 			_jsii_.MemberProperty{JsiiProperty: "pubSub", GoGetter: "PubSub"},
 			_jsii_.MemberProperty{JsiiProperty: "pubSubInput", GoGetter: "PubSubInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putDeidentify", GoMethod: "PutDeidentify"},
 			_jsii_.MemberMethod{JsiiMethod: "putJobNotificationEmails", GoMethod: "PutJobNotificationEmails"},
 			_jsii_.MemberMethod{JsiiMethod: "putPublishFindingsToCloudDataCatalog", GoMethod: "PutPublishFindingsToCloudDataCatalog"},
 			_jsii_.MemberMethod{JsiiMethod: "putPublishSummaryToCscc", GoMethod: "PutPublishSummaryToCscc"},
+			_jsii_.MemberMethod{JsiiMethod: "putPublishToStackdriver", GoMethod: "PutPublishToStackdriver"},
 			_jsii_.MemberMethod{JsiiMethod: "putPubSub", GoMethod: "PutPubSub"},
 			_jsii_.MemberMethod{JsiiMethod: "putSaveFindings", GoMethod: "PutSaveFindings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeidentify", GoMethod: "ResetDeidentify"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJobNotificationEmails", GoMethod: "ResetJobNotificationEmails"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPublishFindingsToCloudDataCatalog", GoMethod: "ResetPublishFindingsToCloudDataCatalog"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPublishSummaryToCscc", GoMethod: "ResetPublishSummaryToCscc"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPublishToStackdriver", GoMethod: "ResetPublishToStackdriver"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPubSub", GoMethod: "ResetPubSub"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSaveFindings", GoMethod: "ResetSaveFindings"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -487,6 +491,42 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver",
+		reflect.TypeOf((*DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference",
+		reflect.TypeOf((*DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
