@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/data-sources/logging_sink google_logging_sink}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/data-sources/logging_sink google_logging_sink}.
 type DataGoogleLoggingSink interface {
 	cdktf.TerraformDataSource
 	BigqueryOptions() DataGoogleLoggingSinkBigqueryOptionsList
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataGoogleLoggingSink) WriterIdentity() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/data-sources/logging_sink google_logging_sink} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/data-sources/logging_sink google_logging_sink} Data Source.
 func NewDataGoogleLoggingSink(scope constructs.Construct, id *string, config *DataGoogleLoggingSinkConfig) DataGoogleLoggingSink {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewDataGoogleLoggingSink(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/data-sources/logging_sink google_logging_sink} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/data-sources/logging_sink google_logging_sink} Data Source.
 func NewDataGoogleLoggingSink_Override(d DataGoogleLoggingSink, scope constructs.Construct, id *string, config *DataGoogleLoggingSinkConfig) {
 	_init_.Initialize()
 

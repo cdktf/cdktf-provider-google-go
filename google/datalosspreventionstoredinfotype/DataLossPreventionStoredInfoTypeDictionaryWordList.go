@@ -7,7 +7,7 @@ type DataLossPreventionStoredInfoTypeDictionaryWordList struct {
 	// The dictionary must contain at least one
 	// phrase and every phrase must contain at least 2 characters that are letters or digits.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/resources/data_loss_prevention_stored_info_type#words DataLossPreventionStoredInfoType#words}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/resources/data_loss_prevention_stored_info_type#words DataLossPreventionStoredInfoType#words}
 	Words *[]*string `field:"required" json:"words" yaml:"words"`
 }
 

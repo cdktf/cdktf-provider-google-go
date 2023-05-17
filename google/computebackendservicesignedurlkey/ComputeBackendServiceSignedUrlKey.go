@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/resources/compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/resources/compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key}.
 type ComputeBackendServiceSignedUrlKey interface {
 	cdktf.TerraformResource
 	BackendService() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_ComputeBackendServiceSignedUrlKey) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/resources/compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/resources/compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key} Resource.
 func NewComputeBackendServiceSignedUrlKey(scope constructs.Construct, id *string, config *ComputeBackendServiceSignedUrlKeyConfig) ComputeBackendServiceSignedUrlKey {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewComputeBackendServiceSignedUrlKey(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/resources/compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/resources/compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key} Resource.
 func NewComputeBackendServiceSignedUrlKey_Override(c ComputeBackendServiceSignedUrlKey, scope constructs.Construct, id *string, config *ComputeBackendServiceSignedUrlKeyConfig) {
 	_init_.Initialize()
 

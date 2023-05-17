@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/resources/identity_platform_tenant google_identity_platform_tenant}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/resources/identity_platform_tenant google_identity_platform_tenant}.
 type IdentityPlatformTenant interface {
 	cdktf.TerraformResource
 	AllowPasswordSignup() interface{}
@@ -440,7 +440,7 @@ func (j *jsiiProxy_IdentityPlatformTenant) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/resources/identity_platform_tenant google_identity_platform_tenant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/resources/identity_platform_tenant google_identity_platform_tenant} Resource.
 func NewIdentityPlatformTenant(scope constructs.Construct, id *string, config *IdentityPlatformTenantConfig) IdentityPlatformTenant {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewIdentityPlatformTenant(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.0/docs/resources/identity_platform_tenant google_identity_platform_tenant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/resources/identity_platform_tenant google_identity_platform_tenant} Resource.
 func NewIdentityPlatformTenant_Override(i IdentityPlatformTenant, scope constructs.Construct, id *string, config *IdentityPlatformTenantConfig) {
 	_init_.Initialize()
 
