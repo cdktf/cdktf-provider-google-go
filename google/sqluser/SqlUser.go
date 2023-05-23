@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/resources/sql_user google_sql_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/sql_user google_sql_user}.
 type SqlUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -511,7 +511,7 @@ func (j *jsiiProxy_SqlUser) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/resources/sql_user google_sql_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/sql_user google_sql_user} Resource.
 func NewSqlUser(scope constructs.Construct, id *string, config *SqlUserConfig) SqlUser {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewSqlUser(scope constructs.Construct, id *string, config *SqlUserConfig) S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/resources/sql_user google_sql_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/sql_user google_sql_user} Resource.
 func NewSqlUser_Override(s SqlUser, scope constructs.Construct, id *string, config *SqlUserConfig) {
 	_init_.Initialize()
 

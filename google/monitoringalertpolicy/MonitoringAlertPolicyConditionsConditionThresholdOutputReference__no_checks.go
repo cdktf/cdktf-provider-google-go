@@ -52,6 +52,10 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputRefere
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) validatePutForecastOptionsParameters(value *MonitoringAlertPolicyConditionsConditionThresholdForecastOptions) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) validatePutTriggerParameters(value *MonitoringAlertPolicyConditionsConditionThresholdTrigger) error {
 	return nil
 }

@@ -92,6 +92,69 @@ func init() {
 		reflect.TypeOf((*MonitoringAlertPolicyAlertStrategy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationChannelStrategy",
+		reflect.TypeOf((*MonitoringAlertPolicyAlertStrategyNotificationChannelStrategy)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList",
+		reflect.TypeOf((*MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference",
+		reflect.TypeOf((*MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "notificationChannelNames", GoGetter: "NotificationChannelNames"},
+			_jsii_.MemberProperty{JsiiProperty: "notificationChannelNamesInput", GoGetter: "NotificationChannelNamesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "renotifyInterval", GoGetter: "RenotifyInterval"},
+			_jsii_.MemberProperty{JsiiProperty: "renotifyIntervalInput", GoGetter: "RenotifyIntervalInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNotificationChannelNames", GoMethod: "ResetNotificationChannelNames"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRenotifyInterval", GoMethod: "ResetRenotifyInterval"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationRateLimit",
 		reflect.TypeOf((*MonitoringAlertPolicyAlertStrategyNotificationRateLimit)(nil)).Elem(),
 	)
@@ -153,10 +216,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "notificationChannelStrategy", GoGetter: "NotificationChannelStrategy"},
+			_jsii_.MemberProperty{JsiiProperty: "notificationChannelStrategyInput", GoGetter: "NotificationChannelStrategyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "notificationRateLimit", GoGetter: "NotificationRateLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "notificationRateLimitInput", GoGetter: "NotificationRateLimitInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putNotificationChannelStrategy", GoMethod: "PutNotificationChannelStrategy"},
 			_jsii_.MemberMethod{JsiiMethod: "putNotificationRateLimit", GoMethod: "PutNotificationRateLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoClose", GoMethod: "ResetAutoClose"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNotificationChannelStrategy", GoMethod: "ResetNotificationChannelStrategy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNotificationRateLimit", GoMethod: "ResetNotificationRateLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -605,6 +672,44 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdForecastOptions",
+		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionThresholdForecastOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference",
+		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "forecastHorizon", GoGetter: "ForecastHorizon"},
+			_jsii_.MemberProperty{JsiiProperty: "forecastHorizonInput", GoGetter: "ForecastHorizonInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionThresholdOutputReference)(nil)).Elem(),
@@ -627,6 +732,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "evaluationMissingDataInput", GoGetter: "EvaluationMissingDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "filter", GoGetter: "Filter"},
 			_jsii_.MemberProperty{JsiiProperty: "filterInput", GoGetter: "FilterInput"},
+			_jsii_.MemberProperty{JsiiProperty: "forecastOptions", GoGetter: "ForecastOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "forecastOptionsInput", GoGetter: "ForecastOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -642,12 +749,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putAggregations", GoMethod: "PutAggregations"},
 			_jsii_.MemberMethod{JsiiMethod: "putDenominatorAggregations", GoMethod: "PutDenominatorAggregations"},
+			_jsii_.MemberMethod{JsiiMethod: "putForecastOptions", GoMethod: "PutForecastOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putTrigger", GoMethod: "PutTrigger"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAggregations", GoMethod: "ResetAggregations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDenominatorAggregations", GoMethod: "ResetDenominatorAggregations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDenominatorFilter", GoMethod: "ResetDenominatorFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEvaluationMissingData", GoMethod: "ResetEvaluationMissingData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
+			_jsii_.MemberMethod{JsiiMethod: "resetForecastOptions", GoMethod: "ResetForecastOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetThresholdValue", GoMethod: "ResetThresholdValue"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTrigger", GoMethod: "ResetTrigger"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

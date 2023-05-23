@@ -48,6 +48,10 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutActive
 	return nil
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutAdvancedMachineFeaturesParameters(value *SqlDatabaseInstanceSettingsAdvancedMachineFeatures) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutBackupConfigurationParameters(value *SqlDatabaseInstanceSettingsBackupConfiguration) error {
 	return nil
 }

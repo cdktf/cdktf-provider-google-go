@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/resources/compute_image google_compute_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/compute_image google_compute_image}.
 type ComputeImage interface {
 	cdktf.TerraformResource
 	ArchiveSizeBytes() *float64
@@ -95,6 +95,9 @@ type ComputeImage interface {
 	SourceSnapshot() *string
 	SetSourceSnapshot(val *string)
 	SourceSnapshotInput() *string
+	StorageLocations() *[]*string
+	SetStorageLocations(val *[]*string)
+	StorageLocationsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -148,6 +151,7 @@ type ComputeImage interface {
 	ResetSourceDisk()
 	ResetSourceImage()
 	ResetSourceSnapshot()
+	ResetStorageLocations()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -614,6 +618,26 @@ func (j *jsiiProxy_ComputeImage) SourceSnapshotInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeImage) StorageLocations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"storageLocations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeImage) StorageLocationsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"storageLocationsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeImage) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -665,7 +689,7 @@ func (j *jsiiProxy_ComputeImage) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/resources/compute_image google_compute_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/compute_image google_compute_image} Resource.
 func NewComputeImage(scope constructs.Construct, id *string, config *ComputeImageConfig) ComputeImage {
 	_init_.Initialize()
 
@@ -683,7 +707,7 @@ func NewComputeImage(scope constructs.Construct, id *string, config *ComputeImag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/resources/compute_image google_compute_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/compute_image google_compute_image} Resource.
 func NewComputeImage_Override(c ComputeImage, scope constructs.Construct, id *string, config *ComputeImageConfig) {
 	_init_.Initialize()
 
@@ -879,6 +903,17 @@ func (j *jsiiProxy_ComputeImage)SetSourceSnapshot(val *string) {
 	_jsii_.Set(
 		j,
 		"sourceSnapshot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeImage)SetStorageLocations(val *[]*string) {
+	if err := j.validateSetStorageLocationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageLocations",
 		val,
 	)
 }
@@ -1301,6 +1336,14 @@ func (c *jsiiProxy_ComputeImage) ResetSourceSnapshot() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSourceSnapshot",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeImage) ResetStorageLocations() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStorageLocations",
 		nil, // no parameters
 	)
 }

@@ -69,6 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "sourceArchiveBucket", GoGetter: "SourceArchiveBucket"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceArchiveObject", GoGetter: "SourceArchiveObject"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceRepository", GoGetter: "SourceRepository"},
+			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},

@@ -44,6 +44,8 @@ type MonitoringAlertPolicyConditionsConditionThresholdOutputReference interface 
 	Filter() *string
 	SetFilter(val *string)
 	FilterInput() *string
+	ForecastOptions() MonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference
+	ForecastOptionsInput() *MonitoringAlertPolicyConditionsConditionThresholdForecastOptions
 	// Experimental.
 	Fqn() *string
 	InternalValue() *MonitoringAlertPolicyConditionsConditionThreshold
@@ -87,12 +89,14 @@ type MonitoringAlertPolicyConditionsConditionThresholdOutputReference interface 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAggregations(value interface{})
 	PutDenominatorAggregations(value interface{})
+	PutForecastOptions(value *MonitoringAlertPolicyConditionsConditionThresholdForecastOptions)
 	PutTrigger(value *MonitoringAlertPolicyConditionsConditionThresholdTrigger)
 	ResetAggregations()
 	ResetDenominatorAggregations()
 	ResetDenominatorFilter()
 	ResetEvaluationMissingData()
 	ResetFilter()
+	ResetForecastOptions()
 	ResetThresholdValue()
 	ResetTrigger()
 	// Produce the Token's value at resolution time.
@@ -275,6 +279,26 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputRefere
 	_jsii_.Get(
 		j,
 		"filterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) ForecastOptions() MonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference {
+	var returns MonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"forecastOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) ForecastOptionsInput() *MonitoringAlertPolicyConditionsConditionThresholdForecastOptions {
+	var returns *MonitoringAlertPolicyConditionsConditionThresholdForecastOptions
+	_jsii_.Get(
+		j,
+		"forecastOptionsInput",
 		&returns,
 	)
 	return returns
@@ -717,6 +741,17 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputRefere
 	)
 }
 
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) PutForecastOptions(value *MonitoringAlertPolicyConditionsConditionThresholdForecastOptions) {
+	if err := m.validatePutForecastOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putForecastOptions",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) PutTrigger(value *MonitoringAlertPolicyConditionsConditionThresholdTrigger) {
 	if err := m.validatePutTriggerParameters(value); err != nil {
 		panic(err)
@@ -764,6 +799,14 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputRefere
 	_jsii_.InvokeVoid(
 		m,
 		"resetFilter",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) ResetForecastOptions() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetForecastOptions",
 		nil, // no parameters
 	)
 }

@@ -152,6 +152,17 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputRefere
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) validatePutForecastOptionsParameters(value *MonitoringAlertPolicyConditionsConditionThresholdForecastOptions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) validatePutTriggerParameters(value *MonitoringAlertPolicyConditionsConditionThresholdTrigger) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

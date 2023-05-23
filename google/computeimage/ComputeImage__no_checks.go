@@ -140,6 +140,10 @@ func (j *jsiiProxy_ComputeImage) validateSetSourceSnapshotParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_ComputeImage) validateSetStorageLocationsParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewComputeImageParameters(scope constructs.Construct, id *string, config *ComputeImageConfig) error {
 	return nil
 }

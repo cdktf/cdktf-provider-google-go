@@ -12,6 +12,7 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference interface {
 	cdktf.ComplexObject
 	ActivationPolicy() *string
 	ActiveDirectoryConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsActiveDirectoryConfigList
+	AdvancedMachineFeatures() DataGoogleSqlDatabaseInstancesInstancesSettingsAdvancedMachineFeaturesList
 	AvailabilityType() *string
 	BackupConfiguration() DataGoogleSqlDatabaseInstancesInstancesSettingsBackupConfigurationList
 	Collation() *string
@@ -115,6 +116,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReferenc
 	_jsii_.Get(
 		j,
 		"activeDirectoryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) AdvancedMachineFeatures() DataGoogleSqlDatabaseInstancesInstancesSettingsAdvancedMachineFeaturesList {
+	var returns DataGoogleSqlDatabaseInstancesInstancesSettingsAdvancedMachineFeaturesList
+	_jsii_.Get(
+		j,
+		"advancedMachineFeatures",
 		&returns,
 	)
 	return returns

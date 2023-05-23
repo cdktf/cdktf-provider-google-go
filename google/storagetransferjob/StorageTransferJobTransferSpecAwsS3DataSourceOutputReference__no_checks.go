@@ -68,6 +68,10 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) validateSetPathParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) validateSetRoleArnParameters(val *string) error {
 	return nil
 }

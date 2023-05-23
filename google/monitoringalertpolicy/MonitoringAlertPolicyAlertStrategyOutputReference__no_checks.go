@@ -44,6 +44,10 @@ func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference) validateIn
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference) validatePutNotificationChannelStrategyParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference) validatePutNotificationRateLimitParameters(value *MonitoringAlertPolicyAlertStrategyNotificationRateLimit) error {
 	return nil
 }

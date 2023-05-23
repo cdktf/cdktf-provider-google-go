@@ -15,6 +15,8 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ActivationPolicyInput() *string
 	ActiveDirectoryConfig() SqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference
 	ActiveDirectoryConfigInput() *SqlDatabaseInstanceSettingsActiveDirectoryConfig
+	AdvancedMachineFeatures() SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference
+	AdvancedMachineFeaturesInput() *SqlDatabaseInstanceSettingsAdvancedMachineFeatures
 	AvailabilityType() *string
 	SetAvailabilityType(val *string)
 	AvailabilityTypeInput() *string
@@ -122,6 +124,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutActiveDirectoryConfig(value *SqlDatabaseInstanceSettingsActiveDirectoryConfig)
+	PutAdvancedMachineFeatures(value *SqlDatabaseInstanceSettingsAdvancedMachineFeatures)
 	PutBackupConfiguration(value *SqlDatabaseInstanceSettingsBackupConfiguration)
 	PutDatabaseFlags(value interface{})
 	PutDenyMaintenancePeriod(value *SqlDatabaseInstanceSettingsDenyMaintenancePeriod)
@@ -133,6 +136,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	PutSqlServerAuditConfig(value *SqlDatabaseInstanceSettingsSqlServerAuditConfig)
 	ResetActivationPolicy()
 	ResetActiveDirectoryConfig()
+	ResetAdvancedMachineFeatures()
 	ResetAvailabilityType()
 	ResetBackupConfiguration()
 	ResetCollation()
@@ -203,6 +207,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ActiveDirectoryCo
 	_jsii_.Get(
 		j,
 		"activeDirectoryConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) AdvancedMachineFeatures() SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference {
+	var returns SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference
+	_jsii_.Get(
+		j,
+		"advancedMachineFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) AdvancedMachineFeaturesInput() *SqlDatabaseInstanceSettingsAdvancedMachineFeatures {
+	var returns *SqlDatabaseInstanceSettingsAdvancedMachineFeatures
+	_jsii_.Get(
+		j,
+		"advancedMachineFeaturesInput",
 		&returns,
 	)
 	return returns
@@ -1131,6 +1155,17 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutActiveDirector
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutAdvancedMachineFeatures(value *SqlDatabaseInstanceSettingsAdvancedMachineFeatures) {
+	if err := s.validatePutAdvancedMachineFeaturesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAdvancedMachineFeatures",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutBackupConfiguration(value *SqlDatabaseInstanceSettingsBackupConfiguration) {
 	if err := s.validatePutBackupConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1242,6 +1277,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetActiveDirect
 	_jsii_.InvokeVoid(
 		s,
 		"resetActiveDirectoryConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetAdvancedMachineFeatures() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAdvancedMachineFeatures",
 		nil, // no parameters
 	)
 }

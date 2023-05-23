@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/resources/data_catalog_tag_template google_data_catalog_tag_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/data_catalog_tag_template google_data_catalog_tag_template}.
 type DataCatalogTagTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -463,7 +463,7 @@ func (j *jsiiProxy_DataCatalogTagTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/resources/data_catalog_tag_template google_data_catalog_tag_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/data_catalog_tag_template google_data_catalog_tag_template} Resource.
 func NewDataCatalogTagTemplate(scope constructs.Construct, id *string, config *DataCatalogTagTemplateConfig) DataCatalogTagTemplate {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewDataCatalogTagTemplate(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.65.2/docs/resources/data_catalog_tag_template google_data_catalog_tag_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/data_catalog_tag_template google_data_catalog_tag_template} Resource.
 func NewDataCatalogTagTemplate_Override(d DataCatalogTagTemplate, scope constructs.Construct, id *string, config *DataCatalogTagTemplateConfig) {
 	_init_.Initialize()
 

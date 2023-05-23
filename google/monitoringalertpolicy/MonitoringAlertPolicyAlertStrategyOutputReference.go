@@ -32,6 +32,8 @@ type MonitoringAlertPolicyAlertStrategyOutputReference interface {
 	Fqn() *string
 	InternalValue() *MonitoringAlertPolicyAlertStrategy
 	SetInternalValue(val *MonitoringAlertPolicyAlertStrategy)
+	NotificationChannelStrategy() MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList
+	NotificationChannelStrategyInput() interface{}
 	NotificationRateLimit() MonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference
 	NotificationRateLimitInput() *MonitoringAlertPolicyAlertStrategyNotificationRateLimit
 	// Experimental.
@@ -66,8 +68,10 @@ type MonitoringAlertPolicyAlertStrategyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutNotificationChannelStrategy(value interface{})
 	PutNotificationRateLimit(value *MonitoringAlertPolicyAlertStrategyNotificationRateLimit)
 	ResetAutoClose()
+	ResetNotificationChannelStrategy()
 	ResetNotificationRateLimit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference) InternalVa
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference) NotificationChannelStrategy() MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList {
+	var returns MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList
+	_jsii_.Get(
+		j,
+		"notificationChannelStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference) NotificationChannelStrategyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"notificationChannelStrategyInput",
 		&returns,
 	)
 	return returns
@@ -474,6 +498,17 @@ func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference) Interpolat
 	return returns
 }
 
+func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference) PutNotificationChannelStrategy(value interface{}) {
+	if err := m.validatePutNotificationChannelStrategyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putNotificationChannelStrategy",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference) PutNotificationRateLimit(value *MonitoringAlertPolicyAlertStrategyNotificationRateLimit) {
 	if err := m.validatePutNotificationRateLimitParameters(value); err != nil {
 		panic(err)
@@ -489,6 +524,14 @@ func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference) ResetAutoC
 	_jsii_.InvokeVoid(
 		m,
 		"resetAutoClose",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyOutputReference) ResetNotificationChannelStrategy() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetNotificationChannelStrategy",
 		nil, // no parameters
 	)
 }

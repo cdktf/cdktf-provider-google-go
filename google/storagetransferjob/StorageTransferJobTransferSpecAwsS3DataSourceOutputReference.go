@@ -34,6 +34,9 @@ type StorageTransferJobTransferSpecAwsS3DataSourceOutputReference interface {
 	Fqn() *string
 	InternalValue() *StorageTransferJobTransferSpecAwsS3DataSource
 	SetInternalValue(val *StorageTransferJobTransferSpecAwsS3DataSource)
+	Path() *string
+	SetPath(val *string)
+	PathInput() *string
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -71,6 +74,7 @@ type StorageTransferJobTransferSpecAwsS3DataSourceOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAwsAccessKey(value *StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey)
 	ResetAwsAccessKey()
+	ResetPath()
 	ResetRoleArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -172,6 +176,26 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) Path() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"path",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) PathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pathInput",
 		&returns,
 	)
 	return returns
@@ -285,6 +309,17 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"path",
 		val,
 	)
 }
@@ -523,6 +558,14 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	_jsii_.InvokeVoid(
 		s,
 		"resetAwsAccessKey",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ResetPath() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPath",
 		nil, // no parameters
 	)
 }
