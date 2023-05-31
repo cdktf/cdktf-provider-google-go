@@ -1,0 +1,6 @@
+package datagooglecomputeinstancetemplate
+
+
+type DataGoogleComputeInstanceTemplateNetworkPerformanceConfig struct {
+}
+

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/compute_region_disk google_compute_region_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/compute_region_disk google_compute_region_disk}.
 type ComputeRegionDisk interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,6 +42,8 @@ type ComputeRegionDisk interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GuestOsFeatures() ComputeRegionDiskGuestOsFeaturesList
+	GuestOsFeaturesInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -51,6 +53,9 @@ type ComputeRegionDisk interface {
 	LabelsInput() *map[string]*string
 	LastAttachTimestamp() *string
 	LastDetachTimestamp() *string
+	Licenses() *[]*string
+	SetLicenses(val *[]*string)
+	LicensesInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -134,12 +139,15 @@ type ComputeRegionDisk interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDiskEncryptionKey(value *ComputeRegionDiskDiskEncryptionKey)
+	PutGuestOsFeatures(value interface{})
 	PutSourceSnapshotEncryptionKey(value *ComputeRegionDiskSourceSnapshotEncryptionKey)
 	PutTimeouts(value *ComputeRegionDiskTimeouts)
 	ResetDescription()
 	ResetDiskEncryptionKey()
+	ResetGuestOsFeatures()
 	ResetId()
 	ResetLabels()
+	ResetLicenses()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -297,6 +305,26 @@ func (j *jsiiProxy_ComputeRegionDisk) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionDisk) GuestOsFeatures() ComputeRegionDiskGuestOsFeaturesList {
+	var returns ComputeRegionDiskGuestOsFeaturesList
+	_jsii_.Get(
+		j,
+		"guestOsFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) GuestOsFeaturesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"guestOsFeaturesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionDisk) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -362,6 +390,26 @@ func (j *jsiiProxy_ComputeRegionDisk) LastDetachTimestamp() *string {
 	_jsii_.Get(
 		j,
 		"lastDetachTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) Licenses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"licenses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) LicensesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"licensesInput",
 		&returns,
 	)
 	return returns
@@ -708,7 +756,7 @@ func (j *jsiiProxy_ComputeRegionDisk) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
 func NewComputeRegionDisk(scope constructs.Construct, id *string, config *ComputeRegionDiskConfig) ComputeRegionDisk {
 	_init_.Initialize()
 
@@ -726,7 +774,7 @@ func NewComputeRegionDisk(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
 func NewComputeRegionDisk_Override(c ComputeRegionDisk, scope constructs.Construct, id *string, config *ComputeRegionDiskConfig) {
 	_init_.Initialize()
 
@@ -804,6 +852,17 @@ func (j *jsiiProxy_ComputeRegionDisk)SetLabels(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"labels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionDisk)SetLicenses(val *[]*string) {
+	if err := j.validateSetLicensesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"licenses",
 		val,
 	)
 }
@@ -1214,6 +1273,17 @@ func (c *jsiiProxy_ComputeRegionDisk) PutDiskEncryptionKey(value *ComputeRegionD
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionDisk) PutGuestOsFeatures(value interface{}) {
+	if err := c.validatePutGuestOsFeaturesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putGuestOsFeatures",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionDisk) PutSourceSnapshotEncryptionKey(value *ComputeRegionDiskSourceSnapshotEncryptionKey) {
 	if err := c.validatePutSourceSnapshotEncryptionKeyParameters(value); err != nil {
 		panic(err)
@@ -1252,6 +1322,14 @@ func (c *jsiiProxy_ComputeRegionDisk) ResetDiskEncryptionKey() {
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionDisk) ResetGuestOsFeatures() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGuestOsFeatures",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionDisk) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1264,6 +1342,14 @@ func (c *jsiiProxy_ComputeRegionDisk) ResetLabels() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionDisk) ResetLicenses() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLicenses",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/compute_instance_from_template google_compute_instance_from_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/compute_instance_from_template google_compute_instance_from_template}.
 type ComputeInstanceFromTemplate interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference
@@ -99,6 +99,8 @@ type ComputeInstanceFromTemplate interface {
 	NameInput() *string
 	NetworkInterface() ComputeInstanceFromTemplateNetworkInterfaceList
 	NetworkInterfaceInput() interface{}
+	NetworkPerformanceConfig() ComputeInstanceFromTemplateNetworkPerformanceConfigOutputReference
+	NetworkPerformanceConfigInput() *ComputeInstanceFromTemplateNetworkPerformanceConfig
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -177,6 +179,7 @@ type ComputeInstanceFromTemplate interface {
 	PutConfidentialInstanceConfig(value *ComputeInstanceFromTemplateConfidentialInstanceConfig)
 	PutGuestAccelerator(value interface{})
 	PutNetworkInterface(value interface{})
+	PutNetworkPerformanceConfig(value *ComputeInstanceFromTemplateNetworkPerformanceConfig)
 	PutReservationAffinity(value *ComputeInstanceFromTemplateReservationAffinity)
 	PutScheduling(value *ComputeInstanceFromTemplateScheduling)
 	PutScratchDisk(value interface{})
@@ -202,6 +205,7 @@ type ComputeInstanceFromTemplate interface {
 	ResetMetadataStartupScript()
 	ResetMinCpuPlatform()
 	ResetNetworkInterface()
+	ResetNetworkPerformanceConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -770,6 +774,26 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate) NetworkInterfaceInput() interfac
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplate) NetworkPerformanceConfig() ComputeInstanceFromTemplateNetworkPerformanceConfigOutputReference {
+	var returns ComputeInstanceFromTemplateNetworkPerformanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkPerformanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplate) NetworkPerformanceConfigInput() *ComputeInstanceFromTemplateNetworkPerformanceConfig {
+	var returns *ComputeInstanceFromTemplateNetworkPerformanceConfig
+	_jsii_.Get(
+		j,
+		"networkPerformanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplate) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -1081,7 +1105,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/compute_instance_from_template google_compute_instance_from_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/compute_instance_from_template google_compute_instance_from_template} Resource.
 func NewComputeInstanceFromTemplate(scope constructs.Construct, id *string, config *ComputeInstanceFromTemplateConfig) ComputeInstanceFromTemplate {
 	_init_.Initialize()
 
@@ -1099,7 +1123,7 @@ func NewComputeInstanceFromTemplate(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/compute_instance_from_template google_compute_instance_from_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/compute_instance_from_template google_compute_instance_from_template} Resource.
 func NewComputeInstanceFromTemplate_Override(c ComputeInstanceFromTemplate, scope constructs.Construct, id *string, config *ComputeInstanceFromTemplateConfig) {
 	_init_.Initialize()
 
@@ -1719,6 +1743,17 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) PutNetworkInterface(value interf
 	)
 }
 
+func (c *jsiiProxy_ComputeInstanceFromTemplate) PutNetworkPerformanceConfig(value *ComputeInstanceFromTemplateNetworkPerformanceConfig) {
+	if err := c.validatePutNetworkPerformanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNetworkPerformanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceFromTemplate) PutReservationAffinity(value *ComputeInstanceFromTemplateReservationAffinity) {
 	if err := c.validatePutReservationAffinityParameters(value); err != nil {
 		panic(err)
@@ -1933,6 +1968,14 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) ResetNetworkInterface() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetNetworkInterface",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplate) ResetNetworkPerformanceConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNetworkPerformanceConfig",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/compute_instance google_compute_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/compute_instance google_compute_instance}.
 type ComputeInstance interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() ComputeInstanceAdvancedMachineFeaturesOutputReference
@@ -99,6 +99,8 @@ type ComputeInstance interface {
 	NameInput() *string
 	NetworkInterface() ComputeInstanceNetworkInterfaceList
 	NetworkInterfaceInput() interface{}
+	NetworkPerformanceConfig() ComputeInstanceNetworkPerformanceConfigOutputReference
+	NetworkPerformanceConfigInput() *ComputeInstanceNetworkPerformanceConfig
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -174,6 +176,7 @@ type ComputeInstance interface {
 	PutConfidentialInstanceConfig(value *ComputeInstanceConfidentialInstanceConfig)
 	PutGuestAccelerator(value interface{})
 	PutNetworkInterface(value interface{})
+	PutNetworkPerformanceConfig(value *ComputeInstanceNetworkPerformanceConfig)
 	PutReservationAffinity(value *ComputeInstanceReservationAffinity)
 	PutScheduling(value *ComputeInstanceScheduling)
 	PutScratchDisk(value interface{})
@@ -196,6 +199,7 @@ type ComputeInstance interface {
 	ResetMetadata()
 	ResetMetadataStartupScript()
 	ResetMinCpuPlatform()
+	ResetNetworkPerformanceConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -764,6 +768,26 @@ func (j *jsiiProxy_ComputeInstance) NetworkInterfaceInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstance) NetworkPerformanceConfig() ComputeInstanceNetworkPerformanceConfigOutputReference {
+	var returns ComputeInstanceNetworkPerformanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkPerformanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstance) NetworkPerformanceConfigInput() *ComputeInstanceNetworkPerformanceConfig {
+	var returns *ComputeInstanceNetworkPerformanceConfig
+	_jsii_.Get(
+		j,
+		"networkPerformanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstance) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -1055,7 +1079,7 @@ func (j *jsiiProxy_ComputeInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/compute_instance google_compute_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/compute_instance google_compute_instance} Resource.
 func NewComputeInstance(scope constructs.Construct, id *string, config *ComputeInstanceConfig) ComputeInstance {
 	_init_.Initialize()
 
@@ -1073,7 +1097,7 @@ func NewComputeInstance(scope constructs.Construct, id *string, config *ComputeI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/compute_instance google_compute_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/compute_instance google_compute_instance} Resource.
 func NewComputeInstance_Override(c ComputeInstance, scope constructs.Construct, id *string, config *ComputeInstanceConfig) {
 	_init_.Initialize()
 
@@ -1682,6 +1706,17 @@ func (c *jsiiProxy_ComputeInstance) PutNetworkInterface(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_ComputeInstance) PutNetworkPerformanceConfig(value *ComputeInstanceNetworkPerformanceConfig) {
+	if err := c.validatePutNetworkPerformanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNetworkPerformanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeInstance) PutReservationAffinity(value *ComputeInstanceReservationAffinity) {
 	if err := c.validatePutReservationAffinityParameters(value); err != nil {
 		panic(err)
@@ -1872,6 +1907,14 @@ func (c *jsiiProxy_ComputeInstance) ResetMinCpuPlatform() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetMinCpuPlatform",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstance) ResetNetworkPerformanceConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNetworkPerformanceConfig",
 		nil, // no parameters
 	)
 }

@@ -122,6 +122,37 @@ func (c *jsiiProxy_ComputeDisk) validatePutDiskEncryptionKeyParameters(value *Co
 	return nil
 }
 
+func (c *jsiiProxy_ComputeDisk) validatePutGuestOsFeaturesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ComputeDiskGuestOsFeatures:
+		value := value.(*[]*ComputeDiskGuestOsFeatures)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ComputeDiskGuestOsFeatures:
+		value_ := value.([]*ComputeDiskGuestOsFeatures)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ComputeDiskGuestOsFeatures; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComputeDisk) validatePutSourceImageEncryptionKeyParameters(value *ComputeDiskSourceImageEncryptionKey) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -294,6 +325,14 @@ func (j *jsiiProxy_ComputeDisk) validateSetImageParameters(val *string) error {
 }
 
 func (j *jsiiProxy_ComputeDisk) validateSetLabelsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeDisk) validateSetLicensesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -72,6 +72,10 @@ func (c *jsiiProxy_ComputeInstanceTemplate) validatePutNetworkInterfaceParameter
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceTemplate) validatePutNetworkPerformanceConfigParameters(value *ComputeInstanceTemplateNetworkPerformanceConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceTemplate) validatePutReservationAffinityParameters(value *ComputeInstanceTemplateReservationAffinity) error {
 	return nil
 }

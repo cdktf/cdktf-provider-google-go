@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeDisk) validatePutDiskEncryptionKeyParameters(value *Co
 	return nil
 }
 
+func (c *jsiiProxy_ComputeDisk) validatePutGuestOsFeaturesParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeDisk) validatePutSourceImageEncryptionKeyParameters(value *ComputeDiskSourceImageEncryptionKey) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (j *jsiiProxy_ComputeDisk) validateSetImageParameters(val *string) error {
 }
 
 func (j *jsiiProxy_ComputeDisk) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeDisk) validateSetLicensesParameters(val *[]*string) error {
 	return nil
 }
 

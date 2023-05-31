@@ -56,6 +56,10 @@ func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) validateSetEncodingFormatParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) validateSetInternalValueParameters(val *PrivatecaCaPoolPublishingOptions) error {
 	return nil
 }

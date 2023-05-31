@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/data-sources/compute_instance_template google_compute_instance_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/data-sources/compute_instance_template google_compute_instance_template}.
 type DataGoogleComputeInstanceTemplate interface {
 	cdktf.TerraformDataSource
 	AdvancedMachineFeatures() DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesList
@@ -63,6 +63,7 @@ type DataGoogleComputeInstanceTemplate interface {
 	NameInput() *string
 	NamePrefix() *string
 	NetworkInterface() DataGoogleComputeInstanceTemplateNetworkInterfaceList
+	NetworkPerformanceConfig() DataGoogleComputeInstanceTemplateNetworkPerformanceConfigList
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -451,6 +452,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) NetworkInterface() DataGoo
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) NetworkPerformanceConfig() DataGoogleComputeInstanceTemplateNetworkPerformanceConfigList {
+	var returns DataGoogleComputeInstanceTemplateNetworkPerformanceConfigList
+	_jsii_.Get(
+		j,
+		"networkPerformanceConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -642,7 +653,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/data-sources/compute_instance_template google_compute_instance_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/data-sources/compute_instance_template google_compute_instance_template} Data Source.
 func NewDataGoogleComputeInstanceTemplate(scope constructs.Construct, id *string, config *DataGoogleComputeInstanceTemplateConfig) DataGoogleComputeInstanceTemplate {
 	_init_.Initialize()
 
@@ -660,7 +671,7 @@ func NewDataGoogleComputeInstanceTemplate(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/data-sources/compute_instance_template google_compute_instance_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/data-sources/compute_instance_template google_compute_instance_template} Data Source.
 func NewDataGoogleComputeInstanceTemplate_Override(d DataGoogleComputeInstanceTemplate, scope constructs.Construct, id *string, config *DataGoogleComputeInstanceTemplateConfig) {
 	_init_.Initialize()
 

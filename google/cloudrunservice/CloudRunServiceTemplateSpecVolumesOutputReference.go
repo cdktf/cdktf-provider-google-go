@@ -67,6 +67,7 @@ type CloudRunServiceTemplateSpecVolumesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutSecret(value *CloudRunServiceTemplateSpecVolumesSecret)
+	ResetSecret()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -480,6 +481,14 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) PutSecret(
 		c,
 		"putSecret",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) ResetSecret() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSecret",
+		nil, // no parameters
 	)
 }
 

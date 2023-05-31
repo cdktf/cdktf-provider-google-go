@@ -44,6 +44,9 @@ type CloudRunServiceTemplateSpecContainersOutputReference interface {
 	SetInternalValue(val interface{})
 	LivenessProbe() CloudRunServiceTemplateSpecContainersLivenessProbeOutputReference
 	LivenessProbeInput() *CloudRunServiceTemplateSpecContainersLivenessProbe
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	Ports() CloudRunServiceTemplateSpecContainersPortsList
 	PortsInput() interface{}
 	Resources() CloudRunServiceTemplateSpecContainersResourcesOutputReference
@@ -99,6 +102,7 @@ type CloudRunServiceTemplateSpecContainersOutputReference interface {
 	ResetEnv()
 	ResetEnvFrom()
 	ResetLivenessProbe()
+	ResetName()
 	ResetPorts()
 	ResetResources()
 	ResetStartupProbe()
@@ -284,6 +288,26 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) Livenes
 	_jsii_.Get(
 		j,
 		"livenessProbeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -499,6 +523,17 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference)SetInter
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -835,6 +870,14 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) ResetLi
 	_jsii_.InvokeVoid(
 		c,
 		"resetLivenessProbe",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetName",
 		nil, // no parameters
 	)
 }

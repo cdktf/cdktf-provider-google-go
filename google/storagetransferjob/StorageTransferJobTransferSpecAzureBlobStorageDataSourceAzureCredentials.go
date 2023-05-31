@@ -4,7 +4,7 @@ package storagetransferjob
 type StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentials struct {
 	// Azure shared access signature.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.66.0/docs/resources/storage_transfer_job#sas_token StorageTransferJob#sas_token}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/storage_transfer_job#sas_token StorageTransferJob#sas_token}
 	SasToken *string `field:"required" json:"sasToken" yaml:"sasToken"`
 }
 

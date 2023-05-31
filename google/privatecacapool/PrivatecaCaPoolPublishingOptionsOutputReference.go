@@ -25,6 +25,9 @@ type PrivatecaCaPoolPublishingOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EncodingFormat() *string
+	SetEncodingFormat(val *string)
+	EncodingFormatInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *PrivatecaCaPoolPublishingOptions
@@ -67,6 +70,7 @@ type PrivatecaCaPoolPublishingOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEncodingFormat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -107,6 +111,26 @@ func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) CreationStac
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) EncodingFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encodingFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) EncodingFormatInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encodingFormatInput",
 		&returns,
 	)
 	return returns
@@ -238,6 +262,17 @@ func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference)SetComplexObj
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference)SetEncodingFormat(val *string) {
+	if err := j.validateSetEncodingFormatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encodingFormat",
 		val,
 	)
 }
@@ -481,6 +516,14 @@ func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) ResetEncodingFormat() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEncodingFormat",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
