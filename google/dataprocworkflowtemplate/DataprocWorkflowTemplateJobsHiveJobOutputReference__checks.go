@@ -90,7 +90,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) validateI
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) validatePutQueryListParameters(value *DataprocWorkflowTemplateJobsHiveJobQueryList) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) validatePutQueryListParameters(value *DataprocWorkflowTemplateJobsHiveJobQueryListStruct) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

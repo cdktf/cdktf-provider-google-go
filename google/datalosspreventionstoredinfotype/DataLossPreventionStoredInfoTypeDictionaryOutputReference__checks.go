@@ -101,7 +101,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) validatePutWordListParameters(value *DataLossPreventionStoredInfoTypeDictionaryWordList) error {
+func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) validatePutWordListParameters(value *DataLossPreventionStoredInfoTypeDictionaryWordListStruct) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

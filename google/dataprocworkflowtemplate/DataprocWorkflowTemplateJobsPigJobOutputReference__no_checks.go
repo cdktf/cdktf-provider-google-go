@@ -48,7 +48,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsPigJobOutputReference) validatePu
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsPigJobOutputReference) validatePutQueryListParameters(value *DataprocWorkflowTemplateJobsPigJobQueryList) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsPigJobOutputReference) validatePutQueryListParameters(value *DataprocWorkflowTemplateJobsPigJobQueryListStruct) error {
 	return nil
 }
 

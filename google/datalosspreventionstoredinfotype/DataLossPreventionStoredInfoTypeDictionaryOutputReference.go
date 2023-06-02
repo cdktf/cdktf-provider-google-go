@@ -39,8 +39,8 @@ type DataLossPreventionStoredInfoTypeDictionaryOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	WordList() DataLossPreventionStoredInfoTypeDictionaryWordListOutputReference
-	WordListInput() *DataLossPreventionStoredInfoTypeDictionaryWordList
+	WordList() DataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference
+	WordListInput() *DataLossPreventionStoredInfoTypeDictionaryWordListStruct
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -66,7 +66,7 @@ type DataLossPreventionStoredInfoTypeDictionaryOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudStoragePath(value *DataLossPreventionStoredInfoTypeDictionaryCloudStoragePath)
-	PutWordList(value *DataLossPreventionStoredInfoTypeDictionaryWordList)
+	PutWordList(value *DataLossPreventionStoredInfoTypeDictionaryWordListStruct)
 	ResetCloudStoragePath()
 	ResetWordList()
 	// Produce the Token's value at resolution time.
@@ -174,8 +174,8 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) WordList() DataLossPreventionStoredInfoTypeDictionaryWordListOutputReference {
-	var returns DataLossPreventionStoredInfoTypeDictionaryWordListOutputReference
+func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) WordList() DataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference {
+	var returns DataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference
 	_jsii_.Get(
 		j,
 		"wordList",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) Wo
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) WordListInput() *DataLossPreventionStoredInfoTypeDictionaryWordList {
-	var returns *DataLossPreventionStoredInfoTypeDictionaryWordList
+func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) WordListInput() *DataLossPreventionStoredInfoTypeDictionaryWordListStruct {
+	var returns *DataLossPreventionStoredInfoTypeDictionaryWordListStruct
 	_jsii_.Get(
 		j,
 		"wordListInput",
@@ -474,7 +474,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) Pu
 	)
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) PutWordList(value *DataLossPreventionStoredInfoTypeDictionaryWordList) {
+func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) PutWordList(value *DataLossPreventionStoredInfoTypeDictionaryWordListStruct) {
 	if err := d.validatePutWordListParameters(value); err != nil {
 		panic(err)
 	}

@@ -40,8 +40,8 @@ type DataprocWorkflowTemplateJobsSparkSqlJobOutputReference interface {
 	QueryFileUri() *string
 	SetQueryFileUri(val *string)
 	QueryFileUriInput() *string
-	QueryList() DataprocWorkflowTemplateJobsSparkSqlJobQueryListOutputReference
-	QueryListInput() *DataprocWorkflowTemplateJobsSparkSqlJobQueryList
+	QueryList() DataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference
+	QueryListInput() *DataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct
 	ScriptVariables() *map[string]*string
 	SetScriptVariables(val *map[string]*string)
 	ScriptVariablesInput() *map[string]*string
@@ -78,7 +78,7 @@ type DataprocWorkflowTemplateJobsSparkSqlJobOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLoggingConfig(value *DataprocWorkflowTemplateJobsSparkSqlJobLoggingConfig)
-	PutQueryList(value *DataprocWorkflowTemplateJobsSparkSqlJobQueryList)
+	PutQueryList(value *DataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct)
 	ResetJarFileUris()
 	ResetLoggingConfig()
 	ResetProperties()
@@ -230,8 +230,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsSparkSqlJobOutputReference) Query
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsSparkSqlJobOutputReference) QueryList() DataprocWorkflowTemplateJobsSparkSqlJobQueryListOutputReference {
-	var returns DataprocWorkflowTemplateJobsSparkSqlJobQueryListOutputReference
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsSparkSqlJobOutputReference) QueryList() DataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference {
+	var returns DataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference
 	_jsii_.Get(
 		j,
 		"queryList",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsSparkSqlJobOutputReference) Query
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsSparkSqlJobOutputReference) QueryListInput() *DataprocWorkflowTemplateJobsSparkSqlJobQueryList {
-	var returns *DataprocWorkflowTemplateJobsSparkSqlJobQueryList
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsSparkSqlJobOutputReference) QueryListInput() *DataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct {
+	var returns *DataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct
 	_jsii_.Get(
 		j,
 		"queryListInput",
@@ -614,7 +614,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsSparkSqlJobOutputReference) PutLo
 	)
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsSparkSqlJobOutputReference) PutQueryList(value *DataprocWorkflowTemplateJobsSparkSqlJobQueryList) {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsSparkSqlJobOutputReference) PutQueryList(value *DataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct) {
 	if err := d.validatePutQueryListParameters(value); err != nil {
 		panic(err)
 	}

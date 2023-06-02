@@ -41,8 +41,8 @@ type DataprocWorkflowTemplateJobsHiveJobOutputReference interface {
 	QueryFileUri() *string
 	SetQueryFileUri(val *string)
 	QueryFileUriInput() *string
-	QueryList() DataprocWorkflowTemplateJobsHiveJobQueryListOutputReference
-	QueryListInput() *DataprocWorkflowTemplateJobsHiveJobQueryList
+	QueryList() DataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference
+	QueryListInput() *DataprocWorkflowTemplateJobsHiveJobQueryListStruct
 	ScriptVariables() *map[string]*string
 	SetScriptVariables(val *map[string]*string)
 	ScriptVariablesInput() *map[string]*string
@@ -78,7 +78,7 @@ type DataprocWorkflowTemplateJobsHiveJobOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutQueryList(value *DataprocWorkflowTemplateJobsHiveJobQueryList)
+	PutQueryList(value *DataprocWorkflowTemplateJobsHiveJobQueryListStruct)
 	ResetContinueOnFailure()
 	ResetJarFileUris()
 	ResetProperties()
@@ -230,8 +230,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) QueryFile
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) QueryList() DataprocWorkflowTemplateJobsHiveJobQueryListOutputReference {
-	var returns DataprocWorkflowTemplateJobsHiveJobQueryListOutputReference
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) QueryList() DataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference {
+	var returns DataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference
 	_jsii_.Get(
 		j,
 		"queryList",
@@ -240,8 +240,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) QueryList
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) QueryListInput() *DataprocWorkflowTemplateJobsHiveJobQueryList {
-	var returns *DataprocWorkflowTemplateJobsHiveJobQueryList
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) QueryListInput() *DataprocWorkflowTemplateJobsHiveJobQueryListStruct {
+	var returns *DataprocWorkflowTemplateJobsHiveJobQueryListStruct
 	_jsii_.Get(
 		j,
 		"queryListInput",
@@ -614,7 +614,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) Interpola
 	return returns
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) PutQueryList(value *DataprocWorkflowTemplateJobsHiveJobQueryList) {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference) PutQueryList(value *DataprocWorkflowTemplateJobsHiveJobQueryListStruct) {
 	if err := d.validatePutQueryListParameters(value); err != nil {
 		panic(err)
 	}

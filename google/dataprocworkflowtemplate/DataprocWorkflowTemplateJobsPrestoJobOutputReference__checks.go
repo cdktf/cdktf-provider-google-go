@@ -101,7 +101,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobOutputReference) validatePutQueryListParameters(value *DataprocWorkflowTemplateJobsPrestoJobQueryList) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobOutputReference) validatePutQueryListParameters(value *DataprocWorkflowTemplateJobsPrestoJobQueryListStruct) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

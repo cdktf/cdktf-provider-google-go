@@ -39,8 +39,8 @@ type DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionar
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	WordList() DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListOutputReference
-	WordListInput() *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordList
+	WordList() DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStructOutputReference
+	WordListInput() *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStruct
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -66,7 +66,7 @@ type DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionar
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudStoragePath(value *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePath)
-	PutWordList(value *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordList)
+	PutWordList(value *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStruct)
 	ResetCloudStoragePath()
 	ResetWordList()
 	// Produce the Token's value at resolution time.
@@ -174,8 +174,8 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfo
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryOutputReference) WordList() DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListOutputReference {
-	var returns DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListOutputReference
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryOutputReference) WordList() DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStructOutputReference {
+	var returns DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStructOutputReference
 	_jsii_.Get(
 		j,
 		"wordList",
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfo
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryOutputReference) WordListInput() *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordList {
-	var returns *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordList
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryOutputReference) WordListInput() *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStruct {
+	var returns *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStruct
 	_jsii_.Get(
 		j,
 		"wordListInput",
@@ -474,7 +474,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfo
 	)
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryOutputReference) PutWordList(value *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordList) {
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryOutputReference) PutWordList(value *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStruct) {
 	if err := d.validatePutWordListParameters(value); err != nil {
 		panic(err)
 	}

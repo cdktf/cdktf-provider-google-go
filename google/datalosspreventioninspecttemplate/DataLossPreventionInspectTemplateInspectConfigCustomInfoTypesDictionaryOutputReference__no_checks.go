@@ -48,7 +48,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypes
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesDictionaryOutputReference) validatePutWordListParameters(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesDictionaryWordList) error {
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesDictionaryOutputReference) validatePutWordListParameters(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesDictionaryWordListStruct) error {
 	return nil
 }
 

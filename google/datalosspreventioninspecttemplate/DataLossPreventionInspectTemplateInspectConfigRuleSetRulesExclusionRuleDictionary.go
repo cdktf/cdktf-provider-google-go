@@ -9,6 +9,6 @@ type DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDict
 	// word_list block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/data_loss_prevention_inspect_template#word_list DataLossPreventionInspectTemplate#word_list}
-	WordList *DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordList `field:"optional" json:"wordList" yaml:"wordList"`
+	WordList *DataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct `field:"optional" json:"wordList" yaml:"wordList"`
 }
 

@@ -9,6 +9,6 @@ type DataLossPreventionStoredInfoTypeDictionary struct {
 	// word_list block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/data_loss_prevention_stored_info_type#word_list DataLossPreventionStoredInfoType#word_list}
-	WordList *DataLossPreventionStoredInfoTypeDictionaryWordList `field:"optional" json:"wordList" yaml:"wordList"`
+	WordList *DataLossPreventionStoredInfoTypeDictionaryWordListStruct `field:"optional" json:"wordList" yaml:"wordList"`
 }
 

@@ -46,8 +46,8 @@ type DataprocWorkflowTemplateJobsPrestoJobOutputReference interface {
 	QueryFileUri() *string
 	SetQueryFileUri(val *string)
 	QueryFileUriInput() *string
-	QueryList() DataprocWorkflowTemplateJobsPrestoJobQueryListOutputReference
-	QueryListInput() *DataprocWorkflowTemplateJobsPrestoJobQueryList
+	QueryList() DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference
+	QueryListInput() *DataprocWorkflowTemplateJobsPrestoJobQueryListStruct
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -81,7 +81,7 @@ type DataprocWorkflowTemplateJobsPrestoJobOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLoggingConfig(value *DataprocWorkflowTemplateJobsPrestoJobLoggingConfig)
-	PutQueryList(value *DataprocWorkflowTemplateJobsPrestoJobQueryList)
+	PutQueryList(value *DataprocWorkflowTemplateJobsPrestoJobQueryListStruct)
 	ResetClientTags()
 	ResetContinueOnFailure()
 	ResetLoggingConfig()
@@ -274,8 +274,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobOutputReference) QueryFi
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobOutputReference) QueryList() DataprocWorkflowTemplateJobsPrestoJobQueryListOutputReference {
-	var returns DataprocWorkflowTemplateJobsPrestoJobQueryListOutputReference
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobOutputReference) QueryList() DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference {
+	var returns DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference
 	_jsii_.Get(
 		j,
 		"queryList",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobOutputReference) QueryLi
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobOutputReference) QueryListInput() *DataprocWorkflowTemplateJobsPrestoJobQueryList {
-	var returns *DataprocWorkflowTemplateJobsPrestoJobQueryList
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobOutputReference) QueryListInput() *DataprocWorkflowTemplateJobsPrestoJobQueryListStruct {
+	var returns *DataprocWorkflowTemplateJobsPrestoJobQueryListStruct
 	_jsii_.Get(
 		j,
 		"queryListInput",
@@ -649,7 +649,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobOutputReference) PutLogg
 	)
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobOutputReference) PutQueryList(value *DataprocWorkflowTemplateJobsPrestoJobQueryList) {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobOutputReference) PutQueryList(value *DataprocWorkflowTemplateJobsPrestoJobQueryListStruct) {
 	if err := d.validatePutQueryListParameters(value); err != nil {
 		panic(err)
 	}

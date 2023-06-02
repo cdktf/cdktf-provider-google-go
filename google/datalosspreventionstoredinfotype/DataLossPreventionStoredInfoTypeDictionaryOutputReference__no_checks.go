@@ -48,7 +48,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) validatePutWordListParameters(value *DataLossPreventionStoredInfoTypeDictionaryWordList) error {
+func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryOutputReference) validatePutWordListParameters(value *DataLossPreventionStoredInfoTypeDictionaryWordListStruct) error {
 	return nil
 }
 
