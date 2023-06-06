@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource}.
 type AccessContextManagerServicePerimeterResource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterResource) TimeoutsInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource} Resource.
 func NewAccessContextManagerServicePerimeterResource(scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterResourceConfig) AccessContextManagerServicePerimeterResource {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewAccessContextManagerServicePerimeterResource(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource} Resource.
 func NewAccessContextManagerServicePerimeterResource_Override(a AccessContextManagerServicePerimeterResource, scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterResourceConfig) {
 	_init_.Initialize()
 

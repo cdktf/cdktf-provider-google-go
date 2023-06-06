@@ -9,12 +9,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule}.
 type ComputeForwardingRule interface {
 	cdktf.TerraformResource
 	AllowGlobalAccess() interface{}
 	SetAllowGlobalAccess(val interface{})
 	AllowGlobalAccessInput() interface{}
+	AllowPscGlobalAccess() interface{}
+	SetAllowPscGlobalAccess(val interface{})
+	AllowPscGlobalAccessInput() interface{}
 	AllPorts() interface{}
 	SetAllPorts(val interface{})
 	AllPortsInput() interface{}
@@ -160,6 +163,7 @@ type ComputeForwardingRule interface {
 	PutServiceDirectoryRegistrations(value *ComputeForwardingRuleServiceDirectoryRegistrations)
 	PutTimeouts(value *ComputeForwardingRuleTimeouts)
 	ResetAllowGlobalAccess()
+	ResetAllowPscGlobalAccess()
 	ResetAllPorts()
 	ResetBackendService()
 	ResetDescription()
@@ -214,6 +218,26 @@ func (j *jsiiProxy_ComputeForwardingRule) AllowGlobalAccessInput() interface{} {
 	_jsii_.Get(
 		j,
 		"allowGlobalAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeForwardingRule) AllowPscGlobalAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowPscGlobalAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeForwardingRule) AllowPscGlobalAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowPscGlobalAccessInput",
 		&returns,
 	)
 	return returns
@@ -890,7 +914,7 @@ func (j *jsiiProxy_ComputeForwardingRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewComputeForwardingRule(scope constructs.Construct, id *string, config *ComputeForwardingRuleConfig) ComputeForwardingRule {
 	_init_.Initialize()
 
@@ -908,7 +932,7 @@ func NewComputeForwardingRule(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewComputeForwardingRule_Override(c ComputeForwardingRule, scope constructs.Construct, id *string, config *ComputeForwardingRuleConfig) {
 	_init_.Initialize()
 
@@ -926,6 +950,17 @@ func (j *jsiiProxy_ComputeForwardingRule)SetAllowGlobalAccess(val interface{}) {
 	_jsii_.Set(
 		j,
 		"allowGlobalAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeForwardingRule)SetAllowPscGlobalAccess(val interface{}) {
+	if err := j.validateSetAllowPscGlobalAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowPscGlobalAccess",
 		val,
 	)
 }
@@ -1510,6 +1545,14 @@ func (c *jsiiProxy_ComputeForwardingRule) ResetAllowGlobalAccess() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAllowGlobalAccess",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeForwardingRule) ResetAllowPscGlobalAccess() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAllowPscGlobalAccess",
 		nil, // no parameters
 	)
 }

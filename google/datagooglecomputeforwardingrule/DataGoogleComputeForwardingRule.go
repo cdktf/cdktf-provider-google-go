@@ -9,10 +9,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/data-sources/compute_forwarding_rule google_compute_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/data-sources/compute_forwarding_rule google_compute_forwarding_rule}.
 type DataGoogleComputeForwardingRule interface {
 	cdktf.TerraformDataSource
 	AllowGlobalAccess() cdktf.IResolvable
+	AllowPscGlobalAccess() cdktf.IResolvable
 	AllPorts() cdktf.IResolvable
 	BackendService() *string
 	BaseForwardingRule() *string
@@ -138,6 +139,16 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule) AllowGlobalAccess() cdktf.IR
 	_jsii_.Get(
 		j,
 		"allowGlobalAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeForwardingRule) AllowPscGlobalAccess() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowPscGlobalAccess",
 		&returns,
 	)
 	return returns
@@ -604,7 +615,7 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/data-sources/compute_forwarding_rule google_compute_forwarding_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/data-sources/compute_forwarding_rule google_compute_forwarding_rule} Data Source.
 func NewDataGoogleComputeForwardingRule(scope constructs.Construct, id *string, config *DataGoogleComputeForwardingRuleConfig) DataGoogleComputeForwardingRule {
 	_init_.Initialize()
 
@@ -622,7 +633,7 @@ func NewDataGoogleComputeForwardingRule(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/data-sources/compute_forwarding_rule google_compute_forwarding_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/data-sources/compute_forwarding_rule google_compute_forwarding_rule} Data Source.
 func NewDataGoogleComputeForwardingRule_Override(d DataGoogleComputeForwardingRule, scope constructs.Construct, id *string, config *DataGoogleComputeForwardingRuleConfig) {
 	_init_.Initialize()
 

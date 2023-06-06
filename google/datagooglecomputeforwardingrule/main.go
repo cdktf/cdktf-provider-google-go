@@ -13,6 +13,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowGlobalAccess", GoGetter: "AllowGlobalAccess"},
+			_jsii_.MemberProperty{JsiiProperty: "allowPscGlobalAccess", GoGetter: "AllowPscGlobalAccess"},
 			_jsii_.MemberProperty{JsiiProperty: "allPorts", GoGetter: "AllPorts"},
 			_jsii_.MemberProperty{JsiiProperty: "backendService", GoGetter: "BackendService"},
 			_jsii_.MemberProperty{JsiiProperty: "baseForwardingRule", GoGetter: "BaseForwardingRule"},

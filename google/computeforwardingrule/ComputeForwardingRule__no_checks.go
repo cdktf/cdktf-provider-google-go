@@ -76,6 +76,10 @@ func (j *jsiiProxy_ComputeForwardingRule) validateSetAllowGlobalAccessParameters
 	return nil
 }
 
+func (j *jsiiProxy_ComputeForwardingRule) validateSetAllowPscGlobalAccessParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeForwardingRule) validateSetAllPortsParameters(val interface{}) error {
 	return nil
 }

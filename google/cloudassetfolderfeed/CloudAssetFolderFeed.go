@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/cloud_asset_folder_feed google_cloud_asset_folder_feed}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/cloud_asset_folder_feed google_cloud_asset_folder_feed}.
 type CloudAssetFolderFeed interface {
 	cdktf.TerraformResource
 	AssetNames() *[]*string
@@ -520,7 +520,7 @@ func (j *jsiiProxy_CloudAssetFolderFeed) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/cloud_asset_folder_feed google_cloud_asset_folder_feed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/cloud_asset_folder_feed google_cloud_asset_folder_feed} Resource.
 func NewCloudAssetFolderFeed(scope constructs.Construct, id *string, config *CloudAssetFolderFeedConfig) CloudAssetFolderFeed {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewCloudAssetFolderFeed(scope constructs.Construct, id *string, config *Clo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/cloud_asset_folder_feed google_cloud_asset_folder_feed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/cloud_asset_folder_feed google_cloud_asset_folder_feed} Resource.
 func NewCloudAssetFolderFeed_Override(c CloudAssetFolderFeed, scope constructs.Construct, id *string, config *CloudAssetFolderFeedConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy}.
 type MonitoringAlertPolicy interface {
 	cdktf.TerraformResource
 	AlertStrategy() MonitoringAlertPolicyAlertStrategyOutputReference
@@ -545,7 +545,7 @@ func (j *jsiiProxy_MonitoringAlertPolicy) UserLabelsInput() *map[string]*string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy} Resource.
 func NewMonitoringAlertPolicy(scope constructs.Construct, id *string, config *MonitoringAlertPolicyConfig) MonitoringAlertPolicy {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewMonitoringAlertPolicy(scope constructs.Construct, id *string, config *Mo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.67.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy} Resource.
 func NewMonitoringAlertPolicy_Override(m MonitoringAlertPolicy, scope constructs.Construct, id *string, config *MonitoringAlertPolicyConfig) {
 	_init_.Initialize()
 
