@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/data-sources/compute_region_instance_group google_compute_region_instance_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/compute_region_instance_group google_compute_region_instance_group}.
 type DataGoogleComputeRegionInstanceGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceGroup) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/data-sources/compute_region_instance_group google_compute_region_instance_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/compute_region_instance_group google_compute_region_instance_group} Data Source.
 func NewDataGoogleComputeRegionInstanceGroup(scope constructs.Construct, id *string, config *DataGoogleComputeRegionInstanceGroupConfig) DataGoogleComputeRegionInstanceGroup {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDataGoogleComputeRegionInstanceGroup(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/data-sources/compute_region_instance_group google_compute_region_instance_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/compute_region_instance_group google_compute_region_instance_group} Data Source.
 func NewDataGoogleComputeRegionInstanceGroup_Override(d DataGoogleComputeRegionInstanceGroup, scope constructs.Construct, id *string, config *DataGoogleComputeRegionInstanceGroupConfig) {
 	_init_.Initialize()
 

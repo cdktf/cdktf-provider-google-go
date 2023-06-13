@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template}.
 type DataLossPreventionDeidentifyTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -68,6 +68,9 @@ type DataLossPreventionDeidentifyTemplate interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	TemplateId() *string
+	SetTemplateId(val *string)
+	TemplateIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -110,6 +113,7 @@ type DataLossPreventionDeidentifyTemplate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTemplateId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -376,6 +380,26 @@ func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) RawOverrides() interfac
 	return returns
 }
 
+func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) TemplateId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"templateId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) TemplateIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"templateIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -437,7 +461,7 @@ func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
 func NewDataLossPreventionDeidentifyTemplate(scope constructs.Construct, id *string, config *DataLossPreventionDeidentifyTemplateConfig) DataLossPreventionDeidentifyTemplate {
 	_init_.Initialize()
 
@@ -455,7 +479,7 @@ func NewDataLossPreventionDeidentifyTemplate(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
 func NewDataLossPreventionDeidentifyTemplate_Override(d DataLossPreventionDeidentifyTemplate, scope constructs.Construct, id *string, config *DataLossPreventionDeidentifyTemplateConfig) {
 	_init_.Initialize()
 
@@ -574,6 +598,17 @@ func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate)SetProvisioners(val *[]i
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate)SetTemplateId(val *string) {
+	if err := j.validateSetTemplateIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"templateId",
 		val,
 	)
 }
@@ -894,6 +929,14 @@ func (d *jsiiProxy_DataLossPreventionDeidentifyTemplate) ResetOverrideLogicalId(
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionDeidentifyTemplate) ResetTemplateId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTemplateId",
 		nil, // no parameters
 	)
 }

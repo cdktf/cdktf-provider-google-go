@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/data_loss_prevention_stored_info_type google_data_loss_prevention_stored_info_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/data_loss_prevention_stored_info_type google_data_loss_prevention_stored_info_type}.
 type DataLossPreventionStoredInfoType interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -71,6 +71,9 @@ type DataLossPreventionStoredInfoType interface {
 	RawOverrides() interface{}
 	Regex() DataLossPreventionStoredInfoTypeRegexOutputReference
 	RegexInput() *DataLossPreventionStoredInfoTypeRegex
+	StoredInfoTypeId() *string
+	SetStoredInfoTypeId(val *string)
+	StoredInfoTypeIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -117,6 +120,7 @@ type DataLossPreventionStoredInfoType interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegex()
+	ResetStoredInfoTypeId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -413,6 +417,26 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType) RegexInput() *DataLossPreve
 	return returns
 }
 
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) StoredInfoTypeId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storedInfoTypeId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) StoredInfoTypeIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storedInfoTypeIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataLossPreventionStoredInfoType) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -464,7 +488,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/data_loss_prevention_stored_info_type google_data_loss_prevention_stored_info_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/data_loss_prevention_stored_info_type google_data_loss_prevention_stored_info_type} Resource.
 func NewDataLossPreventionStoredInfoType(scope constructs.Construct, id *string, config *DataLossPreventionStoredInfoTypeConfig) DataLossPreventionStoredInfoType {
 	_init_.Initialize()
 
@@ -482,7 +506,7 @@ func NewDataLossPreventionStoredInfoType(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/data_loss_prevention_stored_info_type google_data_loss_prevention_stored_info_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/data_loss_prevention_stored_info_type google_data_loss_prevention_stored_info_type} Resource.
 func NewDataLossPreventionStoredInfoType_Override(d DataLossPreventionStoredInfoType, scope constructs.Construct, id *string, config *DataLossPreventionStoredInfoTypeConfig) {
 	_init_.Initialize()
 
@@ -601,6 +625,17 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetProvisioners(val *[]inter
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLossPreventionStoredInfoType)SetStoredInfoTypeId(val *string) {
+	if err := j.validateSetStoredInfoTypeIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storedInfoTypeId",
 		val,
 	)
 }
@@ -967,6 +1002,14 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoType) ResetRegex() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRegex",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionStoredInfoType) ResetStoredInfoTypeId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStoredInfoTypeId",
 		nil, // no parameters
 	)
 }

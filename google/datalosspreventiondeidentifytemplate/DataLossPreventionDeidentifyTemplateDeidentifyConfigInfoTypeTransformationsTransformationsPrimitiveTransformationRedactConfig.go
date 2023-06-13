@@ -1,0 +1,6 @@
+package datalosspreventiondeidentifytemplate
+
+
+type DataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationRedactConfig struct {
+}
+

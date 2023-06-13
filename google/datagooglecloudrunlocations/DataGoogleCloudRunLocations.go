@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/data-sources/cloud_run_locations google_cloud_run_locations}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/cloud_run_locations google_cloud_run_locations}.
 type DataGoogleCloudRunLocations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataGoogleCloudRunLocations) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/data-sources/cloud_run_locations google_cloud_run_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/cloud_run_locations google_cloud_run_locations} Data Source.
 func NewDataGoogleCloudRunLocations(scope constructs.Construct, id *string, config *DataGoogleCloudRunLocationsConfig) DataGoogleCloudRunLocations {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataGoogleCloudRunLocations(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/data-sources/cloud_run_locations google_cloud_run_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/cloud_run_locations google_cloud_run_locations} Data Source.
 func NewDataGoogleCloudRunLocations_Override(d DataGoogleCloudRunLocations, scope constructs.Construct, id *string, config *DataGoogleCloudRunLocationsConfig) {
 	_init_.Initialize()
 

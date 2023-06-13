@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/data-sources/billing_account google_billing_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/billing_account google_billing_account}.
 type DataGoogleBillingAccount interface {
 	cdktf.TerraformDataSource
 	BillingAccount() *string
@@ -45,6 +45,9 @@ type DataGoogleBillingAccount interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LookupProjects() interface{}
+	SetLookupProjects(val interface{})
+	LookupProjectsInput() interface{}
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -92,6 +95,7 @@ type DataGoogleBillingAccount interface {
 	ResetBillingAccount()
 	ResetDisplayName()
 	ResetId()
+	ResetLookupProjects()
 	ResetOpen()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -251,6 +255,26 @@ func (j *jsiiProxy_DataGoogleBillingAccount) Lifecycle() *cdktf.TerraformResourc
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleBillingAccount) LookupProjects() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lookupProjects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleBillingAccount) LookupProjectsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lookupProjectsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleBillingAccount) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -352,7 +376,7 @@ func (j *jsiiProxy_DataGoogleBillingAccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/data-sources/billing_account google_billing_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/billing_account google_billing_account} Data Source.
 func NewDataGoogleBillingAccount(scope constructs.Construct, id *string, config *DataGoogleBillingAccountConfig) DataGoogleBillingAccount {
 	_init_.Initialize()
 
@@ -370,7 +394,7 @@ func NewDataGoogleBillingAccount(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/data-sources/billing_account google_billing_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/billing_account google_billing_account} Data Source.
 func NewDataGoogleBillingAccount_Override(d DataGoogleBillingAccount, scope constructs.Construct, id *string, config *DataGoogleBillingAccountConfig) {
 	_init_.Initialize()
 
@@ -448,6 +472,17 @@ func (j *jsiiProxy_DataGoogleBillingAccount)SetLifecycle(val *cdktf.TerraformRes
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGoogleBillingAccount)SetLookupProjects(val interface{}) {
+	if err := j.validateSetLookupProjectsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lookupProjects",
 		val,
 	)
 }
@@ -757,6 +792,14 @@ func (d *jsiiProxy_DataGoogleBillingAccount) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGoogleBillingAccount) ResetLookupProjects() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLookupProjects",
 		nil, // no parameters
 	)
 }

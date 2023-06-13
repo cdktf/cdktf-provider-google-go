@@ -73,6 +73,7 @@ type DataLossPreventionJobTriggerInspectJobOutputReference interface {
 	PutActions(value interface{})
 	PutInspectConfig(value *DataLossPreventionJobTriggerInspectJobInspectConfig)
 	PutStorageConfig(value *DataLossPreventionJobTriggerInspectJobStorageConfig)
+	ResetActions()
 	ResetInspectConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -549,6 +550,14 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) PutSto
 		d,
 		"putStorageConfig",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) ResetActions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetActions",
+		nil, // no parameters
 	)
 }
 

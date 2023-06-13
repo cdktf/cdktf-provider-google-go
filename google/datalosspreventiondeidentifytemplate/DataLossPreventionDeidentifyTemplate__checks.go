@@ -333,6 +333,14 @@ func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) validateSetProvisioners
 	return nil
 }
 
+func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) validateSetTemplateIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataLossPreventionDeidentifyTemplateParameters(scope constructs.Construct, id *string, config *DataLossPreventionDeidentifyTemplateConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

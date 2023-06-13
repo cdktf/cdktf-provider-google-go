@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template}.
 type DataLossPreventionInspectTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,9 @@ type DataLossPreventionInspectTemplate interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	TemplateId() *string
+	SetTemplateId(val *string)
+	TemplateIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -109,6 +112,7 @@ type DataLossPreventionInspectTemplate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTemplateId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -365,6 +369,26 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplate) RawOverrides() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_DataLossPreventionInspectTemplate) TemplateId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"templateId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionInspectTemplate) TemplateIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"templateIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataLossPreventionInspectTemplate) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -416,7 +440,7 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplate) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template} Resource.
 func NewDataLossPreventionInspectTemplate(scope constructs.Construct, id *string, config *DataLossPreventionInspectTemplateConfig) DataLossPreventionInspectTemplate {
 	_init_.Initialize()
 
@@ -434,7 +458,7 @@ func NewDataLossPreventionInspectTemplate(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.68.0/docs/resources/data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template} Resource.
 func NewDataLossPreventionInspectTemplate_Override(d DataLossPreventionInspectTemplate, scope constructs.Construct, id *string, config *DataLossPreventionInspectTemplateConfig) {
 	_init_.Initialize()
 
@@ -553,6 +577,17 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplate)SetProvisioners(val *[]inte
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLossPreventionInspectTemplate)SetTemplateId(val *string) {
+	if err := j.validateSetTemplateIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"templateId",
 		val,
 	)
 }
@@ -881,6 +916,14 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplate) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionInspectTemplate) ResetTemplateId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTemplateId",
 		nil, // no parameters
 	)
 }

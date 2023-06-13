@@ -112,6 +112,10 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoType) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_DataLossPreventionStoredInfoType) validateSetStoredInfoTypeIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataLossPreventionStoredInfoTypeParameters(scope constructs.Construct, id *string, config *DataLossPreventionStoredInfoTypeConfig) error {
 	return nil
 }

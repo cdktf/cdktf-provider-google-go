@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataGoogleBillingAccount) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleBillingAccount) validateSetLookupProjectsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleBillingAccount) validateSetOpenParameters(val interface{}) error {
 	return nil
 }

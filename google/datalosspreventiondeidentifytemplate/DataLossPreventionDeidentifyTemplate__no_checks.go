@@ -104,6 +104,10 @@ func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) validateSetProvisioners
 	return nil
 }
 
+func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) validateSetTemplateIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataLossPreventionDeidentifyTemplateParameters(scope constructs.Construct, id *string, config *DataLossPreventionDeidentifyTemplateConfig) error {
 	return nil
 }

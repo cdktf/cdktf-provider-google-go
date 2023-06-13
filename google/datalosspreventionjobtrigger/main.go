@@ -2127,6 +2127,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putActions", GoMethod: "PutActions"},
 			_jsii_.MemberMethod{JsiiMethod: "putInspectConfig", GoMethod: "PutInspectConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putStorageConfig", GoMethod: "PutStorageConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetActions", GoMethod: "ResetActions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInspectConfig", GoMethod: "ResetInspectConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "storageConfig", GoGetter: "StorageConfig"},
