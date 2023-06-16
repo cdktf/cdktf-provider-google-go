@@ -181,6 +181,8 @@ func (j *jsiiProxy_CloudiotRegistryTimeoutsOutputReference) validateSetDeletePar
 
 func (j *jsiiProxy_CloudiotRegistryTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CloudiotRegistryTimeouts:
 		val := val.(*CloudiotRegistryTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_CloudiotRegistryTimeoutsOutputReference) validateSetInternalV
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CloudiotRegistryTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CloudiotRegistryTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

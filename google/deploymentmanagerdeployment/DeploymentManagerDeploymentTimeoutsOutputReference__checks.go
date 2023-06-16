@@ -181,6 +181,8 @@ func (j *jsiiProxy_DeploymentManagerDeploymentTimeoutsOutputReference) validateS
 
 func (j *jsiiProxy_DeploymentManagerDeploymentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DeploymentManagerDeploymentTimeouts:
 		val := val.(*DeploymentManagerDeploymentTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_DeploymentManagerDeploymentTimeoutsOutputReference) validateS
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DeploymentManagerDeploymentTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DeploymentManagerDeploymentTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

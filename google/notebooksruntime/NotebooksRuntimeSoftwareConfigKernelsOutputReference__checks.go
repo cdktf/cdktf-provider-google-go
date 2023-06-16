@@ -165,6 +165,8 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsOutputReference) validat
 
 func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *NotebooksRuntimeSoftwareConfigKernels:
 		val := val.(*NotebooksRuntimeSoftwareConfigKernels)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsOutputReference) validat
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *NotebooksRuntimeSoftwareConfigKernels, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *NotebooksRuntimeSoftwareConfigKernels; received %#v (a %T)", val, val)
 		}
 	}
 

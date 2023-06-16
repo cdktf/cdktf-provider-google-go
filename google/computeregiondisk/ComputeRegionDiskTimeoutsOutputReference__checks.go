@@ -181,6 +181,8 @@ func (j *jsiiProxy_ComputeRegionDiskTimeoutsOutputReference) validateSetDeletePa
 
 func (j *jsiiProxy_ComputeRegionDiskTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ComputeRegionDiskTimeouts:
 		val := val.(*ComputeRegionDiskTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_ComputeRegionDiskTimeoutsOutputReference) validateSetInternal
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ComputeRegionDiskTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ComputeRegionDiskTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

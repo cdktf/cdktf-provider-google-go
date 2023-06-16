@@ -181,6 +181,8 @@ func (j *jsiiProxy_ComputeRegionUrlMapHostRuleOutputReference) validateSetHostsP
 
 func (j *jsiiProxy_ComputeRegionUrlMapHostRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ComputeRegionUrlMapHostRule:
 		val := val.(*ComputeRegionUrlMapHostRule)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_ComputeRegionUrlMapHostRuleOutputReference) validateSetIntern
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ComputeRegionUrlMapHostRule, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ComputeRegionUrlMapHostRule; received %#v (a %T)", val, val)
 		}
 	}
 

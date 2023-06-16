@@ -189,6 +189,8 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) valid
 
 func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ComputeInstanceFromTemplateAttachedDisk:
 		val := val.(*ComputeInstanceFromTemplateAttachedDisk)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -200,11 +202,9 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) valid
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ComputeInstanceFromTemplateAttachedDisk, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ComputeInstanceFromTemplateAttachedDisk; received %#v (a %T)", val, val)
 		}
 	}
 

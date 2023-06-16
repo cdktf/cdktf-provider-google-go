@@ -49,7 +49,7 @@ type SqlUserConfig struct {
 	// The password for the user.
 	//
 	// Can be updated. For Postgres instances this is a Required field, unless type is set to
-	//              either CLOUD_IAM_USER or CLOUD_IAM_SERVICE_ACCOUNT.
+	//             either CLOUD_IAM_USER or CLOUD_IAM_SERVICE_ACCOUNT.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/sql_user#password SqlUser#password}
 	Password *string `field:"optional" json:"password" yaml:"password"`
@@ -70,7 +70,7 @@ type SqlUserConfig struct {
 	// The user type.
 	//
 	// It determines the method to authenticate the user during login.
-	//              The default is the database's built-in user type. Flags include "BUILT_IN", "CLOUD_IAM_USER", or "CLOUD_IAM_SERVICE_ACCOUNT".
+	//             The default is the database's built-in user type. Flags include "BUILT_IN", "CLOUD_IAM_USER", or "CLOUD_IAM_SERVICE_ACCOUNT".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/sql_user#type SqlUser#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`

@@ -181,6 +181,8 @@ func (j *jsiiProxy_ComputeNodeGroupTimeoutsOutputReference) validateSetDeletePar
 
 func (j *jsiiProxy_ComputeNodeGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ComputeNodeGroupTimeouts:
 		val := val.(*ComputeNodeGroupTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_ComputeNodeGroupTimeoutsOutputReference) validateSetInternalV
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ComputeNodeGroupTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ComputeNodeGroupTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -165,6 +165,8 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHt
 
 func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHeaders:
 		val := val.(*CloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHeaders)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHeaders, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHeaders; received %#v (a %T)", val, val)
 		}
 	}
 

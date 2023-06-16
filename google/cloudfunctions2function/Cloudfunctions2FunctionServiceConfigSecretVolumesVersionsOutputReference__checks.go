@@ -165,6 +165,8 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutp
 
 func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *Cloudfunctions2FunctionServiceConfigSecretVolumesVersions:
 		val := val.(*Cloudfunctions2FunctionServiceConfigSecretVolumesVersions)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutp
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *Cloudfunctions2FunctionServiceConfigSecretVolumesVersions, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *Cloudfunctions2FunctionServiceConfigSecretVolumesVersions; received %#v (a %T)", val, val)
 		}
 	}
 

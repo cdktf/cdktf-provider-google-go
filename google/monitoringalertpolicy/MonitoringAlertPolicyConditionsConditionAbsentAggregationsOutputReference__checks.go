@@ -189,6 +189,8 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentAggregationsOut
 
 func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *MonitoringAlertPolicyConditionsConditionAbsentAggregations:
 		val := val.(*MonitoringAlertPolicyConditionsConditionAbsentAggregations)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -200,11 +202,9 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentAggregationsOut
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *MonitoringAlertPolicyConditionsConditionAbsentAggregations, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *MonitoringAlertPolicyConditionsConditionAbsentAggregations; received %#v (a %T)", val, val)
 		}
 	}
 

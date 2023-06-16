@@ -173,6 +173,8 @@ func (j *jsiiProxy_AppEngineApplicationUrlDispatchRulesDispatchRulesOutputRefere
 
 func (j *jsiiProxy_AppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AppEngineApplicationUrlDispatchRulesDispatchRules:
 		val := val.(*AppEngineApplicationUrlDispatchRulesDispatchRules)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_AppEngineApplicationUrlDispatchRulesDispatchRulesOutputRefere
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AppEngineApplicationUrlDispatchRulesDispatchRules, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AppEngineApplicationUrlDispatchRulesDispatchRules; received %#v (a %T)", val, val)
 		}
 	}
 

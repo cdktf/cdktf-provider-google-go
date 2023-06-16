@@ -181,6 +181,8 @@ func (j *jsiiProxy_ContainerAzureNodePoolTimeoutsOutputReference) validateSetDel
 
 func (j *jsiiProxy_ContainerAzureNodePoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ContainerAzureNodePoolTimeouts:
 		val := val.(*ContainerAzureNodePoolTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_ContainerAzureNodePoolTimeoutsOutputReference) validateSetInt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ContainerAzureNodePoolTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ContainerAzureNodePoolTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

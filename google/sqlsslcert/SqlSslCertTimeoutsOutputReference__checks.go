@@ -181,6 +181,8 @@ func (j *jsiiProxy_SqlSslCertTimeoutsOutputReference) validateSetDeleteParameter
 
 func (j *jsiiProxy_SqlSslCertTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *SqlSslCertTimeouts:
 		val := val.(*SqlSslCertTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_SqlSslCertTimeoutsOutputReference) validateSetInternalValuePa
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *SqlSslCertTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SqlSslCertTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

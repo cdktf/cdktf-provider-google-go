@@ -181,6 +181,8 @@ func (j *jsiiProxy_AppEngineFirewallRuleTimeoutsOutputReference) validateSetDele
 
 func (j *jsiiProxy_AppEngineFirewallRuleTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AppEngineFirewallRuleTimeouts:
 		val := val.(*AppEngineFirewallRuleTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_AppEngineFirewallRuleTimeoutsOutputReference) validateSetInte
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AppEngineFirewallRuleTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AppEngineFirewallRuleTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

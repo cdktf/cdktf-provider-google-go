@@ -196,6 +196,8 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigAdditionalExtens
 
 func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigAdditionalExtensionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *PrivatecaCertificateAuthorityConfigX509ConfigAdditionalExtensions:
 		val := val.(*PrivatecaCertificateAuthorityConfigX509ConfigAdditionalExtensions)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -207,11 +209,9 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigAdditionalExtens
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *PrivatecaCertificateAuthorityConfigX509ConfigAdditionalExtensions, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PrivatecaCertificateAuthorityConfigX509ConfigAdditionalExtensions; received %#v (a %T)", val, val)
 		}
 	}
 

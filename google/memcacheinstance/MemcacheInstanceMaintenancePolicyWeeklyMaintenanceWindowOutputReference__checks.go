@@ -192,6 +192,8 @@ func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 
 func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow:
 		val := val.(*MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -203,11 +205,9 @@ func (j *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow; received %#v (a %T)", val, val)
 		}
 	}
 

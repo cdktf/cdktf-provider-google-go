@@ -187,6 +187,8 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) validateSetC
 
 func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CloudRunV2ServiceTemplateVolumes:
 		val := val.(*CloudRunV2ServiceTemplateVolumes)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -198,11 +200,9 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) validateSetI
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CloudRunV2ServiceTemplateVolumes, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CloudRunV2ServiceTemplateVolumes; received %#v (a %T)", val, val)
 		}
 	}
 

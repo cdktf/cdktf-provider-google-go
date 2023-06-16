@@ -209,6 +209,8 @@ func (j *jsiiProxy_DataCatalogTagFieldsOutputReference) validateSetFieldNamePara
 
 func (j *jsiiProxy_DataCatalogTagFieldsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataCatalogTagFields:
 		val := val.(*DataCatalogTagFields)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -220,11 +222,9 @@ func (j *jsiiProxy_DataCatalogTagFieldsOutputReference) validateSetInternalValue
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataCatalogTagFields, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataCatalogTagFields; received %#v (a %T)", val, val)
 		}
 	}
 

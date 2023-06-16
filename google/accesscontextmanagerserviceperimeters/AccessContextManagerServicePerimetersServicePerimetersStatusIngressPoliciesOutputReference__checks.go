@@ -187,6 +187,8 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusI
 
 func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies:
 		val := val.(*AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -198,11 +200,9 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusI
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies; received %#v (a %T)", val, val)
 		}
 	}
 

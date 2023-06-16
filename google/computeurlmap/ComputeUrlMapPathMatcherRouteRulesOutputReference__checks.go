@@ -229,6 +229,8 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) validateSe
 
 func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ComputeUrlMapPathMatcherRouteRules:
 		val := val.(*ComputeUrlMapPathMatcherRouteRules)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -240,11 +242,9 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesOutputReference) validateSe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ComputeUrlMapPathMatcherRouteRules, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ComputeUrlMapPathMatcherRouteRules; received %#v (a %T)", val, val)
 		}
 	}
 

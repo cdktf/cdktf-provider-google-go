@@ -2,10 +2,10 @@ package computeperinstanceconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v7/computeperinstanceconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v8/computeperinstanceconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

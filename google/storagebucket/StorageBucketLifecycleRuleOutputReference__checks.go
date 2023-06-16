@@ -187,6 +187,8 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleOutputReference) validateSetComplex
 
 func (j *jsiiProxy_StorageBucketLifecycleRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *StorageBucketLifecycleRule:
 		val := val.(*StorageBucketLifecycleRule)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -198,11 +200,9 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleOutputReference) validateSetInterna
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *StorageBucketLifecycleRule, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *StorageBucketLifecycleRule; received %#v (a %T)", val, val)
 		}
 	}
 

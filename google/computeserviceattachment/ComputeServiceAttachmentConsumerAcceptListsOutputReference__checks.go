@@ -173,6 +173,8 @@ func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) v
 
 func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ComputeServiceAttachmentConsumerAcceptLists:
 		val := val.(*ComputeServiceAttachmentConsumerAcceptLists)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) v
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ComputeServiceAttachmentConsumerAcceptLists, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ComputeServiceAttachmentConsumerAcceptLists; received %#v (a %T)", val, val)
 		}
 	}
 

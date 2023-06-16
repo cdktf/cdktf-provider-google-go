@@ -181,6 +181,8 @@ func (j *jsiiProxy_FirebaserulesRulesetTimeoutsOutputReference) validateSetDelet
 
 func (j *jsiiProxy_FirebaserulesRulesetTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *FirebaserulesRulesetTimeouts:
 		val := val.(*FirebaserulesRulesetTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_FirebaserulesRulesetTimeoutsOutputReference) validateSetInter
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *FirebaserulesRulesetTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *FirebaserulesRulesetTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

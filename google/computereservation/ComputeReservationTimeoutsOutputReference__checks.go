@@ -181,6 +181,8 @@ func (j *jsiiProxy_ComputeReservationTimeoutsOutputReference) validateSetDeleteP
 
 func (j *jsiiProxy_ComputeReservationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ComputeReservationTimeouts:
 		val := val.(*ComputeReservationTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_ComputeReservationTimeoutsOutputReference) validateSetInterna
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ComputeReservationTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ComputeReservationTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

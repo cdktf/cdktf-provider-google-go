@@ -19,7 +19,7 @@ type DataGoogleMonitoringIstioCanonicalServiceConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The name of the canonical service underlying this service..                       Corresponds to the destination_service_name metric label in Istio metrics.
+	// The name of the canonical service underlying this service..                      Corresponds to the destination_service_name metric label in Istio metrics.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/monitoring_istio_canonical_service#canonical_service DataGoogleMonitoringIstioCanonicalService#canonical_service}
 	CanonicalService *string `field:"required" json:"canonicalService" yaml:"canonicalService"`

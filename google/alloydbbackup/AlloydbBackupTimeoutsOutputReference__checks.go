@@ -181,6 +181,8 @@ func (j *jsiiProxy_AlloydbBackupTimeoutsOutputReference) validateSetDeleteParame
 
 func (j *jsiiProxy_AlloydbBackupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AlloydbBackupTimeouts:
 		val := val.(*AlloydbBackupTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_AlloydbBackupTimeoutsOutputReference) validateSetInternalValu
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AlloydbBackupTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AlloydbBackupTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

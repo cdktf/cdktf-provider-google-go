@@ -95,13 +95,13 @@ type IamWorkloadIdentityPoolProviderConfig struct {
 	// - If no attribute mapping is defined, the following default mapping applies:
 	// ```
 	// {
-	//    "google.subject":"assertion.arn",
-	//    "attribute.aws_role":
-	//      "assertion.arn.contains('assumed-role')"
-	//      " ? assertion.arn.extract('{account_arn}assumed-role/')"
-	//      "   + 'assumed-role/'"
-	//      "   + assertion.arn.extract('assumed-role/{role_name}/')"
-	//      " : assertion.arn",
+	//   "google.subject":"assertion.arn",
+	//   "attribute.aws_role":
+	//     "assertion.arn.contains('assumed-role')"
+	//     " ? assertion.arn.extract('{account_arn}assumed-role/')"
+	//     "   + 'assumed-role/'"
+	//     "   + assertion.arn.extract('assumed-role/{role_name}/')"
+	//     " : assertion.arn",
 	// }
 	// ```
 	// - If any custom attribute mappings are defined, they must include a mapping to the

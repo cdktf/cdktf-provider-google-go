@@ -181,6 +181,8 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryTimeoutsOutputReference) validateSe
 
 func (j *jsiiProxy_ArtifactRegistryRepositoryTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ArtifactRegistryRepositoryTimeouts:
 		val := val.(*ArtifactRegistryRepositoryTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryTimeoutsOutputReference) validateSe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ArtifactRegistryRepositoryTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ArtifactRegistryRepositoryTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

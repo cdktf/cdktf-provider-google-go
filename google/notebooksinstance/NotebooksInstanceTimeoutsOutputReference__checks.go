@@ -181,6 +181,8 @@ func (j *jsiiProxy_NotebooksInstanceTimeoutsOutputReference) validateSetDeletePa
 
 func (j *jsiiProxy_NotebooksInstanceTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *NotebooksInstanceTimeouts:
 		val := val.(*NotebooksInstanceTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_NotebooksInstanceTimeoutsOutputReference) validateSetInternal
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *NotebooksInstanceTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *NotebooksInstanceTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

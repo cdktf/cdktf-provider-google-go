@@ -173,6 +173,8 @@ func (j *jsiiProxy_ComputeInstanceScratchDiskOutputReference) validateSetInterfa
 
 func (j *jsiiProxy_ComputeInstanceScratchDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ComputeInstanceScratchDisk:
 		val := val.(*ComputeInstanceScratchDisk)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_ComputeInstanceScratchDiskOutputReference) validateSetInterna
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ComputeInstanceScratchDisk, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ComputeInstanceScratchDisk; received %#v (a %T)", val, val)
 		}
 	}
 

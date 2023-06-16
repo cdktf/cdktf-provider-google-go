@@ -173,6 +173,8 @@ func (j *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputRefe
 
 func (j *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CloudbuildTriggerBuildAvailableSecretsSecretManager:
 		val := val.(*CloudbuildTriggerBuildAvailableSecretsSecretManager)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputRefe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CloudbuildTriggerBuildAvailableSecretsSecretManager, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CloudbuildTriggerBuildAvailableSecretsSecretManager; received %#v (a %T)", val, val)
 		}
 	}
 

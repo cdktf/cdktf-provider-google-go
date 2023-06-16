@@ -165,6 +165,8 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsOutputR
 
 func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ComputeRegionNetworkFirewallPolicyRuleTargetSecureTags:
 		val := val.(*ComputeRegionNetworkFirewallPolicyRuleTargetSecureTags)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsOutputR
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ComputeRegionNetworkFirewallPolicyRuleTargetSecureTags, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ComputeRegionNetworkFirewallPolicyRuleTargetSecureTags; received %#v (a %T)", val, val)
 		}
 	}
 

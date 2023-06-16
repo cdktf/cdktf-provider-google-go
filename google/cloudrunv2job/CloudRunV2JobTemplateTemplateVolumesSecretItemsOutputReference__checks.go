@@ -165,6 +165,8 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesSecretItemsOutputReferenc
 
 func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesSecretItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CloudRunV2JobTemplateTemplateVolumesSecretItems:
 		val := val.(*CloudRunV2JobTemplateTemplateVolumesSecretItems)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesSecretItemsOutputReferenc
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CloudRunV2JobTemplateTemplateVolumesSecretItems, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CloudRunV2JobTemplateTemplateVolumesSecretItems; received %#v (a %T)", val, val)
 		}
 	}
 

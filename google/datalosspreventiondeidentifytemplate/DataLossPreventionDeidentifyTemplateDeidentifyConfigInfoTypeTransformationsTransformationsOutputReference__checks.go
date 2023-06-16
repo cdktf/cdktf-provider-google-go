@@ -207,6 +207,8 @@ func (j *jsiiProxy_DataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeT
 
 func (j *jsiiProxy_DataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformations:
 		val := val.(*DataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformations)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -218,11 +220,9 @@ func (j *jsiiProxy_DataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeT
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformations, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformations; received %#v (a %T)", val, val)
 		}
 	}
 

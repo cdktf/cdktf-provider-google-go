@@ -165,6 +165,8 @@ func (j *jsiiProxy_ContainerAnalysisOccurrenceAttestationSignaturesOutputReferen
 
 func (j *jsiiProxy_ContainerAnalysisOccurrenceAttestationSignaturesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ContainerAnalysisOccurrenceAttestationSignatures:
 		val := val.(*ContainerAnalysisOccurrenceAttestationSignatures)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_ContainerAnalysisOccurrenceAttestationSignaturesOutputReferen
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ContainerAnalysisOccurrenceAttestationSignatures, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ContainerAnalysisOccurrenceAttestationSignatures; received %#v (a %T)", val, val)
 		}
 	}
 

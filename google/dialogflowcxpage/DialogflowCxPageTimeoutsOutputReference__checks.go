@@ -181,6 +181,8 @@ func (j *jsiiProxy_DialogflowCxPageTimeoutsOutputReference) validateSetDeletePar
 
 func (j *jsiiProxy_DialogflowCxPageTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DialogflowCxPageTimeouts:
 		val := val.(*DialogflowCxPageTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_DialogflowCxPageTimeoutsOutputReference) validateSetInternalV
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DialogflowCxPageTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DialogflowCxPageTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 
