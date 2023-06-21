@@ -32,6 +32,8 @@ type DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoTypeOutput
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	SensitivityScore() DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoTypeSensitivityScoreOutputReference
+	SensitivityScoreInput() *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoTypeSensitivityScore
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +69,8 @@ type DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoTypeOutput
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSensitivityScore(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoTypeSensitivityScore)
+	ResetSensitivityScore()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -148,6 +152,26 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypes
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoTypeOutputReference) SensitivityScore() DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoTypeSensitivityScoreOutputReference {
+	var returns DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoTypeSensitivityScoreOutputReference
+	_jsii_.Get(
+		j,
+		"sensitivityScore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoTypeOutputReference) SensitivityScoreInput() *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoTypeSensitivityScore {
+	var returns *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoTypeSensitivityScore
+	_jsii_.Get(
+		j,
+		"sensitivityScoreInput",
 		&returns,
 	)
 	return returns
@@ -482,6 +506,25 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypes
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoTypeOutputReference) PutSensitivityScore(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoTypeSensitivityScore) {
+	if err := d.validatePutSensitivityScoreParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSensitivityScore",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoTypeOutputReference) ResetSensitivityScore() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSensitivityScore",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoTypeOutputReference) ResetVersion() {

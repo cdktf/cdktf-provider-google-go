@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/bigtable_gc_policy google_bigtable_gc_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/bigtable_gc_policy google_bigtable_gc_policy}.
 type BigtableGcPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -86,6 +86,8 @@ type BigtableGcPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() BigtableGcPolicyTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -113,6 +115,7 @@ type BigtableGcPolicy interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMaxAge(value *BigtableGcPolicyMaxAge)
 	PutMaxVersion(value interface{})
+	PutTimeouts(value *BigtableGcPolicyTimeouts)
 	ResetDeletionPolicy()
 	ResetGcRules()
 	ResetId()
@@ -123,6 +126,7 @@ type BigtableGcPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -498,8 +502,28 @@ func (j *jsiiProxy_BigtableGcPolicy) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BigtableGcPolicy) Timeouts() BigtableGcPolicyTimeoutsOutputReference {
+	var returns BigtableGcPolicyTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/bigtable_gc_policy google_bigtable_gc_policy} Resource.
+func (j *jsiiProxy_BigtableGcPolicy) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/bigtable_gc_policy google_bigtable_gc_policy} Resource.
 func NewBigtableGcPolicy(scope constructs.Construct, id *string, config *BigtableGcPolicyConfig) BigtableGcPolicy {
 	_init_.Initialize()
 
@@ -517,7 +541,7 @@ func NewBigtableGcPolicy(scope constructs.Construct, id *string, config *Bigtabl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/bigtable_gc_policy google_bigtable_gc_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/bigtable_gc_policy google_bigtable_gc_policy} Resource.
 func NewBigtableGcPolicy_Override(b BigtableGcPolicy, scope constructs.Construct, id *string, config *BigtableGcPolicyConfig) {
 	_init_.Initialize()
 
@@ -972,6 +996,17 @@ func (b *jsiiProxy_BigtableGcPolicy) PutMaxVersion(value interface{}) {
 	)
 }
 
+func (b *jsiiProxy_BigtableGcPolicy) PutTimeouts(value *BigtableGcPolicyTimeouts) {
+	if err := b.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigtableGcPolicy) ResetDeletionPolicy() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1032,6 +1067,14 @@ func (b *jsiiProxy_BigtableGcPolicy) ResetProject() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigtableGcPolicy) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

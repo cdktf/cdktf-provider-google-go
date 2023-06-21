@@ -32,6 +32,8 @@ type DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesOutputRe
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	SensitivityScore() DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScoreOutputReference
+	SensitivityScoreInput() *DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScore
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +69,8 @@ type DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesOutputRe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSensitivityScore(value *DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScore)
+	ResetSensitivityScore()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -148,6 +152,26 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInf
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesOutputReference) SensitivityScore() DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScoreOutputReference {
+	var returns DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScoreOutputReference
+	_jsii_.Get(
+		j,
+		"sensitivityScore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesOutputReference) SensitivityScoreInput() *DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScore {
+	var returns *DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScore
+	_jsii_.Get(
+		j,
+		"sensitivityScoreInput",
 		&returns,
 	)
 	return returns
@@ -482,6 +506,25 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInf
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesOutputReference) PutSensitivityScore(value *DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScore) {
+	if err := d.validatePutSensitivityScoreParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSensitivityScore",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesOutputReference) ResetSensitivityScore() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSensitivityScore",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesOutputReference) ResetVersion() {

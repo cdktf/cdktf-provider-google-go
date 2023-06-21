@@ -123,6 +123,17 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfo
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesOutputReference) validatePutSensitivityScoreParameters(value *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScore) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesOutputReference) validatePutStoredTypeParameters(value *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesStoredType) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

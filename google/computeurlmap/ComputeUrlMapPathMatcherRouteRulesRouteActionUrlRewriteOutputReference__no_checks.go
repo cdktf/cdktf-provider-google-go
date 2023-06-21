@@ -68,6 +68,10 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutput
 	return nil
 }
 
+func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference) validateSetPathTemplateRewriteParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

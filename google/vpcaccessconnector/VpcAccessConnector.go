@@ -9,11 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/vpc_access_connector google_vpc_access_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/vpc_access_connector google_vpc_access_connector}.
 type VpcAccessConnector interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConnectedProjects() *[]*string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -159,6 +160,16 @@ func (j *jsiiProxy_VpcAccessConnector) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcAccessConnector) ConnectedProjects() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"connectedProjects",
 		&returns,
 	)
 	return returns
@@ -595,7 +606,7 @@ func (j *jsiiProxy_VpcAccessConnector) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/vpc_access_connector google_vpc_access_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/vpc_access_connector google_vpc_access_connector} Resource.
 func NewVpcAccessConnector(scope constructs.Construct, id *string, config *VpcAccessConnectorConfig) VpcAccessConnector {
 	_init_.Initialize()
 
@@ -613,7 +624,7 @@ func NewVpcAccessConnector(scope constructs.Construct, id *string, config *VpcAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/vpc_access_connector google_vpc_access_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/vpc_access_connector google_vpc_access_connector} Resource.
 func NewVpcAccessConnector_Override(v VpcAccessConnector, scope constructs.Construct, id *string, config *VpcAccessConnectorConfig) {
 	_init_.Initialize()
 

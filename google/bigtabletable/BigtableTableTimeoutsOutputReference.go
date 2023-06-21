@@ -40,6 +40,9 @@ type BigtableTableTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -65,6 +68,7 @@ type BigtableTableTimeoutsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -170,6 +174,26 @@ func (j *jsiiProxy_BigtableTableTimeoutsOutputReference) TerraformResource() cdk
 	return returns
 }
 
+func (j *jsiiProxy_BigtableTableTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableTableTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewBigtableTableTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigtableTableTimeoutsOutputReference {
 	_init_.Initialize()
@@ -260,6 +284,17 @@ func (j *jsiiProxy_BigtableTableTimeoutsOutputReference)SetTerraformResource(val
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigtableTableTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -454,6 +489,14 @@ func (b *jsiiProxy_BigtableTableTimeoutsOutputReference) ResetCreate() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetCreate",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigtableTableTimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetUpdate",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/compute_target_instance google_compute_target_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/compute_target_instance google_compute_target_instance}.
 type ComputeTargetInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -474,7 +474,7 @@ func (j *jsiiProxy_ComputeTargetInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/compute_target_instance google_compute_target_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/compute_target_instance google_compute_target_instance} Resource.
 func NewComputeTargetInstance(scope constructs.Construct, id *string, config *ComputeTargetInstanceConfig) ComputeTargetInstance {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewComputeTargetInstance(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/compute_target_instance google_compute_target_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/compute_target_instance google_compute_target_instance} Resource.
 func NewComputeTargetInstance_Override(c ComputeTargetInstance, scope constructs.Construct, id *string, config *ComputeTargetInstanceConfig) {
 	_init_.Initialize()
 

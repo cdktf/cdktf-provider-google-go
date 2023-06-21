@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/cloudfunctions2_function google_cloudfunctions2_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/data-sources/cloudfunctions2_function google_cloudfunctions2_function}.
 type DataGoogleCloudfunctions2Function interface {
 	cdktf.TerraformDataSource
 	BuildConfig() DataGoogleCloudfunctions2FunctionBuildConfigList
@@ -70,6 +70,7 @@ type DataGoogleCloudfunctions2Function interface {
 	// Experimental.
 	TerraformResourceType() *string
 	UpdateTime() *string
+	Url() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -415,8 +416,18 @@ func (j *jsiiProxy_DataGoogleCloudfunctions2Function) UpdateTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudfunctions2Function) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/cloudfunctions2_function google_cloudfunctions2_function} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/data-sources/cloudfunctions2_function google_cloudfunctions2_function} Data Source.
 func NewDataGoogleCloudfunctions2Function(scope constructs.Construct, id *string, config *DataGoogleCloudfunctions2FunctionConfig) DataGoogleCloudfunctions2Function {
 	_init_.Initialize()
 
@@ -434,7 +445,7 @@ func NewDataGoogleCloudfunctions2Function(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/cloudfunctions2_function google_cloudfunctions2_function} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/data-sources/cloudfunctions2_function google_cloudfunctions2_function} Data Source.
 func NewDataGoogleCloudfunctions2Function_Override(d DataGoogleCloudfunctions2Function, scope constructs.Construct, id *string, config *DataGoogleCloudfunctions2FunctionConfig) {
 	_init_.Initialize()
 

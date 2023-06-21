@@ -35,6 +35,9 @@ type ComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference inte
 	PathPrefixRewrite() *string
 	SetPathPrefixRewrite(val *string)
 	PathPrefixRewriteInput() *string
+	PathTemplateRewrite() *string
+	SetPathTemplateRewrite(val *string)
+	PathTemplateRewriteInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type ComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference inte
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetHostRewrite()
 	ResetPathPrefixRewrite()
+	ResetPathTemplateRewrite()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +178,26 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutput
 	return returns
 }
 
+func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference) PathTemplateRewrite() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pathTemplateRewrite",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference) PathTemplateRewriteInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pathTemplateRewriteInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -273,6 +297,17 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutput
 	_jsii_.Set(
 		j,
 		"pathPrefixRewrite",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference)SetPathTemplateRewrite(val *string) {
+	if err := j.validateSetPathTemplateRewriteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pathTemplateRewrite",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutput
 	_jsii_.InvokeVoid(
 		c,
 		"resetPathPrefixRewrite",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference) ResetPathTemplateRewrite() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPathTemplateRewrite",
 		nil, // no parameters
 	)
 }

@@ -94,6 +94,8 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ServiceAccountInput() *string
 	ShieldedInstanceConfig() ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference
 	ShieldedInstanceConfigInput() *ContainerClusterNodePoolNodeConfigShieldedInstanceConfig
+	SoleTenantConfig() ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference
+	SoleTenantConfigInput() *ContainerClusterNodePoolNodeConfigSoleTenantConfig
 	Spot() interface{}
 	SetSpot(val interface{})
 	SpotInput() interface{}
@@ -146,6 +148,7 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	PutLocalNvmeSsdBlockConfig(value *ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig)
 	PutReservationAffinity(value *ContainerClusterNodePoolNodeConfigReservationAffinity)
 	PutShieldedInstanceConfig(value *ContainerClusterNodePoolNodeConfigShieldedInstanceConfig)
+	PutSoleTenantConfig(value *ContainerClusterNodePoolNodeConfigSoleTenantConfig)
 	PutTaint(value interface{})
 	PutWorkloadMetadataConfig(value *ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig)
 	ResetAdvancedMachineFeatures()
@@ -173,6 +176,7 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetResourceLabels()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
+	ResetSoleTenantConfig()
 	ResetSpot()
 	ResetTags()
 	ResetTaint()
@@ -737,6 +741,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ShieldedIn
 	_jsii_.Get(
 		j,
 		"shieldedInstanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) SoleTenantConfig() ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference {
+	var returns ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference
+	_jsii_.Get(
+		j,
+		"soleTenantConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) SoleTenantConfigInput() *ContainerClusterNodePoolNodeConfigSoleTenantConfig {
+	var returns *ContainerClusterNodePoolNodeConfigSoleTenantConfig
+	_jsii_.Get(
+		j,
+		"soleTenantConfigInput",
 		&returns,
 	)
 	return returns
@@ -1408,6 +1432,17 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutShielde
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutSoleTenantConfig(value *ContainerClusterNodePoolNodeConfigSoleTenantConfig) {
+	if err := c.validatePutSoleTenantConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSoleTenantConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutTaint(value interface{}) {
 	if err := c.validatePutTaintParameters(value); err != nil {
 		panic(err)
@@ -1626,6 +1661,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetShiel
 	_jsii_.InvokeVoid(
 		c,
 		"resetShieldedInstanceConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetSoleTenantConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSoleTenantConfig",
 		nil, // no parameters
 	)
 }

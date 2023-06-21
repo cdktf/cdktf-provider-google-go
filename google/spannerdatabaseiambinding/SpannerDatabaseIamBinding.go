@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/spanner_database_iam_binding google_spanner_database_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/spanner_database_iam_binding google_spanner_database_iam_binding}.
 type SpannerDatabaseIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_SpannerDatabaseIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/spanner_database_iam_binding google_spanner_database_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/spanner_database_iam_binding google_spanner_database_iam_binding} Resource.
 func NewSpannerDatabaseIamBinding(scope constructs.Construct, id *string, config *SpannerDatabaseIamBindingConfig) SpannerDatabaseIamBinding {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewSpannerDatabaseIamBinding(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/spanner_database_iam_binding google_spanner_database_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/spanner_database_iam_binding google_spanner_database_iam_binding} Resource.
 func NewSpannerDatabaseIamBinding_Override(s SpannerDatabaseIamBinding, scope constructs.Construct, id *string, config *SpannerDatabaseIamBindingConfig) {
 	_init_.Initialize()
 

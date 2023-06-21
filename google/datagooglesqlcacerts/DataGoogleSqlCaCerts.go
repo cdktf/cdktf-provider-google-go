@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/sql_ca_certs google_sql_ca_certs}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/data-sources/sql_ca_certs google_sql_ca_certs}.
 type DataGoogleSqlCaCerts interface {
 	cdktf.TerraformDataSource
 	ActiveVersion() *string
@@ -327,7 +327,7 @@ func (j *jsiiProxy_DataGoogleSqlCaCerts) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/sql_ca_certs google_sql_ca_certs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/data-sources/sql_ca_certs google_sql_ca_certs} Data Source.
 func NewDataGoogleSqlCaCerts(scope constructs.Construct, id *string, config *DataGoogleSqlCaCertsConfig) DataGoogleSqlCaCerts {
 	_init_.Initialize()
 
@@ -345,7 +345,7 @@ func NewDataGoogleSqlCaCerts(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/data-sources/sql_ca_certs google_sql_ca_certs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/data-sources/sql_ca_certs google_sql_ca_certs} Data Source.
 func NewDataGoogleSqlCaCerts_Override(d DataGoogleSqlCaCerts, scope constructs.Construct, id *string, config *DataGoogleSqlCaCertsConfig) {
 	_init_.Initialize()
 

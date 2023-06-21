@@ -75,6 +75,7 @@ type DataLossPreventionJobTriggerInspectJobOutputReference interface {
 	PutStorageConfig(value *DataLossPreventionJobTriggerInspectJobStorageConfig)
 	ResetActions()
 	ResetInspectConfig()
+	ResetInspectTemplateName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -565,6 +566,14 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) ResetI
 	_jsii_.InvokeVoid(
 		d,
 		"resetInspectConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) ResetInspectTemplateName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetInspectTemplateName",
 		nil, // no parameters
 	)
 }

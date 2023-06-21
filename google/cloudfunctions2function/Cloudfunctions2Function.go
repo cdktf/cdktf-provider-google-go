@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/cloudfunctions2_function google_cloudfunctions2_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/cloudfunctions2_function google_cloudfunctions2_function}.
 type Cloudfunctions2Function interface {
 	cdktf.TerraformResource
 	BuildConfig() Cloudfunctions2FunctionBuildConfigOutputReference
@@ -87,6 +87,7 @@ type Cloudfunctions2Function interface {
 	Timeouts() Cloudfunctions2FunctionTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UpdateTime() *string
+	Url() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -533,8 +534,18 @@ func (j *jsiiProxy_Cloudfunctions2Function) UpdateTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Cloudfunctions2Function) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/cloudfunctions2_function google_cloudfunctions2_function} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/cloudfunctions2_function google_cloudfunctions2_function} Resource.
 func NewCloudfunctions2Function(scope constructs.Construct, id *string, config *Cloudfunctions2FunctionConfig) Cloudfunctions2Function {
 	_init_.Initialize()
 
@@ -552,7 +563,7 @@ func NewCloudfunctions2Function(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/cloudfunctions2_function google_cloudfunctions2_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/cloudfunctions2_function google_cloudfunctions2_function} Resource.
 func NewCloudfunctions2Function_Override(c Cloudfunctions2Function, scope constructs.Construct, id *string, config *Cloudfunctions2FunctionConfig) {
 	_init_.Initialize()
 

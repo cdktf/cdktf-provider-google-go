@@ -112,6 +112,10 @@ func (j *jsiiProxy_DataLossPreventionJobTrigger) validateSetStatusParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataLossPreventionJobTrigger) validateSetTriggerIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataLossPreventionJobTriggerParameters(scope constructs.Construct, id *string, config *DataLossPreventionJobTriggerConfig) error {
 	return nil
 }

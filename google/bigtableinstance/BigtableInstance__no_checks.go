@@ -56,6 +56,10 @@ func (b *jsiiProxy_BigtableInstance) validatePutClusterParameters(value interfac
 	return nil
 }
 
+func (b *jsiiProxy_BigtableInstance) validatePutTimeoutsParameters(value *BigtableInstanceTimeouts) error {
+	return nil
+}
+
 func validateBigtableInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/bigtable_instance google_bigtable_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/bigtable_instance google_bigtable_instance}.
 type BigtableInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -81,6 +81,8 @@ type BigtableInstance interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() BigtableInstanceTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -107,6 +109,7 @@ type BigtableInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCluster(value interface{})
+	PutTimeouts(value *BigtableInstanceTimeouts)
 	ResetCluster()
 	ResetDeletionProtection()
 	ResetDisplayName()
@@ -117,6 +120,7 @@ type BigtableInstance interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -452,8 +456,28 @@ func (j *jsiiProxy_BigtableInstance) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BigtableInstance) Timeouts() BigtableInstanceTimeoutsOutputReference {
+	var returns BigtableInstanceTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/bigtable_instance google_bigtable_instance} Resource.
+func (j *jsiiProxy_BigtableInstance) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/bigtable_instance google_bigtable_instance} Resource.
 func NewBigtableInstance(scope constructs.Construct, id *string, config *BigtableInstanceConfig) BigtableInstance {
 	_init_.Initialize()
 
@@ -471,7 +495,7 @@ func NewBigtableInstance(scope constructs.Construct, id *string, config *Bigtabl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/bigtable_instance google_bigtable_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/bigtable_instance google_bigtable_instance} Resource.
 func NewBigtableInstance_Override(b BigtableInstance, scope constructs.Construct, id *string, config *BigtableInstanceConfig) {
 	_init_.Initialize()
 
@@ -904,6 +928,17 @@ func (b *jsiiProxy_BigtableInstance) PutCluster(value interface{}) {
 	)
 }
 
+func (b *jsiiProxy_BigtableInstance) PutTimeouts(value *BigtableInstanceTimeouts) {
+	if err := b.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigtableInstance) ResetCluster() {
 	_jsii_.InvokeVoid(
 		b,
@@ -964,6 +999,14 @@ func (b *jsiiProxy_BigtableInstance) ResetProject() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigtableInstance) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

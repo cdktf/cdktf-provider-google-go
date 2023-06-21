@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/data_loss_prevention_job_trigger google_data_loss_prevention_job_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/data_loss_prevention_job_trigger google_data_loss_prevention_job_trigger}.
 type DataLossPreventionJobTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -80,6 +80,9 @@ type DataLossPreventionJobTrigger interface {
 	TerraformResourceType() *string
 	Timeouts() DataLossPreventionJobTriggerTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TriggerId() *string
+	SetTriggerId(val *string)
+	TriggerIdInput() *string
 	Triggers() DataLossPreventionJobTriggerTriggersList
 	TriggersInput() interface{}
 	UpdateTime() *string
@@ -120,6 +123,7 @@ type DataLossPreventionJobTrigger interface {
 	ResetOverrideLogicalId()
 	ResetStatus()
 	ResetTimeouts()
+	ResetTriggerId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -465,6 +469,26 @@ func (j *jsiiProxy_DataLossPreventionJobTrigger) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataLossPreventionJobTrigger) TriggerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"triggerId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTrigger) TriggerIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"triggerIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataLossPreventionJobTrigger) Triggers() DataLossPreventionJobTriggerTriggersList {
 	var returns DataLossPreventionJobTriggerTriggersList
 	_jsii_.Get(
@@ -496,7 +520,7 @@ func (j *jsiiProxy_DataLossPreventionJobTrigger) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/data_loss_prevention_job_trigger google_data_loss_prevention_job_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/data_loss_prevention_job_trigger google_data_loss_prevention_job_trigger} Resource.
 func NewDataLossPreventionJobTrigger(scope constructs.Construct, id *string, config *DataLossPreventionJobTriggerConfig) DataLossPreventionJobTrigger {
 	_init_.Initialize()
 
@@ -514,7 +538,7 @@ func NewDataLossPreventionJobTrigger(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/data_loss_prevention_job_trigger google_data_loss_prevention_job_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/data_loss_prevention_job_trigger google_data_loss_prevention_job_trigger} Resource.
 func NewDataLossPreventionJobTrigger_Override(d DataLossPreventionJobTrigger, scope constructs.Construct, id *string, config *DataLossPreventionJobTriggerConfig) {
 	_init_.Initialize()
 
@@ -644,6 +668,17 @@ func (j *jsiiProxy_DataLossPreventionJobTrigger)SetStatus(val *string) {
 	_jsii_.Set(
 		j,
 		"status",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTrigger)SetTriggerId(val *string) {
+	if err := j.validateSetTriggerIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"triggerId",
 		val,
 	)
 }
@@ -999,6 +1034,14 @@ func (d *jsiiProxy_DataLossPreventionJobTrigger) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTrigger) ResetTriggerId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTriggerId",
 		nil, // no parameters
 	)
 }

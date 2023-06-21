@@ -41,6 +41,8 @@ type DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesOutputRef
 	LikelihoodInput() *string
 	Regex() DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegexOutputReference
 	RegexInput() *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegex
+	SensitivityScore() DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScoreOutputReference
+	SensitivityScoreInput() *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScore
 	StoredType() DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesStoredTypeOutputReference
 	StoredTypeInput() *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesStoredType
 	SurrogateType() DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSurrogateTypeOutputReference
@@ -80,12 +82,14 @@ type DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesOutputRef
 	PutDictionary(value *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionary)
 	PutInfoType(value *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoType)
 	PutRegex(value *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegex)
+	PutSensitivityScore(value *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScore)
 	PutStoredType(value *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesStoredType)
 	PutSurrogateType(value *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSurrogateType)
 	ResetDictionary()
 	ResetExclusionType()
 	ResetLikelihood()
 	ResetRegex()
+	ResetSensitivityScore()
 	ResetStoredType()
 	ResetSurrogateType()
 	// Produce the Token's value at resolution time.
@@ -248,6 +252,26 @@ func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfo
 	_jsii_.Get(
 		j,
 		"regexInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesOutputReference) SensitivityScore() DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScoreOutputReference {
+	var returns DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScoreOutputReference
+	_jsii_.Get(
+		j,
+		"sensitivityScore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesOutputReference) SensitivityScoreInput() *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScore {
+	var returns *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScore
+	_jsii_.Get(
+		j,
+		"sensitivityScoreInput",
 		&returns,
 	)
 	return returns
@@ -637,6 +661,17 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfo
 	)
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesOutputReference) PutSensitivityScore(value *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScore) {
+	if err := d.validatePutSensitivityScoreParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSensitivityScore",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesOutputReference) PutStoredType(value *DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesStoredType) {
 	if err := d.validatePutStoredTypeParameters(value); err != nil {
 		panic(err)
@@ -687,6 +722,14 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfo
 	_jsii_.InvokeVoid(
 		d,
 		"resetRegex",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesOutputReference) ResetSensitivityScore() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSensitivityScore",
 		nil, // no parameters
 	)
 }

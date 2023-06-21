@@ -72,6 +72,10 @@ func (j *jsiiProxy_BigtableTableTimeoutsOutputReference) validateSetTerraformRes
 	return nil
 }
 
+func (j *jsiiProxy_BigtableTableTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewBigtableTableTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

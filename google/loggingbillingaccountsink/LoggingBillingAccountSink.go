@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/logging_billing_account_sink google_logging_billing_account_sink}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/logging_billing_account_sink google_logging_billing_account_sink}.
 type LoggingBillingAccountSink interface {
 	cdktf.TerraformResource
 	BigqueryOptions() LoggingBillingAccountSinkBigqueryOptionsOutputReference
@@ -486,7 +486,7 @@ func (j *jsiiProxy_LoggingBillingAccountSink) WriterIdentity() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/logging_billing_account_sink google_logging_billing_account_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/logging_billing_account_sink google_logging_billing_account_sink} Resource.
 func NewLoggingBillingAccountSink(scope constructs.Construct, id *string, config *LoggingBillingAccountSinkConfig) LoggingBillingAccountSink {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewLoggingBillingAccountSink(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/logging_billing_account_sink google_logging_billing_account_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/logging_billing_account_sink google_logging_billing_account_sink} Resource.
 func NewLoggingBillingAccountSink_Override(l LoggingBillingAccountSink, scope constructs.Construct, id *string, config *LoggingBillingAccountSinkConfig) {
 	_init_.Initialize()
 

@@ -84,6 +84,10 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutShield
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutSoleTenantConfigParameters(value *ContainerNodePoolNodeConfigSoleTenantConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutTaintParameters(value interface{}) error {
 	return nil
 }

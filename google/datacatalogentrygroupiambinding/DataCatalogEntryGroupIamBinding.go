@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/data_catalog_entry_group_iam_binding google_data_catalog_entry_group_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/data_catalog_entry_group_iam_binding google_data_catalog_entry_group_iam_binding}.
 type DataCatalogEntryGroupIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_DataCatalogEntryGroupIamBinding) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/data_catalog_entry_group_iam_binding google_data_catalog_entry_group_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/data_catalog_entry_group_iam_binding google_data_catalog_entry_group_iam_binding} Resource.
 func NewDataCatalogEntryGroupIamBinding(scope constructs.Construct, id *string, config *DataCatalogEntryGroupIamBindingConfig) DataCatalogEntryGroupIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewDataCatalogEntryGroupIamBinding(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.69.1/docs/resources/data_catalog_entry_group_iam_binding google_data_catalog_entry_group_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/data_catalog_entry_group_iam_binding google_data_catalog_entry_group_iam_binding} Resource.
 func NewDataCatalogEntryGroupIamBinding_Override(d DataCatalogEntryGroupIamBinding, scope constructs.Construct, id *string, config *DataCatalogEntryGroupIamBindingConfig) {
 	_init_.Initialize()
 

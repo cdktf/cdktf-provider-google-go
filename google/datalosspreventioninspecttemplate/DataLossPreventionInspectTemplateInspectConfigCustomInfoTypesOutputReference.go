@@ -41,6 +41,8 @@ type DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReferenc
 	LikelihoodInput() *string
 	Regex() DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesRegexOutputReference
 	RegexInput() *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesRegex
+	SensitivityScore() DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSensitivityScoreOutputReference
+	SensitivityScoreInput() *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSensitivityScore
 	StoredType() DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesStoredTypeOutputReference
 	StoredTypeInput() *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesStoredType
 	SurrogateType() DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateTypeOutputReference
@@ -80,12 +82,14 @@ type DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReferenc
 	PutDictionary(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesDictionary)
 	PutInfoType(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoType)
 	PutRegex(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesRegex)
+	PutSensitivityScore(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSensitivityScore)
 	PutStoredType(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesStoredType)
 	PutSurrogateType(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateType)
 	ResetDictionary()
 	ResetExclusionType()
 	ResetLikelihood()
 	ResetRegex()
+	ResetSensitivityScore()
 	ResetStoredType()
 	ResetSurrogateType()
 	// Produce the Token's value at resolution time.
@@ -248,6 +252,26 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypes
 	_jsii_.Get(
 		j,
 		"regexInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference) SensitivityScore() DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSensitivityScoreOutputReference {
+	var returns DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSensitivityScoreOutputReference
+	_jsii_.Get(
+		j,
+		"sensitivityScore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference) SensitivityScoreInput() *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSensitivityScore {
+	var returns *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSensitivityScore
+	_jsii_.Get(
+		j,
+		"sensitivityScoreInput",
 		&returns,
 	)
 	return returns
@@ -637,6 +661,17 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypes
 	)
 }
 
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference) PutSensitivityScore(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSensitivityScore) {
+	if err := d.validatePutSensitivityScoreParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSensitivityScore",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference) PutStoredType(value *DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesStoredType) {
 	if err := d.validatePutStoredTypeParameters(value); err != nil {
 		panic(err)
@@ -687,6 +722,14 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypes
 	_jsii_.InvokeVoid(
 		d,
 		"resetRegex",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference) ResetSensitivityScore() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSensitivityScore",
 		nil, // no parameters
 	)
 }
