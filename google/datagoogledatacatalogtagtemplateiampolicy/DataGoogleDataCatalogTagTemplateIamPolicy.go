@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/data-sources/data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/data-sources/data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy}.
 type DataGoogleDataCatalogTagTemplateIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataGoogleDataCatalogTagTemplateIamPolicy) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/data-sources/data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/data-sources/data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy} Data Source.
 func NewDataGoogleDataCatalogTagTemplateIamPolicy(scope constructs.Construct, id *string, config *DataGoogleDataCatalogTagTemplateIamPolicyConfig) DataGoogleDataCatalogTagTemplateIamPolicy {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataGoogleDataCatalogTagTemplateIamPolicy(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/data-sources/data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/data-sources/data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy} Data Source.
 func NewDataGoogleDataCatalogTagTemplateIamPolicy_Override(d DataGoogleDataCatalogTagTemplateIamPolicy, scope constructs.Construct, id *string, config *DataGoogleDataCatalogTagTemplateIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -248,6 +248,17 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutNetworkPerformanceCon
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutParamsParameters(value *ComputeInstanceFromTemplateParams) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutReservationAffinityParameters(value *ComputeInstanceFromTemplateReservationAffinity) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

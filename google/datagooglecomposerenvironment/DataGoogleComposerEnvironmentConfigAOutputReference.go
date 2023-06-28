@@ -41,6 +41,7 @@ type DataGoogleComposerEnvironmentConfigAOutputReference interface {
 	NodeCount() *float64
 	PrivateEnvironmentConfig() DataGoogleComposerEnvironmentConfigPrivateEnvironmentConfigList
 	RecoveryConfig() DataGoogleComposerEnvironmentConfigRecoveryConfigList
+	ResilienceMode() *string
 	SoftwareConfig() DataGoogleComposerEnvironmentConfigSoftwareConfigList
 	// Experimental.
 	TerraformAttribute() *string
@@ -257,6 +258,16 @@ func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigAOutputReference) Recovery
 	_jsii_.Get(
 		j,
 		"recoveryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigAOutputReference) ResilienceMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resilienceMode",
 		&returns,
 	)
 	return returns

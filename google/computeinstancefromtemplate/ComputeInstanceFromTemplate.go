@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/compute_instance_from_template google_compute_instance_from_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/compute_instance_from_template google_compute_instance_from_template}.
 type ComputeInstanceFromTemplate interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference
@@ -103,6 +103,8 @@ type ComputeInstanceFromTemplate interface {
 	NetworkPerformanceConfigInput() *ComputeInstanceFromTemplateNetworkPerformanceConfig
 	// The tree node.
 	Node() constructs.Node
+	Params() ComputeInstanceFromTemplateParamsOutputReference
+	ParamsInput() *ComputeInstanceFromTemplateParams
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -180,6 +182,7 @@ type ComputeInstanceFromTemplate interface {
 	PutGuestAccelerator(value interface{})
 	PutNetworkInterface(value interface{})
 	PutNetworkPerformanceConfig(value *ComputeInstanceFromTemplateNetworkPerformanceConfig)
+	PutParams(value *ComputeInstanceFromTemplateParams)
 	PutReservationAffinity(value *ComputeInstanceFromTemplateReservationAffinity)
 	PutScheduling(value *ComputeInstanceFromTemplateScheduling)
 	PutScratchDisk(value interface{})
@@ -209,6 +212,7 @@ type ComputeInstanceFromTemplate interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetProject()
 	ResetReservationAffinity()
 	ResetResourcePolicies()
@@ -804,6 +808,26 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplate) Params() ComputeInstanceFromTemplateParamsOutputReference {
+	var returns ComputeInstanceFromTemplateParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplate) ParamsInput() *ComputeInstanceFromTemplateParams {
+	var returns *ComputeInstanceFromTemplateParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplate) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1105,7 +1129,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplate) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/compute_instance_from_template google_compute_instance_from_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/compute_instance_from_template google_compute_instance_from_template} Resource.
 func NewComputeInstanceFromTemplate(scope constructs.Construct, id *string, config *ComputeInstanceFromTemplateConfig) ComputeInstanceFromTemplate {
 	_init_.Initialize()
 
@@ -1123,7 +1147,7 @@ func NewComputeInstanceFromTemplate(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/compute_instance_from_template google_compute_instance_from_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/compute_instance_from_template google_compute_instance_from_template} Resource.
 func NewComputeInstanceFromTemplate_Override(c ComputeInstanceFromTemplate, scope constructs.Construct, id *string, config *ComputeInstanceFromTemplateConfig) {
 	_init_.Initialize()
 
@@ -1754,6 +1778,17 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) PutNetworkPerformanceConfig(valu
 	)
 }
 
+func (c *jsiiProxy_ComputeInstanceFromTemplate) PutParams(value *ComputeInstanceFromTemplateParams) {
+	if err := c.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceFromTemplate) PutReservationAffinity(value *ComputeInstanceFromTemplateReservationAffinity) {
 	if err := c.validatePutReservationAffinityParameters(value); err != nil {
 		panic(err)
@@ -1984,6 +2019,14 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplate) ResetParams() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParams",
 		nil, // no parameters
 	)
 }

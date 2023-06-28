@@ -12,6 +12,8 @@ func init() {
 		reflect.TypeOf((*CloudRunV2Job)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
+			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "binaryAuthorization", GoGetter: "BinaryAuthorization"},
 			_jsii_.MemberProperty{JsiiProperty: "binaryAuthorizationInput", GoGetter: "BinaryAuthorizationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -64,6 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "reconciling", GoGetter: "Reconciling"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBinaryAuthorization", GoMethod: "ResetBinaryAuthorization"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClient", GoMethod: "ResetClient"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientVersion", GoMethod: "ResetClientVersion"},
@@ -271,6 +274,8 @@ func init() {
 		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateOutputReference",
 		reflect.TypeOf((*CloudRunV2JobTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
+			_jsii_.MemberProperty{JsiiProperty: "annotationsInput", GoGetter: "AnnotationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -293,6 +298,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "parallelism", GoGetter: "Parallelism"},
 			_jsii_.MemberProperty{JsiiProperty: "parallelismInput", GoGetter: "ParallelismInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putTemplate", GoMethod: "PutTemplate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
 			_jsii_.MemberMethod{JsiiMethod: "resetParallelism", GoMethod: "ResetParallelism"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTaskCount", GoMethod: "ResetTaskCount"},

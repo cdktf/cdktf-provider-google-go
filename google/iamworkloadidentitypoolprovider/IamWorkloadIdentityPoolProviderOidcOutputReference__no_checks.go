@@ -68,6 +68,10 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolProviderOidcOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_IamWorkloadIdentityPoolProviderOidcOutputReference) validateSetJwksJsonParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamWorkloadIdentityPoolProviderOidcOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

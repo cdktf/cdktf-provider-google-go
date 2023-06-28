@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -227,6 +227,9 @@ type GoogleProvider interface {
 	GkeBackupCustomEndpoint() *string
 	SetGkeBackupCustomEndpoint(val *string)
 	GkeBackupCustomEndpointInput() *string
+	GkeHub2CustomEndpoint() *string
+	SetGkeHub2CustomEndpoint(val *string)
+	GkeHub2CustomEndpointInput() *string
 	GkeHubCustomEndpoint() *string
 	SetGkeHubCustomEndpoint(val *string)
 	GkeHubCustomEndpointInput() *string
@@ -472,6 +475,7 @@ type GoogleProvider interface {
 	ResetFirestoreCustomEndpoint()
 	ResetGameServicesCustomEndpoint()
 	ResetGkeBackupCustomEndpoint()
+	ResetGkeHub2CustomEndpoint()
 	ResetGkeHubCustomEndpoint()
 	ResetHealthcareCustomEndpoint()
 	ResetIam2CustomEndpoint()
@@ -1963,6 +1967,26 @@ func (j *jsiiProxy_GoogleProvider) GkeBackupCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) GkeHub2CustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkeHub2CustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) GkeHub2CustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkeHub2CustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) GkeHubCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3084,7 +3108,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3102,7 +3126,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -3664,6 +3688,14 @@ func (j *jsiiProxy_GoogleProvider)SetGkeBackupCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"gkeBackupCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetGkeHub2CustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"gkeHub2CustomEndpoint",
 		val,
 	)
 }
@@ -4749,6 +4781,14 @@ func (g *jsiiProxy_GoogleProvider) ResetGkeBackupCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetGkeBackupCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetGkeHub2CustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGkeHub2CustomEndpoint",
 		nil, // no parameters
 	)
 }

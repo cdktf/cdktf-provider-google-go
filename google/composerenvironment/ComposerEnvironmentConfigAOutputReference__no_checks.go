@@ -112,6 +112,10 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateSetNodeCou
 	return nil
 }
 
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateSetResilienceModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

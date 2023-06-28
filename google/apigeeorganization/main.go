@@ -14,6 +14,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "analyticsRegion", GoGetter: "AnalyticsRegion"},
 			_jsii_.MemberProperty{JsiiProperty: "analyticsRegionInput", GoGetter: "AnalyticsRegionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "apigeeProjectId", GoGetter: "ApigeeProjectId"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizedNetwork", GoGetter: "AuthorizedNetwork"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizedNetworkInput", GoGetter: "AuthorizedNetworkInput"},
 			_jsii_.MemberProperty{JsiiProperty: "billingType", GoGetter: "BillingType"},

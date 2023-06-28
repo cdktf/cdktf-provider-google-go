@@ -80,6 +80,10 @@ func (c *jsiiProxy_ComputeInstance) validatePutNetworkPerformanceConfigParameter
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstance) validatePutParamsParameters(value *ComputeInstanceParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstance) validatePutReservationAffinityParameters(value *ComputeInstanceReservationAffinity) error {
 	return nil
 }

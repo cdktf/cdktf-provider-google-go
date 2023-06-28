@@ -4,7 +4,7 @@ package clouddeploydeliverypipeline
 type ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard struct {
 	// Whether to verify a deployment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/clouddeploy_delivery_pipeline#verify ClouddeployDeliveryPipeline#verify}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/clouddeploy_delivery_pipeline#verify ClouddeployDeliveryPipeline#verify}
 	Verify interface{} `field:"optional" json:"verify" yaml:"verify"`
 }
 

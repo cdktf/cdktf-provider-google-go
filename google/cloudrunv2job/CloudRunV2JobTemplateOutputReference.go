@@ -10,6 +10,9 @@ import (
 
 type CloudRunV2JobTemplateOutputReference interface {
 	cdktf.ComplexObject
+	Annotations() *map[string]*string
+	SetAnnotations(val *map[string]*string)
+	AnnotationsInput() *map[string]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -73,6 +76,7 @@ type CloudRunV2JobTemplateOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutTemplate(value *CloudRunV2JobTemplateTemplate)
+	ResetAnnotations()
 	ResetLabels()
 	ResetParallelism()
 	ResetTaskCount()
@@ -89,6 +93,26 @@ type CloudRunV2JobTemplateOutputReference interface {
 // The jsii proxy struct for CloudRunV2JobTemplateOutputReference
 type jsiiProxy_CloudRunV2JobTemplateOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateOutputReference) Annotations() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateOutputReference) AnnotationsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotationsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CloudRunV2JobTemplateOutputReference) ComplexObjectIndex() interface{} {
@@ -266,6 +290,17 @@ func NewCloudRunV2JobTemplateOutputReference_Override(c CloudRunV2JobTemplateOut
 		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateOutputReference)SetAnnotations(val *map[string]*string) {
+	if err := j.validateSetAnnotationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"annotations",
+		val,
 	)
 }
 
@@ -551,6 +586,14 @@ func (c *jsiiProxy_CloudRunV2JobTemplateOutputReference) PutTemplate(value *Clou
 		c,
 		"putTemplate",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2JobTemplateOutputReference) ResetAnnotations() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAnnotations",
+		nil, // no parameters
 	)
 }
 

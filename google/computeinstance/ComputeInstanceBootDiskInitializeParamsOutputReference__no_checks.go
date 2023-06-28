@@ -68,6 +68,10 @@ func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) validateSetSizeParameters(val *float64) error {
 	return nil
 }

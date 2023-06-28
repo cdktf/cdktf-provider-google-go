@@ -35,6 +35,9 @@ type ComputeInstanceBootDiskInitializeParamsOutputReference interface {
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
+	ResourceManagerTags() *map[string]*string
+	SetResourceManagerTags(val *map[string]*string)
+	ResourceManagerTagsInput() *map[string]*string
 	Size() *float64
 	SetSize(val *float64)
 	SizeInput() *float64
@@ -75,6 +78,7 @@ type ComputeInstanceBootDiskInitializeParamsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetImage()
 	ResetLabels()
+	ResetResourceManagerTags()
 	ResetSize()
 	ResetType()
 	// Produce the Token's value at resolution time.
@@ -177,6 +181,26 @@ func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) Label
 	_jsii_.Get(
 		j,
 		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) ResourceManagerTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceManagerTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) ResourceManagerTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceManagerTagsInput",
 		&returns,
 	)
 	return returns
@@ -321,6 +345,17 @@ func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference)SetLab
 	_jsii_.Set(
 		j,
 		"labels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference)SetResourceManagerTags(val *map[string]*string) {
+	if err := j.validateSetResourceManagerTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceManagerTags",
 		val,
 	)
 }
@@ -567,6 +602,14 @@ func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) Reset
 	_jsii_.InvokeVoid(
 		c,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) ResetResourceManagerTags() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetResourceManagerTags",
 		nil, // no parameters
 	)
 }

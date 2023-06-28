@@ -52,6 +52,9 @@ type ComposerEnvironmentConfigAOutputReference interface {
 	PrivateEnvironmentConfigInput() *ComposerEnvironmentConfigPrivateEnvironmentConfig
 	RecoveryConfig() ComposerEnvironmentConfigRecoveryConfigOutputReference
 	RecoveryConfigInput() *ComposerEnvironmentConfigRecoveryConfig
+	ResilienceMode() *string
+	SetResilienceMode(val *string)
+	ResilienceModeInput() *string
 	SoftwareConfig() ComposerEnvironmentConfigSoftwareConfigOutputReference
 	SoftwareConfigInput() *ComposerEnvironmentConfigSoftwareConfig
 	// Experimental.
@@ -112,6 +115,7 @@ type ComposerEnvironmentConfigAOutputReference interface {
 	ResetNodeCount()
 	ResetPrivateEnvironmentConfig()
 	ResetRecoveryConfig()
+	ResetResilienceMode()
 	ResetSoftwareConfig()
 	ResetWebServerConfig()
 	ResetWebServerNetworkAccessControl()
@@ -391,6 +395,26 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) RecoveryConfigInpu
 	return returns
 }
 
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) ResilienceMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resilienceMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) ResilienceModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resilienceModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) SoftwareConfig() ComposerEnvironmentConfigSoftwareConfigOutputReference {
 	var returns ComposerEnvironmentConfigSoftwareConfigOutputReference
 	_jsii_.Get(
@@ -570,6 +594,17 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetNodeCount(val *f
 	_jsii_.Set(
 		j,
 		"nodeCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetResilienceMode(val *string) {
+	if err := j.validateSetResilienceModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resilienceMode",
 		val,
 	)
 }
@@ -971,6 +1006,14 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) ResetRecoveryConfi
 	_jsii_.InvokeVoid(
 		c,
 		"resetRecoveryConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) ResetResilienceMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetResilienceMode",
 		nil, // no parameters
 	)
 }

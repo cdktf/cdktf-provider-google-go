@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/gke_backup_backup_plan_iam_member google_gke_backup_backup_plan_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/gke_backup_backup_plan_iam_member google_gke_backup_backup_plan_iam_member}.
 type GkeBackupBackupPlanIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GkeBackupBackupPlanIamMember) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/gke_backup_backup_plan_iam_member google_gke_backup_backup_plan_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/gke_backup_backup_plan_iam_member google_gke_backup_backup_plan_iam_member} Resource.
 func NewGkeBackupBackupPlanIamMember(scope constructs.Construct, id *string, config *GkeBackupBackupPlanIamMemberConfig) GkeBackupBackupPlanIamMember {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGkeBackupBackupPlanIamMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/gke_backup_backup_plan_iam_member google_gke_backup_backup_plan_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/gke_backup_backup_plan_iam_member google_gke_backup_backup_plan_iam_member} Resource.
 func NewGkeBackupBackupPlanIamMember_Override(g GkeBackupBackupPlanIamMember, scope constructs.Construct, id *string, config *GkeBackupBackupPlanIamMemberConfig) {
 	_init_.Initialize()
 

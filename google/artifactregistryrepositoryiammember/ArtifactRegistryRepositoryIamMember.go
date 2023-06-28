@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member}.
 type ArtifactRegistryRepositoryIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member} Resource.
 func NewArtifactRegistryRepositoryIamMember(scope constructs.Construct, id *string, config *ArtifactRegistryRepositoryIamMemberConfig) ArtifactRegistryRepositoryIamMember {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewArtifactRegistryRepositoryIamMember(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member} Resource.
 func NewArtifactRegistryRepositoryIamMember_Override(a ArtifactRegistryRepositoryIamMember, scope constructs.Construct, id *string, config *ArtifactRegistryRepositoryIamMemberConfig) {
 	_init_.Initialize()
 

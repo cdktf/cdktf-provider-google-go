@@ -9,12 +9,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/apigee_organization google_apigee_organization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/apigee_organization google_apigee_organization}.
 type ApigeeOrganization interface {
 	cdktf.TerraformResource
 	AnalyticsRegion() *string
 	SetAnalyticsRegion(val *string)
 	AnalyticsRegionInput() *string
+	ApigeeProjectId() *string
 	AuthorizedNetwork() *string
 	SetAuthorizedNetwork(val *string)
 	AuthorizedNetworkInput() *string
@@ -166,6 +167,16 @@ func (j *jsiiProxy_ApigeeOrganization) AnalyticsRegionInput() *string {
 	_jsii_.Get(
 		j,
 		"analyticsRegionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeOrganization) ApigeeProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apigeeProjectId",
 		&returns,
 	)
 	return returns
@@ -582,7 +593,7 @@ func (j *jsiiProxy_ApigeeOrganization) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/apigee_organization google_apigee_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/apigee_organization google_apigee_organization} Resource.
 func NewApigeeOrganization(scope constructs.Construct, id *string, config *ApigeeOrganizationConfig) ApigeeOrganization {
 	_init_.Initialize()
 
@@ -600,7 +611,7 @@ func NewApigeeOrganization(scope constructs.Construct, id *string, config *Apige
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/apigee_organization google_apigee_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/apigee_organization google_apigee_organization} Resource.
 func NewApigeeOrganization_Override(a ApigeeOrganization, scope constructs.Construct, id *string, config *ApigeeOrganizationConfig) {
 	_init_.Initialize()
 

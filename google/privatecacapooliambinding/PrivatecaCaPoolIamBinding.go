@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/privateca_ca_pool_iam_binding google_privateca_ca_pool_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/privateca_ca_pool_iam_binding google_privateca_ca_pool_iam_binding}.
 type PrivatecaCaPoolIamBinding interface {
 	cdktf.TerraformResource
 	CaPool() *string
@@ -438,7 +438,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/privateca_ca_pool_iam_binding google_privateca_ca_pool_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/privateca_ca_pool_iam_binding google_privateca_ca_pool_iam_binding} Resource.
 func NewPrivatecaCaPoolIamBinding(scope constructs.Construct, id *string, config *PrivatecaCaPoolIamBindingConfig) PrivatecaCaPoolIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewPrivatecaCaPoolIamBinding(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.70.0/docs/resources/privateca_ca_pool_iam_binding google_privateca_ca_pool_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/privateca_ca_pool_iam_binding google_privateca_ca_pool_iam_binding} Resource.
 func NewPrivatecaCaPoolIamBinding_Override(p PrivatecaCaPoolIamBinding, scope constructs.Construct, id *string, config *PrivatecaCaPoolIamBindingConfig) {
 	_init_.Initialize()
 

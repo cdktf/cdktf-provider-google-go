@@ -123,6 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nodeCount", GoGetter: "NodeCount"},
 			_jsii_.MemberProperty{JsiiProperty: "privateEnvironmentConfig", GoGetter: "PrivateEnvironmentConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "recoveryConfig", GoGetter: "RecoveryConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "resilienceMode", GoGetter: "ResilienceMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "softwareConfig", GoGetter: "SoftwareConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
