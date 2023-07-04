@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/data-sources/storage_transfer_project_service_account google_storage_transfer_project_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/data-sources/storage_transfer_project_service_account google_storage_transfer_project_service_account}.
 type DataGoogleStorageTransferProjectServiceAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataGoogleStorageTransferProjectServiceAccount) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/data-sources/storage_transfer_project_service_account google_storage_transfer_project_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/data-sources/storage_transfer_project_service_account google_storage_transfer_project_service_account} Data Source.
 func NewDataGoogleStorageTransferProjectServiceAccount(scope constructs.Construct, id *string, config *DataGoogleStorageTransferProjectServiceAccountConfig) DataGoogleStorageTransferProjectServiceAccount {
 	_init_.Initialize()
 
@@ -333,7 +333,7 @@ func NewDataGoogleStorageTransferProjectServiceAccount(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/data-sources/storage_transfer_project_service_account google_storage_transfer_project_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/data-sources/storage_transfer_project_service_account google_storage_transfer_project_service_account} Data Source.
 func NewDataGoogleStorageTransferProjectServiceAccount_Override(d DataGoogleStorageTransferProjectServiceAccount, scope constructs.Construct, id *string, config *DataGoogleStorageTransferProjectServiceAccountConfig) {
 	_init_.Initialize()
 

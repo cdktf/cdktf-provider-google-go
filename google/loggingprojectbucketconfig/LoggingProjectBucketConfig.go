@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/logging_project_bucket_config google_logging_project_bucket_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/resources/logging_project_bucket_config google_logging_project_bucket_config}.
 type LoggingProjectBucketConfig interface {
 	cdktf.TerraformResource
 	BucketId() *string
@@ -58,6 +58,9 @@ type LoggingProjectBucketConfig interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	Locked() interface{}
+	SetLocked(val interface{})
+	LockedInput() interface{}
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -113,6 +116,7 @@ type LoggingProjectBucketConfig interface {
 	ResetDescription()
 	ResetEnableAnalytics()
 	ResetId()
+	ResetLocked()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -352,6 +356,26 @@ func (j *jsiiProxy_LoggingProjectBucketConfig) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LoggingProjectBucketConfig) Locked() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"locked",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoggingProjectBucketConfig) LockedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lockedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoggingProjectBucketConfig) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -473,7 +497,7 @@ func (j *jsiiProxy_LoggingProjectBucketConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/logging_project_bucket_config google_logging_project_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/resources/logging_project_bucket_config google_logging_project_bucket_config} Resource.
 func NewLoggingProjectBucketConfig(scope constructs.Construct, id *string, config *LoggingProjectBucketConfigConfig) LoggingProjectBucketConfig {
 	_init_.Initialize()
 
@@ -491,7 +515,7 @@ func NewLoggingProjectBucketConfig(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/logging_project_bucket_config google_logging_project_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/resources/logging_project_bucket_config google_logging_project_bucket_config} Resource.
 func NewLoggingProjectBucketConfig_Override(l LoggingProjectBucketConfig, scope constructs.Construct, id *string, config *LoggingProjectBucketConfigConfig) {
 	_init_.Initialize()
 
@@ -602,6 +626,17 @@ func (j *jsiiProxy_LoggingProjectBucketConfig)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoggingProjectBucketConfig)SetLocked(val interface{}) {
+	if err := j.validateSetLockedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"locked",
 		val,
 	)
 }
@@ -952,6 +987,14 @@ func (l *jsiiProxy_LoggingProjectBucketConfig) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoggingProjectBucketConfig) ResetLocked() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetLocked",
 		nil, // no parameters
 	)
 }

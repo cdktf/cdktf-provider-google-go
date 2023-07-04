@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/resources/container_cluster google_container_cluster}.
 type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
@@ -187,6 +187,8 @@ type ContainerCluster interface {
 	ResourceLabelsInput() *map[string]*string
 	ResourceUsageExportConfig() ContainerClusterResourceUsageExportConfigOutputReference
 	ResourceUsageExportConfigInput() *ContainerClusterResourceUsageExportConfig
+	SecurityPostureConfig() ContainerClusterSecurityPostureConfigOutputReference
+	SecurityPostureConfigInput() *ContainerClusterSecurityPostureConfig
 	SelfLink() *string
 	ServiceExternalIpsConfig() ContainerClusterServiceExternalIpsConfigOutputReference
 	ServiceExternalIpsConfigInput() *ContainerClusterServiceExternalIpsConfig
@@ -257,6 +259,7 @@ type ContainerCluster interface {
 	PutPrivateClusterConfig(value *ContainerClusterPrivateClusterConfig)
 	PutReleaseChannel(value *ContainerClusterReleaseChannel)
 	PutResourceUsageExportConfig(value *ContainerClusterResourceUsageExportConfig)
+	PutSecurityPostureConfig(value *ContainerClusterSecurityPostureConfig)
 	PutServiceExternalIpsConfig(value *ContainerClusterServiceExternalIpsConfig)
 	PutTimeouts(value *ContainerClusterTimeouts)
 	PutVerticalPodAutoscaling(value *ContainerClusterVerticalPodAutoscaling)
@@ -315,6 +318,7 @@ type ContainerCluster interface {
 	ResetRemoveDefaultNodePool()
 	ResetResourceLabels()
 	ResetResourceUsageExportConfig()
+	ResetSecurityPostureConfig()
 	ResetServiceExternalIpsConfig()
 	ResetSubnetwork()
 	ResetTimeouts()
@@ -1545,6 +1549,26 @@ func (j *jsiiProxy_ContainerCluster) ResourceUsageExportConfigInput() *Container
 	return returns
 }
 
+func (j *jsiiProxy_ContainerCluster) SecurityPostureConfig() ContainerClusterSecurityPostureConfigOutputReference {
+	var returns ContainerClusterSecurityPostureConfigOutputReference
+	_jsii_.Get(
+		j,
+		"securityPostureConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) SecurityPostureConfigInput() *ContainerClusterSecurityPostureConfig {
+	var returns *ContainerClusterSecurityPostureConfig
+	_jsii_.Get(
+		j,
+		"securityPostureConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerCluster) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1706,7 +1730,7 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
 
@@ -1724,7 +1748,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct, id *string, config *ContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -2652,6 +2676,17 @@ func (c *jsiiProxy_ContainerCluster) PutResourceUsageExportConfig(value *Contain
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutSecurityPostureConfig(value *ContainerClusterSecurityPostureConfig) {
+	if err := c.validatePutSecurityPostureConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSecurityPostureConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutServiceExternalIpsConfig(value *ContainerClusterServiceExternalIpsConfig) {
 	if err := c.validatePutServiceExternalIpsConfigParameters(value); err != nil {
 		panic(err)
@@ -3108,6 +3143,14 @@ func (c *jsiiProxy_ContainerCluster) ResetResourceUsageExportConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetResourceUsageExportConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetSecurityPostureConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSecurityPostureConfig",
 		nil, // no parameters
 	)
 }

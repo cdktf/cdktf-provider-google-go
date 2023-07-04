@@ -100,6 +100,10 @@ func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetLocationParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetLockedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingProjectBucketConfig) validateSetProjectParameters(val *string) error {
 	return nil
 }

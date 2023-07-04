@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/org_policy_policy google_org_policy_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/resources/org_policy_policy google_org_policy_policy}.
 type OrgPolicyPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_OrgPolicyPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/org_policy_policy google_org_policy_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/resources/org_policy_policy google_org_policy_policy} Resource.
 func NewOrgPolicyPolicy(scope constructs.Construct, id *string, config *OrgPolicyPolicyConfig) OrgPolicyPolicy {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewOrgPolicyPolicy(scope constructs.Construct, id *string, config *OrgPolic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/resources/org_policy_policy google_org_policy_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/resources/org_policy_policy google_org_policy_policy} Resource.
 func NewOrgPolicyPolicy_Override(o OrgPolicyPolicy, scope constructs.Construct, id *string, config *OrgPolicyPolicyConfig) {
 	_init_.Initialize()
 

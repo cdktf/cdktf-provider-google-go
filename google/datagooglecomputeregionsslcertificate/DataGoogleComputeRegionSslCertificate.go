@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/data-sources/compute_region_ssl_certificate google_compute_region_ssl_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/data-sources/compute_region_ssl_certificate google_compute_region_ssl_certificate}.
 type DataGoogleComputeRegionSslCertificate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -417,7 +417,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionSslCertificate) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/data-sources/compute_region_ssl_certificate google_compute_region_ssl_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/data-sources/compute_region_ssl_certificate google_compute_region_ssl_certificate} Data Source.
 func NewDataGoogleComputeRegionSslCertificate(scope constructs.Construct, id *string, config *DataGoogleComputeRegionSslCertificateConfig) DataGoogleComputeRegionSslCertificate {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewDataGoogleComputeRegionSslCertificate(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.71.0/docs/data-sources/compute_region_ssl_certificate google_compute_region_ssl_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/data-sources/compute_region_ssl_certificate google_compute_region_ssl_certificate} Data Source.
 func NewDataGoogleComputeRegionSslCertificate_Override(d DataGoogleComputeRegionSslCertificate, scope constructs.Construct, id *string, config *DataGoogleComputeRegionSslCertificateConfig) {
 	_init_.Initialize()
 

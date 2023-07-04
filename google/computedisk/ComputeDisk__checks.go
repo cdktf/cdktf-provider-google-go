@@ -380,6 +380,14 @@ func (j *jsiiProxy_ComputeDisk) validateSetProvisionedIopsParameters(val *float6
 	return nil
 }
 
+func (j *jsiiProxy_ComputeDisk) validateSetProvisionedThroughputParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeDisk) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
