@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/resources/notebooks_location google_notebooks_location}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/notebooks_location google_notebooks_location}.
 type NotebooksLocation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -369,7 +369,7 @@ func (j *jsiiProxy_NotebooksLocation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/resources/notebooks_location google_notebooks_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/notebooks_location google_notebooks_location} Resource.
 func NewNotebooksLocation(scope constructs.Construct, id *string, config *NotebooksLocationConfig) NotebooksLocation {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewNotebooksLocation(scope constructs.Construct, id *string, config *Notebo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/resources/notebooks_location google_notebooks_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/notebooks_location google_notebooks_location} Resource.
 func NewNotebooksLocation_Override(n NotebooksLocation, scope constructs.Construct, id *string, config *NotebooksLocationConfig) {
 	_init_.Initialize()
 

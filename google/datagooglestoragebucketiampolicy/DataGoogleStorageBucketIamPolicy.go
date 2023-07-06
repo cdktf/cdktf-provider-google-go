@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/data-sources/storage_bucket_iam_policy google_storage_bucket_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/data-sources/storage_bucket_iam_policy google_storage_bucket_iam_policy}.
 type DataGoogleStorageBucketIamPolicy interface {
 	cdktf.TerraformDataSource
 	Bucket() *string
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataGoogleStorageBucketIamPolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/data-sources/storage_bucket_iam_policy google_storage_bucket_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/data-sources/storage_bucket_iam_policy google_storage_bucket_iam_policy} Data Source.
 func NewDataGoogleStorageBucketIamPolicy(scope constructs.Construct, id *string, config *DataGoogleStorageBucketIamPolicyConfig) DataGoogleStorageBucketIamPolicy {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataGoogleStorageBucketIamPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/data-sources/storage_bucket_iam_policy google_storage_bucket_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/data-sources/storage_bucket_iam_policy google_storage_bucket_iam_policy} Data Source.
 func NewDataGoogleStorageBucketIamPolicy_Override(d DataGoogleStorageBucketIamPolicy, scope constructs.Construct, id *string, config *DataGoogleStorageBucketIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/resources/bigquery_connection google_bigquery_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/bigquery_connection google_bigquery_connection}.
 type BigqueryConnection interface {
 	cdktf.TerraformResource
 	Aws() BigqueryConnectionAwsOutputReference
@@ -572,7 +572,7 @@ func (j *jsiiProxy_BigqueryConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/resources/bigquery_connection google_bigquery_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/bigquery_connection google_bigquery_connection} Resource.
 func NewBigqueryConnection(scope constructs.Construct, id *string, config *BigqueryConnectionConfig) BigqueryConnection {
 	_init_.Initialize()
 
@@ -590,7 +590,7 @@ func NewBigqueryConnection(scope constructs.Construct, id *string, config *Bigqu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.0/docs/resources/bigquery_connection google_bigquery_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/bigquery_connection google_bigquery_connection} Resource.
 func NewBigqueryConnection_Override(b BigqueryConnection, scope constructs.Construct, id *string, config *BigqueryConnectionConfig) {
 	_init_.Initialize()
 
