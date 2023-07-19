@@ -31,6 +31,7 @@ type DataGoogleCloudbuildTriggerGitFileSourceOutputReference interface {
 	InternalValue() *DataGoogleCloudbuildTriggerGitFileSource
 	SetInternalValue(val *DataGoogleCloudbuildTriggerGitFileSource)
 	Path() *string
+	Repository() *string
 	RepoType() *string
 	Revision() *string
 	// Experimental.
@@ -146,6 +147,16 @@ func (j *jsiiProxy_DataGoogleCloudbuildTriggerGitFileSourceOutputReference) Path
 	_jsii_.Get(
 		j,
 		"path",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerGitFileSourceOutputReference) Repository() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repository",
 		&returns,
 	)
 	return returns

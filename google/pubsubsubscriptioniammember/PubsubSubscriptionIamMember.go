@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/pubsub_subscription_iam_member google_pubsub_subscription_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/pubsub_subscription_iam_member google_pubsub_subscription_iam_member}.
 type PubsubSubscriptionIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_PubsubSubscriptionIamMember) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/pubsub_subscription_iam_member google_pubsub_subscription_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/pubsub_subscription_iam_member google_pubsub_subscription_iam_member} Resource.
 func NewPubsubSubscriptionIamMember(scope constructs.Construct, id *string, config *PubsubSubscriptionIamMemberConfig) PubsubSubscriptionIamMember {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewPubsubSubscriptionIamMember(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/pubsub_subscription_iam_member google_pubsub_subscription_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/pubsub_subscription_iam_member google_pubsub_subscription_iam_member} Resource.
 func NewPubsubSubscriptionIamMember_Override(p PubsubSubscriptionIamMember, scope constructs.Construct, id *string, config *PubsubSubscriptionIamMemberConfig) {
 	_init_.Initialize()
 

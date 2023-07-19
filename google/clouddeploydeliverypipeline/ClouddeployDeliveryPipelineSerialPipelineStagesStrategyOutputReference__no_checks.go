@@ -44,6 +44,10 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutput
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference) validatePutCanaryParameters(value *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference) validatePutStandardParameters(value *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard) error {
 	return nil
 }

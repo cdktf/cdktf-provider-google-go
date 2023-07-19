@@ -187,6 +187,14 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateSetPat
 	return nil
 }
 
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateSetRepositoryParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateSetRepoTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

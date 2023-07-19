@@ -44,6 +44,10 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReferenc
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) validatePutDeployParametersParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) validatePutStrategyParameters(value *ClouddeployDeliveryPipelineSerialPipelineStagesStrategy) error {
 	return nil
 }

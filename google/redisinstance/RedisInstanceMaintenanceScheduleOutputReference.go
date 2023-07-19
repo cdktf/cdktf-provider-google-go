@@ -180,29 +180,29 @@ func (j *jsiiProxy_RedisInstanceMaintenanceScheduleOutputReference) TerraformRes
 }
 
 
-func NewRedisInstanceMaintenanceScheduleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RedisInstanceMaintenanceScheduleOutputReference {
+func NewRedisInstanceMaintenanceScheduleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RedisInstanceMaintenanceScheduleOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRedisInstanceMaintenanceScheduleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewRedisInstanceMaintenanceScheduleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_RedisInstanceMaintenanceScheduleOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisInstance.RedisInstanceMaintenanceScheduleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRedisInstanceMaintenanceScheduleOutputReference_Override(r RedisInstanceMaintenanceScheduleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRedisInstanceMaintenanceScheduleOutputReference_Override(r RedisInstanceMaintenanceScheduleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google.redisInstance.RedisInstanceMaintenanceScheduleOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
 }

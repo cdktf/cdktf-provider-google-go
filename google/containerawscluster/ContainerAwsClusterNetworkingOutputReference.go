@@ -29,6 +29,9 @@ type ContainerAwsClusterNetworkingOutputReference interface {
 	Fqn() *string
 	InternalValue() *ContainerAwsClusterNetworking
 	SetInternalValue(val *ContainerAwsClusterNetworking)
+	PerNodePoolSgRulesDisabled() interface{}
+	SetPerNodePoolSgRulesDisabled(val interface{})
+	PerNodePoolSgRulesDisabledInput() interface{}
 	PodAddressCidrBlocks() *[]*string
 	SetPodAddressCidrBlocks(val *[]*string)
 	PodAddressCidrBlocksInput() *[]*string
@@ -70,6 +73,7 @@ type ContainerAwsClusterNetworkingOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPerNodePoolSgRulesDisabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -130,6 +134,26 @@ func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) InternalValue()
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) PerNodePoolSgRulesDisabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"perNodePoolSgRulesDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) PerNodePoolSgRulesDisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"perNodePoolSgRulesDisabledInput",
 		&returns,
 	)
 	return returns
@@ -272,6 +296,17 @@ func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetInternalValue
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference)SetPerNodePoolSgRulesDisabled(val interface{}) {
+	if err := j.validateSetPerNodePoolSgRulesDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"perNodePoolSgRulesDisabled",
 		val,
 	)
 }
@@ -515,6 +550,14 @@ func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) InterpolationFo
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) ResetPerNodePoolSgRulesDisabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPerNodePoolSgRulesDisabled",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

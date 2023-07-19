@@ -76,6 +76,10 @@ func (j *jsiiProxy_ComputeExternalVpnGatewayTimeoutsOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_ComputeExternalVpnGatewayTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewComputeExternalVpnGatewayTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

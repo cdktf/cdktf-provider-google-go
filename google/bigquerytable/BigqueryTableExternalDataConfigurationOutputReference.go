@@ -52,6 +52,12 @@ type BigqueryTableExternalDataConfigurationOutputReference interface {
 	MaxBadRecords() *float64
 	SetMaxBadRecords(val *float64)
 	MaxBadRecordsInput() *float64
+	MetadataCacheMode() *string
+	SetMetadataCacheMode(val *string)
+	MetadataCacheModeInput() *string
+	ObjectMetadata() *string
+	SetObjectMetadata(val *string)
+	ObjectMetadataInput() *string
 	ReferenceFileSchemaUri() *string
 	SetReferenceFileSchemaUri(val *string)
 	ReferenceFileSchemaUriInput() *string
@@ -108,8 +114,11 @@ type BigqueryTableExternalDataConfigurationOutputReference interface {
 	ResetHivePartitioningOptions()
 	ResetIgnoreUnknownValues()
 	ResetMaxBadRecords()
+	ResetMetadataCacheMode()
+	ResetObjectMetadata()
 	ResetReferenceFileSchemaUri()
 	ResetSchema()
+	ResetSourceFormat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -355,6 +364,46 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) MaxBad
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) MetadataCacheMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metadataCacheMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) MetadataCacheModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metadataCacheModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ObjectMetadata() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"objectMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ObjectMetadataInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"objectMetadataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ReferenceFileSchemaUri() *string {
 	var returns *string
 	_jsii_.Get(
@@ -567,6 +616,28 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference)SetMaxB
 	_jsii_.Set(
 		j,
 		"maxBadRecords",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference)SetMetadataCacheMode(val *string) {
+	if err := j.validateSetMetadataCacheModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metadataCacheMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference)SetObjectMetadata(val *string) {
+	if err := j.validateSetObjectMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"objectMetadata",
 		val,
 	)
 }
@@ -931,6 +1002,22 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ResetM
 	)
 }
 
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ResetMetadataCacheMode() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetMetadataCacheMode",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ResetObjectMetadata() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetObjectMetadata",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ResetReferenceFileSchemaUri() {
 	_jsii_.InvokeVoid(
 		b,
@@ -943,6 +1030,14 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ResetS
 	_jsii_.InvokeVoid(
 		b,
 		"resetSchema",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ResetSourceFormat() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSourceFormat",
 		nil, // no parameters
 	)
 }

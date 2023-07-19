@@ -25,6 +25,8 @@ type GkeHubFeatureSpecOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Fleetobservability() GkeHubFeatureSpecFleetobservabilityOutputReference
+	FleetobservabilityInput() *GkeHubFeatureSpecFleetobservability
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GkeHubFeatureSpec
@@ -63,7 +65,9 @@ type GkeHubFeatureSpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutFleetobservability(value *GkeHubFeatureSpecFleetobservability)
 	PutMulticlusteringress(value *GkeHubFeatureSpecMulticlusteringress)
+	ResetFleetobservability()
 	ResetMulticlusteringress()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -105,6 +109,26 @@ func (j *jsiiProxy_GkeHubFeatureSpecOutputReference) CreationStack() *[]*string 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureSpecOutputReference) Fleetobservability() GkeHubFeatureSpecFleetobservabilityOutputReference {
+	var returns GkeHubFeatureSpecFleetobservabilityOutputReference
+	_jsii_.Get(
+		j,
+		"fleetobservability",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureSpecOutputReference) FleetobservabilityInput() *GkeHubFeatureSpecFleetobservability {
+	var returns *GkeHubFeatureSpecFleetobservability
+	_jsii_.Get(
+		j,
+		"fleetobservabilityInput",
 		&returns,
 	)
 	return returns
@@ -439,6 +463,17 @@ func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) InterpolationForAttribute(p
 	return returns
 }
 
+func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) PutFleetobservability(value *GkeHubFeatureSpecFleetobservability) {
+	if err := g.validatePutFleetobservabilityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putFleetobservability",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) PutMulticlusteringress(value *GkeHubFeatureSpecMulticlusteringress) {
 	if err := g.validatePutMulticlusteringressParameters(value); err != nil {
 		panic(err)
@@ -447,6 +482,14 @@ func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) PutMulticlusteringress(valu
 		g,
 		"putMulticlusteringress",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) ResetFleetobservability() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFleetobservability",
+		nil, // no parameters
 	)
 }
 

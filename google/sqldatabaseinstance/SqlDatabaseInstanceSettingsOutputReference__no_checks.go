@@ -60,6 +60,10 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutDataba
 	return nil
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutDataCacheConfigParameters(value *SqlDatabaseInstanceSettingsDataCacheConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutDenyMaintenancePeriodParameters(value *SqlDatabaseInstanceSettingsDenyMaintenancePeriod) error {
 	return nil
 }
@@ -133,6 +137,10 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetDiskSi
 }
 
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetDiskTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetEditionParameters(val *string) error {
 	return nil
 }
 

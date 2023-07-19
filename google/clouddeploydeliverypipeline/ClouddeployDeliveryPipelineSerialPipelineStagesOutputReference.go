@@ -25,6 +25,8 @@ type ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeployParameters() ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersList
+	DeployParametersInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -69,7 +71,9 @@ type ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDeployParameters(value interface{})
 	PutStrategy(value *ClouddeployDeliveryPipelineSerialPipelineStagesStrategy)
+	ResetDeployParameters()
 	ResetProfiles()
 	ResetStrategy()
 	ResetTargetId()
@@ -113,6 +117,26 @@ func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReferenc
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) DeployParameters() ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersList {
+	var returns ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersList
+	_jsii_.Get(
+		j,
+		"deployParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) DeployParametersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deployParametersInput",
 		&returns,
 	)
 	return returns
@@ -509,6 +533,17 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReferenc
 	return returns
 }
 
+func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) PutDeployParameters(value interface{}) {
+	if err := c.validatePutDeployParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDeployParameters",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) PutStrategy(value *ClouddeployDeliveryPipelineSerialPipelineStagesStrategy) {
 	if err := c.validatePutStrategyParameters(value); err != nil {
 		panic(err)
@@ -517,6 +552,14 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReferenc
 		c,
 		"putStrategy",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) ResetDeployParameters() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeployParameters",
+		nil, // no parameters
 	)
 }
 

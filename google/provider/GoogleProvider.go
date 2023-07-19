@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -95,6 +95,9 @@ type GoogleProvider interface {
 	CloudBuildCustomEndpoint() *string
 	SetCloudBuildCustomEndpoint(val *string)
 	CloudBuildCustomEndpointInput() *string
+	Cloudbuildv2CustomEndpoint() *string
+	SetCloudbuildv2CustomEndpoint(val *string)
+	Cloudbuildv2CustomEndpointInput() *string
 	CloudBuildWorkerPoolCustomEndpoint() *string
 	SetCloudBuildWorkerPoolCustomEndpoint(val *string)
 	CloudBuildWorkerPoolCustomEndpointInput() *string
@@ -286,6 +289,9 @@ type GoogleProvider interface {
 	NetworkManagementCustomEndpoint() *string
 	SetNetworkManagementCustomEndpoint(val *string)
 	NetworkManagementCustomEndpointInput() *string
+	NetworkSecurityCustomEndpoint() *string
+	SetNetworkSecurityCustomEndpoint(val *string)
+	NetworkSecurityCustomEndpointInput() *string
 	NetworkServicesCustomEndpoint() *string
 	SetNetworkServicesCustomEndpoint(val *string)
 	NetworkServicesCustomEndpointInput() *string
@@ -436,6 +442,7 @@ type GoogleProvider interface {
 	ResetCloudAssetCustomEndpoint()
 	ResetCloudBillingCustomEndpoint()
 	ResetCloudBuildCustomEndpoint()
+	ResetCloudbuildv2CustomEndpoint()
 	ResetCloudBuildWorkerPoolCustomEndpoint()
 	ResetClouddeployCustomEndpoint()
 	ResetCloudfunctions2CustomEndpoint()
@@ -497,6 +504,7 @@ type GoogleProvider interface {
 	ResetMonitoringCustomEndpoint()
 	ResetNetworkConnectivityCustomEndpoint()
 	ResetNetworkManagementCustomEndpoint()
+	ResetNetworkSecurityCustomEndpoint()
 	ResetNetworkServicesCustomEndpoint()
 	ResetNotebooksCustomEndpoint()
 	ResetOrgPolicyCustomEndpoint()
@@ -1096,6 +1104,26 @@ func (j *jsiiProxy_GoogleProvider) CloudBuildCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"cloudBuildCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) Cloudbuildv2CustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudbuildv2CustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) Cloudbuildv2CustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudbuildv2CustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -2361,6 +2389,26 @@ func (j *jsiiProxy_GoogleProvider) NetworkManagementCustomEndpointInput() *strin
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) NetworkSecurityCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkSecurityCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) NetworkSecurityCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkSecurityCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) NetworkServicesCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3132,7 +3180,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3150,7 +3198,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -3376,6 +3424,14 @@ func (j *jsiiProxy_GoogleProvider)SetCloudBuildCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"cloudBuildCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetCloudbuildv2CustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"cloudbuildv2CustomEndpoint",
 		val,
 	)
 }
@@ -3864,6 +3920,14 @@ func (j *jsiiProxy_GoogleProvider)SetNetworkManagementCustomEndpoint(val *string
 	_jsii_.Set(
 		j,
 		"networkManagementCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetNetworkSecurityCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"networkSecurityCustomEndpoint",
 		val,
 	)
 }
@@ -4481,6 +4545,14 @@ func (g *jsiiProxy_GoogleProvider) ResetCloudBuildCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetCloudbuildv2CustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCloudbuildv2CustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetCloudBuildWorkerPoolCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -4965,6 +5037,14 @@ func (g *jsiiProxy_GoogleProvider) ResetNetworkManagementCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetworkManagementCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetNetworkSecurityCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkSecurityCustomEndpoint",
 		nil, // no parameters
 	)
 }

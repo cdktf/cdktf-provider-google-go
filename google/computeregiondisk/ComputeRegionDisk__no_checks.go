@@ -52,6 +52,10 @@ func (c *jsiiProxy_ComputeRegionDisk) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionDisk) validatePutAsyncPrimaryDiskParameters(value *ComputeRegionDiskAsyncPrimaryDisk) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionDisk) validatePutDiskEncryptionKeyParameters(value *ComputeRegionDiskDiskEncryptionKey) error {
 	return nil
 }

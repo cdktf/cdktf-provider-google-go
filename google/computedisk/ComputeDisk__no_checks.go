@@ -52,6 +52,10 @@ func (c *jsiiProxy_ComputeDisk) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (c *jsiiProxy_ComputeDisk) validatePutAsyncPrimaryDiskParameters(value *ComputeDiskAsyncPrimaryDisk) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeDisk) validatePutDiskEncryptionKeyParameters(value *ComputeDiskDiskEncryptionKey) error {
 	return nil
 }

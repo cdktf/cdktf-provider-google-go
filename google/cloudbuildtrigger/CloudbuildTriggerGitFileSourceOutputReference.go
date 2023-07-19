@@ -35,6 +35,9 @@ type CloudbuildTriggerGitFileSourceOutputReference interface {
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	Repository() *string
+	SetRepository(val *string)
+	RepositoryInput() *string
 	RepoType() *string
 	SetRepoType(val *string)
 	RepoTypeInput() *string
@@ -77,6 +80,7 @@ type CloudbuildTriggerGitFileSourceOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetGithubEnterpriseConfig()
+	ResetRepository()
 	ResetRevision()
 	ResetUri()
 	// Produce the Token's value at resolution time.
@@ -179,6 +183,26 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) PathInput() *s
 	_jsii_.Get(
 		j,
 		"pathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) Repository() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) RepositoryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repositoryInput",
 		&returns,
 	)
 	return returns
@@ -343,6 +367,17 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetPath(val *st
 	_jsii_.Set(
 		j,
 		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetRepository(val *string) {
+	if err := j.validateSetRepositoryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"repository",
 		val,
 	)
 }
@@ -592,6 +627,14 @@ func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) ResetGithubEnt
 	_jsii_.InvokeVoid(
 		c,
 		"resetGithubEnterpriseConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) ResetRepository() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRepository",
 		nil, // no parameters
 	)
 }

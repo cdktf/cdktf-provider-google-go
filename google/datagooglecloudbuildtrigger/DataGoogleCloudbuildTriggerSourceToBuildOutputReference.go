@@ -31,6 +31,7 @@ type DataGoogleCloudbuildTriggerSourceToBuildOutputReference interface {
 	InternalValue() *DataGoogleCloudbuildTriggerSourceToBuild
 	SetInternalValue(val *DataGoogleCloudbuildTriggerSourceToBuild)
 	Ref() *string
+	Repository() *string
 	RepoType() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -145,6 +146,16 @@ func (j *jsiiProxy_DataGoogleCloudbuildTriggerSourceToBuildOutputReference) Ref(
 	_jsii_.Get(
 		j,
 		"ref",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerSourceToBuildOutputReference) Repository() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repository",
 		&returns,
 	)
 	return returns

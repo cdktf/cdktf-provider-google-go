@@ -45,6 +45,8 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	CreationStack() *[]*string
 	DatabaseFlags() SqlDatabaseInstanceSettingsDatabaseFlagsList
 	DatabaseFlagsInput() interface{}
+	DataCacheConfig() SqlDatabaseInstanceSettingsDataCacheConfigOutputReference
+	DataCacheConfigInput() *SqlDatabaseInstanceSettingsDataCacheConfig
 	DeletionProtectionEnabled() interface{}
 	SetDeletionProtectionEnabled(val interface{})
 	DeletionProtectionEnabledInput() interface{}
@@ -62,6 +64,9 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	DiskType() *string
 	SetDiskType(val *string)
 	DiskTypeInput() *string
+	Edition() *string
+	SetEdition(val *string)
+	EditionInput() *string
 	// Experimental.
 	Fqn() *string
 	InsightsConfig() SqlDatabaseInstanceSettingsInsightsConfigOutputReference
@@ -127,6 +132,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	PutAdvancedMachineFeatures(value *SqlDatabaseInstanceSettingsAdvancedMachineFeatures)
 	PutBackupConfiguration(value *SqlDatabaseInstanceSettingsBackupConfiguration)
 	PutDatabaseFlags(value interface{})
+	PutDataCacheConfig(value *SqlDatabaseInstanceSettingsDataCacheConfig)
 	PutDenyMaintenancePeriod(value *SqlDatabaseInstanceSettingsDenyMaintenancePeriod)
 	PutInsightsConfig(value *SqlDatabaseInstanceSettingsInsightsConfig)
 	PutIpConfiguration(value *SqlDatabaseInstanceSettingsIpConfiguration)
@@ -142,12 +148,14 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ResetCollation()
 	ResetConnectorEnforcement()
 	ResetDatabaseFlags()
+	ResetDataCacheConfig()
 	ResetDeletionProtectionEnabled()
 	ResetDenyMaintenancePeriod()
 	ResetDiskAutoresize()
 	ResetDiskAutoresizeLimit()
 	ResetDiskSize()
 	ResetDiskType()
+	ResetEdition()
 	ResetInsightsConfig()
 	ResetIpConfiguration()
 	ResetLocationPreference()
@@ -362,6 +370,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DatabaseFlagsInpu
 	return returns
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DataCacheConfig() SqlDatabaseInstanceSettingsDataCacheConfigOutputReference {
+	var returns SqlDatabaseInstanceSettingsDataCacheConfigOutputReference
+	_jsii_.Get(
+		j,
+		"dataCacheConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DataCacheConfigInput() *SqlDatabaseInstanceSettingsDataCacheConfig {
+	var returns *SqlDatabaseInstanceSettingsDataCacheConfig
+	_jsii_.Get(
+		j,
+		"dataCacheConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -477,6 +505,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) DiskTypeInput() *
 	_jsii_.Get(
 		j,
 		"diskTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) Edition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EditionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"editionInput",
 		&returns,
 	)
 	return returns
@@ -881,6 +929,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetDiskType(val *s
 	)
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetEdition(val *string) {
+	if err := j.validateSetEditionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"edition",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetInternalValue(val *SqlDatabaseInstanceSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -1188,6 +1247,17 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutDatabaseFlags(
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutDataCacheConfig(value *SqlDatabaseInstanceSettingsDataCacheConfig) {
+	if err := s.validatePutDataCacheConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putDataCacheConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutDenyMaintenancePeriod(value *SqlDatabaseInstanceSettingsDenyMaintenancePeriod) {
 	if err := s.validatePutDenyMaintenancePeriodParameters(value); err != nil {
 		panic(err)
@@ -1329,6 +1399,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetDatabaseFlag
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetDataCacheConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDataCacheConfig",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetDeletionProtectionEnabled() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1373,6 +1451,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetDiskType() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDiskType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetEdition() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEdition",
 		nil, // no parameters
 	)
 }

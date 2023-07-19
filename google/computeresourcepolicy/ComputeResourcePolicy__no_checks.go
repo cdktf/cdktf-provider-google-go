@@ -52,6 +52,10 @@ func (c *jsiiProxy_ComputeResourcePolicy) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (c *jsiiProxy_ComputeResourcePolicy) validatePutDiskConsistencyGroupPolicyParameters(value *ComputeResourcePolicyDiskConsistencyGroupPolicy) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeResourcePolicy) validatePutGroupPlacementPolicyParameters(value *ComputeResourcePolicyGroupPlacementPolicy) error {
 	return nil
 }

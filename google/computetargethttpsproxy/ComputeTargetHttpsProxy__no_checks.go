@@ -84,6 +84,10 @@ func (j *jsiiProxy_ComputeTargetHttpsProxy) validateSetDescriptionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ComputeTargetHttpsProxy) validateSetHttpKeepAliveTimeoutSecParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeTargetHttpsProxy) validateSetIdParameters(val *string) error {
 	return nil
 }

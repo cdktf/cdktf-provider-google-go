@@ -577,6 +577,45 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfig",
+		reflect.TypeOf((*SqlDatabaseInstanceSettingsDataCacheConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference",
+		reflect.TypeOf((*SqlDatabaseInstanceSettingsDataCacheConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataCacheEnabled", GoGetter: "DataCacheEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "dataCacheEnabledInput", GoGetter: "DataCacheEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDataCacheEnabled", GoMethod: "ResetDataCacheEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags",
 		reflect.TypeOf((*SqlDatabaseInstanceSettingsDatabaseFlags)(nil)).Elem(),
 	)
@@ -964,6 +1003,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "databaseFlags", GoGetter: "DatabaseFlags"},
 			_jsii_.MemberProperty{JsiiProperty: "databaseFlagsInput", GoGetter: "DatabaseFlagsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dataCacheConfig", GoGetter: "DataCacheConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "dataCacheConfigInput", GoGetter: "DataCacheConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "deletionProtectionEnabled", GoGetter: "DeletionProtectionEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "deletionProtectionEnabledInput", GoGetter: "DeletionProtectionEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "denyMaintenancePeriod", GoGetter: "DenyMaintenancePeriod"},
@@ -976,6 +1017,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "diskSizeInput", GoGetter: "DiskSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "diskType", GoGetter: "DiskType"},
 			_jsii_.MemberProperty{JsiiProperty: "diskTypeInput", GoGetter: "DiskTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "edition", GoGetter: "Edition"},
+			_jsii_.MemberProperty{JsiiProperty: "editionInput", GoGetter: "EditionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -1005,6 +1048,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAdvancedMachineFeatures", GoMethod: "PutAdvancedMachineFeatures"},
 			_jsii_.MemberMethod{JsiiMethod: "putBackupConfiguration", GoMethod: "PutBackupConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putDatabaseFlags", GoMethod: "PutDatabaseFlags"},
+			_jsii_.MemberMethod{JsiiMethod: "putDataCacheConfig", GoMethod: "PutDataCacheConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putDenyMaintenancePeriod", GoMethod: "PutDenyMaintenancePeriod"},
 			_jsii_.MemberMethod{JsiiMethod: "putInsightsConfig", GoMethod: "PutInsightsConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putIpConfiguration", GoMethod: "PutIpConfiguration"},
@@ -1020,12 +1064,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCollation", GoMethod: "ResetCollation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectorEnforcement", GoMethod: "ResetConnectorEnforcement"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabaseFlags", GoMethod: "ResetDatabaseFlags"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDataCacheConfig", GoMethod: "ResetDataCacheConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeletionProtectionEnabled", GoMethod: "ResetDeletionProtectionEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDenyMaintenancePeriod", GoMethod: "ResetDenyMaintenancePeriod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskAutoresize", GoMethod: "ResetDiskAutoresize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskAutoresizeLimit", GoMethod: "ResetDiskAutoresizeLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskSize", GoMethod: "ResetDiskSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskType", GoMethod: "ResetDiskType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEdition", GoMethod: "ResetEdition"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInsightsConfig", GoMethod: "ResetInsightsConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpConfiguration", GoMethod: "ResetIpConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocationPreference", GoMethod: "ResetLocationPreference"},

@@ -43,6 +43,9 @@ type VertexAiIndexMetadataConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *VertexAiIndexMetadataConfig
 	SetInternalValue(val *VertexAiIndexMetadataConfig)
+	ShardSize() *string
+	SetShardSize(val *string)
+	ShardSizeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -80,6 +83,7 @@ type VertexAiIndexMetadataConfigOutputReference interface {
 	ResetApproximateNeighborsCount()
 	ResetDistanceMeasureType()
 	ResetFeatureNormType()
+	ResetShardSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -245,6 +249,26 @@ func (j *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) InternalValue() *
 	return returns
 }
 
+func (j *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) ShardSize() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shardSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) ShardSizeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shardSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -366,6 +390,17 @@ func (j *jsiiProxy_VertexAiIndexMetadataConfigOutputReference)SetInternalValue(v
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VertexAiIndexMetadataConfigOutputReference)SetShardSize(val *string) {
+	if err := j.validateSetShardSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shardSize",
 		val,
 	)
 }
@@ -617,6 +652,14 @@ func (v *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) ResetFeatureNormT
 	_jsii_.InvokeVoid(
 		v,
 		"resetFeatureNormType",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) ResetShardSize() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetShardSize",
 		nil, // no parameters
 	)
 }

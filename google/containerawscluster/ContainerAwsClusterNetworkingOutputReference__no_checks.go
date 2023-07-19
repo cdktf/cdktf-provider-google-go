@@ -60,6 +60,10 @@ func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) validateSetInte
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) validateSetPerNodePoolSgRulesDisabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAwsClusterNetworkingOutputReference) validateSetPodAddressCidrBlocksParameters(val *[]*string) error {
 	return nil
 }

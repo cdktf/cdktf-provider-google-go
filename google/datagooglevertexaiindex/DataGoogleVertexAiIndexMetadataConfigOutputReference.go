@@ -34,6 +34,7 @@ type DataGoogleVertexAiIndexMetadataConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleVertexAiIndexMetadataConfig
 	SetInternalValue(val *DataGoogleVertexAiIndexMetadataConfig)
+	ShardSize() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -176,6 +177,16 @@ func (j *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigOutputReference) Interna
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigOutputReference) ShardSize() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"shardSize",
 		&returns,
 	)
 	return returns

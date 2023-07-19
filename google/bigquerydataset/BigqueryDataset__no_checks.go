@@ -144,6 +144,10 @@ func (j *jsiiProxy_BigqueryDataset) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryDataset) validateSetStorageBillingModelParameters(val *string) error {
+	return nil
+}
+
 func validateNewBigqueryDatasetParameters(scope constructs.Construct, id *string, config *BigqueryDatasetConfig) error {
 	return nil
 }

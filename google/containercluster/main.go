@@ -2117,6 +2117,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "managedPrometheus", GoGetter: "ManagedPrometheus"},
 			_jsii_.MemberProperty{JsiiProperty: "managedPrometheusInput", GoGetter: "ManagedPrometheusInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putManagedPrometheus", GoMethod: "PutManagedPrometheus"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnableComponents", GoMethod: "ResetEnableComponents"},
 			_jsii_.MemberMethod{JsiiMethod: "resetManagedPrometheus", GoMethod: "ResetManagedPrometheus"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

@@ -68,6 +68,10 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateSetPat
 	return nil
 }
 
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateSetRepositoryParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateSetRepoTypeParameters(val *string) error {
 	return nil
 }

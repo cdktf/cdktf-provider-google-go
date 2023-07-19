@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/compute_resource_policy google_compute_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/compute_resource_policy google_compute_resource_policy}.
 type ComputeResourcePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,8 @@ type ComputeResourcePolicy interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DiskConsistencyGroupPolicy() ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference
+	DiskConsistencyGroupPolicyInput() *ComputeResourcePolicyDiskConsistencyGroupPolicy
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -107,11 +109,13 @@ type ComputeResourcePolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDiskConsistencyGroupPolicy(value *ComputeResourcePolicyDiskConsistencyGroupPolicy)
 	PutGroupPlacementPolicy(value *ComputeResourcePolicyGroupPlacementPolicy)
 	PutInstanceSchedulePolicy(value *ComputeResourcePolicyInstanceSchedulePolicy)
 	PutSnapshotSchedulePolicy(value *ComputeResourcePolicySnapshotSchedulePolicy)
 	PutTimeouts(value *ComputeResourcePolicyTimeouts)
 	ResetDescription()
+	ResetDiskConsistencyGroupPolicy()
 	ResetGroupPlacementPolicy()
 	ResetId()
 	ResetInstanceSchedulePolicy()
@@ -202,6 +206,26 @@ func (j *jsiiProxy_ComputeResourcePolicy) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeResourcePolicy) DiskConsistencyGroupPolicy() ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference {
+	var returns ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"diskConsistencyGroupPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeResourcePolicy) DiskConsistencyGroupPolicyInput() *ComputeResourcePolicyDiskConsistencyGroupPolicy {
+	var returns *ComputeResourcePolicyDiskConsistencyGroupPolicy
+	_jsii_.Get(
+		j,
+		"diskConsistencyGroupPolicyInput",
 		&returns,
 	)
 	return returns
@@ -488,7 +512,7 @@ func (j *jsiiProxy_ComputeResourcePolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/compute_resource_policy google_compute_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/compute_resource_policy google_compute_resource_policy} Resource.
 func NewComputeResourcePolicy(scope constructs.Construct, id *string, config *ComputeResourcePolicyConfig) ComputeResourcePolicy {
 	_init_.Initialize()
 
@@ -506,7 +530,7 @@ func NewComputeResourcePolicy(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/compute_resource_policy google_compute_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/compute_resource_policy google_compute_resource_policy} Resource.
 func NewComputeResourcePolicy_Override(c ComputeResourcePolicy, scope constructs.Construct, id *string, config *ComputeResourcePolicyConfig) {
 	_init_.Initialize()
 
@@ -906,6 +930,17 @@ func (c *jsiiProxy_ComputeResourcePolicy) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (c *jsiiProxy_ComputeResourcePolicy) PutDiskConsistencyGroupPolicy(value *ComputeResourcePolicyDiskConsistencyGroupPolicy) {
+	if err := c.validatePutDiskConsistencyGroupPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDiskConsistencyGroupPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeResourcePolicy) PutGroupPlacementPolicy(value *ComputeResourcePolicyGroupPlacementPolicy) {
 	if err := c.validatePutGroupPlacementPolicyParameters(value); err != nil {
 		panic(err)
@@ -954,6 +989,14 @@ func (c *jsiiProxy_ComputeResourcePolicy) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeResourcePolicy) ResetDiskConsistencyGroupPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDiskConsistencyGroupPolicy",
 		nil, // no parameters
 	)
 }

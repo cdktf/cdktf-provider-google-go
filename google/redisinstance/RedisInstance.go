@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/redis_instance google_redis_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/redis_instance google_redis_instance}.
 type RedisInstance interface {
 	cdktf.TerraformResource
 	AlternativeLocationId() *string
@@ -73,8 +73,7 @@ type RedisInstance interface {
 	LocationIdInput() *string
 	MaintenancePolicy() RedisInstanceMaintenancePolicyOutputReference
 	MaintenancePolicyInput() *RedisInstanceMaintenancePolicy
-	MaintenanceSchedule() RedisInstanceMaintenanceScheduleOutputReference
-	MaintenanceScheduleInput() *RedisInstanceMaintenanceSchedule
+	MaintenanceSchedule() RedisInstanceMaintenanceScheduleList
 	MemorySizeGb() *float64
 	SetMemorySizeGb(val *float64)
 	MemorySizeGbInput() *float64
@@ -165,7 +164,6 @@ type RedisInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMaintenancePolicy(value *RedisInstanceMaintenancePolicy)
-	PutMaintenanceSchedule(value *RedisInstanceMaintenanceSchedule)
 	PutPersistenceConfig(value *RedisInstancePersistenceConfig)
 	PutTimeouts(value *RedisInstanceTimeouts)
 	ResetAlternativeLocationId()
@@ -178,7 +176,6 @@ type RedisInstance interface {
 	ResetLabels()
 	ResetLocationId()
 	ResetMaintenancePolicy()
-	ResetMaintenanceSchedule()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -539,21 +536,11 @@ func (j *jsiiProxy_RedisInstance) MaintenancePolicyInput() *RedisInstanceMainten
 	return returns
 }
 
-func (j *jsiiProxy_RedisInstance) MaintenanceSchedule() RedisInstanceMaintenanceScheduleOutputReference {
-	var returns RedisInstanceMaintenanceScheduleOutputReference
+func (j *jsiiProxy_RedisInstance) MaintenanceSchedule() RedisInstanceMaintenanceScheduleList {
+	var returns RedisInstanceMaintenanceScheduleList
 	_jsii_.Get(
 		j,
 		"maintenanceSchedule",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RedisInstance) MaintenanceScheduleInput() *RedisInstanceMaintenanceSchedule {
-	var returns *RedisInstanceMaintenanceSchedule
-	_jsii_.Get(
-		j,
-		"maintenanceScheduleInput",
 		&returns,
 	)
 	return returns
@@ -970,7 +957,7 @@ func (j *jsiiProxy_RedisInstance) TransitEncryptionModeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/redis_instance google_redis_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/redis_instance google_redis_instance} Resource.
 func NewRedisInstance(scope constructs.Construct, id *string, config *RedisInstanceConfig) RedisInstance {
 	_init_.Initialize()
 
@@ -988,7 +975,7 @@ func NewRedisInstance(scope constructs.Construct, id *string, config *RedisInsta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/redis_instance google_redis_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/redis_instance google_redis_instance} Resource.
 func NewRedisInstance_Override(r RedisInstance, scope constructs.Construct, id *string, config *RedisInstanceConfig) {
 	_init_.Initialize()
 
@@ -1575,17 +1562,6 @@ func (r *jsiiProxy_RedisInstance) PutMaintenancePolicy(value *RedisInstanceMaint
 	)
 }
 
-func (r *jsiiProxy_RedisInstance) PutMaintenanceSchedule(value *RedisInstanceMaintenanceSchedule) {
-	if err := r.validatePutMaintenanceScheduleParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		r,
-		"putMaintenanceSchedule",
-		[]interface{}{value},
-	)
-}
-
 func (r *jsiiProxy_RedisInstance) PutPersistenceConfig(value *RedisInstancePersistenceConfig) {
 	if err := r.validatePutPersistenceConfigParameters(value); err != nil {
 		panic(err)
@@ -1684,14 +1660,6 @@ func (r *jsiiProxy_RedisInstance) ResetMaintenancePolicy() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetMaintenancePolicy",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RedisInstance) ResetMaintenanceSchedule() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetMaintenanceSchedule",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/clouddeploy_target google_clouddeploy_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/clouddeploy_target google_clouddeploy_target}.
 type ClouddeployTarget interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -34,6 +34,9 @@ type ClouddeployTarget interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DeployParameters() *map[string]*string
+	SetDeployParameters(val *map[string]*string)
+	DeployParametersInput() *map[string]*string
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
@@ -129,6 +132,7 @@ type ClouddeployTarget interface {
 	PutTimeouts(value *ClouddeployTargetTimeouts)
 	ResetAnnotations()
 	ResetAnthosCluster()
+	ResetDeployParameters()
 	ResetDescription()
 	ResetExecutionConfigs()
 	ResetGke()
@@ -251,6 +255,26 @@ func (j *jsiiProxy_ClouddeployTarget) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployTarget) DeployParameters() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"deployParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployTarget) DeployParametersInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"deployParametersInput",
 		&returns,
 	)
 	return returns
@@ -627,7 +651,7 @@ func (j *jsiiProxy_ClouddeployTarget) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
 func NewClouddeployTarget(scope constructs.Construct, id *string, config *ClouddeployTargetConfig) ClouddeployTarget {
 	_init_.Initialize()
 
@@ -645,7 +669,7 @@ func NewClouddeployTarget(scope constructs.Construct, id *string, config *Cloudd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
 func NewClouddeployTarget_Override(c ClouddeployTarget, scope constructs.Construct, id *string, config *ClouddeployTargetConfig) {
 	_init_.Initialize()
 
@@ -693,6 +717,17 @@ func (j *jsiiProxy_ClouddeployTarget)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ClouddeployTarget)SetDeployParameters(val *map[string]*string) {
+	if err := j.validateSetDeployParametersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deployParameters",
 		val,
 	)
 }
@@ -1145,6 +1180,14 @@ func (c *jsiiProxy_ClouddeployTarget) ResetAnthosCluster() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAnthosCluster",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClouddeployTarget) ResetDeployParameters() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeployParameters",
 		nil, // no parameters
 	)
 }

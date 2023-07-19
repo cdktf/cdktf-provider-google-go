@@ -10,6 +10,8 @@ import (
 
 type ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference interface {
 	cdktf.ComplexObject
+	Canary() ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryOutputReference
+	CanaryInput() *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -63,7 +65,9 @@ type ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCanary(value *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary)
 	PutStandard(value *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard)
+	ResetCanary()
 	ResetStandard()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -78,6 +82,26 @@ type ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference inte
 // The jsii proxy struct for ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference
 type jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference) Canary() ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryOutputReference {
+	var returns ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryOutputReference
+	_jsii_.Get(
+		j,
+		"canary",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference) CanaryInput() *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary {
+	var returns *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary
+	_jsii_.Get(
+		j,
+		"canaryInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference) ComplexObjectIndex() interface{} {
@@ -439,6 +463,17 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutput
 	return returns
 }
 
+func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference) PutCanary(value *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary) {
+	if err := c.validatePutCanaryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCanary",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference) PutStandard(value *ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard) {
 	if err := c.validatePutStandardParameters(value); err != nil {
 		panic(err)
@@ -447,6 +482,14 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutput
 		c,
 		"putStandard",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference) ResetCanary() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCanary",
+		nil, // no parameters
 	)
 }
 

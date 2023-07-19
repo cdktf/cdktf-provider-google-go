@@ -80,6 +80,10 @@ func (j *jsiiProxy_ContainerAwsClusterControlPlaneRootVolumeOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneRootVolumeOutputReference) validateSetThroughputParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAwsClusterControlPlaneRootVolumeOutputReference) validateSetVolumeTypeParameters(val *string) error {
 	return nil
 }

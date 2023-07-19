@@ -214,6 +214,14 @@ func (j *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) validateSetIntern
 	return nil
 }
 
+func (j *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) validateSetShardSizeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

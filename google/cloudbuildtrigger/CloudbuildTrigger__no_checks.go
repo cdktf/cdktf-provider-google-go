@@ -76,6 +76,10 @@ func (c *jsiiProxy_CloudbuildTrigger) validatePutPubsubConfigParameters(value *C
 	return nil
 }
 
+func (c *jsiiProxy_CloudbuildTrigger) validatePutRepositoryEventConfigParameters(value *CloudbuildTriggerRepositoryEventConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudbuildTrigger) validatePutSourceToBuildParameters(value *CloudbuildTriggerSourceToBuild) error {
 	return nil
 }

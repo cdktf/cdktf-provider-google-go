@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/data-sources/dataproc_job_iam_policy google_dataproc_job_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/data-sources/dataproc_job_iam_policy google_dataproc_job_iam_policy}.
 type DataGoogleDataprocJobIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataGoogleDataprocJobIamPolicy) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/data-sources/dataproc_job_iam_policy google_dataproc_job_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/data-sources/dataproc_job_iam_policy google_dataproc_job_iam_policy} Data Source.
 func NewDataGoogleDataprocJobIamPolicy(scope constructs.Construct, id *string, config *DataGoogleDataprocJobIamPolicyConfig) DataGoogleDataprocJobIamPolicy {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataGoogleDataprocJobIamPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/data-sources/dataproc_job_iam_policy google_dataproc_job_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/data-sources/dataproc_job_iam_policy google_dataproc_job_iam_policy} Data Source.
 func NewDataGoogleDataprocJobIamPolicy_Override(d DataGoogleDataprocJobIamPolicy, scope constructs.Construct, id *string, config *DataGoogleDataprocJobIamPolicyConfig) {
 	_init_.Initialize()
 

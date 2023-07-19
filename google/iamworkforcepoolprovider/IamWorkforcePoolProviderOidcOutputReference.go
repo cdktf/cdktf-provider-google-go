@@ -13,6 +13,8 @@ type IamWorkforcePoolProviderOidcOutputReference interface {
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
+	ClientSecret() IamWorkforcePoolProviderOidcClientSecretOutputReference
+	ClientSecretInput() *IamWorkforcePoolProviderOidcClientSecret
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -69,7 +71,9 @@ type IamWorkforcePoolProviderOidcOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutClientSecret(value *IamWorkforcePoolProviderOidcClientSecret)
 	PutWebSsoConfig(value *IamWorkforcePoolProviderOidcWebSsoConfig)
+	ResetClientSecret()
 	ResetWebSsoConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -101,6 +105,26 @@ func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) ClientIdInput() 
 	_jsii_.Get(
 		j,
 		"clientIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) ClientSecret() IamWorkforcePoolProviderOidcClientSecretOutputReference {
+	var returns IamWorkforcePoolProviderOidcClientSecretOutputReference
+	_jsii_.Get(
+		j,
+		"clientSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) ClientSecretInput() *IamWorkforcePoolProviderOidcClientSecret {
+	var returns *IamWorkforcePoolProviderOidcClientSecret
+	_jsii_.Get(
+		j,
+		"clientSecretInput",
 		&returns,
 	)
 	return returns
@@ -507,6 +531,17 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) InterpolationFor
 	return returns
 }
 
+func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) PutClientSecret(value *IamWorkforcePoolProviderOidcClientSecret) {
+	if err := i.validatePutClientSecretParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putClientSecret",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) PutWebSsoConfig(value *IamWorkforcePoolProviderOidcWebSsoConfig) {
 	if err := i.validatePutWebSsoConfigParameters(value); err != nil {
 		panic(err)
@@ -515,6 +550,14 @@ func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) PutWebSsoConfig(
 		i,
 		"putWebSsoConfig",
 		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) ResetClientSecret() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetClientSecret",
+		nil, // no parameters
 	)
 }
 

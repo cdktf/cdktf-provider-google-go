@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/vertex_ai_tensorboard google_vertex_ai_tensorboard}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/vertex_ai_tensorboard google_vertex_ai_tensorboard}.
 type VertexAiTensorboard interface {
 	cdktf.TerraformResource
 	BlobStoragePathPrefix() *string
@@ -508,7 +508,7 @@ func (j *jsiiProxy_VertexAiTensorboard) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/vertex_ai_tensorboard google_vertex_ai_tensorboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/vertex_ai_tensorboard google_vertex_ai_tensorboard} Resource.
 func NewVertexAiTensorboard(scope constructs.Construct, id *string, config *VertexAiTensorboardConfig) VertexAiTensorboard {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewVertexAiTensorboard(scope constructs.Construct, id *string, config *Vert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/vertex_ai_tensorboard google_vertex_ai_tensorboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/vertex_ai_tensorboard google_vertex_ai_tensorboard} Resource.
 func NewVertexAiTensorboard_Override(v VertexAiTensorboard, scope constructs.Construct, id *string, config *VertexAiTensorboardConfig) {
 	_init_.Initialize()
 

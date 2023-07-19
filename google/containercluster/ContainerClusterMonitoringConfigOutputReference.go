@@ -67,6 +67,7 @@ type ContainerClusterMonitoringConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutManagedPrometheus(value *ContainerClusterMonitoringConfigManagedPrometheus)
+	ResetEnableComponents()
 	ResetManagedPrometheus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -481,6 +482,14 @@ func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) PutManagedPr
 		c,
 		"putManagedPrometheus",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) ResetEnableComponents() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableComponents",
+		nil, // no parameters
 	)
 }
 

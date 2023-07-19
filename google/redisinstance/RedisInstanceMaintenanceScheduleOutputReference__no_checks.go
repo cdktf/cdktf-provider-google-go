@@ -68,7 +68,7 @@ func (j *jsiiProxy_RedisInstanceMaintenanceScheduleOutputReference) validateSetT
 	return nil
 }
 
-func validateNewRedisInstanceMaintenanceScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRedisInstanceMaintenanceScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

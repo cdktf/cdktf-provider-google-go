@@ -33,12 +33,14 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DatabaseFlags() DataGoogleSqlDatabaseInstancesInstancesSettingsDatabaseFlagsList
+	DataCacheConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsDataCacheConfigList
 	DeletionProtectionEnabled() cdktf.IResolvable
 	DenyMaintenancePeriod() DataGoogleSqlDatabaseInstancesInstancesSettingsDenyMaintenancePeriodList
 	DiskAutoresize() cdktf.IResolvable
 	DiskAutoresizeLimit() *float64
 	DiskSize() *float64
 	DiskType() *string
+	Edition() *string
 	// Experimental.
 	Fqn() *string
 	InsightsConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsInsightsConfigList
@@ -211,6 +213,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) DataCacheConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsDataCacheConfigList {
+	var returns DataGoogleSqlDatabaseInstancesInstancesSettingsDataCacheConfigList
+	_jsii_.Get(
+		j,
+		"dataCacheConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) DeletionProtectionEnabled() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -266,6 +278,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReferenc
 	_jsii_.Get(
 		j,
 		"diskType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) Edition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edition",
 		&returns,
 	)
 	return returns

@@ -154,6 +154,17 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutDataba
 	return nil
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutDataCacheConfigParameters(value *SqlDatabaseInstanceSettingsDataCacheConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutDenyMaintenancePeriodParameters(value *SqlDatabaseInstanceSettingsDenyMaintenancePeriod) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -393,6 +404,14 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetDiskSi
 }
 
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetDiskTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetEditionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

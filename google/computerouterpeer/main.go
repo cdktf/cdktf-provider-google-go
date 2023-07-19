@@ -85,6 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetIpAddress", GoMethod: "ResetIpAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpv6NexthopAddress", GoMethod: "ResetIpv6NexthopAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPeerIpAddress", GoMethod: "ResetPeerIpAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPeerIpv6NexthopAddress", GoMethod: "ResetPeerIpv6NexthopAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/cloudbuild_trigger google_cloudbuild_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/cloudbuild_trigger google_cloudbuild_trigger}.
 type CloudbuildTrigger interface {
 	cdktf.TerraformResource
 	ApprovalConfig() CloudbuildTriggerApprovalConfigOutputReference
@@ -98,6 +98,8 @@ type CloudbuildTrigger interface {
 	PubsubConfigInput() *CloudbuildTriggerPubsubConfig
 	// Experimental.
 	RawOverrides() interface{}
+	RepositoryEventConfig() CloudbuildTriggerRepositoryEventConfigOutputReference
+	RepositoryEventConfigInput() *CloudbuildTriggerRepositoryEventConfig
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -153,6 +155,7 @@ type CloudbuildTrigger interface {
 	PutGitFileSource(value *CloudbuildTriggerGitFileSource)
 	PutGithub(value *CloudbuildTriggerGithub)
 	PutPubsubConfig(value *CloudbuildTriggerPubsubConfig)
+	PutRepositoryEventConfig(value *CloudbuildTriggerRepositoryEventConfig)
 	PutSourceToBuild(value *CloudbuildTriggerSourceToBuild)
 	PutTimeouts(value *CloudbuildTriggerTimeouts)
 	PutTriggerTemplate(value *CloudbuildTriggerTriggerTemplate)
@@ -177,6 +180,7 @@ type CloudbuildTrigger interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetPubsubConfig()
+	ResetRepositoryEventConfig()
 	ResetServiceAccount()
 	ResetSourceToBuild()
 	ResetSubstitutions()
@@ -679,6 +683,26 @@ func (j *jsiiProxy_CloudbuildTrigger) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CloudbuildTrigger) RepositoryEventConfig() CloudbuildTriggerRepositoryEventConfigOutputReference {
+	var returns CloudbuildTriggerRepositoryEventConfigOutputReference
+	_jsii_.Get(
+		j,
+		"repositoryEventConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTrigger) RepositoryEventConfigInput() *CloudbuildTriggerRepositoryEventConfig {
+	var returns *CloudbuildTriggerRepositoryEventConfig
+	_jsii_.Get(
+		j,
+		"repositoryEventConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudbuildTrigger) ServiceAccount() *string {
 	var returns *string
 	_jsii_.Get(
@@ -860,7 +884,7 @@ func (j *jsiiProxy_CloudbuildTrigger) WebhookConfigInput() *CloudbuildTriggerWeb
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/cloudbuild_trigger google_cloudbuild_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/cloudbuild_trigger google_cloudbuild_trigger} Resource.
 func NewCloudbuildTrigger(scope constructs.Construct, id *string, config *CloudbuildTriggerConfig) CloudbuildTrigger {
 	_init_.Initialize()
 
@@ -878,7 +902,7 @@ func NewCloudbuildTrigger(scope constructs.Construct, id *string, config *Cloudb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/cloudbuild_trigger google_cloudbuild_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/cloudbuild_trigger google_cloudbuild_trigger} Resource.
 func NewCloudbuildTrigger_Override(c CloudbuildTrigger, scope constructs.Construct, id *string, config *CloudbuildTriggerConfig) {
 	_init_.Initialize()
 
@@ -1443,6 +1467,17 @@ func (c *jsiiProxy_CloudbuildTrigger) PutPubsubConfig(value *CloudbuildTriggerPu
 	)
 }
 
+func (c *jsiiProxy_CloudbuildTrigger) PutRepositoryEventConfig(value *CloudbuildTriggerRepositoryEventConfig) {
+	if err := c.validatePutRepositoryEventConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRepositoryEventConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudbuildTrigger) PutSourceToBuild(value *CloudbuildTriggerSourceToBuild) {
 	if err := c.validatePutSourceToBuildParameters(value); err != nil {
 		panic(err)
@@ -1627,6 +1662,14 @@ func (c *jsiiProxy_CloudbuildTrigger) ResetPubsubConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetPubsubConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudbuildTrigger) ResetRepositoryEventConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRepositoryEventConfig",
 		nil, // no parameters
 	)
 }

@@ -46,6 +46,9 @@ type ContainerAwsClusterControlPlaneMainVolumeOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Throughput() *float64
+	SetThroughput(val *float64)
+	ThroughputInput() *float64
 	VolumeType() *string
 	SetVolumeType(val *string)
 	VolumeTypeInput() *string
@@ -76,6 +79,7 @@ type ContainerAwsClusterControlPlaneMainVolumeOutputReference interface {
 	ResetIops()
 	ResetKmsKeyArn()
 	ResetSizeGib()
+	ResetThroughput()
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -222,6 +226,26 @@ func (j *jsiiProxy_ContainerAwsClusterControlPlaneMainVolumeOutputReference) Ter
 	return returns
 }
 
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneMainVolumeOutputReference) Throughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"throughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneMainVolumeOutputReference) ThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"throughputInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerAwsClusterControlPlaneMainVolumeOutputReference) VolumeType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -354,6 +378,17 @@ func (j *jsiiProxy_ContainerAwsClusterControlPlaneMainVolumeOutputReference)SetT
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAwsClusterControlPlaneMainVolumeOutputReference)SetThroughput(val *float64) {
+	if err := j.validateSetThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"throughput",
 		val,
 	)
 }
@@ -575,6 +610,14 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneMainVolumeOutputReference) Res
 	_jsii_.InvokeVoid(
 		c,
 		"resetSizeGib",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAwsClusterControlPlaneMainVolumeOutputReference) ResetThroughput() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetThroughput",
 		nil, // no parameters
 	)
 }

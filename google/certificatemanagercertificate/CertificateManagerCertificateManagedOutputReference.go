@@ -36,6 +36,9 @@ type CertificateManagerCertificateManagedOutputReference interface {
 	Fqn() *string
 	InternalValue() *CertificateManagerCertificateManaged
 	SetInternalValue(val *CertificateManagerCertificateManaged)
+	IssuanceConfig() *string
+	SetIssuanceConfig(val *string)
+	IssuanceConfigInput() *string
 	ProvisioningIssue() CertificateManagerCertificateManagedProvisioningIssueList
 	State() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type CertificateManagerCertificateManagedOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDnsAuthorizations()
 	ResetDomains()
+	ResetIssuanceConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -182,6 +186,26 @@ func (j *jsiiProxy_CertificateManagerCertificateManagedOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificateManagerCertificateManagedOutputReference) IssuanceConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificateManagerCertificateManagedOutputReference) IssuanceConfigInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuanceConfigInput",
 		&returns,
 	)
 	return returns
@@ -306,6 +330,17 @@ func (j *jsiiProxy_CertificateManagerCertificateManagedOutputReference)SetIntern
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificateManagerCertificateManagedOutputReference)SetIssuanceConfig(val *string) {
+	if err := j.validateSetIssuanceConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"issuanceConfig",
 		val,
 	)
 }
@@ -530,6 +565,14 @@ func (c *jsiiProxy_CertificateManagerCertificateManagedOutputReference) ResetDom
 	_jsii_.InvokeVoid(
 		c,
 		"resetDomains",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificateManagerCertificateManagedOutputReference) ResetIssuanceConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIssuanceConfig",
 		nil, // no parameters
 	)
 }

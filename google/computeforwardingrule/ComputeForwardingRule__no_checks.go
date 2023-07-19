@@ -140,6 +140,10 @@ func (j *jsiiProxy_ComputeForwardingRule) validateSetNetworkTierParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_ComputeForwardingRule) validateSetNoAutomateDnsZoneParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeForwardingRule) validateSetPortRangeParameters(val *string) error {
 	return nil
 }

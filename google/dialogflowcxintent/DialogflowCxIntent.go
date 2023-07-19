@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/dialogflow_cx_intent google_dialogflow_cx_intent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/dialogflow_cx_intent google_dialogflow_cx_intent}.
 type DialogflowCxIntent interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -536,7 +536,7 @@ func (j *jsiiProxy_DialogflowCxIntent) TrainingPhrasesInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
 func NewDialogflowCxIntent(scope constructs.Construct, id *string, config *DialogflowCxIntentConfig) DialogflowCxIntent {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewDialogflowCxIntent(scope constructs.Construct, id *string, config *Dialo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
 func NewDialogflowCxIntent_Override(d DialogflowCxIntent, scope constructs.Construct, id *string, config *DialogflowCxIntentConfig) {
 	_init_.Initialize()
 

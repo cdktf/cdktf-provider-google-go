@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/eventarc_trigger google_eventarc_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/eventarc_trigger google_eventarc_trigger}.
 type EventarcTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -36,6 +36,9 @@ type EventarcTrigger interface {
 	Destination() EventarcTriggerDestinationOutputReference
 	DestinationInput() *EventarcTriggerDestination
 	Etag() *string
+	EventDataContentType() *string
+	SetEventDataContentType(val *string)
+	EventDataContentTypeInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -122,6 +125,7 @@ type EventarcTrigger interface {
 	PutTimeouts(value *EventarcTriggerTimeouts)
 	PutTransport(value *EventarcTriggerTransport)
 	ResetChannel()
+	ResetEventDataContentType()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -261,6 +265,26 @@ func (j *jsiiProxy_EventarcTrigger) Etag() *string {
 	_jsii_.Get(
 		j,
 		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventarcTrigger) EventDataContentType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eventDataContentType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventarcTrigger) EventDataContentTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eventDataContentTypeInput",
 		&returns,
 	)
 	return returns
@@ -577,7 +601,7 @@ func (j *jsiiProxy_EventarcTrigger) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/eventarc_trigger google_eventarc_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/eventarc_trigger google_eventarc_trigger} Resource.
 func NewEventarcTrigger(scope constructs.Construct, id *string, config *EventarcTriggerConfig) EventarcTrigger {
 	_init_.Initialize()
 
@@ -595,7 +619,7 @@ func NewEventarcTrigger(scope constructs.Construct, id *string, config *Eventarc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/eventarc_trigger google_eventarc_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/eventarc_trigger google_eventarc_trigger} Resource.
 func NewEventarcTrigger_Override(e EventarcTrigger, scope constructs.Construct, id *string, config *EventarcTriggerConfig) {
 	_init_.Initialize()
 
@@ -643,6 +667,17 @@ func (j *jsiiProxy_EventarcTrigger)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EventarcTrigger)SetEventDataContentType(val *string) {
+	if err := j.validateSetEventDataContentTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"eventDataContentType",
 		val,
 	)
 }
@@ -1065,6 +1100,14 @@ func (e *jsiiProxy_EventarcTrigger) ResetChannel() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetChannel",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EventarcTrigger) ResetEventDataContentType() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetEventDataContentType",
 		nil, // no parameters
 	)
 }

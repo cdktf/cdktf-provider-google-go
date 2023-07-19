@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/bigquery_dataset google_bigquery_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/bigquery_dataset google_bigquery_dataset}.
 type BigqueryDataset interface {
 	cdktf.TerraformResource
 	Access() BigqueryDatasetAccessList
@@ -99,6 +99,9 @@ type BigqueryDataset interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	StorageBillingModel() *string
+	SetStorageBillingModel(val *string)
+	StorageBillingModelInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -152,6 +155,7 @@ type BigqueryDataset interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetStorageBillingModel()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -638,6 +642,26 @@ func (j *jsiiProxy_BigqueryDataset) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryDataset) StorageBillingModel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageBillingModel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDataset) StorageBillingModelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageBillingModelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryDataset) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -689,7 +713,7 @@ func (j *jsiiProxy_BigqueryDataset) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/bigquery_dataset google_bigquery_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/bigquery_dataset google_bigquery_dataset} Resource.
 func NewBigqueryDataset(scope constructs.Construct, id *string, config *BigqueryDatasetConfig) BigqueryDataset {
 	_init_.Initialize()
 
@@ -707,7 +731,7 @@ func NewBigqueryDataset(scope constructs.Construct, id *string, config *Bigquery
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/bigquery_dataset google_bigquery_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/bigquery_dataset google_bigquery_dataset} Resource.
 func NewBigqueryDataset_Override(b BigqueryDataset, scope constructs.Construct, id *string, config *BigqueryDatasetConfig) {
 	_init_.Initialize()
 
@@ -925,6 +949,17 @@ func (j *jsiiProxy_BigqueryDataset)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryDataset)SetStorageBillingModel(val *string) {
+	if err := j.validateSetStorageBillingModelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageBillingModel",
 		val,
 	)
 }
@@ -1344,6 +1379,14 @@ func (b *jsiiProxy_BigqueryDataset) ResetProject() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryDataset) ResetStorageBillingModel() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetStorageBillingModel",
 		nil, // no parameters
 	)
 }

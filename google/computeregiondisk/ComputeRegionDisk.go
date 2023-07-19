@@ -9,9 +9,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/compute_region_disk google_compute_region_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/compute_region_disk google_compute_region_disk}.
 type ComputeRegionDisk interface {
 	cdktf.TerraformResource
+	AsyncPrimaryDisk() ComputeRegionDiskAsyncPrimaryDiskOutputReference
+	AsyncPrimaryDiskInput() *ComputeRegionDiskAsyncPrimaryDisk
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -138,10 +140,12 @@ type ComputeRegionDisk interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAsyncPrimaryDisk(value *ComputeRegionDiskAsyncPrimaryDisk)
 	PutDiskEncryptionKey(value *ComputeRegionDiskDiskEncryptionKey)
 	PutGuestOsFeatures(value interface{})
 	PutSourceSnapshotEncryptionKey(value *ComputeRegionDiskSourceSnapshotEncryptionKey)
 	PutTimeouts(value *ComputeRegionDiskTimeouts)
+	ResetAsyncPrimaryDisk()
 	ResetDescription()
 	ResetDiskEncryptionKey()
 	ResetGuestOsFeatures()
@@ -173,6 +177,26 @@ type ComputeRegionDisk interface {
 // The jsii proxy struct for ComputeRegionDisk
 type jsiiProxy_ComputeRegionDisk struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) AsyncPrimaryDisk() ComputeRegionDiskAsyncPrimaryDiskOutputReference {
+	var returns ComputeRegionDiskAsyncPrimaryDiskOutputReference
+	_jsii_.Get(
+		j,
+		"asyncPrimaryDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) AsyncPrimaryDiskInput() *ComputeRegionDiskAsyncPrimaryDisk {
+	var returns *ComputeRegionDiskAsyncPrimaryDisk
+	_jsii_.Get(
+		j,
+		"asyncPrimaryDiskInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeRegionDisk) CdktfStack() cdktf.TerraformStack {
@@ -756,7 +780,7 @@ func (j *jsiiProxy_ComputeRegionDisk) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/compute_region_disk google_compute_region_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
 func NewComputeRegionDisk(scope constructs.Construct, id *string, config *ComputeRegionDiskConfig) ComputeRegionDisk {
 	_init_.Initialize()
 
@@ -774,7 +798,7 @@ func NewComputeRegionDisk(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.72.1/docs/resources/compute_region_disk google_compute_region_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/compute_region_disk google_compute_region_disk} Resource.
 func NewComputeRegionDisk_Override(c ComputeRegionDisk, scope constructs.Construct, id *string, config *ComputeRegionDiskConfig) {
 	_init_.Initialize()
 
@@ -1262,6 +1286,17 @@ func (c *jsiiProxy_ComputeRegionDisk) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionDisk) PutAsyncPrimaryDisk(value *ComputeRegionDiskAsyncPrimaryDisk) {
+	if err := c.validatePutAsyncPrimaryDiskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAsyncPrimaryDisk",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionDisk) PutDiskEncryptionKey(value *ComputeRegionDiskDiskEncryptionKey) {
 	if err := c.validatePutDiskEncryptionKeyParameters(value); err != nil {
 		panic(err)
@@ -1303,6 +1338,14 @@ func (c *jsiiProxy_ComputeRegionDisk) PutTimeouts(value *ComputeRegionDiskTimeou
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionDisk) ResetAsyncPrimaryDisk() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAsyncPrimaryDisk",
+		nil, // no parameters
 	)
 }
 
