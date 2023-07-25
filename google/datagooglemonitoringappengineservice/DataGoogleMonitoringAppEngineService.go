@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/data-sources/monitoring_app_engine_service google_monitoring_app_engine_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/data-sources/monitoring_app_engine_service google_monitoring_app_engine_service}.
 type DataGoogleMonitoringAppEngineService interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -360,7 +360,7 @@ func (j *jsiiProxy_DataGoogleMonitoringAppEngineService) UserLabels() cdktf.Stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/data-sources/monitoring_app_engine_service google_monitoring_app_engine_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/data-sources/monitoring_app_engine_service google_monitoring_app_engine_service} Data Source.
 func NewDataGoogleMonitoringAppEngineService(scope constructs.Construct, id *string, config *DataGoogleMonitoringAppEngineServiceConfig) DataGoogleMonitoringAppEngineService {
 	_init_.Initialize()
 
@@ -378,7 +378,7 @@ func NewDataGoogleMonitoringAppEngineService(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/data-sources/monitoring_app_engine_service google_monitoring_app_engine_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/data-sources/monitoring_app_engine_service google_monitoring_app_engine_service} Data Source.
 func NewDataGoogleMonitoringAppEngineService_Override(d DataGoogleMonitoringAppEngineService, scope constructs.Construct, id *string, config *DataGoogleMonitoringAppEngineServiceConfig) {
 	_init_.Initialize()
 

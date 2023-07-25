@@ -76,6 +76,10 @@ func (j *jsiiProxy_VpcAccessConnectorTimeoutsOutputReference) validateSetTerrafo
 	return nil
 }
 
+func (j *jsiiProxy_VpcAccessConnectorTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewVpcAccessConnectorTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

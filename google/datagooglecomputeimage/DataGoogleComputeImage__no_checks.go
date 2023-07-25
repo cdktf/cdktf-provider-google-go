@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataGoogleComputeImage) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleComputeImage) validateSetMostRecentParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleComputeImage) validateSetNameParameters(val *string) error {
 	return nil
 }

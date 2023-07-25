@@ -30,6 +30,8 @@ type ContainerClusterNodeConfigGuestAcceleratorOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GpuDriverInstallationConfig() ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigList
+	GpuDriverInstallationConfigInput() interface{}
 	GpuPartitionSize() *string
 	SetGpuPartitionSize(val *string)
 	GpuPartitionSizeInput() *string
@@ -72,8 +74,10 @@ type ContainerClusterNodeConfigGuestAcceleratorOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutGpuDriverInstallationConfig(value interface{})
 	PutGpuSharingConfig(value interface{})
 	ResetCount()
+	ResetGpuDriverInstallationConfig()
 	ResetGpuPartitionSize()
 	ResetGpuSharingConfig()
 	ResetType()
@@ -147,6 +151,26 @@ func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Fq
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) GpuDriverInstallationConfig() ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigList {
+	var returns ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigList
+	_jsii_.Get(
+		j,
+		"gpuDriverInstallationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) GpuDriverInstallationConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gpuDriverInstallationConfigInput",
 		&returns,
 	)
 	return returns
@@ -544,6 +568,17 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) In
 	return returns
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) PutGpuDriverInstallationConfig(value interface{}) {
+	if err := c.validatePutGpuDriverInstallationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putGpuDriverInstallationConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) PutGpuSharingConfig(value interface{}) {
 	if err := c.validatePutGpuSharingConfigParameters(value); err != nil {
 		panic(err)
@@ -559,6 +594,14 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) Re
 	_jsii_.InvokeVoid(
 		c,
 		"resetCount",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) ResetGpuDriverInstallationConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGpuDriverInstallationConfig",
 		nil, // no parameters
 	)
 }

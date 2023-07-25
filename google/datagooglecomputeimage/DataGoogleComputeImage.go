@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/data-sources/compute_image google_compute_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/data-sources/compute_image google_compute_image}.
 type DataGoogleComputeImage interface {
 	cdktf.TerraformDataSource
 	ArchiveSizeBytes() *float64
@@ -54,6 +54,9 @@ type DataGoogleComputeImage interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MostRecent() interface{}
+	SetMostRecent(val interface{})
+	MostRecentInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -108,6 +111,7 @@ type DataGoogleComputeImage interface {
 	ResetFamily()
 	ResetFilter()
 	ResetId()
+	ResetMostRecent()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -358,6 +362,26 @@ func (j *jsiiProxy_DataGoogleComputeImage) Lifecycle() *cdktf.TerraformResourceL
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeImage) MostRecent() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mostRecent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeImage) MostRecentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mostRecentInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeImage) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -519,7 +543,7 @@ func (j *jsiiProxy_DataGoogleComputeImage) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/data-sources/compute_image google_compute_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/data-sources/compute_image google_compute_image} Data Source.
 func NewDataGoogleComputeImage(scope constructs.Construct, id *string, config *DataGoogleComputeImageConfig) DataGoogleComputeImage {
 	_init_.Initialize()
 
@@ -537,7 +561,7 @@ func NewDataGoogleComputeImage(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/data-sources/compute_image google_compute_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/data-sources/compute_image google_compute_image} Data Source.
 func NewDataGoogleComputeImage_Override(d DataGoogleComputeImage, scope constructs.Construct, id *string, config *DataGoogleComputeImageConfig) {
 	_init_.Initialize()
 
@@ -615,6 +639,17 @@ func (j *jsiiProxy_DataGoogleComputeImage)SetLifecycle(val *cdktf.TerraformResou
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGoogleComputeImage)SetMostRecent(val interface{}) {
+	if err := j.validateSetMostRecentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mostRecent",
 		val,
 	)
 }
@@ -935,6 +970,14 @@ func (d *jsiiProxy_DataGoogleComputeImage) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGoogleComputeImage) ResetMostRecent() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMostRecent",
 		nil, // no parameters
 	)
 }

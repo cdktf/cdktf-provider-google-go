@@ -43,6 +43,9 @@ type VpcAccessConnectorTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type VpcAccessConnectorTimeoutsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -194,6 +198,26 @@ func (j *jsiiProxy_VpcAccessConnectorTimeoutsOutputReference) TerraformResource(
 	return returns
 }
 
+func (j *jsiiProxy_VpcAccessConnectorTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcAccessConnectorTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewVpcAccessConnectorTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VpcAccessConnectorTimeoutsOutputReference {
 	_init_.Initialize()
@@ -295,6 +319,17 @@ func (j *jsiiProxy_VpcAccessConnectorTimeoutsOutputReference)SetTerraformResourc
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcAccessConnectorTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (v *jsiiProxy_VpcAccessConnectorTimeoutsOutputReference) ResetDelete() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetDelete",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcAccessConnectorTimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetUpdate",
 		nil, // no parameters
 	)
 }

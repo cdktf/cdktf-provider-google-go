@@ -13,6 +13,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "changeStreamRetention", GoGetter: "ChangeStreamRetention"},
+			_jsii_.MemberProperty{JsiiProperty: "changeStreamRetentionInput", GoGetter: "ChangeStreamRetentionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "columnFamily", GoGetter: "ColumnFamily"},
 			_jsii_.MemberProperty{JsiiProperty: "columnFamilyInput", GoGetter: "ColumnFamilyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
@@ -50,6 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putColumnFamily", GoMethod: "PutColumnFamily"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetChangeStreamRetention", GoMethod: "ResetChangeStreamRetention"},
 			_jsii_.MemberMethod{JsiiMethod: "resetColumnFamily", GoMethod: "ResetColumnFamily"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeletionProtection", GoMethod: "ResetDeletionProtection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

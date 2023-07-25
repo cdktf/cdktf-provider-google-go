@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -272,6 +272,9 @@ type GoogleProvider interface {
 	LoggingCustomEndpoint() *string
 	SetLoggingCustomEndpoint(val *string)
 	LoggingCustomEndpointInput() *string
+	LookerCustomEndpoint() *string
+	SetLookerCustomEndpoint(val *string)
+	LookerCustomEndpointInput() *string
 	MemcacheCustomEndpoint() *string
 	SetMemcacheCustomEndpoint(val *string)
 	MemcacheCustomEndpointInput() *string
@@ -499,6 +502,7 @@ type GoogleProvider interface {
 	ResetImpersonateServiceAccountDelegates()
 	ResetKmsCustomEndpoint()
 	ResetLoggingCustomEndpoint()
+	ResetLookerCustomEndpoint()
 	ResetMemcacheCustomEndpoint()
 	ResetMlEngineCustomEndpoint()
 	ResetMonitoringCustomEndpoint()
@@ -2279,6 +2283,26 @@ func (j *jsiiProxy_GoogleProvider) LoggingCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) LookerCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lookerCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) LookerCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lookerCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) MemcacheCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3180,7 +3204,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3198,7 +3222,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -3880,6 +3904,14 @@ func (j *jsiiProxy_GoogleProvider)SetLoggingCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"loggingCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetLookerCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"lookerCustomEndpoint",
 		val,
 	)
 }
@@ -4997,6 +5029,14 @@ func (g *jsiiProxy_GoogleProvider) ResetLoggingCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLoggingCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetLookerCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLookerCustomEndpoint",
 		nil, // no parameters
 	)
 }

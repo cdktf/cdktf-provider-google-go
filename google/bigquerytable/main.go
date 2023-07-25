@@ -340,6 +340,45 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationJsonOptions",
+		reflect.TypeOf((*BigqueryTableExternalDataConfigurationJsonOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationJsonOptionsOutputReference",
+		reflect.TypeOf((*BigqueryTableExternalDataConfigurationJsonOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "encoding", GoGetter: "Encoding"},
+			_jsii_.MemberProperty{JsiiProperty: "encodingInput", GoGetter: "EncodingInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEncoding", GoMethod: "ResetEncoding"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BigqueryTableExternalDataConfigurationJsonOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference",
 		reflect.TypeOf((*BigqueryTableExternalDataConfigurationOutputReference)(nil)).Elem(),
@@ -377,16 +416,22 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "jsonOptions", GoGetter: "JsonOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "jsonOptionsInput", GoGetter: "JsonOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxBadRecords", GoGetter: "MaxBadRecords"},
 			_jsii_.MemberProperty{JsiiProperty: "maxBadRecordsInput", GoGetter: "MaxBadRecordsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataCacheMode", GoGetter: "MetadataCacheMode"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataCacheModeInput", GoGetter: "MetadataCacheModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "objectMetadata", GoGetter: "ObjectMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "objectMetadataInput", GoGetter: "ObjectMetadataInput"},
+			_jsii_.MemberProperty{JsiiProperty: "parquetOptions", GoGetter: "ParquetOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "parquetOptionsInput", GoGetter: "ParquetOptionsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAvroOptions", GoMethod: "PutAvroOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putCsvOptions", GoMethod: "PutCsvOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putGoogleSheetsOptions", GoMethod: "PutGoogleSheetsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putHivePartitioningOptions", GoMethod: "PutHivePartitioningOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putJsonOptions", GoMethod: "PutJsonOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putParquetOptions", GoMethod: "PutParquetOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "referenceFileSchemaUri", GoGetter: "ReferenceFileSchemaUri"},
 			_jsii_.MemberProperty{JsiiProperty: "referenceFileSchemaUriInput", GoGetter: "ReferenceFileSchemaUriInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAvroOptions", GoMethod: "ResetAvroOptions"},
@@ -396,9 +441,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetGoogleSheetsOptions", GoMethod: "ResetGoogleSheetsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHivePartitioningOptions", GoMethod: "ResetHivePartitioningOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIgnoreUnknownValues", GoMethod: "ResetIgnoreUnknownValues"},
+			_jsii_.MemberMethod{JsiiMethod: "resetJsonOptions", GoMethod: "ResetJsonOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxBadRecords", GoMethod: "ResetMaxBadRecords"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMetadataCacheMode", GoMethod: "ResetMetadataCacheMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetObjectMetadata", GoMethod: "ResetObjectMetadata"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParquetOptions", GoMethod: "ResetParquetOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReferenceFileSchemaUri", GoMethod: "ResetReferenceFileSchemaUri"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSchema", GoMethod: "ResetSchema"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSourceFormat", GoMethod: "ResetSourceFormat"},
@@ -415,6 +462,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptions",
+		reflect.TypeOf((*BigqueryTableExternalDataConfigurationParquetOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference",
+		reflect.TypeOf((*BigqueryTableExternalDataConfigurationParquetOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enableListInference", GoGetter: "EnableListInference"},
+			_jsii_.MemberProperty{JsiiProperty: "enableListInferenceInput", GoGetter: "EnableListInferenceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enumAsString", GoGetter: "EnumAsString"},
+			_jsii_.MemberProperty{JsiiProperty: "enumAsStringInput", GoGetter: "EnumAsStringInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnableListInference", GoMethod: "ResetEnableListInference"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnumAsString", GoMethod: "ResetEnumAsString"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BigqueryTableExternalDataConfigurationParquetOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

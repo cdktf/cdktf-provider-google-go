@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/dataplex_lake_iam_binding google_dataplex_lake_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/dataplex_lake_iam_binding google_dataplex_lake_iam_binding}.
 type DataplexLakeIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_DataplexLakeIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/dataplex_lake_iam_binding google_dataplex_lake_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/dataplex_lake_iam_binding google_dataplex_lake_iam_binding} Resource.
 func NewDataplexLakeIamBinding(scope constructs.Construct, id *string, config *DataplexLakeIamBindingConfig) DataplexLakeIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewDataplexLakeIamBinding(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.74.0/docs/resources/dataplex_lake_iam_binding google_dataplex_lake_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/dataplex_lake_iam_binding google_dataplex_lake_iam_binding} Resource.
 func NewDataplexLakeIamBinding_Override(d DataplexLakeIamBinding, scope constructs.Construct, id *string, config *DataplexLakeIamBindingConfig) {
 	_init_.Initialize()
 

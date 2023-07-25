@@ -28,6 +28,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GpuDriverInstallationConfig() DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigList
 	GpuPartitionSize() *string
 	GpuSharingConfig() DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList
 	InternalValue() *DataGoogleContainerClusterNodePoolNodeConfigGuestAccelerator
@@ -125,6 +126,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorO
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference) GpuDriverInstallationConfig() DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigList
+	_jsii_.Get(
+		j,
+		"gpuDriverInstallationConfig",
 		&returns,
 	)
 	return returns

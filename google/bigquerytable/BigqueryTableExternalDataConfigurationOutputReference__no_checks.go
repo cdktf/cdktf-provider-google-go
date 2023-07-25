@@ -60,6 +60,14 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) valida
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validatePutJsonOptionsParameters(value *BigqueryTableExternalDataConfigurationJsonOptions) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validatePutParquetOptionsParameters(value *BigqueryTableExternalDataConfigurationParquetOptions) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -13,6 +13,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "complexDataTypeReferenceParsing", GoGetter: "ComplexDataTypeReferenceParsing"},
+			_jsii_.MemberProperty{JsiiProperty: "complexDataTypeReferenceParsingInput", GoGetter: "ComplexDataTypeReferenceParsingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -57,6 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putStreamConfigs", GoMethod: "PutStreamConfigs"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetComplexDataTypeReferenceParsing", GoMethod: "ResetComplexDataTypeReferenceParsing"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisableReferentialIntegrity", GoMethod: "ResetDisableReferentialIntegrity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisableResourceVersioning", GoMethod: "ResetDisableResourceVersioning"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableHistoryImport", GoMethod: "ResetEnableHistoryImport"},

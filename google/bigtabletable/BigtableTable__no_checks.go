@@ -72,6 +72,10 @@ func validateBigtableTable_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_BigtableTable) validateSetChangeStreamRetentionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigtableTable) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
