@@ -4,7 +4,7 @@ package dialogflowcxpage
 type DialogflowCxPageEntryFulfillmentMessagesText struct {
 	// A collection of text responses.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/dialogflow_cx_page#text DialogflowCxPage#text}
 	Text *[]*string `field:"optional" json:"text" yaml:"text"`
 }
 

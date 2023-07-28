@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/game_services_game_server_config google_game_services_game_server_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/game_services_game_server_config google_game_services_game_server_config}.
 type GameServicesGameServerConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -510,7 +510,7 @@ func (j *jsiiProxy_GameServicesGameServerConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/game_services_game_server_config google_game_services_game_server_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/game_services_game_server_config google_game_services_game_server_config} Resource.
 func NewGameServicesGameServerConfig(scope constructs.Construct, id *string, config *GameServicesGameServerConfigConfig) GameServicesGameServerConfig {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewGameServicesGameServerConfig(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/game_services_game_server_config google_game_services_game_server_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/game_services_game_server_config google_game_services_game_server_config} Resource.
 func NewGameServicesGameServerConfig_Override(g GameServicesGameServerConfig, scope constructs.Construct, id *string, config *GameServicesGameServerConfigConfig) {
 	_init_.Initialize()
 

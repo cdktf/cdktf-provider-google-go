@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/certificate_manager_certificate_issuance_config google_certificate_manager_certificate_issuance_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/certificate_manager_certificate_issuance_config google_certificate_manager_certificate_issuance_config}.
 type CertificateManagerCertificateIssuanceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -543,7 +543,7 @@ func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfig) UpdateTime() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/certificate_manager_certificate_issuance_config google_certificate_manager_certificate_issuance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/certificate_manager_certificate_issuance_config google_certificate_manager_certificate_issuance_config} Resource.
 func NewCertificateManagerCertificateIssuanceConfig(scope constructs.Construct, id *string, config *CertificateManagerCertificateIssuanceConfigConfig) CertificateManagerCertificateIssuanceConfig {
 	_init_.Initialize()
 
@@ -561,7 +561,7 @@ func NewCertificateManagerCertificateIssuanceConfig(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/certificate_manager_certificate_issuance_config google_certificate_manager_certificate_issuance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/certificate_manager_certificate_issuance_config google_certificate_manager_certificate_issuance_config} Resource.
 func NewCertificateManagerCertificateIssuanceConfig_Override(c CertificateManagerCertificateIssuanceConfig, scope constructs.Construct, id *string, config *CertificateManagerCertificateIssuanceConfigConfig) {
 	_init_.Initialize()
 

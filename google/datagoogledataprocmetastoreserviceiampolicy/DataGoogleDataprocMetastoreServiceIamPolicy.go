@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/data-sources/dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/data-sources/dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy}.
 type DataGoogleDataprocMetastoreServiceIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceIamPolicy) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/data-sources/dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/data-sources/dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy} Data Source.
 func NewDataGoogleDataprocMetastoreServiceIamPolicy(scope constructs.Construct, id *string, config *DataGoogleDataprocMetastoreServiceIamPolicyConfig) DataGoogleDataprocMetastoreServiceIamPolicy {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataGoogleDataprocMetastoreServiceIamPolicy(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/data-sources/dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/data-sources/dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy} Data Source.
 func NewDataGoogleDataprocMetastoreServiceIamPolicy_Override(d DataGoogleDataprocMetastoreServiceIamPolicy, scope constructs.Construct, id *string, config *DataGoogleDataprocMetastoreServiceIamPolicyConfig) {
 	_init_.Initialize()
 

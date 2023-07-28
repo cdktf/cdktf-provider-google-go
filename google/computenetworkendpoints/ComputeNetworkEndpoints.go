@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/compute_network_endpoints google_compute_network_endpoints}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/compute_network_endpoints google_compute_network_endpoints}.
 type ComputeNetworkEndpoints interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -405,7 +405,7 @@ func (j *jsiiProxy_ComputeNetworkEndpoints) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/compute_network_endpoints google_compute_network_endpoints} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/compute_network_endpoints google_compute_network_endpoints} Resource.
 func NewComputeNetworkEndpoints(scope constructs.Construct, id *string, config *ComputeNetworkEndpointsConfig) ComputeNetworkEndpoints {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewComputeNetworkEndpoints(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/compute_network_endpoints google_compute_network_endpoints} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/compute_network_endpoints google_compute_network_endpoints} Resource.
 func NewComputeNetworkEndpoints_Override(c ComputeNetworkEndpoints, scope constructs.Construct, id *string, config *ComputeNetworkEndpointsConfig) {
 	_init_.Initialize()
 

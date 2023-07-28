@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template}.
 type DataLossPreventionInspectTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -440,7 +440,7 @@ func (j *jsiiProxy_DataLossPreventionInspectTemplate) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template} Resource.
 func NewDataLossPreventionInspectTemplate(scope constructs.Construct, id *string, config *DataLossPreventionInspectTemplateConfig) DataLossPreventionInspectTemplate {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewDataLossPreventionInspectTemplate(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template} Resource.
 func NewDataLossPreventionInspectTemplate_Override(d DataLossPreventionInspectTemplate, scope constructs.Construct, id *string, config *DataLossPreventionInspectTemplateConfig) {
 	_init_.Initialize()
 

@@ -29,7 +29,7 @@ type SccNotificationConfigStreamingConfig struct {
 	// [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
 	// for information on how to write a filter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/scc_notification_config#filter SccNotificationConfig#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/scc_notification_config#filter SccNotificationConfig#filter}
 	Filter *string `field:"required" json:"filter" yaml:"filter"`
 }
 

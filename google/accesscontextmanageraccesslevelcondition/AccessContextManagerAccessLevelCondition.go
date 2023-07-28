@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition}.
 type AccessContextManagerAccessLevelCondition interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -477,7 +477,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelCondition) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
 func NewAccessContextManagerAccessLevelCondition(scope constructs.Construct, id *string, config *AccessContextManagerAccessLevelConditionConfig) AccessContextManagerAccessLevelCondition {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewAccessContextManagerAccessLevelCondition(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
 func NewAccessContextManagerAccessLevelCondition_Override(a AccessContextManagerAccessLevelCondition, scope constructs.Construct, id *string, config *AccessContextManagerAccessLevelConditionConfig) {
 	_init_.Initialize()
 

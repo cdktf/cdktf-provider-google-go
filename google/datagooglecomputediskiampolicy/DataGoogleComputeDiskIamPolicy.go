@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/data-sources/compute_disk_iam_policy google_compute_disk_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/data-sources/compute_disk_iam_policy google_compute_disk_iam_policy}.
 type DataGoogleComputeDiskIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataGoogleComputeDiskIamPolicy) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/data-sources/compute_disk_iam_policy google_compute_disk_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/data-sources/compute_disk_iam_policy google_compute_disk_iam_policy} Data Source.
 func NewDataGoogleComputeDiskIamPolicy(scope constructs.Construct, id *string, config *DataGoogleComputeDiskIamPolicyConfig) DataGoogleComputeDiskIamPolicy {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataGoogleComputeDiskIamPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/data-sources/compute_disk_iam_policy google_compute_disk_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/data-sources/compute_disk_iam_policy google_compute_disk_iam_policy} Data Source.
 func NewDataGoogleComputeDiskIamPolicy_Override(d DataGoogleComputeDiskIamPolicy, scope constructs.Construct, id *string, config *DataGoogleComputeDiskIamPolicyConfig) {
 	_init_.Initialize()
 

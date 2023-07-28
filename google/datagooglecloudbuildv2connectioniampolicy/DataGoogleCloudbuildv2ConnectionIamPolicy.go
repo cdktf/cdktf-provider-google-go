@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/data-sources/cloudbuildv2_connection_iam_policy google_cloudbuildv2_connection_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/data-sources/cloudbuildv2_connection_iam_policy google_cloudbuildv2_connection_iam_policy}.
 type DataGoogleCloudbuildv2ConnectionIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataGoogleCloudbuildv2ConnectionIamPolicy) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/data-sources/cloudbuildv2_connection_iam_policy google_cloudbuildv2_connection_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/data-sources/cloudbuildv2_connection_iam_policy google_cloudbuildv2_connection_iam_policy} Data Source.
 func NewDataGoogleCloudbuildv2ConnectionIamPolicy(scope constructs.Construct, id *string, config *DataGoogleCloudbuildv2ConnectionIamPolicyConfig) DataGoogleCloudbuildv2ConnectionIamPolicy {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataGoogleCloudbuildv2ConnectionIamPolicy(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.0/docs/data-sources/cloudbuildv2_connection_iam_policy google_cloudbuildv2_connection_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/data-sources/cloudbuildv2_connection_iam_policy google_cloudbuildv2_connection_iam_policy} Data Source.
 func NewDataGoogleCloudbuildv2ConnectionIamPolicy_Override(d DataGoogleCloudbuildv2ConnectionIamPolicy, scope constructs.Construct, id *string, config *DataGoogleCloudbuildv2ConnectionIamPolicyConfig) {
 	_init_.Initialize()
 
