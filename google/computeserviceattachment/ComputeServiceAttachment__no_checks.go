@@ -124,6 +124,10 @@ func (j *jsiiProxy_ComputeServiceAttachment) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ComputeServiceAttachment) validateSetReconcileConnectionsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeServiceAttachment) validateSetRegionParameters(val *string) error {
 	return nil
 }

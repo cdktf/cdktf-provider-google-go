@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/dns_response_policy google_dns_response_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/dns_response_policy google_dns_response_policy}.
 type DnsResponsePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -429,7 +429,7 @@ func (j *jsiiProxy_DnsResponsePolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/dns_response_policy google_dns_response_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/dns_response_policy google_dns_response_policy} Resource.
 func NewDnsResponsePolicy(scope constructs.Construct, id *string, config *DnsResponsePolicyConfig) DnsResponsePolicy {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewDnsResponsePolicy(scope constructs.Construct, id *string, config *DnsRes
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/dns_response_policy google_dns_response_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/dns_response_policy google_dns_response_policy} Resource.
 func NewDnsResponsePolicy_Override(d DnsResponsePolicy, scope constructs.Construct, id *string, config *DnsResponsePolicyConfig) {
 	_init_.Initialize()
 

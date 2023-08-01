@@ -6,11 +6,11 @@ type ComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfig struct {
 	//
 	// Only PREMIUM tier is valid for IPv6
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/compute_instance_from_template#network_tier ComputeInstanceFromTemplate#network_tier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/compute_instance_from_template#network_tier ComputeInstanceFromTemplate#network_tier}
 	NetworkTier *string `field:"required" json:"networkTier" yaml:"networkTier"`
 	// The domain name to be used when creating DNSv6 records for the external IPv6 ranges.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/compute_instance_from_template#public_ptr_domain_name ComputeInstanceFromTemplate#public_ptr_domain_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/compute_instance_from_template#public_ptr_domain_name ComputeInstanceFromTemplate#public_ptr_domain_name}
 	PublicPtrDomainName *string `field:"optional" json:"publicPtrDomainName" yaml:"publicPtrDomainName"`
 }
 

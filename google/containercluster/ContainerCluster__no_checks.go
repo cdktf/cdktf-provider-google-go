@@ -184,6 +184,10 @@ func validateContainerCluster_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_ContainerCluster) validateSetAllowNetAdminParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerCluster) validateSetClusterIpv4CidrParameters(val *string) error {
 	return nil
 }

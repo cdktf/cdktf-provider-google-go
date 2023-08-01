@@ -9,11 +9,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/container_cluster google_container_cluster}.
 type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
 	AddonsConfigInput() *ContainerClusterAddonsConfig
+	AllowNetAdmin() interface{}
+	SetAllowNetAdmin(val interface{})
+	AllowNetAdminInput() interface{}
 	AuthenticatorGroupsConfig() ContainerClusterAuthenticatorGroupsConfigOutputReference
 	AuthenticatorGroupsConfigInput() *ContainerClusterAuthenticatorGroupsConfig
 	BinaryAuthorization() ContainerClusterBinaryAuthorizationOutputReference
@@ -265,6 +268,7 @@ type ContainerCluster interface {
 	PutVerticalPodAutoscaling(value *ContainerClusterVerticalPodAutoscaling)
 	PutWorkloadIdentityConfig(value *ContainerClusterWorkloadIdentityConfig)
 	ResetAddonsConfig()
+	ResetAllowNetAdmin()
 	ResetAuthenticatorGroupsConfig()
 	ResetBinaryAuthorization()
 	ResetClusterAutoscaling()
@@ -354,6 +358,26 @@ func (j *jsiiProxy_ContainerCluster) AddonsConfigInput() *ContainerClusterAddons
 	_jsii_.Get(
 		j,
 		"addonsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) AllowNetAdmin() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNetAdmin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) AllowNetAdminInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNetAdminInput",
 		&returns,
 	)
 	return returns
@@ -1730,7 +1754,7 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
 
@@ -1748,7 +1772,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct, id *string, config *ContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -1756,6 +1780,17 @@ func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct
 		"@cdktf/provider-google.containerCluster.ContainerCluster",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_ContainerCluster)SetAllowNetAdmin(val interface{}) {
+	if err := j.validateSetAllowNetAdminParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowNetAdmin",
+		val,
 	)
 }
 
@@ -2735,6 +2770,14 @@ func (c *jsiiProxy_ContainerCluster) ResetAddonsConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAddonsConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetAllowNetAdmin() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAllowNetAdmin",
 		nil, // no parameters
 	)
 }

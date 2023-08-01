@@ -37,6 +37,8 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	GcePersistentDiskCsiDriverConfigInput() *ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig
 	GcpFilestoreCsiDriverConfig() ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference
 	GcpFilestoreCsiDriverConfigInput() *ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig
+	GcsFuseCsiDriverConfig() ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference
+	GcsFuseCsiDriverConfigInput() *ContainerClusterAddonsConfigGcsFuseCsiDriverConfig
 	GkeBackupAgentConfig() ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference
 	GkeBackupAgentConfigInput() *ContainerClusterAddonsConfigGkeBackupAgentConfig
 	HorizontalPodAutoscaling() ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference
@@ -84,6 +86,7 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	PutDnsCacheConfig(value *ContainerClusterAddonsConfigDnsCacheConfig)
 	PutGcePersistentDiskCsiDriverConfig(value *ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig)
 	PutGcpFilestoreCsiDriverConfig(value *ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig)
+	PutGcsFuseCsiDriverConfig(value *ContainerClusterAddonsConfigGcsFuseCsiDriverConfig)
 	PutGkeBackupAgentConfig(value *ContainerClusterAddonsConfigGkeBackupAgentConfig)
 	PutHorizontalPodAutoscaling(value *ContainerClusterAddonsConfigHorizontalPodAutoscaling)
 	PutHttpLoadBalancing(value *ContainerClusterAddonsConfigHttpLoadBalancing)
@@ -93,6 +96,7 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	ResetDnsCacheConfig()
 	ResetGcePersistentDiskCsiDriverConfig()
 	ResetGcpFilestoreCsiDriverConfig()
+	ResetGcsFuseCsiDriverConfig()
 	ResetGkeBackupAgentConfig()
 	ResetHorizontalPodAutoscaling()
 	ResetHttpLoadBalancing()
@@ -247,6 +251,26 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) GcpFilestoreCsiD
 	_jsii_.Get(
 		j,
 		"gcpFilestoreCsiDriverConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) GcsFuseCsiDriverConfig() ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference {
+	var returns ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference
+	_jsii_.Get(
+		j,
+		"gcsFuseCsiDriverConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) GcsFuseCsiDriverConfigInput() *ContainerClusterAddonsConfigGcsFuseCsiDriverConfig {
+	var returns *ContainerClusterAddonsConfigGcsFuseCsiDriverConfig
+	_jsii_.Get(
+		j,
+		"gcsFuseCsiDriverConfigInput",
 		&returns,
 	)
 	return returns
@@ -686,6 +710,17 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutGcpFilestoreC
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutGcsFuseCsiDriverConfig(value *ContainerClusterAddonsConfigGcsFuseCsiDriverConfig) {
+	if err := c.validatePutGcsFuseCsiDriverConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putGcsFuseCsiDriverConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutGkeBackupAgentConfig(value *ContainerClusterAddonsConfigGkeBackupAgentConfig) {
 	if err := c.validatePutGkeBackupAgentConfigParameters(value); err != nil {
 		panic(err)
@@ -766,6 +801,14 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ResetGcpFilestor
 	_jsii_.InvokeVoid(
 		c,
 		"resetGcpFilestoreCsiDriverConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ResetGcsFuseCsiDriverConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGcsFuseCsiDriverConfig",
 		nil, // no parameters
 	)
 }

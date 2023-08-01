@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization}.
 type CertificateManagerDnsAuthorization interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -439,7 +439,7 @@ func (j *jsiiProxy_CertificateManagerDnsAuthorization) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Resource.
 func NewCertificateManagerDnsAuthorization(scope constructs.Construct, id *string, config *CertificateManagerDnsAuthorizationConfig) CertificateManagerDnsAuthorization {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewCertificateManagerDnsAuthorization(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Resource.
 func NewCertificateManagerDnsAuthorization_Override(c CertificateManagerDnsAuthorization, scope constructs.Construct, id *string, config *CertificateManagerDnsAuthorizationConfig) {
 	_init_.Initialize()
 

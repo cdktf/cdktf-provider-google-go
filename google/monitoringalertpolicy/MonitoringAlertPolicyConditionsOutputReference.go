@@ -26,6 +26,8 @@ type MonitoringAlertPolicyConditionsOutputReference interface {
 	ConditionMatchedLogInput() *MonitoringAlertPolicyConditionsConditionMatchedLog
 	ConditionMonitoringQueryLanguage() MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference
 	ConditionMonitoringQueryLanguageInput() *MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage
+	ConditionPrometheusQueryLanguage() MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference
+	ConditionPrometheusQueryLanguageInput() *MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage
 	ConditionThreshold() MonitoringAlertPolicyConditionsConditionThresholdOutputReference
 	ConditionThresholdInput() *MonitoringAlertPolicyConditionsConditionThreshold
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -76,10 +78,12 @@ type MonitoringAlertPolicyConditionsOutputReference interface {
 	PutConditionAbsent(value *MonitoringAlertPolicyConditionsConditionAbsent)
 	PutConditionMatchedLog(value *MonitoringAlertPolicyConditionsConditionMatchedLog)
 	PutConditionMonitoringQueryLanguage(value *MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage)
+	PutConditionPrometheusQueryLanguage(value *MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage)
 	PutConditionThreshold(value *MonitoringAlertPolicyConditionsConditionThreshold)
 	ResetConditionAbsent()
 	ResetConditionMatchedLog()
 	ResetConditionMonitoringQueryLanguage()
+	ResetConditionPrometheusQueryLanguage()
 	ResetConditionThreshold()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -171,6 +175,26 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) ConditionMoni
 	_jsii_.Get(
 		j,
 		"conditionMonitoringQueryLanguageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) ConditionPrometheusQueryLanguage() MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference {
+	var returns MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference
+	_jsii_.Get(
+		j,
+		"conditionPrometheusQueryLanguage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) ConditionPrometheusQueryLanguageInput() *MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage {
+	var returns *MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage
+	_jsii_.Get(
+		j,
+		"conditionPrometheusQueryLanguageInput",
 		&returns,
 	)
 	return returns
@@ -589,6 +613,17 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) PutConditionM
 	)
 }
 
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) PutConditionPrometheusQueryLanguage(value *MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage) {
+	if err := m.validatePutConditionPrometheusQueryLanguageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putConditionPrometheusQueryLanguage",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) PutConditionThreshold(value *MonitoringAlertPolicyConditionsConditionThreshold) {
 	if err := m.validatePutConditionThresholdParameters(value); err != nil {
 		panic(err)
@@ -620,6 +655,14 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) ResetConditio
 	_jsii_.InvokeVoid(
 		m,
 		"resetConditionMonitoringQueryLanguage",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) ResetConditionPrometheusQueryLanguage() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetConditionPrometheusQueryLanguage",
 		nil, // no parameters
 	)
 }

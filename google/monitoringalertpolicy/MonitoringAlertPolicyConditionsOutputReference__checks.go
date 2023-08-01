@@ -123,6 +123,17 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validatePutCo
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validatePutConditionPrometheusQueryLanguageParameters(value *MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguage) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validatePutConditionThresholdParameters(value *MonitoringAlertPolicyConditionsConditionThreshold) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

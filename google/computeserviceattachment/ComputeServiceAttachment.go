@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/compute_service_attachment google_compute_service_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/compute_service_attachment google_compute_service_attachment}.
 type ComputeServiceAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -83,6 +83,9 @@ type ComputeServiceAttachment interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReconcileConnections() interface{}
+	SetReconcileConnections(val interface{})
+	ReconcileConnectionsInput() interface{}
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -134,6 +137,7 @@ type ComputeServiceAttachment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetReconcileConnections()
 	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -501,6 +505,26 @@ func (j *jsiiProxy_ComputeServiceAttachment) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeServiceAttachment) ReconcileConnections() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"reconcileConnections",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeServiceAttachment) ReconcileConnectionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"reconcileConnectionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeServiceAttachment) Region() *string {
 	var returns *string
 	_jsii_.Get(
@@ -602,7 +626,7 @@ func (j *jsiiProxy_ComputeServiceAttachment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/compute_service_attachment google_compute_service_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/compute_service_attachment google_compute_service_attachment} Resource.
 func NewComputeServiceAttachment(scope constructs.Construct, id *string, config *ComputeServiceAttachmentConfig) ComputeServiceAttachment {
 	_init_.Initialize()
 
@@ -620,7 +644,7 @@ func NewComputeServiceAttachment(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/compute_service_attachment google_compute_service_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/compute_service_attachment google_compute_service_attachment} Resource.
 func NewComputeServiceAttachment_Override(c ComputeServiceAttachment, scope constructs.Construct, id *string, config *ComputeServiceAttachmentConfig) {
 	_init_.Initialize()
 
@@ -794,6 +818,17 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeServiceAttachment)SetReconcileConnections(val interface{}) {
+	if err := j.validateSetReconcileConnectionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"reconcileConnections",
 		val,
 	)
 }
@@ -1160,6 +1195,14 @@ func (c *jsiiProxy_ComputeServiceAttachment) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeServiceAttachment) ResetReconcileConnections() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetReconcileConnections",
 		nil, // no parameters
 	)
 }

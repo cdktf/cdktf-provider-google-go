@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/network_services_edge_cache_keyset google_network_services_edge_cache_keyset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/network_services_edge_cache_keyset google_network_services_edge_cache_keyset}.
 type NetworkServicesEdgeCacheKeyset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -453,7 +453,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheKeyset) ValidationSharedKeysInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/network_services_edge_cache_keyset google_network_services_edge_cache_keyset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/network_services_edge_cache_keyset google_network_services_edge_cache_keyset} Resource.
 func NewNetworkServicesEdgeCacheKeyset(scope constructs.Construct, id *string, config *NetworkServicesEdgeCacheKeysetConfig) NetworkServicesEdgeCacheKeyset {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewNetworkServicesEdgeCacheKeyset(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.75.1/docs/resources/network_services_edge_cache_keyset google_network_services_edge_cache_keyset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/network_services_edge_cache_keyset google_network_services_edge_cache_keyset} Resource.
 func NewNetworkServicesEdgeCacheKeyset_Override(n NetworkServicesEdgeCacheKeyset, scope constructs.Construct, id *string, config *NetworkServicesEdgeCacheKeysetConfig) {
 	_init_.Initialize()
 
