@@ -60,6 +60,10 @@ func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) validateSetI
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) validateSetPolicyNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

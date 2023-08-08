@@ -111,6 +111,28 @@ func (i *jsiiProxy_IdentityPlatformConfig) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformConfig) validatePutBlockingFunctionsParameters(value *IdentityPlatformConfigBlockingFunctions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) validatePutQuotaParameters(value *IdentityPlatformConfigQuota) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformConfig) validatePutTimeoutsParameters(value *IdentityPlatformConfigTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -141,6 +163,14 @@ func validateIdentityPlatformConfig_IsTerraformElementParameters(x interface{}) 
 func validateIdentityPlatformConfig_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) validateSetAuthorizedDomainsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

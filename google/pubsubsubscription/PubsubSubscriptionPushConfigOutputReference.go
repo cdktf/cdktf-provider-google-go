@@ -32,6 +32,8 @@ type PubsubSubscriptionPushConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *PubsubSubscriptionPushConfig
 	SetInternalValue(val *PubsubSubscriptionPushConfig)
+	NoWrapper() PubsubSubscriptionPushConfigNoWrapperOutputReference
+	NoWrapperInput() *PubsubSubscriptionPushConfigNoWrapper
 	OidcToken() PubsubSubscriptionPushConfigOidcTokenOutputReference
 	OidcTokenInput() *PubsubSubscriptionPushConfigOidcToken
 	PushEndpoint() *string
@@ -69,8 +71,10 @@ type PubsubSubscriptionPushConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutNoWrapper(value *PubsubSubscriptionPushConfigNoWrapper)
 	PutOidcToken(value *PubsubSubscriptionPushConfigOidcToken)
 	ResetAttributes()
+	ResetNoWrapper()
 	ResetOidcToken()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) NoWrapper() PubsubSubscriptionPushConfigNoWrapperOutputReference {
+	var returns PubsubSubscriptionPushConfigNoWrapperOutputReference
+	_jsii_.Get(
+		j,
+		"noWrapper",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) NoWrapperInput() *PubsubSubscriptionPushConfigNoWrapper {
+	var returns *PubsubSubscriptionPushConfigNoWrapper
+	_jsii_.Get(
+		j,
+		"noWrapperInput",
 		&returns,
 	)
 	return returns
@@ -508,6 +532,17 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) InterpolationFor
 	return returns
 }
 
+func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) PutNoWrapper(value *PubsubSubscriptionPushConfigNoWrapper) {
+	if err := p.validatePutNoWrapperParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putNoWrapper",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) PutOidcToken(value *PubsubSubscriptionPushConfigOidcToken) {
 	if err := p.validatePutOidcTokenParameters(value); err != nil {
 		panic(err)
@@ -523,6 +558,14 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) ResetAttributes(
 	_jsii_.InvokeVoid(
 		p,
 		"resetAttributes",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) ResetNoWrapper() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNoWrapper",
 		nil, // no parameters
 	)
 }

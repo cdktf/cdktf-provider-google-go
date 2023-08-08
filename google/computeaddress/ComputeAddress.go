@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/compute_address google_compute_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_address google_compute_address}.
 type ComputeAddress interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -49,6 +49,12 @@ type ComputeAddress interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Ipv6EndpointType() *string
+	SetIpv6EndpointType(val *string)
+	Ipv6EndpointTypeInput() *string
+	IpVersion() *string
+	SetIpVersion(val *string)
+	IpVersionInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -129,6 +135,8 @@ type ComputeAddress interface {
 	ResetAddressType()
 	ResetDescription()
 	ResetId()
+	ResetIpv6EndpointType()
+	ResetIpVersion()
 	ResetNetwork()
 	ResetNetworkTier()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -320,6 +328,46 @@ func (j *jsiiProxy_ComputeAddress) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeAddress) Ipv6EndpointType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6EndpointType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeAddress) Ipv6EndpointTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6EndpointTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeAddress) IpVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeAddress) IpVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipVersionInput",
 		&returns,
 	)
 	return returns
@@ -606,7 +654,7 @@ func (j *jsiiProxy_ComputeAddress) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/compute_address google_compute_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_address google_compute_address} Resource.
 func NewComputeAddress(scope constructs.Construct, id *string, config *ComputeAddressConfig) ComputeAddress {
 	_init_.Initialize()
 
@@ -624,7 +672,7 @@ func NewComputeAddress(scope constructs.Construct, id *string, config *ComputeAd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/compute_address google_compute_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_address google_compute_address} Resource.
 func NewComputeAddress_Override(c ComputeAddress, scope constructs.Construct, id *string, config *ComputeAddressConfig) {
 	_init_.Initialize()
 
@@ -713,6 +761,28 @@ func (j *jsiiProxy_ComputeAddress)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeAddress)SetIpv6EndpointType(val *string) {
+	if err := j.validateSetIpv6EndpointTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6EndpointType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeAddress)SetIpVersion(val *string) {
+	if err := j.validateSetIpVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipVersion",
 		val,
 	)
 }
@@ -1140,6 +1210,22 @@ func (c *jsiiProxy_ComputeAddress) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeAddress) ResetIpv6EndpointType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpv6EndpointType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeAddress) ResetIpVersion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpVersion",
 		nil, // no parameters
 	)
 }

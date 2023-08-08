@@ -88,6 +88,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutDnsConfigParameters(value *Conta
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutEnableK8SBetaApisParameters(value *ContainerClusterEnableK8SBetaApis) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutGatewayApiConfigParameters(value *ContainerClusterGatewayApiConfig) error {
 	return nil
 }

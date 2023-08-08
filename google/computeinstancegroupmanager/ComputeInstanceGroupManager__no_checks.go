@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutAutoHealingPoliciesPa
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutInstanceLifecyclePolicyParameters(value *ComputeInstanceGroupManagerInstanceLifecyclePolicy) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutNamedPortParameters(value interface{}) error {
 	return nil
 }

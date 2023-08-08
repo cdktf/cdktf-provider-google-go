@@ -52,6 +52,14 @@ func (i *jsiiProxy_IdentityPlatformConfig) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformConfig) validatePutBlockingFunctionsParameters(value *IdentityPlatformConfigBlockingFunctions) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) validatePutQuotaParameters(value *IdentityPlatformConfigQuota) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformConfig) validatePutTimeoutsParameters(value *IdentityPlatformConfigTimeouts) error {
 	return nil
 }
@@ -65,6 +73,10 @@ func validateIdentityPlatformConfig_IsTerraformElementParameters(x interface{}) 
 }
 
 func validateIdentityPlatformConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) validateSetAuthorizedDomainsParameters(val *[]*string) error {
 	return nil
 }
 

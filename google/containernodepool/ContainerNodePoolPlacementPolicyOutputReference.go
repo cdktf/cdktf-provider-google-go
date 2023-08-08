@@ -29,6 +29,9 @@ type ContainerNodePoolPlacementPolicyOutputReference interface {
 	Fqn() *string
 	InternalValue() *ContainerNodePoolPlacementPolicy
 	SetInternalValue(val *ContainerNodePoolPlacementPolicy)
+	PolicyName() *string
+	SetPolicyName(val *string)
+	PolicyNameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +67,7 @@ type ContainerNodePoolPlacementPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPolicyName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,6 +128,26 @@ func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) InternalValu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) PolicyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) PolicyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyNameInput",
 		&returns,
 	)
 	return returns
@@ -226,6 +250,17 @@ func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetInternalVa
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetPolicyName(val *string) {
+	if err := j.validateSetPolicyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyName",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) ResetPolicyName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPolicyName",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

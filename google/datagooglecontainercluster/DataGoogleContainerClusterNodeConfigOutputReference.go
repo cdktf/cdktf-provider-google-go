@@ -35,6 +35,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	GcfsConfig() DataGoogleContainerClusterNodeConfigGcfsConfigList
 	GuestAccelerator() DataGoogleContainerClusterNodeConfigGuestAcceleratorList
 	Gvnic() DataGoogleContainerClusterNodeConfigGvnicList
+	HostMaintenancePolicy() DataGoogleContainerClusterNodeConfigHostMaintenancePolicyList
 	ImageType() *string
 	InternalValue() *DataGoogleContainerClusterNodeConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodeConfig)
@@ -221,6 +222,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Gvnic() 
 	_jsii_.Get(
 		j,
 		"gvnic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) HostMaintenancePolicy() DataGoogleContainerClusterNodeConfigHostMaintenancePolicyList {
+	var returns DataGoogleContainerClusterNodeConfigHostMaintenancePolicyList
+	_jsii_.Get(
+		j,
+		"hostMaintenancePolicy",
 		&returns,
 	)
 	return returns

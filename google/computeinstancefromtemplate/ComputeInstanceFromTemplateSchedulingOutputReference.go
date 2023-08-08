@@ -35,6 +35,8 @@ type ComputeInstanceFromTemplateSchedulingOutputReference interface {
 	InstanceTerminationActionInput() *string
 	InternalValue() *ComputeInstanceFromTemplateScheduling
 	SetInternalValue(val *ComputeInstanceFromTemplateScheduling)
+	LocalSsdRecoveryTimeout() ComputeInstanceFromTemplateSchedulingLocalSsdRecoveryTimeoutOutputReference
+	LocalSsdRecoveryTimeoutInput() *ComputeInstanceFromTemplateSchedulingLocalSsdRecoveryTimeout
 	MinNodeCpus() *float64
 	SetMinNodeCpus(val *float64)
 	MinNodeCpusInput() *float64
@@ -81,9 +83,11 @@ type ComputeInstanceFromTemplateSchedulingOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutLocalSsdRecoveryTimeout(value *ComputeInstanceFromTemplateSchedulingLocalSsdRecoveryTimeout)
 	PutNodeAffinities(value interface{})
 	ResetAutomaticRestart()
 	ResetInstanceTerminationAction()
+	ResetLocalSsdRecoveryTimeout()
 	ResetMinNodeCpus()
 	ResetNodeAffinities()
 	ResetOnHostMaintenance()
@@ -189,6 +193,26 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) Interna
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) LocalSsdRecoveryTimeout() ComputeInstanceFromTemplateSchedulingLocalSsdRecoveryTimeoutOutputReference {
+	var returns ComputeInstanceFromTemplateSchedulingLocalSsdRecoveryTimeoutOutputReference
+	_jsii_.Get(
+		j,
+		"localSsdRecoveryTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) LocalSsdRecoveryTimeoutInput() *ComputeInstanceFromTemplateSchedulingLocalSsdRecoveryTimeout {
+	var returns *ComputeInstanceFromTemplateSchedulingLocalSsdRecoveryTimeout
+	_jsii_.Get(
+		j,
+		"localSsdRecoveryTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -649,6 +673,17 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) Interpo
 	return returns
 }
 
+func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) PutLocalSsdRecoveryTimeout(value *ComputeInstanceFromTemplateSchedulingLocalSsdRecoveryTimeout) {
+	if err := c.validatePutLocalSsdRecoveryTimeoutParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putLocalSsdRecoveryTimeout",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) PutNodeAffinities(value interface{}) {
 	if err := c.validatePutNodeAffinitiesParameters(value); err != nil {
 		panic(err)
@@ -672,6 +707,14 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) ResetIn
 	_jsii_.InvokeVoid(
 		c,
 		"resetInstanceTerminationAction",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) ResetLocalSsdRecoveryTimeout() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLocalSsdRecoveryTimeout",
 		nil, // no parameters
 	)
 }

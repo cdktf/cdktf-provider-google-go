@@ -44,6 +44,10 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) validateInterpol
 	return nil
 }
 
+func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) validatePutNoWrapperParameters(value *PubsubSubscriptionPushConfigNoWrapper) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) validatePutOidcTokenParameters(value *PubsubSubscriptionPushConfigOidcToken) error {
 	return nil
 }

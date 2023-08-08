@@ -1,0 +1,6 @@
+package documentaiwarehousedocumentschema
+
+
+type DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptions struct {
+}
+

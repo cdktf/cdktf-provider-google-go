@@ -31,6 +31,7 @@ type DataGoogleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfigOutputRefe
 	Fqn() *string
 	InternalValue() *DataGoogleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfig
 	SetInternalValue(val *DataGoogleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfig)
+	Name() *string
 	NetworkTier() *string
 	PublicPtrDomainName() *string
 	// Experimental.
@@ -145,6 +146,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceIpv6AccessCo
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfigOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
 		&returns,
 	)
 	return returns

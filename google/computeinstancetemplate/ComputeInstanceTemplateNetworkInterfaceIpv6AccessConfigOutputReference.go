@@ -31,6 +31,7 @@ type ComputeInstanceTemplateNetworkInterfaceIpv6AccessConfigOutputReference inte
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Name() *string
 	NetworkTier() *string
 	SetNetworkTier(val *string)
 	NetworkTierInput() *string
@@ -147,6 +148,16 @@ func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceIpv6AccessConfigOutput
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateNetworkInterfaceIpv6AccessConfigOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
 		&returns,
 	)
 	return returns

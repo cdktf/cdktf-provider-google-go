@@ -29,6 +29,9 @@ type ContainerClusterNodePoolPlacementPolicyOutputReference interface {
 	Fqn() *string
 	InternalValue() *ContainerClusterNodePoolPlacementPolicy
 	SetInternalValue(val *ContainerClusterNodePoolPlacementPolicy)
+	PolicyName() *string
+	SetPolicyName(val *string)
+	PolicyNameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +67,7 @@ type ContainerClusterNodePoolPlacementPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPolicyName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,6 +128,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolPlacementPolicyOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolPlacementPolicyOutputReference) PolicyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolPlacementPolicyOutputReference) PolicyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyNameInput",
 		&returns,
 	)
 	return returns
@@ -226,6 +250,17 @@ func (j *jsiiProxy_ContainerClusterNodePoolPlacementPolicyOutputReference)SetInt
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolPlacementPolicyOutputReference)SetPolicyName(val *string) {
+	if err := j.validateSetPolicyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyName",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolPlacementPolicyOutputReference) Inter
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolPlacementPolicyOutputReference) ResetPolicyName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPolicyName",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerClusterNodePoolPlacementPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

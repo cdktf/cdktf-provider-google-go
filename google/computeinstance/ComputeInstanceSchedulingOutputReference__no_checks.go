@@ -44,6 +44,10 @@ func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateInterpolati
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) validatePutLocalSsdRecoveryTimeoutParameters(value *ComputeInstanceSchedulingLocalSsdRecoveryTimeout) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) validatePutNodeAffinitiesParameters(value interface{}) error {
 	return nil
 }

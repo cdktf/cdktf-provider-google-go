@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager}.
 type ComputeInstanceGroupManager interface {
 	cdktf.TerraformResource
 	AutoHealingPolicies() ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference
@@ -49,6 +49,8 @@ type ComputeInstanceGroupManager interface {
 	SetId(val *string)
 	IdInput() *string
 	InstanceGroup() *string
+	InstanceLifecyclePolicy() ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference
+	InstanceLifecyclePolicyInput() *ComputeInstanceGroupManagerInstanceLifecyclePolicy
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -134,6 +136,7 @@ type ComputeInstanceGroupManager interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoHealingPolicies(value *ComputeInstanceGroupManagerAutoHealingPolicies)
+	PutInstanceLifecyclePolicy(value *ComputeInstanceGroupManagerInstanceLifecyclePolicy)
 	PutNamedPort(value interface{})
 	PutStatefulDisk(value interface{})
 	PutTimeouts(value *ComputeInstanceGroupManagerTimeouts)
@@ -142,6 +145,7 @@ type ComputeInstanceGroupManager interface {
 	ResetAutoHealingPolicies()
 	ResetDescription()
 	ResetId()
+	ResetInstanceLifecyclePolicy()
 	ResetListManagedInstancesResults()
 	ResetNamedPort()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -346,6 +350,26 @@ func (j *jsiiProxy_ComputeInstanceGroupManager) InstanceGroup() *string {
 	_jsii_.Get(
 		j,
 		"instanceGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager) InstanceLifecyclePolicy() ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference {
+	var returns ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"instanceLifecyclePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager) InstanceLifecyclePolicyInput() *ComputeInstanceGroupManagerInstanceLifecyclePolicy {
+	var returns *ComputeInstanceGroupManagerInstanceLifecyclePolicy
+	_jsii_.Get(
+		j,
+		"instanceLifecyclePolicyInput",
 		&returns,
 	)
 	return returns
@@ -722,7 +746,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManager) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
 func NewComputeInstanceGroupManager(scope constructs.Construct, id *string, config *ComputeInstanceGroupManagerConfig) ComputeInstanceGroupManager {
 	_init_.Initialize()
 
@@ -740,7 +764,7 @@ func NewComputeInstanceGroupManager(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
 func NewComputeInstanceGroupManager_Override(c ComputeInstanceGroupManager, scope constructs.Construct, id *string, config *ComputeInstanceGroupManagerConfig) {
 	_init_.Initialize()
 
@@ -1217,6 +1241,17 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) PutAutoHealingPolicies(value *Co
 	)
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) PutInstanceLifecyclePolicy(value *ComputeInstanceGroupManagerInstanceLifecyclePolicy) {
+	if err := c.validatePutInstanceLifecyclePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putInstanceLifecyclePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupManager) PutNamedPort(value interface{}) {
 	if err := c.validatePutNamedPortParameters(value); err != nil {
 		panic(err)
@@ -1292,6 +1327,14 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceGroupManager) ResetInstanceLifecyclePolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInstanceLifecyclePolicy",
 		nil, // no parameters
 	)
 }

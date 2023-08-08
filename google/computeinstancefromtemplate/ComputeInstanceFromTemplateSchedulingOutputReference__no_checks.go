@@ -44,6 +44,10 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) validat
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) validatePutLocalSsdRecoveryTimeoutParameters(value *ComputeInstanceFromTemplateSchedulingLocalSsdRecoveryTimeout) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) validatePutNodeAffinitiesParameters(value interface{}) error {
 	return nil
 }

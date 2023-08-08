@@ -9,12 +9,17 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/identity_platform_config google_identity_platform_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/identity_platform_config google_identity_platform_config}.
 type IdentityPlatformConfig interface {
 	cdktf.TerraformResource
+	AuthorizedDomains() *[]*string
+	SetAuthorizedDomains(val *[]*string)
+	AuthorizedDomainsInput() *[]*string
 	AutodeleteAnonymousUsers() interface{}
 	SetAutodeleteAnonymousUsers(val interface{})
 	AutodeleteAnonymousUsersInput() interface{}
+	BlockingFunctions() IdentityPlatformConfigBlockingFunctionsOutputReference
+	BlockingFunctionsInput() *IdentityPlatformConfigBlockingFunctions
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -60,6 +65,8 @@ type IdentityPlatformConfig interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	Quota() IdentityPlatformConfigQuotaOutputReference
+	QuotaInput() *IdentityPlatformConfigQuota
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -95,13 +102,18 @@ type IdentityPlatformConfig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBlockingFunctions(value *IdentityPlatformConfigBlockingFunctions)
+	PutQuota(value *IdentityPlatformConfigQuota)
 	PutTimeouts(value *IdentityPlatformConfigTimeouts)
+	ResetAuthorizedDomains()
 	ResetAutodeleteAnonymousUsers()
+	ResetBlockingFunctions()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetQuota()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -116,6 +128,26 @@ type IdentityPlatformConfig interface {
 // The jsii proxy struct for IdentityPlatformConfig
 type jsiiProxy_IdentityPlatformConfig struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) AuthorizedDomains() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"authorizedDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) AuthorizedDomainsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"authorizedDomainsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_IdentityPlatformConfig) AutodeleteAnonymousUsers() interface{} {
@@ -133,6 +165,26 @@ func (j *jsiiProxy_IdentityPlatformConfig) AutodeleteAnonymousUsersInput() inter
 	_jsii_.Get(
 		j,
 		"autodeleteAnonymousUsersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) BlockingFunctions() IdentityPlatformConfigBlockingFunctionsOutputReference {
+	var returns IdentityPlatformConfigBlockingFunctionsOutputReference
+	_jsii_.Get(
+		j,
+		"blockingFunctions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) BlockingFunctionsInput() *IdentityPlatformConfigBlockingFunctions {
+	var returns *IdentityPlatformConfigBlockingFunctions
+	_jsii_.Get(
+		j,
+		"blockingFunctionsInput",
 		&returns,
 	)
 	return returns
@@ -308,6 +360,26 @@ func (j *jsiiProxy_IdentityPlatformConfig) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IdentityPlatformConfig) Quota() IdentityPlatformConfigQuotaOutputReference {
+	var returns IdentityPlatformConfigQuotaOutputReference
+	_jsii_.Get(
+		j,
+		"quota",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) QuotaInput() *IdentityPlatformConfigQuota {
+	var returns *IdentityPlatformConfigQuota
+	_jsii_.Get(
+		j,
+		"quotaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IdentityPlatformConfig) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -369,7 +441,7 @@ func (j *jsiiProxy_IdentityPlatformConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/identity_platform_config google_identity_platform_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/identity_platform_config google_identity_platform_config} Resource.
 func NewIdentityPlatformConfig(scope constructs.Construct, id *string, config *IdentityPlatformConfigConfig) IdentityPlatformConfig {
 	_init_.Initialize()
 
@@ -387,7 +459,7 @@ func NewIdentityPlatformConfig(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/identity_platform_config google_identity_platform_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/identity_platform_config google_identity_platform_config} Resource.
 func NewIdentityPlatformConfig_Override(i IdentityPlatformConfig, scope constructs.Construct, id *string, config *IdentityPlatformConfigConfig) {
 	_init_.Initialize()
 
@@ -395,6 +467,17 @@ func NewIdentityPlatformConfig_Override(i IdentityPlatformConfig, scope construc
 		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfig",
 		[]interface{}{scope, id, config},
 		i,
+	)
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig)SetAuthorizedDomains(val *[]*string) {
+	if err := j.validateSetAuthorizedDomainsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authorizedDomains",
+		val,
 	)
 }
 
@@ -765,6 +848,28 @@ func (i *jsiiProxy_IdentityPlatformConfig) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (i *jsiiProxy_IdentityPlatformConfig) PutBlockingFunctions(value *IdentityPlatformConfigBlockingFunctions) {
+	if err := i.validatePutBlockingFunctionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putBlockingFunctions",
+		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) PutQuota(value *IdentityPlatformConfigQuota) {
+	if err := i.validatePutQuotaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putQuota",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IdentityPlatformConfig) PutTimeouts(value *IdentityPlatformConfigTimeouts) {
 	if err := i.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -776,10 +881,26 @@ func (i *jsiiProxy_IdentityPlatformConfig) PutTimeouts(value *IdentityPlatformCo
 	)
 }
 
+func (i *jsiiProxy_IdentityPlatformConfig) ResetAuthorizedDomains() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetAuthorizedDomains",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_IdentityPlatformConfig) ResetAutodeleteAnonymousUsers() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetAutodeleteAnonymousUsers",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) ResetBlockingFunctions() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetBlockingFunctions",
 		nil, // no parameters
 	)
 }
@@ -804,6 +925,14 @@ func (i *jsiiProxy_IdentityPlatformConfig) ResetProject() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) ResetQuota() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetQuota",
 		nil, // no parameters
 	)
 }

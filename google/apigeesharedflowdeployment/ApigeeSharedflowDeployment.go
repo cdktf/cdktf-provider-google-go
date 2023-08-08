@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/apigee_sharedflow_deployment google_apigee_sharedflow_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/apigee_sharedflow_deployment google_apigee_sharedflow_deployment}.
 type ApigeeSharedflowDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_ApigeeSharedflowDeployment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/apigee_sharedflow_deployment google_apigee_sharedflow_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/apigee_sharedflow_deployment google_apigee_sharedflow_deployment} Resource.
 func NewApigeeSharedflowDeployment(scope constructs.Construct, id *string, config *ApigeeSharedflowDeploymentConfig) ApigeeSharedflowDeployment {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewApigeeSharedflowDeployment(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/apigee_sharedflow_deployment google_apigee_sharedflow_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/apigee_sharedflow_deployment google_apigee_sharedflow_deployment} Resource.
 func NewApigeeSharedflowDeployment_Override(a ApigeeSharedflowDeployment, scope constructs.Construct, id *string, config *ApigeeSharedflowDeploymentConfig) {
 	_init_.Initialize()
 

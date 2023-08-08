@@ -30,6 +30,7 @@ type DataGooglePubsubSubscriptionPushConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGooglePubsubSubscriptionPushConfig
 	SetInternalValue(val *DataGooglePubsubSubscriptionPushConfig)
+	NoWrapper() DataGooglePubsubSubscriptionPushConfigNoWrapperList
 	OidcToken() DataGooglePubsubSubscriptionPushConfigOidcTokenList
 	PushEndpoint() *string
 	// Experimental.
@@ -134,6 +135,16 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigOutputReference) NoWrapper() DataGooglePubsubSubscriptionPushConfigNoWrapperList {
+	var returns DataGooglePubsubSubscriptionPushConfigNoWrapperList
+	_jsii_.Get(
+		j,
+		"noWrapper",
 		&returns,
 	)
 	return returns

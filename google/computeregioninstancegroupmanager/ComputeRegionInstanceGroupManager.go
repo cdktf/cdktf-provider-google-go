@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager}.
 type ComputeRegionInstanceGroupManager interface {
 	cdktf.TerraformResource
 	AutoHealingPolicies() ComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference
@@ -55,6 +55,8 @@ type ComputeRegionInstanceGroupManager interface {
 	SetId(val *string)
 	IdInput() *string
 	InstanceGroup() *string
+	InstanceLifecyclePolicy() ComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference
+	InstanceLifecyclePolicyInput() *ComputeRegionInstanceGroupManagerInstanceLifecyclePolicy
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -139,6 +141,7 @@ type ComputeRegionInstanceGroupManager interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoHealingPolicies(value *ComputeRegionInstanceGroupManagerAutoHealingPolicies)
+	PutInstanceLifecyclePolicy(value *ComputeRegionInstanceGroupManagerInstanceLifecyclePolicy)
 	PutNamedPort(value interface{})
 	PutStatefulDisk(value interface{})
 	PutTimeouts(value *ComputeRegionInstanceGroupManagerTimeouts)
@@ -149,6 +152,7 @@ type ComputeRegionInstanceGroupManager interface {
 	ResetDistributionPolicyTargetShape()
 	ResetDistributionPolicyZones()
 	ResetId()
+	ResetInstanceLifecyclePolicy()
 	ResetListManagedInstancesResults()
 	ResetNamedPort()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -393,6 +397,26 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManager) InstanceGroup() *string {
 	_jsii_.Get(
 		j,
 		"instanceGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) InstanceLifecyclePolicy() ComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference {
+	var returns ComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"instanceLifecyclePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) InstanceLifecyclePolicyInput() *ComputeRegionInstanceGroupManagerInstanceLifecyclePolicy {
+	var returns *ComputeRegionInstanceGroupManagerInstanceLifecyclePolicy
+	_jsii_.Get(
+		j,
+		"instanceLifecyclePolicyInput",
 		&returns,
 	)
 	return returns
@@ -759,7 +783,7 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManager) WaitForInstancesStatusInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
 func NewComputeRegionInstanceGroupManager(scope constructs.Construct, id *string, config *ComputeRegionInstanceGroupManagerConfig) ComputeRegionInstanceGroupManager {
 	_init_.Initialize()
 
@@ -777,7 +801,7 @@ func NewComputeRegionInstanceGroupManager(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
 func NewComputeRegionInstanceGroupManager_Override(c ComputeRegionInstanceGroupManager, scope constructs.Construct, id *string, config *ComputeRegionInstanceGroupManagerConfig) {
 	_init_.Initialize()
 
@@ -1276,6 +1300,17 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) PutAutoHealingPolicies(val
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) PutInstanceLifecyclePolicy(value *ComputeRegionInstanceGroupManagerInstanceLifecyclePolicy) {
+	if err := c.validatePutInstanceLifecyclePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putInstanceLifecyclePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionInstanceGroupManager) PutNamedPort(value interface{}) {
 	if err := c.validatePutNamedPortParameters(value); err != nil {
 		panic(err)
@@ -1367,6 +1402,14 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) ResetInstanceLifecyclePolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInstanceLifecyclePolicy",
 		nil, // no parameters
 	)
 }

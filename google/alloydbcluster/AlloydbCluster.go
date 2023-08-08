@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
 type AlloydbCluster interface {
 	cdktf.TerraformResource
 	AutomatedBackupPolicy() AlloydbClusterAutomatedBackupPolicyOutputReference
@@ -26,6 +26,9 @@ type AlloydbCluster interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ContinuousBackupConfig() AlloydbClusterContinuousBackupConfigOutputReference
+	ContinuousBackupConfigInput() *AlloydbClusterContinuousBackupConfig
+	ContinuousBackupInfo() AlloydbClusterContinuousBackupInfoList
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -119,10 +122,12 @@ type AlloydbCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutomatedBackupPolicy(value *AlloydbClusterAutomatedBackupPolicy)
+	PutContinuousBackupConfig(value *AlloydbClusterContinuousBackupConfig)
 	PutEncryptionConfig(value *AlloydbClusterEncryptionConfig)
 	PutInitialUser(value *AlloydbClusterInitialUser)
 	PutTimeouts(value *AlloydbClusterTimeouts)
 	ResetAutomatedBackupPolicy()
+	ResetContinuousBackupConfig()
 	ResetDisplayName()
 	ResetEncryptionConfig()
 	ResetId()
@@ -223,6 +228,36 @@ func (j *jsiiProxy_AlloydbCluster) ConstructNodeMetadata() *map[string]interface
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) ContinuousBackupConfig() AlloydbClusterContinuousBackupConfigOutputReference {
+	var returns AlloydbClusterContinuousBackupConfigOutputReference
+	_jsii_.Get(
+		j,
+		"continuousBackupConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) ContinuousBackupConfigInput() *AlloydbClusterContinuousBackupConfig {
+	var returns *AlloydbClusterContinuousBackupConfig
+	_jsii_.Get(
+		j,
+		"continuousBackupConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) ContinuousBackupInfo() AlloydbClusterContinuousBackupInfoList {
+	var returns AlloydbClusterContinuousBackupInfoList
+	_jsii_.Get(
+		j,
+		"continuousBackupInfo",
 		&returns,
 	)
 	return returns
@@ -589,7 +624,7 @@ func (j *jsiiProxy_AlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbClusterConfig) AlloydbCluster {
 	_init_.Initialize()
 
@@ -607,7 +642,7 @@ func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster_Override(a AlloydbCluster, scope constructs.Construct, id *string, config *AlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1040,6 +1075,17 @@ func (a *jsiiProxy_AlloydbCluster) PutAutomatedBackupPolicy(value *AlloydbCluste
 	)
 }
 
+func (a *jsiiProxy_AlloydbCluster) PutContinuousBackupConfig(value *AlloydbClusterContinuousBackupConfig) {
+	if err := a.validatePutContinuousBackupConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putContinuousBackupConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlloydbCluster) PutEncryptionConfig(value *AlloydbClusterEncryptionConfig) {
 	if err := a.validatePutEncryptionConfigParameters(value); err != nil {
 		panic(err)
@@ -1077,6 +1123,14 @@ func (a *jsiiProxy_AlloydbCluster) ResetAutomatedBackupPolicy() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAutomatedBackupPolicy",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) ResetContinuousBackupConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetContinuousBackupConfig",
 		nil, // no parameters
 	)
 }

@@ -31,6 +31,7 @@ type DataGoogleComputeInstanceSchedulingOutputReference interface {
 	InstanceTerminationAction() *string
 	InternalValue() *DataGoogleComputeInstanceScheduling
 	SetInternalValue(val *DataGoogleComputeInstanceScheduling)
+	LocalSsdRecoveryTimeout() DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutList
 	MinNodeCpus() *float64
 	NodeAffinities() DataGoogleComputeInstanceSchedulingNodeAffinitiesList
 	OnHostMaintenance() *string
@@ -148,6 +149,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) InternalV
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) LocalSsdRecoveryTimeout() DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutList {
+	var returns DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutList
+	_jsii_.Get(
+		j,
+		"localSsdRecoveryTimeout",
 		&returns,
 	)
 	return returns

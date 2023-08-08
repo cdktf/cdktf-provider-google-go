@@ -29,6 +29,7 @@ type DataGoogleContainerClusterNodePoolPlacementPolicyOutputReference interface 
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterNodePoolPlacementPolicy
 	SetInternalValue(val *DataGoogleContainerClusterNodePoolPlacementPolicy)
+	PolicyName() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -122,6 +123,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolPlacementPolicyOutputRefere
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolPlacementPolicyOutputReference) PolicyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyName",
 		&returns,
 	)
 	return returns

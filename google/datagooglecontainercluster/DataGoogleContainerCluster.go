@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/data-sources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/data-sources/container_cluster google_container_cluster}.
 type DataGoogleContainerCluster interface {
 	cdktf.TerraformDataSource
 	AddonsConfig() DataGoogleContainerClusterAddonsConfigList
@@ -41,6 +41,7 @@ type DataGoogleContainerCluster interface {
 	EnableAutopilot() cdktf.IResolvable
 	EnableBinaryAuthorization() cdktf.IResolvable
 	EnableIntranodeVisibility() cdktf.IResolvable
+	EnableK8SBetaApis() DataGoogleContainerClusterEnableK8SBetaApisList
 	EnableKubernetesAlpha() cdktf.IResolvable
 	EnableL4IlbSubsetting() cdktf.IResolvable
 	EnableLegacyAbac() cdktf.IResolvable
@@ -374,6 +375,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) EnableIntranodeVisibility() cdktf
 	_jsii_.Get(
 		j,
 		"enableIntranodeVisibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) EnableK8SBetaApis() DataGoogleContainerClusterEnableK8SBetaApisList {
+	var returns DataGoogleContainerClusterEnableK8SBetaApisList
+	_jsii_.Get(
+		j,
+		"enableK8SBetaApis",
 		&returns,
 	)
 	return returns
@@ -1000,7 +1011,7 @@ func (j *jsiiProxy_DataGoogleContainerCluster) WorkloadIdentityConfig() DataGoog
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/data-sources/container_cluster google_container_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/data-sources/container_cluster google_container_cluster} Data Source.
 func NewDataGoogleContainerCluster(scope constructs.Construct, id *string, config *DataGoogleContainerClusterConfig) DataGoogleContainerCluster {
 	_init_.Initialize()
 
@@ -1018,7 +1029,7 @@ func NewDataGoogleContainerCluster(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.76.0/docs/data-sources/container_cluster google_container_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/data-sources/container_cluster google_container_cluster} Data Source.
 func NewDataGoogleContainerCluster_Override(d DataGoogleContainerCluster, scope constructs.Construct, id *string, config *DataGoogleContainerClusterConfig) {
 	_init_.Initialize()
 

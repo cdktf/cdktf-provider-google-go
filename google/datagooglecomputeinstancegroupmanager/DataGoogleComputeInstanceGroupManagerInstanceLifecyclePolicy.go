@@ -1,0 +1,6 @@
+package datagooglecomputeinstancegroupmanager
+
+
+type DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicy struct {
+}
+

@@ -92,6 +92,14 @@ func (j *jsiiProxy_ComputeAddress) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_ComputeAddress) validateSetIpv6EndpointTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeAddress) validateSetIpVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeAddress) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
