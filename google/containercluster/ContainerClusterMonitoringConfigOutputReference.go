@@ -10,6 +10,8 @@ import (
 
 type ContainerClusterMonitoringConfigOutputReference interface {
 	cdktf.ComplexObject
+	AdvancedDatapathObservabilityConfig() ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList
+	AdvancedDatapathObservabilityConfigInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -66,7 +68,9 @@ type ContainerClusterMonitoringConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAdvancedDatapathObservabilityConfig(value interface{})
 	PutManagedPrometheus(value *ContainerClusterMonitoringConfigManagedPrometheus)
+	ResetAdvancedDatapathObservabilityConfig()
 	ResetEnableComponents()
 	ResetManagedPrometheus()
 	// Produce the Token's value at resolution time.
@@ -82,6 +86,26 @@ type ContainerClusterMonitoringConfigOutputReference interface {
 // The jsii proxy struct for ContainerClusterMonitoringConfigOutputReference
 type jsiiProxy_ContainerClusterMonitoringConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) AdvancedDatapathObservabilityConfig() ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList {
+	var returns ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList
+	_jsii_.Get(
+		j,
+		"advancedDatapathObservabilityConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) AdvancedDatapathObservabilityConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"advancedDatapathObservabilityConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -474,6 +498,17 @@ func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) Interpolatio
 	return returns
 }
 
+func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) PutAdvancedDatapathObservabilityConfig(value interface{}) {
+	if err := c.validatePutAdvancedDatapathObservabilityConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAdvancedDatapathObservabilityConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) PutManagedPrometheus(value *ContainerClusterMonitoringConfigManagedPrometheus) {
 	if err := c.validatePutManagedPrometheusParameters(value); err != nil {
 		panic(err)
@@ -482,6 +517,14 @@ func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) PutManagedPr
 		c,
 		"putManagedPrometheus",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) ResetAdvancedDatapathObservabilityConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAdvancedDatapathObservabilityConfig",
+		nil, // no parameters
 	)
 }
 

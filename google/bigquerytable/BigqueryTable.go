@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_table google_bigquery_table}.
 type BigqueryTable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -74,6 +74,9 @@ type BigqueryTable interface {
 	Location() *string
 	MaterializedView() BigqueryTableMaterializedViewOutputReference
 	MaterializedViewInput() *BigqueryTableMaterializedView
+	MaxStaleness() *string
+	SetMaxStaleness(val *string)
+	MaxStalenessInput() *string
 	// The tree node.
 	Node() constructs.Node
 	NumBytes() *float64
@@ -153,6 +156,7 @@ type BigqueryTable interface {
 	ResetId()
 	ResetLabels()
 	ResetMaterializedView()
+	ResetMaxStaleness()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -526,6 +530,26 @@ func (j *jsiiProxy_BigqueryTable) MaterializedViewInput() *BigqueryTableMaterial
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryTable) MaxStaleness() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxStaleness",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) MaxStalenessInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxStalenessInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryTable) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -767,7 +791,7 @@ func (j *jsiiProxy_BigqueryTable) ViewInput() *BigqueryTableView {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTableConfig) BigqueryTable {
 	_init_.Initialize()
 
@@ -785,7 +809,7 @@ func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable_Override(b BigqueryTable, scope constructs.Construct, id *string, config *BigqueryTableConfig) {
 	_init_.Initialize()
 
@@ -929,6 +953,17 @@ func (j *jsiiProxy_BigqueryTable)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetMaxStaleness(val *string) {
+	if err := j.validateSetMaxStalenessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxStaleness",
 		val,
 	)
 }
@@ -1393,6 +1428,14 @@ func (b *jsiiProxy_BigqueryTable) ResetMaterializedView() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetMaterializedView",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetMaxStaleness() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetMaxStaleness",
 		nil, // no parameters
 	)
 }

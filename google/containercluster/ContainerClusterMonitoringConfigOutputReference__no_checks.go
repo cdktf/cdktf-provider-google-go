@@ -44,6 +44,10 @@ func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) validateInte
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) validatePutAdvancedDatapathObservabilityConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) validatePutManagedPrometheusParameters(value *ContainerClusterMonitoringConfigManagedPrometheus) error {
 	return nil
 }

@@ -567,6 +567,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "queryInput", GoGetter: "QueryInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlertRule", GoMethod: "ResetAlertRule"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDuration", GoMethod: "ResetDuration"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEvaluationInterval", GoMethod: "ResetEvaluationInterval"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRuleGroup", GoMethod: "ResetRuleGroup"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

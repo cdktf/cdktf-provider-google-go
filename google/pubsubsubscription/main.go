@@ -17,6 +17,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "bigqueryConfig", GoGetter: "BigqueryConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "bigqueryConfigInput", GoGetter: "BigqueryConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudStorageConfig", GoGetter: "CloudStorageConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudStorageConfigInput", GoGetter: "CloudStorageConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -62,6 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pushConfig", GoGetter: "PushConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "pushConfigInput", GoGetter: "PushConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putBigqueryConfig", GoMethod: "PutBigqueryConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putCloudStorageConfig", GoMethod: "PutCloudStorageConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putDeadLetterPolicy", GoMethod: "PutDeadLetterPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putExpirationPolicy", GoMethod: "PutExpirationPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putPushConfig", GoMethod: "PutPushConfig"},
@@ -70,6 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAckDeadlineSeconds", GoMethod: "ResetAckDeadlineSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBigqueryConfig", GoMethod: "ResetBigqueryConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCloudStorageConfig", GoMethod: "ResetCloudStorageConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeadLetterPolicy", GoMethod: "ResetDeadLetterPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableExactlyOnceDelivery", GoMethod: "ResetEnableExactlyOnceDelivery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableMessageOrdering", GoMethod: "ResetEnableMessageOrdering"},
@@ -149,6 +153,100 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfig",
+		reflect.TypeOf((*PubsubSubscriptionCloudStorageConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfig",
+		reflect.TypeOf((*PubsubSubscriptionCloudStorageConfigAvroConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference",
+		reflect.TypeOf((*PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWriteMetadata", GoMethod: "ResetWriteMetadata"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "writeMetadata", GoGetter: "WriteMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "writeMetadataInput", GoGetter: "WriteMetadataInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigOutputReference",
+		reflect.TypeOf((*PubsubSubscriptionCloudStorageConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "avroConfig", GoGetter: "AvroConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "avroConfigInput", GoGetter: "AvroConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
+			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "filenamePrefix", GoGetter: "FilenamePrefix"},
+			_jsii_.MemberProperty{JsiiProperty: "filenamePrefixInput", GoGetter: "FilenamePrefixInput"},
+			_jsii_.MemberProperty{JsiiProperty: "filenameSuffix", GoGetter: "FilenameSuffix"},
+			_jsii_.MemberProperty{JsiiProperty: "filenameSuffixInput", GoGetter: "FilenameSuffixInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxBytes", GoGetter: "MaxBytes"},
+			_jsii_.MemberProperty{JsiiProperty: "maxBytesInput", GoGetter: "MaxBytesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "maxDuration", GoGetter: "MaxDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "maxDurationInput", GoGetter: "MaxDurationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putAvroConfig", GoMethod: "PutAvroConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAvroConfig", GoMethod: "ResetAvroConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFilenamePrefix", GoMethod: "ResetFilenamePrefix"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFilenameSuffix", GoMethod: "ResetFilenameSuffix"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxBytes", GoMethod: "ResetMaxBytes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxDuration", GoMethod: "ResetMaxDuration"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

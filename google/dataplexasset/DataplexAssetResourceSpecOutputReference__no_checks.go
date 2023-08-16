@@ -64,6 +64,10 @@ func (j *jsiiProxy_DataplexAssetResourceSpecOutputReference) validateSetNamePara
 	return nil
 }
 
+func (j *jsiiProxy_DataplexAssetResourceSpecOutputReference) validateSetReadAccessModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataplexAssetResourceSpecOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

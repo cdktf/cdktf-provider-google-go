@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule}.
 type ComputeGlobalForwardingRule interface {
 	cdktf.TerraformResource
 	BaseForwardingRule() *string
@@ -98,6 +98,9 @@ type ComputeGlobalForwardingRule interface {
 	SourceIpRanges() *[]*string
 	SetSourceIpRanges(val *[]*string)
 	SourceIpRangesInput() *[]*string
+	Subnetwork() *string
+	SetSubnetwork(val *string)
+	SubnetworkInput() *string
 	Target() *string
 	SetTarget(val *string)
 	TargetInput() *string
@@ -152,6 +155,7 @@ type ComputeGlobalForwardingRule interface {
 	ResetPortRange()
 	ResetProject()
 	ResetSourceIpRanges()
+	ResetSubnetwork()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -628,6 +632,26 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) SourceIpRangesInput() *[]*string
 	return returns
 }
 
+func (j *jsiiProxy_ComputeGlobalForwardingRule) Subnetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeGlobalForwardingRule) SubnetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetworkInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeGlobalForwardingRule) Target() *string {
 	var returns *string
 	_jsii_.Get(
@@ -699,7 +723,7 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewComputeGlobalForwardingRule(scope constructs.Construct, id *string, config *ComputeGlobalForwardingRuleConfig) ComputeGlobalForwardingRule {
 	_init_.Initialize()
 
@@ -717,7 +741,7 @@ func NewComputeGlobalForwardingRule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewComputeGlobalForwardingRule_Override(c ComputeGlobalForwardingRule, scope constructs.Construct, id *string, config *ComputeGlobalForwardingRuleConfig) {
 	_init_.Initialize()
 
@@ -935,6 +959,17 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule)SetSourceIpRanges(val *[]*string)
 	_jsii_.Set(
 		j,
 		"sourceIpRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeGlobalForwardingRule)SetSubnetwork(val *string) {
+	if err := j.validateSetSubnetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subnetwork",
 		val,
 	)
 }
@@ -1346,6 +1381,14 @@ func (c *jsiiProxy_ComputeGlobalForwardingRule) ResetSourceIpRanges() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSourceIpRanges",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeGlobalForwardingRule) ResetSubnetwork() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSubnetwork",
 		nil, // no parameters
 	)
 }

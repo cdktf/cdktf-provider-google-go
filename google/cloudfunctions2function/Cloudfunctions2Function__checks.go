@@ -285,6 +285,14 @@ func (j *jsiiProxy_Cloudfunctions2Function) validateSetIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_Cloudfunctions2Function) validateSetKmsKeyNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Cloudfunctions2Function) validateSetLabelsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

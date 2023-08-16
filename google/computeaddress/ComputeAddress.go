@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_address google_compute_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_address google_compute_address}.
 type ComputeAddress interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -654,7 +654,7 @@ func (j *jsiiProxy_ComputeAddress) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_address google_compute_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_address google_compute_address} Resource.
 func NewComputeAddress(scope constructs.Construct, id *string, config *ComputeAddressConfig) ComputeAddress {
 	_init_.Initialize()
 
@@ -672,7 +672,7 @@ func NewComputeAddress(scope constructs.Construct, id *string, config *ComputeAd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_address google_compute_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_address google_compute_address} Resource.
 func NewComputeAddress_Override(c ComputeAddress, scope constructs.Construct, id *string, config *ComputeAddressConfig) {
 	_init_.Initialize()
 

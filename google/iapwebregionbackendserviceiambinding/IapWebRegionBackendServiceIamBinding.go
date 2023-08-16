@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/iap_web_region_backend_service_iam_binding google_iap_web_region_backend_service_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/iap_web_region_backend_service_iam_binding google_iap_web_region_backend_service_iam_binding}.
 type IapWebRegionBackendServiceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_IapWebRegionBackendServiceIamBinding) WebRegionBackendService
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/iap_web_region_backend_service_iam_binding google_iap_web_region_backend_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/iap_web_region_backend_service_iam_binding google_iap_web_region_backend_service_iam_binding} Resource.
 func NewIapWebRegionBackendServiceIamBinding(scope constructs.Construct, id *string, config *IapWebRegionBackendServiceIamBindingConfig) IapWebRegionBackendServiceIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewIapWebRegionBackendServiceIamBinding(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/iap_web_region_backend_service_iam_binding google_iap_web_region_backend_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/iap_web_region_backend_service_iam_binding google_iap_web_region_backend_service_iam_binding} Resource.
 func NewIapWebRegionBackendServiceIamBinding_Override(i IapWebRegionBackendServiceIamBinding, scope constructs.Construct, id *string, config *IapWebRegionBackendServiceIamBindingConfig) {
 	_init_.Initialize()
 

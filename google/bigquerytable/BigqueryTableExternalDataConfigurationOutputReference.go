@@ -38,6 +38,9 @@ type BigqueryTableExternalDataConfigurationOutputReference interface {
 	CreationStack() *[]*string
 	CsvOptions() BigqueryTableExternalDataConfigurationCsvOptionsOutputReference
 	CsvOptionsInput() *BigqueryTableExternalDataConfigurationCsvOptions
+	FileSetSpecType() *string
+	SetFileSetSpecType(val *string)
+	FileSetSpecTypeInput() *string
 	// Experimental.
 	Fqn() *string
 	GoogleSheetsOptions() BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference
@@ -116,6 +119,7 @@ type BigqueryTableExternalDataConfigurationOutputReference interface {
 	ResetCompression()
 	ResetConnectionId()
 	ResetCsvOptions()
+	ResetFileSetSpecType()
 	ResetGoogleSheetsOptions()
 	ResetHivePartitioningOptions()
 	ResetIgnoreUnknownValues()
@@ -267,6 +271,26 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) CsvOpt
 	_jsii_.Get(
 		j,
 		"csvOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) FileSetSpecType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileSetSpecType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) FileSetSpecTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileSetSpecTypeInput",
 		&returns,
 	)
 	return returns
@@ -631,6 +655,17 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference)SetConn
 	_jsii_.Set(
 		j,
 		"connectionId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference)SetFileSetSpecType(val *string) {
+	if err := j.validateSetFileSetSpecTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fileSetSpecType",
 		val,
 	)
 }
@@ -1036,6 +1071,14 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ResetC
 	_jsii_.InvokeVoid(
 		b,
 		"resetCsvOptions",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationOutputReference) ResetFileSetSpecType() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetFileSetSpecType",
 		nil, // no parameters
 	)
 }

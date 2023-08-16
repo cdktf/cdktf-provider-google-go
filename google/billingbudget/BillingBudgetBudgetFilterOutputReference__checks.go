@@ -222,6 +222,14 @@ func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateSetProjects
 	return nil
 }
 
+func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateSetResourceAncestorsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateSetServicesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

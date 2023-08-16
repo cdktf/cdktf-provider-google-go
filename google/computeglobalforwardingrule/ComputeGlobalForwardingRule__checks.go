@@ -437,6 +437,14 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetSourceIpRangesParamet
 	return nil
 }
 
+func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetSubnetworkParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetTargetParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

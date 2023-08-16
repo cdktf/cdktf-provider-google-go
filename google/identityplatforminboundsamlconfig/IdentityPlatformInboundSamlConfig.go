@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config}.
 type IdentityPlatformInboundSamlConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -450,7 +450,7 @@ func (j *jsiiProxy_IdentityPlatformInboundSamlConfig) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config} Resource.
 func NewIdentityPlatformInboundSamlConfig(scope constructs.Construct, id *string, config *IdentityPlatformInboundSamlConfigConfig) IdentityPlatformInboundSamlConfig {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewIdentityPlatformInboundSamlConfig(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/identity_platform_inbound_saml_config google_identity_platform_inbound_saml_config} Resource.
 func NewIdentityPlatformInboundSamlConfig_Override(i IdentityPlatformInboundSamlConfig, scope constructs.Construct, id *string, config *IdentityPlatformInboundSamlConfigConfig) {
 	_init_.Initialize()
 

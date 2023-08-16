@@ -80,6 +80,10 @@ func validateSecretManagerSecret_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_SecretManagerSecret) validateSetAnnotationsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretManagerSecret) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

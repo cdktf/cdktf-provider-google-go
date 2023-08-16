@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/pubsub_subscription google_pubsub_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/pubsub_subscription google_pubsub_subscription}.
 type PubsubSubscription interface {
 	cdktf.TerraformResource
 	AckDeadlineSeconds() *float64
@@ -19,6 +19,8 @@ type PubsubSubscription interface {
 	BigqueryConfigInput() *PubsubSubscriptionBigqueryConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CloudStorageConfig() PubsubSubscriptionCloudStorageConfigOutputReference
+	CloudStorageConfigInput() *PubsubSubscriptionCloudStorageConfig
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -129,6 +131,7 @@ type PubsubSubscription interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBigqueryConfig(value *PubsubSubscriptionBigqueryConfig)
+	PutCloudStorageConfig(value *PubsubSubscriptionCloudStorageConfig)
 	PutDeadLetterPolicy(value *PubsubSubscriptionDeadLetterPolicy)
 	PutExpirationPolicy(value *PubsubSubscriptionExpirationPolicy)
 	PutPushConfig(value *PubsubSubscriptionPushConfig)
@@ -136,6 +139,7 @@ type PubsubSubscription interface {
 	PutTimeouts(value *PubsubSubscriptionTimeouts)
 	ResetAckDeadlineSeconds()
 	ResetBigqueryConfig()
+	ResetCloudStorageConfig()
 	ResetDeadLetterPolicy()
 	ResetEnableExactlyOnceDelivery()
 	ResetEnableMessageOrdering()
@@ -212,6 +216,26 @@ func (j *jsiiProxy_PubsubSubscription) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscription) CloudStorageConfig() PubsubSubscriptionCloudStorageConfigOutputReference {
+	var returns PubsubSubscriptionCloudStorageConfigOutputReference
+	_jsii_.Get(
+		j,
+		"cloudStorageConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscription) CloudStorageConfigInput() *PubsubSubscriptionCloudStorageConfig {
+	var returns *PubsubSubscriptionCloudStorageConfig
+	_jsii_.Get(
+		j,
+		"cloudStorageConfigInput",
 		&returns,
 	)
 	return returns
@@ -668,7 +692,7 @@ func (j *jsiiProxy_PubsubSubscription) TopicInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/pubsub_subscription google_pubsub_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/pubsub_subscription google_pubsub_subscription} Resource.
 func NewPubsubSubscription(scope constructs.Construct, id *string, config *PubsubSubscriptionConfig) PubsubSubscription {
 	_init_.Initialize()
 
@@ -686,7 +710,7 @@ func NewPubsubSubscription(scope constructs.Construct, id *string, config *Pubsu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/pubsub_subscription google_pubsub_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/pubsub_subscription google_pubsub_subscription} Resource.
 func NewPubsubSubscription_Override(p PubsubSubscription, scope constructs.Construct, id *string, config *PubsubSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -1163,6 +1187,17 @@ func (p *jsiiProxy_PubsubSubscription) PutBigqueryConfig(value *PubsubSubscripti
 	)
 }
 
+func (p *jsiiProxy_PubsubSubscription) PutCloudStorageConfig(value *PubsubSubscriptionCloudStorageConfig) {
+	if err := p.validatePutCloudStorageConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putCloudStorageConfig",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PubsubSubscription) PutDeadLetterPolicy(value *PubsubSubscriptionDeadLetterPolicy) {
 	if err := p.validatePutDeadLetterPolicyParameters(value); err != nil {
 		panic(err)
@@ -1230,6 +1265,14 @@ func (p *jsiiProxy_PubsubSubscription) ResetBigqueryConfig() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetBigqueryConfig",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubSubscription) ResetCloudStorageConfig() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCloudStorageConfig",
 		nil, // no parameters
 	)
 }

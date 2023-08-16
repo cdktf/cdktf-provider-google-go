@@ -10,6 +10,7 @@ import (
 
 type DataGoogleContainerClusterMonitoringConfigOutputReference interface {
 	cdktf.ComplexObject
+	AdvancedDatapathObservabilityConfig() DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -76,6 +77,16 @@ type DataGoogleContainerClusterMonitoringConfigOutputReference interface {
 // The jsii proxy struct for DataGoogleContainerClusterMonitoringConfigOutputReference
 type jsiiProxy_DataGoogleContainerClusterMonitoringConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterMonitoringConfigOutputReference) AdvancedDatapathObservabilityConfig() DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList {
+	var returns DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList
+	_jsii_.Get(
+		j,
+		"advancedDatapathObservabilityConfig",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleContainerClusterMonitoringConfigOutputReference) ComplexObjectIndex() interface{} {

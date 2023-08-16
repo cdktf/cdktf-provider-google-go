@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/active_directory_domain google_active_directory_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/active_directory_domain google_active_directory_domain}.
 type ActiveDirectoryDomain interface {
 	cdktf.TerraformResource
 	Admin() *string
@@ -497,7 +497,7 @@ func (j *jsiiProxy_ActiveDirectoryDomain) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/active_directory_domain google_active_directory_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/active_directory_domain google_active_directory_domain} Resource.
 func NewActiveDirectoryDomain(scope constructs.Construct, id *string, config *ActiveDirectoryDomainConfig) ActiveDirectoryDomain {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewActiveDirectoryDomain(scope constructs.Construct, id *string, config *Ac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/active_directory_domain google_active_directory_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/active_directory_domain google_active_directory_domain} Resource.
 func NewActiveDirectoryDomain_Override(a ActiveDirectoryDomain, scope constructs.Construct, id *string, config *ActiveDirectoryDomainConfig) {
 	_init_.Initialize()
 

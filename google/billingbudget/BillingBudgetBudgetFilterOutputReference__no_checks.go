@@ -84,6 +84,10 @@ func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateSetProjects
 	return nil
 }
 
+func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateSetResourceAncestorsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateSetServicesParameters(val *[]*string) error {
 	return nil
 }

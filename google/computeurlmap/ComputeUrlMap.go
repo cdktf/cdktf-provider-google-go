@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_url_map google_compute_url_map}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_url_map google_compute_url_map}.
 type ComputeUrlMap interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -593,7 +593,7 @@ func (j *jsiiProxy_ComputeUrlMap) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_url_map google_compute_url_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_url_map google_compute_url_map} Resource.
 func NewComputeUrlMap(scope constructs.Construct, id *string, config *ComputeUrlMapConfig) ComputeUrlMap {
 	_init_.Initialize()
 
@@ -611,7 +611,7 @@ func NewComputeUrlMap(scope constructs.Construct, id *string, config *ComputeUrl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.77.0/docs/resources/compute_url_map google_compute_url_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_url_map google_compute_url_map} Resource.
 func NewComputeUrlMap_Override(c ComputeUrlMap, scope constructs.Construct, id *string, config *ComputeUrlMapConfig) {
 	_init_.Initialize()
 

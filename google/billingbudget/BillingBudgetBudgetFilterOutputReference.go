@@ -46,6 +46,9 @@ type BillingBudgetBudgetFilterOutputReference interface {
 	Projects() *[]*string
 	SetProjects(val *[]*string)
 	ProjectsInput() *[]*string
+	ResourceAncestors() *[]*string
+	SetResourceAncestors(val *[]*string)
+	ResourceAncestorsInput() *[]*string
 	Services() *[]*string
 	SetServices(val *[]*string)
 	ServicesInput() *[]*string
@@ -91,6 +94,7 @@ type BillingBudgetBudgetFilterOutputReference interface {
 	ResetCustomPeriod()
 	ResetLabels()
 	ResetProjects()
+	ResetResourceAncestors()
 	ResetServices()
 	ResetSubaccounts()
 	// Produce the Token's value at resolution time.
@@ -278,6 +282,26 @@ func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference) ProjectsInput() *[]
 	return returns
 }
 
+func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference) ResourceAncestors() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourceAncestors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference) ResourceAncestorsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourceAncestorsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference) Services() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -450,6 +474,17 @@ func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference)SetProjects(val *[]*
 	_jsii_.Set(
 		j,
 		"projects",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BillingBudgetBudgetFilterOutputReference)SetResourceAncestors(val *[]*string) {
+	if err := j.validateSetResourceAncestorsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceAncestors",
 		val,
 	)
 }
@@ -739,6 +774,14 @@ func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) ResetProjects() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetProjects",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) ResetResourceAncestors() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetResourceAncestors",
 		nil, // no parameters
 	)
 }
