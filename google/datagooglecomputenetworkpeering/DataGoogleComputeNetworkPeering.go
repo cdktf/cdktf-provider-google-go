@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/compute_network_peering google_compute_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_network_peering google_compute_network_peering}.
 type DataGoogleComputeNetworkPeering interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_DataGoogleComputeNetworkPeering) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/compute_network_peering google_compute_network_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_network_peering google_compute_network_peering} Data Source.
 func NewDataGoogleComputeNetworkPeering(scope constructs.Construct, id *string, config *DataGoogleComputeNetworkPeeringConfig) DataGoogleComputeNetworkPeering {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewDataGoogleComputeNetworkPeering(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/compute_network_peering google_compute_network_peering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_network_peering google_compute_network_peering} Data Source.
 func NewDataGoogleComputeNetworkPeering_Override(d DataGoogleComputeNetworkPeering, scope constructs.Construct, id *string, config *DataGoogleComputeNetworkPeeringConfig) {
 	_init_.Initialize()
 

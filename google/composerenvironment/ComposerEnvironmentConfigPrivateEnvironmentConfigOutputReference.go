@@ -29,6 +29,9 @@ type ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference interface 
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionType() *string
+	SetConnectionType(val *string)
+	ConnectionTypeInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -85,6 +88,7 @@ type ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference interface 
 	ResetCloudComposerConnectionSubnetwork()
 	ResetCloudComposerNetworkIpv4CidrBlock()
 	ResetCloudSqlIpv4CidrBlock()
+	ResetConnectionType()
 	ResetEnablePrivateEndpoint()
 	ResetEnablePrivatelyUsedPublicIps()
 	ResetMasterIpv4CidrBlock()
@@ -179,6 +183,26 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) ConnectionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) ConnectionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionTypeInput",
 		&returns,
 	)
 	return returns
@@ -393,6 +417,17 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference)SetConnectionType(val *string) {
+	if err := j.validateSetConnectionTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connectionType",
 		val,
 	)
 }
@@ -680,6 +715,14 @@ func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	_jsii_.InvokeVoid(
 		c,
 		"resetCloudSqlIpv4CidrBlock",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) ResetConnectionType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetConnectionType",
 		nil, // no parameters
 	)
 }

@@ -21,25 +21,25 @@ type NotebooksEnvironmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A reference to the zone where the machine resides.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_environment#location NotebooksEnvironment#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_environment#location NotebooksEnvironment#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The name specified for the Environment instance. Format: projects/{project_id}/locations/{location}/environments/{environmentId}.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_environment#name NotebooksEnvironment#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_environment#name NotebooksEnvironment#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// container_image block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_environment#container_image NotebooksEnvironment#container_image}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_environment#container_image NotebooksEnvironment#container_image}
 	ContainerImage *NotebooksEnvironmentContainerImage `field:"optional" json:"containerImage" yaml:"containerImage"`
 	// A brief description of this environment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_environment#description NotebooksEnvironment#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_environment#description NotebooksEnvironment#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Display name of this environment for the UI.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_environment#display_name NotebooksEnvironment#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_environment#display_name NotebooksEnvironment#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_environment#id NotebooksEnvironment#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_environment#id NotebooksEnvironment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -48,17 +48,17 @@ type NotebooksEnvironmentConfig struct {
 	//
 	// The path must be a URL or Cloud Storage path. Example: "gs://path-to-file/file-name"
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_environment#post_startup_script NotebooksEnvironment#post_startup_script}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_environment#post_startup_script NotebooksEnvironment#post_startup_script}
 	PostStartupScript *string `field:"optional" json:"postStartupScript" yaml:"postStartupScript"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_environment#project NotebooksEnvironment#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_environment#project NotebooksEnvironment#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_environment#timeouts NotebooksEnvironment#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_environment#timeouts NotebooksEnvironment#timeouts}
 	Timeouts *NotebooksEnvironmentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// vm_image block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_environment#vm_image NotebooksEnvironment#vm_image}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_environment#vm_image NotebooksEnvironment#vm_image}
 	VmImage *NotebooksEnvironmentVmImage `field:"optional" json:"vmImage" yaml:"vmImage"`
 }
 

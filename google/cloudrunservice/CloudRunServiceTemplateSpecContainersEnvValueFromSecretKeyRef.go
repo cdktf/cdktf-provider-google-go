@@ -4,7 +4,7 @@ package cloudrunservice
 type CloudRunServiceTemplateSpecContainersEnvValueFromSecretKeyRef struct {
 	// A Cloud Secret Manager secret version. Must be 'latest' for the latest version or an integer for a specific version.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_run_service#key CloudRunService#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_run_service#key CloudRunService#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// The name of the secret in Cloud Secret Manager.
 	//
@@ -14,7 +14,7 @@ type CloudRunServiceTemplateSpecContainersEnvValueFromSecretKeyRef struct {
 	// If multiple alias definitions are needed, they must be separated by commas.
 	// The alias definitions must be set on the run.googleapis.com/secrets annotation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_run_service#name CloudRunService#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_run_service#name CloudRunService#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

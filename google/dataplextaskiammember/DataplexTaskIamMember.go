@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataplex_task_iam_member google_dataplex_task_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataplex_task_iam_member google_dataplex_task_iam_member}.
 type DataplexTaskIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -461,7 +461,7 @@ func (j *jsiiProxy_DataplexTaskIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataplex_task_iam_member google_dataplex_task_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataplex_task_iam_member google_dataplex_task_iam_member} Resource.
 func NewDataplexTaskIamMember(scope constructs.Construct, id *string, config *DataplexTaskIamMemberConfig) DataplexTaskIamMember {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewDataplexTaskIamMember(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataplex_task_iam_member google_dataplex_task_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataplex_task_iam_member google_dataplex_task_iam_member} Resource.
 func NewDataplexTaskIamMember_Override(d DataplexTaskIamMember, scope constructs.Construct, id *string, config *DataplexTaskIamMemberConfig) {
 	_init_.Initialize()
 

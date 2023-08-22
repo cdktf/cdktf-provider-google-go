@@ -24,13 +24,13 @@ type ProjectDefaultServiceAccountsConfig struct {
 	// Valid values are: DEPRIVILEGE, DELETE, DISABLE.
 	// Note that DEPRIVILEGE action will ignore the REVERT configuration in the restore_policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/project_default_service_accounts#action ProjectDefaultServiceAccounts#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/project_default_service_accounts#action ProjectDefaultServiceAccounts#action}
 	Action *string `field:"required" json:"action" yaml:"action"`
 	// The project ID where service accounts are created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/project_default_service_accounts#project ProjectDefaultServiceAccounts#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/project_default_service_accounts#project ProjectDefaultServiceAccounts#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/project_default_service_accounts#id ProjectDefaultServiceAccounts#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/project_default_service_accounts#id ProjectDefaultServiceAccounts#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,11 +39,11 @@ type ProjectDefaultServiceAccountsConfig struct {
 	//
 	// Valid values are NONE, REVERT and REVERT_AND_IGNORE_FAILURE. It is applied for any action but in the DEPRIVILEGE.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/project_default_service_accounts#restore_policy ProjectDefaultServiceAccounts#restore_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/project_default_service_accounts#restore_policy ProjectDefaultServiceAccounts#restore_policy}
 	RestorePolicy *string `field:"optional" json:"restorePolicy" yaml:"restorePolicy"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/project_default_service_accounts#timeouts ProjectDefaultServiceAccounts#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/project_default_service_accounts#timeouts ProjectDefaultServiceAccounts#timeouts}
 	Timeouts *ProjectDefaultServiceAccountsTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

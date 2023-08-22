@@ -68,6 +68,10 @@ func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateSetConnectionTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateSetEnablePrivateEndpointParameters(val interface{}) error {
 	return nil
 }

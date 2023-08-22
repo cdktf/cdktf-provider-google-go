@@ -21,29 +21,29 @@ type LoggingProjectBucketConfigConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the logging bucket. Logging automatically creates two log buckets: _Required and _Default.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/logging_project_bucket_config#bucket_id LoggingProjectBucketConfig#bucket_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_project_bucket_config#bucket_id LoggingProjectBucketConfig#bucket_id}
 	BucketId *string `field:"required" json:"bucketId" yaml:"bucketId"`
 	// The location of the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/logging_project_bucket_config#location LoggingProjectBucketConfig#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_project_bucket_config#location LoggingProjectBucketConfig#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The parent project that contains the logging bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/logging_project_bucket_config#project LoggingProjectBucketConfig#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_project_bucket_config#project LoggingProjectBucketConfig#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 	// cmek_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/logging_project_bucket_config#cmek_settings LoggingProjectBucketConfig#cmek_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_project_bucket_config#cmek_settings LoggingProjectBucketConfig#cmek_settings}
 	CmekSettings *LoggingProjectBucketConfigCmekSettings `field:"optional" json:"cmekSettings" yaml:"cmekSettings"`
 	// An optional description for this bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/logging_project_bucket_config#description LoggingProjectBucketConfig#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_project_bucket_config#description LoggingProjectBucketConfig#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Enable log analytics for the bucket. Cannot be disabled once enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/logging_project_bucket_config#enable_analytics LoggingProjectBucketConfig#enable_analytics}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_project_bucket_config#enable_analytics LoggingProjectBucketConfig#enable_analytics}
 	EnableAnalytics interface{} `field:"optional" json:"enableAnalytics" yaml:"enableAnalytics"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/logging_project_bucket_config#id LoggingProjectBucketConfig#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_project_bucket_config#id LoggingProjectBucketConfig#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,13 +52,13 @@ type LoggingProjectBucketConfigConfig struct {
 	//
 	// The retention period on a locked bucket cannot be changed. Locked buckets may only be deleted if they are empty.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/logging_project_bucket_config#locked LoggingProjectBucketConfig#locked}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_project_bucket_config#locked LoggingProjectBucketConfig#locked}
 	Locked interface{} `field:"optional" json:"locked" yaml:"locked"`
 	// Logs will be retained by default for this amount of time, after which they will automatically be deleted.
 	//
 	// The minimum retention period is 1 day. If this value is set to zero at bucket creation time, the default time of 30 days will be used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/logging_project_bucket_config#retention_days LoggingProjectBucketConfig#retention_days}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_project_bucket_config#retention_days LoggingProjectBucketConfig#retention_days}
 	RetentionDays *float64 `field:"optional" json:"retentionDays" yaml:"retentionDays"`
 }
 

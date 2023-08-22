@@ -21,47 +21,47 @@ type BigqueryRoutineConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the dataset containing this routine.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_routine#dataset_id BigqueryRoutine#dataset_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_routine#dataset_id BigqueryRoutine#dataset_id}
 	DatasetId *string `field:"required" json:"datasetId" yaml:"datasetId"`
 	// The body of the routine.
 	//
 	// For functions, this is the expression in the AS clause.
 	// If language=SQL, it is the substring inside (but excluding) the parentheses.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_routine#definition_body BigqueryRoutine#definition_body}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_routine#definition_body BigqueryRoutine#definition_body}
 	DefinitionBody *string `field:"required" json:"definitionBody" yaml:"definitionBody"`
 	// The ID of the the routine.
 	//
 	// The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 256 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_routine#routine_id BigqueryRoutine#routine_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_routine#routine_id BigqueryRoutine#routine_id}
 	RoutineId *string `field:"required" json:"routineId" yaml:"routineId"`
 	// arguments block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_routine#arguments BigqueryRoutine#arguments}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_routine#arguments BigqueryRoutine#arguments}
 	Arguments interface{} `field:"optional" json:"arguments" yaml:"arguments"`
 	// The description of the routine if defined.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_routine#description BigqueryRoutine#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_routine#description BigqueryRoutine#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The determinism level of the JavaScript UDF if defined. Possible values: ["DETERMINISM_LEVEL_UNSPECIFIED", "DETERMINISTIC", "NOT_DETERMINISTIC"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_routine#determinism_level BigqueryRoutine#determinism_level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_routine#determinism_level BigqueryRoutine#determinism_level}
 	DeterminismLevel *string `field:"optional" json:"determinismLevel" yaml:"determinismLevel"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_routine#id BigqueryRoutine#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_routine#id BigqueryRoutine#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Optional. If language = "JAVASCRIPT", this field stores the path of the imported JAVASCRIPT libraries.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_routine#imported_libraries BigqueryRoutine#imported_libraries}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_routine#imported_libraries BigqueryRoutine#imported_libraries}
 	ImportedLibraries *[]*string `field:"optional" json:"importedLibraries" yaml:"importedLibraries"`
 	// The language of the routine. Possible values: ["SQL", "JAVASCRIPT"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_routine#language BigqueryRoutine#language}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_routine#language BigqueryRoutine#language}
 	Language *string `field:"optional" json:"language" yaml:"language"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_routine#project BigqueryRoutine#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_routine#project BigqueryRoutine#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// Optional. Can be set only if routineType = "TABLE_VALUED_FUNCTION".
 	//
@@ -69,7 +69,7 @@ type BigqueryRoutineConfig struct {
 	// that references this routine. If present, then the columns in the evaluated table result will
 	// be cast to match the column types specificed in return table type, at query time.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_routine#return_table_type BigqueryRoutine#return_table_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_routine#return_table_type BigqueryRoutine#return_table_type}
 	ReturnTableType *string `field:"optional" json:"returnTableType" yaml:"returnTableType"`
 	// A JSON schema for the return type.
 	//
@@ -83,15 +83,15 @@ type BigqueryRoutineConfig struct {
 	// cannot suppress the recurring diff this causes. As a workaround, we recommend using
 	// the schema as returned by the API.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_routine#return_type BigqueryRoutine#return_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_routine#return_type BigqueryRoutine#return_type}
 	ReturnType *string `field:"optional" json:"returnType" yaml:"returnType"`
 	// The type of routine. Possible values: ["SCALAR_FUNCTION", "PROCEDURE", "TABLE_VALUED_FUNCTION"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_routine#routine_type BigqueryRoutine#routine_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_routine#routine_type BigqueryRoutine#routine_type}
 	RoutineType *string `field:"optional" json:"routineType" yaml:"routineType"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_routine#timeouts BigqueryRoutine#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_routine#timeouts BigqueryRoutine#timeouts}
 	Timeouts *BigqueryRoutineTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

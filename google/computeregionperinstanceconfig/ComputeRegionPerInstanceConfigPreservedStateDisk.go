@@ -4,11 +4,11 @@ package computeregionperinstanceconfig
 type ComputeRegionPerInstanceConfigPreservedStateDisk struct {
 	// A unique device name that is reflected into the /dev/ tree of a Linux operating system running within the instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_per_instance_config#device_name ComputeRegionPerInstanceConfig#device_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_per_instance_config#device_name ComputeRegionPerInstanceConfig#device_name}
 	DeviceName *string `field:"required" json:"deviceName" yaml:"deviceName"`
 	// The URI of an existing persistent disk to attach under the specified device-name in the format 'projects/project-id/zones/zone/disks/disk-name'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_per_instance_config#source ComputeRegionPerInstanceConfig#source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_per_instance_config#source ComputeRegionPerInstanceConfig#source}
 	Source *string `field:"required" json:"source" yaml:"source"`
 	// A value that prescribes what should happen to the stateful disk when the VM instance is deleted.
 	//
@@ -17,11 +17,11 @@ type ComputeRegionPerInstanceConfigPreservedStateDisk struct {
 	// 'ON_PERMANENT_INSTANCE_DELETION' will delete the stateful disk when the VM is permanently
 	// deleted from the instance group. Default value: "NEVER" Possible values: ["NEVER", "ON_PERMANENT_INSTANCE_DELETION"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_per_instance_config#delete_rule ComputeRegionPerInstanceConfig#delete_rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_per_instance_config#delete_rule ComputeRegionPerInstanceConfig#delete_rule}
 	DeleteRule *string `field:"optional" json:"deleteRule" yaml:"deleteRule"`
 	// The mode of the disk. Default value: "READ_WRITE" Possible values: ["READ_ONLY", "READ_WRITE"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_per_instance_config#mode ComputeRegionPerInstanceConfig#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_per_instance_config#mode ComputeRegionPerInstanceConfig#mode}
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
 }
 

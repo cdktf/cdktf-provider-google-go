@@ -21,11 +21,11 @@ type DataCatalogTagConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// fields block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/data_catalog_tag#fields DataCatalogTag#fields}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_catalog_tag#fields DataCatalogTag#fields}
 	Fields interface{} `field:"required" json:"fields" yaml:"fields"`
 	// The resource name of the tag template that this tag uses. Example: projects/{project_id}/locations/{location}/tagTemplates/{tagTemplateId} This field cannot be modified after creation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/data_catalog_tag#template DataCatalogTag#template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_catalog_tag#template DataCatalogTag#template}
 	Template *string `field:"required" json:"template" yaml:"template"`
 	// Resources like Entry can have schemas associated with them.
 	//
@@ -35,9 +35,9 @@ type DataCatalogTagConfig struct {
 	// For attaching a tag to a nested column, use '.' to separate the column names. Example:
 	// 'outer_column.inner_column'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/data_catalog_tag#column DataCatalogTag#column}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_catalog_tag#column DataCatalogTag#column}
 	Column *string `field:"optional" json:"column" yaml:"column"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/data_catalog_tag#id DataCatalogTag#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_catalog_tag#id DataCatalogTag#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,11 +47,11 @@ type DataCatalogTagConfig struct {
 	// This can be the name of an entry or an entry group. If an entry group, the tag will be attached to
 	// all entries in that group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/data_catalog_tag#parent DataCatalogTag#parent}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_catalog_tag#parent DataCatalogTag#parent}
 	Parent *string `field:"optional" json:"parent" yaml:"parent"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/data_catalog_tag#timeouts DataCatalogTag#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_catalog_tag#timeouts DataCatalogTag#timeouts}
 	Timeouts *DataCatalogTagTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -23,32 +23,32 @@ type ServiceAccountKeyConfig struct {
 	//
 	// This can be a string in the format {ACCOUNT} or projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}, where {ACCOUNT} is the email address or unique id of the service account. If the {ACCOUNT} syntax is used, the project will be inferred from the provider's configuration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/service_account_key#service_account_id ServiceAccountKey#service_account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/service_account_key#service_account_id ServiceAccountKey#service_account_id}
 	ServiceAccountId *string `field:"required" json:"serviceAccountId" yaml:"serviceAccountId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/service_account_key#id ServiceAccountKey#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/service_account_key#id ServiceAccountKey#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Arbitrary map of values that, when changed, will trigger recreation of resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/service_account_key#keepers ServiceAccountKey#keepers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/service_account_key#keepers ServiceAccountKey#keepers}
 	Keepers *map[string]*string `field:"optional" json:"keepers" yaml:"keepers"`
 	// The algorithm used to generate the key, used only on create.
 	//
 	// KEY_ALG_RSA_2048 is the default algorithm. Valid values are: "KEY_ALG_RSA_1024", "KEY_ALG_RSA_2048".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/service_account_key#key_algorithm ServiceAccountKey#key_algorithm}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/service_account_key#key_algorithm ServiceAccountKey#key_algorithm}
 	KeyAlgorithm *string `field:"optional" json:"keyAlgorithm" yaml:"keyAlgorithm"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/service_account_key#private_key_type ServiceAccountKey#private_key_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/service_account_key#private_key_type ServiceAccountKey#private_key_type}.
 	PrivateKeyType *string `field:"optional" json:"privateKeyType" yaml:"privateKeyType"`
 	// A field that allows clients to upload their own public key.
 	//
 	// If set, use this public key data to create a service account key for given service account. Please note, the expected format for this field is a base64 encoded X509_PEM.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/service_account_key#public_key_data ServiceAccountKey#public_key_data}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/service_account_key#public_key_data ServiceAccountKey#public_key_data}
 	PublicKeyData *string `field:"optional" json:"publicKeyData" yaml:"publicKeyData"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/service_account_key#public_key_type ServiceAccountKey#public_key_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/service_account_key#public_key_type ServiceAccountKey#public_key_type}.
 	PublicKeyType *string `field:"optional" json:"publicKeyType" yaml:"publicKeyType"`
 }
 

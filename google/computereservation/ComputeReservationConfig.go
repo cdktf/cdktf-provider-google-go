@@ -29,41 +29,41 @@ type ComputeReservationConfig struct {
 	// characters must be a dash, lowercase letter, or digit, except the last
 	// character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_reservation#name ComputeReservation#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_reservation#name ComputeReservation#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// specific_reservation block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_reservation#specific_reservation ComputeReservation#specific_reservation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_reservation#specific_reservation ComputeReservation#specific_reservation}
 	SpecificReservation *ComputeReservationSpecificReservation `field:"required" json:"specificReservation" yaml:"specificReservation"`
 	// The zone where the reservation is made.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_reservation#zone ComputeReservation#zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_reservation#zone ComputeReservation#zone}
 	Zone *string `field:"required" json:"zone" yaml:"zone"`
 	// An optional description of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_reservation#description ComputeReservation#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_reservation#description ComputeReservation#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_reservation#id ComputeReservation#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_reservation#id ComputeReservation#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_reservation#project ComputeReservation#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_reservation#project ComputeReservation#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// share_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_reservation#share_settings ComputeReservation#share_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_reservation#share_settings ComputeReservation#share_settings}
 	ShareSettings *ComputeReservationShareSettings `field:"optional" json:"shareSettings" yaml:"shareSettings"`
 	// When set to true, only VMs that target this reservation by name can consume this reservation.
 	//
 	// Otherwise, it can be consumed by VMs with
 	// affinity for any reservation. Defaults to false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_reservation#specific_reservation_required ComputeReservation#specific_reservation_required}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_reservation#specific_reservation_required ComputeReservation#specific_reservation_required}
 	SpecificReservationRequired interface{} `field:"optional" json:"specificReservationRequired" yaml:"specificReservationRequired"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_reservation#timeouts ComputeReservation#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_reservation#timeouts ComputeReservation#timeouts}
 	Timeouts *ComputeReservationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

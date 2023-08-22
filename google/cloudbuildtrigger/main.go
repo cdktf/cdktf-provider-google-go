@@ -1154,6 +1154,8 @@ func init() {
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerGitFileSourceOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerGitFileSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "bitbucketServerConfig", GoGetter: "BitbucketServerConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "bitbucketServerConfigInput", GoGetter: "BitbucketServerConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1179,6 +1181,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "repositoryInput", GoGetter: "RepositoryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "repoType", GoGetter: "RepoType"},
 			_jsii_.MemberProperty{JsiiProperty: "repoTypeInput", GoGetter: "RepoTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBitbucketServerConfig", GoMethod: "ResetBitbucketServerConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGithubEnterpriseConfig", GoMethod: "ResetGithubEnterpriseConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRepository", GoMethod: "ResetRepository"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRevision", GoMethod: "ResetRevision"},
@@ -1528,6 +1531,8 @@ func init() {
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerSourceToBuildOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerSourceToBuildOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "bitbucketServerConfig", GoGetter: "BitbucketServerConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "bitbucketServerConfigInput", GoGetter: "BitbucketServerConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1553,6 +1558,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "repositoryInput", GoGetter: "RepositoryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "repoType", GoGetter: "RepoType"},
 			_jsii_.MemberProperty{JsiiProperty: "repoTypeInput", GoGetter: "RepoTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBitbucketServerConfig", GoMethod: "ResetBitbucketServerConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGithubEnterpriseConfig", GoMethod: "ResetGithubEnterpriseConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRepository", GoMethod: "ResetRepository"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUri", GoMethod: "ResetUri"},

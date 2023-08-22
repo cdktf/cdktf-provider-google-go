@@ -27,20 +27,20 @@ type ApigeeSyncAuthorizationConfig struct {
 	//
 	// The service accounts must have **Apigee Synchronizer Manager** role. See also [Create service accounts](https://cloud.google.com/apigee/docs/hybrid/v1.8/sa-about#create-the-service-accounts).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/apigee_sync_authorization#identities ApigeeSyncAuthorization#identities}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/apigee_sync_authorization#identities ApigeeSyncAuthorization#identities}
 	Identities *[]*string `field:"required" json:"identities" yaml:"identities"`
 	// Name of the Apigee organization.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/apigee_sync_authorization#name ApigeeSyncAuthorization#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/apigee_sync_authorization#name ApigeeSyncAuthorization#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/apigee_sync_authorization#id ApigeeSyncAuthorization#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/apigee_sync_authorization#id ApigeeSyncAuthorization#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/apigee_sync_authorization#timeouts ApigeeSyncAuthorization#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/apigee_sync_authorization#timeouts ApigeeSyncAuthorization#timeouts}
 	Timeouts *ApigeeSyncAuthorizationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

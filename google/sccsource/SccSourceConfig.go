@@ -27,24 +27,24 @@ type SccSourceConfig struct {
 	// with a letter or digit, may contain letters, digits, spaces, hyphens,
 	// and underscores, and can be no longer than 32 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/scc_source#display_name SccSource#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/scc_source#display_name SccSource#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// The organization whose Cloud Security Command Center the Source lives in.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/scc_source#organization SccSource#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/scc_source#organization SccSource#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 	// The description of the source (max of 1024 characters).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/scc_source#description SccSource#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/scc_source#description SccSource#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/scc_source#id SccSource#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/scc_source#id SccSource#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/scc_source#timeouts SccSource#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/scc_source#timeouts SccSource#timeouts}
 	Timeouts *SccSourceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

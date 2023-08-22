@@ -4,7 +4,7 @@ package containerattachedcluster
 type ContainerAttachedClusterFleet struct {
 	// The number of the Fleet host project where this cluster will be registered.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/container_attached_cluster#project ContainerAttachedCluster#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_attached_cluster#project ContainerAttachedCluster#project}
 	Project *string `field:"required" json:"project" yaml:"project"`
 }
 

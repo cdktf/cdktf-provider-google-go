@@ -4,19 +4,19 @@ package computebackendservice
 type ComputeBackendServiceCdnPolicyCacheKeyPolicy struct {
 	// If true requests to different hosts will be cached separately.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#include_host ComputeBackendService#include_host}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#include_host ComputeBackendService#include_host}
 	IncludeHost interface{} `field:"optional" json:"includeHost" yaml:"includeHost"`
 	// Allows HTTP request headers (by name) to be used in the cache key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#include_http_headers ComputeBackendService#include_http_headers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#include_http_headers ComputeBackendService#include_http_headers}
 	IncludeHttpHeaders *[]*string `field:"optional" json:"includeHttpHeaders" yaml:"includeHttpHeaders"`
 	// Names of cookies to include in cache keys.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#include_named_cookies ComputeBackendService#include_named_cookies}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#include_named_cookies ComputeBackendService#include_named_cookies}
 	IncludeNamedCookies *[]*string `field:"optional" json:"includeNamedCookies" yaml:"includeNamedCookies"`
 	// If true, http and https requests will be cached separately.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#include_protocol ComputeBackendService#include_protocol}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#include_protocol ComputeBackendService#include_protocol}
 	IncludeProtocol interface{} `field:"optional" json:"includeProtocol" yaml:"includeProtocol"`
 	// If true, include query string parameters in the cache key according to query_string_whitelist and query_string_blacklist.
 	//
@@ -26,7 +26,7 @@ type ComputeBackendServiceCdnPolicyCacheKeyPolicy struct {
 	// If false, the query string will be excluded from the cache
 	// key entirely.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#include_query_string ComputeBackendService#include_query_string}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#include_query_string ComputeBackendService#include_query_string}
 	IncludeQueryString interface{} `field:"optional" json:"includeQueryString" yaml:"includeQueryString"`
 	// Names of query string parameters to exclude in cache keys.
 	//
@@ -35,7 +35,7 @@ type ComputeBackendServiceCdnPolicyCacheKeyPolicy struct {
 	// '&' and '=' will be percent encoded and not treated as
 	// delimiters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#query_string_blacklist ComputeBackendService#query_string_blacklist}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#query_string_blacklist ComputeBackendService#query_string_blacklist}
 	QueryStringBlacklist *[]*string `field:"optional" json:"queryStringBlacklist" yaml:"queryStringBlacklist"`
 	// Names of query string parameters to include in cache keys.
 	//
@@ -44,7 +44,7 @@ type ComputeBackendServiceCdnPolicyCacheKeyPolicy struct {
 	// '&' and '=' will be percent encoded and not treated as
 	// delimiters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#query_string_whitelist ComputeBackendService#query_string_whitelist}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#query_string_whitelist ComputeBackendService#query_string_whitelist}
 	QueryStringWhitelist *[]*string `field:"optional" json:"queryStringWhitelist" yaml:"queryStringWhitelist"`
 }
 

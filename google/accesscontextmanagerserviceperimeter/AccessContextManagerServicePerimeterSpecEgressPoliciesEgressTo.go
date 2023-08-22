@@ -8,11 +8,11 @@ type AccessContextManagerServicePerimeterSpecEgressPoliciesEgressTo struct {
 	// matches if it contains an external resource in this list (Example:
 	// s3://bucket/path). Currently '*' is not allowed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/access_context_manager_service_perimeter#external_resources AccessContextManagerServicePerimeter#external_resources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/access_context_manager_service_perimeter#external_resources AccessContextManagerServicePerimeter#external_resources}
 	ExternalResources *[]*string `field:"optional" json:"externalResources" yaml:"externalResources"`
 	// operations block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/access_context_manager_service_perimeter#operations AccessContextManagerServicePerimeter#operations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/access_context_manager_service_perimeter#operations AccessContextManagerServicePerimeter#operations}
 	Operations interface{} `field:"optional" json:"operations" yaml:"operations"`
 	// A list of resources, currently only projects in the form 'projects/<projectnumber>', that match this to stanza.
 	//
@@ -21,7 +21,7 @@ type AccessContextManagerServicePerimeterSpecEgressPoliciesEgressTo struct {
 	// then this 'EgressTo' rule will authorize access to all resources outside
 	// the perimeter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/access_context_manager_service_perimeter#resources AccessContextManagerServicePerimeter#resources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/access_context_manager_service_perimeter#resources AccessContextManagerServicePerimeter#resources}
 	Resources *[]*string `field:"optional" json:"resources" yaml:"resources"`
 }
 

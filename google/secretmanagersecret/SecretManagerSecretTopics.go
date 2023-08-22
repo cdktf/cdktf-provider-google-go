@@ -6,7 +6,7 @@ type SecretManagerSecretTopics struct {
 	//
 	// For publication to succeed, the Secret Manager Service Agent service account must have pubsub.publisher permissions on the topic.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/secret_manager_secret#name SecretManagerSecret#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/secret_manager_secret#name SecretManagerSecret#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

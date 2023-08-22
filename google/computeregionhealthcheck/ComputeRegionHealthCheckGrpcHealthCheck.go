@@ -9,18 +9,18 @@ type ComputeRegionHealthCheckGrpcHealthCheck struct {
 	//
 	// The grpcServiceName can only be ASCII.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_health_check#grpc_service_name ComputeRegionHealthCheck#grpc_service_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_health_check#grpc_service_name ComputeRegionHealthCheck#grpc_service_name}
 	GrpcServiceName *string `field:"optional" json:"grpcServiceName" yaml:"grpcServiceName"`
 	// The port number for the health check request.
 	//
 	// Must be specified if portName and portSpecification are not set
 	// or if port_specification is USE_FIXED_PORT. Valid values are 1 through 65535.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_health_check#port ComputeRegionHealthCheck#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_health_check#port ComputeRegionHealthCheck#port}
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 	// Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_health_check#port_name ComputeRegionHealthCheck#port_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_health_check#port_name ComputeRegionHealthCheck#port_name}
 	PortName *string `field:"optional" json:"portName" yaml:"portName"`
 	// Specifies how port is selected for health checking, can be one of the following values:.
 	//
@@ -36,7 +36,7 @@ type ComputeRegionHealthCheckGrpcHealthCheck struct {
 	// If not specified, gRPC health check follows behavior specified in 'port' and
 	// 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_health_check#port_specification ComputeRegionHealthCheck#port_specification}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_health_check#port_specification ComputeRegionHealthCheck#port_specification}
 	PortSpecification *string `field:"optional" json:"portSpecification" yaml:"portSpecification"`
 }
 

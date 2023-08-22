@@ -27,7 +27,7 @@ type DataGoogleSpannerInstanceConfig struct {
 	//
 	// If not provided, a random string starting with 'tf-' will be selected.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/spanner_instance#name DataGoogleSpannerInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/spanner_instance#name DataGoogleSpannerInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The name of the instance's configuration (similar but not quite the same as a region) which defines the geographic placement and replication of your databases in this instance.
 	//
@@ -36,21 +36,21 @@ type DataGoogleSpannerInstanceConfig struct {
 	// In order to obtain a valid list please consult the
 	// [Configuration section of the docs](https://cloud.google.com/spanner/docs/instances).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/spanner_instance#config DataGoogleSpannerInstance#config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/spanner_instance#config DataGoogleSpannerInstance#config}
 	Config *string `field:"optional" json:"config" yaml:"config"`
 	// The descriptive name for this instance as it appears in UIs.
 	//
 	// Must be
 	// unique per project and between 4 and 30 characters in length.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/spanner_instance#display_name DataGoogleSpannerInstance#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/spanner_instance#display_name DataGoogleSpannerInstance#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/spanner_instance#id DataGoogleSpannerInstance#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/spanner_instance#id DataGoogleSpannerInstance#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/spanner_instance#project DataGoogleSpannerInstance#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/spanner_instance#project DataGoogleSpannerInstance#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

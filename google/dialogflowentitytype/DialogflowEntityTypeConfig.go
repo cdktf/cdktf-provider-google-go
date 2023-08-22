@@ -21,7 +21,7 @@ type DialogflowEntityTypeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of this entity type to be displayed on the console.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dialogflow_entity_type#display_name DialogflowEntityType#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dialogflow_entity_type#display_name DialogflowEntityType#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// Indicates the kind of entity type.
 	//
@@ -30,26 +30,26 @@ type DialogflowEntityTypeConfig struct {
 	// types can contain references to other entity types (with or without aliases).
 	// KIND_REGEXP: Regexp entity types allow to specify regular expressions in entries values. Possible values: ["KIND_MAP", "KIND_LIST", "KIND_REGEXP"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dialogflow_entity_type#kind DialogflowEntityType#kind}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dialogflow_entity_type#kind DialogflowEntityType#kind}
 	Kind *string `field:"required" json:"kind" yaml:"kind"`
 	// Enables fuzzy entity extraction during classification.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dialogflow_entity_type#enable_fuzzy_extraction DialogflowEntityType#enable_fuzzy_extraction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dialogflow_entity_type#enable_fuzzy_extraction DialogflowEntityType#enable_fuzzy_extraction}
 	EnableFuzzyExtraction interface{} `field:"optional" json:"enableFuzzyExtraction" yaml:"enableFuzzyExtraction"`
 	// entities block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dialogflow_entity_type#entities DialogflowEntityType#entities}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dialogflow_entity_type#entities DialogflowEntityType#entities}
 	Entities interface{} `field:"optional" json:"entities" yaml:"entities"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dialogflow_entity_type#id DialogflowEntityType#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dialogflow_entity_type#id DialogflowEntityType#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dialogflow_entity_type#project DialogflowEntityType#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dialogflow_entity_type#project DialogflowEntityType#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dialogflow_entity_type#timeouts DialogflowEntityType#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dialogflow_entity_type#timeouts DialogflowEntityType#timeouts}
 	Timeouts *DialogflowEntityTypeTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

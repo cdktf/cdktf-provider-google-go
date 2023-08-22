@@ -29,7 +29,7 @@ type ComputeBackendServiceConfig struct {
 	// characters must be a dash, lowercase letter, or digit, except the last
 	// character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Lifetime of cookies in seconds if session_affinity is GENERATED_COOKIE.
 	//
@@ -39,51 +39,51 @@ type ComputeBackendServiceConfig struct {
 	//
 	// When the load balancing scheme is INTERNAL, this field is not used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#affinity_cookie_ttl_sec ComputeBackendService#affinity_cookie_ttl_sec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#affinity_cookie_ttl_sec ComputeBackendService#affinity_cookie_ttl_sec}
 	AffinityCookieTtlSec *float64 `field:"optional" json:"affinityCookieTtlSec" yaml:"affinityCookieTtlSec"`
 	// backend block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#backend ComputeBackendService#backend}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#backend ComputeBackendService#backend}
 	Backend interface{} `field:"optional" json:"backend" yaml:"backend"`
 	// cdn_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#cdn_policy ComputeBackendService#cdn_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#cdn_policy ComputeBackendService#cdn_policy}
 	CdnPolicy *ComputeBackendServiceCdnPolicy `field:"optional" json:"cdnPolicy" yaml:"cdnPolicy"`
 	// circuit_breakers block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#circuit_breakers ComputeBackendService#circuit_breakers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#circuit_breakers ComputeBackendService#circuit_breakers}
 	CircuitBreakers *ComputeBackendServiceCircuitBreakers `field:"optional" json:"circuitBreakers" yaml:"circuitBreakers"`
 	// Compress text responses using Brotli or gzip compression, based on the client's Accept-Encoding header. Possible values: ["AUTOMATIC", "DISABLED"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#compression_mode ComputeBackendService#compression_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#compression_mode ComputeBackendService#compression_mode}
 	CompressionMode *string `field:"optional" json:"compressionMode" yaml:"compressionMode"`
 	// Time for which instance will be drained (not accept new connections, but still work to finish started).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#connection_draining_timeout_sec ComputeBackendService#connection_draining_timeout_sec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#connection_draining_timeout_sec ComputeBackendService#connection_draining_timeout_sec}
 	ConnectionDrainingTimeoutSec *float64 `field:"optional" json:"connectionDrainingTimeoutSec" yaml:"connectionDrainingTimeoutSec"`
 	// consistent_hash block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#consistent_hash ComputeBackendService#consistent_hash}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#consistent_hash ComputeBackendService#consistent_hash}
 	ConsistentHash *ComputeBackendServiceConsistentHash `field:"optional" json:"consistentHash" yaml:"consistentHash"`
 	// Headers that the HTTP/S load balancer should add to proxied requests.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#custom_request_headers ComputeBackendService#custom_request_headers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#custom_request_headers ComputeBackendService#custom_request_headers}
 	CustomRequestHeaders *[]*string `field:"optional" json:"customRequestHeaders" yaml:"customRequestHeaders"`
 	// Headers that the HTTP/S load balancer should add to proxied responses.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#custom_response_headers ComputeBackendService#custom_response_headers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#custom_response_headers ComputeBackendService#custom_response_headers}
 	CustomResponseHeaders *[]*string `field:"optional" json:"customResponseHeaders" yaml:"customResponseHeaders"`
 	// An optional description of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#description ComputeBackendService#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#description ComputeBackendService#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The resource URL for the edge security policy associated with this backend service.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#edge_security_policy ComputeBackendService#edge_security_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#edge_security_policy ComputeBackendService#edge_security_policy}
 	EdgeSecurityPolicy *string `field:"optional" json:"edgeSecurityPolicy" yaml:"edgeSecurityPolicy"`
 	// If true, enable Cloud CDN for this BackendService.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#enable_cdn ComputeBackendService#enable_cdn}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#enable_cdn ComputeBackendService#enable_cdn}
 	EnableCdn interface{} `field:"optional" json:"enableCdn" yaml:"enableCdn"`
 	// The set of URLs to the HttpHealthCheck or HttpsHealthCheck resource for health checking this BackendService.
 	//
@@ -95,13 +95,13 @@ type ComputeBackendServiceConfig struct {
 	//
 	// For internal load balancing, a URL to a HealthCheck resource must be specified instead.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#health_checks ComputeBackendService#health_checks}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#health_checks ComputeBackendService#health_checks}
 	HealthChecks *[]*string `field:"optional" json:"healthChecks" yaml:"healthChecks"`
 	// iap block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#iap ComputeBackendService#iap}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#iap ComputeBackendService#iap}
 	Iap *ComputeBackendServiceIap `field:"optional" json:"iap" yaml:"iap"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#id ComputeBackendService#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#id ComputeBackendService#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -112,11 +112,11 @@ type ComputeBackendServiceConfig struct {
 	// load balancing cannot be used with the other. For more information, refer to
 	// [Choosing a load balancer](https://cloud.google.com/load-balancing/docs/backend-service). Default value: "EXTERNAL" Possible values: ["EXTERNAL", "INTERNAL_SELF_MANAGED", "INTERNAL_MANAGED", "EXTERNAL_MANAGED"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#load_balancing_scheme ComputeBackendService#load_balancing_scheme}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#load_balancing_scheme ComputeBackendService#load_balancing_scheme}
 	LoadBalancingScheme *string `field:"optional" json:"loadBalancingScheme" yaml:"loadBalancingScheme"`
 	// locality_lb_policies block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#locality_lb_policies ComputeBackendService#locality_lb_policies}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#locality_lb_policies ComputeBackendService#locality_lb_policies}
 	LocalityLbPolicies interface{} `field:"optional" json:"localityLbPolicies" yaml:"localityLbPolicies"`
 	// The load balancing algorithm used within the scope of the locality. The possible values are:.
 	//
@@ -175,15 +175,15 @@ type ComputeBackendServiceConfig struct {
 	// by a URL map that is bound to target gRPC proxy that has validate_for_proxyless
 	// field set to true. Possible values: ["ROUND_ROBIN", "LEAST_REQUEST", "RING_HASH", "RANDOM", "ORIGINAL_DESTINATION", "MAGLEV", "WEIGHTED_MAGLEV"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#locality_lb_policy ComputeBackendService#locality_lb_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#locality_lb_policy ComputeBackendService#locality_lb_policy}
 	LocalityLbPolicy *string `field:"optional" json:"localityLbPolicy" yaml:"localityLbPolicy"`
 	// log_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#log_config ComputeBackendService#log_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#log_config ComputeBackendService#log_config}
 	LogConfig *ComputeBackendServiceLogConfig `field:"optional" json:"logConfig" yaml:"logConfig"`
 	// outlier_detection block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#outlier_detection ComputeBackendService#outlier_detection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#outlier_detection ComputeBackendService#outlier_detection}
 	OutlierDetection *ComputeBackendServiceOutlierDetection `field:"optional" json:"outlierDetection" yaml:"outlierDetection"`
 	// Name of backend port.
 	//
@@ -191,9 +191,9 @@ type ComputeBackendServiceConfig struct {
 	// groups referenced by this service. Required when the load balancing
 	// scheme is EXTERNAL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#port_name ComputeBackendService#port_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#port_name ComputeBackendService#port_name}
 	PortName *string `field:"optional" json:"portName" yaml:"portName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#project ComputeBackendService#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#project ComputeBackendService#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The protocol this BackendService uses to communicate with backends.
 	//
@@ -202,32 +202,32 @@ type ComputeBackendServiceConfig struct {
 	// the backend service can be used by Layer 4 Internal Load Balancing or Network Load Balancing
 	// with TCP/UDP/L3_DEFAULT Forwarding Rule protocol. Possible values: ["HTTP", "HTTPS", "HTTP2", "TCP", "SSL", "GRPC", "UNSPECIFIED"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#protocol ComputeBackendService#protocol}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#protocol ComputeBackendService#protocol}
 	Protocol *string `field:"optional" json:"protocol" yaml:"protocol"`
 	// The security policy associated with this backend service.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#security_policy ComputeBackendService#security_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#security_policy ComputeBackendService#security_policy}
 	SecurityPolicy *string `field:"optional" json:"securityPolicy" yaml:"securityPolicy"`
 	// security_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#security_settings ComputeBackendService#security_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#security_settings ComputeBackendService#security_settings}
 	SecuritySettings *ComputeBackendServiceSecuritySettings `field:"optional" json:"securitySettings" yaml:"securitySettings"`
 	// Type of session affinity to use.
 	//
 	// The default is NONE. Session affinity is
 	// not applicable if the protocol is UDP. Possible values: ["NONE", "CLIENT_IP", "CLIENT_IP_PORT_PROTO", "CLIENT_IP_PROTO", "GENERATED_COOKIE", "HEADER_FIELD", "HTTP_COOKIE"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#session_affinity ComputeBackendService#session_affinity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#session_affinity ComputeBackendService#session_affinity}
 	SessionAffinity *string `field:"optional" json:"sessionAffinity" yaml:"sessionAffinity"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#timeouts ComputeBackendService#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#timeouts ComputeBackendService#timeouts}
 	Timeouts *ComputeBackendServiceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// How many seconds to wait for the backend before considering it a failed request.
 	//
 	// Default is 30 seconds. Valid range is [1, 86400].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_backend_service#timeout_sec ComputeBackendService#timeout_sec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#timeout_sec ComputeBackendService#timeout_sec}
 	TimeoutSec *float64 `field:"optional" json:"timeoutSec" yaml:"timeoutSec"`
 }
 

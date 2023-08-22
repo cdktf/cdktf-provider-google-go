@@ -12,7 +12,7 @@ type CloudIdentityGroupGroupKey struct {
 	//
 	// Must be unique within a namespace.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_identity_group#id CloudIdentityGroup#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_identity_group#id CloudIdentityGroup#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +26,7 @@ type CloudIdentityGroupGroupKey struct {
 	// The namespace must correspond to an identity source created in Admin Console
 	// and must be in the form of 'identitysources/{identity_source_id}'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_identity_group#namespace CloudIdentityGroup#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_identity_group#namespace CloudIdentityGroup#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

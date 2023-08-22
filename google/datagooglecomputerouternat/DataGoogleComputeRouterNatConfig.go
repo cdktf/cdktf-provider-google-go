@@ -21,22 +21,22 @@ type DataGoogleComputeRouterNatConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the NAT service. The name must be 1-63 characters long and comply with RFC1035.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/compute_router_nat#name DataGoogleComputeRouterNat#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_router_nat#name DataGoogleComputeRouterNat#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The name of the Cloud Router in which this NAT will be configured.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/compute_router_nat#router DataGoogleComputeRouterNat#router}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_router_nat#router DataGoogleComputeRouterNat#router}
 	Router *string `field:"required" json:"router" yaml:"router"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/compute_router_nat#id DataGoogleComputeRouterNat#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_router_nat#id DataGoogleComputeRouterNat#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/compute_router_nat#project DataGoogleComputeRouterNat#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_router_nat#project DataGoogleComputeRouterNat#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// Region where the router and NAT reside.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/compute_router_nat#region DataGoogleComputeRouterNat#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_router_nat#region DataGoogleComputeRouterNat#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

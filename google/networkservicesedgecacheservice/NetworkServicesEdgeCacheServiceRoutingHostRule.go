@@ -21,15 +21,15 @@ type NetworkServicesEdgeCacheServiceRoutingHostRule struct {
 	//
 	// You may specify up to 10 hosts.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/network_services_edge_cache_service#hosts NetworkServicesEdgeCacheService#hosts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_services_edge_cache_service#hosts NetworkServicesEdgeCacheService#hosts}
 	Hosts *[]*string `field:"required" json:"hosts" yaml:"hosts"`
 	// The name of the pathMatcher associated with this hostRule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/network_services_edge_cache_service#path_matcher NetworkServicesEdgeCacheService#path_matcher}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_services_edge_cache_service#path_matcher NetworkServicesEdgeCacheService#path_matcher}
 	PathMatcher *string `field:"required" json:"pathMatcher" yaml:"pathMatcher"`
 	// A human-readable description of the hostRule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/network_services_edge_cache_service#description NetworkServicesEdgeCacheService#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_services_edge_cache_service#description NetworkServicesEdgeCacheService#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_autoscaling_policy_iam_policy google_dataproc_autoscaling_policy_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_autoscaling_policy_iam_policy google_dataproc_autoscaling_policy_iam_policy}.
 type DataprocAutoscalingPolicyIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_autoscaling_policy_iam_policy google_dataproc_autoscaling_policy_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_autoscaling_policy_iam_policy google_dataproc_autoscaling_policy_iam_policy} Resource.
 func NewDataprocAutoscalingPolicyIamPolicy(scope constructs.Construct, id *string, config *DataprocAutoscalingPolicyIamPolicyConfig) DataprocAutoscalingPolicyIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewDataprocAutoscalingPolicyIamPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_autoscaling_policy_iam_policy google_dataproc_autoscaling_policy_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_autoscaling_policy_iam_policy google_dataproc_autoscaling_policy_iam_policy} Resource.
 func NewDataprocAutoscalingPolicyIamPolicy_Override(d DataprocAutoscalingPolicyIamPolicy, scope constructs.Construct, id *string, config *DataprocAutoscalingPolicyIamPolicyConfig) {
 	_init_.Initialize()
 

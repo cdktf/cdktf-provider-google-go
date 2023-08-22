@@ -7,7 +7,7 @@ type ComputeManagedSslCertificateManaged struct {
 	// Currently,
 	// there can be up to 100 domains in this list.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_managed_ssl_certificate#domains ComputeManagedSslCertificate#domains}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_managed_ssl_certificate#domains ComputeManagedSslCertificate#domains}
 	Domains *[]*string `field:"required" json:"domains" yaml:"domains"`
 }
 

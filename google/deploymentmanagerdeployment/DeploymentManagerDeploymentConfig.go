@@ -21,11 +21,11 @@ type DeploymentManagerDeploymentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Unique name for the deployment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/deployment_manager_deployment#name DeploymentManagerDeployment#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/deployment_manager_deployment#name DeploymentManagerDeployment#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// target block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/deployment_manager_deployment#target DeploymentManagerDeployment#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/deployment_manager_deployment#target DeploymentManagerDeployment#target}
 	Target *DeploymentManagerDeploymentTarget `field:"required" json:"target" yaml:"target"`
 	// Set the policy to use for creating new resources.
 	//
@@ -35,7 +35,7 @@ type DeploymentManagerDeploymentConfig struct {
 	// the deployment will fail. Note that updating this field does not
 	// actually affect the deployment, just how it is updated. Default value: "CREATE_OR_ACQUIRE" Possible values: ["ACQUIRE", "CREATE_OR_ACQUIRE"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/deployment_manager_deployment#create_policy DeploymentManagerDeployment#create_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/deployment_manager_deployment#create_policy DeploymentManagerDeployment#create_policy}
 	CreatePolicy *string `field:"optional" json:"createPolicy" yaml:"createPolicy"`
 	// Set the policy to use for deleting new resources on update/delete.
 	//
@@ -45,20 +45,20 @@ type DeploymentManagerDeploymentConfig struct {
 	// and is not actually deleted. Note that updating this field does not
 	// actually change the deployment, just how it is updated. Default value: "DELETE" Possible values: ["ABANDON", "DELETE"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/deployment_manager_deployment#delete_policy DeploymentManagerDeployment#delete_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/deployment_manager_deployment#delete_policy DeploymentManagerDeployment#delete_policy}
 	DeletePolicy *string `field:"optional" json:"deletePolicy" yaml:"deletePolicy"`
 	// Optional user-provided description of deployment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/deployment_manager_deployment#description DeploymentManagerDeployment#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/deployment_manager_deployment#description DeploymentManagerDeployment#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/deployment_manager_deployment#id DeploymentManagerDeployment#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/deployment_manager_deployment#id DeploymentManagerDeployment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// labels block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/deployment_manager_deployment#labels DeploymentManagerDeployment#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/deployment_manager_deployment#labels DeploymentManagerDeployment#labels}
 	Labels interface{} `field:"optional" json:"labels" yaml:"labels"`
 	// If set to true, a deployment is created with "shell" resources that are not actually instantiated.
 	//
@@ -70,13 +70,13 @@ type DeploymentManagerDeploymentConfig struct {
 	// Terraform will force-recreate deployments if either preview is updated
 	// to true or if other fields are updated while preview is true.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/deployment_manager_deployment#preview DeploymentManagerDeployment#preview}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/deployment_manager_deployment#preview DeploymentManagerDeployment#preview}
 	Preview interface{} `field:"optional" json:"preview" yaml:"preview"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/deployment_manager_deployment#project DeploymentManagerDeployment#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/deployment_manager_deployment#project DeploymentManagerDeployment#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/deployment_manager_deployment#timeouts DeploymentManagerDeployment#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/deployment_manager_deployment#timeouts DeploymentManagerDeployment#timeouts}
 	Timeouts *DeploymentManagerDeploymentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

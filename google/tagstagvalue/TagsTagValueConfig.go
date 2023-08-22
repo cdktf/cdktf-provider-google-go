@@ -21,7 +21,7 @@ type TagsTagValueConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Input only. The resource name of the new TagValue's parent. Must be of the form tagKeys/{tag_key_id}.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/tags_tag_value#parent TagsTagValue#parent}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/tags_tag_value#parent TagsTagValue#parent}
 	Parent *string `field:"required" json:"parent" yaml:"parent"`
 	// Input only.
 	//
@@ -29,20 +29,20 @@ type TagsTagValueConfig struct {
 	//
 	// The short name must be 63 characters or less, beginning and ending with an alphanumeric character ([a-z0-9A-Z]) with dashes (-), underscores (_), dots (.), and alphanumerics between.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/tags_tag_value#short_name TagsTagValue#short_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/tags_tag_value#short_name TagsTagValue#short_name}
 	ShortName *string `field:"required" json:"shortName" yaml:"shortName"`
 	// User-assigned description of the TagValue. Must not exceed 256 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/tags_tag_value#description TagsTagValue#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/tags_tag_value#description TagsTagValue#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/tags_tag_value#id TagsTagValue#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/tags_tag_value#id TagsTagValue#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/tags_tag_value#timeouts TagsTagValue#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/tags_tag_value#timeouts TagsTagValue#timeouts}
 	Timeouts *TagsTagValueTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

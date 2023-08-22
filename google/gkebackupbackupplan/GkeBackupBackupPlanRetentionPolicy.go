@@ -10,7 +10,7 @@ type GkeBackupBackupPlanRetentionPolicy struct {
 	// Updating this field of a BackupPlan does not affect existing Backups.
 	// Backups created after a successful update will inherit this new value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/gke_backup_backup_plan#backup_delete_lock_days GkeBackupBackupPlan#backup_delete_lock_days}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/gke_backup_backup_plan#backup_delete_lock_days GkeBackupBackupPlan#backup_delete_lock_days}
 	BackupDeleteLockDays *float64 `field:"optional" json:"backupDeleteLockDays" yaml:"backupDeleteLockDays"`
 	// The default maximum age of a Backup created via this BackupPlan.
 	//
@@ -24,14 +24,14 @@ type GkeBackupBackupPlanRetentionPolicy struct {
 	// NOTE: backupRetainDays must be >= backupDeleteLockDays.
 	// If cronSchedule is defined, then this must be <= 360 * the creation interval.]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/gke_backup_backup_plan#backup_retain_days GkeBackupBackupPlan#backup_retain_days}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/gke_backup_backup_plan#backup_retain_days GkeBackupBackupPlan#backup_retain_days}
 	BackupRetainDays *float64 `field:"optional" json:"backupRetainDays" yaml:"backupRetainDays"`
 	// This flag denotes whether the retention policy of this BackupPlan is locked.
 	//
 	// If set to True, no further update is allowed on this policy, including
 	// the locked field itself.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/gke_backup_backup_plan#locked GkeBackupBackupPlan#locked}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/gke_backup_backup_plan#locked GkeBackupBackupPlan#locked}
 	Locked interface{} `field:"optional" json:"locked" yaml:"locked"`
 }
 

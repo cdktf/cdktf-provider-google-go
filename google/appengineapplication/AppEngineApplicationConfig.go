@@ -21,38 +21,38 @@ type AppEngineApplicationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location to serve the app from.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/app_engine_application#location_id AppEngineApplication#location_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/app_engine_application#location_id AppEngineApplication#location_id}
 	LocationId *string `field:"required" json:"locationId" yaml:"locationId"`
 	// The domain to authenticate users with when using App Engine's User API.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/app_engine_application#auth_domain AppEngineApplication#auth_domain}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/app_engine_application#auth_domain AppEngineApplication#auth_domain}
 	AuthDomain *string `field:"optional" json:"authDomain" yaml:"authDomain"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/app_engine_application#database_type AppEngineApplication#database_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/app_engine_application#database_type AppEngineApplication#database_type}.
 	DatabaseType *string `field:"optional" json:"databaseType" yaml:"databaseType"`
 	// feature_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/app_engine_application#feature_settings AppEngineApplication#feature_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/app_engine_application#feature_settings AppEngineApplication#feature_settings}
 	FeatureSettings *AppEngineApplicationFeatureSettings `field:"optional" json:"featureSettings" yaml:"featureSettings"`
 	// iap block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/app_engine_application#iap AppEngineApplication#iap}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/app_engine_application#iap AppEngineApplication#iap}
 	Iap *AppEngineApplicationIap `field:"optional" json:"iap" yaml:"iap"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/app_engine_application#id AppEngineApplication#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/app_engine_application#id AppEngineApplication#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The project ID to create the application under.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/app_engine_application#project AppEngineApplication#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/app_engine_application#project AppEngineApplication#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The serving status of the app.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/app_engine_application#serving_status AppEngineApplication#serving_status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/app_engine_application#serving_status AppEngineApplication#serving_status}
 	ServingStatus *string `field:"optional" json:"servingStatus" yaml:"servingStatus"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/app_engine_application#timeouts AppEngineApplication#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/app_engine_application#timeouts AppEngineApplication#timeouts}
 	Timeouts *AppEngineApplicationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

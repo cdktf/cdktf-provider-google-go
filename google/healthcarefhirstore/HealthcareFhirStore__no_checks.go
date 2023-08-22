@@ -92,6 +92,10 @@ func (j *jsiiProxy_HealthcareFhirStore) validateSetDatasetParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareFhirStore) validateSetDefaultSearchHandlingStrictParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareFhirStore) validateSetDisableReferentialIntegrityParameters(val interface{}) error {
 	return nil
 }

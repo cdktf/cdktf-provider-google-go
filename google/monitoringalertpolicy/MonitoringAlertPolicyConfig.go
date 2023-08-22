@@ -23,11 +23,11 @@ type MonitoringAlertPolicyConfig struct {
 	//
 	// Possible values: ["AND", "OR", "AND_WITH_MATCHING_RESOURCE"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_alert_policy#combiner MonitoringAlertPolicy#combiner}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy#combiner MonitoringAlertPolicy#combiner}
 	Combiner *string `field:"required" json:"combiner" yaml:"combiner"`
 	// conditions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_alert_policy#conditions MonitoringAlertPolicy#conditions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy#conditions MonitoringAlertPolicy#conditions}
 	Conditions interface{} `field:"required" json:"conditions" yaml:"conditions"`
 	// A short name or phrase used to identify the policy in dashboards, notifications, and incidents.
 	//
@@ -35,21 +35,21 @@ type MonitoringAlertPolicyConfig struct {
 	// the same display name for multiple policies in the same project. The
 	// name is limited to 512 Unicode characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_alert_policy#display_name MonitoringAlertPolicy#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy#display_name MonitoringAlertPolicy#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// alert_strategy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_alert_policy#alert_strategy MonitoringAlertPolicy#alert_strategy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy#alert_strategy MonitoringAlertPolicy#alert_strategy}
 	AlertStrategy *MonitoringAlertPolicyAlertStrategy `field:"optional" json:"alertStrategy" yaml:"alertStrategy"`
 	// documentation block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_alert_policy#documentation MonitoringAlertPolicy#documentation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy#documentation MonitoringAlertPolicy#documentation}
 	Documentation *MonitoringAlertPolicyDocumentation `field:"optional" json:"documentation" yaml:"documentation"`
 	// Whether or not the policy is enabled. The default is true.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_alert_policy#enabled MonitoringAlertPolicy#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy#enabled MonitoringAlertPolicy#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_alert_policy#id MonitoringAlertPolicy#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy#id MonitoringAlertPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -62,17 +62,17 @@ type MonitoringAlertPolicyConfig struct {
 	// entries in this field is
 	// 'projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID]'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_alert_policy#notification_channels MonitoringAlertPolicy#notification_channels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy#notification_channels MonitoringAlertPolicy#notification_channels}
 	NotificationChannels *[]*string `field:"optional" json:"notificationChannels" yaml:"notificationChannels"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_alert_policy#project MonitoringAlertPolicy#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy#project MonitoringAlertPolicy#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_alert_policy#timeouts MonitoringAlertPolicy#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy#timeouts MonitoringAlertPolicy#timeouts}
 	Timeouts *MonitoringAlertPolicyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// This field is intended to be used for organizing and identifying the AlertPolicy objects.The field can contain up to 64 entries. Each key and value is limited to 63 Unicode characters or 128 bytes, whichever is smaller. Labels and values can contain only lowercase letters, numerals, underscores, and dashes. Keys must begin with a letter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_alert_policy#user_labels MonitoringAlertPolicy#user_labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy#user_labels MonitoringAlertPolicy#user_labels}
 	UserLabels *map[string]*string `field:"optional" json:"userLabels" yaml:"userLabels"`
 }
 

@@ -21,30 +21,30 @@ type ApigeeSharedflowConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Path to the config zip bundle.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/apigee_sharedflow#config_bundle ApigeeSharedflow#config_bundle}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/apigee_sharedflow#config_bundle ApigeeSharedflow#config_bundle}
 	ConfigBundle *string `field:"required" json:"configBundle" yaml:"configBundle"`
 	// The ID of the shared flow.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/apigee_sharedflow#name ApigeeSharedflow#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/apigee_sharedflow#name ApigeeSharedflow#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The Apigee Organization name associated with the Apigee instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/apigee_sharedflow#org_id ApigeeSharedflow#org_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/apigee_sharedflow#org_id ApigeeSharedflow#org_id}
 	OrgId *string `field:"required" json:"orgId" yaml:"orgId"`
 	// A hash of local config bundle in string, user needs to use a Terraform Hash function of their choice.
 	//
 	// A change in hash will trigger an update.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/apigee_sharedflow#detect_md5hash ApigeeSharedflow#detect_md5hash}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/apigee_sharedflow#detect_md5hash ApigeeSharedflow#detect_md5hash}
 	DetectMd5Hash *string `field:"optional" json:"detectMd5Hash" yaml:"detectMd5Hash"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/apigee_sharedflow#id ApigeeSharedflow#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/apigee_sharedflow#id ApigeeSharedflow#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/apigee_sharedflow#timeouts ApigeeSharedflow#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/apigee_sharedflow#timeouts ApigeeSharedflow#timeouts}
 	Timeouts *ApigeeSharedflowTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

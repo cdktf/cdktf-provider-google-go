@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job}.
 type CloudRunV2Job interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -36,12 +36,16 @@ type CloudRunV2Job interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateTime() *string
+	Creator() *string
+	DeleteTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Etag() *string
 	ExecutionCount() *float64
+	ExpireTime() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -57,6 +61,7 @@ type CloudRunV2Job interface {
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
+	LastModifier() *string
 	LatestCreatedExecution() CloudRunV2JobLatestCreatedExecutionList
 	LaunchStage() *string
 	SetLaunchStage(val *string)
@@ -100,6 +105,7 @@ type CloudRunV2Job interface {
 	Timeouts() CloudRunV2JobTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Uid() *string
+	UpdateTime() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -286,6 +292,36 @@ func (j *jsiiProxy_CloudRunV2Job) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2Job) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Job) Creator() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Job) DeleteTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2Job) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -311,6 +347,16 @@ func (j *jsiiProxy_CloudRunV2Job) ExecutionCount() *float64 {
 	_jsii_.Get(
 		j,
 		"executionCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Job) ExpireTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expireTime",
 		&returns,
 	)
 	return returns
@@ -391,6 +437,16 @@ func (j *jsiiProxy_CloudRunV2Job) LabelsInput() *map[string]*string {
 	_jsii_.Get(
 		j,
 		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Job) LastModifier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastModifier",
 		&returns,
 	)
 	return returns
@@ -646,8 +702,18 @@ func (j *jsiiProxy_CloudRunV2Job) Uid() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2Job) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewCloudRunV2Job(scope constructs.Construct, id *string, config *CloudRunV2JobConfig) CloudRunV2Job {
 	_init_.Initialize()
 
@@ -665,7 +731,7 @@ func NewCloudRunV2Job(scope constructs.Construct, id *string, config *CloudRunV2
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewCloudRunV2Job_Override(c CloudRunV2Job, scope constructs.Construct, id *string, config *CloudRunV2JobConfig) {
 	_init_.Initialize()
 

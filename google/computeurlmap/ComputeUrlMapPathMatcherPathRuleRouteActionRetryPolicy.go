@@ -4,11 +4,11 @@ package computeurlmap
 type ComputeUrlMapPathMatcherPathRuleRouteActionRetryPolicy struct {
 	// Specifies the allowed number retries. This number must be > 0.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
 	NumRetries *float64 `field:"optional" json:"numRetries" yaml:"numRetries"`
 	// per_try_timeout block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
 	PerTryTimeout *ComputeUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout `field:"optional" json:"perTryTimeout" yaml:"perTryTimeout"`
 	// Specifies one or more conditions when this retry rule applies. Valid values are:.
 	//
@@ -33,7 +33,7 @@ type ComputeUrlMapPathMatcherPathRuleRouteActionRetryPolicy struct {
 	// unavailable: Loadbalancer will retry if
 	// the gRPC status code in the response header is set to unavailable
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
 	RetryConditions *[]*string `field:"optional" json:"retryConditions" yaml:"retryConditions"`
 }
 

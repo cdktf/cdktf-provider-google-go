@@ -7,7 +7,7 @@ type RedisInstancePersistenceConfig struct {
 	// - DISABLED: 	Persistence is disabled for the instance, and any existing snapshots are deleted.
 	// - RDB: RDB based Persistence is enabled. Possible values: ["DISABLED", "RDB"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/redis_instance#persistence_mode RedisInstance#persistence_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/redis_instance#persistence_mode RedisInstance#persistence_mode}
 	PersistenceMode *string `field:"optional" json:"persistenceMode" yaml:"persistenceMode"`
 	// Optional. Available snapshot periods for scheduling.
 	//
@@ -16,7 +16,7 @@ type RedisInstancePersistenceConfig struct {
 	// - TWELVE_HOURS:	Snapshot every 12 hours.
 	// - TWENTY_FOUR_HOURS:	Snapshot every 24 hours. Possible values: ["ONE_HOUR", "SIX_HOURS", "TWELVE_HOURS", "TWENTY_FOUR_HOURS"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/redis_instance#rdb_snapshot_period RedisInstance#rdb_snapshot_period}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/redis_instance#rdb_snapshot_period RedisInstance#rdb_snapshot_period}
 	RdbSnapshotPeriod *string `field:"optional" json:"rdbSnapshotPeriod" yaml:"rdbSnapshotPeriod"`
 	// Optional.
 	//
@@ -27,7 +27,7 @@ type RedisInstancePersistenceConfig struct {
 	// and up to nine fractional digits.
 	// Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/redis_instance#rdb_snapshot_start_time RedisInstance#rdb_snapshot_start_time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/redis_instance#rdb_snapshot_start_time RedisInstance#rdb_snapshot_start_time}
 	RdbSnapshotStartTime *string `field:"optional" json:"rdbSnapshotStartTime" yaml:"rdbSnapshotStartTime"`
 }
 

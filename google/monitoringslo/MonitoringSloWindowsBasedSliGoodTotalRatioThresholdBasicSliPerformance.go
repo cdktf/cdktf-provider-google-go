@@ -4,11 +4,11 @@ package monitoringslo
 type MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance struct {
 	// availability block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_slo#availability MonitoringSlo#availability}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_slo#availability MonitoringSlo#availability}
 	Availability *MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability `field:"optional" json:"availability" yaml:"availability"`
 	// latency block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_slo#latency MonitoringSlo#latency}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_slo#latency MonitoringSlo#latency}
 	Latency *MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency `field:"optional" json:"latency" yaml:"latency"`
 	// An optional set of locations to which this SLI is relevant.
 	//
@@ -18,7 +18,7 @@ type MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance stru
 	// that don't support breaking down by location, setting this
 	// field will result in an error.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_slo#location MonitoringSlo#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_slo#location MonitoringSlo#location}
 	Location *[]*string `field:"optional" json:"location" yaml:"location"`
 	// An optional set of RPCs to which this SLI is relevant.
 	//
@@ -28,7 +28,7 @@ type MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance stru
 	// breaking down by method, setting this field will result in an
 	// error.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_slo#method MonitoringSlo#method}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_slo#method MonitoringSlo#method}
 	Method *[]*string `field:"optional" json:"method" yaml:"method"`
 	// The set of API versions to which this SLI is relevant.
 	//
@@ -38,7 +38,7 @@ type MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance stru
 	// that don't support breaking down by version, setting this
 	// field will result in an error.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_slo#version MonitoringSlo#version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_slo#version MonitoringSlo#version}
 	Version *[]*string `field:"optional" json:"version" yaml:"version"`
 }
 

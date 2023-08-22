@@ -18,19 +18,19 @@ type MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage struct {
 	// that unhealthy states are detected and
 	// alerted on quickly.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_alert_policy#duration MonitoringAlertPolicy#duration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy#duration MonitoringAlertPolicy#duration}
 	Duration *string `field:"required" json:"duration" yaml:"duration"`
 	// Monitoring Query Language query that outputs a boolean stream.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_alert_policy#query MonitoringAlertPolicy#query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy#query MonitoringAlertPolicy#query}
 	Query *string `field:"required" json:"query" yaml:"query"`
 	// A condition control that determines how metric-threshold conditions are evaluated when data stops arriving. Possible values: ["EVALUATION_MISSING_DATA_INACTIVE", "EVALUATION_MISSING_DATA_ACTIVE", "EVALUATION_MISSING_DATA_NO_OP"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_alert_policy#evaluation_missing_data MonitoringAlertPolicy#evaluation_missing_data}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy#evaluation_missing_data MonitoringAlertPolicy#evaluation_missing_data}
 	EvaluationMissingData *string `field:"optional" json:"evaluationMissingData" yaml:"evaluationMissingData"`
 	// trigger block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/monitoring_alert_policy#trigger MonitoringAlertPolicy#trigger}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/monitoring_alert_policy#trigger MonitoringAlertPolicy#trigger}
 	Trigger *MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger `field:"optional" json:"trigger" yaml:"trigger"`
 }
 

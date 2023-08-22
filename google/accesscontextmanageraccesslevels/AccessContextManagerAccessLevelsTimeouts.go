@@ -2,11 +2,11 @@ package accesscontextmanageraccesslevels
 
 
 type AccessContextManagerAccessLevelsTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/access_context_manager_access_levels#create AccessContextManagerAccessLevels#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/access_context_manager_access_levels#create AccessContextManagerAccessLevels#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/access_context_manager_access_levels#delete AccessContextManagerAccessLevels#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/access_context_manager_access_levels#delete AccessContextManagerAccessLevels#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/access_context_manager_access_levels#update AccessContextManagerAccessLevels#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/access_context_manager_access_levels#update AccessContextManagerAccessLevels#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

@@ -7,13 +7,13 @@ type VpcAccessConnectorSubnet struct {
 	// E.g. if the full subnet selfLink is
 	// https://compute.googleapis.com/compute/v1/projects/{project}/regions/{region}/subnetworks/{subnetName} the correct input for this field would be {subnetName}"
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/vpc_access_connector#name VpcAccessConnector#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vpc_access_connector#name VpcAccessConnector#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Project in which the subnet exists.
 	//
 	// If not set, this project is assumed to be the project for which the connector create request was issued.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/vpc_access_connector#project_id VpcAccessConnector#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vpc_access_connector#project_id VpcAccessConnector#project_id}
 	ProjectId *string `field:"optional" json:"projectId" yaml:"projectId"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/data_catalog_tag_template_iam_binding google_data_catalog_tag_template_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_catalog_tag_template_iam_binding google_data_catalog_tag_template_iam_binding}.
 type DataCatalogTagTemplateIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamBinding) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/data_catalog_tag_template_iam_binding google_data_catalog_tag_template_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_catalog_tag_template_iam_binding google_data_catalog_tag_template_iam_binding} Resource.
 func NewDataCatalogTagTemplateIamBinding(scope constructs.Construct, id *string, config *DataCatalogTagTemplateIamBindingConfig) DataCatalogTagTemplateIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewDataCatalogTagTemplateIamBinding(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/data_catalog_tag_template_iam_binding google_data_catalog_tag_template_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_catalog_tag_template_iam_binding google_data_catalog_tag_template_iam_binding} Resource.
 func NewDataCatalogTagTemplateIamBinding_Override(d DataCatalogTagTemplateIamBinding, scope constructs.Construct, id *string, config *DataCatalogTagTemplateIamBindingConfig) {
 	_init_.Initialize()
 

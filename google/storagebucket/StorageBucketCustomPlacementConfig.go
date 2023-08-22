@@ -6,7 +6,7 @@ type StorageBucketCustomPlacementConfig struct {
 	//
 	// See the docs for a list of acceptable regions. Note: If any of the data_locations changes, it will recreate the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/storage_bucket#data_locations StorageBucket#data_locations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/storage_bucket#data_locations StorageBucket#data_locations}
 	DataLocations *[]*string `field:"required" json:"dataLocations" yaml:"dataLocations"`
 }
 

@@ -4,11 +4,11 @@ package computeurlmap
 type ComputeUrlMapDefaultRouteActionRetryPolicy struct {
 	// Specifies the allowed number retries. This number must be > 0. If not specified, defaults to 1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_url_map#num_retries ComputeUrlMap#num_retries}
 	NumRetries *float64 `field:"optional" json:"numRetries" yaml:"numRetries"`
 	// per_try_timeout block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_url_map#per_try_timeout ComputeUrlMap#per_try_timeout}
 	PerTryTimeout *ComputeUrlMapDefaultRouteActionRetryPolicyPerTryTimeout `field:"optional" json:"perTryTimeout" yaml:"perTryTimeout"`
 	// Specfies one or more conditions when this retry rule applies. Valid values are:.
 	//
@@ -27,7 +27,7 @@ type ComputeUrlMapDefaultRouteActionRetryPolicy struct {
 	// resource-exhausted: Loadbalancer will retry if the gRPC status code in the response header is set to resource-exhausted
 	// unavailable: Loadbalancer will retry if the gRPC status code in the response header is set to unavailable
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_url_map#retry_conditions ComputeUrlMap#retry_conditions}
 	RetryConditions *[]*string `field:"optional" json:"retryConditions" yaml:"retryConditions"`
 }
 

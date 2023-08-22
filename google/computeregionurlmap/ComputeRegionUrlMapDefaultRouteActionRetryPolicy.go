@@ -4,11 +4,11 @@ package computeregionurlmap
 type ComputeRegionUrlMapDefaultRouteActionRetryPolicy struct {
 	// Specifies the allowed number retries. This number must be > 0. If not specified, defaults to 1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_url_map#num_retries ComputeRegionUrlMap#num_retries}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_url_map#num_retries ComputeRegionUrlMap#num_retries}
 	NumRetries *float64 `field:"optional" json:"numRetries" yaml:"numRetries"`
 	// per_try_timeout block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_url_map#per_try_timeout ComputeRegionUrlMap#per_try_timeout}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_url_map#per_try_timeout ComputeRegionUrlMap#per_try_timeout}
 	PerTryTimeout *ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout `field:"optional" json:"perTryTimeout" yaml:"perTryTimeout"`
 	// Specifies one or more conditions when this retry policy applies.
 	//
@@ -24,7 +24,7 @@ type ComputeRegionUrlMapDefaultRouteActionRetryPolicy struct {
 	// - resource-exhausted : a retry is attempted if the gRPC status code in the response header is set to resource-exhausted.
 	// - unavailable : a retry is attempted if the gRPC status code in the response header is set to unavailable.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_url_map#retry_conditions ComputeRegionUrlMap#retry_conditions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_url_map#retry_conditions ComputeRegionUrlMap#retry_conditions}
 	RetryConditions *[]*string `field:"optional" json:"retryConditions" yaml:"retryConditions"`
 }
 

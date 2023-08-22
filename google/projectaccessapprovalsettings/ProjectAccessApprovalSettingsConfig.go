@@ -21,20 +21,20 @@ type ProjectAccessApprovalSettingsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// enrolled_services block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/project_access_approval_settings#enrolled_services ProjectAccessApprovalSettings#enrolled_services}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/project_access_approval_settings#enrolled_services ProjectAccessApprovalSettings#enrolled_services}
 	EnrolledServices interface{} `field:"required" json:"enrolledServices" yaml:"enrolledServices"`
 	// ID of the project of the access approval settings.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/project_access_approval_settings#project_id ProjectAccessApprovalSettings#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/project_access_approval_settings#project_id ProjectAccessApprovalSettings#project_id}
 	ProjectId *string `field:"required" json:"projectId" yaml:"projectId"`
 	// The asymmetric crypto key version to use for signing approval requests.
 	//
 	// Empty active_key_version indicates that a Google-managed key should be used for signing.
 	// This property will be ignored if set by an ancestor of the resource, and new non-empty values may not be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/project_access_approval_settings#active_key_version ProjectAccessApprovalSettings#active_key_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/project_access_approval_settings#active_key_version ProjectAccessApprovalSettings#active_key_version}
 	ActiveKeyVersion *string `field:"optional" json:"activeKeyVersion" yaml:"activeKeyVersion"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/project_access_approval_settings#id ProjectAccessApprovalSettings#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/project_access_approval_settings#id ProjectAccessApprovalSettings#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,15 +44,15 @@ type ProjectAccessApprovalSettingsConfig struct {
 	// Notifications relating to a resource will be sent to all emails in the settings of ancestor
 	// resources of that resource. A maximum of 50 email addresses are allowed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/project_access_approval_settings#notification_emails ProjectAccessApprovalSettings#notification_emails}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/project_access_approval_settings#notification_emails ProjectAccessApprovalSettings#notification_emails}
 	NotificationEmails *[]*string `field:"optional" json:"notificationEmails" yaml:"notificationEmails"`
 	// Deprecated in favor of 'project_id'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/project_access_approval_settings#project ProjectAccessApprovalSettings#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/project_access_approval_settings#project ProjectAccessApprovalSettings#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/project_access_approval_settings#timeouts ProjectAccessApprovalSettings#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/project_access_approval_settings#timeouts ProjectAccessApprovalSettings#timeouts}
 	Timeouts *ProjectAccessApprovalSettingsTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

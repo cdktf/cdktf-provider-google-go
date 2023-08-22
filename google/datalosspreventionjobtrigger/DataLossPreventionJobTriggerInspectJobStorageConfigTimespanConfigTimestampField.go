@@ -11,7 +11,7 @@ type DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampF
 	// For Datastore. Valid data types of the timestamp field are: TIMESTAMP. Datastore entity will be scanned if the
 	// timestamp property does not exist or its value is empty or invalid.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/data_loss_prevention_job_trigger#name DataLossPreventionJobTrigger#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_loss_prevention_job_trigger#name DataLossPreventionJobTrigger#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

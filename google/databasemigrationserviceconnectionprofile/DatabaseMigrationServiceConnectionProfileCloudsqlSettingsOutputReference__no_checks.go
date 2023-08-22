@@ -92,6 +92,10 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutp
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) validateSetEditionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) validateSetInternalValueParameters(val *DatabaseMigrationServiceConnectionProfileCloudsqlSettings) error {
 	return nil
 }

@@ -6,17 +6,17 @@ type CloudRunV2ServiceTemplateVolumesSecretItems struct {
 	//
 	// If 0 or not set, the Volume's default mode will be used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_run_v2_service#mode CloudRunV2Service#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_run_v2_service#mode CloudRunV2Service#mode}
 	Mode *float64 `field:"required" json:"mode" yaml:"mode"`
 	// The relative path of the secret in the container.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
 	Path *string `field:"required" json:"path" yaml:"path"`
 	// The Cloud Secret Manager secret version.
 	//
 	// Can be 'latest' for the latest value or an integer for a specific version
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_run_v2_service#version CloudRunV2Service#version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_run_v2_service#version CloudRunV2Service#version}
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 

@@ -13,7 +13,7 @@ type HealthcareHl7V2StoreNotificationConfigs struct {
 	//
 	// If a notification cannot be published to Cloud Pub/Sub, errors will be logged to Stackdriver
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/healthcare_hl7_v2_store#pubsub_topic HealthcareHl7V2Store#pubsub_topic}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/healthcare_hl7_v2_store#pubsub_topic HealthcareHl7V2Store#pubsub_topic}
 	PubsubTopic *string `field:"required" json:"pubsubTopic" yaml:"pubsubTopic"`
 	// Restricts notifications sent for messages matching a filter. If this is empty, all messages are matched. Syntax: https://cloud.google.com/appengine/docs/standard/python/search/query_strings.
 	//
@@ -26,7 +26,7 @@ type HealthcareHl7V2StoreNotificationConfigs struct {
 	// PatientId(value, type), which matches if the message lists a patient having an ID of the given value and type in the PID-2, PID-3, or PID-4 segments. For example, PatientId("123456", "MRN").
 	// labels.x, a string value of the label with key x as set using the Message.labels map. For example, labels."priority"="high". The operator :* can be used to assert the existence of a label. For example, labels."priority":*.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/healthcare_hl7_v2_store#filter HealthcareHl7V2Store#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/healthcare_hl7_v2_store#filter HealthcareHl7V2Store#filter}
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
 }
 

@@ -108,6 +108,10 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetModePa
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetProvisionedIopsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetResourcePoliciesParameters(val *[]*string) error {
 	return nil
 }

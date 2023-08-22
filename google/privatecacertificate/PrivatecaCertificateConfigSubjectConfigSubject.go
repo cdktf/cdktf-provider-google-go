@@ -4,35 +4,35 @@ package privatecacertificate
 type PrivatecaCertificateConfigSubjectConfigSubject struct {
 	// The common name of the distinguished name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/privateca_certificate#common_name PrivatecaCertificate#common_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/privateca_certificate#common_name PrivatecaCertificate#common_name}
 	CommonName *string `field:"required" json:"commonName" yaml:"commonName"`
 	// The organization of the subject.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/privateca_certificate#organization PrivatecaCertificate#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/privateca_certificate#organization PrivatecaCertificate#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 	// The country code of the subject.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/privateca_certificate#country_code PrivatecaCertificate#country_code}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/privateca_certificate#country_code PrivatecaCertificate#country_code}
 	CountryCode *string `field:"optional" json:"countryCode" yaml:"countryCode"`
 	// The locality or city of the subject.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/privateca_certificate#locality PrivatecaCertificate#locality}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/privateca_certificate#locality PrivatecaCertificate#locality}
 	Locality *string `field:"optional" json:"locality" yaml:"locality"`
 	// The organizational unit of the subject.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/privateca_certificate#organizational_unit PrivatecaCertificate#organizational_unit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/privateca_certificate#organizational_unit PrivatecaCertificate#organizational_unit}
 	OrganizationalUnit *string `field:"optional" json:"organizationalUnit" yaml:"organizationalUnit"`
 	// The postal code of the subject.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/privateca_certificate#postal_code PrivatecaCertificate#postal_code}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/privateca_certificate#postal_code PrivatecaCertificate#postal_code}
 	PostalCode *string `field:"optional" json:"postalCode" yaml:"postalCode"`
 	// The province, territory, or regional state of the subject.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/privateca_certificate#province PrivatecaCertificate#province}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/privateca_certificate#province PrivatecaCertificate#province}
 	Province *string `field:"optional" json:"province" yaml:"province"`
 	// The street address of the subject.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/privateca_certificate#street_address PrivatecaCertificate#street_address}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/privateca_certificate#street_address PrivatecaCertificate#street_address}
 	StreetAddress *string `field:"optional" json:"streetAddress" yaml:"streetAddress"`
 }
 

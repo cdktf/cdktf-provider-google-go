@@ -12,7 +12,7 @@ type ComputeRegionBackendServiceFailoverPolicy struct {
 	// This can be set to true only if the protocol is TCP.
 	// The default is false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_backend_service#disable_connection_drain_on_failover ComputeRegionBackendService#disable_connection_drain_on_failover}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_backend_service#disable_connection_drain_on_failover ComputeRegionBackendService#disable_connection_drain_on_failover}
 	DisableConnectionDrainOnFailover interface{} `field:"optional" json:"disableConnectionDrainOnFailover" yaml:"disableConnectionDrainOnFailover"`
 	// This option is used only when no healthy VMs are detected in the primary and backup instance groups.
 	//
@@ -20,7 +20,7 @@ type ComputeRegionBackendServiceFailoverPolicy struct {
 	// set to false, new connections are sent across all VMs in the primary group.
 	// The default is false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_backend_service#drop_traffic_if_unhealthy ComputeRegionBackendService#drop_traffic_if_unhealthy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_backend_service#drop_traffic_if_unhealthy ComputeRegionBackendService#drop_traffic_if_unhealthy}
 	DropTrafficIfUnhealthy interface{} `field:"optional" json:"dropTrafficIfUnhealthy" yaml:"dropTrafficIfUnhealthy"`
 	// The value of the field must be in [0, 1].
 	//
@@ -33,7 +33,7 @@ type ComputeRegionBackendServiceFailoverPolicy struct {
 	// VMs with the best effort, or to all VMs when no VM is healthy.
 	// This field is only used with l4 load balancing.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_backend_service#failover_ratio ComputeRegionBackendService#failover_ratio}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_backend_service#failover_ratio ComputeRegionBackendService#failover_ratio}
 	FailoverRatio *float64 `field:"optional" json:"failoverRatio" yaml:"failoverRatio"`
 }
 

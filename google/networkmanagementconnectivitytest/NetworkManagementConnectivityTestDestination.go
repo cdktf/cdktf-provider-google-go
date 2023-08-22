@@ -4,22 +4,22 @@ package networkmanagementconnectivitytest
 type NetworkManagementConnectivityTestDestination struct {
 	// A Compute Engine instance URI.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/network_management_connectivity_test#instance NetworkManagementConnectivityTest#instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_management_connectivity_test#instance NetworkManagementConnectivityTest#instance}
 	Instance *string `field:"optional" json:"instance" yaml:"instance"`
 	// The IP address of the endpoint, which can be an external or internal IP.
 	//
 	// An IPv6 address is only allowed when the test's
 	// destination is a global load balancer VIP.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/network_management_connectivity_test#ip_address NetworkManagementConnectivityTest#ip_address}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_management_connectivity_test#ip_address NetworkManagementConnectivityTest#ip_address}
 	IpAddress *string `field:"optional" json:"ipAddress" yaml:"ipAddress"`
 	// A Compute Engine network URI.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/network_management_connectivity_test#network NetworkManagementConnectivityTest#network}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_management_connectivity_test#network NetworkManagementConnectivityTest#network}
 	Network *string `field:"optional" json:"network" yaml:"network"`
 	// The IP protocol port of the endpoint. Only applicable when protocol is TCP or UDP.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/network_management_connectivity_test#port NetworkManagementConnectivityTest#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_management_connectivity_test#port NetworkManagementConnectivityTest#port}
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 	// Project ID where the endpoint is located.
 	//
@@ -32,7 +32,7 @@ type NetworkManagementConnectivityTestDestination struct {
 	// network that the IP address resides in is defined in the host
 	// project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/network_management_connectivity_test#project_id NetworkManagementConnectivityTest#project_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_management_connectivity_test#project_id NetworkManagementConnectivityTest#project_id}
 	ProjectId *string `field:"optional" json:"projectId" yaml:"projectId"`
 }
 

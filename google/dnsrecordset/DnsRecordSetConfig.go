@@ -21,17 +21,17 @@ type DnsRecordSetConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the zone in which this record set will reside.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dns_record_set#managed_zone DnsRecordSet#managed_zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dns_record_set#managed_zone DnsRecordSet#managed_zone}
 	ManagedZone *string `field:"required" json:"managedZone" yaml:"managedZone"`
 	// The DNS name this record set will apply to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dns_record_set#name DnsRecordSet#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dns_record_set#name DnsRecordSet#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The DNS record set type.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dns_record_set#type DnsRecordSet#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dns_record_set#type DnsRecordSet#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dns_record_set#id DnsRecordSet#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dns_record_set#id DnsRecordSet#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,21 +40,21 @@ type DnsRecordSetConfig struct {
 	//
 	// If it is not provided, the provider project is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dns_record_set#project DnsRecordSet#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dns_record_set#project DnsRecordSet#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// routing_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dns_record_set#routing_policy DnsRecordSet#routing_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dns_record_set#routing_policy DnsRecordSet#routing_policy}
 	RoutingPolicy *DnsRecordSetRoutingPolicy `field:"optional" json:"routingPolicy" yaml:"routingPolicy"`
 	// The string data for the records in this record set whose meaning depends on the DNS type.
 	//
 	// For TXT record, if the string data contains spaces, add surrounding \" if you don't want your string to get split on spaces. To specify a single record value longer than 255 characters such as a TXT record for DKIM, add \"\" inside the Terraform configuration string (e.g. "first255characters\"\"morecharacters").
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dns_record_set#rrdatas DnsRecordSet#rrdatas}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dns_record_set#rrdatas DnsRecordSet#rrdatas}
 	Rrdatas *[]*string `field:"optional" json:"rrdatas" yaml:"rrdatas"`
 	// The time-to-live of this record set (seconds).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dns_record_set#ttl DnsRecordSet#ttl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dns_record_set#ttl DnsRecordSet#ttl}
 	Ttl *float64 `field:"optional" json:"ttl" yaml:"ttl"`
 }
 

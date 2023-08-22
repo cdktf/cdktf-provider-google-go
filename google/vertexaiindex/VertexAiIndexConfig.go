@@ -23,13 +23,13 @@ type VertexAiIndexConfig struct {
 	//
 	// The name can be up to 128 characters long and can consist of any UTF-8 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/vertex_ai_index#display_name VertexAiIndex#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_index#display_name VertexAiIndex#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// The description of the Index.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/vertex_ai_index#description VertexAiIndex#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_index#description VertexAiIndex#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/vertex_ai_index#id VertexAiIndex#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_index#id VertexAiIndex#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,25 +40,25 @@ type VertexAiIndexConfig struct {
 	// BATCH_UPDATE: user can call indexes.patch with files on Cloud Storage of datapoints to update.
 	// STREAM_UPDATE: user can call indexes.upsertDatapoints/DeleteDatapoints to update the Index and the updates will be applied in corresponding DeployedIndexes in nearly real-time.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/vertex_ai_index#index_update_method VertexAiIndex#index_update_method}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_index#index_update_method VertexAiIndex#index_update_method}
 	IndexUpdateMethod *string `field:"optional" json:"indexUpdateMethod" yaml:"indexUpdateMethod"`
 	// The labels with user-defined metadata to organize your Indexes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/vertex_ai_index#labels VertexAiIndex#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_index#labels VertexAiIndex#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// metadata block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/vertex_ai_index#metadata VertexAiIndex#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_index#metadata VertexAiIndex#metadata}
 	Metadata *VertexAiIndexMetadata `field:"optional" json:"metadata" yaml:"metadata"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/vertex_ai_index#project VertexAiIndex#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_index#project VertexAiIndex#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The region of the index. eg us-central1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/vertex_ai_index#region VertexAiIndex#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_index#region VertexAiIndex#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/vertex_ai_index#timeouts VertexAiIndex#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_index#timeouts VertexAiIndex#timeouts}
 	Timeouts *VertexAiIndexTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

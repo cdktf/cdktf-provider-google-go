@@ -4,7 +4,7 @@ package computeregionnetworkendpointgroup
 type ComputeRegionNetworkEndpointGroupAppEngine struct {
 	// Optional serving service. The service name must be 1-63 characters long, and comply with RFC1035. Example value: "default", "my-service".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_network_endpoint_group#service ComputeRegionNetworkEndpointGroup#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_network_endpoint_group#service ComputeRegionNetworkEndpointGroup#service}
 	Service *string `field:"optional" json:"service" yaml:"service"`
 	// A template to parse service and version fields from a request URL.
 	//
@@ -16,11 +16,11 @@ type ComputeRegionNetworkEndpointGroupAppEngine struct {
 	// URL mask "-dot-appname.appspot.com/". The URL mask will parse
 	// them to { service = "foo1", version = "v1" } and { service = "foo1", version = "v2" } respectively.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_network_endpoint_group#url_mask ComputeRegionNetworkEndpointGroup#url_mask}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_network_endpoint_group#url_mask ComputeRegionNetworkEndpointGroup#url_mask}
 	UrlMask *string `field:"optional" json:"urlMask" yaml:"urlMask"`
 	// Optional serving version. The version must be 1-63 characters long, and comply with RFC1035. Example value: "v1", "v2".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_network_endpoint_group#version ComputeRegionNetworkEndpointGroup#version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_network_endpoint_group#version ComputeRegionNetworkEndpointGroup#version}
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 

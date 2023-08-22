@@ -21,9 +21,9 @@ type DataGoogleComposerEnvironmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the environment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/composer_environment#name DataGoogleComposerEnvironment#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/composer_environment#name DataGoogleComposerEnvironment#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/composer_environment#id DataGoogleComposerEnvironment#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/composer_environment#id DataGoogleComposerEnvironment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -32,11 +32,11 @@ type DataGoogleComposerEnvironmentConfig struct {
 	//
 	// If it is not provided, the provider project is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/composer_environment#project DataGoogleComposerEnvironment#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/composer_environment#project DataGoogleComposerEnvironment#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The location or Compute Engine region for the environment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/composer_environment#region DataGoogleComposerEnvironment#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/composer_environment#region DataGoogleComposerEnvironment#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

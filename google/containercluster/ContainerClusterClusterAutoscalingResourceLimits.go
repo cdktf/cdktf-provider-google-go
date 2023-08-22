@@ -6,15 +6,15 @@ type ContainerClusterClusterAutoscalingResourceLimits struct {
 	//
 	// For example, cpu and memory. See the guide to using Node Auto-Provisioning for a list of types.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/container_cluster#resource_type ContainerCluster#resource_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_cluster#resource_type ContainerCluster#resource_type}
 	ResourceType *string `field:"required" json:"resourceType" yaml:"resourceType"`
 	// Maximum amount of the resource in the cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/container_cluster#maximum ContainerCluster#maximum}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_cluster#maximum ContainerCluster#maximum}
 	Maximum *float64 `field:"optional" json:"maximum" yaml:"maximum"`
 	// Minimum amount of the resource in the cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/container_cluster#minimum ContainerCluster#minimum}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_cluster#minimum ContainerCluster#minimum}
 	Minimum *float64 `field:"optional" json:"minimum" yaml:"minimum"`
 }
 

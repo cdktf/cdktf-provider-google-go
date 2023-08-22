@@ -9,7 +9,7 @@ type BigqueryDataTransferConfigScheduleOptions struct {
 	// scheduling is disabled, the TransferConfig.schedule field will
 	// be ignored.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_data_transfer_config#disable_auto_scheduling BigqueryDataTransferConfig#disable_auto_scheduling}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_data_transfer_config#disable_auto_scheduling BigqueryDataTransferConfig#disable_auto_scheduling}
 	DisableAutoScheduling interface{} `field:"optional" json:"disableAutoScheduling" yaml:"disableAutoScheduling"`
 	// Defines time to stop scheduling transfer runs.
 	//
@@ -18,7 +18,7 @@ type BigqueryDataTransferConfigScheduleOptions struct {
 	// moment. The time when a data transfer can be triggered manually is not
 	// limited by this option.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_data_transfer_config#end_time BigqueryDataTransferConfig#end_time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_data_transfer_config#end_time BigqueryDataTransferConfig#end_time}
 	EndTime *string `field:"optional" json:"endTime" yaml:"endTime"`
 	// Specifies time to start scheduling transfer runs.
 	//
@@ -28,7 +28,7 @@ type BigqueryDataTransferConfigScheduleOptions struct {
 	// moment. The time when a data transfer can be triggered manually is not
 	// limited by this option.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/bigquery_data_transfer_config#start_time BigqueryDataTransferConfig#start_time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_data_transfer_config#start_time BigqueryDataTransferConfig#start_time}
 	StartTime *string `field:"optional" json:"startTime" yaml:"startTime"`
 }
 

@@ -9,7 +9,7 @@ type ComputeFirewallAllow struct {
 	// one of the following well known protocol strings (tcp, udp,
 	// icmp, esp, ah, sctp, ipip, all), or the IP protocol number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_firewall#protocol ComputeFirewall#protocol}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_firewall#protocol ComputeFirewall#protocol}
 	Protocol *string `field:"required" json:"protocol" yaml:"protocol"`
 	// An optional list of ports to which this rule applies.
 	//
@@ -21,7 +21,7 @@ type ComputeFirewallAllow struct {
 	// Example inputs include: ["22"], ["80","443"], and
 	// ["12345-12349"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_firewall#ports ComputeFirewall#ports}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_firewall#ports ComputeFirewall#ports}
 	Ports *[]*string `field:"optional" json:"ports" yaml:"ports"`
 }
 

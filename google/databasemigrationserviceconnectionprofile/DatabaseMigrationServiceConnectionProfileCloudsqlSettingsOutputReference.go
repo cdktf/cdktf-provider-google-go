@@ -49,6 +49,9 @@ type DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference in
 	DataDiskType() *string
 	SetDataDiskType(val *string)
 	DataDiskTypeInput() *string
+	Edition() *string
+	SetEdition(val *string)
+	EditionInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DatabaseMigrationServiceConnectionProfileCloudsqlSettings
@@ -115,6 +118,7 @@ type DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference in
 	ResetDatabaseVersion()
 	ResetDataDiskSizeGb()
 	ResetDataDiskType()
+	ResetEdition()
 	ResetIpConfig()
 	ResetRootPassword()
 	ResetStorageAutoResizeLimit()
@@ -321,6 +325,26 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutp
 	_jsii_.Get(
 		j,
 		"dataDiskTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) Edition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) EditionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"editionInput",
 		&returns,
 	)
 	return returns
@@ -650,6 +674,17 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutp
 	_jsii_.Set(
 		j,
 		"dataDiskType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetEdition(val *string) {
+	if err := j.validateSetEditionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"edition",
 		val,
 	)
 }
@@ -1010,6 +1045,14 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutp
 	_jsii_.InvokeVoid(
 		d,
 		"resetDataDiskType",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) ResetEdition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEdition",
 		nil, // no parameters
 	)
 }

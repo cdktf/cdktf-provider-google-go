@@ -21,11 +21,11 @@ type DataGoogleDnsKeysConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The Name of the zone.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/dns_keys#managed_zone DataGoogleDnsKeys#managed_zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/dns_keys#managed_zone DataGoogleDnsKeys#managed_zone}
 	ManagedZone *string `field:"required" json:"managedZone" yaml:"managedZone"`
 	// The ID of the project for the Google Cloud.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/data-sources/dns_keys#project DataGoogleDnsKeys#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/dns_keys#project DataGoogleDnsKeys#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

@@ -21,11 +21,11 @@ type SqlDatabaseConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the Cloud SQL instance. This does not include the project ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/sql_database#instance SqlDatabase#instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/sql_database#instance SqlDatabase#instance}
 	Instance *string `field:"required" json:"instance" yaml:"instance"`
 	// The name of the database in the Cloud SQL instance. This does not include the project ID or instance name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/sql_database#name SqlDatabase#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/sql_database#name SqlDatabase#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The charset value.
 	//
@@ -35,7 +35,7 @@ type SqlDatabaseConfig struct {
 	// for more details and supported values. Postgres databases only support
 	// a value of 'UTF8' at creation time.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/sql_database#charset SqlDatabase#charset}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/sql_database#charset SqlDatabase#charset}
 	Charset *string `field:"optional" json:"charset" yaml:"charset"`
 	// The collation value.
 	//
@@ -45,7 +45,7 @@ type SqlDatabaseConfig struct {
 	// for more details and supported values. Postgres databases only support
 	// a value of 'en_US.UTF8' at creation time.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/sql_database#collation SqlDatabase#collation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/sql_database#collation SqlDatabase#collation}
 	Collation *string `field:"optional" json:"collation" yaml:"collation"`
 	// The deletion policy for the database.
 	//
@@ -54,18 +54,18 @@ type SqlDatabaseConfig struct {
 	// deleted from the API if there are users other than cloudsqlsuperuser with access. Possible
 	// values are: "ABANDON", "DELETE". Defaults to "DELETE".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/sql_database#deletion_policy SqlDatabase#deletion_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/sql_database#deletion_policy SqlDatabase#deletion_policy}
 	DeletionPolicy *string `field:"optional" json:"deletionPolicy" yaml:"deletionPolicy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/sql_database#id SqlDatabase#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/sql_database#id SqlDatabase#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/sql_database#project SqlDatabase#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/sql_database#project SqlDatabase#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/sql_database#timeouts SqlDatabase#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/sql_database#timeouts SqlDatabase#timeouts}
 	Timeouts *SqlDatabaseTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

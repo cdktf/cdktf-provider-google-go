@@ -6,7 +6,7 @@ type DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleL
 	//
 	// Either this or relative_likelihood can be set. Possible values: ["VERY_UNLIKELY", "UNLIKELY", "POSSIBLE", "LIKELY", "VERY_LIKELY"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/data_loss_prevention_job_trigger#fixed_likelihood DataLossPreventionJobTrigger#fixed_likelihood}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_loss_prevention_job_trigger#fixed_likelihood DataLossPreventionJobTrigger#fixed_likelihood}
 	FixedLikelihood *string `field:"optional" json:"fixedLikelihood" yaml:"fixedLikelihood"`
 	// Increase or decrease the likelihood by the specified number of levels.
 	//
@@ -17,7 +17,7 @@ type DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleL
 	// adjustment of 1 followed by an adjustment of -1 when base likelihood is VERY_LIKELY
 	// will result in a final likelihood of LIKELY. Either this or fixed_likelihood can be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/data_loss_prevention_job_trigger#relative_likelihood DataLossPreventionJobTrigger#relative_likelihood}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_loss_prevention_job_trigger#relative_likelihood DataLossPreventionJobTrigger#relative_likelihood}
 	RelativeLikelihood *float64 `field:"optional" json:"relativeLikelihood" yaml:"relativeLikelihood"`
 }
 

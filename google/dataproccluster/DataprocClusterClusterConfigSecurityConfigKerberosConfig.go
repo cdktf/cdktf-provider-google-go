@@ -4,74 +4,74 @@ package dataproccluster
 type DataprocClusterClusterConfigSecurityConfigKerberosConfig struct {
 	// The uri of the KMS key used to encrypt various sensitive files.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_cluster#kms_key_uri DataprocCluster#kms_key_uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_cluster#kms_key_uri DataprocCluster#kms_key_uri}
 	KmsKeyUri *string `field:"required" json:"kmsKeyUri" yaml:"kmsKeyUri"`
 	// The cloud Storage URI of a KMS encrypted file containing the root principal password.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_cluster#root_principal_password_uri DataprocCluster#root_principal_password_uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_cluster#root_principal_password_uri DataprocCluster#root_principal_password_uri}
 	RootPrincipalPasswordUri *string `field:"required" json:"rootPrincipalPasswordUri" yaml:"rootPrincipalPasswordUri"`
 	// The admin server (IP or hostname) for the remote trusted realm in a cross realm trust relationship.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_cluster#cross_realm_trust_admin_server DataprocCluster#cross_realm_trust_admin_server}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_cluster#cross_realm_trust_admin_server DataprocCluster#cross_realm_trust_admin_server}
 	CrossRealmTrustAdminServer *string `field:"optional" json:"crossRealmTrustAdminServer" yaml:"crossRealmTrustAdminServer"`
 	// The KDC (IP or hostname) for the remote trusted realm in a cross realm trust relationship.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_cluster#cross_realm_trust_kdc DataprocCluster#cross_realm_trust_kdc}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_cluster#cross_realm_trust_kdc DataprocCluster#cross_realm_trust_kdc}
 	CrossRealmTrustKdc *string `field:"optional" json:"crossRealmTrustKdc" yaml:"crossRealmTrustKdc"`
 	// The remote realm the Dataproc on-cluster KDC will trust, should the user enable cross realm trust.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_cluster#cross_realm_trust_realm DataprocCluster#cross_realm_trust_realm}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_cluster#cross_realm_trust_realm DataprocCluster#cross_realm_trust_realm}
 	CrossRealmTrustRealm *string `field:"optional" json:"crossRealmTrustRealm" yaml:"crossRealmTrustRealm"`
 	// The Cloud Storage URI of a KMS encrypted file containing the shared password between the on-cluster Kerberos realm and the remote trusted realm, in a cross realm trust relationship.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_cluster#cross_realm_trust_shared_password_uri DataprocCluster#cross_realm_trust_shared_password_uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_cluster#cross_realm_trust_shared_password_uri DataprocCluster#cross_realm_trust_shared_password_uri}
 	CrossRealmTrustSharedPasswordUri *string `field:"optional" json:"crossRealmTrustSharedPasswordUri" yaml:"crossRealmTrustSharedPasswordUri"`
 	// Flag to indicate whether to Kerberize the cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_cluster#enable_kerberos DataprocCluster#enable_kerberos}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_cluster#enable_kerberos DataprocCluster#enable_kerberos}
 	EnableKerberos interface{} `field:"optional" json:"enableKerberos" yaml:"enableKerberos"`
 	// The Cloud Storage URI of a KMS encrypted file containing the master key of the KDC database.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_cluster#kdc_db_key_uri DataprocCluster#kdc_db_key_uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_cluster#kdc_db_key_uri DataprocCluster#kdc_db_key_uri}
 	KdcDbKeyUri *string `field:"optional" json:"kdcDbKeyUri" yaml:"kdcDbKeyUri"`
 	// The Cloud Storage URI of a KMS encrypted file containing the password to the user provided key.
 	//
 	// For the self-signed certificate, this password is generated by Dataproc.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_cluster#key_password_uri DataprocCluster#key_password_uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_cluster#key_password_uri DataprocCluster#key_password_uri}
 	KeyPasswordUri *string `field:"optional" json:"keyPasswordUri" yaml:"keyPasswordUri"`
 	// The Cloud Storage URI of a KMS encrypted file containing the password to the user provided keystore.
 	//
 	// For the self-signed certificate, this password is generated
 	// by Dataproc
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_cluster#keystore_password_uri DataprocCluster#keystore_password_uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_cluster#keystore_password_uri DataprocCluster#keystore_password_uri}
 	KeystorePasswordUri *string `field:"optional" json:"keystorePasswordUri" yaml:"keystorePasswordUri"`
 	// The Cloud Storage URI of the keystore file used for SSL encryption.
 	//
 	// If not provided, Dataproc will provide a self-signed certificate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_cluster#keystore_uri DataprocCluster#keystore_uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_cluster#keystore_uri DataprocCluster#keystore_uri}
 	KeystoreUri *string `field:"optional" json:"keystoreUri" yaml:"keystoreUri"`
 	// The name of the on-cluster Kerberos realm. If not specified, the uppercased domain of hostnames will be the realm.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_cluster#realm DataprocCluster#realm}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_cluster#realm DataprocCluster#realm}
 	Realm *string `field:"optional" json:"realm" yaml:"realm"`
 	// The lifetime of the ticket granting ticket, in hours.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_cluster#tgt_lifetime_hours DataprocCluster#tgt_lifetime_hours}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_cluster#tgt_lifetime_hours DataprocCluster#tgt_lifetime_hours}
 	TgtLifetimeHours *float64 `field:"optional" json:"tgtLifetimeHours" yaml:"tgtLifetimeHours"`
 	// The Cloud Storage URI of a KMS encrypted file containing the password to the user provided truststore.
 	//
 	// For the self-signed certificate, this password is generated by Dataproc.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_cluster#truststore_password_uri DataprocCluster#truststore_password_uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_cluster#truststore_password_uri DataprocCluster#truststore_password_uri}
 	TruststorePasswordUri *string `field:"optional" json:"truststorePasswordUri" yaml:"truststorePasswordUri"`
 	// The Cloud Storage URI of the truststore file used for SSL encryption.
 	//
 	// If not provided, Dataproc will provide a self-signed certificate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_cluster#truststore_uri DataprocCluster#truststore_uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_cluster#truststore_uri DataprocCluster#truststore_uri}
 	TruststoreUri *string `field:"optional" json:"truststoreUri" yaml:"truststoreUri"`
 }
 

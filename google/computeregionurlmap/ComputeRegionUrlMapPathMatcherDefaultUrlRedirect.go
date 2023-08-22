@@ -8,13 +8,13 @@ type ComputeRegionUrlMapPathMatcherDefaultUrlRedirect struct {
 	// retained.
 	// This field is required to ensure an empty block is not set. The normal default value is false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_url_map#strip_query ComputeRegionUrlMap#strip_query}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_url_map#strip_query ComputeRegionUrlMap#strip_query}
 	StripQuery interface{} `field:"required" json:"stripQuery" yaml:"stripQuery"`
 	// The host that will be used in the redirect response instead of the one that was supplied in the request.
 	//
 	// The value must be between 1 and 255 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_url_map#host_redirect ComputeRegionUrlMap#host_redirect}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_url_map#host_redirect ComputeRegionUrlMap#host_redirect}
 	HostRedirect *string `field:"optional" json:"hostRedirect" yaml:"hostRedirect"`
 	// If set to true, the URL scheme in the redirected request is set to https.
 	//
@@ -23,7 +23,7 @@ type ComputeRegionUrlMapPathMatcherDefaultUrlRedirect struct {
 	// request. This must only be set for UrlMaps used in TargetHttpProxys. Setting this
 	// true for TargetHttpsProxy is not permitted. The default is set to false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_url_map#https_redirect ComputeRegionUrlMap#https_redirect}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_url_map#https_redirect ComputeRegionUrlMap#https_redirect}
 	HttpsRedirect interface{} `field:"optional" json:"httpsRedirect" yaml:"httpsRedirect"`
 	// The path that will be used in the redirect response instead of the one that was supplied in the request.
 	//
@@ -32,7 +32,7 @@ type ComputeRegionUrlMapPathMatcherDefaultUrlRedirect struct {
 	// original request will be used for the redirect. The value must be between 1 and 1024
 	// characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_url_map#path_redirect ComputeRegionUrlMap#path_redirect}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_url_map#path_redirect ComputeRegionUrlMap#path_redirect}
 	PathRedirect *string `field:"optional" json:"pathRedirect" yaml:"pathRedirect"`
 	// The prefix that replaces the prefixMatch specified in the HttpRouteRuleMatch, retaining the remaining portion of the URL before redirecting the request.
 	//
@@ -40,7 +40,7 @@ type ComputeRegionUrlMapPathMatcherDefaultUrlRedirect struct {
 	// neither. If neither is supplied, the path of the original request will be used for
 	// the redirect. The value must be between 1 and 1024 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_url_map#prefix_redirect ComputeRegionUrlMap#prefix_redirect}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_url_map#prefix_redirect ComputeRegionUrlMap#prefix_redirect}
 	PrefixRedirect *string `field:"optional" json:"prefixRedirect" yaml:"prefixRedirect"`
 	// The HTTP Status code to use for this RedirectAction. Supported values are:.
 	//
@@ -56,7 +56,7 @@ type ComputeRegionUrlMapPathMatcherDefaultUrlRedirect struct {
 	// PERMANENT_REDIRECT, which corresponds to 308. In this case,
 	// the request method will be retained. Possible values: ["FOUND", "MOVED_PERMANENTLY_DEFAULT", "PERMANENT_REDIRECT", "SEE_OTHER", "TEMPORARY_REDIRECT"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_url_map#redirect_response_code ComputeRegionUrlMap#redirect_response_code}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_url_map#redirect_response_code ComputeRegionUrlMap#redirect_response_code}
 	RedirectResponseCode *string `field:"optional" json:"redirectResponseCode" yaml:"redirectResponseCode"`
 }
 

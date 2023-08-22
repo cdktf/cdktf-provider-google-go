@@ -6,13 +6,13 @@ type RecaptchaEnterpriseKeyTestingOptions struct {
 	//
 	// Possible values: TESTING_CHALLENGE_UNSPECIFIED, NOCAPTCHA, UNSOLVABLE_CHALLENGE
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/recaptcha_enterprise_key#testing_challenge RecaptchaEnterpriseKey#testing_challenge}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/recaptcha_enterprise_key#testing_challenge RecaptchaEnterpriseKey#testing_challenge}
 	TestingChallenge *string `field:"optional" json:"testingChallenge" yaml:"testingChallenge"`
 	// All assessments for this Key will return this score.
 	//
 	// Must be between 0 (likely not legitimate) and 1 (likely legitimate) inclusive.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/recaptcha_enterprise_key#testing_score RecaptchaEnterpriseKey#testing_score}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/recaptcha_enterprise_key#testing_score RecaptchaEnterpriseKey#testing_score}
 	TestingScore *float64 `field:"optional" json:"testingScore" yaml:"testingScore"`
 }
 

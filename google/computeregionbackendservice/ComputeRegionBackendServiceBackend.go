@@ -24,14 +24,14 @@ type ComputeRegionBackendServiceBackend struct {
 	// Group resource using the fully-qualified URL, rather than a
 	// partial URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_backend_service#group ComputeRegionBackendService#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_backend_service#group ComputeRegionBackendService#group}
 	Group *string `field:"required" json:"group" yaml:"group"`
 	// Specifies the balancing mode for this backend.
 	//
 	// See the [Backend Services Overview](https://cloud.google.com/load-balancing/docs/backend-service#balancing-mode)
 	// for an explanation of load balancing modes. Default value: "CONNECTION" Possible values: ["UTILIZATION", "RATE", "CONNECTION"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_backend_service#balancing_mode ComputeRegionBackendService#balancing_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_backend_service#balancing_mode ComputeRegionBackendService#balancing_mode}
 	BalancingMode *string `field:"optional" json:"balancingMode" yaml:"balancingMode"`
 	// A multiplier applied to the group's maximum servicing capacity (based on UTILIZATION, RATE or CONNECTION).
 	//
@@ -43,18 +43,18 @@ type ComputeRegionBackendServiceBackend struct {
 	// A setting of 0 means the group is completely drained, offering
 	// 0% of its available Capacity. Valid range is [0.0,1.0].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_backend_service#capacity_scaler ComputeRegionBackendService#capacity_scaler}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_backend_service#capacity_scaler ComputeRegionBackendService#capacity_scaler}
 	CapacityScaler *float64 `field:"optional" json:"capacityScaler" yaml:"capacityScaler"`
 	// An optional description of this resource. Provide this property when you create the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_backend_service#description ComputeRegionBackendService#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_backend_service#description ComputeRegionBackendService#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// This field designates whether this is a failover backend.
 	//
 	// More
 	// than one failover backend can be configured for a given RegionBackendService.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_backend_service#failover ComputeRegionBackendService#failover}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_backend_service#failover ComputeRegionBackendService#failover}
 	Failover interface{} `field:"optional" json:"failover" yaml:"failover"`
 	// The max number of simultaneous connections for the group.
 	//
@@ -66,7 +66,7 @@ type ComputeRegionBackendServiceBackend struct {
 	// of maxConnectionsPerInstance or maxConnectionsPerEndpoint,
 	// as appropriate for group type, must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_backend_service#max_connections ComputeRegionBackendService#max_connections}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_backend_service#max_connections ComputeRegionBackendService#max_connections}
 	MaxConnections *float64 `field:"optional" json:"maxConnections" yaml:"maxConnections"`
 	// The max number of simultaneous connections that a single backend network endpoint can handle. Cannot be set for INTERNAL backend services.
 	//
@@ -75,7 +75,7 @@ type ComputeRegionBackendServiceBackend struct {
 	// CONNECTION mode, either maxConnections or
 	// maxConnectionsPerEndpoint must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_backend_service#max_connections_per_endpoint ComputeRegionBackendService#max_connections_per_endpoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_backend_service#max_connections_per_endpoint ComputeRegionBackendService#max_connections_per_endpoint}
 	MaxConnectionsPerEndpoint *float64 `field:"optional" json:"maxConnectionsPerEndpoint" yaml:"maxConnectionsPerEndpoint"`
 	// The max number of simultaneous connections that a single backend instance can handle. Cannot be set for INTERNAL backend services.
 	//
@@ -84,7 +84,7 @@ type ComputeRegionBackendServiceBackend struct {
 	// For CONNECTION mode, either maxConnections or
 	// maxConnectionsPerInstance must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_backend_service#max_connections_per_instance ComputeRegionBackendService#max_connections_per_instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_backend_service#max_connections_per_instance ComputeRegionBackendService#max_connections_per_instance}
 	MaxConnectionsPerInstance *float64 `field:"optional" json:"maxConnectionsPerInstance" yaml:"maxConnectionsPerInstance"`
 	// The max requests per second (RPS) of the group. Cannot be set for INTERNAL backend services.
 	//
@@ -93,7 +93,7 @@ type ComputeRegionBackendServiceBackend struct {
 	// of maxRatePerInstance or maxRatePerEndpoint, as appropriate for
 	// group type, must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_backend_service#max_rate ComputeRegionBackendService#max_rate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_backend_service#max_rate ComputeRegionBackendService#max_rate}
 	MaxRate *float64 `field:"optional" json:"maxRate" yaml:"maxRate"`
 	// The max requests per second (RPS) that a single backend network endpoint can handle.
 	//
@@ -102,7 +102,7 @@ type ComputeRegionBackendServiceBackend struct {
 	// either maxRate or maxRatePerEndpoint must be set. Cannot be set
 	// for INTERNAL backend services.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_backend_service#max_rate_per_endpoint ComputeRegionBackendService#max_rate_per_endpoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_backend_service#max_rate_per_endpoint ComputeRegionBackendService#max_rate_per_endpoint}
 	MaxRatePerEndpoint *float64 `field:"optional" json:"maxRatePerEndpoint" yaml:"maxRatePerEndpoint"`
 	// The max requests per second (RPS) that a single backend instance can handle.
 	//
@@ -111,7 +111,7 @@ type ComputeRegionBackendServiceBackend struct {
 	// either maxRate or maxRatePerInstance must be set. Cannot be set
 	// for INTERNAL backend services.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_backend_service#max_rate_per_instance ComputeRegionBackendService#max_rate_per_instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_backend_service#max_rate_per_instance ComputeRegionBackendService#max_rate_per_instance}
 	MaxRatePerInstance *float64 `field:"optional" json:"maxRatePerInstance" yaml:"maxRatePerInstance"`
 	// Used when balancingMode is UTILIZATION.
 	//
@@ -119,7 +119,7 @@ type ComputeRegionBackendServiceBackend struct {
 	// CPU utilization target for the group. Valid range is [0.0, 1.0].
 	// Cannot be set for INTERNAL backend services.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_backend_service#max_utilization ComputeRegionBackendService#max_utilization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_backend_service#max_utilization ComputeRegionBackendService#max_utilization}
 	MaxUtilization *float64 `field:"optional" json:"maxUtilization" yaml:"maxUtilization"`
 }
 

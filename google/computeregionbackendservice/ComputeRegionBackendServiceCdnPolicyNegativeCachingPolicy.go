@@ -7,7 +7,7 @@ type ComputeRegionBackendServiceCdnPolicyNegativeCachingPolicy struct {
 	// Only HTTP status codes 300, 301, 308, 404, 405, 410, 421, 451 and 501
 	// can be specified as values, and you cannot specify a status code more than once.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_backend_service#code ComputeRegionBackendService#code}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_backend_service#code ComputeRegionBackendService#code}
 	Code *float64 `field:"optional" json:"code" yaml:"code"`
 }
 

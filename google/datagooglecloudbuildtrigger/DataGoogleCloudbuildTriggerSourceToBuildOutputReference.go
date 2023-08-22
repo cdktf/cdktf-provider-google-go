@@ -10,6 +10,7 @@ import (
 
 type DataGoogleCloudbuildTriggerSourceToBuildOutputReference interface {
 	cdktf.ComplexObject
+	BitbucketServerConfig() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -79,6 +80,16 @@ type DataGoogleCloudbuildTriggerSourceToBuildOutputReference interface {
 // The jsii proxy struct for DataGoogleCloudbuildTriggerSourceToBuildOutputReference
 type jsiiProxy_DataGoogleCloudbuildTriggerSourceToBuildOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerSourceToBuildOutputReference) BitbucketServerConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bitbucketServerConfig",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleCloudbuildTriggerSourceToBuildOutputReference) ComplexObjectIndex() interface{} {

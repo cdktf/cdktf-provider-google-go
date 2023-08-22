@@ -9,7 +9,7 @@ type ComputeRouterBgp struct {
 	// this router resource. All VPN tunnels that link to this router
 	// will have the same local ASN.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_router#asn ComputeRouter#asn}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_router#asn ComputeRouter#asn}
 	Asn *float64 `field:"required" json:"asn" yaml:"asn"`
 	// User-specified list of prefix groups to advertise in custom mode.
 	//
@@ -20,15 +20,15 @@ type ComputeRouterBgp struct {
 	//
 	// This enum field has the one valid value: ALL_SUBNETS
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_router#advertised_groups ComputeRouter#advertised_groups}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_router#advertised_groups ComputeRouter#advertised_groups}
 	AdvertisedGroups *[]*string `field:"optional" json:"advertisedGroups" yaml:"advertisedGroups"`
 	// advertised_ip_ranges block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_router#advertised_ip_ranges ComputeRouter#advertised_ip_ranges}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_router#advertised_ip_ranges ComputeRouter#advertised_ip_ranges}
 	AdvertisedIpRanges interface{} `field:"optional" json:"advertisedIpRanges" yaml:"advertisedIpRanges"`
 	// User-specified flag to indicate which mode to use for advertisement. Default value: "DEFAULT" Possible values: ["DEFAULT", "CUSTOM"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_router#advertise_mode ComputeRouter#advertise_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_router#advertise_mode ComputeRouter#advertise_mode}
 	AdvertiseMode *string `field:"optional" json:"advertiseMode" yaml:"advertiseMode"`
 	// The interval in seconds between BGP keepalive messages that are sent to the peer.
 	//
@@ -42,7 +42,7 @@ type ComputeRouterBgp struct {
 	// between the two peers. If set, this value must be between 20 and 60.
 	// The default is 20.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_router#keepalive_interval ComputeRouter#keepalive_interval}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_router#keepalive_interval ComputeRouter#keepalive_interval}
 	KeepaliveInterval *float64 `field:"optional" json:"keepaliveInterval" yaml:"keepaliveInterval"`
 }
 

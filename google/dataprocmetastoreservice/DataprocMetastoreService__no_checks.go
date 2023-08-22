@@ -68,6 +68,10 @@ func (d *jsiiProxy_DataprocMetastoreService) validatePutNetworkConfigParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataprocMetastoreService) validatePutScalingConfigParameters(value *DataprocMetastoreServiceScalingConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreService) validatePutTelemetryConfigParameters(value *DataprocMetastoreServiceTelemetryConfig) error {
 	return nil
 }

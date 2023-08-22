@@ -8,11 +8,11 @@ type DataprocAutoscalingPolicySecondaryWorkerConfig struct {
 	// secondary workers. Required for secondary workers if the minimum secondary instances is set.
 	// Bounds: [minInstances, ). Defaults to 0.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_autoscaling_policy#max_instances DataprocAutoscalingPolicy#max_instances}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_autoscaling_policy#max_instances DataprocAutoscalingPolicy#max_instances}
 	MaxInstances *float64 `field:"optional" json:"maxInstances" yaml:"maxInstances"`
 	// Minimum number of instances for this group. Bounds: [0, maxInstances]. Defaults to 0.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_autoscaling_policy#min_instances DataprocAutoscalingPolicy#min_instances}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_autoscaling_policy#min_instances DataprocAutoscalingPolicy#min_instances}
 	MinInstances *float64 `field:"optional" json:"minInstances" yaml:"minInstances"`
 	// Weight for the instance group, which is used to determine the fraction of total workers in the cluster from this instance group.
 	//
@@ -30,7 +30,7 @@ type DataprocAutoscalingPolicySecondaryWorkerConfig struct {
 	// the cluster will default to zero weight on the unset group. For example if weight is set
 	// only on primary workers, the cluster will use primary workers only and no secondary workers.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dataproc_autoscaling_policy#weight DataprocAutoscalingPolicy#weight}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_autoscaling_policy#weight DataprocAutoscalingPolicy#weight}
 	Weight *float64 `field:"optional" json:"weight" yaml:"weight"`
 }
 

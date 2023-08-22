@@ -21,24 +21,31 @@ type HealthcareFhirStoreConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Identifies the dataset addressed by this request. Must be in the format 'projects/{project}/locations/{location}/datasets/{dataset}'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/healthcare_fhir_store#dataset HealthcareFhirStore#dataset}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/healthcare_fhir_store#dataset HealthcareFhirStore#dataset}
 	Dataset *string `field:"required" json:"dataset" yaml:"dataset"`
 	// The resource name for the FhirStore.
 	//
 	// * Changing this property may recreate the FHIR store (removing all data) **
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/healthcare_fhir_store#name HealthcareFhirStore#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/healthcare_fhir_store#name HealthcareFhirStore#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The FHIR specification version. Possible values: ["DSTU2", "STU3", "R4"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/healthcare_fhir_store#version HealthcareFhirStore#version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/healthcare_fhir_store#version HealthcareFhirStore#version}
 	Version *string `field:"required" json:"version" yaml:"version"`
 	// Enable parsing of references within complex FHIR data types such as Extensions.
 	//
 	// If this value is set to ENABLED, then features like referential integrity and Bundle reference rewriting apply to all references. If this flag has not been specified the behavior of the FHIR store will not change, references in complex data types will not be parsed. New stores will have this value set to ENABLED by default after a notification period. Warning: turning on this flag causes processing existing resources to fail if they contain references to non-existent resources. Possible values: ["COMPLEX_DATA_TYPE_REFERENCE_PARSING_UNSPECIFIED", "DISABLED", "ENABLED"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/healthcare_fhir_store#complex_data_type_reference_parsing HealthcareFhirStore#complex_data_type_reference_parsing}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/healthcare_fhir_store#complex_data_type_reference_parsing HealthcareFhirStore#complex_data_type_reference_parsing}
 	ComplexDataTypeReferenceParsing *string `field:"optional" json:"complexDataTypeReferenceParsing" yaml:"complexDataTypeReferenceParsing"`
+	// If true, overrides the default search behavior for this FHIR store to handling=strict which returns an error for unrecognized search parameters.
+	//
+	// If false, uses the FHIR specification default handling=lenient which ignores unrecognized search parameters.
+	// The handling can always be changed from the default on an individual API call by setting the HTTP header Prefer: handling=strict or Prefer: handling=lenient.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/healthcare_fhir_store#default_search_handling_strict HealthcareFhirStore#default_search_handling_strict}
+	DefaultSearchHandlingStrict interface{} `field:"optional" json:"defaultSearchHandlingStrict" yaml:"defaultSearchHandlingStrict"`
 	// Whether to disable referential integrity in this FHIR store.
 	//
 	// This field is immutable after FHIR store
@@ -49,7 +56,7 @@ type HealthcareFhirStoreConfig struct {
 	//
 	// * Changing this property may recreate the FHIR store (removing all data) **
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/healthcare_fhir_store#disable_referential_integrity HealthcareFhirStore#disable_referential_integrity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/healthcare_fhir_store#disable_referential_integrity HealthcareFhirStore#disable_referential_integrity}
 	DisableReferentialIntegrity interface{} `field:"optional" json:"disableReferentialIntegrity" yaml:"disableReferentialIntegrity"`
 	// Whether to disable resource versioning for this FHIR store.
 	//
@@ -61,7 +68,7 @@ type HealthcareFhirStoreConfig struct {
 	//
 	// * Changing this property may recreate the FHIR store (removing all data) **
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/healthcare_fhir_store#disable_resource_versioning HealthcareFhirStore#disable_resource_versioning}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/healthcare_fhir_store#disable_resource_versioning HealthcareFhirStore#disable_resource_versioning}
 	DisableResourceVersioning interface{} `field:"optional" json:"disableResourceVersioning" yaml:"disableResourceVersioning"`
 	// Whether to allow the bulk import API to accept history bundles and directly insert historical resource versions into the FHIR store.
 	//
@@ -73,7 +80,7 @@ type HealthcareFhirStoreConfig struct {
 	//
 	// * This property can be changed manually in the Google Cloud Healthcare admin console without recreating the FHIR store **
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/healthcare_fhir_store#enable_history_import HealthcareFhirStore#enable_history_import}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/healthcare_fhir_store#enable_history_import HealthcareFhirStore#enable_history_import}
 	EnableHistoryImport interface{} `field:"optional" json:"enableHistoryImport" yaml:"enableHistoryImport"`
 	// Whether this FHIR store has the updateCreate capability.
 	//
@@ -84,9 +91,9 @@ type HealthcareFhirStoreConfig struct {
 	// identifiers, those IDs will be part of the FHIR resource path recorded in Cloud audit logs and Cloud Pub/Sub
 	// notifications.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/healthcare_fhir_store#enable_update_create HealthcareFhirStore#enable_update_create}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/healthcare_fhir_store#enable_update_create HealthcareFhirStore#enable_update_create}
 	EnableUpdateCreate interface{} `field:"optional" json:"enableUpdateCreate" yaml:"enableUpdateCreate"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/healthcare_fhir_store#id HealthcareFhirStore#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/healthcare_fhir_store#id HealthcareFhirStore#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -104,19 +111,19 @@ type HealthcareFhirStoreConfig struct {
 	// An object containing a list of "key": value pairs.
 	// Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/healthcare_fhir_store#labels HealthcareFhirStore#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/healthcare_fhir_store#labels HealthcareFhirStore#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// notification_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/healthcare_fhir_store#notification_config HealthcareFhirStore#notification_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/healthcare_fhir_store#notification_config HealthcareFhirStore#notification_config}
 	NotificationConfig *HealthcareFhirStoreNotificationConfig `field:"optional" json:"notificationConfig" yaml:"notificationConfig"`
 	// stream_configs block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/healthcare_fhir_store#stream_configs HealthcareFhirStore#stream_configs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/healthcare_fhir_store#stream_configs HealthcareFhirStore#stream_configs}
 	StreamConfigs interface{} `field:"optional" json:"streamConfigs" yaml:"streamConfigs"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/healthcare_fhir_store#timeouts HealthcareFhirStore#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/healthcare_fhir_store#timeouts HealthcareFhirStore#timeouts}
 	Timeouts *HealthcareFhirStoreTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

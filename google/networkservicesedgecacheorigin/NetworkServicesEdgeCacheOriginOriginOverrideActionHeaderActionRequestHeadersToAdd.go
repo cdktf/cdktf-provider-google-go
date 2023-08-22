@@ -4,11 +4,11 @@ package networkservicesedgecacheorigin
 type NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd struct {
 	// The name of the header to add.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/network_services_edge_cache_origin#header_name NetworkServicesEdgeCacheOrigin#header_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_services_edge_cache_origin#header_name NetworkServicesEdgeCacheOrigin#header_name}
 	HeaderName *string `field:"required" json:"headerName" yaml:"headerName"`
 	// The value of the header to add.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/network_services_edge_cache_origin#header_value NetworkServicesEdgeCacheOrigin#header_value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_services_edge_cache_origin#header_value NetworkServicesEdgeCacheOrigin#header_value}
 	HeaderValue *string `field:"required" json:"headerValue" yaml:"headerValue"`
 	// Whether to replace all existing headers with the same name.
 	//
@@ -19,7 +19,7 @@ type NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeader
 	//
 	// To overwrite existing values, set 'replace' to 'true'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/network_services_edge_cache_origin#replace NetworkServicesEdgeCacheOrigin#replace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/network_services_edge_cache_origin#replace NetworkServicesEdgeCacheOrigin#replace}
 	Replace interface{} `field:"optional" json:"replace" yaml:"replace"`
 }
 

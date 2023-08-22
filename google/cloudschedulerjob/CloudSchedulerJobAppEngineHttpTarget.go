@@ -9,11 +9,11 @@ type CloudSchedulerJobAppEngineHttpTarget struct {
 	// If the relative URL is empty, then the root path "/" will be used.
 	// No spaces are allowed, and the maximum length allowed is 2083 characters
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_scheduler_job#relative_uri CloudSchedulerJob#relative_uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_scheduler_job#relative_uri CloudSchedulerJob#relative_uri}
 	RelativeUri *string `field:"required" json:"relativeUri" yaml:"relativeUri"`
 	// app_engine_routing block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_scheduler_job#app_engine_routing CloudSchedulerJob#app_engine_routing}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_scheduler_job#app_engine_routing CloudSchedulerJob#app_engine_routing}
 	AppEngineRouting *CloudSchedulerJobAppEngineHttpTargetAppEngineRouting `field:"optional" json:"appEngineRouting" yaml:"appEngineRouting"`
 	// HTTP request body.
 	//
@@ -22,15 +22,15 @@ type CloudSchedulerJobAppEngineHttpTarget struct {
 	//
 	// A base64-encoded string.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_scheduler_job#body CloudSchedulerJob#body}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_scheduler_job#body CloudSchedulerJob#body}
 	Body *string `field:"optional" json:"body" yaml:"body"`
 	// HTTP request headers. This map contains the header field names and values. Headers can be set when the job is created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_scheduler_job#headers CloudSchedulerJob#headers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_scheduler_job#headers CloudSchedulerJob#headers}
 	Headers *map[string]*string `field:"optional" json:"headers" yaml:"headers"`
 	// Which HTTP method to use for the request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_scheduler_job#http_method CloudSchedulerJob#http_method}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_scheduler_job#http_method CloudSchedulerJob#http_method}
 	HttpMethod *string `field:"optional" json:"httpMethod" yaml:"httpMethod"`
 }
 

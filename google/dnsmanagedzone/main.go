@@ -588,6 +588,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putGkeClusters", GoMethod: "PutGkeClusters"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworks", GoMethod: "PutNetworks"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGkeClusters", GoMethod: "ResetGkeClusters"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNetworks", GoMethod: "ResetNetworks"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

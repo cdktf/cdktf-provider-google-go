@@ -9,7 +9,7 @@ type DialogflowEntityTypeEntities struct {
 	// For KIND_LIST entity types:
 	// This collection must contain exactly one synonym equal to value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dialogflow_entity_type#synonyms DialogflowEntityType#synonyms}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dialogflow_entity_type#synonyms DialogflowEntityType#synonyms}
 	Synonyms *[]*string `field:"required" json:"synonyms" yaml:"synonyms"`
 	// The primary value associated with this entity entry.
 	//
@@ -20,7 +20,7 @@ type DialogflowEntityTypeEntities struct {
 	// For KIND_LIST entity types:
 	// A string that can contain references to other entity types (with or without aliases).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/dialogflow_entity_type#value DialogflowEntityType#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dialogflow_entity_type#value DialogflowEntityType#value}
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

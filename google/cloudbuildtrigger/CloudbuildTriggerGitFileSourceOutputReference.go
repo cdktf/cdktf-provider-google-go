@@ -10,6 +10,9 @@ import (
 
 type CloudbuildTriggerGitFileSourceOutputReference interface {
 	cdktf.ComplexObject
+	BitbucketServerConfig() *string
+	SetBitbucketServerConfig(val *string)
+	BitbucketServerConfigInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -79,6 +82,7 @@ type CloudbuildTriggerGitFileSourceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBitbucketServerConfig()
 	ResetGithubEnterpriseConfig()
 	ResetRepository()
 	ResetRevision()
@@ -96,6 +100,26 @@ type CloudbuildTriggerGitFileSourceOutputReference interface {
 // The jsii proxy struct for CloudbuildTriggerGitFileSourceOutputReference
 type jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) BitbucketServerConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bitbucketServerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) BitbucketServerConfigInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bitbucketServerConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) ComplexObjectIndex() interface{} {
@@ -313,6 +337,17 @@ func NewCloudbuildTriggerGitFileSourceOutputReference_Override(c CloudbuildTrigg
 		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerGitFileSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference)SetBitbucketServerConfig(val *string) {
+	if err := j.validateSetBitbucketServerConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bitbucketServerConfig",
+		val,
 	)
 }
 
@@ -621,6 +656,14 @@ func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) ResetBitbucketServerConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBitbucketServerConfig",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) ResetGithubEnterpriseConfig() {

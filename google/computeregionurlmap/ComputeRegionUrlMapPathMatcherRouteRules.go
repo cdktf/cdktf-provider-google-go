@@ -19,19 +19,19 @@ type ComputeRegionUrlMapPathMatcherRouteRules struct {
 	// you could add rules numbered from 6 to 8, 10 to 11, and 13 to 15 in the
 	// future without any impact on existing rules.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_url_map#priority ComputeRegionUrlMap#priority}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_url_map#priority ComputeRegionUrlMap#priority}
 	Priority *float64 `field:"required" json:"priority" yaml:"priority"`
 	// header_action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_url_map#header_action ComputeRegionUrlMap#header_action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_url_map#header_action ComputeRegionUrlMap#header_action}
 	HeaderAction *ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction `field:"optional" json:"headerAction" yaml:"headerAction"`
 	// match_rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_url_map#match_rules ComputeRegionUrlMap#match_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_url_map#match_rules ComputeRegionUrlMap#match_rules}
 	MatchRules interface{} `field:"optional" json:"matchRules" yaml:"matchRules"`
 	// route_action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_url_map#route_action ComputeRegionUrlMap#route_action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_url_map#route_action ComputeRegionUrlMap#route_action}
 	RouteAction *ComputeRegionUrlMapPathMatcherRouteRulesRouteAction `field:"optional" json:"routeAction" yaml:"routeAction"`
 	// The region backend service resource to which traffic is directed if this rule is matched.
 	//
@@ -42,11 +42,11 @@ type ComputeRegionUrlMapPathMatcherRouteRules struct {
 	// weightedBackendServices, service must not be specified. Only one of urlRedirect,
 	// service or routeAction.weightedBackendService must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_url_map#service ComputeRegionUrlMap#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_url_map#service ComputeRegionUrlMap#service}
 	Service *string `field:"optional" json:"service" yaml:"service"`
 	// url_redirect block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_url_map#url_redirect ComputeRegionUrlMap#url_redirect}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_url_map#url_redirect ComputeRegionUrlMap#url_redirect}
 	UrlRedirect *ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect `field:"optional" json:"urlRedirect" yaml:"urlRedirect"`
 }
 

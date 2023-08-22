@@ -21,23 +21,23 @@ type LoggingFolderExclusionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The filter to apply when excluding logs. Only log entries that match the filter are excluded.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/logging_folder_exclusion#filter LoggingFolderExclusion#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_folder_exclusion#filter LoggingFolderExclusion#filter}
 	Filter *string `field:"required" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/logging_folder_exclusion#folder LoggingFolderExclusion#folder}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_folder_exclusion#folder LoggingFolderExclusion#folder}.
 	Folder *string `field:"required" json:"folder" yaml:"folder"`
 	// The name of the logging exclusion.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/logging_folder_exclusion#name LoggingFolderExclusion#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_folder_exclusion#name LoggingFolderExclusion#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// A human-readable description.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/logging_folder_exclusion#description LoggingFolderExclusion#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_folder_exclusion#description LoggingFolderExclusion#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Whether this exclusion rule should be disabled or not. This defaults to false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/logging_folder_exclusion#disabled LoggingFolderExclusion#disabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_folder_exclusion#disabled LoggingFolderExclusion#disabled}
 	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/logging_folder_exclusion#id LoggingFolderExclusion#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_folder_exclusion#id LoggingFolderExclusion#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -316,6 +316,14 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetModePa
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetProvisionedIopsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateSetResourcePoliciesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

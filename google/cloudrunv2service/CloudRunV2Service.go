@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
 type CloudRunV2Service interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -36,6 +36,9 @@ type CloudRunV2Service interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateTime() *string
+	Creator() *string
+	DeleteTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -44,6 +47,7 @@ type CloudRunV2Service interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	Etag() *string
+	ExpireTime() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -62,6 +66,7 @@ type CloudRunV2Service interface {
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
+	LastModifier() *string
 	LatestCreatedRevision() *string
 	LatestReadyRevision() *string
 	LaunchStage() *string
@@ -109,6 +114,7 @@ type CloudRunV2Service interface {
 	TrafficInput() interface{}
 	TrafficStatuses() CloudRunV2ServiceTrafficStatusesList
 	Uid() *string
+	UpdateTime() *string
 	Uri() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -300,6 +306,36 @@ func (j *jsiiProxy_CloudRunV2Service) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2Service) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) Creator() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) DeleteTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2Service) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -335,6 +371,16 @@ func (j *jsiiProxy_CloudRunV2Service) Etag() *string {
 	_jsii_.Get(
 		j,
 		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) ExpireTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expireTime",
 		&returns,
 	)
 	return returns
@@ -435,6 +481,16 @@ func (j *jsiiProxy_CloudRunV2Service) LabelsInput() *map[string]*string {
 	_jsii_.Get(
 		j,
 		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) LastModifier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastModifier",
 		&returns,
 	)
 	return returns
@@ -730,6 +786,16 @@ func (j *jsiiProxy_CloudRunV2Service) Uid() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2Service) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2Service) Uri() *string {
 	var returns *string
 	_jsii_.Get(
@@ -741,7 +807,7 @@ func (j *jsiiProxy_CloudRunV2Service) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudRunV2ServiceConfig) CloudRunV2Service {
 	_init_.Initialize()
 
@@ -759,7 +825,7 @@ func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewCloudRunV2Service_Override(c CloudRunV2Service, scope constructs.Construct, id *string, config *CloudRunV2ServiceConfig) {
 	_init_.Initialize()
 

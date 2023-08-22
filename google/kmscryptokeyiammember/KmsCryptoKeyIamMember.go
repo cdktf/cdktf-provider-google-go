@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/kms_crypto_key_iam_member google_kms_crypto_key_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/kms_crypto_key_iam_member google_kms_crypto_key_iam_member}.
 type KmsCryptoKeyIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/kms_crypto_key_iam_member google_kms_crypto_key_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/kms_crypto_key_iam_member google_kms_crypto_key_iam_member} Resource.
 func NewKmsCryptoKeyIamMember(scope constructs.Construct, id *string, config *KmsCryptoKeyIamMemberConfig) KmsCryptoKeyIamMember {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewKmsCryptoKeyIamMember(scope constructs.Construct, id *string, config *Km
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/kms_crypto_key_iam_member google_kms_crypto_key_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/kms_crypto_key_iam_member google_kms_crypto_key_iam_member} Resource.
 func NewKmsCryptoKeyIamMember_Override(k KmsCryptoKeyIamMember, scope constructs.Construct, id *string, config *KmsCryptoKeyIamMemberConfig) {
 	_init_.Initialize()
 

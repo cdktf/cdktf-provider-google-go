@@ -124,6 +124,10 @@ func (j *jsiiProxy_SecretManagerSecret) validateSetTtlParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_SecretManagerSecret) validateSetVersionAliasesParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewSecretManagerSecretParameters(scope constructs.Construct, id *string, config *SecretManagerSecretConfig) error {
 	return nil
 }

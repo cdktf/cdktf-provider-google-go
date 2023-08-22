@@ -29,7 +29,7 @@ type ComputeSslPolicyConfig struct {
 	// characters must be a dash, lowercase letter, or digit, except the last
 	// character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_ssl_policy#name ComputeSslPolicy#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_ssl_policy#name ComputeSslPolicy#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients.
 	//
@@ -43,13 +43,13 @@ type ComputeSslPolicyConfig struct {
 	// must* be present when using the 'CUSTOM' profile. This argument
 	// must not* be present when using any other profile.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_ssl_policy#custom_features ComputeSslPolicy#custom_features}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_ssl_policy#custom_features ComputeSslPolicy#custom_features}
 	CustomFeatures *[]*string `field:"optional" json:"customFeatures" yaml:"customFeatures"`
 	// An optional description of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_ssl_policy#description ComputeSslPolicy#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_ssl_policy#description ComputeSslPolicy#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_ssl_policy#id ComputeSslPolicy#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_ssl_policy#id ComputeSslPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,7 +58,7 @@ type ComputeSslPolicyConfig struct {
 	//
 	// Default value: "TLS_1_0" Possible values: ["TLS_1_0", "TLS_1_1", "TLS_1_2"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_ssl_policy#min_tls_version ComputeSslPolicy#min_tls_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_ssl_policy#min_tls_version ComputeSslPolicy#min_tls_version}
 	MinTlsVersion *string `field:"optional" json:"minTlsVersion" yaml:"minTlsVersion"`
 	// Profile specifies the set of SSL features that can be used by the load balancer when negotiating SSL with clients.
 	//
@@ -70,13 +70,13 @@ type ComputeSslPolicyConfig struct {
 	// for information on what cipher suites each profile provides. If
 	// 'CUSTOM' is used, the 'custom_features' attribute **must be set**. Default value: "COMPATIBLE" Possible values: ["COMPATIBLE", "MODERN", "RESTRICTED", "CUSTOM"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_ssl_policy#profile ComputeSslPolicy#profile}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_ssl_policy#profile ComputeSslPolicy#profile}
 	Profile *string `field:"optional" json:"profile" yaml:"profile"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_ssl_policy#project ComputeSslPolicy#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_ssl_policy#project ComputeSslPolicy#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_ssl_policy#timeouts ComputeSslPolicy#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_ssl_policy#timeouts ComputeSslPolicy#timeouts}
 	Timeouts *ComputeSslPolicyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

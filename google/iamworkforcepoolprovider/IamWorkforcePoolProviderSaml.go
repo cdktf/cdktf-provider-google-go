@@ -19,7 +19,7 @@ type IamWorkforcePoolProviderSaml struct {
 	// must overlap with the existing metadata. This requirement is skipped if there are
 	// no non-expired signing keys present in the existing metadata.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/iam_workforce_pool_provider#idp_metadata_xml IamWorkforcePoolProvider#idp_metadata_xml}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/iam_workforce_pool_provider#idp_metadata_xml IamWorkforcePoolProvider#idp_metadata_xml}
 	IdpMetadataXml *string `field:"required" json:"idpMetadataXml" yaml:"idpMetadataXml"`
 }
 

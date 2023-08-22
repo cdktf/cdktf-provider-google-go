@@ -7,14 +7,14 @@ type ComputeRegionNetworkEndpointGroupCloudRun struct {
 	// The service must be 1-63 characters long, and comply with RFC1035.
 	// Example value: "run-service".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_network_endpoint_group#service ComputeRegionNetworkEndpointGroup#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_network_endpoint_group#service ComputeRegionNetworkEndpointGroup#service}
 	Service *string `field:"optional" json:"service" yaml:"service"`
 	// Cloud Run tag represents the "named-revision" to provide additional fine-grained traffic routing information.
 	//
 	// The tag must be 1-63 characters long, and comply with RFC1035.
 	// Example value: "revision-0010".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_network_endpoint_group#tag ComputeRegionNetworkEndpointGroup#tag}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_network_endpoint_group#tag ComputeRegionNetworkEndpointGroup#tag}
 	Tag *string `field:"optional" json:"tag" yaml:"tag"`
 	// A template to parse service and tag fields from a request URL.
 	//
@@ -26,7 +26,7 @@ type ComputeRegionNetworkEndpointGroupCloudRun struct {
 	// URL mask ".domain.com/". The URL mask will parse them to { service="bar1", tag="foo1" }
 	// and { service="bar2", tag="foo2" } respectively.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_region_network_endpoint_group#url_mask ComputeRegionNetworkEndpointGroup#url_mask}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_network_endpoint_group#url_mask ComputeRegionNetworkEndpointGroup#url_mask}
 	UrlMask *string `field:"optional" json:"urlMask" yaml:"urlMask"`
 }
 

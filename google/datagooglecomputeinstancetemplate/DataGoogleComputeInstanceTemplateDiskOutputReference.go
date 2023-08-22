@@ -39,6 +39,7 @@ type DataGoogleComputeInstanceTemplateDiskOutputReference interface {
 	SetInternalValue(val *DataGoogleComputeInstanceTemplateDisk)
 	Labels() cdktf.StringMap
 	Mode() *string
+	ProvisionedIops() *float64
 	ResourcePolicies() *[]*string
 	Source() *string
 	SourceImage() *string
@@ -238,6 +239,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Mode() 
 	_jsii_.Get(
 		j,
 		"mode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) ProvisionedIops() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedIops",
 		&returns,
 	)
 	return returns

@@ -23,32 +23,32 @@ type ServiceAccountConfig struct {
 	//
 	// It is unique within a project, must be 6-30 characters long, and match the regular expression [a-z]([-a-z0-9]*[a-z0-9]) to comply with RFC1035. Changing this forces a new service account to be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/service_account#account_id ServiceAccount#account_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/service_account#account_id ServiceAccount#account_id}
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// A text description of the service account. Must be less than or equal to 256 UTF-8 bytes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/service_account#description ServiceAccount#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/service_account#description ServiceAccount#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Whether the service account is disabled. Defaults to false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/service_account#disabled ServiceAccount#disabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/service_account#disabled ServiceAccount#disabled}
 	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
 	// The display name for the service account. Can be updated without creating a new resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/service_account#display_name ServiceAccount#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/service_account#display_name ServiceAccount#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/service_account#id ServiceAccount#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/service_account#id ServiceAccount#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The ID of the project that the service account will be created in. Defaults to the provider project configuration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/service_account#project ServiceAccount#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/service_account#project ServiceAccount#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/service_account#timeouts ServiceAccount#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/service_account#timeouts ServiceAccount#timeouts}
 	Timeouts *ServiceAccountTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -13,11 +13,11 @@ type CloudTasksQueueRetryConfig struct {
 	//
 	// -1 indicates unlimited attempts.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_tasks_queue#max_attempts CloudTasksQueue#max_attempts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_tasks_queue#max_attempts CloudTasksQueue#max_attempts}
 	MaxAttempts *float64 `field:"optional" json:"maxAttempts" yaml:"maxAttempts"`
 	// A task will be scheduled for retry between minBackoff and maxBackoff duration after it fails, if the queue's RetryConfig specifies that the task should be retried.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_tasks_queue#max_backoff CloudTasksQueue#max_backoff}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_tasks_queue#max_backoff CloudTasksQueue#max_backoff}
 	MaxBackoff *string `field:"optional" json:"maxBackoff" yaml:"maxBackoff"`
 	// The time between retries will double maxDoublings times.
 	//
@@ -25,7 +25,7 @@ type CloudTasksQueueRetryConfig struct {
 	// then increases linearly, and finally retries retries at intervals of maxBackoff
 	// up to maxAttempts times.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_tasks_queue#max_doublings CloudTasksQueue#max_doublings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_tasks_queue#max_doublings CloudTasksQueue#max_doublings}
 	MaxDoublings *float64 `field:"optional" json:"maxDoublings" yaml:"maxDoublings"`
 	// If positive, maxRetryDuration specifies the time limit for retrying a failed task, measured from when the task was first attempted.
 	//
@@ -35,11 +35,11 @@ type CloudTasksQueueRetryConfig struct {
 	//
 	// If zero, then the task age is unlimited.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_tasks_queue#max_retry_duration CloudTasksQueue#max_retry_duration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_tasks_queue#max_retry_duration CloudTasksQueue#max_retry_duration}
 	MaxRetryDuration *string `field:"optional" json:"maxRetryDuration" yaml:"maxRetryDuration"`
 	// A task will be scheduled for retry between minBackoff and maxBackoff duration after it fails, if the queue's RetryConfig specifies that the task should be retried.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/cloud_tasks_queue#min_backoff CloudTasksQueue#min_backoff}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_tasks_queue#min_backoff CloudTasksQueue#min_backoff}
 	MinBackoff *string `field:"optional" json:"minBackoff" yaml:"minBackoff"`
 }
 

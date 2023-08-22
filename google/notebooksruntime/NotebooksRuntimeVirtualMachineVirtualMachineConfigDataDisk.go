@@ -4,7 +4,7 @@ package notebooksruntime
 type NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDisk struct {
 	// initialize_params block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_runtime#initialize_params NotebooksRuntime#initialize_params}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_runtime#initialize_params NotebooksRuntime#initialize_params}
 	InitializeParams *NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParams `field:"optional" json:"initializeParams" yaml:"initializeParams"`
 	// "Specifies the disk interface to use for attaching this disk, which is either SCSI or NVME.
 	//
@@ -14,22 +14,22 @@ type NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDisk struct {
 	// can use either NVME or SCSI. For performance characteristics of SCSI
 	// over NVMe, see Local SSD performance. Valid values: * NVME * SCSI".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_runtime#interface NotebooksRuntime#interface}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_runtime#interface NotebooksRuntime#interface}
 	Interface *string `field:"optional" json:"interface" yaml:"interface"`
 	// The mode in which to attach this disk, either READ_WRITE or READ_ONLY.
 	//
 	// If not specified, the default is to attach
 	// the disk in READ_WRITE mode.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_runtime#mode NotebooksRuntime#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_runtime#mode NotebooksRuntime#mode}
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
 	// Specifies a valid partial or full URL to an existing Persistent Disk resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_runtime#source NotebooksRuntime#source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_runtime#source NotebooksRuntime#source}
 	Source *string `field:"optional" json:"source" yaml:"source"`
 	// Specifies the type of the disk, either SCRATCH or PERSISTENT. If not specified, the default is PERSISTENT.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_runtime#type NotebooksRuntime#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_runtime#type NotebooksRuntime#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

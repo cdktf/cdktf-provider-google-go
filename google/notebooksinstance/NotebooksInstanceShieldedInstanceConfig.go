@@ -9,7 +9,7 @@ type NotebooksInstanceShieldedInstanceConfig struct {
 	// This baseline is initially derived from the implicitly trusted boot image when the instance is created.
 	// Enabled by default.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_instance#enable_integrity_monitoring NotebooksInstance#enable_integrity_monitoring}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_instance#enable_integrity_monitoring NotebooksInstance#enable_integrity_monitoring}
 	EnableIntegrityMonitoring interface{} `field:"optional" json:"enableIntegrityMonitoring" yaml:"enableIntegrityMonitoring"`
 	// Defines whether the instance has Secure Boot enabled.
 	//
@@ -18,11 +18,11 @@ type NotebooksInstanceShieldedInstanceConfig struct {
 	// if signature verification fails.
 	// Disabled by default.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_instance#enable_secure_boot NotebooksInstance#enable_secure_boot}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_instance#enable_secure_boot NotebooksInstance#enable_secure_boot}
 	EnableSecureBoot interface{} `field:"optional" json:"enableSecureBoot" yaml:"enableSecureBoot"`
 	// Defines whether the instance has the vTPM enabled. Enabled by default.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/notebooks_instance#enable_vtpm NotebooksInstance#enable_vtpm}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/notebooks_instance#enable_vtpm NotebooksInstance#enable_vtpm}
 	EnableVtpm interface{} `field:"optional" json:"enableVtpm" yaml:"enableVtpm"`
 }
 

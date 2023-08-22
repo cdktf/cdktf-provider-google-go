@@ -4,7 +4,7 @@ package pubsubsubscription
 type PubsubSubscriptionPushConfig struct {
 	// A URL locating the endpoint to which messages should be pushed. For example, a Webhook endpoint might use "https://example.com/push".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/pubsub_subscription#push_endpoint PubsubSubscription#push_endpoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/pubsub_subscription#push_endpoint PubsubSubscription#push_endpoint}
 	PushEndpoint *string `field:"required" json:"pushEndpoint" yaml:"pushEndpoint"`
 	// Endpoint configuration attributes.
 	//
@@ -30,15 +30,15 @@ type PubsubSubscriptionPushConfig struct {
 	// - v1beta1: uses the push format defined in the v1beta1 Pub/Sub API.
 	// - v1 or v1beta2: uses the push format defined in the v1 Pub/Sub API.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/pubsub_subscription#attributes PubsubSubscription#attributes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/pubsub_subscription#attributes PubsubSubscription#attributes}
 	Attributes *map[string]*string `field:"optional" json:"attributes" yaml:"attributes"`
 	// no_wrapper block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/pubsub_subscription#no_wrapper PubsubSubscription#no_wrapper}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/pubsub_subscription#no_wrapper PubsubSubscription#no_wrapper}
 	NoWrapper *PubsubSubscriptionPushConfigNoWrapper `field:"optional" json:"noWrapper" yaml:"noWrapper"`
 	// oidc_token block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/pubsub_subscription#oidc_token PubsubSubscription#oidc_token}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/pubsub_subscription#oidc_token PubsubSubscription#oidc_token}
 	OidcToken *PubsubSubscriptionPushConfigOidcToken `field:"optional" json:"oidcToken" yaml:"oidcToken"`
 }
 

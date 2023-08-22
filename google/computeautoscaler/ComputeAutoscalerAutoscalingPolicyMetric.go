@@ -6,7 +6,7 @@ type ComputeAutoscalerAutoscalingPolicyMetric struct {
 	//
 	// The metric must have a value type of INT64 or DOUBLE.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_autoscaler#name ComputeAutoscaler#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_autoscaler#name ComputeAutoscaler#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The target value of the metric that autoscaler should maintain.
 	//
@@ -19,11 +19,11 @@ type ComputeAutoscalerAutoscalingPolicyMetric struct {
 	// The autoscaler will work to keep this value constant for each
 	// of the instances.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_autoscaler#target ComputeAutoscaler#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_autoscaler#target ComputeAutoscaler#target}
 	Target *float64 `field:"optional" json:"target" yaml:"target"`
 	// Defines how target utilization value is expressed for a Stackdriver Monitoring metric. Possible values: ["GAUGE", "DELTA_PER_SECOND", "DELTA_PER_MINUTE"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_autoscaler#type ComputeAutoscaler#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_autoscaler#type ComputeAutoscaler#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

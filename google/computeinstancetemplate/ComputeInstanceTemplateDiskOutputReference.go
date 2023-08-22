@@ -58,6 +58,9 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
+	ProvisionedIops() *float64
+	SetProvisionedIops(val *float64)
+	ProvisionedIopsInput() *float64
 	ResourcePolicies() *[]*string
 	SetResourcePolicies(val *[]*string)
 	ResourcePoliciesInput() *[]*string
@@ -122,6 +125,7 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 	ResetInterface()
 	ResetLabels()
 	ResetMode()
+	ResetProvisionedIops()
 	ResetResourcePolicies()
 	ResetSource()
 	ResetSourceImage()
@@ -389,6 +393,26 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ModeInput() *stri
 	_jsii_.Get(
 		j,
 		"modeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ProvisionedIops() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ProvisionedIopsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedIopsInput",
 		&returns,
 	)
 	return returns
@@ -710,6 +734,17 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetMode(val *strin
 	_jsii_.Set(
 		j,
 		"mode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetProvisionedIops(val *float64) {
+	if err := j.validateSetProvisionedIopsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedIops",
 		val,
 	)
 }
@@ -1086,6 +1121,14 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ResetMode() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetMode",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ResetProvisionedIops() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProvisionedIops",
 		nil, // no parameters
 	)
 }

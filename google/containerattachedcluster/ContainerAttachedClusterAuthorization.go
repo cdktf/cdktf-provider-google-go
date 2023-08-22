@@ -11,7 +11,7 @@ type ContainerAttachedClusterAuthorization struct {
 	// For more info on RBAC, see
 	// https://kubernetes.io/docs/reference/access-authn-authz/rbac/#user-facing-roles
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/container_attached_cluster#admin_users ContainerAttachedCluster#admin_users}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_attached_cluster#admin_users ContainerAttachedCluster#admin_users}
 	AdminUsers *[]*string `field:"optional" json:"adminUsers" yaml:"adminUsers"`
 }
 

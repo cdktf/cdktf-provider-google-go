@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout}.
 type GameServicesGameServerDeploymentRollout interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GameServicesGameServerDeploymentRollout) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Resource.
 func NewGameServicesGameServerDeploymentRollout(scope constructs.Construct, id *string, config *GameServicesGameServerDeploymentRolloutConfig) GameServicesGameServerDeploymentRollout {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGameServicesGameServerDeploymentRollout(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Resource.
 func NewGameServicesGameServerDeploymentRollout_Override(g GameServicesGameServerDeploymentRollout, scope constructs.Construct, id *string, config *GameServicesGameServerDeploymentRolloutConfig) {
 	_init_.Initialize()
 

@@ -64,6 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTopics", GoMethod: "ResetTopics"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTtl", GoMethod: "ResetTtl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVersionAliases", GoMethod: "ResetVersionAliases"},
 			_jsii_.MemberProperty{JsiiProperty: "rotation", GoGetter: "Rotation"},
 			_jsii_.MemberProperty{JsiiProperty: "rotationInput", GoGetter: "RotationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "secretId", GoGetter: "SecretId"},
@@ -81,6 +82,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "ttl", GoGetter: "Ttl"},
 			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "versionAliases", GoGetter: "VersionAliases"},
+			_jsii_.MemberProperty{JsiiProperty: "versionAliasesInput", GoGetter: "VersionAliasesInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretManagerSecret{}

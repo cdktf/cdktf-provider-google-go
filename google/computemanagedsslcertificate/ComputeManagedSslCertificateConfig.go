@@ -21,20 +21,20 @@ type ComputeManagedSslCertificateConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The unique identifier for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_managed_ssl_certificate#certificate_id ComputeManagedSslCertificate#certificate_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_managed_ssl_certificate#certificate_id ComputeManagedSslCertificate#certificate_id}
 	CertificateId *float64 `field:"optional" json:"certificateId" yaml:"certificateId"`
 	// An optional description of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_managed_ssl_certificate#description ComputeManagedSslCertificate#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_managed_ssl_certificate#description ComputeManagedSslCertificate#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_managed_ssl_certificate#id ComputeManagedSslCertificate#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_managed_ssl_certificate#id ComputeManagedSslCertificate#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// managed block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_managed_ssl_certificate#managed ComputeManagedSslCertificate#managed}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_managed_ssl_certificate#managed ComputeManagedSslCertificate#managed}
 	Managed *ComputeManagedSslCertificateManaged `field:"optional" json:"managed" yaml:"managed"`
 	// Name of the resource.
 	//
@@ -49,19 +49,19 @@ type ComputeManagedSslCertificateConfig struct {
 	//
 	// These are in the same namespace as the managed SSL certificates.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_managed_ssl_certificate#name ComputeManagedSslCertificate#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_managed_ssl_certificate#name ComputeManagedSslCertificate#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_managed_ssl_certificate#project ComputeManagedSslCertificate#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_managed_ssl_certificate#project ComputeManagedSslCertificate#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_managed_ssl_certificate#timeouts ComputeManagedSslCertificate#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_managed_ssl_certificate#timeouts ComputeManagedSslCertificate#timeouts}
 	Timeouts *ComputeManagedSslCertificateTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Enum field whose value is always 'MANAGED' - used to signal to the API which type this is.
 	//
 	// Default value: "MANAGED" Possible values: ["MANAGED"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.78.0/docs/resources/compute_managed_ssl_certificate#type ComputeManagedSslCertificate#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_managed_ssl_certificate#type ComputeManagedSslCertificate#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 
