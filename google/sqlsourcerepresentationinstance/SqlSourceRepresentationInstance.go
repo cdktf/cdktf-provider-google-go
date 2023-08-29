@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package sqlsourcerepresentationinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/sqlsourcerepresentationinstance/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/sqlsourcerepresentationinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/sql_source_representation_instance google_sql_source_representation_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/sql_source_representation_instance google_sql_source_representation_instance}.
 type SqlSourceRepresentationInstance interface {
 	cdktf.TerraformResource
 	CaCertificate() *string
@@ -595,7 +598,7 @@ func (j *jsiiProxy_SqlSourceRepresentationInstance) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/sql_source_representation_instance google_sql_source_representation_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/sql_source_representation_instance google_sql_source_representation_instance} Resource.
 func NewSqlSourceRepresentationInstance(scope constructs.Construct, id *string, config *SqlSourceRepresentationInstanceConfig) SqlSourceRepresentationInstance {
 	_init_.Initialize()
 
@@ -613,7 +616,7 @@ func NewSqlSourceRepresentationInstance(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/sql_source_representation_instance google_sql_source_representation_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/sql_source_representation_instance google_sql_source_representation_instance} Resource.
 func NewSqlSourceRepresentationInstance_Override(s SqlSourceRepresentationInstance, scope constructs.Construct, id *string, config *SqlSourceRepresentationInstanceConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package organizationiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/organizationiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/organizationiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/organization_iam_member google_organization_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/organization_iam_member google_organization_iam_member}.
 type OrganizationIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +393,7 @@ func (j *jsiiProxy_OrganizationIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/organization_iam_member google_organization_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/organization_iam_member google_organization_iam_member} Resource.
 func NewOrganizationIamMember(scope constructs.Construct, id *string, config *OrganizationIamMemberConfig) OrganizationIamMember {
 	_init_.Initialize()
 
@@ -408,7 +411,7 @@ func NewOrganizationIamMember(scope constructs.Construct, id *string, config *Or
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/organization_iam_member google_organization_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/organization_iam_member google_organization_iam_member} Resource.
 func NewOrganizationIamMember_Override(o OrganizationIamMember, scope constructs.Construct, id *string, config *OrganizationIamMemberConfig) {
 	_init_.Initialize()
 

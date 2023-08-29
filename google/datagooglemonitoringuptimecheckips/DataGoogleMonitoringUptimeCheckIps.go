@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglemonitoringuptimecheckips
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagooglemonitoringuptimecheckips/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglemonitoringuptimecheckips/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/monitoring_uptime_check_ips google_monitoring_uptime_check_ips}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/monitoring_uptime_check_ips google_monitoring_uptime_check_ips}.
 type DataGoogleMonitoringUptimeCheckIps interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -269,7 +272,7 @@ func (j *jsiiProxy_DataGoogleMonitoringUptimeCheckIps) UptimeCheckIps() DataGoog
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/monitoring_uptime_check_ips google_monitoring_uptime_check_ips} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/monitoring_uptime_check_ips google_monitoring_uptime_check_ips} Data Source.
 func NewDataGoogleMonitoringUptimeCheckIps(scope constructs.Construct, id *string, config *DataGoogleMonitoringUptimeCheckIpsConfig) DataGoogleMonitoringUptimeCheckIps {
 	_init_.Initialize()
 
@@ -287,7 +290,7 @@ func NewDataGoogleMonitoringUptimeCheckIps(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/monitoring_uptime_check_ips google_monitoring_uptime_check_ips} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/monitoring_uptime_check_ips google_monitoring_uptime_check_ips} Data Source.
 func NewDataGoogleMonitoringUptimeCheckIps_Override(d DataGoogleMonitoringUptimeCheckIps, scope constructs.Construct, id *string, config *DataGoogleMonitoringUptimeCheckIpsConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglestorageobjectsignedurl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagooglestorageobjectsignedurl/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglestorageobjectsignedurl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/storage_object_signed_url google_storage_object_signed_url}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/storage_object_signed_url google_storage_object_signed_url}.
 type DataGoogleStorageObjectSignedUrl interface {
 	cdktf.TerraformDataSource
 	Bucket() *string
@@ -459,7 +462,7 @@ func (j *jsiiProxy_DataGoogleStorageObjectSignedUrl) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/storage_object_signed_url google_storage_object_signed_url} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/storage_object_signed_url google_storage_object_signed_url} Data Source.
 func NewDataGoogleStorageObjectSignedUrl(scope constructs.Construct, id *string, config *DataGoogleStorageObjectSignedUrlConfig) DataGoogleStorageObjectSignedUrl {
 	_init_.Initialize()
 
@@ -477,7 +480,7 @@ func NewDataGoogleStorageObjectSignedUrl(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/storage_object_signed_url google_storage_object_signed_url} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/storage_object_signed_url google_storage_object_signed_url} Data Source.
 func NewDataGoogleStorageObjectSignedUrl_Override(d DataGoogleStorageObjectSignedUrl, scope constructs.Construct, id *string, config *DataGoogleStorageObjectSignedUrlConfig) {
 	_init_.Initialize()
 

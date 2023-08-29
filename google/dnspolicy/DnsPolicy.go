@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dnspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/dnspolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/dnspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dns_policy google_dns_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dns_policy google_dns_policy}.
 type DnsPolicy interface {
 	cdktf.TerraformResource
 	AlternativeNameServerConfig() DnsPolicyAlternativeNameServerConfigOutputReference
@@ -477,7 +480,7 @@ func (j *jsiiProxy_DnsPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dns_policy google_dns_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dns_policy google_dns_policy} Resource.
 func NewDnsPolicy(scope constructs.Construct, id *string, config *DnsPolicyConfig) DnsPolicy {
 	_init_.Initialize()
 
@@ -495,7 +498,7 @@ func NewDnsPolicy(scope constructs.Construct, id *string, config *DnsPolicyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dns_policy google_dns_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dns_policy google_dns_policy} Resource.
 func NewDnsPolicy_Override(d DnsPolicy, scope constructs.Construct, id *string, config *DnsPolicyConfig) {
 	_init_.Initialize()
 

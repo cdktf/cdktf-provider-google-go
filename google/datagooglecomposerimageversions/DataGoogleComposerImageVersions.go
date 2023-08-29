@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglecomposerimageversions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagooglecomposerimageversions/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglecomposerimageversions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/composer_image_versions google_composer_image_versions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/composer_image_versions google_composer_image_versions}.
 type DataGoogleComposerImageVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -317,7 +320,7 @@ func (j *jsiiProxy_DataGoogleComposerImageVersions) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/composer_image_versions google_composer_image_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/composer_image_versions google_composer_image_versions} Data Source.
 func NewDataGoogleComposerImageVersions(scope constructs.Construct, id *string, config *DataGoogleComposerImageVersionsConfig) DataGoogleComposerImageVersions {
 	_init_.Initialize()
 
@@ -335,7 +338,7 @@ func NewDataGoogleComposerImageVersions(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/composer_image_versions google_composer_image_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/composer_image_versions google_composer_image_versions} Data Source.
 func NewDataGoogleComposerImageVersions_Override(d DataGoogleComposerImageVersions, scope constructs.Construct, id *string, config *DataGoogleComposerImageVersionsConfig) {
 	_init_.Initialize()
 

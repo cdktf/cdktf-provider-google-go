@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglestorageprojectserviceaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagooglestorageprojectserviceaccount/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglestorageprojectserviceaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/storage_project_service_account google_storage_project_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/storage_project_service_account google_storage_project_service_account}.
 type DataGoogleStorageProjectServiceAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -328,7 +331,7 @@ func (j *jsiiProxy_DataGoogleStorageProjectServiceAccount) UserProjectInput() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/storage_project_service_account google_storage_project_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/storage_project_service_account google_storage_project_service_account} Data Source.
 func NewDataGoogleStorageProjectServiceAccount(scope constructs.Construct, id *string, config *DataGoogleStorageProjectServiceAccountConfig) DataGoogleStorageProjectServiceAccount {
 	_init_.Initialize()
 
@@ -346,7 +349,7 @@ func NewDataGoogleStorageProjectServiceAccount(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/storage_project_service_account google_storage_project_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/storage_project_service_account google_storage_project_service_account} Data Source.
 func NewDataGoogleStorageProjectServiceAccount_Override(d DataGoogleStorageProjectServiceAccount, scope constructs.Construct, id *string, config *DataGoogleStorageProjectServiceAccountConfig) {
 	_init_.Initialize()
 

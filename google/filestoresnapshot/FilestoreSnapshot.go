@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package filestoresnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/filestoresnapshot/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/filestoresnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/filestore_snapshot google_filestore_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/filestore_snapshot google_filestore_snapshot}.
 type FilestoreSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -484,7 +487,7 @@ func (j *jsiiProxy_FilestoreSnapshot) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/filestore_snapshot google_filestore_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/filestore_snapshot google_filestore_snapshot} Resource.
 func NewFilestoreSnapshot(scope constructs.Construct, id *string, config *FilestoreSnapshotConfig) FilestoreSnapshot {
 	_init_.Initialize()
 
@@ -502,7 +505,7 @@ func NewFilestoreSnapshot(scope constructs.Construct, id *string, config *Filest
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/filestore_snapshot google_filestore_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/filestore_snapshot google_filestore_snapshot} Resource.
 func NewFilestoreSnapshot_Override(f FilestoreSnapshot, scope constructs.Construct, id *string, config *FilestoreSnapshotConfig) {
 	_init_.Initialize()
 

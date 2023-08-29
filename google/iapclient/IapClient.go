@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package iapclient
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/iapclient/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/iapclient/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/iap_client google_iap_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/iap_client google_iap_client}.
 type IapClient interface {
 	cdktf.TerraformResource
 	Brand() *string
@@ -378,7 +381,7 @@ func (j *jsiiProxy_IapClient) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/iap_client google_iap_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/iap_client google_iap_client} Resource.
 func NewIapClient(scope constructs.Construct, id *string, config *IapClientConfig) IapClient {
 	_init_.Initialize()
 
@@ -396,7 +399,7 @@ func NewIapClient(scope constructs.Construct, id *string, config *IapClientConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/iap_client google_iap_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/iap_client google_iap_client} Resource.
 func NewIapClient_Override(i IapClient, scope constructs.Construct, id *string, config *IapClientConfig) {
 	_init_.Initialize()
 

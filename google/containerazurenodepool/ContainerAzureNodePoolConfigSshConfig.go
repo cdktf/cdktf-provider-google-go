@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package containerazurenodepool
 
 
@@ -6,7 +9,7 @@ type ContainerAzureNodePoolConfigSshConfig struct {
 	//
 	// This accepts the authorized_keys file format used in OpenSSH according to the sshd(8) manual page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_azure_node_pool#authorized_key ContainerAzureNodePool#authorized_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/container_azure_node_pool#authorized_key ContainerAzureNodePool#authorized_key}
 	AuthorizedKey *string `field:"required" json:"authorizedKey" yaml:"authorizedKey"`
 }
 

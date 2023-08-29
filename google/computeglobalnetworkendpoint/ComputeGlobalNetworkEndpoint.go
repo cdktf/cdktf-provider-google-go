@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package computeglobalnetworkendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/computeglobalnetworkendpoint/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/computeglobalnetworkendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_global_network_endpoint google_compute_global_network_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_global_network_endpoint google_compute_global_network_endpoint}.
 type ComputeGlobalNetworkEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +431,7 @@ func (j *jsiiProxy_ComputeGlobalNetworkEndpoint) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_global_network_endpoint google_compute_global_network_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_global_network_endpoint google_compute_global_network_endpoint} Resource.
 func NewComputeGlobalNetworkEndpoint(scope constructs.Construct, id *string, config *ComputeGlobalNetworkEndpointConfig) ComputeGlobalNetworkEndpoint {
 	_init_.Initialize()
 
@@ -446,7 +449,7 @@ func NewComputeGlobalNetworkEndpoint(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_global_network_endpoint google_compute_global_network_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_global_network_endpoint google_compute_global_network_endpoint} Resource.
 func NewComputeGlobalNetworkEndpoint_Override(c ComputeGlobalNetworkEndpoint, scope constructs.Construct, id *string, config *ComputeGlobalNetworkEndpointConfig) {
 	_init_.Initialize()
 

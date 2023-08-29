@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataprocjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/dataprocjob/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/dataprocjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_job google_dataproc_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dataproc_job google_dataproc_job}.
 type DataprocJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -678,7 +681,7 @@ func (j *jsiiProxy_DataprocJob) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_job google_dataproc_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dataproc_job google_dataproc_job} Resource.
 func NewDataprocJob(scope constructs.Construct, id *string, config *DataprocJobConfig) DataprocJob {
 	_init_.Initialize()
 
@@ -696,7 +699,7 @@ func NewDataprocJob(scope constructs.Construct, id *string, config *DataprocJobC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_job google_dataproc_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dataproc_job google_dataproc_job} Resource.
 func NewDataprocJob_Override(d DataprocJob, scope constructs.Construct, id *string, config *DataprocJobConfig) {
 	_init_.Initialize()
 

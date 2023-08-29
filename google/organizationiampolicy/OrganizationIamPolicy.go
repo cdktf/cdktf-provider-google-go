@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package organizationiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/organizationiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/organizationiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/organization_iam_policy google_organization_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/organization_iam_policy google_organization_iam_policy}.
 type OrganizationIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +346,7 @@ func (j *jsiiProxy_OrganizationIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/organization_iam_policy google_organization_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/organization_iam_policy google_organization_iam_policy} Resource.
 func NewOrganizationIamPolicy(scope constructs.Construct, id *string, config *OrganizationIamPolicyConfig) OrganizationIamPolicy {
 	_init_.Initialize()
 
@@ -361,7 +364,7 @@ func NewOrganizationIamPolicy(scope constructs.Construct, id *string, config *Or
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/organization_iam_policy google_organization_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/organization_iam_policy google_organization_iam_policy} Resource.
 func NewOrganizationIamPolicy_Override(o OrganizationIamPolicy, scope constructs.Construct, id *string, config *OrganizationIamPolicyConfig) {
 	_init_.Initialize()
 

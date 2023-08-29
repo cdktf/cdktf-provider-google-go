@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datastoreindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datastoreindex/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datastoreindex/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/datastore_index google_datastore_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/datastore_index google_datastore_index}.
 type DatastoreIndex interface {
 	cdktf.TerraformResource
 	Ancestor() *string
@@ -416,7 +419,7 @@ func (j *jsiiProxy_DatastoreIndex) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/datastore_index google_datastore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/datastore_index google_datastore_index} Resource.
 func NewDatastoreIndex(scope constructs.Construct, id *string, config *DatastoreIndexConfig) DatastoreIndex {
 	_init_.Initialize()
 
@@ -434,7 +437,7 @@ func NewDatastoreIndex(scope constructs.Construct, id *string, config *Datastore
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/datastore_index google_datastore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/datastore_index google_datastore_index} Resource.
 func NewDatastoreIndex_Override(d DatastoreIndex, scope constructs.Construct, id *string, config *DatastoreIndexConfig) {
 	_init_.Initialize()
 

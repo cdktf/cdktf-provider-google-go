@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build !no_runtime_type_checking
 
 package dataplexdatascan
@@ -85,6 +88,39 @@ func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) validateGetSt
 func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) validatePutExcludeFieldsParameters(value *DataplexDatascanDataProfileSpecExcludeFields) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) validatePutIncludeFieldsParameters(value *DataplexDatascanDataProfileSpecIncludeFields) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) validatePutPostScanActionsParameters(value *DataplexDatascanDataProfileSpecPostScanActions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

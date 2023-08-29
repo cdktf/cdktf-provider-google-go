@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package bigquerydatapolicydatapolicyiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/bigquerydatapolicydatapolicyiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/bigquerydatapolicydatapolicyiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_datapolicy_data_policy_iam_policy google_bigquery_datapolicy_data_policy_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/bigquery_datapolicy_data_policy_iam_policy google_bigquery_datapolicy_data_policy_iam_policy}.
 type BigqueryDatapolicyDataPolicyIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +394,7 @@ func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamPolicy) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_datapolicy_data_policy_iam_policy google_bigquery_datapolicy_data_policy_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/bigquery_datapolicy_data_policy_iam_policy google_bigquery_datapolicy_data_policy_iam_policy} Resource.
 func NewBigqueryDatapolicyDataPolicyIamPolicy(scope constructs.Construct, id *string, config *BigqueryDatapolicyDataPolicyIamPolicyConfig) BigqueryDatapolicyDataPolicyIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +412,7 @@ func NewBigqueryDatapolicyDataPolicyIamPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_datapolicy_data_policy_iam_policy google_bigquery_datapolicy_data_policy_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/bigquery_datapolicy_data_policy_iam_policy google_bigquery_datapolicy_data_policy_iam_policy} Resource.
 func NewBigqueryDatapolicyDataPolicyIamPolicy_Override(b BigqueryDatapolicyDataPolicyIamPolicy, scope constructs.Construct, id *string, config *BigqueryDatapolicyDataPolicyIamPolicyConfig) {
 	_init_.Initialize()
 

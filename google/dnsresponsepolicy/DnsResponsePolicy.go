@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dnsresponsepolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/dnsresponsepolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/dnsresponsepolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dns_response_policy google_dns_response_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dns_response_policy google_dns_response_policy}.
 type DnsResponsePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -429,7 +432,7 @@ func (j *jsiiProxy_DnsResponsePolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dns_response_policy google_dns_response_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dns_response_policy google_dns_response_policy} Resource.
 func NewDnsResponsePolicy(scope constructs.Construct, id *string, config *DnsResponsePolicyConfig) DnsResponsePolicy {
 	_init_.Initialize()
 
@@ -447,7 +450,7 @@ func NewDnsResponsePolicy(scope constructs.Construct, id *string, config *DnsRes
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dns_response_policy google_dns_response_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dns_response_policy google_dns_response_policy} Resource.
 func NewDnsResponsePolicy_Override(d DnsResponsePolicy, scope constructs.Construct, id *string, config *DnsResponsePolicyConfig) {
 	_init_.Initialize()
 

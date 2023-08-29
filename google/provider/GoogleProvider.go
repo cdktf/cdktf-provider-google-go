@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/provider/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -242,6 +245,9 @@ type GoogleProvider interface {
 	GkeHubCustomEndpoint() *string
 	SetGkeHubCustomEndpoint(val *string)
 	GkeHubCustomEndpointInput() *string
+	GkehubFeatureCustomEndpoint() *string
+	SetGkehubFeatureCustomEndpoint(val *string)
+	GkehubFeatureCustomEndpointInput() *string
 	HealthcareCustomEndpoint() *string
 	SetHealthcareCustomEndpoint(val *string)
 	HealthcareCustomEndpointInput() *string
@@ -498,6 +504,7 @@ type GoogleProvider interface {
 	ResetGkeBackupCustomEndpoint()
 	ResetGkeHub2CustomEndpoint()
 	ResetGkeHubCustomEndpoint()
+	ResetGkehubFeatureCustomEndpoint()
 	ResetHealthcareCustomEndpoint()
 	ResetIam2CustomEndpoint()
 	ResetIamBetaCustomEndpoint()
@@ -2091,6 +2098,26 @@ func (j *jsiiProxy_GoogleProvider) GkeHubCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) GkehubFeatureCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkehubFeatureCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) GkehubFeatureCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkehubFeatureCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) HealthcareCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3252,7 +3279,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3270,7 +3297,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -3872,6 +3899,14 @@ func (j *jsiiProxy_GoogleProvider)SetGkeHubCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"gkeHubCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetGkehubFeatureCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"gkehubFeatureCustomEndpoint",
 		val,
 	)
 }
@@ -5013,6 +5048,14 @@ func (g *jsiiProxy_GoogleProvider) ResetGkeHubCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetGkeHubCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetGkehubFeatureCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGkehubFeatureCustomEndpoint",
 		nil, // no parameters
 	)
 }

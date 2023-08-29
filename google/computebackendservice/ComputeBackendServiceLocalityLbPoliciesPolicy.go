@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package computebackendservice
 
 
@@ -40,7 +43,7 @@ type ComputeBackendServiceLocalityLbPoliciesPolicy struct {
 	//         build times and host selection times. For more information about
 	//         Maglev, refer to https://ai.google/research/pubs/pub44824 Possible values: ["ROUND_ROBIN", "LEAST_REQUEST", "RING_HASH", "RANDOM", "ORIGINAL_DESTINATION", "MAGLEV"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

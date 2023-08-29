@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package provider
 
 import (
@@ -164,6 +167,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "gkeHub2CustomEndpointInput", GoGetter: "GkeHub2CustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "gkeHubCustomEndpoint", GoGetter: "GkeHubCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "gkeHubCustomEndpointInput", GoGetter: "GkeHubCustomEndpointInput"},
+			_jsii_.MemberProperty{JsiiProperty: "gkehubFeatureCustomEndpoint", GoGetter: "GkehubFeatureCustomEndpoint"},
+			_jsii_.MemberProperty{JsiiProperty: "gkehubFeatureCustomEndpointInput", GoGetter: "GkehubFeatureCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "healthcareCustomEndpoint", GoGetter: "HealthcareCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "healthcareCustomEndpointInput", GoGetter: "HealthcareCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "iam2CustomEndpoint", GoGetter: "Iam2CustomEndpoint"},
@@ -310,6 +315,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetGkeBackupCustomEndpoint", GoMethod: "ResetGkeBackupCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGkeHub2CustomEndpoint", GoMethod: "ResetGkeHub2CustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGkeHubCustomEndpoint", GoMethod: "ResetGkeHubCustomEndpoint"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGkehubFeatureCustomEndpoint", GoMethod: "ResetGkehubFeatureCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHealthcareCustomEndpoint", GoMethod: "ResetHealthcareCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIam2CustomEndpoint", GoMethod: "ResetIam2CustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIamBetaCustomEndpoint", GoMethod: "ResetIamBetaCustomEndpoint"},

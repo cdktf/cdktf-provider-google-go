@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package activedirectorydomaintrust
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/activedirectorydomaintrust/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/activedirectorydomaintrust/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust}.
 type ActiveDirectoryDomainTrust interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -496,7 +499,7 @@ func (j *jsiiProxy_ActiveDirectoryDomainTrust) TrustTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust} Resource.
 func NewActiveDirectoryDomainTrust(scope constructs.Construct, id *string, config *ActiveDirectoryDomainTrustConfig) ActiveDirectoryDomainTrust {
 	_init_.Initialize()
 
@@ -514,7 +517,7 @@ func NewActiveDirectoryDomainTrust(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust} Resource.
 func NewActiveDirectoryDomainTrust_Override(a ActiveDirectoryDomainTrust, scope constructs.Construct, id *string, config *ActiveDirectoryDomainTrustConfig) {
 	_init_.Initialize()
 

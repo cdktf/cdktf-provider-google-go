@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataprocmetastoreservice
 
 
@@ -8,7 +11,7 @@ type DataprocMetastoreServiceNetworkConfigConsumers struct {
 	// There must be at least one IP address available in the subnet's primary range. The subnet is specified in the following form:
 	// 'projects/{projectNumber}/regions/{region_id}/subnetworks/{subnetwork_id}
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_metastore_service#subnetwork DataprocMetastoreService#subnetwork}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dataproc_metastore_service#subnetwork DataprocMetastoreService#subnetwork}
 	Subnetwork *string `field:"required" json:"subnetwork" yaml:"subnetwork"`
 }
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package iamaccessboundarypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/iamaccessboundarypolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/iamaccessboundarypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/iam_access_boundary_policy google_iam_access_boundary_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/iam_access_boundary_policy google_iam_access_boundary_policy}.
 type IamAccessBoundaryPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +417,7 @@ func (j *jsiiProxy_IamAccessBoundaryPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/iam_access_boundary_policy google_iam_access_boundary_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/iam_access_boundary_policy google_iam_access_boundary_policy} Resource.
 func NewIamAccessBoundaryPolicy(scope constructs.Construct, id *string, config *IamAccessBoundaryPolicyConfig) IamAccessBoundaryPolicy {
 	_init_.Initialize()
 
@@ -432,7 +435,7 @@ func NewIamAccessBoundaryPolicy(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/iam_access_boundary_policy google_iam_access_boundary_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/iam_access_boundary_policy google_iam_access_boundary_policy} Resource.
 func NewIamAccessBoundaryPolicy_Override(i IamAccessBoundaryPolicy, scope constructs.Construct, id *string, config *IamAccessBoundaryPolicyConfig) {
 	_init_.Initialize()
 

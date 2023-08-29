@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package clouddeploytarget
@@ -61,6 +64,10 @@ func (c *jsiiProxy_ClouddeployTarget) validatePutExecutionConfigsParameters(valu
 }
 
 func (c *jsiiProxy_ClouddeployTarget) validatePutGkeParameters(value *ClouddeployTargetGke) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployTarget) validatePutMultiTargetParameters(value *ClouddeployTargetMultiTarget) error {
 	return nil
 }
 

@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package sqldatabaseinstance
@@ -45,6 +48,10 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) va
 }
 
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) validatePutAuthorizedNetworksParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) validatePutPscConfigParameters(value interface{}) error {
 	return nil
 }
 

@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataplexdatascan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/dataplexdatascan/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/dataplexdatascan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -25,10 +28,16 @@ type DataplexDatascanDataProfileSpecOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExcludeFields() DataplexDatascanDataProfileSpecExcludeFieldsOutputReference
+	ExcludeFieldsInput() *DataplexDatascanDataProfileSpecExcludeFields
 	// Experimental.
 	Fqn() *string
+	IncludeFields() DataplexDatascanDataProfileSpecIncludeFieldsOutputReference
+	IncludeFieldsInput() *DataplexDatascanDataProfileSpecIncludeFields
 	InternalValue() *DataplexDatascanDataProfileSpec
 	SetInternalValue(val *DataplexDatascanDataProfileSpec)
+	PostScanActions() DataplexDatascanDataProfileSpecPostScanActionsOutputReference
+	PostScanActionsInput() *DataplexDatascanDataProfileSpecPostScanActions
 	RowFilter() *string
 	SetRowFilter(val *string)
 	RowFilterInput() *string
@@ -67,6 +76,12 @@ type DataplexDatascanDataProfileSpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutExcludeFields(value *DataplexDatascanDataProfileSpecExcludeFields)
+	PutIncludeFields(value *DataplexDatascanDataProfileSpecIncludeFields)
+	PutPostScanActions(value *DataplexDatascanDataProfileSpecPostScanActions)
+	ResetExcludeFields()
+	ResetIncludeFields()
+	ResetPostScanActions()
 	ResetRowFilter()
 	ResetSamplingPercent()
 	// Produce the Token's value at resolution time.
@@ -114,6 +129,26 @@ func (j *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) CreationStack
 	return returns
 }
 
+func (j *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) ExcludeFields() DataplexDatascanDataProfileSpecExcludeFieldsOutputReference {
+	var returns DataplexDatascanDataProfileSpecExcludeFieldsOutputReference
+	_jsii_.Get(
+		j,
+		"excludeFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) ExcludeFieldsInput() *DataplexDatascanDataProfileSpecExcludeFields {
+	var returns *DataplexDatascanDataProfileSpecExcludeFields
+	_jsii_.Get(
+		j,
+		"excludeFieldsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -124,11 +159,51 @@ func (j *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) Fqn() *string
 	return returns
 }
 
+func (j *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) IncludeFields() DataplexDatascanDataProfileSpecIncludeFieldsOutputReference {
+	var returns DataplexDatascanDataProfileSpecIncludeFieldsOutputReference
+	_jsii_.Get(
+		j,
+		"includeFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) IncludeFieldsInput() *DataplexDatascanDataProfileSpecIncludeFields {
+	var returns *DataplexDatascanDataProfileSpecIncludeFields
+	_jsii_.Get(
+		j,
+		"includeFieldsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) InternalValue() *DataplexDatascanDataProfileSpec {
 	var returns *DataplexDatascanDataProfileSpec
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) PostScanActions() DataplexDatascanDataProfileSpecPostScanActionsOutputReference {
+	var returns DataplexDatascanDataProfileSpecPostScanActionsOutputReference
+	_jsii_.Get(
+		j,
+		"postScanActions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) PostScanActionsInput() *DataplexDatascanDataProfileSpecPostScanActions {
+	var returns *DataplexDatascanDataProfileSpecPostScanActions
+	_jsii_.Get(
+		j,
+		"postScanActionsInput",
 		&returns,
 	)
 	return returns
@@ -483,6 +558,63 @@ func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) PutExcludeFields(value *DataplexDatascanDataProfileSpecExcludeFields) {
+	if err := d.validatePutExcludeFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putExcludeFields",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) PutIncludeFields(value *DataplexDatascanDataProfileSpecIncludeFields) {
+	if err := d.validatePutIncludeFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putIncludeFields",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) PutPostScanActions(value *DataplexDatascanDataProfileSpecPostScanActions) {
+	if err := d.validatePutPostScanActionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPostScanActions",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) ResetExcludeFields() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExcludeFields",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) ResetIncludeFields() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncludeFields",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) ResetPostScanActions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPostScanActions",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataplexDatascanDataProfileSpecOutputReference) ResetRowFilter() {

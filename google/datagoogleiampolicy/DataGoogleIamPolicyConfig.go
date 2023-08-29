@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagoogleiampolicy
 
 import (
@@ -21,13 +24,13 @@ type DataGoogleIamPolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// audit_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/iam_policy#audit_config DataGoogleIamPolicy#audit_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/iam_policy#audit_config DataGoogleIamPolicy#audit_config}
 	AuditConfig interface{} `field:"optional" json:"auditConfig" yaml:"auditConfig"`
 	// binding block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/iam_policy#binding DataGoogleIamPolicy#binding}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/iam_policy#binding DataGoogleIamPolicy#binding}
 	Binding interface{} `field:"optional" json:"binding" yaml:"binding"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/iam_policy#id DataGoogleIamPolicy#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/iam_policy#id DataGoogleIamPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

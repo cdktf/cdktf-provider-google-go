@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package dataplexdatascan
@@ -92,6 +95,10 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validateSetDimensionParameters(val *string) error {
 	return nil
 }
@@ -101,6 +108,10 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validate
 }
 
 func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }
 

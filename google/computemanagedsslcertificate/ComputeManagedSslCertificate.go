@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package computemanagedsslcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/computemanagedsslcertificate/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/computemanagedsslcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_managed_ssl_certificate google_compute_managed_ssl_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_managed_ssl_certificate google_compute_managed_ssl_certificate}.
 type ComputeManagedSslCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -498,7 +501,7 @@ func (j *jsiiProxy_ComputeManagedSslCertificate) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_managed_ssl_certificate google_compute_managed_ssl_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_managed_ssl_certificate google_compute_managed_ssl_certificate} Resource.
 func NewComputeManagedSslCertificate(scope constructs.Construct, id *string, config *ComputeManagedSslCertificateConfig) ComputeManagedSslCertificate {
 	_init_.Initialize()
 
@@ -516,7 +519,7 @@ func NewComputeManagedSslCertificate(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_managed_ssl_certificate google_compute_managed_ssl_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_managed_ssl_certificate google_compute_managed_ssl_certificate} Resource.
 func NewComputeManagedSslCertificate_Override(c ComputeManagedSslCertificate, scope constructs.Construct, id *string, config *ComputeManagedSslCertificateConfig) {
 	_init_.Initialize()
 

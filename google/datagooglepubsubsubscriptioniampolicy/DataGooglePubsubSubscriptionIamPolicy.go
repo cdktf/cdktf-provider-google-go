@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglepubsubsubscriptioniampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagooglepubsubsubscriptioniampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglepubsubsubscriptioniampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy}.
 type DataGooglePubsubSubscriptionIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -327,7 +330,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionIamPolicy) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy} Data Source.
 func NewDataGooglePubsubSubscriptionIamPolicy(scope constructs.Construct, id *string, config *DataGooglePubsubSubscriptionIamPolicyConfig) DataGooglePubsubSubscriptionIamPolicy {
 	_init_.Initialize()
 
@@ -345,7 +348,7 @@ func NewDataGooglePubsubSubscriptionIamPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy} Data Source.
 func NewDataGooglePubsubSubscriptionIamPolicy_Override(d DataGooglePubsubSubscriptionIamPolicy, scope constructs.Construct, id *string, config *DataGooglePubsubSubscriptionIamPolicyConfig) {
 	_init_.Initialize()
 

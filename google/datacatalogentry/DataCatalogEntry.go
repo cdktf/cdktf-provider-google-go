@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datacatalogentry
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datacatalogentry/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datacatalogentry/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_catalog_entry google_data_catalog_entry}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/data_catalog_entry google_data_catalog_entry}.
 type DataCatalogEntry interface {
 	cdktf.TerraformResource
 	BigqueryDateShardedSpec() DataCatalogEntryBigqueryDateShardedSpecList
@@ -592,7 +595,7 @@ func (j *jsiiProxy_DataCatalogEntry) UserSpecifiedTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_catalog_entry google_data_catalog_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/data_catalog_entry google_data_catalog_entry} Resource.
 func NewDataCatalogEntry(scope constructs.Construct, id *string, config *DataCatalogEntryConfig) DataCatalogEntry {
 	_init_.Initialize()
 
@@ -610,7 +613,7 @@ func NewDataCatalogEntry(scope constructs.Construct, id *string, config *DataCat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_catalog_entry google_data_catalog_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/data_catalog_entry google_data_catalog_entry} Resource.
 func NewDataCatalogEntry_Override(d DataCatalogEntry, scope constructs.Construct, id *string, config *DataCatalogEntryConfig) {
 	_init_.Initialize()
 

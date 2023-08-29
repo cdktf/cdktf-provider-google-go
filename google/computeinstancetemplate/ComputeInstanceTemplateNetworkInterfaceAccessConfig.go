@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package computeinstancetemplate
 
 
@@ -6,13 +9,13 @@ type ComputeInstanceTemplateNetworkInterfaceAccessConfig struct {
 	//
 	// If not given, one will be generated.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_instance_template#nat_ip ComputeInstanceTemplate#nat_ip}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_instance_template#nat_ip ComputeInstanceTemplate#nat_ip}
 	NatIp *string `field:"optional" json:"natIp" yaml:"natIp"`
 	// The networking tier used for configuring this instance template.
 	//
 	// This field can take the following values: PREMIUM, STANDARD, FIXED_STANDARD. If this field is not specified, it is assumed to be PREMIUM.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_instance_template#network_tier ComputeInstanceTemplate#network_tier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_instance_template#network_tier ComputeInstanceTemplate#network_tier}
 	NetworkTier *string `field:"optional" json:"networkTier" yaml:"networkTier"`
 }
 

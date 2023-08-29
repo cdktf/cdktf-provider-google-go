@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package cloudfunctions2functioniampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/cloudfunctions2functioniampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/cloudfunctions2functioniampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloudfunctions2_function_iam_policy google_cloudfunctions2_function_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/cloudfunctions2_function_iam_policy google_cloudfunctions2_function_iam_policy}.
 type Cloudfunctions2FunctionIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +394,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionIamPolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloudfunctions2_function_iam_policy google_cloudfunctions2_function_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/cloudfunctions2_function_iam_policy google_cloudfunctions2_function_iam_policy} Resource.
 func NewCloudfunctions2FunctionIamPolicy(scope constructs.Construct, id *string, config *Cloudfunctions2FunctionIamPolicyConfig) Cloudfunctions2FunctionIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +412,7 @@ func NewCloudfunctions2FunctionIamPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloudfunctions2_function_iam_policy google_cloudfunctions2_function_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/cloudfunctions2_function_iam_policy google_cloudfunctions2_function_iam_policy} Resource.
 func NewCloudfunctions2FunctionIamPolicy_Override(c Cloudfunctions2FunctionIamPolicy, scope constructs.Construct, id *string, config *Cloudfunctions2FunctionIamPolicyConfig) {
 	_init_.Initialize()
 

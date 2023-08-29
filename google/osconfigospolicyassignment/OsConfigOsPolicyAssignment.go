@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package osconfigospolicyassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/osconfigospolicyassignment/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/osconfigospolicyassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/os_config_os_policy_assignment google_os_config_os_policy_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/os_config_os_policy_assignment google_os_config_os_policy_assignment}.
 type OsConfigOsPolicyAssignment interface {
 	cdktf.TerraformResource
 	Baseline() cdktf.IResolvable
@@ -585,7 +588,7 @@ func (j *jsiiProxy_OsConfigOsPolicyAssignment) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/os_config_os_policy_assignment google_os_config_os_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/os_config_os_policy_assignment google_os_config_os_policy_assignment} Resource.
 func NewOsConfigOsPolicyAssignment(scope constructs.Construct, id *string, config *OsConfigOsPolicyAssignmentConfig) OsConfigOsPolicyAssignment {
 	_init_.Initialize()
 
@@ -603,7 +606,7 @@ func NewOsConfigOsPolicyAssignment(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/os_config_os_policy_assignment google_os_config_os_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/os_config_os_policy_assignment google_os_config_os_policy_assignment} Resource.
 func NewOsConfigOsPolicyAssignment_Override(o OsConfigOsPolicyAssignment, scope constructs.Construct, id *string, config *OsConfigOsPolicyAssignmentConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package loggingbillingaccountsink
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/loggingbillingaccountsink/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/loggingbillingaccountsink/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_billing_account_sink google_logging_billing_account_sink}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/logging_billing_account_sink google_logging_billing_account_sink}.
 type LoggingBillingAccountSink interface {
 	cdktf.TerraformResource
 	BigqueryOptions() LoggingBillingAccountSinkBigqueryOptionsOutputReference
@@ -486,7 +489,7 @@ func (j *jsiiProxy_LoggingBillingAccountSink) WriterIdentity() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_billing_account_sink google_logging_billing_account_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/logging_billing_account_sink google_logging_billing_account_sink} Resource.
 func NewLoggingBillingAccountSink(scope constructs.Construct, id *string, config *LoggingBillingAccountSinkConfig) LoggingBillingAccountSink {
 	_init_.Initialize()
 
@@ -504,7 +507,7 @@ func NewLoggingBillingAccountSink(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_billing_account_sink google_logging_billing_account_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/logging_billing_account_sink google_logging_billing_account_sink} Resource.
 func NewLoggingBillingAccountSink_Override(l LoggingBillingAccountSink, scope constructs.Construct, id *string, config *LoggingBillingAccountSinkConfig) {
 	_init_.Initialize()
 

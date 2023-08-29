@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package containerazurecluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/containerazurecluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/containerazurecluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_azure_cluster google_container_azure_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/container_azure_cluster google_container_azure_cluster}.
 type ContainerAzureCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -702,7 +705,7 @@ func (j *jsiiProxy_ContainerAzureCluster) WorkloadIdentityConfig() ContainerAzur
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_azure_cluster google_container_azure_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/container_azure_cluster google_container_azure_cluster} Resource.
 func NewContainerAzureCluster(scope constructs.Construct, id *string, config *ContainerAzureClusterConfig) ContainerAzureCluster {
 	_init_.Initialize()
 
@@ -720,7 +723,7 @@ func NewContainerAzureCluster(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_azure_cluster google_container_azure_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/container_azure_cluster google_container_azure_cluster} Resource.
 func NewContainerAzureCluster_Override(c ContainerAzureCluster, scope constructs.Construct, id *string, config *ContainerAzureClusterConfig) {
 	_init_.Initialize()
 

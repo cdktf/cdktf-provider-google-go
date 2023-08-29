@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package vertexaitensorboard
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/vertexaitensorboard/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/vertexaitensorboard/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_tensorboard google_vertex_ai_tensorboard}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/vertex_ai_tensorboard google_vertex_ai_tensorboard}.
 type VertexAiTensorboard interface {
 	cdktf.TerraformResource
 	BlobStoragePathPrefix() *string
@@ -508,7 +511,7 @@ func (j *jsiiProxy_VertexAiTensorboard) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_tensorboard google_vertex_ai_tensorboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/vertex_ai_tensorboard google_vertex_ai_tensorboard} Resource.
 func NewVertexAiTensorboard(scope constructs.Construct, id *string, config *VertexAiTensorboardConfig) VertexAiTensorboard {
 	_init_.Initialize()
 
@@ -526,7 +529,7 @@ func NewVertexAiTensorboard(scope constructs.Construct, id *string, config *Vert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/vertex_ai_tensorboard google_vertex_ai_tensorboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/vertex_ai_tensorboard google_vertex_ai_tensorboard} Resource.
 func NewVertexAiTensorboard_Override(v VertexAiTensorboard, scope constructs.Construct, id *string, config *VertexAiTensorboardConfig) {
 	_init_.Initialize()
 

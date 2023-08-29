@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package privatecacertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/privatecacertificate/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/privatecacertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/privateca_certificate google_privateca_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/privateca_certificate google_privateca_certificate}.
 type PrivatecaCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -635,7 +638,7 @@ func (j *jsiiProxy_PrivatecaCertificate) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/privateca_certificate google_privateca_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/privateca_certificate google_privateca_certificate} Resource.
 func NewPrivatecaCertificate(scope constructs.Construct, id *string, config *PrivatecaCertificateConfig) PrivatecaCertificate {
 	_init_.Initialize()
 
@@ -653,7 +656,7 @@ func NewPrivatecaCertificate(scope constructs.Construct, id *string, config *Pri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/privateca_certificate google_privateca_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/privateca_certificate google_privateca_certificate} Resource.
 func NewPrivatecaCertificate_Override(p PrivatecaCertificate, scope constructs.Construct, id *string, config *PrivatecaCertificateConfig) {
 	_init_.Initialize()
 

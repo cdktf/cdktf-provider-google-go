@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglecloudfunctionsfunction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagooglecloudfunctionsfunction/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglecloudfunctionsfunction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function}.
 type DataGoogleCloudfunctionsFunction interface {
 	cdktf.TerraformDataSource
 	AvailableMemoryMb() *float64
@@ -637,7 +640,7 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunction) VpcConnectorEgressSettings(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function} Data Source.
 func NewDataGoogleCloudfunctionsFunction(scope constructs.Construct, id *string, config *DataGoogleCloudfunctionsFunctionConfig) DataGoogleCloudfunctionsFunction {
 	_init_.Initialize()
 
@@ -655,7 +658,7 @@ func NewDataGoogleCloudfunctionsFunction(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function} Data Source.
 func NewDataGoogleCloudfunctionsFunction_Override(d DataGoogleCloudfunctionsFunction, scope constructs.Construct, id *string, config *DataGoogleCloudfunctionsFunctionConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglesqldatabaseinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagooglesqldatabaseinstance/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglesqldatabaseinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/sql_database_instance google_sql_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/sql_database_instance google_sql_database_instance}.
 type DataGoogleSqlDatabaseInstance interface {
 	cdktf.TerraformDataSource
 	AvailableMaintenanceVersions() *[]*string
@@ -29,6 +32,7 @@ type DataGoogleSqlDatabaseInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DnsName() *string
 	EncryptionKeyName() *string
 	FirstIpAddress() *string
 	// Experimental.
@@ -63,6 +67,7 @@ type DataGoogleSqlDatabaseInstance interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	PscServiceAttachmentLink() *string
 	PublicIpAddress() *string
 	// Experimental.
 	RawOverrides() interface{}
@@ -210,6 +215,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) DnsName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsName",
 		&returns,
 	)
 	return returns
@@ -405,6 +420,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) Provider() cdktf.TerraformProv
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) PscServiceAttachmentLink() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pscServiceAttachmentLink",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) PublicIpAddress() *string {
 	var returns *string
 	_jsii_.Get(
@@ -536,7 +561,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstance) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source.
 func NewDataGoogleSqlDatabaseInstance(scope constructs.Construct, id *string, config *DataGoogleSqlDatabaseInstanceConfig) DataGoogleSqlDatabaseInstance {
 	_init_.Initialize()
 
@@ -554,7 +579,7 @@ func NewDataGoogleSqlDatabaseInstance(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/sql_database_instance google_sql_database_instance} Data Source.
 func NewDataGoogleSqlDatabaseInstance_Override(d DataGoogleSqlDatabaseInstance, scope constructs.Construct, id *string, config *DataGoogleSqlDatabaseInstanceConfig) {
 	_init_.Initialize()
 

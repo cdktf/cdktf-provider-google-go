@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataplexdatascan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/dataplexdatascan/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/dataplexdatascan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -29,6 +32,8 @@ type DataplexDatascanDataQualitySpecOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataplexDatascanDataQualitySpec
 	SetInternalValue(val *DataplexDatascanDataQualitySpec)
+	PostScanActions() DataplexDatascanDataQualitySpecPostScanActionsOutputReference
+	PostScanActionsInput() *DataplexDatascanDataQualitySpecPostScanActions
 	RowFilter() *string
 	SetRowFilter(val *string)
 	RowFilterInput() *string
@@ -69,7 +74,9 @@ type DataplexDatascanDataQualitySpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPostScanActions(value *DataplexDatascanDataQualitySpecPostScanActions)
 	PutRules(value interface{})
+	ResetPostScanActions()
 	ResetRowFilter()
 	ResetRules()
 	ResetSamplingPercent()
@@ -133,6 +140,26 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) InternalValue
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) PostScanActions() DataplexDatascanDataQualitySpecPostScanActionsOutputReference {
+	var returns DataplexDatascanDataQualitySpecPostScanActionsOutputReference
+	_jsii_.Get(
+		j,
+		"postScanActions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) PostScanActionsInput() *DataplexDatascanDataQualitySpecPostScanActions {
+	var returns *DataplexDatascanDataQualitySpecPostScanActions
+	_jsii_.Get(
+		j,
+		"postScanActionsInput",
 		&returns,
 	)
 	return returns
@@ -509,6 +536,17 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) Interpolation
 	return returns
 }
 
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) PutPostScanActions(value *DataplexDatascanDataQualitySpecPostScanActions) {
+	if err := d.validatePutPostScanActionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPostScanActions",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) PutRules(value interface{}) {
 	if err := d.validatePutRulesParameters(value); err != nil {
 		panic(err)
@@ -517,6 +555,14 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) PutRules(valu
 		d,
 		"putRules",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) ResetPostScanActions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPostScanActions",
+		nil, // no parameters
 	)
 }
 

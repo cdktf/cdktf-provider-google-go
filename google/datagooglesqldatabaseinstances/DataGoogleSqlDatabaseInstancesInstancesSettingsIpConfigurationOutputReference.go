@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglesqldatabaseinstances
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagooglesqldatabaseinstances/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglesqldatabaseinstances/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -34,6 +37,7 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationOutputReferen
 	SetInternalValue(val *DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfiguration)
 	Ipv4Enabled() cdktf.IResolvable
 	PrivateNetwork() *string
+	PscConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigList
 	RequireSsl() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
@@ -177,6 +181,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfiguratio
 	_jsii_.Get(
 		j,
 		"privateNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationOutputReference) PscConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigList {
+	var returns DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigList
+	_jsii_.Get(
+		j,
+		"pscConfig",
 		&returns,
 	)
 	return returns

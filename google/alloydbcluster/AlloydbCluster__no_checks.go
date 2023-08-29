@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package alloydbcluster
@@ -65,6 +68,14 @@ func (a *jsiiProxy_AlloydbCluster) validatePutEncryptionConfigParameters(value *
 }
 
 func (a *jsiiProxy_AlloydbCluster) validatePutInitialUserParameters(value *AlloydbClusterInitialUser) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbCluster) validatePutRestoreBackupSourceParameters(value *AlloydbClusterRestoreBackupSource) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbCluster) validatePutRestoreContinuousBackupSourceParameters(value *AlloydbClusterRestoreContinuousBackupSource) error {
 	return nil
 }
 

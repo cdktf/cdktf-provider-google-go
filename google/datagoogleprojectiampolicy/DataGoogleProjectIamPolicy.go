@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagoogleprojectiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagoogleprojectiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagoogleprojectiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/project_iam_policy google_project_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/project_iam_policy google_project_iam_policy}.
 type DataGoogleProjectIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -303,7 +306,7 @@ func (j *jsiiProxy_DataGoogleProjectIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/project_iam_policy google_project_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/project_iam_policy google_project_iam_policy} Data Source.
 func NewDataGoogleProjectIamPolicy(scope constructs.Construct, id *string, config *DataGoogleProjectIamPolicyConfig) DataGoogleProjectIamPolicy {
 	_init_.Initialize()
 
@@ -321,7 +324,7 @@ func NewDataGoogleProjectIamPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/project_iam_policy google_project_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/project_iam_policy google_project_iam_policy} Data Source.
 func NewDataGoogleProjectIamPolicy_Override(d DataGoogleProjectIamPolicy, scope constructs.Construct, id *string, config *DataGoogleProjectIamPolicyConfig) {
 	_init_.Initialize()
 

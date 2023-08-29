@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package logginglinkeddataset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/logginglinkeddataset/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/logginglinkeddataset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_linked_dataset google_logging_linked_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/logging_linked_dataset google_logging_linked_dataset}.
 type LoggingLinkedDataset interface {
 	cdktf.TerraformResource
 	BigqueryDataset() LoggingLinkedDatasetBigqueryDatasetList
@@ -485,7 +488,7 @@ func (j *jsiiProxy_LoggingLinkedDataset) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_linked_dataset google_logging_linked_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/logging_linked_dataset google_logging_linked_dataset} Resource.
 func NewLoggingLinkedDataset(scope constructs.Construct, id *string, config *LoggingLinkedDatasetConfig) LoggingLinkedDataset {
 	_init_.Initialize()
 
@@ -503,7 +506,7 @@ func NewLoggingLinkedDataset(scope constructs.Construct, id *string, config *Log
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_linked_dataset google_logging_linked_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/logging_linked_dataset google_logging_linked_dataset} Resource.
 func NewLoggingLinkedDataset_Override(l LoggingLinkedDataset, scope constructs.Construct, id *string, config *LoggingLinkedDatasetConfig) {
 	_init_.Initialize()
 

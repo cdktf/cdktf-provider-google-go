@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package computeregiondiskiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/computeregiondiskiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/computeregiondiskiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_disk_iam_policy google_compute_region_disk_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_region_disk_iam_policy google_compute_region_disk_iam_policy}.
 type ComputeRegionDiskIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +394,7 @@ func (j *jsiiProxy_ComputeRegionDiskIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_disk_iam_policy google_compute_region_disk_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_region_disk_iam_policy google_compute_region_disk_iam_policy} Resource.
 func NewComputeRegionDiskIamPolicy(scope constructs.Construct, id *string, config *ComputeRegionDiskIamPolicyConfig) ComputeRegionDiskIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +412,7 @@ func NewComputeRegionDiskIamPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_disk_iam_policy google_compute_region_disk_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_region_disk_iam_policy google_compute_region_disk_iam_policy} Resource.
 func NewComputeRegionDiskIamPolicy_Override(c ComputeRegionDiskIamPolicy, scope constructs.Construct, id *string, config *ComputeRegionDiskIamPolicyConfig) {
 	_init_.Initialize()
 

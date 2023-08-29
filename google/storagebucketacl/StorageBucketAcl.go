@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package storagebucketacl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/storagebucketacl/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/storagebucketacl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/storage_bucket_acl google_storage_bucket_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/storage_bucket_acl google_storage_bucket_acl}.
 type StorageBucketAcl interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -381,7 +384,7 @@ func (j *jsiiProxy_StorageBucketAcl) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/storage_bucket_acl google_storage_bucket_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/storage_bucket_acl google_storage_bucket_acl} Resource.
 func NewStorageBucketAcl(scope constructs.Construct, id *string, config *StorageBucketAclConfig) StorageBucketAcl {
 	_init_.Initialize()
 
@@ -399,7 +402,7 @@ func NewStorageBucketAcl(scope constructs.Construct, id *string, config *Storage
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/storage_bucket_acl google_storage_bucket_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/storage_bucket_acl google_storage_bucket_acl} Resource.
 func NewStorageBucketAcl_Override(s StorageBucketAcl, scope constructs.Construct, id *string, config *StorageBucketAclConfig) {
 	_init_.Initialize()
 

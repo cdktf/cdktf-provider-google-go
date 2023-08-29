@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataprocjobiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/dataprocjobiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/dataprocjobiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_job_iam_member google_dataproc_job_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dataproc_job_iam_member google_dataproc_job_iam_member}.
 type DataprocJobIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +441,7 @@ func (j *jsiiProxy_DataprocJobIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_job_iam_member google_dataproc_job_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dataproc_job_iam_member google_dataproc_job_iam_member} Resource.
 func NewDataprocJobIamMember(scope constructs.Construct, id *string, config *DataprocJobIamMemberConfig) DataprocJobIamMember {
 	_init_.Initialize()
 
@@ -456,7 +459,7 @@ func NewDataprocJobIamMember(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataproc_job_iam_member google_dataproc_job_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dataproc_job_iam_member google_dataproc_job_iam_member} Resource.
 func NewDataprocJobIamMember_Override(d DataprocJobIamMember, scope constructs.Construct, id *string, config *DataprocJobIamMemberConfig) {
 	_init_.Initialize()
 

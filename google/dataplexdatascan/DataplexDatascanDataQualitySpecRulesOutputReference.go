@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataplexdatascan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/dataplexdatascan/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/dataplexdatascan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -28,6 +31,9 @@ type DataplexDatascanDataQualitySpecRulesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	Dimension() *string
 	SetDimension(val *string)
 	DimensionInput() *string
@@ -38,6 +44,9 @@ type DataplexDatascanDataQualitySpecRulesOutputReference interface {
 	IgnoreNullInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	NonNullExpectation() DataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference
 	NonNullExpectationInput() *DataplexDatascanDataQualitySpecRulesNonNullExpectation
 	RangeExpectation() DataplexDatascanDataQualitySpecRulesRangeExpectationOutputReference
@@ -98,7 +107,9 @@ type DataplexDatascanDataQualitySpecRulesOutputReference interface {
 	PutTableConditionExpectation(value *DataplexDatascanDataQualitySpecRulesTableConditionExpectation)
 	PutUniquenessExpectation(value *DataplexDatascanDataQualitySpecRulesUniquenessExpectation)
 	ResetColumn()
+	ResetDescription()
 	ResetIgnoreNull()
+	ResetName()
 	ResetNonNullExpectation()
 	ResetRangeExpectation()
 	ResetRegexExpectation()
@@ -173,6 +184,26 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) Creation
 	return returns
 }
 
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) Dimension() *string {
 	var returns *string
 	_jsii_.Get(
@@ -228,6 +259,26 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
 		&returns,
 	)
 	return returns
@@ -494,6 +545,17 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference)SetComple
 	)
 }
 
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference)SetDimension(val *string) {
 	if err := j.validateSetDimensionParameters(val); err != nil {
 		panic(err)
@@ -523,6 +585,17 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference)SetIntern
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -842,10 +915,26 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) ResetCol
 	)
 }
 
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) ResetDescription() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) ResetIgnoreNull() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetIgnoreNull",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetName",
 		nil, // no parameters
 	)
 }

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglehealthcareconsentstoreiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagooglehealthcareconsentstoreiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglehealthcareconsentstoreiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy}.
 type DataGoogleHealthcareConsentStoreIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -326,7 +329,7 @@ func (j *jsiiProxy_DataGoogleHealthcareConsentStoreIamPolicy) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy} Data Source.
 func NewDataGoogleHealthcareConsentStoreIamPolicy(scope constructs.Construct, id *string, config *DataGoogleHealthcareConsentStoreIamPolicyConfig) DataGoogleHealthcareConsentStoreIamPolicy {
 	_init_.Initialize()
 
@@ -344,7 +347,7 @@ func NewDataGoogleHealthcareConsentStoreIamPolicy(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy} Data Source.
 func NewDataGoogleHealthcareConsentStoreIamPolicy_Override(d DataGoogleHealthcareConsentStoreIamPolicy, scope constructs.Construct, id *string, config *DataGoogleHealthcareConsentStoreIamPolicyConfig) {
 	_init_.Initialize()
 

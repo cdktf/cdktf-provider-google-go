@@ -1,15 +1,19 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglecontainercluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagooglecontainercluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglecontainercluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type DataGoogleContainerClusterIpAllocationPolicyOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalPodRangesConfig() DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigList
 	ClusterIpv4CidrBlock() *string
 	ClusterSecondaryRangeName() *string
 	// the index of the complex object in a list.
@@ -80,6 +84,16 @@ type DataGoogleContainerClusterIpAllocationPolicyOutputReference interface {
 // The jsii proxy struct for DataGoogleContainerClusterIpAllocationPolicyOutputReference
 type jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) AdditionalPodRangesConfig() DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigList {
+	var returns DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigList
+	_jsii_.Get(
+		j,
+		"additionalPodRangesConfig",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyOutputReference) ClusterIpv4CidrBlock() *string {

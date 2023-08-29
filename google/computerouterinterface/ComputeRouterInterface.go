@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package computerouterinterface
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/computerouterinterface/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/computerouterinterface/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_router_interface google_compute_router_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_router_interface google_compute_router_interface}.
 type ComputeRouterInterface interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -548,7 +551,7 @@ func (j *jsiiProxy_ComputeRouterInterface) VpnTunnelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_router_interface google_compute_router_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_router_interface google_compute_router_interface} Resource.
 func NewComputeRouterInterface(scope constructs.Construct, id *string, config *ComputeRouterInterfaceConfig) ComputeRouterInterface {
 	_init_.Initialize()
 
@@ -566,7 +569,7 @@ func NewComputeRouterInterface(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_router_interface google_compute_router_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_router_interface google_compute_router_interface} Resource.
 func NewComputeRouterInterface_Override(c ComputeRouterInterface, scope constructs.Construct, id *string, config *ComputeRouterInterfaceConfig) {
 	_init_.Initialize()
 

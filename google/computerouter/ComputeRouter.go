@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package computerouter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/computerouter/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/computerouter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_router google_compute_router}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_router google_compute_router}.
 type ComputeRouter interface {
 	cdktf.TerraformResource
 	Bgp() ComputeRouterBgpOutputReference
@@ -498,7 +501,7 @@ func (j *jsiiProxy_ComputeRouter) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_router google_compute_router} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_router google_compute_router} Resource.
 func NewComputeRouter(scope constructs.Construct, id *string, config *ComputeRouterConfig) ComputeRouter {
 	_init_.Initialize()
 
@@ -516,7 +519,7 @@ func NewComputeRouter(scope constructs.Construct, id *string, config *ComputeRou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_router google_compute_router} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_router google_compute_router} Resource.
 func NewComputeRouter_Override(c ComputeRouter, scope constructs.Construct, id *string, config *ComputeRouterConfig) {
 	_init_.Initialize()
 

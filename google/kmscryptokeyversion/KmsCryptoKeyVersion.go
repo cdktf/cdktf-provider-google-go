@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package kmscryptokeyversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/kmscryptokeyversion/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/kmscryptokeyversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version}.
 type KmsCryptoKeyVersion interface {
 	cdktf.TerraformResource
 	Algorithm() *string
@@ -412,7 +415,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersion) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version} Resource.
 func NewKmsCryptoKeyVersion(scope constructs.Construct, id *string, config *KmsCryptoKeyVersionConfig) KmsCryptoKeyVersion {
 	_init_.Initialize()
 
@@ -430,7 +433,7 @@ func NewKmsCryptoKeyVersion(scope constructs.Construct, id *string, config *KmsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version} Resource.
 func NewKmsCryptoKeyVersion_Override(k KmsCryptoKeyVersion, scope constructs.Construct, id *string, config *KmsCryptoKeyVersionConfig) {
 	_init_.Initialize()
 

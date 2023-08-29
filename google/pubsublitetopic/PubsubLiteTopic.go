@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package pubsublitetopic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/pubsublitetopic/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/pubsublitetopic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/pubsub_lite_topic google_pubsub_lite_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/pubsub_lite_topic google_pubsub_lite_topic}.
 type PubsubLiteTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -477,7 +480,7 @@ func (j *jsiiProxy_PubsubLiteTopic) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/pubsub_lite_topic google_pubsub_lite_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/pubsub_lite_topic google_pubsub_lite_topic} Resource.
 func NewPubsubLiteTopic(scope constructs.Construct, id *string, config *PubsubLiteTopicConfig) PubsubLiteTopic {
 	_init_.Initialize()
 
@@ -495,7 +498,7 @@ func NewPubsubLiteTopic(scope constructs.Construct, id *string, config *PubsubLi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/pubsub_lite_topic google_pubsub_lite_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/pubsub_lite_topic google_pubsub_lite_topic} Resource.
 func NewPubsubLiteTopic_Override(p PubsubLiteTopic, scope constructs.Construct, id *string, config *PubsubLiteTopicConfig) {
 	_init_.Initialize()
 

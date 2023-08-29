@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package organizationpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/organizationpolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/organizationpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/organization_policy google_organization_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/organization_policy google_organization_policy}.
 type OrganizationPolicy interface {
 	cdktf.TerraformResource
 	BooleanPolicy() OrganizationPolicyBooleanPolicyOutputReference
@@ -474,7 +477,7 @@ func (j *jsiiProxy_OrganizationPolicy) VersionInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/organization_policy google_organization_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/organization_policy google_organization_policy} Resource.
 func NewOrganizationPolicy(scope constructs.Construct, id *string, config *OrganizationPolicyConfig) OrganizationPolicy {
 	_init_.Initialize()
 
@@ -492,7 +495,7 @@ func NewOrganizationPolicy(scope constructs.Construct, id *string, config *Organ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/organization_policy google_organization_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/organization_policy google_organization_policy} Resource.
 func NewOrganizationPolicy_Override(o OrganizationPolicy, scope constructs.Construct, id *string, config *OrganizationPolicyConfig) {
 	_init_.Initialize()
 

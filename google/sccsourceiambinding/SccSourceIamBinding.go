@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package sccsourceiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/sccsourceiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/sccsourceiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/scc_source_iam_binding google_scc_source_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/scc_source_iam_binding google_scc_source_iam_binding}.
 type SccSourceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -413,7 +416,7 @@ func (j *jsiiProxy_SccSourceIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/scc_source_iam_binding google_scc_source_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/scc_source_iam_binding google_scc_source_iam_binding} Resource.
 func NewSccSourceIamBinding(scope constructs.Construct, id *string, config *SccSourceIamBindingConfig) SccSourceIamBinding {
 	_init_.Initialize()
 
@@ -431,7 +434,7 @@ func NewSccSourceIamBinding(scope constructs.Construct, id *string, config *SccS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/scc_source_iam_binding google_scc_source_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/scc_source_iam_binding google_scc_source_iam_binding} Resource.
 func NewSccSourceIamBinding_Override(s SccSourceIamBinding, scope constructs.Construct, id *string, config *SccSourceIamBindingConfig) {
 	_init_.Initialize()
 

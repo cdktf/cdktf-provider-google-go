@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package cloudtasksqueueiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/cloudtasksqueueiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/cloudtasksqueueiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_tasks_queue_iam_member google_cloud_tasks_queue_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/cloud_tasks_queue_iam_member google_cloud_tasks_queue_iam_member}.
 type CloudTasksQueueIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +441,7 @@ func (j *jsiiProxy_CloudTasksQueueIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_tasks_queue_iam_member google_cloud_tasks_queue_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/cloud_tasks_queue_iam_member google_cloud_tasks_queue_iam_member} Resource.
 func NewCloudTasksQueueIamMember(scope constructs.Construct, id *string, config *CloudTasksQueueIamMemberConfig) CloudTasksQueueIamMember {
 	_init_.Initialize()
 
@@ -456,7 +459,7 @@ func NewCloudTasksQueueIamMember(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/cloud_tasks_queue_iam_member google_cloud_tasks_queue_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/cloud_tasks_queue_iam_member google_cloud_tasks_queue_iam_member} Resource.
 func NewCloudTasksQueueIamMember_Override(c CloudTasksQueueIamMember, scope constructs.Construct, id *string, config *CloudTasksQueueIamMemberConfig) {
 	_init_.Initialize()
 

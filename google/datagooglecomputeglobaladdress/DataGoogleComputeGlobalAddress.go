@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglecomputeglobaladdress
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagooglecomputeglobaladdress/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglecomputeglobaladdress/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_global_address google_compute_global_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/compute_global_address google_compute_global_address}.
 type DataGoogleComputeGlobalAddress interface {
 	cdktf.TerraformDataSource
 	Address() *string
@@ -415,7 +418,7 @@ func (j *jsiiProxy_DataGoogleComputeGlobalAddress) Users() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_global_address google_compute_global_address} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/compute_global_address google_compute_global_address} Data Source.
 func NewDataGoogleComputeGlobalAddress(scope constructs.Construct, id *string, config *DataGoogleComputeGlobalAddressConfig) DataGoogleComputeGlobalAddress {
 	_init_.Initialize()
 
@@ -433,7 +436,7 @@ func NewDataGoogleComputeGlobalAddress(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_global_address google_compute_global_address} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/compute_global_address google_compute_global_address} Data Source.
 func NewDataGoogleComputeGlobalAddress_Override(d DataGoogleComputeGlobalAddress, scope constructs.Construct, id *string, config *DataGoogleComputeGlobalAddressConfig) {
 	_init_.Initialize()
 

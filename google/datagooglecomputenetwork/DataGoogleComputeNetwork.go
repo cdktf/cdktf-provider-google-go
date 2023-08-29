@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglecomputenetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagooglecomputenetwork/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglecomputenetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_network google_compute_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/compute_network google_compute_network}.
 type DataGoogleComputeNetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -349,7 +352,7 @@ func (j *jsiiProxy_DataGoogleComputeNetwork) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_network google_compute_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/compute_network google_compute_network} Data Source.
 func NewDataGoogleComputeNetwork(scope constructs.Construct, id *string, config *DataGoogleComputeNetworkConfig) DataGoogleComputeNetwork {
 	_init_.Initialize()
 
@@ -367,7 +370,7 @@ func NewDataGoogleComputeNetwork(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_network google_compute_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/compute_network google_compute_network} Data Source.
 func NewDataGoogleComputeNetwork_Override(d DataGoogleComputeNetwork, scope constructs.Construct, id *string, config *DataGoogleComputeNetworkConfig) {
 	_init_.Initialize()
 

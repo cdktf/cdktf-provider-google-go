@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package appengineservicesplittraffic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/appengineservicesplittraffic/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/appengineservicesplittraffic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/app_engine_service_split_traffic google_app_engine_service_split_traffic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/app_engine_service_split_traffic google_app_engine_service_split_traffic}.
 type AppEngineServiceSplitTraffic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +407,7 @@ func (j *jsiiProxy_AppEngineServiceSplitTraffic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/app_engine_service_split_traffic google_app_engine_service_split_traffic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/app_engine_service_split_traffic google_app_engine_service_split_traffic} Resource.
 func NewAppEngineServiceSplitTraffic(scope constructs.Construct, id *string, config *AppEngineServiceSplitTrafficConfig) AppEngineServiceSplitTraffic {
 	_init_.Initialize()
 
@@ -422,7 +425,7 @@ func NewAppEngineServiceSplitTraffic(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/app_engine_service_split_traffic google_app_engine_service_split_traffic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/app_engine_service_split_traffic google_app_engine_service_split_traffic} Resource.
 func NewAppEngineServiceSplitTraffic_Override(a AppEngineServiceSplitTraffic, scope constructs.Construct, id *string, config *AppEngineServiceSplitTrafficConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package orgpolicypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/orgpolicypolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/orgpolicypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/org_policy_policy google_org_policy_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/org_policy_policy google_org_policy_policy}.
 type OrgPolicyPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +383,7 @@ func (j *jsiiProxy_OrgPolicyPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/org_policy_policy google_org_policy_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/org_policy_policy google_org_policy_policy} Resource.
 func NewOrgPolicyPolicy(scope constructs.Construct, id *string, config *OrgPolicyPolicyConfig) OrgPolicyPolicy {
 	_init_.Initialize()
 
@@ -398,7 +401,7 @@ func NewOrgPolicyPolicy(scope constructs.Construct, id *string, config *OrgPolic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/org_policy_policy google_org_policy_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/org_policy_policy google_org_policy_policy} Resource.
 func NewOrgPolicyPolicy_Override(o OrgPolicyPolicy, scope constructs.Construct, id *string, config *OrgPolicyPolicyConfig) {
 	_init_.Initialize()
 

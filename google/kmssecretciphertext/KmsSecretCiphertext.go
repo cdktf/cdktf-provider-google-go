@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package kmssecretciphertext
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/kmssecretciphertext/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/kmssecretciphertext/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/kms_secret_ciphertext google_kms_secret_ciphertext}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/kms_secret_ciphertext google_kms_secret_ciphertext}.
 type KmsSecretCiphertext interface {
 	cdktf.TerraformResource
 	AdditionalAuthenticatedData() *string
@@ -391,7 +394,7 @@ func (j *jsiiProxy_KmsSecretCiphertext) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/kms_secret_ciphertext google_kms_secret_ciphertext} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/kms_secret_ciphertext google_kms_secret_ciphertext} Resource.
 func NewKmsSecretCiphertext(scope constructs.Construct, id *string, config *KmsSecretCiphertextConfig) KmsSecretCiphertext {
 	_init_.Initialize()
 
@@ -409,7 +412,7 @@ func NewKmsSecretCiphertext(scope constructs.Construct, id *string, config *KmsS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/kms_secret_ciphertext google_kms_secret_ciphertext} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/kms_secret_ciphertext google_kms_secret_ciphertext} Resource.
 func NewKmsSecretCiphertext_Override(k KmsSecretCiphertext, scope constructs.Construct, id *string, config *KmsSecretCiphertextConfig) {
 	_init_.Initialize()
 

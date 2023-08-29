@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package tagslocationtagbinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/tagslocationtagbinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/tagslocationtagbinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/tags_location_tag_binding google_tags_location_tag_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/tags_location_tag_binding google_tags_location_tag_binding}.
 type TagsLocationTagBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +394,7 @@ func (j *jsiiProxy_TagsLocationTagBinding) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/tags_location_tag_binding google_tags_location_tag_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/tags_location_tag_binding google_tags_location_tag_binding} Resource.
 func NewTagsLocationTagBinding(scope constructs.Construct, id *string, config *TagsLocationTagBindingConfig) TagsLocationTagBinding {
 	_init_.Initialize()
 
@@ -409,7 +412,7 @@ func NewTagsLocationTagBinding(scope constructs.Construct, id *string, config *T
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/tags_location_tag_binding google_tags_location_tag_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/tags_location_tag_binding google_tags_location_tag_binding} Resource.
 func NewTagsLocationTagBinding_Override(t TagsLocationTagBinding, scope constructs.Construct, id *string, config *TagsLocationTagBindingConfig) {
 	_init_.Initialize()
 

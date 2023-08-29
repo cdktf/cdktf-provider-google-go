@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package bigqueryconnectioniambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/bigqueryconnectioniambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/bigqueryconnectioniambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_connection_iam_binding google_bigquery_connection_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/bigquery_connection_iam_binding google_bigquery_connection_iam_binding}.
 type BigqueryConnectionIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +441,7 @@ func (j *jsiiProxy_BigqueryConnectionIamBinding) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_connection_iam_binding google_bigquery_connection_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/bigquery_connection_iam_binding google_bigquery_connection_iam_binding} Resource.
 func NewBigqueryConnectionIamBinding(scope constructs.Construct, id *string, config *BigqueryConnectionIamBindingConfig) BigqueryConnectionIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +459,7 @@ func NewBigqueryConnectionIamBinding(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/bigquery_connection_iam_binding google_bigquery_connection_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/bigquery_connection_iam_binding google_bigquery_connection_iam_binding} Resource.
 func NewBigqueryConnectionIamBinding_Override(b BigqueryConnectionIamBinding, scope constructs.Construct, id *string, config *BigqueryConnectionIamBindingConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datacatalogtaxonomyiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datacatalogtaxonomyiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datacatalogtaxonomyiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_catalog_taxonomy_iam_policy google_data_catalog_taxonomy_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/data_catalog_taxonomy_iam_policy google_data_catalog_taxonomy_iam_policy}.
 type DataCatalogTaxonomyIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +394,7 @@ func (j *jsiiProxy_DataCatalogTaxonomyIamPolicy) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_catalog_taxonomy_iam_policy google_data_catalog_taxonomy_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/data_catalog_taxonomy_iam_policy google_data_catalog_taxonomy_iam_policy} Resource.
 func NewDataCatalogTaxonomyIamPolicy(scope constructs.Construct, id *string, config *DataCatalogTaxonomyIamPolicyConfig) DataCatalogTaxonomyIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +412,7 @@ func NewDataCatalogTaxonomyIamPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/data_catalog_taxonomy_iam_policy google_data_catalog_taxonomy_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/data_catalog_taxonomy_iam_policy google_data_catalog_taxonomy_iam_policy} Resource.
 func NewDataCatalogTaxonomyIamPolicy_Override(d DataCatalogTaxonomyIamPolicy, scope constructs.Construct, id *string, config *DataCatalogTaxonomyIamPolicyConfig) {
 	_init_.Initialize()
 

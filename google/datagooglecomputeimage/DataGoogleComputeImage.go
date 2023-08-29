@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglecomputeimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagooglecomputeimage/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglecomputeimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_image google_compute_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/compute_image google_compute_image}.
 type DataGoogleComputeImage interface {
 	cdktf.TerraformDataSource
 	ArchiveSizeBytes() *float64
@@ -543,7 +546,7 @@ func (j *jsiiProxy_DataGoogleComputeImage) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_image google_compute_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/compute_image google_compute_image} Data Source.
 func NewDataGoogleComputeImage(scope constructs.Construct, id *string, config *DataGoogleComputeImageConfig) DataGoogleComputeImage {
 	_init_.Initialize()
 
@@ -561,7 +564,7 @@ func NewDataGoogleComputeImage(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_image google_compute_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/compute_image google_compute_image} Data Source.
 func NewDataGoogleComputeImage_Override(d DataGoogleComputeImage, scope constructs.Construct, id *string, config *DataGoogleComputeImageConfig) {
 	_init_.Initialize()
 

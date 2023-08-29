@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dnsresponsepolicyrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/dnsresponsepolicyrule/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/dnsresponsepolicyrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dns_response_policy_rule google_dns_response_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dns_response_policy_rule google_dns_response_policy_rule}.
 type DnsResponsePolicyRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +430,7 @@ func (j *jsiiProxy_DnsResponsePolicyRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dns_response_policy_rule google_dns_response_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dns_response_policy_rule google_dns_response_policy_rule} Resource.
 func NewDnsResponsePolicyRule(scope constructs.Construct, id *string, config *DnsResponsePolicyRuleConfig) DnsResponsePolicyRule {
 	_init_.Initialize()
 
@@ -445,7 +448,7 @@ func NewDnsResponsePolicyRule(scope constructs.Construct, id *string, config *Dn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dns_response_policy_rule google_dns_response_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dns_response_policy_rule google_dns_response_policy_rule} Resource.
 func NewDnsResponsePolicyRule_Override(d DnsResponsePolicyRule, scope constructs.Construct, id *string, config *DnsResponsePolicyRuleConfig) {
 	_init_.Initialize()
 

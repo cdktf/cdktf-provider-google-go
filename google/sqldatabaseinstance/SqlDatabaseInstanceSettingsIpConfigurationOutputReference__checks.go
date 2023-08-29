@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build !no_runtime_type_checking
 
 package sqldatabaseinstance
@@ -115,6 +118,37 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) va
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) validatePutPscConfigParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*SqlDatabaseInstanceSettingsIpConfigurationPscConfig:
+		value := value.(*[]*SqlDatabaseInstanceSettingsIpConfigurationPscConfig)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*SqlDatabaseInstanceSettingsIpConfigurationPscConfig:
+		value_ := value.([]*SqlDatabaseInstanceSettingsIpConfigurationPscConfig)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SqlDatabaseInstanceSettingsIpConfigurationPscConfig; received %#v (a %T)", value, value)
 		}
 	}
 

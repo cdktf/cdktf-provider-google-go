@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataplexlake
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/dataplexlake/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/dataplexlake/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataplex_lake google_dataplex_lake}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dataplex_lake google_dataplex_lake}.
 type DataplexLake interface {
 	cdktf.TerraformResource
 	AssetStatus() DataplexLakeAssetStatusList
@@ -553,7 +556,7 @@ func (j *jsiiProxy_DataplexLake) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataplex_lake google_dataplex_lake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dataplex_lake google_dataplex_lake} Resource.
 func NewDataplexLake(scope constructs.Construct, id *string, config *DataplexLakeConfig) DataplexLake {
 	_init_.Initialize()
 
@@ -571,7 +574,7 @@ func NewDataplexLake(scope constructs.Construct, id *string, config *DataplexLak
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/dataplex_lake google_dataplex_lake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/dataplex_lake google_dataplex_lake} Resource.
 func NewDataplexLake_Override(d DataplexLake, scope constructs.Construct, id *string, config *DataplexLakeConfig) {
 	_init_.Initialize()
 

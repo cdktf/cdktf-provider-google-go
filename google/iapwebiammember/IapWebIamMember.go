@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package iapwebiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/iapwebiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/iapwebiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/iap_web_iam_member google_iap_web_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/iap_web_iam_member google_iap_web_iam_member}.
 type IapWebIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +394,7 @@ func (j *jsiiProxy_IapWebIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/iap_web_iam_member google_iap_web_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/iap_web_iam_member google_iap_web_iam_member} Resource.
 func NewIapWebIamMember(scope constructs.Construct, id *string, config *IapWebIamMemberConfig) IapWebIamMember {
 	_init_.Initialize()
 
@@ -409,7 +412,7 @@ func NewIapWebIamMember(scope constructs.Construct, id *string, config *IapWebIa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/iap_web_iam_member google_iap_web_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/iap_web_iam_member google_iap_web_iam_member} Resource.
 func NewIapWebIamMember_Override(i IapWebIamMember, scope constructs.Construct, id *string, config *IapWebIamMemberConfig) {
 	_init_.Initialize()
 

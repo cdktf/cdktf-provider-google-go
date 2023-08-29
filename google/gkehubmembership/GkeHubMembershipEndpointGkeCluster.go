@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package gkehubmembership
 
 
@@ -9,7 +12,7 @@ type GkeHubMembershipEndpointGkeCluster struct {
 	// this can be '"//container.googleapis.com/${google_container_cluster.my-cluster.id}"' or
 	// 'google_container_cluster.my-cluster.id'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/gke_hub_membership#resource_link GkeHubMembership#resource_link}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/gke_hub_membership#resource_link GkeHubMembership#resource_link}
 	ResourceLink *string `field:"required" json:"resourceLink" yaml:"resourceLink"`
 }
 

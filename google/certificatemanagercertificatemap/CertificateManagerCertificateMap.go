@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package certificatemanagercertificatemap
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/certificatemanagercertificatemap/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/certificatemanagercertificatemap/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/certificate_manager_certificate_map google_certificate_manager_certificate_map}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/certificate_manager_certificate_map google_certificate_manager_certificate_map}.
 type CertificateManagerCertificateMap interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +441,7 @@ func (j *jsiiProxy_CertificateManagerCertificateMap) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/certificate_manager_certificate_map google_certificate_manager_certificate_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/certificate_manager_certificate_map google_certificate_manager_certificate_map} Resource.
 func NewCertificateManagerCertificateMap(scope constructs.Construct, id *string, config *CertificateManagerCertificateMapConfig) CertificateManagerCertificateMap {
 	_init_.Initialize()
 
@@ -456,7 +459,7 @@ func NewCertificateManagerCertificateMap(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/certificate_manager_certificate_map google_certificate_manager_certificate_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/certificate_manager_certificate_map google_certificate_manager_certificate_map} Resource.
 func NewCertificateManagerCertificateMap_Override(c CertificateManagerCertificateMap, scope constructs.Construct, id *string, config *CertificateManagerCertificateMapConfig) {
 	_init_.Initialize()
 

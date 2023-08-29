@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package alloydbcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/alloydbcluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/alloydbcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
 type AlloydbCluster interface {
 	cdktf.TerraformResource
 	AutomatedBackupPolicy() AlloydbClusterAutomatedBackupPolicyOutputReference
@@ -87,6 +90,10 @@ type AlloydbCluster interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RestoreBackupSource() AlloydbClusterRestoreBackupSourceOutputReference
+	RestoreBackupSourceInput() *AlloydbClusterRestoreBackupSource
+	RestoreContinuousBackupSource() AlloydbClusterRestoreContinuousBackupSourceOutputReference
+	RestoreContinuousBackupSourceInput() *AlloydbClusterRestoreContinuousBackupSource
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -125,6 +132,8 @@ type AlloydbCluster interface {
 	PutContinuousBackupConfig(value *AlloydbClusterContinuousBackupConfig)
 	PutEncryptionConfig(value *AlloydbClusterEncryptionConfig)
 	PutInitialUser(value *AlloydbClusterInitialUser)
+	PutRestoreBackupSource(value *AlloydbClusterRestoreBackupSource)
+	PutRestoreContinuousBackupSource(value *AlloydbClusterRestoreContinuousBackupSource)
 	PutTimeouts(value *AlloydbClusterTimeouts)
 	ResetAutomatedBackupPolicy()
 	ResetContinuousBackupConfig()
@@ -137,6 +146,8 @@ type AlloydbCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRestoreBackupSource()
+	ResetRestoreContinuousBackupSource()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -563,6 +574,46 @@ func (j *jsiiProxy_AlloydbCluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbCluster) RestoreBackupSource() AlloydbClusterRestoreBackupSourceOutputReference {
+	var returns AlloydbClusterRestoreBackupSourceOutputReference
+	_jsii_.Get(
+		j,
+		"restoreBackupSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) RestoreBackupSourceInput() *AlloydbClusterRestoreBackupSource {
+	var returns *AlloydbClusterRestoreBackupSource
+	_jsii_.Get(
+		j,
+		"restoreBackupSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) RestoreContinuousBackupSource() AlloydbClusterRestoreContinuousBackupSourceOutputReference {
+	var returns AlloydbClusterRestoreContinuousBackupSourceOutputReference
+	_jsii_.Get(
+		j,
+		"restoreContinuousBackupSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) RestoreContinuousBackupSourceInput() *AlloydbClusterRestoreContinuousBackupSource {
+	var returns *AlloydbClusterRestoreContinuousBackupSource
+	_jsii_.Get(
+		j,
+		"restoreContinuousBackupSourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbCluster) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -624,7 +675,7 @@ func (j *jsiiProxy_AlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbClusterConfig) AlloydbCluster {
 	_init_.Initialize()
 
@@ -642,7 +693,7 @@ func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster_Override(a AlloydbCluster, scope constructs.Construct, id *string, config *AlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1108,6 +1159,28 @@ func (a *jsiiProxy_AlloydbCluster) PutInitialUser(value *AlloydbClusterInitialUs
 	)
 }
 
+func (a *jsiiProxy_AlloydbCluster) PutRestoreBackupSource(value *AlloydbClusterRestoreBackupSource) {
+	if err := a.validatePutRestoreBackupSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putRestoreBackupSource",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) PutRestoreContinuousBackupSource(value *AlloydbClusterRestoreContinuousBackupSource) {
+	if err := a.validatePutRestoreContinuousBackupSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putRestoreContinuousBackupSource",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlloydbCluster) PutTimeouts(value *AlloydbClusterTimeouts) {
 	if err := a.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1187,6 +1260,22 @@ func (a *jsiiProxy_AlloydbCluster) ResetProject() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) ResetRestoreBackupSource() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRestoreBackupSource",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) ResetRestoreContinuousBackupSource() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRestoreContinuousBackupSource",
 		nil, // no parameters
 	)
 }

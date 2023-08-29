@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package containerazureclient
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/containerazureclient/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/containerazureclient/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_azure_client google_container_azure_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/container_azure_client google_container_azure_client}.
 type ContainerAzureClient interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -459,7 +462,7 @@ func (j *jsiiProxy_ContainerAzureClient) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_azure_client google_container_azure_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/container_azure_client google_container_azure_client} Resource.
 func NewContainerAzureClient(scope constructs.Construct, id *string, config *ContainerAzureClientConfig) ContainerAzureClient {
 	_init_.Initialize()
 
@@ -477,7 +480,7 @@ func NewContainerAzureClient(scope constructs.Construct, id *string, config *Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/container_azure_client google_container_azure_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/container_azure_client google_container_azure_client} Resource.
 func NewContainerAzureClient_Override(c ContainerAzureClient, scope constructs.Construct, id *string, config *ContainerAzureClientConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package apigeeenvkeystore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/apigeeenvkeystore/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/apigeeenvkeystore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/apigee_env_keystore google_apigee_env_keystore}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/apigee_env_keystore google_apigee_env_keystore}.
 type ApigeeEnvKeystore interface {
 	cdktf.TerraformResource
 	Aliases() *[]*string
@@ -368,7 +371,7 @@ func (j *jsiiProxy_ApigeeEnvKeystore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/apigee_env_keystore google_apigee_env_keystore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/apigee_env_keystore google_apigee_env_keystore} Resource.
 func NewApigeeEnvKeystore(scope constructs.Construct, id *string, config *ApigeeEnvKeystoreConfig) ApigeeEnvKeystore {
 	_init_.Initialize()
 
@@ -386,7 +389,7 @@ func NewApigeeEnvKeystore(scope constructs.Construct, id *string, config *Apigee
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/apigee_env_keystore google_apigee_env_keystore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/apigee_env_keystore google_apigee_env_keystore} Resource.
 func NewApigeeEnvKeystore_Override(a ApigeeEnvKeystore, scope constructs.Construct, id *string, config *ApigeeEnvKeystoreConfig) {
 	_init_.Initialize()
 

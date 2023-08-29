@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package sccsourceiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/sccsourceiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/sccsourceiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/scc_source_iam_policy google_scc_source_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/scc_source_iam_policy google_scc_source_iam_policy}.
 type SccSourceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -366,7 +369,7 @@ func (j *jsiiProxy_SccSourceIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/scc_source_iam_policy google_scc_source_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/scc_source_iam_policy google_scc_source_iam_policy} Resource.
 func NewSccSourceIamPolicy(scope constructs.Construct, id *string, config *SccSourceIamPolicyConfig) SccSourceIamPolicy {
 	_init_.Initialize()
 
@@ -384,7 +387,7 @@ func NewSccSourceIamPolicy(scope constructs.Construct, id *string, config *SccSo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/scc_source_iam_policy google_scc_source_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/scc_source_iam_policy google_scc_source_iam_policy} Resource.
 func NewSccSourceIamPolicy_Override(s SccSourceIamPolicy, scope constructs.Construct, id *string, config *SccSourceIamPolicyConfig) {
 	_init_.Initialize()
 

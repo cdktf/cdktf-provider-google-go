@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package loggingprojectbucketconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/loggingprojectbucketconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/loggingprojectbucketconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_project_bucket_config google_logging_project_bucket_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/logging_project_bucket_config google_logging_project_bucket_config}.
 type LoggingProjectBucketConfig interface {
 	cdktf.TerraformResource
 	BucketId() *string
@@ -497,7 +500,7 @@ func (j *jsiiProxy_LoggingProjectBucketConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_project_bucket_config google_logging_project_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/logging_project_bucket_config google_logging_project_bucket_config} Resource.
 func NewLoggingProjectBucketConfig(scope constructs.Construct, id *string, config *LoggingProjectBucketConfigConfig) LoggingProjectBucketConfig {
 	_init_.Initialize()
 
@@ -515,7 +518,7 @@ func NewLoggingProjectBucketConfig(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/logging_project_bucket_config google_logging_project_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/logging_project_bucket_config google_logging_project_bucket_config} Resource.
 func NewLoggingProjectBucketConfig_Override(l LoggingProjectBucketConfig, scope constructs.Construct, id *string, config *LoggingProjectBucketConfigConfig) {
 	_init_.Initialize()
 

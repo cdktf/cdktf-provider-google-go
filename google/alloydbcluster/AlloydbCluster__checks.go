@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build !no_runtime_type_checking
 
 package alloydbcluster
@@ -145,6 +148,28 @@ func (a *jsiiProxy_AlloydbCluster) validatePutEncryptionConfigParameters(value *
 }
 
 func (a *jsiiProxy_AlloydbCluster) validatePutInitialUserParameters(value *AlloydbClusterInitialUser) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbCluster) validatePutRestoreBackupSourceParameters(value *AlloydbClusterRestoreBackupSource) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbCluster) validatePutRestoreContinuousBackupSourceParameters(value *AlloydbClusterRestoreContinuousBackupSource) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

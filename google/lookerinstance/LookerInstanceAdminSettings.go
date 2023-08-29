@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package lookerinstance
 
 
@@ -9,7 +12,7 @@ type LookerInstanceAdminSettings struct {
 	// means the value provided will be considered as the entire list and not an amendment to the
 	// existing list of allowed email domains.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/looker_instance#allowed_email_domains LookerInstance#allowed_email_domains}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/looker_instance#allowed_email_domains LookerInstance#allowed_email_domains}
 	AllowedEmailDomains *[]*string `field:"optional" json:"allowedEmailDomains" yaml:"allowedEmailDomains"`
 }
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package sqlsslcert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/sqlsslcert/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/sqlsslcert/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/sql_ssl_cert google_sql_ssl_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/sql_ssl_cert google_sql_ssl_cert}.
 type SqlSslCert interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -457,7 +460,7 @@ func (j *jsiiProxy_SqlSslCert) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/sql_ssl_cert google_sql_ssl_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/sql_ssl_cert google_sql_ssl_cert} Resource.
 func NewSqlSslCert(scope constructs.Construct, id *string, config *SqlSslCertConfig) SqlSslCert {
 	_init_.Initialize()
 
@@ -475,7 +478,7 @@ func NewSqlSslCert(scope constructs.Construct, id *string, config *SqlSslCertCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/sql_ssl_cert google_sql_ssl_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/sql_ssl_cert google_sql_ssl_cert} Resource.
 func NewSqlSslCert_Override(s SqlSslCert, scope constructs.Construct, id *string, config *SqlSslCertConfig) {
 	_init_.Initialize()
 

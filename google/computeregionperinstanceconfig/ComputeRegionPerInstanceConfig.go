@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package computeregionperinstanceconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/computeregionperinstanceconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/computeregionperinstanceconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_per_instance_config google_compute_region_per_instance_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_region_per_instance_config google_compute_region_per_instance_config}.
 type ComputeRegionPerInstanceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -500,7 +503,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_per_instance_config google_compute_region_per_instance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_region_per_instance_config google_compute_region_per_instance_config} Resource.
 func NewComputeRegionPerInstanceConfig(scope constructs.Construct, id *string, config *ComputeRegionPerInstanceConfigConfig) ComputeRegionPerInstanceConfig {
 	_init_.Initialize()
 
@@ -518,7 +521,7 @@ func NewComputeRegionPerInstanceConfig(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_region_per_instance_config google_compute_region_per_instance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_region_per_instance_config google_compute_region_per_instance_config} Resource.
 func NewComputeRegionPerInstanceConfig_Override(c ComputeRegionPerInstanceConfig, scope constructs.Construct, id *string, config *ComputeRegionPerInstanceConfigConfig) {
 	_init_.Initialize()
 

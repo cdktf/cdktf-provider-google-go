@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package containercluster
@@ -41,6 +44,10 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validateGe
 }
 
 func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyOutputReference) validatePutAdditionalPodRangesConfigParameters(value *ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig) error {
 	return nil
 }
 

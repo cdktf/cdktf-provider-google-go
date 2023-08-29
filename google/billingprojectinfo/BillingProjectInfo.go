@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package billingprojectinfo
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/billingprojectinfo/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/billingprojectinfo/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/billing_project_info google_billing_project_info}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/billing_project_info google_billing_project_info}.
 type BillingProjectInfo interface {
 	cdktf.TerraformResource
 	BillingAccount() *string
@@ -357,7 +360,7 @@ func (j *jsiiProxy_BillingProjectInfo) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/billing_project_info google_billing_project_info} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/billing_project_info google_billing_project_info} Resource.
 func NewBillingProjectInfo(scope constructs.Construct, id *string, config *BillingProjectInfoConfig) BillingProjectInfo {
 	_init_.Initialize()
 
@@ -375,7 +378,7 @@ func NewBillingProjectInfo(scope constructs.Construct, id *string, config *Billi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/billing_project_info google_billing_project_info} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/billing_project_info google_billing_project_info} Resource.
 func NewBillingProjectInfo_Override(b BillingProjectInfo, scope constructs.Construct, id *string, config *BillingProjectInfoConfig) {
 	_init_.Initialize()
 

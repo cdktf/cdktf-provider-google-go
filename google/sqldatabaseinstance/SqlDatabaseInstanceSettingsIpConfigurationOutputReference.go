@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package sqldatabaseinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/sqldatabaseinstance/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/sqldatabaseinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -43,6 +46,8 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	PrivateNetwork() *string
 	SetPrivateNetwork(val *string)
 	PrivateNetworkInput() *string
+	PscConfig() SqlDatabaseInstanceSettingsIpConfigurationPscConfigList
+	PscConfigInput() interface{}
 	RequireSsl() interface{}
 	SetRequireSsl(val interface{})
 	RequireSslInput() interface{}
@@ -79,11 +84,13 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAuthorizedNetworks(value interface{})
+	PutPscConfig(value interface{})
 	ResetAllocatedIpRange()
 	ResetAuthorizedNetworks()
 	ResetEnablePrivatePathForGoogleCloudServices()
 	ResetIpv4Enabled()
 	ResetPrivateNetwork()
+	ResetPscConfig()
 	ResetRequireSsl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -245,6 +252,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Pr
 	_jsii_.Get(
 		j,
 		"privateNetworkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) PscConfig() SqlDatabaseInstanceSettingsIpConfigurationPscConfigList {
+	var returns SqlDatabaseInstanceSettingsIpConfigurationPscConfigList
+	_jsii_.Get(
+		j,
+		"pscConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) PscConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pscConfigInput",
 		&returns,
 	)
 	return returns
@@ -625,6 +652,17 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Pu
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) PutPscConfig(value interface{}) {
+	if err := s.validatePutPscConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putPscConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetAllocatedIpRange() {
 	_jsii_.InvokeVoid(
 		s,
@@ -661,6 +699,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Re
 	_jsii_.InvokeVoid(
 		s,
 		"resetPrivateNetwork",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetPscConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPscConfig",
 		nil, // no parameters
 	)
 }

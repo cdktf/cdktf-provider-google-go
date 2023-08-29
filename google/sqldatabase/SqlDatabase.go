@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package sqldatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/sqldatabase/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/sqldatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/sql_database google_sql_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/sql_database google_sql_database}.
 type SqlDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -463,7 +466,7 @@ func (j *jsiiProxy_SqlDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/sql_database google_sql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/sql_database google_sql_database} Resource.
 func NewSqlDatabase(scope constructs.Construct, id *string, config *SqlDatabaseConfig) SqlDatabase {
 	_init_.Initialize()
 
@@ -481,7 +484,7 @@ func NewSqlDatabase(scope constructs.Construct, id *string, config *SqlDatabaseC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/sql_database google_sql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/sql_database google_sql_database} Resource.
 func NewSqlDatabase_Override(s SqlDatabase, scope constructs.Construct, id *string, config *SqlDatabaseConfig) {
 	_init_.Initialize()
 

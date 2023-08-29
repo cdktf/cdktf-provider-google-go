@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package billingaccountiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/billingaccountiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/billingaccountiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/billing_account_iam_binding google_billing_account_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/billing_account_iam_binding google_billing_account_iam_binding}.
 type BillingAccountIamBinding interface {
 	cdktf.TerraformResource
 	BillingAccountId() *string
@@ -390,7 +393,7 @@ func (j *jsiiProxy_BillingAccountIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/billing_account_iam_binding google_billing_account_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/billing_account_iam_binding google_billing_account_iam_binding} Resource.
 func NewBillingAccountIamBinding(scope constructs.Construct, id *string, config *BillingAccountIamBindingConfig) BillingAccountIamBinding {
 	_init_.Initialize()
 
@@ -408,7 +411,7 @@ func NewBillingAccountIamBinding(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/billing_account_iam_binding google_billing_account_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/billing_account_iam_binding google_billing_account_iam_binding} Resource.
 func NewBillingAccountIamBinding_Override(b BillingAccountIamBinding, scope constructs.Construct, id *string, config *BillingAccountIamBindingConfig) {
 	_init_.Initialize()
 

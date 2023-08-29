@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglekmskeyring
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagooglekmskeyring/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglekmskeyring/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/kms_key_ring google_kms_key_ring}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/kms_key_ring google_kms_key_ring}.
 type DataGoogleKmsKeyRing interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -328,7 +331,7 @@ func (j *jsiiProxy_DataGoogleKmsKeyRing) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/kms_key_ring google_kms_key_ring} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/kms_key_ring google_kms_key_ring} Data Source.
 func NewDataGoogleKmsKeyRing(scope constructs.Construct, id *string, config *DataGoogleKmsKeyRingConfig) DataGoogleKmsKeyRing {
 	_init_.Initialize()
 
@@ -346,7 +349,7 @@ func NewDataGoogleKmsKeyRing(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/kms_key_ring google_kms_key_ring} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/kms_key_ring google_kms_key_ring} Data Source.
 func NewDataGoogleKmsKeyRing_Override(d DataGoogleKmsKeyRing, scope constructs.Construct, id *string, config *DataGoogleKmsKeyRingConfig) {
 	_init_.Initialize()
 

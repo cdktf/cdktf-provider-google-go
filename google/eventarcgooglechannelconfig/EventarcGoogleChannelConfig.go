@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package eventarcgooglechannelconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/eventarcgooglechannelconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/eventarcgooglechannelconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/eventarc_google_channel_config google_eventarc_google_channel_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/eventarc_google_channel_config google_eventarc_google_channel_config}.
 type EventarcGoogleChannelConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +418,7 @@ func (j *jsiiProxy_EventarcGoogleChannelConfig) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/eventarc_google_channel_config google_eventarc_google_channel_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/eventarc_google_channel_config google_eventarc_google_channel_config} Resource.
 func NewEventarcGoogleChannelConfig(scope constructs.Construct, id *string, config *EventarcGoogleChannelConfigConfig) EventarcGoogleChannelConfig {
 	_init_.Initialize()
 
@@ -433,7 +436,7 @@ func NewEventarcGoogleChannelConfig(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/eventarc_google_channel_config google_eventarc_google_channel_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/eventarc_google_channel_config google_eventarc_google_channel_config} Resource.
 func NewEventarcGoogleChannelConfig_Override(e EventarcGoogleChannelConfig, scope constructs.Construct, id *string, config *EventarcGoogleChannelConfigConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglecomputedefaultserviceaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagooglecomputedefaultserviceaccount/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglecomputedefaultserviceaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_default_service_account google_compute_default_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/compute_default_service_account google_compute_default_service_account}.
 type DataGoogleComputeDefaultServiceAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -326,7 +329,7 @@ func (j *jsiiProxy_DataGoogleComputeDefaultServiceAccount) UniqueId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_default_service_account google_compute_default_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/compute_default_service_account google_compute_default_service_account} Data Source.
 func NewDataGoogleComputeDefaultServiceAccount(scope constructs.Construct, id *string, config *DataGoogleComputeDefaultServiceAccountConfig) DataGoogleComputeDefaultServiceAccount {
 	_init_.Initialize()
 
@@ -344,7 +347,7 @@ func NewDataGoogleComputeDefaultServiceAccount(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_default_service_account google_compute_default_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/compute_default_service_account google_compute_default_service_account} Data Source.
 func NewDataGoogleComputeDefaultServiceAccount_Override(d DataGoogleComputeDefaultServiceAccount, scope constructs.Construct, id *string, config *DataGoogleComputeDefaultServiceAccountConfig) {
 	_init_.Initialize()
 

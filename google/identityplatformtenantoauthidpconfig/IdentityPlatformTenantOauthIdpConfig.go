@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package identityplatformtenantoauthidpconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/identityplatformtenantoauthidpconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/identityplatformtenantoauthidpconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/identity_platform_tenant_oauth_idp_config google_identity_platform_tenant_oauth_idp_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/identity_platform_tenant_oauth_idp_config google_identity_platform_tenant_oauth_idp_config}.
 type IdentityPlatformTenantOauthIdpConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -497,7 +500,7 @@ func (j *jsiiProxy_IdentityPlatformTenantOauthIdpConfig) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/identity_platform_tenant_oauth_idp_config google_identity_platform_tenant_oauth_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/identity_platform_tenant_oauth_idp_config google_identity_platform_tenant_oauth_idp_config} Resource.
 func NewIdentityPlatformTenantOauthIdpConfig(scope constructs.Construct, id *string, config *IdentityPlatformTenantOauthIdpConfigConfig) IdentityPlatformTenantOauthIdpConfig {
 	_init_.Initialize()
 
@@ -515,7 +518,7 @@ func NewIdentityPlatformTenantOauthIdpConfig(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/identity_platform_tenant_oauth_idp_config google_identity_platform_tenant_oauth_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/identity_platform_tenant_oauth_idp_config google_identity_platform_tenant_oauth_idp_config} Resource.
 func NewIdentityPlatformTenantOauthIdpConfig_Override(i IdentityPlatformTenantOauthIdpConfig, scope constructs.Construct, id *string, config *IdentityPlatformTenantOauthIdpConfigConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package computenetworkpeeringroutesconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/computenetworkpeeringroutesconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/computenetworkpeeringroutesconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_network_peering_routes_config google_compute_network_peering_routes_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_network_peering_routes_config google_compute_network_peering_routes_config}.
 type ComputeNetworkPeeringRoutesConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +429,7 @@ func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_network_peering_routes_config google_compute_network_peering_routes_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_network_peering_routes_config google_compute_network_peering_routes_config} Resource.
 func NewComputeNetworkPeeringRoutesConfig(scope constructs.Construct, id *string, config *ComputeNetworkPeeringRoutesConfigConfig) ComputeNetworkPeeringRoutesConfig {
 	_init_.Initialize()
 
@@ -444,7 +447,7 @@ func NewComputeNetworkPeeringRoutesConfig(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/resources/compute_network_peering_routes_config google_compute_network_peering_routes_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_network_peering_routes_config google_compute_network_peering_routes_config} Resource.
 func NewComputeNetworkPeeringRoutesConfig_Override(c ComputeNetworkPeeringRoutesConfig, scope constructs.Construct, id *string, config *ComputeNetworkPeeringRoutesConfigConfig) {
 	_init_.Initialize()
 

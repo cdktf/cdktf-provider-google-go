@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglecontainerattachedversions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagooglecontainerattachedversions/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglecontainerattachedversions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/container_attached_versions google_container_attached_versions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/container_attached_versions google_container_attached_versions}.
 type DataGoogleContainerAttachedVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -315,7 +318,7 @@ func (j *jsiiProxy_DataGoogleContainerAttachedVersions) ValidVersions() *[]*stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/container_attached_versions google_container_attached_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/container_attached_versions google_container_attached_versions} Data Source.
 func NewDataGoogleContainerAttachedVersions(scope constructs.Construct, id *string, config *DataGoogleContainerAttachedVersionsConfig) DataGoogleContainerAttachedVersions {
 	_init_.Initialize()
 
@@ -333,7 +336,7 @@ func NewDataGoogleContainerAttachedVersions(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/container_attached_versions google_container_attached_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/container_attached_versions google_container_attached_versions} Data Source.
 func NewDataGoogleContainerAttachedVersions_Override(d DataGoogleContainerAttachedVersions, scope constructs.Construct, id *string, config *DataGoogleContainerAttachedVersionsConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglecomputesnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v8/datagooglecomputesnapshot/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglecomputesnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_snapshot google_compute_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/compute_snapshot google_compute_snapshot}.
 type DataGoogleComputeSnapshot interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -519,7 +522,7 @@ func (j *jsiiProxy_DataGoogleComputeSnapshot) Zone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_snapshot google_compute_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/compute_snapshot google_compute_snapshot} Data Source.
 func NewDataGoogleComputeSnapshot(scope constructs.Construct, id *string, config *DataGoogleComputeSnapshotConfig) DataGoogleComputeSnapshot {
 	_init_.Initialize()
 
@@ -537,7 +540,7 @@ func NewDataGoogleComputeSnapshot(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.79.0/docs/data-sources/compute_snapshot google_compute_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/compute_snapshot google_compute_snapshot} Data Source.
 func NewDataGoogleComputeSnapshot_Override(d DataGoogleComputeSnapshot, scope constructs.Construct, id *string, config *DataGoogleComputeSnapshotConfig) {
 	_init_.Initialize()
 
