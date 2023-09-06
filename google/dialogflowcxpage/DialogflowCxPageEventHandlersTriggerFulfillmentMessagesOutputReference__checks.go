@@ -93,6 +93,61 @@ func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutput
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputReference) validatePutConversationSuccessParameters(value *DialogflowCxPageEventHandlersTriggerFulfillmentMessagesConversationSuccess) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputReference) validatePutLiveAgentHandoffParameters(value *DialogflowCxPageEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputReference) validatePutOutputAudioTextParameters(value *DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputAudioText) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputReference) validatePutPlayAudioParameters(value *DialogflowCxPageEventHandlersTriggerFulfillmentMessagesPlayAudio) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputReference) validatePutTelephonyTransferCallParameters(value *DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputReference) validatePutTextParameters(value *DialogflowCxPageEventHandlersTriggerFulfillmentMessagesText) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -107,6 +162,14 @@ func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutput
 func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputReference) validateSetChannelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -196,6 +259,14 @@ func (j *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutput
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DialogflowCxPageEventHandlersTriggerFulfillmentMessages; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputReference) validateSetPayloadParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -54,6 +54,9 @@ type GoogleProvider interface {
 	BeyondcorpCustomEndpoint() *string
 	SetBeyondcorpCustomEndpoint(val *string)
 	BeyondcorpCustomEndpointInput() *string
+	BiglakeCustomEndpoint() *string
+	SetBiglakeCustomEndpoint(val *string)
+	BiglakeCustomEndpointInput() *string
 	BigqueryAnalyticsHubCustomEndpoint() *string
 	SetBigqueryAnalyticsHubCustomEndpoint(val *string)
 	BigqueryAnalyticsHubCustomEndpointInput() *string
@@ -443,6 +446,7 @@ type GoogleProvider interface {
 	ResetAssuredWorkloadsCustomEndpoint()
 	ResetBatching()
 	ResetBeyondcorpCustomEndpoint()
+	ResetBiglakeCustomEndpoint()
 	ResetBigqueryAnalyticsHubCustomEndpoint()
 	ResetBigqueryConnectionCustomEndpoint()
 	ResetBigQueryCustomEndpoint()
@@ -833,6 +837,26 @@ func (j *jsiiProxy_GoogleProvider) BeyondcorpCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"beyondcorpCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) BiglakeCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"biglakeCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) BiglakeCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"biglakeCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3279,7 +3303,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3297,7 +3321,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -3411,6 +3435,14 @@ func (j *jsiiProxy_GoogleProvider)SetBeyondcorpCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"beyondcorpCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetBiglakeCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"biglakeCustomEndpoint",
 		val,
 	)
 }
@@ -4560,6 +4592,14 @@ func (g *jsiiProxy_GoogleProvider) ResetBeyondcorpCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetBeyondcorpCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetBiglakeCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBiglakeCustomEndpoint",
 		nil, // no parameters
 	)
 }

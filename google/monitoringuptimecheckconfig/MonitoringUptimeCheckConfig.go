@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/monitoring_uptime_check_config google_monitoring_uptime_check_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/monitoring_uptime_check_config google_monitoring_uptime_check_config}.
 type MonitoringUptimeCheckConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -82,6 +82,8 @@ type MonitoringUptimeCheckConfig interface {
 	SelectedRegions() *[]*string
 	SetSelectedRegions(val *[]*string)
 	SelectedRegionsInput() *[]*string
+	SyntheticMonitor() MonitoringUptimeCheckConfigSyntheticMonitorOutputReference
+	SyntheticMonitorInput() *MonitoringUptimeCheckConfigSyntheticMonitor
 	TcpCheck() MonitoringUptimeCheckConfigTcpCheckOutputReference
 	TcpCheckInput() *MonitoringUptimeCheckConfigTcpCheck
 	// Experimental.
@@ -125,6 +127,7 @@ type MonitoringUptimeCheckConfig interface {
 	PutHttpCheck(value *MonitoringUptimeCheckConfigHttpCheck)
 	PutMonitoredResource(value *MonitoringUptimeCheckConfigMonitoredResource)
 	PutResourceGroup(value *MonitoringUptimeCheckConfigResourceGroup)
+	PutSyntheticMonitor(value *MonitoringUptimeCheckConfigSyntheticMonitor)
 	PutTcpCheck(value *MonitoringUptimeCheckConfigTcpCheck)
 	PutTimeouts(value *MonitoringUptimeCheckConfigTimeouts)
 	ResetCheckerType()
@@ -139,6 +142,7 @@ type MonitoringUptimeCheckConfig interface {
 	ResetProject()
 	ResetResourceGroup()
 	ResetSelectedRegions()
+	ResetSyntheticMonitor()
 	ResetTcpCheck()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -496,6 +500,26 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) SelectedRegionsInput() *[]*strin
 	return returns
 }
 
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SyntheticMonitor() MonitoringUptimeCheckConfigSyntheticMonitorOutputReference {
+	var returns MonitoringUptimeCheckConfigSyntheticMonitorOutputReference
+	_jsii_.Get(
+		j,
+		"syntheticMonitor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) SyntheticMonitorInput() *MonitoringUptimeCheckConfigSyntheticMonitor {
+	var returns *MonitoringUptimeCheckConfigSyntheticMonitor
+	_jsii_.Get(
+		j,
+		"syntheticMonitorInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitoringUptimeCheckConfig) TcpCheck() MonitoringUptimeCheckConfigTcpCheckOutputReference {
 	var returns MonitoringUptimeCheckConfigTcpCheckOutputReference
 	_jsii_.Get(
@@ -597,7 +621,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) UptimeCheckId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
 func NewMonitoringUptimeCheckConfig(scope constructs.Construct, id *string, config *MonitoringUptimeCheckConfigConfig) MonitoringUptimeCheckConfig {
 	_init_.Initialize()
 
@@ -615,7 +639,7 @@ func NewMonitoringUptimeCheckConfig(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
 func NewMonitoringUptimeCheckConfig_Override(m MonitoringUptimeCheckConfig, scope constructs.Construct, id *string, config *MonitoringUptimeCheckConfigConfig) {
 	_init_.Initialize()
 
@@ -1081,6 +1105,17 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) PutResourceGroup(value *Monitori
 	)
 }
 
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) PutSyntheticMonitor(value *MonitoringUptimeCheckConfigSyntheticMonitor) {
+	if err := m.validatePutSyntheticMonitorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putSyntheticMonitor",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitoringUptimeCheckConfig) PutTcpCheck(value *MonitoringUptimeCheckConfigTcpCheck) {
 	if err := m.validatePutTcpCheckParameters(value); err != nil {
 		panic(err)
@@ -1179,6 +1214,14 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) ResetSelectedRegions() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetSelectedRegions",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) ResetSyntheticMonitor() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSyntheticMonitor",
 		nil, // no parameters
 	)
 }

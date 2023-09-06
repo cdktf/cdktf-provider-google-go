@@ -23,6 +23,8 @@ type DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConditionalCases() DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesList
+	ConditionalCasesInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -37,6 +39,8 @@ type DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference interface {
 	ReturnPartialResponses() interface{}
 	SetReturnPartialResponses(val interface{})
 	ReturnPartialResponsesInput() interface{}
+	SetParameterActions() DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsList
+	SetParameterActionsInput() interface{}
 	Tag() *string
 	SetTag(val *string)
 	TagInput() *string
@@ -75,9 +79,13 @@ type DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutConditionalCases(value interface{})
 	PutMessages(value interface{})
+	PutSetParameterActions(value interface{})
+	ResetConditionalCases()
 	ResetMessages()
 	ResetReturnPartialResponses()
+	ResetSetParameterActions()
 	ResetTag()
 	ResetWebhook()
 	// Produce the Token's value at resolution time.
@@ -110,6 +118,26 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) ConditionalCases() DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesList {
+	var returns DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesList
+	_jsii_.Get(
+		j,
+		"conditionalCases",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) ConditionalCasesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"conditionalCasesInput",
 		&returns,
 	)
 	return returns
@@ -180,6 +208,26 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
 	_jsii_.Get(
 		j,
 		"returnPartialResponsesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) SetParameterActions() DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsList {
+	var returns DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsList
+	_jsii_.Get(
+		j,
+		"setParameterActions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) SetParameterActionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"setParameterActionsInput",
 		&returns,
 	)
 	return returns
@@ -547,6 +595,17 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
 	return returns
 }
 
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) PutConditionalCases(value interface{}) {
+	if err := d.validatePutConditionalCasesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putConditionalCases",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) PutMessages(value interface{}) {
 	if err := d.validatePutMessagesParameters(value); err != nil {
 		panic(err)
@@ -555,6 +614,25 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
 		d,
 		"putMessages",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) PutSetParameterActions(value interface{}) {
+	if err := d.validatePutSetParameterActionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSetParameterActions",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) ResetConditionalCases() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetConditionalCases",
+		nil, // no parameters
 	)
 }
 
@@ -570,6 +648,14 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"resetReturnPartialResponses",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) ResetSetParameterActions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSetParameterActions",
 		nil, // no parameters
 	)
 }

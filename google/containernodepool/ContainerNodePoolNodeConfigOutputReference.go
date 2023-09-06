@@ -28,6 +28,8 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfidentialNodes() ContainerNodePoolNodeConfigConfidentialNodesOutputReference
+	ConfidentialNodesInput() *ContainerNodePoolNodeConfigConfidentialNodes
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -144,6 +146,7 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAdvancedMachineFeatures(value *ContainerNodePoolNodeConfigAdvancedMachineFeatures)
+	PutConfidentialNodes(value *ContainerNodePoolNodeConfigConfidentialNodes)
 	PutEphemeralStorageLocalSsdConfig(value *ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig)
 	PutGcfsConfig(value *ContainerNodePoolNodeConfigGcfsConfig)
 	PutGuestAccelerator(value interface{})
@@ -159,6 +162,7 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	PutWorkloadMetadataConfig(value *ContainerNodePoolNodeConfigWorkloadMetadataConfig)
 	ResetAdvancedMachineFeatures()
 	ResetBootDiskKmsKey()
+	ResetConfidentialNodes()
 	ResetDiskSizeGb()
 	ResetDiskType()
 	ResetEphemeralStorageLocalSsdConfig()
@@ -258,6 +262,26 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ComplexObjectIsFr
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ConfidentialNodes() ContainerNodePoolNodeConfigConfidentialNodesOutputReference {
+	var returns ContainerNodePoolNodeConfigConfidentialNodesOutputReference
+	_jsii_.Get(
+		j,
+		"confidentialNodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ConfidentialNodesInput() *ContainerNodePoolNodeConfigConfidentialNodes {
+	var returns *ContainerNodePoolNodeConfigConfidentialNodes
+	_jsii_.Get(
+		j,
+		"confidentialNodesInput",
 		&returns,
 	)
 	return returns
@@ -1360,6 +1384,17 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutAdvancedMachin
 	)
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutConfidentialNodes(value *ContainerNodePoolNodeConfigConfidentialNodes) {
+	if err := c.validatePutConfidentialNodesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putConfidentialNodes",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) PutEphemeralStorageLocalSsdConfig(value *ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig) {
 	if err := c.validatePutEphemeralStorageLocalSsdConfigParameters(value); err != nil {
 		panic(err)
@@ -1515,6 +1550,14 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetBootDiskKmsK
 	_jsii_.InvokeVoid(
 		c,
 		"resetBootDiskKmsKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetConfidentialNodes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetConfidentialNodes",
 		nil, // no parameters
 	)
 }

@@ -47,11 +47,35 @@ func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfil
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) validatePutConversationSuccessParameters(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccess) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) validatePutLiveAgentHandoffParameters(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoff) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) validatePutOutputAudioTextParameters(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioText) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) validatePutPlayAudioParameters(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudio) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) validatePutTelephonyTransferCallParameters(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCall) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) validatePutTextParameters(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesText) error {
 	return nil
 }
 
 func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) validateSetChannelParameters(val *string) error {
 	return nil
 }
 
@@ -64,6 +88,10 @@ func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfil
 }
 
 func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) validateSetPayloadParameters(val *string) error {
 	return nil
 }
 

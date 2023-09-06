@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/identity_platform_default_supported_idp_config google_identity_platform_default_supported_idp_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/identity_platform_default_supported_idp_config google_identity_platform_default_supported_idp_config}.
 type IdentityPlatformDefaultSupportedIdpConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_IdentityPlatformDefaultSupportedIdpConfig) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/identity_platform_default_supported_idp_config google_identity_platform_default_supported_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/identity_platform_default_supported_idp_config google_identity_platform_default_supported_idp_config} Resource.
 func NewIdentityPlatformDefaultSupportedIdpConfig(scope constructs.Construct, id *string, config *IdentityPlatformDefaultSupportedIdpConfigConfig) IdentityPlatformDefaultSupportedIdpConfig {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewIdentityPlatformDefaultSupportedIdpConfig(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/identity_platform_default_supported_idp_config google_identity_platform_default_supported_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/identity_platform_default_supported_idp_config google_identity_platform_default_supported_idp_config} Resource.
 func NewIdentityPlatformDefaultSupportedIdpConfig_Override(i IdentityPlatformDefaultSupportedIdpConfig, scope constructs.Construct, id *string, config *IdentityPlatformDefaultSupportedIdpConfigConfig) {
 	_init_.Initialize()
 

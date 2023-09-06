@@ -47,7 +47,15 @@ func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentOutputReferenc
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentOutputReference) validatePutConditionalCasesParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentOutputReference) validatePutMessagesParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentOutputReference) validatePutSetParameterActionsParameters(value interface{}) error {
 	return nil
 }
 

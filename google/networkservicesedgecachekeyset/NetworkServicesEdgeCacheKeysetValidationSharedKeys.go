@@ -13,7 +13,7 @@ type NetworkServicesEdgeCacheKeysetValidationSharedKeys struct {
 	// If you are using HMAC-SHA256, we suggest 32-byte secrets.
 	// See RFC 2104, Section 3 for more details on these recommendations.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/network_services_edge_cache_keyset#secret_version NetworkServicesEdgeCacheKeyset#secret_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/network_services_edge_cache_keyset#secret_version NetworkServicesEdgeCacheKeyset#secret_version}
 	//
 	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	SecretVersion *string `field:"required" json:"secretVersion" yaml:"secretVersion"`

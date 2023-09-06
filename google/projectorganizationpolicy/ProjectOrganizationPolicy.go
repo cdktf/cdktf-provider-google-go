@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/project_organization_policy google_project_organization_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/project_organization_policy google_project_organization_policy}.
 type ProjectOrganizationPolicy interface {
 	cdktf.TerraformResource
 	BooleanPolicy() ProjectOrganizationPolicyBooleanPolicyOutputReference
@@ -477,7 +477,7 @@ func (j *jsiiProxy_ProjectOrganizationPolicy) VersionInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/project_organization_policy google_project_organization_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/project_organization_policy google_project_organization_policy} Resource.
 func NewProjectOrganizationPolicy(scope constructs.Construct, id *string, config *ProjectOrganizationPolicyConfig) ProjectOrganizationPolicy {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewProjectOrganizationPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/project_organization_policy google_project_organization_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/project_organization_policy google_project_organization_policy} Resource.
 func NewProjectOrganizationPolicy_Override(p ProjectOrganizationPolicy, scope constructs.Construct, id *string, config *ProjectOrganizationPolicyConfig) {
 	_init_.Initialize()
 

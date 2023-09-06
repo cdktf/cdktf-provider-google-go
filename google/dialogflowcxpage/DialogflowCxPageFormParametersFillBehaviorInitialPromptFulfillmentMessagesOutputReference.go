@@ -13,6 +13,9 @@ import (
 
 type DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference interface {
 	cdktf.ComplexObject
+	Channel() *string
+	SetChannel(val *string)
+	ChannelInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -23,6 +26,8 @@ type DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesO
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConversationSuccess() DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccessOutputReference
+	ConversationSuccessInput() *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccess
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -32,6 +37,17 @@ type DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesO
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LiveAgentHandoff() DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoffOutputReference
+	LiveAgentHandoffInput() *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoff
+	OutputAudioText() DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioTextOutputReference
+	OutputAudioTextInput() *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioText
+	Payload() *string
+	SetPayload(val *string)
+	PayloadInput() *string
+	PlayAudio() DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudioOutputReference
+	PlayAudioInput() *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudio
+	TelephonyTransferCall() DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCallOutputReference
+	TelephonyTransferCallInput() *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCall
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,7 +82,19 @@ type DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesO
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutConversationSuccess(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccess)
+	PutLiveAgentHandoff(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoff)
+	PutOutputAudioText(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioText)
+	PutPlayAudio(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudio)
+	PutTelephonyTransferCall(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCall)
 	PutText(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesText)
+	ResetChannel()
+	ResetConversationSuccess()
+	ResetLiveAgentHandoff()
+	ResetOutputAudioText()
+	ResetPayload()
+	ResetPlayAudio()
+	ResetTelephonyTransferCall()
 	ResetText()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -81,6 +109,26 @@ type DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesO
 // The jsii proxy struct for DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference
 type jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) Channel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"channel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) ChannelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"channelInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) ComplexObjectIndex() interface{} {
@@ -98,6 +146,26 @@ func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfil
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) ConversationSuccess() DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccessOutputReference {
+	var returns DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccessOutputReference
+	_jsii_.Get(
+		j,
+		"conversationSuccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) ConversationSuccessInput() *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccess {
+	var returns *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccess
+	_jsii_.Get(
+		j,
+		"conversationSuccessInput",
 		&returns,
 	)
 	return returns
@@ -128,6 +196,106 @@ func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfil
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) LiveAgentHandoff() DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoffOutputReference {
+	var returns DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoffOutputReference
+	_jsii_.Get(
+		j,
+		"liveAgentHandoff",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) LiveAgentHandoffInput() *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoff {
+	var returns *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoff
+	_jsii_.Get(
+		j,
+		"liveAgentHandoffInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) OutputAudioText() DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioTextOutputReference {
+	var returns DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioTextOutputReference
+	_jsii_.Get(
+		j,
+		"outputAudioText",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) OutputAudioTextInput() *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioText {
+	var returns *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioText
+	_jsii_.Get(
+		j,
+		"outputAudioTextInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) Payload() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"payload",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) PayloadInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"payloadInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) PlayAudio() DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudioOutputReference {
+	var returns DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudioOutputReference
+	_jsii_.Get(
+		j,
+		"playAudio",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) PlayAudioInput() *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudio {
+	var returns *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudio
+	_jsii_.Get(
+		j,
+		"playAudioInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) TelephonyTransferCall() DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCallOutputReference {
+	var returns DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCallOutputReference
+	_jsii_.Get(
+		j,
+		"telephonyTransferCall",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) TelephonyTransferCallInput() *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCall {
+	var returns *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCall
+	_jsii_.Get(
+		j,
+		"telephonyTransferCallInput",
 		&returns,
 	)
 	return returns
@@ -201,6 +369,17 @@ func NewDialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessag
 	)
 }
 
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference)SetChannel(val *string) {
+	if err := j.validateSetChannelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"channel",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -230,6 +409,17 @@ func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfil
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference)SetPayload(val *string) {
+	if err := j.validateSetPayloadParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"payload",
 		val,
 	)
 }
@@ -442,6 +632,61 @@ func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfil
 	return returns
 }
 
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) PutConversationSuccess(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesConversationSuccess) {
+	if err := d.validatePutConversationSuccessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putConversationSuccess",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) PutLiveAgentHandoff(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesLiveAgentHandoff) {
+	if err := d.validatePutLiveAgentHandoffParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putLiveAgentHandoff",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) PutOutputAudioText(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputAudioText) {
+	if err := d.validatePutOutputAudioTextParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOutputAudioText",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) PutPlayAudio(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesPlayAudio) {
+	if err := d.validatePutPlayAudioParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPlayAudio",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) PutTelephonyTransferCall(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTelephonyTransferCall) {
+	if err := d.validatePutTelephonyTransferCallParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTelephonyTransferCall",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) PutText(value *DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesText) {
 	if err := d.validatePutTextParameters(value); err != nil {
 		panic(err)
@@ -450,6 +695,62 @@ func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfil
 		d,
 		"putText",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) ResetChannel() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetChannel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) ResetConversationSuccess() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetConversationSuccess",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) ResetLiveAgentHandoff() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLiveAgentHandoff",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) ResetOutputAudioText() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOutputAudioText",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) ResetPayload() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPayload",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) ResetPlayAudio() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPlayAudio",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference) ResetTelephonyTransferCall() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTelephonyTransferCall",
+		nil, // no parameters
 	)
 }
 

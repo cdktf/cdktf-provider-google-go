@@ -23,6 +23,8 @@ type DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference interface
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConditionalCases() DialogflowCxPageTransitionRoutesTriggerFulfillmentConditionalCasesList
+	ConditionalCasesInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -37,6 +39,8 @@ type DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference interface
 	ReturnPartialResponses() interface{}
 	SetReturnPartialResponses(val interface{})
 	ReturnPartialResponsesInput() interface{}
+	SetParameterActions() DialogflowCxPageTransitionRoutesTriggerFulfillmentSetParameterActionsList
+	SetParameterActionsInput() interface{}
 	Tag() *string
 	SetTag(val *string)
 	TagInput() *string
@@ -75,9 +79,13 @@ type DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutConditionalCases(value interface{})
 	PutMessages(value interface{})
+	PutSetParameterActions(value interface{})
+	ResetConditionalCases()
 	ResetMessages()
 	ResetReturnPartialResponses()
+	ResetSetParameterActions()
 	ResetTag()
 	ResetWebhook()
 	// Produce the Token's value at resolution time.
@@ -110,6 +118,26 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) ConditionalCases() DialogflowCxPageTransitionRoutesTriggerFulfillmentConditionalCasesList {
+	var returns DialogflowCxPageTransitionRoutesTriggerFulfillmentConditionalCasesList
+	_jsii_.Get(
+		j,
+		"conditionalCases",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) ConditionalCasesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"conditionalCasesInput",
 		&returns,
 	)
 	return returns
@@ -180,6 +208,26 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	_jsii_.Get(
 		j,
 		"returnPartialResponsesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) SetParameterActions() DialogflowCxPageTransitionRoutesTriggerFulfillmentSetParameterActionsList {
+	var returns DialogflowCxPageTransitionRoutesTriggerFulfillmentSetParameterActionsList
+	_jsii_.Get(
+		j,
+		"setParameterActions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) SetParameterActionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"setParameterActionsInput",
 		&returns,
 	)
 	return returns
@@ -547,6 +595,17 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	return returns
 }
 
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) PutConditionalCases(value interface{}) {
+	if err := d.validatePutConditionalCasesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putConditionalCases",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) PutMessages(value interface{}) {
 	if err := d.validatePutMessagesParameters(value); err != nil {
 		panic(err)
@@ -555,6 +614,25 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 		d,
 		"putMessages",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) PutSetParameterActions(value interface{}) {
+	if err := d.validatePutSetParameterActionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSetParameterActions",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) ResetConditionalCases() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetConditionalCases",
+		nil, // no parameters
 	)
 }
 
@@ -570,6 +648,14 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputRefer
 	_jsii_.InvokeVoid(
 		d,
 		"resetReturnPartialResponses",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference) ResetSetParameterActions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSetParameterActions",
 		nil, // no parameters
 	)
 }

@@ -25,6 +25,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfidentialNodes() DataGoogleContainerClusterNodeConfigConfidentialNodesList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -145,6 +146,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) ComplexO
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) ConfidentialNodes() DataGoogleContainerClusterNodeConfigConfidentialNodesList {
+	var returns DataGoogleContainerClusterNodeConfigConfidentialNodesList
+	_jsii_.Get(
+		j,
+		"confidentialNodes",
 		&returns,
 	)
 	return returns

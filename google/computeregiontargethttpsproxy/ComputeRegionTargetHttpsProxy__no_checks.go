@@ -111,6 +111,10 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetSslCertificatesPara
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetSslPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetUrlMapParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version}.
 type AppEngineStandardAppVersion interface {
 	cdktf.TerraformResource
 	AppEngineApis() interface{}
@@ -824,7 +824,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersion) VpcAccessConnectorInput() *AppEn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version} Resource.
 func NewAppEngineStandardAppVersion(scope constructs.Construct, id *string, config *AppEngineStandardAppVersionConfig) AppEngineStandardAppVersion {
 	_init_.Initialize()
 
@@ -842,7 +842,7 @@ func NewAppEngineStandardAppVersion(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version} Resource.
 func NewAppEngineStandardAppVersion_Override(a AppEngineStandardAppVersion, scope constructs.Construct, id *string, config *AppEngineStandardAppVersionConfig) {
 	_init_.Initialize()
 

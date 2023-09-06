@@ -231,6 +231,8 @@ func init() {
 		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcWebSsoConfigOutputReference",
 		reflect.TypeOf((*IamWorkforcePoolProviderOidcWebSsoConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "additionalScopes", GoGetter: "AdditionalScopes"},
+			_jsii_.MemberProperty{JsiiProperty: "additionalScopesInput", GoGetter: "AdditionalScopesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "assertionClaimsBehavior", GoGetter: "AssertionClaimsBehavior"},
 			_jsii_.MemberProperty{JsiiProperty: "assertionClaimsBehaviorInput", GoGetter: "AssertionClaimsBehaviorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -250,6 +252,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdditionalScopes", GoMethod: "ResetAdditionalScopes"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "responseType", GoGetter: "ResponseType"},
 			_jsii_.MemberProperty{JsiiProperty: "responseTypeInput", GoGetter: "ResponseTypeInput"},

@@ -47,11 +47,35 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutput
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference) validatePutConversationSuccessParameters(value *DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccess) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference) validatePutLiveAgentHandoffParameters(value *DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference) validatePutOutputAudioTextParameters(value *DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioText) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference) validatePutPlayAudioParameters(value *DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudio) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference) validatePutTelephonyTransferCallParameters(value *DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference) validatePutTextParameters(value *DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesText) error {
 	return nil
 }
 
 func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference) validateSetChannelParameters(val *string) error {
 	return nil
 }
 
@@ -64,6 +88,10 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutput
 }
 
 func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference) validateSetPayloadParameters(val *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding}.
 type StorageBucketIamBinding interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -393,7 +393,7 @@ func (j *jsiiProxy_StorageBucketIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource.
 func NewStorageBucketIamBinding(scope constructs.Construct, id *string, config *StorageBucketIamBindingConfig) StorageBucketIamBinding {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewStorageBucketIamBinding(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource.
 func NewStorageBucketIamBinding_Override(s StorageBucketIamBinding, scope constructs.Construct, id *string, config *StorageBucketIamBindingConfig) {
 	_init_.Initialize()
 

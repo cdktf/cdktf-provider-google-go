@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/container_analysis_occurrence google_container_analysis_occurrence}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/container_analysis_occurrence google_container_analysis_occurrence}.
 type ContainerAnalysisOccurrence interface {
 	cdktf.TerraformResource
 	Attestation() ContainerAnalysisOccurrenceAttestationOutputReference
@@ -474,7 +474,7 @@ func (j *jsiiProxy_ContainerAnalysisOccurrence) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/container_analysis_occurrence google_container_analysis_occurrence} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/container_analysis_occurrence google_container_analysis_occurrence} Resource.
 func NewContainerAnalysisOccurrence(scope constructs.Construct, id *string, config *ContainerAnalysisOccurrenceConfig) ContainerAnalysisOccurrence {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewContainerAnalysisOccurrence(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/container_analysis_occurrence google_container_analysis_occurrence} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/container_analysis_occurrence google_container_analysis_occurrence} Resource.
 func NewContainerAnalysisOccurrence_Override(c ContainerAnalysisOccurrence, scope constructs.Construct, id *string, config *ContainerAnalysisOccurrenceConfig) {
 	_init_.Initialize()
 

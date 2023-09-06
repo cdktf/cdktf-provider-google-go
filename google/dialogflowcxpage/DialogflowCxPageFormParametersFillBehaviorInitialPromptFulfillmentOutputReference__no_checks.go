@@ -47,7 +47,15 @@ func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfil
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentOutputReference) validatePutConditionalCasesParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentOutputReference) validatePutMessagesParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentOutputReference) validatePutSetParameterActionsParameters(value interface{}) error {
 	return nil
 }
 

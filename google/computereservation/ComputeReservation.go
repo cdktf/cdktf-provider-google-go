@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_reservation google_compute_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/compute_reservation google_compute_reservation}.
 type ComputeReservation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -522,7 +522,7 @@ func (j *jsiiProxy_ComputeReservation) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_reservation google_compute_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/compute_reservation google_compute_reservation} Resource.
 func NewComputeReservation(scope constructs.Construct, id *string, config *ComputeReservationConfig) ComputeReservation {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewComputeReservation(scope constructs.Construct, id *string, config *Compu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/resources/compute_reservation google_compute_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/compute_reservation google_compute_reservation} Resource.
 func NewComputeReservation_Override(c ComputeReservation, scope constructs.Construct, id *string, config *ComputeReservationConfig) {
 	_init_.Initialize()
 

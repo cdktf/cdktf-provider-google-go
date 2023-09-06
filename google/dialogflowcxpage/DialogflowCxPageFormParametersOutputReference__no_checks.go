@@ -63,6 +63,10 @@ func (j *jsiiProxy_DialogflowCxPageFormParametersOutputReference) validateSetCom
 	return nil
 }
 
+func (j *jsiiProxy_DialogflowCxPageFormParametersOutputReference) validateSetDefaultValueParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxPageFormParametersOutputReference) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

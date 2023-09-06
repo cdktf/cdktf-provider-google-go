@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/endpoints_service_iam_policy google_endpoints_service_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/data-sources/endpoints_service_iam_policy google_endpoints_service_iam_policy}.
 type DataGoogleEndpointsServiceIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -306,7 +306,7 @@ func (j *jsiiProxy_DataGoogleEndpointsServiceIamPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/endpoints_service_iam_policy google_endpoints_service_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/data-sources/endpoints_service_iam_policy google_endpoints_service_iam_policy} Data Source.
 func NewDataGoogleEndpointsServiceIamPolicy(scope constructs.Construct, id *string, config *DataGoogleEndpointsServiceIamPolicyConfig) DataGoogleEndpointsServiceIamPolicy {
 	_init_.Initialize()
 
@@ -324,7 +324,7 @@ func NewDataGoogleEndpointsServiceIamPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.80.0/docs/data-sources/endpoints_service_iam_policy google_endpoints_service_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/data-sources/endpoints_service_iam_policy google_endpoints_service_iam_policy} Data Source.
 func NewDataGoogleEndpointsServiceIamPolicy_Override(d DataGoogleEndpointsServiceIamPolicy, scope constructs.Construct, id *string, config *DataGoogleEndpointsServiceIamPolicyConfig) {
 	_init_.Initialize()
 

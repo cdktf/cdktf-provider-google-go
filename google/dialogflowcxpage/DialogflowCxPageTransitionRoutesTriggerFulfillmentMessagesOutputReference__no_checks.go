@@ -47,11 +47,35 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOut
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) validatePutConversationSuccessParameters(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConversationSuccess) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) validatePutLiveAgentHandoffParameters(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) validatePutOutputAudioTextParameters(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputAudioText) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) validatePutPlayAudioParameters(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayAudio) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) validatePutTelephonyTransferCallParameters(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) validatePutTextParameters(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesText) error {
 	return nil
 }
 
 func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) validateSetChannelParameters(val *string) error {
 	return nil
 }
 
@@ -64,6 +88,10 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOut
 }
 
 func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) validateSetPayloadParameters(val *string) error {
 	return nil
 }
 

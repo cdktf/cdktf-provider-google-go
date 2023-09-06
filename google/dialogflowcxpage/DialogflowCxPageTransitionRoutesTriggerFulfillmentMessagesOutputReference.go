@@ -13,6 +13,9 @@ import (
 
 type DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference interface {
 	cdktf.ComplexObject
+	Channel() *string
+	SetChannel(val *string)
+	ChannelInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -23,6 +26,8 @@ type DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference i
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConversationSuccess() DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConversationSuccessOutputReference
+	ConversationSuccessInput() *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConversationSuccess
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -32,6 +37,17 @@ type DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference i
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LiveAgentHandoff() DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoffOutputReference
+	LiveAgentHandoffInput() *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff
+	OutputAudioText() DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputAudioTextOutputReference
+	OutputAudioTextInput() *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputAudioText
+	Payload() *string
+	SetPayload(val *string)
+	PayloadInput() *string
+	PlayAudio() DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayAudioOutputReference
+	PlayAudioInput() *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayAudio
+	TelephonyTransferCall() DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallOutputReference
+	TelephonyTransferCallInput() *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,7 +82,19 @@ type DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutConversationSuccess(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConversationSuccess)
+	PutLiveAgentHandoff(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff)
+	PutOutputAudioText(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputAudioText)
+	PutPlayAudio(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayAudio)
+	PutTelephonyTransferCall(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall)
 	PutText(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesText)
+	ResetChannel()
+	ResetConversationSuccess()
+	ResetLiveAgentHandoff()
+	ResetOutputAudioText()
+	ResetPayload()
+	ResetPlayAudio()
+	ResetTelephonyTransferCall()
 	ResetText()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -81,6 +109,26 @@ type DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference i
 // The jsii proxy struct for DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference
 type jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) Channel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"channel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) ChannelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"channelInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) ComplexObjectIndex() interface{} {
@@ -98,6 +146,26 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOut
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) ConversationSuccess() DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConversationSuccessOutputReference {
+	var returns DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConversationSuccessOutputReference
+	_jsii_.Get(
+		j,
+		"conversationSuccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) ConversationSuccessInput() *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConversationSuccess {
+	var returns *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConversationSuccess
+	_jsii_.Get(
+		j,
+		"conversationSuccessInput",
 		&returns,
 	)
 	return returns
@@ -128,6 +196,106 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOut
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) LiveAgentHandoff() DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoffOutputReference {
+	var returns DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoffOutputReference
+	_jsii_.Get(
+		j,
+		"liveAgentHandoff",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) LiveAgentHandoffInput() *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff {
+	var returns *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff
+	_jsii_.Get(
+		j,
+		"liveAgentHandoffInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) OutputAudioText() DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputAudioTextOutputReference {
+	var returns DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputAudioTextOutputReference
+	_jsii_.Get(
+		j,
+		"outputAudioText",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) OutputAudioTextInput() *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputAudioText {
+	var returns *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputAudioText
+	_jsii_.Get(
+		j,
+		"outputAudioTextInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) Payload() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"payload",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) PayloadInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"payloadInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) PlayAudio() DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayAudioOutputReference {
+	var returns DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayAudioOutputReference
+	_jsii_.Get(
+		j,
+		"playAudio",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) PlayAudioInput() *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayAudio {
+	var returns *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayAudio
+	_jsii_.Get(
+		j,
+		"playAudioInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) TelephonyTransferCall() DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallOutputReference {
+	var returns DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallOutputReference
+	_jsii_.Get(
+		j,
+		"telephonyTransferCall",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) TelephonyTransferCallInput() *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall {
+	var returns *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall
+	_jsii_.Get(
+		j,
+		"telephonyTransferCallInput",
 		&returns,
 	)
 	return returns
@@ -201,6 +369,17 @@ func NewDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReferenc
 	)
 }
 
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference)SetChannel(val *string) {
+	if err := j.validateSetChannelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"channel",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -230,6 +409,17 @@ func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOut
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference)SetPayload(val *string) {
+	if err := j.validateSetPayloadParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"payload",
 		val,
 	)
 }
@@ -442,6 +632,61 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOut
 	return returns
 }
 
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) PutConversationSuccess(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesConversationSuccess) {
+	if err := d.validatePutConversationSuccessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putConversationSuccess",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) PutLiveAgentHandoff(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff) {
+	if err := d.validatePutLiveAgentHandoffParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putLiveAgentHandoff",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) PutOutputAudioText(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputAudioText) {
+	if err := d.validatePutOutputAudioTextParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOutputAudioText",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) PutPlayAudio(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesPlayAudio) {
+	if err := d.validatePutPlayAudioParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPlayAudio",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) PutTelephonyTransferCall(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall) {
+	if err := d.validatePutTelephonyTransferCallParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTelephonyTransferCall",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) PutText(value *DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesText) {
 	if err := d.validatePutTextParameters(value); err != nil {
 		panic(err)
@@ -450,6 +695,62 @@ func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOut
 		d,
 		"putText",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) ResetChannel() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetChannel",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) ResetConversationSuccess() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetConversationSuccess",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) ResetLiveAgentHandoff() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLiveAgentHandoff",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) ResetOutputAudioText() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOutputAudioText",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) ResetPayload() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPayload",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) ResetPlayAudio() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPlayAudio",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference) ResetTelephonyTransferCall() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTelephonyTransferCall",
+		nil, // no parameters
 	)
 }
 

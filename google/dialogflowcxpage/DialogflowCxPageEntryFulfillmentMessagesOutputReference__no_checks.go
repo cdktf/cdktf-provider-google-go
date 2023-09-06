@@ -47,11 +47,35 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) vali
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) validatePutConversationSuccessParameters(value *DialogflowCxPageEntryFulfillmentMessagesConversationSuccess) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) validatePutLiveAgentHandoffParameters(value *DialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoff) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) validatePutOutputAudioTextParameters(value *DialogflowCxPageEntryFulfillmentMessagesOutputAudioText) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) validatePutPlayAudioParameters(value *DialogflowCxPageEntryFulfillmentMessagesPlayAudio) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) validatePutTelephonyTransferCallParameters(value *DialogflowCxPageEntryFulfillmentMessagesTelephonyTransferCall) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) validatePutTextParameters(value *DialogflowCxPageEntryFulfillmentMessagesText) error {
 	return nil
 }
 
 func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) validateSetChannelParameters(val *string) error {
 	return nil
 }
 
@@ -64,6 +88,10 @@ func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) vali
 }
 
 func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference) validateSetPayloadParameters(val *string) error {
 	return nil
 }
 

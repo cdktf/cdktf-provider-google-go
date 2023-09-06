@@ -93,6 +93,37 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentOutputReference) validateInte
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentOutputReference) validatePutConditionalCasesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DialogflowCxPageEntryFulfillmentConditionalCases:
+		value := value.(*[]*DialogflowCxPageEntryFulfillmentConditionalCases)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DialogflowCxPageEntryFulfillmentConditionalCases:
+		value_ := value.([]*DialogflowCxPageEntryFulfillmentConditionalCases)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DialogflowCxPageEntryFulfillmentConditionalCases; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentOutputReference) validatePutMessagesParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -118,6 +149,37 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentOutputReference) validatePutM
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DialogflowCxPageEntryFulfillmentMessages; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentOutputReference) validatePutSetParameterActionsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DialogflowCxPageEntryFulfillmentSetParameterActions:
+		value := value.(*[]*DialogflowCxPageEntryFulfillmentSetParameterActions)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DialogflowCxPageEntryFulfillmentSetParameterActions:
+		value_ := value.([]*DialogflowCxPageEntryFulfillmentSetParameterActions)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DialogflowCxPageEntryFulfillmentSetParameterActions; received %#v (a %T)", value, value)
 		}
 	}
 
