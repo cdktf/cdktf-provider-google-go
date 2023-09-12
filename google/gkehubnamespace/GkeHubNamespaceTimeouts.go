@@ -5,9 +5,9 @@ package gkehubnamespace
 
 
 type GkeHubNamespaceTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/gke_hub_namespace#create GkeHubNamespace#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/gke_hub_namespace#create GkeHubNamespace#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/resources/gke_hub_namespace#delete GkeHubNamespace#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/gke_hub_namespace#delete GkeHubNamespace#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

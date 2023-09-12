@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/data-sources/dataplex_asset_iam_policy google_dataplex_asset_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/data-sources/dataplex_asset_iam_policy google_dataplex_asset_iam_policy}.
 type DataGoogleDataplexAssetIamPolicy interface {
 	cdktf.TerraformDataSource
 	Asset() *string
@@ -400,7 +400,7 @@ func (j *jsiiProxy_DataGoogleDataplexAssetIamPolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/data-sources/dataplex_asset_iam_policy google_dataplex_asset_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/data-sources/dataplex_asset_iam_policy google_dataplex_asset_iam_policy} Data Source.
 func NewDataGoogleDataplexAssetIamPolicy(scope constructs.Construct, id *string, config *DataGoogleDataplexAssetIamPolicyConfig) DataGoogleDataplexAssetIamPolicy {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewDataGoogleDataplexAssetIamPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.81.0/docs/data-sources/dataplex_asset_iam_policy google_dataplex_asset_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/data-sources/dataplex_asset_iam_policy google_dataplex_asset_iam_policy} Data Source.
 func NewDataGoogleDataplexAssetIamPolicy_Override(d DataGoogleDataplexAssetIamPolicy, scope constructs.Construct, id *string, config *DataGoogleDataplexAssetIamPolicyConfig) {
 	_init_.Initialize()
 
