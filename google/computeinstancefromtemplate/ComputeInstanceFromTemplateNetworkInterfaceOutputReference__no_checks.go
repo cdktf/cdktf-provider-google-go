@@ -71,7 +71,15 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validateSetInternalIpv6PrefixLengthParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validateSetIpv6AddressParameters(val *string) error {
 	return nil
 }
 

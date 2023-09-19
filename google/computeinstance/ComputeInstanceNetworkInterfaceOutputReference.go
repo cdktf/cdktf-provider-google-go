@@ -34,11 +34,17 @@ type ComputeInstanceNetworkInterfaceOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InternalIpv6PrefixLength() *float64
+	SetInternalIpv6PrefixLength(val *float64)
+	InternalIpv6PrefixLengthInput() *float64
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Ipv6AccessConfig() ComputeInstanceNetworkInterfaceIpv6AccessConfigList
 	Ipv6AccessConfigInput() interface{}
 	Ipv6AccessType() *string
+	Ipv6Address() *string
+	SetIpv6Address(val *string)
+	Ipv6AddressInput() *string
 	Name() *string
 	Network() *string
 	SetNetwork(val *string)
@@ -98,7 +104,9 @@ type ComputeInstanceNetworkInterfaceOutputReference interface {
 	PutIpv6AccessConfig(value interface{})
 	ResetAccessConfig()
 	ResetAliasIpRange()
+	ResetInternalIpv6PrefixLength()
 	ResetIpv6AccessConfig()
+	ResetIpv6Address()
 	ResetNetwork()
 	ResetNetworkIp()
 	ResetNicType()
@@ -201,6 +209,26 @@ func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) Fqn() *string
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) InternalIpv6PrefixLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"internalIpv6PrefixLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) InternalIpv6PrefixLengthInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"internalIpv6PrefixLengthInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -236,6 +264,26 @@ func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) Ipv6AccessTyp
 	_jsii_.Get(
 		j,
 		"ipv6AccessType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) Ipv6Address() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Address",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) Ipv6AddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6AddressInput",
 		&returns,
 	)
 	return returns
@@ -461,6 +509,17 @@ func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference)SetComplexObje
 	)
 }
 
+func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference)SetInternalIpv6PrefixLength(val *float64) {
+	if err := j.validateSetInternalIpv6PrefixLengthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"internalIpv6PrefixLength",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -468,6 +527,17 @@ func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference)SetInternalVal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference)SetIpv6Address(val *string) {
+	if err := j.validateSetIpv6AddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Address",
 		val,
 	)
 }
@@ -806,10 +876,26 @@ func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) ResetAliasIpR
 	)
 }
 
+func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) ResetInternalIpv6PrefixLength() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInternalIpv6PrefixLength",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) ResetIpv6AccessConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIpv6AccessConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) ResetIpv6Address() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpv6Address",
 		nil, // no parameters
 	)
 }

@@ -83,6 +83,10 @@ func (j *jsiiProxy_GkeHubScope) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_GkeHubScope) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GkeHubScope) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

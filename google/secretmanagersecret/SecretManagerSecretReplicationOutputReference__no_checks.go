@@ -47,6 +47,10 @@ func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) validateInterp
 	return nil
 }
 
+func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) validatePutAutoParameters(value *SecretManagerSecretReplicationAuto) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) validatePutUserManagedParameters(value *SecretManagerSecretReplicationUserManaged) error {
 	return nil
 }

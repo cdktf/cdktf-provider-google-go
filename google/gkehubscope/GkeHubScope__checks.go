@@ -247,6 +247,14 @@ func (j *jsiiProxy_GkeHubScope) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_GkeHubScope) validateSetLabelsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GkeHubScope) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

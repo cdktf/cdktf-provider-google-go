@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/gke_hub_membership_binding google_gke_hub_membership_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/gke_hub_membership_binding google_gke_hub_membership_binding}.
 type GkeHubMembershipBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -44,6 +44,9 @@ type GkeHubMembershipBinding interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -114,6 +117,7 @@ type GkeHubMembershipBinding interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GkeHubMembershipBindingTimeouts)
 	ResetId()
+	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -249,6 +253,26 @@ func (j *jsiiProxy_GkeHubMembershipBinding) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubMembershipBinding) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubMembershipBinding) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -495,7 +519,7 @@ func (j *jsiiProxy_GkeHubMembershipBinding) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/gke_hub_membership_binding google_gke_hub_membership_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/gke_hub_membership_binding google_gke_hub_membership_binding} Resource.
 func NewGkeHubMembershipBinding(scope constructs.Construct, id *string, config *GkeHubMembershipBindingConfig) GkeHubMembershipBinding {
 	_init_.Initialize()
 
@@ -513,7 +537,7 @@ func NewGkeHubMembershipBinding(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/gke_hub_membership_binding google_gke_hub_membership_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/gke_hub_membership_binding google_gke_hub_membership_binding} Resource.
 func NewGkeHubMembershipBinding_Override(g GkeHubMembershipBinding, scope constructs.Construct, id *string, config *GkeHubMembershipBindingConfig) {
 	_init_.Initialize()
 
@@ -569,6 +593,17 @@ func (j *jsiiProxy_GkeHubMembershipBinding)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GkeHubMembershipBinding)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -939,6 +974,14 @@ func (g *jsiiProxy_GkeHubMembershipBinding) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeHubMembershipBinding) ResetLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLabels",
 		nil, // no parameters
 	)
 }

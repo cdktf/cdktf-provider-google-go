@@ -13,6 +13,8 @@ import (
 
 type SecretManagerSecretReplicationOutputReference interface {
 	cdktf.ComplexObject
+	Auto() SecretManagerSecretReplicationAutoOutputReference
+	AutoInput() *SecretManagerSecretReplicationAuto
 	Automatic() interface{}
 	SetAutomatic(val interface{})
 	AutomaticInput() interface{}
@@ -69,7 +71,9 @@ type SecretManagerSecretReplicationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAuto(value *SecretManagerSecretReplicationAuto)
 	PutUserManaged(value *SecretManagerSecretReplicationUserManaged)
+	ResetAuto()
 	ResetAutomatic()
 	ResetUserManaged()
 	// Produce the Token's value at resolution time.
@@ -85,6 +89,26 @@ type SecretManagerSecretReplicationOutputReference interface {
 // The jsii proxy struct for SecretManagerSecretReplicationOutputReference
 type jsiiProxy_SecretManagerSecretReplicationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SecretManagerSecretReplicationOutputReference) Auto() SecretManagerSecretReplicationAutoOutputReference {
+	var returns SecretManagerSecretReplicationAutoOutputReference
+	_jsii_.Get(
+		j,
+		"auto",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretManagerSecretReplicationOutputReference) AutoInput() *SecretManagerSecretReplicationAuto {
+	var returns *SecretManagerSecretReplicationAuto
+	_jsii_.Get(
+		j,
+		"autoInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SecretManagerSecretReplicationOutputReference) Automatic() interface{} {
@@ -477,6 +501,17 @@ func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) InterpolationF
 	return returns
 }
 
+func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) PutAuto(value *SecretManagerSecretReplicationAuto) {
+	if err := s.validatePutAutoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAuto",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) PutUserManaged(value *SecretManagerSecretReplicationUserManaged) {
 	if err := s.validatePutUserManagedParameters(value); err != nil {
 		panic(err)
@@ -485,6 +520,14 @@ func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) PutUserManaged
 		s,
 		"putUserManaged",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) ResetAuto() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAuto",
+		nil, // no parameters
 	)
 }
 

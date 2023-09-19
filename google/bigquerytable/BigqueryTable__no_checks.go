@@ -71,6 +71,10 @@ func (b *jsiiProxy_BigqueryTable) validatePutRangePartitioningParameters(value *
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryTable) validatePutTableConstraintsParameters(value *BigqueryTableTableConstraints) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryTable) validatePutTimePartitioningParameters(value *BigqueryTableTimePartitioning) error {
 	return nil
 }

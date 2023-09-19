@@ -24,18 +24,22 @@ type GkeHubScopeConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The client-provided identifier of the scope.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/gke_hub_scope#scope_id GkeHubScope#scope_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/gke_hub_scope#scope_id GkeHubScope#scope_id}
 	ScopeId *string `field:"required" json:"scopeId" yaml:"scopeId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/gke_hub_scope#id GkeHubScope#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/gke_hub_scope#id GkeHubScope#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/gke_hub_scope#project GkeHubScope#project}.
+	// Labels for this Scope.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/gke_hub_scope#labels GkeHubScope#labels}
+	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/gke_hub_scope#project GkeHubScope#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/gke_hub_scope#timeouts GkeHubScope#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/gke_hub_scope#timeouts GkeHubScope#timeouts}
 	Timeouts *GkeHubScopeTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

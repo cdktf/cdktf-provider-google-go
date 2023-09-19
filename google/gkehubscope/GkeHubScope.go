@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/gke_hub_scope google_gke_hub_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/gke_hub_scope google_gke_hub_scope}.
 type GkeHubScope interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -44,6 +44,9 @@ type GkeHubScope interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -105,6 +108,7 @@ type GkeHubScope interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GkeHubScopeTimeouts)
 	ResetId()
+	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -240,6 +244,26 @@ func (j *jsiiProxy_GkeHubScope) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubScope) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubScope) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -426,7 +450,7 @@ func (j *jsiiProxy_GkeHubScope) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/gke_hub_scope google_gke_hub_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/gke_hub_scope google_gke_hub_scope} Resource.
 func NewGkeHubScope(scope constructs.Construct, id *string, config *GkeHubScopeConfig) GkeHubScope {
 	_init_.Initialize()
 
@@ -444,7 +468,7 @@ func NewGkeHubScope(scope constructs.Construct, id *string, config *GkeHubScopeC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/gke_hub_scope google_gke_hub_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/gke_hub_scope google_gke_hub_scope} Resource.
 func NewGkeHubScope_Override(g GkeHubScope, scope constructs.Construct, id *string, config *GkeHubScopeConfig) {
 	_init_.Initialize()
 
@@ -500,6 +524,17 @@ func (j *jsiiProxy_GkeHubScope)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GkeHubScope)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -837,6 +872,14 @@ func (g *jsiiProxy_GkeHubScope) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeHubScope) ResetLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLabels",
 		nil, // no parameters
 	)
 }

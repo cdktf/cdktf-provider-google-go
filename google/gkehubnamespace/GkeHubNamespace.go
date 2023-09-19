@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/gke_hub_namespace google_gke_hub_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/gke_hub_namespace google_gke_hub_namespace}.
 type GkeHubNamespace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -44,11 +44,17 @@ type GkeHubNamespace interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Name() *string
+	NamespaceLabels() *map[string]*string
+	SetNamespaceLabels(val *map[string]*string)
+	NamespaceLabelsInput() *map[string]*string
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -111,6 +117,8 @@ type GkeHubNamespace interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GkeHubNamespaceTimeouts)
 	ResetId()
+	ResetLabels()
+	ResetNamespaceLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -251,6 +259,26 @@ func (j *jsiiProxy_GkeHubNamespace) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GkeHubNamespace) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubNamespace) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GkeHubNamespace) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -266,6 +294,26 @@ func (j *jsiiProxy_GkeHubNamespace) Name() *string {
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubNamespace) NamespaceLabels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"namespaceLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubNamespace) NamespaceLabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"namespaceLabelsInput",
 		&returns,
 	)
 	return returns
@@ -472,7 +520,7 @@ func (j *jsiiProxy_GkeHubNamespace) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/gke_hub_namespace google_gke_hub_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/gke_hub_namespace google_gke_hub_namespace} Resource.
 func NewGkeHubNamespace(scope constructs.Construct, id *string, config *GkeHubNamespaceConfig) GkeHubNamespace {
 	_init_.Initialize()
 
@@ -490,7 +538,7 @@ func NewGkeHubNamespace(scope constructs.Construct, id *string, config *GkeHubNa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/gke_hub_namespace google_gke_hub_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/gke_hub_namespace google_gke_hub_namespace} Resource.
 func NewGkeHubNamespace_Override(g GkeHubNamespace, scope constructs.Construct, id *string, config *GkeHubNamespaceConfig) {
 	_init_.Initialize()
 
@@ -550,6 +598,17 @@ func (j *jsiiProxy_GkeHubNamespace)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GkeHubNamespace)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GkeHubNamespace)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -557,6 +616,17 @@ func (j *jsiiProxy_GkeHubNamespace)SetLifecycle(val *cdktf.TerraformResourceLife
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GkeHubNamespace)SetNamespaceLabels(val *map[string]*string) {
+	if err := j.validateSetNamespaceLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namespaceLabels",
 		val,
 	)
 }
@@ -905,6 +975,22 @@ func (g *jsiiProxy_GkeHubNamespace) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeHubNamespace) ResetLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeHubNamespace) ResetNamespaceLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNamespaceLabels",
 		nil, // no parameters
 	)
 }

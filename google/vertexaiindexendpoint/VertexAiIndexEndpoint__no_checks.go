@@ -111,6 +111,10 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_VertexAiIndexEndpoint) validateSetPublicEndpointEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VertexAiIndexEndpoint) validateSetRegionParameters(val *string) error {
 	return nil
 }

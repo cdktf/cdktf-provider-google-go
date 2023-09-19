@@ -59,6 +59,10 @@ func (c *jsiiProxy_ContainerAttachedCluster) validatePutAuthorizationParameters(
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAttachedCluster) validatePutBinaryAuthorizationParameters(value *ContainerAttachedClusterBinaryAuthorization) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAttachedCluster) validatePutFleetParameters(value *ContainerAttachedClusterFleet) error {
 	return nil
 }

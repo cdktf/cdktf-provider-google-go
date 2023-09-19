@@ -79,6 +79,10 @@ func (j *jsiiProxy_SecretManagerSecretVersion) validateSetCountParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_SecretManagerSecretVersion) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretManagerSecretVersion) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

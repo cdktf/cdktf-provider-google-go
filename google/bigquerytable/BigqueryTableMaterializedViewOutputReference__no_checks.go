@@ -51,6 +51,10 @@ func (b *jsiiProxy_BigqueryTableMaterializedViewOutputReference) validateResolve
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) validateSetAllowNonIncrementalDefinitionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryTableMaterializedViewOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

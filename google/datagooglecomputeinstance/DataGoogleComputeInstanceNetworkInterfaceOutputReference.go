@@ -32,10 +32,12 @@ type DataGoogleComputeInstanceNetworkInterfaceOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InternalIpv6PrefixLength() *float64
 	InternalValue() *DataGoogleComputeInstanceNetworkInterface
 	SetInternalValue(val *DataGoogleComputeInstanceNetworkInterface)
 	Ipv6AccessConfig() DataGoogleComputeInstanceNetworkInterfaceIpv6AccessConfigList
 	Ipv6AccessType() *string
+	Ipv6Address() *string
 	Name() *string
 	Network() *string
 	NetworkIp() *string
@@ -151,6 +153,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceOutputReference) Fqn
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceOutputReference) InternalIpv6PrefixLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"internalIpv6PrefixLength",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceOutputReference) InternalValue() *DataGoogleComputeInstanceNetworkInterface {
 	var returns *DataGoogleComputeInstanceNetworkInterface
 	_jsii_.Get(
@@ -176,6 +188,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceOutputReference) Ipv
 	_jsii_.Get(
 		j,
 		"ipv6AccessType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceOutputReference) Ipv6Address() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Address",
 		&returns,
 	)
 	return returns

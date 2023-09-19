@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/dataplex_task_iam_binding google_dataplex_task_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/dataplex_task_iam_binding google_dataplex_task_iam_binding}.
 type DataplexTaskIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -464,7 +464,7 @@ func (j *jsiiProxy_DataplexTaskIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/dataplex_task_iam_binding google_dataplex_task_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/dataplex_task_iam_binding google_dataplex_task_iam_binding} Resource.
 func NewDataplexTaskIamBinding(scope constructs.Construct, id *string, config *DataplexTaskIamBindingConfig) DataplexTaskIamBinding {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewDataplexTaskIamBinding(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/dataplex_task_iam_binding google_dataplex_task_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/dataplex_task_iam_binding google_dataplex_task_iam_binding} Resource.
 func NewDataplexTaskIamBinding_Override(d DataplexTaskIamBinding, scope constructs.Construct, id *string, config *DataplexTaskIamBindingConfig) {
 	_init_.Initialize()
 

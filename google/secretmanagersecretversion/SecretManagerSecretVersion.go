@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version}.
 type SecretManagerSecretVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,9 @@ type SecretManagerSecretVersion interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DeletionPolicy() *string
+	SetDeletionPolicy(val *string)
+	DeletionPolicyInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -105,6 +108,7 @@ type SecretManagerSecretVersion interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *SecretManagerSecretVersionTimeouts)
+	ResetDeletionPolicy()
 	ResetEnabled()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -171,6 +175,26 @@ func (j *jsiiProxy_SecretManagerSecretVersion) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretManagerSecretVersion) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretManagerSecretVersion) DeletionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -427,7 +451,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource.
 func NewSecretManagerSecretVersion(scope constructs.Construct, id *string, config *SecretManagerSecretVersionConfig) SecretManagerSecretVersion {
 	_init_.Initialize()
 
@@ -445,7 +469,7 @@ func NewSecretManagerSecretVersion(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource.
 func NewSecretManagerSecretVersion_Override(s SecretManagerSecretVersion, scope constructs.Construct, id *string, config *SecretManagerSecretVersionConfig) {
 	_init_.Initialize()
 
@@ -474,6 +498,17 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretManagerSecretVersion)SetDeletionPolicy(val *string) {
+	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionPolicy",
 		val,
 	)
 }
@@ -842,6 +877,14 @@ func (s *jsiiProxy_SecretManagerSecretVersion) PutTimeouts(value *SecretManagerS
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SecretManagerSecretVersion) ResetDeletionPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDeletionPolicy",
+		nil, // no parameters
 	)
 }
 

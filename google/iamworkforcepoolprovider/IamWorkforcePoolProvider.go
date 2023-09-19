@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/iam_workforce_pool_provider google_iam_workforce_pool_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/iam_workforce_pool_provider google_iam_workforce_pool_provider}.
 type IamWorkforcePoolProvider interface {
 	cdktf.TerraformResource
 	AttributeCondition() *string
@@ -572,7 +572,7 @@ func (j *jsiiProxy_IamWorkforcePoolProvider) WorkforcePoolIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/iam_workforce_pool_provider google_iam_workforce_pool_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/iam_workforce_pool_provider google_iam_workforce_pool_provider} Resource.
 func NewIamWorkforcePoolProvider(scope constructs.Construct, id *string, config *IamWorkforcePoolProviderConfig) IamWorkforcePoolProvider {
 	_init_.Initialize()
 
@@ -590,7 +590,7 @@ func NewIamWorkforcePoolProvider(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs/resources/iam_workforce_pool_provider google_iam_workforce_pool_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/iam_workforce_pool_provider google_iam_workforce_pool_provider} Resource.
 func NewIamWorkforcePoolProvider_Override(i IamWorkforcePoolProvider, scope constructs.Construct, id *string, config *IamWorkforcePoolProviderConfig) {
 	_init_.Initialize()
 

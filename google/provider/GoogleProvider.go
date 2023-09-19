@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -184,6 +184,9 @@ type GoogleProvider interface {
 	DataLossPreventionCustomEndpoint() *string
 	SetDataLossPreventionCustomEndpoint(val *string)
 	DataLossPreventionCustomEndpointInput() *string
+	DataPipelineCustomEndpoint() *string
+	SetDataPipelineCustomEndpoint(val *string)
+	DataPipelineCustomEndpointInput() *string
 	DataplexCustomEndpoint() *string
 	SetDataplexCustomEndpoint(val *string)
 	DataplexCustomEndpointInput() *string
@@ -395,6 +398,9 @@ type GoogleProvider interface {
 	StorageCustomEndpoint() *string
 	SetStorageCustomEndpoint(val *string)
 	StorageCustomEndpointInput() *string
+	StorageInsightsCustomEndpoint() *string
+	SetStorageInsightsCustomEndpoint(val *string)
+	StorageInsightsCustomEndpointInput() *string
 	StorageTransferCustomEndpoint() *string
 	SetStorageTransferCustomEndpoint(val *string)
 	StorageTransferCustomEndpointInput() *string
@@ -488,6 +494,7 @@ type GoogleProvider interface {
 	ResetDataflowCustomEndpoint()
 	ResetDataFusionCustomEndpoint()
 	ResetDataLossPreventionCustomEndpoint()
+	ResetDataPipelineCustomEndpoint()
 	ResetDataplexCustomEndpoint()
 	ResetDataprocCustomEndpoint()
 	ResetDataprocMetastoreCustomEndpoint()
@@ -558,6 +565,7 @@ type GoogleProvider interface {
 	ResetSpannerCustomEndpoint()
 	ResetSqlCustomEndpoint()
 	ResetStorageCustomEndpoint()
+	ResetStorageInsightsCustomEndpoint()
 	ResetStorageTransferCustomEndpoint()
 	ResetTagsCustomEndpoint()
 	ResetTagsLocationCustomEndpoint()
@@ -1697,6 +1705,26 @@ func (j *jsiiProxy_GoogleProvider) DataLossPreventionCustomEndpointInput() *stri
 	_jsii_.Get(
 		j,
 		"dataLossPreventionCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) DataPipelineCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataPipelineCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) DataPipelineCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataPipelineCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3092,6 +3120,26 @@ func (j *jsiiProxy_GoogleProvider) StorageCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) StorageInsightsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageInsightsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) StorageInsightsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageInsightsCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) StorageTransferCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3303,7 +3351,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3321,7 +3369,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.82.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -3771,6 +3819,14 @@ func (j *jsiiProxy_GoogleProvider)SetDataLossPreventionCustomEndpoint(val *strin
 	_jsii_.Set(
 		j,
 		"dataLossPreventionCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetDataPipelineCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"dataPipelineCustomEndpoint",
 		val,
 	)
 }
@@ -4307,6 +4363,14 @@ func (j *jsiiProxy_GoogleProvider)SetStorageCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"storageCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetStorageInsightsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"storageInsightsCustomEndpoint",
 		val,
 	)
 }
@@ -4932,6 +4996,14 @@ func (g *jsiiProxy_GoogleProvider) ResetDataLossPreventionCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetDataPipelineCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDataPipelineCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetDataplexCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5472,6 +5544,14 @@ func (g *jsiiProxy_GoogleProvider) ResetStorageCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetStorageCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetStorageInsightsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStorageInsightsCustomEndpoint",
 		nil, // no parameters
 	)
 }
