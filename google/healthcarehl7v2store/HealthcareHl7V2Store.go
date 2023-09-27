@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store}.
 type HealthcareHl7V2Store interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -466,7 +466,7 @@ func (j *jsiiProxy_HealthcareHl7V2Store) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store} Resource.
 func NewHealthcareHl7V2Store(scope constructs.Construct, id *string, config *HealthcareHl7V2StoreConfig) HealthcareHl7V2Store {
 	_init_.Initialize()
 
@@ -484,7 +484,7 @@ func NewHealthcareHl7V2Store(scope constructs.Construct, id *string, config *Hea
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store} Resource.
 func NewHealthcareHl7V2Store_Override(h HealthcareHl7V2Store, scope constructs.Construct, id *string, config *HealthcareHl7V2StoreConfig) {
 	_init_.Initialize()
 

@@ -139,6 +139,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutNodePoolParameters(value interfa
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutNodePoolAutoConfigParameters(value *ContainerClusterNodePoolAutoConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutNodePoolDefaultsParameters(value *ContainerClusterNodePoolDefaults) error {
 	return nil
 }

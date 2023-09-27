@@ -59,6 +59,10 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutEpheme
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutFastSocketParameters(value *ContainerNodePoolNodeConfigFastSocket) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutGcfsConfigParameters(value *ContainerNodePoolNodeConfigGcfsConfig) error {
 	return nil
 }

@@ -47,6 +47,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "linkedInterconnectAttachmentsInput", GoGetter: "LinkedInterconnectAttachmentsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "linkedRouterApplianceInstances", GoGetter: "LinkedRouterApplianceInstances"},
 			_jsii_.MemberProperty{JsiiProperty: "linkedRouterApplianceInstancesInput", GoGetter: "LinkedRouterApplianceInstancesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "linkedVpcNetwork", GoGetter: "LinkedVpcNetwork"},
+			_jsii_.MemberProperty{JsiiProperty: "linkedVpcNetworkInput", GoGetter: "LinkedVpcNetworkInput"},
 			_jsii_.MemberProperty{JsiiProperty: "linkedVpnTunnels", GoGetter: "LinkedVpnTunnels"},
 			_jsii_.MemberProperty{JsiiProperty: "linkedVpnTunnelsInput", GoGetter: "LinkedVpnTunnelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
@@ -61,6 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putLinkedInterconnectAttachments", GoMethod: "PutLinkedInterconnectAttachments"},
 			_jsii_.MemberMethod{JsiiMethod: "putLinkedRouterApplianceInstances", GoMethod: "PutLinkedRouterApplianceInstances"},
+			_jsii_.MemberMethod{JsiiMethod: "putLinkedVpcNetwork", GoMethod: "PutLinkedVpcNetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "putLinkedVpnTunnels", GoMethod: "PutLinkedVpnTunnels"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -69,6 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLinkedInterconnectAttachments", GoMethod: "ResetLinkedInterconnectAttachments"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLinkedRouterApplianceInstances", GoMethod: "ResetLinkedRouterApplianceInstances"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLinkedVpcNetwork", GoMethod: "ResetLinkedVpcNetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLinkedVpnTunnels", GoMethod: "ResetLinkedVpnTunnels"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
@@ -236,6 +240,47 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedVpcNetwork",
+		reflect.TypeOf((*NetworkConnectivitySpokeLinkedVpcNetwork)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedVpcNetworkOutputReference",
+		reflect.TypeOf((*NetworkConnectivitySpokeLinkedVpcNetworkOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "excludeExportRanges", GoGetter: "ExcludeExportRanges"},
+			_jsii_.MemberProperty{JsiiProperty: "excludeExportRangesInput", GoGetter: "ExcludeExportRangesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExcludeExportRanges", GoMethod: "ResetExcludeExportRanges"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
+			_jsii_.MemberProperty{JsiiProperty: "uriInput", GoGetter: "UriInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

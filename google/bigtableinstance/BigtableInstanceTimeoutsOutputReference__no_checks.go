@@ -67,6 +67,10 @@ func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) validateSetInternalV
 	return nil
 }
 
+func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) validateSetReadParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

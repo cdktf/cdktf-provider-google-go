@@ -43,6 +43,9 @@ type ContainerNodePoolPlacementPolicyOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TpuTopology() *string
+	SetTpuTopology(val *string)
+	TpuTopologyInput() *string
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -71,6 +74,7 @@ type ContainerNodePoolPlacementPolicyOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetPolicyName()
+	ResetTpuTopology()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -171,6 +175,26 @@ func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) TerraformRes
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) TpuTopology() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpuTopology",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) TpuTopologyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpuTopologyInput",
 		&returns,
 	)
 	return returns
@@ -286,6 +310,17 @@ func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetTerraformR
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetTpuTopology(val *string) {
+	if err := j.validateSetTpuTopologyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tpuTopology",
 		val,
 	)
 }
@@ -491,6 +526,14 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) ResetPolicyN
 	_jsii_.InvokeVoid(
 		c,
 		"resetPolicyName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) ResetTpuTopology() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTpuTopology",
 		nil, // no parameters
 	)
 }

@@ -43,6 +43,8 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	DiskTypeInput() *string
 	EphemeralStorageLocalSsdConfig() ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference
 	EphemeralStorageLocalSsdConfigInput() *ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig
+	FastSocket() ContainerClusterNodePoolNodeConfigFastSocketOutputReference
+	FastSocketInput() *ContainerClusterNodePoolNodeConfigFastSocket
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference
@@ -148,6 +150,7 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	PutAdvancedMachineFeatures(value *ContainerClusterNodePoolNodeConfigAdvancedMachineFeatures)
 	PutConfidentialNodes(value *ContainerClusterNodePoolNodeConfigConfidentialNodes)
 	PutEphemeralStorageLocalSsdConfig(value *ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig)
+	PutFastSocket(value *ContainerClusterNodePoolNodeConfigFastSocket)
 	PutGcfsConfig(value *ContainerClusterNodePoolNodeConfigGcfsConfig)
 	PutGuestAccelerator(value interface{})
 	PutGvnic(value *ContainerClusterNodePoolNodeConfigGvnic)
@@ -166,6 +169,7 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetDiskSizeGb()
 	ResetDiskType()
 	ResetEphemeralStorageLocalSsdConfig()
+	ResetFastSocket()
 	ResetGcfsConfig()
 	ResetGuestAccelerator()
 	ResetGvnic()
@@ -352,6 +356,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) EphemeralS
 	_jsii_.Get(
 		j,
 		"ephemeralStorageLocalSsdConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) FastSocket() ContainerClusterNodePoolNodeConfigFastSocketOutputReference {
+	var returns ContainerClusterNodePoolNodeConfigFastSocketOutputReference
+	_jsii_.Get(
+		j,
+		"fastSocket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) FastSocketInput() *ContainerClusterNodePoolNodeConfigFastSocket {
+	var returns *ContainerClusterNodePoolNodeConfigFastSocket
+	_jsii_.Get(
+		j,
+		"fastSocketInput",
 		&returns,
 	)
 	return returns
@@ -1406,6 +1430,17 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutEphemer
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutFastSocket(value *ContainerClusterNodePoolNodeConfigFastSocket) {
+	if err := c.validatePutFastSocketParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putFastSocket",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) PutGcfsConfig(value *ContainerClusterNodePoolNodeConfigGcfsConfig) {
 	if err := c.validatePutGcfsConfigParameters(value); err != nil {
 		panic(err)
@@ -1582,6 +1617,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetEphem
 	_jsii_.InvokeVoid(
 		c,
 		"resetEphemeralStorageLocalSsdConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetFastSocket() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFastSocket",
 		nil, // no parameters
 	)
 }

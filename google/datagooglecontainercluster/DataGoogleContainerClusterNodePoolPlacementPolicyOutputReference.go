@@ -41,6 +41,7 @@ type DataGoogleContainerClusterNodePoolPlacementPolicyOutputReference interface 
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TpuTopology() *string
 	Type() *string
 	// Experimental.
 	ComputeFqn() *string
@@ -156,6 +157,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolPlacementPolicyOutputRefere
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolPlacementPolicyOutputReference) TpuTopology() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpuTopology",
 		&returns,
 	)
 	return returns

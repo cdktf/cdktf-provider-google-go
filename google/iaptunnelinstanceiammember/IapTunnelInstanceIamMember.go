@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/iap_tunnel_instance_iam_member google_iap_tunnel_instance_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/iap_tunnel_instance_iam_member google_iap_tunnel_instance_iam_member}.
 type IapTunnelInstanceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_IapTunnelInstanceIamMember) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/iap_tunnel_instance_iam_member google_iap_tunnel_instance_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/iap_tunnel_instance_iam_member google_iap_tunnel_instance_iam_member} Resource.
 func NewIapTunnelInstanceIamMember(scope constructs.Construct, id *string, config *IapTunnelInstanceIamMemberConfig) IapTunnelInstanceIamMember {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewIapTunnelInstanceIamMember(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/iap_tunnel_instance_iam_member google_iap_tunnel_instance_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/iap_tunnel_instance_iam_member google_iap_tunnel_instance_iam_member} Resource.
 func NewIapTunnelInstanceIamMember_Override(i IapTunnelInstanceIamMember, scope constructs.Construct, id *string, config *IapTunnelInstanceIamMemberConfig) {
 	_init_.Initialize()
 

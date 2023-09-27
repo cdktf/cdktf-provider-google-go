@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/firestore_database google_firestore_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/firestore_database google_firestore_database}.
 type FirestoreDatabase interface {
 	cdktf.TerraformResource
 	AppEngineIntegrationMode() *string
@@ -34,6 +34,9 @@ type FirestoreDatabase interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DeleteProtectionState() *string
+	SetDeleteProtectionState(val *string)
+	DeleteProtectionStateInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -122,6 +125,7 @@ type FirestoreDatabase interface {
 	PutTimeouts(value *FirestoreDatabaseTimeouts)
 	ResetAppEngineIntegrationMode()
 	ResetConcurrencyMode()
+	ResetDeleteProtectionState()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -229,6 +233,26 @@ func (j *jsiiProxy_FirestoreDatabase) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreDatabase) DeleteProtectionState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteProtectionState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreDatabase) DeleteProtectionStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteProtectionStateInput",
 		&returns,
 	)
 	return returns
@@ -555,7 +579,7 @@ func (j *jsiiProxy_FirestoreDatabase) VersionRetentionPeriod() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/firestore_database google_firestore_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/firestore_database google_firestore_database} Resource.
 func NewFirestoreDatabase(scope constructs.Construct, id *string, config *FirestoreDatabaseConfig) FirestoreDatabase {
 	_init_.Initialize()
 
@@ -573,7 +597,7 @@ func NewFirestoreDatabase(scope constructs.Construct, id *string, config *Firest
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/firestore_database google_firestore_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/firestore_database google_firestore_database} Resource.
 func NewFirestoreDatabase_Override(f FirestoreDatabase, scope constructs.Construct, id *string, config *FirestoreDatabaseConfig) {
 	_init_.Initialize()
 
@@ -624,6 +648,17 @@ func (j *jsiiProxy_FirestoreDatabase)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FirestoreDatabase)SetDeleteProtectionState(val *string) {
+	if err := j.validateSetDeleteProtectionStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteProtectionState",
 		val,
 	)
 }
@@ -1029,6 +1064,14 @@ func (f *jsiiProxy_FirestoreDatabase) ResetConcurrencyMode() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetConcurrencyMode",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FirestoreDatabase) ResetDeleteProtectionState() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDeleteProtectionState",
 		nil, // no parameters
 	)
 }

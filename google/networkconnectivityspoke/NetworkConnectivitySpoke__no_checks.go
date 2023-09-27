@@ -63,6 +63,10 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) validatePutLinkedRouterApplianceIns
 	return nil
 }
 
+func (n *jsiiProxy_NetworkConnectivitySpoke) validatePutLinkedVpcNetworkParameters(value *NetworkConnectivitySpokeLinkedVpcNetwork) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivitySpoke) validatePutLinkedVpnTunnelsParameters(value *NetworkConnectivitySpokeLinkedVpnTunnels) error {
 	return nil
 }

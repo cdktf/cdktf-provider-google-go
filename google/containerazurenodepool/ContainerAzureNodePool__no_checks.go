@@ -63,6 +63,10 @@ func (c *jsiiProxy_ContainerAzureNodePool) validatePutConfigParameters(value *Co
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAzureNodePool) validatePutManagementParameters(value *ContainerAzureNodePoolManagement) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAzureNodePool) validatePutMaxPodsConstraintParameters(value *ContainerAzureNodePoolMaxPodsConstraint) error {
 	return nil
 }

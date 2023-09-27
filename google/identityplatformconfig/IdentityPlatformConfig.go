@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/identity_platform_config google_identity_platform_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/identity_platform_config google_identity_platform_config}.
 type IdentityPlatformConfig interface {
 	cdktf.TerraformResource
 	AuthorizedDomains() *[]*string
@@ -72,6 +72,8 @@ type IdentityPlatformConfig interface {
 	QuotaInput() *IdentityPlatformConfigQuota
 	// Experimental.
 	RawOverrides() interface{}
+	SignIn() IdentityPlatformConfigSignInOutputReference
+	SignInInput() *IdentityPlatformConfigSignIn
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -107,6 +109,7 @@ type IdentityPlatformConfig interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutBlockingFunctions(value *IdentityPlatformConfigBlockingFunctions)
 	PutQuota(value *IdentityPlatformConfigQuota)
+	PutSignIn(value *IdentityPlatformConfigSignIn)
 	PutTimeouts(value *IdentityPlatformConfigTimeouts)
 	ResetAuthorizedDomains()
 	ResetAutodeleteAnonymousUsers()
@@ -117,6 +120,7 @@ type IdentityPlatformConfig interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetQuota()
+	ResetSignIn()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -393,6 +397,26 @@ func (j *jsiiProxy_IdentityPlatformConfig) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IdentityPlatformConfig) SignIn() IdentityPlatformConfigSignInOutputReference {
+	var returns IdentityPlatformConfigSignInOutputReference
+	_jsii_.Get(
+		j,
+		"signIn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityPlatformConfig) SignInInput() *IdentityPlatformConfigSignIn {
+	var returns *IdentityPlatformConfigSignIn
+	_jsii_.Get(
+		j,
+		"signInInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IdentityPlatformConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -444,7 +468,7 @@ func (j *jsiiProxy_IdentityPlatformConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/identity_platform_config google_identity_platform_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/identity_platform_config google_identity_platform_config} Resource.
 func NewIdentityPlatformConfig(scope constructs.Construct, id *string, config *IdentityPlatformConfigConfig) IdentityPlatformConfig {
 	_init_.Initialize()
 
@@ -462,7 +486,7 @@ func NewIdentityPlatformConfig(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/identity_platform_config google_identity_platform_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/identity_platform_config google_identity_platform_config} Resource.
 func NewIdentityPlatformConfig_Override(i IdentityPlatformConfig, scope constructs.Construct, id *string, config *IdentityPlatformConfigConfig) {
 	_init_.Initialize()
 
@@ -873,6 +897,17 @@ func (i *jsiiProxy_IdentityPlatformConfig) PutQuota(value *IdentityPlatformConfi
 	)
 }
 
+func (i *jsiiProxy_IdentityPlatformConfig) PutSignIn(value *IdentityPlatformConfigSignIn) {
+	if err := i.validatePutSignInParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putSignIn",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IdentityPlatformConfig) PutTimeouts(value *IdentityPlatformConfigTimeouts) {
 	if err := i.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -936,6 +971,14 @@ func (i *jsiiProxy_IdentityPlatformConfig) ResetQuota() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetQuota",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) ResetSignIn() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetSignIn",
 		nil, // no parameters
 	)
 }

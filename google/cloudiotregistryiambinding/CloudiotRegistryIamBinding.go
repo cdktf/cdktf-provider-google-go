@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/cloudiot_registry_iam_binding google_cloudiot_registry_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/cloudiot_registry_iam_binding google_cloudiot_registry_iam_binding}.
 type CloudiotRegistryIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_CloudiotRegistryIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/cloudiot_registry_iam_binding google_cloudiot_registry_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/cloudiot_registry_iam_binding google_cloudiot_registry_iam_binding} Resource.
 func NewCloudiotRegistryIamBinding(scope constructs.Construct, id *string, config *CloudiotRegistryIamBindingConfig) CloudiotRegistryIamBinding {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewCloudiotRegistryIamBinding(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/cloudiot_registry_iam_binding google_cloudiot_registry_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/cloudiot_registry_iam_binding google_cloudiot_registry_iam_binding} Resource.
 func NewCloudiotRegistryIamBinding_Override(c CloudiotRegistryIamBinding, scope constructs.Construct, id *string, config *CloudiotRegistryIamBindingConfig) {
 	_init_.Initialize()
 

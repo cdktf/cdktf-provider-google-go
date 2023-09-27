@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/container_cluster google_container_cluster}.
 type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
@@ -158,6 +158,8 @@ type ContainerCluster interface {
 	SetNodeLocations(val *[]*string)
 	NodeLocationsInput() *[]*string
 	NodePool() ContainerClusterNodePoolList
+	NodePoolAutoConfig() ContainerClusterNodePoolAutoConfigOutputReference
+	NodePoolAutoConfigInput() *ContainerClusterNodePoolAutoConfig
 	NodePoolDefaults() ContainerClusterNodePoolDefaultsOutputReference
 	NodePoolDefaultsInput() *ContainerClusterNodePoolDefaults
 	NodePoolInput() interface{}
@@ -263,6 +265,7 @@ type ContainerCluster interface {
 	PutNetworkPolicy(value *ContainerClusterNetworkPolicy)
 	PutNodeConfig(value *ContainerClusterNodeConfig)
 	PutNodePool(value interface{})
+	PutNodePoolAutoConfig(value *ContainerClusterNodePoolAutoConfig)
 	PutNodePoolDefaults(value *ContainerClusterNodePoolDefaults)
 	PutNotificationConfig(value *ContainerClusterNotificationConfig)
 	PutPrivateClusterConfig(value *ContainerClusterPrivateClusterConfig)
@@ -316,6 +319,7 @@ type ContainerCluster interface {
 	ResetNodeConfig()
 	ResetNodeLocations()
 	ResetNodePool()
+	ResetNodePoolAutoConfig()
 	ResetNodePoolDefaults()
 	ResetNodeVersion()
 	ResetNotificationConfig()
@@ -1350,6 +1354,26 @@ func (j *jsiiProxy_ContainerCluster) NodePool() ContainerClusterNodePoolList {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerCluster) NodePoolAutoConfig() ContainerClusterNodePoolAutoConfigOutputReference {
+	var returns ContainerClusterNodePoolAutoConfigOutputReference
+	_jsii_.Get(
+		j,
+		"nodePoolAutoConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) NodePoolAutoConfigInput() *ContainerClusterNodePoolAutoConfig {
+	var returns *ContainerClusterNodePoolAutoConfig
+	_jsii_.Get(
+		j,
+		"nodePoolAutoConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerCluster) NodePoolDefaults() ContainerClusterNodePoolDefaultsOutputReference {
 	var returns ContainerClusterNodePoolDefaultsOutputReference
 	_jsii_.Get(
@@ -1781,7 +1805,7 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
 
@@ -1799,7 +1823,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct, id *string, config *ContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -2694,6 +2718,17 @@ func (c *jsiiProxy_ContainerCluster) PutNodePool(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutNodePoolAutoConfig(value *ContainerClusterNodePoolAutoConfig) {
+	if err := c.validatePutNodePoolAutoConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNodePoolAutoConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutNodePoolDefaults(value *ContainerClusterNodePoolDefaults) {
 	if err := c.validatePutNodePoolDefaultsParameters(value); err != nil {
 		panic(err)
@@ -3144,6 +3179,14 @@ func (c *jsiiProxy_ContainerCluster) ResetNodePool() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetNodePool",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetNodePoolAutoConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNodePoolAutoConfig",
 		nil, // no parameters
 	)
 }

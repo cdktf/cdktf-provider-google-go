@@ -59,6 +59,10 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePu
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePutFastSocketParameters(value *ContainerClusterNodePoolNodeConfigFastSocket) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validatePutGcfsConfigParameters(value *ContainerClusterNodePoolNodeConfigGcfsConfig) error {
 	return nil
 }

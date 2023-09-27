@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy}.
 type DataprocMetastoreServiceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataprocMetastoreServiceIamPolicy) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy} Resource.
 func NewDataprocMetastoreServiceIamPolicy(scope constructs.Construct, id *string, config *DataprocMetastoreServiceIamPolicyConfig) DataprocMetastoreServiceIamPolicy {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataprocMetastoreServiceIamPolicy(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy} Resource.
 func NewDataprocMetastoreServiceIamPolicy_Override(d DataprocMetastoreServiceIamPolicy, scope constructs.Construct, id *string, config *DataprocMetastoreServiceIamPolicyConfig) {
 	_init_.Initialize()
 

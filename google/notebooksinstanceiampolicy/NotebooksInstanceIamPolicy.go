@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/notebooks_instance_iam_policy google_notebooks_instance_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/notebooks_instance_iam_policy google_notebooks_instance_iam_policy}.
 type NotebooksInstanceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_NotebooksInstanceIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/notebooks_instance_iam_policy google_notebooks_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/notebooks_instance_iam_policy google_notebooks_instance_iam_policy} Resource.
 func NewNotebooksInstanceIamPolicy(scope constructs.Construct, id *string, config *NotebooksInstanceIamPolicyConfig) NotebooksInstanceIamPolicy {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewNotebooksInstanceIamPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/notebooks_instance_iam_policy google_notebooks_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/notebooks_instance_iam_policy google_notebooks_instance_iam_policy} Resource.
 func NewNotebooksInstanceIamPolicy_Override(n NotebooksInstanceIamPolicy, scope constructs.Construct, id *string, config *NotebooksInstanceIamPolicyConfig) {
 	_init_.Initialize()
 

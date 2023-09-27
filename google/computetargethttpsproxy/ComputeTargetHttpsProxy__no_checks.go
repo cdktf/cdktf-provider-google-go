@@ -119,6 +119,10 @@ func (j *jsiiProxy_ComputeTargetHttpsProxy) validateSetQuicOverrideParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ComputeTargetHttpsProxy) validateSetServerTlsPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeTargetHttpsProxy) validateSetSslCertificatesParameters(val *[]*string) error {
 	return nil
 }

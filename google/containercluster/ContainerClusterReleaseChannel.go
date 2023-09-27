@@ -13,7 +13,7 @@ type ContainerClusterReleaseChannel struct {
 	// REGULAR: Multiple per month upgrade cadence; Production users who need features not yet offered in the Stable channel.
 	// STABLE: Every few months upgrade cadence; Production users who need stability above all else, and for whom frequent upgrades are too risky.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/container_cluster#channel ContainerCluster#channel}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/container_cluster#channel ContainerCluster#channel}
 	Channel *string `field:"required" json:"channel" yaml:"channel"`
 }
 

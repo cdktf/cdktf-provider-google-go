@@ -35,6 +35,9 @@ type BigtableInstanceTimeoutsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Read() *string
+	SetRead(val *string)
+	ReadInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,6 +74,7 @@ type BigtableInstanceTimeoutsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
+	ResetRead()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) InternalValue() inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) Read() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"read",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference) ReadInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +289,17 @@ func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference)SetInternalValue(val 
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigtableInstanceTimeoutsOutputReference)SetRead(val *string) {
+	if err := j.validateSetReadParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"read",
 		val,
 	)
 }
@@ -492,6 +527,14 @@ func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) ResetCreate() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetCreate",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigtableInstanceTimeoutsOutputReference) ResetRead() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRead",
 		nil, // no parameters
 	)
 }

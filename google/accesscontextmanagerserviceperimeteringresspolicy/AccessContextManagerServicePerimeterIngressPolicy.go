@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/access_context_manager_service_perimeter_ingress_policy google_access_context_manager_service_perimeter_ingress_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/access_context_manager_service_perimeter_ingress_policy google_access_context_manager_service_perimeter_ingress_policy}.
 type AccessContextManagerServicePerimeterIngressPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -384,7 +384,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicy) TimeoutsIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/access_context_manager_service_perimeter_ingress_policy google_access_context_manager_service_perimeter_ingress_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/access_context_manager_service_perimeter_ingress_policy google_access_context_manager_service_perimeter_ingress_policy} Resource.
 func NewAccessContextManagerServicePerimeterIngressPolicy(scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterIngressPolicyConfig) AccessContextManagerServicePerimeterIngressPolicy {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewAccessContextManagerServicePerimeterIngressPolicy(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/access_context_manager_service_perimeter_ingress_policy google_access_context_manager_service_perimeter_ingress_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/access_context_manager_service_perimeter_ingress_policy google_access_context_manager_service_perimeter_ingress_policy} Resource.
 func NewAccessContextManagerServicePerimeterIngressPolicy_Override(a AccessContextManagerServicePerimeterIngressPolicy, scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterIngressPolicyConfig) {
 	_init_.Initialize()
 

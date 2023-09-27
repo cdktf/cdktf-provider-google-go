@@ -136,6 +136,17 @@ func (i *jsiiProxy_IdentityPlatformConfig) validatePutQuotaParameters(value *Ide
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformConfig) validatePutSignInParameters(value *IdentityPlatformConfigSignIn) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformConfig) validatePutTimeoutsParameters(value *IdentityPlatformConfigTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

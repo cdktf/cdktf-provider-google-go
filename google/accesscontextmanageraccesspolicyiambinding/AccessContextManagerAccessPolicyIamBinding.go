@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/access_context_manager_access_policy_iam_binding google_access_context_manager_access_policy_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/access_context_manager_access_policy_iam_binding google_access_context_manager_access_policy_iam_binding}.
 type AccessContextManagerAccessPolicyIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/access_context_manager_access_policy_iam_binding google_access_context_manager_access_policy_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/access_context_manager_access_policy_iam_binding google_access_context_manager_access_policy_iam_binding} Resource.
 func NewAccessContextManagerAccessPolicyIamBinding(scope constructs.Construct, id *string, config *AccessContextManagerAccessPolicyIamBindingConfig) AccessContextManagerAccessPolicyIamBinding {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewAccessContextManagerAccessPolicyIamBinding(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/access_context_manager_access_policy_iam_binding google_access_context_manager_access_policy_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/access_context_manager_access_policy_iam_binding google_access_context_manager_access_policy_iam_binding} Resource.
 func NewAccessContextManagerAccessPolicyIamBinding_Override(a AccessContextManagerAccessPolicyIamBinding, scope constructs.Construct, id *string, config *AccessContextManagerAccessPolicyIamBindingConfig) {
 	_init_.Initialize()
 

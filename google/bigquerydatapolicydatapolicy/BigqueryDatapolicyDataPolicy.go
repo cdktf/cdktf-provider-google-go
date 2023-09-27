@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/bigquery_datapolicy_data_policy google_bigquery_datapolicy_data_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/bigquery_datapolicy_data_policy google_bigquery_datapolicy_data_policy}.
 type BigqueryDatapolicyDataPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -464,7 +464,7 @@ func (j *jsiiProxy_BigqueryDatapolicyDataPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/bigquery_datapolicy_data_policy google_bigquery_datapolicy_data_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/bigquery_datapolicy_data_policy google_bigquery_datapolicy_data_policy} Resource.
 func NewBigqueryDatapolicyDataPolicy(scope constructs.Construct, id *string, config *BigqueryDatapolicyDataPolicyConfig) BigqueryDatapolicyDataPolicy {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewBigqueryDatapolicyDataPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/bigquery_datapolicy_data_policy google_bigquery_datapolicy_data_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/bigquery_datapolicy_data_policy google_bigquery_datapolicy_data_policy} Resource.
 func NewBigqueryDatapolicyDataPolicy_Override(b BigqueryDatapolicyDataPolicy, scope constructs.Construct, id *string, config *BigqueryDatapolicyDataPolicyConfig) {
 	_init_.Initialize()
 

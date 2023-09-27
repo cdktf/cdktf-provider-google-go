@@ -63,6 +63,10 @@ func (i *jsiiProxy_IdentityPlatformConfig) validatePutQuotaParameters(value *Ide
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformConfig) validatePutSignInParameters(value *IdentityPlatformConfigSignIn) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformConfig) validatePutTimeoutsParameters(value *IdentityPlatformConfigTimeouts) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version}.
 type SecretManagerSecretVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -50,6 +50,9 @@ type SecretManagerSecretVersion interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsSecretDataBase64() interface{}
+	SetIsSecretDataBase64(val interface{})
+	IsSecretDataBase64Input() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -111,6 +114,7 @@ type SecretManagerSecretVersion interface {
 	ResetDeletionPolicy()
 	ResetEnabled()
 	ResetId()
+	ResetIsSecretDataBase64()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -290,6 +294,26 @@ func (j *jsiiProxy_SecretManagerSecretVersion) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SecretManagerSecretVersion) IsSecretDataBase64() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSecretDataBase64",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretManagerSecretVersion) IsSecretDataBase64Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSecretDataBase64Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretManagerSecretVersion) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -451,7 +475,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource.
 func NewSecretManagerSecretVersion(scope constructs.Construct, id *string, config *SecretManagerSecretVersionConfig) SecretManagerSecretVersion {
 	_init_.Initialize()
 
@@ -469,7 +493,7 @@ func NewSecretManagerSecretVersion(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource.
 func NewSecretManagerSecretVersion_Override(s SecretManagerSecretVersion, scope constructs.Construct, id *string, config *SecretManagerSecretVersionConfig) {
 	_init_.Initialize()
 
@@ -547,6 +571,17 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretManagerSecretVersion)SetIsSecretDataBase64(val interface{}) {
+	if err := j.validateSetIsSecretDataBase64Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isSecretDataBase64",
 		val,
 	)
 }
@@ -900,6 +935,14 @@ func (s *jsiiProxy_SecretManagerSecretVersion) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretManagerSecretVersion) ResetIsSecretDataBase64() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIsSecretDataBase64",
 		nil, // no parameters
 	)
 }

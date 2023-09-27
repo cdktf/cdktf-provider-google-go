@@ -365,6 +365,17 @@ func (c *jsiiProxy_ContainerCluster) validatePutNodePoolParameters(value interfa
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutNodePoolAutoConfigParameters(value *ContainerClusterNodePoolAutoConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutNodePoolDefaultsParameters(value *ContainerClusterNodePoolDefaults) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/bigtable_instance_iam_policy google_bigtable_instance_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/bigtable_instance_iam_policy google_bigtable_instance_iam_policy}.
 type BigtableInstanceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_BigtableInstanceIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/bigtable_instance_iam_policy google_bigtable_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/bigtable_instance_iam_policy google_bigtable_instance_iam_policy} Resource.
 func NewBigtableInstanceIamPolicy(scope constructs.Construct, id *string, config *BigtableInstanceIamPolicyConfig) BigtableInstanceIamPolicy {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewBigtableInstanceIamPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/bigtable_instance_iam_policy google_bigtable_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/bigtable_instance_iam_policy google_bigtable_instance_iam_policy} Resource.
 func NewBigtableInstanceIamPolicy_Override(b BigtableInstanceIamPolicy, scope constructs.Construct, id *string, config *BigtableInstanceIamPolicyConfig) {
 	_init_.Initialize()
 

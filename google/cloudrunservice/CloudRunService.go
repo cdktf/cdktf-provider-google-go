@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/cloud_run_service google_cloud_run_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/cloud_run_service google_cloud_run_service}.
 type CloudRunService interface {
 	cdktf.TerraformResource
 	AutogenerateRevisionName() interface{}
@@ -490,7 +490,7 @@ func (j *jsiiProxy_CloudRunService) TrafficInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/cloud_run_service google_cloud_run_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/cloud_run_service google_cloud_run_service} Resource.
 func NewCloudRunService(scope constructs.Construct, id *string, config *CloudRunServiceConfig) CloudRunService {
 	_init_.Initialize()
 
@@ -508,7 +508,7 @@ func NewCloudRunService(scope constructs.Construct, id *string, config *CloudRun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/cloud_run_service google_cloud_run_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/cloud_run_service google_cloud_run_service} Resource.
 func NewCloudRunService_Override(c CloudRunService, scope constructs.Construct, id *string, config *CloudRunServiceConfig) {
 	_init_.Initialize()
 

@@ -75,6 +75,10 @@ func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) validateSetT
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) validateSetTpuTopologyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) validateSetTypeParameters(val *string) error {
 	return nil
 }

@@ -47,6 +47,10 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessOutputReference) valida
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessOutputReference) validatePutNetworkInterfacesParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

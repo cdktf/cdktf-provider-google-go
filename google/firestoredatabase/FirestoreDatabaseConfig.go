@@ -22,9 +22,9 @@ type FirestoreDatabaseConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The location of the database. Available databases are listed at https://cloud.google.com/firestore/docs/locations.
+	// The location of the database. Available locations are listed at https://cloud.google.com/firestore/docs/locations.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/firestore_database#location_id FirestoreDatabase#location_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/firestore_database#location_id FirestoreDatabase#location_id}
 	LocationId *string `field:"required" json:"locationId" yaml:"locationId"`
 	// The ID to use for the database, which will become the final component of the database's resource name.
 	//
@@ -34,21 +34,25 @@ type FirestoreDatabaseConfig struct {
 	// UUID-like /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/.
 	// "(default)" database id is also valid.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/firestore_database#name FirestoreDatabase#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/firestore_database#name FirestoreDatabase#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The type of the database. See https://cloud.google.com/datastore/docs/firestore-or-datastore for information about how to choose. Possible values: ["FIRESTORE_NATIVE", "DATASTORE_MODE"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/firestore_database#type FirestoreDatabase#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/firestore_database#type FirestoreDatabase#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// The App Engine integration mode to use for this database. Possible values: ["ENABLED", "DISABLED"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/firestore_database#app_engine_integration_mode FirestoreDatabase#app_engine_integration_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/firestore_database#app_engine_integration_mode FirestoreDatabase#app_engine_integration_mode}
 	AppEngineIntegrationMode *string `field:"optional" json:"appEngineIntegrationMode" yaml:"appEngineIntegrationMode"`
 	// The concurrency control mode to use for this database. Possible values: ["OPTIMISTIC", "PESSIMISTIC", "OPTIMISTIC_WITH_ENTITY_GROUPS"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/firestore_database#concurrency_mode FirestoreDatabase#concurrency_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/firestore_database#concurrency_mode FirestoreDatabase#concurrency_mode}
 	ConcurrencyMode *string `field:"optional" json:"concurrencyMode" yaml:"concurrencyMode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/firestore_database#id FirestoreDatabase#id}.
+	// State of delete protection for the database. Possible values: ["DELETE_PROTECTION_STATE_UNSPECIFIED", "DELETE_PROTECTION_ENABLED", "DELETE_PROTECTION_DISABLED"].
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/firestore_database#delete_protection_state FirestoreDatabase#delete_protection_state}
+	DeleteProtectionState *string `field:"optional" json:"deleteProtectionState" yaml:"deleteProtectionState"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/firestore_database#id FirestoreDatabase#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -60,13 +64,13 @@ type FirestoreDatabaseConfig struct {
 	// and reads against 1-minute snapshots beyond 1 hour and within 7 days.
 	// If 'POINT_IN_TIME_RECOVERY_DISABLED' is selected, reads are supported on any version of the data from within the past 1 hour. Default value: "POINT_IN_TIME_RECOVERY_DISABLED" Possible values: ["POINT_IN_TIME_RECOVERY_ENABLED", "POINT_IN_TIME_RECOVERY_DISABLED"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/firestore_database#point_in_time_recovery_enablement FirestoreDatabase#point_in_time_recovery_enablement}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/firestore_database#point_in_time_recovery_enablement FirestoreDatabase#point_in_time_recovery_enablement}
 	PointInTimeRecoveryEnablement *string `field:"optional" json:"pointInTimeRecoveryEnablement" yaml:"pointInTimeRecoveryEnablement"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/firestore_database#project FirestoreDatabase#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/firestore_database#project FirestoreDatabase#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/firestore_database#timeouts FirestoreDatabase#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/firestore_database#timeouts FirestoreDatabase#timeouts}
 	Timeouts *FirestoreDatabaseTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

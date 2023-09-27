@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/container_azure_node_pool google_container_azure_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/container_azure_node_pool google_container_azure_node_pool}.
 type ContainerAzureNodePool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -64,6 +64,8 @@ type ContainerAzureNodePool interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	Management() ContainerAzureNodePoolManagementOutputReference
+	ManagementInput() *ContainerAzureNodePoolManagement
 	MaxPodsConstraint() ContainerAzureNodePoolMaxPodsConstraintOutputReference
 	MaxPodsConstraintInput() *ContainerAzureNodePoolMaxPodsConstraint
 	Name() *string
@@ -129,11 +131,13 @@ type ContainerAzureNodePool interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscaling(value *ContainerAzureNodePoolAutoscaling)
 	PutConfig(value *ContainerAzureNodePoolConfigA)
+	PutManagement(value *ContainerAzureNodePoolManagement)
 	PutMaxPodsConstraint(value *ContainerAzureNodePoolMaxPodsConstraint)
 	PutTimeouts(value *ContainerAzureNodePoolTimeouts)
 	ResetAnnotations()
 	ResetAzureAvailabilityZone()
 	ResetId()
+	ResetManagement()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -404,6 +408,26 @@ func (j *jsiiProxy_ContainerAzureNodePool) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerAzureNodePool) Management() ContainerAzureNodePoolManagementOutputReference {
+	var returns ContainerAzureNodePoolManagementOutputReference
+	_jsii_.Get(
+		j,
+		"management",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureNodePool) ManagementInput() *ContainerAzureNodePoolManagement {
+	var returns *ContainerAzureNodePoolManagement
+	_jsii_.Get(
+		j,
+		"managementInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerAzureNodePool) MaxPodsConstraint() ContainerAzureNodePoolMaxPodsConstraintOutputReference {
 	var returns ContainerAzureNodePoolMaxPodsConstraintOutputReference
 	_jsii_.Get(
@@ -635,7 +659,7 @@ func (j *jsiiProxy_ContainerAzureNodePool) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/container_azure_node_pool google_container_azure_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/container_azure_node_pool google_container_azure_node_pool} Resource.
 func NewContainerAzureNodePool(scope constructs.Construct, id *string, config *ContainerAzureNodePoolConfig) ContainerAzureNodePool {
 	_init_.Initialize()
 
@@ -653,7 +677,7 @@ func NewContainerAzureNodePool(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.83.0/docs/resources/container_azure_node_pool google_container_azure_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/container_azure_node_pool google_container_azure_node_pool} Resource.
 func NewContainerAzureNodePool_Override(c ContainerAzureNodePool, scope constructs.Construct, id *string, config *ContainerAzureNodePoolConfig) {
 	_init_.Initialize()
 
@@ -1119,6 +1143,17 @@ func (c *jsiiProxy_ContainerAzureNodePool) PutConfig(value *ContainerAzureNodePo
 	)
 }
 
+func (c *jsiiProxy_ContainerAzureNodePool) PutManagement(value *ContainerAzureNodePoolManagement) {
+	if err := c.validatePutManagementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putManagement",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerAzureNodePool) PutMaxPodsConstraint(value *ContainerAzureNodePoolMaxPodsConstraint) {
 	if err := c.validatePutMaxPodsConstraintParameters(value); err != nil {
 		panic(err)
@@ -1161,6 +1196,14 @@ func (c *jsiiProxy_ContainerAzureNodePool) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureNodePool) ResetManagement() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetManagement",
 		nil, // no parameters
 	)
 }
