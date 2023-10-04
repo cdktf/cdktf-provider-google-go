@@ -5,14 +5,14 @@ package dataplextask
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/dataplextask/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/dataplextask/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataplex_task google_dataplex_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dataplex_task google_dataplex_task}.
 type DataplexTask interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -38,6 +38,7 @@ type DataplexTask interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	ExecutionSpec() DataplexTaskExecutionSpecOutputReference
 	ExecutionSpecInput() *DataplexTaskExecutionSpec
 	ExecutionStatus() DataplexTaskExecutionStatusList
@@ -91,6 +92,7 @@ type DataplexTask interface {
 	TaskIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -255,6 +257,16 @@ func (j *jsiiProxy_DataplexTask) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexTask) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -560,6 +572,16 @@ func (j *jsiiProxy_DataplexTask) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
+func (j *jsiiProxy_DataplexTask) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataplexTask) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -641,7 +663,7 @@ func (j *jsiiProxy_DataplexTask) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataplex_task google_dataplex_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dataplex_task google_dataplex_task} Resource.
 func NewDataplexTask(scope constructs.Construct, id *string, config *DataplexTaskConfig) DataplexTask {
 	_init_.Initialize()
 
@@ -659,7 +681,7 @@ func NewDataplexTask(scope constructs.Construct, id *string, config *DataplexTas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataplex_task google_dataplex_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dataplex_task google_dataplex_task} Resource.
 func NewDataplexTask_Override(d DataplexTask, scope constructs.Construct, id *string, config *DataplexTaskConfig) {
 	_init_.Initialize()
 

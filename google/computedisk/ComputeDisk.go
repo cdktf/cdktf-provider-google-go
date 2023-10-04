@@ -5,14 +5,14 @@ package computedisk
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/computedisk/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/computedisk/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_disk google_compute_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_disk google_compute_disk}.
 type ComputeDisk interface {
 	cdktf.TerraformResource
 	AsyncPrimaryDisk() ComputeDiskAsyncPrimaryDiskOutputReference
@@ -39,6 +39,7 @@ type ComputeDisk interface {
 	DescriptionInput() *string
 	DiskEncryptionKey() ComputeDiskDiskEncryptionKeyOutputReference
 	DiskEncryptionKeyInput() *ComputeDiskDiskEncryptionKey
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -114,6 +115,7 @@ type ComputeDisk interface {
 	SourceSnapshotId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -311,6 +313,16 @@ func (j *jsiiProxy_ComputeDisk) DiskEncryptionKeyInput() *ComputeDiskDiskEncrypt
 	_jsii_.Get(
 		j,
 		"diskEncryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeDisk) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -776,6 +788,16 @@ func (j *jsiiProxy_ComputeDisk) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
+func (j *jsiiProxy_ComputeDisk) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeDisk) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -867,7 +889,7 @@ func (j *jsiiProxy_ComputeDisk) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_disk google_compute_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_disk google_compute_disk} Resource.
 func NewComputeDisk(scope constructs.Construct, id *string, config *ComputeDiskConfig) ComputeDisk {
 	_init_.Initialize()
 
@@ -885,7 +907,7 @@ func NewComputeDisk(scope constructs.Construct, id *string, config *ComputeDiskC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_disk google_compute_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_disk google_compute_disk} Resource.
 func NewComputeDisk_Override(c ComputeDisk, scope constructs.Construct, id *string, config *ComputeDiskConfig) {
 	_init_.Initialize()
 

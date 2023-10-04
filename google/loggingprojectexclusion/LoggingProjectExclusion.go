@@ -5,14 +5,14 @@ package loggingprojectexclusion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/loggingprojectexclusion/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/loggingprojectexclusion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/logging_project_exclusion google_logging_project_exclusion}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/logging_project_exclusion google_logging_project_exclusion}.
 type LoggingProjectExclusion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -407,7 +407,7 @@ func (j *jsiiProxy_LoggingProjectExclusion) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/logging_project_exclusion google_logging_project_exclusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/logging_project_exclusion google_logging_project_exclusion} Resource.
 func NewLoggingProjectExclusion(scope constructs.Construct, id *string, config *LoggingProjectExclusionConfig) LoggingProjectExclusion {
 	_init_.Initialize()
 
@@ -425,7 +425,7 @@ func NewLoggingProjectExclusion(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/logging_project_exclusion google_logging_project_exclusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/logging_project_exclusion google_logging_project_exclusion} Resource.
 func NewLoggingProjectExclusion_Override(l LoggingProjectExclusion, scope constructs.Construct, id *string, config *LoggingProjectExclusionConfig) {
 	_init_.Initialize()
 

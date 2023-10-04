@@ -5,14 +5,14 @@ package clouddeploytarget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/clouddeploytarget/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/clouddeploytarget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/clouddeploy_target google_clouddeploy_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/clouddeploy_target google_clouddeploy_target}.
 type ClouddeployTarget interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -43,6 +43,8 @@ type ClouddeployTarget interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
 	Etag() *string
 	ExecutionConfigs() ClouddeployTargetExecutionConfigsList
 	ExecutionConfigsInput() interface{}
@@ -97,6 +99,7 @@ type ClouddeployTarget interface {
 	TargetId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -302,6 +305,26 @@ func (j *jsiiProxy_ClouddeployTarget) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployTarget) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployTarget) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -617,6 +640,16 @@ func (j *jsiiProxy_ClouddeployTarget) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
+func (j *jsiiProxy_ClouddeployTarget) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ClouddeployTarget) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -678,7 +711,7 @@ func (j *jsiiProxy_ClouddeployTarget) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
 func NewClouddeployTarget(scope constructs.Construct, id *string, config *ClouddeployTargetConfig) ClouddeployTarget {
 	_init_.Initialize()
 
@@ -696,7 +729,7 @@ func NewClouddeployTarget(scope constructs.Construct, id *string, config *Cloudd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
 func NewClouddeployTarget_Override(c ClouddeployTarget, scope constructs.Construct, id *string, config *ClouddeployTargetConfig) {
 	_init_.Initialize()
 

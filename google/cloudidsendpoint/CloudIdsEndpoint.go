@@ -5,14 +5,14 @@ package cloudidsendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/cloudidsendpoint/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/cloudidsendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/cloud_ids_endpoint google_cloud_ids_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/cloud_ids_endpoint google_cloud_ids_endpoint}.
 type CloudIdsEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -521,7 +521,7 @@ func (j *jsiiProxy_CloudIdsEndpoint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/cloud_ids_endpoint google_cloud_ids_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/cloud_ids_endpoint google_cloud_ids_endpoint} Resource.
 func NewCloudIdsEndpoint(scope constructs.Construct, id *string, config *CloudIdsEndpointConfig) CloudIdsEndpoint {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewCloudIdsEndpoint(scope constructs.Construct, id *string, config *CloudId
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/cloud_ids_endpoint google_cloud_ids_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/cloud_ids_endpoint google_cloud_ids_endpoint} Resource.
 func NewCloudIdsEndpoint_Override(c CloudIdsEndpoint, scope constructs.Construct, id *string, config *CloudIdsEndpointConfig) {
 	_init_.Initialize()
 

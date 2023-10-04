@@ -5,14 +5,14 @@ package dataproccluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/dataproccluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/dataproccluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataproc_cluster google_dataproc_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dataproc_cluster google_dataproc_cluster}.
 type DataprocCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,7 @@ type DataprocCluster interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -77,6 +78,7 @@ type DataprocCluster interface {
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -204,6 +206,16 @@ func (j *jsiiProxy_DataprocCluster) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocCluster) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -419,6 +431,16 @@ func (j *jsiiProxy_DataprocCluster) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
+func (j *jsiiProxy_DataprocCluster) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataprocCluster) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -480,7 +502,7 @@ func (j *jsiiProxy_DataprocCluster) VirtualClusterConfigInput() *DataprocCluster
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataproc_cluster google_dataproc_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dataproc_cluster google_dataproc_cluster} Resource.
 func NewDataprocCluster(scope constructs.Construct, id *string, config *DataprocClusterConfig) DataprocCluster {
 	_init_.Initialize()
 
@@ -498,7 +520,7 @@ func NewDataprocCluster(scope constructs.Construct, id *string, config *Dataproc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataproc_cluster google_dataproc_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dataproc_cluster google_dataproc_cluster} Resource.
 func NewDataprocCluster_Override(d DataprocCluster, scope constructs.Construct, id *string, config *DataprocClusterConfig) {
 	_init_.Initialize()
 

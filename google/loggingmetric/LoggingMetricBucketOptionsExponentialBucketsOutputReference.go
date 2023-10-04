@@ -5,9 +5,9 @@ package loggingmetric
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/loggingmetric/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/loggingmetric/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -73,9 +73,6 @@ type LoggingMetricBucketOptionsExponentialBucketsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetGrowthFactor()
-	ResetNumFiniteBuckets()
-	ResetScale()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -521,30 +518,6 @@ func (l *jsiiProxy_LoggingMetricBucketOptionsExponentialBucketsOutputReference) 
 	)
 
 	return returns
-}
-
-func (l *jsiiProxy_LoggingMetricBucketOptionsExponentialBucketsOutputReference) ResetGrowthFactor() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetGrowthFactor",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LoggingMetricBucketOptionsExponentialBucketsOutputReference) ResetNumFiniteBuckets() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetNumFiniteBuckets",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LoggingMetricBucketOptionsExponentialBucketsOutputReference) ResetScale() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetScale",
-		nil, // no parameters
-	)
 }
 
 func (l *jsiiProxy_LoggingMetricBucketOptionsExponentialBucketsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

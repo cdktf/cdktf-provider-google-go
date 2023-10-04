@@ -5,9 +5,9 @@ package privatecacertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/privatecacertificate/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/privatecacertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -26,7 +26,6 @@ type PrivatecaCertificateCertificateDescriptionOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
-	ConfigValues() PrivatecaCertificateCertificateDescriptionConfigValuesList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -133,16 +132,6 @@ func (j *jsiiProxy_PrivatecaCertificateCertificateDescriptionOutputReference) Co
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PrivatecaCertificateCertificateDescriptionOutputReference) ConfigValues() PrivatecaCertificateCertificateDescriptionConfigValuesList {
-	var returns PrivatecaCertificateCertificateDescriptionConfigValuesList
-	_jsii_.Get(
-		j,
-		"configValues",
 		&returns,
 	)
 	return returns

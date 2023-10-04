@@ -5,14 +5,14 @@ package pubsubsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/pubsubsubscription/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/pubsubsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/pubsub_subscription google_pubsub_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/pubsub_subscription google_pubsub_subscription}.
 type PubsubSubscription interface {
 	cdktf.TerraformResource
 	AckDeadlineSeconds() *float64
@@ -40,6 +40,7 @@ type PubsubSubscription interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	EnableExactlyOnceDelivery() interface{}
 	SetEnableExactlyOnceDelivery(val interface{})
 	EnableExactlyOnceDeliveryInput() interface{}
@@ -99,6 +100,7 @@ type PubsubSubscription interface {
 	RetryPolicyInput() *PubsubSubscriptionRetryPolicy
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -299,6 +301,16 @@ func (j *jsiiProxy_PubsubSubscription) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscription) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -634,6 +646,16 @@ func (j *jsiiProxy_PubsubSubscription) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
+func (j *jsiiProxy_PubsubSubscription) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PubsubSubscription) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -695,7 +717,7 @@ func (j *jsiiProxy_PubsubSubscription) TopicInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/pubsub_subscription google_pubsub_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/pubsub_subscription google_pubsub_subscription} Resource.
 func NewPubsubSubscription(scope constructs.Construct, id *string, config *PubsubSubscriptionConfig) PubsubSubscription {
 	_init_.Initialize()
 
@@ -713,7 +735,7 @@ func NewPubsubSubscription(scope constructs.Construct, id *string, config *Pubsu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/pubsub_subscription google_pubsub_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/pubsub_subscription google_pubsub_subscription} Resource.
 func NewPubsubSubscription_Override(p PubsubSubscription, scope constructs.Construct, id *string, config *PubsubSubscriptionConfig) {
 	_init_.Initialize()
 

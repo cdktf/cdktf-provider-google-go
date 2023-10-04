@@ -5,14 +5,14 @@ package storagebucketobject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/storagebucketobject/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/storagebucketobject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/storage_bucket_object google_storage_bucket_object}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/storage_bucket_object google_storage_bucket_object}.
 type StorageBucketObject interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -750,7 +750,7 @@ func (j *jsiiProxy_StorageBucketObject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
 func NewStorageBucketObject(scope constructs.Construct, id *string, config *StorageBucketObjectConfig) StorageBucketObject {
 	_init_.Initialize()
 
@@ -768,7 +768,7 @@ func NewStorageBucketObject(scope constructs.Construct, id *string, config *Stor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
 func NewStorageBucketObject_Override(s StorageBucketObject, scope constructs.Construct, id *string, config *StorageBucketObjectConfig) {
 	_init_.Initialize()
 

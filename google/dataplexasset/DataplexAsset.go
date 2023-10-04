@@ -5,14 +5,14 @@ package dataplexasset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/dataplexasset/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/dataplexasset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataplex_asset google_dataplex_asset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dataplex_asset google_dataplex_asset}.
 type DataplexAsset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -44,6 +44,7 @@ type DataplexAsset interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -93,6 +94,7 @@ type DataplexAsset interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -298,6 +300,16 @@ func (j *jsiiProxy_DataplexAsset) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexAsset) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -563,6 +575,16 @@ func (j *jsiiProxy_DataplexAsset) TerraformGeneratorMetadata() *cdktf.TerraformP
 	return returns
 }
 
+func (j *jsiiProxy_DataplexAsset) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataplexAsset) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -624,7 +646,7 @@ func (j *jsiiProxy_DataplexAsset) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataplex_asset google_dataplex_asset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dataplex_asset google_dataplex_asset} Resource.
 func NewDataplexAsset(scope constructs.Construct, id *string, config *DataplexAssetConfig) DataplexAsset {
 	_init_.Initialize()
 
@@ -642,7 +664,7 @@ func NewDataplexAsset(scope constructs.Construct, id *string, config *DataplexAs
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataplex_asset google_dataplex_asset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dataplex_asset google_dataplex_asset} Resource.
 func NewDataplexAsset_Override(d DataplexAsset, scope constructs.Construct, id *string, config *DataplexAssetConfig) {
 	_init_.Initialize()
 

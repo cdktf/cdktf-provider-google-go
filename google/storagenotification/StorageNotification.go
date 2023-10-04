@@ -5,14 +5,14 @@ package storagenotification
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/storagenotification/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/storagenotification/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/storage_notification google_storage_notification}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/storage_notification google_storage_notification}.
 type StorageNotification interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -452,7 +452,7 @@ func (j *jsiiProxy_StorageNotification) TopicInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/storage_notification google_storage_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/storage_notification google_storage_notification} Resource.
 func NewStorageNotification(scope constructs.Construct, id *string, config *StorageNotificationConfig) StorageNotification {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewStorageNotification(scope constructs.Construct, id *string, config *Stor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/storage_notification google_storage_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/storage_notification google_storage_notification} Resource.
 func NewStorageNotification_Override(s StorageNotification, scope constructs.Construct, id *string, config *StorageNotificationConfig) {
 	_init_.Initialize()
 

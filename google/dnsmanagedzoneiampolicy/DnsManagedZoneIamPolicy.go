@@ -5,14 +5,14 @@ package dnsmanagedzoneiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/dnsmanagedzoneiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/dnsmanagedzoneiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dns_managed_zone_iam_policy google_dns_managed_zone_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dns_managed_zone_iam_policy google_dns_managed_zone_iam_policy}.
 type DnsManagedZoneIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DnsManagedZoneIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dns_managed_zone_iam_policy google_dns_managed_zone_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dns_managed_zone_iam_policy google_dns_managed_zone_iam_policy} Resource.
 func NewDnsManagedZoneIamPolicy(scope constructs.Construct, id *string, config *DnsManagedZoneIamPolicyConfig) DnsManagedZoneIamPolicy {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDnsManagedZoneIamPolicy(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dns_managed_zone_iam_policy google_dns_managed_zone_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dns_managed_zone_iam_policy google_dns_managed_zone_iam_policy} Resource.
 func NewDnsManagedZoneIamPolicy_Override(d DnsManagedZoneIamPolicy, scope constructs.Construct, id *string, config *DnsManagedZoneIamPolicyConfig) {
 	_init_.Initialize()
 

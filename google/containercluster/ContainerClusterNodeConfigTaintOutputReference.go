@@ -5,9 +5,9 @@ package containercluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/containercluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/containercluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -73,9 +73,6 @@ type ContainerClusterNodeConfigTaintOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetEffect()
-	ResetKey()
-	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -521,30 +518,6 @@ func (c *jsiiProxy_ContainerClusterNodeConfigTaintOutputReference) Interpolation
 	)
 
 	return returns
-}
-
-func (c *jsiiProxy_ContainerClusterNodeConfigTaintOutputReference) ResetEffect() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetEffect",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ContainerClusterNodeConfigTaintOutputReference) ResetKey() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetKey",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ContainerClusterNodeConfigTaintOutputReference) ResetValue() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetValue",
-		nil, // no parameters
-	)
 }
 
 func (c *jsiiProxy_ContainerClusterNodeConfigTaintOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

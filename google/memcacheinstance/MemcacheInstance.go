@@ -5,14 +5,14 @@ package memcacheinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/memcacheinstance/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/memcacheinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/memcache_instance google_memcache_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/memcache_instance google_memcache_instance}.
 type MemcacheInstance interface {
 	cdktf.TerraformResource
 	AuthorizedNetwork() *string
@@ -39,6 +39,7 @@ type MemcacheInstance interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -95,6 +96,7 @@ type MemcacheInstance interface {
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -267,6 +269,16 @@ func (j *jsiiProxy_MemcacheInstance) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -592,6 +604,16 @@ func (j *jsiiProxy_MemcacheInstance) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
+func (j *jsiiProxy_MemcacheInstance) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MemcacheInstance) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -653,7 +675,7 @@ func (j *jsiiProxy_MemcacheInstance) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/memcache_instance google_memcache_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/memcache_instance google_memcache_instance} Resource.
 func NewMemcacheInstance(scope constructs.Construct, id *string, config *MemcacheInstanceConfig) MemcacheInstance {
 	_init_.Initialize()
 
@@ -671,7 +693,7 @@ func NewMemcacheInstance(scope constructs.Construct, id *string, config *Memcach
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/memcache_instance google_memcache_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/memcache_instance google_memcache_instance} Resource.
 func NewMemcacheInstance_Override(m MemcacheInstance, scope constructs.Construct, id *string, config *MemcacheInstanceConfig) {
 	_init_.Initialize()
 

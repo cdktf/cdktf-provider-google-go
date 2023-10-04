@@ -5,14 +5,14 @@ package datagoogleclientconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagoogleclientconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagoogleclientconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/client_config google_client_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/client_config google_client_config}.
 type DataGoogleClientConfig interface {
 	cdktf.TerraformDataSource
 	AccessToken() *string
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataGoogleClientConfig) Zone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/client_config google_client_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/client_config google_client_config} Data Source.
 func NewDataGoogleClientConfig(scope constructs.Construct, id *string, config *DataGoogleClientConfigConfig) DataGoogleClientConfig {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataGoogleClientConfig(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/client_config google_client_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/client_config google_client_config} Data Source.
 func NewDataGoogleClientConfig_Override(d DataGoogleClientConfig, scope constructs.Construct, id *string, config *DataGoogleClientConfigConfig) {
 	_init_.Initialize()
 

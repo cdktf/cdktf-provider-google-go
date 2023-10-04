@@ -5,14 +5,14 @@ package healthcaredicomstore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/healthcaredicomstore/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/healthcaredicomstore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/healthcare_dicom_store google_healthcare_dicom_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/healthcare_dicom_store google_healthcare_dicom_store}.
 type HealthcareDicomStore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,7 @@ type HealthcareDicomStore interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -72,6 +73,7 @@ type HealthcareDicomStore interface {
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -192,6 +194,16 @@ func (j *jsiiProxy_HealthcareDicomStore) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareDicomStore) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -377,6 +389,16 @@ func (j *jsiiProxy_HealthcareDicomStore) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
+func (j *jsiiProxy_HealthcareDicomStore) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HealthcareDicomStore) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -418,7 +440,7 @@ func (j *jsiiProxy_HealthcareDicomStore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/healthcare_dicom_store google_healthcare_dicom_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/healthcare_dicom_store google_healthcare_dicom_store} Resource.
 func NewHealthcareDicomStore(scope constructs.Construct, id *string, config *HealthcareDicomStoreConfig) HealthcareDicomStore {
 	_init_.Initialize()
 
@@ -436,7 +458,7 @@ func NewHealthcareDicomStore(scope constructs.Construct, id *string, config *Hea
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/healthcare_dicom_store google_healthcare_dicom_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/healthcare_dicom_store google_healthcare_dicom_store} Resource.
 func NewHealthcareDicomStore_Override(h HealthcareDicomStore, scope constructs.Construct, id *string, config *HealthcareDicomStoreConfig) {
 	_init_.Initialize()
 

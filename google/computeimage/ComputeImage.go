@@ -5,14 +5,14 @@ package computeimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/computeimage/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/computeimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_image google_compute_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_image google_compute_image}.
 type ComputeImage interface {
 	cdktf.TerraformResource
 	ArchiveSizeBytes() *float64
@@ -39,6 +39,7 @@ type ComputeImage interface {
 	DiskSizeGb() *float64
 	SetDiskSizeGb(val *float64)
 	DiskSizeGbInput() *float64
+	EffectiveLabels() cdktf.StringMap
 	Family() *string
 	SetFamily(val *string)
 	FamilyInput() *string
@@ -103,6 +104,7 @@ type ComputeImage interface {
 	StorageLocationsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -276,6 +278,16 @@ func (j *jsiiProxy_ComputeImage) DiskSizeGbInput() *float64 {
 	_jsii_.Get(
 		j,
 		"diskSizeGbInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeImage) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -651,6 +663,16 @@ func (j *jsiiProxy_ComputeImage) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
+func (j *jsiiProxy_ComputeImage) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeImage) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -692,7 +714,7 @@ func (j *jsiiProxy_ComputeImage) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_image google_compute_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_image google_compute_image} Resource.
 func NewComputeImage(scope constructs.Construct, id *string, config *ComputeImageConfig) ComputeImage {
 	_init_.Initialize()
 
@@ -710,7 +732,7 @@ func NewComputeImage(scope constructs.Construct, id *string, config *ComputeImag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_image google_compute_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_image google_compute_image} Resource.
 func NewComputeImage_Override(c ComputeImage, scope constructs.Construct, id *string, config *ComputeImageConfig) {
 	_init_.Initialize()
 

@@ -5,16 +5,19 @@ package alloydbbackup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/alloydbbackup/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/alloydbbackup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/alloydb_backup google_alloydb_backup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/alloydb_backup google_alloydb_backup}.
 type AlloydbBackup interface {
 	cdktf.TerraformResource
+	Annotations() *map[string]*string
+	SetAnnotations(val *map[string]*string)
+	AnnotationsInput() *map[string]*string
 	BackupId() *string
 	SetBackupId(val *string)
 	BackupIdInput() *string
@@ -23,6 +26,7 @@ type AlloydbBackup interface {
 	ClusterName() *string
 	SetClusterName(val *string)
 	ClusterNameInput() *string
+	ClusterUid() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -34,6 +38,7 @@ type AlloydbBackup interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DeleteTime() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -41,10 +46,17 @@ type AlloydbBackup interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisplayName() *string
+	SetDisplayName(val *string)
+	DisplayNameInput() *string
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
 	EncryptionConfig() AlloydbBackupEncryptionConfigOutputReference
 	EncryptionConfigInput() *AlloydbBackupEncryptionConfig
 	EncryptionInfo() AlloydbBackupEncryptionInfoList
 	Etag() *string
+	ExpiryQuantity() AlloydbBackupExpiryQuantityList
+	ExpiryTime() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -83,15 +95,20 @@ type AlloydbBackup interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Reconciling() cdktf.IResolvable
+	SizeBytes() *string
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
 	Timeouts() AlloydbBackupTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	Uid() *string
 	UpdateTime() *string
 	// Experimental.
@@ -121,7 +138,9 @@ type AlloydbBackup interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutEncryptionConfig(value *AlloydbBackupEncryptionConfig)
 	PutTimeouts(value *AlloydbBackupTimeouts)
+	ResetAnnotations()
 	ResetDescription()
+	ResetDisplayName()
 	ResetEncryptionConfig()
 	ResetId()
 	ResetLabels()
@@ -130,6 +149,7 @@ type AlloydbBackup interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -143,6 +163,26 @@ type AlloydbBackup interface {
 // The jsii proxy struct for AlloydbBackup
 type jsiiProxy_AlloydbBackup struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AlloydbBackup) Annotations() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbBackup) AnnotationsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotationsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AlloydbBackup) BackupId() *string {
@@ -195,6 +235,16 @@ func (j *jsiiProxy_AlloydbBackup) ClusterNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbBackup) ClusterUid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterUid",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbBackup) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -235,6 +285,16 @@ func (j *jsiiProxy_AlloydbBackup) CreateTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbBackup) DeleteTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbBackup) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -260,6 +320,46 @@ func (j *jsiiProxy_AlloydbBackup) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbBackup) DisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbBackup) DisplayNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbBackup) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbBackup) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -300,6 +400,26 @@ func (j *jsiiProxy_AlloydbBackup) Etag() *string {
 	_jsii_.Get(
 		j,
 		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbBackup) ExpiryQuantity() AlloydbBackupExpiryQuantityList {
+	var returns AlloydbBackupExpiryQuantityList
+	_jsii_.Get(
+		j,
+		"expiryQuantity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbBackup) ExpiryTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiryTime",
 		&returns,
 	)
 	return returns
@@ -485,6 +605,16 @@ func (j *jsiiProxy_AlloydbBackup) Reconciling() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbBackup) SizeBytes() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sizeBytes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbBackup) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -500,6 +630,16 @@ func (j *jsiiProxy_AlloydbBackup) TerraformGeneratorMetadata() *cdktf.TerraformP
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbBackup) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -545,6 +685,26 @@ func (j *jsiiProxy_AlloydbBackup) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbBackup) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbBackup) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbBackup) Uid() *string {
 	var returns *string
 	_jsii_.Get(
@@ -566,7 +726,7 @@ func (j *jsiiProxy_AlloydbBackup) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/alloydb_backup google_alloydb_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/alloydb_backup google_alloydb_backup} Resource.
 func NewAlloydbBackup(scope constructs.Construct, id *string, config *AlloydbBackupConfig) AlloydbBackup {
 	_init_.Initialize()
 
@@ -584,7 +744,7 @@ func NewAlloydbBackup(scope constructs.Construct, id *string, config *AlloydbBac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/alloydb_backup google_alloydb_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/alloydb_backup google_alloydb_backup} Resource.
 func NewAlloydbBackup_Override(a AlloydbBackup, scope constructs.Construct, id *string, config *AlloydbBackupConfig) {
 	_init_.Initialize()
 
@@ -592,6 +752,17 @@ func NewAlloydbBackup_Override(a AlloydbBackup, scope constructs.Construct, id *
 		"@cdktf/provider-google.alloydbBackup.AlloydbBackup",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AlloydbBackup)SetAnnotations(val *map[string]*string) {
+	if err := j.validateSetAnnotationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"annotations",
+		val,
 	)
 }
 
@@ -654,6 +825,17 @@ func (j *jsiiProxy_AlloydbBackup)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlloydbBackup)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"displayName",
 		val,
 	)
 }
@@ -736,6 +918,17 @@ func (j *jsiiProxy_AlloydbBackup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlloydbBackup)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -1028,10 +1221,26 @@ func (a *jsiiProxy_AlloydbBackup) PutTimeouts(value *AlloydbBackupTimeouts) {
 	)
 }
 
+func (a *jsiiProxy_AlloydbBackup) ResetAnnotations() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AlloydbBackup) ResetDescription() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbBackup) ResetDisplayName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDisplayName",
 		nil, // no parameters
 	)
 }
@@ -1080,6 +1289,14 @@ func (a *jsiiProxy_AlloydbBackup) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbBackup) ResetType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetType",
 		nil, // no parameters
 	)
 }

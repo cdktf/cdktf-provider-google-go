@@ -5,14 +5,14 @@ package monitoringslo
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/monitoringslo/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/monitoringslo/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/monitoring_slo google_monitoring_slo}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/monitoring_slo google_monitoring_slo}.
 type MonitoringSlo interface {
 	cdktf.TerraformResource
 	BasicSli() MonitoringSloBasicSliOutputReference
@@ -586,7 +586,7 @@ func (j *jsiiProxy_MonitoringSlo) WindowsBasedSliInput() *MonitoringSloWindowsBa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/monitoring_slo google_monitoring_slo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/monitoring_slo google_monitoring_slo} Resource.
 func NewMonitoringSlo(scope constructs.Construct, id *string, config *MonitoringSloConfig) MonitoringSlo {
 	_init_.Initialize()
 
@@ -604,7 +604,7 @@ func NewMonitoringSlo(scope constructs.Construct, id *string, config *Monitoring
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/monitoring_slo google_monitoring_slo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/monitoring_slo google_monitoring_slo} Resource.
 func NewMonitoringSlo_Override(m MonitoringSlo, scope constructs.Construct, id *string, config *MonitoringSloConfig) {
 	_init_.Initialize()
 

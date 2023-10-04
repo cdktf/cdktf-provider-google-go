@@ -5,14 +5,14 @@ package datagoogleprivatecacertificateauthority
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagoogleprivatecacertificateauthority/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagoogleprivatecacertificateauthority/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/privateca_certificate_authority google_privateca_certificate_authority}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/privateca_certificate_authority google_privateca_certificate_authority}.
 type DataGooglePrivatecaCertificateAuthority interface {
 	cdktf.TerraformDataSource
 	AccessUrls() DataGooglePrivatecaCertificateAuthorityAccessUrlsList
@@ -35,6 +35,7 @@ type DataGooglePrivatecaCertificateAuthority interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DesiredState() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -81,6 +82,7 @@ type DataGooglePrivatecaCertificateAuthority interface {
 	SubordinateConfig() DataGooglePrivatecaCertificateAuthoritySubordinateConfigList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -240,6 +242,16 @@ func (j *jsiiProxy_DataGooglePrivatecaCertificateAuthority) DesiredState() *stri
 	_jsii_.Get(
 		j,
 		"desiredState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePrivatecaCertificateAuthority) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -525,6 +537,16 @@ func (j *jsiiProxy_DataGooglePrivatecaCertificateAuthority) TerraformGeneratorMe
 	return returns
 }
 
+func (j *jsiiProxy_DataGooglePrivatecaCertificateAuthority) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGooglePrivatecaCertificateAuthority) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -566,7 +588,7 @@ func (j *jsiiProxy_DataGooglePrivatecaCertificateAuthority) UpdateTime() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/privateca_certificate_authority google_privateca_certificate_authority} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/privateca_certificate_authority google_privateca_certificate_authority} Data Source.
 func NewDataGooglePrivatecaCertificateAuthority(scope constructs.Construct, id *string, config *DataGooglePrivatecaCertificateAuthorityConfig) DataGooglePrivatecaCertificateAuthority {
 	_init_.Initialize()
 
@@ -584,7 +606,7 @@ func NewDataGooglePrivatecaCertificateAuthority(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/privateca_certificate_authority google_privateca_certificate_authority} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/privateca_certificate_authority google_privateca_certificate_authority} Data Source.
 func NewDataGooglePrivatecaCertificateAuthority_Override(d DataGooglePrivatecaCertificateAuthority, scope constructs.Construct, id *string, config *DataGooglePrivatecaCertificateAuthorityConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/provider/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -122,9 +122,6 @@ type GoogleProvider interface {
 	CloudIdsCustomEndpoint() *string
 	SetCloudIdsCustomEndpoint(val *string)
 	CloudIdsCustomEndpointInput() *string
-	CloudIotCustomEndpoint() *string
-	SetCloudIotCustomEndpoint(val *string)
-	CloudIotCustomEndpointInput() *string
 	CloudResourceManagerCustomEndpoint() *string
 	SetCloudResourceManagerCustomEndpoint(val *string)
 	CloudResourceManagerCustomEndpointInput() *string
@@ -202,6 +199,9 @@ type GoogleProvider interface {
 	DatastreamCustomEndpoint() *string
 	SetDatastreamCustomEndpoint(val *string)
 	DatastreamCustomEndpointInput() *string
+	DefaultLabels() *map[string]*string
+	SetDefaultLabels(val *map[string]*string)
+	DefaultLabelsInput() *map[string]*string
 	DeploymentManagerCustomEndpoint() *string
 	SetDeploymentManagerCustomEndpoint(val *string)
 	DeploymentManagerCustomEndpointInput() *string
@@ -242,9 +242,6 @@ type GoogleProvider interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GameServicesCustomEndpoint() *string
-	SetGameServicesCustomEndpoint(val *string)
-	GameServicesCustomEndpointInput() *string
 	GkeBackupCustomEndpoint() *string
 	SetGkeBackupCustomEndpoint(val *string)
 	GkeBackupCustomEndpointInput() *string
@@ -477,7 +474,6 @@ type GoogleProvider interface {
 	ResetCloudFunctionsCustomEndpoint()
 	ResetCloudIdentityCustomEndpoint()
 	ResetCloudIdsCustomEndpoint()
-	ResetCloudIotCustomEndpoint()
 	ResetCloudResourceManagerCustomEndpoint()
 	ResetCloudRunCustomEndpoint()
 	ResetCloudRunV2CustomEndpoint()
@@ -503,6 +499,7 @@ type GoogleProvider interface {
 	ResetDataprocMetastoreCustomEndpoint()
 	ResetDatastoreCustomEndpoint()
 	ResetDatastreamCustomEndpoint()
+	ResetDefaultLabels()
 	ResetDeploymentManagerCustomEndpoint()
 	ResetDialogflowCustomEndpoint()
 	ResetDialogflowCxCustomEndpoint()
@@ -515,7 +512,6 @@ type GoogleProvider interface {
 	ResetFilestoreCustomEndpoint()
 	ResetFirebaserulesCustomEndpoint()
 	ResetFirestoreCustomEndpoint()
-	ResetGameServicesCustomEndpoint()
 	ResetGkeBackupCustomEndpoint()
 	ResetGkeHub2CustomEndpoint()
 	ResetGkeHubCustomEndpoint()
@@ -1304,26 +1300,6 @@ func (j *jsiiProxy_GoogleProvider) CloudIdsCustomEndpointInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProvider) CloudIotCustomEndpoint() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cloudIotCustomEndpoint",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleProvider) CloudIotCustomEndpointInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cloudIotCustomEndpointInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GoogleProvider) CloudResourceManagerCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1834,6 +1810,26 @@ func (j *jsiiProxy_GoogleProvider) DatastreamCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) DefaultLabels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"defaultLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) DefaultLabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"defaultLabelsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) DeploymentManagerCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2089,26 +2085,6 @@ func (j *jsiiProxy_GoogleProvider) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleProvider) GameServicesCustomEndpoint() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"gameServicesCustomEndpoint",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleProvider) GameServicesCustomEndpointInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"gameServicesCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3375,7 +3351,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3393,7 +3369,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -3687,14 +3663,6 @@ func (j *jsiiProxy_GoogleProvider)SetCloudIdsCustomEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleProvider)SetCloudIotCustomEndpoint(val *string) {
-	_jsii_.Set(
-		j,
-		"cloudIotCustomEndpoint",
-		val,
-	)
-}
-
 func (j *jsiiProxy_GoogleProvider)SetCloudResourceManagerCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3895,6 +3863,14 @@ func (j *jsiiProxy_GoogleProvider)SetDatastreamCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetDefaultLabels(val *map[string]*string) {
+	_jsii_.Set(
+		j,
+		"defaultLabels",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetDeploymentManagerCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3987,14 +3963,6 @@ func (j *jsiiProxy_GoogleProvider)SetFirestoreCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"firestoreCustomEndpoint",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GoogleProvider)SetGameServicesCustomEndpoint(val *string) {
-	_jsii_.Set(
-		j,
-		"gameServicesCustomEndpoint",
 		val,
 	)
 }
@@ -4868,14 +4836,6 @@ func (g *jsiiProxy_GoogleProvider) ResetCloudIdsCustomEndpoint() {
 	)
 }
 
-func (g *jsiiProxy_GoogleProvider) ResetCloudIotCustomEndpoint() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetCloudIotCustomEndpoint",
-		nil, // no parameters
-	)
-}
-
 func (g *jsiiProxy_GoogleProvider) ResetCloudResourceManagerCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5076,6 +5036,14 @@ func (g *jsiiProxy_GoogleProvider) ResetDatastreamCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetDefaultLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultLabels",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetDeploymentManagerCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5168,14 +5136,6 @@ func (g *jsiiProxy_GoogleProvider) ResetFirestoreCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetFirestoreCustomEndpoint",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleProvider) ResetGameServicesCustomEndpoint() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetGameServicesCustomEndpoint",
 		nil, // no parameters
 	)
 }

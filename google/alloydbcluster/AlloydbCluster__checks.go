@@ -226,6 +226,14 @@ func validateAlloydbCluster_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_AlloydbCluster) validateSetAnnotationsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AlloydbCluster) validateSetClusterIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -325,6 +333,14 @@ func (j *jsiiProxy_AlloydbCluster) validateSetCountParameters(val interface{}) e
 }
 
 func (j *jsiiProxy_AlloydbCluster) validateSetDisplayNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AlloydbCluster) validateSetEtagParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

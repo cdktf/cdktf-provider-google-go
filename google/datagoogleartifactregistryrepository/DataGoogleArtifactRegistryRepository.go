@@ -5,14 +5,14 @@ package datagoogleartifactregistryrepository
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagoogleartifactregistryrepository/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagoogleartifactregistryrepository/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository}.
 type DataGoogleArtifactRegistryRepository interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -30,6 +30,7 @@ type DataGoogleArtifactRegistryRepository interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	DockerConfig() DataGoogleArtifactRegistryRepositoryDockerConfigList
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -71,6 +72,7 @@ type DataGoogleArtifactRegistryRepository interface {
 	RepositoryIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -187,6 +189,16 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) DockerConfig() DataGoog
 	_jsii_.Get(
 		j,
 		"dockerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -422,6 +434,16 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) TerraformGeneratorMetad
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -463,7 +485,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) VirtualRepositoryConfig
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source.
 func NewDataGoogleArtifactRegistryRepository(scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryRepositoryConfig) DataGoogleArtifactRegistryRepository {
 	_init_.Initialize()
 
@@ -481,7 +503,7 @@ func NewDataGoogleArtifactRegistryRepository(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source.
 func NewDataGoogleArtifactRegistryRepository_Override(d DataGoogleArtifactRegistryRepository, scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryRepositoryConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package notebooksruntime
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/notebooksruntime/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/notebooksruntime/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/notebooks_runtime google_notebooks_runtime}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/notebooks_runtime google_notebooks_runtime}.
 type NotebooksRuntime interface {
 	cdktf.TerraformResource
 	AccessConfig() NotebooksRuntimeAccessConfigOutputReference
@@ -488,7 +488,7 @@ func (j *jsiiProxy_NotebooksRuntime) VirtualMachineInput() *NotebooksRuntimeVirt
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/notebooks_runtime google_notebooks_runtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/notebooks_runtime google_notebooks_runtime} Resource.
 func NewNotebooksRuntime(scope constructs.Construct, id *string, config *NotebooksRuntimeConfig) NotebooksRuntime {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewNotebooksRuntime(scope constructs.Construct, id *string, config *Noteboo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/notebooks_runtime google_notebooks_runtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/notebooks_runtime google_notebooks_runtime} Resource.
 func NewNotebooksRuntime_Override(n NotebooksRuntime, scope constructs.Construct, id *string, config *NotebooksRuntimeConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package documentaiprocessor
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/documentaiprocessor/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/documentaiprocessor/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/document_ai_processor google_document_ai_processor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/document_ai_processor google_document_ai_processor}.
 type DocumentAiProcessor interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_DocumentAiProcessor) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/document_ai_processor google_document_ai_processor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/document_ai_processor google_document_ai_processor} Resource.
 func NewDocumentAiProcessor(scope constructs.Construct, id *string, config *DocumentAiProcessorConfig) DocumentAiProcessor {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewDocumentAiProcessor(scope constructs.Construct, id *string, config *Docu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/document_ai_processor google_document_ai_processor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/document_ai_processor google_document_ai_processor} Resource.
 func NewDocumentAiProcessor_Override(d DocumentAiProcessor, scope constructs.Construct, id *string, config *DocumentAiProcessorConfig) {
 	_init_.Initialize()
 

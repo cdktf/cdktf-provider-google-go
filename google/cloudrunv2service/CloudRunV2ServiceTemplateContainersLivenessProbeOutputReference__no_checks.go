@@ -55,10 +55,6 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference) validatePutTcpSocketParameters(value *CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket) error {
-	return nil
-}
-
 func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package storageobjectaccesscontrol
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/storageobjectaccesscontrol/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/storageobjectaccesscontrol/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/storage_object_access_control google_storage_object_access_control}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/storage_object_access_control google_storage_object_access_control}.
 type StorageObjectAccessControl interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -460,7 +460,7 @@ func (j *jsiiProxy_StorageObjectAccessControl) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/storage_object_access_control google_storage_object_access_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/storage_object_access_control google_storage_object_access_control} Resource.
 func NewStorageObjectAccessControl(scope constructs.Construct, id *string, config *StorageObjectAccessControlConfig) StorageObjectAccessControl {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewStorageObjectAccessControl(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/storage_object_access_control google_storage_object_access_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/storage_object_access_control google_storage_object_access_control} Resource.
 func NewStorageObjectAccessControl_Override(s StorageObjectAccessControl, scope constructs.Construct, id *string, config *StorageObjectAccessControlConfig) {
 	_init_.Initialize()
 

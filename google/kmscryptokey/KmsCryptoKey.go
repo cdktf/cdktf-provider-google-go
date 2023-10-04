@@ -5,14 +5,14 @@ package kmscryptokey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/kmscryptokey/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/kmscryptokey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/kms_crypto_key google_kms_crypto_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/kms_crypto_key google_kms_crypto_key}.
 type KmsCryptoKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,7 @@ type KmsCryptoKey interface {
 	DestroyScheduledDuration() *string
 	SetDestroyScheduledDuration(val *string)
 	DestroyScheduledDurationInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -84,6 +85,7 @@ type KmsCryptoKey interface {
 	SkipInitialVersionCreationInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -211,6 +213,16 @@ func (j *jsiiProxy_KmsCryptoKey) DestroyScheduledDurationInput() *string {
 	_jsii_.Get(
 		j,
 		"destroyScheduledDurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsCryptoKey) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -466,6 +478,16 @@ func (j *jsiiProxy_KmsCryptoKey) TerraformGeneratorMetadata() *cdktf.TerraformPr
 	return returns
 }
 
+func (j *jsiiProxy_KmsCryptoKey) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KmsCryptoKey) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -527,7 +549,7 @@ func (j *jsiiProxy_KmsCryptoKey) VersionTemplateInput() *KmsCryptoKeyVersionTemp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/kms_crypto_key google_kms_crypto_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/kms_crypto_key google_kms_crypto_key} Resource.
 func NewKmsCryptoKey(scope constructs.Construct, id *string, config *KmsCryptoKeyConfig) KmsCryptoKey {
 	_init_.Initialize()
 
@@ -545,7 +567,7 @@ func NewKmsCryptoKey(scope constructs.Construct, id *string, config *KmsCryptoKe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/kms_crypto_key google_kms_crypto_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/kms_crypto_key google_kms_crypto_key} Resource.
 func NewKmsCryptoKey_Override(k KmsCryptoKey, scope constructs.Construct, id *string, config *KmsCryptoKeyConfig) {
 	_init_.Initialize()
 

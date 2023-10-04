@@ -5,14 +5,14 @@ package computesnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/computesnapshot/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/computesnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_snapshot google_compute_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_snapshot google_compute_snapshot}.
 type ComputeSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -39,6 +39,7 @@ type ComputeSnapshot interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	DiskSizeGb() *float64
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -92,6 +93,7 @@ type ComputeSnapshot interface {
 	StorageLocationsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -262,6 +264,16 @@ func (j *jsiiProxy_ComputeSnapshot) DiskSizeGb() *float64 {
 	_jsii_.Get(
 		j,
 		"diskSizeGb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSnapshot) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -567,6 +579,16 @@ func (j *jsiiProxy_ComputeSnapshot) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
+func (j *jsiiProxy_ComputeSnapshot) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeSnapshot) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -628,7 +650,7 @@ func (j *jsiiProxy_ComputeSnapshot) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_snapshot google_compute_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_snapshot google_compute_snapshot} Resource.
 func NewComputeSnapshot(scope constructs.Construct, id *string, config *ComputeSnapshotConfig) ComputeSnapshot {
 	_init_.Initialize()
 
@@ -646,7 +668,7 @@ func NewComputeSnapshot(scope constructs.Construct, id *string, config *ComputeS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_snapshot google_compute_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_snapshot google_compute_snapshot} Resource.
 func NewComputeSnapshot_Override(c ComputeSnapshot, scope constructs.Construct, id *string, config *ComputeSnapshotConfig) {
 	_init_.Initialize()
 

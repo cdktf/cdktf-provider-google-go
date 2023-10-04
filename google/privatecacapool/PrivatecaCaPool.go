@@ -5,14 +5,14 @@ package privatecacapool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/privatecacapool/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/privatecacapool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/privateca_ca_pool google_privateca_ca_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/privateca_ca_pool google_privateca_ca_pool}.
 type PrivatecaCaPool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,7 @@ type PrivatecaCaPool interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -76,6 +77,7 @@ type PrivatecaCaPool interface {
 	RawOverrides() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -182,6 +184,16 @@ func (j *jsiiProxy_PrivatecaCaPool) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatecaCaPool) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -417,6 +429,16 @@ func (j *jsiiProxy_PrivatecaCaPool) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
+func (j *jsiiProxy_PrivatecaCaPool) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PrivatecaCaPool) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -478,7 +500,7 @@ func (j *jsiiProxy_PrivatecaCaPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/privateca_ca_pool google_privateca_ca_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/privateca_ca_pool google_privateca_ca_pool} Resource.
 func NewPrivatecaCaPool(scope constructs.Construct, id *string, config *PrivatecaCaPoolConfig) PrivatecaCaPool {
 	_init_.Initialize()
 
@@ -496,7 +518,7 @@ func NewPrivatecaCaPool(scope constructs.Construct, id *string, config *Privatec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/privateca_ca_pool google_privateca_ca_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/privateca_ca_pool google_privateca_ca_pool} Resource.
 func NewPrivatecaCaPool_Override(p PrivatecaCaPool, scope constructs.Construct, id *string, config *PrivatecaCaPoolConfig) {
 	_init_.Initialize()
 

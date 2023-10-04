@@ -198,6 +198,14 @@ func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) validateSetPointInTi
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) validateSetPreferredZoneParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) validateSetSourceInstanceNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

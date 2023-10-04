@@ -5,14 +5,14 @@ package dataflowjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/dataflowjob/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/dataflowjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataflow_job google_dataflow_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dataflow_job google_dataflow_job}.
 type DataflowJob interface {
 	cdktf.TerraformResource
 	AdditionalExperiments() *[]*string
@@ -34,6 +34,7 @@ type DataflowJob interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	EnableStreamingEngine() interface{}
 	SetEnableStreamingEngine(val interface{})
 	EnableStreamingEngineInput() interface{}
@@ -116,6 +117,7 @@ type DataflowJob interface {
 	TemplateGcsPathInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -257,6 +259,16 @@ func (j *jsiiProxy_DataflowJob) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataflowJob) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -732,6 +744,16 @@ func (j *jsiiProxy_DataflowJob) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
+func (j *jsiiProxy_DataflowJob) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataflowJob) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -823,7 +845,7 @@ func (j *jsiiProxy_DataflowJob) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataflow_job google_dataflow_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dataflow_job google_dataflow_job} Resource.
 func NewDataflowJob(scope constructs.Construct, id *string, config *DataflowJobConfig) DataflowJob {
 	_init_.Initialize()
 
@@ -841,7 +863,7 @@ func NewDataflowJob(scope constructs.Construct, id *string, config *DataflowJobC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataflow_job google_dataflow_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dataflow_job google_dataflow_job} Resource.
 func NewDataflowJob_Override(d DataflowJob, scope constructs.Construct, id *string, config *DataflowJobConfig) {
 	_init_.Initialize()
 

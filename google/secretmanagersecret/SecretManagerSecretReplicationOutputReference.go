@@ -5,9 +5,9 @@ package secretmanagersecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/secretmanagersecret/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/secretmanagersecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -15,9 +15,6 @@ type SecretManagerSecretReplicationOutputReference interface {
 	cdktf.ComplexObject
 	Auto() SecretManagerSecretReplicationAutoOutputReference
 	AutoInput() *SecretManagerSecretReplicationAuto
-	Automatic() interface{}
-	SetAutomatic(val interface{})
-	AutomaticInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -74,7 +71,6 @@ type SecretManagerSecretReplicationOutputReference interface {
 	PutAuto(value *SecretManagerSecretReplicationAuto)
 	PutUserManaged(value *SecretManagerSecretReplicationUserManaged)
 	ResetAuto()
-	ResetAutomatic()
 	ResetUserManaged()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -106,26 +102,6 @@ func (j *jsiiProxy_SecretManagerSecretReplicationOutputReference) AutoInput() *S
 	_jsii_.Get(
 		j,
 		"autoInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SecretManagerSecretReplicationOutputReference) Automatic() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"automatic",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SecretManagerSecretReplicationOutputReference) AutomaticInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"automaticInput",
 		&returns,
 	)
 	return returns
@@ -246,17 +222,6 @@ func NewSecretManagerSecretReplicationOutputReference_Override(s SecretManagerSe
 		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
-	)
-}
-
-func (j *jsiiProxy_SecretManagerSecretReplicationOutputReference)SetAutomatic(val interface{}) {
-	if err := j.validateSetAutomaticParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"automatic",
-		val,
 	)
 }
 
@@ -527,14 +492,6 @@ func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) ResetAuto() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAuto",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) ResetAutomatic() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetAutomatic",
 		nil, // no parameters
 	)
 }

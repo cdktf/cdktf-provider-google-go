@@ -5,14 +5,14 @@ package vertexaidataset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/vertexaidataset/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/vertexaidataset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/vertex_ai_dataset google_vertex_ai_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/vertex_ai_dataset google_vertex_ai_dataset}.
 type VertexAiDataset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,6 +35,7 @@ type VertexAiDataset interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	EncryptionSpec() VertexAiDatasetEncryptionSpecOutputReference
 	EncryptionSpecInput() *VertexAiDatasetEncryptionSpec
 	// Experimental.
@@ -79,6 +80,7 @@ type VertexAiDataset interface {
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -212,6 +214,16 @@ func (j *jsiiProxy_VertexAiDataset) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiDataset) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -437,6 +449,16 @@ func (j *jsiiProxy_VertexAiDataset) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
+func (j *jsiiProxy_VertexAiDataset) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VertexAiDataset) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -488,7 +510,7 @@ func (j *jsiiProxy_VertexAiDataset) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/vertex_ai_dataset google_vertex_ai_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/vertex_ai_dataset google_vertex_ai_dataset} Resource.
 func NewVertexAiDataset(scope constructs.Construct, id *string, config *VertexAiDatasetConfig) VertexAiDataset {
 	_init_.Initialize()
 
@@ -506,7 +528,7 @@ func NewVertexAiDataset(scope constructs.Construct, id *string, config *VertexAi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/vertex_ai_dataset google_vertex_ai_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/vertex_ai_dataset google_vertex_ai_dataset} Resource.
 func NewVertexAiDataset_Override(v VertexAiDataset, scope constructs.Construct, id *string, config *VertexAiDatasetConfig) {
 	_init_.Initialize()
 

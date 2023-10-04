@@ -5,9 +5,9 @@ package datagooglecontainercluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglecontainercluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglecontainercluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,6 +33,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	CreationStack() *[]*string
 	DiskSizeGb() *float64
 	DiskType() *string
+	EffectiveTaints() DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsList
 	EphemeralStorageLocalSsdConfig() DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList
 	FastSocket() DataGoogleContainerClusterNodePoolNodeConfigFastSocketList
 	// Experimental.
@@ -187,6 +188,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"diskType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) EffectiveTaints() DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsList
+	_jsii_.Get(
+		j,
+		"effectiveTaints",
 		&returns,
 	)
 	return returns

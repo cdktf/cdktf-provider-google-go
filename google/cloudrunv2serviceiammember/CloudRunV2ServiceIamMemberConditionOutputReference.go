@@ -5,9 +5,9 @@ package cloudrunv2serviceiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/cloudrunv2serviceiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/cloudrunv2serviceiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

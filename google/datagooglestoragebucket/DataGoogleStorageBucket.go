@@ -5,14 +5,14 @@ package datagooglestoragebucket
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglestoragebucket/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglestoragebucket/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/storage_bucket google_storage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/storage_bucket google_storage_bucket}.
 type DataGoogleStorageBucket interface {
 	cdktf.TerraformDataSource
 	Autoclass() DataGoogleStorageBucketAutoclassList
@@ -31,6 +31,7 @@ type DataGoogleStorageBucket interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	Encryption() DataGoogleStorageBucketEncryptionList
 	ForceDestroy() cdktf.IResolvable
 	// Experimental.
@@ -71,6 +72,7 @@ type DataGoogleStorageBucket interface {
 	StorageClass() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -198,6 +200,16 @@ func (j *jsiiProxy_DataGoogleStorageBucket) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucket) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -443,6 +455,16 @@ func (j *jsiiProxy_DataGoogleStorageBucket) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleStorageBucket) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleStorageBucket) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -504,7 +526,7 @@ func (j *jsiiProxy_DataGoogleStorageBucket) Website() DataGoogleStorageBucketWeb
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/storage_bucket google_storage_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/storage_bucket google_storage_bucket} Data Source.
 func NewDataGoogleStorageBucket(scope constructs.Construct, id *string, config *DataGoogleStorageBucketConfig) DataGoogleStorageBucket {
 	_init_.Initialize()
 
@@ -522,7 +544,7 @@ func NewDataGoogleStorageBucket(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/storage_bucket google_storage_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/storage_bucket google_storage_bucket} Data Source.
 func NewDataGoogleStorageBucket_Override(d DataGoogleStorageBucket, scope constructs.Construct, id *string, config *DataGoogleStorageBucketConfig) {
 	_init_.Initialize()
 

@@ -71,7 +71,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReturnTableType", GoMethod: "ResetReturnTableType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReturnType", GoMethod: "ResetReturnType"},
-			_jsii_.MemberMethod{JsiiMethod: "resetRoutineType", GoMethod: "ResetRoutineType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "returnTableType", GoGetter: "ReturnTableType"},
 			_jsii_.MemberProperty{JsiiProperty: "returnTableTypeInput", GoGetter: "ReturnTableTypeInput"},

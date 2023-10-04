@@ -5,14 +5,14 @@ package gkebackuprestoreplaniammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/gkebackuprestoreplaniammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/gkebackuprestoreplaniammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/gke_backup_restore_plan_iam_member google_gke_backup_restore_plan_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/gke_backup_restore_plan_iam_member google_gke_backup_restore_plan_iam_member}.
 type GkeBackupRestorePlanIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanIamMember) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/gke_backup_restore_plan_iam_member google_gke_backup_restore_plan_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/gke_backup_restore_plan_iam_member google_gke_backup_restore_plan_iam_member} Resource.
 func NewGkeBackupRestorePlanIamMember(scope constructs.Construct, id *string, config *GkeBackupRestorePlanIamMemberConfig) GkeBackupRestorePlanIamMember {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewGkeBackupRestorePlanIamMember(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/gke_backup_restore_plan_iam_member google_gke_backup_restore_plan_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/gke_backup_restore_plan_iam_member google_gke_backup_restore_plan_iam_member} Resource.
 func NewGkeBackupRestorePlanIamMember_Override(g GkeBackupRestorePlanIamMember, scope constructs.Construct, id *string, config *GkeBackupRestorePlanIamMemberConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package bigqueryjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/bigqueryjob/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/bigqueryjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/bigquery_job google_bigquery_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/bigquery_job google_bigquery_job}.
 type BigqueryJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,7 @@ type BigqueryJob interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	Extract() BigqueryJobExtractOutputReference
 	ExtractInput() *BigqueryJobExtract
 	// Experimental.
@@ -85,6 +86,7 @@ type BigqueryJob interface {
 	Status() BigqueryJobStatusList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -215,6 +217,16 @@ func (j *jsiiProxy_BigqueryJob) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryJob) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -510,6 +522,16 @@ func (j *jsiiProxy_BigqueryJob) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryJob) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryJob) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -561,7 +583,7 @@ func (j *jsiiProxy_BigqueryJob) UserEmail() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/bigquery_job google_bigquery_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/bigquery_job google_bigquery_job} Resource.
 func NewBigqueryJob(scope constructs.Construct, id *string, config *BigqueryJobConfig) BigqueryJob {
 	_init_.Initialize()
 
@@ -579,7 +601,7 @@ func NewBigqueryJob(scope constructs.Construct, id *string, config *BigqueryJobC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/bigquery_job google_bigquery_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/bigquery_job google_bigquery_job} Resource.
 func NewBigqueryJob_Override(b BigqueryJob, scope constructs.Construct, id *string, config *BigqueryJobConfig) {
 	_init_.Initialize()
 

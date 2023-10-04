@@ -5,14 +5,14 @@ package alloydbinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/alloydbinstance/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/alloydbinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/alloydb_instance google_alloydb_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/alloydb_instance google_alloydb_instance}.
 type AlloydbInstance interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -47,6 +47,8 @@ type AlloydbInstance interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -88,6 +90,8 @@ type AlloydbInstance interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	QueryInsightsConfig() AlloydbInstanceQueryInsightsConfigOutputReference
+	QueryInsightsConfigInput() *AlloydbInstanceQueryInsightsConfig
 	// Experimental.
 	RawOverrides() interface{}
 	ReadPoolConfig() AlloydbInstanceReadPoolConfigOutputReference
@@ -96,6 +100,7 @@ type AlloydbInstance interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -130,6 +135,7 @@ type AlloydbInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMachineConfig(value *AlloydbInstanceMachineConfig)
+	PutQueryInsightsConfig(value *AlloydbInstanceQueryInsightsConfig)
 	PutReadPoolConfig(value *AlloydbInstanceReadPoolConfig)
 	PutTimeouts(value *AlloydbInstanceTimeouts)
 	ResetAnnotations()
@@ -143,6 +149,7 @@ type AlloydbInstance interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetQueryInsightsConfig()
 	ResetReadPoolConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -315,6 +322,26 @@ func (j *jsiiProxy_AlloydbInstance) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstance) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstance) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -530,6 +557,26 @@ func (j *jsiiProxy_AlloydbInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbInstance) QueryInsightsConfig() AlloydbInstanceQueryInsightsConfigOutputReference {
+	var returns AlloydbInstanceQueryInsightsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"queryInsightsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstance) QueryInsightsConfigInput() *AlloydbInstanceQueryInsightsConfig {
+	var returns *AlloydbInstanceQueryInsightsConfig
+	_jsii_.Get(
+		j,
+		"queryInsightsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbInstance) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -585,6 +632,16 @@ func (j *jsiiProxy_AlloydbInstance) TerraformGeneratorMetadata() *cdktf.Terrafor
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstance) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -651,7 +708,7 @@ func (j *jsiiProxy_AlloydbInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
 func NewAlloydbInstance(scope constructs.Construct, id *string, config *AlloydbInstanceConfig) AlloydbInstance {
 	_init_.Initialize()
 
@@ -669,7 +726,7 @@ func NewAlloydbInstance(scope constructs.Construct, id *string, config *AlloydbI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
 func NewAlloydbInstance_Override(a AlloydbInstance, scope constructs.Construct, id *string, config *AlloydbInstanceConfig) {
 	_init_.Initialize()
 
@@ -1135,6 +1192,17 @@ func (a *jsiiProxy_AlloydbInstance) PutMachineConfig(value *AlloydbInstanceMachi
 	)
 }
 
+func (a *jsiiProxy_AlloydbInstance) PutQueryInsightsConfig(value *AlloydbInstanceQueryInsightsConfig) {
+	if err := a.validatePutQueryInsightsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putQueryInsightsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlloydbInstance) PutReadPoolConfig(value *AlloydbInstanceReadPoolConfig) {
 	if err := a.validatePutReadPoolConfigParameters(value); err != nil {
 		panic(err)
@@ -1225,6 +1293,14 @@ func (a *jsiiProxy_AlloydbInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbInstance) ResetQueryInsightsConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetQueryInsightsConfig",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package beyondcorpappgateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/beyondcorpappgateway/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/beyondcorpappgateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/beyondcorp_app_gateway google_beyondcorp_app_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/beyondcorp_app_gateway google_beyondcorp_app_gateway}.
 type BeyondcorpAppGateway interface {
 	cdktf.TerraformResource
 	AllocatedConnections() BeyondcorpAppGatewayAllocatedConnectionsList
@@ -35,6 +35,7 @@ type BeyondcorpAppGateway interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -80,6 +81,7 @@ type BeyondcorpAppGateway interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -217,6 +219,16 @@ func (j *jsiiProxy_BeyondcorpAppGateway) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BeyondcorpAppGateway) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -442,6 +454,16 @@ func (j *jsiiProxy_BeyondcorpAppGateway) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
+func (j *jsiiProxy_BeyondcorpAppGateway) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BeyondcorpAppGateway) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -513,7 +535,7 @@ func (j *jsiiProxy_BeyondcorpAppGateway) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/beyondcorp_app_gateway google_beyondcorp_app_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/beyondcorp_app_gateway google_beyondcorp_app_gateway} Resource.
 func NewBeyondcorpAppGateway(scope constructs.Construct, id *string, config *BeyondcorpAppGatewayConfig) BeyondcorpAppGateway {
 	_init_.Initialize()
 
@@ -531,7 +553,7 @@ func NewBeyondcorpAppGateway(scope constructs.Construct, id *string, config *Bey
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/beyondcorp_app_gateway google_beyondcorp_app_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/beyondcorp_app_gateway google_beyondcorp_app_gateway} Resource.
 func NewBeyondcorpAppGateway_Override(b BeyondcorpAppGateway, scope constructs.Construct, id *string, config *BeyondcorpAppGatewayConfig) {
 	_init_.Initialize()
 

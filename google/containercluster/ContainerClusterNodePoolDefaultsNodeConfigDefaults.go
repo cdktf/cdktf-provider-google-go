@@ -9,7 +9,7 @@ type ContainerClusterNodePoolDefaultsNodeConfigDefaults struct {
 	//
 	// Valid values include DEFAULT and MAX_THROUGHPUT.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/container_cluster#logging_variant ContainerCluster#logging_variant}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/container_cluster#logging_variant ContainerCluster#logging_variant}
 	LoggingVariant *string `field:"optional" json:"loggingVariant" yaml:"loggingVariant"`
 }
 

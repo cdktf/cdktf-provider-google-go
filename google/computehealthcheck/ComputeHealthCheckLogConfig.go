@@ -10,7 +10,7 @@ type ComputeHealthCheckLogConfig struct {
 	// This is false by default,
 	// which means no health check logging will be done.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_health_check#enable ComputeHealthCheck#enable}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_health_check#enable ComputeHealthCheck#enable}
 	Enable interface{} `field:"optional" json:"enable" yaml:"enable"`
 }
 

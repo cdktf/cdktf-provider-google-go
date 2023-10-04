@@ -59,6 +59,10 @@ func (c *jsiiProxy_ContainerAwsCluster) validatePutAuthorizationParameters(value
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAwsCluster) validatePutBinaryAuthorizationParameters(value *ContainerAwsClusterBinaryAuthorization) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAwsCluster) validatePutControlPlaneParameters(value *ContainerAwsClusterControlPlane) error {
 	return nil
 }

@@ -5,9 +5,9 @@ package sqldatabaseinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/sqldatabaseinstance/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/sqldatabaseinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -41,6 +41,9 @@ type SqlDatabaseInstanceCloneOutputReference interface {
 	PointInTime() *string
 	SetPointInTime(val *string)
 	PointInTimeInput() *string
+	PreferredZone() *string
+	SetPreferredZone(val *string)
+	PreferredZoneInput() *string
 	SourceInstanceName() *string
 	SetSourceInstanceName(val *string)
 	SourceInstanceNameInput() *string
@@ -79,6 +82,7 @@ type SqlDatabaseInstanceCloneOutputReference interface {
 	ResetAllocatedIpRange()
 	ResetDatabaseNames()
 	ResetPointInTime()
+	ResetPreferredZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -199,6 +203,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) PointInTimeInput() *
 	_jsii_.Get(
 		j,
 		"pointInTimeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) PreferredZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) PreferredZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredZoneInput",
 		&returns,
 	)
 	return returns
@@ -334,6 +358,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference)SetPointInTime(val *s
 	_jsii_.Set(
 		j,
 		"pointInTime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference)SetPreferredZone(val *string) {
+	if err := j.validateSetPreferredZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferredZone",
 		val,
 	)
 }
@@ -577,6 +612,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) ResetPointInTime() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPointInTime",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) ResetPreferredZone() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPreferredZone",
 		nil, // no parameters
 	)
 }

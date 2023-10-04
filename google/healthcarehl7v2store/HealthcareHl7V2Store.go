@@ -5,14 +5,14 @@ package healthcarehl7v2store
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/healthcarehl7v2store/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/healthcarehl7v2store/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store}.
 type HealthcareHl7V2Store interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,7 @@ type HealthcareHl7V2Store interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -76,6 +77,7 @@ type HealthcareHl7V2Store interface {
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -200,6 +202,16 @@ func (j *jsiiProxy_HealthcareHl7V2Store) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareHl7V2Store) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -425,6 +437,16 @@ func (j *jsiiProxy_HealthcareHl7V2Store) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
+func (j *jsiiProxy_HealthcareHl7V2Store) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HealthcareHl7V2Store) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -466,7 +488,7 @@ func (j *jsiiProxy_HealthcareHl7V2Store) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store} Resource.
 func NewHealthcareHl7V2Store(scope constructs.Construct, id *string, config *HealthcareHl7V2StoreConfig) HealthcareHl7V2Store {
 	_init_.Initialize()
 
@@ -484,7 +506,7 @@ func NewHealthcareHl7V2Store(scope constructs.Construct, id *string, config *Hea
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/healthcare_hl7_v2_store google_healthcare_hl7_v2_store} Resource.
 func NewHealthcareHl7V2Store_Override(h HealthcareHl7V2Store, scope constructs.Construct, id *string, config *HealthcareHl7V2StoreConfig) {
 	_init_.Initialize()
 

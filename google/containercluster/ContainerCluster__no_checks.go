@@ -219,15 +219,15 @@ func (j *jsiiProxy_ContainerCluster) validateSetDefaultMaxPodsPerNodeParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ContainerCluster) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerCluster) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ContainerCluster) validateSetEnableAutopilotParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_ContainerCluster) validateSetEnableBinaryAuthorizationParameters(val interface{}) error {
 	return nil
 }
 

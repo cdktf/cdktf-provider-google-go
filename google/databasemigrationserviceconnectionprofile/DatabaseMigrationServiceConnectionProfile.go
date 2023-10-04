@@ -5,14 +5,14 @@ package databasemigrationserviceconnectionprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/databasemigrationserviceconnectionprofile/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/databasemigrationserviceconnectionprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile}.
 type DatabaseMigrationServiceConnectionProfile interface {
 	cdktf.TerraformResource
 	Alloydb() DatabaseMigrationServiceConnectionProfileAlloydbOutputReference
@@ -43,6 +43,7 @@ type DatabaseMigrationServiceConnectionProfile interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	Error() DatabaseMigrationServiceConnectionProfileErrorList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -88,6 +89,7 @@ type DatabaseMigrationServiceConnectionProfile interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -297,6 +299,16 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) DisplayNameInput()
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -542,6 +554,16 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) TerraformGenerator
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -583,7 +605,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
 func NewDatabaseMigrationServiceConnectionProfile(scope constructs.Construct, id *string, config *DatabaseMigrationServiceConnectionProfileConfig) DatabaseMigrationServiceConnectionProfile {
 	_init_.Initialize()
 
@@ -601,7 +623,7 @@ func NewDatabaseMigrationServiceConnectionProfile(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
 func NewDatabaseMigrationServiceConnectionProfile_Override(d DatabaseMigrationServiceConnectionProfile, scope constructs.Construct, id *string, config *DatabaseMigrationServiceConnectionProfileConfig) {
 	_init_.Initialize()
 

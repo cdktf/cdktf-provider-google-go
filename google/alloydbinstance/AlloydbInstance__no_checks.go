@@ -59,6 +59,10 @@ func (a *jsiiProxy_AlloydbInstance) validatePutMachineConfigParameters(value *Al
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbInstance) validatePutQueryInsightsConfigParameters(value *AlloydbInstanceQueryInsightsConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbInstance) validatePutReadPoolConfigParameters(value *AlloydbInstanceReadPoolConfig) error {
 	return nil
 }

@@ -75,6 +75,10 @@ func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) validateSetPointInTi
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) validateSetPreferredZoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceCloneOutputReference) validateSetSourceInstanceNameParameters(val *string) error {
 	return nil
 }

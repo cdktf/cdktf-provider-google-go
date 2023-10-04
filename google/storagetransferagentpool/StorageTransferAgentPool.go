@@ -5,14 +5,14 @@ package storagetransferagentpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/storagetransferagentpool/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/storagetransferagentpool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/storage_transfer_agent_pool google_storage_transfer_agent_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/storage_transfer_agent_pool google_storage_transfer_agent_pool}.
 type StorageTransferAgentPool interface {
 	cdktf.TerraformResource
 	BandwidthLimit() StorageTransferAgentPoolBandwidthLimitOutputReference
@@ -419,7 +419,7 @@ func (j *jsiiProxy_StorageTransferAgentPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/storage_transfer_agent_pool google_storage_transfer_agent_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/storage_transfer_agent_pool google_storage_transfer_agent_pool} Resource.
 func NewStorageTransferAgentPool(scope constructs.Construct, id *string, config *StorageTransferAgentPoolConfig) StorageTransferAgentPool {
 	_init_.Initialize()
 
@@ -437,7 +437,7 @@ func NewStorageTransferAgentPool(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/storage_transfer_agent_pool google_storage_transfer_agent_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/storage_transfer_agent_pool google_storage_transfer_agent_pool} Resource.
 func NewStorageTransferAgentPool_Override(s StorageTransferAgentPool, scope constructs.Construct, id *string, config *StorageTransferAgentPoolConfig) {
 	_init_.Initialize()
 

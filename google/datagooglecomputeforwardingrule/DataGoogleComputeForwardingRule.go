@@ -5,14 +5,14 @@ package datagooglecomputeforwardingrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglecomputeforwardingrule/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglecomputeforwardingrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/compute_forwarding_rule google_compute_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/compute_forwarding_rule google_compute_forwarding_rule}.
 type DataGoogleComputeForwardingRule interface {
 	cdktf.TerraformDataSource
 	AllowGlobalAccess() cdktf.IResolvable
@@ -34,6 +34,7 @@ type DataGoogleComputeForwardingRule interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -89,6 +90,7 @@ type DataGoogleComputeForwardingRule interface {
 	Target() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -244,6 +246,16 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeForwardingRule) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -619,6 +631,16 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule) TerraformGeneratorMetadata()
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeForwardingRule) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeForwardingRule) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -640,7 +662,7 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRule) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/compute_forwarding_rule google_compute_forwarding_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/compute_forwarding_rule google_compute_forwarding_rule} Data Source.
 func NewDataGoogleComputeForwardingRule(scope constructs.Construct, id *string, config *DataGoogleComputeForwardingRuleConfig) DataGoogleComputeForwardingRule {
 	_init_.Initialize()
 
@@ -658,7 +680,7 @@ func NewDataGoogleComputeForwardingRule(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/compute_forwarding_rule google_compute_forwarding_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/compute_forwarding_rule google_compute_forwarding_rule} Data Source.
 func NewDataGoogleComputeForwardingRule_Override(d DataGoogleComputeForwardingRule, scope constructs.Construct, id *string, config *DataGoogleComputeForwardingRuleConfig) {
 	_init_.Initialize()
 

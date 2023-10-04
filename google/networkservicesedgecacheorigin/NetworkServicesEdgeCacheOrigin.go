@@ -5,14 +5,14 @@ package networkservicesedgecacheorigin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/networkservicesedgecacheorigin/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/networkservicesedgecacheorigin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/network_services_edge_cache_origin google_network_services_edge_cache_origin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/network_services_edge_cache_origin google_network_services_edge_cache_origin}.
 type NetworkServicesEdgeCacheOrigin interface {
 	cdktf.TerraformResource
 	AwsV4Authentication() NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference
@@ -36,6 +36,7 @@ type NetworkServicesEdgeCacheOrigin interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	FailoverOrigin() *string
 	SetFailoverOrigin(val *string)
 	FailoverOriginInput() *string
@@ -96,6 +97,7 @@ type NetworkServicesEdgeCacheOrigin interface {
 	RetryConditionsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -251,6 +253,16 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -586,6 +598,16 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) TerraformGeneratorMetadata() 
 	return returns
 }
 
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -647,7 +669,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/network_services_edge_cache_origin google_network_services_edge_cache_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/network_services_edge_cache_origin google_network_services_edge_cache_origin} Resource.
 func NewNetworkServicesEdgeCacheOrigin(scope constructs.Construct, id *string, config *NetworkServicesEdgeCacheOriginConfig) NetworkServicesEdgeCacheOrigin {
 	_init_.Initialize()
 
@@ -665,7 +687,7 @@ func NewNetworkServicesEdgeCacheOrigin(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/network_services_edge_cache_origin google_network_services_edge_cache_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/network_services_edge_cache_origin google_network_services_edge_cache_origin} Resource.
 func NewNetworkServicesEdgeCacheOrigin_Override(n NetworkServicesEdgeCacheOrigin, scope constructs.Construct, id *string, config *NetworkServicesEdgeCacheOriginConfig) {
 	_init_.Initialize()
 

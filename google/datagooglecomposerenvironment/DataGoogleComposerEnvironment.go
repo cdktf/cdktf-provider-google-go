@@ -5,14 +5,14 @@ package datagooglecomposerenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglecomposerenvironment/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglecomposerenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/composer_environment google_composer_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/composer_environment google_composer_environment}.
 type DataGoogleComposerEnvironment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -28,6 +28,7 @@ type DataGoogleComposerEnvironment interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -63,6 +64,7 @@ type DataGoogleComposerEnvironment interface {
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -158,6 +160,16 @@ func (j *jsiiProxy_DataGoogleComposerEnvironment) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComposerEnvironment) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -333,6 +345,16 @@ func (j *jsiiProxy_DataGoogleComposerEnvironment) TerraformGeneratorMetadata() *
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComposerEnvironment) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComposerEnvironment) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -354,7 +376,7 @@ func (j *jsiiProxy_DataGoogleComposerEnvironment) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/composer_environment google_composer_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/composer_environment google_composer_environment} Data Source.
 func NewDataGoogleComposerEnvironment(scope constructs.Construct, id *string, config *DataGoogleComposerEnvironmentConfig) DataGoogleComposerEnvironment {
 	_init_.Initialize()
 
@@ -372,7 +394,7 @@ func NewDataGoogleComposerEnvironment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/composer_environment google_composer_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/composer_environment google_composer_environment} Data Source.
 func NewDataGoogleComposerEnvironment_Override(d DataGoogleComposerEnvironment, scope constructs.Construct, id *string, config *DataGoogleComposerEnvironmentConfig) {
 	_init_.Initialize()
 

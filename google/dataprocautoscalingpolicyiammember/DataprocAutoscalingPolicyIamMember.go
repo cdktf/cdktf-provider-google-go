@@ -5,14 +5,14 @@ package dataprocautoscalingpolicyiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/dataprocautoscalingpolicyiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/dataprocautoscalingpolicyiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataproc_autoscaling_policy_iam_member google_dataproc_autoscaling_policy_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dataproc_autoscaling_policy_iam_member google_dataproc_autoscaling_policy_iam_member}.
 type DataprocAutoscalingPolicyIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_DataprocAutoscalingPolicyIamMember) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataproc_autoscaling_policy_iam_member google_dataproc_autoscaling_policy_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dataproc_autoscaling_policy_iam_member google_dataproc_autoscaling_policy_iam_member} Resource.
 func NewDataprocAutoscalingPolicyIamMember(scope constructs.Construct, id *string, config *DataprocAutoscalingPolicyIamMemberConfig) DataprocAutoscalingPolicyIamMember {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewDataprocAutoscalingPolicyIamMember(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/dataproc_autoscaling_policy_iam_member google_dataproc_autoscaling_policy_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/dataproc_autoscaling_policy_iam_member google_dataproc_autoscaling_policy_iam_member} Resource.
 func NewDataprocAutoscalingPolicyIamMember_Override(d DataprocAutoscalingPolicyIamMember, scope constructs.Construct, id *string, config *DataprocAutoscalingPolicyIamMemberConfig) {
 	_init_.Initialize()
 

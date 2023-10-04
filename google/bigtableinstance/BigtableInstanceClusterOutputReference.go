@@ -5,9 +5,9 @@ package bigtableinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/bigtableinstance/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/bigtableinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -43,6 +43,7 @@ type BigtableInstanceClusterOutputReference interface {
 	NumNodes() *float64
 	SetNumNodes(val *float64)
 	NumNodesInput() *float64
+	State() *string
 	StorageType() *string
 	SetStorageType(val *string)
 	StorageTypeInput() *string
@@ -227,6 +228,16 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference) NumNodesInput() *floa
 	_jsii_.Get(
 		j,
 		"numNodesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
 		&returns,
 	)
 	return returns

@@ -34,6 +34,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "distribution", GoGetter: "Distribution"},
 			_jsii_.MemberProperty{JsiiProperty: "distributionInput", GoGetter: "DistributionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveAnnotations", GoGetter: "EffectiveAnnotations"},
 			_jsii_.MemberProperty{JsiiProperty: "errors", GoGetter: "Errors"},
 			_jsii_.MemberProperty{JsiiProperty: "fleet", GoGetter: "Fleet"},
 			_jsii_.MemberProperty{JsiiProperty: "fleetInput", GoGetter: "FleetInput"},

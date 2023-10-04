@@ -5,14 +5,14 @@ package containerawsnodepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/containerawsnodepool/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/containerawsnodepool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/container_aws_node_pool google_container_aws_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/container_aws_node_pool google_container_aws_node_pool}.
 type ContainerAwsNodePool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -42,6 +42,7 @@ type ContainerAwsNodePool interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveAnnotations() cdktf.StringMap
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -289,6 +290,16 @@ func (j *jsiiProxy_ContainerAwsNodePool) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAwsNodePool) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
 		&returns,
 	)
 	return returns
@@ -635,7 +646,7 @@ func (j *jsiiProxy_ContainerAwsNodePool) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/container_aws_node_pool google_container_aws_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/container_aws_node_pool google_container_aws_node_pool} Resource.
 func NewContainerAwsNodePool(scope constructs.Construct, id *string, config *ContainerAwsNodePoolConfig) ContainerAwsNodePool {
 	_init_.Initialize()
 
@@ -653,7 +664,7 @@ func NewContainerAwsNodePool(scope constructs.Construct, id *string, config *Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/container_aws_node_pool google_container_aws_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/container_aws_node_pool google_container_aws_node_pool} Resource.
 func NewContainerAwsNodePool_Override(c ContainerAwsNodePool, scope constructs.Construct, id *string, config *ContainerAwsNodePoolConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package gkehubscope
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/gkehubscope/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/gkehubscope/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/gke_hub_scope google_gke_hub_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/gke_hub_scope google_gke_hub_scope}.
 type GkeHubScope interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,7 @@ type GkeHubScope interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -73,6 +74,7 @@ type GkeHubScope interface {
 	State() GkeHubScopeStateList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -194,6 +196,16 @@ func (j *jsiiProxy_GkeHubScope) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubScope) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -389,6 +401,16 @@ func (j *jsiiProxy_GkeHubScope) TerraformGeneratorMetadata() *cdktf.TerraformPro
 	return returns
 }
 
+func (j *jsiiProxy_GkeHubScope) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GkeHubScope) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -450,7 +472,7 @@ func (j *jsiiProxy_GkeHubScope) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/gke_hub_scope google_gke_hub_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/gke_hub_scope google_gke_hub_scope} Resource.
 func NewGkeHubScope(scope constructs.Construct, id *string, config *GkeHubScopeConfig) GkeHubScope {
 	_init_.Initialize()
 
@@ -468,7 +490,7 @@ func NewGkeHubScope(scope constructs.Construct, id *string, config *GkeHubScopeC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/gke_hub_scope google_gke_hub_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/gke_hub_scope google_gke_hub_scope} Resource.
 func NewGkeHubScope_Override(g GkeHubScope, scope constructs.Construct, id *string, config *GkeHubScopeConfig) {
 	_init_.Initialize()
 

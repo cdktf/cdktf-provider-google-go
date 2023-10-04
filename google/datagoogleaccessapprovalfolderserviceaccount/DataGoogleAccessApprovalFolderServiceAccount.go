@@ -5,14 +5,14 @@ package datagoogleaccessapprovalfolderserviceaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagoogleaccessapprovalfolderserviceaccount/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagoogleaccessapprovalfolderserviceaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/access_approval_folder_service_account google_access_approval_folder_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/access_approval_folder_service_account google_access_approval_folder_service_account}.
 type DataGoogleAccessApprovalFolderServiceAccount interface {
 	cdktf.TerraformDataSource
 	AccountEmail() *string
@@ -306,7 +306,7 @@ func (j *jsiiProxy_DataGoogleAccessApprovalFolderServiceAccount) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/access_approval_folder_service_account google_access_approval_folder_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/access_approval_folder_service_account google_access_approval_folder_service_account} Data Source.
 func NewDataGoogleAccessApprovalFolderServiceAccount(scope constructs.Construct, id *string, config *DataGoogleAccessApprovalFolderServiceAccountConfig) DataGoogleAccessApprovalFolderServiceAccount {
 	_init_.Initialize()
 
@@ -324,7 +324,7 @@ func NewDataGoogleAccessApprovalFolderServiceAccount(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/access_approval_folder_service_account google_access_approval_folder_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/access_approval_folder_service_account google_access_approval_folder_service_account} Data Source.
 func NewDataGoogleAccessApprovalFolderServiceAccount_Override(d DataGoogleAccessApprovalFolderServiceAccount, scope constructs.Construct, id *string, config *DataGoogleAccessApprovalFolderServiceAccountConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package datagooglegkehubscopeiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglegkehubscopeiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglegkehubscopeiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy}.
 type DataGoogleGkeHubScopeIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataGoogleGkeHubScopeIamPolicy) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy} Data Source.
 func NewDataGoogleGkeHubScopeIamPolicy(scope constructs.Construct, id *string, config *DataGoogleGkeHubScopeIamPolicyConfig) DataGoogleGkeHubScopeIamPolicy {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataGoogleGkeHubScopeIamPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy} Data Source.
 func NewDataGoogleGkeHubScopeIamPolicy_Override(d DataGoogleGkeHubScopeIamPolicy, scope constructs.Construct, id *string, config *DataGoogleGkeHubScopeIamPolicyConfig) {
 	_init_.Initialize()
 

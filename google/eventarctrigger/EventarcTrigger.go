@@ -5,14 +5,14 @@ package eventarctrigger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/eventarctrigger/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/eventarctrigger/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/eventarc_trigger google_eventarc_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/eventarc_trigger google_eventarc_trigger}.
 type EventarcTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -38,6 +38,7 @@ type EventarcTrigger interface {
 	SetDependsOn(val *[]*string)
 	Destination() EventarcTriggerDestinationOutputReference
 	DestinationInput() *EventarcTriggerDestination
+	EffectiveLabels() cdktf.StringMap
 	Etag() *string
 	EventDataContentType() *string
 	SetEventDataContentType(val *string)
@@ -88,6 +89,7 @@ type EventarcTrigger interface {
 	ServiceAccountInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -258,6 +260,16 @@ func (j *jsiiProxy_EventarcTrigger) DestinationInput() *EventarcTriggerDestinati
 	_jsii_.Get(
 		j,
 		"destinationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventarcTrigger) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -523,6 +535,16 @@ func (j *jsiiProxy_EventarcTrigger) TerraformGeneratorMetadata() *cdktf.Terrafor
 	return returns
 }
 
+func (j *jsiiProxy_EventarcTrigger) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EventarcTrigger) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -604,7 +626,7 @@ func (j *jsiiProxy_EventarcTrigger) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/eventarc_trigger google_eventarc_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/eventarc_trigger google_eventarc_trigger} Resource.
 func NewEventarcTrigger(scope constructs.Construct, id *string, config *EventarcTriggerConfig) EventarcTrigger {
 	_init_.Initialize()
 
@@ -622,7 +644,7 @@ func NewEventarcTrigger(scope constructs.Construct, id *string, config *Eventarc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/eventarc_trigger google_eventarc_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/eventarc_trigger google_eventarc_trigger} Resource.
 func NewEventarcTrigger_Override(e EventarcTrigger, scope constructs.Construct, id *string, config *EventarcTriggerConfig) {
 	_init_.Initialize()
 

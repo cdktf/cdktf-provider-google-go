@@ -77,6 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLogConfig", GoMethod: "ResetLogConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxPortsPerVm", GoMethod: "ResetMaxPortsPerVm"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMinPortsPerVm", GoMethod: "ResetMinPortsPerVm"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNatIpAllocateOption", GoMethod: "ResetNatIpAllocateOption"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNatIps", GoMethod: "ResetNatIps"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},

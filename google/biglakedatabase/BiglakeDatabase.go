@@ -5,14 +5,14 @@ package biglakedatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/biglakedatabase/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/biglakedatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/biglake_database google_biglake_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/biglake_database google_biglake_database}.
 type BiglakeDatabase interface {
 	cdktf.TerraformResource
 	Catalog() *string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_BiglakeDatabase) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/biglake_database google_biglake_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/biglake_database google_biglake_database} Resource.
 func NewBiglakeDatabase(scope constructs.Construct, id *string, config *BiglakeDatabaseConfig) BiglakeDatabase {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewBiglakeDatabase(scope constructs.Construct, id *string, config *BiglakeD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/biglake_database google_biglake_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/biglake_database google_biglake_database} Resource.
 func NewBiglakeDatabase_Override(b BiglakeDatabase, scope constructs.Construct, id *string, config *BiglakeDatabaseConfig) {
 	_init_.Initialize()
 

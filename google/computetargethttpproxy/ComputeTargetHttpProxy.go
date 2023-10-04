@@ -5,14 +5,14 @@ package computetargethttpproxy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/computetargethttpproxy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/computetargethttpproxy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_target_http_proxy google_compute_target_http_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_target_http_proxy google_compute_target_http_proxy}.
 type ComputeTargetHttpProxy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -488,7 +488,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy) UrlMapInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_target_http_proxy google_compute_target_http_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_target_http_proxy google_compute_target_http_proxy} Resource.
 func NewComputeTargetHttpProxy(scope constructs.Construct, id *string, config *ComputeTargetHttpProxyConfig) ComputeTargetHttpProxy {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewComputeTargetHttpProxy(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_target_http_proxy google_compute_target_http_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_target_http_proxy google_compute_target_http_proxy} Resource.
 func NewComputeTargetHttpProxy_Override(c ComputeTargetHttpProxy, scope constructs.Construct, id *string, config *ComputeTargetHttpProxyConfig) {
 	_init_.Initialize()
 

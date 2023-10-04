@@ -644,15 +644,7 @@ func (j *jsiiProxy_ContainerCluster) validateSetDefaultMaxPodsPerNodeParameters(
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetDescriptionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ContainerCluster) validateSetEnableAutopilotParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetDeletionProtectionParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -672,7 +664,15 @@ func (j *jsiiProxy_ContainerCluster) validateSetEnableAutopilotParameters(val in
 	return nil
 }
 
-func (j *jsiiProxy_ContainerCluster) validateSetEnableBinaryAuthorizationParameters(val interface{}) error {
+func (j *jsiiProxy_ContainerCluster) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerCluster) validateSetEnableAutopilotParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

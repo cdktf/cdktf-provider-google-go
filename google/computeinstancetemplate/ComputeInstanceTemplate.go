@@ -5,14 +5,14 @@ package computeinstancetemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/computeinstancetemplate/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/computeinstancetemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_instance_template google_compute_instance_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_instance_template google_compute_instance_template}.
 type ComputeInstanceTemplate interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() ComputeInstanceTemplateAdvancedMachineFeaturesOutputReference
@@ -43,6 +43,7 @@ type ComputeInstanceTemplate interface {
 	DescriptionInput() *string
 	Disk() ComputeInstanceTemplateDiskList
 	DiskInput() interface{}
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -126,6 +127,7 @@ type ComputeInstanceTemplate interface {
 	TagsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -355,6 +357,16 @@ func (j *jsiiProxy_ComputeInstanceTemplate) DiskInput() interface{} {
 	_jsii_.Get(
 		j,
 		"diskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplate) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -890,6 +902,16 @@ func (j *jsiiProxy_ComputeInstanceTemplate) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplate) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplate) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -931,7 +953,7 @@ func (j *jsiiProxy_ComputeInstanceTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_instance_template google_compute_instance_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_instance_template google_compute_instance_template} Resource.
 func NewComputeInstanceTemplate(scope constructs.Construct, id *string, config *ComputeInstanceTemplateConfig) ComputeInstanceTemplate {
 	_init_.Initialize()
 
@@ -949,7 +971,7 @@ func NewComputeInstanceTemplate(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_instance_template google_compute_instance_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_instance_template google_compute_instance_template} Resource.
 func NewComputeInstanceTemplate_Override(c ComputeInstanceTemplate, scope constructs.Construct, id *string, config *ComputeInstanceTemplateConfig) {
 	_init_.Initialize()
 

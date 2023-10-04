@@ -7,7 +7,7 @@ package computebackendservice
 type ComputeBackendServiceLogConfig struct {
 	// Whether to enable logging for the load balancer traffic served by this backend service.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_backend_service#enable ComputeBackendService#enable}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_backend_service#enable ComputeBackendService#enable}
 	Enable interface{} `field:"optional" json:"enable" yaml:"enable"`
 	// This field can only be specified if logging is enabled for this backend service.
 	//
@@ -16,7 +16,7 @@ type ComputeBackendServiceLogConfig struct {
 	// where 1.0 means all logged requests are reported and 0.0 means no logged requests are reported.
 	// The default value is 1.0.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_backend_service#sample_rate ComputeBackendService#sample_rate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_backend_service#sample_rate ComputeBackendService#sample_rate}
 	SampleRate *float64 `field:"optional" json:"sampleRate" yaml:"sampleRate"`
 }
 

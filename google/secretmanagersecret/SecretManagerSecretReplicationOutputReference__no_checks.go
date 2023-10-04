@@ -59,10 +59,6 @@ func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) validateResolv
 	return nil
 }
 
-func (j *jsiiProxy_SecretManagerSecretReplicationOutputReference) validateSetAutomaticParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_SecretManagerSecretReplicationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

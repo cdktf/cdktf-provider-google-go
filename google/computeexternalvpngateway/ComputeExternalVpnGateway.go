@@ -5,14 +5,14 @@ package computeexternalvpngateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/computeexternalvpngateway/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/computeexternalvpngateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_external_vpn_gateway google_compute_external_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_external_vpn_gateway google_compute_external_vpn_gateway}.
 type ComputeExternalVpnGateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,7 @@ type ComputeExternalVpnGateway interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -79,6 +80,7 @@ type ComputeExternalVpnGateway interface {
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -202,6 +204,16 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeExternalVpnGateway) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -437,6 +449,16 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
+func (j *jsiiProxy_ComputeExternalVpnGateway) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeExternalVpnGateway) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -478,7 +500,7 @@ func (j *jsiiProxy_ComputeExternalVpnGateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_external_vpn_gateway google_compute_external_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_external_vpn_gateway google_compute_external_vpn_gateway} Resource.
 func NewComputeExternalVpnGateway(scope constructs.Construct, id *string, config *ComputeExternalVpnGatewayConfig) ComputeExternalVpnGateway {
 	_init_.Initialize()
 
@@ -496,7 +518,7 @@ func NewComputeExternalVpnGateway(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_external_vpn_gateway google_compute_external_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_external_vpn_gateway google_compute_external_vpn_gateway} Resource.
 func NewComputeExternalVpnGateway_Override(c ComputeExternalVpnGateway, scope constructs.Construct, id *string, config *ComputeExternalVpnGatewayConfig) {
 	_init_.Initialize()
 

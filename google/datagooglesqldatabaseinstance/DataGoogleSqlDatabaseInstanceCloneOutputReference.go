@@ -5,9 +5,9 @@ package datagooglesqldatabaseinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglesqldatabaseinstance/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglesqldatabaseinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,6 +35,7 @@ type DataGoogleSqlDatabaseInstanceCloneOutputReference interface {
 	InternalValue() *DataGoogleSqlDatabaseInstanceClone
 	SetInternalValue(val *DataGoogleSqlDatabaseInstanceClone)
 	PointInTime() *string
+	PreferredZone() *string
 	SourceInstanceName() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -158,6 +159,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceCloneOutputReference) PointInTim
 	_jsii_.Get(
 		j,
 		"pointInTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceCloneOutputReference) PreferredZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredZone",
 		&returns,
 	)
 	return returns

@@ -51,19 +51,11 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) validatePutLivenessProbeParameters(value *CloudRunV2JobTemplateTemplateContainersLivenessProbe) error {
-	return nil
-}
-
 func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) validatePutPortsParameters(value interface{}) error {
 	return nil
 }
 
 func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) validatePutResourcesParameters(value *CloudRunV2JobTemplateTemplateContainersResources) error {
-	return nil
-}
-
-func (c *jsiiProxy_CloudRunV2JobTemplateTemplateContainersOutputReference) validatePutStartupProbeParameters(value *CloudRunV2JobTemplateTemplateContainersStartupProbe) error {
 	return nil
 }
 

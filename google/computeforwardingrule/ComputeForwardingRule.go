@@ -5,14 +5,14 @@ package computeforwardingrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/computeforwardingrule/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/computeforwardingrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule}.
 type ComputeForwardingRule interface {
 	cdktf.TerraformResource
 	AllowGlobalAccess() interface{}
@@ -48,6 +48,7 @@ type ComputeForwardingRule interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -138,6 +139,7 @@ type ComputeForwardingRule interface {
 	TargetInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -379,6 +381,16 @@ func (j *jsiiProxy_ComputeForwardingRule) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeForwardingRule) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -924,6 +936,16 @@ func (j *jsiiProxy_ComputeForwardingRule) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
+func (j *jsiiProxy_ComputeForwardingRule) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeForwardingRule) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -965,7 +987,7 @@ func (j *jsiiProxy_ComputeForwardingRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewComputeForwardingRule(scope constructs.Construct, id *string, config *ComputeForwardingRuleConfig) ComputeForwardingRule {
 	_init_.Initialize()
 
@@ -983,7 +1005,7 @@ func NewComputeForwardingRule(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewComputeForwardingRule_Override(c ComputeForwardingRule, scope constructs.Construct, id *string, config *ComputeForwardingRuleConfig) {
 	_init_.Initialize()
 

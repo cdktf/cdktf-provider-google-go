@@ -5,14 +5,14 @@ package firebaserulesruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/firebaserulesruleset/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/firebaserulesruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/firebaserules_ruleset google_firebaserules_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/firebaserules_ruleset google_firebaserules_ruleset}.
 type FirebaserulesRuleset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_FirebaserulesRuleset) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/firebaserules_ruleset google_firebaserules_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/firebaserules_ruleset google_firebaserules_ruleset} Resource.
 func NewFirebaserulesRuleset(scope constructs.Construct, id *string, config *FirebaserulesRulesetConfig) FirebaserulesRuleset {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewFirebaserulesRuleset(scope constructs.Construct, id *string, config *Fir
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/firebaserules_ruleset google_firebaserules_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/firebaserules_ruleset google_firebaserules_ruleset} Resource.
 func NewFirebaserulesRuleset_Override(f FirebaserulesRuleset, scope constructs.Construct, id *string, config *FirebaserulesRulesetConfig) {
 	_init_.Initialize()
 

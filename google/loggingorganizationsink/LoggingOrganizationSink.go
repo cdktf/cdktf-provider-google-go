@@ -5,14 +5,14 @@ package loggingorganizationsink
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/loggingorganizationsink/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/loggingorganizationsink/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/logging_organization_sink google_logging_organization_sink}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/logging_organization_sink google_logging_organization_sink}.
 type LoggingOrganizationSink interface {
 	cdktf.TerraformResource
 	BigqueryOptions() LoggingOrganizationSinkBigqueryOptionsOutputReference
@@ -513,7 +513,7 @@ func (j *jsiiProxy_LoggingOrganizationSink) WriterIdentity() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/logging_organization_sink google_logging_organization_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/logging_organization_sink google_logging_organization_sink} Resource.
 func NewLoggingOrganizationSink(scope constructs.Construct, id *string, config *LoggingOrganizationSinkConfig) LoggingOrganizationSink {
 	_init_.Initialize()
 
@@ -531,7 +531,7 @@ func NewLoggingOrganizationSink(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/logging_organization_sink google_logging_organization_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/logging_organization_sink google_logging_organization_sink} Resource.
 func NewLoggingOrganizationSink_Override(l LoggingOrganizationSink, scope constructs.Construct, id *string, config *LoggingOrganizationSinkConfig) {
 	_init_.Initialize()
 

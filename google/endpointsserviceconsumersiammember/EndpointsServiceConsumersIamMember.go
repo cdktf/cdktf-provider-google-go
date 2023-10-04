@@ -5,14 +5,14 @@ package endpointsserviceconsumersiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/endpointsserviceconsumersiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/endpointsserviceconsumersiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/endpoints_service_consumers_iam_member google_endpoints_service_consumers_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/endpoints_service_consumers_iam_member google_endpoints_service_consumers_iam_member}.
 type EndpointsServiceConsumersIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_EndpointsServiceConsumersIamMember) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/endpoints_service_consumers_iam_member google_endpoints_service_consumers_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/endpoints_service_consumers_iam_member google_endpoints_service_consumers_iam_member} Resource.
 func NewEndpointsServiceConsumersIamMember(scope constructs.Construct, id *string, config *EndpointsServiceConsumersIamMemberConfig) EndpointsServiceConsumersIamMember {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewEndpointsServiceConsumersIamMember(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/endpoints_service_consumers_iam_member google_endpoints_service_consumers_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/endpoints_service_consumers_iam_member google_endpoints_service_consumers_iam_member} Resource.
 func NewEndpointsServiceConsumersIamMember_Override(e EndpointsServiceConsumersIamMember, scope constructs.Construct, id *string, config *EndpointsServiceConsumersIamMemberConfig) {
 	_init_.Initialize()
 

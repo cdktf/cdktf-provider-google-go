@@ -5,16 +5,19 @@ package alloydbcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/alloydbcluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/alloydbcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
 type AlloydbCluster interface {
 	cdktf.TerraformResource
+	Annotations() *map[string]*string
+	SetAnnotations(val *map[string]*string)
+	AnnotationsInput() *map[string]*string
 	AutomatedBackupPolicy() AlloydbClusterAutomatedBackupPolicyOutputReference
 	AutomatedBackupPolicyInput() *AlloydbClusterAutomatedBackupPolicy
 	BackupSource() AlloydbClusterBackupSourceList
@@ -44,9 +47,14 @@ type AlloydbCluster interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
 	EncryptionConfig() AlloydbClusterEncryptionConfigOutputReference
 	EncryptionConfigInput() *AlloydbClusterEncryptionConfig
 	EncryptionInfo() AlloydbClusterEncryptionInfoList
+	Etag() *string
+	SetEtag(val *string)
+	EtagInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -92,12 +100,15 @@ type AlloydbCluster interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Reconciling() cdktf.IResolvable
 	RestoreBackupSource() AlloydbClusterRestoreBackupSourceOutputReference
 	RestoreBackupSourceInput() *AlloydbClusterRestoreBackupSource
 	RestoreContinuousBackupSource() AlloydbClusterRestoreContinuousBackupSourceOutputReference
 	RestoreContinuousBackupSourceInput() *AlloydbClusterRestoreContinuousBackupSource
+	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -138,10 +149,12 @@ type AlloydbCluster interface {
 	PutRestoreBackupSource(value *AlloydbClusterRestoreBackupSource)
 	PutRestoreContinuousBackupSource(value *AlloydbClusterRestoreContinuousBackupSource)
 	PutTimeouts(value *AlloydbClusterTimeouts)
+	ResetAnnotations()
 	ResetAutomatedBackupPolicy()
 	ResetContinuousBackupConfig()
 	ResetDisplayName()
 	ResetEncryptionConfig()
+	ResetEtag()
 	ResetId()
 	ResetInitialUser()
 	ResetLabels()
@@ -167,6 +180,26 @@ type AlloydbCluster interface {
 // The jsii proxy struct for AlloydbCluster
 type jsiiProxy_AlloydbCluster struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AlloydbCluster) Annotations() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) AnnotationsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"annotationsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AlloydbCluster) AutomatedBackupPolicy() AlloydbClusterAutomatedBackupPolicyOutputReference {
@@ -329,6 +362,26 @@ func (j *jsiiProxy_AlloydbCluster) DisplayNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbCluster) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbCluster) EncryptionConfig() AlloydbClusterEncryptionConfigOutputReference {
 	var returns AlloydbClusterEncryptionConfigOutputReference
 	_jsii_.Get(
@@ -354,6 +407,26 @@ func (j *jsiiProxy_AlloydbCluster) EncryptionInfo() AlloydbClusterEncryptionInfo
 	_jsii_.Get(
 		j,
 		"encryptionInfo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) EtagInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etagInput",
 		&returns,
 	)
 	return returns
@@ -599,6 +672,16 @@ func (j *jsiiProxy_AlloydbCluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbCluster) Reconciling() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"reconciling",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbCluster) RestoreBackupSource() AlloydbClusterRestoreBackupSourceOutputReference {
 	var returns AlloydbClusterRestoreBackupSourceOutputReference
 	_jsii_.Get(
@@ -639,11 +722,31 @@ func (j *jsiiProxy_AlloydbCluster) RestoreContinuousBackupSourceInput() *Alloydb
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbCluster) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbCluster) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -700,7 +803,7 @@ func (j *jsiiProxy_AlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbClusterConfig) AlloydbCluster {
 	_init_.Initialize()
 
@@ -718,7 +821,7 @@ func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster_Override(a AlloydbCluster, scope constructs.Construct, id *string, config *AlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -726,6 +829,17 @@ func NewAlloydbCluster_Override(a AlloydbCluster, scope constructs.Construct, id
 		"@cdktf/provider-google.alloydbCluster.AlloydbCluster",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AlloydbCluster)SetAnnotations(val *map[string]*string) {
+	if err := j.validateSetAnnotationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"annotations",
+		val,
 	)
 }
 
@@ -777,6 +891,17 @@ func (j *jsiiProxy_AlloydbCluster)SetDisplayName(val *string) {
 	_jsii_.Set(
 		j,
 		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlloydbCluster)SetEtag(val *string) {
+	if err := j.validateSetEtagParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"etag",
 		val,
 	)
 }
@@ -1228,6 +1353,14 @@ func (a *jsiiProxy_AlloydbCluster) PutTimeouts(value *AlloydbClusterTimeouts) {
 	)
 }
 
+func (a *jsiiProxy_AlloydbCluster) ResetAnnotations() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AlloydbCluster) ResetAutomatedBackupPolicy() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1256,6 +1389,14 @@ func (a *jsiiProxy_AlloydbCluster) ResetEncryptionConfig() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEncryptionConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) ResetEtag() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEtag",
 		nil, // no parameters
 	)
 }

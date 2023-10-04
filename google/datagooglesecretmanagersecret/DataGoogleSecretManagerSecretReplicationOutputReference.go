@@ -5,16 +5,15 @@ package datagooglesecretmanagersecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglesecretmanagersecret/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglesecretmanagersecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type DataGoogleSecretManagerSecretReplicationOutputReference interface {
 	cdktf.ComplexObject
 	Auto() DataGoogleSecretManagerSecretReplicationAutoList
-	Automatic() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -87,16 +86,6 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecretReplicationOutputReference) Auto
 	_jsii_.Get(
 		j,
 		"auto",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGoogleSecretManagerSecretReplicationOutputReference) Automatic() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"automatic",
 		&returns,
 	)
 	return returns

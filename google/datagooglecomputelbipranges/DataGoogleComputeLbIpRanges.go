@@ -5,14 +5,14 @@ package datagooglecomputelbipranges
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglecomputelbipranges/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglecomputelbipranges/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/compute_lb_ip_ranges google_compute_lb_ip_ranges}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/compute_lb_ip_ranges google_compute_lb_ip_ranges}.
 type DataGoogleComputeLbIpRanges interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -283,7 +283,7 @@ func (j *jsiiProxy_DataGoogleComputeLbIpRanges) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/compute_lb_ip_ranges google_compute_lb_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/compute_lb_ip_ranges google_compute_lb_ip_ranges} Data Source.
 func NewDataGoogleComputeLbIpRanges(scope constructs.Construct, id *string, config *DataGoogleComputeLbIpRangesConfig) DataGoogleComputeLbIpRanges {
 	_init_.Initialize()
 
@@ -301,7 +301,7 @@ func NewDataGoogleComputeLbIpRanges(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/data-sources/compute_lb_ip_ranges google_compute_lb_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/compute_lb_ip_ranges google_compute_lb_ip_ranges} Data Source.
 func NewDataGoogleComputeLbIpRanges_Override(d DataGoogleComputeLbIpRanges, scope constructs.Construct, id *string, config *DataGoogleComputeLbIpRangesConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package vertexaifeaturestoreentitytypefeature
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/vertexaifeaturestoreentitytypefeature/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/vertexaifeaturestoreentitytypefeature/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/vertex_ai_featurestore_entitytype_feature google_vertex_ai_featurestore_entitytype_feature}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/vertex_ai_featurestore_entitytype_feature google_vertex_ai_featurestore_entitytype_feature}.
 type VertexAiFeaturestoreEntitytypeFeature interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,6 +35,7 @@ type VertexAiFeaturestoreEntitytypeFeature interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	Entitytype() *string
 	SetEntitytype(val *string)
 	EntitytypeInput() *string
@@ -75,6 +76,7 @@ type VertexAiFeaturestoreEntitytypeFeature interface {
 	Region() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -209,6 +211,16 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) DescriptionInput() *st
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -404,6 +416,16 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) TerraformGeneratorMeta
 	return returns
 }
 
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -475,7 +497,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeFeature) ValueTypeInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/vertex_ai_featurestore_entitytype_feature google_vertex_ai_featurestore_entitytype_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/vertex_ai_featurestore_entitytype_feature google_vertex_ai_featurestore_entitytype_feature} Resource.
 func NewVertexAiFeaturestoreEntitytypeFeature(scope constructs.Construct, id *string, config *VertexAiFeaturestoreEntitytypeFeatureConfig) VertexAiFeaturestoreEntitytypeFeature {
 	_init_.Initialize()
 
@@ -493,7 +515,7 @@ func NewVertexAiFeaturestoreEntitytypeFeature(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/vertex_ai_featurestore_entitytype_feature google_vertex_ai_featurestore_entitytype_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/vertex_ai_featurestore_entitytype_feature google_vertex_ai_featurestore_entitytype_feature} Resource.
 func NewVertexAiFeaturestoreEntitytypeFeature_Override(v VertexAiFeaturestoreEntitytypeFeature, scope constructs.Construct, id *string, config *VertexAiFeaturestoreEntitytypeFeatureConfig) {
 	_init_.Initialize()
 

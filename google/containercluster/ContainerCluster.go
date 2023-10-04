@@ -5,14 +5,14 @@ package containercluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/containercluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/containercluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/container_cluster google_container_cluster}.
 type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
@@ -55,6 +55,9 @@ type ContainerCluster interface {
 	DefaultMaxPodsPerNodeInput() *float64
 	DefaultSnatStatus() ContainerClusterDefaultSnatStatusOutputReference
 	DefaultSnatStatusInput() *ContainerClusterDefaultSnatStatus
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -67,9 +70,6 @@ type ContainerCluster interface {
 	EnableAutopilot() interface{}
 	SetEnableAutopilot(val interface{})
 	EnableAutopilotInput() interface{}
-	EnableBinaryAuthorization() interface{}
-	SetEnableBinaryAuthorization(val interface{})
-	EnableBinaryAuthorizationInput() interface{}
 	EnableIntranodeVisibility() interface{}
 	SetEnableIntranodeVisibility(val interface{})
 	EnableIntranodeVisibilityInput() interface{}
@@ -288,10 +288,10 @@ type ContainerCluster interface {
 	ResetDatapathProvider()
 	ResetDefaultMaxPodsPerNode()
 	ResetDefaultSnatStatus()
+	ResetDeletionProtection()
 	ResetDescription()
 	ResetDnsConfig()
 	ResetEnableAutopilot()
-	ResetEnableBinaryAuthorization()
 	ResetEnableIntranodeVisibility()
 	ResetEnableK8SBetaApis()
 	ResetEnableKubernetesAlpha()
@@ -634,6 +634,26 @@ func (j *jsiiProxy_ContainerCluster) DefaultSnatStatusInput() *ContainerClusterD
 	return returns
 }
 
+func (j *jsiiProxy_ContainerCluster) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerCluster) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -699,26 +719,6 @@ func (j *jsiiProxy_ContainerCluster) EnableAutopilotInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableAutopilotInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContainerCluster) EnableBinaryAuthorization() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableBinaryAuthorization",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ContainerCluster) EnableBinaryAuthorizationInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableBinaryAuthorizationInput",
 		&returns,
 	)
 	return returns
@@ -1805,7 +1805,7 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
 
@@ -1823,7 +1823,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct, id *string, config *ContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -1900,6 +1900,17 @@ func (j *jsiiProxy_ContainerCluster)SetDefaultMaxPodsPerNode(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ContainerCluster)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContainerCluster)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1926,17 +1937,6 @@ func (j *jsiiProxy_ContainerCluster)SetEnableAutopilot(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableAutopilot",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ContainerCluster)SetEnableBinaryAuthorization(val interface{}) {
-	if err := j.validateSetEnableBinaryAuthorizationParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enableBinaryAuthorization",
 		val,
 	)
 }
@@ -2935,6 +2935,14 @@ func (c *jsiiProxy_ContainerCluster) ResetDefaultSnatStatus() {
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeletionProtection",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
@@ -2955,14 +2963,6 @@ func (c *jsiiProxy_ContainerCluster) ResetEnableAutopilot() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnableAutopilot",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ContainerCluster) ResetEnableBinaryAuthorization() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetEnableBinaryAuthorization",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,9 @@ package datagooglecloudrunservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/datagooglecloudrunservice/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglecloudrunservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -29,6 +29,8 @@ type DataGoogleCloudRunServiceMetadataOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	Fqn() *string
 	Generation() *float64
@@ -42,6 +44,7 @@ type DataGoogleCloudRunServiceMetadataOutputReference interface {
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
@@ -126,6 +129,26 @@ func (j *jsiiProxy_DataGoogleCloudRunServiceMetadataOutputReference) CreationSta
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudRunServiceMetadataOutputReference) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunServiceMetadataOutputReference) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleCloudRunServiceMetadataOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -201,6 +224,16 @@ func (j *jsiiProxy_DataGoogleCloudRunServiceMetadataOutputReference) TerraformAt
 	_jsii_.Get(
 		j,
 		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunServiceMetadataOutputReference) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns

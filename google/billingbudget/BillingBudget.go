@@ -5,14 +5,14 @@ package billingbudget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/billingbudget/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/billingbudget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/billing_budget google_billing_budget}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/billing_budget google_billing_budget}.
 type BillingBudget interface {
 	cdktf.TerraformResource
 	AllUpdatesRule() BillingBudgetAllUpdatesRuleOutputReference
@@ -466,7 +466,7 @@ func (j *jsiiProxy_BillingBudget) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/billing_budget google_billing_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/billing_budget google_billing_budget} Resource.
 func NewBillingBudget(scope constructs.Construct, id *string, config *BillingBudgetConfig) BillingBudget {
 	_init_.Initialize()
 
@@ -484,7 +484,7 @@ func NewBillingBudget(scope constructs.Construct, id *string, config *BillingBud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/billing_budget google_billing_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/billing_budget google_billing_budget} Resource.
 func NewBillingBudget_Override(b BillingBudget, scope constructs.Construct, id *string, config *BillingBudgetConfig) {
 	_init_.Initialize()
 

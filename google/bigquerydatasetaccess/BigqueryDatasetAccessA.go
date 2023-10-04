@@ -5,14 +5,14 @@ package bigquerydatasetaccess
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/bigquerydatasetaccess/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/bigquerydatasetaccess/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/bigquery_dataset_access google_bigquery_dataset_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/bigquery_dataset_access google_bigquery_dataset_access}.
 type BigqueryDatasetAccessA interface {
 	cdktf.TerraformResource
 	ApiUpdatedMember() cdktf.IResolvable
@@ -587,7 +587,7 @@ func (j *jsiiProxy_BigqueryDatasetAccessA) ViewInput() *BigqueryDatasetAccessVie
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/bigquery_dataset_access google_bigquery_dataset_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/bigquery_dataset_access google_bigquery_dataset_access} Resource.
 func NewBigqueryDatasetAccessA(scope constructs.Construct, id *string, config *BigqueryDatasetAccessAConfig) BigqueryDatasetAccessA {
 	_init_.Initialize()
 
@@ -605,7 +605,7 @@ func NewBigqueryDatasetAccessA(scope constructs.Construct, id *string, config *B
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/bigquery_dataset_access google_bigquery_dataset_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/bigquery_dataset_access google_bigquery_dataset_access} Resource.
 func NewBigqueryDatasetAccessA_Override(b BigqueryDatasetAccessA, scope constructs.Construct, id *string, config *BigqueryDatasetAccessAConfig) {
 	_init_.Initialize()
 

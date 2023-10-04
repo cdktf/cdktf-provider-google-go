@@ -5,14 +5,14 @@ package cloudbuildv2connectioniambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v9/cloudbuildv2connectioniambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v10/cloudbuildv2connectioniambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding}.
 type Cloudbuildv2ConnectionIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamBinding) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding} Resource.
 func NewCloudbuildv2ConnectionIamBinding(scope constructs.Construct, id *string, config *Cloudbuildv2ConnectionIamBindingConfig) Cloudbuildv2ConnectionIamBinding {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewCloudbuildv2ConnectionIamBinding(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/4.84.0/docs/resources/cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding} Resource.
 func NewCloudbuildv2ConnectionIamBinding_Override(c Cloudbuildv2ConnectionIamBinding, scope constructs.Construct, id *string, config *Cloudbuildv2ConnectionIamBindingConfig) {
 	_init_.Initialize()
 
