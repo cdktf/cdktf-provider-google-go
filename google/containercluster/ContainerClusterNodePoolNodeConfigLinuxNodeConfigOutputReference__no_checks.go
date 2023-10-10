@@ -51,6 +51,10 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) validateSetCgroupModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

@@ -255,6 +255,14 @@ func (j *jsiiProxy_GkeHubMembershipIamMember) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GkeHubMembershipIamMember) validateSetLocationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GkeHubMembershipIamMember) validateSetMemberParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -67,6 +67,10 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validatePutMysqlPa
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validatePutOracleParameters(value *DatabaseMigrationServiceConnectionProfileOracle) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validatePutPostgresqlParameters(value *DatabaseMigrationServiceConnectionProfilePostgresql) error {
 	return nil
 }

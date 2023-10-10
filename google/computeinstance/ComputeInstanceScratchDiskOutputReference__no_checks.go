@@ -59,6 +59,10 @@ func (j *jsiiProxy_ComputeInstanceScratchDiskOutputReference) validateSetComplex
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceScratchDiskOutputReference) validateSetDeviceNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceScratchDiskOutputReference) validateSetInterfaceParameters(val *string) error {
 	return nil
 }

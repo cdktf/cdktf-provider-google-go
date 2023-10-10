@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -220,6 +220,9 @@ type GoogleProvider interface {
 	DocumentAiWarehouseCustomEndpoint() *string
 	SetDocumentAiWarehouseCustomEndpoint(val *string)
 	DocumentAiWarehouseCustomEndpointInput() *string
+	EdgecontainerCustomEndpoint() *string
+	SetEdgecontainerCustomEndpoint(val *string)
+	EdgecontainerCustomEndpointInput() *string
 	EdgenetworkCustomEndpoint() *string
 	SetEdgenetworkCustomEndpoint(val *string)
 	EdgenetworkCustomEndpointInput() *string
@@ -506,6 +509,7 @@ type GoogleProvider interface {
 	ResetDnsCustomEndpoint()
 	ResetDocumentAiCustomEndpoint()
 	ResetDocumentAiWarehouseCustomEndpoint()
+	ResetEdgecontainerCustomEndpoint()
 	ResetEdgenetworkCustomEndpoint()
 	ResetEssentialContactsCustomEndpoint()
 	ResetEventarcCustomEndpoint()
@@ -1950,6 +1954,26 @@ func (j *jsiiProxy_GoogleProvider) DocumentAiWarehouseCustomEndpointInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) EdgecontainerCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edgecontainerCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) EdgecontainerCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edgecontainerCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) EdgenetworkCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3351,7 +3375,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3369,7 +3393,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -3915,6 +3939,14 @@ func (j *jsiiProxy_GoogleProvider)SetDocumentAiWarehouseCustomEndpoint(val *stri
 	_jsii_.Set(
 		j,
 		"documentAiWarehouseCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetEdgecontainerCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"edgecontainerCustomEndpoint",
 		val,
 	)
 }
@@ -5088,6 +5120,14 @@ func (g *jsiiProxy_GoogleProvider) ResetDocumentAiWarehouseCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDocumentAiWarehouseCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetEdgecontainerCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEdgecontainerCustomEndpoint",
 		nil, // no parameters
 	)
 }

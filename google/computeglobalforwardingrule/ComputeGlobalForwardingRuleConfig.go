@@ -38,7 +38,7 @@ type ComputeGlobalForwardingRuleConfig struct {
 	// APIs, the forwarding rule name must be a 1-20 characters string with
 	// lowercase letters and numbers and must start with a letter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_global_forwarding_rule#name ComputeGlobalForwardingRule#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_global_forwarding_rule#name ComputeGlobalForwardingRule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The URL of the target resource to receive the matched traffic.
 	//
@@ -48,21 +48,21 @@ type ComputeGlobalForwardingRuleConfig struct {
 	// load balancing resource.
 	//
 	// The forwarded traffic must be of a type appropriate to the target object.
-	// For load balancers, see the "Target" column in [Port specifications](https://cloud.google.com/load-balancing/docs/forwarding-rule-concepts#ip_address_specifications).
-	// For Private Service Connect forwarding rules that forward traffic to Google APIs, provide the name of a supported Google API bundle:
-	//  'vpc-sc' - [ APIs that support VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/supported-products).
-	//  'all-apis' - [All supported Google APIs](https://cloud.google.com/vpc/docs/private-service-connect#supported-apis).
+	// *  For load balancers, see the "Target" column in [Port specifications](https://cloud.google.com/load-balancing/docs/forwarding-rule-concepts#ip_address_specifications).
+	// *  For Private Service Connect forwarding rules that forward traffic to Google APIs, provide the name of a supported Google API bundle:
+	//   *  'vpc-sc' - [ APIs that support VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/supported-products).
+	//   *  'all-apis' - [All supported Google APIs](https://cloud.google.com/vpc/docs/private-service-connect#supported-apis).
 	//
 	//
 	// For Private Service Connect forwarding rules that forward traffic to managed services, the target must be a service attachment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_global_forwarding_rule#target ComputeGlobalForwardingRule#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_global_forwarding_rule#target ComputeGlobalForwardingRule#target}
 	Target *string `field:"required" json:"target" yaml:"target"`
 	// An optional description of this resource. Provide this property when you create the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_global_forwarding_rule#description ComputeGlobalForwardingRule#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_global_forwarding_rule#description ComputeGlobalForwardingRule#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_global_forwarding_rule#id ComputeGlobalForwardingRule#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_global_forwarding_rule#id ComputeGlobalForwardingRule#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -76,10 +76,10 @@ type ComputeGlobalForwardingRuleConfig struct {
 	// While creating a forwarding rule, specifying an 'IPAddress' is
 	// required under the following circumstances:
 	//
-	// When the 'target' is set to 'targetGrpcProxy' and
+	// * When the 'target' is set to 'targetGrpcProxy' and
 	// 'validateForProxyless' is set to 'true', the
 	// 'IPAddress' should be set to '0.0.0.0'.
-	// When the 'target' is a Private Service Connect Google APIs
+	// * When the 'target' is a Private Service Connect Google APIs
 	// bundle, you must specify an 'IPAddress'.
 	//
 	//
@@ -90,15 +90,15 @@ type ComputeGlobalForwardingRuleConfig struct {
 	// Use one of the following formats to specify an IP address while creating a
 	// forwarding rule:
 	//
-	// IP address number, as in '100.1.2.3'
-	// IPv6 address range, as in '2600:1234::/96'
-	// Full resource URL, as in
+	// * IP address number, as in '100.1.2.3'
+	// * IPv6 address range, as in '2600:1234::/96'
+	// * Full resource URL, as in
 	// 'https://www.googleapis.com/compute/v1/projects/project_id/regions/region/addresses/address-name'
-	// Partial URL or by name, as in:
-	// 'projects/project_id/regions/region/addresses/address-name'
-	// 'regions/region/addresses/address-name'
-	// 'global/addresses/address-name'
-	// 'address-name'
+	// * Partial URL or by name, as in:
+	//   * 'projects/project_id/regions/region/addresses/address-name'
+	//   * 'regions/region/addresses/address-name'
+	//   * 'global/addresses/address-name'
+	//   * 'address-name'
 	//
 	//
 	// The forwarding rule's 'target',
@@ -110,7 +110,7 @@ type ComputeGlobalForwardingRuleConfig struct {
 	// When reading an 'IPAddress', the API always returns the IP
 	// address number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_global_forwarding_rule#ip_address ComputeGlobalForwardingRule#ip_address}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_global_forwarding_rule#ip_address ComputeGlobalForwardingRule#ip_address}
 	IpAddress *string `field:"optional" json:"ipAddress" yaml:"ipAddress"`
 	// The IP protocol to which this rule applies.
 	//
@@ -123,29 +123,29 @@ type ComputeGlobalForwardingRuleConfig struct {
 	// as described in [Load balancing
 	// features](https://cloud.google.com/load-balancing/docs/features#protocols_from_the_load_balancer_to_the_backends). Possible values: ["TCP", "UDP", "ESP", "AH", "SCTP", "ICMP"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_global_forwarding_rule#ip_protocol ComputeGlobalForwardingRule#ip_protocol}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_global_forwarding_rule#ip_protocol ComputeGlobalForwardingRule#ip_protocol}
 	IpProtocol *string `field:"optional" json:"ipProtocol" yaml:"ipProtocol"`
 	// The IP Version that will be used by this global forwarding rule. Possible values: ["IPV4", "IPV6"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_global_forwarding_rule#ip_version ComputeGlobalForwardingRule#ip_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_global_forwarding_rule#ip_version ComputeGlobalForwardingRule#ip_version}
 	IpVersion *string `field:"optional" json:"ipVersion" yaml:"ipVersion"`
 	// Labels to apply to this forwarding rule.  A list of key->value pairs.
 	//
-	// *Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_global_forwarding_rule#labels ComputeGlobalForwardingRule#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_global_forwarding_rule#labels ComputeGlobalForwardingRule#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// Specifies the forwarding rule type.
 	//
 	// For more information about forwarding rules, refer to
 	// [Forwarding rule concepts](https://cloud.google.com/load-balancing/docs/forwarding-rule-concepts). Default value: "EXTERNAL" Possible values: ["EXTERNAL", "EXTERNAL_MANAGED", "INTERNAL_MANAGED", "INTERNAL_SELF_MANAGED"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_global_forwarding_rule#load_balancing_scheme ComputeGlobalForwardingRule#load_balancing_scheme}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_global_forwarding_rule#load_balancing_scheme ComputeGlobalForwardingRule#load_balancing_scheme}
 	LoadBalancingScheme *string `field:"optional" json:"loadBalancingScheme" yaml:"loadBalancingScheme"`
 	// metadata_filters block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_global_forwarding_rule#metadata_filters ComputeGlobalForwardingRule#metadata_filters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_global_forwarding_rule#metadata_filters ComputeGlobalForwardingRule#metadata_filters}
 	MetadataFilters interface{} `field:"optional" json:"metadataFilters" yaml:"metadataFilters"`
 	// This field is not used for external load balancing.
 	//
@@ -158,18 +158,18 @@ type ComputeGlobalForwardingRuleConfig struct {
 	// For Private Service Connect forwarding rules that forward traffic to Google
 	// APIs, a network must be provided.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_global_forwarding_rule#network ComputeGlobalForwardingRule#network}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_global_forwarding_rule#network ComputeGlobalForwardingRule#network}
 	Network *string `field:"optional" json:"network" yaml:"network"`
 	// This is used in PSC consumer ForwardingRule to control whether it should try to auto-generate a DNS zone or not.
 	//
 	// Non-PSC forwarding rules do not use this field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_global_forwarding_rule#no_automate_dns_zone ComputeGlobalForwardingRule#no_automate_dns_zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_global_forwarding_rule#no_automate_dns_zone ComputeGlobalForwardingRule#no_automate_dns_zone}
 	NoAutomateDnsZone interface{} `field:"optional" json:"noAutomateDnsZone" yaml:"noAutomateDnsZone"`
 	// This field can only be used:.
 	//
-	// If 'IPProtocol' is one of TCP, UDP, or SCTP.
-	// By backend service-based network load balancers, target pool-based
+	// * If 'IPProtocol' is one of TCP, UDP, or SCTP.
+	// * By backend service-based network load balancers, target pool-based
 	// network load balancers, internal proxy load balancers, external proxy load
 	// balancers, Traffic Director, external protocol forwarding, and Classic VPN.
 	// Some products have restrictions on what ports can be used. See
@@ -177,23 +177,23 @@ type ComputeGlobalForwardingRuleConfig struct {
 	// for details.
 	//
 	//
-	// TargetHttpProxy: 80, 8080
-	// TargetHttpsProxy: 443
-	// TargetTcpProxy: 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995,
-	//               1883, 5222
-	// TargetSslProxy: 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995,
-	//               1883, 5222
-	// TargetVpnGateway: 500, 4500
+	// * TargetHttpProxy: 80, 8080
+	// * TargetHttpsProxy: 443
+	// * TargetTcpProxy: 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995,
+	//                   1883, 5222
+	// * TargetSslProxy: 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995,
+	//                   1883, 5222
+	// * TargetVpnGateway: 500, 4500
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_global_forwarding_rule#port_range ComputeGlobalForwardingRule#port_range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_global_forwarding_rule#port_range ComputeGlobalForwardingRule#port_range}
 	PortRange *string `field:"optional" json:"portRange" yaml:"portRange"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_global_forwarding_rule#project ComputeGlobalForwardingRule#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_global_forwarding_rule#project ComputeGlobalForwardingRule#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// If not empty, this Forwarding Rule will only forward the traffic when the source IP address matches one of the IP addresses or CIDR ranges set here.
 	//
 	// Note that a Forwarding Rule can only have up to 64 source IP ranges, and this field can only be used with a regional Forwarding Rule whose scheme is EXTERNAL. Each sourceIpRange entry should be either an IP address (for example, 1.2.3.4) or a CIDR range (for example, 1.2.3.0/24).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_global_forwarding_rule#source_ip_ranges ComputeGlobalForwardingRule#source_ip_ranges}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_global_forwarding_rule#source_ip_ranges ComputeGlobalForwardingRule#source_ip_ranges}
 	SourceIpRanges *[]*string `field:"optional" json:"sourceIpRanges" yaml:"sourceIpRanges"`
 	// This field identifies the subnetwork that the load balanced IP should belong to for this Forwarding Rule, used in internal load balancing and network load balancing with IPv6.
 	//
@@ -201,11 +201,11 @@ type ComputeGlobalForwardingRuleConfig struct {
 	// However, a subnetwork must be specified if the network is in custom subnet
 	// mode or when creating external forwarding rule with IPv6.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_global_forwarding_rule#subnetwork ComputeGlobalForwardingRule#subnetwork}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_global_forwarding_rule#subnetwork ComputeGlobalForwardingRule#subnetwork}
 	Subnetwork *string `field:"optional" json:"subnetwork" yaml:"subnetwork"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/compute_global_forwarding_rule#timeouts ComputeGlobalForwardingRule#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_global_forwarding_rule#timeouts ComputeGlobalForwardingRule#timeouts}
 	Timeouts *ComputeGlobalForwardingRuleTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

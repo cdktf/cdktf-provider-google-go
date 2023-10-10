@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/sql_databases google_sql_databases}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/sql_databases google_sql_databases}.
 type DataGoogleSqlDatabases interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabases) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/sql_databases google_sql_databases} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/sql_databases google_sql_databases} Data Source.
 func NewDataGoogleSqlDatabases(scope constructs.Construct, id *string, config *DataGoogleSqlDatabasesConfig) DataGoogleSqlDatabases {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataGoogleSqlDatabases(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/sql_databases google_sql_databases} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/sql_databases google_sql_databases} Data Source.
 func NewDataGoogleSqlDatabases_Override(d DataGoogleSqlDatabases, scope constructs.Construct, id *string, config *DataGoogleSqlDatabasesConfig) {
 	_init_.Initialize()
 

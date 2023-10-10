@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/project google_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/project google_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AutoCreateNetwork() interface{}
@@ -536,7 +536,7 @@ func (j *jsiiProxy_Project) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/project google_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/project google_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/project google_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/project google_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 

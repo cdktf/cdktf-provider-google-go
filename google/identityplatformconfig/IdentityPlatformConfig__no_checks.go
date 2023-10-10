@@ -67,6 +67,10 @@ func (i *jsiiProxy_IdentityPlatformConfig) validatePutSignInParameters(value *Id
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformConfig) validatePutSmsRegionConfigParameters(value *IdentityPlatformConfigSmsRegionConfig) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformConfig) validatePutTimeoutsParameters(value *IdentityPlatformConfigTimeouts) error {
 	return nil
 }

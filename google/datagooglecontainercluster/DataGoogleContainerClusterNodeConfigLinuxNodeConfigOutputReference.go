@@ -13,6 +13,7 @@ import (
 
 type DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 	cdktf.ComplexObject
+	CgroupMode() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,6 +79,16 @@ type DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference interfac
 // The jsii proxy struct for DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference
 type jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) CgroupMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cgroupMode",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) ComplexObjectIndex() interface{} {

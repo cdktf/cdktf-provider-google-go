@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/firestore_index google_firestore_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/firestore_index google_firestore_index}.
 type FirestoreIndex interface {
 	cdktf.TerraformResource
+	ApiScope() *string
+	SetApiScope(val *string)
+	ApiScopeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Collection() *string
@@ -108,6 +111,7 @@ type FirestoreIndex interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutFields(value interface{})
 	PutTimeouts(value *FirestoreIndexTimeouts)
+	ResetApiScope()
 	ResetDatabase()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -129,6 +133,26 @@ type FirestoreIndex interface {
 // The jsii proxy struct for FirestoreIndex
 type jsiiProxy_FirestoreIndex struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_FirestoreIndex) ApiScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiScope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreIndex) ApiScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiScopeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_FirestoreIndex) CdktfStack() cdktf.TerraformStack {
@@ -442,7 +466,7 @@ func (j *jsiiProxy_FirestoreIndex) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/firestore_index google_firestore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/firestore_index google_firestore_index} Resource.
 func NewFirestoreIndex(scope constructs.Construct, id *string, config *FirestoreIndexConfig) FirestoreIndex {
 	_init_.Initialize()
 
@@ -460,7 +484,7 @@ func NewFirestoreIndex(scope constructs.Construct, id *string, config *Firestore
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/firestore_index google_firestore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/firestore_index google_firestore_index} Resource.
 func NewFirestoreIndex_Override(f FirestoreIndex, scope constructs.Construct, id *string, config *FirestoreIndexConfig) {
 	_init_.Initialize()
 
@@ -468,6 +492,17 @@ func NewFirestoreIndex_Override(f FirestoreIndex, scope constructs.Construct, id
 		"@cdktf/provider-google.firestoreIndex.FirestoreIndex",
 		[]interface{}{scope, id, config},
 		f,
+	)
+}
+
+func (j *jsiiProxy_FirestoreIndex)SetApiScope(val *string) {
+	if err := j.validateSetApiScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiScope",
+		val,
 	)
 }
 
@@ -879,6 +914,14 @@ func (f *jsiiProxy_FirestoreIndex) PutTimeouts(value *FirestoreIndexTimeouts) {
 		f,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FirestoreIndex) ResetApiScope() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetApiScope",
+		nil, // no parameters
 	)
 }
 

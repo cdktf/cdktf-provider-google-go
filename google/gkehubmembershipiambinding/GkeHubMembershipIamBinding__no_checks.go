@@ -87,6 +87,10 @@ func (j *jsiiProxy_GkeHubMembershipIamBinding) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GkeHubMembershipIamBinding) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GkeHubMembershipIamBinding) validateSetMembersParameters(val *[]*string) error {
 	return nil
 }

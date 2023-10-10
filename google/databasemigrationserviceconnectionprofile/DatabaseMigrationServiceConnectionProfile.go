@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile}.
 type DatabaseMigrationServiceConnectionProfile interface {
 	cdktf.TerraformResource
 	Alloydb() DatabaseMigrationServiceConnectionProfileAlloydbOutputReference
@@ -71,6 +71,8 @@ type DatabaseMigrationServiceConnectionProfile interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	Oracle() DatabaseMigrationServiceConnectionProfileOracleOutputReference
+	OracleInput() *DatabaseMigrationServiceConnectionProfileOracle
 	Postgresql() DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference
 	PostgresqlInput() *DatabaseMigrationServiceConnectionProfilePostgresql
 	Project() *string
@@ -124,6 +126,7 @@ type DatabaseMigrationServiceConnectionProfile interface {
 	PutAlloydb(value *DatabaseMigrationServiceConnectionProfileAlloydb)
 	PutCloudsql(value *DatabaseMigrationServiceConnectionProfileCloudsql)
 	PutMysql(value *DatabaseMigrationServiceConnectionProfileMysql)
+	PutOracle(value *DatabaseMigrationServiceConnectionProfileOracle)
 	PutPostgresql(value *DatabaseMigrationServiceConnectionProfilePostgresql)
 	PutTimeouts(value *DatabaseMigrationServiceConnectionProfileTimeouts)
 	ResetAlloydb()
@@ -133,6 +136,7 @@ type DatabaseMigrationServiceConnectionProfile interface {
 	ResetLabels()
 	ResetLocation()
 	ResetMysql()
+	ResetOracle()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -464,6 +468,26 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) Node() constructs.
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) Oracle() DatabaseMigrationServiceConnectionProfileOracleOutputReference {
+	var returns DatabaseMigrationServiceConnectionProfileOracleOutputReference
+	_jsii_.Get(
+		j,
+		"oracle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) OracleInput() *DatabaseMigrationServiceConnectionProfileOracle {
+	var returns *DatabaseMigrationServiceConnectionProfileOracle
+	_jsii_.Get(
+		j,
+		"oracleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) Postgresql() DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference {
 	var returns DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference
 	_jsii_.Get(
@@ -605,7 +629,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
 func NewDatabaseMigrationServiceConnectionProfile(scope constructs.Construct, id *string, config *DatabaseMigrationServiceConnectionProfileConfig) DatabaseMigrationServiceConnectionProfile {
 	_init_.Initialize()
 
@@ -623,7 +647,7 @@ func NewDatabaseMigrationServiceConnectionProfile(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
 func NewDatabaseMigrationServiceConnectionProfile_Override(d DatabaseMigrationServiceConnectionProfile, scope constructs.Construct, id *string, config *DatabaseMigrationServiceConnectionProfileConfig) {
 	_init_.Initialize()
 
@@ -1067,6 +1091,17 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) PutMysql(value *Da
 	)
 }
 
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) PutOracle(value *DatabaseMigrationServiceConnectionProfileOracle) {
+	if err := d.validatePutOracleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOracle",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) PutPostgresql(value *DatabaseMigrationServiceConnectionProfilePostgresql) {
 	if err := d.validatePutPostgresqlParameters(value); err != nil {
 		panic(err)
@@ -1141,6 +1176,14 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) ResetMysql() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMysql",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) ResetOracle() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOracle",
 		nil, // no parameters
 	)
 }

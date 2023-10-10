@@ -59,6 +59,10 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) validateSetDeviceNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) validateSetInterfaceParameters(val *string) error {
 	return nil
 }

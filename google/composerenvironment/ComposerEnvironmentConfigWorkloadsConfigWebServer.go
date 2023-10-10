@@ -7,15 +7,15 @@ package composerenvironment
 type ComposerEnvironmentConfigWorkloadsConfigWebServer struct {
 	// CPU request and limit for Airflow web server.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/composer_environment#cpu ComposerEnvironment#cpu}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/composer_environment#cpu ComposerEnvironment#cpu}
 	Cpu *float64 `field:"optional" json:"cpu" yaml:"cpu"`
 	// Memory (GB) request and limit for Airflow web server.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/composer_environment#memory_gb ComposerEnvironment#memory_gb}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/composer_environment#memory_gb ComposerEnvironment#memory_gb}
 	MemoryGb *float64 `field:"optional" json:"memoryGb" yaml:"memoryGb"`
 	// Storage (GB) request and limit for Airflow web server.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/resources/composer_environment#storage_gb ComposerEnvironment#storage_gb}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/composer_environment#storage_gb ComposerEnvironment#storage_gb}
 	StorageGb *float64 `field:"optional" json:"storageGb" yaml:"storageGb"`
 }
 

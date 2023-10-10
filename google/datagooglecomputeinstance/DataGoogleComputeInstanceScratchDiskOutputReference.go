@@ -28,6 +28,7 @@ type DataGoogleComputeInstanceScratchDiskOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeviceName() *string
 	// Experimental.
 	Fqn() *string
 	Interface() *string
@@ -106,6 +107,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceScratchDiskOutputReference) Creation
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceScratchDiskOutputReference) DeviceName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deviceName",
 		&returns,
 	)
 	return returns

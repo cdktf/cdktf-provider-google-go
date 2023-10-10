@@ -166,6 +166,14 @@ func (j *jsiiProxy_ComputeInstanceScratchDiskOutputReference) validateSetComplex
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceScratchDiskOutputReference) validateSetDeviceNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceScratchDiskOutputReference) validateSetInterfaceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

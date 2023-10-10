@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataGoogleGkeHubMembershipIamPolicy) validateSetLifecyclePara
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleGkeHubMembershipIamPolicy) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleGkeHubMembershipIamPolicy) validateSetMembershipIdParameters(val *string) error {
 	return nil
 }

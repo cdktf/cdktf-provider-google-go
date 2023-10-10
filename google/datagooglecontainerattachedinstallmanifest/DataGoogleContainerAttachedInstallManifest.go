@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/container_attached_install_manifest google_container_attached_install_manifest}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/container_attached_install_manifest google_container_attached_install_manifest}.
 type DataGoogleContainerAttachedInstallManifest interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DataGoogleContainerAttachedInstallManifest) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/container_attached_install_manifest google_container_attached_install_manifest} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/container_attached_install_manifest google_container_attached_install_manifest} Data Source.
 func NewDataGoogleContainerAttachedInstallManifest(scope constructs.Construct, id *string, config *DataGoogleContainerAttachedInstallManifestConfig) DataGoogleContainerAttachedInstallManifest {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewDataGoogleContainerAttachedInstallManifest(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/container_attached_install_manifest google_container_attached_install_manifest} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/container_attached_install_manifest google_container_attached_install_manifest} Data Source.
 func NewDataGoogleContainerAttachedInstallManifest_Override(d DataGoogleContainerAttachedInstallManifest, scope constructs.Construct, id *string, config *DataGoogleContainerAttachedInstallManifestConfig) {
 	_init_.Initialize()
 

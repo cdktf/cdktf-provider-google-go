@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/cloud_run_v2_service_iam_policy google_cloud_run_v2_service_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/cloud_run_v2_service_iam_policy google_cloud_run_v2_service_iam_policy}.
 type DataGoogleCloudRunV2ServiceIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2ServiceIamPolicy) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/cloud_run_v2_service_iam_policy google_cloud_run_v2_service_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/cloud_run_v2_service_iam_policy google_cloud_run_v2_service_iam_policy} Data Source.
 func NewDataGoogleCloudRunV2ServiceIamPolicy(scope constructs.Construct, id *string, config *DataGoogleCloudRunV2ServiceIamPolicyConfig) DataGoogleCloudRunV2ServiceIamPolicy {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataGoogleCloudRunV2ServiceIamPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.0.0/docs/data-sources/cloud_run_v2_service_iam_policy google_cloud_run_v2_service_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/cloud_run_v2_service_iam_policy google_cloud_run_v2_service_iam_policy} Data Source.
 func NewDataGoogleCloudRunV2ServiceIamPolicy_Override(d DataGoogleCloudRunV2ServiceIamPolicy, scope constructs.Construct, id *string, config *DataGoogleCloudRunV2ServiceIamPolicyConfig) {
 	_init_.Initialize()
 
