@@ -5,9 +5,9 @@ package computeaddress
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/computeaddress/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/computeaddress/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -46,6 +46,9 @@ type ComputeAddressTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type ComputeAddressTimeoutsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_ComputeAddressTimeoutsOutputReference) TerraformResource() cd
 	return returns
 }
 
+func (j *jsiiProxy_ComputeAddressTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeAddressTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewComputeAddressTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeAddressTimeoutsOutputReference {
 	_init_.Initialize()
@@ -298,6 +322,17 @@ func (j *jsiiProxy_ComputeAddressTimeoutsOutputReference)SetTerraformResource(va
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeAddressTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (c *jsiiProxy_ComputeAddressTimeoutsOutputReference) ResetDelete() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDelete",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeAddressTimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUpdate",
 		nil, // no parameters
 	)
 }

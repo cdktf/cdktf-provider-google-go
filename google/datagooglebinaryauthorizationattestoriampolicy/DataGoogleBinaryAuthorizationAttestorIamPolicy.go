@@ -5,14 +5,14 @@ package datagooglebinaryauthorizationattestoriampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglebinaryauthorizationattestoriampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/datagooglebinaryauthorizationattestoriampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy}.
 type DataGoogleBinaryAuthorizationAttestorIamPolicy interface {
 	cdktf.TerraformDataSource
 	Attestor() *string
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataGoogleBinaryAuthorizationAttestorIamPolicy) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy} Data Source.
 func NewDataGoogleBinaryAuthorizationAttestorIamPolicy(scope constructs.Construct, id *string, config *DataGoogleBinaryAuthorizationAttestorIamPolicyConfig) DataGoogleBinaryAuthorizationAttestorIamPolicy {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataGoogleBinaryAuthorizationAttestorIamPolicy(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy} Data Source.
 func NewDataGoogleBinaryAuthorizationAttestorIamPolicy_Override(d DataGoogleBinaryAuthorizationAttestorIamPolicy, scope constructs.Construct, id *string, config *DataGoogleBinaryAuthorizationAttestorIamPolicyConfig) {
 	_init_.Initialize()
 

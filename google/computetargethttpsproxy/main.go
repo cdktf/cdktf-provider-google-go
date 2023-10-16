@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "certificateManagerCertificates", GoGetter: "CertificateManagerCertificates"},
+			_jsii_.MemberProperty{JsiiProperty: "certificateManagerCertificatesInput", GoGetter: "CertificateManagerCertificatesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateMap", GoGetter: "CertificateMap"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateMapInput", GoGetter: "CertificateMapInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
@@ -58,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "quicOverride", GoGetter: "QuicOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "quicOverrideInput", GoGetter: "QuicOverrideInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCertificateManagerCertificates", GoMethod: "ResetCertificateManagerCertificates"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificateMap", GoMethod: "ResetCertificateMap"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpKeepAliveTimeoutSec", GoMethod: "ResetHttpKeepAliveTimeoutSec"},

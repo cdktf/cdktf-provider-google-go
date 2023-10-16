@@ -5,14 +5,14 @@ package firestoreindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/firestoreindex/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/firestoreindex/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/firestore_index google_firestore_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/firestore_index google_firestore_index}.
 type FirestoreIndex interface {
 	cdktf.TerraformResource
 	ApiScope() *string
@@ -466,7 +466,7 @@ func (j *jsiiProxy_FirestoreIndex) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/firestore_index google_firestore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/firestore_index google_firestore_index} Resource.
 func NewFirestoreIndex(scope constructs.Construct, id *string, config *FirestoreIndexConfig) FirestoreIndex {
 	_init_.Initialize()
 
@@ -484,7 +484,7 @@ func NewFirestoreIndex(scope constructs.Construct, id *string, config *Firestore
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/firestore_index google_firestore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/firestore_index google_firestore_index} Resource.
 func NewFirestoreIndex_Override(f FirestoreIndex, scope constructs.Construct, id *string, config *FirestoreIndexConfig) {
 	_init_.Initialize()
 

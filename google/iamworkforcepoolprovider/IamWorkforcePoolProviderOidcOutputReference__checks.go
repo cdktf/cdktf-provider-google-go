@@ -212,6 +212,14 @@ func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validateSetIssue
 	return nil
 }
 
+func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validateSetJwksJsonParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_IamWorkforcePoolProviderOidcOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

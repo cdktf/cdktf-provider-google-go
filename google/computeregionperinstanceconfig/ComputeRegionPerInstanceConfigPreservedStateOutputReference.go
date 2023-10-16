@@ -5,9 +5,9 @@ package computeregionperinstanceconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/computeregionperinstanceconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/computeregionperinstanceconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -30,8 +30,12 @@ type ComputeRegionPerInstanceConfigPreservedStateOutputReference interface {
 	CreationStack() *[]*string
 	Disk() ComputeRegionPerInstanceConfigPreservedStateDiskList
 	DiskInput() interface{}
+	ExternalIp() ComputeRegionPerInstanceConfigPreservedStateExternalIpList
+	ExternalIpInput() interface{}
 	// Experimental.
 	Fqn() *string
+	InternalIp() ComputeRegionPerInstanceConfigPreservedStateInternalIpList
+	InternalIpInput() interface{}
 	InternalValue() *ComputeRegionPerInstanceConfigPreservedState
 	SetInternalValue(val *ComputeRegionPerInstanceConfigPreservedState)
 	Metadata() *map[string]*string
@@ -70,7 +74,11 @@ type ComputeRegionPerInstanceConfigPreservedStateOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDisk(value interface{})
+	PutExternalIp(value interface{})
+	PutInternalIp(value interface{})
 	ResetDisk()
+	ResetExternalIp()
+	ResetInternalIp()
 	ResetMetadata()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -137,11 +145,51 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) ExternalIp() ComputeRegionPerInstanceConfigPreservedStateExternalIpList {
+	var returns ComputeRegionPerInstanceConfigPreservedStateExternalIpList
+	_jsii_.Get(
+		j,
+		"externalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) ExternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalIpInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) InternalIp() ComputeRegionPerInstanceConfigPreservedStateInternalIpList {
+	var returns ComputeRegionPerInstanceConfigPreservedStateInternalIpList
+	_jsii_.Get(
+		j,
+		"internalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) InternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalIpInput",
 		&returns,
 	)
 	return returns
@@ -488,10 +536,48 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) PutExternalIp(value interface{}) {
+	if err := c.validatePutExternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putExternalIp",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) PutInternalIp(value interface{}) {
+	if err := c.validatePutInternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putInternalIp",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) ResetDisk() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDisk",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) ResetExternalIp() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExternalIp",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) ResetInternalIp() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInternalIp",
 		nil, // no parameters
 	)
 }

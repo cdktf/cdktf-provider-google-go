@@ -5,14 +5,14 @@ package gkehubmembership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/gkehubmembership/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/gkehubmembership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/gke_hub_membership google_gke_hub_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/gke_hub_membership google_gke_hub_membership}.
 type GkeHubMembership interface {
 	cdktf.TerraformResource
 	Authority() GkeHubMembershipAuthorityOutputReference
@@ -489,7 +489,7 @@ func (j *jsiiProxy_GkeHubMembership) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/gke_hub_membership google_gke_hub_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/gke_hub_membership google_gke_hub_membership} Resource.
 func NewGkeHubMembership(scope constructs.Construct, id *string, config *GkeHubMembershipConfig) GkeHubMembership {
 	_init_.Initialize()
 
@@ -507,7 +507,7 @@ func NewGkeHubMembership(scope constructs.Construct, id *string, config *GkeHubM
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/gke_hub_membership google_gke_hub_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/gke_hub_membership google_gke_hub_membership} Resource.
 func NewGkeHubMembership_Override(g GkeHubMembership, scope constructs.Construct, id *string, config *GkeHubMembershipConfig) {
 	_init_.Initialize()
 

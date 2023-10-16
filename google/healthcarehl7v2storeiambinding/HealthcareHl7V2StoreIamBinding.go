@@ -5,14 +5,14 @@ package healthcarehl7v2storeiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/healthcarehl7v2storeiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/healthcarehl7v2storeiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/healthcare_hl7_v2_store_iam_binding google_healthcare_hl7_v2_store_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/healthcare_hl7_v2_store_iam_binding google_healthcare_hl7_v2_store_iam_binding}.
 type HealthcareHl7V2StoreIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreIamBinding) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/healthcare_hl7_v2_store_iam_binding google_healthcare_hl7_v2_store_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/healthcare_hl7_v2_store_iam_binding google_healthcare_hl7_v2_store_iam_binding} Resource.
 func NewHealthcareHl7V2StoreIamBinding(scope constructs.Construct, id *string, config *HealthcareHl7V2StoreIamBindingConfig) HealthcareHl7V2StoreIamBinding {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewHealthcareHl7V2StoreIamBinding(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/healthcare_hl7_v2_store_iam_binding google_healthcare_hl7_v2_store_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/healthcare_hl7_v2_store_iam_binding google_healthcare_hl7_v2_store_iam_binding} Resource.
 func NewHealthcareHl7V2StoreIamBinding_Override(h HealthcareHl7V2StoreIamBinding, scope constructs.Construct, id *string, config *HealthcareHl7V2StoreIamBindingConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package datacatalogpolicytagiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/datacatalogpolicytagiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/datacatalogpolicytagiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/data_catalog_policy_tag_iam_policy google_data_catalog_policy_tag_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/data_catalog_policy_tag_iam_policy google_data_catalog_policy_tag_iam_policy}.
 type DataCatalogPolicyTagIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataCatalogPolicyTagIamPolicy) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/data_catalog_policy_tag_iam_policy google_data_catalog_policy_tag_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/data_catalog_policy_tag_iam_policy google_data_catalog_policy_tag_iam_policy} Resource.
 func NewDataCatalogPolicyTagIamPolicy(scope constructs.Construct, id *string, config *DataCatalogPolicyTagIamPolicyConfig) DataCatalogPolicyTagIamPolicy {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataCatalogPolicyTagIamPolicy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/data_catalog_policy_tag_iam_policy google_data_catalog_policy_tag_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/data_catalog_policy_tag_iam_policy google_data_catalog_policy_tag_iam_policy} Resource.
 func NewDataCatalogPolicyTagIamPolicy_Override(d DataCatalogPolicyTagIamPolicy, scope constructs.Construct, id *string, config *DataCatalogPolicyTagIamPolicyConfig) {
 	_init_.Initialize()
 

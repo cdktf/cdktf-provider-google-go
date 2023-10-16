@@ -5,14 +5,14 @@ package bigquerydatatransferconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/bigquerydatatransferconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/bigquerydatatransferconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/bigquery_data_transfer_config google_bigquery_data_transfer_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/bigquery_data_transfer_config google_bigquery_data_transfer_config}.
 type BigqueryDataTransferConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -657,7 +657,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/bigquery_data_transfer_config google_bigquery_data_transfer_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/bigquery_data_transfer_config google_bigquery_data_transfer_config} Resource.
 func NewBigqueryDataTransferConfig(scope constructs.Construct, id *string, config *BigqueryDataTransferConfigConfig) BigqueryDataTransferConfig {
 	_init_.Initialize()
 
@@ -675,7 +675,7 @@ func NewBigqueryDataTransferConfig(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/bigquery_data_transfer_config google_bigquery_data_transfer_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/bigquery_data_transfer_config google_bigquery_data_transfer_config} Resource.
 func NewBigqueryDataTransferConfig_Override(b BigqueryDataTransferConfig, scope constructs.Construct, id *string, config *BigqueryDataTransferConfigConfig) {
 	_init_.Initialize()
 

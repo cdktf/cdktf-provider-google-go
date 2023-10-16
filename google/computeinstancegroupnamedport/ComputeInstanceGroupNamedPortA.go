@@ -5,14 +5,14 @@ package computeinstancegroupnamedport
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/computeinstancegroupnamedport/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/computeinstancegroupnamedport/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_instance_group_named_port google_compute_instance_group_named_port}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_instance_group_named_port google_compute_instance_group_named_port}.
 type ComputeInstanceGroupNamedPortA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -430,7 +430,7 @@ func (j *jsiiProxy_ComputeInstanceGroupNamedPortA) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_instance_group_named_port google_compute_instance_group_named_port} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_instance_group_named_port google_compute_instance_group_named_port} Resource.
 func NewComputeInstanceGroupNamedPortA(scope constructs.Construct, id *string, config *ComputeInstanceGroupNamedPortAConfig) ComputeInstanceGroupNamedPortA {
 	_init_.Initialize()
 
@@ -448,7 +448,7 @@ func NewComputeInstanceGroupNamedPortA(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_instance_group_named_port google_compute_instance_group_named_port} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_instance_group_named_port google_compute_instance_group_named_port} Resource.
 func NewComputeInstanceGroupNamedPortA_Override(c ComputeInstanceGroupNamedPortA, scope constructs.Construct, id *string, config *ComputeInstanceGroupNamedPortAConfig) {
 	_init_.Initialize()
 

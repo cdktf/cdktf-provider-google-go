@@ -5,14 +5,14 @@ package appenginestandardappversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/appenginestandardappversion/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/appenginestandardappversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version}.
 type AppEngineStandardAppVersion interface {
 	cdktf.TerraformResource
 	AppEngineApis() interface{}
@@ -824,7 +824,7 @@ func (j *jsiiProxy_AppEngineStandardAppVersion) VpcAccessConnectorInput() *AppEn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version} Resource.
 func NewAppEngineStandardAppVersion(scope constructs.Construct, id *string, config *AppEngineStandardAppVersionConfig) AppEngineStandardAppVersion {
 	_init_.Initialize()
 
@@ -842,7 +842,7 @@ func NewAppEngineStandardAppVersion(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version} Resource.
 func NewAppEngineStandardAppVersion_Override(a AppEngineStandardAppVersion, scope constructs.Construct, id *string, config *AppEngineStandardAppVersionConfig) {
 	_init_.Initialize()
 

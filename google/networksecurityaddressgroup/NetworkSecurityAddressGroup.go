@@ -5,14 +5,14 @@ package networksecurityaddressgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/networksecurityaddressgroup/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/networksecurityaddressgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/network_security_address_group google_network_security_address_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/network_security_address_group google_network_security_address_group}.
 type NetworkSecurityAddressGroup interface {
 	cdktf.TerraformResource
 	Capacity() *float64
@@ -545,7 +545,7 @@ func (j *jsiiProxy_NetworkSecurityAddressGroup) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/network_security_address_group google_network_security_address_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/network_security_address_group google_network_security_address_group} Resource.
 func NewNetworkSecurityAddressGroup(scope constructs.Construct, id *string, config *NetworkSecurityAddressGroupConfig) NetworkSecurityAddressGroup {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewNetworkSecurityAddressGroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/network_security_address_group google_network_security_address_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/network_security_address_group google_network_security_address_group} Resource.
 func NewNetworkSecurityAddressGroup_Override(n NetworkSecurityAddressGroup, scope constructs.Construct, id *string, config *NetworkSecurityAddressGroupConfig) {
 	_init_.Initialize()
 

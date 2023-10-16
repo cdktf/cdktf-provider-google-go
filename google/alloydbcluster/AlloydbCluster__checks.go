@@ -191,6 +191,17 @@ func (a *jsiiProxy_AlloydbCluster) validatePutRestoreContinuousBackupSourceParam
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbCluster) validatePutSecondaryConfigParameters(value *AlloydbClusterSecondaryConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbCluster) validatePutTimeoutsParameters(value *AlloydbClusterTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -235,6 +246,14 @@ func (j *jsiiProxy_AlloydbCluster) validateSetAnnotationsParameters(val *map[str
 }
 
 func (j *jsiiProxy_AlloydbCluster) validateSetClusterIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AlloydbCluster) validateSetClusterTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

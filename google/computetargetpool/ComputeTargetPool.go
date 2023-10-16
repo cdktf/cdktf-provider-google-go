@@ -5,14 +5,14 @@ package computetargetpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/computetargetpool/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/computetargetpool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_target_pool google_compute_target_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_target_pool google_compute_target_pool}.
 type ComputeTargetPool interface {
 	cdktf.TerraformResource
 	BackupPool() *string
@@ -539,7 +539,7 @@ func (j *jsiiProxy_ComputeTargetPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_target_pool google_compute_target_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_target_pool google_compute_target_pool} Resource.
 func NewComputeTargetPool(scope constructs.Construct, id *string, config *ComputeTargetPoolConfig) ComputeTargetPool {
 	_init_.Initialize()
 
@@ -557,7 +557,7 @@ func NewComputeTargetPool(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_target_pool google_compute_target_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_target_pool google_compute_target_pool} Resource.
 func NewComputeTargetPool_Override(c ComputeTargetPool, scope constructs.Construct, id *string, config *ComputeTargetPoolConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package gkebackuprestoreplaniambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/gkebackuprestoreplaniambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/gkebackuprestoreplaniambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/gke_backup_restore_plan_iam_binding google_gke_backup_restore_plan_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/gke_backup_restore_plan_iam_binding google_gke_backup_restore_plan_iam_binding}.
 type GkeBackupRestorePlanIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanIamBinding) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/gke_backup_restore_plan_iam_binding google_gke_backup_restore_plan_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/gke_backup_restore_plan_iam_binding google_gke_backup_restore_plan_iam_binding} Resource.
 func NewGkeBackupRestorePlanIamBinding(scope constructs.Construct, id *string, config *GkeBackupRestorePlanIamBindingConfig) GkeBackupRestorePlanIamBinding {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewGkeBackupRestorePlanIamBinding(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/gke_backup_restore_plan_iam_binding google_gke_backup_restore_plan_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/gke_backup_restore_plan_iam_binding google_gke_backup_restore_plan_iam_binding} Resource.
 func NewGkeBackupRestorePlanIamBinding_Override(g GkeBackupRestorePlanIamBinding, scope constructs.Construct, id *string, config *GkeBackupRestorePlanIamBindingConfig) {
 	_init_.Initialize()
 

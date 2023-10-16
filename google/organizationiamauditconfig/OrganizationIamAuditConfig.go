@@ -5,14 +5,14 @@ package organizationiamauditconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/organizationiamauditconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/organizationiamauditconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/organization_iam_audit_config google_organization_iam_audit_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/organization_iam_audit_config google_organization_iam_audit_config}.
 type OrganizationIamAuditConfig interface {
 	cdktf.TerraformResource
 	AuditLogConfig() OrganizationIamAuditConfigAuditLogConfigList
@@ -369,7 +369,7 @@ func (j *jsiiProxy_OrganizationIamAuditConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/organization_iam_audit_config google_organization_iam_audit_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/organization_iam_audit_config google_organization_iam_audit_config} Resource.
 func NewOrganizationIamAuditConfig(scope constructs.Construct, id *string, config *OrganizationIamAuditConfigConfig) OrganizationIamAuditConfig {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewOrganizationIamAuditConfig(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/organization_iam_audit_config google_organization_iam_audit_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/organization_iam_audit_config google_organization_iam_audit_config} Resource.
 func NewOrganizationIamAuditConfig_Override(o OrganizationIamAuditConfig, scope constructs.Construct, id *string, config *OrganizationIamAuditConfigConfig) {
 	_init_.Initialize()
 

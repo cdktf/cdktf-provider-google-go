@@ -5,14 +5,14 @@ package publiccaexternalaccountkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/publiccaexternalaccountkey/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/publiccaexternalaccountkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/public_ca_external_account_key google_public_ca_external_account_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/public_ca_external_account_key google_public_ca_external_account_key}.
 type PublicCaExternalAccountKey interface {
 	cdktf.TerraformResource
 	B64MacKey() *string
@@ -394,7 +394,7 @@ func (j *jsiiProxy_PublicCaExternalAccountKey) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/public_ca_external_account_key google_public_ca_external_account_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/public_ca_external_account_key google_public_ca_external_account_key} Resource.
 func NewPublicCaExternalAccountKey(scope constructs.Construct, id *string, config *PublicCaExternalAccountKeyConfig) PublicCaExternalAccountKey {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewPublicCaExternalAccountKey(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/public_ca_external_account_key google_public_ca_external_account_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/public_ca_external_account_key google_public_ca_external_account_key} Resource.
 func NewPublicCaExternalAccountKey_Override(p PublicCaExternalAccountKey, scope constructs.Construct, id *string, config *PublicCaExternalAccountKeyConfig) {
 	_init_.Initialize()
 

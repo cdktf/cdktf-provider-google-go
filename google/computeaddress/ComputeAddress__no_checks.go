@@ -103,6 +103,10 @@ func (j *jsiiProxy_ComputeAddress) validateSetIpVersionParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_ComputeAddress) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeAddress) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

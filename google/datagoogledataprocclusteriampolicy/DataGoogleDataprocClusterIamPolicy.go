@@ -5,14 +5,14 @@ package datagoogledataprocclusteriampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagoogledataprocclusteriampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/datagoogledataprocclusteriampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/dataproc_cluster_iam_policy google_dataproc_cluster_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/dataproc_cluster_iam_policy google_dataproc_cluster_iam_policy}.
 type DataGoogleDataprocClusterIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataGoogleDataprocClusterIamPolicy) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/dataproc_cluster_iam_policy google_dataproc_cluster_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/dataproc_cluster_iam_policy google_dataproc_cluster_iam_policy} Data Source.
 func NewDataGoogleDataprocClusterIamPolicy(scope constructs.Construct, id *string, config *DataGoogleDataprocClusterIamPolicyConfig) DataGoogleDataprocClusterIamPolicy {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataGoogleDataprocClusterIamPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/dataproc_cluster_iam_policy google_dataproc_cluster_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/dataproc_cluster_iam_policy google_dataproc_cluster_iam_policy} Data Source.
 func NewDataGoogleDataprocClusterIamPolicy_Override(d DataGoogleDataprocClusterIamPolicy, scope constructs.Construct, id *string, config *DataGoogleDataprocClusterIamPolicyConfig) {
 	_init_.Initialize()
 

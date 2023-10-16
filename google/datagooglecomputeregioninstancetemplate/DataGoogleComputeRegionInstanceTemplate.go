@@ -5,14 +5,14 @@ package datagooglecomputeregioninstancetemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglecomputeregioninstancetemplate/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/datagooglecomputeregioninstancetemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/compute_region_instance_template google_compute_region_instance_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/compute_region_instance_template google_compute_region_instance_template}.
 type DataGoogleComputeRegionInstanceTemplate interface {
 	cdktf.TerraformDataSource
 	AdvancedMachineFeatures() DataGoogleComputeRegionInstanceTemplateAdvancedMachineFeaturesList
@@ -667,7 +667,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/compute_region_instance_template google_compute_region_instance_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/compute_region_instance_template google_compute_region_instance_template} Data Source.
 func NewDataGoogleComputeRegionInstanceTemplate(scope constructs.Construct, id *string, config *DataGoogleComputeRegionInstanceTemplateConfig) DataGoogleComputeRegionInstanceTemplate {
 	_init_.Initialize()
 
@@ -685,7 +685,7 @@ func NewDataGoogleComputeRegionInstanceTemplate(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/compute_region_instance_template google_compute_region_instance_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/compute_region_instance_template google_compute_region_instance_template} Data Source.
 func NewDataGoogleComputeRegionInstanceTemplate_Override(d DataGoogleComputeRegionInstanceTemplate, scope constructs.Construct, id *string, config *DataGoogleComputeRegionInstanceTemplateConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package datagoogleaccessapprovalorganizationserviceaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagoogleaccessapprovalorganizationserviceaccount/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/datagoogleaccessapprovalorganizationserviceaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/access_approval_organization_service_account google_access_approval_organization_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/access_approval_organization_service_account google_access_approval_organization_service_account}.
 type DataGoogleAccessApprovalOrganizationServiceAccount interface {
 	cdktf.TerraformDataSource
 	AccountEmail() *string
@@ -306,7 +306,7 @@ func (j *jsiiProxy_DataGoogleAccessApprovalOrganizationServiceAccount) Terraform
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/access_approval_organization_service_account google_access_approval_organization_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/access_approval_organization_service_account google_access_approval_organization_service_account} Data Source.
 func NewDataGoogleAccessApprovalOrganizationServiceAccount(scope constructs.Construct, id *string, config *DataGoogleAccessApprovalOrganizationServiceAccountConfig) DataGoogleAccessApprovalOrganizationServiceAccount {
 	_init_.Initialize()
 
@@ -324,7 +324,7 @@ func NewDataGoogleAccessApprovalOrganizationServiceAccount(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/access_approval_organization_service_account google_access_approval_organization_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/access_approval_organization_service_account google_access_approval_organization_service_account} Data Source.
 func NewDataGoogleAccessApprovalOrganizationServiceAccount_Override(d DataGoogleAccessApprovalOrganizationServiceAccount, scope constructs.Construct, id *string, config *DataGoogleAccessApprovalOrganizationServiceAccountConfig) {
 	_init_.Initialize()
 

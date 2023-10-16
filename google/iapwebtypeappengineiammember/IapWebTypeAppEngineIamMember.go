@@ -5,14 +5,14 @@ package iapwebtypeappengineiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/iapwebtypeappengineiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/iapwebtypeappengineiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/iap_web_type_app_engine_iam_member google_iap_web_type_app_engine_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/iap_web_type_app_engine_iam_member google_iap_web_type_app_engine_iam_member}.
 type IapWebTypeAppEngineIamMember interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -417,7 +417,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamMember) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/iap_web_type_app_engine_iam_member google_iap_web_type_app_engine_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/iap_web_type_app_engine_iam_member google_iap_web_type_app_engine_iam_member} Resource.
 func NewIapWebTypeAppEngineIamMember(scope constructs.Construct, id *string, config *IapWebTypeAppEngineIamMemberConfig) IapWebTypeAppEngineIamMember {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewIapWebTypeAppEngineIamMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/iap_web_type_app_engine_iam_member google_iap_web_type_app_engine_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/iap_web_type_app_engine_iam_member google_iap_web_type_app_engine_iam_member} Resource.
 func NewIapWebTypeAppEngineIamMember_Override(i IapWebTypeAppEngineIamMember, scope constructs.Construct, id *string, config *IapWebTypeAppEngineIamMemberConfig) {
 	_init_.Initialize()
 

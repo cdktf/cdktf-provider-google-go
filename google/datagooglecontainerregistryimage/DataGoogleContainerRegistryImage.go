@@ -5,14 +5,14 @@ package datagooglecontainerregistryimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglecontainerregistryimage/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/datagooglecontainerregistryimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/container_registry_image google_container_registry_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/container_registry_image google_container_registry_image}.
 type DataGoogleContainerRegistryImage interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_DataGoogleContainerRegistryImage) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/container_registry_image google_container_registry_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/container_registry_image google_container_registry_image} Data Source.
 func NewDataGoogleContainerRegistryImage(scope constructs.Construct, id *string, config *DataGoogleContainerRegistryImageConfig) DataGoogleContainerRegistryImage {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewDataGoogleContainerRegistryImage(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/container_registry_image google_container_registry_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/container_registry_image google_container_registry_image} Data Source.
 func NewDataGoogleContainerRegistryImage_Override(d DataGoogleContainerRegistryImage, scope constructs.Construct, id *string, config *DataGoogleContainerRegistryImageConfig) {
 	_init_.Initialize()
 

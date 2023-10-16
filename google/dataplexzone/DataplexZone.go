@@ -5,14 +5,14 @@ package dataplexzone
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/dataplexzone/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/dataplexzone/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/dataplex_zone google_dataplex_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/dataplex_zone google_dataplex_zone}.
 type DataplexZone interface {
 	cdktf.TerraformResource
 	AssetStatus() DataplexZoneAssetStatusList
@@ -624,7 +624,7 @@ func (j *jsiiProxy_DataplexZone) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/dataplex_zone google_dataplex_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/dataplex_zone google_dataplex_zone} Resource.
 func NewDataplexZone(scope constructs.Construct, id *string, config *DataplexZoneConfig) DataplexZone {
 	_init_.Initialize()
 
@@ -642,7 +642,7 @@ func NewDataplexZone(scope constructs.Construct, id *string, config *DataplexZon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/dataplex_zone google_dataplex_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/dataplex_zone google_dataplex_zone} Resource.
 func NewDataplexZone_Override(d DataplexZone, scope constructs.Construct, id *string, config *DataplexZoneConfig) {
 	_init_.Initialize()
 

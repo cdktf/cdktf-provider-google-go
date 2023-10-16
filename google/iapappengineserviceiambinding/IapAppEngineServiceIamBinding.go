@@ -5,14 +5,14 @@ package iapappengineserviceiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/iapappengineserviceiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/iapappengineserviceiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding}.
 type IapAppEngineServiceIamBinding interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -440,7 +440,7 @@ func (j *jsiiProxy_IapAppEngineServiceIamBinding) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding} Resource.
 func NewIapAppEngineServiceIamBinding(scope constructs.Construct, id *string, config *IapAppEngineServiceIamBindingConfig) IapAppEngineServiceIamBinding {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewIapAppEngineServiceIamBinding(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding} Resource.
 func NewIapAppEngineServiceIamBinding_Override(i IapAppEngineServiceIamBinding, scope constructs.Construct, id *string, config *IapAppEngineServiceIamBindingConfig) {
 	_init_.Initialize()
 

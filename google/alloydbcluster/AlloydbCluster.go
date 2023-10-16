@@ -5,14 +5,14 @@ package alloydbcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/alloydbcluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/alloydbcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
 type AlloydbCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -26,6 +26,9 @@ type AlloydbCluster interface {
 	ClusterId() *string
 	SetClusterId(val *string)
 	ClusterIdInput() *string
+	ClusterType() *string
+	SetClusterType(val *string)
+	ClusterTypeInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -105,6 +108,8 @@ type AlloydbCluster interface {
 	RestoreBackupSourceInput() *AlloydbClusterRestoreBackupSource
 	RestoreContinuousBackupSource() AlloydbClusterRestoreContinuousBackupSourceOutputReference
 	RestoreContinuousBackupSourceInput() *AlloydbClusterRestoreContinuousBackupSource
+	SecondaryConfig() AlloydbClusterSecondaryConfigOutputReference
+	SecondaryConfigInput() *AlloydbClusterSecondaryConfig
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -148,9 +153,11 @@ type AlloydbCluster interface {
 	PutNetworkConfig(value *AlloydbClusterNetworkConfig)
 	PutRestoreBackupSource(value *AlloydbClusterRestoreBackupSource)
 	PutRestoreContinuousBackupSource(value *AlloydbClusterRestoreContinuousBackupSource)
+	PutSecondaryConfig(value *AlloydbClusterSecondaryConfig)
 	PutTimeouts(value *AlloydbClusterTimeouts)
 	ResetAnnotations()
 	ResetAutomatedBackupPolicy()
+	ResetClusterType()
 	ResetContinuousBackupConfig()
 	ResetDisplayName()
 	ResetEncryptionConfig()
@@ -166,6 +173,7 @@ type AlloydbCluster interface {
 	ResetProject()
 	ResetRestoreBackupSource()
 	ResetRestoreContinuousBackupSource()
+	ResetSecondaryConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -257,6 +265,26 @@ func (j *jsiiProxy_AlloydbCluster) ClusterIdInput() *string {
 	_jsii_.Get(
 		j,
 		"clusterIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) ClusterType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) ClusterTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterTypeInput",
 		&returns,
 	)
 	return returns
@@ -722,6 +750,26 @@ func (j *jsiiProxy_AlloydbCluster) RestoreContinuousBackupSourceInput() *Alloydb
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbCluster) SecondaryConfig() AlloydbClusterSecondaryConfigOutputReference {
+	var returns AlloydbClusterSecondaryConfigOutputReference
+	_jsii_.Get(
+		j,
+		"secondaryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) SecondaryConfigInput() *AlloydbClusterSecondaryConfig {
+	var returns *AlloydbClusterSecondaryConfig
+	_jsii_.Get(
+		j,
+		"secondaryConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbCluster) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -803,7 +851,7 @@ func (j *jsiiProxy_AlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbClusterConfig) AlloydbCluster {
 	_init_.Initialize()
 
@@ -821,7 +869,7 @@ func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster_Override(a AlloydbCluster, scope constructs.Construct, id *string, config *AlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -850,6 +898,17 @@ func (j *jsiiProxy_AlloydbCluster)SetClusterId(val *string) {
 	_jsii_.Set(
 		j,
 		"clusterId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlloydbCluster)SetClusterType(val *string) {
+	if err := j.validateSetClusterTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterType",
 		val,
 	)
 }
@@ -1342,6 +1401,17 @@ func (a *jsiiProxy_AlloydbCluster) PutRestoreContinuousBackupSource(value *Alloy
 	)
 }
 
+func (a *jsiiProxy_AlloydbCluster) PutSecondaryConfig(value *AlloydbClusterSecondaryConfig) {
+	if err := a.validatePutSecondaryConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putSecondaryConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlloydbCluster) PutTimeouts(value *AlloydbClusterTimeouts) {
 	if err := a.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1365,6 +1435,14 @@ func (a *jsiiProxy_AlloydbCluster) ResetAutomatedBackupPolicy() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAutomatedBackupPolicy",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) ResetClusterType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClusterType",
 		nil, // no parameters
 	)
 }
@@ -1469,6 +1547,14 @@ func (a *jsiiProxy_AlloydbCluster) ResetRestoreContinuousBackupSource() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRestoreContinuousBackupSource",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) ResetSecondaryConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSecondaryConfig",
 		nil, // no parameters
 	)
 }

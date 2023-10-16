@@ -5,14 +5,14 @@ package datagooglecomputeimageiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglecomputeimageiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/datagooglecomputeimageiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/compute_image_iam_policy google_compute_image_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/compute_image_iam_policy google_compute_image_iam_policy}.
 type DataGoogleComputeImageIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataGoogleComputeImageIamPolicy) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/compute_image_iam_policy google_compute_image_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/compute_image_iam_policy google_compute_image_iam_policy} Data Source.
 func NewDataGoogleComputeImageIamPolicy(scope constructs.Construct, id *string, config *DataGoogleComputeImageIamPolicyConfig) DataGoogleComputeImageIamPolicy {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataGoogleComputeImageIamPolicy(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/compute_image_iam_policy google_compute_image_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/compute_image_iam_policy google_compute_image_iam_policy} Data Source.
 func NewDataGoogleComputeImageIamPolicy_Override(d DataGoogleComputeImageIamPolicy, scope constructs.Construct, id *string, config *DataGoogleComputeImageIamPolicyConfig) {
 	_init_.Initialize()
 

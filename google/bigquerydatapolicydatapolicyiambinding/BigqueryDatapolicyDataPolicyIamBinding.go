@@ -5,14 +5,14 @@ package bigquerydatapolicydatapolicyiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/bigquerydatapolicydatapolicyiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/bigquerydatapolicydatapolicyiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/bigquery_datapolicy_data_policy_iam_binding google_bigquery_datapolicy_data_policy_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/bigquery_datapolicy_data_policy_iam_binding google_bigquery_datapolicy_data_policy_iam_binding}.
 type BigqueryDatapolicyDataPolicyIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamBinding) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/bigquery_datapolicy_data_policy_iam_binding google_bigquery_datapolicy_data_policy_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/bigquery_datapolicy_data_policy_iam_binding google_bigquery_datapolicy_data_policy_iam_binding} Resource.
 func NewBigqueryDatapolicyDataPolicyIamBinding(scope constructs.Construct, id *string, config *BigqueryDatapolicyDataPolicyIamBindingConfig) BigqueryDatapolicyDataPolicyIamBinding {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewBigqueryDatapolicyDataPolicyIamBinding(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/bigquery_datapolicy_data_policy_iam_binding google_bigquery_datapolicy_data_policy_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/bigquery_datapolicy_data_policy_iam_binding google_bigquery_datapolicy_data_policy_iam_binding} Resource.
 func NewBigqueryDatapolicyDataPolicyIamBinding_Override(b BigqueryDatapolicyDataPolicyIamBinding, scope constructs.Construct, id *string, config *BigqueryDatapolicyDataPolicyIamBindingConfig) {
 	_init_.Initialize()
 

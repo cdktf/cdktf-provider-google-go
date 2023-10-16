@@ -5,14 +5,14 @@ package datacatalogpolicytagiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/datacatalogpolicytagiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/datacatalogpolicytagiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/data_catalog_policy_tag_iam_member google_data_catalog_policy_tag_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/data_catalog_policy_tag_iam_member google_data_catalog_policy_tag_iam_member}.
 type DataCatalogPolicyTagIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_DataCatalogPolicyTagIamMember) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/data_catalog_policy_tag_iam_member google_data_catalog_policy_tag_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/data_catalog_policy_tag_iam_member google_data_catalog_policy_tag_iam_member} Resource.
 func NewDataCatalogPolicyTagIamMember(scope constructs.Construct, id *string, config *DataCatalogPolicyTagIamMemberConfig) DataCatalogPolicyTagIamMember {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewDataCatalogPolicyTagIamMember(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/data_catalog_policy_tag_iam_member google_data_catalog_policy_tag_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/data_catalog_policy_tag_iam_member google_data_catalog_policy_tag_iam_member} Resource.
 func NewDataCatalogPolicyTagIamMember_Override(d DataCatalogPolicyTagIamMember, scope constructs.Construct, id *string, config *DataCatalogPolicyTagIamMemberConfig) {
 	_init_.Initialize()
 

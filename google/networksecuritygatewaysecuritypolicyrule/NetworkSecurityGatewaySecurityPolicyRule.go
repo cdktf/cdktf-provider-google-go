@@ -5,14 +5,14 @@ package networksecuritygatewaysecuritypolicyrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/networksecuritygatewaysecuritypolicyrule/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/networksecuritygatewaysecuritypolicyrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule}.
 type NetworkSecurityGatewaySecurityPolicyRule interface {
 	cdktf.TerraformResource
 	ApplicationMatcher() *string
@@ -603,7 +603,7 @@ func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) UpdateTime() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule} Resource.
 func NewNetworkSecurityGatewaySecurityPolicyRule(scope constructs.Construct, id *string, config *NetworkSecurityGatewaySecurityPolicyRuleConfig) NetworkSecurityGatewaySecurityPolicyRule {
 	_init_.Initialize()
 
@@ -621,7 +621,7 @@ func NewNetworkSecurityGatewaySecurityPolicyRule(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule} Resource.
 func NewNetworkSecurityGatewaySecurityPolicyRule_Override(n NetworkSecurityGatewaySecurityPolicyRule, scope constructs.Construct, id *string, config *NetworkSecurityGatewaySecurityPolicyRuleConfig) {
 	_init_.Initialize()
 

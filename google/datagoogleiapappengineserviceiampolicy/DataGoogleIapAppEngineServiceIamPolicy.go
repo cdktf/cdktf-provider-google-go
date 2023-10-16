@@ -5,14 +5,14 @@ package datagoogleiapappengineserviceiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagoogleiapappengineserviceiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/datagoogleiapappengineserviceiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy}.
 type DataGoogleIapAppEngineServiceIamPolicy interface {
 	cdktf.TerraformDataSource
 	AppId() *string
@@ -353,7 +353,7 @@ func (j *jsiiProxy_DataGoogleIapAppEngineServiceIamPolicy) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy} Data Source.
 func NewDataGoogleIapAppEngineServiceIamPolicy(scope constructs.Construct, id *string, config *DataGoogleIapAppEngineServiceIamPolicyConfig) DataGoogleIapAppEngineServiceIamPolicy {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewDataGoogleIapAppEngineServiceIamPolicy(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy} Data Source.
 func NewDataGoogleIapAppEngineServiceIamPolicy_Override(d DataGoogleIapAppEngineServiceIamPolicy, scope constructs.Construct, id *string, config *DataGoogleIapAppEngineServiceIamPolicyConfig) {
 	_init_.Initialize()
 

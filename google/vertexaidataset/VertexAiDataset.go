@@ -5,14 +5,14 @@ package vertexaidataset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/vertexaidataset/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/vertexaidataset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/vertex_ai_dataset google_vertex_ai_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/vertex_ai_dataset google_vertex_ai_dataset}.
 type VertexAiDataset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -510,7 +510,7 @@ func (j *jsiiProxy_VertexAiDataset) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/vertex_ai_dataset google_vertex_ai_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/vertex_ai_dataset google_vertex_ai_dataset} Resource.
 func NewVertexAiDataset(scope constructs.Construct, id *string, config *VertexAiDatasetConfig) VertexAiDataset {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewVertexAiDataset(scope constructs.Construct, id *string, config *VertexAi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/vertex_ai_dataset google_vertex_ai_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/vertex_ai_dataset google_vertex_ai_dataset} Resource.
 func NewVertexAiDataset_Override(v VertexAiDataset, scope constructs.Construct, id *string, config *VertexAiDatasetConfig) {
 	_init_.Initialize()
 

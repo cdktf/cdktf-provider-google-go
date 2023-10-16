@@ -71,6 +71,14 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutStatefulDiskPar
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutStatefulExternalIpParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutStatefulInternalIpParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutTimeoutsParameters(value *ComputeRegionInstanceGroupManagerTimeouts) error {
 	return nil
 }

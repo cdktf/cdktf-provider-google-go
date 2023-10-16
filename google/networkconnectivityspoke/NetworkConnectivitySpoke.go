@@ -5,14 +5,14 @@ package networkconnectivityspoke
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/networkconnectivityspoke/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/networkconnectivityspoke/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke}.
 type NetworkConnectivitySpoke interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -616,7 +616,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke} Resource.
 func NewNetworkConnectivitySpoke(scope constructs.Construct, id *string, config *NetworkConnectivitySpokeConfig) NetworkConnectivitySpoke {
 	_init_.Initialize()
 
@@ -634,7 +634,7 @@ func NewNetworkConnectivitySpoke(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke} Resource.
 func NewNetworkConnectivitySpoke_Override(n NetworkConnectivitySpoke, scope constructs.Construct, id *string, config *NetworkConnectivitySpokeConfig) {
 	_init_.Initialize()
 

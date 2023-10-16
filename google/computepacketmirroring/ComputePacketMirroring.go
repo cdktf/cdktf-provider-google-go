@@ -5,14 +5,14 @@ package computepacketmirroring
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/computepacketmirroring/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/computepacketmirroring/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring}.
 type ComputePacketMirroring interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -525,7 +525,7 @@ func (j *jsiiProxy_ComputePacketMirroring) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring} Resource.
 func NewComputePacketMirroring(scope constructs.Construct, id *string, config *ComputePacketMirroringConfig) ComputePacketMirroring {
 	_init_.Initialize()
 
@@ -543,7 +543,7 @@ func NewComputePacketMirroring(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring} Resource.
 func NewComputePacketMirroring_Override(c ComputePacketMirroring, scope constructs.Construct, id *string, config *ComputePacketMirroringConfig) {
 	_init_.Initialize()
 

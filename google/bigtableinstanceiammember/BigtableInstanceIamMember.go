@@ -5,14 +5,14 @@ package bigtableinstanceiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/bigtableinstanceiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/bigtableinstanceiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/bigtable_instance_iam_member google_bigtable_instance_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/bigtable_instance_iam_member google_bigtable_instance_iam_member}.
 type BigtableInstanceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -417,7 +417,7 @@ func (j *jsiiProxy_BigtableInstanceIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/bigtable_instance_iam_member google_bigtable_instance_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/bigtable_instance_iam_member google_bigtable_instance_iam_member} Resource.
 func NewBigtableInstanceIamMember(scope constructs.Construct, id *string, config *BigtableInstanceIamMemberConfig) BigtableInstanceIamMember {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewBigtableInstanceIamMember(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/bigtable_instance_iam_member google_bigtable_instance_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/bigtable_instance_iam_member google_bigtable_instance_iam_member} Resource.
 func NewBigtableInstanceIamMember_Override(b BigtableInstanceIamMember, scope constructs.Construct, id *string, config *BigtableInstanceIamMemberConfig) {
 	_init_.Initialize()
 

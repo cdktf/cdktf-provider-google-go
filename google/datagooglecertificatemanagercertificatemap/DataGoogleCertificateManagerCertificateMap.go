@@ -5,14 +5,14 @@ package datagooglecertificatemanagercertificatemap
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglecertificatemanagercertificatemap/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/datagooglecertificatemanagercertificatemap/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/certificate_manager_certificate_map google_certificate_manager_certificate_map}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/certificate_manager_certificate_map google_certificate_manager_certificate_map}.
 type DataGoogleCertificateManagerCertificateMap interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataGoogleCertificateManagerCertificateMap) UpdateTime() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/certificate_manager_certificate_map google_certificate_manager_certificate_map} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/certificate_manager_certificate_map google_certificate_manager_certificate_map} Data Source.
 func NewDataGoogleCertificateManagerCertificateMap(scope constructs.Construct, id *string, config *DataGoogleCertificateManagerCertificateMapConfig) DataGoogleCertificateManagerCertificateMap {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewDataGoogleCertificateManagerCertificateMap(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/certificate_manager_certificate_map google_certificate_manager_certificate_map} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/certificate_manager_certificate_map google_certificate_manager_certificate_map} Data Source.
 func NewDataGoogleCertificateManagerCertificateMap_Override(d DataGoogleCertificateManagerCertificateMap, scope constructs.Construct, id *string, config *DataGoogleCertificateManagerCertificateMapConfig) {
 	_init_.Initialize()
 

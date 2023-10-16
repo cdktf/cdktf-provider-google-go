@@ -5,14 +5,14 @@ package iamworkloadidentitypool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/iamworkloadidentitypool/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/iamworkloadidentitypool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/iam_workload_identity_pool google_iam_workload_identity_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/iam_workload_identity_pool google_iam_workload_identity_pool}.
 type IamWorkloadIdentityPool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -454,7 +454,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPool) WorkloadIdentityPoolIdInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/iam_workload_identity_pool google_iam_workload_identity_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/iam_workload_identity_pool google_iam_workload_identity_pool} Resource.
 func NewIamWorkloadIdentityPool(scope constructs.Construct, id *string, config *IamWorkloadIdentityPoolConfig) IamWorkloadIdentityPool {
 	_init_.Initialize()
 
@@ -472,7 +472,7 @@ func NewIamWorkloadIdentityPool(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/iam_workload_identity_pool google_iam_workload_identity_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/iam_workload_identity_pool google_iam_workload_identity_pool} Resource.
 func NewIamWorkloadIdentityPool_Override(i IamWorkloadIdentityPool, scope constructs.Construct, id *string, config *IamWorkloadIdentityPoolConfig) {
 	_init_.Initialize()
 

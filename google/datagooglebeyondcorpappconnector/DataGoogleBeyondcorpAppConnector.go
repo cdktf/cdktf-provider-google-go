@@ -5,14 +5,14 @@ package datagooglebeyondcorpappconnector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglebeyondcorpappconnector/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/datagooglebeyondcorpappconnector/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/beyondcorp_app_connector google_beyondcorp_app_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/beyondcorp_app_connector google_beyondcorp_app_connector}.
 type DataGoogleBeyondcorpAppConnector interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -398,7 +398,7 @@ func (j *jsiiProxy_DataGoogleBeyondcorpAppConnector) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/beyondcorp_app_connector google_beyondcorp_app_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/beyondcorp_app_connector google_beyondcorp_app_connector} Data Source.
 func NewDataGoogleBeyondcorpAppConnector(scope constructs.Construct, id *string, config *DataGoogleBeyondcorpAppConnectorConfig) DataGoogleBeyondcorpAppConnector {
 	_init_.Initialize()
 
@@ -416,7 +416,7 @@ func NewDataGoogleBeyondcorpAppConnector(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/beyondcorp_app_connector google_beyondcorp_app_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/beyondcorp_app_connector google_beyondcorp_app_connector} Data Source.
 func NewDataGoogleBeyondcorpAppConnector_Override(d DataGoogleBeyondcorpAppConnector, scope constructs.Construct, id *string, config *DataGoogleBeyondcorpAppConnectorConfig) {
 	_init_.Initialize()
 

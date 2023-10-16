@@ -5,14 +5,14 @@ package cloudrunserviceiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/cloudrunserviceiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/cloudrunserviceiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/cloud_run_service_iam_member google_cloud_run_service_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/cloud_run_service_iam_member google_cloud_run_service_iam_member}.
 type CloudRunServiceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_CloudRunServiceIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/cloud_run_service_iam_member google_cloud_run_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/cloud_run_service_iam_member google_cloud_run_service_iam_member} Resource.
 func NewCloudRunServiceIamMember(scope constructs.Construct, id *string, config *CloudRunServiceIamMemberConfig) CloudRunServiceIamMember {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewCloudRunServiceIamMember(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/cloud_run_service_iam_member google_cloud_run_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/cloud_run_service_iam_member google_cloud_run_service_iam_member} Resource.
 func NewCloudRunServiceIamMember_Override(c CloudRunServiceIamMember, scope constructs.Construct, id *string, config *CloudRunServiceIamMemberConfig) {
 	_init_.Initialize()
 

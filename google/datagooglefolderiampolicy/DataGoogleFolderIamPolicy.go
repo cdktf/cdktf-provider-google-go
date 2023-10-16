@@ -5,14 +5,14 @@ package datagooglefolderiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglefolderiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/datagooglefolderiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/folder_iam_policy google_folder_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/folder_iam_policy google_folder_iam_policy}.
 type DataGoogleFolderIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -306,7 +306,7 @@ func (j *jsiiProxy_DataGoogleFolderIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/folder_iam_policy google_folder_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/folder_iam_policy google_folder_iam_policy} Data Source.
 func NewDataGoogleFolderIamPolicy(scope constructs.Construct, id *string, config *DataGoogleFolderIamPolicyConfig) DataGoogleFolderIamPolicy {
 	_init_.Initialize()
 
@@ -324,7 +324,7 @@ func NewDataGoogleFolderIamPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/folder_iam_policy google_folder_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/folder_iam_policy google_folder_iam_policy} Data Source.
 func NewDataGoogleFolderIamPolicy_Override(d DataGoogleFolderIamPolicy, scope constructs.Construct, id *string, config *DataGoogleFolderIamPolicyConfig) {
 	_init_.Initialize()
 

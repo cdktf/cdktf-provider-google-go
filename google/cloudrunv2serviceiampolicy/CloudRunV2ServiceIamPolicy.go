@@ -5,14 +5,14 @@ package cloudrunv2serviceiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/cloudrunv2serviceiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/cloudrunv2serviceiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/cloud_run_v2_service_iam_policy google_cloud_run_v2_service_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/cloud_run_v2_service_iam_policy google_cloud_run_v2_service_iam_policy}.
 type CloudRunV2ServiceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_CloudRunV2ServiceIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/cloud_run_v2_service_iam_policy google_cloud_run_v2_service_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/cloud_run_v2_service_iam_policy google_cloud_run_v2_service_iam_policy} Resource.
 func NewCloudRunV2ServiceIamPolicy(scope constructs.Construct, id *string, config *CloudRunV2ServiceIamPolicyConfig) CloudRunV2ServiceIamPolicy {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewCloudRunV2ServiceIamPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/cloud_run_v2_service_iam_policy google_cloud_run_v2_service_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/cloud_run_v2_service_iam_policy google_cloud_run_v2_service_iam_policy} Resource.
 func NewCloudRunV2ServiceIamPolicy_Override(c CloudRunV2ServiceIamPolicy, scope constructs.Construct, id *string, config *CloudRunV2ServiceIamPolicyConfig) {
 	_init_.Initialize()
 

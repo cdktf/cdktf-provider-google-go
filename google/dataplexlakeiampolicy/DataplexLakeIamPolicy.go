@@ -5,14 +5,14 @@ package dataplexlakeiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/dataplexlakeiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/dataplexlakeiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/dataplex_lake_iam_policy google_dataplex_lake_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/dataplex_lake_iam_policy google_dataplex_lake_iam_policy}.
 type DataplexLakeIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataplexLakeIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/dataplex_lake_iam_policy google_dataplex_lake_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/dataplex_lake_iam_policy google_dataplex_lake_iam_policy} Resource.
 func NewDataplexLakeIamPolicy(scope constructs.Construct, id *string, config *DataplexLakeIamPolicyConfig) DataplexLakeIamPolicy {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataplexLakeIamPolicy(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/dataplex_lake_iam_policy google_dataplex_lake_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/dataplex_lake_iam_policy google_dataplex_lake_iam_policy} Resource.
 func NewDataplexLakeIamPolicy_Override(d DataplexLakeIamPolicy, scope constructs.Construct, id *string, config *DataplexLakeIamPolicyConfig) {
 	_init_.Initialize()
 

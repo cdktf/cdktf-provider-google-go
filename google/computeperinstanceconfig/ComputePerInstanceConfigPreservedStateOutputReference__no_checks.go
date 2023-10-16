@@ -51,6 +51,14 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) valida
 	return nil
 }
 
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) validatePutExternalIpParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) validatePutInternalIpParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

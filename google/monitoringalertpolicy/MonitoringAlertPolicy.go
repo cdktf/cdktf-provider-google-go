@@ -5,14 +5,14 @@ package monitoringalertpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/monitoringalertpolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/monitoringalertpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy}.
 type MonitoringAlertPolicy interface {
 	cdktf.TerraformResource
 	AlertStrategy() MonitoringAlertPolicyAlertStrategyOutputReference
@@ -548,7 +548,7 @@ func (j *jsiiProxy_MonitoringAlertPolicy) UserLabelsInput() *map[string]*string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy} Resource.
 func NewMonitoringAlertPolicy(scope constructs.Construct, id *string, config *MonitoringAlertPolicyConfig) MonitoringAlertPolicy {
 	_init_.Initialize()
 
@@ -566,7 +566,7 @@ func NewMonitoringAlertPolicy(scope constructs.Construct, id *string, config *Mo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/monitoring_alert_policy google_monitoring_alert_policy} Resource.
 func NewMonitoringAlertPolicy_Override(m MonitoringAlertPolicy, scope constructs.Construct, id *string, config *MonitoringAlertPolicyConfig) {
 	_init_.Initialize()
 

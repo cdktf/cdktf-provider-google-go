@@ -5,14 +5,14 @@ package bigqueryreservationassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/bigqueryreservationassignment/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/bigqueryreservationassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/bigquery_reservation_assignment google_bigquery_reservation_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/bigquery_reservation_assignment google_bigquery_reservation_assignment}.
 type BigqueryReservationAssignment interface {
 	cdktf.TerraformResource
 	Assignee() *string
@@ -452,7 +452,7 @@ func (j *jsiiProxy_BigqueryReservationAssignment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/bigquery_reservation_assignment google_bigquery_reservation_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/bigquery_reservation_assignment google_bigquery_reservation_assignment} Resource.
 func NewBigqueryReservationAssignment(scope constructs.Construct, id *string, config *BigqueryReservationAssignmentConfig) BigqueryReservationAssignment {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewBigqueryReservationAssignment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/bigquery_reservation_assignment google_bigquery_reservation_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/bigquery_reservation_assignment google_bigquery_reservation_assignment} Resource.
 func NewBigqueryReservationAssignment_Override(b BigqueryReservationAssignment, scope constructs.Construct, id *string, config *BigqueryReservationAssignmentConfig) {
 	_init_.Initialize()
 

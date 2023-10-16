@@ -5,14 +5,14 @@ package containeranalysisnote
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/containeranalysisnote/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/containeranalysisnote/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/container_analysis_note google_container_analysis_note}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/container_analysis_note google_container_analysis_note}.
 type ContainerAnalysisNote interface {
 	cdktf.TerraformResource
 	AttestationAuthority() ContainerAnalysisNoteAttestationAuthorityOutputReference
@@ -536,7 +536,7 @@ func (j *jsiiProxy_ContainerAnalysisNote) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/container_analysis_note google_container_analysis_note} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/container_analysis_note google_container_analysis_note} Resource.
 func NewContainerAnalysisNote(scope constructs.Construct, id *string, config *ContainerAnalysisNoteConfig) ContainerAnalysisNote {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewContainerAnalysisNote(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/container_analysis_note google_container_analysis_note} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/container_analysis_note google_container_analysis_note} Resource.
 func NewContainerAnalysisNote_Override(c ContainerAnalysisNote, scope constructs.Construct, id *string, config *ContainerAnalysisNoteConfig) {
 	_init_.Initialize()
 

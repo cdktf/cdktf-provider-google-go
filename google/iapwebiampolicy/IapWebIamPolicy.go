@@ -5,14 +5,14 @@ package iapwebiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/iapwebiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/iapwebiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/iap_web_iam_policy google_iap_web_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/iap_web_iam_policy google_iap_web_iam_policy}.
 type IapWebIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -347,7 +347,7 @@ func (j *jsiiProxy_IapWebIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/iap_web_iam_policy google_iap_web_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/iap_web_iam_policy google_iap_web_iam_policy} Resource.
 func NewIapWebIamPolicy(scope constructs.Construct, id *string, config *IapWebIamPolicyConfig) IapWebIamPolicy {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewIapWebIamPolicy(scope constructs.Construct, id *string, config *IapWebIa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/iap_web_iam_policy google_iap_web_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/iap_web_iam_policy google_iap_web_iam_policy} Resource.
 func NewIapWebIamPolicy_Override(i IapWebIamPolicy, scope constructs.Construct, id *string, config *IapWebIamPolicyConfig) {
 	_init_.Initialize()
 

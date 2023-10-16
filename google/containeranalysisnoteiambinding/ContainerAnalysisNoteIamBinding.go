@@ -5,14 +5,14 @@ package containeranalysisnoteiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/containeranalysisnoteiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/containeranalysisnoteiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/container_analysis_note_iam_binding google_container_analysis_note_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/container_analysis_note_iam_binding google_container_analysis_note_iam_binding}.
 type ContainerAnalysisNoteIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -417,7 +417,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamBinding) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/container_analysis_note_iam_binding google_container_analysis_note_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/container_analysis_note_iam_binding google_container_analysis_note_iam_binding} Resource.
 func NewContainerAnalysisNoteIamBinding(scope constructs.Construct, id *string, config *ContainerAnalysisNoteIamBindingConfig) ContainerAnalysisNoteIamBinding {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewContainerAnalysisNoteIamBinding(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/container_analysis_note_iam_binding google_container_analysis_note_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/container_analysis_note_iam_binding google_container_analysis_note_iam_binding} Resource.
 func NewContainerAnalysisNoteIamBinding_Override(c ContainerAnalysisNoteIamBinding, scope constructs.Construct, id *string, config *ContainerAnalysisNoteIamBindingConfig) {
 	_init_.Initialize()
 

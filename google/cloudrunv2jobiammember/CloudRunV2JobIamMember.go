@@ -5,14 +5,14 @@ package cloudrunv2jobiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/cloudrunv2jobiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/cloudrunv2jobiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member}.
 type CloudRunV2JobIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_CloudRunV2JobIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member} Resource.
 func NewCloudRunV2JobIamMember(scope constructs.Construct, id *string, config *CloudRunV2JobIamMemberConfig) CloudRunV2JobIamMember {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewCloudRunV2JobIamMember(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member} Resource.
 func NewCloudRunV2JobIamMember_Override(c CloudRunV2JobIamMember, scope constructs.Construct, id *string, config *CloudRunV2JobIamMemberConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package apigeekeystoresaliasespkcs12
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/apigeekeystoresaliasespkcs12/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/apigeekeystoresaliasespkcs12/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/apigee_keystores_aliases_pkcs12 google_apigee_keystores_aliases_pkcs12}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/apigee_keystores_aliases_pkcs12 google_apigee_keystores_aliases_pkcs12}.
 type ApigeeKeystoresAliasesPkcs12 interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -497,7 +497,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/apigee_keystores_aliases_pkcs12 google_apigee_keystores_aliases_pkcs12} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/apigee_keystores_aliases_pkcs12 google_apigee_keystores_aliases_pkcs12} Resource.
 func NewApigeeKeystoresAliasesPkcs12(scope constructs.Construct, id *string, config *ApigeeKeystoresAliasesPkcs12Config) ApigeeKeystoresAliasesPkcs12 {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewApigeeKeystoresAliasesPkcs12(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/apigee_keystores_aliases_pkcs12 google_apigee_keystores_aliases_pkcs12} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/apigee_keystores_aliases_pkcs12 google_apigee_keystores_aliases_pkcs12} Resource.
 func NewApigeeKeystoresAliasesPkcs12_Override(a ApigeeKeystoresAliasesPkcs12, scope constructs.Construct, id *string, config *ApigeeKeystoresAliasesPkcs12Config) {
 	_init_.Initialize()
 

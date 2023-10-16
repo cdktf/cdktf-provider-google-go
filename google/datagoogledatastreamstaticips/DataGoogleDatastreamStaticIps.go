@@ -5,14 +5,14 @@ package datagoogledatastreamstaticips
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagoogledatastreamstaticips/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/datagoogledatastreamstaticips/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/datastream_static_ips google_datastream_static_ips}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/datastream_static_ips google_datastream_static_ips}.
 type DataGoogleDatastreamStaticIps interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataGoogleDatastreamStaticIps) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/datastream_static_ips google_datastream_static_ips} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/datastream_static_ips google_datastream_static_ips} Data Source.
 func NewDataGoogleDatastreamStaticIps(scope constructs.Construct, id *string, config *DataGoogleDatastreamStaticIpsConfig) DataGoogleDatastreamStaticIps {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataGoogleDatastreamStaticIps(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/datastream_static_ips google_datastream_static_ips} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/datastream_static_ips google_datastream_static_ips} Data Source.
 func NewDataGoogleDatastreamStaticIps_Override(d DataGoogleDatastreamStaticIps, scope constructs.Construct, id *string, config *DataGoogleDatastreamStaticIpsConfig) {
 	_init_.Initialize()
 

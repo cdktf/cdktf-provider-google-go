@@ -5,14 +5,14 @@ package apigeesyncauthorization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/apigeesyncauthorization/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/apigeesyncauthorization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/apigee_sync_authorization google_apigee_sync_authorization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/apigee_sync_authorization google_apigee_sync_authorization}.
 type ApigeeSyncAuthorization interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_ApigeeSyncAuthorization) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/apigee_sync_authorization google_apigee_sync_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/apigee_sync_authorization google_apigee_sync_authorization} Resource.
 func NewApigeeSyncAuthorization(scope constructs.Construct, id *string, config *ApigeeSyncAuthorizationConfig) ApigeeSyncAuthorization {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewApigeeSyncAuthorization(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/apigee_sync_authorization google_apigee_sync_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/apigee_sync_authorization google_apigee_sync_authorization} Resource.
 func NewApigeeSyncAuthorization_Override(a ApigeeSyncAuthorization, scope constructs.Construct, id *string, config *ApigeeSyncAuthorizationConfig) {
 	_init_.Initialize()
 

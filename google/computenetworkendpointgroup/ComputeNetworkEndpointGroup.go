@@ -5,14 +5,14 @@ package computenetworkendpointgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/computenetworkendpointgroup/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/computenetworkendpointgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_network_endpoint_group google_compute_network_endpoint_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_network_endpoint_group google_compute_network_endpoint_group}.
 type ComputeNetworkEndpointGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -525,7 +525,7 @@ func (j *jsiiProxy_ComputeNetworkEndpointGroup) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_network_endpoint_group google_compute_network_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_network_endpoint_group google_compute_network_endpoint_group} Resource.
 func NewComputeNetworkEndpointGroup(scope constructs.Construct, id *string, config *ComputeNetworkEndpointGroupConfig) ComputeNetworkEndpointGroup {
 	_init_.Initialize()
 
@@ -543,7 +543,7 @@ func NewComputeNetworkEndpointGroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_network_endpoint_group google_compute_network_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_network_endpoint_group google_compute_network_endpoint_group} Resource.
 func NewComputeNetworkEndpointGroup_Override(c ComputeNetworkEndpointGroup, scope constructs.Construct, id *string, config *ComputeNetworkEndpointGroupConfig) {
 	_init_.Initialize()
 

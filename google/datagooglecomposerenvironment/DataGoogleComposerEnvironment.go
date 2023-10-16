@@ -5,14 +5,14 @@ package datagooglecomposerenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglecomposerenvironment/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/datagooglecomposerenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/composer_environment google_composer_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/composer_environment google_composer_environment}.
 type DataGoogleComposerEnvironment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataGoogleComposerEnvironment) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/composer_environment google_composer_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/composer_environment google_composer_environment} Data Source.
 func NewDataGoogleComposerEnvironment(scope constructs.Construct, id *string, config *DataGoogleComposerEnvironmentConfig) DataGoogleComposerEnvironment {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDataGoogleComposerEnvironment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/composer_environment google_composer_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/composer_environment google_composer_environment} Data Source.
 func NewDataGoogleComposerEnvironment_Override(d DataGoogleComposerEnvironment, scope constructs.Construct, id *string, config *DataGoogleComposerEnvironmentConfig) {
 	_init_.Initialize()
 

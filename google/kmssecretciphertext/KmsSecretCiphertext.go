@@ -5,14 +5,14 @@ package kmssecretciphertext
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/kmssecretciphertext/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/kmssecretciphertext/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/kms_secret_ciphertext google_kms_secret_ciphertext}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/kms_secret_ciphertext google_kms_secret_ciphertext}.
 type KmsSecretCiphertext interface {
 	cdktf.TerraformResource
 	AdditionalAuthenticatedData() *string
@@ -394,7 +394,7 @@ func (j *jsiiProxy_KmsSecretCiphertext) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/kms_secret_ciphertext google_kms_secret_ciphertext} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/kms_secret_ciphertext google_kms_secret_ciphertext} Resource.
 func NewKmsSecretCiphertext(scope constructs.Construct, id *string, config *KmsSecretCiphertextConfig) KmsSecretCiphertext {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewKmsSecretCiphertext(scope constructs.Construct, id *string, config *KmsS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/kms_secret_ciphertext google_kms_secret_ciphertext} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/kms_secret_ciphertext google_kms_secret_ciphertext} Resource.
 func NewKmsSecretCiphertext_Override(k KmsSecretCiphertext, scope constructs.Construct, id *string, config *KmsSecretCiphertextConfig) {
 	_init_.Initialize()
 

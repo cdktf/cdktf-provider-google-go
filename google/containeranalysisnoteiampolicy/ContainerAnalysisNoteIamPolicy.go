@@ -5,14 +5,14 @@ package containeranalysisnoteiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/containeranalysisnoteiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/containeranalysisnoteiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/container_analysis_note_iam_policy google_container_analysis_note_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/container_analysis_note_iam_policy google_container_analysis_note_iam_policy}.
 type ContainerAnalysisNoteIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteIamPolicy) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/container_analysis_note_iam_policy google_container_analysis_note_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/container_analysis_note_iam_policy google_container_analysis_note_iam_policy} Resource.
 func NewContainerAnalysisNoteIamPolicy(scope constructs.Construct, id *string, config *ContainerAnalysisNoteIamPolicyConfig) ContainerAnalysisNoteIamPolicy {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewContainerAnalysisNoteIamPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/container_analysis_note_iam_policy google_container_analysis_note_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/container_analysis_note_iam_policy google_container_analysis_note_iam_policy} Resource.
 func NewContainerAnalysisNoteIamPolicy_Override(c ContainerAnalysisNoteIamPolicy, scope constructs.Construct, id *string, config *ContainerAnalysisNoteIamPolicyConfig) {
 	_init_.Initialize()
 

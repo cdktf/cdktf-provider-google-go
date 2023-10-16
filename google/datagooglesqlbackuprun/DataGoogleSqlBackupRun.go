@@ -5,14 +5,14 @@ package datagooglesqlbackuprun
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglesqlbackuprun/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/datagooglesqlbackuprun/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/sql_backup_run google_sql_backup_run}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/sql_backup_run google_sql_backup_run}.
 type DataGoogleSqlBackupRun interface {
 	cdktf.TerraformDataSource
 	BackupId() *float64
@@ -389,7 +389,7 @@ func (j *jsiiProxy_DataGoogleSqlBackupRun) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/sql_backup_run google_sql_backup_run} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/sql_backup_run google_sql_backup_run} Data Source.
 func NewDataGoogleSqlBackupRun(scope constructs.Construct, id *string, config *DataGoogleSqlBackupRunConfig) DataGoogleSqlBackupRun {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewDataGoogleSqlBackupRun(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/sql_backup_run google_sql_backup_run} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/sql_backup_run google_sql_backup_run} Data Source.
 func NewDataGoogleSqlBackupRun_Override(d DataGoogleSqlBackupRun, scope constructs.Construct, id *string, config *DataGoogleSqlBackupRunConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package gkehubfeaturemembership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/gkehubfeaturemembership/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/gkehubfeaturemembership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership}.
 type GkeHubFeatureMembership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -454,7 +454,7 @@ func (j *jsiiProxy_GkeHubFeatureMembership) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership} Resource.
 func NewGkeHubFeatureMembership(scope constructs.Construct, id *string, config *GkeHubFeatureMembershipConfig) GkeHubFeatureMembership {
 	_init_.Initialize()
 
@@ -472,7 +472,7 @@ func NewGkeHubFeatureMembership(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership} Resource.
 func NewGkeHubFeatureMembership_Override(g GkeHubFeatureMembership, scope constructs.Construct, id *string, config *GkeHubFeatureMembershipConfig) {
 	_init_.Initialize()
 

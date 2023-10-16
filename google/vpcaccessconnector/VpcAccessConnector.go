@@ -5,14 +5,14 @@ package vpcaccessconnector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/vpcaccessconnector/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/vpcaccessconnector/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/vpc_access_connector google_vpc_access_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/vpc_access_connector google_vpc_access_connector}.
 type VpcAccessConnector interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -609,7 +609,7 @@ func (j *jsiiProxy_VpcAccessConnector) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/vpc_access_connector google_vpc_access_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/vpc_access_connector google_vpc_access_connector} Resource.
 func NewVpcAccessConnector(scope constructs.Construct, id *string, config *VpcAccessConnectorConfig) VpcAccessConnector {
 	_init_.Initialize()
 
@@ -627,7 +627,7 @@ func NewVpcAccessConnector(scope constructs.Construct, id *string, config *VpcAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/vpc_access_connector google_vpc_access_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/vpc_access_connector google_vpc_access_connector} Resource.
 func NewVpcAccessConnector_Override(v VpcAccessConnector, scope constructs.Construct, id *string, config *VpcAccessConnectorConfig) {
 	_init_.Initialize()
 

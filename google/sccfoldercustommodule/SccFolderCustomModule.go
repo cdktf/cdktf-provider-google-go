@@ -5,14 +5,14 @@ package sccfoldercustommodule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/sccfoldercustommodule/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/sccfoldercustommodule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/scc_folder_custom_module google_scc_folder_custom_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/scc_folder_custom_module google_scc_folder_custom_module}.
 type SccFolderCustomModule interface {
 	cdktf.TerraformResource
 	AncestorModule() *string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_SccFolderCustomModule) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/scc_folder_custom_module google_scc_folder_custom_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/scc_folder_custom_module google_scc_folder_custom_module} Resource.
 func NewSccFolderCustomModule(scope constructs.Construct, id *string, config *SccFolderCustomModuleConfig) SccFolderCustomModule {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewSccFolderCustomModule(scope constructs.Construct, id *string, config *Sc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/scc_folder_custom_module google_scc_folder_custom_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/scc_folder_custom_module google_scc_folder_custom_module} Resource.
 func NewSccFolderCustomModule_Override(s SccFolderCustomModule, scope constructs.Construct, id *string, config *SccFolderCustomModuleConfig) {
 	_init_.Initialize()
 

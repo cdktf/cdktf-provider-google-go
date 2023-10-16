@@ -5,14 +5,14 @@ package cloudbuildbitbucketserverconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/cloudbuildbitbucketserverconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/cloudbuildbitbucketserverconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/cloudbuild_bitbucket_server_config google_cloudbuild_bitbucket_server_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/cloudbuild_bitbucket_server_config google_cloudbuild_bitbucket_server_config}.
 type CloudbuildBitbucketServerConfig interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -569,7 +569,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig) WebhookKey() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/cloudbuild_bitbucket_server_config google_cloudbuild_bitbucket_server_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/cloudbuild_bitbucket_server_config google_cloudbuild_bitbucket_server_config} Resource.
 func NewCloudbuildBitbucketServerConfig(scope constructs.Construct, id *string, config *CloudbuildBitbucketServerConfigConfig) CloudbuildBitbucketServerConfig {
 	_init_.Initialize()
 
@@ -587,7 +587,7 @@ func NewCloudbuildBitbucketServerConfig(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/cloudbuild_bitbucket_server_config google_cloudbuild_bitbucket_server_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/cloudbuild_bitbucket_server_config google_cloudbuild_bitbucket_server_config} Resource.
 func NewCloudbuildBitbucketServerConfig_Override(c CloudbuildBitbucketServerConfig, scope constructs.Construct, id *string, config *CloudbuildBitbucketServerConfigConfig) {
 	_init_.Initialize()
 

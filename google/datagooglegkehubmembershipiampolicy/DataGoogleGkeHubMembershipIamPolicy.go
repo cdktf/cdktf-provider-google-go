@@ -5,14 +5,14 @@ package datagooglegkehubmembershipiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglegkehubmembershipiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/datagooglegkehubmembershipiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy}.
 type DataGoogleGkeHubMembershipIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataGoogleGkeHubMembershipIamPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy} Data Source.
 func NewDataGoogleGkeHubMembershipIamPolicy(scope constructs.Construct, id *string, config *DataGoogleGkeHubMembershipIamPolicyConfig) DataGoogleGkeHubMembershipIamPolicy {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataGoogleGkeHubMembershipIamPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy} Data Source.
 func NewDataGoogleGkeHubMembershipIamPolicy_Override(d DataGoogleGkeHubMembershipIamPolicy, scope constructs.Construct, id *string, config *DataGoogleGkeHubMembershipIamPolicyConfig) {
 	_init_.Initialize()
 

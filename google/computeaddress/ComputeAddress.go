@@ -5,14 +5,14 @@ package computeaddress
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/computeaddress/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/computeaddress/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_address google_compute_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_address google_compute_address}.
 type ComputeAddress interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -41,6 +41,7 @@ type ComputeAddress interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -58,6 +59,10 @@ type ComputeAddress interface {
 	IpVersion() *string
 	SetIpVersion(val *string)
 	IpVersionInput() *string
+	LabelFingerprint() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -101,6 +106,7 @@ type ComputeAddress interface {
 	SubnetworkInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -140,6 +146,7 @@ type ComputeAddress interface {
 	ResetId()
 	ResetIpv6EndpointType()
 	ResetIpVersion()
+	ResetLabels()
 	ResetNetwork()
 	ResetNetworkTier()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -286,6 +293,16 @@ func (j *jsiiProxy_ComputeAddress) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeAddress) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeAddress) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -371,6 +388,36 @@ func (j *jsiiProxy_ComputeAddress) IpVersionInput() *string {
 	_jsii_.Get(
 		j,
 		"ipVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeAddress) LabelFingerprint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"labelFingerprint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeAddress) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeAddress) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -606,6 +653,16 @@ func (j *jsiiProxy_ComputeAddress) TerraformGeneratorMetadata() *cdktf.Terraform
 	return returns
 }
 
+func (j *jsiiProxy_ComputeAddress) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeAddress) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -657,7 +714,7 @@ func (j *jsiiProxy_ComputeAddress) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_address google_compute_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_address google_compute_address} Resource.
 func NewComputeAddress(scope constructs.Construct, id *string, config *ComputeAddressConfig) ComputeAddress {
 	_init_.Initialize()
 
@@ -675,7 +732,7 @@ func NewComputeAddress(scope constructs.Construct, id *string, config *ComputeAd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_address google_compute_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_address google_compute_address} Resource.
 func NewComputeAddress_Override(c ComputeAddress, scope constructs.Construct, id *string, config *ComputeAddressConfig) {
 	_init_.Initialize()
 
@@ -786,6 +843,17 @@ func (j *jsiiProxy_ComputeAddress)SetIpVersion(val *string) {
 	_jsii_.Set(
 		j,
 		"ipVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeAddress)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -1229,6 +1297,14 @@ func (c *jsiiProxy_ComputeAddress) ResetIpVersion() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIpVersion",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeAddress) ResetLabels() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLabels",
 		nil, // no parameters
 	)
 }

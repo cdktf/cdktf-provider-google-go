@@ -5,14 +5,14 @@ package computeinstancegroupmanager
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/computeinstancegroupmanager/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/computeinstancegroupmanager/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager}.
 type ComputeInstanceGroupManager interface {
 	cdktf.TerraformResource
 	AutoHealingPolicies() ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference
@@ -85,6 +85,10 @@ type ComputeInstanceGroupManager interface {
 	SelfLink() *string
 	StatefulDisk() ComputeInstanceGroupManagerStatefulDiskList
 	StatefulDiskInput() interface{}
+	StatefulExternalIp() ComputeInstanceGroupManagerStatefulExternalIpList
+	StatefulExternalIpInput() interface{}
+	StatefulInternalIp() ComputeInstanceGroupManagerStatefulInternalIpList
+	StatefulInternalIpInput() interface{}
 	Status() ComputeInstanceGroupManagerStatusList
 	TargetPools() *[]*string
 	SetTargetPools(val *[]*string)
@@ -142,6 +146,8 @@ type ComputeInstanceGroupManager interface {
 	PutInstanceLifecyclePolicy(value *ComputeInstanceGroupManagerInstanceLifecyclePolicy)
 	PutNamedPort(value interface{})
 	PutStatefulDisk(value interface{})
+	PutStatefulExternalIp(value interface{})
+	PutStatefulInternalIp(value interface{})
 	PutTimeouts(value *ComputeInstanceGroupManagerTimeouts)
 	PutUpdatePolicy(value *ComputeInstanceGroupManagerUpdatePolicy)
 	PutVersion(value interface{})
@@ -156,6 +162,8 @@ type ComputeInstanceGroupManager interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetStatefulDisk()
+	ResetStatefulExternalIp()
+	ResetStatefulInternalIp()
 	ResetTargetPools()
 	ResetTargetSize()
 	ResetTimeouts()
@@ -548,6 +556,46 @@ func (j *jsiiProxy_ComputeInstanceGroupManager) StatefulDiskInput() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceGroupManager) StatefulExternalIp() ComputeInstanceGroupManagerStatefulExternalIpList {
+	var returns ComputeInstanceGroupManagerStatefulExternalIpList
+	_jsii_.Get(
+		j,
+		"statefulExternalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager) StatefulExternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"statefulExternalIpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager) StatefulInternalIp() ComputeInstanceGroupManagerStatefulInternalIpList {
+	var returns ComputeInstanceGroupManagerStatefulInternalIpList
+	_jsii_.Get(
+		j,
+		"statefulInternalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager) StatefulInternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"statefulInternalIpInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceGroupManager) Status() ComputeInstanceGroupManagerStatusList {
 	var returns ComputeInstanceGroupManagerStatusList
 	_jsii_.Get(
@@ -749,7 +797,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManager) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
 func NewComputeInstanceGroupManager(scope constructs.Construct, id *string, config *ComputeInstanceGroupManagerConfig) ComputeInstanceGroupManager {
 	_init_.Initialize()
 
@@ -767,7 +815,7 @@ func NewComputeInstanceGroupManager(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
 func NewComputeInstanceGroupManager_Override(c ComputeInstanceGroupManager, scope constructs.Construct, id *string, config *ComputeInstanceGroupManagerConfig) {
 	_init_.Initialize()
 
@@ -1277,6 +1325,28 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) PutStatefulDisk(value interface{
 	)
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) PutStatefulExternalIp(value interface{}) {
+	if err := c.validatePutStatefulExternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putStatefulExternalIp",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceGroupManager) PutStatefulInternalIp(value interface{}) {
+	if err := c.validatePutStatefulInternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putStatefulInternalIp",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupManager) PutTimeouts(value *ComputeInstanceGroupManagerTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1378,6 +1448,22 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) ResetStatefulDisk() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetStatefulDisk",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceGroupManager) ResetStatefulExternalIp() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStatefulExternalIp",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceGroupManager) ResetStatefulInternalIp() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStatefulInternalIp",
 		nil, // no parameters
 	)
 }

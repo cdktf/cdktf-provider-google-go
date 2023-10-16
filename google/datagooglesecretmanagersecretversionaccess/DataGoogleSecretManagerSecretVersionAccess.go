@@ -5,14 +5,14 @@ package datagooglesecretmanagersecretversionaccess
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/datagooglesecretmanagersecretversionaccess/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/datagooglesecretmanagersecretversionaccess/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/secret_manager_secret_version_access google_secret_manager_secret_version_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/secret_manager_secret_version_access google_secret_manager_secret_version_access}.
 type DataGoogleSecretManagerSecretVersionAccess interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecretVersionAccess) VersionInput() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/secret_manager_secret_version_access google_secret_manager_secret_version_access} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/secret_manager_secret_version_access google_secret_manager_secret_version_access} Data Source.
 func NewDataGoogleSecretManagerSecretVersionAccess(scope constructs.Construct, id *string, config *DataGoogleSecretManagerSecretVersionAccessConfig) DataGoogleSecretManagerSecretVersionAccess {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataGoogleSecretManagerSecretVersionAccess(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.1.0/docs/data-sources/secret_manager_secret_version_access google_secret_manager_secret_version_access} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/secret_manager_secret_version_access google_secret_manager_secret_version_access} Data Source.
 func NewDataGoogleSecretManagerSecretVersionAccess_Override(d DataGoogleSecretManagerSecretVersionAccess, scope constructs.Construct, id *string, config *DataGoogleSecretManagerSecretVersionAccessConfig) {
 	_init_.Initialize()
 

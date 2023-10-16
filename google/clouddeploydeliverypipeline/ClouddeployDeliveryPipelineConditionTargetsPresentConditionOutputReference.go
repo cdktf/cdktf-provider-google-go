@@ -5,9 +5,9 @@ package clouddeploydeliverypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v10/clouddeploydeliverypipeline/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v11/clouddeploydeliverypipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
