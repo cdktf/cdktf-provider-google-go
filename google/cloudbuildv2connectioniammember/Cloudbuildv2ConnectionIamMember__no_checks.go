@@ -7,6 +7,10 @@ package cloudbuildv2connectioniammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudbuildv2ConnectionIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamMember) validateGetStringMapAttribut
 	return nil
 }
 
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudbuildv2ConnectionIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamMember) validateOverrideLogicalIdPar
 }
 
 func (c *jsiiProxy_Cloudbuildv2ConnectionIamMember) validatePutConditionParameters(value *Cloudbuildv2ConnectionIamMemberCondition) error {
+	return nil
+}
+
+func validateCloudbuildv2ConnectionIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

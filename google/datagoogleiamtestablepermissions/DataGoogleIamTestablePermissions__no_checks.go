@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissions) validateOverrideLogicalIdPa
 	return nil
 }
 
+func validateDataGoogleIamTestablePermissions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleIamTestablePermissions_IsConstructParameters(x interface{}) error {
 	return nil
 }

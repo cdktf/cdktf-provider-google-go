@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleCloudRunServiceIamPolicy) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataGoogleCloudRunServiceIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleCloudRunServiceIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

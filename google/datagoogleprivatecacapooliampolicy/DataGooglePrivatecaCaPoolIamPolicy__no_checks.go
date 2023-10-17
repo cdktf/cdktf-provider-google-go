@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataGooglePrivatecaCaPoolIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGooglePrivatecaCaPoolIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

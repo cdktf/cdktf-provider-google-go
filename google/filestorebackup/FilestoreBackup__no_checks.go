@@ -7,6 +7,10 @@ package filestorebackup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FilestoreBackup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FilestoreBackup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FilestoreBackup) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (f *jsiiProxy_FilestoreBackup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FilestoreBackup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FilestoreBackup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (f *jsiiProxy_FilestoreBackup) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (f *jsiiProxy_FilestoreBackup) validatePutTimeoutsParameters(value *FilestoreBackupTimeouts) error {
+	return nil
+}
+
+func validateFilestoreBackup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

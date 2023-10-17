@@ -5,10 +5,10 @@ package cloudrunv2serviceiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/cloudrunv2serviceiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/cloudrunv2serviceiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -77,6 +77,9 @@ type CloudRunV2ServiceIamPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -98,7 +101,12 @@ type CloudRunV2ServiceIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -546,6 +554,25 @@ func (j *jsiiProxy_CloudRunV2ServiceIamPolicy)SetProvisioners(val *[]interface{}
 	)
 }
 
+// Generates CDKTF code for importing a CloudRunV2ServiceIamPolicy resource upon running "cdktf plan <stack-name>".
+func CloudRunV2ServiceIamPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateCloudRunV2ServiceIamPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.cloudRunV2ServiceIamPolicy.CloudRunV2ServiceIamPolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -628,6 +655,17 @@ func CloudRunV2ServiceIamPolicy_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceIamPolicy) AddMoveTarget(moveTarget *string) {
+	if err := c.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (c *jsiiProxy_CloudRunV2ServiceIamPolicy) AddOverride(path *string, value interface{}) {
@@ -785,6 +823,17 @@ func (c *jsiiProxy_CloudRunV2ServiceIamPolicy) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (c *jsiiProxy_CloudRunV2ServiceIamPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := c.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2ServiceIamPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -799,6 +848,17 @@ func (c *jsiiProxy_CloudRunV2ServiceIamPolicy) InterpolationForAttribute(terrafo
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (c *jsiiProxy_CloudRunV2ServiceIamPolicy) OverrideLogicalId(newLogicalId *string) {

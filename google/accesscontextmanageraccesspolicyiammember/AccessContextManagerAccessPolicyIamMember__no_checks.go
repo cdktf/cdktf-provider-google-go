@@ -7,6 +7,10 @@ package accesscontextmanageraccesspolicyiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AccessContextManagerAccessPolicyIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerAccessPolicyIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AccessContextManagerAccessPolicyIamMember) validateGetStringM
 	return nil
 }
 
+func (a *jsiiProxy_AccessContextManagerAccessPolicyIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerAccessPolicyIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessPolicyIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AccessContextManagerAccessPolicyIamMember) validateOverrideLo
 }
 
 func (a *jsiiProxy_AccessContextManagerAccessPolicyIamMember) validatePutConditionParameters(value *AccessContextManagerAccessPolicyIamMemberCondition) error {
+	return nil
+}
+
+func validateAccessContextManagerAccessPolicyIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

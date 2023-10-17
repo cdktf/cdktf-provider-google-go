@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstance",
 		reflect.TypeOf((*SqlDatabaseInstance)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "availableMaintenanceVersions", GoGetter: "AvailableMaintenanceVersions"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -46,6 +47,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceType", GoGetter: "InstanceType"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceTypeInput", GoGetter: "InstanceTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -55,6 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceVersionInput", GoGetter: "MaintenanceVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "masterInstanceName", GoGetter: "MasterInstanceName"},
 			_jsii_.MemberProperty{JsiiProperty: "masterInstanceNameInput", GoGetter: "MasterInstanceNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

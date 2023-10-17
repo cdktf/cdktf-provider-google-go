@@ -7,6 +7,10 @@ package computenetworkendpoints
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeNetworkEndpoints) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeNetworkEndpoints) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeNetworkEndpoints) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_ComputeNetworkEndpoints) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeNetworkEndpoints) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeNetworkEndpoints) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_ComputeNetworkEndpoints) validatePutNetworkEndpointsParameter
 }
 
 func (c *jsiiProxy_ComputeNetworkEndpoints) validatePutTimeoutsParameters(value *ComputeNetworkEndpointsTimeouts) error {
+	return nil
+}
+
+func validateComputeNetworkEndpoints_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

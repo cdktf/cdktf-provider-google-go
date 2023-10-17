@@ -7,6 +7,10 @@ package secretmanagersecretiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecretManagerSecretIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretManagerSecretIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SecretManagerSecretIamMember) validateGetStringMapAttributePa
 	return nil
 }
 
+func (s *jsiiProxy_SecretManagerSecretIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretManagerSecretIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecretManagerSecretIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SecretManagerSecretIamMember) validateOverrideLogicalIdParame
 }
 
 func (s *jsiiProxy_SecretManagerSecretIamMember) validatePutConditionParameters(value *SecretManagerSecretIamMemberCondition) error {
+	return nil
+}
+
+func validateSecretManagerSecretIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

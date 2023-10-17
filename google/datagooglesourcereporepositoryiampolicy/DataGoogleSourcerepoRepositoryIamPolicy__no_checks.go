@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleSourcerepoRepositoryIamPolicy) validateOverrideLogi
 	return nil
 }
 
+func validateDataGoogleSourcerepoRepositoryIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleSourcerepoRepositoryIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

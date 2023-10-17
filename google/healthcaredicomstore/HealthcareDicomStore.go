@@ -5,10 +5,10 @@ package healthcaredicomstore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/healthcaredicomstore/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/healthcaredicomstore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -80,6 +80,9 @@ type HealthcareDicomStore interface {
 	TerraformResourceType() *string
 	Timeouts() HealthcareDicomStoreTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -101,7 +104,12 @@ type HealthcareDicomStore interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -581,6 +589,25 @@ func (j *jsiiProxy_HealthcareDicomStore)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a HealthcareDicomStore resource upon running "cdktf plan <stack-name>".
+func HealthcareDicomStore_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateHealthcareDicomStore_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStore",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -663,6 +690,17 @@ func HealthcareDicomStore_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (h *jsiiProxy_HealthcareDicomStore) AddMoveTarget(moveTarget *string) {
+	if err := h.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (h *jsiiProxy_HealthcareDicomStore) AddOverride(path *string, value interface{}) {
@@ -820,6 +858,17 @@ func (h *jsiiProxy_HealthcareDicomStore) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (h *jsiiProxy_HealthcareDicomStore) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := h.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (h *jsiiProxy_HealthcareDicomStore) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -834,6 +883,17 @@ func (h *jsiiProxy_HealthcareDicomStore) InterpolationForAttribute(terraformAttr
 	)
 
 	return returns
+}
+
+func (h *jsiiProxy_HealthcareDicomStore) MoveTo(moveTarget *string, index interface{}) {
+	if err := h.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (h *jsiiProxy_HealthcareDicomStore) OverrideLogicalId(newLogicalId *string) {

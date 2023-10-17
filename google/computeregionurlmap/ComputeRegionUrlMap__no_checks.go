@@ -7,6 +7,10 @@ package computeregionurlmap
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionUrlMap) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionUrlMap) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeRegionUrlMap) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionUrlMap) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionUrlMap) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionUrlMap) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (c *jsiiProxy_ComputeRegionUrlMap) validatePutTestParameters(value interfac
 }
 
 func (c *jsiiProxy_ComputeRegionUrlMap) validatePutTimeoutsParameters(value *ComputeRegionUrlMapTimeouts) error {
+	return nil
+}
+
+func validateComputeRegionUrlMap_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

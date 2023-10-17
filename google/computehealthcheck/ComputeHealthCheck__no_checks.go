@@ -7,6 +7,10 @@ package computehealthcheck
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeHealthCheck) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeHealthCheck) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeHealthCheck) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (c *jsiiProxy_ComputeHealthCheck) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeHealthCheck) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeHealthCheck) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (c *jsiiProxy_ComputeHealthCheck) validatePutTcpHealthCheckParameters(value
 }
 
 func (c *jsiiProxy_ComputeHealthCheck) validatePutTimeoutsParameters(value *ComputeHealthCheckTimeouts) error {
+	return nil
+}
+
+func validateComputeHealthCheck_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

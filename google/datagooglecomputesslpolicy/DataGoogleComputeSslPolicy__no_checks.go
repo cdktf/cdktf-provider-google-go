@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleComputeSslPolicy) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func validateDataGoogleComputeSslPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleComputeSslPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

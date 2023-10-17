@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorConfig", GoGetter: "AcceleratorConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorConfigInput", GoGetter: "AcceleratorConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskSizeGb", GoGetter: "BootDiskSizeGb"},
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskSizeGbInput", GoGetter: "BootDiskSizeGbInput"},
@@ -53,6 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "installGpuDriver", GoGetter: "InstallGpuDriver"},
 			_jsii_.MemberProperty{JsiiProperty: "installGpuDriverInput", GoGetter: "InstallGpuDriverInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceOwners", GoGetter: "InstanceOwners"},
@@ -69,6 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "machineTypeInput", GoGetter: "MachineTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataInput", GoGetter: "MetadataInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},

@@ -5,10 +5,10 @@ package networkservicesedgecacheorigin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/networkservicesedgecacheorigin/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/networkservicesedgecacheorigin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -106,6 +106,9 @@ type NetworkServicesEdgeCacheOrigin interface {
 	TimeoutInput() *NetworkServicesEdgeCacheOriginTimeout
 	Timeouts() NetworkServicesEdgeCacheOriginTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -127,7 +130,12 @@ type NetworkServicesEdgeCacheOrigin interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -887,6 +895,25 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin)SetRetryConditions(val *[]*str
 	)
 }
 
+// Generates CDKTF code for importing a NetworkServicesEdgeCacheOrigin resource upon running "cdktf plan <stack-name>".
+func NetworkServicesEdgeCacheOrigin_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateNetworkServicesEdgeCacheOrigin_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -969,6 +996,17 @@ func NetworkServicesEdgeCacheOrigin_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) AddMoveTarget(moveTarget *string) {
+	if err := n.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) AddOverride(path *string, value interface{}) {
@@ -1126,6 +1164,17 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) GetStringMapAttribute(terrafo
 	return returns
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := n.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1140,6 +1189,17 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) InterpolationForAttribute(ter
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) MoveTo(moveTarget *string, index interface{}) {
+	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) OverrideLogicalId(newLogicalId *string) {

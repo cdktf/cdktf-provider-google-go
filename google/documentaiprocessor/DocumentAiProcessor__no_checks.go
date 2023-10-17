@@ -7,6 +7,10 @@ package documentaiprocessor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DocumentAiProcessor) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocumentAiProcessor) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DocumentAiProcessor) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DocumentAiProcessor) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocumentAiProcessor) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DocumentAiProcessor) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DocumentAiProcessor) validateOverrideLogicalIdParameters(newL
 }
 
 func (d *jsiiProxy_DocumentAiProcessor) validatePutTimeoutsParameters(value *DocumentAiProcessorTimeouts) error {
+	return nil
+}
+
+func validateDocumentAiProcessor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

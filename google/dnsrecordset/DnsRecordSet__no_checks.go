@@ -7,6 +7,10 @@ package dnsrecordset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DnsRecordSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsRecordSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DnsRecordSet) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (d *jsiiProxy_DnsRecordSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsRecordSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DnsRecordSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DnsRecordSet) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (d *jsiiProxy_DnsRecordSet) validatePutRoutingPolicyParameters(value *DnsRecordSetRoutingPolicy) error {
+	return nil
+}
+
+func validateDnsRecordSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

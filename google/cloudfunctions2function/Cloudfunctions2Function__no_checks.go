@@ -7,6 +7,10 @@ package cloudfunctions2function
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_Cloudfunctions2Function) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudfunctions2Function) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_Cloudfunctions2Function) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_Cloudfunctions2Function) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudfunctions2Function) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_Cloudfunctions2Function) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (c *jsiiProxy_Cloudfunctions2Function) validatePutServiceConfigParameters(v
 }
 
 func (c *jsiiProxy_Cloudfunctions2Function) validatePutTimeoutsParameters(value *Cloudfunctions2FunctionTimeouts) error {
+	return nil
+}
+
+func validateCloudfunctions2Function_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package storagetransferagentpool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageTransferAgentPool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageTransferAgentPool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageTransferAgentPool) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_StorageTransferAgentPool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageTransferAgentPool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageTransferAgentPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_StorageTransferAgentPool) validatePutBandwidthLimitParameters
 }
 
 func (s *jsiiProxy_StorageTransferAgentPool) validatePutTimeoutsParameters(value *StorageTransferAgentPoolTimeouts) error {
+	return nil
+}
+
+func validateStorageTransferAgentPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

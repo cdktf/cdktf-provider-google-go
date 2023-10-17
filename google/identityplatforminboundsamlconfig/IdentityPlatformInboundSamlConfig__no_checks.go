@@ -7,6 +7,10 @@ package identityplatforminboundsamlconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IdentityPlatformInboundSamlConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformInboundSamlConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IdentityPlatformInboundSamlConfig) validateGetStringMapAttrib
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformInboundSamlConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformInboundSamlConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformInboundSamlConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (i *jsiiProxy_IdentityPlatformInboundSamlConfig) validatePutSpConfigParamet
 }
 
 func (i *jsiiProxy_IdentityPlatformInboundSamlConfig) validatePutTimeoutsParameters(value *IdentityPlatformInboundSamlConfigTimeouts) error {
+	return nil
+}
+
+func validateIdentityPlatformInboundSamlConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.dialogflowCxSecuritySettings.DialogflowCxSecuritySettings",
 		reflect.TypeOf((*DialogflowCxSecuritySettings)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "audioExportSettings", GoGetter: "AudioExportSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "audioExportSettingsInput", GoGetter: "AudioExportSettingsInput"},
@@ -40,6 +41,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "insightsExportSettings", GoGetter: "InsightsExportSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "insightsExportSettingsInput", GoGetter: "InsightsExportSettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "inspectTemplate", GoGetter: "InspectTemplate"},
@@ -48,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},

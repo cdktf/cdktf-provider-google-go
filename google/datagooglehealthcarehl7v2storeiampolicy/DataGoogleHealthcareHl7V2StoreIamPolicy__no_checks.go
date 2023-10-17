@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleHealthcareHl7V2StoreIamPolicy) validateOverrideLogi
 	return nil
 }
 
+func validateDataGoogleHealthcareHl7V2StoreIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleHealthcareHl7V2StoreIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

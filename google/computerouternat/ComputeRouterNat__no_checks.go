@@ -7,6 +7,10 @@ package computerouternat
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRouterNat) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRouterNat) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeRouterNat) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRouterNat) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRouterNat) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRouterNat) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (c *jsiiProxy_ComputeRouterNat) validatePutSubnetworkParameters(value inter
 }
 
 func (c *jsiiProxy_ComputeRouterNat) validatePutTimeoutsParameters(value *ComputeRouterNatTimeouts) error {
+	return nil
+}
+
+func validateComputeRouterNat_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

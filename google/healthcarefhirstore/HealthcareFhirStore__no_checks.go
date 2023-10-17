@@ -7,6 +7,10 @@ package healthcarefhirstore
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HealthcareFhirStore) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareFhirStore) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (h *jsiiProxy_HealthcareFhirStore) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareFhirStore) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareFhirStore) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareFhirStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (h *jsiiProxy_HealthcareFhirStore) validatePutStreamConfigsParameters(value
 }
 
 func (h *jsiiProxy_HealthcareFhirStore) validatePutTimeoutsParameters(value *HealthcareFhirStoreTimeouts) error {
+	return nil
+}
+
+func validateHealthcareFhirStore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

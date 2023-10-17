@@ -7,6 +7,10 @@ package apigeeenvironmentiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApigeeEnvironmentIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeEnvironmentIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApigeeEnvironmentIamMember) validateGetStringMapAttributePara
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeEnvironmentIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeEnvironmentIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeEnvironmentIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApigeeEnvironmentIamMember) validateOverrideLogicalIdParamete
 }
 
 func (a *jsiiProxy_ApigeeEnvironmentIamMember) validatePutConditionParameters(value *ApigeeEnvironmentIamMemberCondition) error {
+	return nil
+}
+
+func validateApigeeEnvironmentIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

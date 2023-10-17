@@ -7,6 +7,10 @@ package activedirectorydomaintrust
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ActiveDirectoryDomainTrust) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActiveDirectoryDomainTrust) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ActiveDirectoryDomainTrust) validateGetStringMapAttributePara
 	return nil
 }
 
+func (a *jsiiProxy_ActiveDirectoryDomainTrust) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ActiveDirectoryDomainTrust) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ActiveDirectoryDomainTrust) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ActiveDirectoryDomainTrust) validateOverrideLogicalIdParamete
 }
 
 func (a *jsiiProxy_ActiveDirectoryDomainTrust) validatePutTimeoutsParameters(value *ActiveDirectoryDomainTrustTimeouts) error {
+	return nil
+}
+
+func validateActiveDirectoryDomainTrust_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

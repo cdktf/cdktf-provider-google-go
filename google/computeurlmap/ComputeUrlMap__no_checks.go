@@ -7,6 +7,10 @@ package computeurlmap
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeUrlMap) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeUrlMap) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeUrlMap) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (c *jsiiProxy_ComputeUrlMap) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeUrlMap) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeUrlMap) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -80,6 +92,10 @@ func (c *jsiiProxy_ComputeUrlMap) validatePutTestParameters(value interface{}) e
 }
 
 func (c *jsiiProxy_ComputeUrlMap) validatePutTimeoutsParameters(value *ComputeUrlMapTimeouts) error {
+	return nil
+}
+
+func validateComputeUrlMap_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package databasemigrationserviceconnectionprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateGetStringM
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validatePutPostgre
 }
 
 func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validatePutTimeoutsParameters(value *DatabaseMigrationServiceConnectionProfileTimeouts) error {
+	return nil
+}
+
+func validateDatabaseMigrationServiceConnectionProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

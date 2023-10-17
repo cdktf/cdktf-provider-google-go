@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleBigqueryDefaultServiceAccount) validateOverrideLogi
 	return nil
 }
 
+func validateDataGoogleBigqueryDefaultServiceAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleBigqueryDefaultServiceAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.dataplexLake.DataplexLake",
 		reflect.TypeOf((*DataplexLake)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "assetStatus", GoGetter: "AssetStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -41,6 +42,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
@@ -50,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "metastore", GoGetter: "Metastore"},
 			_jsii_.MemberProperty{JsiiProperty: "metastoreInput", GoGetter: "MetastoreInput"},
 			_jsii_.MemberProperty{JsiiProperty: "metastoreStatus", GoGetter: "MetastoreStatus"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

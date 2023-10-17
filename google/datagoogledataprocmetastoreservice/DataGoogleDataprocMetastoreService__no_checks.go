@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreService) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataGoogleDataprocMetastoreService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleDataprocMetastoreService_IsConstructParameters(x interface{}) error {
 	return nil
 }

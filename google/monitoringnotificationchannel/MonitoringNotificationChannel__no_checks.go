@@ -7,6 +7,10 @@ package monitoringnotificationchannel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitoringNotificationChannel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringNotificationChannel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitoringNotificationChannel) validateGetStringMapAttributeP
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringNotificationChannel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringNotificationChannel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitoringNotificationChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MonitoringNotificationChannel) validatePutSensitiveLabelsPara
 }
 
 func (m *jsiiProxy_MonitoringNotificationChannel) validatePutTimeoutsParameters(value *MonitoringNotificationChannelTimeouts) error {
+	return nil
+}
+
+func validateMonitoringNotificationChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

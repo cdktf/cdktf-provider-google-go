@@ -7,6 +7,10 @@ package notebooksruntimeiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NotebooksRuntimeIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksRuntimeIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (n *jsiiProxy_NotebooksRuntimeIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksRuntimeIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (n *jsiiProxy_NotebooksRuntimeIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksRuntimeIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateNotebooksRuntimeIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

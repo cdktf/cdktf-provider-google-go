@@ -15,6 +15,10 @@ func (g *jsiiProxy_GoogleProvider) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func validateGoogleProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateGoogleProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

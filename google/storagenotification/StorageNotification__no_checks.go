@@ -7,6 +7,10 @@ package storagenotification
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageNotification) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageNotification) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_StorageNotification) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (s *jsiiProxy_StorageNotification) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageNotification) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_StorageNotification) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageNotification) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateStorageNotification_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleBigqueryTableIamPolicy) validateOverrideLogicalIdPa
 	return nil
 }
 
+func validateDataGoogleBigqueryTableIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleBigqueryTableIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

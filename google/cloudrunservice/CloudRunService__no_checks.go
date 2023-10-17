@@ -7,6 +7,10 @@ package cloudrunservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudRunService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudRunService) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudRunService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (c *jsiiProxy_CloudRunService) validatePutTimeoutsParameters(value *CloudRu
 }
 
 func (c *jsiiProxy_CloudRunService) validatePutTrafficParameters(value interface{}) error {
+	return nil
+}
+
+func validateCloudRunService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

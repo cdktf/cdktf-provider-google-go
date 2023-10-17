@@ -7,6 +7,10 @@ package dataprocjobiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataprocJobIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocJobIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataprocJobIamBinding) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (d *jsiiProxy_DataprocJobIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocJobIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocJobIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataprocJobIamBinding) validateOverrideLogicalIdParameters(ne
 }
 
 func (d *jsiiProxy_DataprocJobIamBinding) validatePutConditionParameters(value *DataprocJobIamBindingCondition) error {
+	return nil
+}
+
+func validateDataprocJobIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package vertexaidataset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VertexAiDataset) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiDataset) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VertexAiDataset) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiDataset) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiDataset) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiDataset) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (v *jsiiProxy_VertexAiDataset) validatePutEncryptionSpecParameters(value *V
 }
 
 func (v *jsiiProxy_VertexAiDataset) validatePutTimeoutsParameters(value *VertexAiDatasetTimeouts) error {
+	return nil
+}
+
+func validateVertexAiDataset_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

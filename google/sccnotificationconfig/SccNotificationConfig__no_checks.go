@@ -7,6 +7,10 @@ package sccnotificationconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SccNotificationConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccNotificationConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SccNotificationConfig) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (s *jsiiProxy_SccNotificationConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccNotificationConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccNotificationConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SccNotificationConfig) validatePutStreamingConfigParameters(v
 }
 
 func (s *jsiiProxy_SccNotificationConfig) validatePutTimeoutsParameters(value *SccNotificationConfigTimeouts) error {
+	return nil
+}
+
+func validateSccNotificationConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

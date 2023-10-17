@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleComposerImageVersions) validateOverrideLogicalIdPar
 	return nil
 }
 
+func validateDataGoogleComposerImageVersions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleComposerImageVersions_IsConstructParameters(x interface{}) error {
 	return nil
 }

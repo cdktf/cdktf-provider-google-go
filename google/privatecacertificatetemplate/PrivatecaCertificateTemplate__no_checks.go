@@ -7,6 +7,10 @@ package privatecacertificatetemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrivatecaCertificateTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCertificateTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) validateGetStringMapAttributePa
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCertificateTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCertificateTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivatecaCertificateTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (p *jsiiProxy_PrivatecaCertificateTemplate) validatePutPredefinedValuesPara
 }
 
 func (p *jsiiProxy_PrivatecaCertificateTemplate) validatePutTimeoutsParameters(value *PrivatecaCertificateTemplateTimeouts) error {
+	return nil
+}
+
+func validatePrivatecaCertificateTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

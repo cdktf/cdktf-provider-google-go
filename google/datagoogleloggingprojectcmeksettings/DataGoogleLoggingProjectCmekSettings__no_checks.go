@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleLoggingProjectCmekSettings) validateOverrideLogical
 	return nil
 }
 
+func validateDataGoogleLoggingProjectCmekSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleLoggingProjectCmekSettings_IsConstructParameters(x interface{}) error {
 	return nil
 }

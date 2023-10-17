@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleCertificateManagerCertificateMap) validateOverrideL
 	return nil
 }
 
+func validateDataGoogleCertificateManagerCertificateMap_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleCertificateManagerCertificateMap_IsConstructParameters(x interface{}) error {
 	return nil
 }

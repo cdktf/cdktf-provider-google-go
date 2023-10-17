@@ -7,6 +7,10 @@ package organizationiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrganizationIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OrganizationIamBinding) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (o *jsiiProxy_OrganizationIamBinding) validateOverrideLogicalIdParameters(n
 }
 
 func (o *jsiiProxy_OrganizationIamBinding) validatePutConditionParameters(value *OrganizationIamBindingCondition) error {
+	return nil
+}
+
+func validateOrganizationIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

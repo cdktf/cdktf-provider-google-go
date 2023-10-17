@@ -15,6 +15,7 @@ func init() {
 		reflect.TypeOf((*PrivatecaCertificateAuthority)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessUrls", GoGetter: "AccessUrls"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "certificateAuthorityId", GoGetter: "CertificateAuthorityId"},
@@ -49,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ignoreActiveCertificatesOnDeletion", GoGetter: "IgnoreActiveCertificatesOnDeletion"},
 			_jsii_.MemberProperty{JsiiProperty: "ignoreActiveCertificatesOnDeletionInput", GoGetter: "IgnoreActiveCertificatesOnDeletionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "keySpec", GoGetter: "KeySpec"},
 			_jsii_.MemberProperty{JsiiProperty: "keySpecInput", GoGetter: "KeySpecInput"},
@@ -59,6 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifetimeInput", GoGetter: "LifetimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},

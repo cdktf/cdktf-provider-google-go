@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager",
 		reflect.TypeOf((*ComputeInstanceGroupManager)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "autoHealingPolicies", GoGetter: "AutoHealingPolicies"},
 			_jsii_.MemberProperty{JsiiProperty: "autoHealingPoliciesInput", GoGetter: "AutoHealingPoliciesInput"},
@@ -41,6 +42,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceGroup", GoGetter: "InstanceGroup"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceLifecyclePolicy", GoGetter: "InstanceLifecyclePolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceLifecyclePolicyInput", GoGetter: "InstanceLifecyclePolicyInput"},
@@ -48,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "listManagedInstancesResults", GoGetter: "ListManagedInstancesResults"},
 			_jsii_.MemberProperty{JsiiProperty: "listManagedInstancesResultsInput", GoGetter: "ListManagedInstancesResultsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "namedPort", GoGetter: "NamedPort"},
 			_jsii_.MemberProperty{JsiiProperty: "namedPortInput", GoGetter: "NamedPortInput"},

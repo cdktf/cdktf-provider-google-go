@@ -7,6 +7,10 @@ package storagebucketaccesscontrol
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageBucketAccessControl) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucketAccessControl) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageBucketAccessControl) validateGetStringMapAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_StorageBucketAccessControl) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucketAccessControl) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageBucketAccessControl) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_StorageBucketAccessControl) validateOverrideLogicalIdParamete
 }
 
 func (s *jsiiProxy_StorageBucketAccessControl) validatePutTimeoutsParameters(value *StorageBucketAccessControlTimeouts) error {
+	return nil
+}
+
+func validateStorageBucketAccessControl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

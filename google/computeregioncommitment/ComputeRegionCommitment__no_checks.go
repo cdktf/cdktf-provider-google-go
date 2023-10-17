@@ -7,6 +7,10 @@ package computeregioncommitment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionCommitment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionCommitment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeRegionCommitment) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionCommitment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionCommitment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionCommitment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_ComputeRegionCommitment) validatePutResourcesParameters(value
 }
 
 func (c *jsiiProxy_ComputeRegionCommitment) validatePutTimeoutsParameters(value *ComputeRegionCommitmentTimeouts) error {
+	return nil
+}
+
+func validateComputeRegionCommitment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

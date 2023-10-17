@@ -7,6 +7,10 @@ package computepublicadvertisedprefix
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputePublicAdvertisedPrefix) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputePublicAdvertisedPrefix) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputePublicAdvertisedPrefix) validateGetStringMapAttributeP
 	return nil
 }
 
+func (c *jsiiProxy_ComputePublicAdvertisedPrefix) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputePublicAdvertisedPrefix) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputePublicAdvertisedPrefix) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ComputePublicAdvertisedPrefix) validateOverrideLogicalIdParam
 }
 
 func (c *jsiiProxy_ComputePublicAdvertisedPrefix) validatePutTimeoutsParameters(value *ComputePublicAdvertisedPrefixTimeouts) error {
+	return nil
+}
+
+func validateComputePublicAdvertisedPrefix_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

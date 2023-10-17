@@ -7,6 +7,10 @@ package appenginedomainmapping
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppEngineDomainMapping) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppEngineDomainMapping) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppEngineDomainMapping) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (a *jsiiProxy_AppEngineDomainMapping) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppEngineDomainMapping) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppEngineDomainMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_AppEngineDomainMapping) validatePutSslSettingsParameters(valu
 }
 
 func (a *jsiiProxy_AppEngineDomainMapping) validatePutTimeoutsParameters(value *AppEngineDomainMappingTimeouts) error {
+	return nil
+}
+
+func validateAppEngineDomainMapping_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

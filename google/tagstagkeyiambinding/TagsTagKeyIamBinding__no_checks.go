@@ -7,6 +7,10 @@ package tagstagkeyiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TagsTagKeyIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TagsTagKeyIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (t *jsiiProxy_TagsTagKeyIamBinding) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (t *jsiiProxy_TagsTagKeyIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TagsTagKeyIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TagsTagKeyIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (t *jsiiProxy_TagsTagKeyIamBinding) validateOverrideLogicalIdParameters(new
 }
 
 func (t *jsiiProxy_TagsTagKeyIamBinding) validatePutConditionParameters(value *TagsTagKeyIamBindingCondition) error {
+	return nil
+}
+
+func validateTagsTagKeyIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

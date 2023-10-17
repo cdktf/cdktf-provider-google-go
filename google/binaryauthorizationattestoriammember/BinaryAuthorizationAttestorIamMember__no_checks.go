@@ -7,6 +7,10 @@ package binaryauthorizationattestoriammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateGetStringMapAtt
 	return nil
 }
 
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) validateOverrideLogical
 }
 
 func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) validatePutConditionParameters(value *BinaryAuthorizationAttestorIamMemberCondition) error {
+	return nil
+}
+
+func validateBinaryAuthorizationAttestorIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

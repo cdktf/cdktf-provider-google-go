@@ -7,6 +7,10 @@ package pubsubsubscriptioniampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PubsubSubscriptionIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubSubscriptionIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (p *jsiiProxy_PubsubSubscriptionIamPolicy) validateGetStringMapAttributePar
 	return nil
 }
 
+func (p *jsiiProxy_PubsubSubscriptionIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubSubscriptionIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_PubsubSubscriptionIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubSubscriptionIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validatePubsubSubscriptionIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

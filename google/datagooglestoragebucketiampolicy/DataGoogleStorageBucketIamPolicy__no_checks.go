@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleStorageBucketIamPolicy) validateOverrideLogicalIdPa
 	return nil
 }
 
+func validateDataGoogleStorageBucketIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleStorageBucketIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

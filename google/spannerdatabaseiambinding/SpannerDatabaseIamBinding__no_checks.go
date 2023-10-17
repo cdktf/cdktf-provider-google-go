@@ -7,6 +7,10 @@ package spannerdatabaseiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpannerDatabaseIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpannerDatabaseIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SpannerDatabaseIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpannerDatabaseIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpannerDatabaseIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) validateOverrideLogicalIdParameter
 }
 
 func (s *jsiiProxy_SpannerDatabaseIamBinding) validatePutConditionParameters(value *SpannerDatabaseIamBindingCondition) error {
+	return nil
+}
+
+func validateSpannerDatabaseIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

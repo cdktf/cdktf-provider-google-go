@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunction",
 		reflect.TypeOf((*CloudfunctionsFunction)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "availableMemoryMb", GoGetter: "AvailableMemoryMb"},
 			_jsii_.MemberProperty{JsiiProperty: "availableMemoryMbInput", GoGetter: "AvailableMemoryMbInput"},
@@ -57,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "httpsTriggerUrlInput", GoGetter: "HttpsTriggerUrlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "ingressSettings", GoGetter: "IngressSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "ingressSettingsInput", GoGetter: "IngressSettingsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -69,6 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxInstancesInput", GoGetter: "MaxInstancesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minInstances", GoGetter: "MinInstances"},
 			_jsii_.MemberProperty{JsiiProperty: "minInstancesInput", GoGetter: "MinInstancesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

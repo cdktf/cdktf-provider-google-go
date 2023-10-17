@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig",
 		reflect.TypeOf((*OrganizationIamAuditConfig)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "auditLogConfig", GoGetter: "AuditLogConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "auditLogConfigInput", GoGetter: "AuditLogConfigInput"},
@@ -37,8 +38,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "orgId", GoGetter: "OrgId"},
 			_jsii_.MemberProperty{JsiiProperty: "orgIdInput", GoGetter: "OrgIdInput"},

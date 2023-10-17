@@ -7,6 +7,10 @@ package datalosspreventioninspecttemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataLossPreventionInspectTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionInspectTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplate) validateGetStringMapAttrib
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionInspectTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionInspectTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLossPreventionInspectTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplate) validatePutInspectConfigPa
 }
 
 func (d *jsiiProxy_DataLossPreventionInspectTemplate) validatePutTimeoutsParameters(value *DataLossPreventionInspectTemplateTimeouts) error {
+	return nil
+}
+
+func validateDataLossPreventionInspectTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

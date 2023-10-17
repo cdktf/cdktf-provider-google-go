@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleAlloydbSupportedDatabaseFlags) validateOverrideLogi
 	return nil
 }
 
+func validateDataGoogleAlloydbSupportedDatabaseFlags_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleAlloydbSupportedDatabaseFlags_IsConstructParameters(x interface{}) error {
 	return nil
 }

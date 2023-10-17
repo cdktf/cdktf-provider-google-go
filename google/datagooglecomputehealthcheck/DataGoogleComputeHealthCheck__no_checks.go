@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleComputeHealthCheck) validateOverrideLogicalIdParame
 	return nil
 }
 
+func validateDataGoogleComputeHealthCheck_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleComputeHealthCheck_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package storagetransferjob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageTransferJob) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageTransferJob) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageTransferJob) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_StorageTransferJob) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageTransferJob) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageTransferJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (s *jsiiProxy_StorageTransferJob) validatePutScheduleParameters(value *Stor
 }
 
 func (s *jsiiProxy_StorageTransferJob) validatePutTransferSpecParameters(value *StorageTransferJobTransferSpec) error {
+	return nil
+}
+
+func validateStorageTransferJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

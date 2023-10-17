@@ -7,6 +7,10 @@ package networkmanagementconnectivitytest
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkManagementConnectivityTest) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkManagementConnectivityTest) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) validateGetStringMapAttrib
 	return nil
 }
 
+func (n *jsiiProxy_NetworkManagementConnectivityTest) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkManagementConnectivityTest) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkManagementConnectivityTest) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) validatePutSourceParameter
 }
 
 func (n *jsiiProxy_NetworkManagementConnectivityTest) validatePutTimeoutsParameters(value *NetworkManagementConnectivityTestTimeouts) error {
+	return nil
+}
+
+func validateNetworkManagementConnectivityTest_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

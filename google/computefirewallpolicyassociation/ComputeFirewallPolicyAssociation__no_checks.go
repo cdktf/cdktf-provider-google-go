@@ -7,6 +7,10 @@ package computefirewallpolicyassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeFirewallPolicyAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeFirewallPolicyAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeFirewallPolicyAssociation) validateGetStringMapAttribu
 	return nil
 }
 
+func (c *jsiiProxy_ComputeFirewallPolicyAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeFirewallPolicyAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeFirewallPolicyAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ComputeFirewallPolicyAssociation) validateOverrideLogicalIdPa
 }
 
 func (c *jsiiProxy_ComputeFirewallPolicyAssociation) validatePutTimeoutsParameters(value *ComputeFirewallPolicyAssociationTimeouts) error {
+	return nil
+}
+
+func validateComputeFirewallPolicyAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

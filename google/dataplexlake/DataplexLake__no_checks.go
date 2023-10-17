@@ -7,6 +7,10 @@ package dataplexlake
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataplexLake) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexLake) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataplexLake) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (d *jsiiProxy_DataplexLake) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexLake) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplexLake) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataplexLake) validatePutMetastoreParameters(value *DataplexL
 }
 
 func (d *jsiiProxy_DataplexLake) validatePutTimeoutsParameters(value *DataplexLakeTimeouts) error {
+	return nil
+}
+
+func validateDataplexLake_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package bigqueryanalyticshubdataexchangeiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateGetString
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateOverrideL
 }
 
 func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validatePutConditionParameters(value *BigqueryAnalyticsHubDataExchangeIamBindingCondition) error {
+	return nil
+}
+
+func validateBigqueryAnalyticsHubDataExchangeIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

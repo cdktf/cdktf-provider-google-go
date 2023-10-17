@@ -7,6 +7,10 @@ package datacatalogpolicytagiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataCatalogPolicyTagIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogPolicyTagIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataCatalogPolicyTagIamMember) validateGetStringMapAttributeP
 	return nil
 }
 
+func (d *jsiiProxy_DataCatalogPolicyTagIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogPolicyTagIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCatalogPolicyTagIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataCatalogPolicyTagIamMember) validateOverrideLogicalIdParam
 }
 
 func (d *jsiiProxy_DataCatalogPolicyTagIamMember) validatePutConditionParameters(value *DataCatalogPolicyTagIamMemberCondition) error {
+	return nil
+}
+
+func validateDataCatalogPolicyTagIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

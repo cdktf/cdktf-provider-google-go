@@ -7,6 +7,10 @@ package secretmanagersecretversion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecretManagerSecretVersion) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretManagerSecretVersion) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SecretManagerSecretVersion) validateGetStringMapAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_SecretManagerSecretVersion) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretManagerSecretVersion) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecretManagerSecretVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SecretManagerSecretVersion) validateOverrideLogicalIdParamete
 }
 
 func (s *jsiiProxy_SecretManagerSecretVersion) validatePutTimeoutsParameters(value *SecretManagerSecretVersionTimeouts) error {
+	return nil
+}
+
+func validateSecretManagerSecretVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

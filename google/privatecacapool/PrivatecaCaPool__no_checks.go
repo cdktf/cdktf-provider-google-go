@@ -7,6 +7,10 @@ package privatecacapool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrivatecaCaPool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCaPool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PrivatecaCaPool) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCaPool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCaPool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivatecaCaPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (p *jsiiProxy_PrivatecaCaPool) validatePutPublishingOptionsParameters(value
 }
 
 func (p *jsiiProxy_PrivatecaCaPool) validatePutTimeoutsParameters(value *PrivatecaCaPoolTimeouts) error {
+	return nil
+}
+
+func validatePrivatecaCaPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

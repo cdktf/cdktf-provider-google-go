@@ -7,6 +7,10 @@ package datacatalogentrygroupiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataCatalogEntryGroupIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogEntryGroupIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataCatalogEntryGroupIamMember) validateGetStringMapAttribute
 	return nil
 }
 
+func (d *jsiiProxy_DataCatalogEntryGroupIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogEntryGroupIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCatalogEntryGroupIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataCatalogEntryGroupIamMember) validateOverrideLogicalIdPara
 }
 
 func (d *jsiiProxy_DataCatalogEntryGroupIamMember) validatePutConditionParameters(value *DataCatalogEntryGroupIamMemberCondition) error {
+	return nil
+}
+
+func validateDataCatalogEntryGroupIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

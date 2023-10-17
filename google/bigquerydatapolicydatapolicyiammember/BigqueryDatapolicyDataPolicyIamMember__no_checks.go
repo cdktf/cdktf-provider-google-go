@@ -7,6 +7,10 @@ package bigquerydatapolicydatapolicyiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamMember) validateGetStringMapAt
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamMember) validateOverrideLogica
 }
 
 func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamMember) validatePutConditionParameters(value *BigqueryDatapolicyDataPolicyIamMemberCondition) error {
+	return nil
+}
+
+func validateBigqueryDatapolicyDataPolicyIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

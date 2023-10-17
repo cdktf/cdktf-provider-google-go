@@ -7,6 +7,10 @@ package apigeesyncauthorization
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApigeeSyncAuthorization) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeSyncAuthorization) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApigeeSyncAuthorization) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeSyncAuthorization) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeSyncAuthorization) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeSyncAuthorization) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApigeeSyncAuthorization) validateOverrideLogicalIdParameters(
 }
 
 func (a *jsiiProxy_ApigeeSyncAuthorization) validatePutTimeoutsParameters(value *ApigeeSyncAuthorizationTimeouts) error {
+	return nil
+}
+
+func validateApigeeSyncAuthorization_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package cloudbuildworkerpool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudbuildWorkerPool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudbuildWorkerPool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudbuildWorkerPool) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (c *jsiiProxy_CloudbuildWorkerPool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudbuildWorkerPool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudbuildWorkerPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_CloudbuildWorkerPool) validatePutTimeoutsParameters(value *Cl
 }
 
 func (c *jsiiProxy_CloudbuildWorkerPool) validatePutWorkerConfigParameters(value *CloudbuildWorkerPoolWorkerConfig) error {
+	return nil
+}
+
+func validateCloudbuildWorkerPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleMonitoringAppEngineService) validateOverrideLogical
 	return nil
 }
 
+func validateDataGoogleMonitoringAppEngineService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleMonitoringAppEngineService_IsConstructParameters(x interface{}) error {
 	return nil
 }

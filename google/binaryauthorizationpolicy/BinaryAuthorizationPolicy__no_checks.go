@@ -7,6 +7,10 @@ package binaryauthorizationpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BinaryAuthorizationPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BinaryAuthorizationPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (b *jsiiProxy_BinaryAuthorizationPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BinaryAuthorizationPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BinaryAuthorizationPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) validatePutDefaultAdmissionRulePar
 }
 
 func (b *jsiiProxy_BinaryAuthorizationPolicy) validatePutTimeoutsParameters(value *BinaryAuthorizationPolicyTimeouts) error {
+	return nil
+}
+
+func validateBinaryAuthorizationPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

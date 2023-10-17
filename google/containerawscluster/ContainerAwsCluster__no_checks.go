@@ -7,6 +7,10 @@ package containerawscluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerAwsCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAwsCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ContainerAwsCluster) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAwsCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAwsCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAwsCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (c *jsiiProxy_ContainerAwsCluster) validatePutNetworkingParameters(value *C
 }
 
 func (c *jsiiProxy_ContainerAwsCluster) validatePutTimeoutsParameters(value *ContainerAwsClusterTimeouts) error {
+	return nil
+}
+
+func validateContainerAwsCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

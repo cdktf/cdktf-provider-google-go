@@ -7,6 +7,10 @@ package monitoringmetricdescriptor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitoringMetricDescriptor) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringMetricDescriptor) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitoringMetricDescriptor) validateGetStringMapAttributePara
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringMetricDescriptor) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringMetricDescriptor) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitoringMetricDescriptor) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (m *jsiiProxy_MonitoringMetricDescriptor) validatePutMetadataParameters(val
 }
 
 func (m *jsiiProxy_MonitoringMetricDescriptor) validatePutTimeoutsParameters(value *MonitoringMetricDescriptorTimeouts) error {
+	return nil
+}
+
+func validateMonitoringMetricDescriptor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

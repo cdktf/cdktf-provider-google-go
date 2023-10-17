@@ -7,6 +7,10 @@ package computevpntunnel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeVpnTunnel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeVpnTunnel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeVpnTunnel) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (c *jsiiProxy_ComputeVpnTunnel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeVpnTunnel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeVpnTunnel) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ComputeVpnTunnel) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (c *jsiiProxy_ComputeVpnTunnel) validatePutTimeoutsParameters(value *ComputeVpnTunnelTimeouts) error {
+	return nil
+}
+
+func validateComputeVpnTunnel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

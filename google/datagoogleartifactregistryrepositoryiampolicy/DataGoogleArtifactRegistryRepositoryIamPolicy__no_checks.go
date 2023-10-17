@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryRepositoryIamPolicy) validateOverri
 	return nil
 }
 
+func validateDataGoogleArtifactRegistryRepositoryIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleArtifactRegistryRepositoryIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

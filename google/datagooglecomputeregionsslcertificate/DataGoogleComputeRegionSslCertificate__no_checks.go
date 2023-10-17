@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleComputeRegionSslCertificate) validateOverrideLogica
 	return nil
 }
 
+func validateDataGoogleComputeRegionSslCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleComputeRegionSslCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }

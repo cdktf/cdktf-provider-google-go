@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroup) validateOverrideLogical
 	return nil
 }
 
+func validateDataGoogleComputeRegionInstanceGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleComputeRegionInstanceGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package dataplexassetiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataplexAssetIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexAssetIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataplexAssetIamMember) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataplexAssetIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexAssetIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplexAssetIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataplexAssetIamMember) validateOverrideLogicalIdParameters(n
 }
 
 func (d *jsiiProxy_DataplexAssetIamMember) validatePutConditionParameters(value *DataplexAssetIamMemberCondition) error {
+	return nil
+}
+
+func validateDataplexAssetIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package dataflowjob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataflowJob) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataflowJob) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataflowJob) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (d *jsiiProxy_DataflowJob) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataflowJob) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataflowJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataflowJob) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (d *jsiiProxy_DataflowJob) validatePutTimeoutsParameters(value *DataflowJobTimeouts) error {
+	return nil
+}
+
+func validateDataflowJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

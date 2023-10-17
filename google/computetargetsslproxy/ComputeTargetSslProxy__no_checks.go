@@ -7,6 +7,10 @@ package computetargetsslproxy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeTargetSslProxy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeTargetSslProxy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeTargetSslProxy) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_ComputeTargetSslProxy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeTargetSslProxy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeTargetSslProxy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ComputeTargetSslProxy) validateOverrideLogicalIdParameters(ne
 }
 
 func (c *jsiiProxy_ComputeTargetSslProxy) validatePutTimeoutsParameters(value *ComputeTargetSslProxyTimeouts) error {
+	return nil
+}
+
+func validateComputeTargetSslProxy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

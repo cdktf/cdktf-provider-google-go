@@ -7,6 +7,10 @@ package datacatalogtaxonomyiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataCatalogTaxonomyIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogTaxonomyIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataCatalogTaxonomyIamMember) validateGetStringMapAttributePa
 	return nil
 }
 
+func (d *jsiiProxy_DataCatalogTaxonomyIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogTaxonomyIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCatalogTaxonomyIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataCatalogTaxonomyIamMember) validateOverrideLogicalIdParame
 }
 
 func (d *jsiiProxy_DataCatalogTaxonomyIamMember) validatePutConditionParameters(value *DataCatalogTaxonomyIamMemberCondition) error {
+	return nil
+}
+
+func validateDataCatalogTaxonomyIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

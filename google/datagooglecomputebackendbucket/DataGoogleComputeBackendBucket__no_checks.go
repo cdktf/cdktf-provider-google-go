@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucket) validateOverrideLogicalIdPara
 	return nil
 }
 
+func validateDataGoogleComputeBackendBucket_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleComputeBackendBucket_IsConstructParameters(x interface{}) error {
 	return nil
 }

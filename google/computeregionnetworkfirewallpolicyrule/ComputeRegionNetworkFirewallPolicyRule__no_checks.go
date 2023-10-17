@@ -7,6 +7,10 @@ package computeregionnetworkfirewallpolicyrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateGetStringMapA
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validatePutTargetSecu
 }
 
 func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) validatePutTimeoutsParameters(value *ComputeRegionNetworkFirewallPolicyRuleTimeouts) error {
+	return nil
+}
+
+func validateComputeRegionNetworkFirewallPolicyRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

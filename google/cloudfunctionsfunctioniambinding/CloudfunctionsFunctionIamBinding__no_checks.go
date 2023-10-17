@@ -7,6 +7,10 @@ package cloudfunctionsfunctioniambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudfunctionsFunctionIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfunctionsFunctionIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudfunctionsFunctionIamBinding) validateGetStringMapAttribu
 	return nil
 }
 
+func (c *jsiiProxy_CloudfunctionsFunctionIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfunctionsFunctionIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfunctionsFunctionIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CloudfunctionsFunctionIamBinding) validateOverrideLogicalIdPa
 }
 
 func (c *jsiiProxy_CloudfunctionsFunctionIamBinding) validatePutConditionParameters(value *CloudfunctionsFunctionIamBindingCondition) error {
+	return nil
+}
+
+func validateCloudfunctionsFunctionIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

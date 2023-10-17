@@ -5,10 +5,10 @@ package identityplatformtenantinboundsamlconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/identityplatformtenantinboundsamlconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/identityplatformtenantinboundsamlconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -85,6 +85,9 @@ type IdentityPlatformTenantInboundSamlConfig interface {
 	TerraformResourceType() *string
 	Timeouts() IdentityPlatformTenantInboundSamlConfigTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -106,7 +109,12 @@ type IdentityPlatformTenantInboundSamlConfig interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -639,6 +647,25 @@ func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfig)SetTenant(val *string
 	)
 }
 
+// Generates CDKTF code for importing a IdentityPlatformTenantInboundSamlConfig resource upon running "cdktf plan <stack-name>".
+func IdentityPlatformTenantInboundSamlConfig_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateIdentityPlatformTenantInboundSamlConfig_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfig",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -721,6 +748,17 @@ func IdentityPlatformTenantInboundSamlConfig_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) AddMoveTarget(moveTarget *string) {
+	if err := i.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) AddOverride(path *string, value interface{}) {
@@ -878,6 +916,17 @@ func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) GetStringMapAttribut
 	return returns
 }
 
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := i.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -892,6 +941,17 @@ func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) InterpolationForAttr
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) MoveTo(moveTarget *string, index interface{}) {
+	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) OverrideLogicalId(newLogicalId *string) {

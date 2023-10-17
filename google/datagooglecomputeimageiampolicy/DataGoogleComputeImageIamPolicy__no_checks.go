@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleComputeImageIamPolicy) validateOverrideLogicalIdPar
 	return nil
 }
 
+func validateDataGoogleComputeImageIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleComputeImageIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

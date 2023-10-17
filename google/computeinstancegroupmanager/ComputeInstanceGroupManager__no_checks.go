@@ -7,6 +7,10 @@ package computeinstancegroupmanager
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupManager) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) validateGetStringMapAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupManager) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceGroupManager) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -88,6 +100,10 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutUpdatePolicyParameter
 }
 
 func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutVersionParameters(value interface{}) error {
+	return nil
+}
+
+func validateComputeInstanceGroupManager_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

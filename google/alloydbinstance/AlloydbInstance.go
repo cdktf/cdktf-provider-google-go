@@ -5,10 +5,10 @@ package alloydbinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/alloydbinstance/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/alloydbinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -109,6 +109,9 @@ type AlloydbInstance interface {
 	TimeoutsInput() interface{}
 	Uid() *string
 	UpdateTime() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -130,7 +133,12 @@ type AlloydbInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -915,6 +923,25 @@ func (j *jsiiProxy_AlloydbInstance)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a AlloydbInstance resource upon running "cdktf plan <stack-name>".
+func AlloydbInstance_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateAlloydbInstance_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstance",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -997,6 +1024,17 @@ func AlloydbInstance_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (a *jsiiProxy_AlloydbInstance) AddMoveTarget(moveTarget *string) {
+	if err := a.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (a *jsiiProxy_AlloydbInstance) AddOverride(path *string, value interface{}) {
@@ -1154,6 +1192,17 @@ func (a *jsiiProxy_AlloydbInstance) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (a *jsiiProxy_AlloydbInstance) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := a.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (a *jsiiProxy_AlloydbInstance) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1168,6 +1217,17 @@ func (a *jsiiProxy_AlloydbInstance) InterpolationForAttribute(terraformAttribute
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AlloydbInstance) MoveTo(moveTarget *string, index interface{}) {
+	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (a *jsiiProxy_AlloydbInstance) OverrideLogicalId(newLogicalId *string) {

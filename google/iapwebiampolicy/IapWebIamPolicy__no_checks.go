@@ -7,6 +7,10 @@ package iapwebiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IapWebIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapWebIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IapWebIamPolicy) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (i *jsiiProxy_IapWebIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapWebIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IapWebIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapWebIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIapWebIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

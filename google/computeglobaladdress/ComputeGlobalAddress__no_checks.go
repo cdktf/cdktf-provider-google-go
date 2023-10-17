@@ -7,6 +7,10 @@ package computeglobaladdress
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeGlobalAddress) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeGlobalAddress) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeGlobalAddress) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (c *jsiiProxy_ComputeGlobalAddress) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeGlobalAddress) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeGlobalAddress) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ComputeGlobalAddress) validateOverrideLogicalIdParameters(new
 }
 
 func (c *jsiiProxy_ComputeGlobalAddress) validatePutTimeoutsParameters(value *ComputeGlobalAddressTimeouts) error {
+	return nil
+}
+
+func validateComputeGlobalAddress_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

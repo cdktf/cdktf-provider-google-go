@@ -7,6 +7,10 @@ package computeinstanceiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeInstanceIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeInstanceIamBinding) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ComputeInstanceIamBinding) validateOverrideLogicalIdParameter
 }
 
 func (c *jsiiProxy_ComputeInstanceIamBinding) validatePutConditionParameters(value *ComputeInstanceIamBindingCondition) error {
+	return nil
+}
+
+func validateComputeInstanceIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

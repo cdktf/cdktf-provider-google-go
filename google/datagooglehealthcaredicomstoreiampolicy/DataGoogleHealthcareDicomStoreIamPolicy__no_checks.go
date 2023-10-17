@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleHealthcareDicomStoreIamPolicy) validateOverrideLogi
 	return nil
 }
 
+func validateDataGoogleHealthcareDicomStoreIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleHealthcareDicomStoreIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

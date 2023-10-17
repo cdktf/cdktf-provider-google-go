@@ -7,6 +7,10 @@ package healthcarefhirstoreiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HealthcareFhirStoreIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareFhirStoreIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (h *jsiiProxy_HealthcareFhirStoreIamMember) validateGetStringMapAttributePa
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareFhirStoreIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareFhirStoreIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareFhirStoreIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (h *jsiiProxy_HealthcareFhirStoreIamMember) validateOverrideLogicalIdParame
 }
 
 func (h *jsiiProxy_HealthcareFhirStoreIamMember) validatePutConditionParameters(value *HealthcareFhirStoreIamMemberCondition) error {
+	return nil
+}
+
+func validateHealthcareFhirStoreIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

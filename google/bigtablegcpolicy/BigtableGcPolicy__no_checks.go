@@ -7,6 +7,10 @@ package bigtablegcpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigtableGcPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableGcPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BigtableGcPolicy) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (b *jsiiProxy_BigtableGcPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableGcPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableGcPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (b *jsiiProxy_BigtableGcPolicy) validatePutMaxVersionParameters(value inter
 }
 
 func (b *jsiiProxy_BigtableGcPolicy) validatePutTimeoutsParameters(value *BigtableGcPolicyTimeouts) error {
+	return nil
+}
+
+func validateBigtableGcPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

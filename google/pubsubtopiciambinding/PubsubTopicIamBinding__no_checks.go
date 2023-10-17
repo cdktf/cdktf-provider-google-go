@@ -7,6 +7,10 @@ package pubsubtopiciambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PubsubTopicIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubTopicIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PubsubTopicIamBinding) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (p *jsiiProxy_PubsubTopicIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubTopicIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubTopicIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PubsubTopicIamBinding) validateOverrideLogicalIdParameters(ne
 }
 
 func (p *jsiiProxy_PubsubTopicIamBinding) validatePutConditionParameters(value *PubsubTopicIamBindingCondition) error {
+	return nil
+}
+
+func validatePubsubTopicIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

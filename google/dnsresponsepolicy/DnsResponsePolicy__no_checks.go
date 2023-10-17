@@ -7,6 +7,10 @@ package dnsresponsepolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DnsResponsePolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsResponsePolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DnsResponsePolicy) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (d *jsiiProxy_DnsResponsePolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsResponsePolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DnsResponsePolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (d *jsiiProxy_DnsResponsePolicy) validatePutNetworksParameters(value interf
 }
 
 func (d *jsiiProxy_DnsResponsePolicy) validatePutTimeoutsParameters(value *DnsResponsePolicyTimeouts) error {
+	return nil
+}
+
+func validateDnsResponsePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

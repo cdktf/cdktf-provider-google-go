@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleComposerEnvironment) validateOverrideLogicalIdParam
 	return nil
 }
 
+func validateDataGoogleComposerEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleComposerEnvironment_IsConstructParameters(x interface{}) error {
 	return nil
 }

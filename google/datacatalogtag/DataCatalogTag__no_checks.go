@@ -7,6 +7,10 @@ package datacatalogtag
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataCatalogTag) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogTag) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataCatalogTag) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (d *jsiiProxy_DataCatalogTag) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogTag) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCatalogTag) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataCatalogTag) validatePutFieldsParameters(value interface{}
 }
 
 func (d *jsiiProxy_DataCatalogTag) validatePutTimeoutsParameters(value *DataCatalogTagTimeouts) error {
+	return nil
+}
+
+func validateDataCatalogTag_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

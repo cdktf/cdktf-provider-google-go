@@ -7,6 +7,10 @@ package bigqueryconnectioniammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigqueryConnectionIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryConnectionIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BigqueryConnectionIamMember) validateGetStringMapAttributePar
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryConnectionIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryConnectionIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryConnectionIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BigqueryConnectionIamMember) validateOverrideLogicalIdParamet
 }
 
 func (b *jsiiProxy_BigqueryConnectionIamMember) validatePutConditionParameters(value *BigqueryConnectionIamMemberCondition) error {
+	return nil
+}
+
+func validateBigqueryConnectionIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

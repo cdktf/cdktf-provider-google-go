@@ -7,6 +7,10 @@ package endpointsserviceconsumersiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EndpointsServiceConsumersIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EndpointsServiceConsumersIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_EndpointsServiceConsumersIamPolicy) validateGetStringMapAttri
 	return nil
 }
 
+func (e *jsiiProxy_EndpointsServiceConsumersIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EndpointsServiceConsumersIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_EndpointsServiceConsumersIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EndpointsServiceConsumersIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEndpointsServiceConsumersIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package iamworkforcepoolprovider
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IamWorkforcePoolProvider) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamWorkforcePoolProvider) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IamWorkforcePoolProvider) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (i *jsiiProxy_IamWorkforcePoolProvider) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamWorkforcePoolProvider) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamWorkforcePoolProvider) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (i *jsiiProxy_IamWorkforcePoolProvider) validatePutSamlParameters(value *Ia
 }
 
 func (i *jsiiProxy_IamWorkforcePoolProvider) validatePutTimeoutsParameters(value *IamWorkforcePoolProviderTimeouts) error {
+	return nil
+}
+
+func validateIamWorkforcePoolProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package computebackendservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeBackendService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeBackendService) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeBackendService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -92,6 +104,10 @@ func (c *jsiiProxy_ComputeBackendService) validatePutSecuritySettingsParameters(
 }
 
 func (c *jsiiProxy_ComputeBackendService) validatePutTimeoutsParameters(value *ComputeBackendServiceTimeouts) error {
+	return nil
+}
+
+func validateComputeBackendService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

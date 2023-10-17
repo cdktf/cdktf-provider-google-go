@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleSpannerInstanceIamPolicy) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataGoogleSpannerInstanceIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleSpannerInstanceIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

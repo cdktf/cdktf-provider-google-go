@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleFolders) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func validateDataGoogleFolders_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleFolders_IsConstructParameters(x interface{}) error {
 	return nil
 }

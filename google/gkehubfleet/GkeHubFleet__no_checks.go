@@ -7,6 +7,10 @@ package gkehubfleet
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GkeHubFleet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubFleet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GkeHubFleet) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (g *jsiiProxy_GkeHubFleet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubFleet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeHubFleet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GkeHubFleet) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (g *jsiiProxy_GkeHubFleet) validatePutTimeoutsParameters(value *GkeHubFleetTimeouts) error {
+	return nil
+}
+
+func validateGkeHubFleet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

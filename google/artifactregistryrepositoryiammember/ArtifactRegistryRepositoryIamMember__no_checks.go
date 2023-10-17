@@ -7,6 +7,10 @@ package artifactregistryrepositoryiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) validateGetStringMapAttr
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) validateOverrideLogicalI
 }
 
 func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) validatePutConditionParameters(value *ArtifactRegistryRepositoryIamMemberCondition) error {
+	return nil
+}
+
+func validateArtifactRegistryRepositoryIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

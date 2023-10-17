@@ -7,6 +7,10 @@ package computeroute
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRoute) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRoute) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeRoute) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRoute) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRoute) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ComputeRoute) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (c *jsiiProxy_ComputeRoute) validatePutTimeoutsParameters(value *ComputeRouteTimeouts) error {
+	return nil
+}
+
+func validateComputeRoute_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

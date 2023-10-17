@@ -5,10 +5,10 @@ package endpointsservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/endpointsservice/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/endpointsservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -85,6 +85,9 @@ type EndpointsService interface {
 	TerraformResourceType() *string
 	Timeouts() EndpointsServiceTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -106,7 +109,12 @@ type EndpointsService interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -639,6 +647,25 @@ func (j *jsiiProxy_EndpointsService)SetServiceName(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a EndpointsService resource upon running "cdktf plan <stack-name>".
+func EndpointsService_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateEndpointsService_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.endpointsService.EndpointsService",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -721,6 +748,17 @@ func EndpointsService_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (e *jsiiProxy_EndpointsService) AddMoveTarget(moveTarget *string) {
+	if err := e.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (e *jsiiProxy_EndpointsService) AddOverride(path *string, value interface{}) {
@@ -878,6 +916,17 @@ func (e *jsiiProxy_EndpointsService) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
+func (e *jsiiProxy_EndpointsService) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := e.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (e *jsiiProxy_EndpointsService) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -892,6 +941,17 @@ func (e *jsiiProxy_EndpointsService) InterpolationForAttribute(terraformAttribut
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_EndpointsService) MoveTo(moveTarget *string, index interface{}) {
+	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (e *jsiiProxy_EndpointsService) OverrideLogicalId(newLogicalId *string) {

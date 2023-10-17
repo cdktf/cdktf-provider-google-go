@@ -7,6 +7,10 @@ package bigquerydatasetiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigqueryDatasetIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDatasetIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (b *jsiiProxy_BigqueryDatasetIamPolicy) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryDatasetIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDatasetIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryDatasetIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDatasetIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateBigqueryDatasetIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

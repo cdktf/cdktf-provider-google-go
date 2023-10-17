@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleMonitoringUptimeCheckIps) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataGoogleMonitoringUptimeCheckIps_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleMonitoringUptimeCheckIps_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package artifactregistryrepositoryiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamPolicy) validateGetStringMapAttr
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateArtifactRegistryRepositoryIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleCloudTasksQueueIamPolicy) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataGoogleCloudTasksQueueIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleCloudTasksQueueIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

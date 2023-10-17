@@ -7,6 +7,10 @@ package computereservation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeReservation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeReservation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeReservation) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (c *jsiiProxy_ComputeReservation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeReservation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeReservation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_ComputeReservation) validatePutSpecificReservationParameters(
 }
 
 func (c *jsiiProxy_ComputeReservation) validatePutTimeoutsParameters(value *ComputeReservationTimeouts) error {
+	return nil
+}
+
+func validateComputeReservation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

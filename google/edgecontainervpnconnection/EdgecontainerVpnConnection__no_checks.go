@@ -7,6 +7,10 @@ package edgecontainervpnconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EdgecontainerVpnConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EdgecontainerVpnConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) validateGetStringMapAttributePara
 	return nil
 }
 
+func (e *jsiiProxy_EdgecontainerVpnConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EdgecontainerVpnConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EdgecontainerVpnConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) validatePutTimeoutsParameters(val
 }
 
 func (e *jsiiProxy_EdgecontainerVpnConnection) validatePutVpcProjectParameters(value *EdgecontainerVpnConnectionVpcProject) error {
+	return nil
+}
+
+func validateEdgecontainerVpnConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

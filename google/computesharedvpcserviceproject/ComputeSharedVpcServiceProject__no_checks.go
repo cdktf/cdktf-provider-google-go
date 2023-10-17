@@ -7,6 +7,10 @@ package computesharedvpcserviceproject
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeSharedVpcServiceProject) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSharedVpcServiceProject) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) validateGetStringMapAttribute
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSharedVpcServiceProject) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSharedVpcServiceProject) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSharedVpcServiceProject) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ComputeSharedVpcServiceProject) validateOverrideLogicalIdPara
 }
 
 func (c *jsiiProxy_ComputeSharedVpcServiceProject) validatePutTimeoutsParameters(value *ComputeSharedVpcServiceProjectTimeouts) error {
+	return nil
+}
+
+func validateComputeSharedVpcServiceProject_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

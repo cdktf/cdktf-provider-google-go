@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleComputeDisk) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataGoogleComputeDisk_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleComputeDisk_IsConstructParameters(x interface{}) error {
 	return nil
 }

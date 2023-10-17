@@ -5,10 +5,10 @@ package apigeeenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/apigeeenvironment/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/apigeeenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -86,6 +86,9 @@ type ApigeeEnvironment interface {
 	TerraformResourceType() *string
 	Timeouts() ApigeeEnvironmentTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -107,7 +110,12 @@ type ApigeeEnvironment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -653,6 +661,25 @@ func (j *jsiiProxy_ApigeeEnvironment)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a ApigeeEnvironment resource upon running "cdktf plan <stack-name>".
+func ApigeeEnvironment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateApigeeEnvironment_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.apigeeEnvironment.ApigeeEnvironment",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -735,6 +762,17 @@ func ApigeeEnvironment_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (a *jsiiProxy_ApigeeEnvironment) AddMoveTarget(moveTarget *string) {
+	if err := a.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (a *jsiiProxy_ApigeeEnvironment) AddOverride(path *string, value interface{}) {
@@ -892,6 +930,17 @@ func (a *jsiiProxy_ApigeeEnvironment) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (a *jsiiProxy_ApigeeEnvironment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := a.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (a *jsiiProxy_ApigeeEnvironment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -906,6 +955,17 @@ func (a *jsiiProxy_ApigeeEnvironment) InterpolationForAttribute(terraformAttribu
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_ApigeeEnvironment) MoveTo(moveTarget *string, index interface{}) {
+	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (a *jsiiProxy_ApigeeEnvironment) OverrideLogicalId(newLogicalId *string) {

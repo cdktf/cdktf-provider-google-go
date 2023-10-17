@@ -7,6 +7,10 @@ package apigeeinstanceattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApigeeInstanceAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeInstanceAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApigeeInstanceAttachment) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeInstanceAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeInstanceAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeInstanceAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApigeeInstanceAttachment) validateOverrideLogicalIdParameters
 }
 
 func (a *jsiiProxy_ApigeeInstanceAttachment) validatePutTimeoutsParameters(value *ApigeeInstanceAttachmentTimeouts) error {
+	return nil
+}
+
+func validateApigeeInstanceAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

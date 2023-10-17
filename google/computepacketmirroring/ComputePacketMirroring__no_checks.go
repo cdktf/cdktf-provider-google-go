@@ -7,6 +7,10 @@ package computepacketmirroring
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputePacketMirroring) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputePacketMirroring) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputePacketMirroring) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_ComputePacketMirroring) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputePacketMirroring) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputePacketMirroring) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (c *jsiiProxy_ComputePacketMirroring) validatePutNetworkParameters(value *C
 }
 
 func (c *jsiiProxy_ComputePacketMirroring) validatePutTimeoutsParameters(value *ComputePacketMirroringTimeouts) error {
+	return nil
+}
+
+func validateComputePacketMirroring_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

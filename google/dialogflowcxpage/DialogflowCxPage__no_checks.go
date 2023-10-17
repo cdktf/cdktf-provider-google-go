@@ -7,6 +7,10 @@ package dialogflowcxpage
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DialogflowCxPage) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxPage) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DialogflowCxPage) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxPage) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxPage) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxPage) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (d *jsiiProxy_DialogflowCxPage) validatePutTimeoutsParameters(value *Dialog
 }
 
 func (d *jsiiProxy_DialogflowCxPage) validatePutTransitionRoutesParameters(value interface{}) error {
+	return nil
+}
+
+func validateDialogflowCxPage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

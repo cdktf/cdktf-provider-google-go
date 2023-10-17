@@ -7,6 +7,10 @@ package computefirewallpolicyrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeFirewallPolicyRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeFirewallPolicyRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeFirewallPolicyRule) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_ComputeFirewallPolicyRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeFirewallPolicyRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeFirewallPolicyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_ComputeFirewallPolicyRule) validatePutMatchParameters(value *
 }
 
 func (c *jsiiProxy_ComputeFirewallPolicyRule) validatePutTimeoutsParameters(value *ComputeFirewallPolicyRuleTimeouts) error {
+	return nil
+}
+
+func validateComputeFirewallPolicyRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

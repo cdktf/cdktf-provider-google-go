@@ -7,6 +7,10 @@ package containerazurecluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerAzureCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAzureCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ContainerAzureCluster) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAzureCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAzureCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAzureCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (c *jsiiProxy_ContainerAzureCluster) validatePutNetworkingParameters(value 
 }
 
 func (c *jsiiProxy_ContainerAzureCluster) validatePutTimeoutsParameters(value *ContainerAzureClusterTimeouts) error {
+	return nil
+}
+
+func validateContainerAzureCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package computeserviceattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeServiceAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeServiceAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeServiceAttachment) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_ComputeServiceAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeServiceAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeServiceAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_ComputeServiceAttachment) validatePutConsumerAcceptListsParam
 }
 
 func (c *jsiiProxy_ComputeServiceAttachment) validatePutTimeoutsParameters(value *ComputeServiceAttachmentTimeouts) error {
+	return nil
+}
+
+func validateComputeServiceAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

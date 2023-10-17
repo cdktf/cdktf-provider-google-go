@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleVertexAiIndex) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func validateDataGoogleVertexAiIndex_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleVertexAiIndex_IsConstructParameters(x interface{}) error {
 	return nil
 }

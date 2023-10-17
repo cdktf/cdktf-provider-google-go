@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.edgecontainerCluster.EdgecontainerCluster",
 		reflect.TypeOf((*EdgecontainerCluster)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "authorization", GoGetter: "Authorization"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizationInput", GoGetter: "AuthorizationInput"},
@@ -51,6 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
@@ -60,6 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceEvents", GoGetter: "MaintenanceEvents"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenancePolicy", GoGetter: "MaintenancePolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenancePolicyInput", GoGetter: "MaintenancePolicyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "networking", GoGetter: "Networking"},

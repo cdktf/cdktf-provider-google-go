@@ -7,6 +7,10 @@ package projectiamcustomrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProjectIamCustomRole) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectIamCustomRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (p *jsiiProxy_ProjectIamCustomRole) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (p *jsiiProxy_ProjectIamCustomRole) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectIamCustomRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_ProjectIamCustomRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectIamCustomRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateProjectIamCustomRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

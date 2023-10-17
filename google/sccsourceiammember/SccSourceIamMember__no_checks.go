@@ -7,6 +7,10 @@ package sccsourceiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SccSourceIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccSourceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SccSourceIamMember) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_SccSourceIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccSourceIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccSourceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SccSourceIamMember) validateOverrideLogicalIdParameters(newLo
 }
 
 func (s *jsiiProxy_SccSourceIamMember) validatePutConditionParameters(value *SccSourceIamMemberCondition) error {
+	return nil
+}
+
+func validateSccSourceIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

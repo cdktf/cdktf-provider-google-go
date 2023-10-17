@@ -7,6 +7,10 @@ package dataplexlakeiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataplexLakeIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexLakeIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataplexLakeIamBinding) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataplexLakeIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexLakeIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplexLakeIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataplexLakeIamBinding) validateOverrideLogicalIdParameters(n
 }
 
 func (d *jsiiProxy_DataplexLakeIamBinding) validatePutConditionParameters(value *DataplexLakeIamBindingCondition) error {
+	return nil
+}
+
+func validateDataplexLakeIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

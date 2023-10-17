@@ -5,10 +5,10 @@ package sqlsslcert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/sqlsslcert/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/sqlsslcert/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -82,6 +82,9 @@ type SqlSslCert interface {
 	TerraformResourceType() *string
 	Timeouts() SqlSslCertTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -103,7 +106,12 @@ type SqlSslCert interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -601,6 +609,25 @@ func (j *jsiiProxy_SqlSslCert)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a SqlSslCert resource upon running "cdktf plan <stack-name>".
+func SqlSslCert_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateSqlSslCert_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.sqlSslCert.SqlSslCert",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -683,6 +710,17 @@ func SqlSslCert_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (s *jsiiProxy_SqlSslCert) AddMoveTarget(moveTarget *string) {
+	if err := s.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (s *jsiiProxy_SqlSslCert) AddOverride(path *string, value interface{}) {
@@ -840,6 +878,17 @@ func (s *jsiiProxy_SqlSslCert) GetStringMapAttribute(terraformAttribute *string)
 	return returns
 }
 
+func (s *jsiiProxy_SqlSslCert) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := s.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (s *jsiiProxy_SqlSslCert) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -854,6 +903,17 @@ func (s *jsiiProxy_SqlSslCert) InterpolationForAttribute(terraformAttribute *str
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SqlSslCert) MoveTo(moveTarget *string, index interface{}) {
+	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (s *jsiiProxy_SqlSslCert) OverrideLogicalId(newLogicalId *string) {

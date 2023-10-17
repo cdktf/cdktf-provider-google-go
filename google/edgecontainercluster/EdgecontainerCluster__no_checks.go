@@ -7,6 +7,10 @@ package edgecontainercluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EdgecontainerCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EdgecontainerCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EdgecontainerCluster) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_EdgecontainerCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EdgecontainerCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EdgecontainerCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (e *jsiiProxy_EdgecontainerCluster) validatePutSystemAddonsConfigParameters
 }
 
 func (e *jsiiProxy_EdgecontainerCluster) validatePutTimeoutsParameters(value *EdgecontainerClusterTimeouts) error {
+	return nil
+}
+
+func validateEdgecontainerCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

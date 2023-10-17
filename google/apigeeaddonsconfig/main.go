@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig",
 		reflect.TypeOf((*ApigeeAddonsConfig)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberProperty{JsiiProperty: "addonsConfig", GoGetter: "AddonsConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "addonsConfigInput", GoGetter: "AddonsConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -36,8 +37,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "org", GoGetter: "Org"},
 			_jsii_.MemberProperty{JsiiProperty: "orgInput", GoGetter: "OrgInput"},

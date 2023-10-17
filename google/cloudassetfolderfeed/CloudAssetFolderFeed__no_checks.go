@@ -7,6 +7,10 @@ package cloudassetfolderfeed
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudAssetFolderFeed) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAssetFolderFeed) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudAssetFolderFeed) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (c *jsiiProxy_CloudAssetFolderFeed) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAssetFolderFeed) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAssetFolderFeed) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_CloudAssetFolderFeed) validatePutFeedOutputConfigParameters(v
 }
 
 func (c *jsiiProxy_CloudAssetFolderFeed) validatePutTimeoutsParameters(value *CloudAssetFolderFeedTimeouts) error {
+	return nil
+}
+
+func validateCloudAssetFolderFeed_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

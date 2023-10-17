@@ -7,6 +7,10 @@ package identityplatformtenant
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IdentityPlatformTenant) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformTenant) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IdentityPlatformTenant) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformTenant) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformTenant) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformTenant) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IdentityPlatformTenant) validateOverrideLogicalIdParameters(n
 }
 
 func (i *jsiiProxy_IdentityPlatformTenant) validatePutTimeoutsParameters(value *IdentityPlatformTenantTimeouts) error {
+	return nil
+}
+
+func validateIdentityPlatformTenant_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

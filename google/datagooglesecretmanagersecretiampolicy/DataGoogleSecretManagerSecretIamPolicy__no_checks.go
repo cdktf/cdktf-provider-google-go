@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleSecretManagerSecretIamPolicy) validateOverrideLogic
 	return nil
 }
 
+func validateDataGoogleSecretManagerSecretIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleSecretManagerSecretIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package iaptunneliambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IapTunnelIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapTunnelIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IapTunnelIamBinding) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (i *jsiiProxy_IapTunnelIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapTunnelIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapTunnelIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IapTunnelIamBinding) validateOverrideLogicalIdParameters(newL
 }
 
 func (i *jsiiProxy_IapTunnelIamBinding) validatePutConditionParameters(value *IapTunnelIamBindingCondition) error {
+	return nil
+}
+
+func validateIapTunnelIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

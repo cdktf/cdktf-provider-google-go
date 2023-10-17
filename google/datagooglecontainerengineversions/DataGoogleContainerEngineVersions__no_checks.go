@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleContainerEngineVersions) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataGoogleContainerEngineVersions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleContainerEngineVersions_IsConstructParameters(x interface{}) error {
 	return nil
 }

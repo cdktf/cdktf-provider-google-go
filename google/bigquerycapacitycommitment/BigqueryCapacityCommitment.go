@@ -5,10 +5,10 @@ package bigquerycapacitycommitment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/bigquerycapacitycommitment/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/bigquerycapacitycommitment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -94,6 +94,9 @@ type BigqueryCapacityCommitment interface {
 	TerraformResourceType() *string
 	Timeouts() BigqueryCapacityCommitmentTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -115,7 +118,12 @@ type BigqueryCapacityCommitment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -743,6 +751,25 @@ func (j *jsiiProxy_BigqueryCapacityCommitment)SetSlotCount(val *float64) {
 	)
 }
 
+// Generates CDKTF code for importing a BigqueryCapacityCommitment resource upon running "cdktf plan <stack-name>".
+func BigqueryCapacityCommitment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateBigqueryCapacityCommitment_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.bigqueryCapacityCommitment.BigqueryCapacityCommitment",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -825,6 +852,17 @@ func BigqueryCapacityCommitment_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) AddMoveTarget(moveTarget *string) {
+	if err := b.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (b *jsiiProxy_BigqueryCapacityCommitment) AddOverride(path *string, value interface{}) {
@@ -982,6 +1020,17 @@ func (b *jsiiProxy_BigqueryCapacityCommitment) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (b *jsiiProxy_BigqueryCapacityCommitment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := b.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (b *jsiiProxy_BigqueryCapacityCommitment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -996,6 +1045,17 @@ func (b *jsiiProxy_BigqueryCapacityCommitment) InterpolationForAttribute(terrafo
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BigqueryCapacityCommitment) MoveTo(moveTarget *string, index interface{}) {
+	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (b *jsiiProxy_BigqueryCapacityCommitment) OverrideLogicalId(newLogicalId *string) {

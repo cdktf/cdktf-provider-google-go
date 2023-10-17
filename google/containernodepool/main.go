@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.containerNodePool.ContainerNodePool",
 		reflect.TypeOf((*ContainerNodePool)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscaling", GoGetter: "Autoscaling"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingInput", GoGetter: "AutoscalingInput"},
@@ -38,6 +39,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "initialNodeCount", GoGetter: "InitialNodeCount"},
 			_jsii_.MemberProperty{JsiiProperty: "initialNodeCountInput", GoGetter: "InitialNodeCountInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceGroupUrls", GoGetter: "InstanceGroupUrls"},
@@ -50,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "managementInput", GoGetter: "ManagementInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxPodsPerNode", GoGetter: "MaxPodsPerNode"},
 			_jsii_.MemberProperty{JsiiProperty: "maxPodsPerNodeInput", GoGetter: "MaxPodsPerNodeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "namePrefix", GoGetter: "NamePrefix"},

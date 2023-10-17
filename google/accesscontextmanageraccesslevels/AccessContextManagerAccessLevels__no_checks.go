@@ -7,6 +7,10 @@ package accesscontextmanageraccesslevels
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AccessContextManagerAccessLevels) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerAccessLevels) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) validateGetStringMapAttribu
 	return nil
 }
 
+func (a *jsiiProxy_AccessContextManagerAccessLevels) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerAccessLevels) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevels) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_AccessContextManagerAccessLevels) validatePutAccessLevelsPara
 }
 
 func (a *jsiiProxy_AccessContextManagerAccessLevels) validatePutTimeoutsParameters(value *AccessContextManagerAccessLevelsTimeouts) error {
+	return nil
+}
+
+func validateAccessContextManagerAccessLevels_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

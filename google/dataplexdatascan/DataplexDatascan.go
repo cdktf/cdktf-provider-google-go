@@ -5,10 +5,10 @@ package dataplexdatascan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/dataplexdatascan/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/dataplexdatascan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -101,6 +101,9 @@ type DataplexDatascan interface {
 	Type() *string
 	Uid() *string
 	UpdateTime() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -122,7 +125,12 @@ type DataplexDatascan interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -822,6 +830,25 @@ func (j *jsiiProxy_DataplexDatascan)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a DataplexDatascan resource upon running "cdktf plan <stack-name>".
+func DataplexDatascan_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataplexDatascan_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascan",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -904,6 +931,17 @@ func DataplexDatascan_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (d *jsiiProxy_DataplexDatascan) AddMoveTarget(moveTarget *string) {
+	if err := d.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (d *jsiiProxy_DataplexDatascan) AddOverride(path *string, value interface{}) {
@@ -1061,6 +1099,17 @@ func (d *jsiiProxy_DataplexDatascan) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
+func (d *jsiiProxy_DataplexDatascan) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := d.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (d *jsiiProxy_DataplexDatascan) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1075,6 +1124,17 @@ func (d *jsiiProxy_DataplexDatascan) InterpolationForAttribute(terraformAttribut
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataplexDatascan) MoveTo(moveTarget *string, index interface{}) {
+	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (d *jsiiProxy_DataplexDatascan) OverrideLogicalId(newLogicalId *string) {

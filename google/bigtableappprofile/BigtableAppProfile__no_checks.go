@@ -7,6 +7,10 @@ package bigtableappprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigtableAppProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableAppProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BigtableAppProfile) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (b *jsiiProxy_BigtableAppProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableAppProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableAppProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (b *jsiiProxy_BigtableAppProfile) validatePutSingleClusterRoutingParameters
 }
 
 func (b *jsiiProxy_BigtableAppProfile) validatePutTimeoutsParameters(value *BigtableAppProfileTimeouts) error {
+	return nil
+}
+
+func validateBigtableAppProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

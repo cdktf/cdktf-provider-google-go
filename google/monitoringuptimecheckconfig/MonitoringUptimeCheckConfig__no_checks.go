@@ -7,6 +7,10 @@ package monitoringuptimecheckconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringUptimeCheckConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) validateGetStringMapAttributePar
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringUptimeCheckConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -80,6 +92,10 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfig) validatePutTcpCheckParameters(va
 }
 
 func (m *jsiiProxy_MonitoringUptimeCheckConfig) validatePutTimeoutsParameters(value *MonitoringUptimeCheckConfigTimeouts) error {
+	return nil
+}
+
+func validateMonitoringUptimeCheckConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

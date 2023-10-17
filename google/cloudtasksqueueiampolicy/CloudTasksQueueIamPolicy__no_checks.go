@@ -7,6 +7,10 @@ package cloudtasksqueueiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudTasksQueueIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudTasksQueueIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_CloudTasksQueueIamPolicy) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_CloudTasksQueueIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudTasksQueueIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CloudTasksQueueIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudTasksQueueIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCloudTasksQueueIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

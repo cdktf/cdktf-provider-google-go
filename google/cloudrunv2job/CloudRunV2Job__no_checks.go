@@ -7,6 +7,10 @@ package cloudrunv2job
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudRunV2Job) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2Job) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudRunV2Job) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunV2Job) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2Job) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudRunV2Job) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_CloudRunV2Job) validatePutTemplateParameters(value *CloudRunV
 }
 
 func (c *jsiiProxy_CloudRunV2Job) validatePutTimeoutsParameters(value *CloudRunV2JobTimeouts) error {
+	return nil
+}
+
+func validateCloudRunV2Job_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package computeregionnetworkendpointgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionNetworkEndpointGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionNetworkEndpointGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeRegionNetworkEndpointGroup) validateGetStringMapAttrib
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionNetworkEndpointGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionNetworkEndpointGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionNetworkEndpointGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (c *jsiiProxy_ComputeRegionNetworkEndpointGroup) validatePutCloudRunParamet
 }
 
 func (c *jsiiProxy_ComputeRegionNetworkEndpointGroup) validatePutTimeoutsParameters(value *ComputeRegionNetworkEndpointGroupTimeouts) error {
+	return nil
+}
+
+func validateComputeRegionNetworkEndpointGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package dataplexdatascan
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataplexDatascan) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexDatascan) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataplexDatascan) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (d *jsiiProxy_DataplexDatascan) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexDatascan) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplexDatascan) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (d *jsiiProxy_DataplexDatascan) validatePutExecutionSpecParameters(value *D
 }
 
 func (d *jsiiProxy_DataplexDatascan) validatePutTimeoutsParameters(value *DataplexDatascanTimeouts) error {
+	return nil
+}
+
+func validateDataplexDatascan_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

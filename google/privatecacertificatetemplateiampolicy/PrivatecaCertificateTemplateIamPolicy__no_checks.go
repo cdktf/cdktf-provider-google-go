@@ -7,6 +7,10 @@ package privatecacertificatetemplateiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) validateGetStringMapAt
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validatePrivatecaCertificateTemplateIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRule",
 		reflect.TypeOf((*ComputeForwardingRule)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowGlobalAccess", GoGetter: "AllowGlobalAccess"},
 			_jsii_.MemberProperty{JsiiProperty: "allowGlobalAccessInput", GoGetter: "AllowGlobalAccessInput"},
@@ -47,6 +48,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ipAddress", GoGetter: "IpAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "ipAddressInput", GoGetter: "IpAddressInput"},
@@ -62,6 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancingScheme", GoGetter: "LoadBalancingScheme"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancingSchemeInput", GoGetter: "LoadBalancingSchemeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},

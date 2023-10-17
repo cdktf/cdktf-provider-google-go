@@ -7,6 +7,10 @@ package dialogflowintent
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DialogflowIntent) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowIntent) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DialogflowIntent) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowIntent) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowIntent) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowIntent) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DialogflowIntent) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (d *jsiiProxy_DialogflowIntent) validatePutTimeoutsParameters(value *DialogflowIntentTimeouts) error {
+	return nil
+}
+
+func validateDialogflowIntent_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package bigtabletableiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigtableTableIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableTableIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (b *jsiiProxy_BigtableTableIamPolicy) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (b *jsiiProxy_BigtableTableIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableTableIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (b *jsiiProxy_BigtableTableIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableTableIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateBigtableTableIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

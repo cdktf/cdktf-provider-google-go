@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleDataplexTaskIamPolicy) validateOverrideLogicalIdPar
 	return nil
 }
 
+func validateDataGoogleDataplexTaskIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleDataplexTaskIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

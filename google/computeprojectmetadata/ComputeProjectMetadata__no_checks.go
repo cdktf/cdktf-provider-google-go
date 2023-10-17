@@ -7,6 +7,10 @@ package computeprojectmetadata
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeProjectMetadata) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeProjectMetadata) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeProjectMetadata) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_ComputeProjectMetadata) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeProjectMetadata) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeProjectMetadata) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ComputeProjectMetadata) validateOverrideLogicalIdParameters(n
 }
 
 func (c *jsiiProxy_ComputeProjectMetadata) validatePutTimeoutsParameters(value *ComputeProjectMetadataTimeouts) error {
+	return nil
+}
+
+func validateComputeProjectMetadata_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

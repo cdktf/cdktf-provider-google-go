@@ -7,6 +7,10 @@ package datastoreindex
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatastoreIndex) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastoreIndex) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DatastoreIndex) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (d *jsiiProxy_DatastoreIndex) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastoreIndex) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatastoreIndex) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DatastoreIndex) validatePutPropertiesParameters(value interfa
 }
 
 func (d *jsiiProxy_DatastoreIndex) validatePutTimeoutsParameters(value *DatastoreIndexTimeouts) error {
+	return nil
+}
+
+func validateDatastoreIndex_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

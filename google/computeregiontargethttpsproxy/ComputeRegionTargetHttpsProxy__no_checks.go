@@ -7,6 +7,10 @@ package computeregiontargethttpsproxy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) validateGetStringMapAttributeP
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) validateOverrideLogicalIdParam
 }
 
 func (c *jsiiProxy_ComputeRegionTargetHttpsProxy) validatePutTimeoutsParameters(value *ComputeRegionTargetHttpsProxyTimeouts) error {
+	return nil
+}
+
+func validateComputeRegionTargetHttpsProxy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -5,10 +5,10 @@ package dialogflowcxintent
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/dialogflowcxintent/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/dialogflowcxintent/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -94,6 +94,9 @@ type DialogflowCxIntent interface {
 	TimeoutsInput() interface{}
 	TrainingPhrases() DialogflowCxIntentTrainingPhrasesList
 	TrainingPhrasesInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -115,7 +118,12 @@ type DialogflowCxIntent interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -746,6 +754,25 @@ func (j *jsiiProxy_DialogflowCxIntent)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a DialogflowCxIntent resource upon running "cdktf plan <stack-name>".
+func DialogflowCxIntent_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDialogflowCxIntent_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntent",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -828,6 +855,17 @@ func DialogflowCxIntent_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (d *jsiiProxy_DialogflowCxIntent) AddMoveTarget(moveTarget *string) {
+	if err := d.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (d *jsiiProxy_DialogflowCxIntent) AddOverride(path *string, value interface{}) {
@@ -985,6 +1023,17 @@ func (d *jsiiProxy_DialogflowCxIntent) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (d *jsiiProxy_DialogflowCxIntent) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := d.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (d *jsiiProxy_DialogflowCxIntent) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -999,6 +1048,17 @@ func (d *jsiiProxy_DialogflowCxIntent) InterpolationForAttribute(terraformAttrib
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DialogflowCxIntent) MoveTo(moveTarget *string, index interface{}) {
+	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (d *jsiiProxy_DialogflowCxIntent) OverrideLogicalId(newLogicalId *string) {

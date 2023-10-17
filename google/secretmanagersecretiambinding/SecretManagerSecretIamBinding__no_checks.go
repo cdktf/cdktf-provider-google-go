@@ -7,6 +7,10 @@ package secretmanagersecretiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecretManagerSecretIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretManagerSecretIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SecretManagerSecretIamBinding) validateGetStringMapAttributeP
 	return nil
 }
 
+func (s *jsiiProxy_SecretManagerSecretIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretManagerSecretIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecretManagerSecretIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SecretManagerSecretIamBinding) validateOverrideLogicalIdParam
 }
 
 func (s *jsiiProxy_SecretManagerSecretIamBinding) validatePutConditionParameters(value *SecretManagerSecretIamBindingCondition) error {
+	return nil
+}
+
+func validateSecretManagerSecretIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

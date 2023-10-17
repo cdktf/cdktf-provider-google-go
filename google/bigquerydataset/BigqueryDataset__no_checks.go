@@ -7,6 +7,10 @@ package bigquerydataset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigqueryDataset) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDataset) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BigqueryDataset) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryDataset) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDataset) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryDataset) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (b *jsiiProxy_BigqueryDataset) validatePutDefaultEncryptionConfigurationPar
 }
 
 func (b *jsiiProxy_BigqueryDataset) validatePutTimeoutsParameters(value *BigqueryDatasetTimeouts) error {
+	return nil
+}
+
+func validateBigqueryDataset_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

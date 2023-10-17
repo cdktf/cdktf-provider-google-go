@@ -7,6 +7,10 @@ package kmskeyringimportjob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KmsKeyRingImportJob) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsKeyRingImportJob) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KmsKeyRingImportJob) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (k *jsiiProxy_KmsKeyRingImportJob) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsKeyRingImportJob) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsKeyRingImportJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KmsKeyRingImportJob) validateOverrideLogicalIdParameters(newL
 }
 
 func (k *jsiiProxy_KmsKeyRingImportJob) validatePutTimeoutsParameters(value *KmsKeyRingImportJobTimeouts) error {
+	return nil
+}
+
+func validateKmsKeyRingImportJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

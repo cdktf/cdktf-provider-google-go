@@ -7,6 +7,10 @@ package apikeyskey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApikeysKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApikeysKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApikeysKey) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (a *jsiiProxy_ApikeysKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApikeysKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApikeysKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_ApikeysKey) validatePutRestrictionsParameters(value *ApikeysK
 }
 
 func (a *jsiiProxy_ApikeysKey) validatePutTimeoutsParameters(value *ApikeysKeyTimeouts) error {
+	return nil
+}
+
+func validateApikeysKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

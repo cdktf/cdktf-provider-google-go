@@ -7,6 +7,10 @@ package spannerinstanceiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpannerInstanceIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpannerInstanceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SpannerInstanceIamMember) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_SpannerInstanceIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpannerInstanceIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpannerInstanceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SpannerInstanceIamMember) validateOverrideLogicalIdParameters
 }
 
 func (s *jsiiProxy_SpannerInstanceIamMember) validatePutConditionParameters(value *SpannerInstanceIamMemberCondition) error {
+	return nil
+}
+
+func validateSpannerInstanceIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

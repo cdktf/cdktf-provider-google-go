@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleDataFusionInstanceIamPolicy) validateOverrideLogica
 	return nil
 }
 
+func validateDataGoogleDataFusionInstanceIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleDataFusionInstanceIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package iapwebtypeappengineiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IapWebTypeAppEngineIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapWebTypeAppEngineIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamMember) validateGetStringMapAttributePa
 	return nil
 }
 
+func (i *jsiiProxy_IapWebTypeAppEngineIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapWebTypeAppEngineIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapWebTypeAppEngineIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IapWebTypeAppEngineIamMember) validateOverrideLogicalIdParame
 }
 
 func (i *jsiiProxy_IapWebTypeAppEngineIamMember) validatePutConditionParameters(value *IapWebTypeAppEngineIamMemberCondition) error {
+	return nil
+}
+
+func validateIapWebTypeAppEngineIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package networksecuritygatewaysecuritypolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateGetStringMapAtt
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validateOverrideLogical
 }
 
 func (n *jsiiProxy_NetworkSecurityGatewaySecurityPolicy) validatePutTimeoutsParameters(value *NetworkSecurityGatewaySecurityPolicyTimeouts) error {
+	return nil
+}
+
+func validateNetworkSecurityGatewaySecurityPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

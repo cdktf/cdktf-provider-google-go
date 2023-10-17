@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.bigtableGcPolicy.BigtableGcPolicy",
 		reflect.TypeOf((*BigtableGcPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "columnFamily", GoGetter: "ColumnFamily"},
@@ -40,6 +41,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceName", GoGetter: "InstanceName"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceNameInput", GoGetter: "InstanceNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -50,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxVersionInput", GoGetter: "MaxVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
 			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},

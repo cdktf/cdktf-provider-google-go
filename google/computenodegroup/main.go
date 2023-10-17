@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroup",
 		reflect.TypeOf((*ComputeNodeGroup)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingPolicy", GoGetter: "AutoscalingPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingPolicyInput", GoGetter: "AutoscalingPolicyInput"},
@@ -39,6 +40,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "initialSize", GoGetter: "InitialSize"},
 			_jsii_.MemberProperty{JsiiProperty: "initialSizeInput", GoGetter: "InitialSizeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -47,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maintenancePolicyInput", GoGetter: "MaintenancePolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindow", GoGetter: "MaintenanceWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindowInput", GoGetter: "MaintenanceWindowInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

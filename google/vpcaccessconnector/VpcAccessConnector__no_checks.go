@@ -7,6 +7,10 @@ package vpcaccessconnector
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcAccessConnector) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcAccessConnector) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpcAccessConnector) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (v *jsiiProxy_VpcAccessConnector) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcAccessConnector) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcAccessConnector) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (v *jsiiProxy_VpcAccessConnector) validatePutSubnetParameters(value *VpcAcc
 }
 
 func (v *jsiiProxy_VpcAccessConnector) validatePutTimeoutsParameters(value *VpcAccessConnectorTimeouts) error {
+	return nil
+}
+
+func validateVpcAccessConnector_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

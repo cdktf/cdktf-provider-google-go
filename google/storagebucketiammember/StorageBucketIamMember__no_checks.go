@@ -7,6 +7,10 @@ package storagebucketiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageBucketIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucketIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageBucketIamMember) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (s *jsiiProxy_StorageBucketIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucketIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageBucketIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_StorageBucketIamMember) validateOverrideLogicalIdParameters(n
 }
 
 func (s *jsiiProxy_StorageBucketIamMember) validatePutConditionParameters(value *StorageBucketIamMemberCondition) error {
+	return nil
+}
+
+func validateStorageBucketIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

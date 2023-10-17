@@ -7,6 +7,10 @@ package iamaccessboundarypolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IamAccessBoundaryPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamAccessBoundaryPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (i *jsiiProxy_IamAccessBoundaryPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamAccessBoundaryPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamAccessBoundaryPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (i *jsiiProxy_IamAccessBoundaryPolicy) validatePutRulesParameters(value int
 }
 
 func (i *jsiiProxy_IamAccessBoundaryPolicy) validatePutTimeoutsParameters(value *IamAccessBoundaryPolicyTimeouts) error {
+	return nil
+}
+
+func validateIamAccessBoundaryPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

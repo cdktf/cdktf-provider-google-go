@@ -7,6 +7,10 @@ package dialogflowcxtestcase
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DialogflowCxTestCase) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxTestCase) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DialogflowCxTestCase) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxTestCase) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxTestCase) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxTestCase) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (d *jsiiProxy_DialogflowCxTestCase) validatePutTestConfigParameters(value *
 }
 
 func (d *jsiiProxy_DialogflowCxTestCase) validatePutTimeoutsParameters(value *DialogflowCxTestCaseTimeouts) error {
+	return nil
+}
+
+func validateDialogflowCxTestCase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

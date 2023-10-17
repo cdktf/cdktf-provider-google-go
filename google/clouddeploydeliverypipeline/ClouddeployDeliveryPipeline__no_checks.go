@@ -7,6 +7,10 @@ package clouddeploydeliverypipeline
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ClouddeployDeliveryPipeline) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployDeliveryPipeline) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ClouddeployDeliveryPipeline) validateGetStringMapAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployDeliveryPipeline) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployDeliveryPipeline) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployDeliveryPipeline) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_ClouddeployDeliveryPipeline) validatePutSerialPipelineParamet
 }
 
 func (c *jsiiProxy_ClouddeployDeliveryPipeline) validatePutTimeoutsParameters(value *ClouddeployDeliveryPipelineTimeouts) error {
+	return nil
+}
+
+func validateClouddeployDeliveryPipeline_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

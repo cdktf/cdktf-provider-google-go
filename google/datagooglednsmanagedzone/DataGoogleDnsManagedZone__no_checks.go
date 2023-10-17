@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleDnsManagedZone) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func validateDataGoogleDnsManagedZone_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleDnsManagedZone_IsConstructParameters(x interface{}) error {
 	return nil
 }

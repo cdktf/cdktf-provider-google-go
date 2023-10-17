@@ -7,6 +7,10 @@ package billingaccountiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BillingAccountIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BillingAccountIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BillingAccountIamBinding) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (b *jsiiProxy_BillingAccountIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BillingAccountIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BillingAccountIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BillingAccountIamBinding) validateOverrideLogicalIdParameters
 }
 
 func (b *jsiiProxy_BillingAccountIamBinding) validatePutConditionParameters(value *BillingAccountIamBindingCondition) error {
+	return nil
+}
+
+func validateBillingAccountIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

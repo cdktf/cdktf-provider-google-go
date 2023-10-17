@@ -7,6 +7,10 @@ package projectorganizationpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_ProjectOrganizationPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectOrganizationPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_ProjectOrganizationPolicy) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (p *jsiiProxy_ProjectOrganizationPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectOrganizationPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectOrganizationPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (p *jsiiProxy_ProjectOrganizationPolicy) validatePutRestorePolicyParameters
 }
 
 func (p *jsiiProxy_ProjectOrganizationPolicy) validatePutTimeoutsParameters(value *ProjectOrganizationPolicyTimeouts) error {
+	return nil
+}
+
+func validateProjectOrganizationPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

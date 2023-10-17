@@ -7,6 +7,10 @@ package computeexternalvpngateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeExternalVpnGateway) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeExternalVpnGateway) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_ComputeExternalVpnGateway) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeExternalVpnGateway) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeExternalVpnGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_ComputeExternalVpnGateway) validatePutInterfaceParameters(val
 }
 
 func (c *jsiiProxy_ComputeExternalVpnGateway) validatePutTimeoutsParameters(value *ComputeExternalVpnGatewayTimeouts) error {
+	return nil
+}
+
+func validateComputeExternalVpnGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

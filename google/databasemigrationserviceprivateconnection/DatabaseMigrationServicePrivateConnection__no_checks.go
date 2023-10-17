@@ -7,6 +7,10 @@ package databasemigrationserviceprivateconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) validateGetStringM
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) validatePutTimeout
 }
 
 func (d *jsiiProxy_DatabaseMigrationServicePrivateConnection) validatePutVpcPeeringConfigParameters(value *DatabaseMigrationServicePrivateConnectionVpcPeeringConfig) error {
+	return nil
+}
+
+func validateDatabaseMigrationServicePrivateConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

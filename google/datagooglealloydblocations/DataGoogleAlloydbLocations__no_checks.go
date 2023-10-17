@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleAlloydbLocations) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func validateDataGoogleAlloydbLocations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleAlloydbLocations_IsConstructParameters(x interface{}) error {
 	return nil
 }

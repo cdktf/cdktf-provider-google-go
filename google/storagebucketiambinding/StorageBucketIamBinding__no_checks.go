@@ -7,6 +7,10 @@ package storagebucketiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageBucketIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucketIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StorageBucketIamBinding) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_StorageBucketIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucketIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageBucketIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_StorageBucketIamBinding) validateOverrideLogicalIdParameters(
 }
 
 func (s *jsiiProxy_StorageBucketIamBinding) validatePutConditionParameters(value *StorageBucketIamBindingCondition) error {
+	return nil
+}
+
+func validateStorageBucketIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

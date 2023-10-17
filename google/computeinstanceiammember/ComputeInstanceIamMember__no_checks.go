@@ -7,6 +7,10 @@ package computeinstanceiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeInstanceIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeInstanceIamMember) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ComputeInstanceIamMember) validateOverrideLogicalIdParameters
 }
 
 func (c *jsiiProxy_ComputeInstanceIamMember) validatePutConditionParameters(value *ComputeInstanceIamMemberCondition) error {
+	return nil
+}
+
+func validateComputeInstanceIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

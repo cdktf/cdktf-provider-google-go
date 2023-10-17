@@ -7,6 +7,10 @@ package monitoringdashboard
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitoringDashboard) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringDashboard) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitoringDashboard) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringDashboard) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringDashboard) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitoringDashboard) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MonitoringDashboard) validateOverrideLogicalIdParameters(newL
 }
 
 func (m *jsiiProxy_MonitoringDashboard) validatePutTimeoutsParameters(value *MonitoringDashboardTimeouts) error {
+	return nil
+}
+
+func validateMonitoringDashboard_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

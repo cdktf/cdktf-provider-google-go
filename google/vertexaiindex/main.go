@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.vertexAiIndex.VertexAiIndex",
 		reflect.TypeOf((*VertexAiIndex)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
@@ -42,6 +43,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "indexStats", GoGetter: "IndexStats"},
 			_jsii_.MemberProperty{JsiiProperty: "indexUpdateMethod", GoGetter: "IndexUpdateMethod"},
 			_jsii_.MemberProperty{JsiiProperty: "indexUpdateMethodInput", GoGetter: "IndexUpdateMethodInput"},
@@ -52,6 +54,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataInput", GoGetter: "MetadataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataSchemaUri", GoGetter: "MetadataSchemaUri"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},

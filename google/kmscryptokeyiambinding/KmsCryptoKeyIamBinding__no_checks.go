@@ -7,6 +7,10 @@ package kmscryptokeyiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsCryptoKeyIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsCryptoKeyIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsCryptoKeyIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KmsCryptoKeyIamBinding) validateOverrideLogicalIdParameters(n
 }
 
 func (k *jsiiProxy_KmsCryptoKeyIamBinding) validatePutConditionParameters(value *KmsCryptoKeyIamBindingCondition) error {
+	return nil
+}
+
+func validateKmsCryptoKeyIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

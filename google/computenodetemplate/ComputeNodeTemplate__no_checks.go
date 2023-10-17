@@ -7,6 +7,10 @@ package computenodetemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeNodeTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeNodeTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeNodeTemplate) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (c *jsiiProxy_ComputeNodeTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeNodeTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeNodeTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_ComputeNodeTemplate) validatePutServerBindingParameters(value
 }
 
 func (c *jsiiProxy_ComputeNodeTemplate) validatePutTimeoutsParameters(value *ComputeNodeTemplateTimeouts) error {
+	return nil
+}
+
+func validateComputeNodeTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

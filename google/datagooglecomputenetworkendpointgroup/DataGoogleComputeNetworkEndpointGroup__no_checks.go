@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleComputeNetworkEndpointGroup) validateOverrideLogica
 	return nil
 }
 
+func validateDataGoogleComputeNetworkEndpointGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleComputeNetworkEndpointGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

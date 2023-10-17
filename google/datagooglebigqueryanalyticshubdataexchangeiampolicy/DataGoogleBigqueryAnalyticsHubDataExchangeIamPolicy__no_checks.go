@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy) validate
 	return nil
 }
 
+func validateDataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleBigqueryAnalyticsHubDataExchangeIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

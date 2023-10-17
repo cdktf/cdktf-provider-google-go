@@ -7,6 +7,10 @@ package apigeeenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApigeeEnvironment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApigeeEnvironment) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeEnvironment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeEnvironment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_ApigeeEnvironment) validatePutNodeConfigParameters(value *Api
 }
 
 func (a *jsiiProxy_ApigeeEnvironment) validatePutTimeoutsParameters(value *ApigeeEnvironmentTimeouts) error {
+	return nil
+}
+
+func validateApigeeEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

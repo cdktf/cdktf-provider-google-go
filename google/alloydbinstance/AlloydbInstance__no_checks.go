@@ -7,6 +7,10 @@ package alloydbinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AlloydbInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AlloydbInstance) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (a *jsiiProxy_AlloydbInstance) validatePutReadPoolConfigParameters(value *A
 }
 
 func (a *jsiiProxy_AlloydbInstance) validatePutTimeoutsParameters(value *AlloydbInstanceTimeouts) error {
+	return nil
+}
+
+func validateAlloydbInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

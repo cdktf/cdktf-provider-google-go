@@ -7,6 +7,10 @@ package datastreamstream
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatastreamStream) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamStream) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DatastreamStream) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamStream) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamStream) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatastreamStream) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (d *jsiiProxy_DatastreamStream) validatePutSourceConfigParameters(value *Da
 }
 
 func (d *jsiiProxy_DatastreamStream) validatePutTimeoutsParameters(value *DatastreamStreamTimeouts) error {
+	return nil
+}
+
+func validateDatastreamStream_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

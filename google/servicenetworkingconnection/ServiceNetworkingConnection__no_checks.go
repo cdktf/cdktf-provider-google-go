@@ -7,6 +7,10 @@ package servicenetworkingconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServiceNetworkingConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceNetworkingConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServiceNetworkingConnection) validateGetStringMapAttributePar
 	return nil
 }
 
+func (s *jsiiProxy_ServiceNetworkingConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceNetworkingConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceNetworkingConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_ServiceNetworkingConnection) validateOverrideLogicalIdParamet
 }
 
 func (s *jsiiProxy_ServiceNetworkingConnection) validatePutTimeoutsParameters(value *ServiceNetworkingConnectionTimeouts) error {
+	return nil
+}
+
+func validateServiceNetworkingConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package apigeekeystoresaliasesselfsignedcert
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateGetStringMapAtt
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validatePutSubjectAlter
 }
 
 func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validatePutTimeoutsParameters(value *ApigeeKeystoresAliasesSelfSignedCertTimeouts) error {
+	return nil
+}
+
+func validateApigeeKeystoresAliasesSelfSignedCert_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

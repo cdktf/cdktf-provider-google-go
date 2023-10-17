@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.gkeHubMembershipIamMember.GkeHubMembershipIamMember",
 		reflect.TypeOf((*GkeHubMembershipIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "condition", GoGetter: "Condition"},
@@ -37,6 +38,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
@@ -45,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "memberInput", GoGetter: "MemberInput"},
 			_jsii_.MemberProperty{JsiiProperty: "membershipId", GoGetter: "MembershipId"},
 			_jsii_.MemberProperty{JsiiProperty: "membershipIdInput", GoGetter: "MembershipIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},

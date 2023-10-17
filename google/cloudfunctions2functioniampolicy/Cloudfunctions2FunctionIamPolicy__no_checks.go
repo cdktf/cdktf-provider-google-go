@@ -7,6 +7,10 @@ package cloudfunctions2functioniampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_Cloudfunctions2FunctionIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudfunctions2FunctionIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_Cloudfunctions2FunctionIamPolicy) validateGetStringMapAttribu
 	return nil
 }
 
+func (c *jsiiProxy_Cloudfunctions2FunctionIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudfunctions2FunctionIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_Cloudfunctions2FunctionIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudfunctions2FunctionIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCloudfunctions2FunctionIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

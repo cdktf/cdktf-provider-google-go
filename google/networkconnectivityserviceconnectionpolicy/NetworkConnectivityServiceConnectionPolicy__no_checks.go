@@ -7,6 +7,10 @@ package networkconnectivityserviceconnectionpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicy) validateGetString
 	return nil
 }
 
+func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicy) validatePutPscCon
 }
 
 func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicy) validatePutTimeoutsParameters(value *NetworkConnectivityServiceConnectionPolicyTimeouts) error {
+	return nil
+}
+
+func validateNetworkConnectivityServiceConnectionPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

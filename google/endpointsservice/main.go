@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.endpointsService.EndpointsService",
 		reflect.TypeOf((*EndpointsService)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "apis", GoGetter: "Apis"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -40,8 +41,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "grpcConfigInput", GoGetter: "GrpcConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "openapiConfig", GoGetter: "OpenapiConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "openapiConfigInput", GoGetter: "OpenapiConfigInput"},

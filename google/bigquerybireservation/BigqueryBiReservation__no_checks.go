@@ -7,6 +7,10 @@ package bigquerybireservation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigqueryBiReservation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryBiReservation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BigqueryBiReservation) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryBiReservation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryBiReservation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryBiReservation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (b *jsiiProxy_BigqueryBiReservation) validatePutPreferredTablesParameters(v
 }
 
 func (b *jsiiProxy_BigqueryBiReservation) validatePutTimeoutsParameters(value *BigqueryBiReservationTimeouts) error {
+	return nil
+}
+
+func validateBigqueryBiReservation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

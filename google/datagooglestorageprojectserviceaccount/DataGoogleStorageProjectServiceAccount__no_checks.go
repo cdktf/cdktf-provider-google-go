@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleStorageProjectServiceAccount) validateOverrideLogic
 	return nil
 }
 
+func validateDataGoogleStorageProjectServiceAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleStorageProjectServiceAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }

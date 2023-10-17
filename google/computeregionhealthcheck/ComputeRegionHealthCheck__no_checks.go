@@ -7,6 +7,10 @@ package computeregionhealthcheck
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionHealthCheck) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionHealthCheck) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionHealthCheck) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionHealthCheck) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionHealthCheck) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (c *jsiiProxy_ComputeRegionHealthCheck) validatePutTcpHealthCheckParameters
 }
 
 func (c *jsiiProxy_ComputeRegionHealthCheck) validatePutTimeoutsParameters(value *ComputeRegionHealthCheckTimeouts) error {
+	return nil
+}
+
+func validateComputeRegionHealthCheck_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

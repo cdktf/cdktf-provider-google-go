@@ -5,10 +5,10 @@ package edgecontainervpnconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/edgecontainervpnconnection/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/edgecontainervpnconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -100,6 +100,9 @@ type EdgecontainerVpnConnection interface {
 	VpcInput() *string
 	VpcProject() EdgecontainerVpnConnectionVpcProjectOutputReference
 	VpcProjectInput() *EdgecontainerVpnConnectionVpcProject
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -121,7 +124,12 @@ type EdgecontainerVpnConnection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -812,6 +820,25 @@ func (j *jsiiProxy_EdgecontainerVpnConnection)SetVpc(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a EdgecontainerVpnConnection resource upon running "cdktf plan <stack-name>".
+func EdgecontainerVpnConnection_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateEdgecontainerVpnConnection_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -894,6 +921,17 @@ func EdgecontainerVpnConnection_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (e *jsiiProxy_EdgecontainerVpnConnection) AddMoveTarget(moveTarget *string) {
+	if err := e.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (e *jsiiProxy_EdgecontainerVpnConnection) AddOverride(path *string, value interface{}) {
@@ -1051,6 +1089,17 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (e *jsiiProxy_EdgecontainerVpnConnection) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := e.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (e *jsiiProxy_EdgecontainerVpnConnection) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1065,6 +1114,17 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) InterpolationForAttribute(terrafo
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_EdgecontainerVpnConnection) MoveTo(moveTarget *string, index interface{}) {
+	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (e *jsiiProxy_EdgecontainerVpnConnection) OverrideLogicalId(newLogicalId *string) {

@@ -7,6 +7,10 @@ package computeinstancetemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeInstanceTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeInstanceTemplate) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -96,6 +108,10 @@ func (c *jsiiProxy_ComputeInstanceTemplate) validatePutShieldedInstanceConfigPar
 }
 
 func (c *jsiiProxy_ComputeInstanceTemplate) validatePutTimeoutsParameters(value *ComputeInstanceTemplateTimeouts) error {
+	return nil
+}
+
+func validateComputeInstanceTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

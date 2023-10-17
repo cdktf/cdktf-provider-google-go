@@ -7,6 +7,10 @@ package loggingbillingaccountbucketconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateGetStringMapAttrib
 	return nil
 }
 
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validateOverrideLogicalIdP
 }
 
 func (l *jsiiProxy_LoggingBillingAccountBucketConfig) validatePutCmekSettingsParameters(value *LoggingBillingAccountBucketConfigCmekSettings) error {
+	return nil
+}
+
+func validateLoggingBillingAccountBucketConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -5,10 +5,10 @@ package binaryauthorizationattestoriammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/binaryauthorizationattestoriammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/binaryauthorizationattestoriammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -79,6 +79,9 @@ type BinaryAuthorizationAttestorIamMember interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -100,7 +103,12 @@ type BinaryAuthorizationAttestorIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -569,6 +577,25 @@ func (j *jsiiProxy_BinaryAuthorizationAttestorIamMember)SetRole(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a BinaryAuthorizationAttestorIamMember resource upon running "cdktf plan <stack-name>".
+func BinaryAuthorizationAttestorIamMember_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateBinaryAuthorizationAttestorIamMember_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.binaryAuthorizationAttestorIamMember.BinaryAuthorizationAttestorIamMember",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -651,6 +678,17 @@ func BinaryAuthorizationAttestorIamMember_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) AddMoveTarget(moveTarget *string) {
+	if err := b.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) AddOverride(path *string, value interface{}) {
@@ -808,6 +846,17 @@ func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) GetStringMapAttribute(t
 	return returns
 }
 
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := b.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -822,6 +871,17 @@ func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) InterpolationForAttribu
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) MoveTo(moveTarget *string, index interface{}) {
+	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (b *jsiiProxy_BinaryAuthorizationAttestorIamMember) OverrideLogicalId(newLogicalId *string) {

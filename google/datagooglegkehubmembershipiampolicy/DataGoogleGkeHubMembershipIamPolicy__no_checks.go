@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleGkeHubMembershipIamPolicy) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataGoogleGkeHubMembershipIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleGkeHubMembershipIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleDataplexDatascanIamPolicy) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataGoogleDataplexDatascanIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleDataplexDatascanIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package cloudrunv2jobiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudRunV2JobIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2JobIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_CloudRunV2JobIamPolicy) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunV2JobIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2JobIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunV2JobIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2JobIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCloudRunV2JobIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

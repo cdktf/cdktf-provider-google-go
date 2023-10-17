@@ -5,10 +5,10 @@ package loggingmetric
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/loggingmetric/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/loggingmetric/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -94,6 +94,9 @@ type LoggingMetric interface {
 	ValueExtractor() *string
 	SetValueExtractor(val *string)
 	ValueExtractorInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -115,7 +118,12 @@ type LoggingMetric interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -747,6 +755,25 @@ func (j *jsiiProxy_LoggingMetric)SetValueExtractor(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a LoggingMetric resource upon running "cdktf plan <stack-name>".
+func LoggingMetric_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateLoggingMetric_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.loggingMetric.LoggingMetric",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -829,6 +856,17 @@ func LoggingMetric_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (l *jsiiProxy_LoggingMetric) AddMoveTarget(moveTarget *string) {
+	if err := l.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (l *jsiiProxy_LoggingMetric) AddOverride(path *string, value interface{}) {
@@ -986,6 +1024,17 @@ func (l *jsiiProxy_LoggingMetric) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (l *jsiiProxy_LoggingMetric) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := l.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (l *jsiiProxy_LoggingMetric) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1000,6 +1049,17 @@ func (l *jsiiProxy_LoggingMetric) InterpolationForAttribute(terraformAttribute *
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LoggingMetric) MoveTo(moveTarget *string, index interface{}) {
+	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (l *jsiiProxy_LoggingMetric) OverrideLogicalId(newLogicalId *string) {

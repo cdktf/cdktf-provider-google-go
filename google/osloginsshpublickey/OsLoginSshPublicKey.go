@@ -5,10 +5,10 @@ package osloginsshpublickey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/osloginsshpublickey/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/osloginsshpublickey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -79,6 +79,9 @@ type OsLoginSshPublicKey interface {
 	User() *string
 	SetUser(val *string)
 	UserInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -100,7 +103,12 @@ type OsLoginSshPublicKey interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -570,6 +578,25 @@ func (j *jsiiProxy_OsLoginSshPublicKey)SetUser(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a OsLoginSshPublicKey resource upon running "cdktf plan <stack-name>".
+func OsLoginSshPublicKey_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateOsLoginSshPublicKey_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -652,6 +679,17 @@ func OsLoginSshPublicKey_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (o *jsiiProxy_OsLoginSshPublicKey) AddMoveTarget(moveTarget *string) {
+	if err := o.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (o *jsiiProxy_OsLoginSshPublicKey) AddOverride(path *string, value interface{}) {
@@ -809,6 +847,17 @@ func (o *jsiiProxy_OsLoginSshPublicKey) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (o *jsiiProxy_OsLoginSshPublicKey) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := o.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (o *jsiiProxy_OsLoginSshPublicKey) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -823,6 +872,17 @@ func (o *jsiiProxy_OsLoginSshPublicKey) InterpolationForAttribute(terraformAttri
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OsLoginSshPublicKey) MoveTo(moveTarget *string, index interface{}) {
+	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (o *jsiiProxy_OsLoginSshPublicKey) OverrideLogicalId(newLogicalId *string) {

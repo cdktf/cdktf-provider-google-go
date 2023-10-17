@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.dataplexAssetIamBinding.DataplexAssetIamBinding",
 		reflect.TypeOf((*DataplexAssetIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "asset", GoGetter: "Asset"},
 			_jsii_.MemberProperty{JsiiProperty: "assetInput", GoGetter: "AssetInput"},
@@ -41,6 +42,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lake", GoGetter: "Lake"},
 			_jsii_.MemberProperty{JsiiProperty: "lakeInput", GoGetter: "LakeInput"},
@@ -49,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "members", GoGetter: "Members"},
 			_jsii_.MemberProperty{JsiiProperty: "membersInput", GoGetter: "MembersInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleComputeVpnGateway) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func validateDataGoogleComputeVpnGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleComputeVpnGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }

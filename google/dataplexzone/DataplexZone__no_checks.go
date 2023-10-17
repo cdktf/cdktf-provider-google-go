@@ -7,6 +7,10 @@ package dataplexzone
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataplexZone) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexZone) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataplexZone) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (d *jsiiProxy_DataplexZone) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexZone) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplexZone) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (d *jsiiProxy_DataplexZone) validatePutResourceSpecParameters(value *Datapl
 }
 
 func (d *jsiiProxy_DataplexZone) validatePutTimeoutsParameters(value *DataplexZoneTimeouts) error {
+	return nil
+}
+
+func validateDataplexZone_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package iaptunnelinstanceiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IapTunnelInstanceIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapTunnelInstanceIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IapTunnelInstanceIamPolicy) validateGetStringMapAttributePara
 	return nil
 }
 
+func (i *jsiiProxy_IapTunnelInstanceIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapTunnelInstanceIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IapTunnelInstanceIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapTunnelInstanceIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIapTunnelInstanceIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

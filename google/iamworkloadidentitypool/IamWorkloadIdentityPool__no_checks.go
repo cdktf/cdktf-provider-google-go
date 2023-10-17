@@ -7,6 +7,10 @@ package iamworkloadidentitypool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IamWorkloadIdentityPool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamWorkloadIdentityPool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IamWorkloadIdentityPool) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (i *jsiiProxy_IamWorkloadIdentityPool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamWorkloadIdentityPool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamWorkloadIdentityPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IamWorkloadIdentityPool) validateOverrideLogicalIdParameters(
 }
 
 func (i *jsiiProxy_IamWorkloadIdentityPool) validatePutTimeoutsParameters(value *IamWorkloadIdentityPoolTimeouts) error {
+	return nil
+}
+
+func validateIamWorkloadIdentityPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

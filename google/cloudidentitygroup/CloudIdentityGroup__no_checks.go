@@ -7,6 +7,10 @@ package cloudidentitygroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudIdentityGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudIdentityGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudIdentityGroup) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (c *jsiiProxy_CloudIdentityGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudIdentityGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudIdentityGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CloudIdentityGroup) validatePutGroupKeyParameters(value *Clou
 }
 
 func (c *jsiiProxy_CloudIdentityGroup) validatePutTimeoutsParameters(value *CloudIdentityGroupTimeouts) error {
+	return nil
+}
+
+func validateCloudIdentityGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

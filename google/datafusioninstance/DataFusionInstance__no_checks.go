@@ -7,6 +7,10 @@ package datafusioninstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataFusionInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFusionInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataFusionInstance) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (d *jsiiProxy_DataFusionInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFusionInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataFusionInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (d *jsiiProxy_DataFusionInstance) validatePutNetworkConfigParameters(value 
 }
 
 func (d *jsiiProxy_DataFusionInstance) validatePutTimeoutsParameters(value *DataFusionInstanceTimeouts) error {
+	return nil
+}
+
+func validateDataFusionInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

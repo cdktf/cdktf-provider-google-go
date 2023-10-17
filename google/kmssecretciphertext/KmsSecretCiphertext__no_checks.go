@@ -7,6 +7,10 @@ package kmssecretciphertext
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KmsSecretCiphertext) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsSecretCiphertext) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KmsSecretCiphertext) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (k *jsiiProxy_KmsSecretCiphertext) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsSecretCiphertext) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsSecretCiphertext) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KmsSecretCiphertext) validateOverrideLogicalIdParameters(newL
 }
 
 func (k *jsiiProxy_KmsSecretCiphertext) validatePutTimeoutsParameters(value *KmsSecretCiphertextTimeouts) error {
+	return nil
+}
+
+func validateKmsSecretCiphertext_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

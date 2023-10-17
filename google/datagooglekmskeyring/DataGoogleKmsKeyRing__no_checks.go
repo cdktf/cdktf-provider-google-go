@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleKmsKeyRing) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func validateDataGoogleKmsKeyRing_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleKmsKeyRing_IsConstructParameters(x interface{}) error {
 	return nil
 }

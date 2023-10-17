@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleComputeLbIpRanges) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func validateDataGoogleComputeLbIpRanges_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleComputeLbIpRanges_IsConstructParameters(x interface{}) error {
 	return nil
 }

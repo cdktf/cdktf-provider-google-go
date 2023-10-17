@@ -5,10 +5,10 @@ package bigqueryconnectioniampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/bigqueryconnectioniampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/bigqueryconnectioniampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -77,6 +77,9 @@ type BigqueryConnectionIamPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -98,7 +101,12 @@ type BigqueryConnectionIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -546,6 +554,25 @@ func (j *jsiiProxy_BigqueryConnectionIamPolicy)SetProvisioners(val *[]interface{
 	)
 }
 
+// Generates CDKTF code for importing a BigqueryConnectionIamPolicy resource upon running "cdktf plan <stack-name>".
+func BigqueryConnectionIamPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateBigqueryConnectionIamPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.bigqueryConnectionIamPolicy.BigqueryConnectionIamPolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -628,6 +655,17 @@ func BigqueryConnectionIamPolicy_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (b *jsiiProxy_BigqueryConnectionIamPolicy) AddMoveTarget(moveTarget *string) {
+	if err := b.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (b *jsiiProxy_BigqueryConnectionIamPolicy) AddOverride(path *string, value interface{}) {
@@ -785,6 +823,17 @@ func (b *jsiiProxy_BigqueryConnectionIamPolicy) GetStringMapAttribute(terraformA
 	return returns
 }
 
+func (b *jsiiProxy_BigqueryConnectionIamPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := b.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (b *jsiiProxy_BigqueryConnectionIamPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -799,6 +848,17 @@ func (b *jsiiProxy_BigqueryConnectionIamPolicy) InterpolationForAttribute(terraf
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BigqueryConnectionIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (b *jsiiProxy_BigqueryConnectionIamPolicy) OverrideLogicalId(newLogicalId *string) {

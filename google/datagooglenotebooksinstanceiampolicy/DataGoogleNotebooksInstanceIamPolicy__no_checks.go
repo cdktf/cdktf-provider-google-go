@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleNotebooksInstanceIamPolicy) validateOverrideLogical
 	return nil
 }
 
+func validateDataGoogleNotebooksInstanceIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleNotebooksInstanceIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

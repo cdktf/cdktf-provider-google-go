@@ -7,6 +7,10 @@ package monitoringmonitoredproject
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitoringMonitoredProject) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringMonitoredProject) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitoringMonitoredProject) validateGetStringMapAttributePara
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringMonitoredProject) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringMonitoredProject) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitoringMonitoredProject) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_MonitoringMonitoredProject) validateOverrideLogicalIdParamete
 }
 
 func (m *jsiiProxy_MonitoringMonitoredProject) validatePutTimeoutsParameters(value *MonitoringMonitoredProjectTimeouts) error {
+	return nil
+}
+
+func validateMonitoringMonitoredProject_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

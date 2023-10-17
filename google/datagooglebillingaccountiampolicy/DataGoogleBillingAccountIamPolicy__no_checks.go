@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleBillingAccountIamPolicy) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataGoogleBillingAccountIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleBillingAccountIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

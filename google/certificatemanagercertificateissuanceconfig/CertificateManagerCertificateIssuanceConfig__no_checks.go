@@ -7,6 +7,10 @@ package certificatemanagercertificateissuanceconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateGetStrin
 	return nil
 }
 
+func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validatePutCerti
 }
 
 func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfig) validatePutTimeoutsParameters(value *CertificateManagerCertificateIssuanceConfigTimeouts) error {
+	return nil
+}
+
+func validateCertificateManagerCertificateIssuanceConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

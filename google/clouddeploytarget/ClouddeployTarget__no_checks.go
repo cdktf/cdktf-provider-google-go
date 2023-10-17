@@ -7,6 +7,10 @@ package clouddeploytarget
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ClouddeployTarget) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployTarget) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ClouddeployTarget) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployTarget) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployTarget) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployTarget) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (c *jsiiProxy_ClouddeployTarget) validatePutRunParameters(value *Clouddeplo
 }
 
 func (c *jsiiProxy_ClouddeployTarget) validatePutTimeoutsParameters(value *ClouddeployTargetTimeouts) error {
+	return nil
+}
+
+func validateClouddeployTarget_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

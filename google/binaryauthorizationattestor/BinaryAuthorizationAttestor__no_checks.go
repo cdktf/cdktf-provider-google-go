@@ -7,6 +7,10 @@ package binaryauthorizationattestor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BinaryAuthorizationAttestor) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BinaryAuthorizationAttestor) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) validateGetStringMapAttributePar
 	return nil
 }
 
+func (b *jsiiProxy_BinaryAuthorizationAttestor) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BinaryAuthorizationAttestor) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BinaryAuthorizationAttestor) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (b *jsiiProxy_BinaryAuthorizationAttestor) validatePutAttestationAuthorityN
 }
 
 func (b *jsiiProxy_BinaryAuthorizationAttestor) validatePutTimeoutsParameters(value *BinaryAuthorizationAttestorTimeouts) error {
+	return nil
+}
+
+func validateBinaryAuthorizationAttestor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

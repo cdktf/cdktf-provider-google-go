@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnector",
 		reflect.TypeOf((*VpcAccessConnector)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connectedProjects", GoGetter: "ConnectedProjects"},
@@ -35,6 +36,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ipCidrRange", GoGetter: "IpCidrRange"},
 			_jsii_.MemberProperty{JsiiProperty: "ipCidrRangeInput", GoGetter: "IpCidrRangeInput"},
@@ -49,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "minInstancesInput", GoGetter: "MinInstancesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minThroughput", GoGetter: "MinThroughput"},
 			_jsii_.MemberProperty{JsiiProperty: "minThroughputInput", GoGetter: "MinThroughputInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},

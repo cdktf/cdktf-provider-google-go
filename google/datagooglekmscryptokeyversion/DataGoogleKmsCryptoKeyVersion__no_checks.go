@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersion) validateOverrideLogicalIdParam
 	return nil
 }
 
+func validateDataGoogleKmsCryptoKeyVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleKmsCryptoKeyVersion_IsConstructParameters(x interface{}) error {
 	return nil
 }

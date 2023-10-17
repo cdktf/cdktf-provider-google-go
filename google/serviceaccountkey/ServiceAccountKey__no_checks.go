@@ -7,6 +7,10 @@ package serviceaccountkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServiceAccountKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceAccountKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_ServiceAccountKey) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_ServiceAccountKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceAccountKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_ServiceAccountKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceAccountKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateServiceAccountKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

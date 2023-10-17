@@ -7,6 +7,10 @@ package healthcaredatasetiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HealthcareDatasetIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareDatasetIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (h *jsiiProxy_HealthcareDatasetIamPolicy) validateGetStringMapAttributePara
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareDatasetIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareDatasetIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareDatasetIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareDatasetIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateHealthcareDatasetIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

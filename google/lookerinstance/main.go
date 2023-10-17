@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.lookerInstance.LookerInstance",
 		reflect.TypeOf((*LookerInstance)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "adminSettings", GoGetter: "AdminSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "adminSettingsInput", GoGetter: "AdminSettingsInput"},
@@ -44,6 +45,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "ingressPrivateIp", GoGetter: "IngressPrivateIp"},
 			_jsii_.MemberProperty{JsiiProperty: "ingressPublicIp", GoGetter: "IngressPublicIp"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -52,6 +54,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lookerVersion", GoGetter: "LookerVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindow", GoGetter: "MaintenanceWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindowInput", GoGetter: "MaintenanceWindowInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

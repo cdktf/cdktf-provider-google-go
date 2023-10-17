@@ -7,6 +7,10 @@ package apigeeenvironmentiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApigeeEnvironmentIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeEnvironmentIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) validateGetStringMapAttributePar
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeEnvironmentIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeEnvironmentIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeEnvironmentIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApigeeEnvironmentIamBinding) validateOverrideLogicalIdParamet
 }
 
 func (a *jsiiProxy_ApigeeEnvironmentIamBinding) validatePutConditionParameters(value *ApigeeEnvironmentIamBindingCondition) error {
+	return nil
+}
+
+func validateApigeeEnvironmentIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

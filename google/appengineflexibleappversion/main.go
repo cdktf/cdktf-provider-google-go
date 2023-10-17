@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersion",
 		reflect.TypeOf((*AppEngineFlexibleAppVersion)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "apiConfig", GoGetter: "ApiConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "apiConfigInput", GoGetter: "ApiConfigInput"},
@@ -54,6 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "handlersInput", GoGetter: "HandlersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "inboundServices", GoGetter: "InboundServices"},
 			_jsii_.MemberProperty{JsiiProperty: "inboundServicesInput", GoGetter: "InboundServicesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceClass", GoGetter: "InstanceClass"},
@@ -64,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "livenessCheckInput", GoGetter: "LivenessCheckInput"},
 			_jsii_.MemberProperty{JsiiProperty: "manualScaling", GoGetter: "ManualScaling"},
 			_jsii_.MemberProperty{JsiiProperty: "manualScalingInput", GoGetter: "ManualScalingInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},
 			_jsii_.MemberProperty{JsiiProperty: "networkInput", GoGetter: "NetworkInput"},

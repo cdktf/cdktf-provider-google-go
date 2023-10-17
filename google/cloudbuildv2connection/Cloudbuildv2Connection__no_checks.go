@@ -7,6 +7,10 @@ package cloudbuildv2connection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_Cloudbuildv2Connection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudbuildv2Connection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_Cloudbuildv2Connection) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_Cloudbuildv2Connection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudbuildv2Connection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_Cloudbuildv2Connection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (c *jsiiProxy_Cloudbuildv2Connection) validatePutGitlabConfigParameters(val
 }
 
 func (c *jsiiProxy_Cloudbuildv2Connection) validatePutTimeoutsParameters(value *Cloudbuildv2ConnectionTimeouts) error {
+	return nil
+}
+
+func validateCloudbuildv2Connection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

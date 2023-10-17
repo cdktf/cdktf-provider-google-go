@@ -7,6 +7,10 @@ package monitoringcustomservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitoringCustomService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringCustomService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitoringCustomService) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringCustomService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringCustomService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitoringCustomService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MonitoringCustomService) validatePutTelemetryParameters(value
 }
 
 func (m *jsiiProxy_MonitoringCustomService) validatePutTimeoutsParameters(value *MonitoringCustomServiceTimeouts) error {
+	return nil
+}
+
+func validateMonitoringCustomService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

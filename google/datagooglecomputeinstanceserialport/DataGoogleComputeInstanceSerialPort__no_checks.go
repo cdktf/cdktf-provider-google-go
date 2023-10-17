@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleComputeInstanceSerialPort) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataGoogleComputeInstanceSerialPort_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleComputeInstanceSerialPort_IsConstructParameters(x interface{}) error {
 	return nil
 }

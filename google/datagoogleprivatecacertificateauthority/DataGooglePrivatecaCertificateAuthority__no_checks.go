@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGooglePrivatecaCertificateAuthority) validateOverrideLogi
 	return nil
 }
 
+func validateDataGooglePrivatecaCertificateAuthority_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGooglePrivatecaCertificateAuthority_IsConstructParameters(x interface{}) error {
 	return nil
 }

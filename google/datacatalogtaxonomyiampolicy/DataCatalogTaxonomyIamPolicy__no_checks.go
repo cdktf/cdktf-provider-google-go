@@ -7,6 +7,10 @@ package datacatalogtaxonomyiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataCatalogTaxonomyIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogTaxonomyIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (d *jsiiProxy_DataCatalogTaxonomyIamPolicy) validateGetStringMapAttributePa
 	return nil
 }
 
+func (d *jsiiProxy_DataCatalogTaxonomyIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogTaxonomyIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_DataCatalogTaxonomyIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogTaxonomyIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDataCatalogTaxonomyIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

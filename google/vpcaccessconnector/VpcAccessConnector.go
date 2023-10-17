@@ -5,10 +5,10 @@ package vpcaccessconnector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/vpcaccessconnector/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/vpcaccessconnector/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -101,6 +101,9 @@ type VpcAccessConnector interface {
 	TerraformResourceType() *string
 	Timeouts() VpcAccessConnectorTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -122,7 +125,12 @@ type VpcAccessConnector interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -827,6 +835,25 @@ func (j *jsiiProxy_VpcAccessConnector)SetRegion(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a VpcAccessConnector resource upon running "cdktf plan <stack-name>".
+func VpcAccessConnector_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateVpcAccessConnector_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnector",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -909,6 +936,17 @@ func VpcAccessConnector_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (v *jsiiProxy_VpcAccessConnector) AddMoveTarget(moveTarget *string) {
+	if err := v.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (v *jsiiProxy_VpcAccessConnector) AddOverride(path *string, value interface{}) {
@@ -1066,6 +1104,17 @@ func (v *jsiiProxy_VpcAccessConnector) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (v *jsiiProxy_VpcAccessConnector) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := v.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (v *jsiiProxy_VpcAccessConnector) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1080,6 +1129,17 @@ func (v *jsiiProxy_VpcAccessConnector) InterpolationForAttribute(terraformAttrib
 	)
 
 	return returns
+}
+
+func (v *jsiiProxy_VpcAccessConnector) MoveTo(moveTarget *string, index interface{}) {
+	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (v *jsiiProxy_VpcAccessConnector) OverrideLogicalId(newLogicalId *string) {

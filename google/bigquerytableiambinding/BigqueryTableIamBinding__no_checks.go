@@ -7,6 +7,10 @@ package bigquerytableiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigqueryTableIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryTableIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BigqueryTableIamBinding) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryTableIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryTableIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryTableIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BigqueryTableIamBinding) validateOverrideLogicalIdParameters(
 }
 
 func (b *jsiiProxy_BigqueryTableIamBinding) validatePutConditionParameters(value *BigqueryTableIamBindingCondition) error {
+	return nil
+}
+
+func validateBigqueryTableIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

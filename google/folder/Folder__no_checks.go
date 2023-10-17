@@ -7,6 +7,10 @@ package folder
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_Folder) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_Folder) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_Folder) validateGetStringMapAttributeParameters(terraformAttr
 	return nil
 }
 
+func (f *jsiiProxy_Folder) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_Folder) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_Folder) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (f *jsiiProxy_Folder) validateOverrideLogicalIdParameters(newLogicalId *str
 }
 
 func (f *jsiiProxy_Folder) validatePutTimeoutsParameters(value *FolderTimeouts) error {
+	return nil
+}
+
+func validateFolder_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

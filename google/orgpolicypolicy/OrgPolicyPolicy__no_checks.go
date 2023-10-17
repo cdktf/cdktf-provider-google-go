@@ -7,6 +7,10 @@ package orgpolicypolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrgPolicyPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrgPolicyPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OrgPolicyPolicy) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (o *jsiiProxy_OrgPolicyPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrgPolicyPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrgPolicyPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (o *jsiiProxy_OrgPolicyPolicy) validatePutSpecParameters(value *OrgPolicyPo
 }
 
 func (o *jsiiProxy_OrgPolicyPolicy) validatePutTimeoutsParameters(value *OrgPolicyPolicyTimeouts) error {
+	return nil
+}
+
+func validateOrgPolicyPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

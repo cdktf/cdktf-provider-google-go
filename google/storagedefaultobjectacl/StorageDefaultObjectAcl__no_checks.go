@@ -7,6 +7,10 @@ package storagedefaultobjectacl
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageDefaultObjectAcl) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageDefaultObjectAcl) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_StorageDefaultObjectAcl) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_StorageDefaultObjectAcl) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageDefaultObjectAcl) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_StorageDefaultObjectAcl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageDefaultObjectAcl) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateStorageDefaultObjectAcl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

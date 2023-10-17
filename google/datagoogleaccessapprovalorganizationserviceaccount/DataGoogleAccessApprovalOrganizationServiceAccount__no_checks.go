@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleAccessApprovalOrganizationServiceAccount) validateO
 	return nil
 }
 
+func validateDataGoogleAccessApprovalOrganizationServiceAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleAccessApprovalOrganizationServiceAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }

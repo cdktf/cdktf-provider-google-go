@@ -7,6 +7,10 @@ package apigeeenvkeystore
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApigeeEnvKeystore) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeEnvKeystore) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApigeeEnvKeystore) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeEnvKeystore) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeEnvKeystore) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeEnvKeystore) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApigeeEnvKeystore) validateOverrideLogicalIdParameters(newLog
 }
 
 func (a *jsiiProxy_ApigeeEnvKeystore) validatePutTimeoutsParameters(value *ApigeeEnvKeystoreTimeouts) error {
+	return nil
+}
+
+func validateApigeeEnvKeystore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

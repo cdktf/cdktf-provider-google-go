@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleDnsManagedZoneIamPolicy) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataGoogleDnsManagedZoneIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleDnsManagedZoneIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package computefirewall
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeFirewall) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeFirewall) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeFirewall) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (c *jsiiProxy_ComputeFirewall) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeFirewall) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeFirewall) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (c *jsiiProxy_ComputeFirewall) validatePutLogConfigParameters(value *Comput
 }
 
 func (c *jsiiProxy_ComputeFirewall) validatePutTimeoutsParameters(value *ComputeFirewallTimeouts) error {
+	return nil
+}
+
+func validateComputeFirewall_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

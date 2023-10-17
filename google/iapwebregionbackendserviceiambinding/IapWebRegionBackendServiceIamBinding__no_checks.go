@@ -7,6 +7,10 @@ package iapwebregionbackendserviceiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IapWebRegionBackendServiceIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapWebRegionBackendServiceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IapWebRegionBackendServiceIamBinding) validateGetStringMapAtt
 	return nil
 }
 
+func (i *jsiiProxy_IapWebRegionBackendServiceIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapWebRegionBackendServiceIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapWebRegionBackendServiceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IapWebRegionBackendServiceIamBinding) validateOverrideLogical
 }
 
 func (i *jsiiProxy_IapWebRegionBackendServiceIamBinding) validatePutConditionParameters(value *IapWebRegionBackendServiceIamBindingCondition) error {
+	return nil
+}
+
+func validateIapWebRegionBackendServiceIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

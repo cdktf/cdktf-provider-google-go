@@ -7,6 +7,10 @@ package apigeenataddress
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApigeeNatAddress) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeNatAddress) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApigeeNatAddress) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeNatAddress) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeNatAddress) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeNatAddress) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApigeeNatAddress) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (a *jsiiProxy_ApigeeNatAddress) validatePutTimeoutsParameters(value *ApigeeNatAddressTimeouts) error {
+	return nil
+}
+
+func validateApigeeNatAddress_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

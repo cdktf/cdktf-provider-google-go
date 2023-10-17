@@ -5,10 +5,10 @@ package datagooglestoragebucket
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/datagooglestoragebucket/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/datagooglestoragebucket/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -621,6 +621,25 @@ func (j *jsiiProxy_DataGoogleStorageBucket)SetProvider(val cdktf.TerraformProvid
 		"provider",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataGoogleStorageBucket resource upon running "cdktf plan <stack-name>".
+func DataGoogleStorageBucket_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataGoogleStorageBucket_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucket",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

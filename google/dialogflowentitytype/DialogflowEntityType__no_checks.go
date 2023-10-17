@@ -7,6 +7,10 @@ package dialogflowentitytype
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DialogflowEntityType) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowEntityType) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DialogflowEntityType) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowEntityType) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowEntityType) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowEntityType) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DialogflowEntityType) validatePutEntitiesParameters(value int
 }
 
 func (d *jsiiProxy_DialogflowEntityType) validatePutTimeoutsParameters(value *DialogflowEntityTypeTimeouts) error {
+	return nil
+}
+
+func validateDialogflowEntityType_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

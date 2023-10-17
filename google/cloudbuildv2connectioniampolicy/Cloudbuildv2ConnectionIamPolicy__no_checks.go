@@ -7,6 +7,10 @@ package cloudbuildv2connectioniampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) validateGetStringMapAttribut
 	return nil
 }
 
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudbuildv2ConnectionIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCloudbuildv2ConnectionIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

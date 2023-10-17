@@ -7,6 +7,10 @@ package dataprocautoscalingpolicyiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (d *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateGetStringMapAttri
 	return nil
 }
 
+func (d *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocAutoscalingPolicyIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDataprocAutoscalingPolicyIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

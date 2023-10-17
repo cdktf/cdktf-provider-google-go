@@ -7,6 +7,10 @@ package logginglogview
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LoggingLogView) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingLogView) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LoggingLogView) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (l *jsiiProxy_LoggingLogView) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingLogView) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingLogView) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (l *jsiiProxy_LoggingLogView) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (l *jsiiProxy_LoggingLogView) validatePutTimeoutsParameters(value *LoggingLogViewTimeouts) error {
+	return nil
+}
+
+func validateLoggingLogView_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

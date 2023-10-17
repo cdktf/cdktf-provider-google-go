@@ -7,6 +7,10 @@ package monitoringslo
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MonitoringSlo) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringSlo) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MonitoringSlo) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringSlo) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringSlo) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitoringSlo) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (m *jsiiProxy_MonitoringSlo) validatePutTimeoutsParameters(value *Monitorin
 }
 
 func (m *jsiiProxy_MonitoringSlo) validatePutWindowsBasedSliParameters(value *MonitoringSloWindowsBasedSli) error {
+	return nil
+}
+
+func validateMonitoringSlo_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

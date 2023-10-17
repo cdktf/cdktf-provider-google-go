@@ -7,6 +7,10 @@ package beyondcorpappconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BeyondcorpAppConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BeyondcorpAppConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BeyondcorpAppConnection) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (b *jsiiProxy_BeyondcorpAppConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BeyondcorpAppConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BeyondcorpAppConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (b *jsiiProxy_BeyondcorpAppConnection) validatePutGatewayParameters(value *
 }
 
 func (b *jsiiProxy_BeyondcorpAppConnection) validatePutTimeoutsParameters(value *BeyondcorpAppConnectionTimeouts) error {
+	return nil
+}
+
+func validateBeyondcorpAppConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleComputeDefaultServiceAccount) validateOverrideLogic
 	return nil
 }
 
+func validateDataGoogleComputeDefaultServiceAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleComputeDefaultServiceAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }

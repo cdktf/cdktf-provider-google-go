@@ -7,6 +7,10 @@ package computeregioninstancetemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionInstanceTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionInstanceTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplate) validateGetStringMapAttributeP
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionInstanceTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionInstanceTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -96,6 +108,10 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplate) validatePutShieldedInstanceCon
 }
 
 func (c *jsiiProxy_ComputeRegionInstanceTemplate) validatePutTimeoutsParameters(value *ComputeRegionInstanceTemplateTimeouts) error {
+	return nil
+}
+
+func validateComputeRegionInstanceTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

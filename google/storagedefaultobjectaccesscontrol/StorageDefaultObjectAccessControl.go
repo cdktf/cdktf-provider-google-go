@@ -5,10 +5,10 @@ package storagedefaultobjectaccesscontrol
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/storagedefaultobjectaccesscontrol/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/storagedefaultobjectaccesscontrol/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -83,6 +83,9 @@ type StorageDefaultObjectAccessControl interface {
 	TerraformResourceType() *string
 	Timeouts() StorageDefaultObjectAccessControlTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -104,7 +107,12 @@ type StorageDefaultObjectAccessControl interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -613,6 +621,25 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControl)SetRole(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a StorageDefaultObjectAccessControl resource upon running "cdktf plan <stack-name>".
+func StorageDefaultObjectAccessControl_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateStorageDefaultObjectAccessControl_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.storageDefaultObjectAccessControl.StorageDefaultObjectAccessControl",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -695,6 +722,17 @@ func StorageDefaultObjectAccessControl_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (s *jsiiProxy_StorageDefaultObjectAccessControl) AddMoveTarget(moveTarget *string) {
+	if err := s.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (s *jsiiProxy_StorageDefaultObjectAccessControl) AddOverride(path *string, value interface{}) {
@@ -852,6 +890,17 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) GetStringMapAttribute(terr
 	return returns
 }
 
+func (s *jsiiProxy_StorageDefaultObjectAccessControl) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := s.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (s *jsiiProxy_StorageDefaultObjectAccessControl) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -866,6 +915,17 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControl) InterpolationForAttribute(
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_StorageDefaultObjectAccessControl) MoveTo(moveTarget *string, index interface{}) {
+	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (s *jsiiProxy_StorageDefaultObjectAccessControl) OverrideLogicalId(newLogicalId *string) {

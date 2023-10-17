@@ -7,6 +7,10 @@ package gkehubfeaturemembership
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GkeHubFeatureMembership) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubFeatureMembership) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GkeHubFeatureMembership) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GkeHubFeatureMembership) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubFeatureMembership) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeHubFeatureMembership) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (g *jsiiProxy_GkeHubFeatureMembership) validatePutMeshParameters(value *Gke
 }
 
 func (g *jsiiProxy_GkeHubFeatureMembership) validatePutTimeoutsParameters(value *GkeHubFeatureMembershipTimeouts) error {
+	return nil
+}
+
+func validateGkeHubFeatureMembership_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

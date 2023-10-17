@@ -5,10 +5,10 @@ package datacatalogtagtemplateiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/datacatalogtagtemplateiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/datacatalogtagtemplateiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -77,6 +77,9 @@ type DataCatalogTagTemplateIamPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -98,7 +101,12 @@ type DataCatalogTagTemplateIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -546,6 +554,25 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamPolicy)SetTagTemplate(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a DataCatalogTagTemplateIamPolicy resource upon running "cdktf plan <stack-name>".
+func DataCatalogTagTemplateIamPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataCatalogTagTemplateIamPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.dataCatalogTagTemplateIamPolicy.DataCatalogTagTemplateIamPolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -628,6 +655,17 @@ func DataCatalogTagTemplateIamPolicy_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (d *jsiiProxy_DataCatalogTagTemplateIamPolicy) AddMoveTarget(moveTarget *string) {
+	if err := d.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (d *jsiiProxy_DataCatalogTagTemplateIamPolicy) AddOverride(path *string, value interface{}) {
@@ -785,6 +823,17 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamPolicy) GetStringMapAttribute(terraf
 	return returns
 }
 
+func (d *jsiiProxy_DataCatalogTagTemplateIamPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := d.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (d *jsiiProxy_DataCatalogTagTemplateIamPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -799,6 +848,17 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamPolicy) InterpolationForAttribute(te
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataCatalogTagTemplateIamPolicy) MoveTo(moveTarget *string, index interface{}) {
+	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (d *jsiiProxy_DataCatalogTagTemplateIamPolicy) OverrideLogicalId(newLogicalId *string) {

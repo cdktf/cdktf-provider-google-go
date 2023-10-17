@@ -7,6 +7,10 @@ package sccprojectcustommodule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SccProjectCustomModule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccProjectCustomModule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SccProjectCustomModule) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (s *jsiiProxy_SccProjectCustomModule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccProjectCustomModule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccProjectCustomModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SccProjectCustomModule) validatePutCustomConfigParameters(val
 }
 
 func (s *jsiiProxy_SccProjectCustomModule) validatePutTimeoutsParameters(value *SccProjectCustomModuleTimeouts) error {
+	return nil
+}
+
+func validateSccProjectCustomModule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

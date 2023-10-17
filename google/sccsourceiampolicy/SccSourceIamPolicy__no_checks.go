@@ -7,6 +7,10 @@ package sccsourceiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SccSourceIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccSourceIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_SccSourceIamPolicy) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_SccSourceIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccSourceIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_SccSourceIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccSourceIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateSccSourceIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

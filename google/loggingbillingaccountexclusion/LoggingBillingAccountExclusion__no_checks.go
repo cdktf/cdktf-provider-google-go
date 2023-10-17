@@ -7,6 +7,10 @@ package loggingbillingaccountexclusion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LoggingBillingAccountExclusion) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingBillingAccountExclusion) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_LoggingBillingAccountExclusion) validateGetStringMapAttribute
 	return nil
 }
 
+func (l *jsiiProxy_LoggingBillingAccountExclusion) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingBillingAccountExclusion) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LoggingBillingAccountExclusion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingBillingAccountExclusion) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLoggingBillingAccountExclusion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

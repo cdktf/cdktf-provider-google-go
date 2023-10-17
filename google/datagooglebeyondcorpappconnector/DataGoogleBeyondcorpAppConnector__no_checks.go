@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleBeyondcorpAppConnector) validateOverrideLogicalIdPa
 	return nil
 }
 
+func validateDataGoogleBeyondcorpAppConnector_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleBeyondcorpAppConnector_IsConstructParameters(x interface{}) error {
 	return nil
 }

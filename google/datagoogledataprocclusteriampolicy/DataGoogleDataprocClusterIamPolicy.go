@@ -5,10 +5,10 @@ package datagoogledataprocclusteriampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v11/datagoogledataprocclusteriampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v12/datagoogledataprocclusteriampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -471,6 +471,25 @@ func (j *jsiiProxy_DataGoogleDataprocClusterIamPolicy)SetRegion(val *string) {
 		"region",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataGoogleDataprocClusterIamPolicy resource upon running "cdktf plan <stack-name>".
+func DataGoogleDataprocClusterIamPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataGoogleDataprocClusterIamPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google.dataGoogleDataprocClusterIamPolicy.DataGoogleDataprocClusterIamPolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

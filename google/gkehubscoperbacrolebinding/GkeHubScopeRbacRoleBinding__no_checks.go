@@ -7,6 +7,10 @@ package gkehubscoperbacrolebinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validatePutRoleParameters(value *
 }
 
 func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validatePutTimeoutsParameters(value *GkeHubScopeRbacRoleBindingTimeouts) error {
+	return nil
+}
+
+func validateGkeHubScopeRbacRoleBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

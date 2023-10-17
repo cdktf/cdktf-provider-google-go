@@ -7,6 +7,10 @@ package iamdenypolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IamDenyPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamDenyPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IamDenyPolicy) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (i *jsiiProxy_IamDenyPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamDenyPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamDenyPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (i *jsiiProxy_IamDenyPolicy) validatePutRulesParameters(value interface{}) 
 }
 
 func (i *jsiiProxy_IamDenyPolicy) validatePutTimeoutsParameters(value *IamDenyPolicyTimeouts) error {
+	return nil
+}
+
+func validateIamDenyPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

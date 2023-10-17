@@ -7,6 +7,10 @@ package containerattachedcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerAttachedCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAttachedCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ContainerAttachedCluster) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAttachedCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAttachedCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAttachedCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -80,6 +92,10 @@ func (c *jsiiProxy_ContainerAttachedCluster) validatePutOidcConfigParameters(val
 }
 
 func (c *jsiiProxy_ContainerAttachedCluster) validatePutTimeoutsParameters(value *ContainerAttachedClusterTimeouts) error {
+	return nil
+}
+
+func validateContainerAttachedCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

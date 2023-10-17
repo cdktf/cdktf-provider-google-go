@@ -7,6 +7,10 @@ package datastreamconnectionprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatastreamConnectionProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamConnectionProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DatastreamConnectionProfile) validateGetStringMapAttributePar
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamConnectionProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamConnectionProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatastreamConnectionProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (d *jsiiProxy_DatastreamConnectionProfile) validatePutPrivateConnectivityPa
 }
 
 func (d *jsiiProxy_DatastreamConnectionProfile) validatePutTimeoutsParameters(value *DatastreamConnectionProfileTimeouts) error {
+	return nil
+}
+
+func validateDatastreamConnectionProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

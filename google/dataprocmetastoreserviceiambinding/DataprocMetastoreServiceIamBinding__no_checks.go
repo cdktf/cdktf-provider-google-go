@@ -7,6 +7,10 @@ package dataprocmetastoreserviceiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataprocMetastoreServiceIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreServiceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataprocMetastoreServiceIamBinding) validateGetStringMapAttri
 	return nil
 }
 
+func (d *jsiiProxy_DataprocMetastoreServiceIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreServiceIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreServiceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DataprocMetastoreServiceIamBinding) validateOverrideLogicalId
 }
 
 func (d *jsiiProxy_DataprocMetastoreServiceIamBinding) validatePutConditionParameters(value *DataprocMetastoreServiceIamBindingCondition) error {
+	return nil
+}
+
+func validateDataprocMetastoreServiceIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

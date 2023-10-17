@@ -7,6 +7,10 @@ package pubsublitesubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PubsubLiteSubscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubLiteSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PubsubLiteSubscription) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (p *jsiiProxy_PubsubLiteSubscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubLiteSubscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubLiteSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (p *jsiiProxy_PubsubLiteSubscription) validatePutDeliveryConfigParameters(v
 }
 
 func (p *jsiiProxy_PubsubLiteSubscription) validatePutTimeoutsParameters(value *PubsubLiteSubscriptionTimeouts) error {
+	return nil
+}
+
+func validatePubsubLiteSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

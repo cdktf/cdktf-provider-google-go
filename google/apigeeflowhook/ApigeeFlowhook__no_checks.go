@@ -7,6 +7,10 @@ package apigeeflowhook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApigeeFlowhook) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeFlowhook) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApigeeFlowhook) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeFlowhook) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeFlowhook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeFlowhook) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApigeeFlowhook) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (a *jsiiProxy_ApigeeFlowhook) validatePutTimeoutsParameters(value *ApigeeFlowhookTimeouts) error {
+	return nil
+}
+
+func validateApigeeFlowhook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

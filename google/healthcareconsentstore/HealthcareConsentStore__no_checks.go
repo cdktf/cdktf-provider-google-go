@@ -7,6 +7,10 @@ package healthcareconsentstore
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HealthcareConsentStore) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareConsentStore) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (h *jsiiProxy_HealthcareConsentStore) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareConsentStore) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareConsentStore) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareConsentStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (h *jsiiProxy_HealthcareConsentStore) validateOverrideLogicalIdParameters(n
 }
 
 func (h *jsiiProxy_HealthcareConsentStore) validatePutTimeoutsParameters(value *HealthcareConsentStoreTimeouts) error {
+	return nil
+}
+
+func validateHealthcareConsentStore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

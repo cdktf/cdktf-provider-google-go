@@ -7,6 +7,10 @@ package pubsubsubscriptioniambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PubsubSubscriptionIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubSubscriptionIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PubsubSubscriptionIamBinding) validateGetStringMapAttributePa
 	return nil
 }
 
+func (p *jsiiProxy_PubsubSubscriptionIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubSubscriptionIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubSubscriptionIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PubsubSubscriptionIamBinding) validateOverrideLogicalIdParame
 }
 
 func (p *jsiiProxy_PubsubSubscriptionIamBinding) validatePutConditionParameters(value *PubsubSubscriptionIamBindingCondition) error {
+	return nil
+}
+
+func validatePubsubSubscriptionIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

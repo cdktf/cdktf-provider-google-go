@@ -7,6 +7,10 @@ package endpointsserviceconsumersiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EndpointsServiceConsumersIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EndpointsServiceConsumersIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EndpointsServiceConsumersIamBinding) validateGetStringMapAttr
 	return nil
 }
 
+func (e *jsiiProxy_EndpointsServiceConsumersIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EndpointsServiceConsumersIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EndpointsServiceConsumersIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_EndpointsServiceConsumersIamBinding) validateOverrideLogicalI
 }
 
 func (e *jsiiProxy_EndpointsServiceConsumersIamBinding) validatePutConditionParameters(value *EndpointsServiceConsumersIamBindingCondition) error {
+	return nil
+}
+
+func validateEndpointsServiceConsumersIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

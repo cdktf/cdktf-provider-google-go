@@ -7,6 +7,10 @@ package notebooksruntime
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NotebooksRuntime) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksRuntime) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NotebooksRuntime) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (n *jsiiProxy_NotebooksRuntime) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksRuntime) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksRuntime) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (n *jsiiProxy_NotebooksRuntime) validatePutTimeoutsParameters(value *Notebo
 }
 
 func (n *jsiiProxy_NotebooksRuntime) validatePutVirtualMachineParameters(value *NotebooksRuntimeVirtualMachine) error {
+	return nil
+}
+
+func validateNotebooksRuntime_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

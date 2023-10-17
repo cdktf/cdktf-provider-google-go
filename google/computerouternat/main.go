@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.computeRouterNat.ComputeRouterNat",
 		reflect.TypeOf((*ComputeRouterNat)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
@@ -42,6 +43,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "icmpIdleTimeoutSecInput", GoGetter: "IcmpIdleTimeoutSecInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "logConfig", GoGetter: "LogConfig"},
@@ -50,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxPortsPerVmInput", GoGetter: "MaxPortsPerVmInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minPortsPerVm", GoGetter: "MinPortsPerVm"},
 			_jsii_.MemberProperty{JsiiProperty: "minPortsPerVmInput", GoGetter: "MinPortsPerVmInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "natIpAllocateOption", GoGetter: "NatIpAllocateOption"},

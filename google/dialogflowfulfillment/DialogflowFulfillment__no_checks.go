@@ -7,6 +7,10 @@ package dialogflowfulfillment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DialogflowFulfillment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowFulfillment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DialogflowFulfillment) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowFulfillment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowFulfillment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowFulfillment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (d *jsiiProxy_DialogflowFulfillment) validatePutGenericWebServiceParameters
 }
 
 func (d *jsiiProxy_DialogflowFulfillment) validatePutTimeoutsParameters(value *DialogflowFulfillmentTimeouts) error {
+	return nil
+}
+
+func validateDialogflowFulfillment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package cloudbuildv2connectioniambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateGetStringMapAttribu
 	return nil
 }
 
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validateOverrideLogicalIdPa
 }
 
 func (c *jsiiProxy_Cloudbuildv2ConnectionIamBinding) validatePutConditionParameters(value *Cloudbuildv2ConnectionIamBindingCondition) error {
+	return nil
+}
+
+func validateCloudbuildv2ConnectionIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

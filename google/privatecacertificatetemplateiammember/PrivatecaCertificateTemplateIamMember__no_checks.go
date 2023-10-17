@@ -7,6 +7,10 @@ package privatecacertificatetemplateiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateGetStringMapAt
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validateOverrideLogica
 }
 
 func (p *jsiiProxy_PrivatecaCertificateTemplateIamMember) validatePutConditionParameters(value *PrivatecaCertificateTemplateIamMemberCondition) error {
+	return nil
+}
+
+func validatePrivatecaCertificateTemplateIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package sccsource
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SccSource) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccSource) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SccSource) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (s *jsiiProxy_SccSource) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccSource) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccSource) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SccSource) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (s *jsiiProxy_SccSource) validatePutTimeoutsParameters(value *SccSourceTimeouts) error {
+	return nil
+}
+
+func validateSccSource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

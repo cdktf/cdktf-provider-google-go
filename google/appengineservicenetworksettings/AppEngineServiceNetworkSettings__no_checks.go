@@ -7,6 +7,10 @@ package appengineservicenetworksettings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppEngineServiceNetworkSettings) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppEngineServiceNetworkSettings) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppEngineServiceNetworkSettings) validateGetStringMapAttribut
 	return nil
 }
 
+func (a *jsiiProxy_AppEngineServiceNetworkSettings) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppEngineServiceNetworkSettings) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppEngineServiceNetworkSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_AppEngineServiceNetworkSettings) validatePutNetworkSettingsPa
 }
 
 func (a *jsiiProxy_AppEngineServiceNetworkSettings) validatePutTimeoutsParameters(value *AppEngineServiceNetworkSettingsTimeouts) error {
+	return nil
+}
+
+func validateAppEngineServiceNetworkSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

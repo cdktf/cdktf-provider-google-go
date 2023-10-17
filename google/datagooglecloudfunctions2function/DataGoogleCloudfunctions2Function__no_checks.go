@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleCloudfunctions2Function) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataGoogleCloudfunctions2Function_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleCloudfunctions2Function_IsConstructParameters(x interface{}) error {
 	return nil
 }

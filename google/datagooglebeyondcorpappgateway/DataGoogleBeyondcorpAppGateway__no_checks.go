@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleBeyondcorpAppGateway) validateOverrideLogicalIdPara
 	return nil
 }
 
+func validateDataGoogleBeyondcorpAppGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleBeyondcorpAppGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }

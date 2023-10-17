@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataGoogleIamPolicy) validatePutBindingParameters(value inter
 	return nil
 }
 
+func validateDataGoogleIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

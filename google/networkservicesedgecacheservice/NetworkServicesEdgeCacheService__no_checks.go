@@ -7,6 +7,10 @@ package networkservicesedgecacheservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) validateGetStringMapAttribut
 	return nil
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) validatePutRoutingParameters
 }
 
 func (n *jsiiProxy_NetworkServicesEdgeCacheService) validatePutTimeoutsParameters(value *NetworkServicesEdgeCacheServiceTimeouts) error {
+	return nil
+}
+
+func validateNetworkServicesEdgeCacheService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package dialogflowagent
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DialogflowAgent) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowAgent) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DialogflowAgent) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowAgent) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowAgent) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowAgent) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DialogflowAgent) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (d *jsiiProxy_DialogflowAgent) validatePutTimeoutsParameters(value *DialogflowAgentTimeouts) error {
+	return nil
+}
+
+func validateDialogflowAgent_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

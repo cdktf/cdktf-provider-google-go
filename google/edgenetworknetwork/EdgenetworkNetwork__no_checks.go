@@ -7,6 +7,10 @@ package edgenetworknetwork
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EdgenetworkNetwork) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EdgenetworkNetwork) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EdgenetworkNetwork) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (e *jsiiProxy_EdgenetworkNetwork) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EdgenetworkNetwork) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EdgenetworkNetwork) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_EdgenetworkNetwork) validateOverrideLogicalIdParameters(newLo
 }
 
 func (e *jsiiProxy_EdgenetworkNetwork) validatePutTimeoutsParameters(value *EdgenetworkNetworkTimeouts) error {
+	return nil
+}
+
+func validateEdgenetworkNetwork_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

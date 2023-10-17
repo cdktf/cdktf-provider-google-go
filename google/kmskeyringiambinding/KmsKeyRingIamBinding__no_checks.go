@@ -7,6 +7,10 @@ package kmskeyringiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KmsKeyRingIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsKeyRingIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KmsKeyRingIamBinding) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (k *jsiiProxy_KmsKeyRingIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsKeyRingIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsKeyRingIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KmsKeyRingIamBinding) validateOverrideLogicalIdParameters(new
 }
 
 func (k *jsiiProxy_KmsKeyRingIamBinding) validatePutConditionParameters(value *KmsKeyRingIamBindingCondition) error {
+	return nil
+}
+
+func validateKmsKeyRingIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

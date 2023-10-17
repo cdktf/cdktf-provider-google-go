@@ -7,6 +7,10 @@ package tagstagvalueiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TagsTagValueIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TagsTagValueIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (t *jsiiProxy_TagsTagValueIamPolicy) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (t *jsiiProxy_TagsTagValueIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TagsTagValueIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TagsTagValueIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TagsTagValueIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTagsTagValueIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

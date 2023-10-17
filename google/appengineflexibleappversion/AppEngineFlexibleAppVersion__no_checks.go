@@ -7,6 +7,10 @@ package appengineflexibleappversion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppEngineFlexibleAppVersion) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppEngineFlexibleAppVersion) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersion) validateGetStringMapAttributePar
 	return nil
 }
 
+func (a *jsiiProxy_AppEngineFlexibleAppVersion) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppEngineFlexibleAppVersion) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppEngineFlexibleAppVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -104,6 +116,10 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersion) validatePutTimeoutsParameters(va
 }
 
 func (a *jsiiProxy_AppEngineFlexibleAppVersion) validatePutVpcAccessConnectorParameters(value *AppEngineFlexibleAppVersionVpcAccessConnector) error {
+	return nil
+}
+
+func validateAppEngineFlexibleAppVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

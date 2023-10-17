@@ -7,6 +7,10 @@ package folderiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FolderIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FolderIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (f *jsiiProxy_FolderIamPolicy) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (f *jsiiProxy_FolderIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FolderIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (f *jsiiProxy_FolderIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FolderIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateFolderIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

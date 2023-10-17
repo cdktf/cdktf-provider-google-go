@@ -7,6 +7,10 @@ package composerenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComposerEnvironment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComposerEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComposerEnvironment) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (c *jsiiProxy_ComposerEnvironment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComposerEnvironment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComposerEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_ComposerEnvironment) validatePutConfigParameters(value *Compo
 }
 
 func (c *jsiiProxy_ComposerEnvironment) validatePutTimeoutsParameters(value *ComposerEnvironmentTimeouts) error {
+	return nil
+}
+
+func validateComposerEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

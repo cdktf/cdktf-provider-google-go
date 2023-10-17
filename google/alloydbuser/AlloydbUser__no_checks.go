@@ -7,6 +7,10 @@ package alloydbuser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AlloydbUser) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbUser) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AlloydbUser) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbUser) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbUser) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbUser) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AlloydbUser) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (a *jsiiProxy_AlloydbUser) validatePutTimeoutsParameters(value *AlloydbUserTimeouts) error {
+	return nil
+}
+
+func validateAlloydbUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

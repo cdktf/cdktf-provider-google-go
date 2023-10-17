@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleBillingAccount) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func validateDataGoogleBillingAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleBillingAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.bigqueryTable.BigqueryTable",
 		reflect.TypeOf((*BigqueryTable)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "clustering", GoGetter: "Clustering"},
@@ -53,6 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
@@ -63,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "materializedViewInput", GoGetter: "MaterializedViewInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxStaleness", GoGetter: "MaxStaleness"},
 			_jsii_.MemberProperty{JsiiProperty: "maxStalenessInput", GoGetter: "MaxStalenessInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "numBytes", GoGetter: "NumBytes"},
 			_jsii_.MemberProperty{JsiiProperty: "numLongTermBytes", GoGetter: "NumLongTermBytes"},

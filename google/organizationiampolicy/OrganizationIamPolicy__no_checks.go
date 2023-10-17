@@ -7,6 +7,10 @@ package organizationiampolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrganizationIamPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationIamPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (o *jsiiProxy_OrganizationIamPolicy) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationIamPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationIamPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateOrganizationIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

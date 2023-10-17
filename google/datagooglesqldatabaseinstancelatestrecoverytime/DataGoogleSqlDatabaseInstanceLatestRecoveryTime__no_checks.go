@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceLatestRecoveryTime) validateOver
 	return nil
 }
 
+func validateDataGoogleSqlDatabaseInstanceLatestRecoveryTime_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleSqlDatabaseInstanceLatestRecoveryTime_IsConstructParameters(x interface{}) error {
 	return nil
 }

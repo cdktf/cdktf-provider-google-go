@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataGoogleDnsKeys) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func validateDataGoogleDnsKeys_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataGoogleDnsKeys_IsConstructParameters(x interface{}) error {
 	return nil
 }

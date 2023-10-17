@@ -7,6 +7,10 @@ package bigqueryanalyticshubdataexchange
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) validateGetStringMapAttribu
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) validateOverrideLogicalIdPa
 }
 
 func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) validatePutTimeoutsParameters(value *BigqueryAnalyticsHubDataExchangeTimeouts) error {
+	return nil
+}
+
+func validateBigqueryAnalyticsHubDataExchange_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 
