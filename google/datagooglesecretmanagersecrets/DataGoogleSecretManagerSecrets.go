@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/secret_manager_secrets google_secret_manager_secrets}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/data-sources/secret_manager_secrets google_secret_manager_secrets}.
 type DataGoogleSecretManagerSecrets interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecrets) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/secret_manager_secrets google_secret_manager_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/data-sources/secret_manager_secrets google_secret_manager_secrets} Data Source.
 func NewDataGoogleSecretManagerSecrets(scope constructs.Construct, id *string, config *DataGoogleSecretManagerSecretsConfig) DataGoogleSecretManagerSecrets {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewDataGoogleSecretManagerSecrets(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/secret_manager_secrets google_secret_manager_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/data-sources/secret_manager_secrets google_secret_manager_secrets} Data Source.
 func NewDataGoogleSecretManagerSecrets_Override(d DataGoogleSecretManagerSecrets, scope constructs.Construct, id *string, config *DataGoogleSecretManagerSecretsConfig) {
 	_init_.Initialize()
 

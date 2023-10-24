@@ -67,6 +67,10 @@ func (j *jsiiProxy_StorageBucketAutoclassOutputReference) validateSetInternalVal
 	return nil
 }
 
+func (j *jsiiProxy_StorageBucketAutoclassOutputReference) validateSetTerminalStorageClassParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBucketAutoclassOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

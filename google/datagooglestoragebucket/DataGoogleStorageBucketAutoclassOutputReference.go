@@ -33,6 +33,7 @@ type DataGoogleStorageBucketAutoclassOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleStorageBucketAutoclass
 	SetInternalValue(val *DataGoogleStorageBucketAutoclass)
+	TerminalStorageClass() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -135,6 +136,16 @@ func (j *jsiiProxy_DataGoogleStorageBucketAutoclassOutputReference) InternalValu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucketAutoclassOutputReference) TerminalStorageClass() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terminalStorageClass",
 		&returns,
 	)
 	return returns

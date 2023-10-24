@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/dns_managed_zone_iam_member google_dns_managed_zone_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/dns_managed_zone_iam_member google_dns_managed_zone_iam_member}.
 type DnsManagedZoneIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_DnsManagedZoneIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/dns_managed_zone_iam_member google_dns_managed_zone_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/dns_managed_zone_iam_member google_dns_managed_zone_iam_member} Resource.
 func NewDnsManagedZoneIamMember(scope constructs.Construct, id *string, config *DnsManagedZoneIamMemberConfig) DnsManagedZoneIamMember {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewDnsManagedZoneIamMember(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/dns_managed_zone_iam_member google_dns_managed_zone_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/dns_managed_zone_iam_member google_dns_managed_zone_iam_member} Resource.
 func NewDnsManagedZoneIamMember_Override(d DnsManagedZoneIamMember, scope constructs.Construct, id *string, config *DnsManagedZoneIamMemberConfig) {
 	_init_.Initialize()
 

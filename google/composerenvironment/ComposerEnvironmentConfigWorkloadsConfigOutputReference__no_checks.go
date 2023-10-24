@@ -51,6 +51,10 @@ func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) vali
 	return nil
 }
 
+func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) validatePutTriggererParameters(value *ComposerEnvironmentConfigWorkloadsConfigTriggerer) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) validatePutWebServerParameters(value *ComposerEnvironmentConfigWorkloadsConfigWebServer) error {
 	return nil
 }

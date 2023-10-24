@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/compute_network google_compute_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/data-sources/compute_network google_compute_network}.
 type DataGoogleComputeNetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -40,6 +40,7 @@ type DataGoogleComputeNetwork interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InternalIpv6Range() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -221,6 +222,16 @@ func (j *jsiiProxy_DataGoogleComputeNetwork) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeNetwork) InternalIpv6Range() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"internalIpv6Range",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeNetwork) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -352,7 +363,7 @@ func (j *jsiiProxy_DataGoogleComputeNetwork) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/compute_network google_compute_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/data-sources/compute_network google_compute_network} Data Source.
 func NewDataGoogleComputeNetwork(scope constructs.Construct, id *string, config *DataGoogleComputeNetworkConfig) DataGoogleComputeNetwork {
 	_init_.Initialize()
 
@@ -370,7 +381,7 @@ func NewDataGoogleComputeNetwork(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/compute_network google_compute_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/data-sources/compute_network google_compute_network} Data Source.
 func NewDataGoogleComputeNetwork_Override(d DataGoogleComputeNetwork, scope constructs.Construct, id *string, config *DataGoogleComputeNetworkConfig) {
 	_init_.Initialize()
 

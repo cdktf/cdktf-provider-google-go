@@ -167,6 +167,10 @@ func (j *jsiiProxy_BigqueryTable) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryTable) validateSetRequirePartitionFilterParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryTable) validateSetSchemaParameters(val *string) error {
 	return nil
 }

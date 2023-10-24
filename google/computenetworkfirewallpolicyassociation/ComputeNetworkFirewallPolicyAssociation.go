@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_network_firewall_policy_association google_compute_network_firewall_policy_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/compute_network_firewall_policy_association google_compute_network_firewall_policy_association}.
 type ComputeNetworkFirewallPolicyAssociation interface {
 	cdktf.TerraformResource
 	AttachmentTarget() *string
@@ -425,7 +425,7 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyAssociation) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_network_firewall_policy_association google_compute_network_firewall_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/compute_network_firewall_policy_association google_compute_network_firewall_policy_association} Resource.
 func NewComputeNetworkFirewallPolicyAssociation(scope constructs.Construct, id *string, config *ComputeNetworkFirewallPolicyAssociationConfig) ComputeNetworkFirewallPolicyAssociation {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewComputeNetworkFirewallPolicyAssociation(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_network_firewall_policy_association google_compute_network_firewall_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/compute_network_firewall_policy_association google_compute_network_firewall_policy_association} Resource.
 func NewComputeNetworkFirewallPolicyAssociation_Override(c ComputeNetworkFirewallPolicyAssociation, scope constructs.Construct, id *string, config *ComputeNetworkFirewallPolicyAssociationConfig) {
 	_init_.Initialize()
 

@@ -42,6 +42,8 @@ type ComposerEnvironmentConfigWorkloadsConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Triggerer() ComposerEnvironmentConfigWorkloadsConfigTriggererOutputReference
+	TriggererInput() *ComposerEnvironmentConfigWorkloadsConfigTriggerer
 	WebServer() ComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference
 	WebServerInput() *ComposerEnvironmentConfigWorkloadsConfigWebServer
 	Worker() ComposerEnvironmentConfigWorkloadsConfigWorkerOutputReference
@@ -71,9 +73,11 @@ type ComposerEnvironmentConfigWorkloadsConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutScheduler(value *ComposerEnvironmentConfigWorkloadsConfigScheduler)
+	PutTriggerer(value *ComposerEnvironmentConfigWorkloadsConfigTriggerer)
 	PutWebServer(value *ComposerEnvironmentConfigWorkloadsConfigWebServer)
 	PutWorker(value *ComposerEnvironmentConfigWorkloadsConfigWorker)
 	ResetScheduler()
+	ResetTriggerer()
 	ResetWebServer()
 	ResetWorker()
 	// Produce the Token's value at resolution time.
@@ -176,6 +180,26 @@ func (j *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) Terr
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) Triggerer() ComposerEnvironmentConfigWorkloadsConfigTriggererOutputReference {
+	var returns ComposerEnvironmentConfigWorkloadsConfigTriggererOutputReference
+	_jsii_.Get(
+		j,
+		"triggerer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) TriggererInput() *ComposerEnvironmentConfigWorkloadsConfigTriggerer {
+	var returns *ComposerEnvironmentConfigWorkloadsConfigTriggerer
+	_jsii_.Get(
+		j,
+		"triggererInput",
 		&returns,
 	)
 	return returns
@@ -501,6 +525,17 @@ func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) PutS
 	)
 }
 
+func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) PutTriggerer(value *ComposerEnvironmentConfigWorkloadsConfigTriggerer) {
+	if err := c.validatePutTriggererParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTriggerer",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) PutWebServer(value *ComposerEnvironmentConfigWorkloadsConfigWebServer) {
 	if err := c.validatePutWebServerParameters(value); err != nil {
 		panic(err)
@@ -527,6 +562,14 @@ func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) Rese
 	_jsii_.InvokeVoid(
 		c,
 		"resetScheduler",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) ResetTriggerer() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTriggerer",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection}.
 type DatabaseMigrationServicePrivateConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -517,7 +517,7 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) VpcPeeringConfigIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection} Resource.
 func NewDatabaseMigrationServicePrivateConnection(scope constructs.Construct, id *string, config *DatabaseMigrationServicePrivateConnectionConfig) DatabaseMigrationServicePrivateConnection {
 	_init_.Initialize()
 
@@ -535,7 +535,7 @@ func NewDatabaseMigrationServicePrivateConnection(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection} Resource.
 func NewDatabaseMigrationServicePrivateConnection_Override(d DatabaseMigrationServicePrivateConnection, scope constructs.Construct, id *string, config *DatabaseMigrationServicePrivateConnectionConfig) {
 	_init_.Initialize()
 

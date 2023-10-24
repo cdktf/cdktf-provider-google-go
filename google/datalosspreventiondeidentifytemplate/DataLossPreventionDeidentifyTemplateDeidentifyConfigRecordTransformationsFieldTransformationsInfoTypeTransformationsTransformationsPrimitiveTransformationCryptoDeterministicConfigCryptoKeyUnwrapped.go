@@ -9,7 +9,7 @@ type DataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFi
 	//
 	// A base64-encoded string.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/data_loss_prevention_deidentify_template#key DataLossPreventionDeidentifyTemplate#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/data_loss_prevention_deidentify_template#key DataLossPreventionDeidentifyTemplate#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 }
 

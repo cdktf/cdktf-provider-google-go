@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/alloydb_instance google_alloydb_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/alloydb_instance google_alloydb_instance}.
 type AlloydbInstance interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -23,6 +23,8 @@ type AlloydbInstance interface {
 	AvailabilityTypeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientConnectionConfig() AlloydbInstanceClientConnectionConfigOutputReference
+	ClientConnectionConfigInput() *AlloydbInstanceClientConnectionConfig
 	Cluster() *string
 	SetCluster(val *string)
 	ClusterInput() *string
@@ -142,12 +144,14 @@ type AlloydbInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutClientConnectionConfig(value *AlloydbInstanceClientConnectionConfig)
 	PutMachineConfig(value *AlloydbInstanceMachineConfig)
 	PutQueryInsightsConfig(value *AlloydbInstanceQueryInsightsConfig)
 	PutReadPoolConfig(value *AlloydbInstanceReadPoolConfig)
 	PutTimeouts(value *AlloydbInstanceTimeouts)
 	ResetAnnotations()
 	ResetAvailabilityType()
+	ResetClientConnectionConfig()
 	ResetDatabaseFlags()
 	ResetDisplayName()
 	ResetGceZone()
@@ -220,6 +224,26 @@ func (j *jsiiProxy_AlloydbInstance) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstance) ClientConnectionConfig() AlloydbInstanceClientConnectionConfigOutputReference {
+	var returns AlloydbInstanceClientConnectionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"clientConnectionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstance) ClientConnectionConfigInput() *AlloydbInstanceClientConnectionConfig {
+	var returns *AlloydbInstanceClientConnectionConfig
+	_jsii_.Get(
+		j,
+		"clientConnectionConfigInput",
 		&returns,
 	)
 	return returns
@@ -716,7 +740,7 @@ func (j *jsiiProxy_AlloydbInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
 func NewAlloydbInstance(scope constructs.Construct, id *string, config *AlloydbInstanceConfig) AlloydbInstance {
 	_init_.Initialize()
 
@@ -734,7 +758,7 @@ func NewAlloydbInstance(scope constructs.Construct, id *string, config *AlloydbI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
 func NewAlloydbInstance_Override(a AlloydbInstance, scope constructs.Construct, id *string, config *AlloydbInstanceConfig) {
 	_init_.Initialize()
 
@@ -1241,6 +1265,17 @@ func (a *jsiiProxy_AlloydbInstance) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_AlloydbInstance) PutClientConnectionConfig(value *AlloydbInstanceClientConnectionConfig) {
+	if err := a.validatePutClientConnectionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putClientConnectionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlloydbInstance) PutMachineConfig(value *AlloydbInstanceMachineConfig) {
 	if err := a.validatePutMachineConfigParameters(value); err != nil {
 		panic(err)
@@ -1297,6 +1332,14 @@ func (a *jsiiProxy_AlloydbInstance) ResetAvailabilityType() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAvailabilityType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbInstance) ResetClientConnectionConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClientConnectionConfig",
 		nil, // no parameters
 	)
 }

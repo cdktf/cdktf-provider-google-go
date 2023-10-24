@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_managed_ssl_certificate google_compute_managed_ssl_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/compute_managed_ssl_certificate google_compute_managed_ssl_certificate}.
 type ComputeManagedSslCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -509,7 +509,7 @@ func (j *jsiiProxy_ComputeManagedSslCertificate) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_managed_ssl_certificate google_compute_managed_ssl_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/compute_managed_ssl_certificate google_compute_managed_ssl_certificate} Resource.
 func NewComputeManagedSslCertificate(scope constructs.Construct, id *string, config *ComputeManagedSslCertificateConfig) ComputeManagedSslCertificate {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewComputeManagedSslCertificate(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_managed_ssl_certificate google_compute_managed_ssl_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/compute_managed_ssl_certificate google_compute_managed_ssl_certificate} Resource.
 func NewComputeManagedSslCertificate_Override(c ComputeManagedSslCertificate, scope constructs.Construct, id *string, config *ComputeManagedSslCertificateConfig) {
 	_init_.Initialize()
 

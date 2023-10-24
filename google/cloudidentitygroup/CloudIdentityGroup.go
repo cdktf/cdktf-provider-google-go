@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/cloud_identity_group google_cloud_identity_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/cloud_identity_group google_cloud_identity_group}.
 type CloudIdentityGroup interface {
 	cdktf.TerraformResource
+	AdditionalGroupKeys() CloudIdentityGroupAdditionalGroupKeysList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -142,6 +143,16 @@ type CloudIdentityGroup interface {
 // The jsii proxy struct for CloudIdentityGroup
 type jsiiProxy_CloudIdentityGroup struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CloudIdentityGroup) AdditionalGroupKeys() CloudIdentityGroupAdditionalGroupKeysList {
+	var returns CloudIdentityGroupAdditionalGroupKeysList
+	_jsii_.Get(
+		j,
+		"additionalGroupKeys",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CloudIdentityGroup) CdktfStack() cdktf.TerraformStack {
@@ -495,7 +506,7 @@ func (j *jsiiProxy_CloudIdentityGroup) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/cloud_identity_group google_cloud_identity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/cloud_identity_group google_cloud_identity_group} Resource.
 func NewCloudIdentityGroup(scope constructs.Construct, id *string, config *CloudIdentityGroupConfig) CloudIdentityGroup {
 	_init_.Initialize()
 
@@ -513,7 +524,7 @@ func NewCloudIdentityGroup(scope constructs.Construct, id *string, config *Cloud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/cloud_identity_group google_cloud_identity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/cloud_identity_group google_cloud_identity_group} Resource.
 func NewCloudIdentityGroup_Override(c CloudIdentityGroup, scope constructs.Construct, id *string, config *CloudIdentityGroupConfig) {
 	_init_.Initialize()
 

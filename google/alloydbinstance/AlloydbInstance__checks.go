@@ -191,6 +191,17 @@ func (a *jsiiProxy_AlloydbInstance) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbInstance) validatePutClientConnectionConfigParameters(value *AlloydbInstanceClientConnectionConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbInstance) validatePutMachineConfigParameters(value *AlloydbInstanceMachineConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

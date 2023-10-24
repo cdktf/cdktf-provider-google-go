@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_target_http_proxy google_compute_target_http_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/compute_target_http_proxy google_compute_target_http_proxy}.
 type ComputeTargetHttpProxy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -496,7 +496,7 @@ func (j *jsiiProxy_ComputeTargetHttpProxy) UrlMapInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_target_http_proxy google_compute_target_http_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/compute_target_http_proxy google_compute_target_http_proxy} Resource.
 func NewComputeTargetHttpProxy(scope constructs.Construct, id *string, config *ComputeTargetHttpProxyConfig) ComputeTargetHttpProxy {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewComputeTargetHttpProxy(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/compute_target_http_proxy google_compute_target_http_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/compute_target_http_proxy google_compute_target_http_proxy} Resource.
 func NewComputeTargetHttpProxy_Override(c ComputeTargetHttpProxy, scope constructs.Construct, id *string, config *ComputeTargetHttpProxyConfig) {
 	_init_.Initialize()
 

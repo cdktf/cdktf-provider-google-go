@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/bigquery_table google_bigquery_table}.
 type BigqueryTable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -101,6 +101,9 @@ type BigqueryTable interface {
 	RangePartitioningInput() *BigqueryTableRangePartitioning
 	// Experimental.
 	RawOverrides() interface{}
+	RequirePartitionFilter() interface{}
+	SetRequirePartitionFilter(val interface{})
+	RequirePartitionFilterInput() interface{}
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
@@ -178,6 +181,7 @@ type BigqueryTable interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRangePartitioning()
+	ResetRequirePartitionFilter()
 	ResetSchema()
 	ResetTableConstraints()
 	ResetTimePartitioning()
@@ -687,6 +691,26 @@ func (j *jsiiProxy_BigqueryTable) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryTable) RequirePartitionFilter() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requirePartitionFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) RequirePartitionFilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requirePartitionFilterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryTable) Schema() *string {
 	var returns *string
 	_jsii_.Get(
@@ -848,7 +872,7 @@ func (j *jsiiProxy_BigqueryTable) ViewInput() *BigqueryTableView {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTableConfig) BigqueryTable {
 	_init_.Initialize()
 
@@ -866,7 +890,7 @@ func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable_Override(b BigqueryTable, scope constructs.Construct, id *string, config *BigqueryTableConfig) {
 	_init_.Initialize()
 
@@ -1051,6 +1075,17 @@ func (j *jsiiProxy_BigqueryTable)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetRequirePartitionFilter(val interface{}) {
+	if err := j.validateSetRequirePartitionFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requirePartitionFilter",
 		val,
 	)
 }
@@ -1580,6 +1615,14 @@ func (b *jsiiProxy_BigqueryTable) ResetRangePartitioning() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetRangePartitioning",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetRequirePartitionFilter() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRequirePartitionFilter",
 		nil, // no parameters
 	)
 }

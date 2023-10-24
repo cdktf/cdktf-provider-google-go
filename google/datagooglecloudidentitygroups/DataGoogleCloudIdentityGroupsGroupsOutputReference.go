@@ -13,6 +13,7 @@ import (
 
 type DataGoogleCloudIdentityGroupsGroupsOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalGroupKeys() DataGoogleCloudIdentityGroupsGroupsAdditionalGroupKeysList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -86,6 +87,16 @@ type DataGoogleCloudIdentityGroupsGroupsOutputReference interface {
 // The jsii proxy struct for DataGoogleCloudIdentityGroupsGroupsOutputReference
 type jsiiProxy_DataGoogleCloudIdentityGroupsGroupsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleCloudIdentityGroupsGroupsOutputReference) AdditionalGroupKeys() DataGoogleCloudIdentityGroupsGroupsAdditionalGroupKeysList {
+	var returns DataGoogleCloudIdentityGroupsGroupsAdditionalGroupKeysList
+	_jsii_.Get(
+		j,
+		"additionalGroupKeys",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleCloudIdentityGroupsGroupsOutputReference) ComplexObjectIndex() interface{} {

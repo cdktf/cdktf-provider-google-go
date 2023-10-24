@@ -35,6 +35,9 @@ type StorageBucketAutoclassOutputReference interface {
 	Fqn() *string
 	InternalValue() *StorageBucketAutoclass
 	SetInternalValue(val *StorageBucketAutoclass)
+	TerminalStorageClass() *string
+	SetTerminalStorageClass(val *string)
+	TerminalStorageClassInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type StorageBucketAutoclassOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetTerminalStorageClass()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +151,26 @@ func (j *jsiiProxy_StorageBucketAutoclassOutputReference) InternalValue() *Stora
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketAutoclassOutputReference) TerminalStorageClass() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terminalStorageClass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketAutoclassOutputReference) TerminalStorageClassInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terminalStorageClassInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_StorageBucketAutoclassOutputReference)SetInternalValue(val *S
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucketAutoclassOutputReference)SetTerminalStorageClass(val *string) {
+	if err := j.validateSetTerminalStorageClassParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terminalStorageClass",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (s *jsiiProxy_StorageBucketAutoclassOutputReference) InterpolationForAttrib
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_StorageBucketAutoclassOutputReference) ResetTerminalStorageClass() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTerminalStorageClass",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_StorageBucketAutoclassOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

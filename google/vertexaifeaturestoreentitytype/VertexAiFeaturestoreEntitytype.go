@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/vertex_ai_featurestore_entitytype google_vertex_ai_featurestore_entitytype}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/vertex_ai_featurestore_entitytype google_vertex_ai_featurestore_entitytype}.
 type VertexAiFeaturestoreEntitytype interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -506,7 +506,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytype) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/vertex_ai_featurestore_entitytype google_vertex_ai_featurestore_entitytype} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/vertex_ai_featurestore_entitytype google_vertex_ai_featurestore_entitytype} Resource.
 func NewVertexAiFeaturestoreEntitytype(scope constructs.Construct, id *string, config *VertexAiFeaturestoreEntitytypeConfig) VertexAiFeaturestoreEntitytype {
 	_init_.Initialize()
 
@@ -524,7 +524,7 @@ func NewVertexAiFeaturestoreEntitytype(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/vertex_ai_featurestore_entitytype google_vertex_ai_featurestore_entitytype} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/vertex_ai_featurestore_entitytype google_vertex_ai_featurestore_entitytype} Resource.
 func NewVertexAiFeaturestoreEntitytype_Override(v VertexAiFeaturestoreEntitytype, scope constructs.Construct, id *string, config *VertexAiFeaturestoreEntitytypeConfig) {
 	_init_.Initialize()
 

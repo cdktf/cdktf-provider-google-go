@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/iap_web_type_compute_iam_policy google_iap_web_type_compute_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/data-sources/iap_web_type_compute_iam_policy google_iap_web_type_compute_iam_policy}.
 type DataGoogleIapWebTypeComputeIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DataGoogleIapWebTypeComputeIamPolicy) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/iap_web_type_compute_iam_policy google_iap_web_type_compute_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/data-sources/iap_web_type_compute_iam_policy google_iap_web_type_compute_iam_policy} Data Source.
 func NewDataGoogleIapWebTypeComputeIamPolicy(scope constructs.Construct, id *string, config *DataGoogleIapWebTypeComputeIamPolicyConfig) DataGoogleIapWebTypeComputeIamPolicy {
 	_init_.Initialize()
 
@@ -325,7 +325,7 @@ func NewDataGoogleIapWebTypeComputeIamPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/data-sources/iap_web_type_compute_iam_policy google_iap_web_type_compute_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/data-sources/iap_web_type_compute_iam_policy google_iap_web_type_compute_iam_policy} Data Source.
 func NewDataGoogleIapWebTypeComputeIamPolicy_Override(d DataGoogleIapWebTypeComputeIamPolicy, scope constructs.Construct, id *string, config *DataGoogleIapWebTypeComputeIamPolicyConfig) {
 	_init_.Initialize()
 

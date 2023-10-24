@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case}.
 type DialogflowCxTestCase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -497,7 +497,7 @@ func (j *jsiiProxy_DialogflowCxTestCase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource.
 func NewDialogflowCxTestCase(scope constructs.Construct, id *string, config *DialogflowCxTestCaseConfig) DialogflowCxTestCase {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewDialogflowCxTestCase(scope constructs.Construct, id *string, config *Dia
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.2.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource.
 func NewDialogflowCxTestCase_Override(d DialogflowCxTestCase, scope constructs.Construct, id *string, config *DialogflowCxTestCaseConfig) {
 	_init_.Initialize()
 
