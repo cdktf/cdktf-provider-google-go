@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/dataplex_asset google_dataplex_asset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dataplex_asset google_dataplex_asset}.
 type DataplexAsset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -654,7 +654,7 @@ func (j *jsiiProxy_DataplexAsset) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/dataplex_asset google_dataplex_asset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dataplex_asset google_dataplex_asset} Resource.
 func NewDataplexAsset(scope constructs.Construct, id *string, config *DataplexAssetConfig) DataplexAsset {
 	_init_.Initialize()
 
@@ -672,7 +672,7 @@ func NewDataplexAsset(scope constructs.Construct, id *string, config *DataplexAs
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/dataplex_asset google_dataplex_asset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dataplex_asset google_dataplex_asset} Resource.
 func NewDataplexAsset_Override(d DataplexAsset, scope constructs.Construct, id *string, config *DataplexAssetConfig) {
 	_init_.Initialize()
 

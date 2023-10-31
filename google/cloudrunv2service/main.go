@@ -93,7 +93,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetIngress", GoMethod: "ResetIngress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLaunchStage", GoMethod: "ResetLaunchStage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLocation", GoMethod: "ResetLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},

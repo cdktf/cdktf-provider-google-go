@@ -38,6 +38,9 @@ type BigqueryDatasetAccessOutputReference interface {
 	GroupByEmail() *string
 	SetGroupByEmail(val *string)
 	GroupByEmailInput() *string
+	IamMember() *string
+	SetIamMember(val *string)
+	IamMemberInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Role() *string
@@ -91,6 +94,7 @@ type BigqueryDatasetAccessOutputReference interface {
 	ResetDataset()
 	ResetDomain()
 	ResetGroupByEmail()
+	ResetIamMember()
 	ResetRole()
 	ResetRoutine()
 	ResetSpecialGroup()
@@ -206,6 +210,26 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) GroupByEmailInput() *st
 	_jsii_.Get(
 		j,
 		"groupByEmailInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) IamMember() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamMember",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) IamMemberInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamMemberInput",
 		&returns,
 	)
 	return returns
@@ -409,6 +433,17 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetGroupByEmail(val *str
 	_jsii_.Set(
 		j,
 		"groupByEmail",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference)SetIamMember(val *string) {
+	if err := j.validateSetIamMemberParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"iamMember",
 		val,
 	)
 }
@@ -718,6 +753,14 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) ResetGroupByEmail() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetGroupByEmail",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) ResetIamMember() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetIamMember",
 		nil, // no parameters
 	)
 }

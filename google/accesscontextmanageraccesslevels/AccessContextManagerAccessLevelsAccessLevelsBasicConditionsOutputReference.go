@@ -57,6 +57,8 @@ type AccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference 
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VpcNetworkSources() AccessContextManagerAccessLevelsAccessLevelsBasicConditionsVpcNetworkSourcesList
+	VpcNetworkSourcesInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -82,12 +84,14 @@ type AccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference 
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDevicePolicy(value *AccessContextManagerAccessLevelsAccessLevelsBasicConditionsDevicePolicy)
+	PutVpcNetworkSources(value interface{})
 	ResetDevicePolicy()
 	ResetIpSubnetworks()
 	ResetMembers()
 	ResetNegate()
 	ResetRegions()
 	ResetRequiredAccessLevels()
+	ResetVpcNetworkSources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -288,6 +292,26 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicConditionsOu
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) VpcNetworkSources() AccessContextManagerAccessLevelsAccessLevelsBasicConditionsVpcNetworkSourcesList {
+	var returns AccessContextManagerAccessLevelsAccessLevelsBasicConditionsVpcNetworkSourcesList
+	_jsii_.Get(
+		j,
+		"vpcNetworkSources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) VpcNetworkSourcesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vpcNetworkSourcesInput",
 		&returns,
 	)
 	return returns
@@ -628,6 +652,17 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicConditionsOu
 	)
 }
 
+func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) PutVpcNetworkSources(value interface{}) {
+	if err := a.validatePutVpcNetworkSourcesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putVpcNetworkSources",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) ResetDevicePolicy() {
 	_jsii_.InvokeVoid(
 		a,
@@ -672,6 +707,14 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicConditionsOu
 	_jsii_.InvokeVoid(
 		a,
 		"resetRequiredAccessLevels",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) ResetVpcNetworkSources() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetVpcNetworkSources",
 		nil, // no parameters
 	)
 }

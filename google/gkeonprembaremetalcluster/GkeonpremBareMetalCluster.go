@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/gkeonprem_bare_metal_cluster google_gkeonprem_bare_metal_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/gkeonprem_bare_metal_cluster google_gkeonprem_bare_metal_cluster}.
 type GkeonpremBareMetalCluster interface {
 	cdktf.TerraformResource
 	AdminClusterMembership() *string
@@ -936,7 +936,7 @@ func (j *jsiiProxy_GkeonpremBareMetalCluster) ValidationCheck() GkeonpremBareMet
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/gkeonprem_bare_metal_cluster google_gkeonprem_bare_metal_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/gkeonprem_bare_metal_cluster google_gkeonprem_bare_metal_cluster} Resource.
 func NewGkeonpremBareMetalCluster(scope constructs.Construct, id *string, config *GkeonpremBareMetalClusterConfig) GkeonpremBareMetalCluster {
 	_init_.Initialize()
 
@@ -954,7 +954,7 @@ func NewGkeonpremBareMetalCluster(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/gkeonprem_bare_metal_cluster google_gkeonprem_bare_metal_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/gkeonprem_bare_metal_cluster google_gkeonprem_bare_metal_cluster} Resource.
 func NewGkeonpremBareMetalCluster_Override(g GkeonpremBareMetalCluster, scope constructs.Construct, id *string, config *GkeonpremBareMetalClusterConfig) {
 	_init_.Initialize()
 

@@ -47,6 +47,10 @@ func (d *jsiiProxy_DialogflowCxPageFormParametersOutputReference) validateInterp
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxPageFormParametersOutputReference) validatePutAdvancedSettingsParameters(value *DialogflowCxPageFormParametersAdvancedSettings) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxPageFormParametersOutputReference) validatePutFillBehaviorParameters(value *DialogflowCxPageFormParametersFillBehavior) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/data_pipeline_pipeline google_data_pipeline_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/data_pipeline_pipeline google_data_pipeline_pipeline}.
 type DataPipelinePipeline interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -591,7 +591,7 @@ func (j *jsiiProxy_DataPipelinePipeline) WorkloadInput() *DataPipelinePipelineWo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/data_pipeline_pipeline google_data_pipeline_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/data_pipeline_pipeline google_data_pipeline_pipeline} Resource.
 func NewDataPipelinePipeline(scope constructs.Construct, id *string, config *DataPipelinePipelineConfig) DataPipelinePipeline {
 	_init_.Initialize()
 
@@ -609,7 +609,7 @@ func NewDataPipelinePipeline(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/data_pipeline_pipeline google_data_pipeline_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/data_pipeline_pipeline google_data_pipeline_pipeline} Resource.
 func NewDataPipelinePipeline_Override(d DataPipelinePipeline, scope constructs.Construct, id *string, config *DataPipelinePipelineConfig) {
 	_init_.Initialize()
 

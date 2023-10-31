@@ -38,6 +38,11 @@ type AccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReference i
 	IdentityTypeInput() *string
 	InternalValue() *AccessContextManagerServicePerimeterEgressPolicyEgressFrom
 	SetInternalValue(val *AccessContextManagerServicePerimeterEgressPolicyEgressFrom)
+	SourceRestriction() *string
+	SetSourceRestriction(val *string)
+	SourceRestrictionInput() *string
+	Sources() AccessContextManagerServicePerimeterEgressPolicyEgressFromSourcesList
+	SourcesInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,8 +75,11 @@ type AccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSources(value interface{})
 	ResetIdentities()
 	ResetIdentityType()
+	ResetSourceRestriction()
+	ResetSources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -177,6 +185,46 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyEgressFromOut
 	return returns
 }
 
+func (j *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReference) SourceRestriction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceRestriction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReference) SourceRestrictionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceRestrictionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReference) Sources() AccessContextManagerServicePerimeterEgressPolicyEgressFromSourcesList {
+	var returns AccessContextManagerServicePerimeterEgressPolicyEgressFromSourcesList
+	_jsii_.Get(
+		j,
+		"sources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReference) SourcesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sourcesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -276,6 +324,17 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyEgressFromOut
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReference)SetSourceRestriction(val *string) {
+	if err := j.validateSetSourceRestrictionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceRestriction",
 		val,
 	)
 }
@@ -488,6 +547,17 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyEgressFromOut
 	return returns
 }
 
+func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReference) PutSources(value interface{}) {
+	if err := a.validatePutSourcesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putSources",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReference) ResetIdentities() {
 	_jsii_.InvokeVoid(
 		a,
@@ -500,6 +570,22 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyEgressFromOut
 	_jsii_.InvokeVoid(
 		a,
 		"resetIdentityType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReference) ResetSourceRestriction() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSourceRestriction",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyEgressFromOutputReference) ResetSources() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSources",
 		nil, // no parameters
 	)
 }

@@ -51,6 +51,10 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicConditionsOu
 	return nil
 }
 
+func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) validatePutVpcNetworkSourcesParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

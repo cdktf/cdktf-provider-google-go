@@ -111,6 +111,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutGatewayApiConfigParameters(value
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutIdentityServiceConfigParameters(value *ContainerClusterIdentityServiceConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutIpAllocationPolicyParameters(value *ContainerClusterIpAllocationPolicy) error {
 	return nil
 }

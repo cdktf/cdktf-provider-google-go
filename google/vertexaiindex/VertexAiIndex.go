@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/vertex_ai_index google_vertex_ai_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/vertex_ai_index google_vertex_ai_index}.
 type VertexAiIndex interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -587,7 +587,7 @@ func (j *jsiiProxy_VertexAiIndex) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/vertex_ai_index google_vertex_ai_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/vertex_ai_index google_vertex_ai_index} Resource.
 func NewVertexAiIndex(scope constructs.Construct, id *string, config *VertexAiIndexConfig) VertexAiIndex {
 	_init_.Initialize()
 
@@ -605,7 +605,7 @@ func NewVertexAiIndex(scope constructs.Construct, id *string, config *VertexAiIn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/vertex_ai_index google_vertex_ai_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/vertex_ai_index google_vertex_ai_index} Resource.
 func NewVertexAiIndex_Override(v VertexAiIndex, scope constructs.Construct, id *string, config *VertexAiIndexConfig) {
 	_init_.Initialize()
 

@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/dialogflow_cx_agent google_dialogflow_cx_agent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dialogflow_cx_agent google_dialogflow_cx_agent}.
 type DialogflowCxAgent interface {
 	cdktf.TerraformResource
+	AdvancedSettings() DialogflowCxAgentAdvancedSettingsOutputReference
+	AdvancedSettingsInput() *DialogflowCxAgentAdvancedSettings
 	AvatarUri() *string
 	SetAvatarUri(val *string)
 	AvatarUriInput() *string
@@ -57,6 +59,8 @@ type DialogflowCxAgent interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GitIntegrationSettings() DialogflowCxAgentGitIntegrationSettingsOutputReference
+	GitIntegrationSettingsInput() *DialogflowCxAgentGitIntegrationSettings
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -98,6 +102,8 @@ type DialogflowCxAgent interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TextToSpeechSettings() DialogflowCxAgentTextToSpeechSettingsOutputReference
+	TextToSpeechSettingsInput() *DialogflowCxAgentTextToSpeechSettings
 	Timeouts() DialogflowCxAgentTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	TimeZone() *string
@@ -136,12 +142,17 @@ type DialogflowCxAgent interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAdvancedSettings(value *DialogflowCxAgentAdvancedSettings)
+	PutGitIntegrationSettings(value *DialogflowCxAgentGitIntegrationSettings)
 	PutSpeechToTextSettings(value *DialogflowCxAgentSpeechToTextSettings)
+	PutTextToSpeechSettings(value *DialogflowCxAgentTextToSpeechSettings)
 	PutTimeouts(value *DialogflowCxAgentTimeouts)
+	ResetAdvancedSettings()
 	ResetAvatarUri()
 	ResetDescription()
 	ResetEnableSpellCorrection()
 	ResetEnableStackdriverLogging()
+	ResetGitIntegrationSettings()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -150,6 +161,7 @@ type DialogflowCxAgent interface {
 	ResetSecuritySettings()
 	ResetSpeechToTextSettings()
 	ResetSupportedLanguageCodes()
+	ResetTextToSpeechSettings()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -164,6 +176,26 @@ type DialogflowCxAgent interface {
 // The jsii proxy struct for DialogflowCxAgent
 type jsiiProxy_DialogflowCxAgent struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DialogflowCxAgent) AdvancedSettings() DialogflowCxAgentAdvancedSettingsOutputReference {
+	var returns DialogflowCxAgentAdvancedSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"advancedSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxAgent) AdvancedSettingsInput() *DialogflowCxAgentAdvancedSettings {
+	var returns *DialogflowCxAgentAdvancedSettings
+	_jsii_.Get(
+		j,
+		"advancedSettingsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DialogflowCxAgent) AvatarUri() *string {
@@ -361,6 +393,26 @@ func (j *jsiiProxy_DialogflowCxAgent) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxAgent) GitIntegrationSettings() DialogflowCxAgentGitIntegrationSettingsOutputReference {
+	var returns DialogflowCxAgentGitIntegrationSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"gitIntegrationSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxAgent) GitIntegrationSettingsInput() *DialogflowCxAgentGitIntegrationSettings {
+	var returns *DialogflowCxAgentGitIntegrationSettings
+	_jsii_.Get(
+		j,
+		"gitIntegrationSettingsInput",
 		&returns,
 	)
 	return returns
@@ -586,6 +638,26 @@ func (j *jsiiProxy_DialogflowCxAgent) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DialogflowCxAgent) TextToSpeechSettings() DialogflowCxAgentTextToSpeechSettingsOutputReference {
+	var returns DialogflowCxAgentTextToSpeechSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"textToSpeechSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxAgent) TextToSpeechSettingsInput() *DialogflowCxAgentTextToSpeechSettings {
+	var returns *DialogflowCxAgentTextToSpeechSettings
+	_jsii_.Get(
+		j,
+		"textToSpeechSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DialogflowCxAgent) Timeouts() DialogflowCxAgentTimeoutsOutputReference {
 	var returns DialogflowCxAgentTimeoutsOutputReference
 	_jsii_.Get(
@@ -627,7 +699,7 @@ func (j *jsiiProxy_DialogflowCxAgent) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
 func NewDialogflowCxAgent(scope constructs.Construct, id *string, config *DialogflowCxAgentConfig) DialogflowCxAgent {
 	_init_.Initialize()
 
@@ -645,7 +717,7 @@ func NewDialogflowCxAgent(scope constructs.Construct, id *string, config *Dialog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
 func NewDialogflowCxAgent_Override(d DialogflowCxAgent, scope constructs.Construct, id *string, config *DialogflowCxAgentConfig) {
 	_init_.Initialize()
 
@@ -1174,6 +1246,28 @@ func (d *jsiiProxy_DialogflowCxAgent) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DialogflowCxAgent) PutAdvancedSettings(value *DialogflowCxAgentAdvancedSettings) {
+	if err := d.validatePutAdvancedSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAdvancedSettings",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxAgent) PutGitIntegrationSettings(value *DialogflowCxAgentGitIntegrationSettings) {
+	if err := d.validatePutGitIntegrationSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putGitIntegrationSettings",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DialogflowCxAgent) PutSpeechToTextSettings(value *DialogflowCxAgentSpeechToTextSettings) {
 	if err := d.validatePutSpeechToTextSettingsParameters(value); err != nil {
 		panic(err)
@@ -1181,6 +1275,17 @@ func (d *jsiiProxy_DialogflowCxAgent) PutSpeechToTextSettings(value *DialogflowC
 	_jsii_.InvokeVoid(
 		d,
 		"putSpeechToTextSettings",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxAgent) PutTextToSpeechSettings(value *DialogflowCxAgentTextToSpeechSettings) {
+	if err := d.validatePutTextToSpeechSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTextToSpeechSettings",
 		[]interface{}{value},
 	)
 }
@@ -1193,6 +1298,14 @@ func (d *jsiiProxy_DialogflowCxAgent) PutTimeouts(value *DialogflowCxAgentTimeou
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxAgent) ResetAdvancedSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAdvancedSettings",
+		nil, // no parameters
 	)
 }
 
@@ -1224,6 +1337,14 @@ func (d *jsiiProxy_DialogflowCxAgent) ResetEnableStackdriverLogging() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetEnableStackdriverLogging",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxAgent) ResetGitIntegrationSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGitIntegrationSettings",
 		nil, // no parameters
 	)
 }
@@ -1272,6 +1393,14 @@ func (d *jsiiProxy_DialogflowCxAgent) ResetSupportedLanguageCodes() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSupportedLanguageCodes",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxAgent) ResetTextToSpeechSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTextToSpeechSettings",
 		nil, // no parameters
 	)
 }

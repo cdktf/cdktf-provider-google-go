@@ -101,6 +101,14 @@ func (c *jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference) validateSetAdminGroupsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference) validateSetAdminUsersParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

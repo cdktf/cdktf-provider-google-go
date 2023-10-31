@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/container_cluster google_container_cluster}.
 type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
@@ -103,6 +103,8 @@ type ContainerCluster interface {
 	GatewayApiConfigInput() *ContainerClusterGatewayApiConfig
 	Id() *string
 	SetId(val *string)
+	IdentityServiceConfig() ContainerClusterIdentityServiceConfigOutputReference
+	IdentityServiceConfigInput() *ContainerClusterIdentityServiceConfig
 	IdInput() *string
 	InitialNodeCount() *float64
 	SetInitialNodeCount(val *float64)
@@ -263,6 +265,7 @@ type ContainerCluster interface {
 	PutDnsConfig(value *ContainerClusterDnsConfig)
 	PutEnableK8SBetaApis(value *ContainerClusterEnableK8SBetaApis)
 	PutGatewayApiConfig(value *ContainerClusterGatewayApiConfig)
+	PutIdentityServiceConfig(value *ContainerClusterIdentityServiceConfig)
 	PutIpAllocationPolicy(value *ContainerClusterIpAllocationPolicy)
 	PutLoggingConfig(value *ContainerClusterLoggingConfig)
 	PutMaintenancePolicy(value *ContainerClusterMaintenancePolicy)
@@ -309,6 +312,7 @@ type ContainerCluster interface {
 	ResetEnableTpu()
 	ResetGatewayApiConfig()
 	ResetId()
+	ResetIdentityServiceConfig()
 	ResetInitialNodeCount()
 	ResetIpAllocationPolicy()
 	ResetLocation()
@@ -937,6 +941,26 @@ func (j *jsiiProxy_ContainerCluster) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) IdentityServiceConfig() ContainerClusterIdentityServiceConfigOutputReference {
+	var returns ContainerClusterIdentityServiceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"identityServiceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) IdentityServiceConfigInput() *ContainerClusterIdentityServiceConfig {
+	var returns *ContainerClusterIdentityServiceConfig
+	_jsii_.Get(
+		j,
+		"identityServiceConfigInput",
 		&returns,
 	)
 	return returns
@@ -1813,7 +1837,7 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
 
@@ -1831,7 +1855,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct, id *string, config *ContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -2668,6 +2692,17 @@ func (c *jsiiProxy_ContainerCluster) PutGatewayApiConfig(value *ContainerCluster
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutIdentityServiceConfig(value *ContainerClusterIdentityServiceConfig) {
+	if err := c.validatePutIdentityServiceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putIdentityServiceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutIpAllocationPolicy(value *ContainerClusterIpAllocationPolicy) {
 	if err := c.validatePutIpAllocationPolicyParameters(value); err != nil {
 		panic(err)
@@ -3095,6 +3130,14 @@ func (c *jsiiProxy_ContainerCluster) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetIdentityServiceConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIdentityServiceConfig",
 		nil, // no parameters
 	)
 }

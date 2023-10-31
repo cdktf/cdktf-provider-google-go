@@ -124,6 +124,8 @@ func init() {
 		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedClusterAuthorizationOutputReference",
 		reflect.TypeOf((*ContainerAttachedClusterAuthorizationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "adminGroups", GoGetter: "AdminGroups"},
+			_jsii_.MemberProperty{JsiiProperty: "adminGroupsInput", GoGetter: "AdminGroupsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "adminUsers", GoGetter: "AdminUsers"},
 			_jsii_.MemberProperty{JsiiProperty: "adminUsersInput", GoGetter: "AdminUsersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -143,6 +145,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdminGroups", GoMethod: "ResetAdminGroups"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdminUsers", GoMethod: "ResetAdminUsers"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

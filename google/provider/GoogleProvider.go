@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -425,6 +425,9 @@ type GoogleProvider interface {
 	TpuCustomEndpoint() *string
 	SetTpuCustomEndpoint(val *string)
 	TpuCustomEndpointInput() *string
+	UniverseDomain() *string
+	SetUniverseDomain(val *string)
+	UniverseDomainInput() *string
 	UserProjectOverride() interface{}
 	SetUserProjectOverride(val interface{})
 	UserProjectOverrideInput() interface{}
@@ -578,6 +581,7 @@ type GoogleProvider interface {
 	ResetTagsCustomEndpoint()
 	ResetTagsLocationCustomEndpoint()
 	ResetTpuCustomEndpoint()
+	ResetUniverseDomain()
 	ResetUserProjectOverride()
 	ResetVertexAiCustomEndpoint()
 	ResetVpcAccessCustomEndpoint()
@@ -3298,6 +3302,26 @@ func (j *jsiiProxy_GoogleProvider) TpuCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) UniverseDomain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"universeDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) UniverseDomainInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"universeDomainInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) UserProjectOverride() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -3399,7 +3423,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3417,7 +3441,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -4467,6 +4491,14 @@ func (j *jsiiProxy_GoogleProvider)SetTpuCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"tpuCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetUniverseDomain(val *string) {
+	_jsii_.Set(
+		j,
+		"universeDomain",
 		val,
 	)
 }
@@ -5683,6 +5715,14 @@ func (g *jsiiProxy_GoogleProvider) ResetTpuCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTpuCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetUniverseDomain() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUniverseDomain",
 		nil, // no parameters
 	)
 }

@@ -67,7 +67,19 @@ func (d *jsiiProxy_DialogflowCxAgent) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxAgent) validatePutAdvancedSettingsParameters(value *DialogflowCxAgentAdvancedSettings) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxAgent) validatePutGitIntegrationSettingsParameters(value *DialogflowCxAgentGitIntegrationSettings) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxAgent) validatePutSpeechToTextSettingsParameters(value *DialogflowCxAgentSpeechToTextSettings) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxAgent) validatePutTextToSpeechSettingsParameters(value *DialogflowCxAgentTextToSpeechSettings) error {
 	return nil
 }
 

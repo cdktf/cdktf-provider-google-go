@@ -79,6 +79,10 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) validateSetGroupByEmail
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) validateSetIamMemberParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

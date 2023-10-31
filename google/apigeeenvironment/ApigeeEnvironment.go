@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/apigee_environment google_apigee_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/apigee_environment google_apigee_environment}.
 type ApigeeEnvironment interface {
 	cdktf.TerraformResource
 	ApiProxyType() *string
@@ -86,6 +86,9 @@ type ApigeeEnvironment interface {
 	TerraformResourceType() *string
 	Timeouts() ApigeeEnvironmentTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -131,6 +134,7 @@ type ApigeeEnvironment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -486,8 +490,28 @@ func (j *jsiiProxy_ApigeeEnvironment) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ApigeeEnvironment) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/apigee_environment google_apigee_environment} Resource.
+func (j *jsiiProxy_ApigeeEnvironment) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/apigee_environment google_apigee_environment} Resource.
 func NewApigeeEnvironment(scope constructs.Construct, id *string, config *ApigeeEnvironmentConfig) ApigeeEnvironment {
 	_init_.Initialize()
 
@@ -505,7 +529,7 @@ func NewApigeeEnvironment(scope constructs.Construct, id *string, config *Apigee
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.3.0/docs/resources/apigee_environment google_apigee_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/apigee_environment google_apigee_environment} Resource.
 func NewApigeeEnvironment_Override(a ApigeeEnvironment, scope constructs.Construct, id *string, config *ApigeeEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -657,6 +681,17 @@ func (j *jsiiProxy_ApigeeEnvironment)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApigeeEnvironment)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -1061,6 +1096,14 @@ func (a *jsiiProxy_ApigeeEnvironment) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApigeeEnvironment) ResetType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetType",
 		nil, // no parameters
 	)
 }
