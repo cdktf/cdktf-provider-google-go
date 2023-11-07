@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/apigee_environment_iam_member google_apigee_environment_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/apigee_environment_iam_member google_apigee_environment_iam_member}.
 type ApigeeEnvironmentIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -424,7 +424,7 @@ func (j *jsiiProxy_ApigeeEnvironmentIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/apigee_environment_iam_member google_apigee_environment_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/apigee_environment_iam_member google_apigee_environment_iam_member} Resource.
 func NewApigeeEnvironmentIamMember(scope constructs.Construct, id *string, config *ApigeeEnvironmentIamMemberConfig) ApigeeEnvironmentIamMember {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewApigeeEnvironmentIamMember(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/apigee_environment_iam_member google_apigee_environment_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/apigee_environment_iam_member google_apigee_environment_iam_member} Resource.
 func NewApigeeEnvironmentIamMember_Override(a ApigeeEnvironmentIamMember, scope constructs.Construct, id *string, config *ApigeeEnvironmentIamMemberConfig) {
 	_init_.Initialize()
 

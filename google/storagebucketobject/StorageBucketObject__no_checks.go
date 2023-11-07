@@ -71,6 +71,10 @@ func (s *jsiiProxy_StorageBucketObject) validatePutCustomerEncryptionParameters(
 	return nil
 }
 
+func (s *jsiiProxy_StorageBucketObject) validatePutRetentionParameters(value *StorageBucketObjectRetention) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucketObject) validatePutTimeoutsParameters(value *StorageBucketObjectTimeouts) error {
 	return nil
 }

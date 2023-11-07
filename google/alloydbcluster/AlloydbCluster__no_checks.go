@@ -139,6 +139,10 @@ func (j *jsiiProxy_AlloydbCluster) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_AlloydbCluster) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlloydbCluster) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

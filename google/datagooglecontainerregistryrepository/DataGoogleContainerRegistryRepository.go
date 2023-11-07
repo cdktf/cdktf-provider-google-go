@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/data-sources/container_registry_repository google_container_registry_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/data-sources/container_registry_repository google_container_registry_repository}.
 type DataGoogleContainerRegistryRepository interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataGoogleContainerRegistryRepository) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/data-sources/container_registry_repository google_container_registry_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/data-sources/container_registry_repository google_container_registry_repository} Data Source.
 func NewDataGoogleContainerRegistryRepository(scope constructs.Construct, id *string, config *DataGoogleContainerRegistryRepositoryConfig) DataGoogleContainerRegistryRepository {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewDataGoogleContainerRegistryRepository(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/data-sources/container_registry_repository google_container_registry_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/data-sources/container_registry_repository google_container_registry_repository} Data Source.
 func NewDataGoogleContainerRegistryRepository_Override(d DataGoogleContainerRegistryRepository, scope constructs.Construct, id *string, config *DataGoogleContainerRegistryRepositoryConfig) {
 	_init_.Initialize()
 

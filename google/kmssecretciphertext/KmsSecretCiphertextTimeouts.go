@@ -5,9 +5,9 @@ package kmssecretciphertext
 
 
 type KmsSecretCiphertextTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/kms_secret_ciphertext#create KmsSecretCiphertext#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/kms_secret_ciphertext#create KmsSecretCiphertext#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/kms_secret_ciphertext#delete KmsSecretCiphertext#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/kms_secret_ciphertext#delete KmsSecretCiphertext#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

@@ -5,9 +5,9 @@ package bigqueryreservationassignment
 
 
 type BigqueryReservationAssignmentTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/bigquery_reservation_assignment#create BigqueryReservationAssignment#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/bigquery_reservation_assignment#create BigqueryReservationAssignment#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/bigquery_reservation_assignment#delete BigqueryReservationAssignment#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/bigquery_reservation_assignment#delete BigqueryReservationAssignment#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

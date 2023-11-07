@@ -190,6 +190,14 @@ func (j *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) validateSetSubjectParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

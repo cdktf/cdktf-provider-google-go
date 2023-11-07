@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/tags_tag_value_iam_member google_tags_tag_value_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/tags_tag_value_iam_member google_tags_tag_value_iam_member}.
 type TagsTagValueIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_TagsTagValueIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/tags_tag_value_iam_member google_tags_tag_value_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/tags_tag_value_iam_member google_tags_tag_value_iam_member} Resource.
 func NewTagsTagValueIamMember(scope constructs.Construct, id *string, config *TagsTagValueIamMemberConfig) TagsTagValueIamMember {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewTagsTagValueIamMember(scope constructs.Construct, id *string, config *Ta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/tags_tag_value_iam_member google_tags_tag_value_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/tags_tag_value_iam_member google_tags_tag_value_iam_member} Resource.
 func NewTagsTagValueIamMember_Override(t TagsTagValueIamMember, scope constructs.Construct, id *string, config *TagsTagValueIamMemberConfig) {
 	_init_.Initialize()
 

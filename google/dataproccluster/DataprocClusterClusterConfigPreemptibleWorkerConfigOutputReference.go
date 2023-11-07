@@ -32,6 +32,8 @@ type DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference interfac
 	DiskConfigInput() *DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig
 	// Experimental.
 	Fqn() *string
+	InstanceFlexibilityPolicy() DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference
+	InstanceFlexibilityPolicyInput() *DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy
 	InstanceNames() *[]*string
 	InternalValue() *DataprocClusterClusterConfigPreemptibleWorkerConfig
 	SetInternalValue(val *DataprocClusterClusterConfigPreemptibleWorkerConfig)
@@ -74,7 +76,9 @@ type DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference interfac
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDiskConfig(value *DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig)
+	PutInstanceFlexibilityPolicy(value *DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy)
 	ResetDiskConfig()
+	ResetInstanceFlexibilityPolicy()
 	ResetNumInstances()
 	ResetPreemptibility()
 	// Produce the Token's value at resolution time.
@@ -147,6 +151,26 @@ func (j *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigOutputRefe
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference) InstanceFlexibilityPolicy() DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference {
+	var returns DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"instanceFlexibilityPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference) InstanceFlexibilityPolicyInput() *DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy {
+	var returns *DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy
+	_jsii_.Get(
+		j,
+		"instanceFlexibilityPolicyInput",
 		&returns,
 	)
 	return returns
@@ -534,10 +558,29 @@ func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigOutputRefe
 	)
 }
 
+func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference) PutInstanceFlexibilityPolicy(value *DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy) {
+	if err := d.validatePutInstanceFlexibilityPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putInstanceFlexibilityPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference) ResetDiskConfig() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDiskConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference) ResetInstanceFlexibilityPolicy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetInstanceFlexibilityPolicy",
 		nil, // no parameters
 	)
 }

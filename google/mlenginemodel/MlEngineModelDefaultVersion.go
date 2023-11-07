@@ -7,7 +7,7 @@ package mlenginemodel
 type MlEngineModelDefaultVersion struct {
 	// The name specified for the version when it was created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/ml_engine_model#name MlEngineModel#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/ml_engine_model#name MlEngineModel#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

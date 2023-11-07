@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/deployment_manager_deployment google_deployment_manager_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/deployment_manager_deployment google_deployment_manager_deployment}.
 type DeploymentManagerDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -544,7 +544,7 @@ func (j *jsiiProxy_DeploymentManagerDeployment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/deployment_manager_deployment google_deployment_manager_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/deployment_manager_deployment google_deployment_manager_deployment} Resource.
 func NewDeploymentManagerDeployment(scope constructs.Construct, id *string, config *DeploymentManagerDeploymentConfig) DeploymentManagerDeployment {
 	_init_.Initialize()
 
@@ -562,7 +562,7 @@ func NewDeploymentManagerDeployment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/deployment_manager_deployment google_deployment_manager_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/deployment_manager_deployment google_deployment_manager_deployment} Resource.
 func NewDeploymentManagerDeployment_Override(d DeploymentManagerDeployment, scope constructs.Construct, id *string, config *DeploymentManagerDeploymentConfig) {
 	_init_.Initialize()
 

@@ -38,6 +38,9 @@ type MonitoringAlertPolicyDocumentationOutputReference interface {
 	MimeType() *string
 	SetMimeType(val *string)
 	MimeTypeInput() *string
+	Subject() *string
+	SetSubject(val *string)
+	SubjectInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type MonitoringAlertPolicyDocumentationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetContent()
 	ResetMimeType()
+	ResetSubject()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -177,6 +181,26 @@ func (j *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) MimeTypeIn
 	return returns
 }
 
+func (j *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) Subject() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subject",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) SubjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subjectInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -276,6 +300,17 @@ func (j *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference)SetMimeType
 	_jsii_.Set(
 		j,
 		"mimeType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference)SetSubject(val *string) {
+	if err := j.validateSetSubjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subject",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (m *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) ResetMimeT
 	_jsii_.InvokeVoid(
 		m,
 		"resetMimeType",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) ResetSubject() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSubject",
 		nil, // no parameters
 	)
 }

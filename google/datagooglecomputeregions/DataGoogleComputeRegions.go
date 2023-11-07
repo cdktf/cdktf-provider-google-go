@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/data-sources/compute_regions google_compute_regions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/data-sources/compute_regions google_compute_regions}.
 type DataGoogleComputeRegions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataGoogleComputeRegions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/data-sources/compute_regions google_compute_regions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/data-sources/compute_regions google_compute_regions} Data Source.
 func NewDataGoogleComputeRegions(scope constructs.Construct, id *string, config *DataGoogleComputeRegionsConfig) DataGoogleComputeRegions {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewDataGoogleComputeRegions(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/data-sources/compute_regions google_compute_regions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/data-sources/compute_regions google_compute_regions} Data Source.
 func NewDataGoogleComputeRegions_Override(d DataGoogleComputeRegions, scope constructs.Construct, id *string, config *DataGoogleComputeRegionsConfig) {
 	_init_.Initialize()
 

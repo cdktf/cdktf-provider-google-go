@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/access_context_manager_access_levels google_access_context_manager_access_levels}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/access_context_manager_access_levels google_access_context_manager_access_levels}.
 type AccessContextManagerAccessLevels interface {
 	cdktf.TerraformResource
 	AccessLevels() AccessContextManagerAccessLevelsAccessLevelsList
@@ -368,7 +368,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevels) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/access_context_manager_access_levels google_access_context_manager_access_levels} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/access_context_manager_access_levels google_access_context_manager_access_levels} Resource.
 func NewAccessContextManagerAccessLevels(scope constructs.Construct, id *string, config *AccessContextManagerAccessLevelsConfig) AccessContextManagerAccessLevels {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewAccessContextManagerAccessLevels(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/access_context_manager_access_levels google_access_context_manager_access_levels} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/access_context_manager_access_levels google_access_context_manager_access_levels} Resource.
 func NewAccessContextManagerAccessLevels_Override(a AccessContextManagerAccessLevels, scope constructs.Construct, id *string, config *AccessContextManagerAccessLevelsConfig) {
 	_init_.Initialize()
 

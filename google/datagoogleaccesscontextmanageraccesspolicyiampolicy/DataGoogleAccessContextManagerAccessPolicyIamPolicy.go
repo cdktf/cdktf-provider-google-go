@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/data-sources/access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/data-sources/access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy}.
 type DataGoogleAccessContextManagerAccessPolicyIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -306,7 +306,7 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerAccessPolicyIamPolicy) Terrafor
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/data-sources/access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/data-sources/access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy} Data Source.
 func NewDataGoogleAccessContextManagerAccessPolicyIamPolicy(scope constructs.Construct, id *string, config *DataGoogleAccessContextManagerAccessPolicyIamPolicyConfig) DataGoogleAccessContextManagerAccessPolicyIamPolicy {
 	_init_.Initialize()
 
@@ -324,7 +324,7 @@ func NewDataGoogleAccessContextManagerAccessPolicyIamPolicy(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/data-sources/access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/data-sources/access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy} Data Source.
 func NewDataGoogleAccessContextManagerAccessPolicyIamPolicy_Override(d DataGoogleAccessContextManagerAccessPolicyIamPolicy, scope constructs.Construct, id *string, config *DataGoogleAccessContextManagerAccessPolicyIamPolicyConfig) {
 	_init_.Initialize()
 

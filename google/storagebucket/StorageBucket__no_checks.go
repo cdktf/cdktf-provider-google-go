@@ -135,6 +135,10 @@ func (j *jsiiProxy_StorageBucket) validateSetDefaultEventBasedHoldParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_StorageBucket) validateSetEnableObjectRetentionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBucket) validateSetForceDestroyParameters(val interface{}) error {
 	return nil
 }

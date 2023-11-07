@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/folder_iam_policy google_folder_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/folder_iam_policy google_folder_iam_policy}.
 type FolderIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_FolderIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/folder_iam_policy google_folder_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/folder_iam_policy google_folder_iam_policy} Resource.
 func NewFolderIamPolicy(scope constructs.Construct, id *string, config *FolderIamPolicyConfig) FolderIamPolicy {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewFolderIamPolicy(scope constructs.Construct, id *string, config *FolderIa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.4.0/docs/resources/folder_iam_policy google_folder_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/folder_iam_policy google_folder_iam_policy} Resource.
 func NewFolderIamPolicy_Override(f FolderIamPolicy, scope constructs.Construct, id *string, config *FolderIamPolicyConfig) {
 	_init_.Initialize()
 
