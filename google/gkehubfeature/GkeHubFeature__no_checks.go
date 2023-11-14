@@ -67,6 +67,10 @@ func (g *jsiiProxy_GkeHubFeature) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (g *jsiiProxy_GkeHubFeature) validatePutFleetDefaultMemberConfigParameters(value *GkeHubFeatureFleetDefaultMemberConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubFeature) validatePutSpecParameters(value *GkeHubFeatureSpec) error {
 	return nil
 }

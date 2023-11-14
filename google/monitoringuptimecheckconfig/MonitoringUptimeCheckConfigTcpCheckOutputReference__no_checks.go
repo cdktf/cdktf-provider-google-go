@@ -47,6 +47,10 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigTcpCheckOutputReference) validateI
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringUptimeCheckConfigTcpCheckOutputReference) validatePutPingConfigParameters(value *MonitoringUptimeCheckConfigTcpCheckPingConfig) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringUptimeCheckConfigTcpCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config}.
 type LoggingOrganizationBucketConfig interface {
 	cdktf.TerraformResource
 	BucketId() *string
@@ -50,6 +50,8 @@ type LoggingOrganizationBucketConfig interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IndexConfigs() LoggingOrganizationBucketConfigIndexConfigsList
+	IndexConfigsInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -117,9 +119,11 @@ type LoggingOrganizationBucketConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCmekSettings(value *LoggingOrganizationBucketConfigCmekSettings)
+	PutIndexConfigs(value interface{})
 	ResetCmekSettings()
 	ResetDescription()
 	ResetId()
+	ResetIndexConfigs()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -299,6 +303,26 @@ func (j *jsiiProxy_LoggingOrganizationBucketConfig) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LoggingOrganizationBucketConfig) IndexConfigs() LoggingOrganizationBucketConfigIndexConfigsList {
+	var returns LoggingOrganizationBucketConfigIndexConfigsList
+	_jsii_.Get(
+		j,
+		"indexConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoggingOrganizationBucketConfig) IndexConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"indexConfigsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoggingOrganizationBucketConfig) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -460,7 +484,7 @@ func (j *jsiiProxy_LoggingOrganizationBucketConfig) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config} Resource.
 func NewLoggingOrganizationBucketConfig(scope constructs.Construct, id *string, config *LoggingOrganizationBucketConfigConfig) LoggingOrganizationBucketConfig {
 	_init_.Initialize()
 
@@ -478,7 +502,7 @@ func NewLoggingOrganizationBucketConfig(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config} Resource.
 func NewLoggingOrganizationBucketConfig_Override(l LoggingOrganizationBucketConfig, scope constructs.Construct, id *string, config *LoggingOrganizationBucketConfigConfig) {
 	_init_.Initialize()
 
@@ -952,6 +976,17 @@ func (l *jsiiProxy_LoggingOrganizationBucketConfig) PutCmekSettings(value *Loggi
 	)
 }
 
+func (l *jsiiProxy_LoggingOrganizationBucketConfig) PutIndexConfigs(value interface{}) {
+	if err := l.validatePutIndexConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putIndexConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LoggingOrganizationBucketConfig) ResetCmekSettings() {
 	_jsii_.InvokeVoid(
 		l,
@@ -972,6 +1007,14 @@ func (l *jsiiProxy_LoggingOrganizationBucketConfig) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoggingOrganizationBucketConfig) ResetIndexConfigs() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetIndexConfigs",
 		nil, // no parameters
 	)
 }

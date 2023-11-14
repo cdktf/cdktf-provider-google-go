@@ -191,6 +191,17 @@ func (s *jsiiProxy_SpannerInstance) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (s *jsiiProxy_SpannerInstance) validatePutAutoscalingConfigParameters(value *SpannerInstanceAutoscalingConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SpannerInstance) validatePutTimeoutsParameters(value *SpannerInstanceTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

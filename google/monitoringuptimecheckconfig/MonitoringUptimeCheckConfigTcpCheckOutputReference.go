@@ -32,6 +32,8 @@ type MonitoringUptimeCheckConfigTcpCheckOutputReference interface {
 	Fqn() *string
 	InternalValue() *MonitoringUptimeCheckConfigTcpCheck
 	SetInternalValue(val *MonitoringUptimeCheckConfigTcpCheck)
+	PingConfig() MonitoringUptimeCheckConfigTcpCheckPingConfigOutputReference
+	PingConfigInput() *MonitoringUptimeCheckConfigTcpCheckPingConfig
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
@@ -67,6 +69,8 @@ type MonitoringUptimeCheckConfigTcpCheckOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPingConfig(value *MonitoringUptimeCheckConfigTcpCheckPingConfig)
+	ResetPingConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -127,6 +131,26 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigTcpCheckOutputReference) InternalV
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfigTcpCheckOutputReference) PingConfig() MonitoringUptimeCheckConfigTcpCheckPingConfigOutputReference {
+	var returns MonitoringUptimeCheckConfigTcpCheckPingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"pingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringUptimeCheckConfigTcpCheckOutputReference) PingConfigInput() *MonitoringUptimeCheckConfigTcpCheckPingConfig {
+	var returns *MonitoringUptimeCheckConfigTcpCheckPingConfig
+	_jsii_.Get(
+		j,
+		"pingConfigInput",
 		&returns,
 	)
 	return returns
@@ -450,6 +474,25 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigTcpCheckOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfigTcpCheckOutputReference) PutPingConfig(value *MonitoringUptimeCheckConfigTcpCheckPingConfig) {
+	if err := m.validatePutPingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putPingConfig",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitoringUptimeCheckConfigTcpCheckOutputReference) ResetPingConfig() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPingConfig",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MonitoringUptimeCheckConfigTcpCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

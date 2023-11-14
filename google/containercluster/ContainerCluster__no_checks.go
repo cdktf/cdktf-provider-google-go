@@ -107,6 +107,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutEnableK8SBetaApisParameters(valu
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutFleetParameters(value *ContainerClusterFleet) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutGatewayApiConfigParameters(value *ContainerClusterGatewayApiConfig) error {
 	return nil
 }

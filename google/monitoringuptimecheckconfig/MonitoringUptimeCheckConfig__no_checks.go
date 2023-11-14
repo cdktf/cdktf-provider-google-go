@@ -155,6 +155,10 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetTimeoutParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetUserLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewMonitoringUptimeCheckConfigParameters(scope constructs.Construct, id *string, config *MonitoringUptimeCheckConfigConfig) error {
 	return nil
 }

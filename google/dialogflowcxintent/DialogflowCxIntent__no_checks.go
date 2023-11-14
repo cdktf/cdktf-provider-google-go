@@ -115,6 +115,14 @@ func (j *jsiiProxy_DialogflowCxIntent) validateSetIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_DialogflowCxIntent) validateSetIsDefaultNegativeIntentParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxIntent) validateSetIsDefaultWelcomeIntentParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxIntent) validateSetIsFallbackParameters(val interface{}) error {
 	return nil
 }

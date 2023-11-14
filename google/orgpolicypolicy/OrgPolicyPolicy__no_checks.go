@@ -67,6 +67,10 @@ func (o *jsiiProxy_OrgPolicyPolicy) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (o *jsiiProxy_OrgPolicyPolicy) validatePutDryRunSpecParameters(value *OrgPolicyPolicyDryRunSpec) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrgPolicyPolicy) validatePutSpecParameters(value *OrgPolicyPolicySpec) error {
 	return nil
 }

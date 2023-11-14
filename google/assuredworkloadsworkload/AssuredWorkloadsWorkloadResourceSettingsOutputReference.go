@@ -28,6 +28,9 @@ type AssuredWorkloadsWorkloadResourceSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisplayName() *string
+	SetDisplayName(val *string)
+	DisplayNameInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -70,6 +73,7 @@ type AssuredWorkloadsWorkloadResourceSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDisplayName()
 	ResetResourceId()
 	ResetResourceType()
 	// Produce the Token's value at resolution time.
@@ -112,6 +116,26 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) Crea
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) DisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) DisplayNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayNameInput",
 		&returns,
 	)
 	return returns
@@ -243,6 +267,17 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference)SetCo
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"displayName",
 		val,
 	)
 }
@@ -486,6 +521,14 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) Inte
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) ResetDisplayName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDisplayName",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsOutputReference) ResetResourceId() {

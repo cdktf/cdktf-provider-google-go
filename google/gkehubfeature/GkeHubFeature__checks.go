@@ -191,6 +191,17 @@ func (g *jsiiProxy_GkeHubFeature) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (g *jsiiProxy_GkeHubFeature) validatePutFleetDefaultMemberConfigParameters(value *GkeHubFeatureFleetDefaultMemberConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubFeature) validatePutSpecParameters(value *GkeHubFeatureSpec) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

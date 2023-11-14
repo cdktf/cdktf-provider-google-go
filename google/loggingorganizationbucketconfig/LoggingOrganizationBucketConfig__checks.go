@@ -202,6 +202,37 @@ func (l *jsiiProxy_LoggingOrganizationBucketConfig) validatePutCmekSettingsParam
 	return nil
 }
 
+func (l *jsiiProxy_LoggingOrganizationBucketConfig) validatePutIndexConfigsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*LoggingOrganizationBucketConfigIndexConfigs:
+		value := value.(*[]*LoggingOrganizationBucketConfigIndexConfigs)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*LoggingOrganizationBucketConfigIndexConfigs:
+		value_ := value.([]*LoggingOrganizationBucketConfigIndexConfigs)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LoggingOrganizationBucketConfigIndexConfigs; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func validateLoggingOrganizationBucketConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

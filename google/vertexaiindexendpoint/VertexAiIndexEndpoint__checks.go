@@ -191,6 +191,17 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiIndexEndpoint) validatePutPrivateServiceConnectConfigParameters(value *VertexAiIndexEndpointPrivateServiceConnectConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiIndexEndpoint) validatePutTimeoutsParameters(value *VertexAiIndexEndpointTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

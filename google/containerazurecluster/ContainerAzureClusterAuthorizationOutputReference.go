@@ -13,6 +13,8 @@ import (
 
 type ContainerAzureClusterAuthorizationOutputReference interface {
 	cdktf.ComplexObject
+	AdminGroups() ContainerAzureClusterAuthorizationAdminGroupsList
+	AdminGroupsInput() interface{}
 	AdminUsers() ContainerAzureClusterAuthorizationAdminUsersList
 	AdminUsersInput() interface{}
 	// the index of the complex object in a list.
@@ -66,7 +68,9 @@ type ContainerAzureClusterAuthorizationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAdminGroups(value interface{})
 	PutAdminUsers(value interface{})
+	ResetAdminGroups()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -80,6 +84,26 @@ type ContainerAzureClusterAuthorizationOutputReference interface {
 // The jsii proxy struct for ContainerAzureClusterAuthorizationOutputReference
 type jsiiProxy_ContainerAzureClusterAuthorizationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) AdminGroups() ContainerAzureClusterAuthorizationAdminGroupsList {
+	var returns ContainerAzureClusterAuthorizationAdminGroupsList
+	_jsii_.Get(
+		j,
+		"adminGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) AdminGroupsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"adminGroupsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) AdminUsers() ContainerAzureClusterAuthorizationAdminUsersList {
@@ -441,6 +465,17 @@ func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) Interpolat
 	return returns
 }
 
+func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) PutAdminGroups(value interface{}) {
+	if err := c.validatePutAdminGroupsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAdminGroups",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) PutAdminUsers(value interface{}) {
 	if err := c.validatePutAdminUsersParameters(value); err != nil {
 		panic(err)
@@ -449,6 +484,14 @@ func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) PutAdminUs
 		c,
 		"putAdminUsers",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) ResetAdminGroups() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAdminGroups",
+		nil, // no parameters
 	)
 }
 

@@ -51,6 +51,9 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	RequireSsl() interface{}
 	SetRequireSsl(val interface{})
 	RequireSslInput() interface{}
+	SslMode() *string
+	SetSslMode(val *string)
+	SslModeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -92,6 +95,7 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	ResetPrivateNetwork()
 	ResetPscConfig()
 	ResetRequireSsl()
+	ResetSslMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -297,6 +301,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Re
 	return returns
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SslMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SslModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sslModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -429,6 +453,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	_jsii_.Set(
 		j,
 		"requireSsl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetSslMode(val *string) {
+	if err := j.validateSetSslModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sslMode",
 		val,
 	)
 }
@@ -715,6 +750,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Re
 	_jsii_.InvokeVoid(
 		s,
 		"resetRequireSsl",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetSslMode() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSslMode",
 		nil, // no parameters
 	)
 }

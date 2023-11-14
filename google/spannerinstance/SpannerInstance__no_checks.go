@@ -67,6 +67,10 @@ func (s *jsiiProxy_SpannerInstance) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (s *jsiiProxy_SpannerInstance) validatePutAutoscalingConfigParameters(value *SpannerInstanceAutoscalingConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpannerInstance) validatePutTimeoutsParameters(value *SpannerInstanceTimeouts) error {
 	return nil
 }

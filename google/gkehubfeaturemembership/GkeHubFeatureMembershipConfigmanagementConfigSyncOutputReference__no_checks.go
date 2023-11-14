@@ -71,6 +71,10 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateSetMetricsGcpServiceAccountEmailParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateSetPreventDriftParameters(val interface{}) error {
 	return nil
 }

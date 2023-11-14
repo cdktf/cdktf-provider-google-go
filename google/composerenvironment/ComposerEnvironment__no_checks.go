@@ -71,6 +71,10 @@ func (c *jsiiProxy_ComposerEnvironment) validatePutConfigParameters(value *Compo
 	return nil
 }
 
+func (c *jsiiProxy_ComposerEnvironment) validatePutStorageConfigParameters(value *ComposerEnvironmentStorageConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComposerEnvironment) validatePutTimeoutsParameters(value *ComposerEnvironmentTimeouts) error {
 	return nil
 }

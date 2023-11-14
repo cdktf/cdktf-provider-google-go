@@ -123,6 +123,10 @@ func (j *jsiiProxy_DialogflowCxFlow) validateSetIdParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_DialogflowCxFlow) validateSetIsDefaultStartFlowParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxFlow) validateSetLanguageCodeParameters(val *string) error {
 	return nil
 }

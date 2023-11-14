@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust}.
 type ActiveDirectoryDomainTrust interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -507,7 +507,7 @@ func (j *jsiiProxy_ActiveDirectoryDomainTrust) TrustTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust} Resource.
 func NewActiveDirectoryDomainTrust(scope constructs.Construct, id *string, config *ActiveDirectoryDomainTrustConfig) ActiveDirectoryDomainTrust {
 	_init_.Initialize()
 
@@ -525,7 +525,7 @@ func NewActiveDirectoryDomainTrust(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust} Resource.
 func NewActiveDirectoryDomainTrust_Override(a ActiveDirectoryDomainTrust, scope constructs.Construct, id *string, config *ActiveDirectoryDomainTrustConfig) {
 	_init_.Initialize()
 

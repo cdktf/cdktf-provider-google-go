@@ -93,6 +93,37 @@ func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validateInte
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validatePutAdminGroupsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ContainerAwsClusterAuthorizationAdminGroups:
+		value := value.(*[]*ContainerAwsClusterAuthorizationAdminGroups)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ContainerAwsClusterAuthorizationAdminGroups:
+		value_ := value.([]*ContainerAwsClusterAuthorizationAdminGroups)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ContainerAwsClusterAuthorizationAdminGroups; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validatePutAdminUsersParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

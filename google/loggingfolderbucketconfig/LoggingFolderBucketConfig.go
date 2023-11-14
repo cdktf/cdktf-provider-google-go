@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/logging_folder_bucket_config google_logging_folder_bucket_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/logging_folder_bucket_config google_logging_folder_bucket_config}.
 type LoggingFolderBucketConfig interface {
 	cdktf.TerraformResource
 	BucketId() *string
@@ -53,6 +53,8 @@ type LoggingFolderBucketConfig interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IndexConfigs() LoggingFolderBucketConfigIndexConfigsList
+	IndexConfigsInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -117,9 +119,11 @@ type LoggingFolderBucketConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCmekSettings(value *LoggingFolderBucketConfigCmekSettings)
+	PutIndexConfigs(value interface{})
 	ResetCmekSettings()
 	ResetDescription()
 	ResetId()
+	ResetIndexConfigs()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -319,6 +323,26 @@ func (j *jsiiProxy_LoggingFolderBucketConfig) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LoggingFolderBucketConfig) IndexConfigs() LoggingFolderBucketConfigIndexConfigsList {
+	var returns LoggingFolderBucketConfigIndexConfigsList
+	_jsii_.Get(
+		j,
+		"indexConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoggingFolderBucketConfig) IndexConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"indexConfigsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoggingFolderBucketConfig) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -460,7 +484,7 @@ func (j *jsiiProxy_LoggingFolderBucketConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/logging_folder_bucket_config google_logging_folder_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/logging_folder_bucket_config google_logging_folder_bucket_config} Resource.
 func NewLoggingFolderBucketConfig(scope constructs.Construct, id *string, config *LoggingFolderBucketConfigConfig) LoggingFolderBucketConfig {
 	_init_.Initialize()
 
@@ -478,7 +502,7 @@ func NewLoggingFolderBucketConfig(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.5.0/docs/resources/logging_folder_bucket_config google_logging_folder_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/logging_folder_bucket_config google_logging_folder_bucket_config} Resource.
 func NewLoggingFolderBucketConfig_Override(l LoggingFolderBucketConfig, scope constructs.Construct, id *string, config *LoggingFolderBucketConfigConfig) {
 	_init_.Initialize()
 
@@ -952,6 +976,17 @@ func (l *jsiiProxy_LoggingFolderBucketConfig) PutCmekSettings(value *LoggingFold
 	)
 }
 
+func (l *jsiiProxy_LoggingFolderBucketConfig) PutIndexConfigs(value interface{}) {
+	if err := l.validatePutIndexConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putIndexConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LoggingFolderBucketConfig) ResetCmekSettings() {
 	_jsii_.InvokeVoid(
 		l,
@@ -972,6 +1007,14 @@ func (l *jsiiProxy_LoggingFolderBucketConfig) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoggingFolderBucketConfig) ResetIndexConfigs() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetIndexConfigs",
 		nil, // no parameters
 	)
 }
