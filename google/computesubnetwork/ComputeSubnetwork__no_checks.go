@@ -107,6 +107,10 @@ func (j *jsiiProxy_ComputeSubnetwork) validateSetDescriptionParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSubnetwork) validateSetExternalIpv6PrefixParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSubnetwork) validateSetIdParameters(val *string) error {
 	return nil
 }

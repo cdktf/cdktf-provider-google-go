@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/container_attached_cluster google_container_attached_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/container_attached_cluster google_container_attached_cluster}.
 type ContainerAttachedCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -97,6 +97,8 @@ type ContainerAttachedCluster interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	ProxyConfig() ContainerAttachedClusterProxyConfigOutputReference
+	ProxyConfigInput() *ContainerAttachedClusterProxyConfig
 	// Experimental.
 	RawOverrides() interface{}
 	Reconciling() cdktf.IResolvable
@@ -151,6 +153,7 @@ type ContainerAttachedCluster interface {
 	PutLoggingConfig(value *ContainerAttachedClusterLoggingConfig)
 	PutMonitoringConfig(value *ContainerAttachedClusterMonitoringConfig)
 	PutOidcConfig(value *ContainerAttachedClusterOidcConfig)
+	PutProxyConfig(value *ContainerAttachedClusterProxyConfig)
 	PutTimeouts(value *ContainerAttachedClusterTimeouts)
 	ResetAnnotations()
 	ResetAuthorization()
@@ -164,6 +167,7 @@ type ContainerAttachedCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetProxyConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -650,6 +654,26 @@ func (j *jsiiProxy_ContainerAttachedCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerAttachedCluster) ProxyConfig() ContainerAttachedClusterProxyConfigOutputReference {
+	var returns ContainerAttachedClusterProxyConfigOutputReference
+	_jsii_.Get(
+		j,
+		"proxyConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAttachedCluster) ProxyConfigInput() *ContainerAttachedClusterProxyConfig {
+	var returns *ContainerAttachedClusterProxyConfig
+	_jsii_.Get(
+		j,
+		"proxyConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerAttachedCluster) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -761,7 +785,7 @@ func (j *jsiiProxy_ContainerAttachedCluster) WorkloadIdentityConfig() ContainerA
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/container_attached_cluster google_container_attached_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/container_attached_cluster google_container_attached_cluster} Resource.
 func NewContainerAttachedCluster(scope constructs.Construct, id *string, config *ContainerAttachedClusterConfig) ContainerAttachedCluster {
 	_init_.Initialize()
 
@@ -779,7 +803,7 @@ func NewContainerAttachedCluster(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/container_attached_cluster google_container_attached_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/container_attached_cluster google_container_attached_cluster} Resource.
 func NewContainerAttachedCluster_Override(c ContainerAttachedCluster, scope constructs.Construct, id *string, config *ContainerAttachedClusterConfig) {
 	_init_.Initialize()
 
@@ -1341,6 +1365,17 @@ func (c *jsiiProxy_ContainerAttachedCluster) PutOidcConfig(value *ContainerAttac
 	)
 }
 
+func (c *jsiiProxy_ContainerAttachedCluster) PutProxyConfig(value *ContainerAttachedClusterProxyConfig) {
+	if err := c.validatePutProxyConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putProxyConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerAttachedCluster) PutTimeouts(value *ContainerAttachedClusterTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1428,6 +1463,14 @@ func (c *jsiiProxy_ContainerAttachedCluster) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAttachedCluster) ResetProxyConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProxyConfig",
 		nil, // no parameters
 	)
 }

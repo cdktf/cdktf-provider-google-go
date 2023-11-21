@@ -107,6 +107,10 @@ func (j *jsiiProxy_ComputeVpnTunnel) validateSetIkeVersionParameters(val *float6
 	return nil
 }
 
+func (j *jsiiProxy_ComputeVpnTunnel) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeVpnTunnel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

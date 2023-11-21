@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/compute_subnetwork google_compute_subnetwork}.
 type ComputeSubnetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -36,6 +36,8 @@ type ComputeSubnetwork interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	ExternalIpv6Prefix() *string
+	SetExternalIpv6Prefix(val *string)
+	ExternalIpv6PrefixInput() *string
 	Fingerprint() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -150,6 +152,7 @@ type ComputeSubnetwork interface {
 	PutSecondaryIpRange(value interface{})
 	PutTimeouts(value *ComputeSubnetworkTimeouts)
 	ResetDescription()
+	ResetExternalIpv6Prefix()
 	ResetId()
 	ResetIpv6AccessType()
 	ResetLogConfig()
@@ -265,6 +268,16 @@ func (j *jsiiProxy_ComputeSubnetwork) ExternalIpv6Prefix() *string {
 	_jsii_.Get(
 		j,
 		"externalIpv6Prefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) ExternalIpv6PrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalIpv6PrefixInput",
 		&returns,
 	)
 	return returns
@@ -731,7 +744,7 @@ func (j *jsiiProxy_ComputeSubnetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
 func NewComputeSubnetwork(scope constructs.Construct, id *string, config *ComputeSubnetworkConfig) ComputeSubnetwork {
 	_init_.Initialize()
 
@@ -749,7 +762,7 @@ func NewComputeSubnetwork(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
 func NewComputeSubnetwork_Override(c ComputeSubnetwork, scope constructs.Construct, id *string, config *ComputeSubnetworkConfig) {
 	_init_.Initialize()
 
@@ -797,6 +810,17 @@ func (j *jsiiProxy_ComputeSubnetwork)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeSubnetwork)SetExternalIpv6Prefix(val *string) {
+	if err := j.validateSetExternalIpv6PrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalIpv6Prefix",
 		val,
 	)
 }
@@ -1326,6 +1350,14 @@ func (c *jsiiProxy_ComputeSubnetwork) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSubnetwork) ResetExternalIpv6Prefix() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExternalIpv6Prefix",
 		nil, // no parameters
 	)
 }

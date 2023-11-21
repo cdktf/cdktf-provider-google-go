@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/access_context_manager_access_policy_iam_member google_access_context_manager_access_policy_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/access_context_manager_access_policy_iam_member google_access_context_manager_access_policy_iam_member}.
 type AccessContextManagerAccessPolicyIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_AccessContextManagerAccessPolicyIamMember) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/access_context_manager_access_policy_iam_member google_access_context_manager_access_policy_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/access_context_manager_access_policy_iam_member google_access_context_manager_access_policy_iam_member} Resource.
 func NewAccessContextManagerAccessPolicyIamMember(scope constructs.Construct, id *string, config *AccessContextManagerAccessPolicyIamMemberConfig) AccessContextManagerAccessPolicyIamMember {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewAccessContextManagerAccessPolicyIamMember(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/access_context_manager_access_policy_iam_member google_access_context_manager_access_policy_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/access_context_manager_access_policy_iam_member google_access_context_manager_access_policy_iam_member} Resource.
 func NewAccessContextManagerAccessPolicyIamMember_Override(a AccessContextManagerAccessPolicyIamMember, scope constructs.Construct, id *string, config *AccessContextManagerAccessPolicyIamMemberConfig) {
 	_init_.Initialize()
 

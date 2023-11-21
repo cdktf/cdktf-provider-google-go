@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/identity_platform_project_default_config google_identity_platform_project_default_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/identity_platform_project_default_config google_identity_platform_project_default_config}.
 type IdentityPlatformProjectDefaultConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_IdentityPlatformProjectDefaultConfig) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/identity_platform_project_default_config google_identity_platform_project_default_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/identity_platform_project_default_config google_identity_platform_project_default_config} Resource.
 func NewIdentityPlatformProjectDefaultConfig(scope constructs.Construct, id *string, config *IdentityPlatformProjectDefaultConfigConfig) IdentityPlatformProjectDefaultConfig {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewIdentityPlatformProjectDefaultConfig(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/identity_platform_project_default_config google_identity_platform_project_default_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/identity_platform_project_default_config google_identity_platform_project_default_config} Resource.
 func NewIdentityPlatformProjectDefaultConfig_Override(i IdentityPlatformProjectDefaultConfig, scope constructs.Construct, id *string, config *IdentityPlatformProjectDefaultConfigConfig) {
 	_init_.Initialize()
 

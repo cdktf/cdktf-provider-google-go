@@ -91,6 +91,10 @@ func (c *jsiiProxy_ContainerAttachedCluster) validatePutOidcConfigParameters(val
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAttachedCluster) validatePutProxyConfigParameters(value *ContainerAttachedClusterProxyConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAttachedCluster) validatePutTimeoutsParameters(value *ContainerAttachedClusterTimeouts) error {
 	return nil
 }

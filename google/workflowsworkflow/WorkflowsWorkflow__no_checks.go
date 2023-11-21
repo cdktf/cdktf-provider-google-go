@@ -143,6 +143,10 @@ func (j *jsiiProxy_WorkflowsWorkflow) validateSetSourceContentsParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_WorkflowsWorkflow) validateSetUserEnvVarsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewWorkflowsWorkflowParameters(scope constructs.Construct, id *string, config *WorkflowsWorkflowConfig) error {
 	return nil
 }

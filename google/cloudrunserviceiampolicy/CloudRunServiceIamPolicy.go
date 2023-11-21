@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/cloud_run_service_iam_policy google_cloud_run_service_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/cloud_run_service_iam_policy google_cloud_run_service_iam_policy}.
 type CloudRunServiceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_CloudRunServiceIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/cloud_run_service_iam_policy google_cloud_run_service_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/cloud_run_service_iam_policy google_cloud_run_service_iam_policy} Resource.
 func NewCloudRunServiceIamPolicy(scope constructs.Construct, id *string, config *CloudRunServiceIamPolicyConfig) CloudRunServiceIamPolicy {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewCloudRunServiceIamPolicy(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/cloud_run_service_iam_policy google_cloud_run_service_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/cloud_run_service_iam_policy google_cloud_run_service_iam_policy} Resource.
 func NewCloudRunServiceIamPolicy_Override(c CloudRunServiceIamPolicy, scope constructs.Construct, id *string, config *CloudRunServiceIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
 type CloudRunV2Service interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -41,6 +41,9 @@ type CloudRunV2Service interface {
 	SetCount(val interface{})
 	CreateTime() *string
 	Creator() *string
+	CustomAudiences() *[]*string
+	SetCustomAudiences(val *[]*string)
+	CustomAudiencesInput() *[]*string
 	DeleteTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -163,6 +166,7 @@ type CloudRunV2Service interface {
 	ResetBinaryAuthorization()
 	ResetClient()
 	ResetClientVersion()
+	ResetCustomAudiences()
 	ResetDescription()
 	ResetId()
 	ResetIngress()
@@ -334,6 +338,26 @@ func (j *jsiiProxy_CloudRunV2Service) Creator() *string {
 	_jsii_.Get(
 		j,
 		"creator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) CustomAudiences() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customAudiences",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) CustomAudiencesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customAudiencesInput",
 		&returns,
 	)
 	return returns
@@ -850,7 +874,7 @@ func (j *jsiiProxy_CloudRunV2Service) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudRunV2ServiceConfig) CloudRunV2Service {
 	_init_.Initialize()
 
@@ -868,7 +892,7 @@ func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewCloudRunV2Service_Override(c CloudRunV2Service, scope constructs.Construct, id *string, config *CloudRunV2ServiceConfig) {
 	_init_.Initialize()
 
@@ -930,6 +954,17 @@ func (j *jsiiProxy_CloudRunV2Service)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2Service)SetCustomAudiences(val *[]*string) {
+	if err := j.validateSetCustomAudiencesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customAudiences",
 		val,
 	)
 }
@@ -1458,6 +1493,14 @@ func (c *jsiiProxy_CloudRunV2Service) ResetClientVersion() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetClientVersion",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2Service) ResetCustomAudiences() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCustomAudiences",
 		nil, // no parameters
 	)
 }

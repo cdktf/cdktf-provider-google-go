@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership}.
 type GkeHubFeatureMembership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -57,6 +57,9 @@ type GkeHubFeatureMembership interface {
 	Membership() *string
 	SetMembership(val *string)
 	MembershipInput() *string
+	MembershipLocation() *string
+	SetMembershipLocation(val *string)
+	MembershipLocationInput() *string
 	Mesh() GkeHubFeatureMembershipMeshOutputReference
 	MeshInput() *GkeHubFeatureMembershipMesh
 	// The tree node.
@@ -120,6 +123,7 @@ type GkeHubFeatureMembership interface {
 	PutTimeouts(value *GkeHubFeatureMembershipTimeouts)
 	ResetConfigmanagement()
 	ResetId()
+	ResetMembershipLocation()
 	ResetMesh()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -331,6 +335,26 @@ func (j *jsiiProxy_GkeHubFeatureMembership) MembershipInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GkeHubFeatureMembership) MembershipLocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"membershipLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureMembership) MembershipLocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"membershipLocationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GkeHubFeatureMembership) Mesh() GkeHubFeatureMembershipMeshOutputReference {
 	var returns GkeHubFeatureMembershipMeshOutputReference
 	_jsii_.Get(
@@ -462,7 +486,7 @@ func (j *jsiiProxy_GkeHubFeatureMembership) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership} Resource.
 func NewGkeHubFeatureMembership(scope constructs.Construct, id *string, config *GkeHubFeatureMembershipConfig) GkeHubFeatureMembership {
 	_init_.Initialize()
 
@@ -480,7 +504,7 @@ func NewGkeHubFeatureMembership(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership} Resource.
 func NewGkeHubFeatureMembership_Override(g GkeHubFeatureMembership, scope constructs.Construct, id *string, config *GkeHubFeatureMembershipConfig) {
 	_init_.Initialize()
 
@@ -580,6 +604,17 @@ func (j *jsiiProxy_GkeHubFeatureMembership)SetMembership(val *string) {
 	_jsii_.Set(
 		j,
 		"membership",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GkeHubFeatureMembership)SetMembershipLocation(val *string) {
+	if err := j.validateSetMembershipLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"membershipLocation",
 		val,
 	)
 }
@@ -977,6 +1012,14 @@ func (g *jsiiProxy_GkeHubFeatureMembership) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeHubFeatureMembership) ResetMembershipLocation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMembershipLocation",
 		nil, // no parameters
 	)
 }

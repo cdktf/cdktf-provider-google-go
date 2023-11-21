@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/bigtable_app_profile google_bigtable_app_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/bigtable_app_profile google_bigtable_app_profile}.
 type BigtableAppProfile interface {
 	cdktf.TerraformResource
 	AppProfileId() *string
@@ -82,6 +82,8 @@ type BigtableAppProfile interface {
 	RawOverrides() interface{}
 	SingleClusterRouting() BigtableAppProfileSingleClusterRoutingOutputReference
 	SingleClusterRoutingInput() *BigtableAppProfileSingleClusterRouting
+	StandardIsolation() BigtableAppProfileStandardIsolationOutputReference
+	StandardIsolationInput() *BigtableAppProfileStandardIsolation
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -124,6 +126,7 @@ type BigtableAppProfile interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutSingleClusterRouting(value *BigtableAppProfileSingleClusterRouting)
+	PutStandardIsolation(value *BigtableAppProfileStandardIsolation)
 	PutTimeouts(value *BigtableAppProfileTimeouts)
 	ResetDescription()
 	ResetId()
@@ -136,6 +139,7 @@ type BigtableAppProfile interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetSingleClusterRouting()
+	ResetStandardIsolation()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -472,6 +476,26 @@ func (j *jsiiProxy_BigtableAppProfile) SingleClusterRoutingInput() *BigtableAppP
 	return returns
 }
 
+func (j *jsiiProxy_BigtableAppProfile) StandardIsolation() BigtableAppProfileStandardIsolationOutputReference {
+	var returns BigtableAppProfileStandardIsolationOutputReference
+	_jsii_.Get(
+		j,
+		"standardIsolation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableAppProfile) StandardIsolationInput() *BigtableAppProfileStandardIsolation {
+	var returns *BigtableAppProfileStandardIsolation
+	_jsii_.Get(
+		j,
+		"standardIsolationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigtableAppProfile) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -523,7 +547,7 @@ func (j *jsiiProxy_BigtableAppProfile) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/bigtable_app_profile google_bigtable_app_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/bigtable_app_profile google_bigtable_app_profile} Resource.
 func NewBigtableAppProfile(scope constructs.Construct, id *string, config *BigtableAppProfileConfig) BigtableAppProfile {
 	_init_.Initialize()
 
@@ -541,7 +565,7 @@ func NewBigtableAppProfile(scope constructs.Construct, id *string, config *Bigta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/bigtable_app_profile google_bigtable_app_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/bigtable_app_profile google_bigtable_app_profile} Resource.
 func NewBigtableAppProfile_Override(b BigtableAppProfile, scope constructs.Construct, id *string, config *BigtableAppProfileConfig) {
 	_init_.Initialize()
 
@@ -1037,6 +1061,17 @@ func (b *jsiiProxy_BigtableAppProfile) PutSingleClusterRouting(value *BigtableAp
 	)
 }
 
+func (b *jsiiProxy_BigtableAppProfile) PutStandardIsolation(value *BigtableAppProfileStandardIsolation) {
+	if err := b.validatePutStandardIsolationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putStandardIsolation",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigtableAppProfile) PutTimeouts(value *BigtableAppProfileTimeouts) {
 	if err := b.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1116,6 +1151,14 @@ func (b *jsiiProxy_BigtableAppProfile) ResetSingleClusterRouting() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetSingleClusterRouting",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigtableAppProfile) ResetStandardIsolation() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetStandardIsolation",
 		nil, // no parameters
 	)
 }

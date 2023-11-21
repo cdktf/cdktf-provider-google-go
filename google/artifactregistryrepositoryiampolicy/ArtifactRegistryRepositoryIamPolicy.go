@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/artifact_registry_repository_iam_policy google_artifact_registry_repository_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/artifact_registry_repository_iam_policy google_artifact_registry_repository_iam_policy}.
 type ArtifactRegistryRepositoryIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/artifact_registry_repository_iam_policy google_artifact_registry_repository_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/artifact_registry_repository_iam_policy google_artifact_registry_repository_iam_policy} Resource.
 func NewArtifactRegistryRepositoryIamPolicy(scope constructs.Construct, id *string, config *ArtifactRegistryRepositoryIamPolicyConfig) ArtifactRegistryRepositoryIamPolicy {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewArtifactRegistryRepositoryIamPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.6.0/docs/resources/artifact_registry_repository_iam_policy google_artifact_registry_repository_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/artifact_registry_repository_iam_policy google_artifact_registry_repository_iam_policy} Resource.
 func NewArtifactRegistryRepositoryIamPolicy_Override(a ArtifactRegistryRepositoryIamPolicy, scope constructs.Construct, id *string, config *ArtifactRegistryRepositoryIamPolicyConfig) {
 	_init_.Initialize()
 
