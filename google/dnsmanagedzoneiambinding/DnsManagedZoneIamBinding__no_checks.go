@@ -59,7 +59,15 @@ func (d *jsiiProxy_DnsManagedZoneIamBinding) validateInterpolationForAttributePa
 	return nil
 }
 
+func (d *jsiiProxy_DnsManagedZoneIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsManagedZoneIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DnsManagedZoneIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

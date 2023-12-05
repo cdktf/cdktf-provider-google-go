@@ -59,7 +59,15 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) validateInterpolationForAttrib
 	return nil
 }
 
+func (c *jsiiProxy_CertificateManagerTrustConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertificateManagerTrustConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertificateManagerTrustConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

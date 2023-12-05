@@ -59,7 +59,15 @@ func (s *jsiiProxy_SqlSslCert) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (s *jsiiProxy_SqlSslCert) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlSslCert) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlSslCert) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

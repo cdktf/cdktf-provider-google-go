@@ -59,7 +59,15 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateInterpolationFo
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

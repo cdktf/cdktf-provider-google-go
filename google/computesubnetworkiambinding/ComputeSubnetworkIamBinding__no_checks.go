@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeSubnetworkIamBinding) validateInterpolationForAttribut
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSubnetworkIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSubnetworkIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSubnetworkIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

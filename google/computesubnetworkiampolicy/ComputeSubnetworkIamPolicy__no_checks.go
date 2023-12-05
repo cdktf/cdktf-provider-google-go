@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeSubnetworkIamPolicy) validateInterpolationForAttribute
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSubnetworkIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSubnetworkIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSubnetworkIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

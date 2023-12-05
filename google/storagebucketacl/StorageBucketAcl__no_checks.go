@@ -59,7 +59,15 @@ func (s *jsiiProxy_StorageBucketAcl) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_StorageBucketAcl) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucketAcl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageBucketAcl) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

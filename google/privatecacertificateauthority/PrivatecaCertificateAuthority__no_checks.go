@@ -59,7 +59,15 @@ func (p *jsiiProxy_PrivatecaCertificateAuthority) validateInterpolationForAttrib
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCertificateAuthority) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCertificateAuthority) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivatecaCertificateAuthority) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

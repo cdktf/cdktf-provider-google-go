@@ -93,12 +93,105 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validateInter
 	return nil
 }
 
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validatePutMavenArtifactsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*CloudbuildTriggerBuildArtifactsMavenArtifacts:
+		value := value.(*[]*CloudbuildTriggerBuildArtifactsMavenArtifacts)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*CloudbuildTriggerBuildArtifactsMavenArtifacts:
+		value_ := value.([]*CloudbuildTriggerBuildArtifactsMavenArtifacts)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CloudbuildTriggerBuildArtifactsMavenArtifacts; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validatePutNpmPackagesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*CloudbuildTriggerBuildArtifactsNpmPackages:
+		value := value.(*[]*CloudbuildTriggerBuildArtifactsNpmPackages)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*CloudbuildTriggerBuildArtifactsNpmPackages:
+		value_ := value.([]*CloudbuildTriggerBuildArtifactsNpmPackages)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CloudbuildTriggerBuildArtifactsNpmPackages; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validatePutObjectsParameters(value *CloudbuildTriggerBuildArtifactsObjects) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validatePutPythonPackagesParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*CloudbuildTriggerBuildArtifactsPythonPackages:
+		value := value.(*[]*CloudbuildTriggerBuildArtifactsPythonPackages)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*CloudbuildTriggerBuildArtifactsPythonPackages:
+		value_ := value.([]*CloudbuildTriggerBuildArtifactsPythonPackages)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CloudbuildTriggerBuildArtifactsPythonPackages; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil

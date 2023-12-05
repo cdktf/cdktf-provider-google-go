@@ -59,7 +59,15 @@ func (b *jsiiProxy_BinaryAuthorizationPolicy) validateInterpolationForAttributeP
 	return nil
 }
 
+func (b *jsiiProxy_BinaryAuthorizationPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BinaryAuthorizationPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BinaryAuthorizationPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

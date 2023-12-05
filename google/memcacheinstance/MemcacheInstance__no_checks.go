@@ -59,7 +59,15 @@ func (m *jsiiProxy_MemcacheInstance) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (m *jsiiProxy_MemcacheInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemcacheInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemcacheInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

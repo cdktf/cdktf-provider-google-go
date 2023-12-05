@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/logging_project_sink google_logging_project_sink}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/logging_project_sink google_logging_project_sink}.
 type LoggingProjectSink interface {
 	cdktf.TerraformResource
 	BigqueryOptions() LoggingProjectSinkBigqueryOptionsOutputReference
@@ -117,12 +117,22 @@ type LoggingProjectSink interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -546,7 +556,7 @@ func (j *jsiiProxy_LoggingProjectSink) WriterIdentity() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/logging_project_sink google_logging_project_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/logging_project_sink google_logging_project_sink} Resource.
 func NewLoggingProjectSink(scope constructs.Construct, id *string, config *LoggingProjectSinkConfig) LoggingProjectSink {
 	_init_.Initialize()
 
@@ -564,7 +574,7 @@ func NewLoggingProjectSink(scope constructs.Construct, id *string, config *Loggi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/logging_project_sink google_logging_project_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/logging_project_sink google_logging_project_sink} Resource.
 func NewLoggingProjectSink_Override(l LoggingProjectSink, scope constructs.Construct, id *string, config *LoggingProjectSinkConfig) {
 	_init_.Initialize()
 
@@ -1011,6 +1021,19 @@ func (l *jsiiProxy_LoggingProjectSink) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (l *jsiiProxy_LoggingProjectSink) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (l *jsiiProxy_LoggingProjectSink) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1038,6 +1061,17 @@ func (l *jsiiProxy_LoggingProjectSink) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (l *jsiiProxy_LoggingProjectSink) MoveFromId(id *string) {
+	if err := l.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (l *jsiiProxy_LoggingProjectSink) MoveTo(moveTarget *string, index interface{}) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1046,6 +1080,17 @@ func (l *jsiiProxy_LoggingProjectSink) MoveTo(moveTarget *string, index interfac
 		l,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (l *jsiiProxy_LoggingProjectSink) MoveToId(id *string) {
+	if err := l.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

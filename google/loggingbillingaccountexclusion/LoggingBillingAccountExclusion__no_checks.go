@@ -59,7 +59,15 @@ func (l *jsiiProxy_LoggingBillingAccountExclusion) validateInterpolationForAttri
 	return nil
 }
 
+func (l *jsiiProxy_LoggingBillingAccountExclusion) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingBillingAccountExclusion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingBillingAccountExclusion) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (i *jsiiProxy_IapTunnelIamBinding) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (i *jsiiProxy_IapTunnelIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapTunnelIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapTunnelIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

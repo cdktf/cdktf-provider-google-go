@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeManagedSslCertificate) validateInterpolationForAttribu
 	return nil
 }
 
+func (c *jsiiProxy_ComputeManagedSslCertificate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeManagedSslCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeManagedSslCertificate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

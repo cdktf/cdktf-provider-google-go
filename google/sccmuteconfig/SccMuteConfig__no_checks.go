@@ -59,7 +59,15 @@ func (s *jsiiProxy_SccMuteConfig) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_SccMuteConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccMuteConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccMuteConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (l *jsiiProxy_LoggingLinkedDataset) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (l *jsiiProxy_LoggingLinkedDataset) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingLinkedDataset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingLinkedDataset) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

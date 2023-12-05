@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member}.
 type ArtifactRegistryRepositoryIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -106,12 +106,22 @@ type ArtifactRegistryRepositoryIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -449,7 +459,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryIamMember) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member} Resource.
 func NewArtifactRegistryRepositoryIamMember(scope constructs.Construct, id *string, config *ArtifactRegistryRepositoryIamMemberConfig) ArtifactRegistryRepositoryIamMember {
 	_init_.Initialize()
 
@@ -467,7 +477,7 @@ func NewArtifactRegistryRepositoryIamMember(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member} Resource.
 func NewArtifactRegistryRepositoryIamMember_Override(a ArtifactRegistryRepositoryIamMember, scope constructs.Construct, id *string, config *ArtifactRegistryRepositoryIamMemberConfig) {
 	_init_.Initialize()
 
@@ -881,6 +891,19 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) GetStringMapAttribute(te
 	return returns
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -908,6 +931,17 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) InterpolationForAttribut
 	return returns
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -916,6 +950,17 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) MoveTo(moveTarget *strin
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

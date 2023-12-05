@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/dataplex_task_iam_policy google_dataplex_task_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/dataplex_task_iam_policy google_dataplex_task_iam_policy}.
 type DataplexTaskIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -104,12 +104,22 @@ type DataplexTaskIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -425,7 +435,7 @@ func (j *jsiiProxy_DataplexTaskIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/dataplex_task_iam_policy google_dataplex_task_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/dataplex_task_iam_policy google_dataplex_task_iam_policy} Resource.
 func NewDataplexTaskIamPolicy(scope constructs.Construct, id *string, config *DataplexTaskIamPolicyConfig) DataplexTaskIamPolicy {
 	_init_.Initialize()
 
@@ -443,7 +453,7 @@ func NewDataplexTaskIamPolicy(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/dataplex_task_iam_policy google_dataplex_task_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/dataplex_task_iam_policy google_dataplex_task_iam_policy} Resource.
 func NewDataplexTaskIamPolicy_Override(d DataplexTaskIamPolicy, scope constructs.Construct, id *string, config *DataplexTaskIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -857,6 +867,19 @@ func (d *jsiiProxy_DataplexTaskIamPolicy) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (d *jsiiProxy_DataplexTaskIamPolicy) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DataplexTaskIamPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -884,6 +907,17 @@ func (d *jsiiProxy_DataplexTaskIamPolicy) InterpolationForAttribute(terraformAtt
 	return returns
 }
 
+func (d *jsiiProxy_DataplexTaskIamPolicy) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DataplexTaskIamPolicy) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -892,6 +926,17 @@ func (d *jsiiProxy_DataplexTaskIamPolicy) MoveTo(moveTarget *string, index inter
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DataplexTaskIamPolicy) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

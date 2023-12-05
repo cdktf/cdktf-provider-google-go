@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule}.
 type ComputeGlobalForwardingRule interface {
 	cdktf.TerraformResource
 	BaseForwardingRule() *string
@@ -99,6 +99,8 @@ type ComputeGlobalForwardingRule interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	ServiceDirectoryRegistrations() ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference
+	ServiceDirectoryRegistrationsInput() *ComputeGlobalForwardingRuleServiceDirectoryRegistrations
 	SourceIpRanges() *[]*string
 	SetSourceIpRanges(val *[]*string)
 	SourceIpRangesInput() *[]*string
@@ -141,16 +143,27 @@ type ComputeGlobalForwardingRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMetadataFilters(value interface{})
+	PutServiceDirectoryRegistrations(value *ComputeGlobalForwardingRuleServiceDirectoryRegistrations)
 	PutTimeouts(value *ComputeGlobalForwardingRuleTimeouts)
 	ResetDescription()
 	ResetId()
@@ -167,6 +180,7 @@ type ComputeGlobalForwardingRule interface {
 	ResetOverrideLogicalId()
 	ResetPortRange()
 	ResetProject()
+	ResetServiceDirectoryRegistrations()
 	ResetSourceIpRanges()
 	ResetSubnetwork()
 	ResetTimeouts()
@@ -635,6 +649,26 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeGlobalForwardingRule) ServiceDirectoryRegistrations() ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference {
+	var returns ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference
+	_jsii_.Get(
+		j,
+		"serviceDirectoryRegistrations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeGlobalForwardingRule) ServiceDirectoryRegistrationsInput() *ComputeGlobalForwardingRuleServiceDirectoryRegistrations {
+	var returns *ComputeGlobalForwardingRuleServiceDirectoryRegistrations
+	_jsii_.Get(
+		j,
+		"serviceDirectoryRegistrationsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeGlobalForwardingRule) SourceIpRanges() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -756,7 +790,7 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewComputeGlobalForwardingRule(scope constructs.Construct, id *string, config *ComputeGlobalForwardingRuleConfig) ComputeGlobalForwardingRule {
 	_init_.Initialize()
 
@@ -774,7 +808,7 @@ func NewComputeGlobalForwardingRule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewComputeGlobalForwardingRule_Override(c ComputeGlobalForwardingRule, scope constructs.Construct, id *string, config *ComputeGlobalForwardingRuleConfig) {
 	_init_.Initialize()
 
@@ -1287,6 +1321,19 @@ func (c *jsiiProxy_ComputeGlobalForwardingRule) GetStringMapAttribute(terraformA
 	return returns
 }
 
+func (c *jsiiProxy_ComputeGlobalForwardingRule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_ComputeGlobalForwardingRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1314,6 +1361,17 @@ func (c *jsiiProxy_ComputeGlobalForwardingRule) InterpolationForAttribute(terraf
 	return returns
 }
 
+func (c *jsiiProxy_ComputeGlobalForwardingRule) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_ComputeGlobalForwardingRule) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1322,6 +1380,17 @@ func (c *jsiiProxy_ComputeGlobalForwardingRule) MoveTo(moveTarget *string, index
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_ComputeGlobalForwardingRule) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -1343,6 +1412,17 @@ func (c *jsiiProxy_ComputeGlobalForwardingRule) PutMetadataFilters(value interfa
 	_jsii_.InvokeVoid(
 		c,
 		"putMetadataFilters",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeGlobalForwardingRule) PutServiceDirectoryRegistrations(value *ComputeGlobalForwardingRuleServiceDirectoryRegistrations) {
+	if err := c.validatePutServiceDirectoryRegistrationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putServiceDirectoryRegistrations",
 		[]interface{}{value},
 	)
 }
@@ -1458,6 +1538,14 @@ func (c *jsiiProxy_ComputeGlobalForwardingRule) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeGlobalForwardingRule) ResetServiceDirectoryRegistrations() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetServiceDirectoryRegistrations",
 		nil, // no parameters
 	)
 }

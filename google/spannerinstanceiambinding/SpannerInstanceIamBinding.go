@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/spanner_instance_iam_binding google_spanner_instance_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/spanner_instance_iam_binding google_spanner_instance_iam_binding}.
 type SpannerInstanceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -103,12 +103,22 @@ type SpannerInstanceIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -425,7 +435,7 @@ func (j *jsiiProxy_SpannerInstanceIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/spanner_instance_iam_binding google_spanner_instance_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/spanner_instance_iam_binding google_spanner_instance_iam_binding} Resource.
 func NewSpannerInstanceIamBinding(scope constructs.Construct, id *string, config *SpannerInstanceIamBindingConfig) SpannerInstanceIamBinding {
 	_init_.Initialize()
 
@@ -443,7 +453,7 @@ func NewSpannerInstanceIamBinding(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/spanner_instance_iam_binding google_spanner_instance_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/spanner_instance_iam_binding google_spanner_instance_iam_binding} Resource.
 func NewSpannerInstanceIamBinding_Override(s SpannerInstanceIamBinding, scope constructs.Construct, id *string, config *SpannerInstanceIamBindingConfig) {
 	_init_.Initialize()
 
@@ -846,6 +856,19 @@ func (s *jsiiProxy_SpannerInstanceIamBinding) GetStringMapAttribute(terraformAtt
 	return returns
 }
 
+func (s *jsiiProxy_SpannerInstanceIamBinding) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_SpannerInstanceIamBinding) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -873,6 +896,17 @@ func (s *jsiiProxy_SpannerInstanceIamBinding) InterpolationForAttribute(terrafor
 	return returns
 }
 
+func (s *jsiiProxy_SpannerInstanceIamBinding) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_SpannerInstanceIamBinding) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -881,6 +915,17 @@ func (s *jsiiProxy_SpannerInstanceIamBinding) MoveTo(moveTarget *string, index i
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_SpannerInstanceIamBinding) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

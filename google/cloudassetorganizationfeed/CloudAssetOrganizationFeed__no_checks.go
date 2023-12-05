@@ -59,7 +59,15 @@ func (c *jsiiProxy_CloudAssetOrganizationFeed) validateInterpolationForAttribute
 	return nil
 }
 
+func (c *jsiiProxy_CloudAssetOrganizationFeed) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAssetOrganizationFeed) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAssetOrganizationFeed) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

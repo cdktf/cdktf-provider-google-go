@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/cloud_run_v2_service_iam_member google_cloud_run_v2_service_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/cloud_run_v2_service_iam_member google_cloud_run_v2_service_iam_member}.
 type CloudRunV2ServiceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -106,12 +106,22 @@ type CloudRunV2ServiceIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -449,7 +459,7 @@ func (j *jsiiProxy_CloudRunV2ServiceIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/cloud_run_v2_service_iam_member google_cloud_run_v2_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/cloud_run_v2_service_iam_member google_cloud_run_v2_service_iam_member} Resource.
 func NewCloudRunV2ServiceIamMember(scope constructs.Construct, id *string, config *CloudRunV2ServiceIamMemberConfig) CloudRunV2ServiceIamMember {
 	_init_.Initialize()
 
@@ -467,7 +477,7 @@ func NewCloudRunV2ServiceIamMember(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/cloud_run_v2_service_iam_member google_cloud_run_v2_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/cloud_run_v2_service_iam_member google_cloud_run_v2_service_iam_member} Resource.
 func NewCloudRunV2ServiceIamMember_Override(c CloudRunV2ServiceIamMember, scope constructs.Construct, id *string, config *CloudRunV2ServiceIamMemberConfig) {
 	_init_.Initialize()
 
@@ -881,6 +891,19 @@ func (c *jsiiProxy_CloudRunV2ServiceIamMember) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (c *jsiiProxy_CloudRunV2ServiceIamMember) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_CloudRunV2ServiceIamMember) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -908,6 +931,17 @@ func (c *jsiiProxy_CloudRunV2ServiceIamMember) InterpolationForAttribute(terrafo
 	return returns
 }
 
+func (c *jsiiProxy_CloudRunV2ServiceIamMember) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2ServiceIamMember) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -916,6 +950,17 @@ func (c *jsiiProxy_CloudRunV2ServiceIamMember) MoveTo(moveTarget *string, index 
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceIamMember) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

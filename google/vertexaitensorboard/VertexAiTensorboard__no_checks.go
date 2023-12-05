@@ -59,7 +59,15 @@ func (v *jsiiProxy_VertexAiTensorboard) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiTensorboard) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiTensorboard) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiTensorboard) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

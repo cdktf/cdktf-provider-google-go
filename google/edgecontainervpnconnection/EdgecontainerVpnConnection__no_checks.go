@@ -59,7 +59,15 @@ func (e *jsiiProxy_EdgecontainerVpnConnection) validateInterpolationForAttribute
 	return nil
 }
 
+func (e *jsiiProxy_EdgecontainerVpnConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EdgecontainerVpnConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EdgecontainerVpnConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

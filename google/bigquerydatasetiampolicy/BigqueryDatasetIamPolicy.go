@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy}.
 type BigqueryDatasetIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -98,12 +98,22 @@ type BigqueryDatasetIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -378,7 +388,7 @@ func (j *jsiiProxy_BigqueryDatasetIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy} Resource.
 func NewBigqueryDatasetIamPolicy(scope constructs.Construct, id *string, config *BigqueryDatasetIamPolicyConfig) BigqueryDatasetIamPolicy {
 	_init_.Initialize()
 
@@ -396,7 +406,7 @@ func NewBigqueryDatasetIamPolicy(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy} Resource.
 func NewBigqueryDatasetIamPolicy_Override(b BigqueryDatasetIamPolicy, scope constructs.Construct, id *string, config *BigqueryDatasetIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -788,6 +798,19 @@ func (b *jsiiProxy_BigqueryDatasetIamPolicy) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
+func (b *jsiiProxy_BigqueryDatasetIamPolicy) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (b *jsiiProxy_BigqueryDatasetIamPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := b.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -815,6 +838,17 @@ func (b *jsiiProxy_BigqueryDatasetIamPolicy) InterpolationForAttribute(terraform
 	return returns
 }
 
+func (b *jsiiProxy_BigqueryDatasetIamPolicy) MoveFromId(id *string) {
+	if err := b.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (b *jsiiProxy_BigqueryDatasetIamPolicy) MoveTo(moveTarget *string, index interface{}) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -823,6 +857,17 @@ func (b *jsiiProxy_BigqueryDatasetIamPolicy) MoveTo(moveTarget *string, index in
 		b,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (b *jsiiProxy_BigqueryDatasetIamPolicy) MoveToId(id *string) {
+	if err := b.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

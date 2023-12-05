@@ -59,7 +59,15 @@ func (s *jsiiProxy_SccSourceIamBinding) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_SccSourceIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccSourceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccSourceIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

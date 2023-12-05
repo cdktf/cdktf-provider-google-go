@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeHttpHealthCheck) validateInterpolationForAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_ComputeHttpHealthCheck) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeHttpHealthCheck) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeHttpHealthCheck) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

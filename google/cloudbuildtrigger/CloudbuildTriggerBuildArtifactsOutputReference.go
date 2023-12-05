@@ -35,8 +35,14 @@ type CloudbuildTriggerBuildArtifactsOutputReference interface {
 	ImagesInput() *[]*string
 	InternalValue() *CloudbuildTriggerBuildArtifacts
 	SetInternalValue(val *CloudbuildTriggerBuildArtifacts)
+	MavenArtifacts() CloudbuildTriggerBuildArtifactsMavenArtifactsList
+	MavenArtifactsInput() interface{}
+	NpmPackages() CloudbuildTriggerBuildArtifactsNpmPackagesList
+	NpmPackagesInput() interface{}
 	Objects() CloudbuildTriggerBuildArtifactsObjectsOutputReference
 	ObjectsInput() *CloudbuildTriggerBuildArtifactsObjects
+	PythonPackages() CloudbuildTriggerBuildArtifactsPythonPackagesList
+	PythonPackagesInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,9 +75,15 @@ type CloudbuildTriggerBuildArtifactsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutMavenArtifacts(value interface{})
+	PutNpmPackages(value interface{})
 	PutObjects(value *CloudbuildTriggerBuildArtifactsObjects)
+	PutPythonPackages(value interface{})
 	ResetImages()
+	ResetMavenArtifacts()
+	ResetNpmPackages()
 	ResetObjects()
+	ResetPythonPackages()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -157,6 +169,46 @@ func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) InternalValue
 	return returns
 }
 
+func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) MavenArtifacts() CloudbuildTriggerBuildArtifactsMavenArtifactsList {
+	var returns CloudbuildTriggerBuildArtifactsMavenArtifactsList
+	_jsii_.Get(
+		j,
+		"mavenArtifacts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) MavenArtifactsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mavenArtifactsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) NpmPackages() CloudbuildTriggerBuildArtifactsNpmPackagesList {
+	var returns CloudbuildTriggerBuildArtifactsNpmPackagesList
+	_jsii_.Get(
+		j,
+		"npmPackages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) NpmPackagesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"npmPackagesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) Objects() CloudbuildTriggerBuildArtifactsObjectsOutputReference {
 	var returns CloudbuildTriggerBuildArtifactsObjectsOutputReference
 	_jsii_.Get(
@@ -172,6 +224,26 @@ func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) ObjectsInput(
 	_jsii_.Get(
 		j,
 		"objectsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) PythonPackages() CloudbuildTriggerBuildArtifactsPythonPackagesList {
+	var returns CloudbuildTriggerBuildArtifactsPythonPackagesList
+	_jsii_.Get(
+		j,
+		"pythonPackages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) PythonPackagesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pythonPackagesInput",
 		&returns,
 	)
 	return returns
@@ -477,6 +549,28 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) Interpolation
 	return returns
 }
 
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) PutMavenArtifacts(value interface{}) {
+	if err := c.validatePutMavenArtifactsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putMavenArtifacts",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) PutNpmPackages(value interface{}) {
+	if err := c.validatePutNpmPackagesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNpmPackages",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) PutObjects(value *CloudbuildTriggerBuildArtifactsObjects) {
 	if err := c.validatePutObjectsParameters(value); err != nil {
 		panic(err)
@@ -484,6 +578,17 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) PutObjects(va
 	_jsii_.InvokeVoid(
 		c,
 		"putObjects",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) PutPythonPackages(value interface{}) {
+	if err := c.validatePutPythonPackagesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPythonPackages",
 		[]interface{}{value},
 	)
 }
@@ -496,10 +601,34 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) ResetImages()
 	)
 }
 
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) ResetMavenArtifacts() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMavenArtifacts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) ResetNpmPackages() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNpmPackages",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) ResetObjects() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetObjects",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) ResetPythonPackages() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPythonPackages",
 		nil, // no parameters
 	)
 }

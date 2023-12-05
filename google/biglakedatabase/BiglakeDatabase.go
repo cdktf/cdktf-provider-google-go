@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/biglake_database google_biglake_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/biglake_database google_biglake_database}.
 type BiglakeDatabase interface {
 	cdktf.TerraformResource
 	Catalog() *string
@@ -105,12 +105,22 @@ type BiglakeDatabase interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -457,7 +467,7 @@ func (j *jsiiProxy_BiglakeDatabase) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/biglake_database google_biglake_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/biglake_database google_biglake_database} Resource.
 func NewBiglakeDatabase(scope constructs.Construct, id *string, config *BiglakeDatabaseConfig) BiglakeDatabase {
 	_init_.Initialize()
 
@@ -475,7 +485,7 @@ func NewBiglakeDatabase(scope constructs.Construct, id *string, config *BiglakeD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/biglake_database google_biglake_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/biglake_database google_biglake_database} Resource.
 func NewBiglakeDatabase_Override(b BiglakeDatabase, scope constructs.Construct, id *string, config *BiglakeDatabaseConfig) {
 	_init_.Initialize()
 
@@ -867,6 +877,19 @@ func (b *jsiiProxy_BiglakeDatabase) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (b *jsiiProxy_BiglakeDatabase) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (b *jsiiProxy_BiglakeDatabase) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := b.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -894,6 +917,17 @@ func (b *jsiiProxy_BiglakeDatabase) InterpolationForAttribute(terraformAttribute
 	return returns
 }
 
+func (b *jsiiProxy_BiglakeDatabase) MoveFromId(id *string) {
+	if err := b.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (b *jsiiProxy_BiglakeDatabase) MoveTo(moveTarget *string, index interface{}) {
 	if err := b.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -902,6 +936,17 @@ func (b *jsiiProxy_BiglakeDatabase) MoveTo(moveTarget *string, index interface{}
 		b,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (b *jsiiProxy_BiglakeDatabase) MoveToId(id *string) {
+	if err := b.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

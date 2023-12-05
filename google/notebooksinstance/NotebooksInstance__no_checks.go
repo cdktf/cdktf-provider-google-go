@@ -59,7 +59,15 @@ func (n *jsiiProxy_NotebooksInstance) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (n *jsiiProxy_NotebooksInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

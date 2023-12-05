@@ -59,7 +59,15 @@ func (g *jsiiProxy_GkeHubScopeIamPolicy) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GkeHubScopeIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubScopeIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeHubScopeIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

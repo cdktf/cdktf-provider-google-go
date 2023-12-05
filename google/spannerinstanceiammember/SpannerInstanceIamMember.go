@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/spanner_instance_iam_member google_spanner_instance_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/spanner_instance_iam_member google_spanner_instance_iam_member}.
 type SpannerInstanceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -103,12 +103,22 @@ type SpannerInstanceIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -425,7 +435,7 @@ func (j *jsiiProxy_SpannerInstanceIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/spanner_instance_iam_member google_spanner_instance_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/spanner_instance_iam_member google_spanner_instance_iam_member} Resource.
 func NewSpannerInstanceIamMember(scope constructs.Construct, id *string, config *SpannerInstanceIamMemberConfig) SpannerInstanceIamMember {
 	_init_.Initialize()
 
@@ -443,7 +453,7 @@ func NewSpannerInstanceIamMember(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/spanner_instance_iam_member google_spanner_instance_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/spanner_instance_iam_member google_spanner_instance_iam_member} Resource.
 func NewSpannerInstanceIamMember_Override(s SpannerInstanceIamMember, scope constructs.Construct, id *string, config *SpannerInstanceIamMemberConfig) {
 	_init_.Initialize()
 
@@ -846,6 +856,19 @@ func (s *jsiiProxy_SpannerInstanceIamMember) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
+func (s *jsiiProxy_SpannerInstanceIamMember) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_SpannerInstanceIamMember) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -873,6 +896,17 @@ func (s *jsiiProxy_SpannerInstanceIamMember) InterpolationForAttribute(terraform
 	return returns
 }
 
+func (s *jsiiProxy_SpannerInstanceIamMember) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_SpannerInstanceIamMember) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -881,6 +915,17 @@ func (s *jsiiProxy_SpannerInstanceIamMember) MoveTo(moveTarget *string, index in
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_SpannerInstanceIamMember) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

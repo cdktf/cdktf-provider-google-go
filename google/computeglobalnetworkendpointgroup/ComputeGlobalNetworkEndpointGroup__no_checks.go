@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validateInterpolationForAt
 	return nil
 }
 
+func (c *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeGlobalNetworkEndpointGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) validateInterpolationForAtt
 	return nil
 }
 
+func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

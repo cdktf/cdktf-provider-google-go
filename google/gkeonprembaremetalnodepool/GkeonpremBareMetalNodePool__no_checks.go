@@ -59,7 +59,15 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePool) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GkeonpremBareMetalNodePool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeonpremBareMetalNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeonpremBareMetalNodePool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

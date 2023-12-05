@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/logging_organization_exclusion google_logging_organization_exclusion}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/logging_organization_exclusion google_logging_organization_exclusion}.
 type LoggingOrganizationExclusion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -103,12 +103,22 @@ type LoggingOrganizationExclusion interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -414,7 +424,7 @@ func (j *jsiiProxy_LoggingOrganizationExclusion) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/logging_organization_exclusion google_logging_organization_exclusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/logging_organization_exclusion google_logging_organization_exclusion} Resource.
 func NewLoggingOrganizationExclusion(scope constructs.Construct, id *string, config *LoggingOrganizationExclusionConfig) LoggingOrganizationExclusion {
 	_init_.Initialize()
 
@@ -432,7 +442,7 @@ func NewLoggingOrganizationExclusion(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/logging_organization_exclusion google_logging_organization_exclusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/logging_organization_exclusion google_logging_organization_exclusion} Resource.
 func NewLoggingOrganizationExclusion_Override(l LoggingOrganizationExclusion, scope constructs.Construct, id *string, config *LoggingOrganizationExclusionConfig) {
 	_init_.Initialize()
 
@@ -846,6 +856,19 @@ func (l *jsiiProxy_LoggingOrganizationExclusion) GetStringMapAttribute(terraform
 	return returns
 }
 
+func (l *jsiiProxy_LoggingOrganizationExclusion) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (l *jsiiProxy_LoggingOrganizationExclusion) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -873,6 +896,17 @@ func (l *jsiiProxy_LoggingOrganizationExclusion) InterpolationForAttribute(terra
 	return returns
 }
 
+func (l *jsiiProxy_LoggingOrganizationExclusion) MoveFromId(id *string) {
+	if err := l.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (l *jsiiProxy_LoggingOrganizationExclusion) MoveTo(moveTarget *string, index interface{}) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -881,6 +915,17 @@ func (l *jsiiProxy_LoggingOrganizationExclusion) MoveTo(moveTarget *string, inde
 		l,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (l *jsiiProxy_LoggingOrganizationExclusion) MoveToId(id *string) {
+	if err := l.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

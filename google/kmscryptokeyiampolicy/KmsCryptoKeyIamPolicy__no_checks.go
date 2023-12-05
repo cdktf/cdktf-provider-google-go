@@ -59,7 +59,15 @@ func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

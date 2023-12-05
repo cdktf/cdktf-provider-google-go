@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeRegionSslPolicy) validateInterpolationForAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionSslPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionSslPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionSslPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

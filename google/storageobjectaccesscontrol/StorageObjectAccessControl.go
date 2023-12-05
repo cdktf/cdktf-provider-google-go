@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/storage_object_access_control google_storage_object_access_control}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/storage_object_access_control google_storage_object_access_control}.
 type StorageObjectAccessControl interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -107,12 +107,22 @@ type StorageObjectAccessControl interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -468,7 +478,7 @@ func (j *jsiiProxy_StorageObjectAccessControl) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/storage_object_access_control google_storage_object_access_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/storage_object_access_control google_storage_object_access_control} Resource.
 func NewStorageObjectAccessControl(scope constructs.Construct, id *string, config *StorageObjectAccessControlConfig) StorageObjectAccessControl {
 	_init_.Initialize()
 
@@ -486,7 +496,7 @@ func NewStorageObjectAccessControl(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/storage_object_access_control google_storage_object_access_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/storage_object_access_control google_storage_object_access_control} Resource.
 func NewStorageObjectAccessControl_Override(s StorageObjectAccessControl, scope constructs.Construct, id *string, config *StorageObjectAccessControlConfig) {
 	_init_.Initialize()
 
@@ -889,6 +899,19 @@ func (s *jsiiProxy_StorageObjectAccessControl) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (s *jsiiProxy_StorageObjectAccessControl) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_StorageObjectAccessControl) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -916,6 +939,17 @@ func (s *jsiiProxy_StorageObjectAccessControl) InterpolationForAttribute(terrafo
 	return returns
 }
 
+func (s *jsiiProxy_StorageObjectAccessControl) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_StorageObjectAccessControl) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -924,6 +958,17 @@ func (s *jsiiProxy_StorageObjectAccessControl) MoveTo(moveTarget *string, index 
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_StorageObjectAccessControl) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

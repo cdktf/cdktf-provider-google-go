@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding}.
 type StorageBucketIamBinding interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -100,12 +100,22 @@ type StorageBucketIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -401,7 +411,7 @@ func (j *jsiiProxy_StorageBucketIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource.
 func NewStorageBucketIamBinding(scope constructs.Construct, id *string, config *StorageBucketIamBindingConfig) StorageBucketIamBinding {
 	_init_.Initialize()
 
@@ -419,7 +429,7 @@ func NewStorageBucketIamBinding(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource.
 func NewStorageBucketIamBinding_Override(s StorageBucketIamBinding, scope constructs.Construct, id *string, config *StorageBucketIamBindingConfig) {
 	_init_.Initialize()
 
@@ -811,6 +821,19 @@ func (s *jsiiProxy_StorageBucketIamBinding) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
+func (s *jsiiProxy_StorageBucketIamBinding) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_StorageBucketIamBinding) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -838,6 +861,17 @@ func (s *jsiiProxy_StorageBucketIamBinding) InterpolationForAttribute(terraformA
 	return returns
 }
 
+func (s *jsiiProxy_StorageBucketIamBinding) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_StorageBucketIamBinding) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -846,6 +880,17 @@ func (s *jsiiProxy_StorageBucketIamBinding) MoveTo(moveTarget *string, index int
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_StorageBucketIamBinding) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeGlobalAddress) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_ComputeGlobalAddress) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeGlobalAddress) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeGlobalAddress) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

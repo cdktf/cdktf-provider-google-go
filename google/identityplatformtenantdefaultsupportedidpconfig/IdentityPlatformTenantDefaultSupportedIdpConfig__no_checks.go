@@ -59,7 +59,15 @@ func (i *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) validateInte
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

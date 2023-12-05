@@ -59,7 +59,15 @@ func (s *jsiiProxy_SccNotificationConfig) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SccNotificationConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccNotificationConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccNotificationConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

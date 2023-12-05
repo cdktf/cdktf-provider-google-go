@@ -59,7 +59,15 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateInterpolati
 	return nil
 }
 
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

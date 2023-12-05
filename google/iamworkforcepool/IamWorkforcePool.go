@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/iam_workforce_pool google_iam_workforce_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/iam_workforce_pool google_iam_workforce_pool}.
 type IamWorkforcePool interface {
 	cdktf.TerraformResource
+	AccessRestrictions() IamWorkforcePoolAccessRestrictionsOutputReference
+	AccessRestrictionsInput() *IamWorkforcePoolAccessRestrictions
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -113,16 +115,28 @@ type IamWorkforcePool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAccessRestrictions(value *IamWorkforcePoolAccessRestrictions)
 	PutTimeouts(value *IamWorkforcePoolTimeouts)
+	ResetAccessRestrictions()
 	ResetDescription()
 	ResetDisabled()
 	ResetDisplayName()
@@ -145,6 +159,26 @@ type IamWorkforcePool interface {
 // The jsii proxy struct for IamWorkforcePool
 type jsiiProxy_IamWorkforcePool struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_IamWorkforcePool) AccessRestrictions() IamWorkforcePoolAccessRestrictionsOutputReference {
+	var returns IamWorkforcePoolAccessRestrictionsOutputReference
+	_jsii_.Get(
+		j,
+		"accessRestrictions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IamWorkforcePool) AccessRestrictionsInput() *IamWorkforcePoolAccessRestrictions {
+	var returns *IamWorkforcePoolAccessRestrictions
+	_jsii_.Get(
+		j,
+		"accessRestrictionsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_IamWorkforcePool) CdktfStack() cdktf.TerraformStack {
@@ -508,7 +542,7 @@ func (j *jsiiProxy_IamWorkforcePool) WorkforcePoolIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/iam_workforce_pool google_iam_workforce_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/iam_workforce_pool google_iam_workforce_pool} Resource.
 func NewIamWorkforcePool(scope constructs.Construct, id *string, config *IamWorkforcePoolConfig) IamWorkforcePool {
 	_init_.Initialize()
 
@@ -526,7 +560,7 @@ func NewIamWorkforcePool(scope constructs.Construct, id *string, config *IamWork
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/iam_workforce_pool google_iam_workforce_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/iam_workforce_pool google_iam_workforce_pool} Resource.
 func NewIamWorkforcePool_Override(i IamWorkforcePool, scope constructs.Construct, id *string, config *IamWorkforcePoolConfig) {
 	_init_.Initialize()
 
@@ -962,6 +996,19 @@ func (i *jsiiProxy_IamWorkforcePool) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
+func (i *jsiiProxy_IamWorkforcePool) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IamWorkforcePool) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -989,6 +1036,17 @@ func (i *jsiiProxy_IamWorkforcePool) InterpolationForAttribute(terraformAttribut
 	return returns
 }
 
+func (i *jsiiProxy_IamWorkforcePool) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IamWorkforcePool) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -997,6 +1055,17 @@ func (i *jsiiProxy_IamWorkforcePool) MoveTo(moveTarget *string, index interface{
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IamWorkforcePool) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -1011,6 +1080,17 @@ func (i *jsiiProxy_IamWorkforcePool) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (i *jsiiProxy_IamWorkforcePool) PutAccessRestrictions(value *IamWorkforcePoolAccessRestrictions) {
+	if err := i.validatePutAccessRestrictionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putAccessRestrictions",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IamWorkforcePool) PutTimeouts(value *IamWorkforcePoolTimeouts) {
 	if err := i.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1019,6 +1099,14 @@ func (i *jsiiProxy_IamWorkforcePool) PutTimeouts(value *IamWorkforcePoolTimeouts
 		i,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_IamWorkforcePool) ResetAccessRestrictions() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetAccessRestrictions",
+		nil, // no parameters
 	)
 }
 

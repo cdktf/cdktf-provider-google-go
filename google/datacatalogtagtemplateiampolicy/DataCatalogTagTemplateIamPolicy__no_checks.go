@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamPolicy) validateInterpolationForAttr
 	return nil
 }
 
+func (d *jsiiProxy_DataCatalogTagTemplateIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogTagTemplateIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCatalogTagTemplateIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

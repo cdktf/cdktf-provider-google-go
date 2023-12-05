@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/dataplex_datascan_iam_binding google_dataplex_datascan_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/dataplex_datascan_iam_binding google_dataplex_datascan_iam_binding}.
 type DataplexDatascanIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -106,12 +106,22 @@ type DataplexDatascanIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -449,7 +459,7 @@ func (j *jsiiProxy_DataplexDatascanIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/dataplex_datascan_iam_binding google_dataplex_datascan_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/dataplex_datascan_iam_binding google_dataplex_datascan_iam_binding} Resource.
 func NewDataplexDatascanIamBinding(scope constructs.Construct, id *string, config *DataplexDatascanIamBindingConfig) DataplexDatascanIamBinding {
 	_init_.Initialize()
 
@@ -467,7 +477,7 @@ func NewDataplexDatascanIamBinding(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/dataplex_datascan_iam_binding google_dataplex_datascan_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/dataplex_datascan_iam_binding google_dataplex_datascan_iam_binding} Resource.
 func NewDataplexDatascanIamBinding_Override(d DataplexDatascanIamBinding, scope constructs.Construct, id *string, config *DataplexDatascanIamBindingConfig) {
 	_init_.Initialize()
 
@@ -881,6 +891,19 @@ func (d *jsiiProxy_DataplexDatascanIamBinding) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (d *jsiiProxy_DataplexDatascanIamBinding) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DataplexDatascanIamBinding) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -908,6 +931,17 @@ func (d *jsiiProxy_DataplexDatascanIamBinding) InterpolationForAttribute(terrafo
 	return returns
 }
 
+func (d *jsiiProxy_DataplexDatascanIamBinding) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DataplexDatascanIamBinding) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -916,6 +950,17 @@ func (d *jsiiProxy_DataplexDatascanIamBinding) MoveTo(moveTarget *string, index 
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascanIamBinding) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

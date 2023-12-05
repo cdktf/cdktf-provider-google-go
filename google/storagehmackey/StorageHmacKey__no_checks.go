@@ -59,7 +59,15 @@ func (s *jsiiProxy_StorageHmacKey) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_StorageHmacKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageHmacKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageHmacKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

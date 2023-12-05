@@ -59,7 +59,15 @@ func (l *jsiiProxy_LoggingFolderSink) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (l *jsiiProxy_LoggingFolderSink) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingFolderSink) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingFolderSink) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicy) validateInterpolationForA
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

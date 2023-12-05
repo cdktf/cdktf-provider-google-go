@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataplexTaskIamPolicy) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (d *jsiiProxy_DataplexTaskIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexTaskIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplexTaskIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (n *jsiiProxy_NotebooksRuntimeIamPolicy) validateInterpolationForAttributeP
 	return nil
 }
 
+func (n *jsiiProxy_NotebooksRuntimeIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksRuntimeIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksRuntimeIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

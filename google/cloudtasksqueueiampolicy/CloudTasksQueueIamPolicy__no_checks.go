@@ -59,7 +59,15 @@ func (c *jsiiProxy_CloudTasksQueueIamPolicy) validateInterpolationForAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_CloudTasksQueueIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudTasksQueueIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudTasksQueueIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

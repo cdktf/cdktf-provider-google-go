@@ -59,7 +59,15 @@ func (a *jsiiProxy_AlloydbCluster) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

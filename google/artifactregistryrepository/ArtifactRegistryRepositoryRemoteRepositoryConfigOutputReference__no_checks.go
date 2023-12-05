@@ -67,6 +67,10 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutUpstreamCredentialsParameters(value *ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutYumRepositoryParameters(value *ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository) error {
 	return nil
 }

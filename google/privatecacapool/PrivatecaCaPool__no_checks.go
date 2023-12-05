@@ -59,7 +59,15 @@ func (p *jsiiProxy_PrivatecaCaPool) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCaPool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCaPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivatecaCaPool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -43,6 +43,9 @@ type ComposerEnvironmentConfigDatabaseConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Zone() *string
+	SetZone(val *string)
+	ZoneInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,6 +70,8 @@ type ComposerEnvironmentConfigDatabaseConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMachineType()
+	ResetZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -172,6 +177,26 @@ func (j *jsiiProxy_ComposerEnvironmentConfigDatabaseConfigOutputReference) Terra
 	return returns
 }
 
+func (j *jsiiProxy_ComposerEnvironmentConfigDatabaseConfigOutputReference) Zone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigDatabaseConfigOutputReference) ZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewComposerEnvironmentConfigDatabaseConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComposerEnvironmentConfigDatabaseConfigOutputReference {
 	_init_.Initialize()
@@ -262,6 +287,17 @@ func (j *jsiiProxy_ComposerEnvironmentConfigDatabaseConfigOutputReference)SetTer
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigDatabaseConfigOutputReference)SetZone(val *string) {
+	if err := j.validateSetZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zone",
 		val,
 	)
 }
@@ -450,6 +486,22 @@ func (c *jsiiProxy_ComposerEnvironmentConfigDatabaseConfigOutputReference) Inter
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ComposerEnvironmentConfigDatabaseConfigOutputReference) ResetMachineType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMachineType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComposerEnvironmentConfigDatabaseConfigOutputReference) ResetZone() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetZone",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ComposerEnvironmentConfigDatabaseConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

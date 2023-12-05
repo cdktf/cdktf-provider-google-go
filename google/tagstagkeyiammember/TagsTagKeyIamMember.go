@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/tags_tag_key_iam_member google_tags_tag_key_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/tags_tag_key_iam_member google_tags_tag_key_iam_member}.
 type TagsTagKeyIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -100,12 +100,22 @@ type TagsTagKeyIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -401,7 +411,7 @@ func (j *jsiiProxy_TagsTagKeyIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/tags_tag_key_iam_member google_tags_tag_key_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/tags_tag_key_iam_member google_tags_tag_key_iam_member} Resource.
 func NewTagsTagKeyIamMember(scope constructs.Construct, id *string, config *TagsTagKeyIamMemberConfig) TagsTagKeyIamMember {
 	_init_.Initialize()
 
@@ -419,7 +429,7 @@ func NewTagsTagKeyIamMember(scope constructs.Construct, id *string, config *Tags
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/tags_tag_key_iam_member google_tags_tag_key_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/tags_tag_key_iam_member google_tags_tag_key_iam_member} Resource.
 func NewTagsTagKeyIamMember_Override(t TagsTagKeyIamMember, scope constructs.Construct, id *string, config *TagsTagKeyIamMemberConfig) {
 	_init_.Initialize()
 
@@ -811,6 +821,19 @@ func (t *jsiiProxy_TagsTagKeyIamMember) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (t *jsiiProxy_TagsTagKeyIamMember) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		t,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (t *jsiiProxy_TagsTagKeyIamMember) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := t.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -838,6 +861,17 @@ func (t *jsiiProxy_TagsTagKeyIamMember) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (t *jsiiProxy_TagsTagKeyIamMember) MoveFromId(id *string) {
+	if err := t.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (t *jsiiProxy_TagsTagKeyIamMember) MoveTo(moveTarget *string, index interface{}) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -846,6 +880,17 @@ func (t *jsiiProxy_TagsTagKeyIamMember) MoveTo(moveTarget *string, index interfa
 		t,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (t *jsiiProxy_TagsTagKeyIamMember) MoveToId(id *string) {
+	if err := t.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

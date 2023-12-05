@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/organization_policy google_organization_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/organization_policy google_organization_policy}.
 type OrganizationPolicy interface {
 	cdktf.TerraformResource
 	BooleanPolicy() OrganizationPolicyBooleanPolicyOutputReference
@@ -107,12 +107,22 @@ type OrganizationPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -485,7 +495,7 @@ func (j *jsiiProxy_OrganizationPolicy) VersionInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/organization_policy google_organization_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/organization_policy google_organization_policy} Resource.
 func NewOrganizationPolicy(scope constructs.Construct, id *string, config *OrganizationPolicyConfig) OrganizationPolicy {
 	_init_.Initialize()
 
@@ -503,7 +513,7 @@ func NewOrganizationPolicy(scope constructs.Construct, id *string, config *Organ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/organization_policy google_organization_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/organization_policy google_organization_policy} Resource.
 func NewOrganizationPolicy_Override(o OrganizationPolicy, scope constructs.Construct, id *string, config *OrganizationPolicyConfig) {
 	_init_.Initialize()
 
@@ -895,6 +905,19 @@ func (o *jsiiProxy_OrganizationPolicy) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (o *jsiiProxy_OrganizationPolicy) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (o *jsiiProxy_OrganizationPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -922,6 +945,17 @@ func (o *jsiiProxy_OrganizationPolicy) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (o *jsiiProxy_OrganizationPolicy) MoveFromId(id *string) {
+	if err := o.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (o *jsiiProxy_OrganizationPolicy) MoveTo(moveTarget *string, index interface{}) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -930,6 +964,17 @@ func (o *jsiiProxy_OrganizationPolicy) MoveTo(moveTarget *string, index interfac
 		o,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (o *jsiiProxy_OrganizationPolicy) MoveToId(id *string) {
+	if err := o.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

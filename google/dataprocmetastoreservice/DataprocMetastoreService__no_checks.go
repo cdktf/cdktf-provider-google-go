@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataprocMetastoreService) validateInterpolationForAttributePa
 	return nil
 }
 
+func (d *jsiiProxy_DataprocMetastoreService) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreService) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

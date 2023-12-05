@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeRegionDiskIamMember) validateInterpolationForAttribute
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionDiskIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionDiskIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionDiskIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

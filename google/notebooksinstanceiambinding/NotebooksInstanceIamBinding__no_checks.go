@@ -59,7 +59,15 @@ func (n *jsiiProxy_NotebooksInstanceIamBinding) validateInterpolationForAttribut
 	return nil
 }
 
+func (n *jsiiProxy_NotebooksInstanceIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksInstanceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NotebooksInstanceIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

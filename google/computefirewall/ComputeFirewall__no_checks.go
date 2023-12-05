@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeFirewall) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (c *jsiiProxy_ComputeFirewall) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeFirewall) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeFirewall) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

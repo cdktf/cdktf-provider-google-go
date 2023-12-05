@@ -59,7 +59,15 @@ func (l *jsiiProxy_LoggingFolderExclusion) validateInterpolationForAttributePara
 	return nil
 }
 
+func (l *jsiiProxy_LoggingFolderExclusion) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingFolderExclusion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingFolderExclusion) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

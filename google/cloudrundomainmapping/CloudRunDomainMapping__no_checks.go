@@ -59,7 +59,15 @@ func (c *jsiiProxy_CloudRunDomainMapping) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunDomainMapping) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunDomainMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudRunDomainMapping) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

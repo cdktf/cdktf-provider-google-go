@@ -59,7 +59,15 @@ func (b *jsiiProxy_BigtableTableIamPolicy) validateInterpolationForAttributePara
 	return nil
 }
 
+func (b *jsiiProxy_BigtableTableIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableTableIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableTableIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

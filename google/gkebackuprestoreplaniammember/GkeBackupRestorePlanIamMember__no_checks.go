@@ -59,7 +59,15 @@ func (g *jsiiProxy_GkeBackupRestorePlanIamMember) validateInterpolationForAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GkeBackupRestorePlanIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeBackupRestorePlanIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeBackupRestorePlanIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (c *jsiiProxy_ContainerAzureNodePool) validateInterpolationForAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAzureNodePool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAzureNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAzureNodePool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

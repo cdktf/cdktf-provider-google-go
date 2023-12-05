@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeImage) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (c *jsiiProxy_ComputeImage) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeImage) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeImage) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

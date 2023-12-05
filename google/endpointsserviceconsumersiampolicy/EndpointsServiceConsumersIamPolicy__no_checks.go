@@ -59,7 +59,15 @@ func (e *jsiiProxy_EndpointsServiceConsumersIamPolicy) validateInterpolationForA
 	return nil
 }
 
+func (e *jsiiProxy_EndpointsServiceConsumersIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EndpointsServiceConsumersIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EndpointsServiceConsumersIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (g *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigOutputReference) validat
 	return nil
 }
 
+func (g *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigOutputReference) validatePutPolicycontrollerParameters(value *GkeHubFeatureFleetDefaultMemberConfigPolicycontroller) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

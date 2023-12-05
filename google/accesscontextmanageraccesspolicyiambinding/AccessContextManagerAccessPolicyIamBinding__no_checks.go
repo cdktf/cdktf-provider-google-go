@@ -59,7 +59,15 @@ func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateInterpola
 	return nil
 }
 
+func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

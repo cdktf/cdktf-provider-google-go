@@ -59,7 +59,15 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) validateInterpolationForAttribut
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubListing) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

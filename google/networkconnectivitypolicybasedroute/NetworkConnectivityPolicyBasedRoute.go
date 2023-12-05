@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/network_connectivity_policy_based_route google_network_connectivity_policy_based_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/network_connectivity_policy_based_route google_network_connectivity_policy_based_route}.
 type NetworkConnectivityPolicyBasedRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -126,12 +126,22 @@ type NetworkConnectivityPolicyBasedRoute interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -648,7 +658,7 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRoute) Warnings() NetworkConnec
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/network_connectivity_policy_based_route google_network_connectivity_policy_based_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/network_connectivity_policy_based_route google_network_connectivity_policy_based_route} Resource.
 func NewNetworkConnectivityPolicyBasedRoute(scope constructs.Construct, id *string, config *NetworkConnectivityPolicyBasedRouteConfig) NetworkConnectivityPolicyBasedRoute {
 	_init_.Initialize()
 
@@ -666,7 +676,7 @@ func NewNetworkConnectivityPolicyBasedRoute(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/network_connectivity_policy_based_route google_network_connectivity_policy_based_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/network_connectivity_policy_based_route google_network_connectivity_policy_based_route} Resource.
 func NewNetworkConnectivityPolicyBasedRoute_Override(n NetworkConnectivityPolicyBasedRoute, scope constructs.Construct, id *string, config *NetworkConnectivityPolicyBasedRouteConfig) {
 	_init_.Initialize()
 
@@ -1113,6 +1123,19 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) GetStringMapAttribute(te
 	return returns
 }
 
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1140,6 +1163,17 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) InterpolationForAttribut
 	return returns
 }
 
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1148,6 +1182,17 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) MoveTo(moveTarget *strin
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRoute) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

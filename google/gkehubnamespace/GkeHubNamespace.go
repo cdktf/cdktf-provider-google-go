@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/gke_hub_namespace google_gke_hub_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/gke_hub_namespace google_gke_hub_namespace}.
 type GkeHubNamespace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -116,12 +116,22 @@ type GkeHubNamespace interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -550,7 +560,7 @@ func (j *jsiiProxy_GkeHubNamespace) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/gke_hub_namespace google_gke_hub_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/gke_hub_namespace google_gke_hub_namespace} Resource.
 func NewGkeHubNamespace(scope constructs.Construct, id *string, config *GkeHubNamespaceConfig) GkeHubNamespace {
 	_init_.Initialize()
 
@@ -568,7 +578,7 @@ func NewGkeHubNamespace(scope constructs.Construct, id *string, config *GkeHubNa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/gke_hub_namespace google_gke_hub_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/gke_hub_namespace google_gke_hub_namespace} Resource.
 func NewGkeHubNamespace_Override(g GkeHubNamespace, scope constructs.Construct, id *string, config *GkeHubNamespaceConfig) {
 	_init_.Initialize()
 
@@ -993,6 +1003,19 @@ func (g *jsiiProxy_GkeHubNamespace) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (g *jsiiProxy_GkeHubNamespace) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GkeHubNamespace) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1020,6 +1043,17 @@ func (g *jsiiProxy_GkeHubNamespace) InterpolationForAttribute(terraformAttribute
 	return returns
 }
 
+func (g *jsiiProxy_GkeHubNamespace) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GkeHubNamespace) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1028,6 +1062,17 @@ func (g *jsiiProxy_GkeHubNamespace) MoveTo(moveTarget *string, index interface{}
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GkeHubNamespace) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataLossPreventionJobTrigger) validateInterpolationForAttribu
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionJobTrigger) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionJobTrigger) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTrigger) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

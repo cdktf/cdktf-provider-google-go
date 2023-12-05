@@ -59,7 +59,15 @@ func (l *jsiiProxy_LoggingOrganizationSink) validateInterpolationForAttributePar
 	return nil
 }
 
+func (l *jsiiProxy_LoggingOrganizationSink) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingOrganizationSink) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingOrganizationSink) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

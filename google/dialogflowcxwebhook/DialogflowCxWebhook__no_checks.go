@@ -59,7 +59,15 @@ func (d *jsiiProxy_DialogflowCxWebhook) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxWebhook) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxWebhook) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxWebhook) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

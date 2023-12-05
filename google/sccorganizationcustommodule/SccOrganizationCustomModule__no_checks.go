@@ -59,7 +59,15 @@ func (s *jsiiProxy_SccOrganizationCustomModule) validateInterpolationForAttribut
 	return nil
 }
 
+func (s *jsiiProxy_SccOrganizationCustomModule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccOrganizationCustomModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccOrganizationCustomModule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

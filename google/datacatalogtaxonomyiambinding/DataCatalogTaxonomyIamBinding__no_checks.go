@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataCatalogTaxonomyIamBinding) validateInterpolationForAttrib
 	return nil
 }
 
+func (d *jsiiProxy_DataCatalogTaxonomyIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataCatalogTaxonomyIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataCatalogTaxonomyIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

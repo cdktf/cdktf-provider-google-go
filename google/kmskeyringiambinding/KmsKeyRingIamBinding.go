@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/kms_key_ring_iam_binding google_kms_key_ring_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/kms_key_ring_iam_binding google_kms_key_ring_iam_binding}.
 type KmsKeyRingIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -100,12 +100,22 @@ type KmsKeyRingIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -401,7 +411,7 @@ func (j *jsiiProxy_KmsKeyRingIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/kms_key_ring_iam_binding google_kms_key_ring_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/kms_key_ring_iam_binding google_kms_key_ring_iam_binding} Resource.
 func NewKmsKeyRingIamBinding(scope constructs.Construct, id *string, config *KmsKeyRingIamBindingConfig) KmsKeyRingIamBinding {
 	_init_.Initialize()
 
@@ -419,7 +429,7 @@ func NewKmsKeyRingIamBinding(scope constructs.Construct, id *string, config *Kms
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/kms_key_ring_iam_binding google_kms_key_ring_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/kms_key_ring_iam_binding google_kms_key_ring_iam_binding} Resource.
 func NewKmsKeyRingIamBinding_Override(k KmsKeyRingIamBinding, scope constructs.Construct, id *string, config *KmsKeyRingIamBindingConfig) {
 	_init_.Initialize()
 
@@ -811,6 +821,19 @@ func (k *jsiiProxy_KmsKeyRingIamBinding) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (k *jsiiProxy_KmsKeyRingIamBinding) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		k,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (k *jsiiProxy_KmsKeyRingIamBinding) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := k.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -838,6 +861,17 @@ func (k *jsiiProxy_KmsKeyRingIamBinding) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (k *jsiiProxy_KmsKeyRingIamBinding) MoveFromId(id *string) {
+	if err := k.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (k *jsiiProxy_KmsKeyRingIamBinding) MoveTo(moveTarget *string, index interface{}) {
 	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -846,6 +880,17 @@ func (k *jsiiProxy_KmsKeyRingIamBinding) MoveTo(moveTarget *string, index interf
 		k,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (k *jsiiProxy_KmsKeyRingIamBinding) MoveToId(id *string) {
+	if err := k.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

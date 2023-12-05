@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeSnapshotIamBinding) validateInterpolationForAttributeP
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSnapshotIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSnapshotIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSnapshotIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

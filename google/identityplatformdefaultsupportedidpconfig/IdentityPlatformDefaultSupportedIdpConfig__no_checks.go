@@ -59,7 +59,15 @@ func (i *jsiiProxy_IdentityPlatformDefaultSupportedIdpConfig) validateInterpolat
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformDefaultSupportedIdpConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformDefaultSupportedIdpConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformDefaultSupportedIdpConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateInterpolationForAttribu
 	return nil
 }
 
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

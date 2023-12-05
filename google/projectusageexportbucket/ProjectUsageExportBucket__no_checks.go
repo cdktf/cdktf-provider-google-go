@@ -59,7 +59,15 @@ func (p *jsiiProxy_ProjectUsageExportBucket) validateInterpolationForAttributePa
 	return nil
 }
 
+func (p *jsiiProxy_ProjectUsageExportBucket) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_ProjectUsageExportBucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_ProjectUsageExportBucket) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

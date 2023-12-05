@@ -59,7 +59,15 @@ func (h *jsiiProxy_HealthcareDatasetIamBinding) validateInterpolationForAttribut
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareDatasetIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareDatasetIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareDatasetIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

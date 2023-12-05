@@ -33,7 +33,10 @@ type DataGoogleCloudbuildTriggerBuildArtifactsOutputReference interface {
 	Images() *[]*string
 	InternalValue() *DataGoogleCloudbuildTriggerBuildArtifacts
 	SetInternalValue(val *DataGoogleCloudbuildTriggerBuildArtifacts)
+	MavenArtifacts() DataGoogleCloudbuildTriggerBuildArtifactsMavenArtifactsList
+	NpmPackages() DataGoogleCloudbuildTriggerBuildArtifactsNpmPackagesList
 	Objects() DataGoogleCloudbuildTriggerBuildArtifactsObjectsList
+	PythonPackages() DataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -141,11 +144,41 @@ func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsOutputReference) Int
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsOutputReference) MavenArtifacts() DataGoogleCloudbuildTriggerBuildArtifactsMavenArtifactsList {
+	var returns DataGoogleCloudbuildTriggerBuildArtifactsMavenArtifactsList
+	_jsii_.Get(
+		j,
+		"mavenArtifacts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsOutputReference) NpmPackages() DataGoogleCloudbuildTriggerBuildArtifactsNpmPackagesList {
+	var returns DataGoogleCloudbuildTriggerBuildArtifactsNpmPackagesList
+	_jsii_.Get(
+		j,
+		"npmPackages",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsOutputReference) Objects() DataGoogleCloudbuildTriggerBuildArtifactsObjectsList {
 	var returns DataGoogleCloudbuildTriggerBuildArtifactsObjectsList
 	_jsii_.Get(
 		j,
 		"objects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsOutputReference) PythonPackages() DataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesList {
+	var returns DataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesList
+	_jsii_.Get(
+		j,
+		"pythonPackages",
 		&returns,
 	)
 	return returns

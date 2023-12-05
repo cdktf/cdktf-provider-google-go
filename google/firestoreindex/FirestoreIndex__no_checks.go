@@ -59,7 +59,15 @@ func (f *jsiiProxy_FirestoreIndex) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (f *jsiiProxy_FirestoreIndex) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirestoreIndex) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirestoreIndex) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/document_ai_processor_default_version google_document_ai_processor_default_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/document_ai_processor_default_version google_document_ai_processor_default_version}.
 type DocumentAiProcessorDefaultVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -96,12 +96,22 @@ type DocumentAiProcessorDefaultVersion interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -367,7 +377,7 @@ func (j *jsiiProxy_DocumentAiProcessorDefaultVersion) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/document_ai_processor_default_version google_document_ai_processor_default_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/document_ai_processor_default_version google_document_ai_processor_default_version} Resource.
 func NewDocumentAiProcessorDefaultVersion(scope constructs.Construct, id *string, config *DocumentAiProcessorDefaultVersionConfig) DocumentAiProcessorDefaultVersion {
 	_init_.Initialize()
 
@@ -385,7 +395,7 @@ func NewDocumentAiProcessorDefaultVersion(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/document_ai_processor_default_version google_document_ai_processor_default_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/document_ai_processor_default_version google_document_ai_processor_default_version} Resource.
 func NewDocumentAiProcessorDefaultVersion_Override(d DocumentAiProcessorDefaultVersion, scope constructs.Construct, id *string, config *DocumentAiProcessorDefaultVersionConfig) {
 	_init_.Initialize()
 
@@ -766,6 +776,19 @@ func (d *jsiiProxy_DocumentAiProcessorDefaultVersion) GetStringMapAttribute(terr
 	return returns
 }
 
+func (d *jsiiProxy_DocumentAiProcessorDefaultVersion) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DocumentAiProcessorDefaultVersion) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -793,6 +816,17 @@ func (d *jsiiProxy_DocumentAiProcessorDefaultVersion) InterpolationForAttribute(
 	return returns
 }
 
+func (d *jsiiProxy_DocumentAiProcessorDefaultVersion) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DocumentAiProcessorDefaultVersion) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -801,6 +835,17 @@ func (d *jsiiProxy_DocumentAiProcessorDefaultVersion) MoveTo(moveTarget *string,
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DocumentAiProcessorDefaultVersion) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

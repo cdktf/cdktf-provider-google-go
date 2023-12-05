@@ -59,7 +59,15 @@ func (s *jsiiProxy_SpannerDatabaseIamBinding) validateInterpolationForAttributeP
 	return nil
 }
 
+func (s *jsiiProxy_SpannerDatabaseIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpannerDatabaseIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpannerDatabaseIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

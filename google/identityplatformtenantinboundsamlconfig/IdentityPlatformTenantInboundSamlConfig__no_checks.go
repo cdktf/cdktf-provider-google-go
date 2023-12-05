@@ -59,7 +59,15 @@ func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateInterpolatio
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

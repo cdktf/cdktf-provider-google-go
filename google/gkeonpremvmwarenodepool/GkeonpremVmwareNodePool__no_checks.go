@@ -59,7 +59,15 @@ func (g *jsiiProxy_GkeonpremVmwareNodePool) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GkeonpremVmwareNodePool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeonpremVmwareNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeonpremVmwareNodePool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DnsPolicy) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (d *jsiiProxy_DnsPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DnsPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DialogflowCxEnvironment) validateInterpolationForAttributePar
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxEnvironment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxEnvironment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

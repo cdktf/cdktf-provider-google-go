@@ -59,7 +59,15 @@ func (a *jsiiProxy_AccessContextManagerIngressPolicy) validateInterpolationForAt
 	return nil
 }
 
+func (a *jsiiProxy_AccessContextManagerIngressPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerIngressPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerIngressPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (f *jsiiProxy_FolderAccessApprovalSettings) validateInterpolationForAttribu
 	return nil
 }
 
+func (f *jsiiProxy_FolderAccessApprovalSettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FolderAccessApprovalSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FolderAccessApprovalSettings) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

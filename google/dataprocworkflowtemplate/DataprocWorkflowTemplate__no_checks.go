@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) validateInterpolationForAttributePa
 	return nil
 }
 
+func (d *jsiiProxy_DataprocWorkflowTemplate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocWorkflowTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocWorkflowTemplate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

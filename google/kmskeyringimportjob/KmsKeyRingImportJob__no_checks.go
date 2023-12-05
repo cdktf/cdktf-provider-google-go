@@ -59,7 +59,15 @@ func (k *jsiiProxy_KmsKeyRingImportJob) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (k *jsiiProxy_KmsKeyRingImportJob) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsKeyRingImportJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsKeyRingImportJob) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

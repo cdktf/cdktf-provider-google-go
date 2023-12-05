@@ -59,7 +59,15 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheService) validateInterpolationForAttr
 	return nil
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheService) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheService) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/vertex_ai_featurestore google_vertex_ai_featurestore}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/vertex_ai_featurestore google_vertex_ai_featurestore}.
 type VertexAiFeaturestore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -114,12 +114,22 @@ type VertexAiFeaturestore interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -544,7 +554,7 @@ func (j *jsiiProxy_VertexAiFeaturestore) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/vertex_ai_featurestore google_vertex_ai_featurestore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/vertex_ai_featurestore google_vertex_ai_featurestore} Resource.
 func NewVertexAiFeaturestore(scope constructs.Construct, id *string, config *VertexAiFeaturestoreConfig) VertexAiFeaturestore {
 	_init_.Initialize()
 
@@ -562,7 +572,7 @@ func NewVertexAiFeaturestore(scope constructs.Construct, id *string, config *Ver
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/vertex_ai_featurestore google_vertex_ai_featurestore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/vertex_ai_featurestore google_vertex_ai_featurestore} Resource.
 func NewVertexAiFeaturestore_Override(v VertexAiFeaturestore, scope constructs.Construct, id *string, config *VertexAiFeaturestoreConfig) {
 	_init_.Initialize()
 
@@ -976,6 +986,19 @@ func (v *jsiiProxy_VertexAiFeaturestore) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (v *jsiiProxy_VertexAiFeaturestore) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (v *jsiiProxy_VertexAiFeaturestore) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := v.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1003,6 +1026,17 @@ func (v *jsiiProxy_VertexAiFeaturestore) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (v *jsiiProxy_VertexAiFeaturestore) MoveFromId(id *string) {
+	if err := v.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (v *jsiiProxy_VertexAiFeaturestore) MoveTo(moveTarget *string, index interface{}) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1011,6 +1045,17 @@ func (v *jsiiProxy_VertexAiFeaturestore) MoveTo(moveTarget *string, index interf
 		v,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeaturestore) MoveToId(id *string) {
+	if err := v.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

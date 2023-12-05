@@ -75,6 +75,10 @@ func (j *jsiiProxy_ComposerEnvironmentConfigDatabaseConfigOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_ComposerEnvironmentConfigDatabaseConfigOutputReference) validateSetZoneParameters(val *string) error {
+	return nil
+}
+
 func validateNewComposerEnvironmentConfigDatabaseConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

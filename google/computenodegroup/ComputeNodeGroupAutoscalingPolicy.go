@@ -10,11 +10,11 @@ type ComputeNodeGroupAutoscalingPolicy struct {
 	// Set to a value less than or equal
 	// to 100 and greater than or equal to min-nodes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/compute_node_group#max_nodes ComputeNodeGroup#max_nodes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/compute_node_group#max_nodes ComputeNodeGroup#max_nodes}
 	MaxNodes *float64 `field:"optional" json:"maxNodes" yaml:"maxNodes"`
 	// Minimum size of the node group. Must be less than or equal to max-nodes. The default value is 0.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/compute_node_group#min_nodes ComputeNodeGroup#min_nodes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/compute_node_group#min_nodes ComputeNodeGroup#min_nodes}
 	MinNodes *float64 `field:"optional" json:"minNodes" yaml:"minNodes"`
 	// The autoscaling mode.
 	//
@@ -25,7 +25,7 @@ type ComputeNodeGroupAutoscalingPolicy struct {
 	//   You must use this mode if your node groups are configured to
 	//   restart their hosted VMs on minimal servers. Possible values: ["OFF", "ON", "ONLY_SCALE_OUT"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/compute_node_group#mode ComputeNodeGroup#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/compute_node_group#mode ComputeNodeGroup#mode}
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
 }
 

@@ -59,7 +59,15 @@ func (i *jsiiProxy_IapWebRegionBackendServiceIamBinding) validateInterpolationFo
 	return nil
 }
 
+func (i *jsiiProxy_IapWebRegionBackendServiceIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapWebRegionBackendServiceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapWebRegionBackendServiceIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

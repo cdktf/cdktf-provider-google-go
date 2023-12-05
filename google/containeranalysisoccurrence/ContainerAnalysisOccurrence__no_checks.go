@@ -59,7 +59,15 @@ func (c *jsiiProxy_ContainerAnalysisOccurrence) validateInterpolationForAttribut
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAnalysisOccurrence) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAnalysisOccurrence) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerAnalysisOccurrence) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

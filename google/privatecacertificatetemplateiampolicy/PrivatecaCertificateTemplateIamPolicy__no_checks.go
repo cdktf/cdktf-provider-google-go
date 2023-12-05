@@ -59,7 +59,15 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) validateInterpolationF
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

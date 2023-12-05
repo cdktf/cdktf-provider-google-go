@@ -59,7 +59,15 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) validateInterpolationFor
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

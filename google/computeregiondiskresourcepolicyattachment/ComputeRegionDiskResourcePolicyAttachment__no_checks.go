@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateInterpolat
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

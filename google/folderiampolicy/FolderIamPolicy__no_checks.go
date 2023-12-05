@@ -59,7 +59,15 @@ func (f *jsiiProxy_FolderIamPolicy) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (f *jsiiProxy_FolderIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FolderIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FolderIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

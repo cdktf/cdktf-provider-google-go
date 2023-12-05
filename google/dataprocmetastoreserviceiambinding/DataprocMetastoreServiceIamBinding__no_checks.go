@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataprocMetastoreServiceIamBinding) validateInterpolationForA
 	return nil
 }
 
+func (d *jsiiProxy_DataprocMetastoreServiceIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreServiceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocMetastoreServiceIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

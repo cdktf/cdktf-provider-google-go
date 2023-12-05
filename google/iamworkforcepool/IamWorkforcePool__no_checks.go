@@ -59,11 +59,23 @@ func (i *jsiiProxy_IamWorkforcePool) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (i *jsiiProxy_IamWorkforcePool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamWorkforcePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
+func (i *jsiiProxy_IamWorkforcePool) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamWorkforcePool) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamWorkforcePool) validatePutAccessRestrictionsParameters(value *IamWorkforcePoolAccessRestrictions) error {
 	return nil
 }
 

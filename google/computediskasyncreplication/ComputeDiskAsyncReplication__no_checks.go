@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeDiskAsyncReplication) validateInterpolationForAttribut
 	return nil
 }
 
+func (c *jsiiProxy_ComputeDiskAsyncReplication) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeDiskAsyncReplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeDiskAsyncReplication) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

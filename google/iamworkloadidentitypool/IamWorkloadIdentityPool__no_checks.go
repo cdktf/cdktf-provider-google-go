@@ -59,7 +59,15 @@ func (i *jsiiProxy_IamWorkloadIdentityPool) validateInterpolationForAttributePar
 	return nil
 }
 
+func (i *jsiiProxy_IamWorkloadIdentityPool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamWorkloadIdentityPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamWorkloadIdentityPool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

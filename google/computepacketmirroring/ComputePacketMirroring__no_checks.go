@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputePacketMirroring) validateInterpolationForAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_ComputePacketMirroring) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputePacketMirroring) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputePacketMirroring) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

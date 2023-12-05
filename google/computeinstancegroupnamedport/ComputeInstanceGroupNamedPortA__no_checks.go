@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) validateInterpolationForAttri
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceGroupNamedPortA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

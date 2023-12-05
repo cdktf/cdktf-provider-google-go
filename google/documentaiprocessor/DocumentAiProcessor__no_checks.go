@@ -59,7 +59,15 @@ func (d *jsiiProxy_DocumentAiProcessor) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (d *jsiiProxy_DocumentAiProcessor) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocumentAiProcessor) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DocumentAiProcessor) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

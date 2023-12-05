@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy}.
 type IapAppEngineServiceIamPolicy interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -101,12 +101,22 @@ type IapAppEngineServiceIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -401,7 +411,7 @@ func (j *jsiiProxy_IapAppEngineServiceIamPolicy) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy} Resource.
 func NewIapAppEngineServiceIamPolicy(scope constructs.Construct, id *string, config *IapAppEngineServiceIamPolicyConfig) IapAppEngineServiceIamPolicy {
 	_init_.Initialize()
 
@@ -419,7 +429,7 @@ func NewIapAppEngineServiceIamPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/iap_app_engine_service_iam_policy google_iap_app_engine_service_iam_policy} Resource.
 func NewIapAppEngineServiceIamPolicy_Override(i IapAppEngineServiceIamPolicy, scope constructs.Construct, id *string, config *IapAppEngineServiceIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -822,6 +832,19 @@ func (i *jsiiProxy_IapAppEngineServiceIamPolicy) GetStringMapAttribute(terraform
 	return returns
 }
 
+func (i *jsiiProxy_IapAppEngineServiceIamPolicy) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IapAppEngineServiceIamPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -849,6 +872,17 @@ func (i *jsiiProxy_IapAppEngineServiceIamPolicy) InterpolationForAttribute(terra
 	return returns
 }
 
+func (i *jsiiProxy_IapAppEngineServiceIamPolicy) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IapAppEngineServiceIamPolicy) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -857,6 +891,17 @@ func (i *jsiiProxy_IapAppEngineServiceIamPolicy) MoveTo(moveTarget *string, inde
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IapAppEngineServiceIamPolicy) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

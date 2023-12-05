@@ -59,7 +59,15 @@ func (f *jsiiProxy_FirestoreDatabase) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (f *jsiiProxy_FirestoreDatabase) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirestoreDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirestoreDatabase) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -104,6 +112,10 @@ func (j *jsiiProxy_FirestoreDatabase) validateSetCountParameters(val interface{}
 }
 
 func (j *jsiiProxy_FirestoreDatabase) validateSetDeleteProtectionStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FirestoreDatabase) validateSetDeletionPolicyParameters(val *string) error {
 	return nil
 }
 

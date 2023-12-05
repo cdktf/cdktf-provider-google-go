@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/firestore_backup_schedule google_firestore_backup_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/firestore_backup_schedule google_firestore_backup_schedule}.
 type FirestoreBackupSchedule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -104,12 +104,22 @@ type FirestoreBackupSchedule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -451,7 +461,7 @@ func (j *jsiiProxy_FirestoreBackupSchedule) WeeklyRecurrenceInput() *FirestoreBa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/firestore_backup_schedule google_firestore_backup_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/firestore_backup_schedule google_firestore_backup_schedule} Resource.
 func NewFirestoreBackupSchedule(scope constructs.Construct, id *string, config *FirestoreBackupScheduleConfig) FirestoreBackupSchedule {
 	_init_.Initialize()
 
@@ -469,7 +479,7 @@ func NewFirestoreBackupSchedule(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/firestore_backup_schedule google_firestore_backup_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/firestore_backup_schedule google_firestore_backup_schedule} Resource.
 func NewFirestoreBackupSchedule_Override(f FirestoreBackupSchedule, scope constructs.Construct, id *string, config *FirestoreBackupScheduleConfig) {
 	_init_.Initialize()
 
@@ -861,6 +871,19 @@ func (f *jsiiProxy_FirestoreBackupSchedule) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
+func (f *jsiiProxy_FirestoreBackupSchedule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		f,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (f *jsiiProxy_FirestoreBackupSchedule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := f.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -888,6 +911,17 @@ func (f *jsiiProxy_FirestoreBackupSchedule) InterpolationForAttribute(terraformA
 	return returns
 }
 
+func (f *jsiiProxy_FirestoreBackupSchedule) MoveFromId(id *string) {
+	if err := f.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (f *jsiiProxy_FirestoreBackupSchedule) MoveTo(moveTarget *string, index interface{}) {
 	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -896,6 +930,17 @@ func (f *jsiiProxy_FirestoreBackupSchedule) MoveTo(moveTarget *string, index int
 		f,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (f *jsiiProxy_FirestoreBackupSchedule) MoveToId(id *string) {
+	if err := f.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

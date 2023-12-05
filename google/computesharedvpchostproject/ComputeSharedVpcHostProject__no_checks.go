@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeSharedVpcHostProject) validateInterpolationForAttribut
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSharedVpcHostProject) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSharedVpcHostProject) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSharedVpcHostProject) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

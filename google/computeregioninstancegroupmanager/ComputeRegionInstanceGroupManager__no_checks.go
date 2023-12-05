@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateInterpolationForAt
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

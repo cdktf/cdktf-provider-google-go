@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataprocClusterIamPolicy) validateInterpolationForAttributePa
 	return nil
 }
 
+func (d *jsiiProxy_DataprocClusterIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocClusterIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocClusterIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

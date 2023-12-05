@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateInterpolationForAtt
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeBackendBucketSignedUrlKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

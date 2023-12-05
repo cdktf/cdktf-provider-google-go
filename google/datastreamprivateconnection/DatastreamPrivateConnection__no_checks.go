@@ -59,7 +59,15 @@ func (d *jsiiProxy_DatastreamPrivateConnection) validateInterpolationForAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamPrivateConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamPrivateConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatastreamPrivateConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

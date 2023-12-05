@@ -59,7 +59,15 @@ func (b *jsiiProxy_BigtableInstanceIamMember) validateInterpolationForAttributeP
 	return nil
 }
 
+func (b *jsiiProxy_BigtableInstanceIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableInstanceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableInstanceIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

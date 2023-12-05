@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeDiskResourcePolicyAttachment) validateInterpolationFor
 	return nil
 }
 
+func (c *jsiiProxy_ComputeDiskResourcePolicyAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeDiskResourcePolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeDiskResourcePolicyAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

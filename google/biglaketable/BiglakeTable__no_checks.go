@@ -59,7 +59,15 @@ func (b *jsiiProxy_BiglakeTable) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (b *jsiiProxy_BiglakeTable) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BiglakeTable) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BiglakeTable) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

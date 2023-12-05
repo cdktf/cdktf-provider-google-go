@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeGlobalForwardingRule) validateInterpolationForAttribut
 	return nil
 }
 
+func (c *jsiiProxy_ComputeGlobalForwardingRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeGlobalForwardingRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeGlobalForwardingRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -68,6 +76,10 @@ func (c *jsiiProxy_ComputeGlobalForwardingRule) validateOverrideLogicalIdParamet
 }
 
 func (c *jsiiProxy_ComputeGlobalForwardingRule) validatePutMetadataFiltersParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeGlobalForwardingRule) validatePutServiceDirectoryRegistrationsParameters(value *ComputeGlobalForwardingRuleServiceDirectoryRegistrations) error {
 	return nil
 }
 

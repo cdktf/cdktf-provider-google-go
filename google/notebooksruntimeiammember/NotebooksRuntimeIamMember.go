@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/notebooks_runtime_iam_member google_notebooks_runtime_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/notebooks_runtime_iam_member google_notebooks_runtime_iam_member}.
 type NotebooksRuntimeIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -106,12 +106,22 @@ type NotebooksRuntimeIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -449,7 +459,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/notebooks_runtime_iam_member google_notebooks_runtime_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/notebooks_runtime_iam_member google_notebooks_runtime_iam_member} Resource.
 func NewNotebooksRuntimeIamMember(scope constructs.Construct, id *string, config *NotebooksRuntimeIamMemberConfig) NotebooksRuntimeIamMember {
 	_init_.Initialize()
 
@@ -467,7 +477,7 @@ func NewNotebooksRuntimeIamMember(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/notebooks_runtime_iam_member google_notebooks_runtime_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/notebooks_runtime_iam_member google_notebooks_runtime_iam_member} Resource.
 func NewNotebooksRuntimeIamMember_Override(n NotebooksRuntimeIamMember, scope constructs.Construct, id *string, config *NotebooksRuntimeIamMemberConfig) {
 	_init_.Initialize()
 
@@ -881,6 +891,19 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) GetStringMapAttribute(terraformAtt
 	return returns
 }
 
+func (n *jsiiProxy_NotebooksRuntimeIamMember) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NotebooksRuntimeIamMember) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -908,6 +931,17 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) InterpolationForAttribute(terrafor
 	return returns
 }
 
+func (n *jsiiProxy_NotebooksRuntimeIamMember) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NotebooksRuntimeIamMember) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -916,6 +950,17 @@ func (n *jsiiProxy_NotebooksRuntimeIamMember) MoveTo(moveTarget *string, index i
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NotebooksRuntimeIamMember) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

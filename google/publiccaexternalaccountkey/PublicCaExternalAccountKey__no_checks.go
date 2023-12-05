@@ -59,7 +59,15 @@ func (p *jsiiProxy_PublicCaExternalAccountKey) validateInterpolationForAttribute
 	return nil
 }
 
+func (p *jsiiProxy_PublicCaExternalAccountKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PublicCaExternalAccountKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PublicCaExternalAccountKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

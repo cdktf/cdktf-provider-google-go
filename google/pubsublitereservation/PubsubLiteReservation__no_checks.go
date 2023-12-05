@@ -59,7 +59,15 @@ func (p *jsiiProxy_PubsubLiteReservation) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (p *jsiiProxy_PubsubLiteReservation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubLiteReservation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubLiteReservation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

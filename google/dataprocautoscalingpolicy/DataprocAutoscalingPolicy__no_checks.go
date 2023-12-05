@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataprocAutoscalingPolicy) validateInterpolationForAttributeP
 	return nil
 }
 
+func (d *jsiiProxy_DataprocAutoscalingPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocAutoscalingPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocAutoscalingPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

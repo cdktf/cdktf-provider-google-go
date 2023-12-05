@@ -59,7 +59,15 @@ func (b *jsiiProxy_BillingAccountIamMember) validateInterpolationForAttributePar
 	return nil
 }
 
+func (b *jsiiProxy_BillingAccountIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BillingAccountIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BillingAccountIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

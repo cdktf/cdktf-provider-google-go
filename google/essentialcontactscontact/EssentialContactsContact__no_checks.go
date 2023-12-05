@@ -59,7 +59,15 @@ func (e *jsiiProxy_EssentialContactsContact) validateInterpolationForAttributePa
 	return nil
 }
 
+func (e *jsiiProxy_EssentialContactsContact) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EssentialContactsContact) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EssentialContactsContact) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

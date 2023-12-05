@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/iap_tunnel_iam_member google_iap_tunnel_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/iap_tunnel_iam_member google_iap_tunnel_iam_member}.
 type IapTunnelIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -100,12 +100,22 @@ type IapTunnelIamMember interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -402,7 +412,7 @@ func (j *jsiiProxy_IapTunnelIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/iap_tunnel_iam_member google_iap_tunnel_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/iap_tunnel_iam_member google_iap_tunnel_iam_member} Resource.
 func NewIapTunnelIamMember(scope constructs.Construct, id *string, config *IapTunnelIamMemberConfig) IapTunnelIamMember {
 	_init_.Initialize()
 
@@ -420,7 +430,7 @@ func NewIapTunnelIamMember(scope constructs.Construct, id *string, config *IapTu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.7.0/docs/resources/iap_tunnel_iam_member google_iap_tunnel_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/iap_tunnel_iam_member google_iap_tunnel_iam_member} Resource.
 func NewIapTunnelIamMember_Override(i IapTunnelIamMember, scope constructs.Construct, id *string, config *IapTunnelIamMemberConfig) {
 	_init_.Initialize()
 
@@ -812,6 +822,19 @@ func (i *jsiiProxy_IapTunnelIamMember) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (i *jsiiProxy_IapTunnelIamMember) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IapTunnelIamMember) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -839,6 +862,17 @@ func (i *jsiiProxy_IapTunnelIamMember) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (i *jsiiProxy_IapTunnelIamMember) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IapTunnelIamMember) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -847,6 +881,17 @@ func (i *jsiiProxy_IapTunnelIamMember) MoveTo(moveTarget *string, index interfac
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IapTunnelIamMember) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

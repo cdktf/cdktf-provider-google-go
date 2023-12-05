@@ -59,7 +59,15 @@ func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

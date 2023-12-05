@@ -59,7 +59,15 @@ func (f *jsiiProxy_FolderIamBinding) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (f *jsiiProxy_FolderIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FolderIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FolderIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

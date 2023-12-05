@@ -59,7 +59,15 @@ func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateInterpola
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

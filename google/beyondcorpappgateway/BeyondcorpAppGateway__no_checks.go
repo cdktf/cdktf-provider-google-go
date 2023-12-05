@@ -59,7 +59,15 @@ func (b *jsiiProxy_BeyondcorpAppGateway) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (b *jsiiProxy_BeyondcorpAppGateway) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BeyondcorpAppGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BeyondcorpAppGateway) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

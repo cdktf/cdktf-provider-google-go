@@ -59,7 +59,15 @@ func (p *jsiiProxy_PubsubSchemaIamMember) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (p *jsiiProxy_PubsubSchemaIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubSchemaIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubSchemaIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

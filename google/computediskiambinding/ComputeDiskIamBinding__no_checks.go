@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComputeDiskIamBinding) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_ComputeDiskIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeDiskIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeDiskIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

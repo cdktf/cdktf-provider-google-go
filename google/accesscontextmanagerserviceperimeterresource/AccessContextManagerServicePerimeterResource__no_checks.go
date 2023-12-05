@@ -59,7 +59,15 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterResource) validateInterpo
 	return nil
 }
 
+func (a *jsiiProxy_AccessContextManagerServicePerimeterResource) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerServicePerimeterResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerServicePerimeterResource) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

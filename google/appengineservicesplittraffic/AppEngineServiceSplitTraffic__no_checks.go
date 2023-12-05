@@ -59,7 +59,15 @@ func (a *jsiiProxy_AppEngineServiceSplitTraffic) validateInterpolationForAttribu
 	return nil
 }
 
+func (a *jsiiProxy_AppEngineServiceSplitTraffic) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppEngineServiceSplitTraffic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppEngineServiceSplitTraffic) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

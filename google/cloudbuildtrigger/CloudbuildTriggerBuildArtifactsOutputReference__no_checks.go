@@ -47,7 +47,19 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validateInter
 	return nil
 }
 
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validatePutMavenArtifactsParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validatePutNpmPackagesParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validatePutObjectsParameters(value *CloudbuildTriggerBuildArtifactsObjects) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validatePutPythonPackagesParameters(value interface{}) error {
 	return nil
 }
 

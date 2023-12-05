@@ -59,7 +59,15 @@ func (v *jsiiProxy_VertexAiDataset) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiDataset) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiDataset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiDataset) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

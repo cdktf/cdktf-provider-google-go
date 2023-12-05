@@ -59,7 +59,15 @@ func (h *jsiiProxy_HealthcareFhirStore) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareFhirStore) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareFhirStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareFhirStore) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

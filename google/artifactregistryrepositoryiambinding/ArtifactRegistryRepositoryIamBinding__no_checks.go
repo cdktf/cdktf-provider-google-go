@@ -59,7 +59,15 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryIamBinding) validateInterpolationFo
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

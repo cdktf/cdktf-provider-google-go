@@ -59,7 +59,15 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) validateInterpolationForAttributePa
 	return nil
 }
 
+func (n *jsiiProxy_NetworkConnectivitySpoke) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivitySpoke) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkConnectivitySpoke) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

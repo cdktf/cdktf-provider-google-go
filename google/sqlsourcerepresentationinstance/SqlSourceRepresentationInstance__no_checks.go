@@ -59,7 +59,15 @@ func (s *jsiiProxy_SqlSourceRepresentationInstance) validateInterpolationForAttr
 	return nil
 }
 
+func (s *jsiiProxy_SqlSourceRepresentationInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlSourceRepresentationInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlSourceRepresentationInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
