@@ -28,6 +28,8 @@ type CloudIdentityGroupMembershipRolesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExpiryDetail() CloudIdentityGroupMembershipRolesExpiryDetailOutputReference
+	ExpiryDetailInput() *CloudIdentityGroupMembershipRolesExpiryDetail
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -67,6 +69,8 @@ type CloudIdentityGroupMembershipRolesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutExpiryDetail(value *CloudIdentityGroupMembershipRolesExpiryDetail)
+	ResetExpiryDetail()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -107,6 +111,26 @@ func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) CreationSta
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) ExpiryDetail() CloudIdentityGroupMembershipRolesExpiryDetailOutputReference {
+	var returns CloudIdentityGroupMembershipRolesExpiryDetailOutputReference
+	_jsii_.Get(
+		j,
+		"expiryDetail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) ExpiryDetailInput() *CloudIdentityGroupMembershipRolesExpiryDetail {
+	var returns *CloudIdentityGroupMembershipRolesExpiryDetail
+	_jsii_.Get(
+		j,
+		"expiryDetailInput",
 		&returns,
 	)
 	return returns
@@ -450,6 +474,25 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) Interpolati
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) PutExpiryDetail(value *CloudIdentityGroupMembershipRolesExpiryDetail) {
+	if err := c.validatePutExpiryDetailParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putExpiryDetail",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) ResetExpiryDetail() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExpiryDetail",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

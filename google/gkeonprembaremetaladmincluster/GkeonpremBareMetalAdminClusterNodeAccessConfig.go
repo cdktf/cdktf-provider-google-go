@@ -7,7 +7,7 @@ package gkeonprembaremetaladmincluster
 type GkeonpremBareMetalAdminClusterNodeAccessConfig struct {
 	// LoginUser is the user name used to access node machines. It defaults to "root" if not set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/gkeonprem_bare_metal_admin_cluster#login_user GkeonpremBareMetalAdminCluster#login_user}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/gkeonprem_bare_metal_admin_cluster#login_user GkeonpremBareMetalAdminCluster#login_user}
 	LoginUser *string `field:"optional" json:"loginUser" yaml:"loginUser"`
 }
 

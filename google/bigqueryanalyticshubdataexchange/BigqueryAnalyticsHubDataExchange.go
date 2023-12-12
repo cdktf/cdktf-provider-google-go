@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}.
 type BigqueryAnalyticsHubDataExchange interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -542,7 +542,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
 func NewBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *string, config *BigqueryAnalyticsHubDataExchangeConfig) BigqueryAnalyticsHubDataExchange {
 	_init_.Initialize()
 
@@ -560,7 +560,7 @@ func NewBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
 func NewBigqueryAnalyticsHubDataExchange_Override(b BigqueryAnalyticsHubDataExchange, scope constructs.Construct, id *string, config *BigqueryAnalyticsHubDataExchangeConfig) {
 	_init_.Initialize()
 

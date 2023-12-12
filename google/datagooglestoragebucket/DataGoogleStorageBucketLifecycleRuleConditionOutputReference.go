@@ -40,6 +40,7 @@ type DataGoogleStorageBucketLifecycleRuleConditionOutputReference interface {
 	MatchesPrefix() *[]*string
 	MatchesStorageClass() *[]*string
 	MatchesSuffix() *[]*string
+	NoAge() cdktf.IResolvable
 	NoncurrentTimeBefore() *string
 	NumNewerVersions() *float64
 	// Experimental.
@@ -215,6 +216,16 @@ func (j *jsiiProxy_DataGoogleStorageBucketLifecycleRuleConditionOutputReference)
 	_jsii_.Get(
 		j,
 		"matchesSuffix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucketLifecycleRuleConditionOutputReference) NoAge() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"noAge",
 		&returns,
 	)
 	return returns

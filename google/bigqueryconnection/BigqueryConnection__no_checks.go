@@ -95,6 +95,10 @@ func (b *jsiiProxy_BigqueryConnection) validatePutCloudSqlParameters(value *Bigq
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryConnection) validatePutSparkParameters(value *BigqueryConnectionSpark) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryConnection) validatePutTimeoutsParameters(value *BigqueryConnectionTimeouts) error {
 	return nil
 }

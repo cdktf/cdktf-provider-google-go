@@ -28,6 +28,7 @@ type DataGoogleCloudIdentityGroupMembershipsMembershipsRolesOutputReference inte
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExpiryDetail() DataGoogleCloudIdentityGroupMembershipsMembershipsRolesExpiryDetailList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleCloudIdentityGroupMembershipsMembershipsRoles
@@ -105,6 +106,16 @@ func (j *jsiiProxy_DataGoogleCloudIdentityGroupMembershipsMembershipsRolesOutput
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudIdentityGroupMembershipsMembershipsRolesOutputReference) ExpiryDetail() DataGoogleCloudIdentityGroupMembershipsMembershipsRolesExpiryDetailList {
+	var returns DataGoogleCloudIdentityGroupMembershipsMembershipsRolesExpiryDetailList
+	_jsii_.Get(
+		j,
+		"expiryDetail",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/notebooks_environment google_notebooks_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/notebooks_environment google_notebooks_environment}.
 type NotebooksEnvironment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -532,7 +532,7 @@ func (j *jsiiProxy_NotebooksEnvironment) VmImageInput() *NotebooksEnvironmentVmI
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/notebooks_environment google_notebooks_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/notebooks_environment google_notebooks_environment} Resource.
 func NewNotebooksEnvironment(scope constructs.Construct, id *string, config *NotebooksEnvironmentConfig) NotebooksEnvironment {
 	_init_.Initialize()
 
@@ -550,7 +550,7 @@ func NewNotebooksEnvironment(scope constructs.Construct, id *string, config *Not
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/notebooks_environment google_notebooks_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/notebooks_environment google_notebooks_environment} Resource.
 func NewNotebooksEnvironment_Override(n NotebooksEnvironment, scope constructs.Construct, id *string, config *NotebooksEnvironmentConfig) {
 	_init_.Initialize()
 

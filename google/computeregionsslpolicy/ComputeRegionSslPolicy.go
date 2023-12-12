@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/compute_region_ssl_policy google_compute_region_ssl_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_region_ssl_policy google_compute_region_ssl_policy}.
 type ComputeRegionSslPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -541,7 +541,7 @@ func (j *jsiiProxy_ComputeRegionSslPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/compute_region_ssl_policy google_compute_region_ssl_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_region_ssl_policy google_compute_region_ssl_policy} Resource.
 func NewComputeRegionSslPolicy(scope constructs.Construct, id *string, config *ComputeRegionSslPolicyConfig) ComputeRegionSslPolicy {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewComputeRegionSslPolicy(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/compute_region_ssl_policy google_compute_region_ssl_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_region_ssl_policy google_compute_region_ssl_policy} Resource.
 func NewComputeRegionSslPolicy_Override(c ComputeRegionSslPolicy, scope constructs.Construct, id *string, config *ComputeRegionSslPolicyConfig) {
 	_init_.Initialize()
 

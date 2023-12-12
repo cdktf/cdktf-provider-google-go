@@ -1187,6 +1187,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoProvisioningDefaults", GoGetter: "AutoProvisioningDefaults"},
 			_jsii_.MemberProperty{JsiiProperty: "autoProvisioningDefaultsInput", GoGetter: "AutoProvisioningDefaultsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "autoscalingProfile", GoGetter: "AutoscalingProfile"},
+			_jsii_.MemberProperty{JsiiProperty: "autoscalingProfileInput", GoGetter: "AutoscalingProfileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1209,6 +1211,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAutoProvisioningDefaults", GoMethod: "PutAutoProvisioningDefaults"},
 			_jsii_.MemberMethod{JsiiMethod: "putResourceLimits", GoMethod: "PutResourceLimits"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoProvisioningDefaults", GoMethod: "ResetAutoProvisioningDefaults"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAutoscalingProfile", GoMethod: "ResetAutoscalingProfile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetResourceLimits", GoMethod: "ResetResourceLimits"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

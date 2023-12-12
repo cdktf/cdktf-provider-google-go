@@ -7,7 +7,7 @@ package containerattachedcluster
 type ContainerAttachedClusterMonitoringConfigManagedPrometheusConfig struct {
 	// Enable Managed Collection.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/container_attached_cluster#enabled ContainerAttachedCluster#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/container_attached_cluster#enabled ContainerAttachedCluster#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

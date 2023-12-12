@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/monitoring_uptime_check_config google_monitoring_uptime_check_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/monitoring_uptime_check_config google_monitoring_uptime_check_config}.
 type MonitoringUptimeCheckConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -663,7 +663,7 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) UserLabelsInput() *map[string]*s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
 func NewMonitoringUptimeCheckConfig(scope constructs.Construct, id *string, config *MonitoringUptimeCheckConfigConfig) MonitoringUptimeCheckConfig {
 	_init_.Initialize()
 
@@ -681,7 +681,7 @@ func NewMonitoringUptimeCheckConfig(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
 func NewMonitoringUptimeCheckConfig_Override(m MonitoringUptimeCheckConfig, scope constructs.Construct, id *string, config *MonitoringUptimeCheckConfigConfig) {
 	_init_.Initialize()
 

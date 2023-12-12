@@ -56,6 +56,9 @@ type StorageBucketLifecycleRuleConditionOutputReference interface {
 	MatchesSuffix() *[]*string
 	SetMatchesSuffix(val *[]*string)
 	MatchesSuffixInput() *[]*string
+	NoAge() interface{}
+	SetNoAge(val interface{})
+	NoAgeInput() interface{}
 	NoncurrentTimeBefore() *string
 	SetNoncurrentTimeBefore(val *string)
 	NoncurrentTimeBeforeInput() *string
@@ -105,6 +108,7 @@ type StorageBucketLifecycleRuleConditionOutputReference interface {
 	ResetMatchesPrefix()
 	ResetMatchesStorageClass()
 	ResetMatchesSuffix()
+	ResetNoAge()
 	ResetNoncurrentTimeBefore()
 	ResetNumNewerVersions()
 	ResetWithState()
@@ -328,6 +332,26 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) MatchesSu
 	_jsii_.Get(
 		j,
 		"matchesSuffixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) NoAge() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noAge",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) NoAgeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noAgeInput",
 		&returns,
 	)
 	return returns
@@ -558,6 +582,17 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference)SetMatches
 	_jsii_.Set(
 		j,
 		"matchesSuffix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference)SetNoAge(val interface{}) {
+	if err := j.validateSetNoAgeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"noAge",
 		val,
 	)
 }
@@ -863,6 +898,14 @@ func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) ResetMatc
 	_jsii_.InvokeVoid(
 		s,
 		"resetMatchesSuffix",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) ResetNoAge() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNoAge",
 		nil, // no parameters
 	)
 }

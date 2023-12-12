@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/data-sources/kms_key_ring google_kms_key_ring}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/data-sources/kms_key_ring google_kms_key_ring}.
 type DataGoogleKmsKeyRing interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -331,7 +331,7 @@ func (j *jsiiProxy_DataGoogleKmsKeyRing) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/data-sources/kms_key_ring google_kms_key_ring} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/data-sources/kms_key_ring google_kms_key_ring} Data Source.
 func NewDataGoogleKmsKeyRing(scope constructs.Construct, id *string, config *DataGoogleKmsKeyRingConfig) DataGoogleKmsKeyRing {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewDataGoogleKmsKeyRing(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/data-sources/kms_key_ring google_kms_key_ring} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/data-sources/kms_key_ring google_kms_key_ring} Data Source.
 func NewDataGoogleKmsKeyRing_Override(d DataGoogleKmsKeyRing, scope constructs.Construct, id *string, config *DataGoogleKmsKeyRingConfig) {
 	_init_.Initialize()
 

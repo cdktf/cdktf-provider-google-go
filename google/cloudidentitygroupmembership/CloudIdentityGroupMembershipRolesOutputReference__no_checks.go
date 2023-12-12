@@ -47,6 +47,10 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) validateInt
 	return nil
 }
 
+func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) validatePutExpiryDetailParameters(value *CloudIdentityGroupMembershipRolesExpiryDetail) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

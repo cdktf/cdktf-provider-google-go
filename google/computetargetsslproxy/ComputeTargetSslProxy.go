@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/compute_target_ssl_proxy google_compute_target_ssl_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_target_ssl_proxy google_compute_target_ssl_proxy}.
 type ComputeTargetSslProxy interface {
 	cdktf.TerraformResource
 	BackendService() *string
@@ -554,7 +554,7 @@ func (j *jsiiProxy_ComputeTargetSslProxy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/compute_target_ssl_proxy google_compute_target_ssl_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_target_ssl_proxy google_compute_target_ssl_proxy} Resource.
 func NewComputeTargetSslProxy(scope constructs.Construct, id *string, config *ComputeTargetSslProxyConfig) ComputeTargetSslProxy {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewComputeTargetSslProxy(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/compute_target_ssl_proxy google_compute_target_ssl_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_target_ssl_proxy google_compute_target_ssl_proxy} Resource.
 func NewComputeTargetSslProxy_Override(c ComputeTargetSslProxy, scope constructs.Construct, id *string, config *ComputeTargetSslProxyConfig) {
 	_init_.Initialize()
 

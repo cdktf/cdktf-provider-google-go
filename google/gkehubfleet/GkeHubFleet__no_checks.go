@@ -75,6 +75,10 @@ func (g *jsiiProxy_GkeHubFleet) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (g *jsiiProxy_GkeHubFleet) validatePutDefaultClusterConfigParameters(value *GkeHubFleetDefaultClusterConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubFleet) validatePutTimeoutsParameters(value *GkeHubFleetTimeouts) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/cloudfunctions_function_iam_member google_cloudfunctions_function_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/cloudfunctions_function_iam_member google_cloudfunctions_function_iam_member}.
 type CloudfunctionsFunctionIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionIamMember) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/cloudfunctions_function_iam_member google_cloudfunctions_function_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/cloudfunctions_function_iam_member google_cloudfunctions_function_iam_member} Resource.
 func NewCloudfunctionsFunctionIamMember(scope constructs.Construct, id *string, config *CloudfunctionsFunctionIamMemberConfig) CloudfunctionsFunctionIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewCloudfunctionsFunctionIamMember(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/cloudfunctions_function_iam_member google_cloudfunctions_function_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/cloudfunctions_function_iam_member google_cloudfunctions_function_iam_member} Resource.
 func NewCloudfunctionsFunctionIamMember_Override(c CloudfunctionsFunctionIamMember, scope constructs.Construct, id *string, config *CloudfunctionsFunctionIamMemberConfig) {
 	_init_.Initialize()
 

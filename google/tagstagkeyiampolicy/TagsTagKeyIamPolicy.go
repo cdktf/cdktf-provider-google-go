@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/tags_tag_key_iam_policy google_tags_tag_key_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/tags_tag_key_iam_policy google_tags_tag_key_iam_policy}.
 type TagsTagKeyIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -364,7 +364,7 @@ func (j *jsiiProxy_TagsTagKeyIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/tags_tag_key_iam_policy google_tags_tag_key_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/tags_tag_key_iam_policy google_tags_tag_key_iam_policy} Resource.
 func NewTagsTagKeyIamPolicy(scope constructs.Construct, id *string, config *TagsTagKeyIamPolicyConfig) TagsTagKeyIamPolicy {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewTagsTagKeyIamPolicy(scope constructs.Construct, id *string, config *Tags
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/tags_tag_key_iam_policy google_tags_tag_key_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/tags_tag_key_iam_policy google_tags_tag_key_iam_policy} Resource.
 func NewTagsTagKeyIamPolicy_Override(t TagsTagKeyIamPolicy, scope constructs.Construct, id *string, config *TagsTagKeyIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/bigquery_datapolicy_data_policy_iam_binding google_bigquery_datapolicy_data_policy_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/bigquery_datapolicy_data_policy_iam_binding google_bigquery_datapolicy_data_policy_iam_binding}.
 type BigqueryDatapolicyDataPolicyIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamBinding) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/bigquery_datapolicy_data_policy_iam_binding google_bigquery_datapolicy_data_policy_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/bigquery_datapolicy_data_policy_iam_binding google_bigquery_datapolicy_data_policy_iam_binding} Resource.
 func NewBigqueryDatapolicyDataPolicyIamBinding(scope constructs.Construct, id *string, config *BigqueryDatapolicyDataPolicyIamBindingConfig) BigqueryDatapolicyDataPolicyIamBinding {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewBigqueryDatapolicyDataPolicyIamBinding(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/bigquery_datapolicy_data_policy_iam_binding google_bigquery_datapolicy_data_policy_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/bigquery_datapolicy_data_policy_iam_binding google_bigquery_datapolicy_data_policy_iam_binding} Resource.
 func NewBigqueryDatapolicyDataPolicyIamBinding_Override(b BigqueryDatapolicyDataPolicyIamBinding, scope constructs.Construct, id *string, config *BigqueryDatapolicyDataPolicyIamBindingConfig) {
 	_init_.Initialize()
 

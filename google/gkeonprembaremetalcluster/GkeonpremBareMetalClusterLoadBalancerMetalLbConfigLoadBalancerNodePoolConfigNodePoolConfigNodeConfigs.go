@@ -17,11 +17,11 @@ type GkeonpremBareMetalClusterLoadBalancerMetalLbConfigLoadBalancerNodePoolConfi
 	// An object containing a list of "key": value pairs.
 	// Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/gkeonprem_bare_metal_cluster#labels GkeonpremBareMetalCluster#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/gkeonprem_bare_metal_cluster#labels GkeonpremBareMetalCluster#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// The default IPv4 address for SSH access and Kubernetes node. Example: 192.168.0.1.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs/resources/gkeonprem_bare_metal_cluster#node_ip GkeonpremBareMetalCluster#node_ip}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/gkeonprem_bare_metal_cluster#node_ip GkeonpremBareMetalCluster#node_ip}
 	NodeIp *string `field:"optional" json:"nodeIp" yaml:"nodeIp"`
 }
 

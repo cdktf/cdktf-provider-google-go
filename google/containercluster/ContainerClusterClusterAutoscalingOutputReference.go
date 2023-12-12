@@ -15,6 +15,9 @@ type ContainerClusterClusterAutoscalingOutputReference interface {
 	cdktf.ComplexObject
 	AutoProvisioningDefaults() ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference
 	AutoProvisioningDefaultsInput() *ContainerClusterClusterAutoscalingAutoProvisioningDefaults
+	AutoscalingProfile() *string
+	SetAutoscalingProfile(val *string)
+	AutoscalingProfileInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -74,6 +77,7 @@ type ContainerClusterClusterAutoscalingOutputReference interface {
 	PutAutoProvisioningDefaults(value *ContainerClusterClusterAutoscalingAutoProvisioningDefaults)
 	PutResourceLimits(value interface{})
 	ResetAutoProvisioningDefaults()
+	ResetAutoscalingProfile()
 	ResetEnabled()
 	ResetResourceLimits()
 	// Produce the Token's value at resolution time.
@@ -106,6 +110,26 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) AutoProvis
 	_jsii_.Get(
 		j,
 		"autoProvisioningDefaultsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) AutoscalingProfile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoscalingProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) AutoscalingProfileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoscalingProfileInput",
 		&returns,
 	)
 	return returns
@@ -246,6 +270,17 @@ func NewContainerClusterClusterAutoscalingOutputReference_Override(c ContainerCl
 		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetAutoscalingProfile(val *string) {
+	if err := j.validateSetAutoscalingProfileParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoscalingProfile",
+		val,
 	)
 }
 
@@ -527,6 +562,14 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) ResetAutoP
 	_jsii_.InvokeVoid(
 		c,
 		"resetAutoProvisioningDefaults",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) ResetAutoscalingProfile() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAutoscalingProfile",
 		nil, // no parameters
 	)
 }

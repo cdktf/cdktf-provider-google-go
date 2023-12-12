@@ -3185,6 +3185,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableAutoPopulationOfTimespanConfig", GoMethod: "ResetEnableAutoPopulationOfTimespanConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEndTime", GoMethod: "ResetEndTime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStartTime", GoMethod: "ResetStartTime"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTimestampField", GoMethod: "ResetTimestampField"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "startTime", GoGetter: "StartTime"},
 			_jsii_.MemberProperty{JsiiProperty: "startTimeInput", GoGetter: "StartTimeInput"},

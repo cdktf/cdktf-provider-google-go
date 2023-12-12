@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -389,6 +389,9 @@ type GoogleProvider interface {
 	SecretManagerCustomEndpoint() *string
 	SetSecretManagerCustomEndpoint(val *string)
 	SecretManagerCustomEndpointInput() *string
+	SecureSourceManagerCustomEndpoint() *string
+	SetSecureSourceManagerCustomEndpoint(val *string)
+	SecureSourceManagerCustomEndpointInput() *string
 	SecurityCenterCustomEndpoint() *string
 	SetSecurityCenterCustomEndpoint(val *string)
 	SecurityCenterCustomEndpointInput() *string
@@ -583,6 +586,7 @@ type GoogleProvider interface {
 	ResetResourceManagerV3CustomEndpoint()
 	ResetScopes()
 	ResetSecretManagerCustomEndpoint()
+	ResetSecureSourceManagerCustomEndpoint()
 	ResetSecurityCenterCustomEndpoint()
 	ResetServiceManagementCustomEndpoint()
 	ResetServiceNetworkingCustomEndpoint()
@@ -3088,6 +3092,26 @@ func (j *jsiiProxy_GoogleProvider) SecretManagerCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) SecureSourceManagerCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secureSourceManagerCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) SecureSourceManagerCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secureSourceManagerCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) SecurityCenterCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3519,7 +3543,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3537,7 +3561,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.8.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -4507,6 +4531,14 @@ func (j *jsiiProxy_GoogleProvider)SetSecretManagerCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"secretManagerCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetSecureSourceManagerCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"secureSourceManagerCustomEndpoint",
 		val,
 	)
 }
@@ -5763,6 +5795,14 @@ func (g *jsiiProxy_GoogleProvider) ResetSecretManagerCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSecretManagerCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetSecureSourceManagerCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecureSourceManagerCustomEndpoint",
 		nil, // no parameters
 	)
 }

@@ -79,6 +79,7 @@ type DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigOutputRefe
 	ResetEnableAutoPopulationOfTimespanConfig()
 	ResetEndTime()
 	ResetStartTime()
+	ResetTimestampField()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -577,6 +578,14 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigTimespanCo
 	_jsii_.InvokeVoid(
 		d,
 		"resetStartTime",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigOutputReference) ResetTimestampField() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimestampField",
 		nil, // no parameters
 	)
 }
