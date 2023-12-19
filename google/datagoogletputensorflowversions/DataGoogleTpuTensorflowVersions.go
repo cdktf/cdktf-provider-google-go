@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/data-sources/tpu_tensorflow_versions google_tpu_tensorflow_versions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/tpu_tensorflow_versions google_tpu_tensorflow_versions}.
 type DataGoogleTpuTensorflowVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataGoogleTpuTensorflowVersions) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/data-sources/tpu_tensorflow_versions google_tpu_tensorflow_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/tpu_tensorflow_versions google_tpu_tensorflow_versions} Data Source.
 func NewDataGoogleTpuTensorflowVersions(scope constructs.Construct, id *string, config *DataGoogleTpuTensorflowVersionsConfig) DataGoogleTpuTensorflowVersions {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewDataGoogleTpuTensorflowVersions(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/data-sources/tpu_tensorflow_versions google_tpu_tensorflow_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/tpu_tensorflow_versions google_tpu_tensorflow_versions} Data Source.
 func NewDataGoogleTpuTensorflowVersions_Override(d DataGoogleTpuTensorflowVersions, scope constructs.Construct, id *string, config *DataGoogleTpuTensorflowVersionsConfig) {
 	_init_.Initialize()
 

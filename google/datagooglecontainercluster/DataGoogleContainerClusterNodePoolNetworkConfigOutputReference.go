@@ -34,6 +34,7 @@ type DataGoogleContainerClusterNodePoolNetworkConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterNodePoolNetworkConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodePoolNetworkConfig)
+	NetworkPerformanceConfig() DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigList
 	PodCidrOverprovisionConfig() DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigList
 	PodIpv4CidrBlock() *string
 	PodRange() *string
@@ -149,6 +150,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNetworkConfigOutputReferenc
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNetworkConfigOutputReference) NetworkPerformanceConfig() DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigList {
+	var returns DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigList
+	_jsii_.Get(
+		j,
+		"networkPerformanceConfig",
 		&returns,
 	)
 	return returns

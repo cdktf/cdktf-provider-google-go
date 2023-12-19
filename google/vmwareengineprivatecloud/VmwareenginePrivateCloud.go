@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/vmwareengine_private_cloud google_vmwareengine_private_cloud}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/vmwareengine_private_cloud google_vmwareengine_private_cloud}.
 type VmwareenginePrivateCloud interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -85,6 +85,9 @@ type VmwareenginePrivateCloud interface {
 	TerraformResourceType() *string
 	Timeouts() VmwareenginePrivateCloudTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	Uid() *string
 	Vcenter() VmwareenginePrivateCloudVcenterList
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -140,6 +143,7 @@ type VmwareenginePrivateCloud interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -505,6 +509,26 @@ func (j *jsiiProxy_VmwareenginePrivateCloud) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VmwareenginePrivateCloud) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VmwareenginePrivateCloud) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VmwareenginePrivateCloud) Uid() *string {
 	var returns *string
 	_jsii_.Get(
@@ -526,7 +550,7 @@ func (j *jsiiProxy_VmwareenginePrivateCloud) Vcenter() VmwareenginePrivateCloudV
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/vmwareengine_private_cloud google_vmwareengine_private_cloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/vmwareengine_private_cloud google_vmwareengine_private_cloud} Resource.
 func NewVmwareenginePrivateCloud(scope constructs.Construct, id *string, config *VmwareenginePrivateCloudConfig) VmwareenginePrivateCloud {
 	_init_.Initialize()
 
@@ -544,7 +568,7 @@ func NewVmwareenginePrivateCloud(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/vmwareengine_private_cloud google_vmwareengine_private_cloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/vmwareengine_private_cloud google_vmwareengine_private_cloud} Resource.
 func NewVmwareenginePrivateCloud_Override(v VmwareenginePrivateCloud, scope constructs.Construct, id *string, config *VmwareenginePrivateCloudConfig) {
 	_init_.Initialize()
 
@@ -674,6 +698,17 @@ func (j *jsiiProxy_VmwareenginePrivateCloud)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VmwareenginePrivateCloud)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -1100,6 +1135,14 @@ func (v *jsiiProxy_VmwareenginePrivateCloud) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VmwareenginePrivateCloud) ResetType() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetType",
 		nil, // no parameters
 	)
 }

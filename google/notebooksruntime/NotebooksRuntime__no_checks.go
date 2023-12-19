@@ -119,6 +119,10 @@ func (j *jsiiProxy_NotebooksRuntime) validateSetIdParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_NotebooksRuntime) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotebooksRuntime) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

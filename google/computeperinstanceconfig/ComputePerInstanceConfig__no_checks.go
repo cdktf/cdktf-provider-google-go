@@ -139,6 +139,10 @@ func (j *jsiiProxy_ComputePerInstanceConfig) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ComputePerInstanceConfig) validateSetRemoveInstanceOnDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputePerInstanceConfig) validateSetRemoveInstanceStateOnDestroyParameters(val interface{}) error {
 	return nil
 }

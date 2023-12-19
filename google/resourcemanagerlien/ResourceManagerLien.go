@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/resource_manager_lien google_resource_manager_lien}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/resource_manager_lien google_resource_manager_lien}.
 type ResourceManagerLien interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -445,7 +445,7 @@ func (j *jsiiProxy_ResourceManagerLien) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/resource_manager_lien google_resource_manager_lien} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/resource_manager_lien google_resource_manager_lien} Resource.
 func NewResourceManagerLien(scope constructs.Construct, id *string, config *ResourceManagerLienConfig) ResourceManagerLien {
 	_init_.Initialize()
 
@@ -463,7 +463,7 @@ func NewResourceManagerLien(scope constructs.Construct, id *string, config *Reso
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/resource_manager_lien google_resource_manager_lien} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/resource_manager_lien google_resource_manager_lien} Resource.
 func NewResourceManagerLien_Override(r ResourceManagerLien, scope constructs.Construct, id *string, config *ResourceManagerLienConfig) {
 	_init_.Initialize()
 

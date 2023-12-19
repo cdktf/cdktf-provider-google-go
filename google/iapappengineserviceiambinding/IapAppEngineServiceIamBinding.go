@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding}.
 type IapAppEngineServiceIamBinding interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -458,7 +458,7 @@ func (j *jsiiProxy_IapAppEngineServiceIamBinding) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding} Resource.
 func NewIapAppEngineServiceIamBinding(scope constructs.Construct, id *string, config *IapAppEngineServiceIamBindingConfig) IapAppEngineServiceIamBinding {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewIapAppEngineServiceIamBinding(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding} Resource.
 func NewIapAppEngineServiceIamBinding_Override(i IapAppEngineServiceIamBinding, scope constructs.Construct, id *string, config *IapAppEngineServiceIamBindingConfig) {
 	_init_.Initialize()
 

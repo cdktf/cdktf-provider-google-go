@@ -187,6 +187,10 @@ func (j *jsiiProxy_StorageBucket) validateSetRequesterPaysParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_StorageBucket) validateSetRpoParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBucket) validateSetStorageClassParameters(val *string) error {
 	return nil
 }

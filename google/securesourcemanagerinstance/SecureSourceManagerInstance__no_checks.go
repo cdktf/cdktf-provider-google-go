@@ -75,6 +75,10 @@ func (s *jsiiProxy_SecureSourceManagerInstance) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func (s *jsiiProxy_SecureSourceManagerInstance) validatePutPrivateConfigParameters(value *SecureSourceManagerInstancePrivateConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecureSourceManagerInstance) validatePutTimeoutsParameters(value *SecureSourceManagerInstanceTimeouts) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (j *jsiiProxy_SecureSourceManagerInstance) validateSetIdParameters(val *str
 }
 
 func (j *jsiiProxy_SecureSourceManagerInstance) validateSetInstanceIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecureSourceManagerInstance) validateSetKmsKeyParameters(val *string) error {
 	return nil
 }
 

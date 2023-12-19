@@ -63,7 +63,15 @@ func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingLimitsOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) validateSetMaxNodesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) validateSetMaxProcessingUnitsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) validateSetMinNodesParameters(val *float64) error {
 	return nil
 }
 

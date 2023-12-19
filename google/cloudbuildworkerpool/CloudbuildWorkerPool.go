@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool}.
 type CloudbuildWorkerPool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -563,7 +563,7 @@ func (j *jsiiProxy_CloudbuildWorkerPool) WorkerConfigInput() *CloudbuildWorkerPo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
 func NewCloudbuildWorkerPool(scope constructs.Construct, id *string, config *CloudbuildWorkerPoolConfig) CloudbuildWorkerPool {
 	_init_.Initialize()
 
@@ -581,7 +581,7 @@ func NewCloudbuildWorkerPool(scope constructs.Construct, id *string, config *Clo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
 func NewCloudbuildWorkerPool_Override(c CloudbuildWorkerPool, scope constructs.Construct, id *string, config *CloudbuildWorkerPoolConfig) {
 	_init_.Initialize()
 

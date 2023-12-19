@@ -32,6 +32,9 @@ type ContainerAzureNodePoolConfigAOutputReference interface {
 	Fqn() *string
 	InternalValue() *ContainerAzureNodePoolConfigA
 	SetInternalValue(val *ContainerAzureNodePoolConfigA)
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	ProxyConfig() ContainerAzureNodePoolConfigProxyConfigOutputReference
 	ProxyConfigInput() *ContainerAzureNodePoolConfigProxyConfig
 	RootVolume() ContainerAzureNodePoolConfigRootVolumeOutputReference
@@ -79,6 +82,7 @@ type ContainerAzureNodePoolConfigAOutputReference interface {
 	PutProxyConfig(value *ContainerAzureNodePoolConfigProxyConfig)
 	PutRootVolume(value *ContainerAzureNodePoolConfigRootVolume)
 	PutSshConfig(value *ContainerAzureNodePoolConfigSshConfig)
+	ResetLabels()
 	ResetProxyConfig()
 	ResetRootVolume()
 	ResetTags()
@@ -143,6 +147,26 @@ func (j *jsiiProxy_ContainerAzureNodePoolConfigAOutputReference) InternalValue()
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureNodePoolConfigAOutputReference) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAzureNodePoolConfigAOutputReference) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -325,6 +349,17 @@ func (j *jsiiProxy_ContainerAzureNodePoolConfigAOutputReference)SetInternalValue
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerAzureNodePoolConfigAOutputReference)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -589,6 +624,14 @@ func (c *jsiiProxy_ContainerAzureNodePoolConfigAOutputReference) PutSshConfig(va
 		c,
 		"putSshConfig",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerAzureNodePoolConfigAOutputReference) ResetLabels() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLabels",
+		nil, // no parameters
 	)
 }
 

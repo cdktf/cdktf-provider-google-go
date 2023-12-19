@@ -7,7 +7,7 @@ package dataplexdatascan
 type DataplexDatascanDataQualitySpecRulesTableConditionExpectation struct {
 	// The SQL expression.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/dataplex_datascan#sql_expression DataplexDatascan#sql_expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/dataplex_datascan#sql_expression DataplexDatascan#sql_expression}
 	SqlExpression *string `field:"required" json:"sqlExpression" yaml:"sqlExpression"`
 }
 

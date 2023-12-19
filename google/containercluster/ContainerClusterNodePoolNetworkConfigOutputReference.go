@@ -38,6 +38,8 @@ type ContainerClusterNodePoolNetworkConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *ContainerClusterNodePoolNetworkConfig
 	SetInternalValue(val *ContainerClusterNodePoolNetworkConfig)
+	NetworkPerformanceConfig() ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference
+	NetworkPerformanceConfigInput() *ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig
 	PodCidrOverprovisionConfig() ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference
 	PodCidrOverprovisionConfigInput() *ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig
 	PodIpv4CidrBlock() *string
@@ -78,9 +80,11 @@ type ContainerClusterNodePoolNetworkConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutNetworkPerformanceConfig(value *ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig)
 	PutPodCidrOverprovisionConfig(value *ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig)
 	ResetCreatePodRange()
 	ResetEnablePrivateNodes()
+	ResetNetworkPerformanceConfig()
 	ResetPodCidrOverprovisionConfig()
 	ResetPodIpv4CidrBlock()
 	ResetPodRange()
@@ -184,6 +188,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Interna
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) NetworkPerformanceConfig() ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference {
+	var returns ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkPerformanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) NetworkPerformanceConfigInput() *ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig {
+	var returns *ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig
+	_jsii_.Get(
+		j,
+		"networkPerformanceConfigInput",
 		&returns,
 	)
 	return returns
@@ -582,6 +606,17 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Interpo
 	return returns
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) PutNetworkPerformanceConfig(value *ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig) {
+	if err := c.validatePutNetworkPerformanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNetworkPerformanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) PutPodCidrOverprovisionConfig(value *ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig) {
 	if err := c.validatePutPodCidrOverprovisionConfigParameters(value); err != nil {
 		panic(err)
@@ -605,6 +640,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) ResetEn
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnablePrivateNodes",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) ResetNetworkPerformanceConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNetworkPerformanceConfig",
 		nil, // no parameters
 	)
 }

@@ -669,6 +669,14 @@ func (j *jsiiProxy_StorageBucket) validateSetRequesterPaysParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_StorageBucket) validateSetRpoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_StorageBucket) validateSetStorageClassParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

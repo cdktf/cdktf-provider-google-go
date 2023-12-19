@@ -60,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "networkFirewallPolicyEnforcementOrder", GoGetter: "NetworkFirewallPolicyEnforcementOrder"},
 			_jsii_.MemberProperty{JsiiProperty: "networkFirewallPolicyEnforcementOrderInput", GoGetter: "NetworkFirewallPolicyEnforcementOrderInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberProperty{JsiiProperty: "numericId", GoGetter: "NumericId"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "project", GoGetter: "Project"},
 			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},

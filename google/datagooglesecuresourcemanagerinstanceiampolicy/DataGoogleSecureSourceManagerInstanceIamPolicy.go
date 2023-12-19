@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/data-sources/secure_source_manager_instance_iam_policy google_secure_source_manager_instance_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/secure_source_manager_instance_iam_policy google_secure_source_manager_instance_iam_policy}.
 type DataGoogleSecureSourceManagerInstanceIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataGoogleSecureSourceManagerInstanceIamPolicy) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/data-sources/secure_source_manager_instance_iam_policy google_secure_source_manager_instance_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/secure_source_manager_instance_iam_policy google_secure_source_manager_instance_iam_policy} Data Source.
 func NewDataGoogleSecureSourceManagerInstanceIamPolicy(scope constructs.Construct, id *string, config *DataGoogleSecureSourceManagerInstanceIamPolicyConfig) DataGoogleSecureSourceManagerInstanceIamPolicy {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataGoogleSecureSourceManagerInstanceIamPolicy(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/data-sources/secure_source_manager_instance_iam_policy google_secure_source_manager_instance_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/secure_source_manager_instance_iam_policy google_secure_source_manager_instance_iam_policy} Data Source.
 func NewDataGoogleSecureSourceManagerInstanceIamPolicy_Override(d DataGoogleSecureSourceManagerInstanceIamPolicy, scope constructs.Construct, id *string, config *DataGoogleSecureSourceManagerInstanceIamPolicyConfig) {
 	_init_.Initialize()
 

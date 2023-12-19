@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/data-sources/compute_subnetwork_iam_policy google_compute_subnetwork_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/compute_subnetwork_iam_policy google_compute_subnetwork_iam_policy}.
 type DataGoogleComputeSubnetworkIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataGoogleComputeSubnetworkIamPolicy) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/data-sources/compute_subnetwork_iam_policy google_compute_subnetwork_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/compute_subnetwork_iam_policy google_compute_subnetwork_iam_policy} Data Source.
 func NewDataGoogleComputeSubnetworkIamPolicy(scope constructs.Construct, id *string, config *DataGoogleComputeSubnetworkIamPolicyConfig) DataGoogleComputeSubnetworkIamPolicy {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataGoogleComputeSubnetworkIamPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/data-sources/compute_subnetwork_iam_policy google_compute_subnetwork_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/compute_subnetwork_iam_policy google_compute_subnetwork_iam_policy} Data Source.
 func NewDataGoogleComputeSubnetworkIamPolicy_Override(d DataGoogleComputeSubnetworkIamPolicy, scope constructs.Construct, id *string, config *DataGoogleComputeSubnetworkIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_region_per_instance_config google_compute_region_per_instance_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_region_per_instance_config google_compute_region_per_instance_config}.
 type ComputeRegionPerInstanceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -78,6 +78,9 @@ type ComputeRegionPerInstanceConfig interface {
 	RegionInstanceGroupManager() *string
 	SetRegionInstanceGroupManager(val *string)
 	RegionInstanceGroupManagerInput() *string
+	RemoveInstanceOnDestroy() interface{}
+	SetRemoveInstanceOnDestroy(val interface{})
+	RemoveInstanceOnDestroyInput() interface{}
 	RemoveInstanceStateOnDestroy() interface{}
 	SetRemoveInstanceStateOnDestroy(val interface{})
 	RemoveInstanceStateOnDestroyInput() interface{}
@@ -143,6 +146,7 @@ type ComputeRegionPerInstanceConfig interface {
 	ResetPreservedState()
 	ResetProject()
 	ResetRegion()
+	ResetRemoveInstanceOnDestroy()
 	ResetRemoveInstanceStateOnDestroy()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -450,6 +454,26 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RegionInstanceGroupManagerInp
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RemoveInstanceOnDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"removeInstanceOnDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RemoveInstanceOnDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"removeInstanceOnDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionPerInstanceConfig) RemoveInstanceStateOnDestroy() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -521,7 +545,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_region_per_instance_config google_compute_region_per_instance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_region_per_instance_config google_compute_region_per_instance_config} Resource.
 func NewComputeRegionPerInstanceConfig(scope constructs.Construct, id *string, config *ComputeRegionPerInstanceConfigConfig) ComputeRegionPerInstanceConfig {
 	_init_.Initialize()
 
@@ -539,7 +563,7 @@ func NewComputeRegionPerInstanceConfig(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_region_per_instance_config google_compute_region_per_instance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_region_per_instance_config google_compute_region_per_instance_config} Resource.
 func NewComputeRegionPerInstanceConfig_Override(c ComputeRegionPerInstanceConfig, scope constructs.Construct, id *string, config *ComputeRegionPerInstanceConfigConfig) {
 	_init_.Initialize()
 
@@ -691,6 +715,17 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetRegionInstanceGroupManager(
 	_jsii_.Set(
 		j,
 		"regionInstanceGroupManager",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionPerInstanceConfig)SetRemoveInstanceOnDestroy(val interface{}) {
+	if err := j.validateSetRemoveInstanceOnDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"removeInstanceOnDestroy",
 		val,
 	)
 }
@@ -1133,6 +1168,14 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfig) ResetRegion() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionPerInstanceConfig) ResetRemoveInstanceOnDestroy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRemoveInstanceOnDestroy",
 		nil, // no parameters
 	)
 }

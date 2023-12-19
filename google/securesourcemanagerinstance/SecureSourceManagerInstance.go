@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance}.
 type SecureSourceManagerInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -41,12 +41,16 @@ type SecureSourceManagerInstance interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HostConfig() SecureSourceManagerInstanceHostConfigList
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
 	InstanceId() *string
 	SetInstanceId(val *string)
 	InstanceIdInput() *string
+	KmsKey() *string
+	SetKmsKey(val *string)
+	KmsKeyInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -60,6 +64,8 @@ type SecureSourceManagerInstance interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	PrivateConfig() SecureSourceManagerInstancePrivateConfigOutputReference
+	PrivateConfigInput() *SecureSourceManagerInstancePrivateConfig
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -74,6 +80,7 @@ type SecureSourceManagerInstance interface {
 	// Experimental.
 	RawOverrides() interface{}
 	State() *string
+	StateNote() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -127,12 +134,15 @@ type SecureSourceManagerInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutPrivateConfig(value *SecureSourceManagerInstancePrivateConfig)
 	PutTimeouts(value *SecureSourceManagerInstanceTimeouts)
 	ResetId()
+	ResetKmsKey()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrivateConfig()
 	ResetProject()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -250,6 +260,16 @@ func (j *jsiiProxy_SecureSourceManagerInstance) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SecureSourceManagerInstance) HostConfig() SecureSourceManagerInstanceHostConfigList {
+	var returns SecureSourceManagerInstanceHostConfigList
+	_jsii_.Get(
+		j,
+		"hostConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecureSourceManagerInstance) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -285,6 +305,26 @@ func (j *jsiiProxy_SecureSourceManagerInstance) InstanceIdInput() *string {
 	_jsii_.Get(
 		j,
 		"instanceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecureSourceManagerInstance) KmsKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecureSourceManagerInstance) KmsKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyInput",
 		&returns,
 	)
 	return returns
@@ -360,6 +400,26 @@ func (j *jsiiProxy_SecureSourceManagerInstance) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_SecureSourceManagerInstance) PrivateConfig() SecureSourceManagerInstancePrivateConfigOutputReference {
+	var returns SecureSourceManagerInstancePrivateConfigOutputReference
+	_jsii_.Get(
+		j,
+		"privateConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecureSourceManagerInstance) PrivateConfigInput() *SecureSourceManagerInstancePrivateConfig {
+	var returns *SecureSourceManagerInstancePrivateConfig
+	_jsii_.Get(
+		j,
+		"privateConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecureSourceManagerInstance) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -415,6 +475,16 @@ func (j *jsiiProxy_SecureSourceManagerInstance) State() *string {
 	_jsii_.Get(
 		j,
 		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecureSourceManagerInstance) StateNote() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stateNote",
 		&returns,
 	)
 	return returns
@@ -491,7 +561,7 @@ func (j *jsiiProxy_SecureSourceManagerInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance} Resource.
 func NewSecureSourceManagerInstance(scope constructs.Construct, id *string, config *SecureSourceManagerInstanceConfig) SecureSourceManagerInstance {
 	_init_.Initialize()
 
@@ -509,7 +579,7 @@ func NewSecureSourceManagerInstance(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance} Resource.
 func NewSecureSourceManagerInstance_Override(s SecureSourceManagerInstance, scope constructs.Construct, id *string, config *SecureSourceManagerInstanceConfig) {
 	_init_.Initialize()
 
@@ -576,6 +646,17 @@ func (j *jsiiProxy_SecureSourceManagerInstance)SetInstanceId(val *string) {
 	_jsii_.Set(
 		j,
 		"instanceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecureSourceManagerInstance)SetKmsKey(val *string) {
+	if err := j.validateSetKmsKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKey",
 		val,
 	)
 }
@@ -996,6 +1077,17 @@ func (s *jsiiProxy_SecureSourceManagerInstance) OverrideLogicalId(newLogicalId *
 	)
 }
 
+func (s *jsiiProxy_SecureSourceManagerInstance) PutPrivateConfig(value *SecureSourceManagerInstancePrivateConfig) {
+	if err := s.validatePutPrivateConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putPrivateConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SecureSourceManagerInstance) PutTimeouts(value *SecureSourceManagerInstanceTimeouts) {
 	if err := s.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1015,6 +1107,14 @@ func (s *jsiiProxy_SecureSourceManagerInstance) ResetId() {
 	)
 }
 
+func (s *jsiiProxy_SecureSourceManagerInstance) ResetKmsKey() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKmsKey",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SecureSourceManagerInstance) ResetLabels() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1027,6 +1127,14 @@ func (s *jsiiProxy_SecureSourceManagerInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecureSourceManagerInstance) ResetPrivateConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPrivateConfig",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/cloudfunctions2_function google_cloudfunctions2_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/cloudfunctions2_function google_cloudfunctions2_function}.
 type Cloudfunctions2Function interface {
 	cdktf.TerraformResource
 	BuildConfig() Cloudfunctions2FunctionBuildConfigOutputReference
@@ -611,7 +611,7 @@ func (j *jsiiProxy_Cloudfunctions2Function) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/cloudfunctions2_function google_cloudfunctions2_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/cloudfunctions2_function google_cloudfunctions2_function} Resource.
 func NewCloudfunctions2Function(scope constructs.Construct, id *string, config *Cloudfunctions2FunctionConfig) Cloudfunctions2Function {
 	_init_.Initialize()
 
@@ -629,7 +629,7 @@ func NewCloudfunctions2Function(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/cloudfunctions2_function google_cloudfunctions2_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/cloudfunctions2_function google_cloudfunctions2_function} Resource.
 func NewCloudfunctions2Function_Override(c Cloudfunctions2Function, scope constructs.Construct, id *string, config *Cloudfunctions2FunctionConfig) {
 	_init_.Initialize()
 

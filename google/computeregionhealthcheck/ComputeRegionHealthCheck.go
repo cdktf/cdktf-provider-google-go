@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_region_health_check google_compute_region_health_check}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_region_health_check google_compute_region_health_check}.
 type ComputeRegionHealthCheck interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -723,7 +723,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheck) UnhealthyThresholdInput() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_region_health_check google_compute_region_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_region_health_check google_compute_region_health_check} Resource.
 func NewComputeRegionHealthCheck(scope constructs.Construct, id *string, config *ComputeRegionHealthCheckConfig) ComputeRegionHealthCheck {
 	_init_.Initialize()
 
@@ -741,7 +741,7 @@ func NewComputeRegionHealthCheck(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_region_health_check google_compute_region_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_region_health_check google_compute_region_health_check} Resource.
 func NewComputeRegionHealthCheck_Override(c ComputeRegionHealthCheck, scope constructs.Construct, id *string, config *ComputeRegionHealthCheckConfig) {
 	_init_.Initialize()
 

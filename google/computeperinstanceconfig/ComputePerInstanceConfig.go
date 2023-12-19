@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_per_instance_config google_compute_per_instance_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_per_instance_config google_compute_per_instance_config}.
 type ComputePerInstanceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -75,6 +75,9 @@ type ComputePerInstanceConfig interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RemoveInstanceOnDestroy() interface{}
+	SetRemoveInstanceOnDestroy(val interface{})
+	RemoveInstanceOnDestroyInput() interface{}
 	RemoveInstanceStateOnDestroy() interface{}
 	SetRemoveInstanceStateOnDestroy(val interface{})
 	RemoveInstanceStateOnDestroyInput() interface{}
@@ -142,6 +145,7 @@ type ComputePerInstanceConfig interface {
 	ResetOverrideLogicalId()
 	ResetPreservedState()
 	ResetProject()
+	ResetRemoveInstanceOnDestroy()
 	ResetRemoveInstanceStateOnDestroy()
 	ResetTimeouts()
 	ResetZone()
@@ -430,6 +434,26 @@ func (j *jsiiProxy_ComputePerInstanceConfig) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputePerInstanceConfig) RemoveInstanceOnDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"removeInstanceOnDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputePerInstanceConfig) RemoveInstanceOnDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"removeInstanceOnDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputePerInstanceConfig) RemoveInstanceStateOnDestroy() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -521,7 +545,7 @@ func (j *jsiiProxy_ComputePerInstanceConfig) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_per_instance_config google_compute_per_instance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_per_instance_config google_compute_per_instance_config} Resource.
 func NewComputePerInstanceConfig(scope constructs.Construct, id *string, config *ComputePerInstanceConfigConfig) ComputePerInstanceConfig {
 	_init_.Initialize()
 
@@ -539,7 +563,7 @@ func NewComputePerInstanceConfig(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_per_instance_config google_compute_per_instance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_per_instance_config google_compute_per_instance_config} Resource.
 func NewComputePerInstanceConfig_Override(c ComputePerInstanceConfig, scope constructs.Construct, id *string, config *ComputePerInstanceConfigConfig) {
 	_init_.Initialize()
 
@@ -680,6 +704,17 @@ func (j *jsiiProxy_ComputePerInstanceConfig)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputePerInstanceConfig)SetRemoveInstanceOnDestroy(val interface{}) {
+	if err := j.validateSetRemoveInstanceOnDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"removeInstanceOnDestroy",
 		val,
 	)
 }
@@ -1125,6 +1160,14 @@ func (c *jsiiProxy_ComputePerInstanceConfig) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputePerInstanceConfig) ResetRemoveInstanceOnDestroy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRemoveInstanceOnDestroy",
 		nil, // no parameters
 	)
 }

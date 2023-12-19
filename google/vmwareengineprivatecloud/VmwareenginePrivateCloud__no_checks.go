@@ -139,6 +139,10 @@ func (j *jsiiProxy_VmwareenginePrivateCloud) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_VmwareenginePrivateCloud) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewVmwareenginePrivateCloudParameters(scope constructs.Construct, id *string, config *VmwareenginePrivateCloudConfig) error {
 	return nil
 }

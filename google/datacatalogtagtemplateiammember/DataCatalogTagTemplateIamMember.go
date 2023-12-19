@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/data_catalog_tag_template_iam_member google_data_catalog_tag_template_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/data_catalog_tag_template_iam_member google_data_catalog_tag_template_iam_member}.
 type DataCatalogTagTemplateIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_DataCatalogTagTemplateIamMember) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/data_catalog_tag_template_iam_member google_data_catalog_tag_template_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/data_catalog_tag_template_iam_member google_data_catalog_tag_template_iam_member} Resource.
 func NewDataCatalogTagTemplateIamMember(scope constructs.Construct, id *string, config *DataCatalogTagTemplateIamMemberConfig) DataCatalogTagTemplateIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewDataCatalogTagTemplateIamMember(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/data_catalog_tag_template_iam_member google_data_catalog_tag_template_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/data_catalog_tag_template_iam_member google_data_catalog_tag_template_iam_member} Resource.
 func NewDataCatalogTagTemplateIamMember_Override(d DataCatalogTagTemplateIamMember, scope constructs.Construct, id *string, config *DataCatalogTagTemplateIamMemberConfig) {
 	_init_.Initialize()
 

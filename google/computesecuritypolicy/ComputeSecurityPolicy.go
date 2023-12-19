@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_security_policy google_compute_security_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_security_policy google_compute_security_policy}.
 type ComputeSecurityPolicy interface {
 	cdktf.TerraformResource
 	AdaptiveProtectionConfig() ComputeSecurityPolicyAdaptiveProtectionConfigOutputReference
@@ -544,7 +544,7 @@ func (j *jsiiProxy_ComputeSecurityPolicy) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_security_policy google_compute_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_security_policy google_compute_security_policy} Resource.
 func NewComputeSecurityPolicy(scope constructs.Construct, id *string, config *ComputeSecurityPolicyConfig) ComputeSecurityPolicy {
 	_init_.Initialize()
 
@@ -562,7 +562,7 @@ func NewComputeSecurityPolicy(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/compute_security_policy google_compute_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_security_policy google_compute_security_policy} Resource.
 func NewComputeSecurityPolicy_Override(c ComputeSecurityPolicy, scope constructs.Construct, id *string, config *ComputeSecurityPolicyConfig) {
 	_init_.Initialize()
 

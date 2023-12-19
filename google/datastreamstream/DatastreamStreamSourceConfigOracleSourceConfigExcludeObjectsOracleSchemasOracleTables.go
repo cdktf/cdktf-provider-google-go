@@ -7,11 +7,11 @@ package datastreamstream
 type DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables struct {
 	// Table name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/datastream_stream#table DatastreamStream#table}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/datastream_stream#table DatastreamStream#table}
 	Table *string `field:"required" json:"table" yaml:"table"`
 	// oracle_columns block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/datastream_stream#oracle_columns DatastreamStream#oracle_columns}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/datastream_stream#oracle_columns DatastreamStream#oracle_columns}
 	OracleColumns interface{} `field:"optional" json:"oracleColumns" yaml:"oracleColumns"`
 }
 

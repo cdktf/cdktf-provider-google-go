@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/data-sources/dns_managed_zone google_dns_managed_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/dns_managed_zone google_dns_managed_zone}.
 type DataGoogleDnsManagedZone interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -350,7 +350,7 @@ func (j *jsiiProxy_DataGoogleDnsManagedZone) Visibility() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/data-sources/dns_managed_zone google_dns_managed_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/dns_managed_zone google_dns_managed_zone} Data Source.
 func NewDataGoogleDnsManagedZone(scope constructs.Construct, id *string, config *DataGoogleDnsManagedZoneConfig) DataGoogleDnsManagedZone {
 	_init_.Initialize()
 
@@ -368,7 +368,7 @@ func NewDataGoogleDnsManagedZone(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/data-sources/dns_managed_zone google_dns_managed_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/dns_managed_zone google_dns_managed_zone} Data Source.
 func NewDataGoogleDnsManagedZone_Override(d DataGoogleDnsManagedZone, scope constructs.Construct, id *string, config *DataGoogleDnsManagedZoneConfig) {
 	_init_.Initialize()
 

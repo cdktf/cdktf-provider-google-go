@@ -147,6 +147,10 @@ func (j *jsiiProxy_MonitoringAlertPolicy) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_MonitoringAlertPolicy) validateSetSeverityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringAlertPolicy) validateSetUserLabelsParameters(val *map[string]*string) error {
 	return nil
 }

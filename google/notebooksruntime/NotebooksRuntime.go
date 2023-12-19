@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/notebooks_runtime google_notebooks_runtime}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/notebooks_runtime google_notebooks_runtime}.
 type NotebooksRuntime interface {
 	cdktf.TerraformResource
 	AccessConfig() NotebooksRuntimeAccessConfigOutputReference
@@ -33,6 +33,7 @@ type NotebooksRuntime interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -45,6 +46,9 @@ type NotebooksRuntime interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -76,6 +80,7 @@ type NotebooksRuntime interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -133,6 +138,7 @@ type NotebooksRuntime interface {
 	PutVirtualMachine(value *NotebooksRuntimeVirtualMachine)
 	ResetAccessConfig()
 	ResetId()
+	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -225,6 +231,16 @@ func (j *jsiiProxy_NotebooksRuntime) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_NotebooksRuntime) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NotebooksRuntime) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -280,6 +296,26 @@ func (j *jsiiProxy_NotebooksRuntime) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NotebooksRuntime) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -445,6 +481,16 @@ func (j *jsiiProxy_NotebooksRuntime) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
+func (j *jsiiProxy_NotebooksRuntime) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NotebooksRuntime) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -506,7 +552,7 @@ func (j *jsiiProxy_NotebooksRuntime) VirtualMachineInput() *NotebooksRuntimeVirt
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/notebooks_runtime google_notebooks_runtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/notebooks_runtime google_notebooks_runtime} Resource.
 func NewNotebooksRuntime(scope constructs.Construct, id *string, config *NotebooksRuntimeConfig) NotebooksRuntime {
 	_init_.Initialize()
 
@@ -524,7 +570,7 @@ func NewNotebooksRuntime(scope constructs.Construct, id *string, config *Noteboo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.9.0/docs/resources/notebooks_runtime google_notebooks_runtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/notebooks_runtime google_notebooks_runtime} Resource.
 func NewNotebooksRuntime_Override(n NotebooksRuntime, scope constructs.Construct, id *string, config *NotebooksRuntimeConfig) {
 	_init_.Initialize()
 
@@ -580,6 +626,17 @@ func (j *jsiiProxy_NotebooksRuntime)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NotebooksRuntime)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -1056,6 +1113,14 @@ func (n *jsiiProxy_NotebooksRuntime) ResetId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NotebooksRuntime) ResetLabels() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetLabels",
 		nil, // no parameters
 	)
 }
