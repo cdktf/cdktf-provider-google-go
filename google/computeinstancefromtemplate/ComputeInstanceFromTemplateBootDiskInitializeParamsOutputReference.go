@@ -38,6 +38,12 @@ type ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference interfac
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
+	ProvisionedIops() *float64
+	SetProvisionedIops(val *float64)
+	ProvisionedIopsInput() *float64
+	ProvisionedThroughput() *float64
+	SetProvisionedThroughput(val *float64)
+	ProvisionedThroughputInput() *float64
 	ResourceManagerTags() *map[string]*string
 	SetResourceManagerTags(val *map[string]*string)
 	ResourceManagerTagsInput() *map[string]*string
@@ -81,6 +87,8 @@ type ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference interfac
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetImage()
 	ResetLabels()
+	ResetProvisionedIops()
+	ResetProvisionedThroughput()
 	ResetResourceManagerTags()
 	ResetSize()
 	ResetType()
@@ -184,6 +192,46 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	_jsii_.Get(
 		j,
 		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ProvisionedIops() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ProvisionedIopsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedIopsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ProvisionedThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedThroughputInput",
 		&returns,
 	)
 	return returns
@@ -348,6 +396,28 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	_jsii_.Set(
 		j,
 		"labels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetProvisionedIops(val *float64) {
+	if err := j.validateSetProvisionedIopsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedIops",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetProvisionedThroughput(val *float64) {
+	if err := j.validateSetProvisionedThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedThroughput",
 		val,
 	)
 }
@@ -605,6 +675,22 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	_jsii_.InvokeVoid(
 		c,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResetProvisionedIops() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProvisionedIops",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResetProvisionedThroughput() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProvisionedThroughput",
 		nil, // no parameters
 	)
 }

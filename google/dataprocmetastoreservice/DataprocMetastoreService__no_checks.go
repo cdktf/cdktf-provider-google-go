@@ -87,6 +87,10 @@ func (d *jsiiProxy_DataprocMetastoreService) validatePutMaintenanceWindowParamet
 	return nil
 }
 
+func (d *jsiiProxy_DataprocMetastoreService) validatePutMetadataIntegrationParameters(value *DataprocMetastoreServiceMetadataIntegration) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreService) validatePutNetworkConfigParameters(value *DataprocMetastoreServiceNetworkConfig) error {
 	return nil
 }

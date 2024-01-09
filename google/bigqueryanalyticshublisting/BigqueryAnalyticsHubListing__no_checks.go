@@ -87,6 +87,10 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) validatePutPublisherParameters(v
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) validatePutRestrictedExportConfigParameters(value *BigqueryAnalyticsHubListingRestrictedExportConfig) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubListing) validatePutTimeoutsParameters(value *BigqueryAnalyticsHubListingTimeouts) error {
 	return nil
 }

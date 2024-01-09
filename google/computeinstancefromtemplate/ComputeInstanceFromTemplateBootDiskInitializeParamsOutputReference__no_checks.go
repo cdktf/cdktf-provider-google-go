@@ -71,6 +71,14 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) validateSetProvisionedIopsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) validateSetProvisionedThroughputParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -64,6 +64,9 @@ type ComputeRegionInstanceTemplateDiskOutputReference interface {
 	ProvisionedIops() *float64
 	SetProvisionedIops(val *float64)
 	ProvisionedIopsInput() *float64
+	ResourceManagerTags() *map[string]*string
+	SetResourceManagerTags(val *map[string]*string)
+	ResourceManagerTagsInput() *map[string]*string
 	ResourcePolicies() *[]*string
 	SetResourcePolicies(val *[]*string)
 	ResourcePoliciesInput() *[]*string
@@ -129,6 +132,7 @@ type ComputeRegionInstanceTemplateDiskOutputReference interface {
 	ResetLabels()
 	ResetMode()
 	ResetProvisionedIops()
+	ResetResourceManagerTags()
 	ResetResourcePolicies()
 	ResetSource()
 	ResetSourceImage()
@@ -416,6 +420,26 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) Provisioned
 	_jsii_.Get(
 		j,
 		"provisionedIopsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) ResourceManagerTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceManagerTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) ResourceManagerTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceManagerTagsInput",
 		&returns,
 	)
 	return returns
@@ -748,6 +772,17 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference)SetProvision
 	_jsii_.Set(
 		j,
 		"provisionedIops",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference)SetResourceManagerTags(val *map[string]*string) {
+	if err := j.validateSetResourceManagerTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceManagerTags",
 		val,
 	)
 }
@@ -1132,6 +1167,14 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) ResetProvis
 	_jsii_.InvokeVoid(
 		c,
 		"resetProvisionedIops",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) ResetResourceManagerTags() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetResourceManagerTags",
 		nil, // no parameters
 	)
 }

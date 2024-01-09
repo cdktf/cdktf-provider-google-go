@@ -13,6 +13,8 @@ import (
 
 type DataprocMetastoreServiceHiveMetastoreConfigOutputReference interface {
 	cdktf.ComplexObject
+	AuxiliaryVersions() DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList
+	AuxiliaryVersionsInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,6 +33,9 @@ type DataprocMetastoreServiceHiveMetastoreConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EndpointProtocol() *string
+	SetEndpointProtocol(val *string)
+	EndpointProtocolInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataprocMetastoreServiceHiveMetastoreConfig
@@ -72,8 +77,11 @@ type DataprocMetastoreServiceHiveMetastoreConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAuxiliaryVersions(value interface{})
 	PutKerberosConfig(value *DataprocMetastoreServiceHiveMetastoreConfigKerberosConfig)
+	ResetAuxiliaryVersions()
 	ResetConfigOverrides()
+	ResetEndpointProtocol()
 	ResetKerberosConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -88,6 +96,26 @@ type DataprocMetastoreServiceHiveMetastoreConfigOutputReference interface {
 // The jsii proxy struct for DataprocMetastoreServiceHiveMetastoreConfigOutputReference
 type jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) AuxiliaryVersions() DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList {
+	var returns DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList
+	_jsii_.Get(
+		j,
+		"auxiliaryVersions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) AuxiliaryVersionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"auxiliaryVersionsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -135,6 +163,26 @@ func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) C
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) EndpointProtocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointProtocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) EndpointProtocolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointProtocolInput",
 		&returns,
 	)
 	return returns
@@ -277,6 +325,17 @@ func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference)Se
 	_jsii_.Set(
 		j,
 		"configOverrides",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference)SetEndpointProtocol(val *string) {
+	if err := j.validateSetEndpointProtocolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointProtocol",
 		val,
 	)
 }
@@ -511,6 +570,17 @@ func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) I
 	return returns
 }
 
+func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) PutAuxiliaryVersions(value interface{}) {
+	if err := d.validatePutAuxiliaryVersionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAuxiliaryVersions",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) PutKerberosConfig(value *DataprocMetastoreServiceHiveMetastoreConfigKerberosConfig) {
 	if err := d.validatePutKerberosConfigParameters(value); err != nil {
 		panic(err)
@@ -522,10 +592,26 @@ func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) P
 	)
 }
 
+func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) ResetAuxiliaryVersions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAuxiliaryVersions",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) ResetConfigOverrides() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetConfigOverrides",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) ResetEndpointProtocol() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEndpointProtocol",
 		nil, // no parameters
 	)
 }

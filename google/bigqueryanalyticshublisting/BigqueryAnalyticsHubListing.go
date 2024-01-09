@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing}.
 type BigqueryAnalyticsHubListing interface {
 	cdktf.TerraformResource
 	BigqueryDataset() BigqueryAnalyticsHubListingBigqueryDatasetOutputReference
@@ -98,6 +98,8 @@ type BigqueryAnalyticsHubListing interface {
 	RequestAccess() *string
 	SetRequestAccess(val *string)
 	RequestAccessInput() *string
+	RestrictedExportConfig() BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference
+	RestrictedExportConfigInput() *BigqueryAnalyticsHubListingRestrictedExportConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -152,6 +154,7 @@ type BigqueryAnalyticsHubListing interface {
 	PutBigqueryDataset(value *BigqueryAnalyticsHubListingBigqueryDataset)
 	PutDataProvider(value *BigqueryAnalyticsHubListingDataProvider)
 	PutPublisher(value *BigqueryAnalyticsHubListingPublisher)
+	PutRestrictedExportConfig(value *BigqueryAnalyticsHubListingRestrictedExportConfig)
 	PutTimeouts(value *BigqueryAnalyticsHubListingTimeouts)
 	ResetCategories()
 	ResetDataProvider()
@@ -166,6 +169,7 @@ type BigqueryAnalyticsHubListing interface {
 	ResetProject()
 	ResetPublisher()
 	ResetRequestAccess()
+	ResetRestrictedExportConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -622,6 +626,26 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) RequestAccessInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) RestrictedExportConfig() BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference {
+	var returns BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference
+	_jsii_.Get(
+		j,
+		"restrictedExportConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryAnalyticsHubListing) RestrictedExportConfigInput() *BigqueryAnalyticsHubListingRestrictedExportConfig {
+	var returns *BigqueryAnalyticsHubListingRestrictedExportConfig
+	_jsii_.Get(
+		j,
+		"restrictedExportConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryAnalyticsHubListing) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -673,7 +697,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListing) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
 func NewBigqueryAnalyticsHubListing(scope constructs.Construct, id *string, config *BigqueryAnalyticsHubListingConfig) BigqueryAnalyticsHubListing {
 	_init_.Initialize()
 
@@ -691,7 +715,7 @@ func NewBigqueryAnalyticsHubListing(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
 func NewBigqueryAnalyticsHubListing_Override(b BigqueryAnalyticsHubListing, scope constructs.Construct, id *string, config *BigqueryAnalyticsHubListingConfig) {
 	_init_.Initialize()
 
@@ -1288,6 +1312,17 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) PutPublisher(value *BigqueryAnal
 	)
 }
 
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) PutRestrictedExportConfig(value *BigqueryAnalyticsHubListingRestrictedExportConfig) {
+	if err := b.validatePutRestrictedExportConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putRestrictedExportConfig",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubListing) PutTimeouts(value *BigqueryAnalyticsHubListingTimeouts) {
 	if err := b.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1383,6 +1418,14 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) ResetRequestAccess() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetRequestAccess",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) ResetRestrictedExportConfig() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRestrictedExportConfig",
 		nil, // no parameters
 	)
 }

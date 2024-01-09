@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/kms_crypto_key google_kms_crypto_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/kms_crypto_key google_kms_crypto_key}.
 type KmsCryptoKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,7 @@ type KmsCryptoKey interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Primary() KmsCryptoKeyPrimaryList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -396,6 +397,16 @@ func (j *jsiiProxy_KmsCryptoKey) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_KmsCryptoKey) Primary() KmsCryptoKeyPrimaryList {
+	var returns KmsCryptoKeyPrimaryList
+	_jsii_.Get(
+		j,
+		"primary",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KmsCryptoKey) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -567,7 +578,7 @@ func (j *jsiiProxy_KmsCryptoKey) VersionTemplateInput() *KmsCryptoKeyVersionTemp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/kms_crypto_key google_kms_crypto_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/kms_crypto_key google_kms_crypto_key} Resource.
 func NewKmsCryptoKey(scope constructs.Construct, id *string, config *KmsCryptoKeyConfig) KmsCryptoKey {
 	_init_.Initialize()
 
@@ -585,7 +596,7 @@ func NewKmsCryptoKey(scope constructs.Construct, id *string, config *KmsCryptoKe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/kms_crypto_key google_kms_crypto_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/kms_crypto_key google_kms_crypto_key} Resource.
 func NewKmsCryptoKey_Override(k KmsCryptoKey, scope constructs.Construct, id *string, config *KmsCryptoKeyConfig) {
 	_init_.Initialize()
 

@@ -203,6 +203,10 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplate) validateSetRegionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionInstanceTemplate) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionInstanceTemplate) validateSetResourcePoliciesParameters(val *[]*string) error {
 	return nil
 }

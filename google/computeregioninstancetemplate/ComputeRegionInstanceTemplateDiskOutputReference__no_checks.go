@@ -115,6 +115,10 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetResourcePoliciesParameters(val *[]*string) error {
 	return nil
 }

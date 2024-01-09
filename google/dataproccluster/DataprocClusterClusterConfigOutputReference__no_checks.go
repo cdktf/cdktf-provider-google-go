@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validatePutAutos
 	return nil
 }
 
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validatePutAuxiliaryNodeGroupsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validatePutDataprocMetricConfigParameters(value *DataprocClusterClusterConfigDataprocMetricConfig) error {
 	return nil
 }

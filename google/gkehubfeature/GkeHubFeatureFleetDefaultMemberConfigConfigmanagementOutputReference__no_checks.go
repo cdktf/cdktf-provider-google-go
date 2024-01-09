@@ -75,6 +75,10 @@ func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference) validateSetVersionParameters(val *string) error {
+	return nil
+}
+
 func validateNewGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

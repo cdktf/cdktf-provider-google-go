@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_instance_template google_compute_instance_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/compute_instance_template google_compute_instance_template}.
 type ComputeInstanceTemplate interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() ComputeInstanceTemplateAdvancedMachineFeaturesOutputReference
@@ -110,6 +110,9 @@ type ComputeInstanceTemplate interface {
 	RegionInput() *string
 	ReservationAffinity() ComputeInstanceTemplateReservationAffinityOutputReference
 	ReservationAffinityInput() *ComputeInstanceTemplateReservationAffinity
+	ResourceManagerTags() *map[string]*string
+	SetResourceManagerTags(val *map[string]*string)
+	ResourceManagerTagsInput() *map[string]*string
 	ResourcePolicies() *[]*string
 	SetResourcePolicies(val *[]*string)
 	ResourcePoliciesInput() *[]*string
@@ -209,6 +212,7 @@ type ComputeInstanceTemplate interface {
 	ResetProject()
 	ResetRegion()
 	ResetReservationAffinity()
+	ResetResourceManagerTags()
 	ResetResourcePolicies()
 	ResetScheduling()
 	ResetServiceAccount()
@@ -780,6 +784,26 @@ func (j *jsiiProxy_ComputeInstanceTemplate) ReservationAffinityInput() *ComputeI
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplate) ResourceManagerTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceManagerTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplate) ResourceManagerTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceManagerTagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplate) ResourcePolicies() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -971,7 +995,7 @@ func (j *jsiiProxy_ComputeInstanceTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_instance_template google_compute_instance_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/compute_instance_template google_compute_instance_template} Resource.
 func NewComputeInstanceTemplate(scope constructs.Construct, id *string, config *ComputeInstanceTemplateConfig) ComputeInstanceTemplate {
 	_init_.Initialize()
 
@@ -989,7 +1013,7 @@ func NewComputeInstanceTemplate(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/compute_instance_template google_compute_instance_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/compute_instance_template google_compute_instance_template} Resource.
 func NewComputeInstanceTemplate_Override(c ComputeInstanceTemplate, scope constructs.Construct, id *string, config *ComputeInstanceTemplateConfig) {
 	_init_.Initialize()
 
@@ -1207,6 +1231,17 @@ func (j *jsiiProxy_ComputeInstanceTemplate)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplate)SetResourceManagerTags(val *map[string]*string) {
+	if err := j.validateSetResourceManagerTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceManagerTags",
 		val,
 	)
 }
@@ -1855,6 +1890,14 @@ func (c *jsiiProxy_ComputeInstanceTemplate) ResetReservationAffinity() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetReservationAffinity",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceTemplate) ResetResourceManagerTags() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetResourceManagerTags",
 		nil, // no parameters
 	)
 }

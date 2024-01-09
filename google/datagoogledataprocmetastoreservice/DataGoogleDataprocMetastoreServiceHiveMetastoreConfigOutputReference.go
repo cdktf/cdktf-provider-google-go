@@ -13,6 +13,7 @@ import (
 
 type DataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference interface {
 	cdktf.ComplexObject
+	AuxiliaryVersions() DataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,6 +30,7 @@ type DataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference interf
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EndpointProtocol() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleDataprocMetastoreServiceHiveMetastoreConfig
@@ -82,6 +84,16 @@ type jsiiProxy_DataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputRefere
 	internal.Type__cdktfComplexObject
 }
 
+func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference) AuxiliaryVersions() DataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList {
+	var returns DataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList
+	_jsii_.Get(
+		j,
+		"auxiliaryVersions",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -117,6 +129,16 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputRe
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference) EndpointProtocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointProtocol",
 		&returns,
 	)
 	return returns

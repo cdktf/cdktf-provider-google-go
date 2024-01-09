@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/scc_source_iam_member google_scc_source_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/scc_source_iam_member google_scc_source_iam_member}.
 type SccSourceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -434,7 +434,7 @@ func (j *jsiiProxy_SccSourceIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/scc_source_iam_member google_scc_source_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/scc_source_iam_member google_scc_source_iam_member} Resource.
 func NewSccSourceIamMember(scope constructs.Construct, id *string, config *SccSourceIamMemberConfig) SccSourceIamMember {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewSccSourceIamMember(scope constructs.Construct, id *string, config *SccSo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/scc_source_iam_member google_scc_source_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/scc_source_iam_member google_scc_source_iam_member} Resource.
 func NewSccSourceIamMember_Override(s SccSourceIamMember, scope constructs.Construct, id *string, config *SccSourceIamMemberConfig) {
 	_init_.Initialize()
 

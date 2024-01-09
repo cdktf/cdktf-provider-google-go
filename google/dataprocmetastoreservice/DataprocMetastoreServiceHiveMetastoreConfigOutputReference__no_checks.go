@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) v
 	return nil
 }
 
+func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) validatePutAuxiliaryVersionsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) validatePutKerberosConfigParameters(value *DataprocMetastoreServiceHiveMetastoreConfigKerberosConfig) error {
 	return nil
 }
@@ -64,6 +68,10 @@ func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) v
 }
 
 func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) validateSetConfigOverridesParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigOutputReference) validateSetEndpointProtocolParameters(val *string) error {
 	return nil
 }
 

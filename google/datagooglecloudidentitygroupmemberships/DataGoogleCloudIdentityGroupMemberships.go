@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/cloud_identity_group_memberships google_cloud_identity_group_memberships}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/data-sources/cloud_identity_group_memberships google_cloud_identity_group_memberships}.
 type DataGoogleCloudIdentityGroupMemberships interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataGoogleCloudIdentityGroupMemberships) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/cloud_identity_group_memberships google_cloud_identity_group_memberships} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/data-sources/cloud_identity_group_memberships google_cloud_identity_group_memberships} Data Source.
 func NewDataGoogleCloudIdentityGroupMemberships(scope constructs.Construct, id *string, config *DataGoogleCloudIdentityGroupMembershipsConfig) DataGoogleCloudIdentityGroupMemberships {
 	_init_.Initialize()
 
@@ -313,7 +313,7 @@ func NewDataGoogleCloudIdentityGroupMemberships(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/cloud_identity_group_memberships google_cloud_identity_group_memberships} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/data-sources/cloud_identity_group_memberships google_cloud_identity_group_memberships} Data Source.
 func NewDataGoogleCloudIdentityGroupMemberships_Override(d DataGoogleCloudIdentityGroupMemberships, scope constructs.Construct, id *string, config *DataGoogleCloudIdentityGroupMembershipsConfig) {
 	_init_.Initialize()
 

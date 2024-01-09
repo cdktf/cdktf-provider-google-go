@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/alloydb_supported_database_flags google_alloydb_supported_database_flags}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/data-sources/alloydb_supported_database_flags google_alloydb_supported_database_flags}.
 type DataGoogleAlloydbSupportedDatabaseFlags interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataGoogleAlloydbSupportedDatabaseFlags) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/alloydb_supported_database_flags google_alloydb_supported_database_flags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/data-sources/alloydb_supported_database_flags google_alloydb_supported_database_flags} Data Source.
 func NewDataGoogleAlloydbSupportedDatabaseFlags(scope constructs.Construct, id *string, config *DataGoogleAlloydbSupportedDatabaseFlagsConfig) DataGoogleAlloydbSupportedDatabaseFlags {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataGoogleAlloydbSupportedDatabaseFlags(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/data-sources/alloydb_supported_database_flags google_alloydb_supported_database_flags} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/data-sources/alloydb_supported_database_flags google_alloydb_supported_database_flags} Data Source.
 func NewDataGoogleAlloydbSupportedDatabaseFlags_Override(d DataGoogleAlloydbSupportedDatabaseFlags, scope constructs.Construct, id *string, config *DataGoogleAlloydbSupportedDatabaseFlagsConfig) {
 	_init_.Initialize()
 

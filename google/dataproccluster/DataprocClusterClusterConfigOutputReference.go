@@ -15,6 +15,8 @@ type DataprocClusterClusterConfigOutputReference interface {
 	cdktf.ComplexObject
 	AutoscalingConfig() DataprocClusterClusterConfigAutoscalingConfigOutputReference
 	AutoscalingConfigInput() *DataprocClusterClusterConfigAutoscalingConfig
+	AuxiliaryNodeGroups() DataprocClusterClusterConfigAuxiliaryNodeGroupsList
+	AuxiliaryNodeGroupsInput() interface{}
 	Bucket() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -98,6 +100,7 @@ type DataprocClusterClusterConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAutoscalingConfig(value *DataprocClusterClusterConfigAutoscalingConfig)
+	PutAuxiliaryNodeGroups(value interface{})
 	PutDataprocMetricConfig(value *DataprocClusterClusterConfigDataprocMetricConfig)
 	PutEncryptionConfig(value *DataprocClusterClusterConfigEncryptionConfig)
 	PutEndpointConfig(value *DataprocClusterClusterConfigEndpointConfig)
@@ -111,6 +114,7 @@ type DataprocClusterClusterConfigOutputReference interface {
 	PutSoftwareConfig(value *DataprocClusterClusterConfigSoftwareConfig)
 	PutWorkerConfig(value *DataprocClusterClusterConfigWorkerConfig)
 	ResetAutoscalingConfig()
+	ResetAuxiliaryNodeGroups()
 	ResetDataprocMetricConfig()
 	ResetEncryptionConfig()
 	ResetEndpointConfig()
@@ -155,6 +159,26 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) AutoscalingConfi
 	_jsii_.Get(
 		j,
 		"autoscalingConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) AuxiliaryNodeGroups() DataprocClusterClusterConfigAuxiliaryNodeGroupsList {
+	var returns DataprocClusterClusterConfigAuxiliaryNodeGroupsList
+	_jsii_.Get(
+		j,
+		"auxiliaryNodeGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) AuxiliaryNodeGroupsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"auxiliaryNodeGroupsInput",
 		&returns,
 	)
 	return returns
@@ -822,6 +846,17 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutAutoscalingCo
 	)
 }
 
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutAuxiliaryNodeGroups(value interface{}) {
+	if err := d.validatePutAuxiliaryNodeGroupsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAuxiliaryNodeGroups",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) PutDataprocMetricConfig(value *DataprocClusterClusterConfigDataprocMetricConfig) {
 	if err := d.validatePutDataprocMetricConfigParameters(value); err != nil {
 		panic(err)
@@ -958,6 +993,14 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) ResetAutoscaling
 	_jsii_.InvokeVoid(
 		d,
 		"resetAutoscalingConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) ResetAuxiliaryNodeGroups() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAuxiliaryNodeGroups",
 		nil, // no parameters
 	)
 }

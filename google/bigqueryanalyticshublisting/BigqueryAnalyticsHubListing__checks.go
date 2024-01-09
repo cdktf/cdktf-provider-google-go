@@ -240,6 +240,17 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListing) validatePutPublisherParameters(v
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryAnalyticsHubListing) validatePutRestrictedExportConfigParameters(value *BigqueryAnalyticsHubListingRestrictedExportConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubListing) validatePutTimeoutsParameters(value *BigqueryAnalyticsHubListingTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

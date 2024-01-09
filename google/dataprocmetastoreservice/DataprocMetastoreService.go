@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/dataproc_metastore_service google_dataproc_metastore_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/dataproc_metastore_service google_dataproc_metastore_service}.
 type DataprocMetastoreService interface {
 	cdktf.TerraformResource
 	ArtifactGcsUri() *string
@@ -64,6 +64,8 @@ type DataprocMetastoreService interface {
 	LocationInput() *string
 	MaintenanceWindow() DataprocMetastoreServiceMaintenanceWindowOutputReference
 	MaintenanceWindowInput() *DataprocMetastoreServiceMaintenanceWindow
+	MetadataIntegration() DataprocMetastoreServiceMetadataIntegrationOutputReference
+	MetadataIntegrationInput() *DataprocMetastoreServiceMetadataIntegration
 	Name() *string
 	Network() *string
 	SetNetwork(val *string)
@@ -159,6 +161,7 @@ type DataprocMetastoreService interface {
 	PutEncryptionConfig(value *DataprocMetastoreServiceEncryptionConfig)
 	PutHiveMetastoreConfig(value *DataprocMetastoreServiceHiveMetastoreConfig)
 	PutMaintenanceWindow(value *DataprocMetastoreServiceMaintenanceWindow)
+	PutMetadataIntegration(value *DataprocMetastoreServiceMetadataIntegration)
 	PutNetworkConfig(value *DataprocMetastoreServiceNetworkConfig)
 	PutScalingConfig(value *DataprocMetastoreServiceScalingConfig)
 	PutTelemetryConfig(value *DataprocMetastoreServiceTelemetryConfig)
@@ -170,6 +173,7 @@ type DataprocMetastoreService interface {
 	ResetLabels()
 	ResetLocation()
 	ResetMaintenanceWindow()
+	ResetMetadataIntegration()
 	ResetNetwork()
 	ResetNetworkConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -452,6 +456,26 @@ func (j *jsiiProxy_DataprocMetastoreService) MaintenanceWindowInput() *DataprocM
 	_jsii_.Get(
 		j,
 		"maintenanceWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocMetastoreService) MetadataIntegration() DataprocMetastoreServiceMetadataIntegrationOutputReference {
+	var returns DataprocMetastoreServiceMetadataIntegrationOutputReference
+	_jsii_.Get(
+		j,
+		"metadataIntegration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocMetastoreService) MetadataIntegrationInput() *DataprocMetastoreServiceMetadataIntegration {
+	var returns *DataprocMetastoreServiceMetadataIntegration
+	_jsii_.Get(
+		j,
+		"metadataIntegrationInput",
 		&returns,
 	)
 	return returns
@@ -778,7 +802,7 @@ func (j *jsiiProxy_DataprocMetastoreService) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/dataproc_metastore_service google_dataproc_metastore_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/dataproc_metastore_service google_dataproc_metastore_service} Resource.
 func NewDataprocMetastoreService(scope constructs.Construct, id *string, config *DataprocMetastoreServiceConfig) DataprocMetastoreService {
 	_init_.Initialize()
 
@@ -796,7 +820,7 @@ func NewDataprocMetastoreService(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.10.0/docs/resources/dataproc_metastore_service google_dataproc_metastore_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/dataproc_metastore_service google_dataproc_metastore_service} Resource.
 func NewDataprocMetastoreService_Override(d DataprocMetastoreService, scope constructs.Construct, id *string, config *DataprocMetastoreServiceConfig) {
 	_init_.Initialize()
 
@@ -1371,6 +1395,17 @@ func (d *jsiiProxy_DataprocMetastoreService) PutMaintenanceWindow(value *Datapro
 	)
 }
 
+func (d *jsiiProxy_DataprocMetastoreService) PutMetadataIntegration(value *DataprocMetastoreServiceMetadataIntegration) {
+	if err := d.validatePutMetadataIntegrationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putMetadataIntegration",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataprocMetastoreService) PutNetworkConfig(value *DataprocMetastoreServiceNetworkConfig) {
 	if err := d.validatePutNetworkConfigParameters(value); err != nil {
 		panic(err)
@@ -1467,6 +1502,14 @@ func (d *jsiiProxy_DataprocMetastoreService) ResetMaintenanceWindow() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMaintenanceWindow",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocMetastoreService) ResetMetadataIntegration() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMetadataIntegration",
 		nil, // no parameters
 	)
 }
