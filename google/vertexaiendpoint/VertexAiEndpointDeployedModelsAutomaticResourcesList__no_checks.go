@@ -7,6 +7,10 @@ package vertexaiendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VertexAiEndpointDeployedModelsAutomaticResourcesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiEndpointDeployedModelsAutomaticResourcesList) validateGetParameters(index *float64) error {
 	return nil
 }

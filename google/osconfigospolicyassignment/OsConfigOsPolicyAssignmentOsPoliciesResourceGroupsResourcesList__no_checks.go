@@ -7,6 +7,10 @@ package osconfigospolicyassignment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesList) validateGetParameters(index *float64) error {
 	return nil
 }

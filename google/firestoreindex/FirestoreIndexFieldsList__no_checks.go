@@ -7,6 +7,10 @@ package firestoreindex
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FirestoreIndexFieldsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirestoreIndexFieldsList) validateGetParameters(index *float64) error {
 	return nil
 }

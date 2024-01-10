@@ -7,6 +7,10 @@ package datagooglealloydblocations
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleAlloydbLocationsLocationsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleAlloydbLocationsLocationsList) validateGetParameters(index *float64) error {
 	return nil
 }

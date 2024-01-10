@@ -7,6 +7,10 @@ package datagooglednskeys
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysList) validateGetParameters(index *float64) error {
 	return nil
 }

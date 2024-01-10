@@ -7,6 +7,10 @@ package loggingbillingaccountbucketconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package datagooglevmwareenginecluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleVmwareengineClusterNodeTypeConfigsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleVmwareengineClusterNodeTypeConfigsList) validateGetParameters(index *float64) error {
 	return nil
 }

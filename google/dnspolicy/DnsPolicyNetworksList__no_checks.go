@@ -7,6 +7,10 @@ package dnspolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DnsPolicyNetworksList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsPolicyNetworksList) validateGetParameters(index *float64) error {
 	return nil
 }

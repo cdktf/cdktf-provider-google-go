@@ -7,6 +7,10 @@ package storageobjectaccesscontrol
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageObjectAccessControlProjectTeamList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageObjectAccessControlProjectTeamList) validateGetParameters(index *float64) error {
 	return nil
 }

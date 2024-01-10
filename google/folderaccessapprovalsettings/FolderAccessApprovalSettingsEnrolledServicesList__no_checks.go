@@ -7,6 +7,10 @@ package folderaccessapprovalsettings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesList) validateGetParameters(index *float64) error {
 	return nil
 }

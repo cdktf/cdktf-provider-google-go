@@ -7,6 +7,10 @@ package datagooglecomputerouter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleComputeRouterBgpAdvertisedIpRangesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleComputeRouterBgpAdvertisedIpRangesList) validateGetParameters(index *float64) error {
 	return nil
 }

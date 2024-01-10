@@ -7,6 +7,10 @@ package datagooglestoragebucket
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleStorageBucketLifecycleRuleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleStorageBucketLifecycleRuleList) validateGetParameters(index *float64) error {
 	return nil
 }

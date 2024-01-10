@@ -7,6 +7,10 @@ package computedisk
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeDiskGuestOsFeaturesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeDiskGuestOsFeaturesList) validateGetParameters(index *float64) error {
 	return nil
 }

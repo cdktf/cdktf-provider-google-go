@@ -7,6 +7,10 @@ package datagooglecomputebackendservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleComputeBackendServiceBackendList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleComputeBackendServiceBackendList) validateGetParameters(index *float64) error {
 	return nil
 }

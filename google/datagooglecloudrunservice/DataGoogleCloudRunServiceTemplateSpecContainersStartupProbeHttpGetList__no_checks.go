@@ -7,6 +7,10 @@ package datagooglecloudrunservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package datagooglecontainercluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigCloudrunConfigList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigCloudrunConfigList) validateGetParameters(index *float64) error {
 	return nil
 }

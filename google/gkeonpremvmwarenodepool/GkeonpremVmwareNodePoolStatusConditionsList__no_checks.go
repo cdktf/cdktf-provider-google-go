@@ -7,6 +7,10 @@ package gkeonpremvmwarenodepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GkeonpremVmwareNodePoolStatusConditionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeonpremVmwareNodePoolStatusConditionsList) validateGetParameters(index *float64) error {
 	return nil
 }

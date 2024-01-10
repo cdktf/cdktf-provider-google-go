@@ -7,6 +7,10 @@ package accesscontextmanageraccesslevel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerAccessLevelBasicConditionsList) validateGetParameters(index *float64) error {
 	return nil
 }

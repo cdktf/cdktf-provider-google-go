@@ -7,6 +7,10 @@ package dialogflowcxflow
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package edgecontainervpnconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudVpnsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudVpnsList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package datagooglesourcereporepository
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleSourcerepoRepositoryPubsubConfigsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleSourcerepoRepositoryPubsubConfigsList) validateGetParameters(index *float64) error {
 	return nil
 }

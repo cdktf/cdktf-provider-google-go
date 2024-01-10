@@ -7,6 +7,10 @@ package datagooglesqldatabases
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleSqlDatabasesDatabasesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleSqlDatabasesDatabasesList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package bigtableinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BigtableInstanceClusterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableInstanceClusterList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package storagebucket
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StorageBucketLifecycleRuleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucketLifecycleRuleList) validateGetParameters(index *float64) error {
 	return nil
 }

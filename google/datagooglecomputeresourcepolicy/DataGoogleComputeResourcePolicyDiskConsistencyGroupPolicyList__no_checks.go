@@ -7,6 +7,10 @@ package datagooglecomputeresourcepolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyList) validateGetParameters(index *float64) error {
 	return nil
 }

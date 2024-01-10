@@ -7,6 +7,10 @@ package healthcarehl7v2store
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsList) validateGetParameters(index *float64) error {
 	return nil
 }

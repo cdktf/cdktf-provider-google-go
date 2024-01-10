@@ -7,6 +7,10 @@ package computeregionautoscaler
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList) validateGetParameters(index *float64) error {
 	return nil
 }

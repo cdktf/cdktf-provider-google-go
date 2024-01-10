@@ -7,6 +7,10 @@ package apigeekeystoresaliasespkcs12
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoList) validateGetParameters(index *float64) error {
 	return nil
 }

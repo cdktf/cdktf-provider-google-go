@@ -7,6 +7,10 @@ package gkeonprembaremetalcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GkeonpremBareMetalClusterValidationCheckList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeonpremBareMetalClusterValidationCheckList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package cloudbuildv2connection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList) validateGetParameters(index *float64) error {
 	return nil
 }

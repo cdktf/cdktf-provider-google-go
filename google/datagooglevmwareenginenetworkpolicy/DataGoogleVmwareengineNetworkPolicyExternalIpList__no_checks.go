@@ -7,6 +7,10 @@ package datagooglevmwareenginenetworkpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleVmwareengineNetworkPolicyExternalIpList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleVmwareengineNetworkPolicyExternalIpList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package containercluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList) validateGetParameters(index *float64) error {
 	return nil
 }

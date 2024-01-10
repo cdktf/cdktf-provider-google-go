@@ -7,6 +7,10 @@ package vmwareenginesubnet
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VmwareengineSubnetDhcpAddressRangesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareengineSubnetDhcpAddressRangesList) validateGetParameters(index *float64) error {
 	return nil
 }

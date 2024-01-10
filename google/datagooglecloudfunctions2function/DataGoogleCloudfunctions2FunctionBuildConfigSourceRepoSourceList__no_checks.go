@@ -7,6 +7,10 @@ package datagooglecloudfunctions2function
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceList) validateGetParameters(index *float64) error {
 	return nil
 }

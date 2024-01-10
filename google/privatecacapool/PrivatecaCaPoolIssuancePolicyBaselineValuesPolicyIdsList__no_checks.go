@@ -7,6 +7,10 @@ package privatecacapool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList) validateGetParameters(index *float64) error {
 	return nil
 }

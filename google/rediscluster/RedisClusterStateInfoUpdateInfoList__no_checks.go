@@ -7,6 +7,10 @@ package rediscluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RedisClusterStateInfoUpdateInfoList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisClusterStateInfoUpdateInfoList) validateGetParameters(index *float64) error {
 	return nil
 }

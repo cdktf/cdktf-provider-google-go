@@ -7,6 +7,10 @@ package loggingprojectsink
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LoggingProjectSinkExclusionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingProjectSinkExclusionsList) validateGetParameters(index *float64) error {
 	return nil
 }

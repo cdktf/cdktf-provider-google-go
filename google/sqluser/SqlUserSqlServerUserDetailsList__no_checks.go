@@ -7,6 +7,10 @@ package sqluser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SqlUserSqlServerUserDetailsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlUserSqlServerUserDetailsList) validateGetParameters(index *float64) error {
 	return nil
 }

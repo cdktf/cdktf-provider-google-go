@@ -7,6 +7,10 @@ package computesubnetwork
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeList) validateGetParameters(index *float64) error {
 	return nil
 }

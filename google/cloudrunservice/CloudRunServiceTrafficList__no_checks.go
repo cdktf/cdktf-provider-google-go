@@ -7,6 +7,10 @@ package cloudrunservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudRunServiceTrafficList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunServiceTrafficList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package computereservation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapList) validateGetParameters(index *float64) error {
 	return nil
 }

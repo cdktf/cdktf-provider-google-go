@@ -7,6 +7,10 @@ package networkconnectivityhub
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkConnectivityHubRoutingVpcsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivityHubRoutingVpcsList) validateGetParameters(index *float64) error {
 	return nil
 }

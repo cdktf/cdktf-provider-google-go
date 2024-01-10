@@ -7,6 +7,10 @@ package loggingbillingaccountsink
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LoggingBillingAccountSinkExclusionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingBillingAccountSinkExclusionsList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package dnsmanagedzone
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DnsManagedZoneDnssecConfigDefaultKeySpecsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsManagedZoneDnssecConfigDefaultKeySpecsList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -5,9 +5,9 @@ package sccfoldercustommodule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v12/sccfoldercustommodule/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v13/sccfoldercustommodule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,6 +31,11 @@ type SccFolderCustomModuleCustomConfigCustomOutputPropertiesList interface {
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
+	// Creating an iterator for this complex list.
+	//
+	// The list will be converted into a map with the mapKeyAttributeName as the key.
+	// Experimental.
+	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) SccFolderCustomModuleCustomConfigCustomOutputPropertiesOutputReference
@@ -179,6 +184,22 @@ func (j *jsiiProxy_SccFolderCustomModuleCustomConfigCustomOutputPropertiesList)S
 		"wrapsSet",
 		val,
 	)
+}
+
+func (s *jsiiProxy_SccFolderCustomModuleCustomConfigCustomOutputPropertiesList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+	if err := s.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
+		panic(err)
+	}
+	var returns cdktf.DynamicListTerraformIterator
+
+	_jsii_.Invoke(
+		s,
+		"allWithMapKey",
+		[]interface{}{mapKeyAttributeName},
+		&returns,
+	)
+
+	return returns
 }
 
 func (s *jsiiProxy_SccFolderCustomModuleCustomConfigCustomOutputPropertiesList) ComputeFqn() *string {

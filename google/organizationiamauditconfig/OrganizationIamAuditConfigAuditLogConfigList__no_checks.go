@@ -7,6 +7,10 @@ package organizationiamauditconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigList) validateGetParameters(index *float64) error {
 	return nil
 }

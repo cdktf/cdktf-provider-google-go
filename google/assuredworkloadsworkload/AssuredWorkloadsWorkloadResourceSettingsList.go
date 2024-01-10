@@ -5,9 +5,9 @@ package assuredworkloadsworkload
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v12/assuredworkloadsworkload/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v13/assuredworkloadsworkload/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,6 +31,11 @@ type AssuredWorkloadsWorkloadResourceSettingsList interface {
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
+	// Creating an iterator for this complex list.
+	//
+	// The list will be converted into a map with the mapKeyAttributeName as the key.
+	// Experimental.
+	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) AssuredWorkloadsWorkloadResourceSettingsOutputReference
@@ -179,6 +184,22 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList)SetWrapsSet(val 
 		"wrapsSet",
 		val,
 	)
+}
+
+func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+	if err := a.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
+		panic(err)
+	}
+	var returns cdktf.DynamicListTerraformIterator
+
+	_jsii_.Invoke(
+		a,
+		"allWithMapKey",
+		[]interface{}{mapKeyAttributeName},
+		&returns,
+	)
+
+	return returns
 }
 
 func (a *jsiiProxy_AssuredWorkloadsWorkloadResourceSettingsList) ComputeFqn() *string {

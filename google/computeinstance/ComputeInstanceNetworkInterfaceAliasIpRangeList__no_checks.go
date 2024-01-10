@@ -7,6 +7,10 @@ package computeinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeInstanceNetworkInterfaceAliasIpRangeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceNetworkInterfaceAliasIpRangeList) validateGetParameters(index *float64) error {
 	return nil
 }

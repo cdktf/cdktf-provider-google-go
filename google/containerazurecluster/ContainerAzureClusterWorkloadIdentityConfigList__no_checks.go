@@ -7,6 +7,10 @@ package containerazurecluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ContainerAzureClusterWorkloadIdentityConfigList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAzureClusterWorkloadIdentityConfigList) validateGetParameters(index *float64) error {
 	return nil
 }

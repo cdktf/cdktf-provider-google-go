@@ -7,6 +7,10 @@ package computerouter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeRouterBgpAdvertisedIpRangesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRouterBgpAdvertisedIpRangesList) validateGetParameters(index *float64) error {
 	return nil
 }

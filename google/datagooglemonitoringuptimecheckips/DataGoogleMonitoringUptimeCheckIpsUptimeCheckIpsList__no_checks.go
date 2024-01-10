@@ -7,6 +7,10 @@ package datagooglemonitoringuptimecheckips
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsList) validateGetParameters(index *float64) error {
 	return nil
 }

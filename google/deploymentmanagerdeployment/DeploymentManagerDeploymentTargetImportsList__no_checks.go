@@ -7,6 +7,10 @@ package deploymentmanagerdeployment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DeploymentManagerDeploymentTargetImportsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DeploymentManagerDeploymentTargetImportsList) validateGetParameters(index *float64) error {
 	return nil
 }

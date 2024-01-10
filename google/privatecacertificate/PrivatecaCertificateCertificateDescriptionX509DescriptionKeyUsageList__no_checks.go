@@ -7,6 +7,10 @@ package privatecacertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageList) validateGetParameters(index *float64) error {
 	return nil
 }

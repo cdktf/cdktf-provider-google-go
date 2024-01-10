@@ -7,6 +7,10 @@ package notebooksruntime
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NotebooksRuntimeMetricsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NotebooksRuntimeMetricsList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package gkeonprembaremetalnodepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GkeonpremBareMetalNodePoolStatusList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeonpremBareMetalNodePoolStatusList) validateGetParameters(index *float64) error {
 	return nil
 }

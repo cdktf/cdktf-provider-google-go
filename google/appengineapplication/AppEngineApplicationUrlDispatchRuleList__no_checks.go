@@ -7,6 +7,10 @@ package appengineapplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppEngineApplicationUrlDispatchRuleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppEngineApplicationUrlDispatchRuleList) validateGetParameters(index *float64) error {
 	return nil
 }

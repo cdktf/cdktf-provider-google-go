@@ -7,6 +7,10 @@ package datagooglecomputereservation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleComputeReservationShareSettingsProjectMapList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleComputeReservationShareSettingsProjectMapList) validateGetParameters(index *float64) error {
 	return nil
 }

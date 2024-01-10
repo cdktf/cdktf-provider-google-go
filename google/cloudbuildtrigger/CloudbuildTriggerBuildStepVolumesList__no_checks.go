@@ -7,6 +7,10 @@ package cloudbuildtrigger
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudbuildTriggerBuildStepVolumesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudbuildTriggerBuildStepVolumesList) validateGetParameters(index *float64) error {
 	return nil
 }

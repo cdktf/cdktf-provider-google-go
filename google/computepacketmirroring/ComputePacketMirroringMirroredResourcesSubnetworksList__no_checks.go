@@ -7,6 +7,10 @@ package computepacketmirroring
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksList) validateGetParameters(index *float64) error {
 	return nil
 }

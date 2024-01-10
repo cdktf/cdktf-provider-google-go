@@ -7,6 +7,10 @@ package datagooglecomputeinstancegroupmanager
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatefulInternalIpList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatefulInternalIpList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package computebackendservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList) validateGetParameters(index *float64) error {
 	return nil
 }
