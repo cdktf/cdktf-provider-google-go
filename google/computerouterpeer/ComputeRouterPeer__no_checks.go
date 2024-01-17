@@ -83,6 +83,10 @@ func (c *jsiiProxy_ComputeRouterPeer) validatePutBfdParameters(value *ComputeRou
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRouterPeer) validatePutMd5AuthenticationKeyParameters(value *ComputeRouterPeerMd5AuthenticationKey) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRouterPeer) validatePutTimeoutsParameters(value *ComputeRouterPeerTimeouts) error {
 	return nil
 }

@@ -66,7 +66,8 @@ type GkeonpremVmwareNodePoolConfigAOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	VsphereConfig() GkeonpremVmwareNodePoolConfigVsphereConfigList
+	VsphereConfig() GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference
+	VsphereConfigInput() *GkeonpremVmwareNodePoolConfigVsphereConfig
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -92,6 +93,7 @@ type GkeonpremVmwareNodePoolConfigAOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutTaints(value interface{})
+	PutVsphereConfig(value *GkeonpremVmwareNodePoolConfigVsphereConfig)
 	ResetBootDiskSizeGb()
 	ResetCpus()
 	ResetEnableLoadBalancer()
@@ -100,6 +102,7 @@ type GkeonpremVmwareNodePoolConfigAOutputReference interface {
 	ResetMemoryMb()
 	ResetReplicas()
 	ResetTaints()
+	ResetVsphereConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -365,11 +368,21 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) TerraformResou
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) VsphereConfig() GkeonpremVmwareNodePoolConfigVsphereConfigList {
-	var returns GkeonpremVmwareNodePoolConfigVsphereConfigList
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) VsphereConfig() GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference {
+	var returns GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference
 	_jsii_.Get(
 		j,
 		"vsphereConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) VsphereConfigInput() *GkeonpremVmwareNodePoolConfigVsphereConfig {
+	var returns *GkeonpremVmwareNodePoolConfigVsphereConfig
+	_jsii_.Get(
+		j,
+		"vsphereConfigInput",
 		&returns,
 	)
 	return returns
@@ -743,6 +756,17 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) PutTaints(valu
 	)
 }
 
+func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) PutVsphereConfig(value *GkeonpremVmwareNodePoolConfigVsphereConfig) {
+	if err := g.validatePutVsphereConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putVsphereConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) ResetBootDiskSizeGb() {
 	_jsii_.InvokeVoid(
 		g,
@@ -803,6 +827,14 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) ResetTaints() 
 	_jsii_.InvokeVoid(
 		g,
 		"resetTaints",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) ResetVsphereConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVsphereConfig",
 		nil, // no parameters
 	)
 }

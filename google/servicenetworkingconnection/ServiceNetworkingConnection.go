@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/service_networking_connection google_service_networking_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/service_networking_connection google_service_networking_connection}.
 type ServiceNetworkingConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,9 @@ type ServiceNetworkingConnection interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DeletionPolicy() *string
+	SetDeletionPolicy(val *string)
+	DeletionPolicyInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -120,6 +123,7 @@ type ServiceNetworkingConnection interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ServiceNetworkingConnectionTimeouts)
+	ResetDeletionPolicy()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -178,6 +182,26 @@ func (j *jsiiProxy_ServiceNetworkingConnection) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceNetworkingConnection) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceNetworkingConnection) DeletionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -414,7 +438,7 @@ func (j *jsiiProxy_ServiceNetworkingConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/service_networking_connection google_service_networking_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/service_networking_connection google_service_networking_connection} Resource.
 func NewServiceNetworkingConnection(scope constructs.Construct, id *string, config *ServiceNetworkingConnectionConfig) ServiceNetworkingConnection {
 	_init_.Initialize()
 
@@ -432,7 +456,7 @@ func NewServiceNetworkingConnection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/service_networking_connection google_service_networking_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/service_networking_connection google_service_networking_connection} Resource.
 func NewServiceNetworkingConnection_Override(s ServiceNetworkingConnection, scope constructs.Construct, id *string, config *ServiceNetworkingConnectionConfig) {
 	_init_.Initialize()
 
@@ -461,6 +485,17 @@ func (j *jsiiProxy_ServiceNetworkingConnection)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceNetworkingConnection)SetDeletionPolicy(val *string) {
+	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionPolicy",
 		val,
 	)
 }
@@ -916,6 +951,14 @@ func (s *jsiiProxy_ServiceNetworkingConnection) PutTimeouts(value *ServiceNetwor
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_ServiceNetworkingConnection) ResetDeletionPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDeletionPolicy",
+		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/bigquery_datapolicy_data_policy_iam_member google_bigquery_datapolicy_data_policy_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/bigquery_datapolicy_data_policy_iam_member google_bigquery_datapolicy_data_policy_iam_member}.
 type BigqueryDatapolicyDataPolicyIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamMember) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/bigquery_datapolicy_data_policy_iam_member google_bigquery_datapolicy_data_policy_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/bigquery_datapolicy_data_policy_iam_member google_bigquery_datapolicy_data_policy_iam_member} Resource.
 func NewBigqueryDatapolicyDataPolicyIamMember(scope constructs.Construct, id *string, config *BigqueryDatapolicyDataPolicyIamMemberConfig) BigqueryDatapolicyDataPolicyIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewBigqueryDatapolicyDataPolicyIamMember(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/bigquery_datapolicy_data_policy_iam_member google_bigquery_datapolicy_data_policy_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/bigquery_datapolicy_data_policy_iam_member google_bigquery_datapolicy_data_policy_iam_member} Resource.
 func NewBigqueryDatapolicyDataPolicyIamMember_Override(b BigqueryDatapolicyDataPolicyIamMember, scope constructs.Construct, id *string, config *BigqueryDatapolicyDataPolicyIamMemberConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ type BigqueryJobQueryDestinationEncryptionConfiguration struct {
 	//
 	// The BigQuery Service Account associated with your project requires access to this encryption key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/bigquery_job#kms_key_name BigqueryJob#kms_key_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/bigquery_job#kms_key_name BigqueryJob#kms_key_name}
 	KmsKeyName *string `field:"required" json:"kmsKeyName" yaml:"kmsKeyName"`
 }
 

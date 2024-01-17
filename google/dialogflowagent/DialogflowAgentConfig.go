@@ -27,15 +27,15 @@ type DialogflowAgentConfig struct {
 	// [See Language Support](https://cloud.google.com/dialogflow/docs/reference/language)
 	// for a list of the currently supported language codes. This field cannot be updated after creation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/dialogflow_agent#default_language_code DialogflowAgent#default_language_code}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/dialogflow_agent#default_language_code DialogflowAgent#default_language_code}
 	DefaultLanguageCode *string `field:"required" json:"defaultLanguageCode" yaml:"defaultLanguageCode"`
 	// The name of this agent.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/dialogflow_agent#display_name DialogflowAgent#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/dialogflow_agent#display_name DialogflowAgent#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York, Europe/Paris.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/dialogflow_agent#time_zone DialogflowAgent#time_zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/dialogflow_agent#time_zone DialogflowAgent#time_zone}
 	TimeZone *string `field:"required" json:"timeZone" yaml:"timeZone"`
 	// API version displayed in Dialogflow console.
 	//
@@ -46,7 +46,7 @@ type DialogflowAgentConfig struct {
 	// * API_VERSION_V2: V2 API.
 	// * API_VERSION_V2_BETA_1: V2beta1 API. Possible values: ["API_VERSION_V1", "API_VERSION_V2", "API_VERSION_V2_BETA_1"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/dialogflow_agent#api_version DialogflowAgent#api_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/dialogflow_agent#api_version DialogflowAgent#api_version}
 	ApiVersion *string `field:"optional" json:"apiVersion" yaml:"apiVersion"`
 	// The URI of the agent's avatar, which are used throughout the Dialogflow console.
 	//
@@ -54,7 +54,7 @@ type DialogflowAgentConfig struct {
 	// into this field, the Dialogflow will save the image in the backend. The address of the backend image returned
 	// from the API will be shown in the [avatarUriBackend] field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/dialogflow_agent#avatar_uri DialogflowAgent#avatar_uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/dialogflow_agent#avatar_uri DialogflowAgent#avatar_uri}
 	AvatarUri *string `field:"optional" json:"avatarUri" yaml:"avatarUri"`
 	// To filter out false positive results and still get variety in matched natural language inputs for your agent, you can tune the machine learning classification threshold.
 	//
@@ -63,17 +63,17 @@ type DialogflowAgentConfig struct {
 	// triggered. The score values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set to 0.0, the
 	// default of 0.3 is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/dialogflow_agent#classification_threshold DialogflowAgent#classification_threshold}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/dialogflow_agent#classification_threshold DialogflowAgent#classification_threshold}
 	ClassificationThreshold *float64 `field:"optional" json:"classificationThreshold" yaml:"classificationThreshold"`
 	// The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/dialogflow_agent#description DialogflowAgent#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/dialogflow_agent#description DialogflowAgent#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Determines whether this agent should log conversation queries.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/dialogflow_agent#enable_logging DialogflowAgent#enable_logging}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/dialogflow_agent#enable_logging DialogflowAgent#enable_logging}
 	EnableLogging interface{} `field:"optional" json:"enableLogging" yaml:"enableLogging"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/dialogflow_agent#id DialogflowAgent#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/dialogflow_agent#id DialogflowAgent#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -85,11 +85,11 @@ type DialogflowAgentConfig struct {
 	// * MATCH_MODE_ML_ONLY: Can be used for agents with a large number of examples in intents, especially the ones
 	// using.
 	MatchMode *string `field:"optional" json:"matchMode" yaml:"matchMode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/dialogflow_agent#project DialogflowAgent#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/dialogflow_agent#project DialogflowAgent#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The list of all languages supported by this agent (except for the defaultLanguageCode).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/dialogflow_agent#supported_language_codes DialogflowAgent#supported_language_codes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/dialogflow_agent#supported_language_codes DialogflowAgent#supported_language_codes}
 	SupportedLanguageCodes *[]*string `field:"optional" json:"supportedLanguageCodes" yaml:"supportedLanguageCodes"`
 	// The agent tier.
 	//
@@ -100,11 +100,11 @@ type DialogflowAgentConfig struct {
 	// NOTE: Due to consistency issues, the provider will not read this field from the API. Drift is possible between
 	// the Terraform state and Dialogflow if the agent tier is changed outside of Terraform. Possible values: ["TIER_STANDARD", "TIER_ENTERPRISE", "TIER_ENTERPRISE_PLUS"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/dialogflow_agent#tier DialogflowAgent#tier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/dialogflow_agent#tier DialogflowAgent#tier}
 	Tier *string `field:"optional" json:"tier" yaml:"tier"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/dialogflow_agent#timeouts DialogflowAgent#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/dialogflow_agent#timeouts DialogflowAgent#timeouts}
 	Timeouts *DialogflowAgentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -107,6 +107,10 @@ func (j *jsiiProxy_ServiceAccount) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_ServiceAccount) validateSetCreateIgnoreAlreadyExistsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceAccount) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

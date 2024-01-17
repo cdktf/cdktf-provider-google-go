@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership}.
 type GkeHubFeatureMembership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,8 @@ type GkeHubFeatureMembership interface {
 	MeshInput() *GkeHubFeatureMembershipMesh
 	// The tree node.
 	Node() constructs.Node
+	Policycontroller() GkeHubFeatureMembershipPolicycontrollerOutputReference
+	PolicycontrollerInput() *GkeHubFeatureMembershipPolicycontroller
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -130,6 +132,7 @@ type GkeHubFeatureMembership interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutConfigmanagement(value *GkeHubFeatureMembershipConfigmanagement)
 	PutMesh(value *GkeHubFeatureMembershipMesh)
+	PutPolicycontroller(value *GkeHubFeatureMembershipPolicycontroller)
 	PutTimeouts(value *GkeHubFeatureMembershipTimeouts)
 	ResetConfigmanagement()
 	ResetId()
@@ -138,6 +141,7 @@ type GkeHubFeatureMembership interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicycontroller()
 	ResetProject()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -398,6 +402,26 @@ func (j *jsiiProxy_GkeHubFeatureMembership) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GkeHubFeatureMembership) Policycontroller() GkeHubFeatureMembershipPolicycontrollerOutputReference {
+	var returns GkeHubFeatureMembershipPolicycontrollerOutputReference
+	_jsii_.Get(
+		j,
+		"policycontroller",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureMembership) PolicycontrollerInput() *GkeHubFeatureMembershipPolicycontroller {
+	var returns *GkeHubFeatureMembershipPolicycontroller
+	_jsii_.Get(
+		j,
+		"policycontrollerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GkeHubFeatureMembership) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -499,7 +523,7 @@ func (j *jsiiProxy_GkeHubFeatureMembership) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership} Resource.
 func NewGkeHubFeatureMembership(scope constructs.Construct, id *string, config *GkeHubFeatureMembershipConfig) GkeHubFeatureMembership {
 	_init_.Initialize()
 
@@ -517,7 +541,7 @@ func NewGkeHubFeatureMembership(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/gke_hub_feature_membership google_gke_hub_feature_membership} Resource.
 func NewGkeHubFeatureMembership_Override(g GkeHubFeatureMembership, scope constructs.Construct, id *string, config *GkeHubFeatureMembershipConfig) {
 	_init_.Initialize()
 
@@ -1037,6 +1061,17 @@ func (g *jsiiProxy_GkeHubFeatureMembership) PutMesh(value *GkeHubFeatureMembersh
 	)
 }
 
+func (g *jsiiProxy_GkeHubFeatureMembership) PutPolicycontroller(value *GkeHubFeatureMembershipPolicycontroller) {
+	if err := g.validatePutPolicycontrollerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPolicycontroller",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GkeHubFeatureMembership) PutTimeouts(value *GkeHubFeatureMembershipTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1084,6 +1119,14 @@ func (g *jsiiProxy_GkeHubFeatureMembership) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeHubFeatureMembership) ResetPolicycontroller() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPolicycontroller",
 		nil, // no parameters
 	)
 }

@@ -14,7 +14,7 @@ type HealthcareFhirStoreNotificationConfig struct {
 	// project. service-PROJECT_NUMBER@gcp-sa-healthcare.iam.gserviceaccount.com must have publisher permissions on the given
 	// Cloud Pub/Sub topic. Not having adequate permissions will cause the calls that send notifications to fail.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/healthcare_fhir_store#pubsub_topic HealthcareFhirStore#pubsub_topic}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/healthcare_fhir_store#pubsub_topic HealthcareFhirStore#pubsub_topic}
 	PubsubTopic *string `field:"required" json:"pubsubTopic" yaml:"pubsubTopic"`
 }
 

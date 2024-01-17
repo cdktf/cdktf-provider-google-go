@@ -23,6 +23,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "dryRunSpec", GoGetter: "DryRunSpec"},
 			_jsii_.MemberProperty{JsiiProperty: "dryRunSpecInput", GoGetter: "DryRunSpecInput"},
+			_jsii_.MemberProperty{JsiiProperty: "etag", GoGetter: "Etag"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},

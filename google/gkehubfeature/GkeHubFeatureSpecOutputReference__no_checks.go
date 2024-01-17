@@ -47,6 +47,10 @@ func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) validatePutClusterupgradeParameters(value *GkeHubFeatureSpecClusterupgrade) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubFeatureSpecOutputReference) validatePutFleetobservabilityParameters(value *GkeHubFeatureSpecFleetobservability) error {
 	return nil
 }

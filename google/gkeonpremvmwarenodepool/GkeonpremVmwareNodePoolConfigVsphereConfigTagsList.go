@@ -20,6 +20,8 @@ type GkeonpremVmwareNodePoolConfigVsphereConfigTagsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -67,6 +69,16 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsList) Fqn() *st
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsList) InternalValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalValue",
 		&returns,
 	)
 	return returns
@@ -127,6 +139,17 @@ func NewGkeonpremVmwareNodePoolConfigVsphereConfigTagsList_Override(g GkeonpremV
 		"@cdktf/provider-google.gkeonpremVmwareNodePool.GkeonpremVmwareNodePoolConfigVsphereConfigTagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
 	)
 }
 

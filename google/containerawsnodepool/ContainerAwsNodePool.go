@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/container_aws_node_pool google_container_aws_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/container_aws_node_pool google_container_aws_node_pool}.
 type ContainerAwsNodePool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -98,6 +98,8 @@ type ContainerAwsNodePool interface {
 	Timeouts() ContainerAwsNodePoolTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Uid() *string
+	UpdateSettings() ContainerAwsNodePoolUpdateSettingsOutputReference
+	UpdateSettingsInput() *ContainerAwsNodePoolUpdateSettings
 	UpdateTime() *string
 	Version() *string
 	SetVersion(val *string)
@@ -150,6 +152,7 @@ type ContainerAwsNodePool interface {
 	PutManagement(value *ContainerAwsNodePoolManagement)
 	PutMaxPodsConstraint(value *ContainerAwsNodePoolMaxPodsConstraint)
 	PutTimeouts(value *ContainerAwsNodePoolTimeouts)
+	PutUpdateSettings(value *ContainerAwsNodePoolUpdateSettings)
 	ResetAnnotations()
 	ResetId()
 	ResetManagement()
@@ -158,6 +161,7 @@ type ContainerAwsNodePool interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
+	ResetUpdateSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -636,6 +640,26 @@ func (j *jsiiProxy_ContainerAwsNodePool) Uid() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerAwsNodePool) UpdateSettings() ContainerAwsNodePoolUpdateSettingsOutputReference {
+	var returns ContainerAwsNodePoolUpdateSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"updateSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAwsNodePool) UpdateSettingsInput() *ContainerAwsNodePoolUpdateSettings {
+	var returns *ContainerAwsNodePoolUpdateSettings
+	_jsii_.Get(
+		j,
+		"updateSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerAwsNodePool) UpdateTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -667,7 +691,7 @@ func (j *jsiiProxy_ContainerAwsNodePool) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/container_aws_node_pool google_container_aws_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/container_aws_node_pool google_container_aws_node_pool} Resource.
 func NewContainerAwsNodePool(scope constructs.Construct, id *string, config *ContainerAwsNodePoolConfig) ContainerAwsNodePool {
 	_init_.Initialize()
 
@@ -685,7 +709,7 @@ func NewContainerAwsNodePool(scope constructs.Construct, id *string, config *Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/resources/container_aws_node_pool google_container_aws_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/container_aws_node_pool google_container_aws_node_pool} Resource.
 func NewContainerAwsNodePool_Override(c ContainerAwsNodePool, scope constructs.Construct, id *string, config *ContainerAwsNodePoolConfig) {
 	_init_.Initialize()
 
@@ -1260,6 +1284,17 @@ func (c *jsiiProxy_ContainerAwsNodePool) PutTimeouts(value *ContainerAwsNodePool
 	)
 }
 
+func (c *jsiiProxy_ContainerAwsNodePool) PutUpdateSettings(value *ContainerAwsNodePoolUpdateSettings) {
+	if err := c.validatePutUpdateSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putUpdateSettings",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerAwsNodePool) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1304,6 +1339,14 @@ func (c *jsiiProxy_ContainerAwsNodePool) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAwsNodePool) ResetUpdateSettings() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUpdateSettings",
 		nil, // no parameters
 	)
 }

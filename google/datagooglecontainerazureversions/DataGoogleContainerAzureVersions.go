@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/data-sources/container_azure_versions google_container_azure_versions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/data-sources/container_azure_versions google_container_azure_versions}.
 type DataGoogleContainerAzureVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DataGoogleContainerAzureVersions) ValidVersions() *[]*string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/data-sources/container_azure_versions google_container_azure_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/data-sources/container_azure_versions google_container_azure_versions} Data Source.
 func NewDataGoogleContainerAzureVersions(scope constructs.Construct, id *string, config *DataGoogleContainerAzureVersionsConfig) DataGoogleContainerAzureVersions {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewDataGoogleContainerAzureVersions(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.11.0/docs/data-sources/container_azure_versions google_container_azure_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/data-sources/container_azure_versions google_container_azure_versions} Data Source.
 func NewDataGoogleContainerAzureVersions_Override(d DataGoogleContainerAzureVersions, scope constructs.Construct, id *string, config *DataGoogleContainerAzureVersionsConfig) {
 	_init_.Initialize()
 

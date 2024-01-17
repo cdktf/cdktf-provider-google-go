@@ -83,6 +83,10 @@ func (g *jsiiProxy_GkeHubFeatureMembership) validatePutMeshParameters(value *Gke
 	return nil
 }
 
+func (g *jsiiProxy_GkeHubFeatureMembership) validatePutPolicycontrollerParameters(value *GkeHubFeatureMembershipPolicycontroller) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubFeatureMembership) validatePutTimeoutsParameters(value *GkeHubFeatureMembershipTimeouts) error {
 	return nil
 }

@@ -51,6 +51,10 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) validatePutTai
 	return nil
 }
 
+func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) validatePutVsphereConfigParameters(value *GkeonpremVmwareNodePoolConfigVsphereConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -101,6 +101,14 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) validateSetCategoryParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -166,9 +174,33 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) validateSetInternalValueParameters(val *GkeonpremVmwareNodePoolConfigVsphereConfigTags) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *GkeonpremVmwareNodePoolConfigVsphereConfigTags:
+		val := val.(*GkeonpremVmwareNodePoolConfigVsphereConfigTags)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case GkeonpremVmwareNodePoolConfigVsphereConfigTags:
+		val_ := val.(GkeonpremVmwareNodePoolConfigVsphereConfigTags)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GkeonpremVmwareNodePoolConfigVsphereConfigTags; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsOutputReference) validateSetTagParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
