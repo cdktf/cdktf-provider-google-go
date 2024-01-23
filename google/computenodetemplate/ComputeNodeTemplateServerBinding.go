@@ -16,7 +16,7 @@ type ComputeNodeTemplateServerBinding struct {
 	// additional licenses when maintenance occurs. However, VMs on such
 	// nodes will experience outages while maintenance is applied. Possible values: ["RESTART_NODE_ON_ANY_SERVER", "RESTART_NODE_ON_MINIMAL_SERVERS"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/compute_node_template#type ComputeNodeTemplate#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/resources/compute_node_template#type ComputeNodeTemplate#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

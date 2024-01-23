@@ -79,6 +79,10 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteTimeoutsOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewNetworkConnectivityPolicyBasedRouteTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

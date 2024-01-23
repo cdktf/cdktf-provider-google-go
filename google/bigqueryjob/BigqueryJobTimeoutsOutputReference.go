@@ -46,6 +46,9 @@ type BigqueryJobTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type BigqueryJobTimeoutsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_BigqueryJobTimeoutsOutputReference) TerraformResource() cdktf
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryJobTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryJobTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewBigqueryJobTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryJobTimeoutsOutputReference {
 	_init_.Initialize()
@@ -298,6 +322,17 @@ func (j *jsiiProxy_BigqueryJobTimeoutsOutputReference)SetTerraformResource(val c
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryJobTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (b *jsiiProxy_BigqueryJobTimeoutsOutputReference) ResetDelete() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetDelete",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryJobTimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetUpdate",
 		nil, // no parameters
 	)
 }

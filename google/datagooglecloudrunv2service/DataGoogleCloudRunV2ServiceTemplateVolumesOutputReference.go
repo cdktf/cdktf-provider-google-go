@@ -31,9 +31,11 @@ type DataGoogleCloudRunV2ServiceTemplateVolumesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Gcs() DataGoogleCloudRunV2ServiceTemplateVolumesGcsList
 	InternalValue() *DataGoogleCloudRunV2ServiceTemplateVolumes
 	SetInternalValue(val *DataGoogleCloudRunV2ServiceTemplateVolumes)
 	Name() *string
+	Nfs() DataGoogleCloudRunV2ServiceTemplateVolumesNfsList
 	Secret() DataGoogleCloudRunV2ServiceTemplateVolumesSecretList
 	// Experimental.
 	TerraformAttribute() *string
@@ -132,6 +134,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateVolumesOutputReference) Fq
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateVolumesOutputReference) Gcs() DataGoogleCloudRunV2ServiceTemplateVolumesGcsList {
+	var returns DataGoogleCloudRunV2ServiceTemplateVolumesGcsList
+	_jsii_.Get(
+		j,
+		"gcs",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateVolumesOutputReference) InternalValue() *DataGoogleCloudRunV2ServiceTemplateVolumes {
 	var returns *DataGoogleCloudRunV2ServiceTemplateVolumes
 	_jsii_.Get(
@@ -147,6 +159,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateVolumesOutputReference) Na
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateVolumesOutputReference) Nfs() DataGoogleCloudRunV2ServiceTemplateVolumesNfsList {
+	var returns DataGoogleCloudRunV2ServiceTemplateVolumesNfsList
+	_jsii_.Get(
+		j,
+		"nfs",
 		&returns,
 	)
 	return returns

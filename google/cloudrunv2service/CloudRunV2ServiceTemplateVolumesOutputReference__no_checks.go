@@ -51,6 +51,14 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) validatePutC
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) validatePutGcsParameters(value *CloudRunV2ServiceTemplateVolumesGcs) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) validatePutNfsParameters(value *CloudRunV2ServiceTemplateVolumesNfs) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) validatePutSecretParameters(value *CloudRunV2ServiceTemplateVolumesSecret) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/dataplex_zone_iam_policy google_dataplex_zone_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/resources/dataplex_zone_iam_policy google_dataplex_zone_iam_policy}.
 type DataplexZoneIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_DataplexZoneIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/dataplex_zone_iam_policy google_dataplex_zone_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/resources/dataplex_zone_iam_policy google_dataplex_zone_iam_policy} Resource.
 func NewDataplexZoneIamPolicy(scope constructs.Construct, id *string, config *DataplexZoneIamPolicyConfig) DataplexZoneIamPolicy {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewDataplexZoneIamPolicy(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/dataplex_zone_iam_policy google_dataplex_zone_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/resources/dataplex_zone_iam_policy google_dataplex_zone_iam_policy} Resource.
 func NewDataplexZoneIamPolicy_Override(d DataplexZoneIamPolicy, scope constructs.Construct, id *string, config *DataplexZoneIamPolicyConfig) {
 	_init_.Initialize()
 

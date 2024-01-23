@@ -46,6 +46,9 @@ type CertificateManagerCertificateIssuanceConfigTimeoutsOutputReference interfac
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type CertificateManagerCertificateIssuanceConfigTimeoutsOutputReference interfac
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfigTimeoutsOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfigTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfigTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewCertificateManagerCertificateIssuanceConfigTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CertificateManagerCertificateIssuanceConfigTimeoutsOutputReference {
 	_init_.Initialize()
@@ -298,6 +322,17 @@ func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfigTimeoutsOutputRefe
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfigTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfigTimeoutsOutputRefe
 	_jsii_.InvokeVoid(
 		c,
 		"resetDelete",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfigTimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUpdate",
 		nil, // no parameters
 	)
 }

@@ -127,6 +127,10 @@ func (j *jsiiProxy_ComputeDisk) validateSetDescriptionParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_ComputeDisk) validateSetEnableConfidentialComputeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeDisk) validateSetIdParameters(val *string) error {
 	return nil
 }

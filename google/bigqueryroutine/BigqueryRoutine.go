@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/bigquery_routine google_bigquery_routine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/resources/bigquery_routine google_bigquery_routine}.
 type BigqueryRoutine interface {
 	cdktf.TerraformResource
 	Arguments() BigqueryRoutineArgumentsList
@@ -95,6 +95,8 @@ type BigqueryRoutine interface {
 	RoutineType() *string
 	SetRoutineType(val *string)
 	RoutineTypeInput() *string
+	SparkOptions() BigqueryRoutineSparkOptionsOutputReference
+	SparkOptionsInput() *BigqueryRoutineSparkOptions
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -147,6 +149,7 @@ type BigqueryRoutine interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutArguments(value interface{})
+	PutSparkOptions(value *BigqueryRoutineSparkOptions)
 	PutTimeouts(value *BigqueryRoutineTimeouts)
 	ResetArguments()
 	ResetDescription()
@@ -160,6 +163,7 @@ type BigqueryRoutine interface {
 	ResetProject()
 	ResetReturnTableType()
 	ResetReturnType()
+	ResetSparkOptions()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -589,6 +593,26 @@ func (j *jsiiProxy_BigqueryRoutine) RoutineTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryRoutine) SparkOptions() BigqueryRoutineSparkOptionsOutputReference {
+	var returns BigqueryRoutineSparkOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"sparkOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryRoutine) SparkOptionsInput() *BigqueryRoutineSparkOptions {
+	var returns *BigqueryRoutineSparkOptions
+	_jsii_.Get(
+		j,
+		"sparkOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryRoutine) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -640,7 +664,7 @@ func (j *jsiiProxy_BigqueryRoutine) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/bigquery_routine google_bigquery_routine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/resources/bigquery_routine google_bigquery_routine} Resource.
 func NewBigqueryRoutine(scope constructs.Construct, id *string, config *BigqueryRoutineConfig) BigqueryRoutine {
 	_init_.Initialize()
 
@@ -658,7 +682,7 @@ func NewBigqueryRoutine(scope constructs.Construct, id *string, config *Bigquery
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/bigquery_routine google_bigquery_routine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/resources/bigquery_routine google_bigquery_routine} Resource.
 func NewBigqueryRoutine_Override(b BigqueryRoutine, scope constructs.Construct, id *string, config *BigqueryRoutineConfig) {
 	_init_.Initialize()
 
@@ -1233,6 +1257,17 @@ func (b *jsiiProxy_BigqueryRoutine) PutArguments(value interface{}) {
 	)
 }
 
+func (b *jsiiProxy_BigqueryRoutine) PutSparkOptions(value *BigqueryRoutineSparkOptions) {
+	if err := b.validatePutSparkOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putSparkOptions",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigqueryRoutine) PutTimeouts(value *BigqueryRoutineTimeouts) {
 	if err := b.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1320,6 +1355,14 @@ func (b *jsiiProxy_BigqueryRoutine) ResetReturnType() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetReturnType",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryRoutine) ResetSparkOptions() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSparkOptions",
 		nil, // no parameters
 	)
 }

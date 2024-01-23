@@ -32,11 +32,15 @@ type CloudRunV2ServiceTemplateVolumesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Gcs() CloudRunV2ServiceTemplateVolumesGcsOutputReference
+	GcsInput() *CloudRunV2ServiceTemplateVolumesGcs
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Nfs() CloudRunV2ServiceTemplateVolumesNfsOutputReference
+	NfsInput() *CloudRunV2ServiceTemplateVolumesNfs
 	Secret() CloudRunV2ServiceTemplateVolumesSecretOutputReference
 	SecretInput() *CloudRunV2ServiceTemplateVolumesSecret
 	// Experimental.
@@ -72,8 +76,12 @@ type CloudRunV2ServiceTemplateVolumesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudSqlInstance(value *CloudRunV2ServiceTemplateVolumesCloudSqlInstance)
+	PutGcs(value *CloudRunV2ServiceTemplateVolumesGcs)
+	PutNfs(value *CloudRunV2ServiceTemplateVolumesNfs)
 	PutSecret(value *CloudRunV2ServiceTemplateVolumesSecret)
 	ResetCloudSqlInstance()
+	ResetGcs()
+	ResetNfs()
 	ResetSecret()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -150,6 +158,26 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) Fqn() *strin
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) Gcs() CloudRunV2ServiceTemplateVolumesGcsOutputReference {
+	var returns CloudRunV2ServiceTemplateVolumesGcsOutputReference
+	_jsii_.Get(
+		j,
+		"gcs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) GcsInput() *CloudRunV2ServiceTemplateVolumesGcs {
+	var returns *CloudRunV2ServiceTemplateVolumesGcs
+	_jsii_.Get(
+		j,
+		"gcsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -175,6 +203,26 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) NameInput() 
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) Nfs() CloudRunV2ServiceTemplateVolumesNfsOutputReference {
+	var returns CloudRunV2ServiceTemplateVolumesNfsOutputReference
+	_jsii_.Get(
+		j,
+		"nfs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) NfsInput() *CloudRunV2ServiceTemplateVolumesNfs {
+	var returns *CloudRunV2ServiceTemplateVolumesNfs
+	_jsii_.Get(
+		j,
+		"nfsInput",
 		&returns,
 	)
 	return returns
@@ -511,6 +559,28 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) PutCloudSqlI
 	)
 }
 
+func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) PutGcs(value *CloudRunV2ServiceTemplateVolumesGcs) {
+	if err := c.validatePutGcsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putGcs",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) PutNfs(value *CloudRunV2ServiceTemplateVolumesNfs) {
+	if err := c.validatePutNfsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNfs",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) PutSecret(value *CloudRunV2ServiceTemplateVolumesSecret) {
 	if err := c.validatePutSecretParameters(value); err != nil {
 		panic(err)
@@ -526,6 +596,22 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) ResetCloudSq
 	_jsii_.InvokeVoid(
 		c,
 		"resetCloudSqlInstance",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) ResetGcs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGcs",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesOutputReference) ResetNfs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNfs",
 		nil, // no parameters
 	)
 }

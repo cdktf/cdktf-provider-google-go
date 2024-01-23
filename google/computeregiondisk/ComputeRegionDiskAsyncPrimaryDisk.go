@@ -7,7 +7,7 @@ package computeregiondisk
 type ComputeRegionDiskAsyncPrimaryDisk struct {
 	// Primary disk for asynchronous disk replication.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/compute_region_disk#disk ComputeRegionDisk#disk}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/resources/compute_region_disk#disk ComputeRegionDisk#disk}
 	Disk *string `field:"required" json:"disk" yaml:"disk"`
 }
 

@@ -79,6 +79,10 @@ func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfigTimeoutsOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_CertificateManagerCertificateIssuanceConfigTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewCertificateManagerCertificateIssuanceConfigTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

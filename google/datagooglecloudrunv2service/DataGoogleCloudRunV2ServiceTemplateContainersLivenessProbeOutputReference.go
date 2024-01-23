@@ -37,6 +37,7 @@ type DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference i
 	InternalValue() *DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbe
 	SetInternalValue(val *DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbe)
 	PeriodSeconds() *float64
+	TcpSocket() DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -180,6 +181,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeOut
 	_jsii_.Get(
 		j,
 		"periodSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference) TcpSocket() DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketList {
+	var returns DataGoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketList
+	_jsii_.Get(
+		j,
+		"tcpSocket",
 		&returns,
 	)
 	return returns

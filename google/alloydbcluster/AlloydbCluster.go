@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
 type AlloydbCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -43,6 +43,8 @@ type AlloydbCluster interface {
 	// Experimental.
 	SetCount(val interface{})
 	DatabaseVersion() *string
+	SetDatabaseVersion(val *string)
+	DatabaseVersionInput() *string
 	DeletionPolicy() *string
 	SetDeletionPolicy(val *string)
 	DeletionPolicyInput() *string
@@ -180,6 +182,7 @@ type AlloydbCluster interface {
 	ResetAutomatedBackupPolicy()
 	ResetClusterType()
 	ResetContinuousBackupConfig()
+	ResetDatabaseVersion()
 	ResetDeletionPolicy()
 	ResetDisplayName()
 	ResetEncryptionConfig()
@@ -380,6 +383,16 @@ func (j *jsiiProxy_AlloydbCluster) DatabaseVersion() *string {
 	_jsii_.Get(
 		j,
 		"databaseVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) DatabaseVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseVersionInput",
 		&returns,
 	)
 	return returns
@@ -896,7 +909,7 @@ func (j *jsiiProxy_AlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbClusterConfig) AlloydbCluster {
 	_init_.Initialize()
 
@@ -914,7 +927,7 @@ func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.12.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster_Override(a AlloydbCluster, scope constructs.Construct, id *string, config *AlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -976,6 +989,17 @@ func (j *jsiiProxy_AlloydbCluster)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlloydbCluster)SetDatabaseVersion(val *string) {
+	if err := j.validateSetDatabaseVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseVersion",
 		val,
 	)
 }
@@ -1594,6 +1618,14 @@ func (a *jsiiProxy_AlloydbCluster) ResetContinuousBackupConfig() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetContinuousBackupConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) ResetDatabaseVersion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDatabaseVersion",
 		nil, // no parameters
 	)
 }

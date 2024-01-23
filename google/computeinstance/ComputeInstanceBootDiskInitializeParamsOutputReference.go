@@ -28,6 +28,9 @@ type ComputeInstanceBootDiskInitializeParamsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableConfidentialCompute() interface{}
+	SetEnableConfidentialCompute(val interface{})
+	EnableConfidentialComputeInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Image() *string
@@ -85,6 +88,7 @@ type ComputeInstanceBootDiskInitializeParamsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEnableConfidentialCompute()
 	ResetImage()
 	ResetLabels()
 	ResetProvisionedIops()
@@ -132,6 +136,26 @@ func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) Creat
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) EnableConfidentialCompute() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableConfidentialCompute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) EnableConfidentialComputeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableConfidentialComputeInput",
 		&returns,
 	)
 	return returns
@@ -363,6 +387,17 @@ func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference)SetCom
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference)SetEnableConfidentialCompute(val interface{}) {
+	if err := j.validateSetEnableConfidentialComputeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableConfidentialCompute",
 		val,
 	)
 }
@@ -661,6 +696,14 @@ func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) Inter
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) ResetEnableConfidentialCompute() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableConfidentialCompute",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) ResetImage() {

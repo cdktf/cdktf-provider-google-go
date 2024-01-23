@@ -46,6 +46,9 @@ type SecureSourceManagerInstanceTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type SecureSourceManagerInstanceTimeoutsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_SecureSourceManagerInstanceTimeoutsOutputReference) Terraform
 	return returns
 }
 
+func (j *jsiiProxy_SecureSourceManagerInstanceTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecureSourceManagerInstanceTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewSecureSourceManagerInstanceTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SecureSourceManagerInstanceTimeoutsOutputReference {
 	_init_.Initialize()
@@ -298,6 +322,17 @@ func (j *jsiiProxy_SecureSourceManagerInstanceTimeoutsOutputReference)SetTerrafo
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecureSourceManagerInstanceTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (s *jsiiProxy_SecureSourceManagerInstanceTimeoutsOutputReference) ResetDele
 	_jsii_.InvokeVoid(
 		s,
 		"resetDelete",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecureSourceManagerInstanceTimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUpdate",
 		nil, // no parameters
 	)
 }
