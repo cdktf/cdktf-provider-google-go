@@ -10,7 +10,7 @@ type DataplexDatascanDataProfileSpecIncludeFields struct {
 	// Only top-level field names for nested fields are supported.
 	// For instance, if 'x' is of nested field type, listing 'x' is supported but 'x.y.z' is not supported. Here 'y' and 'y.z' are nested fields of 'x'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/resources/dataplex_datascan#field_names DataplexDatascan#field_names}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/resources/dataplex_datascan#field_names DataplexDatascan#field_names}
 	FieldNames *[]*string `field:"optional" json:"fieldNames" yaml:"fieldNames"`
 }
 

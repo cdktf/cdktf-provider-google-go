@@ -12,11 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository}.
 type DataGoogleArtifactRegistryRepository interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CleanupPolicies() DataGoogleArtifactRegistryRepositoryCleanupPoliciesList
+	CleanupPolicyDryRun() cdktf.IResolvable
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -133,6 +135,26 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) CdktfStack() cdktf.Terr
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) CleanupPolicies() DataGoogleArtifactRegistryRepositoryCleanupPoliciesList {
+	var returns DataGoogleArtifactRegistryRepositoryCleanupPoliciesList
+	_jsii_.Get(
+		j,
+		"cleanupPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) CleanupPolicyDryRun() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"cleanupPolicyDryRun",
 		&returns,
 	)
 	return returns
@@ -489,7 +511,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) VirtualRepositoryConfig
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source.
 func NewDataGoogleArtifactRegistryRepository(scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryRepositoryConfig) DataGoogleArtifactRegistryRepository {
 	_init_.Initialize()
 
@@ -507,7 +529,7 @@ func NewDataGoogleArtifactRegistryRepository(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source.
 func NewDataGoogleArtifactRegistryRepository_Override(d DataGoogleArtifactRegistryRepository, scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryRepositoryConfig) {
 	_init_.Initialize()
 

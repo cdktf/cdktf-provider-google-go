@@ -209,7 +209,6 @@ func init() {
 		reflect.TypeOf((*EventarcTriggerDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudFunction", GoGetter: "CloudFunction"},
-			_jsii_.MemberProperty{JsiiProperty: "cloudFunctionInput", GoGetter: "CloudFunctionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudRunService", GoGetter: "CloudRunService"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudRunServiceInput", GoGetter: "CloudRunServiceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -233,7 +232,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putCloudRunService", GoMethod: "PutCloudRunService"},
 			_jsii_.MemberMethod{JsiiMethod: "putGke", GoMethod: "PutGke"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCloudFunction", GoMethod: "ResetCloudFunction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudRunService", GoMethod: "ResetCloudRunService"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGke", GoMethod: "ResetGke"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWorkflow", GoMethod: "ResetWorkflow"},

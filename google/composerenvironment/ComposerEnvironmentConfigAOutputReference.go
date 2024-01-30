@@ -32,6 +32,8 @@ type ComposerEnvironmentConfigAOutputReference interface {
 	DagGcsPrefix() *string
 	DatabaseConfig() ComposerEnvironmentConfigDatabaseConfigOutputReference
 	DatabaseConfigInput() *ComposerEnvironmentConfigDatabaseConfig
+	DataRetentionConfig() ComposerEnvironmentConfigDataRetentionConfigOutputReference
+	DataRetentionConfigInput() *ComposerEnvironmentConfigDataRetentionConfig
 	EncryptionConfig() ComposerEnvironmentConfigEncryptionConfigOutputReference
 	EncryptionConfigInput() *ComposerEnvironmentConfigEncryptionConfig
 	EnvironmentSize() *string
@@ -99,6 +101,7 @@ type ComposerEnvironmentConfigAOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDatabaseConfig(value *ComposerEnvironmentConfigDatabaseConfig)
+	PutDataRetentionConfig(value *ComposerEnvironmentConfigDataRetentionConfig)
 	PutEncryptionConfig(value *ComposerEnvironmentConfigEncryptionConfig)
 	PutMaintenanceWindow(value *ComposerEnvironmentConfigMaintenanceWindow)
 	PutMasterAuthorizedNetworksConfig(value *ComposerEnvironmentConfigMasterAuthorizedNetworksConfig)
@@ -110,6 +113,7 @@ type ComposerEnvironmentConfigAOutputReference interface {
 	PutWebServerNetworkAccessControl(value *ComposerEnvironmentConfigWebServerNetworkAccessControl)
 	PutWorkloadsConfig(value *ComposerEnvironmentConfigWorkloadsConfig)
 	ResetDatabaseConfig()
+	ResetDataRetentionConfig()
 	ResetEncryptionConfig()
 	ResetEnvironmentSize()
 	ResetMaintenanceWindow()
@@ -203,6 +207,26 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) DatabaseConfigInpu
 	_jsii_.Get(
 		j,
 		"databaseConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) DataRetentionConfig() ComposerEnvironmentConfigDataRetentionConfigOutputReference {
+	var returns ComposerEnvironmentConfigDataRetentionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"dataRetentionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) DataRetentionConfigInput() *ComposerEnvironmentConfigDataRetentionConfig {
+	var returns *ComposerEnvironmentConfigDataRetentionConfig
+	_jsii_.Get(
+		j,
+		"dataRetentionConfigInput",
 		&returns,
 	)
 	return returns
@@ -831,6 +855,17 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutDatabaseConfig(
 	)
 }
 
+func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutDataRetentionConfig(value *ComposerEnvironmentConfigDataRetentionConfig) {
+	if err := c.validatePutDataRetentionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDataRetentionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) PutEncryptionConfig(value *ComposerEnvironmentConfigEncryptionConfig) {
 	if err := c.validatePutEncryptionConfigParameters(value); err != nil {
 		panic(err)
@@ -945,6 +980,14 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) ResetDatabaseConfi
 	_jsii_.InvokeVoid(
 		c,
 		"resetDatabaseConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) ResetDataRetentionConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDataRetentionConfig",
 		nil, // no parameters
 	)
 }

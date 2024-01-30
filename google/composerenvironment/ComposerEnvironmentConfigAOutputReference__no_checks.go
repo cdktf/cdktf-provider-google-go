@@ -51,6 +51,10 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validatePutDatabas
 	return nil
 }
 
+func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validatePutDataRetentionConfigParameters(value *ComposerEnvironmentConfigDataRetentionConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validatePutEncryptionConfigParameters(value *ComposerEnvironmentConfigEncryptionConfig) error {
 	return nil
 }

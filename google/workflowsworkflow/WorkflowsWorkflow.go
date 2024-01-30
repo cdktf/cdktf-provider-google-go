@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/resources/workflows_workflow google_workflows_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/resources/workflows_workflow google_workflows_workflow}.
 type WorkflowsWorkflow interface {
 	cdktf.TerraformResource
+	CallLogLevel() *string
+	SetCallLogLevel(val *string)
+	CallLogLevelInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -146,6 +149,7 @@ type WorkflowsWorkflow interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *WorkflowsWorkflowTimeouts)
+	ResetCallLogLevel()
 	ResetCryptoKeyName()
 	ResetDescription()
 	ResetId()
@@ -177,6 +181,26 @@ type WorkflowsWorkflow interface {
 // The jsii proxy struct for WorkflowsWorkflow
 type jsiiProxy_WorkflowsWorkflow struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_WorkflowsWorkflow) CallLogLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"callLogLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkflowsWorkflow) CallLogLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"callLogLevelInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_WorkflowsWorkflow) CdktfStack() cdktf.TerraformStack {
@@ -640,7 +664,7 @@ func (j *jsiiProxy_WorkflowsWorkflow) UserEnvVarsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
 func NewWorkflowsWorkflow(scope constructs.Construct, id *string, config *WorkflowsWorkflowConfig) WorkflowsWorkflow {
 	_init_.Initialize()
 
@@ -658,7 +682,7 @@ func NewWorkflowsWorkflow(scope constructs.Construct, id *string, config *Workfl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
 func NewWorkflowsWorkflow_Override(w WorkflowsWorkflow, scope constructs.Construct, id *string, config *WorkflowsWorkflowConfig) {
 	_init_.Initialize()
 
@@ -666,6 +690,17 @@ func NewWorkflowsWorkflow_Override(w WorkflowsWorkflow, scope constructs.Constru
 		"@cdktf/provider-google.workflowsWorkflow.WorkflowsWorkflow",
 		[]interface{}{scope, id, config},
 		w,
+	)
+}
+
+func (j *jsiiProxy_WorkflowsWorkflow)SetCallLogLevel(val *string) {
+	if err := j.validateSetCallLogLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"callLogLevel",
+		val,
 	)
 }
 
@@ -1219,6 +1254,14 @@ func (w *jsiiProxy_WorkflowsWorkflow) PutTimeouts(value *WorkflowsWorkflowTimeou
 		w,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_WorkflowsWorkflow) ResetCallLogLevel() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCallLogLevel",
+		nil, // no parameters
 	)
 }
 

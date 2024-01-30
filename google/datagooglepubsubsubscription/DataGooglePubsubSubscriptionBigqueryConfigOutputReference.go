@@ -42,6 +42,7 @@ type DataGooglePubsubSubscriptionBigqueryConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UseTableSchema() cdktf.IResolvable
 	UseTopicSchema() cdktf.IResolvable
 	WriteMetadata() cdktf.IResolvable
 	// Experimental.
@@ -168,6 +169,16 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) Te
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) UseTableSchema() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"useTableSchema",
 		&returns,
 	)
 	return returns

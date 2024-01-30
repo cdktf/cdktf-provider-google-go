@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -214,6 +214,9 @@ type GoogleProvider interface {
 	DialogflowCxCustomEndpoint() *string
 	SetDialogflowCxCustomEndpoint(val *string)
 	DialogflowCxCustomEndpointInput() *string
+	DiscoveryEngineCustomEndpoint() *string
+	SetDiscoveryEngineCustomEndpoint(val *string)
+	DiscoveryEngineCustomEndpointInput() *string
 	DnsCustomEndpoint() *string
 	SetDnsCustomEndpoint(val *string)
 	DnsCustomEndpointInput() *string
@@ -398,6 +401,9 @@ type GoogleProvider interface {
 	SecurityCenterCustomEndpoint() *string
 	SetSecurityCenterCustomEndpoint(val *string)
 	SecurityCenterCustomEndpointInput() *string
+	SecuritypostureCustomEndpoint() *string
+	SetSecuritypostureCustomEndpoint(val *string)
+	SecuritypostureCustomEndpointInput() *string
 	ServiceManagementCustomEndpoint() *string
 	SetServiceManagementCustomEndpoint(val *string)
 	ServiceManagementCustomEndpointInput() *string
@@ -534,6 +540,7 @@ type GoogleProvider interface {
 	ResetDeploymentManagerCustomEndpoint()
 	ResetDialogflowCustomEndpoint()
 	ResetDialogflowCxCustomEndpoint()
+	ResetDiscoveryEngineCustomEndpoint()
 	ResetDnsCustomEndpoint()
 	ResetDocumentAiCustomEndpoint()
 	ResetDocumentAiWarehouseCustomEndpoint()
@@ -595,6 +602,7 @@ type GoogleProvider interface {
 	ResetSecretManagerCustomEndpoint()
 	ResetSecureSourceManagerCustomEndpoint()
 	ResetSecurityCenterCustomEndpoint()
+	ResetSecuritypostureCustomEndpoint()
 	ResetServiceManagementCustomEndpoint()
 	ResetServiceNetworkingCustomEndpoint()
 	ResetServiceUsageCustomEndpoint()
@@ -1953,6 +1961,26 @@ func (j *jsiiProxy_GoogleProvider) DialogflowCxCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) DiscoveryEngineCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"discoveryEngineCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) DiscoveryEngineCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"discoveryEngineCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) DnsCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3163,6 +3191,26 @@ func (j *jsiiProxy_GoogleProvider) SecurityCenterCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) SecuritypostureCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securitypostureCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) SecuritypostureCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securitypostureCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) ServiceManagementCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3594,7 +3642,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3612,7 +3660,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.13.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -4146,6 +4194,14 @@ func (j *jsiiProxy_GoogleProvider)SetDialogflowCxCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetDiscoveryEngineCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"discoveryEngineCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetDnsCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4606,6 +4662,14 @@ func (j *jsiiProxy_GoogleProvider)SetSecurityCenterCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"securityCenterCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetSecuritypostureCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"securitypostureCustomEndpoint",
 		val,
 	)
 }
@@ -5418,6 +5482,14 @@ func (g *jsiiProxy_GoogleProvider) ResetDialogflowCxCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetDiscoveryEngineCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDiscoveryEngineCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetDnsCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5886,6 +5958,14 @@ func (g *jsiiProxy_GoogleProvider) ResetSecurityCenterCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSecurityCenterCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetSecuritypostureCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecuritypostureCustomEndpoint",
 		nil, // no parameters
 	)
 }

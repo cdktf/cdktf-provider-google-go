@@ -95,6 +95,10 @@ func validateWorkflowsWorkflow_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_WorkflowsWorkflow) validateSetCallLogLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkflowsWorkflow) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

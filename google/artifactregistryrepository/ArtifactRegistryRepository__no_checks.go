@@ -75,6 +75,10 @@ func (a *jsiiProxy_ArtifactRegistryRepository) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepository) validatePutCleanupPoliciesParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepository) validatePutDockerConfigParameters(value *ArtifactRegistryRepositoryDockerConfig) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func validateArtifactRegistryRepository_IsTerraformElementParameters(x interface
 }
 
 func validateArtifactRegistryRepository_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepository) validateSetCleanupPolicyDryRunParameters(val interface{}) error {
 	return nil
 }
 

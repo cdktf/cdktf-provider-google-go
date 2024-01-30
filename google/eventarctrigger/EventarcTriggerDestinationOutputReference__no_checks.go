@@ -59,10 +59,6 @@ func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_EventarcTriggerDestinationOutputReference) validateSetCloudFunctionParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_EventarcTriggerDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

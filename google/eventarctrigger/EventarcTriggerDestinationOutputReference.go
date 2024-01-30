@@ -14,8 +14,6 @@ import (
 type EventarcTriggerDestinationOutputReference interface {
 	cdktf.ComplexObject
 	CloudFunction() *string
-	SetCloudFunction(val *string)
-	CloudFunctionInput() *string
 	CloudRunService() EventarcTriggerDestinationCloudRunServiceOutputReference
 	CloudRunServiceInput() *EventarcTriggerDestinationCloudRunService
 	// the index of the complex object in a list.
@@ -76,7 +74,6 @@ type EventarcTriggerDestinationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudRunService(value *EventarcTriggerDestinationCloudRunService)
 	PutGke(value *EventarcTriggerDestinationGke)
-	ResetCloudFunction()
 	ResetCloudRunService()
 	ResetGke()
 	ResetWorkflow()
@@ -100,16 +97,6 @@ func (j *jsiiProxy_EventarcTriggerDestinationOutputReference) CloudFunction() *s
 	_jsii_.Get(
 		j,
 		"cloudFunction",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EventarcTriggerDestinationOutputReference) CloudFunctionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cloudFunctionInput",
 		&returns,
 	)
 	return returns
@@ -270,17 +257,6 @@ func NewEventarcTriggerDestinationOutputReference_Override(e EventarcTriggerDest
 		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
-	)
-}
-
-func (j *jsiiProxy_EventarcTriggerDestinationOutputReference)SetCloudFunction(val *string) {
-	if err := j.validateSetCloudFunctionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"cloudFunction",
-		val,
 	)
 }
 
@@ -555,14 +531,6 @@ func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) PutGke(value *Even
 		e,
 		"putGke",
 		[]interface{}{value},
-	)
-}
-
-func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) ResetCloudFunction() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetCloudFunction",
-		nil, // no parameters
 	)
 }
 
