@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/resources/storage_notification google_storage_notification}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/storage_notification google_storage_notification}.
 type StorageNotification interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -473,7 +473,7 @@ func (j *jsiiProxy_StorageNotification) TopicInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/resources/storage_notification google_storage_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/storage_notification google_storage_notification} Resource.
 func NewStorageNotification(scope constructs.Construct, id *string, config *StorageNotificationConfig) StorageNotification {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewStorageNotification(scope constructs.Construct, id *string, config *Stor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/resources/storage_notification google_storage_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/storage_notification google_storage_notification} Resource.
 func NewStorageNotification_Override(s StorageNotification, scope constructs.Construct, id *string, config *StorageNotificationConfig) {
 	_init_.Initialize()
 

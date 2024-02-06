@@ -24,11 +24,11 @@ type DataGoogleDnsManagedZoneConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// A unique name for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/data-sources/dns_managed_zone#name DataGoogleDnsManagedZone#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/data-sources/dns_managed_zone#name DataGoogleDnsManagedZone#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The ID of the project for the Google Cloud.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/data-sources/dns_managed_zone#project DataGoogleDnsManagedZone#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/data-sources/dns_managed_zone#project DataGoogleDnsManagedZone#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

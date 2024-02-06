@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment}.
 type ComputeInterconnectAttachment interface {
 	cdktf.TerraformResource
 	AdminEnabled() interface{}
@@ -105,6 +105,9 @@ type ComputeInterconnectAttachment interface {
 	SetRouter(val *string)
 	RouterInput() *string
 	SelfLink() *string
+	StackType() *string
+	SetStackType(val *string)
+	StackTypeInput() *string
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -179,6 +182,7 @@ type ComputeInterconnectAttachment interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
+	ResetStackType()
 	ResetTimeouts()
 	ResetType()
 	ResetVlanTag8021Q()
@@ -690,6 +694,26 @@ func (j *jsiiProxy_ComputeInterconnectAttachment) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInterconnectAttachment) StackType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stackType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInterconnectAttachment) StackTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stackTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInterconnectAttachment) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -791,7 +815,7 @@ func (j *jsiiProxy_ComputeInterconnectAttachment) VlanTag8021QInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
 func NewComputeInterconnectAttachment(scope constructs.Construct, id *string, config *ComputeInterconnectAttachmentConfig) ComputeInterconnectAttachment {
 	_init_.Initialize()
 
@@ -809,7 +833,7 @@ func NewComputeInterconnectAttachment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
 func NewComputeInterconnectAttachment_Override(c ComputeInterconnectAttachment, scope constructs.Construct, id *string, config *ComputeInterconnectAttachmentConfig) {
 	_init_.Initialize()
 
@@ -1038,6 +1062,17 @@ func (j *jsiiProxy_ComputeInterconnectAttachment)SetRouter(val *string) {
 	_jsii_.Set(
 		j,
 		"router",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInterconnectAttachment)SetStackType(val *string) {
+	if err := j.validateSetStackTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stackType",
 		val,
 	)
 }
@@ -1528,6 +1563,14 @@ func (c *jsiiProxy_ComputeInterconnectAttachment) ResetRegion() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInterconnectAttachment) ResetStackType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStackType",
 		nil, // no parameters
 	)
 }

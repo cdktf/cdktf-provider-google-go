@@ -167,6 +167,10 @@ func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetRouterParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetStackTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetTypeParameters(val *string) error {
 	return nil
 }

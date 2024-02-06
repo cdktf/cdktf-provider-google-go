@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/resources/memcache_instance google_memcache_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/memcache_instance google_memcache_instance}.
 type MemcacheInstance interface {
 	cdktf.TerraformResource
 	AuthorizedNetwork() *string
@@ -94,6 +94,9 @@ type MemcacheInstance interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ReservedIpRangeId() *[]*string
+	SetReservedIpRangeId(val *[]*string)
+	ReservedIpRangeIdInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -165,6 +168,7 @@ type MemcacheInstance interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
+	ResetReservedIpRangeId()
 	ResetTimeouts()
 	ResetZones()
 	SynthesizeAttributes() *map[string]interface{}
@@ -615,6 +619,26 @@ func (j *jsiiProxy_MemcacheInstance) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MemcacheInstance) ReservedIpRangeId() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"reservedIpRangeId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemcacheInstance) ReservedIpRangeIdInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"reservedIpRangeIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MemcacheInstance) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -696,7 +720,7 @@ func (j *jsiiProxy_MemcacheInstance) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/resources/memcache_instance google_memcache_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/memcache_instance google_memcache_instance} Resource.
 func NewMemcacheInstance(scope constructs.Construct, id *string, config *MemcacheInstanceConfig) MemcacheInstance {
 	_init_.Initialize()
 
@@ -714,7 +738,7 @@ func NewMemcacheInstance(scope constructs.Construct, id *string, config *Memcach
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/resources/memcache_instance google_memcache_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/memcache_instance google_memcache_instance} Resource.
 func NewMemcacheInstance_Override(m MemcacheInstance, scope constructs.Construct, id *string, config *MemcacheInstanceConfig) {
 	_init_.Initialize()
 
@@ -888,6 +912,17 @@ func (j *jsiiProxy_MemcacheInstance)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MemcacheInstance)SetReservedIpRangeId(val *[]*string) {
+	if err := j.validateSetReservedIpRangeIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"reservedIpRangeId",
 		val,
 	)
 }
@@ -1376,6 +1411,14 @@ func (m *jsiiProxy_MemcacheInstance) ResetRegion() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemcacheInstance) ResetReservedIpRangeId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetReservedIpRangeId",
 		nil, // no parameters
 	)
 }

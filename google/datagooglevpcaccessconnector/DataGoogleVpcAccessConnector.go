@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/data-sources/vpc_access_connector google_vpc_access_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/data-sources/vpc_access_connector google_vpc_access_connector}.
 type DataGoogleVpcAccessConnector interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -457,7 +457,7 @@ func (j *jsiiProxy_DataGoogleVpcAccessConnector) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/data-sources/vpc_access_connector google_vpc_access_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/data-sources/vpc_access_connector google_vpc_access_connector} Data Source.
 func NewDataGoogleVpcAccessConnector(scope constructs.Construct, id *string, config *DataGoogleVpcAccessConnectorConfig) DataGoogleVpcAccessConnector {
 	_init_.Initialize()
 
@@ -475,7 +475,7 @@ func NewDataGoogleVpcAccessConnector(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.14.0/docs/data-sources/vpc_access_connector google_vpc_access_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/data-sources/vpc_access_connector google_vpc_access_connector} Data Source.
 func NewDataGoogleVpcAccessConnector_Override(d DataGoogleVpcAccessConnector, scope constructs.Construct, id *string, config *DataGoogleVpcAccessConnectorConfig) {
 	_init_.Initialize()
 

@@ -507,6 +507,14 @@ func (j *jsiiProxy_MemcacheInstance) validateSetRegionParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_MemcacheInstance) validateSetReservedIpRangeIdParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MemcacheInstance) validateSetZonesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
