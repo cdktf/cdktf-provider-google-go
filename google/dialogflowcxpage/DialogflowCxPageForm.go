@@ -7,7 +7,7 @@ package dialogflowcxpage
 type DialogflowCxPageForm struct {
 	// parameters block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/dialogflow_cx_page#parameters DialogflowCxPage#parameters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs/resources/dialogflow_cx_page#parameters DialogflowCxPage#parameters}
 	Parameters interface{} `field:"optional" json:"parameters" yaml:"parameters"`
 }
 

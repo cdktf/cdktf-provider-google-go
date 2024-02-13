@@ -5,11 +5,11 @@ package networksecurityaddressgroupiammember
 
 
 type NetworkSecurityAddressGroupIamMemberCondition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/network_security_address_group_iam_member#expression NetworkSecurityAddressGroupIamMember#expression}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs/resources/network_security_address_group_iam_member#expression NetworkSecurityAddressGroupIamMember#expression}.
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/network_security_address_group_iam_member#title NetworkSecurityAddressGroupIamMember#title}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs/resources/network_security_address_group_iam_member#title NetworkSecurityAddressGroupIamMember#title}.
 	Title *string `field:"required" json:"title" yaml:"title"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/network_security_address_group_iam_member#description NetworkSecurityAddressGroupIamMember#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs/resources/network_security_address_group_iam_member#description NetworkSecurityAddressGroupIamMember#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 

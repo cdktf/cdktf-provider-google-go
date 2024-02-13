@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/service_account_key google_service_account_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs/resources/service_account_key google_service_account_key}.
 type ServiceAccountKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -508,7 +508,7 @@ func (j *jsiiProxy_ServiceAccountKey) ValidBefore() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/service_account_key google_service_account_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs/resources/service_account_key google_service_account_key} Resource.
 func NewServiceAccountKey(scope constructs.Construct, id *string, config *ServiceAccountKeyConfig) ServiceAccountKey {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewServiceAccountKey(scope constructs.Construct, id *string, config *Servic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/service_account_key google_service_account_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs/resources/service_account_key google_service_account_key} Resource.
 func NewServiceAccountKey_Override(s ServiceAccountKey, scope constructs.Construct, id *string, config *ServiceAccountKeyConfig) {
 	_init_.Initialize()
 

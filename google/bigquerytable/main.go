@@ -83,6 +83,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMaterializedView", GoMethod: "PutMaterializedView"},
 			_jsii_.MemberMethod{JsiiMethod: "putRangePartitioning", GoMethod: "PutRangePartitioning"},
 			_jsii_.MemberMethod{JsiiMethod: "putTableConstraints", GoMethod: "PutTableConstraints"},
+			_jsii_.MemberMethod{JsiiMethod: "putTableReplicationInfo", GoMethod: "PutTableReplicationInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimePartitioning", GoMethod: "PutTimePartitioning"},
 			_jsii_.MemberMethod{JsiiMethod: "putView", GoMethod: "PutView"},
 			_jsii_.MemberProperty{JsiiProperty: "rangePartitioning", GoGetter: "RangePartitioning"},
@@ -107,6 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRequirePartitionFilter", GoMethod: "ResetRequirePartitionFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSchema", GoMethod: "ResetSchema"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTableConstraints", GoMethod: "ResetTableConstraints"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTableReplicationInfo", GoMethod: "ResetTableReplicationInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimePartitioning", GoMethod: "ResetTimePartitioning"},
 			_jsii_.MemberMethod{JsiiMethod: "resetView", GoMethod: "ResetView"},
 			_jsii_.MemberProperty{JsiiProperty: "schema", GoGetter: "Schema"},
@@ -118,6 +120,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tableConstraintsInput", GoGetter: "TableConstraintsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tableId", GoGetter: "TableId"},
 			_jsii_.MemberProperty{JsiiProperty: "tableIdInput", GoGetter: "TableIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tableReplicationInfo", GoGetter: "TableReplicationInfo"},
+			_jsii_.MemberProperty{JsiiProperty: "tableReplicationInfoInput", GoGetter: "TableReplicationInfoInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformLabels", GoGetter: "TerraformLabels"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
@@ -891,6 +895,51 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BigqueryTableTableConstraintsPrimaryKeyOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableTableReplicationInfo",
+		reflect.TypeOf((*BigqueryTableTableReplicationInfo)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableTableReplicationInfoOutputReference",
+		reflect.TypeOf((*BigqueryTableTableReplicationInfoOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "replicationIntervalMs", GoGetter: "ReplicationIntervalMs"},
+			_jsii_.MemberProperty{JsiiProperty: "replicationIntervalMsInput", GoGetter: "ReplicationIntervalMsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReplicationIntervalMs", GoMethod: "ResetReplicationIntervalMs"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceDatasetId", GoGetter: "SourceDatasetId"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceDatasetIdInput", GoGetter: "SourceDatasetIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceProjectId", GoGetter: "SourceProjectId"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceProjectIdInput", GoGetter: "SourceProjectIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceTableId", GoGetter: "SourceTableId"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceTableIdInput", GoGetter: "SourceTableIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BigqueryTableTableReplicationInfoOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

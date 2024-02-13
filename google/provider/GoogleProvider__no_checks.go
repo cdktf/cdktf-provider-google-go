@@ -31,6 +31,10 @@ func validateGoogleProvider_IsTerraformProviderParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_GoogleProvider) validateSetAddTerraformAttributionLabelParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleProvider) validateSetBatchingParameters(val *GoogleProviderBatching) error {
 	return nil
 }

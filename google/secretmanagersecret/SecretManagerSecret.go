@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/secret_manager_secret google_secret_manager_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs/resources/secret_manager_secret google_secret_manager_secret}.
 type SecretManagerSecret interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -627,7 +627,7 @@ func (j *jsiiProxy_SecretManagerSecret) VersionAliasesInput() *map[string]*strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/secret_manager_secret google_secret_manager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs/resources/secret_manager_secret google_secret_manager_secret} Resource.
 func NewSecretManagerSecret(scope constructs.Construct, id *string, config *SecretManagerSecretConfig) SecretManagerSecret {
 	_init_.Initialize()
 
@@ -645,7 +645,7 @@ func NewSecretManagerSecret(scope constructs.Construct, id *string, config *Secr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/secret_manager_secret google_secret_manager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs/resources/secret_manager_secret google_secret_manager_secret} Resource.
 func NewSecretManagerSecret_Override(s SecretManagerSecret, scope constructs.Construct, id *string, config *SecretManagerSecretConfig) {
 	_init_.Initialize()
 

@@ -7,7 +7,7 @@ package gkeonprembaremetalcluster
 type GkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsers struct {
 	// The name of the user, e.g. 'my-gcp-id@gmail.com'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/gkeonprem_bare_metal_cluster#username GkeonpremBareMetalCluster#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs/resources/gkeonprem_bare_metal_cluster#username GkeonpremBareMetalCluster#username}
 	Username *string `field:"required" json:"username" yaml:"username"`
 }
 

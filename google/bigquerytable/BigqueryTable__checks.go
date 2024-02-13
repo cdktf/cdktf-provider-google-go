@@ -262,6 +262,17 @@ func (b *jsiiProxy_BigqueryTable) validatePutTableConstraintsParameters(value *B
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryTable) validatePutTableReplicationInfoParameters(value *BigqueryTableTableReplicationInfo) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryTable) validatePutTimePartitioningParameters(value *BigqueryTableTimePartitioning) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

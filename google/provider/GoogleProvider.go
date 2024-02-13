@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -27,6 +27,9 @@ type GoogleProvider interface {
 	ActiveDirectoryCustomEndpoint() *string
 	SetActiveDirectoryCustomEndpoint(val *string)
 	ActiveDirectoryCustomEndpointInput() *string
+	AddTerraformAttributionLabel() interface{}
+	SetAddTerraformAttributionLabel(val interface{})
+	AddTerraformAttributionLabelInput() interface{}
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
@@ -244,6 +247,9 @@ type GoogleProvider interface {
 	FilestoreCustomEndpoint() *string
 	SetFilestoreCustomEndpoint(val *string)
 	FilestoreCustomEndpointInput() *string
+	FirebaseAppCheckCustomEndpoint() *string
+	SetFirebaseAppCheckCustomEndpoint(val *string)
+	FirebaseAppCheckCustomEndpointInput() *string
 	FirebaserulesCustomEndpoint() *string
 	SetFirebaserulesCustomEndpoint(val *string)
 	FirebaserulesCustomEndpointInput() *string
@@ -440,6 +446,9 @@ type GoogleProvider interface {
 	TagsLocationCustomEndpoint() *string
 	SetTagsLocationCustomEndpoint(val *string)
 	TagsLocationCustomEndpointInput() *string
+	TerraformAttributionLabelAdditionStrategy() *string
+	SetTerraformAttributionLabelAdditionStrategy(val *string)
+	TerraformAttributionLabelAdditionStrategyInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -482,6 +491,7 @@ type GoogleProvider interface {
 	ResetAccessContextManagerCustomEndpoint()
 	ResetAccessToken()
 	ResetActiveDirectoryCustomEndpoint()
+	ResetAddTerraformAttributionLabel()
 	ResetAlias()
 	ResetAlloydbCustomEndpoint()
 	ResetApigeeCustomEndpoint()
@@ -553,6 +563,7 @@ type GoogleProvider interface {
 	ResetEssentialContactsCustomEndpoint()
 	ResetEventarcCustomEndpoint()
 	ResetFilestoreCustomEndpoint()
+	ResetFirebaseAppCheckCustomEndpoint()
 	ResetFirebaserulesCustomEndpoint()
 	ResetFirestoreCustomEndpoint()
 	ResetGkeBackupCustomEndpoint()
@@ -618,6 +629,7 @@ type GoogleProvider interface {
 	ResetStorageTransferCustomEndpoint()
 	ResetTagsCustomEndpoint()
 	ResetTagsLocationCustomEndpoint()
+	ResetTerraformAttributionLabelAdditionStrategy()
 	ResetTpuCustomEndpoint()
 	ResetUniverseDomain()
 	ResetUserProjectOverride()
@@ -720,6 +732,26 @@ func (j *jsiiProxy_GoogleProvider) ActiveDirectoryCustomEndpointInput() *string 
 	_jsii_.Get(
 		j,
 		"activeDirectoryCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) AddTerraformAttributionLabel() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addTerraformAttributionLabel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) AddTerraformAttributionLabelInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addTerraformAttributionLabelInput",
 		&returns,
 	)
 	return returns
@@ -2165,6 +2197,26 @@ func (j *jsiiProxy_GoogleProvider) FilestoreCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) FirebaseAppCheckCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseAppCheckCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) FirebaseAppCheckCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseAppCheckCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) FirebaserulesCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3455,6 +3507,26 @@ func (j *jsiiProxy_GoogleProvider) TagsLocationCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) TerraformAttributionLabelAdditionStrategy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttributionLabelAdditionStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) TerraformAttributionLabelAdditionStrategyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttributionLabelAdditionStrategyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -3666,7 +3738,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3684,7 +3756,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -3723,6 +3795,17 @@ func (j *jsiiProxy_GoogleProvider)SetActiveDirectoryCustomEndpoint(val *string) 
 	_jsii_.Set(
 		j,
 		"activeDirectoryCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetAddTerraformAttributionLabel(val interface{}) {
+	if err := j.validateSetAddTerraformAttributionLabelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addTerraformAttributionLabel",
 		val,
 	)
 }
@@ -4298,6 +4381,14 @@ func (j *jsiiProxy_GoogleProvider)SetFilestoreCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetFirebaseAppCheckCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"firebaseAppCheckCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetFirebaserulesCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4794,6 +4885,14 @@ func (j *jsiiProxy_GoogleProvider)SetTagsLocationCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetTerraformAttributionLabelAdditionStrategy(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttributionLabelAdditionStrategy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetTpuCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -5022,6 +5121,14 @@ func (g *jsiiProxy_GoogleProvider) ResetActiveDirectoryCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetActiveDirectoryCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetAddTerraformAttributionLabel() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAddTerraformAttributionLabel",
 		nil, // no parameters
 	)
 }
@@ -5594,6 +5701,14 @@ func (g *jsiiProxy_GoogleProvider) ResetFilestoreCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetFirebaseAppCheckCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFirebaseAppCheckCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetFirebaserulesCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6094,6 +6209,14 @@ func (g *jsiiProxy_GoogleProvider) ResetTagsLocationCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTagsLocationCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetTerraformAttributionLabelAdditionStrategy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTerraformAttributionLabelAdditionStrategy",
 		nil, // no parameters
 	)
 }

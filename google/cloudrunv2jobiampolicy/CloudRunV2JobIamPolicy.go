@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/cloud_run_v2_job_iam_policy google_cloud_run_v2_job_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs/resources/cloud_run_v2_job_iam_policy google_cloud_run_v2_job_iam_policy}.
 type CloudRunV2JobIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_CloudRunV2JobIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/cloud_run_v2_job_iam_policy google_cloud_run_v2_job_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs/resources/cloud_run_v2_job_iam_policy google_cloud_run_v2_job_iam_policy} Resource.
 func NewCloudRunV2JobIamPolicy(scope constructs.Construct, id *string, config *CloudRunV2JobIamPolicyConfig) CloudRunV2JobIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewCloudRunV2JobIamPolicy(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.15.0/docs/resources/cloud_run_v2_job_iam_policy google_cloud_run_v2_job_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs/resources/cloud_run_v2_job_iam_policy google_cloud_run_v2_job_iam_policy} Resource.
 func NewCloudRunV2JobIamPolicy_Override(c CloudRunV2JobIamPolicy, scope constructs.Construct, id *string, config *CloudRunV2JobIamPolicyConfig) {
 	_init_.Initialize()
 
