@@ -253,10 +253,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetJsonCustomConfig", GoMethod: "ResetJsonCustomConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJsonParsing", GoMethod: "ResetJsonParsing"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLogLevel", GoMethod: "ResetLogLevel"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUserIpRequestHeaders", GoMethod: "ResetUserIpRequestHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "userIpRequestHeaders", GoGetter: "UserIpRequestHeaders"},
+			_jsii_.MemberProperty{JsiiProperty: "userIpRequestHeadersInput", GoGetter: "UserIpRequestHeadersInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference{}

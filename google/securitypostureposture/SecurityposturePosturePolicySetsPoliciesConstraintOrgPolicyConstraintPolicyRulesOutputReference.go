@@ -26,6 +26,8 @@ type SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicy
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Condition() SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionOutputReference
+	ConditionInput() *SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -37,8 +39,6 @@ type SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicy
 	Enforce() interface{}
 	SetEnforce(val interface{})
 	EnforceInput() interface{}
-	Expr() SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesExprOutputReference
-	ExprInput() *SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesExpr
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -77,12 +77,12 @@ type SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicy
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutExpr(value *SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesExpr)
+	PutCondition(value *SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition)
 	PutValues(value *SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValues)
 	ResetAllowAll()
+	ResetCondition()
 	ResetDenyAll()
 	ResetEnforce()
-	ResetExpr()
 	ResetValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -139,6 +139,26 @@ func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCo
 	return returns
 }
 
+func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) Condition() SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionOutputReference {
+	var returns SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionOutputReference
+	_jsii_.Get(
+		j,
+		"condition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) ConditionInput() *SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition {
+	var returns *SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition
+	_jsii_.Get(
+		j,
+		"conditionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -184,26 +204,6 @@ func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCo
 	_jsii_.Get(
 		j,
 		"enforceInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) Expr() SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesExprOutputReference {
-	var returns SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesExprOutputReference
-	_jsii_.Get(
-		j,
-		"expr",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) ExprInput() *SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesExpr {
-	var returns *SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesExpr
-	_jsii_.Get(
-		j,
-		"exprInput",
 		&returns,
 	)
 	return returns
@@ -571,13 +571,13 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCo
 	return returns
 }
 
-func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) PutExpr(value *SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesExpr) {
-	if err := s.validatePutExprParameters(value); err != nil {
+func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) PutCondition(value *SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition) {
+	if err := s.validatePutConditionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		s,
-		"putExpr",
+		"putCondition",
 		[]interface{}{value},
 	)
 }
@@ -601,6 +601,14 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCo
 	)
 }
 
+func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) ResetCondition() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCondition",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) ResetDenyAll() {
 	_jsii_.InvokeVoid(
 		s,
@@ -613,14 +621,6 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyCo
 	_jsii_.InvokeVoid(
 		s,
 		"resetEnforce",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) ResetExpr() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetExpr",
 		nil, // no parameters
 	)
 }

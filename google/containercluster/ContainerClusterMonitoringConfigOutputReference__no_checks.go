@@ -47,7 +47,7 @@ func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) validateInte
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) validatePutAdvancedDatapathObservabilityConfigParameters(value interface{}) error {
+func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) validatePutAdvancedDatapathObservabilityConfigParameters(value *ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig) error {
 	return nil
 }
 

@@ -35,8 +35,12 @@ type EventarcTriggerDestinationOutputReference interface {
 	Fqn() *string
 	Gke() EventarcTriggerDestinationGkeOutputReference
 	GkeInput() *EventarcTriggerDestinationGke
+	HttpEndpoint() EventarcTriggerDestinationHttpEndpointOutputReference
+	HttpEndpointInput() *EventarcTriggerDestinationHttpEndpoint
 	InternalValue() *EventarcTriggerDestination
 	SetInternalValue(val *EventarcTriggerDestination)
+	NetworkConfig() EventarcTriggerDestinationNetworkConfigOutputReference
+	NetworkConfigInput() *EventarcTriggerDestinationNetworkConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -74,8 +78,12 @@ type EventarcTriggerDestinationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudRunService(value *EventarcTriggerDestinationCloudRunService)
 	PutGke(value *EventarcTriggerDestinationGke)
+	PutHttpEndpoint(value *EventarcTriggerDestinationHttpEndpoint)
+	PutNetworkConfig(value *EventarcTriggerDestinationNetworkConfig)
 	ResetCloudRunService()
 	ResetGke()
+	ResetHttpEndpoint()
+	ResetNetworkConfig()
 	ResetWorkflow()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -182,11 +190,51 @@ func (j *jsiiProxy_EventarcTriggerDestinationOutputReference) GkeInput() *Eventa
 	return returns
 }
 
+func (j *jsiiProxy_EventarcTriggerDestinationOutputReference) HttpEndpoint() EventarcTriggerDestinationHttpEndpointOutputReference {
+	var returns EventarcTriggerDestinationHttpEndpointOutputReference
+	_jsii_.Get(
+		j,
+		"httpEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventarcTriggerDestinationOutputReference) HttpEndpointInput() *EventarcTriggerDestinationHttpEndpoint {
+	var returns *EventarcTriggerDestinationHttpEndpoint
+	_jsii_.Get(
+		j,
+		"httpEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EventarcTriggerDestinationOutputReference) InternalValue() *EventarcTriggerDestination {
 	var returns *EventarcTriggerDestination
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventarcTriggerDestinationOutputReference) NetworkConfig() EventarcTriggerDestinationNetworkConfigOutputReference {
+	var returns EventarcTriggerDestinationNetworkConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EventarcTriggerDestinationOutputReference) NetworkConfigInput() *EventarcTriggerDestinationNetworkConfig {
+	var returns *EventarcTriggerDestinationNetworkConfig
+	_jsii_.Get(
+		j,
+		"networkConfigInput",
 		&returns,
 	)
 	return returns
@@ -534,6 +582,28 @@ func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) PutGke(value *Even
 	)
 }
 
+func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) PutHttpEndpoint(value *EventarcTriggerDestinationHttpEndpoint) {
+	if err := e.validatePutHttpEndpointParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putHttpEndpoint",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) PutNetworkConfig(value *EventarcTriggerDestinationNetworkConfig) {
+	if err := e.validatePutNetworkConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putNetworkConfig",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) ResetCloudRunService() {
 	_jsii_.InvokeVoid(
 		e,
@@ -546,6 +616,22 @@ func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) ResetGke() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetGke",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) ResetHttpEndpoint() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetHttpEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) ResetNetworkConfig() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetNetworkConfig",
 		nil, // no parameters
 	)
 }

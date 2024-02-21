@@ -83,6 +83,10 @@ func (j *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) validateSetUserIpRequestHeadersParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewComputeSecurityPolicyAdvancedOptionsConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

@@ -29,6 +29,7 @@ type DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConf
 	// Experimental.
 	CreationStack() *[]*string
 	EnableMetrics() cdktf.IResolvable
+	EnableRelay() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig
@@ -116,6 +117,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObs
 	_jsii_.Get(
 		j,
 		"enableMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) EnableRelay() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableRelay",
 		&returns,
 	)
 	return returns

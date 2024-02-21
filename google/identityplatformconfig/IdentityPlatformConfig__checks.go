@@ -218,6 +218,50 @@ func (i *jsiiProxy_IdentityPlatformConfig) validatePutBlockingFunctionsParameter
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformConfig) validatePutClientParameters(value *IdentityPlatformConfigClient) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) validatePutMfaParameters(value *IdentityPlatformConfigMfa) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) validatePutMonitoringParameters(value *IdentityPlatformConfigMonitoring) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) validatePutMultiTenantParameters(value *IdentityPlatformConfigMultiTenant) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformConfig) validatePutQuotaParameters(value *IdentityPlatformConfigQuota) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

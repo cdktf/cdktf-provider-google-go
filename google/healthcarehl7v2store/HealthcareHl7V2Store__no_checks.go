@@ -139,6 +139,10 @@ func (j *jsiiProxy_HealthcareHl7V2Store) validateSetProvisionersParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareHl7V2Store) validateSetRejectDuplicateMessageParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewHealthcareHl7V2StoreParameters(scope constructs.Construct, id *string, config *HealthcareHl7V2StoreConfig) error {
 	return nil
 }

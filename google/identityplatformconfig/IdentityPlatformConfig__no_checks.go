@@ -79,6 +79,22 @@ func (i *jsiiProxy_IdentityPlatformConfig) validatePutBlockingFunctionsParameter
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformConfig) validatePutClientParameters(value *IdentityPlatformConfigClient) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) validatePutMfaParameters(value *IdentityPlatformConfigMfa) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) validatePutMonitoringParameters(value *IdentityPlatformConfigMonitoring) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformConfig) validatePutMultiTenantParameters(value *IdentityPlatformConfigMultiTenant) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformConfig) validatePutQuotaParameters(value *IdentityPlatformConfigQuota) error {
 	return nil
 }

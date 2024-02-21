@@ -48,6 +48,9 @@ type ComputeSecurityPolicyAdvancedOptionsConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UserIpRequestHeaders() *[]*string
+	SetUserIpRequestHeaders(val *[]*string)
+	UserIpRequestHeadersInput() *[]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,6 +79,7 @@ type ComputeSecurityPolicyAdvancedOptionsConfigOutputReference interface {
 	ResetJsonCustomConfig()
 	ResetJsonParsing()
 	ResetLogLevel()
+	ResetUserIpRequestHeaders()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -221,6 +225,26 @@ func (j *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) Te
 	return returns
 }
 
+func (j *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) UserIpRequestHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"userIpRequestHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) UserIpRequestHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"userIpRequestHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewComputeSecurityPolicyAdvancedOptionsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeSecurityPolicyAdvancedOptionsConfigOutputReference {
 	_init_.Initialize()
@@ -322,6 +346,17 @@ func (j *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference)Set
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference)SetUserIpRequestHeaders(val *[]*string) {
+	if err := j.validateSetUserIpRequestHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userIpRequestHeaders",
 		val,
 	)
 }
@@ -543,6 +578,14 @@ func (c *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) Re
 	_jsii_.InvokeVoid(
 		c,
 		"resetLogLevel",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigOutputReference) ResetUserIpRequestHeaders() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUserIpRequestHeaders",
 		nil, // no parameters
 	)
 }

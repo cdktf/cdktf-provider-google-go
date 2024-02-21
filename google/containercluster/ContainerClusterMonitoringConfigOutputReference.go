@@ -13,8 +13,8 @@ import (
 
 type ContainerClusterMonitoringConfigOutputReference interface {
 	cdktf.ComplexObject
-	AdvancedDatapathObservabilityConfig() ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList
-	AdvancedDatapathObservabilityConfigInput() interface{}
+	AdvancedDatapathObservabilityConfig() ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference
+	AdvancedDatapathObservabilityConfigInput() *ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -71,7 +71,7 @@ type ContainerClusterMonitoringConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAdvancedDatapathObservabilityConfig(value interface{})
+	PutAdvancedDatapathObservabilityConfig(value *ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig)
 	PutManagedPrometheus(value *ContainerClusterMonitoringConfigManagedPrometheus)
 	ResetAdvancedDatapathObservabilityConfig()
 	ResetEnableComponents()
@@ -91,8 +91,8 @@ type jsiiProxy_ContainerClusterMonitoringConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) AdvancedDatapathObservabilityConfig() ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList {
-	var returns ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList
+func (j *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) AdvancedDatapathObservabilityConfig() ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference {
+	var returns ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference
 	_jsii_.Get(
 		j,
 		"advancedDatapathObservabilityConfig",
@@ -101,8 +101,8 @@ func (j *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) AdvancedData
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) AdvancedDatapathObservabilityConfigInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) AdvancedDatapathObservabilityConfigInput() *ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig {
+	var returns *ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig
 	_jsii_.Get(
 		j,
 		"advancedDatapathObservabilityConfigInput",
@@ -501,7 +501,7 @@ func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) Interpolatio
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) PutAdvancedDatapathObservabilityConfig(value interface{}) {
+func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) PutAdvancedDatapathObservabilityConfig(value *ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig) {
 	if err := c.validatePutAdvancedDatapathObservabilityConfigParameters(value); err != nil {
 		panic(err)
 	}

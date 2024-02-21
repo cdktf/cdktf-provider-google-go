@@ -79,6 +79,10 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) validatePutBigQuerySou
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) validatePutFeatureRegistrySourceParameters(value *VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySource) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) validatePutSyncConfigParameters(value *VertexAiFeatureOnlineStoreFeatureviewSyncConfig) error {
 	return nil
 }

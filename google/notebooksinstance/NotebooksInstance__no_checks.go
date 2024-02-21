@@ -147,6 +147,10 @@ func (j *jsiiProxy_NotebooksInstance) validateSetDataDiskTypeParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_NotebooksInstance) validateSetDesiredStateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NotebooksInstance) validateSetDiskEncryptionParameters(val *string) error {
 	return nil
 }

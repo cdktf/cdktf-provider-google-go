@@ -218,6 +218,17 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) validatePutBigQuerySou
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) validatePutFeatureRegistrySourceParameters(value *VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySource) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) validatePutSyncConfigParameters(value *VertexAiFeatureOnlineStoreFeatureviewSyncConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

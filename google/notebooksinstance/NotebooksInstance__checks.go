@@ -451,6 +451,14 @@ func (j *jsiiProxy_NotebooksInstance) validateSetDataDiskTypeParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_NotebooksInstance) validateSetDesiredStateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NotebooksInstance) validateSetDiskEncryptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

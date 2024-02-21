@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs/resources/vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.17.0/docs/resources/vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview}.
 type VertexAiFeatureOnlineStoreFeatureview interface {
 	cdktf.TerraformResource
 	BigQuerySource() VertexAiFeatureOnlineStoreFeatureviewBigQuerySourceOutputReference
@@ -38,6 +38,8 @@ type VertexAiFeatureOnlineStoreFeatureview interface {
 	FeatureOnlineStore() *string
 	SetFeatureOnlineStore(val *string)
 	FeatureOnlineStoreInput() *string
+	FeatureRegistrySource() VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference
+	FeatureRegistrySourceInput() *VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySource
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -133,9 +135,11 @@ type VertexAiFeatureOnlineStoreFeatureview interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBigQuerySource(value *VertexAiFeatureOnlineStoreFeatureviewBigQuerySource)
+	PutFeatureRegistrySource(value *VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySource)
 	PutSyncConfig(value *VertexAiFeatureOnlineStoreFeatureviewSyncConfig)
 	PutTimeouts(value *VertexAiFeatureOnlineStoreFeatureviewTimeouts)
 	ResetBigQuerySource()
+	ResetFeatureRegistrySource()
 	ResetId()
 	ResetLabels()
 	ResetName()
@@ -268,6 +272,26 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) FeatureOnlineStoreInpu
 	_jsii_.Get(
 		j,
 		"featureOnlineStoreInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) FeatureRegistrySource() VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference {
+	var returns VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference
+	_jsii_.Get(
+		j,
+		"featureRegistrySource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) FeatureRegistrySourceInput() *VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySource {
+	var returns *VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySource
+	_jsii_.Get(
+		j,
+		"featureRegistrySourceInput",
 		&returns,
 	)
 	return returns
@@ -544,7 +568,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs/resources/vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.17.0/docs/resources/vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource.
 func NewVertexAiFeatureOnlineStoreFeatureview(scope constructs.Construct, id *string, config *VertexAiFeatureOnlineStoreFeatureviewConfig) VertexAiFeatureOnlineStoreFeatureview {
 	_init_.Initialize()
 
@@ -562,7 +586,7 @@ func NewVertexAiFeatureOnlineStoreFeatureview(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.16.0/docs/resources/vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.17.0/docs/resources/vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource.
 func NewVertexAiFeatureOnlineStoreFeatureview_Override(v VertexAiFeatureOnlineStoreFeatureview, scope constructs.Construct, id *string, config *VertexAiFeatureOnlineStoreFeatureviewConfig) {
 	_init_.Initialize()
 
@@ -1071,6 +1095,17 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) PutBigQuerySource(valu
 	)
 }
 
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) PutFeatureRegistrySource(value *VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySource) {
+	if err := v.validatePutFeatureRegistrySourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putFeatureRegistrySource",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) PutSyncConfig(value *VertexAiFeatureOnlineStoreFeatureviewSyncConfig) {
 	if err := v.validatePutSyncConfigParameters(value); err != nil {
 		panic(err)
@@ -1097,6 +1132,14 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) ResetBigQuerySource() 
 	_jsii_.InvokeVoid(
 		v,
 		"resetBigQuerySource",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureview) ResetFeatureRegistrySource() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetFeatureRegistrySource",
 		nil, // no parameters
 	)
 }
