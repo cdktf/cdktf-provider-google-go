@@ -74,7 +74,6 @@ type SecurityposturePosturePolicySetsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPolicies(value interface{})
 	ResetDescription()
-	ResetPolicies()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -526,14 +525,6 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsOutputReference) ResetDescrip
 	_jsii_.InvokeVoid(
 		s,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecurityposturePosturePolicySetsOutputReference) ResetPolicies() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetPolicies",
 		nil, // no parameters
 	)
 }

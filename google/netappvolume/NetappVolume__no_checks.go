@@ -79,6 +79,10 @@ func (n *jsiiProxy_NetappVolume) validatePutExportPolicyParameters(value *Netapp
 	return nil
 }
 
+func (n *jsiiProxy_NetappVolume) validatePutRestoreParametersParameters(value *NetappVolumeRestoreParameters) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolume) validatePutSnapshotPolicyParameters(value *NetappVolumeSnapshotPolicy) error {
 	return nil
 }

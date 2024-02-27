@@ -27,6 +27,8 @@ type WorkbenchInstanceGceSetupOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ContainerImage() WorkbenchInstanceGceSetupContainerImageOutputReference
+	ContainerImageInput() *WorkbenchInstanceGceSetupContainerImage
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -54,6 +56,8 @@ type WorkbenchInstanceGceSetupOutputReference interface {
 	NetworkInterfacesInput() interface{}
 	ServiceAccounts() WorkbenchInstanceGceSetupServiceAccountsList
 	ServiceAccountsInput() interface{}
+	ShieldedInstanceConfig() WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference
+	ShieldedInstanceConfigInput() *WorkbenchInstanceGceSetupShieldedInstanceConfig
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
@@ -93,12 +97,15 @@ type WorkbenchInstanceGceSetupOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAcceleratorConfigs(value interface{})
 	PutBootDisk(value *WorkbenchInstanceGceSetupBootDisk)
+	PutContainerImage(value *WorkbenchInstanceGceSetupContainerImage)
 	PutDataDisks(value *WorkbenchInstanceGceSetupDataDisks)
 	PutNetworkInterfaces(value interface{})
 	PutServiceAccounts(value interface{})
+	PutShieldedInstanceConfig(value *WorkbenchInstanceGceSetupShieldedInstanceConfig)
 	PutVmImage(value *WorkbenchInstanceGceSetupVmImage)
 	ResetAcceleratorConfigs()
 	ResetBootDisk()
+	ResetContainerImage()
 	ResetDataDisks()
 	ResetDisablePublicIp()
 	ResetEnableIpForwarding()
@@ -106,6 +113,7 @@ type WorkbenchInstanceGceSetupOutputReference interface {
 	ResetMetadata()
 	ResetNetworkInterfaces()
 	ResetServiceAccounts()
+	ResetShieldedInstanceConfig()
 	ResetTags()
 	ResetVmImage()
 	// Produce the Token's value at resolution time.
@@ -178,6 +186,26 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ComplexObjectIsFrom
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ContainerImage() WorkbenchInstanceGceSetupContainerImageOutputReference {
+	var returns WorkbenchInstanceGceSetupContainerImageOutputReference
+	_jsii_.Get(
+		j,
+		"containerImage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ContainerImageInput() *WorkbenchInstanceGceSetupContainerImage {
+	var returns *WorkbenchInstanceGceSetupContainerImage
+	_jsii_.Get(
+		j,
+		"containerImageInput",
 		&returns,
 	)
 	return returns
@@ -348,6 +376,26 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ServiceAccountsInpu
 	_jsii_.Get(
 		j,
 		"serviceAccountsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ShieldedInstanceConfig() WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference {
+	var returns WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"shieldedInstanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ShieldedInstanceConfigInput() *WorkbenchInstanceGceSetupShieldedInstanceConfig {
+	var returns *WorkbenchInstanceGceSetupShieldedInstanceConfig
+	_jsii_.Get(
+		j,
+		"shieldedInstanceConfigInput",
 		&returns,
 	)
 	return returns
@@ -759,6 +807,17 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutBootDisk(value *
 	)
 }
 
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutContainerImage(value *WorkbenchInstanceGceSetupContainerImage) {
+	if err := w.validatePutContainerImageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putContainerImage",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutDataDisks(value *WorkbenchInstanceGceSetupDataDisks) {
 	if err := w.validatePutDataDisksParameters(value); err != nil {
 		panic(err)
@@ -792,6 +851,17 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutServiceAccounts(
 	)
 }
 
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutShieldedInstanceConfig(value *WorkbenchInstanceGceSetupShieldedInstanceConfig) {
+	if err := w.validatePutShieldedInstanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putShieldedInstanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutVmImage(value *WorkbenchInstanceGceSetupVmImage) {
 	if err := w.validatePutVmImageParameters(value); err != nil {
 		panic(err)
@@ -815,6 +885,14 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ResetBootDisk() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetBootDisk",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ResetContainerImage() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetContainerImage",
 		nil, // no parameters
 	)
 }
@@ -871,6 +949,14 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ResetServiceAccount
 	_jsii_.InvokeVoid(
 		w,
 		"resetServiceAccounts",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ResetShieldedInstanceConfig() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetShieldedInstanceConfig",
 		nil, // no parameters
 	)
 }

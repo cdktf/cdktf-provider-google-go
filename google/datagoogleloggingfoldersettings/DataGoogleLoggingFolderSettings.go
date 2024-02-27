@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.17.0/docs/data-sources/logging_folder_settings google_logging_folder_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/data-sources/logging_folder_settings google_logging_folder_settings}.
 type DataGoogleLoggingFolderSettings interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataGoogleLoggingFolderSettings) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.17.0/docs/data-sources/logging_folder_settings google_logging_folder_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/data-sources/logging_folder_settings google_logging_folder_settings} Data Source.
 func NewDataGoogleLoggingFolderSettings(scope constructs.Construct, id *string, config *DataGoogleLoggingFolderSettingsConfig) DataGoogleLoggingFolderSettings {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataGoogleLoggingFolderSettings(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.17.0/docs/data-sources/logging_folder_settings google_logging_folder_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/data-sources/logging_folder_settings google_logging_folder_settings} Data Source.
 func NewDataGoogleLoggingFolderSettings_Override(d DataGoogleLoggingFolderSettings, scope constructs.Construct, id *string, config *DataGoogleLoggingFolderSettingsConfig) {
 	_init_.Initialize()
 

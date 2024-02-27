@@ -514,6 +514,14 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSetServiceAccountParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

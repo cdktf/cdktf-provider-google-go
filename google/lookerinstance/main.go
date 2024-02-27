@@ -25,6 +25,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "consumerNetworkInput", GoGetter: "ConsumerNetworkInput"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "createTime", GoGetter: "CreateTime"},
+			_jsii_.MemberProperty{JsiiProperty: "customDomain", GoGetter: "CustomDomain"},
+			_jsii_.MemberProperty{JsiiProperty: "customDomainInput", GoGetter: "CustomDomainInput"},
 			_jsii_.MemberProperty{JsiiProperty: "denyMaintenancePeriod", GoGetter: "DenyMaintenancePeriod"},
 			_jsii_.MemberProperty{JsiiProperty: "denyMaintenancePeriodInput", GoGetter: "DenyMaintenancePeriodInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
@@ -75,6 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publicIpEnabled", GoGetter: "PublicIpEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "publicIpEnabledInput", GoGetter: "PublicIpEnabledInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAdminSettings", GoMethod: "PutAdminSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomDomain", GoMethod: "PutCustomDomain"},
 			_jsii_.MemberMethod{JsiiMethod: "putDenyMaintenancePeriod", GoMethod: "PutDenyMaintenancePeriod"},
 			_jsii_.MemberMethod{JsiiMethod: "putEncryptionConfig", GoMethod: "PutEncryptionConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putMaintenanceWindow", GoMethod: "PutMaintenanceWindow"},
@@ -88,6 +91,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "reservedRangeInput", GoGetter: "ReservedRangeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdminSettings", GoMethod: "ResetAdminSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConsumerNetwork", GoMethod: "ResetConsumerNetwork"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomDomain", GoMethod: "ResetCustomDomain"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDenyMaintenancePeriod", GoMethod: "ResetDenyMaintenancePeriod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEncryptionConfig", GoMethod: "ResetEncryptionConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -165,6 +169,46 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.lookerInstance.LookerInstanceConfig",
 		reflect.TypeOf((*LookerInstanceConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.lookerInstance.LookerInstanceCustomDomain",
+		reflect.TypeOf((*LookerInstanceCustomDomain)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.lookerInstance.LookerInstanceCustomDomainOutputReference",
+		reflect.TypeOf((*LookerInstanceCustomDomainOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "domain", GoGetter: "Domain"},
+			_jsii_.MemberProperty{JsiiProperty: "domainInput", GoGetter: "DomainInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDomain", GoMethod: "ResetDomain"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LookerInstanceCustomDomainOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriod",

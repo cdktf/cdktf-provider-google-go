@@ -23,6 +23,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "createTime", GoGetter: "CreateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "deletionPolicy", GoGetter: "DeletionPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "deletionPolicyInput", GoGetter: "DeletionPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
@@ -76,6 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "psaRange", GoGetter: "PsaRange"},
 			_jsii_.MemberMethod{JsiiMethod: "putExportPolicy", GoMethod: "PutExportPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "putRestoreParameters", GoMethod: "PutRestoreParameters"},
 			_jsii_.MemberMethod{JsiiMethod: "putSnapshotPolicy", GoMethod: "PutSnapshotPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -87,6 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRestoreParameters", GoMethod: "ResetRestoreParameters"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRestrictedActions", GoMethod: "ResetRestrictedActions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecurityStyle", GoMethod: "ResetSecurityStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSmbSettings", GoMethod: "ResetSmbSettings"},
@@ -94,6 +97,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSnapshotPolicy", GoMethod: "ResetSnapshotPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUnixPermissions", GoMethod: "ResetUnixPermissions"},
+			_jsii_.MemberProperty{JsiiProperty: "restoreParameters", GoGetter: "RestoreParameters"},
+			_jsii_.MemberProperty{JsiiProperty: "restoreParametersInput", GoGetter: "RestoreParametersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "restrictedActions", GoGetter: "RestrictedActions"},
 			_jsii_.MemberProperty{JsiiProperty: "restrictedActionsInput", GoGetter: "RestrictedActionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "securityStyle", GoGetter: "SecurityStyle"},
@@ -107,6 +112,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "snapshotDirectoryInput", GoGetter: "SnapshotDirectoryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "snapshotPolicy", GoGetter: "SnapshotPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "snapshotPolicyInput", GoGetter: "SnapshotPolicyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
+			_jsii_.MemberProperty{JsiiProperty: "stateDetails", GoGetter: "StateDetails"},
 			_jsii_.MemberProperty{JsiiProperty: "storagePool", GoGetter: "StoragePool"},
 			_jsii_.MemberProperty{JsiiProperty: "storagePoolInput", GoGetter: "StoragePoolInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -322,6 +329,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeMountOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.netappVolume.NetappVolumeRestoreParameters",
+		reflect.TypeOf((*NetappVolumeRestoreParameters)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.netappVolume.NetappVolumeRestoreParametersOutputReference",
+		reflect.TypeOf((*NetappVolumeRestoreParametersOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceBackup", GoMethod: "ResetSourceBackup"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceSnapshot", GoMethod: "ResetSourceSnapshot"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceBackup", GoGetter: "SourceBackup"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceBackupInput", GoGetter: "SourceBackupInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceSnapshot", GoGetter: "SourceSnapshot"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceSnapshotInput", GoGetter: "SourceSnapshotInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_NetappVolumeRestoreParametersOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

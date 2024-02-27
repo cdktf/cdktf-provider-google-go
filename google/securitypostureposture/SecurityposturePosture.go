@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.17.0/docs/resources/securityposture_posture google_securityposture_posture}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/securityposture_posture google_securityposture_posture}.
 type SecurityposturePosture interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -139,7 +139,6 @@ type SecurityposturePosture interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPolicySets()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -540,7 +539,7 @@ func (j *jsiiProxy_SecurityposturePosture) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.17.0/docs/resources/securityposture_posture google_securityposture_posture} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/securityposture_posture google_securityposture_posture} Resource.
 func NewSecurityposturePosture(scope constructs.Construct, id *string, config *SecurityposturePostureConfig) SecurityposturePosture {
 	_init_.Initialize()
 
@@ -558,7 +557,7 @@ func NewSecurityposturePosture(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.17.0/docs/resources/securityposture_posture google_securityposture_posture} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/securityposture_posture google_securityposture_posture} Resource.
 func NewSecurityposturePosture_Override(s SecurityposturePosture, scope constructs.Construct, id *string, config *SecurityposturePostureConfig) {
 	_init_.Initialize()
 
@@ -1098,14 +1097,6 @@ func (s *jsiiProxy_SecurityposturePosture) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecurityposturePosture) ResetPolicySets() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetPolicySets",
 		nil, // no parameters
 	)
 }

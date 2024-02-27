@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.17.0/docs/resources/looker_instance google_looker_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/looker_instance google_looker_instance}.
 type LookerInstance interface {
 	cdktf.TerraformResource
 	AdminSettings() LookerInstanceAdminSettingsOutputReference
@@ -33,6 +33,8 @@ type LookerInstance interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	CustomDomain() LookerInstanceCustomDomainOutputReference
+	CustomDomainInput() *LookerInstanceCustomDomain
 	DenyMaintenancePeriod() LookerInstanceDenyMaintenancePeriodOutputReference
 	DenyMaintenancePeriodInput() *LookerInstanceDenyMaintenancePeriod
 	// Experimental.
@@ -153,6 +155,7 @@ type LookerInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAdminSettings(value *LookerInstanceAdminSettings)
+	PutCustomDomain(value *LookerInstanceCustomDomain)
 	PutDenyMaintenancePeriod(value *LookerInstanceDenyMaintenancePeriod)
 	PutEncryptionConfig(value *LookerInstanceEncryptionConfig)
 	PutMaintenanceWindow(value *LookerInstanceMaintenanceWindow)
@@ -161,6 +164,7 @@ type LookerInstance interface {
 	PutUserMetadata(value *LookerInstanceUserMetadata)
 	ResetAdminSettings()
 	ResetConsumerNetwork()
+	ResetCustomDomain()
 	ResetDenyMaintenancePeriod()
 	ResetEncryptionConfig()
 	ResetId()
@@ -280,6 +284,26 @@ func (j *jsiiProxy_LookerInstance) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) CustomDomain() LookerInstanceCustomDomainOutputReference {
+	var returns LookerInstanceCustomDomainOutputReference
+	_jsii_.Get(
+		j,
+		"customDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) CustomDomainInput() *LookerInstanceCustomDomain {
+	var returns *LookerInstanceCustomDomain
+	_jsii_.Get(
+		j,
+		"customDomainInput",
 		&returns,
 	)
 	return returns
@@ -746,7 +770,7 @@ func (j *jsiiProxy_LookerInstance) UserMetadataInput() *LookerInstanceUserMetada
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.17.0/docs/resources/looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/looker_instance google_looker_instance} Resource.
 func NewLookerInstance(scope constructs.Construct, id *string, config *LookerInstanceConfig) LookerInstance {
 	_init_.Initialize()
 
@@ -764,7 +788,7 @@ func NewLookerInstance(scope constructs.Construct, id *string, config *LookerIns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.17.0/docs/resources/looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/looker_instance google_looker_instance} Resource.
 func NewLookerInstance_Override(l LookerInstance, scope constructs.Construct, id *string, config *LookerInstanceConfig) {
 	_init_.Initialize()
 
@@ -1306,6 +1330,17 @@ func (l *jsiiProxy_LookerInstance) PutAdminSettings(value *LookerInstanceAdminSe
 	)
 }
 
+func (l *jsiiProxy_LookerInstance) PutCustomDomain(value *LookerInstanceCustomDomain) {
+	if err := l.validatePutCustomDomainParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putCustomDomain",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LookerInstance) PutDenyMaintenancePeriod(value *LookerInstanceDenyMaintenancePeriod) {
 	if err := l.validatePutDenyMaintenancePeriodParameters(value); err != nil {
 		panic(err)
@@ -1384,6 +1419,14 @@ func (l *jsiiProxy_LookerInstance) ResetConsumerNetwork() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetConsumerNetwork",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LookerInstance) ResetCustomDomain() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetCustomDomain",
 		nil, // no parameters
 	)
 }

@@ -183,6 +183,10 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetResour
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetResourceManagerTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetServiceAccountParameters(val *string) error {
 	return nil
 }

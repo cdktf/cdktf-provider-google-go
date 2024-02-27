@@ -135,6 +135,17 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutBootDisk
 	return nil
 }
 
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutContainerImageParameters(value *WorkbenchInstanceGceSetupContainerImage) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutDataDisksParameters(value *WorkbenchInstanceGceSetupDataDisks) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -203,6 +214,17 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutServiceA
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WorkbenchInstanceGceSetupServiceAccounts; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutShieldedInstanceConfigParameters(value *WorkbenchInstanceGceSetupShieldedInstanceConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

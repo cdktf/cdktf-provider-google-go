@@ -55,6 +55,10 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutBootDisk
 	return nil
 }
 
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutContainerImageParameters(value *WorkbenchInstanceGceSetupContainerImage) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutDataDisksParameters(value *WorkbenchInstanceGceSetupDataDisks) error {
 	return nil
 }
@@ -64,6 +68,10 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutNetworkI
 }
 
 func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutServiceAccountsParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutShieldedInstanceConfigParameters(value *WorkbenchInstanceGceSetupShieldedInstanceConfig) error {
 	return nil
 }
 

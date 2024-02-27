@@ -99,6 +99,9 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResourceLabels() *map[string]*string
 	SetResourceLabels(val *map[string]*string)
 	ResourceLabelsInput() *map[string]*string
+	ResourceManagerTags() *map[string]*string
+	SetResourceManagerTags(val *map[string]*string)
+	ResourceManagerTagsInput() *map[string]*string
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -190,6 +193,7 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetPreemptible()
 	ResetReservationAffinity()
 	ResetResourceLabels()
+	ResetResourceManagerTags()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
 	ResetSoleTenantConfig()
@@ -792,6 +796,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResourceLa
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResourceManagerTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceManagerTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResourceManagerTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceManagerTagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ServiceAccount() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1163,6 +1187,17 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference)SetResource
 	_jsii_.Set(
 		j,
 		"resourceLabels",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference)SetResourceManagerTags(val *map[string]*string) {
+	if err := j.validateSetResourceManagerTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceManagerTags",
 		val,
 	)
 }
@@ -1788,6 +1823,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetResou
 	_jsii_.InvokeVoid(
 		c,
 		"resetResourceLabels",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetResourceManagerTags() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetResourceManagerTags",
 		nil, // no parameters
 	)
 }

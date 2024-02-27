@@ -59,6 +59,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	Preemptible() cdktf.IResolvable
 	ReservationAffinity() DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityList
 	ResourceLabels() cdktf.StringMap
+	ResourceManagerTags() cdktf.StringMap
 	ServiceAccount() *string
 	ShieldedInstanceConfig() DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList
 	SoleTenantConfig() DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList
@@ -428,6 +429,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"resourceLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) ResourceManagerTags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"resourceManagerTags",
 		&returns,
 	)
 	return returns

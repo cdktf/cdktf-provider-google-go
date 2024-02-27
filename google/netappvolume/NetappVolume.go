@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.17.0/docs/resources/netapp_volume google_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/netapp_volume google_netapp_volume}.
 type NetappVolume interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
@@ -31,6 +31,7 @@ type NetappVolume interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateTime() *string
 	DeletionPolicy() *string
 	SetDeletionPolicy(val *string)
 	DeletionPolicyInput() *string
@@ -96,6 +97,8 @@ type NetappVolume interface {
 	PsaRange() *string
 	// Experimental.
 	RawOverrides() interface{}
+	RestoreParameters() NetappVolumeRestoreParametersOutputReference
+	RestoreParametersInput() *NetappVolumeRestoreParameters
 	RestrictedActions() *[]*string
 	SetRestrictedActions(val *[]*string)
 	RestrictedActionsInput() *[]*string
@@ -114,6 +117,8 @@ type NetappVolume interface {
 	SnapshotDirectoryInput() interface{}
 	SnapshotPolicy() NetappVolumeSnapshotPolicyOutputReference
 	SnapshotPolicyInput() *NetappVolumeSnapshotPolicy
+	State() *string
+	StateDetails() *string
 	StoragePool() *string
 	SetStoragePool(val *string)
 	StoragePoolInput() *string
@@ -174,6 +179,7 @@ type NetappVolume interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutExportPolicy(value *NetappVolumeExportPolicy)
+	PutRestoreParameters(value *NetappVolumeRestoreParameters)
 	PutSnapshotPolicy(value *NetappVolumeSnapshotPolicy)
 	PutTimeouts(value *NetappVolumeTimeouts)
 	ResetDeletionPolicy()
@@ -186,6 +192,7 @@ type NetappVolume interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRestoreParameters()
 	ResetRestrictedActions()
 	ResetSecurityStyle()
 	ResetSmbSettings()
@@ -276,6 +283,16 @@ func (j *jsiiProxy_NetappVolume) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) CreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createTime",
 		&returns,
 	)
 	return returns
@@ -651,6 +668,26 @@ func (j *jsiiProxy_NetappVolume) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NetappVolume) RestoreParameters() NetappVolumeRestoreParametersOutputReference {
+	var returns NetappVolumeRestoreParametersOutputReference
+	_jsii_.Get(
+		j,
+		"restoreParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) RestoreParametersInput() *NetappVolumeRestoreParameters {
+	var returns *NetappVolumeRestoreParameters
+	_jsii_.Get(
+		j,
+		"restoreParametersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetappVolume) RestrictedActions() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -781,6 +818,26 @@ func (j *jsiiProxy_NetappVolume) SnapshotPolicyInput() *NetappVolumeSnapshotPoli
 	return returns
 }
 
+func (j *jsiiProxy_NetappVolume) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) StateDetails() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stateDetails",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetappVolume) StoragePool() *string {
 	var returns *string
 	_jsii_.Get(
@@ -892,7 +949,7 @@ func (j *jsiiProxy_NetappVolume) UsedGib() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.17.0/docs/resources/netapp_volume google_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/netapp_volume google_netapp_volume} Resource.
 func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolumeConfig) NetappVolume {
 	_init_.Initialize()
 
@@ -910,7 +967,7 @@ func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolum
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.17.0/docs/resources/netapp_volume google_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/netapp_volume google_netapp_volume} Resource.
 func NewNetappVolume_Override(n NetappVolume, scope constructs.Construct, id *string, config *NetappVolumeConfig) {
 	_init_.Initialize()
 
@@ -1540,6 +1597,17 @@ func (n *jsiiProxy_NetappVolume) PutExportPolicy(value *NetappVolumeExportPolicy
 	)
 }
 
+func (n *jsiiProxy_NetappVolume) PutRestoreParameters(value *NetappVolumeRestoreParameters) {
+	if err := n.validatePutRestoreParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putRestoreParameters",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetappVolume) PutSnapshotPolicy(value *NetappVolumeSnapshotPolicy) {
 	if err := n.validatePutSnapshotPolicyParameters(value); err != nil {
 		panic(err)
@@ -1622,6 +1690,14 @@ func (n *jsiiProxy_NetappVolume) ResetProject() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolume) ResetRestoreParameters() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRestoreParameters",
 		nil, // no parameters
 	)
 }
