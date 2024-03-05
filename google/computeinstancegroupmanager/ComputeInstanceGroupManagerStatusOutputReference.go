@@ -13,6 +13,7 @@ import (
 
 type ComputeInstanceGroupManagerStatusOutputReference interface {
 	cdktf.ComplexObject
+	AllInstancesConfig() ComputeInstanceGroupManagerStatusAllInstancesConfigList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -80,6 +81,16 @@ type ComputeInstanceGroupManagerStatusOutputReference interface {
 // The jsii proxy struct for ComputeInstanceGroupManagerStatusOutputReference
 type jsiiProxy_ComputeInstanceGroupManagerStatusOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManagerStatusOutputReference) AllInstancesConfig() ComputeInstanceGroupManagerStatusAllInstancesConfigList {
+	var returns ComputeInstanceGroupManagerStatusAllInstancesConfigList
+	_jsii_.Get(
+		j,
+		"allInstancesConfig",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeInstanceGroupManagerStatusOutputReference) ComplexObjectIndex() interface{} {

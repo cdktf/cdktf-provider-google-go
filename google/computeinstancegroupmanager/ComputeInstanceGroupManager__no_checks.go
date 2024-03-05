@@ -75,6 +75,10 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutAllInstancesConfigParameters(value *ComputeInstanceGroupManagerAllInstancesConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutAutoHealingPoliciesParameters(value *ComputeInstanceGroupManagerAutoHealingPolicies) error {
 	return nil
 }

@@ -42,6 +42,9 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	SetDiskType(val *string)
 	DiskTypeInput() *string
 	EffectiveTaints() ContainerNodePoolNodeConfigEffectiveTaintsList
+	EnableConfidentialStorage() interface{}
+	SetEnableConfidentialStorage(val interface{})
+	EnableConfidentialStorageInput() interface{}
 	EphemeralStorageLocalSsdConfig() ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference
 	EphemeralStorageLocalSsdConfigInput() *ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig
 	FastSocket() ContainerNodePoolNodeConfigFastSocketOutputReference
@@ -172,6 +175,7 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	ResetConfidentialNodes()
 	ResetDiskSizeGb()
 	ResetDiskType()
+	ResetEnableConfidentialStorage()
 	ResetEphemeralStorageLocalSsdConfig()
 	ResetFastSocket()
 	ResetGcfsConfig()
@@ -351,6 +355,26 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) EffectiveTaints()
 	_jsii_.Get(
 		j,
 		"effectiveTaints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) EnableConfidentialStorage() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableConfidentialStorage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) EnableConfidentialStorageInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableConfidentialStorageInput",
 		&returns,
 	)
 	return returns
@@ -1059,6 +1083,17 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetDiskType(val *s
 	)
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetEnableConfidentialStorage(val interface{}) {
+	if err := j.validateSetEnableConfidentialStorageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableConfidentialStorage",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetImageType(val *string) {
 	if err := j.validateSetImageTypeParameters(val); err != nil {
 		panic(err)
@@ -1655,6 +1690,14 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetDiskType() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDiskType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetEnableConfidentialStorage() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableConfidentialStorage",
 		nil, // no parameters
 	)
 }

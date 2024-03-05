@@ -5,11 +5,11 @@ package vmwareenginesubnet
 
 
 type VmwareengineSubnetTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/vmwareengine_subnet#create VmwareengineSubnet#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.19.0/docs/resources/vmwareengine_subnet#create VmwareengineSubnet#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/vmwareengine_subnet#delete VmwareengineSubnet#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.19.0/docs/resources/vmwareengine_subnet#delete VmwareengineSubnet#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/vmwareengine_subnet#update VmwareengineSubnet#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.19.0/docs/resources/vmwareengine_subnet#update VmwareengineSubnet#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

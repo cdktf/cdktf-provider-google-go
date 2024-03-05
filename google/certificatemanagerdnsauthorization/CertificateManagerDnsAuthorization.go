@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.19.0/docs/resources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization}.
 type CertificateManagerDnsAuthorization interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -57,6 +57,9 @@ type CertificateManagerDnsAuthorization interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -131,6 +134,7 @@ type CertificateManagerDnsAuthorization interface {
 	ResetDescription()
 	ResetId()
 	ResetLabels()
+	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -344,6 +348,26 @@ func (j *jsiiProxy_CertificateManagerDnsAuthorization) Lifecycle() *cdktf.Terraf
 	return returns
 }
 
+func (j *jsiiProxy_CertificateManagerDnsAuthorization) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificateManagerDnsAuthorization) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CertificateManagerDnsAuthorization) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -485,7 +509,7 @@ func (j *jsiiProxy_CertificateManagerDnsAuthorization) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.19.0/docs/resources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Resource.
 func NewCertificateManagerDnsAuthorization(scope constructs.Construct, id *string, config *CertificateManagerDnsAuthorizationConfig) CertificateManagerDnsAuthorization {
 	_init_.Initialize()
 
@@ -503,7 +527,7 @@ func NewCertificateManagerDnsAuthorization(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.19.0/docs/resources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Resource.
 func NewCertificateManagerDnsAuthorization_Override(c CertificateManagerDnsAuthorization, scope constructs.Construct, id *string, config *CertificateManagerDnsAuthorizationConfig) {
 	_init_.Initialize()
 
@@ -603,6 +627,17 @@ func (j *jsiiProxy_CertificateManagerDnsAuthorization)SetLifecycle(val *cdktf.Te
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertificateManagerDnsAuthorization)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
 		val,
 	)
 }
@@ -1032,6 +1067,14 @@ func (c *jsiiProxy_CertificateManagerDnsAuthorization) ResetLabels() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertificateManagerDnsAuthorization) ResetLocation() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

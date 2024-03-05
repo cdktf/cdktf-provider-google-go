@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.19.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager}.
 type ComputeRegionInstanceGroupManager interface {
 	cdktf.TerraformResource
+	AllInstancesConfig() ComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference
+	AllInstancesConfigInput() *ComputeRegionInstanceGroupManagerAllInstancesConfig
 	AutoHealingPolicies() ComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference
 	AutoHealingPoliciesInput() *ComputeRegionInstanceGroupManagerAutoHealingPolicies
 	BaseInstanceName() *string
@@ -166,6 +168,7 @@ type ComputeRegionInstanceGroupManager interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAllInstancesConfig(value *ComputeRegionInstanceGroupManagerAllInstancesConfig)
 	PutAutoHealingPolicies(value *ComputeRegionInstanceGroupManagerAutoHealingPolicies)
 	PutInstanceLifecyclePolicy(value *ComputeRegionInstanceGroupManagerInstanceLifecyclePolicy)
 	PutNamedPort(value interface{})
@@ -175,6 +178,7 @@ type ComputeRegionInstanceGroupManager interface {
 	PutTimeouts(value *ComputeRegionInstanceGroupManagerTimeouts)
 	PutUpdatePolicy(value *ComputeRegionInstanceGroupManagerUpdatePolicy)
 	PutVersion(value interface{})
+	ResetAllInstancesConfig()
 	ResetAutoHealingPolicies()
 	ResetDescription()
 	ResetDistributionPolicyTargetShape()
@@ -213,6 +217,26 @@ type ComputeRegionInstanceGroupManager interface {
 // The jsii proxy struct for ComputeRegionInstanceGroupManager
 type jsiiProxy_ComputeRegionInstanceGroupManager struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) AllInstancesConfig() ComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference {
+	var returns ComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference
+	_jsii_.Get(
+		j,
+		"allInstancesConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManager) AllInstancesConfigInput() *ComputeRegionInstanceGroupManagerAllInstancesConfig {
+	var returns *ComputeRegionInstanceGroupManagerAllInstancesConfig
+	_jsii_.Get(
+		j,
+		"allInstancesConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeRegionInstanceGroupManager) AutoHealingPolicies() ComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference {
@@ -866,7 +890,7 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManager) WaitForInstancesStatusInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.19.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
 func NewComputeRegionInstanceGroupManager(scope constructs.Construct, id *string, config *ComputeRegionInstanceGroupManagerConfig) ComputeRegionInstanceGroupManager {
 	_init_.Initialize()
 
@@ -884,7 +908,7 @@ func NewComputeRegionInstanceGroupManager(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.19.0/docs/resources/compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
 func NewComputeRegionInstanceGroupManager_Override(c ComputeRegionInstanceGroupManager, scope constructs.Construct, id *string, config *ComputeRegionInstanceGroupManagerConfig) {
 	_init_.Initialize()
 
@@ -1459,6 +1483,17 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) OverrideLogicalId(newLogic
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) PutAllInstancesConfig(value *ComputeRegionInstanceGroupManagerAllInstancesConfig) {
+	if err := c.validatePutAllInstancesConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAllInstancesConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionInstanceGroupManager) PutAutoHealingPolicies(value *ComputeRegionInstanceGroupManagerAutoHealingPolicies) {
 	if err := c.validatePutAutoHealingPoliciesParameters(value); err != nil {
 		panic(err)
@@ -1555,6 +1590,14 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) PutVersion(value interface
 		c,
 		"putVersion",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) ResetAllInstancesConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAllInstancesConfig",
+		nil, // no parameters
 	)
 }
 

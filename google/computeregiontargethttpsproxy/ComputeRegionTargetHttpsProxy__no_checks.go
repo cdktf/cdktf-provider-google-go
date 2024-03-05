@@ -95,6 +95,10 @@ func validateComputeRegionTargetHttpsProxy_IsTerraformResourceParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetCertificateManagerCertificatesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

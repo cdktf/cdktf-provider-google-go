@@ -75,6 +75,10 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validateOverrideLogicalIdP
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutAllInstancesConfigParameters(value *ComputeRegionInstanceGroupManagerAllInstancesConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutAutoHealingPoliciesParameters(value *ComputeRegionInstanceGroupManagerAutoHealingPolicies) error {
 	return nil
 }

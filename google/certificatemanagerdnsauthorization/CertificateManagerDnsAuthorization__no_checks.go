@@ -123,6 +123,10 @@ func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetLifecycleParam
 	return nil
 }
 
+func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetNameParameters(val *string) error {
 	return nil
 }

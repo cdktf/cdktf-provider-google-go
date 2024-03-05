@@ -388,6 +388,14 @@ func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetLifecycleParam
 	return nil
 }
 
+func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetLocationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

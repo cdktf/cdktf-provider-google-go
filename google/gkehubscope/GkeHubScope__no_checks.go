@@ -115,6 +115,10 @@ func (j *jsiiProxy_GkeHubScope) validateSetLifecycleParameters(val *cdktf.Terraf
 	return nil
 }
 
+func (j *jsiiProxy_GkeHubScope) validateSetNamespaceLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GkeHubScope) validateSetProjectParameters(val *string) error {
 	return nil
 }

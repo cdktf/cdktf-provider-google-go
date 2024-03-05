@@ -34,6 +34,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	DiskSizeGb() *float64
 	DiskType() *string
 	EffectiveTaints() DataGoogleContainerClusterNodeConfigEffectiveTaintsList
+	EnableConfidentialStorage() cdktf.IResolvable
 	EphemeralStorageLocalSsdConfig() DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList
 	FastSocket() DataGoogleContainerClusterNodeConfigFastSocketList
 	// Experimental.
@@ -199,6 +200,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Effectiv
 	_jsii_.Get(
 		j,
 		"effectiveTaints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) EnableConfidentialStorage() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableConfidentialStorage",
 		&returns,
 	)
 	return returns

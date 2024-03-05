@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.19.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint}.
 type VertexAiIndexEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -602,7 +602,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.19.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource.
 func NewVertexAiIndexEndpoint(scope constructs.Construct, id *string, config *VertexAiIndexEndpointConfig) VertexAiIndexEndpoint {
 	_init_.Initialize()
 
@@ -620,7 +620,7 @@ func NewVertexAiIndexEndpoint(scope constructs.Construct, id *string, config *Ve
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.18.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.19.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource.
 func NewVertexAiIndexEndpoint_Override(v VertexAiIndexEndpoint, scope constructs.Construct, id *string, config *VertexAiIndexEndpointConfig) {
 	_init_.Initialize()
 
