@@ -35,6 +35,9 @@ type ComputeServiceAttachmentConsumerAcceptListsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	NetworkUrl() *string
+	SetNetworkUrl(val *string)
+	NetworkUrlInput() *string
 	ProjectIdOrNum() *string
 	SetProjectIdOrNum(val *string)
 	ProjectIdOrNumInput() *string
@@ -70,6 +73,8 @@ type ComputeServiceAttachmentConsumerAcceptListsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetNetworkUrl()
+	ResetProjectIdOrNum()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -150,6 +155,26 @@ func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) I
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) NetworkUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) NetworkUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkUrlInput",
 		&returns,
 	)
 	return returns
@@ -263,6 +288,17 @@ func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference)Se
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference)SetNetworkUrl(val *string) {
+	if err := j.validateSetNetworkUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkUrl",
 		val,
 	)
 }
@@ -484,6 +520,22 @@ func (c *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) I
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) ResetNetworkUrl() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNetworkUrl",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) ResetProjectIdOrNum() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetProjectIdOrNum",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

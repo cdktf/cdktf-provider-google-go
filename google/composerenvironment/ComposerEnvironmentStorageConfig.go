@@ -7,7 +7,7 @@ package composerenvironment
 type ComposerEnvironmentStorageConfig struct {
 	// Optional. Name of an existing Cloud Storage bucket to be used by the environment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.19.0/docs/resources/composer_environment#bucket ComposerEnvironment#bucket}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/composer_environment#bucket ComposerEnvironment#bucket}
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
 }
 

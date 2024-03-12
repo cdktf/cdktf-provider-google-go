@@ -28,6 +28,9 @@ type ComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference int
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultActionOnFailure() *string
+	SetDefaultActionOnFailure(val *string)
+	DefaultActionOnFailureInput() *string
 	ForceUpdateOnRepair() *string
 	SetForceUpdateOnRepair(val *string)
 	ForceUpdateOnRepairInput() *string
@@ -67,6 +70,7 @@ type ComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDefaultActionOnFailure()
 	ResetForceUpdateOnRepair()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,6 +112,26 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutpu
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference) DefaultActionOnFailure() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultActionOnFailure",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference) DefaultActionOnFailureInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultActionOnFailureInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +243,17 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutpu
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference)SetDefaultActionOnFailure(val *string) {
+	if err := j.validateSetDefaultActionOnFailureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultActionOnFailure",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutpu
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference) ResetDefaultActionOnFailure() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDefaultActionOnFailure",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference) ResetForceUpdateOnRepair() {

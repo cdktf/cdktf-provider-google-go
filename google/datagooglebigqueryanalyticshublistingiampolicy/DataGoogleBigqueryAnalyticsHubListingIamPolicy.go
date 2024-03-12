@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.19.0/docs/data-sources/bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/data-sources/bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy}.
 type DataGoogleBigqueryAnalyticsHubListingIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DataGoogleBigqueryAnalyticsHubListingIamPolicy) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.19.0/docs/data-sources/bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/data-sources/bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy} Data Source.
 func NewDataGoogleBigqueryAnalyticsHubListingIamPolicy(scope constructs.Construct, id *string, config *DataGoogleBigqueryAnalyticsHubListingIamPolicyConfig) DataGoogleBigqueryAnalyticsHubListingIamPolicy {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDataGoogleBigqueryAnalyticsHubListingIamPolicy(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.19.0/docs/data-sources/bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/data-sources/bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy} Data Source.
 func NewDataGoogleBigqueryAnalyticsHubListingIamPolicy_Override(d DataGoogleBigqueryAnalyticsHubListingIamPolicy, scope constructs.Construct, id *string, config *DataGoogleBigqueryAnalyticsHubListingIamPolicyConfig) {
 	_init_.Initialize()
 

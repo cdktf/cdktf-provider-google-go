@@ -13,6 +13,8 @@ import (
 
 type GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference interface {
 	cdktf.ComplexObject
+	Bundles() GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesList
+	BundlesInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -66,7 +68,9 @@ type GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyConte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutBundles(value interface{})
 	PutTemplateLibrary(value *GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibrary)
+	ResetBundles()
 	ResetTemplateLibrary()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -81,6 +85,26 @@ type GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyConte
 // The jsii proxy struct for GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference
 type jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference) Bundles() GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesList {
+	var returns GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentBundlesList
+	_jsii_.Get(
+		j,
+		"bundles",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference) BundlesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bundlesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference) ComplexObjectIndex() interface{} {
@@ -442,6 +466,17 @@ func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	return returns
 }
 
+func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference) PutBundles(value interface{}) {
+	if err := g.validatePutBundlesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBundles",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference) PutTemplateLibrary(value *GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentTemplateLibrary) {
 	if err := g.validatePutTemplateLibraryParameters(value); err != nil {
 		panic(err)
@@ -450,6 +485,14 @@ func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 		g,
 		"putTemplateLibrary",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContentOutputReference) ResetBundles() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBundles",
+		nil, // no parameters
 	)
 }
 

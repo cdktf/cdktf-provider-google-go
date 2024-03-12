@@ -7,7 +7,7 @@ package containerattachedcluster
 type ContainerAttachedClusterLoggingConfig struct {
 	// component_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.19.0/docs/resources/container_attached_cluster#component_config ContainerAttachedCluster#component_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/container_attached_cluster#component_config ContainerAttachedCluster#component_config}
 	ComponentConfig *ContainerAttachedClusterLoggingConfigComponentConfig `field:"optional" json:"componentConfig" yaml:"componentConfig"`
 }
 

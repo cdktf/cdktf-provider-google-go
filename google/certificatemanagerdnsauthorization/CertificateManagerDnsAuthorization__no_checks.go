@@ -139,6 +139,10 @@ func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetProvisionersPa
 	return nil
 }
 
+func (j *jsiiProxy_CertificateManagerDnsAuthorization) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewCertificateManagerDnsAuthorizationParameters(scope constructs.Construct, id *string, config *CertificateManagerDnsAuthorizationConfig) error {
 	return nil
 }

@@ -67,6 +67,10 @@ func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) validateSetNetworkUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeServiceAttachmentConsumerAcceptListsOutputReference) validateSetProjectIdOrNumParameters(val *string) error {
 	return nil
 }
