@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/firestore_document google_firestore_document}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/firestore_document google_firestore_document}.
 type FirestoreDocument interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -495,7 +495,7 @@ func (j *jsiiProxy_FirestoreDocument) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/firestore_document google_firestore_document} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/firestore_document google_firestore_document} Resource.
 func NewFirestoreDocument(scope constructs.Construct, id *string, config *FirestoreDocumentConfig) FirestoreDocument {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewFirestoreDocument(scope constructs.Construct, id *string, config *Firest
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/firestore_document google_firestore_document} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/firestore_document google_firestore_document} Resource.
 func NewFirestoreDocument_Override(f FirestoreDocument, scope constructs.Construct, id *string, config *FirestoreDocumentConfig) {
 	_init_.Initialize()
 

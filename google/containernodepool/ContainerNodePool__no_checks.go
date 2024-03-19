@@ -95,6 +95,10 @@ func (c *jsiiProxy_ContainerNodePool) validatePutPlacementPolicyParameters(value
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePool) validatePutQueuedProvisioningParameters(value *ContainerNodePoolQueuedProvisioning) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePool) validatePutTimeoutsParameters(value *ContainerNodePoolTimeouts) error {
 	return nil
 }

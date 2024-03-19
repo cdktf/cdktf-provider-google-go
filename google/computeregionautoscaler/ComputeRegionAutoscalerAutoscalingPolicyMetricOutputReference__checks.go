@@ -166,6 +166,14 @@ func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference) validateSetFilterParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -191,6 +199,14 @@ func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference
 }
 
 func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference) validateSetSingleInstanceAssignmentParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

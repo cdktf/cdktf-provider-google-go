@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/container_node_pool google_container_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/container_node_pool google_container_node_pool}.
 type ContainerNodePool interface {
 	cdktf.TerraformResource
 	Autoscaling() ContainerNodePoolAutoscalingOutputReference
@@ -96,6 +96,8 @@ type ContainerNodePool interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	QueuedProvisioning() ContainerNodePoolQueuedProvisioningOutputReference
+	QueuedProvisioningInput() *ContainerNodePoolQueuedProvisioning
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -159,6 +161,7 @@ type ContainerNodePool interface {
 	PutNetworkConfig(value *ContainerNodePoolNetworkConfig)
 	PutNodeConfig(value *ContainerNodePoolNodeConfig)
 	PutPlacementPolicy(value *ContainerNodePoolPlacementPolicy)
+	PutQueuedProvisioning(value *ContainerNodePoolQueuedProvisioning)
 	PutTimeouts(value *ContainerNodePoolTimeouts)
 	PutUpgradeSettings(value *ContainerNodePoolUpgradeSettings)
 	ResetAutoscaling()
@@ -178,6 +181,7 @@ type ContainerNodePool interface {
 	ResetOverrideLogicalId()
 	ResetPlacementPolicy()
 	ResetProject()
+	ResetQueuedProvisioning()
 	ResetTimeouts()
 	ResetUpgradeSettings()
 	ResetVersion()
@@ -649,6 +653,26 @@ func (j *jsiiProxy_ContainerNodePool) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerNodePool) QueuedProvisioning() ContainerNodePoolQueuedProvisioningOutputReference {
+	var returns ContainerNodePoolQueuedProvisioningOutputReference
+	_jsii_.Get(
+		j,
+		"queuedProvisioning",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePool) QueuedProvisioningInput() *ContainerNodePoolQueuedProvisioning {
+	var returns *ContainerNodePoolQueuedProvisioning
+	_jsii_.Get(
+		j,
+		"queuedProvisioningInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerNodePool) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -750,7 +774,7 @@ func (j *jsiiProxy_ContainerNodePool) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/container_node_pool google_container_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/container_node_pool google_container_node_pool} Resource.
 func NewContainerNodePool(scope constructs.Construct, id *string, config *ContainerNodePoolConfig) ContainerNodePool {
 	_init_.Initialize()
 
@@ -768,7 +792,7 @@ func NewContainerNodePool(scope constructs.Construct, id *string, config *Contai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/container_node_pool google_container_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/container_node_pool google_container_node_pool} Resource.
 func NewContainerNodePool_Override(c ContainerNodePool, scope constructs.Construct, id *string, config *ContainerNodePoolConfig) {
 	_init_.Initialize()
 
@@ -1376,6 +1400,17 @@ func (c *jsiiProxy_ContainerNodePool) PutPlacementPolicy(value *ContainerNodePoo
 	)
 }
 
+func (c *jsiiProxy_ContainerNodePool) PutQueuedProvisioning(value *ContainerNodePoolQueuedProvisioning) {
+	if err := c.validatePutQueuedProvisioningParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putQueuedProvisioning",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerNodePool) PutTimeouts(value *ContainerNodePoolTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1514,6 +1549,14 @@ func (c *jsiiProxy_ContainerNodePool) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePool) ResetQueuedProvisioning() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetQueuedProvisioning",
 		nil, // no parameters
 	)
 }

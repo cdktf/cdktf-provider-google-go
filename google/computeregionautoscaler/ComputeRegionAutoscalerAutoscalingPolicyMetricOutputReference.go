@@ -28,6 +28,9 @@ type ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Filter() *string
+	SetFilter(val *string)
+	FilterInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -35,6 +38,9 @@ type ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	SingleInstanceAssignment() *float64
+	SetSingleInstanceAssignment(val *float64)
+	SingleInstanceAssignmentInput() *float64
 	Target() *float64
 	SetTarget(val *float64)
 	TargetInput() *float64
@@ -73,6 +79,8 @@ type ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetFilter()
+	ResetSingleInstanceAssignment()
 	ResetTarget()
 	ResetType()
 	// Produce the Token's value at resolution time.
@@ -120,6 +128,26 @@ func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference) Filter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference) FilterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -155,6 +183,26 @@ func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference) SingleInstanceAssignment() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"singleInstanceAssignment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference) SingleInstanceAssignmentInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"singleInstanceAssignmentInput",
 		&returns,
 	)
 	return returns
@@ -270,6 +318,17 @@ func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference
 	)
 }
 
+func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference)SetFilter(val *string) {
+	if err := j.validateSetFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filter",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -288,6 +347,17 @@ func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference)SetSingleInstanceAssignment(val *float64) {
+	if err := j.validateSetSingleInstanceAssignmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"singleInstanceAssignment",
 		val,
 	)
 }
@@ -520,6 +590,22 @@ func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference) ResetFilter() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference) ResetSingleInstanceAssignment() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSingleInstanceAssignment",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference) ResetTarget() {

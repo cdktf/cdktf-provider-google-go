@@ -7,7 +7,7 @@ package integrationconnectorsconnection
 type IntegrationConnectorsConnectionSslConfigClientPrivateKey struct {
 	// Secret version of Secret Value for Config variable.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/integration_connectors_connection#secret_version IntegrationConnectorsConnection#secret_version}
 	SecretVersion *string `field:"required" json:"secretVersion" yaml:"secretVersion"`
 }
 

@@ -5,11 +5,11 @@ package edgecontainernodepool
 
 
 type EdgecontainerNodePoolTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/edgecontainer_node_pool#create EdgecontainerNodePool#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/edgecontainer_node_pool#create EdgecontainerNodePool#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/edgecontainer_node_pool#delete EdgecontainerNodePool#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/edgecontainer_node_pool#delete EdgecontainerNodePool#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/edgecontainer_node_pool#update EdgecontainerNodePool#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/edgecontainer_node_pool#update EdgecontainerNodePool#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

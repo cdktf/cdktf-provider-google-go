@@ -9,7 +9,7 @@ type ContainerClusterNodeConfigLocalNvmeSsdBlockConfig struct {
 	//
 	// Each local SSD is 375 GB in size.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
 	LocalSsdCount *float64 `field:"required" json:"localSsdCount" yaml:"localSsdCount"`
 }
 

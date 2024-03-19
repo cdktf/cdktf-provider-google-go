@@ -7,7 +7,7 @@ package edgecontainercluster
 type EdgecontainerClusterMaintenancePolicyWindow struct {
 	// recurring_window block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/edgecontainer_cluster#recurring_window EdgecontainerCluster#recurring_window}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/edgecontainer_cluster#recurring_window EdgecontainerCluster#recurring_window}
 	RecurringWindow *EdgecontainerClusterMaintenancePolicyWindowRecurringWindow `field:"required" json:"recurringWindow" yaml:"recurringWindow"`
 }
 

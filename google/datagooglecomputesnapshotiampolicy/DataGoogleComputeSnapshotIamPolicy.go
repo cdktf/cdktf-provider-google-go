@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/data-sources/compute_snapshot_iam_policy google_compute_snapshot_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/compute_snapshot_iam_policy google_compute_snapshot_iam_policy}.
 type DataGoogleComputeSnapshotIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -334,7 +334,7 @@ func (j *jsiiProxy_DataGoogleComputeSnapshotIamPolicy) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/data-sources/compute_snapshot_iam_policy google_compute_snapshot_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/compute_snapshot_iam_policy google_compute_snapshot_iam_policy} Data Source.
 func NewDataGoogleComputeSnapshotIamPolicy(scope constructs.Construct, id *string, config *DataGoogleComputeSnapshotIamPolicyConfig) DataGoogleComputeSnapshotIamPolicy {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewDataGoogleComputeSnapshotIamPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/data-sources/compute_snapshot_iam_policy google_compute_snapshot_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/compute_snapshot_iam_policy google_compute_snapshot_iam_policy} Data Source.
 func NewDataGoogleComputeSnapshotIamPolicy_Override(d DataGoogleComputeSnapshotIamPolicy, scope constructs.Construct, id *string, config *DataGoogleComputeSnapshotIamPolicyConfig) {
 	_init_.Initialize()
 

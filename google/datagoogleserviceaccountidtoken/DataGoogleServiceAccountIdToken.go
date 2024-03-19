@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/data-sources/service_account_id_token google_service_account_id_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/service_account_id_token google_service_account_id_token}.
 type DataGoogleServiceAccountIdToken interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -371,7 +371,7 @@ func (j *jsiiProxy_DataGoogleServiceAccountIdToken) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/data-sources/service_account_id_token google_service_account_id_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/service_account_id_token google_service_account_id_token} Data Source.
 func NewDataGoogleServiceAccountIdToken(scope constructs.Construct, id *string, config *DataGoogleServiceAccountIdTokenConfig) DataGoogleServiceAccountIdToken {
 	_init_.Initialize()
 
@@ -389,7 +389,7 @@ func NewDataGoogleServiceAccountIdToken(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/data-sources/service_account_id_token google_service_account_id_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/service_account_id_token google_service_account_id_token} Data Source.
 func NewDataGoogleServiceAccountIdToken_Override(d DataGoogleServiceAccountIdToken, scope constructs.Construct, id *string, config *DataGoogleServiceAccountIdTokenConfig) {
 	_init_.Initialize()
 

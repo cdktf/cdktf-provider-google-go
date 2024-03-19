@@ -1142,6 +1142,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDhcpIpConfig", GoMethod: "ResetDhcpIpConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHostConfig", GoMethod: "ResetHostConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStaticIpConfig", GoMethod: "ResetStaticIpConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVcenterNetwork", GoMethod: "ResetVcenterNetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAddressCidrBlocks", GoGetter: "ServiceAddressCidrBlocks"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAddressCidrBlocksInput", GoGetter: "ServiceAddressCidrBlocksInput"},
@@ -1151,6 +1152,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "vcenterNetwork", GoGetter: "VcenterNetwork"},
+			_jsii_.MemberProperty{JsiiProperty: "vcenterNetworkInput", GoGetter: "VcenterNetworkInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference{}

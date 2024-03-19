@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy}.
 type BinaryAuthorizationAttestorIamPolicy interface {
 	cdktf.TerraformResource
 	Attestor() *string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_BinaryAuthorizationAttestorIamPolicy) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy} Resource.
 func NewBinaryAuthorizationAttestorIamPolicy(scope constructs.Construct, id *string, config *BinaryAuthorizationAttestorIamPolicyConfig) BinaryAuthorizationAttestorIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewBinaryAuthorizationAttestorIamPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy} Resource.
 func NewBinaryAuthorizationAttestorIamPolicy_Override(b BinaryAuthorizationAttestorIamPolicy, scope constructs.Construct, id *string, config *BinaryAuthorizationAttestorIamPolicyConfig) {
 	_init_.Initialize()
 

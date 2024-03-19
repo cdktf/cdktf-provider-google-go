@@ -7,7 +7,7 @@ package containercluster
 type ContainerClusterNodeConfigGvnic struct {
 	// Whether or not gvnic is enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.20.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 }
 

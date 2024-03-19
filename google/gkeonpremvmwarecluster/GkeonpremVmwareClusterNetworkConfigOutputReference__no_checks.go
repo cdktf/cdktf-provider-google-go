@@ -95,6 +95,10 @@ func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigOutputReference) validateSetVcenterNetworkParameters(val *string) error {
+	return nil
+}
+
 func validateNewGkeonpremVmwareClusterNetworkConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
