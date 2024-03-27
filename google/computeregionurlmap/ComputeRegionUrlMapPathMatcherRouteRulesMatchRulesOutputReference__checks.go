@@ -311,6 +311,14 @@ func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference) validateSetPathTemplateMatchParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference) validateSetPrefixMatchParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

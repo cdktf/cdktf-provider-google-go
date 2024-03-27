@@ -103,6 +103,10 @@ func (s *jsiiProxy_StorageBucket) validatePutRetentionPolicyParameters(value *St
 	return nil
 }
 
+func (s *jsiiProxy_StorageBucket) validatePutSoftDeletePolicyParameters(value *StorageBucketSoftDeletePolicy) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucket) validatePutTimeoutsParameters(value *StorageBucketTimeouts) error {
 	return nil
 }

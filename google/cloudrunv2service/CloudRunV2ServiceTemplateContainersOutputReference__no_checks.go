@@ -55,7 +55,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validateP
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validatePutPortsParameters(value interface{}) error {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validatePutPortsParameters(value *CloudRunV2ServiceTemplateContainersPorts) error {
 	return nil
 }
 

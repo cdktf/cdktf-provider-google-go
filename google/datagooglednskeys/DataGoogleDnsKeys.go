@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/dns_keys google_dns_keys}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/data-sources/dns_keys google_dns_keys}.
 type DataGoogleDnsKeys interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataGoogleDnsKeys) ZoneSigningKeys() DataGoogleDnsKeysZoneSig
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/dns_keys google_dns_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/data-sources/dns_keys google_dns_keys} Data Source.
 func NewDataGoogleDnsKeys(scope constructs.Construct, id *string, config *DataGoogleDnsKeysConfig) DataGoogleDnsKeys {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataGoogleDnsKeys(scope constructs.Construct, id *string, config *DataGo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/data-sources/dns_keys google_dns_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/data-sources/dns_keys google_dns_keys} Data Source.
 func NewDataGoogleDnsKeys_Override(d DataGoogleDnsKeys, scope constructs.Construct, id *string, config *DataGoogleDnsKeysConfig) {
 	_init_.Initialize()
 

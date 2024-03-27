@@ -83,6 +83,10 @@ func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference) validateSetPathTemplateMatchParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference) validateSetPrefixMatchParameters(val *string) error {
 	return nil
 }

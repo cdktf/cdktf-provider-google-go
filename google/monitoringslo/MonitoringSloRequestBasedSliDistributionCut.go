@@ -10,11 +10,11 @@ type MonitoringSloRequestBasedSliDistributionCut struct {
 	// Must have ValueType = DISTRIBUTION and
 	// MetricKind = DELTA or MetricKind = CUMULATIVE.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/monitoring_slo#distribution_filter MonitoringSlo#distribution_filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/monitoring_slo#distribution_filter MonitoringSlo#distribution_filter}
 	DistributionFilter *string `field:"required" json:"distributionFilter" yaml:"distributionFilter"`
 	// range block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/monitoring_slo#range MonitoringSlo#range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/monitoring_slo#range MonitoringSlo#range}
 	Range *MonitoringSloRequestBasedSliDistributionCutRange `field:"required" json:"range" yaml:"range"`
 }
 

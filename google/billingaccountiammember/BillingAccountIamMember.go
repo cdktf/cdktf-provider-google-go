@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/billing_account_iam_member google_billing_account_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/billing_account_iam_member google_billing_account_iam_member}.
 type BillingAccountIamMember interface {
 	cdktf.TerraformResource
 	BillingAccountId() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_BillingAccountIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/billing_account_iam_member google_billing_account_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/billing_account_iam_member google_billing_account_iam_member} Resource.
 func NewBillingAccountIamMember(scope constructs.Construct, id *string, config *BillingAccountIamMemberConfig) BillingAccountIamMember {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewBillingAccountIamMember(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/billing_account_iam_member google_billing_account_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/billing_account_iam_member google_billing_account_iam_member} Resource.
 func NewBillingAccountIamMember_Override(b BillingAccountIamMember, scope constructs.Construct, id *string, config *BillingAccountIamMemberConfig) {
 	_init_.Initialize()
 

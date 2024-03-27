@@ -28,6 +28,7 @@ type ComputeRegionInstanceGroupManagerStatusAllInstancesConfigOutputReference in
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CurrentRevision() *string
 	Effective() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -105,6 +106,16 @@ func (j *jsiiProxy_ComputeRegionInstanceGroupManagerStatusAllInstancesConfigOutp
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceGroupManagerStatusAllInstancesConfigOutputReference) CurrentRevision() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"currentRevision",
 		&returns,
 	)
 	return returns

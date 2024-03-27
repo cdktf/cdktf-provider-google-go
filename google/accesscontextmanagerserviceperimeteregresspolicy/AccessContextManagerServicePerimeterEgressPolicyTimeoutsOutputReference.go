@@ -46,9 +46,6 @@ type AccessContextManagerServicePerimeterEgressPolicyTimeoutsOutputReference int
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Update() *string
-	SetUpdate(val *string)
-	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -75,7 +72,6 @@ type AccessContextManagerServicePerimeterEgressPolicyTimeoutsOutputReference int
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
-	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -201,26 +197,6 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyTimeoutsOutpu
 	return returns
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyTimeoutsOutputReference) Update() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"update",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyTimeoutsOutputReference) UpdateInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updateInput",
-		&returns,
-	)
-	return returns
-}
-
 
 func NewAccessContextManagerServicePerimeterEgressPolicyTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterEgressPolicyTimeoutsOutputReference {
 	_init_.Initialize()
@@ -322,17 +298,6 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyTimeoutsOutpu
 	_jsii_.Set(
 		j,
 		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyTimeoutsOutputReference)SetUpdate(val *string) {
-	if err := j.validateSetUpdateParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"update",
 		val,
 	)
 }
@@ -535,14 +500,6 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyTimeoutsOutpu
 	_jsii_.InvokeVoid(
 		a,
 		"resetDelete",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AccessContextManagerServicePerimeterEgressPolicyTimeoutsOutputReference) ResetUpdate() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetUpdate",
 		nil, // no parameters
 	)
 }

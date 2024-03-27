@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/pubsub_topic google_pubsub_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/pubsub_topic google_pubsub_topic}.
 type PubsubTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -43,6 +43,8 @@ type PubsubTopic interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IngestionDataSourceSettings() PubsubTopicIngestionDataSourceSettingsOutputReference
+	IngestionDataSourceSettingsInput() *PubsubTopicIngestionDataSourceSettings
 	KmsKeyName() *string
 	SetKmsKeyName(val *string)
 	KmsKeyNameInput() *string
@@ -130,10 +132,12 @@ type PubsubTopic interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutIngestionDataSourceSettings(value *PubsubTopicIngestionDataSourceSettings)
 	PutMessageStoragePolicy(value *PubsubTopicMessageStoragePolicy)
 	PutSchemaSettings(value *PubsubTopicSchemaSettings)
 	PutTimeouts(value *PubsubTopicTimeouts)
 	ResetId()
+	ResetIngestionDataSourceSettings()
 	ResetKmsKeyName()
 	ResetLabels()
 	ResetMessageRetentionDuration()
@@ -267,6 +271,26 @@ func (j *jsiiProxy_PubsubTopic) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopic) IngestionDataSourceSettings() PubsubTopicIngestionDataSourceSettingsOutputReference {
+	var returns PubsubTopicIngestionDataSourceSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"ingestionDataSourceSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopic) IngestionDataSourceSettingsInput() *PubsubTopicIngestionDataSourceSettings {
+	var returns *PubsubTopicIngestionDataSourceSettings
+	_jsii_.Get(
+		j,
+		"ingestionDataSourceSettingsInput",
 		&returns,
 	)
 	return returns
@@ -523,7 +547,7 @@ func (j *jsiiProxy_PubsubTopic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/pubsub_topic google_pubsub_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/pubsub_topic google_pubsub_topic} Resource.
 func NewPubsubTopic(scope constructs.Construct, id *string, config *PubsubTopicConfig) PubsubTopic {
 	_init_.Initialize()
 
@@ -541,7 +565,7 @@ func NewPubsubTopic(scope constructs.Construct, id *string, config *PubsubTopicC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.21.0/docs/resources/pubsub_topic google_pubsub_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/pubsub_topic google_pubsub_topic} Resource.
 func NewPubsubTopic_Override(p PubsubTopic, scope constructs.Construct, id *string, config *PubsubTopicConfig) {
 	_init_.Initialize()
 
@@ -1039,6 +1063,17 @@ func (p *jsiiProxy_PubsubTopic) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (p *jsiiProxy_PubsubTopic) PutIngestionDataSourceSettings(value *PubsubTopicIngestionDataSourceSettings) {
+	if err := p.validatePutIngestionDataSourceSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putIngestionDataSourceSettings",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PubsubTopic) PutMessageStoragePolicy(value *PubsubTopicMessageStoragePolicy) {
 	if err := p.validatePutMessageStoragePolicyParameters(value); err != nil {
 		panic(err)
@@ -1076,6 +1111,14 @@ func (p *jsiiProxy_PubsubTopic) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubTopic) ResetIngestionDataSourceSettings() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetIngestionDataSourceSettings",
 		nil, // no parameters
 	)
 }

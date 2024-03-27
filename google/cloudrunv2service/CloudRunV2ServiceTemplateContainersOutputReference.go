@@ -51,8 +51,8 @@ type CloudRunV2ServiceTemplateContainersOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	Ports() CloudRunV2ServiceTemplateContainersPortsList
-	PortsInput() interface{}
+	Ports() CloudRunV2ServiceTemplateContainersPortsOutputReference
+	PortsInput() *CloudRunV2ServiceTemplateContainersPorts
 	Resources() CloudRunV2ServiceTemplateContainersResourcesOutputReference
 	ResourcesInput() *CloudRunV2ServiceTemplateContainersResources
 	StartupProbe() CloudRunV2ServiceTemplateContainersStartupProbeOutputReference
@@ -96,7 +96,7 @@ type CloudRunV2ServiceTemplateContainersOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEnv(value interface{})
 	PutLivenessProbe(value *CloudRunV2ServiceTemplateContainersLivenessProbe)
-	PutPorts(value interface{})
+	PutPorts(value *CloudRunV2ServiceTemplateContainersPorts)
 	PutResources(value *CloudRunV2ServiceTemplateContainersResources)
 	PutStartupProbe(value *CloudRunV2ServiceTemplateContainersStartupProbe)
 	PutVolumeMounts(value interface{})
@@ -316,8 +316,8 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) NameInput
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) Ports() CloudRunV2ServiceTemplateContainersPortsList {
-	var returns CloudRunV2ServiceTemplateContainersPortsList
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) Ports() CloudRunV2ServiceTemplateContainersPortsOutputReference {
+	var returns CloudRunV2ServiceTemplateContainersPortsOutputReference
 	_jsii_.Get(
 		j,
 		"ports",
@@ -326,8 +326,8 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) Ports() C
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) PortsInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) PortsInput() *CloudRunV2ServiceTemplateContainersPorts {
+	var returns *CloudRunV2ServiceTemplateContainersPorts
 	_jsii_.Get(
 		j,
 		"portsInput",
@@ -793,7 +793,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) PutLivene
 	)
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) PutPorts(value interface{}) {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) PutPorts(value *CloudRunV2ServiceTemplateContainersPorts) {
 	if err := c.validatePutPortsParameters(value); err != nil {
 		panic(err)
 	}
