@@ -107,6 +107,10 @@ func (j *jsiiProxy_KmsCryptoKey) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_KmsCryptoKey) validateSetCryptoKeyBackendParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsCryptoKey) validateSetDestroyScheduledDurationParameters(val *string) error {
 	return nil
 }

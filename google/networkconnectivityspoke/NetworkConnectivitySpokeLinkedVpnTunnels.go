@@ -9,11 +9,11 @@ type NetworkConnectivitySpokeLinkedVpnTunnels struct {
 	//
 	// Note that data transfer is available only in supported locations.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/network_connectivity_spoke#site_to_site_data_transfer NetworkConnectivitySpoke#site_to_site_data_transfer}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/network_connectivity_spoke#site_to_site_data_transfer NetworkConnectivitySpoke#site_to_site_data_transfer}
 	SiteToSiteDataTransfer interface{} `field:"required" json:"siteToSiteDataTransfer" yaml:"siteToSiteDataTransfer"`
 	// The URIs of linked VPN tunnel resources.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/network_connectivity_spoke#uris NetworkConnectivitySpoke#uris}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/network_connectivity_spoke#uris NetworkConnectivitySpoke#uris}
 	Uris *[]*string `field:"required" json:"uris" yaml:"uris"`
 }
 

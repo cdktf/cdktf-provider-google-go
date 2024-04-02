@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/compute_region_backend_service google_compute_region_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/compute_region_backend_service google_compute_region_backend_service}.
 type ComputeRegionBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -63,6 +63,7 @@ type ComputeRegionBackendService interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GeneratedId() *float64
 	HealthChecks() *[]*string
 	SetHealthChecks(val *[]*string)
 	HealthChecksInput() *[]*string
@@ -507,6 +508,16 @@ func (j *jsiiProxy_ComputeRegionBackendService) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionBackendService) GeneratedId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"generatedId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionBackendService) HealthChecks() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -918,7 +929,7 @@ func (j *jsiiProxy_ComputeRegionBackendService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewComputeRegionBackendService(scope constructs.Construct, id *string, config *ComputeRegionBackendServiceConfig) ComputeRegionBackendService {
 	_init_.Initialize()
 
@@ -936,7 +947,7 @@ func NewComputeRegionBackendService(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewComputeRegionBackendService_Override(c ComputeRegionBackendService, scope constructs.Construct, id *string, config *ComputeRegionBackendServiceConfig) {
 	_init_.Initialize()
 

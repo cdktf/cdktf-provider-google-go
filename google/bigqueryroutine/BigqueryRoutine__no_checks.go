@@ -115,6 +115,10 @@ func (j *jsiiProxy_BigqueryRoutine) validateSetCountParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryRoutine) validateSetDataGovernanceTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryRoutine) validateSetDatasetIdParameters(val *string) error {
 	return nil
 }

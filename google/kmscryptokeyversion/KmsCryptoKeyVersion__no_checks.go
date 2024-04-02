@@ -75,6 +75,10 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (k *jsiiProxy_KmsCryptoKeyVersion) validatePutExternalProtectionLevelOptionsParameters(value *KmsCryptoKeyVersionExternalProtectionLevelOptions) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsCryptoKeyVersion) validatePutTimeoutsParameters(value *KmsCryptoKeyVersionTimeouts) error {
 	return nil
 }

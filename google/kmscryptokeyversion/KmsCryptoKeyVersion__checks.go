@@ -207,6 +207,17 @@ func (k *jsiiProxy_KmsCryptoKeyVersion) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (k *jsiiProxy_KmsCryptoKeyVersion) validatePutExternalProtectionLevelOptionsParameters(value *KmsCryptoKeyVersionExternalProtectionLevelOptions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (k *jsiiProxy_KmsCryptoKeyVersion) validatePutTimeoutsParameters(value *KmsCryptoKeyVersionTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

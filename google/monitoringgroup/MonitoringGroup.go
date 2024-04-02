@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/monitoring_group google_monitoring_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/monitoring_group google_monitoring_group}.
 type MonitoringGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -463,7 +463,7 @@ func (j *jsiiProxy_MonitoringGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/monitoring_group google_monitoring_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/monitoring_group google_monitoring_group} Resource.
 func NewMonitoringGroup(scope constructs.Construct, id *string, config *MonitoringGroupConfig) MonitoringGroup {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewMonitoringGroup(scope constructs.Construct, id *string, config *Monitori
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/monitoring_group google_monitoring_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/monitoring_group google_monitoring_group} Resource.
 func NewMonitoringGroup_Override(m MonitoringGroup, scope constructs.Construct, id *string, config *MonitoringGroupConfig) {
 	_init_.Initialize()
 

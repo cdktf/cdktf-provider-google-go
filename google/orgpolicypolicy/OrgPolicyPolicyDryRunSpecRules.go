@@ -9,27 +9,27 @@ type OrgPolicyPolicyDryRunSpecRules struct {
 	//
 	// This field can be set only in policies for list constraints.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/org_policy_policy#allow_all OrgPolicyPolicy#allow_all}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/org_policy_policy#allow_all OrgPolicyPolicy#allow_all}
 	AllowAll *string `field:"optional" json:"allowAll" yaml:"allowAll"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/org_policy_policy#condition OrgPolicyPolicy#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/org_policy_policy#condition OrgPolicyPolicy#condition}
 	Condition *OrgPolicyPolicyDryRunSpecRulesCondition `field:"optional" json:"condition" yaml:"condition"`
 	// Setting this to `"TRUE"` means that all values are denied.
 	//
 	// This field can be set only in policies for list constraints.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/org_policy_policy#deny_all OrgPolicyPolicy#deny_all}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/org_policy_policy#deny_all OrgPolicyPolicy#deny_all}
 	DenyAll *string `field:"optional" json:"denyAll" yaml:"denyAll"`
 	// If `"TRUE"`, then the policy is enforced.
 	//
 	// If `"FALSE"`, then any configuration is acceptable. This field can be set only in policies for boolean constraints.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/org_policy_policy#enforce OrgPolicyPolicy#enforce}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/org_policy_policy#enforce OrgPolicyPolicy#enforce}
 	Enforce *string `field:"optional" json:"enforce" yaml:"enforce"`
 	// values block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.22.0/docs/resources/org_policy_policy#values OrgPolicyPolicy#values}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/org_policy_policy#values OrgPolicyPolicy#values}
 	Values *OrgPolicyPolicyDryRunSpecRulesValues `field:"optional" json:"values" yaml:"values"`
 }
 
