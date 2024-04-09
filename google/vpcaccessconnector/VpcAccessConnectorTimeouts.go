@@ -5,9 +5,9 @@ package vpcaccessconnector
 
 
 type VpcAccessConnectorTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/vpc_access_connector#create VpcAccessConnector#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/vpc_access_connector#create VpcAccessConnector#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/vpc_access_connector#delete VpcAccessConnector#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/vpc_access_connector#delete VpcAccessConnector#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

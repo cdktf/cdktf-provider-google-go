@@ -34,6 +34,9 @@ type ContainerClusterNodePoolAutoConfigOutputReference interface {
 	SetInternalValue(val *ContainerClusterNodePoolAutoConfig)
 	NetworkTags() ContainerClusterNodePoolAutoConfigNetworkTagsOutputReference
 	NetworkTagsInput() *ContainerClusterNodePoolAutoConfigNetworkTags
+	ResourceManagerTags() *map[string]*string
+	SetResourceManagerTags(val *map[string]*string)
+	ResourceManagerTagsInput() *map[string]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type ContainerClusterNodePoolAutoConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutNetworkTags(value *ContainerClusterNodePoolAutoConfigNetworkTags)
 	ResetNetworkTags()
+	ResetResourceManagerTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -153,6 +157,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference) NetworkTag
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference) ResourceManagerTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceManagerTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference) ResourceManagerTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceManagerTagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -230,6 +254,17 @@ func (j *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference)SetInternal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference)SetResourceManagerTags(val *map[string]*string) {
+	if err := j.validateSetResourceManagerTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceManagerTags",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference) ResetNetwo
 	_jsii_.InvokeVoid(
 		c,
 		"resetNetworkTags",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference) ResetResourceManagerTags() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetResourceManagerTags",
 		nil, // no parameters
 	)
 }

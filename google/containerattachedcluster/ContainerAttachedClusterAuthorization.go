@@ -14,7 +14,7 @@ type ContainerAttachedClusterAuthorization struct {
 	// For more info on RBAC, see
 	// https://kubernetes.io/docs/reference/access-authn-authz/rbac/#user-facing-roles
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/container_attached_cluster#admin_groups ContainerAttachedCluster#admin_groups}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/container_attached_cluster#admin_groups ContainerAttachedCluster#admin_groups}
 	AdminGroups *[]*string `field:"optional" json:"adminGroups" yaml:"adminGroups"`
 	// Users that can perform operations as a cluster admin.
 	//
@@ -25,7 +25,7 @@ type ContainerAttachedClusterAuthorization struct {
 	// For more info on RBAC, see
 	// https://kubernetes.io/docs/reference/access-authn-authz/rbac/#user-facing-roles
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/container_attached_cluster#admin_users ContainerAttachedCluster#admin_users}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/container_attached_cluster#admin_users ContainerAttachedCluster#admin_users}
 	AdminUsers *[]*string `field:"optional" json:"adminUsers" yaml:"adminUsers"`
 }
 

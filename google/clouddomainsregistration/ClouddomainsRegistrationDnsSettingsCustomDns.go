@@ -10,11 +10,11 @@ type ClouddomainsRegistrationDnsSettingsCustomDns struct {
 	// A list of name servers that store the DNS zone for this domain. Each name server is a domain
 	// name, with Unicode domain names expressed in Punycode format.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/clouddomains_registration#name_servers ClouddomainsRegistration#name_servers}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/clouddomains_registration#name_servers ClouddomainsRegistration#name_servers}
 	NameServers *[]*string `field:"required" json:"nameServers" yaml:"nameServers"`
 	// ds_records block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/clouddomains_registration#ds_records ClouddomainsRegistration#ds_records}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/clouddomains_registration#ds_records ClouddomainsRegistration#ds_records}
 	DsRecords interface{} `field:"optional" json:"dsRecords" yaml:"dsRecords"`
 }
 

@@ -263,6 +263,10 @@ func (j *jsiiProxy_ContainerCluster) validateSetEnableAutopilotParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ContainerCluster) validateSetEnableCiliumClusterwideNetworkPolicyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerCluster) validateSetEnableIntranodeVisibilityParameters(val interface{}) error {
 	return nil
 }

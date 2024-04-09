@@ -7,7 +7,7 @@ package bigtablegcpolicy
 type BigtableGcPolicyMaxVersion struct {
 	// Number of version before applying the GC policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/bigtable_gc_policy#number BigtableGcPolicy#number}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/bigtable_gc_policy#number BigtableGcPolicy#number}
 	Number *float64 `field:"required" json:"number" yaml:"number"`
 }
 

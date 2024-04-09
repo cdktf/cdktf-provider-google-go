@@ -33,6 +33,7 @@ type DataGoogleContainerClusterNodePoolAutoConfigOutputReference interface {
 	InternalValue() *DataGoogleContainerClusterNodePoolAutoConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodePoolAutoConfig)
 	NetworkTags() DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList
+	ResourceManagerTags() cdktf.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -135,6 +136,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"networkTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoConfigOutputReference) ResourceManagerTags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"resourceManagerTags",
 		&returns,
 	)
 	return returns

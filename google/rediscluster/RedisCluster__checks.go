@@ -411,6 +411,14 @@ func (j *jsiiProxy_RedisCluster) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_RedisCluster) validateSetNodeTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RedisCluster) validateSetProjectParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

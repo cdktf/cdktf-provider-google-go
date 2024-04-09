@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/data-sources/storage_bucket google_storage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/data-sources/storage_bucket google_storage_bucket}.
 type DataGoogleStorageBucket interface {
 	cdktf.TerraformDataSource
 	Autoclass() DataGoogleStorageBucketAutoclassList
@@ -60,6 +60,9 @@ type DataGoogleStorageBucket interface {
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
+	ProjectNumber() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -113,6 +116,7 @@ type DataGoogleStorageBucket interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProject()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -392,6 +396,26 @@ func (j *jsiiProxy_DataGoogleStorageBucket) Project() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleStorageBucket) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucket) ProjectNumber() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"projectNumber",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleStorageBucket) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -563,7 +587,7 @@ func (j *jsiiProxy_DataGoogleStorageBucket) Website() DataGoogleStorageBucketWeb
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/data-sources/storage_bucket google_storage_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/data-sources/storage_bucket google_storage_bucket} Data Source.
 func NewDataGoogleStorageBucket(scope constructs.Construct, id *string, config *DataGoogleStorageBucketConfig) DataGoogleStorageBucket {
 	_init_.Initialize()
 
@@ -581,7 +605,7 @@ func NewDataGoogleStorageBucket(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/data-sources/storage_bucket google_storage_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/data-sources/storage_bucket google_storage_bucket} Data Source.
 func NewDataGoogleStorageBucket_Override(d DataGoogleStorageBucket, scope constructs.Construct, id *string, config *DataGoogleStorageBucketConfig) {
 	_init_.Initialize()
 
@@ -648,6 +672,17 @@ func (j *jsiiProxy_DataGoogleStorageBucket)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucket)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
 		val,
 	)
 }
@@ -957,6 +992,14 @@ func (d *jsiiProxy_DataGoogleStorageBucket) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGoogleStorageBucket) ResetProject() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProject",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/healthcare_hl7_v2_store_iam_policy google_healthcare_hl7_v2_store_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/healthcare_hl7_v2_store_iam_policy google_healthcare_hl7_v2_store_iam_policy}.
 type HealthcareHl7V2StoreIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_HealthcareHl7V2StoreIamPolicy) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/healthcare_hl7_v2_store_iam_policy google_healthcare_hl7_v2_store_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/healthcare_hl7_v2_store_iam_policy google_healthcare_hl7_v2_store_iam_policy} Resource.
 func NewHealthcareHl7V2StoreIamPolicy(scope constructs.Construct, id *string, config *HealthcareHl7V2StoreIamPolicyConfig) HealthcareHl7V2StoreIamPolicy {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewHealthcareHl7V2StoreIamPolicy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.23.0/docs/resources/healthcare_hl7_v2_store_iam_policy google_healthcare_hl7_v2_store_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/healthcare_hl7_v2_store_iam_policy google_healthcare_hl7_v2_store_iam_policy} Resource.
 func NewHealthcareHl7V2StoreIamPolicy_Override(h HealthcareHl7V2StoreIamPolicy, scope constructs.Construct, id *string, config *HealthcareHl7V2StoreIamPolicyConfig) {
 	_init_.Initialize()
 

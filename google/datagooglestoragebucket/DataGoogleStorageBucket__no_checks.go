@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataGoogleStorageBucket) validateSetNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleStorageBucket) validateSetProjectParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataGoogleStorageBucketParameters(scope constructs.Construct, id *string, config *DataGoogleStorageBucketConfig) error {
 	return nil
 }
