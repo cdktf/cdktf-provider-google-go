@@ -70,6 +70,9 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	Edition() *string
 	SetEdition(val *string)
 	EditionInput() *string
+	EnableGoogleMlIntegration() interface{}
+	SetEnableGoogleMlIntegration(val interface{})
+	EnableGoogleMlIntegrationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InsightsConfig() SqlDatabaseInstanceSettingsInsightsConfigOutputReference
@@ -159,6 +162,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ResetDiskSize()
 	ResetDiskType()
 	ResetEdition()
+	ResetEnableGoogleMlIntegration()
 	ResetInsightsConfig()
 	ResetIpConfiguration()
 	ResetLocationPreference()
@@ -528,6 +532,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EditionInput() *s
 	_jsii_.Get(
 		j,
 		"editionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableGoogleMlIntegration() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableGoogleMlIntegration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableGoogleMlIntegrationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableGoogleMlIntegrationInput",
 		&returns,
 	)
 	return returns
@@ -939,6 +963,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetEdition(val *st
 	_jsii_.Set(
 		j,
 		"edition",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetEnableGoogleMlIntegration(val interface{}) {
+	if err := j.validateSetEnableGoogleMlIntegrationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableGoogleMlIntegration",
 		val,
 	)
 }
@@ -1462,6 +1497,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetEdition() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEdition",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetEnableGoogleMlIntegration() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnableGoogleMlIntegration",
 		nil, // no parameters
 	)
 }

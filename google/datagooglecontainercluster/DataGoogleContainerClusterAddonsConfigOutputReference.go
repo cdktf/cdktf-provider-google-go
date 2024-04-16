@@ -42,6 +42,7 @@ type DataGoogleContainerClusterAddonsConfigOutputReference interface {
 	InternalValue() *DataGoogleContainerClusterAddonsConfig
 	SetInternalValue(val *DataGoogleContainerClusterAddonsConfig)
 	NetworkPolicyConfig() DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList
+	StatefulHaConfig() DataGoogleContainerClusterAddonsConfigStatefulHaConfigList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -234,6 +235,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) Networ
 	_jsii_.Get(
 		j,
 		"networkPolicyConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) StatefulHaConfig() DataGoogleContainerClusterAddonsConfigStatefulHaConfigList {
+	var returns DataGoogleContainerClusterAddonsConfigStatefulHaConfigList
+	_jsii_.Get(
+		j,
+		"statefulHaConfig",
 		&returns,
 	)
 	return returns

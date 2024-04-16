@@ -87,6 +87,10 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutNetwo
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutStatefulHaConfigParameters(value *ContainerClusterAddonsConfigStatefulHaConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

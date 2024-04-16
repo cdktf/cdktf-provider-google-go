@@ -44,6 +44,7 @@ type DataGoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	DiskSize() *float64
 	DiskType() *string
 	Edition() *string
+	EnableGoogleMlIntegration() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	InsightsConfig() DataGoogleSqlDatabaseInstanceSettingsInsightsConfigList
@@ -291,6 +292,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) Edition
 	_jsii_.Get(
 		j,
 		"edition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) EnableGoogleMlIntegration() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableGoogleMlIntegration",
 		&returns,
 	)
 	return returns

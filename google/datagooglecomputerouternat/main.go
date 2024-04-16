@@ -22,6 +22,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "drainNatIps", GoGetter: "DrainNatIps"},
 			_jsii_.MemberProperty{JsiiProperty: "enableDynamicPortAllocation", GoGetter: "EnableDynamicPortAllocation"},
 			_jsii_.MemberProperty{JsiiProperty: "enableEndpointIndependentMapping", GoGetter: "EnableEndpointIndependentMapping"},
+			_jsii_.MemberProperty{JsiiProperty: "endpointTypes", GoGetter: "EndpointTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},

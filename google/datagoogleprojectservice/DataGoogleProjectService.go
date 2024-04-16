@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/data-sources/project_service google_project_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/data-sources/project_service google_project_service}.
 type DataGoogleProjectService interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -334,7 +334,7 @@ func (j *jsiiProxy_DataGoogleProjectService) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/data-sources/project_service google_project_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/data-sources/project_service google_project_service} Data Source.
 func NewDataGoogleProjectService(scope constructs.Construct, id *string, config *DataGoogleProjectServiceConfig) DataGoogleProjectService {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewDataGoogleProjectService(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/data-sources/project_service google_project_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/data-sources/project_service google_project_service} Data Source.
 func NewDataGoogleProjectService_Override(d DataGoogleProjectService, scope constructs.Construct, id *string, config *DataGoogleProjectServiceConfig) {
 	_init_.Initialize()
 

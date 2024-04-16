@@ -5,9 +5,9 @@ package integrationsclient
 
 
 type IntegrationsClientTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/integrations_client#create IntegrationsClient#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/integrations_client#create IntegrationsClient#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/integrations_client#delete IntegrationsClient#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/integrations_client#delete IntegrationsClient#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

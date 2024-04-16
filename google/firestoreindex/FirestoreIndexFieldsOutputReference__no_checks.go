@@ -47,6 +47,10 @@ func (f *jsiiProxy_FirestoreIndexFieldsOutputReference) validateInterpolationFor
 	return nil
 }
 
+func (f *jsiiProxy_FirestoreIndexFieldsOutputReference) validatePutVectorConfigParameters(value *FirestoreIndexFieldsVectorConfig) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirestoreIndexFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster}.
 type GkeonpremVmwareCluster interface {
 	cdktf.TerraformResource
 	AdminClusterMembership() *string
@@ -952,7 +952,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) VmTrackingEnabledInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
 func NewGkeonpremVmwareCluster(scope constructs.Construct, id *string, config *GkeonpremVmwareClusterConfig) GkeonpremVmwareCluster {
 	_init_.Initialize()
 
@@ -970,7 +970,7 @@ func NewGkeonpremVmwareCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
 func NewGkeonpremVmwareCluster_Override(g GkeonpremVmwareCluster, scope constructs.Construct, id *string, config *GkeonpremVmwareClusterConfig) {
 	_init_.Initialize()
 

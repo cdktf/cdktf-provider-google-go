@@ -127,6 +127,10 @@ func (j *jsiiProxy_ComputeRouterNat) validateSetEnableEndpointIndependentMapping
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterNat) validateSetEndpointTypesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterNat) validateSetIcmpIdleTimeoutSecParameters(val *float64) error {
 	return nil
 }

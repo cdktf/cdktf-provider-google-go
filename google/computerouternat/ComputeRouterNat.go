@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/compute_router_nat google_compute_router_nat}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/compute_router_nat google_compute_router_nat}.
 type ComputeRouterNat interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,6 +40,9 @@ type ComputeRouterNat interface {
 	EnableEndpointIndependentMapping() interface{}
 	SetEnableEndpointIndependentMapping(val interface{})
 	EnableEndpointIndependentMappingInput() interface{}
+	EndpointTypes() *[]*string
+	SetEndpointTypes(val *[]*string)
+	EndpointTypesInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -173,6 +176,7 @@ type ComputeRouterNat interface {
 	ResetDrainNatIps()
 	ResetEnableDynamicPortAllocation()
 	ResetEnableEndpointIndependentMapping()
+	ResetEndpointTypes()
 	ResetIcmpIdleTimeoutSec()
 	ResetId()
 	ResetLogConfig()
@@ -315,6 +319,26 @@ func (j *jsiiProxy_ComputeRouterNat) EnableEndpointIndependentMappingInput() int
 	_jsii_.Get(
 		j,
 		"enableEndpointIndependentMappingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterNat) EndpointTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"endpointTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterNat) EndpointTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"endpointTypesInput",
 		&returns,
 	)
 	return returns
@@ -811,7 +835,7 @@ func (j *jsiiProxy_ComputeRouterNat) UdpIdleTimeoutSecInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
 func NewComputeRouterNat(scope constructs.Construct, id *string, config *ComputeRouterNatConfig) ComputeRouterNat {
 	_init_.Initialize()
 
@@ -829,7 +853,7 @@ func NewComputeRouterNat(scope constructs.Construct, id *string, config *Compute
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
 func NewComputeRouterNat_Override(c ComputeRouterNat, scope constructs.Construct, id *string, config *ComputeRouterNatConfig) {
 	_init_.Initialize()
 
@@ -899,6 +923,17 @@ func (j *jsiiProxy_ComputeRouterNat)SetEnableEndpointIndependentMapping(val inte
 	_jsii_.Set(
 		j,
 		"enableEndpointIndependentMapping",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterNat)SetEndpointTypes(val *[]*string) {
+	if err := j.validateSetEndpointTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointTypes",
 		val,
 	)
 }
@@ -1523,6 +1558,14 @@ func (c *jsiiProxy_ComputeRouterNat) ResetEnableEndpointIndependentMapping() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnableEndpointIndependentMapping",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterNat) ResetEndpointTypes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEndpointTypes",
 		nil, // no parameters
 	)
 }

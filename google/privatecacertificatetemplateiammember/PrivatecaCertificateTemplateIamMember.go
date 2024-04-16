@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/privateca_certificate_template_iam_member google_privateca_certificate_template_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/privateca_certificate_template_iam_member google_privateca_certificate_template_iam_member}.
 type PrivatecaCertificateTemplateIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIamMember) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/privateca_certificate_template_iam_member google_privateca_certificate_template_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/privateca_certificate_template_iam_member google_privateca_certificate_template_iam_member} Resource.
 func NewPrivatecaCertificateTemplateIamMember(scope constructs.Construct, id *string, config *PrivatecaCertificateTemplateIamMemberConfig) PrivatecaCertificateTemplateIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewPrivatecaCertificateTemplateIamMember(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.24.0/docs/resources/privateca_certificate_template_iam_member google_privateca_certificate_template_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/privateca_certificate_template_iam_member google_privateca_certificate_template_iam_member} Resource.
 func NewPrivatecaCertificateTemplateIamMember_Override(p PrivatecaCertificateTemplateIamMember, scope constructs.Construct, id *string, config *PrivatecaCertificateTemplateIamMemberConfig) {
 	_init_.Initialize()
 

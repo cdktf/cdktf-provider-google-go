@@ -469,6 +469,14 @@ func (j *jsiiProxy_ComputeRouterNat) validateSetEnableEndpointIndependentMapping
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterNat) validateSetEndpointTypesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterNat) validateSetIcmpIdleTimeoutSecParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
