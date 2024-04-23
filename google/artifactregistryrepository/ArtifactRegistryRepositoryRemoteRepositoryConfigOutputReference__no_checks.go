@@ -91,6 +91,10 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validateSetDisableUpstreamValidationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validateSetInternalValueParameters(val *ArtifactRegistryRepositoryRemoteRepositoryConfig) error {
 	return nil
 }

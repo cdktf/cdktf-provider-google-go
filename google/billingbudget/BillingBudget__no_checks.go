@@ -135,6 +135,10 @@ func (j *jsiiProxy_BillingBudget) validateSetLifecycleParameters(val *cdktf.Terr
 	return nil
 }
 
+func (j *jsiiProxy_BillingBudget) validateSetOwnershipScopeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BillingBudget) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

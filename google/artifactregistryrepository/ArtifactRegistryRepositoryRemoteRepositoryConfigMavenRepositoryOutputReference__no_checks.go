@@ -47,6 +47,10 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenReposito
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) validatePutCustomRepositoryParameters(value *ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

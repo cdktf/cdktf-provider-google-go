@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/data-sources/dns_keys google_dns_keys}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/dns_keys google_dns_keys}.
 type DataGoogleDnsKeys interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -36,6 +36,8 @@ type DataGoogleDnsKeys interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	SetId(val *string)
+	IdInput() *string
 	KeySigningKeys() DataGoogleDnsKeysKeySigningKeysList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -87,6 +89,7 @@ type DataGoogleDnsKeys interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -185,6 +188,16 @@ func (j *jsiiProxy_DataGoogleDnsKeys) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleDnsKeys) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
 		&returns,
 	)
 	return returns
@@ -321,7 +334,7 @@ func (j *jsiiProxy_DataGoogleDnsKeys) ZoneSigningKeys() DataGoogleDnsKeysZoneSig
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/data-sources/dns_keys google_dns_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/dns_keys google_dns_keys} Data Source.
 func NewDataGoogleDnsKeys(scope constructs.Construct, id *string, config *DataGoogleDnsKeysConfig) DataGoogleDnsKeys {
 	_init_.Initialize()
 
@@ -339,7 +352,7 @@ func NewDataGoogleDnsKeys(scope constructs.Construct, id *string, config *DataGo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/data-sources/dns_keys google_dns_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/dns_keys google_dns_keys} Data Source.
 func NewDataGoogleDnsKeys_Override(d DataGoogleDnsKeys, scope constructs.Construct, id *string, config *DataGoogleDnsKeysConfig) {
 	_init_.Initialize()
 
@@ -373,6 +386,17 @@ func (j *jsiiProxy_DataGoogleDnsKeys)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGoogleDnsKeys)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
 		val,
 	)
 }
@@ -700,6 +724,14 @@ func (d *jsiiProxy_DataGoogleDnsKeys) OverrideLogicalId(newLogicalId *string) {
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGoogleDnsKeys) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
 	)
 }
 

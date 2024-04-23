@@ -277,6 +277,22 @@ func (j *jsiiProxy_ApigeeOrganization) validateSetAnalyticsRegionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ApigeeOrganization) validateSetApiConsumerDataEncryptionKeyNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApigeeOrganization) validateSetApiConsumerDataLocationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApigeeOrganization) validateSetAuthorizedNetworkParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -321,6 +337,14 @@ func (j *jsiiProxy_ApigeeOrganization) validateSetConnectionParameters(val inter
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *cdktf.SSHProvisionerConnection, *cdktf.WinrmProvisionerConnection; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ApigeeOrganization) validateSetControlPlaneEncryptionKeyNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

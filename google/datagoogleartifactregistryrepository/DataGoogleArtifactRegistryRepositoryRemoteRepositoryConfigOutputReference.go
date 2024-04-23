@@ -30,6 +30,7 @@ type DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference i
 	// Experimental.
 	CreationStack() *[]*string
 	Description() *string
+	DisableUpstreamValidation() cdktf.IResolvable
 	DockerRepository() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryList
 	// Experimental.
 	Fqn() *string
@@ -132,6 +133,16 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOut
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) DisableUpstreamValidation() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"disableUpstreamValidation",
 		&returns,
 	)
 	return returns

@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesList) validateResolvePar
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

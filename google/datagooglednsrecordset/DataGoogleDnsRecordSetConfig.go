@@ -22,21 +22,18 @@ type DataGoogleDnsRecordSetConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The Name of the zone.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/data-sources/dns_record_set#managed_zone DataGoogleDnsRecordSet#managed_zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/dns_record_set#managed_zone DataGoogleDnsRecordSet#managed_zone}.
 	ManagedZone *string `field:"required" json:"managedZone" yaml:"managedZone"`
-	// The DNS name for the resource.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/data-sources/dns_record_set#name DataGoogleDnsRecordSet#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/dns_record_set#name DataGoogleDnsRecordSet#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// The identifier of a supported record type. See the list of Supported DNS record types.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/data-sources/dns_record_set#type DataGoogleDnsRecordSet#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/dns_record_set#type DataGoogleDnsRecordSet#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// The ID of the project for the Google Cloud.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/dns_record_set#id DataGoogleDnsRecordSet#id}.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/data-sources/dns_record_set#project DataGoogleDnsRecordSet#project}
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/dns_record_set#project DataGoogleDnsRecordSet#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

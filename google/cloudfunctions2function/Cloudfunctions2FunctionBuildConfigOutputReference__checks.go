@@ -217,6 +217,14 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) validateSetServiceAccountParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -45,6 +45,9 @@ type Cloudfunctions2FunctionBuildConfigOutputReference interface {
 	Runtime() *string
 	SetRuntime(val *string)
 	RuntimeInput() *string
+	ServiceAccount() *string
+	SetServiceAccount(val *string)
+	ServiceAccountInput() *string
 	Source() Cloudfunctions2FunctionBuildConfigSourceOutputReference
 	SourceInput() *Cloudfunctions2FunctionBuildConfigSource
 	// Experimental.
@@ -87,6 +90,7 @@ type Cloudfunctions2FunctionBuildConfigOutputReference interface {
 	ResetEntryPoint()
 	ResetEnvironmentVariables()
 	ResetRuntime()
+	ResetServiceAccount()
 	ResetSource()
 	ResetWorkerPool()
 	// Produce the Token's value at resolution time.
@@ -239,6 +243,26 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) RuntimeInp
 	_jsii_.Get(
 		j,
 		"runtimeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) ServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) ServiceAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountInput",
 		&returns,
 	)
 	return returns
@@ -405,6 +429,17 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference)SetRuntime(
 	_jsii_.Set(
 		j,
 		"runtime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference)SetServiceAccount(val *string) {
+	if err := j.validateSetServiceAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccount",
 		val,
 	)
 }
@@ -667,6 +702,14 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) ResetRunti
 	_jsii_.InvokeVoid(
 		c,
 		"resetRuntime",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) ResetServiceAccount() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetServiceAccount",
 		nil, // no parameters
 	)
 }

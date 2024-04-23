@@ -24,34 +24,34 @@ type StorageInsightsReportConfigConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// csv_options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/storage_insights_report_config#csv_options StorageInsightsReportConfig#csv_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/storage_insights_report_config#csv_options StorageInsightsReportConfig#csv_options}
 	CsvOptions *StorageInsightsReportConfigCsvOptions `field:"required" json:"csvOptions" yaml:"csvOptions"`
 	// The location of the ReportConfig. The source and destination buckets specified in the ReportConfig must be in the same location.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/storage_insights_report_config#location StorageInsightsReportConfig#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/storage_insights_report_config#location StorageInsightsReportConfig#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The editable display name of the inventory report configuration. Has a limit of 256 characters. Can be empty.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/storage_insights_report_config#display_name StorageInsightsReportConfig#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/storage_insights_report_config#display_name StorageInsightsReportConfig#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
 	// frequency_options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/storage_insights_report_config#frequency_options StorageInsightsReportConfig#frequency_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/storage_insights_report_config#frequency_options StorageInsightsReportConfig#frequency_options}
 	FrequencyOptions *StorageInsightsReportConfigFrequencyOptions `field:"optional" json:"frequencyOptions" yaml:"frequencyOptions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/storage_insights_report_config#id StorageInsightsReportConfig#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/storage_insights_report_config#id StorageInsightsReportConfig#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// object_metadata_report_options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/storage_insights_report_config#object_metadata_report_options StorageInsightsReportConfig#object_metadata_report_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/storage_insights_report_config#object_metadata_report_options StorageInsightsReportConfig#object_metadata_report_options}
 	ObjectMetadataReportOptions *StorageInsightsReportConfigObjectMetadataReportOptions `field:"optional" json:"objectMetadataReportOptions" yaml:"objectMetadataReportOptions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/storage_insights_report_config#project StorageInsightsReportConfig#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/storage_insights_report_config#project StorageInsightsReportConfig#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/storage_insights_report_config#timeouts StorageInsightsReportConfig#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/storage_insights_report_config#timeouts StorageInsightsReportConfig#timeouts}
 	Timeouts *StorageInsightsReportConfigTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

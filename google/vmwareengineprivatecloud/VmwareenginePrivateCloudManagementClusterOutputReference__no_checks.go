@@ -51,6 +51,10 @@ func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterOutputReference) val
 	return nil
 }
 
+func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterOutputReference) validatePutStretchedClusterConfigParameters(value *VmwareenginePrivateCloudManagementClusterStretchedClusterConfig) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

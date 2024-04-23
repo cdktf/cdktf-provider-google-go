@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/bigtable_app_profile google_bigtable_app_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/bigtable_app_profile google_bigtable_app_profile}.
 type BigtableAppProfile interface {
 	cdktf.TerraformResource
 	AppProfileId() *string
@@ -560,7 +560,7 @@ func (j *jsiiProxy_BigtableAppProfile) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/bigtable_app_profile google_bigtable_app_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/bigtable_app_profile google_bigtable_app_profile} Resource.
 func NewBigtableAppProfile(scope constructs.Construct, id *string, config *BigtableAppProfileConfig) BigtableAppProfile {
 	_init_.Initialize()
 
@@ -578,7 +578,7 @@ func NewBigtableAppProfile(scope constructs.Construct, id *string, config *Bigta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/bigtable_app_profile google_bigtable_app_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/bigtable_app_profile google_bigtable_app_profile} Resource.
 func NewBigtableAppProfile_Override(b BigtableAppProfile, scope constructs.Construct, id *string, config *BigtableAppProfileConfig) {
 	_init_.Initialize()
 

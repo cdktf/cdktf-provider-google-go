@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/integrations_client google_integrations_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/integrations_client google_integrations_client}.
 type IntegrationsClient interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -477,7 +477,7 @@ func (j *jsiiProxy_IntegrationsClient) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/integrations_client google_integrations_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/integrations_client google_integrations_client} Resource.
 func NewIntegrationsClient(scope constructs.Construct, id *string, config *IntegrationsClientConfig) IntegrationsClient {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewIntegrationsClient(scope constructs.Construct, id *string, config *Integ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/resources/integrations_client google_integrations_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/integrations_client google_integrations_client} Resource.
 func NewIntegrationsClient_Override(i IntegrationsClient, scope constructs.Construct, id *string, config *IntegrationsClientConfig) {
 	_init_.Initialize()
 

@@ -33,6 +33,9 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableUpstreamValidation() interface{}
+	SetDisableUpstreamValidation(val interface{})
+	DisableUpstreamValidationInput() interface{}
 	DockerRepository() ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference
 	DockerRepositoryInput() *ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository
 	// Experimental.
@@ -90,6 +93,7 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 	PutYumRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository)
 	ResetAptRepository()
 	ResetDescription()
+	ResetDisableUpstreamValidation()
 	ResetDockerRepository()
 	ResetMavenRepository()
 	ResetNpmRepository()
@@ -176,6 +180,26 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) DisableUpstreamValidation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableUpstreamValidation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) DisableUpstreamValidationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableUpstreamValidationInput",
 		&returns,
 	)
 	return returns
@@ -398,6 +422,17 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference)SetDisableUpstreamValidation(val interface{}) {
+	if err := j.validateSetDisableUpstreamValidationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableUpstreamValidation",
 		val,
 	)
 }
@@ -710,6 +745,14 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	_jsii_.InvokeVoid(
 		a,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ResetDisableUpstreamValidation() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDisableUpstreamValidation",
 		nil, // no parameters
 	)
 }

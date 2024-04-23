@@ -103,6 +103,14 @@ func (j *jsiiProxy_ApigeeOrganization) validateSetAnalyticsRegionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ApigeeOrganization) validateSetApiConsumerDataEncryptionKeyNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApigeeOrganization) validateSetApiConsumerDataLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApigeeOrganization) validateSetAuthorizedNetworkParameters(val *string) error {
 	return nil
 }
@@ -112,6 +120,10 @@ func (j *jsiiProxy_ApigeeOrganization) validateSetBillingTypeParameters(val *str
 }
 
 func (j *jsiiProxy_ApigeeOrganization) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApigeeOrganization) validateSetControlPlaneEncryptionKeyNameParameters(val *string) error {
 	return nil
 }
 

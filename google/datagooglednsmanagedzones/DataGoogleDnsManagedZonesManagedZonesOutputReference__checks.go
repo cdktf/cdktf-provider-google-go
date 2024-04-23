@@ -166,25 +166,9 @@ func (j *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataGoogleDnsManagedZonesManagedZones:
-		val := val.(*DataGoogleDnsManagedZonesManagedZones)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataGoogleDnsManagedZonesManagedZones:
-		val_ := val.(DataGoogleDnsManagedZonesManagedZones)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataGoogleDnsManagedZonesManagedZones; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference) validateSetInternalValueParameters(val *DataGoogleDnsManagedZonesManagedZones) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

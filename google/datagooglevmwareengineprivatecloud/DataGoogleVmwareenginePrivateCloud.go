@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/data-sources/vmwareengine_private_cloud google_vmwareengine_private_cloud}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/vmwareengine_private_cloud google_vmwareengine_private_cloud}.
 type DataGoogleVmwareenginePrivateCloud interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -55,7 +55,6 @@ type DataGoogleVmwareenginePrivateCloud interface {
 	// The tree node.
 	Node() constructs.Node
 	Nsx() DataGoogleVmwareenginePrivateCloudNsxList
-	PreferredZone() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -65,7 +64,6 @@ type DataGoogleVmwareenginePrivateCloud interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	SecondaryZone() *string
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -325,16 +323,6 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) Nsx() DataGoogleVmwareeng
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) PreferredZone() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"preferredZone",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -370,16 +358,6 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) RawOverrides() interface{
 	_jsii_.Get(
 		j,
 		"rawOverrides",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) SecondaryZone() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"secondaryZone",
 		&returns,
 	)
 	return returns
@@ -456,7 +434,7 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloud) Vcenter() DataGoogleVmwar
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/data-sources/vmwareengine_private_cloud google_vmwareengine_private_cloud} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/vmwareengine_private_cloud google_vmwareengine_private_cloud} Data Source.
 func NewDataGoogleVmwareenginePrivateCloud(scope constructs.Construct, id *string, config *DataGoogleVmwareenginePrivateCloudConfig) DataGoogleVmwareenginePrivateCloud {
 	_init_.Initialize()
 
@@ -474,7 +452,7 @@ func NewDataGoogleVmwareenginePrivateCloud(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.25.0/docs/data-sources/vmwareengine_private_cloud google_vmwareengine_private_cloud} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/data-sources/vmwareengine_private_cloud google_vmwareengine_private_cloud} Data Source.
 func NewDataGoogleVmwareenginePrivateCloud_Override(d DataGoogleVmwareenginePrivateCloud, scope constructs.Construct, id *string, config *DataGoogleVmwareenginePrivateCloudConfig) {
 	_init_.Initialize()
 
