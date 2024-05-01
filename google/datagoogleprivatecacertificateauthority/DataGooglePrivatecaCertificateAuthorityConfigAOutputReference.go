@@ -33,6 +33,7 @@ type DataGooglePrivatecaCertificateAuthorityConfigAOutputReference interface {
 	InternalValue() *DataGooglePrivatecaCertificateAuthorityConfigA
 	SetInternalValue(val *DataGooglePrivatecaCertificateAuthorityConfigA)
 	SubjectConfig() DataGooglePrivatecaCertificateAuthorityConfigSubjectConfigList
+	SubjectKeyId() DataGooglePrivatecaCertificateAuthorityConfigSubjectKeyIdList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -136,6 +137,16 @@ func (j *jsiiProxy_DataGooglePrivatecaCertificateAuthorityConfigAOutputReference
 	_jsii_.Get(
 		j,
 		"subjectConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePrivatecaCertificateAuthorityConfigAOutputReference) SubjectKeyId() DataGooglePrivatecaCertificateAuthorityConfigSubjectKeyIdList {
+	var returns DataGooglePrivatecaCertificateAuthorityConfigSubjectKeyIdList
+	_jsii_.Get(
+		j,
+		"subjectKeyId",
 		&returns,
 	)
 	return returns

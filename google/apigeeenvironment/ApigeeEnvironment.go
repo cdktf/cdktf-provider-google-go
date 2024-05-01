@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/apigee_environment google_apigee_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/apigee_environment google_apigee_environment}.
 type ApigeeEnvironment interface {
 	cdktf.TerraformResource
 	ApiProxyType() *string
@@ -47,6 +47,9 @@ type ApigeeEnvironment interface {
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktf.ITerraformIterator)
+	ForwardProxyUri() *string
+	SetForwardProxyUri(val *string)
+	ForwardProxyUriInput() *string
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -138,6 +141,7 @@ type ApigeeEnvironment interface {
 	ResetDeploymentType()
 	ResetDescription()
 	ResetDisplayName()
+	ResetForwardProxyUri()
 	ResetId()
 	ResetNodeConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -298,6 +302,26 @@ func (j *jsiiProxy_ApigeeEnvironment) ForEach() cdktf.ITerraformIterator {
 	_jsii_.Get(
 		j,
 		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeEnvironment) ForwardProxyUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"forwardProxyUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeEnvironment) ForwardProxyUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"forwardProxyUriInput",
 		&returns,
 	)
 	return returns
@@ -524,7 +548,7 @@ func (j *jsiiProxy_ApigeeEnvironment) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/apigee_environment google_apigee_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/apigee_environment google_apigee_environment} Resource.
 func NewApigeeEnvironment(scope constructs.Construct, id *string, config *ApigeeEnvironmentConfig) ApigeeEnvironment {
 	_init_.Initialize()
 
@@ -542,7 +566,7 @@ func NewApigeeEnvironment(scope constructs.Construct, id *string, config *Apigee
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/apigee_environment google_apigee_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/apigee_environment google_apigee_environment} Resource.
 func NewApigeeEnvironment_Override(a ApigeeEnvironment, scope constructs.Construct, id *string, config *ApigeeEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -631,6 +655,17 @@ func (j *jsiiProxy_ApigeeEnvironment)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApigeeEnvironment)SetForwardProxyUri(val *string) {
+	if err := j.validateSetForwardProxyUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forwardProxyUri",
 		val,
 	)
 }
@@ -1112,6 +1147,14 @@ func (a *jsiiProxy_ApigeeEnvironment) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApigeeEnvironment) ResetForwardProxyUri() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetForwardProxyUri",
 		nil, // no parameters
 	)
 }

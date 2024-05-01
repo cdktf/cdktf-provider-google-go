@@ -67,6 +67,10 @@ func (j *jsiiProxy_BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference) validateSetRoutineParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

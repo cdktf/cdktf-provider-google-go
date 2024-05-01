@@ -59,6 +59,10 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) validate
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) validatePutServiceAgentAuthenticationParameters(value *MonitoringUptimeCheckConfigHttpCheckServiceAgentAuthentication) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

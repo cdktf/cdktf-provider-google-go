@@ -51,6 +51,10 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigAOutputReference) validate
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigAOutputReference) validatePutSubjectKeyIdParameters(value *PrivatecaCertificateAuthorityConfigSubjectKeyId) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigAOutputReference) validatePutX509ConfigParameters(value *PrivatecaCertificateAuthorityConfigX509Config) error {
 	return nil
 }

@@ -155,6 +155,10 @@ func (j *jsiiProxy_SecretManagerSecret) validateSetVersionAliasesParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SecretManagerSecret) validateSetVersionDestroyTtlParameters(val *string) error {
+	return nil
+}
+
 func validateNewSecretManagerSecretParameters(scope constructs.Construct, id *string, config *SecretManagerSecretConfig) error {
 	return nil
 }

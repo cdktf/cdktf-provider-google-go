@@ -35,6 +35,9 @@ type BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference interface {
 	PredefinedExpression() *string
 	SetPredefinedExpression(val *string)
 	PredefinedExpressionInput() *string
+	Routine() *string
+	SetRoutine(val *string)
+	RoutineInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,8 @@ type BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPredefinedExpression()
+	ResetRoutine()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +152,26 @@ func (j *jsiiProxy_BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference)
 	_jsii_.Get(
 		j,
 		"predefinedExpressionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference) Routine() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference) RoutineInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routineInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +265,17 @@ func (j *jsiiProxy_BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference)
 	_jsii_.Set(
 		j,
 		"predefinedExpression",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference)SetRoutine(val *string) {
+	if err := j.validateSetRoutineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routine",
 		val,
 	)
 }
@@ -450,6 +486,22 @@ func (b *jsiiProxy_BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference)
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference) ResetPredefinedExpression() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetPredefinedExpression",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference) ResetRoutine() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRoutine",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BigqueryDatapolicyDataPolicyDataMaskingPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

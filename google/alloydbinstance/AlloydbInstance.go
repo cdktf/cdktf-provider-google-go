@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/alloydb_instance google_alloydb_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/alloydb_instance google_alloydb_instance}.
 type AlloydbInstance interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -82,6 +82,8 @@ type AlloydbInstance interface {
 	MachineConfig() AlloydbInstanceMachineConfigOutputReference
 	MachineConfigInput() *AlloydbInstanceMachineConfig
 	Name() *string
+	NetworkConfig() AlloydbInstanceNetworkConfigOutputReference
+	NetworkConfigInput() *AlloydbInstanceNetworkConfig
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -92,6 +94,7 @@ type AlloydbInstance interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicIpAddress() *string
 	QueryInsightsConfig() AlloydbInstanceQueryInsightsConfigOutputReference
 	QueryInsightsConfigInput() *AlloydbInstanceQueryInsightsConfig
 	// Experimental.
@@ -156,6 +159,7 @@ type AlloydbInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutClientConnectionConfig(value *AlloydbInstanceClientConnectionConfig)
 	PutMachineConfig(value *AlloydbInstanceMachineConfig)
+	PutNetworkConfig(value *AlloydbInstanceNetworkConfig)
 	PutQueryInsightsConfig(value *AlloydbInstanceQueryInsightsConfig)
 	PutReadPoolConfig(value *AlloydbInstanceReadPoolConfig)
 	PutTimeouts(value *AlloydbInstanceTimeouts)
@@ -168,6 +172,7 @@ type AlloydbInstance interface {
 	ResetId()
 	ResetLabels()
 	ResetMachineConfig()
+	ResetNetworkConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -572,6 +577,26 @@ func (j *jsiiProxy_AlloydbInstance) Name() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbInstance) NetworkConfig() AlloydbInstanceNetworkConfigOutputReference {
+	var returns AlloydbInstanceNetworkConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstance) NetworkConfigInput() *AlloydbInstanceNetworkConfig {
+	var returns *AlloydbInstanceNetworkConfig
+	_jsii_.Get(
+		j,
+		"networkConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbInstance) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -597,6 +622,16 @@ func (j *jsiiProxy_AlloydbInstance) Provisioners() *[]interface{} {
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstance) PublicIpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicIpAddress",
 		&returns,
 	)
 	return returns
@@ -753,7 +788,7 @@ func (j *jsiiProxy_AlloydbInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
 func NewAlloydbInstance(scope constructs.Construct, id *string, config *AlloydbInstanceConfig) AlloydbInstance {
 	_init_.Initialize()
 
@@ -771,7 +806,7 @@ func NewAlloydbInstance(scope constructs.Construct, id *string, config *AlloydbI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.26.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
 func NewAlloydbInstance_Override(a AlloydbInstance, scope constructs.Construct, id *string, config *AlloydbInstanceConfig) {
 	_init_.Initialize()
 
@@ -1335,6 +1370,17 @@ func (a *jsiiProxy_AlloydbInstance) PutMachineConfig(value *AlloydbInstanceMachi
 	)
 }
 
+func (a *jsiiProxy_AlloydbInstance) PutNetworkConfig(value *AlloydbInstanceNetworkConfig) {
+	if err := a.validatePutNetworkConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putNetworkConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlloydbInstance) PutQueryInsightsConfig(value *AlloydbInstanceQueryInsightsConfig) {
 	if err := a.validatePutQueryInsightsConfigParameters(value); err != nil {
 		panic(err)
@@ -1436,6 +1482,14 @@ func (a *jsiiProxy_AlloydbInstance) ResetMachineConfig() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetMachineConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbInstance) ResetNetworkConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNetworkConfig",
 		nil, // no parameters
 	)
 }

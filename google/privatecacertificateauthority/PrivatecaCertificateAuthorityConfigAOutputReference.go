@@ -34,6 +34,8 @@ type PrivatecaCertificateAuthorityConfigAOutputReference interface {
 	SetInternalValue(val *PrivatecaCertificateAuthorityConfigA)
 	SubjectConfig() PrivatecaCertificateAuthorityConfigSubjectConfigOutputReference
 	SubjectConfigInput() *PrivatecaCertificateAuthorityConfigSubjectConfig
+	SubjectKeyId() PrivatecaCertificateAuthorityConfigSubjectKeyIdOutputReference
+	SubjectKeyIdInput() *PrivatecaCertificateAuthorityConfigSubjectKeyId
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,7 +71,9 @@ type PrivatecaCertificateAuthorityConfigAOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutSubjectConfig(value *PrivatecaCertificateAuthorityConfigSubjectConfig)
+	PutSubjectKeyId(value *PrivatecaCertificateAuthorityConfigSubjectKeyId)
 	PutX509Config(value *PrivatecaCertificateAuthorityConfigX509Config)
+	ResetSubjectKeyId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -150,6 +154,26 @@ func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigAOutputReference) SubjectC
 	_jsii_.Get(
 		j,
 		"subjectConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigAOutputReference) SubjectKeyId() PrivatecaCertificateAuthorityConfigSubjectKeyIdOutputReference {
+	var returns PrivatecaCertificateAuthorityConfigSubjectKeyIdOutputReference
+	_jsii_.Get(
+		j,
+		"subjectKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrivatecaCertificateAuthorityConfigAOutputReference) SubjectKeyIdInput() *PrivatecaCertificateAuthorityConfigSubjectKeyId {
+	var returns *PrivatecaCertificateAuthorityConfigSubjectKeyId
+	_jsii_.Get(
+		j,
+		"subjectKeyIdInput",
 		&returns,
 	)
 	return returns
@@ -475,6 +499,17 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigAOutputReference) PutSubje
 	)
 }
 
+func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigAOutputReference) PutSubjectKeyId(value *PrivatecaCertificateAuthorityConfigSubjectKeyId) {
+	if err := p.validatePutSubjectKeyIdParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putSubjectKeyId",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigAOutputReference) PutX509Config(value *PrivatecaCertificateAuthorityConfigX509Config) {
 	if err := p.validatePutX509ConfigParameters(value); err != nil {
 		panic(err)
@@ -483,6 +518,14 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigAOutputReference) PutX509C
 		p,
 		"putX509Config",
 		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigAOutputReference) ResetSubjectKeyId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSubjectKeyId",
+		nil, // no parameters
 	)
 }
 
