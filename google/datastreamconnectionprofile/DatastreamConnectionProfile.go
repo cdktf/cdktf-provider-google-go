@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/datastream_connection_profile google_datastream_connection_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/datastream_connection_profile google_datastream_connection_profile}.
 type DatastreamConnectionProfile interface {
 	cdktf.TerraformResource
 	BigqueryProfile() DatastreamConnectionProfileBigqueryProfileOutputReference
@@ -652,7 +652,7 @@ func (j *jsiiProxy_DatastreamConnectionProfile) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/datastream_connection_profile google_datastream_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/datastream_connection_profile google_datastream_connection_profile} Resource.
 func NewDatastreamConnectionProfile(scope constructs.Construct, id *string, config *DatastreamConnectionProfileConfig) DatastreamConnectionProfile {
 	_init_.Initialize()
 
@@ -670,7 +670,7 @@ func NewDatastreamConnectionProfile(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/datastream_connection_profile google_datastream_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/datastream_connection_profile google_datastream_connection_profile} Resource.
 func NewDatastreamConnectionProfile_Override(d DatastreamConnectionProfile, scope constructs.Construct, id *string, config *DatastreamConnectionProfileConfig) {
 	_init_.Initialize()
 

@@ -135,6 +135,10 @@ func (j *jsiiProxy_RedisCluster) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_RedisCluster) validateSetRedisConfigsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisCluster) validateSetRegionParameters(val *string) error {
 	return nil
 }

@@ -107,6 +107,10 @@ func (j *jsiiProxy_IntegrationsClient) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationsClient) validateSetCreateSampleIntegrationsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationsClient) validateSetCreateSampleWorkflowsParameters(val interface{}) error {
 	return nil
 }

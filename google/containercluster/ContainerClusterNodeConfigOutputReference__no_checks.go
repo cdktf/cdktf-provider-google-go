@@ -95,6 +95,10 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutReserva
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutSecondaryBootDisksParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutShieldedInstanceConfigParameters(value *ContainerClusterNodeConfigShieldedInstanceConfig) error {
 	return nil
 }

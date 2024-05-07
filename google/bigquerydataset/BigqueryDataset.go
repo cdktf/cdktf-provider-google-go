@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/bigquery_dataset google_bigquery_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/bigquery_dataset google_bigquery_dataset}.
 type BigqueryDataset interface {
 	cdktf.TerraformResource
 	Access() BigqueryDatasetAccessList
@@ -56,6 +56,8 @@ type BigqueryDataset interface {
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
 	Etag() *string
+	ExternalDatasetReference() BigqueryDatasetExternalDatasetReferenceOutputReference
+	ExternalDatasetReferenceInput() *BigqueryDatasetExternalDatasetReference
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -160,6 +162,7 @@ type BigqueryDataset interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAccess(value interface{})
 	PutDefaultEncryptionConfiguration(value *BigqueryDatasetDefaultEncryptionConfiguration)
+	PutExternalDatasetReference(value *BigqueryDatasetExternalDatasetReference)
 	PutTimeouts(value *BigqueryDatasetTimeouts)
 	ResetAccess()
 	ResetDefaultCollation()
@@ -168,6 +171,7 @@ type BigqueryDataset interface {
 	ResetDefaultTableExpirationMs()
 	ResetDeleteContentsOnDestroy()
 	ResetDescription()
+	ResetExternalDatasetReference()
 	ResetFriendlyName()
 	ResetId()
 	ResetIsCaseInsensitive()
@@ -433,6 +437,26 @@ func (j *jsiiProxy_BigqueryDataset) Etag() *string {
 	_jsii_.Get(
 		j,
 		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDataset) ExternalDatasetReference() BigqueryDatasetExternalDatasetReferenceOutputReference {
+	var returns BigqueryDatasetExternalDatasetReferenceOutputReference
+	_jsii_.Get(
+		j,
+		"externalDatasetReference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDataset) ExternalDatasetReferenceInput() *BigqueryDatasetExternalDatasetReference {
+	var returns *BigqueryDatasetExternalDatasetReference
+	_jsii_.Get(
+		j,
+		"externalDatasetReferenceInput",
 		&returns,
 	)
 	return returns
@@ -759,7 +783,7 @@ func (j *jsiiProxy_BigqueryDataset) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/bigquery_dataset google_bigquery_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/bigquery_dataset google_bigquery_dataset} Resource.
 func NewBigqueryDataset(scope constructs.Construct, id *string, config *BigqueryDatasetConfig) BigqueryDataset {
 	_init_.Initialize()
 
@@ -777,7 +801,7 @@ func NewBigqueryDataset(scope constructs.Construct, id *string, config *Bigquery
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/bigquery_dataset google_bigquery_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/bigquery_dataset google_bigquery_dataset} Resource.
 func NewBigqueryDataset_Override(b BigqueryDataset, scope constructs.Construct, id *string, config *BigqueryDatasetConfig) {
 	_init_.Initialize()
 
@@ -1385,6 +1409,17 @@ func (b *jsiiProxy_BigqueryDataset) PutDefaultEncryptionConfiguration(value *Big
 	)
 }
 
+func (b *jsiiProxy_BigqueryDataset) PutExternalDatasetReference(value *BigqueryDatasetExternalDatasetReference) {
+	if err := b.validatePutExternalDatasetReferenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putExternalDatasetReference",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigqueryDataset) PutTimeouts(value *BigqueryDatasetTimeouts) {
 	if err := b.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1448,6 +1483,14 @@ func (b *jsiiProxy_BigqueryDataset) ResetDescription() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryDataset) ResetExternalDatasetReference() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetExternalDatasetReference",
 		nil, // no parameters
 	)
 }

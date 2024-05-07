@@ -7,11 +7,11 @@ package artifactregistryrepository
 type ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository struct {
 	// custom_repository block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/artifact_registry_repository#custom_repository ArtifactRegistryRepository#custom_repository}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/artifact_registry_repository#custom_repository ArtifactRegistryRepository#custom_repository}
 	CustomRepository *ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepository `field:"optional" json:"customRepository" yaml:"customRepository"`
 	// Address of the remote repository. Default value: "NPMJS" Possible values: ["NPMJS"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/artifact_registry_repository#public_repository ArtifactRegistryRepository#public_repository}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/artifact_registry_repository#public_repository ArtifactRegistryRepository#public_repository}
 	PublicRepository *string `field:"optional" json:"publicRepository" yaml:"publicRepository"`
 }
 

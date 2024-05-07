@@ -9,7 +9,7 @@ type BigqueryTableExternalDataConfigurationJsonOptions struct {
 	//
 	// The supported values are UTF-8, UTF-16BE, UTF-16LE, UTF-32BE, and UTF-32LE. The default value is UTF-8.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/bigquery_table#encoding BigqueryTable#encoding}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/bigquery_table#encoding BigqueryTable#encoding}
 	Encoding *string `field:"optional" json:"encoding" yaml:"encoding"`
 }
 

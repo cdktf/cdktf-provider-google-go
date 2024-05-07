@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/beyondcorp_app_connection google_beyondcorp_app_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/beyondcorp_app_connection google_beyondcorp_app_connection}.
 type BeyondcorpAppConnection interface {
 	cdktf.TerraformResource
 	ApplicationEndpoint() BeyondcorpAppConnectionApplicationEndpointOutputReference
@@ -570,7 +570,7 @@ func (j *jsiiProxy_BeyondcorpAppConnection) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/beyondcorp_app_connection google_beyondcorp_app_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/beyondcorp_app_connection google_beyondcorp_app_connection} Resource.
 func NewBeyondcorpAppConnection(scope constructs.Construct, id *string, config *BeyondcorpAppConnectionConfig) BeyondcorpAppConnection {
 	_init_.Initialize()
 
@@ -588,7 +588,7 @@ func NewBeyondcorpAppConnection(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.27.0/docs/resources/beyondcorp_app_connection google_beyondcorp_app_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/beyondcorp_app_connection google_beyondcorp_app_connection} Resource.
 func NewBeyondcorpAppConnection_Override(b BeyondcorpAppConnection, scope constructs.Construct, id *string, config *BeyondcorpAppConnectionConfig) {
 	_init_.Initialize()
 

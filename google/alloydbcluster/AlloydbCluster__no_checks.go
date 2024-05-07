@@ -91,6 +91,10 @@ func (a *jsiiProxy_AlloydbCluster) validatePutInitialUserParameters(value *Alloy
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbCluster) validatePutMaintenanceUpdatePolicyParameters(value *AlloydbClusterMaintenanceUpdatePolicy) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbCluster) validatePutNetworkConfigParameters(value *AlloydbClusterNetworkConfig) error {
 	return nil
 }
