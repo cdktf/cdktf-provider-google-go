@@ -59,6 +59,10 @@ func (j *jsiiProxy_ContainerClusterNodeConfigAdvancedMachineFeaturesOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference) validateSetEnableNestedVirtualizationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference) validateSetInternalValueParameters(val *ContainerClusterNodeConfigAdvancedMachineFeatures) error {
 	return nil
 }

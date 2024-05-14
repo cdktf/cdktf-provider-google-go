@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/compute_firewall_policy_rule google_compute_firewall_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_firewall_policy_rule google_compute_firewall_policy_rule}.
 type ComputeFirewallPolicyRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -83,6 +83,9 @@ type ComputeFirewallPolicyRule interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RuleTupleCount() *float64
+	SecurityProfileGroup() *string
+	SetSecurityProfileGroup(val *string)
+	SecurityProfileGroupInput() *string
 	TargetResources() *[]*string
 	SetTargetResources(val *[]*string)
 	TargetResourcesInput() *[]*string
@@ -97,6 +100,9 @@ type ComputeFirewallPolicyRule interface {
 	TerraformResourceType() *string
 	Timeouts() ComputeFirewallPolicyRuleTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TlsInspect() interface{}
+	SetTlsInspect(val interface{})
+	TlsInspectInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -149,9 +155,11 @@ type ComputeFirewallPolicyRule interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSecurityProfileGroup()
 	ResetTargetResources()
 	ResetTargetServiceAccounts()
 	ResetTimeouts()
+	ResetTlsInspect()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -500,6 +508,26 @@ func (j *jsiiProxy_ComputeFirewallPolicyRule) RuleTupleCount() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeFirewallPolicyRule) SecurityProfileGroup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityProfileGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRule) SecurityProfileGroupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityProfileGroupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeFirewallPolicyRule) TargetResources() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -590,8 +618,28 @@ func (j *jsiiProxy_ComputeFirewallPolicyRule) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeFirewallPolicyRule) TlsInspect() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tlsInspect",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/compute_firewall_policy_rule google_compute_firewall_policy_rule} Resource.
+func (j *jsiiProxy_ComputeFirewallPolicyRule) TlsInspectInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tlsInspectInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_firewall_policy_rule google_compute_firewall_policy_rule} Resource.
 func NewComputeFirewallPolicyRule(scope constructs.Construct, id *string, config *ComputeFirewallPolicyRuleConfig) ComputeFirewallPolicyRule {
 	_init_.Initialize()
 
@@ -609,7 +657,7 @@ func NewComputeFirewallPolicyRule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/compute_firewall_policy_rule google_compute_firewall_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/compute_firewall_policy_rule google_compute_firewall_policy_rule} Resource.
 func NewComputeFirewallPolicyRule_Override(c ComputeFirewallPolicyRule, scope constructs.Construct, id *string, config *ComputeFirewallPolicyRuleConfig) {
 	_init_.Initialize()
 
@@ -776,6 +824,17 @@ func (j *jsiiProxy_ComputeFirewallPolicyRule)SetProvisioners(val *[]interface{})
 	)
 }
 
+func (j *jsiiProxy_ComputeFirewallPolicyRule)SetSecurityProfileGroup(val *string) {
+	if err := j.validateSetSecurityProfileGroupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityProfileGroup",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeFirewallPolicyRule)SetTargetResources(val *[]*string) {
 	if err := j.validateSetTargetResourcesParameters(val); err != nil {
 		panic(err)
@@ -794,6 +853,17 @@ func (j *jsiiProxy_ComputeFirewallPolicyRule)SetTargetServiceAccounts(val *[]*st
 	_jsii_.Set(
 		j,
 		"targetServiceAccounts",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRule)SetTlsInspect(val interface{}) {
+	if err := j.validateSetTlsInspectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsInspect",
 		val,
 	)
 }
@@ -1213,6 +1283,14 @@ func (c *jsiiProxy_ComputeFirewallPolicyRule) ResetOverrideLogicalId() {
 	)
 }
 
+func (c *jsiiProxy_ComputeFirewallPolicyRule) ResetSecurityProfileGroup() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSecurityProfileGroup",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeFirewallPolicyRule) ResetTargetResources() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1233,6 +1311,14 @@ func (c *jsiiProxy_ComputeFirewallPolicyRule) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeFirewallPolicyRule) ResetTlsInspect() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTlsInspect",
 		nil, // no parameters
 	)
 }

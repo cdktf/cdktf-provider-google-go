@@ -135,6 +135,10 @@ func (j *jsiiProxy_PrivatecaCertificateTemplate) validateSetLocationParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_PrivatecaCertificateTemplate) validateSetMaximumLifetimeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivatecaCertificateTemplate) validateSetNameParameters(val *string) error {
 	return nil
 }

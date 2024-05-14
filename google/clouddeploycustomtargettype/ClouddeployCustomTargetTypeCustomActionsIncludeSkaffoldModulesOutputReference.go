@@ -35,6 +35,8 @@ type ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesOutputReferen
 	Fqn() *string
 	Git() ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGitOutputReference
 	GitInput() *ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGit
+	GoogleCloudBuildRepo() ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoOutputReference
+	GoogleCloudBuildRepoInput() *ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo
 	GoogleCloudStorage() ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorageOutputReference
 	GoogleCloudStorageInput() *ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorage
 	InternalValue() interface{}
@@ -72,9 +74,11 @@ type ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesOutputReferen
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutGit(value *ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGit)
+	PutGoogleCloudBuildRepo(value *ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo)
 	PutGoogleCloudStorage(value *ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorage)
 	ResetConfigs()
 	ResetGit()
+	ResetGoogleCloudBuildRepo()
 	ResetGoogleCloudStorage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -166,6 +170,26 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModule
 	_jsii_.Get(
 		j,
 		"gitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesOutputReference) GoogleCloudBuildRepo() ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoOutputReference {
+	var returns ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoOutputReference
+	_jsii_.Get(
+		j,
+		"googleCloudBuildRepo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesOutputReference) GoogleCloudBuildRepoInput() *ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo {
+	var returns *ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo
+	_jsii_.Get(
+		j,
+		"googleCloudBuildRepoInput",
 		&returns,
 	)
 	return returns
@@ -512,6 +536,17 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModule
 	)
 }
 
+func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesOutputReference) PutGoogleCloudBuildRepo(value *ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo) {
+	if err := c.validatePutGoogleCloudBuildRepoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putGoogleCloudBuildRepo",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesOutputReference) PutGoogleCloudStorage(value *ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorage) {
 	if err := c.validatePutGoogleCloudStorageParameters(value); err != nil {
 		panic(err)
@@ -535,6 +570,14 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModule
 	_jsii_.InvokeVoid(
 		c,
 		"resetGit",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesOutputReference) ResetGoogleCloudBuildRepo() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGoogleCloudBuildRepo",
 		nil, // no parameters
 	)
 }

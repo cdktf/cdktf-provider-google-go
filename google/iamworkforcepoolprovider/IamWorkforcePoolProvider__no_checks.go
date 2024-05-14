@@ -75,6 +75,10 @@ func (i *jsiiProxy_IamWorkforcePoolProvider) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (i *jsiiProxy_IamWorkforcePoolProvider) validatePutExtraAttributesOauth2ClientParameters(value *IamWorkforcePoolProviderExtraAttributesOauth2Client) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamWorkforcePoolProvider) validatePutOidcParameters(value *IamWorkforcePoolProviderOidc) error {
 	return nil
 }

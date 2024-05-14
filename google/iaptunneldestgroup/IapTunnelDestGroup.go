@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/iap_tunnel_dest_group google_iap_tunnel_dest_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/iap_tunnel_dest_group google_iap_tunnel_dest_group}.
 type IapTunnelDestGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -464,7 +464,7 @@ func (j *jsiiProxy_IapTunnelDestGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/iap_tunnel_dest_group google_iap_tunnel_dest_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/iap_tunnel_dest_group google_iap_tunnel_dest_group} Resource.
 func NewIapTunnelDestGroup(scope constructs.Construct, id *string, config *IapTunnelDestGroupConfig) IapTunnelDestGroup {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewIapTunnelDestGroup(scope constructs.Construct, id *string, config *IapTu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.28.0/docs/resources/iap_tunnel_dest_group google_iap_tunnel_dest_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/iap_tunnel_dest_group google_iap_tunnel_dest_group} Resource.
 func NewIapTunnelDestGroup_Override(i IapTunnelDestGroup, scope constructs.Construct, id *string, config *IapTunnelDestGroupConfig) {
 	_init_.Initialize()
 

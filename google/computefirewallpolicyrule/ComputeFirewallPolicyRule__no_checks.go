@@ -147,11 +147,19 @@ func (j *jsiiProxy_ComputeFirewallPolicyRule) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ComputeFirewallPolicyRule) validateSetSecurityProfileGroupParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeFirewallPolicyRule) validateSetTargetResourcesParameters(val *[]*string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ComputeFirewallPolicyRule) validateSetTargetServiceAccountsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRule) validateSetTlsInspectParameters(val interface{}) error {
 	return nil
 }
 
