@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/tags_tag_value google_tags_tag_value}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/tags_tag_value google_tags_tag_value}.
 type TagsTagValue interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -448,7 +448,7 @@ func (j *jsiiProxy_TagsTagValue) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/tags_tag_value google_tags_tag_value} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/tags_tag_value google_tags_tag_value} Resource.
 func NewTagsTagValue(scope constructs.Construct, id *string, config *TagsTagValueConfig) TagsTagValue {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewTagsTagValue(scope constructs.Construct, id *string, config *TagsTagValu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/tags_tag_value google_tags_tag_value} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/tags_tag_value google_tags_tag_value} Resource.
 func NewTagsTagValue_Override(t TagsTagValue, scope constructs.Construct, id *string, config *TagsTagValueConfig) {
 	_init_.Initialize()
 

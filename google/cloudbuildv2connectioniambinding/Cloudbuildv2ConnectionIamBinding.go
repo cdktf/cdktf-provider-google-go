@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding}.
 type Cloudbuildv2ConnectionIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionIamBinding) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding} Resource.
 func NewCloudbuildv2ConnectionIamBinding(scope constructs.Construct, id *string, config *Cloudbuildv2ConnectionIamBindingConfig) Cloudbuildv2ConnectionIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewCloudbuildv2ConnectionIamBinding(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.0/docs/resources/cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding} Resource.
 func NewCloudbuildv2ConnectionIamBinding_Override(c Cloudbuildv2ConnectionIamBinding, scope constructs.Construct, id *string, config *Cloudbuildv2ConnectionIamBindingConfig) {
 	_init_.Initialize()
 

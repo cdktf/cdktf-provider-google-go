@@ -167,10 +167,6 @@ func (j *jsiiProxy_ComputeSubnetwork) validateSetRegionParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSubnetwork) validateSetReservedInternalRangeParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ComputeSubnetwork) validateSetRoleParameters(val *string) error {
 	return nil
 }
