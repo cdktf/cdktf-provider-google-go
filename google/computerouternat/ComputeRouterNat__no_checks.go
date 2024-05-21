@@ -107,6 +107,10 @@ func validateComputeRouterNat_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterNat) validateSetAutoNetworkTierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterNat) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

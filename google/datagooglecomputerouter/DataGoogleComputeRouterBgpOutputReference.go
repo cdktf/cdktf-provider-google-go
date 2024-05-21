@@ -34,6 +34,7 @@ type DataGoogleComputeRouterBgpOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdentifierRange() *string
 	InternalValue() *DataGoogleComputeRouterBgp
 	SetInternalValue(val *DataGoogleComputeRouterBgp)
 	KeepaliveInterval() *float64
@@ -159,6 +160,16 @@ func (j *jsiiProxy_DataGoogleComputeRouterBgpOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRouterBgpOutputReference) IdentifierRange() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identifierRange",
 		&returns,
 	)
 	return returns

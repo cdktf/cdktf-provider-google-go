@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "autoNetworkTier", GoGetter: "AutoNetworkTier"},
+			_jsii_.MemberProperty{JsiiProperty: "autoNetworkTierInput", GoGetter: "AutoNetworkTierInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
@@ -77,6 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAutoNetworkTier", GoMethod: "ResetAutoNetworkTier"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDrainNatIps", GoMethod: "ResetDrainNatIps"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableDynamicPortAllocation", GoMethod: "ResetEnableDynamicPortAllocation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableEndpointIndependentMapping", GoMethod: "ResetEnableEndpointIndependentMapping"},

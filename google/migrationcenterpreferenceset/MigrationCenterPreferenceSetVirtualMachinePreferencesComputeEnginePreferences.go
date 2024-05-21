@@ -13,11 +13,11 @@ type MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferenc
 	// LICENSE_TYPE_DEFAULT
 	// LICENSE_TYPE_BRING_YOUR_OWN_LICENSE
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/migration_center_preference_set#license_type MigrationCenterPreferenceSet#license_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/migration_center_preference_set#license_type MigrationCenterPreferenceSet#license_type}
 	LicenseType *string `field:"optional" json:"licenseType" yaml:"licenseType"`
 	// machine_preferences block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/migration_center_preference_set#machine_preferences MigrationCenterPreferenceSet#machine_preferences}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/migration_center_preference_set#machine_preferences MigrationCenterPreferenceSet#machine_preferences}
 	MachinePreferences *MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferences `field:"optional" json:"machinePreferences" yaml:"machinePreferences"`
 }
 

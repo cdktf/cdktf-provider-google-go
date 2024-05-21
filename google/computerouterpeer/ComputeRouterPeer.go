@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/compute_router_peer google_compute_router_peer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_router_peer google_compute_router_peer}.
 type ComputeRouterPeer interface {
 	cdktf.TerraformResource
 	AdvertisedGroups() *[]*string
@@ -47,6 +47,9 @@ type ComputeRouterPeer interface {
 	Enable() interface{}
 	SetEnable(val interface{})
 	EnableInput() interface{}
+	EnableIpv4() interface{}
+	SetEnableIpv4(val interface{})
+	EnableIpv4Input() interface{}
 	EnableIpv6() interface{}
 	SetEnableIpv6(val interface{})
 	EnableIpv6Input() interface{}
@@ -67,6 +70,9 @@ type ComputeRouterPeer interface {
 	IpAddress() *string
 	SetIpAddress(val *string)
 	IpAddressInput() *string
+	Ipv4NexthopAddress() *string
+	SetIpv4NexthopAddress(val *string)
+	Ipv4NexthopAddressInput() *string
 	Ipv6NexthopAddress() *string
 	SetIpv6NexthopAddress(val *string)
 	Ipv6NexthopAddressInput() *string
@@ -88,6 +94,9 @@ type ComputeRouterPeer interface {
 	PeerIpAddress() *string
 	SetPeerIpAddress(val *string)
 	PeerIpAddressInput() *string
+	PeerIpv4NexthopAddress() *string
+	SetPeerIpv4NexthopAddress(val *string)
+	PeerIpv4NexthopAddressInput() *string
 	PeerIpv6NexthopAddress() *string
 	SetPeerIpv6NexthopAddress(val *string)
 	PeerIpv6NexthopAddressInput() *string
@@ -174,15 +183,18 @@ type ComputeRouterPeer interface {
 	ResetAdvertiseMode()
 	ResetBfd()
 	ResetEnable()
+	ResetEnableIpv4()
 	ResetEnableIpv6()
 	ResetId()
 	ResetIpAddress()
+	ResetIpv4NexthopAddress()
 	ResetIpv6NexthopAddress()
 	ResetMd5AuthenticationKey()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPeerIpAddress()
+	ResetPeerIpv4NexthopAddress()
 	ResetPeerIpv6NexthopAddress()
 	ResetProject()
 	ResetRegion()
@@ -376,6 +388,26 @@ func (j *jsiiProxy_ComputeRouterPeer) EnableInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) EnableIpv4() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableIpv4",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) EnableIpv4Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableIpv4Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRouterPeer) EnableIpv6() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -481,6 +513,26 @@ func (j *jsiiProxy_ComputeRouterPeer) IpAddressInput() *string {
 	_jsii_.Get(
 		j,
 		"ipAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) Ipv4NexthopAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4NexthopAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) Ipv4NexthopAddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4NexthopAddressInput",
 		&returns,
 	)
 	return returns
@@ -611,6 +663,26 @@ func (j *jsiiProxy_ComputeRouterPeer) PeerIpAddressInput() *string {
 	_jsii_.Get(
 		j,
 		"peerIpAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) PeerIpv4NexthopAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"peerIpv4NexthopAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) PeerIpv4NexthopAddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"peerIpv4NexthopAddressInput",
 		&returns,
 	)
 	return returns
@@ -797,7 +869,7 @@ func (j *jsiiProxy_ComputeRouterPeer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
 func NewComputeRouterPeer(scope constructs.Construct, id *string, config *ComputeRouterPeerConfig) ComputeRouterPeer {
 	_init_.Initialize()
 
@@ -815,7 +887,7 @@ func NewComputeRouterPeer(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
 func NewComputeRouterPeer_Override(c ComputeRouterPeer, scope constructs.Construct, id *string, config *ComputeRouterPeerConfig) {
 	_init_.Initialize()
 
@@ -900,6 +972,17 @@ func (j *jsiiProxy_ComputeRouterPeer)SetEnable(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_ComputeRouterPeer)SetEnableIpv4(val interface{}) {
+	if err := j.validateSetEnableIpv4Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableIpv4",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeRouterPeer)SetEnableIpv6(val interface{}) {
 	if err := j.validateSetEnableIpv6Parameters(val); err != nil {
 		panic(err)
@@ -948,6 +1031,17 @@ func (j *jsiiProxy_ComputeRouterPeer)SetIpAddress(val *string) {
 	_jsii_.Set(
 		j,
 		"ipAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterPeer)SetIpv4NexthopAddress(val *string) {
+	if err := j.validateSetIpv4NexthopAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv4NexthopAddress",
 		val,
 	)
 }
@@ -1003,6 +1097,17 @@ func (j *jsiiProxy_ComputeRouterPeer)SetPeerIpAddress(val *string) {
 	_jsii_.Set(
 		j,
 		"peerIpAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterPeer)SetPeerIpv4NexthopAddress(val *string) {
+	if err := j.validateSetPeerIpv4NexthopAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"peerIpv4NexthopAddress",
 		val,
 	)
 }
@@ -1526,6 +1631,14 @@ func (c *jsiiProxy_ComputeRouterPeer) ResetEnable() {
 	)
 }
 
+func (c *jsiiProxy_ComputeRouterPeer) ResetEnableIpv4() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableIpv4",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeRouterPeer) ResetEnableIpv6() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1546,6 +1659,14 @@ func (c *jsiiProxy_ComputeRouterPeer) ResetIpAddress() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIpAddress",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterPeer) ResetIpv4NexthopAddress() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpv4NexthopAddress",
 		nil, // no parameters
 	)
 }
@@ -1578,6 +1699,14 @@ func (c *jsiiProxy_ComputeRouterPeer) ResetPeerIpAddress() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetPeerIpAddress",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterPeer) ResetPeerIpv4NexthopAddress() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPeerIpv4NexthopAddress",
 		nil, // no parameters
 	)
 }

@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/compute_router_nat google_compute_router_nat}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_router_nat google_compute_router_nat}.
 type ComputeRouterNat interface {
 	cdktf.TerraformResource
+	AutoNetworkTier() *string
+	SetAutoNetworkTier(val *string)
+	AutoNetworkTierInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -173,6 +176,7 @@ type ComputeRouterNat interface {
 	PutRules(value interface{})
 	PutSubnetwork(value interface{})
 	PutTimeouts(value *ComputeRouterNatTimeouts)
+	ResetAutoNetworkTier()
 	ResetDrainNatIps()
 	ResetEnableDynamicPortAllocation()
 	ResetEnableEndpointIndependentMapping()
@@ -212,6 +216,26 @@ type ComputeRouterNat interface {
 // The jsii proxy struct for ComputeRouterNat
 type jsiiProxy_ComputeRouterNat struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ComputeRouterNat) AutoNetworkTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoNetworkTier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterNat) AutoNetworkTierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoNetworkTierInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeRouterNat) CdktfStack() cdktf.TerraformStack {
@@ -835,7 +859,7 @@ func (j *jsiiProxy_ComputeRouterNat) UdpIdleTimeoutSecInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
 func NewComputeRouterNat(scope constructs.Construct, id *string, config *ComputeRouterNatConfig) ComputeRouterNat {
 	_init_.Initialize()
 
@@ -853,7 +877,7 @@ func NewComputeRouterNat(scope constructs.Construct, id *string, config *Compute
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/compute_router_nat google_compute_router_nat} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_router_nat google_compute_router_nat} Resource.
 func NewComputeRouterNat_Override(c ComputeRouterNat, scope constructs.Construct, id *string, config *ComputeRouterNatConfig) {
 	_init_.Initialize()
 
@@ -861,6 +885,17 @@ func NewComputeRouterNat_Override(c ComputeRouterNat, scope constructs.Construct
 		"@cdktf/provider-google.computeRouterNat.ComputeRouterNat",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterNat)SetAutoNetworkTier(val *string) {
+	if err := j.validateSetAutoNetworkTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoNetworkTier",
+		val,
 	)
 }
 
@@ -1535,6 +1570,14 @@ func (c *jsiiProxy_ComputeRouterNat) PutTimeouts(value *ComputeRouterNatTimeouts
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterNat) ResetAutoNetworkTier() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAutoNetworkTier",
+		nil, // no parameters
 	)
 }
 

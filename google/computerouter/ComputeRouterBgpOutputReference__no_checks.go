@@ -75,6 +75,10 @@ func (j *jsiiProxy_ComputeRouterBgpOutputReference) validateSetComplexObjectIsFr
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterBgpOutputReference) validateSetIdentifierRangeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterBgpOutputReference) validateSetInternalValueParameters(val *ComputeRouterBgp) error {
 	return nil
 }

@@ -143,6 +143,10 @@ func (j *jsiiProxy_BigqueryConnection) validateSetIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryConnection) validateSetKmsKeyNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryConnection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

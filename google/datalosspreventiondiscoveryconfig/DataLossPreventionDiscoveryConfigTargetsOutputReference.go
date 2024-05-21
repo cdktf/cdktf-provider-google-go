@@ -15,6 +15,8 @@ type DataLossPreventionDiscoveryConfigTargetsOutputReference interface {
 	cdktf.ComplexObject
 	BigQueryTarget() DataLossPreventionDiscoveryConfigTargetsBigQueryTargetOutputReference
 	BigQueryTargetInput() *DataLossPreventionDiscoveryConfigTargetsBigQueryTarget
+	CloudSqlTarget() DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetOutputReference
+	CloudSqlTargetInput() *DataLossPreventionDiscoveryConfigTargetsCloudSqlTarget
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,7 +69,9 @@ type DataLossPreventionDiscoveryConfigTargetsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutBigQueryTarget(value *DataLossPreventionDiscoveryConfigTargetsBigQueryTarget)
+	PutCloudSqlTarget(value *DataLossPreventionDiscoveryConfigTargetsCloudSqlTarget)
 	ResetBigQueryTarget()
+	ResetCloudSqlTarget()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -98,6 +102,26 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) BigQ
 	_jsii_.Get(
 		j,
 		"bigQueryTargetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) CloudSqlTarget() DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetOutputReference {
+	var returns DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetOutputReference
+	_jsii_.Get(
+		j,
+		"cloudSqlTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) CloudSqlTargetInput() *DataLossPreventionDiscoveryConfigTargetsCloudSqlTarget {
+	var returns *DataLossPreventionDiscoveryConfigTargetsCloudSqlTarget
+	_jsii_.Get(
+		j,
+		"cloudSqlTargetInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) PutB
 	)
 }
 
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) PutCloudSqlTarget(value *DataLossPreventionDiscoveryConfigTargetsCloudSqlTarget) {
+	if err := d.validatePutCloudSqlTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putCloudSqlTarget",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) ResetBigQueryTarget() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetBigQueryTarget",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOutputReference) ResetCloudSqlTarget() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCloudSqlTarget",
 		nil, // no parameters
 	)
 }

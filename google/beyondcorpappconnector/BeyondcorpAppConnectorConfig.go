@@ -24,17 +24,17 @@ type BeyondcorpAppConnectorConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// ID of the AppConnector.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/beyondcorp_app_connector#name BeyondcorpAppConnector#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/beyondcorp_app_connector#name BeyondcorpAppConnector#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// principal_info block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/beyondcorp_app_connector#principal_info BeyondcorpAppConnector#principal_info}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/beyondcorp_app_connector#principal_info BeyondcorpAppConnector#principal_info}
 	PrincipalInfo *BeyondcorpAppConnectorPrincipalInfo `field:"required" json:"principalInfo" yaml:"principalInfo"`
 	// An arbitrary user-provided name for the AppConnector.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/beyondcorp_app_connector#display_name BeyondcorpAppConnector#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/beyondcorp_app_connector#display_name BeyondcorpAppConnector#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/beyondcorp_app_connector#id BeyondcorpAppConnector#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/beyondcorp_app_connector#id BeyondcorpAppConnector#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,17 +44,17 @@ type BeyondcorpAppConnectorConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/beyondcorp_app_connector#labels BeyondcorpAppConnector#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/beyondcorp_app_connector#labels BeyondcorpAppConnector#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/beyondcorp_app_connector#project BeyondcorpAppConnector#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/beyondcorp_app_connector#project BeyondcorpAppConnector#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The region of the AppConnector.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/beyondcorp_app_connector#region BeyondcorpAppConnector#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/beyondcorp_app_connector#region BeyondcorpAppConnector#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/beyondcorp_app_connector#timeouts BeyondcorpAppConnector#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/beyondcorp_app_connector#timeouts BeyondcorpAppConnector#timeouts}
 	Timeouts *BeyondcorpAppConnectorTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

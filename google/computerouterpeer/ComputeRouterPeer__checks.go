@@ -445,6 +445,26 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetEnableParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) validateSetEnableIpv4Parameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterPeer) validateSetEnableIpv6Parameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -489,6 +509,14 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetIpAddressParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) validateSetIpv4NexthopAddressParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterPeer) validateSetIpv6NexthopAddressParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -522,6 +550,14 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetPeerAsnParameters(val *float64)
 }
 
 func (j *jsiiProxy_ComputeRouterPeer) validateSetPeerIpAddressParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) validateSetPeerIpv4NexthopAddressParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

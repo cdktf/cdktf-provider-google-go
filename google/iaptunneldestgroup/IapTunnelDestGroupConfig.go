@@ -24,30 +24,30 @@ type IapTunnelDestGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Unique tunnel destination group name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/iap_tunnel_dest_group#group_name IapTunnelDestGroup#group_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/iap_tunnel_dest_group#group_name IapTunnelDestGroup#group_name}
 	GroupName *string `field:"required" json:"groupName" yaml:"groupName"`
 	// List of CIDRs that this group applies to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/iap_tunnel_dest_group#cidrs IapTunnelDestGroup#cidrs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/iap_tunnel_dest_group#cidrs IapTunnelDestGroup#cidrs}
 	Cidrs *[]*string `field:"optional" json:"cidrs" yaml:"cidrs"`
 	// List of FQDNs that this group applies to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/iap_tunnel_dest_group#fqdns IapTunnelDestGroup#fqdns}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/iap_tunnel_dest_group#fqdns IapTunnelDestGroup#fqdns}
 	Fqdns *[]*string `field:"optional" json:"fqdns" yaml:"fqdns"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/iap_tunnel_dest_group#id IapTunnelDestGroup#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/iap_tunnel_dest_group#id IapTunnelDestGroup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/iap_tunnel_dest_group#project IapTunnelDestGroup#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/iap_tunnel_dest_group#project IapTunnelDestGroup#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The region of the tunnel group. Must be the same as the network resources in the group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/iap_tunnel_dest_group#region IapTunnelDestGroup#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/iap_tunnel_dest_group#region IapTunnelDestGroup#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/iap_tunnel_dest_group#timeouts IapTunnelDestGroup#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/iap_tunnel_dest_group#timeouts IapTunnelDestGroup#timeouts}
 	Timeouts *IapTunnelDestGroupTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

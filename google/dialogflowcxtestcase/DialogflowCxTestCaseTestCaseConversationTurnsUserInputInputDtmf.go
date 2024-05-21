@@ -7,11 +7,11 @@ package dialogflowcxtestcase
 type DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmf struct {
 	// The dtmf digits.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/dialogflow_cx_test_case#digits DialogflowCxTestCase#digits}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/dialogflow_cx_test_case#digits DialogflowCxTestCase#digits}
 	Digits *string `field:"optional" json:"digits" yaml:"digits"`
 	// The finish digit (if any).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.29.1/docs/resources/dialogflow_cx_test_case#finish_digit DialogflowCxTestCase#finish_digit}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/dialogflow_cx_test_case#finish_digit DialogflowCxTestCase#finish_digit}
 	FinishDigit *string `field:"optional" json:"finishDigit" yaml:"finishDigit"`
 }
 

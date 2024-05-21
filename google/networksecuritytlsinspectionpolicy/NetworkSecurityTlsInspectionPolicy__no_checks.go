@@ -107,6 +107,10 @@ func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetCountParameter
 	return nil
 }
 
+func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetCustomTlsFeaturesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -127,6 +131,10 @@ func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetLocationParame
 	return nil
 }
 
+func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetMinTlsVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetNameParameters(val *string) error {
 	return nil
 }
@@ -136,6 +144,14 @@ func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetProjectParamet
 }
 
 func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetTlsFeatureProfileParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) validateSetTrustConfigParameters(val *string) error {
 	return nil
 }
 
