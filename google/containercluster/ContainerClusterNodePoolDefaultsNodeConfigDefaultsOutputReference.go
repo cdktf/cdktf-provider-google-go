@@ -23,6 +23,8 @@ type ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference interface
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ContainerdConfig() ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference
+	ContainerdConfigInput() *ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -67,6 +69,8 @@ type ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutContainerdConfig(value *ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig)
+	ResetContainerdConfig()
 	ResetLoggingVariant()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -98,6 +102,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputRefer
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ContainerdConfig() ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference {
+	var returns ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference
+	_jsii_.Get(
+		j,
+		"containerdConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ContainerdConfigInput() *ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig {
+	var returns *ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig
+	_jsii_.Get(
+		j,
+		"containerdConfigInput",
 		&returns,
 	)
 	return returns
@@ -451,6 +475,25 @@ func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputRefer
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) PutContainerdConfig(value *ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig) {
+	if err := c.validatePutContainerdConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putContainerdConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ResetContainerdConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetContainerdConfig",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ResetLoggingVariant() {

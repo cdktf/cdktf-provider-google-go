@@ -185,6 +185,14 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validateSetFilenameDatetimeFormatParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validateSetFilenamePrefixParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -7,11 +7,11 @@ package datalosspreventiondiscoveryconfig
 type DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilter struct {
 	// collection block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/data_loss_prevention_discovery_config#collection DataLossPreventionDiscoveryConfig#collection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/data_loss_prevention_discovery_config#collection DataLossPreventionDiscoveryConfig#collection}
 	Collection *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollection `field:"optional" json:"collection" yaml:"collection"`
 	// others block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/data_loss_prevention_discovery_config#others DataLossPreventionDiscoveryConfig#others}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/data_loss_prevention_discovery_config#others DataLossPreventionDiscoveryConfig#others}
 	Others *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOthers `field:"optional" json:"others" yaml:"others"`
 }
 

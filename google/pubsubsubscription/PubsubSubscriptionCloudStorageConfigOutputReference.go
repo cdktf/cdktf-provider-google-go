@@ -33,6 +33,9 @@ type PubsubSubscriptionCloudStorageConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FilenameDatetimeFormat() *string
+	SetFilenameDatetimeFormat(val *string)
+	FilenameDatetimeFormatInput() *string
 	FilenamePrefix() *string
 	SetFilenamePrefix(val *string)
 	FilenamePrefixInput() *string
@@ -84,6 +87,7 @@ type PubsubSubscriptionCloudStorageConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAvroConfig(value *PubsubSubscriptionCloudStorageConfigAvroConfig)
 	ResetAvroConfig()
+	ResetFilenameDatetimeFormat()
 	ResetFilenamePrefix()
 	ResetFilenameSuffix()
 	ResetMaxBytes()
@@ -168,6 +172,26 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) Creation
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) FilenameDatetimeFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filenameDatetimeFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) FilenameDatetimeFormatInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filenameDatetimeFormatInput",
 		&returns,
 	)
 	return returns
@@ -360,6 +384,17 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetComple
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetFilenameDatetimeFormat(val *string) {
+	if err := j.validateSetFilenameDatetimeFormatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filenameDatetimeFormat",
 		val,
 	)
 }
@@ -642,6 +677,14 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ResetAvr
 	_jsii_.InvokeVoid(
 		p,
 		"resetAvroConfig",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ResetFilenameDatetimeFormat() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetFilenameDatetimeFormat",
 		nil, // no parameters
 	)
 }

@@ -233,6 +233,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "filenameDatetimeFormat", GoGetter: "FilenameDatetimeFormat"},
 			_jsii_.MemberProperty{JsiiProperty: "filenamePrefix", GoGetter: "FilenamePrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "filenameSuffix", GoGetter: "FilenameSuffix"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

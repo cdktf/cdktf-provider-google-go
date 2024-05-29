@@ -67,6 +67,10 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validateSetFilenameDatetimeFormatParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validateSetFilenamePrefixParameters(val *string) error {
 	return nil
 }

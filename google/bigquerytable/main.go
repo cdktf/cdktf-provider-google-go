@@ -228,6 +228,205 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptions",
+		reflect.TypeOf((*BigqueryTableExternalDataConfigurationBigtableOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily",
+		reflect.TypeOf((*BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn",
+		reflect.TypeOf((*BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList",
+		reflect.TypeOf((*BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference",
+		reflect.TypeOf((*BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "encoding", GoGetter: "Encoding"},
+			_jsii_.MemberProperty{JsiiProperty: "encodingInput", GoGetter: "EncodingInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fieldName", GoGetter: "FieldName"},
+			_jsii_.MemberProperty{JsiiProperty: "fieldNameInput", GoGetter: "FieldNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "onlyReadLatest", GoGetter: "OnlyReadLatest"},
+			_jsii_.MemberProperty{JsiiProperty: "onlyReadLatestInput", GoGetter: "OnlyReadLatestInput"},
+			_jsii_.MemberProperty{JsiiProperty: "qualifierEncoded", GoGetter: "QualifierEncoded"},
+			_jsii_.MemberProperty{JsiiProperty: "qualifierEncodedInput", GoGetter: "QualifierEncodedInput"},
+			_jsii_.MemberProperty{JsiiProperty: "qualifierString", GoGetter: "QualifierString"},
+			_jsii_.MemberProperty{JsiiProperty: "qualifierStringInput", GoGetter: "QualifierStringInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEncoding", GoMethod: "ResetEncoding"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFieldName", GoMethod: "ResetFieldName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnlyReadLatest", GoMethod: "ResetOnlyReadLatest"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQualifierEncoded", GoMethod: "ResetQualifierEncoded"},
+			_jsii_.MemberMethod{JsiiMethod: "resetQualifierString", GoMethod: "ResetQualifierString"},
+			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList",
+		reflect.TypeOf((*BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference",
+		reflect.TypeOf((*BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
+			_jsii_.MemberProperty{JsiiProperty: "columnInput", GoGetter: "ColumnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "encoding", GoGetter: "Encoding"},
+			_jsii_.MemberProperty{JsiiProperty: "encodingInput", GoGetter: "EncodingInput"},
+			_jsii_.MemberProperty{JsiiProperty: "familyId", GoGetter: "FamilyId"},
+			_jsii_.MemberProperty{JsiiProperty: "familyIdInput", GoGetter: "FamilyIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "onlyReadLatest", GoGetter: "OnlyReadLatest"},
+			_jsii_.MemberProperty{JsiiProperty: "onlyReadLatestInput", GoGetter: "OnlyReadLatestInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putColumn", GoMethod: "PutColumn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetColumn", GoMethod: "ResetColumn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEncoding", GoMethod: "ResetEncoding"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFamilyId", GoMethod: "ResetFamilyId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOnlyReadLatest", GoMethod: "ResetOnlyReadLatest"},
+			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference",
+		reflect.TypeOf((*BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "columnFamily", GoGetter: "ColumnFamily"},
+			_jsii_.MemberProperty{JsiiProperty: "columnFamilyInput", GoGetter: "ColumnFamilyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "ignoreUnspecifiedColumnFamilies", GoGetter: "IgnoreUnspecifiedColumnFamilies"},
+			_jsii_.MemberProperty{JsiiProperty: "ignoreUnspecifiedColumnFamiliesInput", GoGetter: "IgnoreUnspecifiedColumnFamiliesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "outputColumnFamiliesAsJson", GoGetter: "OutputColumnFamiliesAsJson"},
+			_jsii_.MemberProperty{JsiiProperty: "outputColumnFamiliesAsJsonInput", GoGetter: "OutputColumnFamiliesAsJsonInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putColumnFamily", GoMethod: "PutColumnFamily"},
+			_jsii_.MemberProperty{JsiiProperty: "readRowkeyAsString", GoGetter: "ReadRowkeyAsString"},
+			_jsii_.MemberProperty{JsiiProperty: "readRowkeyAsStringInput", GoGetter: "ReadRowkeyAsStringInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetColumnFamily", GoMethod: "ResetColumnFamily"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIgnoreUnspecifiedColumnFamilies", GoMethod: "ResetIgnoreUnspecifiedColumnFamilies"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOutputColumnFamiliesAsJson", GoMethod: "ResetOutputColumnFamiliesAsJson"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReadRowkeyAsString", GoMethod: "ResetReadRowkeyAsString"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptions",
 		reflect.TypeOf((*BigqueryTableExternalDataConfigurationCsvOptions)(nil)).Elem(),
 	)
@@ -414,6 +613,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "autodetectInput", GoGetter: "AutodetectInput"},
 			_jsii_.MemberProperty{JsiiProperty: "avroOptions", GoGetter: "AvroOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "avroOptionsInput", GoGetter: "AvroOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bigtableOptions", GoGetter: "BigtableOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "bigtableOptionsInput", GoGetter: "BigtableOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberProperty{JsiiProperty: "compression", GoGetter: "Compression"},
@@ -458,6 +659,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "parquetOptions", GoGetter: "ParquetOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "parquetOptionsInput", GoGetter: "ParquetOptionsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAvroOptions", GoMethod: "PutAvroOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putBigtableOptions", GoMethod: "PutBigtableOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putCsvOptions", GoMethod: "PutCsvOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putGoogleSheetsOptions", GoMethod: "PutGoogleSheetsOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putHivePartitioningOptions", GoMethod: "PutHivePartitioningOptions"},
@@ -466,6 +668,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "referenceFileSchemaUri", GoGetter: "ReferenceFileSchemaUri"},
 			_jsii_.MemberProperty{JsiiProperty: "referenceFileSchemaUriInput", GoGetter: "ReferenceFileSchemaUriInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAvroOptions", GoMethod: "ResetAvroOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBigtableOptions", GoMethod: "ResetBigtableOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompression", GoMethod: "ResetCompression"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionId", GoMethod: "ResetConnectionId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCsvOptions", GoMethod: "ResetCsvOptions"},

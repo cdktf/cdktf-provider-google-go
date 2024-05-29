@@ -7,7 +7,7 @@ package lookerinstance
 type LookerInstanceCustomDomain struct {
 	// Domain name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/looker_instance#domain LookerInstance#domain}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/looker_instance#domain LookerInstance#domain}
 	Domain *string `field:"optional" json:"domain" yaml:"domain"`
 }
 

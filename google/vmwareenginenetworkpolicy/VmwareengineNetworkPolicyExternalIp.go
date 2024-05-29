@@ -7,7 +7,7 @@ package vmwareenginenetworkpolicy
 type VmwareengineNetworkPolicyExternalIp struct {
 	// True if the service is enabled; false otherwise.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/vmwareengine_network_policy#enabled VmwareengineNetworkPolicy#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/vmwareengine_network_policy#enabled VmwareengineNetworkPolicy#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

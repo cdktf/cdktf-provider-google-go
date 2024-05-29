@@ -135,6 +135,10 @@ func (j *jsiiProxy_DatastreamConnectionProfile) validateSetCountParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_DatastreamConnectionProfile) validateSetCreateWithoutValidationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatastreamConnectionProfile) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

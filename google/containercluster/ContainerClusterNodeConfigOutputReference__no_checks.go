@@ -55,6 +55,10 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutConfide
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutContainerdConfigParameters(value *ContainerClusterNodeConfigContainerdConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutEphemeralStorageLocalSsdConfigParameters(value *ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/datastream_private_connection google_datastream_private_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/datastream_private_connection google_datastream_private_connection}.
 type DatastreamPrivateConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,9 @@ type DatastreamPrivateConnection interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateWithoutValidation() interface{}
+	SetCreateWithoutValidation(val interface{})
+	CreateWithoutValidationInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -133,6 +136,7 @@ type DatastreamPrivateConnection interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DatastreamPrivateConnectionTimeouts)
 	PutVpcPeeringConfig(value *DatastreamPrivateConnectionVpcPeeringConfig)
+	ResetCreateWithoutValidation()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -193,6 +197,26 @@ func (j *jsiiProxy_DatastreamPrivateConnection) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamPrivateConnection) CreateWithoutValidation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createWithoutValidation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamPrivateConnection) CreateWithoutValidationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createWithoutValidationInput",
 		&returns,
 	)
 	return returns
@@ -529,7 +553,7 @@ func (j *jsiiProxy_DatastreamPrivateConnection) VpcPeeringConfigInput() *Datastr
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/datastream_private_connection google_datastream_private_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/datastream_private_connection google_datastream_private_connection} Resource.
 func NewDatastreamPrivateConnection(scope constructs.Construct, id *string, config *DatastreamPrivateConnectionConfig) DatastreamPrivateConnection {
 	_init_.Initialize()
 
@@ -547,7 +571,7 @@ func NewDatastreamPrivateConnection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/datastream_private_connection google_datastream_private_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/datastream_private_connection google_datastream_private_connection} Resource.
 func NewDatastreamPrivateConnection_Override(d DatastreamPrivateConnection, scope constructs.Construct, id *string, config *DatastreamPrivateConnectionConfig) {
 	_init_.Initialize()
 
@@ -576,6 +600,17 @@ func (j *jsiiProxy_DatastreamPrivateConnection)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatastreamPrivateConnection)SetCreateWithoutValidation(val interface{}) {
+	if err := j.validateSetCreateWithoutValidationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createWithoutValidation",
 		val,
 	)
 }
@@ -1064,6 +1099,14 @@ func (d *jsiiProxy_DatastreamPrivateConnection) PutVpcPeeringConfig(value *Datas
 		d,
 		"putVpcPeeringConfig",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DatastreamPrivateConnection) ResetCreateWithoutValidation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCreateWithoutValidation",
+		nil, // no parameters
 	)
 }
 

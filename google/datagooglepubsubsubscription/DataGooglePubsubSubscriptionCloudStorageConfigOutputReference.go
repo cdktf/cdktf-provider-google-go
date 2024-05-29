@@ -30,6 +30,7 @@ type DataGooglePubsubSubscriptionCloudStorageConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FilenameDatetimeFormat() *string
 	FilenamePrefix() *string
 	FilenameSuffix() *string
 	// Experimental.
@@ -131,6 +132,16 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigOutputReference
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigOutputReference) FilenameDatetimeFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filenameDatetimeFormat",
 		&returns,
 	)
 	return returns

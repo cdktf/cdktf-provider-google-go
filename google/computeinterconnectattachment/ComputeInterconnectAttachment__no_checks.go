@@ -171,6 +171,10 @@ func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetStackTypeParameters
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetSubnetLengthParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetTypeParameters(val *string) error {
 	return nil
 }

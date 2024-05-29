@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment}.
 type ComputeInterconnectAttachment interface {
 	cdktf.TerraformResource
 	AdminEnabled() interface{}
@@ -111,6 +111,9 @@ type ComputeInterconnectAttachment interface {
 	SetStackType(val *string)
 	StackTypeInput() *string
 	State() *string
+	SubnetLength() *float64
+	SetSubnetLength(val *float64)
+	SubnetLengthInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -185,6 +188,7 @@ type ComputeInterconnectAttachment interface {
 	ResetProject()
 	ResetRegion()
 	ResetStackType()
+	ResetSubnetLength()
 	ResetTimeouts()
 	ResetType()
 	ResetVlanTag8021Q()
@@ -746,6 +750,26 @@ func (j *jsiiProxy_ComputeInterconnectAttachment) State() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInterconnectAttachment) SubnetLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"subnetLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInterconnectAttachment) SubnetLengthInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"subnetLengthInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInterconnectAttachment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -837,7 +861,7 @@ func (j *jsiiProxy_ComputeInterconnectAttachment) VlanTag8021QInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
 func NewComputeInterconnectAttachment(scope constructs.Construct, id *string, config *ComputeInterconnectAttachmentConfig) ComputeInterconnectAttachment {
 	_init_.Initialize()
 
@@ -855,7 +879,7 @@ func NewComputeInterconnectAttachment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.30.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
 func NewComputeInterconnectAttachment_Override(c ComputeInterconnectAttachment, scope constructs.Construct, id *string, config *ComputeInterconnectAttachmentConfig) {
 	_init_.Initialize()
 
@@ -1095,6 +1119,17 @@ func (j *jsiiProxy_ComputeInterconnectAttachment)SetStackType(val *string) {
 	_jsii_.Set(
 		j,
 		"stackType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInterconnectAttachment)SetSubnetLength(val *float64) {
+	if err := j.validateSetSubnetLengthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subnetLength",
 		val,
 	)
 }
@@ -1593,6 +1628,14 @@ func (c *jsiiProxy_ComputeInterconnectAttachment) ResetStackType() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetStackType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInterconnectAttachment) ResetSubnetLength() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSubnetLength",
 		nil, // no parameters
 	)
 }

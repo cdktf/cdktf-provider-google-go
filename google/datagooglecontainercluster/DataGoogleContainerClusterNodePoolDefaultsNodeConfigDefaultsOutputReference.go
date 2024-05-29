@@ -23,6 +23,7 @@ type DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ContainerdConfig() DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -95,6 +96,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsO
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ContainerdConfig() DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigList {
+	var returns DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigList
+	_jsii_.Get(
+		j,
+		"containerdConfig",
 		&returns,
 	)
 	return returns
