@@ -87,6 +87,10 @@ func (a *jsiiProxy_AlloydbInstance) validatePutNetworkConfigParameters(value *Al
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbInstance) validatePutPscInstanceConfigParameters(value *AlloydbInstancePscInstanceConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbInstance) validatePutQueryInsightsConfigParameters(value *AlloydbInstanceQueryInsightsConfig) error {
 	return nil
 }

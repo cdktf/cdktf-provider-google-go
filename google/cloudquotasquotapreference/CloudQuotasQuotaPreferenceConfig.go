@@ -24,13 +24,13 @@ type CloudQuotasQuotaPreferenceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// quota_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/cloud_quotas_quota_preference#quota_config CloudQuotasQuotaPreference#quota_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/cloud_quotas_quota_preference#quota_config CloudQuotasQuotaPreference#quota_config}
 	QuotaConfig *CloudQuotasQuotaPreferenceQuotaConfig `field:"required" json:"quotaConfig" yaml:"quotaConfig"`
 	// An email address that can be used for quota related communication between the Google Cloud and the user in case the Google Cloud needs further information to make a decision on whether the user preferred quota can be granted.
 	//
 	// The Google account for the email address must have quota update permission for the project, folder or organization this quota preference is for.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/cloud_quotas_quota_preference#contact_email CloudQuotasQuotaPreference#contact_email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/cloud_quotas_quota_preference#contact_email CloudQuotasQuotaPreference#contact_email}
 	ContactEmail *string `field:"optional" json:"contactEmail" yaml:"contactEmail"`
 	// The dimensions that this quota preference applies to.
 	//
@@ -40,45 +40,45 @@ type CloudQuotasQuotaPreferenceConfig struct {
 	//
 	// Example: '{"provider": "Foo Inc"}' where "provider" is a service specific dimension.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/cloud_quotas_quota_preference#dimensions CloudQuotasQuotaPreference#dimensions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/cloud_quotas_quota_preference#dimensions CloudQuotasQuotaPreference#dimensions}
 	Dimensions *map[string]*string `field:"optional" json:"dimensions" yaml:"dimensions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/cloud_quotas_quota_preference#id CloudQuotasQuotaPreference#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/cloud_quotas_quota_preference#id CloudQuotasQuotaPreference#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The list of quota safety checks to be ignored. Default value: "QUOTA_SAFETY_CHECK_UNSPECIFIED" Possible values: ["QUOTA_SAFETY_CHECK_UNSPECIFIED", "QUOTA_DECREASE_BELOW_USAGE", "QUOTA_DECREASE_PERCENTAGE_TOO_HIGH"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/cloud_quotas_quota_preference#ignore_safety_checks CloudQuotasQuotaPreference#ignore_safety_checks}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/cloud_quotas_quota_preference#ignore_safety_checks CloudQuotasQuotaPreference#ignore_safety_checks}
 	IgnoreSafetyChecks *string `field:"optional" json:"ignoreSafetyChecks" yaml:"ignoreSafetyChecks"`
 	// The reason / justification for this quota preference.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/cloud_quotas_quota_preference#justification CloudQuotasQuotaPreference#justification}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/cloud_quotas_quota_preference#justification CloudQuotasQuotaPreference#justification}
 	Justification *string `field:"optional" json:"justification" yaml:"justification"`
 	// The resource name of the quota preference. Required except in the CREATE requests.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/cloud_quotas_quota_preference#name CloudQuotasQuotaPreference#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/cloud_quotas_quota_preference#name CloudQuotasQuotaPreference#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// The parent of the quota preference.
 	//
 	// Allowed parents are "projects/[project-id / number]" or "folders/[folder-id / number]" or "organizations/[org-id / number]".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/cloud_quotas_quota_preference#parent CloudQuotasQuotaPreference#parent}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/cloud_quotas_quota_preference#parent CloudQuotasQuotaPreference#parent}
 	Parent *string `field:"optional" json:"parent" yaml:"parent"`
 	// The id of the quota to which the quota preference is applied.
 	//
 	// A quota id is unique in the service.
 	// Example: 'CPUS-per-project-region'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/cloud_quotas_quota_preference#quota_id CloudQuotasQuotaPreference#quota_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/cloud_quotas_quota_preference#quota_id CloudQuotasQuotaPreference#quota_id}
 	QuotaId *string `field:"optional" json:"quotaId" yaml:"quotaId"`
 	// The name of the service to which the quota preference is applied.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/cloud_quotas_quota_preference#service CloudQuotasQuotaPreference#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/cloud_quotas_quota_preference#service CloudQuotasQuotaPreference#service}
 	Service *string `field:"optional" json:"service" yaml:"service"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/cloud_quotas_quota_preference#timeouts CloudQuotasQuotaPreference#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/cloud_quotas_quota_preference#timeouts CloudQuotasQuotaPreference#timeouts}
 	Timeouts *CloudQuotasQuotaPreferenceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

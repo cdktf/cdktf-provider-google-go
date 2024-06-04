@@ -107,6 +107,18 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateSetSendDaysSinceCustomTimeIfZeroParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateSetSendDaysSinceNoncurrentTimeIfZeroParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateSetSendNumNewerVersionsIfZeroParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

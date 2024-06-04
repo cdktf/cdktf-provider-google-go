@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/alloydb_instance google_alloydb_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/alloydb_instance google_alloydb_instance}.
 type AlloydbInstance interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -94,6 +94,8 @@ type AlloydbInstance interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PscInstanceConfig() AlloydbInstancePscInstanceConfigOutputReference
+	PscInstanceConfigInput() *AlloydbInstancePscInstanceConfig
 	PublicIpAddress() *string
 	QueryInsightsConfig() AlloydbInstanceQueryInsightsConfigOutputReference
 	QueryInsightsConfigInput() *AlloydbInstanceQueryInsightsConfig
@@ -160,6 +162,7 @@ type AlloydbInstance interface {
 	PutClientConnectionConfig(value *AlloydbInstanceClientConnectionConfig)
 	PutMachineConfig(value *AlloydbInstanceMachineConfig)
 	PutNetworkConfig(value *AlloydbInstanceNetworkConfig)
+	PutPscInstanceConfig(value *AlloydbInstancePscInstanceConfig)
 	PutQueryInsightsConfig(value *AlloydbInstanceQueryInsightsConfig)
 	PutReadPoolConfig(value *AlloydbInstanceReadPoolConfig)
 	PutTimeouts(value *AlloydbInstanceTimeouts)
@@ -176,6 +179,7 @@ type AlloydbInstance interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPscInstanceConfig()
 	ResetQueryInsightsConfig()
 	ResetReadPoolConfig()
 	ResetTimeouts()
@@ -627,6 +631,26 @@ func (j *jsiiProxy_AlloydbInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbInstance) PscInstanceConfig() AlloydbInstancePscInstanceConfigOutputReference {
+	var returns AlloydbInstancePscInstanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"pscInstanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstance) PscInstanceConfigInput() *AlloydbInstancePscInstanceConfig {
+	var returns *AlloydbInstancePscInstanceConfig
+	_jsii_.Get(
+		j,
+		"pscInstanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbInstance) PublicIpAddress() *string {
 	var returns *string
 	_jsii_.Get(
@@ -788,7 +812,7 @@ func (j *jsiiProxy_AlloydbInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
 func NewAlloydbInstance(scope constructs.Construct, id *string, config *AlloydbInstanceConfig) AlloydbInstance {
 	_init_.Initialize()
 
@@ -806,7 +830,7 @@ func NewAlloydbInstance(scope constructs.Construct, id *string, config *AlloydbI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/alloydb_instance google_alloydb_instance} Resource.
 func NewAlloydbInstance_Override(a AlloydbInstance, scope constructs.Construct, id *string, config *AlloydbInstanceConfig) {
 	_init_.Initialize()
 
@@ -1381,6 +1405,17 @@ func (a *jsiiProxy_AlloydbInstance) PutNetworkConfig(value *AlloydbInstanceNetwo
 	)
 }
 
+func (a *jsiiProxy_AlloydbInstance) PutPscInstanceConfig(value *AlloydbInstancePscInstanceConfig) {
+	if err := a.validatePutPscInstanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putPscInstanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlloydbInstance) PutQueryInsightsConfig(value *AlloydbInstanceQueryInsightsConfig) {
 	if err := a.validatePutQueryInsightsConfigParameters(value); err != nil {
 		panic(err)
@@ -1498,6 +1533,14 @@ func (a *jsiiProxy_AlloydbInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbInstance) ResetPscInstanceConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPscInstanceConfig",
 		nil, // no parameters
 	)
 }

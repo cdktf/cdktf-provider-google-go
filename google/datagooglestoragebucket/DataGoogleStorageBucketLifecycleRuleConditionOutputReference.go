@@ -43,6 +43,9 @@ type DataGoogleStorageBucketLifecycleRuleConditionOutputReference interface {
 	NoAge() cdktf.IResolvable
 	NoncurrentTimeBefore() *string
 	NumNewerVersions() *float64
+	SendDaysSinceCustomTimeIfZero() cdktf.IResolvable
+	SendDaysSinceNoncurrentTimeIfZero() cdktf.IResolvable
+	SendNumNewerVersionsIfZero() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -246,6 +249,36 @@ func (j *jsiiProxy_DataGoogleStorageBucketLifecycleRuleConditionOutputReference)
 	_jsii_.Get(
 		j,
 		"numNewerVersions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucketLifecycleRuleConditionOutputReference) SendDaysSinceCustomTimeIfZero() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"sendDaysSinceCustomTimeIfZero",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucketLifecycleRuleConditionOutputReference) SendDaysSinceNoncurrentTimeIfZero() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"sendDaysSinceNoncurrentTimeIfZero",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucketLifecycleRuleConditionOutputReference) SendNumNewerVersionsIfZero() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"sendNumNewerVersionsIfZero",
 		&returns,
 	)
 	return returns

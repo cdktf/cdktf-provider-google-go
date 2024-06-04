@@ -99,6 +99,10 @@ func (a *jsiiProxy_AlloydbCluster) validatePutNetworkConfigParameters(value *All
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbCluster) validatePutPscConfigParameters(value *AlloydbClusterPscConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbCluster) validatePutRestoreBackupSourceParameters(value *AlloydbClusterRestoreBackupSource) error {
 	return nil
 }

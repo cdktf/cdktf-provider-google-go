@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/compute_region_autoscaler google_compute_region_autoscaler}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/compute_region_autoscaler google_compute_region_autoscaler}.
 type ComputeRegionAutoscaler interface {
 	cdktf.TerraformResource
 	AutoscalingPolicy() ComputeRegionAutoscalerAutoscalingPolicyOutputReference
@@ -497,7 +497,7 @@ func (j *jsiiProxy_ComputeRegionAutoscaler) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/compute_region_autoscaler google_compute_region_autoscaler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/compute_region_autoscaler google_compute_region_autoscaler} Resource.
 func NewComputeRegionAutoscaler(scope constructs.Construct, id *string, config *ComputeRegionAutoscalerConfig) ComputeRegionAutoscaler {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewComputeRegionAutoscaler(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.31.1/docs/resources/compute_region_autoscaler google_compute_region_autoscaler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/compute_region_autoscaler google_compute_region_autoscaler} Resource.
 func NewComputeRegionAutoscaler_Override(c ComputeRegionAutoscaler, scope constructs.Construct, id *string, config *ComputeRegionAutoscalerConfig) {
 	_init_.Initialize()
 
