@@ -43,6 +43,9 @@ type GkeBackupBackupPlanBackupConfigOutputReference interface {
 	IncludeVolumeDataInput() interface{}
 	InternalValue() *GkeBackupBackupPlanBackupConfig
 	SetInternalValue(val *GkeBackupBackupPlanBackupConfig)
+	PermissiveMode() interface{}
+	SetPermissiveMode(val interface{})
+	PermissiveModeInput() interface{}
 	SelectedApplications() GkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference
 	SelectedApplicationsInput() *GkeBackupBackupPlanBackupConfigSelectedApplications
 	SelectedNamespaces() GkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference
@@ -86,6 +89,7 @@ type GkeBackupBackupPlanBackupConfigOutputReference interface {
 	ResetEncryptionKey()
 	ResetIncludeSecrets()
 	ResetIncludeVolumeData()
+	ResetPermissiveMode()
 	ResetSelectedApplications()
 	ResetSelectedNamespaces()
 	// Produce the Token's value at resolution time.
@@ -228,6 +232,26 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) InternalValue
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) PermissiveMode() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"permissiveMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) PermissiveModeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"permissiveModeInput",
 		&returns,
 	)
 	return returns
@@ -383,6 +407,17 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetInternalVal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference)SetPermissiveMode(val interface{}) {
+	if err := j.validateSetPermissiveModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"permissiveMode",
 		val,
 	)
 }
@@ -656,6 +691,14 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) ResetIncludeV
 	_jsii_.InvokeVoid(
 		g,
 		"resetIncludeVolumeData",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) ResetPermissiveMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPermissiveMode",
 		nil, // no parameters
 	)
 }

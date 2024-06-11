@@ -35,6 +35,9 @@ type HealthcareDicomStoreNotificationConfigOutputReference interface {
 	PubsubTopic() *string
 	SetPubsubTopic(val *string)
 	PubsubTopicInput() *string
+	SendForBulkImport() interface{}
+	SetSendForBulkImport(val interface{})
+	SendForBulkImportInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type HealthcareDicomStoreNotificationConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSendForBulkImport()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +151,26 @@ func (j *jsiiProxy_HealthcareDicomStoreNotificationConfigOutputReference) Pubsub
 	_jsii_.Get(
 		j,
 		"pubsubTopicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareDicomStoreNotificationConfigOutputReference) SendForBulkImport() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendForBulkImport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareDicomStoreNotificationConfigOutputReference) SendForBulkImportInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendForBulkImportInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_HealthcareDicomStoreNotificationConfigOutputReference)SetPubs
 	_jsii_.Set(
 		j,
 		"pubsubTopic",
+		val,
+	)
+}
+
+func (j *jsiiProxy_HealthcareDicomStoreNotificationConfigOutputReference)SetSendForBulkImport(val interface{}) {
+	if err := j.validateSetSendForBulkImportParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendForBulkImport",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (h *jsiiProxy_HealthcareDicomStoreNotificationConfigOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (h *jsiiProxy_HealthcareDicomStoreNotificationConfigOutputReference) ResetSendForBulkImport() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetSendForBulkImport",
+		nil, // no parameters
+	)
 }
 
 func (h *jsiiProxy_HealthcareDicomStoreNotificationConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

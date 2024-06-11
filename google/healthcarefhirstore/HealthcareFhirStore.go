@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/healthcare_fhir_store google_healthcare_fhir_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/healthcare_fhir_store google_healthcare_fhir_store}.
 type HealthcareFhirStore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -78,6 +78,8 @@ type HealthcareFhirStore interface {
 	Node() constructs.Node
 	NotificationConfig() HealthcareFhirStoreNotificationConfigOutputReference
 	NotificationConfigInput() *HealthcareFhirStoreNotificationConfig
+	NotificationConfigs() HealthcareFhirStoreNotificationConfigsList
+	NotificationConfigsInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -147,6 +149,7 @@ type HealthcareFhirStore interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutNotificationConfig(value *HealthcareFhirStoreNotificationConfig)
+	PutNotificationConfigs(value interface{})
 	PutStreamConfigs(value interface{})
 	PutTimeouts(value *HealthcareFhirStoreTimeouts)
 	ResetComplexDataTypeReferenceParsing()
@@ -158,6 +161,7 @@ type HealthcareFhirStore interface {
 	ResetId()
 	ResetLabels()
 	ResetNotificationConfig()
+	ResetNotificationConfigs()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -511,6 +515,26 @@ func (j *jsiiProxy_HealthcareFhirStore) NotificationConfigInput() *HealthcareFhi
 	return returns
 }
 
+func (j *jsiiProxy_HealthcareFhirStore) NotificationConfigs() HealthcareFhirStoreNotificationConfigsList {
+	var returns HealthcareFhirStoreNotificationConfigsList
+	_jsii_.Get(
+		j,
+		"notificationConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_HealthcareFhirStore) NotificationConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"notificationConfigsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_HealthcareFhirStore) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -652,7 +676,7 @@ func (j *jsiiProxy_HealthcareFhirStore) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/healthcare_fhir_store google_healthcare_fhir_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/healthcare_fhir_store google_healthcare_fhir_store} Resource.
 func NewHealthcareFhirStore(scope constructs.Construct, id *string, config *HealthcareFhirStoreConfig) HealthcareFhirStore {
 	_init_.Initialize()
 
@@ -670,7 +694,7 @@ func NewHealthcareFhirStore(scope constructs.Construct, id *string, config *Heal
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/healthcare_fhir_store google_healthcare_fhir_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/healthcare_fhir_store google_healthcare_fhir_store} Resource.
 func NewHealthcareFhirStore_Override(h HealthcareFhirStore, scope constructs.Construct, id *string, config *HealthcareFhirStoreConfig) {
 	_init_.Initialize()
 
@@ -1234,6 +1258,17 @@ func (h *jsiiProxy_HealthcareFhirStore) PutNotificationConfig(value *HealthcareF
 	)
 }
 
+func (h *jsiiProxy_HealthcareFhirStore) PutNotificationConfigs(value interface{}) {
+	if err := h.validatePutNotificationConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		h,
+		"putNotificationConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (h *jsiiProxy_HealthcareFhirStore) PutStreamConfigs(value interface{}) {
 	if err := h.validatePutStreamConfigsParameters(value); err != nil {
 		panic(err)
@@ -1324,6 +1359,14 @@ func (h *jsiiProxy_HealthcareFhirStore) ResetNotificationConfig() {
 	_jsii_.InvokeVoid(
 		h,
 		"resetNotificationConfig",
+		nil, // no parameters
+	)
+}
+
+func (h *jsiiProxy_HealthcareFhirStore) ResetNotificationConfigs() {
+	_jsii_.InvokeVoid(
+		h,
+		"resetNotificationConfigs",
 		nil, // no parameters
 	)
 }

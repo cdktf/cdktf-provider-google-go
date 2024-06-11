@@ -30,6 +30,8 @@ type DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOutputReference
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DatabaseResourceReference() DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReferenceOutputReference
+	DatabaseResourceReferenceInput() *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReference
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilter
@@ -69,8 +71,10 @@ type DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOutputReference
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCollection(value *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterCollection)
+	PutDatabaseResourceReference(value *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReference)
 	PutOthers(value *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOthers)
 	ResetCollection()
+	ResetDatabaseResourceReference()
 	ResetOthers()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -132,6 +136,26 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterO
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOutputReference) DatabaseResourceReference() DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReferenceOutputReference {
+	var returns DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReferenceOutputReference
+	_jsii_.Get(
+		j,
+		"databaseResourceReference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOutputReference) DatabaseResourceReferenceInput() *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReference {
+	var returns *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReference
+	_jsii_.Get(
+		j,
+		"databaseResourceReferenceInput",
 		&returns,
 	)
 	return returns
@@ -477,6 +501,17 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterO
 	)
 }
 
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOutputReference) PutDatabaseResourceReference(value *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterDatabaseResourceReference) {
+	if err := d.validatePutDatabaseResourceReferenceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putDatabaseResourceReference",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOutputReference) PutOthers(value *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOthers) {
 	if err := d.validatePutOthersParameters(value); err != nil {
 		panic(err)
@@ -492,6 +527,14 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterO
 	_jsii_.InvokeVoid(
 		d,
 		"resetCollection",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetFilterOutputReference) ResetDatabaseResourceReference() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDatabaseResourceReference",
 		nil, // no parameters
 	)
 }

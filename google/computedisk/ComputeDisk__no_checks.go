@@ -187,6 +187,10 @@ func (j *jsiiProxy_ComputeDisk) validateSetSourceDiskParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_ComputeDisk) validateSetStoragePoolParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeDisk) validateSetTypeParameters(val *string) error {
 	return nil
 }

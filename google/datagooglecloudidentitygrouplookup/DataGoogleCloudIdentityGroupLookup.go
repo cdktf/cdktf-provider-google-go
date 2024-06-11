@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/data-sources/cloud_identity_group_lookup google_cloud_identity_group_lookup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/data-sources/cloud_identity_group_lookup google_cloud_identity_group_lookup}.
 type DataGoogleCloudIdentityGroupLookup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataGoogleCloudIdentityGroupLookup) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/data-sources/cloud_identity_group_lookup google_cloud_identity_group_lookup} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/data-sources/cloud_identity_group_lookup google_cloud_identity_group_lookup} Data Source.
 func NewDataGoogleCloudIdentityGroupLookup(scope constructs.Construct, id *string, config *DataGoogleCloudIdentityGroupLookupConfig) DataGoogleCloudIdentityGroupLookup {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataGoogleCloudIdentityGroupLookup(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/data-sources/cloud_identity_group_lookup google_cloud_identity_group_lookup} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/data-sources/cloud_identity_group_lookup google_cloud_identity_group_lookup} Data Source.
 func NewDataGoogleCloudIdentityGroupLookup_Override(d DataGoogleCloudIdentityGroupLookup, scope constructs.Construct, id *string, config *DataGoogleCloudIdentityGroupLookupConfig) {
 	_init_.Initialize()
 

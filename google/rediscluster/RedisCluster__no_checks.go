@@ -83,6 +83,10 @@ func (r *jsiiProxy_RedisCluster) validatePutTimeoutsParameters(value *RedisClust
 	return nil
 }
 
+func (r *jsiiProxy_RedisCluster) validatePutZoneDistributionConfigParameters(value *RedisClusterZoneDistributionConfig) error {
+	return nil
+}
+
 func validateRedisCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

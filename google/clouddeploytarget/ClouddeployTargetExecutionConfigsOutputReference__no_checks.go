@@ -87,6 +87,10 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validateSetVerboseParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference) validateSetWorkerPoolParameters(val *string) error {
 	return nil
 }

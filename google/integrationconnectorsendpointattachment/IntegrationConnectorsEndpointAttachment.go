@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment}.
 type IntegrationConnectorsEndpointAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -36,6 +36,9 @@ type IntegrationConnectorsEndpointAttachment interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
+	EndpointGlobalAccess() interface{}
+	SetEndpointGlobalAccess(val interface{})
+	EndpointGlobalAccessInput() interface{}
 	EndpointIp() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -134,6 +137,7 @@ type IntegrationConnectorsEndpointAttachment interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *IntegrationConnectorsEndpointAttachmentTimeouts)
 	ResetDescription()
+	ResetEndpointGlobalAccess()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -244,6 +248,26 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) EffectiveLabels() cd
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) EndpointGlobalAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"endpointGlobalAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) EndpointGlobalAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"endpointGlobalAccessInput",
 		&returns,
 	)
 	return returns
@@ -530,7 +554,7 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) UpdateTime() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment} Resource.
 func NewIntegrationConnectorsEndpointAttachment(scope constructs.Construct, id *string, config *IntegrationConnectorsEndpointAttachmentConfig) IntegrationConnectorsEndpointAttachment {
 	_init_.Initialize()
 
@@ -548,7 +572,7 @@ func NewIntegrationConnectorsEndpointAttachment(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment} Resource.
 func NewIntegrationConnectorsEndpointAttachment_Override(i IntegrationConnectorsEndpointAttachment, scope constructs.Construct, id *string, config *IntegrationConnectorsEndpointAttachmentConfig) {
 	_init_.Initialize()
 
@@ -596,6 +620,17 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetDescription(val *s
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment)SetEndpointGlobalAccess(val interface{}) {
+	if err := j.validateSetEndpointGlobalAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointGlobalAccess",
 		val,
 	)
 }
@@ -1072,6 +1107,14 @@ func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) ResetDescription() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IntegrationConnectorsEndpointAttachment) ResetEndpointGlobalAccess() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetEndpointGlobalAccess",
 		nil, // no parameters
 	)
 }

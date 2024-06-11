@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterO
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOutputReference) validatePutTableReferenceParameters(value *DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTableReference) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterOutputReference) validatePutTablesParameters(value *DataLossPreventionDiscoveryConfigTargetsBigQueryTargetFilterTables) error {
 	return nil
 }

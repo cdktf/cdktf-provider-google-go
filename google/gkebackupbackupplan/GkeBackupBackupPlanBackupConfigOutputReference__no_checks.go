@@ -87,6 +87,10 @@ func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) validateSetIn
 	return nil
 }
 
+func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) validateSetPermissiveModeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -5,9 +5,9 @@ package apigeeenvkeystore
 
 
 type ApigeeEnvKeystoreTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/apigee_env_keystore#create ApigeeEnvKeystore#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/apigee_env_keystore#create ApigeeEnvKeystore#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/apigee_env_keystore#delete ApigeeEnvKeystore#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/apigee_env_keystore#delete ApigeeEnvKeystore#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

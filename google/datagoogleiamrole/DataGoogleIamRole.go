@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/data-sources/iam_role google_iam_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/data-sources/iam_role google_iam_role}.
 type DataGoogleIamRole interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataGoogleIamRole) Title() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/data-sources/iam_role google_iam_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/data-sources/iam_role google_iam_role} Data Source.
 func NewDataGoogleIamRole(scope constructs.Construct, id *string, config *DataGoogleIamRoleConfig) DataGoogleIamRole {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataGoogleIamRole(scope constructs.Construct, id *string, config *DataGo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/data-sources/iam_role google_iam_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/data-sources/iam_role google_iam_role} Data Source.
 func NewDataGoogleIamRole_Override(d DataGoogleIamRole, scope constructs.Construct, id *string, config *DataGoogleIamRoleConfig) {
 	_init_.Initialize()
 

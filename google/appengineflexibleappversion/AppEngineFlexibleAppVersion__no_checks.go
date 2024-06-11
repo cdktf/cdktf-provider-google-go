@@ -95,6 +95,10 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersion) validatePutEntrypointParameters(
 	return nil
 }
 
+func (a *jsiiProxy_AppEngineFlexibleAppVersion) validatePutFlexibleRuntimeSettingsParameters(value *AppEngineFlexibleAppVersionFlexibleRuntimeSettings) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppEngineFlexibleAppVersion) validatePutHandlersParameters(value interface{}) error {
 	return nil
 }

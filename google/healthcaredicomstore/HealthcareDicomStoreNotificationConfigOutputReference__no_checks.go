@@ -67,6 +67,10 @@ func (j *jsiiProxy_HealthcareDicomStoreNotificationConfigOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_HealthcareDicomStoreNotificationConfigOutputReference) validateSetSendForBulkImportParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_HealthcareDicomStoreNotificationConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

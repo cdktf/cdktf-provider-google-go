@@ -9,7 +9,7 @@ type DiscoveryEngineChatEngineCommonConfig struct {
 	//
 	// Setting this may help improve LLM related features.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/discovery_engine_chat_engine#company_name DiscoveryEngineChatEngine#company_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/discovery_engine_chat_engine#company_name DiscoveryEngineChatEngine#company_name}
 	CompanyName *string `field:"optional" json:"companyName" yaml:"companyName"`
 }
 

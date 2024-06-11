@@ -107,6 +107,10 @@ func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateSetDescripti
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateSetEndpointGlobalAccessParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationConnectorsEndpointAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -22,7 +22,7 @@ type DataGoogleDnsManagedZonesConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/data-sources/dns_managed_zones#project DataGoogleDnsManagedZones#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/data-sources/dns_managed_zones#project DataGoogleDnsManagedZones#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

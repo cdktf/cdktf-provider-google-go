@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/redis_cluster google_redis_cluster}.
 type RedisCluster interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -103,6 +103,8 @@ type RedisCluster interface {
 	SetTransitEncryptionMode(val *string)
 	TransitEncryptionModeInput() *string
 	Uid() *string
+	ZoneDistributionConfig() RedisClusterZoneDistributionConfigOutputReference
+	ZoneDistributionConfigInput() *RedisClusterZoneDistributionConfig
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -148,6 +150,7 @@ type RedisCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutPscConfigs(value interface{})
 	PutTimeouts(value *RedisClusterTimeouts)
+	PutZoneDistributionConfig(value *RedisClusterZoneDistributionConfig)
 	ResetAuthorizationMode()
 	ResetId()
 	ResetName()
@@ -161,6 +164,7 @@ type RedisCluster interface {
 	ResetReplicaCount()
 	ResetTimeouts()
 	ResetTransitEncryptionMode()
+	ResetZoneDistributionConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -659,8 +663,28 @@ func (j *jsiiProxy_RedisCluster) Uid() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RedisCluster) ZoneDistributionConfig() RedisClusterZoneDistributionConfigOutputReference {
+	var returns RedisClusterZoneDistributionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"zoneDistributionConfig",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/redis_cluster google_redis_cluster} Resource.
+func (j *jsiiProxy_RedisCluster) ZoneDistributionConfigInput() *RedisClusterZoneDistributionConfig {
+	var returns *RedisClusterZoneDistributionConfig
+	_jsii_.Get(
+		j,
+		"zoneDistributionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster(scope constructs.Construct, id *string, config *RedisClusterConfig) RedisCluster {
 	_init_.Initialize()
 
@@ -678,7 +702,7 @@ func NewRedisCluster(scope constructs.Construct, id *string, config *RedisCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.32.0/docs/resources/redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster_Override(r RedisCluster, scope constructs.Construct, id *string, config *RedisClusterConfig) {
 	_init_.Initialize()
 
@@ -1242,6 +1266,17 @@ func (r *jsiiProxy_RedisCluster) PutTimeouts(value *RedisClusterTimeouts) {
 	)
 }
 
+func (r *jsiiProxy_RedisCluster) PutZoneDistributionConfig(value *RedisClusterZoneDistributionConfig) {
+	if err := r.validatePutZoneDistributionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putZoneDistributionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RedisCluster) ResetAuthorizationMode() {
 	_jsii_.InvokeVoid(
 		r,
@@ -1326,6 +1361,14 @@ func (r *jsiiProxy_RedisCluster) ResetTransitEncryptionMode() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetTransitEncryptionMode",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) ResetZoneDistributionConfig() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetZoneDistributionConfig",
 		nil, // no parameters
 	)
 }

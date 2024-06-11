@@ -780,6 +780,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxFindings", GoGetter: "MaxFindings"},
 			_jsii_.MemberProperty{JsiiProperty: "maxFindingsInput", GoGetter: "MaxFindingsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putInfoType", GoMethod: "PutInfoType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInfoType", GoMethod: "ResetInfoType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

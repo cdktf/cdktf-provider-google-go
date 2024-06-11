@@ -115,6 +115,10 @@ func (j *jsiiProxy_BigtableInstance) validateSetDisplayNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_BigtableInstance) validateSetForceDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigtableInstance) validateSetIdParameters(val *string) error {
 	return nil
 }
