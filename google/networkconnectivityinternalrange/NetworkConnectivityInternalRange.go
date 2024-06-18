@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range}.
 type NetworkConnectivityInternalRange interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -627,7 +627,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
 func NewNetworkConnectivityInternalRange(scope constructs.Construct, id *string, config *NetworkConnectivityInternalRangeConfig) NetworkConnectivityInternalRange {
 	_init_.Initialize()
 
@@ -645,7 +645,7 @@ func NewNetworkConnectivityInternalRange(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
 func NewNetworkConnectivityInternalRange_Override(n NetworkConnectivityInternalRange, scope constructs.Construct, id *string, config *NetworkConnectivityInternalRangeConfig) {
 	_init_.Initialize()
 

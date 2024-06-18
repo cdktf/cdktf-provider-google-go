@@ -32,6 +32,8 @@ type EdgecontainerClusterMaintenancePolicyOutputReference interface {
 	Fqn() *string
 	InternalValue() *EdgecontainerClusterMaintenancePolicy
 	SetInternalValue(val *EdgecontainerClusterMaintenancePolicy)
+	MaintenanceExclusions() EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsList
+	MaintenanceExclusionsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,7 +68,9 @@ type EdgecontainerClusterMaintenancePolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutMaintenanceExclusions(value interface{})
 	PutWindow(value *EdgecontainerClusterMaintenancePolicyWindow)
+	ResetMaintenanceExclusions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -127,6 +131,26 @@ func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyOutputReference) Interna
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyOutputReference) MaintenanceExclusions() EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsList {
+	var returns EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsList
+	_jsii_.Get(
+		j,
+		"maintenanceExclusions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyOutputReference) MaintenanceExclusionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"maintenanceExclusionsInput",
 		&returns,
 	)
 	return returns
@@ -441,6 +465,17 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyOutputReference) Interpo
 	return returns
 }
 
+func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyOutputReference) PutMaintenanceExclusions(value interface{}) {
+	if err := e.validatePutMaintenanceExclusionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putMaintenanceExclusions",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyOutputReference) PutWindow(value *EdgecontainerClusterMaintenancePolicyWindow) {
 	if err := e.validatePutWindowParameters(value); err != nil {
 		panic(err)
@@ -449,6 +484,14 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyOutputReference) PutWind
 		e,
 		"putWindow",
 		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyOutputReference) ResetMaintenanceExclusions() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMaintenanceExclusions",
+		nil, // no parameters
 	)
 }
 

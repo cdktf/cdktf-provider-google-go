@@ -75,6 +75,14 @@ func (c *jsiiProxy_Cloudbuildv2Connection) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (c *jsiiProxy_Cloudbuildv2Connection) validatePutBitbucketCloudConfigParameters(value *Cloudbuildv2ConnectionBitbucketCloudConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_Cloudbuildv2Connection) validatePutBitbucketDataCenterConfigParameters(value *Cloudbuildv2ConnectionBitbucketDataCenterConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudbuildv2Connection) validatePutGithubConfigParameters(value *Cloudbuildv2ConnectionGithubConfig) error {
 	return nil
 }

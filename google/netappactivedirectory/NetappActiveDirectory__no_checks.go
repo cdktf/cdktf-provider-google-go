@@ -95,6 +95,10 @@ func validateNetappActiveDirectory_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_NetappActiveDirectory) validateSetAdministratorsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappActiveDirectory) validateSetAesEncryptionParameters(val interface{}) error {
 	return nil
 }

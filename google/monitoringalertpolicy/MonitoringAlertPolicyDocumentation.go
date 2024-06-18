@@ -11,11 +11,11 @@ type MonitoringAlertPolicyDocumentation struct {
 	// exceed more than 10,240 bytes when encoded in UTF-8 format,
 	// whichever is smaller.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/monitoring_alert_policy#content MonitoringAlertPolicy#content}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/monitoring_alert_policy#content MonitoringAlertPolicy#content}
 	Content *string `field:"optional" json:"content" yaml:"content"`
 	// The format of the content field. Presently, only the value "text/markdown" is supported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/monitoring_alert_policy#mime_type MonitoringAlertPolicy#mime_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/monitoring_alert_policy#mime_type MonitoringAlertPolicy#mime_type}
 	MimeType *string `field:"optional" json:"mimeType" yaml:"mimeType"`
 	// The subject line of the notification.
 	//
@@ -24,7 +24,7 @@ type MonitoringAlertPolicyDocumentation struct {
 	// of the subject line after variable expansion will be truncated to 255 bytes
 	// or shorter at the latest UTF-8 character boundary.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/monitoring_alert_policy#subject MonitoringAlertPolicy#subject}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/monitoring_alert_policy#subject MonitoringAlertPolicy#subject}
 	Subject *string `field:"optional" json:"subject" yaml:"subject"`
 }
 

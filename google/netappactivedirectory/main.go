@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "administrators", GoGetter: "Administrators"},
+			_jsii_.MemberProperty{JsiiProperty: "administratorsInput", GoGetter: "AdministratorsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "aesEncryption", GoGetter: "AesEncryption"},
 			_jsii_.MemberProperty{JsiiProperty: "aesEncryptionInput", GoGetter: "AesEncryptionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "backupOperators", GoGetter: "BackupOperators"},
@@ -84,6 +86,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAdministrators", GoMethod: "ResetAdministrators"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAesEncryption", GoMethod: "ResetAesEncryption"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackupOperators", GoMethod: "ResetBackupOperators"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},

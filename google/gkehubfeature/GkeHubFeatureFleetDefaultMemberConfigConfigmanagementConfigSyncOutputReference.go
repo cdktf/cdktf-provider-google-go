@@ -36,6 +36,9 @@ type GkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputRefere
 	SetInternalValue(val *GkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSync)
 	Oci() GkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciOutputReference
 	OciInput() *GkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOci
+	PreventDrift() interface{}
+	SetPreventDrift(val interface{})
+	PreventDriftInput() interface{}
 	SourceFormat() *string
 	SetSourceFormat(val *string)
 	SourceFormatInput() *string
@@ -75,6 +78,7 @@ type GkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputRefere
 	PutOci(value *GkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOci)
 	ResetGit()
 	ResetOci()
+	ResetPreventDrift()
 	ResetSourceFormat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -181,6 +185,26 @@ func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSy
 	return returns
 }
 
+func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) PreventDrift() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preventDrift",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) PreventDriftInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preventDriftInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) SourceFormat() *string {
 	var returns *string
 	_jsii_.Get(
@@ -278,6 +302,17 @@ func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSy
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference)SetPreventDrift(val interface{}) {
+	if err := j.validateSetPreventDriftParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preventDrift",
 		val,
 	)
 }
@@ -535,6 +570,14 @@ func (g *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSy
 	_jsii_.InvokeVoid(
 		g,
 		"resetOci",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) ResetPreventDrift() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPreventDrift",
 		nil, // no parameters
 	)
 }

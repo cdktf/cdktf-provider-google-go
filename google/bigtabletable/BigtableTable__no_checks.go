@@ -75,6 +75,10 @@ func (b *jsiiProxy_BigtableTable) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (b *jsiiProxy_BigtableTable) validatePutAutomatedBackupPolicyParameters(value *BigtableTableAutomatedBackupPolicy) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableTable) validatePutColumnFamilyParameters(value interface{}) error {
 	return nil
 }

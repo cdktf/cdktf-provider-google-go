@@ -12,12 +12,16 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection}.
 type Cloudbuildv2Connection interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
+	BitbucketCloudConfig() Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference
+	BitbucketCloudConfigInput() *Cloudbuildv2ConnectionBitbucketCloudConfig
+	BitbucketDataCenterConfig() Cloudbuildv2ConnectionBitbucketDataCenterConfigOutputReference
+	BitbucketDataCenterConfigInput() *Cloudbuildv2ConnectionBitbucketDataCenterConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -136,11 +140,15 @@ type Cloudbuildv2Connection interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBitbucketCloudConfig(value *Cloudbuildv2ConnectionBitbucketCloudConfig)
+	PutBitbucketDataCenterConfig(value *Cloudbuildv2ConnectionBitbucketDataCenterConfig)
 	PutGithubConfig(value *Cloudbuildv2ConnectionGithubConfig)
 	PutGithubEnterpriseConfig(value *Cloudbuildv2ConnectionGithubEnterpriseConfig)
 	PutGitlabConfig(value *Cloudbuildv2ConnectionGitlabConfig)
 	PutTimeouts(value *Cloudbuildv2ConnectionTimeouts)
 	ResetAnnotations()
+	ResetBitbucketCloudConfig()
+	ResetBitbucketDataCenterConfig()
 	ResetDisabled()
 	ResetGithubConfig()
 	ResetGithubEnterpriseConfig()
@@ -184,6 +192,46 @@ func (j *jsiiProxy_Cloudbuildv2Connection) AnnotationsInput() *map[string]*strin
 	_jsii_.Get(
 		j,
 		"annotationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudbuildv2Connection) BitbucketCloudConfig() Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference {
+	var returns Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference
+	_jsii_.Get(
+		j,
+		"bitbucketCloudConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudbuildv2Connection) BitbucketCloudConfigInput() *Cloudbuildv2ConnectionBitbucketCloudConfig {
+	var returns *Cloudbuildv2ConnectionBitbucketCloudConfig
+	_jsii_.Get(
+		j,
+		"bitbucketCloudConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudbuildv2Connection) BitbucketDataCenterConfig() Cloudbuildv2ConnectionBitbucketDataCenterConfigOutputReference {
+	var returns Cloudbuildv2ConnectionBitbucketDataCenterConfigOutputReference
+	_jsii_.Get(
+		j,
+		"bitbucketDataCenterConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudbuildv2Connection) BitbucketDataCenterConfigInput() *Cloudbuildv2ConnectionBitbucketDataCenterConfig {
+	var returns *Cloudbuildv2ConnectionBitbucketDataCenterConfig
+	_jsii_.Get(
+		j,
+		"bitbucketDataCenterConfigInput",
 		&returns,
 	)
 	return returns
@@ -590,7 +638,7 @@ func (j *jsiiProxy_Cloudbuildv2Connection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
 func NewCloudbuildv2Connection(scope constructs.Construct, id *string, config *Cloudbuildv2ConnectionConfig) Cloudbuildv2Connection {
 	_init_.Initialize()
 
@@ -608,7 +656,7 @@ func NewCloudbuildv2Connection(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
 func NewCloudbuildv2Connection_Override(c Cloudbuildv2Connection, scope constructs.Construct, id *string, config *Cloudbuildv2ConnectionConfig) {
 	_init_.Initialize()
 
@@ -1106,6 +1154,28 @@ func (c *jsiiProxy_Cloudbuildv2Connection) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (c *jsiiProxy_Cloudbuildv2Connection) PutBitbucketCloudConfig(value *Cloudbuildv2ConnectionBitbucketCloudConfig) {
+	if err := c.validatePutBitbucketCloudConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putBitbucketCloudConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_Cloudbuildv2Connection) PutBitbucketDataCenterConfig(value *Cloudbuildv2ConnectionBitbucketDataCenterConfig) {
+	if err := c.validatePutBitbucketDataCenterConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putBitbucketDataCenterConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_Cloudbuildv2Connection) PutGithubConfig(value *Cloudbuildv2ConnectionGithubConfig) {
 	if err := c.validatePutGithubConfigParameters(value); err != nil {
 		panic(err)
@@ -1154,6 +1224,22 @@ func (c *jsiiProxy_Cloudbuildv2Connection) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cloudbuildv2Connection) ResetBitbucketCloudConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBitbucketCloudConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cloudbuildv2Connection) ResetBitbucketDataCenterConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBitbucketDataCenterConfig",
 		nil, // no parameters
 	)
 }

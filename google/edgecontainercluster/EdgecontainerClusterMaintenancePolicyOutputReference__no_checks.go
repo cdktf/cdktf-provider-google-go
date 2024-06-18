@@ -47,6 +47,10 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyOutputReference) validat
 	return nil
 }
 
+func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyOutputReference) validatePutMaintenanceExclusionsParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyOutputReference) validatePutWindowParameters(value *EdgecontainerClusterMaintenancePolicyWindow) error {
 	return nil
 }

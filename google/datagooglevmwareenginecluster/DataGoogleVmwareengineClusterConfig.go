@@ -24,16 +24,16 @@ type DataGoogleVmwareengineClusterConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the Cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/data-sources/vmwareengine_cluster#name DataGoogleVmwareengineCluster#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/data-sources/vmwareengine_cluster#name DataGoogleVmwareengineCluster#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The resource name of the private cloud to create a new cluster in.
 	//
 	// Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
 	// For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/data-sources/vmwareengine_cluster#parent DataGoogleVmwareengineCluster#parent}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/data-sources/vmwareengine_cluster#parent DataGoogleVmwareengineCluster#parent}
 	Parent *string `field:"required" json:"parent" yaml:"parent"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.33.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
