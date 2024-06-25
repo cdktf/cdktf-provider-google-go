@@ -9,7 +9,7 @@ type ContainerAzureNodePoolConfigSshConfig struct {
 	//
 	// This accepts the authorized_keys file format used in OpenSSH according to the sshd(8) manual page.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/container_azure_node_pool#authorized_key ContainerAzureNodePool#authorized_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/container_azure_node_pool#authorized_key ContainerAzureNodePool#authorized_key}
 	AuthorizedKey *string `field:"required" json:"authorizedKey" yaml:"authorizedKey"`
 }
 

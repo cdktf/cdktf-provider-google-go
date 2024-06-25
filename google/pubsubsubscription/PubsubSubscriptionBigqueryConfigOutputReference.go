@@ -35,6 +35,9 @@ type PubsubSubscriptionBigqueryConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *PubsubSubscriptionBigqueryConfig
 	SetInternalValue(val *PubsubSubscriptionBigqueryConfig)
+	ServiceAccountEmail() *string
+	SetServiceAccountEmail(val *string)
+	ServiceAccountEmailInput() *string
 	Table() *string
 	SetTable(val *string)
 	TableInput() *string
@@ -80,6 +83,7 @@ type PubsubSubscriptionBigqueryConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDropUnknownFields()
+	ResetServiceAccountEmail()
 	ResetUseTableSchema()
 	ResetUseTopicSchema()
 	ResetWriteMetadata()
@@ -163,6 +167,26 @@ func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) InternalValu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) ServiceAccountEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) ServiceAccountEmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmailInput",
 		&returns,
 	)
 	return returns
@@ -336,6 +360,17 @@ func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference)SetInternalVa
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference)SetServiceAccountEmail(val *string) {
+	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountEmail",
 		val,
 	)
 }
@@ -596,6 +631,14 @@ func (p *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) ResetDropUnk
 	_jsii_.InvokeVoid(
 		p,
 		"resetDropUnknownFields",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubSubscriptionBigqueryConfigOutputReference) ResetServiceAccountEmail() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetServiceAccountEmail",
 		nil, // no parameters
 	)
 }

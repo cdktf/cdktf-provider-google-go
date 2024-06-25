@@ -31,6 +31,9 @@ type BillingBudgetAllUpdatesRuleOutputReference interface {
 	DisableDefaultIamRecipients() interface{}
 	SetDisableDefaultIamRecipients(val interface{})
 	DisableDefaultIamRecipientsInput() interface{}
+	EnableProjectLevelRecipients() interface{}
+	SetEnableProjectLevelRecipients(val interface{})
+	EnableProjectLevelRecipientsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *BillingBudgetAllUpdatesRule
@@ -77,6 +80,7 @@ type BillingBudgetAllUpdatesRuleOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDisableDefaultIamRecipients()
+	ResetEnableProjectLevelRecipients()
 	ResetMonitoringNotificationChannels()
 	ResetPubsubTopic()
 	ResetSchemaVersion()
@@ -140,6 +144,26 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) DisableDefaultIam
 	_jsii_.Get(
 		j,
 		"disableDefaultIamRecipientsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) EnableProjectLevelRecipients() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableProjectLevelRecipients",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) EnableProjectLevelRecipientsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableProjectLevelRecipientsInput",
 		&returns,
 	)
 	return returns
@@ -302,6 +326,17 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetDisableDefaultI
 	_jsii_.Set(
 		j,
 		"disableDefaultIamRecipients",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference)SetEnableProjectLevelRecipients(val interface{}) {
+	if err := j.validateSetEnableProjectLevelRecipientsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableProjectLevelRecipients",
 		val,
 	)
 }
@@ -562,6 +597,14 @@ func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) ResetDisableDefau
 	_jsii_.InvokeVoid(
 		b,
 		"resetDisableDefaultIamRecipients",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) ResetEnableProjectLevelRecipients() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetEnableProjectLevelRecipients",
 		nil, // no parameters
 	)
 }

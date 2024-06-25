@@ -30,6 +30,7 @@ type DataGoogleComputeSecurityPolicyRuleMatchOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Expr() DataGoogleComputeSecurityPolicyRuleMatchExprList
+	ExprOptions() DataGoogleComputeSecurityPolicyRuleMatchExprOptionsList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleComputeSecurityPolicyRuleMatch
@@ -127,6 +128,16 @@ func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRuleMatchOutputReference) Expr
 	_jsii_.Get(
 		j,
 		"expr",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRuleMatchOutputReference) ExprOptions() DataGoogleComputeSecurityPolicyRuleMatchExprOptionsList {
+	var returns DataGoogleComputeSecurityPolicyRuleMatchExprOptionsList
+	_jsii_.Get(
+		j,
+		"exprOptions",
 		&returns,
 	)
 	return returns

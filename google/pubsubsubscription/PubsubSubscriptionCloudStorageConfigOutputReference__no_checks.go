@@ -91,6 +91,10 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validateSetServiceAccountEmailParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -33,6 +33,7 @@ type DataGooglePubsubSubscriptionBigqueryConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGooglePubsubSubscriptionBigqueryConfig
 	SetInternalValue(val *DataGooglePubsubSubscriptionBigqueryConfig)
+	ServiceAccountEmail() *string
 	Table() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -139,6 +140,16 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) ServiceAccountEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmail",
 		&returns,
 	)
 	return returns

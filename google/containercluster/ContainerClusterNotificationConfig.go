@@ -7,7 +7,7 @@ package containercluster
 type ContainerClusterNotificationConfig struct {
 	// pubsub block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/container_cluster#pubsub ContainerCluster#pubsub}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/container_cluster#pubsub ContainerCluster#pubsub}
 	Pubsub *ContainerClusterNotificationConfigPubsub `field:"required" json:"pubsub" yaml:"pubsub"`
 }
 

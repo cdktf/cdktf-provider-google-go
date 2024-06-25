@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store}.
 type VertexAiFeatureOnlineStore interface {
 	cdktf.TerraformResource
 	Bigtable() VertexAiFeatureOnlineStoreBigtableOutputReference
@@ -567,7 +567,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStore) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource.
 func NewVertexAiFeatureOnlineStore(scope constructs.Construct, id *string, config *VertexAiFeatureOnlineStoreConfig) VertexAiFeatureOnlineStore {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewVertexAiFeatureOnlineStore(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource.
 func NewVertexAiFeatureOnlineStore_Override(v VertexAiFeatureOnlineStore, scope constructs.Construct, id *string, config *VertexAiFeatureOnlineStoreConfig) {
 	_init_.Initialize()
 

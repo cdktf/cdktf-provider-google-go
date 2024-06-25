@@ -32,6 +32,8 @@ type ComputeSecurityPolicyRuleMatchAOutputReference interface {
 	CreationStack() *[]*string
 	Expr() ComputeSecurityPolicyRuleMatchExprAOutputReference
 	ExprInput() *ComputeSecurityPolicyRuleMatchExprA
+	ExprOptions() ComputeSecurityPolicyRuleMatchExprOptionsAOutputReference
+	ExprOptionsInput() *ComputeSecurityPolicyRuleMatchExprOptionsA
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComputeSecurityPolicyRuleMatchA
@@ -73,8 +75,10 @@ type ComputeSecurityPolicyRuleMatchAOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConfig(value *ComputeSecurityPolicyRuleMatchConfigA)
 	PutExpr(value *ComputeSecurityPolicyRuleMatchExprA)
+	PutExprOptions(value *ComputeSecurityPolicyRuleMatchExprOptionsA)
 	ResetConfig()
 	ResetExpr()
+	ResetExprOptions()
 	ResetVersionedExpr()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -156,6 +160,26 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) ExprInput() *
 	_jsii_.Get(
 		j,
 		"exprInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) ExprOptions() ComputeSecurityPolicyRuleMatchExprOptionsAOutputReference {
+	var returns ComputeSecurityPolicyRuleMatchExprOptionsAOutputReference
+	_jsii_.Get(
+		j,
+		"exprOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) ExprOptionsInput() *ComputeSecurityPolicyRuleMatchExprOptionsA {
+	var returns *ComputeSecurityPolicyRuleMatchExprOptionsA
+	_jsii_.Get(
+		j,
+		"exprOptionsInput",
 		&returns,
 	)
 	return returns
@@ -523,6 +547,17 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) PutExpr(value
 	)
 }
 
+func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) PutExprOptions(value *ComputeSecurityPolicyRuleMatchExprOptionsA) {
+	if err := c.validatePutExprOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putExprOptions",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) ResetConfig() {
 	_jsii_.InvokeVoid(
 		c,
@@ -535,6 +570,14 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) ResetExpr() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetExpr",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) ResetExprOptions() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExprOptions",
 		nil, // no parameters
 	)
 }

@@ -52,6 +52,9 @@ type PubsubSubscriptionCloudStorageConfigOutputReference interface {
 	MaxDuration() *string
 	SetMaxDuration(val *string)
 	MaxDurationInput() *string
+	ServiceAccountEmail() *string
+	SetServiceAccountEmail(val *string)
+	ServiceAccountEmailInput() *string
 	State() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -92,6 +95,7 @@ type PubsubSubscriptionCloudStorageConfigOutputReference interface {
 	ResetFilenameSuffix()
 	ResetMaxBytes()
 	ResetMaxDuration()
+	ResetServiceAccountEmail()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -297,6 +301,26 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) MaxDurat
 	return returns
 }
 
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ServiceAccountEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ServiceAccountEmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmailInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -450,6 +474,17 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetMaxDur
 	_jsii_.Set(
 		j,
 		"maxDuration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetServiceAccountEmail(val *string) {
+	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountEmail",
 		val,
 	)
 }
@@ -717,6 +752,14 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ResetMax
 	_jsii_.InvokeVoid(
 		p,
 		"resetMaxDuration",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ResetServiceAccountEmail() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetServiceAccountEmail",
 		nil, // no parameters
 	)
 }

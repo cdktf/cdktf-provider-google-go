@@ -63,6 +63,10 @@ func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) validateSetDisabl
 	return nil
 }
 
+func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) validateSetEnableProjectLevelRecipientsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BillingBudgetAllUpdatesRuleOutputReference) validateSetInternalValueParameters(val *BillingBudgetAllUpdatesRule) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/redis_instance google_redis_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/redis_instance google_redis_instance}.
 type RedisInstance interface {
 	cdktf.TerraformResource
 	AlternativeLocationId() *string
@@ -78,6 +78,9 @@ type RedisInstance interface {
 	MaintenancePolicy() RedisInstanceMaintenancePolicyOutputReference
 	MaintenancePolicyInput() *RedisInstanceMaintenancePolicy
 	MaintenanceSchedule() RedisInstanceMaintenanceScheduleList
+	MaintenanceVersion() *string
+	SetMaintenanceVersion(val *string)
+	MaintenanceVersionInput() *string
 	MemorySizeGb() *float64
 	SetMemorySizeGb(val *float64)
 	MemorySizeGbInput() *float64
@@ -199,6 +202,7 @@ type RedisInstance interface {
 	ResetLabels()
 	ResetLocationId()
 	ResetMaintenancePolicy()
+	ResetMaintenanceVersion()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -577,6 +581,26 @@ func (j *jsiiProxy_RedisInstance) MaintenanceSchedule() RedisInstanceMaintenance
 	_jsii_.Get(
 		j,
 		"maintenanceSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisInstance) MaintenanceVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisInstance) MaintenanceVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceVersionInput",
 		&returns,
 	)
 	return returns
@@ -1003,7 +1027,7 @@ func (j *jsiiProxy_RedisInstance) TransitEncryptionModeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/redis_instance google_redis_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/redis_instance google_redis_instance} Resource.
 func NewRedisInstance(scope constructs.Construct, id *string, config *RedisInstanceConfig) RedisInstance {
 	_init_.Initialize()
 
@@ -1021,7 +1045,7 @@ func NewRedisInstance(scope constructs.Construct, id *string, config *RedisInsta
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/redis_instance google_redis_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/redis_instance google_redis_instance} Resource.
 func NewRedisInstance_Override(r RedisInstance, scope constructs.Construct, id *string, config *RedisInstanceConfig) {
 	_init_.Initialize()
 
@@ -1176,6 +1200,17 @@ func (j *jsiiProxy_RedisInstance)SetLocationId(val *string) {
 	_jsii_.Set(
 		j,
 		"locationId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedisInstance)SetMaintenanceVersion(val *string) {
+	if err := j.validateSetMaintenanceVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintenanceVersion",
 		val,
 	)
 }
@@ -1793,6 +1828,14 @@ func (r *jsiiProxy_RedisInstance) ResetMaintenancePolicy() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetMaintenancePolicy",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisInstance) ResetMaintenanceVersion() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMaintenanceVersion",
 		nil, // no parameters
 	)
 }

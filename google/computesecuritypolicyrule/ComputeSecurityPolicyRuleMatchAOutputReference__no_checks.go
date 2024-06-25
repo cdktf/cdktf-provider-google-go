@@ -55,6 +55,10 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) validatePutEx
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) validatePutExprOptionsParameters(value *ComputeSecurityPolicyRuleMatchExprOptionsA) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

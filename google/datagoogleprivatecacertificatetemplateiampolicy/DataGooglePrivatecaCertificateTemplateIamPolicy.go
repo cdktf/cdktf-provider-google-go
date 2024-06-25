@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/data-sources/privateca_certificate_template_iam_policy google_privateca_certificate_template_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/data-sources/privateca_certificate_template_iam_policy google_privateca_certificate_template_iam_policy}.
 type DataGooglePrivatecaCertificateTemplateIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataGooglePrivatecaCertificateTemplateIamPolicy) TerraformRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/data-sources/privateca_certificate_template_iam_policy google_privateca_certificate_template_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/data-sources/privateca_certificate_template_iam_policy google_privateca_certificate_template_iam_policy} Data Source.
 func NewDataGooglePrivatecaCertificateTemplateIamPolicy(scope constructs.Construct, id *string, config *DataGooglePrivatecaCertificateTemplateIamPolicyConfig) DataGooglePrivatecaCertificateTemplateIamPolicy {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewDataGooglePrivatecaCertificateTemplateIamPolicy(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/data-sources/privateca_certificate_template_iam_policy google_privateca_certificate_template_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/data-sources/privateca_certificate_template_iam_policy google_privateca_certificate_template_iam_policy} Data Source.
 func NewDataGooglePrivatecaCertificateTemplateIamPolicy_Override(d DataGooglePrivatecaCertificateTemplateIamPolicy, scope constructs.Construct, id *string, config *DataGooglePrivatecaCertificateTemplateIamPolicyConfig) {
 	_init_.Initialize()
 

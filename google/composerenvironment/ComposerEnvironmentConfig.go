@@ -24,13 +24,13 @@ type ComposerEnvironmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the environment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/composer_environment#name ComposerEnvironment#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/composer_environment#name ComposerEnvironment#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/composer_environment#config ComposerEnvironment#config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/composer_environment#config ComposerEnvironment#config}
 	Config *ComposerEnvironmentConfigA `field:"optional" json:"config" yaml:"config"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/composer_environment#id ComposerEnvironment#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/composer_environment#id ComposerEnvironment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -42,25 +42,25 @@ type ComposerEnvironmentConfig struct {
 	// 				**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// 				Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/composer_environment#labels ComposerEnvironment#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/composer_environment#labels ComposerEnvironment#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// The ID of the project in which the resource belongs.
 	//
 	// If it is not provided, the provider project is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/composer_environment#project ComposerEnvironment#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/composer_environment#project ComposerEnvironment#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The location or Compute Engine region for the environment.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/composer_environment#region ComposerEnvironment#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/composer_environment#region ComposerEnvironment#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// storage_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/composer_environment#storage_config ComposerEnvironment#storage_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/composer_environment#storage_config ComposerEnvironment#storage_config}
 	StorageConfig *ComposerEnvironmentStorageConfig `field:"optional" json:"storageConfig" yaml:"storageConfig"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/composer_environment#timeouts ComposerEnvironment#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/composer_environment#timeouts ComposerEnvironment#timeouts}
 	Timeouts *ComposerEnvironmentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

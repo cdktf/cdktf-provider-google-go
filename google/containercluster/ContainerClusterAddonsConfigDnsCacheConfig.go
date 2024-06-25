@@ -5,7 +5,7 @@ package containercluster
 
 
 type ContainerClusterAddonsConfigDnsCacheConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.34.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 }
 

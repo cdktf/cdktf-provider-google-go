@@ -39,6 +39,7 @@ type DataGooglePubsubSubscriptionCloudStorageConfigOutputReference interface {
 	SetInternalValue(val *DataGooglePubsubSubscriptionCloudStorageConfig)
 	MaxBytes() *float64
 	MaxDuration() *string
+	ServiceAccountEmail() *string
 	State() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -202,6 +203,16 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigOutputReference
 	_jsii_.Get(
 		j,
 		"maxDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigOutputReference) ServiceAccountEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmail",
 		&returns,
 	)
 	return returns
