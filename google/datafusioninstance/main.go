@@ -294,6 +294,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionType", GoGetter: "ConnectionType"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionTypeInput", GoGetter: "ConnectionTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
@@ -312,6 +314,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ipAllocationInput", GoGetter: "IpAllocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},
 			_jsii_.MemberProperty{JsiiProperty: "networkInput", GoGetter: "NetworkInput"},
+			_jsii_.MemberProperty{JsiiProperty: "privateServiceConnectConfig", GoGetter: "PrivateServiceConnectConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "privateServiceConnectConfigInput", GoGetter: "PrivateServiceConnectConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putPrivateServiceConnectConfig", GoMethod: "PutPrivateServiceConnectConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectionType", GoMethod: "ResetConnectionType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIpAllocation", GoMethod: "ResetIpAllocation"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNetwork", GoMethod: "ResetNetwork"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrivateServiceConnectConfig", GoMethod: "ResetPrivateServiceConnectConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -319,6 +328,49 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataFusionInstanceNetworkConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfigPrivateServiceConnectConfig",
+		reflect.TypeOf((*DataFusionInstanceNetworkConfigPrivateServiceConnectConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference",
+		reflect.TypeOf((*DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "effectiveUnreachableCidrBlock", GoGetter: "EffectiveUnreachableCidrBlock"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "networkAttachment", GoGetter: "NetworkAttachment"},
+			_jsii_.MemberProperty{JsiiProperty: "networkAttachmentInput", GoGetter: "NetworkAttachmentInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNetworkAttachment", GoMethod: "ResetNetworkAttachment"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUnreachableCidrBlock", GoMethod: "ResetUnreachableCidrBlock"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "unreachableCidrBlock", GoGetter: "UnreachableCidrBlock"},
+			_jsii_.MemberProperty{JsiiProperty: "unreachableCidrBlockInput", GoGetter: "UnreachableCidrBlockInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

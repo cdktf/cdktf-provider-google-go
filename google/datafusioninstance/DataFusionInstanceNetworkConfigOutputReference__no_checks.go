@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateInter
 	return nil
 }
 
+func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validatePutPrivateServiceConnectConfigParameters(value *DataFusionInstanceNetworkConfigPrivateServiceConnectConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -56,6 +60,10 @@ func (j *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateSetCo
 }
 
 func (j *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateSetConnectionTypeParameters(val *string) error {
 	return nil
 }
 

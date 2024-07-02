@@ -59,6 +59,10 @@ func (j *jsiiProxy_ComputeInstanceTemplateConfidentialInstanceConfigOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplateConfidentialInstanceConfigOutputReference) validateSetConfidentialInstanceTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplateConfidentialInstanceConfigOutputReference) validateSetEnableConfidentialComputeParameters(val interface{}) error {
 	return nil
 }

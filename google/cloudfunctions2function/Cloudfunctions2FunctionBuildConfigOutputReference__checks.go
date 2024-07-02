@@ -93,6 +93,28 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) validateIn
 	return nil
 }
 
+func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) validatePutAutomaticUpdatePolicyParameters(value *Cloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) validatePutOnDeployUpdatePolicyParameters(value *Cloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) validatePutSourceParameters(value *Cloudfunctions2FunctionBuildConfigSource) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

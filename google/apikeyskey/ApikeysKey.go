@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/apikeys_key google_apikeys_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/resources/apikeys_key google_apikeys_key}.
 type ApikeysKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_ApikeysKey) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/apikeys_key google_apikeys_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/resources/apikeys_key google_apikeys_key} Resource.
 func NewApikeysKey(scope constructs.Construct, id *string, config *ApikeysKeyConfig) ApikeysKey {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewApikeysKey(scope constructs.Construct, id *string, config *ApikeysKeyCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/apikeys_key google_apikeys_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/resources/apikeys_key google_apikeys_key} Resource.
 func NewApikeysKey_Override(a ApikeysKey, scope constructs.Construct, id *string, config *ApikeysKeyConfig) {
 	_init_.Initialize()
 

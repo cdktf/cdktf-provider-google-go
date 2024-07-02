@@ -207,6 +207,17 @@ func (h *jsiiProxy_HealthcareDataset) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareDataset) validatePutEncryptionSpecParameters(value *HealthcareDatasetEncryptionSpec) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareDataset) validatePutTimeoutsParameters(value *HealthcareDatasetTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

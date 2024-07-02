@@ -47,6 +47,14 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) validateIn
 	return nil
 }
 
+func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) validatePutAutomaticUpdatePolicyParameters(value *Cloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy) error {
+	return nil
+}
+
+func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) validatePutOnDeployUpdatePolicyParameters(value *Cloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) validatePutSourceParameters(value *Cloudfunctions2FunctionBuildConfigSource) error {
 	return nil
 }

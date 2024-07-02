@@ -93,6 +93,17 @@ func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateInter
 	return nil
 }
 
+func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validatePutPrivateServiceConnectConfigParameters(value *DataFusionInstanceNetworkConfigPrivateServiceConnectConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -159,6 +170,14 @@ func (j *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateSetCo
 }
 
 func (j *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateSetConnectionTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

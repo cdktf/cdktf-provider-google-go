@@ -127,6 +127,10 @@ func (j *jsiiProxy_BigtableGcPolicy) validateSetIdParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_BigtableGcPolicy) validateSetIgnoreWarningsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigtableGcPolicy) validateSetInstanceNameParameters(val *string) error {
 	return nil
 }

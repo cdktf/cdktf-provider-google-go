@@ -13,6 +13,8 @@ import (
 
 type Cloudfunctions2FunctionBuildConfigOutputReference interface {
 	cdktf.ComplexObject
+	AutomaticUpdatePolicy() Cloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference
+	AutomaticUpdatePolicyInput() *Cloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy
 	BuildAttribute() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -42,6 +44,8 @@ type Cloudfunctions2FunctionBuildConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *Cloudfunctions2FunctionBuildConfig
 	SetInternalValue(val *Cloudfunctions2FunctionBuildConfig)
+	OnDeployUpdatePolicy() Cloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyOutputReference
+	OnDeployUpdatePolicyInput() *Cloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy
 	Runtime() *string
 	SetRuntime(val *string)
 	RuntimeInput() *string
@@ -85,10 +89,14 @@ type Cloudfunctions2FunctionBuildConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAutomaticUpdatePolicy(value *Cloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy)
+	PutOnDeployUpdatePolicy(value *Cloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy)
 	PutSource(value *Cloudfunctions2FunctionBuildConfigSource)
+	ResetAutomaticUpdatePolicy()
 	ResetDockerRepository()
 	ResetEntryPoint()
 	ResetEnvironmentVariables()
+	ResetOnDeployUpdatePolicy()
 	ResetRuntime()
 	ResetServiceAccount()
 	ResetSource()
@@ -106,6 +114,26 @@ type Cloudfunctions2FunctionBuildConfigOutputReference interface {
 // The jsii proxy struct for Cloudfunctions2FunctionBuildConfigOutputReference
 type jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) AutomaticUpdatePolicy() Cloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference {
+	var returns Cloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"automaticUpdatePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) AutomaticUpdatePolicyInput() *Cloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy {
+	var returns *Cloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy
+	_jsii_.Get(
+		j,
+		"automaticUpdatePolicyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) BuildAttribute() *string {
@@ -223,6 +251,26 @@ func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) InternalVa
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) OnDeployUpdatePolicy() Cloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyOutputReference {
+	var returns Cloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"onDeployUpdatePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) OnDeployUpdatePolicyInput() *Cloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy {
+	var returns *Cloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy
+	_jsii_.Get(
+		j,
+		"onDeployUpdatePolicyInput",
 		&returns,
 	)
 	return returns
@@ -663,6 +711,28 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) Interpolat
 	return returns
 }
 
+func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) PutAutomaticUpdatePolicy(value *Cloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy) {
+	if err := c.validatePutAutomaticUpdatePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAutomaticUpdatePolicy",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) PutOnDeployUpdatePolicy(value *Cloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy) {
+	if err := c.validatePutOnDeployUpdatePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putOnDeployUpdatePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) PutSource(value *Cloudfunctions2FunctionBuildConfigSource) {
 	if err := c.validatePutSourceParameters(value); err != nil {
 		panic(err)
@@ -671,6 +741,14 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) PutSource(
 		c,
 		"putSource",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) ResetAutomaticUpdatePolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAutomaticUpdatePolicy",
+		nil, // no parameters
 	)
 }
 
@@ -694,6 +772,14 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) ResetEnvir
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnvironmentVariables",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigOutputReference) ResetOnDeployUpdatePolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOnDeployUpdatePolicy",
 		nil, // no parameters
 	)
 }

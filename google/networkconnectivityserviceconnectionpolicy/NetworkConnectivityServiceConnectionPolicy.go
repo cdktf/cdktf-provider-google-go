@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/network_connectivity_service_connection_policy google_network_connectivity_service_connection_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/resources/network_connectivity_service_connection_policy google_network_connectivity_service_connection_policy}.
 type NetworkConnectivityServiceConnectionPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -599,7 +599,7 @@ func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicy) UpdateTime() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/network_connectivity_service_connection_policy google_network_connectivity_service_connection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/resources/network_connectivity_service_connection_policy google_network_connectivity_service_connection_policy} Resource.
 func NewNetworkConnectivityServiceConnectionPolicy(scope constructs.Construct, id *string, config *NetworkConnectivityServiceConnectionPolicyConfig) NetworkConnectivityServiceConnectionPolicy {
 	_init_.Initialize()
 
@@ -617,7 +617,7 @@ func NewNetworkConnectivityServiceConnectionPolicy(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.35.0/docs/resources/network_connectivity_service_connection_policy google_network_connectivity_service_connection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/resources/network_connectivity_service_connection_policy google_network_connectivity_service_connection_policy} Resource.
 func NewNetworkConnectivityServiceConnectionPolicy_Override(n NetworkConnectivityServiceConnectionPolicy, scope constructs.Construct, id *string, config *NetworkConnectivityServiceConnectionPolicyConfig) {
 	_init_.Initialize()
 

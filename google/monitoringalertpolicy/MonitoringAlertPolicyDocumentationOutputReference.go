@@ -35,6 +35,8 @@ type MonitoringAlertPolicyDocumentationOutputReference interface {
 	Fqn() *string
 	InternalValue() *MonitoringAlertPolicyDocumentation
 	SetInternalValue(val *MonitoringAlertPolicyDocumentation)
+	Links() MonitoringAlertPolicyDocumentationLinksList
+	LinksInput() interface{}
 	MimeType() *string
 	SetMimeType(val *string)
 	MimeTypeInput() *string
@@ -73,7 +75,9 @@ type MonitoringAlertPolicyDocumentationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutLinks(value interface{})
 	ResetContent()
+	ResetLinks()
 	ResetMimeType()
 	ResetSubject()
 	// Produce the Token's value at resolution time.
@@ -156,6 +160,26 @@ func (j *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) InternalVa
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) Links() MonitoringAlertPolicyDocumentationLinksList {
+	var returns MonitoringAlertPolicyDocumentationLinksList
+	_jsii_.Get(
+		j,
+		"links",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) LinksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"linksInput",
 		&returns,
 	)
 	return returns
@@ -523,10 +547,29 @@ func (m *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) Interpolat
 	return returns
 }
 
+func (m *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) PutLinks(value interface{}) {
+	if err := m.validatePutLinksParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putLinks",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) ResetContent() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetContent",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference) ResetLinks() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetLinks",
 		nil, // no parameters
 	)
 }
