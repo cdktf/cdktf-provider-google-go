@@ -67,6 +67,10 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOut
 	return nil
 }
 
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference) validateSetProjectNumberParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySourceOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

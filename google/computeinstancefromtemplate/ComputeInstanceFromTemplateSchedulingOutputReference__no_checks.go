@@ -51,7 +51,15 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) validat
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) validatePutMaxRunDurationParameters(value *ComputeInstanceFromTemplateSchedulingMaxRunDuration) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) validatePutNodeAffinitiesParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) validatePutOnInstanceStopActionParameters(value *ComputeInstanceFromTemplateSchedulingOnInstanceStopAction) error {
 	return nil
 }
 

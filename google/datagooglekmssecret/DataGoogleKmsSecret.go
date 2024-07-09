@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/data-sources/kms_secret google_kms_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.37.0/docs/data-sources/kms_secret google_kms_secret}.
 type DataGoogleKmsSecret interface {
 	cdktf.TerraformDataSource
 	AdditionalAuthenticatedData() *string
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataGoogleKmsSecret) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/data-sources/kms_secret google_kms_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.37.0/docs/data-sources/kms_secret google_kms_secret} Data Source.
 func NewDataGoogleKmsSecret(scope constructs.Construct, id *string, config *DataGoogleKmsSecretConfig) DataGoogleKmsSecret {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataGoogleKmsSecret(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/data-sources/kms_secret google_kms_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.37.0/docs/data-sources/kms_secret google_kms_secret} Data Source.
 func NewDataGoogleKmsSecret_Override(d DataGoogleKmsSecret, scope constructs.Construct, id *string, config *DataGoogleKmsSecretConfig) {
 	_init_.Initialize()
 

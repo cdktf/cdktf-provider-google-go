@@ -35,9 +35,11 @@ type DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference interface 
 	InternalValue() *DataGoogleComputeRegionInstanceTemplateScheduling
 	SetInternalValue(val *DataGoogleComputeRegionInstanceTemplateScheduling)
 	LocalSsdRecoveryTimeout() DataGoogleComputeRegionInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList
+	MaxRunDuration() DataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationList
 	MinNodeCpus() *float64
 	NodeAffinities() DataGoogleComputeRegionInstanceTemplateSchedulingNodeAffinitiesList
 	OnHostMaintenance() *string
+	OnInstanceStopAction() DataGoogleComputeRegionInstanceTemplateSchedulingOnInstanceStopActionList
 	Preemptible() cdktf.IResolvable
 	ProvisioningModel() *string
 	// Experimental.
@@ -167,6 +169,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference) MaxRunDuration() DataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationList {
+	var returns DataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationList
+	_jsii_.Get(
+		j,
+		"maxRunDuration",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference) MinNodeCpus() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -192,6 +204,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputRefere
 	_jsii_.Get(
 		j,
 		"onHostMaintenance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference) OnInstanceStopAction() DataGoogleComputeRegionInstanceTemplateSchedulingOnInstanceStopActionList {
+	var returns DataGoogleComputeRegionInstanceTemplateSchedulingOnInstanceStopActionList
+	_jsii_.Get(
+		j,
+		"onInstanceStopAction",
 		&returns,
 	)
 	return returns

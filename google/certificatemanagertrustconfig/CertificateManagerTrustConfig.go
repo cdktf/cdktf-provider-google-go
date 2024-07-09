@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/resources/certificate_manager_trust_config google_certificate_manager_trust_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.37.0/docs/resources/certificate_manager_trust_config google_certificate_manager_trust_config}.
 type CertificateManagerTrustConfig interface {
 	cdktf.TerraformResource
+	AllowlistedCertificates() CertificateManagerTrustConfigAllowlistedCertificatesList
+	AllowlistedCertificatesInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -130,8 +132,10 @@ type CertificateManagerTrustConfig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAllowlistedCertificates(value interface{})
 	PutTimeouts(value *CertificateManagerTrustConfigTimeouts)
 	PutTrustStores(value interface{})
+	ResetAllowlistedCertificates()
 	ResetDescription()
 	ResetId()
 	ResetLabels()
@@ -157,6 +161,26 @@ type CertificateManagerTrustConfig interface {
 // The jsii proxy struct for CertificateManagerTrustConfig
 type jsiiProxy_CertificateManagerTrustConfig struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CertificateManagerTrustConfig) AllowlistedCertificates() CertificateManagerTrustConfigAllowlistedCertificatesList {
+	var returns CertificateManagerTrustConfigAllowlistedCertificatesList
+	_jsii_.Get(
+		j,
+		"allowlistedCertificates",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertificateManagerTrustConfig) AllowlistedCertificatesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowlistedCertificatesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CertificateManagerTrustConfig) CdktfStack() cdktf.TerraformStack {
@@ -520,7 +544,7 @@ func (j *jsiiProxy_CertificateManagerTrustConfig) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/resources/certificate_manager_trust_config google_certificate_manager_trust_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.37.0/docs/resources/certificate_manager_trust_config google_certificate_manager_trust_config} Resource.
 func NewCertificateManagerTrustConfig(scope constructs.Construct, id *string, config *CertificateManagerTrustConfigConfig) CertificateManagerTrustConfig {
 	_init_.Initialize()
 
@@ -538,7 +562,7 @@ func NewCertificateManagerTrustConfig(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/resources/certificate_manager_trust_config google_certificate_manager_trust_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.37.0/docs/resources/certificate_manager_trust_config google_certificate_manager_trust_config} Resource.
 func NewCertificateManagerTrustConfig_Override(c CertificateManagerTrustConfig, scope constructs.Construct, id *string, config *CertificateManagerTrustConfigConfig) {
 	_init_.Initialize()
 
@@ -1036,6 +1060,17 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) OverrideLogicalId(newLogicalId
 	)
 }
 
+func (c *jsiiProxy_CertificateManagerTrustConfig) PutAllowlistedCertificates(value interface{}) {
+	if err := c.validatePutAllowlistedCertificatesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAllowlistedCertificates",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CertificateManagerTrustConfig) PutTimeouts(value *CertificateManagerTrustConfigTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1055,6 +1090,14 @@ func (c *jsiiProxy_CertificateManagerTrustConfig) PutTrustStores(value interface
 		c,
 		"putTrustStores",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CertificateManagerTrustConfig) ResetAllowlistedCertificates() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAllowlistedCertificates",
+		nil, // no parameters
 	)
 }
 

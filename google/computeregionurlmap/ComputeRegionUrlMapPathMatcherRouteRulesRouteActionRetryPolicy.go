@@ -7,17 +7,17 @@ package computeregionurlmap
 type ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy struct {
 	// Specifies the allowed number retries. This number must be > 0.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/resources/compute_region_url_map#num_retries ComputeRegionUrlMap#num_retries}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.37.0/docs/resources/compute_region_url_map#num_retries ComputeRegionUrlMap#num_retries}
 	NumRetries *float64 `field:"required" json:"numRetries" yaml:"numRetries"`
 	// per_try_timeout block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/resources/compute_region_url_map#per_try_timeout ComputeRegionUrlMap#per_try_timeout}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.37.0/docs/resources/compute_region_url_map#per_try_timeout ComputeRegionUrlMap#per_try_timeout}
 	PerTryTimeout *ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout `field:"optional" json:"perTryTimeout" yaml:"perTryTimeout"`
 	// Specifies one or more conditions when this retry rule applies. Valid values are:.
 	//
 	// * 5xx: Loadbalancer will attempt a retry if the backend service responds with
 	//   any 5xx response code, or if the backend service does not respond at all,
-	//   example: disconnects, reset, read timeout, connection failure, and refused
+	//   for example: disconnects, reset, read timeout, connection failure, and refused
 	//   streams.
 	// * gateway-error: Similar to 5xx, but only applies to response codes
 	//   502, 503 or 504.
@@ -36,7 +36,7 @@ type ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy struct {
 	// * unavailable: Loadbalancer will retry if the gRPC status code in
 	//   the response header is set to unavailable
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/resources/compute_region_url_map#retry_conditions ComputeRegionUrlMap#retry_conditions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.37.0/docs/resources/compute_region_url_map#retry_conditions ComputeRegionUrlMap#retry_conditions}
 	RetryConditions *[]*string `field:"optional" json:"retryConditions" yaml:"retryConditions"`
 }
 

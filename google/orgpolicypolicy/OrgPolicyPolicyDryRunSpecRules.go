@@ -5,31 +5,31 @@ package orgpolicypolicy
 
 
 type OrgPolicyPolicyDryRunSpecRules struct {
-	// Setting this to `"TRUE"` means that all values are allowed.
+	// Setting this to '"TRUE"' means that all values are allowed.
 	//
-	// This field can be set only in policies for list constraints.
+	// This field can be set only in Policies for list constraints.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/resources/org_policy_policy#allow_all OrgPolicyPolicy#allow_all}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.37.0/docs/resources/org_policy_policy#allow_all OrgPolicyPolicy#allow_all}
 	AllowAll *string `field:"optional" json:"allowAll" yaml:"allowAll"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/resources/org_policy_policy#condition OrgPolicyPolicy#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.37.0/docs/resources/org_policy_policy#condition OrgPolicyPolicy#condition}
 	Condition *OrgPolicyPolicyDryRunSpecRulesCondition `field:"optional" json:"condition" yaml:"condition"`
-	// Setting this to `"TRUE"` means that all values are denied.
+	// Setting this to '"TRUE"' means that all values are denied.
 	//
-	// This field can be set only in policies for list constraints.
+	// This field can be set only in Policies for list constraints.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/resources/org_policy_policy#deny_all OrgPolicyPolicy#deny_all}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.37.0/docs/resources/org_policy_policy#deny_all OrgPolicyPolicy#deny_all}
 	DenyAll *string `field:"optional" json:"denyAll" yaml:"denyAll"`
-	// If `"TRUE"`, then the policy is enforced.
+	// If '"TRUE"', then the 'Policy' is enforced.
 	//
-	// If `"FALSE"`, then any configuration is acceptable. This field can be set only in policies for boolean constraints.
+	// If '"FALSE"', then any configuration is acceptable. This field can be set only in Policies for boolean constraints.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/resources/org_policy_policy#enforce OrgPolicyPolicy#enforce}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.37.0/docs/resources/org_policy_policy#enforce OrgPolicyPolicy#enforce}
 	Enforce *string `field:"optional" json:"enforce" yaml:"enforce"`
 	// values block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.36.0/docs/resources/org_policy_policy#values OrgPolicyPolicy#values}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.37.0/docs/resources/org_policy_policy#values OrgPolicyPolicy#values}
 	Values *OrgPolicyPolicyDryRunSpecRulesValues `field:"optional" json:"values" yaml:"values"`
 }
 

@@ -124,6 +124,17 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) validatePut
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) validatePutMaxRunDurationParameters(value *ComputeInstanceTemplateSchedulingMaxRunDuration) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) validatePutNodeAffinitiesParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -150,6 +161,17 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) validatePut
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ComputeInstanceTemplateSchedulingNodeAffinities; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) validatePutOnInstanceStopActionParameters(value *ComputeInstanceTemplateSchedulingOnInstanceStopAction) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

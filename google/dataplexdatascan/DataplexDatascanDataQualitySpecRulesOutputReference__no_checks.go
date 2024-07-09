@@ -67,6 +67,10 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validate
 	return nil
 }
 
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validatePutSqlAssertionParameters(value *DataplexDatascanDataQualitySpecRulesSqlAssertion) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference) validatePutStatisticRangeExpectationParameters(value *DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation) error {
 	return nil
 }

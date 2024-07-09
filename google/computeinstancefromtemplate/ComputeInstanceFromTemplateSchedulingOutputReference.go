@@ -40,6 +40,8 @@ type ComputeInstanceFromTemplateSchedulingOutputReference interface {
 	SetInternalValue(val *ComputeInstanceFromTemplateScheduling)
 	LocalSsdRecoveryTimeout() ComputeInstanceFromTemplateSchedulingLocalSsdRecoveryTimeoutOutputReference
 	LocalSsdRecoveryTimeoutInput() *ComputeInstanceFromTemplateSchedulingLocalSsdRecoveryTimeout
+	MaxRunDuration() ComputeInstanceFromTemplateSchedulingMaxRunDurationOutputReference
+	MaxRunDurationInput() *ComputeInstanceFromTemplateSchedulingMaxRunDuration
 	MinNodeCpus() *float64
 	SetMinNodeCpus(val *float64)
 	MinNodeCpusInput() *float64
@@ -48,6 +50,8 @@ type ComputeInstanceFromTemplateSchedulingOutputReference interface {
 	OnHostMaintenance() *string
 	SetOnHostMaintenance(val *string)
 	OnHostMaintenanceInput() *string
+	OnInstanceStopAction() ComputeInstanceFromTemplateSchedulingOnInstanceStopActionOutputReference
+	OnInstanceStopActionInput() *ComputeInstanceFromTemplateSchedulingOnInstanceStopAction
 	Preemptible() interface{}
 	SetPreemptible(val interface{})
 	PreemptibleInput() interface{}
@@ -87,13 +91,17 @@ type ComputeInstanceFromTemplateSchedulingOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLocalSsdRecoveryTimeout(value *ComputeInstanceFromTemplateSchedulingLocalSsdRecoveryTimeout)
+	PutMaxRunDuration(value *ComputeInstanceFromTemplateSchedulingMaxRunDuration)
 	PutNodeAffinities(value interface{})
+	PutOnInstanceStopAction(value *ComputeInstanceFromTemplateSchedulingOnInstanceStopAction)
 	ResetAutomaticRestart()
 	ResetInstanceTerminationAction()
 	ResetLocalSsdRecoveryTimeout()
+	ResetMaxRunDuration()
 	ResetMinNodeCpus()
 	ResetNodeAffinities()
 	ResetOnHostMaintenance()
+	ResetOnInstanceStopAction()
 	ResetPreemptible()
 	ResetProvisioningModel()
 	// Produce the Token's value at resolution time.
@@ -221,6 +229,26 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) LocalSs
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) MaxRunDuration() ComputeInstanceFromTemplateSchedulingMaxRunDurationOutputReference {
+	var returns ComputeInstanceFromTemplateSchedulingMaxRunDurationOutputReference
+	_jsii_.Get(
+		j,
+		"maxRunDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) MaxRunDurationInput() *ComputeInstanceFromTemplateSchedulingMaxRunDuration {
+	var returns *ComputeInstanceFromTemplateSchedulingMaxRunDuration
+	_jsii_.Get(
+		j,
+		"maxRunDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) MinNodeCpus() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -276,6 +304,26 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) OnHostM
 	_jsii_.Get(
 		j,
 		"onHostMaintenanceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) OnInstanceStopAction() ComputeInstanceFromTemplateSchedulingOnInstanceStopActionOutputReference {
+	var returns ComputeInstanceFromTemplateSchedulingOnInstanceStopActionOutputReference
+	_jsii_.Get(
+		j,
+		"onInstanceStopAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) OnInstanceStopActionInput() *ComputeInstanceFromTemplateSchedulingOnInstanceStopAction {
+	var returns *ComputeInstanceFromTemplateSchedulingOnInstanceStopAction
+	_jsii_.Get(
+		j,
+		"onInstanceStopActionInput",
 		&returns,
 	)
 	return returns
@@ -687,6 +735,17 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) PutLoca
 	)
 }
 
+func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) PutMaxRunDuration(value *ComputeInstanceFromTemplateSchedulingMaxRunDuration) {
+	if err := c.validatePutMaxRunDurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putMaxRunDuration",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) PutNodeAffinities(value interface{}) {
 	if err := c.validatePutNodeAffinitiesParameters(value); err != nil {
 		panic(err)
@@ -694,6 +753,17 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) PutNode
 	_jsii_.InvokeVoid(
 		c,
 		"putNodeAffinities",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) PutOnInstanceStopAction(value *ComputeInstanceFromTemplateSchedulingOnInstanceStopAction) {
+	if err := c.validatePutOnInstanceStopActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putOnInstanceStopAction",
 		[]interface{}{value},
 	)
 }
@@ -722,6 +792,14 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) ResetLo
 	)
 }
 
+func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) ResetMaxRunDuration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaxRunDuration",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) ResetMinNodeCpus() {
 	_jsii_.InvokeVoid(
 		c,
@@ -742,6 +820,14 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) ResetOn
 	_jsii_.InvokeVoid(
 		c,
 		"resetOnHostMaintenance",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) ResetOnInstanceStopAction() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOnInstanceStopAction",
 		nil, // no parameters
 	)
 }
