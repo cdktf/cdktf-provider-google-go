@@ -79,6 +79,10 @@ func (j *jsiiProxy_ComputeGlobalAddressTimeoutsOutputReference) validateSetTerra
 	return nil
 }
 
+func (j *jsiiProxy_ComputeGlobalAddressTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewComputeGlobalAddressTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

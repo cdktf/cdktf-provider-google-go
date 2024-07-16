@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.37.0/docs/resources/compute_global_address google_compute_global_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_global_address google_compute_global_address}.
 type ComputeGlobalAddress interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -41,6 +41,7 @@ type ComputeGlobalAddress interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -55,6 +56,9 @@ type ComputeGlobalAddress interface {
 	IpVersion() *string
 	SetIpVersion(val *string)
 	IpVersionInput() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -89,6 +93,7 @@ type ComputeGlobalAddress interface {
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -144,6 +149,7 @@ type ComputeGlobalAddress interface {
 	ResetDescription()
 	ResetId()
 	ResetIpVersion()
+	ResetLabels()
 	ResetNetwork()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -290,6 +296,16 @@ func (j *jsiiProxy_ComputeGlobalAddress) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeGlobalAddress) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeGlobalAddress) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -355,6 +371,26 @@ func (j *jsiiProxy_ComputeGlobalAddress) IpVersionInput() *string {
 	_jsii_.Get(
 		j,
 		"ipVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeGlobalAddress) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeGlobalAddress) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -530,6 +566,16 @@ func (j *jsiiProxy_ComputeGlobalAddress) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
+func (j *jsiiProxy_ComputeGlobalAddress) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeGlobalAddress) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -571,7 +617,7 @@ func (j *jsiiProxy_ComputeGlobalAddress) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.37.0/docs/resources/compute_global_address google_compute_global_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_global_address google_compute_global_address} Resource.
 func NewComputeGlobalAddress(scope constructs.Construct, id *string, config *ComputeGlobalAddressConfig) ComputeGlobalAddress {
 	_init_.Initialize()
 
@@ -589,7 +635,7 @@ func NewComputeGlobalAddress(scope constructs.Construct, id *string, config *Com
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.37.0/docs/resources/compute_global_address google_compute_global_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_global_address google_compute_global_address} Resource.
 func NewComputeGlobalAddress_Override(c ComputeGlobalAddress, scope constructs.Construct, id *string, config *ComputeGlobalAddressConfig) {
 	_init_.Initialize()
 
@@ -689,6 +735,17 @@ func (j *jsiiProxy_ComputeGlobalAddress)SetIpVersion(val *string) {
 	_jsii_.Set(
 		j,
 		"ipVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeGlobalAddress)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -1178,6 +1235,14 @@ func (c *jsiiProxy_ComputeGlobalAddress) ResetIpVersion() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIpVersion",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeGlobalAddress) ResetLabels() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLabels",
 		nil, // no parameters
 	)
 }
