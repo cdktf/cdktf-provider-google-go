@@ -111,6 +111,10 @@ func (j *jsiiProxy_VmwareenginePrivateCloud) validateSetCountParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_VmwareenginePrivateCloud) validateSetDeletionDelayHoursParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_VmwareenginePrivateCloud) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -136,6 +140,10 @@ func (j *jsiiProxy_VmwareenginePrivateCloud) validateSetProjectParameters(val *s
 }
 
 func (j *jsiiProxy_VmwareenginePrivateCloud) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_VmwareenginePrivateCloud) validateSetSendDeletionDelayHoursIfZeroParameters(val interface{}) error {
 	return nil
 }
 

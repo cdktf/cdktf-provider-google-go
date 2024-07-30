@@ -83,6 +83,10 @@ func (c *jsiiProxy_ComputeRouterPeer) validatePutBfdParameters(value *ComputeRou
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRouterPeer) validatePutCustomLearnedIpRangesParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRouterPeer) validatePutMd5AuthenticationKeyParameters(value *ComputeRouterPeerMd5AuthenticationKey) error {
 	return nil
 }
@@ -124,6 +128,10 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetConnectionParameters(val interf
 }
 
 func (j *jsiiProxy_ComputeRouterPeer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) validateSetCustomLearnedRoutePriorityParameters(val *float64) error {
 	return nil
 }
 

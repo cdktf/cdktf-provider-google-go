@@ -7,7 +7,7 @@ package sccfoldercustommodule
 type SccFolderCustomModuleCustomConfigResourceSelector struct {
 	// The resource types to run the detector on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/scc_folder_custom_module#resource_types SccFolderCustomModule#resource_types}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/scc_folder_custom_module#resource_types SccFolderCustomModule#resource_types}
 	ResourceTypes *[]*string `field:"required" json:"resourceTypes" yaml:"resourceTypes"`
 }
 

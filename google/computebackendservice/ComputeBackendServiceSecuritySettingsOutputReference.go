@@ -13,6 +13,8 @@ import (
 
 type ComputeBackendServiceSecuritySettingsOutputReference interface {
 	cdktf.ComplexObject
+	AwsV4Authentication() ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference
+	AwsV4AuthenticationInput() *ComputeBackendServiceSecuritySettingsAwsV4Authentication
 	ClientTlsPolicy() *string
 	SetClientTlsPolicy(val *string)
 	ClientTlsPolicyInput() *string
@@ -70,6 +72,10 @@ type ComputeBackendServiceSecuritySettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAwsV4Authentication(value *ComputeBackendServiceSecuritySettingsAwsV4Authentication)
+	ResetAwsV4Authentication()
+	ResetClientTlsPolicy()
+	ResetSubjectAltNames()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -83,6 +89,26 @@ type ComputeBackendServiceSecuritySettingsOutputReference interface {
 // The jsii proxy struct for ComputeBackendServiceSecuritySettingsOutputReference
 type jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) AwsV4Authentication() ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference {
+	var returns ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference
+	_jsii_.Get(
+		j,
+		"awsV4Authentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) AwsV4AuthenticationInput() *ComputeBackendServiceSecuritySettingsAwsV4Authentication {
+	var returns *ComputeBackendServiceSecuritySettingsAwsV4Authentication
+	_jsii_.Get(
+		j,
+		"awsV4AuthenticationInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) ClientTlsPolicy() *string {
@@ -484,6 +510,41 @@ func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) PutAwsV4Authentication(value *ComputeBackendServiceSecuritySettingsAwsV4Authentication) {
+	if err := c.validatePutAwsV4AuthenticationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAwsV4Authentication",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) ResetAwsV4Authentication() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAwsV4Authentication",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) ResetClientTlsPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetClientTlsPolicy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) ResetSubjectAltNames() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSubjectAltNames",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

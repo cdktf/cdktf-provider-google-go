@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_dataset google_bigquery_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/bigquery_dataset google_bigquery_dataset}.
 type BigqueryDataset interface {
 	cdktf.TerraformResource
 	Access() BigqueryDatasetAccessList
@@ -104,6 +104,9 @@ type BigqueryDataset interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ResourceTags() *map[string]*string
+	SetResourceTags(val *map[string]*string)
+	ResourceTagsInput() *map[string]*string
 	SelfLink() *string
 	StorageBillingModel() *string
 	SetStorageBillingModel(val *string)
@@ -182,6 +185,7 @@ type BigqueryDataset interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetResourceTags()
 	ResetStorageBillingModel()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -692,6 +696,26 @@ func (j *jsiiProxy_BigqueryDataset) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryDataset) ResourceTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDataset) ResourceTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceTagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryDataset) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -783,7 +807,7 @@ func (j *jsiiProxy_BigqueryDataset) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_dataset google_bigquery_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/bigquery_dataset google_bigquery_dataset} Resource.
 func NewBigqueryDataset(scope constructs.Construct, id *string, config *BigqueryDatasetConfig) BigqueryDataset {
 	_init_.Initialize()
 
@@ -801,7 +825,7 @@ func NewBigqueryDataset(scope constructs.Construct, id *string, config *Bigquery
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/bigquery_dataset google_bigquery_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/bigquery_dataset google_bigquery_dataset} Resource.
 func NewBigqueryDataset_Override(b BigqueryDataset, scope constructs.Construct, id *string, config *BigqueryDatasetConfig) {
 	_init_.Initialize()
 
@@ -1019,6 +1043,17 @@ func (j *jsiiProxy_BigqueryDataset)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryDataset)SetResourceTags(val *map[string]*string) {
+	if err := j.validateSetResourceTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceTags",
 		val,
 	)
 }
@@ -1555,6 +1590,14 @@ func (b *jsiiProxy_BigqueryDataset) ResetProject() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryDataset) ResetResourceTags() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetResourceTags",
 		nil, // no parameters
 	)
 }

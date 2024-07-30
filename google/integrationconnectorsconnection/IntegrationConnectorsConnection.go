@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/integration_connectors_connection google_integration_connectors_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/integration_connectors_connection google_integration_connectors_connection}.
 type IntegrationConnectorsConnection interface {
 	cdktf.TerraformResource
 	AuthConfig() IntegrationConnectorsConnectionAuthConfigOutputReference
@@ -860,7 +860,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/integration_connectors_connection google_integration_connectors_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/integration_connectors_connection google_integration_connectors_connection} Resource.
 func NewIntegrationConnectorsConnection(scope constructs.Construct, id *string, config *IntegrationConnectorsConnectionConfig) IntegrationConnectorsConnection {
 	_init_.Initialize()
 
@@ -878,7 +878,7 @@ func NewIntegrationConnectorsConnection(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/integration_connectors_connection google_integration_connectors_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/integration_connectors_connection google_integration_connectors_connection} Resource.
 func NewIntegrationConnectorsConnection_Override(i IntegrationConnectorsConnection, scope constructs.Construct, id *string, config *IntegrationConnectorsConnectionConfig) {
 	_init_.Initialize()
 

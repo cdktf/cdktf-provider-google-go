@@ -119,6 +119,10 @@ func (j *jsiiProxy_CloudfunctionsFunction) validateSetBuildEnvironmentVariablesP
 	return nil
 }
 
+func (j *jsiiProxy_CloudfunctionsFunction) validateSetBuildServiceAccountParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfunctionsFunction) validateSetBuildWorkerPoolParameters(val *string) error {
 	return nil
 }

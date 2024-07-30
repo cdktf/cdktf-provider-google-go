@@ -47,6 +47,14 @@ func (d *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigOut
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference) validatePutAppendOnlyParameters(value *DatastreamStreamDestinationConfigBigqueryDestinationConfigAppendOnly) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference) validatePutMergeParameters(value *DatastreamStreamDestinationConfigBigqueryDestinationConfigMerge) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference) validatePutSingleTargetDatasetParameters(value *DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDataset) error {
 	return nil
 }

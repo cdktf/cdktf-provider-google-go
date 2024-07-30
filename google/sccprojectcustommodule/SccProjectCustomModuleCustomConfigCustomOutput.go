@@ -7,7 +7,7 @@ package sccprojectcustommodule
 type SccProjectCustomModuleCustomConfigCustomOutput struct {
 	// properties block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/scc_project_custom_module#properties SccProjectCustomModule#properties}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/scc_project_custom_module#properties SccProjectCustomModule#properties}
 	Properties interface{} `field:"optional" json:"properties" yaml:"properties"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix}.
 type ComputePublicAdvertisedPrefix interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -74,6 +74,7 @@ type ComputePublicAdvertisedPrefix interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	SharedSecret() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -411,6 +412,16 @@ func (j *jsiiProxy_ComputePublicAdvertisedPrefix) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputePublicAdvertisedPrefix) SharedSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sharedSecret",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputePublicAdvertisedPrefix) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -462,7 +473,7 @@ func (j *jsiiProxy_ComputePublicAdvertisedPrefix) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
 func NewComputePublicAdvertisedPrefix(scope constructs.Construct, id *string, config *ComputePublicAdvertisedPrefixConfig) ComputePublicAdvertisedPrefix {
 	_init_.Initialize()
 
@@ -480,7 +491,7 @@ func NewComputePublicAdvertisedPrefix(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
 func NewComputePublicAdvertisedPrefix_Override(c ComputePublicAdvertisedPrefix, scope constructs.Construct, id *string, config *ComputePublicAdvertisedPrefixConfig) {
 	_init_.Initialize()
 

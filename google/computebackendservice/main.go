@@ -1078,10 +1078,60 @@ func init() {
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceSecuritySettings",
 		reflect.TypeOf((*ComputeBackendServiceSecuritySettings)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsAwsV4Authentication",
+		reflect.TypeOf((*ComputeBackendServiceSecuritySettingsAwsV4Authentication)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference",
+		reflect.TypeOf((*ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accessKey", GoGetter: "AccessKey"},
+			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
+			_jsii_.MemberProperty{JsiiProperty: "accessKeyIdInput", GoGetter: "AccessKeyIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "accessKeyInput", GoGetter: "AccessKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "accessKeyVersion", GoGetter: "AccessKeyVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "accessKeyVersionInput", GoGetter: "AccessKeyVersionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "originRegion", GoGetter: "OriginRegion"},
+			_jsii_.MemberProperty{JsiiProperty: "originRegionInput", GoGetter: "OriginRegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccessKey", GoMethod: "ResetAccessKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccessKeyId", GoMethod: "ResetAccessKeyId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccessKeyVersion", GoMethod: "ResetAccessKeyVersion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOriginRegion", GoMethod: "ResetOriginRegion"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsOutputReference",
 		reflect.TypeOf((*ComputeBackendServiceSecuritySettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "awsV4Authentication", GoGetter: "AwsV4Authentication"},
+			_jsii_.MemberProperty{JsiiProperty: "awsV4AuthenticationInput", GoGetter: "AwsV4AuthenticationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clientTlsPolicy", GoGetter: "ClientTlsPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "clientTlsPolicyInput", GoGetter: "ClientTlsPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1101,6 +1151,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putAwsV4Authentication", GoMethod: "PutAwsV4Authentication"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAwsV4Authentication", GoMethod: "ResetAwsV4Authentication"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClientTlsPolicy", GoMethod: "ResetClientTlsPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubjectAltNames", GoMethod: "ResetSubjectAltNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "subjectAltNames", GoGetter: "SubjectAltNames"},
 			_jsii_.MemberProperty{JsiiProperty: "subjectAltNamesInput", GoGetter: "SubjectAltNamesInput"},

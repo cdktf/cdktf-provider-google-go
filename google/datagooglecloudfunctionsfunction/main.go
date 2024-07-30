@@ -17,6 +17,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "availableMemoryMb", GoGetter: "AvailableMemoryMb"},
 			_jsii_.MemberProperty{JsiiProperty: "buildEnvironmentVariables", GoGetter: "BuildEnvironmentVariables"},
+			_jsii_.MemberProperty{JsiiProperty: "buildServiceAccount", GoGetter: "BuildServiceAccount"},
 			_jsii_.MemberProperty{JsiiProperty: "buildWorkerPool", GoGetter: "BuildWorkerPool"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},

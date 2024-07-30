@@ -7,7 +7,7 @@ package containerawscluster
 type ContainerAwsClusterFleet struct {
 	// The number of the Fleet host project where this cluster will be registered.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/container_aws_cluster#project ContainerAwsCluster#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/container_aws_cluster#project ContainerAwsCluster#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

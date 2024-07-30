@@ -47,6 +47,10 @@ func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) validat
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) validatePutAwsV4AuthenticationParameters(value *ComputeBackendServiceSecuritySettingsAwsV4Authentication) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

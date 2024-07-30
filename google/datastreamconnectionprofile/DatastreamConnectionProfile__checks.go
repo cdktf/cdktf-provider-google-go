@@ -284,6 +284,17 @@ func (d *jsiiProxy_DatastreamConnectionProfile) validatePutPrivateConnectivityPa
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamConnectionProfile) validatePutSqlServerProfileParameters(value *DatastreamConnectionProfileSqlServerProfile) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamConnectionProfile) validatePutTimeoutsParameters(value *DatastreamConnectionProfileTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

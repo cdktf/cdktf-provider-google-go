@@ -7,8 +7,7 @@ package cloudrunservice
 type CloudRunServiceMetadata struct {
 	// Annotations is a key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata.
 	//
-	// More
-	// info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations
+	// More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations
 	//
 	// **Note**: The Cloud Run API may add additional annotations that were not provided in your config.
 	// If terraform plan shows a diff where a server-side annotation is added, you can add it to your config
@@ -31,7 +30,7 @@ type CloudRunServiceMetadata struct {
 	// **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 	// Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/cloud_run_service#annotations CloudRunService#annotations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/cloud_run_service#annotations CloudRunService#annotations}
 	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
 	// Map of string keys and values that can be used to organize and categorize (scope and select) objects.
 	//
@@ -41,11 +40,11 @@ type CloudRunServiceMetadata struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/cloud_run_service#labels CloudRunService#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/cloud_run_service#labels CloudRunService#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// In Cloud Run the namespace must be equal to either the project ID or project number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.38.0/docs/resources/cloud_run_service#namespace CloudRunService#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/cloud_run_service#namespace CloudRunService#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

@@ -91,6 +91,10 @@ func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) validateSetStoragePoolParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
