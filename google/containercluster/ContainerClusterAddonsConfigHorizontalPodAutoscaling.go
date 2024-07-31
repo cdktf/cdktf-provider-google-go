@@ -5,7 +5,7 @@ package containercluster
 
 
 type ContainerClusterAddonsConfigHorizontalPodAutoscaling struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
 	Disabled interface{} `field:"required" json:"disabled" yaml:"disabled"`
 }
 

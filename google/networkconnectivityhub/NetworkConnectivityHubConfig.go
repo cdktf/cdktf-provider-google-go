@@ -24,9 +24,9 @@ type NetworkConnectivityHubConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// An optional description of the hub.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/network_connectivity_hub#description NetworkConnectivityHub#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/network_connectivity_hub#description NetworkConnectivityHub#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/network_connectivity_hub#id NetworkConnectivityHub#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/network_connectivity_hub#id NetworkConnectivityHub#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,17 +36,17 @@ type NetworkConnectivityHubConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/network_connectivity_hub#labels NetworkConnectivityHub#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/network_connectivity_hub#labels NetworkConnectivityHub#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// Immutable. The name of the hub. Hub names must be unique. They use the following form: 'projects/{project_number}/locations/global/hubs/{hub_id}'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/network_connectivity_hub#name NetworkConnectivityHub#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/network_connectivity_hub#name NetworkConnectivityHub#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/network_connectivity_hub#project NetworkConnectivityHub#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/network_connectivity_hub#project NetworkConnectivityHub#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/network_connectivity_hub#timeouts NetworkConnectivityHub#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/network_connectivity_hub#timeouts NetworkConnectivityHub#timeouts}
 	Timeouts *NetworkConnectivityHubTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

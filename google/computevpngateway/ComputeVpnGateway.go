@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/compute_vpn_gateway google_compute_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/compute_vpn_gateway google_compute_vpn_gateway}.
 type ComputeVpnGateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_ComputeVpnGateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/compute_vpn_gateway google_compute_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/compute_vpn_gateway google_compute_vpn_gateway} Resource.
 func NewComputeVpnGateway(scope constructs.Construct, id *string, config *ComputeVpnGatewayConfig) ComputeVpnGateway {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewComputeVpnGateway(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/compute_vpn_gateway google_compute_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/compute_vpn_gateway google_compute_vpn_gateway} Resource.
 func NewComputeVpnGateway_Override(c ComputeVpnGateway, scope constructs.Construct, id *string, config *ComputeVpnGatewayConfig) {
 	_init_.Initialize()
 

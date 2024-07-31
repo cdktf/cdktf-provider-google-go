@@ -24,20 +24,20 @@ type SecureSourceManagerInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name for the Instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/secure_source_manager_instance#instance_id SecureSourceManagerInstance#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/secure_source_manager_instance#instance_id SecureSourceManagerInstance#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// The location for the Instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/secure_source_manager_instance#location SecureSourceManagerInstance#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/secure_source_manager_instance#location SecureSourceManagerInstance#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/secure_source_manager_instance#id SecureSourceManagerInstance#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/secure_source_manager_instance#id SecureSourceManagerInstance#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Customer-managed encryption key name, in the format projects/* /locations/* /keyRings/* /cryptoKeys/*.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/secure_source_manager_instance#kms_key SecureSourceManagerInstance#kms_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/secure_source_manager_instance#kms_key SecureSourceManagerInstance#kms_key}
 	//
 	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	KmsKey *string `field:"optional" json:"kmsKey" yaml:"kmsKey"`
@@ -46,17 +46,17 @@ type SecureSourceManagerInstanceConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/secure_source_manager_instance#labels SecureSourceManagerInstance#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/secure_source_manager_instance#labels SecureSourceManagerInstance#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// private_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/secure_source_manager_instance#private_config SecureSourceManagerInstance#private_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/secure_source_manager_instance#private_config SecureSourceManagerInstance#private_config}
 	PrivateConfig *SecureSourceManagerInstancePrivateConfig `field:"optional" json:"privateConfig" yaml:"privateConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/secure_source_manager_instance#project SecureSourceManagerInstance#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/secure_source_manager_instance#project SecureSourceManagerInstance#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/secure_source_manager_instance#timeouts SecureSourceManagerInstance#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/secure_source_manager_instance#timeouts SecureSourceManagerInstance#timeouts}
 	Timeouts *SecureSourceManagerInstanceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

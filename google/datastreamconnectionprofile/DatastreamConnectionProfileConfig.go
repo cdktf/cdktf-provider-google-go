@@ -24,33 +24,33 @@ type DatastreamConnectionProfileConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The connection profile identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/datastream_connection_profile#connection_profile_id DatastreamConnectionProfile#connection_profile_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/datastream_connection_profile#connection_profile_id DatastreamConnectionProfile#connection_profile_id}
 	ConnectionProfileId *string `field:"required" json:"connectionProfileId" yaml:"connectionProfileId"`
 	// Display name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/datastream_connection_profile#display_name DatastreamConnectionProfile#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/datastream_connection_profile#display_name DatastreamConnectionProfile#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// The name of the location this connection profile is located in.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/datastream_connection_profile#location DatastreamConnectionProfile#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/datastream_connection_profile#location DatastreamConnectionProfile#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// bigquery_profile block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/datastream_connection_profile#bigquery_profile DatastreamConnectionProfile#bigquery_profile}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/datastream_connection_profile#bigquery_profile DatastreamConnectionProfile#bigquery_profile}
 	BigqueryProfile *DatastreamConnectionProfileBigqueryProfile `field:"optional" json:"bigqueryProfile" yaml:"bigqueryProfile"`
 	// Create the connection profile without validating it.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/datastream_connection_profile#create_without_validation DatastreamConnectionProfile#create_without_validation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/datastream_connection_profile#create_without_validation DatastreamConnectionProfile#create_without_validation}
 	CreateWithoutValidation interface{} `field:"optional" json:"createWithoutValidation" yaml:"createWithoutValidation"`
 	// forward_ssh_connectivity block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/datastream_connection_profile#forward_ssh_connectivity DatastreamConnectionProfile#forward_ssh_connectivity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/datastream_connection_profile#forward_ssh_connectivity DatastreamConnectionProfile#forward_ssh_connectivity}
 	ForwardSshConnectivity *DatastreamConnectionProfileForwardSshConnectivity `field:"optional" json:"forwardSshConnectivity" yaml:"forwardSshConnectivity"`
 	// gcs_profile block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/datastream_connection_profile#gcs_profile DatastreamConnectionProfile#gcs_profile}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/datastream_connection_profile#gcs_profile DatastreamConnectionProfile#gcs_profile}
 	GcsProfile *DatastreamConnectionProfileGcsProfile `field:"optional" json:"gcsProfile" yaml:"gcsProfile"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/datastream_connection_profile#id DatastreamConnectionProfile#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/datastream_connection_profile#id DatastreamConnectionProfile#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -60,33 +60,33 @@ type DatastreamConnectionProfileConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/datastream_connection_profile#labels DatastreamConnectionProfile#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/datastream_connection_profile#labels DatastreamConnectionProfile#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// mysql_profile block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/datastream_connection_profile#mysql_profile DatastreamConnectionProfile#mysql_profile}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/datastream_connection_profile#mysql_profile DatastreamConnectionProfile#mysql_profile}
 	MysqlProfile *DatastreamConnectionProfileMysqlProfile `field:"optional" json:"mysqlProfile" yaml:"mysqlProfile"`
 	// oracle_profile block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/datastream_connection_profile#oracle_profile DatastreamConnectionProfile#oracle_profile}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/datastream_connection_profile#oracle_profile DatastreamConnectionProfile#oracle_profile}
 	OracleProfile *DatastreamConnectionProfileOracleProfile `field:"optional" json:"oracleProfile" yaml:"oracleProfile"`
 	// postgresql_profile block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/datastream_connection_profile#postgresql_profile DatastreamConnectionProfile#postgresql_profile}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/datastream_connection_profile#postgresql_profile DatastreamConnectionProfile#postgresql_profile}
 	PostgresqlProfile *DatastreamConnectionProfilePostgresqlProfile `field:"optional" json:"postgresqlProfile" yaml:"postgresqlProfile"`
 	// private_connectivity block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/datastream_connection_profile#private_connectivity DatastreamConnectionProfile#private_connectivity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/datastream_connection_profile#private_connectivity DatastreamConnectionProfile#private_connectivity}
 	PrivateConnectivity *DatastreamConnectionProfilePrivateConnectivity `field:"optional" json:"privateConnectivity" yaml:"privateConnectivity"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/datastream_connection_profile#project DatastreamConnectionProfile#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/datastream_connection_profile#project DatastreamConnectionProfile#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// sql_server_profile block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/datastream_connection_profile#sql_server_profile DatastreamConnectionProfile#sql_server_profile}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/datastream_connection_profile#sql_server_profile DatastreamConnectionProfile#sql_server_profile}
 	SqlServerProfile *DatastreamConnectionProfileSqlServerProfile `field:"optional" json:"sqlServerProfile" yaml:"sqlServerProfile"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/datastream_connection_profile#timeouts DatastreamConnectionProfile#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/datastream_connection_profile#timeouts DatastreamConnectionProfile#timeouts}
 	Timeouts *DatastreamConnectionProfileTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

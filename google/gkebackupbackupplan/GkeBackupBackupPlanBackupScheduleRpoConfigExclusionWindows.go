@@ -15,26 +15,26 @@ type GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows struct {
 	//     - days of week includes all seven days of a week: duration < 24 hours
 	//     - all other weekly window: duration < 168 hours (i.e., 24 * 7 hours)
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/gke_backup_backup_plan#duration GkeBackupBackupPlan#duration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/gke_backup_backup_plan#duration GkeBackupBackupPlan#duration}
 	Duration *string `field:"required" json:"duration" yaml:"duration"`
 	// start_time block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/gke_backup_backup_plan#start_time GkeBackupBackupPlan#start_time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/gke_backup_backup_plan#start_time GkeBackupBackupPlan#start_time}
 	StartTime *GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsStartTime `field:"required" json:"startTime" yaml:"startTime"`
 	// The exclusion window occurs every day if set to "True".
 	//
 	// Specifying this field to "False" is an error.
 	// Only one of singleOccurrenceDate, daily and daysOfWeek may be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/gke_backup_backup_plan#daily GkeBackupBackupPlan#daily}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/gke_backup_backup_plan#daily GkeBackupBackupPlan#daily}
 	Daily interface{} `field:"optional" json:"daily" yaml:"daily"`
 	// days_of_week block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/gke_backup_backup_plan#days_of_week GkeBackupBackupPlan#days_of_week}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/gke_backup_backup_plan#days_of_week GkeBackupBackupPlan#days_of_week}
 	DaysOfWeek *GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsDaysOfWeek `field:"optional" json:"daysOfWeek" yaml:"daysOfWeek"`
 	// single_occurrence_date block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.0/docs/resources/gke_backup_backup_plan#single_occurrence_date GkeBackupBackupPlan#single_occurrence_date}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/resources/gke_backup_backup_plan#single_occurrence_date GkeBackupBackupPlan#single_occurrence_date}
 	SingleOccurrenceDate *GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsSingleOccurrenceDate `field:"optional" json:"singleOccurrenceDate" yaml:"singleOccurrenceDate"`
 }
 
