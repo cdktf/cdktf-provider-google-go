@@ -13,6 +13,10 @@ import (
 
 type ContainerClusterNodePoolNetworkConfigOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalNodeNetworkConfigs() ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList
+	AdditionalNodeNetworkConfigsInput() interface{}
+	AdditionalPodNetworkConfigs() ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList
+	AdditionalPodNetworkConfigsInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -80,8 +84,12 @@ type ContainerClusterNodePoolNetworkConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAdditionalNodeNetworkConfigs(value interface{})
+	PutAdditionalPodNetworkConfigs(value interface{})
 	PutNetworkPerformanceConfig(value *ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig)
 	PutPodCidrOverprovisionConfig(value *ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig)
+	ResetAdditionalNodeNetworkConfigs()
+	ResetAdditionalPodNetworkConfigs()
 	ResetCreatePodRange()
 	ResetEnablePrivateNodes()
 	ResetNetworkPerformanceConfig()
@@ -101,6 +109,46 @@ type ContainerClusterNodePoolNetworkConfigOutputReference interface {
 // The jsii proxy struct for ContainerClusterNodePoolNetworkConfigOutputReference
 type jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) AdditionalNodeNetworkConfigs() ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList {
+	var returns ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList
+	_jsii_.Get(
+		j,
+		"additionalNodeNetworkConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) AdditionalNodeNetworkConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"additionalNodeNetworkConfigsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) AdditionalPodNetworkConfigs() ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList {
+	var returns ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList
+	_jsii_.Get(
+		j,
+		"additionalPodNetworkConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) AdditionalPodNetworkConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"additionalPodNetworkConfigsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -606,6 +654,28 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Interpo
 	return returns
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) PutAdditionalNodeNetworkConfigs(value interface{}) {
+	if err := c.validatePutAdditionalNodeNetworkConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAdditionalNodeNetworkConfigs",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) PutAdditionalPodNetworkConfigs(value interface{}) {
+	if err := c.validatePutAdditionalPodNetworkConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAdditionalPodNetworkConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) PutNetworkPerformanceConfig(value *ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig) {
 	if err := c.validatePutNetworkPerformanceConfigParameters(value); err != nil {
 		panic(err)
@@ -625,6 +695,22 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) PutPodC
 		c,
 		"putPodCidrOverprovisionConfig",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) ResetAdditionalNodeNetworkConfigs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAdditionalNodeNetworkConfigs",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) ResetAdditionalPodNetworkConfigs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAdditionalPodNetworkConfigs",
+		nil, // no parameters
 	)
 }
 

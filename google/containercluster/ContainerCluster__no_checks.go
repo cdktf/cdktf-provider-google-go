@@ -283,6 +283,10 @@ func (j *jsiiProxy_ContainerCluster) validateSetEnableLegacyAbacParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_ContainerCluster) validateSetEnableMultiNetworkingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerCluster) validateSetEnableShieldedNodesParameters(val interface{}) error {
 	return nil
 }

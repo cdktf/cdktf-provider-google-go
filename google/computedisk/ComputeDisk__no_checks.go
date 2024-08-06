@@ -115,6 +115,10 @@ func validateComputeDisk_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_ComputeDisk) validateSetAccessModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeDisk) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

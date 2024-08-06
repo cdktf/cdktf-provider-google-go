@@ -387,6 +387,14 @@ func (j *jsiiProxy_ComputeHaVpnGateway) validateSetDescriptionParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_ComputeHaVpnGateway) validateSetGatewayIpVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeHaVpnGateway) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

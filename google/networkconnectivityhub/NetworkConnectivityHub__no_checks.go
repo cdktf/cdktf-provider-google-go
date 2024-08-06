@@ -107,6 +107,10 @@ func (j *jsiiProxy_NetworkConnectivityHub) validateSetDescriptionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_NetworkConnectivityHub) validateSetExportPscParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkConnectivityHub) validateSetIdParameters(val *string) error {
 	return nil
 }

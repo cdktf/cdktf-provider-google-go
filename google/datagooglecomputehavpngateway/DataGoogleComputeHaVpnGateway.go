@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/data-sources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.40.0/docs/data-sources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway}.
 type DataGoogleComputeHaVpnGateway interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -36,6 +36,7 @@ type DataGoogleComputeHaVpnGateway interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GatewayIpVersion() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -195,6 +196,16 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) GatewayIpVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gatewayIpVersion",
 		&returns,
 	)
 	return returns
@@ -391,7 +402,7 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) VpnInterfaces() DataGoogleComp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/data-sources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.40.0/docs/data-sources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Data Source.
 func NewDataGoogleComputeHaVpnGateway(scope constructs.Construct, id *string, config *DataGoogleComputeHaVpnGatewayConfig) DataGoogleComputeHaVpnGateway {
 	_init_.Initialize()
 
@@ -409,7 +420,7 @@ func NewDataGoogleComputeHaVpnGateway(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.39.1/docs/data-sources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.40.0/docs/data-sources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Data Source.
 func NewDataGoogleComputeHaVpnGateway_Override(d DataGoogleComputeHaVpnGateway, scope constructs.Construct, id *string, config *DataGoogleComputeHaVpnGatewayConfig) {
 	_init_.Initialize()
 

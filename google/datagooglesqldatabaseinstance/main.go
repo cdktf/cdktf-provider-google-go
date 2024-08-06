@@ -1232,6 +1232,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "diskSize", GoGetter: "DiskSize"},
 			_jsii_.MemberProperty{JsiiProperty: "diskType", GoGetter: "DiskType"},
 			_jsii_.MemberProperty{JsiiProperty: "edition", GoGetter: "Edition"},
+			_jsii_.MemberProperty{JsiiProperty: "enableDataplexIntegration", GoGetter: "EnableDataplexIntegration"},
 			_jsii_.MemberProperty{JsiiProperty: "enableGoogleMlIntegration", GoGetter: "EnableGoogleMlIntegration"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},

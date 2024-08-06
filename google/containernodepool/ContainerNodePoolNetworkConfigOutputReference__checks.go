@@ -93,6 +93,68 @@ func (c *jsiiProxy_ContainerNodePoolNetworkConfigOutputReference) validateInterp
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePoolNetworkConfigOutputReference) validatePutAdditionalNodeNetworkConfigsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigs:
+		value := value.(*[]*ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigs)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigs:
+		value_ := value.([]*ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigs)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ContainerNodePoolNetworkConfigAdditionalNodeNetworkConfigs; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ContainerNodePoolNetworkConfigOutputReference) validatePutAdditionalPodNetworkConfigsParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigs:
+		value := value.(*[]*ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigs)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigs:
+		value_ := value.([]*ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigs)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigs; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePoolNetworkConfigOutputReference) validatePutNetworkPerformanceConfigParameters(value *ContainerNodePoolNetworkConfigNetworkPerformanceConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

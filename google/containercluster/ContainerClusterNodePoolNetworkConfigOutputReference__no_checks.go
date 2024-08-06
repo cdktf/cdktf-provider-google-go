@@ -47,6 +47,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) validat
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) validatePutAdditionalNodeNetworkConfigsParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) validatePutAdditionalPodNetworkConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) validatePutNetworkPerformanceConfigParameters(value *ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig) error {
 	return nil
 }

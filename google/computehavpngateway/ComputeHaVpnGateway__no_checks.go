@@ -111,6 +111,10 @@ func (j *jsiiProxy_ComputeHaVpnGateway) validateSetDescriptionParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_ComputeHaVpnGateway) validateSetGatewayIpVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeHaVpnGateway) validateSetIdParameters(val *string) error {
 	return nil
 }

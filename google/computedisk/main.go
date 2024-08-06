@@ -14,6 +14,8 @@ func init() {
 		"@cdktf/provider-google.computeDisk.ComputeDisk",
 		reflect.TypeOf((*ComputeDisk)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accessMode", GoGetter: "AccessMode"},
+			_jsii_.MemberProperty{JsiiProperty: "accessModeInput", GoGetter: "AccessModeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "asyncPrimaryDisk", GoGetter: "AsyncPrimaryDisk"},
@@ -85,6 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSourceSnapshotEncryptionKey", GoMethod: "PutSourceSnapshotEncryptionKey"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccessMode", GoMethod: "ResetAccessMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAsyncPrimaryDisk", GoMethod: "ResetAsyncPrimaryDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskEncryptionKey", GoMethod: "ResetDiskEncryptionKey"},

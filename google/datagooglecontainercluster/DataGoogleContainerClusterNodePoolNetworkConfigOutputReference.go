@@ -13,6 +13,8 @@ import (
 
 type DataGoogleContainerClusterNodePoolNetworkConfigOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalNodeNetworkConfigs() DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList
+	AdditionalPodNetworkConfigs() DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -83,6 +85,26 @@ type DataGoogleContainerClusterNodePoolNetworkConfigOutputReference interface {
 // The jsii proxy struct for DataGoogleContainerClusterNodePoolNetworkConfigOutputReference
 type jsiiProxy_DataGoogleContainerClusterNodePoolNetworkConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNetworkConfigOutputReference) AdditionalNodeNetworkConfigs() DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList {
+	var returns DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList
+	_jsii_.Get(
+		j,
+		"additionalNodeNetworkConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNetworkConfigOutputReference) AdditionalPodNetworkConfigs() DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList {
+	var returns DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList
+	_jsii_.Get(
+		j,
+		"additionalPodNetworkConfigs",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNetworkConfigOutputReference) ComplexObjectIndex() interface{} {

@@ -70,6 +70,9 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	Edition() *string
 	SetEdition(val *string)
 	EditionInput() *string
+	EnableDataplexIntegration() interface{}
+	SetEnableDataplexIntegration(val interface{})
+	EnableDataplexIntegrationInput() interface{}
 	EnableGoogleMlIntegration() interface{}
 	SetEnableGoogleMlIntegration(val interface{})
 	EnableGoogleMlIntegrationInput() interface{}
@@ -162,6 +165,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ResetDiskSize()
 	ResetDiskType()
 	ResetEdition()
+	ResetEnableDataplexIntegration()
 	ResetEnableGoogleMlIntegration()
 	ResetInsightsConfig()
 	ResetIpConfiguration()
@@ -532,6 +536,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EditionInput() *s
 	_jsii_.Get(
 		j,
 		"editionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegration() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDataplexIntegration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EnableDataplexIntegrationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDataplexIntegrationInput",
 		&returns,
 	)
 	return returns
@@ -963,6 +987,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetEdition(val *st
 	_jsii_.Set(
 		j,
 		"edition",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference)SetEnableDataplexIntegration(val interface{}) {
+	if err := j.validateSetEnableDataplexIntegrationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableDataplexIntegration",
 		val,
 	)
 }
@@ -1497,6 +1532,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetEdition() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEdition",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetEnableDataplexIntegration() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnableDataplexIntegration",
 		nil, // no parameters
 	)
 }
