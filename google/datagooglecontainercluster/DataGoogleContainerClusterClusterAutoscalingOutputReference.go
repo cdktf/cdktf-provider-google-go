@@ -14,6 +14,7 @@ import (
 type DataGoogleContainerClusterClusterAutoscalingOutputReference interface {
 	cdktf.ComplexObject
 	AutoProvisioningDefaults() DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsList
+	AutoProvisioningLocations() *[]*string
 	AutoscalingProfile() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -88,6 +89,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingOutputReference) 
 	_jsii_.Get(
 		j,
 		"autoProvisioningDefaults",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingOutputReference) AutoProvisioningLocations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"autoProvisioningLocations",
 		&returns,
 	)
 	return returns

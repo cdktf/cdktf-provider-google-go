@@ -163,6 +163,10 @@ func (j *jsiiProxy_ComputeHealthCheck) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_ComputeHealthCheck) validateSetSourceRegionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeHealthCheck) validateSetTimeoutSecParameters(val *float64) error {
 	return nil
 }

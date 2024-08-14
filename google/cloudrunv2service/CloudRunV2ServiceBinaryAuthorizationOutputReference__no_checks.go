@@ -67,6 +67,10 @@ func (j *jsiiProxy_CloudRunV2ServiceBinaryAuthorizationOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunV2ServiceBinaryAuthorizationOutputReference) validateSetPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunV2ServiceBinaryAuthorizationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

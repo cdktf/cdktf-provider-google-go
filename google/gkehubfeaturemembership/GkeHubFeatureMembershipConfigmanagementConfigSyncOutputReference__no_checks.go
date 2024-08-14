@@ -67,6 +67,10 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateSetInternalValueParameters(val *GkeHubFeatureMembershipConfigmanagementConfigSync) error {
 	return nil
 }

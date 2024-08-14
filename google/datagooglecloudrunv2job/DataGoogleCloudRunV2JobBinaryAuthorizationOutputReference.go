@@ -33,6 +33,7 @@ type DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleCloudRunV2JobBinaryAuthorization
 	SetInternalValue(val *DataGoogleCloudRunV2JobBinaryAuthorization)
+	Policy() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -136,6 +137,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) Policy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policy",
 		&returns,
 	)
 	return returns

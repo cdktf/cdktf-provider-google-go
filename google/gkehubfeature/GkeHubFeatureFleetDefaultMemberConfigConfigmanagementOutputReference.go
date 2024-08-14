@@ -34,6 +34,9 @@ type GkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference interf
 	Fqn() *string
 	InternalValue() *GkeHubFeatureFleetDefaultMemberConfigConfigmanagement
 	SetInternalValue(val *GkeHubFeatureFleetDefaultMemberConfigConfigmanagement)
+	Management() *string
+	SetManagement(val *string)
+	ManagementInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,6 +74,7 @@ type GkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference interf
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConfigSync(value *GkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSync)
 	ResetConfigSync()
+	ResetManagement()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputRe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference) Management() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"management",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference) ManagementInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managementInput",
 		&returns,
 	)
 	return returns
@@ -254,6 +278,17 @@ func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputRe
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference)SetManagement(val *string) {
+	if err := j.validateSetManagementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"management",
 		val,
 	)
 }
@@ -492,6 +527,14 @@ func (g *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputRe
 	_jsii_.InvokeVoid(
 		g,
 		"resetConfigSync",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference) ResetManagement() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManagement",
 		nil, // no parameters
 	)
 }

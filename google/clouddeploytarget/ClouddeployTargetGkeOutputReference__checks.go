@@ -202,6 +202,14 @@ func (j *jsiiProxy_ClouddeployTargetGkeOutputReference) validateSetInternalValue
 	return nil
 }
 
+func (j *jsiiProxy_ClouddeployTargetGkeOutputReference) validateSetProxyUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ClouddeployTargetGkeOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

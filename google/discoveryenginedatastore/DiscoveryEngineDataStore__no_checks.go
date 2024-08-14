@@ -147,6 +147,10 @@ func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetSkipDefaultSchemaCreationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DiscoveryEngineDataStore) validateSetSolutionTypesParameters(val *[]*string) error {
 	return nil
 }

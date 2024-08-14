@@ -79,6 +79,10 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) validateSetManagementParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

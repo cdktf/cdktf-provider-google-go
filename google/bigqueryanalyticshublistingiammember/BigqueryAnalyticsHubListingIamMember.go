@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.40.0/docs/resources/bigquery_analytics_hub_listing_iam_member google_bigquery_analytics_hub_listing_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/bigquery_analytics_hub_listing_iam_member google_bigquery_analytics_hub_listing_iam_member}.
 type BigqueryAnalyticsHubListingIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingIamMember) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.40.0/docs/resources/bigquery_analytics_hub_listing_iam_member google_bigquery_analytics_hub_listing_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/bigquery_analytics_hub_listing_iam_member google_bigquery_analytics_hub_listing_iam_member} Resource.
 func NewBigqueryAnalyticsHubListingIamMember(scope constructs.Construct, id *string, config *BigqueryAnalyticsHubListingIamMemberConfig) BigqueryAnalyticsHubListingIamMember {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewBigqueryAnalyticsHubListingIamMember(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.40.0/docs/resources/bigquery_analytics_hub_listing_iam_member google_bigquery_analytics_hub_listing_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/bigquery_analytics_hub_listing_iam_member google_bigquery_analytics_hub_listing_iam_member} Resource.
 func NewBigqueryAnalyticsHubListingIamMember_Override(b BigqueryAnalyticsHubListingIamMember, scope constructs.Construct, id *string, config *BigqueryAnalyticsHubListingIamMemberConfig) {
 	_init_.Initialize()
 

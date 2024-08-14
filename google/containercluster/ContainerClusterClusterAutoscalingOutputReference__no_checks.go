@@ -59,6 +59,10 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) validateRe
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) validateSetAutoProvisioningLocationsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) validateSetAutoscalingProfileParameters(val *string) error {
 	return nil
 }

@@ -15,6 +15,9 @@ type ContainerClusterClusterAutoscalingOutputReference interface {
 	cdktf.ComplexObject
 	AutoProvisioningDefaults() ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference
 	AutoProvisioningDefaultsInput() *ContainerClusterClusterAutoscalingAutoProvisioningDefaults
+	AutoProvisioningLocations() *[]*string
+	SetAutoProvisioningLocations(val *[]*string)
+	AutoProvisioningLocationsInput() *[]*string
 	AutoscalingProfile() *string
 	SetAutoscalingProfile(val *string)
 	AutoscalingProfileInput() *string
@@ -77,6 +80,7 @@ type ContainerClusterClusterAutoscalingOutputReference interface {
 	PutAutoProvisioningDefaults(value *ContainerClusterClusterAutoscalingAutoProvisioningDefaults)
 	PutResourceLimits(value interface{})
 	ResetAutoProvisioningDefaults()
+	ResetAutoProvisioningLocations()
 	ResetAutoscalingProfile()
 	ResetEnabled()
 	ResetResourceLimits()
@@ -110,6 +114,26 @@ func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) AutoProvis
 	_jsii_.Get(
 		j,
 		"autoProvisioningDefaultsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) AutoProvisioningLocations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"autoProvisioningLocations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) AutoProvisioningLocationsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"autoProvisioningLocationsInput",
 		&returns,
 	)
 	return returns
@@ -270,6 +294,17 @@ func NewContainerClusterClusterAutoscalingOutputReference_Override(c ContainerCl
 		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference)SetAutoProvisioningLocations(val *[]*string) {
+	if err := j.validateSetAutoProvisioningLocationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoProvisioningLocations",
+		val,
 	)
 }
 
@@ -562,6 +597,14 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) ResetAutoP
 	_jsii_.InvokeVoid(
 		c,
 		"resetAutoProvisioningDefaults",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingOutputReference) ResetAutoProvisioningLocations() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAutoProvisioningLocations",
 		nil, // no parameters
 	)
 }

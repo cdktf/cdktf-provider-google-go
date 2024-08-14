@@ -79,6 +79,10 @@ func (j *jsiiProxy_StorageManagedFolderTimeoutsOutputReference) validateSetTerra
 	return nil
 }
 
+func (j *jsiiProxy_StorageManagedFolderTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewStorageManagedFolderTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

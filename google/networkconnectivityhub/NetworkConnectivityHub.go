@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.40.0/docs/resources/network_connectivity_hub google_network_connectivity_hub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/network_connectivity_hub google_network_connectivity_hub}.
 type NetworkConnectivityHub interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -531,7 +531,7 @@ func (j *jsiiProxy_NetworkConnectivityHub) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.40.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
 func NewNetworkConnectivityHub(scope constructs.Construct, id *string, config *NetworkConnectivityHubConfig) NetworkConnectivityHub {
 	_init_.Initialize()
 
@@ -549,7 +549,7 @@ func NewNetworkConnectivityHub(scope constructs.Construct, id *string, config *N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.40.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
 func NewNetworkConnectivityHub_Override(n NetworkConnectivityHub, scope constructs.Construct, id *string, config *NetworkConnectivityHubConfig) {
 	_init_.Initialize()
 

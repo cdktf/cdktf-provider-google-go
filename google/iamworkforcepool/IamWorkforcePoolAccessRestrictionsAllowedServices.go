@@ -7,7 +7,7 @@ package iamworkforcepool
 type IamWorkforcePoolAccessRestrictionsAllowedServices struct {
 	// Domain name of the service. Example: console.cloud.google.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.40.0/docs/resources/iam_workforce_pool#domain IamWorkforcePool#domain}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/iam_workforce_pool#domain IamWorkforcePool#domain}
 	Domain *string `field:"optional" json:"domain" yaml:"domain"`
 }
 

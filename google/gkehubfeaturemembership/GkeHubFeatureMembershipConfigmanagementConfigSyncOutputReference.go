@@ -28,6 +28,9 @@ type GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference interface 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Git() GkeHubFeatureMembershipConfigmanagementConfigSyncGitOutputReference
@@ -79,6 +82,7 @@ type GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference interface 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutGit(value *GkeHubFeatureMembershipConfigmanagementConfigSyncGit)
 	PutOci(value *GkeHubFeatureMembershipConfigmanagementConfigSyncOci)
+	ResetEnabled()
 	ResetGit()
 	ResetMetricsGcpServiceAccountEmail()
 	ResetOci()
@@ -124,6 +128,26 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -315,6 +339,17 @@ func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
 		val,
 	)
 }
@@ -590,6 +625,14 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
 		g,
 		"putOci",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnabled",
+		nil, // no parameters
 	)
 }
 
