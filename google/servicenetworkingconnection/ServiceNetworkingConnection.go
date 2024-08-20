@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/service_networking_connection google_service_networking_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/service_networking_connection google_service_networking_connection}.
 type ServiceNetworkingConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -79,6 +79,9 @@ type ServiceNetworkingConnection interface {
 	TerraformResourceType() *string
 	Timeouts() ServiceNetworkingConnectionTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	UpdateOnCreationFail() interface{}
+	SetUpdateOnCreationFail(val interface{})
+	UpdateOnCreationFailInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -129,6 +132,7 @@ type ServiceNetworkingConnection interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
+	ResetUpdateOnCreationFail()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -437,8 +441,28 @@ func (j *jsiiProxy_ServiceNetworkingConnection) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ServiceNetworkingConnection) UpdateOnCreationFail() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"updateOnCreationFail",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/service_networking_connection google_service_networking_connection} Resource.
+func (j *jsiiProxy_ServiceNetworkingConnection) UpdateOnCreationFailInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"updateOnCreationFailInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/service_networking_connection google_service_networking_connection} Resource.
 func NewServiceNetworkingConnection(scope constructs.Construct, id *string, config *ServiceNetworkingConnectionConfig) ServiceNetworkingConnection {
 	_init_.Initialize()
 
@@ -456,7 +480,7 @@ func NewServiceNetworkingConnection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/service_networking_connection google_service_networking_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/service_networking_connection google_service_networking_connection} Resource.
 func NewServiceNetworkingConnection_Override(s ServiceNetworkingConnection, scope constructs.Construct, id *string, config *ServiceNetworkingConnectionConfig) {
 	_init_.Initialize()
 
@@ -586,6 +610,17 @@ func (j *jsiiProxy_ServiceNetworkingConnection)SetService(val *string) {
 	_jsii_.Set(
 		j,
 		"service",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceNetworkingConnection)SetUpdateOnCreationFail(val interface{}) {
+	if err := j.validateSetUpdateOnCreationFailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"updateOnCreationFail",
 		val,
 	)
 }
@@ -982,6 +1017,14 @@ func (s *jsiiProxy_ServiceNetworkingConnection) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceNetworkingConnection) ResetUpdateOnCreationFail() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUpdateOnCreationFail",
 		nil, // no parameters
 	)
 }

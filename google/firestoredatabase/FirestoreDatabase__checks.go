@@ -207,6 +207,17 @@ func (f *jsiiProxy_FirestoreDatabase) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (f *jsiiProxy_FirestoreDatabase) validatePutCmekConfigParameters(value *FirestoreDatabaseCmekConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (f *jsiiProxy_FirestoreDatabase) validatePutTimeoutsParameters(value *FirestoreDatabaseTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -24,9 +24,9 @@ type DataGoogleLoggingFolderSettingsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The folder for which to retrieve settings.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/data-sources/logging_folder_settings#folder DataGoogleLoggingFolderSettings#folder}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/data-sources/logging_folder_settings#folder DataGoogleLoggingFolderSettings#folder}
 	Folder *string `field:"required" json:"folder" yaml:"folder"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/data-sources/logging_folder_settings#id DataGoogleLoggingFolderSettings#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/data-sources/logging_folder_settings#id DataGoogleLoggingFolderSettings#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -59,6 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUpdateOnCreationFail", GoMethod: "ResetUpdateOnCreationFail"},
 			_jsii_.MemberProperty{JsiiProperty: "service", GoGetter: "Service"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceInput", GoGetter: "ServiceInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -72,6 +73,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "updateOnCreationFail", GoGetter: "UpdateOnCreationFail"},
+			_jsii_.MemberProperty{JsiiProperty: "updateOnCreationFailInput", GoGetter: "UpdateOnCreationFailInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ServiceNetworkingConnection{}

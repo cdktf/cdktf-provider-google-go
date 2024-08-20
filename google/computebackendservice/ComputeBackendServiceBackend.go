@@ -24,7 +24,7 @@ type ComputeBackendServiceBackend struct {
 	// Group resource using the fully-qualified URL, rather than a
 	// partial URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/compute_backend_service#group ComputeBackendService#group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/compute_backend_service#group ComputeBackendService#group}
 	Group *string `field:"required" json:"group" yaml:"group"`
 	// Specifies the balancing mode for this backend.
 	//
@@ -37,7 +37,7 @@ type ComputeBackendServiceBackend struct {
 	//
 	// From version 6.0.0 default value will be UTILIZATION to match default GCP value. Default value: "UTILIZATION" Possible values: ["UTILIZATION", "RATE", "CONNECTION"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/compute_backend_service#balancing_mode ComputeBackendService#balancing_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/compute_backend_service#balancing_mode ComputeBackendService#balancing_mode}
 	BalancingMode *string `field:"optional" json:"balancingMode" yaml:"balancingMode"`
 	// A multiplier applied to the group's maximum servicing capacity (based on UTILIZATION, RATE or CONNECTION).
 	//
@@ -46,11 +46,11 @@ type ComputeBackendServiceBackend struct {
 	// setting of 0 means the group is completely drained, offering
 	// 0% of its available Capacity. Valid range is [0.0,1.0].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/compute_backend_service#capacity_scaler ComputeBackendService#capacity_scaler}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/compute_backend_service#capacity_scaler ComputeBackendService#capacity_scaler}
 	CapacityScaler *float64 `field:"optional" json:"capacityScaler" yaml:"capacityScaler"`
 	// An optional description of this resource. Provide this property when you create the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/compute_backend_service#description ComputeBackendService#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/compute_backend_service#description ComputeBackendService#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The max number of simultaneous connections for the group. Can be used with either CONNECTION or UTILIZATION balancing modes.
 	//
@@ -58,7 +58,7 @@ type ComputeBackendServiceBackend struct {
 	// of maxConnectionsPerInstance or maxConnectionsPerEndpoint,
 	// as appropriate for group type, must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/compute_backend_service#max_connections ComputeBackendService#max_connections}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/compute_backend_service#max_connections ComputeBackendService#max_connections}
 	MaxConnections *float64 `field:"optional" json:"maxConnections" yaml:"maxConnections"`
 	// The max number of simultaneous connections that a single backend network endpoint can handle.
 	//
@@ -69,7 +69,7 @@ type ComputeBackendServiceBackend struct {
 	// For CONNECTION mode, either
 	// maxConnections or maxConnectionsPerEndpoint must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/compute_backend_service#max_connections_per_endpoint ComputeBackendService#max_connections_per_endpoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/compute_backend_service#max_connections_per_endpoint ComputeBackendService#max_connections_per_endpoint}
 	MaxConnectionsPerEndpoint *float64 `field:"optional" json:"maxConnectionsPerEndpoint" yaml:"maxConnectionsPerEndpoint"`
 	// The max number of simultaneous connections that a single backend instance can handle.
 	//
@@ -80,7 +80,7 @@ type ComputeBackendServiceBackend struct {
 	// For CONNECTION mode, either maxConnections or
 	// maxConnectionsPerInstance must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/compute_backend_service#max_connections_per_instance ComputeBackendService#max_connections_per_instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/compute_backend_service#max_connections_per_instance ComputeBackendService#max_connections_per_instance}
 	MaxConnectionsPerInstance *float64 `field:"optional" json:"maxConnectionsPerInstance" yaml:"maxConnectionsPerInstance"`
 	// The max requests per second (RPS) of the group.
 	//
@@ -89,7 +89,7 @@ type ComputeBackendServiceBackend struct {
 	// of maxRatePerInstance or maxRatePerEndpoint, as appropriate for
 	// group type, must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/compute_backend_service#max_rate ComputeBackendService#max_rate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/compute_backend_service#max_rate ComputeBackendService#max_rate}
 	MaxRate *float64 `field:"optional" json:"maxRate" yaml:"maxRate"`
 	// The max requests per second (RPS) that a single backend network endpoint can handle.
 	//
@@ -97,7 +97,7 @@ type ComputeBackendServiceBackend struct {
 	// the group. Can be used in either balancing mode. For RATE mode,
 	// either maxRate or maxRatePerEndpoint must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/compute_backend_service#max_rate_per_endpoint ComputeBackendService#max_rate_per_endpoint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/compute_backend_service#max_rate_per_endpoint ComputeBackendService#max_rate_per_endpoint}
 	MaxRatePerEndpoint *float64 `field:"optional" json:"maxRatePerEndpoint" yaml:"maxRatePerEndpoint"`
 	// The max requests per second (RPS) that a single backend instance can handle.
 	//
@@ -105,11 +105,11 @@ type ComputeBackendServiceBackend struct {
 	// the group. Can be used in either balancing mode. For RATE mode,
 	// either maxRate or maxRatePerInstance must be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/compute_backend_service#max_rate_per_instance ComputeBackendService#max_rate_per_instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/compute_backend_service#max_rate_per_instance ComputeBackendService#max_rate_per_instance}
 	MaxRatePerInstance *float64 `field:"optional" json:"maxRatePerInstance" yaml:"maxRatePerInstance"`
 	// Used when balancingMode is UTILIZATION. This ratio defines the CPU utilization target for the group. Valid range is [0.0, 1.0].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/compute_backend_service#max_utilization ComputeBackendService#max_utilization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/compute_backend_service#max_utilization ComputeBackendService#max_utilization}
 	MaxUtilization *float64 `field:"optional" json:"maxUtilization" yaml:"maxUtilization"`
 }
 

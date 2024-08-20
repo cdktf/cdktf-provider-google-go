@@ -24,7 +24,7 @@ type DataGoogleKmsCryptoKeysConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The key ring that the keys belongs to. Format: 'projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/data-sources/kms_crypto_keys#key_ring DataGoogleKmsCryptoKeys#key_ring}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/data-sources/kms_crypto_keys#key_ring DataGoogleKmsCryptoKeys#key_ring}
 	KeyRing *string `field:"required" json:"keyRing" yaml:"keyRing"`
 	// The filter argument is used to add a filter query parameter that limits which keys are retrieved by the data source: ?filter={{filter}}. Example values:.
 	//
@@ -34,9 +34,9 @@ type DataGoogleKmsCryptoKeysConfig struct {
 	// [See the documentation about using filters](https://cloud.google.com/kms/docs/sorting-and-filtering)
 	//
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/data-sources/kms_crypto_keys#filter DataGoogleKmsCryptoKeys#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/data-sources/kms_crypto_keys#filter DataGoogleKmsCryptoKeys#filter}
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/data-sources/kms_crypto_keys#id DataGoogleKmsCryptoKeys#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/data-sources/kms_crypto_keys#id DataGoogleKmsCryptoKeys#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

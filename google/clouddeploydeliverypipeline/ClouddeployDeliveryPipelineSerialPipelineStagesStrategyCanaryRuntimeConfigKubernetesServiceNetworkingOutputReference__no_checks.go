@@ -71,6 +71,10 @@ func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary
 	return nil
 }
 
+func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworkingOutputReference) validateSetPodSelectorLabelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworkingOutputReference) validateSetServiceParameters(val *string) error {
 	return nil
 }

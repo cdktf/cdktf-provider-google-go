@@ -85,6 +85,7 @@ type DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputRef
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetLoadBalancerType()
 	ResetRegion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -655,6 +656,14 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBala
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference) ResetLoadBalancerType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLoadBalancerType",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference) ResetRegion() {

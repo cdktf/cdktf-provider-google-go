@@ -7,11 +7,11 @@ package datastreamstream
 type DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases struct {
 	// Database name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/datastream_stream#database DatastreamStream#database}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/datastream_stream#database DatastreamStream#database}
 	Database *string `field:"required" json:"database" yaml:"database"`
 	// mysql_tables block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/datastream_stream#mysql_tables DatastreamStream#mysql_tables}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/datastream_stream#mysql_tables DatastreamStream#mysql_tables}
 	MysqlTables interface{} `field:"optional" json:"mysqlTables" yaml:"mysqlTables"`
 }
 

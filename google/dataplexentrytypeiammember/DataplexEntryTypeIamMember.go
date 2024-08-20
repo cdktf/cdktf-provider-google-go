@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/dataplex_entry_type_iam_member google_dataplex_entry_type_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/dataplex_entry_type_iam_member google_dataplex_entry_type_iam_member}.
 type DataplexEntryTypeIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_DataplexEntryTypeIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/dataplex_entry_type_iam_member google_dataplex_entry_type_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/dataplex_entry_type_iam_member google_dataplex_entry_type_iam_member} Resource.
 func NewDataplexEntryTypeIamMember(scope constructs.Construct, id *string, config *DataplexEntryTypeIamMemberConfig) DataplexEntryTypeIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewDataplexEntryTypeIamMember(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/dataplex_entry_type_iam_member google_dataplex_entry_type_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/dataplex_entry_type_iam_member google_dataplex_entry_type_iam_member} Resource.
 func NewDataplexEntryTypeIamMember_Override(d DataplexEntryTypeIamMember, scope constructs.Construct, id *string, config *DataplexEntryTypeIamMemberConfig) {
 	_init_.Initialize()
 

@@ -171,6 +171,10 @@ func (j *jsiiProxy_ComputeSubnetwork) validateSetRoleParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSubnetwork) validateSetSendSecondaryIpRangeIfEmptyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSubnetwork) validateSetStackTypeParameters(val *string) error {
 	return nil
 }

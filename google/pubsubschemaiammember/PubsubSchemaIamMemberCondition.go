@@ -5,11 +5,11 @@ package pubsubschemaiammember
 
 
 type PubsubSchemaIamMemberCondition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/pubsub_schema_iam_member#expression PubsubSchemaIamMember#expression}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/pubsub_schema_iam_member#expression PubsubSchemaIamMember#expression}.
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/pubsub_schema_iam_member#title PubsubSchemaIamMember#title}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/pubsub_schema_iam_member#title PubsubSchemaIamMember#title}.
 	Title *string `field:"required" json:"title" yaml:"title"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/pubsub_schema_iam_member#description PubsubSchemaIamMember#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/pubsub_schema_iam_member#description PubsubSchemaIamMember#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 

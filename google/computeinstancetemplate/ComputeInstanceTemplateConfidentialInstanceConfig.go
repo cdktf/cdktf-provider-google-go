@@ -5,16 +5,17 @@ package computeinstancetemplate
 
 
 type ComputeInstanceTemplateConfidentialInstanceConfig struct {
-	// Specifies which confidential computing technology to use.
+	// The confidential computing technology the instance uses.
 	//
-	// This could be one of the following values: SEV, SEV_SNP.
-	// If SEV_SNP, min_cpu_platform = "AMD Milan" is currently required.
+	// SEV is an AMD feature. TDX is an Intel feature. One of the following
+	// values is required: SEV, SEV_SNP, TDX. If SEV_SNP, min_cpu_platform =
+	// "AMD Milan" is currently required. TDX is only available in beta.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/compute_instance_template#confidential_instance_type ComputeInstanceTemplate#confidential_instance_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/compute_instance_template#confidential_instance_type ComputeInstanceTemplate#confidential_instance_type}
 	ConfidentialInstanceType *string `field:"optional" json:"confidentialInstanceType" yaml:"confidentialInstanceType"`
 	// Defines whether the instance should have confidential compute enabled. Field will be deprecated in a future release.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.41.0/docs/resources/compute_instance_template#enable_confidential_compute ComputeInstanceTemplate#enable_confidential_compute}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/compute_instance_template#enable_confidential_compute ComputeInstanceTemplate#enable_confidential_compute}
 	EnableConfidentialCompute interface{} `field:"optional" json:"enableConfidentialCompute" yaml:"enableConfidentialCompute"`
 }
 
