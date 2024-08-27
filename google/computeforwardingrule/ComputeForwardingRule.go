@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule}.
 type ComputeForwardingRule interface {
 	cdktf.TerraformResource
 	AllowGlobalAccess() interface{}
@@ -53,6 +53,7 @@ type ComputeForwardingRule interface {
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktf.ITerraformIterator)
+	ForwardingRuleId() *float64
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -426,6 +427,16 @@ func (j *jsiiProxy_ComputeForwardingRule) ForEach() cdktf.ITerraformIterator {
 	_jsii_.Get(
 		j,
 		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeForwardingRule) ForwardingRuleId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"forwardingRuleId",
 		&returns,
 	)
 	return returns
@@ -1032,7 +1043,7 @@ func (j *jsiiProxy_ComputeForwardingRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewComputeForwardingRule(scope constructs.Construct, id *string, config *ComputeForwardingRuleConfig) ComputeForwardingRule {
 	_init_.Initialize()
 
@@ -1050,7 +1061,7 @@ func NewComputeForwardingRule(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewComputeForwardingRule_Override(c ComputeForwardingRule, scope constructs.Construct, id *string, config *ComputeForwardingRuleConfig) {
 	_init_.Initialize()
 

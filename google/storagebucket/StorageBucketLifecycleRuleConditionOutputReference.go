@@ -65,6 +65,9 @@ type StorageBucketLifecycleRuleConditionOutputReference interface {
 	NumNewerVersions() *float64
 	SetNumNewerVersions(val *float64)
 	NumNewerVersionsInput() *float64
+	SendAgeIfZero() interface{}
+	SetSendAgeIfZero(val interface{})
+	SendAgeIfZeroInput() interface{}
 	SendDaysSinceCustomTimeIfZero() interface{}
 	SetSendDaysSinceCustomTimeIfZero(val interface{})
 	SendDaysSinceCustomTimeIfZeroInput() interface{}
@@ -120,6 +123,7 @@ type StorageBucketLifecycleRuleConditionOutputReference interface {
 	ResetNoAge()
 	ResetNoncurrentTimeBefore()
 	ResetNumNewerVersions()
+	ResetSendAgeIfZero()
 	ResetSendDaysSinceCustomTimeIfZero()
 	ResetSendDaysSinceNoncurrentTimeIfZero()
 	ResetSendNumNewerVersionsIfZero()
@@ -409,6 +413,26 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) NumNewerV
 	return returns
 }
 
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) SendAgeIfZero() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendAgeIfZero",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) SendAgeIfZeroInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendAgeIfZeroInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) SendDaysSinceCustomTimeIfZero() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -687,6 +711,17 @@ func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference)SetNumNewe
 	_jsii_.Set(
 		j,
 		"numNewerVersions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference)SetSendAgeIfZero(val interface{}) {
+	if err := j.validateSetSendAgeIfZeroParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendAgeIfZero",
 		val,
 	)
 }
@@ -1027,6 +1062,14 @@ func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) ResetNumN
 	_jsii_.InvokeVoid(
 		s,
 		"resetNumNewerVersions",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucketLifecycleRuleConditionOutputReference) ResetSendAgeIfZero() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSendAgeIfZero",
 		nil, // no parameters
 	)
 }

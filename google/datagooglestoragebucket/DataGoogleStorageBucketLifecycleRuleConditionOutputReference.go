@@ -43,6 +43,7 @@ type DataGoogleStorageBucketLifecycleRuleConditionOutputReference interface {
 	NoAge() cdktf.IResolvable
 	NoncurrentTimeBefore() *string
 	NumNewerVersions() *float64
+	SendAgeIfZero() cdktf.IResolvable
 	SendDaysSinceCustomTimeIfZero() cdktf.IResolvable
 	SendDaysSinceNoncurrentTimeIfZero() cdktf.IResolvable
 	SendNumNewerVersionsIfZero() cdktf.IResolvable
@@ -249,6 +250,16 @@ func (j *jsiiProxy_DataGoogleStorageBucketLifecycleRuleConditionOutputReference)
 	_jsii_.Get(
 		j,
 		"numNewerVersions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucketLifecycleRuleConditionOutputReference) SendAgeIfZero() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"sendAgeIfZero",
 		&returns,
 	)
 	return returns

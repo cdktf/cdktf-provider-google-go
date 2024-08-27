@@ -36,6 +36,7 @@ type DataGoogleComputeForwardingRulesRulesOutputReference interface {
 	CreationTimestamp() *string
 	Description() *string
 	EffectiveLabels() cdktf.StringMap
+	ForwardingRuleId() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleComputeForwardingRulesRules
@@ -218,6 +219,16 @@ func (j *jsiiProxy_DataGoogleComputeForwardingRulesRulesOutputReference) Effecti
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeForwardingRulesRulesOutputReference) ForwardingRuleId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"forwardingRuleId",
 		&returns,
 	)
 	return returns

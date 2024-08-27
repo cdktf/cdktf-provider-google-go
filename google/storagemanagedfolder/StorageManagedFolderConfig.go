@@ -24,11 +24,11 @@ type StorageManagedFolderConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the bucket that contains the managed folder.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/storage_managed_folder#bucket StorageManagedFolder#bucket}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/storage_managed_folder#bucket StorageManagedFolder#bucket}
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
 	// The name of the managed folder expressed as a path. Must include trailing '/'. For example, 'example_dir/example_dir2/'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/storage_managed_folder#name StorageManagedFolder#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/storage_managed_folder#name StorageManagedFolder#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Allows the deletion of a managed folder even if contains objects.
 	//
@@ -36,16 +36,16 @@ type StorageManagedFolderConfig struct {
 	// within the folder will remain in a simulated folder with the
 	// same name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/storage_managed_folder#force_destroy StorageManagedFolder#force_destroy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/storage_managed_folder#force_destroy StorageManagedFolder#force_destroy}
 	ForceDestroy interface{} `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/storage_managed_folder#id StorageManagedFolder#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/storage_managed_folder#timeouts StorageManagedFolder#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/storage_managed_folder#timeouts StorageManagedFolder#timeouts}
 	Timeouts *StorageManagedFolderTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -448,6 +448,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "noncurrentTimeBefore", GoGetter: "NoncurrentTimeBefore"},
 			_jsii_.MemberProperty{JsiiProperty: "numNewerVersions", GoGetter: "NumNewerVersions"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sendAgeIfZero", GoGetter: "SendAgeIfZero"},
 			_jsii_.MemberProperty{JsiiProperty: "sendDaysSinceCustomTimeIfZero", GoGetter: "SendDaysSinceCustomTimeIfZero"},
 			_jsii_.MemberProperty{JsiiProperty: "sendDaysSinceNoncurrentTimeIfZero", GoGetter: "SendDaysSinceNoncurrentTimeIfZero"},
 			_jsii_.MemberProperty{JsiiProperty: "sendNumNewerVersionsIfZero", GoGetter: "SendNumNewerVersionsIfZero"},

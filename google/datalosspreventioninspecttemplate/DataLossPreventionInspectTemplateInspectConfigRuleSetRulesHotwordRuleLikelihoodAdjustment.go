@@ -9,7 +9,7 @@ type DataLossPreventionInspectTemplateInspectConfigRuleSetRulesHotwordRuleLikeli
 	//
 	// Either this or relative_likelihood can be set. Possible values: ["VERY_UNLIKELY", "UNLIKELY", "POSSIBLE", "LIKELY", "VERY_LIKELY"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/data_loss_prevention_inspect_template#fixed_likelihood DataLossPreventionInspectTemplate#fixed_likelihood}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/data_loss_prevention_inspect_template#fixed_likelihood DataLossPreventionInspectTemplate#fixed_likelihood}
 	FixedLikelihood *string `field:"optional" json:"fixedLikelihood" yaml:"fixedLikelihood"`
 	// Increase or decrease the likelihood by the specified number of levels.
 	//
@@ -20,7 +20,7 @@ type DataLossPreventionInspectTemplateInspectConfigRuleSetRulesHotwordRuleLikeli
 	// adjustment of 1 followed by an adjustment of -1 when base likelihood is VERY_LIKELY
 	// will result in a final likelihood of LIKELY. Either this or fixed_likelihood can be set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/data_loss_prevention_inspect_template#relative_likelihood DataLossPreventionInspectTemplate#relative_likelihood}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/data_loss_prevention_inspect_template#relative_likelihood DataLossPreventionInspectTemplate#relative_likelihood}
 	RelativeLikelihood *float64 `field:"optional" json:"relativeLikelihood" yaml:"relativeLikelihood"`
 }
 

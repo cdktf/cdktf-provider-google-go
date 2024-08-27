@@ -13,7 +13,7 @@ type DataprocAutoscalingPolicyBasicAlgorithmYarnConfig struct {
 	//
 	// Bounds: [0s, 1d].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/dataproc_autoscaling_policy#graceful_decommission_timeout DataprocAutoscalingPolicy#graceful_decommission_timeout}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/dataproc_autoscaling_policy#graceful_decommission_timeout DataprocAutoscalingPolicy#graceful_decommission_timeout}
 	GracefulDecommissionTimeout *string `field:"required" json:"gracefulDecommissionTimeout" yaml:"gracefulDecommissionTimeout"`
 	// Fraction of average pending memory in the last cooldown period for which to remove workers.
 	//
@@ -24,7 +24,7 @@ type DataprocAutoscalingPolicyBasicAlgorithmYarnConfig struct {
 	//
 	// Bounds: [0.0, 1.0].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/dataproc_autoscaling_policy#scale_down_factor DataprocAutoscalingPolicy#scale_down_factor}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/dataproc_autoscaling_policy#scale_down_factor DataprocAutoscalingPolicy#scale_down_factor}
 	ScaleDownFactor *float64 `field:"required" json:"scaleDownFactor" yaml:"scaleDownFactor"`
 	// Fraction of average pending memory in the last cooldown period for which to add workers.
 	//
@@ -35,7 +35,7 @@ type DataprocAutoscalingPolicyBasicAlgorithmYarnConfig struct {
 	//
 	// Bounds: [0.0, 1.0].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/dataproc_autoscaling_policy#scale_up_factor DataprocAutoscalingPolicy#scale_up_factor}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/dataproc_autoscaling_policy#scale_up_factor DataprocAutoscalingPolicy#scale_up_factor}
 	ScaleUpFactor *float64 `field:"required" json:"scaleUpFactor" yaml:"scaleUpFactor"`
 	// Minimum scale-down threshold as a fraction of total cluster size before scaling occurs.
 	//
@@ -45,7 +45,7 @@ type DataprocAutoscalingPolicyBasicAlgorithmYarnConfig struct {
 	//
 	// Bounds: [0.0, 1.0]. Default: 0.0.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/dataproc_autoscaling_policy#scale_down_min_worker_fraction DataprocAutoscalingPolicy#scale_down_min_worker_fraction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/dataproc_autoscaling_policy#scale_down_min_worker_fraction DataprocAutoscalingPolicy#scale_down_min_worker_fraction}
 	ScaleDownMinWorkerFraction *float64 `field:"optional" json:"scaleDownMinWorkerFraction" yaml:"scaleDownMinWorkerFraction"`
 	// Minimum scale-up threshold as a fraction of total cluster size before scaling occurs.
 	//
@@ -55,7 +55,7 @@ type DataprocAutoscalingPolicyBasicAlgorithmYarnConfig struct {
 	//
 	// Bounds: [0.0, 1.0]. Default: 0.0.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/dataproc_autoscaling_policy#scale_up_min_worker_fraction DataprocAutoscalingPolicy#scale_up_min_worker_fraction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/dataproc_autoscaling_policy#scale_up_min_worker_fraction DataprocAutoscalingPolicy#scale_up_min_worker_fraction}
 	ScaleUpMinWorkerFraction *float64 `field:"optional" json:"scaleUpMinWorkerFraction" yaml:"scaleUpMinWorkerFraction"`
 }
 

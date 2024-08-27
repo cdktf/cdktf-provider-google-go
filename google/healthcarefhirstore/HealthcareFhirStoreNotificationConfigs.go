@@ -14,7 +14,7 @@ type HealthcareFhirStoreNotificationConfigs struct {
 	// project. service-PROJECT_NUMBER@gcp-sa-healthcare.iam.gserviceaccount.com must have publisher permissions on the given
 	// Cloud Pub/Sub topic. Not having adequate permissions will cause the calls that send notifications to fail.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/healthcare_fhir_store#pubsub_topic HealthcareFhirStore#pubsub_topic}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/healthcare_fhir_store#pubsub_topic HealthcareFhirStore#pubsub_topic}
 	PubsubTopic *string `field:"required" json:"pubsubTopic" yaml:"pubsubTopic"`
 	// Whether to send full FHIR resource to this Pub/Sub topic for Create and Update operation.
 	//
@@ -23,7 +23,7 @@ type HealthcareFhirStoreNotificationConfigs struct {
 	// sent. Clients should always check the "payloadType" label from a Pub/Sub message to determine whether
 	// it needs to fetch the full resource as a separate operation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/healthcare_fhir_store#send_full_resource HealthcareFhirStore#send_full_resource}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/healthcare_fhir_store#send_full_resource HealthcareFhirStore#send_full_resource}
 	SendFullResource interface{} `field:"optional" json:"sendFullResource" yaml:"sendFullResource"`
 	// Whether to send full FHIR resource to this Pub/Sub topic for deleting FHIR resource.
 	//
@@ -33,7 +33,7 @@ type HealthcareFhirStoreNotificationConfigs struct {
 	// check the "payloadType" label from a Pub/Sub message to determine whether it needs to fetch the full previous
 	// resource as a separate operation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.42.0/docs/resources/healthcare_fhir_store#send_previous_resource_on_delete HealthcareFhirStore#send_previous_resource_on_delete}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/healthcare_fhir_store#send_previous_resource_on_delete HealthcareFhirStore#send_previous_resource_on_delete}
 	SendPreviousResourceOnDelete interface{} `field:"optional" json:"sendPreviousResourceOnDelete" yaml:"sendPreviousResourceOnDelete"`
 }
 
