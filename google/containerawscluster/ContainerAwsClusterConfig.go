@@ -24,33 +24,33 @@ type ContainerAwsClusterConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// authorization block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/container_aws_cluster#authorization ContainerAwsCluster#authorization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/container_aws_cluster#authorization ContainerAwsCluster#authorization}
 	Authorization *ContainerAwsClusterAuthorization `field:"required" json:"authorization" yaml:"authorization"`
 	// The AWS region where the cluster runs.
 	//
 	// Each Google Cloud region supports a subset of nearby AWS regions. You can call to list all supported AWS regions within a given Google Cloud region.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/container_aws_cluster#aws_region ContainerAwsCluster#aws_region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/container_aws_cluster#aws_region ContainerAwsCluster#aws_region}
 	AwsRegion *string `field:"required" json:"awsRegion" yaml:"awsRegion"`
 	// control_plane block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/container_aws_cluster#control_plane ContainerAwsCluster#control_plane}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/container_aws_cluster#control_plane ContainerAwsCluster#control_plane}
 	ControlPlane *ContainerAwsClusterControlPlane `field:"required" json:"controlPlane" yaml:"controlPlane"`
 	// fleet block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/container_aws_cluster#fleet ContainerAwsCluster#fleet}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/container_aws_cluster#fleet ContainerAwsCluster#fleet}
 	Fleet *ContainerAwsClusterFleet `field:"required" json:"fleet" yaml:"fleet"`
 	// The location for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/container_aws_cluster#location ContainerAwsCluster#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/container_aws_cluster#location ContainerAwsCluster#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The name of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/container_aws_cluster#name ContainerAwsCluster#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/container_aws_cluster#name ContainerAwsCluster#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// networking block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/container_aws_cluster#networking ContainerAwsCluster#networking}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/container_aws_cluster#networking ContainerAwsCluster#networking}
 	Networking *ContainerAwsClusterNetworking `field:"required" json:"networking" yaml:"networking"`
 	// Optional.
 	//
@@ -59,28 +59,28 @@ type ContainerAwsClusterConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 	// Please refer to the field `effective_annotations` for all of the annotations present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/container_aws_cluster#annotations ContainerAwsCluster#annotations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/container_aws_cluster#annotations ContainerAwsCluster#annotations}
 	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
 	// binary_authorization block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/container_aws_cluster#binary_authorization ContainerAwsCluster#binary_authorization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/container_aws_cluster#binary_authorization ContainerAwsCluster#binary_authorization}
 	BinaryAuthorization *ContainerAwsClusterBinaryAuthorization `field:"optional" json:"binaryAuthorization" yaml:"binaryAuthorization"`
 	// Optional. A human readable description of this cluster. Cannot be longer than 255 UTF-8 encoded bytes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/container_aws_cluster#description ContainerAwsCluster#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/container_aws_cluster#description ContainerAwsCluster#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/container_aws_cluster#id ContainerAwsCluster#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/container_aws_cluster#id ContainerAwsCluster#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The project for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/container_aws_cluster#project ContainerAwsCluster#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/container_aws_cluster#project ContainerAwsCluster#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/container_aws_cluster#timeouts ContainerAwsCluster#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/container_aws_cluster#timeouts ContainerAwsCluster#timeouts}
 	Timeouts *ContainerAwsClusterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

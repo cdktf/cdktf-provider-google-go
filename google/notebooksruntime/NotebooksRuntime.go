@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/notebooks_runtime google_notebooks_runtime}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/notebooks_runtime google_notebooks_runtime}.
 type NotebooksRuntime interface {
 	cdktf.TerraformResource
 	AccessConfig() NotebooksRuntimeAccessConfigOutputReference
@@ -555,7 +555,7 @@ func (j *jsiiProxy_NotebooksRuntime) VirtualMachineInput() *NotebooksRuntimeVirt
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/notebooks_runtime google_notebooks_runtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/notebooks_runtime google_notebooks_runtime} Resource.
 func NewNotebooksRuntime(scope constructs.Construct, id *string, config *NotebooksRuntimeConfig) NotebooksRuntime {
 	_init_.Initialize()
 
@@ -573,7 +573,7 @@ func NewNotebooksRuntime(scope constructs.Construct, id *string, config *Noteboo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.0/docs/resources/notebooks_runtime google_notebooks_runtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/notebooks_runtime google_notebooks_runtime} Resource.
 func NewNotebooksRuntime_Override(n NotebooksRuntime, scope constructs.Construct, id *string, config *NotebooksRuntimeConfig) {
 	_init_.Initialize()
 
