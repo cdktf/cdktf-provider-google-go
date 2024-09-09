@@ -5,14 +5,14 @@ package pubsubschemaiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/pubsubschemaiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/pubsubschemaiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/pubsub_schema_iam_member google_pubsub_schema_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/pubsub_schema_iam_member google_pubsub_schema_iam_member}.
 type PubsubSchemaIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_PubsubSchemaIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/pubsub_schema_iam_member google_pubsub_schema_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/pubsub_schema_iam_member google_pubsub_schema_iam_member} Resource.
 func NewPubsubSchemaIamMember(scope constructs.Construct, id *string, config *PubsubSchemaIamMemberConfig) PubsubSchemaIamMember {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewPubsubSchemaIamMember(scope constructs.Construct, id *string, config *Pu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/pubsub_schema_iam_member google_pubsub_schema_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/pubsub_schema_iam_member google_pubsub_schema_iam_member} Resource.
 func NewPubsubSchemaIamMember_Override(p PubsubSchemaIamMember, scope constructs.Construct, id *string, config *PubsubSchemaIamMemberConfig) {
 	_init_.Initialize()
 

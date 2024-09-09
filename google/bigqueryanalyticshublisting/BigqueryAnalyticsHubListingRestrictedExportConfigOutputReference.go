@@ -5,9 +5,9 @@ package bigqueryanalyticshublisting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/bigqueryanalyticshublisting/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/bigqueryanalyticshublisting/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,6 +35,7 @@ type BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference interface 
 	Fqn() *string
 	InternalValue() *BigqueryAnalyticsHubListingRestrictedExportConfig
 	SetInternalValue(val *BigqueryAnalyticsHubListingRestrictedExportConfig)
+	RestrictDirectTableAccess() cdktf.IResolvable
 	RestrictQueryResult() interface{}
 	SetRestrictQueryResult(val interface{})
 	RestrictQueryResultInput() interface{}
@@ -152,6 +153,16 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputRefere
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryAnalyticsHubListingRestrictedExportConfigOutputReference) RestrictDirectTableAccess() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"restrictDirectTableAccess",
 		&returns,
 	)
 	return returns

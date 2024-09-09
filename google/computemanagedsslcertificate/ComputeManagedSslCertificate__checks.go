@@ -269,14 +269,6 @@ func validateComputeManagedSslCertificate_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_ComputeManagedSslCertificate) validateSetCertificateIdParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ComputeManagedSslCertificate) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

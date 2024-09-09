@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadence
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceOutputReference) validatePutInspectTemplateModifiedCadenceParameters(value *DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceInspectTemplateModifiedCadence) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceOutputReference) validatePutSchemaModifiedCadenceParameters(value *DataLossPreventionDiscoveryConfigTargetsBigQueryTargetCadenceSchemaModifiedCadence) error {
 	return nil
 }

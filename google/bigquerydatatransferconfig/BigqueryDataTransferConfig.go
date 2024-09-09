@@ -5,14 +5,14 @@ package bigquerydatatransferconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/bigquerydatatransferconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/bigquerydatatransferconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigquery_data_transfer_config google_bigquery_data_transfer_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigquery_data_transfer_config google_bigquery_data_transfer_config}.
 type BigqueryDataTransferConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -48,6 +48,8 @@ type BigqueryDataTransferConfig interface {
 	DisplayNameInput() *string
 	EmailPreferences() BigqueryDataTransferConfigEmailPreferencesOutputReference
 	EmailPreferencesInput() *BigqueryDataTransferConfigEmailPreferences
+	EncryptionConfiguration() BigqueryDataTransferConfigEncryptionConfigurationOutputReference
+	EncryptionConfigurationInput() *BigqueryDataTransferConfigEncryptionConfiguration
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -150,6 +152,7 @@ type BigqueryDataTransferConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEmailPreferences(value *BigqueryDataTransferConfigEmailPreferences)
+	PutEncryptionConfiguration(value *BigqueryDataTransferConfigEncryptionConfiguration)
 	PutScheduleOptions(value *BigqueryDataTransferConfigScheduleOptions)
 	PutSensitiveParams(value *BigqueryDataTransferConfigSensitiveParams)
 	PutTimeouts(value *BigqueryDataTransferConfigTimeouts)
@@ -157,6 +160,7 @@ type BigqueryDataTransferConfig interface {
 	ResetDestinationDatasetId()
 	ResetDisabled()
 	ResetEmailPreferences()
+	ResetEncryptionConfiguration()
 	ResetId()
 	ResetLocation()
 	ResetNotificationPubsubTopic()
@@ -352,6 +356,26 @@ func (j *jsiiProxy_BigqueryDataTransferConfig) EmailPreferencesInput() *Bigquery
 	_jsii_.Get(
 		j,
 		"emailPreferencesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDataTransferConfig) EncryptionConfiguration() BigqueryDataTransferConfigEncryptionConfigurationOutputReference {
+	var returns BigqueryDataTransferConfigEncryptionConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDataTransferConfig) EncryptionConfigurationInput() *BigqueryDataTransferConfigEncryptionConfiguration {
+	var returns *BigqueryDataTransferConfigEncryptionConfiguration
+	_jsii_.Get(
+		j,
+		"encryptionConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -678,7 +702,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigquery_data_transfer_config google_bigquery_data_transfer_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigquery_data_transfer_config google_bigquery_data_transfer_config} Resource.
 func NewBigqueryDataTransferConfig(scope constructs.Construct, id *string, config *BigqueryDataTransferConfigConfig) BigqueryDataTransferConfig {
 	_init_.Initialize()
 
@@ -696,7 +720,7 @@ func NewBigqueryDataTransferConfig(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigquery_data_transfer_config google_bigquery_data_transfer_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigquery_data_transfer_config google_bigquery_data_transfer_config} Resource.
 func NewBigqueryDataTransferConfig_Override(b BigqueryDataTransferConfig, scope constructs.Construct, id *string, config *BigqueryDataTransferConfigConfig) {
 	_init_.Initialize()
 
@@ -1271,6 +1295,17 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) PutEmailPreferences(value *Bigque
 	)
 }
 
+func (b *jsiiProxy_BigqueryDataTransferConfig) PutEncryptionConfiguration(value *BigqueryDataTransferConfigEncryptionConfiguration) {
+	if err := b.validatePutEncryptionConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putEncryptionConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigqueryDataTransferConfig) PutScheduleOptions(value *BigqueryDataTransferConfigScheduleOptions) {
 	if err := b.validatePutScheduleOptionsParameters(value); err != nil {
 		panic(err)
@@ -1332,6 +1367,14 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) ResetEmailPreferences() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetEmailPreferences",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryDataTransferConfig) ResetEncryptionConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetEncryptionConfiguration",
 		nil, // no parameters
 	)
 }

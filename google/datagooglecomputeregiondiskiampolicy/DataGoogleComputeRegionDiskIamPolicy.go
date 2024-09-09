@@ -5,14 +5,14 @@ package datagooglecomputeregiondiskiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/datagooglecomputeregiondiskiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglecomputeregiondiskiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/compute_region_disk_iam_policy google_compute_region_disk_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/compute_region_disk_iam_policy google_compute_region_disk_iam_policy}.
 type DataGoogleComputeRegionDiskIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionDiskIamPolicy) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/compute_region_disk_iam_policy google_compute_region_disk_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/compute_region_disk_iam_policy google_compute_region_disk_iam_policy} Data Source.
 func NewDataGoogleComputeRegionDiskIamPolicy(scope constructs.Construct, id *string, config *DataGoogleComputeRegionDiskIamPolicyConfig) DataGoogleComputeRegionDiskIamPolicy {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewDataGoogleComputeRegionDiskIamPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/compute_region_disk_iam_policy google_compute_region_disk_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/compute_region_disk_iam_policy google_compute_region_disk_iam_policy} Data Source.
 func NewDataGoogleComputeRegionDiskIamPolicy_Override(d DataGoogleComputeRegionDiskIamPolicy, scope constructs.Construct, id *string, config *DataGoogleComputeRegionDiskIamPolicyConfig) {
 	_init_.Initialize()
 

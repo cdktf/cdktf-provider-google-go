@@ -5,14 +5,14 @@ package datagooglecomputesslpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/datagooglecomputesslpolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglecomputesslpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/compute_ssl_policy google_compute_ssl_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/compute_ssl_policy google_compute_ssl_policy}.
 type DataGoogleComputeSslPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -400,7 +400,7 @@ func (j *jsiiProxy_DataGoogleComputeSslPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/compute_ssl_policy google_compute_ssl_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/compute_ssl_policy google_compute_ssl_policy} Data Source.
 func NewDataGoogleComputeSslPolicy(scope constructs.Construct, id *string, config *DataGoogleComputeSslPolicyConfig) DataGoogleComputeSslPolicy {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewDataGoogleComputeSslPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/compute_ssl_policy google_compute_ssl_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/compute_ssl_policy google_compute_ssl_policy} Data Source.
 func NewDataGoogleComputeSslPolicy_Override(d DataGoogleComputeSslPolicy, scope constructs.Construct, id *string, config *DataGoogleComputeSslPolicyConfig) {
 	_init_.Initialize()
 

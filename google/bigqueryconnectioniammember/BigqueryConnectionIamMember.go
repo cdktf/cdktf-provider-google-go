@@ -5,14 +5,14 @@ package bigqueryconnectioniammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/bigqueryconnectioniammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/bigqueryconnectioniammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigquery_connection_iam_member google_bigquery_connection_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigquery_connection_iam_member google_bigquery_connection_iam_member}.
 type BigqueryConnectionIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_BigqueryConnectionIamMember) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigquery_connection_iam_member google_bigquery_connection_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigquery_connection_iam_member google_bigquery_connection_iam_member} Resource.
 func NewBigqueryConnectionIamMember(scope constructs.Construct, id *string, config *BigqueryConnectionIamMemberConfig) BigqueryConnectionIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewBigqueryConnectionIamMember(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigquery_connection_iam_member google_bigquery_connection_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigquery_connection_iam_member google_bigquery_connection_iam_member} Resource.
 func NewBigqueryConnectionIamMember_Override(b BigqueryConnectionIamMember, scope constructs.Construct, id *string, config *BigqueryConnectionIamMemberConfig) {
 	_init_.Initialize()
 

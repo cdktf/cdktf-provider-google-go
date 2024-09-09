@@ -187,15 +187,15 @@ func (j *jsiiProxy_AlloydbCluster) validateSetLocationParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbCluster) validateSetNetworkParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AlloydbCluster) validateSetProjectParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_AlloydbCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AlloydbCluster) validateSetSubscriptionTypeParameters(val *string) error {
 	return nil
 }
 

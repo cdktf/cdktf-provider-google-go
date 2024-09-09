@@ -3327,6 +3327,42 @@ func init() {
 		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigChangeTables",
+		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigChangeTables)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference",
+		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects",
 		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects)(nil)).Elem(),
 	)
@@ -3804,6 +3840,8 @@ func init() {
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "changeTables", GoGetter: "ChangeTables"},
+			_jsii_.MemberProperty{JsiiProperty: "changeTablesInput", GoGetter: "ChangeTablesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3829,19 +3867,61 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxConcurrentBackfillTasksInput", GoGetter: "MaxConcurrentBackfillTasksInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxConcurrentCdcTasks", GoGetter: "MaxConcurrentCdcTasks"},
 			_jsii_.MemberProperty{JsiiProperty: "maxConcurrentCdcTasksInput", GoGetter: "MaxConcurrentCdcTasksInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putChangeTables", GoMethod: "PutChangeTables"},
 			_jsii_.MemberMethod{JsiiMethod: "putExcludeObjects", GoMethod: "PutExcludeObjects"},
 			_jsii_.MemberMethod{JsiiMethod: "putIncludeObjects", GoMethod: "PutIncludeObjects"},
+			_jsii_.MemberMethod{JsiiMethod: "putTransactionLogs", GoMethod: "PutTransactionLogs"},
+			_jsii_.MemberMethod{JsiiMethod: "resetChangeTables", GoMethod: "ResetChangeTables"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludeObjects", GoMethod: "ResetExcludeObjects"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIncludeObjects", GoMethod: "ResetIncludeObjects"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxConcurrentBackfillTasks", GoMethod: "ResetMaxConcurrentBackfillTasks"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxConcurrentCdcTasks", GoMethod: "ResetMaxConcurrentCdcTasks"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTransactionLogs", GoMethod: "ResetTransactionLogs"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "transactionLogs", GoGetter: "TransactionLogs"},
+			_jsii_.MemberProperty{JsiiProperty: "transactionLogsInput", GoGetter: "TransactionLogsInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs",
+		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference",
+		reflect.TypeOf((*DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference{}
+			j := jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

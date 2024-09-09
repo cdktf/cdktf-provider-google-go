@@ -5,9 +5,9 @@ package sqldatabaseinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/sqldatabaseinstance/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/sqldatabaseinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -48,9 +48,6 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	PrivateNetworkInput() *string
 	PscConfig() SqlDatabaseInstanceSettingsIpConfigurationPscConfigList
 	PscConfigInput() interface{}
-	RequireSsl() interface{}
-	SetRequireSsl(val interface{})
-	RequireSslInput() interface{}
 	ServerCaMode() *string
 	SetServerCaMode(val *string)
 	ServerCaModeInput() *string
@@ -97,7 +94,6 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	ResetIpv4Enabled()
 	ResetPrivateNetwork()
 	ResetPscConfig()
-	ResetRequireSsl()
 	ResetServerCaMode()
 	ResetSslMode()
 	// Produce the Token's value at resolution time.
@@ -285,26 +281,6 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Ps
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) RequireSsl() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"requireSsl",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) RequireSslInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"requireSslInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCaMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -466,17 +442,6 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	_jsii_.Set(
 		j,
 		"privateNetwork",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetRequireSsl(val interface{}) {
-	if err := j.validateSetRequireSslParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"requireSsl",
 		val,
 	)
 }
@@ -777,14 +742,6 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Re
 	_jsii_.InvokeVoid(
 		s,
 		"resetPscConfig",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetRequireSsl() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetRequireSsl",
 		nil, // no parameters
 	)
 }

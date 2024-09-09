@@ -5,9 +5,9 @@ package discoveryenginedatastore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/discoveryenginedatastore/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/discoveryenginedatastore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -34,6 +34,8 @@ type DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputR
 	Fqn() *string
 	InternalValue() *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig
 	SetInternalValue(val *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig)
+	LayoutParsingConfig() DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference
+	LayoutParsingConfigInput() *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig
 	OcrParsingConfig() DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigOutputReference
 	OcrParsingConfigInput() *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig
 	// Experimental.
@@ -69,8 +71,10 @@ type DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputR
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDigitalParsingConfig(value *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfig)
+	PutLayoutParsingConfig(value *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig)
 	PutOcrParsingConfig(value *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig)
 	ResetDigitalParsingConfig()
+	ResetLayoutParsingConfig()
 	ResetOcrParsingConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsin
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) LayoutParsingConfig() DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference {
+	var returns DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"layoutParsingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) LayoutParsingConfigInput() *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig {
+	var returns *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig
+	_jsii_.Get(
+		j,
+		"layoutParsingConfigInput",
 		&returns,
 	)
 	return returns
@@ -477,6 +501,17 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsin
 	)
 }
 
+func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) PutLayoutParsingConfig(value *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig) {
+	if err := d.validatePutLayoutParsingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putLayoutParsingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) PutOcrParsingConfig(value *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig) {
 	if err := d.validatePutOcrParsingConfigParameters(value); err != nil {
 		panic(err)
@@ -492,6 +527,14 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsin
 	_jsii_.InvokeVoid(
 		d,
 		"resetDigitalParsingConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) ResetLayoutParsingConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLayoutParsingConfig",
 		nil, // no parameters
 	)
 }

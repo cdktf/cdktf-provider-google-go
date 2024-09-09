@@ -5,14 +5,14 @@ package computesubnetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/computesubnetwork/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/computesubnetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/compute_subnetwork google_compute_subnetwork}.
 type ComputeSubnetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -98,6 +98,9 @@ type ComputeSubnetwork interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ReservedInternalRange() *string
+	SetReservedInternalRange(val *string)
+	ReservedInternalRangeInput() *string
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -167,6 +170,7 @@ type ComputeSubnetwork interface {
 	ResetDescription()
 	ResetExternalIpv6Prefix()
 	ResetId()
+	ResetIpCidrRange()
 	ResetIpv6AccessType()
 	ResetLogConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -177,6 +181,7 @@ type ComputeSubnetwork interface {
 	ResetProject()
 	ResetPurpose()
 	ResetRegion()
+	ResetReservedInternalRange()
 	ResetRole()
 	ResetSecondaryIpRange()
 	ResetSendSecondaryIpRangeIfEmpty()
@@ -640,6 +645,26 @@ func (j *jsiiProxy_ComputeSubnetwork) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeSubnetwork) ReservedInternalRange() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reservedInternalRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) ReservedInternalRangeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reservedInternalRangeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeSubnetwork) Role() *string {
 	var returns *string
 	_jsii_.Get(
@@ -781,7 +806,7 @@ func (j *jsiiProxy_ComputeSubnetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
 func NewComputeSubnetwork(scope constructs.Construct, id *string, config *ComputeSubnetworkConfig) ComputeSubnetwork {
 	_init_.Initialize()
 
@@ -799,7 +824,7 @@ func NewComputeSubnetwork(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
 func NewComputeSubnetwork_Override(c ComputeSubnetwork, scope constructs.Construct, id *string, config *ComputeSubnetworkConfig) {
 	_init_.Initialize()
 
@@ -1006,6 +1031,17 @@ func (j *jsiiProxy_ComputeSubnetwork)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeSubnetwork)SetReservedInternalRange(val *string) {
+	if err := j.validateSetReservedInternalRangeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"reservedInternalRange",
 		val,
 	)
 }
@@ -1453,6 +1489,14 @@ func (c *jsiiProxy_ComputeSubnetwork) ResetId() {
 	)
 }
 
+func (c *jsiiProxy_ComputeSubnetwork) ResetIpCidrRange() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpCidrRange",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeSubnetwork) ResetIpv6AccessType() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1513,6 +1557,14 @@ func (c *jsiiProxy_ComputeSubnetwork) ResetRegion() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSubnetwork) ResetReservedInternalRange() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetReservedInternalRange",
 		nil, // no parameters
 	)
 }

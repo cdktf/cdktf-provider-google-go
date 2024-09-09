@@ -5,14 +5,14 @@ package bigqueryjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/bigqueryjob/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/bigqueryjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigquery_job google_bigquery_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigquery_job google_bigquery_job}.
 type BigqueryJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -604,7 +604,7 @@ func (j *jsiiProxy_BigqueryJob) UserEmail() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigquery_job google_bigquery_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigquery_job google_bigquery_job} Resource.
 func NewBigqueryJob(scope constructs.Construct, id *string, config *BigqueryJobConfig) BigqueryJob {
 	_init_.Initialize()
 
@@ -622,7 +622,7 @@ func NewBigqueryJob(scope constructs.Construct, id *string, config *BigqueryJobC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigquery_job google_bigquery_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigquery_job google_bigquery_job} Resource.
 func NewBigqueryJob_Override(b BigqueryJob, scope constructs.Construct, id *string, config *BigqueryJobConfig) {
 	_init_.Initialize()
 

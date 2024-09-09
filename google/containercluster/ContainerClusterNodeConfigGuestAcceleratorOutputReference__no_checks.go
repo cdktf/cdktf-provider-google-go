@@ -47,11 +47,11 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) validatePutGpuDriverInstallationConfigParameters(value interface{}) error {
+func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) validatePutGpuDriverInstallationConfigParameters(value *ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfig) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) validatePutGpuSharingConfigParameters(value interface{}) error {
+func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) validatePutGpuSharingConfigParameters(value *ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig) error {
 	return nil
 }
 

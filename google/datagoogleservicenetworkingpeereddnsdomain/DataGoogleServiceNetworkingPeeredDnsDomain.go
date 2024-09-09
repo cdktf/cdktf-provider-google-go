@@ -5,14 +5,14 @@ package datagoogleservicenetworkingpeereddnsdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/datagoogleservicenetworkingpeereddnsdomain/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagoogleservicenetworkingpeereddnsdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/service_networking_peered_dns_domain google_service_networking_peered_dns_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/service_networking_peered_dns_domain google_service_networking_peered_dns_domain}.
 type DataGoogleServiceNetworkingPeeredDnsDomain interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/service_networking_peered_dns_domain google_service_networking_peered_dns_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/service_networking_peered_dns_domain google_service_networking_peered_dns_domain} Data Source.
 func NewDataGoogleServiceNetworkingPeeredDnsDomain(scope constructs.Construct, id *string, config *DataGoogleServiceNetworkingPeeredDnsDomainConfig) DataGoogleServiceNetworkingPeeredDnsDomain {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewDataGoogleServiceNetworkingPeeredDnsDomain(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/service_networking_peered_dns_domain google_service_networking_peered_dns_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/service_networking_peered_dns_domain google_service_networking_peered_dns_domain} Data Source.
 func NewDataGoogleServiceNetworkingPeeredDnsDomain_Override(d DataGoogleServiceNetworkingPeeredDnsDomain, scope constructs.Construct, id *string, config *DataGoogleServiceNetworkingPeeredDnsDomainConfig) {
 	_init_.Initialize()
 

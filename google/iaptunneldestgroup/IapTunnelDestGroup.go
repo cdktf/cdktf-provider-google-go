@@ -5,14 +5,14 @@ package iaptunneldestgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/iaptunneldestgroup/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/iaptunneldestgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/iap_tunnel_dest_group google_iap_tunnel_dest_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/iap_tunnel_dest_group google_iap_tunnel_dest_group}.
 type IapTunnelDestGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -464,7 +464,7 @@ func (j *jsiiProxy_IapTunnelDestGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/iap_tunnel_dest_group google_iap_tunnel_dest_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/iap_tunnel_dest_group google_iap_tunnel_dest_group} Resource.
 func NewIapTunnelDestGroup(scope constructs.Construct, id *string, config *IapTunnelDestGroupConfig) IapTunnelDestGroup {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewIapTunnelDestGroup(scope constructs.Construct, id *string, config *IapTu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/iap_tunnel_dest_group google_iap_tunnel_dest_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/iap_tunnel_dest_group google_iap_tunnel_dest_group} Resource.
 func NewIapTunnelDestGroup_Override(i IapTunnelDestGroup, scope constructs.Construct, id *string, config *IapTunnelDestGroupConfig) {
 	_init_.Initialize()
 

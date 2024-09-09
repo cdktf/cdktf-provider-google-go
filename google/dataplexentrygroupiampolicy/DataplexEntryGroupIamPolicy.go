@@ -5,14 +5,14 @@ package dataplexentrygroupiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/dataplexentrygroupiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/dataplexentrygroupiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/dataplex_entry_group_iam_policy google_dataplex_entry_group_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/dataplex_entry_group_iam_policy google_dataplex_entry_group_iam_policy}.
 type DataplexEntryGroupIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_DataplexEntryGroupIamPolicy) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/dataplex_entry_group_iam_policy google_dataplex_entry_group_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/dataplex_entry_group_iam_policy google_dataplex_entry_group_iam_policy} Resource.
 func NewDataplexEntryGroupIamPolicy(scope constructs.Construct, id *string, config *DataplexEntryGroupIamPolicyConfig) DataplexEntryGroupIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewDataplexEntryGroupIamPolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/dataplex_entry_group_iam_policy google_dataplex_entry_group_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/dataplex_entry_group_iam_policy google_dataplex_entry_group_iam_policy} Resource.
 func NewDataplexEntryGroupIamPolicy_Override(d DataplexEntryGroupIamPolicy, scope constructs.Construct, id *string, config *DataplexEntryGroupIamPolicyConfig) {
 	_init_.Initialize()
 

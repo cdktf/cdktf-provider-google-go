@@ -5,14 +5,14 @@ package datagoogleartifactregistryrepository
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/datagoogleartifactregistryrepository/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagoogleartifactregistryrepository/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/artifact_registry_repository google_artifact_registry_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository}.
 type DataGoogleArtifactRegistryRepository interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -511,7 +511,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) VirtualRepositoryConfig
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source.
 func NewDataGoogleArtifactRegistryRepository(scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryRepositoryConfig) DataGoogleArtifactRegistryRepository {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewDataGoogleArtifactRegistryRepository(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/artifact_registry_repository google_artifact_registry_repository} Data Source.
 func NewDataGoogleArtifactRegistryRepository_Override(d DataGoogleArtifactRegistryRepository, scope constructs.Construct, id *string, config *DataGoogleArtifactRegistryRepositoryConfig) {
 	_init_.Initialize()
 

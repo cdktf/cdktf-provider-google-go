@@ -5,14 +5,14 @@ package computeregionnetworkfirewallpolicyassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/computeregionnetworkfirewallpolicyassociation/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/computeregionnetworkfirewallpolicyassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/compute_region_network_firewall_policy_association google_compute_region_network_firewall_policy_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/compute_region_network_firewall_policy_association google_compute_region_network_firewall_policy_association}.
 type ComputeRegionNetworkFirewallPolicyAssociation interface {
 	cdktf.TerraformResource
 	AttachmentTarget() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyAssociation) TimeoutsInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/compute_region_network_firewall_policy_association google_compute_region_network_firewall_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/compute_region_network_firewall_policy_association google_compute_region_network_firewall_policy_association} Resource.
 func NewComputeRegionNetworkFirewallPolicyAssociation(scope constructs.Construct, id *string, config *ComputeRegionNetworkFirewallPolicyAssociationConfig) ComputeRegionNetworkFirewallPolicyAssociation {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewComputeRegionNetworkFirewallPolicyAssociation(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/compute_region_network_firewall_policy_association google_compute_region_network_firewall_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/compute_region_network_firewall_policy_association google_compute_region_network_firewall_policy_association} Resource.
 func NewComputeRegionNetworkFirewallPolicyAssociation_Override(c ComputeRegionNetworkFirewallPolicyAssociation, scope constructs.Construct, id *string, config *ComputeRegionNetworkFirewallPolicyAssociationConfig) {
 	_init_.Initialize()
 

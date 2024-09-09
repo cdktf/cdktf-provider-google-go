@@ -79,6 +79,10 @@ func (c *jsiiProxy_CloudTasksQueue) validatePutAppEngineRoutingOverrideParameter
 	return nil
 }
 
+func (c *jsiiProxy_CloudTasksQueue) validatePutHttpTargetParameters(value *CloudTasksQueueHttpTarget) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudTasksQueue) validatePutRateLimitsParameters(value *CloudTasksQueueRateLimits) error {
 	return nil
 }

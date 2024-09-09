@@ -5,14 +5,14 @@ package edgenetworknetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/edgenetworknetwork/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/edgenetworknetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/edgenetwork_network google_edgenetwork_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/edgenetwork_network google_edgenetwork_network}.
 type EdgenetworkNetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,6 +35,7 @@ type EdgenetworkNetwork interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -80,6 +81,7 @@ type EdgenetworkNetwork interface {
 	RawOverrides() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -236,6 +238,16 @@ func (j *jsiiProxy_EdgenetworkNetwork) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EdgenetworkNetwork) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -461,6 +473,16 @@ func (j *jsiiProxy_EdgenetworkNetwork) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
+func (j *jsiiProxy_EdgenetworkNetwork) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EdgenetworkNetwork) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -532,7 +554,7 @@ func (j *jsiiProxy_EdgenetworkNetwork) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/edgenetwork_network google_edgenetwork_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/edgenetwork_network google_edgenetwork_network} Resource.
 func NewEdgenetworkNetwork(scope constructs.Construct, id *string, config *EdgenetworkNetworkConfig) EdgenetworkNetwork {
 	_init_.Initialize()
 
@@ -550,7 +572,7 @@ func NewEdgenetworkNetwork(scope constructs.Construct, id *string, config *Edgen
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/edgenetwork_network google_edgenetwork_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/edgenetwork_network google_edgenetwork_network} Resource.
 func NewEdgenetworkNetwork_Override(e EdgenetworkNetwork, scope constructs.Construct, id *string, config *EdgenetworkNetworkConfig) {
 	_init_.Initialize()
 

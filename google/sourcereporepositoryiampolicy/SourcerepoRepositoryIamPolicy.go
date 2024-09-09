@@ -5,14 +5,14 @@ package sourcereporepositoryiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/sourcereporepositoryiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/sourcereporepositoryiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/sourcerepo_repository_iam_policy google_sourcerepo_repository_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/sourcerepo_repository_iam_policy google_sourcerepo_repository_iam_policy}.
 type SourcerepoRepositoryIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_SourcerepoRepositoryIamPolicy) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/sourcerepo_repository_iam_policy google_sourcerepo_repository_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/sourcerepo_repository_iam_policy google_sourcerepo_repository_iam_policy} Resource.
 func NewSourcerepoRepositoryIamPolicy(scope constructs.Construct, id *string, config *SourcerepoRepositoryIamPolicyConfig) SourcerepoRepositoryIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewSourcerepoRepositoryIamPolicy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/sourcerepo_repository_iam_policy google_sourcerepo_repository_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/sourcerepo_repository_iam_policy google_sourcerepo_repository_iam_policy} Resource.
 func NewSourcerepoRepositoryIamPolicy_Override(s SourcerepoRepositoryIamPolicy, scope constructs.Construct, id *string, config *SourcerepoRepositoryIamPolicyConfig) {
 	_init_.Initialize()
 

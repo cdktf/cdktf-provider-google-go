@@ -5,14 +5,16 @@ package datastreamstream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/datastreamstream/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/datastreamstream/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference interface {
 	cdktf.ComplexObject
+	ChangeTables() DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference
+	ChangeTablesInput() *DatastreamStreamSourceConfigSqlServerSourceConfigChangeTables
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -50,6 +52,8 @@ type DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference interface 
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransactionLogs() DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference
+	TransactionLogsInput() *DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -74,12 +78,16 @@ type DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutChangeTables(value *DatastreamStreamSourceConfigSqlServerSourceConfigChangeTables)
 	PutExcludeObjects(value *DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects)
 	PutIncludeObjects(value *DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects)
+	PutTransactionLogs(value *DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs)
+	ResetChangeTables()
 	ResetExcludeObjects()
 	ResetIncludeObjects()
 	ResetMaxConcurrentBackfillTasks()
 	ResetMaxConcurrentCdcTasks()
+	ResetTransactionLogs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -93,6 +101,26 @@ type DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference interface 
 // The jsii proxy struct for DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference
 type jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) ChangeTables() DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference {
+	var returns DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference
+	_jsii_.Get(
+		j,
+		"changeTables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) ChangeTablesInput() *DatastreamStreamSourceConfigSqlServerSourceConfigChangeTables {
+	var returns *DatastreamStreamSourceConfigSqlServerSourceConfigChangeTables
+	_jsii_.Get(
+		j,
+		"changeTablesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -240,6 +268,26 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputRefere
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) TransactionLogs() DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference {
+	var returns DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference
+	_jsii_.Get(
+		j,
+		"transactionLogs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) TransactionLogsInput() *DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs {
+	var returns *DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs
+	_jsii_.Get(
+		j,
+		"transactionLogsInput",
 		&returns,
 	)
 	return returns
@@ -536,6 +584,17 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputRefere
 	return returns
 }
 
+func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) PutChangeTables(value *DatastreamStreamSourceConfigSqlServerSourceConfigChangeTables) {
+	if err := d.validatePutChangeTablesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putChangeTables",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) PutExcludeObjects(value *DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects) {
 	if err := d.validatePutExcludeObjectsParameters(value); err != nil {
 		panic(err)
@@ -555,6 +614,25 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputRefere
 		d,
 		"putIncludeObjects",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) PutTransactionLogs(value *DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs) {
+	if err := d.validatePutTransactionLogsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTransactionLogs",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) ResetChangeTables() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetChangeTables",
+		nil, // no parameters
 	)
 }
 
@@ -586,6 +664,14 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputRefere
 	_jsii_.InvokeVoid(
 		d,
 		"resetMaxConcurrentCdcTasks",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) ResetTransactionLogs() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTransactionLogs",
 		nil, // no parameters
 	)
 }

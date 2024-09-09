@@ -5,14 +5,14 @@ package iapwebbackendserviceiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/iapwebbackendserviceiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/iapwebbackendserviceiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding}.
 type IapWebBackendServiceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_IapWebBackendServiceIamBinding) WebBackendServiceInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding} Resource.
 func NewIapWebBackendServiceIamBinding(scope constructs.Construct, id *string, config *IapWebBackendServiceIamBindingConfig) IapWebBackendServiceIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewIapWebBackendServiceIamBinding(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding} Resource.
 func NewIapWebBackendServiceIamBinding_Override(i IapWebBackendServiceIamBinding, scope constructs.Construct, id *string, config *IapWebBackendServiceIamBindingConfig) {
 	_init_.Initialize()
 

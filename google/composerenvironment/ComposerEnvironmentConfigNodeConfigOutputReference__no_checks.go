@@ -47,7 +47,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validateI
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validatePutIpAllocationPolicyParameters(value interface{}) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validatePutIpAllocationPolicyParameters(value *ComposerEnvironmentConfigNodeConfigIpAllocationPolicy) error {
 	return nil
 }
 

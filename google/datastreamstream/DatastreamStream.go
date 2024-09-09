@@ -5,14 +5,14 @@ package datastreamstream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/datastreamstream/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/datastreamstream/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/datastream_stream google_datastream_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/datastream_stream google_datastream_stream}.
 type DatastreamStream interface {
 	cdktf.TerraformResource
 	BackfillAll() DatastreamStreamBackfillAllOutputReference
@@ -661,7 +661,7 @@ func (j *jsiiProxy_DatastreamStream) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/datastream_stream google_datastream_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/datastream_stream google_datastream_stream} Resource.
 func NewDatastreamStream(scope constructs.Construct, id *string, config *DatastreamStreamConfig) DatastreamStream {
 	_init_.Initialize()
 
@@ -679,7 +679,7 @@ func NewDatastreamStream(scope constructs.Construct, id *string, config *Datastr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/datastream_stream google_datastream_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/datastream_stream google_datastream_stream} Resource.
 func NewDatastreamStream_Override(d DatastreamStream, scope constructs.Construct, id *string, config *DatastreamStreamConfig) {
 	_init_.Initialize()
 

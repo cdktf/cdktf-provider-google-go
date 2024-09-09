@@ -87,10 +87,6 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) validateSetRequireSslParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) validateSetServerCaModeParameters(val *string) error {
 	return nil
 }

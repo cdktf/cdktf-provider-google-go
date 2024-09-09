@@ -26,51 +26,51 @@ type BigtableInstanceConfig struct {
 	//
 	// Must be 6-33 characters and must only contain hyphens, lowercase letters and numbers.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigtable_instance#name BigtableInstance#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigtable_instance#name BigtableInstance#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// cluster block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigtable_instance#cluster BigtableInstance#cluster}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigtable_instance#cluster BigtableInstance#cluster}
 	Cluster interface{} `field:"optional" json:"cluster" yaml:"cluster"`
 	// When the field is set to true or unset in Terraform state, a terraform apply or terraform destroy that would delete the instance will fail.
 	//
 	// When the field is set to false, deleting the instance is allowed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigtable_instance#deletion_protection BigtableInstance#deletion_protection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigtable_instance#deletion_protection BigtableInstance#deletion_protection}
 	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// The human-readable display name of the Bigtable instance. Defaults to the instance name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigtable_instance#display_name BigtableInstance#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigtable_instance#display_name BigtableInstance#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
 	// When deleting a BigTable instance, this boolean option will delete all backups within the instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigtable_instance#force_destroy BigtableInstance#force_destroy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigtable_instance#force_destroy BigtableInstance#force_destroy}
 	ForceDestroy interface{} `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigtable_instance#id BigtableInstance#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigtable_instance#id BigtableInstance#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The instance type to create. One of "DEVELOPMENT" or "PRODUCTION". Defaults to "PRODUCTION".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigtable_instance#instance_type BigtableInstance#instance_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigtable_instance#instance_type BigtableInstance#instance_type}
 	InstanceType *string `field:"optional" json:"instanceType" yaml:"instanceType"`
 	// A mapping of labels to assign to the resource.
 	//
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// 				Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigtable_instance#labels BigtableInstance#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigtable_instance#labels BigtableInstance#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// The ID of the project in which the resource belongs.
 	//
 	// If it is not provided, the provider project is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigtable_instance#project BigtableInstance#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigtable_instance#project BigtableInstance#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigtable_instance#timeouts BigtableInstance#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigtable_instance#timeouts BigtableInstance#timeouts}
 	Timeouts *BigtableInstanceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

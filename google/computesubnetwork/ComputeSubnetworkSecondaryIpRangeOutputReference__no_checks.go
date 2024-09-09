@@ -71,6 +71,10 @@ func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) validateSetReservedInternalRangeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

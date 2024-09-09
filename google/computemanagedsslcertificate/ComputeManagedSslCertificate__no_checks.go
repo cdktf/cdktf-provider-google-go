@@ -99,10 +99,6 @@ func validateComputeManagedSslCertificate_IsTerraformResourceParameters(x interf
 	return nil
 }
 
-func (j *jsiiProxy_ComputeManagedSslCertificate) validateSetCertificateIdParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_ComputeManagedSslCertificate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -115,6 +115,10 @@ func (j *jsiiProxy_RedisCluster) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_RedisCluster) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedisCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

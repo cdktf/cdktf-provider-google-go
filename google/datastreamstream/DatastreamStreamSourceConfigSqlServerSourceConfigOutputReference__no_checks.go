@@ -47,11 +47,19 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputRefere
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) validatePutChangeTablesParameters(value *DatastreamStreamSourceConfigSqlServerSourceConfigChangeTables) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) validatePutExcludeObjectsParameters(value *DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects) error {
 	return nil
 }
 
 func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) validatePutIncludeObjectsParameters(value *DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) validatePutTransactionLogsParameters(value *DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs) error {
 	return nil
 }
 

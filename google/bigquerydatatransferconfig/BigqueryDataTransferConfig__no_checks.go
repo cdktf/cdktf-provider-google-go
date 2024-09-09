@@ -79,6 +79,10 @@ func (b *jsiiProxy_BigqueryDataTransferConfig) validatePutEmailPreferencesParame
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryDataTransferConfig) validatePutEncryptionConfigurationParameters(value *BigqueryDataTransferConfigEncryptionConfiguration) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDataTransferConfig) validatePutScheduleOptionsParameters(value *BigqueryDataTransferConfigScheduleOptions) error {
 	return nil
 }

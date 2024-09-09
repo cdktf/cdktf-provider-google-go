@@ -5,14 +5,14 @@ package loggingorganizationbucketconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/loggingorganizationbucketconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/loggingorganizationbucketconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config}.
 type LoggingOrganizationBucketConfig interface {
 	cdktf.TerraformResource
 	BucketId() *string
@@ -497,7 +497,7 @@ func (j *jsiiProxy_LoggingOrganizationBucketConfig) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config} Resource.
 func NewLoggingOrganizationBucketConfig(scope constructs.Construct, id *string, config *LoggingOrganizationBucketConfigConfig) LoggingOrganizationBucketConfig {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewLoggingOrganizationBucketConfig(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/logging_organization_bucket_config google_logging_organization_bucket_config} Resource.
 func NewLoggingOrganizationBucketConfig_Override(l LoggingOrganizationBucketConfig, scope constructs.Construct, id *string, config *LoggingOrganizationBucketConfigConfig) {
 	_init_.Initialize()
 

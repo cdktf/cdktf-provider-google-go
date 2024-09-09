@@ -5,9 +5,9 @@ package computeinstancefromtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/computeinstancefromtemplate/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/computeinstancefromtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -70,8 +70,6 @@ type ComputeInstanceFromTemplateGuestAcceleratorOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetCount()
-	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -486,22 +484,6 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateGuestAcceleratorOutputReference) I
 	)
 
 	return returns
-}
-
-func (c *jsiiProxy_ComputeInstanceFromTemplateGuestAcceleratorOutputReference) ResetCount() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetCount",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ComputeInstanceFromTemplateGuestAcceleratorOutputReference) ResetType() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetType",
-		nil, // no parameters
-	)
 }
 
 func (c *jsiiProxy_ComputeInstanceFromTemplateGuestAcceleratorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -75,6 +75,10 @@ func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) validatePutSharingEnvironmentConfigParameters(value *BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubDataExchange) validatePutTimeoutsParameters(value *BigqueryAnalyticsHubDataExchangeTimeouts) error {
 	return nil
 }

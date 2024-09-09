@@ -5,14 +5,14 @@ package datagoogleorganizationiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/datagoogleorganizationiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagoogleorganizationiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/organization_iam_policy google_organization_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/organization_iam_policy google_organization_iam_policy}.
 type DataGoogleOrganizationIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DataGoogleOrganizationIamPolicy) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/organization_iam_policy google_organization_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/organization_iam_policy google_organization_iam_policy} Data Source.
 func NewDataGoogleOrganizationIamPolicy(scope constructs.Construct, id *string, config *DataGoogleOrganizationIamPolicyConfig) DataGoogleOrganizationIamPolicy {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewDataGoogleOrganizationIamPolicy(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/organization_iam_policy google_organization_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/organization_iam_policy google_organization_iam_policy} Data Source.
 func NewDataGoogleOrganizationIamPolicy_Override(d DataGoogleOrganizationIamPolicy, scope constructs.Construct, id *string, config *DataGoogleOrganizationIamPolicyConfig) {
 	_init_.Initialize()
 

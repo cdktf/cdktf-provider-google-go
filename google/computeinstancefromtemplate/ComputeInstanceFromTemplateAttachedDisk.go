@@ -5,17 +5,29 @@ package computeinstancefromtemplate
 
 
 type ComputeInstanceFromTemplateAttachedDisk struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/compute_instance_from_template#device_name ComputeInstanceFromTemplate#device_name}.
+	// The name or self_link of the disk attached to this instance.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/compute_instance_from_template#source ComputeInstanceFromTemplate#source}
+	Source *string `field:"required" json:"source" yaml:"source"`
+	// Name with which the attached disk is accessible under /dev/disk/by-id/.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/compute_instance_from_template#device_name ComputeInstanceFromTemplate#device_name}
 	DeviceName *string `field:"optional" json:"deviceName" yaml:"deviceName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/compute_instance_from_template#disk_encryption_key_raw ComputeInstanceFromTemplate#disk_encryption_key_raw}.
+	// A 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to encrypt this disk.
+	//
+	// Only one of kms_key_self_link and disk_encryption_key_raw may be set.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/compute_instance_from_template#disk_encryption_key_raw ComputeInstanceFromTemplate#disk_encryption_key_raw}
 	DiskEncryptionKeyRaw *string `field:"optional" json:"diskEncryptionKeyRaw" yaml:"diskEncryptionKeyRaw"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/compute_instance_from_template#disk_encryption_key_sha256 ComputeInstanceFromTemplate#disk_encryption_key_sha256}.
-	DiskEncryptionKeySha256 *string `field:"optional" json:"diskEncryptionKeySha256" yaml:"diskEncryptionKeySha256"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/compute_instance_from_template#kms_key_self_link ComputeInstanceFromTemplate#kms_key_self_link}.
+	// The self_link of the encryption key that is stored in Google Cloud KMS to encrypt this disk.
+	//
+	// Only one of kms_key_self_link and disk_encryption_key_raw may be set.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/compute_instance_from_template#kms_key_self_link ComputeInstanceFromTemplate#kms_key_self_link}
 	KmsKeySelfLink *string `field:"optional" json:"kmsKeySelfLink" yaml:"kmsKeySelfLink"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/compute_instance_from_template#mode ComputeInstanceFromTemplate#mode}.
+	// Read/write mode for the disk. One of "READ_ONLY" or "READ_WRITE".
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/compute_instance_from_template#mode ComputeInstanceFromTemplate#mode}
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/compute_instance_from_template#source ComputeInstanceFromTemplate#source}.
-	Source *string `field:"optional" json:"source" yaml:"source"`
 }
 

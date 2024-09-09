@@ -147,10 +147,6 @@ func (j *jsiiProxy_Project) validateSetProvisionersParameters(val *[]interface{}
 	return nil
 }
 
-func (j *jsiiProxy_Project) validateSetSkipDeleteParameters(val interface{}) error {
-	return nil
-}
-
 func validateNewProjectParameters(scope constructs.Construct, id *string, config *ProjectConfig) error {
 	return nil
 }

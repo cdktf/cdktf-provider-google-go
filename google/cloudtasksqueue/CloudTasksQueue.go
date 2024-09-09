@@ -5,14 +5,14 @@ package cloudtasksqueue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/cloudtasksqueue/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/cloudtasksqueue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/cloud_tasks_queue google_cloud_tasks_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/cloud_tasks_queue google_cloud_tasks_queue}.
 type CloudTasksQueue interface {
 	cdktf.TerraformResource
 	AppEngineRoutingOverride() CloudTasksQueueAppEngineRoutingOverrideOutputReference
@@ -41,6 +41,8 @@ type CloudTasksQueue interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HttpTarget() CloudTasksQueueHttpTargetOutputReference
+	HttpTargetInput() *CloudTasksQueueHttpTarget
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -127,11 +129,13 @@ type CloudTasksQueue interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAppEngineRoutingOverride(value *CloudTasksQueueAppEngineRoutingOverride)
+	PutHttpTarget(value *CloudTasksQueueHttpTarget)
 	PutRateLimits(value *CloudTasksQueueRateLimits)
 	PutRetryConfig(value *CloudTasksQueueRetryConfig)
 	PutStackdriverLoggingConfig(value *CloudTasksQueueStackdriverLoggingConfig)
 	PutTimeouts(value *CloudTasksQueueTimeouts)
 	ResetAppEngineRoutingOverride()
+	ResetHttpTarget()
 	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -255,6 +259,26 @@ func (j *jsiiProxy_CloudTasksQueue) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudTasksQueue) HttpTarget() CloudTasksQueueHttpTargetOutputReference {
+	var returns CloudTasksQueueHttpTargetOutputReference
+	_jsii_.Get(
+		j,
+		"httpTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudTasksQueue) HttpTargetInput() *CloudTasksQueueHttpTarget {
+	var returns *CloudTasksQueueHttpTarget
+	_jsii_.Get(
+		j,
+		"httpTargetInput",
 		&returns,
 	)
 	return returns
@@ -501,7 +525,7 @@ func (j *jsiiProxy_CloudTasksQueue) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/cloud_tasks_queue google_cloud_tasks_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/cloud_tasks_queue google_cloud_tasks_queue} Resource.
 func NewCloudTasksQueue(scope constructs.Construct, id *string, config *CloudTasksQueueConfig) CloudTasksQueue {
 	_init_.Initialize()
 
@@ -519,7 +543,7 @@ func NewCloudTasksQueue(scope constructs.Construct, id *string, config *CloudTas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/cloud_tasks_queue google_cloud_tasks_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/cloud_tasks_queue google_cloud_tasks_queue} Resource.
 func NewCloudTasksQueue_Override(c CloudTasksQueue, scope constructs.Construct, id *string, config *CloudTasksQueueConfig) {
 	_init_.Initialize()
 
@@ -1006,6 +1030,17 @@ func (c *jsiiProxy_CloudTasksQueue) PutAppEngineRoutingOverride(value *CloudTask
 	)
 }
 
+func (c *jsiiProxy_CloudTasksQueue) PutHttpTarget(value *CloudTasksQueueHttpTarget) {
+	if err := c.validatePutHttpTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putHttpTarget",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudTasksQueue) PutRateLimits(value *CloudTasksQueueRateLimits) {
 	if err := c.validatePutRateLimitsParameters(value); err != nil {
 		panic(err)
@@ -1054,6 +1089,14 @@ func (c *jsiiProxy_CloudTasksQueue) ResetAppEngineRoutingOverride() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAppEngineRoutingOverride",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudTasksQueue) ResetHttpTarget() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHttpTarget",
 		nil, // no parameters
 	)
 }

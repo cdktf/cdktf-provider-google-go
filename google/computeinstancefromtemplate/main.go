@@ -266,7 +266,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "diskEncryptionKeyRaw", GoGetter: "DiskEncryptionKeyRaw"},
 			_jsii_.MemberProperty{JsiiProperty: "diskEncryptionKeyRawInput", GoGetter: "DiskEncryptionKeyRawInput"},
 			_jsii_.MemberProperty{JsiiProperty: "diskEncryptionKeySha256", GoGetter: "DiskEncryptionKeySha256"},
-			_jsii_.MemberProperty{JsiiProperty: "diskEncryptionKeySha256Input", GoGetter: "DiskEncryptionKeySha256Input"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -286,10 +285,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeviceName", GoMethod: "ResetDeviceName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskEncryptionKeyRaw", GoMethod: "ResetDiskEncryptionKeyRaw"},
-			_jsii_.MemberMethod{JsiiMethod: "resetDiskEncryptionKeySha256", GoMethod: "ResetDiskEncryptionKeySha256"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeySelfLink", GoMethod: "ResetKmsKeySelfLink"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMode", GoMethod: "ResetMode"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSource", GoMethod: "ResetSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "source", GoGetter: "Source"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceInput", GoGetter: "SourceInput"},
@@ -520,8 +517,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCount", GoMethod: "ResetCount"},
-			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -655,7 +650,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ipCidrRange", GoGetter: "IpCidrRange"},
 			_jsii_.MemberProperty{JsiiProperty: "ipCidrRangeInput", GoGetter: "IpCidrRangeInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetIpCidrRange", GoMethod: "ResetIpCidrRange"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubnetworkRangeName", GoMethod: "ResetSubnetworkRangeName"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "subnetworkRangeName", GoGetter: "SubnetworkRangeName"},
@@ -1303,7 +1297,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeviceName", GoMethod: "ResetDeviceName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetInterface", GoMethod: "ResetInterface"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSize", GoMethod: "ResetSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "size", GoGetter: "Size"},
@@ -1321,28 +1314,6 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateServiceAccount",
 		reflect.TypeOf((*ComputeInstanceFromTemplateServiceAccount)(nil)).Elem(),
-	)
-	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateServiceAccountList",
-		reflect.TypeOf((*ComputeInstanceFromTemplateServiceAccountList)(nil)).Elem(),
-		[]_jsii_.Member{
-			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
-			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
-			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
-			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
-			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
-			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
-			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
-			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
-		},
-		func() interface{} {
-			j := jsiiProxy_ComputeInstanceFromTemplateServiceAccountList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
-			return &j
-		},
 	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateServiceAccountOutputReference",
@@ -1368,7 +1339,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEmail", GoMethod: "ResetEmail"},
-			_jsii_.MemberMethod{JsiiMethod: "resetScopes", GoMethod: "ResetScopes"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "scopes", GoGetter: "Scopes"},
 			_jsii_.MemberProperty{JsiiProperty: "scopesInput", GoGetter: "ScopesInput"},

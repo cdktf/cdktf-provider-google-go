@@ -119,7 +119,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutScratchDiskParameters
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutServiceAccountParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutServiceAccountParameters(value *ComputeInstanceFromTemplateServiceAccount) error {
 	return nil
 }
 

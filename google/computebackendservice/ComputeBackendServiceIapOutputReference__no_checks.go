@@ -59,6 +59,10 @@ func (j *jsiiProxy_ComputeBackendServiceIapOutputReference) validateSetComplexOb
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendServiceIapOutputReference) validateSetEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendServiceIapOutputReference) validateSetInternalValueParameters(val *ComputeBackendServiceIap) error {
 	return nil
 }

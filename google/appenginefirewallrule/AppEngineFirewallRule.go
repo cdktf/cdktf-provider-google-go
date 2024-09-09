@@ -5,14 +5,14 @@ package appenginefirewallrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/appenginefirewallrule/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/appenginefirewallrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/app_engine_firewall_rule google_app_engine_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/app_engine_firewall_rule google_app_engine_firewall_rule}.
 type AppEngineFirewallRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -452,7 +452,7 @@ func (j *jsiiProxy_AppEngineFirewallRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/app_engine_firewall_rule google_app_engine_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/app_engine_firewall_rule google_app_engine_firewall_rule} Resource.
 func NewAppEngineFirewallRule(scope constructs.Construct, id *string, config *AppEngineFirewallRuleConfig) AppEngineFirewallRule {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewAppEngineFirewallRule(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/app_engine_firewall_rule google_app_engine_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/app_engine_firewall_rule google_app_engine_firewall_rule} Resource.
 func NewAppEngineFirewallRule_Override(a AppEngineFirewallRule, scope constructs.Construct, id *string, config *AppEngineFirewallRuleConfig) {
 	_init_.Initialize()
 

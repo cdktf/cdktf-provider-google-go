@@ -5,9 +5,9 @@ package computeinstancefromtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/computeinstancefromtemplate/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/computeinstancefromtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,8 +35,6 @@ type ComputeInstanceFromTemplateAttachedDiskOutputReference interface {
 	SetDiskEncryptionKeyRaw(val *string)
 	DiskEncryptionKeyRawInput() *string
 	DiskEncryptionKeySha256() *string
-	SetDiskEncryptionKeySha256(val *string)
-	DiskEncryptionKeySha256Input() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -84,10 +82,8 @@ type ComputeInstanceFromTemplateAttachedDiskOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDeviceName()
 	ResetDiskEncryptionKeyRaw()
-	ResetDiskEncryptionKeySha256()
 	ResetKmsKeySelfLink()
 	ResetMode()
-	ResetSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -178,16 +174,6 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) DiskE
 	_jsii_.Get(
 		j,
 		"diskEncryptionKeySha256",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) DiskEncryptionKeySha256Input() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"diskEncryptionKeySha256Input",
 		&returns,
 	)
 	return returns
@@ -361,17 +347,6 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference)SetDis
 	_jsii_.Set(
 		j,
 		"diskEncryptionKeyRaw",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference)SetDiskEncryptionKeySha256(val *string) {
-	if err := j.validateSetDiskEncryptionKeySha256Parameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"diskEncryptionKeySha256",
 		val,
 	)
 }
@@ -644,14 +619,6 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) Reset
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) ResetDiskEncryptionKeySha256() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetDiskEncryptionKeySha256",
-		nil, // no parameters
-	)
-}
-
 func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) ResetKmsKeySelfLink() {
 	_jsii_.InvokeVoid(
 		c,
@@ -664,14 +631,6 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) Reset
 	_jsii_.InvokeVoid(
 		c,
 		"resetMode",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) ResetSource() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetSource",
 		nil, // no parameters
 	)
 }

@@ -7,7 +7,7 @@ package datalosspreventiondeidentifytemplate
 type DataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformations struct {
 	// transformations block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/data_loss_prevention_deidentify_template#transformations DataLossPreventionDeidentifyTemplate#transformations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/data_loss_prevention_deidentify_template#transformations DataLossPreventionDeidentifyTemplate#transformations}
 	Transformations interface{} `field:"required" json:"transformations" yaml:"transformations"`
 }
 

@@ -5,14 +5,14 @@ package alloydbcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/alloydbcluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/alloydbcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/alloydb_cluster google_alloydb_cluster}.
 type AlloydbCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -90,11 +90,8 @@ type AlloydbCluster interface {
 	MaintenanceUpdatePolicyInput() *AlloydbClusterMaintenanceUpdatePolicy
 	MigrationSource() AlloydbClusterMigrationSourceList
 	Name() *string
-	Network() *string
-	SetNetwork(val *string)
 	NetworkConfig() AlloydbClusterNetworkConfigOutputReference
 	NetworkConfigInput() *AlloydbClusterNetworkConfig
-	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -120,6 +117,9 @@ type AlloydbCluster interface {
 	SecondaryConfig() AlloydbClusterSecondaryConfigOutputReference
 	SecondaryConfigInput() *AlloydbClusterSecondaryConfig
 	State() *string
+	SubscriptionType() *string
+	SetSubscriptionType(val *string)
+	SubscriptionTypeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -129,6 +129,7 @@ type AlloydbCluster interface {
 	TerraformResourceType() *string
 	Timeouts() AlloydbClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TrialMetadata() AlloydbClusterTrialMetadataList
 	Uid() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -197,7 +198,6 @@ type AlloydbCluster interface {
 	ResetInitialUser()
 	ResetLabels()
 	ResetMaintenanceUpdatePolicy()
-	ResetNetwork()
 	ResetNetworkConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -207,6 +207,7 @@ type AlloydbCluster interface {
 	ResetRestoreBackupSource()
 	ResetRestoreContinuousBackupSource()
 	ResetSecondaryConfig()
+	ResetSubscriptionType()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -686,16 +687,6 @@ func (j *jsiiProxy_AlloydbCluster) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbCluster) Network() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"network",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AlloydbCluster) NetworkConfig() AlloydbClusterNetworkConfigOutputReference {
 	var returns AlloydbClusterNetworkConfigOutputReference
 	_jsii_.Get(
@@ -711,16 +702,6 @@ func (j *jsiiProxy_AlloydbCluster) NetworkConfigInput() *AlloydbClusterNetworkCo
 	_jsii_.Get(
 		j,
 		"networkConfigInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AlloydbCluster) NetworkInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"networkInput",
 		&returns,
 	)
 	return returns
@@ -886,6 +867,26 @@ func (j *jsiiProxy_AlloydbCluster) State() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbCluster) SubscriptionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subscriptionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbCluster) SubscriptionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subscriptionTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbCluster) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -946,6 +947,16 @@ func (j *jsiiProxy_AlloydbCluster) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AlloydbCluster) TrialMetadata() AlloydbClusterTrialMetadataList {
+	var returns AlloydbClusterTrialMetadataList
+	_jsii_.Get(
+		j,
+		"trialMetadata",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlloydbCluster) Uid() *string {
 	var returns *string
 	_jsii_.Get(
@@ -957,7 +968,7 @@ func (j *jsiiProxy_AlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbClusterConfig) AlloydbCluster {
 	_init_.Initialize()
 
@@ -975,7 +986,7 @@ func NewAlloydbCluster(scope constructs.Construct, id *string, config *AlloydbCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/alloydb_cluster google_alloydb_cluster} Resource.
 func NewAlloydbCluster_Override(a AlloydbCluster, scope constructs.Construct, id *string, config *AlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1145,17 +1156,6 @@ func (j *jsiiProxy_AlloydbCluster)SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AlloydbCluster)SetNetwork(val *string) {
-	if err := j.validateSetNetworkParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"network",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AlloydbCluster)SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
@@ -1182,6 +1182,17 @@ func (j *jsiiProxy_AlloydbCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlloydbCluster)SetSubscriptionType(val *string) {
+	if err := j.validateSetSubscriptionTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subscriptionType",
 		val,
 	)
 }
@@ -1764,14 +1775,6 @@ func (a *jsiiProxy_AlloydbCluster) ResetMaintenanceUpdatePolicy() {
 	)
 }
 
-func (a *jsiiProxy_AlloydbCluster) ResetNetwork() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetNetwork",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AlloydbCluster) ResetNetworkConfig() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1824,6 +1827,14 @@ func (a *jsiiProxy_AlloydbCluster) ResetSecondaryConfig() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSecondaryConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbCluster) ResetSubscriptionType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSubscriptionType",
 		nil, // no parameters
 	)
 }

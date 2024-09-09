@@ -5,14 +5,14 @@ package datagooglecontainerazureversions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/datagooglecontainerazureversions/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglecontainerazureversions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/container_azure_versions google_container_azure_versions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/container_azure_versions google_container_azure_versions}.
 type DataGoogleContainerAzureVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DataGoogleContainerAzureVersions) ValidVersions() *[]*string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/container_azure_versions google_container_azure_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/container_azure_versions google_container_azure_versions} Data Source.
 func NewDataGoogleContainerAzureVersions(scope constructs.Construct, id *string, config *DataGoogleContainerAzureVersionsConfig) DataGoogleContainerAzureVersions {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewDataGoogleContainerAzureVersions(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/container_azure_versions google_container_azure_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/container_azure_versions google_container_azure_versions} Data Source.
 func NewDataGoogleContainerAzureVersions_Override(d DataGoogleContainerAzureVersions, scope constructs.Construct, id *string, config *DataGoogleContainerAzureVersionsConfig) {
 	_init_.Initialize()
 

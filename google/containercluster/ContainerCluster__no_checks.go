@@ -191,6 +191,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutResourceUsageExportConfigParamet
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutSecretManagerConfigParameters(value *ContainerClusterSecretManagerConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutSecurityPostureConfigParameters(value *ContainerClusterSecurityPostureConfig) error {
 	return nil
 }

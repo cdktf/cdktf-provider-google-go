@@ -5,14 +5,14 @@ package accesscontextmanagerserviceperimeterdryrunresource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/accesscontextmanagerserviceperimeterdryrunresource/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/accesscontextmanagerserviceperimeterdryrunresource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/access_context_manager_service_perimeter_dry_run_resource google_access_context_manager_service_perimeter_dry_run_resource}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource google_access_context_manager_service_perimeter_dry_run_resource}.
 type AccessContextManagerServicePerimeterDryRunResource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunResource) TimeoutsI
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/access_context_manager_service_perimeter_dry_run_resource google_access_context_manager_service_perimeter_dry_run_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource google_access_context_manager_service_perimeter_dry_run_resource} Resource.
 func NewAccessContextManagerServicePerimeterDryRunResource(scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterDryRunResourceConfig) AccessContextManagerServicePerimeterDryRunResource {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewAccessContextManagerServicePerimeterDryRunResource(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/access_context_manager_service_perimeter_dry_run_resource google_access_context_manager_service_perimeter_dry_run_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/access_context_manager_service_perimeter_dry_run_resource google_access_context_manager_service_perimeter_dry_run_resource} Resource.
 func NewAccessContextManagerServicePerimeterDryRunResource_Override(a AccessContextManagerServicePerimeterDryRunResource, scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterDryRunResourceConfig) {
 	_init_.Initialize()
 

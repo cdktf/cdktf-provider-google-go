@@ -9,7 +9,7 @@ type ComputeSecurityPolicyRuleMatchExprA struct {
 	//
 	// The application context of the containing message determines which well-known feature set of CEL is supported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/compute_security_policy_rule#expression ComputeSecurityPolicyRuleA#expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/compute_security_policy_rule#expression ComputeSecurityPolicyRuleA#expression}
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
 }
 

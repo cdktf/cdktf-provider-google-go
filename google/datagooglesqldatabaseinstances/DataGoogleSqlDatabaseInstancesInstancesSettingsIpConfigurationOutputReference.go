@@ -5,9 +5,9 @@ package datagooglesqldatabaseinstances
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/datagooglesqldatabaseinstances/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglesqldatabaseinstances/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -38,7 +38,6 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationOutputReferen
 	Ipv4Enabled() cdktf.IResolvable
 	PrivateNetwork() *string
 	PscConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigList
-	RequireSsl() cdktf.IResolvable
 	ServerCaMode() *string
 	SslMode() *string
 	// Experimental.
@@ -193,16 +192,6 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfiguratio
 	_jsii_.Get(
 		j,
 		"pscConfig",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationOutputReference) RequireSsl() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"requireSsl",
 		&returns,
 	)
 	return returns

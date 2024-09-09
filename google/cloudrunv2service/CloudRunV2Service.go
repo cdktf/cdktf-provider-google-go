@@ -5,14 +5,14 @@ package cloudrunv2service
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/cloudrunv2service/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/cloudrunv2service/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
 type CloudRunV2Service interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -45,6 +45,9 @@ type CloudRunV2Service interface {
 	SetCustomAudiences(val *[]*string)
 	CustomAudiencesInput() *[]*string
 	DeleteTime() *string
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -177,6 +180,7 @@ type CloudRunV2Service interface {
 	ResetClient()
 	ResetClientVersion()
 	ResetCustomAudiences()
+	ResetDeletionProtection()
 	ResetDescription()
 	ResetId()
 	ResetIngress()
@@ -381,6 +385,26 @@ func (j *jsiiProxy_CloudRunV2Service) DeleteTime() *string {
 	_jsii_.Get(
 		j,
 		"deleteTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -887,7 +911,7 @@ func (j *jsiiProxy_CloudRunV2Service) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudRunV2ServiceConfig) CloudRunV2Service {
 	_init_.Initialize()
 
@@ -905,7 +929,7 @@ func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewCloudRunV2Service_Override(c CloudRunV2Service, scope constructs.Construct, id *string, config *CloudRunV2ServiceConfig) {
 	_init_.Initialize()
 
@@ -978,6 +1002,17 @@ func (j *jsiiProxy_CloudRunV2Service)SetCustomAudiences(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"customAudiences",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2Service)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
 		val,
 	)
 }
@@ -1549,6 +1584,14 @@ func (c *jsiiProxy_CloudRunV2Service) ResetCustomAudiences() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetCustomAudiences",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2Service) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeletionProtection",
 		nil, // no parameters
 	)
 }

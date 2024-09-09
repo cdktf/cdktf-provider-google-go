@@ -5,14 +5,14 @@ package computesubnetworkiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/computesubnetworkiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/computesubnetworkiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/compute_subnetwork_iam_binding google_compute_subnetwork_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/compute_subnetwork_iam_binding google_compute_subnetwork_iam_binding}.
 type ComputeSubnetworkIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_ComputeSubnetworkIamBinding) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/compute_subnetwork_iam_binding google_compute_subnetwork_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/compute_subnetwork_iam_binding google_compute_subnetwork_iam_binding} Resource.
 func NewComputeSubnetworkIamBinding(scope constructs.Construct, id *string, config *ComputeSubnetworkIamBindingConfig) ComputeSubnetworkIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewComputeSubnetworkIamBinding(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/compute_subnetwork_iam_binding google_compute_subnetwork_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/compute_subnetwork_iam_binding google_compute_subnetwork_iam_binding} Resource.
 func NewComputeSubnetworkIamBinding_Override(c ComputeSubnetworkIamBinding, scope constructs.Construct, id *string, config *ComputeSubnetworkIamBindingConfig) {
 	_init_.Initialize()
 

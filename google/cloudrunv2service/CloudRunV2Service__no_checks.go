@@ -131,6 +131,10 @@ func (j *jsiiProxy_CloudRunV2Service) validateSetCustomAudiencesParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunV2Service) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunV2Service) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

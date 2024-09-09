@@ -5,14 +5,14 @@ package notebooksruntimeiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/notebooksruntimeiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/notebooksruntimeiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy}.
 type NotebooksRuntimeIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_NotebooksRuntimeIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy} Resource.
 func NewNotebooksRuntimeIamPolicy(scope constructs.Construct, id *string, config *NotebooksRuntimeIamPolicyConfig) NotebooksRuntimeIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewNotebooksRuntimeIamPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy} Resource.
 func NewNotebooksRuntimeIamPolicy_Override(n NotebooksRuntimeIamPolicy, scope constructs.Construct, id *string, config *NotebooksRuntimeIamPolicyConfig) {
 	_init_.Initialize()
 

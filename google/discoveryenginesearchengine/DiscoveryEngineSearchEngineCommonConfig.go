@@ -9,7 +9,7 @@ type DiscoveryEngineSearchEngineCommonConfig struct {
 	//
 	// Setting this may help improve LLM related features.cd
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/discovery_engine_search_engine#company_name DiscoveryEngineSearchEngine#company_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/discovery_engine_search_engine#company_name DiscoveryEngineSearchEngine#company_name}
 	CompanyName *string `field:"optional" json:"companyName" yaml:"companyName"`
 }
 

@@ -5,9 +5,9 @@ package computesubnetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/computesubnetwork/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/computesubnetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -38,6 +38,9 @@ type ComputeSubnetworkSecondaryIpRangeOutputReference interface {
 	RangeName() *string
 	SetRangeName(val *string)
 	RangeNameInput() *string
+	ReservedInternalRange() *string
+	SetReservedInternalRange(val *string)
+	ReservedInternalRangeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,7 +74,7 @@ type ComputeSubnetworkSecondaryIpRangeOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIpCidrRange()
-	ResetRangeName()
+	ResetReservedInternalRange()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -177,6 +180,26 @@ func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) RangeNameIn
 	return returns
 }
 
+func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) ReservedInternalRange() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reservedInternalRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) ReservedInternalRangeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reservedInternalRangeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -276,6 +299,17 @@ func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference)SetRangeName
 	_jsii_.Set(
 		j,
 		"rangeName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference)SetReservedInternalRange(val *string) {
+	if err := j.validateSetReservedInternalRangeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"reservedInternalRange",
 		val,
 	)
 }
@@ -496,10 +530,10 @@ func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) ResetIpCidr
 	)
 }
 
-func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) ResetRangeName() {
+func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) ResetReservedInternalRange() {
 	_jsii_.InvokeVoid(
 		c,
-		"resetRangeName",
+		"resetReservedInternalRange",
 		nil, // no parameters
 	)
 }

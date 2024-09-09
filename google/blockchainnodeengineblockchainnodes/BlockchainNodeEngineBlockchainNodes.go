@@ -5,14 +5,14 @@ package blockchainnodeengineblockchainnodes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/blockchainnodeengineblockchainnodes/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/blockchainnodeengineblockchainnodes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/blockchain_node_engine_blockchain_nodes google_blockchain_node_engine_blockchain_nodes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/blockchain_node_engine_blockchain_nodes google_blockchain_node_engine_blockchain_nodes}.
 type BlockchainNodeEngineBlockchainNodes interface {
 	cdktf.TerraformResource
 	BlockchainNodeId() *string
@@ -542,7 +542,7 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodes) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/blockchain_node_engine_blockchain_nodes google_blockchain_node_engine_blockchain_nodes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/blockchain_node_engine_blockchain_nodes google_blockchain_node_engine_blockchain_nodes} Resource.
 func NewBlockchainNodeEngineBlockchainNodes(scope constructs.Construct, id *string, config *BlockchainNodeEngineBlockchainNodesConfig) BlockchainNodeEngineBlockchainNodes {
 	_init_.Initialize()
 
@@ -560,7 +560,7 @@ func NewBlockchainNodeEngineBlockchainNodes(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/blockchain_node_engine_blockchain_nodes google_blockchain_node_engine_blockchain_nodes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/blockchain_node_engine_blockchain_nodes google_blockchain_node_engine_blockchain_nodes} Resource.
 func NewBlockchainNodeEngineBlockchainNodes_Override(b BlockchainNodeEngineBlockchainNodes, scope constructs.Construct, id *string, config *BlockchainNodeEngineBlockchainNodesConfig) {
 	_init_.Initialize()
 

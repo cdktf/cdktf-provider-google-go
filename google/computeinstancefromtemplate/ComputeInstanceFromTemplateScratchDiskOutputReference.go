@@ -5,9 +5,9 @@ package computeinstancefromtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/computeinstancefromtemplate/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/computeinstancefromtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -74,7 +74,6 @@ type ComputeInstanceFromTemplateScratchDiskOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDeviceName()
-	ResetInterface()
 	ResetSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -527,14 +526,6 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) ResetD
 	_jsii_.InvokeVoid(
 		c,
 		"resetDeviceName",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) ResetInterface() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetInterface",
 		nil, // no parameters
 	)
 }

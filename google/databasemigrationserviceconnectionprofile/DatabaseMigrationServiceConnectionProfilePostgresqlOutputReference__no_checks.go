@@ -55,6 +55,10 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) validateSetAlloydbClusterIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) validateSetCloudSqlIdParameters(val *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package netappstoragepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/netappstoragepool/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/netappstoragepool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/netapp_storage_pool google_netapp_storage_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/netapp_storage_pool google_netapp_storage_pool}.
 type NetappStoragePool interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
@@ -648,7 +648,7 @@ func (j *jsiiProxy_NetappStoragePool) VolumeCount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewNetappStoragePool(scope constructs.Construct, id *string, config *NetappStoragePoolConfig) NetappStoragePool {
 	_init_.Initialize()
 
@@ -666,7 +666,7 @@ func NewNetappStoragePool(scope constructs.Construct, id *string, config *Netapp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewNetappStoragePool_Override(n NetappStoragePool, scope constructs.Construct, id *string, config *NetappStoragePoolConfig) {
 	_init_.Initialize()
 

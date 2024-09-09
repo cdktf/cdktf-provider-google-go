@@ -5,9 +5,9 @@ package databasemigrationserviceconnectionprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/databasemigrationserviceconnectionprofile/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/databasemigrationserviceconnectionprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -84,7 +84,11 @@ type DatabaseMigrationServiceConnectionProfileMysqlOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutSsl(value *DatabaseMigrationServiceConnectionProfileMysqlSsl)
 	ResetCloudSqlId()
+	ResetHost()
+	ResetPassword()
+	ResetPort()
 	ResetSsl()
+	ResetUsername()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -643,10 +647,42 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlOutputReference
 	)
 }
 
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlOutputReference) ResetHost() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHost",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlOutputReference) ResetPassword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPort",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlOutputReference) ResetSsl() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSsl",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlOutputReference) ResetUsername() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUsername",
 		nil, // no parameters
 	)
 }

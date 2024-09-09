@@ -5,9 +5,9 @@ package edgenetworksubnet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/edgenetworksubnet/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/edgenetworksubnet/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -46,6 +46,9 @@ type EdgenetworkSubnetTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type EdgenetworkSubnetTimeoutsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_EdgenetworkSubnetTimeoutsOutputReference) TerraformResource()
 	return returns
 }
 
+func (j *jsiiProxy_EdgenetworkSubnetTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EdgenetworkSubnetTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewEdgenetworkSubnetTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EdgenetworkSubnetTimeoutsOutputReference {
 	_init_.Initialize()
@@ -298,6 +322,17 @@ func (j *jsiiProxy_EdgenetworkSubnetTimeoutsOutputReference)SetTerraformResource
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EdgenetworkSubnetTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (e *jsiiProxy_EdgenetworkSubnetTimeoutsOutputReference) ResetDelete() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetDelete",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EdgenetworkSubnetTimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetUpdate",
 		nil, // no parameters
 	)
 }

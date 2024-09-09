@@ -5,9 +5,9 @@ package containercluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/containercluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/containercluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,8 +33,8 @@ type ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConf
 	GpuDriverVersion() *string
 	SetGpuDriverVersion(val *string)
 	GpuDriverVersionInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig
+	SetInternalValue(val *ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +67,6 @@ type ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetGpuDriverVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -143,8 +142,8 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverIn
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) InternalValue() *ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig {
+	var returns *ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -174,29 +173,29 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverIn
 }
 
 
-func NewContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference {
+func NewContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference_Override(c ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference_Override(c ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
 }
@@ -234,7 +233,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverIn
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference)SetInternalValue(val *ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -451,14 +450,6 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverIn
 	)
 
 	return returns
-}
-
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) ResetGpuDriverVersion() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetGpuDriverVersion",
-		nil, // no parameters
-	)
 }
 
 func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

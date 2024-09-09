@@ -5,9 +5,9 @@ package datagooglecontainercluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/datagooglecontainercluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglecontainercluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -34,7 +34,6 @@ type DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConf
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig
 	SetInternalValue(val *DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig)
-	RelayMode() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -147,16 +146,6 @@ func (j *jsiiProxy_DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObs
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) RelayMode() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"relayMode",
 		&returns,
 	)
 	return returns

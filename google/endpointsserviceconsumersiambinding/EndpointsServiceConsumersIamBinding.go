@@ -5,14 +5,14 @@ package endpointsserviceconsumersiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/endpointsserviceconsumersiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/endpointsserviceconsumersiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/endpoints_service_consumers_iam_binding google_endpoints_service_consumers_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/endpoints_service_consumers_iam_binding google_endpoints_service_consumers_iam_binding}.
 type EndpointsServiceConsumersIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_EndpointsServiceConsumersIamBinding) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/endpoints_service_consumers_iam_binding google_endpoints_service_consumers_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/endpoints_service_consumers_iam_binding google_endpoints_service_consumers_iam_binding} Resource.
 func NewEndpointsServiceConsumersIamBinding(scope constructs.Construct, id *string, config *EndpointsServiceConsumersIamBindingConfig) EndpointsServiceConsumersIamBinding {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewEndpointsServiceConsumersIamBinding(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/endpoints_service_consumers_iam_binding google_endpoints_service_consumers_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/endpoints_service_consumers_iam_binding google_endpoints_service_consumers_iam_binding} Resource.
 func NewEndpointsServiceConsumersIamBinding_Override(e EndpointsServiceConsumersIamBinding, scope constructs.Construct, id *string, config *EndpointsServiceConsumersIamBindingConfig) {
 	_init_.Initialize()
 

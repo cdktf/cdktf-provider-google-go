@@ -123,10 +123,6 @@ func validateBigqueryTable_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTable) validateSetAllowResourceTagsOnDeletionParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_BigqueryTable) validateSetClusteringParameters(val *[]*string) error {
 	return nil
 }

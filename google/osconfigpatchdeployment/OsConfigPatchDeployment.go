@@ -5,14 +5,14 @@ package osconfigpatchdeployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/osconfigpatchdeployment/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/osconfigpatchdeployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/os_config_patch_deployment google_os_config_patch_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/os_config_patch_deployment google_os_config_patch_deployment}.
 type OsConfigPatchDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -592,7 +592,7 @@ func (j *jsiiProxy_OsConfigPatchDeployment) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/os_config_patch_deployment google_os_config_patch_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/os_config_patch_deployment google_os_config_patch_deployment} Resource.
 func NewOsConfigPatchDeployment(scope constructs.Construct, id *string, config *OsConfigPatchDeploymentConfig) OsConfigPatchDeployment {
 	_init_.Initialize()
 
@@ -610,7 +610,7 @@ func NewOsConfigPatchDeployment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/os_config_patch_deployment google_os_config_patch_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/os_config_patch_deployment google_os_config_patch_deployment} Resource.
 func NewOsConfigPatchDeployment_Override(o OsConfigPatchDeployment, scope constructs.Construct, id *string, config *OsConfigPatchDeploymentConfig) {
 	_init_.Initialize()
 

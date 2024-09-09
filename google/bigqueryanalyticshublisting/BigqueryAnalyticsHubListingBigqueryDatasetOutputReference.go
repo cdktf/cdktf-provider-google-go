@@ -5,9 +5,9 @@ package bigqueryanalyticshublisting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/bigqueryanalyticshublisting/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/bigqueryanalyticshublisting/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,6 +35,8 @@ type BigqueryAnalyticsHubListingBigqueryDatasetOutputReference interface {
 	Fqn() *string
 	InternalValue() *BigqueryAnalyticsHubListingBigqueryDataset
 	SetInternalValue(val *BigqueryAnalyticsHubListingBigqueryDataset)
+	SelectedResources() BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesList
+	SelectedResourcesInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +69,8 @@ type BigqueryAnalyticsHubListingBigqueryDatasetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSelectedResources(value interface{})
+	ResetSelectedResources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +151,26 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetOutputReference) SelectedResources() BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesList {
+	var returns BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesList
+	_jsii_.Get(
+		j,
+		"selectedResources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetOutputReference) SelectedResourcesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"selectedResourcesInput",
 		&returns,
 	)
 	return returns
@@ -450,6 +474,25 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetOutputReference) In
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetOutputReference) PutSelectedResources(value interface{}) {
+	if err := b.validatePutSelectedResourcesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putSelectedResources",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetOutputReference) ResetSelectedResources() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSelectedResources",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

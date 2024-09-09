@@ -67,10 +67,6 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetDiskEncryptionKeySha256Parameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package kmscryptokeyversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/kmscryptokeyversion/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/kmscryptokeyversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/kms_crypto_key_version google_kms_crypto_key_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version}.
 type KmsCryptoKeyVersion interface {
 	cdktf.TerraformResource
 	Algorithm() *string
@@ -460,7 +460,7 @@ func (j *jsiiProxy_KmsCryptoKeyVersion) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/kms_crypto_key_version google_kms_crypto_key_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version} Resource.
 func NewKmsCryptoKeyVersion(scope constructs.Construct, id *string, config *KmsCryptoKeyVersionConfig) KmsCryptoKeyVersion {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewKmsCryptoKeyVersion(scope constructs.Construct, id *string, config *KmsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/kms_crypto_key_version google_kms_crypto_key_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version} Resource.
 func NewKmsCryptoKeyVersion_Override(k KmsCryptoKeyVersion, scope constructs.Construct, id *string, config *KmsCryptoKeyVersionConfig) {
 	_init_.Initialize()
 

@@ -93,6 +93,17 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputRefere
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) validatePutChangeTablesParameters(value *DatastreamStreamSourceConfigSqlServerSourceConfigChangeTables) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) validatePutExcludeObjectsParameters(value *DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -105,6 +116,17 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputRefere
 }
 
 func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) validatePutIncludeObjectsParameters(value *DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference) validatePutTransactionLogsParameters(value *DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogs) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

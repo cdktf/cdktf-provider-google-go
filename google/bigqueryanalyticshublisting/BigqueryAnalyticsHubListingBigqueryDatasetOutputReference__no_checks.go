@@ -47,6 +47,10 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetOutputReference) va
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetOutputReference) validatePutSelectedResourcesParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

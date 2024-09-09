@@ -444,7 +444,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "matchesPrefix", GoGetter: "MatchesPrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "matchesStorageClass", GoGetter: "MatchesStorageClass"},
 			_jsii_.MemberProperty{JsiiProperty: "matchesSuffix", GoGetter: "MatchesSuffix"},
-			_jsii_.MemberProperty{JsiiProperty: "noAge", GoGetter: "NoAge"},
 			_jsii_.MemberProperty{JsiiProperty: "noncurrentTimeBefore", GoGetter: "NoncurrentTimeBefore"},
 			_jsii_.MemberProperty{JsiiProperty: "numNewerVersions", GoGetter: "NumNewerVersions"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

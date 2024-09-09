@@ -71,10 +71,6 @@ func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservability
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateSetRelayModeParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

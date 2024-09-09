@@ -5,14 +5,14 @@ package datagooglesecuresourcemanagerrepositoryiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/datagooglesecuresourcemanagerrepositoryiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglesecuresourcemanagerrepositoryiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy}.
 type DataGoogleSecureSourceManagerRepositoryIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy} Data Source.
 func NewDataGoogleSecureSourceManagerRepositoryIamPolicy(scope constructs.Construct, id *string, config *DataGoogleSecureSourceManagerRepositoryIamPolicyConfig) DataGoogleSecureSourceManagerRepositoryIamPolicy {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewDataGoogleSecureSourceManagerRepositoryIamPolicy(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy} Data Source.
 func NewDataGoogleSecureSourceManagerRepositoryIamPolicy_Override(d DataGoogleSecureSourceManagerRepositoryIamPolicy, scope constructs.Construct, id *string, config *DataGoogleSecureSourceManagerRepositoryIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package project
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/project/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/project/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/project google_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/project google_project}.
 type Project interface {
 	cdktf.TerraformResource
 	AutoCreateNetwork() interface{}
@@ -84,9 +84,6 @@ type Project interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	SkipDelete() interface{}
-	SetSkipDelete(val interface{})
-	SkipDeleteInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -150,7 +147,6 @@ type Project interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSkipDelete()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -500,26 +496,6 @@ func (j *jsiiProxy_Project) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Project) SkipDelete() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipDelete",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Project) SkipDeleteInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipDeleteInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Project) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -581,7 +557,7 @@ func (j *jsiiProxy_Project) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/project google_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/project google_project} Resource.
 func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) Project {
 	_init_.Initialize()
 
@@ -599,7 +575,7 @@ func NewProject(scope constructs.Construct, id *string, config *ProjectConfig) P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/project google_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/project google_project} Resource.
 func NewProject_Override(p Project, scope constructs.Construct, id *string, config *ProjectConfig) {
 	_init_.Initialize()
 
@@ -773,17 +749,6 @@ func (j *jsiiProxy_Project)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Project)SetSkipDelete(val interface{}) {
-	if err := j.validateSetSkipDeleteParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipDelete",
 		val,
 	)
 }
@@ -1212,14 +1177,6 @@ func (p *jsiiProxy_Project) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_Project) ResetSkipDelete() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetSkipDelete",
 		nil, // no parameters
 	)
 }

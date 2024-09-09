@@ -5,14 +5,14 @@ package cloudbuildv2connection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/cloudbuildv2connection/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/cloudbuildv2connection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection}.
 type Cloudbuildv2Connection interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -638,7 +638,7 @@ func (j *jsiiProxy_Cloudbuildv2Connection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
 func NewCloudbuildv2Connection(scope constructs.Construct, id *string, config *Cloudbuildv2ConnectionConfig) Cloudbuildv2Connection {
 	_init_.Initialize()
 
@@ -656,7 +656,7 @@ func NewCloudbuildv2Connection(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
 func NewCloudbuildv2Connection_Override(c Cloudbuildv2Connection, scope constructs.Construct, id *string, config *Cloudbuildv2ConnectionConfig) {
 	_init_.Initialize()
 

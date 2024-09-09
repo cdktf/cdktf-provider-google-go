@@ -5,14 +5,14 @@ package projectusageexportbucket
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/projectusageexportbucket/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/projectusageexportbucket/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/project_usage_export_bucket google_project_usage_export_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/project_usage_export_bucket google_project_usage_export_bucket}.
 type ProjectUsageExportBucket interface {
 	cdktf.TerraformResource
 	BucketName() *string
@@ -405,7 +405,7 @@ func (j *jsiiProxy_ProjectUsageExportBucket) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/project_usage_export_bucket google_project_usage_export_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/project_usage_export_bucket google_project_usage_export_bucket} Resource.
 func NewProjectUsageExportBucket(scope constructs.Construct, id *string, config *ProjectUsageExportBucketConfig) ProjectUsageExportBucket {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewProjectUsageExportBucket(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/project_usage_export_bucket google_project_usage_export_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/project_usage_export_bucket google_project_usage_export_bucket} Resource.
 func NewProjectUsageExportBucket_Override(p ProjectUsageExportBucket, scope constructs.Construct, id *string, config *ProjectUsageExportBucketConfig) {
 	_init_.Initialize()
 

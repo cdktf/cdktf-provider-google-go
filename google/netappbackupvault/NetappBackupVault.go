@@ -5,14 +5,14 @@ package netappbackupvault
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/netappbackupvault/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/netappbackupvault/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/netapp_backup_vault google_netapp_backup_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/netapp_backup_vault google_netapp_backup_vault}.
 type NetappBackupVault interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -496,7 +496,7 @@ func (j *jsiiProxy_NetappBackupVault) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/netapp_backup_vault google_netapp_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/netapp_backup_vault google_netapp_backup_vault} Resource.
 func NewNetappBackupVault(scope constructs.Construct, id *string, config *NetappBackupVaultConfig) NetappBackupVault {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewNetappBackupVault(scope constructs.Construct, id *string, config *Netapp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/netapp_backup_vault google_netapp_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/netapp_backup_vault google_netapp_backup_vault} Resource.
 func NewNetappBackupVault_Override(n NetappBackupVault, scope constructs.Construct, id *string, config *NetappBackupVaultConfig) {
 	_init_.Initialize()
 

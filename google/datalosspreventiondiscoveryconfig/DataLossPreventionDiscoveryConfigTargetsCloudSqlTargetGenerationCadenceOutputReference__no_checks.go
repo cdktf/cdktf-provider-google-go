@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerat
 	return nil
 }
 
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceOutputReference) validatePutInspectTemplateModifiedCadenceParameters(value *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceInspectTemplateModifiedCadence) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceOutputReference) validatePutSchemaModifiedCadenceParameters(value *DataLossPreventionDiscoveryConfigTargetsCloudSqlTargetGenerationCadenceSchemaModifiedCadence) error {
 	return nil
 }

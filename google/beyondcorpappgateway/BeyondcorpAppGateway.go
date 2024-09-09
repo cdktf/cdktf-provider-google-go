@@ -5,14 +5,14 @@ package beyondcorpappgateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/beyondcorpappgateway/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/beyondcorpappgateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/beyondcorp_app_gateway google_beyondcorp_app_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/beyondcorp_app_gateway google_beyondcorp_app_gateway}.
 type BeyondcorpAppGateway interface {
 	cdktf.TerraformResource
 	AllocatedConnections() BeyondcorpAppGatewayAllocatedConnectionsList
@@ -556,7 +556,7 @@ func (j *jsiiProxy_BeyondcorpAppGateway) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/beyondcorp_app_gateway google_beyondcorp_app_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/beyondcorp_app_gateway google_beyondcorp_app_gateway} Resource.
 func NewBeyondcorpAppGateway(scope constructs.Construct, id *string, config *BeyondcorpAppGatewayConfig) BeyondcorpAppGateway {
 	_init_.Initialize()
 
@@ -574,7 +574,7 @@ func NewBeyondcorpAppGateway(scope constructs.Construct, id *string, config *Bey
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/beyondcorp_app_gateway google_beyondcorp_app_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/beyondcorp_app_gateway google_beyondcorp_app_gateway} Resource.
 func NewBeyondcorpAppGateway_Override(b BeyondcorpAppGateway, scope constructs.Construct, id *string, config *BeyondcorpAppGatewayConfig) {
 	_init_.Initialize()
 

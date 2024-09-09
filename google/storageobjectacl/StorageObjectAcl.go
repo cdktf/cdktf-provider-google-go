@@ -5,14 +5,14 @@ package storageobjectacl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/storageobjectacl/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/storageobjectacl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/storage_object_acl google_storage_object_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/storage_object_acl google_storage_object_acl}.
 type StorageObjectAcl interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -404,7 +404,7 @@ func (j *jsiiProxy_StorageObjectAcl) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/storage_object_acl google_storage_object_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/storage_object_acl google_storage_object_acl} Resource.
 func NewStorageObjectAcl(scope constructs.Construct, id *string, config *StorageObjectAclConfig) StorageObjectAcl {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewStorageObjectAcl(scope constructs.Construct, id *string, config *Storage
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/storage_object_acl google_storage_object_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/storage_object_acl google_storage_object_acl} Resource.
 func NewStorageObjectAcl_Override(s StorageObjectAcl, scope constructs.Construct, id *string, config *StorageObjectAclConfig) {
 	_init_.Initialize()
 

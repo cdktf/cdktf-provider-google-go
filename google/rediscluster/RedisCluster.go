@@ -5,14 +5,14 @@ package rediscluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/rediscluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/rediscluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/redis_cluster google_redis_cluster}.
 type RedisCluster interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -31,6 +31,9 @@ type RedisCluster interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DeletionProtectionEnabled() interface{}
+	SetDeletionProtectionEnabled(val interface{})
+	DeletionProtectionEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -152,6 +155,7 @@ type RedisCluster interface {
 	PutTimeouts(value *RedisClusterTimeouts)
 	PutZoneDistributionConfig(value *RedisClusterZoneDistributionConfig)
 	ResetAuthorizationMode()
+	ResetDeletionProtectionEnabled()
 	ResetId()
 	ResetName()
 	ResetNodeType()
@@ -248,6 +252,26 @@ func (j *jsiiProxy_RedisCluster) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) DeletionProtectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) DeletionProtectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabledInput",
 		&returns,
 	)
 	return returns
@@ -684,7 +708,7 @@ func (j *jsiiProxy_RedisCluster) ZoneDistributionConfigInput() *RedisClusterZone
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster(scope constructs.Construct, id *string, config *RedisClusterConfig) RedisCluster {
 	_init_.Initialize()
 
@@ -702,7 +726,7 @@ func NewRedisCluster(scope constructs.Construct, id *string, config *RedisCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster_Override(r RedisCluster, scope constructs.Construct, id *string, config *RedisClusterConfig) {
 	_init_.Initialize()
 
@@ -742,6 +766,17 @@ func (j *jsiiProxy_RedisCluster)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedisCluster)SetDeletionProtectionEnabled(val interface{}) {
+	if err := j.validateSetDeletionProtectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtectionEnabled",
 		val,
 	)
 }
@@ -1281,6 +1316,14 @@ func (r *jsiiProxy_RedisCluster) ResetAuthorizationMode() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetAuthorizationMode",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) ResetDeletionProtectionEnabled() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDeletionProtectionEnabled",
 		nil, // no parameters
 	)
 }

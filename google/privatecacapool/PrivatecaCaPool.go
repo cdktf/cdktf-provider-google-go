@@ -5,14 +5,14 @@ package privatecacapool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/privatecacapool/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/privatecacapool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/privateca_ca_pool google_privateca_ca_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/privateca_ca_pool google_privateca_ca_pool}.
 type PrivatecaCaPool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -521,7 +521,7 @@ func (j *jsiiProxy_PrivatecaCaPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/privateca_ca_pool google_privateca_ca_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/privateca_ca_pool google_privateca_ca_pool} Resource.
 func NewPrivatecaCaPool(scope constructs.Construct, id *string, config *PrivatecaCaPoolConfig) PrivatecaCaPool {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewPrivatecaCaPool(scope constructs.Construct, id *string, config *Privatec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/privateca_ca_pool google_privateca_ca_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/privateca_ca_pool google_privateca_ca_pool} Resource.
 func NewPrivatecaCaPool_Override(p PrivatecaCaPool, scope constructs.Construct, id *string, config *PrivatecaCaPoolConfig) {
 	_init_.Initialize()
 

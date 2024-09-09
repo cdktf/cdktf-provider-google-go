@@ -47,6 +47,10 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigOutputReferen
 	return nil
 }
 
+func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) validatePutChunkingConfigParameters(value *DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) validatePutDefaultParsingConfigParameters(value *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package kmskeyringimportjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/kmskeyringimportjob/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/kmskeyringimportjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/kms_key_ring_import_job google_kms_key_ring_import_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/kms_key_ring_import_job google_kms_key_ring_import_job}.
 type KmsKeyRingImportJob interface {
 	cdktf.TerraformResource
 	Attestation() KmsKeyRingImportJobAttestationList
@@ -481,7 +481,7 @@ func (j *jsiiProxy_KmsKeyRingImportJob) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/kms_key_ring_import_job google_kms_key_ring_import_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/kms_key_ring_import_job google_kms_key_ring_import_job} Resource.
 func NewKmsKeyRingImportJob(scope constructs.Construct, id *string, config *KmsKeyRingImportJobConfig) KmsKeyRingImportJob {
 	_init_.Initialize()
 
@@ -499,7 +499,7 @@ func NewKmsKeyRingImportJob(scope constructs.Construct, id *string, config *KmsK
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/kms_key_ring_import_job google_kms_key_ring_import_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/kms_key_ring_import_job google_kms_key_ring_import_job} Resource.
 func NewKmsKeyRingImportJob_Override(k KmsKeyRingImportJob, scope constructs.Construct, id *string, config *KmsKeyRingImportJobConfig) {
 	_init_.Initialize()
 

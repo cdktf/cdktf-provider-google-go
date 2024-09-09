@@ -5,7 +5,9 @@ package containercluster
 
 
 type ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/container_cluster#gpu_driver_version ContainerCluster#gpu_driver_version}.
-	GpuDriverVersion *string `field:"optional" json:"gpuDriverVersion" yaml:"gpuDriverVersion"`
+	// Mode for how the GPU driver is installed.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/container_cluster#gpu_driver_version ContainerCluster#gpu_driver_version}
+	GpuDriverVersion *string `field:"required" json:"gpuDriverVersion" yaml:"gpuDriverVersion"`
 }
 

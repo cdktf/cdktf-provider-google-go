@@ -5,9 +5,9 @@ package datagooglestoragebucket
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/datagooglestoragebucket/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglestoragebucket/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -40,7 +40,6 @@ type DataGoogleStorageBucketLifecycleRuleConditionOutputReference interface {
 	MatchesPrefix() *[]*string
 	MatchesStorageClass() *[]*string
 	MatchesSuffix() *[]*string
-	NoAge() cdktf.IResolvable
 	NoncurrentTimeBefore() *string
 	NumNewerVersions() *float64
 	SendAgeIfZero() cdktf.IResolvable
@@ -220,16 +219,6 @@ func (j *jsiiProxy_DataGoogleStorageBucketLifecycleRuleConditionOutputReference)
 	_jsii_.Get(
 		j,
 		"matchesSuffix",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGoogleStorageBucketLifecycleRuleConditionOutputReference) NoAge() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"noAge",
 		&returns,
 	)
 	return returns

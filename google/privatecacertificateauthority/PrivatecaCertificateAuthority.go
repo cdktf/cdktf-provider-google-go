@@ -5,14 +5,14 @@ package privatecacertificateauthority
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/privatecacertificateauthority/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/privatecacertificateauthority/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/privateca_certificate_authority google_privateca_certificate_authority}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/privateca_certificate_authority google_privateca_certificate_authority}.
 type PrivatecaCertificateAuthority interface {
 	cdktf.TerraformResource
 	AccessUrls() PrivatecaCertificateAuthorityAccessUrlsList
@@ -801,7 +801,7 @@ func (j *jsiiProxy_PrivatecaCertificateAuthority) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/privateca_certificate_authority google_privateca_certificate_authority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/privateca_certificate_authority google_privateca_certificate_authority} Resource.
 func NewPrivatecaCertificateAuthority(scope constructs.Construct, id *string, config *PrivatecaCertificateAuthorityConfig) PrivatecaCertificateAuthority {
 	_init_.Initialize()
 
@@ -819,7 +819,7 @@ func NewPrivatecaCertificateAuthority(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/privateca_certificate_authority google_privateca_certificate_authority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/privateca_certificate_authority google_privateca_certificate_authority} Resource.
 func NewPrivatecaCertificateAuthority_Override(p PrivatecaCertificateAuthority, scope constructs.Construct, id *string, config *PrivatecaCertificateAuthorityConfig) {
 	_init_.Initialize()
 

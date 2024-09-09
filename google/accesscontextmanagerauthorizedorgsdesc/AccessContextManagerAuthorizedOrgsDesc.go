@@ -5,14 +5,14 @@ package accesscontextmanagerauthorizedorgsdesc
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/accesscontextmanagerauthorizedorgsdesc/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/accesscontextmanagerauthorizedorgsdesc/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/access_context_manager_authorized_orgs_desc google_access_context_manager_authorized_orgs_desc}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/access_context_manager_authorized_orgs_desc google_access_context_manager_authorized_orgs_desc}.
 type AccessContextManagerAuthorizedOrgsDesc interface {
 	cdktf.TerraformResource
 	AssetType() *string
@@ -498,7 +498,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDesc) UpdateTime() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/access_context_manager_authorized_orgs_desc google_access_context_manager_authorized_orgs_desc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/access_context_manager_authorized_orgs_desc google_access_context_manager_authorized_orgs_desc} Resource.
 func NewAccessContextManagerAuthorizedOrgsDesc(scope constructs.Construct, id *string, config *AccessContextManagerAuthorizedOrgsDescConfig) AccessContextManagerAuthorizedOrgsDesc {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewAccessContextManagerAuthorizedOrgsDesc(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/access_context_manager_authorized_orgs_desc google_access_context_manager_authorized_orgs_desc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/access_context_manager_authorized_orgs_desc google_access_context_manager_authorized_orgs_desc} Resource.
 func NewAccessContextManagerAuthorizedOrgsDesc_Override(a AccessContextManagerAuthorizedOrgsDesc, scope constructs.Construct, id *string, config *AccessContextManagerAuthorizedOrgsDescConfig) {
 	_init_.Initialize()
 

@@ -408,32 +408,12 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutScratchDiskParameters
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutServiceAccountParameters(value interface{}) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutServiceAccountParameters(value *ComputeInstanceFromTemplateServiceAccount) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*ComputeInstanceFromTemplateServiceAccount:
-		value := value.(*[]*ComputeInstanceFromTemplateServiceAccount)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*ComputeInstanceFromTemplateServiceAccount:
-		value_ := value.([]*ComputeInstanceFromTemplateServiceAccount)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ComputeInstanceFromTemplateServiceAccount; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

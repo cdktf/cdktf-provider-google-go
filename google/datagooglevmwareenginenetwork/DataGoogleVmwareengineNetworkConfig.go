@@ -24,18 +24,18 @@ type DataGoogleVmwareengineNetworkConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location where the VMwareEngineNetwork should reside.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/vmwareengine_network#location DataGoogleVmwareengineNetwork#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/vmwareengine_network#location DataGoogleVmwareengineNetwork#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The ID of the VMwareEngineNetwork.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/vmwareengine_network#name DataGoogleVmwareengineNetwork#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/vmwareengine_network#name DataGoogleVmwareengineNetwork#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/vmwareengine_network#id DataGoogleVmwareengineNetwork#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/vmwareengine_network#id DataGoogleVmwareengineNetwork#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/data-sources/vmwareengine_network#project DataGoogleVmwareengineNetwork#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/vmwareengine_network#project DataGoogleVmwareengineNetwork#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

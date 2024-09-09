@@ -5,19 +5,16 @@ package bigquerytable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/bigquerytable/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/bigquerytable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigquery_table google_bigquery_table}.
 type BigqueryTable interface {
 	cdktf.TerraformResource
-	AllowResourceTagsOnDeletion() interface{}
-	SetAllowResourceTagsOnDeletion(val interface{})
-	AllowResourceTagsOnDeletionInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Clustering() *[]*string
@@ -184,7 +181,6 @@ type BigqueryTable interface {
 	PutTableReplicationInfo(value *BigqueryTableTableReplicationInfo)
 	PutTimePartitioning(value *BigqueryTableTimePartitioning)
 	PutView(value *BigqueryTableView)
-	ResetAllowResourceTagsOnDeletion()
 	ResetClustering()
 	ResetDeletionProtection()
 	ResetDescription()
@@ -224,26 +220,6 @@ type BigqueryTable interface {
 // The jsii proxy struct for BigqueryTable
 type jsiiProxy_BigqueryTable struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_BigqueryTable) AllowResourceTagsOnDeletion() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"allowResourceTagsOnDeletion",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BigqueryTable) AllowResourceTagsOnDeletionInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"allowResourceTagsOnDeletionInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_BigqueryTable) CdktfStack() cdktf.TerraformStack {
@@ -957,7 +933,7 @@ func (j *jsiiProxy_BigqueryTable) ViewInput() *BigqueryTableView {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTableConfig) BigqueryTable {
 	_init_.Initialize()
 
@@ -975,7 +951,7 @@ func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable_Override(b BigqueryTable, scope constructs.Construct, id *string, config *BigqueryTableConfig) {
 	_init_.Initialize()
 
@@ -983,17 +959,6 @@ func NewBigqueryTable_Override(b BigqueryTable, scope constructs.Construct, id *
 		"@cdktf/provider-google.bigqueryTable.BigqueryTable",
 		[]interface{}{scope, id, config},
 		b,
-	)
-}
-
-func (j *jsiiProxy_BigqueryTable)SetAllowResourceTagsOnDeletion(val interface{}) {
-	if err := j.validateSetAllowResourceTagsOnDeletionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"allowResourceTagsOnDeletion",
-		val,
 	)
 }
 
@@ -1657,14 +1622,6 @@ func (b *jsiiProxy_BigqueryTable) PutView(value *BigqueryTableView) {
 		b,
 		"putView",
 		[]interface{}{value},
-	)
-}
-
-func (b *jsiiProxy_BigqueryTable) ResetAllowResourceTagsOnDeletion() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetAllowResourceTagsOnDeletion",
-		nil, // no parameters
 	)
 }
 

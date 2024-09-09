@@ -123,6 +123,10 @@ func (j *jsiiProxy_CloudRunV2Job) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunV2Job) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunV2Job) validateSetIdParameters(val *string) error {
 	return nil
 }

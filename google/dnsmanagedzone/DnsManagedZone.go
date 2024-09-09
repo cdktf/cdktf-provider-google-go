@@ -5,14 +5,14 @@ package dnsmanagedzone
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/dnsmanagedzone/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/dnsmanagedzone/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/dns_managed_zone google_dns_managed_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/dns_managed_zone google_dns_managed_zone}.
 type DnsManagedZone interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -675,7 +675,7 @@ func (j *jsiiProxy_DnsManagedZone) VisibilityInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/dns_managed_zone google_dns_managed_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/dns_managed_zone google_dns_managed_zone} Resource.
 func NewDnsManagedZone(scope constructs.Construct, id *string, config *DnsManagedZoneConfig) DnsManagedZone {
 	_init_.Initialize()
 
@@ -693,7 +693,7 @@ func NewDnsManagedZone(scope constructs.Construct, id *string, config *DnsManage
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/dns_managed_zone google_dns_managed_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/dns_managed_zone google_dns_managed_zone} Resource.
 func NewDnsManagedZone_Override(d DnsManagedZone, scope constructs.Construct, id *string, config *DnsManagedZoneConfig) {
 	_init_.Initialize()
 

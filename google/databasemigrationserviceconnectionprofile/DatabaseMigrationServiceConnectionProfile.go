@@ -5,14 +5,14 @@ package databasemigrationserviceconnectionprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/databasemigrationserviceconnectionprofile/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/databasemigrationserviceconnectionprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile}.
 type DatabaseMigrationServiceConnectionProfile interface {
 	cdktf.TerraformResource
 	Alloydb() DatabaseMigrationServiceConnectionProfileAlloydbOutputReference
@@ -650,7 +650,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
 func NewDatabaseMigrationServiceConnectionProfile(scope constructs.Construct, id *string, config *DatabaseMigrationServiceConnectionProfileConfig) DatabaseMigrationServiceConnectionProfile {
 	_init_.Initialize()
 
@@ -668,7 +668,7 @@ func NewDatabaseMigrationServiceConnectionProfile(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/database_migration_service_connection_profile google_database_migration_service_connection_profile} Resource.
 func NewDatabaseMigrationServiceConnectionProfile_Override(d DatabaseMigrationServiceConnectionProfile, scope constructs.Construct, id *string, config *DatabaseMigrationServiceConnectionProfileConfig) {
 	_init_.Initialize()
 

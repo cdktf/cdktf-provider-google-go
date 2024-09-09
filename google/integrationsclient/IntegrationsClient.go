@@ -5,14 +5,14 @@ package integrationsclient
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/integrationsclient/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/integrationsclient/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/integrations_client google_integrations_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/integrations_client google_integrations_client}.
 type IntegrationsClient interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,9 +32,6 @@ type IntegrationsClient interface {
 	CreateSampleIntegrations() interface{}
 	SetCreateSampleIntegrations(val interface{})
 	CreateSampleIntegrationsInput() interface{}
-	CreateSampleWorkflows() interface{}
-	SetCreateSampleWorkflows(val interface{})
-	CreateSampleWorkflowsInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -70,9 +67,6 @@ type IntegrationsClient interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
-	ProvisionGmek() interface{}
-	SetProvisionGmek(val interface{})
-	ProvisionGmekInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	RunAsServiceAccount() *string
@@ -133,13 +127,11 @@ type IntegrationsClient interface {
 	PutTimeouts(value *IntegrationsClientTimeouts)
 	ResetCloudKmsConfig()
 	ResetCreateSampleIntegrations()
-	ResetCreateSampleWorkflows()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
-	ResetProvisionGmek()
 	ResetRunAsServiceAccount()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -235,26 +227,6 @@ func (j *jsiiProxy_IntegrationsClient) CreateSampleIntegrationsInput() interface
 	_jsii_.Get(
 		j,
 		"createSampleIntegrationsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_IntegrationsClient) CreateSampleWorkflows() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"createSampleWorkflows",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_IntegrationsClient) CreateSampleWorkflowsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"createSampleWorkflowsInput",
 		&returns,
 	)
 	return returns
@@ -400,26 +372,6 @@ func (j *jsiiProxy_IntegrationsClient) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationsClient) ProvisionGmek() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"provisionGmek",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_IntegrationsClient) ProvisionGmekInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"provisionGmekInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_IntegrationsClient) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -501,7 +453,7 @@ func (j *jsiiProxy_IntegrationsClient) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/integrations_client google_integrations_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/integrations_client google_integrations_client} Resource.
 func NewIntegrationsClient(scope constructs.Construct, id *string, config *IntegrationsClientConfig) IntegrationsClient {
 	_init_.Initialize()
 
@@ -519,7 +471,7 @@ func NewIntegrationsClient(scope constructs.Construct, id *string, config *Integ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/integrations_client google_integrations_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/integrations_client google_integrations_client} Resource.
 func NewIntegrationsClient_Override(i IntegrationsClient, scope constructs.Construct, id *string, config *IntegrationsClientConfig) {
 	_init_.Initialize()
 
@@ -559,17 +511,6 @@ func (j *jsiiProxy_IntegrationsClient)SetCreateSampleIntegrations(val interface{
 	_jsii_.Set(
 		j,
 		"createSampleIntegrations",
-		val,
-	)
-}
-
-func (j *jsiiProxy_IntegrationsClient)SetCreateSampleWorkflows(val interface{}) {
-	if err := j.validateSetCreateSampleWorkflowsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"createSampleWorkflows",
 		val,
 	)
 }
@@ -649,17 +590,6 @@ func (j *jsiiProxy_IntegrationsClient)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_IntegrationsClient)SetProvisionGmek(val interface{}) {
-	if err := j.validateSetProvisionGmekParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"provisionGmek",
 		val,
 	)
 }
@@ -1066,14 +996,6 @@ func (i *jsiiProxy_IntegrationsClient) ResetCreateSampleIntegrations() {
 	)
 }
 
-func (i *jsiiProxy_IntegrationsClient) ResetCreateSampleWorkflows() {
-	_jsii_.InvokeVoid(
-		i,
-		"resetCreateSampleWorkflows",
-		nil, // no parameters
-	)
-}
-
 func (i *jsiiProxy_IntegrationsClient) ResetId() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1094,14 +1016,6 @@ func (i *jsiiProxy_IntegrationsClient) ResetProject() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetProject",
-		nil, // no parameters
-	)
-}
-
-func (i *jsiiProxy_IntegrationsClient) ResetProvisionGmek() {
-	_jsii_.InvokeVoid(
-		i,
-		"resetProvisionGmek",
 		nil, // no parameters
 	)
 }

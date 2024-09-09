@@ -5,14 +5,14 @@ package iamdenypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/iamdenypolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/iamdenypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/iam_deny_policy google_iam_deny_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/iam_deny_policy google_iam_deny_policy}.
 type IamDenyPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_IamDenyPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/iam_deny_policy google_iam_deny_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/iam_deny_policy google_iam_deny_policy} Resource.
 func NewIamDenyPolicy(scope constructs.Construct, id *string, config *IamDenyPolicyConfig) IamDenyPolicy {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewIamDenyPolicy(scope constructs.Construct, id *string, config *IamDenyPol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/iam_deny_policy google_iam_deny_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/iam_deny_policy google_iam_deny_policy} Resource.
 func NewIamDenyPolicy_Override(i IamDenyPolicy, scope constructs.Construct, id *string, config *IamDenyPolicyConfig) {
 	_init_.Initialize()
 

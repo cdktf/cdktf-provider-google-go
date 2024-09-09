@@ -5,14 +5,14 @@ package dataprocworkflowtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/dataprocworkflowtemplate/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/dataprocworkflowtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/dataproc_workflow_template google_dataproc_workflow_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/dataproc_workflow_template google_dataproc_workflow_template}.
 type DataprocWorkflowTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -590,7 +590,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate) VersionInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/dataproc_workflow_template google_dataproc_workflow_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/dataproc_workflow_template google_dataproc_workflow_template} Resource.
 func NewDataprocWorkflowTemplate(scope constructs.Construct, id *string, config *DataprocWorkflowTemplateConfig) DataprocWorkflowTemplate {
 	_init_.Initialize()
 
@@ -608,7 +608,7 @@ func NewDataprocWorkflowTemplate(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/dataproc_workflow_template google_dataproc_workflow_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/dataproc_workflow_template google_dataproc_workflow_template} Resource.
 func NewDataprocWorkflowTemplate_Override(d DataprocWorkflowTemplate, scope constructs.Construct, id *string, config *DataprocWorkflowTemplateConfig) {
 	_init_.Initialize()
 

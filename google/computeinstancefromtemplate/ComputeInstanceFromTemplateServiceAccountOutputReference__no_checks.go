@@ -63,7 +63,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference) validateSetInternalValueParameters(val *ComputeInstanceFromTemplateServiceAccount) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference) val
 	return nil
 }
 
-func validateNewComputeInstanceFromTemplateServiceAccountOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewComputeInstanceFromTemplateServiceAccountOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

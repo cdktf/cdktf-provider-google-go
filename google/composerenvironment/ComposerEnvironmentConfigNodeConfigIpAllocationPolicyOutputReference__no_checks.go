@@ -67,7 +67,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) validateSetInternalValueParameters(val *ComposerEnvironmentConfigNodeConfigIpAllocationPolicy) error {
 	return nil
 }
 
@@ -91,7 +91,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputRe
 	return nil
 }
 
-func validateNewComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

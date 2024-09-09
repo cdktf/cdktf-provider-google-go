@@ -5,14 +5,14 @@ package cloudidentitygroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/cloudidentitygroup/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/cloudidentitygroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/cloud_identity_group google_cloud_identity_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/cloud_identity_group google_cloud_identity_group}.
 type CloudIdentityGroup interface {
 	cdktf.TerraformResource
 	AdditionalGroupKeys() CloudIdentityGroupAdditionalGroupKeysList
@@ -519,7 +519,7 @@ func (j *jsiiProxy_CloudIdentityGroup) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/cloud_identity_group google_cloud_identity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/cloud_identity_group google_cloud_identity_group} Resource.
 func NewCloudIdentityGroup(scope constructs.Construct, id *string, config *CloudIdentityGroupConfig) CloudIdentityGroup {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewCloudIdentityGroup(scope constructs.Construct, id *string, config *Cloud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs/resources/cloud_identity_group google_cloud_identity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/cloud_identity_group google_cloud_identity_group} Resource.
 func NewCloudIdentityGroup_Override(c CloudIdentityGroup, scope constructs.Construct, id *string, config *CloudIdentityGroupConfig) {
 	_init_.Initialize()
 

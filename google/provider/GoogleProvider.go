@@ -5,14 +5,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/provider/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -208,9 +208,6 @@ type GoogleProvider interface {
 	DataprocMetastoreCustomEndpoint() *string
 	SetDataprocMetastoreCustomEndpoint(val *string)
 	DataprocMetastoreCustomEndpointInput() *string
-	DatastoreCustomEndpoint() *string
-	SetDatastoreCustomEndpoint(val *string)
-	DatastoreCustomEndpointInput() *string
 	DatastreamCustomEndpoint() *string
 	SetDatastreamCustomEndpoint(val *string)
 	DatastreamCustomEndpointInput() *string
@@ -571,7 +568,6 @@ type GoogleProvider interface {
 	ResetDataplexCustomEndpoint()
 	ResetDataprocCustomEndpoint()
 	ResetDataprocMetastoreCustomEndpoint()
-	ResetDatastoreCustomEndpoint()
 	ResetDatastreamCustomEndpoint()
 	ResetDefaultLabels()
 	ResetDeploymentManagerCustomEndpoint()
@@ -1960,26 +1956,6 @@ func (j *jsiiProxy_GoogleProvider) DataprocMetastoreCustomEndpointInput() *strin
 	_jsii_.Get(
 		j,
 		"dataprocMetastoreCustomEndpointInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleProvider) DatastoreCustomEndpoint() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"datastoreCustomEndpoint",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleProvider) DatastoreCustomEndpointInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"datastoreCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3906,7 +3882,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3924,7 +3900,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/5.43.1/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -4441,14 +4417,6 @@ func (j *jsiiProxy_GoogleProvider)SetDataprocMetastoreCustomEndpoint(val *string
 	_jsii_.Set(
 		j,
 		"dataprocMetastoreCustomEndpoint",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GoogleProvider)SetDatastoreCustomEndpoint(val *string) {
-	_jsii_.Set(
-		j,
-		"datastoreCustomEndpoint",
 		val,
 	)
 }
@@ -5817,14 +5785,6 @@ func (g *jsiiProxy_GoogleProvider) ResetDataprocMetastoreCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDataprocMetastoreCustomEndpoint",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleProvider) ResetDatastoreCustomEndpoint() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetDatastoreCustomEndpoint",
 		nil, // no parameters
 	)
 }

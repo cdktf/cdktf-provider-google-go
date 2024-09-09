@@ -5,9 +5,9 @@ package vmwareenginecluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v13/vmwareenginecluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v14/vmwareenginecluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
