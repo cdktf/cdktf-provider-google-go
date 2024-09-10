@@ -155,6 +155,10 @@ func (j *jsiiProxy_AssuredWorkloadsWorkload) validateSetPartnerParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_AssuredWorkloadsWorkload) validateSetPartnerServicesBillingAccountParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AssuredWorkloadsWorkload) validateSetProvisionedResourcesParentParameters(val *string) error {
 	return nil
 }

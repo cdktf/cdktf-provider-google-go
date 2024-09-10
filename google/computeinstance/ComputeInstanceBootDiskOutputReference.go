@@ -42,6 +42,9 @@ type ComputeInstanceBootDiskOutputReference interface {
 	Fqn() *string
 	InitializeParams() ComputeInstanceBootDiskInitializeParamsOutputReference
 	InitializeParamsInput() *ComputeInstanceBootDiskInitializeParams
+	Interface() *string
+	SetInterface(val *string)
+	InterfaceInput() *string
 	InternalValue() *ComputeInstanceBootDisk
 	SetInternalValue(val *ComputeInstanceBootDisk)
 	KmsKeySelfLink() *string
@@ -90,6 +93,7 @@ type ComputeInstanceBootDiskOutputReference interface {
 	ResetDeviceName()
 	ResetDiskEncryptionKeyRaw()
 	ResetInitializeParams()
+	ResetInterface()
 	ResetKmsKeySelfLink()
 	ResetMode()
 	ResetSource()
@@ -233,6 +237,26 @@ func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) InitializeParamsInput
 	_jsii_.Get(
 		j,
 		"initializeParamsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) Interface() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interface",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) InterfaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceInput",
 		&returns,
 	)
 	return returns
@@ -407,6 +431,17 @@ func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference)SetDiskEncryptionKeyRa
 	_jsii_.Set(
 		j,
 		"diskEncryptionKeyRaw",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference)SetInterface(val *string) {
+	if err := j.validateSetInterfaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"interface",
 		val,
 	)
 }
@@ -702,6 +737,14 @@ func (c *jsiiProxy_ComputeInstanceBootDiskOutputReference) ResetInitializeParams
 	_jsii_.InvokeVoid(
 		c,
 		"resetInitializeParams",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceBootDiskOutputReference) ResetInterface() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInterface",
 		nil, // no parameters
 	)
 }

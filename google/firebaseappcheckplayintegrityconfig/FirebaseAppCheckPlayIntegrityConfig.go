@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/firebase_app_check_play_integrity_config google_firebase_app_check_play_integrity_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/resources/firebase_app_check_play_integrity_config google_firebase_app_check_play_integrity_config}.
 type FirebaseAppCheckPlayIntegrityConfig interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -416,7 +416,7 @@ func (j *jsiiProxy_FirebaseAppCheckPlayIntegrityConfig) TokenTtlInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/firebase_app_check_play_integrity_config google_firebase_app_check_play_integrity_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/resources/firebase_app_check_play_integrity_config google_firebase_app_check_play_integrity_config} Resource.
 func NewFirebaseAppCheckPlayIntegrityConfig(scope constructs.Construct, id *string, config *FirebaseAppCheckPlayIntegrityConfigConfig) FirebaseAppCheckPlayIntegrityConfig {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewFirebaseAppCheckPlayIntegrityConfig(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/firebase_app_check_play_integrity_config google_firebase_app_check_play_integrity_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/resources/firebase_app_check_play_integrity_config google_firebase_app_check_play_integrity_config} Resource.
 func NewFirebaseAppCheckPlayIntegrityConfig_Override(f FirebaseAppCheckPlayIntegrityConfig, scope constructs.Construct, id *string, config *FirebaseAppCheckPlayIntegrityConfigConfig) {
 	_init_.Initialize()
 

@@ -43,6 +43,9 @@ type BigtableTableColumnFamilyOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type BigtableTableColumnFamilyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -172,6 +176,26 @@ func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) TerraformResource()
 	return returns
 }
 
+func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewBigtableTableColumnFamilyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BigtableTableColumnFamilyOutputReference {
 	_init_.Initialize()
@@ -262,6 +286,17 @@ func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference)SetTerraformResource
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigtableTableColumnFamilyOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) InterpolationForAtt
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) ResetType() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetType",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

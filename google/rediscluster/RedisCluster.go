@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/resources/redis_cluster google_redis_cluster}.
 type RedisCluster interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -54,6 +54,9 @@ type RedisCluster interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaintenancePolicy() RedisClusterMaintenancePolicyOutputReference
+	MaintenancePolicyInput() *RedisClusterMaintenancePolicy
+	MaintenanceSchedule() RedisClusterMaintenanceScheduleList
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -151,12 +154,14 @@ type RedisCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutMaintenancePolicy(value *RedisClusterMaintenancePolicy)
 	PutPscConfigs(value interface{})
 	PutTimeouts(value *RedisClusterTimeouts)
 	PutZoneDistributionConfig(value *RedisClusterZoneDistributionConfig)
 	ResetAuthorizationMode()
 	ResetDeletionProtectionEnabled()
 	ResetId()
+	ResetMaintenancePolicy()
 	ResetName()
 	ResetNodeType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -352,6 +357,36 @@ func (j *jsiiProxy_RedisCluster) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) MaintenancePolicy() RedisClusterMaintenancePolicyOutputReference {
+	var returns RedisClusterMaintenancePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"maintenancePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) MaintenancePolicyInput() *RedisClusterMaintenancePolicy {
+	var returns *RedisClusterMaintenancePolicy
+	_jsii_.Get(
+		j,
+		"maintenancePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) MaintenanceSchedule() RedisClusterMaintenanceScheduleList {
+	var returns RedisClusterMaintenanceScheduleList
+	_jsii_.Get(
+		j,
+		"maintenanceSchedule",
 		&returns,
 	)
 	return returns
@@ -708,7 +743,7 @@ func (j *jsiiProxy_RedisCluster) ZoneDistributionConfigInput() *RedisClusterZone
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster(scope constructs.Construct, id *string, config *RedisClusterConfig) RedisCluster {
 	_init_.Initialize()
 
@@ -726,7 +761,7 @@ func NewRedisCluster(scope constructs.Construct, id *string, config *RedisCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster_Override(r RedisCluster, scope constructs.Construct, id *string, config *RedisClusterConfig) {
 	_init_.Initialize()
 
@@ -1279,6 +1314,17 @@ func (r *jsiiProxy_RedisCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (r *jsiiProxy_RedisCluster) PutMaintenancePolicy(value *RedisClusterMaintenancePolicy) {
+	if err := r.validatePutMaintenancePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RedisCluster) PutPscConfigs(value interface{}) {
 	if err := r.validatePutPscConfigsParameters(value); err != nil {
 		panic(err)
@@ -1332,6 +1378,14 @@ func (r *jsiiProxy_RedisCluster) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) ResetMaintenancePolicy() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMaintenancePolicy",
 		nil, // no parameters
 	)
 }

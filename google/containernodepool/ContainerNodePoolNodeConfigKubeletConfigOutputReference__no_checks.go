@@ -71,6 +71,10 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetInsecureKubeletReadonlyPortEnabledParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetInternalValueParameters(val *ContainerNodePoolNodeConfigKubeletConfig) error {
 	return nil
 }

@@ -75,6 +75,10 @@ func (r *jsiiProxy_RedisCluster) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (r *jsiiProxy_RedisCluster) validatePutMaintenancePolicyParameters(value *RedisClusterMaintenancePolicy) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisCluster) validatePutPscConfigsParameters(value interface{}) error {
 	return nil
 }

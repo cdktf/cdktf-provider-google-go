@@ -35,6 +35,7 @@ type DataGoogleComputeInstanceBootDiskOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	InitializeParams() DataGoogleComputeInstanceBootDiskInitializeParamsList
+	Interface() *string
 	InternalValue() *DataGoogleComputeInstanceBootDisk
 	SetInternalValue(val *DataGoogleComputeInstanceBootDisk)
 	KmsKeySelfLink() *string
@@ -172,6 +173,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) InitializeP
 	_jsii_.Get(
 		j,
 		"initializeParams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) Interface() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interface",
 		&returns,
 	)
 	return returns

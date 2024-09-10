@@ -195,6 +195,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "useTopicSchema", GoGetter: "UseTopicSchema"},
 			_jsii_.MemberProperty{JsiiProperty: "writeMetadata", GoGetter: "WriteMetadata"},
 		},
 		func() interface{} {
@@ -252,6 +253,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxBytes", GoGetter: "MaxBytes"},
 			_jsii_.MemberProperty{JsiiProperty: "maxDuration", GoGetter: "MaxDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "maxMessages", GoGetter: "MaxMessages"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAccountEmail", GoGetter: "ServiceAccountEmail"},
 			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},

@@ -34,6 +34,8 @@ type ContainerClusterNodePoolAutoConfigOutputReference interface {
 	SetInternalValue(val *ContainerClusterNodePoolAutoConfig)
 	NetworkTags() ContainerClusterNodePoolAutoConfigNetworkTagsOutputReference
 	NetworkTagsInput() *ContainerClusterNodePoolAutoConfigNetworkTags
+	NodeKubeletConfig() ContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference
+	NodeKubeletConfigInput() *ContainerClusterNodePoolAutoConfigNodeKubeletConfig
 	ResourceManagerTags() *map[string]*string
 	SetResourceManagerTags(val *map[string]*string)
 	ResourceManagerTagsInput() *map[string]*string
@@ -70,7 +72,9 @@ type ContainerClusterNodePoolAutoConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutNetworkTags(value *ContainerClusterNodePoolAutoConfigNetworkTags)
+	PutNodeKubeletConfig(value *ContainerClusterNodePoolAutoConfigNodeKubeletConfig)
 	ResetNetworkTags()
+	ResetNodeKubeletConfig()
 	ResetResourceManagerTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference) NetworkTag
 	_jsii_.Get(
 		j,
 		"networkTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference) NodeKubeletConfig() ContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference {
+	var returns ContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference
+	_jsii_.Get(
+		j,
+		"nodeKubeletConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference) NodeKubeletConfigInput() *ContainerClusterNodePoolAutoConfigNodeKubeletConfig {
+	var returns *ContainerClusterNodePoolAutoConfigNodeKubeletConfig
+	_jsii_.Get(
+		j,
+		"nodeKubeletConfigInput",
 		&returns,
 	)
 	return returns
@@ -488,10 +512,29 @@ func (c *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference) PutNetwork
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference) PutNodeKubeletConfig(value *ContainerClusterNodePoolAutoConfigNodeKubeletConfig) {
+	if err := c.validatePutNodeKubeletConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNodeKubeletConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference) ResetNetworkTags() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetNetworkTags",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference) ResetNodeKubeletConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNodeKubeletConfig",
 		nil, // no parameters
 	)
 }

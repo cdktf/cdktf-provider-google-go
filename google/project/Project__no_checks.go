@@ -147,6 +147,10 @@ func (j *jsiiProxy_Project) validateSetProvisionersParameters(val *[]interface{}
 	return nil
 }
 
+func (j *jsiiProxy_Project) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewProjectParameters(scope constructs.Construct, id *string, config *ProjectConfig) error {
 	return nil
 }

@@ -91,6 +91,10 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolProvider) validatePutTimeoutsParameter
 	return nil
 }
 
+func (i *jsiiProxy_IamWorkloadIdentityPoolProvider) validatePutX509Parameters(value *IamWorkloadIdentityPoolProviderX509) error {
+	return nil
+}
+
 func validateIamWorkloadIdentityPoolProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

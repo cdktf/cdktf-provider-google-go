@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/compute_router_status google_compute_router_status}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/data-sources/compute_router_status google_compute_router_status}.
 type DataGoogleComputeRouterStatus interface {
 	cdktf.TerraformDataSource
 	BestRoutes() DataGoogleComputeRouterStatusBestRoutesList
@@ -369,7 +369,7 @@ func (j *jsiiProxy_DataGoogleComputeRouterStatus) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/compute_router_status google_compute_router_status} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/data-sources/compute_router_status google_compute_router_status} Data Source.
 func NewDataGoogleComputeRouterStatus(scope constructs.Construct, id *string, config *DataGoogleComputeRouterStatusConfig) DataGoogleComputeRouterStatus {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewDataGoogleComputeRouterStatus(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/compute_router_status google_compute_router_status} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/data-sources/compute_router_status google_compute_router_status} Data Source.
 func NewDataGoogleComputeRouterStatus_Override(d DataGoogleComputeRouterStatus, scope constructs.Construct, id *string, config *DataGoogleComputeRouterStatusConfig) {
 	_init_.Initialize()
 

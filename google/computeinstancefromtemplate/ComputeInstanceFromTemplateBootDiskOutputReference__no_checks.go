@@ -75,6 +75,10 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference) validateSetInterfaceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference) validateSetInternalValueParameters(val *ComputeInstanceFromTemplateBootDisk) error {
 	return nil
 }

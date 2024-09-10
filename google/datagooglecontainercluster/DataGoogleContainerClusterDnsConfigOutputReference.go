@@ -13,6 +13,7 @@ import (
 
 type DataGoogleContainerClusterDnsConfigOutputReference interface {
 	cdktf.ComplexObject
+	AdditiveVpcScopeDnsDomain() *string
 	ClusterDns() *string
 	ClusterDnsDomain() *string
 	ClusterDnsScope() *string
@@ -80,6 +81,16 @@ type DataGoogleContainerClusterDnsConfigOutputReference interface {
 // The jsii proxy struct for DataGoogleContainerClusterDnsConfigOutputReference
 type jsiiProxy_DataGoogleContainerClusterDnsConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterDnsConfigOutputReference) AdditiveVpcScopeDnsDomain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"additiveVpcScopeDnsDomain",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleContainerClusterDnsConfigOutputReference) ClusterDns() *string {

@@ -52,6 +52,9 @@ type PubsubSubscriptionCloudStorageConfigOutputReference interface {
 	MaxDuration() *string
 	SetMaxDuration(val *string)
 	MaxDurationInput() *string
+	MaxMessages() *float64
+	SetMaxMessages(val *float64)
+	MaxMessagesInput() *float64
 	ServiceAccountEmail() *string
 	SetServiceAccountEmail(val *string)
 	ServiceAccountEmailInput() *string
@@ -95,6 +98,7 @@ type PubsubSubscriptionCloudStorageConfigOutputReference interface {
 	ResetFilenameSuffix()
 	ResetMaxBytes()
 	ResetMaxDuration()
+	ResetMaxMessages()
 	ResetServiceAccountEmail()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -301,6 +305,26 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) MaxDurat
 	return returns
 }
 
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) MaxMessages() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxMessages",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) MaxMessagesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxMessagesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ServiceAccountEmail() *string {
 	var returns *string
 	_jsii_.Get(
@@ -474,6 +498,17 @@ func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetMaxDur
 	_jsii_.Set(
 		j,
 		"maxDuration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference)SetMaxMessages(val *float64) {
+	if err := j.validateSetMaxMessagesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxMessages",
 		val,
 	)
 }
@@ -752,6 +787,14 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ResetMax
 	_jsii_.InvokeVoid(
 		p,
 		"resetMaxDuration",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigOutputReference) ResetMaxMessages() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMaxMessages",
 		nil, // no parameters
 	)
 }

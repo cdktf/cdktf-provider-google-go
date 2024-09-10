@@ -51,6 +51,10 @@ func (c *jsiiProxy_ContainerClusterDnsConfigOutputReference) validateResolvePara
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) validateSetAdditiveVpcScopeDnsDomainParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterDnsConfigOutputReference) validateSetClusterDnsParameters(val *string) error {
 	return nil
 }

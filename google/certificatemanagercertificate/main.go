@@ -73,6 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetScope", GoMethod: "ResetScope"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSelfManaged", GoMethod: "ResetSelfManaged"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberProperty{JsiiProperty: "sanDnsnames", GoGetter: "SanDnsnames"},
 			_jsii_.MemberProperty{JsiiProperty: "scope", GoGetter: "Scope"},
 			_jsii_.MemberProperty{JsiiProperty: "scopeInput", GoGetter: "ScopeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "selfManaged", GoGetter: "SelfManaged"},

@@ -32,11 +32,15 @@ type CloudRunV2JobTemplateTemplateVolumesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Gcs() CloudRunV2JobTemplateTemplateVolumesGcsOutputReference
+	GcsInput() *CloudRunV2JobTemplateTemplateVolumesGcs
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Nfs() CloudRunV2JobTemplateTemplateVolumesNfsOutputReference
+	NfsInput() *CloudRunV2JobTemplateTemplateVolumesNfs
 	Secret() CloudRunV2JobTemplateTemplateVolumesSecretOutputReference
 	SecretInput() *CloudRunV2JobTemplateTemplateVolumesSecret
 	// Experimental.
@@ -72,8 +76,12 @@ type CloudRunV2JobTemplateTemplateVolumesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudSqlInstance(value *CloudRunV2JobTemplateTemplateVolumesCloudSqlInstance)
+	PutGcs(value *CloudRunV2JobTemplateTemplateVolumesGcs)
+	PutNfs(value *CloudRunV2JobTemplateTemplateVolumesNfs)
 	PutSecret(value *CloudRunV2JobTemplateTemplateVolumesSecret)
 	ResetCloudSqlInstance()
+	ResetGcs()
+	ResetNfs()
 	ResetSecret()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -150,6 +158,26 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) Fqn() *s
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) Gcs() CloudRunV2JobTemplateTemplateVolumesGcsOutputReference {
+	var returns CloudRunV2JobTemplateTemplateVolumesGcsOutputReference
+	_jsii_.Get(
+		j,
+		"gcs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) GcsInput() *CloudRunV2JobTemplateTemplateVolumesGcs {
+	var returns *CloudRunV2JobTemplateTemplateVolumesGcs
+	_jsii_.Get(
+		j,
+		"gcsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -175,6 +203,26 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) NameInpu
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) Nfs() CloudRunV2JobTemplateTemplateVolumesNfsOutputReference {
+	var returns CloudRunV2JobTemplateTemplateVolumesNfsOutputReference
+	_jsii_.Get(
+		j,
+		"nfs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) NfsInput() *CloudRunV2JobTemplateTemplateVolumesNfs {
+	var returns *CloudRunV2JobTemplateTemplateVolumesNfs
+	_jsii_.Get(
+		j,
+		"nfsInput",
 		&returns,
 	)
 	return returns
@@ -511,6 +559,28 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) PutCloud
 	)
 }
 
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) PutGcs(value *CloudRunV2JobTemplateTemplateVolumesGcs) {
+	if err := c.validatePutGcsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putGcs",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) PutNfs(value *CloudRunV2JobTemplateTemplateVolumesNfs) {
+	if err := c.validatePutNfsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNfs",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) PutSecret(value *CloudRunV2JobTemplateTemplateVolumesSecret) {
 	if err := c.validatePutSecretParameters(value); err != nil {
 		panic(err)
@@ -526,6 +596,22 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) ResetClo
 	_jsii_.InvokeVoid(
 		c,
 		"resetCloudSqlInstance",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) ResetGcs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGcs",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) ResetNfs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNfs",
 		nil, // no parameters
 	)
 }

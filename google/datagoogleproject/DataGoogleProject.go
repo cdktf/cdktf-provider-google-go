@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/project google_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/data-sources/project google_project}.
 type DataGoogleProject interface {
 	cdktf.TerraformDataSource
 	AutoCreateNetwork() cdktf.IResolvable
@@ -62,6 +62,7 @@ type DataGoogleProject interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -358,6 +359,16 @@ func (j *jsiiProxy_DataGoogleProject) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleProject) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleProject) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -399,7 +410,7 @@ func (j *jsiiProxy_DataGoogleProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/project google_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/data-sources/project google_project} Data Source.
 func NewDataGoogleProject(scope constructs.Construct, id *string, config *DataGoogleProjectConfig) DataGoogleProject {
 	_init_.Initialize()
 
@@ -417,7 +428,7 @@ func NewDataGoogleProject(scope constructs.Construct, id *string, config *DataGo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/data-sources/project google_project} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/data-sources/project google_project} Data Source.
 func NewDataGoogleProject_Override(d DataGoogleProject, scope constructs.Construct, id *string, config *DataGoogleProjectConfig) {
 	_init_.Initialize()
 

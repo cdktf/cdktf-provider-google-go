@@ -33,6 +33,9 @@ type NetworkConnectivitySpokeLinkedVpcNetworkOutputReference interface {
 	ExcludeExportRangesInput() *[]*string
 	// Experimental.
 	Fqn() *string
+	IncludeExportRanges() *[]*string
+	SetIncludeExportRanges(val *[]*string)
+	IncludeExportRangesInput() *[]*string
 	InternalValue() *NetworkConnectivitySpokeLinkedVpcNetwork
 	SetInternalValue(val *NetworkConnectivitySpokeLinkedVpcNetwork)
 	// Experimental.
@@ -71,6 +74,7 @@ type NetworkConnectivitySpokeLinkedVpcNetworkOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetExcludeExportRanges()
+	ResetIncludeExportRanges()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -141,6 +145,26 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference) Fqn(
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference) IncludeExportRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeExportRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference) IncludeExportRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeExportRangesInput",
 		&returns,
 	)
 	return returns
@@ -253,6 +277,17 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference)SetEx
 	_jsii_.Set(
 		j,
 		"excludeExportRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference)SetIncludeExportRanges(val *[]*string) {
+	if err := j.validateSetIncludeExportRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeExportRanges",
 		val,
 	)
 }
@@ -491,6 +526,14 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference) Rese
 	_jsii_.InvokeVoid(
 		n,
 		"resetExcludeExportRanges",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpcNetworkOutputReference) ResetIncludeExportRanges() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIncludeExportRanges",
 		nil, // no parameters
 	)
 }

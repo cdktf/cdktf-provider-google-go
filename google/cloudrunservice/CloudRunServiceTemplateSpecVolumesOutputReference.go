@@ -28,6 +28,8 @@ type CloudRunServiceTemplateSpecVolumesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Csi() CloudRunServiceTemplateSpecVolumesCsiOutputReference
+	CsiInput() *CloudRunServiceTemplateSpecVolumesCsi
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -35,6 +37,8 @@ type CloudRunServiceTemplateSpecVolumesOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Nfs() CloudRunServiceTemplateSpecVolumesNfsOutputReference
+	NfsInput() *CloudRunServiceTemplateSpecVolumesNfs
 	Secret() CloudRunServiceTemplateSpecVolumesSecretOutputReference
 	SecretInput() *CloudRunServiceTemplateSpecVolumesSecret
 	// Experimental.
@@ -69,7 +73,11 @@ type CloudRunServiceTemplateSpecVolumesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCsi(value *CloudRunServiceTemplateSpecVolumesCsi)
+	PutNfs(value *CloudRunServiceTemplateSpecVolumesNfs)
 	PutSecret(value *CloudRunServiceTemplateSpecVolumesSecret)
+	ResetCsi()
+	ResetNfs()
 	ResetSecret()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -116,6 +124,26 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) CreationSt
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) Csi() CloudRunServiceTemplateSpecVolumesCsiOutputReference {
+	var returns CloudRunServiceTemplateSpecVolumesCsiOutputReference
+	_jsii_.Get(
+		j,
+		"csi",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) CsiInput() *CloudRunServiceTemplateSpecVolumesCsi {
+	var returns *CloudRunServiceTemplateSpecVolumesCsi
+	_jsii_.Get(
+		j,
+		"csiInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -151,6 +179,26 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) NameInput(
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) Nfs() CloudRunServiceTemplateSpecVolumesNfsOutputReference {
+	var returns CloudRunServiceTemplateSpecVolumesNfsOutputReference
+	_jsii_.Get(
+		j,
+		"nfs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) NfsInput() *CloudRunServiceTemplateSpecVolumesNfs {
+	var returns *CloudRunServiceTemplateSpecVolumesNfs
+	_jsii_.Get(
+		j,
+		"nfsInput",
 		&returns,
 	)
 	return returns
@@ -476,6 +524,28 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) Interpolat
 	return returns
 }
 
+func (c *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) PutCsi(value *CloudRunServiceTemplateSpecVolumesCsi) {
+	if err := c.validatePutCsiParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCsi",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) PutNfs(value *CloudRunServiceTemplateSpecVolumesNfs) {
+	if err := c.validatePutNfsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNfs",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) PutSecret(value *CloudRunServiceTemplateSpecVolumesSecret) {
 	if err := c.validatePutSecretParameters(value); err != nil {
 		panic(err)
@@ -484,6 +554,22 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) PutSecret(
 		c,
 		"putSecret",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) ResetCsi() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCsi",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) ResetNfs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNfs",
+		nil, // no parameters
 	)
 }
 

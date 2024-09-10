@@ -5,11 +5,11 @@ package vertexaiendpoint
 
 
 type VertexAiEndpointTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/vertex_ai_endpoint#create VertexAiEndpoint#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/resources/vertex_ai_endpoint#create VertexAiEndpoint#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/vertex_ai_endpoint#delete VertexAiEndpoint#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/resources/vertex_ai_endpoint#delete VertexAiEndpoint#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.1.0/docs/resources/vertex_ai_endpoint#update VertexAiEndpoint#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/resources/vertex_ai_endpoint#update VertexAiEndpoint#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

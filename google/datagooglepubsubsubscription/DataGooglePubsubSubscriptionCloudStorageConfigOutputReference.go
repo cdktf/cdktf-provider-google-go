@@ -39,6 +39,7 @@ type DataGooglePubsubSubscriptionCloudStorageConfigOutputReference interface {
 	SetInternalValue(val *DataGooglePubsubSubscriptionCloudStorageConfig)
 	MaxBytes() *float64
 	MaxDuration() *string
+	MaxMessages() *float64
 	ServiceAccountEmail() *string
 	State() *string
 	// Experimental.
@@ -203,6 +204,16 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigOutputReference
 	_jsii_.Get(
 		j,
 		"maxDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigOutputReference) MaxMessages() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxMessages",
 		&returns,
 	)
 	return returns
