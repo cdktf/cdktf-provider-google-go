@@ -103,6 +103,10 @@ func (c *jsiiProxy_ContainerAttachedCluster) validatePutProxyConfigParameters(va
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAttachedCluster) validatePutSecurityPostureConfigParameters(value *ContainerAttachedClusterSecurityPostureConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAttachedCluster) validatePutTimeoutsParameters(value *ContainerAttachedClusterTimeouts) error {
 	return nil
 }

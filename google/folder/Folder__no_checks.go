@@ -127,6 +127,10 @@ func (j *jsiiProxy_Folder) validateSetProvisionersParameters(val *[]interface{})
 	return nil
 }
 
+func (j *jsiiProxy_Folder) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewFolderParameters(scope constructs.Construct, id *string, config *FolderConfig) error {
 	return nil
 }

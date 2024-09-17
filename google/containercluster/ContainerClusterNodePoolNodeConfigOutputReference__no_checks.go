@@ -207,6 +207,10 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSetStoragePoolsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/resources/netapp_volume google_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/netapp_volume google_netapp_volume}.
 type NetappVolume interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
@@ -67,6 +67,9 @@ type NetappVolume interface {
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
+	LargeCapacity() interface{}
+	SetLargeCapacity(val interface{})
+	LargeCapacityInput() interface{}
 	LdapEnabled() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -76,6 +79,9 @@ type NetappVolume interface {
 	SetLocation(val *string)
 	LocationInput() *string
 	MountOptions() NetappVolumeMountOptionsList
+	MultipleEndpoints() interface{}
+	SetMultipleEndpoints(val interface{})
+	MultipleEndpointsInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -192,6 +198,8 @@ type NetappVolume interface {
 	ResetId()
 	ResetKerberosEnabled()
 	ResetLabels()
+	ResetLargeCapacity()
+	ResetMultipleEndpoints()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -522,6 +530,26 @@ func (j *jsiiProxy_NetappVolume) LabelsInput() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_NetappVolume) LargeCapacity() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"largeCapacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) LargeCapacityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"largeCapacityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetappVolume) LdapEnabled() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -567,6 +595,26 @@ func (j *jsiiProxy_NetappVolume) MountOptions() NetappVolumeMountOptionsList {
 	_jsii_.Get(
 		j,
 		"mountOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) MultipleEndpoints() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multipleEndpoints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) MultipleEndpointsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multipleEndpointsInput",
 		&returns,
 	)
 	return returns
@@ -973,7 +1021,7 @@ func (j *jsiiProxy_NetappVolume) UsedGib() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/resources/netapp_volume google_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/netapp_volume google_netapp_volume} Resource.
 func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolumeConfig) NetappVolume {
 	_init_.Initialize()
 
@@ -991,7 +1039,7 @@ func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolum
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/resources/netapp_volume google_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/netapp_volume google_netapp_volume} Resource.
 func NewNetappVolume_Override(n NetappVolume, scope constructs.Construct, id *string, config *NetappVolumeConfig) {
 	_init_.Initialize()
 
@@ -1106,6 +1154,17 @@ func (j *jsiiProxy_NetappVolume)SetLabels(val *map[string]*string) {
 	)
 }
 
+func (j *jsiiProxy_NetappVolume)SetLargeCapacity(val interface{}) {
+	if err := j.validateSetLargeCapacityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"largeCapacity",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetappVolume)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1124,6 +1183,17 @@ func (j *jsiiProxy_NetappVolume)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappVolume)SetMultipleEndpoints(val interface{}) {
+	if err := j.validateSetMultipleEndpointsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"multipleEndpoints",
 		val,
 	)
 }
@@ -1717,6 +1787,22 @@ func (n *jsiiProxy_NetappVolume) ResetLabels() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolume) ResetLargeCapacity() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetLargeCapacity",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolume) ResetMultipleEndpoints() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetMultipleEndpoints",
 		nil, // no parameters
 	)
 }

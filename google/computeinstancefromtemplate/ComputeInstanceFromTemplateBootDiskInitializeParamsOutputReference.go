@@ -50,6 +50,9 @@ type ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference interfac
 	ResourceManagerTags() *map[string]*string
 	SetResourceManagerTags(val *map[string]*string)
 	ResourceManagerTagsInput() *map[string]*string
+	ResourcePolicies() *[]*string
+	SetResourcePolicies(val *[]*string)
+	ResourcePoliciesInput() *[]*string
 	Size() *float64
 	SetSize(val *float64)
 	SizeInput() *float64
@@ -97,6 +100,7 @@ type ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference interfac
 	ResetProvisionedIops()
 	ResetProvisionedThroughput()
 	ResetResourceManagerTags()
+	ResetResourcePolicies()
 	ResetSize()
 	ResetStoragePool()
 	ResetType()
@@ -280,6 +284,26 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	_jsii_.Get(
 		j,
 		"resourceManagerTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResourcePolicies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourcePolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResourcePoliciesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourcePoliciesInput",
 		&returns,
 	)
 	return returns
@@ -488,6 +512,17 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	_jsii_.Set(
 		j,
 		"resourceManagerTags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetResourcePolicies(val *[]*string) {
+	if err := j.validateSetResourcePoliciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourcePolicies",
 		val,
 	)
 }
@@ -777,6 +812,14 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	_jsii_.InvokeVoid(
 		c,
 		"resetResourceManagerTags",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResetResourcePolicies() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetResourcePolicies",
 		nil, // no parameters
 	)
 }

@@ -111,6 +111,10 @@ func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetDescriptionParamete
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetHttpKeepAliveTimeoutSecParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionTargetHttpsProxy) validateSetIdParameters(val *string) error {
 	return nil
 }

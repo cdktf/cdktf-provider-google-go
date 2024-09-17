@@ -67,6 +67,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	ShieldedInstanceConfig() DataGoogleContainerClusterNodeConfigShieldedInstanceConfigList
 	SoleTenantConfig() DataGoogleContainerClusterNodeConfigSoleTenantConfigList
 	Spot() cdktf.IResolvable
+	StoragePools() *[]*string
 	Tags() *[]*string
 	Taint() DataGoogleContainerClusterNodeConfigTaintList
 	// Experimental.
@@ -512,6 +513,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Spot() c
 	_jsii_.Get(
 		j,
 		"spot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) StoragePools() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"storagePools",
 		&returns,
 	)
 	return returns

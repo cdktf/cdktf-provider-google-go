@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/resources/compute_network_peering google_compute_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/compute_network_peering google_compute_network_peering}.
 type ComputeNetworkPeering interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -545,7 +545,7 @@ func (j *jsiiProxy_ComputeNetworkPeering) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/resources/compute_network_peering google_compute_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/compute_network_peering google_compute_network_peering} Resource.
 func NewComputeNetworkPeering(scope constructs.Construct, id *string, config *ComputeNetworkPeeringConfig) ComputeNetworkPeering {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewComputeNetworkPeering(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.2.0/docs/resources/compute_network_peering google_compute_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/compute_network_peering google_compute_network_peering} Resource.
 func NewComputeNetworkPeering_Override(c ComputeNetworkPeering, scope constructs.Construct, id *string, config *ComputeNetworkPeeringConfig) {
 	_init_.Initialize()
 
