@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/netapp_storage_pool google_netapp_storage_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/netapp_storage_pool google_netapp_storage_pool}.
 type NetappStoragePool interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
 	SetActiveDirectory(val *string)
 	ActiveDirectoryInput() *string
+	AllowAutoTiering() interface{}
+	SetAllowAutoTiering(val interface{})
+	AllowAutoTieringInput() interface{}
 	CapacityGib() *string
 	SetCapacityGib(val *string)
 	CapacityGibInput() *string
@@ -149,6 +152,7 @@ type NetappStoragePool interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *NetappStoragePoolTimeouts)
 	ResetActiveDirectory()
+	ResetAllowAutoTiering()
 	ResetDescription()
 	ResetId()
 	ResetKmsConfig()
@@ -192,6 +196,26 @@ func (j *jsiiProxy_NetappStoragePool) ActiveDirectoryInput() *string {
 	_jsii_.Get(
 		j,
 		"activeDirectoryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappStoragePool) AllowAutoTiering() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAutoTiering",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappStoragePool) AllowAutoTieringInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAutoTieringInput",
 		&returns,
 	)
 	return returns
@@ -648,7 +672,7 @@ func (j *jsiiProxy_NetappStoragePool) VolumeCount() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewNetappStoragePool(scope constructs.Construct, id *string, config *NetappStoragePoolConfig) NetappStoragePool {
 	_init_.Initialize()
 
@@ -666,7 +690,7 @@ func NewNetappStoragePool(scope constructs.Construct, id *string, config *Netapp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewNetappStoragePool_Override(n NetappStoragePool, scope constructs.Construct, id *string, config *NetappStoragePoolConfig) {
 	_init_.Initialize()
 
@@ -684,6 +708,17 @@ func (j *jsiiProxy_NetappStoragePool)SetActiveDirectory(val *string) {
 	_jsii_.Set(
 		j,
 		"activeDirectory",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetappStoragePool)SetAllowAutoTiering(val interface{}) {
+	if err := j.validateSetAllowAutoTieringParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowAutoTiering",
 		val,
 	)
 }
@@ -1245,6 +1280,14 @@ func (n *jsiiProxy_NetappStoragePool) ResetActiveDirectory() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetActiveDirectory",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappStoragePool) ResetAllowAutoTiering() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAllowAutoTiering",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/netapp_volume google_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/netapp_volume google_netapp_volume}.
 type NetappVolume interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
@@ -23,6 +23,7 @@ type NetappVolume interface {
 	CapacityGibInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ColdTierSizeGib() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -137,6 +138,8 @@ type NetappVolume interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TieringPolicy() NetappVolumeTieringPolicyOutputReference
+	TieringPolicyInput() *NetappVolumeTieringPolicy
 	Timeouts() NetappVolumeTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UnixPermissions() *string
@@ -190,6 +193,7 @@ type NetappVolume interface {
 	PutExportPolicy(value *NetappVolumeExportPolicy)
 	PutRestoreParameters(value *NetappVolumeRestoreParameters)
 	PutSnapshotPolicy(value *NetappVolumeSnapshotPolicy)
+	PutTieringPolicy(value *NetappVolumeTieringPolicy)
 	PutTimeouts(value *NetappVolumeTimeouts)
 	ResetBackupConfig()
 	ResetDeletionPolicy()
@@ -210,6 +214,7 @@ type NetappVolume interface {
 	ResetSmbSettings()
 	ResetSnapshotDirectory()
 	ResetSnapshotPolicy()
+	ResetTieringPolicy()
 	ResetTimeouts()
 	ResetUnixPermissions()
 	SynthesizeAttributes() *map[string]interface{}
@@ -285,6 +290,16 @@ func (j *jsiiProxy_NetappVolume) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) ColdTierSizeGib() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"coldTierSizeGib",
 		&returns,
 	)
 	return returns
@@ -970,6 +985,26 @@ func (j *jsiiProxy_NetappVolume) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NetappVolume) TieringPolicy() NetappVolumeTieringPolicyOutputReference {
+	var returns NetappVolumeTieringPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"tieringPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) TieringPolicyInput() *NetappVolumeTieringPolicy {
+	var returns *NetappVolumeTieringPolicy
+	_jsii_.Get(
+		j,
+		"tieringPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetappVolume) Timeouts() NetappVolumeTimeoutsOutputReference {
 	var returns NetappVolumeTimeoutsOutputReference
 	_jsii_.Get(
@@ -1021,7 +1056,7 @@ func (j *jsiiProxy_NetappVolume) UsedGib() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/netapp_volume google_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/netapp_volume google_netapp_volume} Resource.
 func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolumeConfig) NetappVolume {
 	_init_.Initialize()
 
@@ -1039,7 +1074,7 @@ func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolum
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/netapp_volume google_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/netapp_volume google_netapp_volume} Resource.
 func NewNetappVolume_Override(n NetappVolume, scope constructs.Construct, id *string, config *NetappVolumeConfig) {
 	_init_.Initialize()
 
@@ -1724,6 +1759,17 @@ func (n *jsiiProxy_NetappVolume) PutSnapshotPolicy(value *NetappVolumeSnapshotPo
 	)
 }
 
+func (n *jsiiProxy_NetappVolume) PutTieringPolicy(value *NetappVolumeTieringPolicy) {
+	if err := n.validatePutTieringPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putTieringPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetappVolume) PutTimeouts(value *NetappVolumeTimeouts) {
 	if err := n.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1867,6 +1913,14 @@ func (n *jsiiProxy_NetappVolume) ResetSnapshotPolicy() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetSnapshotPolicy",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolume) ResetTieringPolicy() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTieringPolicy",
 		nil, // no parameters
 	)
 }

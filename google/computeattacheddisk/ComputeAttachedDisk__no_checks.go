@@ -119,6 +119,10 @@ func (j *jsiiProxy_ComputeAttachedDisk) validateSetInstanceParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_ComputeAttachedDisk) validateSetInterfaceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeAttachedDisk) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

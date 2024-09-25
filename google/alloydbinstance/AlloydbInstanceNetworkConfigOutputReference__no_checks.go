@@ -63,6 +63,10 @@ func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) validateSetCompl
 	return nil
 }
 
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) validateSetEnableOutboundPublicIpParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) validateSetEnablePublicIpParameters(val interface{}) error {
 	return nil
 }

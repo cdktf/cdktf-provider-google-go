@@ -91,6 +91,10 @@ func (n *jsiiProxy_NetappVolume) validatePutSnapshotPolicyParameters(value *Neta
 	return nil
 }
 
+func (n *jsiiProxy_NetappVolume) validatePutTieringPolicyParameters(value *NetappVolumeTieringPolicy) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolume) validatePutTimeoutsParameters(value *NetappVolumeTimeouts) error {
 	return nil
 }

@@ -81,6 +81,7 @@ type ContainerNodePoolNodeConfigKubeletConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCpuCfsQuota()
 	ResetCpuCfsQuotaPeriod()
+	ResetCpuManagerPolicy()
 	ResetInsecureKubeletReadonlyPortEnabled()
 	ResetPodPidsLimit()
 	// Produce the Token's value at resolution time.
@@ -604,6 +605,14 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) Rese
 	_jsii_.InvokeVoid(
 		c,
 		"resetCpuCfsQuotaPeriod",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) ResetCpuManagerPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCpuManagerPolicy",
 		nil, // no parameters
 	)
 }

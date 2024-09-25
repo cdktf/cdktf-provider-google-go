@@ -22,6 +22,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "capacityGib", GoGetter: "CapacityGib"},
 			_jsii_.MemberProperty{JsiiProperty: "capacityGibInput", GoGetter: "CapacityGibInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "coldTierSizeGib", GoGetter: "ColdTierSizeGib"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -86,6 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putExportPolicy", GoMethod: "PutExportPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putRestoreParameters", GoMethod: "PutRestoreParameters"},
 			_jsii_.MemberMethod{JsiiMethod: "putSnapshotPolicy", GoMethod: "PutSnapshotPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "putTieringPolicy", GoMethod: "PutTieringPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackupConfig", GoMethod: "ResetBackupConfig"},
@@ -105,6 +107,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSmbSettings", GoMethod: "ResetSmbSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSnapshotDirectory", GoMethod: "ResetSnapshotDirectory"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSnapshotPolicy", GoMethod: "ResetSnapshotPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTieringPolicy", GoMethod: "ResetTieringPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUnixPermissions", GoMethod: "ResetUnixPermissions"},
 			_jsii_.MemberProperty{JsiiProperty: "restoreParameters", GoGetter: "RestoreParameters"},
@@ -132,6 +135,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformLabels", GoGetter: "TerraformLabels"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
+			_jsii_.MemberProperty{JsiiProperty: "tieringPolicy", GoGetter: "TieringPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "tieringPolicyInput", GoGetter: "TieringPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "timeouts", GoGetter: "Timeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "timeoutsInput", GoGetter: "TimeoutsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
@@ -660,6 +665,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.netappVolume.NetappVolumeTieringPolicy",
+		reflect.TypeOf((*NetappVolumeTieringPolicy)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference",
+		reflect.TypeOf((*NetappVolumeTieringPolicyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "coolingThresholdDays", GoGetter: "CoolingThresholdDays"},
+			_jsii_.MemberProperty{JsiiProperty: "coolingThresholdDaysInput", GoGetter: "CoolingThresholdDaysInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCoolingThresholdDays", GoMethod: "ResetCoolingThresholdDays"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTierAction", GoMethod: "ResetTierAction"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "tierAction", GoGetter: "TierAction"},
+			_jsii_.MemberProperty{JsiiProperty: "tierActionInput", GoGetter: "TierActionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_NetappVolumeTieringPolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

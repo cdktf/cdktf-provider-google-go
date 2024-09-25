@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/filestore_instance google_filestore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/filestore_instance google_filestore_instance}.
 type FilestoreInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,12 @@ type FilestoreInstance interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DeletionProtectionEnabled() interface{}
+	SetDeletionProtectionEnabled(val interface{})
+	DeletionProtectionEnabledInput() interface{}
+	DeletionProtectionReason() *string
+	SetDeletionProtectionReason(val *string)
+	DeletionProtectionReasonInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -144,6 +150,8 @@ type FilestoreInstance interface {
 	PutFileShares(value *FilestoreInstanceFileShares)
 	PutNetworks(value interface{})
 	PutTimeouts(value *FilestoreInstanceTimeouts)
+	ResetDeletionProtectionEnabled()
+	ResetDeletionProtectionReason()
 	ResetDescription()
 	ResetId()
 	ResetKmsKeyName()
@@ -218,6 +226,46 @@ func (j *jsiiProxy_FilestoreInstance) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstance) DeletionProtectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstance) DeletionProtectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstance) DeletionProtectionReason() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionProtectionReason",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstance) DeletionProtectionReasonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionProtectionReasonInput",
 		&returns,
 	)
 	return returns
@@ -614,7 +662,7 @@ func (j *jsiiProxy_FilestoreInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/filestore_instance google_filestore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/filestore_instance google_filestore_instance} Resource.
 func NewFilestoreInstance(scope constructs.Construct, id *string, config *FilestoreInstanceConfig) FilestoreInstance {
 	_init_.Initialize()
 
@@ -632,7 +680,7 @@ func NewFilestoreInstance(scope constructs.Construct, id *string, config *Filest
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/filestore_instance google_filestore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/filestore_instance google_filestore_instance} Resource.
 func NewFilestoreInstance_Override(f FilestoreInstance, scope constructs.Construct, id *string, config *FilestoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -661,6 +709,28 @@ func (j *jsiiProxy_FilestoreInstance)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FilestoreInstance)SetDeletionProtectionEnabled(val interface{}) {
+	if err := j.validateSetDeletionProtectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtectionEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FilestoreInstance)SetDeletionProtectionReason(val *string) {
+	if err := j.validateSetDeletionProtectionReasonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtectionReason",
 		val,
 	)
 }
@@ -1193,6 +1263,22 @@ func (f *jsiiProxy_FilestoreInstance) PutTimeouts(value *FilestoreInstanceTimeou
 		f,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FilestoreInstance) ResetDeletionProtectionEnabled() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDeletionProtectionEnabled",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FilestoreInstance) ResetDeletionProtectionReason() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDeletionProtectionReason",
+		nil, // no parameters
 	)
 }
 

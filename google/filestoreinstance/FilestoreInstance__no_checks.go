@@ -111,6 +111,14 @@ func (j *jsiiProxy_FilestoreInstance) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_FilestoreInstance) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_FilestoreInstance) validateSetDeletionProtectionReasonParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FilestoreInstance) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

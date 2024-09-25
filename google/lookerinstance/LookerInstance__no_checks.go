@@ -135,6 +135,10 @@ func (j *jsiiProxy_LookerInstance) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_LookerInstance) validateSetFipsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LookerInstance) validateSetIdParameters(val *string) error {
 	return nil
 }

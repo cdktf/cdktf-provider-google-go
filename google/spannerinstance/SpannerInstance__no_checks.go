@@ -115,6 +115,10 @@ func (j *jsiiProxy_SpannerInstance) validateSetDisplayNameParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_SpannerInstance) validateSetEditionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpannerInstance) validateSetForceDestroyParameters(val interface{}) error {
 	return nil
 }

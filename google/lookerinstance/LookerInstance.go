@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/looker_instance google_looker_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/looker_instance google_looker_instance}.
 type LookerInstance interface {
 	cdktf.TerraformResource
 	AdminSettings() LookerInstanceAdminSettingsOutputReference
@@ -44,6 +44,9 @@ type LookerInstance interface {
 	EgressPublicIp() *string
 	EncryptionConfig() LookerInstanceEncryptionConfigOutputReference
 	EncryptionConfigInput() *LookerInstanceEncryptionConfig
+	FipsEnabled() interface{}
+	SetFipsEnabled(val interface{})
+	FipsEnabledInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -167,6 +170,7 @@ type LookerInstance interface {
 	ResetCustomDomain()
 	ResetDenyMaintenancePeriod()
 	ResetEncryptionConfig()
+	ResetFipsEnabled()
 	ResetId()
 	ResetMaintenanceWindow()
 	ResetOauthConfig()
@@ -364,6 +368,26 @@ func (j *jsiiProxy_LookerInstance) EncryptionConfigInput() *LookerInstanceEncryp
 	_jsii_.Get(
 		j,
 		"encryptionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) FipsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fipsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) FipsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fipsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -770,7 +794,7 @@ func (j *jsiiProxy_LookerInstance) UserMetadataInput() *LookerInstanceUserMetada
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/looker_instance google_looker_instance} Resource.
 func NewLookerInstance(scope constructs.Construct, id *string, config *LookerInstanceConfig) LookerInstance {
 	_init_.Initialize()
 
@@ -788,7 +812,7 @@ func NewLookerInstance(scope constructs.Construct, id *string, config *LookerIns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/looker_instance google_looker_instance} Resource.
 func NewLookerInstance_Override(l LookerInstance, scope constructs.Construct, id *string, config *LookerInstanceConfig) {
 	_init_.Initialize()
 
@@ -836,6 +860,17 @@ func (j *jsiiProxy_LookerInstance)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LookerInstance)SetFipsEnabled(val interface{}) {
+	if err := j.validateSetFipsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fipsEnabled",
 		val,
 	)
 }
@@ -1443,6 +1478,14 @@ func (l *jsiiProxy_LookerInstance) ResetEncryptionConfig() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetEncryptionConfig",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LookerInstance) ResetFipsEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetFipsEnabled",
 		nil, // no parameters
 	)
 }

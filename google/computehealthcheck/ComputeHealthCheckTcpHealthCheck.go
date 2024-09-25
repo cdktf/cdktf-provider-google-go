@@ -7,11 +7,11 @@ package computehealthcheck
 type ComputeHealthCheckTcpHealthCheck struct {
 	// The TCP port number for the TCP health check request. The default value is 443.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/compute_health_check#port ComputeHealthCheck#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/compute_health_check#port ComputeHealthCheck#port}
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 	// Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/compute_health_check#port_name ComputeHealthCheck#port_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/compute_health_check#port_name ComputeHealthCheck#port_name}
 	PortName *string `field:"optional" json:"portName" yaml:"portName"`
 	// Specifies how port is selected for health checking, can be one of the following values:.
 	//
@@ -27,13 +27,13 @@ type ComputeHealthCheckTcpHealthCheck struct {
 	// If not specified, TCP health check follows behavior specified in 'port' and
 	// 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/compute_health_check#port_specification ComputeHealthCheck#port_specification}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/compute_health_check#port_specification ComputeHealthCheck#port_specification}
 	PortSpecification *string `field:"optional" json:"portSpecification" yaml:"portSpecification"`
 	// Specifies the type of proxy header to append before sending data to the backend.
 	//
 	// Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/compute_health_check#proxy_header ComputeHealthCheck#proxy_header}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/compute_health_check#proxy_header ComputeHealthCheck#proxy_header}
 	ProxyHeader *string `field:"optional" json:"proxyHeader" yaml:"proxyHeader"`
 	// The application data to send once the TCP connection has been established (default value is empty).
 	//
@@ -41,7 +41,7 @@ type ComputeHealthCheckTcpHealthCheck struct {
 	// empty, the connection establishment alone will indicate health. The request
 	// data can only be ASCII.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/compute_health_check#request ComputeHealthCheck#request}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/compute_health_check#request ComputeHealthCheck#request}
 	Request *string `field:"optional" json:"request" yaml:"request"`
 	// The bytes to match against the beginning of the response data.
 	//
@@ -49,7 +49,7 @@ type ComputeHealthCheckTcpHealthCheck struct {
 	// (the default value), any response will indicate health. The response data
 	// can only be ASCII.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.3.0/docs/resources/compute_health_check#response ComputeHealthCheck#response}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/compute_health_check#response ComputeHealthCheck#response}
 	Response *string `field:"optional" json:"response" yaml:"response"`
 }
 

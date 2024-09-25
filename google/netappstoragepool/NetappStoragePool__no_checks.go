@@ -99,6 +99,10 @@ func (j *jsiiProxy_NetappStoragePool) validateSetActiveDirectoryParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_NetappStoragePool) validateSetAllowAutoTieringParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappStoragePool) validateSetCapacityGibParameters(val *string) error {
 	return nil
 }

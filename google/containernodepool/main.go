@@ -1201,6 +1201,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "podPidsLimitInput", GoGetter: "PodPidsLimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCpuCfsQuota", GoMethod: "ResetCpuCfsQuota"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCpuCfsQuotaPeriod", GoMethod: "ResetCpuCfsQuotaPeriod"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCpuManagerPolicy", GoMethod: "ResetCpuManagerPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInsecureKubeletReadonlyPortEnabled", GoMethod: "ResetInsecureKubeletReadonlyPortEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPodPidsLimit", GoMethod: "ResetPodPidsLimit"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

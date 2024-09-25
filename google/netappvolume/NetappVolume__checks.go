@@ -251,6 +251,17 @@ func (n *jsiiProxy_NetappVolume) validatePutSnapshotPolicyParameters(value *Neta
 	return nil
 }
 
+func (n *jsiiProxy_NetappVolume) validatePutTieringPolicyParameters(value *NetappVolumeTieringPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolume) validatePutTimeoutsParameters(value *NetappVolumeTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
