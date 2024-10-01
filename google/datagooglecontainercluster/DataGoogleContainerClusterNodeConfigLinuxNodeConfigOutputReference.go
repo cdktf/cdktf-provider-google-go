@@ -31,6 +31,7 @@ type DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference interfac
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HugepagesConfig() DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigList
 	InternalValue() *DataGoogleContainerClusterNodeConfigLinuxNodeConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodeConfigLinuxNodeConfig)
 	Sysctls() cdktf.StringMap
@@ -126,6 +127,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputRefe
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) HugepagesConfig() DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigList {
+	var returns DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigList
+	_jsii_.Get(
+		j,
+		"hugepagesConfig",
 		&returns,
 	)
 	return returns

@@ -32,15 +32,15 @@ type ComputeRegionTargetHttpProxyConfig struct {
 	// characters must be a dash, lowercase letter, or digit, except the last
 	// character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/compute_region_target_http_proxy#name ComputeRegionTargetHttpProxy#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/compute_region_target_http_proxy#name ComputeRegionTargetHttpProxy#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// A reference to the RegionUrlMap resource that defines the mapping from URL to the BackendService.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/compute_region_target_http_proxy#url_map ComputeRegionTargetHttpProxy#url_map}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/compute_region_target_http_proxy#url_map ComputeRegionTargetHttpProxy#url_map}
 	UrlMap *string `field:"required" json:"urlMap" yaml:"urlMap"`
 	// An optional description of this resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/compute_region_target_http_proxy#description ComputeRegionTargetHttpProxy#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/compute_region_target_http_proxy#description ComputeRegionTargetHttpProxy#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Specifies how long to keep a connection open, after completing a response, while there is no matching traffic (in seconds).
 	//
@@ -49,24 +49,24 @@ type ComputeRegionTargetHttpProxyConfig struct {
 	// HTTP(S) load balancer, the minimum allowed value is 5 seconds and the
 	// maximum allowed value is 600 seconds.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/compute_region_target_http_proxy#http_keep_alive_timeout_sec ComputeRegionTargetHttpProxy#http_keep_alive_timeout_sec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/compute_region_target_http_proxy#http_keep_alive_timeout_sec ComputeRegionTargetHttpProxy#http_keep_alive_timeout_sec}
 	HttpKeepAliveTimeoutSec *float64 `field:"optional" json:"httpKeepAliveTimeoutSec" yaml:"httpKeepAliveTimeoutSec"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/compute_region_target_http_proxy#id ComputeRegionTargetHttpProxy#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/compute_region_target_http_proxy#id ComputeRegionTargetHttpProxy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/compute_region_target_http_proxy#project ComputeRegionTargetHttpProxy#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/compute_region_target_http_proxy#project ComputeRegionTargetHttpProxy#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The Region in which the created target https proxy should reside.
 	//
 	// If it is not provided, the provider region is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/compute_region_target_http_proxy#region ComputeRegionTargetHttpProxy#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/compute_region_target_http_proxy#region ComputeRegionTargetHttpProxy#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/compute_region_target_http_proxy#timeouts ComputeRegionTargetHttpProxy#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/compute_region_target_http_proxy#timeouts ComputeRegionTargetHttpProxy#timeouts}
 	Timeouts *ComputeRegionTargetHttpProxyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

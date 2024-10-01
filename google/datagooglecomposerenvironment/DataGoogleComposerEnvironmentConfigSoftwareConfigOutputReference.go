@@ -14,6 +14,7 @@ import (
 type DataGoogleComposerEnvironmentConfigSoftwareConfigOutputReference interface {
 	cdktf.ComplexObject
 	AirflowConfigOverrides() cdktf.StringMap
+	CloudDataLineageIntegration() DataGoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -90,6 +91,16 @@ func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigSoftwareConfigOutputRefere
 	_jsii_.Get(
 		j,
 		"airflowConfigOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigSoftwareConfigOutputReference) CloudDataLineageIntegration() DataGoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationList {
+	var returns DataGoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationList
+	_jsii_.Get(
+		j,
+		"cloudDataLineageIntegration",
 		&returns,
 	)
 	return returns

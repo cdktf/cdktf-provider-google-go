@@ -63,6 +63,10 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	return nil
 }
 
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) validateSetIncludeImportRangesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) validateSetInternalValueParameters(val *NetworkConnectivitySpokeLinkedRouterApplianceInstances) error {
 	return nil
 }

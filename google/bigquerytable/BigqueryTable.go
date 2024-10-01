@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/bigquery_table google_bigquery_table}.
 type BigqueryTable interface {
 	cdktf.TerraformResource
+	BiglakeConfiguration() BigqueryTableBiglakeConfigurationOutputReference
+	BiglakeConfigurationInput() *BigqueryTableBiglakeConfiguration
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Clustering() *[]*string
@@ -173,6 +175,7 @@ type BigqueryTable interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBiglakeConfiguration(value *BigqueryTableBiglakeConfiguration)
 	PutEncryptionConfiguration(value *BigqueryTableEncryptionConfiguration)
 	PutExternalDataConfiguration(value *BigqueryTableExternalDataConfiguration)
 	PutMaterializedView(value *BigqueryTableMaterializedView)
@@ -181,6 +184,7 @@ type BigqueryTable interface {
 	PutTableReplicationInfo(value *BigqueryTableTableReplicationInfo)
 	PutTimePartitioning(value *BigqueryTableTimePartitioning)
 	PutView(value *BigqueryTableView)
+	ResetBiglakeConfiguration()
 	ResetClustering()
 	ResetDeletionProtection()
 	ResetDescription()
@@ -220,6 +224,26 @@ type BigqueryTable interface {
 // The jsii proxy struct for BigqueryTable
 type jsiiProxy_BigqueryTable struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_BigqueryTable) BiglakeConfiguration() BigqueryTableBiglakeConfigurationOutputReference {
+	var returns BigqueryTableBiglakeConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"biglakeConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) BiglakeConfigurationInput() *BigqueryTableBiglakeConfiguration {
+	var returns *BigqueryTableBiglakeConfiguration
+	_jsii_.Get(
+		j,
+		"biglakeConfigurationInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_BigqueryTable) CdktfStack() cdktf.TerraformStack {
@@ -933,7 +957,7 @@ func (j *jsiiProxy_BigqueryTable) ViewInput() *BigqueryTableView {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTableConfig) BigqueryTable {
 	_init_.Initialize()
 
@@ -951,7 +975,7 @@ func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable_Override(b BigqueryTable, scope constructs.Construct, id *string, config *BigqueryTableConfig) {
 	_init_.Initialize()
 
@@ -1537,6 +1561,17 @@ func (b *jsiiProxy_BigqueryTable) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (b *jsiiProxy_BigqueryTable) PutBiglakeConfiguration(value *BigqueryTableBiglakeConfiguration) {
+	if err := b.validatePutBiglakeConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putBiglakeConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigqueryTable) PutEncryptionConfiguration(value *BigqueryTableEncryptionConfiguration) {
 	if err := b.validatePutEncryptionConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1622,6 +1657,14 @@ func (b *jsiiProxy_BigqueryTable) PutView(value *BigqueryTableView) {
 		b,
 		"putView",
 		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetBiglakeConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetBiglakeConfiguration",
+		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/looker_instance google_looker_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/looker_instance google_looker_instance}.
 type LookerInstance interface {
 	cdktf.TerraformResource
 	AdminSettings() LookerInstanceAdminSettingsOutputReference
@@ -92,6 +92,11 @@ type LookerInstance interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PscConfig() LookerInstancePscConfigOutputReference
+	PscConfigInput() *LookerInstancePscConfig
+	PscEnabled() interface{}
+	SetPscEnabled(val interface{})
+	PscEnabledInput() interface{}
 	PublicIpEnabled() interface{}
 	SetPublicIpEnabled(val interface{})
 	PublicIpEnabledInput() interface{}
@@ -163,6 +168,7 @@ type LookerInstance interface {
 	PutEncryptionConfig(value *LookerInstanceEncryptionConfig)
 	PutMaintenanceWindow(value *LookerInstanceMaintenanceWindow)
 	PutOauthConfig(value *LookerInstanceOauthConfig)
+	PutPscConfig(value *LookerInstancePscConfig)
 	PutTimeouts(value *LookerInstanceTimeouts)
 	PutUserMetadata(value *LookerInstanceUserMetadata)
 	ResetAdminSettings()
@@ -180,6 +186,8 @@ type LookerInstance interface {
 	ResetPlatformEdition()
 	ResetPrivateIpEnabled()
 	ResetProject()
+	ResetPscConfig()
+	ResetPscEnabled()
 	ResetPublicIpEnabled()
 	ResetRegion()
 	ResetReservedRange()
@@ -643,6 +651,46 @@ func (j *jsiiProxy_LookerInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LookerInstance) PscConfig() LookerInstancePscConfigOutputReference {
+	var returns LookerInstancePscConfigOutputReference
+	_jsii_.Get(
+		j,
+		"pscConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) PscConfigInput() *LookerInstancePscConfig {
+	var returns *LookerInstancePscConfig
+	_jsii_.Get(
+		j,
+		"pscConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) PscEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pscEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) PscEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pscEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LookerInstance) PublicIpEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -794,7 +842,7 @@ func (j *jsiiProxy_LookerInstance) UserMetadataInput() *LookerInstanceUserMetada
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/looker_instance google_looker_instance} Resource.
 func NewLookerInstance(scope constructs.Construct, id *string, config *LookerInstanceConfig) LookerInstance {
 	_init_.Initialize()
 
@@ -812,7 +860,7 @@ func NewLookerInstance(scope constructs.Construct, id *string, config *LookerIns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/looker_instance google_looker_instance} Resource.
 func NewLookerInstance_Override(l LookerInstance, scope constructs.Construct, id *string, config *LookerInstanceConfig) {
 	_init_.Initialize()
 
@@ -964,6 +1012,17 @@ func (j *jsiiProxy_LookerInstance)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LookerInstance)SetPscEnabled(val interface{}) {
+	if err := j.validateSetPscEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pscEnabled",
 		val,
 	)
 }
@@ -1420,6 +1479,17 @@ func (l *jsiiProxy_LookerInstance) PutOauthConfig(value *LookerInstanceOauthConf
 	)
 }
 
+func (l *jsiiProxy_LookerInstance) PutPscConfig(value *LookerInstancePscConfig) {
+	if err := l.validatePutPscConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putPscConfig",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LookerInstance) PutTimeouts(value *LookerInstanceTimeouts) {
 	if err := l.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1542,6 +1612,22 @@ func (l *jsiiProxy_LookerInstance) ResetProject() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LookerInstance) ResetPscConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPscConfig",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LookerInstance) ResetPscEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPscEnabled",
 		nil, // no parameters
 	)
 }

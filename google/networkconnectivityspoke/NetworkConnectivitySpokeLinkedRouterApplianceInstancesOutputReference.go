@@ -30,6 +30,9 @@ type NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference inter
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IncludeImportRanges() *[]*string
+	SetIncludeImportRanges(val *[]*string)
+	IncludeImportRangesInput() *[]*string
 	Instances() NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList
 	InstancesInput() interface{}
 	InternalValue() *NetworkConnectivitySpokeLinkedRouterApplianceInstances
@@ -70,6 +73,7 @@ type NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference inter
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutInstances(value interface{})
+	ResetIncludeImportRanges()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -120,6 +124,26 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) IncludeImportRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeImportRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) IncludeImportRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeImportRangesInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +265,17 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference)SetIncludeImportRanges(val *[]*string) {
+	if err := j.validateSetIncludeImportRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeImportRanges",
 		val,
 	)
 }
@@ -483,6 +518,14 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 		n,
 		"putInstances",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) ResetIncludeImportRanges() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIncludeImportRanges",
+		nil, // no parameters
 	)
 }
 

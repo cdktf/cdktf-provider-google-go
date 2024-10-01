@@ -30,6 +30,9 @@ type NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IncludeImportRanges() *[]*string
+	SetIncludeImportRanges(val *[]*string)
+	IncludeImportRangesInput() *[]*string
 	InternalValue() *NetworkConnectivitySpokeLinkedVpnTunnels
 	SetInternalValue(val *NetworkConnectivitySpokeLinkedVpnTunnels)
 	SiteToSiteDataTransfer() interface{}
@@ -70,6 +73,7 @@ type NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIncludeImportRanges()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -120,6 +124,26 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) Fqn(
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) IncludeImportRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeImportRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) IncludeImportRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeImportRangesInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +265,17 @@ func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetCo
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)SetIncludeImportRanges(val *[]*string) {
+	if err := j.validateSetIncludeImportRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeImportRanges",
 		val,
 	)
 }
@@ -484,6 +519,14 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) Inte
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) ResetIncludeImportRanges() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIncludeImportRanges",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

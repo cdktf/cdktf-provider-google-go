@@ -63,6 +63,10 @@ func (j *jsiiProxy_ComputeInterconnectMacsecOutputReference) validateSetComplexO
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInterconnectMacsecOutputReference) validateSetFailOpenParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInterconnectMacsecOutputReference) validateSetInternalValueParameters(val *ComputeInterconnectMacsec) error {
 	return nil
 }

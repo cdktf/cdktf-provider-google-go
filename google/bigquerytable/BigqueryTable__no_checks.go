@@ -75,6 +75,10 @@ func (b *jsiiProxy_BigqueryTable) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryTable) validatePutBiglakeConfigurationParameters(value *BigqueryTableBiglakeConfiguration) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryTable) validatePutEncryptionConfigurationParameters(value *BigqueryTableEncryptionConfiguration) error {
 	return nil
 }

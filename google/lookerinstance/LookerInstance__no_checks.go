@@ -99,6 +99,10 @@ func (l *jsiiProxy_LookerInstance) validatePutOauthConfigParameters(value *Looke
 	return nil
 }
 
+func (l *jsiiProxy_LookerInstance) validatePutPscConfigParameters(value *LookerInstancePscConfig) error {
+	return nil
+}
+
 func (l *jsiiProxy_LookerInstance) validatePutTimeoutsParameters(value *LookerInstanceTimeouts) error {
 	return nil
 }
@@ -164,6 +168,10 @@ func (j *jsiiProxy_LookerInstance) validateSetProjectParameters(val *string) err
 }
 
 func (j *jsiiProxy_LookerInstance) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LookerInstance) validateSetPscEnabledParameters(val interface{}) error {
 	return nil
 }
 

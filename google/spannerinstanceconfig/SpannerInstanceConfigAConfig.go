@@ -24,17 +24,17 @@ type SpannerInstanceConfigAConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of this instance configuration as it appears in UIs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/spanner_instance_config#display_name SpannerInstanceConfigA#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/spanner_instance_config#display_name SpannerInstanceConfigA#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// replicas block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/spanner_instance_config#replicas SpannerInstanceConfigA#replicas}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/spanner_instance_config#replicas SpannerInstanceConfigA#replicas}
 	Replicas interface{} `field:"required" json:"replicas" yaml:"replicas"`
 	// Base configuration name, e.g. nam3, based on which this configuration is created. Only set for user managed configurations. baseConfig must refer to a configuration of type GOOGLE_MANAGED in the same project as this configuration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/spanner_instance_config#base_config SpannerInstanceConfigA#base_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/spanner_instance_config#base_config SpannerInstanceConfigA#base_config}
 	BaseConfig *string `field:"optional" json:"baseConfig" yaml:"baseConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/spanner_instance_config#id SpannerInstanceConfigA#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/spanner_instance_config#id SpannerInstanceConfigA#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,17 +44,17 @@ type SpannerInstanceConfigAConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/spanner_instance_config#labels SpannerInstanceConfigA#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/spanner_instance_config#labels SpannerInstanceConfigA#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// A unique identifier for the instance configuration. Values are of the form projects/<project>/instanceConfigs/[a-z][-a-z0-9]*.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/spanner_instance_config#name SpannerInstanceConfigA#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/spanner_instance_config#name SpannerInstanceConfigA#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/spanner_instance_config#project SpannerInstanceConfigA#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/spanner_instance_config#project SpannerInstanceConfigA#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.4.0/docs/resources/spanner_instance_config#timeouts SpannerInstanceConfigA#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/spanner_instance_config#timeouts SpannerInstanceConfigA#timeouts}
 	Timeouts *SpannerInstanceConfigTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

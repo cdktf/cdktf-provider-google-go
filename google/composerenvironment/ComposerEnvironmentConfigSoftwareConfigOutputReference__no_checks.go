@@ -47,6 +47,10 @@ func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) valid
 	return nil
 }
 
+func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) validatePutCloudDataLineageIntegrationParameters(value *ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -32,6 +32,8 @@ type ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference interface
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GcfsConfig() ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference
+	GcfsConfigInput() *ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig
 	InsecureKubeletReadonlyPortEnabled() *string
 	SetInsecureKubeletReadonlyPortEnabled(val *string)
 	InsecureKubeletReadonlyPortEnabledInput() *string
@@ -73,7 +75,9 @@ type ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutContainerdConfig(value *ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfig)
+	PutGcfsConfig(value *ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig)
 	ResetContainerdConfig()
+	ResetGcfsConfig()
 	ResetInsecureKubeletReadonlyPortEnabled()
 	ResetLoggingVariant()
 	// Produce the Token's value at resolution time.
@@ -146,6 +150,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputRefer
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) GcfsConfig() ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference {
+	var returns ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"gcfsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) GcfsConfigInput() *ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig {
+	var returns *ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig
+	_jsii_.Get(
+		j,
+		"gcfsConfigInput",
 		&returns,
 	)
 	return returns
@@ -523,10 +547,29 @@ func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputRefer
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) PutGcfsConfig(value *ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig) {
+	if err := c.validatePutGcfsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putGcfsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ResetContainerdConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetContainerdConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ResetGcfsConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGcfsConfig",
 		nil, // no parameters
 	)
 }

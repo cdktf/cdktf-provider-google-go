@@ -33,6 +33,8 @@ type ContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HugepagesConfig() ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference
+	HugepagesConfigInput() *ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig
 	InternalValue() *ContainerClusterNodeConfigLinuxNodeConfig
 	SetInternalValue(val *ContainerClusterNodeConfigLinuxNodeConfig)
 	Sysctls() *map[string]*string
@@ -70,7 +72,9 @@ type ContainerClusterNodeConfigLinuxNodeConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutHugepagesConfig(value *ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig)
 	ResetCgroupMode()
+	ResetHugepagesConfig()
 	ResetSysctls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -142,6 +146,26 @@ func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) Fqn
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) HugepagesConfig() ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference {
+	var returns ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference
+	_jsii_.Get(
+		j,
+		"hugepagesConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) HugepagesConfigInput() *ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig {
+	var returns *ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig
+	_jsii_.Get(
+		j,
+		"hugepagesConfigInput",
 		&returns,
 	)
 	return returns
@@ -488,10 +512,29 @@ func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) Int
 	return returns
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) PutHugepagesConfig(value *ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig) {
+	if err := c.validatePutHugepagesConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putHugepagesConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) ResetCgroupMode() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetCgroupMode",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigOutputReference) ResetHugepagesConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHugepagesConfig",
 		nil, // no parameters
 	)
 }

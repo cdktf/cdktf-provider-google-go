@@ -46,6 +46,9 @@ type ApigeeNatAddressTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type ApigeeNatAddressTimeoutsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_ApigeeNatAddressTimeoutsOutputReference) TerraformResource() 
 	return returns
 }
 
+func (j *jsiiProxy_ApigeeNatAddressTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeNatAddressTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewApigeeNatAddressTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApigeeNatAddressTimeoutsOutputReference {
 	_init_.Initialize()
@@ -298,6 +322,17 @@ func (j *jsiiProxy_ApigeeNatAddressTimeoutsOutputReference)SetTerraformResource(
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApigeeNatAddressTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (a *jsiiProxy_ApigeeNatAddressTimeoutsOutputReference) ResetDelete() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDelete",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApigeeNatAddressTimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUpdate",
 		nil, // no parameters
 	)
 }
