@@ -97,6 +97,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putIap", GoMethod: "PutIap"},
 			_jsii_.MemberMethod{JsiiMethod: "putLogConfig", GoMethod: "PutLogConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putOutlierDetection", GoMethod: "PutOutlierDetection"},
+			_jsii_.MemberMethod{JsiiMethod: "putStrongSessionAffinityCookie", GoMethod: "PutStrongSessionAffinityCookie"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
@@ -124,11 +125,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetProtocol", GoMethod: "ResetProtocol"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSessionAffinity", GoMethod: "ResetSessionAffinity"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStrongSessionAffinityCookie", GoMethod: "ResetStrongSessionAffinityCookie"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeoutSec", GoMethod: "ResetTimeoutSec"},
 			_jsii_.MemberProperty{JsiiProperty: "selfLink", GoGetter: "SelfLink"},
 			_jsii_.MemberProperty{JsiiProperty: "sessionAffinity", GoGetter: "SessionAffinity"},
 			_jsii_.MemberProperty{JsiiProperty: "sessionAffinityInput", GoGetter: "SessionAffinityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "strongSessionAffinityCookie", GoGetter: "StrongSessionAffinityCookie"},
+			_jsii_.MemberProperty{JsiiProperty: "strongSessionAffinityCookieInput", GoGetter: "StrongSessionAffinityCookieInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -891,6 +895,93 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRegionBackendServiceOutlierDetectionOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceStrongSessionAffinityCookie",
+		reflect.TypeOf((*ComputeRegionBackendServiceStrongSessionAffinityCookie)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference",
+		reflect.TypeOf((*ComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
+			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putTtl", GoMethod: "PutTtl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPath", GoMethod: "ResetPath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTtl", GoMethod: "ResetTtl"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "ttl", GoGetter: "Ttl"},
+			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceStrongSessionAffinityCookieTtl",
+		reflect.TypeOf((*ComputeRegionBackendServiceStrongSessionAffinityCookieTtl)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceStrongSessionAffinityCookieTtlOutputReference",
+		reflect.TypeOf((*ComputeRegionBackendServiceStrongSessionAffinityCookieTtlOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "nanos", GoGetter: "Nanos"},
+			_jsii_.MemberProperty{JsiiProperty: "nanosInput", GoGetter: "NanosInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNanos", GoMethod: "ResetNanos"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "seconds", GoGetter: "Seconds"},
+			_jsii_.MemberProperty{JsiiProperty: "secondsInput", GoGetter: "SecondsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeRegionBackendServiceStrongSessionAffinityCookieTtlOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

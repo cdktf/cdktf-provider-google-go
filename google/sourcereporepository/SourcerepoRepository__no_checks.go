@@ -107,6 +107,10 @@ func (j *jsiiProxy_SourcerepoRepository) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_SourcerepoRepository) validateSetCreateIgnoreAlreadyExistsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SourcerepoRepository) validateSetIdParameters(val *string) error {
 	return nil
 }

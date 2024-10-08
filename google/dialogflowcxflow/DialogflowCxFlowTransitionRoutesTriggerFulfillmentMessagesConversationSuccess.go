@@ -7,7 +7,7 @@ package dialogflowcxflow
 type DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccess struct {
 	// Custom metadata. Dialogflow doesn't impose any structure on this.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/dialogflow_cx_flow#metadata DialogflowCxFlow#metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/dialogflow_cx_flow#metadata DialogflowCxFlow#metadata}
 	Metadata *string `field:"optional" json:"metadata" yaml:"metadata"`
 }
 

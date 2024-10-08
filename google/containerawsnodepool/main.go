@@ -49,6 +49,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "kubeletConfig", GoGetter: "KubeletConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "kubeletConfigInput", GoGetter: "KubeletConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
@@ -69,6 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putAutoscaling", GoMethod: "PutAutoscaling"},
 			_jsii_.MemberMethod{JsiiMethod: "putConfig", GoMethod: "PutConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putKubeletConfig", GoMethod: "PutKubeletConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putManagement", GoMethod: "PutManagement"},
 			_jsii_.MemberMethod{JsiiMethod: "putMaxPodsConstraint", GoMethod: "PutMaxPodsConstraint"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
@@ -77,6 +80,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "reconciling", GoGetter: "Reconciling"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKubeletConfig", GoMethod: "ResetKubeletConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetManagement", GoMethod: "ResetManagement"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
@@ -494,6 +498,54 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ContainerAwsNodePoolConfigTaintsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolKubeletConfig",
+		reflect.TypeOf((*ContainerAwsNodePoolKubeletConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolKubeletConfigOutputReference",
+		reflect.TypeOf((*ContainerAwsNodePoolKubeletConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "cpuCfsQuota", GoGetter: "CpuCfsQuota"},
+			_jsii_.MemberProperty{JsiiProperty: "cpuCfsQuotaInput", GoGetter: "CpuCfsQuotaInput"},
+			_jsii_.MemberProperty{JsiiProperty: "cpuCfsQuotaPeriod", GoGetter: "CpuCfsQuotaPeriod"},
+			_jsii_.MemberProperty{JsiiProperty: "cpuCfsQuotaPeriodInput", GoGetter: "CpuCfsQuotaPeriodInput"},
+			_jsii_.MemberProperty{JsiiProperty: "cpuManagerPolicy", GoGetter: "CpuManagerPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "cpuManagerPolicyInput", GoGetter: "CpuManagerPolicyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "podPidsLimit", GoGetter: "PodPidsLimit"},
+			_jsii_.MemberProperty{JsiiProperty: "podPidsLimitInput", GoGetter: "PodPidsLimitInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCpuCfsQuota", GoMethod: "ResetCpuCfsQuota"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCpuCfsQuotaPeriod", GoMethod: "ResetCpuCfsQuotaPeriod"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCpuManagerPolicy", GoMethod: "ResetCpuManagerPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPodPidsLimit", GoMethod: "ResetPodPidsLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

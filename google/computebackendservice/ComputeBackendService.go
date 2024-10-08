@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/compute_backend_service google_compute_backend_service}.
 type ComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -134,6 +134,8 @@ type ComputeBackendService interface {
 	SessionAffinity() *string
 	SetSessionAffinity(val *string)
 	SessionAffinityInput() *string
+	StrongSessionAffinityCookie() ComputeBackendServiceStrongSessionAffinityCookieOutputReference
+	StrongSessionAffinityCookieInput() *ComputeBackendServiceStrongSessionAffinityCookie
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -197,6 +199,7 @@ type ComputeBackendService interface {
 	PutLogConfig(value *ComputeBackendServiceLogConfig)
 	PutOutlierDetection(value *ComputeBackendServiceOutlierDetection)
 	PutSecuritySettings(value *ComputeBackendServiceSecuritySettings)
+	PutStrongSessionAffinityCookie(value *ComputeBackendServiceStrongSessionAffinityCookie)
 	PutTimeouts(value *ComputeBackendServiceTimeouts)
 	ResetAffinityCookieTtlSec()
 	ResetBackend()
@@ -228,6 +231,7 @@ type ComputeBackendService interface {
 	ResetSecuritySettings()
 	ResetServiceLbPolicy()
 	ResetSessionAffinity()
+	ResetStrongSessionAffinityCookie()
 	ResetTimeouts()
 	ResetTimeoutSec()
 	SynthesizeAttributes() *map[string]interface{}
@@ -978,6 +982,26 @@ func (j *jsiiProxy_ComputeBackendService) SessionAffinityInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeBackendService) StrongSessionAffinityCookie() ComputeBackendServiceStrongSessionAffinityCookieOutputReference {
+	var returns ComputeBackendServiceStrongSessionAffinityCookieOutputReference
+	_jsii_.Get(
+		j,
+		"strongSessionAffinityCookie",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) StrongSessionAffinityCookieInput() *ComputeBackendServiceStrongSessionAffinityCookie {
+	var returns *ComputeBackendServiceStrongSessionAffinityCookie
+	_jsii_.Get(
+		j,
+		"strongSessionAffinityCookieInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeBackendService) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -1049,7 +1073,7 @@ func (j *jsiiProxy_ComputeBackendService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
 func NewComputeBackendService(scope constructs.Construct, id *string, config *ComputeBackendServiceConfig) ComputeBackendService {
 	_init_.Initialize()
 
@@ -1067,7 +1091,7 @@ func NewComputeBackendService(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
 func NewComputeBackendService_Override(c ComputeBackendService, scope constructs.Construct, id *string, config *ComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1818,6 +1842,17 @@ func (c *jsiiProxy_ComputeBackendService) PutSecuritySettings(value *ComputeBack
 	)
 }
 
+func (c *jsiiProxy_ComputeBackendService) PutStrongSessionAffinityCookie(value *ComputeBackendServiceStrongSessionAffinityCookie) {
+	if err := c.validatePutStrongSessionAffinityCookieParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putStrongSessionAffinityCookie",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeBackendService) PutTimeouts(value *ComputeBackendServiceTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -2049,6 +2084,14 @@ func (c *jsiiProxy_ComputeBackendService) ResetSessionAffinity() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSessionAffinity",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendService) ResetStrongSessionAffinityCookie() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStrongSessionAffinityCookie",
 		nil, // no parameters
 	)
 }

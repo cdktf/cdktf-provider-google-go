@@ -24,28 +24,28 @@ type IamDenyPolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/iam_deny_policy#name IamDenyPolicy#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/iam_deny_policy#name IamDenyPolicy#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The attachment point is identified by its URL-encoded full resource name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/iam_deny_policy#parent IamDenyPolicy#parent}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/iam_deny_policy#parent IamDenyPolicy#parent}
 	Parent *string `field:"required" json:"parent" yaml:"parent"`
 	// rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/iam_deny_policy#rules IamDenyPolicy#rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/iam_deny_policy#rules IamDenyPolicy#rules}
 	Rules interface{} `field:"required" json:"rules" yaml:"rules"`
 	// The display name of the rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/iam_deny_policy#display_name IamDenyPolicy#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/iam_deny_policy#display_name IamDenyPolicy#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/iam_deny_policy#id IamDenyPolicy#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/iam_deny_policy#id IamDenyPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/iam_deny_policy#timeouts IamDenyPolicy#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/iam_deny_policy#timeouts IamDenyPolicy#timeouts}
 	Timeouts *IamDenyPolicyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/container_aws_node_pool google_container_aws_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/container_aws_node_pool google_container_aws_node_pool}.
 type ContainerAwsNodePool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -55,6 +55,8 @@ type ContainerAwsNodePool interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KubeletConfig() ContainerAwsNodePoolKubeletConfigOutputReference
+	KubeletConfigInput() *ContainerAwsNodePoolKubeletConfig
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -149,12 +151,14 @@ type ContainerAwsNodePool interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoscaling(value *ContainerAwsNodePoolAutoscaling)
 	PutConfig(value *ContainerAwsNodePoolConfigA)
+	PutKubeletConfig(value *ContainerAwsNodePoolKubeletConfig)
 	PutManagement(value *ContainerAwsNodePoolManagement)
 	PutMaxPodsConstraint(value *ContainerAwsNodePoolMaxPodsConstraint)
 	PutTimeouts(value *ContainerAwsNodePoolTimeouts)
 	PutUpdateSettings(value *ContainerAwsNodePoolUpdateSettings)
 	ResetAnnotations()
 	ResetId()
+	ResetKubeletConfig()
 	ResetManagement()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -385,6 +389,26 @@ func (j *jsiiProxy_ContainerAwsNodePool) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAwsNodePool) KubeletConfig() ContainerAwsNodePoolKubeletConfigOutputReference {
+	var returns ContainerAwsNodePoolKubeletConfigOutputReference
+	_jsii_.Get(
+		j,
+		"kubeletConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerAwsNodePool) KubeletConfigInput() *ContainerAwsNodePoolKubeletConfig {
+	var returns *ContainerAwsNodePoolKubeletConfig
+	_jsii_.Get(
+		j,
+		"kubeletConfigInput",
 		&returns,
 	)
 	return returns
@@ -691,7 +715,7 @@ func (j *jsiiProxy_ContainerAwsNodePool) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/container_aws_node_pool google_container_aws_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/container_aws_node_pool google_container_aws_node_pool} Resource.
 func NewContainerAwsNodePool(scope constructs.Construct, id *string, config *ContainerAwsNodePoolConfig) ContainerAwsNodePool {
 	_init_.Initialize()
 
@@ -709,7 +733,7 @@ func NewContainerAwsNodePool(scope constructs.Construct, id *string, config *Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/container_aws_node_pool google_container_aws_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/container_aws_node_pool google_container_aws_node_pool} Resource.
 func NewContainerAwsNodePool_Override(c ContainerAwsNodePool, scope constructs.Construct, id *string, config *ContainerAwsNodePoolConfig) {
 	_init_.Initialize()
 
@@ -1251,6 +1275,17 @@ func (c *jsiiProxy_ContainerAwsNodePool) PutConfig(value *ContainerAwsNodePoolCo
 	)
 }
 
+func (c *jsiiProxy_ContainerAwsNodePool) PutKubeletConfig(value *ContainerAwsNodePoolKubeletConfig) {
+	if err := c.validatePutKubeletConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putKubeletConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerAwsNodePool) PutManagement(value *ContainerAwsNodePoolManagement) {
 	if err := c.validatePutManagementParameters(value); err != nil {
 		panic(err)
@@ -1307,6 +1342,14 @@ func (c *jsiiProxy_ContainerAwsNodePool) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerAwsNodePool) ResetKubeletConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKubeletConfig",
 		nil, // no parameters
 	)
 }

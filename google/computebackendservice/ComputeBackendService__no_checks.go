@@ -111,6 +111,10 @@ func (c *jsiiProxy_ComputeBackendService) validatePutSecuritySettingsParameters(
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendService) validatePutStrongSessionAffinityCookieParameters(value *ComputeBackendServiceStrongSessionAffinityCookie) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendService) validatePutTimeoutsParameters(value *ComputeBackendServiceTimeouts) error {
 	return nil
 }

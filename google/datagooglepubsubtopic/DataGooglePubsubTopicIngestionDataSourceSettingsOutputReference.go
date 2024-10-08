@@ -14,6 +14,7 @@ import (
 type DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	cdktf.ComplexObject
 	AwsKinesis() DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisList
+	CloudStorage() DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -33,6 +34,7 @@ type DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGooglePubsubTopicIngestionDataSourceSettings
 	SetInternalValue(val *DataGooglePubsubTopicIngestionDataSourceSettings)
+	PlatformLogsSettings() DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -90,6 +92,16 @@ func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference) CloudStorage() DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageList {
+	var returns DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageList
+	_jsii_.Get(
+		j,
+		"cloudStorage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -135,6 +147,16 @@ func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsOutputReferen
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference) PlatformLogsSettings() DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsList {
+	var returns DataGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsList
+	_jsii_.Get(
+		j,
+		"platformLogsSettings",
 		&returns,
 	)
 	return returns

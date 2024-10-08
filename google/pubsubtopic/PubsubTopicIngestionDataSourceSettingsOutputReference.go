@@ -15,6 +15,8 @@ type PubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	cdktf.ComplexObject
 	AwsKinesis() PubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference
 	AwsKinesisInput() *PubsubTopicIngestionDataSourceSettingsAwsKinesis
+	CloudStorage() PubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference
+	CloudStorageInput() *PubsubTopicIngestionDataSourceSettingsCloudStorage
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,6 +36,8 @@ type PubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	Fqn() *string
 	InternalValue() *PubsubTopicIngestionDataSourceSettings
 	SetInternalValue(val *PubsubTopicIngestionDataSourceSettings)
+	PlatformLogsSettings() PubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference
+	PlatformLogsSettingsInput() *PubsubTopicIngestionDataSourceSettingsPlatformLogsSettings
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +71,11 @@ type PubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAwsKinesis(value *PubsubTopicIngestionDataSourceSettingsAwsKinesis)
+	PutCloudStorage(value *PubsubTopicIngestionDataSourceSettingsCloudStorage)
+	PutPlatformLogsSettings(value *PubsubTopicIngestionDataSourceSettingsPlatformLogsSettings)
 	ResetAwsKinesis()
+	ResetCloudStorage()
+	ResetPlatformLogsSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -98,6 +106,26 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) AwsKin
 	_jsii_.Get(
 		j,
 		"awsKinesisInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) CloudStorage() PubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference {
+	var returns PubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference
+	_jsii_.Get(
+		j,
+		"cloudStorage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) CloudStorageInput() *PubsubTopicIngestionDataSourceSettingsCloudStorage {
+	var returns *PubsubTopicIngestionDataSourceSettingsCloudStorage
+	_jsii_.Get(
+		j,
+		"cloudStorageInput",
 		&returns,
 	)
 	return returns
@@ -148,6 +176,26 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PlatformLogsSettings() PubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference {
+	var returns PubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"platformLogsSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PlatformLogsSettingsInput() *PubsubTopicIngestionDataSourceSettingsPlatformLogsSettings {
+	var returns *PubsubTopicIngestionDataSourceSettingsPlatformLogsSettings
+	_jsii_.Get(
+		j,
+		"platformLogsSettingsInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +501,48 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutAws
 	)
 }
 
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutCloudStorage(value *PubsubTopicIngestionDataSourceSettingsCloudStorage) {
+	if err := p.validatePutCloudStorageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putCloudStorage",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutPlatformLogsSettings(value *PubsubTopicIngestionDataSourceSettingsPlatformLogsSettings) {
+	if err := p.validatePutPlatformLogsSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putPlatformLogsSettings",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) ResetAwsKinesis() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetAwsKinesis",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) ResetCloudStorage() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCloudStorage",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) ResetPlatformLogsSettings() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPlatformLogsSettings",
 		nil, // no parameters
 	)
 }

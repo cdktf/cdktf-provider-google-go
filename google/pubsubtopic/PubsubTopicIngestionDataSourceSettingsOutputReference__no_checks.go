@@ -51,6 +51,14 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) valida
 	return nil
 }
 
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) validatePutCloudStorageParameters(value *PubsubTopicIngestionDataSourceSettingsCloudStorage) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) validatePutPlatformLogsSettingsParameters(value *PubsubTopicIngestionDataSourceSettingsPlatformLogsSettings) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

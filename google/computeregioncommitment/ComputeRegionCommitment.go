@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/compute_region_commitment google_compute_region_commitment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/compute_region_commitment google_compute_region_commitment}.
 type ComputeRegionCommitment interface {
 	cdktf.TerraformResource
 	AutoRenew() interface{}
@@ -673,7 +673,7 @@ func (j *jsiiProxy_ComputeRegionCommitment) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/compute_region_commitment google_compute_region_commitment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/compute_region_commitment google_compute_region_commitment} Resource.
 func NewComputeRegionCommitment(scope constructs.Construct, id *string, config *ComputeRegionCommitmentConfig) ComputeRegionCommitment {
 	_init_.Initialize()
 
@@ -691,7 +691,7 @@ func NewComputeRegionCommitment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.5.0/docs/resources/compute_region_commitment google_compute_region_commitment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/compute_region_commitment google_compute_region_commitment} Resource.
 func NewComputeRegionCommitment_Override(c ComputeRegionCommitment, scope constructs.Construct, id *string, config *ComputeRegionCommitmentConfig) {
 	_init_.Initialize()
 
