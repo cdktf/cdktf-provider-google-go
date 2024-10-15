@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/iap_web_type_compute_iam_member google_iap_web_type_compute_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/iap_web_type_compute_iam_member google_iap_web_type_compute_iam_member}.
 type IapWebTypeComputeIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_IapWebTypeComputeIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/iap_web_type_compute_iam_member google_iap_web_type_compute_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/iap_web_type_compute_iam_member google_iap_web_type_compute_iam_member} Resource.
 func NewIapWebTypeComputeIamMember(scope constructs.Construct, id *string, config *IapWebTypeComputeIamMemberConfig) IapWebTypeComputeIamMember {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewIapWebTypeComputeIamMember(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/iap_web_type_compute_iam_member google_iap_web_type_compute_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/iap_web_type_compute_iam_member google_iap_web_type_compute_iam_member} Resource.
 func NewIapWebTypeComputeIamMember_Override(i IapWebTypeComputeIamMember, scope constructs.Construct, id *string, config *IapWebTypeComputeIamMemberConfig) {
 	_init_.Initialize()
 

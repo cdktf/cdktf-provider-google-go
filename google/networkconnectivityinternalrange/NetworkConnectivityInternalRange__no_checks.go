@@ -75,6 +75,10 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (n *jsiiProxy_NetworkConnectivityInternalRange) validatePutMigrationParameters(value *NetworkConnectivityInternalRangeMigration) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivityInternalRange) validatePutTimeoutsParameters(value *NetworkConnectivityInternalRangeTimeouts) error {
 	return nil
 }

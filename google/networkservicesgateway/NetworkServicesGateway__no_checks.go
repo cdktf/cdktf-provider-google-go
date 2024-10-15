@@ -159,6 +159,10 @@ func (j *jsiiProxy_NetworkServicesGateway) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_NetworkServicesGateway) validateSetRoutingModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkServicesGateway) validateSetScopeParameters(val *string) error {
 	return nil
 }

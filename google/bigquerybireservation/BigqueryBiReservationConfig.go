@@ -24,26 +24,26 @@ type BigqueryBiReservationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// LOCATION_DESCRIPTION.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/bigquery_bi_reservation#location BigqueryBiReservation#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/bigquery_bi_reservation#location BigqueryBiReservation#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/bigquery_bi_reservation#id BigqueryBiReservation#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/bigquery_bi_reservation#id BigqueryBiReservation#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// preferred_tables block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/bigquery_bi_reservation#preferred_tables BigqueryBiReservation#preferred_tables}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/bigquery_bi_reservation#preferred_tables BigqueryBiReservation#preferred_tables}
 	PreferredTables interface{} `field:"optional" json:"preferredTables" yaml:"preferredTables"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/bigquery_bi_reservation#project BigqueryBiReservation#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/bigquery_bi_reservation#project BigqueryBiReservation#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// Size of a reservation, in bytes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/bigquery_bi_reservation#size BigqueryBiReservation#size}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/bigquery_bi_reservation#size BigqueryBiReservation#size}
 	Size *float64 `field:"optional" json:"size" yaml:"size"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/bigquery_bi_reservation#timeouts BigqueryBiReservation#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/bigquery_bi_reservation#timeouts BigqueryBiReservation#timeouts}
 	Timeouts *BigqueryBiReservationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

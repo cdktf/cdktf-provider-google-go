@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/bigtable_instance_iam_binding google_bigtable_instance_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/bigtable_instance_iam_binding google_bigtable_instance_iam_binding}.
 type BigtableInstanceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_BigtableInstanceIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/bigtable_instance_iam_binding google_bigtable_instance_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/bigtable_instance_iam_binding google_bigtable_instance_iam_binding} Resource.
 func NewBigtableInstanceIamBinding(scope constructs.Construct, id *string, config *BigtableInstanceIamBindingConfig) BigtableInstanceIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewBigtableInstanceIamBinding(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/bigtable_instance_iam_binding google_bigtable_instance_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/bigtable_instance_iam_binding google_bigtable_instance_iam_binding} Resource.
 func NewBigtableInstanceIamBinding_Override(b BigtableInstanceIamBinding, scope constructs.Construct, id *string, config *BigtableInstanceIamBindingConfig) {
 	_init_.Initialize()
 

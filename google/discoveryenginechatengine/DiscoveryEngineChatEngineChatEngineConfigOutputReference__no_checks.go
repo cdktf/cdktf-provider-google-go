@@ -63,6 +63,10 @@ func (j *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetDialogflowAgentToLinkParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) validateSetInternalValueParameters(val *DiscoveryEngineChatEngineChatEngineConfig) error {
 	return nil
 }

@@ -9,7 +9,7 @@ type StorageBucketSoftDeletePolicy struct {
 	//
 	// Default value is 604800.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.6.0/docs/resources/storage_bucket#retention_duration_seconds StorageBucket#retention_duration_seconds}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/storage_bucket#retention_duration_seconds StorageBucket#retention_duration_seconds}
 	RetentionDurationSeconds *float64 `field:"optional" json:"retentionDurationSeconds" yaml:"retentionDurationSeconds"`
 }
 
