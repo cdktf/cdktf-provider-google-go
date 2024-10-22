@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke}.
 type NetworkConnectivitySpoke interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -59,6 +59,8 @@ type NetworkConnectivitySpoke interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LinkedInterconnectAttachments() NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference
 	LinkedInterconnectAttachmentsInput() *NetworkConnectivitySpokeLinkedInterconnectAttachments
+	LinkedProducerVpcNetwork() NetworkConnectivitySpokeLinkedProducerVpcNetworkOutputReference
+	LinkedProducerVpcNetworkInput() *NetworkConnectivitySpokeLinkedProducerVpcNetwork
 	LinkedRouterApplianceInstances() NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference
 	LinkedRouterApplianceInstancesInput() *NetworkConnectivitySpokeLinkedRouterApplianceInstances
 	LinkedVpcNetwork() NetworkConnectivitySpokeLinkedVpcNetworkOutputReference
@@ -142,6 +144,7 @@ type NetworkConnectivitySpoke interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLinkedInterconnectAttachments(value *NetworkConnectivitySpokeLinkedInterconnectAttachments)
+	PutLinkedProducerVpcNetwork(value *NetworkConnectivitySpokeLinkedProducerVpcNetwork)
 	PutLinkedRouterApplianceInstances(value *NetworkConnectivitySpokeLinkedRouterApplianceInstances)
 	PutLinkedVpcNetwork(value *NetworkConnectivitySpokeLinkedVpcNetwork)
 	PutLinkedVpnTunnels(value *NetworkConnectivitySpokeLinkedVpnTunnels)
@@ -150,6 +153,7 @@ type NetworkConnectivitySpoke interface {
 	ResetId()
 	ResetLabels()
 	ResetLinkedInterconnectAttachments()
+	ResetLinkedProducerVpcNetwork()
 	ResetLinkedRouterApplianceInstances()
 	ResetLinkedVpcNetwork()
 	ResetLinkedVpnTunnels()
@@ -381,6 +385,26 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) LinkedInterconnectAttachmentsInput(
 	_jsii_.Get(
 		j,
 		"linkedInterconnectAttachmentsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpoke) LinkedProducerVpcNetwork() NetworkConnectivitySpokeLinkedProducerVpcNetworkOutputReference {
+	var returns NetworkConnectivitySpokeLinkedProducerVpcNetworkOutputReference
+	_jsii_.Get(
+		j,
+		"linkedProducerVpcNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpoke) LinkedProducerVpcNetworkInput() *NetworkConnectivitySpokeLinkedProducerVpcNetwork {
+	var returns *NetworkConnectivitySpokeLinkedProducerVpcNetwork
+	_jsii_.Get(
+		j,
+		"linkedProducerVpcNetworkInput",
 		&returns,
 	)
 	return returns
@@ -637,7 +661,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke} Resource.
 func NewNetworkConnectivitySpoke(scope constructs.Construct, id *string, config *NetworkConnectivitySpokeConfig) NetworkConnectivitySpoke {
 	_init_.Initialize()
 
@@ -655,7 +679,7 @@ func NewNetworkConnectivitySpoke(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke} Resource.
 func NewNetworkConnectivitySpoke_Override(n NetworkConnectivitySpoke, scope constructs.Construct, id *string, config *NetworkConnectivitySpokeConfig) {
 	_init_.Initialize()
 
@@ -1175,6 +1199,17 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) PutLinkedInterconnectAttachments(va
 	)
 }
 
+func (n *jsiiProxy_NetworkConnectivitySpoke) PutLinkedProducerVpcNetwork(value *NetworkConnectivitySpokeLinkedProducerVpcNetwork) {
+	if err := n.validatePutLinkedProducerVpcNetworkParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putLinkedProducerVpcNetwork",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkConnectivitySpoke) PutLinkedRouterApplianceInstances(value *NetworkConnectivitySpokeLinkedRouterApplianceInstances) {
 	if err := n.validatePutLinkedRouterApplianceInstancesParameters(value); err != nil {
 		panic(err)
@@ -1247,6 +1282,14 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) ResetLinkedInterconnectAttachments(
 	_jsii_.InvokeVoid(
 		n,
 		"resetLinkedInterconnectAttachments",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkConnectivitySpoke) ResetLinkedProducerVpcNetwork() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetLinkedProducerVpcNetwork",
 		nil, // no parameters
 	)
 }

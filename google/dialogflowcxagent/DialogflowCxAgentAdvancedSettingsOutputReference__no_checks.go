@@ -55,6 +55,14 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) validatePut
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) validatePutLoggingSettingsParameters(value *DialogflowCxAgentAdvancedSettingsLoggingSettings) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) validatePutSpeechSettingsParameters(value *DialogflowCxAgentAdvancedSettingsSpeechSettings) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

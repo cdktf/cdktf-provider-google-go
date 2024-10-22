@@ -49,6 +49,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "linkedInterconnectAttachments", GoGetter: "LinkedInterconnectAttachments"},
 			_jsii_.MemberProperty{JsiiProperty: "linkedInterconnectAttachmentsInput", GoGetter: "LinkedInterconnectAttachmentsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "linkedProducerVpcNetwork", GoGetter: "LinkedProducerVpcNetwork"},
+			_jsii_.MemberProperty{JsiiProperty: "linkedProducerVpcNetworkInput", GoGetter: "LinkedProducerVpcNetworkInput"},
 			_jsii_.MemberProperty{JsiiProperty: "linkedRouterApplianceInstances", GoGetter: "LinkedRouterApplianceInstances"},
 			_jsii_.MemberProperty{JsiiProperty: "linkedRouterApplianceInstancesInput", GoGetter: "LinkedRouterApplianceInstancesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "linkedVpcNetwork", GoGetter: "LinkedVpcNetwork"},
@@ -69,6 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putLinkedInterconnectAttachments", GoMethod: "PutLinkedInterconnectAttachments"},
+			_jsii_.MemberMethod{JsiiMethod: "putLinkedProducerVpcNetwork", GoMethod: "PutLinkedProducerVpcNetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "putLinkedRouterApplianceInstances", GoMethod: "PutLinkedRouterApplianceInstances"},
 			_jsii_.MemberMethod{JsiiMethod: "putLinkedVpcNetwork", GoMethod: "PutLinkedVpcNetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "putLinkedVpnTunnels", GoMethod: "PutLinkedVpnTunnels"},
@@ -78,6 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLinkedInterconnectAttachments", GoMethod: "ResetLinkedInterconnectAttachments"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLinkedProducerVpcNetwork", GoMethod: "ResetLinkedProducerVpcNetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLinkedRouterApplianceInstances", GoMethod: "ResetLinkedRouterApplianceInstances"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLinkedVpcNetwork", GoMethod: "ResetLinkedVpcNetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLinkedVpnTunnels", GoMethod: "ResetLinkedVpnTunnels"},
@@ -149,6 +153,53 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedProducerVpcNetwork",
+		reflect.TypeOf((*NetworkConnectivitySpokeLinkedProducerVpcNetwork)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedProducerVpcNetworkOutputReference",
+		reflect.TypeOf((*NetworkConnectivitySpokeLinkedProducerVpcNetworkOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "excludeExportRanges", GoGetter: "ExcludeExportRanges"},
+			_jsii_.MemberProperty{JsiiProperty: "excludeExportRangesInput", GoGetter: "ExcludeExportRangesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "includeExportRanges", GoGetter: "IncludeExportRanges"},
+			_jsii_.MemberProperty{JsiiProperty: "includeExportRangesInput", GoGetter: "IncludeExportRangesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},
+			_jsii_.MemberProperty{JsiiProperty: "networkInput", GoGetter: "NetworkInput"},
+			_jsii_.MemberProperty{JsiiProperty: "peering", GoGetter: "Peering"},
+			_jsii_.MemberProperty{JsiiProperty: "peeringInput", GoGetter: "PeeringInput"},
+			_jsii_.MemberProperty{JsiiProperty: "producerNetwork", GoGetter: "ProducerNetwork"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExcludeExportRanges", GoMethod: "ResetExcludeExportRanges"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIncludeExportRanges", GoMethod: "ResetIncludeExportRanges"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_NetworkConnectivitySpokeLinkedProducerVpcNetworkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

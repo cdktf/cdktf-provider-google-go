@@ -163,6 +163,10 @@ func (j *jsiiProxy_ComputeRegionBackendService) validateSetIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionBackendService) validateSetIpAddressSelectionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionBackendService) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

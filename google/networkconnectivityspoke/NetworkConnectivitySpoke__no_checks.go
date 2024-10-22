@@ -79,6 +79,10 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) validatePutLinkedInterconnectAttach
 	return nil
 }
 
+func (n *jsiiProxy_NetworkConnectivitySpoke) validatePutLinkedProducerVpcNetworkParameters(value *NetworkConnectivitySpokeLinkedProducerVpcNetwork) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivitySpoke) validatePutLinkedRouterApplianceInstancesParameters(value *NetworkConnectivitySpokeLinkedRouterApplianceInstances) error {
 	return nil
 }

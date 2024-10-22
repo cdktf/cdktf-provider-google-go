@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/compute_instance_group_membership google_compute_instance_group_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/compute_instance_group_membership google_compute_instance_group_membership}.
 type ComputeInstanceGroupMembership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_ComputeInstanceGroupMembership) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/compute_instance_group_membership google_compute_instance_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/compute_instance_group_membership google_compute_instance_group_membership} Resource.
 func NewComputeInstanceGroupMembership(scope constructs.Construct, id *string, config *ComputeInstanceGroupMembershipConfig) ComputeInstanceGroupMembership {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewComputeInstanceGroupMembership(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/compute_instance_group_membership google_compute_instance_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/compute_instance_group_membership google_compute_instance_group_membership} Resource.
 func NewComputeInstanceGroupMembership_Override(c ComputeInstanceGroupMembership, scope constructs.Construct, id *string, config *ComputeInstanceGroupMembershipConfig) {
 	_init_.Initialize()
 

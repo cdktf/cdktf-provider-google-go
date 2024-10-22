@@ -6,6 +6,8 @@ package computenetworkfirewallpolicyrule
 
 type ComputeNetworkFirewallPolicyRuleMatchSrcSecureTags struct {
 	// Name of the secure tag, created with TagManager's TagValue API.
-	Name *string `field:"required" json:"name" yaml:"name"`
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/compute_network_firewall_policy_rule#name ComputeNetworkFirewallPolicyRule#name}
+	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

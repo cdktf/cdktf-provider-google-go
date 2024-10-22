@@ -337,6 +337,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
 			_jsii_.MemberProperty{JsiiProperty: "provisionedIops", GoGetter: "ProvisionedIops"},
+			_jsii_.MemberProperty{JsiiProperty: "provisionedThroughput", GoGetter: "ProvisionedThroughput"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceManagerTags", GoGetter: "ResourceManagerTags"},
 			_jsii_.MemberProperty{JsiiProperty: "resourcePolicies", GoGetter: "ResourcePolicies"},

@@ -151,6 +151,10 @@ func (j *jsiiProxy_CloudRunV2Service) validateSetIngressParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunV2Service) validateSetInvokerIamDisabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunV2Service) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }

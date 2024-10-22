@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ingress", GoGetter: "Ingress"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "invokerIamDisabled", GoGetter: "InvokerIamDisabled"},
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "lastModifier", GoGetter: "LastModifier"},
 			_jsii_.MemberProperty{JsiiProperty: "latestCreatedRevision", GoGetter: "LatestCreatedRevision"},

@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersionAccess) validateS
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersionAccess) validateSetIsSecretDataBase64Parameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersionAccess) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

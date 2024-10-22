@@ -7,7 +7,7 @@ package gkehubfeaturemembership
 type GkeHubFeatureMembershipConfigmanagementBinauthz struct {
 	// Whether binauthz is enabled in this cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/gke_hub_feature_membership#enabled GkeHubFeatureMembership#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/gke_hub_feature_membership#enabled GkeHubFeatureMembership#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -357,6 +357,9 @@ type GoogleProvider interface {
 	NotebooksCustomEndpoint() *string
 	SetNotebooksCustomEndpoint(val *string)
 	NotebooksCustomEndpointInput() *string
+	OracleDatabaseCustomEndpoint() *string
+	SetOracleDatabaseCustomEndpoint(val *string)
+	OracleDatabaseCustomEndpointInput() *string
 	OrgPolicyCustomEndpoint() *string
 	SetOrgPolicyCustomEndpoint(val *string)
 	OrgPolicyCustomEndpointInput() *string
@@ -479,6 +482,9 @@ type GoogleProvider interface {
 	TpuCustomEndpoint() *string
 	SetTpuCustomEndpoint(val *string)
 	TpuCustomEndpointInput() *string
+	TranscoderCustomEndpoint() *string
+	SetTranscoderCustomEndpoint(val *string)
+	TranscoderCustomEndpointInput() *string
 	UniverseDomain() *string
 	SetUniverseDomain(val *string)
 	UniverseDomainInput() *string
@@ -618,6 +624,7 @@ type GoogleProvider interface {
 	ResetNetworkSecurityCustomEndpoint()
 	ResetNetworkServicesCustomEndpoint()
 	ResetNotebooksCustomEndpoint()
+	ResetOracleDatabaseCustomEndpoint()
 	ResetOrgPolicyCustomEndpoint()
 	ResetOsConfigCustomEndpoint()
 	ResetOsLoginCustomEndpoint()
@@ -659,6 +666,7 @@ type GoogleProvider interface {
 	ResetTagsLocationCustomEndpoint()
 	ResetTerraformAttributionLabelAdditionStrategy()
 	ResetTpuCustomEndpoint()
+	ResetTranscoderCustomEndpoint()
 	ResetUniverseDomain()
 	ResetUserProjectOverride()
 	ResetVertexAiCustomEndpoint()
@@ -2945,6 +2953,26 @@ func (j *jsiiProxy_GoogleProvider) NotebooksCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) OracleDatabaseCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oracleDatabaseCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) OracleDatabaseCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oracleDatabaseCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) OrgPolicyCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3745,6 +3773,26 @@ func (j *jsiiProxy_GoogleProvider) TpuCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) TranscoderCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transcoderCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) TranscoderCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transcoderCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) UniverseDomain() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3906,7 +3954,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3924,7 +3972,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -4821,6 +4869,14 @@ func (j *jsiiProxy_GoogleProvider)SetNotebooksCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetOracleDatabaseCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"oracleDatabaseCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetOrgPolicyCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -5121,6 +5177,14 @@ func (j *jsiiProxy_GoogleProvider)SetTpuCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"tpuCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetTranscoderCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"transcoderCustomEndpoint",
 		val,
 	)
 }
@@ -6197,6 +6261,14 @@ func (g *jsiiProxy_GoogleProvider) ResetNotebooksCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetOracleDatabaseCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOracleDatabaseCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetOrgPolicyCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6505,6 +6577,14 @@ func (g *jsiiProxy_GoogleProvider) ResetTpuCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTpuCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetTranscoderCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTranscoderCustomEndpoint",
 		nil, // no parameters
 	)
 }

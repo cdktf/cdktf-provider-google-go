@@ -7,7 +7,7 @@ package containercluster
 type ContainerClusterIdentityServiceConfig struct {
 	// Whether to enable the Identity Service component.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

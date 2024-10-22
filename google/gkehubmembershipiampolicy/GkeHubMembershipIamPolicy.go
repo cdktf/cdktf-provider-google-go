@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy}.
 type GkeHubMembershipIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GkeHubMembershipIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy} Resource.
 func NewGkeHubMembershipIamPolicy(scope constructs.Construct, id *string, config *GkeHubMembershipIamPolicyConfig) GkeHubMembershipIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGkeHubMembershipIamPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy} Resource.
 func NewGkeHubMembershipIamPolicy_Override(g GkeHubMembershipIamPolicy, scope constructs.Construct, id *string, config *GkeHubMembershipIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -183,6 +183,10 @@ func (j *jsiiProxy_ComputeBackendService) validateSetIdParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendService) validateSetIpAddressSelectionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendService) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

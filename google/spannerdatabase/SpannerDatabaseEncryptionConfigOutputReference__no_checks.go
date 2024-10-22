@@ -67,6 +67,10 @@ func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) validateSetKm
 	return nil
 }
 
+func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) validateSetKmsKeyNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,7 @@ type ComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -461,6 +462,14 @@ func (c *jsiiProxy_ComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsOutputRefer
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetName",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
 type CloudRunV2Service interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -74,6 +74,9 @@ type CloudRunV2Service interface {
 	Ingress() *string
 	SetIngress(val *string)
 	IngressInput() *string
+	InvokerIamDisabled() interface{}
+	SetInvokerIamDisabled(val interface{})
+	InvokerIamDisabledInput() interface{}
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -187,6 +190,7 @@ type CloudRunV2Service interface {
 	ResetDescription()
 	ResetId()
 	ResetIngress()
+	ResetInvokerIamDisabled()
 	ResetLabels()
 	ResetLaunchStage()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -564,6 +568,26 @@ func (j *jsiiProxy_CloudRunV2Service) IngressInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudRunV2Service) InvokerIamDisabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"invokerIamDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) InvokerIamDisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"invokerIamDisabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudRunV2Service) Labels() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -935,7 +959,7 @@ func (j *jsiiProxy_CloudRunV2Service) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudRunV2ServiceConfig) CloudRunV2Service {
 	_init_.Initialize()
 
@@ -953,7 +977,7 @@ func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewCloudRunV2Service_Override(c CloudRunV2Service, scope constructs.Construct, id *string, config *CloudRunV2ServiceConfig) {
 	_init_.Initialize()
 
@@ -1086,6 +1110,17 @@ func (j *jsiiProxy_CloudRunV2Service)SetIngress(val *string) {
 	_jsii_.Set(
 		j,
 		"ingress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2Service)SetInvokerIamDisabled(val interface{}) {
+	if err := j.validateSetInvokerIamDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"invokerIamDisabled",
 		val,
 	)
 }
@@ -1651,6 +1686,14 @@ func (c *jsiiProxy_CloudRunV2Service) ResetIngress() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIngress",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2Service) ResetInvokerIamDisabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInvokerIamDisabled",
 		nil, // no parameters
 	)
 }

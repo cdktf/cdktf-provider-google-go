@@ -36,6 +36,10 @@ type DialogflowCxFlowAdvancedSettingsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DialogflowCxFlowAdvancedSettings
 	SetInternalValue(val *DialogflowCxFlowAdvancedSettings)
+	LoggingSettings() DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference
+	LoggingSettingsInput() *DialogflowCxFlowAdvancedSettingsLoggingSettings
+	SpeechSettings() DialogflowCxFlowAdvancedSettingsSpeechSettingsOutputReference
+	SpeechSettingsInput() *DialogflowCxFlowAdvancedSettingsSpeechSettings
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,8 +74,12 @@ type DialogflowCxFlowAdvancedSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAudioExportGcsDestination(value *DialogflowCxFlowAdvancedSettingsAudioExportGcsDestination)
 	PutDtmfSettings(value *DialogflowCxFlowAdvancedSettingsDtmfSettings)
+	PutLoggingSettings(value *DialogflowCxFlowAdvancedSettingsLoggingSettings)
+	PutSpeechSettings(value *DialogflowCxFlowAdvancedSettingsSpeechSettings)
 	ResetAudioExportGcsDestination()
 	ResetDtmfSettings()
+	ResetLoggingSettings()
+	ResetSpeechSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -172,6 +180,46 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) InternalValu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) LoggingSettings() DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference {
+	var returns DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"loggingSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) LoggingSettingsInput() *DialogflowCxFlowAdvancedSettingsLoggingSettings {
+	var returns *DialogflowCxFlowAdvancedSettingsLoggingSettings
+	_jsii_.Get(
+		j,
+		"loggingSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) SpeechSettings() DialogflowCxFlowAdvancedSettingsSpeechSettingsOutputReference {
+	var returns DialogflowCxFlowAdvancedSettingsSpeechSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"speechSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) SpeechSettingsInput() *DialogflowCxFlowAdvancedSettingsSpeechSettings {
+	var returns *DialogflowCxFlowAdvancedSettingsSpeechSettings
+	_jsii_.Get(
+		j,
+		"speechSettingsInput",
 		&returns,
 	)
 	return returns
@@ -488,6 +536,28 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) PutDtmfSetti
 	)
 }
 
+func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) PutLoggingSettings(value *DialogflowCxFlowAdvancedSettingsLoggingSettings) {
+	if err := d.validatePutLoggingSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putLoggingSettings",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) PutSpeechSettings(value *DialogflowCxFlowAdvancedSettingsSpeechSettings) {
+	if err := d.validatePutSpeechSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSpeechSettings",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) ResetAudioExportGcsDestination() {
 	_jsii_.InvokeVoid(
 		d,
@@ -500,6 +570,22 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) ResetDtmfSet
 	_jsii_.InvokeVoid(
 		d,
 		"resetDtmfSettings",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) ResetLoggingSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLoggingSettings",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) ResetSpeechSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSpeechSettings",
 		nil, // no parameters
 	)
 }

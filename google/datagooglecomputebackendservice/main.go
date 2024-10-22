@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "ipAddressSelectionPolicy", GoGetter: "IpAddressSelectionPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancingScheme", GoGetter: "LoadBalancingScheme"},
 			_jsii_.MemberProperty{JsiiProperty: "localityLbPolicies", GoGetter: "LocalityLbPolicies"},

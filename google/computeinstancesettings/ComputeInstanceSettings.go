@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/compute_instance_settings google_compute_instance_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/compute_instance_settings google_compute_instance_settings}.
 type ComputeInstanceSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_ComputeInstanceSettings) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/compute_instance_settings google_compute_instance_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/compute_instance_settings google_compute_instance_settings} Resource.
 func NewComputeInstanceSettings(scope constructs.Construct, id *string, config *ComputeInstanceSettingsConfig) ComputeInstanceSettings {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewComputeInstanceSettings(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/resources/compute_instance_settings google_compute_instance_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/compute_instance_settings google_compute_instance_settings} Resource.
 func NewComputeInstanceSettings_Override(c ComputeInstanceSettings, scope constructs.Construct, id *string, config *ComputeInstanceSettingsConfig) {
 	_init_.Initialize()
 

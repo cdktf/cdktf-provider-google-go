@@ -191,6 +191,51 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowAdvancedSettingsLoggingSettings",
+		reflect.TypeOf((*DialogflowCxFlowAdvancedSettingsLoggingSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference",
+		reflect.TypeOf((*DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enableConsentBasedRedaction", GoGetter: "EnableConsentBasedRedaction"},
+			_jsii_.MemberProperty{JsiiProperty: "enableConsentBasedRedactionInput", GoGetter: "EnableConsentBasedRedactionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enableInteractionLogging", GoGetter: "EnableInteractionLogging"},
+			_jsii_.MemberProperty{JsiiProperty: "enableInteractionLoggingInput", GoGetter: "EnableInteractionLoggingInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enableStackdriverLogging", GoGetter: "EnableStackdriverLogging"},
+			_jsii_.MemberProperty{JsiiProperty: "enableStackdriverLoggingInput", GoGetter: "EnableStackdriverLoggingInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnableConsentBasedRedaction", GoMethod: "ResetEnableConsentBasedRedaction"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnableInteractionLogging", GoMethod: "ResetEnableInteractionLogging"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnableStackdriverLogging", GoMethod: "ResetEnableStackdriverLogging"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowAdvancedSettingsOutputReference",
 		reflect.TypeOf((*DialogflowCxFlowAdvancedSettingsOutputReference)(nil)).Elem(),
@@ -216,17 +261,73 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "loggingSettings", GoGetter: "LoggingSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "loggingSettingsInput", GoGetter: "LoggingSettingsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAudioExportGcsDestination", GoMethod: "PutAudioExportGcsDestination"},
 			_jsii_.MemberMethod{JsiiMethod: "putDtmfSettings", GoMethod: "PutDtmfSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "putLoggingSettings", GoMethod: "PutLoggingSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "putSpeechSettings", GoMethod: "PutSpeechSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAudioExportGcsDestination", GoMethod: "ResetAudioExportGcsDestination"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDtmfSettings", GoMethod: "ResetDtmfSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLoggingSettings", GoMethod: "ResetLoggingSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSpeechSettings", GoMethod: "ResetSpeechSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "speechSettings", GoGetter: "SpeechSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "speechSettingsInput", GoGetter: "SpeechSettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowAdvancedSettingsSpeechSettings",
+		reflect.TypeOf((*DialogflowCxFlowAdvancedSettingsSpeechSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowAdvancedSettingsSpeechSettingsOutputReference",
+		reflect.TypeOf((*DialogflowCxFlowAdvancedSettingsSpeechSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "endpointerSensitivity", GoGetter: "EndpointerSensitivity"},
+			_jsii_.MemberProperty{JsiiProperty: "endpointerSensitivityInput", GoGetter: "EndpointerSensitivityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "models", GoGetter: "Models"},
+			_jsii_.MemberProperty{JsiiProperty: "modelsInput", GoGetter: "ModelsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "noSpeechTimeout", GoGetter: "NoSpeechTimeout"},
+			_jsii_.MemberProperty{JsiiProperty: "noSpeechTimeoutInput", GoGetter: "NoSpeechTimeoutInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEndpointerSensitivity", GoMethod: "ResetEndpointerSensitivity"},
+			_jsii_.MemberMethod{JsiiMethod: "resetModels", GoMethod: "ResetModels"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNoSpeechTimeout", GoMethod: "ResetNoSpeechTimeout"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUseTimeoutBasedEndpointing", GoMethod: "ResetUseTimeoutBasedEndpointing"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "useTimeoutBasedEndpointing", GoGetter: "UseTimeoutBasedEndpointing"},
+			_jsii_.MemberProperty{JsiiProperty: "useTimeoutBasedEndpointingInput", GoGetter: "UseTimeoutBasedEndpointingInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DialogflowCxFlowAdvancedSettingsSpeechSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

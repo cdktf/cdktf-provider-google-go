@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/data-sources/secret_manager_regional_secret_version_access google_secret_manager_regional_secret_version_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/data-sources/secret_manager_regional_secret_version_access google_secret_manager_regional_secret_version_access}.
 type DataGoogleSecretManagerRegionalSecretVersionAccess interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -38,6 +38,9 @@ type DataGoogleSecretManagerRegionalSecretVersionAccess interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsSecretDataBase64() interface{}
+	SetIsSecretDataBase64(val interface{})
+	IsSecretDataBase64Input() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -96,6 +99,7 @@ type DataGoogleSecretManagerRegionalSecretVersionAccess interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetIsSecretDataBase64()
 	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -206,6 +210,26 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersionAccess) IdInput()
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersionAccess) IsSecretDataBase64() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSecretDataBase64",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersionAccess) IsSecretDataBase64Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isSecretDataBase64Input",
 		&returns,
 	)
 	return returns
@@ -382,7 +406,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersionAccess) VersionIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/data-sources/secret_manager_regional_secret_version_access google_secret_manager_regional_secret_version_access} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/data-sources/secret_manager_regional_secret_version_access google_secret_manager_regional_secret_version_access} Data Source.
 func NewDataGoogleSecretManagerRegionalSecretVersionAccess(scope constructs.Construct, id *string, config *DataGoogleSecretManagerRegionalSecretVersionAccessConfig) DataGoogleSecretManagerRegionalSecretVersionAccess {
 	_init_.Initialize()
 
@@ -400,7 +424,7 @@ func NewDataGoogleSecretManagerRegionalSecretVersionAccess(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/data-sources/secret_manager_regional_secret_version_access google_secret_manager_regional_secret_version_access} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/data-sources/secret_manager_regional_secret_version_access google_secret_manager_regional_secret_version_access} Data Source.
 func NewDataGoogleSecretManagerRegionalSecretVersionAccess_Override(d DataGoogleSecretManagerRegionalSecretVersionAccess, scope constructs.Construct, id *string, config *DataGoogleSecretManagerRegionalSecretVersionAccessConfig) {
 	_init_.Initialize()
 
@@ -445,6 +469,17 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersionAccess)SetId(val 
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersionAccess)SetIsSecretDataBase64(val interface{}) {
+	if err := j.validateSetIsSecretDataBase64Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isSecretDataBase64",
 		val,
 	)
 }
@@ -801,6 +836,14 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersionAccess) ResetId()
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersionAccess) ResetIsSecretDataBase64() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIsSecretDataBase64",
 		nil, // no parameters
 	)
 }

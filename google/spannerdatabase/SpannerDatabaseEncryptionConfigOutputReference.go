@@ -35,6 +35,9 @@ type SpannerDatabaseEncryptionConfigOutputReference interface {
 	KmsKeyName() *string
 	SetKmsKeyName(val *string)
 	KmsKeyNameInput() *string
+	KmsKeyNames() *[]*string
+	SetKmsKeyNames(val *[]*string)
+	KmsKeyNamesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,8 @@ type SpannerDatabaseEncryptionConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetKmsKeyName()
+	ResetKmsKeyNames()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +152,26 @@ func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) KmsKeyNameInp
 	_jsii_.Get(
 		j,
 		"kmsKeyNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) KmsKeyNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"kmsKeyNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) KmsKeyNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"kmsKeyNamesInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +265,17 @@ func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference)SetKmsKeyName(
 	_jsii_.Set(
 		j,
 		"kmsKeyName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference)SetKmsKeyNames(val *[]*string) {
+	if err := j.validateSetKmsKeyNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyNames",
 		val,
 	)
 }
@@ -450,6 +486,22 @@ func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) ResetKmsKeyName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKmsKeyName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) ResetKmsKeyNames() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKmsKeyNames",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SpannerDatabaseEncryptionConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

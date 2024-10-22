@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/data-sources/compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/data-sources/compute_backend_service google_compute_backend_service}.
 type DataGoogleComputeBackendService interface {
 	cdktf.TerraformDataSource
 	AffinityCookieTtlSec() *float64
@@ -55,6 +55,7 @@ type DataGoogleComputeBackendService interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAddressSelectionPolicy() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -402,6 +403,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeBackendService) IpAddressSelectionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressSelectionPolicy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeBackendService) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -653,7 +664,7 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) TimeoutSec() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/data-sources/compute_backend_service google_compute_backend_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/data-sources/compute_backend_service google_compute_backend_service} Data Source.
 func NewDataGoogleComputeBackendService(scope constructs.Construct, id *string, config *DataGoogleComputeBackendServiceConfig) DataGoogleComputeBackendService {
 	_init_.Initialize()
 
@@ -671,7 +682,7 @@ func NewDataGoogleComputeBackendService(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.7.0/docs/data-sources/compute_backend_service google_compute_backend_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/data-sources/compute_backend_service google_compute_backend_service} Data Source.
 func NewDataGoogleComputeBackendService_Override(d DataGoogleComputeBackendService, scope constructs.Construct, id *string, config *DataGoogleComputeBackendServiceConfig) {
 	_init_.Initialize()
 
