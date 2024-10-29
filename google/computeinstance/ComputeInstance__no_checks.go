@@ -187,6 +187,10 @@ func (j *jsiiProxy_ComputeInstance) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstance) validateSetKeyRevocationActionTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstance) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }

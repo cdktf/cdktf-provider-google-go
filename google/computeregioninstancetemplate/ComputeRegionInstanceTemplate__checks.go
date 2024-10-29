@@ -562,6 +562,14 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplate) validateSetInstanceDescription
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionInstanceTemplate) validateSetKeyRevocationActionTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionInstanceTemplate) validateSetLabelsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

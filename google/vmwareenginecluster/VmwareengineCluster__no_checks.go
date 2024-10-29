@@ -75,6 +75,10 @@ func (v *jsiiProxy_VmwareengineCluster) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (v *jsiiProxy_VmwareengineCluster) validatePutAutoscalingSettingsParameters(value *VmwareengineClusterAutoscalingSettings) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareengineCluster) validatePutNodeTypeConfigsParameters(value interface{}) error {
 	return nil
 }

@@ -271,6 +271,17 @@ func (s *jsiiProxy_StorageBucket) validatePutEncryptionParameters(value *Storage
 	return nil
 }
 
+func (s *jsiiProxy_StorageBucket) validatePutHierarchicalNamespaceParameters(value *StorageBucketHierarchicalNamespace) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucket) validatePutLifecycleRuleParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

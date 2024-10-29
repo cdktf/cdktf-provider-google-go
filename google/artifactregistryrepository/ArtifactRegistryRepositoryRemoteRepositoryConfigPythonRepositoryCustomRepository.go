@@ -7,7 +7,7 @@ package artifactregistryrepository
 type ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepository struct {
 	// Specific uri to the registry, e.g. '"https://pypi.io"'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/artifact_registry_repository#uri ArtifactRegistryRepository#uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/artifact_registry_repository#uri ArtifactRegistryRepository#uri}
 	Uri *string `field:"optional" json:"uri" yaml:"uri"`
 }
 

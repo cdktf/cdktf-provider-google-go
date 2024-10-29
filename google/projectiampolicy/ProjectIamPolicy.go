@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/project_iam_policy google_project_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/project_iam_policy google_project_iam_policy}.
 type ProjectIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_ProjectIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/project_iam_policy google_project_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/project_iam_policy google_project_iam_policy} Resource.
 func NewProjectIamPolicy(scope constructs.Construct, id *string, config *ProjectIamPolicyConfig) ProjectIamPolicy {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewProjectIamPolicy(scope constructs.Construct, id *string, config *Project
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/project_iam_policy google_project_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/project_iam_policy google_project_iam_policy} Resource.
 func NewProjectIamPolicy_Override(p ProjectIamPolicy, scope constructs.Construct, id *string, config *ProjectIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ type HealthcareDatasetEncryptionSpec struct {
 	// key will be used to secure this dataset. The format is
 	// projects/{projectId}/locations/{locationId}/keyRings/{keyRingId}/cryptoKeys/{keyId}.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/healthcare_dataset#kms_key_name HealthcareDataset#kms_key_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/healthcare_dataset#kms_key_name HealthcareDataset#kms_key_name}
 	KmsKeyName *string `field:"optional" json:"kmsKeyName" yaml:"kmsKeyName"`
 }
 

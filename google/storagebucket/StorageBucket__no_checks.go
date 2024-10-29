@@ -91,6 +91,10 @@ func (s *jsiiProxy_StorageBucket) validatePutEncryptionParameters(value *Storage
 	return nil
 }
 
+func (s *jsiiProxy_StorageBucket) validatePutHierarchicalNamespaceParameters(value *StorageBucketHierarchicalNamespace) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucket) validatePutLifecycleRuleParameters(value interface{}) error {
 	return nil
 }

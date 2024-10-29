@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/looker_instance google_looker_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/looker_instance google_looker_instance}.
 type LookerInstance interface {
 	cdktf.TerraformResource
 	AdminSettings() LookerInstanceAdminSettingsOutputReference
@@ -35,6 +35,9 @@ type LookerInstance interface {
 	CreateTime() *string
 	CustomDomain() LookerInstanceCustomDomainOutputReference
 	CustomDomainInput() *LookerInstanceCustomDomain
+	DeletionPolicy() *string
+	SetDeletionPolicy(val *string)
+	DeletionPolicyInput() *string
 	DenyMaintenancePeriod() LookerInstanceDenyMaintenancePeriodOutputReference
 	DenyMaintenancePeriodInput() *LookerInstanceDenyMaintenancePeriod
 	// Experimental.
@@ -174,6 +177,7 @@ type LookerInstance interface {
 	ResetAdminSettings()
 	ResetConsumerNetwork()
 	ResetCustomDomain()
+	ResetDeletionPolicy()
 	ResetDenyMaintenancePeriod()
 	ResetEncryptionConfig()
 	ResetFipsEnabled()
@@ -316,6 +320,26 @@ func (j *jsiiProxy_LookerInstance) CustomDomainInput() *LookerInstanceCustomDoma
 	_jsii_.Get(
 		j,
 		"customDomainInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LookerInstance) DeletionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -842,7 +866,7 @@ func (j *jsiiProxy_LookerInstance) UserMetadataInput() *LookerInstanceUserMetada
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/looker_instance google_looker_instance} Resource.
 func NewLookerInstance(scope constructs.Construct, id *string, config *LookerInstanceConfig) LookerInstance {
 	_init_.Initialize()
 
@@ -860,7 +884,7 @@ func NewLookerInstance(scope constructs.Construct, id *string, config *LookerIns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.8.0/docs/resources/looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/looker_instance google_looker_instance} Resource.
 func NewLookerInstance_Override(l LookerInstance, scope constructs.Construct, id *string, config *LookerInstanceConfig) {
 	_init_.Initialize()
 
@@ -900,6 +924,17 @@ func (j *jsiiProxy_LookerInstance)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LookerInstance)SetDeletionPolicy(val *string) {
+	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionPolicy",
 		val,
 	)
 }
@@ -1532,6 +1567,14 @@ func (l *jsiiProxy_LookerInstance) ResetCustomDomain() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetCustomDomain",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LookerInstance) ResetDeletionPolicy() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDeletionPolicy",
 		nil, // no parameters
 	)
 }

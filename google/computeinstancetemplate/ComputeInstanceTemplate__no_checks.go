@@ -159,6 +159,10 @@ func (j *jsiiProxy_ComputeInstanceTemplate) validateSetInstanceDescriptionParame
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplate) validateSetKeyRevocationActionTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplate) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }
