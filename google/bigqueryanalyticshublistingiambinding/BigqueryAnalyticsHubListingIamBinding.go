@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/bigquery_analytics_hub_listing_iam_binding google_bigquery_analytics_hub_listing_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/bigquery_analytics_hub_listing_iam_binding google_bigquery_analytics_hub_listing_iam_binding}.
 type BigqueryAnalyticsHubListingIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingIamBinding) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/bigquery_analytics_hub_listing_iam_binding google_bigquery_analytics_hub_listing_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/bigquery_analytics_hub_listing_iam_binding google_bigquery_analytics_hub_listing_iam_binding} Resource.
 func NewBigqueryAnalyticsHubListingIamBinding(scope constructs.Construct, id *string, config *BigqueryAnalyticsHubListingIamBindingConfig) BigqueryAnalyticsHubListingIamBinding {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewBigqueryAnalyticsHubListingIamBinding(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/bigquery_analytics_hub_listing_iam_binding google_bigquery_analytics_hub_listing_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/bigquery_analytics_hub_listing_iam_binding google_bigquery_analytics_hub_listing_iam_binding} Resource.
 func NewBigqueryAnalyticsHubListingIamBinding_Override(b BigqueryAnalyticsHubListingIamBinding, scope constructs.Construct, id *string, config *BigqueryAnalyticsHubListingIamBindingConfig) {
 	_init_.Initialize()
 

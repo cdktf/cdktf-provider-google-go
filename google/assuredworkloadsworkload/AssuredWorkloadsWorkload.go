@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/assured_workloads_workload google_assured_workloads_workload}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/assured_workloads_workload google_assured_workloads_workload}.
 type AssuredWorkloadsWorkload interface {
 	cdktf.TerraformResource
 	BillingAccount() *string
@@ -115,6 +115,8 @@ type AssuredWorkloadsWorkload interface {
 	ViolationNotificationsEnabled() interface{}
 	SetViolationNotificationsEnabled(val interface{})
 	ViolationNotificationsEnabledInput() interface{}
+	WorkloadOptions() AssuredWorkloadsWorkloadWorkloadOptionsOutputReference
+	WorkloadOptionsInput() *AssuredWorkloadsWorkloadWorkloadOptions
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -162,6 +164,7 @@ type AssuredWorkloadsWorkload interface {
 	PutPartnerPermissions(value *AssuredWorkloadsWorkloadPartnerPermissions)
 	PutResourceSettings(value interface{})
 	PutTimeouts(value *AssuredWorkloadsWorkloadTimeouts)
+	PutWorkloadOptions(value *AssuredWorkloadsWorkloadWorkloadOptions)
 	ResetBillingAccount()
 	ResetEnableSovereignControls()
 	ResetId()
@@ -177,6 +180,7 @@ type AssuredWorkloadsWorkload interface {
 	ResetResourceSettings()
 	ResetTimeouts()
 	ResetViolationNotificationsEnabled()
+	ResetWorkloadOptions()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -775,8 +779,28 @@ func (j *jsiiProxy_AssuredWorkloadsWorkload) ViolationNotificationsEnabledInput(
 	return returns
 }
 
+func (j *jsiiProxy_AssuredWorkloadsWorkload) WorkloadOptions() AssuredWorkloadsWorkloadWorkloadOptionsOutputReference {
+	var returns AssuredWorkloadsWorkloadWorkloadOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"workloadOptions",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/assured_workloads_workload google_assured_workloads_workload} Resource.
+func (j *jsiiProxy_AssuredWorkloadsWorkload) WorkloadOptionsInput() *AssuredWorkloadsWorkloadWorkloadOptions {
+	var returns *AssuredWorkloadsWorkloadWorkloadOptions
+	_jsii_.Get(
+		j,
+		"workloadOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/assured_workloads_workload google_assured_workloads_workload} Resource.
 func NewAssuredWorkloadsWorkload(scope constructs.Construct, id *string, config *AssuredWorkloadsWorkloadConfig) AssuredWorkloadsWorkload {
 	_init_.Initialize()
 
@@ -794,7 +818,7 @@ func NewAssuredWorkloadsWorkload(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/assured_workloads_workload google_assured_workloads_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/assured_workloads_workload google_assured_workloads_workload} Resource.
 func NewAssuredWorkloadsWorkload_Override(a AssuredWorkloadsWorkload, scope constructs.Construct, id *string, config *AssuredWorkloadsWorkloadConfig) {
 	_init_.Initialize()
 
@@ -1402,6 +1426,17 @@ func (a *jsiiProxy_AssuredWorkloadsWorkload) PutTimeouts(value *AssuredWorkloads
 	)
 }
 
+func (a *jsiiProxy_AssuredWorkloadsWorkload) PutWorkloadOptions(value *AssuredWorkloadsWorkloadWorkloadOptions) {
+	if err := a.validatePutWorkloadOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putWorkloadOptions",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AssuredWorkloadsWorkload) ResetBillingAccount() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1502,6 +1537,14 @@ func (a *jsiiProxy_AssuredWorkloadsWorkload) ResetViolationNotificationsEnabled(
 	_jsii_.InvokeVoid(
 		a,
 		"resetViolationNotificationsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AssuredWorkloadsWorkload) ResetWorkloadOptions() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetWorkloadOptions",
 		nil, // no parameters
 	)
 }

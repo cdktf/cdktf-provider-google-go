@@ -24,15 +24,15 @@ type PrivatecaCertificateConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Location of the Certificate. A full list of valid locations can be found by running 'gcloud privateca locations list'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/privateca_certificate#location PrivatecaCertificate#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/privateca_certificate#location PrivatecaCertificate#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The name for this Certificate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/privateca_certificate#name PrivatecaCertificate#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/privateca_certificate#name PrivatecaCertificate#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The name of the CaPool this Certificate belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/privateca_certificate#pool PrivatecaCertificate#pool}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/privateca_certificate#pool PrivatecaCertificate#pool}
 	Pool *string `field:"required" json:"pool" yaml:"pool"`
 	// The Certificate Authority ID that should issue the certificate.
 	//
@@ -41,7 +41,7 @@ type PrivatecaCertificateConfig struct {
 	// argument 'pool' should be set to 'projects/my-project/locations/us-central1/caPools/my-pool', argument 'certificate_authority'
 	// should be set to 'my-ca'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/privateca_certificate#certificate_authority PrivatecaCertificate#certificate_authority}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/privateca_certificate#certificate_authority PrivatecaCertificate#certificate_authority}
 	CertificateAuthority *string `field:"optional" json:"certificateAuthority" yaml:"certificateAuthority"`
 	// The resource name for a CertificateTemplate used to issue this certificate, in the format 'projects/* /locations/* /certificateTemplates/*'.
 	//
@@ -50,15 +50,15 @@ type PrivatecaCertificateConfig struct {
 	// omitted, no template will be used. This template must be in the same location
 	// as the Certificate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/privateca_certificate#certificate_template PrivatecaCertificate#certificate_template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/privateca_certificate#certificate_template PrivatecaCertificate#certificate_template}
 	//
 	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	CertificateTemplate *string `field:"optional" json:"certificateTemplate" yaml:"certificateTemplate"`
 	// config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/privateca_certificate#config PrivatecaCertificate#config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/privateca_certificate#config PrivatecaCertificate#config}
 	Config *PrivatecaCertificateConfigA `field:"optional" json:"config" yaml:"config"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/privateca_certificate#id PrivatecaCertificate#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/privateca_certificate#id PrivatecaCertificate#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -68,7 +68,7 @@ type PrivatecaCertificateConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/privateca_certificate#labels PrivatecaCertificate#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/privateca_certificate#labels PrivatecaCertificate#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// The desired lifetime of the CA certificate.
 	//
@@ -76,17 +76,17 @@ type PrivatecaCertificateConfig struct {
 	// "notAfterTime" fields inside an X.509 certificate. A duration in seconds with up to nine
 	// fractional digits, terminated by 's'. Example: "3.5s".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/privateca_certificate#lifetime PrivatecaCertificate#lifetime}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/privateca_certificate#lifetime PrivatecaCertificate#lifetime}
 	Lifetime *string `field:"optional" json:"lifetime" yaml:"lifetime"`
 	// Immutable. A pem-encoded X.509 certificate signing request (CSR).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/privateca_certificate#pem_csr PrivatecaCertificate#pem_csr}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/privateca_certificate#pem_csr PrivatecaCertificate#pem_csr}
 	PemCsr *string `field:"optional" json:"pemCsr" yaml:"pemCsr"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/privateca_certificate#project PrivatecaCertificate#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/privateca_certificate#project PrivatecaCertificate#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/privateca_certificate#timeouts PrivatecaCertificate#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/privateca_certificate#timeouts PrivatecaCertificate#timeouts}
 	Timeouts *PrivatecaCertificateTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

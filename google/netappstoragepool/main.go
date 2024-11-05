@@ -72,6 +72,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberProperty{JsiiProperty: "replicaZone", GoGetter: "ReplicaZone"},
+			_jsii_.MemberProperty{JsiiProperty: "replicaZoneInput", GoGetter: "ReplicaZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetActiveDirectory", GoMethod: "ResetActiveDirectory"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowAutoTiering", GoMethod: "ResetAllowAutoTiering"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -81,7 +83,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLdapEnabled", GoMethod: "ResetLdapEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReplicaZone", GoMethod: "ResetReplicaZone"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZone", GoMethod: "ResetZone"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceLevel", GoGetter: "ServiceLevel"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceLevelInput", GoGetter: "ServiceLevelInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -98,6 +102,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeCapacityGib", GoGetter: "VolumeCapacityGib"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeCount", GoGetter: "VolumeCount"},
+			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
+			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappStoragePool{}

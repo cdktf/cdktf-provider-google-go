@@ -47,6 +47,10 @@ func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterOutputReference) val
 	return nil
 }
 
+func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterOutputReference) validatePutAutoscalingSettingsParameters(value *VmwareenginePrivateCloudManagementClusterAutoscalingSettings) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterOutputReference) validatePutNodeTypeConfigsParameters(value interface{}) error {
 	return nil
 }

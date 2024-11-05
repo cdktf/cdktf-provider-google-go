@@ -151,6 +151,10 @@ func (j *jsiiProxy_FilestoreInstance) validateSetProjectParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_FilestoreInstance) validateSetProtocolParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FilestoreInstance) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

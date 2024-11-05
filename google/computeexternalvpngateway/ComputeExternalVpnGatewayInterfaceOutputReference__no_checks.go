@@ -71,6 +71,10 @@ func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) validateSetIpv6AddressParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

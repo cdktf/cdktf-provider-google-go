@@ -34,6 +34,7 @@ type ComputeServiceAttachmentConnectedEndpointsOutputReference interface {
 	Fqn() *string
 	InternalValue() *ComputeServiceAttachmentConnectedEndpoints
 	SetInternalValue(val *ComputeServiceAttachmentConnectedEndpoints)
+	PropagatedConnectionCount() *float64
 	PscConnectionId() *string
 	Status() *string
 	// Experimental.
@@ -148,6 +149,16 @@ func (j *jsiiProxy_ComputeServiceAttachmentConnectedEndpointsOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeServiceAttachmentConnectedEndpointsOutputReference) PropagatedConnectionCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"propagatedConnectionCount",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/compute_service_attachment google_compute_service_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/compute_service_attachment google_compute_service_attachment}.
 type ComputeServiceAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -76,6 +76,9 @@ type ComputeServiceAttachment interface {
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
+	PropagatedConnectionLimit() *float64
+	SetPropagatedConnectionLimit(val *float64)
+	PropagatedConnectionLimitInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -158,6 +161,7 @@ type ComputeServiceAttachment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetPropagatedConnectionLimit()
 	ResetReconcileConnections()
 	ResetRegion()
 	ResetTimeouts()
@@ -499,6 +503,26 @@ func (j *jsiiProxy_ComputeServiceAttachment) ProjectInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeServiceAttachment) PropagatedConnectionLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"propagatedConnectionLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeServiceAttachment) PropagatedConnectionLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"propagatedConnectionLimitInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeServiceAttachment) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -650,7 +674,7 @@ func (j *jsiiProxy_ComputeServiceAttachment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/compute_service_attachment google_compute_service_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/compute_service_attachment google_compute_service_attachment} Resource.
 func NewComputeServiceAttachment(scope constructs.Construct, id *string, config *ComputeServiceAttachmentConfig) ComputeServiceAttachment {
 	_init_.Initialize()
 
@@ -668,7 +692,7 @@ func NewComputeServiceAttachment(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/compute_service_attachment google_compute_service_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/compute_service_attachment google_compute_service_attachment} Resource.
 func NewComputeServiceAttachment_Override(c ComputeServiceAttachment, scope constructs.Construct, id *string, config *ComputeServiceAttachmentConfig) {
 	_init_.Initialize()
 
@@ -823,6 +847,17 @@ func (j *jsiiProxy_ComputeServiceAttachment)SetProject(val *string) {
 	_jsii_.Set(
 		j,
 		"project",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeServiceAttachment)SetPropagatedConnectionLimit(val *float64) {
+	if err := j.validateSetPropagatedConnectionLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"propagatedConnectionLimit",
 		val,
 	)
 }
@@ -1306,6 +1341,14 @@ func (c *jsiiProxy_ComputeServiceAttachment) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeServiceAttachment) ResetPropagatedConnectionLimit() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPropagatedConnectionLimit",
 		nil, // no parameters
 	)
 }

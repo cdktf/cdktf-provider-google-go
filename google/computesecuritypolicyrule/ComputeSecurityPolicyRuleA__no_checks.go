@@ -75,6 +75,10 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutHeaderActionParameters(value *ComputeSecurityPolicyRuleHeaderActionA) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutMatchParameters(value *ComputeSecurityPolicyRuleMatchA) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutPreconfiguredWafConfig
 }
 
 func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutRateLimitOptionsParameters(value *ComputeSecurityPolicyRuleRateLimitOptionsA) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutRedirectOptionsParameters(value *ComputeSecurityPolicyRuleRedirectOptionsA) error {
 	return nil
 }
 

@@ -13,6 +13,8 @@ import (
 
 type VmwareenginePrivateCloudManagementClusterOutputReference interface {
 	cdktf.ComplexObject
+	AutoscalingSettings() VmwareenginePrivateCloudManagementClusterAutoscalingSettingsOutputReference
+	AutoscalingSettingsInput() *VmwareenginePrivateCloudManagementClusterAutoscalingSettings
 	ClusterId() *string
 	SetClusterId(val *string)
 	ClusterIdInput() *string
@@ -71,8 +73,10 @@ type VmwareenginePrivateCloudManagementClusterOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAutoscalingSettings(value *VmwareenginePrivateCloudManagementClusterAutoscalingSettings)
 	PutNodeTypeConfigs(value interface{})
 	PutStretchedClusterConfig(value *VmwareenginePrivateCloudManagementClusterStretchedClusterConfig)
+	ResetAutoscalingSettings()
 	ResetNodeTypeConfigs()
 	ResetStretchedClusterConfig()
 	// Produce the Token's value at resolution time.
@@ -88,6 +92,26 @@ type VmwareenginePrivateCloudManagementClusterOutputReference interface {
 // The jsii proxy struct for VmwareenginePrivateCloudManagementClusterOutputReference
 type jsiiProxy_VmwareenginePrivateCloudManagementClusterOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterOutputReference) AutoscalingSettings() VmwareenginePrivateCloudManagementClusterAutoscalingSettingsOutputReference {
+	var returns VmwareenginePrivateCloudManagementClusterAutoscalingSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"autoscalingSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterOutputReference) AutoscalingSettingsInput() *VmwareenginePrivateCloudManagementClusterAutoscalingSettings {
+	var returns *VmwareenginePrivateCloudManagementClusterAutoscalingSettings
+	_jsii_.Get(
+		j,
+		"autoscalingSettingsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_VmwareenginePrivateCloudManagementClusterOutputReference) ClusterId() *string {
@@ -500,6 +524,17 @@ func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterOutputReference) Int
 	return returns
 }
 
+func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterOutputReference) PutAutoscalingSettings(value *VmwareenginePrivateCloudManagementClusterAutoscalingSettings) {
+	if err := v.validatePutAutoscalingSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putAutoscalingSettings",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterOutputReference) PutNodeTypeConfigs(value interface{}) {
 	if err := v.validatePutNodeTypeConfigsParameters(value); err != nil {
 		panic(err)
@@ -519,6 +554,14 @@ func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterOutputReference) Put
 		v,
 		"putStretchedClusterConfig",
 		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterOutputReference) ResetAutoscalingSettings() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetAutoscalingSettings",
+		nil, // no parameters
 	)
 }
 

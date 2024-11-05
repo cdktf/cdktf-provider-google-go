@@ -91,6 +91,10 @@ func (a *jsiiProxy_AssuredWorkloadsWorkload) validatePutTimeoutsParameters(value
 	return nil
 }
 
+func (a *jsiiProxy_AssuredWorkloadsWorkload) validatePutWorkloadOptionsParameters(value *AssuredWorkloadsWorkloadWorkloadOptions) error {
+	return nil
+}
+
 func validateAssuredWorkloadsWorkload_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

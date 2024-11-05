@@ -46,6 +46,9 @@ type ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference interface
 	ThreadsPerCore() *float64
 	SetThreadsPerCore(val *float64)
 	ThreadsPerCoreInput() *float64
+	TurboMode() *string
+	SetTurboMode(val *string)
+	TurboModeInput() *string
 	VisibleCoreCount() *float64
 	SetVisibleCoreCount(val *float64)
 	VisibleCoreCountInput() *float64
@@ -75,6 +78,7 @@ type ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference interface
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnableNestedVirtualization()
 	ResetThreadsPerCore()
+	ResetTurboMode()
 	ResetVisibleCoreCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -201,6 +205,26 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputRefer
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) TurboMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turboMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) TurboModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turboModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) VisibleCoreCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -322,6 +346,17 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputRefer
 	_jsii_.Set(
 		j,
 		"threadsPerCore",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference)SetTurboMode(val *string) {
+	if err := j.validateSetTurboModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"turboMode",
 		val,
 	)
 }
@@ -535,6 +570,14 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputRefer
 	_jsii_.InvokeVoid(
 		c,
 		"resetThreadsPerCore",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) ResetTurboMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTurboMode",
 		nil, // no parameters
 	)
 }

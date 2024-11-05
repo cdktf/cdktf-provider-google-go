@@ -147,6 +147,10 @@ func (j *jsiiProxy_ComputeServiceAttachment) validateSetProjectParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_ComputeServiceAttachment) validateSetPropagatedConnectionLimitParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeServiceAttachment) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

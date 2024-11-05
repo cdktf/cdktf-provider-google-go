@@ -13,6 +13,7 @@ import (
 
 type DataGoogleVmwareenginePrivateCloudManagementClusterOutputReference interface {
 	cdktf.ComplexObject
+	AutoscalingSettings() DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsList
 	ClusterId() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -80,6 +81,16 @@ type DataGoogleVmwareenginePrivateCloudManagementClusterOutputReference interfac
 // The jsii proxy struct for DataGoogleVmwareenginePrivateCloudManagementClusterOutputReference
 type jsiiProxy_DataGoogleVmwareenginePrivateCloudManagementClusterOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloudManagementClusterOutputReference) AutoscalingSettings() DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsList {
+	var returns DataGoogleVmwareenginePrivateCloudManagementClusterAutoscalingSettingsList
+	_jsii_.Get(
+		j,
+		"autoscalingSettings",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloudManagementClusterOutputReference) ClusterId() *string {

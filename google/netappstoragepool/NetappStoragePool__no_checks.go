@@ -159,7 +159,15 @@ func (j *jsiiProxy_NetappStoragePool) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_NetappStoragePool) validateSetReplicaZoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappStoragePool) validateSetServiceLevelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappStoragePool) validateSetZoneParameters(val *string) error {
 	return nil
 }
 

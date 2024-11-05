@@ -47,6 +47,10 @@ func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) validateInte
 	return nil
 }
 
+func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) validatePutAsymmetricAutoscalingOptionsParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) validatePutAutoscalingLimitsParameters(value *SpannerInstanceAutoscalingConfigAutoscalingLimits) error {
 	return nil
 }

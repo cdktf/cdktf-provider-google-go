@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/netapp_volume google_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/netapp_volume google_netapp_volume}.
 type NetappVolume interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
@@ -106,6 +106,7 @@ type NetappVolume interface {
 	PsaRange() *string
 	// Experimental.
 	RawOverrides() interface{}
+	ReplicaZone() *string
 	RestoreParameters() NetappVolumeRestoreParametersOutputReference
 	RestoreParametersInput() *NetappVolumeRestoreParameters
 	RestrictedActions() *[]*string
@@ -146,6 +147,7 @@ type NetappVolume interface {
 	SetUnixPermissions(val *string)
 	UnixPermissionsInput() *string
 	UsedGib() *string
+	Zone() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -755,6 +757,16 @@ func (j *jsiiProxy_NetappVolume) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NetappVolume) ReplicaZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replicaZone",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetappVolume) RestoreParameters() NetappVolumeRestoreParametersOutputReference {
 	var returns NetappVolumeRestoreParametersOutputReference
 	_jsii_.Get(
@@ -1055,8 +1067,18 @@ func (j *jsiiProxy_NetappVolume) UsedGib() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NetappVolume) Zone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zone",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/netapp_volume google_netapp_volume} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/netapp_volume google_netapp_volume} Resource.
 func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolumeConfig) NetappVolume {
 	_init_.Initialize()
 
@@ -1074,7 +1096,7 @@ func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolum
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/netapp_volume google_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/netapp_volume google_netapp_volume} Resource.
 func NewNetappVolume_Override(n NetappVolume, scope constructs.Construct, id *string, config *NetappVolumeConfig) {
 	_init_.Initialize()
 

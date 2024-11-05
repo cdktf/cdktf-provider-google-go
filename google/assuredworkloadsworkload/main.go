@@ -81,6 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putPartnerPermissions", GoMethod: "PutPartnerPermissions"},
 			_jsii_.MemberMethod{JsiiMethod: "putResourceSettings", GoMethod: "PutResourceSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "putWorkloadOptions", GoMethod: "PutWorkloadOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBillingAccount", GoMethod: "ResetBillingAccount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableSovereignControls", GoMethod: "ResetEnableSovereignControls"},
@@ -95,6 +96,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetResourceSettings", GoMethod: "ResetResourceSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetViolationNotificationsEnabled", GoMethod: "ResetViolationNotificationsEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkloadOptions", GoMethod: "ResetWorkloadOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "resources", GoGetter: "Resources"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceSettings", GoGetter: "ResourceSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceSettingsInput", GoGetter: "ResourceSettingsInput"},
@@ -113,6 +115,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "violationNotificationsEnabled", GoGetter: "ViolationNotificationsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "violationNotificationsEnabledInput", GoGetter: "ViolationNotificationsEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workloadOptions", GoGetter: "WorkloadOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "workloadOptionsInput", GoGetter: "WorkloadOptionsInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AssuredWorkloadsWorkload{}
@@ -554,6 +558,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AssuredWorkloadsWorkloadTimeoutsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadWorkloadOptions",
+		reflect.TypeOf((*AssuredWorkloadsWorkloadWorkloadOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadWorkloadOptionsOutputReference",
+		reflect.TypeOf((*AssuredWorkloadsWorkloadWorkloadOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "kajEnrollmentType", GoGetter: "KajEnrollmentType"},
+			_jsii_.MemberProperty{JsiiProperty: "kajEnrollmentTypeInput", GoGetter: "KajEnrollmentTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetKajEnrollmentType", GoMethod: "ResetKajEnrollmentType"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AssuredWorkloadsWorkloadWorkloadOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

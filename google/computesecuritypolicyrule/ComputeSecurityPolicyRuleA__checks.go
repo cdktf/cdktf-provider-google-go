@@ -207,6 +207,17 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutHeaderActionParameters(value *ComputeSecurityPolicyRuleHeaderActionA) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutMatchParameters(value *ComputeSecurityPolicyRuleMatchA) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -230,6 +241,17 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutPreconfiguredWafConfig
 }
 
 func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutRateLimitOptionsParameters(value *ComputeSecurityPolicyRuleRateLimitOptionsA) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutRedirectOptionsParameters(value *ComputeSecurityPolicyRuleRedirectOptionsA) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

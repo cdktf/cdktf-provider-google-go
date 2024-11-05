@@ -42,6 +42,7 @@ type DataGoogleComputeInstanceAdvancedMachineFeaturesOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	ThreadsPerCore() *float64
+	TurboMode() *string
 	VisibleCoreCount() *float64
 	// Experimental.
 	ComputeFqn() *string
@@ -167,6 +168,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceAdvancedMachineFeaturesOutputReferen
 	_jsii_.Get(
 		j,
 		"threadsPerCore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceAdvancedMachineFeaturesOutputReference) TurboMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"turboMode",
 		&returns,
 	)
 	return returns

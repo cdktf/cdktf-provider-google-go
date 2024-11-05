@@ -11,7 +11,7 @@ type DataFusionInstanceNetworkConfigPrivateServiceConnectConfig struct {
 	// It will be of the form projects/{project-id}/regions/{region}/networkAttachments/{network-attachment-id}.
 	// This is required only when using connection type PRIVATE_SERVICE_CONNECT_INTERFACES.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/data_fusion_instance#network_attachment DataFusionInstance#network_attachment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/data_fusion_instance#network_attachment DataFusionInstance#network_attachment}
 	NetworkAttachment *string `field:"optional" json:"networkAttachment" yaml:"networkAttachment"`
 	// Optional.
 	//
@@ -20,7 +20,7 @@ type DataFusionInstanceNetworkConfigPrivateServiceConnectConfig struct {
 	// This range can be used for other purposes in the consumer VPC as long as there is no requirement for CDF to reach destinations using these addresses.
 	// If this value is not provided, the server chooses a non RFC 1918 address range. The format of this field is governed by RFC 4632.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.9.0/docs/resources/data_fusion_instance#unreachable_cidr_block DataFusionInstance#unreachable_cidr_block}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/data_fusion_instance#unreachable_cidr_block DataFusionInstance#unreachable_cidr_block}
 	UnreachableCidrBlock *string `field:"optional" json:"unreachableCidrBlock" yaml:"unreachableCidrBlock"`
 }
 
