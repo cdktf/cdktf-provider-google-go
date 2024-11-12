@@ -30,6 +30,8 @@ type CloudRunV2JobTemplateTemplateVolumesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EmptyDir() CloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference
+	EmptyDirInput() *CloudRunV2JobTemplateTemplateVolumesEmptyDir
 	// Experimental.
 	Fqn() *string
 	Gcs() CloudRunV2JobTemplateTemplateVolumesGcsOutputReference
@@ -76,10 +78,12 @@ type CloudRunV2JobTemplateTemplateVolumesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudSqlInstance(value *CloudRunV2JobTemplateTemplateVolumesCloudSqlInstance)
+	PutEmptyDir(value *CloudRunV2JobTemplateTemplateVolumesEmptyDir)
 	PutGcs(value *CloudRunV2JobTemplateTemplateVolumesGcs)
 	PutNfs(value *CloudRunV2JobTemplateTemplateVolumesNfs)
 	PutSecret(value *CloudRunV2JobTemplateTemplateVolumesSecret)
 	ResetCloudSqlInstance()
+	ResetEmptyDir()
 	ResetGcs()
 	ResetNfs()
 	ResetSecret()
@@ -143,6 +147,26 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) Creation
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) EmptyDir() CloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference {
+	var returns CloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference
+	_jsii_.Get(
+		j,
+		"emptyDir",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) EmptyDirInput() *CloudRunV2JobTemplateTemplateVolumesEmptyDir {
+	var returns *CloudRunV2JobTemplateTemplateVolumesEmptyDir
+	_jsii_.Get(
+		j,
+		"emptyDirInput",
 		&returns,
 	)
 	return returns
@@ -559,6 +583,17 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) PutCloud
 	)
 }
 
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) PutEmptyDir(value *CloudRunV2JobTemplateTemplateVolumesEmptyDir) {
+	if err := c.validatePutEmptyDirParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putEmptyDir",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) PutGcs(value *CloudRunV2JobTemplateTemplateVolumesGcs) {
 	if err := c.validatePutGcsParameters(value); err != nil {
 		panic(err)
@@ -596,6 +631,14 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) ResetClo
 	_jsii_.InvokeVoid(
 		c,
 		"resetCloudSqlInstance",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesOutputReference) ResetEmptyDir() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEmptyDir",
 		nil, // no parameters
 	)
 }

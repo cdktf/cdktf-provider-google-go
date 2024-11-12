@@ -167,6 +167,10 @@ func (j *jsiiProxy_SqlDatabaseInstance) validateSetRegionParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstance) validateSetReplicaNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstance) validateSetRootPasswordParameters(val *string) error {
 	return nil
 }

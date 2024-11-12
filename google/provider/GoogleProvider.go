@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -205,6 +205,9 @@ type GoogleProvider interface {
 	DataprocCustomEndpoint() *string
 	SetDataprocCustomEndpoint(val *string)
 	DataprocCustomEndpointInput() *string
+	DataprocGdcCustomEndpoint() *string
+	SetDataprocGdcCustomEndpoint(val *string)
+	DataprocGdcCustomEndpointInput() *string
 	DataprocMetastoreCustomEndpoint() *string
 	SetDataprocMetastoreCustomEndpoint(val *string)
 	DataprocMetastoreCustomEndpointInput() *string
@@ -326,6 +329,9 @@ type GoogleProvider interface {
 	MemcacheCustomEndpoint() *string
 	SetMemcacheCustomEndpoint(val *string)
 	MemcacheCustomEndpointInput() *string
+	MemorystoreCustomEndpoint() *string
+	SetMemorystoreCustomEndpoint(val *string)
+	MemorystoreCustomEndpointInput() *string
 	// Experimental.
 	MetaAttributes() *map[string]interface{}
 	MigrationCenterCustomEndpoint() *string
@@ -576,6 +582,7 @@ type GoogleProvider interface {
 	ResetDataPipelineCustomEndpoint()
 	ResetDataplexCustomEndpoint()
 	ResetDataprocCustomEndpoint()
+	ResetDataprocGdcCustomEndpoint()
 	ResetDataprocMetastoreCustomEndpoint()
 	ResetDatastreamCustomEndpoint()
 	ResetDefaultLabels()
@@ -615,6 +622,7 @@ type GoogleProvider interface {
 	ResetLoggingCustomEndpoint()
 	ResetLookerCustomEndpoint()
 	ResetMemcacheCustomEndpoint()
+	ResetMemorystoreCustomEndpoint()
 	ResetMigrationCenterCustomEndpoint()
 	ResetMlEngineCustomEndpoint()
 	ResetMonitoringCustomEndpoint()
@@ -1953,6 +1961,26 @@ func (j *jsiiProxy_GoogleProvider) DataprocCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) DataprocGdcCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataprocGdcCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) DataprocGdcCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataprocGdcCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) DataprocMetastoreCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2748,6 +2776,26 @@ func (j *jsiiProxy_GoogleProvider) MemcacheCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"memcacheCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) MemorystoreCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"memorystoreCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) MemorystoreCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"memorystoreCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3954,7 +4002,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -3972,7 +4020,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -4485,6 +4533,14 @@ func (j *jsiiProxy_GoogleProvider)SetDataprocCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetDataprocGdcCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"dataprocGdcCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetDataprocMetastoreCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4793,6 +4849,14 @@ func (j *jsiiProxy_GoogleProvider)SetMemcacheCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"memcacheCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetMemorystoreCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"memorystoreCustomEndpoint",
 		val,
 	)
 }
@@ -5877,6 +5941,14 @@ func (g *jsiiProxy_GoogleProvider) ResetDataprocCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetDataprocGdcCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDataprocGdcCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetDataprocMetastoreCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6185,6 +6257,14 @@ func (g *jsiiProxy_GoogleProvider) ResetMemcacheCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMemcacheCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetMemorystoreCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMemorystoreCustomEndpoint",
 		nil, // no parameters
 	)
 }

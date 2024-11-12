@@ -24,32 +24,32 @@ type ActiveDirectoryDomainConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The fully qualified domain name. e.g. mydomain.myorganization.com, with the restrictions of https://cloud.google.com/managed-microsoft-ad/reference/rest/v1/projects.locations.global.domains.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/active_directory_domain#domain_name ActiveDirectoryDomain#domain_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/active_directory_domain#domain_name ActiveDirectoryDomain#domain_name}
 	DomainName *string `field:"required" json:"domainName" yaml:"domainName"`
 	// Locations where domain needs to be provisioned.
 	//
 	// [regions][compute/docs/regions-zones/]
 	// e.g. us-west1 or us-east4 Service supports up to 4 locations at once. Each location will use a /26 block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/active_directory_domain#locations ActiveDirectoryDomain#locations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/active_directory_domain#locations ActiveDirectoryDomain#locations}
 	Locations *[]*string `field:"required" json:"locations" yaml:"locations"`
 	// The CIDR range of internal addresses that are reserved for this domain.
 	//
 	// Reserved networks must be /24 or larger.
 	// Ranges must be unique and non-overlapping with existing subnets in authorizedNetworks
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/active_directory_domain#reserved_ip_range ActiveDirectoryDomain#reserved_ip_range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/active_directory_domain#reserved_ip_range ActiveDirectoryDomain#reserved_ip_range}
 	ReservedIpRange *string `field:"required" json:"reservedIpRange" yaml:"reservedIpRange"`
 	// The name of delegated administrator account used to perform Active Directory operations. If not specified, setupadmin will be used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/active_directory_domain#admin ActiveDirectoryDomain#admin}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/active_directory_domain#admin ActiveDirectoryDomain#admin}
 	Admin *string `field:"optional" json:"admin" yaml:"admin"`
 	// The full names of the Google Compute Engine networks the domain instance is connected to.
 	//
 	// The domain is only available on networks listed in authorizedNetworks.
 	// If CIDR subnets overlap between networks, domain creation will fail.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/active_directory_domain#authorized_networks ActiveDirectoryDomain#authorized_networks}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/active_directory_domain#authorized_networks ActiveDirectoryDomain#authorized_networks}
 	AuthorizedNetworks *[]*string `field:"optional" json:"authorizedNetworks" yaml:"authorizedNetworks"`
 	// Whether Terraform will be prevented from destroying the domain.
 	//
@@ -60,9 +60,9 @@ type ActiveDirectoryDomainConfig struct {
 	// or 'terraform destroy' that would delete the domain will fail.
 	// When the field is set to false, deleting the domain is allowed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/active_directory_domain#deletion_protection ActiveDirectoryDomain#deletion_protection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/active_directory_domain#deletion_protection ActiveDirectoryDomain#deletion_protection}
 	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/active_directory_domain#id ActiveDirectoryDomain#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/active_directory_domain#id ActiveDirectoryDomain#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -72,13 +72,13 @@ type ActiveDirectoryDomainConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/active_directory_domain#labels ActiveDirectoryDomain#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/active_directory_domain#labels ActiveDirectoryDomain#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/active_directory_domain#project ActiveDirectoryDomain#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/active_directory_domain#project ActiveDirectoryDomain#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/active_directory_domain#timeouts ActiveDirectoryDomain#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/active_directory_domain#timeouts ActiveDirectoryDomain#timeouts}
 	Timeouts *ActiveDirectoryDomainTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

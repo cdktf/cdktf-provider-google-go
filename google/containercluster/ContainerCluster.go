@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/container_cluster google_container_cluster}.
 type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
@@ -39,6 +39,8 @@ type ContainerCluster interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ControlPlaneEndpointsConfig() ContainerClusterControlPlaneEndpointsConfigOutputReference
+	ControlPlaneEndpointsConfigInput() *ContainerClusterControlPlaneEndpointsConfig
 	CostManagementConfig() ContainerClusterCostManagementConfigOutputReference
 	CostManagementConfigInput() *ContainerClusterCostManagementConfig
 	// Experimental.
@@ -229,6 +231,8 @@ type ContainerCluster interface {
 	Timeouts() ContainerClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	TpuIpv4CidrBlock() *string
+	UserManagedKeysConfig() ContainerClusterUserManagedKeysConfigOutputReference
+	UserManagedKeysConfigInput() *ContainerClusterUserManagedKeysConfig
 	VerticalPodAutoscaling() ContainerClusterVerticalPodAutoscalingOutputReference
 	VerticalPodAutoscalingInput() *ContainerClusterVerticalPodAutoscaling
 	WorkloadIdentityConfig() ContainerClusterWorkloadIdentityConfigOutputReference
@@ -281,6 +285,7 @@ type ContainerCluster interface {
 	PutBinaryAuthorization(value *ContainerClusterBinaryAuthorization)
 	PutClusterAutoscaling(value *ContainerClusterClusterAutoscaling)
 	PutConfidentialNodes(value *ContainerClusterConfidentialNodes)
+	PutControlPlaneEndpointsConfig(value *ContainerClusterControlPlaneEndpointsConfig)
 	PutCostManagementConfig(value *ContainerClusterCostManagementConfig)
 	PutDatabaseEncryption(value *ContainerClusterDatabaseEncryption)
 	PutDefaultSnatStatus(value *ContainerClusterDefaultSnatStatus)
@@ -309,6 +314,7 @@ type ContainerCluster interface {
 	PutSecurityPostureConfig(value *ContainerClusterSecurityPostureConfig)
 	PutServiceExternalIpsConfig(value *ContainerClusterServiceExternalIpsConfig)
 	PutTimeouts(value *ContainerClusterTimeouts)
+	PutUserManagedKeysConfig(value *ContainerClusterUserManagedKeysConfig)
 	PutVerticalPodAutoscaling(value *ContainerClusterVerticalPodAutoscaling)
 	PutWorkloadIdentityConfig(value *ContainerClusterWorkloadIdentityConfig)
 	ResetAddonsConfig()
@@ -318,6 +324,7 @@ type ContainerCluster interface {
 	ResetClusterAutoscaling()
 	ResetClusterIpv4Cidr()
 	ResetConfidentialNodes()
+	ResetControlPlaneEndpointsConfig()
 	ResetCostManagementConfig()
 	ResetDatabaseEncryption()
 	ResetDatapathProvider()
@@ -377,6 +384,7 @@ type ContainerCluster interface {
 	ResetServiceExternalIpsConfig()
 	ResetSubnetwork()
 	ResetTimeouts()
+	ResetUserManagedKeysConfig()
 	ResetVerticalPodAutoscaling()
 	ResetWorkloadIdentityConfig()
 	SynthesizeAttributes() *map[string]interface{}
@@ -562,6 +570,26 @@ func (j *jsiiProxy_ContainerCluster) ConstructNodeMetadata() *map[string]interfa
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) ControlPlaneEndpointsConfig() ContainerClusterControlPlaneEndpointsConfigOutputReference {
+	var returns ContainerClusterControlPlaneEndpointsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"controlPlaneEndpointsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) ControlPlaneEndpointsConfigInput() *ContainerClusterControlPlaneEndpointsConfig {
+	var returns *ContainerClusterControlPlaneEndpointsConfig
+	_jsii_.Get(
+		j,
+		"controlPlaneEndpointsConfigInput",
 		&returns,
 	)
 	return returns
@@ -1927,6 +1955,26 @@ func (j *jsiiProxy_ContainerCluster) TpuIpv4CidrBlock() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerCluster) UserManagedKeysConfig() ContainerClusterUserManagedKeysConfigOutputReference {
+	var returns ContainerClusterUserManagedKeysConfigOutputReference
+	_jsii_.Get(
+		j,
+		"userManagedKeysConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) UserManagedKeysConfigInput() *ContainerClusterUserManagedKeysConfig {
+	var returns *ContainerClusterUserManagedKeysConfig
+	_jsii_.Get(
+		j,
+		"userManagedKeysConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerCluster) VerticalPodAutoscaling() ContainerClusterVerticalPodAutoscalingOutputReference {
 	var returns ContainerClusterVerticalPodAutoscalingOutputReference
 	_jsii_.Get(
@@ -1968,7 +2016,7 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
 
@@ -1986,7 +2034,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct, id *string, config *ContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -2814,6 +2862,17 @@ func (c *jsiiProxy_ContainerCluster) PutConfidentialNodes(value *ContainerCluste
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutControlPlaneEndpointsConfig(value *ContainerClusterControlPlaneEndpointsConfig) {
+	if err := c.validatePutControlPlaneEndpointsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putControlPlaneEndpointsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutCostManagementConfig(value *ContainerClusterCostManagementConfig) {
 	if err := c.validatePutCostManagementConfigParameters(value); err != nil {
 		panic(err)
@@ -3122,6 +3181,17 @@ func (c *jsiiProxy_ContainerCluster) PutTimeouts(value *ContainerClusterTimeouts
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutUserManagedKeysConfig(value *ContainerClusterUserManagedKeysConfig) {
+	if err := c.validatePutUserManagedKeysConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putUserManagedKeysConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutVerticalPodAutoscaling(value *ContainerClusterVerticalPodAutoscaling) {
 	if err := c.validatePutVerticalPodAutoscalingParameters(value); err != nil {
 		panic(err)
@@ -3196,6 +3266,14 @@ func (c *jsiiProxy_ContainerCluster) ResetConfidentialNodes() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetConfidentialNodes",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetControlPlaneEndpointsConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetControlPlaneEndpointsConfig",
 		nil, // no parameters
 	)
 }
@@ -3652,6 +3730,14 @@ func (c *jsiiProxy_ContainerCluster) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetUserManagedKeysConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUserManagedKeysConfig",
 		nil, // no parameters
 	)
 }

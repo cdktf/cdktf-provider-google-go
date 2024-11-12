@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/vertex_ai_endpoint google_vertex_ai_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/vertex_ai_endpoint google_vertex_ai_endpoint}.
 type VertexAiEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,10 @@ type VertexAiEndpoint interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DedicatedEndpointDns() *string
+	DedicatedEndpointEnabled() interface{}
+	SetDedicatedEndpointEnabled(val interface{})
+	DedicatedEndpointEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -73,6 +77,10 @@ type VertexAiEndpoint interface {
 	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PredictRequestResponseLoggingConfig() VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference
+	PredictRequestResponseLoggingConfigInput() *VertexAiEndpointPredictRequestResponseLoggingConfig
+	PrivateServiceConnectConfig() VertexAiEndpointPrivateServiceConnectConfigOutputReference
+	PrivateServiceConnectConfigInput() *VertexAiEndpointPrivateServiceConnectConfig
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -98,6 +106,9 @@ type VertexAiEndpoint interface {
 	TerraformResourceType() *string
 	Timeouts() VertexAiEndpointTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TrafficSplit() *string
+	SetTrafficSplit(val *string)
+	TrafficSplitInput() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -143,7 +154,10 @@ type VertexAiEndpoint interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEncryptionSpec(value *VertexAiEndpointEncryptionSpec)
+	PutPredictRequestResponseLoggingConfig(value *VertexAiEndpointPredictRequestResponseLoggingConfig)
+	PutPrivateServiceConnectConfig(value *VertexAiEndpointPrivateServiceConnectConfig)
 	PutTimeouts(value *VertexAiEndpointTimeouts)
+	ResetDedicatedEndpointEnabled()
 	ResetDescription()
 	ResetEncryptionSpec()
 	ResetId()
@@ -152,9 +166,12 @@ type VertexAiEndpoint interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPredictRequestResponseLoggingConfig()
+	ResetPrivateServiceConnectConfig()
 	ResetProject()
 	ResetRegion()
 	ResetTimeouts()
+	ResetTrafficSplit()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -218,6 +235,36 @@ func (j *jsiiProxy_VertexAiEndpoint) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiEndpoint) DedicatedEndpointDns() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dedicatedEndpointDns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiEndpoint) DedicatedEndpointEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dedicatedEndpointEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiEndpoint) DedicatedEndpointEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dedicatedEndpointEnabledInput",
 		&returns,
 	)
 	return returns
@@ -483,6 +530,46 @@ func (j *jsiiProxy_VertexAiEndpoint) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_VertexAiEndpoint) PredictRequestResponseLoggingConfig() VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference {
+	var returns VertexAiEndpointPredictRequestResponseLoggingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"predictRequestResponseLoggingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiEndpoint) PredictRequestResponseLoggingConfigInput() *VertexAiEndpointPredictRequestResponseLoggingConfig {
+	var returns *VertexAiEndpointPredictRequestResponseLoggingConfig
+	_jsii_.Get(
+		j,
+		"predictRequestResponseLoggingConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiEndpoint) PrivateServiceConnectConfig() VertexAiEndpointPrivateServiceConnectConfigOutputReference {
+	var returns VertexAiEndpointPrivateServiceConnectConfigOutputReference
+	_jsii_.Get(
+		j,
+		"privateServiceConnectConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiEndpoint) PrivateServiceConnectConfigInput() *VertexAiEndpointPrivateServiceConnectConfig {
+	var returns *VertexAiEndpointPrivateServiceConnectConfig
+	_jsii_.Get(
+		j,
+		"privateServiceConnectConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VertexAiEndpoint) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -613,6 +700,26 @@ func (j *jsiiProxy_VertexAiEndpoint) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VertexAiEndpoint) TrafficSplit() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"trafficSplit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VertexAiEndpoint) TrafficSplitInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"trafficSplitInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VertexAiEndpoint) UpdateTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -624,7 +731,7 @@ func (j *jsiiProxy_VertexAiEndpoint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/vertex_ai_endpoint google_vertex_ai_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/vertex_ai_endpoint google_vertex_ai_endpoint} Resource.
 func NewVertexAiEndpoint(scope constructs.Construct, id *string, config *VertexAiEndpointConfig) VertexAiEndpoint {
 	_init_.Initialize()
 
@@ -642,7 +749,7 @@ func NewVertexAiEndpoint(scope constructs.Construct, id *string, config *VertexA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/vertex_ai_endpoint google_vertex_ai_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/vertex_ai_endpoint google_vertex_ai_endpoint} Resource.
 func NewVertexAiEndpoint_Override(v VertexAiEndpoint, scope constructs.Construct, id *string, config *VertexAiEndpointConfig) {
 	_init_.Initialize()
 
@@ -671,6 +778,17 @@ func (j *jsiiProxy_VertexAiEndpoint)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VertexAiEndpoint)SetDedicatedEndpointEnabled(val interface{}) {
+	if err := j.validateSetDedicatedEndpointEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dedicatedEndpointEnabled",
 		val,
 	)
 }
@@ -816,6 +934,17 @@ func (j *jsiiProxy_VertexAiEndpoint)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VertexAiEndpoint)SetTrafficSplit(val *string) {
+	if err := j.validateSetTrafficSplitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"trafficSplit",
 		val,
 	)
 }
@@ -1184,6 +1313,28 @@ func (v *jsiiProxy_VertexAiEndpoint) PutEncryptionSpec(value *VertexAiEndpointEn
 	)
 }
 
+func (v *jsiiProxy_VertexAiEndpoint) PutPredictRequestResponseLoggingConfig(value *VertexAiEndpointPredictRequestResponseLoggingConfig) {
+	if err := v.validatePutPredictRequestResponseLoggingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putPredictRequestResponseLoggingConfig",
+		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VertexAiEndpoint) PutPrivateServiceConnectConfig(value *VertexAiEndpointPrivateServiceConnectConfig) {
+	if err := v.validatePutPrivateServiceConnectConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putPrivateServiceConnectConfig",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VertexAiEndpoint) PutTimeouts(value *VertexAiEndpointTimeouts) {
 	if err := v.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1192,6 +1343,14 @@ func (v *jsiiProxy_VertexAiEndpoint) PutTimeouts(value *VertexAiEndpointTimeouts
 		v,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VertexAiEndpoint) ResetDedicatedEndpointEnabled() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetDedicatedEndpointEnabled",
+		nil, // no parameters
 	)
 }
 
@@ -1243,6 +1402,22 @@ func (v *jsiiProxy_VertexAiEndpoint) ResetOverrideLogicalId() {
 	)
 }
 
+func (v *jsiiProxy_VertexAiEndpoint) ResetPredictRequestResponseLoggingConfig() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPredictRequestResponseLoggingConfig",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VertexAiEndpoint) ResetPrivateServiceConnectConfig() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPrivateServiceConnectConfig",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VertexAiEndpoint) ResetProject() {
 	_jsii_.InvokeVoid(
 		v,
@@ -1263,6 +1438,14 @@ func (v *jsiiProxy_VertexAiEndpoint) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VertexAiEndpoint) ResetTrafficSplit() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetTrafficSplit",
 		nil, // no parameters
 	)
 }

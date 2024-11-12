@@ -95,6 +95,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutConfidentialNodesParameters(valu
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutControlPlaneEndpointsConfigParameters(value *ContainerClusterControlPlaneEndpointsConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutCostManagementConfigParameters(value *ContainerClusterCostManagementConfig) error {
 	return nil
 }
@@ -204,6 +208,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutServiceExternalIpsConfigParamete
 }
 
 func (c *jsiiProxy_ContainerCluster) validatePutTimeoutsParameters(value *ContainerClusterTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContainerCluster) validatePutUserManagedKeysConfigParameters(value *ContainerClusterUserManagedKeysConfig) error {
 	return nil
 }
 

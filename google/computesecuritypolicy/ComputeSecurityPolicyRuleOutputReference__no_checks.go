@@ -55,6 +55,10 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) validatePutMatchPar
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) validatePutPreconfiguredWafConfigParameters(value *ComputeSecurityPolicyRulePreconfiguredWafConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSecurityPolicyRuleOutputReference) validatePutRateLimitOptionsParameters(value *ComputeSecurityPolicyRuleRateLimitOptions) error {
 	return nil
 }

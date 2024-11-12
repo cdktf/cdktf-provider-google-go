@@ -29,6 +29,7 @@ type DataGoogleCloudRunServiceTemplateSpecVolumesOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	Csi() DataGoogleCloudRunServiceTemplateSpecVolumesCsiList
+	EmptyDir() DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleCloudRunServiceTemplateSpecVolumes
@@ -118,6 +119,16 @@ func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesOutputReference) 
 	_jsii_.Get(
 		j,
 		"csi",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesOutputReference) EmptyDir() DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirList {
+	var returns DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirList
+	_jsii_.Get(
+		j,
+		"emptyDir",
 		&returns,
 	)
 	return returns

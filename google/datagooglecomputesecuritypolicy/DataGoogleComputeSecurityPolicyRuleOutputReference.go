@@ -36,6 +36,7 @@ type DataGoogleComputeSecurityPolicyRuleOutputReference interface {
 	InternalValue() *DataGoogleComputeSecurityPolicyRule
 	SetInternalValue(val *DataGoogleComputeSecurityPolicyRule)
 	Match() DataGoogleComputeSecurityPolicyRuleMatchList
+	PreconfiguredWafConfig() DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigList
 	Preview() cdktf.IResolvable
 	Priority() *float64
 	RateLimitOptions() DataGoogleComputeSecurityPolicyRuleRateLimitOptionsList
@@ -172,6 +173,16 @@ func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRuleOutputReference) Match() D
 	_jsii_.Get(
 		j,
 		"match",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRuleOutputReference) PreconfiguredWafConfig() DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigList {
+	var returns DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigList
+	_jsii_.Get(
+		j,
+		"preconfiguredWafConfig",
 		&returns,
 	)
 	return returns

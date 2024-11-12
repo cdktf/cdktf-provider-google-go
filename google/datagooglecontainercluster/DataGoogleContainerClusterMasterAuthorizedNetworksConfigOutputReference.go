@@ -34,6 +34,7 @@ type DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference int
 	GcpPublicCidrsAccessEnabled() cdktf.IResolvable
 	InternalValue() *DataGoogleContainerClusterMasterAuthorizedNetworksConfig
 	SetInternalValue(val *DataGoogleContainerClusterMasterAuthorizedNetworksConfig)
+	PrivateEndpointEnforcementEnabled() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -146,6 +147,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutpu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) PrivateEndpointEnforcementEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"privateEndpointEnforcementEnabled",
 		&returns,
 	)
 	return returns

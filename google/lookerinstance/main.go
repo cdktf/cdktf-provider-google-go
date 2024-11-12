@@ -107,7 +107,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetFipsEnabled", GoMethod: "ResetFipsEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaintenanceWindow", GoMethod: "ResetMaintenanceWindow"},
-			_jsii_.MemberMethod{JsiiMethod: "resetOauthConfig", GoMethod: "ResetOauthConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPlatformEdition", GoMethod: "ResetPlatformEdition"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrivateIpEnabled", GoMethod: "ResetPrivateIpEnabled"},

@@ -71,6 +71,10 @@ func (j *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateSetPrivateEndpointEnforcementEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

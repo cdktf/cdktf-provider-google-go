@@ -267,6 +267,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publicIpAddress", GoGetter: "PublicIpAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "replicaConfiguration", GoGetter: "ReplicaConfiguration"},
+			_jsii_.MemberProperty{JsiiProperty: "replicaNames", GoGetter: "ReplicaNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "restoreBackupContext", GoGetter: "RestoreBackupContext"},
 			_jsii_.MemberProperty{JsiiProperty: "rootPassword", GoGetter: "RootPassword"},
@@ -314,6 +315,7 @@ func init() {
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCertificate", GoGetter: "CaCertificate"},
+			_jsii_.MemberProperty{JsiiProperty: "cascadableReplica", GoGetter: "CascadableReplica"},
 			_jsii_.MemberProperty{JsiiProperty: "clientCertificate", GoGetter: "ClientCertificate"},
 			_jsii_.MemberProperty{JsiiProperty: "clientKey", GoGetter: "ClientKey"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

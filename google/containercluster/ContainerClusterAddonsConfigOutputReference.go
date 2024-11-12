@@ -52,6 +52,8 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	SetInternalValue(val *ContainerClusterAddonsConfig)
 	NetworkPolicyConfig() ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference
 	NetworkPolicyConfigInput() *ContainerClusterAddonsConfigNetworkPolicyConfig
+	ParallelstoreCsiDriverConfig() ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference
+	ParallelstoreCsiDriverConfigInput() *ContainerClusterAddonsConfigParallelstoreCsiDriverConfig
 	RayOperatorConfig() ContainerClusterAddonsConfigRayOperatorConfigList
 	RayOperatorConfigInput() interface{}
 	StatefulHaConfig() ContainerClusterAddonsConfigStatefulHaConfigOutputReference
@@ -98,6 +100,7 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	PutHorizontalPodAutoscaling(value *ContainerClusterAddonsConfigHorizontalPodAutoscaling)
 	PutHttpLoadBalancing(value *ContainerClusterAddonsConfigHttpLoadBalancing)
 	PutNetworkPolicyConfig(value *ContainerClusterAddonsConfigNetworkPolicyConfig)
+	PutParallelstoreCsiDriverConfig(value *ContainerClusterAddonsConfigParallelstoreCsiDriverConfig)
 	PutRayOperatorConfig(value interface{})
 	PutStatefulHaConfig(value *ContainerClusterAddonsConfigStatefulHaConfig)
 	ResetCloudrunConfig()
@@ -110,6 +113,7 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	ResetHorizontalPodAutoscaling()
 	ResetHttpLoadBalancing()
 	ResetNetworkPolicyConfig()
+	ResetParallelstoreCsiDriverConfig()
 	ResetRayOperatorConfig()
 	ResetStatefulHaConfig()
 	// Produce the Token's value at resolution time.
@@ -372,6 +376,26 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) NetworkPolicyCon
 	_jsii_.Get(
 		j,
 		"networkPolicyConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ParallelstoreCsiDriverConfig() ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference {
+	var returns ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference
+	_jsii_.Get(
+		j,
+		"parallelstoreCsiDriverConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ParallelstoreCsiDriverConfigInput() *ContainerClusterAddonsConfigParallelstoreCsiDriverConfig {
+	var returns *ContainerClusterAddonsConfigParallelstoreCsiDriverConfig
+	_jsii_.Get(
+		j,
+		"parallelstoreCsiDriverConfigInput",
 		&returns,
 	)
 	return returns
@@ -816,6 +840,17 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutNetworkPolicy
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutParallelstoreCsiDriverConfig(value *ContainerClusterAddonsConfigParallelstoreCsiDriverConfig) {
+	if err := c.validatePutParallelstoreCsiDriverConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putParallelstoreCsiDriverConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutRayOperatorConfig(value interface{}) {
 	if err := c.validatePutRayOperatorConfigParameters(value); err != nil {
 		panic(err)
@@ -914,6 +949,14 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ResetNetworkPoli
 	_jsii_.InvokeVoid(
 		c,
 		"resetNetworkPolicyConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ResetParallelstoreCsiDriverConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParallelstoreCsiDriverConfig",
 		nil, // no parameters
 	)
 }

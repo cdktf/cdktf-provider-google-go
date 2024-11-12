@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/compute_node_template google_compute_node_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/compute_node_template google_compute_node_template}.
 type ComputeNodeTemplate interface {
 	cdktf.TerraformResource
 	Accelerators() ComputeNodeTemplateAcceleratorsList
@@ -40,6 +40,8 @@ type ComputeNodeTemplate interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	Disks() ComputeNodeTemplateDisksList
+	DisksInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -139,12 +141,14 @@ type ComputeNodeTemplate interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAccelerators(value interface{})
+	PutDisks(value interface{})
 	PutNodeTypeFlexibility(value *ComputeNodeTemplateNodeTypeFlexibility)
 	PutServerBinding(value *ComputeNodeTemplateServerBinding)
 	PutTimeouts(value *ComputeNodeTemplateTimeouts)
 	ResetAccelerators()
 	ResetCpuOvercommitType()
 	ResetDescription()
+	ResetDisks()
 	ResetId()
 	ResetName()
 	ResetNodeAffinityLabels()
@@ -290,6 +294,26 @@ func (j *jsiiProxy_ComputeNodeTemplate) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeNodeTemplate) Disks() ComputeNodeTemplateDisksList {
+	var returns ComputeNodeTemplateDisksList
+	_jsii_.Get(
+		j,
+		"disks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeNodeTemplate) DisksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disksInput",
 		&returns,
 	)
 	return returns
@@ -596,7 +620,7 @@ func (j *jsiiProxy_ComputeNodeTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/compute_node_template google_compute_node_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/compute_node_template google_compute_node_template} Resource.
 func NewComputeNodeTemplate(scope constructs.Construct, id *string, config *ComputeNodeTemplateConfig) ComputeNodeTemplate {
 	_init_.Initialize()
 
@@ -614,7 +638,7 @@ func NewComputeNodeTemplate(scope constructs.Construct, id *string, config *Comp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/compute_node_template google_compute_node_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/compute_node_template google_compute_node_template} Resource.
 func NewComputeNodeTemplate_Override(c ComputeNodeTemplate, scope constructs.Construct, id *string, config *ComputeNodeTemplateConfig) {
 	_init_.Initialize()
 
@@ -1145,6 +1169,17 @@ func (c *jsiiProxy_ComputeNodeTemplate) PutAccelerators(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_ComputeNodeTemplate) PutDisks(value interface{}) {
+	if err := c.validatePutDisksParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDisks",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeNodeTemplate) PutNodeTypeFlexibility(value *ComputeNodeTemplateNodeTypeFlexibility) {
 	if err := c.validatePutNodeTypeFlexibilityParameters(value); err != nil {
 		panic(err)
@@ -1198,6 +1233,14 @@ func (c *jsiiProxy_ComputeNodeTemplate) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeNodeTemplate) ResetDisks() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDisks",
 		nil, // no parameters
 	)
 }

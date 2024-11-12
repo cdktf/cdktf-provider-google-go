@@ -111,6 +111,10 @@ func (j *jsiiProxy_SpannerInstance) validateSetCountParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_SpannerInstance) validateSetDefaultBackupScheduleTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpannerInstance) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

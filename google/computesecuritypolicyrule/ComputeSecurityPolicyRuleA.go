@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/compute_security_policy_rule google_compute_security_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/compute_security_policy_rule google_compute_security_policy_rule}.
 type ComputeSecurityPolicyRuleA interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -58,8 +58,8 @@ type ComputeSecurityPolicyRuleA interface {
 	MatchInput() *ComputeSecurityPolicyRuleMatchA
 	// The tree node.
 	Node() constructs.Node
-	PreconfiguredWafConfig() ComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference
-	PreconfiguredWafConfigInput() *ComputeSecurityPolicyRulePreconfiguredWafConfig
+	PreconfiguredWafConfig() ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference
+	PreconfiguredWafConfigInput() *ComputeSecurityPolicyRulePreconfiguredWafConfigA
 	Preview() interface{}
 	SetPreview(val interface{})
 	PreviewInput() interface{}
@@ -139,7 +139,7 @@ type ComputeSecurityPolicyRuleA interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutHeaderAction(value *ComputeSecurityPolicyRuleHeaderActionA)
 	PutMatch(value *ComputeSecurityPolicyRuleMatchA)
-	PutPreconfiguredWafConfig(value *ComputeSecurityPolicyRulePreconfiguredWafConfig)
+	PutPreconfiguredWafConfig(value *ComputeSecurityPolicyRulePreconfiguredWafConfigA)
 	PutRateLimitOptions(value *ComputeSecurityPolicyRuleRateLimitOptionsA)
 	PutRedirectOptions(value *ComputeSecurityPolicyRuleRedirectOptionsA)
 	PutTimeouts(value *ComputeSecurityPolicyRuleTimeouts)
@@ -374,8 +374,8 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleA) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleA) PreconfiguredWafConfig() ComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference {
-	var returns ComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference
+func (j *jsiiProxy_ComputeSecurityPolicyRuleA) PreconfiguredWafConfig() ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference {
+	var returns ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference
 	_jsii_.Get(
 		j,
 		"preconfiguredWafConfig",
@@ -384,8 +384,8 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleA) PreconfiguredWafConfig() ComputeS
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleA) PreconfiguredWafConfigInput() *ComputeSecurityPolicyRulePreconfiguredWafConfig {
-	var returns *ComputeSecurityPolicyRulePreconfiguredWafConfig
+func (j *jsiiProxy_ComputeSecurityPolicyRuleA) PreconfiguredWafConfigInput() *ComputeSecurityPolicyRulePreconfiguredWafConfigA {
+	var returns *ComputeSecurityPolicyRulePreconfiguredWafConfigA
 	_jsii_.Get(
 		j,
 		"preconfiguredWafConfigInput",
@@ -595,7 +595,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/compute_security_policy_rule google_compute_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/compute_security_policy_rule google_compute_security_policy_rule} Resource.
 func NewComputeSecurityPolicyRuleA(scope constructs.Construct, id *string, config *ComputeSecurityPolicyRuleAConfig) ComputeSecurityPolicyRuleA {
 	_init_.Initialize()
 
@@ -613,7 +613,7 @@ func NewComputeSecurityPolicyRuleA(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/compute_security_policy_rule google_compute_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/compute_security_policy_rule google_compute_security_policy_rule} Resource.
 func NewComputeSecurityPolicyRuleA_Override(c ComputeSecurityPolicyRuleA, scope constructs.Construct, id *string, config *ComputeSecurityPolicyRuleAConfig) {
 	_init_.Initialize()
 
@@ -1144,7 +1144,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleA) PutMatch(value *ComputeSecurityPo
 	)
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleA) PutPreconfiguredWafConfig(value *ComputeSecurityPolicyRulePreconfiguredWafConfig) {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) PutPreconfiguredWafConfig(value *ComputeSecurityPolicyRulePreconfiguredWafConfigA) {
 	if err := c.validatePutPreconfiguredWafConfigParameters(value); err != nil {
 		panic(err)
 	}

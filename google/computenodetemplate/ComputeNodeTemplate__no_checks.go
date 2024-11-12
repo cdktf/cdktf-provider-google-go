@@ -79,6 +79,10 @@ func (c *jsiiProxy_ComputeNodeTemplate) validatePutAcceleratorsParameters(value 
 	return nil
 }
 
+func (c *jsiiProxy_ComputeNodeTemplate) validatePutDisksParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeNodeTemplate) validatePutNodeTypeFlexibilityParameters(value *ComputeNodeTemplateNodeTypeFlexibility) error {
 	return nil
 }

@@ -42,6 +42,7 @@ type DataGoogleContainerClusterAddonsConfigOutputReference interface {
 	InternalValue() *DataGoogleContainerClusterAddonsConfig
 	SetInternalValue(val *DataGoogleContainerClusterAddonsConfig)
 	NetworkPolicyConfig() DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList
+	ParallelstoreCsiDriverConfig() DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList
 	RayOperatorConfig() DataGoogleContainerClusterAddonsConfigRayOperatorConfigList
 	StatefulHaConfig() DataGoogleContainerClusterAddonsConfigStatefulHaConfigList
 	// Experimental.
@@ -236,6 +237,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) Networ
 	_jsii_.Get(
 		j,
 		"networkPolicyConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) ParallelstoreCsiDriverConfig() DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList {
+	var returns DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList
+	_jsii_.Get(
+		j,
+		"parallelstoreCsiDriverConfig",
 		&returns,
 	)
 	return returns

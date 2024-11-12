@@ -83,7 +83,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutMatchParameters(value 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutPreconfiguredWafConfigParameters(value *ComputeSecurityPolicyRulePreconfiguredWafConfig) error {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutPreconfiguredWafConfigParameters(value *ComputeSecurityPolicyRulePreconfiguredWafConfigA) error {
 	return nil
 }
 

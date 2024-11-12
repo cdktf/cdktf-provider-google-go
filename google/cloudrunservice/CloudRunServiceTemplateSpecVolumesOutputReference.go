@@ -30,6 +30,8 @@ type CloudRunServiceTemplateSpecVolumesOutputReference interface {
 	CreationStack() *[]*string
 	Csi() CloudRunServiceTemplateSpecVolumesCsiOutputReference
 	CsiInput() *CloudRunServiceTemplateSpecVolumesCsi
+	EmptyDir() CloudRunServiceTemplateSpecVolumesEmptyDirOutputReference
+	EmptyDirInput() *CloudRunServiceTemplateSpecVolumesEmptyDir
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -74,9 +76,11 @@ type CloudRunServiceTemplateSpecVolumesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCsi(value *CloudRunServiceTemplateSpecVolumesCsi)
+	PutEmptyDir(value *CloudRunServiceTemplateSpecVolumesEmptyDir)
 	PutNfs(value *CloudRunServiceTemplateSpecVolumesNfs)
 	PutSecret(value *CloudRunServiceTemplateSpecVolumesSecret)
 	ResetCsi()
+	ResetEmptyDir()
 	ResetNfs()
 	ResetSecret()
 	// Produce the Token's value at resolution time.
@@ -139,6 +143,26 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) CsiInput()
 	_jsii_.Get(
 		j,
 		"csiInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) EmptyDir() CloudRunServiceTemplateSpecVolumesEmptyDirOutputReference {
+	var returns CloudRunServiceTemplateSpecVolumesEmptyDirOutputReference
+	_jsii_.Get(
+		j,
+		"emptyDir",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) EmptyDirInput() *CloudRunServiceTemplateSpecVolumesEmptyDir {
+	var returns *CloudRunServiceTemplateSpecVolumesEmptyDir
+	_jsii_.Get(
+		j,
+		"emptyDirInput",
 		&returns,
 	)
 	return returns
@@ -535,6 +559,17 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) PutCsi(val
 	)
 }
 
+func (c *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) PutEmptyDir(value *CloudRunServiceTemplateSpecVolumesEmptyDir) {
+	if err := c.validatePutEmptyDirParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putEmptyDir",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) PutNfs(value *CloudRunServiceTemplateSpecVolumesNfs) {
 	if err := c.validatePutNfsParameters(value); err != nil {
 		panic(err)
@@ -561,6 +596,14 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) ResetCsi()
 	_jsii_.InvokeVoid(
 		c,
 		"resetCsi",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunServiceTemplateSpecVolumesOutputReference) ResetEmptyDir() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEmptyDir",
 		nil, // no parameters
 	)
 }

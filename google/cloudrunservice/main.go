@@ -1638,6 +1638,48 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesEmptyDir",
+		reflect.TypeOf((*CloudRunServiceTemplateSpecVolumesEmptyDir)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesEmptyDirOutputReference",
+		reflect.TypeOf((*CloudRunServiceTemplateSpecVolumesEmptyDirOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "medium", GoGetter: "Medium"},
+			_jsii_.MemberProperty{JsiiProperty: "mediumInput", GoGetter: "MediumInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMedium", GoMethod: "ResetMedium"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSizeLimit", GoMethod: "ResetSizeLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sizeLimit", GoGetter: "SizeLimit"},
+			_jsii_.MemberProperty{JsiiProperty: "sizeLimitInput", GoGetter: "SizeLimitInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CloudRunServiceTemplateSpecVolumesEmptyDirOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesList",
 		reflect.TypeOf((*CloudRunServiceTemplateSpecVolumesList)(nil)).Elem(),
@@ -1713,6 +1755,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "csi", GoGetter: "Csi"},
 			_jsii_.MemberProperty{JsiiProperty: "csiInput", GoGetter: "CsiInput"},
+			_jsii_.MemberProperty{JsiiProperty: "emptyDir", GoGetter: "EmptyDir"},
+			_jsii_.MemberProperty{JsiiProperty: "emptyDirInput", GoGetter: "EmptyDirInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -1731,9 +1775,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nfs", GoGetter: "Nfs"},
 			_jsii_.MemberProperty{JsiiProperty: "nfsInput", GoGetter: "NfsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCsi", GoMethod: "PutCsi"},
+			_jsii_.MemberMethod{JsiiMethod: "putEmptyDir", GoMethod: "PutEmptyDir"},
 			_jsii_.MemberMethod{JsiiMethod: "putNfs", GoMethod: "PutNfs"},
 			_jsii_.MemberMethod{JsiiMethod: "putSecret", GoMethod: "PutSecret"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCsi", GoMethod: "ResetCsi"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEmptyDir", GoMethod: "ResetEmptyDir"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNfs", GoMethod: "ResetNfs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecret", GoMethod: "ResetSecret"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

@@ -229,7 +229,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutMatchParameters(value 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutPreconfiguredWafConfigParameters(value *ComputeSecurityPolicyRulePreconfiguredWafConfig) error {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleA) validatePutPreconfiguredWafConfigParameters(value *ComputeSecurityPolicyRulePreconfiguredWafConfigA) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

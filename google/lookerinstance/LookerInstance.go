@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/looker_instance google_looker_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/looker_instance google_looker_instance}.
 type LookerInstance interface {
 	cdktf.TerraformResource
 	AdminSettings() LookerInstanceAdminSettingsOutputReference
@@ -183,7 +183,6 @@ type LookerInstance interface {
 	ResetFipsEnabled()
 	ResetId()
 	ResetMaintenanceWindow()
-	ResetOauthConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -866,7 +865,7 @@ func (j *jsiiProxy_LookerInstance) UserMetadataInput() *LookerInstanceUserMetada
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/looker_instance google_looker_instance} Resource.
 func NewLookerInstance(scope constructs.Construct, id *string, config *LookerInstanceConfig) LookerInstance {
 	_init_.Initialize()
 
@@ -884,7 +883,7 @@ func NewLookerInstance(scope constructs.Construct, id *string, config *LookerIns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.10.0/docs/resources/looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.0/docs/resources/looker_instance google_looker_instance} Resource.
 func NewLookerInstance_Override(l LookerInstance, scope constructs.Construct, id *string, config *LookerInstanceConfig) {
 	_init_.Initialize()
 
@@ -1615,14 +1614,6 @@ func (l *jsiiProxy_LookerInstance) ResetMaintenanceWindow() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetMaintenanceWindow",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LookerInstance) ResetOauthConfig() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetOauthConfig",
 		nil, // no parameters
 	)
 }
