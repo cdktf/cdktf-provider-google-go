@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.11.1/docs/resources/compute_public_delegated_prefix google_compute_public_delegated_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/compute_public_delegated_prefix google_compute_public_delegated_prefix}.
 type ComputePublicDelegatedPrefix interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -509,7 +509,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.1/docs/resources/compute_public_delegated_prefix google_compute_public_delegated_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/compute_public_delegated_prefix google_compute_public_delegated_prefix} Resource.
 func NewComputePublicDelegatedPrefix(scope constructs.Construct, id *string, config *ComputePublicDelegatedPrefixConfig) ComputePublicDelegatedPrefix {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewComputePublicDelegatedPrefix(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.1/docs/resources/compute_public_delegated_prefix google_compute_public_delegated_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/compute_public_delegated_prefix google_compute_public_delegated_prefix} Resource.
 func NewComputePublicDelegatedPrefix_Override(c ComputePublicDelegatedPrefix, scope constructs.Construct, id *string, config *ComputePublicDelegatedPrefixConfig) {
 	_init_.Initialize()
 

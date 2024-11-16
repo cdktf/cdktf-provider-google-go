@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.11.1/docs/data-sources/scc_source_iam_policy google_scc_source_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/data-sources/scc_source_iam_policy google_scc_source_iam_policy}.
 type DataGoogleSccSourceIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DataGoogleSccSourceIamPolicy) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.1/docs/data-sources/scc_source_iam_policy google_scc_source_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/data-sources/scc_source_iam_policy google_scc_source_iam_policy} Data Source.
 func NewDataGoogleSccSourceIamPolicy(scope constructs.Construct, id *string, config *DataGoogleSccSourceIamPolicyConfig) DataGoogleSccSourceIamPolicy {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDataGoogleSccSourceIamPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.1/docs/data-sources/scc_source_iam_policy google_scc_source_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/data-sources/scc_source_iam_policy google_scc_source_iam_policy} Data Source.
 func NewDataGoogleSccSourceIamPolicy_Override(d DataGoogleSccSourceIamPolicy, scope constructs.Construct, id *string, config *DataGoogleSccSourceIamPolicyConfig) {
 	_init_.Initialize()
 
