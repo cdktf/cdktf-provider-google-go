@@ -11,11 +11,11 @@ type AccessContextManagerServicePerimeterDryRunEgressPolicyEgressTo struct {
 	// matches if it contains an external resource in this list (Example:
 	// s3://bucket/path). Currently '*' is not allowed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/access_context_manager_service_perimeter_dry_run_egress_policy#external_resources AccessContextManagerServicePerimeterDryRunEgressPolicy#external_resources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/access_context_manager_service_perimeter_dry_run_egress_policy#external_resources AccessContextManagerServicePerimeterDryRunEgressPolicy#external_resources}
 	ExternalResources *[]*string `field:"optional" json:"externalResources" yaml:"externalResources"`
 	// operations block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/access_context_manager_service_perimeter_dry_run_egress_policy#operations AccessContextManagerServicePerimeterDryRunEgressPolicy#operations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/access_context_manager_service_perimeter_dry_run_egress_policy#operations AccessContextManagerServicePerimeterDryRunEgressPolicy#operations}
 	Operations interface{} `field:"optional" json:"operations" yaml:"operations"`
 	// A list of resources, currently only projects in the form 'projects/<projectnumber>', that match this to stanza.
 	//
@@ -24,7 +24,7 @@ type AccessContextManagerServicePerimeterDryRunEgressPolicyEgressTo struct {
 	// then this 'EgressTo' rule will authorize access to all resources outside
 	// the perimeter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/access_context_manager_service_perimeter_dry_run_egress_policy#resources AccessContextManagerServicePerimeterDryRunEgressPolicy#resources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/access_context_manager_service_perimeter_dry_run_egress_policy#resources AccessContextManagerServicePerimeterDryRunEgressPolicy#resources}
 	Resources *[]*string `field:"optional" json:"resources" yaml:"resources"`
 }
 

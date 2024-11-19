@@ -249,6 +249,17 @@ func (f *jsiiProxy_FilestoreInstance) validatePutNetworksParameters(value interf
 	return nil
 }
 
+func (f *jsiiProxy_FilestoreInstance) validatePutPerformanceConfigParameters(value *FilestoreInstancePerformanceConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (f *jsiiProxy_FilestoreInstance) validatePutTimeoutsParameters(value *FilestoreInstanceTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

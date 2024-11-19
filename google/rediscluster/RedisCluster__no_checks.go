@@ -79,6 +79,10 @@ func (r *jsiiProxy_RedisCluster) validatePutMaintenancePolicyParameters(value *R
 	return nil
 }
 
+func (r *jsiiProxy_RedisCluster) validatePutPersistenceConfigParameters(value *RedisClusterPersistenceConfig) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisCluster) validatePutPscConfigsParameters(value interface{}) error {
 	return nil
 }

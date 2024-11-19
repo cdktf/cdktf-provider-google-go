@@ -51,6 +51,10 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutCommonRepositoryParameters(value *ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository) error {
+	return nil
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutDockerRepositoryParameters(value *ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository) error {
 	return nil
 }

@@ -33,6 +33,7 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigOutp
 	Fqn() *string
 	InternalValue() *DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfig
 	SetInternalValue(val *DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfig)
+	PscAutoConnections() DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigPscAutoConnectionsList
 	PscEnabled() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
@@ -136,6 +137,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfiguratio
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigOutputReference) PscAutoConnections() DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigPscAutoConnectionsList {
+	var returns DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigPscAutoConnectionsList
+	_jsii_.Get(
+		j,
+		"pscAutoConnections",
 		&returns,
 	)
 	return returns

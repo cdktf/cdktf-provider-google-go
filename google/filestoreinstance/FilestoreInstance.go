@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/filestore_instance google_filestore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/filestore_instance google_filestore_instance}.
 type FilestoreInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -76,6 +76,8 @@ type FilestoreInstance interface {
 	NetworksInput() interface{}
 	// The tree node.
 	Node() constructs.Node
+	PerformanceConfig() FilestoreInstancePerformanceConfigOutputReference
+	PerformanceConfigInput() *FilestoreInstancePerformanceConfig
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -152,6 +154,7 @@ type FilestoreInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutFileShares(value *FilestoreInstanceFileShares)
 	PutNetworks(value interface{})
+	PutPerformanceConfig(value *FilestoreInstancePerformanceConfig)
 	PutTimeouts(value *FilestoreInstanceTimeouts)
 	ResetDeletionProtectionEnabled()
 	ResetDeletionProtectionReason()
@@ -163,6 +166,7 @@ type FilestoreInstance interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPerformanceConfig()
 	ResetProject()
 	ResetProtocol()
 	ResetTimeouts()
@@ -515,6 +519,26 @@ func (j *jsiiProxy_FilestoreInstance) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_FilestoreInstance) PerformanceConfig() FilestoreInstancePerformanceConfigOutputReference {
+	var returns FilestoreInstancePerformanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"performanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstance) PerformanceConfigInput() *FilestoreInstancePerformanceConfig {
+	var returns *FilestoreInstancePerformanceConfig
+	_jsii_.Get(
+		j,
+		"performanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FilestoreInstance) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -686,7 +710,7 @@ func (j *jsiiProxy_FilestoreInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/filestore_instance google_filestore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/filestore_instance google_filestore_instance} Resource.
 func NewFilestoreInstance(scope constructs.Construct, id *string, config *FilestoreInstanceConfig) FilestoreInstance {
 	_init_.Initialize()
 
@@ -704,7 +728,7 @@ func NewFilestoreInstance(scope constructs.Construct, id *string, config *Filest
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/filestore_instance google_filestore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/filestore_instance google_filestore_instance} Resource.
 func NewFilestoreInstance_Override(f FilestoreInstance, scope constructs.Construct, id *string, config *FilestoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -1290,6 +1314,17 @@ func (f *jsiiProxy_FilestoreInstance) PutNetworks(value interface{}) {
 	)
 }
 
+func (f *jsiiProxy_FilestoreInstance) PutPerformanceConfig(value *FilestoreInstancePerformanceConfig) {
+	if err := f.validatePutPerformanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putPerformanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FilestoreInstance) PutTimeouts(value *FilestoreInstanceTimeouts) {
 	if err := f.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1361,6 +1396,14 @@ func (f *jsiiProxy_FilestoreInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FilestoreInstance) ResetPerformanceConfig() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetPerformanceConfig",
 		nil, // no parameters
 	)
 }

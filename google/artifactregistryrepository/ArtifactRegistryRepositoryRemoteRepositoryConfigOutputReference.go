@@ -15,6 +15,8 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 	cdktf.ComplexObject
 	AptRepository() ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference
 	AptRepositoryInput() *ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository
+	CommonRepository() ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference
+	CommonRepositoryInput() *ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -85,6 +87,7 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAptRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository)
+	PutCommonRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository)
 	PutDockerRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository)
 	PutMavenRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository)
 	PutNpmRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository)
@@ -92,6 +95,7 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 	PutUpstreamCredentials(value *ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials)
 	PutYumRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository)
 	ResetAptRepository()
+	ResetCommonRepository()
 	ResetDescription()
 	ResetDisableUpstreamValidation()
 	ResetDockerRepository()
@@ -130,6 +134,26 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	_jsii_.Get(
 		j,
 		"aptRepositoryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) CommonRepository() ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference {
+	var returns ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference
+	_jsii_.Get(
+		j,
+		"commonRepository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) CommonRepositoryInput() *ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository {
+	var returns *ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository
+	_jsii_.Get(
+		j,
+		"commonRepositoryInput",
 		&returns,
 	)
 	return returns
@@ -667,6 +691,17 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	)
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) PutCommonRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository) {
+	if err := a.validatePutCommonRepositoryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCommonRepository",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) PutDockerRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository) {
 	if err := a.validatePutDockerRepositoryParameters(value); err != nil {
 		panic(err)
@@ -737,6 +772,14 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferen
 	_jsii_.InvokeVoid(
 		a,
 		"resetAptRepository",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ResetCommonRepository() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCommonRepository",
 		nil, // no parameters
 	)
 }

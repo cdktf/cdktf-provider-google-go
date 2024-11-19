@@ -16,11 +16,11 @@ type ClouddomainsRegistrationManagementSettings struct {
 	// problems with the billing account or reported domain abuse. In such cases, check the issues field on the Registration. After
 	// the problem is resolved, the renewalMethod is automatically updated to preferredRenewalMethod in a few hours.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/clouddomains_registration#preferred_renewal_method ClouddomainsRegistration#preferred_renewal_method}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/clouddomains_registration#preferred_renewal_method ClouddomainsRegistration#preferred_renewal_method}
 	PreferredRenewalMethod *string `field:"optional" json:"preferredRenewalMethod" yaml:"preferredRenewalMethod"`
 	// Controls whether the domain can be transferred to another registrar. Values are UNLOCKED or LOCKED.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/clouddomains_registration#transfer_lock_state ClouddomainsRegistration#transfer_lock_state}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/clouddomains_registration#transfer_lock_state ClouddomainsRegistration#transfer_lock_state}
 	TransferLockState *string `field:"optional" json:"transferLockState" yaml:"transferLockState"`
 }
 

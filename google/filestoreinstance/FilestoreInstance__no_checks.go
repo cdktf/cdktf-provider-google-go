@@ -83,6 +83,10 @@ func (f *jsiiProxy_FilestoreInstance) validatePutNetworksParameters(value interf
 	return nil
 }
 
+func (f *jsiiProxy_FilestoreInstance) validatePutPerformanceConfigParameters(value *FilestoreInstancePerformanceConfig) error {
+	return nil
+}
+
 func (f *jsiiProxy_FilestoreInstance) validatePutTimeoutsParameters(value *FilestoreInstanceTimeouts) error {
 	return nil
 }

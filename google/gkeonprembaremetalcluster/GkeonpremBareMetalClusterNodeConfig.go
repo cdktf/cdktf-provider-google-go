@@ -9,14 +9,14 @@ type GkeonpremBareMetalClusterNodeConfig struct {
 	//
 	// Possible values: ["CONTAINER_RUNTIME_UNSPECIFIED", "DOCKER", "CONTAINERD"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/gkeonprem_bare_metal_cluster#container_runtime GkeonpremBareMetalCluster#container_runtime}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/gkeonprem_bare_metal_cluster#container_runtime GkeonpremBareMetalCluster#container_runtime}
 	ContainerRuntime *string `field:"optional" json:"containerRuntime" yaml:"containerRuntime"`
 	// The maximum number of pods a node can run.
 	//
 	// The size of the CIDR range
 	// assigned to the node will be derived from this parameter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/gkeonprem_bare_metal_cluster#max_pods_per_node GkeonpremBareMetalCluster#max_pods_per_node}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/gkeonprem_bare_metal_cluster#max_pods_per_node GkeonpremBareMetalCluster#max_pods_per_node}
 	MaxPodsPerNode *float64 `field:"optional" json:"maxPodsPerNode" yaml:"maxPodsPerNode"`
 }
 

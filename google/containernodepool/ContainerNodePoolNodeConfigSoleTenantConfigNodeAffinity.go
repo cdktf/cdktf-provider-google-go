@@ -7,15 +7,15 @@ package containernodepool
 type ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinity struct {
 	// .
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/container_node_pool#key ContainerNodePool#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/container_node_pool#key ContainerNodePool#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// .
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/container_node_pool#operator ContainerNodePool#operator}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/container_node_pool#operator ContainerNodePool#operator}
 	Operator *string `field:"required" json:"operator" yaml:"operator"`
 	// .
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/container_node_pool#values ContainerNodePool#values}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/container_node_pool#values ContainerNodePool#values}
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 

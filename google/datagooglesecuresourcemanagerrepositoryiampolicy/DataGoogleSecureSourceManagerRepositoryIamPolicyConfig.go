@@ -22,16 +22,16 @@ type DataGoogleSecureSourceManagerRepositoryIamPolicyConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/data-sources/secure_source_manager_repository_iam_policy#repository_id DataGoogleSecureSourceManagerRepositoryIamPolicy#repository_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/data-sources/secure_source_manager_repository_iam_policy#repository_id DataGoogleSecureSourceManagerRepositoryIamPolicy#repository_id}.
 	RepositoryId *string `field:"required" json:"repositoryId" yaml:"repositoryId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/data-sources/secure_source_manager_repository_iam_policy#id DataGoogleSecureSourceManagerRepositoryIamPolicy#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/data-sources/secure_source_manager_repository_iam_policy#id DataGoogleSecureSourceManagerRepositoryIamPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/data-sources/secure_source_manager_repository_iam_policy#location DataGoogleSecureSourceManagerRepositoryIamPolicy#location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/data-sources/secure_source_manager_repository_iam_policy#location DataGoogleSecureSourceManagerRepositoryIamPolicy#location}.
 	Location *string `field:"optional" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/data-sources/secure_source_manager_repository_iam_policy#project DataGoogleSecureSourceManagerRepositoryIamPolicy#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/data-sources/secure_source_manager_repository_iam_policy#project DataGoogleSecureSourceManagerRepositoryIamPolicy#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/redis_cluster google_redis_cluster}.
 type RedisCluster interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -65,6 +65,8 @@ type RedisCluster interface {
 	NodeType() *string
 	SetNodeType(val *string)
 	NodeTypeInput() *string
+	PersistenceConfig() RedisClusterPersistenceConfigOutputReference
+	PersistenceConfigInput() *RedisClusterPersistenceConfig
 	PreciseSizeGb() *float64
 	Project() *string
 	SetProject(val *string)
@@ -155,6 +157,7 @@ type RedisCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMaintenancePolicy(value *RedisClusterMaintenancePolicy)
+	PutPersistenceConfig(value *RedisClusterPersistenceConfig)
 	PutPscConfigs(value interface{})
 	PutTimeouts(value *RedisClusterTimeouts)
 	PutZoneDistributionConfig(value *RedisClusterZoneDistributionConfig)
@@ -167,6 +170,7 @@ type RedisCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPersistenceConfig()
 	ResetProject()
 	ResetRedisConfigs()
 	ResetRegion()
@@ -437,6 +441,26 @@ func (j *jsiiProxy_RedisCluster) NodeTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"nodeTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) PersistenceConfig() RedisClusterPersistenceConfigOutputReference {
+	var returns RedisClusterPersistenceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"persistenceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) PersistenceConfigInput() *RedisClusterPersistenceConfig {
+	var returns *RedisClusterPersistenceConfig
+	_jsii_.Get(
+		j,
+		"persistenceConfigInput",
 		&returns,
 	)
 	return returns
@@ -743,7 +767,7 @@ func (j *jsiiProxy_RedisCluster) ZoneDistributionConfigInput() *RedisClusterZone
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster(scope constructs.Construct, id *string, config *RedisClusterConfig) RedisCluster {
 	_init_.Initialize()
 
@@ -761,7 +785,7 @@ func NewRedisCluster(scope constructs.Construct, id *string, config *RedisCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster_Override(r RedisCluster, scope constructs.Construct, id *string, config *RedisClusterConfig) {
 	_init_.Initialize()
 
@@ -1325,6 +1349,17 @@ func (r *jsiiProxy_RedisCluster) PutMaintenancePolicy(value *RedisClusterMainten
 	)
 }
 
+func (r *jsiiProxy_RedisCluster) PutPersistenceConfig(value *RedisClusterPersistenceConfig) {
+	if err := r.validatePutPersistenceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putPersistenceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RedisCluster) PutPscConfigs(value interface{}) {
 	if err := r.validatePutPscConfigsParameters(value); err != nil {
 		panic(err)
@@ -1410,6 +1445,14 @@ func (r *jsiiProxy_RedisCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) ResetPersistenceConfig() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPersistenceConfig",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index}.
 type VertexAiIndexEndpointDeployedIndex interface {
 	cdktf.TerraformResource
 	AutomaticResources() VertexAiIndexEndpointDeployedIndexAutomaticResourcesOutputReference
@@ -615,7 +615,7 @@ func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index} Resource.
 func NewVertexAiIndexEndpointDeployedIndex(scope constructs.Construct, id *string, config *VertexAiIndexEndpointDeployedIndexConfig) VertexAiIndexEndpointDeployedIndex {
 	_init_.Initialize()
 
@@ -633,7 +633,7 @@ func NewVertexAiIndexEndpointDeployedIndex(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index} Resource.
 func NewVertexAiIndexEndpointDeployedIndex_Override(v VertexAiIndexEndpointDeployedIndex, scope constructs.Construct, id *string, config *VertexAiIndexEndpointDeployedIndexConfig) {
 	_init_.Initialize()
 

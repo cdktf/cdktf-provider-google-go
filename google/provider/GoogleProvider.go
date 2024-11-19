@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -326,6 +326,9 @@ type GoogleProvider interface {
 	LookerCustomEndpoint() *string
 	SetLookerCustomEndpoint(val *string)
 	LookerCustomEndpointInput() *string
+	ManagedKafkaCustomEndpoint() *string
+	SetManagedKafkaCustomEndpoint(val *string)
+	ManagedKafkaCustomEndpointInput() *string
 	MemcacheCustomEndpoint() *string
 	SetMemcacheCustomEndpoint(val *string)
 	MemcacheCustomEndpointInput() *string
@@ -621,6 +624,7 @@ type GoogleProvider interface {
 	ResetKmsCustomEndpoint()
 	ResetLoggingCustomEndpoint()
 	ResetLookerCustomEndpoint()
+	ResetManagedKafkaCustomEndpoint()
 	ResetMemcacheCustomEndpoint()
 	ResetMemorystoreCustomEndpoint()
 	ResetMigrationCenterCustomEndpoint()
@@ -2761,6 +2765,26 @@ func (j *jsiiProxy_GoogleProvider) LookerCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) ManagedKafkaCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKafkaCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ManagedKafkaCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKafkaCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) MemcacheCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -4002,7 +4026,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -4020,7 +4044,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -4841,6 +4865,14 @@ func (j *jsiiProxy_GoogleProvider)SetLookerCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"lookerCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetManagedKafkaCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"managedKafkaCustomEndpoint",
 		val,
 	)
 }
@@ -6249,6 +6281,14 @@ func (g *jsiiProxy_GoogleProvider) ResetLookerCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLookerCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetManagedKafkaCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManagedKafkaCustomEndpoint",
 		nil, // no parameters
 	)
 }

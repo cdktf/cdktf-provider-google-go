@@ -83,6 +83,10 @@ func (s *jsiiProxy_SecureSourceManagerInstance) validatePutTimeoutsParameters(va
 	return nil
 }
 
+func (s *jsiiProxy_SecureSourceManagerInstance) validatePutWorkforceIdentityFederationConfigParameters(value *SecureSourceManagerInstanceWorkforceIdentityFederationConfig) error {
+	return nil
+}
+
 func validateSecureSourceManagerInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

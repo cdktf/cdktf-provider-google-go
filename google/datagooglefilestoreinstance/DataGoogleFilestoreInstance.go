@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/data-sources/filestore_instance google_filestore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/data-sources/filestore_instance google_filestore_instance}.
 type DataGoogleFilestoreInstance interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -60,6 +60,7 @@ type DataGoogleFilestoreInstance interface {
 	Networks() DataGoogleFilestoreInstanceNetworksList
 	// The tree node.
 	Node() constructs.Node
+	PerformanceConfig() DataGoogleFilestoreInstancePerformanceConfigList
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -379,6 +380,16 @@ func (j *jsiiProxy_DataGoogleFilestoreInstance) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleFilestoreInstance) PerformanceConfig() DataGoogleFilestoreInstancePerformanceConfigList {
+	var returns DataGoogleFilestoreInstancePerformanceConfigList
+	_jsii_.Get(
+		j,
+		"performanceConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleFilestoreInstance) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -490,7 +501,7 @@ func (j *jsiiProxy_DataGoogleFilestoreInstance) Zone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/data-sources/filestore_instance google_filestore_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/data-sources/filestore_instance google_filestore_instance} Data Source.
 func NewDataGoogleFilestoreInstance(scope constructs.Construct, id *string, config *DataGoogleFilestoreInstanceConfig) DataGoogleFilestoreInstance {
 	_init_.Initialize()
 
@@ -508,7 +519,7 @@ func NewDataGoogleFilestoreInstance(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/data-sources/filestore_instance google_filestore_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/data-sources/filestore_instance google_filestore_instance} Data Source.
 func NewDataGoogleFilestoreInstance_Override(d DataGoogleFilestoreInstance, scope constructs.Construct, id *string, config *DataGoogleFilestoreInstanceConfig) {
 	_init_.Initialize()
 

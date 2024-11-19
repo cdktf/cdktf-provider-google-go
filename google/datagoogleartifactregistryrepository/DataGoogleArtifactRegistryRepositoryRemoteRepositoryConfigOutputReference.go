@@ -14,6 +14,7 @@ import (
 type DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference interface {
 	cdktf.ComplexObject
 	AptRepository() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryList
+	CommonRepository() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -93,6 +94,16 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOut
 	_jsii_.Get(
 		j,
 		"aptRepository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) CommonRepository() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryList {
+	var returns DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryList
+	_jsii_.Get(
+		j,
+		"commonRepository",
 		&returns,
 	)
 	return returns

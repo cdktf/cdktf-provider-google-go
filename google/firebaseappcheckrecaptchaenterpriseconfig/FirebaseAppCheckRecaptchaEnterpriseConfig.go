@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/firebase_app_check_recaptcha_enterprise_config google_firebase_app_check_recaptcha_enterprise_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/firebase_app_check_recaptcha_enterprise_config google_firebase_app_check_recaptcha_enterprise_config}.
 type FirebaseAppCheckRecaptchaEnterpriseConfig interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -439,7 +439,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfig) TokenTtlInput() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/firebase_app_check_recaptcha_enterprise_config google_firebase_app_check_recaptcha_enterprise_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/firebase_app_check_recaptcha_enterprise_config google_firebase_app_check_recaptcha_enterprise_config} Resource.
 func NewFirebaseAppCheckRecaptchaEnterpriseConfig(scope constructs.Construct, id *string, config *FirebaseAppCheckRecaptchaEnterpriseConfigConfig) FirebaseAppCheckRecaptchaEnterpriseConfig {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewFirebaseAppCheckRecaptchaEnterpriseConfig(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.11.2/docs/resources/firebase_app_check_recaptcha_enterprise_config google_firebase_app_check_recaptcha_enterprise_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/firebase_app_check_recaptcha_enterprise_config google_firebase_app_check_recaptcha_enterprise_config} Resource.
 func NewFirebaseAppCheckRecaptchaEnterpriseConfig_Override(f FirebaseAppCheckRecaptchaEnterpriseConfig, scope constructs.Construct, id *string, config *FirebaseAppCheckRecaptchaEnterpriseConfigConfig) {
 	_init_.Initialize()
 
