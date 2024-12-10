@@ -79,6 +79,10 @@ func (c *jsiiProxy_CloudbuildWorkerPool) validatePutNetworkConfigParameters(valu
 	return nil
 }
 
+func (c *jsiiProxy_CloudbuildWorkerPool) validatePutPrivateServiceConnectParameters(value *CloudbuildWorkerPoolPrivateServiceConnect) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudbuildWorkerPool) validatePutTimeoutsParameters(value *CloudbuildWorkerPoolTimeouts) error {
 	return nil
 }

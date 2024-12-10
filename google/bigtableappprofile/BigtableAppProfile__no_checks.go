@@ -155,6 +155,10 @@ func (j *jsiiProxy_BigtableAppProfile) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_BigtableAppProfile) validateSetRowAffinityParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewBigtableAppProfileParameters(scope constructs.Construct, id *string, config *BigtableAppProfileConfig) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/clouddeploy_target google_clouddeploy_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/clouddeploy_target google_clouddeploy_target}.
 type ClouddeployTarget interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -20,6 +20,8 @@ type ClouddeployTarget interface {
 	AnnotationsInput() *map[string]*string
 	AnthosCluster() ClouddeployTargetAnthosClusterOutputReference
 	AnthosClusterInput() *ClouddeployTargetAnthosCluster
+	AssociatedEntities() ClouddeployTargetAssociatedEntitiesList
+	AssociatedEntitiesInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -154,6 +156,7 @@ type ClouddeployTarget interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAnthosCluster(value *ClouddeployTargetAnthosCluster)
+	PutAssociatedEntities(value interface{})
 	PutCustomTarget(value *ClouddeployTargetCustomTarget)
 	PutExecutionConfigs(value interface{})
 	PutGke(value *ClouddeployTargetGke)
@@ -162,6 +165,7 @@ type ClouddeployTarget interface {
 	PutTimeouts(value *ClouddeployTargetTimeouts)
 	ResetAnnotations()
 	ResetAnthosCluster()
+	ResetAssociatedEntities()
 	ResetCustomTarget()
 	ResetDeployParameters()
 	ResetDescription()
@@ -230,6 +234,26 @@ func (j *jsiiProxy_ClouddeployTarget) AnthosClusterInput() *ClouddeployTargetAnt
 	_jsii_.Get(
 		j,
 		"anthosClusterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployTarget) AssociatedEntities() ClouddeployTargetAssociatedEntitiesList {
+	var returns ClouddeployTargetAssociatedEntitiesList
+	_jsii_.Get(
+		j,
+		"associatedEntities",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ClouddeployTarget) AssociatedEntitiesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"associatedEntitiesInput",
 		&returns,
 	)
 	return returns
@@ -756,7 +780,7 @@ func (j *jsiiProxy_ClouddeployTarget) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
 func NewClouddeployTarget(scope constructs.Construct, id *string, config *ClouddeployTargetConfig) ClouddeployTarget {
 	_init_.Initialize()
 
@@ -774,7 +798,7 @@ func NewClouddeployTarget(scope constructs.Construct, id *string, config *Cloudd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/clouddeploy_target google_clouddeploy_target} Resource.
 func NewClouddeployTarget_Override(c ClouddeployTarget, scope constructs.Construct, id *string, config *ClouddeployTargetConfig) {
 	_init_.Initialize()
 
@@ -1316,6 +1340,17 @@ func (c *jsiiProxy_ClouddeployTarget) PutAnthosCluster(value *ClouddeployTargetA
 	)
 }
 
+func (c *jsiiProxy_ClouddeployTarget) PutAssociatedEntities(value interface{}) {
+	if err := c.validatePutAssociatedEntitiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAssociatedEntities",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ClouddeployTarget) PutCustomTarget(value *ClouddeployTargetCustomTarget) {
 	if err := c.validatePutCustomTargetParameters(value); err != nil {
 		panic(err)
@@ -1394,6 +1429,14 @@ func (c *jsiiProxy_ClouddeployTarget) ResetAnthosCluster() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAnthosCluster",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ClouddeployTarget) ResetAssociatedEntities() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAssociatedEntities",
 		nil, // no parameters
 	)
 }

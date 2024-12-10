@@ -63,7 +63,15 @@ func (j *jsiiProxy_ComputeInstanceTemplateAdvancedMachineFeaturesOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplateAdvancedMachineFeaturesOutputReference) validateSetEnableUefiNetworkingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplateAdvancedMachineFeaturesOutputReference) validateSetInternalValueParameters(val *ComputeInstanceTemplateAdvancedMachineFeatures) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateAdvancedMachineFeaturesOutputReference) validateSetPerformanceMonitoringUnitParameters(val *string) error {
 	return nil
 }
 

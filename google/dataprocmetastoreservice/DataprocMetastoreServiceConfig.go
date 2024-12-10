@@ -28,25 +28,25 @@ type DataprocMetastoreServiceConfig struct {
 	// and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of between
 	// 3 and 63 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#service_id DataprocMetastoreService#service_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#service_id DataprocMetastoreService#service_id}
 	ServiceId *string `field:"required" json:"serviceId" yaml:"serviceId"`
 	// The database type that the Metastore service stores its data. Default value: "MYSQL" Possible values: ["MYSQL", "SPANNER"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#database_type DataprocMetastoreService#database_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#database_type DataprocMetastoreService#database_type}
 	DatabaseType *string `field:"optional" json:"databaseType" yaml:"databaseType"`
 	// Indicates if the dataproc metastore should be protected against accidental deletions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#deletion_protection DataprocMetastoreService#deletion_protection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#deletion_protection DataprocMetastoreService#deletion_protection}
 	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// encryption_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#encryption_config DataprocMetastoreService#encryption_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#encryption_config DataprocMetastoreService#encryption_config}
 	EncryptionConfig *DataprocMetastoreServiceEncryptionConfig `field:"optional" json:"encryptionConfig" yaml:"encryptionConfig"`
 	// hive_metastore_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#hive_metastore_config DataprocMetastoreService#hive_metastore_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#hive_metastore_config DataprocMetastoreService#hive_metastore_config}
 	HiveMetastoreConfig *DataprocMetastoreServiceHiveMetastoreConfig `field:"optional" json:"hiveMetastoreConfig" yaml:"hiveMetastoreConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#id DataprocMetastoreService#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#id DataprocMetastoreService#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -56,19 +56,19 @@ type DataprocMetastoreServiceConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#labels DataprocMetastoreService#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#labels DataprocMetastoreService#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// The location where the metastore service should reside. The default value is 'global'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#location DataprocMetastoreService#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#location DataprocMetastoreService#location}
 	Location *string `field:"optional" json:"location" yaml:"location"`
 	// maintenance_window block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#maintenance_window DataprocMetastoreService#maintenance_window}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#maintenance_window DataprocMetastoreService#maintenance_window}
 	MaintenanceWindow *DataprocMetastoreServiceMaintenanceWindow `field:"optional" json:"maintenanceWindow" yaml:"maintenanceWindow"`
 	// metadata_integration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#metadata_integration DataprocMetastoreService#metadata_integration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#metadata_integration DataprocMetastoreService#metadata_integration}
 	MetadataIntegration *DataprocMetastoreServiceMetadataIntegration `field:"optional" json:"metadataIntegration" yaml:"metadataIntegration"`
 	// The relative resource name of the VPC network on which the instance can be accessed.
 	//
@@ -76,41 +76,41 @@ type DataprocMetastoreServiceConfig struct {
 	//
 	// "projects/{projectNumber}/global/networks/{network_id}".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#network DataprocMetastoreService#network}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#network DataprocMetastoreService#network}
 	Network *string `field:"optional" json:"network" yaml:"network"`
 	// network_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#network_config DataprocMetastoreService#network_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#network_config DataprocMetastoreService#network_config}
 	NetworkConfig *DataprocMetastoreServiceNetworkConfig `field:"optional" json:"networkConfig" yaml:"networkConfig"`
 	// The TCP port at which the metastore service is reached. Default: 9083.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#port DataprocMetastoreService#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#port DataprocMetastoreService#port}
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#project DataprocMetastoreService#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#project DataprocMetastoreService#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The release channel of the service. If unspecified, defaults to 'STABLE'. Default value: "STABLE" Possible values: ["CANARY", "STABLE"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#release_channel DataprocMetastoreService#release_channel}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#release_channel DataprocMetastoreService#release_channel}
 	ReleaseChannel *string `field:"optional" json:"releaseChannel" yaml:"releaseChannel"`
 	// scaling_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#scaling_config DataprocMetastoreService#scaling_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#scaling_config DataprocMetastoreService#scaling_config}
 	ScalingConfig *DataprocMetastoreServiceScalingConfig `field:"optional" json:"scalingConfig" yaml:"scalingConfig"`
 	// scheduled_backup block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#scheduled_backup DataprocMetastoreService#scheduled_backup}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#scheduled_backup DataprocMetastoreService#scheduled_backup}
 	ScheduledBackup *DataprocMetastoreServiceScheduledBackup `field:"optional" json:"scheduledBackup" yaml:"scheduledBackup"`
 	// telemetry_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#telemetry_config DataprocMetastoreService#telemetry_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#telemetry_config DataprocMetastoreService#telemetry_config}
 	TelemetryConfig *DataprocMetastoreServiceTelemetryConfig `field:"optional" json:"telemetryConfig" yaml:"telemetryConfig"`
 	// The tier of the service. Possible values: ["DEVELOPER", "ENTERPRISE"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#tier DataprocMetastoreService#tier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#tier DataprocMetastoreService#tier}
 	Tier *string `field:"optional" json:"tier" yaml:"tier"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/dataproc_metastore_service#timeouts DataprocMetastoreService#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/dataproc_metastore_service#timeouts DataprocMetastoreService#timeouts}
 	Timeouts *DataprocMetastoreServiceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

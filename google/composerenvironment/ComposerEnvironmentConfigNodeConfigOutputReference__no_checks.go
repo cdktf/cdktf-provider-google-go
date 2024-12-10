@@ -63,6 +63,14 @@ func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validateSetComposerInternalIpv4CidrBlockParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validateSetComposerNetworkAttachmentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) validateSetDiskSizeGbParameters(val *float64) error {
 	return nil
 }

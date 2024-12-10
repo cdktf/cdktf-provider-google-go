@@ -60,6 +60,9 @@ type ComposerEnvironmentConfigSoftwareConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WebServerPluginsMode() *string
+	SetWebServerPluginsMode(val *string)
+	WebServerPluginsModeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -92,6 +95,7 @@ type ComposerEnvironmentConfigSoftwareConfigOutputReference interface {
 	ResetPypiPackages()
 	ResetPythonVersion()
 	ResetSchedulerCount()
+	ResetWebServerPluginsMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -317,6 +321,26 @@ func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) Terra
 	return returns
 }
 
+func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) WebServerPluginsMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webServerPluginsMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) WebServerPluginsModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webServerPluginsModeInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewComposerEnvironmentConfigSoftwareConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComposerEnvironmentConfigSoftwareConfigOutputReference {
 	_init_.Initialize()
@@ -462,6 +486,17 @@ func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference)SetTer
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference)SetWebServerPluginsMode(val *string) {
+	if err := j.validateSetWebServerPluginsModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"webServerPluginsMode",
 		val,
 	)
 }
@@ -715,6 +750,14 @@ func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) Reset
 	_jsii_.InvokeVoid(
 		c,
 		"resetSchedulerCount",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) ResetWebServerPluginsMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWebServerPluginsMode",
 		nil, // no parameters
 	)
 }

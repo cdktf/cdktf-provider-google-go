@@ -31,10 +31,16 @@ type ComputeInstanceAdvancedMachineFeaturesOutputReference interface {
 	EnableNestedVirtualization() interface{}
 	SetEnableNestedVirtualization(val interface{})
 	EnableNestedVirtualizationInput() interface{}
+	EnableUefiNetworking() interface{}
+	SetEnableUefiNetworking(val interface{})
+	EnableUefiNetworkingInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComputeInstanceAdvancedMachineFeatures
 	SetInternalValue(val *ComputeInstanceAdvancedMachineFeatures)
+	PerformanceMonitoringUnit() *string
+	SetPerformanceMonitoringUnit(val *string)
+	PerformanceMonitoringUnitInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -77,6 +83,8 @@ type ComputeInstanceAdvancedMachineFeaturesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnableNestedVirtualization()
+	ResetEnableUefiNetworking()
+	ResetPerformanceMonitoringUnit()
 	ResetThreadsPerCore()
 	ResetTurboMode()
 	ResetVisibleCoreCount()
@@ -145,6 +153,26 @@ func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) Enable
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) EnableUefiNetworking() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableUefiNetworking",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) EnableUefiNetworkingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableUefiNetworkingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -160,6 +188,26 @@ func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) PerformanceMonitoringUnit() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"performanceMonitoringUnit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) PerformanceMonitoringUnitInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"performanceMonitoringUnitInput",
 		&returns,
 	)
 	return returns
@@ -306,6 +354,17 @@ func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference)SetEnab
 	)
 }
 
+func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference)SetEnableUefiNetworking(val interface{}) {
+	if err := j.validateSetEnableUefiNetworkingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableUefiNetworking",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference)SetInternalValue(val *ComputeInstanceAdvancedMachineFeatures) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -313,6 +372,17 @@ func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference)SetInte
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference)SetPerformanceMonitoringUnit(val *string) {
+	if err := j.validateSetPerformanceMonitoringUnitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"performanceMonitoringUnit",
 		val,
 	)
 }
@@ -562,6 +632,22 @@ func (c *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) ResetE
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnableNestedVirtualization",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) ResetEnableUefiNetworking() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableUefiNetworking",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceAdvancedMachineFeaturesOutputReference) ResetPerformanceMonitoringUnit() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPerformanceMonitoringUnit",
 		nil, // no parameters
 	)
 }

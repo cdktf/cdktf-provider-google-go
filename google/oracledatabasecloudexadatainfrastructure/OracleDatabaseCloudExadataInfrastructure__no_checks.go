@@ -111,6 +111,10 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateSetCountPar
 	return nil
 }
 
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

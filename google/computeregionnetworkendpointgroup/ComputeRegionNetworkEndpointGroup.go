@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group}.
 type ComputeRegionNetworkEndpointGroup interface {
 	cdktf.TerraformResource
 	AppEngine() ComputeRegionNetworkEndpointGroupAppEngineOutputReference
@@ -77,6 +77,8 @@ type ComputeRegionNetworkEndpointGroup interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PscData() ComputeRegionNetworkEndpointGroupPscDataOutputReference
+	PscDataInput() *ComputeRegionNetworkEndpointGroupPscData
 	PscTargetService() *string
 	SetPscTargetService(val *string)
 	PscTargetServiceInput() *string
@@ -143,6 +145,7 @@ type ComputeRegionNetworkEndpointGroup interface {
 	PutAppEngine(value *ComputeRegionNetworkEndpointGroupAppEngine)
 	PutCloudFunction(value *ComputeRegionNetworkEndpointGroupCloudFunction)
 	PutCloudRun(value *ComputeRegionNetworkEndpointGroupCloudRun)
+	PutPscData(value *ComputeRegionNetworkEndpointGroupPscData)
 	PutTimeouts(value *ComputeRegionNetworkEndpointGroupTimeouts)
 	ResetAppEngine()
 	ResetCloudFunction()
@@ -155,6 +158,7 @@ type ComputeRegionNetworkEndpointGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetPscData()
 	ResetPscTargetService()
 	ResetSubnetwork()
 	ResetTimeouts()
@@ -476,6 +480,26 @@ func (j *jsiiProxy_ComputeRegionNetworkEndpointGroup) Provisioners() *[]interfac
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionNetworkEndpointGroup) PscData() ComputeRegionNetworkEndpointGroupPscDataOutputReference {
+	var returns ComputeRegionNetworkEndpointGroupPscDataOutputReference
+	_jsii_.Get(
+		j,
+		"pscData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionNetworkEndpointGroup) PscDataInput() *ComputeRegionNetworkEndpointGroupPscData {
+	var returns *ComputeRegionNetworkEndpointGroupPscData
+	_jsii_.Get(
+		j,
+		"pscDataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionNetworkEndpointGroup) PscTargetService() *string {
 	var returns *string
 	_jsii_.Get(
@@ -607,7 +631,7 @@ func (j *jsiiProxy_ComputeRegionNetworkEndpointGroup) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource.
 func NewComputeRegionNetworkEndpointGroup(scope constructs.Construct, id *string, config *ComputeRegionNetworkEndpointGroupConfig) ComputeRegionNetworkEndpointGroup {
 	_init_.Initialize()
 
@@ -625,7 +649,7 @@ func NewComputeRegionNetworkEndpointGroup(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource.
 func NewComputeRegionNetworkEndpointGroup_Override(c ComputeRegionNetworkEndpointGroup, scope constructs.Construct, id *string, config *ComputeRegionNetworkEndpointGroupConfig) {
 	_init_.Initialize()
 
@@ -1189,6 +1213,17 @@ func (c *jsiiProxy_ComputeRegionNetworkEndpointGroup) PutCloudRun(value *Compute
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionNetworkEndpointGroup) PutPscData(value *ComputeRegionNetworkEndpointGroupPscData) {
+	if err := c.validatePutPscDataParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPscData",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionNetworkEndpointGroup) PutTimeouts(value *ComputeRegionNetworkEndpointGroupTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1268,6 +1303,14 @@ func (c *jsiiProxy_ComputeRegionNetworkEndpointGroup) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionNetworkEndpointGroup) ResetPscData() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPscData",
 		nil, // no parameters
 	)
 }

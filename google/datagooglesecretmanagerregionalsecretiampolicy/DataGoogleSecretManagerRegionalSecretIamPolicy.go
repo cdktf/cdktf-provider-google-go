@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/data-sources/secret_manager_regional_secret_iam_policy google_secret_manager_regional_secret_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/data-sources/secret_manager_regional_secret_iam_policy google_secret_manager_regional_secret_iam_policy}.
 type DataGoogleSecretManagerRegionalSecretIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretIamPolicy) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/data-sources/secret_manager_regional_secret_iam_policy google_secret_manager_regional_secret_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/data-sources/secret_manager_regional_secret_iam_policy google_secret_manager_regional_secret_iam_policy} Data Source.
 func NewDataGoogleSecretManagerRegionalSecretIamPolicy(scope constructs.Construct, id *string, config *DataGoogleSecretManagerRegionalSecretIamPolicyConfig) DataGoogleSecretManagerRegionalSecretIamPolicy {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewDataGoogleSecretManagerRegionalSecretIamPolicy(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/data-sources/secret_manager_regional_secret_iam_policy google_secret_manager_regional_secret_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/data-sources/secret_manager_regional_secret_iam_policy google_secret_manager_regional_secret_iam_policy} Data Source.
 func NewDataGoogleSecretManagerRegionalSecretIamPolicy_Override(d DataGoogleSecretManagerRegionalSecretIamPolicy, scope constructs.Construct, id *string, config *DataGoogleSecretManagerRegionalSecretIamPolicyConfig) {
 	_init_.Initialize()
 

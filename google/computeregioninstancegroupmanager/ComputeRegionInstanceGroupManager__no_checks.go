@@ -83,6 +83,10 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutAutoHealingPoli
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutInstanceFlexibilityPolicyParameters(value *ComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionInstanceGroupManager) validatePutInstanceLifecyclePolicyParameters(value *ComputeRegionInstanceGroupManagerInstanceLifecyclePolicy) error {
 	return nil
 }

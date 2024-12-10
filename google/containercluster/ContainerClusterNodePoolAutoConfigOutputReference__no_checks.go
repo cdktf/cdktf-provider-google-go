@@ -47,6 +47,10 @@ func (c *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference) validateIn
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference) validatePutLinuxNodeConfigParameters(value *ContainerClusterNodePoolAutoConfigLinuxNodeConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodePoolAutoConfigOutputReference) validatePutNetworkTagsParameters(value *ContainerClusterNodePoolAutoConfigNetworkTags) error {
 	return nil
 }

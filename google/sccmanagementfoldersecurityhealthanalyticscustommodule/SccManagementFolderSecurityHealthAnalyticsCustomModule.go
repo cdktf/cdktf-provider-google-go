@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/scc_management_folder_security_health_analytics_custom_module google_scc_management_folder_security_health_analytics_custom_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/scc_management_folder_security_health_analytics_custom_module google_scc_management_folder_security_health_analytics_custom_module}.
 type SccManagementFolderSecurityHealthAnalyticsCustomModule interface {
 	cdktf.TerraformResource
 	AncestorModule() *string
@@ -497,7 +497,7 @@ func (j *jsiiProxy_SccManagementFolderSecurityHealthAnalyticsCustomModule) Updat
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/scc_management_folder_security_health_analytics_custom_module google_scc_management_folder_security_health_analytics_custom_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/scc_management_folder_security_health_analytics_custom_module google_scc_management_folder_security_health_analytics_custom_module} Resource.
 func NewSccManagementFolderSecurityHealthAnalyticsCustomModule(scope constructs.Construct, id *string, config *SccManagementFolderSecurityHealthAnalyticsCustomModuleConfig) SccManagementFolderSecurityHealthAnalyticsCustomModule {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewSccManagementFolderSecurityHealthAnalyticsCustomModule(scope constructs.
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/scc_management_folder_security_health_analytics_custom_module google_scc_management_folder_security_health_analytics_custom_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/scc_management_folder_security_health_analytics_custom_module google_scc_management_folder_security_health_analytics_custom_module} Resource.
 func NewSccManagementFolderSecurityHealthAnalyticsCustomModule_Override(s SccManagementFolderSecurityHealthAnalyticsCustomModule, scope constructs.Construct, id *string, config *SccManagementFolderSecurityHealthAnalyticsCustomModuleConfig) {
 	_init_.Initialize()
 

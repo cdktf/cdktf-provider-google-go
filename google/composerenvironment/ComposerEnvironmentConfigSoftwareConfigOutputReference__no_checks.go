@@ -99,6 +99,10 @@ func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigOutputReference) validateSetWebServerPluginsModeParameters(val *string) error {
+	return nil
+}
+
 func validateNewComposerEnvironmentConfigSoftwareConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

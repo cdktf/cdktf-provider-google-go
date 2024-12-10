@@ -13,6 +13,11 @@ import (
 
 type DataprocBatchRuntimeConfigOutputReference interface {
 	cdktf.ComplexObject
+	AutotuningConfig() DataprocBatchRuntimeConfigAutotuningConfigOutputReference
+	AutotuningConfigInput() *DataprocBatchRuntimeConfigAutotuningConfig
+	Cohort() *string
+	SetCohort(val *string)
+	CohortInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -74,6 +79,9 @@ type DataprocBatchRuntimeConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAutotuningConfig(value *DataprocBatchRuntimeConfigAutotuningConfig)
+	ResetAutotuningConfig()
+	ResetCohort()
 	ResetContainerImage()
 	ResetProperties()
 	ResetVersion()
@@ -90,6 +98,46 @@ type DataprocBatchRuntimeConfigOutputReference interface {
 // The jsii proxy struct for DataprocBatchRuntimeConfigOutputReference
 type jsiiProxy_DataprocBatchRuntimeConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) AutotuningConfig() DataprocBatchRuntimeConfigAutotuningConfigOutputReference {
+	var returns DataprocBatchRuntimeConfigAutotuningConfigOutputReference
+	_jsii_.Get(
+		j,
+		"autotuningConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) AutotuningConfigInput() *DataprocBatchRuntimeConfigAutotuningConfig {
+	var returns *DataprocBatchRuntimeConfigAutotuningConfig
+	_jsii_.Get(
+		j,
+		"autotuningConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) Cohort() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cohort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) CohortInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cohortInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -257,6 +305,17 @@ func NewDataprocBatchRuntimeConfigOutputReference_Override(d DataprocBatchRuntim
 		"@cdktf/provider-google.dataprocBatch.DataprocBatchRuntimeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataprocBatchRuntimeConfigOutputReference)SetCohort(val *string) {
+	if err := j.validateSetCohortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cohort",
+		val,
 	)
 }
 
@@ -532,6 +591,33 @@ func (d *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) InterpolationForAt
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) PutAutotuningConfig(value *DataprocBatchRuntimeConfigAutotuningConfig) {
+	if err := d.validatePutAutotuningConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAutotuningConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) ResetAutotuningConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAutotuningConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) ResetCohort() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCohort",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) ResetContainerImage() {

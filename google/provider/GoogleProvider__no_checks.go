@@ -35,7 +35,7 @@ func (j *jsiiProxy_GoogleProvider) validateSetAddTerraformAttributionLabelParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProvider) validateSetBatchingParameters(val *GoogleProviderBatching) error {
+func (j *jsiiProxy_GoogleProvider) validateSetBatchingParameters(val interface{}) error {
 	return nil
 }
 

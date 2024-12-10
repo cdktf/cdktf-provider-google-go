@@ -41,6 +41,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "grpcHealthCheck", GoGetter: "GrpcHealthCheck"},
 			_jsii_.MemberProperty{JsiiProperty: "grpcHealthCheckInput", GoGetter: "GrpcHealthCheckInput"},
 			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
+			_jsii_.MemberProperty{JsiiProperty: "healthCheckId", GoGetter: "HealthCheckId"},
 			_jsii_.MemberProperty{JsiiProperty: "healthyThreshold", GoGetter: "HealthyThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "healthyThresholdInput", GoGetter: "HealthyThresholdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "http2HealthCheck", GoGetter: "Http2HealthCheck"},

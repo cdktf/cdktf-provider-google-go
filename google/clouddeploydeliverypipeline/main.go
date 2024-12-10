@@ -976,10 +976,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "podSelectorLabel", GoGetter: "PodSelectorLabel"},
 			_jsii_.MemberProperty{JsiiProperty: "podSelectorLabelInput", GoGetter: "PodSelectorLabelInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putRouteDestinations", GoMethod: "PutRouteDestinations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPodSelectorLabel", GoMethod: "ResetPodSelectorLabel"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRouteDestinations", GoMethod: "ResetRouteDestinations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRouteUpdateWaitTime", GoMethod: "ResetRouteUpdateWaitTime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStableCutbackDuration", GoMethod: "ResetStableCutbackDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "routeDestinations", GoGetter: "RouteDestinations"},
+			_jsii_.MemberProperty{JsiiProperty: "routeDestinationsInput", GoGetter: "RouteDestinationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "routeUpdateWaitTime", GoGetter: "RouteUpdateWaitTime"},
 			_jsii_.MemberProperty{JsiiProperty: "routeUpdateWaitTimeInput", GoGetter: "RouteUpdateWaitTimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "service", GoGetter: "Service"},
@@ -992,6 +996,47 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinations",
+		reflect.TypeOf((*ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinations)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinationsOutputReference",
+		reflect.TypeOf((*ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinationsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "destinationIds", GoGetter: "DestinationIds"},
+			_jsii_.MemberProperty{JsiiProperty: "destinationIdsInput", GoGetter: "DestinationIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "propagateService", GoGetter: "PropagateService"},
+			_jsii_.MemberProperty{JsiiProperty: "propagateServiceInput", GoGetter: "PropagateServiceInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPropagateService", GoMethod: "ResetPropagateService"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMeshRouteDestinationsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

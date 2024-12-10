@@ -91,9 +91,29 @@ func (j *jsiiProxy_GoogleProvider) validateSetAddTerraformAttributionLabelParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProvider) validateSetBatchingParameters(val *GoogleProviderBatching) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_GoogleProvider) validateSetBatchingParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleProviderBatching:
+		val := val.(*[]*GoogleProviderBatching)
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleProviderBatching:
+		val_ := val.([]*GoogleProviderBatching)
+		val := &val_
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*GoogleProviderBatching; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

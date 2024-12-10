@@ -31,6 +31,9 @@ type MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputRefere
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisableMetricValidation() interface{}
+	SetDisableMetricValidation(val interface{})
+	DisableMetricValidationInput() interface{}
 	Duration() *string
 	SetDuration(val *string)
 	DurationInput() *string
@@ -83,6 +86,7 @@ type MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputRefere
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAlertRule()
+	ResetDisableMetricValidation()
 	ResetDuration()
 	ResetEvaluationInterval()
 	ResetLabels()
@@ -147,6 +151,26 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) DisableMetricValidation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableMetricValidation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) DisableMetricValidationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableMetricValidationInput",
 		&returns,
 	)
 	return returns
@@ -349,6 +373,17 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference)SetDisableMetricValidation(val interface{}) {
+	if err := j.validateSetDisableMetricValidationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableMetricValidation",
 		val,
 	)
 }
@@ -631,6 +666,14 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	_jsii_.InvokeVoid(
 		m,
 		"resetAlertRule",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) ResetDisableMetricValidation() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDisableMetricValidation",
 		nil, // no parameters
 	)
 }

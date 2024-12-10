@@ -34,6 +34,12 @@ type ComposerEnvironmentConfigAOutputReference interface {
 	DatabaseConfigInput() *ComposerEnvironmentConfigDatabaseConfig
 	DataRetentionConfig() ComposerEnvironmentConfigDataRetentionConfigOutputReference
 	DataRetentionConfigInput() *ComposerEnvironmentConfigDataRetentionConfig
+	EnablePrivateBuildsOnly() interface{}
+	SetEnablePrivateBuildsOnly(val interface{})
+	EnablePrivateBuildsOnlyInput() interface{}
+	EnablePrivateEnvironment() interface{}
+	SetEnablePrivateEnvironment(val interface{})
+	EnablePrivateEnvironmentInput() interface{}
 	EncryptionConfig() ComposerEnvironmentConfigEncryptionConfigOutputReference
 	EncryptionConfigInput() *ComposerEnvironmentConfigEncryptionConfig
 	EnvironmentSize() *string
@@ -114,6 +120,8 @@ type ComposerEnvironmentConfigAOutputReference interface {
 	PutWorkloadsConfig(value *ComposerEnvironmentConfigWorkloadsConfig)
 	ResetDatabaseConfig()
 	ResetDataRetentionConfig()
+	ResetEnablePrivateBuildsOnly()
+	ResetEnablePrivateEnvironment()
 	ResetEncryptionConfig()
 	ResetEnvironmentSize()
 	ResetMaintenanceWindow()
@@ -227,6 +235,46 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) DataRetentionConfi
 	_jsii_.Get(
 		j,
 		"dataRetentionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) EnablePrivateBuildsOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrivateBuildsOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) EnablePrivateBuildsOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrivateBuildsOnlyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) EnablePrivateEnvironment() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrivateEnvironment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) EnablePrivateEnvironmentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrivateEnvironmentInput",
 		&returns,
 	)
 	return returns
@@ -588,6 +636,28 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetComplexObjectIsF
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetEnablePrivateBuildsOnly(val interface{}) {
+	if err := j.validateSetEnablePrivateBuildsOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePrivateBuildsOnly",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference)SetEnablePrivateEnvironment(val interface{}) {
+	if err := j.validateSetEnablePrivateEnvironmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePrivateEnvironment",
 		val,
 	)
 }
@@ -988,6 +1058,22 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) ResetDataRetention
 	_jsii_.InvokeVoid(
 		c,
 		"resetDataRetentionConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) ResetEnablePrivateBuildsOnly() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnablePrivateBuildsOnly",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) ResetEnablePrivateEnvironment() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnablePrivateEnvironment",
 		nil, // no parameters
 	)
 }

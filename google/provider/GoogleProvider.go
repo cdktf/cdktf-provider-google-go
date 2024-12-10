@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -54,9 +54,12 @@ type GoogleProvider interface {
 	AssuredWorkloadsCustomEndpoint() *string
 	SetAssuredWorkloadsCustomEndpoint(val *string)
 	AssuredWorkloadsCustomEndpointInput() *string
-	Batching() *GoogleProviderBatching
-	SetBatching(val *GoogleProviderBatching)
-	BatchingInput() *GoogleProviderBatching
+	BackupDrCustomEndpoint() *string
+	SetBackupDrCustomEndpoint(val *string)
+	BackupDrCustomEndpointInput() *string
+	Batching() interface{}
+	SetBatching(val interface{})
+	BatchingInput() interface{}
 	BeyondcorpCustomEndpoint() *string
 	SetBeyondcorpCustomEndpoint(val *string)
 	BeyondcorpCustomEndpointInput() *string
@@ -287,6 +290,9 @@ type GoogleProvider interface {
 	Iam2CustomEndpoint() *string
 	SetIam2CustomEndpoint(val *string)
 	Iam2CustomEndpointInput() *string
+	Iam3CustomEndpoint() *string
+	SetIam3CustomEndpoint(val *string)
+	Iam3CustomEndpointInput() *string
 	IamBetaCustomEndpoint() *string
 	SetIamBetaCustomEndpoint(val *string)
 	IamBetaCustomEndpointInput() *string
@@ -378,6 +384,9 @@ type GoogleProvider interface {
 	OsLoginCustomEndpoint() *string
 	SetOsLoginCustomEndpoint(val *string)
 	OsLoginCustomEndpointInput() *string
+	ParallelstoreCustomEndpoint() *string
+	SetParallelstoreCustomEndpoint(val *string)
+	ParallelstoreCustomEndpointInput() *string
 	PrivatecaCustomEndpoint() *string
 	SetPrivatecaCustomEndpoint(val *string)
 	PrivatecaCustomEndpointInput() *string
@@ -536,6 +545,7 @@ type GoogleProvider interface {
 	ResetApphubCustomEndpoint()
 	ResetArtifactRegistryCustomEndpoint()
 	ResetAssuredWorkloadsCustomEndpoint()
+	ResetBackupDrCustomEndpoint()
 	ResetBatching()
 	ResetBeyondcorpCustomEndpoint()
 	ResetBiglakeCustomEndpoint()
@@ -611,6 +621,7 @@ type GoogleProvider interface {
 	ResetGkeonpremCustomEndpoint()
 	ResetHealthcareCustomEndpoint()
 	ResetIam2CustomEndpoint()
+	ResetIam3CustomEndpoint()
 	ResetIamBetaCustomEndpoint()
 	ResetIamCredentialsCustomEndpoint()
 	ResetIamCustomEndpoint()
@@ -643,6 +654,7 @@ type GoogleProvider interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParallelstoreCustomEndpoint()
 	ResetPrivatecaCustomEndpoint()
 	ResetPrivilegedAccessManagerCustomEndpoint()
 	ResetProject()
@@ -965,8 +977,28 @@ func (j *jsiiProxy_GoogleProvider) AssuredWorkloadsCustomEndpointInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProvider) Batching() *GoogleProviderBatching {
-	var returns *GoogleProviderBatching
+func (j *jsiiProxy_GoogleProvider) BackupDrCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupDrCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) BackupDrCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupDrCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) Batching() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"batching",
@@ -975,8 +1007,8 @@ func (j *jsiiProxy_GoogleProvider) Batching() *GoogleProviderBatching {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProvider) BatchingInput() *GoogleProviderBatching {
-	var returns *GoogleProviderBatching
+func (j *jsiiProxy_GoogleProvider) BatchingInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"batchingInput",
@@ -2505,6 +2537,26 @@ func (j *jsiiProxy_GoogleProvider) Iam2CustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) Iam3CustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iam3CustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) Iam3CustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iam3CustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) IamBetaCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3100,6 +3152,26 @@ func (j *jsiiProxy_GoogleProvider) OsLoginCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"osLoginCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ParallelstoreCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parallelstoreCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ParallelstoreCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parallelstoreCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -4026,7 +4098,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -4044,7 +4116,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -4162,7 +4234,15 @@ func (j *jsiiProxy_GoogleProvider)SetAssuredWorkloadsCustomEndpoint(val *string)
 	)
 }
 
-func (j *jsiiProxy_GoogleProvider)SetBatching(val *GoogleProviderBatching) {
+func (j *jsiiProxy_GoogleProvider)SetBackupDrCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"backupDrCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetBatching(val interface{}) {
 	if err := j.validateSetBatchingParameters(val); err != nil {
 		panic(err)
 	}
@@ -4765,6 +4845,14 @@ func (j *jsiiProxy_GoogleProvider)SetIam2CustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetIam3CustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"iam3CustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetIamBetaCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4993,6 +5081,14 @@ func (j *jsiiProxy_GoogleProvider)SetOsLoginCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"osLoginCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetParallelstoreCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"parallelstoreCustomEndpoint",
 		val,
 	)
 }
@@ -5577,6 +5673,14 @@ func (g *jsiiProxy_GoogleProvider) ResetAssuredWorkloadsCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAssuredWorkloadsCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetBackupDrCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBackupDrCustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -6181,6 +6285,14 @@ func (g *jsiiProxy_GoogleProvider) ResetIam2CustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetIam3CustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIam3CustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetIamBetaCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6417,6 +6529,14 @@ func (g *jsiiProxy_GoogleProvider) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetParallelstoreCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParallelstoreCustomEndpoint",
 		nil, // no parameters
 	)
 }

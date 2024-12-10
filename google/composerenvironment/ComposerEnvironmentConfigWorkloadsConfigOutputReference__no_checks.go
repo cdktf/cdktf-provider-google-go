@@ -47,6 +47,10 @@ func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) vali
 	return nil
 }
 
+func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) validatePutDagProcessorParameters(value *ComposerEnvironmentConfigWorkloadsConfigDagProcessor) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) validatePutSchedulerParameters(value *ComposerEnvironmentConfigWorkloadsConfigScheduler) error {
 	return nil
 }

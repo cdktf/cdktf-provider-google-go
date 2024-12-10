@@ -33,6 +33,7 @@ type DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesOutputReferen
 	// Experimental.
 	CreationStack() *[]*string
 	Database() *string
+	DeletionProtection() cdktf.IResolvable
 	DisplayName() *string
 	EffectiveLabels() cdktf.StringMap
 	EntitlementId() *string
@@ -169,6 +170,16 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabase
 	_jsii_.Get(
 		j,
 		"database",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesOutputReference) DeletionProtection() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deletionProtection",
 		&returns,
 	)
 	return returns

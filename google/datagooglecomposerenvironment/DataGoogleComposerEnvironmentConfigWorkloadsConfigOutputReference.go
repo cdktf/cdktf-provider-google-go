@@ -28,6 +28,7 @@ type DataGoogleComposerEnvironmentConfigWorkloadsConfigOutputReference interface
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DagProcessor() DataGoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleComposerEnvironmentConfigWorkloadsConfig
@@ -108,6 +109,16 @@ func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigOutputRefer
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigOutputReference) DagProcessor() DataGoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorList {
+	var returns DataGoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorList
+	_jsii_.Get(
+		j,
+		"dagProcessor",
 		&returns,
 	)
 	return returns

@@ -32,6 +32,8 @@ type DataGoogleComposerEnvironmentConfigAOutputReference interface {
 	DagGcsPrefix() *string
 	DatabaseConfig() DataGoogleComposerEnvironmentConfigDatabaseConfigList
 	DataRetentionConfig() DataGoogleComposerEnvironmentConfigDataRetentionConfigList
+	EnablePrivateBuildsOnly() cdktf.IResolvable
+	EnablePrivateEnvironment() cdktf.IResolvable
 	EncryptionConfig() DataGoogleComposerEnvironmentConfigEncryptionConfigList
 	EnvironmentSize() *string
 	// Experimental.
@@ -162,6 +164,26 @@ func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigAOutputReference) DataRete
 	_jsii_.Get(
 		j,
 		"dataRetentionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigAOutputReference) EnablePrivateBuildsOnly() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enablePrivateBuildsOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigAOutputReference) EnablePrivateEnvironment() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enablePrivateEnvironment",
 		&returns,
 	)
 	return returns

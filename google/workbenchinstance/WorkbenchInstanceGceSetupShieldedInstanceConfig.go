@@ -13,7 +13,7 @@ type WorkbenchInstanceGceSetupShieldedInstanceConfig struct {
 	// This baseline is initially derived from the implicitly trusted boot image
 	// when the VM instance is created. Enabled by default.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/workbench_instance#enable_integrity_monitoring WorkbenchInstance#enable_integrity_monitoring}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/workbench_instance#enable_integrity_monitoring WorkbenchInstance#enable_integrity_monitoring}
 	EnableIntegrityMonitoring interface{} `field:"optional" json:"enableIntegrityMonitoring" yaml:"enableIntegrityMonitoring"`
 	// Optional.
 	//
@@ -22,11 +22,11 @@ type WorkbenchInstanceGceSetupShieldedInstanceConfig struct {
 	// the digital signature of all boot components, and halting the boot process
 	// if signature verification fails. Disabled by default.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/workbench_instance#enable_secure_boot WorkbenchInstance#enable_secure_boot}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/workbench_instance#enable_secure_boot WorkbenchInstance#enable_secure_boot}
 	EnableSecureBoot interface{} `field:"optional" json:"enableSecureBoot" yaml:"enableSecureBoot"`
 	// Optional. Defines whether the VM instance has the vTPM enabled. Enabled by default.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/workbench_instance#enable_vtpm WorkbenchInstance#enable_vtpm}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/workbench_instance#enable_vtpm WorkbenchInstance#enable_vtpm}
 	EnableVtpm interface{} `field:"optional" json:"enableVtpm" yaml:"enableVtpm"`
 }
 

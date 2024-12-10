@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/compute_region_health_check google_compute_region_health_check}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_region_health_check google_compute_region_health_check}.
 type ComputeRegionHealthCheck interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -48,6 +48,7 @@ type ComputeRegionHealthCheck interface {
 	FriendlyUniqueId() *string
 	GrpcHealthCheck() ComputeRegionHealthCheckGrpcHealthCheckOutputReference
 	GrpcHealthCheckInput() *ComputeRegionHealthCheckGrpcHealthCheck
+	HealthCheckId() *float64
 	HealthyThreshold() *float64
 	SetHealthyThreshold(val *float64)
 	HealthyThresholdInput() *float64
@@ -340,6 +341,16 @@ func (j *jsiiProxy_ComputeRegionHealthCheck) GrpcHealthCheckInput() *ComputeRegi
 	_jsii_.Get(
 		j,
 		"grpcHealthCheckInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionHealthCheck) HealthCheckId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"healthCheckId",
 		&returns,
 	)
 	return returns
@@ -726,7 +737,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheck) UnhealthyThresholdInput() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/compute_region_health_check google_compute_region_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_region_health_check google_compute_region_health_check} Resource.
 func NewComputeRegionHealthCheck(scope constructs.Construct, id *string, config *ComputeRegionHealthCheckConfig) ComputeRegionHealthCheck {
 	_init_.Initialize()
 
@@ -744,7 +755,7 @@ func NewComputeRegionHealthCheck(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/compute_region_health_check google_compute_region_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_region_health_check google_compute_region_health_check} Resource.
 func NewComputeRegionHealthCheck_Override(c ComputeRegionHealthCheck, scope constructs.Construct, id *string, config *ComputeRegionHealthCheckConfig) {
 	_init_.Initialize()
 

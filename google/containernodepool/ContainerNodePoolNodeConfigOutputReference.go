@@ -78,6 +78,9 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	LocalSsdCount() *float64
 	SetLocalSsdCount(val *float64)
 	LocalSsdCountInput() *float64
+	LocalSsdEncryptionMode() *string
+	SetLocalSsdEncryptionMode(val *string)
+	LocalSsdEncryptionModeInput() *string
 	LoggingVariant() *string
 	SetLoggingVariant(val *string)
 	LoggingVariantInput() *string
@@ -198,6 +201,7 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	ResetLinuxNodeConfig()
 	ResetLocalNvmeSsdBlockConfig()
 	ResetLocalSsdCount()
+	ResetLocalSsdEncryptionMode()
 	ResetLoggingVariant()
 	ResetMachineType()
 	ResetMetadata()
@@ -667,6 +671,26 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) LocalSsdCountInpu
 	_jsii_.Get(
 		j,
 		"localSsdCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) LocalSsdEncryptionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localSsdEncryptionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) LocalSsdEncryptionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localSsdEncryptionModeInput",
 		&returns,
 	)
 	return returns
@@ -1206,6 +1230,17 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetLocalSsdCount(v
 	_jsii_.Set(
 		j,
 		"localSsdCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetLocalSsdEncryptionMode(val *string) {
+	if err := j.validateSetLocalSsdEncryptionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localSsdEncryptionMode",
 		val,
 	)
 }
@@ -1907,6 +1942,14 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetLocalSsdCoun
 	_jsii_.InvokeVoid(
 		c,
 		"resetLocalSsdCount",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetLocalSsdEncryptionMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLocalSsdEncryptionMode",
 		nil, // no parameters
 	)
 }

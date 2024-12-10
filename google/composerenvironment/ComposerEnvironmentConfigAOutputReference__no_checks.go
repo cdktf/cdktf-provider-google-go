@@ -107,6 +107,14 @@ func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateSetComplex
 	return nil
 }
 
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateSetEnablePrivateBuildsOnlyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateSetEnablePrivateEnvironmentParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateSetEnvironmentSizeParameters(val *string) error {
 	return nil
 }

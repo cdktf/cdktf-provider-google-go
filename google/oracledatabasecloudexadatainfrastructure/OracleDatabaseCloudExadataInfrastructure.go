@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/oracle_database_cloud_exadata_infrastructure google_oracle_database_cloud_exadata_infrastructure}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/oracle_database_cloud_exadata_infrastructure google_oracle_database_cloud_exadata_infrastructure}.
 type OracleDatabaseCloudExadataInfrastructure interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,9 @@ type OracleDatabaseCloudExadataInfrastructure interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -136,6 +139,7 @@ type OracleDatabaseCloudExadataInfrastructure interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutProperties(value *OracleDatabaseCloudExadataInfrastructureProperties)
 	PutTimeouts(value *OracleDatabaseCloudExadataInfrastructureTimeouts)
+	ResetDeletionProtection()
 	ResetDisplayName()
 	ResetGcpOracleZone()
 	ResetId()
@@ -229,6 +233,26 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) CreateTime() *strin
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -555,7 +579,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/oracle_database_cloud_exadata_infrastructure google_oracle_database_cloud_exadata_infrastructure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/oracle_database_cloud_exadata_infrastructure google_oracle_database_cloud_exadata_infrastructure} Resource.
 func NewOracleDatabaseCloudExadataInfrastructure(scope constructs.Construct, id *string, config *OracleDatabaseCloudExadataInfrastructureConfig) OracleDatabaseCloudExadataInfrastructure {
 	_init_.Initialize()
 
@@ -573,7 +597,7 @@ func NewOracleDatabaseCloudExadataInfrastructure(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.12.0/docs/resources/oracle_database_cloud_exadata_infrastructure google_oracle_database_cloud_exadata_infrastructure} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/oracle_database_cloud_exadata_infrastructure google_oracle_database_cloud_exadata_infrastructure} Resource.
 func NewOracleDatabaseCloudExadataInfrastructure_Override(o OracleDatabaseCloudExadataInfrastructure, scope constructs.Construct, id *string, config *OracleDatabaseCloudExadataInfrastructureConfig) {
 	_init_.Initialize()
 
@@ -613,6 +637,17 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure)SetCount(val interfa
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructure)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
 		val,
 	)
 }
@@ -1101,6 +1136,14 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) PutTimeouts(value *
 		o,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructure) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDeletionProtection",
+		nil, // no parameters
 	)
 }
 

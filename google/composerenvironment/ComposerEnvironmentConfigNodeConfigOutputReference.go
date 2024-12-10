@@ -23,6 +23,12 @@ type ComposerEnvironmentConfigNodeConfigOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ComposerInternalIpv4CidrBlock() *string
+	SetComposerInternalIpv4CidrBlock(val *string)
+	ComposerInternalIpv4CidrBlockInput() *string
+	ComposerNetworkAttachment() *string
+	SetComposerNetworkAttachment(val *string)
+	ComposerNetworkAttachmentInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -94,6 +100,8 @@ type ComposerEnvironmentConfigNodeConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutIpAllocationPolicy(value *ComposerEnvironmentConfigNodeConfigIpAllocationPolicy)
+	ResetComposerInternalIpv4CidrBlock()
+	ResetComposerNetworkAttachment()
 	ResetDiskSizeGb()
 	ResetEnableIpMasqAgent()
 	ResetIpAllocationPolicy()
@@ -134,6 +142,46 @@ func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) ComplexOb
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) ComposerInternalIpv4CidrBlock() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"composerInternalIpv4CidrBlock",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) ComposerInternalIpv4CidrBlockInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"composerInternalIpv4CidrBlockInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) ComposerNetworkAttachment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"composerNetworkAttachment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) ComposerNetworkAttachmentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"composerNetworkAttachmentInput",
 		&returns,
 	)
 	return returns
@@ -435,6 +483,28 @@ func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference)SetComplex
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference)SetComposerInternalIpv4CidrBlock(val *string) {
+	if err := j.validateSetComposerInternalIpv4CidrBlockParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"composerInternalIpv4CidrBlock",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference)SetComposerNetworkAttachment(val *string) {
+	if err := j.validateSetComposerNetworkAttachmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"composerNetworkAttachment",
 		val,
 	)
 }
@@ -765,6 +835,22 @@ func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) PutIpAllo
 		c,
 		"putIpAllocationPolicy",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) ResetComposerInternalIpv4CidrBlock() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetComposerInternalIpv4CidrBlock",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference) ResetComposerNetworkAttachment() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetComposerNetworkAttachment",
+		nil, // no parameters
 	)
 }
 

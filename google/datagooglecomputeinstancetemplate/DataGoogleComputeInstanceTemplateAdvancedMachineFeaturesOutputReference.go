@@ -29,10 +29,12 @@ type DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesOutputReference int
 	// Experimental.
 	CreationStack() *[]*string
 	EnableNestedVirtualization() cdktf.IResolvable
+	EnableUefiNetworking() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleComputeInstanceTemplateAdvancedMachineFeatures
 	SetInternalValue(val *DataGoogleComputeInstanceTemplateAdvancedMachineFeatures)
+	PerformanceMonitoringUnit() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -123,6 +125,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesOutpu
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesOutputReference) EnableUefiNetworking() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableUefiNetworking",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -138,6 +150,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesOutpu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesOutputReference) PerformanceMonitoringUnit() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"performanceMonitoringUnit",
 		&returns,
 	)
 	return returns

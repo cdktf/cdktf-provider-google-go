@@ -47,7 +47,15 @@ func (d *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) validateInterpolat
 	return nil
 }
 
+func (d *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) validatePutAutotuningConfigParameters(value *DataprocBatchRuntimeConfigAutotuningConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) validateSetCohortParameters(val *string) error {
 	return nil
 }
 

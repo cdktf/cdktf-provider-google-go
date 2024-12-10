@@ -28,6 +28,8 @@ type ComposerEnvironmentConfigWorkloadsConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DagProcessor() ComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference
+	DagProcessorInput() *ComposerEnvironmentConfigWorkloadsConfigDagProcessor
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComposerEnvironmentConfigWorkloadsConfig
@@ -72,10 +74,12 @@ type ComposerEnvironmentConfigWorkloadsConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDagProcessor(value *ComposerEnvironmentConfigWorkloadsConfigDagProcessor)
 	PutScheduler(value *ComposerEnvironmentConfigWorkloadsConfigScheduler)
 	PutTriggerer(value *ComposerEnvironmentConfigWorkloadsConfigTriggerer)
 	PutWebServer(value *ComposerEnvironmentConfigWorkloadsConfigWebServer)
 	PutWorker(value *ComposerEnvironmentConfigWorkloadsConfigWorker)
+	ResetDagProcessor()
 	ResetScheduler()
 	ResetTriggerer()
 	ResetWebServer()
@@ -120,6 +124,26 @@ func (j *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) Crea
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) DagProcessor() ComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference {
+	var returns ComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference
+	_jsii_.Get(
+		j,
+		"dagProcessor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) DagProcessorInput() *ComposerEnvironmentConfigWorkloadsConfigDagProcessor {
+	var returns *ComposerEnvironmentConfigWorkloadsConfigDagProcessor
+	_jsii_.Get(
+		j,
+		"dagProcessorInput",
 		&returns,
 	)
 	return returns
@@ -514,6 +538,17 @@ func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) Inte
 	return returns
 }
 
+func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) PutDagProcessor(value *ComposerEnvironmentConfigWorkloadsConfigDagProcessor) {
+	if err := c.validatePutDagProcessorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDagProcessor",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) PutScheduler(value *ComposerEnvironmentConfigWorkloadsConfigScheduler) {
 	if err := c.validatePutSchedulerParameters(value); err != nil {
 		panic(err)
@@ -555,6 +590,14 @@ func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) PutW
 		c,
 		"putWorker",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigOutputReference) ResetDagProcessor() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDagProcessor",
+		nil, // no parameters
 	)
 }
 

@@ -52,6 +52,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	LinuxNodeConfig() DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList
 	LocalNvmeSsdBlockConfig() DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigList
 	LocalSsdCount() *float64
+	LocalSsdEncryptionMode() *string
 	LoggingVariant() *string
 	MachineType() *string
 	Metadata() cdktf.StringMap
@@ -363,6 +364,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"localSsdCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) LocalSsdEncryptionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localSsdEncryptionMode",
 		&returns,
 	)
 	return returns

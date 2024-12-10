@@ -32,6 +32,7 @@ type DataGoogleContainerClusterNodePoolAutoConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterNodePoolAutoConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodePoolAutoConfig)
+	LinuxNodeConfig() DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigList
 	NetworkTags() DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList
 	NodeKubeletConfig() DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigList
 	ResourceManagerTags() cdktf.StringMap
@@ -127,6 +128,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoConfigOutputReference) LinuxNodeConfig() DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigList {
+	var returns DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigList
+	_jsii_.Get(
+		j,
+		"linuxNodeConfig",
 		&returns,
 	)
 	return returns
