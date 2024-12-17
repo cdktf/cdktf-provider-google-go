@@ -283,6 +283,10 @@ func (j *jsiiProxy_ContainerCluster) validateSetEnableCiliumClusterwideNetworkPo
 	return nil
 }
 
+func (j *jsiiProxy_ContainerCluster) validateSetEnableFqdnNetworkPolicyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerCluster) validateSetEnableIntranodeVisibilityParameters(val interface{}) error {
 	return nil
 }

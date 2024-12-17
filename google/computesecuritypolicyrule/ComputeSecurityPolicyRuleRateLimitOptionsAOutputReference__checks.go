@@ -111,15 +111,15 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference) va
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs:
-		value := value.(*[]*ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs)
+	case *[]*ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA:
+		value := value.(*[]*ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs:
-		value_ := value.([]*ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs)
+	case []*ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA:
+		value_ := value.([]*ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -128,7 +128,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference) va
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA; received %#v (a %T)", value, value)
 		}
 	}
 

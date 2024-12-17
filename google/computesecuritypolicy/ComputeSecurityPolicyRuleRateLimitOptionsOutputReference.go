@@ -38,6 +38,8 @@ type ComputeSecurityPolicyRuleRateLimitOptionsOutputReference interface {
 	CreationStack() *[]*string
 	EnforceOnKey() *string
 	SetEnforceOnKey(val *string)
+	EnforceOnKeyConfigs() ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList
+	EnforceOnKeyConfigsInput() interface{}
 	EnforceOnKeyInput() *string
 	EnforceOnKeyName() *string
 	SetEnforceOnKeyName(val *string)
@@ -86,11 +88,13 @@ type ComputeSecurityPolicyRuleRateLimitOptionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutBanThreshold(value *ComputeSecurityPolicyRuleRateLimitOptionsBanThreshold)
+	PutEnforceOnKeyConfigs(value interface{})
 	PutExceedRedirectOptions(value *ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions)
 	PutRateLimitThreshold(value *ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThreshold)
 	ResetBanDurationSec()
 	ResetBanThreshold()
 	ResetEnforceOnKey()
+	ResetEnforceOnKeyConfigs()
 	ResetEnforceOnKeyName()
 	ResetExceedRedirectOptions()
 	// Produce the Token's value at resolution time.
@@ -203,6 +207,26 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) Enf
 	_jsii_.Get(
 		j,
 		"enforceOnKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) EnforceOnKeyConfigs() ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList {
+	var returns ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList
+	_jsii_.Get(
+		j,
+		"enforceOnKeyConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) EnforceOnKeyConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enforceOnKeyConfigsInput",
 		&returns,
 	)
 	return returns
@@ -673,6 +697,17 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) Put
 	)
 }
 
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) PutEnforceOnKeyConfigs(value interface{}) {
+	if err := c.validatePutEnforceOnKeyConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putEnforceOnKeyConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) PutExceedRedirectOptions(value *ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions) {
 	if err := c.validatePutExceedRedirectOptionsParameters(value); err != nil {
 		panic(err)
@@ -715,6 +750,14 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) Res
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnforceOnKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) ResetEnforceOnKeyConfigs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnforceOnKeyConfigs",
 		nil, // no parameters
 	)
 }

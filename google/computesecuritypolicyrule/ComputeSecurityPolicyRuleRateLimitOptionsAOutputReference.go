@@ -38,7 +38,7 @@ type ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference interface {
 	CreationStack() *[]*string
 	EnforceOnKey() *string
 	SetEnforceOnKey(val *string)
-	EnforceOnKeyConfigs() ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList
+	EnforceOnKeyConfigs() ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAList
 	EnforceOnKeyConfigsInput() interface{}
 	EnforceOnKeyInput() *string
 	EnforceOnKeyName() *string
@@ -215,8 +215,8 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference) En
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference) EnforceOnKeyConfigs() ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList {
-	var returns ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference) EnforceOnKeyConfigs() ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAList {
+	var returns ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAList
 	_jsii_.Get(
 		j,
 		"enforceOnKeyConfigs",

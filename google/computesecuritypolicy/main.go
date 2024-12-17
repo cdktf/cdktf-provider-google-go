@@ -1277,6 +1277,70 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs",
+		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList",
+		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsOutputReference",
+		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enforceOnKeyName", GoGetter: "EnforceOnKeyName"},
+			_jsii_.MemberProperty{JsiiProperty: "enforceOnKeyNameInput", GoGetter: "EnforceOnKeyNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enforceOnKeyType", GoGetter: "EnforceOnKeyType"},
+			_jsii_.MemberProperty{JsiiProperty: "enforceOnKeyTypeInput", GoGetter: "EnforceOnKeyTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnforceOnKeyName", GoMethod: "ResetEnforceOnKeyName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnforceOnKeyType", GoMethod: "ResetEnforceOnKeyType"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions",
 		reflect.TypeOf((*ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions)(nil)).Elem(),
 	)
@@ -1332,6 +1396,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "conformActionInput", GoGetter: "ConformActionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "enforceOnKey", GoGetter: "EnforceOnKey"},
+			_jsii_.MemberProperty{JsiiProperty: "enforceOnKeyConfigs", GoGetter: "EnforceOnKeyConfigs"},
+			_jsii_.MemberProperty{JsiiProperty: "enforceOnKeyConfigsInput", GoGetter: "EnforceOnKeyConfigsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enforceOnKeyInput", GoGetter: "EnforceOnKeyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enforceOnKeyName", GoGetter: "EnforceOnKeyName"},
 			_jsii_.MemberProperty{JsiiProperty: "enforceOnKeyNameInput", GoGetter: "EnforceOnKeyNameInput"},
@@ -1353,6 +1419,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putBanThreshold", GoMethod: "PutBanThreshold"},
+			_jsii_.MemberMethod{JsiiMethod: "putEnforceOnKeyConfigs", GoMethod: "PutEnforceOnKeyConfigs"},
 			_jsii_.MemberMethod{JsiiMethod: "putExceedRedirectOptions", GoMethod: "PutExceedRedirectOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putRateLimitThreshold", GoMethod: "PutRateLimitThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "rateLimitThreshold", GoGetter: "RateLimitThreshold"},
@@ -1360,6 +1427,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetBanDurationSec", GoMethod: "ResetBanDurationSec"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBanThreshold", GoMethod: "ResetBanThreshold"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnforceOnKey", GoMethod: "ResetEnforceOnKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnforceOnKeyConfigs", GoMethod: "ResetEnforceOnKeyConfigs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnforceOnKeyName", GoMethod: "ResetEnforceOnKeyName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExceedRedirectOptions", GoMethod: "ResetExceedRedirectOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

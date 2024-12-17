@@ -7,7 +7,7 @@ package containernodepool
 type ContainerNodePoolNodeConfigFastSocket struct {
 	// Whether or not NCCL Fast Socket is enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 }
 

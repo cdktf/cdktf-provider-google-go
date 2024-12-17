@@ -7,7 +7,7 @@ package transcoderjobtemplate
 type TranscoderJobTemplateConfigOutput struct {
 	// URI for the output file(s). For example, gs://my-bucket/outputs/.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/transcoder_job_template#uri TranscoderJobTemplate#uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/transcoder_job_template#uri TranscoderJobTemplate#uri}
 	Uri *string `field:"optional" json:"uri" yaml:"uri"`
 }
 

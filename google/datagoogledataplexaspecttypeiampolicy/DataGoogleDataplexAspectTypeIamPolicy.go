@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/data-sources/dataplex_aspect_type_iam_policy google_dataplex_aspect_type_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/data-sources/dataplex_aspect_type_iam_policy google_dataplex_aspect_type_iam_policy}.
 type DataGoogleDataplexAspectTypeIamPolicy interface {
 	cdktf.TerraformDataSource
 	AspectTypeId() *string
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataGoogleDataplexAspectTypeIamPolicy) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/data-sources/dataplex_aspect_type_iam_policy google_dataplex_aspect_type_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/data-sources/dataplex_aspect_type_iam_policy google_dataplex_aspect_type_iam_policy} Data Source.
 func NewDataGoogleDataplexAspectTypeIamPolicy(scope constructs.Construct, id *string, config *DataGoogleDataplexAspectTypeIamPolicyConfig) DataGoogleDataplexAspectTypeIamPolicy {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewDataGoogleDataplexAspectTypeIamPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/data-sources/dataplex_aspect_type_iam_policy google_dataplex_aspect_type_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/data-sources/dataplex_aspect_type_iam_policy google_dataplex_aspect_type_iam_policy} Data Source.
 func NewDataGoogleDataplexAspectTypeIamPolicy_Override(d DataGoogleDataplexAspectTypeIamPolicy, scope constructs.Construct, id *string, config *DataGoogleDataplexAspectTypeIamPolicyConfig) {
 	_init_.Initialize()
 

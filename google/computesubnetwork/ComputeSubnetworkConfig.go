@@ -31,11 +31,11 @@ type ComputeSubnetworkConfig struct {
 	// following characters must be a dash, lowercase letter, or digit,
 	// except the last character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#name ComputeSubnetwork#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#name ComputeSubnetwork#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#network ComputeSubnetwork#network}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#network ComputeSubnetwork#network}
 	Network *string `field:"required" json:"network" yaml:"network"`
 	// An optional description of this resource.
 	//
@@ -43,13 +43,13 @@ type ComputeSubnetworkConfig struct {
 	// you create the resource. This field can be set only at resource
 	// creation time.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#description ComputeSubnetwork#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#description ComputeSubnetwork#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// The range of external IPv6 addresses that are owned by this subnetwork.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#external_ipv6_prefix ComputeSubnetwork#external_ipv6_prefix}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#external_ipv6_prefix ComputeSubnetwork#external_ipv6_prefix}
 	ExternalIpv6Prefix *string `field:"optional" json:"externalIpv6Prefix" yaml:"externalIpv6Prefix"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#id ComputeSubnetwork#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#id ComputeSubnetwork#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -61,7 +61,7 @@ type ComputeSubnetworkConfig struct {
 	// non-overlapping within a network. Only IPv4 is supported.
 	// Field is optional when 'reserved_internal_range' is defined, otherwise required.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#ip_cidr_range ComputeSubnetwork#ip_cidr_range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#ip_cidr_range ComputeSubnetwork#ip_cidr_range}
 	IpCidrRange *string `field:"optional" json:"ipCidrRange" yaml:"ipCidrRange"`
 	// The access type of IPv6 address this subnet holds.
 	//
@@ -69,21 +69,21 @@ type ComputeSubnetworkConfig struct {
 	// or the first time the subnet is updated into IPV4_IPV6 dual stack. If the ipv6_type is EXTERNAL then this subnet
 	// cannot enable direct path. Possible values: ["EXTERNAL", "INTERNAL"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#ipv6_access_type ComputeSubnetwork#ipv6_access_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#ipv6_access_type ComputeSubnetwork#ipv6_access_type}
 	Ipv6AccessType *string `field:"optional" json:"ipv6AccessType" yaml:"ipv6AccessType"`
 	// log_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#log_config ComputeSubnetwork#log_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#log_config ComputeSubnetwork#log_config}
 	LogConfig *ComputeSubnetworkLogConfig `field:"optional" json:"logConfig" yaml:"logConfig"`
 	// When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private Google Access.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#private_ip_google_access ComputeSubnetwork#private_ip_google_access}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#private_ip_google_access ComputeSubnetwork#private_ip_google_access}
 	PrivateIpGoogleAccess interface{} `field:"optional" json:"privateIpGoogleAccess" yaml:"privateIpGoogleAccess"`
 	// The private IPv6 google access type for the VMs in this subnet.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#private_ipv6_google_access ComputeSubnetwork#private_ipv6_google_access}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#private_ipv6_google_access ComputeSubnetwork#private_ipv6_google_access}
 	PrivateIpv6GoogleAccess *string `field:"optional" json:"privateIpv6GoogleAccess" yaml:"privateIpv6GoogleAccess"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#project ComputeSubnetwork#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#project ComputeSubnetwork#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The purpose of the resource.
 	//
@@ -95,15 +95,15 @@ type ComputeSubnetworkConfig struct {
 	// Note that 'REGIONAL_MANAGED_PROXY' is the preferred setting for all regional Envoy load balancers.
 	// If unspecified, the purpose defaults to 'PRIVATE'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#purpose ComputeSubnetwork#purpose}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#purpose ComputeSubnetwork#purpose}
 	Purpose *string `field:"optional" json:"purpose" yaml:"purpose"`
 	// The GCP region for this subnetwork.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#region ComputeSubnetwork#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#region ComputeSubnetwork#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// The ID of the reserved internal range. Must be prefixed with 'networkconnectivity.googleapis.com' E.g. 'networkconnectivity.googleapis.com/projects/{project}/locations/global/internalRanges/{rangeId}'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#reserved_internal_range ComputeSubnetwork#reserved_internal_range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#reserved_internal_range ComputeSubnetwork#reserved_internal_range}
 	ReservedInternalRange *string `field:"optional" json:"reservedInternalRange" yaml:"reservedInternalRange"`
 	// The role of subnetwork.
 	//
@@ -112,11 +112,11 @@ type ComputeSubnetworkConfig struct {
 	// An 'ACTIVE' subnetwork is one that is currently being used for Envoy-based load balancers in a region.
 	// A 'BACKUP' subnetwork is one that is ready to be promoted to 'ACTIVE' or is currently draining. Possible values: ["ACTIVE", "BACKUP"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#role ComputeSubnetwork#role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#role ComputeSubnetwork#role}
 	Role *string `field:"optional" json:"role" yaml:"role"`
 	// secondary_ip_range block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#secondary_ip_range ComputeSubnetwork#secondary_ip_range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#secondary_ip_range ComputeSubnetwork#secondary_ip_range}
 	SecondaryIpRange interface{} `field:"optional" json:"secondaryIpRange" yaml:"secondaryIpRange"`
 	// Controls the removal behavior of secondary_ip_range.
 	//
@@ -126,17 +126,17 @@ type ComputeSubnetworkConfig struct {
 	// empty list of secondary IP ranges to the API.
 	// Defaults to false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#send_secondary_ip_range_if_empty ComputeSubnetwork#send_secondary_ip_range_if_empty}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#send_secondary_ip_range_if_empty ComputeSubnetwork#send_secondary_ip_range_if_empty}
 	SendSecondaryIpRangeIfEmpty interface{} `field:"optional" json:"sendSecondaryIpRangeIfEmpty" yaml:"sendSecondaryIpRangeIfEmpty"`
 	// The stack type for this subnet to identify whether the IPv6 feature is enabled or not.
 	//
 	// If not specified IPV4_ONLY will be used. Possible values: ["IPV4_ONLY", "IPV4_IPV6"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#stack_type ComputeSubnetwork#stack_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#stack_type ComputeSubnetwork#stack_type}
 	StackType *string `field:"optional" json:"stackType" yaml:"stackType"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/compute_subnetwork#timeouts ComputeSubnetwork#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/compute_subnetwork#timeouts ComputeSubnetwork#timeouts}
 	Timeouts *ComputeSubnetworkTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

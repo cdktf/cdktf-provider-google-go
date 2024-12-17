@@ -151,6 +151,10 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetNetworkParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetNetworkTierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetNoAutomateDnsZoneParameters(val interface{}) error {
 	return nil
 }

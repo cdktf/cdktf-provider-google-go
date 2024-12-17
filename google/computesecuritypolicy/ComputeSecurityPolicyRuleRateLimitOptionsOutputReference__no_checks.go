@@ -51,6 +51,10 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) val
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) validatePutEnforceOnKeyConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) validatePutExceedRedirectOptionsParameters(value *ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions) error {
 	return nil
 }

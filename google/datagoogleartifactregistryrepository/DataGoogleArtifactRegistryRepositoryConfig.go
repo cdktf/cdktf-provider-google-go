@@ -22,20 +22,27 @@ type DataGoogleArtifactRegistryRepositoryConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The name of the location this repository is located in.
+	// The name of the repository's location.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/data-sources/artifact_registry_repository#location DataGoogleArtifactRegistryRepository#location}
+	// In addition to specific regions,
+	// special values for multi-region locations are 'asia', 'europe', and 'us'.
+	// See [here](https://cloud.google.com/artifact-registry/docs/repositories/repo-locations),
+	// or use the
+	// [google_artifact_registry_locations](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/artifact_registry_locations)
+	// data source for possible values.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/data-sources/artifact_registry_repository#location DataGoogleArtifactRegistryRepository#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The last part of the repository name, for example: "repo1".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/data-sources/artifact_registry_repository#repository_id DataGoogleArtifactRegistryRepository#repository_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/data-sources/artifact_registry_repository#repository_id DataGoogleArtifactRegistryRepository#repository_id}
 	RepositoryId *string `field:"required" json:"repositoryId" yaml:"repositoryId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/data-sources/artifact_registry_repository#id DataGoogleArtifactRegistryRepository#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/data-sources/artifact_registry_repository#id DataGoogleArtifactRegistryRepository#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/data-sources/artifact_registry_repository#project DataGoogleArtifactRegistryRepository#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/data-sources/artifact_registry_repository#project DataGoogleArtifactRegistryRepository#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

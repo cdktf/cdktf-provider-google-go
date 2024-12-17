@@ -470,6 +470,14 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetNetworkParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetNetworkTierParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetNoAutomateDnsZoneParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/container_cluster google_container_cluster}.
 type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
@@ -76,6 +76,9 @@ type ContainerCluster interface {
 	EnableCiliumClusterwideNetworkPolicy() interface{}
 	SetEnableCiliumClusterwideNetworkPolicy(val interface{})
 	EnableCiliumClusterwideNetworkPolicyInput() interface{}
+	EnableFqdnNetworkPolicy() interface{}
+	SetEnableFqdnNetworkPolicy(val interface{})
+	EnableFqdnNetworkPolicyInput() interface{}
 	EnableIntranodeVisibility() interface{}
 	SetEnableIntranodeVisibility(val interface{})
 	EnableIntranodeVisibilityInput() interface{}
@@ -338,6 +341,7 @@ type ContainerCluster interface {
 	ResetDnsConfig()
 	ResetEnableAutopilot()
 	ResetEnableCiliumClusterwideNetworkPolicy()
+	ResetEnableFqdnNetworkPolicy()
 	ResetEnableIntranodeVisibility()
 	ResetEnableK8SBetaApis()
 	ResetEnableKubernetesAlpha()
@@ -824,6 +828,26 @@ func (j *jsiiProxy_ContainerCluster) EnableCiliumClusterwideNetworkPolicyInput()
 	_jsii_.Get(
 		j,
 		"enableCiliumClusterwideNetworkPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) EnableFqdnNetworkPolicy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFqdnNetworkPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) EnableFqdnNetworkPolicyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFqdnNetworkPolicyInput",
 		&returns,
 	)
 	return returns
@@ -2040,7 +2064,7 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
 
@@ -2058,7 +2082,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.13.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct, id *string, config *ContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -2183,6 +2207,17 @@ func (j *jsiiProxy_ContainerCluster)SetEnableCiliumClusterwideNetworkPolicy(val 
 	_jsii_.Set(
 		j,
 		"enableCiliumClusterwideNetworkPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerCluster)SetEnableFqdnNetworkPolicy(val interface{}) {
+	if err := j.validateSetEnableFqdnNetworkPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableFqdnNetworkPolicy",
 		val,
 	)
 }
@@ -3389,6 +3424,14 @@ func (c *jsiiProxy_ContainerCluster) ResetEnableCiliumClusterwideNetworkPolicy()
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnableCiliumClusterwideNetworkPolicy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetEnableFqdnNetworkPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableFqdnNetworkPolicy",
 		nil, // no parameters
 	)
 }

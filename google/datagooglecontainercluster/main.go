@@ -38,6 +38,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "effectiveLabels", GoGetter: "EffectiveLabels"},
 			_jsii_.MemberProperty{JsiiProperty: "enableAutopilot", GoGetter: "EnableAutopilot"},
 			_jsii_.MemberProperty{JsiiProperty: "enableCiliumClusterwideNetworkPolicy", GoGetter: "EnableCiliumClusterwideNetworkPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "enableFqdnNetworkPolicy", GoGetter: "EnableFqdnNetworkPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "enableIntranodeVisibility", GoGetter: "EnableIntranodeVisibility"},
 			_jsii_.MemberProperty{JsiiProperty: "enableK8SBetaApis", GoGetter: "EnableK8SBetaApis"},
 			_jsii_.MemberProperty{JsiiProperty: "enableKubernetesAlpha", GoGetter: "EnableKubernetesAlpha"},
