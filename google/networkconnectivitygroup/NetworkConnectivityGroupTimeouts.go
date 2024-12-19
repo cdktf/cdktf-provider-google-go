@@ -5,11 +5,11 @@ package networkconnectivitygroup
 
 
 type NetworkConnectivityGroupTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/network_connectivity_group#create NetworkConnectivityGroup#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/network_connectivity_group#create NetworkConnectivityGroup#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/network_connectivity_group#delete NetworkConnectivityGroup#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/network_connectivity_group#delete NetworkConnectivityGroup#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/network_connectivity_group#update NetworkConnectivityGroup#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/network_connectivity_group#update NetworkConnectivityGroup#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

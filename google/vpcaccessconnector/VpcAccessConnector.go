@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/vpc_access_connector google_vpc_access_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/vpc_access_connector google_vpc_access_connector}.
 type VpcAccessConnector interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -630,7 +630,7 @@ func (j *jsiiProxy_VpcAccessConnector) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/vpc_access_connector google_vpc_access_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/vpc_access_connector google_vpc_access_connector} Resource.
 func NewVpcAccessConnector(scope constructs.Construct, id *string, config *VpcAccessConnectorConfig) VpcAccessConnector {
 	_init_.Initialize()
 
@@ -648,7 +648,7 @@ func NewVpcAccessConnector(scope constructs.Construct, id *string, config *VpcAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/vpc_access_connector google_vpc_access_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/vpc_access_connector google_vpc_access_connector} Resource.
 func NewVpcAccessConnector_Override(v VpcAccessConnector, scope constructs.Construct, id *string, config *VpcAccessConnectorConfig) {
 	_init_.Initialize()
 

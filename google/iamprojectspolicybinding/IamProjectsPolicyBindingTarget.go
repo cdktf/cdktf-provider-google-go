@@ -10,7 +10,7 @@ type IamProjectsPolicyBindingTarget struct {
 	// Immutable. The resource name of the policy to be bound.
 	// The binding parent and policy must belong to the same Organization (or Project).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.0/docs/resources/iam_projects_policy_binding#principal_set IamProjectsPolicyBinding#principal_set}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/iam_projects_policy_binding#principal_set IamProjectsPolicyBinding#principal_set}
 	PrincipalSet *string `field:"optional" json:"principalSet" yaml:"principalSet"`
 }
 
