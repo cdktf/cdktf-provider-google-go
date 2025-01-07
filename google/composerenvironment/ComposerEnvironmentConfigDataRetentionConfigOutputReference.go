@@ -13,6 +13,8 @@ import (
 
 type ComposerEnvironmentConfigDataRetentionConfigOutputReference interface {
 	cdktf.ComplexObject
+	AirflowMetadataRetentionConfig() ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigList
+	AirflowMetadataRetentionConfigInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -66,7 +68,10 @@ type ComposerEnvironmentConfigDataRetentionConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAirflowMetadataRetentionConfig(value interface{})
 	PutTaskLogsRetentionConfig(value interface{})
+	ResetAirflowMetadataRetentionConfig()
+	ResetTaskLogsRetentionConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -80,6 +85,26 @@ type ComposerEnvironmentConfigDataRetentionConfigOutputReference interface {
 // The jsii proxy struct for ComposerEnvironmentConfigDataRetentionConfigOutputReference
 type jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigOutputReference) AirflowMetadataRetentionConfig() ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigList {
+	var returns ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigList
+	_jsii_.Get(
+		j,
+		"airflowMetadataRetentionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigOutputReference) AirflowMetadataRetentionConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"airflowMetadataRetentionConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -441,6 +466,17 @@ func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigOutputReference) 
 	return returns
 }
 
+func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigOutputReference) PutAirflowMetadataRetentionConfig(value interface{}) {
+	if err := c.validatePutAirflowMetadataRetentionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAirflowMetadataRetentionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigOutputReference) PutTaskLogsRetentionConfig(value interface{}) {
 	if err := c.validatePutTaskLogsRetentionConfigParameters(value); err != nil {
 		panic(err)
@@ -449,6 +485,22 @@ func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigOutputReference) 
 		c,
 		"putTaskLogsRetentionConfig",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigOutputReference) ResetAirflowMetadataRetentionConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAirflowMetadataRetentionConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigOutputReference) ResetTaskLogsRetentionConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTaskLogsRetentionConfig",
+		nil, // no parameters
 	)
 }
 

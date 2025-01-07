@@ -47,6 +47,10 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) validateInterpolationFo
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) validatePutConditionParameters(value *BigqueryDatasetAccessCondition) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) validatePutDatasetParameters(value *BigqueryDatasetAccessDataset) error {
 	return nil
 }

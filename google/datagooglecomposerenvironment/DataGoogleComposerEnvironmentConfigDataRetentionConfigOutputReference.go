@@ -13,6 +13,7 @@ import (
 
 type DataGoogleComposerEnvironmentConfigDataRetentionConfigOutputReference interface {
 	cdktf.ComplexObject
+	AirflowMetadataRetentionConfig() DataGoogleComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,6 +79,16 @@ type DataGoogleComposerEnvironmentConfigDataRetentionConfigOutputReference inter
 // The jsii proxy struct for DataGoogleComposerEnvironmentConfigDataRetentionConfigOutputReference
 type jsiiProxy_DataGoogleComposerEnvironmentConfigDataRetentionConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigDataRetentionConfigOutputReference) AirflowMetadataRetentionConfig() DataGoogleComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigList {
+	var returns DataGoogleComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigList
+	_jsii_.Get(
+		j,
+		"airflowMetadataRetentionConfig",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigDataRetentionConfigOutputReference) ComplexObjectIndex() interface{} {

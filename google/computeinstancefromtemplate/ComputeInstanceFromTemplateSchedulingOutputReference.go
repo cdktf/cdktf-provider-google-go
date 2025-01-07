@@ -16,6 +16,9 @@ type ComputeInstanceFromTemplateSchedulingOutputReference interface {
 	AutomaticRestart() interface{}
 	SetAutomaticRestart(val interface{})
 	AutomaticRestartInput() interface{}
+	AvailabilityDomain() *float64
+	SetAvailabilityDomain(val *float64)
+	AvailabilityDomainInput() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -95,6 +98,7 @@ type ComputeInstanceFromTemplateSchedulingOutputReference interface {
 	PutNodeAffinities(value interface{})
 	PutOnInstanceStopAction(value *ComputeInstanceFromTemplateSchedulingOnInstanceStopAction)
 	ResetAutomaticRestart()
+	ResetAvailabilityDomain()
 	ResetInstanceTerminationAction()
 	ResetLocalSsdRecoveryTimeout()
 	ResetMaxRunDuration()
@@ -134,6 +138,26 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) Automat
 	_jsii_.Get(
 		j,
 		"automaticRestartInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) AvailabilityDomain() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"availabilityDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) AvailabilityDomainInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"availabilityDomainInput",
 		&returns,
 	)
 	return returns
@@ -424,6 +448,17 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference)SetAutom
 	_jsii_.Set(
 		j,
 		"automaticRestart",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference)SetAvailabilityDomain(val *float64) {
+	if err := j.validateSetAvailabilityDomainParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"availabilityDomain",
 		val,
 	)
 }
@@ -772,6 +807,14 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) ResetAu
 	_jsii_.InvokeVoid(
 		c,
 		"resetAutomaticRestart",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) ResetAvailabilityDomain() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAvailabilityDomain",
 		nil, // no parameters
 	)
 }

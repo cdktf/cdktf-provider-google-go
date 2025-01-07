@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/network_connectivity_spoke google_network_connectivity_spoke}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke}.
 type NetworkConnectivitySpoke interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -44,6 +44,9 @@ type NetworkConnectivitySpoke interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Group() *string
+	SetGroup(val *string)
+	GroupInput() *string
 	Hub() *string
 	SetHub(val *string)
 	HubInput() *string
@@ -150,6 +153,7 @@ type NetworkConnectivitySpoke interface {
 	PutLinkedVpnTunnels(value *NetworkConnectivitySpokeLinkedVpnTunnels)
 	PutTimeouts(value *NetworkConnectivitySpokeTimeouts)
 	ResetDescription()
+	ResetGroup()
 	ResetId()
 	ResetLabels()
 	ResetLinkedInterconnectAttachments()
@@ -295,6 +299,26 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpoke) Group() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"group",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpoke) GroupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupInput",
 		&returns,
 	)
 	return returns
@@ -661,7 +685,7 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/network_connectivity_spoke google_network_connectivity_spoke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke} Resource.
 func NewNetworkConnectivitySpoke(scope constructs.Construct, id *string, config *NetworkConnectivitySpokeConfig) NetworkConnectivitySpoke {
 	_init_.Initialize()
 
@@ -679,7 +703,7 @@ func NewNetworkConnectivitySpoke(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/network_connectivity_spoke google_network_connectivity_spoke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke} Resource.
 func NewNetworkConnectivitySpoke_Override(n NetworkConnectivitySpoke, scope constructs.Construct, id *string, config *NetworkConnectivitySpokeConfig) {
 	_init_.Initialize()
 
@@ -735,6 +759,17 @@ func (j *jsiiProxy_NetworkConnectivitySpoke)SetForEach(val cdktf.ITerraformItera
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkConnectivitySpoke)SetGroup(val *string) {
+	if err := j.validateSetGroupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"group",
 		val,
 	)
 }
@@ -1258,6 +1293,14 @@ func (n *jsiiProxy_NetworkConnectivitySpoke) ResetDescription() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkConnectivitySpoke) ResetGroup() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetGroup",
 		nil, // no parameters
 	)
 }

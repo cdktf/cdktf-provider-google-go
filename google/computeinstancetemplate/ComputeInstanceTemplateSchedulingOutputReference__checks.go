@@ -205,6 +205,14 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) validateSetAvailabilityDomainParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

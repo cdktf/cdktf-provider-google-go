@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/filestore_backup google_filestore_backup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/filestore_backup google_filestore_backup}.
 type FilestoreBackup interface {
 	cdktf.TerraformResource
 	CapacityGb() *string
@@ -87,6 +87,9 @@ type FilestoreBackup interface {
 	SourceInstanceTier() *string
 	State() *string
 	StorageBytes() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -147,6 +150,7 @@ type FilestoreBackup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -536,6 +540,26 @@ func (j *jsiiProxy_FilestoreBackup) StorageBytes() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FilestoreBackup) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreBackup) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FilestoreBackup) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -597,7 +621,7 @@ func (j *jsiiProxy_FilestoreBackup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/filestore_backup google_filestore_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/filestore_backup google_filestore_backup} Resource.
 func NewFilestoreBackup(scope constructs.Construct, id *string, config *FilestoreBackupConfig) FilestoreBackup {
 	_init_.Initialize()
 
@@ -615,7 +639,7 @@ func NewFilestoreBackup(scope constructs.Construct, id *string, config *Filestor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/filestore_backup google_filestore_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/filestore_backup google_filestore_backup} Resource.
 func NewFilestoreBackup_Override(f FilestoreBackup, scope constructs.Construct, id *string, config *FilestoreBackupConfig) {
 	_init_.Initialize()
 
@@ -778,6 +802,17 @@ func (j *jsiiProxy_FilestoreBackup)SetSourceInstance(val *string) {
 	_jsii_.Set(
 		j,
 		"sourceInstance",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FilestoreBackup)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1182,6 +1217,14 @@ func (f *jsiiProxy_FilestoreBackup) ResetProject() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FilestoreBackup) ResetTags() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTags",
 		nil, // no parameters
 	)
 }

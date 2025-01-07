@@ -127,6 +127,10 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) validateSetDescriptionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_NetworkConnectivitySpoke) validateSetGroupParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkConnectivitySpoke) validateSetHubParameters(val *string) error {
 	return nil
 }

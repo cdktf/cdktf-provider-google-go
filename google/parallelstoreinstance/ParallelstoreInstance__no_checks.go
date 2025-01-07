@@ -107,6 +107,10 @@ func (j *jsiiProxy_ParallelstoreInstance) validateSetCountParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_ParallelstoreInstance) validateSetDeploymentTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ParallelstoreInstance) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

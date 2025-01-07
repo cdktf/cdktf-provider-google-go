@@ -1596,6 +1596,42 @@ func init() {
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPosition",
+		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPosition)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOutputReference",
+		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects)(nil)).Elem(),
 	)
@@ -1835,6 +1871,42 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigGtid",
+		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigGtid)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigGtidOutputReference",
+		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigGtidOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigGtidOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -2087,6 +2159,8 @@ func init() {
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "binaryLogPosition", GoGetter: "BinaryLogPosition"},
+			_jsii_.MemberProperty{JsiiProperty: "binaryLogPositionInput", GoGetter: "BinaryLogPositionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2103,6 +2177,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "gtid", GoGetter: "Gtid"},
+			_jsii_.MemberProperty{JsiiProperty: "gtidInput", GoGetter: "GtidInput"},
 			_jsii_.MemberProperty{JsiiProperty: "includeObjects", GoGetter: "IncludeObjects"},
 			_jsii_.MemberProperty{JsiiProperty: "includeObjectsInput", GoGetter: "IncludeObjectsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
@@ -2112,9 +2188,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxConcurrentBackfillTasksInput", GoGetter: "MaxConcurrentBackfillTasksInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxConcurrentCdcTasks", GoGetter: "MaxConcurrentCdcTasks"},
 			_jsii_.MemberProperty{JsiiProperty: "maxConcurrentCdcTasksInput", GoGetter: "MaxConcurrentCdcTasksInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putBinaryLogPosition", GoMethod: "PutBinaryLogPosition"},
 			_jsii_.MemberMethod{JsiiMethod: "putExcludeObjects", GoMethod: "PutExcludeObjects"},
+			_jsii_.MemberMethod{JsiiMethod: "putGtid", GoMethod: "PutGtid"},
 			_jsii_.MemberMethod{JsiiMethod: "putIncludeObjects", GoMethod: "PutIncludeObjects"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBinaryLogPosition", GoMethod: "ResetBinaryLogPosition"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludeObjects", GoMethod: "ResetExcludeObjects"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGtid", GoMethod: "ResetGtid"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIncludeObjects", GoMethod: "ResetIncludeObjects"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxConcurrentBackfillTasks", GoMethod: "ResetMaxConcurrentBackfillTasks"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxConcurrentCdcTasks", GoMethod: "ResetMaxConcurrentCdcTasks"},

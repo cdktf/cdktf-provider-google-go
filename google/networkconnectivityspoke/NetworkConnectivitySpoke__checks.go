@@ -411,6 +411,14 @@ func (j *jsiiProxy_NetworkConnectivitySpoke) validateSetDescriptionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_NetworkConnectivitySpoke) validateSetGroupParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetworkConnectivitySpoke) validateSetHubParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

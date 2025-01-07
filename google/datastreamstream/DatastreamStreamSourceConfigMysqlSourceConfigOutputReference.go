@@ -13,6 +13,8 @@ import (
 
 type DatastreamStreamSourceConfigMysqlSourceConfigOutputReference interface {
 	cdktf.ComplexObject
+	BinaryLogPosition() DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOutputReference
+	BinaryLogPositionInput() *DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPosition
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -32,6 +34,8 @@ type DatastreamStreamSourceConfigMysqlSourceConfigOutputReference interface {
 	ExcludeObjectsInput() *DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects
 	// Experimental.
 	Fqn() *string
+	Gtid() DatastreamStreamSourceConfigMysqlSourceConfigGtidOutputReference
+	GtidInput() *DatastreamStreamSourceConfigMysqlSourceConfigGtid
 	IncludeObjects() DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference
 	IncludeObjectsInput() *DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects
 	InternalValue() *DatastreamStreamSourceConfigMysqlSourceConfig
@@ -74,9 +78,13 @@ type DatastreamStreamSourceConfigMysqlSourceConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutBinaryLogPosition(value *DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPosition)
 	PutExcludeObjects(value *DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects)
+	PutGtid(value *DatastreamStreamSourceConfigMysqlSourceConfigGtid)
 	PutIncludeObjects(value *DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects)
+	ResetBinaryLogPosition()
 	ResetExcludeObjects()
+	ResetGtid()
 	ResetIncludeObjects()
 	ResetMaxConcurrentBackfillTasks()
 	ResetMaxConcurrentCdcTasks()
@@ -93,6 +101,26 @@ type DatastreamStreamSourceConfigMysqlSourceConfigOutputReference interface {
 // The jsii proxy struct for DatastreamStreamSourceConfigMysqlSourceConfigOutputReference
 type jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference) BinaryLogPosition() DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOutputReference {
+	var returns DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOutputReference
+	_jsii_.Get(
+		j,
+		"binaryLogPosition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference) BinaryLogPositionInput() *DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPosition {
+	var returns *DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPosition
+	_jsii_.Get(
+		j,
+		"binaryLogPositionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -150,6 +178,26 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference)
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference) Gtid() DatastreamStreamSourceConfigMysqlSourceConfigGtidOutputReference {
+	var returns DatastreamStreamSourceConfigMysqlSourceConfigGtidOutputReference
+	_jsii_.Get(
+		j,
+		"gtid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference) GtidInput() *DatastreamStreamSourceConfigMysqlSourceConfigGtid {
+	var returns *DatastreamStreamSourceConfigMysqlSourceConfigGtid
+	_jsii_.Get(
+		j,
+		"gtidInput",
 		&returns,
 	)
 	return returns
@@ -536,6 +584,17 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference)
 	return returns
 }
 
+func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference) PutBinaryLogPosition(value *DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPosition) {
+	if err := d.validatePutBinaryLogPositionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putBinaryLogPosition",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference) PutExcludeObjects(value *DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects) {
 	if err := d.validatePutExcludeObjectsParameters(value); err != nil {
 		panic(err)
@@ -543,6 +602,17 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference)
 	_jsii_.InvokeVoid(
 		d,
 		"putExcludeObjects",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference) PutGtid(value *DatastreamStreamSourceConfigMysqlSourceConfigGtid) {
+	if err := d.validatePutGtidParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putGtid",
 		[]interface{}{value},
 	)
 }
@@ -558,10 +628,26 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference)
 	)
 }
 
+func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference) ResetBinaryLogPosition() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBinaryLogPosition",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference) ResetExcludeObjects() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetExcludeObjects",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference) ResetGtid() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGtid",
 		nil, // no parameters
 	)
 }

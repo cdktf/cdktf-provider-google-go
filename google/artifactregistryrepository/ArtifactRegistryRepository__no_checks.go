@@ -99,6 +99,10 @@ func (a *jsiiProxy_ArtifactRegistryRepository) validatePutVirtualRepositoryConfi
 	return nil
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepository) validatePutVulnerabilityScanningConfigParameters(value *ArtifactRegistryRepositoryVulnerabilityScanningConfig) error {
+	return nil
+}
+
 func validateArtifactRegistryRepository_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

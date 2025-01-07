@@ -143,6 +143,10 @@ func (j *jsiiProxy_FilestoreBackup) validateSetSourceInstanceParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_FilestoreBackup) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewFilestoreBackupParameters(scope constructs.Construct, id *string, config *FilestoreBackupConfig) error {
 	return nil
 }

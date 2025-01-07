@@ -7,19 +7,19 @@ package transcoderjob
 type TranscoderJobConfigEncryptionsDrmSystems struct {
 	// clearkey block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/transcoder_job#clearkey TranscoderJob#clearkey}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/transcoder_job#clearkey TranscoderJob#clearkey}
 	Clearkey *TranscoderJobConfigEncryptionsDrmSystemsClearkey `field:"optional" json:"clearkey" yaml:"clearkey"`
 	// fairplay block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/transcoder_job#fairplay TranscoderJob#fairplay}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/transcoder_job#fairplay TranscoderJob#fairplay}
 	Fairplay *TranscoderJobConfigEncryptionsDrmSystemsFairplay `field:"optional" json:"fairplay" yaml:"fairplay"`
 	// playready block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/transcoder_job#playready TranscoderJob#playready}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/transcoder_job#playready TranscoderJob#playready}
 	Playready *TranscoderJobConfigEncryptionsDrmSystemsPlayready `field:"optional" json:"playready" yaml:"playready"`
 	// widevine block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/transcoder_job#widevine TranscoderJob#widevine}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/transcoder_job#widevine TranscoderJob#widevine}
 	Widevine *TranscoderJobConfigEncryptionsDrmSystemsWidevine `field:"optional" json:"widevine" yaml:"widevine"`
 }
 

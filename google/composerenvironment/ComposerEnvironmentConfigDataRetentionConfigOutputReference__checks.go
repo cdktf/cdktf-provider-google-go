@@ -93,6 +93,37 @@ func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigOutputReference) 
 	return nil
 }
 
+func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigOutputReference) validatePutAirflowMetadataRetentionConfigParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfig:
+		value := value.(*[]*ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfig)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfig:
+		value_ := value.([]*ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfig)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfig; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigOutputReference) validatePutTaskLogsRetentionConfigParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

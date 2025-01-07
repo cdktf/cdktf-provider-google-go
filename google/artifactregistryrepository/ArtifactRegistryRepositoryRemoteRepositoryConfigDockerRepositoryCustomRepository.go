@@ -7,7 +7,7 @@ package artifactregistryrepository
 type ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepository struct {
 	// Specific uri to the registry, e.g. '"https://registry-1.docker.io"'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/artifact_registry_repository#uri ArtifactRegistryRepository#uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/artifact_registry_repository#uri ArtifactRegistryRepository#uri}
 	Uri *string `field:"optional" json:"uri" yaml:"uri"`
 }
 

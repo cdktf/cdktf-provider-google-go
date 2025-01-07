@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/storage_transfer_job google_storage_transfer_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/storage_transfer_job google_storage_transfer_job}.
 type StorageTransferJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -74,6 +74,8 @@ type StorageTransferJob interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReplicationSpec() StorageTransferJobReplicationSpecOutputReference
+	ReplicationSpecInput() *StorageTransferJobReplicationSpec
 	Schedule() StorageTransferJobScheduleOutputReference
 	ScheduleInput() *StorageTransferJobSchedule
 	Status() *string
@@ -132,6 +134,7 @@ type StorageTransferJob interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutEventStream(value *StorageTransferJobEventStream)
 	PutNotificationConfig(value *StorageTransferJobNotificationConfig)
+	PutReplicationSpec(value *StorageTransferJobReplicationSpec)
 	PutSchedule(value *StorageTransferJobSchedule)
 	PutTransferSpec(value *StorageTransferJobTransferSpec)
 	ResetEventStream()
@@ -142,8 +145,10 @@ type StorageTransferJob interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetReplicationSpec()
 	ResetSchedule()
 	ResetStatus()
+	ResetTransferSpec()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -442,6 +447,26 @@ func (j *jsiiProxy_StorageTransferJob) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_StorageTransferJob) ReplicationSpec() StorageTransferJobReplicationSpecOutputReference {
+	var returns StorageTransferJobReplicationSpecOutputReference
+	_jsii_.Get(
+		j,
+		"replicationSpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJob) ReplicationSpecInput() *StorageTransferJobReplicationSpec {
+	var returns *StorageTransferJobReplicationSpec
+	_jsii_.Get(
+		j,
+		"replicationSpecInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageTransferJob) Schedule() StorageTransferJobScheduleOutputReference {
 	var returns StorageTransferJobScheduleOutputReference
 	_jsii_.Get(
@@ -533,7 +558,7 @@ func (j *jsiiProxy_StorageTransferJob) TransferSpecInput() *StorageTransferJobTr
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/storage_transfer_job google_storage_transfer_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/storage_transfer_job google_storage_transfer_job} Resource.
 func NewStorageTransferJob(scope constructs.Construct, id *string, config *StorageTransferJobConfig) StorageTransferJob {
 	_init_.Initialize()
 
@@ -551,7 +576,7 @@ func NewStorageTransferJob(scope constructs.Construct, id *string, config *Stora
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/storage_transfer_job google_storage_transfer_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/storage_transfer_job google_storage_transfer_job} Resource.
 func NewStorageTransferJob_Override(s StorageTransferJob, scope constructs.Construct, id *string, config *StorageTransferJobConfig) {
 	_init_.Initialize()
 
@@ -1060,6 +1085,17 @@ func (s *jsiiProxy_StorageTransferJob) PutNotificationConfig(value *StorageTrans
 	)
 }
 
+func (s *jsiiProxy_StorageTransferJob) PutReplicationSpec(value *StorageTransferJobReplicationSpec) {
+	if err := s.validatePutReplicationSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putReplicationSpec",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StorageTransferJob) PutSchedule(value *StorageTransferJobSchedule) {
 	if err := s.validatePutScheduleParameters(value); err != nil {
 		panic(err)
@@ -1130,6 +1166,14 @@ func (s *jsiiProxy_StorageTransferJob) ResetProject() {
 	)
 }
 
+func (s *jsiiProxy_StorageTransferJob) ResetReplicationSpec() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetReplicationSpec",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_StorageTransferJob) ResetSchedule() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1142,6 +1186,14 @@ func (s *jsiiProxy_StorageTransferJob) ResetStatus() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageTransferJob) ResetTransferSpec() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTransferSpec",
 		nil, // no parameters
 	)
 }

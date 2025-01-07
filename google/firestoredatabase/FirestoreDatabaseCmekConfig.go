@@ -18,10 +18,10 @@ type FirestoreDatabaseCmekConfig struct {
 	//
 	// This value should be the KMS key resource ID in the format of
 	// 'projects/{project_id}/locations/{kms_location}/keyRings/{key_ring}/cryptoKeys/{crypto_key}'.
-	// How to retrive this resource ID is listed at
+	// How to retrieve this resource ID is listed at
 	// https://cloud.google.com/kms/docs/getting-resource-ids#getting_the_id_for_a_key_and_version.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/firestore_database#kms_key_name FirestoreDatabase#kms_key_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/firestore_database#kms_key_name FirestoreDatabase#kms_key_name}
 	KmsKeyName *string `field:"required" json:"kmsKeyName" yaml:"kmsKeyName"`
 }
 

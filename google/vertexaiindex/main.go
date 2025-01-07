@@ -430,6 +430,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "isCompleteOverwriteInput", GoGetter: "IsCompleteOverwriteInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putConfig", GoMethod: "PutConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConfig", GoMethod: "ResetConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetContentsDeltaUri", GoMethod: "ResetContentsDeltaUri"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsCompleteOverwrite", GoMethod: "ResetIsCompleteOverwrite"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

@@ -14,6 +14,7 @@ import (
 type DataGoogleComputeInstanceSchedulingOutputReference interface {
 	cdktf.ComplexObject
 	AutomaticRestart() cdktf.IResolvable
+	AvailabilityDomain() *float64
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -94,6 +95,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) Automatic
 	_jsii_.Get(
 		j,
 		"automaticRestart",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) AvailabilityDomain() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"availabilityDomain",
 		&returns,
 	)
 	return returns

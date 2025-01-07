@@ -77,6 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putRemoteRepositoryConfig", GoMethod: "PutRemoteRepositoryConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putVirtualRepositoryConfig", GoMethod: "PutVirtualRepositoryConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putVulnerabilityScanningConfig", GoMethod: "PutVulnerabilityScanningConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteRepositoryConfig", GoGetter: "RemoteRepositoryConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteRepositoryConfigInput", GoGetter: "RemoteRepositoryConfigInput"},
@@ -97,6 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRemoteRepositoryConfig", GoMethod: "ResetRemoteRepositoryConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVirtualRepositoryConfig", GoMethod: "ResetVirtualRepositoryConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVulnerabilityScanningConfig", GoMethod: "ResetVulnerabilityScanningConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -112,6 +114,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualRepositoryConfig", GoGetter: "VirtualRepositoryConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "virtualRepositoryConfigInput", GoGetter: "VirtualRepositoryConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "vulnerabilityScanningConfig", GoGetter: "VulnerabilityScanningConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "vulnerabilityScanningConfigInput", GoGetter: "VulnerabilityScanningConfigInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ArtifactRegistryRepository{}
@@ -1201,6 +1205,47 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVulnerabilityScanningConfig",
+		reflect.TypeOf((*ArtifactRegistryRepositoryVulnerabilityScanningConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReference",
+		reflect.TypeOf((*ArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enablementConfig", GoGetter: "EnablementConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "enablementConfigInput", GoGetter: "EnablementConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enablementState", GoGetter: "EnablementState"},
+			_jsii_.MemberProperty{JsiiProperty: "enablementStateReason", GoGetter: "EnablementStateReason"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnablementConfig", GoMethod: "ResetEnablementConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -47,7 +47,15 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference) validatePutBinaryLogPositionParameters(value *DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPosition) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference) validatePutExcludeObjectsParameters(value *DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference) validatePutGtidParameters(value *DatastreamStreamSourceConfigMysqlSourceConfigGtid) error {
 	return nil
 }
 

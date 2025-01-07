@@ -1199,6 +1199,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automaticRestart", GoGetter: "AutomaticRestart"},
 			_jsii_.MemberProperty{JsiiProperty: "automaticRestartInput", GoGetter: "AutomaticRestartInput"},
+			_jsii_.MemberProperty{JsiiProperty: "availabilityDomain", GoGetter: "AvailabilityDomain"},
+			_jsii_.MemberProperty{JsiiProperty: "availabilityDomainInput", GoGetter: "AvailabilityDomainInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1239,6 +1241,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putNodeAffinities", GoMethod: "PutNodeAffinities"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnInstanceStopAction", GoMethod: "PutOnInstanceStopAction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomaticRestart", GoMethod: "ResetAutomaticRestart"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAvailabilityDomain", GoMethod: "ResetAvailabilityDomain"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInstanceTerminationAction", GoMethod: "ResetInstanceTerminationAction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocalSsdRecoveryTimeout", GoMethod: "ResetLocalSsdRecoveryTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxRunDuration", GoMethod: "ResetMaxRunDuration"},

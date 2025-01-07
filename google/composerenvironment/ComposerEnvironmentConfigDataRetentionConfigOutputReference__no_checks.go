@@ -47,6 +47,10 @@ func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigOutputReference) 
 	return nil
 }
 
+func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigOutputReference) validatePutAirflowMetadataRetentionConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigOutputReference) validatePutTaskLogsRetentionConfigParameters(value interface{}) error {
 	return nil
 }

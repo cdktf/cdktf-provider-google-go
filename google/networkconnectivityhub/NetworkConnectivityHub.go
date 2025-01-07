@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/network_connectivity_hub google_network_connectivity_hub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/network_connectivity_hub google_network_connectivity_hub}.
 type NetworkConnectivityHub interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -62,6 +62,9 @@ type NetworkConnectivityHub interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PresetTopology() *string
+	SetPresetTopology(val *string)
+	PresetTopologyInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -140,6 +143,7 @@ type NetworkConnectivityHub interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPresetTopology()
 	ResetProject()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -380,6 +384,26 @@ func (j *jsiiProxy_NetworkConnectivityHub) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkConnectivityHub) PresetTopology() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"presetTopology",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityHub) PresetTopologyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"presetTopologyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkConnectivityHub) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -531,7 +555,7 @@ func (j *jsiiProxy_NetworkConnectivityHub) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
 func NewNetworkConnectivityHub(scope constructs.Construct, id *string, config *NetworkConnectivityHubConfig) NetworkConnectivityHub {
 	_init_.Initialize()
 
@@ -549,7 +573,7 @@ func NewNetworkConnectivityHub(scope constructs.Construct, id *string, config *N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
 func NewNetworkConnectivityHub_Override(n NetworkConnectivityHub, scope constructs.Construct, id *string, config *NetworkConnectivityHubConfig) {
 	_init_.Initialize()
 
@@ -660,6 +684,17 @@ func (j *jsiiProxy_NetworkConnectivityHub)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkConnectivityHub)SetPresetTopology(val *string) {
+	if err := j.validateSetPresetTopologyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"presetTopology",
 		val,
 	)
 }
@@ -1102,6 +1137,14 @@ func (n *jsiiProxy_NetworkConnectivityHub) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkConnectivityHub) ResetPresetTopology() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetPresetTopology",
 		nil, // no parameters
 	)
 }

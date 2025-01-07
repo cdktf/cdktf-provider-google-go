@@ -23,6 +23,8 @@ type BigqueryDatasetAccessOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Condition() BigqueryDatasetAccessConditionOutputReference
+	ConditionInput() *BigqueryDatasetAccessCondition
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -88,9 +90,11 @@ type BigqueryDatasetAccessOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCondition(value *BigqueryDatasetAccessCondition)
 	PutDataset(value *BigqueryDatasetAccessDataset)
 	PutRoutine(value *BigqueryDatasetAccessRoutine)
 	PutView(value *BigqueryDatasetAccessView)
+	ResetCondition()
 	ResetDataset()
 	ResetDomain()
 	ResetGroupByEmail()
@@ -130,6 +134,26 @@ func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) ComplexObjectIsFromSet(
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) Condition() BigqueryDatasetAccessConditionOutputReference {
+	var returns BigqueryDatasetAccessConditionOutputReference
+	_jsii_.Get(
+		j,
+		"condition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryDatasetAccessOutputReference) ConditionInput() *BigqueryDatasetAccessCondition {
+	var returns *BigqueryDatasetAccessCondition
+	_jsii_.Get(
+		j,
+		"conditionInput",
 		&returns,
 	)
 	return returns
@@ -700,6 +724,17 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) InterpolationForAttribu
 	return returns
 }
 
+func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) PutCondition(value *BigqueryDatasetAccessCondition) {
+	if err := b.validatePutConditionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putCondition",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) PutDataset(value *BigqueryDatasetAccessDataset) {
 	if err := b.validatePutDatasetParameters(value); err != nil {
 		panic(err)
@@ -730,6 +765,14 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) PutView(value *Bigquery
 		b,
 		"putView",
 		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) ResetCondition() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCondition",
+		nil, // no parameters
 	)
 }
 

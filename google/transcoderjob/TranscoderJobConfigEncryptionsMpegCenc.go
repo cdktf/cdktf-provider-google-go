@@ -7,7 +7,7 @@ package transcoderjob
 type TranscoderJobConfigEncryptionsMpegCenc struct {
 	// Specify the encryption scheme.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/transcoder_job#scheme TranscoderJob#scheme}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/transcoder_job#scheme TranscoderJob#scheme}
 	Scheme *string `field:"required" json:"scheme" yaml:"scheme"`
 }
 

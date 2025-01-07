@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/artifact_registry_repository google_artifact_registry_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/artifact_registry_repository google_artifact_registry_repository}.
 type ArtifactRegistryRepository interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -108,6 +108,8 @@ type ArtifactRegistryRepository interface {
 	UpdateTime() *string
 	VirtualRepositoryConfig() ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference
 	VirtualRepositoryConfigInput() *ArtifactRegistryRepositoryVirtualRepositoryConfig
+	VulnerabilityScanningConfig() ArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReference
+	VulnerabilityScanningConfigInput() *ArtifactRegistryRepositoryVulnerabilityScanningConfig
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -157,6 +159,7 @@ type ArtifactRegistryRepository interface {
 	PutRemoteRepositoryConfig(value *ArtifactRegistryRepositoryRemoteRepositoryConfig)
 	PutTimeouts(value *ArtifactRegistryRepositoryTimeouts)
 	PutVirtualRepositoryConfig(value *ArtifactRegistryRepositoryVirtualRepositoryConfig)
+	PutVulnerabilityScanningConfig(value *ArtifactRegistryRepositoryVulnerabilityScanningConfig)
 	ResetCleanupPolicies()
 	ResetCleanupPolicyDryRun()
 	ResetDescription()
@@ -174,6 +177,7 @@ type ArtifactRegistryRepository interface {
 	ResetRemoteRepositoryConfig()
 	ResetTimeouts()
 	ResetVirtualRepositoryConfig()
+	ResetVulnerabilityScanningConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -722,8 +726,28 @@ func (j *jsiiProxy_ArtifactRegistryRepository) VirtualRepositoryConfigInput() *A
 	return returns
 }
 
+func (j *jsiiProxy_ArtifactRegistryRepository) VulnerabilityScanningConfig() ArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReference {
+	var returns ArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReference
+	_jsii_.Get(
+		j,
+		"vulnerabilityScanningConfig",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/artifact_registry_repository google_artifact_registry_repository} Resource.
+func (j *jsiiProxy_ArtifactRegistryRepository) VulnerabilityScanningConfigInput() *ArtifactRegistryRepositoryVulnerabilityScanningConfig {
+	var returns *ArtifactRegistryRepositoryVulnerabilityScanningConfig
+	_jsii_.Get(
+		j,
+		"vulnerabilityScanningConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/artifact_registry_repository google_artifact_registry_repository} Resource.
 func NewArtifactRegistryRepository(scope constructs.Construct, id *string, config *ArtifactRegistryRepositoryConfig) ArtifactRegistryRepository {
 	_init_.Initialize()
 
@@ -741,7 +765,7 @@ func NewArtifactRegistryRepository(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/artifact_registry_repository google_artifact_registry_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/artifact_registry_repository google_artifact_registry_repository} Resource.
 func NewArtifactRegistryRepository_Override(a ArtifactRegistryRepository, scope constructs.Construct, id *string, config *ArtifactRegistryRepositoryConfig) {
 	_init_.Initialize()
 
@@ -1349,6 +1373,17 @@ func (a *jsiiProxy_ArtifactRegistryRepository) PutVirtualRepositoryConfig(value 
 	)
 }
 
+func (a *jsiiProxy_ArtifactRegistryRepository) PutVulnerabilityScanningConfig(value *ArtifactRegistryRepositoryVulnerabilityScanningConfig) {
+	if err := a.validatePutVulnerabilityScanningConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putVulnerabilityScanningConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_ArtifactRegistryRepository) ResetCleanupPolicies() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1465,6 +1500,14 @@ func (a *jsiiProxy_ArtifactRegistryRepository) ResetVirtualRepositoryConfig() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetVirtualRepositoryConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ArtifactRegistryRepository) ResetVulnerabilityScanningConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetVulnerabilityScanningConfig",
 		nil, // no parameters
 	)
 }

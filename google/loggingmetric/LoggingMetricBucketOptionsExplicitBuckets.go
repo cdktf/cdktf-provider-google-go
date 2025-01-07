@@ -7,7 +7,7 @@ package loggingmetric
 type LoggingMetricBucketOptionsExplicitBuckets struct {
 	// The values must be monotonically increasing.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.14.1/docs/resources/logging_metric#bounds LoggingMetric#bounds}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/logging_metric#bounds LoggingMetric#bounds}
 	Bounds *[]*float64 `field:"required" json:"bounds" yaml:"bounds"`
 }
 
