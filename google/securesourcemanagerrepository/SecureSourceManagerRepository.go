@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/secure_source_manager_repository google_secure_source_manager_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/secure_source_manager_repository google_secure_source_manager_repository}.
 type SecureSourceManagerRepository interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -530,7 +530,7 @@ func (j *jsiiProxy_SecureSourceManagerRepository) Uris() SecureSourceManagerRepo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/secure_source_manager_repository google_secure_source_manager_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/secure_source_manager_repository google_secure_source_manager_repository} Resource.
 func NewSecureSourceManagerRepository(scope constructs.Construct, id *string, config *SecureSourceManagerRepositoryConfig) SecureSourceManagerRepository {
 	_init_.Initialize()
 
@@ -548,7 +548,7 @@ func NewSecureSourceManagerRepository(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/secure_source_manager_repository google_secure_source_manager_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/secure_source_manager_repository google_secure_source_manager_repository} Resource.
 func NewSecureSourceManagerRepository_Override(s SecureSourceManagerRepository, scope constructs.Construct, id *string, config *SecureSourceManagerRepositoryConfig) {
 	_init_.Initialize()
 

@@ -63,6 +63,10 @@ func (j *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference) validateSetExternalEndpointsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference) validateSetInternalValueParameters(val *DnsRecordSetRoutingPolicyPrimaryBackupPrimary) error {
 	return nil
 }

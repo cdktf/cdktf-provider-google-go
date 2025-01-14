@@ -197,6 +197,14 @@ func (j *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedT
 	return nil
 }
 
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference) validateSetExternalEndpointsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference) validateSetInternalValueParameters(val *DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

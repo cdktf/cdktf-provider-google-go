@@ -26,30 +26,30 @@ type FirestoreBackupScheduleConfig struct {
 	//
 	// You can set this to a value up to 14 weeks.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/firestore_backup_schedule#retention FirestoreBackupSchedule#retention}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/firestore_backup_schedule#retention FirestoreBackupSchedule#retention}
 	Retention *string `field:"required" json:"retention" yaml:"retention"`
 	// daily_recurrence block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/firestore_backup_schedule#daily_recurrence FirestoreBackupSchedule#daily_recurrence}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/firestore_backup_schedule#daily_recurrence FirestoreBackupSchedule#daily_recurrence}
 	DailyRecurrence *FirestoreBackupScheduleDailyRecurrence `field:"optional" json:"dailyRecurrence" yaml:"dailyRecurrence"`
 	// The Firestore database id. Defaults to '"(default)"'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/firestore_backup_schedule#database FirestoreBackupSchedule#database}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/firestore_backup_schedule#database FirestoreBackupSchedule#database}
 	Database *string `field:"optional" json:"database" yaml:"database"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/firestore_backup_schedule#id FirestoreBackupSchedule#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/firestore_backup_schedule#id FirestoreBackupSchedule#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/firestore_backup_schedule#project FirestoreBackupSchedule#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/firestore_backup_schedule#project FirestoreBackupSchedule#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/firestore_backup_schedule#timeouts FirestoreBackupSchedule#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/firestore_backup_schedule#timeouts FirestoreBackupSchedule#timeouts}
 	Timeouts *FirestoreBackupScheduleTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// weekly_recurrence block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/firestore_backup_schedule#weekly_recurrence FirestoreBackupSchedule#weekly_recurrence}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/firestore_backup_schedule#weekly_recurrence FirestoreBackupSchedule#weekly_recurrence}
 	WeeklyRecurrence *FirestoreBackupScheduleWeeklyRecurrence `field:"optional" json:"weeklyRecurrence" yaml:"weeklyRecurrence"`
 }
 

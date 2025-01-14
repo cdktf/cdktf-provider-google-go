@@ -91,6 +91,10 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) validateSetServerCaPoolParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) validateSetSslModeParameters(val *string) error {
 	return nil
 }

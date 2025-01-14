@@ -51,6 +51,9 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	ServerCaMode() *string
 	SetServerCaMode(val *string)
 	ServerCaModeInput() *string
+	ServerCaPool() *string
+	SetServerCaPool(val *string)
+	ServerCaPoolInput() *string
 	SslMode() *string
 	SetSslMode(val *string)
 	SslModeInput() *string
@@ -95,6 +98,7 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	ResetPrivateNetwork()
 	ResetPscConfig()
 	ResetServerCaMode()
+	ResetServerCaPool()
 	ResetSslMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -301,6 +305,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Se
 	return returns
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCaPool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaPool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCaPoolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaPoolInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) SslMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -453,6 +477,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	_jsii_.Set(
 		j,
 		"serverCaMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetServerCaPool(val *string) {
+	if err := j.validateSetServerCaPoolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverCaPool",
 		val,
 	)
 }
@@ -750,6 +785,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Re
 	_jsii_.InvokeVoid(
 		s,
 		"resetServerCaMode",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetServerCaPool() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetServerCaPool",
 		nil, // no parameters
 	)
 }

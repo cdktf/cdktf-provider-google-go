@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -223,6 +223,9 @@ type GoogleProvider interface {
 	DeploymentManagerCustomEndpoint() *string
 	SetDeploymentManagerCustomEndpoint(val *string)
 	DeploymentManagerCustomEndpointInput() *string
+	DeveloperConnectCustomEndpoint() *string
+	SetDeveloperConnectCustomEndpoint(val *string)
+	DeveloperConnectCustomEndpointInput() *string
 	DialogflowCustomEndpoint() *string
 	SetDialogflowCustomEndpoint(val *string)
 	DialogflowCustomEndpointInput() *string
@@ -600,6 +603,7 @@ type GoogleProvider interface {
 	ResetDatastreamCustomEndpoint()
 	ResetDefaultLabels()
 	ResetDeploymentManagerCustomEndpoint()
+	ResetDeveloperConnectCustomEndpoint()
 	ResetDialogflowCustomEndpoint()
 	ResetDialogflowCxCustomEndpoint()
 	ResetDiscoveryEngineCustomEndpoint()
@@ -2092,6 +2096,26 @@ func (j *jsiiProxy_GoogleProvider) DeploymentManagerCustomEndpointInput() *strin
 	_jsii_.Get(
 		j,
 		"deploymentManagerCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) DeveloperConnectCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"developerConnectCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) DeveloperConnectCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"developerConnectCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -4098,7 +4122,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -4116,7 +4140,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -4673,6 +4697,14 @@ func (j *jsiiProxy_GoogleProvider)SetDeploymentManagerCustomEndpoint(val *string
 	_jsii_.Set(
 		j,
 		"deploymentManagerCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetDeveloperConnectCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"developerConnectCustomEndpoint",
 		val,
 	)
 }
@@ -6113,6 +6145,14 @@ func (g *jsiiProxy_GoogleProvider) ResetDeploymentManagerCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDeploymentManagerCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetDeveloperConnectCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeveloperConnectCustomEndpoint",
 		nil, // no parameters
 	)
 }

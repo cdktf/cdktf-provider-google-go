@@ -39,6 +39,7 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationOutputReferen
 	PrivateNetwork() *string
 	PscConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigList
 	ServerCaMode() *string
+	ServerCaPool() *string
 	SslMode() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -202,6 +203,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfiguratio
 	_jsii_.Get(
 		j,
 		"serverCaMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationOutputReference) ServerCaPool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverCaPool",
 		&returns,
 	)
 	return returns

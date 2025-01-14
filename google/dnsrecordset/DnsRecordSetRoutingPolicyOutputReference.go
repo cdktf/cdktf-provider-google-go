@@ -35,6 +35,9 @@ type DnsRecordSetRoutingPolicyOutputReference interface {
 	Fqn() *string
 	Geo() DnsRecordSetRoutingPolicyGeoList
 	GeoInput() interface{}
+	HealthCheck() *string
+	SetHealthCheck(val *string)
+	HealthCheckInput() *string
 	InternalValue() *DnsRecordSetRoutingPolicy
 	SetInternalValue(val *DnsRecordSetRoutingPolicy)
 	PrimaryBackup() DnsRecordSetRoutingPolicyPrimaryBackupOutputReference
@@ -78,6 +81,7 @@ type DnsRecordSetRoutingPolicyOutputReference interface {
 	PutWrr(value interface{})
 	ResetEnableGeoFencing()
 	ResetGeo()
+	ResetHealthCheck()
 	ResetPrimaryBackup()
 	ResetWrr()
 	// Produce the Token's value at resolution time.
@@ -170,6 +174,26 @@ func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) GeoInput() interfac
 	_jsii_.Get(
 		j,
 		"geoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) HealthCheck() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"healthCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) HealthCheckInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"healthCheckInput",
 		&returns,
 	)
 	return returns
@@ -302,6 +326,17 @@ func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference)SetEnableGeoFencing(
 	_jsii_.Set(
 		j,
 		"enableGeoFencing",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference)SetHealthCheck(val *string) {
+	if err := j.validateSetHealthCheckParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"healthCheck",
 		val,
 	)
 }
@@ -570,6 +605,14 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) ResetGeo() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetGeo",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) ResetHealthCheck() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHealthCheck",
 		nil, // no parameters
 	)
 }

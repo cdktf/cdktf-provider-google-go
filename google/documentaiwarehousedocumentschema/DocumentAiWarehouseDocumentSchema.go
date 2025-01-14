@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema}.
 type DocumentAiWarehouseDocumentSchema interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -461,7 +461,7 @@ func (j *jsiiProxy_DocumentAiWarehouseDocumentSchema) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema} Resource.
 func NewDocumentAiWarehouseDocumentSchema(scope constructs.Construct, id *string, config *DocumentAiWarehouseDocumentSchemaConfig) DocumentAiWarehouseDocumentSchema {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewDocumentAiWarehouseDocumentSchema(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema} Resource.
 func NewDocumentAiWarehouseDocumentSchema_Override(d DocumentAiWarehouseDocumentSchema, scope constructs.Construct, id *string, config *DocumentAiWarehouseDocumentSchemaConfig) {
 	_init_.Initialize()
 

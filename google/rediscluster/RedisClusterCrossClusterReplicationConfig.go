@@ -15,15 +15,15 @@ type RedisClusterCrossClusterReplicationConfig struct {
 	//
 	// 1. 'SECONDARY': This cluster replicates data from the primary cluster. It allows only reads. Possible values: ["CLUSTER_ROLE_UNSPECIFIED", "NONE", "PRIMARY", "SECONDARY"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/redis_cluster#cluster_role RedisCluster#cluster_role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/redis_cluster#cluster_role RedisCluster#cluster_role}
 	ClusterRole *string `field:"optional" json:"clusterRole" yaml:"clusterRole"`
 	// primary_cluster block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/redis_cluster#primary_cluster RedisCluster#primary_cluster}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/redis_cluster#primary_cluster RedisCluster#primary_cluster}
 	PrimaryCluster *RedisClusterCrossClusterReplicationConfigPrimaryCluster `field:"optional" json:"primaryCluster" yaml:"primaryCluster"`
 	// secondary_clusters block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/redis_cluster#secondary_clusters RedisCluster#secondary_clusters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/redis_cluster#secondary_clusters RedisCluster#secondary_clusters}
 	SecondaryClusters interface{} `field:"optional" json:"secondaryClusters" yaml:"secondaryClusters"`
 }
 

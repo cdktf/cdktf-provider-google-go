@@ -91,6 +91,10 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutNamedPortParameters(v
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutStandbyPolicyParameters(value *ComputeInstanceGroupManagerStandbyPolicy) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutStatefulDiskParameters(value interface{}) error {
 	return nil
 }
@@ -176,6 +180,14 @@ func (j *jsiiProxy_ComputeInstanceGroupManager) validateSetTargetPoolsParameters
 }
 
 func (j *jsiiProxy_ComputeInstanceGroupManager) validateSetTargetSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager) validateSetTargetStoppedSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager) validateSetTargetSuspendedSizeParameters(val *float64) error {
 	return nil
 }
 

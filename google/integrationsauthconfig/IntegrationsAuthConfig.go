@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/integrations_auth_config google_integrations_auth_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/integrations_auth_config google_integrations_auth_config}.
 type IntegrationsAuthConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -669,7 +669,7 @@ func (j *jsiiProxy_IntegrationsAuthConfig) VisibilityInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/integrations_auth_config google_integrations_auth_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/integrations_auth_config google_integrations_auth_config} Resource.
 func NewIntegrationsAuthConfig(scope constructs.Construct, id *string, config *IntegrationsAuthConfigConfig) IntegrationsAuthConfig {
 	_init_.Initialize()
 
@@ -687,7 +687,7 @@ func NewIntegrationsAuthConfig(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/integrations_auth_config google_integrations_auth_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/integrations_auth_config google_integrations_auth_config} Resource.
 func NewIntegrationsAuthConfig_Override(i IntegrationsAuthConfig, scope constructs.Construct, id *string, config *IntegrationsAuthConfigConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/iam_principal_access_boundary_policy google_iam_principal_access_boundary_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/iam_principal_access_boundary_policy google_iam_principal_access_boundary_policy}.
 type IamPrincipalAccessBoundaryPolicy interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -541,7 +541,7 @@ func (j *jsiiProxy_IamPrincipalAccessBoundaryPolicy) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/iam_principal_access_boundary_policy google_iam_principal_access_boundary_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/iam_principal_access_boundary_policy google_iam_principal_access_boundary_policy} Resource.
 func NewIamPrincipalAccessBoundaryPolicy(scope constructs.Construct, id *string, config *IamPrincipalAccessBoundaryPolicyConfig) IamPrincipalAccessBoundaryPolicy {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewIamPrincipalAccessBoundaryPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/iam_principal_access_boundary_policy google_iam_principal_access_boundary_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/iam_principal_access_boundary_policy google_iam_principal_access_boundary_policy} Resource.
 func NewIamPrincipalAccessBoundaryPolicy_Override(i IamPrincipalAccessBoundaryPolicy, scope constructs.Construct, id *string, config *IamPrincipalAccessBoundaryPolicyConfig) {
 	_init_.Initialize()
 

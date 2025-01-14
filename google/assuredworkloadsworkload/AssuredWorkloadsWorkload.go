@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/assured_workloads_workload google_assured_workloads_workload}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/assured_workloads_workload google_assured_workloads_workload}.
 type AssuredWorkloadsWorkload interface {
 	cdktf.TerraformResource
 	BillingAccount() *string
@@ -800,7 +800,7 @@ func (j *jsiiProxy_AssuredWorkloadsWorkload) WorkloadOptionsInput() *AssuredWork
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/assured_workloads_workload google_assured_workloads_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/assured_workloads_workload google_assured_workloads_workload} Resource.
 func NewAssuredWorkloadsWorkload(scope constructs.Construct, id *string, config *AssuredWorkloadsWorkloadConfig) AssuredWorkloadsWorkload {
 	_init_.Initialize()
 
@@ -818,7 +818,7 @@ func NewAssuredWorkloadsWorkload(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/assured_workloads_workload google_assured_workloads_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/assured_workloads_workload google_assured_workloads_workload} Resource.
 func NewAssuredWorkloadsWorkload_Override(a AssuredWorkloadsWorkload, scope constructs.Construct, id *string, config *AssuredWorkloadsWorkloadConfig) {
 	_init_.Initialize()
 

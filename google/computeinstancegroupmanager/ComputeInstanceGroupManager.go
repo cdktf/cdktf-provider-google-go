@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager}.
 type ComputeInstanceGroupManager interface {
 	cdktf.TerraformResource
 	AllInstancesConfig() ComputeInstanceGroupManagerAllInstancesConfigOutputReference
@@ -87,6 +87,8 @@ type ComputeInstanceGroupManager interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	StandbyPolicy() ComputeInstanceGroupManagerStandbyPolicyOutputReference
+	StandbyPolicyInput() *ComputeInstanceGroupManagerStandbyPolicy
 	StatefulDisk() ComputeInstanceGroupManagerStatefulDiskList
 	StatefulDiskInput() interface{}
 	StatefulExternalIp() ComputeInstanceGroupManagerStatefulExternalIpList
@@ -100,6 +102,12 @@ type ComputeInstanceGroupManager interface {
 	TargetSize() *float64
 	SetTargetSize(val *float64)
 	TargetSizeInput() *float64
+	TargetStoppedSize() *float64
+	SetTargetStoppedSize(val *float64)
+	TargetStoppedSizeInput() *float64
+	TargetSuspendedSize() *float64
+	SetTargetSuspendedSize(val *float64)
+	TargetSuspendedSizeInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -168,6 +176,7 @@ type ComputeInstanceGroupManager interface {
 	PutAutoHealingPolicies(value *ComputeInstanceGroupManagerAutoHealingPolicies)
 	PutInstanceLifecyclePolicy(value *ComputeInstanceGroupManagerInstanceLifecyclePolicy)
 	PutNamedPort(value interface{})
+	PutStandbyPolicy(value *ComputeInstanceGroupManagerStandbyPolicy)
 	PutStatefulDisk(value interface{})
 	PutStatefulExternalIp(value interface{})
 	PutStatefulInternalIp(value interface{})
@@ -185,11 +194,14 @@ type ComputeInstanceGroupManager interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetStandbyPolicy()
 	ResetStatefulDisk()
 	ResetStatefulExternalIp()
 	ResetStatefulInternalIp()
 	ResetTargetPools()
 	ResetTargetSize()
+	ResetTargetStoppedSize()
+	ResetTargetSuspendedSize()
 	ResetTimeouts()
 	ResetUpdatePolicy()
 	ResetWaitForInstances()
@@ -603,6 +615,26 @@ func (j *jsiiProxy_ComputeInstanceGroupManager) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceGroupManager) StandbyPolicy() ComputeInstanceGroupManagerStandbyPolicyOutputReference {
+	var returns ComputeInstanceGroupManagerStandbyPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"standbyPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager) StandbyPolicyInput() *ComputeInstanceGroupManagerStandbyPolicy {
+	var returns *ComputeInstanceGroupManagerStandbyPolicy
+	_jsii_.Get(
+		j,
+		"standbyPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceGroupManager) StatefulDisk() ComputeInstanceGroupManagerStatefulDiskList {
 	var returns ComputeInstanceGroupManagerStatefulDiskList
 	_jsii_.Get(
@@ -708,6 +740,46 @@ func (j *jsiiProxy_ComputeInstanceGroupManager) TargetSizeInput() *float64 {
 	_jsii_.Get(
 		j,
 		"targetSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager) TargetStoppedSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetStoppedSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager) TargetStoppedSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetStoppedSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager) TargetSuspendedSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetSuspendedSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager) TargetSuspendedSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetSuspendedSizeInput",
 		&returns,
 	)
 	return returns
@@ -864,7 +936,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManager) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
 func NewComputeInstanceGroupManager(scope constructs.Construct, id *string, config *ComputeInstanceGroupManagerConfig) ComputeInstanceGroupManager {
 	_init_.Initialize()
 
@@ -882,7 +954,7 @@ func NewComputeInstanceGroupManager(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.15.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager} Resource.
 func NewComputeInstanceGroupManager_Override(c ComputeInstanceGroupManager, scope constructs.Construct, id *string, config *ComputeInstanceGroupManagerConfig) {
 	_init_.Initialize()
 
@@ -1045,6 +1117,28 @@ func (j *jsiiProxy_ComputeInstanceGroupManager)SetTargetSize(val *float64) {
 	_jsii_.Set(
 		j,
 		"targetSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager)SetTargetStoppedSize(val *float64) {
+	if err := j.validateSetTargetStoppedSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetStoppedSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceGroupManager)SetTargetSuspendedSize(val *float64) {
+	if err := j.validateSetTargetSuspendedSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetSuspendedSize",
 		val,
 	)
 }
@@ -1479,6 +1573,17 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) PutNamedPort(value interface{}) 
 	)
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) PutStandbyPolicy(value *ComputeInstanceGroupManagerStandbyPolicy) {
+	if err := c.validatePutStandbyPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putStandbyPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupManager) PutStatefulDisk(value interface{}) {
 	if err := c.validatePutStatefulDiskParameters(value); err != nil {
 		panic(err)
@@ -1617,6 +1722,14 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) ResetProject() {
 	)
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) ResetStandbyPolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStandbyPolicy",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupManager) ResetStatefulDisk() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1653,6 +1766,22 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) ResetTargetSize() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTargetSize",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceGroupManager) ResetTargetStoppedSize() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTargetStoppedSize",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceGroupManager) ResetTargetSuspendedSize() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTargetSuspendedSize",
 		nil, // no parameters
 	)
 }

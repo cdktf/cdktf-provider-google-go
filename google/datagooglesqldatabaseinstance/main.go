@@ -999,6 +999,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pscConfig", GoGetter: "PscConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "serverCaMode", GoGetter: "ServerCaMode"},
+			_jsii_.MemberProperty{JsiiProperty: "serverCaPool", GoGetter: "ServerCaPool"},
 			_jsii_.MemberProperty{JsiiProperty: "sslMode", GoGetter: "SslMode"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

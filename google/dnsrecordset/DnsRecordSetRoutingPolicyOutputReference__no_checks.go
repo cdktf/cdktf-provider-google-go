@@ -75,6 +75,10 @@ func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validateSetEnableGe
 	return nil
 }
 
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validateSetHealthCheckParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validateSetInternalValueParameters(val *DnsRecordSetRoutingPolicy) error {
 	return nil
 }
