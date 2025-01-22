@@ -99,6 +99,18 @@ func (j *jsiiProxy_ComputeNetwork) validateSetAutoCreateSubnetworksParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ComputeNetwork) validateSetBgpAlwaysCompareMedParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeNetwork) validateSetBgpBestPathSelectionModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeNetwork) validateSetBgpInterRegionCostParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeNetwork) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

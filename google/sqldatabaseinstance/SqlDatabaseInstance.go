@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/sql_database_instance google_sql_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/sql_database_instance google_sql_database_instance}.
 type SqlDatabaseInstance interface {
 	cdktf.TerraformResource
 	AvailableMaintenanceVersions() *[]*string
@@ -100,6 +100,8 @@ type SqlDatabaseInstance interface {
 	ReplicaNames() *[]*string
 	SetReplicaNames(val *[]*string)
 	ReplicaNamesInput() *[]*string
+	ReplicationCluster() SqlDatabaseInstanceReplicationClusterOutputReference
+	ReplicationClusterInput() *SqlDatabaseInstanceReplicationCluster
 	RestoreBackupContext() SqlDatabaseInstanceRestoreBackupContextOutputReference
 	RestoreBackupContextInput() *SqlDatabaseInstanceRestoreBackupContext
 	RootPassword() *string
@@ -163,6 +165,7 @@ type SqlDatabaseInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutClone(value *SqlDatabaseInstanceClone)
 	PutReplicaConfiguration(value *SqlDatabaseInstanceReplicaConfiguration)
+	PutReplicationCluster(value *SqlDatabaseInstanceReplicationCluster)
 	PutRestoreBackupContext(value *SqlDatabaseInstanceRestoreBackupContext)
 	PutSettings(value *SqlDatabaseInstanceSettings)
 	PutTimeouts(value *SqlDatabaseInstanceTimeouts)
@@ -181,6 +184,7 @@ type SqlDatabaseInstance interface {
 	ResetRegion()
 	ResetReplicaConfiguration()
 	ResetReplicaNames()
+	ResetReplicationCluster()
 	ResetRestoreBackupContext()
 	ResetRootPassword()
 	ResetSettings()
@@ -673,6 +677,26 @@ func (j *jsiiProxy_SqlDatabaseInstance) ReplicaNamesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_SqlDatabaseInstance) ReplicationCluster() SqlDatabaseInstanceReplicationClusterOutputReference {
+	var returns SqlDatabaseInstanceReplicationClusterOutputReference
+	_jsii_.Get(
+		j,
+		"replicationCluster",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance) ReplicationClusterInput() *SqlDatabaseInstanceReplicationCluster {
+	var returns *SqlDatabaseInstanceReplicationCluster
+	_jsii_.Get(
+		j,
+		"replicationClusterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlDatabaseInstance) RestoreBackupContext() SqlDatabaseInstanceRestoreBackupContextOutputReference {
 	var returns SqlDatabaseInstanceRestoreBackupContextOutputReference
 	_jsii_.Get(
@@ -814,7 +838,7 @@ func (j *jsiiProxy_SqlDatabaseInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/sql_database_instance google_sql_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/sql_database_instance google_sql_database_instance} Resource.
 func NewSqlDatabaseInstance(scope constructs.Construct, id *string, config *SqlDatabaseInstanceConfig) SqlDatabaseInstance {
 	_init_.Initialize()
 
@@ -832,7 +856,7 @@ func NewSqlDatabaseInstance(scope constructs.Construct, id *string, config *SqlD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/sql_database_instance google_sql_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/sql_database_instance google_sql_database_instance} Resource.
 func NewSqlDatabaseInstance_Override(s SqlDatabaseInstance, scope constructs.Construct, id *string, config *SqlDatabaseInstanceConfig) {
 	_init_.Initialize()
 
@@ -1418,6 +1442,17 @@ func (s *jsiiProxy_SqlDatabaseInstance) PutReplicaConfiguration(value *SqlDataba
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstance) PutReplicationCluster(value *SqlDatabaseInstanceReplicationCluster) {
+	if err := s.validatePutReplicationClusterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putReplicationCluster",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstance) PutRestoreBackupContext(value *SqlDatabaseInstanceRestoreBackupContext) {
 	if err := s.validatePutRestoreBackupContextParameters(value); err != nil {
 		panic(err)
@@ -1551,6 +1586,14 @@ func (s *jsiiProxy_SqlDatabaseInstance) ResetReplicaNames() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetReplicaNames",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstance) ResetReplicationCluster() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetReplicationCluster",
 		nil, // no parameters
 	)
 }

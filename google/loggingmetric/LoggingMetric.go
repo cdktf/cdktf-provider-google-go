@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/logging_metric google_logging_metric}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/logging_metric google_logging_metric}.
 type LoggingMetric interface {
 	cdktf.TerraformResource
 	BucketName() *string
@@ -572,7 +572,7 @@ func (j *jsiiProxy_LoggingMetric) ValueExtractorInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/logging_metric google_logging_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/logging_metric google_logging_metric} Resource.
 func NewLoggingMetric(scope constructs.Construct, id *string, config *LoggingMetricConfig) LoggingMetric {
 	_init_.Initialize()
 
@@ -590,7 +590,7 @@ func NewLoggingMetric(scope constructs.Construct, id *string, config *LoggingMet
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/logging_metric google_logging_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/logging_metric google_logging_metric} Resource.
 func NewLoggingMetric_Override(l LoggingMetric, scope constructs.Construct, id *string, config *LoggingMetricConfig) {
 	_init_.Initialize()
 

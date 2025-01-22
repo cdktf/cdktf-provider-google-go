@@ -7,11 +7,11 @@ package gkeonprembaremetalcluster
 type GkeonpremBareMetalClusterStorageLvpNodeMountsConfig struct {
 	// The host machine path.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/gkeonprem_bare_metal_cluster#path GkeonpremBareMetalCluster#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/gkeonprem_bare_metal_cluster#path GkeonpremBareMetalCluster#path}
 	Path *string `field:"required" json:"path" yaml:"path"`
 	// The StorageClass name that PVs will be created with.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/gkeonprem_bare_metal_cluster#storage_class GkeonpremBareMetalCluster#storage_class}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/gkeonprem_bare_metal_cluster#storage_class GkeonpremBareMetalCluster#storage_class}
 	StorageClass *string `field:"required" json:"storageClass" yaml:"storageClass"`
 }
 

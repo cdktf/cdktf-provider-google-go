@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/access_context_manager_egress_policy google_access_context_manager_egress_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/access_context_manager_egress_policy google_access_context_manager_egress_policy}.
 type AccessContextManagerEgressPolicy interface {
 	cdktf.TerraformResource
+	AccessPolicyId() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -137,6 +138,16 @@ type AccessContextManagerEgressPolicy interface {
 // The jsii proxy struct for AccessContextManagerEgressPolicy
 type jsiiProxy_AccessContextManagerEgressPolicy struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AccessContextManagerEgressPolicy) AccessPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessPolicyId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AccessContextManagerEgressPolicy) CdktfStack() cdktf.TerraformStack {
@@ -380,7 +391,7 @@ func (j *jsiiProxy_AccessContextManagerEgressPolicy) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/access_context_manager_egress_policy google_access_context_manager_egress_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/access_context_manager_egress_policy google_access_context_manager_egress_policy} Resource.
 func NewAccessContextManagerEgressPolicy(scope constructs.Construct, id *string, config *AccessContextManagerEgressPolicyConfig) AccessContextManagerEgressPolicy {
 	_init_.Initialize()
 
@@ -398,7 +409,7 @@ func NewAccessContextManagerEgressPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/access_context_manager_egress_policy google_access_context_manager_egress_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/access_context_manager_egress_policy google_access_context_manager_egress_policy} Resource.
 func NewAccessContextManagerEgressPolicy_Override(a AccessContextManagerEgressPolicy, scope constructs.Construct, id *string, config *AccessContextManagerEgressPolicyConfig) {
 	_init_.Initialize()
 

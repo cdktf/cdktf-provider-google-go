@@ -5,11 +5,11 @@ package memorystoreinstance
 
 
 type MemorystoreInstanceTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/memorystore_instance#create MemorystoreInstance#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/memorystore_instance#create MemorystoreInstance#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/memorystore_instance#delete MemorystoreInstance#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/memorystore_instance#delete MemorystoreInstance#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/memorystore_instance#update MemorystoreInstance#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/memorystore_instance#update MemorystoreInstance#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

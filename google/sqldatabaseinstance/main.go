@@ -74,6 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publicIpAddress", GoGetter: "PublicIpAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "putClone", GoMethod: "PutClone"},
 			_jsii_.MemberMethod{JsiiMethod: "putReplicaConfiguration", GoMethod: "PutReplicaConfiguration"},
+			_jsii_.MemberMethod{JsiiMethod: "putReplicationCluster", GoMethod: "PutReplicationCluster"},
 			_jsii_.MemberMethod{JsiiMethod: "putRestoreBackupContext", GoMethod: "PutRestoreBackupContext"},
 			_jsii_.MemberMethod{JsiiMethod: "putSettings", GoMethod: "PutSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
@@ -84,6 +85,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "replicaConfigurationInput", GoGetter: "ReplicaConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "replicaNames", GoGetter: "ReplicaNames"},
 			_jsii_.MemberProperty{JsiiProperty: "replicaNamesInput", GoGetter: "ReplicaNamesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "replicationCluster", GoGetter: "ReplicationCluster"},
+			_jsii_.MemberProperty{JsiiProperty: "replicationClusterInput", GoGetter: "ReplicationClusterInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClone", GoMethod: "ResetClone"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeletionProtection", GoMethod: "ResetDeletionProtection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEncryptionKeyName", GoMethod: "ResetEncryptionKeyName"},
@@ -97,6 +100,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReplicaConfiguration", GoMethod: "ResetReplicaConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReplicaNames", GoMethod: "ResetReplicaNames"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReplicationCluster", GoMethod: "ResetReplicationCluster"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRestoreBackupContext", GoMethod: "ResetRestoreBackupContext"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRootPassword", GoMethod: "ResetRootPassword"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSettings", GoMethod: "ResetSettings"},
@@ -310,6 +314,46 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SqlDatabaseInstanceReplicaConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationCluster",
+		reflect.TypeOf((*SqlDatabaseInstanceReplicationCluster)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationClusterOutputReference",
+		reflect.TypeOf((*SqlDatabaseInstanceReplicationClusterOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "drReplica", GoGetter: "DrReplica"},
+			_jsii_.MemberProperty{JsiiProperty: "failoverDrReplicaName", GoGetter: "FailoverDrReplicaName"},
+			_jsii_.MemberProperty{JsiiProperty: "failoverDrReplicaNameInput", GoGetter: "FailoverDrReplicaNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFailoverDrReplicaName", GoMethod: "ResetFailoverDrReplicaName"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

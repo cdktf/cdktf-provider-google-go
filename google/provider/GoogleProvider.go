@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -155,6 +155,9 @@ type GoogleProvider interface {
 	CloudTasksCustomEndpoint() *string
 	SetCloudTasksCustomEndpoint(val *string)
 	CloudTasksCustomEndpointInput() *string
+	ColabCustomEndpoint() *string
+	SetColabCustomEndpoint(val *string)
+	ColabCustomEndpointInput() *string
 	ComposerCustomEndpoint() *string
 	SetComposerCustomEndpoint(val *string)
 	ComposerCustomEndpointInput() *string
@@ -581,6 +584,7 @@ type GoogleProvider interface {
 	ResetCloudRunV2CustomEndpoint()
 	ResetCloudSchedulerCustomEndpoint()
 	ResetCloudTasksCustomEndpoint()
+	ResetColabCustomEndpoint()
 	ResetComposerCustomEndpoint()
 	ResetComputeCustomEndpoint()
 	ResetContainerAnalysisCustomEndpoint()
@@ -1646,6 +1650,26 @@ func (j *jsiiProxy_GoogleProvider) CloudTasksCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"cloudTasksCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ColabCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"colabCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ColabCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"colabCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -4122,7 +4146,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -4140,7 +4164,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -4521,6 +4545,14 @@ func (j *jsiiProxy_GoogleProvider)SetCloudTasksCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"cloudTasksCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetColabCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"colabCustomEndpoint",
 		val,
 	)
 }
@@ -5969,6 +6001,14 @@ func (g *jsiiProxy_GoogleProvider) ResetCloudTasksCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetCloudTasksCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetColabCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetColabCustomEndpoint",
 		nil, // no parameters
 	)
 }

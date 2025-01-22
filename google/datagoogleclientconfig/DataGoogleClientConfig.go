@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/data-sources/client_config google_client_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/data-sources/client_config google_client_config}.
 type DataGoogleClientConfig interface {
 	cdktf.TerraformDataSource
 	AccessToken() *string
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DataGoogleClientConfig) Zone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/data-sources/client_config google_client_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/data-sources/client_config google_client_config} Data Source.
 func NewDataGoogleClientConfig(scope constructs.Construct, id *string, config *DataGoogleClientConfigConfig) DataGoogleClientConfig {
 	_init_.Initialize()
 
@@ -325,7 +325,7 @@ func NewDataGoogleClientConfig(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/data-sources/client_config google_client_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/data-sources/client_config google_client_config} Data Source.
 func NewDataGoogleClientConfig_Override(d DataGoogleClientConfig, scope constructs.Construct, id *string, config *DataGoogleClientConfigConfig) {
 	_init_.Initialize()
 

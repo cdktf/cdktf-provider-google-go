@@ -83,6 +83,10 @@ func (s *jsiiProxy_SqlDatabaseInstance) validatePutReplicaConfigurationParameter
 	return nil
 }
 
+func (s *jsiiProxy_SqlDatabaseInstance) validatePutReplicationClusterParameters(value *SqlDatabaseInstanceReplicationCluster) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlDatabaseInstance) validatePutRestoreBackupContextParameters(value *SqlDatabaseInstanceRestoreBackupContext) error {
 	return nil
 }

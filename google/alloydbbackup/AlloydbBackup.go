@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/alloydb_backup google_alloydb_backup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/alloydb_backup google_alloydb_backup}.
 type AlloydbBackup interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -747,7 +747,7 @@ func (j *jsiiProxy_AlloydbBackup) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/alloydb_backup google_alloydb_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/alloydb_backup google_alloydb_backup} Resource.
 func NewAlloydbBackup(scope constructs.Construct, id *string, config *AlloydbBackupConfig) AlloydbBackup {
 	_init_.Initialize()
 
@@ -765,7 +765,7 @@ func NewAlloydbBackup(scope constructs.Construct, id *string, config *AlloydbBac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/alloydb_backup google_alloydb_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/alloydb_backup google_alloydb_backup} Resource.
 func NewAlloydbBackup_Override(a AlloydbBackup, scope constructs.Construct, id *string, config *AlloydbBackupConfig) {
 	_init_.Initialize()
 

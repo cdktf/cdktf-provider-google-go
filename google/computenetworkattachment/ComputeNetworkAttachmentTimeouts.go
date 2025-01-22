@@ -5,9 +5,9 @@ package computenetworkattachment
 
 
 type ComputeNetworkAttachmentTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/compute_network_attachment#create ComputeNetworkAttachment#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/compute_network_attachment#create ComputeNetworkAttachment#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/compute_network_attachment#delete ComputeNetworkAttachment#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/compute_network_attachment#delete ComputeNetworkAttachment#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

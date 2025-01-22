@@ -9,7 +9,7 @@ type DataprocClusterClusterConfigEndpointConfig struct {
 	//
 	// Defaults to false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/dataproc_cluster#enable_http_port_access DataprocCluster#enable_http_port_access}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/dataproc_cluster#enable_http_port_access DataprocCluster#enable_http_port_access}
 	EnableHttpPortAccess interface{} `field:"required" json:"enableHttpPortAccess" yaml:"enableHttpPortAccess"`
 }
 

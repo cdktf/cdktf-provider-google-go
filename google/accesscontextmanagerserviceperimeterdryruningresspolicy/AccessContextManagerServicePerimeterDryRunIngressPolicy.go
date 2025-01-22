@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/access_context_manager_service_perimeter_dry_run_ingress_policy google_access_context_manager_service_perimeter_dry_run_ingress_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/access_context_manager_service_perimeter_dry_run_ingress_policy google_access_context_manager_service_perimeter_dry_run_ingress_policy}.
 type AccessContextManagerServicePerimeterDryRunIngressPolicy interface {
 	cdktf.TerraformResource
+	AccessPolicyId() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -142,6 +143,16 @@ type AccessContextManagerServicePerimeterDryRunIngressPolicy interface {
 // The jsii proxy struct for AccessContextManagerServicePerimeterDryRunIngressPolicy
 type jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) AccessPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessPolicyId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) CdktfStack() cdktf.TerraformStack {
@@ -405,7 +416,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) Time
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/access_context_manager_service_perimeter_dry_run_ingress_policy google_access_context_manager_service_perimeter_dry_run_ingress_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/access_context_manager_service_perimeter_dry_run_ingress_policy google_access_context_manager_service_perimeter_dry_run_ingress_policy} Resource.
 func NewAccessContextManagerServicePerimeterDryRunIngressPolicy(scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterDryRunIngressPolicyConfig) AccessContextManagerServicePerimeterDryRunIngressPolicy {
 	_init_.Initialize()
 
@@ -423,7 +434,7 @@ func NewAccessContextManagerServicePerimeterDryRunIngressPolicy(scope constructs
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/access_context_manager_service_perimeter_dry_run_ingress_policy google_access_context_manager_service_perimeter_dry_run_ingress_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/access_context_manager_service_perimeter_dry_run_ingress_policy google_access_context_manager_service_perimeter_dry_run_ingress_policy} Resource.
 func NewAccessContextManagerServicePerimeterDryRunIngressPolicy_Override(a AccessContextManagerServicePerimeterDryRunIngressPolicy, scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterDryRunIngressPolicyConfig) {
 	_init_.Initialize()
 

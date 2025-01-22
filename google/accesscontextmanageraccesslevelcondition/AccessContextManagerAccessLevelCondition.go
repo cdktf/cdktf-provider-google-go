@@ -12,12 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition}.
 type AccessContextManagerAccessLevelCondition interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
 	SetAccessLevel(val *string)
 	AccessLevelInput() *string
+	AccessPolicyId() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -179,6 +180,16 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelCondition) AccessLevelInput() 
 	_jsii_.Get(
 		j,
 		"accessLevelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerAccessLevelCondition) AccessPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessPolicyId",
 		&returns,
 	)
 	return returns
@@ -525,7 +536,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelCondition) VpcNetworkSourcesIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
 func NewAccessContextManagerAccessLevelCondition(scope constructs.Construct, id *string, config *AccessContextManagerAccessLevelConditionConfig) AccessContextManagerAccessLevelCondition {
 	_init_.Initialize()
 
@@ -543,7 +554,7 @@ func NewAccessContextManagerAccessLevelCondition(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.16.0/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
 func NewAccessContextManagerAccessLevelCondition_Override(a AccessContextManagerAccessLevelCondition, scope constructs.Construct, id *string, config *AccessContextManagerAccessLevelConditionConfig) {
 	_init_.Initialize()
 
