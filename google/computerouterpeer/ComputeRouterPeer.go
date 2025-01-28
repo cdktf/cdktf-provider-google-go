@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/compute_router_peer google_compute_router_peer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/compute_router_peer google_compute_router_peer}.
 type ComputeRouterPeer interface {
 	cdktf.TerraformResource
 	AdvertisedGroups() *[]*string
@@ -81,6 +81,7 @@ type ComputeRouterPeer interface {
 	Ipv6NexthopAddress() *string
 	SetIpv6NexthopAddress(val *string)
 	Ipv6NexthopAddressInput() *string
+	IsCustomLearnedPrioritySet() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -135,6 +136,9 @@ type ComputeRouterPeer interface {
 	TerraformResourceType() *string
 	Timeouts() ComputeRouterPeerTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	ZeroCustomLearnedRoutePriority() interface{}
+	SetZeroCustomLearnedRoutePriority(val interface{})
+	ZeroCustomLearnedRoutePriorityInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -208,6 +212,7 @@ type ComputeRouterPeer interface {
 	ResetRegion()
 	ResetRouterApplianceInstance()
 	ResetTimeouts()
+	ResetZeroCustomLearnedRoutePriority()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -606,6 +611,16 @@ func (j *jsiiProxy_ComputeRouterPeer) Ipv6NexthopAddressInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) IsCustomLearnedPrioritySet() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isCustomLearnedPrioritySet",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRouterPeer) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -916,8 +931,28 @@ func (j *jsiiProxy_ComputeRouterPeer) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) ZeroCustomLearnedRoutePriority() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zeroCustomLearnedRoutePriority",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
+func (j *jsiiProxy_ComputeRouterPeer) ZeroCustomLearnedRoutePriorityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zeroCustomLearnedRoutePriorityInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
 func NewComputeRouterPeer(scope constructs.Construct, id *string, config *ComputeRouterPeerConfig) ComputeRouterPeer {
 	_init_.Initialize()
 
@@ -935,7 +970,7 @@ func NewComputeRouterPeer(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
 func NewComputeRouterPeer_Override(c ComputeRouterPeer, scope constructs.Construct, id *string, config *ComputeRouterPeerConfig) {
 	_init_.Initialize()
 
@@ -1241,6 +1276,17 @@ func (j *jsiiProxy_ComputeRouterPeer)SetRouterApplianceInstance(val *string) {
 	_jsii_.Set(
 		j,
 		"routerApplianceInstance",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterPeer)SetZeroCustomLearnedRoutePriority(val interface{}) {
+	if err := j.validateSetZeroCustomLearnedRoutePriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zeroCustomLearnedRoutePriority",
 		val,
 	)
 }
@@ -1833,6 +1879,14 @@ func (c *jsiiProxy_ComputeRouterPeer) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterPeer) ResetZeroCustomLearnedRoutePriority() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetZeroCustomLearnedRoutePriority",
 		nil, // no parameters
 	)
 }

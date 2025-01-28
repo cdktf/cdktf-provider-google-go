@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment}.
 type EdgenetworkInterconnectAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -623,7 +623,7 @@ func (j *jsiiProxy_EdgenetworkInterconnectAttachment) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment} Resource.
 func NewEdgenetworkInterconnectAttachment(scope constructs.Construct, id *string, config *EdgenetworkInterconnectAttachmentConfig) EdgenetworkInterconnectAttachment {
 	_init_.Initialize()
 
@@ -641,7 +641,7 @@ func NewEdgenetworkInterconnectAttachment(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment} Resource.
 func NewEdgenetworkInterconnectAttachment_Override(e EdgenetworkInterconnectAttachment, scope constructs.Construct, id *string, config *EdgenetworkInterconnectAttachmentConfig) {
 	_init_.Initialize()
 

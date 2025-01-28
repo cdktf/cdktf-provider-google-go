@@ -7,15 +7,19 @@ package pubsubtopic
 type PubsubTopicIngestionDataSourceSettings struct {
 	// aws_kinesis block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/pubsub_topic#aws_kinesis PubsubTopic#aws_kinesis}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/pubsub_topic#aws_kinesis PubsubTopic#aws_kinesis}
 	AwsKinesis *PubsubTopicIngestionDataSourceSettingsAwsKinesis `field:"optional" json:"awsKinesis" yaml:"awsKinesis"`
+	// azure_event_hubs block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/pubsub_topic#azure_event_hubs PubsubTopic#azure_event_hubs}
+	AzureEventHubs *PubsubTopicIngestionDataSourceSettingsAzureEventHubs `field:"optional" json:"azureEventHubs" yaml:"azureEventHubs"`
 	// cloud_storage block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/pubsub_topic#cloud_storage PubsubTopic#cloud_storage}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/pubsub_topic#cloud_storage PubsubTopic#cloud_storage}
 	CloudStorage *PubsubTopicIngestionDataSourceSettingsCloudStorage `field:"optional" json:"cloudStorage" yaml:"cloudStorage"`
 	// platform_logs_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/pubsub_topic#platform_logs_settings PubsubTopic#platform_logs_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/pubsub_topic#platform_logs_settings PubsubTopic#platform_logs_settings}
 	PlatformLogsSettings *PubsubTopicIngestionDataSourceSettingsPlatformLogsSettings `field:"optional" json:"platformLogsSettings" yaml:"platformLogsSettings"`
 }
 

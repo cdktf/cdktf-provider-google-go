@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy}.
 type PubsubSubscriptionIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_PubsubSubscriptionIamPolicy) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy} Resource.
 func NewPubsubSubscriptionIamPolicy(scope constructs.Construct, id *string, config *PubsubSubscriptionIamPolicyConfig) PubsubSubscriptionIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewPubsubSubscriptionIamPolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/pubsub_subscription_iam_policy google_pubsub_subscription_iam_policy} Resource.
 func NewPubsubSubscriptionIamPolicy_Override(p PubsubSubscriptionIamPolicy, scope constructs.Construct, id *string, config *PubsubSubscriptionIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -39,6 +39,9 @@ type GoogleProvider interface {
 	ApigeeCustomEndpoint() *string
 	SetApigeeCustomEndpoint(val *string)
 	ApigeeCustomEndpointInput() *string
+	ApihubCustomEndpoint() *string
+	SetApihubCustomEndpoint(val *string)
+	ApihubCustomEndpointInput() *string
 	ApikeysCustomEndpoint() *string
 	SetApikeysCustomEndpoint(val *string)
 	ApikeysCustomEndpointInput() *string
@@ -275,6 +278,9 @@ type GoogleProvider interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GeminiCustomEndpoint() *string
+	SetGeminiCustomEndpoint(val *string)
+	GeminiCustomEndpointInput() *string
 	GkeBackupCustomEndpoint() *string
 	SetGkeBackupCustomEndpoint(val *string)
 	GkeBackupCustomEndpointInput() *string
@@ -546,6 +552,7 @@ type GoogleProvider interface {
 	ResetAlias()
 	ResetAlloydbCustomEndpoint()
 	ResetApigeeCustomEndpoint()
+	ResetApihubCustomEndpoint()
 	ResetApikeysCustomEndpoint()
 	ResetAppEngineCustomEndpoint()
 	ResetApphubCustomEndpoint()
@@ -622,6 +629,7 @@ type GoogleProvider interface {
 	ResetFirebaseAppCheckCustomEndpoint()
 	ResetFirebaserulesCustomEndpoint()
 	ResetFirestoreCustomEndpoint()
+	ResetGeminiCustomEndpoint()
 	ResetGkeBackupCustomEndpoint()
 	ResetGkeHub2CustomEndpoint()
 	ResetGkeHubCustomEndpoint()
@@ -880,6 +888,26 @@ func (j *jsiiProxy_GoogleProvider) ApigeeCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"apigeeCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ApihubCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apihubCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ApihubCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apihubCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -2440,6 +2468,26 @@ func (j *jsiiProxy_GoogleProvider) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) GeminiCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"geminiCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) GeminiCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"geminiCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -4146,7 +4194,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -4164,7 +4212,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -4238,6 +4286,14 @@ func (j *jsiiProxy_GoogleProvider)SetApigeeCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"apigeeCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetApihubCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"apihubCustomEndpoint",
 		val,
 	)
 }
@@ -4849,6 +4905,14 @@ func (j *jsiiProxy_GoogleProvider)SetFirestoreCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"firestoreCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetGeminiCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"geminiCustomEndpoint",
 		val,
 	)
 }
@@ -5701,6 +5765,14 @@ func (g *jsiiProxy_GoogleProvider) ResetApigeeCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetApihubCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetApihubCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetApikeysCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6305,6 +6377,14 @@ func (g *jsiiProxy_GoogleProvider) ResetFirestoreCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetFirestoreCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetGeminiCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGeminiCustomEndpoint",
 		nil, // no parameters
 	)
 }

@@ -14,6 +14,7 @@ import (
 type DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	cdktf.ComplexObject
 	AwsKinesis() DataGooglePubsubTopicIngestionDataSourceSettingsAwsKinesisList
+	AzureEventHubs() DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsList
 	CloudStorage() DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageList
 	// the index of the complex object in a list.
 	// Experimental.
@@ -87,6 +88,16 @@ func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsOutputReferen
 	_jsii_.Get(
 		j,
 		"awsKinesis",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsOutputReference) AzureEventHubs() DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsList {
+	var returns DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsList
+	_jsii_.Get(
+		j,
+		"azureEventHubs",
 		&returns,
 	)
 	return returns

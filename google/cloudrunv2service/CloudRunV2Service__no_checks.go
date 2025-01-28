@@ -79,6 +79,10 @@ func (c *jsiiProxy_CloudRunV2Service) validatePutBinaryAuthorizationParameters(v
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunV2Service) validatePutBuildConfigParameters(value *CloudRunV2ServiceBuildConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2Service) validatePutScalingParameters(value *CloudRunV2ServiceScaling) error {
 	return nil
 }

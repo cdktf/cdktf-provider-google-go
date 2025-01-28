@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment}.
 type ComputeInterconnectAttachment interface {
 	cdktf.TerraformResource
 	AdminEnabled() interface{}
@@ -51,6 +51,7 @@ type ComputeInterconnectAttachment interface {
 	EdgeAvailabilityDomain() *string
 	SetEdgeAvailabilityDomain(val *string)
 	EdgeAvailabilityDomainInput() *string
+	EffectiveLabels() cdktf.StringMap
 	Encryption() *string
 	SetEncryption(val *string)
 	EncryptionInput() *string
@@ -72,6 +73,10 @@ type ComputeInterconnectAttachment interface {
 	IpsecInternalAddresses() *[]*string
 	SetIpsecInternalAddresses(val *[]*string)
 	IpsecInternalAddressesInput() *[]*string
+	LabelFingerprint() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -116,6 +121,7 @@ type ComputeInterconnectAttachment interface {
 	SubnetLengthInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -181,6 +187,7 @@ type ComputeInterconnectAttachment interface {
 	ResetId()
 	ResetInterconnect()
 	ResetIpsecInternalAddresses()
+	ResetLabels()
 	ResetMtu()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -410,6 +417,16 @@ func (j *jsiiProxy_ComputeInterconnectAttachment) EdgeAvailabilityDomainInput() 
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInterconnectAttachment) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInterconnectAttachment) Encryption() *string {
 	var returns *string
 	_jsii_.Get(
@@ -525,6 +542,36 @@ func (j *jsiiProxy_ComputeInterconnectAttachment) IpsecInternalAddressesInput() 
 	_jsii_.Get(
 		j,
 		"ipsecInternalAddressesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInterconnectAttachment) LabelFingerprint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"labelFingerprint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInterconnectAttachment) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInterconnectAttachment) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -780,6 +827,16 @@ func (j *jsiiProxy_ComputeInterconnectAttachment) TerraformGeneratorMetadata() *
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInterconnectAttachment) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInterconnectAttachment) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -861,7 +918,7 @@ func (j *jsiiProxy_ComputeInterconnectAttachment) VlanTag8021QInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
 func NewComputeInterconnectAttachment(scope constructs.Construct, id *string, config *ComputeInterconnectAttachmentConfig) ComputeInterconnectAttachment {
 	_init_.Initialize()
 
@@ -879,7 +936,7 @@ func NewComputeInterconnectAttachment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
 func NewComputeInterconnectAttachment_Override(c ComputeInterconnectAttachment, scope constructs.Construct, id *string, config *ComputeInterconnectAttachmentConfig) {
 	_init_.Initialize()
 
@@ -1023,6 +1080,17 @@ func (j *jsiiProxy_ComputeInterconnectAttachment)SetIpsecInternalAddresses(val *
 	_jsii_.Set(
 		j,
 		"ipsecInternalAddresses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInterconnectAttachment)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -1588,6 +1656,14 @@ func (c *jsiiProxy_ComputeInterconnectAttachment) ResetIpsecInternalAddresses() 
 	_jsii_.InvokeVoid(
 		c,
 		"resetIpsecInternalAddresses",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInterconnectAttachment) ResetLabels() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLabels",
 		nil, // no parameters
 	)
 }

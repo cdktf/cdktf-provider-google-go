@@ -348,6 +348,22 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileGroup) validateSetCountParamete
 	return nil
 }
 
+func (j *jsiiProxy_NetworkSecuritySecurityProfileGroup) validateSetCustomInterceptProfileParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkSecuritySecurityProfileGroup) validateSetCustomMirroringProfileParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetworkSecuritySecurityProfileGroup) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

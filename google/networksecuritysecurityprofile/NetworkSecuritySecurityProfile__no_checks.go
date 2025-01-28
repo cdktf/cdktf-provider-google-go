@@ -75,6 +75,14 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfile) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecuritySecurityProfile) validatePutCustomInterceptProfileParameters(value *NetworkSecuritySecurityProfileCustomInterceptProfile) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecuritySecurityProfile) validatePutCustomMirroringProfileParameters(value *NetworkSecuritySecurityProfileCustomMirroringProfile) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecuritySecurityProfile) validatePutThreatPreventionProfileParameters(value *NetworkSecuritySecurityProfileThreatPreventionProfile) error {
 	return nil
 }

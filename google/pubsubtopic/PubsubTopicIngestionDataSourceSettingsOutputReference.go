@@ -15,6 +15,8 @@ type PubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	cdktf.ComplexObject
 	AwsKinesis() PubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference
 	AwsKinesisInput() *PubsubTopicIngestionDataSourceSettingsAwsKinesis
+	AzureEventHubs() PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference
+	AzureEventHubsInput() *PubsubTopicIngestionDataSourceSettingsAzureEventHubs
 	CloudStorage() PubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference
 	CloudStorageInput() *PubsubTopicIngestionDataSourceSettingsCloudStorage
 	// the index of the complex object in a list.
@@ -71,9 +73,11 @@ type PubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAwsKinesis(value *PubsubTopicIngestionDataSourceSettingsAwsKinesis)
+	PutAzureEventHubs(value *PubsubTopicIngestionDataSourceSettingsAzureEventHubs)
 	PutCloudStorage(value *PubsubTopicIngestionDataSourceSettingsCloudStorage)
 	PutPlatformLogsSettings(value *PubsubTopicIngestionDataSourceSettingsPlatformLogsSettings)
 	ResetAwsKinesis()
+	ResetAzureEventHubs()
 	ResetCloudStorage()
 	ResetPlatformLogsSettings()
 	// Produce the Token's value at resolution time.
@@ -106,6 +110,26 @@ func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) AwsKin
 	_jsii_.Get(
 		j,
 		"awsKinesisInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) AzureEventHubs() PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference {
+	var returns PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference
+	_jsii_.Get(
+		j,
+		"azureEventHubs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) AzureEventHubsInput() *PubsubTopicIngestionDataSourceSettingsAzureEventHubs {
+	var returns *PubsubTopicIngestionDataSourceSettingsAzureEventHubs
+	_jsii_.Get(
+		j,
+		"azureEventHubsInput",
 		&returns,
 	)
 	return returns
@@ -501,6 +525,17 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutAws
 	)
 }
 
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutAzureEventHubs(value *PubsubTopicIngestionDataSourceSettingsAzureEventHubs) {
+	if err := p.validatePutAzureEventHubsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putAzureEventHubs",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) PutCloudStorage(value *PubsubTopicIngestionDataSourceSettingsCloudStorage) {
 	if err := p.validatePutCloudStorageParameters(value); err != nil {
 		panic(err)
@@ -527,6 +562,14 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) ResetA
 	_jsii_.InvokeVoid(
 		p,
 		"resetAwsKinesis",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference) ResetAzureEventHubs() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAzureEventHubs",
 		nil, // no parameters
 	)
 }

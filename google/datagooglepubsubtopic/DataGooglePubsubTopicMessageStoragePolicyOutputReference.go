@@ -29,6 +29,7 @@ type DataGooglePubsubTopicMessageStoragePolicyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnforceInTransit() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGooglePubsubTopicMessageStoragePolicy
@@ -115,6 +116,16 @@ func (j *jsiiProxy_DataGooglePubsubTopicMessageStoragePolicyOutputReference) Cre
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGooglePubsubTopicMessageStoragePolicyOutputReference) EnforceInTransit() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enforceInTransit",
 		&returns,
 	)
 	return returns

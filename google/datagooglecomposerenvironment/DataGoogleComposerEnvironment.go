@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/data-sources/composer_environment google_composer_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/data-sources/composer_environment google_composer_environment}.
 type DataGoogleComposerEnvironment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_DataGoogleComposerEnvironment) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/data-sources/composer_environment google_composer_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/data-sources/composer_environment google_composer_environment} Data Source.
 func NewDataGoogleComposerEnvironment(scope constructs.Construct, id *string, config *DataGoogleComposerEnvironmentConfig) DataGoogleComposerEnvironment {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewDataGoogleComposerEnvironment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/data-sources/composer_environment google_composer_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/data-sources/composer_environment google_composer_environment} Data Source.
 func NewDataGoogleComposerEnvironment_Override(d DataGoogleComposerEnvironment, scope constructs.Construct, id *string, config *DataGoogleComposerEnvironmentConfig) {
 	_init_.Initialize()
 

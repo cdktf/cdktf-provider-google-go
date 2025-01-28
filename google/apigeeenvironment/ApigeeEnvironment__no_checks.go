@@ -79,6 +79,10 @@ func (a *jsiiProxy_ApigeeEnvironment) validatePutNodeConfigParameters(value *Api
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeEnvironment) validatePutPropertiesParameters(value *ApigeeEnvironmentProperties) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeEnvironment) validatePutTimeoutsParameters(value *ApigeeEnvironmentTimeouts) error {
 	return nil
 }

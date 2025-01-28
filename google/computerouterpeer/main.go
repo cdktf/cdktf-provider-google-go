@@ -66,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ipv4NexthopAddressInput", GoGetter: "Ipv4NexthopAddressInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ipv6NexthopAddress", GoGetter: "Ipv6NexthopAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "ipv6NexthopAddressInput", GoGetter: "Ipv6NexthopAddressInput"},
+			_jsii_.MemberProperty{JsiiProperty: "isCustomLearnedPrioritySet", GoGetter: "IsCustomLearnedPrioritySet"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "managementType", GoGetter: "ManagementType"},
 			_jsii_.MemberProperty{JsiiProperty: "md5AuthenticationKey", GoGetter: "Md5AuthenticationKey"},
@@ -120,6 +121,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRouterApplianceInstance", GoMethod: "ResetRouterApplianceInstance"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZeroCustomLearnedRoutePriority", GoMethod: "ResetZeroCustomLearnedRoutePriority"},
 			_jsii_.MemberProperty{JsiiProperty: "router", GoGetter: "Router"},
 			_jsii_.MemberProperty{JsiiProperty: "routerApplianceInstance", GoGetter: "RouterApplianceInstance"},
 			_jsii_.MemberProperty{JsiiProperty: "routerApplianceInstanceInput", GoGetter: "RouterApplianceInstanceInput"},
@@ -135,6 +137,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "zeroCustomLearnedRoutePriority", GoGetter: "ZeroCustomLearnedRoutePriority"},
+			_jsii_.MemberProperty{JsiiProperty: "zeroCustomLearnedRoutePriorityInput", GoGetter: "ZeroCustomLearnedRoutePriorityInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRouterPeer{}

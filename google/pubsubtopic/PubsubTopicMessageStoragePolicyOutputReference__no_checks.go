@@ -63,6 +63,10 @@ func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) validateSetEnforceInTransitParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) validateSetInternalValueParameters(val *PubsubTopicMessageStoragePolicy) error {
 	return nil
 }

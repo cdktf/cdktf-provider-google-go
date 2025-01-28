@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/apigee_environment google_apigee_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/apigee_environment google_apigee_environment}.
 type ApigeeEnvironment interface {
 	cdktf.TerraformResource
 	ApiProxyType() *string
@@ -71,6 +71,8 @@ type ApigeeEnvironment interface {
 	OrgId() *string
 	SetOrgId(val *string)
 	OrgIdInput() *string
+	Properties() ApigeeEnvironmentPropertiesOutputReference
+	PropertiesInput() *ApigeeEnvironmentProperties
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -136,6 +138,7 @@ type ApigeeEnvironment interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutNodeConfig(value *ApigeeEnvironmentNodeConfig)
+	PutProperties(value *ApigeeEnvironmentProperties)
 	PutTimeouts(value *ApigeeEnvironmentTimeouts)
 	ResetApiProxyType()
 	ResetDeploymentType()
@@ -147,6 +150,7 @@ type ApigeeEnvironment interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProperties()
 	ResetTimeouts()
 	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
@@ -447,6 +451,26 @@ func (j *jsiiProxy_ApigeeEnvironment) OrgIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ApigeeEnvironment) Properties() ApigeeEnvironmentPropertiesOutputReference {
+	var returns ApigeeEnvironmentPropertiesOutputReference
+	_jsii_.Get(
+		j,
+		"properties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeEnvironment) PropertiesInput() *ApigeeEnvironmentProperties {
+	var returns *ApigeeEnvironmentProperties
+	_jsii_.Get(
+		j,
+		"propertiesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApigeeEnvironment) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -548,7 +572,7 @@ func (j *jsiiProxy_ApigeeEnvironment) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/apigee_environment google_apigee_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/apigee_environment google_apigee_environment} Resource.
 func NewApigeeEnvironment(scope constructs.Construct, id *string, config *ApigeeEnvironmentConfig) ApigeeEnvironment {
 	_init_.Initialize()
 
@@ -566,7 +590,7 @@ func NewApigeeEnvironment(scope constructs.Construct, id *string, config *Apigee
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/apigee_environment google_apigee_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/apigee_environment google_apigee_environment} Resource.
 func NewApigeeEnvironment_Override(a ApigeeEnvironment, scope constructs.Construct, id *string, config *ApigeeEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -1108,6 +1132,17 @@ func (a *jsiiProxy_ApigeeEnvironment) PutNodeConfig(value *ApigeeEnvironmentNode
 	)
 }
 
+func (a *jsiiProxy_ApigeeEnvironment) PutProperties(value *ApigeeEnvironmentProperties) {
+	if err := a.validatePutPropertiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putProperties",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_ApigeeEnvironment) PutTimeouts(value *ApigeeEnvironmentTimeouts) {
 	if err := a.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1179,6 +1214,14 @@ func (a *jsiiProxy_ApigeeEnvironment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApigeeEnvironment) ResetProperties() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetProperties",
 		nil, // no parameters
 	)
 }

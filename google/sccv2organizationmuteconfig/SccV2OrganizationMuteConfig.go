@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/scc_v2_organization_mute_config google_scc_v2_organization_mute_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/scc_v2_organization_mute_config google_scc_v2_organization_mute_config}.
 type SccV2OrganizationMuteConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -518,7 +518,7 @@ func (j *jsiiProxy_SccV2OrganizationMuteConfig) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/scc_v2_organization_mute_config google_scc_v2_organization_mute_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/scc_v2_organization_mute_config google_scc_v2_organization_mute_config} Resource.
 func NewSccV2OrganizationMuteConfig(scope constructs.Construct, id *string, config *SccV2OrganizationMuteConfigConfig) SccV2OrganizationMuteConfig {
 	_init_.Initialize()
 
@@ -536,7 +536,7 @@ func NewSccV2OrganizationMuteConfig(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/scc_v2_organization_mute_config google_scc_v2_organization_mute_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/scc_v2_organization_mute_config google_scc_v2_organization_mute_config} Resource.
 func NewSccV2OrganizationMuteConfig_Override(s SccV2OrganizationMuteConfig, scope constructs.Construct, id *string, config *SccV2OrganizationMuteConfigConfig) {
 	_init_.Initialize()
 

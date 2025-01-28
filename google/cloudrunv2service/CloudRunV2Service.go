@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
 type CloudRunV2Service interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -20,6 +20,8 @@ type CloudRunV2Service interface {
 	AnnotationsInput() *map[string]*string
 	BinaryAuthorization() CloudRunV2ServiceBinaryAuthorizationOutputReference
 	BinaryAuthorizationInput() *CloudRunV2ServiceBinaryAuthorization
+	BuildConfig() CloudRunV2ServiceBuildConfigOutputReference
+	BuildConfigInput() *CloudRunV2ServiceBuildConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Client() *string
@@ -178,12 +180,14 @@ type CloudRunV2Service interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBinaryAuthorization(value *CloudRunV2ServiceBinaryAuthorization)
+	PutBuildConfig(value *CloudRunV2ServiceBuildConfig)
 	PutScaling(value *CloudRunV2ServiceScaling)
 	PutTemplate(value *CloudRunV2ServiceTemplate)
 	PutTimeouts(value *CloudRunV2ServiceTimeouts)
 	PutTraffic(value interface{})
 	ResetAnnotations()
 	ResetBinaryAuthorization()
+	ResetBuildConfig()
 	ResetClient()
 	ResetClientVersion()
 	ResetCustomAudiences()
@@ -254,6 +258,26 @@ func (j *jsiiProxy_CloudRunV2Service) BinaryAuthorizationInput() *CloudRunV2Serv
 	_jsii_.Get(
 		j,
 		"binaryAuthorizationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) BuildConfig() CloudRunV2ServiceBuildConfigOutputReference {
+	var returns CloudRunV2ServiceBuildConfigOutputReference
+	_jsii_.Get(
+		j,
+		"buildConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2Service) BuildConfigInput() *CloudRunV2ServiceBuildConfig {
+	var returns *CloudRunV2ServiceBuildConfig
+	_jsii_.Get(
+		j,
+		"buildConfigInput",
 		&returns,
 	)
 	return returns
@@ -970,7 +994,7 @@ func (j *jsiiProxy_CloudRunV2Service) Urls() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudRunV2ServiceConfig) CloudRunV2Service {
 	_init_.Initialize()
 
@@ -988,7 +1012,7 @@ func NewCloudRunV2Service(scope constructs.Construct, id *string, config *CloudR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewCloudRunV2Service_Override(c CloudRunV2Service, scope constructs.Construct, id *string, config *CloudRunV2ServiceConfig) {
 	_init_.Initialize()
 
@@ -1585,6 +1609,17 @@ func (c *jsiiProxy_CloudRunV2Service) PutBinaryAuthorization(value *CloudRunV2Se
 	)
 }
 
+func (c *jsiiProxy_CloudRunV2Service) PutBuildConfig(value *CloudRunV2ServiceBuildConfig) {
+	if err := c.validatePutBuildConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putBuildConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2Service) PutScaling(value *CloudRunV2ServiceScaling) {
 	if err := c.validatePutScalingParameters(value); err != nil {
 		panic(err)
@@ -1641,6 +1676,14 @@ func (c *jsiiProxy_CloudRunV2Service) ResetBinaryAuthorization() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetBinaryAuthorization",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2Service) ResetBuildConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBuildConfig",
 		nil, // no parameters
 	)
 }

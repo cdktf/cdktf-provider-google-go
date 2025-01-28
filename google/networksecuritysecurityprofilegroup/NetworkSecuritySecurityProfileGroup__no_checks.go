@@ -103,6 +103,14 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileGroup) validateSetCountParamete
 	return nil
 }
 
+func (j *jsiiProxy_NetworkSecuritySecurityProfileGroup) validateSetCustomInterceptProfileParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkSecuritySecurityProfileGroup) validateSetCustomMirroringProfileParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkSecuritySecurityProfileGroup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

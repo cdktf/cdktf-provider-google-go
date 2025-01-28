@@ -195,6 +195,10 @@ func (j *jsiiProxy_AlloydbCluster) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_AlloydbCluster) validateSetSkipAwaitMajorVersionUpgradeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlloydbCluster) validateSetSubscriptionTypeParameters(val *string) error {
 	return nil
 }

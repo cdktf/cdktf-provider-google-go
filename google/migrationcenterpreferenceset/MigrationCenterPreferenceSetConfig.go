@@ -24,36 +24,36 @@ type MigrationCenterPreferenceSetConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Part of 'parent'. See documentation of 'projectsId'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/migration_center_preference_set#location MigrationCenterPreferenceSet#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/migration_center_preference_set#location MigrationCenterPreferenceSet#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// Required.
 	//
 	// User specified ID for the preference set. It will become the last component of the preference set name. The ID must be unique within the project, must conform with RFC-1034, is restricted to lower-cased letters, and has a maximum length of 63 characters. The ID must match the regular expression '[a-z]([a-z0-9-]{0,61}[a-z0-9])?'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/migration_center_preference_set#preference_set_id MigrationCenterPreferenceSet#preference_set_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/migration_center_preference_set#preference_set_id MigrationCenterPreferenceSet#preference_set_id}
 	PreferenceSetId *string `field:"required" json:"preferenceSetId" yaml:"preferenceSetId"`
 	// A description of the preference set.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/migration_center_preference_set#description MigrationCenterPreferenceSet#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/migration_center_preference_set#description MigrationCenterPreferenceSet#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// User-friendly display name. Maximum length is 63 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/migration_center_preference_set#display_name MigrationCenterPreferenceSet#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/migration_center_preference_set#display_name MigrationCenterPreferenceSet#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/migration_center_preference_set#id MigrationCenterPreferenceSet#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/migration_center_preference_set#id MigrationCenterPreferenceSet#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/migration_center_preference_set#project MigrationCenterPreferenceSet#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/migration_center_preference_set#project MigrationCenterPreferenceSet#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/migration_center_preference_set#timeouts MigrationCenterPreferenceSet#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/migration_center_preference_set#timeouts MigrationCenterPreferenceSet#timeouts}
 	Timeouts *MigrationCenterPreferenceSetTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// virtual_machine_preferences block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.17.0/docs/resources/migration_center_preference_set#virtual_machine_preferences MigrationCenterPreferenceSet#virtual_machine_preferences}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/migration_center_preference_set#virtual_machine_preferences MigrationCenterPreferenceSet#virtual_machine_preferences}
 	VirtualMachinePreferences *MigrationCenterPreferenceSetVirtualMachinePreferences `field:"optional" json:"virtualMachinePreferences" yaml:"virtualMachinePreferences"`
 }
 

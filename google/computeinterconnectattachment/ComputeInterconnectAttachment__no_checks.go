@@ -139,6 +139,10 @@ func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetIpsecInternalAddres
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInterconnectAttachment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

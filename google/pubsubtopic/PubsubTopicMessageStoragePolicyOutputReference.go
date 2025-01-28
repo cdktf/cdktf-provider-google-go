@@ -31,6 +31,9 @@ type PubsubTopicMessageStoragePolicyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnforceInTransit() interface{}
+	SetEnforceInTransit(val interface{})
+	EnforceInTransitInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *PubsubTopicMessageStoragePolicy
@@ -67,6 +70,7 @@ type PubsubTopicMessageStoragePolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEnforceInTransit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -127,6 +131,26 @@ func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) CreationStack
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) EnforceInTransit() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enforceInTransit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) EnforceInTransitInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enforceInTransitInput",
 		&returns,
 	)
 	return returns
@@ -229,6 +253,17 @@ func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference)SetComplexObje
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference)SetEnforceInTransit(val interface{}) {
+	if err := j.validateSetEnforceInTransitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enforceInTransit",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) ResetEnforceInTransit() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEnforceInTransit",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
