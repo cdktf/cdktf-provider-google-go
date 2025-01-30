@@ -24,7 +24,7 @@ type ParallelstoreInstanceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required. Immutable. Storage capacity of Parallelstore instance in Gibibytes (GiB).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/parallelstore_instance#capacity_gib ParallelstoreInstance#capacity_gib}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/parallelstore_instance#capacity_gib ParallelstoreInstance#capacity_gib}
 	CapacityGib *string `field:"required" json:"capacityGib" yaml:"capacityGib"`
 	// The logical name of the Parallelstore instance in the user project with the following restrictions:   * Must contain only lowercase letters, numbers, and hyphens.
 	//
@@ -33,19 +33,19 @@ type ParallelstoreInstanceConfig struct {
 	//   * Must end with a number or a letter.
 	//   * Must be unique within the customer project/ location
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/parallelstore_instance#instance_id ParallelstoreInstance#instance_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/parallelstore_instance#instance_id ParallelstoreInstance#instance_id}
 	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
 	// Part of 'parent'. See documentation of 'projectsId'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/parallelstore_instance#location ParallelstoreInstance#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/parallelstore_instance#location ParallelstoreInstance#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// Parallelstore Instance deployment type.   Possible values:   DEPLOYMENT_TYPE_UNSPECIFIED   SCRATCH   PERSISTENT.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/parallelstore_instance#deployment_type ParallelstoreInstance#deployment_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/parallelstore_instance#deployment_type ParallelstoreInstance#deployment_type}
 	DeploymentType *string `field:"optional" json:"deploymentType" yaml:"deploymentType"`
 	// The description of the instance. 2048 characters or less.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/parallelstore_instance#description ParallelstoreInstance#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/parallelstore_instance#description ParallelstoreInstance#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Stripe level for directories.
 	//
@@ -57,7 +57,7 @@ type ParallelstoreInstanceConfig struct {
 	//   DIRECTORY_STRIPE_LEVEL_BALANCED
 	//   DIRECTORY_STRIPE_LEVEL_MAX
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/parallelstore_instance#directory_stripe_level ParallelstoreInstance#directory_stripe_level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/parallelstore_instance#directory_stripe_level ParallelstoreInstance#directory_stripe_level}
 	DirectoryStripeLevel *string `field:"optional" json:"directoryStripeLevel" yaml:"directoryStripeLevel"`
 	// Stripe level for files.
 	//
@@ -69,9 +69,9 @@ type ParallelstoreInstanceConfig struct {
 	//   FILE_STRIPE_LEVEL_BALANCED
 	//   FILE_STRIPE_LEVEL_MAX
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/parallelstore_instance#file_stripe_level ParallelstoreInstance#file_stripe_level}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/parallelstore_instance#file_stripe_level ParallelstoreInstance#file_stripe_level}
 	FileStripeLevel *string `field:"optional" json:"fileStripeLevel" yaml:"fileStripeLevel"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/parallelstore_instance#id ParallelstoreInstance#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/parallelstore_instance#id ParallelstoreInstance#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -102,13 +102,13 @@ type ParallelstoreInstanceConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/parallelstore_instance#labels ParallelstoreInstance#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/parallelstore_instance#labels ParallelstoreInstance#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// Immutable. The name of the Google Compute Engine [VPC network](https://cloud.google.com/vpc/docs/vpc) to which the instance is connected.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/parallelstore_instance#network ParallelstoreInstance#network}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/parallelstore_instance#network ParallelstoreInstance#network}
 	Network *string `field:"optional" json:"network" yaml:"network"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/parallelstore_instance#project ParallelstoreInstance#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/parallelstore_instance#project ParallelstoreInstance#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// Immutable.
 	//
@@ -117,11 +117,11 @@ type ParallelstoreInstanceConfig struct {
 	// associated with IP range 10.0.0.0/29. If no range id is provided all ranges will
 	// be considered.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/parallelstore_instance#reserved_ip_range ParallelstoreInstance#reserved_ip_range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/parallelstore_instance#reserved_ip_range ParallelstoreInstance#reserved_ip_range}
 	ReservedIpRange *string `field:"optional" json:"reservedIpRange" yaml:"reservedIpRange"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/parallelstore_instance#timeouts ParallelstoreInstance#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/parallelstore_instance#timeouts ParallelstoreInstance#timeouts}
 	Timeouts *ParallelstoreInstanceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member}.
 type CloudRunV2JobIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_CloudRunV2JobIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member} Resource.
 func NewCloudRunV2JobIamMember(scope constructs.Construct, id *string, config *CloudRunV2JobIamMemberConfig) CloudRunV2JobIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewCloudRunV2JobIamMember(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member} Resource.
 func NewCloudRunV2JobIamMember_Override(c CloudRunV2JobIamMember, scope constructs.Construct, id *string, config *CloudRunV2JobIamMemberConfig) {
 	_init_.Initialize()
 

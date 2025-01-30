@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/scc_v2_organization_source_iam_policy google_scc_v2_organization_source_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/scc_v2_organization_source_iam_policy google_scc_v2_organization_source_iam_policy}.
 type SccV2OrganizationSourceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_SccV2OrganizationSourceIamPolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/scc_v2_organization_source_iam_policy google_scc_v2_organization_source_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/scc_v2_organization_source_iam_policy google_scc_v2_organization_source_iam_policy} Resource.
 func NewSccV2OrganizationSourceIamPolicy(scope constructs.Construct, id *string, config *SccV2OrganizationSourceIamPolicyConfig) SccV2OrganizationSourceIamPolicy {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewSccV2OrganizationSourceIamPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/scc_v2_organization_source_iam_policy google_scc_v2_organization_source_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/scc_v2_organization_source_iam_policy google_scc_v2_organization_source_iam_policy} Resource.
 func NewSccV2OrganizationSourceIamPolicy_Override(s SccV2OrganizationSourceIamPolicy, scope constructs.Construct, id *string, config *SccV2OrganizationSourceIamPolicyConfig) {
 	_init_.Initialize()
 

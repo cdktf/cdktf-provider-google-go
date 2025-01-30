@@ -24,21 +24,21 @@ type NetworkConnectivityGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the hub. Hub names must be unique. They use the following form: projects/{projectNumber}/locations/global/hubs/{hubId}.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/network_connectivity_group#hub NetworkConnectivityGroup#hub}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/network_connectivity_group#hub NetworkConnectivityGroup#hub}
 	Hub *string `field:"required" json:"hub" yaml:"hub"`
 	// The name of the group. Group names must be unique. Possible values: ["default", "center", "edge"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/network_connectivity_group#name NetworkConnectivityGroup#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/network_connectivity_group#name NetworkConnectivityGroup#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// auto_accept block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/network_connectivity_group#auto_accept NetworkConnectivityGroup#auto_accept}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/network_connectivity_group#auto_accept NetworkConnectivityGroup#auto_accept}
 	AutoAccept *NetworkConnectivityGroupAutoAccept `field:"optional" json:"autoAccept" yaml:"autoAccept"`
 	// An optional description of the group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/network_connectivity_group#description NetworkConnectivityGroup#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/network_connectivity_group#description NetworkConnectivityGroup#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/network_connectivity_group#id NetworkConnectivityGroup#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/network_connectivity_group#id NetworkConnectivityGroup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -48,13 +48,13 @@ type NetworkConnectivityGroupConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/network_connectivity_group#labels NetworkConnectivityGroup#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/network_connectivity_group#labels NetworkConnectivityGroup#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/network_connectivity_group#project NetworkConnectivityGroup#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/network_connectivity_group#project NetworkConnectivityGroup#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.0/docs/resources/network_connectivity_group#timeouts NetworkConnectivityGroup#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/network_connectivity_group#timeouts NetworkConnectivityGroup#timeouts}
 	Timeouts *NetworkConnectivityGroupTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
