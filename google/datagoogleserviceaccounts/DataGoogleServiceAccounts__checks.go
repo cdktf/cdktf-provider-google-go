@@ -227,7 +227,23 @@ func (j *jsiiProxy_DataGoogleServiceAccounts) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleServiceAccounts) validateSetPrefixParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleServiceAccounts) validateSetProjectParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataGoogleServiceAccounts) validateSetRegexParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -83,7 +83,15 @@ func (j *jsiiProxy_DataGoogleServiceAccounts) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleServiceAccounts) validateSetPrefixParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleServiceAccounts) validateSetProjectParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataGoogleServiceAccounts) validateSetRegexParameters(val *string) error {
 	return nil
 }
 

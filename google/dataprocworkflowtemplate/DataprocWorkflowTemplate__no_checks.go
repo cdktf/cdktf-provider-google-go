@@ -75,6 +75,10 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataprocWorkflowTemplate) validatePutEncryptionConfigParameters(value *DataprocWorkflowTemplateEncryptionConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocWorkflowTemplate) validatePutJobsParameters(value interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/workflows_workflow google_workflows_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/workflows_workflow google_workflows_workflow}.
 type WorkflowsWorkflow interface {
 	cdktf.TerraformResource
 	CallLogLevel() *string
@@ -95,6 +95,9 @@ type WorkflowsWorkflow interface {
 	SetSourceContents(val *string)
 	SourceContentsInput() *string
 	State() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -167,6 +170,7 @@ type WorkflowsWorkflow interface {
 	ResetRegion()
 	ResetServiceAccount()
 	ResetSourceContents()
+	ResetTags()
 	ResetTimeouts()
 	ResetUserEnvVars()
 	SynthesizeAttributes() *map[string]interface{}
@@ -597,6 +601,26 @@ func (j *jsiiProxy_WorkflowsWorkflow) State() *string {
 	return returns
 }
 
+func (j *jsiiProxy_WorkflowsWorkflow) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkflowsWorkflow) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WorkflowsWorkflow) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -688,7 +712,7 @@ func (j *jsiiProxy_WorkflowsWorkflow) UserEnvVarsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/workflows_workflow google_workflows_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
 func NewWorkflowsWorkflow(scope constructs.Construct, id *string, config *WorkflowsWorkflowConfig) WorkflowsWorkflow {
 	_init_.Initialize()
 
@@ -706,7 +730,7 @@ func NewWorkflowsWorkflow(scope constructs.Construct, id *string, config *Workfl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/workflows_workflow google_workflows_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
 func NewWorkflowsWorkflow_Override(w WorkflowsWorkflow, scope constructs.Construct, id *string, config *WorkflowsWorkflowConfig) {
 	_init_.Initialize()
 
@@ -913,6 +937,17 @@ func (j *jsiiProxy_WorkflowsWorkflow)SetSourceContents(val *string) {
 	_jsii_.Set(
 		j,
 		"sourceContents",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkflowsWorkflow)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1392,6 +1427,14 @@ func (w *jsiiProxy_WorkflowsWorkflow) ResetSourceContents() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetSourceContents",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkflowsWorkflow) ResetTags() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTags",
 		nil, // no parameters
 	)
 }

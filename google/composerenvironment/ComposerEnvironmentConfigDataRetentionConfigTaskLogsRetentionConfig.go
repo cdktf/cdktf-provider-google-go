@@ -9,7 +9,7 @@ type ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfig struct 
 	//
 	// This field is supported for Cloud Composer environments in versions composer-2.0.32-airflow-2.1.4 and newer.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/composer_environment#storage_mode ComposerEnvironment#storage_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/composer_environment#storage_mode ComposerEnvironment#storage_mode}
 	StorageMode *string `field:"optional" json:"storageMode" yaml:"storageMode"`
 }
 

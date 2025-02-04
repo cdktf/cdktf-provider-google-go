@@ -211,6 +211,10 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetRouterApplianceInstanceParamete
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) validateSetZeroAdvertisedRoutePriorityParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterPeer) validateSetZeroCustomLearnedRoutePriorityParameters(val interface{}) error {
 	return nil
 }

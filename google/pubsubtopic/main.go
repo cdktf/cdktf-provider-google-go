@@ -150,6 +150,50 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAwsMsk",
+		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsAwsMsk)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference",
+		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "awsRoleArn", GoGetter: "AwsRoleArn"},
+			_jsii_.MemberProperty{JsiiProperty: "awsRoleArnInput", GoGetter: "AwsRoleArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "clusterArn", GoGetter: "ClusterArn"},
+			_jsii_.MemberProperty{JsiiProperty: "clusterArnInput", GoGetter: "ClusterArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberProperty{JsiiProperty: "gcpServiceAccount", GoGetter: "GcpServiceAccount"},
+			_jsii_.MemberProperty{JsiiProperty: "gcpServiceAccountInput", GoGetter: "GcpServiceAccountInput"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "topic", GoGetter: "Topic"},
+			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAzureEventHubs",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsAzureEventHubs)(nil)).Elem(),
 	)
@@ -373,12 +417,61 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsConfluentCloud",
+		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsConfluentCloud)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference",
+		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "bootstrapServer", GoGetter: "BootstrapServer"},
+			_jsii_.MemberProperty{JsiiProperty: "bootstrapServerInput", GoGetter: "BootstrapServerInput"},
+			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
+			_jsii_.MemberProperty{JsiiProperty: "clusterIdInput", GoGetter: "ClusterIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberProperty{JsiiProperty: "gcpServiceAccount", GoGetter: "GcpServiceAccount"},
+			_jsii_.MemberProperty{JsiiProperty: "gcpServiceAccountInput", GoGetter: "GcpServiceAccountInput"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "identityPoolId", GoGetter: "IdentityPoolId"},
+			_jsii_.MemberProperty{JsiiProperty: "identityPoolIdInput", GoGetter: "IdentityPoolIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClusterId", GoMethod: "ResetClusterId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "topic", GoGetter: "Topic"},
+			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_PubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsOutputReference",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsKinesis", GoGetter: "AwsKinesis"},
 			_jsii_.MemberProperty{JsiiProperty: "awsKinesisInput", GoGetter: "AwsKinesisInput"},
+			_jsii_.MemberProperty{JsiiProperty: "awsMsk", GoGetter: "AwsMsk"},
+			_jsii_.MemberProperty{JsiiProperty: "awsMskInput", GoGetter: "AwsMskInput"},
 			_jsii_.MemberProperty{JsiiProperty: "azureEventHubs", GoGetter: "AzureEventHubs"},
 			_jsii_.MemberProperty{JsiiProperty: "azureEventHubsInput", GoGetter: "AzureEventHubsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudStorage", GoGetter: "CloudStorage"},
@@ -386,6 +479,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentCloud", GoGetter: "ConfluentCloud"},
+			_jsii_.MemberProperty{JsiiProperty: "confluentCloudInput", GoGetter: "ConfluentCloudInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
@@ -403,12 +498,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "platformLogsSettings", GoGetter: "PlatformLogsSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "platformLogsSettingsInput", GoGetter: "PlatformLogsSettingsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAwsKinesis", GoMethod: "PutAwsKinesis"},
+			_jsii_.MemberMethod{JsiiMethod: "putAwsMsk", GoMethod: "PutAwsMsk"},
 			_jsii_.MemberMethod{JsiiMethod: "putAzureEventHubs", GoMethod: "PutAzureEventHubs"},
 			_jsii_.MemberMethod{JsiiMethod: "putCloudStorage", GoMethod: "PutCloudStorage"},
+			_jsii_.MemberMethod{JsiiMethod: "putConfluentCloud", GoMethod: "PutConfluentCloud"},
 			_jsii_.MemberMethod{JsiiMethod: "putPlatformLogsSettings", GoMethod: "PutPlatformLogsSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsKinesis", GoMethod: "ResetAwsKinesis"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAwsMsk", GoMethod: "ResetAwsMsk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAzureEventHubs", GoMethod: "ResetAzureEventHubs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudStorage", GoMethod: "ResetCloudStorage"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConfluentCloud", GoMethod: "ResetConfluentCloud"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPlatformLogsSettings", GoMethod: "ResetPlatformLogsSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

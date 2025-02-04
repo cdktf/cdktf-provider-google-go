@@ -175,6 +175,10 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetMachine
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetMaxRunDurationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetMetadataParameters(val *map[string]*string) error {
 	return nil
 }

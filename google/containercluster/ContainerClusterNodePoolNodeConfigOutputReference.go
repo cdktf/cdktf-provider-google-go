@@ -87,6 +87,9 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	MachineType() *string
 	SetMachineType(val *string)
 	MachineTypeInput() *string
+	MaxRunDuration() *string
+	SetMaxRunDuration(val *string)
+	MaxRunDurationInput() *string
 	Metadata() *map[string]*string
 	SetMetadata(val *map[string]*string)
 	MetadataInput() *map[string]*string
@@ -204,6 +207,7 @@ type ContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetLocalSsdEncryptionMode()
 	ResetLoggingVariant()
 	ResetMachineType()
+	ResetMaxRunDuration()
 	ResetMetadata()
 	ResetMinCpuPlatform()
 	ResetNodeGroup()
@@ -736,6 +740,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) MachineTyp
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) MaxRunDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxRunDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) MaxRunDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxRunDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) Metadata() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -1263,6 +1287,17 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference)SetMachineT
 	_jsii_.Set(
 		j,
 		"machineType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference)SetMaxRunDuration(val *string) {
+	if err := j.validateSetMaxRunDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxRunDuration",
 		val,
 	)
 }
@@ -1966,6 +2001,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetMachi
 	_jsii_.InvokeVoid(
 		c,
 		"resetMachineType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference) ResetMaxRunDuration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaxRunDuration",
 		nil, // no parameters
 	)
 }

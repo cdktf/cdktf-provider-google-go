@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/dataproc_workflow_template google_dataproc_workflow_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/dataproc_workflow_template google_dataproc_workflow_template}.
 type DataprocWorkflowTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -36,6 +36,8 @@ type DataprocWorkflowTemplate interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EffectiveLabels() cdktf.StringMap
+	EncryptionConfig() DataprocWorkflowTemplateEncryptionConfigOutputReference
+	EncryptionConfigInput() *DataprocWorkflowTemplateEncryptionConfig
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -137,11 +139,13 @@ type DataprocWorkflowTemplate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionConfig(value *DataprocWorkflowTemplateEncryptionConfig)
 	PutJobs(value interface{})
 	PutParameters(value interface{})
 	PutPlacement(value *DataprocWorkflowTemplatePlacement)
 	PutTimeouts(value *DataprocWorkflowTemplateTimeouts)
 	ResetDagTimeout()
+	ResetEncryptionConfig()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -254,6 +258,26 @@ func (j *jsiiProxy_DataprocWorkflowTemplate) EffectiveLabels() cdktf.StringMap {
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocWorkflowTemplate) EncryptionConfig() DataprocWorkflowTemplateEncryptionConfigOutputReference {
+	var returns DataprocWorkflowTemplateEncryptionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocWorkflowTemplate) EncryptionConfigInput() *DataprocWorkflowTemplateEncryptionConfig {
+	var returns *DataprocWorkflowTemplateEncryptionConfig
+	_jsii_.Get(
+		j,
+		"encryptionConfigInput",
 		&returns,
 	)
 	return returns
@@ -590,7 +614,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate) VersionInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/dataproc_workflow_template google_dataproc_workflow_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/dataproc_workflow_template google_dataproc_workflow_template} Resource.
 func NewDataprocWorkflowTemplate(scope constructs.Construct, id *string, config *DataprocWorkflowTemplateConfig) DataprocWorkflowTemplate {
 	_init_.Initialize()
 
@@ -608,7 +632,7 @@ func NewDataprocWorkflowTemplate(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/dataproc_workflow_template google_dataproc_workflow_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/dataproc_workflow_template google_dataproc_workflow_template} Resource.
 func NewDataprocWorkflowTemplate_Override(d DataprocWorkflowTemplate, scope constructs.Construct, id *string, config *DataprocWorkflowTemplateConfig) {
 	_init_.Initialize()
 
@@ -1117,6 +1141,17 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (d *jsiiProxy_DataprocWorkflowTemplate) PutEncryptionConfig(value *DataprocWorkflowTemplateEncryptionConfig) {
+	if err := d.validatePutEncryptionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putEncryptionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataprocWorkflowTemplate) PutJobs(value interface{}) {
 	if err := d.validatePutJobsParameters(value); err != nil {
 		panic(err)
@@ -1165,6 +1200,14 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) ResetDagTimeout() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDagTimeout",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocWorkflowTemplate) ResetEncryptionConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEncryptionConfig",
 		nil, // no parameters
 	)
 }

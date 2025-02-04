@@ -155,6 +155,10 @@ func (j *jsiiProxy_ComputeNetwork) validateSetNetworkFirewallPolicyEnforcementOr
 	return nil
 }
 
+func (j *jsiiProxy_ComputeNetwork) validateSetNetworkProfileParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeNetwork) validateSetProjectParameters(val *string) error {
 	return nil
 }

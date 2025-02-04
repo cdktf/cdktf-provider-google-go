@@ -55,6 +55,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	LocalSsdEncryptionMode() *string
 	LoggingVariant() *string
 	MachineType() *string
+	MaxRunDuration() *string
 	Metadata() cdktf.StringMap
 	MinCpuPlatform() *string
 	NodeGroup() *string
@@ -394,6 +395,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"machineType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) MaxRunDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxRunDuration",
 		&returns,
 	)
 	return returns

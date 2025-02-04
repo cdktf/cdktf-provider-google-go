@@ -159,6 +159,10 @@ func (j *jsiiProxy_WorkflowsWorkflow) validateSetSourceContentsParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_WorkflowsWorkflow) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkflowsWorkflow) validateSetUserEnvVarsParameters(val *map[string]*string) error {
 	return nil
 }

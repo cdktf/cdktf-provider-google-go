@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/spanner_backup_schedule google_spanner_backup_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/spanner_backup_schedule google_spanner_backup_schedule}.
 type SpannerBackupSchedule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,8 @@ type SpannerBackupSchedule interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionConfig() SpannerBackupScheduleEncryptionConfigOutputReference
+	EncryptionConfigInput() *SpannerBackupScheduleEncryptionConfig
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -130,10 +132,12 @@ type SpannerBackupSchedule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionConfig(value *SpannerBackupScheduleEncryptionConfig)
 	PutFullBackupSpec(value *SpannerBackupScheduleFullBackupSpec)
 	PutIncrementalBackupSpec(value *SpannerBackupScheduleIncrementalBackupSpec)
 	PutSpec(value *SpannerBackupScheduleSpec)
 	PutTimeouts(value *SpannerBackupScheduleTimeouts)
+	ResetEncryptionConfig()
 	ResetFullBackupSpec()
 	ResetId()
 	ResetIncrementalBackupSpec()
@@ -227,6 +231,26 @@ func (j *jsiiProxy_SpannerBackupSchedule) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpannerBackupSchedule) EncryptionConfig() SpannerBackupScheduleEncryptionConfigOutputReference {
+	var returns SpannerBackupScheduleEncryptionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpannerBackupSchedule) EncryptionConfigInput() *SpannerBackupScheduleEncryptionConfig {
+	var returns *SpannerBackupScheduleEncryptionConfig
+	_jsii_.Get(
+		j,
+		"encryptionConfigInput",
 		&returns,
 	)
 	return returns
@@ -523,7 +547,7 @@ func (j *jsiiProxy_SpannerBackupSchedule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/spanner_backup_schedule google_spanner_backup_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/spanner_backup_schedule google_spanner_backup_schedule} Resource.
 func NewSpannerBackupSchedule(scope constructs.Construct, id *string, config *SpannerBackupScheduleConfig) SpannerBackupSchedule {
 	_init_.Initialize()
 
@@ -541,7 +565,7 @@ func NewSpannerBackupSchedule(scope constructs.Construct, id *string, config *Sp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/spanner_backup_schedule google_spanner_backup_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/spanner_backup_schedule google_spanner_backup_schedule} Resource.
 func NewSpannerBackupSchedule_Override(s SpannerBackupSchedule, scope constructs.Construct, id *string, config *SpannerBackupScheduleConfig) {
 	_init_.Initialize()
 
@@ -1039,6 +1063,17 @@ func (s *jsiiProxy_SpannerBackupSchedule) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (s *jsiiProxy_SpannerBackupSchedule) PutEncryptionConfig(value *SpannerBackupScheduleEncryptionConfig) {
+	if err := s.validatePutEncryptionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putEncryptionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SpannerBackupSchedule) PutFullBackupSpec(value *SpannerBackupScheduleFullBackupSpec) {
 	if err := s.validatePutFullBackupSpecParameters(value); err != nil {
 		panic(err)
@@ -1080,6 +1115,14 @@ func (s *jsiiProxy_SpannerBackupSchedule) PutTimeouts(value *SpannerBackupSchedu
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SpannerBackupSchedule) ResetEncryptionConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEncryptionConfig",
+		nil, // no parameters
 	)
 }
 

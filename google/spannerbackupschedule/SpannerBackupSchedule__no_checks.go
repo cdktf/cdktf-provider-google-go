@@ -75,6 +75,10 @@ func (s *jsiiProxy_SpannerBackupSchedule) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (s *jsiiProxy_SpannerBackupSchedule) validatePutEncryptionConfigParameters(value *SpannerBackupScheduleEncryptionConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpannerBackupSchedule) validatePutFullBackupSpecParameters(value *SpannerBackupScheduleFullBackupSpec) error {
 	return nil
 }

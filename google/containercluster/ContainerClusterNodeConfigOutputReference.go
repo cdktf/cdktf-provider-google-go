@@ -87,6 +87,9 @@ type ContainerClusterNodeConfigOutputReference interface {
 	MachineType() *string
 	SetMachineType(val *string)
 	MachineTypeInput() *string
+	MaxRunDuration() *string
+	SetMaxRunDuration(val *string)
+	MaxRunDurationInput() *string
 	Metadata() *map[string]*string
 	SetMetadata(val *map[string]*string)
 	MetadataInput() *map[string]*string
@@ -204,6 +207,7 @@ type ContainerClusterNodeConfigOutputReference interface {
 	ResetLocalSsdEncryptionMode()
 	ResetLoggingVariant()
 	ResetMachineType()
+	ResetMaxRunDuration()
 	ResetMetadata()
 	ResetMinCpuPlatform()
 	ResetNodeGroup()
@@ -736,6 +740,26 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) MachineTypeInput()
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) MaxRunDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxRunDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) MaxRunDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxRunDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) Metadata() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -1263,6 +1287,17 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference)SetMachineType(val 
 	_jsii_.Set(
 		j,
 		"machineType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference)SetMaxRunDuration(val *string) {
+	if err := j.validateSetMaxRunDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxRunDuration",
 		val,
 	)
 }
@@ -1966,6 +2001,14 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetMachineType()
 	_jsii_.InvokeVoid(
 		c,
 		"resetMachineType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetMaxRunDuration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaxRunDuration",
 		nil, // no parameters
 	)
 }

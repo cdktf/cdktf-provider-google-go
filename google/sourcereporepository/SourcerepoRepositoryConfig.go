@@ -24,26 +24,26 @@ type SourcerepoRepositoryConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Resource name of the repository, of the form '{{repo}}'. The repo name may contain slashes. eg, 'name/with/slash'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/sourcerepo_repository#name SourcerepoRepository#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/sourcerepo_repository#name SourcerepoRepository#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// If set to true, skip repository creation if a repository with the same name already exists.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/sourcerepo_repository#create_ignore_already_exists SourcerepoRepository#create_ignore_already_exists}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/sourcerepo_repository#create_ignore_already_exists SourcerepoRepository#create_ignore_already_exists}
 	CreateIgnoreAlreadyExists interface{} `field:"optional" json:"createIgnoreAlreadyExists" yaml:"createIgnoreAlreadyExists"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/sourcerepo_repository#id SourcerepoRepository#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/sourcerepo_repository#id SourcerepoRepository#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/sourcerepo_repository#project SourcerepoRepository#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/sourcerepo_repository#project SourcerepoRepository#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// pubsub_configs block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/sourcerepo_repository#pubsub_configs SourcerepoRepository#pubsub_configs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/sourcerepo_repository#pubsub_configs SourcerepoRepository#pubsub_configs}
 	PubsubConfigs interface{} `field:"optional" json:"pubsubConfigs" yaml:"pubsubConfigs"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/sourcerepo_repository#timeouts SourcerepoRepository#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/sourcerepo_repository#timeouts SourcerepoRepository#timeouts}
 	Timeouts *SourcerepoRepositoryTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

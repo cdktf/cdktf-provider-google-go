@@ -73,7 +73,6 @@ type ContainerClusterClusterAutoscalingResourceLimitsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetMaximum()
 	ResetMinimum()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -520,14 +519,6 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsOutputReferen
 	)
 
 	return returns
-}
-
-func (c *jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsOutputReference) ResetMaximum() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetMaximum",
-		nil, // no parameters
-	)
 }
 
 func (c *jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsOutputReference) ResetMinimum() {

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/data-sources/service_accounts google_service_accounts}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/data-sources/service_accounts google_service_accounts}.
 type DataGoogleServiceAccounts interface {
 	cdktf.TerraformDataSource
 	Accounts() DataGoogleServiceAccountsAccountsList
@@ -45,6 +45,9 @@ type DataGoogleServiceAccounts interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Prefix() *string
+	SetPrefix(val *string)
+	PrefixInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -54,6 +57,9 @@ type DataGoogleServiceAccounts interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Regex() *string
+	SetRegex(val *string)
+	RegexInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -89,7 +95,9 @@ type DataGoogleServiceAccounts interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrefix()
 	ResetProject()
+	ResetRegex()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -229,6 +237,26 @@ func (j *jsiiProxy_DataGoogleServiceAccounts) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleServiceAccounts) Prefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"prefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleServiceAccounts) PrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"prefixInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleServiceAccounts) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -269,6 +297,26 @@ func (j *jsiiProxy_DataGoogleServiceAccounts) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleServiceAccounts) Regex() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleServiceAccounts) RegexInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regexInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleServiceAccounts) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -300,7 +348,7 @@ func (j *jsiiProxy_DataGoogleServiceAccounts) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/data-sources/service_accounts google_service_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/data-sources/service_accounts google_service_accounts} Data Source.
 func NewDataGoogleServiceAccounts(scope constructs.Construct, id *string, config *DataGoogleServiceAccountsConfig) DataGoogleServiceAccounts {
 	_init_.Initialize()
 
@@ -318,7 +366,7 @@ func NewDataGoogleServiceAccounts(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/data-sources/service_accounts google_service_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/data-sources/service_accounts google_service_accounts} Data Source.
 func NewDataGoogleServiceAccounts_Override(d DataGoogleServiceAccounts, scope constructs.Construct, id *string, config *DataGoogleServiceAccountsConfig) {
 	_init_.Initialize()
 
@@ -378,6 +426,17 @@ func (j *jsiiProxy_DataGoogleServiceAccounts)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
+func (j *jsiiProxy_DataGoogleServiceAccounts)SetPrefix(val *string) {
+	if err := j.validateSetPrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"prefix",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataGoogleServiceAccounts)SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
@@ -393,6 +452,17 @@ func (j *jsiiProxy_DataGoogleServiceAccounts)SetProvider(val cdktf.TerraformProv
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGoogleServiceAccounts)SetRegex(val *string) {
+	if err := j.validateSetRegexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"regex",
 		val,
 	)
 }
@@ -698,10 +768,26 @@ func (d *jsiiProxy_DataGoogleServiceAccounts) ResetOverrideLogicalId() {
 	)
 }
 
+func (d *jsiiProxy_DataGoogleServiceAccounts) ResetPrefix() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrefix",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataGoogleServiceAccounts) ResetProject() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGoogleServiceAccounts) ResetRegex() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRegex",
 		nil, // no parameters
 	)
 }

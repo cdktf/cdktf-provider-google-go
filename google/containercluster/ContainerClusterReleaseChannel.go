@@ -14,7 +14,7 @@ type ContainerClusterReleaseChannel struct {
 	// * STABLE: Every few months upgrade cadence; Production users who need stability above all else, and for whom frequent upgrades are too risky.
 	// * EXTENDED: GKE provides extended support for Kubernetes minor versions through the Extended channel. With this channel, you can stay on a minor version for up to 24 months.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/container_cluster#channel ContainerCluster#channel}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/container_cluster#channel ContainerCluster#channel}
 	Channel *string `field:"required" json:"channel" yaml:"channel"`
 }
 

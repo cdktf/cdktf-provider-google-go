@@ -34,6 +34,7 @@ type DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOu
 	Git() DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitList
 	InternalValue() *DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSync
 	SetInternalValue(val *DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSync)
+	MetricsGcpServiceAccountEmail() *string
 	Oci() DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOciList
 	PreventDrift() cdktf.IResolvable
 	SourceFormat() *string
@@ -149,6 +150,16 @@ func (j *jsiiProxy_DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanageme
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) MetricsGcpServiceAccountEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"metricsGcpServiceAccountEmail",
 		&returns,
 	)
 	return returns

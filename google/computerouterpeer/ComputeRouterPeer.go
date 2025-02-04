@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/compute_router_peer google_compute_router_peer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/compute_router_peer google_compute_router_peer}.
 type ComputeRouterPeer interface {
 	cdktf.TerraformResource
 	AdvertisedGroups() *[]*string
@@ -81,6 +81,7 @@ type ComputeRouterPeer interface {
 	Ipv6NexthopAddress() *string
 	SetIpv6NexthopAddress(val *string)
 	Ipv6NexthopAddressInput() *string
+	IsAdvertisedRoutePrioritySet() cdktf.IResolvable
 	IsCustomLearnedPrioritySet() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -136,6 +137,9 @@ type ComputeRouterPeer interface {
 	TerraformResourceType() *string
 	Timeouts() ComputeRouterPeerTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	ZeroAdvertisedRoutePriority() interface{}
+	SetZeroAdvertisedRoutePriority(val interface{})
+	ZeroAdvertisedRoutePriorityInput() interface{}
 	ZeroCustomLearnedRoutePriority() interface{}
 	SetZeroCustomLearnedRoutePriority(val interface{})
 	ZeroCustomLearnedRoutePriorityInput() interface{}
@@ -212,6 +216,7 @@ type ComputeRouterPeer interface {
 	ResetRegion()
 	ResetRouterApplianceInstance()
 	ResetTimeouts()
+	ResetZeroAdvertisedRoutePriority()
 	ResetZeroCustomLearnedRoutePriority()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -611,6 +616,16 @@ func (j *jsiiProxy_ComputeRouterPeer) Ipv6NexthopAddressInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) IsAdvertisedRoutePrioritySet() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isAdvertisedRoutePrioritySet",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRouterPeer) IsCustomLearnedPrioritySet() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -931,6 +946,26 @@ func (j *jsiiProxy_ComputeRouterPeer) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) ZeroAdvertisedRoutePriority() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zeroAdvertisedRoutePriority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) ZeroAdvertisedRoutePriorityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"zeroAdvertisedRoutePriorityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRouterPeer) ZeroCustomLearnedRoutePriority() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -952,7 +987,7 @@ func (j *jsiiProxy_ComputeRouterPeer) ZeroCustomLearnedRoutePriorityInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
 func NewComputeRouterPeer(scope constructs.Construct, id *string, config *ComputeRouterPeerConfig) ComputeRouterPeer {
 	_init_.Initialize()
 
@@ -970,7 +1005,7 @@ func NewComputeRouterPeer(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.18.1/docs/resources/compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
 func NewComputeRouterPeer_Override(c ComputeRouterPeer, scope constructs.Construct, id *string, config *ComputeRouterPeerConfig) {
 	_init_.Initialize()
 
@@ -1276,6 +1311,17 @@ func (j *jsiiProxy_ComputeRouterPeer)SetRouterApplianceInstance(val *string) {
 	_jsii_.Set(
 		j,
 		"routerApplianceInstance",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterPeer)SetZeroAdvertisedRoutePriority(val interface{}) {
+	if err := j.validateSetZeroAdvertisedRoutePriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zeroAdvertisedRoutePriority",
 		val,
 	)
 }
@@ -1879,6 +1925,14 @@ func (c *jsiiProxy_ComputeRouterPeer) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterPeer) ResetZeroAdvertisedRoutePriority() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetZeroAdvertisedRoutePriority",
 		nil, // no parameters
 	)
 }
