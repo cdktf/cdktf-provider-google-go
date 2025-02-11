@@ -198,6 +198,14 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusEgressPoliciesEgres
 	return nil
 }
 
+func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesOutputReference) validateSetResourceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/colab_runtime_template google_colab_runtime_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/colab_runtime_template google_colab_runtime_template}.
 type ColabRuntimeTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -94,6 +94,8 @@ type ColabRuntimeTemplate interface {
 	RawOverrides() interface{}
 	ShieldedVmConfig() ColabRuntimeTemplateShieldedVmConfigOutputReference
 	ShieldedVmConfigInput() *ColabRuntimeTemplateShieldedVmConfig
+	SoftwareConfig() ColabRuntimeTemplateSoftwareConfigOutputReference
+	SoftwareConfigInput() *ColabRuntimeTemplateSoftwareConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -153,6 +155,7 @@ type ColabRuntimeTemplate interface {
 	PutMachineSpec(value *ColabRuntimeTemplateMachineSpec)
 	PutNetworkSpec(value *ColabRuntimeTemplateNetworkSpec)
 	PutShieldedVmConfig(value *ColabRuntimeTemplateShieldedVmConfig)
+	PutSoftwareConfig(value *ColabRuntimeTemplateSoftwareConfig)
 	PutTimeouts(value *ColabRuntimeTemplateTimeouts)
 	ResetDataPersistentDiskSpec()
 	ResetDescription()
@@ -170,6 +173,7 @@ type ColabRuntimeTemplate interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetShieldedVmConfig()
+	ResetSoftwareConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -629,6 +633,26 @@ func (j *jsiiProxy_ColabRuntimeTemplate) ShieldedVmConfigInput() *ColabRuntimeTe
 	return returns
 }
 
+func (j *jsiiProxy_ColabRuntimeTemplate) SoftwareConfig() ColabRuntimeTemplateSoftwareConfigOutputReference {
+	var returns ColabRuntimeTemplateSoftwareConfigOutputReference
+	_jsii_.Get(
+		j,
+		"softwareConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ColabRuntimeTemplate) SoftwareConfigInput() *ColabRuntimeTemplateSoftwareConfig {
+	var returns *ColabRuntimeTemplateSoftwareConfig
+	_jsii_.Get(
+		j,
+		"softwareConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ColabRuntimeTemplate) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -690,7 +714,7 @@ func (j *jsiiProxy_ColabRuntimeTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/colab_runtime_template google_colab_runtime_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/colab_runtime_template google_colab_runtime_template} Resource.
 func NewColabRuntimeTemplate(scope constructs.Construct, id *string, config *ColabRuntimeTemplateConfig) ColabRuntimeTemplate {
 	_init_.Initialize()
 
@@ -708,7 +732,7 @@ func NewColabRuntimeTemplate(scope constructs.Construct, id *string, config *Col
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/colab_runtime_template google_colab_runtime_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/colab_runtime_template google_colab_runtime_template} Resource.
 func NewColabRuntimeTemplate_Override(c ColabRuntimeTemplate, scope constructs.Construct, id *string, config *ColabRuntimeTemplateConfig) {
 	_init_.Initialize()
 
@@ -1305,6 +1329,17 @@ func (c *jsiiProxy_ColabRuntimeTemplate) PutShieldedVmConfig(value *ColabRuntime
 	)
 }
 
+func (c *jsiiProxy_ColabRuntimeTemplate) PutSoftwareConfig(value *ColabRuntimeTemplateSoftwareConfig) {
+	if err := c.validatePutSoftwareConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSoftwareConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ColabRuntimeTemplate) PutTimeouts(value *ColabRuntimeTemplateTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1424,6 +1459,14 @@ func (c *jsiiProxy_ColabRuntimeTemplate) ResetShieldedVmConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetShieldedVmConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ColabRuntimeTemplate) ResetSoftwareConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSoftwareConfig",
 		nil, // no parameters
 	)
 }

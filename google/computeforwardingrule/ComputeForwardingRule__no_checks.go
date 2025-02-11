@@ -135,6 +135,10 @@ func (j *jsiiProxy_ComputeForwardingRule) validateSetIpAddressParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_ComputeForwardingRule) validateSetIpCollectionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeForwardingRule) validateSetIpProtocolParameters(val *string) error {
 	return nil
 }

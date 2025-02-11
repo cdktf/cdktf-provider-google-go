@@ -59,6 +59,10 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOut
 	return nil
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputReference) validatePutRouteMethodsParameters(value *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethods) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputReference) validatePutUrlRedirectParameters(value *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirect) error {
 	return nil
 }

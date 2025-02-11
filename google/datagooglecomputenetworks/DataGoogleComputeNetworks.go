@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/data-sources/compute_networks google_compute_networks}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/data-sources/compute_networks google_compute_networks}.
 type DataGoogleComputeNetworks interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -311,7 +311,7 @@ func (j *jsiiProxy_DataGoogleComputeNetworks) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/data-sources/compute_networks google_compute_networks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/data-sources/compute_networks google_compute_networks} Data Source.
 func NewDataGoogleComputeNetworks(scope constructs.Construct, id *string, config *DataGoogleComputeNetworksConfig) DataGoogleComputeNetworks {
 	_init_.Initialize()
 
@@ -329,7 +329,7 @@ func NewDataGoogleComputeNetworks(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/data-sources/compute_networks google_compute_networks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/data-sources/compute_networks google_compute_networks} Data Source.
 func NewDataGoogleComputeNetworks_Override(d DataGoogleComputeNetworks, scope constructs.Construct, id *string, config *DataGoogleComputeNetworksConfig) {
 	_init_.Initialize()
 

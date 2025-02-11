@@ -79,6 +79,10 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validateSetBaseImageUriParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) validateSetCommandParameters(val *[]*string) error {
 	return nil
 }

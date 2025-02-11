@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/compute_resize_request google_compute_resize_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/compute_resize_request google_compute_resize_request}.
 type ComputeResizeRequest interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -142,6 +142,7 @@ type ComputeResizeRequest interface {
 	ResetProject()
 	ResetRequestedRunDuration()
 	ResetTimeouts()
+	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -531,7 +532,7 @@ func (j *jsiiProxy_ComputeResizeRequest) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/compute_resize_request google_compute_resize_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/compute_resize_request google_compute_resize_request} Resource.
 func NewComputeResizeRequest(scope constructs.Construct, id *string, config *ComputeResizeRequestConfig) ComputeResizeRequest {
 	_init_.Initialize()
 
@@ -549,7 +550,7 @@ func NewComputeResizeRequest(scope constructs.Construct, id *string, config *Com
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/compute_resize_request google_compute_resize_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/compute_resize_request google_compute_resize_request} Resource.
 func NewComputeResizeRequest_Override(c ComputeResizeRequest, scope constructs.Construct, id *string, config *ComputeResizeRequestConfig) {
 	_init_.Initialize()
 
@@ -1124,6 +1125,14 @@ func (c *jsiiProxy_ComputeResizeRequest) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeResizeRequest) ResetZone() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetZone",
 		nil, // no parameters
 	)
 }

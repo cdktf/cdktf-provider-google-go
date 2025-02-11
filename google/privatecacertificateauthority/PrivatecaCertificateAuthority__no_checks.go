@@ -91,6 +91,10 @@ func (p *jsiiProxy_PrivatecaCertificateAuthority) validatePutTimeoutsParameters(
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCertificateAuthority) validatePutUserDefinedAccessUrlsParameters(value *PrivatecaCertificateAuthorityUserDefinedAccessUrls) error {
+	return nil
+}
+
 func validatePrivatecaCertificateAuthority_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

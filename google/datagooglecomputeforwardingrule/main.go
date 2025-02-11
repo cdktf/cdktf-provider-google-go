@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ipAddress", GoGetter: "IpAddress"},
+			_jsii_.MemberProperty{JsiiProperty: "ipCollection", GoGetter: "IpCollection"},
 			_jsii_.MemberProperty{JsiiProperty: "ipProtocol", GoGetter: "IpProtocol"},
 			_jsii_.MemberProperty{JsiiProperty: "ipVersion", GoGetter: "IpVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "isMirroringCollector", GoGetter: "IsMirroringCollector"},

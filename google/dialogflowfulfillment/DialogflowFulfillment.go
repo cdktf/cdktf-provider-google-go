@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/dialogflow_fulfillment google_dialogflow_fulfillment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/dialogflow_fulfillment google_dialogflow_fulfillment}.
 type DialogflowFulfillment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -464,7 +464,7 @@ func (j *jsiiProxy_DialogflowFulfillment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/dialogflow_fulfillment google_dialogflow_fulfillment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/dialogflow_fulfillment google_dialogflow_fulfillment} Resource.
 func NewDialogflowFulfillment(scope constructs.Construct, id *string, config *DialogflowFulfillmentConfig) DialogflowFulfillment {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewDialogflowFulfillment(scope constructs.Construct, id *string, config *Di
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/dialogflow_fulfillment google_dialogflow_fulfillment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/dialogflow_fulfillment google_dialogflow_fulfillment} Resource.
 func NewDialogflowFulfillment_Override(d DialogflowFulfillment, scope constructs.Construct, id *string, config *DialogflowFulfillmentConfig) {
 	_init_.Initialize()
 

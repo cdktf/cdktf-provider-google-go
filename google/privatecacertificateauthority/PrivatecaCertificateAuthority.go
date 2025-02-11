@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/privateca_certificate_authority google_privateca_certificate_authority}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/privateca_certificate_authority google_privateca_certificate_authority}.
 type PrivatecaCertificateAuthority interface {
 	cdktf.TerraformResource
 	AccessUrls() PrivatecaCertificateAuthorityAccessUrlsList
@@ -119,6 +119,8 @@ type PrivatecaCertificateAuthority interface {
 	SetType(val *string)
 	TypeInput() *string
 	UpdateTime() *string
+	UserDefinedAccessUrls() PrivatecaCertificateAuthorityUserDefinedAccessUrlsOutputReference
+	UserDefinedAccessUrlsInput() *PrivatecaCertificateAuthorityUserDefinedAccessUrls
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -166,6 +168,7 @@ type PrivatecaCertificateAuthority interface {
 	PutKeySpec(value *PrivatecaCertificateAuthorityKeySpec)
 	PutSubordinateConfig(value *PrivatecaCertificateAuthoritySubordinateConfig)
 	PutTimeouts(value *PrivatecaCertificateAuthorityTimeouts)
+	PutUserDefinedAccessUrls(value *PrivatecaCertificateAuthorityUserDefinedAccessUrls)
 	ResetDeletionProtection()
 	ResetDesiredState()
 	ResetGcsBucket()
@@ -182,6 +185,7 @@ type PrivatecaCertificateAuthority interface {
 	ResetSubordinateConfig()
 	ResetTimeouts()
 	ResetType()
+	ResetUserDefinedAccessUrls()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -800,8 +804,28 @@ func (j *jsiiProxy_PrivatecaCertificateAuthority) UpdateTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PrivatecaCertificateAuthority) UserDefinedAccessUrls() PrivatecaCertificateAuthorityUserDefinedAccessUrlsOutputReference {
+	var returns PrivatecaCertificateAuthorityUserDefinedAccessUrlsOutputReference
+	_jsii_.Get(
+		j,
+		"userDefinedAccessUrls",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/privateca_certificate_authority google_privateca_certificate_authority} Resource.
+func (j *jsiiProxy_PrivatecaCertificateAuthority) UserDefinedAccessUrlsInput() *PrivatecaCertificateAuthorityUserDefinedAccessUrls {
+	var returns *PrivatecaCertificateAuthorityUserDefinedAccessUrls
+	_jsii_.Get(
+		j,
+		"userDefinedAccessUrlsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/privateca_certificate_authority google_privateca_certificate_authority} Resource.
 func NewPrivatecaCertificateAuthority(scope constructs.Construct, id *string, config *PrivatecaCertificateAuthorityConfig) PrivatecaCertificateAuthority {
 	_init_.Initialize()
 
@@ -819,7 +843,7 @@ func NewPrivatecaCertificateAuthority(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/privateca_certificate_authority google_privateca_certificate_authority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/privateca_certificate_authority google_privateca_certificate_authority} Resource.
 func NewPrivatecaCertificateAuthority_Override(p PrivatecaCertificateAuthority, scope constructs.Construct, id *string, config *PrivatecaCertificateAuthorityConfig) {
 	_init_.Initialize()
 
@@ -1449,6 +1473,17 @@ func (p *jsiiProxy_PrivatecaCertificateAuthority) PutTimeouts(value *PrivatecaCe
 	)
 }
 
+func (p *jsiiProxy_PrivatecaCertificateAuthority) PutUserDefinedAccessUrls(value *PrivatecaCertificateAuthorityUserDefinedAccessUrls) {
+	if err := p.validatePutUserDefinedAccessUrlsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putUserDefinedAccessUrls",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PrivatecaCertificateAuthority) ResetDeletionProtection() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1557,6 +1592,14 @@ func (p *jsiiProxy_PrivatecaCertificateAuthority) ResetType() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrivatecaCertificateAuthority) ResetUserDefinedAccessUrls() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUserDefinedAccessUrls",
 		nil, // no parameters
 	)
 }

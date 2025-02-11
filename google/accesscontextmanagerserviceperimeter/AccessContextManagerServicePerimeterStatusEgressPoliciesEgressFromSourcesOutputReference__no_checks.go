@@ -67,6 +67,10 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusEgressPoliciesEgres
 	return nil
 }
 
+func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesOutputReference) validateSetResourceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusEgressPoliciesEgressFromSourcesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

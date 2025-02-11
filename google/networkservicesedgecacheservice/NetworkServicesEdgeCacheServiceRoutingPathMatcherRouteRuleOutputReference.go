@@ -47,6 +47,8 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputReference i
 	PriorityInput() *string
 	RouteAction() NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionOutputReference
 	RouteActionInput() *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteAction
+	RouteMethods() NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethodsOutputReference
+	RouteMethodsInput() *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethods
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -84,11 +86,13 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputReference i
 	PutHeaderAction(value *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderAction)
 	PutMatchRule(value interface{})
 	PutRouteAction(value *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteAction)
+	PutRouteMethods(value *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethods)
 	PutUrlRedirect(value *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirect)
 	ResetDescription()
 	ResetHeaderAction()
 	ResetOrigin()
 	ResetRouteAction()
+	ResetRouteMethods()
 	ResetUrlRedirect()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -270,6 +274,26 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOut
 	_jsii_.Get(
 		j,
 		"routeActionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputReference) RouteMethods() NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethodsOutputReference {
+	var returns NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethodsOutputReference
+	_jsii_.Get(
+		j,
+		"routeMethods",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputReference) RouteMethodsInput() *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethods {
+	var returns *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethods
+	_jsii_.Get(
+		j,
+		"routeMethodsInput",
 		&returns,
 	)
 	return returns
@@ -650,6 +674,17 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOut
 	)
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputReference) PutRouteMethods(value *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethods) {
+	if err := n.validatePutRouteMethodsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putRouteMethods",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputReference) PutUrlRedirect(value *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirect) {
 	if err := n.validatePutUrlRedirectParameters(value); err != nil {
 		panic(err)
@@ -689,6 +724,14 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOut
 	_jsii_.InvokeVoid(
 		n,
 		"resetRouteAction",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputReference) ResetRouteMethods() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRouteMethods",
 		nil, // no parameters
 	)
 }

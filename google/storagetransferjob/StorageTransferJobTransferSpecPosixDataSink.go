@@ -7,7 +7,7 @@ package storagetransferjob
 type StorageTransferJobTransferSpecPosixDataSink struct {
 	// Root directory path to the filesystem.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/storage_transfer_job#root_directory StorageTransferJob#root_directory}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/storage_transfer_job#root_directory StorageTransferJob#root_directory}
 	RootDirectory *string `field:"required" json:"rootDirectory" yaml:"rootDirectory"`
 }
 

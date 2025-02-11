@@ -103,6 +103,10 @@ func (c *jsiiProxy_ColabRuntimeTemplate) validatePutShieldedVmConfigParameters(v
 	return nil
 }
 
+func (c *jsiiProxy_ColabRuntimeTemplate) validatePutSoftwareConfigParameters(value *ColabRuntimeTemplateSoftwareConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ColabRuntimeTemplate) validatePutTimeoutsParameters(value *ColabRuntimeTemplateTimeouts) error {
 	return nil
 }

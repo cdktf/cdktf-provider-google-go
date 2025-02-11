@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/workbench_instance google_workbench_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/workbench_instance google_workbench_instance}.
 type WorkbenchInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,6 +40,9 @@ type WorkbenchInstance interface {
 	SetDisableProxyAccess(val interface{})
 	DisableProxyAccessInput() interface{}
 	EffectiveLabels() cdktf.StringMap
+	EnableThirdPartyIdentity() interface{}
+	SetEnableThirdPartyIdentity(val interface{})
+	EnableThirdPartyIdentityInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -149,6 +152,7 @@ type WorkbenchInstance interface {
 	PutTimeouts(value *WorkbenchInstanceTimeouts)
 	ResetDesiredState()
 	ResetDisableProxyAccess()
+	ResetEnableThirdPartyIdentity()
 	ResetGceSetup()
 	ResetId()
 	ResetInstanceId()
@@ -292,6 +296,26 @@ func (j *jsiiProxy_WorkbenchInstance) EffectiveLabels() cdktf.StringMap {
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkbenchInstance) EnableThirdPartyIdentity() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableThirdPartyIdentity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkbenchInstance) EnableThirdPartyIdentityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableThirdPartyIdentityInput",
 		&returns,
 	)
 	return returns
@@ -658,7 +682,7 @@ func (j *jsiiProxy_WorkbenchInstance) UpgradeHistory() WorkbenchInstanceUpgradeH
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/workbench_instance google_workbench_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/workbench_instance google_workbench_instance} Resource.
 func NewWorkbenchInstance(scope constructs.Construct, id *string, config *WorkbenchInstanceConfig) WorkbenchInstance {
 	_init_.Initialize()
 
@@ -676,7 +700,7 @@ func NewWorkbenchInstance(scope constructs.Construct, id *string, config *Workbe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/workbench_instance google_workbench_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/workbench_instance google_workbench_instance} Resource.
 func NewWorkbenchInstance_Override(w WorkbenchInstance, scope constructs.Construct, id *string, config *WorkbenchInstanceConfig) {
 	_init_.Initialize()
 
@@ -735,6 +759,17 @@ func (j *jsiiProxy_WorkbenchInstance)SetDisableProxyAccess(val interface{}) {
 	_jsii_.Set(
 		j,
 		"disableProxyAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkbenchInstance)SetEnableThirdPartyIdentity(val interface{}) {
+	if err := j.validateSetEnableThirdPartyIdentityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableThirdPartyIdentity",
 		val,
 	)
 }
@@ -1241,6 +1276,14 @@ func (w *jsiiProxy_WorkbenchInstance) ResetDisableProxyAccess() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetDisableProxyAccess",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkbenchInstance) ResetEnableThirdPartyIdentity() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetEnableThirdPartyIdentity",
 		nil, // no parameters
 	)
 }

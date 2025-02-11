@@ -66,6 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestedRunDuration", GoMethod: "ResetRequestedRunDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetZone", GoMethod: "ResetZone"},
 			_jsii_.MemberProperty{JsiiProperty: "resizeBy", GoGetter: "ResizeBy"},
 			_jsii_.MemberProperty{JsiiProperty: "resizeByInput", GoGetter: "ResizeByInput"},
 			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},

@@ -35,6 +35,9 @@ type AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesE
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Resource() *string
+	SetResource(val *string)
+	ResourceInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesE
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAccessLevel()
+	ResetResource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusE
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesOutputReference) Resource() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesOutputReference) ResourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +265,17 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusE
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesOutputReference)SetResource(val *string) {
+	if err := j.validateSetResourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resource",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusE
 	_jsii_.InvokeVoid(
 		a,
 		"resetAccessLevel",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesOutputReference) ResetResource() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetResource",
 		nil, // no parameters
 	)
 }

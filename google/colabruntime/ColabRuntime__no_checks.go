@@ -99,6 +99,10 @@ func validateColabRuntime_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_ColabRuntime) validateSetAutoUpgradeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ColabRuntime) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (j *jsiiProxy_ColabRuntime) validateSetCountParameters(val interface{}) err
 }
 
 func (j *jsiiProxy_ColabRuntime) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ColabRuntime) validateSetDesiredStateParameters(val *string) error {
 	return nil
 }
 

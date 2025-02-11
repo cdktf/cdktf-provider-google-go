@@ -16,6 +16,10 @@ type CloudRunV2ServiceTemplateContainersOutputReference interface {
 	Args() *[]*string
 	SetArgs(val *[]*string)
 	ArgsInput() *[]*string
+	BaseImageUri() *string
+	SetBaseImageUri(val *string)
+	BaseImageUriInput() *string
+	BuildInfo() CloudRunV2ServiceTemplateContainersBuildInfoList
 	Command() *[]*string
 	SetCommand(val *[]*string)
 	CommandInput() *[]*string
@@ -101,6 +105,7 @@ type CloudRunV2ServiceTemplateContainersOutputReference interface {
 	PutStartupProbe(value *CloudRunV2ServiceTemplateContainersStartupProbe)
 	PutVolumeMounts(value interface{})
 	ResetArgs()
+	ResetBaseImageUri()
 	ResetCommand()
 	ResetDependsOn()
 	ResetEnv()
@@ -141,6 +146,36 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) ArgsInput
 	_jsii_.Get(
 		j,
 		"argsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) BaseImageUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"baseImageUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) BaseImageUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"baseImageUriInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) BuildInfo() CloudRunV2ServiceTemplateContainersBuildInfoList {
+	var returns CloudRunV2ServiceTemplateContainersBuildInfoList
+	_jsii_.Get(
+		j,
+		"buildInfo",
 		&returns,
 	)
 	return returns
@@ -471,6 +506,17 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference)SetArgs(va
 	_jsii_.Set(
 		j,
 		"args",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference)SetBaseImageUri(val *string) {
+	if err := j.validateSetBaseImageUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"baseImageUri",
 		val,
 	)
 }
@@ -841,6 +887,14 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) ResetArgs
 	_jsii_.InvokeVoid(
 		c,
 		"resetArgs",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersOutputReference) ResetBaseImageUri() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBaseImageUri",
 		nil, // no parameters
 	)
 }

@@ -25,6 +25,9 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionOutput
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	CompressionMode() *string
+	SetCompressionMode(val *string)
+	CompressionModeInput() *string
 	CorsPolicy() NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCorsPolicyOutputReference
 	CorsPolicyInput() *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCorsPolicy
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -74,6 +77,7 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionOutput
 	PutCorsPolicy(value *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCorsPolicy)
 	PutUrlRewrite(value *NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionUrlRewrite)
 	ResetCdnPolicy()
+	ResetCompressionMode()
 	ResetCorsPolicy()
 	ResetUrlRewrite()
 	// Produce the Token's value at resolution time.
@@ -126,6 +130,26 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRou
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionOutputReference) CompressionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compressionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionOutputReference) CompressionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compressionModeInput",
 		&returns,
 	)
 	return returns
@@ -267,6 +291,17 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRou
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionOutputReference)SetCompressionMode(val *string) {
+	if err := j.validateSetCompressionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"compressionMode",
 		val,
 	)
 }
@@ -527,6 +562,14 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRou
 	_jsii_.InvokeVoid(
 		n,
 		"resetCdnPolicy",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionOutputReference) ResetCompressionMode() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCompressionMode",
 		nil, // no parameters
 	)
 }

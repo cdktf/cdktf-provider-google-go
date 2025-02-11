@@ -14,6 +14,8 @@ import (
 type DataGoogleCloudRunV2ServiceTemplateContainersOutputReference interface {
 	cdktf.ComplexObject
 	Args() *[]*string
+	BaseImageUri() *string
+	BuildInfo() DataGoogleCloudRunV2ServiceTemplateContainersBuildInfoList
 	Command() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -96,6 +98,26 @@ func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateContainersOutputReference)
 	_jsii_.Get(
 		j,
 		"args",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateContainersOutputReference) BaseImageUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"baseImageUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateContainersOutputReference) BuildInfo() DataGoogleCloudRunV2ServiceTemplateContainersBuildInfoList {
+	var returns DataGoogleCloudRunV2ServiceTemplateContainersBuildInfoList
+	_jsii_.Get(
+		j,
+		"buildInfo",
 		&returns,
 	)
 	return returns

@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/colab_runtime google_colab_runtime}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/colab_runtime google_colab_runtime}.
 type ColabRuntime interface {
 	cdktf.TerraformResource
+	AutoUpgrade() interface{}
+	SetAutoUpgrade(val interface{})
+	AutoUpgradeInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -34,9 +37,13 @@ type ColabRuntime interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DesiredState() *string
+	SetDesiredState(val *string)
+	DesiredStateInput() *string
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	ExpirationTime() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -48,6 +55,7 @@ type ColabRuntime interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsUpgradable() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -62,6 +70,7 @@ type ColabRuntime interface {
 	Node() constructs.Node
 	NotebookRuntimeTemplateRef() ColabRuntimeNotebookRuntimeTemplateRefOutputReference
 	NotebookRuntimeTemplateRefInput() *ColabRuntimeNotebookRuntimeTemplateRef
+	NotebookRuntimeType() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -78,6 +87,7 @@ type ColabRuntime interface {
 	RuntimeUser() *string
 	SetRuntimeUser(val *string)
 	RuntimeUserInput() *string
+	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -131,7 +141,9 @@ type ColabRuntime interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutNotebookRuntimeTemplateRef(value *ColabRuntimeNotebookRuntimeTemplateRef)
 	PutTimeouts(value *ColabRuntimeTimeouts)
+	ResetAutoUpgrade()
 	ResetDescription()
+	ResetDesiredState()
 	ResetId()
 	ResetName()
 	ResetNotebookRuntimeTemplateRef()
@@ -156,6 +168,26 @@ type ColabRuntime interface {
 // The jsii proxy struct for ColabRuntime
 type jsiiProxy_ColabRuntime struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ColabRuntime) AutoUpgrade() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoUpgrade",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ColabRuntime) AutoUpgradeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoUpgradeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ColabRuntime) CdktfStack() cdktf.TerraformStack {
@@ -228,6 +260,26 @@ func (j *jsiiProxy_ColabRuntime) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ColabRuntime) DesiredState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"desiredState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ColabRuntime) DesiredStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"desiredStateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ColabRuntime) DisplayName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -243,6 +295,16 @@ func (j *jsiiProxy_ColabRuntime) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ColabRuntime) ExpirationTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expirationTime",
 		&returns,
 	)
 	return returns
@@ -293,6 +355,16 @@ func (j *jsiiProxy_ColabRuntime) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ColabRuntime) IsUpgradable() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isUpgradable",
 		&returns,
 	)
 	return returns
@@ -378,6 +450,16 @@ func (j *jsiiProxy_ColabRuntime) NotebookRuntimeTemplateRefInput() *ColabRuntime
 	return returns
 }
 
+func (j *jsiiProxy_ColabRuntime) NotebookRuntimeType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notebookRuntimeType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ColabRuntime) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -448,6 +530,16 @@ func (j *jsiiProxy_ColabRuntime) RuntimeUserInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ColabRuntime) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ColabRuntime) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -499,7 +591,7 @@ func (j *jsiiProxy_ColabRuntime) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/colab_runtime google_colab_runtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/colab_runtime google_colab_runtime} Resource.
 func NewColabRuntime(scope constructs.Construct, id *string, config *ColabRuntimeConfig) ColabRuntime {
 	_init_.Initialize()
 
@@ -517,7 +609,7 @@ func NewColabRuntime(scope constructs.Construct, id *string, config *ColabRuntim
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.19.0/docs/resources/colab_runtime google_colab_runtime} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/colab_runtime google_colab_runtime} Resource.
 func NewColabRuntime_Override(c ColabRuntime, scope constructs.Construct, id *string, config *ColabRuntimeConfig) {
 	_init_.Initialize()
 
@@ -525,6 +617,17 @@ func NewColabRuntime_Override(c ColabRuntime, scope constructs.Construct, id *st
 		"@cdktf/provider-google.colabRuntime.ColabRuntime",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_ColabRuntime)SetAutoUpgrade(val interface{}) {
+	if err := j.validateSetAutoUpgradeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoUpgrade",
+		val,
 	)
 }
 
@@ -565,6 +668,17 @@ func (j *jsiiProxy_ColabRuntime)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ColabRuntime)SetDesiredState(val *string) {
+	if err := j.validateSetDesiredStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"desiredState",
 		val,
 	)
 }
@@ -1048,10 +1162,26 @@ func (c *jsiiProxy_ColabRuntime) PutTimeouts(value *ColabRuntimeTimeouts) {
 	)
 }
 
+func (c *jsiiProxy_ColabRuntime) ResetAutoUpgrade() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAutoUpgrade",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ColabRuntime) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ColabRuntime) ResetDesiredState() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDesiredState",
 		nil, // no parameters
 	)
 }
