@@ -127,6 +127,10 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicy) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicy) validateSetTitleParameters(val *string) error {
+	return nil
+}
+
 func validateNewAccessContextManagerServicePerimeterIngressPolicyParameters(scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterIngressPolicyConfig) error {
 	return nil
 }

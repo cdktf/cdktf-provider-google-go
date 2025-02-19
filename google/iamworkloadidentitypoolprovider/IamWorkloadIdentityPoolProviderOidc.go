@@ -7,7 +7,7 @@ package iamworkloadidentitypoolprovider
 type IamWorkloadIdentityPoolProviderOidc struct {
 	// The OIDC issuer URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/iam_workload_identity_pool_provider#issuer_uri IamWorkloadIdentityPoolProvider#issuer_uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/iam_workload_identity_pool_provider#issuer_uri IamWorkloadIdentityPoolProvider#issuer_uri}
 	IssuerUri *string `field:"required" json:"issuerUri" yaml:"issuerUri"`
 	// Acceptable values for the 'aud' field (audience) in the OIDC token.
 	//
@@ -24,7 +24,7 @@ type IamWorkloadIdentityPoolProviderOidc struct {
 	// https://iam.googleapis.com/projects/<project-number>/locations/<location>/workloadIdentityPools/<pool-id>/providers/<provider-id>
 	// ```
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/iam_workload_identity_pool_provider#allowed_audiences IamWorkloadIdentityPoolProvider#allowed_audiences}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/iam_workload_identity_pool_provider#allowed_audiences IamWorkloadIdentityPoolProvider#allowed_audiences}
 	AllowedAudiences *[]*string `field:"optional" json:"allowedAudiences" yaml:"allowedAudiences"`
 	// OIDC JWKs in JSON String format.
 	//
@@ -52,7 +52,7 @@ type IamWorkloadIdentityPoolProviderOidc struct {
 	// }
 	// ```
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/iam_workload_identity_pool_provider#jwks_json IamWorkloadIdentityPoolProvider#jwks_json}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/iam_workload_identity_pool_provider#jwks_json IamWorkloadIdentityPoolProvider#jwks_json}
 	JwksJson *string `field:"optional" json:"jwksJson" yaml:"jwksJson"`
 }
 

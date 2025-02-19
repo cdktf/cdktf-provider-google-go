@@ -51,11 +51,23 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetAllowedUnsafeSysctlsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetContainerLogMaxFilesParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetContainerLogMaxSizeParameters(val *string) error {
 	return nil
 }
 
@@ -68,6 +80,22 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) vali
 }
 
 func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetCpuManagerPolicyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetImageGcHighThresholdPercentParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetImageGcLowThresholdPercentParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetImageMaximumGcAgeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetImageMinimumGcAgeParameters(val *string) error {
 	return nil
 }
 

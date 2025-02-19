@@ -79,6 +79,10 @@ func (j *jsiiProxy_ComputeHaVpnGatewayTimeoutsOutputReference) validateSetTerraf
 	return nil
 }
 
+func (j *jsiiProxy_ComputeHaVpnGatewayTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewComputeHaVpnGatewayTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

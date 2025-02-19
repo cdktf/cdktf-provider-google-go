@@ -101,6 +101,14 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetAllowedUnsafeSysctlsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -166,6 +174,22 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetContainerLogMaxFilesParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetContainerLogMaxSizeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetCpuCfsQuotaParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -195,6 +219,38 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) vali
 }
 
 func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetCpuManagerPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetImageGcHighThresholdPercentParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetImageGcLowThresholdPercentParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetImageMaximumGcAgeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigOutputReference) validateSetImageMinimumGcAgeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

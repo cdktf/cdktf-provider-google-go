@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/dataplex_aspect_type_iam_member google_dataplex_aspect_type_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/dataplex_aspect_type_iam_member google_dataplex_aspect_type_iam_member}.
 type DataplexAspectTypeIamMember interface {
 	cdktf.TerraformResource
 	AspectTypeId() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_DataplexAspectTypeIamMember) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/dataplex_aspect_type_iam_member google_dataplex_aspect_type_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/dataplex_aspect_type_iam_member google_dataplex_aspect_type_iam_member} Resource.
 func NewDataplexAspectTypeIamMember(scope constructs.Construct, id *string, config *DataplexAspectTypeIamMemberConfig) DataplexAspectTypeIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewDataplexAspectTypeIamMember(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/dataplex_aspect_type_iam_member google_dataplex_aspect_type_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/dataplex_aspect_type_iam_member google_dataplex_aspect_type_iam_member} Resource.
 func NewDataplexAspectTypeIamMember_Override(d DataplexAspectTypeIamMember, scope constructs.Construct, id *string, config *DataplexAspectTypeIamMemberConfig) {
 	_init_.Initialize()
 

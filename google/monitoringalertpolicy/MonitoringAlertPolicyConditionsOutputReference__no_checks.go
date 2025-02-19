@@ -63,6 +63,10 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validatePutCo
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validatePutConditionSqlParameters(value *MonitoringAlertPolicyConditionsConditionSql) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validatePutConditionThresholdParameters(value *MonitoringAlertPolicyConditionsConditionThreshold) error {
 	return nil
 }

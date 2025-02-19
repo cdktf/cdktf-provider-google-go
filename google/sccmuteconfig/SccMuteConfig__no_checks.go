@@ -107,6 +107,10 @@ func (j *jsiiProxy_SccMuteConfig) validateSetDescriptionParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_SccMuteConfig) validateSetExpiryTimeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SccMuteConfig) validateSetFilterParameters(val *string) error {
 	return nil
 }
@@ -128,6 +132,10 @@ func (j *jsiiProxy_SccMuteConfig) validateSetParentParameters(val *string) error
 }
 
 func (j *jsiiProxy_SccMuteConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SccMuteConfig) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

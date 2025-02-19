@@ -24,9 +24,9 @@ type DataGoogleOracleDatabaseCloudVmClustersConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// location.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/data-sources/oracle_database_cloud_vm_clusters#location DataGoogleOracleDatabaseCloudVmClusters#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/data-sources/oracle_database_cloud_vm_clusters#location DataGoogleOracleDatabaseCloudVmClusters#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/data-sources/oracle_database_cloud_vm_clusters#id DataGoogleOracleDatabaseCloudVmClusters#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/data-sources/oracle_database_cloud_vm_clusters#id DataGoogleOracleDatabaseCloudVmClusters#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,7 +35,7 @@ type DataGoogleOracleDatabaseCloudVmClustersConfig struct {
 	//
 	// If it is not provided, the provider project is used.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/data-sources/oracle_database_cloud_vm_clusters#project DataGoogleOracleDatabaseCloudVmClusters#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/data-sources/oracle_database_cloud_vm_clusters#project DataGoogleOracleDatabaseCloudVmClusters#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

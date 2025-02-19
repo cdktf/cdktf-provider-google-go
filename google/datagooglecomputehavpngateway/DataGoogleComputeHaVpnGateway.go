@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/data-sources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/data-sources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway}.
 type DataGoogleComputeHaVpnGateway interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -28,6 +28,7 @@ type DataGoogleComputeHaVpnGateway interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -40,6 +41,8 @@ type DataGoogleComputeHaVpnGateway interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	LabelFingerprint() *string
+	Labels() cdktf.StringMap
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -66,6 +69,7 @@ type DataGoogleComputeHaVpnGateway interface {
 	StackType() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -171,6 +175,16 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) Description() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -226,6 +240,26 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) LabelFingerprint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"labelFingerprint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) Labels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"labels",
 		&returns,
 	)
 	return returns
@@ -371,6 +405,16 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) TerraformGeneratorMetadata() *
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -402,7 +446,7 @@ func (j *jsiiProxy_DataGoogleComputeHaVpnGateway) VpnInterfaces() DataGoogleComp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/data-sources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/data-sources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Data Source.
 func NewDataGoogleComputeHaVpnGateway(scope constructs.Construct, id *string, config *DataGoogleComputeHaVpnGatewayConfig) DataGoogleComputeHaVpnGateway {
 	_init_.Initialize()
 
@@ -420,7 +464,7 @@ func NewDataGoogleComputeHaVpnGateway(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/data-sources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/data-sources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Data Source.
 func NewDataGoogleComputeHaVpnGateway_Override(d DataGoogleComputeHaVpnGateway, scope constructs.Construct, id *string, config *DataGoogleComputeHaVpnGatewayConfig) {
 	_init_.Initialize()
 

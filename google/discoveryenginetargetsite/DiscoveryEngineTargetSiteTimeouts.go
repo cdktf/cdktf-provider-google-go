@@ -5,9 +5,9 @@ package discoveryenginetargetsite
 
 
 type DiscoveryEngineTargetSiteTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/discovery_engine_target_site#create DiscoveryEngineTargetSite#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/discovery_engine_target_site#create DiscoveryEngineTargetSite#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/discovery_engine_target_site#delete DiscoveryEngineTargetSite#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/discovery_engine_target_site#delete DiscoveryEngineTargetSite#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

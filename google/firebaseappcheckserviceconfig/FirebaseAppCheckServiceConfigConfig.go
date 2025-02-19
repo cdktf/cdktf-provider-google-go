@@ -30,7 +30,7 @@ type FirebaseAppCheckServiceConfigConfig struct {
 	//   firestore.googleapis.com (Cloud Firestore)
 	//   identitytoolkit.googleapis.com (Authentication)
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/firebase_app_check_service_config#service_id FirebaseAppCheckServiceConfig#service_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/firebase_app_check_service_config#service_id FirebaseAppCheckServiceConfig#service_id}
 	ServiceId *string `field:"required" json:"serviceId" yaml:"serviceId"`
 	// The App Check enforcement mode for a service supported by App Check. Valid values are.
 	//
@@ -63,18 +63,18 @@ type FirebaseAppCheckServiceConfigConfig struct {
 	// If your app has not launched yet, you should enable enforcement immediately, since there are no outdated
 	// clients in use. Possible values: ["UNENFORCED", "ENFORCED"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/firebase_app_check_service_config#enforcement_mode FirebaseAppCheckServiceConfig#enforcement_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/firebase_app_check_service_config#enforcement_mode FirebaseAppCheckServiceConfig#enforcement_mode}
 	EnforcementMode *string `field:"optional" json:"enforcementMode" yaml:"enforcementMode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/firebase_app_check_service_config#id FirebaseAppCheckServiceConfig#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/firebase_app_check_service_config#id FirebaseAppCheckServiceConfig#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/firebase_app_check_service_config#project FirebaseAppCheckServiceConfig#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/firebase_app_check_service_config#project FirebaseAppCheckServiceConfig#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/firebase_app_check_service_config#timeouts FirebaseAppCheckServiceConfig#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/firebase_app_check_service_config#timeouts FirebaseAppCheckServiceConfig#timeouts}
 	Timeouts *FirebaseAppCheckServiceConfigTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

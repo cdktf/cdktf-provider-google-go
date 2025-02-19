@@ -44,6 +44,9 @@ type AccessContextManagerServicePerimeterSpecEgressPoliciesOutputReference inter
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Title() *string
+	SetTitle(val *string)
+	TitleInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type AccessContextManagerServicePerimeterSpecEgressPoliciesOutputReference inter
 	PutEgressTo(value *AccessContextManagerServicePerimeterSpecEgressPoliciesEgressTo)
 	ResetEgressFrom()
 	ResetEgressTo()
+	ResetTitle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterSpecEgressPoliciesOutputR
 	return returns
 }
 
+func (j *jsiiProxy_AccessContextManagerServicePerimeterSpecEgressPoliciesOutputReference) Title() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"title",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimeterSpecEgressPoliciesOutputReference) TitleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"titleInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewAccessContextManagerServicePerimeterSpecEgressPoliciesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterSpecEgressPoliciesOutputReference {
 	_init_.Initialize()
@@ -276,6 +300,17 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterSpecEgressPoliciesOutputR
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimeterSpecEgressPoliciesOutputReference)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"title",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterSpecEgressPoliciesOutputR
 	_jsii_.InvokeVoid(
 		a,
 		"resetEgressTo",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerServicePerimeterSpecEgressPoliciesOutputReference) ResetTitle() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTitle",
 		nil, // no parameters
 	)
 }

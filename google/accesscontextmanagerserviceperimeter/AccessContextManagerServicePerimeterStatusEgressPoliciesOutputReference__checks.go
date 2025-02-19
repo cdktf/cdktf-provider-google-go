@@ -228,6 +228,14 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusEgressPoliciesOutpu
 	return nil
 }
 
+func (j *jsiiProxy_AccessContextManagerServicePerimeterStatusEgressPoliciesOutputReference) validateSetTitleParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewAccessContextManagerServicePerimeterStatusEgressPoliciesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")

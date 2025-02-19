@@ -127,6 +127,10 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) vali
 	return nil
 }
 
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicy) validateSetTitleParameters(val *string) error {
+	return nil
+}
+
 func validateNewAccessContextManagerServicePerimeterDryRunIngressPolicyParameters(scope constructs.Construct, id *string, config *AccessContextManagerServicePerimeterDryRunIngressPolicyConfig) error {
 	return nil
 }

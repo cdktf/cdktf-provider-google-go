@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway}.
 type ComputeHaVpnGateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,7 @@ type ComputeHaVpnGateway interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -48,6 +49,10 @@ type ComputeHaVpnGateway interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	LabelFingerprint() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -82,6 +87,7 @@ type ComputeHaVpnGateway interface {
 	StackTypeInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -138,6 +144,7 @@ type ComputeHaVpnGateway interface {
 	ResetDescription()
 	ResetGatewayIpVersion()
 	ResetId()
+	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -234,6 +241,16 @@ func (j *jsiiProxy_ComputeHaVpnGateway) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeHaVpnGateway) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeHaVpnGateway) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -299,6 +316,36 @@ func (j *jsiiProxy_ComputeHaVpnGateway) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeHaVpnGateway) LabelFingerprint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"labelFingerprint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeHaVpnGateway) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeHaVpnGateway) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -474,6 +521,16 @@ func (j *jsiiProxy_ComputeHaVpnGateway) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
+func (j *jsiiProxy_ComputeHaVpnGateway) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeHaVpnGateway) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -535,7 +592,7 @@ func (j *jsiiProxy_ComputeHaVpnGateway) VpnInterfacesInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Resource.
 func NewComputeHaVpnGateway(scope constructs.Construct, id *string, config *ComputeHaVpnGatewayConfig) ComputeHaVpnGateway {
 	_init_.Initialize()
 
@@ -553,7 +610,7 @@ func NewComputeHaVpnGateway(scope constructs.Construct, id *string, config *Comp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway} Resource.
 func NewComputeHaVpnGateway_Override(c ComputeHaVpnGateway, scope constructs.Construct, id *string, config *ComputeHaVpnGatewayConfig) {
 	_init_.Initialize()
 
@@ -631,6 +688,17 @@ func (j *jsiiProxy_ComputeHaVpnGateway)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeHaVpnGateway)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -1115,6 +1183,14 @@ func (c *jsiiProxy_ComputeHaVpnGateway) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeHaVpnGateway) ResetLabels() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLabels",
 		nil, // no parameters
 	)
 }

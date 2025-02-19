@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/scc_mute_config google_scc_mute_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/scc_mute_config google_scc_mute_config}.
 type SccMuteConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,6 +35,9 @@ type SccMuteConfig interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	ExpiryTime() *string
+	SetExpiryTime(val *string)
+	ExpiryTimeInput() *string
 	Filter() *string
 	SetFilter(val *string)
 	FilterInput() *string
@@ -81,6 +84,9 @@ type SccMuteConfig interface {
 	TerraformResourceType() *string
 	Timeouts() SccMuteConfigTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -127,11 +133,13 @@ type SccMuteConfig interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *SccMuteConfigTimeouts)
 	ResetDescription()
+	ResetExpiryTime()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTimeouts()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -225,6 +233,26 @@ func (j *jsiiProxy_SccMuteConfig) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SccMuteConfig) ExpiryTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiryTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SccMuteConfig) ExpiryTimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expiryTimeInput",
 		&returns,
 	)
 	return returns
@@ -460,6 +488,26 @@ func (j *jsiiProxy_SccMuteConfig) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SccMuteConfig) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SccMuteConfig) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SccMuteConfig) UpdateTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -471,7 +519,7 @@ func (j *jsiiProxy_SccMuteConfig) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/scc_mute_config google_scc_mute_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/scc_mute_config google_scc_mute_config} Resource.
 func NewSccMuteConfig(scope constructs.Construct, id *string, config *SccMuteConfigConfig) SccMuteConfig {
 	_init_.Initialize()
 
@@ -489,7 +537,7 @@ func NewSccMuteConfig(scope constructs.Construct, id *string, config *SccMuteCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/resources/scc_mute_config google_scc_mute_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/scc_mute_config google_scc_mute_config} Resource.
 func NewSccMuteConfig_Override(s SccMuteConfig, scope constructs.Construct, id *string, config *SccMuteConfigConfig) {
 	_init_.Initialize()
 
@@ -537,6 +585,17 @@ func (j *jsiiProxy_SccMuteConfig)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SccMuteConfig)SetExpiryTime(val *string) {
+	if err := j.validateSetExpiryTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expiryTime",
 		val,
 	)
 }
@@ -619,6 +678,17 @@ func (j *jsiiProxy_SccMuteConfig)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SccMuteConfig)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -995,6 +1065,14 @@ func (s *jsiiProxy_SccMuteConfig) ResetDescription() {
 	)
 }
 
+func (s *jsiiProxy_SccMuteConfig) ResetExpiryTime() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExpiryTime",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SccMuteConfig) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1015,6 +1093,14 @@ func (s *jsiiProxy_SccMuteConfig) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SccMuteConfig) ResetType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetType",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -268,6 +268,9 @@ type GoogleProvider interface {
 	FirebaseAppCheckCustomEndpoint() *string
 	SetFirebaseAppCheckCustomEndpoint(val *string)
 	FirebaseAppCheckCustomEndpointInput() *string
+	FirebaseDataConnectCustomEndpoint() *string
+	SetFirebaseDataConnectCustomEndpoint(val *string)
+	FirebaseDataConnectCustomEndpointInput() *string
 	FirebaserulesCustomEndpoint() *string
 	SetFirebaserulesCustomEndpoint(val *string)
 	FirebaserulesCustomEndpointInput() *string
@@ -627,6 +630,7 @@ type GoogleProvider interface {
 	ResetEventarcCustomEndpoint()
 	ResetFilestoreCustomEndpoint()
 	ResetFirebaseAppCheckCustomEndpoint()
+	ResetFirebaseDataConnectCustomEndpoint()
 	ResetFirebaserulesCustomEndpoint()
 	ResetFirestoreCustomEndpoint()
 	ResetGeminiCustomEndpoint()
@@ -2413,6 +2417,26 @@ func (j *jsiiProxy_GoogleProvider) FirebaseAppCheckCustomEndpointInput() *string
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) FirebaseDataConnectCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseDataConnectCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) FirebaseDataConnectCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseDataConnectCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) FirebaserulesCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -4194,7 +4218,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -4212,7 +4236,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -4889,6 +4913,14 @@ func (j *jsiiProxy_GoogleProvider)SetFirebaseAppCheckCustomEndpoint(val *string)
 	_jsii_.Set(
 		j,
 		"firebaseAppCheckCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetFirebaseDataConnectCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"firebaseDataConnectCustomEndpoint",
 		val,
 	)
 }
@@ -6361,6 +6393,14 @@ func (g *jsiiProxy_GoogleProvider) ResetFirebaseAppCheckCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetFirebaseAppCheckCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetFirebaseDataConnectCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFirebaseDataConnectCustomEndpoint",
 		nil, // no parameters
 	)
 }

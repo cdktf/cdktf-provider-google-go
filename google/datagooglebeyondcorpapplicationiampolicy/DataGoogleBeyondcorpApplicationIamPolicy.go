@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/data-sources/beyondcorp_application_iam_policy google_beyondcorp_application_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/data-sources/beyondcorp_application_iam_policy google_beyondcorp_application_iam_policy}.
 type DataGoogleBeyondcorpApplicationIamPolicy interface {
 	cdktf.TerraformDataSource
 	ApplicationId() *string
@@ -357,7 +357,7 @@ func (j *jsiiProxy_DataGoogleBeyondcorpApplicationIamPolicy) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/data-sources/beyondcorp_application_iam_policy google_beyondcorp_application_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/data-sources/beyondcorp_application_iam_policy google_beyondcorp_application_iam_policy} Data Source.
 func NewDataGoogleBeyondcorpApplicationIamPolicy(scope constructs.Construct, id *string, config *DataGoogleBeyondcorpApplicationIamPolicyConfig) DataGoogleBeyondcorpApplicationIamPolicy {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewDataGoogleBeyondcorpApplicationIamPolicy(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.20.0/docs/data-sources/beyondcorp_application_iam_policy google_beyondcorp_application_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/data-sources/beyondcorp_application_iam_policy google_beyondcorp_application_iam_policy} Data Source.
 func NewDataGoogleBeyondcorpApplicationIamPolicy_Override(d DataGoogleBeyondcorpApplicationIamPolicy, scope constructs.Construct, id *string, config *DataGoogleBeyondcorpApplicationIamPolicyConfig) {
 	_init_.Initialize()
 

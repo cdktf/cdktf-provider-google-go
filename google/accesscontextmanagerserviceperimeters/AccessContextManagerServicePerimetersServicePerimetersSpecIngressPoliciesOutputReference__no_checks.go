@@ -79,6 +79,10 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecIng
 	return nil
 }
 
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesOutputReference) validateSetTitleParameters(val *string) error {
+	return nil
+}
+
 func validateNewAccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
