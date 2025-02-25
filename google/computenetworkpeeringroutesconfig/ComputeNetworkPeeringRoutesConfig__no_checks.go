@@ -107,11 +107,19 @@ func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig) validateSetExportCustomRou
 	return nil
 }
 
+func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig) validateSetExportSubnetRoutesWithPublicIpParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig) validateSetIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig) validateSetImportCustomRoutesParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig) validateSetImportSubnetRoutesWithPublicIpParameters(val interface{}) error {
 	return nil
 }
 

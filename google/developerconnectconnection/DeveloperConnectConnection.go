@@ -12,12 +12,16 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/developer_connect_connection google_developer_connect_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/resources/developer_connect_connection google_developer_connect_connection}.
 type DeveloperConnectConnection interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
+	BitbucketCloudConfig() DeveloperConnectConnectionBitbucketCloudConfigOutputReference
+	BitbucketCloudConfigInput() *DeveloperConnectConnectionBitbucketCloudConfig
+	BitbucketDataCenterConfig() DeveloperConnectConnectionBitbucketDataCenterConfigOutputReference
+	BitbucketDataCenterConfigInput() *DeveloperConnectConnectionBitbucketDataCenterConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -150,6 +154,8 @@ type DeveloperConnectConnection interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBitbucketCloudConfig(value *DeveloperConnectConnectionBitbucketCloudConfig)
+	PutBitbucketDataCenterConfig(value *DeveloperConnectConnectionBitbucketDataCenterConfig)
 	PutCryptoKeyConfig(value *DeveloperConnectConnectionCryptoKeyConfig)
 	PutGithubConfig(value *DeveloperConnectConnectionGithubConfig)
 	PutGithubEnterpriseConfig(value *DeveloperConnectConnectionGithubEnterpriseConfig)
@@ -157,6 +163,8 @@ type DeveloperConnectConnection interface {
 	PutGitlabEnterpriseConfig(value *DeveloperConnectConnectionGitlabEnterpriseConfig)
 	PutTimeouts(value *DeveloperConnectConnectionTimeouts)
 	ResetAnnotations()
+	ResetBitbucketCloudConfig()
+	ResetBitbucketDataCenterConfig()
 	ResetCryptoKeyConfig()
 	ResetDisabled()
 	ResetEtag()
@@ -204,6 +212,46 @@ func (j *jsiiProxy_DeveloperConnectConnection) AnnotationsInput() *map[string]*s
 	_jsii_.Get(
 		j,
 		"annotationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DeveloperConnectConnection) BitbucketCloudConfig() DeveloperConnectConnectionBitbucketCloudConfigOutputReference {
+	var returns DeveloperConnectConnectionBitbucketCloudConfigOutputReference
+	_jsii_.Get(
+		j,
+		"bitbucketCloudConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DeveloperConnectConnection) BitbucketCloudConfigInput() *DeveloperConnectConnectionBitbucketCloudConfig {
+	var returns *DeveloperConnectConnectionBitbucketCloudConfig
+	_jsii_.Get(
+		j,
+		"bitbucketCloudConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DeveloperConnectConnection) BitbucketDataCenterConfig() DeveloperConnectConnectionBitbucketDataCenterConfigOutputReference {
+	var returns DeveloperConnectConnectionBitbucketDataCenterConfigOutputReference
+	_jsii_.Get(
+		j,
+		"bitbucketDataCenterConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DeveloperConnectConnection) BitbucketDataCenterConfigInput() *DeveloperConnectConnectionBitbucketDataCenterConfig {
+	var returns *DeveloperConnectConnectionBitbucketDataCenterConfig
+	_jsii_.Get(
+		j,
+		"bitbucketDataCenterConfigInput",
 		&returns,
 	)
 	return returns
@@ -730,7 +778,7 @@ func (j *jsiiProxy_DeveloperConnectConnection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/developer_connect_connection google_developer_connect_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/resources/developer_connect_connection google_developer_connect_connection} Resource.
 func NewDeveloperConnectConnection(scope constructs.Construct, id *string, config *DeveloperConnectConnectionConfig) DeveloperConnectConnection {
 	_init_.Initialize()
 
@@ -748,7 +796,7 @@ func NewDeveloperConnectConnection(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/developer_connect_connection google_developer_connect_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/resources/developer_connect_connection google_developer_connect_connection} Resource.
 func NewDeveloperConnectConnection_Override(d DeveloperConnectConnection, scope constructs.Construct, id *string, config *DeveloperConnectConnectionConfig) {
 	_init_.Initialize()
 
@@ -1268,6 +1316,28 @@ func (d *jsiiProxy_DeveloperConnectConnection) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (d *jsiiProxy_DeveloperConnectConnection) PutBitbucketCloudConfig(value *DeveloperConnectConnectionBitbucketCloudConfig) {
+	if err := d.validatePutBitbucketCloudConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putBitbucketCloudConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DeveloperConnectConnection) PutBitbucketDataCenterConfig(value *DeveloperConnectConnectionBitbucketDataCenterConfig) {
+	if err := d.validatePutBitbucketDataCenterConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putBitbucketDataCenterConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DeveloperConnectConnection) PutCryptoKeyConfig(value *DeveloperConnectConnectionCryptoKeyConfig) {
 	if err := d.validatePutCryptoKeyConfigParameters(value); err != nil {
 		panic(err)
@@ -1338,6 +1408,22 @@ func (d *jsiiProxy_DeveloperConnectConnection) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DeveloperConnectConnection) ResetBitbucketCloudConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBitbucketCloudConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DeveloperConnectConnection) ResetBitbucketDataCenterConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBitbucketDataCenterConfig",
 		nil, // no parameters
 	)
 }

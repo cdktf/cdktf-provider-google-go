@@ -75,6 +75,14 @@ func (d *jsiiProxy_DeveloperConnectConnection) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (d *jsiiProxy_DeveloperConnectConnection) validatePutBitbucketCloudConfigParameters(value *DeveloperConnectConnectionBitbucketCloudConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DeveloperConnectConnection) validatePutBitbucketDataCenterConfigParameters(value *DeveloperConnectConnectionBitbucketDataCenterConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DeveloperConnectConnection) validatePutCryptoKeyConfigParameters(value *DeveloperConnectConnectionCryptoKeyConfig) error {
 	return nil
 }

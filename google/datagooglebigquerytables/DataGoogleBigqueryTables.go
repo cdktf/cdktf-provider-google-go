@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/data-sources/bigquery_tables google_bigquery_tables}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/data-sources/bigquery_tables google_bigquery_tables}.
 type DataGoogleBigqueryTables interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataGoogleBigqueryTables) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/data-sources/bigquery_tables google_bigquery_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/data-sources/bigquery_tables google_bigquery_tables} Data Source.
 func NewDataGoogleBigqueryTables(scope constructs.Construct, id *string, config *DataGoogleBigqueryTablesConfig) DataGoogleBigqueryTables {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataGoogleBigqueryTables(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/data-sources/bigquery_tables google_bigquery_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/data-sources/bigquery_tables google_bigquery_tables} Data Source.
 func NewDataGoogleBigqueryTables_Override(d DataGoogleBigqueryTables, scope constructs.Construct, id *string, config *DataGoogleBigqueryTablesConfig) {
 	_init_.Initialize()
 

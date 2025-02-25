@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/data-sources/organizations google_organizations}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/data-sources/organizations google_organizations}.
 type DataGoogleOrganizations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataGoogleOrganizations) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/data-sources/organizations google_organizations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/data-sources/organizations google_organizations} Data Source.
 func NewDataGoogleOrganizations(scope constructs.Construct, id *string, config *DataGoogleOrganizationsConfig) DataGoogleOrganizations {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataGoogleOrganizations(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/data-sources/organizations google_organizations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/data-sources/organizations google_organizations} Data Source.
 func NewDataGoogleOrganizations_Override(d DataGoogleOrganizations, scope constructs.Construct, id *string, config *DataGoogleOrganizationsConfig) {
 	_init_.Initialize()
 

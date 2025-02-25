@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/compute_network_peering_routes_config google_compute_network_peering_routes_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/resources/compute_network_peering_routes_config google_compute_network_peering_routes_config}.
 type ComputeNetworkPeeringRoutesConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,9 @@ type ComputeNetworkPeeringRoutesConfig interface {
 	ExportCustomRoutes() interface{}
 	SetExportCustomRoutes(val interface{})
 	ExportCustomRoutesInput() interface{}
+	ExportSubnetRoutesWithPublicIp() interface{}
+	SetExportSubnetRoutesWithPublicIp(val interface{})
+	ExportSubnetRoutesWithPublicIpInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -48,6 +51,9 @@ type ComputeNetworkPeeringRoutesConfig interface {
 	ImportCustomRoutes() interface{}
 	SetImportCustomRoutes(val interface{})
 	ImportCustomRoutesInput() interface{}
+	ImportSubnetRoutesWithPublicIp() interface{}
+	SetImportSubnetRoutesWithPublicIp(val interface{})
+	ImportSubnetRoutesWithPublicIpInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -125,7 +131,9 @@ type ComputeNetworkPeeringRoutesConfig interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ComputeNetworkPeeringRoutesConfigTimeouts)
+	ResetExportSubnetRoutesWithPublicIp()
 	ResetId()
+	ResetImportSubnetRoutesWithPublicIp()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -219,6 +227,26 @@ func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig) ExportCustomRoutesInput() 
 	return returns
 }
 
+func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig) ExportSubnetRoutesWithPublicIp() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exportSubnetRoutesWithPublicIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig) ExportSubnetRoutesWithPublicIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exportSubnetRoutesWithPublicIpInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -284,6 +312,26 @@ func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig) ImportCustomRoutesInput() 
 	_jsii_.Get(
 		j,
 		"importCustomRoutesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig) ImportSubnetRoutesWithPublicIp() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"importSubnetRoutesWithPublicIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig) ImportSubnetRoutesWithPublicIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"importSubnetRoutesWithPublicIpInput",
 		&returns,
 	)
 	return returns
@@ -450,7 +498,7 @@ func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/compute_network_peering_routes_config google_compute_network_peering_routes_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/resources/compute_network_peering_routes_config google_compute_network_peering_routes_config} Resource.
 func NewComputeNetworkPeeringRoutesConfig(scope constructs.Construct, id *string, config *ComputeNetworkPeeringRoutesConfigConfig) ComputeNetworkPeeringRoutesConfig {
 	_init_.Initialize()
 
@@ -468,7 +516,7 @@ func NewComputeNetworkPeeringRoutesConfig(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/compute_network_peering_routes_config google_compute_network_peering_routes_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/resources/compute_network_peering_routes_config google_compute_network_peering_routes_config} Resource.
 func NewComputeNetworkPeeringRoutesConfig_Override(c ComputeNetworkPeeringRoutesConfig, scope constructs.Construct, id *string, config *ComputeNetworkPeeringRoutesConfigConfig) {
 	_init_.Initialize()
 
@@ -520,6 +568,17 @@ func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig)SetExportCustomRoutes(val i
 	)
 }
 
+func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig)SetExportSubnetRoutesWithPublicIp(val interface{}) {
+	if err := j.validateSetExportSubnetRoutesWithPublicIpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exportSubnetRoutesWithPublicIp",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -546,6 +605,17 @@ func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig)SetImportCustomRoutes(val i
 	_jsii_.Set(
 		j,
 		"importCustomRoutes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeNetworkPeeringRoutesConfig)SetImportSubnetRoutesWithPublicIp(val interface{}) {
+	if err := j.validateSetImportSubnetRoutesWithPublicIpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"importSubnetRoutesWithPublicIp",
 		val,
 	)
 }
@@ -977,10 +1047,26 @@ func (c *jsiiProxy_ComputeNetworkPeeringRoutesConfig) PutTimeouts(value *Compute
 	)
 }
 
+func (c *jsiiProxy_ComputeNetworkPeeringRoutesConfig) ResetExportSubnetRoutesWithPublicIp() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExportSubnetRoutesWithPublicIp",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeNetworkPeeringRoutesConfig) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeNetworkPeeringRoutesConfig) ResetImportSubnetRoutesWithPublicIp() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetImportSubnetRoutesWithPublicIp",
 		nil, // no parameters
 	)
 }

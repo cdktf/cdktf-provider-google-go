@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/bigquery_analytics_hub_data_exchange_iam_binding google_bigquery_analytics_hub_data_exchange_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/resources/bigquery_analytics_hub_data_exchange_iam_binding google_bigquery_analytics_hub_data_exchange_iam_binding}.
 type BigqueryAnalyticsHubDataExchangeIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamBinding) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/bigquery_analytics_hub_data_exchange_iam_binding google_bigquery_analytics_hub_data_exchange_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/resources/bigquery_analytics_hub_data_exchange_iam_binding google_bigquery_analytics_hub_data_exchange_iam_binding} Resource.
 func NewBigqueryAnalyticsHubDataExchangeIamBinding(scope constructs.Construct, id *string, config *BigqueryAnalyticsHubDataExchangeIamBindingConfig) BigqueryAnalyticsHubDataExchangeIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewBigqueryAnalyticsHubDataExchangeIamBinding(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/bigquery_analytics_hub_data_exchange_iam_binding google_bigquery_analytics_hub_data_exchange_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/resources/bigquery_analytics_hub_data_exchange_iam_binding google_bigquery_analytics_hub_data_exchange_iam_binding} Resource.
 func NewBigqueryAnalyticsHubDataExchangeIamBinding_Override(b BigqueryAnalyticsHubDataExchangeIamBinding, scope constructs.Construct, id *string, config *BigqueryAnalyticsHubDataExchangeIamBindingConfig) {
 	_init_.Initialize()
 

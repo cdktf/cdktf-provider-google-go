@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/resources/redis_cluster google_redis_cluster}.
 type RedisCluster interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -52,6 +52,9 @@ type RedisCluster interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KmsKey() *string
+	SetKmsKey(val *string)
+	KmsKeyInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -169,6 +172,7 @@ type RedisCluster interface {
 	ResetCrossClusterReplicationConfig()
 	ResetDeletionProtectionEnabled()
 	ResetId()
+	ResetKmsKey()
 	ResetMaintenancePolicy()
 	ResetName()
 	ResetNodeType()
@@ -377,6 +381,26 @@ func (j *jsiiProxy_RedisCluster) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) KmsKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) KmsKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyInput",
 		&returns,
 	)
 	return returns
@@ -803,7 +827,7 @@ func (j *jsiiProxy_RedisCluster) ZoneDistributionConfigInput() *RedisClusterZone
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster(scope constructs.Construct, id *string, config *RedisClusterConfig) RedisCluster {
 	_init_.Initialize()
 
@@ -821,7 +845,7 @@ func NewRedisCluster(scope constructs.Construct, id *string, config *RedisCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.21.0/docs/resources/redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.22.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster_Override(r RedisCluster, scope constructs.Construct, id *string, config *RedisClusterConfig) {
 	_init_.Initialize()
 
@@ -899,6 +923,17 @@ func (j *jsiiProxy_RedisCluster)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedisCluster)SetKmsKey(val *string) {
+	if err := j.validateSetKmsKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKey",
 		val,
 	)
 }
@@ -1468,6 +1503,14 @@ func (r *jsiiProxy_RedisCluster) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) ResetKmsKey() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetKmsKey",
 		nil, // no parameters
 	)
 }
