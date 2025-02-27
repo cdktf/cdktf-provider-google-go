@@ -474,6 +474,22 @@ func (j *jsiiProxy_SecretManagerSecretVersion) validateSetSecretDataParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SecretManagerSecretVersion) validateSetSecretDataWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SecretManagerSecretVersion) validateSetSecretDataWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewSecretManagerSecretVersionParameters(scope constructs.Construct, id *string, config *SecretManagerSecretVersionConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

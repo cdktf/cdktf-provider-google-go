@@ -135,6 +135,14 @@ func (j *jsiiProxy_SecretManagerSecretVersion) validateSetSecretDataParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SecretManagerSecretVersion) validateSetSecretDataWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretManagerSecretVersion) validateSetSecretDataWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func validateNewSecretManagerSecretVersionParameters(scope constructs.Construct, id *string, config *SecretManagerSecretVersionConfig) error {
 	return nil
 }
