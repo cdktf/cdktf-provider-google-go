@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/data_fusion_instance google_data_fusion_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/data_fusion_instance google_data_fusion_instance}.
 type DataFusionInstance interface {
 	cdktf.TerraformResource
 	Accelerators() DataFusionInstanceAcceleratorsList
@@ -909,7 +909,7 @@ func (j *jsiiProxy_DataFusionInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/data_fusion_instance google_data_fusion_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/data_fusion_instance google_data_fusion_instance} Resource.
 func NewDataFusionInstance(scope constructs.Construct, id *string, config *DataFusionInstanceConfig) DataFusionInstance {
 	_init_.Initialize()
 
@@ -927,7 +927,7 @@ func NewDataFusionInstance(scope constructs.Construct, id *string, config *DataF
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/data_fusion_instance google_data_fusion_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/data_fusion_instance google_data_fusion_instance} Resource.
 func NewDataFusionInstance_Override(d DataFusionInstance, scope constructs.Construct, id *string, config *DataFusionInstanceConfig) {
 	_init_.Initialize()
 

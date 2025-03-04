@@ -127,6 +127,10 @@ func (j *jsiiProxy_NetworkConnectivityHub) validateSetNameParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_NetworkConnectivityHub) validateSetPolicyModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkConnectivityHub) validateSetPresetTopologyParameters(val *string) error {
 	return nil
 }

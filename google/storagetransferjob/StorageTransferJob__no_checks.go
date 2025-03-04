@@ -79,6 +79,10 @@ func (s *jsiiProxy_StorageTransferJob) validatePutEventStreamParameters(value *S
 	return nil
 }
 
+func (s *jsiiProxy_StorageTransferJob) validatePutLoggingConfigParameters(value *StorageTransferJobLoggingConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageTransferJob) validatePutNotificationConfigParameters(value *StorageTransferJobNotificationConfig) error {
 	return nil
 }

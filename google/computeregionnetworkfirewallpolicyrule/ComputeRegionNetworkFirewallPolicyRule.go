@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule}.
 type ComputeRegionNetworkFirewallPolicyRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -722,7 +722,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRule) TlsInspectInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule} Resource.
 func NewComputeRegionNetworkFirewallPolicyRule(scope constructs.Construct, id *string, config *ComputeRegionNetworkFirewallPolicyRuleConfig) ComputeRegionNetworkFirewallPolicyRule {
 	_init_.Initialize()
 
@@ -740,7 +740,7 @@ func NewComputeRegionNetworkFirewallPolicyRule(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/compute_region_network_firewall_policy_rule google_compute_region_network_firewall_policy_rule} Resource.
 func NewComputeRegionNetworkFirewallPolicyRule_Override(c ComputeRegionNetworkFirewallPolicyRule, scope constructs.Construct, id *string, config *ComputeRegionNetworkFirewallPolicyRuleConfig) {
 	_init_.Initialize()
 

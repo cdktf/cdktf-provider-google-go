@@ -24,33 +24,33 @@ type ClouddomainsRegistrationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// contact_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/clouddomains_registration#contact_settings ClouddomainsRegistration#contact_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/clouddomains_registration#contact_settings ClouddomainsRegistration#contact_settings}
 	ContactSettings *ClouddomainsRegistrationContactSettings `field:"required" json:"contactSettings" yaml:"contactSettings"`
 	// Required. The domain name. Unicode domain names must be expressed in Punycode format.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/clouddomains_registration#domain_name ClouddomainsRegistration#domain_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/clouddomains_registration#domain_name ClouddomainsRegistration#domain_name}
 	DomainName *string `field:"required" json:"domainName" yaml:"domainName"`
 	// The location for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/clouddomains_registration#location ClouddomainsRegistration#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/clouddomains_registration#location ClouddomainsRegistration#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// yearly_price block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/clouddomains_registration#yearly_price ClouddomainsRegistration#yearly_price}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/clouddomains_registration#yearly_price ClouddomainsRegistration#yearly_price}
 	YearlyPrice *ClouddomainsRegistrationYearlyPrice `field:"required" json:"yearlyPrice" yaml:"yearlyPrice"`
 	// The list of contact notices that the caller acknowledges. Possible value is PUBLIC_CONTACT_DATA_ACKNOWLEDGEMENT.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/clouddomains_registration#contact_notices ClouddomainsRegistration#contact_notices}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/clouddomains_registration#contact_notices ClouddomainsRegistration#contact_notices}
 	ContactNotices *[]*string `field:"optional" json:"contactNotices" yaml:"contactNotices"`
 	// dns_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/clouddomains_registration#dns_settings ClouddomainsRegistration#dns_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/clouddomains_registration#dns_settings ClouddomainsRegistration#dns_settings}
 	DnsSettings *ClouddomainsRegistrationDnsSettings `field:"optional" json:"dnsSettings" yaml:"dnsSettings"`
 	// The list of domain notices that you acknowledge. Possible value is HSTS_PRELOADED.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/clouddomains_registration#domain_notices ClouddomainsRegistration#domain_notices}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/clouddomains_registration#domain_notices ClouddomainsRegistration#domain_notices}
 	DomainNotices *[]*string `field:"optional" json:"domainNotices" yaml:"domainNotices"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/clouddomains_registration#id ClouddomainsRegistration#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/clouddomains_registration#id ClouddomainsRegistration#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -60,17 +60,17 @@ type ClouddomainsRegistrationConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/clouddomains_registration#labels ClouddomainsRegistration#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/clouddomains_registration#labels ClouddomainsRegistration#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// management_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/clouddomains_registration#management_settings ClouddomainsRegistration#management_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/clouddomains_registration#management_settings ClouddomainsRegistration#management_settings}
 	ManagementSettings *ClouddomainsRegistrationManagementSettings `field:"optional" json:"managementSettings" yaml:"managementSettings"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/clouddomains_registration#project ClouddomainsRegistration#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/clouddomains_registration#project ClouddomainsRegistration#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/clouddomains_registration#timeouts ClouddomainsRegistration#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/clouddomains_registration#timeouts ClouddomainsRegistration#timeouts}
 	Timeouts *ClouddomainsRegistrationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

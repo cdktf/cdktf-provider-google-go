@@ -22,14 +22,14 @@ type DataGoogleAccessContextManagerAccessPolicyConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/data-sources/access_context_manager_access_policy#parent DataGoogleAccessContextManagerAccessPolicy#parent}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/data-sources/access_context_manager_access_policy#parent DataGoogleAccessContextManagerAccessPolicy#parent}.
 	Parent *string `field:"required" json:"parent" yaml:"parent"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/data-sources/access_context_manager_access_policy#id DataGoogleAccessContextManagerAccessPolicy#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/data-sources/access_context_manager_access_policy#id DataGoogleAccessContextManagerAccessPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/data-sources/access_context_manager_access_policy#scopes DataGoogleAccessContextManagerAccessPolicy#scopes}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/data-sources/access_context_manager_access_policy#scopes DataGoogleAccessContextManagerAccessPolicy#scopes}.
 	Scopes *[]*string `field:"optional" json:"scopes" yaml:"scopes"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule}.
 type NetworkSecurityGatewaySecurityPolicyRule interface {
 	cdktf.TerraformResource
 	ApplicationMatcher() *string
@@ -624,7 +624,7 @@ func (j *jsiiProxy_NetworkSecurityGatewaySecurityPolicyRule) UpdateTime() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule} Resource.
 func NewNetworkSecurityGatewaySecurityPolicyRule(scope constructs.Construct, id *string, config *NetworkSecurityGatewaySecurityPolicyRuleConfig) NetworkSecurityGatewaySecurityPolicyRule {
 	_init_.Initialize()
 
@@ -642,7 +642,7 @@ func NewNetworkSecurityGatewaySecurityPolicyRule(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule} Resource.
 func NewNetworkSecurityGatewaySecurityPolicyRule_Override(n NetworkSecurityGatewaySecurityPolicyRule, scope constructs.Construct, id *string, config *NetworkSecurityGatewaySecurityPolicyRuleConfig) {
 	_init_.Initialize()
 

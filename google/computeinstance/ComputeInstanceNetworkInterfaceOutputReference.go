@@ -48,6 +48,9 @@ type ComputeInstanceNetworkInterfaceOutputReference interface {
 	Name() *string
 	Network() *string
 	SetNetwork(val *string)
+	NetworkAttachment() *string
+	SetNetworkAttachment(val *string)
+	NetworkAttachmentInput() *string
 	NetworkInput() *string
 	NetworkIp() *string
 	SetNetworkIp(val *string)
@@ -108,6 +111,7 @@ type ComputeInstanceNetworkInterfaceOutputReference interface {
 	ResetIpv6AccessConfig()
 	ResetIpv6Address()
 	ResetNetwork()
+	ResetNetworkAttachment()
 	ResetNetworkIp()
 	ResetNicType()
 	ResetQueueCount()
@@ -304,6 +308,26 @@ func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) Network() *st
 	_jsii_.Get(
 		j,
 		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) NetworkAttachment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAttachment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) NetworkAttachmentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAttachmentInput",
 		&returns,
 	)
 	return returns
@@ -549,6 +573,17 @@ func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference)SetNetwork(val
 	_jsii_.Set(
 		j,
 		"network",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference)SetNetworkAttachment(val *string) {
+	if err := j.validateSetNetworkAttachmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkAttachment",
 		val,
 	)
 }
@@ -904,6 +939,14 @@ func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) ResetNetwork(
 	_jsii_.InvokeVoid(
 		c,
 		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) ResetNetworkAttachment() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNetworkAttachment",
 		nil, // no parameters
 	)
 }

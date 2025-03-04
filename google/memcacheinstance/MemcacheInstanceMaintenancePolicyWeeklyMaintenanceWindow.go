@@ -17,7 +17,7 @@ type MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow struct {
 	// - SATURDAY: Saturday
 	// - SUNDAY: Sunday Possible values: ["DAY_OF_WEEK_UNSPECIFIED", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/memcache_instance#day MemcacheInstance#day}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/memcache_instance#day MemcacheInstance#day}
 	Day *string `field:"required" json:"day" yaml:"day"`
 	// Required.
 	//
@@ -25,11 +25,11 @@ type MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindow struct {
 	// A duration in seconds with up to nine fractional digits,
 	// terminated by 's'. Example: "3.5s".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/memcache_instance#duration MemcacheInstance#duration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/memcache_instance#duration MemcacheInstance#duration}
 	Duration *string `field:"required" json:"duration" yaml:"duration"`
 	// start_time block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/memcache_instance#start_time MemcacheInstance#start_time}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/memcache_instance#start_time MemcacheInstance#start_time}
 	StartTime *MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime `field:"required" json:"startTime" yaml:"startTime"`
 }
 

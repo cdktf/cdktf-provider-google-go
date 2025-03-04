@@ -87,6 +87,10 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validateSetNetworkAttachmentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceOutputReference) validateSetNetworkIpParameters(val *string) error {
 	return nil
 }

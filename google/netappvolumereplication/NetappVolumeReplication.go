@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/netapp_volume_replication google_netapp_volume_replication}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/netapp_volume_replication google_netapp_volume_replication}.
 type NetappVolumeReplication interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -739,7 +739,7 @@ func (j *jsiiProxy_NetappVolumeReplication) WaitForMirrorInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/netapp_volume_replication google_netapp_volume_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/netapp_volume_replication google_netapp_volume_replication} Resource.
 func NewNetappVolumeReplication(scope constructs.Construct, id *string, config *NetappVolumeReplicationConfig) NetappVolumeReplication {
 	_init_.Initialize()
 
@@ -757,7 +757,7 @@ func NewNetappVolumeReplication(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/netapp_volume_replication google_netapp_volume_replication} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/netapp_volume_replication google_netapp_volume_replication} Resource.
 func NewNetappVolumeReplication_Override(n NetappVolumeReplication, scope constructs.Construct, id *string, config *NetappVolumeReplicationConfig) {
 	_init_.Initialize()
 

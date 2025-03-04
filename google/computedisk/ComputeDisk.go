@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/compute_disk google_compute_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/compute_disk google_compute_disk}.
 type ComputeDisk interface {
 	cdktf.TerraformResource
 	AccessMode() *string
 	SetAccessMode(val *string)
 	AccessModeInput() *string
+	Architecture() *string
+	SetArchitecture(val *string)
+	ArchitectureInput() *string
 	AsyncPrimaryDisk() ComputeDiskAsyncPrimaryDiskOutputReference
 	AsyncPrimaryDiskInput() *ComputeDiskAsyncPrimaryDisk
 	// Experimental.
@@ -81,6 +84,8 @@ type ComputeDisk interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Params() ComputeDiskParamsOutputReference
+	ParamsInput() *ComputeDiskParams
 	PhysicalBlockSizeBytes() *float64
 	SetPhysicalBlockSizeBytes(val *float64)
 	PhysicalBlockSizeBytesInput() *float64
@@ -117,9 +122,16 @@ type ComputeDisk interface {
 	SourceImageEncryptionKey() ComputeDiskSourceImageEncryptionKeyOutputReference
 	SourceImageEncryptionKeyInput() *ComputeDiskSourceImageEncryptionKey
 	SourceImageId() *string
+	SourceInstantSnapshot() *string
+	SetSourceInstantSnapshot(val *string)
+	SourceInstantSnapshotId() *string
+	SourceInstantSnapshotInput() *string
 	SourceSnapshotEncryptionKey() ComputeDiskSourceSnapshotEncryptionKeyOutputReference
 	SourceSnapshotEncryptionKeyInput() *ComputeDiskSourceSnapshotEncryptionKey
 	SourceSnapshotId() *string
+	SourceStorageObject() *string
+	SetSourceStorageObject(val *string)
+	SourceStorageObjectInput() *string
 	StoragePool() *string
 	SetStoragePool(val *string)
 	StoragePoolInput() *string
@@ -185,10 +197,12 @@ type ComputeDisk interface {
 	PutAsyncPrimaryDisk(value *ComputeDiskAsyncPrimaryDisk)
 	PutDiskEncryptionKey(value *ComputeDiskDiskEncryptionKey)
 	PutGuestOsFeatures(value interface{})
+	PutParams(value *ComputeDiskParams)
 	PutSourceImageEncryptionKey(value *ComputeDiskSourceImageEncryptionKey)
 	PutSourceSnapshotEncryptionKey(value *ComputeDiskSourceSnapshotEncryptionKey)
 	PutTimeouts(value *ComputeDiskTimeouts)
 	ResetAccessMode()
+	ResetArchitecture()
 	ResetAsyncPrimaryDisk()
 	ResetDescription()
 	ResetDiskEncryptionKey()
@@ -201,6 +215,7 @@ type ComputeDisk interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetPhysicalBlockSizeBytes()
 	ResetProject()
 	ResetProvisionedIops()
@@ -209,7 +224,9 @@ type ComputeDisk interface {
 	ResetSnapshot()
 	ResetSourceDisk()
 	ResetSourceImageEncryptionKey()
+	ResetSourceInstantSnapshot()
 	ResetSourceSnapshotEncryptionKey()
+	ResetSourceStorageObject()
 	ResetStoragePool()
 	ResetTimeouts()
 	ResetType()
@@ -247,6 +264,26 @@ func (j *jsiiProxy_ComputeDisk) AccessModeInput() *string {
 	_jsii_.Get(
 		j,
 		"accessModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeDisk) Architecture() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architecture",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeDisk) ArchitectureInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architectureInput",
 		&returns,
 	)
 	return returns
@@ -612,6 +649,26 @@ func (j *jsiiProxy_ComputeDisk) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeDisk) Params() ComputeDiskParamsOutputReference {
+	var returns ComputeDiskParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeDisk) ParamsInput() *ComputeDiskParams {
+	var returns *ComputeDiskParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeDisk) PhysicalBlockSizeBytes() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -832,6 +889,36 @@ func (j *jsiiProxy_ComputeDisk) SourceImageId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeDisk) SourceInstantSnapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstantSnapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeDisk) SourceInstantSnapshotId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstantSnapshotId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeDisk) SourceInstantSnapshotInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstantSnapshotInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeDisk) SourceSnapshotEncryptionKey() ComputeDiskSourceSnapshotEncryptionKeyOutputReference {
 	var returns ComputeDiskSourceSnapshotEncryptionKeyOutputReference
 	_jsii_.Get(
@@ -857,6 +944,26 @@ func (j *jsiiProxy_ComputeDisk) SourceSnapshotId() *string {
 	_jsii_.Get(
 		j,
 		"sourceSnapshotId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeDisk) SourceStorageObject() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceStorageObject",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeDisk) SourceStorageObjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceStorageObjectInput",
 		&returns,
 	)
 	return returns
@@ -993,7 +1100,7 @@ func (j *jsiiProxy_ComputeDisk) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/compute_disk google_compute_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/compute_disk google_compute_disk} Resource.
 func NewComputeDisk(scope constructs.Construct, id *string, config *ComputeDiskConfig) ComputeDisk {
 	_init_.Initialize()
 
@@ -1011,7 +1118,7 @@ func NewComputeDisk(scope constructs.Construct, id *string, config *ComputeDiskC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/compute_disk google_compute_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/compute_disk google_compute_disk} Resource.
 func NewComputeDisk_Override(c ComputeDisk, scope constructs.Construct, id *string, config *ComputeDiskConfig) {
 	_init_.Initialize()
 
@@ -1029,6 +1136,17 @@ func (j *jsiiProxy_ComputeDisk)SetAccessMode(val *string) {
 	_jsii_.Set(
 		j,
 		"accessMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeDisk)SetArchitecture(val *string) {
+	if err := j.validateSetArchitectureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"architecture",
 		val,
 	)
 }
@@ -1251,6 +1369,28 @@ func (j *jsiiProxy_ComputeDisk)SetSourceDisk(val *string) {
 	_jsii_.Set(
 		j,
 		"sourceDisk",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeDisk)SetSourceInstantSnapshot(val *string) {
+	if err := j.validateSetSourceInstantSnapshotParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceInstantSnapshot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeDisk)SetSourceStorageObject(val *string) {
+	if err := j.validateSetSourceStorageObjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceStorageObject",
 		val,
 	)
 }
@@ -1674,6 +1814,17 @@ func (c *jsiiProxy_ComputeDisk) PutGuestOsFeatures(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_ComputeDisk) PutParams(value *ComputeDiskParams) {
+	if err := c.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeDisk) PutSourceImageEncryptionKey(value *ComputeDiskSourceImageEncryptionKey) {
 	if err := c.validatePutSourceImageEncryptionKeyParameters(value); err != nil {
 		panic(err)
@@ -1711,6 +1862,14 @@ func (c *jsiiProxy_ComputeDisk) ResetAccessMode() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAccessMode",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeDisk) ResetArchitecture() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetArchitecture",
 		nil, // no parameters
 	)
 }
@@ -1795,6 +1954,14 @@ func (c *jsiiProxy_ComputeDisk) ResetOverrideLogicalId() {
 	)
 }
 
+func (c *jsiiProxy_ComputeDisk) ResetParams() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParams",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeDisk) ResetPhysicalBlockSizeBytes() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1859,10 +2026,26 @@ func (c *jsiiProxy_ComputeDisk) ResetSourceImageEncryptionKey() {
 	)
 }
 
+func (c *jsiiProxy_ComputeDisk) ResetSourceInstantSnapshot() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSourceInstantSnapshot",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeDisk) ResetSourceSnapshotEncryptionKey() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetSourceSnapshotEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeDisk) ResetSourceStorageObject() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSourceStorageObject",
 		nil, // no parameters
 	)
 }

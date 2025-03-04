@@ -115,6 +115,17 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference)
 	return nil
 }
 
+func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) validatePutMaxStreamDurationParameters(value *ComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDuration) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) validatePutRequestMirrorPolicyParameters(value *ComputeUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -36,6 +36,8 @@ type ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference interface {
 	Fqn() *string
 	InternalValue() *ComputeUrlMapPathMatcherRouteRulesRouteAction
 	SetInternalValue(val *ComputeUrlMapPathMatcherRouteRulesRouteAction)
+	MaxStreamDuration() ComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDurationOutputReference
+	MaxStreamDurationInput() *ComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDuration
 	RequestMirrorPolicy() ComputeUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference
 	RequestMirrorPolicyInput() *ComputeUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy
 	RetryPolicy() ComputeUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference
@@ -80,6 +82,7 @@ type ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCorsPolicy(value *ComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy)
 	PutFaultInjectionPolicy(value *ComputeUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy)
+	PutMaxStreamDuration(value *ComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDuration)
 	PutRequestMirrorPolicy(value *ComputeUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy)
 	PutRetryPolicy(value *ComputeUrlMapPathMatcherRouteRulesRouteActionRetryPolicy)
 	PutTimeout(value *ComputeUrlMapPathMatcherRouteRulesRouteActionTimeout)
@@ -87,6 +90,7 @@ type ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference interface {
 	PutWeightedBackendServices(value interface{})
 	ResetCorsPolicy()
 	ResetFaultInjectionPolicy()
+	ResetMaxStreamDuration()
 	ResetRequestMirrorPolicy()
 	ResetRetryPolicy()
 	ResetTimeout()
@@ -192,6 +196,26 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference)
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) MaxStreamDuration() ComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDurationOutputReference {
+	var returns ComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDurationOutputReference
+	_jsii_.Get(
+		j,
+		"maxStreamDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) MaxStreamDurationInput() *ComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDuration {
+	var returns *ComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDuration
+	_jsii_.Get(
+		j,
+		"maxStreamDurationInput",
 		&returns,
 	)
 	return returns
@@ -608,6 +632,17 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference)
 	)
 }
 
+func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) PutMaxStreamDuration(value *ComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDuration) {
+	if err := c.validatePutMaxStreamDurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putMaxStreamDuration",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) PutRequestMirrorPolicy(value *ComputeUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy) {
 	if err := c.validatePutRequestMirrorPolicyParameters(value); err != nil {
 		panic(err)
@@ -675,6 +710,14 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference)
 	_jsii_.InvokeVoid(
 		c,
 		"resetFaultInjectionPolicy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference) ResetMaxStreamDuration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaxStreamDuration",
 		nil, // no parameters
 	)
 }

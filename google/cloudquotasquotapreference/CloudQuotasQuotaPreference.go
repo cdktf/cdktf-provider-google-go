@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/cloud_quotas_quota_preference google_cloud_quotas_quota_preference}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/cloud_quotas_quota_preference google_cloud_quotas_quota_preference}.
 type CloudQuotasQuotaPreference interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -593,7 +593,7 @@ func (j *jsiiProxy_CloudQuotasQuotaPreference) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/cloud_quotas_quota_preference google_cloud_quotas_quota_preference} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/cloud_quotas_quota_preference google_cloud_quotas_quota_preference} Resource.
 func NewCloudQuotasQuotaPreference(scope constructs.Construct, id *string, config *CloudQuotasQuotaPreferenceConfig) CloudQuotasQuotaPreference {
 	_init_.Initialize()
 
@@ -611,7 +611,7 @@ func NewCloudQuotasQuotaPreference(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.23.0/docs/resources/cloud_quotas_quota_preference google_cloud_quotas_quota_preference} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/cloud_quotas_quota_preference google_cloud_quotas_quota_preference} Resource.
 func NewCloudQuotasQuotaPreference_Override(c CloudQuotasQuotaPreference, scope constructs.Construct, id *string, config *CloudQuotasQuotaPreferenceConfig) {
 	_init_.Initialize()
 
