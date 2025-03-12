@@ -91,6 +91,10 @@ func (c *jsiiProxy_ComputeBackendService) validatePutConsistentHashParameters(va
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendService) validatePutCustomMetricsParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendService) validatePutIapParameters(value *ComputeBackendServiceIap) error {
 	return nil
 }

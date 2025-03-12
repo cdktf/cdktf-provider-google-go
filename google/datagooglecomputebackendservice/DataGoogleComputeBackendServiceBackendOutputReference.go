@@ -30,6 +30,7 @@ type DataGoogleComputeBackendServiceBackendOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomMetrics() DataGoogleComputeBackendServiceBackendCustomMetricsList
 	Description() *string
 	// Experimental.
 	Fqn() *string
@@ -135,6 +136,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendServiceBackendOutputReference) Creati
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendServiceBackendOutputReference) CustomMetrics() DataGoogleComputeBackendServiceBackendCustomMetricsList {
+	var returns DataGoogleComputeBackendServiceBackendCustomMetricsList
+	_jsii_.Get(
+		j,
+		"customMetrics",
 		&returns,
 	)
 	return returns

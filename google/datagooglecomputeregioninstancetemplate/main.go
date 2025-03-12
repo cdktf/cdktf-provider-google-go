@@ -1261,6 +1261,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "preemptible", GoGetter: "Preemptible"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioningModel", GoGetter: "ProvisioningModel"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terminationTime", GoGetter: "TerminationTime"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

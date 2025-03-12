@@ -127,6 +127,10 @@ func (j *jsiiProxy_ComputeSubnetwork) validateSetIpCidrRangeParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSubnetwork) validateSetIpCollectionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSubnetwork) validateSetIpv6AccessTypeParameters(val *string) error {
 	return nil
 }

@@ -38,6 +38,9 @@ type ComputeRegionDiskDiskEncryptionKeyOutputReference interface {
 	RawKey() *string
 	SetRawKey(val *string)
 	RawKeyInput() *string
+	RsaEncryptedKey() *string
+	SetRsaEncryptedKey(val *string)
+	RsaEncryptedKeyInput() *string
 	Sha256() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -73,6 +76,7 @@ type ComputeRegionDiskDiskEncryptionKeyOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetKmsKeyName()
 	ResetRawKey()
+	ResetRsaEncryptedKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -173,6 +177,26 @@ func (j *jsiiProxy_ComputeRegionDiskDiskEncryptionKeyOutputReference) RawKeyInpu
 	_jsii_.Get(
 		j,
 		"rawKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDiskDiskEncryptionKeyOutputReference) RsaEncryptedKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rsaEncryptedKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionDiskDiskEncryptionKeyOutputReference) RsaEncryptedKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rsaEncryptedKeyInput",
 		&returns,
 	)
 	return returns
@@ -287,6 +311,17 @@ func (j *jsiiProxy_ComputeRegionDiskDiskEncryptionKeyOutputReference)SetRawKey(v
 	_jsii_.Set(
 		j,
 		"rawKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionDiskDiskEncryptionKeyOutputReference)SetRsaEncryptedKey(val *string) {
+	if err := j.validateSetRsaEncryptedKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rsaEncryptedKey",
 		val,
 	)
 }
@@ -511,6 +546,14 @@ func (c *jsiiProxy_ComputeRegionDiskDiskEncryptionKeyOutputReference) ResetRawKe
 	_jsii_.InvokeVoid(
 		c,
 		"resetRawKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionDiskDiskEncryptionKeyOutputReference) ResetRsaEncryptedKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRsaEncryptedKey",
 		nil, // no parameters
 	)
 }

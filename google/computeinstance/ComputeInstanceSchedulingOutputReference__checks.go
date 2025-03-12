@@ -318,6 +318,14 @@ func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetProvisio
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetTerminationTimeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -36,6 +36,8 @@ type AlloydbInstancePscInstanceConfigOutputReference interface {
 	InternalValue() *AlloydbInstancePscInstanceConfig
 	SetInternalValue(val *AlloydbInstancePscInstanceConfig)
 	PscDnsName() *string
+	PscInterfaceConfigs() AlloydbInstancePscInstanceConfigPscInterfaceConfigsList
+	PscInterfaceConfigsInput() interface{}
 	ServiceAttachmentLink() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -69,7 +71,9 @@ type AlloydbInstancePscInstanceConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPscInterfaceConfigs(value interface{})
 	ResetAllowedConsumerProjects()
+	ResetPscInterfaceConfigs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -160,6 +164,26 @@ func (j *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) PscDnsName()
 	_jsii_.Get(
 		j,
 		"pscDnsName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) PscInterfaceConfigs() AlloydbInstancePscInstanceConfigPscInterfaceConfigsList {
+	var returns AlloydbInstancePscInstanceConfigPscInterfaceConfigsList
+	_jsii_.Get(
+		j,
+		"pscInterfaceConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) PscInterfaceConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pscInterfaceConfigsInput",
 		&returns,
 	)
 	return returns
@@ -475,10 +499,29 @@ func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) Interpolatio
 	return returns
 }
 
+func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) PutPscInterfaceConfigs(value interface{}) {
+	if err := a.validatePutPscInterfaceConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putPscInterfaceConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) ResetAllowedConsumerProjects() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAllowedConsumerProjects",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference) ResetPscInterfaceConfigs() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPscInterfaceConfigs",
 		nil, // no parameters
 	)
 }

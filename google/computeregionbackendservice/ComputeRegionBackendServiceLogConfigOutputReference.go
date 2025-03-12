@@ -35,6 +35,12 @@ type ComputeRegionBackendServiceLogConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *ComputeRegionBackendServiceLogConfig
 	SetInternalValue(val *ComputeRegionBackendServiceLogConfig)
+	OptionalFields() *[]*string
+	SetOptionalFields(val *[]*string)
+	OptionalFieldsInput() *[]*string
+	OptionalMode() *string
+	SetOptionalMode(val *string)
+	OptionalModeInput() *string
 	SampleRate() *float64
 	SetSampleRate(val *float64)
 	SampleRateInput() *float64
@@ -71,6 +77,8 @@ type ComputeRegionBackendServiceLogConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnable()
+	ResetOptionalFields()
+	ResetOptionalMode()
 	ResetSampleRate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +160,46 @@ func (j *jsiiProxy_ComputeRegionBackendServiceLogConfigOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionBackendServiceLogConfigOutputReference) OptionalFields() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"optionalFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionBackendServiceLogConfigOutputReference) OptionalFieldsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"optionalFieldsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionBackendServiceLogConfigOutputReference) OptionalMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionalMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionBackendServiceLogConfigOutputReference) OptionalModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionalModeInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +313,28 @@ func (j *jsiiProxy_ComputeRegionBackendServiceLogConfigOutputReference)SetIntern
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionBackendServiceLogConfigOutputReference)SetOptionalFields(val *[]*string) {
+	if err := j.validateSetOptionalFieldsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optionalFields",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRegionBackendServiceLogConfigOutputReference)SetOptionalMode(val *string) {
+	if err := j.validateSetOptionalModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optionalMode",
 		val,
 	)
 }
@@ -492,6 +562,22 @@ func (c *jsiiProxy_ComputeRegionBackendServiceLogConfigOutputReference) ResetEna
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnable",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionBackendServiceLogConfigOutputReference) ResetOptionalFields() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOptionalFields",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionBackendServiceLogConfigOutputReference) ResetOptionalMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOptionalMode",
 		nil, // no parameters
 	)
 }

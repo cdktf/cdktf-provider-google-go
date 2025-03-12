@@ -61,6 +61,9 @@ type ComputeInstanceSchedulingOutputReference interface {
 	ProvisioningModel() *string
 	SetProvisioningModel(val *string)
 	ProvisioningModelInput() *string
+	TerminationTime() *string
+	SetTerminationTime(val *string)
+	TerminationTimeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -108,6 +111,7 @@ type ComputeInstanceSchedulingOutputReference interface {
 	ResetOnInstanceStopAction()
 	ResetPreemptible()
 	ResetProvisioningModel()
+	ResetTerminationTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -393,6 +397,26 @@ func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) ProvisioningModelIn
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) TerminationTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terminationTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) TerminationTimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terminationTimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -547,6 +571,17 @@ func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference)SetProvisioningModel
 	_jsii_.Set(
 		j,
 		"provisioningModel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceSchedulingOutputReference)SetTerminationTime(val *string) {
+	if err := j.validateSetTerminationTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terminationTime",
 		val,
 	)
 }
@@ -887,6 +922,14 @@ func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) ResetProvisioningMo
 	_jsii_.InvokeVoid(
 		c,
 		"resetProvisioningModel",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceSchedulingOutputReference) ResetTerminationTime() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTerminationTime",
 		nil, // no parameters
 	)
 }

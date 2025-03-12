@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/compute_disk google_compute_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/compute_disk google_compute_disk}.
 type ComputeDisk interface {
 	cdktf.TerraformResource
 	AccessMode() *string
@@ -35,6 +35,12 @@ type ComputeDisk interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateSnapshotBeforeDestroy() interface{}
+	SetCreateSnapshotBeforeDestroy(val interface{})
+	CreateSnapshotBeforeDestroyInput() interface{}
+	CreateSnapshotBeforeDestroyPrefix() *string
+	SetCreateSnapshotBeforeDestroyPrefix(val *string)
+	CreateSnapshotBeforeDestroyPrefixInput() *string
 	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -204,6 +210,8 @@ type ComputeDisk interface {
 	ResetAccessMode()
 	ResetArchitecture()
 	ResetAsyncPrimaryDisk()
+	ResetCreateSnapshotBeforeDestroy()
+	ResetCreateSnapshotBeforeDestroyPrefix()
 	ResetDescription()
 	ResetDiskEncryptionKey()
 	ResetEnableConfidentialCompute()
@@ -344,6 +352,46 @@ func (j *jsiiProxy_ComputeDisk) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeDisk) CreateSnapshotBeforeDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createSnapshotBeforeDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeDisk) CreateSnapshotBeforeDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createSnapshotBeforeDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeDisk) CreateSnapshotBeforeDestroyPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createSnapshotBeforeDestroyPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeDisk) CreateSnapshotBeforeDestroyPrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createSnapshotBeforeDestroyPrefixInput",
 		&returns,
 	)
 	return returns
@@ -1100,7 +1148,7 @@ func (j *jsiiProxy_ComputeDisk) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/compute_disk google_compute_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/compute_disk google_compute_disk} Resource.
 func NewComputeDisk(scope constructs.Construct, id *string, config *ComputeDiskConfig) ComputeDisk {
 	_init_.Initialize()
 
@@ -1118,7 +1166,7 @@ func NewComputeDisk(scope constructs.Construct, id *string, config *ComputeDiskC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/compute_disk google_compute_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/compute_disk google_compute_disk} Resource.
 func NewComputeDisk_Override(c ComputeDisk, scope constructs.Construct, id *string, config *ComputeDiskConfig) {
 	_init_.Initialize()
 
@@ -1169,6 +1217,28 @@ func (j *jsiiProxy_ComputeDisk)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeDisk)SetCreateSnapshotBeforeDestroy(val interface{}) {
+	if err := j.validateSetCreateSnapshotBeforeDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createSnapshotBeforeDestroy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeDisk)SetCreateSnapshotBeforeDestroyPrefix(val *string) {
+	if err := j.validateSetCreateSnapshotBeforeDestroyPrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createSnapshotBeforeDestroyPrefix",
 		val,
 	)
 }
@@ -1878,6 +1948,22 @@ func (c *jsiiProxy_ComputeDisk) ResetAsyncPrimaryDisk() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAsyncPrimaryDisk",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeDisk) ResetCreateSnapshotBeforeDestroy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCreateSnapshotBeforeDestroy",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeDisk) ResetCreateSnapshotBeforeDestroyPrefix() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCreateSnapshotBeforeDestroyPrefix",
 		nil, // no parameters
 	)
 }

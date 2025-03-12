@@ -119,6 +119,14 @@ func (j *jsiiProxy_ComputeRegionDisk) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionDisk) validateSetCreateSnapshotBeforeDestroyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) validateSetCreateSnapshotBeforeDestroyPrefixParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionDisk) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

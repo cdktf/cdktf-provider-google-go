@@ -34,6 +34,7 @@ type DataGoogleAlloydbInstancePscInstanceConfigOutputReference interface {
 	InternalValue() *DataGoogleAlloydbInstancePscInstanceConfig
 	SetInternalValue(val *DataGoogleAlloydbInstancePscInstanceConfig)
 	PscDnsName() *string
+	PscInterfaceConfigs() DataGoogleAlloydbInstancePscInstanceConfigPscInterfaceConfigsList
 	ServiceAttachmentLink() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -147,6 +148,16 @@ func (j *jsiiProxy_DataGoogleAlloydbInstancePscInstanceConfigOutputReference) Ps
 	_jsii_.Get(
 		j,
 		"pscDnsName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleAlloydbInstancePscInstanceConfigOutputReference) PscInterfaceConfigs() DataGoogleAlloydbInstancePscInstanceConfigPscInterfaceConfigsList {
+	var returns DataGoogleAlloydbInstancePscInstanceConfigPscInterfaceConfigsList
+	_jsii_.Get(
+		j,
+		"pscInterfaceConfigs",
 		&returns,
 	)
 	return returns

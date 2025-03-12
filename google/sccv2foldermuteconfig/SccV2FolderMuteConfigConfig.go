@@ -29,36 +29,36 @@ type SccV2FolderMuteConfigConfig struct {
 	// If a filter contains project = X but is created under the
 	// project = Y scope, it might not match any findings.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/scc_v2_folder_mute_config#filter SccV2FolderMuteConfig#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/scc_v2_folder_mute_config#filter SccV2FolderMuteConfig#filter}
 	Filter *string `field:"required" json:"filter" yaml:"filter"`
 	// The folder whose Cloud Security Command Center the Mute Config lives in.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/scc_v2_folder_mute_config#folder SccV2FolderMuteConfig#folder}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/scc_v2_folder_mute_config#folder SccV2FolderMuteConfig#folder}
 	Folder *string `field:"required" json:"folder" yaml:"folder"`
 	// Unique identifier provided by the client within the parent scope.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/scc_v2_folder_mute_config#mute_config_id SccV2FolderMuteConfig#mute_config_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/scc_v2_folder_mute_config#mute_config_id SccV2FolderMuteConfig#mute_config_id}
 	MuteConfigId *string `field:"required" json:"muteConfigId" yaml:"muteConfigId"`
 	// The type of the mute config.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/scc_v2_folder_mute_config#type SccV2FolderMuteConfig#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/scc_v2_folder_mute_config#type SccV2FolderMuteConfig#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// A description of the mute config.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/scc_v2_folder_mute_config#description SccV2FolderMuteConfig#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/scc_v2_folder_mute_config#description SccV2FolderMuteConfig#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/scc_v2_folder_mute_config#id SccV2FolderMuteConfig#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/scc_v2_folder_mute_config#id SccV2FolderMuteConfig#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// location Id is provided by folder. If not provided, Use global as default.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/scc_v2_folder_mute_config#location SccV2FolderMuteConfig#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/scc_v2_folder_mute_config#location SccV2FolderMuteConfig#location}
 	Location *string `field:"optional" json:"location" yaml:"location"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/scc_v2_folder_mute_config#timeouts SccV2FolderMuteConfig#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/scc_v2_folder_mute_config#timeouts SccV2FolderMuteConfig#timeouts}
 	Timeouts *SccV2FolderMuteConfigTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -107,6 +107,10 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) validateSetTerminationTimeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplateSchedulingOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

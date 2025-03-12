@@ -7,7 +7,7 @@ package containeranalysisnote
 type ContainerAnalysisNoteAttestationAuthority struct {
 	// hint block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/container_analysis_note#hint ContainerAnalysisNote#hint}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/container_analysis_note#hint ContainerAnalysisNote#hint}
 	Hint *ContainerAnalysisNoteAttestationAuthorityHint `field:"required" json:"hint" yaml:"hint"`
 }
 

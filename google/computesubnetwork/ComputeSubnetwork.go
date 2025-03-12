@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/compute_subnetwork google_compute_subnetwork}.
 type ComputeSubnetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -55,10 +55,14 @@ type ComputeSubnetwork interface {
 	IpCidrRange() *string
 	SetIpCidrRange(val *string)
 	IpCidrRangeInput() *string
+	IpCollection() *string
+	SetIpCollection(val *string)
+	IpCollectionInput() *string
 	Ipv6AccessType() *string
 	SetIpv6AccessType(val *string)
 	Ipv6AccessTypeInput() *string
 	Ipv6CidrRange() *string
+	Ipv6GceEndpoint() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -172,6 +176,7 @@ type ComputeSubnetwork interface {
 	ResetExternalIpv6Prefix()
 	ResetId()
 	ResetIpCidrRange()
+	ResetIpCollection()
 	ResetIpv6AccessType()
 	ResetLogConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -406,6 +411,26 @@ func (j *jsiiProxy_ComputeSubnetwork) IpCidrRangeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeSubnetwork) IpCollection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipCollection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) IpCollectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipCollectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeSubnetwork) Ipv6AccessType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -431,6 +456,16 @@ func (j *jsiiProxy_ComputeSubnetwork) Ipv6CidrRange() *string {
 	_jsii_.Get(
 		j,
 		"ipv6CidrRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) Ipv6GceEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6GceEndpoint",
 		&returns,
 	)
 	return returns
@@ -817,7 +852,7 @@ func (j *jsiiProxy_ComputeSubnetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
 func NewComputeSubnetwork(scope constructs.Construct, id *string, config *ComputeSubnetworkConfig) ComputeSubnetwork {
 	_init_.Initialize()
 
@@ -835,7 +870,7 @@ func NewComputeSubnetwork(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
 func NewComputeSubnetwork_Override(c ComputeSubnetwork, scope constructs.Construct, id *string, config *ComputeSubnetworkConfig) {
 	_init_.Initialize()
 
@@ -924,6 +959,17 @@ func (j *jsiiProxy_ComputeSubnetwork)SetIpCidrRange(val *string) {
 	_jsii_.Set(
 		j,
 		"ipCidrRange",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeSubnetwork)SetIpCollection(val *string) {
+	if err := j.validateSetIpCollectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipCollection",
 		val,
 	)
 }
@@ -1504,6 +1550,14 @@ func (c *jsiiProxy_ComputeSubnetwork) ResetIpCidrRange() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIpCidrRange",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSubnetwork) ResetIpCollection() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpCollection",
 		nil, // no parameters
 	)
 }

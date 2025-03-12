@@ -34,6 +34,7 @@ type DataGoogleComputeRegionDiskDiskEncryptionKeyOutputReference interface {
 	SetInternalValue(val *DataGoogleComputeRegionDiskDiskEncryptionKey)
 	KmsKeyName() *string
 	RawKey() *string
+	RsaEncryptedKey() *string
 	Sha256() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -147,6 +148,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionDiskDiskEncryptionKeyOutputReference) 
 	_jsii_.Get(
 		j,
 		"rawKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionDiskDiskEncryptionKeyOutputReference) RsaEncryptedKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rsaEncryptedKey",
 		&returns,
 	)
 	return returns

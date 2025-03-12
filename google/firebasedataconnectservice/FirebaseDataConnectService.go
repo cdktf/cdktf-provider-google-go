@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/firebase_data_connect_service google_firebase_data_connect_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/firebase_data_connect_service google_firebase_data_connect_service}.
 type FirebaseDataConnectService interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -599,7 +599,7 @@ func (j *jsiiProxy_FirebaseDataConnectService) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/firebase_data_connect_service google_firebase_data_connect_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/firebase_data_connect_service google_firebase_data_connect_service} Resource.
 func NewFirebaseDataConnectService(scope constructs.Construct, id *string, config *FirebaseDataConnectServiceConfig) FirebaseDataConnectService {
 	_init_.Initialize()
 
@@ -617,7 +617,7 @@ func NewFirebaseDataConnectService(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/firebase_data_connect_service google_firebase_data_connect_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/firebase_data_connect_service google_firebase_data_connect_service} Resource.
 func NewFirebaseDataConnectService_Override(f FirebaseDataConnectService, scope constructs.Construct, id *string, config *FirebaseDataConnectServiceConfig) {
 	_init_.Initialize()
 

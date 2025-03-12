@@ -67,6 +67,14 @@ func (j *jsiiProxy_ComputeRegionBackendServiceLogConfigOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionBackendServiceLogConfigOutputReference) validateSetOptionalFieldsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionBackendServiceLogConfigOutputReference) validateSetOptionalModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionBackendServiceLogConfigOutputReference) validateSetSampleRateParameters(val *float64) error {
 	return nil
 }

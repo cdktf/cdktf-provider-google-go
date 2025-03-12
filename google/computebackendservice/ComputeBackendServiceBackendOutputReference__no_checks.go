@@ -47,6 +47,10 @@ func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateInterpol
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) validatePutCustomMetricsParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

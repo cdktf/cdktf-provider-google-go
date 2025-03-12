@@ -135,6 +135,14 @@ func (j *jsiiProxy_ComputeDisk) validateSetCountParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_ComputeDisk) validateSetCreateSnapshotBeforeDestroyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeDisk) validateSetCreateSnapshotBeforeDestroyPrefixParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeDisk) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

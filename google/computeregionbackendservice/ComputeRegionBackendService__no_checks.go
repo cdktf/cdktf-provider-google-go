@@ -91,6 +91,10 @@ func (c *jsiiProxy_ComputeRegionBackendService) validatePutConsistentHashParamet
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionBackendService) validatePutCustomMetricsParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionBackendService) validatePutFailoverPolicyParameters(value *ComputeRegionBackendServiceFailoverPolicy) error {
 	return nil
 }

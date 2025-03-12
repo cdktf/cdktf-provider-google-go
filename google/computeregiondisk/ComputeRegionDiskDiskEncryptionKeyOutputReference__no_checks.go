@@ -71,6 +71,10 @@ func (j *jsiiProxy_ComputeRegionDiskDiskEncryptionKeyOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionDiskDiskEncryptionKeyOutputReference) validateSetRsaEncryptedKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionDiskDiskEncryptionKeyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

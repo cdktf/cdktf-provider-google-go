@@ -79,6 +79,10 @@ func (j *jsiiProxy_ComputeFirewallPolicyAssociationTimeoutsOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_ComputeFirewallPolicyAssociationTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewComputeFirewallPolicyAssociationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

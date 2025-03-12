@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/apigee_environment google_apigee_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/apigee_environment google_apigee_environment}.
 type ApigeeEnvironment interface {
 	cdktf.TerraformResource
 	ApiProxyType() *string
@@ -572,7 +572,7 @@ func (j *jsiiProxy_ApigeeEnvironment) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/apigee_environment google_apigee_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/apigee_environment google_apigee_environment} Resource.
 func NewApigeeEnvironment(scope constructs.Construct, id *string, config *ApigeeEnvironmentConfig) ApigeeEnvironment {
 	_init_.Initialize()
 
@@ -590,7 +590,7 @@ func NewApigeeEnvironment(scope constructs.Construct, id *string, config *Apigee
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.24.0/docs/resources/apigee_environment google_apigee_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/apigee_environment google_apigee_environment} Resource.
 func NewApigeeEnvironment_Override(a ApigeeEnvironment, scope constructs.Construct, id *string, config *ApigeeEnvironmentConfig) {
 	_init_.Initialize()
 
