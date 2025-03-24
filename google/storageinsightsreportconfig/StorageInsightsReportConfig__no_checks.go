@@ -87,6 +87,10 @@ func (s *jsiiProxy_StorageInsightsReportConfig) validatePutObjectMetadataReportO
 	return nil
 }
 
+func (s *jsiiProxy_StorageInsightsReportConfig) validatePutParquetOptionsParameters(value *StorageInsightsReportConfigParquetOptions) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageInsightsReportConfig) validatePutTimeoutsParameters(value *StorageInsightsReportConfigTimeouts) error {
 	return nil
 }

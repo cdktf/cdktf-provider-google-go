@@ -10,7 +10,7 @@ type NetworkSecurityAuthzPolicyHttpRulesFromSourcesResourcesTagValueIdSet struct
 	// The match follows AND semantics which means all the ids must match.
 	// Limited to 5 matches.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/network_security_authz_policy#ids NetworkSecurityAuthzPolicy#ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/network_security_authz_policy#ids NetworkSecurityAuthzPolicy#ids}
 	Ids *[]*string `field:"optional" json:"ids" yaml:"ids"`
 }
 

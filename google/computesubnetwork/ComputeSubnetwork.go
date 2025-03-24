@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/compute_subnetwork google_compute_subnetwork}.
 type ComputeSubnetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,6 +35,9 @@ type ComputeSubnetwork interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EnableFlowLogs() interface{}
+	SetEnableFlowLogs(val interface{})
+	EnableFlowLogsInput() interface{}
 	ExternalIpv6Prefix() *string
 	SetExternalIpv6Prefix(val *string)
 	ExternalIpv6PrefixInput() *string
@@ -117,6 +120,7 @@ type ComputeSubnetwork interface {
 	StackType() *string
 	SetStackType(val *string)
 	StackTypeInput() *string
+	State() *string
 	SubnetworkId() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -173,6 +177,7 @@ type ComputeSubnetwork interface {
 	PutSecondaryIpRange(value interface{})
 	PutTimeouts(value *ComputeSubnetworkTimeouts)
 	ResetDescription()
+	ResetEnableFlowLogs()
 	ResetExternalIpv6Prefix()
 	ResetId()
 	ResetIpCidrRange()
@@ -286,6 +291,26 @@ func (j *jsiiProxy_ComputeSubnetwork) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) EnableFlowLogs() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFlowLogs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSubnetwork) EnableFlowLogsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFlowLogsInput",
 		&returns,
 	)
 	return returns
@@ -791,6 +816,16 @@ func (j *jsiiProxy_ComputeSubnetwork) StackTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeSubnetwork) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeSubnetwork) SubnetworkId() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -852,7 +887,7 @@ func (j *jsiiProxy_ComputeSubnetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
 func NewComputeSubnetwork(scope constructs.Construct, id *string, config *ComputeSubnetworkConfig) ComputeSubnetwork {
 	_init_.Initialize()
 
@@ -870,7 +905,7 @@ func NewComputeSubnetwork(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource.
 func NewComputeSubnetwork_Override(c ComputeSubnetwork, scope constructs.Construct, id *string, config *ComputeSubnetworkConfig) {
 	_init_.Initialize()
 
@@ -918,6 +953,17 @@ func (j *jsiiProxy_ComputeSubnetwork)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeSubnetwork)SetEnableFlowLogs(val interface{}) {
+	if err := j.validateSetEnableFlowLogsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableFlowLogs",
 		val,
 	)
 }
@@ -1526,6 +1572,14 @@ func (c *jsiiProxy_ComputeSubnetwork) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSubnetwork) ResetEnableFlowLogs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableFlowLogs",
 		nil, // no parameters
 	)
 }

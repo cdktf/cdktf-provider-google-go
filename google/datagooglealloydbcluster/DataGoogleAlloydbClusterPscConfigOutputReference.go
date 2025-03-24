@@ -33,6 +33,7 @@ type DataGoogleAlloydbClusterPscConfigOutputReference interface {
 	InternalValue() *DataGoogleAlloydbClusterPscConfig
 	SetInternalValue(val *DataGoogleAlloydbClusterPscConfig)
 	PscEnabled() cdktf.IResolvable
+	ServiceOwnedProjectNumber() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -135,6 +136,16 @@ func (j *jsiiProxy_DataGoogleAlloydbClusterPscConfigOutputReference) PscEnabled(
 	_jsii_.Get(
 		j,
 		"pscEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleAlloydbClusterPscConfigOutputReference) ServiceOwnedProjectNumber() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"serviceOwnedProjectNumber",
 		&returns,
 	)
 	return returns

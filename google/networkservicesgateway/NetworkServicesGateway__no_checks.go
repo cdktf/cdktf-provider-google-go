@@ -119,11 +119,19 @@ func (j *jsiiProxy_NetworkServicesGateway) validateSetDescriptionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_NetworkServicesGateway) validateSetEnvoyHeadersParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkServicesGateway) validateSetGatewaySecurityPolicyParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_NetworkServicesGateway) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkServicesGateway) validateSetIpVersionParameters(val *string) error {
 	return nil
 }
 

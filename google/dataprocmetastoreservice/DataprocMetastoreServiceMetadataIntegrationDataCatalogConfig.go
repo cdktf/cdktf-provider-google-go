@@ -9,7 +9,7 @@ type DataprocMetastoreServiceMetadataIntegrationDataCatalogConfig struct {
 	//
 	// The default value is to disable syncing metastore metadata to Data Catalog.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/dataproc_metastore_service#enabled DataprocMetastoreService#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/dataproc_metastore_service#enabled DataprocMetastoreService#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 }
 

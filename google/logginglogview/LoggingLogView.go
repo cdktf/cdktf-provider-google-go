@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/logging_log_view google_logging_log_view}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/logging_log_view google_logging_log_view}.
 type LoggingLogView interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -498,7 +498,7 @@ func (j *jsiiProxy_LoggingLogView) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/logging_log_view google_logging_log_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/logging_log_view google_logging_log_view} Resource.
 func NewLoggingLogView(scope constructs.Construct, id *string, config *LoggingLogViewConfig) LoggingLogView {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewLoggingLogView(scope constructs.Construct, id *string, config *LoggingLo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/logging_log_view google_logging_log_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/logging_log_view google_logging_log_view} Resource.
 func NewLoggingLogView_Override(l LoggingLogView, scope constructs.Construct, id *string, config *LoggingLogViewConfig) {
 	_init_.Initialize()
 

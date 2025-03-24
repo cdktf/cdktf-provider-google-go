@@ -199,6 +199,10 @@ func (j *jsiiProxy_BigqueryTable) validateSetTableIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryTable) validateSetTableMetadataViewParameters(val *string) error {
+	return nil
+}
+
 func validateNewBigqueryTableParameters(scope constructs.Construct, id *string, config *BigqueryTableConfig) error {
 	return nil
 }

@@ -35,6 +35,7 @@ type AlloydbClusterPscConfigOutputReference interface {
 	PscEnabled() interface{}
 	SetPscEnabled(val interface{})
 	PscEnabledInput() interface{}
+	ServiceOwnedProjectNumber() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -148,6 +149,16 @@ func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) PscEnabledInput() int
 	_jsii_.Get(
 		j,
 		"pscEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlloydbClusterPscConfigOutputReference) ServiceOwnedProjectNumber() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"serviceOwnedProjectNumber",
 		&returns,
 	)
 	return returns

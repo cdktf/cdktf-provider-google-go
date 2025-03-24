@@ -47,6 +47,10 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOutputReference) validat
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOutputReference) validatePutNotOperationsParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOutputReference) validatePutOperationsParameters(value interface{}) error {
 	return nil
 }

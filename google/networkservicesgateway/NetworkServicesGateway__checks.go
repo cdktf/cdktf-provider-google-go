@@ -392,6 +392,14 @@ func (j *jsiiProxy_NetworkServicesGateway) validateSetDescriptionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_NetworkServicesGateway) validateSetEnvoyHeadersParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetworkServicesGateway) validateSetGatewaySecurityPolicyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -401,6 +409,14 @@ func (j *jsiiProxy_NetworkServicesGateway) validateSetGatewaySecurityPolicyParam
 }
 
 func (j *jsiiProxy_NetworkServicesGateway) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkServicesGateway) validateSetIpVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

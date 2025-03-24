@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/workflows_workflow google_workflows_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/workflows_workflow google_workflows_workflow}.
 type WorkflowsWorkflow interface {
 	cdktf.TerraformResource
 	CallLogLevel() *string
@@ -45,6 +45,9 @@ type WorkflowsWorkflow interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
+	ExecutionHistoryLevel() *string
+	SetExecutionHistoryLevel(val *string)
+	ExecutionHistoryLevelInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -159,6 +162,7 @@ type WorkflowsWorkflow interface {
 	ResetCryptoKeyName()
 	ResetDeletionProtection()
 	ResetDescription()
+	ResetExecutionHistoryLevel()
 	ResetId()
 	ResetLabels()
 	ResetName()
@@ -336,6 +340,26 @@ func (j *jsiiProxy_WorkflowsWorkflow) EffectiveLabels() cdktf.StringMap {
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkflowsWorkflow) ExecutionHistoryLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionHistoryLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkflowsWorkflow) ExecutionHistoryLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionHistoryLevelInput",
 		&returns,
 	)
 	return returns
@@ -712,7 +736,7 @@ func (j *jsiiProxy_WorkflowsWorkflow) UserEnvVarsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
 func NewWorkflowsWorkflow(scope constructs.Construct, id *string, config *WorkflowsWorkflowConfig) WorkflowsWorkflow {
 	_init_.Initialize()
 
@@ -730,7 +754,7 @@ func NewWorkflowsWorkflow(scope constructs.Construct, id *string, config *Workfl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.25.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
 func NewWorkflowsWorkflow_Override(w WorkflowsWorkflow, scope constructs.Construct, id *string, config *WorkflowsWorkflowConfig) {
 	_init_.Initialize()
 
@@ -811,6 +835,17 @@ func (j *jsiiProxy_WorkflowsWorkflow)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_WorkflowsWorkflow)SetExecutionHistoryLevel(val *string) {
+	if err := j.validateSetExecutionHistoryLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"executionHistoryLevel",
 		val,
 	)
 }
@@ -1355,6 +1390,14 @@ func (w *jsiiProxy_WorkflowsWorkflow) ResetDescription() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkflowsWorkflow) ResetExecutionHistoryLevel() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetExecutionHistoryLevel",
 		nil, // no parameters
 	)
 }
