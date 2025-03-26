@@ -87,6 +87,10 @@ func (c *jsiiProxy_ComputeImage) validatePutRawDiskParameters(value *ComputeImag
 	return nil
 }
 
+func (c *jsiiProxy_ComputeImage) validatePutShieldedInstanceInitialStateParameters(value *ComputeImageShieldedInstanceInitialState) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeImage) validatePutTimeoutsParameters(value *ComputeImageTimeouts) error {
 	return nil
 }

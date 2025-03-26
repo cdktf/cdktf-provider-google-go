@@ -147,7 +147,15 @@ func (j *jsiiProxy_ComputeRouterPeer) validateSetEnableIpv6Parameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) validateSetExportPoliciesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterPeer) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) validateSetImportPoliciesParameters(val *[]*string) error {
 	return nil
 }
 

@@ -47,7 +47,23 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) valid
 	return nil
 }
 
+func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) validatePutAppEngineVersionParameters(value *NetworkManagementConnectivityTestSourceAppEngineVersion) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) validatePutCloudFunctionParameters(value *NetworkManagementConnectivityTestSourceCloudFunction) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) validatePutCloudRunRevisionParameters(value *NetworkManagementConnectivityTestSourceCloudRunRevision) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) validateSetCloudSqlInstanceParameters(val *string) error {
 	return nil
 }
 
@@ -56,6 +72,10 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) valid
 }
 
 func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) validateSetGkeMasterClusterParameters(val *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/memorystore_instance google_memorystore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/memorystore_instance google_memorystore_instance}.
 type MemorystoreInstance interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -73,6 +73,9 @@ type MemorystoreInstance interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MaintenancePolicy() MemorystoreInstanceMaintenancePolicyOutputReference
+	MaintenancePolicyInput() *MemorystoreInstanceMaintenancePolicy
+	MaintenanceSchedule() MemorystoreInstanceMaintenanceScheduleList
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
@@ -167,6 +170,7 @@ type MemorystoreInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDesiredPscAutoConnections(value interface{})
+	PutMaintenancePolicy(value *MemorystoreInstanceMaintenancePolicy)
 	PutPersistenceConfig(value *MemorystoreInstancePersistenceConfig)
 	PutTimeouts(value *MemorystoreInstanceTimeouts)
 	PutZoneDistributionConfig(value *MemorystoreInstanceZoneDistributionConfig)
@@ -176,6 +180,7 @@ type MemorystoreInstance interface {
 	ResetEngineVersion()
 	ResetId()
 	ResetLabels()
+	ResetMaintenancePolicy()
 	ResetMode()
 	ResetNodeType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -515,6 +520,36 @@ func (j *jsiiProxy_MemorystoreInstance) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MemorystoreInstance) MaintenancePolicy() MemorystoreInstanceMaintenancePolicyOutputReference {
+	var returns MemorystoreInstanceMaintenancePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"maintenancePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) MaintenancePolicyInput() *MemorystoreInstanceMaintenancePolicy {
+	var returns *MemorystoreInstanceMaintenancePolicy
+	_jsii_.Get(
+		j,
+		"maintenancePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) MaintenanceSchedule() MemorystoreInstanceMaintenanceScheduleList {
+	var returns MemorystoreInstanceMaintenanceScheduleList
+	_jsii_.Get(
+		j,
+		"maintenanceSchedule",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MemorystoreInstance) Mode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -846,7 +881,7 @@ func (j *jsiiProxy_MemorystoreInstance) ZoneDistributionConfigInput() *Memorysto
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
 func NewMemorystoreInstance(scope constructs.Construct, id *string, config *MemorystoreInstanceConfig) MemorystoreInstance {
 	_init_.Initialize()
 
@@ -864,7 +899,7 @@ func NewMemorystoreInstance(scope constructs.Construct, id *string, config *Memo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
 func NewMemorystoreInstance_Override(m MemorystoreInstance, scope constructs.Construct, id *string, config *MemorystoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -1461,6 +1496,17 @@ func (m *jsiiProxy_MemorystoreInstance) PutDesiredPscAutoConnections(value inter
 	)
 }
 
+func (m *jsiiProxy_MemorystoreInstance) PutMaintenancePolicy(value *MemorystoreInstanceMaintenancePolicy) {
+	if err := m.validatePutMaintenancePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MemorystoreInstance) PutPersistenceConfig(value *MemorystoreInstancePersistenceConfig) {
 	if err := m.validatePutPersistenceConfigParameters(value); err != nil {
 		panic(err)
@@ -1538,6 +1584,14 @@ func (m *jsiiProxy_MemorystoreInstance) ResetLabels() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemorystoreInstance) ResetMaintenancePolicy() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMaintenancePolicy",
 		nil, // no parameters
 	)
 }

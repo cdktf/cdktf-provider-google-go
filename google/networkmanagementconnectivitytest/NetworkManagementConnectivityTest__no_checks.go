@@ -103,6 +103,10 @@ func validateNetworkManagementConnectivityTest_IsTerraformResourceParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetBypassFirewallChecksParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -144,6 +148,10 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetProvisionersPar
 }
 
 func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetRelatedProjectsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTest) validateSetRoundTripParameters(val interface{}) error {
 	return nil
 }
 

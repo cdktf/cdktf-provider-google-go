@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test}.
 type NetworkManagementConnectivityTest interface {
 	cdktf.TerraformResource
+	BypassFirewallChecks() interface{}
+	SetBypassFirewallChecks(val interface{})
+	BypassFirewallChecksInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -79,6 +82,9 @@ type NetworkManagementConnectivityTest interface {
 	RelatedProjects() *[]*string
 	SetRelatedProjects(val *[]*string)
 	RelatedProjectsInput() *[]*string
+	RoundTrip() interface{}
+	SetRoundTrip(val interface{})
+	RoundTripInput() interface{}
 	Source() NetworkManagementConnectivityTestSourceOutputReference
 	SourceInput() *NetworkManagementConnectivityTestSource
 	// Experimental.
@@ -136,6 +142,7 @@ type NetworkManagementConnectivityTest interface {
 	PutDestination(value *NetworkManagementConnectivityTestDestination)
 	PutSource(value *NetworkManagementConnectivityTestSource)
 	PutTimeouts(value *NetworkManagementConnectivityTestTimeouts)
+	ResetBypassFirewallChecks()
 	ResetDescription()
 	ResetId()
 	ResetLabels()
@@ -145,6 +152,7 @@ type NetworkManagementConnectivityTest interface {
 	ResetProject()
 	ResetProtocol()
 	ResetRelatedProjects()
+	ResetRoundTrip()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -162,6 +170,26 @@ type NetworkManagementConnectivityTest interface {
 // The jsii proxy struct for NetworkManagementConnectivityTest
 type jsiiProxy_NetworkManagementConnectivityTest struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTest) BypassFirewallChecks() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bypassFirewallChecks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTest) BypassFirewallChecksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bypassFirewallChecksInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NetworkManagementConnectivityTest) CdktfStack() cdktf.TerraformStack {
@@ -464,6 +492,26 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) RelatedProjectsInput() *[]
 	return returns
 }
 
+func (j *jsiiProxy_NetworkManagementConnectivityTest) RoundTrip() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"roundTrip",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTest) RoundTripInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"roundTripInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkManagementConnectivityTest) Source() NetworkManagementConnectivityTestSourceOutputReference {
 	var returns NetworkManagementConnectivityTestSourceOutputReference
 	_jsii_.Get(
@@ -545,7 +593,7 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test} Resource.
 func NewNetworkManagementConnectivityTest(scope constructs.Construct, id *string, config *NetworkManagementConnectivityTestConfig) NetworkManagementConnectivityTest {
 	_init_.Initialize()
 
@@ -563,7 +611,7 @@ func NewNetworkManagementConnectivityTest(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/network_management_connectivity_test google_network_management_connectivity_test} Resource.
 func NewNetworkManagementConnectivityTest_Override(n NetworkManagementConnectivityTest, scope constructs.Construct, id *string, config *NetworkManagementConnectivityTestConfig) {
 	_init_.Initialize()
 
@@ -571,6 +619,17 @@ func NewNetworkManagementConnectivityTest_Override(n NetworkManagementConnectivi
 		"@cdktf/provider-google.networkManagementConnectivityTest.NetworkManagementConnectivityTest",
 		[]interface{}{scope, id, config},
 		n,
+	)
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTest)SetBypassFirewallChecks(val interface{}) {
+	if err := j.validateSetBypassFirewallChecksParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bypassFirewallChecks",
+		val,
 	)
 }
 
@@ -715,6 +774,17 @@ func (j *jsiiProxy_NetworkManagementConnectivityTest)SetRelatedProjects(val *[]*
 	_jsii_.Set(
 		j,
 		"relatedProjects",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTest)SetRoundTrip(val interface{}) {
+	if err := j.validateSetRoundTripParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roundTrip",
 		val,
 	)
 }
@@ -1105,6 +1175,14 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) PutTimeouts(value *Network
 	)
 }
 
+func (n *jsiiProxy_NetworkManagementConnectivityTest) ResetBypassFirewallChecks() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetBypassFirewallChecks",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetworkManagementConnectivityTest) ResetDescription() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1157,6 +1235,14 @@ func (n *jsiiProxy_NetworkManagementConnectivityTest) ResetRelatedProjects() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetRelatedProjects",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkManagementConnectivityTest) ResetRoundTrip() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRoundTrip",
 		nil, // no parameters
 	)
 }

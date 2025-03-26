@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/storage_anywhere_cache google_storage_anywhere_cache}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/storage_anywhere_cache google_storage_anywhere_cache}.
 type StorageAnywhereCache interface {
 	cdktf.TerraformResource
 	AdmissionPolicy() *string
@@ -483,7 +483,7 @@ func (j *jsiiProxy_StorageAnywhereCache) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/storage_anywhere_cache google_storage_anywhere_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/storage_anywhere_cache google_storage_anywhere_cache} Resource.
 func NewStorageAnywhereCache(scope constructs.Construct, id *string, config *StorageAnywhereCacheConfig) StorageAnywhereCache {
 	_init_.Initialize()
 
@@ -501,7 +501,7 @@ func NewStorageAnywhereCache(scope constructs.Construct, id *string, config *Sto
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/storage_anywhere_cache google_storage_anywhere_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/storage_anywhere_cache google_storage_anywhere_cache} Resource.
 func NewStorageAnywhereCache_Override(s StorageAnywhereCache, scope constructs.Construct, id *string, config *StorageAnywhereCacheConfig) {
 	_init_.Initialize()
 

@@ -13,6 +13,15 @@ import (
 
 type NetworkManagementConnectivityTestSourceOutputReference interface {
 	cdktf.ComplexObject
+	AppEngineVersion() NetworkManagementConnectivityTestSourceAppEngineVersionOutputReference
+	AppEngineVersionInput() *NetworkManagementConnectivityTestSourceAppEngineVersion
+	CloudFunction() NetworkManagementConnectivityTestSourceCloudFunctionOutputReference
+	CloudFunctionInput() *NetworkManagementConnectivityTestSourceCloudFunction
+	CloudRunRevision() NetworkManagementConnectivityTestSourceCloudRunRevisionOutputReference
+	CloudRunRevisionInput() *NetworkManagementConnectivityTestSourceCloudRunRevision
+	CloudSqlInstance() *string
+	SetCloudSqlInstance(val *string)
+	CloudSqlInstanceInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,6 +39,9 @@ type NetworkManagementConnectivityTestSourceOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GkeMasterCluster() *string
+	SetGkeMasterCluster(val *string)
+	GkeMasterClusterInput() *string
 	Instance() *string
 	SetInstance(val *string)
 	InstanceInput() *string
@@ -82,6 +94,14 @@ type NetworkManagementConnectivityTestSourceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAppEngineVersion(value *NetworkManagementConnectivityTestSourceAppEngineVersion)
+	PutCloudFunction(value *NetworkManagementConnectivityTestSourceCloudFunction)
+	PutCloudRunRevision(value *NetworkManagementConnectivityTestSourceCloudRunRevision)
+	ResetAppEngineVersion()
+	ResetCloudFunction()
+	ResetCloudRunRevision()
+	ResetCloudSqlInstance()
+	ResetGkeMasterCluster()
 	ResetInstance()
 	ResetIpAddress()
 	ResetNetwork()
@@ -101,6 +121,86 @@ type NetworkManagementConnectivityTestSourceOutputReference interface {
 // The jsii proxy struct for NetworkManagementConnectivityTestSourceOutputReference
 type jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) AppEngineVersion() NetworkManagementConnectivityTestSourceAppEngineVersionOutputReference {
+	var returns NetworkManagementConnectivityTestSourceAppEngineVersionOutputReference
+	_jsii_.Get(
+		j,
+		"appEngineVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) AppEngineVersionInput() *NetworkManagementConnectivityTestSourceAppEngineVersion {
+	var returns *NetworkManagementConnectivityTestSourceAppEngineVersion
+	_jsii_.Get(
+		j,
+		"appEngineVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) CloudFunction() NetworkManagementConnectivityTestSourceCloudFunctionOutputReference {
+	var returns NetworkManagementConnectivityTestSourceCloudFunctionOutputReference
+	_jsii_.Get(
+		j,
+		"cloudFunction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) CloudFunctionInput() *NetworkManagementConnectivityTestSourceCloudFunction {
+	var returns *NetworkManagementConnectivityTestSourceCloudFunction
+	_jsii_.Get(
+		j,
+		"cloudFunctionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) CloudRunRevision() NetworkManagementConnectivityTestSourceCloudRunRevisionOutputReference {
+	var returns NetworkManagementConnectivityTestSourceCloudRunRevisionOutputReference
+	_jsii_.Get(
+		j,
+		"cloudRunRevision",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) CloudRunRevisionInput() *NetworkManagementConnectivityTestSourceCloudRunRevision {
+	var returns *NetworkManagementConnectivityTestSourceCloudRunRevision
+	_jsii_.Get(
+		j,
+		"cloudRunRevisionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) CloudSqlInstance() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudSqlInstance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) CloudSqlInstanceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudSqlInstanceInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) ComplexObjectIndex() interface{} {
@@ -138,6 +238,26 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) Fqn()
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) GkeMasterCluster() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkeMasterCluster",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) GkeMasterClusterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkeMasterClusterInput",
 		&returns,
 	)
 	return returns
@@ -321,6 +441,17 @@ func NewNetworkManagementConnectivityTestSourceOutputReference_Override(n Networ
 	)
 }
 
+func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference)SetCloudSqlInstance(val *string) {
+	if err := j.validateSetCloudSqlInstanceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cloudSqlInstance",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -339,6 +470,17 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference)SetCom
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference)SetGkeMasterCluster(val *string) {
+	if err := j.validateSetGkeMasterClusterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gkeMasterCluster",
 		val,
 	)
 }
@@ -626,6 +768,79 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) Inter
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) PutAppEngineVersion(value *NetworkManagementConnectivityTestSourceAppEngineVersion) {
+	if err := n.validatePutAppEngineVersionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putAppEngineVersion",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) PutCloudFunction(value *NetworkManagementConnectivityTestSourceCloudFunction) {
+	if err := n.validatePutCloudFunctionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putCloudFunction",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) PutCloudRunRevision(value *NetworkManagementConnectivityTestSourceCloudRunRevision) {
+	if err := n.validatePutCloudRunRevisionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putCloudRunRevision",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) ResetAppEngineVersion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAppEngineVersion",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) ResetCloudFunction() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCloudFunction",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) ResetCloudRunRevision() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCloudRunRevision",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) ResetCloudSqlInstance() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCloudSqlInstance",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) ResetGkeMasterCluster() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetGkeMasterCluster",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) ResetInstance() {

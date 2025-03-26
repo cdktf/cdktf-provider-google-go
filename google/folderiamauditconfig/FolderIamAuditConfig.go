@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/folder_iam_audit_config google_folder_iam_audit_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/folder_iam_audit_config google_folder_iam_audit_config}.
 type FolderIamAuditConfig interface {
 	cdktf.TerraformResource
 	AuditLogConfig() FolderIamAuditConfigAuditLogConfigList
@@ -390,7 +390,7 @@ func (j *jsiiProxy_FolderIamAuditConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/folder_iam_audit_config google_folder_iam_audit_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/folder_iam_audit_config google_folder_iam_audit_config} Resource.
 func NewFolderIamAuditConfig(scope constructs.Construct, id *string, config *FolderIamAuditConfigConfig) FolderIamAuditConfig {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewFolderIamAuditConfig(scope constructs.Construct, id *string, config *Fol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/folder_iam_audit_config google_folder_iam_audit_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/folder_iam_audit_config google_folder_iam_audit_config} Resource.
 func NewFolderIamAuditConfig_Override(f FolderIamAuditConfig, scope constructs.Construct, id *string, config *FolderIamAuditConfigConfig) {
 	_init_.Initialize()
 

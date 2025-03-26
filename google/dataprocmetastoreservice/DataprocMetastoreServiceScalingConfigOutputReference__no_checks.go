@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigOutputReference) validat
 	return nil
 }
 
+func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigOutputReference) validatePutAutoscalingConfigParameters(value *DataprocMetastoreServiceScalingConfigAutoscalingConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -13,6 +13,9 @@ import (
 
 type NetworkManagementConnectivityTestDestinationOutputReference interface {
 	cdktf.ComplexObject
+	CloudSqlInstance() *string
+	SetCloudSqlInstance(val *string)
+	CloudSqlInstanceInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,8 +31,17 @@ type NetworkManagementConnectivityTestDestinationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ForwardingRule() *string
+	SetForwardingRule(val *string)
+	ForwardingRuleInput() *string
+	Fqdn() *string
+	SetFqdn(val *string)
+	FqdnInput() *string
 	// Experimental.
 	Fqn() *string
+	GkeMasterCluster() *string
+	SetGkeMasterCluster(val *string)
+	GkeMasterClusterInput() *string
 	Instance() *string
 	SetInstance(val *string)
 	InstanceInput() *string
@@ -47,6 +59,12 @@ type NetworkManagementConnectivityTestDestinationOutputReference interface {
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
+	RedisCluster() *string
+	SetRedisCluster(val *string)
+	RedisClusterInput() *string
+	RedisInstance() *string
+	SetRedisInstance(val *string)
+	RedisInstanceInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,11 +97,17 @@ type NetworkManagementConnectivityTestDestinationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCloudSqlInstance()
+	ResetForwardingRule()
+	ResetFqdn()
+	ResetGkeMasterCluster()
 	ResetInstance()
 	ResetIpAddress()
 	ResetNetwork()
 	ResetPort()
 	ResetProjectId()
+	ResetRedisCluster()
+	ResetRedisInstance()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -97,6 +121,26 @@ type NetworkManagementConnectivityTestDestinationOutputReference interface {
 // The jsii proxy struct for NetworkManagementConnectivityTestDestinationOutputReference
 type jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) CloudSqlInstance() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudSqlInstance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) CloudSqlInstanceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudSqlInstanceInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) ComplexObjectIndex() interface{} {
@@ -129,11 +173,71 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) ForwardingRule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"forwardingRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) ForwardingRuleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"forwardingRuleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) Fqdn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqdn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) FqdnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqdnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) GkeMasterCluster() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkeMasterCluster",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) GkeMasterClusterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkeMasterClusterInput",
 		&returns,
 	)
 	return returns
@@ -249,6 +353,46 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) RedisCluster() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redisCluster",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) RedisClusterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redisClusterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) RedisInstance() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redisInstance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) RedisInstanceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redisInstanceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -297,6 +441,17 @@ func NewNetworkManagementConnectivityTestDestinationOutputReference_Override(n N
 	)
 }
 
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetCloudSqlInstance(val *string) {
+	if err := j.validateSetCloudSqlInstanceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cloudSqlInstance",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -315,6 +470,39 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)S
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetForwardingRule(val *string) {
+	if err := j.validateSetForwardingRuleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forwardingRule",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetFqdn(val *string) {
+	if err := j.validateSetFqdnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fqdn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetGkeMasterCluster(val *string) {
+	if err := j.validateSetGkeMasterClusterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gkeMasterCluster",
 		val,
 	)
 }
@@ -381,6 +569,28 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)S
 	_jsii_.Set(
 		j,
 		"projectId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetRedisCluster(val *string) {
+	if err := j.validateSetRedisClusterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"redisCluster",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference)SetRedisInstance(val *string) {
+	if err := j.validateSetRedisInstanceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"redisInstance",
 		val,
 	)
 }
@@ -593,6 +803,38 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	return returns
 }
 
+func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) ResetCloudSqlInstance() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCloudSqlInstance",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) ResetForwardingRule() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetForwardingRule",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) ResetFqdn() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetFqdn",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) ResetGkeMasterCluster() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetGkeMasterCluster",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) ResetInstance() {
 	_jsii_.InvokeVoid(
 		n,
@@ -629,6 +871,22 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	_jsii_.InvokeVoid(
 		n,
 		"resetProjectId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) ResetRedisCluster() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRedisCluster",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) ResetRedisInstance() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRedisInstance",
 		nil, // no parameters
 	)
 }

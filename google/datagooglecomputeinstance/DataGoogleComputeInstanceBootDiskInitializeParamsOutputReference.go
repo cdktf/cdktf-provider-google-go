@@ -13,6 +13,7 @@ import (
 
 type DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference interface {
 	cdktf.ComplexObject
+	Architecture() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -87,6 +88,16 @@ type DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference interface 
 // The jsii proxy struct for DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference
 type jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference) Architecture() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architecture",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsOutputReference) ComplexObjectIndex() interface{} {

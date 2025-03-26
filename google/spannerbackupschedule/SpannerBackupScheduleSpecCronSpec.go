@@ -19,7 +19,7 @@ type SpannerBackupScheduleSpecCronSpec struct {
 	//   0 2 * * 0    : once a week every Sunday at 2 past midnight in UTC.
 	//   0 2 8 * *    : once a month on 8th day at 2 past midnight in UTC.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/spanner_backup_schedule#text SpannerBackupSchedule#text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/spanner_backup_schedule#text SpannerBackupSchedule#text}
 	Text *string `field:"optional" json:"text" yaml:"text"`
 }
 

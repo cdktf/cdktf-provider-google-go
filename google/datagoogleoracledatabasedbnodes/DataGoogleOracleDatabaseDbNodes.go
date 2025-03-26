@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/data-sources/oracle_database_db_nodes google_oracle_database_db_nodes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/data-sources/oracle_database_db_nodes google_oracle_database_db_nodes}.
 type DataGoogleOracleDatabaseDbNodes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseDbNodes) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/data-sources/oracle_database_db_nodes google_oracle_database_db_nodes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/data-sources/oracle_database_db_nodes google_oracle_database_db_nodes} Data Source.
 func NewDataGoogleOracleDatabaseDbNodes(scope constructs.Construct, id *string, config *DataGoogleOracleDatabaseDbNodesConfig) DataGoogleOracleDatabaseDbNodes {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataGoogleOracleDatabaseDbNodes(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/data-sources/oracle_database_db_nodes google_oracle_database_db_nodes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/data-sources/oracle_database_db_nodes google_oracle_database_db_nodes} Data Source.
 func NewDataGoogleOracleDatabaseDbNodes_Override(d DataGoogleOracleDatabaseDbNodes, scope constructs.Construct, id *string, config *DataGoogleOracleDatabaseDbNodesConfig) {
 	_init_.Initialize()
 

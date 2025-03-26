@@ -51,6 +51,10 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigOutputReference) v
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigOutputReference) validatePutIpEndpointsConfigParameters(value *ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

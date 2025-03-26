@@ -101,6 +101,14 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) validateSetCloudSqlInstanceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -166,6 +174,30 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) validateSetForwardingRuleParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) validateSetFqdnParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) validateSetGkeMasterClusterParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) validateSetInstanceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -207,6 +239,22 @@ func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) 
 }
 
 func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) validateSetProjectIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) validateSetRedisClusterParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_NetworkManagementConnectivityTestDestinationOutputReference) validateSetRedisInstanceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

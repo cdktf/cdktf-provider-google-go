@@ -141,6 +141,8 @@ type ContainerClusterNodeConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WindowsNodeConfig() ContainerClusterNodeConfigWindowsNodeConfigOutputReference
+	WindowsNodeConfigInput() *ContainerClusterNodeConfigWindowsNodeConfig
 	WorkloadMetadataConfig() ContainerClusterNodeConfigWorkloadMetadataConfigOutputReference
 	WorkloadMetadataConfigInput() *ContainerClusterNodeConfigWorkloadMetadataConfig
 	// Experimental.
@@ -184,6 +186,7 @@ type ContainerClusterNodeConfigOutputReference interface {
 	PutShieldedInstanceConfig(value *ContainerClusterNodeConfigShieldedInstanceConfig)
 	PutSoleTenantConfig(value *ContainerClusterNodeConfigSoleTenantConfig)
 	PutTaint(value interface{})
+	PutWindowsNodeConfig(value *ContainerClusterNodeConfigWindowsNodeConfig)
 	PutWorkloadMetadataConfig(value *ContainerClusterNodeConfigWorkloadMetadataConfig)
 	ResetAdvancedMachineFeatures()
 	ResetBootDiskKmsKey()
@@ -224,6 +227,7 @@ type ContainerClusterNodeConfigOutputReference interface {
 	ResetStoragePools()
 	ResetTags()
 	ResetTaint()
+	ResetWindowsNodeConfig()
 	ResetWorkloadMetadataConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -1100,6 +1104,26 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) TerraformResource(
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) WindowsNodeConfig() ContainerClusterNodeConfigWindowsNodeConfigOutputReference {
+	var returns ContainerClusterNodeConfigWindowsNodeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"windowsNodeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) WindowsNodeConfigInput() *ContainerClusterNodeConfigWindowsNodeConfig {
+	var returns *ContainerClusterNodeConfigWindowsNodeConfig
+	_jsii_.Get(
+		j,
+		"windowsNodeConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) WorkloadMetadataConfig() ContainerClusterNodeConfigWorkloadMetadataConfigOutputReference {
 	var returns ContainerClusterNodeConfigWorkloadMetadataConfigOutputReference
 	_jsii_.Get(
@@ -1818,6 +1842,17 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutTaint(value int
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutWindowsNodeConfig(value *ContainerClusterNodeConfigWindowsNodeConfig) {
+	if err := c.validatePutWindowsNodeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putWindowsNodeConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutWorkloadMetadataConfig(value *ContainerClusterNodeConfigWorkloadMetadataConfig) {
 	if err := c.validatePutWorkloadMetadataConfigParameters(value); err != nil {
 		panic(err)
@@ -2137,6 +2172,14 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetTaint() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTaint",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetWindowsNodeConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetWindowsNodeConfig",
 		nil, // no parameters
 	)
 }

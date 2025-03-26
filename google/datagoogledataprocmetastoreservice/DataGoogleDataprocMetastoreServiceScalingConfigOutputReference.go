@@ -13,6 +13,7 @@ import (
 
 type DataGoogleDataprocMetastoreServiceScalingConfigOutputReference interface {
 	cdktf.ComplexObject
+	AutoscalingConfig() DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -79,6 +80,16 @@ type DataGoogleDataprocMetastoreServiceScalingConfigOutputReference interface {
 // The jsii proxy struct for DataGoogleDataprocMetastoreServiceScalingConfigOutputReference
 type jsiiProxy_DataGoogleDataprocMetastoreServiceScalingConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceScalingConfigOutputReference) AutoscalingConfig() DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigList {
+	var returns DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigList
+	_jsii_.Get(
+		j,
+		"autoscalingConfig",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceScalingConfigOutputReference) ComplexObjectIndex() interface{} {

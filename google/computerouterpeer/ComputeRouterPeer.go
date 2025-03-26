@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/compute_router_peer google_compute_router_peer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/compute_router_peer google_compute_router_peer}.
 type ComputeRouterPeer interface {
 	cdktf.TerraformResource
 	AdvertisedGroups() *[]*string
@@ -58,6 +58,9 @@ type ComputeRouterPeer interface {
 	EnableIpv6() interface{}
 	SetEnableIpv6(val interface{})
 	EnableIpv6Input() interface{}
+	ExportPolicies() *[]*string
+	SetExportPolicies(val *[]*string)
+	ExportPoliciesInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -69,6 +72,9 @@ type ComputeRouterPeer interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	ImportPolicies() *[]*string
+	SetImportPolicies(val *[]*string)
+	ImportPoliciesInput() *[]*string
 	Interface() *string
 	SetInterface(val *string)
 	InterfaceInput() *string
@@ -201,7 +207,9 @@ type ComputeRouterPeer interface {
 	ResetEnable()
 	ResetEnableIpv4()
 	ResetEnableIpv6()
+	ResetExportPolicies()
 	ResetId()
+	ResetImportPolicies()
 	ResetIpAddress()
 	ResetIpv4NexthopAddress()
 	ResetIpv6NexthopAddress()
@@ -486,6 +494,26 @@ func (j *jsiiProxy_ComputeRouterPeer) EnableIpv6Input() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRouterPeer) ExportPolicies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"exportPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) ExportPoliciesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"exportPoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRouterPeer) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -531,6 +559,26 @@ func (j *jsiiProxy_ComputeRouterPeer) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) ImportPolicies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"importPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouterPeer) ImportPoliciesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"importPoliciesInput",
 		&returns,
 	)
 	return returns
@@ -987,7 +1035,7 @@ func (j *jsiiProxy_ComputeRouterPeer) ZeroCustomLearnedRoutePriorityInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
 func NewComputeRouterPeer(scope constructs.Construct, id *string, config *ComputeRouterPeerConfig) ComputeRouterPeer {
 	_init_.Initialize()
 
@@ -1005,7 +1053,7 @@ func NewComputeRouterPeer(scope constructs.Construct, id *string, config *Comput
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/compute_router_peer google_compute_router_peer} Resource.
 func NewComputeRouterPeer_Override(c ComputeRouterPeer, scope constructs.Construct, id *string, config *ComputeRouterPeerConfig) {
 	_init_.Initialize()
 
@@ -1123,6 +1171,17 @@ func (j *jsiiProxy_ComputeRouterPeer)SetEnableIpv6(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_ComputeRouterPeer)SetExportPolicies(val *[]*string) {
+	if err := j.validateSetExportPoliciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exportPolicies",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeRouterPeer)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -1138,6 +1197,17 @@ func (j *jsiiProxy_ComputeRouterPeer)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeRouterPeer)SetImportPolicies(val *[]*string) {
+	if err := j.validateSetImportPoliciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"importPolicies",
 		val,
 	)
 }
@@ -1825,10 +1895,26 @@ func (c *jsiiProxy_ComputeRouterPeer) ResetEnableIpv6() {
 	)
 }
 
+func (c *jsiiProxy_ComputeRouterPeer) ResetExportPolicies() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExportPolicies",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeRouterPeer) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouterPeer) ResetImportPolicies() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetImportPolicies",
 		nil, // no parameters
 	)
 }

@@ -34,6 +34,7 @@ type DataGoogleComputeInstanceBootDiskOutputReference interface {
 	DiskEncryptionKeySha256() *string
 	// Experimental.
 	Fqn() *string
+	GuestOsFeatures() *[]*string
 	InitializeParams() DataGoogleComputeInstanceBootDiskInitializeParamsList
 	Interface() *string
 	InternalValue() *DataGoogleComputeInstanceBootDisk
@@ -163,6 +164,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) Fqn() *stri
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskOutputReference) GuestOsFeatures() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeatures",
 		&returns,
 	)
 	return returns

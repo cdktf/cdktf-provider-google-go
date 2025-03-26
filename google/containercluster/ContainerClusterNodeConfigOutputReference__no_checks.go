@@ -115,6 +115,10 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutTaintPa
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutWindowsNodeConfigParameters(value *ContainerClusterNodeConfigWindowsNodeConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) validatePutWorkloadMetadataConfigParameters(value *ContainerClusterNodeConfigWorkloadMetadataConfig) error {
 	return nil
 }

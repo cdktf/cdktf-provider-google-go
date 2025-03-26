@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/data-sources/data_fusion_instance_iam_policy google_data_fusion_instance_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/data-sources/data_fusion_instance_iam_policy google_data_fusion_instance_iam_policy}.
 type DataGoogleDataFusionInstanceIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataGoogleDataFusionInstanceIamPolicy) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/data-sources/data_fusion_instance_iam_policy google_data_fusion_instance_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/data-sources/data_fusion_instance_iam_policy google_data_fusion_instance_iam_policy} Data Source.
 func NewDataGoogleDataFusionInstanceIamPolicy(scope constructs.Construct, id *string, config *DataGoogleDataFusionInstanceIamPolicyConfig) DataGoogleDataFusionInstanceIamPolicy {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewDataGoogleDataFusionInstanceIamPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/data-sources/data_fusion_instance_iam_policy google_data_fusion_instance_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/data-sources/data_fusion_instance_iam_policy google_data_fusion_instance_iam_policy} Data Source.
 func NewDataGoogleDataFusionInstanceIamPolicy_Override(d DataGoogleDataFusionInstanceIamPolicy, scope constructs.Construct, id *string, config *DataGoogleDataFusionInstanceIamPolicyConfig) {
 	_init_.Initialize()
 

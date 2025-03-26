@@ -40,6 +40,9 @@ type ComputeInstanceBootDiskOutputReference interface {
 	DiskEncryptionKeySha256() *string
 	// Experimental.
 	Fqn() *string
+	GuestOsFeatures() *[]*string
+	SetGuestOsFeatures(val *[]*string)
+	GuestOsFeaturesInput() *[]*string
 	InitializeParams() ComputeInstanceBootDiskInitializeParamsOutputReference
 	InitializeParamsInput() *ComputeInstanceBootDiskInitializeParams
 	Interface() *string
@@ -92,6 +95,7 @@ type ComputeInstanceBootDiskOutputReference interface {
 	ResetAutoDelete()
 	ResetDeviceName()
 	ResetDiskEncryptionKeyRaw()
+	ResetGuestOsFeatures()
 	ResetInitializeParams()
 	ResetInterface()
 	ResetKmsKeySelfLink()
@@ -217,6 +221,26 @@ func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) GuestOsFeatures() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) GuestOsFeaturesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeaturesInput",
 		&returns,
 	)
 	return returns
@@ -431,6 +455,17 @@ func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference)SetDiskEncryptionKeyRa
 	_jsii_.Set(
 		j,
 		"diskEncryptionKeyRaw",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference)SetGuestOsFeatures(val *[]*string) {
+	if err := j.validateSetGuestOsFeaturesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"guestOsFeatures",
 		val,
 	)
 }
@@ -729,6 +764,14 @@ func (c *jsiiProxy_ComputeInstanceBootDiskOutputReference) ResetDiskEncryptionKe
 	_jsii_.InvokeVoid(
 		c,
 		"resetDiskEncryptionKeyRaw",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceBootDiskOutputReference) ResetGuestOsFeatures() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGuestOsFeatures",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -107,6 +107,9 @@ type GoogleProvider interface {
 	CertificateManagerCustomEndpoint() *string
 	SetCertificateManagerCustomEndpoint(val *string)
 	CertificateManagerCustomEndpointInput() *string
+	ChronicleCustomEndpoint() *string
+	SetChronicleCustomEndpoint(val *string)
+	ChronicleCustomEndpointInput() *string
 	CloudAssetCustomEndpoint() *string
 	SetCloudAssetCustomEndpoint(val *string)
 	CloudAssetCustomEndpointInput() *string
@@ -350,6 +353,9 @@ type GoogleProvider interface {
 	LookerCustomEndpoint() *string
 	SetLookerCustomEndpoint(val *string)
 	LookerCustomEndpointInput() *string
+	LustreCustomEndpoint() *string
+	SetLustreCustomEndpoint(val *string)
+	LustreCustomEndpointInput() *string
 	ManagedKafkaCustomEndpoint() *string
 	SetManagedKafkaCustomEndpoint(val *string)
 	ManagedKafkaCustomEndpointInput() *string
@@ -399,6 +405,9 @@ type GoogleProvider interface {
 	OsConfigCustomEndpoint() *string
 	SetOsConfigCustomEndpoint(val *string)
 	OsConfigCustomEndpointInput() *string
+	OsConfigV2CustomEndpoint() *string
+	SetOsConfigV2CustomEndpoint(val *string)
+	OsConfigV2CustomEndpointInput() *string
 	OsLoginCustomEndpoint() *string
 	SetOsLoginCustomEndpoint(val *string)
 	OsLoginCustomEndpointInput() *string
@@ -491,6 +500,9 @@ type GoogleProvider interface {
 	SqlCustomEndpoint() *string
 	SetSqlCustomEndpoint(val *string)
 	SqlCustomEndpointInput() *string
+	StorageControlCustomEndpoint() *string
+	SetStorageControlCustomEndpoint(val *string)
+	StorageControlCustomEndpointInput() *string
 	StorageCustomEndpoint() *string
 	SetStorageCustomEndpoint(val *string)
 	StorageCustomEndpointInput() *string
@@ -580,6 +592,7 @@ type GoogleProvider interface {
 	ResetBinaryAuthorizationCustomEndpoint()
 	ResetBlockchainNodeEngineCustomEndpoint()
 	ResetCertificateManagerCustomEndpoint()
+	ResetChronicleCustomEndpoint()
 	ResetCloudAssetCustomEndpoint()
 	ResetCloudBillingCustomEndpoint()
 	ResetCloudBuildCustomEndpoint()
@@ -659,6 +672,7 @@ type GoogleProvider interface {
 	ResetKmsCustomEndpoint()
 	ResetLoggingCustomEndpoint()
 	ResetLookerCustomEndpoint()
+	ResetLustreCustomEndpoint()
 	ResetManagedKafkaCustomEndpoint()
 	ResetMemcacheCustomEndpoint()
 	ResetMemorystoreCustomEndpoint()
@@ -674,6 +688,7 @@ type GoogleProvider interface {
 	ResetOracleDatabaseCustomEndpoint()
 	ResetOrgPolicyCustomEndpoint()
 	ResetOsConfigCustomEndpoint()
+	ResetOsConfigV2CustomEndpoint()
 	ResetOsLoginCustomEndpoint()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -707,6 +722,7 @@ type GoogleProvider interface {
 	ResetSourceRepoCustomEndpoint()
 	ResetSpannerCustomEndpoint()
 	ResetSqlCustomEndpoint()
+	ResetStorageControlCustomEndpoint()
 	ResetStorageCustomEndpoint()
 	ResetStorageInsightsCustomEndpoint()
 	ResetStorageTransferCustomEndpoint()
@@ -1346,6 +1362,26 @@ func (j *jsiiProxy_GoogleProvider) CertificateManagerCustomEndpointInput() *stri
 	_jsii_.Get(
 		j,
 		"certificateManagerCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ChronicleCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"chronicleCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ChronicleCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"chronicleCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -2961,6 +2997,26 @@ func (j *jsiiProxy_GoogleProvider) LookerCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) LustreCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lustreCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) LustreCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lustreCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) ManagedKafkaCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3276,6 +3332,26 @@ func (j *jsiiProxy_GoogleProvider) OsConfigCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"osConfigCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) OsConfigV2CustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osConfigV2CustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) OsConfigV2CustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osConfigV2CustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3891,6 +3967,26 @@ func (j *jsiiProxy_GoogleProvider) SqlCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) StorageControlCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageControlCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) StorageControlCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageControlCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) StorageCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -4242,7 +4338,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -4260,7 +4356,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -4513,6 +4609,14 @@ func (j *jsiiProxy_GoogleProvider)SetCertificateManagerCustomEndpoint(val *strin
 	_jsii_.Set(
 		j,
 		"certificateManagerCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetChronicleCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"chronicleCustomEndpoint",
 		val,
 	)
 }
@@ -5149,6 +5253,14 @@ func (j *jsiiProxy_GoogleProvider)SetLookerCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetLustreCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"lustreCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetManagedKafkaCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -5265,6 +5377,14 @@ func (j *jsiiProxy_GoogleProvider)SetOsConfigCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"osConfigCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetOsConfigV2CustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"osConfigV2CustomEndpoint",
 		val,
 	)
 }
@@ -5505,6 +5625,14 @@ func (j *jsiiProxy_GoogleProvider)SetSqlCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"sqlCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetStorageControlCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"storageControlCustomEndpoint",
 		val,
 	)
 }
@@ -6001,6 +6129,14 @@ func (g *jsiiProxy_GoogleProvider) ResetCertificateManagerCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetCertificateManagerCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetChronicleCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetChronicleCustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -6637,6 +6773,14 @@ func (g *jsiiProxy_GoogleProvider) ResetLookerCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetLustreCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLustreCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetManagedKafkaCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6753,6 +6897,14 @@ func (g *jsiiProxy_GoogleProvider) ResetOsConfigCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOsConfigCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetOsConfigV2CustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOsConfigV2CustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -7001,6 +7153,14 @@ func (g *jsiiProxy_GoogleProvider) ResetSqlCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSqlCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetStorageControlCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStorageControlCustomEndpoint",
 		nil, // no parameters
 	)
 }

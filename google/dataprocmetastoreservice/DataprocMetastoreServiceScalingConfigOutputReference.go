@@ -13,6 +13,8 @@ import (
 
 type DataprocMetastoreServiceScalingConfigOutputReference interface {
 	cdktf.ComplexObject
+	AutoscalingConfig() DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference
+	AutoscalingConfigInput() *DataprocMetastoreServiceScalingConfigAutoscalingConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +72,8 @@ type DataprocMetastoreServiceScalingConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAutoscalingConfig(value *DataprocMetastoreServiceScalingConfigAutoscalingConfig)
+	ResetAutoscalingConfig()
 	ResetInstanceSize()
 	ResetScalingFactor()
 	// Produce the Token's value at resolution time.
@@ -85,6 +89,26 @@ type DataprocMetastoreServiceScalingConfigOutputReference interface {
 // The jsii proxy struct for DataprocMetastoreServiceScalingConfigOutputReference
 type jsiiProxy_DataprocMetastoreServiceScalingConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataprocMetastoreServiceScalingConfigOutputReference) AutoscalingConfig() DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference {
+	var returns DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"autoscalingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocMetastoreServiceScalingConfigOutputReference) AutoscalingConfigInput() *DataprocMetastoreServiceScalingConfigAutoscalingConfig {
+	var returns *DataprocMetastoreServiceScalingConfigAutoscalingConfig
+	_jsii_.Get(
+		j,
+		"autoscalingConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataprocMetastoreServiceScalingConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -486,6 +510,25 @@ func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigOutputReference) PutAutoscalingConfig(value *DataprocMetastoreServiceScalingConfigAutoscalingConfig) {
+	if err := d.validatePutAutoscalingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAutoscalingConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigOutputReference) ResetAutoscalingConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAutoscalingConfig",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigOutputReference) ResetInstanceSize() {

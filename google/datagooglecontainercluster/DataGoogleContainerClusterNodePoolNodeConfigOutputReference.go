@@ -80,6 +80,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WindowsNodeConfig() DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigList
 	WorkloadMetadataConfig() DataGoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigList
 	// Experimental.
 	ComputeFqn() *string
@@ -585,6 +586,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) WindowsNodeConfig() DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigList
+	_jsii_.Get(
+		j,
+		"windowsNodeConfig",
 		&returns,
 	)
 	return returns

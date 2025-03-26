@@ -13,6 +13,9 @@ import (
 
 type ComputeInstanceBootDiskInitializeParamsOutputReference interface {
 	cdktf.ComplexObject
+	Architecture() *string
+	SetArchitecture(val *string)
+	ArchitectureInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -94,6 +97,7 @@ type ComputeInstanceBootDiskInitializeParamsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetArchitecture()
 	ResetEnableConfidentialCompute()
 	ResetImage()
 	ResetLabels()
@@ -117,6 +121,26 @@ type ComputeInstanceBootDiskInitializeParamsOutputReference interface {
 // The jsii proxy struct for ComputeInstanceBootDiskInitializeParamsOutputReference
 type jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) Architecture() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architecture",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) ArchitectureInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architectureInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) ComplexObjectIndex() interface{} {
@@ -414,6 +438,17 @@ func NewComputeInstanceBootDiskInitializeParamsOutputReference_Override(c Comput
 		"@cdktf/provider-google.computeInstance.ComputeInstanceBootDiskInitializeParamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference)SetArchitecture(val *string) {
+	if err := j.validateSetArchitectureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"architecture",
+		val,
 	)
 }
 
@@ -766,6 +801,14 @@ func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) Inter
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) ResetArchitecture() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetArchitecture",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) ResetEnableConfidentialCompute() {

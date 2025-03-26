@@ -143,6 +143,10 @@ func (j *jsiiProxy_BigqueryReservation) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryReservation) validateSetSecondaryLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryReservation) validateSetSlotCapacityParameters(val *float64) error {
 	return nil
 }

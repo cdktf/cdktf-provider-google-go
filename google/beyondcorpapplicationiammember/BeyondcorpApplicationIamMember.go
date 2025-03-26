@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/beyondcorp_application_iam_member google_beyondcorp_application_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/beyondcorp_application_iam_member google_beyondcorp_application_iam_member}.
 type BeyondcorpApplicationIamMember interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -461,7 +461,7 @@ func (j *jsiiProxy_BeyondcorpApplicationIamMember) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/beyondcorp_application_iam_member google_beyondcorp_application_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/beyondcorp_application_iam_member google_beyondcorp_application_iam_member} Resource.
 func NewBeyondcorpApplicationIamMember(scope constructs.Construct, id *string, config *BeyondcorpApplicationIamMemberConfig) BeyondcorpApplicationIamMember {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewBeyondcorpApplicationIamMember(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.26.0/docs/resources/beyondcorp_application_iam_member google_beyondcorp_application_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/beyondcorp_application_iam_member google_beyondcorp_application_iam_member} Resource.
 func NewBeyondcorpApplicationIamMember_Override(b BeyondcorpApplicationIamMember, scope constructs.Construct, id *string, config *BeyondcorpApplicationIamMemberConfig) {
 	_init_.Initialize()
 
