@@ -47,6 +47,10 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) validatePutAntivirusOverridesParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) validatePutSeverityOverridesParameters(value interface{}) error {
 	return nil
 }

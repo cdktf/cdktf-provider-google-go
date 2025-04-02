@@ -107,6 +107,10 @@ func (j *jsiiProxy_DataprocMetastoreFederation) validateSetCountParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_DataprocMetastoreFederation) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocMetastoreFederation) validateSetFederationIdParameters(val *string) error {
 	return nil
 }

@@ -35,6 +35,7 @@ type DataGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference interface {
 	KmsKeySelfLink() *string
 	KmsKeyServiceAccount() *string
 	RawKey() *string
+	RsaEncryptedKey() *string
 	Sha256() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -158,6 +159,16 @@ func (j *jsiiProxy_DataGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference
 	_jsii_.Get(
 		j,
 		"rawKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) RsaEncryptedKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rsaEncryptedKey",
 		&returns,
 	)
 	return returns

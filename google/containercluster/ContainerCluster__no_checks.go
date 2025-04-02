@@ -275,6 +275,10 @@ func (j *jsiiProxy_ContainerCluster) validateSetDescriptionParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_ContainerCluster) validateSetDisableL4LbFirewallReconciliationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerCluster) validateSetEnableAutopilotParameters(val interface{}) error {
 	return nil
 }

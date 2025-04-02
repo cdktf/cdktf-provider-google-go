@@ -1207,6 +1207,53 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfig",
+		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfigOutputReference",
+		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
+			_jsii_.MemberProperty{JsiiProperty: "bucketInput", GoGetter: "BucketInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionName", GoGetter: "ConnectionName"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionNameInput", GoGetter: "ConnectionNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fileFormat", GoGetter: "FileFormat"},
+			_jsii_.MemberProperty{JsiiProperty: "fileFormatInput", GoGetter: "FileFormatInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRootPath", GoMethod: "ResetRootPath"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "rootPath", GoGetter: "RootPath"},
+			_jsii_.MemberProperty{JsiiProperty: "rootPathInput", GoGetter: "RootPathInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tableFormat", GoGetter: "TableFormat"},
+			_jsii_.MemberProperty{JsiiProperty: "tableFormatInput", GoGetter: "TableFormatInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigMerge",
 		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigMerge)(nil)).Elem(),
 	)
@@ -1248,6 +1295,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appendOnly", GoGetter: "AppendOnly"},
 			_jsii_.MemberProperty{JsiiProperty: "appendOnlyInput", GoGetter: "AppendOnlyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "blmtConfig", GoGetter: "BlmtConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "blmtConfigInput", GoGetter: "BlmtConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1270,10 +1319,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "merge", GoGetter: "Merge"},
 			_jsii_.MemberProperty{JsiiProperty: "mergeInput", GoGetter: "MergeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAppendOnly", GoMethod: "PutAppendOnly"},
+			_jsii_.MemberMethod{JsiiMethod: "putBlmtConfig", GoMethod: "PutBlmtConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putMerge", GoMethod: "PutMerge"},
 			_jsii_.MemberMethod{JsiiMethod: "putSingleTargetDataset", GoMethod: "PutSingleTargetDataset"},
 			_jsii_.MemberMethod{JsiiMethod: "putSourceHierarchyDatasets", GoMethod: "PutSourceHierarchyDatasets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppendOnly", GoMethod: "ResetAppendOnly"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBlmtConfig", GoMethod: "ResetBlmtConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataFreshness", GoMethod: "ResetDataFreshness"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMerge", GoMethod: "ResetMerge"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSingleTargetDataset", GoMethod: "ResetSingleTargetDataset"},

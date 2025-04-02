@@ -67,6 +67,14 @@ func (j *jsiiProxy_ComputeInstanceAttachedDiskOutputReference) validateSetDiskEn
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceAttachedDiskOutputReference) validateSetDiskEncryptionKeyRsaParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceAttachedDiskOutputReference) validateSetDiskEncryptionServiceAccountParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceAttachedDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

@@ -47,6 +47,14 @@ func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) valid
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) validatePutSourceImageEncryptionKeyParameters(value *ComputeInstanceBootDiskInitializeParamsSourceImageEncryptionKey) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) validatePutSourceSnapshotEncryptionKeyParameters(value *ComputeInstanceBootDiskInitializeParamsSourceSnapshotEncryptionKey) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -96,6 +104,10 @@ func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) valid
 }
 
 func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) validateSetSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) validateSetSnapshotParameters(val *string) error {
 	return nil
 }
 

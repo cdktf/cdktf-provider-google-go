@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/compute_router google_compute_router}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/compute_router google_compute_router}.
 type ComputeRouter interface {
 	cdktf.TerraformResource
 	Bgp() ComputeRouterBgpOutputReference
@@ -55,6 +55,8 @@ type ComputeRouter interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Md5AuthenticationKeys() ComputeRouterMd5AuthenticationKeysOutputReference
+	Md5AuthenticationKeysInput() *ComputeRouterMd5AuthenticationKeys
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -132,11 +134,13 @@ type ComputeRouter interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBgp(value *ComputeRouterBgp)
+	PutMd5AuthenticationKeys(value *ComputeRouterMd5AuthenticationKeys)
 	PutTimeouts(value *ComputeRouterTimeouts)
 	ResetBgp()
 	ResetDescription()
 	ResetEncryptedInterconnectRouter()
 	ResetId()
+	ResetMd5AuthenticationKeys()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -341,6 +345,26 @@ func (j *jsiiProxy_ComputeRouter) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRouter) Md5AuthenticationKeys() ComputeRouterMd5AuthenticationKeysOutputReference {
+	var returns ComputeRouterMd5AuthenticationKeysOutputReference
+	_jsii_.Get(
+		j,
+		"md5AuthenticationKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRouter) Md5AuthenticationKeysInput() *ComputeRouterMd5AuthenticationKeys {
+	var returns *ComputeRouterMd5AuthenticationKeys
+	_jsii_.Get(
+		j,
+		"md5AuthenticationKeysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRouter) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -522,7 +546,7 @@ func (j *jsiiProxy_ComputeRouter) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/compute_router google_compute_router} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/compute_router google_compute_router} Resource.
 func NewComputeRouter(scope constructs.Construct, id *string, config *ComputeRouterConfig) ComputeRouter {
 	_init_.Initialize()
 
@@ -540,7 +564,7 @@ func NewComputeRouter(scope constructs.Construct, id *string, config *ComputeRou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/compute_router google_compute_router} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/compute_router google_compute_router} Resource.
 func NewComputeRouter_Override(c ComputeRouter, scope constructs.Construct, id *string, config *ComputeRouterConfig) {
 	_init_.Initialize()
 
@@ -1060,6 +1084,17 @@ func (c *jsiiProxy_ComputeRouter) PutBgp(value *ComputeRouterBgp) {
 	)
 }
 
+func (c *jsiiProxy_ComputeRouter) PutMd5AuthenticationKeys(value *ComputeRouterMd5AuthenticationKeys) {
+	if err := c.validatePutMd5AuthenticationKeysParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putMd5AuthenticationKeys",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRouter) PutTimeouts(value *ComputeRouterTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1099,6 +1134,14 @@ func (c *jsiiProxy_ComputeRouter) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeRouter) ResetMd5AuthenticationKeys() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMd5AuthenticationKeys",
 		nil, // no parameters
 	)
 }

@@ -37,6 +37,9 @@ type CloudRunServiceTemplateSpecOutputReference interface {
 	Fqn() *string
 	InternalValue() *CloudRunServiceTemplateSpec
 	SetInternalValue(val *CloudRunServiceTemplateSpec)
+	NodeSelector() *map[string]*string
+	SetNodeSelector(val *map[string]*string)
+	NodeSelectorInput() *map[string]*string
 	ServiceAccountName() *string
 	SetServiceAccountName(val *string)
 	ServiceAccountNameInput() *string
@@ -82,6 +85,7 @@ type CloudRunServiceTemplateSpecOutputReference interface {
 	PutVolumes(value interface{})
 	ResetContainerConcurrency()
 	ResetContainers()
+	ResetNodeSelector()
 	ResetServiceAccountName()
 	ResetTimeoutSeconds()
 	ResetVolumes()
@@ -185,6 +189,26 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) InternalValue() *
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) NodeSelector() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"nodeSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) NodeSelectorInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"nodeSelectorInput",
 		&returns,
 	)
 	return returns
@@ -348,6 +372,17 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetInternalValue(v
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference)SetNodeSelector(val *map[string]*string) {
+	if err := j.validateSetNodeSelectorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeSelector",
 		val,
 	)
 }
@@ -616,6 +651,14 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) ResetContainers()
 	_jsii_.InvokeVoid(
 		c,
 		"resetContainers",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) ResetNodeSelector() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNodeSelector",
 		nil, // no parameters
 	)
 }

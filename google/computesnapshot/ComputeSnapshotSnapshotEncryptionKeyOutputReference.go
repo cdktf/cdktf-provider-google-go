@@ -41,6 +41,9 @@ type ComputeSnapshotSnapshotEncryptionKeyOutputReference interface {
 	RawKey() *string
 	SetRawKey(val *string)
 	RawKeyInput() *string
+	RsaEncryptedKey() *string
+	SetRsaEncryptedKey(val *string)
+	RsaEncryptedKeyInput() *string
 	Sha256() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -77,6 +80,7 @@ type ComputeSnapshotSnapshotEncryptionKeyOutputReference interface {
 	ResetKmsKeySelfLink()
 	ResetKmsKeyServiceAccount()
 	ResetRawKey()
+	ResetRsaEncryptedKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -202,6 +206,26 @@ func (j *jsiiProxy_ComputeSnapshotSnapshotEncryptionKeyOutputReference) RawKeyIn
 	return returns
 }
 
+func (j *jsiiProxy_ComputeSnapshotSnapshotEncryptionKeyOutputReference) RsaEncryptedKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rsaEncryptedKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSnapshotSnapshotEncryptionKeyOutputReference) RsaEncryptedKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rsaEncryptedKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeSnapshotSnapshotEncryptionKeyOutputReference) Sha256() *string {
 	var returns *string
 	_jsii_.Get(
@@ -322,6 +346,17 @@ func (j *jsiiProxy_ComputeSnapshotSnapshotEncryptionKeyOutputReference)SetRawKey
 	_jsii_.Set(
 		j,
 		"rawKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeSnapshotSnapshotEncryptionKeyOutputReference)SetRsaEncryptedKey(val *string) {
+	if err := j.validateSetRsaEncryptedKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rsaEncryptedKey",
 		val,
 	)
 }
@@ -554,6 +589,14 @@ func (c *jsiiProxy_ComputeSnapshotSnapshotEncryptionKeyOutputReference) ResetRaw
 	_jsii_.InvokeVoid(
 		c,
 		"resetRawKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSnapshotSnapshotEncryptionKeyOutputReference) ResetRsaEncryptedKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRsaEncryptedKey",
 		nil, // no parameters
 	)
 }

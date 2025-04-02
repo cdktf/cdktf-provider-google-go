@@ -59,6 +59,13 @@ type ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference interfac
 	Size() *float64
 	SetSize(val *float64)
 	SizeInput() *float64
+	Snapshot() *string
+	SetSnapshot(val *string)
+	SnapshotInput() *string
+	SourceImageEncryptionKey() ComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKeyOutputReference
+	SourceImageEncryptionKeyInput() *ComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKey
+	SourceSnapshotEncryptionKey() ComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKeyOutputReference
+	SourceSnapshotEncryptionKeyInput() *ComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKey
 	StoragePool() *string
 	SetStoragePool(val *string)
 	StoragePoolInput() *string
@@ -97,6 +104,8 @@ type ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSourceImageEncryptionKey(value *ComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKey)
+	PutSourceSnapshotEncryptionKey(value *ComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKey)
 	ResetArchitecture()
 	ResetEnableConfidentialCompute()
 	ResetImage()
@@ -106,6 +115,9 @@ type ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference interfac
 	ResetResourceManagerTags()
 	ResetResourcePolicies()
 	ResetSize()
+	ResetSnapshot()
+	ResetSourceImageEncryptionKey()
+	ResetSourceSnapshotEncryptionKey()
 	ResetStoragePool()
 	ResetType()
 	// Produce the Token's value at resolution time.
@@ -353,6 +365,66 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) Snapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SnapshotInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SourceImageEncryptionKey() ComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKeyOutputReference {
+	var returns ComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SourceImageEncryptionKeyInput() *ComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKey {
+	var returns *ComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKey
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SourceSnapshotEncryptionKey() ComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKeyOutputReference {
+	var returns ComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) SourceSnapshotEncryptionKeyInput() *ComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKey {
+	var returns *ComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKey
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) StoragePool() *string {
 	var returns *string
 	_jsii_.Get(
@@ -569,6 +641,17 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	_jsii_.Set(
 		j,
 		"size",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference)SetSnapshot(val *string) {
+	if err := j.validateSetSnapshotParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"snapshot",
 		val,
 	)
 }
@@ -803,6 +886,28 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	return returns
 }
 
+func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) PutSourceImageEncryptionKey(value *ComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKey) {
+	if err := c.validatePutSourceImageEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSourceImageEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) PutSourceSnapshotEncryptionKey(value *ComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKey) {
+	if err := c.validatePutSourceSnapshotEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSourceSnapshotEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResetArchitecture() {
 	_jsii_.InvokeVoid(
 		c,
@@ -871,6 +976,30 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	_jsii_.InvokeVoid(
 		c,
 		"resetSize",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResetSnapshot() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSnapshot",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResetSourceImageEncryptionKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSourceImageEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) ResetSourceSnapshotEncryptionKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSourceSnapshotEncryptionKey",
 		nil, // no parameters
 	)
 }

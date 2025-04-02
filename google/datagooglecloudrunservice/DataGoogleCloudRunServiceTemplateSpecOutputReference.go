@@ -34,6 +34,7 @@ type DataGoogleCloudRunServiceTemplateSpecOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleCloudRunServiceTemplateSpec
 	SetInternalValue(val *DataGoogleCloudRunServiceTemplateSpec)
+	NodeSelector() cdktf.StringMap
 	ServiceAccountName() *string
 	ServingState() *string
 	// Experimental.
@@ -150,6 +151,16 @@ func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecOutputReference) Interna
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecOutputReference) NodeSelector() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"nodeSelector",
 		&returns,
 	)
 	return returns

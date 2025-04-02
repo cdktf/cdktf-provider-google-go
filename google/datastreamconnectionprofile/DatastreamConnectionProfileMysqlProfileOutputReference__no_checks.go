@@ -79,6 +79,10 @@ func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) validateSetSecretManagerStoredPasswordParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatastreamConnectionProfileMysqlProfileOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -30,7 +30,9 @@ type DataGoogleComputeInstanceAttachedDiskOutputReference interface {
 	CreationStack() *[]*string
 	DeviceName() *string
 	DiskEncryptionKeyRaw() *string
+	DiskEncryptionKeyRsa() *string
 	DiskEncryptionKeySha256() *string
+	DiskEncryptionServiceAccount() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleComputeInstanceAttachedDisk
@@ -135,11 +137,31 @@ func (j *jsiiProxy_DataGoogleComputeInstanceAttachedDiskOutputReference) DiskEnc
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceAttachedDiskOutputReference) DiskEncryptionKeyRsa() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionKeyRsa",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceAttachedDiskOutputReference) DiskEncryptionKeySha256() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"diskEncryptionKeySha256",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceAttachedDiskOutputReference) DiskEncryptionServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"diskEncryptionServiceAccount",
 		&returns,
 	)
 	return returns

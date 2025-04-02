@@ -601,6 +601,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "allTrafficOnLatestRevision", GoGetter: "AllTrafficOnLatestRevision"},
 			_jsii_.MemberProperty{JsiiProperty: "availableCpu", GoGetter: "AvailableCpu"},
 			_jsii_.MemberProperty{JsiiProperty: "availableMemory", GoGetter: "AvailableMemory"},
+			_jsii_.MemberProperty{JsiiProperty: "binaryAuthorizationPolicy", GoGetter: "BinaryAuthorizationPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},

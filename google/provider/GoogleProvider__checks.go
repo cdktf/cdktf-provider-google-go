@@ -119,6 +119,34 @@ func (j *jsiiProxy_GoogleProvider) validateSetBatchingParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_GoogleProvider) validateSetExternalCredentialsParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleProviderExternalCredentials:
+		val := val.(*[]*GoogleProviderExternalCredentials)
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleProviderExternalCredentials:
+		val_ := val.([]*GoogleProviderExternalCredentials)
+		val := &val_
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*GoogleProviderExternalCredentials; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleProvider) validateSetUserProjectOverrideParameters(val interface{}) error {
 	switch val.(type) {
 	case *bool:

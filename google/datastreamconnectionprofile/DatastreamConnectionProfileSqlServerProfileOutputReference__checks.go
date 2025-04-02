@@ -206,6 +206,14 @@ func (j *jsiiProxy_DatastreamConnectionProfileSqlServerProfileOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_DatastreamConnectionProfileSqlServerProfileOutputReference) validateSetSecretManagerStoredPasswordParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatastreamConnectionProfileSqlServerProfileOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -21,6 +21,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "content", GoGetter: "Content"},
+			_jsii_.MemberProperty{JsiiProperty: "contentBase64", GoGetter: "ContentBase64"},
 			_jsii_.MemberProperty{JsiiProperty: "contentDisposition", GoGetter: "ContentDisposition"},
 			_jsii_.MemberProperty{JsiiProperty: "contentEncoding", GoGetter: "ContentEncoding"},
 			_jsii_.MemberProperty{JsiiProperty: "contentInput", GoGetter: "ContentInput"},

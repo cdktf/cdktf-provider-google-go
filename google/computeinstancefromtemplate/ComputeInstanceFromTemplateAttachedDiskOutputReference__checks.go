@@ -182,6 +182,22 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetDiskEncryptionKeyRsaParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetDiskEncryptionServiceAccountParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:

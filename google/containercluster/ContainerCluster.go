@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/container_cluster google_container_cluster}.
 type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
@@ -67,6 +67,9 @@ type ContainerCluster interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableL4LbFirewallReconciliation() interface{}
+	SetDisableL4LbFirewallReconciliation(val interface{})
+	DisableL4LbFirewallReconciliationInput() interface{}
 	DnsConfig() ContainerClusterDnsConfigOutputReference
 	DnsConfigInput() *ContainerClusterDnsConfig
 	EffectiveLabels() cdktf.StringMap
@@ -338,6 +341,7 @@ type ContainerCluster interface {
 	ResetDefaultSnatStatus()
 	ResetDeletionProtection()
 	ResetDescription()
+	ResetDisableL4LbFirewallReconciliation()
 	ResetDnsConfig()
 	ResetEnableAutopilot()
 	ResetEnableCiliumClusterwideNetworkPolicy()
@@ -758,6 +762,26 @@ func (j *jsiiProxy_ContainerCluster) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) DisableL4LbFirewallReconciliation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableL4LbFirewallReconciliation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) DisableL4LbFirewallReconciliationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableL4LbFirewallReconciliationInput",
 		&returns,
 	)
 	return returns
@@ -2064,7 +2088,7 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
 
@@ -2082,7 +2106,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct, id *string, config *ContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -2185,6 +2209,17 @@ func (j *jsiiProxy_ContainerCluster)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerCluster)SetDisableL4LbFirewallReconciliation(val interface{}) {
+	if err := j.validateSetDisableL4LbFirewallReconciliationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableL4LbFirewallReconciliation",
 		val,
 	)
 }
@@ -3400,6 +3435,14 @@ func (c *jsiiProxy_ContainerCluster) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetDisableL4LbFirewallReconciliation() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDisableL4LbFirewallReconciliation",
 		nil, // no parameters
 	)
 }

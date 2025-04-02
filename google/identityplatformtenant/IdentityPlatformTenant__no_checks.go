@@ -75,6 +75,10 @@ func (i *jsiiProxy_IdentityPlatformTenant) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformTenant) validatePutClientParameters(value *IdentityPlatformTenantClient) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformTenant) validatePutTimeoutsParameters(value *IdentityPlatformTenantTimeouts) error {
 	return nil
 }

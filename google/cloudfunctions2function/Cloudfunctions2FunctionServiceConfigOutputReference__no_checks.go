@@ -71,6 +71,10 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validateSetBinaryAuthorizationPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

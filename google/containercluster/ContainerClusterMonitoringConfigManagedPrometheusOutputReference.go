@@ -13,6 +13,8 @@ import (
 
 type ContainerClusterMonitoringConfigManagedPrometheusOutputReference interface {
 	cdktf.ComplexObject
+	AutoMonitoringConfig() ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference
+	AutoMonitoringConfigInput() *ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +69,8 @@ type ContainerClusterMonitoringConfigManagedPrometheusOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAutoMonitoringConfig(value *ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig)
+	ResetAutoMonitoringConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -80,6 +84,26 @@ type ContainerClusterMonitoringConfigManagedPrometheusOutputReference interface 
 // The jsii proxy struct for ContainerClusterMonitoringConfigManagedPrometheusOutputReference
 type jsiiProxy_ContainerClusterMonitoringConfigManagedPrometheusOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ContainerClusterMonitoringConfigManagedPrometheusOutputReference) AutoMonitoringConfig() ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference {
+	var returns ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference
+	_jsii_.Get(
+		j,
+		"autoMonitoringConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterMonitoringConfigManagedPrometheusOutputReference) AutoMonitoringConfigInput() *ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig {
+	var returns *ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig
+	_jsii_.Get(
+		j,
+		"autoMonitoringConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ContainerClusterMonitoringConfigManagedPrometheusOutputReference) ComplexObjectIndex() interface{} {
@@ -450,6 +474,25 @@ func (c *jsiiProxy_ContainerClusterMonitoringConfigManagedPrometheusOutputRefere
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerClusterMonitoringConfigManagedPrometheusOutputReference) PutAutoMonitoringConfig(value *ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig) {
+	if err := c.validatePutAutoMonitoringConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAutoMonitoringConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterMonitoringConfigManagedPrometheusOutputReference) ResetAutoMonitoringConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAutoMonitoringConfig",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerClusterMonitoringConfigManagedPrometheusOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -181,6 +181,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "essentialContactsCustomEndpointInput", GoGetter: "EssentialContactsCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "eventarcCustomEndpoint", GoGetter: "EventarcCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "eventarcCustomEndpointInput", GoGetter: "EventarcCustomEndpointInput"},
+			_jsii_.MemberProperty{JsiiProperty: "externalCredentials", GoGetter: "ExternalCredentials"},
+			_jsii_.MemberProperty{JsiiProperty: "externalCredentialsInput", GoGetter: "ExternalCredentialsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "filestoreCustomEndpoint", GoGetter: "FilestoreCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "filestoreCustomEndpointInput", GoGetter: "FilestoreCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "firebaseAppCheckCustomEndpoint", GoGetter: "FirebaseAppCheckCustomEndpoint"},
@@ -280,6 +282,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "parallelstoreCustomEndpoint", GoGetter: "ParallelstoreCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "parallelstoreCustomEndpointInput", GoGetter: "ParallelstoreCustomEndpointInput"},
+			_jsii_.MemberProperty{JsiiProperty: "parameterManagerCustomEndpoint", GoGetter: "ParameterManagerCustomEndpoint"},
+			_jsii_.MemberProperty{JsiiProperty: "parameterManagerCustomEndpointInput", GoGetter: "ParameterManagerCustomEndpointInput"},
+			_jsii_.MemberProperty{JsiiProperty: "parameterManagerRegionalCustomEndpoint", GoGetter: "ParameterManagerRegionalCustomEndpoint"},
+			_jsii_.MemberProperty{JsiiProperty: "parameterManagerRegionalCustomEndpointInput", GoGetter: "ParameterManagerRegionalCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "privatecaCustomEndpoint", GoGetter: "PrivatecaCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "privatecaCustomEndpointInput", GoGetter: "PrivatecaCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "privilegedAccessManagerCustomEndpoint", GoGetter: "PrivilegedAccessManagerCustomEndpoint"},
@@ -385,6 +391,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEdgenetworkCustomEndpoint", GoMethod: "ResetEdgenetworkCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEssentialContactsCustomEndpoint", GoMethod: "ResetEssentialContactsCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEventarcCustomEndpoint", GoMethod: "ResetEventarcCustomEndpoint"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExternalCredentials", GoMethod: "ResetExternalCredentials"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilestoreCustomEndpoint", GoMethod: "ResetFilestoreCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFirebaseAppCheckCustomEndpoint", GoMethod: "ResetFirebaseAppCheckCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFirebaseAppHostingCustomEndpoint", GoMethod: "ResetFirebaseAppHostingCustomEndpoint"},
@@ -433,6 +440,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOsLoginCustomEndpoint", GoMethod: "ResetOsLoginCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetParallelstoreCustomEndpoint", GoMethod: "ResetParallelstoreCustomEndpoint"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParameterManagerCustomEndpoint", GoMethod: "ResetParameterManagerCustomEndpoint"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParameterManagerRegionalCustomEndpoint", GoMethod: "ResetParameterManagerRegionalCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrivatecaCustomEndpoint", GoMethod: "ResetPrivatecaCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrivilegedAccessManagerCustomEndpoint", GoMethod: "ResetPrivilegedAccessManagerCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
@@ -569,5 +578,9 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google.provider.GoogleProviderConfig",
 		reflect.TypeOf((*GoogleProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.provider.GoogleProviderExternalCredentials",
+		reflect.TypeOf((*GoogleProviderExternalCredentials)(nil)).Elem(),
 	)
 }

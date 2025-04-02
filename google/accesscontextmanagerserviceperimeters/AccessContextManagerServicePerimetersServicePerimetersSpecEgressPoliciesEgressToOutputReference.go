@@ -40,6 +40,9 @@ type AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgr
 	Resources() *[]*string
 	SetResources(val *[]*string)
 	ResourcesInput() *[]*string
+	Roles() *[]*string
+	SetRoles(val *[]*string)
+	RolesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -76,6 +79,7 @@ type AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgr
 	ResetExternalResources()
 	ResetOperations()
 	ResetResources()
+	ResetRoles()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -201,6 +205,26 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecEgr
 	return returns
 }
 
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOutputReference) Roles() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"roles",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOutputReference) RolesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"rolesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -300,6 +324,17 @@ func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecEgr
 	_jsii_.Set(
 		j,
 		"resources",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOutputReference)SetRoles(val *[]*string) {
+	if err := j.validateSetRolesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roles",
 		val,
 	)
 }
@@ -543,6 +578,14 @@ func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecEgr
 	_jsii_.InvokeVoid(
 		a,
 		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOutputReference) ResetRoles() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRoles",
 		nil, // no parameters
 	)
 }

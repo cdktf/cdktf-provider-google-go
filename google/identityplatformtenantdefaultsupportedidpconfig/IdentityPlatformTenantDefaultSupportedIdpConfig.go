@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config}.
 type IdentityPlatformTenantDefaultSupportedIdpConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_IdentityPlatformTenantDefaultSupportedIdpConfig) TimeoutsInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config} Resource.
 func NewIdentityPlatformTenantDefaultSupportedIdpConfig(scope constructs.Construct, id *string, config *IdentityPlatformTenantDefaultSupportedIdpConfigConfig) IdentityPlatformTenantDefaultSupportedIdpConfig {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewIdentityPlatformTenantDefaultSupportedIdpConfig(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/identity_platform_tenant_default_supported_idp_config google_identity_platform_tenant_default_supported_idp_config} Resource.
 func NewIdentityPlatformTenantDefaultSupportedIdpConfig_Override(i IdentityPlatformTenantDefaultSupportedIdpConfig, scope constructs.Construct, id *string, config *IdentityPlatformTenantDefaultSupportedIdpConfigConfig) {
 	_init_.Initialize()
 

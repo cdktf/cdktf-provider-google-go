@@ -75,6 +75,10 @@ func (r *jsiiProxy_RedisCluster) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (r *jsiiProxy_RedisCluster) validatePutAutomatedBackupConfigParameters(value *RedisClusterAutomatedBackupConfig) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisCluster) validatePutCrossClusterReplicationConfigParameters(value *RedisClusterCrossClusterReplicationConfig) error {
 	return nil
 }

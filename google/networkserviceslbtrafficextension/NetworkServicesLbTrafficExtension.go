@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/network_services_lb_traffic_extension google_network_services_lb_traffic_extension}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/network_services_lb_traffic_extension google_network_services_lb_traffic_extension}.
 type NetworkServicesLbTrafficExtension interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -544,7 +544,7 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtension) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/network_services_lb_traffic_extension google_network_services_lb_traffic_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/network_services_lb_traffic_extension google_network_services_lb_traffic_extension} Resource.
 func NewNetworkServicesLbTrafficExtension(scope constructs.Construct, id *string, config *NetworkServicesLbTrafficExtensionConfig) NetworkServicesLbTrafficExtension {
 	_init_.Initialize()
 
@@ -562,7 +562,7 @@ func NewNetworkServicesLbTrafficExtension(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/network_services_lb_traffic_extension google_network_services_lb_traffic_extension} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/network_services_lb_traffic_extension google_network_services_lb_traffic_extension} Resource.
 func NewNetworkServicesLbTrafficExtension_Override(n NetworkServicesLbTrafficExtension, scope constructs.Construct, id *string, config *NetworkServicesLbTrafficExtensionConfig) {
 	_init_.Initialize()
 

@@ -244,6 +244,14 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateSetIntern
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateSetNodeSelectorParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateSetServiceAccountNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

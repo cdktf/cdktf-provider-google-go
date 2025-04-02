@@ -7,11 +7,11 @@ package alloydbcluster
 type AlloydbClusterContinuousBackupConfig struct {
 	// Whether continuous backup recovery is enabled. If not set, defaults to true.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/alloydb_cluster#enabled AlloydbCluster#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/alloydb_cluster#enabled AlloydbCluster#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 	// encryption_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/alloydb_cluster#encryption_config AlloydbCluster#encryption_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/alloydb_cluster#encryption_config AlloydbCluster#encryption_config}
 	EncryptionConfig *AlloydbClusterContinuousBackupConfigEncryptionConfig `field:"optional" json:"encryptionConfig" yaml:"encryptionConfig"`
 	// The numbers of days that are eligible to restore from using PITR.
 	//
@@ -19,7 +19,7 @@ type AlloydbClusterContinuousBackupConfig struct {
 	//
 	// If not set, defaults to 14 days.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/alloydb_cluster#recovery_window_days AlloydbCluster#recovery_window_days}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/alloydb_cluster#recovery_window_days AlloydbCluster#recovery_window_days}
 	RecoveryWindowDays *float64 `field:"optional" json:"recoveryWindowDays" yaml:"recoveryWindowDays"`
 }
 

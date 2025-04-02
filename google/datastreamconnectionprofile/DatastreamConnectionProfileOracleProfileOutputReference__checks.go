@@ -214,6 +214,14 @@ func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) validateSetSecretManagerStoredPasswordParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

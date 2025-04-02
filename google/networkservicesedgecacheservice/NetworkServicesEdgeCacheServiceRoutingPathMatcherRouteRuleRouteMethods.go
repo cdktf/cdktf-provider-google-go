@@ -9,7 +9,7 @@ type NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethods stru
 	//
 	// Any combination of "GET", "HEAD", "OPTIONS", "PUT", "POST", "DELETE", and "PATCH".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/network_services_edge_cache_service#allowed_methods NetworkServicesEdgeCacheService#allowed_methods}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/network_services_edge_cache_service#allowed_methods NetworkServicesEdgeCacheService#allowed_methods}
 	AllowedMethods *[]*string `field:"optional" json:"allowedMethods" yaml:"allowedMethods"`
 }
 

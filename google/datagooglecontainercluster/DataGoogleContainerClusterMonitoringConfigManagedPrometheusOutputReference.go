@@ -13,6 +13,7 @@ import (
 
 type DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference interface {
 	cdktf.ComplexObject
+	AutoMonitoringConfig() DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -78,6 +79,16 @@ type DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference 
 // The jsii proxy struct for DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference
 type jsiiProxy_DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference) AutoMonitoringConfig() DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigList {
+	var returns DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigList
+	_jsii_.Get(
+		j,
+		"autoMonitoringConfig",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference) ComplexObjectIndex() interface{} {

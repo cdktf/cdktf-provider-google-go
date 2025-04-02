@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/data-sources/compute_router google_compute_router}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/data-sources/compute_router google_compute_router}.
 type DataGoogleComputeRouter interface {
 	cdktf.TerraformDataSource
 	Bgp() DataGoogleComputeRouterBgpList
@@ -46,6 +46,7 @@ type DataGoogleComputeRouter interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Md5AuthenticationKeys() DataGoogleComputeRouterMd5AuthenticationKeysList
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -263,6 +264,16 @@ func (j *jsiiProxy_DataGoogleComputeRouter) Lifecycle() *cdktf.TerraformResource
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRouter) Md5AuthenticationKeys() DataGoogleComputeRouterMd5AuthenticationKeysList {
+	var returns DataGoogleComputeRouterMd5AuthenticationKeysList
+	_jsii_.Get(
+		j,
+		"md5AuthenticationKeys",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRouter) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -414,7 +425,7 @@ func (j *jsiiProxy_DataGoogleComputeRouter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/data-sources/compute_router google_compute_router} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/data-sources/compute_router google_compute_router} Data Source.
 func NewDataGoogleComputeRouter(scope constructs.Construct, id *string, config *DataGoogleComputeRouterConfig) DataGoogleComputeRouter {
 	_init_.Initialize()
 
@@ -432,7 +443,7 @@ func NewDataGoogleComputeRouter(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/data-sources/compute_router google_compute_router} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/data-sources/compute_router google_compute_router} Data Source.
 func NewDataGoogleComputeRouter_Override(d DataGoogleComputeRouter, scope constructs.Construct, id *string, config *DataGoogleComputeRouterConfig) {
 	_init_.Initialize()
 

@@ -95,6 +95,10 @@ func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutGuestAcceleratorParam
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutInstanceEncryptionKeyParameters(value *ComputeInstanceFromTemplateInstanceEncryptionKey) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceFromTemplate) validatePutNetworkInterfaceParameters(value interface{}) error {
 	return nil
 }

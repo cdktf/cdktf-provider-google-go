@@ -213,6 +213,22 @@ func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference) validateSetDiskEncryptionKeyRsaParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference) validateSetDiskEncryptionServiceAccountParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceFromTemplateBootDiskOutputReference) validateSetGuestOsFeaturesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

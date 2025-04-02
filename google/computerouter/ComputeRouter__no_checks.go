@@ -79,6 +79,10 @@ func (c *jsiiProxy_ComputeRouter) validatePutBgpParameters(value *ComputeRouterB
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRouter) validatePutMd5AuthenticationKeysParameters(value *ComputeRouterMd5AuthenticationKeys) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRouter) validatePutTimeoutsParameters(value *ComputeRouterTimeouts) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/data-sources/compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/data-sources/compute_subnetwork google_compute_subnetwork}.
 type DataGoogleComputeSubnetwork interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -28,6 +28,7 @@ type DataGoogleComputeSubnetwork interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	ExternalIpv6Prefix() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -42,6 +43,7 @@ type DataGoogleComputeSubnetwork interface {
 	IdInput() *string
 	InternalIpv6Prefix() *string
 	IpCidrRange() *string
+	Ipv6AccessType() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -69,6 +71,7 @@ type DataGoogleComputeSubnetwork interface {
 	SelfLink() *string
 	SetSelfLink(val *string)
 	SelfLinkInput() *string
+	StackType() *string
 	SubnetworkId() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -178,6 +181,16 @@ func (j *jsiiProxy_DataGoogleComputeSubnetwork) Description() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeSubnetwork) ExternalIpv6Prefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalIpv6Prefix",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeSubnetwork) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -253,6 +266,16 @@ func (j *jsiiProxy_DataGoogleComputeSubnetwork) IpCidrRange() *string {
 	_jsii_.Get(
 		j,
 		"ipCidrRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeSubnetwork) Ipv6AccessType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6AccessType",
 		&returns,
 	)
 	return returns
@@ -408,6 +431,16 @@ func (j *jsiiProxy_DataGoogleComputeSubnetwork) SelfLinkInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeSubnetwork) StackType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stackType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeSubnetwork) SubnetworkId() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -449,7 +482,7 @@ func (j *jsiiProxy_DataGoogleComputeSubnetwork) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/data-sources/compute_subnetwork google_compute_subnetwork} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/data-sources/compute_subnetwork google_compute_subnetwork} Data Source.
 func NewDataGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *DataGoogleComputeSubnetworkConfig) DataGoogleComputeSubnetwork {
 	_init_.Initialize()
 
@@ -467,7 +500,7 @@ func NewDataGoogleComputeSubnetwork(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/data-sources/compute_subnetwork google_compute_subnetwork} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/data-sources/compute_subnetwork google_compute_subnetwork} Data Source.
 func NewDataGoogleComputeSubnetwork_Override(d DataGoogleComputeSubnetwork, scope constructs.Construct, id *string, config *DataGoogleComputeSubnetworkConfig) {
 	_init_.Initialize()
 

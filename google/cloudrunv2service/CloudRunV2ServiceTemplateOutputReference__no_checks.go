@@ -51,6 +51,10 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validatePutContaine
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validatePutNodeSelectorParameters(value *CloudRunV2ServiceTemplateNodeSelector) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validatePutScalingParameters(value *CloudRunV2ServiceTemplateScaling) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetEncrypti
 }
 
 func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetExecutionEnvironmentParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudRunV2ServiceTemplateOutputReference) validateSetGpuZonalRedundancyDisabledParameters(val interface{}) error {
 	return nil
 }
 

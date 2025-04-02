@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group}.
 type NetworkSecurityMirroringDeploymentGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,7 @@ type NetworkSecurityMirroringDeploymentGroup interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	Locations() NetworkSecurityMirroringDeploymentGroupLocationsList
 	MirroringDeploymentGroupId() *string
 	SetMirroringDeploymentGroupId(val *string)
 	MirroringDeploymentGroupIdInput() *string
@@ -362,6 +363,16 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) LocationInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) Locations() NetworkSecurityMirroringDeploymentGroupLocationsList {
+	var returns NetworkSecurityMirroringDeploymentGroupLocationsList
+	_jsii_.Get(
+		j,
+		"locations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) MirroringDeploymentGroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -563,7 +574,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) UpdateTime() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group} Resource.
 func NewNetworkSecurityMirroringDeploymentGroup(scope constructs.Construct, id *string, config *NetworkSecurityMirroringDeploymentGroupConfig) NetworkSecurityMirroringDeploymentGroup {
 	_init_.Initialize()
 
@@ -581,7 +592,7 @@ func NewNetworkSecurityMirroringDeploymentGroup(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group} Resource.
 func NewNetworkSecurityMirroringDeploymentGroup_Override(n NetworkSecurityMirroringDeploymentGroup, scope constructs.Construct, id *string, config *NetworkSecurityMirroringDeploymentGroupConfig) {
 	_init_.Initialize()
 

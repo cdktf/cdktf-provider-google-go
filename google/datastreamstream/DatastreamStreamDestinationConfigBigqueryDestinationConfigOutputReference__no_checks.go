@@ -51,6 +51,10 @@ func (d *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigOut
 	return nil
 }
 
+func (d *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference) validatePutBlmtConfigParameters(value *DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference) validatePutMergeParameters(value *DatastreamStreamDestinationConfigBigqueryDestinationConfigMerge) error {
 	return nil
 }

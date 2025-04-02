@@ -79,6 +79,10 @@ func (j *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileOutputReference) validateSetSecretManagerStoredPasswordParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

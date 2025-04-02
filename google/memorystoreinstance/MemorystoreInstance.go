@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/memorystore_instance google_memorystore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/memorystore_instance google_memorystore_instance}.
 type MemorystoreInstance interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -31,6 +31,8 @@ type MemorystoreInstance interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	CrossInstanceReplicationConfig() MemorystoreInstanceCrossInstanceReplicationConfigOutputReference
+	CrossInstanceReplicationConfigInput() *MemorystoreInstanceCrossInstanceReplicationConfig
 	DeletionProtectionEnabled() interface{}
 	SetDeletionProtectionEnabled(val interface{})
 	DeletionProtectionEnabledInput() interface{}
@@ -99,6 +101,7 @@ type MemorystoreInstance interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PscAttachmentDetails() MemorystoreInstancePscAttachmentDetailsList
 	PscAutoConnections() MemorystoreInstancePscAutoConnectionsList
 	// Experimental.
 	RawOverrides() interface{}
@@ -169,13 +172,16 @@ type MemorystoreInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCrossInstanceReplicationConfig(value *MemorystoreInstanceCrossInstanceReplicationConfig)
 	PutDesiredPscAutoConnections(value interface{})
 	PutMaintenancePolicy(value *MemorystoreInstanceMaintenancePolicy)
 	PutPersistenceConfig(value *MemorystoreInstancePersistenceConfig)
 	PutTimeouts(value *MemorystoreInstanceTimeouts)
 	PutZoneDistributionConfig(value *MemorystoreInstanceZoneDistributionConfig)
 	ResetAuthorizationMode()
+	ResetCrossInstanceReplicationConfig()
 	ResetDeletionProtectionEnabled()
+	ResetDesiredPscAutoConnections()
 	ResetEngineConfigs()
 	ResetEngineVersion()
 	ResetId()
@@ -275,6 +281,26 @@ func (j *jsiiProxy_MemorystoreInstance) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) CrossInstanceReplicationConfig() MemorystoreInstanceCrossInstanceReplicationConfigOutputReference {
+	var returns MemorystoreInstanceCrossInstanceReplicationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"crossInstanceReplicationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) CrossInstanceReplicationConfigInput() *MemorystoreInstanceCrossInstanceReplicationConfig {
+	var returns *MemorystoreInstanceCrossInstanceReplicationConfig
+	_jsii_.Get(
+		j,
+		"crossInstanceReplicationConfigInput",
 		&returns,
 	)
 	return returns
@@ -680,6 +706,16 @@ func (j *jsiiProxy_MemorystoreInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MemorystoreInstance) PscAttachmentDetails() MemorystoreInstancePscAttachmentDetailsList {
+	var returns MemorystoreInstancePscAttachmentDetailsList
+	_jsii_.Get(
+		j,
+		"pscAttachmentDetails",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MemorystoreInstance) PscAutoConnections() MemorystoreInstancePscAutoConnectionsList {
 	var returns MemorystoreInstancePscAutoConnectionsList
 	_jsii_.Get(
@@ -881,7 +917,7 @@ func (j *jsiiProxy_MemorystoreInstance) ZoneDistributionConfigInput() *Memorysto
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
 func NewMemorystoreInstance(scope constructs.Construct, id *string, config *MemorystoreInstanceConfig) MemorystoreInstance {
 	_init_.Initialize()
 
@@ -899,7 +935,7 @@ func NewMemorystoreInstance(scope constructs.Construct, id *string, config *Memo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
 func NewMemorystoreInstance_Override(m MemorystoreInstance, scope constructs.Construct, id *string, config *MemorystoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -1485,6 +1521,17 @@ func (m *jsiiProxy_MemorystoreInstance) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (m *jsiiProxy_MemorystoreInstance) PutCrossInstanceReplicationConfig(value *MemorystoreInstanceCrossInstanceReplicationConfig) {
+	if err := m.validatePutCrossInstanceReplicationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putCrossInstanceReplicationConfig",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MemorystoreInstance) PutDesiredPscAutoConnections(value interface{}) {
 	if err := m.validatePutDesiredPscAutoConnectionsParameters(value); err != nil {
 		panic(err)
@@ -1548,10 +1595,26 @@ func (m *jsiiProxy_MemorystoreInstance) ResetAuthorizationMode() {
 	)
 }
 
+func (m *jsiiProxy_MemorystoreInstance) ResetCrossInstanceReplicationConfig() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCrossInstanceReplicationConfig",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MemorystoreInstance) ResetDeletionProtectionEnabled() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetDeletionProtectionEnabled",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemorystoreInstance) ResetDesiredPscAutoConnections() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDesiredPscAutoConnections",
 		nil, // no parameters
 	)
 }

@@ -71,6 +71,14 @@ func (j *jsiiProxy_ComputeImageImageEncryptionKeyOutputReference) validateSetKms
 	return nil
 }
 
+func (j *jsiiProxy_ComputeImageImageEncryptionKeyOutputReference) validateSetRawKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeImageImageEncryptionKeyOutputReference) validateSetRsaEncryptedKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeImageImageEncryptionKeyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

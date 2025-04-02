@@ -39,6 +39,10 @@ func (j *jsiiProxy_GoogleProvider) validateSetBatchingParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_GoogleProvider) validateSetExternalCredentialsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleProvider) validateSetUserProjectOverrideParameters(val interface{}) error {
 	return nil
 }

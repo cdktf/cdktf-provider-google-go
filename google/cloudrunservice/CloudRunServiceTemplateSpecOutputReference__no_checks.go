@@ -75,6 +75,10 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateSetIntern
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateSetNodeSelectorParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateSetServiceAccountNameParameters(val *string) error {
 	return nil
 }

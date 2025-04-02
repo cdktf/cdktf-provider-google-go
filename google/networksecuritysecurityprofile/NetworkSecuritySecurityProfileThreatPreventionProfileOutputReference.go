@@ -13,6 +13,8 @@ import (
 
 type NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference interface {
 	cdktf.ComplexObject
+	AntivirusOverrides() NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesList
+	AntivirusOverridesInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -68,8 +70,10 @@ type NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAntivirusOverrides(value interface{})
 	PutSeverityOverrides(value interface{})
 	PutThreatOverrides(value interface{})
+	ResetAntivirusOverrides()
 	ResetSeverityOverrides()
 	ResetThreatOverrides()
 	// Produce the Token's value at resolution time.
@@ -85,6 +89,26 @@ type NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference interf
 // The jsii proxy struct for NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference
 type jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) AntivirusOverrides() NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesList {
+	var returns NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesList
+	_jsii_.Get(
+		j,
+		"antivirusOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) AntivirusOverridesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"antivirusOverridesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) ComplexObjectIndex() interface{} {
@@ -466,6 +490,17 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 	return returns
 }
 
+func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) PutAntivirusOverrides(value interface{}) {
+	if err := n.validatePutAntivirusOverridesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putAntivirusOverrides",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) PutSeverityOverrides(value interface{}) {
 	if err := n.validatePutSeverityOverridesParameters(value); err != nil {
 		panic(err)
@@ -485,6 +520,14 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputRe
 		n,
 		"putThreatOverrides",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) ResetAntivirusOverrides() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAntivirusOverrides",
+		nil, // no parameters
 	)
 }
 

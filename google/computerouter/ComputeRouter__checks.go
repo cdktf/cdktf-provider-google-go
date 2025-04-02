@@ -218,6 +218,17 @@ func (c *jsiiProxy_ComputeRouter) validatePutBgpParameters(value *ComputeRouterB
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRouter) validatePutMd5AuthenticationKeysParameters(value *ComputeRouterMd5AuthenticationKeys) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRouter) validatePutTimeoutsParameters(value *ComputeRouterTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -37,6 +37,9 @@ type AccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference i
 	Resources() *[]*string
 	SetResources(val *[]*string)
 	ResourcesInput() *[]*string
+	Roles() *[]*string
+	SetRoles(val *[]*string)
+	RolesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type AccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference i
 	PutOperations(value interface{})
 	ResetOperations()
 	ResetResources()
+	ResetRoles()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -177,6 +181,26 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressToOut
 	return returns
 }
 
+func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference) Roles() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"roles",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference) RolesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"rolesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -265,6 +289,17 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressToOut
 	_jsii_.Set(
 		j,
 		"resources",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference)SetRoles(val *[]*string) {
+	if err := j.validateSetRolesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roles",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressToOut
 	_jsii_.InvokeVoid(
 		a,
 		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference) ResetRoles() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRoles",
 		nil, // no parameters
 	)
 }

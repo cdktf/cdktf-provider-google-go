@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -265,6 +265,9 @@ type GoogleProvider interface {
 	EventarcCustomEndpoint() *string
 	SetEventarcCustomEndpoint(val *string)
 	EventarcCustomEndpointInput() *string
+	ExternalCredentials() interface{}
+	SetExternalCredentials(val interface{})
+	ExternalCredentialsInput() interface{}
 	FilestoreCustomEndpoint() *string
 	SetFilestoreCustomEndpoint(val *string)
 	FilestoreCustomEndpointInput() *string
@@ -414,6 +417,12 @@ type GoogleProvider interface {
 	ParallelstoreCustomEndpoint() *string
 	SetParallelstoreCustomEndpoint(val *string)
 	ParallelstoreCustomEndpointInput() *string
+	ParameterManagerCustomEndpoint() *string
+	SetParameterManagerCustomEndpoint(val *string)
+	ParameterManagerCustomEndpointInput() *string
+	ParameterManagerRegionalCustomEndpoint() *string
+	SetParameterManagerRegionalCustomEndpoint(val *string)
+	ParameterManagerRegionalCustomEndpointInput() *string
 	PrivatecaCustomEndpoint() *string
 	SetPrivatecaCustomEndpoint(val *string)
 	PrivatecaCustomEndpointInput() *string
@@ -644,6 +653,7 @@ type GoogleProvider interface {
 	ResetEdgenetworkCustomEndpoint()
 	ResetEssentialContactsCustomEndpoint()
 	ResetEventarcCustomEndpoint()
+	ResetExternalCredentials()
 	ResetFilestoreCustomEndpoint()
 	ResetFirebaseAppCheckCustomEndpoint()
 	ResetFirebaseAppHostingCustomEndpoint()
@@ -694,6 +704,8 @@ type GoogleProvider interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParallelstoreCustomEndpoint()
+	ResetParameterManagerCustomEndpoint()
+	ResetParameterManagerRegionalCustomEndpoint()
 	ResetPrivatecaCustomEndpoint()
 	ResetPrivilegedAccessManagerCustomEndpoint()
 	ResetProject()
@@ -2417,6 +2429,26 @@ func (j *jsiiProxy_GoogleProvider) EventarcCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) ExternalCredentials() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalCredentials",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ExternalCredentialsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalCredentialsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) FilestoreCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3397,6 +3429,46 @@ func (j *jsiiProxy_GoogleProvider) ParallelstoreCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) ParameterManagerCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterManagerCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ParameterManagerCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterManagerCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ParameterManagerRegionalCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterManagerRegionalCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ParameterManagerRegionalCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterManagerRegionalCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) PrivatecaCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -4338,7 +4410,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -4356,7 +4428,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -5029,6 +5101,17 @@ func (j *jsiiProxy_GoogleProvider)SetEventarcCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleProvider)SetExternalCredentials(val interface{}) {
+	if err := j.validateSetExternalCredentialsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalCredentials",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleProvider)SetFilestoreCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -5401,6 +5484,22 @@ func (j *jsiiProxy_GoogleProvider)SetParallelstoreCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"parallelstoreCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetParameterManagerCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"parameterManagerCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetParameterManagerRegionalCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"parameterManagerRegionalCustomEndpoint",
 		val,
 	)
 }
@@ -6549,6 +6648,14 @@ func (g *jsiiProxy_GoogleProvider) ResetEventarcCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleProvider) ResetExternalCredentials() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalCredentials",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleProvider) ResetFilestoreCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6929,6 +7036,22 @@ func (g *jsiiProxy_GoogleProvider) ResetParallelstoreCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetParallelstoreCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetParameterManagerCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParameterManagerCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetParameterManagerRegionalCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParameterManagerRegionalCustomEndpoint",
 		nil, // no parameters
 	)
 }

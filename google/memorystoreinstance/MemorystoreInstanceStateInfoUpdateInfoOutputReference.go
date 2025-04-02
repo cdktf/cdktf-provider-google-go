@@ -32,6 +32,8 @@ type MemorystoreInstanceStateInfoUpdateInfoOutputReference interface {
 	Fqn() *string
 	InternalValue() *MemorystoreInstanceStateInfoUpdateInfo
 	SetInternalValue(val *MemorystoreInstanceStateInfoUpdateInfo)
+	TargetEngineVersion() *string
+	TargetNodeType() *string
 	TargetReplicaCount() *float64
 	TargetShardCount() *float64
 	// Experimental.
@@ -126,6 +128,26 @@ func (j *jsiiProxy_MemorystoreInstanceStateInfoUpdateInfoOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstanceStateInfoUpdateInfoOutputReference) TargetEngineVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetEngineVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstanceStateInfoUpdateInfoOutputReference) TargetNodeType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetNodeType",
 		&returns,
 	)
 	return returns

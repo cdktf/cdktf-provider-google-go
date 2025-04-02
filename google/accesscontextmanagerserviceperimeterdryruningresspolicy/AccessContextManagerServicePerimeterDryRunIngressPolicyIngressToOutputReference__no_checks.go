@@ -71,6 +71,10 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicyIngres
 	return nil
 }
 
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicyIngressToOutputReference) validateSetRolesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicyIngressToOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -79,6 +79,10 @@ func (j *jsiiProxy_DatastreamConnectionProfileSqlServerProfileOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_DatastreamConnectionProfileSqlServerProfileOutputReference) validateSetSecretManagerStoredPasswordParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatastreamConnectionProfileSqlServerProfileOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

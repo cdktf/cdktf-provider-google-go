@@ -12,12 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/redis_cluster google_redis_cluster}.
 type RedisCluster interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
 	SetAuthorizationMode(val *string)
 	AuthorizationModeInput() *string
+	AutomatedBackupConfig() RedisClusterAutomatedBackupConfigOutputReference
+	AutomatedBackupConfigInput() *RedisClusterAutomatedBackupConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -162,6 +164,7 @@ type RedisCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutomatedBackupConfig(value *RedisClusterAutomatedBackupConfig)
 	PutCrossClusterReplicationConfig(value *RedisClusterCrossClusterReplicationConfig)
 	PutMaintenancePolicy(value *RedisClusterMaintenancePolicy)
 	PutPersistenceConfig(value *RedisClusterPersistenceConfig)
@@ -169,6 +172,7 @@ type RedisCluster interface {
 	PutTimeouts(value *RedisClusterTimeouts)
 	PutZoneDistributionConfig(value *RedisClusterZoneDistributionConfig)
 	ResetAuthorizationMode()
+	ResetAutomatedBackupConfig()
 	ResetCrossClusterReplicationConfig()
 	ResetDeletionProtectionEnabled()
 	ResetId()
@@ -221,6 +225,26 @@ func (j *jsiiProxy_RedisCluster) AuthorizationModeInput() *string {
 	_jsii_.Get(
 		j,
 		"authorizationModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) AutomatedBackupConfig() RedisClusterAutomatedBackupConfigOutputReference {
+	var returns RedisClusterAutomatedBackupConfigOutputReference
+	_jsii_.Get(
+		j,
+		"automatedBackupConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedisCluster) AutomatedBackupConfigInput() *RedisClusterAutomatedBackupConfig {
+	var returns *RedisClusterAutomatedBackupConfig
+	_jsii_.Get(
+		j,
+		"automatedBackupConfigInput",
 		&returns,
 	)
 	return returns
@@ -827,7 +851,7 @@ func (j *jsiiProxy_RedisCluster) ZoneDistributionConfigInput() *RedisClusterZone
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster(scope constructs.Construct, id *string, config *RedisClusterConfig) RedisCluster {
 	_init_.Initialize()
 
@@ -845,7 +869,7 @@ func NewRedisCluster(scope constructs.Construct, id *string, config *RedisCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/resources/redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/redis_cluster google_redis_cluster} Resource.
 func NewRedisCluster_Override(r RedisCluster, scope constructs.Construct, id *string, config *RedisClusterConfig) {
 	_init_.Initialize()
 
@@ -1409,6 +1433,17 @@ func (r *jsiiProxy_RedisCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (r *jsiiProxy_RedisCluster) PutAutomatedBackupConfig(value *RedisClusterAutomatedBackupConfig) {
+	if err := r.validatePutAutomatedBackupConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putAutomatedBackupConfig",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RedisCluster) PutCrossClusterReplicationConfig(value *RedisClusterCrossClusterReplicationConfig) {
 	if err := r.validatePutCrossClusterReplicationConfigParameters(value); err != nil {
 		panic(err)
@@ -1479,6 +1514,14 @@ func (r *jsiiProxy_RedisCluster) ResetAuthorizationMode() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetAuthorizationMode",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedisCluster) ResetAutomatedBackupConfig() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAutomatedBackupConfig",
 		nil, // no parameters
 	)
 }

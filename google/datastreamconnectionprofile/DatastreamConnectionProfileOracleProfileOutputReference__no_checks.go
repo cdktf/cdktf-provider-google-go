@@ -83,6 +83,10 @@ func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) validateSetSecretManagerStoredPasswordParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

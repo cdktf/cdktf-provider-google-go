@@ -75,6 +75,10 @@ func (j *jsiiProxy_ComputeSnapshotSnapshotEncryptionKeyOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSnapshotSnapshotEncryptionKeyOutputReference) validateSetRsaEncryptedKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSnapshotSnapshotEncryptionKeyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

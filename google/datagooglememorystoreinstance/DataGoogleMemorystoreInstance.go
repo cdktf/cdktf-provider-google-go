@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/data-sources/memorystore_instance google_memorystore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/data-sources/memorystore_instance google_memorystore_instance}.
 type DataGoogleMemorystoreInstance interface {
 	cdktf.TerraformDataSource
 	AuthorizationMode() *string
@@ -25,6 +25,7 @@ type DataGoogleMemorystoreInstance interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	CrossInstanceReplicationConfig() DataGoogleMemorystoreInstanceCrossInstanceReplicationConfigList
 	DeletionProtectionEnabled() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
@@ -74,6 +75,7 @@ type DataGoogleMemorystoreInstance interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	PscAttachmentDetails() DataGoogleMemorystoreInstancePscAttachmentDetailsList
 	PscAutoConnections() DataGoogleMemorystoreInstancePscAutoConnectionsList
 	// Experimental.
 	RawOverrides() interface{}
@@ -187,6 +189,16 @@ func (j *jsiiProxy_DataGoogleMemorystoreInstance) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleMemorystoreInstance) CrossInstanceReplicationConfig() DataGoogleMemorystoreInstanceCrossInstanceReplicationConfigList {
+	var returns DataGoogleMemorystoreInstanceCrossInstanceReplicationConfigList
+	_jsii_.Get(
+		j,
+		"crossInstanceReplicationConfig",
 		&returns,
 	)
 	return returns
@@ -492,6 +504,16 @@ func (j *jsiiProxy_DataGoogleMemorystoreInstance) Provider() cdktf.TerraformProv
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleMemorystoreInstance) PscAttachmentDetails() DataGoogleMemorystoreInstancePscAttachmentDetailsList {
+	var returns DataGoogleMemorystoreInstancePscAttachmentDetailsList
+	_jsii_.Get(
+		j,
+		"pscAttachmentDetails",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleMemorystoreInstance) PscAutoConnections() DataGoogleMemorystoreInstancePscAutoConnectionsList {
 	var returns DataGoogleMemorystoreInstancePscAutoConnectionsList
 	_jsii_.Get(
@@ -633,7 +655,7 @@ func (j *jsiiProxy_DataGoogleMemorystoreInstance) ZoneDistributionConfig() DataG
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/data-sources/memorystore_instance google_memorystore_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/data-sources/memorystore_instance google_memorystore_instance} Data Source.
 func NewDataGoogleMemorystoreInstance(scope constructs.Construct, id *string, config *DataGoogleMemorystoreInstanceConfig) DataGoogleMemorystoreInstance {
 	_init_.Initialize()
 
@@ -651,7 +673,7 @@ func NewDataGoogleMemorystoreInstance(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.27.0/docs/data-sources/memorystore_instance google_memorystore_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/data-sources/memorystore_instance google_memorystore_instance} Data Source.
 func NewDataGoogleMemorystoreInstance_Override(d DataGoogleMemorystoreInstance, scope constructs.Construct, id *string, config *DataGoogleMemorystoreInstanceConfig) {
 	_init_.Initialize()
 

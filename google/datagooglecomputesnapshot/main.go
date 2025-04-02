@@ -140,6 +140,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyServiceAccount", GoGetter: "KmsKeyServiceAccount"},
 			_jsii_.MemberProperty{JsiiProperty: "rawKey", GoGetter: "RawKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "rsaEncryptedKey", GoGetter: "RsaEncryptedKey"},
 			_jsii_.MemberProperty{JsiiProperty: "sha256", GoGetter: "Sha256"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
