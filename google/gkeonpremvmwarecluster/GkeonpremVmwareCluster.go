@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster}.
 type GkeonpremVmwareCluster interface {
 	cdktf.TerraformResource
 	AdminClusterMembership() *string
@@ -56,6 +56,9 @@ type GkeonpremVmwareCluster interface {
 	SetDisableBundledIngress(val interface{})
 	DisableBundledIngressInput() interface{}
 	EffectiveAnnotations() cdktf.StringMap
+	EnableAdvancedCluster() interface{}
+	SetEnableAdvancedCluster(val interface{})
+	EnableAdvancedClusterInput() interface{}
 	EnableControlPlaneV2() interface{}
 	SetEnableControlPlaneV2(val interface{})
 	EnableControlPlaneV2Input() interface{}
@@ -190,6 +193,7 @@ type GkeonpremVmwareCluster interface {
 	ResetDataplaneV2()
 	ResetDescription()
 	ResetDisableBundledIngress()
+	ResetEnableAdvancedCluster()
 	ResetEnableControlPlaneV2()
 	ResetId()
 	ResetLoadBalancer()
@@ -476,6 +480,26 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) EffectiveAnnotations() cdktf.StringMa
 	_jsii_.Get(
 		j,
 		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeonpremVmwareCluster) EnableAdvancedCluster() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAdvancedCluster",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeonpremVmwareCluster) EnableAdvancedClusterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAdvancedClusterInput",
 		&returns,
 	)
 	return returns
@@ -952,7 +976,7 @@ func (j *jsiiProxy_GkeonpremVmwareCluster) VmTrackingEnabledInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
 func NewGkeonpremVmwareCluster(scope constructs.Construct, id *string, config *GkeonpremVmwareClusterConfig) GkeonpremVmwareCluster {
 	_init_.Initialize()
 
@@ -970,7 +994,7 @@ func NewGkeonpremVmwareCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
 func NewGkeonpremVmwareCluster_Override(g GkeonpremVmwareCluster, scope constructs.Construct, id *string, config *GkeonpremVmwareClusterConfig) {
 	_init_.Initialize()
 
@@ -1051,6 +1075,17 @@ func (j *jsiiProxy_GkeonpremVmwareCluster)SetDisableBundledIngress(val interface
 	_jsii_.Set(
 		j,
 		"disableBundledIngress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GkeonpremVmwareCluster)SetEnableAdvancedCluster(val interface{}) {
+	if err := j.validateSetEnableAdvancedClusterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableAdvancedCluster",
 		val,
 	)
 }
@@ -1696,6 +1731,14 @@ func (g *jsiiProxy_GkeonpremVmwareCluster) ResetDisableBundledIngress() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDisableBundledIngress",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeonpremVmwareCluster) ResetEnableAdvancedCluster() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableAdvancedCluster",
 		nil, // no parameters
 	)
 }

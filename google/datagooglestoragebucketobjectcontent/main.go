@@ -52,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyName", GoGetter: "KmsKeyName"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "md5Hash", GoGetter: "Md5Hash"},
+			_jsii_.MemberProperty{JsiiProperty: "md5Hexhash", GoGetter: "Md5Hexhash"},
 			_jsii_.MemberProperty{JsiiProperty: "mediaLink", GoGetter: "MediaLink"},
 			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},

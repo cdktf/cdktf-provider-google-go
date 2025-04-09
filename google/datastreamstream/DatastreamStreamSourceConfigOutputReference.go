@@ -38,6 +38,8 @@ type DatastreamStreamSourceConfigOutputReference interface {
 	OracleSourceConfigInput() *DatastreamStreamSourceConfigOracleSourceConfig
 	PostgresqlSourceConfig() DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference
 	PostgresqlSourceConfigInput() *DatastreamStreamSourceConfigPostgresqlSourceConfig
+	SalesforceSourceConfig() DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference
+	SalesforceSourceConfigInput() *DatastreamStreamSourceConfigSalesforceSourceConfig
 	SourceConnectionProfile() *string
 	SetSourceConnectionProfile(val *string)
 	SourceConnectionProfileInput() *string
@@ -78,10 +80,12 @@ type DatastreamStreamSourceConfigOutputReference interface {
 	PutMysqlSourceConfig(value *DatastreamStreamSourceConfigMysqlSourceConfig)
 	PutOracleSourceConfig(value *DatastreamStreamSourceConfigOracleSourceConfig)
 	PutPostgresqlSourceConfig(value *DatastreamStreamSourceConfigPostgresqlSourceConfig)
+	PutSalesforceSourceConfig(value *DatastreamStreamSourceConfigSalesforceSourceConfig)
 	PutSqlServerSourceConfig(value *DatastreamStreamSourceConfigSqlServerSourceConfig)
 	ResetMysqlSourceConfig()
 	ResetOracleSourceConfig()
 	ResetPostgresqlSourceConfig()
+	ResetSalesforceSourceConfig()
 	ResetSqlServerSourceConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -203,6 +207,26 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) PostgresqlSource
 	_jsii_.Get(
 		j,
 		"postgresqlSourceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) SalesforceSourceConfig() DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference {
+	var returns DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"salesforceSourceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) SalesforceSourceConfigInput() *DatastreamStreamSourceConfigSalesforceSourceConfig {
+	var returns *DatastreamStreamSourceConfigSalesforceSourceConfig
+	_jsii_.Get(
+		j,
+		"salesforceSourceConfigInput",
 		&returns,
 	)
 	return returns
@@ -581,6 +605,17 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) PutPostgresqlSou
 	)
 }
 
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) PutSalesforceSourceConfig(value *DatastreamStreamSourceConfigSalesforceSourceConfig) {
+	if err := d.validatePutSalesforceSourceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSalesforceSourceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) PutSqlServerSourceConfig(value *DatastreamStreamSourceConfigSqlServerSourceConfig) {
 	if err := d.validatePutSqlServerSourceConfigParameters(value); err != nil {
 		panic(err)
@@ -612,6 +647,14 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) ResetPostgresqlS
 	_jsii_.InvokeVoid(
 		d,
 		"resetPostgresqlSourceConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) ResetSalesforceSourceConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSalesforceSourceConfig",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/access_context_manager_gcp_user_access_binding google_access_context_manager_gcp_user_access_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/access_context_manager_gcp_user_access_binding google_access_context_manager_gcp_user_access_binding}.
 type AccessContextManagerGcpUserAccessBinding interface {
 	cdktf.TerraformResource
 	AccessLevels() *[]*string
@@ -68,6 +68,8 @@ type AccessContextManagerGcpUserAccessBinding interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SessionSettings() AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference
+	SessionSettingsInput() *AccessContextManagerGcpUserAccessBindingSessionSettings
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -119,11 +121,14 @@ type AccessContextManagerGcpUserAccessBinding interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutSessionSettings(value *AccessContextManagerGcpUserAccessBindingSessionSettings)
 	PutTimeouts(value *AccessContextManagerGcpUserAccessBindingTimeouts)
+	ResetAccessLevels()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSessionSettings()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -363,6 +368,26 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBinding) RawOverrides() inte
 	return returns
 }
 
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBinding) SessionSettings() AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference {
+	var returns AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"sessionSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBinding) SessionSettingsInput() *AccessContextManagerGcpUserAccessBindingSessionSettings {
+	var returns *AccessContextManagerGcpUserAccessBindingSessionSettings
+	_jsii_.Get(
+		j,
+		"sessionSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AccessContextManagerGcpUserAccessBinding) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -414,7 +439,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBinding) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/access_context_manager_gcp_user_access_binding google_access_context_manager_gcp_user_access_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/access_context_manager_gcp_user_access_binding google_access_context_manager_gcp_user_access_binding} Resource.
 func NewAccessContextManagerGcpUserAccessBinding(scope constructs.Construct, id *string, config *AccessContextManagerGcpUserAccessBindingConfig) AccessContextManagerGcpUserAccessBinding {
 	_init_.Initialize()
 
@@ -432,7 +457,7 @@ func NewAccessContextManagerGcpUserAccessBinding(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/access_context_manager_gcp_user_access_binding google_access_context_manager_gcp_user_access_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/access_context_manager_gcp_user_access_binding google_access_context_manager_gcp_user_access_binding} Resource.
 func NewAccessContextManagerGcpUserAccessBinding_Override(a AccessContextManagerGcpUserAccessBinding, scope constructs.Construct, id *string, config *AccessContextManagerGcpUserAccessBindingConfig) {
 	_init_.Initialize()
 
@@ -908,6 +933,17 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) OverrideLogicalId(n
 	)
 }
 
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) PutSessionSettings(value *AccessContextManagerGcpUserAccessBindingSessionSettings) {
+	if err := a.validatePutSessionSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putSessionSettings",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) PutTimeouts(value *AccessContextManagerGcpUserAccessBindingTimeouts) {
 	if err := a.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -916,6 +952,14 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) PutTimeouts(value *
 		a,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) ResetAccessLevels() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAccessLevels",
+		nil, // no parameters
 	)
 }
 
@@ -931,6 +975,14 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) ResetOverrideLogica
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBinding) ResetSessionSettings() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSessionSettings",
 		nil, // no parameters
 	)
 }

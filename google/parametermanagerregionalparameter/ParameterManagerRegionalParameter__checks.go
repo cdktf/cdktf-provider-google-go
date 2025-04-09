@@ -364,6 +364,14 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter) validateSetIdParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ParameterManagerRegionalParameter) validateSetKmsKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ParameterManagerRegionalParameter) validateSetLabelsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -49,6 +49,8 @@ type NetappVolumeReplicationDestinationVolumeParametersOutputReference interface
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TieringPolicy() NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference
+	TieringPolicyInput() *NetappVolumeReplicationDestinationVolumeParametersTieringPolicy
 	VolumeId() *string
 	SetVolumeId(val *string)
 	VolumeIdInput() *string
@@ -76,8 +78,10 @@ type NetappVolumeReplicationDestinationVolumeParametersOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutTieringPolicy(value *NetappVolumeReplicationDestinationVolumeParametersTieringPolicy)
 	ResetDescription()
 	ResetShareName()
+	ResetTieringPolicy()
 	ResetVolumeId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -219,6 +223,26 @@ func (j *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputRefer
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) TieringPolicy() NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference {
+	var returns NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"tieringPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) TieringPolicyInput() *NetappVolumeReplicationDestinationVolumeParametersTieringPolicy {
+	var returns *NetappVolumeReplicationDestinationVolumeParametersTieringPolicy
+	_jsii_.Get(
+		j,
+		"tieringPolicyInput",
 		&returns,
 	)
 	return returns
@@ -557,6 +581,17 @@ func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputRefer
 	return returns
 }
 
+func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) PutTieringPolicy(value *NetappVolumeReplicationDestinationVolumeParametersTieringPolicy) {
+	if err := n.validatePutTieringPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putTieringPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		n,
@@ -569,6 +604,14 @@ func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputRefer
 	_jsii_.InvokeVoid(
 		n,
 		"resetShareName",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) ResetTieringPolicy() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTieringPolicy",
 		nil, // no parameters
 	)
 }

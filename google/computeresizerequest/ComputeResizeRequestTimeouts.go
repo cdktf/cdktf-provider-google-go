@@ -5,9 +5,9 @@ package computeresizerequest
 
 
 type ComputeResizeRequestTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/compute_resize_request#create ComputeResizeRequest#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/compute_resize_request#create ComputeResizeRequest#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/compute_resize_request#delete ComputeResizeRequest#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/compute_resize_request#delete ComputeResizeRequest#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

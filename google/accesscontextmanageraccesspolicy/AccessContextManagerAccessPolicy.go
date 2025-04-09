@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/access_context_manager_access_policy google_access_context_manager_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/access_context_manager_access_policy google_access_context_manager_access_policy}.
 type AccessContextManagerAccessPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_AccessContextManagerAccessPolicy) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/access_context_manager_access_policy google_access_context_manager_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/access_context_manager_access_policy google_access_context_manager_access_policy} Resource.
 func NewAccessContextManagerAccessPolicy(scope constructs.Construct, id *string, config *AccessContextManagerAccessPolicyConfig) AccessContextManagerAccessPolicy {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewAccessContextManagerAccessPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/access_context_manager_access_policy google_access_context_manager_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/access_context_manager_access_policy google_access_context_manager_access_policy} Resource.
 func NewAccessContextManagerAccessPolicy_Override(a AccessContextManagerAccessPolicy, scope constructs.Construct, id *string, config *AccessContextManagerAccessPolicyConfig) {
 	_init_.Initialize()
 

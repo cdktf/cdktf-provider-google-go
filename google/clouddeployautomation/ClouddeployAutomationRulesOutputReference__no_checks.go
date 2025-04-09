@@ -55,6 +55,14 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) validatePutPromote
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) validatePutRepairRolloutRuleParameters(value *ClouddeployAutomationRulesRepairRolloutRule) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) validatePutTimedPromoteReleaseRuleParameters(value *ClouddeployAutomationRulesTimedPromoteReleaseRule) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

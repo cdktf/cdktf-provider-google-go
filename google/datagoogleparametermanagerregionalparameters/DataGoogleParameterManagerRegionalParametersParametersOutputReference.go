@@ -35,6 +35,7 @@ type DataGoogleParameterManagerRegionalParametersParametersOutputReference inter
 	Fqn() *string
 	InternalValue() *DataGoogleParameterManagerRegionalParametersParameters
 	SetInternalValue(val *DataGoogleParameterManagerRegionalParametersParameters)
+	KmsKey() *string
 	Labels() cdktf.StringMap
 	Location() *string
 	Name() *string
@@ -165,6 +166,16 @@ func (j *jsiiProxy_DataGoogleParameterManagerRegionalParametersParametersOutputR
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleParameterManagerRegionalParametersParametersOutputReference) KmsKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKey",
 		&returns,
 	)
 	return returns

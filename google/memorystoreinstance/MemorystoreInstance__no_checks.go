@@ -75,6 +75,10 @@ func (m *jsiiProxy_MemorystoreInstance) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (m *jsiiProxy_MemorystoreInstance) validatePutAutomatedBackupConfigParameters(value *MemorystoreInstanceAutomatedBackupConfig) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorystoreInstance) validatePutCrossInstanceReplicationConfigParameters(value *MemorystoreInstanceCrossInstanceReplicationConfig) error {
 	return nil
 }

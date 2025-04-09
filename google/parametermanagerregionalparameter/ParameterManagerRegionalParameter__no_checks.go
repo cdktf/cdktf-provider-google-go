@@ -111,6 +111,10 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter) validateSetIdParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ParameterManagerRegionalParameter) validateSetKmsKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ParameterManagerRegionalParameter) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }

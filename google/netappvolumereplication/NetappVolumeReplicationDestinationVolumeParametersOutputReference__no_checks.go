@@ -47,6 +47,10 @@ func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputRefer
 	return nil
 }
 
+func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) validatePutTieringPolicyParameters(value *NetappVolumeReplicationDestinationVolumeParametersTieringPolicy) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

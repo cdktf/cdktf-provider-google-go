@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter}.
 type ParameterManagerRegionalParameter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -47,6 +47,9 @@ type ParameterManagerRegionalParameter interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KmsKey() *string
+	SetKmsKey(val *string)
+	KmsKeyInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -133,6 +136,7 @@ type ParameterManagerRegionalParameter interface {
 	PutTimeouts(value *ParameterManagerRegionalParameterTimeouts)
 	ResetFormat()
 	ResetId()
+	ResetKmsKey()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -292,6 +296,26 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ParameterManagerRegionalParameter) KmsKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ParameterManagerRegionalParameter) KmsKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyInput",
 		&returns,
 	)
 	return returns
@@ -518,7 +542,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter} Resource.
 func NewParameterManagerRegionalParameter(scope constructs.Construct, id *string, config *ParameterManagerRegionalParameterConfig) ParameterManagerRegionalParameter {
 	_init_.Initialize()
 
@@ -536,7 +560,7 @@ func NewParameterManagerRegionalParameter(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter} Resource.
 func NewParameterManagerRegionalParameter_Override(p ParameterManagerRegionalParameter, scope constructs.Construct, id *string, config *ParameterManagerRegionalParameterConfig) {
 	_init_.Initialize()
 
@@ -603,6 +627,17 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ParameterManagerRegionalParameter)SetKmsKey(val *string) {
+	if err := j.validateSetKmsKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKey",
 		val,
 	)
 }
@@ -1057,6 +1092,14 @@ func (p *jsiiProxy_ParameterManagerRegionalParameter) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_ParameterManagerRegionalParameter) ResetKmsKey() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKmsKey",
 		nil, // no parameters
 	)
 }

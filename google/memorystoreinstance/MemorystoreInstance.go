@@ -12,12 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/memorystore_instance google_memorystore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/memorystore_instance google_memorystore_instance}.
 type MemorystoreInstance interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
 	SetAuthorizationMode(val *string)
 	AuthorizationModeInput() *string
+	AutomatedBackupConfig() MemorystoreInstanceAutomatedBackupConfigOutputReference
+	AutomatedBackupConfigInput() *MemorystoreInstanceAutomatedBackupConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -172,6 +174,7 @@ type MemorystoreInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutomatedBackupConfig(value *MemorystoreInstanceAutomatedBackupConfig)
 	PutCrossInstanceReplicationConfig(value *MemorystoreInstanceCrossInstanceReplicationConfig)
 	PutDesiredPscAutoConnections(value interface{})
 	PutMaintenancePolicy(value *MemorystoreInstanceMaintenancePolicy)
@@ -179,6 +182,7 @@ type MemorystoreInstance interface {
 	PutTimeouts(value *MemorystoreInstanceTimeouts)
 	PutZoneDistributionConfig(value *MemorystoreInstanceZoneDistributionConfig)
 	ResetAuthorizationMode()
+	ResetAutomatedBackupConfig()
 	ResetCrossInstanceReplicationConfig()
 	ResetDeletionProtectionEnabled()
 	ResetDesiredPscAutoConnections()
@@ -231,6 +235,26 @@ func (j *jsiiProxy_MemorystoreInstance) AuthorizationModeInput() *string {
 	_jsii_.Get(
 		j,
 		"authorizationModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) AutomatedBackupConfig() MemorystoreInstanceAutomatedBackupConfigOutputReference {
+	var returns MemorystoreInstanceAutomatedBackupConfigOutputReference
+	_jsii_.Get(
+		j,
+		"automatedBackupConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorystoreInstance) AutomatedBackupConfigInput() *MemorystoreInstanceAutomatedBackupConfig {
+	var returns *MemorystoreInstanceAutomatedBackupConfig
+	_jsii_.Get(
+		j,
+		"automatedBackupConfigInput",
 		&returns,
 	)
 	return returns
@@ -917,7 +941,7 @@ func (j *jsiiProxy_MemorystoreInstance) ZoneDistributionConfigInput() *Memorysto
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
 func NewMemorystoreInstance(scope constructs.Construct, id *string, config *MemorystoreInstanceConfig) MemorystoreInstance {
 	_init_.Initialize()
 
@@ -935,7 +959,7 @@ func NewMemorystoreInstance(scope constructs.Construct, id *string, config *Memo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
 func NewMemorystoreInstance_Override(m MemorystoreInstance, scope constructs.Construct, id *string, config *MemorystoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -1521,6 +1545,17 @@ func (m *jsiiProxy_MemorystoreInstance) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (m *jsiiProxy_MemorystoreInstance) PutAutomatedBackupConfig(value *MemorystoreInstanceAutomatedBackupConfig) {
+	if err := m.validatePutAutomatedBackupConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putAutomatedBackupConfig",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MemorystoreInstance) PutCrossInstanceReplicationConfig(value *MemorystoreInstanceCrossInstanceReplicationConfig) {
 	if err := m.validatePutCrossInstanceReplicationConfigParameters(value); err != nil {
 		panic(err)
@@ -1591,6 +1626,14 @@ func (m *jsiiProxy_MemorystoreInstance) ResetAuthorizationMode() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetAuthorizationMode",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemorystoreInstance) ResetAutomatedBackupConfig() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAutomatedBackupConfig",
 		nil, // no parameters
 	)
 }

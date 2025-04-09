@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version}.
 type ParameterManagerRegionalParameterVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,6 +46,7 @@ type ParameterManagerRegionalParameterVersion interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KmsKeyVersion() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -280,6 +281,16 @@ func (j *jsiiProxy_ParameterManagerRegionalParameterVersion) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ParameterManagerRegionalParameterVersion) KmsKeyVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyVersion",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ParameterManagerRegionalParameterVersion) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -471,7 +482,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameterVersion) UpdateTime() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version} Resource.
 func NewParameterManagerRegionalParameterVersion(scope constructs.Construct, id *string, config *ParameterManagerRegionalParameterVersionConfig) ParameterManagerRegionalParameterVersion {
 	_init_.Initialize()
 
@@ -489,7 +500,7 @@ func NewParameterManagerRegionalParameterVersion(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.28.0/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version} Resource.
 func NewParameterManagerRegionalParameterVersion_Override(p ParameterManagerRegionalParameterVersion, scope constructs.Construct, id *string, config *ParameterManagerRegionalParameterVersionConfig) {
 	_init_.Initialize()
 

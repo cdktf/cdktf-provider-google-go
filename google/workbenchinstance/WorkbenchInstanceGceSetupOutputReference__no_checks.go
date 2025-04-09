@@ -55,6 +55,10 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutBootDisk
 	return nil
 }
 
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutConfidentialInstanceConfigParameters(value *WorkbenchInstanceGceSetupConfidentialInstanceConfig) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutContainerImageParameters(value *WorkbenchInstanceGceSetupContainerImage) error {
 	return nil
 }
