@@ -83,6 +83,10 @@ func (b *jsiiProxy_BigqueryTable) validatePutEncryptionConfigurationParameters(v
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryTable) validatePutExternalCatalogTableOptionsParameters(value *BigqueryTableExternalCatalogTableOptions) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryTable) validatePutExternalDataConfigurationParameters(value *BigqueryTableExternalDataConfiguration) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (b *jsiiProxy_BigqueryTable) validatePutMaterializedViewParameters(value *B
 }
 
 func (b *jsiiProxy_BigqueryTable) validatePutRangePartitioningParameters(value *BigqueryTableRangePartitioning) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryTable) validatePutSchemaForeignTypeInfoParameters(value *BigqueryTableSchemaForeignTypeInfo) error {
 	return nil
 }
 

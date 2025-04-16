@@ -87,7 +87,15 @@ func (m *jsiiProxy_MemorystoreInstance) validatePutDesiredPscAutoConnectionsPara
 	return nil
 }
 
+func (m *jsiiProxy_MemorystoreInstance) validatePutGcsSourceParameters(value *MemorystoreInstanceGcsSource) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorystoreInstance) validatePutMaintenancePolicyParameters(value *MemorystoreInstanceMaintenancePolicy) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorystoreInstance) validatePutManagedBackupSourceParameters(value *MemorystoreInstanceManagedBackupSource) error {
 	return nil
 }
 

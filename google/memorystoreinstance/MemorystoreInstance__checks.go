@@ -260,7 +260,29 @@ func (m *jsiiProxy_MemorystoreInstance) validatePutDesiredPscAutoConnectionsPara
 	return nil
 }
 
+func (m *jsiiProxy_MemorystoreInstance) validatePutGcsSourceParameters(value *MemorystoreInstanceGcsSource) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MemorystoreInstance) validatePutMaintenancePolicyParameters(value *MemorystoreInstanceMaintenancePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MemorystoreInstance) validatePutManagedBackupSourceParameters(value *MemorystoreInstanceManagedBackupSource) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

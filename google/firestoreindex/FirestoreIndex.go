@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/firestore_index google_firestore_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/firestore_index google_firestore_index}.
 type FirestoreIndex interface {
 	cdktf.TerraformResource
 	ApiScope() *string
@@ -36,6 +36,9 @@ type FirestoreIndex interface {
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
+	Density() *string
+	SetDensity(val *string)
+	DensityInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,6 +60,9 @@ type FirestoreIndex interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Multikey() interface{}
+	SetMultikey(val interface{})
+	MultikeyInput() interface{}
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -131,7 +137,9 @@ type FirestoreIndex interface {
 	PutTimeouts(value *FirestoreIndexTimeouts)
 	ResetApiScope()
 	ResetDatabase()
+	ResetDensity()
 	ResetId()
+	ResetMultikey()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -256,6 +264,26 @@ func (j *jsiiProxy_FirestoreIndex) DatabaseInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FirestoreIndex) Density() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"density",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreIndex) DensityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"densityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FirestoreIndex) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -341,6 +369,26 @@ func (j *jsiiProxy_FirestoreIndex) Lifecycle() *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreIndex) Multikey() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multikey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FirestoreIndex) MultikeyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multikeyInput",
 		&returns,
 	)
 	return returns
@@ -487,7 +535,7 @@ func (j *jsiiProxy_FirestoreIndex) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/firestore_index google_firestore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/firestore_index google_firestore_index} Resource.
 func NewFirestoreIndex(scope constructs.Construct, id *string, config *FirestoreIndexConfig) FirestoreIndex {
 	_init_.Initialize()
 
@@ -505,7 +553,7 @@ func NewFirestoreIndex(scope constructs.Construct, id *string, config *Firestore
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/firestore_index google_firestore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/firestore_index google_firestore_index} Resource.
 func NewFirestoreIndex_Override(f FirestoreIndex, scope constructs.Construct, id *string, config *FirestoreIndexConfig) {
 	_init_.Initialize()
 
@@ -571,6 +619,17 @@ func (j *jsiiProxy_FirestoreIndex)SetDatabase(val *string) {
 	)
 }
 
+func (j *jsiiProxy_FirestoreIndex)SetDensity(val *string) {
+	if err := j.validateSetDensityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"density",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FirestoreIndex)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -605,6 +664,17 @@ func (j *jsiiProxy_FirestoreIndex)SetLifecycle(val *cdktf.TerraformResourceLifec
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FirestoreIndex)SetMultikey(val interface{}) {
+	if err := j.validateSetMultikeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"multikey",
 		val,
 	)
 }
@@ -1041,10 +1111,26 @@ func (f *jsiiProxy_FirestoreIndex) ResetDatabase() {
 	)
 }
 
+func (f *jsiiProxy_FirestoreIndex) ResetDensity() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDensity",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FirestoreIndex) ResetId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FirestoreIndex) ResetMultikey() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetMultikey",
 		nil, // no parameters
 	)
 }

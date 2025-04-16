@@ -174,6 +174,14 @@ func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) validateSetKmsKeySelfLinkParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) validateSetKmsKeyServiceAccountParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -183,6 +191,14 @@ func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) valida
 }
 
 func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) validateSetRawKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) validateSetRsaEncryptedKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

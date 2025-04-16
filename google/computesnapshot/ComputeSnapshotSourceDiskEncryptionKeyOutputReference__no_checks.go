@@ -63,11 +63,19 @@ func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) validateSetKmsKeySelfLinkParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) validateSetKmsKeyServiceAccountParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) validateSetRawKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) validateSetRsaEncryptedKeyParameters(val *string) error {
 	return nil
 }
 

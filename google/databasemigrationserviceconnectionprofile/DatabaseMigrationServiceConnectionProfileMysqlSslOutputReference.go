@@ -50,6 +50,8 @@ type DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference interface 
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -74,8 +76,10 @@ type DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCaCertificate()
 	ResetClientCertificate()
 	ResetClientKey()
+	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -231,6 +235,16 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDatabaseMigrationServiceConnectionProfileMysqlSslOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference {
 	_init_.Initialize()
@@ -343,6 +357,17 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -533,6 +558,14 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 	return returns
 }
 
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) ResetCaCertificate() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCaCertificate",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) ResetClientCertificate() {
 	_jsii_.InvokeVoid(
 		d,
@@ -545,6 +578,14 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 	_jsii_.InvokeVoid(
 		d,
 		"resetClientKey",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) ResetType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetType",
 		nil, // no parameters
 	)
 }

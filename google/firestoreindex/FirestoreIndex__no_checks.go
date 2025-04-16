@@ -119,11 +119,19 @@ func (j *jsiiProxy_FirestoreIndex) validateSetDatabaseParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_FirestoreIndex) validateSetDensityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FirestoreIndex) validateSetIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_FirestoreIndex) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_FirestoreIndex) validateSetMultikeyParameters(val interface{}) error {
 	return nil
 }
 

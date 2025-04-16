@@ -67,7 +67,15 @@ func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference) validateSetSource
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference) validateSetSourceNatActiveRangesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference) validateSetSourceNatDrainIpsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRouterNatRulesActionOutputReference) validateSetSourceNatDrainRangesParameters(val *[]*string) error {
 	return nil
 }
 

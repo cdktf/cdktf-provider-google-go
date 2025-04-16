@@ -74,6 +74,7 @@ type DatabaseMigrationServiceConnectionProfileOracleSslOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCaCertificate()
 	ResetClientCertificate()
 	ResetClientKey()
 	// Produce the Token's value at resolution time.
@@ -531,6 +532,14 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleSslOutputRefer
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleSslOutputReference) ResetCaCertificate() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCaCertificate",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleSslOutputReference) ResetClientCertificate() {

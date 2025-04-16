@@ -203,6 +203,10 @@ func (j *jsiiProxy_ComputeRouterNat) validateSetTcpTransitoryIdleTimeoutSecParam
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRouterNat) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRouterNat) validateSetUdpIdleTimeoutSecParameters(val *float64) error {
 	return nil
 }

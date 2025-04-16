@@ -78,6 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "udpIdleTimeoutSec", GoGetter: "UdpIdleTimeoutSec"},
 		},
 		func() interface{} {
@@ -201,7 +202,9 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceNatActiveIps", GoGetter: "SourceNatActiveIps"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceNatActiveRanges", GoGetter: "SourceNatActiveRanges"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceNatDrainIps", GoGetter: "SourceNatDrainIps"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceNatDrainRanges", GoGetter: "SourceNatDrainRanges"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

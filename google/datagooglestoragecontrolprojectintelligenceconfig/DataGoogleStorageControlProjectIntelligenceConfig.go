@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/data-sources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config}.
 type DataGoogleStorageControlProjectIntelligenceConfig interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -62,6 +62,7 @@ type DataGoogleStorageControlProjectIntelligenceConfig interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TrialConfig() DataGoogleStorageControlProjectIntelligenceConfigTrialConfigList
 	UpdateTime() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -321,6 +322,16 @@ func (j *jsiiProxy_DataGoogleStorageControlProjectIntelligenceConfig) TerraformR
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleStorageControlProjectIntelligenceConfig) TrialConfig() DataGoogleStorageControlProjectIntelligenceConfigTrialConfigList {
+	var returns DataGoogleStorageControlProjectIntelligenceConfigTrialConfigList
+	_jsii_.Get(
+		j,
+		"trialConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleStorageControlProjectIntelligenceConfig) UpdateTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -332,7 +343,7 @@ func (j *jsiiProxy_DataGoogleStorageControlProjectIntelligenceConfig) UpdateTime
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/data-sources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config} Data Source.
 func NewDataGoogleStorageControlProjectIntelligenceConfig(scope constructs.Construct, id *string, config *DataGoogleStorageControlProjectIntelligenceConfigConfig) DataGoogleStorageControlProjectIntelligenceConfig {
 	_init_.Initialize()
 
@@ -350,7 +361,7 @@ func NewDataGoogleStorageControlProjectIntelligenceConfig(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/data-sources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config} Data Source.
 func NewDataGoogleStorageControlProjectIntelligenceConfig_Override(d DataGoogleStorageControlProjectIntelligenceConfig, scope constructs.Construct, id *string, config *DataGoogleStorageControlProjectIntelligenceConfigConfig) {
 	_init_.Initialize()
 

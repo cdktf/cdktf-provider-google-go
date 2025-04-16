@@ -83,7 +83,15 @@ func (r *jsiiProxy_RedisCluster) validatePutCrossClusterReplicationConfigParamet
 	return nil
 }
 
+func (r *jsiiProxy_RedisCluster) validatePutGcsSourceParameters(value *RedisClusterGcsSource) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisCluster) validatePutMaintenancePolicyParameters(value *RedisClusterMaintenancePolicy) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedisCluster) validatePutManagedBackupSourceParameters(value *RedisClusterManagedBackupSource) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/secret_manager_regional_secret_iam_member google_secret_manager_regional_secret_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/secret_manager_regional_secret_iam_member google_secret_manager_regional_secret_iam_member}.
 type SecretManagerRegionalSecretIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_SecretManagerRegionalSecretIamMember) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/secret_manager_regional_secret_iam_member google_secret_manager_regional_secret_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/secret_manager_regional_secret_iam_member google_secret_manager_regional_secret_iam_member} Resource.
 func NewSecretManagerRegionalSecretIamMember(scope constructs.Construct, id *string, config *SecretManagerRegionalSecretIamMemberConfig) SecretManagerRegionalSecretIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewSecretManagerRegionalSecretIamMember(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.29.0/docs/resources/secret_manager_regional_secret_iam_member google_secret_manager_regional_secret_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/secret_manager_regional_secret_iam_member google_secret_manager_regional_secret_iam_member} Resource.
 func NewSecretManagerRegionalSecretIamMember_Override(s SecretManagerRegionalSecretIamMember, scope constructs.Construct, id *string, config *SecretManagerRegionalSecretIamMemberConfig) {
 	_init_.Initialize()
 

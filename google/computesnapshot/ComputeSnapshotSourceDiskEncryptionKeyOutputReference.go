@@ -32,12 +32,18 @@ type ComputeSnapshotSourceDiskEncryptionKeyOutputReference interface {
 	Fqn() *string
 	InternalValue() *ComputeSnapshotSourceDiskEncryptionKey
 	SetInternalValue(val *ComputeSnapshotSourceDiskEncryptionKey)
+	KmsKeySelfLink() *string
+	SetKmsKeySelfLink(val *string)
+	KmsKeySelfLinkInput() *string
 	KmsKeyServiceAccount() *string
 	SetKmsKeyServiceAccount(val *string)
 	KmsKeyServiceAccountInput() *string
 	RawKey() *string
 	SetRawKey(val *string)
 	RawKeyInput() *string
+	RsaEncryptedKey() *string
+	SetRsaEncryptedKey(val *string)
+	RsaEncryptedKeyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,8 +76,10 @@ type ComputeSnapshotSourceDiskEncryptionKeyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetKmsKeySelfLink()
 	ResetKmsKeyServiceAccount()
 	ResetRawKey()
+	ResetRsaEncryptedKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -137,6 +145,26 @@ func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) Intern
 	return returns
 }
 
+func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) KmsKeySelfLink() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeySelfLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) KmsKeySelfLinkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeySelfLinkInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) KmsKeyServiceAccount() *string {
 	var returns *string
 	_jsii_.Get(
@@ -172,6 +200,26 @@ func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) RawKey
 	_jsii_.Get(
 		j,
 		"rawKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) RsaEncryptedKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rsaEncryptedKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) RsaEncryptedKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rsaEncryptedKeyInput",
 		&returns,
 	)
 	return returns
@@ -258,6 +306,17 @@ func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference)SetInte
 	)
 }
 
+func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference)SetKmsKeySelfLink(val *string) {
+	if err := j.validateSetKmsKeySelfLinkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeySelfLink",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference)SetKmsKeyServiceAccount(val *string) {
 	if err := j.validateSetKmsKeyServiceAccountParameters(val); err != nil {
 		panic(err)
@@ -276,6 +335,17 @@ func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference)SetRawK
 	_jsii_.Set(
 		j,
 		"rawKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference)SetRsaEncryptedKey(val *string) {
+	if err := j.validateSetRsaEncryptedKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rsaEncryptedKey",
 		val,
 	)
 }
@@ -488,6 +558,14 @@ func (c *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) Interp
 	return returns
 }
 
+func (c *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) ResetKmsKeySelfLink() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKmsKeySelfLink",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) ResetKmsKeyServiceAccount() {
 	_jsii_.InvokeVoid(
 		c,
@@ -500,6 +578,14 @@ func (c *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) ResetR
 	_jsii_.InvokeVoid(
 		c,
 		"resetRawKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeSnapshotSourceDiskEncryptionKeyOutputReference) ResetRsaEncryptedKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRsaEncryptedKey",
 		nil, // no parameters
 	)
 }
