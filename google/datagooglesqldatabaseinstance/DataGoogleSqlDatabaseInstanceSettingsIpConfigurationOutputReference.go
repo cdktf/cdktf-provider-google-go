@@ -30,6 +30,7 @@ type DataGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interfa
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomSubjectAlternativeNames() *[]*string
 	EnablePrivatePathForGoogleCloudServices() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
@@ -133,6 +134,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputRef
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) CustomSubjectAlternativeNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customSubjectAlternativeNames",
 		&returns,
 	)
 	return returns

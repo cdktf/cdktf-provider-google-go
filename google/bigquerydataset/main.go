@@ -40,6 +40,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveLabels", GoGetter: "EffectiveLabels"},
 			_jsii_.MemberProperty{JsiiProperty: "etag", GoGetter: "Etag"},
+			_jsii_.MemberProperty{JsiiProperty: "externalCatalogDatasetOptions", GoGetter: "ExternalCatalogDatasetOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "externalCatalogDatasetOptionsInput", GoGetter: "ExternalCatalogDatasetOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "externalDatasetReference", GoGetter: "ExternalDatasetReference"},
 			_jsii_.MemberProperty{JsiiProperty: "externalDatasetReferenceInput", GoGetter: "ExternalDatasetReferenceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
@@ -82,6 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putAccess", GoMethod: "PutAccess"},
 			_jsii_.MemberMethod{JsiiMethod: "putDefaultEncryptionConfiguration", GoMethod: "PutDefaultEncryptionConfiguration"},
+			_jsii_.MemberMethod{JsiiMethod: "putExternalCatalogDatasetOptions", GoMethod: "PutExternalCatalogDatasetOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putExternalDatasetReference", GoMethod: "PutExternalDatasetReference"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -92,6 +95,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultTableExpirationMs", GoMethod: "ResetDefaultTableExpirationMs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeleteContentsOnDestroy", GoMethod: "ResetDeleteContentsOnDestroy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExternalCatalogDatasetOptions", GoMethod: "ResetExternalCatalogDatasetOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExternalDatasetReference", GoMethod: "ResetExternalDatasetReference"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFriendlyName", GoMethod: "ResetFriendlyName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -470,6 +474,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BigqueryDatasetDefaultEncryptionConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.bigqueryDataset.BigqueryDatasetExternalCatalogDatasetOptions",
+		reflect.TypeOf((*BigqueryDatasetExternalCatalogDatasetOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.bigqueryDataset.BigqueryDatasetExternalCatalogDatasetOptionsOutputReference",
+		reflect.TypeOf((*BigqueryDatasetExternalCatalogDatasetOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultStorageLocationUri", GoGetter: "DefaultStorageLocationUri"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultStorageLocationUriInput", GoGetter: "DefaultStorageLocationUriInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "parameters", GoGetter: "Parameters"},
+			_jsii_.MemberProperty{JsiiProperty: "parametersInput", GoGetter: "ParametersInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDefaultStorageLocationUri", GoMethod: "ResetDefaultStorageLocationUri"},
+			_jsii_.MemberMethod{JsiiMethod: "resetParameters", GoMethod: "ResetParameters"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

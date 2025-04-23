@@ -44,6 +44,7 @@ type DataGoogleComputeBackendServiceBackendOutputReference interface {
 	MaxRatePerEndpoint() *float64
 	MaxRatePerInstance() *float64
 	MaxUtilization() *float64
+	Preference() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -256,6 +257,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendServiceBackendOutputReference) MaxUti
 	_jsii_.Get(
 		j,
 		"maxUtilization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendServiceBackendOutputReference) Preference() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preference",
 		&returns,
 	)
 	return returns

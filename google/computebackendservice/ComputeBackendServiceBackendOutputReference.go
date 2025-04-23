@@ -67,6 +67,9 @@ type ComputeBackendServiceBackendOutputReference interface {
 	MaxUtilization() *float64
 	SetMaxUtilization(val *float64)
 	MaxUtilizationInput() *float64
+	Preference() *string
+	SetPreference(val *string)
+	PreferenceInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -111,6 +114,7 @@ type ComputeBackendServiceBackendOutputReference interface {
 	ResetMaxRatePerEndpoint()
 	ResetMaxRatePerInstance()
 	ResetMaxUtilization()
+	ResetPreference()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -416,6 +420,26 @@ func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) MaxUtilizationIn
 	return returns
 }
 
+func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) Preference() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) PreferenceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferenceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -614,6 +638,17 @@ func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference)SetMaxUtilization
 	_jsii_.Set(
 		j,
 		"maxUtilization",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference)SetPreference(val *string) {
+	if err := j.validateSetPreferenceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preference",
 		val,
 	)
 }
@@ -921,6 +956,14 @@ func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) ResetMaxUtilizat
 	_jsii_.InvokeVoid(
 		c,
 		"resetMaxUtilization",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) ResetPreference() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPreference",
 		nil, // no parameters
 	)
 }

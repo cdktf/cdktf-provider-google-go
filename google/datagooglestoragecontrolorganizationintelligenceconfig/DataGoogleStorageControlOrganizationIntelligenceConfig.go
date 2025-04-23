@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/data-sources/storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config}.
 type DataGoogleStorageControlOrganizationIntelligenceConfig interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfig) Updat
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/data-sources/storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config} Data Source.
 func NewDataGoogleStorageControlOrganizationIntelligenceConfig(scope constructs.Construct, id *string, config *DataGoogleStorageControlOrganizationIntelligenceConfigConfig) DataGoogleStorageControlOrganizationIntelligenceConfig {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewDataGoogleStorageControlOrganizationIntelligenceConfig(scope constructs.
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/data-sources/storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config} Data Source.
 func NewDataGoogleStorageControlOrganizationIntelligenceConfig_Override(d DataGoogleStorageControlOrganizationIntelligenceConfig, scope constructs.Construct, id *string, config *DataGoogleStorageControlOrganizationIntelligenceConfigConfig) {
 	_init_.Initialize()
 

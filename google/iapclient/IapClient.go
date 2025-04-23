@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/iap_client google_iap_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/iap_client google_iap_client}.
 type IapClient interface {
 	cdktf.TerraformResource
 	Brand() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_IapClient) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/iap_client google_iap_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/iap_client google_iap_client} Resource.
 func NewIapClient(scope constructs.Construct, id *string, config *IapClientConfig) IapClient {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewIapClient(scope constructs.Construct, id *string, config *IapClientConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/iap_client google_iap_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/iap_client google_iap_client} Resource.
 func NewIapClient_Override(i IapClient, scope constructs.Construct, id *string, config *IapClientConfig) {
 	_init_.Initialize()
 

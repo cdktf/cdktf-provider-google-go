@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/firebase_app_check_app_attest_config google_firebase_app_check_app_attest_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/firebase_app_check_app_attest_config google_firebase_app_check_app_attest_config}.
 type FirebaseAppCheckAppAttestConfig interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -416,7 +416,7 @@ func (j *jsiiProxy_FirebaseAppCheckAppAttestConfig) TokenTtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/firebase_app_check_app_attest_config google_firebase_app_check_app_attest_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/firebase_app_check_app_attest_config google_firebase_app_check_app_attest_config} Resource.
 func NewFirebaseAppCheckAppAttestConfig(scope constructs.Construct, id *string, config *FirebaseAppCheckAppAttestConfigConfig) FirebaseAppCheckAppAttestConfig {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewFirebaseAppCheckAppAttestConfig(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/firebase_app_check_app_attest_config google_firebase_app_check_app_attest_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/firebase_app_check_app_attest_config google_firebase_app_check_app_attest_config} Resource.
 func NewFirebaseAppCheckAppAttestConfig_Override(f FirebaseAppCheckAppAttestConfig, scope constructs.Construct, id *string, config *FirebaseAppCheckAppAttestConfigConfig) {
 	_init_.Initialize()
 

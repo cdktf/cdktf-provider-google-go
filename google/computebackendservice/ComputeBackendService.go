@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/compute_backend_service google_compute_backend_service}.
 type ComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -101,6 +101,8 @@ type ComputeBackendService interface {
 	LocalityLbPolicyInput() *string
 	LogConfig() ComputeBackendServiceLogConfigOutputReference
 	LogConfigInput() *ComputeBackendServiceLogConfig
+	MaxStreamDuration() ComputeBackendServiceMaxStreamDurationOutputReference
+	MaxStreamDurationInput() *ComputeBackendServiceMaxStreamDuration
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -203,6 +205,7 @@ type ComputeBackendService interface {
 	PutIap(value *ComputeBackendServiceIap)
 	PutLocalityLbPolicies(value interface{})
 	PutLogConfig(value *ComputeBackendServiceLogConfig)
+	PutMaxStreamDuration(value *ComputeBackendServiceMaxStreamDuration)
 	PutOutlierDetection(value *ComputeBackendServiceOutlierDetection)
 	PutSecuritySettings(value *ComputeBackendServiceSecuritySettings)
 	PutStrongSessionAffinityCookie(value *ComputeBackendServiceStrongSessionAffinityCookie)
@@ -228,6 +231,7 @@ type ComputeBackendService interface {
 	ResetLocalityLbPolicies()
 	ResetLocalityLbPolicy()
 	ResetLogConfig()
+	ResetMaxStreamDuration()
 	ResetOutlierDetection()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -800,6 +804,26 @@ func (j *jsiiProxy_ComputeBackendService) LogConfigInput() *ComputeBackendServic
 	return returns
 }
 
+func (j *jsiiProxy_ComputeBackendService) MaxStreamDuration() ComputeBackendServiceMaxStreamDurationOutputReference {
+	var returns ComputeBackendServiceMaxStreamDurationOutputReference
+	_jsii_.Get(
+		j,
+		"maxStreamDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) MaxStreamDurationInput() *ComputeBackendServiceMaxStreamDuration {
+	var returns *ComputeBackendServiceMaxStreamDuration
+	_jsii_.Get(
+		j,
+		"maxStreamDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeBackendService) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1121,7 +1145,7 @@ func (j *jsiiProxy_ComputeBackendService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
 func NewComputeBackendService(scope constructs.Construct, id *string, config *ComputeBackendServiceConfig) ComputeBackendService {
 	_init_.Initialize()
 
@@ -1139,7 +1163,7 @@ func NewComputeBackendService(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
 func NewComputeBackendService_Override(c ComputeBackendService, scope constructs.Construct, id *string, config *ComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1890,6 +1914,17 @@ func (c *jsiiProxy_ComputeBackendService) PutLogConfig(value *ComputeBackendServ
 	)
 }
 
+func (c *jsiiProxy_ComputeBackendService) PutMaxStreamDuration(value *ComputeBackendServiceMaxStreamDuration) {
+	if err := c.validatePutMaxStreamDurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putMaxStreamDuration",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeBackendService) PutOutlierDetection(value *ComputeBackendServiceOutlierDetection) {
 	if err := c.validatePutOutlierDetectionParameters(value); err != nil {
 		panic(err)
@@ -2098,6 +2133,14 @@ func (c *jsiiProxy_ComputeBackendService) ResetLogConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetLogConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendService) ResetMaxStreamDuration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMaxStreamDuration",
 		nil, // no parameters
 	)
 }

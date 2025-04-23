@@ -194,6 +194,22 @@ func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) validateSetInt
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) validateSetOptionalFieldsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) validateSetOptionalModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendServiceLogConfigOutputReference) validateSetSampleRateParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

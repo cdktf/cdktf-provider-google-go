@@ -163,6 +163,10 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetPricin
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetRetainBackupsOnDeleteParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

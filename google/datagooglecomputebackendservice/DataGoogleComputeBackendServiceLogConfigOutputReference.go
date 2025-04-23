@@ -33,6 +33,8 @@ type DataGoogleComputeBackendServiceLogConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleComputeBackendServiceLogConfig
 	SetInternalValue(val *DataGoogleComputeBackendServiceLogConfig)
+	OptionalFields() *[]*string
+	OptionalMode() *string
 	SampleRate() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -136,6 +138,26 @@ func (j *jsiiProxy_DataGoogleComputeBackendServiceLogConfigOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendServiceLogConfigOutputReference) OptionalFields() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"optionalFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendServiceLogConfigOutputReference) OptionalMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionalMode",
 		&returns,
 	)
 	return returns

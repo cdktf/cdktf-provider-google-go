@@ -107,6 +107,10 @@ func (c *jsiiProxy_ComputeBackendService) validatePutLogConfigParameters(value *
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendService) validatePutMaxStreamDurationParameters(value *ComputeBackendServiceMaxStreamDuration) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendService) validatePutOutlierDetectionParameters(value *ComputeBackendServiceOutlierDetection) error {
 	return nil
 }

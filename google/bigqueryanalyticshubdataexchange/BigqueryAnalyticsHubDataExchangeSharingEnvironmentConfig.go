@@ -7,11 +7,11 @@ package bigqueryanalyticshubdataexchange
 type BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig struct {
 	// dcr_exchange_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/bigquery_analytics_hub_data_exchange#dcr_exchange_config BigqueryAnalyticsHubDataExchange#dcr_exchange_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/bigquery_analytics_hub_data_exchange#dcr_exchange_config BigqueryAnalyticsHubDataExchange#dcr_exchange_config}
 	DcrExchangeConfig *BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfig `field:"optional" json:"dcrExchangeConfig" yaml:"dcrExchangeConfig"`
 	// default_exchange_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/bigquery_analytics_hub_data_exchange#default_exchange_config BigqueryAnalyticsHubDataExchange#default_exchange_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/bigquery_analytics_hub_data_exchange#default_exchange_config BigqueryAnalyticsHubDataExchange#default_exchange_config}
 	DefaultExchangeConfig *BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfig `field:"optional" json:"defaultExchangeConfig" yaml:"defaultExchangeConfig"`
 }
 

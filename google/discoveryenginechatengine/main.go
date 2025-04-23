@@ -152,6 +152,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agentCreationConfig", GoGetter: "AgentCreationConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "agentCreationConfigInput", GoGetter: "AgentCreationConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "allowCrossRegion", GoGetter: "AllowCrossRegion"},
+			_jsii_.MemberProperty{JsiiProperty: "allowCrossRegionInput", GoGetter: "AllowCrossRegionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -173,6 +175,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putAgentCreationConfig", GoMethod: "PutAgentCreationConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAgentCreationConfig", GoMethod: "ResetAgentCreationConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowCrossRegion", GoMethod: "ResetAllowCrossRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDialogflowAgentToLink", GoMethod: "ResetDialogflowAgentToLink"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

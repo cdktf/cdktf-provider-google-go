@@ -143,6 +143,10 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetLifecycleParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetLogCheckFailuresParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MonitoringUptimeCheckConfig) validateSetPeriodParameters(val *string) error {
 	return nil
 }

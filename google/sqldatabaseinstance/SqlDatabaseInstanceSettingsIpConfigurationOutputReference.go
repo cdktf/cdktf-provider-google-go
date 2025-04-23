@@ -33,6 +33,9 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomSubjectAlternativeNames() *[]*string
+	SetCustomSubjectAlternativeNames(val *[]*string)
+	CustomSubjectAlternativeNamesInput() *[]*string
 	EnablePrivatePathForGoogleCloudServices() interface{}
 	SetEnablePrivatePathForGoogleCloudServices(val interface{})
 	EnablePrivatePathForGoogleCloudServicesInput() interface{}
@@ -93,6 +96,7 @@ type SqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	PutPscConfig(value interface{})
 	ResetAllocatedIpRange()
 	ResetAuthorizedNetworks()
+	ResetCustomSubjectAlternativeNames()
 	ResetEnablePrivatePathForGoogleCloudServices()
 	ResetIpv4Enabled()
 	ResetPrivateNetwork()
@@ -180,6 +184,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Cr
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) CustomSubjectAlternativeNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customSubjectAlternativeNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) CustomSubjectAlternativeNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customSubjectAlternativeNamesInput",
 		&returns,
 	)
 	return returns
@@ -422,6 +446,17 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)Set
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetCustomSubjectAlternativeNames(val *[]*string) {
+	if err := j.validateSetCustomSubjectAlternativeNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customSubjectAlternativeNames",
 		val,
 	)
 }
@@ -745,6 +780,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) Re
 	_jsii_.InvokeVoid(
 		s,
 		"resetAuthorizedNetworks",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetCustomSubjectAlternativeNames() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomSubjectAlternativeNames",
 		nil, // no parameters
 	)
 }

@@ -47,6 +47,10 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
 	return nil
 }
 
+func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validatePutDeploymentOverridesParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validatePutGitParameters(value *GkeHubFeatureMembershipConfigmanagementConfigSyncGit) error {
 	return nil
 }

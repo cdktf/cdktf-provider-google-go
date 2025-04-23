@@ -67,6 +67,10 @@ func (j *jsiiProxy_AlloydbInstanceMachineConfigOutputReference) validateSetInter
 	return nil
 }
 
+func (j *jsiiProxy_AlloydbInstanceMachineConfigOutputReference) validateSetMachineTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlloydbInstanceMachineConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

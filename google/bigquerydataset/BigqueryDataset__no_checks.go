@@ -83,6 +83,10 @@ func (b *jsiiProxy_BigqueryDataset) validatePutDefaultEncryptionConfigurationPar
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryDataset) validatePutExternalCatalogDatasetOptionsParameters(value *BigqueryDatasetExternalCatalogDatasetOptions) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryDataset) validatePutExternalDatasetReferenceParameters(value *BigqueryDatasetExternalDatasetReference) error {
 	return nil
 }

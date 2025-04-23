@@ -15,7 +15,7 @@ type IamProjectsPolicyBindingTarget struct {
 	// * Workload Identity Pool: '//iam.googleapis.com/projects/PROJECT_NUMBER/locations/LOCATION/workloadIdentityPools/WORKLOAD_POOL_ID'
 	// It must be parent by the policy binding's parent (the project).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/iam_projects_policy_binding#principal_set IamProjectsPolicyBinding#principal_set}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/iam_projects_policy_binding#principal_set IamProjectsPolicyBinding#principal_set}
 	PrincipalSet *string `field:"optional" json:"principalSet" yaml:"principalSet"`
 }
 

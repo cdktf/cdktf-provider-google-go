@@ -56,6 +56,7 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference interface {
 	MaintenanceWindow() DataGoogleSqlDatabaseInstancesInstancesSettingsMaintenanceWindowList
 	PasswordValidationPolicy() DataGoogleSqlDatabaseInstancesInstancesSettingsPasswordValidationPolicyList
 	PricingPlan() *string
+	RetainBackupsOnDelete() cdktf.IResolvable
 	SqlServerAuditConfig() DataGoogleSqlDatabaseInstancesInstancesSettingsSqlServerAuditConfigList
 	// Experimental.
 	TerraformAttribute() *string
@@ -393,6 +394,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReferenc
 	_jsii_.Get(
 		j,
 		"pricingPlan",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) RetainBackupsOnDelete() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"retainBackupsOnDelete",
 		&returns,
 	)
 	return returns

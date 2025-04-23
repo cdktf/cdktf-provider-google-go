@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/bigquery_dataset google_bigquery_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/data-sources/bigquery_dataset google_bigquery_dataset}.
 type DataGoogleBigqueryDataset interface {
 	cdktf.TerraformDataSource
 	Access() DataGoogleBigqueryDatasetAccessList
@@ -40,6 +40,7 @@ type DataGoogleBigqueryDataset interface {
 	Description() *string
 	EffectiveLabels() cdktf.StringMap
 	Etag() *string
+	ExternalCatalogDatasetOptions() DataGoogleBigqueryDatasetExternalCatalogDatasetOptionsList
 	ExternalDatasetReference() DataGoogleBigqueryDatasetExternalDatasetReferenceList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -287,6 +288,16 @@ func (j *jsiiProxy_DataGoogleBigqueryDataset) Etag() *string {
 	_jsii_.Get(
 		j,
 		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleBigqueryDataset) ExternalCatalogDatasetOptions() DataGoogleBigqueryDatasetExternalCatalogDatasetOptionsList {
+	var returns DataGoogleBigqueryDatasetExternalCatalogDatasetOptionsList
+	_jsii_.Get(
+		j,
+		"externalCatalogDatasetOptions",
 		&returns,
 	)
 	return returns
@@ -543,7 +554,7 @@ func (j *jsiiProxy_DataGoogleBigqueryDataset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/bigquery_dataset google_bigquery_dataset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/data-sources/bigquery_dataset google_bigquery_dataset} Data Source.
 func NewDataGoogleBigqueryDataset(scope constructs.Construct, id *string, config *DataGoogleBigqueryDatasetConfig) DataGoogleBigqueryDataset {
 	_init_.Initialize()
 
@@ -561,7 +572,7 @@ func NewDataGoogleBigqueryDataset(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/data-sources/bigquery_dataset google_bigquery_dataset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/data-sources/bigquery_dataset google_bigquery_dataset} Data Source.
 func NewDataGoogleBigqueryDataset_Override(d DataGoogleBigqueryDataset, scope constructs.Construct, id *string, config *DataGoogleBigqueryDatasetConfig) {
 	_init_.Initialize()
 

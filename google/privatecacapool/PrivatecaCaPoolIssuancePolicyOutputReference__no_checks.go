@@ -67,6 +67,10 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateResolve
 	return nil
 }
 
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateSetBackdateDurationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

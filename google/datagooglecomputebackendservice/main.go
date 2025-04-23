@@ -58,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "localityLbPolicies", GoGetter: "LocalityLbPolicies"},
 			_jsii_.MemberProperty{JsiiProperty: "localityLbPolicy", GoGetter: "LocalityLbPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "logConfig", GoGetter: "LogConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "maxStreamDuration", GoGetter: "MaxStreamDuration"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
@@ -213,6 +214,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxRatePerEndpoint", GoGetter: "MaxRatePerEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "maxRatePerInstance", GoGetter: "MaxRatePerInstance"},
 			_jsii_.MemberProperty{JsiiProperty: "maxUtilization", GoGetter: "MaxUtilization"},
+			_jsii_.MemberProperty{JsiiProperty: "preference", GoGetter: "Preference"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -459,6 +461,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxTtl", GoGetter: "MaxTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "negativeCaching", GoGetter: "NegativeCaching"},
 			_jsii_.MemberProperty{JsiiProperty: "negativeCachingPolicy", GoGetter: "NegativeCachingPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "requestCoalescing", GoGetter: "RequestCoalescing"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "serveWhileStale", GoGetter: "ServeWhileStale"},
 			_jsii_.MemberProperty{JsiiProperty: "signedUrlCacheMaxAgeSec", GoGetter: "SignedUrlCacheMaxAgeSec"},
@@ -1060,6 +1063,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "optionalFields", GoGetter: "OptionalFields"},
+			_jsii_.MemberProperty{JsiiProperty: "optionalMode", GoGetter: "OptionalMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "sampleRate", GoGetter: "SampleRate"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -1068,6 +1073,65 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComputeBackendServiceLogConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceMaxStreamDuration",
+		reflect.TypeOf((*DataGoogleComputeBackendServiceMaxStreamDuration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceMaxStreamDurationList",
+		reflect.TypeOf((*DataGoogleComputeBackendServiceMaxStreamDurationList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataGoogleComputeBackendServiceMaxStreamDurationList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceMaxStreamDurationOutputReference",
+		reflect.TypeOf((*DataGoogleComputeBackendServiceMaxStreamDurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "nanos", GoGetter: "Nanos"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "seconds", GoGetter: "Seconds"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataGoogleComputeBackendServiceMaxStreamDurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

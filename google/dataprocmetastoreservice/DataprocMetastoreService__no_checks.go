@@ -183,6 +183,10 @@ func (j *jsiiProxy_DataprocMetastoreService) validateSetServiceIdParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataprocMetastoreService) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataprocMetastoreService) validateSetTierParameters(val *string) error {
 	return nil
 }

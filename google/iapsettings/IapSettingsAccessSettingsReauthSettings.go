@@ -10,7 +10,7 @@ type IapSettingsAccessSettingsReauthSettings struct {
 	// A duration in seconds with up to nine fractional digits, ending with 's'.
 	// Example: "3.5s".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/iap_settings#max_age IapSettings#max_age}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/iap_settings#max_age IapSettings#max_age}
 	MaxAge *string `field:"required" json:"maxAge" yaml:"maxAge"`
 	// Reauth method requested. The possible values are:.
 	//
@@ -18,7 +18,7 @@ type IapSettingsAccessSettingsReauthSettings struct {
 	// * 'SECURE_KEY': User must use their secure key 2nd factor device.
 	// * 'ENROLLED_SECOND_FACTORS': User can use any enabled 2nd factor. Possible values: ["LOGIN", "SECURE_KEY", "ENROLLED_SECOND_FACTORS"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/iap_settings#method IapSettings#method}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/iap_settings#method IapSettings#method}
 	Method *string `field:"required" json:"method" yaml:"method"`
 	// How IAP determines the effective policy in cases of hierarchical policies.
 	//
@@ -29,7 +29,7 @@ type IapSettingsAccessSettingsReauthSettings struct {
 	// 		   Effective policy may only be the same or stricter.
 	// * 'DEFAULT': This policy acts as a default if no other reauth policy is set. Possible values: ["MINIMUM", "DEFAULT"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.30.0/docs/resources/iap_settings#policy_type IapSettings#policy_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/iap_settings#policy_type IapSettings#policy_type}
 	PolicyType *string `field:"required" json:"policyType" yaml:"policyType"`
 }
 

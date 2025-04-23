@@ -40,6 +40,7 @@ type DataGoogleComputeBackendServiceCdnPolicyOutputReference interface {
 	MaxTtl() *float64
 	NegativeCaching() cdktf.IResolvable
 	NegativeCachingPolicy() DataGoogleComputeBackendServiceCdnPolicyNegativeCachingPolicyList
+	RequestCoalescing() cdktf.IResolvable
 	ServeWhileStale() *float64
 	SignedUrlCacheMaxAgeSec() *float64
 	// Experimental.
@@ -214,6 +215,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyOutputReference) Nega
 	_jsii_.Get(
 		j,
 		"negativeCachingPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyOutputReference) RequestCoalescing() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"requestCoalescing",
 		&returns,
 	)
 	return returns

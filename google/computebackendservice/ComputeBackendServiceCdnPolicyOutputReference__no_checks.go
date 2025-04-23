@@ -95,6 +95,10 @@ func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validateSetNeg
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validateSetRequestCoalescingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendServiceCdnPolicyOutputReference) validateSetServeWhileStaleParameters(val *float64) error {
 	return nil
 }
