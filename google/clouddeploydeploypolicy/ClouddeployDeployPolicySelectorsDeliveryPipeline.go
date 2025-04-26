@@ -11,14 +11,14 @@ type ClouddeployDeployPolicySelectorsDeliveryPipeline struct {
 	// - The last segment of a pipeline name
 	// - "*", all delivery pipelines in a location
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/clouddeploy_deploy_policy#id ClouddeployDeployPolicy#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/clouddeploy_deploy_policy#id ClouddeployDeployPolicy#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// DeliveryPipeline labels.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/clouddeploy_deploy_policy#labels ClouddeployDeployPolicy#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/clouddeploy_deploy_policy#labels ClouddeployDeployPolicy#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 }
 

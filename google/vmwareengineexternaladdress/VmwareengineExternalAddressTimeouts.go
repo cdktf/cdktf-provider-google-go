@@ -5,11 +5,11 @@ package vmwareengineexternaladdress
 
 
 type VmwareengineExternalAddressTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/vmwareengine_external_address#create VmwareengineExternalAddress#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vmwareengine_external_address#create VmwareengineExternalAddress#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/vmwareengine_external_address#delete VmwareengineExternalAddress#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vmwareengine_external_address#delete VmwareengineExternalAddress#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/vmwareengine_external_address#update VmwareengineExternalAddress#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/vmwareengine_external_address#update VmwareengineExternalAddress#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

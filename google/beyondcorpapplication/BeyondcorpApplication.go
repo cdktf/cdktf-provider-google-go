@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/beyondcorp_application google_beyondcorp_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/beyondcorp_application google_beyondcorp_application}.
 type BeyondcorpApplication interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -484,7 +484,7 @@ func (j *jsiiProxy_BeyondcorpApplication) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/beyondcorp_application google_beyondcorp_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/beyondcorp_application google_beyondcorp_application} Resource.
 func NewBeyondcorpApplication(scope constructs.Construct, id *string, config *BeyondcorpApplicationConfig) BeyondcorpApplication {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewBeyondcorpApplication(scope constructs.Construct, id *string, config *Be
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/beyondcorp_application google_beyondcorp_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/beyondcorp_application google_beyondcorp_application} Resource.
 func NewBeyondcorpApplication_Override(b BeyondcorpApplication, scope constructs.Construct, id *string, config *BeyondcorpApplicationConfig) {
 	_init_.Initialize()
 

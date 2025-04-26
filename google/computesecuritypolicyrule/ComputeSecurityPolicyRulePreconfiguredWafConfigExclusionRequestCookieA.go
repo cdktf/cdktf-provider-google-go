@@ -14,13 +14,13 @@ type ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA stru
 	// CONTAINS: The operator matches if the field value contains the specified value.
 	// EQUALS_ANY: The operator matches if the field value is any value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/compute_security_policy_rule#operator ComputeSecurityPolicyRuleA#operator}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_security_policy_rule#operator ComputeSecurityPolicyRuleA#operator}
 	Operator *string `field:"required" json:"operator" yaml:"operator"`
 	// A request field matching the specified value will be excluded from inspection during preconfigured WAF evaluation.
 	//
 	// The field value must be given if the field operator is not EQUALS_ANY, and cannot be given if the field operator is EQUALS_ANY.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/compute_security_policy_rule#value ComputeSecurityPolicyRuleA#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/compute_security_policy_rule#value ComputeSecurityPolicyRuleA#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

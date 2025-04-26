@@ -7,7 +7,7 @@ package bigquerytable
 type BigqueryTableTableConstraintsPrimaryKey struct {
 	// The columns that are composed of the primary key constraint.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.31.0/docs/resources/bigquery_table#columns BigqueryTable#columns}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/bigquery_table#columns BigqueryTable#columns}
 	Columns *[]*string `field:"required" json:"columns" yaml:"columns"`
 }
 
