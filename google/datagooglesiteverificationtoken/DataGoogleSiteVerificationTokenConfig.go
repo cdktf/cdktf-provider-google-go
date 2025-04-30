@@ -27,26 +27,26 @@ type DataGoogleSiteVerificationTokenConfig struct {
 	// If the type is set to SITE, the identifier is a URL. If the type is
 	// set to INET_DOMAIN, the identifier is a domain name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/site_verification_token#identifier DataGoogleSiteVerificationToken#identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/data-sources/site_verification_token#identifier DataGoogleSiteVerificationToken#identifier}
 	Identifier *string `field:"required" json:"identifier" yaml:"identifier"`
 	// The type of resource to be verified, either a domain or a web site. Possible values: ["INET_DOMAIN", "SITE"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/site_verification_token#type DataGoogleSiteVerificationToken#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/data-sources/site_verification_token#type DataGoogleSiteVerificationToken#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// The verification method for the Site Verification system to use to verify this site or domain.
 	//
 	// Possible values: ["ANALYTICS", "DNS_CNAME", "DNS_TXT", "FILE", "META", "TAG_MANAGER"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/site_verification_token#verification_method DataGoogleSiteVerificationToken#verification_method}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/data-sources/site_verification_token#verification_method DataGoogleSiteVerificationToken#verification_method}
 	VerificationMethod *string `field:"required" json:"verificationMethod" yaml:"verificationMethod"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/site_verification_token#id DataGoogleSiteVerificationToken#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/data-sources/site_verification_token#id DataGoogleSiteVerificationToken#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/site_verification_token#timeouts DataGoogleSiteVerificationToken#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/data-sources/site_verification_token#timeouts DataGoogleSiteVerificationToken#timeouts}
 	Timeouts *DataGoogleSiteVerificationTokenTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

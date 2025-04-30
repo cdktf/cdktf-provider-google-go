@@ -365,6 +365,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ipv4Address", GoGetter: "Ipv4Address"},
 			_jsii_.MemberProperty{JsiiProperty: "ipv4AddressInput", GoGetter: "Ipv4AddressInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetForwardingPath", GoMethod: "ResetForwardingPath"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIpv4Address", GoMethod: "ResetIpv4Address"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

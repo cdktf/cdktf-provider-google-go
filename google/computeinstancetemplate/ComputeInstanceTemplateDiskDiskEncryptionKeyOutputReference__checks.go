@@ -182,6 +182,14 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference) validateSetKmsKeyServiceAccountParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

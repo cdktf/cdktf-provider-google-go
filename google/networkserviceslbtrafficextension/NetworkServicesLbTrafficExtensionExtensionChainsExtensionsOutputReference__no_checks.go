@@ -75,6 +75,10 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOut
 	return nil
 }
 
+func (j *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) validateSetMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }

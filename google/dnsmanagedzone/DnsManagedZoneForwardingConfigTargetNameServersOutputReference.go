@@ -71,6 +71,7 @@ type DnsManagedZoneForwardingConfigTargetNameServersOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetForwardingPath()
+	ResetIpv4Address()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -491,6 +492,14 @@ func (d *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReferenc
 	_jsii_.InvokeVoid(
 		d,
 		"resetForwardingPath",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference) ResetIpv4Address() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpv4Address",
 		nil, // no parameters
 	)
 }

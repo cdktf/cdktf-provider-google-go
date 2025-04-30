@@ -34,6 +34,8 @@ type DataplexDatascanDataQualitySpecPostScanActionsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataplexDatascanDataQualitySpecPostScanActions
 	SetInternalValue(val *DataplexDatascanDataQualitySpecPostScanActions)
+	NotificationReport() DataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference
+	NotificationReportInput() *DataplexDatascanDataQualitySpecPostScanActionsNotificationReport
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type DataplexDatascanDataQualitySpecPostScanActionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutBigqueryExport(value *DataplexDatascanDataQualitySpecPostScanActionsBigqueryExport)
+	PutNotificationReport(value *DataplexDatascanDataQualitySpecPostScanActionsNotificationReport)
 	ResetBigqueryExport()
+	ResetNotificationReport()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsOutputReference
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsOutputReference) NotificationReport() DataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference {
+	var returns DataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference
+	_jsii_.Get(
+		j,
+		"notificationReport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsOutputReference) NotificationReportInput() *DataplexDatascanDataQualitySpecPostScanActionsNotificationReport {
+	var returns *DataplexDatascanDataQualitySpecPostScanActionsNotificationReport
+	_jsii_.Get(
+		j,
+		"notificationReportInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsOutputReference
 	)
 }
 
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsOutputReference) PutNotificationReport(value *DataplexDatascanDataQualitySpecPostScanActionsNotificationReport) {
+	if err := d.validatePutNotificationReportParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putNotificationReport",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsOutputReference) ResetBigqueryExport() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetBigqueryExport",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsOutputReference) ResetNotificationReport() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNotificationReport",
 		nil, // no parameters
 	)
 }

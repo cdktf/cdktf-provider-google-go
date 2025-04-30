@@ -32,6 +32,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "diskEncryptionKey", GoGetter: "DiskEncryptionKey"},
 			_jsii_.MemberProperty{JsiiProperty: "diskEncryptionKeyInput", GoGetter: "DiskEncryptionKeyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "diskId", GoGetter: "DiskId"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveLabels", GoGetter: "EffectiveLabels"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

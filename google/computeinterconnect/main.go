@@ -96,7 +96,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
-			_jsii_.MemberMethod{JsiiMethod: "resetLocation", GoMethod: "ResetLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMacsec", GoMethod: "ResetMacsec"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMacsecEnabled", GoMethod: "ResetMacsecEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNocContactEmail", GoMethod: "ResetNocContactEmail"},

@@ -10,7 +10,7 @@ type MonitoringAlertPolicyConditionsConditionSqlBooleanTest struct {
 	// If the value in a row is
 	// NULL, that row is ignored.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/monitoring_alert_policy#column MonitoringAlertPolicy#column}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/monitoring_alert_policy#column MonitoringAlertPolicy#column}
 	Column *string `field:"required" json:"column" yaml:"column"`
 }
 

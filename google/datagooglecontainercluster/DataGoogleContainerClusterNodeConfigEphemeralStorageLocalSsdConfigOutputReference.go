@@ -28,6 +28,7 @@ type DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputRef
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataCacheCount() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig
@@ -105,6 +106,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdC
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference) DataCacheCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataCacheCount",
 		&returns,
 	)
 	return returns

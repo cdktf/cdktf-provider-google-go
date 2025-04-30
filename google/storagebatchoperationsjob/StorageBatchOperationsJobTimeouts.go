@@ -5,11 +5,11 @@ package storagebatchoperationsjob
 
 
 type StorageBatchOperationsJobTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/storage_batch_operations_job#create StorageBatchOperationsJob#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/storage_batch_operations_job#create StorageBatchOperationsJob#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/storage_batch_operations_job#delete StorageBatchOperationsJob#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/storage_batch_operations_job#delete StorageBatchOperationsJob#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/storage_batch_operations_job#update StorageBatchOperationsJob#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/storage_batch_operations_job#update StorageBatchOperationsJob#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

@@ -37,6 +37,9 @@ type StorageTransferJobTransferSpecAwsS3DataSourceOutputReference interface {
 	Fqn() *string
 	InternalValue() *StorageTransferJobTransferSpecAwsS3DataSource
 	SetInternalValue(val *StorageTransferJobTransferSpecAwsS3DataSource)
+	ManagedPrivateNetwork() interface{}
+	SetManagedPrivateNetwork(val interface{})
+	ManagedPrivateNetworkInput() interface{}
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
@@ -77,6 +80,7 @@ type StorageTransferJobTransferSpecAwsS3DataSourceOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAwsAccessKey(value *StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey)
 	ResetAwsAccessKey()
+	ResetManagedPrivateNetwork()
 	ResetPath()
 	ResetRoleArn()
 	// Produce the Token's value at resolution time.
@@ -179,6 +183,26 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ManagedPrivateNetwork() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"managedPrivateNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ManagedPrivateNetworkInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"managedPrivateNetworkInput",
 		&returns,
 	)
 	return returns
@@ -312,6 +336,17 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)SetManagedPrivateNetwork(val interface{}) {
+	if err := j.validateSetManagedPrivateNetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedPrivateNetwork",
 		val,
 	)
 }
@@ -561,6 +596,14 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	_jsii_.InvokeVoid(
 		s,
 		"resetAwsAccessKey",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) ResetManagedPrivateNetwork() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetManagedPrivateNetwork",
 		nil, // no parameters
 	)
 }

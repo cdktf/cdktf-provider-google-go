@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/iap_web_cloud_run_service_iam_member google_iap_web_cloud_run_service_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/iap_web_cloud_run_service_iam_member google_iap_web_cloud_run_service_iam_member}.
 type IapWebCloudRunServiceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamMember) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/iap_web_cloud_run_service_iam_member google_iap_web_cloud_run_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/iap_web_cloud_run_service_iam_member google_iap_web_cloud_run_service_iam_member} Resource.
 func NewIapWebCloudRunServiceIamMember(scope constructs.Construct, id *string, config *IapWebCloudRunServiceIamMemberConfig) IapWebCloudRunServiceIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewIapWebCloudRunServiceIamMember(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/iap_web_cloud_run_service_iam_member google_iap_web_cloud_run_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/iap_web_cloud_run_service_iam_member google_iap_web_cloud_run_service_iam_member} Resource.
 func NewIapWebCloudRunServiceIamMember_Override(i IapWebCloudRunServiceIamMember, scope constructs.Construct, id *string, config *IapWebCloudRunServiceIamMemberConfig) {
 	_init_.Initialize()
 

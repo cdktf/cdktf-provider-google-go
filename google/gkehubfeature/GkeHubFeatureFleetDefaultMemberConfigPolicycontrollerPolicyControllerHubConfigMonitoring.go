@@ -9,7 +9,7 @@ type GkeHubFeatureFleetDefaultMemberConfigPolicycontrollerPolicyControllerHubCon
 	//
 	// An empty list would effectively disable metrics export. Possible values: ["MONITORING_BACKEND_UNSPECIFIED", "PROMETHEUS", "CLOUD_MONITORING"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/gke_hub_feature#backends GkeHubFeature#backends}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/gke_hub_feature#backends GkeHubFeature#backends}
 	Backends *[]*string `field:"optional" json:"backends" yaml:"backends"`
 }
 

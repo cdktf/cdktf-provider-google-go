@@ -67,6 +67,10 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference) validateSetKmsKeyServiceAccountParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

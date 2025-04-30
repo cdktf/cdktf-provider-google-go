@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert}.
 type ApigeeKeystoresAliasesSelfSignedCert interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -566,7 +566,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert} Resource.
 func NewApigeeKeystoresAliasesSelfSignedCert(scope constructs.Construct, id *string, config *ApigeeKeystoresAliasesSelfSignedCertConfig) ApigeeKeystoresAliasesSelfSignedCert {
 	_init_.Initialize()
 
@@ -584,7 +584,7 @@ func NewApigeeKeystoresAliasesSelfSignedCert(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/resources/apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert} Resource.
 func NewApigeeKeystoresAliasesSelfSignedCert_Override(a ApigeeKeystoresAliasesSelfSignedCert, scope constructs.Construct, id *string, config *ApigeeKeystoresAliasesSelfSignedCertConfig) {
 	_init_.Initialize()
 

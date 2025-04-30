@@ -75,6 +75,10 @@ func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) validateOverrideLogicalIdPara
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) validatePutResponseTypeParameters(value *IdentityPlatformOauthIdpConfigResponseType) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) validatePutTimeoutsParameters(value *IdentityPlatformOauthIdpConfigTimeouts) error {
 	return nil
 }

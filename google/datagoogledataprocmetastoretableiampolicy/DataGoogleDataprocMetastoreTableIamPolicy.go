@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/dataproc_metastore_table_iam_policy google_dataproc_metastore_table_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/data-sources/dataproc_metastore_table_iam_policy google_dataproc_metastore_table_iam_policy}.
 type DataGoogleDataprocMetastoreTableIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/dataproc_metastore_table_iam_policy google_dataproc_metastore_table_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/data-sources/dataproc_metastore_table_iam_policy google_dataproc_metastore_table_iam_policy} Data Source.
 func NewDataGoogleDataprocMetastoreTableIamPolicy(scope constructs.Construct, id *string, config *DataGoogleDataprocMetastoreTableIamPolicyConfig) DataGoogleDataprocMetastoreTableIamPolicy {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewDataGoogleDataprocMetastoreTableIamPolicy(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.32.0/docs/data-sources/dataproc_metastore_table_iam_policy google_dataproc_metastore_table_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/data-sources/dataproc_metastore_table_iam_policy google_dataproc_metastore_table_iam_policy} Data Source.
 func NewDataGoogleDataprocMetastoreTableIamPolicy_Override(d DataGoogleDataprocMetastoreTableIamPolicy, scope constructs.Construct, id *string, config *DataGoogleDataprocMetastoreTableIamPolicyConfig) {
 	_init_.Initialize()
 

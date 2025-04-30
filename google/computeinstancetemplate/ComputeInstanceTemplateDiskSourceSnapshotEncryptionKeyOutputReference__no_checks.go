@@ -71,6 +71,14 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputR
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) validateSetRawKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) validateSetRsaEncryptedKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
