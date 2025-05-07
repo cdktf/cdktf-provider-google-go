@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/dataplex_asset_iam_binding google_dataplex_asset_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/dataplex_asset_iam_binding google_dataplex_asset_iam_binding}.
 type DataplexAssetIamBinding interface {
 	cdktf.TerraformResource
 	Asset() *string
@@ -508,7 +508,7 @@ func (j *jsiiProxy_DataplexAssetIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/dataplex_asset_iam_binding google_dataplex_asset_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/dataplex_asset_iam_binding google_dataplex_asset_iam_binding} Resource.
 func NewDataplexAssetIamBinding(scope constructs.Construct, id *string, config *DataplexAssetIamBindingConfig) DataplexAssetIamBinding {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewDataplexAssetIamBinding(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/dataplex_asset_iam_binding google_dataplex_asset_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/dataplex_asset_iam_binding google_dataplex_asset_iam_binding} Resource.
 func NewDataplexAssetIamBinding_Override(d DataplexAssetIamBinding, scope constructs.Construct, id *string, config *DataplexAssetIamBindingConfig) {
 	_init_.Initialize()
 

@@ -26,11 +26,14 @@ type CloudRunServiceMetadata struct {
 	//   for the Service. For example, '"run.googleapis.com/ingress" = "all"'.
 	// - 'run.googleapis.com/launch-stage' sets the [launch stage](https://cloud.google.com/run/docs/troubleshooting#launch-stage-validation)
 	//   when a preview feature is used. For example, '"run.googleapis.com/launch-stage": "BETA"'
+	// - 'run.googleapis.com/minScale' sets the [minimum number of container instances](https://cloud.google.com/sdk/gcloud/reference/run/deploy#--min) of the Service.
+	// - 'run.googleapis.com/scalingMode' sets the type of scaling mode for the service. The supported values for scaling mode are "manual" and "automatic". If not provided, it defaults to "automatic".
+	// - 'run.googleapis.com/manualInstanceCount' sets the total instance count for the service in manual scaling mode. This number of instances is divided among all revisions with specified traffic based on the percent of traffic they are receiving.
 	//
 	// **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 	// Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/cloud_run_service#annotations CloudRunService#annotations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/cloud_run_service#annotations CloudRunService#annotations}
 	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
 	// Map of string keys and values that can be used to organize and categorize (scope and select) objects.
 	//
@@ -40,11 +43,11 @@ type CloudRunServiceMetadata struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/cloud_run_service#labels CloudRunService#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/cloud_run_service#labels CloudRunService#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// In Cloud Run the namespace must be equal to either the project ID or project number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/cloud_run_service#namespace CloudRunService#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/cloud_run_service#namespace CloudRunService#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

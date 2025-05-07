@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/compute_instance_template_iam_member google_compute_instance_template_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/compute_instance_template_iam_member google_compute_instance_template_iam_member}.
 type ComputeInstanceTemplateIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateIamMember) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/compute_instance_template_iam_member google_compute_instance_template_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/compute_instance_template_iam_member google_compute_instance_template_iam_member} Resource.
 func NewComputeInstanceTemplateIamMember(scope constructs.Construct, id *string, config *ComputeInstanceTemplateIamMemberConfig) ComputeInstanceTemplateIamMember {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewComputeInstanceTemplateIamMember(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/compute_instance_template_iam_member google_compute_instance_template_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/compute_instance_template_iam_member google_compute_instance_template_iam_member} Resource.
 func NewComputeInstanceTemplateIamMember_Override(c ComputeInstanceTemplateIamMember, scope constructs.Construct, id *string, config *ComputeInstanceTemplateIamMemberConfig) {
 	_init_.Initialize()
 

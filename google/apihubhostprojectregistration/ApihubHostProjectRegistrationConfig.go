@@ -28,7 +28,7 @@ type ApihubHostProjectRegistrationConfig struct {
 	// As input, project name with either project id or number are accepted.
 	// As output, this field will contain project number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/apihub_host_project_registration#gcp_project ApihubHostProjectRegistration#gcp_project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/apihub_host_project_registration#gcp_project ApihubHostProjectRegistration#gcp_project}
 	GcpProject *string `field:"required" json:"gcpProject" yaml:"gcpProject"`
 	// Required.
 	//
@@ -37,22 +37,22 @@ type ApihubHostProjectRegistrationConfig struct {
 	// must be the same as the Google cloud project specified in the
 	// host_project_registration.gcp_project field.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/apihub_host_project_registration#host_project_registration_id ApihubHostProjectRegistration#host_project_registration_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/apihub_host_project_registration#host_project_registration_id ApihubHostProjectRegistration#host_project_registration_id}
 	HostProjectRegistrationId *string `field:"required" json:"hostProjectRegistrationId" yaml:"hostProjectRegistrationId"`
 	// Part of 'parent'. See documentation of 'projectsId'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/apihub_host_project_registration#location ApihubHostProjectRegistration#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/apihub_host_project_registration#location ApihubHostProjectRegistration#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/apihub_host_project_registration#id ApihubHostProjectRegistration#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/apihub_host_project_registration#id ApihubHostProjectRegistration#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/apihub_host_project_registration#project ApihubHostProjectRegistration#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/apihub_host_project_registration#project ApihubHostProjectRegistration#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/apihub_host_project_registration#timeouts ApihubHostProjectRegistration#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/apihub_host_project_registration#timeouts ApihubHostProjectRegistration#timeouts}
 	Timeouts *ApihubHostProjectRegistrationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

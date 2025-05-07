@@ -59,6 +59,10 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutBackup
 	return nil
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutConnectionPoolConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) validatePutDatabaseFlagsParameters(value interface{}) error {
 	return nil
 }

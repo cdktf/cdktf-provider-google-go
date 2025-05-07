@@ -75,6 +75,10 @@ func (j *jsiiProxy_BigtableInstanceClusterOutputReference) validateSetKmsKeyName
 	return nil
 }
 
+func (j *jsiiProxy_BigtableInstanceClusterOutputReference) validateSetNodeScalingFactorParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigtableInstanceClusterOutputReference) validateSetNumNodesParameters(val *float64) error {
 	return nil
 }

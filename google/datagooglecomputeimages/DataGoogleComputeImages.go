@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/data-sources/compute_images google_compute_images}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/data-sources/compute_images google_compute_images}.
 type DataGoogleComputeImages interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataGoogleComputeImages) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/data-sources/compute_images google_compute_images} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/data-sources/compute_images google_compute_images} Data Source.
 func NewDataGoogleComputeImages(scope constructs.Construct, id *string, config *DataGoogleComputeImagesConfig) DataGoogleComputeImages {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataGoogleComputeImages(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/data-sources/compute_images google_compute_images} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/data-sources/compute_images google_compute_images} Data Source.
 func NewDataGoogleComputeImages_Override(d DataGoogleComputeImages, scope constructs.Construct, id *string, config *DataGoogleComputeImagesConfig) {
 	_init_.Initialize()
 

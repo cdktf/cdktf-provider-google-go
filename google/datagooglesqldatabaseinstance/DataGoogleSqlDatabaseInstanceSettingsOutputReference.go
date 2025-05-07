@@ -29,6 +29,7 @@ type DataGoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionPoolConfig() DataGoogleSqlDatabaseInstanceSettingsConnectionPoolConfigList
 	ConnectorEnforcement() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -184,6 +185,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) Complex
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) ConnectionPoolConfig() DataGoogleSqlDatabaseInstanceSettingsConnectionPoolConfigList {
+	var returns DataGoogleSqlDatabaseInstanceSettingsConnectionPoolConfigList
+	_jsii_.Get(
+		j,
+		"connectionPoolConfig",
 		&returns,
 	)
 	return returns

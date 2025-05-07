@@ -5,11 +5,11 @@ package iapwebcloudrunserviceiammember
 
 
 type IapWebCloudRunServiceIamMemberCondition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/iap_web_cloud_run_service_iam_member#expression IapWebCloudRunServiceIamMember#expression}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/iap_web_cloud_run_service_iam_member#expression IapWebCloudRunServiceIamMember#expression}.
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/iap_web_cloud_run_service_iam_member#title IapWebCloudRunServiceIamMember#title}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/iap_web_cloud_run_service_iam_member#title IapWebCloudRunServiceIamMember#title}.
 	Title *string `field:"required" json:"title" yaml:"title"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/resources/iap_web_cloud_run_service_iam_member#description IapWebCloudRunServiceIamMember#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/iap_web_cloud_run_service_iam_member#description IapWebCloudRunServiceIamMember#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 

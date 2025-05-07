@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/data-sources/kms_crypto_key_latest_version google_kms_crypto_key_latest_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/data-sources/kms_crypto_key_latest_version google_kms_crypto_key_latest_version}.
 type DataGoogleKmsCryptoKeyLatestVersion interface {
 	cdktf.TerraformDataSource
 	Algorithm() *string
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKeyLatestVersion) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/data-sources/kms_crypto_key_latest_version google_kms_crypto_key_latest_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/data-sources/kms_crypto_key_latest_version google_kms_crypto_key_latest_version} Data Source.
 func NewDataGoogleKmsCryptoKeyLatestVersion(scope constructs.Construct, id *string, config *DataGoogleKmsCryptoKeyLatestVersionConfig) DataGoogleKmsCryptoKeyLatestVersion {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewDataGoogleKmsCryptoKeyLatestVersion(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.33.0/docs/data-sources/kms_crypto_key_latest_version google_kms_crypto_key_latest_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/data-sources/kms_crypto_key_latest_version google_kms_crypto_key_latest_version} Data Source.
 func NewDataGoogleKmsCryptoKeyLatestVersion_Override(d DataGoogleKmsCryptoKeyLatestVersion, scope constructs.Construct, id *string, config *DataGoogleKmsCryptoKeyLatestVersionConfig) {
 	_init_.Initialize()
 

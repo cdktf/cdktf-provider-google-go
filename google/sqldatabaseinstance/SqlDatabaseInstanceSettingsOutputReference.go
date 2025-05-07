@@ -38,6 +38,8 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionPoolConfig() SqlDatabaseInstanceSettingsConnectionPoolConfigList
+	ConnectionPoolConfigInput() interface{}
 	ConnectorEnforcement() *string
 	SetConnectorEnforcement(val *string)
 	ConnectorEnforcementInput() *string
@@ -143,6 +145,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	PutActiveDirectoryConfig(value *SqlDatabaseInstanceSettingsActiveDirectoryConfig)
 	PutAdvancedMachineFeatures(value *SqlDatabaseInstanceSettingsAdvancedMachineFeatures)
 	PutBackupConfiguration(value *SqlDatabaseInstanceSettingsBackupConfiguration)
+	PutConnectionPoolConfig(value interface{})
 	PutDatabaseFlags(value interface{})
 	PutDataCacheConfig(value *SqlDatabaseInstanceSettingsDataCacheConfig)
 	PutDenyMaintenancePeriod(value *SqlDatabaseInstanceSettingsDenyMaintenancePeriod)
@@ -158,6 +161,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	ResetAvailabilityType()
 	ResetBackupConfiguration()
 	ResetCollation()
+	ResetConnectionPoolConfig()
 	ResetConnectorEnforcement()
 	ResetDatabaseFlags()
 	ResetDataCacheConfig()
@@ -330,6 +334,26 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ComplexObjectIsFr
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ConnectionPoolConfig() SqlDatabaseInstanceSettingsConnectionPoolConfigList {
+	var returns SqlDatabaseInstanceSettingsConnectionPoolConfigList
+	_jsii_.Get(
+		j,
+		"connectionPoolConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ConnectionPoolConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connectionPoolConfigInput",
 		&returns,
 	)
 	return returns
@@ -1344,6 +1368,17 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutBackupConfigur
 	)
 }
 
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutConnectionPoolConfig(value interface{}) {
+	if err := s.validatePutConnectionPoolConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putConnectionPoolConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) PutDatabaseFlags(value interface{}) {
 	if err := s.validatePutDatabaseFlagsParameters(value); err != nil {
 		panic(err)
@@ -1487,6 +1522,14 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetCollation() 
 	_jsii_.InvokeVoid(
 		s,
 		"resetCollation",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) ResetConnectionPoolConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetConnectionPoolConfig",
 		nil, // no parameters
 	)
 }

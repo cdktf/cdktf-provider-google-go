@@ -32,7 +32,9 @@ type DataGoogleCloudRunV2ServiceScalingOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleCloudRunV2ServiceScaling
 	SetInternalValue(val *DataGoogleCloudRunV2ServiceScaling)
+	ManualInstanceCount() *float64
 	MinInstanceCount() *float64
+	ScalingMode() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -130,11 +132,31 @@ func (j *jsiiProxy_DataGoogleCloudRunV2ServiceScalingOutputReference) InternalVa
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceScalingOutputReference) ManualInstanceCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"manualInstanceCount",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleCloudRunV2ServiceScalingOutputReference) MinInstanceCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
 		"minInstanceCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceScalingOutputReference) ScalingMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scalingMode",
 		&returns,
 	)
 	return returns
