@@ -7,11 +7,11 @@ package containercluster
 type ContainerClusterNodePoolManagement struct {
 	// Whether the nodes will be automatically repaired. Enabled by default.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/container_cluster#auto_repair ContainerCluster#auto_repair}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/container_cluster#auto_repair ContainerCluster#auto_repair}
 	AutoRepair interface{} `field:"optional" json:"autoRepair" yaml:"autoRepair"`
 	// Whether the nodes will be automatically upgraded. Enabled by default.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/container_cluster#auto_upgrade ContainerCluster#auto_upgrade}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/container_cluster#auto_upgrade ContainerCluster#auto_upgrade}
 	AutoUpgrade interface{} `field:"optional" json:"autoUpgrade" yaml:"autoUpgrade"`
 }
 

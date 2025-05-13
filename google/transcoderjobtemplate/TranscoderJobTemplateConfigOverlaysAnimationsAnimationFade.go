@@ -13,19 +13,19 @@ type TranscoderJobTemplateConfigOverlaysAnimationsAnimationFade struct {
 	//
 	// * 'FADE_OUT': Fade the overlay object out of view. Possible values: ["FADE_TYPE_UNSPECIFIED", "FADE_IN", "FADE_OUT"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/transcoder_job_template#fade_type TranscoderJobTemplate#fade_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/transcoder_job_template#fade_type TranscoderJobTemplate#fade_type}
 	FadeType *string `field:"required" json:"fadeType" yaml:"fadeType"`
 	// The time to end the fade animation, in seconds.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/transcoder_job_template#end_time_offset TranscoderJobTemplate#end_time_offset}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/transcoder_job_template#end_time_offset TranscoderJobTemplate#end_time_offset}
 	EndTimeOffset *string `field:"optional" json:"endTimeOffset" yaml:"endTimeOffset"`
 	// The time to start the fade animation, in seconds.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/transcoder_job_template#start_time_offset TranscoderJobTemplate#start_time_offset}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/transcoder_job_template#start_time_offset TranscoderJobTemplate#start_time_offset}
 	StartTimeOffset *string `field:"optional" json:"startTimeOffset" yaml:"startTimeOffset"`
 	// xy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/transcoder_job_template#xy TranscoderJobTemplate#xy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/transcoder_job_template#xy TranscoderJobTemplate#xy}
 	Xy *TranscoderJobTemplateConfigOverlaysAnimationsAnimationFadeXy `field:"optional" json:"xy" yaml:"xy"`
 }
 

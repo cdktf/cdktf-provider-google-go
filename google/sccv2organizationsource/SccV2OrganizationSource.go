@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/scc_v2_organization_source google_scc_v2_organization_source}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/scc_v2_organization_source google_scc_v2_organization_source}.
 type SccV2OrganizationSource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_SccV2OrganizationSource) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/scc_v2_organization_source google_scc_v2_organization_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/scc_v2_organization_source google_scc_v2_organization_source} Resource.
 func NewSccV2OrganizationSource(scope constructs.Construct, id *string, config *SccV2OrganizationSourceConfig) SccV2OrganizationSource {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewSccV2OrganizationSource(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/scc_v2_organization_source google_scc_v2_organization_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/scc_v2_organization_source google_scc_v2_organization_source} Resource.
 func NewSccV2OrganizationSource_Override(s SccV2OrganizationSource, scope constructs.Construct, id *string, config *SccV2OrganizationSourceConfig) {
 	_init_.Initialize()
 

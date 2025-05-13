@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/identity_platform_tenant_inbound_saml_config google_identity_platform_tenant_inbound_saml_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/identity_platform_tenant_inbound_saml_config google_identity_platform_tenant_inbound_saml_config}.
 type IdentityPlatformTenantInboundSamlConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -497,7 +497,7 @@ func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfig) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/identity_platform_tenant_inbound_saml_config google_identity_platform_tenant_inbound_saml_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/identity_platform_tenant_inbound_saml_config google_identity_platform_tenant_inbound_saml_config} Resource.
 func NewIdentityPlatformTenantInboundSamlConfig(scope constructs.Construct, id *string, config *IdentityPlatformTenantInboundSamlConfigConfig) IdentityPlatformTenantInboundSamlConfig {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewIdentityPlatformTenantInboundSamlConfig(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/identity_platform_tenant_inbound_saml_config google_identity_platform_tenant_inbound_saml_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/identity_platform_tenant_inbound_saml_config google_identity_platform_tenant_inbound_saml_config} Resource.
 func NewIdentityPlatformTenantInboundSamlConfig_Override(i IdentityPlatformTenantInboundSamlConfig, scope constructs.Construct, id *string, config *IdentityPlatformTenantInboundSamlConfigConfig) {
 	_init_.Initialize()
 

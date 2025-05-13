@@ -10,7 +10,7 @@ type AlloydbInstancePscInstanceConfigPscInterfaceConfigs struct {
 	// This is of the format: "projects/${CONSUMER_PROJECT}/regions/${REGION}/networkAttachments/${NETWORK_ATTACHMENT_NAME}".
 	// The network attachment must be in the same region as the instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.0/docs/resources/alloydb_instance#network_attachment_resource AlloydbInstance#network_attachment_resource}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/alloydb_instance#network_attachment_resource AlloydbInstance#network_attachment_resource}
 	NetworkAttachmentResource *string `field:"optional" json:"networkAttachmentResource" yaml:"networkAttachmentResource"`
 }
 
