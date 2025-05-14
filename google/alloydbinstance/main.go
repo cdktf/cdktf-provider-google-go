@@ -391,11 +391,15 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "pscAutoConnections", GoGetter: "PscAutoConnections"},
+			_jsii_.MemberProperty{JsiiProperty: "pscAutoConnectionsInput", GoGetter: "PscAutoConnectionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "pscDnsName", GoGetter: "PscDnsName"},
 			_jsii_.MemberProperty{JsiiProperty: "pscInterfaceConfigs", GoGetter: "PscInterfaceConfigs"},
 			_jsii_.MemberProperty{JsiiProperty: "pscInterfaceConfigsInput", GoGetter: "PscInterfaceConfigsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putPscAutoConnections", GoMethod: "PutPscAutoConnections"},
 			_jsii_.MemberMethod{JsiiMethod: "putPscInterfaceConfigs", GoMethod: "PutPscInterfaceConfigs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedConsumerProjects", GoMethod: "ResetAllowedConsumerProjects"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPscAutoConnections", GoMethod: "ResetPscAutoConnections"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPscInterfaceConfigs", GoMethod: "ResetPscInterfaceConfigs"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAttachmentLink", GoGetter: "ServiceAttachmentLink"},
@@ -405,6 +409,73 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlloydbInstancePscInstanceConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections",
+		reflect.TypeOf((*AlloydbInstancePscInstanceConfigPscAutoConnections)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsList",
+		reflect.TypeOf((*AlloydbInstancePscInstanceConfigPscAutoConnectionsList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference",
+		reflect.TypeOf((*AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "consumerNetwork", GoGetter: "ConsumerNetwork"},
+			_jsii_.MemberProperty{JsiiProperty: "consumerNetworkInput", GoGetter: "ConsumerNetworkInput"},
+			_jsii_.MemberProperty{JsiiProperty: "consumerNetworkStatus", GoGetter: "ConsumerNetworkStatus"},
+			_jsii_.MemberProperty{JsiiProperty: "consumerProject", GoGetter: "ConsumerProject"},
+			_jsii_.MemberProperty{JsiiProperty: "consumerProjectInput", GoGetter: "ConsumerProjectInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "ipAddress", GoGetter: "IpAddress"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConsumerNetwork", GoMethod: "ResetConsumerNetwork"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConsumerProject", GoMethod: "ResetConsumerProject"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

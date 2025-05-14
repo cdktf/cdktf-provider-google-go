@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/data-sources/spanner_database google_spanner_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/spanner_database google_spanner_database}.
 type DataGoogleSpannerDatabase interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -25,6 +25,7 @@ type DataGoogleSpannerDatabase interface {
 	SetCount(val interface{})
 	DatabaseDialect() *string
 	Ddl() *[]*string
+	DefaultTimeZone() *string
 	DeletionProtection() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
@@ -166,6 +167,16 @@ func (j *jsiiProxy_DataGoogleSpannerDatabase) Ddl() *[]*string {
 	_jsii_.Get(
 		j,
 		"ddl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSpannerDatabase) DefaultTimeZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultTimeZone",
 		&returns,
 	)
 	return returns
@@ -412,7 +423,7 @@ func (j *jsiiProxy_DataGoogleSpannerDatabase) VersionRetentionPeriod() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/data-sources/spanner_database google_spanner_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/spanner_database google_spanner_database} Data Source.
 func NewDataGoogleSpannerDatabase(scope constructs.Construct, id *string, config *DataGoogleSpannerDatabaseConfig) DataGoogleSpannerDatabase {
 	_init_.Initialize()
 
@@ -430,7 +441,7 @@ func NewDataGoogleSpannerDatabase(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/data-sources/spanner_database google_spanner_database} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/spanner_database google_spanner_database} Data Source.
 func NewDataGoogleSpannerDatabase_Override(d DataGoogleSpannerDatabase, scope constructs.Construct, id *string, config *DataGoogleSpannerDatabaseConfig) {
 	_init_.Initialize()
 

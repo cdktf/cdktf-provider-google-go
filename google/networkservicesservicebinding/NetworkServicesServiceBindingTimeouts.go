@@ -5,11 +5,11 @@ package networkservicesservicebinding
 
 
 type NetworkServicesServiceBindingTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/network_services_service_binding#create NetworkServicesServiceBinding#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/network_services_service_binding#create NetworkServicesServiceBinding#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/network_services_service_binding#delete NetworkServicesServiceBinding#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/network_services_service_binding#delete NetworkServicesServiceBinding#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/network_services_service_binding#update NetworkServicesServiceBinding#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/network_services_service_binding#update NetworkServicesServiceBinding#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

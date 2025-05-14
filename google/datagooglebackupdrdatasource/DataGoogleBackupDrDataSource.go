@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/data-sources/backup_dr_data_source google_backup_dr_data_source}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/backup_dr_data_source google_backup_dr_data_source}.
 type DataGoogleBackupDrDataSource interface {
 	cdktf.TerraformDataSource
 	BackupConfigInfo() DataGoogleBackupDrDataSourceBackupConfigInfoList
@@ -489,7 +489,7 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSource) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/data-sources/backup_dr_data_source google_backup_dr_data_source} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/backup_dr_data_source google_backup_dr_data_source} Data Source.
 func NewDataGoogleBackupDrDataSource(scope constructs.Construct, id *string, config *DataGoogleBackupDrDataSourceConfig) DataGoogleBackupDrDataSource {
 	_init_.Initialize()
 
@@ -507,7 +507,7 @@ func NewDataGoogleBackupDrDataSource(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/data-sources/backup_dr_data_source google_backup_dr_data_source} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/backup_dr_data_source google_backup_dr_data_source} Data Source.
 func NewDataGoogleBackupDrDataSource_Override(d DataGoogleBackupDrDataSource, scope constructs.Construct, id *string, config *DataGoogleBackupDrDataSourceConfig) {
 	_init_.Initialize()
 

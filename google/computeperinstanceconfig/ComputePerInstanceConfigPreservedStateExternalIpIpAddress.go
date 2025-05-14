@@ -7,7 +7,7 @@ package computeperinstanceconfig
 type ComputePerInstanceConfigPreservedStateExternalIpIpAddress struct {
 	// The URL of the reservation for this IP address.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/compute_per_instance_config#address ComputePerInstanceConfig#address}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/compute_per_instance_config#address ComputePerInstanceConfig#address}
 	Address *string `field:"optional" json:"address" yaml:"address"`
 }
 

@@ -95,6 +95,14 @@ func validateNetappBackupVault_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_NetappBackupVault) validateSetBackupRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetappBackupVault) validateSetBackupVaultTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetappBackupVault) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

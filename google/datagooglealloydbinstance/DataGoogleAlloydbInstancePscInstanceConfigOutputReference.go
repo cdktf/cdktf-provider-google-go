@@ -33,6 +33,7 @@ type DataGoogleAlloydbInstancePscInstanceConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleAlloydbInstancePscInstanceConfig
 	SetInternalValue(val *DataGoogleAlloydbInstancePscInstanceConfig)
+	PscAutoConnections() DataGoogleAlloydbInstancePscInstanceConfigPscAutoConnectionsList
 	PscDnsName() *string
 	PscInterfaceConfigs() DataGoogleAlloydbInstancePscInstanceConfigPscInterfaceConfigsList
 	ServiceAttachmentLink() *string
@@ -138,6 +139,16 @@ func (j *jsiiProxy_DataGoogleAlloydbInstancePscInstanceConfigOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleAlloydbInstancePscInstanceConfigOutputReference) PscAutoConnections() DataGoogleAlloydbInstancePscInstanceConfigPscAutoConnectionsList {
+	var returns DataGoogleAlloydbInstancePscInstanceConfigPscAutoConnectionsList
+	_jsii_.Get(
+		j,
+		"pscAutoConnections",
 		&returns,
 	)
 	return returns

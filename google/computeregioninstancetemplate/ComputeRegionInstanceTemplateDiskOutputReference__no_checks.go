@@ -63,6 +63,10 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateRes
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetArchitectureParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetAutoDeleteParameters(val interface{}) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSet
 }
 
 func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetDiskTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionInstanceTemplateDiskOutputReference) validateSetGuestOsFeaturesParameters(val *[]*string) error {
 	return nil
 }
 

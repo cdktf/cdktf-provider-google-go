@@ -13,6 +13,9 @@ import (
 
 type ComputeInstanceTemplateDiskOutputReference interface {
 	cdktf.ComplexObject
+	Architecture() *string
+	SetArchitecture(val *string)
+	ArchitectureInput() *string
 	AutoDelete() interface{}
 	SetAutoDelete(val interface{})
 	AutoDeleteInput() interface{}
@@ -50,6 +53,9 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 	DiskTypeInput() *string
 	// Experimental.
 	Fqn() *string
+	GuestOsFeatures() *[]*string
+	SetGuestOsFeatures(val *[]*string)
+	GuestOsFeaturesInput() *[]*string
 	Interface() *string
 	SetInterface(val *string)
 	InterfaceInput() *string
@@ -124,6 +130,7 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 	PutDiskEncryptionKey(value *ComputeInstanceTemplateDiskDiskEncryptionKey)
 	PutSourceImageEncryptionKey(value *ComputeInstanceTemplateDiskSourceImageEncryptionKey)
 	PutSourceSnapshotEncryptionKey(value *ComputeInstanceTemplateDiskSourceSnapshotEncryptionKey)
+	ResetArchitecture()
 	ResetAutoDelete()
 	ResetBoot()
 	ResetDeviceName()
@@ -131,6 +138,7 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 	ResetDiskName()
 	ResetDiskSizeGb()
 	ResetDiskType()
+	ResetGuestOsFeatures()
 	ResetInterface()
 	ResetLabels()
 	ResetMode()
@@ -157,6 +165,26 @@ type ComputeInstanceTemplateDiskOutputReference interface {
 // The jsii proxy struct for ComputeInstanceTemplateDiskOutputReference
 type jsiiProxy_ComputeInstanceTemplateDiskOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) Architecture() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architecture",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ArchitectureInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architectureInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) AutoDelete() interface{} {
@@ -334,6 +362,26 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) GuestOsFeatures() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) GuestOsFeaturesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeaturesInput",
 		&returns,
 	)
 	return returns
@@ -657,6 +705,17 @@ func NewComputeInstanceTemplateDiskOutputReference_Override(c ComputeInstanceTem
 	)
 }
 
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetArchitecture(val *string) {
+	if err := j.validateSetArchitectureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"architecture",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetAutoDelete(val interface{}) {
 	if err := j.validateSetAutoDeleteParameters(val); err != nil {
 		panic(err)
@@ -741,6 +800,17 @@ func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetDiskType(val *s
 	_jsii_.Set(
 		j,
 		"diskType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceTemplateDiskOutputReference)SetGuestOsFeatures(val *[]*string) {
+	if err := j.validateSetGuestOsFeaturesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"guestOsFeatures",
 		val,
 	)
 }
@@ -1118,6 +1188,14 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) PutSourceSnapshot
 	)
 }
 
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ResetArchitecture() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetArchitecture",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ResetAutoDelete() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1170,6 +1248,14 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ResetDiskType() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDiskType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) ResetGuestOsFeatures() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGuestOsFeatures",
 		nil, // no parameters
 	)
 }

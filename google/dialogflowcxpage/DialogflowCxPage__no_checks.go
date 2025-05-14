@@ -91,6 +91,10 @@ func (d *jsiiProxy_DialogflowCxPage) validatePutFormParameters(value *Dialogflow
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxPage) validatePutKnowledgeConnectorSettingsParameters(value *DialogflowCxPageKnowledgeConnectorSettings) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxPage) validatePutTimeoutsParameters(value *DialogflowCxPageTimeouts) error {
 	return nil
 }

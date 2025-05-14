@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/dialogflow_cx_page google_dialogflow_cx_page}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/dialogflow_cx_page google_dialogflow_cx_page}.
 type DialogflowCxPage interface {
 	cdktf.TerraformResource
 	AdvancedSettings() DialogflowCxPageAdvancedSettingsOutputReference
@@ -53,6 +53,8 @@ type DialogflowCxPage interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KnowledgeConnectorSettings() DialogflowCxPageKnowledgeConnectorSettingsOutputReference
+	KnowledgeConnectorSettingsInput() *DialogflowCxPageKnowledgeConnectorSettings
 	LanguageCode() *string
 	SetLanguageCode(val *string)
 	LanguageCodeInput() *string
@@ -136,6 +138,7 @@ type DialogflowCxPage interface {
 	PutEntryFulfillment(value *DialogflowCxPageEntryFulfillment)
 	PutEventHandlers(value interface{})
 	PutForm(value *DialogflowCxPageForm)
+	PutKnowledgeConnectorSettings(value *DialogflowCxPageKnowledgeConnectorSettings)
 	PutTimeouts(value *DialogflowCxPageTimeouts)
 	PutTransitionRoutes(value interface{})
 	ResetAdvancedSettings()
@@ -143,6 +146,7 @@ type DialogflowCxPage interface {
 	ResetEventHandlers()
 	ResetForm()
 	ResetId()
+	ResetKnowledgeConnectorSettings()
 	ResetLanguageCode()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -369,6 +373,26 @@ func (j *jsiiProxy_DialogflowCxPage) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DialogflowCxPage) KnowledgeConnectorSettings() DialogflowCxPageKnowledgeConnectorSettingsOutputReference {
+	var returns DialogflowCxPageKnowledgeConnectorSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"knowledgeConnectorSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxPage) KnowledgeConnectorSettingsInput() *DialogflowCxPageKnowledgeConnectorSettings {
+	var returns *DialogflowCxPageKnowledgeConnectorSettings
+	_jsii_.Get(
+		j,
+		"knowledgeConnectorSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DialogflowCxPage) LanguageCode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -560,7 +584,7 @@ func (j *jsiiProxy_DialogflowCxPage) TransitionRoutesInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/dialogflow_cx_page google_dialogflow_cx_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/dialogflow_cx_page google_dialogflow_cx_page} Resource.
 func NewDialogflowCxPage(scope constructs.Construct, id *string, config *DialogflowCxPageConfig) DialogflowCxPage {
 	_init_.Initialize()
 
@@ -578,7 +602,7 @@ func NewDialogflowCxPage(scope constructs.Construct, id *string, config *Dialogf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/dialogflow_cx_page google_dialogflow_cx_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/dialogflow_cx_page google_dialogflow_cx_page} Resource.
 func NewDialogflowCxPage_Override(d DialogflowCxPage, scope constructs.Construct, id *string, config *DialogflowCxPageConfig) {
 	_init_.Initialize()
 
@@ -1109,6 +1133,17 @@ func (d *jsiiProxy_DialogflowCxPage) PutForm(value *DialogflowCxPageForm) {
 	)
 }
 
+func (d *jsiiProxy_DialogflowCxPage) PutKnowledgeConnectorSettings(value *DialogflowCxPageKnowledgeConnectorSettings) {
+	if err := d.validatePutKnowledgeConnectorSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putKnowledgeConnectorSettings",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DialogflowCxPage) PutTimeouts(value *DialogflowCxPageTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1167,6 +1202,14 @@ func (d *jsiiProxy_DialogflowCxPage) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxPage) ResetKnowledgeConnectorSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKnowledgeConnectorSettings",
 		nil, // no parameters
 	)
 }

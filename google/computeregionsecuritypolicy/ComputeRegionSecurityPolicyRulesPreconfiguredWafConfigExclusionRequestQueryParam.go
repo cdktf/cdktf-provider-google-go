@@ -14,13 +14,13 @@ type ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQuery
 	// CONTAINS: The operator matches if the field value contains the specified value.
 	// EQUALS_ANY: The operator matches if the field value is any value. Possible values: ["CONTAINS", "ENDS_WITH", "EQUALS", "EQUALS_ANY", "STARTS_WITH"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/compute_region_security_policy#operator ComputeRegionSecurityPolicy#operator}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/compute_region_security_policy#operator ComputeRegionSecurityPolicy#operator}
 	Operator *string `field:"required" json:"operator" yaml:"operator"`
 	// A request field matching the specified value will be excluded from inspection during preconfigured WAF evaluation.
 	//
 	// The field value must be given if the field operator is not EQUALS_ANY, and cannot be given if the field operator is EQUALS_ANY.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/compute_region_security_policy#value ComputeRegionSecurityPolicy#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/compute_region_security_policy#value ComputeRegionSecurityPolicy#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

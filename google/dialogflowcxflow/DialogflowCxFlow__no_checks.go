@@ -83,6 +83,10 @@ func (d *jsiiProxy_DialogflowCxFlow) validatePutEventHandlersParameters(value in
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxFlow) validatePutKnowledgeConnectorSettingsParameters(value *DialogflowCxFlowKnowledgeConnectorSettings) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxFlow) validatePutNluSettingsParameters(value *DialogflowCxFlowNluSettings) error {
 	return nil
 }

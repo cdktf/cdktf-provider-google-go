@@ -368,6 +368,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provinceInput", GoGetter: "ProvinceInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCountryCode", GoMethod: "ResetCountryCode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocality", GoMethod: "ResetLocality"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOrganization", GoMethod: "ResetOrganization"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOrganizationalUnit", GoMethod: "ResetOrganizationalUnit"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPostalCode", GoMethod: "ResetPostalCode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProvince", GoMethod: "ResetProvince"},

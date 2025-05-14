@@ -175,6 +175,10 @@ func (j *jsiiProxy_BigqueryRoutine) validateSetRoutineTypeParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryRoutine) validateSetSecurityModeParameters(val *string) error {
+	return nil
+}
+
 func validateNewBigqueryRoutineParameters(scope constructs.Construct, id *string, config *BigqueryRoutineConfig) error {
 	return nil
 }

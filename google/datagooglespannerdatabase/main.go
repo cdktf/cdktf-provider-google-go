@@ -20,6 +20,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "databaseDialect", GoGetter: "DatabaseDialect"},
 			_jsii_.MemberProperty{JsiiProperty: "ddl", GoGetter: "Ddl"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultTimeZone", GoGetter: "DefaultTimeZone"},
 			_jsii_.MemberProperty{JsiiProperty: "deletionProtection", GoGetter: "DeletionProtection"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "enableDropProtection", GoGetter: "EnableDropProtection"},

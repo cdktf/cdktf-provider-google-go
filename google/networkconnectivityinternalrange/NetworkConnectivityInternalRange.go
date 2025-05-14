@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range}.
 type NetworkConnectivityInternalRange interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -49,6 +49,9 @@ type NetworkConnectivityInternalRange interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Immutable() interface{}
+	SetImmutable(val interface{})
+	ImmutableInput() interface{}
 	IpCidrRange() *string
 	SetIpCidrRange(val *string)
 	IpCidrRangeInput() *string
@@ -155,6 +158,7 @@ type NetworkConnectivityInternalRange interface {
 	ResetDescription()
 	ResetExcludeCidrRanges()
 	ResetId()
+	ResetImmutable()
 	ResetIpCidrRange()
 	ResetLabels()
 	ResetMigration()
@@ -329,6 +333,26 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityInternalRange) Immutable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"immutable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityInternalRange) ImmutableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"immutableInput",
 		&returns,
 	)
 	return returns
@@ -675,7 +699,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
 func NewNetworkConnectivityInternalRange(scope constructs.Construct, id *string, config *NetworkConnectivityInternalRangeConfig) NetworkConnectivityInternalRange {
 	_init_.Initialize()
 
@@ -693,7 +717,7 @@ func NewNetworkConnectivityInternalRange(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range} Resource.
 func NewNetworkConnectivityInternalRange_Override(n NetworkConnectivityInternalRange, scope constructs.Construct, id *string, config *NetworkConnectivityInternalRangeConfig) {
 	_init_.Initialize()
 
@@ -771,6 +795,17 @@ func (j *jsiiProxy_NetworkConnectivityInternalRange)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkConnectivityInternalRange)SetImmutable(val interface{}) {
+	if err := j.validateSetImmutableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"immutable",
 		val,
 	)
 }
@@ -1310,6 +1345,14 @@ func (n *jsiiProxy_NetworkConnectivityInternalRange) ResetId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkConnectivityInternalRange) ResetImmutable() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetImmutable",
 		nil, // no parameters
 	)
 }

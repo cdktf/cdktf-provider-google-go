@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/network_services_edge_cache_origin google_network_services_edge_cache_origin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/network_services_edge_cache_origin google_network_services_edge_cache_origin}.
 type NetworkServicesEdgeCacheOrigin interface {
 	cdktf.TerraformResource
 	AwsV4Authentication() NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference
@@ -40,6 +40,8 @@ type NetworkServicesEdgeCacheOrigin interface {
 	FailoverOrigin() *string
 	SetFailoverOrigin(val *string)
 	FailoverOriginInput() *string
+	FlexShielding() NetworkServicesEdgeCacheOriginFlexShieldingOutputReference
+	FlexShieldingInput() *NetworkServicesEdgeCacheOriginFlexShielding
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -150,6 +152,7 @@ type NetworkServicesEdgeCacheOrigin interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAwsV4Authentication(value *NetworkServicesEdgeCacheOriginAwsV4Authentication)
+	PutFlexShielding(value *NetworkServicesEdgeCacheOriginFlexShielding)
 	PutOriginOverrideAction(value *NetworkServicesEdgeCacheOriginOriginOverrideAction)
 	PutOriginRedirect(value *NetworkServicesEdgeCacheOriginOriginRedirect)
 	PutTimeout(value *NetworkServicesEdgeCacheOriginTimeout)
@@ -157,6 +160,7 @@ type NetworkServicesEdgeCacheOrigin interface {
 	ResetAwsV4Authentication()
 	ResetDescription()
 	ResetFailoverOrigin()
+	ResetFlexShielding()
 	ResetId()
 	ResetLabels()
 	ResetMaxAttempts()
@@ -304,6 +308,26 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) FailoverOriginInput() *string
 	_jsii_.Get(
 		j,
 		"failoverOriginInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) FlexShielding() NetworkServicesEdgeCacheOriginFlexShieldingOutputReference {
+	var returns NetworkServicesEdgeCacheOriginFlexShieldingOutputReference
+	_jsii_.Get(
+		j,
+		"flexShielding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) FlexShieldingInput() *NetworkServicesEdgeCacheOriginFlexShielding {
+	var returns *NetworkServicesEdgeCacheOriginFlexShielding
+	_jsii_.Get(
+		j,
+		"flexShieldingInput",
 		&returns,
 	)
 	return returns
@@ -690,7 +714,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheOrigin) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/network_services_edge_cache_origin google_network_services_edge_cache_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/network_services_edge_cache_origin google_network_services_edge_cache_origin} Resource.
 func NewNetworkServicesEdgeCacheOrigin(scope constructs.Construct, id *string, config *NetworkServicesEdgeCacheOriginConfig) NetworkServicesEdgeCacheOrigin {
 	_init_.Initialize()
 
@@ -708,7 +732,7 @@ func NewNetworkServicesEdgeCacheOrigin(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/network_services_edge_cache_origin google_network_services_edge_cache_origin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/network_services_edge_cache_origin google_network_services_edge_cache_origin} Resource.
 func NewNetworkServicesEdgeCacheOrigin_Override(n NetworkServicesEdgeCacheOrigin, scope constructs.Construct, id *string, config *NetworkServicesEdgeCacheOriginConfig) {
 	_init_.Initialize()
 
@@ -1272,6 +1296,17 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) PutAwsV4Authentication(value 
 	)
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) PutFlexShielding(value *NetworkServicesEdgeCacheOriginFlexShielding) {
+	if err := n.validatePutFlexShieldingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putFlexShielding",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) PutOriginOverrideAction(value *NetworkServicesEdgeCacheOriginOriginOverrideAction) {
 	if err := n.validatePutOriginOverrideActionParameters(value); err != nil {
 		panic(err)
@@ -1336,6 +1371,14 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetFailoverOrigin() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetFailoverOrigin",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) ResetFlexShielding() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetFlexShielding",
 		nil, // no parameters
 	)
 }

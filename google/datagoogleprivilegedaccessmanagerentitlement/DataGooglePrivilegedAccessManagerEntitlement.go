@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/data-sources/privileged_access_manager_entitlement google_privileged_access_manager_entitlement}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/privileged_access_manager_entitlement google_privileged_access_manager_entitlement}.
 type DataGooglePrivilegedAccessManagerEntitlement interface {
 	cdktf.TerraformDataSource
 	AdditionalNotificationTargets() DataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsList
@@ -458,7 +458,7 @@ func (j *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlement) UpdateTime() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/data-sources/privileged_access_manager_entitlement google_privileged_access_manager_entitlement} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/privileged_access_manager_entitlement google_privileged_access_manager_entitlement} Data Source.
 func NewDataGooglePrivilegedAccessManagerEntitlement(scope constructs.Construct, id *string, config *DataGooglePrivilegedAccessManagerEntitlementConfig) DataGooglePrivilegedAccessManagerEntitlement {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewDataGooglePrivilegedAccessManagerEntitlement(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/data-sources/privileged_access_manager_entitlement google_privileged_access_manager_entitlement} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/privileged_access_manager_entitlement google_privileged_access_manager_entitlement} Data Source.
 func NewDataGooglePrivilegedAccessManagerEntitlement_Override(d DataGooglePrivilegedAccessManagerEntitlement, scope constructs.Construct, id *string, config *DataGooglePrivilegedAccessManagerEntitlementConfig) {
 	_init_.Initialize()
 

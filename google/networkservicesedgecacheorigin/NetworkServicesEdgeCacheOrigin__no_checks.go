@@ -79,6 +79,10 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validatePutAwsV4Authenticatio
 	return nil
 }
 
+func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validatePutFlexShieldingParameters(value *NetworkServicesEdgeCacheOriginFlexShielding) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkServicesEdgeCacheOrigin) validatePutOriginOverrideActionParameters(value *NetworkServicesEdgeCacheOriginOriginOverrideAction) error {
 	return nil
 }

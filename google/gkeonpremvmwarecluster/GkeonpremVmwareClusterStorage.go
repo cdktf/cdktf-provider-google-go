@@ -7,7 +7,7 @@ package gkeonpremvmwarecluster
 type GkeonpremVmwareClusterStorage struct {
 	// Whether or not to deploy vSphere CSI components in the VMware User Cluster. Enabled by default.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/gkeonprem_vmware_cluster#vsphere_csi_disabled GkeonpremVmwareCluster#vsphere_csi_disabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/gkeonprem_vmware_cluster#vsphere_csi_disabled GkeonpremVmwareCluster#vsphere_csi_disabled}
 	VsphereCsiDisabled interface{} `field:"required" json:"vsphereCsiDisabled" yaml:"vsphereCsiDisabled"`
 }
 

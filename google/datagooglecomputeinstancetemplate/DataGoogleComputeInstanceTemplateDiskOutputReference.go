@@ -13,6 +13,7 @@ import (
 
 type DataGoogleComputeInstanceTemplateDiskOutputReference interface {
 	cdktf.ComplexObject
+	Architecture() *string
 	AutoDelete() cdktf.IResolvable
 	Boot() cdktf.IResolvable
 	// the index of the complex object in a list.
@@ -37,6 +38,7 @@ type DataGoogleComputeInstanceTemplateDiskOutputReference interface {
 	DiskType() *string
 	// Experimental.
 	Fqn() *string
+	GuestOsFeatures() *[]*string
 	Interface() *string
 	InternalValue() *DataGoogleComputeInstanceTemplateDisk
 	SetInternalValue(val *DataGoogleComputeInstanceTemplateDisk)
@@ -97,6 +99,16 @@ type DataGoogleComputeInstanceTemplateDiskOutputReference interface {
 // The jsii proxy struct for DataGoogleComputeInstanceTemplateDiskOutputReference
 type jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Architecture() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architecture",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) AutoDelete() cdktf.IResolvable {
@@ -204,6 +216,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) Fqn() *
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateDiskOutputReference) GuestOsFeatures() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeatures",
 		&returns,
 	)
 	return returns

@@ -7,7 +7,7 @@ package networkservicestcproute
 type NetworkServicesTcpRouteRulesActionDestinations struct {
 	// The URL of a BackendService to route traffic to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/network_services_tcp_route#service_name NetworkServicesTcpRoute#service_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/network_services_tcp_route#service_name NetworkServicesTcpRoute#service_name}
 	ServiceName *string `field:"optional" json:"serviceName" yaml:"serviceName"`
 	// Specifies the proportion of requests forwarded to the backend referenced by the serviceName field.
 	//
@@ -16,7 +16,7 @@ type NetworkServicesTcpRouteRulesActionDestinations struct {
 	// If weights are specified for any one service name, they need to be specified for all of them.
 	// If weights are unspecified for all services, then, traffic is distributed in equal proportions to all of them.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/network_services_tcp_route#weight NetworkServicesTcpRoute#weight}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/network_services_tcp_route#weight NetworkServicesTcpRoute#weight}
 	Weight *float64 `field:"optional" json:"weight" yaml:"weight"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/bigquery_routine google_bigquery_routine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/bigquery_routine google_bigquery_routine}.
 type BigqueryRoutine interface {
 	cdktf.TerraformResource
 	Arguments() BigqueryRoutineArgumentsList
@@ -100,6 +100,9 @@ type BigqueryRoutine interface {
 	RoutineType() *string
 	SetRoutineType(val *string)
 	RoutineTypeInput() *string
+	SecurityMode() *string
+	SetSecurityMode(val *string)
+	SecurityModeInput() *string
 	SparkOptions() BigqueryRoutineSparkOptionsOutputReference
 	SparkOptionsInput() *BigqueryRoutineSparkOptions
 	// Experimental.
@@ -171,6 +174,7 @@ type BigqueryRoutine interface {
 	ResetRemoteFunctionOptions()
 	ResetReturnTableType()
 	ResetReturnType()
+	ResetSecurityMode()
 	ResetSparkOptions()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -641,6 +645,26 @@ func (j *jsiiProxy_BigqueryRoutine) RoutineTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BigqueryRoutine) SecurityMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryRoutine) SecurityModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BigqueryRoutine) SparkOptions() BigqueryRoutineSparkOptionsOutputReference {
 	var returns BigqueryRoutineSparkOptionsOutputReference
 	_jsii_.Get(
@@ -712,7 +736,7 @@ func (j *jsiiProxy_BigqueryRoutine) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/bigquery_routine google_bigquery_routine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/bigquery_routine google_bigquery_routine} Resource.
 func NewBigqueryRoutine(scope constructs.Construct, id *string, config *BigqueryRoutineConfig) BigqueryRoutine {
 	_init_.Initialize()
 
@@ -730,7 +754,7 @@ func NewBigqueryRoutine(scope constructs.Construct, id *string, config *Bigquery
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.34.1/docs/resources/bigquery_routine google_bigquery_routine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/bigquery_routine google_bigquery_routine} Resource.
 func NewBigqueryRoutine_Override(b BigqueryRoutine, scope constructs.Construct, id *string, config *BigqueryRoutineConfig) {
 	_init_.Initialize()
 
@@ -948,6 +972,17 @@ func (j *jsiiProxy_BigqueryRoutine)SetRoutineType(val *string) {
 	_jsii_.Set(
 		j,
 		"routineType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryRoutine)SetSecurityMode(val *string) {
+	if err := j.validateSetSecurityModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityMode",
 		val,
 	)
 }
@@ -1441,6 +1476,14 @@ func (b *jsiiProxy_BigqueryRoutine) ResetReturnType() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetReturnType",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryRoutine) ResetSecurityMode() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSecurityMode",
 		nil, // no parameters
 	)
 }

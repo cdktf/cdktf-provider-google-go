@@ -46,6 +46,9 @@ type ComputeNetworkAttachmentTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type ComputeNetworkAttachmentTimeoutsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_ComputeNetworkAttachmentTimeoutsOutputReference) TerraformRes
 	return returns
 }
 
+func (j *jsiiProxy_ComputeNetworkAttachmentTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeNetworkAttachmentTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewComputeNetworkAttachmentTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeNetworkAttachmentTimeoutsOutputReference {
 	_init_.Initialize()
@@ -298,6 +322,17 @@ func (j *jsiiProxy_ComputeNetworkAttachmentTimeoutsOutputReference)SetTerraformR
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeNetworkAttachmentTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (c *jsiiProxy_ComputeNetworkAttachmentTimeoutsOutputReference) ResetDelete(
 	_jsii_.InvokeVoid(
 		c,
 		"resetDelete",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeNetworkAttachmentTimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUpdate",
 		nil, // no parameters
 	)
 }

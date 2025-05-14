@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "backupRegion", GoGetter: "BackupRegion"},
 			_jsii_.MemberProperty{JsiiProperty: "backupType", GoGetter: "BackupType"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "chainStorageBytes", GoGetter: "ChainStorageBytes"},
@@ -89,6 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vaultName", GoGetter: "VaultName"},
 			_jsii_.MemberProperty{JsiiProperty: "vaultNameInput", GoGetter: "VaultNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "volumeRegion", GoGetter: "VolumeRegion"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeUsageBytes", GoGetter: "VolumeUsageBytes"},
 		},
 		func() interface{} {
