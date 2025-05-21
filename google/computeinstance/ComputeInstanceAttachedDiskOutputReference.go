@@ -41,6 +41,9 @@ type ComputeInstanceAttachedDiskOutputReference interface {
 	DiskEncryptionServiceAccount() *string
 	SetDiskEncryptionServiceAccount(val *string)
 	DiskEncryptionServiceAccountInput() *string
+	ForceAttach() interface{}
+	SetForceAttach(val interface{})
+	ForceAttachInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -90,6 +93,7 @@ type ComputeInstanceAttachedDiskOutputReference interface {
 	ResetDiskEncryptionKeyRaw()
 	ResetDiskEncryptionKeyRsa()
 	ResetDiskEncryptionServiceAccount()
+	ResetForceAttach()
 	ResetKmsKeySelfLink()
 	ResetMode()
 	// Produce the Token's value at resolution time.
@@ -222,6 +226,26 @@ func (j *jsiiProxy_ComputeInstanceAttachedDiskOutputReference) DiskEncryptionSer
 	_jsii_.Get(
 		j,
 		"diskEncryptionServiceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceAttachedDiskOutputReference) ForceAttach() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceAttach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeInstanceAttachedDiskOutputReference) ForceAttachInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceAttachInput",
 		&returns,
 	)
 	return returns
@@ -417,6 +441,17 @@ func (j *jsiiProxy_ComputeInstanceAttachedDiskOutputReference)SetDiskEncryptionS
 	_jsii_.Set(
 		j,
 		"diskEncryptionServiceAccount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeInstanceAttachedDiskOutputReference)SetForceAttach(val interface{}) {
+	if err := j.validateSetForceAttachParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceAttach",
 		val,
 	)
 }
@@ -701,6 +736,14 @@ func (c *jsiiProxy_ComputeInstanceAttachedDiskOutputReference) ResetDiskEncrypti
 	_jsii_.InvokeVoid(
 		c,
 		"resetDiskEncryptionServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeInstanceAttachedDiskOutputReference) ResetForceAttach() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetForceAttach",
 		nil, // no parameters
 	)
 }

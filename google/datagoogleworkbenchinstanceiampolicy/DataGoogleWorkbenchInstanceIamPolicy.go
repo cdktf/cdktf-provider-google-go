@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/workbench_instance_iam_policy google_workbench_instance_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/data-sources/workbench_instance_iam_policy google_workbench_instance_iam_policy}.
 type DataGoogleWorkbenchInstanceIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataGoogleWorkbenchInstanceIamPolicy) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/workbench_instance_iam_policy google_workbench_instance_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/data-sources/workbench_instance_iam_policy google_workbench_instance_iam_policy} Data Source.
 func NewDataGoogleWorkbenchInstanceIamPolicy(scope constructs.Construct, id *string, config *DataGoogleWorkbenchInstanceIamPolicyConfig) DataGoogleWorkbenchInstanceIamPolicy {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewDataGoogleWorkbenchInstanceIamPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/workbench_instance_iam_policy google_workbench_instance_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/data-sources/workbench_instance_iam_policy google_workbench_instance_iam_policy} Data Source.
 func NewDataGoogleWorkbenchInstanceIamPolicy_Override(d DataGoogleWorkbenchInstanceIamPolicy, scope constructs.Construct, id *string, config *DataGoogleWorkbenchInstanceIamPolicyConfig) {
 	_init_.Initialize()
 

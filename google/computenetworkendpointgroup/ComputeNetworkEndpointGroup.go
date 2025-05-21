@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/compute_network_endpoint_group google_compute_network_endpoint_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/compute_network_endpoint_group google_compute_network_endpoint_group}.
 type ComputeNetworkEndpointGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,6 +45,7 @@ type ComputeNetworkEndpointGroup interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GeneratedId() *float64
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -280,6 +281,16 @@ func (j *jsiiProxy_ComputeNetworkEndpointGroup) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeNetworkEndpointGroup) GeneratedId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"generatedId",
 		&returns,
 	)
 	return returns
@@ -546,7 +557,7 @@ func (j *jsiiProxy_ComputeNetworkEndpointGroup) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/compute_network_endpoint_group google_compute_network_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/compute_network_endpoint_group google_compute_network_endpoint_group} Resource.
 func NewComputeNetworkEndpointGroup(scope constructs.Construct, id *string, config *ComputeNetworkEndpointGroupConfig) ComputeNetworkEndpointGroup {
 	_init_.Initialize()
 
@@ -564,7 +575,7 @@ func NewComputeNetworkEndpointGroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/compute_network_endpoint_group google_compute_network_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/compute_network_endpoint_group google_compute_network_endpoint_group} Resource.
 func NewComputeNetworkEndpointGroup_Override(c ComputeNetworkEndpointGroup, scope constructs.Construct, id *string, config *ComputeNetworkEndpointGroupConfig) {
 	_init_.Initialize()
 

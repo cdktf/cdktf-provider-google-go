@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/parameter_manager_parameter_version_render google_parameter_manager_parameter_version_render}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/data-sources/parameter_manager_parameter_version_render google_parameter_manager_parameter_version_render}.
 type DataGoogleParameterManagerParameterVersionRender interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameterVersionRender) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/parameter_manager_parameter_version_render google_parameter_manager_parameter_version_render} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/data-sources/parameter_manager_parameter_version_render google_parameter_manager_parameter_version_render} Data Source.
 func NewDataGoogleParameterManagerParameterVersionRender(scope constructs.Construct, id *string, config *DataGoogleParameterManagerParameterVersionRenderConfig) DataGoogleParameterManagerParameterVersionRender {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewDataGoogleParameterManagerParameterVersionRender(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/parameter_manager_parameter_version_render google_parameter_manager_parameter_version_render} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/data-sources/parameter_manager_parameter_version_render google_parameter_manager_parameter_version_render} Data Source.
 func NewDataGoogleParameterManagerParameterVersionRender_Override(d DataGoogleParameterManagerParameterVersionRender, scope constructs.Construct, id *string, config *DataGoogleParameterManagerParameterVersionRenderConfig) {
 	_init_.Initialize()
 

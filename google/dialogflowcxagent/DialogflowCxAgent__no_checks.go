@@ -79,6 +79,10 @@ func (d *jsiiProxy_DialogflowCxAgent) validatePutAdvancedSettingsParameters(valu
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxAgent) validatePutGenAppBuilderSettingsParameters(value *DialogflowCxAgentGenAppBuilderSettings) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxAgent) validatePutGitIntegrationSettingsParameters(value *DialogflowCxAgentGitIntegrationSettings) error {
 	return nil
 }

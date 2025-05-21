@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/compute_instance_template google_compute_instance_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/data-sources/compute_instance_template google_compute_instance_template}.
 type DataGoogleComputeInstanceTemplate interface {
 	cdktf.TerraformDataSource
 	AdvancedMachineFeatures() DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesList
@@ -72,6 +72,7 @@ type DataGoogleComputeInstanceTemplate interface {
 	NetworkPerformanceConfig() DataGoogleComputeInstanceTemplateNetworkPerformanceConfigList
 	// The tree node.
 	Node() constructs.Node
+	NumericId() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -514,6 +515,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) NumericId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"numericId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -715,7 +726,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/compute_instance_template google_compute_instance_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/data-sources/compute_instance_template google_compute_instance_template} Data Source.
 func NewDataGoogleComputeInstanceTemplate(scope constructs.Construct, id *string, config *DataGoogleComputeInstanceTemplateConfig) DataGoogleComputeInstanceTemplate {
 	_init_.Initialize()
 
@@ -733,7 +744,7 @@ func NewDataGoogleComputeInstanceTemplate(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/data-sources/compute_instance_template google_compute_instance_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/data-sources/compute_instance_template google_compute_instance_template} Data Source.
 func NewDataGoogleComputeInstanceTemplate_Override(d DataGoogleComputeInstanceTemplate, scope constructs.Construct, id *string, config *DataGoogleComputeInstanceTemplateConfig) {
 	_init_.Initialize()
 

@@ -75,6 +75,10 @@ func (j *jsiiProxy_ComputeInstanceAttachedDiskOutputReference) validateSetDiskEn
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceAttachedDiskOutputReference) validateSetForceAttachParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceAttachedDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/compute_backend_service google_compute_backend_service}.
 type ComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -66,6 +66,12 @@ type ComputeBackendService interface {
 	EnableCdn() interface{}
 	SetEnableCdn(val interface{})
 	EnableCdnInput() interface{}
+	ExternalManagedMigrationState() *string
+	SetExternalManagedMigrationState(val *string)
+	ExternalManagedMigrationStateInput() *string
+	ExternalManagedMigrationTestingPercentage() *float64
+	SetExternalManagedMigrationTestingPercentage(val *float64)
+	ExternalManagedMigrationTestingPercentageInput() *float64
 	Fingerprint() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -223,6 +229,8 @@ type ComputeBackendService interface {
 	ResetDescription()
 	ResetEdgeSecurityPolicy()
 	ResetEnableCdn()
+	ResetExternalManagedMigrationState()
+	ResetExternalManagedMigrationTestingPercentage()
 	ResetHealthChecks()
 	ResetIap()
 	ResetId()
@@ -579,6 +587,46 @@ func (j *jsiiProxy_ComputeBackendService) EnableCdnInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableCdnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) ExternalManagedMigrationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) ExternalManagedMigrationStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationStateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) ExternalManagedMigrationTestingPercentage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationTestingPercentage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeBackendService) ExternalManagedMigrationTestingPercentageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"externalManagedMigrationTestingPercentageInput",
 		&returns,
 	)
 	return returns
@@ -1145,7 +1193,7 @@ func (j *jsiiProxy_ComputeBackendService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
 func NewComputeBackendService(scope constructs.Construct, id *string, config *ComputeBackendServiceConfig) ComputeBackendService {
 	_init_.Initialize()
 
@@ -1163,7 +1211,7 @@ func NewComputeBackendService(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/compute_backend_service google_compute_backend_service} Resource.
 func NewComputeBackendService_Override(c ComputeBackendService, scope constructs.Construct, id *string, config *ComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1288,6 +1336,28 @@ func (j *jsiiProxy_ComputeBackendService)SetEnableCdn(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableCdn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeBackendService)SetExternalManagedMigrationState(val *string) {
+	if err := j.validateSetExternalManagedMigrationStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalManagedMigrationState",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeBackendService)SetExternalManagedMigrationTestingPercentage(val *float64) {
+	if err := j.validateSetExternalManagedMigrationTestingPercentageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalManagedMigrationTestingPercentage",
 		val,
 	)
 }
@@ -2069,6 +2139,22 @@ func (c *jsiiProxy_ComputeBackendService) ResetEnableCdn() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetEnableCdn",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendService) ResetExternalManagedMigrationState() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExternalManagedMigrationState",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeBackendService) ResetExternalManagedMigrationTestingPercentage() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExternalManagedMigrationTestingPercentage",
 		nil, // no parameters
 	)
 }

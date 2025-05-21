@@ -9,15 +9,15 @@ type HealthcarePipelineJobReconciliationPipelineJob struct {
 	//
 	// Example: gs://{bucket-id}/{path/to/matching/configs}
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/healthcare_pipeline_job#matching_uri_prefix HealthcarePipelineJob#matching_uri_prefix}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/healthcare_pipeline_job#matching_uri_prefix HealthcarePipelineJob#matching_uri_prefix}
 	MatchingUriPrefix *string `field:"required" json:"matchingUriPrefix" yaml:"matchingUriPrefix"`
 	// merge_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/healthcare_pipeline_job#merge_config HealthcarePipelineJob#merge_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/healthcare_pipeline_job#merge_config HealthcarePipelineJob#merge_config}
 	MergeConfig *HealthcarePipelineJobReconciliationPipelineJobMergeConfig `field:"required" json:"mergeConfig" yaml:"mergeConfig"`
 	// The harmonized FHIR store to write harmonized FHIR resources to, in the format of: project/{projectID}/locations/{locationID}/datasets/{datasetName}/fhirStores/{id}.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/healthcare_pipeline_job#fhir_store_destination HealthcarePipelineJob#fhir_store_destination}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/healthcare_pipeline_job#fhir_store_destination HealthcarePipelineJob#fhir_store_destination}
 	FhirStoreDestination *string `field:"optional" json:"fhirStoreDestination" yaml:"fhirStoreDestination"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/data_catalog_entry_group google_data_catalog_entry_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/data_catalog_entry_group google_data_catalog_entry_group}.
 type DataCatalogEntryGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -464,7 +464,7 @@ func (j *jsiiProxy_DataCatalogEntryGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/data_catalog_entry_group google_data_catalog_entry_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/data_catalog_entry_group google_data_catalog_entry_group} Resource.
 func NewDataCatalogEntryGroup(scope constructs.Construct, id *string, config *DataCatalogEntryGroupConfig) DataCatalogEntryGroup {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewDataCatalogEntryGroup(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/data_catalog_entry_group google_data_catalog_entry_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/data_catalog_entry_group google_data_catalog_entry_group} Resource.
 func NewDataCatalogEntryGroup_Override(d DataCatalogEntryGroup, scope constructs.Construct, id *string, config *DataCatalogEntryGroupConfig) {
 	_init_.Initialize()
 

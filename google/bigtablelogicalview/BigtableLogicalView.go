@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/bigtable_logical_view google_bigtable_logical_view}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/bigtable_logical_view google_bigtable_logical_view}.
 type BigtableLogicalView interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,9 @@ type BigtableLogicalView interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -123,6 +126,7 @@ type BigtableLogicalView interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *BigtableLogicalViewTimeouts)
+	ResetDeletionProtection()
 	ResetId()
 	ResetInstance()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -183,6 +187,26 @@ func (j *jsiiProxy_BigtableLogicalView) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableLogicalView) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigtableLogicalView) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -439,7 +463,7 @@ func (j *jsiiProxy_BigtableLogicalView) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/bigtable_logical_view google_bigtable_logical_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/bigtable_logical_view google_bigtable_logical_view} Resource.
 func NewBigtableLogicalView(scope constructs.Construct, id *string, config *BigtableLogicalViewConfig) BigtableLogicalView {
 	_init_.Initialize()
 
@@ -457,7 +481,7 @@ func NewBigtableLogicalView(scope constructs.Construct, id *string, config *Bigt
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.35.0/docs/resources/bigtable_logical_view google_bigtable_logical_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/bigtable_logical_view google_bigtable_logical_view} Resource.
 func NewBigtableLogicalView_Override(b BigtableLogicalView, scope constructs.Construct, id *string, config *BigtableLogicalViewConfig) {
 	_init_.Initialize()
 
@@ -486,6 +510,17 @@ func (j *jsiiProxy_BigtableLogicalView)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigtableLogicalView)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
 		val,
 	)
 }
@@ -952,6 +987,14 @@ func (b *jsiiProxy_BigtableLogicalView) PutTimeouts(value *BigtableLogicalViewTi
 		b,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BigtableLogicalView) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDeletionProtection",
+		nil, // no parameters
 	)
 }
 

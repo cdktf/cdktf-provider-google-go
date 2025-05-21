@@ -22,6 +22,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveLabels", GoGetter: "EffectiveLabels"},
+			_jsii_.MemberProperty{JsiiProperty: "externalManagedBackendBucketMigrationState", GoGetter: "ExternalManagedBackendBucketMigrationState"},
+			_jsii_.MemberProperty{JsiiProperty: "externalManagedBackendBucketMigrationTestingPercentage", GoGetter: "ExternalManagedBackendBucketMigrationTestingPercentage"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "forwardingRuleId", GoGetter: "ForwardingRuleId"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

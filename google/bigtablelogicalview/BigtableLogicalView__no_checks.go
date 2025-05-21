@@ -103,6 +103,10 @@ func (j *jsiiProxy_BigtableLogicalView) validateSetCountParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_BigtableLogicalView) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigtableLogicalView) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -115,6 +115,14 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetDescriptionParameters
 	return nil
 }
 
+func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetExternalManagedBackendBucketMigrationStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetExternalManagedBackendBucketMigrationTestingPercentageParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetIdParameters(val *string) error {
 	return nil
 }

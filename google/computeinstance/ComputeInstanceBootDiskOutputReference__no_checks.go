@@ -83,6 +83,10 @@ func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateSetDiskEncryp
 	return nil
 }
 
+func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateSetForceAttachParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeInstanceBootDiskOutputReference) validateSetGuestOsFeaturesParameters(val *[]*string) error {
 	return nil
 }

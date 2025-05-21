@@ -616,6 +616,22 @@ func (j *jsiiProxy_ComputeBackendService) validateSetEnableCdnParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendService) validateSetExternalManagedMigrationStateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ComputeBackendService) validateSetExternalManagedMigrationTestingPercentageParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendService) validateSetHealthChecksParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

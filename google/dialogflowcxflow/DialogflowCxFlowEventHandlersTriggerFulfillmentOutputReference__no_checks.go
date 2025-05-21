@@ -71,6 +71,10 @@ func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) validateSetEnableGenerativeFallbackParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference) validateSetInternalValueParameters(val *DialogflowCxFlowEventHandlersTriggerFulfillment) error {
 	return nil
 }

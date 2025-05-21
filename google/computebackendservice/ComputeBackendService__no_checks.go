@@ -183,6 +183,14 @@ func (j *jsiiProxy_ComputeBackendService) validateSetEnableCdnParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendService) validateSetExternalManagedMigrationStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeBackendService) validateSetExternalManagedMigrationTestingPercentageParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendService) validateSetHealthChecksParameters(val *[]*string) error {
 	return nil
 }
