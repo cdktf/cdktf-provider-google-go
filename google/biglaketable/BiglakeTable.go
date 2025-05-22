@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/biglake_table google_biglake_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/biglake_table google_biglake_table}.
 type BiglakeTable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -484,7 +484,7 @@ func (j *jsiiProxy_BiglakeTable) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/biglake_table google_biglake_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/biglake_table google_biglake_table} Resource.
 func NewBiglakeTable(scope constructs.Construct, id *string, config *BiglakeTableConfig) BiglakeTable {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewBiglakeTable(scope constructs.Construct, id *string, config *BiglakeTabl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.0/docs/resources/biglake_table google_biglake_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/biglake_table google_biglake_table} Resource.
 func NewBiglakeTable_Override(b BiglakeTable, scope constructs.Construct, id *string, config *BiglakeTableConfig) {
 	_init_.Initialize()
 
