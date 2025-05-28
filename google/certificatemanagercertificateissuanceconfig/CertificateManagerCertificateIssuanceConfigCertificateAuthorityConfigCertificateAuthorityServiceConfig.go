@@ -10,7 +10,7 @@ type CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigCertif
 	// The CA pool string has a relative resource path following the form
 	// "projects/{project}/locations/{location}/caPools/{caPool}".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/certificate_manager_certificate_issuance_config#ca_pool CertificateManagerCertificateIssuanceConfig#ca_pool}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/certificate_manager_certificate_issuance_config#ca_pool CertificateManagerCertificateIssuanceConfig#ca_pool}
 	CaPool *string `field:"required" json:"caPool" yaml:"caPool"`
 }
 

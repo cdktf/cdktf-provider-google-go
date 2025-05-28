@@ -24,26 +24,26 @@ type ComputeResourcePolicyAttachmentConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the instance in which the resource policies are attached to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/compute_resource_policy_attachment#instance ComputeResourcePolicyAttachment#instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_resource_policy_attachment#instance ComputeResourcePolicyAttachment#instance}
 	Instance *string `field:"required" json:"instance" yaml:"instance"`
 	// The resource policy to be attached to the instance for scheduling start/stop operations. Do not specify the self link.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/compute_resource_policy_attachment#name ComputeResourcePolicyAttachment#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_resource_policy_attachment#name ComputeResourcePolicyAttachment#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/compute_resource_policy_attachment#id ComputeResourcePolicyAttachment#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_resource_policy_attachment#id ComputeResourcePolicyAttachment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/compute_resource_policy_attachment#project ComputeResourcePolicyAttachment#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_resource_policy_attachment#project ComputeResourcePolicyAttachment#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/compute_resource_policy_attachment#timeouts ComputeResourcePolicyAttachment#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_resource_policy_attachment#timeouts ComputeResourcePolicyAttachment#timeouts}
 	Timeouts *ComputeResourcePolicyAttachmentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// A reference to the zone where the instance resides.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/compute_resource_policy_attachment#zone ComputeResourcePolicyAttachment#zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_resource_policy_attachment#zone ComputeResourcePolicyAttachment#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
 

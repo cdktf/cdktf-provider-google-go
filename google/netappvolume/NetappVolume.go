@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/netapp_volume google_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/netapp_volume google_netapp_volume}.
 type NetappVolume interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
@@ -58,6 +58,8 @@ type NetappVolume interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	HasReplication() cdktf.IResolvable
+	HybridReplicationParameters() NetappVolumeHybridReplicationParametersOutputReference
+	HybridReplicationParametersInput() *NetappVolumeHybridReplicationParameters
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -193,6 +195,7 @@ type NetappVolume interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutBackupConfig(value *NetappVolumeBackupConfig)
 	PutExportPolicy(value *NetappVolumeExportPolicy)
+	PutHybridReplicationParameters(value *NetappVolumeHybridReplicationParameters)
 	PutRestoreParameters(value *NetappVolumeRestoreParameters)
 	PutSnapshotPolicy(value *NetappVolumeSnapshotPolicy)
 	PutTieringPolicy(value *NetappVolumeTieringPolicy)
@@ -201,6 +204,7 @@ type NetappVolume interface {
 	ResetDeletionPolicy()
 	ResetDescription()
 	ResetExportPolicy()
+	ResetHybridReplicationParameters()
 	ResetId()
 	ResetKerberosEnabled()
 	ResetLabels()
@@ -472,6 +476,26 @@ func (j *jsiiProxy_NetappVolume) HasReplication() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"hasReplication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) HybridReplicationParameters() NetappVolumeHybridReplicationParametersOutputReference {
+	var returns NetappVolumeHybridReplicationParametersOutputReference
+	_jsii_.Get(
+		j,
+		"hybridReplicationParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetappVolume) HybridReplicationParametersInput() *NetappVolumeHybridReplicationParameters {
+	var returns *NetappVolumeHybridReplicationParameters
+	_jsii_.Get(
+		j,
+		"hybridReplicationParametersInput",
 		&returns,
 	)
 	return returns
@@ -1078,7 +1102,7 @@ func (j *jsiiProxy_NetappVolume) Zone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/netapp_volume google_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/netapp_volume google_netapp_volume} Resource.
 func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolumeConfig) NetappVolume {
 	_init_.Initialize()
 
@@ -1096,7 +1120,7 @@ func NewNetappVolume(scope constructs.Construct, id *string, config *NetappVolum
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/netapp_volume google_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/netapp_volume google_netapp_volume} Resource.
 func NewNetappVolume_Override(n NetappVolume, scope constructs.Construct, id *string, config *NetappVolumeConfig) {
 	_init_.Initialize()
 
@@ -1759,6 +1783,17 @@ func (n *jsiiProxy_NetappVolume) PutExportPolicy(value *NetappVolumeExportPolicy
 	)
 }
 
+func (n *jsiiProxy_NetappVolume) PutHybridReplicationParameters(value *NetappVolumeHybridReplicationParameters) {
+	if err := n.validatePutHybridReplicationParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putHybridReplicationParameters",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetappVolume) PutRestoreParameters(value *NetappVolumeRestoreParameters) {
 	if err := n.validatePutRestoreParametersParameters(value); err != nil {
 		panic(err)
@@ -1831,6 +1866,14 @@ func (n *jsiiProxy_NetappVolume) ResetExportPolicy() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetExportPolicy",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetappVolume) ResetHybridReplicationParameters() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetHybridReplicationParameters",
 		nil, // no parameters
 	)
 }

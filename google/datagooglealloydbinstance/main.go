@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google.dataGoogleAlloydbInstance.DataGoogleAlloydbInstance",
 		reflect.TypeOf((*DataGoogleAlloydbInstance)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "activationPolicy", GoGetter: "ActivationPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityType", GoGetter: "AvailabilityType"},

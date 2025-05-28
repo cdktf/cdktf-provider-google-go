@@ -24,25 +24,25 @@ type NetappVolumeQuotaRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The maximum allowed capacity in MiB.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/netapp_volume_quota_rule#disk_limit_mib NetappVolumeQuotaRule#disk_limit_mib}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/netapp_volume_quota_rule#disk_limit_mib NetappVolumeQuotaRule#disk_limit_mib}
 	DiskLimitMib *float64 `field:"required" json:"diskLimitMib" yaml:"diskLimitMib"`
 	// The resource name of the quotaRule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/netapp_volume_quota_rule#name NetappVolumeQuotaRule#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/netapp_volume_quota_rule#name NetappVolumeQuotaRule#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Types of Quota Rule. Possible values: ["INDIVIDUAL_USER_QUOTA", "INDIVIDUAL_GROUP_QUOTA", "DEFAULT_USER_QUOTA", "DEFAULT_GROUP_QUOTA"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/netapp_volume_quota_rule#type NetappVolumeQuotaRule#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/netapp_volume_quota_rule#type NetappVolumeQuotaRule#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 	// Name of the volume to create the quotaRule in.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/netapp_volume_quota_rule#volume_name NetappVolumeQuotaRule#volume_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/netapp_volume_quota_rule#volume_name NetappVolumeQuotaRule#volume_name}
 	VolumeName *string `field:"required" json:"volumeName" yaml:"volumeName"`
 	// Description for the quota rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/netapp_volume_quota_rule#description NetappVolumeQuotaRule#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/netapp_volume_quota_rule#description NetappVolumeQuotaRule#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/netapp_volume_quota_rule#id NetappVolumeQuotaRule#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/netapp_volume_quota_rule#id NetappVolumeQuotaRule#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,13 +52,13 @@ type NetappVolumeQuotaRuleConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/netapp_volume_quota_rule#labels NetappVolumeQuotaRule#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/netapp_volume_quota_rule#labels NetappVolumeQuotaRule#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// Loction of the quotaRule. QuotaRules are child resources of volumes and live in the same location.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/netapp_volume_quota_rule#location NetappVolumeQuotaRule#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/netapp_volume_quota_rule#location NetappVolumeQuotaRule#location}
 	Location *string `field:"optional" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/netapp_volume_quota_rule#project NetappVolumeQuotaRule#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/netapp_volume_quota_rule#project NetappVolumeQuotaRule#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The quota rule applies to the specified user or group.
 	//
@@ -69,11 +69,11 @@ type NetappVolumeQuotaRuleConfig struct {
 	//   - Windows SID for individual user quota
 	// Leave empty for default quotas
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/netapp_volume_quota_rule#target NetappVolumeQuotaRule#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/netapp_volume_quota_rule#target NetappVolumeQuotaRule#target}
 	Target *string `field:"optional" json:"target" yaml:"target"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/netapp_volume_quota_rule#timeouts NetappVolumeQuotaRule#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/netapp_volume_quota_rule#timeouts NetappVolumeQuotaRule#timeouts}
 	Timeouts *NetappVolumeQuotaRuleTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

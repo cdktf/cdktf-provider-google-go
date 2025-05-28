@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/storage_bucket google_storage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/storage_bucket google_storage_bucket}.
 type StorageBucket interface {
 	cdktf.TerraformResource
 	Autoclass() StorageBucketAutoclassOutputReference
@@ -62,6 +62,8 @@ type StorageBucket interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpFilter() StorageBucketIpFilterOutputReference
+	IpFilterInput() *StorageBucketIpFilter
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -179,6 +181,7 @@ type StorageBucket interface {
 	PutCustomPlacementConfig(value *StorageBucketCustomPlacementConfig)
 	PutEncryption(value *StorageBucketEncryption)
 	PutHierarchicalNamespace(value *StorageBucketHierarchicalNamespace)
+	PutIpFilter(value *StorageBucketIpFilter)
 	PutLifecycleRule(value interface{})
 	PutLogging(value *StorageBucketLogging)
 	PutRetentionPolicy(value *StorageBucketRetentionPolicy)
@@ -195,6 +198,7 @@ type StorageBucket interface {
 	ResetForceDestroy()
 	ResetHierarchicalNamespace()
 	ResetId()
+	ResetIpFilter()
 	ResetLabels()
 	ResetLifecycleRule()
 	ResetLogging()
@@ -495,6 +499,26 @@ func (j *jsiiProxy_StorageBucket) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) IpFilter() StorageBucketIpFilterOutputReference {
+	var returns StorageBucketIpFilterOutputReference
+	_jsii_.Get(
+		j,
+		"ipFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucket) IpFilterInput() *StorageBucketIpFilter {
+	var returns *StorageBucketIpFilter
+	_jsii_.Get(
+		j,
+		"ipFilterInput",
 		&returns,
 	)
 	return returns
@@ -961,7 +985,7 @@ func (j *jsiiProxy_StorageBucket) WebsiteInput() *StorageBucketWebsite {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/storage_bucket google_storage_bucket} Resource.
 func NewStorageBucket(scope constructs.Construct, id *string, config *StorageBucketConfig) StorageBucket {
 	_init_.Initialize()
 
@@ -979,7 +1003,7 @@ func NewStorageBucket(scope constructs.Construct, id *string, config *StorageBuc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/storage_bucket google_storage_bucket} Resource.
 func NewStorageBucket_Override(s StorageBucket, scope constructs.Construct, id *string, config *StorageBucketConfig) {
 	_init_.Initialize()
 
@@ -1609,6 +1633,17 @@ func (s *jsiiProxy_StorageBucket) PutHierarchicalNamespace(value *StorageBucketH
 	)
 }
 
+func (s *jsiiProxy_StorageBucket) PutIpFilter(value *StorageBucketIpFilter) {
+	if err := s.validatePutIpFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putIpFilter",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StorageBucket) PutLifecycleRule(value interface{}) {
 	if err := s.validatePutLifecycleRuleParameters(value); err != nil {
 		panic(err)
@@ -1754,6 +1789,14 @@ func (s *jsiiProxy_StorageBucket) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucket) ResetIpFilter() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIpFilter",
 		nil, // no parameters
 	)
 }

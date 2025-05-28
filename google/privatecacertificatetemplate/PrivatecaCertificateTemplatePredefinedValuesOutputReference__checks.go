@@ -146,6 +146,17 @@ func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) 
 	return nil
 }
 
+func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) validatePutNameConstraintsParameters(value *PrivatecaCertificateTemplatePredefinedValuesNameConstraints) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesOutputReference) validatePutPolicyIdsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

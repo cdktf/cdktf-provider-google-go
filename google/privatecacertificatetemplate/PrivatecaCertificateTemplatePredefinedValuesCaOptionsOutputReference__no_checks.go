@@ -71,11 +71,19 @@ func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetNullCaParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference) validateSetZeroMaxIssuerPathLengthParameters(val interface{}) error {
 	return nil
 }
 

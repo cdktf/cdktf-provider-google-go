@@ -21,7 +21,7 @@ type FirestoreDatabaseCmekConfig struct {
 	// How to retrieve this resource ID is listed at
 	// https://cloud.google.com/kms/docs/getting-resource-ids#getting_the_id_for_a_key_and_version.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/firestore_database#kms_key_name FirestoreDatabase#kms_key_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/firestore_database#kms_key_name FirestoreDatabase#kms_key_name}
 	KmsKeyName *string `field:"required" json:"kmsKeyName" yaml:"kmsKeyName"`
 }
 

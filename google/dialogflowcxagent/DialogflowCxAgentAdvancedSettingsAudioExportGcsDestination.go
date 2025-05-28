@@ -10,7 +10,7 @@ type DialogflowCxAgentAdvancedSettingsAudioExportGcsDestination struct {
 	// Whether a full object name, or just a prefix, its usage depends on the Dialogflow operation.
 	// Format: gs://bucket/object-name-or-prefix
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/dialogflow_cx_agent#uri DialogflowCxAgent#uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dialogflow_cx_agent#uri DialogflowCxAgent#uri}
 	Uri *string `field:"optional" json:"uri" yaml:"uri"`
 }
 

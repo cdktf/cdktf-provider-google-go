@@ -5,11 +5,11 @@ package projectaccessapprovalsettings
 
 
 type ProjectAccessApprovalSettingsTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/project_access_approval_settings#create ProjectAccessApprovalSettings#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/project_access_approval_settings#create ProjectAccessApprovalSettings#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/project_access_approval_settings#delete ProjectAccessApprovalSettings#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/project_access_approval_settings#delete ProjectAccessApprovalSettings#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/project_access_approval_settings#update ProjectAccessApprovalSettings#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/project_access_approval_settings#update ProjectAccessApprovalSettings#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

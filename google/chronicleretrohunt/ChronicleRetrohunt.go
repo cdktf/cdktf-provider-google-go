@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/chronicle_retrohunt google_chronicle_retrohunt}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/chronicle_retrohunt google_chronicle_retrohunt}.
 type ChronicleRetrohunt interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -518,7 +518,7 @@ func (j *jsiiProxy_ChronicleRetrohunt) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/chronicle_retrohunt google_chronicle_retrohunt} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/chronicle_retrohunt google_chronicle_retrohunt} Resource.
 func NewChronicleRetrohunt(scope constructs.Construct, id *string, config *ChronicleRetrohuntConfig) ChronicleRetrohunt {
 	_init_.Initialize()
 
@@ -536,7 +536,7 @@ func NewChronicleRetrohunt(scope constructs.Construct, id *string, config *Chron
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/chronicle_retrohunt google_chronicle_retrohunt} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/chronicle_retrohunt google_chronicle_retrohunt} Resource.
 func NewChronicleRetrohunt_Override(c ChronicleRetrohunt, scope constructs.Construct, id *string, config *ChronicleRetrohuntConfig) {
 	_init_.Initialize()
 

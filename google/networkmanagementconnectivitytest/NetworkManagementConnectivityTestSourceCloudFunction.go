@@ -7,7 +7,7 @@ package networkmanagementconnectivitytest
 type NetworkManagementConnectivityTestSourceCloudFunction struct {
 	// A Cloud Function name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.36.1/docs/resources/network_management_connectivity_test#uri NetworkManagementConnectivityTest#uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_management_connectivity_test#uri NetworkManagementConnectivityTest#uri}
 	Uri *string `field:"optional" json:"uri" yaml:"uri"`
 }
 

@@ -107,6 +107,10 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) validateSetCountPa
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) validateSetCreateWithoutValidationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

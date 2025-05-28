@@ -83,6 +83,10 @@ func (m *jsiiProxy_MemorystoreInstance) validatePutCrossInstanceReplicationConfi
 	return nil
 }
 
+func (m *jsiiProxy_MemorystoreInstance) validatePutDesiredAutoCreatedEndpointsParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorystoreInstance) validatePutDesiredPscAutoConnectionsParameters(value interface{}) error {
 	return nil
 }

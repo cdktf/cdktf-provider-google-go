@@ -131,6 +131,10 @@ func (j *jsiiProxy_SpannerInstance) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_SpannerInstance) validateSetInstanceTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpannerInstance) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }
