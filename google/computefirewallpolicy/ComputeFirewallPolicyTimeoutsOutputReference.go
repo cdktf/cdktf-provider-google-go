@@ -5,9 +5,9 @@ package computefirewallpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v15/computefirewallpolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v16/computefirewallpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
