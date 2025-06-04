@@ -5,14 +5,14 @@ package workbenchinstanceiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/workbenchinstanceiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/workbenchinstanceiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/workbench_instance_iam_policy google_workbench_instance_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/workbench_instance_iam_policy google_workbench_instance_iam_policy}.
 type WorkbenchInstanceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_WorkbenchInstanceIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/workbench_instance_iam_policy google_workbench_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/workbench_instance_iam_policy google_workbench_instance_iam_policy} Resource.
 func NewWorkbenchInstanceIamPolicy(scope constructs.Construct, id *string, config *WorkbenchInstanceIamPolicyConfig) WorkbenchInstanceIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewWorkbenchInstanceIamPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/workbench_instance_iam_policy google_workbench_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/workbench_instance_iam_policy google_workbench_instance_iam_policy} Resource.
 func NewWorkbenchInstanceIamPolicy_Override(w WorkbenchInstanceIamPolicy, scope constructs.Construct, id *string, config *WorkbenchInstanceIamPolicyConfig) {
 	_init_.Initialize()
 

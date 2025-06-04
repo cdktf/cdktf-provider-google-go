@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-google-go/google/v14
+module github.com/cdktf/cdktf-provider-google-go/google/v15
 
 go 1.18
 

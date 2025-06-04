@@ -5,14 +5,14 @@ package firebaseappcheckserviceconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/firebaseappcheckserviceconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/firebaseappcheckserviceconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config}.
 type FirebaseAppCheckServiceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_FirebaseAppCheckServiceConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config} Resource.
 func NewFirebaseAppCheckServiceConfig(scope constructs.Construct, id *string, config *FirebaseAppCheckServiceConfigConfig) FirebaseAppCheckServiceConfig {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewFirebaseAppCheckServiceConfig(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config} Resource.
 func NewFirebaseAppCheckServiceConfig_Override(f FirebaseAppCheckServiceConfig, scope constructs.Construct, id *string, config *FirebaseAppCheckServiceConfigConfig) {
 	_init_.Initialize()
 

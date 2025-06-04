@@ -5,14 +5,14 @@ package storagefolder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/storagefolder/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/storagefolder/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/storage_folder google_storage_folder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/storage_folder google_storage_folder}.
 type StorageFolder interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -448,7 +448,7 @@ func (j *jsiiProxy_StorageFolder) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/storage_folder google_storage_folder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/storage_folder google_storage_folder} Resource.
 func NewStorageFolder(scope constructs.Construct, id *string, config *StorageFolderConfig) StorageFolder {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewStorageFolder(scope constructs.Construct, id *string, config *StorageFol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/storage_folder google_storage_folder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/storage_folder google_storage_folder} Resource.
 func NewStorageFolder_Override(s StorageFolder, scope constructs.Construct, id *string, config *StorageFolderConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package chronicledataaccessscope
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/chronicledataaccessscope/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/chronicledataaccessscope/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/chronicle_data_access_scope google_chronicle_data_access_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/chronicle_data_access_scope google_chronicle_data_access_scope}.
 type ChronicleDataAccessScope interface {
 	cdktf.TerraformResource
 	AllowAll() interface{}
@@ -589,7 +589,7 @@ func (j *jsiiProxy_ChronicleDataAccessScope) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/chronicle_data_access_scope google_chronicle_data_access_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/chronicle_data_access_scope google_chronicle_data_access_scope} Resource.
 func NewChronicleDataAccessScope(scope constructs.Construct, id *string, config *ChronicleDataAccessScopeConfig) ChronicleDataAccessScope {
 	_init_.Initialize()
 
@@ -607,7 +607,7 @@ func NewChronicleDataAccessScope(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/chronicle_data_access_scope google_chronicle_data_access_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/chronicle_data_access_scope google_chronicle_data_access_scope} Resource.
 func NewChronicleDataAccessScope_Override(c ChronicleDataAccessScope, scope constructs.Construct, id *string, config *ChronicleDataAccessScopeConfig) {
 	_init_.Initialize()
 

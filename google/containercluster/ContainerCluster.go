@@ -5,14 +5,14 @@ package containercluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/containercluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/containercluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/container_cluster google_container_cluster}.
 type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
@@ -193,6 +193,8 @@ type ContainerCluster interface {
 	NotificationConfig() ContainerClusterNotificationConfigOutputReference
 	NotificationConfigInput() *ContainerClusterNotificationConfig
 	Operation() *string
+	PodAutoscaling() ContainerClusterPodAutoscalingOutputReference
+	PodAutoscalingInput() *ContainerClusterPodAutoscaling
 	PrivateClusterConfig() ContainerClusterPrivateClusterConfigOutputReference
 	PrivateClusterConfigInput() *ContainerClusterPrivateClusterConfig
 	PrivateIpv6GoogleAccess() *string
@@ -319,6 +321,7 @@ type ContainerCluster interface {
 	PutNodePoolAutoConfig(value *ContainerClusterNodePoolAutoConfig)
 	PutNodePoolDefaults(value *ContainerClusterNodePoolDefaults)
 	PutNotificationConfig(value *ContainerClusterNotificationConfig)
+	PutPodAutoscaling(value *ContainerClusterPodAutoscaling)
 	PutPrivateClusterConfig(value *ContainerClusterPrivateClusterConfig)
 	PutReleaseChannel(value *ContainerClusterReleaseChannel)
 	PutResourceUsageExportConfig(value *ContainerClusterResourceUsageExportConfig)
@@ -388,6 +391,7 @@ type ContainerCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPodAutoscaling()
 	ResetPrivateClusterConfig()
 	ResetPrivateIpv6GoogleAccess()
 	ResetProject()
@@ -1711,6 +1715,26 @@ func (j *jsiiProxy_ContainerCluster) Operation() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerCluster) PodAutoscaling() ContainerClusterPodAutoscalingOutputReference {
+	var returns ContainerClusterPodAutoscalingOutputReference
+	_jsii_.Get(
+		j,
+		"podAutoscaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) PodAutoscalingInput() *ContainerClusterPodAutoscaling {
+	var returns *ContainerClusterPodAutoscaling
+	_jsii_.Get(
+		j,
+		"podAutoscalingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerCluster) PrivateClusterConfig() ContainerClusterPrivateClusterConfigOutputReference {
 	var returns ContainerClusterPrivateClusterConfigOutputReference
 	_jsii_.Get(
@@ -2112,7 +2136,7 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
 
@@ -2130,7 +2154,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct, id *string, config *ContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -3244,6 +3268,17 @@ func (c *jsiiProxy_ContainerCluster) PutNotificationConfig(value *ContainerClust
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutPodAutoscaling(value *ContainerClusterPodAutoscaling) {
+	if err := c.validatePutPodAutoscalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPodAutoscaling",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutPrivateClusterConfig(value *ContainerClusterPrivateClusterConfig) {
 	if err := c.validatePutPrivateClusterConfigParameters(value); err != nil {
 		panic(err)
@@ -3806,6 +3841,14 @@ func (c *jsiiProxy_ContainerCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetPodAutoscaling() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPodAutoscaling",
 		nil, // no parameters
 	)
 }

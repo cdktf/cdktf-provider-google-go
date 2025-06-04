@@ -5,14 +5,14 @@ package vmwareenginenetworkpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/vmwareenginenetworkpolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/vmwareenginenetworkpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/vmwareengine_network_policy google_vmwareengine_network_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/vmwareengine_network_policy google_vmwareengine_network_policy}.
 type VmwareengineNetworkPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -566,7 +566,7 @@ func (j *jsiiProxy_VmwareengineNetworkPolicy) VmwareEngineNetworkInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/vmwareengine_network_policy google_vmwareengine_network_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/vmwareengine_network_policy google_vmwareengine_network_policy} Resource.
 func NewVmwareengineNetworkPolicy(scope constructs.Construct, id *string, config *VmwareengineNetworkPolicyConfig) VmwareengineNetworkPolicy {
 	_init_.Initialize()
 
@@ -584,7 +584,7 @@ func NewVmwareengineNetworkPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/vmwareengine_network_policy google_vmwareengine_network_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/vmwareengine_network_policy google_vmwareengine_network_policy} Resource.
 func NewVmwareengineNetworkPolicy_Override(v VmwareengineNetworkPolicy, scope constructs.Construct, id *string, config *VmwareengineNetworkPolicyConfig) {
 	_init_.Initialize()
 

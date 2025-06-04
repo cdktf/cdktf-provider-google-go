@@ -5,14 +5,14 @@ package sccv2foldermuteconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/sccv2foldermuteconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/sccv2foldermuteconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/scc_v2_folder_mute_config google_scc_v2_folder_mute_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/scc_v2_folder_mute_config google_scc_v2_folder_mute_config}.
 type SccV2FolderMuteConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -518,7 +518,7 @@ func (j *jsiiProxy_SccV2FolderMuteConfig) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/scc_v2_folder_mute_config google_scc_v2_folder_mute_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/scc_v2_folder_mute_config google_scc_v2_folder_mute_config} Resource.
 func NewSccV2FolderMuteConfig(scope constructs.Construct, id *string, config *SccV2FolderMuteConfigConfig) SccV2FolderMuteConfig {
 	_init_.Initialize()
 
@@ -536,7 +536,7 @@ func NewSccV2FolderMuteConfig(scope constructs.Construct, id *string, config *Sc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/scc_v2_folder_mute_config google_scc_v2_folder_mute_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/scc_v2_folder_mute_config google_scc_v2_folder_mute_config} Resource.
 func NewSccV2FolderMuteConfig_Override(s SccV2FolderMuteConfig, scope constructs.Construct, id *string, config *SccV2FolderMuteConfigConfig) {
 	_init_.Initialize()
 

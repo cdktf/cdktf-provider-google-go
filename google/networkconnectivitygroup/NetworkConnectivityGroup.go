@@ -5,14 +5,14 @@ package networkconnectivitygroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/networkconnectivitygroup/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/networkconnectivitygroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_connectivity_group google_network_connectivity_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_connectivity_group google_network_connectivity_group}.
 type NetworkConnectivityGroup interface {
 	cdktf.TerraformResource
 	AutoAccept() NetworkConnectivityGroupAutoAcceptOutputReference
@@ -553,7 +553,7 @@ func (j *jsiiProxy_NetworkConnectivityGroup) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_connectivity_group google_network_connectivity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_connectivity_group google_network_connectivity_group} Resource.
 func NewNetworkConnectivityGroup(scope constructs.Construct, id *string, config *NetworkConnectivityGroupConfig) NetworkConnectivityGroup {
 	_init_.Initialize()
 
@@ -571,7 +571,7 @@ func NewNetworkConnectivityGroup(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_connectivity_group google_network_connectivity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_connectivity_group google_network_connectivity_group} Resource.
 func NewNetworkConnectivityGroup_Override(n NetworkConnectivityGroup, scope constructs.Construct, id *string, config *NetworkConnectivityGroupConfig) {
 	_init_.Initialize()
 

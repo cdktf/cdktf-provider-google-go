@@ -5,9 +5,9 @@ package filestoreinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/filestoreinstance/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/filestoreinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,6 +33,7 @@ type FilestoreInstanceEffectiveReplicationOutputReference interface {
 	InternalValue() *FilestoreInstanceEffectiveReplication
 	SetInternalValue(val *FilestoreInstanceEffectiveReplication)
 	Replicas() FilestoreInstanceEffectiveReplicationReplicasList
+	Role() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -135,6 +136,16 @@ func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) Replica
 	_jsii_.Get(
 		j,
 		"replicas",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FilestoreInstanceEffectiveReplicationOutputReference) Role() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"role",
 		&returns,
 	)
 	return returns

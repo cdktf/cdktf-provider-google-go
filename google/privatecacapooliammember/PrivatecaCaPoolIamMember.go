@@ -5,14 +5,14 @@ package privatecacapooliammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/privatecacapooliammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/privatecacapooliammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/privateca_ca_pool_iam_member google_privateca_ca_pool_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/privateca_ca_pool_iam_member google_privateca_ca_pool_iam_member}.
 type PrivatecaCaPoolIamMember interface {
 	cdktf.TerraformResource
 	CaPool() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/privateca_ca_pool_iam_member google_privateca_ca_pool_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/privateca_ca_pool_iam_member google_privateca_ca_pool_iam_member} Resource.
 func NewPrivatecaCaPoolIamMember(scope constructs.Construct, id *string, config *PrivatecaCaPoolIamMemberConfig) PrivatecaCaPoolIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewPrivatecaCaPoolIamMember(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/privateca_ca_pool_iam_member google_privateca_ca_pool_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/privateca_ca_pool_iam_member google_privateca_ca_pool_iam_member} Resource.
 func NewPrivatecaCaPoolIamMember_Override(p PrivatecaCaPoolIamMember, scope constructs.Construct, id *string, config *PrivatecaCaPoolIamMemberConfig) {
 	_init_.Initialize()
 

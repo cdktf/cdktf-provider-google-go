@@ -5,14 +5,14 @@ package datagooglebigquerytables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglebigquerytables/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/datagooglebigquerytables/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/bigquery_tables google_bigquery_tables}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/bigquery_tables google_bigquery_tables}.
 type DataGoogleBigqueryTables interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataGoogleBigqueryTables) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/bigquery_tables google_bigquery_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/bigquery_tables google_bigquery_tables} Data Source.
 func NewDataGoogleBigqueryTables(scope constructs.Construct, id *string, config *DataGoogleBigqueryTablesConfig) DataGoogleBigqueryTables {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataGoogleBigqueryTables(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/bigquery_tables google_bigquery_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/bigquery_tables google_bigquery_tables} Data Source.
 func NewDataGoogleBigqueryTables_Override(d DataGoogleBigqueryTables, scope constructs.Construct, id *string, config *DataGoogleBigqueryTablesConfig) {
 	_init_.Initialize()
 

@@ -9,11 +9,11 @@ type VmwareenginePrivateCloudManagementClusterStretchedClusterConfig struct {
 	//
 	// Specify the zone in the following format: projects/{project}/locations/{location}.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/vmwareengine_private_cloud#preferred_location VmwareenginePrivateCloud#preferred_location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/vmwareengine_private_cloud#preferred_location VmwareenginePrivateCloud#preferred_location}
 	PreferredLocation *string `field:"optional" json:"preferredLocation" yaml:"preferredLocation"`
 	// Additional zone for a higher level of availability and load balancing. Specify the zone in the following format: projects/{project}/locations/{location}.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/vmwareengine_private_cloud#secondary_location VmwareenginePrivateCloud#secondary_location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/vmwareengine_private_cloud#secondary_location VmwareenginePrivateCloud#secondary_location}
 	SecondaryLocation *string `field:"optional" json:"secondaryLocation" yaml:"secondaryLocation"`
 }
 

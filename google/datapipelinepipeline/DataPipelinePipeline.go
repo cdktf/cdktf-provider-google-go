@@ -5,14 +5,14 @@ package datapipelinepipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/datapipelinepipeline/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/datapipelinepipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/data_pipeline_pipeline google_data_pipeline_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/data_pipeline_pipeline google_data_pipeline_pipeline}.
 type DataPipelinePipeline interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -604,7 +604,7 @@ func (j *jsiiProxy_DataPipelinePipeline) WorkloadInput() *DataPipelinePipelineWo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/data_pipeline_pipeline google_data_pipeline_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/data_pipeline_pipeline google_data_pipeline_pipeline} Resource.
 func NewDataPipelinePipeline(scope constructs.Construct, id *string, config *DataPipelinePipelineConfig) DataPipelinePipeline {
 	_init_.Initialize()
 
@@ -622,7 +622,7 @@ func NewDataPipelinePipeline(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/data_pipeline_pipeline google_data_pipeline_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/data_pipeline_pipeline google_data_pipeline_pipeline} Resource.
 func NewDataPipelinePipeline_Override(d DataPipelinePipeline, scope constructs.Construct, id *string, config *DataPipelinePipelineConfig) {
 	_init_.Initialize()
 

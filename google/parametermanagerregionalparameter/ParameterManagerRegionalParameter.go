@@ -5,14 +5,14 @@ package parametermanagerregionalparameter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/parametermanagerregionalparameter/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/parametermanagerregionalparameter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter}.
 type ParameterManagerRegionalParameter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -542,7 +542,7 @@ func (j *jsiiProxy_ParameterManagerRegionalParameter) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter} Resource.
 func NewParameterManagerRegionalParameter(scope constructs.Construct, id *string, config *ParameterManagerRegionalParameterConfig) ParameterManagerRegionalParameter {
 	_init_.Initialize()
 
@@ -560,7 +560,7 @@ func NewParameterManagerRegionalParameter(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter} Resource.
 func NewParameterManagerRegionalParameter_Override(p ParameterManagerRegionalParameter, scope constructs.Construct, id *string, config *ParameterManagerRegionalParameterConfig) {
 	_init_.Initialize()
 

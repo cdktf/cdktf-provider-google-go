@@ -18,6 +18,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "backupRegion", GoGetter: "BackupRegion"},
 			_jsii_.MemberProperty{JsiiProperty: "backupRegionInput", GoGetter: "BackupRegionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "backupRetentionPolicy", GoGetter: "BackupRetentionPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "backupRetentionPolicyInput", GoGetter: "BackupRetentionPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "backupVaultType", GoGetter: "BackupVaultType"},
 			_jsii_.MemberProperty{JsiiProperty: "backupVaultTypeInput", GoGetter: "BackupVaultTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -63,9 +65,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putBackupRetentionPolicy", GoMethod: "PutBackupRetentionPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackupRegion", GoMethod: "ResetBackupRegion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBackupRetentionPolicy", GoMethod: "ResetBackupRetentionPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackupVaultType", GoMethod: "ResetBackupVaultType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -92,6 +96,56 @@ func init() {
 		func() interface{} {
 			j := jsiiProxy_NetappBackupVault{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.netappBackupVault.NetappBackupVaultBackupRetentionPolicy",
+		reflect.TypeOf((*NetappBackupVaultBackupRetentionPolicy)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.netappBackupVault.NetappBackupVaultBackupRetentionPolicyOutputReference",
+		reflect.TypeOf((*NetappBackupVaultBackupRetentionPolicyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "backupMinimumEnforcedRetentionDays", GoGetter: "BackupMinimumEnforcedRetentionDays"},
+			_jsii_.MemberProperty{JsiiProperty: "backupMinimumEnforcedRetentionDaysInput", GoGetter: "BackupMinimumEnforcedRetentionDaysInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dailyBackupImmutable", GoGetter: "DailyBackupImmutable"},
+			_jsii_.MemberProperty{JsiiProperty: "dailyBackupImmutableInput", GoGetter: "DailyBackupImmutableInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "manualBackupImmutable", GoGetter: "ManualBackupImmutable"},
+			_jsii_.MemberProperty{JsiiProperty: "manualBackupImmutableInput", GoGetter: "ManualBackupImmutableInput"},
+			_jsii_.MemberProperty{JsiiProperty: "monthlyBackupImmutable", GoGetter: "MonthlyBackupImmutable"},
+			_jsii_.MemberProperty{JsiiProperty: "monthlyBackupImmutableInput", GoGetter: "MonthlyBackupImmutableInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDailyBackupImmutable", GoMethod: "ResetDailyBackupImmutable"},
+			_jsii_.MemberMethod{JsiiMethod: "resetManualBackupImmutable", GoMethod: "ResetManualBackupImmutable"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMonthlyBackupImmutable", GoMethod: "ResetMonthlyBackupImmutable"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWeeklyBackupImmutable", GoMethod: "ResetWeeklyBackupImmutable"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "weeklyBackupImmutable", GoGetter: "WeeklyBackupImmutable"},
+			_jsii_.MemberProperty{JsiiProperty: "weeklyBackupImmutableInput", GoGetter: "WeeklyBackupImmutableInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)

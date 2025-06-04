@@ -5,14 +5,14 @@ package computeinstantsnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/computeinstantsnapshot/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/computeinstantsnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_instant_snapshot google_compute_instant_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_instant_snapshot google_compute_instant_snapshot}.
 type ComputeInstantSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -553,7 +553,7 @@ func (j *jsiiProxy_ComputeInstantSnapshot) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_instant_snapshot google_compute_instant_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_instant_snapshot google_compute_instant_snapshot} Resource.
 func NewComputeInstantSnapshot(scope constructs.Construct, id *string, config *ComputeInstantSnapshotConfig) ComputeInstantSnapshot {
 	_init_.Initialize()
 
@@ -571,7 +571,7 @@ func NewComputeInstantSnapshot(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_instant_snapshot google_compute_instant_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_instant_snapshot google_compute_instant_snapshot} Resource.
 func NewComputeInstantSnapshot_Override(c ComputeInstantSnapshot, scope constructs.Construct, id *string, config *ComputeInstantSnapshotConfig) {
 	_init_.Initialize()
 

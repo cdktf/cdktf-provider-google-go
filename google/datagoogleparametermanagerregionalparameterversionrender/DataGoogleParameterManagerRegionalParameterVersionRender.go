@@ -5,14 +5,14 @@ package datagoogleparametermanagerregionalparameterversionrender
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagoogleparametermanagerregionalparameterversionrender/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/datagoogleparametermanagerregionalparameterversionrender/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/parameter_manager_regional_parameter_version_render google_parameter_manager_regional_parameter_version_render}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/parameter_manager_regional_parameter_version_render google_parameter_manager_regional_parameter_version_render}.
 type DataGoogleParameterManagerRegionalParameterVersionRender interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerRegionalParameterVersionRender) Ter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/parameter_manager_regional_parameter_version_render google_parameter_manager_regional_parameter_version_render} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/parameter_manager_regional_parameter_version_render google_parameter_manager_regional_parameter_version_render} Data Source.
 func NewDataGoogleParameterManagerRegionalParameterVersionRender(scope constructs.Construct, id *string, config *DataGoogleParameterManagerRegionalParameterVersionRenderConfig) DataGoogleParameterManagerRegionalParameterVersionRender {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewDataGoogleParameterManagerRegionalParameterVersionRender(scope construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/parameter_manager_regional_parameter_version_render google_parameter_manager_regional_parameter_version_render} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/parameter_manager_regional_parameter_version_render google_parameter_manager_regional_parameter_version_render} Data Source.
 func NewDataGoogleParameterManagerRegionalParameterVersionRender_Override(d DataGoogleParameterManagerRegionalParameterVersionRender, scope constructs.Construct, id *string, config *DataGoogleParameterManagerRegionalParameterVersionRenderConfig) {
 	_init_.Initialize()
 

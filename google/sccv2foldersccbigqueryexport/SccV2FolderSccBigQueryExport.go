@@ -5,14 +5,14 @@ package sccv2foldersccbigqueryexport
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/sccv2foldersccbigqueryexport/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/sccv2foldersccbigqueryexport/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/scc_v2_folder_scc_big_query_export google_scc_v2_folder_scc_big_query_export}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/scc_v2_folder_scc_big_query_export google_scc_v2_folder_scc_big_query_export}.
 type SccV2FolderSccBigQueryExport interface {
 	cdktf.TerraformResource
 	BigQueryExportId() *string
@@ -531,7 +531,7 @@ func (j *jsiiProxy_SccV2FolderSccBigQueryExport) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/scc_v2_folder_scc_big_query_export google_scc_v2_folder_scc_big_query_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/scc_v2_folder_scc_big_query_export google_scc_v2_folder_scc_big_query_export} Resource.
 func NewSccV2FolderSccBigQueryExport(scope constructs.Construct, id *string, config *SccV2FolderSccBigQueryExportConfig) SccV2FolderSccBigQueryExport {
 	_init_.Initialize()
 
@@ -549,7 +549,7 @@ func NewSccV2FolderSccBigQueryExport(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/scc_v2_folder_scc_big_query_export google_scc_v2_folder_scc_big_query_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/scc_v2_folder_scc_big_query_export google_scc_v2_folder_scc_big_query_export} Resource.
 func NewSccV2FolderSccBigQueryExport_Override(s SccV2FolderSccBigQueryExport, scope constructs.Construct, id *string, config *SccV2FolderSccBigQueryExportConfig) {
 	_init_.Initialize()
 

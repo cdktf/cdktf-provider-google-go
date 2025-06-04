@@ -5,14 +5,14 @@ package computeprojectcloudarmortier
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/computeprojectcloudarmortier/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/computeprojectcloudarmortier/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_project_cloud_armor_tier google_compute_project_cloud_armor_tier}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_project_cloud_armor_tier google_compute_project_cloud_armor_tier}.
 type ComputeProjectCloudArmorTier interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_project_cloud_armor_tier google_compute_project_cloud_armor_tier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_project_cloud_armor_tier google_compute_project_cloud_armor_tier} Resource.
 func NewComputeProjectCloudArmorTier(scope constructs.Construct, id *string, config *ComputeProjectCloudArmorTierConfig) ComputeProjectCloudArmorTier {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewComputeProjectCloudArmorTier(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_project_cloud_armor_tier google_compute_project_cloud_armor_tier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_project_cloud_armor_tier google_compute_project_cloud_armor_tier} Resource.
 func NewComputeProjectCloudArmorTier_Override(c ComputeProjectCloudArmorTier, scope constructs.Construct, id *string, config *ComputeProjectCloudArmorTierConfig) {
 	_init_.Initialize()
 

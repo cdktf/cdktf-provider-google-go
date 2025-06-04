@@ -5,14 +5,14 @@ package dataplexentrytypeiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/dataplexentrytypeiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/dataplexentrytypeiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataplex_entry_type_iam_member google_dataplex_entry_type_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dataplex_entry_type_iam_member google_dataplex_entry_type_iam_member}.
 type DataplexEntryTypeIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_DataplexEntryTypeIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataplex_entry_type_iam_member google_dataplex_entry_type_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dataplex_entry_type_iam_member google_dataplex_entry_type_iam_member} Resource.
 func NewDataplexEntryTypeIamMember(scope constructs.Construct, id *string, config *DataplexEntryTypeIamMemberConfig) DataplexEntryTypeIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewDataplexEntryTypeIamMember(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataplex_entry_type_iam_member google_dataplex_entry_type_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dataplex_entry_type_iam_member google_dataplex_entry_type_iam_member} Resource.
 func NewDataplexEntryTypeIamMember_Override(d DataplexEntryTypeIamMember, scope constructs.Construct, id *string, config *DataplexEntryTypeIamMemberConfig) {
 	_init_.Initialize()
 

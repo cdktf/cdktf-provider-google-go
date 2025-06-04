@@ -5,14 +5,14 @@ package spannerinstancepartition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/spannerinstancepartition/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/spannerinstancepartition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/spanner_instance_partition google_spanner_instance_partition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/spanner_instance_partition google_spanner_instance_partition}.
 type SpannerInstancePartition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -509,7 +509,7 @@ func (j *jsiiProxy_SpannerInstancePartition) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/spanner_instance_partition google_spanner_instance_partition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/spanner_instance_partition google_spanner_instance_partition} Resource.
 func NewSpannerInstancePartition(scope constructs.Construct, id *string, config *SpannerInstancePartitionConfig) SpannerInstancePartition {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewSpannerInstancePartition(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/spanner_instance_partition google_spanner_instance_partition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/spanner_instance_partition google_spanner_instance_partition} Resource.
 func NewSpannerInstancePartition_Override(s SpannerInstancePartition, scope constructs.Construct, id *string, config *SpannerInstancePartitionConfig) {
 	_init_.Initialize()
 

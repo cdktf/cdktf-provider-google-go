@@ -5,14 +5,14 @@ package filestorebackup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/filestorebackup/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/filestorebackup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/filestore_backup google_filestore_backup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/filestore_backup google_filestore_backup}.
 type FilestoreBackup interface {
 	cdktf.TerraformResource
 	CapacityGb() *string
@@ -621,7 +621,7 @@ func (j *jsiiProxy_FilestoreBackup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/filestore_backup google_filestore_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/filestore_backup google_filestore_backup} Resource.
 func NewFilestoreBackup(scope constructs.Construct, id *string, config *FilestoreBackupConfig) FilestoreBackup {
 	_init_.Initialize()
 
@@ -639,7 +639,7 @@ func NewFilestoreBackup(scope constructs.Construct, id *string, config *Filestor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/filestore_backup google_filestore_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/filestore_backup google_filestore_backup} Resource.
 func NewFilestoreBackup_Override(f FilestoreBackup, scope constructs.Construct, id *string, config *FilestoreBackupConfig) {
 	_init_.Initialize()
 

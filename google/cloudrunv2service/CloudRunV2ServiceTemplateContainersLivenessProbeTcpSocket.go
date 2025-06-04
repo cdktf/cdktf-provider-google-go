@@ -11,7 +11,7 @@ type CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket struct {
 	// If not specified, defaults to the exposed port of the container, which
 	// is the value of container.ports[0].containerPort.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
 	Port *float64 `field:"required" json:"port" yaml:"port"`
 }
 

@@ -5,14 +5,14 @@ package datagoogleappenginedefaultserviceaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagoogleappenginedefaultserviceaccount/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/datagoogleappenginedefaultserviceaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/app_engine_default_service_account google_app_engine_default_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/app_engine_default_service_account google_app_engine_default_service_account}.
 type DataGoogleAppEngineDefaultServiceAccount interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_DataGoogleAppEngineDefaultServiceAccount) UniqueId() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/app_engine_default_service_account google_app_engine_default_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/app_engine_default_service_account google_app_engine_default_service_account} Data Source.
 func NewDataGoogleAppEngineDefaultServiceAccount(scope constructs.Construct, id *string, config *DataGoogleAppEngineDefaultServiceAccountConfig) DataGoogleAppEngineDefaultServiceAccount {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewDataGoogleAppEngineDefaultServiceAccount(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/app_engine_default_service_account google_app_engine_default_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/app_engine_default_service_account google_app_engine_default_service_account} Data Source.
 func NewDataGoogleAppEngineDefaultServiceAccount_Override(d DataGoogleAppEngineDefaultServiceAccount, scope constructs.Construct, id *string, config *DataGoogleAppEngineDefaultServiceAccountConfig) {
 	_init_.Initialize()
 

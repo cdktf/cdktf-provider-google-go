@@ -5,14 +5,14 @@ package networksecuritymirroringendpointgroupassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/networksecuritymirroringendpointgroupassociation/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/networksecuritymirroringendpointgroupassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_security_mirroring_endpoint_group_association google_network_security_mirroring_endpoint_group_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_security_mirroring_endpoint_group_association google_network_security_mirroring_endpoint_group_association}.
 type NetworkSecurityMirroringEndpointGroupAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -574,7 +574,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringEndpointGroupAssociation) UpdateTime(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_security_mirroring_endpoint_group_association google_network_security_mirroring_endpoint_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_security_mirroring_endpoint_group_association google_network_security_mirroring_endpoint_group_association} Resource.
 func NewNetworkSecurityMirroringEndpointGroupAssociation(scope constructs.Construct, id *string, config *NetworkSecurityMirroringEndpointGroupAssociationConfig) NetworkSecurityMirroringEndpointGroupAssociation {
 	_init_.Initialize()
 
@@ -592,7 +592,7 @@ func NewNetworkSecurityMirroringEndpointGroupAssociation(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_security_mirroring_endpoint_group_association google_network_security_mirroring_endpoint_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_security_mirroring_endpoint_group_association google_network_security_mirroring_endpoint_group_association} Resource.
 func NewNetworkSecurityMirroringEndpointGroupAssociation_Override(n NetworkSecurityMirroringEndpointGroupAssociation, scope constructs.Construct, id *string, config *NetworkSecurityMirroringEndpointGroupAssociationConfig) {
 	_init_.Initialize()
 

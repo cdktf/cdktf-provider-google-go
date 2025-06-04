@@ -5,14 +5,14 @@ package firebaserulesrelease
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/firebaserulesrelease/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/firebaserulesrelease/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/firebaserules_release google_firebaserules_release}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/firebaserules_release google_firebaserules_release}.
 type FirebaserulesRelease interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_FirebaserulesRelease) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/firebaserules_release google_firebaserules_release} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/firebaserules_release google_firebaserules_release} Resource.
 func NewFirebaserulesRelease(scope constructs.Construct, id *string, config *FirebaserulesReleaseConfig) FirebaserulesRelease {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewFirebaserulesRelease(scope constructs.Construct, id *string, config *Fir
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/firebaserules_release google_firebaserules_release} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/firebaserules_release google_firebaserules_release} Resource.
 func NewFirebaserulesRelease_Override(f FirebaserulesRelease, scope constructs.Construct, id *string, config *FirebaserulesReleaseConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package beyondcorpsecuritygatewayapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/beyondcorpsecuritygatewayapplication/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/beyondcorpsecuritygatewayapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/beyondcorp_security_gateway_application google_beyondcorp_security_gateway_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/beyondcorp_security_gateway_application google_beyondcorp_security_gateway_application}.
 type BeyondcorpSecurityGatewayApplication interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -508,7 +508,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayApplication) UpstreamsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/beyondcorp_security_gateway_application google_beyondcorp_security_gateway_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/beyondcorp_security_gateway_application google_beyondcorp_security_gateway_application} Resource.
 func NewBeyondcorpSecurityGatewayApplication(scope constructs.Construct, id *string, config *BeyondcorpSecurityGatewayApplicationConfig) BeyondcorpSecurityGatewayApplication {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewBeyondcorpSecurityGatewayApplication(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/beyondcorp_security_gateway_application google_beyondcorp_security_gateway_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/beyondcorp_security_gateway_application google_beyondcorp_security_gateway_application} Resource.
 func NewBeyondcorpSecurityGatewayApplication_Override(b BeyondcorpSecurityGatewayApplication, scope constructs.Construct, id *string, config *BeyondcorpSecurityGatewayApplicationConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package storagemanagedfolder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/storagemanagedfolder/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/storagemanagedfolder/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/storage_managed_folder google_storage_managed_folder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/storage_managed_folder google_storage_managed_folder}.
 type StorageManagedFolder interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -448,7 +448,7 @@ func (j *jsiiProxy_StorageManagedFolder) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/storage_managed_folder google_storage_managed_folder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/storage_managed_folder google_storage_managed_folder} Resource.
 func NewStorageManagedFolder(scope constructs.Construct, id *string, config *StorageManagedFolderConfig) StorageManagedFolder {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewStorageManagedFolder(scope constructs.Construct, id *string, config *Sto
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/storage_managed_folder google_storage_managed_folder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/storage_managed_folder google_storage_managed_folder} Resource.
 func NewStorageManagedFolder_Override(s StorageManagedFolder, scope constructs.Construct, id *string, config *StorageManagedFolderConfig) {
 	_init_.Initialize()
 

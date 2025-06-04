@@ -5,14 +5,14 @@ package sccv2projectsccbigqueryexport
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/sccv2projectsccbigqueryexport/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/sccv2projectsccbigqueryexport/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/scc_v2_project_scc_big_query_export google_scc_v2_project_scc_big_query_export}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/scc_v2_project_scc_big_query_export google_scc_v2_project_scc_big_query_export}.
 type SccV2ProjectSccBigQueryExport interface {
 	cdktf.TerraformResource
 	BigQueryExportId() *string
@@ -532,7 +532,7 @@ func (j *jsiiProxy_SccV2ProjectSccBigQueryExport) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/scc_v2_project_scc_big_query_export google_scc_v2_project_scc_big_query_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/scc_v2_project_scc_big_query_export google_scc_v2_project_scc_big_query_export} Resource.
 func NewSccV2ProjectSccBigQueryExport(scope constructs.Construct, id *string, config *SccV2ProjectSccBigQueryExportConfig) SccV2ProjectSccBigQueryExport {
 	_init_.Initialize()
 
@@ -550,7 +550,7 @@ func NewSccV2ProjectSccBigQueryExport(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/scc_v2_project_scc_big_query_export google_scc_v2_project_scc_big_query_export} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/scc_v2_project_scc_big_query_export google_scc_v2_project_scc_big_query_export} Resource.
 func NewSccV2ProjectSccBigQueryExport_Override(s SccV2ProjectSccBigQueryExport, scope constructs.Construct, id *string, config *SccV2ProjectSccBigQueryExportConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package computeglobaladdress
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/computeglobaladdress/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/computeglobaladdress/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_global_address google_compute_global_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_global_address google_compute_global_address}.
 type ComputeGlobalAddress interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -628,7 +628,7 @@ func (j *jsiiProxy_ComputeGlobalAddress) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_global_address google_compute_global_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_global_address google_compute_global_address} Resource.
 func NewComputeGlobalAddress(scope constructs.Construct, id *string, config *ComputeGlobalAddressConfig) ComputeGlobalAddress {
 	_init_.Initialize()
 
@@ -646,7 +646,7 @@ func NewComputeGlobalAddress(scope constructs.Construct, id *string, config *Com
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_global_address google_compute_global_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_global_address google_compute_global_address} Resource.
 func NewComputeGlobalAddress_Override(c ComputeGlobalAddress, scope constructs.Construct, id *string, config *ComputeGlobalAddressConfig) {
 	_init_.Initialize()
 

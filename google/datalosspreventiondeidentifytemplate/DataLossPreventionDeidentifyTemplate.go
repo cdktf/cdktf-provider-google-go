@@ -5,14 +5,14 @@ package datalosspreventiondeidentifytemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/datalosspreventiondeidentifytemplate/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/datalosspreventiondeidentifytemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template}.
 type DataLossPreventionDeidentifyTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_DataLossPreventionDeidentifyTemplate) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
 func NewDataLossPreventionDeidentifyTemplate(scope constructs.Construct, id *string, config *DataLossPreventionDeidentifyTemplateConfig) DataLossPreventionDeidentifyTemplate {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewDataLossPreventionDeidentifyTemplate(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/data_loss_prevention_deidentify_template google_data_loss_prevention_deidentify_template} Resource.
 func NewDataLossPreventionDeidentifyTemplate_Override(d DataLossPreventionDeidentifyTemplate, scope constructs.Construct, id *string, config *DataLossPreventionDeidentifyTemplateConfig) {
 	_init_.Initialize()
 

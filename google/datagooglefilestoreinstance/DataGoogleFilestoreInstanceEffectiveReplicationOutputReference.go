@@ -5,9 +5,9 @@ package datagooglefilestoreinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglefilestoreinstance/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/datagooglefilestoreinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,6 +33,7 @@ type DataGoogleFilestoreInstanceEffectiveReplicationOutputReference interface {
 	InternalValue() *DataGoogleFilestoreInstanceEffectiveReplication
 	SetInternalValue(val *DataGoogleFilestoreInstanceEffectiveReplication)
 	Replicas() DataGoogleFilestoreInstanceEffectiveReplicationReplicasList
+	Role() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -135,6 +136,16 @@ func (j *jsiiProxy_DataGoogleFilestoreInstanceEffectiveReplicationOutputReferenc
 	_jsii_.Get(
 		j,
 		"replicas",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleFilestoreInstanceEffectiveReplicationOutputReference) Role() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"role",
 		&returns,
 	)
 	return returns

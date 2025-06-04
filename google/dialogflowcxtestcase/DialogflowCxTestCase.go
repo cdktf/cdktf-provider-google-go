@@ -5,14 +5,14 @@ package dialogflowcxtestcase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/dialogflowcxtestcase/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/dialogflowcxtestcase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case}.
 type DialogflowCxTestCase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -510,7 +510,7 @@ func (j *jsiiProxy_DialogflowCxTestCase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource.
 func NewDialogflowCxTestCase(scope constructs.Construct, id *string, config *DialogflowCxTestCaseConfig) DialogflowCxTestCase {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewDialogflowCxTestCase(scope constructs.Construct, id *string, config *Dia
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource.
 func NewDialogflowCxTestCase_Override(d DialogflowCxTestCase, scope constructs.Construct, id *string, config *DialogflowCxTestCaseConfig) {
 	_init_.Initialize()
 

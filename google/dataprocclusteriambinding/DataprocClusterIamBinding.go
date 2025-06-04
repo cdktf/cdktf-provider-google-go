@@ -5,14 +5,14 @@ package dataprocclusteriambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/dataprocclusteriambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/dataprocclusteriambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataproc_cluster_iam_binding google_dataproc_cluster_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dataproc_cluster_iam_binding google_dataproc_cluster_iam_binding}.
 type DataprocClusterIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_DataprocClusterIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataproc_cluster_iam_binding google_dataproc_cluster_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dataproc_cluster_iam_binding google_dataproc_cluster_iam_binding} Resource.
 func NewDataprocClusterIamBinding(scope constructs.Construct, id *string, config *DataprocClusterIamBindingConfig) DataprocClusterIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewDataprocClusterIamBinding(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataproc_cluster_iam_binding google_dataproc_cluster_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dataproc_cluster_iam_binding google_dataproc_cluster_iam_binding} Resource.
 func NewDataprocClusterIamBinding_Override(d DataprocClusterIamBinding, scope constructs.Construct, id *string, config *DataprocClusterIamBindingConfig) {
 	_init_.Initialize()
 

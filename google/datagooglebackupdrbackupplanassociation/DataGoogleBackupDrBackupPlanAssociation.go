@@ -5,14 +5,14 @@ package datagooglebackupdrbackupplanassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglebackupdrbackupplanassociation/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/datagooglebackupdrbackupplanassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/backup_dr_backup_plan_association google_backup_dr_backup_plan_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/backup_dr_backup_plan_association google_backup_dr_backup_plan_association}.
 type DataGoogleBackupDrBackupPlanAssociation interface {
 	cdktf.TerraformDataSource
 	BackupPlan() *string
@@ -434,7 +434,7 @@ func (j *jsiiProxy_DataGoogleBackupDrBackupPlanAssociation) UpdateTime() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/backup_dr_backup_plan_association google_backup_dr_backup_plan_association} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/backup_dr_backup_plan_association google_backup_dr_backup_plan_association} Data Source.
 func NewDataGoogleBackupDrBackupPlanAssociation(scope constructs.Construct, id *string, config *DataGoogleBackupDrBackupPlanAssociationConfig) DataGoogleBackupDrBackupPlanAssociation {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewDataGoogleBackupDrBackupPlanAssociation(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/backup_dr_backup_plan_association google_backup_dr_backup_plan_association} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/backup_dr_backup_plan_association google_backup_dr_backup_plan_association} Data Source.
 func NewDataGoogleBackupDrBackupPlanAssociation_Override(d DataGoogleBackupDrBackupPlanAssociation, scope constructs.Construct, id *string, config *DataGoogleBackupDrBackupPlanAssociationConfig) {
 	_init_.Initialize()
 

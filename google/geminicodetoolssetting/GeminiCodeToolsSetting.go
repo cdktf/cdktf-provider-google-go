@@ -5,14 +5,14 @@ package geminicodetoolssetting
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/geminicodetoolssetting/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/geminicodetoolssetting/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/gemini_code_tools_setting google_gemini_code_tools_setting}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/gemini_code_tools_setting google_gemini_code_tools_setting}.
 type GeminiCodeToolsSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -507,7 +507,7 @@ func (j *jsiiProxy_GeminiCodeToolsSetting) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/gemini_code_tools_setting google_gemini_code_tools_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/gemini_code_tools_setting google_gemini_code_tools_setting} Resource.
 func NewGeminiCodeToolsSetting(scope constructs.Construct, id *string, config *GeminiCodeToolsSettingConfig) GeminiCodeToolsSetting {
 	_init_.Initialize()
 
@@ -525,7 +525,7 @@ func NewGeminiCodeToolsSetting(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/gemini_code_tools_setting google_gemini_code_tools_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/gemini_code_tools_setting google_gemini_code_tools_setting} Resource.
 func NewGeminiCodeToolsSetting_Override(g GeminiCodeToolsSetting, scope constructs.Construct, id *string, config *GeminiCodeToolsSettingConfig) {
 	_init_.Initialize()
 

@@ -24,15 +24,15 @@ type CloudRunV2WorkerPoolConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location of the cloud run worker pool.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool#location CloudRunV2WorkerPool#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool#location CloudRunV2WorkerPool#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// Name of the WorkerPool.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// template block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool#template CloudRunV2WorkerPool#template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool#template CloudRunV2WorkerPool#template}
 	Template *CloudRunV2WorkerPoolTemplate `field:"required" json:"template" yaml:"template"`
 	// Unstructured key value map that may be set by external tools to store and arbitrary metadata.
 	//
@@ -46,26 +46,26 @@ type CloudRunV2WorkerPoolConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 	// Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
 	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
 	// binary_authorization block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool#binary_authorization CloudRunV2WorkerPool#binary_authorization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool#binary_authorization CloudRunV2WorkerPool#binary_authorization}
 	BinaryAuthorization *CloudRunV2WorkerPoolBinaryAuthorization `field:"optional" json:"binaryAuthorization" yaml:"binaryAuthorization"`
 	// Arbitrary identifier for the API client.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool#client CloudRunV2WorkerPool#client}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool#client CloudRunV2WorkerPool#client}
 	Client *string `field:"optional" json:"client" yaml:"client"`
 	// Arbitrary version identifier for the API client.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool#client_version CloudRunV2WorkerPool#client_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool#client_version CloudRunV2WorkerPool#client_version}
 	ClientVersion *string `field:"optional" json:"clientVersion" yaml:"clientVersion"`
 	// One or more custom audiences that you want this worker pool to support.
 	//
 	// Specify each custom audience as the full URL in a string. The custom audiences are encoded in the token and used to authenticate requests.
 	// For more information, see https://cloud.google.com/run/docs/configuring/custom-audiences.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool#custom_audiences CloudRunV2WorkerPool#custom_audiences}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool#custom_audiences CloudRunV2WorkerPool#custom_audiences}
 	CustomAudiences *[]*string `field:"optional" json:"customAudiences" yaml:"customAudiences"`
 	// Whether Terraform will be prevented from destroying the service.
 	//
@@ -76,20 +76,20 @@ type CloudRunV2WorkerPoolConfig struct {
 	// or 'terraform destroy' that would delete the WorkerPool will fail.
 	// When the field is set to false, deleting the WorkerPool is allowed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool#deletion_protection CloudRunV2WorkerPool#deletion_protection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool#deletion_protection CloudRunV2WorkerPool#deletion_protection}
 	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// User-provided description of the WorkerPool. This field currently has a 512-character limit.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool#description CloudRunV2WorkerPool#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool#description CloudRunV2WorkerPool#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool#id CloudRunV2WorkerPool#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool#id CloudRunV2WorkerPool#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// instance_splits block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool#instance_splits CloudRunV2WorkerPool#instance_splits}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool#instance_splits CloudRunV2WorkerPool#instance_splits}
 	InstanceSplits interface{} `field:"optional" json:"instanceSplits" yaml:"instanceSplits"`
 	// Unstructured key value map that can be used to organize and categorize objects.
 	//
@@ -102,23 +102,23 @@ type CloudRunV2WorkerPoolConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// The launch stage as defined by [Google Cloud Platform Launch Stages](https://cloud.google.com/products#product-launch-stages). Cloud Run supports ALPHA, BETA, and GA. If no value is specified, GA is assumed. Set the launch stage to a preview stage on input to allow use of preview features in that stage. On read (or output), describes whether the resource uses preview features.
 	//
 	// For example, if ALPHA is provided as input, but only BETA and GA-level features are used, this field will be BETA on output. Possible values: ["UNIMPLEMENTED", "PRELAUNCH", "EARLY_ACCESS", "ALPHA", "BETA", "GA", "DEPRECATED"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool#launch_stage CloudRunV2WorkerPool#launch_stage}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool#launch_stage CloudRunV2WorkerPool#launch_stage}
 	LaunchStage *string `field:"optional" json:"launchStage" yaml:"launchStage"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool#project CloudRunV2WorkerPool#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool#project CloudRunV2WorkerPool#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// scaling block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool#scaling CloudRunV2WorkerPool#scaling}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool#scaling CloudRunV2WorkerPool#scaling}
 	Scaling *CloudRunV2WorkerPoolScaling `field:"optional" json:"scaling" yaml:"scaling"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool#timeouts CloudRunV2WorkerPool#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool#timeouts CloudRunV2WorkerPool#timeouts}
 	Timeouts *CloudRunV2WorkerPoolTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -5,9 +5,9 @@ package datagooglefilestoreinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglefilestoreinstance/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/datagooglefilestoreinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,6 +33,7 @@ type DataGoogleFilestoreInstanceEffectiveReplicationReplicasOutputReference inte
 	InternalValue() *DataGoogleFilestoreInstanceEffectiveReplicationReplicas
 	SetInternalValue(val *DataGoogleFilestoreInstanceEffectiveReplicationReplicas)
 	LastActiveSyncTime() *string
+	PeerInstance() *string
 	State() *string
 	StateReasons() *[]*string
 	// Experimental.
@@ -137,6 +138,16 @@ func (j *jsiiProxy_DataGoogleFilestoreInstanceEffectiveReplicationReplicasOutput
 	_jsii_.Get(
 		j,
 		"lastActiveSyncTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleFilestoreInstanceEffectiveReplicationReplicasOutputReference) PeerInstance() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"peerInstance",
 		&returns,
 	)
 	return returns

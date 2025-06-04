@@ -5,14 +5,14 @@ package datagooglebackupdrbackup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglebackupdrbackup/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/datagooglebackupdrbackup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/backup_dr_backup google_backup_dr_backup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/backup_dr_backup google_backup_dr_backup}.
 type DataGoogleBackupDrBackup interface {
 	cdktf.TerraformDataSource
 	Backups() DataGoogleBackupDrBackupBackupsList
@@ -379,7 +379,7 @@ func (j *jsiiProxy_DataGoogleBackupDrBackup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/backup_dr_backup google_backup_dr_backup} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/backup_dr_backup google_backup_dr_backup} Data Source.
 func NewDataGoogleBackupDrBackup(scope constructs.Construct, id *string, config *DataGoogleBackupDrBackupConfig) DataGoogleBackupDrBackup {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewDataGoogleBackupDrBackup(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/backup_dr_backup google_backup_dr_backup} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/backup_dr_backup google_backup_dr_backup} Data Source.
 func NewDataGoogleBackupDrBackup_Override(d DataGoogleBackupDrBackup, scope constructs.Construct, id *string, config *DataGoogleBackupDrBackupConfig) {
 	_init_.Initialize()
 

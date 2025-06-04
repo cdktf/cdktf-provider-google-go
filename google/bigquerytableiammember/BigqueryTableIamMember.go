@@ -5,14 +5,14 @@ package bigquerytableiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/bigquerytableiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/bigquerytableiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/bigquery_table_iam_member google_bigquery_table_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/bigquery_table_iam_member google_bigquery_table_iam_member}.
 type BigqueryTableIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -461,7 +461,7 @@ func (j *jsiiProxy_BigqueryTableIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/bigquery_table_iam_member google_bigquery_table_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/bigquery_table_iam_member google_bigquery_table_iam_member} Resource.
 func NewBigqueryTableIamMember(scope constructs.Construct, id *string, config *BigqueryTableIamMemberConfig) BigqueryTableIamMember {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewBigqueryTableIamMember(scope constructs.Construct, id *string, config *B
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/bigquery_table_iam_member google_bigquery_table_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/bigquery_table_iam_member google_bigquery_table_iam_member} Resource.
 func NewBigqueryTableIamMember_Override(b BigqueryTableIamMember, scope constructs.Construct, id *string, config *BigqueryTableIamMemberConfig) {
 	_init_.Initialize()
 

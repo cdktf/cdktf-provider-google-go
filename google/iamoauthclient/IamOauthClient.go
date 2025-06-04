@@ -5,14 +5,14 @@ package iamoauthclient
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/iamoauthclient/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/iamoauthclient/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/iam_oauth_client google_iam_oauth_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/iam_oauth_client google_iam_oauth_client}.
 type IamOauthClient interface {
 	cdktf.TerraformResource
 	AllowedGrantTypes() *[]*string
@@ -613,7 +613,7 @@ func (j *jsiiProxy_IamOauthClient) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/iam_oauth_client google_iam_oauth_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/iam_oauth_client google_iam_oauth_client} Resource.
 func NewIamOauthClient(scope constructs.Construct, id *string, config *IamOauthClientConfig) IamOauthClient {
 	_init_.Initialize()
 
@@ -631,7 +631,7 @@ func NewIamOauthClient(scope constructs.Construct, id *string, config *IamOauthC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/iam_oauth_client google_iam_oauth_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/iam_oauth_client google_iam_oauth_client} Resource.
 func NewIamOauthClient_Override(i IamOauthClient, scope constructs.Construct, id *string, config *IamOauthClientConfig) {
 	_init_.Initialize()
 

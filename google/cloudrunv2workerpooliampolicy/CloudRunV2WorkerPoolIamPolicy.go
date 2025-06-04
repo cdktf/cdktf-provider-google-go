@@ -5,14 +5,14 @@ package cloudrunv2workerpooliampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/cloudrunv2workerpooliampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/cloudrunv2workerpooliampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy}.
 type CloudRunV2WorkerPoolIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolIamPolicy) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy} Resource.
 func NewCloudRunV2WorkerPoolIamPolicy(scope constructs.Construct, id *string, config *CloudRunV2WorkerPoolIamPolicyConfig) CloudRunV2WorkerPoolIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewCloudRunV2WorkerPoolIamPolicy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_v2_worker_pool_iam_policy google_cloud_run_v2_worker_pool_iam_policy} Resource.
 func NewCloudRunV2WorkerPoolIamPolicy_Override(c CloudRunV2WorkerPoolIamPolicy, scope constructs.Construct, id *string, config *CloudRunV2WorkerPoolIamPolicyConfig) {
 	_init_.Initialize()
 

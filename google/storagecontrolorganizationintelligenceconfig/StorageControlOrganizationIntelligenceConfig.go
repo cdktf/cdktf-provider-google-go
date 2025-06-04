@@ -5,14 +5,14 @@ package storagecontrolorganizationintelligenceconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/storagecontrolorganizationintelligenceconfig/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/storagecontrolorganizationintelligenceconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config}.
 type StorageControlOrganizationIntelligenceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfig) UpdateTime() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config} Resource.
 func NewStorageControlOrganizationIntelligenceConfig(scope constructs.Construct, id *string, config *StorageControlOrganizationIntelligenceConfigConfig) StorageControlOrganizationIntelligenceConfig {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewStorageControlOrganizationIntelligenceConfig(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config} Resource.
 func NewStorageControlOrganizationIntelligenceConfig_Override(s StorageControlOrganizationIntelligenceConfig, scope constructs.Construct, id *string, config *StorageControlOrganizationIntelligenceConfigConfig) {
 	_init_.Initialize()
 

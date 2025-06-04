@@ -5,14 +5,14 @@ package cloudassetfolderfeed
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/cloudassetfolderfeed/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/cloudassetfolderfeed/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_asset_folder_feed google_cloud_asset_folder_feed}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_asset_folder_feed google_cloud_asset_folder_feed}.
 type CloudAssetFolderFeed interface {
 	cdktf.TerraformResource
 	AssetNames() *[]*string
@@ -544,7 +544,7 @@ func (j *jsiiProxy_CloudAssetFolderFeed) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_asset_folder_feed google_cloud_asset_folder_feed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_asset_folder_feed google_cloud_asset_folder_feed} Resource.
 func NewCloudAssetFolderFeed(scope constructs.Construct, id *string, config *CloudAssetFolderFeedConfig) CloudAssetFolderFeed {
 	_init_.Initialize()
 
@@ -562,7 +562,7 @@ func NewCloudAssetFolderFeed(scope constructs.Construct, id *string, config *Clo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_asset_folder_feed google_cloud_asset_folder_feed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_asset_folder_feed google_cloud_asset_folder_feed} Resource.
 func NewCloudAssetFolderFeed_Override(c CloudAssetFolderFeed, scope constructs.Construct, id *string, config *CloudAssetFolderFeedConfig) {
 	_init_.Initialize()
 

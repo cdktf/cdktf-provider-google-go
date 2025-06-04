@@ -5,14 +5,14 @@ package storageanywherecache
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/storageanywherecache/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/storageanywherecache/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/storage_anywhere_cache google_storage_anywhere_cache}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/storage_anywhere_cache google_storage_anywhere_cache}.
 type StorageAnywhereCache interface {
 	cdktf.TerraformResource
 	AdmissionPolicy() *string
@@ -483,7 +483,7 @@ func (j *jsiiProxy_StorageAnywhereCache) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/storage_anywhere_cache google_storage_anywhere_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/storage_anywhere_cache google_storage_anywhere_cache} Resource.
 func NewStorageAnywhereCache(scope constructs.Construct, id *string, config *StorageAnywhereCacheConfig) StorageAnywhereCache {
 	_init_.Initialize()
 
@@ -501,7 +501,7 @@ func NewStorageAnywhereCache(scope constructs.Construct, id *string, config *Sto
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/storage_anywhere_cache google_storage_anywhere_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/storage_anywhere_cache google_storage_anywhere_cache} Resource.
 func NewStorageAnywhereCache_Override(s StorageAnywhereCache, scope constructs.Construct, id *string, config *StorageAnywhereCacheConfig) {
 	_init_.Initialize()
 

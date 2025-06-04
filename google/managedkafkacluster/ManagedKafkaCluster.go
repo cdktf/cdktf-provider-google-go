@@ -5,14 +5,14 @@ package managedkafkacluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/managedkafkacluster/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/managedkafkacluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/managed_kafka_cluster google_managed_kafka_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/managed_kafka_cluster google_managed_kafka_cluster}.
 type ManagedKafkaCluster interface {
 	cdktf.TerraformResource
 	CapacityConfig() ManagedKafkaClusterCapacityConfigOutputReference
@@ -564,7 +564,7 @@ func (j *jsiiProxy_ManagedKafkaCluster) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/managed_kafka_cluster google_managed_kafka_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/managed_kafka_cluster google_managed_kafka_cluster} Resource.
 func NewManagedKafkaCluster(scope constructs.Construct, id *string, config *ManagedKafkaClusterConfig) ManagedKafkaCluster {
 	_init_.Initialize()
 
@@ -582,7 +582,7 @@ func NewManagedKafkaCluster(scope constructs.Construct, id *string, config *Mana
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/managed_kafka_cluster google_managed_kafka_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/managed_kafka_cluster google_managed_kafka_cluster} Resource.
 func NewManagedKafkaCluster_Override(m ManagedKafkaCluster, scope constructs.Construct, id *string, config *ManagedKafkaClusterConfig) {
 	_init_.Initialize()
 

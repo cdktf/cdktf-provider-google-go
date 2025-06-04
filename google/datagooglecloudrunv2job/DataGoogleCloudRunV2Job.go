@@ -5,14 +5,14 @@ package datagooglecloudrunv2job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglecloudrunv2job/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/datagooglecloudrunv2job/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job}.
 type DataGoogleCloudRunV2Job interface {
 	cdktf.TerraformDataSource
 	Annotations() cdktf.StringMap
@@ -622,7 +622,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2Job) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job} Data Source.
 func NewDataGoogleCloudRunV2Job(scope constructs.Construct, id *string, config *DataGoogleCloudRunV2JobConfig) DataGoogleCloudRunV2Job {
 	_init_.Initialize()
 
@@ -640,7 +640,7 @@ func NewDataGoogleCloudRunV2Job(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job} Data Source.
 func NewDataGoogleCloudRunV2Job_Override(d DataGoogleCloudRunV2Job, scope constructs.Construct, id *string, config *DataGoogleCloudRunV2JobConfig) {
 	_init_.Initialize()
 

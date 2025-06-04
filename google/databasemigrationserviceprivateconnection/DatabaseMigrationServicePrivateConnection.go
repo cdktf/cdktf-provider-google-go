@@ -5,14 +5,14 @@ package databasemigrationserviceprivateconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/databasemigrationserviceprivateconnection/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/databasemigrationserviceprivateconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection}.
 type DatabaseMigrationServicePrivateConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -554,7 +554,7 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnection) VpcPeeringConfigIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection} Resource.
 func NewDatabaseMigrationServicePrivateConnection(scope constructs.Construct, id *string, config *DatabaseMigrationServicePrivateConnectionConfig) DatabaseMigrationServicePrivateConnection {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewDatabaseMigrationServicePrivateConnection(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection} Resource.
 func NewDatabaseMigrationServicePrivateConnection_Override(d DatabaseMigrationServicePrivateConnection, scope constructs.Construct, id *string, config *DatabaseMigrationServicePrivateConnectionConfig) {
 	_init_.Initialize()
 

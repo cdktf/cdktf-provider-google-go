@@ -5,14 +5,14 @@ package sccorganizationcustommodule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/sccorganizationcustommodule/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/sccorganizationcustommodule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/scc_organization_custom_module google_scc_organization_custom_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/scc_organization_custom_module google_scc_organization_custom_module}.
 type SccOrganizationCustomModule interface {
 	cdktf.TerraformResource
 	AncestorModule() *string
@@ -470,7 +470,7 @@ func (j *jsiiProxy_SccOrganizationCustomModule) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/scc_organization_custom_module google_scc_organization_custom_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/scc_organization_custom_module google_scc_organization_custom_module} Resource.
 func NewSccOrganizationCustomModule(scope constructs.Construct, id *string, config *SccOrganizationCustomModuleConfig) SccOrganizationCustomModule {
 	_init_.Initialize()
 
@@ -488,7 +488,7 @@ func NewSccOrganizationCustomModule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/scc_organization_custom_module google_scc_organization_custom_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/scc_organization_custom_module google_scc_organization_custom_module} Resource.
 func NewSccOrganizationCustomModule_Override(s SccOrganizationCustomModule, scope constructs.Construct, id *string, config *SccOrganizationCustomModuleConfig) {
 	_init_.Initialize()
 

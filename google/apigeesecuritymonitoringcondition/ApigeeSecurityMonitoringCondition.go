@@ -5,14 +5,14 @@ package apigeesecuritymonitoringcondition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/apigeesecuritymonitoringcondition/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/apigeesecuritymonitoringcondition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/apigee_security_monitoring_condition google_apigee_security_monitoring_condition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/apigee_security_monitoring_condition google_apigee_security_monitoring_condition}.
 type ApigeeSecurityMonitoringCondition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -505,7 +505,7 @@ func (j *jsiiProxy_ApigeeSecurityMonitoringCondition) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/apigee_security_monitoring_condition google_apigee_security_monitoring_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/apigee_security_monitoring_condition google_apigee_security_monitoring_condition} Resource.
 func NewApigeeSecurityMonitoringCondition(scope constructs.Construct, id *string, config *ApigeeSecurityMonitoringConditionConfig) ApigeeSecurityMonitoringCondition {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewApigeeSecurityMonitoringCondition(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/apigee_security_monitoring_condition google_apigee_security_monitoring_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/apigee_security_monitoring_condition google_apigee_security_monitoring_condition} Resource.
 func NewApigeeSecurityMonitoringCondition_Override(a ApigeeSecurityMonitoringCondition, scope constructs.Construct, id *string, config *ApigeeSecurityMonitoringConditionConfig) {
 	_init_.Initialize()
 

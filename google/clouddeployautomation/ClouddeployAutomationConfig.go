@@ -24,27 +24,27 @@ type ClouddeployAutomationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The delivery_pipeline for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/clouddeploy_automation#delivery_pipeline ClouddeployAutomation#delivery_pipeline}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/clouddeploy_automation#delivery_pipeline ClouddeployAutomation#delivery_pipeline}
 	DeliveryPipeline *string `field:"required" json:"deliveryPipeline" yaml:"deliveryPipeline"`
 	// The location for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/clouddeploy_automation#location ClouddeployAutomation#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/clouddeploy_automation#location ClouddeployAutomation#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// Name of the 'Automation'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/clouddeploy_automation#name ClouddeployAutomation#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/clouddeploy_automation#name ClouddeployAutomation#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/clouddeploy_automation#rules ClouddeployAutomation#rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/clouddeploy_automation#rules ClouddeployAutomation#rules}
 	Rules interface{} `field:"required" json:"rules" yaml:"rules"`
 	// selector block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/clouddeploy_automation#selector ClouddeployAutomation#selector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/clouddeploy_automation#selector ClouddeployAutomation#selector}
 	Selector *ClouddeployAutomationSelector `field:"required" json:"selector" yaml:"selector"`
 	// Required. Email address of the user-managed IAM service account that creates Cloud Deploy release and rollout resources.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/clouddeploy_automation#service_account ClouddeployAutomation#service_account}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/clouddeploy_automation#service_account ClouddeployAutomation#service_account}
 	ServiceAccount *string `field:"required" json:"serviceAccount" yaml:"serviceAccount"`
 	// Optional.
 	//
@@ -53,13 +53,13 @@ type ClouddeployAutomationConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 	// Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/clouddeploy_automation#annotations ClouddeployAutomation#annotations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/clouddeploy_automation#annotations ClouddeployAutomation#annotations}
 	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
 	// Optional. Description of the 'Automation'. Max length is 255 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/clouddeploy_automation#description ClouddeployAutomation#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/clouddeploy_automation#description ClouddeployAutomation#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/clouddeploy_automation#id ClouddeployAutomation#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/clouddeploy_automation#id ClouddeployAutomation#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -71,17 +71,17 @@ type ClouddeployAutomationConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/clouddeploy_automation#labels ClouddeployAutomation#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/clouddeploy_automation#labels ClouddeployAutomation#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/clouddeploy_automation#project ClouddeployAutomation#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/clouddeploy_automation#project ClouddeployAutomation#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// Optional. When Suspended, automation is deactivated from execution.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/clouddeploy_automation#suspended ClouddeployAutomation#suspended}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/clouddeploy_automation#suspended ClouddeployAutomation#suspended}
 	Suspended interface{} `field:"optional" json:"suspended" yaml:"suspended"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/clouddeploy_automation#timeouts ClouddeployAutomation#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/clouddeploy_automation#timeouts ClouddeployAutomation#timeouts}
 	Timeouts *ClouddeployAutomationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

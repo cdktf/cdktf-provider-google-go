@@ -5,14 +5,14 @@ package datagooglecontainerawsversions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglecontainerawsversions/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/datagooglecontainerawsversions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/container_aws_versions google_container_aws_versions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/container_aws_versions google_container_aws_versions}.
 type DataGoogleContainerAwsVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DataGoogleContainerAwsVersions) ValidVersions() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/container_aws_versions google_container_aws_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/container_aws_versions google_container_aws_versions} Data Source.
 func NewDataGoogleContainerAwsVersions(scope constructs.Construct, id *string, config *DataGoogleContainerAwsVersionsConfig) DataGoogleContainerAwsVersions {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewDataGoogleContainerAwsVersions(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/container_aws_versions google_container_aws_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/container_aws_versions google_container_aws_versions} Data Source.
 func NewDataGoogleContainerAwsVersions_Override(d DataGoogleContainerAwsVersions, scope constructs.Construct, id *string, config *DataGoogleContainerAwsVersionsConfig) {
 	_init_.Initialize()
 

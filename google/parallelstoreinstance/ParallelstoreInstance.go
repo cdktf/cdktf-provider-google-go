@@ -5,14 +5,14 @@ package parallelstoreinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/parallelstoreinstance/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/parallelstoreinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/parallelstore_instance google_parallelstore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/parallelstore_instance google_parallelstore_instance}.
 type ParallelstoreInstance interface {
 	cdktf.TerraformResource
 	AccessPoints() *[]*string
@@ -694,7 +694,7 @@ func (j *jsiiProxy_ParallelstoreInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/parallelstore_instance google_parallelstore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/parallelstore_instance google_parallelstore_instance} Resource.
 func NewParallelstoreInstance(scope constructs.Construct, id *string, config *ParallelstoreInstanceConfig) ParallelstoreInstance {
 	_init_.Initialize()
 
@@ -712,7 +712,7 @@ func NewParallelstoreInstance(scope constructs.Construct, id *string, config *Pa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/parallelstore_instance google_parallelstore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/parallelstore_instance google_parallelstore_instance} Resource.
 func NewParallelstoreInstance_Override(p ParallelstoreInstance, scope constructs.Construct, id *string, config *ParallelstoreInstanceConfig) {
 	_init_.Initialize()
 

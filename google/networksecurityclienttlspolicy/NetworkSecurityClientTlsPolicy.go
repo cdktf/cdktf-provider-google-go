@@ -5,14 +5,14 @@ package networksecurityclienttlspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/networksecurityclienttlspolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/networksecurityclienttlspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_security_client_tls_policy google_network_security_client_tls_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_security_client_tls_policy google_network_security_client_tls_policy}.
 type NetworkSecurityClientTlsPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -569,7 +569,7 @@ func (j *jsiiProxy_NetworkSecurityClientTlsPolicy) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_security_client_tls_policy google_network_security_client_tls_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_security_client_tls_policy google_network_security_client_tls_policy} Resource.
 func NewNetworkSecurityClientTlsPolicy(scope constructs.Construct, id *string, config *NetworkSecurityClientTlsPolicyConfig) NetworkSecurityClientTlsPolicy {
 	_init_.Initialize()
 
@@ -587,7 +587,7 @@ func NewNetworkSecurityClientTlsPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_security_client_tls_policy google_network_security_client_tls_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_security_client_tls_policy google_network_security_client_tls_policy} Resource.
 func NewNetworkSecurityClientTlsPolicy_Override(n NetworkSecurityClientTlsPolicy, scope constructs.Construct, id *string, config *NetworkSecurityClientTlsPolicyConfig) {
 	_init_.Initialize()
 

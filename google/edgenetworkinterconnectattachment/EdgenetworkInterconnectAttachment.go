@@ -5,14 +5,14 @@ package edgenetworkinterconnectattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/edgenetworkinterconnectattachment/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/edgenetworkinterconnectattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment}.
 type EdgenetworkInterconnectAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -623,7 +623,7 @@ func (j *jsiiProxy_EdgenetworkInterconnectAttachment) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment} Resource.
 func NewEdgenetworkInterconnectAttachment(scope constructs.Construct, id *string, config *EdgenetworkInterconnectAttachmentConfig) EdgenetworkInterconnectAttachment {
 	_init_.Initialize()
 
@@ -641,7 +641,7 @@ func NewEdgenetworkInterconnectAttachment(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment} Resource.
 func NewEdgenetworkInterconnectAttachment_Override(e EdgenetworkInterconnectAttachment, scope constructs.Construct, id *string, config *EdgenetworkInterconnectAttachmentConfig) {
 	_init_.Initialize()
 

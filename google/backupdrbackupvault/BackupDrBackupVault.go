@@ -5,14 +5,14 @@ package backupdrbackupvault
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/backupdrbackupvault/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/backupdrbackupvault/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault}.
 type BackupDrBackupVault interface {
 	cdktf.TerraformResource
 	AccessRestriction() *string
@@ -810,7 +810,7 @@ func (j *jsiiProxy_BackupDrBackupVault) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
 func NewBackupDrBackupVault(scope constructs.Construct, id *string, config *BackupDrBackupVaultConfig) BackupDrBackupVault {
 	_init_.Initialize()
 
@@ -828,7 +828,7 @@ func NewBackupDrBackupVault(scope constructs.Construct, id *string, config *Back
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
 func NewBackupDrBackupVault_Override(b BackupDrBackupVault, scope constructs.Construct, id *string, config *BackupDrBackupVaultConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package transcoderjobtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/transcoderjobtemplate/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/transcoderjobtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/transcoder_job_template google_transcoder_job_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/transcoder_job_template google_transcoder_job_template}.
 type TranscoderJobTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_TranscoderJobTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/transcoder_job_template google_transcoder_job_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/transcoder_job_template google_transcoder_job_template} Resource.
 func NewTranscoderJobTemplate(scope constructs.Construct, id *string, config *TranscoderJobTemplateConfig) TranscoderJobTemplate {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewTranscoderJobTemplate(scope constructs.Construct, id *string, config *Tr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/transcoder_job_template google_transcoder_job_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/transcoder_job_template google_transcoder_job_template} Resource.
 func NewTranscoderJobTemplate_Override(t TranscoderJobTemplate, scope constructs.Construct, id *string, config *TranscoderJobTemplateConfig) {
 	_init_.Initialize()
 

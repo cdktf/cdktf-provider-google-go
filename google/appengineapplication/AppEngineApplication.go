@@ -5,14 +5,14 @@ package appengineapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/appengineapplication/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/appengineapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/app_engine_application google_app_engine_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/app_engine_application google_app_engine_application}.
 type AppEngineApplication interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -578,7 +578,7 @@ func (j *jsiiProxy_AppEngineApplication) UrlDispatchRule() AppEngineApplicationU
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/app_engine_application google_app_engine_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/app_engine_application google_app_engine_application} Resource.
 func NewAppEngineApplication(scope constructs.Construct, id *string, config *AppEngineApplicationConfig) AppEngineApplication {
 	_init_.Initialize()
 
@@ -596,7 +596,7 @@ func NewAppEngineApplication(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/app_engine_application google_app_engine_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/app_engine_application google_app_engine_application} Resource.
 func NewAppEngineApplication_Override(a AppEngineApplication, scope constructs.Construct, id *string, config *AppEngineApplicationConfig) {
 	_init_.Initialize()
 

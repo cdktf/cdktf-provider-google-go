@@ -5,14 +5,14 @@ package networkservicestcproute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/networkservicestcproute/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/networkservicestcproute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_services_tcp_route google_network_services_tcp_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_services_tcp_route google_network_services_tcp_route}.
 type NetworkServicesTcpRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -555,7 +555,7 @@ func (j *jsiiProxy_NetworkServicesTcpRoute) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_services_tcp_route google_network_services_tcp_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_services_tcp_route google_network_services_tcp_route} Resource.
 func NewNetworkServicesTcpRoute(scope constructs.Construct, id *string, config *NetworkServicesTcpRouteConfig) NetworkServicesTcpRoute {
 	_init_.Initialize()
 
@@ -573,7 +573,7 @@ func NewNetworkServicesTcpRoute(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_services_tcp_route google_network_services_tcp_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_services_tcp_route google_network_services_tcp_route} Resource.
 func NewNetworkServicesTcpRoute_Override(n NetworkServicesTcpRoute, scope constructs.Construct, id *string, config *NetworkServicesTcpRouteConfig) {
 	_init_.Initialize()
 

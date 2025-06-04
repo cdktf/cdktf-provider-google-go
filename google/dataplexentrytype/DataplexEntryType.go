@@ -5,14 +5,14 @@ package dataplexentrytype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/dataplexentrytype/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/dataplexentrytype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataplex_entry_type google_dataplex_entry_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dataplex_entry_type google_dataplex_entry_type}.
 type DataplexEntryType interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -640,7 +640,7 @@ func (j *jsiiProxy_DataplexEntryType) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataplex_entry_type google_dataplex_entry_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dataplex_entry_type google_dataplex_entry_type} Resource.
 func NewDataplexEntryType(scope constructs.Construct, id *string, config *DataplexEntryTypeConfig) DataplexEntryType {
 	_init_.Initialize()
 
@@ -658,7 +658,7 @@ func NewDataplexEntryType(scope constructs.Construct, id *string, config *Datapl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataplex_entry_type google_dataplex_entry_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dataplex_entry_type google_dataplex_entry_type} Resource.
 func NewDataplexEntryType_Override(d DataplexEntryType, scope constructs.Construct, id *string, config *DataplexEntryTypeConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package networksecurityinterceptdeployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/networksecurityinterceptdeployment/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/networksecurityinterceptdeployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_security_intercept_deployment google_network_security_intercept_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_security_intercept_deployment google_network_security_intercept_deployment}.
 type NetworkSecurityInterceptDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -575,7 +575,7 @@ func (j *jsiiProxy_NetworkSecurityInterceptDeployment) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_security_intercept_deployment google_network_security_intercept_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_security_intercept_deployment google_network_security_intercept_deployment} Resource.
 func NewNetworkSecurityInterceptDeployment(scope constructs.Construct, id *string, config *NetworkSecurityInterceptDeploymentConfig) NetworkSecurityInterceptDeployment {
 	_init_.Initialize()
 
@@ -593,7 +593,7 @@ func NewNetworkSecurityInterceptDeployment(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_security_intercept_deployment google_network_security_intercept_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_security_intercept_deployment google_network_security_intercept_deployment} Resource.
 func NewNetworkSecurityInterceptDeployment_Override(n NetworkSecurityInterceptDeployment, scope constructs.Construct, id *string, config *NetworkSecurityInterceptDeploymentConfig) {
 	_init_.Initialize()
 

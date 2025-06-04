@@ -218,6 +218,17 @@ func (d *jsiiProxy_DnsPolicy) validatePutAlternativeNameServerConfigParameters(v
 	return nil
 }
 
+func (d *jsiiProxy_DnsPolicy) validatePutDns64ConfigParameters(value *DnsPolicyDns64Config) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DnsPolicy) validatePutNetworksParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -5,14 +5,14 @@ package dataprocgdcsparkapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/dataprocgdcsparkapplication/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/dataprocgdcsparkapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataproc_gdc_spark_application google_dataproc_gdc_spark_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dataproc_gdc_spark_application google_dataproc_gdc_spark_application}.
 type DataprocGdcSparkApplication interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -847,7 +847,7 @@ func (j *jsiiProxy_DataprocGdcSparkApplication) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataproc_gdc_spark_application google_dataproc_gdc_spark_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dataproc_gdc_spark_application google_dataproc_gdc_spark_application} Resource.
 func NewDataprocGdcSparkApplication(scope constructs.Construct, id *string, config *DataprocGdcSparkApplicationConfig) DataprocGdcSparkApplication {
 	_init_.Initialize()
 
@@ -865,7 +865,7 @@ func NewDataprocGdcSparkApplication(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataproc_gdc_spark_application google_dataproc_gdc_spark_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dataproc_gdc_spark_application google_dataproc_gdc_spark_application} Resource.
 func NewDataprocGdcSparkApplication_Override(d DataprocGdcSparkApplication, scope constructs.Construct, id *string, config *DataprocGdcSparkApplicationConfig) {
 	_init_.Initialize()
 

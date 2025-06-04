@@ -5,14 +5,14 @@ package computeresizerequest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/computeresizerequest/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/computeresizerequest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_resize_request google_compute_resize_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_resize_request google_compute_resize_request}.
 type ComputeResizeRequest interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -532,7 +532,7 @@ func (j *jsiiProxy_ComputeResizeRequest) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_resize_request google_compute_resize_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_resize_request google_compute_resize_request} Resource.
 func NewComputeResizeRequest(scope constructs.Construct, id *string, config *ComputeResizeRequestConfig) ComputeResizeRequest {
 	_init_.Initialize()
 
@@ -550,7 +550,7 @@ func NewComputeResizeRequest(scope constructs.Construct, id *string, config *Com
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_resize_request google_compute_resize_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_resize_request google_compute_resize_request} Resource.
 func NewComputeResizeRequest_Override(c ComputeResizeRequest, scope constructs.Construct, id *string, config *ComputeResizeRequestConfig) {
 	_init_.Initialize()
 

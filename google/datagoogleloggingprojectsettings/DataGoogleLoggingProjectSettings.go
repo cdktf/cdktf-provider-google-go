@@ -5,14 +5,14 @@ package datagoogleloggingprojectsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagoogleloggingprojectsettings/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/datagoogleloggingprojectsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/logging_project_settings google_logging_project_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/logging_project_settings google_logging_project_settings}.
 type DataGoogleLoggingProjectSettings interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_DataGoogleLoggingProjectSettings) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/logging_project_settings google_logging_project_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/logging_project_settings google_logging_project_settings} Data Source.
 func NewDataGoogleLoggingProjectSettings(scope constructs.Construct, id *string, config *DataGoogleLoggingProjectSettingsConfig) DataGoogleLoggingProjectSettings {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewDataGoogleLoggingProjectSettings(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/logging_project_settings google_logging_project_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/logging_project_settings google_logging_project_settings} Data Source.
 func NewDataGoogleLoggingProjectSettings_Override(d DataGoogleLoggingProjectSettings, scope constructs.Construct, id *string, config *DataGoogleLoggingProjectSettingsConfig) {
 	_init_.Initialize()
 

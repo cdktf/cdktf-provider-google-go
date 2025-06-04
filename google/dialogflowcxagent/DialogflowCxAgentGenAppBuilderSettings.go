@@ -9,7 +9,7 @@ type DialogflowCxAgentGenAppBuilderSettings struct {
 	//
 	// Format: projects/{Project ID}/locations/{Location ID}/collections/{Collection ID}/engines/{Engine ID}
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dialogflow_cx_agent#engine DialogflowCxAgent#engine}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dialogflow_cx_agent#engine DialogflowCxAgent#engine}
 	Engine *string `field:"required" json:"engine" yaml:"engine"`
 }
 

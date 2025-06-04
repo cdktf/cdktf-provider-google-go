@@ -19,7 +19,7 @@ type DataCatalogEntryGcsFilesetSpec struct {
 	// * gs://bucket_name/a/* /b: matches all files in bucket_name that match a/* /b pattern, such as a/c/b, a/d/b
 	// * gs://another_bucket/a.txt: matches gs://another_bucket/a.txt
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/data_catalog_entry#file_patterns DataCatalogEntry#file_patterns}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/data_catalog_entry#file_patterns DataCatalogEntry#file_patterns}
 	//
 	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	FilePatterns *[]*string `field:"required" json:"filePatterns" yaml:"filePatterns"`

@@ -5,14 +5,14 @@ package computeinstancesettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/computeinstancesettings/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/computeinstancesettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_instance_settings google_compute_instance_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_instance_settings google_compute_instance_settings}.
 type ComputeInstanceSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_ComputeInstanceSettings) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_instance_settings google_compute_instance_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_instance_settings google_compute_instance_settings} Resource.
 func NewComputeInstanceSettings(scope constructs.Construct, id *string, config *ComputeInstanceSettingsConfig) ComputeInstanceSettings {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewComputeInstanceSettings(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_instance_settings google_compute_instance_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_instance_settings google_compute_instance_settings} Resource.
 func NewComputeInstanceSettings_Override(c ComputeInstanceSettings, scope constructs.Construct, id *string, config *ComputeInstanceSettingsConfig) {
 	_init_.Initialize()
 

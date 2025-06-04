@@ -5,14 +5,14 @@ package tagstagbinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/tagstagbinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/tagstagbinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/tags_tag_binding google_tags_tag_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/tags_tag_binding google_tags_tag_binding}.
 type TagsTagBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_TagsTagBinding) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/tags_tag_binding google_tags_tag_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/tags_tag_binding google_tags_tag_binding} Resource.
 func NewTagsTagBinding(scope constructs.Construct, id *string, config *TagsTagBindingConfig) TagsTagBinding {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewTagsTagBinding(scope constructs.Construct, id *string, config *TagsTagBi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/tags_tag_binding google_tags_tag_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/tags_tag_binding google_tags_tag_binding} Resource.
 func NewTagsTagBinding_Override(t TagsTagBinding, scope constructs.Construct, id *string, config *TagsTagBindingConfig) {
 	_init_.Initialize()
 

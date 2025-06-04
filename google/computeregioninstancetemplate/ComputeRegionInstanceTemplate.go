@@ -5,14 +5,14 @@ package computeregioninstancetemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/computeregioninstancetemplate/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/computeregioninstancetemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_region_instance_template google_compute_region_instance_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_region_instance_template google_compute_region_instance_template}.
 type ComputeRegionInstanceTemplate interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() ComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference
@@ -96,6 +96,7 @@ type ComputeRegionInstanceTemplate interface {
 	NetworkPerformanceConfigInput() *ComputeRegionInstanceTemplateNetworkPerformanceConfig
 	// The tree node.
 	Node() constructs.Node
+	NumericId() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -731,6 +732,16 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplate) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeRegionInstanceTemplate) NumericId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"numericId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeRegionInstanceTemplate) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1022,7 +1033,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_region_instance_template google_compute_region_instance_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_region_instance_template google_compute_region_instance_template} Resource.
 func NewComputeRegionInstanceTemplate(scope constructs.Construct, id *string, config *ComputeRegionInstanceTemplateConfig) ComputeRegionInstanceTemplate {
 	_init_.Initialize()
 
@@ -1040,7 +1051,7 @@ func NewComputeRegionInstanceTemplate(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_region_instance_template google_compute_region_instance_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_region_instance_template google_compute_region_instance_template} Resource.
 func NewComputeRegionInstanceTemplate_Override(c ComputeRegionInstanceTemplate, scope constructs.Construct, id *string, config *ComputeRegionInstanceTemplateConfig) {
 	_init_.Initialize()
 

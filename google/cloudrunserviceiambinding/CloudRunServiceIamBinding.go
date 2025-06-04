@@ -5,14 +5,14 @@ package cloudrunserviceiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/cloudrunserviceiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/cloudrunserviceiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_service_iam_binding google_cloud_run_service_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_service_iam_binding google_cloud_run_service_iam_binding}.
 type CloudRunServiceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_CloudRunServiceIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_service_iam_binding google_cloud_run_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_service_iam_binding google_cloud_run_service_iam_binding} Resource.
 func NewCloudRunServiceIamBinding(scope constructs.Construct, id *string, config *CloudRunServiceIamBindingConfig) CloudRunServiceIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewCloudRunServiceIamBinding(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloud_run_service_iam_binding google_cloud_run_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloud_run_service_iam_binding google_cloud_run_service_iam_binding} Resource.
 func NewCloudRunServiceIamBinding_Override(c CloudRunServiceIamBinding, scope constructs.Construct, id *string, config *CloudRunServiceIamBindingConfig) {
 	_init_.Initialize()
 

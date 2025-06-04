@@ -5,14 +5,14 @@ package managedkafkatopic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/managedkafkatopic/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/managedkafkatopic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/managed_kafka_topic google_managed_kafka_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/managed_kafka_topic google_managed_kafka_topic}.
 type ManagedKafkaTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -509,7 +509,7 @@ func (j *jsiiProxy_ManagedKafkaTopic) TopicIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/managed_kafka_topic google_managed_kafka_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/managed_kafka_topic google_managed_kafka_topic} Resource.
 func NewManagedKafkaTopic(scope constructs.Construct, id *string, config *ManagedKafkaTopicConfig) ManagedKafkaTopic {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewManagedKafkaTopic(scope constructs.Construct, id *string, config *Manage
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/managed_kafka_topic google_managed_kafka_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/managed_kafka_topic google_managed_kafka_topic} Resource.
 func NewManagedKafkaTopic_Override(m ManagedKafkaTopic, scope constructs.Construct, id *string, config *ManagedKafkaTopicConfig) {
 	_init_.Initialize()
 

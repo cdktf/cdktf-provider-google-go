@@ -64,6 +64,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "nat64Subnetwork", GoGetter: "Nat64Subnetwork"},
+			_jsii_.MemberProperty{JsiiProperty: "nat64SubnetworkInput", GoGetter: "Nat64SubnetworkInput"},
 			_jsii_.MemberProperty{JsiiProperty: "natIpAllocateOption", GoGetter: "NatIpAllocateOption"},
 			_jsii_.MemberProperty{JsiiProperty: "natIpAllocateOptionInput", GoGetter: "NatIpAllocateOptionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "natIps", GoGetter: "NatIps"},
@@ -75,6 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putLogConfig", GoMethod: "PutLogConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putNat64Subnetwork", GoMethod: "PutNat64Subnetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "putRules", GoMethod: "PutRules"},
 			_jsii_.MemberMethod{JsiiMethod: "putSubnetwork", GoMethod: "PutSubnetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
@@ -92,12 +95,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLogConfig", GoMethod: "ResetLogConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxPortsPerVm", GoMethod: "ResetMaxPortsPerVm"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMinPortsPerVm", GoMethod: "ResetMinPortsPerVm"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNat64Subnetwork", GoMethod: "ResetNat64Subnetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNatIpAllocateOption", GoMethod: "ResetNatIpAllocateOption"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNatIps", GoMethod: "ResetNatIps"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRules", GoMethod: "ResetRules"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceSubnetworkIpRangesToNat64", GoMethod: "ResetSourceSubnetworkIpRangesToNat64"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubnetwork", GoMethod: "ResetSubnetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTcpEstablishedIdleTimeoutSec", GoMethod: "ResetTcpEstablishedIdleTimeoutSec"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTcpTimeWaitTimeoutSec", GoMethod: "ResetTcpTimeWaitTimeoutSec"},
@@ -110,6 +115,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rules", GoGetter: "Rules"},
 			_jsii_.MemberProperty{JsiiProperty: "rulesInput", GoGetter: "RulesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceSubnetworkIpRangesToNat", GoGetter: "SourceSubnetworkIpRangesToNat"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceSubnetworkIpRangesToNat64", GoGetter: "SourceSubnetworkIpRangesToNat64"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceSubnetworkIpRangesToNat64Input", GoGetter: "SourceSubnetworkIpRangesToNat64Input"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceSubnetworkIpRangesToNatInput", GoGetter: "SourceSubnetworkIpRangesToNatInput"},
 			_jsii_.MemberProperty{JsiiProperty: "subnetwork", GoGetter: "Subnetwork"},
 			_jsii_.MemberProperty{JsiiProperty: "subnetworkInput", GoGetter: "SubnetworkInput"},
@@ -181,6 +188,66 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRouterNatLogConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork",
+		reflect.TypeOf((*ComputeRouterNatNat64Subnetwork)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkList",
+		reflect.TypeOf((*ComputeRouterNatNat64SubnetworkList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeRouterNatNat64SubnetworkList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkOutputReference",
+		reflect.TypeOf((*ComputeRouterNatNat64SubnetworkOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_ComputeRouterNatNat64SubnetworkOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -5,14 +5,14 @@ package workflowsworkflow
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/workflowsworkflow/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/workflowsworkflow/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/workflows_workflow google_workflows_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/workflows_workflow google_workflows_workflow}.
 type WorkflowsWorkflow interface {
 	cdktf.TerraformResource
 	CallLogLevel() *string
@@ -736,7 +736,7 @@ func (j *jsiiProxy_WorkflowsWorkflow) UserEnvVarsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
 func NewWorkflowsWorkflow(scope constructs.Construct, id *string, config *WorkflowsWorkflowConfig) WorkflowsWorkflow {
 	_init_.Initialize()
 
@@ -754,7 +754,7 @@ func NewWorkflowsWorkflow(scope constructs.Construct, id *string, config *Workfl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/workflows_workflow google_workflows_workflow} Resource.
 func NewWorkflowsWorkflow_Override(w WorkflowsWorkflow, scope constructs.Construct, id *string, config *WorkflowsWorkflowConfig) {
 	_init_.Initialize()
 

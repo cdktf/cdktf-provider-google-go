@@ -5,14 +5,14 @@ package computeinterconnect
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/computeinterconnect/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/computeinterconnect/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_interconnect google_compute_interconnect}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_interconnect google_compute_interconnect}.
 type ComputeInterconnect interface {
 	cdktf.TerraformResource
 	AdminEnabled() interface{}
@@ -854,7 +854,7 @@ func (j *jsiiProxy_ComputeInterconnect) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_interconnect google_compute_interconnect} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_interconnect google_compute_interconnect} Resource.
 func NewComputeInterconnect(scope constructs.Construct, id *string, config *ComputeInterconnectConfig) ComputeInterconnect {
 	_init_.Initialize()
 
@@ -872,7 +872,7 @@ func NewComputeInterconnect(scope constructs.Construct, id *string, config *Comp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_interconnect google_compute_interconnect} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_interconnect google_compute_interconnect} Resource.
 func NewComputeInterconnect_Override(c ComputeInterconnect, scope constructs.Construct, id *string, config *ComputeInterconnectConfig) {
 	_init_.Initialize()
 

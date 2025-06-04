@@ -5,14 +5,14 @@ package eventarcgoogleapisource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/eventarcgoogleapisource/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/eventarcgoogleapisource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/eventarc_google_api_source google_eventarc_google_api_source}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/eventarc_google_api_source google_eventarc_google_api_source}.
 type EventarcGoogleApiSource interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -635,7 +635,7 @@ func (j *jsiiProxy_EventarcGoogleApiSource) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/eventarc_google_api_source google_eventarc_google_api_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/eventarc_google_api_source google_eventarc_google_api_source} Resource.
 func NewEventarcGoogleApiSource(scope constructs.Construct, id *string, config *EventarcGoogleApiSourceConfig) EventarcGoogleApiSource {
 	_init_.Initialize()
 
@@ -653,7 +653,7 @@ func NewEventarcGoogleApiSource(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/eventarc_google_api_source google_eventarc_google_api_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/eventarc_google_api_source google_eventarc_google_api_source} Resource.
 func NewEventarcGoogleApiSource_Override(e EventarcGoogleApiSource, scope constructs.Construct, id *string, config *EventarcGoogleApiSourceConfig) {
 	_init_.Initialize()
 

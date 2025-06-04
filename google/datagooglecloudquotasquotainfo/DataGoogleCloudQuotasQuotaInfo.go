@@ -5,14 +5,14 @@ package datagooglecloudquotasquotainfo
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglecloudquotasquotainfo/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/datagooglecloudquotasquotainfo/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/cloud_quotas_quota_info google_cloud_quotas_quota_info}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/cloud_quotas_quota_info google_cloud_quotas_quota_info}.
 type DataGoogleCloudQuotasQuotaInfo interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -488,7 +488,7 @@ func (j *jsiiProxy_DataGoogleCloudQuotasQuotaInfo) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/cloud_quotas_quota_info google_cloud_quotas_quota_info} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/cloud_quotas_quota_info google_cloud_quotas_quota_info} Data Source.
 func NewDataGoogleCloudQuotasQuotaInfo(scope constructs.Construct, id *string, config *DataGoogleCloudQuotasQuotaInfoConfig) DataGoogleCloudQuotasQuotaInfo {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewDataGoogleCloudQuotasQuotaInfo(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/cloud_quotas_quota_info google_cloud_quotas_quota_info} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/cloud_quotas_quota_info google_cloud_quotas_quota_info} Data Source.
 func NewDataGoogleCloudQuotasQuotaInfo_Override(d DataGoogleCloudQuotasQuotaInfo, scope constructs.Construct, id *string, config *DataGoogleCloudQuotasQuotaInfoConfig) {
 	_init_.Initialize()
 

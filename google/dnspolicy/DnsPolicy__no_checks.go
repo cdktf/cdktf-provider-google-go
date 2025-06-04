@@ -79,6 +79,10 @@ func (d *jsiiProxy_DnsPolicy) validatePutAlternativeNameServerConfigParameters(v
 	return nil
 }
 
+func (d *jsiiProxy_DnsPolicy) validatePutDns64ConfigParameters(value *DnsPolicyDns64Config) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsPolicy) validatePutNetworksParameters(value interface{}) error {
 	return nil
 }

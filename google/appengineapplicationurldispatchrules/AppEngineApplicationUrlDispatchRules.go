@@ -5,14 +5,14 @@ package appengineapplicationurldispatchrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/appengineapplicationurldispatchrules/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/appengineapplicationurldispatchrules/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules}.
 type AppEngineApplicationUrlDispatchRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_AppEngineApplicationUrlDispatchRules) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules} Resource.
 func NewAppEngineApplicationUrlDispatchRules(scope constructs.Construct, id *string, config *AppEngineApplicationUrlDispatchRulesConfig) AppEngineApplicationUrlDispatchRules {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewAppEngineApplicationUrlDispatchRules(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules} Resource.
 func NewAppEngineApplicationUrlDispatchRules_Override(a AppEngineApplicationUrlDispatchRules, scope constructs.Construct, id *string, config *AppEngineApplicationUrlDispatchRulesConfig) {
 	_init_.Initialize()
 

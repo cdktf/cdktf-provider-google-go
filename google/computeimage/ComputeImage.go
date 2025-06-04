@@ -5,14 +5,14 @@ package computeimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/computeimage/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/computeimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_image google_compute_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_image google_compute_image}.
 type ComputeImage interface {
 	cdktf.TerraformResource
 	ArchiveSizeBytes() *float64
@@ -831,7 +831,7 @@ func (j *jsiiProxy_ComputeImage) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_image google_compute_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_image google_compute_image} Resource.
 func NewComputeImage(scope constructs.Construct, id *string, config *ComputeImageConfig) ComputeImage {
 	_init_.Initialize()
 
@@ -849,7 +849,7 @@ func NewComputeImage(scope constructs.Construct, id *string, config *ComputeImag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_image google_compute_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_image google_compute_image} Resource.
 func NewComputeImage_Override(c ComputeImage, scope constructs.Construct, id *string, config *ComputeImageConfig) {
 	_init_.Initialize()
 

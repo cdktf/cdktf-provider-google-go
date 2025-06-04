@@ -5,14 +5,14 @@ package securitypostureposturedeployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/securitypostureposturedeployment/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/securitypostureposturedeployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/securityposture_posture_deployment google_securityposture_posture_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/securityposture_posture_deployment google_securityposture_posture_deployment}.
 type SecurityposturePostureDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -595,7 +595,7 @@ func (j *jsiiProxy_SecurityposturePostureDeployment) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/securityposture_posture_deployment google_securityposture_posture_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/securityposture_posture_deployment google_securityposture_posture_deployment} Resource.
 func NewSecurityposturePostureDeployment(scope constructs.Construct, id *string, config *SecurityposturePostureDeploymentConfig) SecurityposturePostureDeployment {
 	_init_.Initialize()
 
@@ -613,7 +613,7 @@ func NewSecurityposturePostureDeployment(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/securityposture_posture_deployment google_securityposture_posture_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/securityposture_posture_deployment google_securityposture_posture_deployment} Resource.
 func NewSecurityposturePostureDeployment_Override(s SecurityposturePostureDeployment, scope constructs.Construct, id *string, config *SecurityposturePostureDeploymentConfig) {
 	_init_.Initialize()
 

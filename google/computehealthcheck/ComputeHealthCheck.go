@@ -5,14 +5,14 @@ package computehealthcheck
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/computehealthcheck/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/computehealthcheck/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_health_check google_compute_health_check}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_health_check google_compute_health_check}.
 type ComputeHealthCheck interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -726,7 +726,7 @@ func (j *jsiiProxy_ComputeHealthCheck) UnhealthyThresholdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_health_check google_compute_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_health_check google_compute_health_check} Resource.
 func NewComputeHealthCheck(scope constructs.Construct, id *string, config *ComputeHealthCheckConfig) ComputeHealthCheck {
 	_init_.Initialize()
 
@@ -744,7 +744,7 @@ func NewComputeHealthCheck(scope constructs.Construct, id *string, config *Compu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_health_check google_compute_health_check} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_health_check google_compute_health_check} Resource.
 func NewComputeHealthCheck_Override(c ComputeHealthCheck, scope constructs.Construct, id *string, config *ComputeHealthCheckConfig) {
 	_init_.Initialize()
 

@@ -7,11 +7,11 @@ package containercluster
 type ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs struct {
 	// Name of the VPC where the additional interface belongs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/container_cluster#network ContainerCluster#network}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/container_cluster#network ContainerCluster#network}
 	Network *string `field:"optional" json:"network" yaml:"network"`
 	// Name of the subnetwork where the additional interface belongs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
 	Subnetwork *string `field:"optional" json:"subnetwork" yaml:"subnetwork"`
 }
 

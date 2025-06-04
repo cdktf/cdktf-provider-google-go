@@ -5,14 +5,14 @@ package networkservicesgrpcroute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/networkservicesgrpcroute/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/networkservicesgrpcroute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_services_grpc_route google_network_services_grpc_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_services_grpc_route google_network_services_grpc_route}.
 type NetworkServicesGrpcRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -602,7 +602,7 @@ func (j *jsiiProxy_NetworkServicesGrpcRoute) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_services_grpc_route google_network_services_grpc_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_services_grpc_route google_network_services_grpc_route} Resource.
 func NewNetworkServicesGrpcRoute(scope constructs.Construct, id *string, config *NetworkServicesGrpcRouteConfig) NetworkServicesGrpcRoute {
 	_init_.Initialize()
 
@@ -620,7 +620,7 @@ func NewNetworkServicesGrpcRoute(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_services_grpc_route google_network_services_grpc_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_services_grpc_route google_network_services_grpc_route} Resource.
 func NewNetworkServicesGrpcRoute_Override(n NetworkServicesGrpcRoute, scope constructs.Construct, id *string, config *NetworkServicesGrpcRouteConfig) {
 	_init_.Initialize()
 

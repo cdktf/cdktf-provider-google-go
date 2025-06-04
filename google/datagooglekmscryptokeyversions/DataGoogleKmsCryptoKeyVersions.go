@@ -5,14 +5,14 @@ package datagooglekmscryptokeyversions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglekmscryptokeyversions/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/datagooglekmscryptokeyversions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/kms_crypto_key_versions google_kms_crypto_key_versions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/kms_crypto_key_versions google_kms_crypto_key_versions}.
 type DataGoogleKmsCryptoKeyVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -334,7 +334,7 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKeyVersions) Versions() DataGoogleKmsCrypt
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/kms_crypto_key_versions google_kms_crypto_key_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/kms_crypto_key_versions google_kms_crypto_key_versions} Data Source.
 func NewDataGoogleKmsCryptoKeyVersions(scope constructs.Construct, id *string, config *DataGoogleKmsCryptoKeyVersionsConfig) DataGoogleKmsCryptoKeyVersions {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewDataGoogleKmsCryptoKeyVersions(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/kms_crypto_key_versions google_kms_crypto_key_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/kms_crypto_key_versions google_kms_crypto_key_versions} Data Source.
 func NewDataGoogleKmsCryptoKeyVersions_Override(d DataGoogleKmsCryptoKeyVersions, scope constructs.Construct, id *string, config *DataGoogleKmsCryptoKeyVersionsConfig) {
 	_init_.Initialize()
 

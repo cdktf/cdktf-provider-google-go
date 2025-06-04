@@ -5,14 +5,14 @@ package dataprocmetastoredatabaseiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/dataprocmetastoredatabaseiammember/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/dataprocmetastoredatabaseiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataproc_metastore_database_iam_member google_dataproc_metastore_database_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dataproc_metastore_database_iam_member google_dataproc_metastore_database_iam_member}.
 type DataprocMetastoreDatabaseIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_DataprocMetastoreDatabaseIamMember) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataproc_metastore_database_iam_member google_dataproc_metastore_database_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dataproc_metastore_database_iam_member google_dataproc_metastore_database_iam_member} Resource.
 func NewDataprocMetastoreDatabaseIamMember(scope constructs.Construct, id *string, config *DataprocMetastoreDatabaseIamMemberConfig) DataprocMetastoreDatabaseIamMember {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewDataprocMetastoreDatabaseIamMember(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/dataproc_metastore_database_iam_member google_dataproc_metastore_database_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/dataproc_metastore_database_iam_member google_dataproc_metastore_database_iam_member} Resource.
 func NewDataprocMetastoreDatabaseIamMember_Override(d DataprocMetastoreDatabaseIamMember, scope constructs.Construct, id *string, config *DataprocMetastoreDatabaseIamMemberConfig) {
 	_init_.Initialize()
 

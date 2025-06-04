@@ -5,14 +5,14 @@ package datagooglecomputerouternat
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglecomputerouternat/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/datagooglecomputerouternat/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/compute_router_nat google_compute_router_nat}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/compute_router_nat google_compute_router_nat}.
 type DataGoogleComputeRouterNat interface {
 	cdktf.TerraformDataSource
 	AutoNetworkTier() *string
@@ -55,6 +55,7 @@ type DataGoogleComputeRouterNat interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Nat64Subnetwork() DataGoogleComputeRouterNatNat64SubnetworkList
 	NatIpAllocateOption() *string
 	NatIps() *[]*string
 	// The tree node.
@@ -76,6 +77,7 @@ type DataGoogleComputeRouterNat interface {
 	RouterInput() *string
 	Rules() DataGoogleComputeRouterNatRulesList
 	SourceSubnetworkIpRangesToNat() *string
+	SourceSubnetworkIpRangesToNat64() *string
 	Subnetwork() DataGoogleComputeRouterNatSubnetworkList
 	TcpEstablishedIdleTimeoutSec() *float64
 	TcpTimeWaitTimeoutSec() *float64
@@ -358,6 +360,16 @@ func (j *jsiiProxy_DataGoogleComputeRouterNat) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRouterNat) Nat64Subnetwork() DataGoogleComputeRouterNatNat64SubnetworkList {
+	var returns DataGoogleComputeRouterNatNat64SubnetworkList
+	_jsii_.Get(
+		j,
+		"nat64Subnetwork",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRouterNat) NatIpAllocateOption() *string {
 	var returns *string
 	_jsii_.Get(
@@ -488,6 +500,16 @@ func (j *jsiiProxy_DataGoogleComputeRouterNat) SourceSubnetworkIpRangesToNat() *
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRouterNat) SourceSubnetworkIpRangesToNat64() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceSubnetworkIpRangesToNat64",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRouterNat) Subnetwork() DataGoogleComputeRouterNatSubnetworkList {
 	var returns DataGoogleComputeRouterNatSubnetworkList
 	_jsii_.Get(
@@ -579,7 +601,7 @@ func (j *jsiiProxy_DataGoogleComputeRouterNat) UdpIdleTimeoutSec() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/compute_router_nat google_compute_router_nat} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/compute_router_nat google_compute_router_nat} Data Source.
 func NewDataGoogleComputeRouterNat(scope constructs.Construct, id *string, config *DataGoogleComputeRouterNatConfig) DataGoogleComputeRouterNat {
 	_init_.Initialize()
 
@@ -597,7 +619,7 @@ func NewDataGoogleComputeRouterNat(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/compute_router_nat google_compute_router_nat} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/compute_router_nat google_compute_router_nat} Data Source.
 func NewDataGoogleComputeRouterNat_Override(d DataGoogleComputeRouterNat, scope constructs.Construct, id *string, config *DataGoogleComputeRouterNatConfig) {
 	_init_.Initialize()
 

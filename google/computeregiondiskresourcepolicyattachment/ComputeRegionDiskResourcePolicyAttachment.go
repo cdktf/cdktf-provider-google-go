@@ -5,14 +5,14 @@ package computeregiondiskresourcepolicyattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/computeregiondiskresourcepolicyattachment/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/computeregiondiskresourcepolicyattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_region_disk_resource_policy_attachment google_compute_region_disk_resource_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_region_disk_resource_policy_attachment google_compute_region_disk_resource_policy_attachment}.
 type ComputeRegionDiskResourcePolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_ComputeRegionDiskResourcePolicyAttachment) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_region_disk_resource_policy_attachment google_compute_region_disk_resource_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_region_disk_resource_policy_attachment google_compute_region_disk_resource_policy_attachment} Resource.
 func NewComputeRegionDiskResourcePolicyAttachment(scope constructs.Construct, id *string, config *ComputeRegionDiskResourcePolicyAttachmentConfig) ComputeRegionDiskResourcePolicyAttachment {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewComputeRegionDiskResourcePolicyAttachment(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_region_disk_resource_policy_attachment google_compute_region_disk_resource_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_region_disk_resource_policy_attachment google_compute_region_disk_resource_policy_attachment} Resource.
 func NewComputeRegionDiskResourcePolicyAttachment_Override(c ComputeRegionDiskResourcePolicyAttachment, scope constructs.Construct, id *string, config *ComputeRegionDiskResourcePolicyAttachmentConfig) {
 	_init_.Initialize()
 

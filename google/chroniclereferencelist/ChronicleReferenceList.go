@@ -5,14 +5,14 @@ package chroniclereferencelist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/chroniclereferencelist/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/chroniclereferencelist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/chronicle_reference_list google_chronicle_reference_list}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/chronicle_reference_list google_chronicle_reference_list}.
 type ChronicleReferenceList interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -562,7 +562,7 @@ func (j *jsiiProxy_ChronicleReferenceList) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/chronicle_reference_list google_chronicle_reference_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/chronicle_reference_list google_chronicle_reference_list} Resource.
 func NewChronicleReferenceList(scope constructs.Construct, id *string, config *ChronicleReferenceListConfig) ChronicleReferenceList {
 	_init_.Initialize()
 
@@ -580,7 +580,7 @@ func NewChronicleReferenceList(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/chronicle_reference_list google_chronicle_reference_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/chronicle_reference_list google_chronicle_reference_list} Resource.
 func NewChronicleReferenceList_Override(c ChronicleReferenceList, scope constructs.Construct, id *string, config *ChronicleReferenceListConfig) {
 	_init_.Initialize()
 

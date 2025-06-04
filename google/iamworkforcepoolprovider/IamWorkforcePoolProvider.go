@@ -5,14 +5,14 @@ package iamworkforcepoolprovider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/iamworkforcepoolprovider/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/iamworkforcepoolprovider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/iam_workforce_pool_provider google_iam_workforce_pool_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/iam_workforce_pool_provider google_iam_workforce_pool_provider}.
 type IamWorkforcePoolProvider interface {
 	cdktf.TerraformResource
 	AttributeCondition() *string
@@ -617,7 +617,7 @@ func (j *jsiiProxy_IamWorkforcePoolProvider) WorkforcePoolIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/iam_workforce_pool_provider google_iam_workforce_pool_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/iam_workforce_pool_provider google_iam_workforce_pool_provider} Resource.
 func NewIamWorkforcePoolProvider(scope constructs.Construct, id *string, config *IamWorkforcePoolProviderConfig) IamWorkforcePoolProvider {
 	_init_.Initialize()
 
@@ -635,7 +635,7 @@ func NewIamWorkforcePoolProvider(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/iam_workforce_pool_provider google_iam_workforce_pool_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/iam_workforce_pool_provider google_iam_workforce_pool_provider} Resource.
 func NewIamWorkforcePoolProvider_Override(i IamWorkforcePoolProvider, scope constructs.Construct, id *string, config *IamWorkforcePoolProviderConfig) {
 	_init_.Initialize()
 

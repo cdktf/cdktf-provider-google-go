@@ -5,14 +5,14 @@ package accesscontextmanageraccesspolicyiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/accesscontextmanageraccesspolicyiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/accesscontextmanageraccesspolicyiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/access_context_manager_access_policy_iam_binding google_access_context_manager_access_policy_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/access_context_manager_access_policy_iam_binding google_access_context_manager_access_policy_iam_binding}.
 type AccessContextManagerAccessPolicyIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBinding) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/access_context_manager_access_policy_iam_binding google_access_context_manager_access_policy_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/access_context_manager_access_policy_iam_binding google_access_context_manager_access_policy_iam_binding} Resource.
 func NewAccessContextManagerAccessPolicyIamBinding(scope constructs.Construct, id *string, config *AccessContextManagerAccessPolicyIamBindingConfig) AccessContextManagerAccessPolicyIamBinding {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewAccessContextManagerAccessPolicyIamBinding(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/access_context_manager_access_policy_iam_binding google_access_context_manager_access_policy_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/access_context_manager_access_policy_iam_binding google_access_context_manager_access_policy_iam_binding} Resource.
 func NewAccessContextManagerAccessPolicyIamBinding_Override(a AccessContextManagerAccessPolicyIamBinding, scope constructs.Construct, id *string, config *AccessContextManagerAccessPolicyIamBindingConfig) {
 	_init_.Initialize()
 

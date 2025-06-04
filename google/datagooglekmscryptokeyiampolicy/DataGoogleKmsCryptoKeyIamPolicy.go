@@ -5,14 +5,14 @@ package datagooglekmscryptokeyiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglekmscryptokeyiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/datagooglekmscryptokeyiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy}.
 type DataGoogleKmsCryptoKeyIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKeyIamPolicy) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy} Data Source.
 func NewDataGoogleKmsCryptoKeyIamPolicy(scope constructs.Construct, id *string, config *DataGoogleKmsCryptoKeyIamPolicyConfig) DataGoogleKmsCryptoKeyIamPolicy {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewDataGoogleKmsCryptoKeyIamPolicy(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy} Data Source.
 func NewDataGoogleKmsCryptoKeyIamPolicy_Override(d DataGoogleKmsCryptoKeyIamPolicy, scope constructs.Construct, id *string, config *DataGoogleKmsCryptoKeyIamPolicyConfig) {
 	_init_.Initialize()
 

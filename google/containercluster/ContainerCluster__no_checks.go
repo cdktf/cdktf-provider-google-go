@@ -187,6 +187,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutNotificationConfigParameters(val
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutPodAutoscalingParameters(value *ContainerClusterPodAutoscaling) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutPrivateClusterConfigParameters(value *ContainerClusterPrivateClusterConfig) error {
 	return nil
 }

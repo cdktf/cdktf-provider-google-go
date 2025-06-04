@@ -5,14 +5,14 @@ package discoveryenginechatengine
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/discoveryenginechatengine/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/discoveryenginechatengine/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/discovery_engine_chat_engine google_discovery_engine_chat_engine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/discovery_engine_chat_engine google_discovery_engine_chat_engine}.
 type DiscoveryEngineChatEngine interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -588,7 +588,7 @@ func (j *jsiiProxy_DiscoveryEngineChatEngine) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/discovery_engine_chat_engine google_discovery_engine_chat_engine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/discovery_engine_chat_engine google_discovery_engine_chat_engine} Resource.
 func NewDiscoveryEngineChatEngine(scope constructs.Construct, id *string, config *DiscoveryEngineChatEngineConfig) DiscoveryEngineChatEngine {
 	_init_.Initialize()
 
@@ -606,7 +606,7 @@ func NewDiscoveryEngineChatEngine(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/discovery_engine_chat_engine google_discovery_engine_chat_engine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/discovery_engine_chat_engine google_discovery_engine_chat_engine} Resource.
 func NewDiscoveryEngineChatEngine_Override(d DiscoveryEngineChatEngine, scope constructs.Construct, id *string, config *DiscoveryEngineChatEngineConfig) {
 	_init_.Initialize()
 

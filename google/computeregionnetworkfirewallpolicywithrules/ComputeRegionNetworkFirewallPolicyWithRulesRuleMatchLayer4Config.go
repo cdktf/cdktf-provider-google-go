@@ -13,7 +13,7 @@ type ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchLayer4Config struct {
 	// known protocol strings (tcp, udp, icmp, esp, ah, ipip, sctp),
 	// or the IP protocol number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_region_network_firewall_policy_with_rules#ip_protocol ComputeRegionNetworkFirewallPolicyWithRules#ip_protocol}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_region_network_firewall_policy_with_rules#ip_protocol ComputeRegionNetworkFirewallPolicyWithRules#ip_protocol}
 	IpProtocol *string `field:"required" json:"ipProtocol" yaml:"ipProtocol"`
 	// An optional list of ports to which this rule applies.
 	//
@@ -24,7 +24,7 @@ type ComputeRegionNetworkFirewallPolicyWithRulesRuleMatchLayer4Config struct {
 	// Example inputs include: ["22"], ["80","443"], and
 	// ["12345-12349"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_region_network_firewall_policy_with_rules#ports ComputeRegionNetworkFirewallPolicyWithRules#ports}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_region_network_firewall_policy_with_rules#ports ComputeRegionNetworkFirewallPolicyWithRules#ports}
 	Ports *[]*string `field:"optional" json:"ports" yaml:"ports"`
 }
 

@@ -5,14 +5,14 @@ package cloudbuildworkerpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/cloudbuildworkerpool/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/cloudbuildworkerpool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool}.
 type CloudbuildWorkerPool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -590,7 +590,7 @@ func (j *jsiiProxy_CloudbuildWorkerPool) WorkerConfigInput() *CloudbuildWorkerPo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
 func NewCloudbuildWorkerPool(scope constructs.Construct, id *string, config *CloudbuildWorkerPoolConfig) CloudbuildWorkerPool {
 	_init_.Initialize()
 
@@ -608,7 +608,7 @@ func NewCloudbuildWorkerPool(scope constructs.Construct, id *string, config *Clo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
 func NewCloudbuildWorkerPool_Override(c CloudbuildWorkerPool, scope constructs.Construct, id *string, config *CloudbuildWorkerPoolConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package colabnotebookexecution
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/colabnotebookexecution/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/colabnotebookexecution/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/colab_notebook_execution google_colab_notebook_execution}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/colab_notebook_execution google_colab_notebook_execution}.
 type ColabNotebookExecution interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -619,7 +619,7 @@ func (j *jsiiProxy_ColabNotebookExecution) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/colab_notebook_execution google_colab_notebook_execution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/colab_notebook_execution google_colab_notebook_execution} Resource.
 func NewColabNotebookExecution(scope constructs.Construct, id *string, config *ColabNotebookExecutionConfig) ColabNotebookExecution {
 	_init_.Initialize()
 
@@ -637,7 +637,7 @@ func NewColabNotebookExecution(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/colab_notebook_execution google_colab_notebook_execution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/colab_notebook_execution google_colab_notebook_execution} Resource.
 func NewColabNotebookExecution_Override(c ColabNotebookExecution, scope constructs.Construct, id *string, config *ColabNotebookExecutionConfig) {
 	_init_.Initialize()
 

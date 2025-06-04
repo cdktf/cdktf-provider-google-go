@@ -5,14 +5,14 @@ package computeregiontargethttpproxy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/computeregiontargethttpproxy/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/computeregiontargethttpproxy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_region_target_http_proxy google_compute_region_target_http_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_region_target_http_proxy google_compute_region_target_http_proxy}.
 type ComputeRegionTargetHttpProxy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -509,7 +509,7 @@ func (j *jsiiProxy_ComputeRegionTargetHttpProxy) UrlMapInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource.
 func NewComputeRegionTargetHttpProxy(scope constructs.Construct, id *string, config *ComputeRegionTargetHttpProxyConfig) ComputeRegionTargetHttpProxy {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewComputeRegionTargetHttpProxy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/compute_region_target_http_proxy google_compute_region_target_http_proxy} Resource.
 func NewComputeRegionTargetHttpProxy_Override(c ComputeRegionTargetHttpProxy, scope constructs.Construct, id *string, config *ComputeRegionTargetHttpProxyConfig) {
 	_init_.Initialize()
 

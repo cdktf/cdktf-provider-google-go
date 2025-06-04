@@ -5,14 +5,14 @@ package networkconnectivityhub
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/networkconnectivityhub/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/networkconnectivityhub/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_connectivity_hub google_network_connectivity_hub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_connectivity_hub google_network_connectivity_hub}.
 type NetworkConnectivityHub interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -579,7 +579,7 @@ func (j *jsiiProxy_NetworkConnectivityHub) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
 func NewNetworkConnectivityHub(scope constructs.Construct, id *string, config *NetworkConnectivityHubConfig) NetworkConnectivityHub {
 	_init_.Initialize()
 
@@ -597,7 +597,7 @@ func NewNetworkConnectivityHub(scope constructs.Construct, id *string, config *N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/network_connectivity_hub google_network_connectivity_hub} Resource.
 func NewNetworkConnectivityHub_Override(n NetworkConnectivityHub, scope constructs.Construct, id *string, config *NetworkConnectivityHubConfig) {
 	_init_.Initialize()
 

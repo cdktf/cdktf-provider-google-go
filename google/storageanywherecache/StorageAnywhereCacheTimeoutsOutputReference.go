@@ -5,9 +5,9 @@ package storageanywherecache
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/storageanywherecache/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/storageanywherecache/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

@@ -5,14 +5,14 @@ package organizationaccessapprovalsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/organizationaccessapprovalsettings/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/organizationaccessapprovalsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/organization_access_approval_settings google_organization_access_approval_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/organization_access_approval_settings google_organization_access_approval_settings}.
 type OrganizationAccessApprovalSettings interface {
 	cdktf.TerraformResource
 	ActiveKeyVersion() *string
@@ -472,7 +472,7 @@ func (j *jsiiProxy_OrganizationAccessApprovalSettings) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/organization_access_approval_settings google_organization_access_approval_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/organization_access_approval_settings google_organization_access_approval_settings} Resource.
 func NewOrganizationAccessApprovalSettings(scope constructs.Construct, id *string, config *OrganizationAccessApprovalSettingsConfig) OrganizationAccessApprovalSettings {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewOrganizationAccessApprovalSettings(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/organization_access_approval_settings google_organization_access_approval_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/organization_access_approval_settings google_organization_access_approval_settings} Resource.
 func NewOrganizationAccessApprovalSettings_Override(o OrganizationAccessApprovalSettings, scope constructs.Construct, id *string, config *OrganizationAccessApprovalSettingsConfig) {
 	_init_.Initialize()
 

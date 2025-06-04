@@ -5,14 +5,14 @@ package backupdrbackupplan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/backupdrbackupplan/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/backupdrbackupplan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan}.
 type BackupDrBackupPlan interface {
 	cdktf.TerraformResource
 	BackupPlanId() *string
@@ -541,7 +541,7 @@ func (j *jsiiProxy_BackupDrBackupPlan) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
 func NewBackupDrBackupPlan(scope constructs.Construct, id *string, config *BackupDrBackupPlanConfig) BackupDrBackupPlan {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewBackupDrBackupPlan(scope constructs.Construct, id *string, config *Backu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
 func NewBackupDrBackupPlan_Override(b BackupDrBackupPlan, scope constructs.Construct, id *string, config *BackupDrBackupPlanConfig) {
 	_init_.Initialize()
 

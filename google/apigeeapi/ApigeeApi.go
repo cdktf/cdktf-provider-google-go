@@ -5,14 +5,14 @@ package apigeeapi
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/apigeeapi/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/apigeeapi/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/apigee_api google_apigee_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/apigee_api google_apigee_api}.
 type ApigeeApi interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -471,7 +471,7 @@ func (j *jsiiProxy_ApigeeApi) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/apigee_api google_apigee_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/apigee_api google_apigee_api} Resource.
 func NewApigeeApi(scope constructs.Construct, id *string, config *ApigeeApiConfig) ApigeeApi {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewApigeeApi(scope constructs.Construct, id *string, config *ApigeeApiConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/apigee_api google_apigee_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/apigee_api google_apigee_api} Resource.
 func NewApigeeApi_Override(a ApigeeApi, scope constructs.Construct, id *string, config *ApigeeApiConfig) {
 	_init_.Initialize()
 

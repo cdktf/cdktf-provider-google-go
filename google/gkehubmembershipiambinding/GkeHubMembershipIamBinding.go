@@ -5,14 +5,14 @@ package gkehubmembershipiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/gkehubmembershipiambinding/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/gkehubmembershipiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/gke_hub_membership_iam_binding google_gke_hub_membership_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/gke_hub_membership_iam_binding google_gke_hub_membership_iam_binding}.
 type GkeHubMembershipIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GkeHubMembershipIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/gke_hub_membership_iam_binding google_gke_hub_membership_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/gke_hub_membership_iam_binding google_gke_hub_membership_iam_binding} Resource.
 func NewGkeHubMembershipIamBinding(scope constructs.Construct, id *string, config *GkeHubMembershipIamBindingConfig) GkeHubMembershipIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGkeHubMembershipIamBinding(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/gke_hub_membership_iam_binding google_gke_hub_membership_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/gke_hub_membership_iam_binding google_gke_hub_membership_iam_binding} Resource.
 func NewGkeHubMembershipIamBinding_Override(g GkeHubMembershipIamBinding, scope constructs.Construct, id *string, config *GkeHubMembershipIamBindingConfig) {
 	_init_.Initialize()
 

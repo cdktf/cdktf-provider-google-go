@@ -5,14 +5,14 @@ package secretmanagersecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/secretmanagersecret/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/secretmanagersecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/secret_manager_secret google_secret_manager_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/secret_manager_secret google_secret_manager_secret}.
 type SecretManagerSecret interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -651,7 +651,7 @@ func (j *jsiiProxy_SecretManagerSecret) VersionDestroyTtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/secret_manager_secret google_secret_manager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/secret_manager_secret google_secret_manager_secret} Resource.
 func NewSecretManagerSecret(scope constructs.Construct, id *string, config *SecretManagerSecretConfig) SecretManagerSecret {
 	_init_.Initialize()
 
@@ -669,7 +669,7 @@ func NewSecretManagerSecret(scope constructs.Construct, id *string, config *Secr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/secret_manager_secret google_secret_manager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/secret_manager_secret google_secret_manager_secret} Resource.
 func NewSecretManagerSecret_Override(s SecretManagerSecret, scope constructs.Construct, id *string, config *SecretManagerSecretConfig) {
 	_init_.Initialize()
 

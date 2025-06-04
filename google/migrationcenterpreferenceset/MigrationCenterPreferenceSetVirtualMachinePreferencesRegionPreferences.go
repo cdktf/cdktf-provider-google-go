@@ -9,7 +9,7 @@ type MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferences stru
 	//
 	// Set only valid Google Cloud region names. See https://cloud.google.com/compute/docs/regions-zones for available regions.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/resources/migration_center_preference_set#preferred_regions MigrationCenterPreferenceSet#preferred_regions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/migration_center_preference_set#preferred_regions MigrationCenterPreferenceSet#preferred_regions}
 	PreferredRegions *[]*string `field:"optional" json:"preferredRegions" yaml:"preferredRegions"`
 }
 

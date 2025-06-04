@@ -5,14 +5,14 @@ package datagooglecomputeregionnetworkendpointgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-google-go/google/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-google-go/google/v14/datagooglecomputeregionnetworkendpointgroup/internal"
+	"github.com/cdktf/cdktf-provider-google-go/google/v15/datagooglecomputeregionnetworkendpointgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group}.
 type DataGoogleComputeRegionNetworkEndpointGroup interface {
 	cdktf.TerraformDataSource
 	AppEngine() DataGoogleComputeRegionNetworkEndpointGroupAppEngineList
@@ -460,7 +460,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroup) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Data Source.
 func NewDataGoogleComputeRegionNetworkEndpointGroup(scope constructs.Construct, id *string, config *DataGoogleComputeRegionNetworkEndpointGroupConfig) DataGoogleComputeRegionNetworkEndpointGroup {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewDataGoogleComputeRegionNetworkEndpointGroup(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.37.0/docs/data-sources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Data Source.
 func NewDataGoogleComputeRegionNetworkEndpointGroup_Override(d DataGoogleComputeRegionNetworkEndpointGroup, scope constructs.Construct, id *string, config *DataGoogleComputeRegionNetworkEndpointGroupConfig) {
 	_init_.Initialize()
 
