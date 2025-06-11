@@ -207,6 +207,17 @@ func (a *jsiiProxy_ApigeeEnvironment) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeEnvironment) validatePutClientIpResolutionConfigParameters(value *ApigeeEnvironmentClientIpResolutionConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeEnvironment) validatePutNodeConfigParameters(value *ApigeeEnvironmentNodeConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

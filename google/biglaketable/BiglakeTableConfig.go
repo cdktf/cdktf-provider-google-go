@@ -24,28 +24,28 @@ type BiglakeTableConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Output only. The name of the Table. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}/databases/{databaseId}/tables/{tableId}.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/biglake_table#name BiglakeTable#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/biglake_table#name BiglakeTable#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The id of the parent database.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/biglake_table#database BiglakeTable#database}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/biglake_table#database BiglakeTable#database}
 	Database *string `field:"optional" json:"database" yaml:"database"`
 	// hive_options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/biglake_table#hive_options BiglakeTable#hive_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/biglake_table#hive_options BiglakeTable#hive_options}
 	HiveOptions *BiglakeTableHiveOptions `field:"optional" json:"hiveOptions" yaml:"hiveOptions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/biglake_table#id BiglakeTable#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/biglake_table#id BiglakeTable#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/biglake_table#timeouts BiglakeTable#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/biglake_table#timeouts BiglakeTable#timeouts}
 	Timeouts *BiglakeTableTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// The database type. Possible values: ["HIVE"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/biglake_table#type BiglakeTable#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/biglake_table#type BiglakeTable#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

@@ -24,20 +24,20 @@ type DataGoogleBigqueryTableConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The dataset ID to create the table in. Changing this forces a new resource to be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/bigquery_table#dataset_id DataGoogleBigqueryTable#dataset_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/data-sources/bigquery_table#dataset_id DataGoogleBigqueryTable#dataset_id}
 	DatasetId *string `field:"required" json:"datasetId" yaml:"datasetId"`
 	// A unique ID for the resource. Changing this forces a new resource to be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/bigquery_table#table_id DataGoogleBigqueryTable#table_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/data-sources/bigquery_table#table_id DataGoogleBigqueryTable#table_id}
 	TableId *string `field:"required" json:"tableId" yaml:"tableId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/bigquery_table#id DataGoogleBigqueryTable#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/data-sources/bigquery_table#id DataGoogleBigqueryTable#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The ID of the project in which the resource belongs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/bigquery_table#project DataGoogleBigqueryTable#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/data-sources/bigquery_table#project DataGoogleBigqueryTable#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

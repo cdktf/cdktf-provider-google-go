@@ -18,6 +18,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "adminEnabled", GoGetter: "AdminEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "adminEnabledInput", GoGetter: "AdminEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "attachmentGroup", GoGetter: "AttachmentGroup"},
 			_jsii_.MemberProperty{JsiiProperty: "bandwidth", GoGetter: "Bandwidth"},
 			_jsii_.MemberProperty{JsiiProperty: "bandwidthInput", GoGetter: "BandwidthInput"},
 			_jsii_.MemberProperty{JsiiProperty: "candidateSubnets", GoGetter: "CandidateSubnets"},

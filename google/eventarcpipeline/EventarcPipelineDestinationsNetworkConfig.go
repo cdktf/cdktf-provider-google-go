@@ -5,9 +5,15 @@ package eventarcpipeline
 
 
 type EventarcPipelineDestinationsNetworkConfig struct {
-	// Name of the NetworkAttachment that allows access to the consumer VPC. Format: 'projects/{PROJECT_ID}/regions/{REGION}/networkAttachments/{NETWORK_ATTACHMENT_NAME}'.
+	// Name of the NetworkAttachment that allows access to the consumer VPC.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/eventarc_pipeline#network_attachment EventarcPipeline#network_attachment}
-	NetworkAttachment *string `field:"required" json:"networkAttachment" yaml:"networkAttachment"`
+	// Format:
+	// 'projects/{PROJECT_ID}/regions/{REGION}/networkAttachments/{NETWORK_ATTACHMENT_NAME}'
+	//
+	// Required for HTTP endpoint destinations. Must not be specified for
+	// Workflows, MessageBus, or Topic destinations.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/eventarc_pipeline#network_attachment EventarcPipeline#network_attachment}
+	NetworkAttachment *string `field:"optional" json:"networkAttachment" yaml:"networkAttachment"`
 }
 

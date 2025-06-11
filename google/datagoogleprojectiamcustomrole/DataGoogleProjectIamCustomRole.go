@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/project_iam_custom_role google_project_iam_custom_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/data-sources/project_iam_custom_role google_project_iam_custom_role}.
 type DataGoogleProjectIamCustomRole interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRole) Title() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/project_iam_custom_role google_project_iam_custom_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/data-sources/project_iam_custom_role google_project_iam_custom_role} Data Source.
 func NewDataGoogleProjectIamCustomRole(scope constructs.Construct, id *string, config *DataGoogleProjectIamCustomRoleConfig) DataGoogleProjectIamCustomRole {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewDataGoogleProjectIamCustomRole(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/project_iam_custom_role google_project_iam_custom_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/data-sources/project_iam_custom_role google_project_iam_custom_role} Data Source.
 func NewDataGoogleProjectIamCustomRole_Override(d DataGoogleProjectIamCustomRole, scope constructs.Construct, id *string, config *DataGoogleProjectIamCustomRoleConfig) {
 	_init_.Initialize()
 

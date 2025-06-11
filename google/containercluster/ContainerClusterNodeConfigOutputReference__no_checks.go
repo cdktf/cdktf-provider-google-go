@@ -151,6 +151,10 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetEnableC
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetFlexStartParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) validateSetImageTypeParameters(val *string) error {
 	return nil
 }

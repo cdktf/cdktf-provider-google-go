@@ -7,11 +7,11 @@ package sqldatabaseinstance
 type SqlDatabaseInstanceSettingsConnectionPoolConfig struct {
 	// Whether Managed Connection Pool is enabled for this instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/sql_database_instance#connection_pooling_enabled SqlDatabaseInstance#connection_pooling_enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/sql_database_instance#connection_pooling_enabled SqlDatabaseInstance#connection_pooling_enabled}
 	ConnectionPoolingEnabled interface{} `field:"optional" json:"connectionPoolingEnabled" yaml:"connectionPoolingEnabled"`
 	// flags block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/sql_database_instance#flags SqlDatabaseInstance#flags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/sql_database_instance#flags SqlDatabaseInstance#flags}
 	Flags interface{} `field:"optional" json:"flags" yaml:"flags"`
 }
 

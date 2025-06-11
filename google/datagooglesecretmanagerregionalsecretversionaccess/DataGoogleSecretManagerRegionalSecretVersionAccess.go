@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/secret_manager_regional_secret_version_access google_secret_manager_regional_secret_version_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/data-sources/secret_manager_regional_secret_version_access google_secret_manager_regional_secret_version_access}.
 type DataGoogleSecretManagerRegionalSecretVersionAccess interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -406,7 +406,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretVersionAccess) VersionIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/secret_manager_regional_secret_version_access google_secret_manager_regional_secret_version_access} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/data-sources/secret_manager_regional_secret_version_access google_secret_manager_regional_secret_version_access} Data Source.
 func NewDataGoogleSecretManagerRegionalSecretVersionAccess(scope constructs.Construct, id *string, config *DataGoogleSecretManagerRegionalSecretVersionAccessConfig) DataGoogleSecretManagerRegionalSecretVersionAccess {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewDataGoogleSecretManagerRegionalSecretVersionAccess(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/data-sources/secret_manager_regional_secret_version_access google_secret_manager_regional_secret_version_access} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/data-sources/secret_manager_regional_secret_version_access google_secret_manager_regional_secret_version_access} Data Source.
 func NewDataGoogleSecretManagerRegionalSecretVersionAccess_Override(d DataGoogleSecretManagerRegionalSecretVersionAccess, scope constructs.Construct, id *string, config *DataGoogleSecretManagerRegionalSecretVersionAccessConfig) {
 	_init_.Initialize()
 

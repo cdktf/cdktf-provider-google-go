@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/storage_insights_report_config google_storage_insights_report_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/storage_insights_report_config google_storage_insights_report_config}.
 type StorageInsightsReportConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -512,7 +512,7 @@ func (j *jsiiProxy_StorageInsightsReportConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/storage_insights_report_config google_storage_insights_report_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/storage_insights_report_config google_storage_insights_report_config} Resource.
 func NewStorageInsightsReportConfig(scope constructs.Construct, id *string, config *StorageInsightsReportConfigConfig) StorageInsightsReportConfig {
 	_init_.Initialize()
 
@@ -530,7 +530,7 @@ func NewStorageInsightsReportConfig(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/storage_insights_report_config google_storage_insights_report_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/storage_insights_report_config google_storage_insights_report_config} Resource.
 func NewStorageInsightsReportConfig_Override(s StorageInsightsReportConfig, scope constructs.Construct, id *string, config *StorageInsightsReportConfigConfig) {
 	_init_.Initialize()
 

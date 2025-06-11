@@ -151,6 +151,10 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetEnable
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetFlexStartParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validateSetImageTypeParameters(val *string) error {
 	return nil
 }

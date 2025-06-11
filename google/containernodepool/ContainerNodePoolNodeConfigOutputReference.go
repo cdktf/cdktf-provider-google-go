@@ -51,6 +51,9 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	EphemeralStorageLocalSsdConfigInput() *ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig
 	FastSocket() ContainerNodePoolNodeConfigFastSocketOutputReference
 	FastSocketInput() *ContainerNodePoolNodeConfigFastSocket
+	FlexStart() interface{}
+	SetFlexStart(val interface{})
+	FlexStartInput() interface{}
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() ContainerNodePoolNodeConfigGcfsConfigOutputReference
@@ -197,6 +200,7 @@ type ContainerNodePoolNodeConfigOutputReference interface {
 	ResetEnableConfidentialStorage()
 	ResetEphemeralStorageLocalSsdConfig()
 	ResetFastSocket()
+	ResetFlexStart()
 	ResetGcfsConfig()
 	ResetGuestAccelerator()
 	ResetGvnic()
@@ -459,6 +463,26 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) FastSocketInput()
 	_jsii_.Get(
 		j,
 		"fastSocketInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) FlexStart() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"flexStart",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) FlexStartInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"flexStartInput",
 		&returns,
 	)
 	return returns
@@ -1238,6 +1262,17 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetEnableConfident
 	)
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetFlexStart(val interface{}) {
+	if err := j.validateSetFlexStartParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"flexStart",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigOutputReference)SetImageType(val *string) {
 	if err := j.validateSetImageTypeParameters(val); err != nil {
 		panic(err)
@@ -1932,6 +1967,14 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetFastSocket()
 	_jsii_.InvokeVoid(
 		c,
 		"resetFastSocket",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) ResetFlexStart() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFlexStart",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting}.
 type GeminiGeminiGcpEnablementSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,9 @@ type GeminiGeminiGcpEnablementSetting interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableWebGrounding() interface{}
+	SetDisableWebGrounding(val interface{})
+	DisableWebGroundingInput() interface{}
 	EffectiveLabels() cdktf.StringMap
 	EnableCustomerDataSharing() interface{}
 	SetEnableCustomerDataSharing(val interface{})
@@ -130,6 +133,7 @@ type GeminiGeminiGcpEnablementSetting interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GeminiGeminiGcpEnablementSettingTimeouts)
+	ResetDisableWebGrounding()
 	ResetEnableCustomerDataSharing()
 	ResetId()
 	ResetLabels()
@@ -211,6 +215,26 @@ func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting) DisableWebGrounding() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableWebGrounding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting) DisableWebGroundingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableWebGroundingInput",
 		&returns,
 	)
 	return returns
@@ -507,7 +531,7 @@ func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting} Resource.
 func NewGeminiGeminiGcpEnablementSetting(scope constructs.Construct, id *string, config *GeminiGeminiGcpEnablementSettingConfig) GeminiGeminiGcpEnablementSetting {
 	_init_.Initialize()
 
@@ -525,7 +549,7 @@ func NewGeminiGeminiGcpEnablementSetting(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting} Resource.
 func NewGeminiGeminiGcpEnablementSetting_Override(g GeminiGeminiGcpEnablementSetting, scope constructs.Construct, id *string, config *GeminiGeminiGcpEnablementSettingConfig) {
 	_init_.Initialize()
 
@@ -562,6 +586,17 @@ func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting)SetDependsOn(val *[]*string)
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting)SetDisableWebGrounding(val interface{}) {
+	if err := j.validateSetDisableWebGroundingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableWebGrounding",
 		val,
 	)
 }
@@ -1031,6 +1066,14 @@ func (g *jsiiProxy_GeminiGeminiGcpEnablementSetting) PutTimeouts(value *GeminiGe
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GeminiGeminiGcpEnablementSetting) ResetDisableWebGrounding() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisableWebGrounding",
+		nil, // no parameters
 	)
 }
 

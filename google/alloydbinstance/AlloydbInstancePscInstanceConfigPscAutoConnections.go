@@ -11,14 +11,14 @@ type AlloydbInstancePscInstanceConfigPscAutoConnections struct {
 	// consumer project. The API expects the consumer project specified to be
 	// the project ID (and not the project number)
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/alloydb_instance#consumer_network AlloydbInstance#consumer_network}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/alloydb_instance#consumer_network AlloydbInstance#consumer_network}
 	ConsumerNetwork *string `field:"optional" json:"consumerNetwork" yaml:"consumerNetwork"`
 	// The consumer project to which the PSC service automation endpoint will be created.
 	//
 	// The API expects the consumer project to be the project ID(
 	// and not the project number).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/alloydb_instance#consumer_project AlloydbInstance#consumer_project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/alloydb_instance#consumer_project AlloydbInstance#consumer_project}
 	ConsumerProject *string `field:"optional" json:"consumerProject" yaml:"consumerProject"`
 }
 

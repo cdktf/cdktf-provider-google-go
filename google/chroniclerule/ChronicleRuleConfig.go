@@ -24,13 +24,13 @@ type ChronicleRuleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The unique identifier for the Chronicle instance, which is the same as the customer ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/chronicle_rule#instance ChronicleRule#instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/chronicle_rule#instance ChronicleRule#instance}
 	Instance *string `field:"required" json:"instance" yaml:"instance"`
 	// The location of the resource.
 	//
 	// This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/chronicle_rule#location ChronicleRule#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/chronicle_rule#location ChronicleRule#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// Policy to determine if the rule should be deleted forcefully.
 	//
@@ -41,7 +41,7 @@ type ChronicleRuleConfig struct {
 	// deployment associated with this rule will also be deleted.
 	// Possible values: DEFAULT, FORCE
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/chronicle_rule#deletion_policy ChronicleRule#deletion_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/chronicle_rule#deletion_policy ChronicleRule#deletion_policy}
 	DeletionPolicy *string `field:"optional" json:"deletionPolicy" yaml:"deletionPolicy"`
 	// The etag for this rule.
 	//
@@ -50,18 +50,18 @@ type ChronicleRuleConfig struct {
 	// otherwise.
 	// Populated in BASIC view and FULL view.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/chronicle_rule#etag ChronicleRule#etag}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/chronicle_rule#etag ChronicleRule#etag}
 	Etag *string `field:"optional" json:"etag" yaml:"etag"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/chronicle_rule#id ChronicleRule#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/chronicle_rule#id ChronicleRule#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/chronicle_rule#project ChronicleRule#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/chronicle_rule#project ChronicleRule#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// Rule Id is the ID of the Rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/chronicle_rule#rule_id ChronicleRule#rule_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/chronicle_rule#rule_id ChronicleRule#rule_id}
 	RuleId *string `field:"optional" json:"ruleId" yaml:"ruleId"`
 	// Resource name of the DataAccessScope bound to this rule.
 	//
@@ -72,15 +72,15 @@ type ChronicleRuleConfig struct {
 	// The scope should be in the format:
 	// "projects/{project}/locations/{location}/instances/{instance}/dataAccessScopes/{scope}".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/chronicle_rule#scope ChronicleRule#scope}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/chronicle_rule#scope ChronicleRule#scope}
 	Scope *string `field:"optional" json:"scope" yaml:"scope"`
 	// The YARA-L content of the rule. Populated in FULL view.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/chronicle_rule#text ChronicleRule#text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/chronicle_rule#text ChronicleRule#text}
 	Text *string `field:"optional" json:"text" yaml:"text"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/chronicle_rule#timeouts ChronicleRule#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/chronicle_rule#timeouts ChronicleRule#timeouts}
 	Timeouts *ChronicleRuleTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

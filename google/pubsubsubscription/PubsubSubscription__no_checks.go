@@ -91,6 +91,10 @@ func (p *jsiiProxy_PubsubSubscription) validatePutExpirationPolicyParameters(val
 	return nil
 }
 
+func (p *jsiiProxy_PubsubSubscription) validatePutMessageTransformsParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubSubscription) validatePutPushConfigParameters(value *PubsubSubscriptionPushConfig) error {
 	return nil
 }

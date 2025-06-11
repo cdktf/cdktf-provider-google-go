@@ -13,6 +13,9 @@ import (
 
 type DataplexDatascanDataQualitySpecOutputReference interface {
 	cdktf.ComplexObject
+	CatalogPublishingEnabled() interface{}
+	SetCatalogPublishingEnabled(val interface{})
+	CatalogPublishingEnabledInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -76,6 +79,7 @@ type DataplexDatascanDataQualitySpecOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPostScanActions(value *DataplexDatascanDataQualitySpecPostScanActions)
 	PutRules(value interface{})
+	ResetCatalogPublishingEnabled()
 	ResetPostScanActions()
 	ResetRowFilter()
 	ResetRules()
@@ -93,6 +97,26 @@ type DataplexDatascanDataQualitySpecOutputReference interface {
 // The jsii proxy struct for DataplexDatascanDataQualitySpecOutputReference
 type jsiiProxy_DataplexDatascanDataQualitySpecOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) CatalogPublishingEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"catalogPublishingEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) CatalogPublishingEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"catalogPublishingEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) ComplexObjectIndex() interface{} {
@@ -270,6 +294,17 @@ func NewDataplexDatascanDataQualitySpecOutputReference_Override(d DataplexDatasc
 		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference)SetCatalogPublishingEnabled(val interface{}) {
+	if err := j.validateSetCatalogPublishingEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"catalogPublishingEnabled",
+		val,
 	)
 }
 
@@ -555,6 +590,14 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) PutRules(valu
 		d,
 		"putRules",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecOutputReference) ResetCatalogPublishingEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCatalogPublishingEnabled",
+		nil, // no parameters
 	)
 }
 

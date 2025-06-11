@@ -83,6 +83,10 @@ func (p *jsiiProxy_PubsubTopic) validatePutMessageStoragePolicyParameters(value 
 	return nil
 }
 
+func (p *jsiiProxy_PubsubTopic) validatePutMessageTransformsParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubTopic) validatePutSchemaSettingsParameters(value *PubsubTopicSchemaSettings) error {
 	return nil
 }

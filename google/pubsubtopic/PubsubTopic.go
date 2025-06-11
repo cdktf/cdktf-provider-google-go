@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/pubsub_topic google_pubsub_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/pubsub_topic google_pubsub_topic}.
 type PubsubTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -60,6 +60,8 @@ type PubsubTopic interface {
 	MessageRetentionDurationInput() *string
 	MessageStoragePolicy() PubsubTopicMessageStoragePolicyOutputReference
 	MessageStoragePolicyInput() *PubsubTopicMessageStoragePolicy
+	MessageTransforms() PubsubTopicMessageTransformsList
+	MessageTransformsInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -134,6 +136,7 @@ type PubsubTopic interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutIngestionDataSourceSettings(value *PubsubTopicIngestionDataSourceSettings)
 	PutMessageStoragePolicy(value *PubsubTopicMessageStoragePolicy)
+	PutMessageTransforms(value interface{})
 	PutSchemaSettings(value *PubsubTopicSchemaSettings)
 	PutTimeouts(value *PubsubTopicTimeouts)
 	ResetId()
@@ -142,6 +145,7 @@ type PubsubTopic interface {
 	ResetLabels()
 	ResetMessageRetentionDuration()
 	ResetMessageStoragePolicy()
+	ResetMessageTransforms()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -386,6 +390,26 @@ func (j *jsiiProxy_PubsubTopic) MessageStoragePolicyInput() *PubsubTopicMessageS
 	return returns
 }
 
+func (j *jsiiProxy_PubsubTopic) MessageTransforms() PubsubTopicMessageTransformsList {
+	var returns PubsubTopicMessageTransformsList
+	_jsii_.Get(
+		j,
+		"messageTransforms",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubTopic) MessageTransformsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"messageTransformsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PubsubTopic) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -547,7 +571,7 @@ func (j *jsiiProxy_PubsubTopic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/pubsub_topic google_pubsub_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/pubsub_topic google_pubsub_topic} Resource.
 func NewPubsubTopic(scope constructs.Construct, id *string, config *PubsubTopicConfig) PubsubTopic {
 	_init_.Initialize()
 
@@ -565,7 +589,7 @@ func NewPubsubTopic(scope constructs.Construct, id *string, config *PubsubTopicC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/pubsub_topic google_pubsub_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/pubsub_topic google_pubsub_topic} Resource.
 func NewPubsubTopic_Override(p PubsubTopic, scope constructs.Construct, id *string, config *PubsubTopicConfig) {
 	_init_.Initialize()
 
@@ -1085,6 +1109,17 @@ func (p *jsiiProxy_PubsubTopic) PutMessageStoragePolicy(value *PubsubTopicMessag
 	)
 }
 
+func (p *jsiiProxy_PubsubTopic) PutMessageTransforms(value interface{}) {
+	if err := p.validatePutMessageTransformsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putMessageTransforms",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PubsubTopic) PutSchemaSettings(value *PubsubTopicSchemaSettings) {
 	if err := p.validatePutSchemaSettingsParameters(value); err != nil {
 		panic(err)
@@ -1151,6 +1186,14 @@ func (p *jsiiProxy_PubsubTopic) ResetMessageStoragePolicy() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetMessageStoragePolicy",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubTopic) ResetMessageTransforms() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMessageTransforms",
 		nil, // no parameters
 	)
 }

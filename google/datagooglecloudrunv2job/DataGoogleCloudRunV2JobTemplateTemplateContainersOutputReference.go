@@ -30,6 +30,7 @@ type DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference interface 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DependsOn() *[]*string
 	Env() DataGoogleCloudRunV2JobTemplateTemplateContainersEnvList
 	// Experimental.
 	Fqn() *string
@@ -39,6 +40,7 @@ type DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference interface 
 	Name() *string
 	Ports() DataGoogleCloudRunV2JobTemplateTemplateContainersPortsList
 	Resources() DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesList
+	StartupProbe() DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -138,6 +140,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference) Env() DataGoogleCloudRunV2JobTemplateTemplateContainersEnvList {
 	var returns DataGoogleCloudRunV2JobTemplateTemplateContainersEnvList
 	_jsii_.Get(
@@ -203,6 +215,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersOutputRefere
 	_jsii_.Get(
 		j,
 		"resources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference) StartupProbe() DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeList {
+	var returns DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeList
+	_jsii_.Get(
+		j,
+		"startupProbe",
 		&returns,
 	)
 	return returns

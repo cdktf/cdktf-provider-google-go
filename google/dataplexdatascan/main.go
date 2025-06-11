@@ -373,6 +373,8 @@ func init() {
 		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "catalogPublishingEnabled", GoGetter: "CatalogPublishingEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "catalogPublishingEnabledInput", GoGetter: "CatalogPublishingEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -394,6 +396,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "postScanActionsInput", GoGetter: "PostScanActionsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putPostScanActions", GoMethod: "PutPostScanActions"},
 			_jsii_.MemberMethod{JsiiMethod: "putRules", GoMethod: "PutRules"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCatalogPublishingEnabled", GoMethod: "ResetCatalogPublishingEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPostScanActions", GoMethod: "ResetPostScanActions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRowFilter", GoMethod: "ResetRowFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRules", GoMethod: "ResetRules"},

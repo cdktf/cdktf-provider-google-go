@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/container_cluster google_container_cluster}.
 type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
@@ -172,6 +172,8 @@ type ContainerCluster interface {
 	SetNetworkingMode(val *string)
 	NetworkingModeInput() *string
 	NetworkInput() *string
+	NetworkPerformanceConfig() ContainerClusterNetworkPerformanceConfigOutputReference
+	NetworkPerformanceConfigInput() *ContainerClusterNetworkPerformanceConfig
 	NetworkPolicy() ContainerClusterNetworkPolicyOutputReference
 	NetworkPolicyInput() *ContainerClusterNetworkPolicy
 	// The tree node.
@@ -315,6 +317,7 @@ type ContainerCluster interface {
 	PutMasterAuthorizedNetworksConfig(value *ContainerClusterMasterAuthorizedNetworksConfig)
 	PutMeshCertificates(value *ContainerClusterMeshCertificates)
 	PutMonitoringConfig(value *ContainerClusterMonitoringConfig)
+	PutNetworkPerformanceConfig(value *ContainerClusterNetworkPerformanceConfig)
 	PutNetworkPolicy(value *ContainerClusterNetworkPolicy)
 	PutNodeConfig(value *ContainerClusterNodeConfig)
 	PutNodePool(value interface{})
@@ -380,6 +383,7 @@ type ContainerCluster interface {
 	ResetMonitoringService()
 	ResetNetwork()
 	ResetNetworkingMode()
+	ResetNetworkPerformanceConfig()
 	ResetNetworkPolicy()
 	ResetNodeConfig()
 	ResetNodeLocations()
@@ -1535,6 +1539,26 @@ func (j *jsiiProxy_ContainerCluster) NetworkInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerCluster) NetworkPerformanceConfig() ContainerClusterNetworkPerformanceConfigOutputReference {
+	var returns ContainerClusterNetworkPerformanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkPerformanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) NetworkPerformanceConfigInput() *ContainerClusterNetworkPerformanceConfig {
+	var returns *ContainerClusterNetworkPerformanceConfig
+	_jsii_.Get(
+		j,
+		"networkPerformanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerCluster) NetworkPolicy() ContainerClusterNetworkPolicyOutputReference {
 	var returns ContainerClusterNetworkPolicyOutputReference
 	_jsii_.Get(
@@ -2136,7 +2160,7 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
 
@@ -2154,7 +2178,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct, id *string, config *ContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -3202,6 +3226,17 @@ func (c *jsiiProxy_ContainerCluster) PutMonitoringConfig(value *ContainerCluster
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutNetworkPerformanceConfig(value *ContainerClusterNetworkPerformanceConfig) {
+	if err := c.validatePutNetworkPerformanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNetworkPerformanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutNetworkPolicy(value *ContainerClusterNetworkPolicy) {
 	if err := c.validatePutNetworkPolicyParameters(value); err != nil {
 		panic(err)
@@ -3769,6 +3804,14 @@ func (c *jsiiProxy_ContainerCluster) ResetNetworkingMode() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetNetworkingMode",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetNetworkPerformanceConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNetworkPerformanceConfig",
 		nil, // no parameters
 	)
 }

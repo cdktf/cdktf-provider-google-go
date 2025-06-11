@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/apigee_environment google_apigee_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/apigee_environment google_apigee_environment}.
 type ApigeeEnvironment interface {
 	cdktf.TerraformResource
 	ApiProxyType() *string
@@ -20,6 +20,8 @@ type ApigeeEnvironment interface {
 	ApiProxyTypeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientIpResolutionConfig() ApigeeEnvironmentClientIpResolutionConfigOutputReference
+	ClientIpResolutionConfigInput() *ApigeeEnvironmentClientIpResolutionConfig
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -137,10 +139,12 @@ type ApigeeEnvironment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutClientIpResolutionConfig(value *ApigeeEnvironmentClientIpResolutionConfig)
 	PutNodeConfig(value *ApigeeEnvironmentNodeConfig)
 	PutProperties(value *ApigeeEnvironmentProperties)
 	PutTimeouts(value *ApigeeEnvironmentTimeouts)
 	ResetApiProxyType()
+	ResetClientIpResolutionConfig()
 	ResetDeploymentType()
 	ResetDescription()
 	ResetDisplayName()
@@ -196,6 +200,26 @@ func (j *jsiiProxy_ApigeeEnvironment) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeEnvironment) ClientIpResolutionConfig() ApigeeEnvironmentClientIpResolutionConfigOutputReference {
+	var returns ApigeeEnvironmentClientIpResolutionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"clientIpResolutionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeEnvironment) ClientIpResolutionConfigInput() *ApigeeEnvironmentClientIpResolutionConfig {
+	var returns *ApigeeEnvironmentClientIpResolutionConfig
+	_jsii_.Get(
+		j,
+		"clientIpResolutionConfigInput",
 		&returns,
 	)
 	return returns
@@ -572,7 +596,7 @@ func (j *jsiiProxy_ApigeeEnvironment) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/apigee_environment google_apigee_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/apigee_environment google_apigee_environment} Resource.
 func NewApigeeEnvironment(scope constructs.Construct, id *string, config *ApigeeEnvironmentConfig) ApigeeEnvironment {
 	_init_.Initialize()
 
@@ -590,7 +614,7 @@ func NewApigeeEnvironment(scope constructs.Construct, id *string, config *Apigee
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/apigee_environment google_apigee_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/apigee_environment google_apigee_environment} Resource.
 func NewApigeeEnvironment_Override(a ApigeeEnvironment, scope constructs.Construct, id *string, config *ApigeeEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -1121,6 +1145,17 @@ func (a *jsiiProxy_ApigeeEnvironment) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_ApigeeEnvironment) PutClientIpResolutionConfig(value *ApigeeEnvironmentClientIpResolutionConfig) {
+	if err := a.validatePutClientIpResolutionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putClientIpResolutionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_ApigeeEnvironment) PutNodeConfig(value *ApigeeEnvironmentNodeConfig) {
 	if err := a.validatePutNodeConfigParameters(value); err != nil {
 		panic(err)
@@ -1158,6 +1193,14 @@ func (a *jsiiProxy_ApigeeEnvironment) ResetApiProxyType() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetApiProxyType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApigeeEnvironment) ResetClientIpResolutionConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClientIpResolutionConfig",
 		nil, // no parameters
 	)
 }

@@ -35,6 +35,7 @@ type DataGoogleGkeHubFeatureSpecOutputReference interface {
 	InternalValue() *DataGoogleGkeHubFeatureSpec
 	SetInternalValue(val *DataGoogleGkeHubFeatureSpec)
 	Multiclusteringress() DataGoogleGkeHubFeatureSpecMulticlusteringressList
+	Rbacrolebindingactuation() DataGoogleGkeHubFeatureSpecRbacrolebindingactuationList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -157,6 +158,16 @@ func (j *jsiiProxy_DataGoogleGkeHubFeatureSpecOutputReference) Multiclusteringre
 	_jsii_.Get(
 		j,
 		"multiclusteringress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleGkeHubFeatureSpecOutputReference) Rbacrolebindingactuation() DataGoogleGkeHubFeatureSpecRbacrolebindingactuationList {
+	var returns DataGoogleGkeHubFeatureSpecRbacrolebindingactuationList
+	_jsii_.Get(
+		j,
+		"rbacrolebindingactuation",
 		&returns,
 	)
 	return returns

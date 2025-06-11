@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "interconnectAttachments", GoGetter: "InterconnectAttachments"},
+			_jsii_.MemberProperty{JsiiProperty: "interconnectGroups", GoGetter: "InterconnectGroups"},
 			_jsii_.MemberProperty{JsiiProperty: "interconnectType", GoGetter: "InterconnectType"},
 			_jsii_.MemberProperty{JsiiProperty: "interconnectTypeInput", GoGetter: "InterconnectTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},

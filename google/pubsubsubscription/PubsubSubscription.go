@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/pubsub_subscription google_pubsub_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/pubsub_subscription google_pubsub_subscription}.
 type PubsubSubscription interface {
 	cdktf.TerraformResource
 	AckDeadlineSeconds() *float64
@@ -73,6 +73,8 @@ type PubsubSubscription interface {
 	MessageRetentionDuration() *string
 	SetMessageRetentionDuration(val *string)
 	MessageRetentionDurationInput() *string
+	MessageTransforms() PubsubSubscriptionMessageTransformsList
+	MessageTransformsInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -157,6 +159,7 @@ type PubsubSubscription interface {
 	PutCloudStorageConfig(value *PubsubSubscriptionCloudStorageConfig)
 	PutDeadLetterPolicy(value *PubsubSubscriptionDeadLetterPolicy)
 	PutExpirationPolicy(value *PubsubSubscriptionExpirationPolicy)
+	PutMessageTransforms(value interface{})
 	PutPushConfig(value *PubsubSubscriptionPushConfig)
 	PutRetryPolicy(value *PubsubSubscriptionRetryPolicy)
 	PutTimeouts(value *PubsubSubscriptionTimeouts)
@@ -171,6 +174,7 @@ type PubsubSubscription interface {
 	ResetId()
 	ResetLabels()
 	ResetMessageRetentionDuration()
+	ResetMessageTransforms()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -517,6 +521,26 @@ func (j *jsiiProxy_PubsubSubscription) MessageRetentionDurationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PubsubSubscription) MessageTransforms() PubsubSubscriptionMessageTransformsList {
+	var returns PubsubSubscriptionMessageTransformsList
+	_jsii_.Get(
+		j,
+		"messageTransforms",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PubsubSubscription) MessageTransformsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"messageTransformsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PubsubSubscription) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -738,7 +762,7 @@ func (j *jsiiProxy_PubsubSubscription) TopicInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/pubsub_subscription google_pubsub_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/pubsub_subscription google_pubsub_subscription} Resource.
 func NewPubsubSubscription(scope constructs.Construct, id *string, config *PubsubSubscriptionConfig) PubsubSubscription {
 	_init_.Initialize()
 
@@ -756,7 +780,7 @@ func NewPubsubSubscription(scope constructs.Construct, id *string, config *Pubsu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/pubsub_subscription google_pubsub_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/pubsub_subscription google_pubsub_subscription} Resource.
 func NewPubsubSubscription_Override(p PubsubSubscription, scope constructs.Construct, id *string, config *PubsubSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -1353,6 +1377,17 @@ func (p *jsiiProxy_PubsubSubscription) PutExpirationPolicy(value *PubsubSubscrip
 	)
 }
 
+func (p *jsiiProxy_PubsubSubscription) PutMessageTransforms(value interface{}) {
+	if err := p.validatePutMessageTransformsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putMessageTransforms",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PubsubSubscription) PutPushConfig(value *PubsubSubscriptionPushConfig) {
 	if err := p.validatePutPushConfigParameters(value); err != nil {
 		panic(err)
@@ -1470,6 +1505,14 @@ func (p *jsiiProxy_PubsubSubscription) ResetMessageRetentionDuration() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetMessageRetentionDuration",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PubsubSubscription) ResetMessageTransforms() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMessageTransforms",
 		nil, // no parameters
 	)
 }

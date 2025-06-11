@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config}.
 type FirebaseAppCheckServiceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_FirebaseAppCheckServiceConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config} Resource.
 func NewFirebaseAppCheckServiceConfig(scope constructs.Construct, id *string, config *FirebaseAppCheckServiceConfigConfig) FirebaseAppCheckServiceConfig {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewFirebaseAppCheckServiceConfig(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.38.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config} Resource.
 func NewFirebaseAppCheckServiceConfig_Override(f FirebaseAppCheckServiceConfig, scope constructs.Construct, id *string, config *FirebaseAppCheckServiceConfigConfig) {
 	_init_.Initialize()
 

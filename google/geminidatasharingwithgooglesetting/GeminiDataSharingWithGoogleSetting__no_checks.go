@@ -107,6 +107,10 @@ func (j *jsiiProxy_GeminiDataSharingWithGoogleSetting) validateSetDataSharingWit
 	return nil
 }
 
+func (j *jsiiProxy_GeminiDataSharingWithGoogleSetting) validateSetEnableDataSharingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GeminiDataSharingWithGoogleSetting) validateSetEnablePreviewDataSharingParameters(val interface{}) error {
 	return nil
 }

@@ -163,6 +163,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutMonitoringConfigParameters(value
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutNetworkPerformanceConfigParameters(value *ContainerClusterNetworkPerformanceConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutNetworkPolicyParameters(value *ContainerClusterNetworkPolicy) error {
 	return nil
 }

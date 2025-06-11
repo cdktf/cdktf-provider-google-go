@@ -103,6 +103,10 @@ func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting) validateSetCountParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting) validateSetDisableWebGroundingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GeminiGeminiGcpEnablementSetting) validateSetEnableCustomerDataSharingParameters(val interface{}) error {
 	return nil
 }
