@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/dataproc_cluster_iam_policy google_dataproc_cluster_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/dataproc_cluster_iam_policy google_dataproc_cluster_iam_policy}.
 type DataprocClusterIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_DataprocClusterIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/dataproc_cluster_iam_policy google_dataproc_cluster_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/dataproc_cluster_iam_policy google_dataproc_cluster_iam_policy} Resource.
 func NewDataprocClusterIamPolicy(scope constructs.Construct, id *string, config *DataprocClusterIamPolicyConfig) DataprocClusterIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewDataprocClusterIamPolicy(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/dataproc_cluster_iam_policy google_dataproc_cluster_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/dataproc_cluster_iam_policy google_dataproc_cluster_iam_policy} Resource.
 func NewDataprocClusterIamPolicy_Override(d DataprocClusterIamPolicy, scope constructs.Construct, id *string, config *DataprocClusterIamPolicyConfig) {
 	_init_.Initialize()
 

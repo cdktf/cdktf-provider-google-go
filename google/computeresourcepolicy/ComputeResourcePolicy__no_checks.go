@@ -95,6 +95,10 @@ func (c *jsiiProxy_ComputeResourcePolicy) validatePutTimeoutsParameters(value *C
 	return nil
 }
 
+func (c *jsiiProxy_ComputeResourcePolicy) validatePutWorkloadPolicyParameters(value *ComputeResourcePolicyWorkloadPolicy) error {
+	return nil
+}
+
 func validateComputeResourcePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

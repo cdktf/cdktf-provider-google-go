@@ -47,6 +47,10 @@ func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) validateInterp
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) validatePutDefaultRouteActionParameters(value *ComputeRegionUrlMapPathMatcherDefaultRouteAction) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) validatePutDefaultUrlRedirectParameters(value *ComputeRegionUrlMapPathMatcherDefaultUrlRedirect) error {
 	return nil
 }

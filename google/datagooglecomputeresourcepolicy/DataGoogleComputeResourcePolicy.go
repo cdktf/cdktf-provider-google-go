@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/data-sources/compute_resource_policy google_compute_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/data-sources/compute_resource_policy google_compute_resource_policy}.
 type DataGoogleComputeResourcePolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -71,6 +71,7 @@ type DataGoogleComputeResourcePolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WorkloadPolicy() DataGoogleComputeResourcePolicyWorkloadPolicyList
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -401,8 +402,18 @@ func (j *jsiiProxy_DataGoogleComputeResourcePolicy) TerraformResourceType() *str
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeResourcePolicy) WorkloadPolicy() DataGoogleComputeResourcePolicyWorkloadPolicyList {
+	var returns DataGoogleComputeResourcePolicyWorkloadPolicyList
+	_jsii_.Get(
+		j,
+		"workloadPolicy",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/data-sources/compute_resource_policy google_compute_resource_policy} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/data-sources/compute_resource_policy google_compute_resource_policy} Data Source.
 func NewDataGoogleComputeResourcePolicy(scope constructs.Construct, id *string, config *DataGoogleComputeResourcePolicyConfig) DataGoogleComputeResourcePolicy {
 	_init_.Initialize()
 
@@ -420,7 +431,7 @@ func NewDataGoogleComputeResourcePolicy(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/data-sources/compute_resource_policy google_compute_resource_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/data-sources/compute_resource_policy google_compute_resource_policy} Data Source.
 func NewDataGoogleComputeResourcePolicy_Override(d DataGoogleComputeResourcePolicy, scope constructs.Construct, id *string, config *DataGoogleComputeResourcePolicyConfig) {
 	_init_.Initialize()
 

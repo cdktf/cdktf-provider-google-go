@@ -24,13 +24,13 @@ type NetworkServicesMeshConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Short name of the Mesh resource to be created.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/network_services_mesh#name NetworkServicesMesh#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/network_services_mesh#name NetworkServicesMesh#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// A free-text description of the resource. Max length 1024 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/network_services_mesh#description NetworkServicesMesh#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/network_services_mesh#description NetworkServicesMesh#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/network_services_mesh#id NetworkServicesMesh#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/network_services_mesh#id NetworkServicesMesh#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -43,26 +43,26 @@ type NetworkServicesMeshConfig struct {
 	// '15001' is used as the interception port. This will is applicable only for sidecar proxy
 	// deployments.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/network_services_mesh#interception_port NetworkServicesMesh#interception_port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/network_services_mesh#interception_port NetworkServicesMesh#interception_port}
 	InterceptionPort *float64 `field:"optional" json:"interceptionPort" yaml:"interceptionPort"`
 	// Set of label tags associated with the Mesh resource.
 	//
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/network_services_mesh#labels NetworkServicesMesh#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/network_services_mesh#labels NetworkServicesMesh#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// Location (region) of the Mesh resource to be created.
 	//
 	// Only the value 'global' is currently allowed; defaults to 'global' if omitted.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/network_services_mesh#location NetworkServicesMesh#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/network_services_mesh#location NetworkServicesMesh#location}
 	Location *string `field:"optional" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/network_services_mesh#project NetworkServicesMesh#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/network_services_mesh#project NetworkServicesMesh#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/network_services_mesh#timeouts NetworkServicesMesh#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/network_services_mesh#timeouts NetworkServicesMesh#timeouts}
 	Timeouts *NetworkServicesMeshTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

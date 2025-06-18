@@ -67,6 +67,10 @@ func (j *jsiiProxy_ComputeResourcePolicyGroupPlacementPolicyOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_ComputeResourcePolicyGroupPlacementPolicyOutputReference) validateSetGpuTopologyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeResourcePolicyGroupPlacementPolicyOutputReference) validateSetInternalValueParameters(val *ComputeResourcePolicyGroupPlacementPolicy) error {
 	return nil
 }

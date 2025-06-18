@@ -47,6 +47,10 @@ func (c *jsiiProxy_ComputeUrlMapTestOutputReference) validateInterpolationForAtt
 	return nil
 }
 
+func (c *jsiiProxy_ComputeUrlMapTestOutputReference) validatePutHeadersParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeUrlMapTestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -60,6 +64,14 @@ func (j *jsiiProxy_ComputeUrlMapTestOutputReference) validateSetComplexObjectIsF
 }
 
 func (j *jsiiProxy_ComputeUrlMapTestOutputReference) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeUrlMapTestOutputReference) validateSetExpectedOutputUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeUrlMapTestOutputReference) validateSetExpectedRedirectResponseCodeParameters(val *float64) error {
 	return nil
 }
 

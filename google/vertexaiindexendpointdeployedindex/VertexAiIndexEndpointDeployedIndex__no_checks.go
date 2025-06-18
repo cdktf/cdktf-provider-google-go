@@ -151,6 +151,10 @@ func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateSetProvisionersPa
 	return nil
 }
 
+func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndex) validateSetReservedIpRangesParameters(val *[]*string) error {
 	return nil
 }

@@ -67,6 +67,10 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionLogConfigOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_IntegrationConnectorsConnectionLogConfigOutputReference) validateSetLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IntegrationConnectorsConnectionLogConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

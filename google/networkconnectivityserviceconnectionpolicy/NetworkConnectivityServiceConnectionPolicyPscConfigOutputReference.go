@@ -13,6 +13,9 @@ import (
 
 type NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference interface {
 	cdktf.ComplexObject
+	AllowedGoogleProducersResourceHierarchyLevel() *[]*string
+	SetAllowedGoogleProducersResourceHierarchyLevel(val *[]*string)
+	AllowedGoogleProducersResourceHierarchyLevelInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,6 +38,9 @@ type NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference interfac
 	Limit() *string
 	SetLimit(val *string)
 	LimitInput() *string
+	ProducerInstanceLocation() *string
+	SetProducerInstanceLocation(val *string)
+	ProducerInstanceLocationInput() *string
 	Subnetworks() *[]*string
 	SetSubnetworks(val *[]*string)
 	SubnetworksInput() *[]*string
@@ -70,7 +76,9 @@ type NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAllowedGoogleProducersResourceHierarchyLevel()
 	ResetLimit()
+	ResetProducerInstanceLocation()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -84,6 +92,26 @@ type NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference interfac
 // The jsii proxy struct for NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference
 type jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) AllowedGoogleProducersResourceHierarchyLevel() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedGoogleProducersResourceHierarchyLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) AllowedGoogleProducersResourceHierarchyLevelInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedGoogleProducersResourceHierarchyLevelInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -151,6 +179,26 @@ func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputRefe
 	_jsii_.Get(
 		j,
 		"limitInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) ProducerInstanceLocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"producerInstanceLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) ProducerInstanceLocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"producerInstanceLocationInput",
 		&returns,
 	)
 	return returns
@@ -224,6 +272,17 @@ func NewNetworkConnectivityServiceConnectionPolicyPscConfigOutputReference_Overr
 	)
 }
 
+func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference)SetAllowedGoogleProducersResourceHierarchyLevel(val *[]*string) {
+	if err := j.validateSetAllowedGoogleProducersResourceHierarchyLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedGoogleProducersResourceHierarchyLevel",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -264,6 +323,17 @@ func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputRefe
 	_jsii_.Set(
 		j,
 		"limit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference)SetProducerInstanceLocation(val *string) {
+	if err := j.validateSetProducerInstanceLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"producerInstanceLocation",
 		val,
 	)
 }
@@ -487,10 +557,26 @@ func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputRefe
 	return returns
 }
 
+func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) ResetAllowedGoogleProducersResourceHierarchyLevel() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAllowedGoogleProducersResourceHierarchyLevel",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) ResetLimit() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetLimit",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConfigOutputReference) ResetProducerInstanceLocation() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetProducerInstanceLocation",
 		nil, // no parameters
 	)
 }

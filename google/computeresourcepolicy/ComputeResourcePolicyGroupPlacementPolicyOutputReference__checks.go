@@ -182,6 +182,14 @@ func (j *jsiiProxy_ComputeResourcePolicyGroupPlacementPolicyOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_ComputeResourcePolicyGroupPlacementPolicyOutputReference) validateSetGpuTopologyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ComputeResourcePolicyGroupPlacementPolicyOutputReference) validateSetInternalValueParameters(val *ComputeResourcePolicyGroupPlacementPolicy) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

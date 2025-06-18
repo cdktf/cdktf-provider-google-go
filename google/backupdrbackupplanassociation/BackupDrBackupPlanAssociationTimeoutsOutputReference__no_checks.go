@@ -79,6 +79,10 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociationTimeoutsOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_BackupDrBackupPlanAssociationTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewBackupDrBackupPlanAssociationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

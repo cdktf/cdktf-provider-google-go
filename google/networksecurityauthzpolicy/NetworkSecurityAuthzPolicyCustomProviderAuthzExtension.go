@@ -9,7 +9,7 @@ type NetworkSecurityAuthzPolicyCustomProviderAuthzExtension struct {
 	//
 	// Limited to 1 custom provider.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.39.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/network_security_authz_policy#resources NetworkSecurityAuthzPolicy#resources}
 	Resources *[]*string `field:"required" json:"resources" yaml:"resources"`
 }
 

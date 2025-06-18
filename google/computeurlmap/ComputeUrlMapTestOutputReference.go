@@ -31,8 +31,16 @@ type ComputeUrlMapTestOutputReference interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	ExpectedOutputUrl() *string
+	SetExpectedOutputUrl(val *string)
+	ExpectedOutputUrlInput() *string
+	ExpectedRedirectResponseCode() *float64
+	SetExpectedRedirectResponseCode(val *float64)
+	ExpectedRedirectResponseCodeInput() *float64
 	// Experimental.
 	Fqn() *string
+	Headers() ComputeUrlMapTestHeadersList
+	HeadersInput() interface{}
 	Host() *string
 	SetHost(val *string)
 	HostInput() *string
@@ -76,7 +84,12 @@ type ComputeUrlMapTestOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutHeaders(value interface{})
 	ResetDescription()
+	ResetExpectedOutputUrl()
+	ResetExpectedRedirectResponseCode()
+	ResetHeaders()
+	ResetService()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -142,11 +155,71 @@ func (j *jsiiProxy_ComputeUrlMapTestOutputReference) DescriptionInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_ComputeUrlMapTestOutputReference) ExpectedOutputUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expectedOutputUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeUrlMapTestOutputReference) ExpectedOutputUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expectedOutputUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeUrlMapTestOutputReference) ExpectedRedirectResponseCode() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expectedRedirectResponseCode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeUrlMapTestOutputReference) ExpectedRedirectResponseCodeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expectedRedirectResponseCodeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeUrlMapTestOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeUrlMapTestOutputReference) Headers() ComputeUrlMapTestHeadersList {
+	var returns ComputeUrlMapTestHeadersList
+	_jsii_.Get(
+		j,
+		"headers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeUrlMapTestOutputReference) HeadersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"headersInput",
 		&returns,
 	)
 	return returns
@@ -299,6 +372,28 @@ func (j *jsiiProxy_ComputeUrlMapTestOutputReference)SetDescription(val *string) 
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeUrlMapTestOutputReference)SetExpectedOutputUrl(val *string) {
+	if err := j.validateSetExpectedOutputUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expectedOutputUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeUrlMapTestOutputReference)SetExpectedRedirectResponseCode(val *float64) {
+	if err := j.validateSetExpectedRedirectResponseCodeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expectedRedirectResponseCode",
 		val,
 	)
 }
@@ -555,10 +650,53 @@ func (c *jsiiProxy_ComputeUrlMapTestOutputReference) InterpolationForAttribute(p
 	return returns
 }
 
+func (c *jsiiProxy_ComputeUrlMapTestOutputReference) PutHeaders(value interface{}) {
+	if err := c.validatePutHeadersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putHeaders",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeUrlMapTestOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeUrlMapTestOutputReference) ResetExpectedOutputUrl() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExpectedOutputUrl",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeUrlMapTestOutputReference) ResetExpectedRedirectResponseCode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExpectedRedirectResponseCode",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeUrlMapTestOutputReference) ResetHeaders() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHeaders",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeUrlMapTestOutputReference) ResetService() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetService",
 		nil, // no parameters
 	)
 }
