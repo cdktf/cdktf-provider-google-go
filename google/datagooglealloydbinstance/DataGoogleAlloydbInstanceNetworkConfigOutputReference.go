@@ -13,6 +13,7 @@ import (
 
 type DataGoogleAlloydbInstanceNetworkConfigOutputReference interface {
 	cdktf.ComplexObject
+	AllocatedIpRangeOverride() *string
 	AuthorizedExternalNetworks() DataGoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworksList
 	// the index of the complex object in a list.
 	// Experimental.
@@ -80,6 +81,16 @@ type DataGoogleAlloydbInstanceNetworkConfigOutputReference interface {
 // The jsii proxy struct for DataGoogleAlloydbInstanceNetworkConfigOutputReference
 type jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) AllocatedIpRangeOverride() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"allocatedIpRangeOverride",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigOutputReference) AuthorizedExternalNetworks() DataGoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworksList {

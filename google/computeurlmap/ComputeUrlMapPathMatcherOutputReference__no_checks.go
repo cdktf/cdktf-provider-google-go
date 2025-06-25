@@ -47,6 +47,10 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherOutputReference) validateInterpolatio
 	return nil
 }
 
+func (c *jsiiProxy_ComputeUrlMapPathMatcherOutputReference) validatePutDefaultCustomErrorResponsePolicyParameters(value *ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicy) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeUrlMapPathMatcherOutputReference) validatePutDefaultRouteActionParameters(value *ComputeUrlMapPathMatcherDefaultRouteAction) error {
 	return nil
 }

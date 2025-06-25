@@ -59,6 +59,10 @@ func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference) validateSetDomainNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference) validateSetForwardingPathParameters(val *string) error {
 	return nil
 }

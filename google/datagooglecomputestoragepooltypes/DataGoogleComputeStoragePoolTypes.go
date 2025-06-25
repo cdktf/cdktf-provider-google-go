@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/data-sources/compute_storage_pool_types google_compute_storage_pool_types}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/data-sources/compute_storage_pool_types google_compute_storage_pool_types}.
 type DataGoogleComputeStoragePoolTypes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -476,7 +476,7 @@ func (j *jsiiProxy_DataGoogleComputeStoragePoolTypes) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/data-sources/compute_storage_pool_types google_compute_storage_pool_types} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/data-sources/compute_storage_pool_types google_compute_storage_pool_types} Data Source.
 func NewDataGoogleComputeStoragePoolTypes(scope constructs.Construct, id *string, config *DataGoogleComputeStoragePoolTypesConfig) DataGoogleComputeStoragePoolTypes {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewDataGoogleComputeStoragePoolTypes(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/data-sources/compute_storage_pool_types google_compute_storage_pool_types} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/data-sources/compute_storage_pool_types google_compute_storage_pool_types} Data Source.
 func NewDataGoogleComputeStoragePoolTypes_Override(d DataGoogleComputeStoragePoolTypes, scope constructs.Construct, id *string, config *DataGoogleComputeStoragePoolTypesConfig) {
 	_init_.Initialize()
 

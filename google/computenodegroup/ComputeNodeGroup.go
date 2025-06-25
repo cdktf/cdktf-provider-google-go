@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/compute_node_group google_compute_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_node_group google_compute_node_group}.
 type ComputeNodeGroup interface {
 	cdktf.TerraformResource
 	AutoscalingPolicy() ComputeNodeGroupAutoscalingPolicyOutputReference
@@ -149,7 +149,6 @@ type ComputeNodeGroup interface {
 	ResetInitialSize()
 	ResetMaintenancePolicy()
 	ResetMaintenanceWindow()
-	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -606,7 +605,7 @@ func (j *jsiiProxy_ComputeNodeGroup) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/compute_node_group google_compute_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_node_group google_compute_node_group} Resource.
 func NewComputeNodeGroup(scope constructs.Construct, id *string, config *ComputeNodeGroupConfig) ComputeNodeGroup {
 	_init_.Initialize()
 
@@ -624,7 +623,7 @@ func NewComputeNodeGroup(scope constructs.Construct, id *string, config *Compute
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/compute_node_group google_compute_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_node_group google_compute_node_group} Resource.
 func NewComputeNodeGroup_Override(c ComputeNodeGroup, scope constructs.Construct, id *string, config *ComputeNodeGroupConfig) {
 	_init_.Initialize()
 
@@ -1232,14 +1231,6 @@ func (c *jsiiProxy_ComputeNodeGroup) ResetMaintenanceWindow() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetMaintenanceWindow",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ComputeNodeGroup) ResetName() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetName",
 		nil, // no parameters
 	)
 }

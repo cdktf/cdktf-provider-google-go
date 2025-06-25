@@ -75,6 +75,10 @@ func (c *jsiiProxy_ComputeUrlMap) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (c *jsiiProxy_ComputeUrlMap) validatePutDefaultCustomErrorResponsePolicyParameters(value *ComputeUrlMapDefaultCustomErrorResponsePolicy) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeUrlMap) validatePutDefaultRouteActionParameters(value *ComputeUrlMapDefaultRouteAction) error {
 	return nil
 }

@@ -139,6 +139,10 @@ func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange) validateSetLocationParamete
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange) validateSetLogLinkedDatasetQueryUserEmailParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange) validateSetPrimaryContactParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ type IamFoldersPolicyBindingTarget struct {
 	// * Folder: '//cloudresourcemanager.googleapis.com/folders/FOLDER_ID'
 	// It must be parent by the policy binding's parent (the folder).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/iam_folders_policy_binding#principal_set IamFoldersPolicyBinding#principal_set}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/iam_folders_policy_binding#principal_set IamFoldersPolicyBinding#principal_set}
 	PrincipalSet *string `field:"optional" json:"principalSet" yaml:"principalSet"`
 }
 

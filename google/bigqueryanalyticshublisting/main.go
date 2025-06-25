@@ -75,14 +75,18 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "publisher", GoGetter: "Publisher"},
 			_jsii_.MemberProperty{JsiiProperty: "publisherInput", GoGetter: "PublisherInput"},
+			_jsii_.MemberProperty{JsiiProperty: "pubsubTopic", GoGetter: "PubsubTopic"},
+			_jsii_.MemberProperty{JsiiProperty: "pubsubTopicInput", GoGetter: "PubsubTopicInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putBigqueryDataset", GoMethod: "PutBigqueryDataset"},
 			_jsii_.MemberMethod{JsiiMethod: "putDataProvider", GoMethod: "PutDataProvider"},
 			_jsii_.MemberMethod{JsiiMethod: "putPublisher", GoMethod: "PutPublisher"},
+			_jsii_.MemberMethod{JsiiMethod: "putPubsubTopic", GoMethod: "PutPubsubTopic"},
 			_jsii_.MemberMethod{JsiiMethod: "putRestrictedExportConfig", GoMethod: "PutRestrictedExportConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "requestAccess", GoGetter: "RequestAccess"},
 			_jsii_.MemberProperty{JsiiProperty: "requestAccessInput", GoGetter: "RequestAccessInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBigqueryDataset", GoMethod: "ResetBigqueryDataset"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCategories", GoMethod: "ResetCategories"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataProvider", GoMethod: "ResetDataProvider"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -94,6 +98,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPrimaryContact", GoMethod: "ResetPrimaryContact"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPublisher", GoMethod: "ResetPublisher"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPubsubTopic", GoMethod: "ResetPubsubTopic"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestAccess", GoMethod: "ResetRequestAccess"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRestrictedExportConfig", GoMethod: "ResetRestrictedExportConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
@@ -302,6 +307,47 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BigqueryAnalyticsHubListingPublisherOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingPubsubTopic",
+		reflect.TypeOf((*BigqueryAnalyticsHubListingPubsubTopic)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingPubsubTopicOutputReference",
+		reflect.TypeOf((*BigqueryAnalyticsHubListingPubsubTopicOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataAffinityRegions", GoGetter: "DataAffinityRegions"},
+			_jsii_.MemberProperty{JsiiProperty: "dataAffinityRegionsInput", GoGetter: "DataAffinityRegionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDataAffinityRegions", GoMethod: "ResetDataAffinityRegions"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "topic", GoGetter: "Topic"},
+			_jsii_.MemberProperty{JsiiProperty: "topicInput", GoGetter: "TopicInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

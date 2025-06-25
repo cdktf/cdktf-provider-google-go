@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/compute_snapshot_settings google_compute_snapshot_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_snapshot_settings google_compute_snapshot_settings}.
 type ComputeSnapshotSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_ComputeSnapshotSettings) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/compute_snapshot_settings google_compute_snapshot_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_snapshot_settings google_compute_snapshot_settings} Resource.
 func NewComputeSnapshotSettings(scope constructs.Construct, id *string, config *ComputeSnapshotSettingsConfig) ComputeSnapshotSettings {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewComputeSnapshotSettings(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/compute_snapshot_settings google_compute_snapshot_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_snapshot_settings google_compute_snapshot_settings} Resource.
 func NewComputeSnapshotSettings_Override(c ComputeSnapshotSettings, scope constructs.Construct, id *string, config *ComputeSnapshotSettingsConfig) {
 	_init_.Initialize()
 

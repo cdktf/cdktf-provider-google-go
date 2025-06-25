@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -172,6 +172,9 @@ type GoogleProvider interface {
 	ComputeCustomEndpointInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ContactCenterInsightsCustomEndpoint() *string
+	SetContactCenterInsightsCustomEndpoint(val *string)
+	ContactCenterInsightsCustomEndpointInput() *string
 	ContainerAnalysisCustomEndpoint() *string
 	SetContainerAnalysisCustomEndpoint(val *string)
 	ContainerAnalysisCustomEndpointInput() *string
@@ -625,6 +628,7 @@ type GoogleProvider interface {
 	ResetColabCustomEndpoint()
 	ResetComposerCustomEndpoint()
 	ResetComputeCustomEndpoint()
+	ResetContactCenterInsightsCustomEndpoint()
 	ResetContainerAnalysisCustomEndpoint()
 	ResetContainerAttachedCustomEndpoint()
 	ResetContainerAwsCustomEndpoint()
@@ -1808,6 +1812,26 @@ func (j *jsiiProxy_GoogleProvider) ConstructNodeMetadata() *map[string]interface
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ContactCenterInsightsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contactCenterInsightsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ContactCenterInsightsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contactCenterInsightsCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -4434,7 +4458,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -4452,7 +4476,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -4873,6 +4897,14 @@ func (j *jsiiProxy_GoogleProvider)SetComputeCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"computeCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetContactCenterInsightsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"contactCenterInsightsCustomEndpoint",
 		val,
 	)
 }
@@ -6428,6 +6460,14 @@ func (g *jsiiProxy_GoogleProvider) ResetComputeCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetComputeCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetContactCenterInsightsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContactCenterInsightsCustomEndpoint",
 		nil, // no parameters
 	)
 }

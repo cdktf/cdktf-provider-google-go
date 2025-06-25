@@ -175,6 +175,10 @@ func (j *jsiiProxy_StorageBucketObject) validateSetSourceParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_StorageBucketObject) validateSetSourceMd5HashParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBucketObject) validateSetStorageClassParameters(val *string) error {
 	return nil
 }

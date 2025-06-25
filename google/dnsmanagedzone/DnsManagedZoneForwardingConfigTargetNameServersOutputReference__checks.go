@@ -166,6 +166,14 @@ func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference) validateSetDomainNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference) validateSetForwardingPathParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

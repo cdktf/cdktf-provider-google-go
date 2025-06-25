@@ -67,6 +67,10 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutp
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) validateSetPerformanceMonitoringUnitParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

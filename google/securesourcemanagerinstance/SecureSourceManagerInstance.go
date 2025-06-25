@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance}.
 type SecureSourceManagerInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -588,7 +588,7 @@ func (j *jsiiProxy_SecureSourceManagerInstance) WorkforceIdentityFederationConfi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance} Resource.
 func NewSecureSourceManagerInstance(scope constructs.Construct, id *string, config *SecureSourceManagerInstanceConfig) SecureSourceManagerInstance {
 	_init_.Initialize()
 
@@ -606,7 +606,7 @@ func NewSecureSourceManagerInstance(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/secure_source_manager_instance google_secure_source_manager_instance} Resource.
 func NewSecureSourceManagerInstance_Override(s SecureSourceManagerInstance, scope constructs.Construct, id *string, config *SecureSourceManagerInstanceConfig) {
 	_init_.Initialize()
 

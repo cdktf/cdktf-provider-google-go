@@ -55,6 +55,10 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) validateResolveP
 	return nil
 }
 
+func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) validateSetAllocatedIpRangeOverrideParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/network_services_service_binding google_network_services_service_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/network_services_service_binding google_network_services_service_binding}.
 type NetworkServicesServiceBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -496,7 +496,7 @@ func (j *jsiiProxy_NetworkServicesServiceBinding) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/network_services_service_binding google_network_services_service_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/network_services_service_binding google_network_services_service_binding} Resource.
 func NewNetworkServicesServiceBinding(scope constructs.Construct, id *string, config *NetworkServicesServiceBindingConfig) NetworkServicesServiceBinding {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewNetworkServicesServiceBinding(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/network_services_service_binding google_network_services_service_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/network_services_service_binding google_network_services_service_binding} Resource.
 func NewNetworkServicesServiceBinding_Override(n NetworkServicesServiceBinding, scope constructs.Construct, id *string, config *NetworkServicesServiceBindingConfig) {
 	_init_.Initialize()
 

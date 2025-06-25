@@ -7,11 +7,11 @@ package networkservicestcproute
 type NetworkServicesTcpRouteRules struct {
 	// action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/network_services_tcp_route#action NetworkServicesTcpRoute#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/network_services_tcp_route#action NetworkServicesTcpRoute#action}
 	Action *NetworkServicesTcpRouteRulesAction `field:"required" json:"action" yaml:"action"`
 	// matches block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/network_services_tcp_route#matches NetworkServicesTcpRoute#matches}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/network_services_tcp_route#matches NetworkServicesTcpRoute#matches}
 	Matches interface{} `field:"optional" json:"matches" yaml:"matches"`
 }
 

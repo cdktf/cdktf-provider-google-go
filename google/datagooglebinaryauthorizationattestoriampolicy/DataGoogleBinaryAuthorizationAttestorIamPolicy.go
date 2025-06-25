@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/data-sources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/data-sources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy}.
 type DataGoogleBinaryAuthorizationAttestorIamPolicy interface {
 	cdktf.TerraformDataSource
 	Attestor() *string
@@ -334,7 +334,7 @@ func (j *jsiiProxy_DataGoogleBinaryAuthorizationAttestorIamPolicy) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/data-sources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/data-sources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy} Data Source.
 func NewDataGoogleBinaryAuthorizationAttestorIamPolicy(scope constructs.Construct, id *string, config *DataGoogleBinaryAuthorizationAttestorIamPolicyConfig) DataGoogleBinaryAuthorizationAttestorIamPolicy {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewDataGoogleBinaryAuthorizationAttestorIamPolicy(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/data-sources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/data-sources/binary_authorization_attestor_iam_policy google_binary_authorization_attestor_iam_policy} Data Source.
 func NewDataGoogleBinaryAuthorizationAttestorIamPolicy_Override(d DataGoogleBinaryAuthorizationAttestorIamPolicy, scope constructs.Construct, id *string, config *DataGoogleBinaryAuthorizationAttestorIamPolicyConfig) {
 	_init_.Initialize()
 

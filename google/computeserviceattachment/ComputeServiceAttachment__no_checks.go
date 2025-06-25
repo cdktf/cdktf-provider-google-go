@@ -163,6 +163,10 @@ func (j *jsiiProxy_ComputeServiceAttachment) validateSetRegionParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_ComputeServiceAttachment) validateSetSendPropagatedConnectionLimitIfZeroParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeServiceAttachment) validateSetTargetServiceParameters(val *string) error {
 	return nil
 }

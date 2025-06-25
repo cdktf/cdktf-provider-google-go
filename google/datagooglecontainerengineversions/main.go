@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseChannelDefaultVersion", GoGetter: "ReleaseChannelDefaultVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseChannelLatestVersion", GoGetter: "ReleaseChannelLatestVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "releaseChannelUpgradeTargetVersion", GoGetter: "ReleaseChannelUpgradeTargetVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocation", GoMethod: "ResetLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},

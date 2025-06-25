@@ -548,6 +548,14 @@ func (j *jsiiProxy_StorageBucketObject) validateSetSourceParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_StorageBucketObject) validateSetSourceMd5HashParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_StorageBucketObject) validateSetStorageClassParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/compute_url_map google_compute_url_map}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_url_map google_compute_url_map}.
 type ComputeUrlMap interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -28,6 +28,8 @@ type ComputeUrlMap interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTimestamp() *string
+	DefaultCustomErrorResponsePolicy() ComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference
+	DefaultCustomErrorResponsePolicyInput() *ComputeUrlMapDefaultCustomErrorResponsePolicy
 	DefaultRouteAction() ComputeUrlMapDefaultRouteActionOutputReference
 	DefaultRouteActionInput() *ComputeUrlMapDefaultRouteAction
 	DefaultService() *string
@@ -137,6 +139,7 @@ type ComputeUrlMap interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDefaultCustomErrorResponsePolicy(value *ComputeUrlMapDefaultCustomErrorResponsePolicy)
 	PutDefaultRouteAction(value *ComputeUrlMapDefaultRouteAction)
 	PutDefaultUrlRedirect(value *ComputeUrlMapDefaultUrlRedirect)
 	PutHeaderAction(value *ComputeUrlMapHeaderAction)
@@ -144,6 +147,7 @@ type ComputeUrlMap interface {
 	PutPathMatcher(value interface{})
 	PutTest(value interface{})
 	PutTimeouts(value *ComputeUrlMapTimeouts)
+	ResetDefaultCustomErrorResponsePolicy()
 	ResetDefaultRouteAction()
 	ResetDefaultService()
 	ResetDefaultUrlRedirect()
@@ -221,6 +225,26 @@ func (j *jsiiProxy_ComputeUrlMap) CreationTimestamp() *string {
 	_jsii_.Get(
 		j,
 		"creationTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeUrlMap) DefaultCustomErrorResponsePolicy() ComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference {
+	var returns ComputeUrlMapDefaultCustomErrorResponsePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"defaultCustomErrorResponsePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeUrlMap) DefaultCustomErrorResponsePolicyInput() *ComputeUrlMapDefaultCustomErrorResponsePolicy {
+	var returns *ComputeUrlMapDefaultCustomErrorResponsePolicy
+	_jsii_.Get(
+		j,
+		"defaultCustomErrorResponsePolicyInput",
 		&returns,
 	)
 	return returns
@@ -617,7 +641,7 @@ func (j *jsiiProxy_ComputeUrlMap) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/compute_url_map google_compute_url_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_url_map google_compute_url_map} Resource.
 func NewComputeUrlMap(scope constructs.Construct, id *string, config *ComputeUrlMapConfig) ComputeUrlMap {
 	_init_.Initialize()
 
@@ -635,7 +659,7 @@ func NewComputeUrlMap(scope constructs.Construct, id *string, config *ComputeUrl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/compute_url_map google_compute_url_map} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_url_map google_compute_url_map} Resource.
 func NewComputeUrlMap_Override(c ComputeUrlMap, scope constructs.Construct, id *string, config *ComputeUrlMapConfig) {
 	_init_.Initialize()
 
@@ -1122,6 +1146,17 @@ func (c *jsiiProxy_ComputeUrlMap) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_ComputeUrlMap) PutDefaultCustomErrorResponsePolicy(value *ComputeUrlMapDefaultCustomErrorResponsePolicy) {
+	if err := c.validatePutDefaultCustomErrorResponsePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putDefaultCustomErrorResponsePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeUrlMap) PutDefaultRouteAction(value *ComputeUrlMapDefaultRouteAction) {
 	if err := c.validatePutDefaultRouteActionParameters(value); err != nil {
 		panic(err)
@@ -1196,6 +1231,14 @@ func (c *jsiiProxy_ComputeUrlMap) PutTimeouts(value *ComputeUrlMapTimeouts) {
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeUrlMap) ResetDefaultCustomErrorResponsePolicy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDefaultCustomErrorResponsePolicy",
+		nil, // no parameters
 	)
 }
 

@@ -79,6 +79,10 @@ func (d *jsiiProxy_DataplexDatascan) validatePutDataParameters(value *DataplexDa
 	return nil
 }
 
+func (d *jsiiProxy_DataplexDatascan) validatePutDataDiscoverySpecParameters(value *DataplexDatascanDataDiscoverySpec) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexDatascan) validatePutDataProfileSpecParameters(value *DataplexDatascanDataProfileSpec) error {
 	return nil
 }

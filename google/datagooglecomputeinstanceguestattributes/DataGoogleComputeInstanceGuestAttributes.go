@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/data-sources/compute_instance_guest_attributes google_compute_instance_guest_attributes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/data-sources/compute_instance_guest_attributes google_compute_instance_guest_attributes}.
 type DataGoogleComputeInstanceGuestAttributes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -430,7 +430,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGuestAttributes) ZoneInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/data-sources/compute_instance_guest_attributes google_compute_instance_guest_attributes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/data-sources/compute_instance_guest_attributes google_compute_instance_guest_attributes} Data Source.
 func NewDataGoogleComputeInstanceGuestAttributes(scope constructs.Construct, id *string, config *DataGoogleComputeInstanceGuestAttributesConfig) DataGoogleComputeInstanceGuestAttributes {
 	_init_.Initialize()
 
@@ -448,7 +448,7 @@ func NewDataGoogleComputeInstanceGuestAttributes(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/data-sources/compute_instance_guest_attributes google_compute_instance_guest_attributes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/data-sources/compute_instance_guest_attributes google_compute_instance_guest_attributes} Data Source.
 func NewDataGoogleComputeInstanceGuestAttributes_Override(d DataGoogleComputeInstanceGuestAttributes, scope constructs.Construct, id *string, config *DataGoogleComputeInstanceGuestAttributesConfig) {
 	_init_.Initialize()
 

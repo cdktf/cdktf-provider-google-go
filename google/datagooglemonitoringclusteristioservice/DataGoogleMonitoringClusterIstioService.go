@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/data-sources/monitoring_cluster_istio_service google_monitoring_cluster_istio_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/data-sources/monitoring_cluster_istio_service google_monitoring_cluster_istio_service}.
 type DataGoogleMonitoringClusterIstioService interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -436,7 +436,7 @@ func (j *jsiiProxy_DataGoogleMonitoringClusterIstioService) UserLabels() cdktf.S
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/data-sources/monitoring_cluster_istio_service google_monitoring_cluster_istio_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/data-sources/monitoring_cluster_istio_service google_monitoring_cluster_istio_service} Data Source.
 func NewDataGoogleMonitoringClusterIstioService(scope constructs.Construct, id *string, config *DataGoogleMonitoringClusterIstioServiceConfig) DataGoogleMonitoringClusterIstioService {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewDataGoogleMonitoringClusterIstioService(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/data-sources/monitoring_cluster_istio_service google_monitoring_cluster_istio_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/data-sources/monitoring_cluster_istio_service google_monitoring_cluster_istio_service} Data Source.
 func NewDataGoogleMonitoringClusterIstioService_Override(d DataGoogleMonitoringClusterIstioService, scope constructs.Construct, id *string, config *DataGoogleMonitoringClusterIstioServiceConfig) {
 	_init_.Initialize()
 

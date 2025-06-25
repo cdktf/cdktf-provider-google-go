@@ -33,6 +33,7 @@ type DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference 
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterNodeConfigAdvancedMachineFeatures
 	SetInternalValue(val *DataGoogleContainerClusterNodeConfigAdvancedMachineFeatures)
+	PerformanceMonitoringUnit() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -136,6 +137,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference) PerformanceMonitoringUnit() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"performanceMonitoringUnit",
 		&returns,
 	)
 	return returns

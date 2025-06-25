@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/storage_bucket_object google_storage_bucket_object}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/storage_bucket_object google_storage_bucket_object}.
 type StorageBucketObject interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -108,6 +108,9 @@ type StorageBucketObject interface {
 	Source() *string
 	SetSource(val *string)
 	SourceInput() *string
+	SourceMd5Hash() *string
+	SetSourceMd5Hash(val *string)
+	SourceMd5HashInput() *string
 	StorageClass() *string
 	SetStorageClass(val *string)
 	StorageClassInput() *string
@@ -185,6 +188,7 @@ type StorageBucketObject interface {
 	ResetOverrideLogicalId()
 	ResetRetention()
 	ResetSource()
+	ResetSourceMd5Hash()
 	ResetStorageClass()
 	ResetTemporaryHold()
 	ResetTimeouts()
@@ -726,6 +730,26 @@ func (j *jsiiProxy_StorageBucketObject) SourceInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_StorageBucketObject) SourceMd5Hash() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceMd5Hash",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketObject) SourceMd5HashInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceMd5HashInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StorageBucketObject) StorageClass() *string {
 	var returns *string
 	_jsii_.Get(
@@ -817,7 +841,7 @@ func (j *jsiiProxy_StorageBucketObject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
 func NewStorageBucketObject(scope constructs.Construct, id *string, config *StorageBucketObjectConfig) StorageBucketObject {
 	_init_.Initialize()
 
@@ -835,7 +859,7 @@ func NewStorageBucketObject(scope constructs.Construct, id *string, config *Stor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.40.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
 func NewStorageBucketObject_Override(s StorageBucketObject, scope constructs.Construct, id *string, config *StorageBucketObjectConfig) {
 	_init_.Initialize()
 
@@ -1064,6 +1088,17 @@ func (j *jsiiProxy_StorageBucketObject)SetSource(val *string) {
 	_jsii_.Set(
 		j,
 		"source",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucketObject)SetSourceMd5Hash(val *string) {
+	if err := j.validateSetSourceMd5HashParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceMd5Hash",
 		val,
 	)
 }
@@ -1592,6 +1627,14 @@ func (s *jsiiProxy_StorageBucketObject) ResetSource() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSource",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucketObject) ResetSourceMd5Hash() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSourceMd5Hash",
 		nil, // no parameters
 	)
 }

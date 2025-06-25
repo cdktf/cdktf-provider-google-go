@@ -28,6 +28,9 @@ type DnsManagedZoneForwardingConfigTargetNameServersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DomainName() *string
+	SetDomainName(val *string)
+	DomainNameInput() *string
 	ForwardingPath() *string
 	SetForwardingPath(val *string)
 	ForwardingPathInput() *string
@@ -70,6 +73,7 @@ type DnsManagedZoneForwardingConfigTargetNameServersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDomainName()
 	ResetForwardingPath()
 	ResetIpv4Address()
 	// Produce the Token's value at resolution time.
@@ -112,6 +116,26 @@ func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReferenc
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference) DomainName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference) DomainNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainNameInput",
 		&returns,
 	)
 	return returns
@@ -243,6 +267,17 @@ func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReferenc
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference)SetDomainName(val *string) {
+	if err := j.validateSetDomainNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainName",
 		val,
 	)
 }
@@ -486,6 +521,14 @@ func (d *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReferenc
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference) ResetDomainName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDomainName",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersOutputReference) ResetForwardingPath() {
