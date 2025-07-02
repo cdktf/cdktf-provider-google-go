@@ -23,6 +23,7 @@ type DataGoogleCloudIdentityGroupMembershipsMembershipsOutputReference interface
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	CreateIgnoreAlreadyExists() cdktf.IResolvable
 	CreateTime() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -101,6 +102,16 @@ func (j *jsiiProxy_DataGoogleCloudIdentityGroupMembershipsMembershipsOutputRefer
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudIdentityGroupMembershipsMembershipsOutputReference) CreateIgnoreAlreadyExists() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"createIgnoreAlreadyExists",
 		&returns,
 	)
 	return returns

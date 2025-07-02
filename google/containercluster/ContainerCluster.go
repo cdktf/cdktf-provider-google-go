@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/container_cluster google_container_cluster}.
 type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
@@ -120,6 +120,8 @@ type ContainerCluster interface {
 	FriendlyUniqueId() *string
 	GatewayApiConfig() ContainerClusterGatewayApiConfigOutputReference
 	GatewayApiConfigInput() *ContainerClusterGatewayApiConfig
+	GkeAutoUpgradeConfig() ContainerClusterGkeAutoUpgradeConfigOutputReference
+	GkeAutoUpgradeConfigInput() *ContainerClusterGkeAutoUpgradeConfig
 	Id() *string
 	SetId(val *string)
 	IdentityServiceConfig() ContainerClusterIdentityServiceConfigOutputReference
@@ -309,6 +311,7 @@ type ContainerCluster interface {
 	PutEnterpriseConfig(value *ContainerClusterEnterpriseConfig)
 	PutFleet(value *ContainerClusterFleet)
 	PutGatewayApiConfig(value *ContainerClusterGatewayApiConfig)
+	PutGkeAutoUpgradeConfig(value *ContainerClusterGkeAutoUpgradeConfig)
 	PutIdentityServiceConfig(value *ContainerClusterIdentityServiceConfig)
 	PutIpAllocationPolicy(value *ContainerClusterIpAllocationPolicy)
 	PutLoggingConfig(value *ContainerClusterLoggingConfig)
@@ -366,6 +369,7 @@ type ContainerCluster interface {
 	ResetEnterpriseConfig()
 	ResetFleet()
 	ResetGatewayApiConfig()
+	ResetGkeAutoUpgradeConfig()
 	ResetId()
 	ResetIdentityServiceConfig()
 	ResetInitialNodeCount()
@@ -1144,6 +1148,26 @@ func (j *jsiiProxy_ContainerCluster) GatewayApiConfigInput() *ContainerClusterGa
 	_jsii_.Get(
 		j,
 		"gatewayApiConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) GkeAutoUpgradeConfig() ContainerClusterGkeAutoUpgradeConfigOutputReference {
+	var returns ContainerClusterGkeAutoUpgradeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"gkeAutoUpgradeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) GkeAutoUpgradeConfigInput() *ContainerClusterGkeAutoUpgradeConfig {
+	var returns *ContainerClusterGkeAutoUpgradeConfig
+	_jsii_.Get(
+		j,
+		"gkeAutoUpgradeConfigInput",
 		&returns,
 	)
 	return returns
@@ -2160,7 +2184,7 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
 
@@ -2178,7 +2202,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct, id *string, config *ContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -3138,6 +3162,17 @@ func (c *jsiiProxy_ContainerCluster) PutGatewayApiConfig(value *ContainerCluster
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutGkeAutoUpgradeConfig(value *ContainerClusterGkeAutoUpgradeConfig) {
+	if err := c.validatePutGkeAutoUpgradeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putGkeAutoUpgradeConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutIdentityServiceConfig(value *ContainerClusterIdentityServiceConfig) {
 	if err := c.validatePutIdentityServiceConfigParameters(value); err != nil {
 		panic(err)
@@ -3668,6 +3703,14 @@ func (c *jsiiProxy_ContainerCluster) ResetGatewayApiConfig() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetGatewayApiConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetGkeAutoUpgradeConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetGkeAutoUpgradeConfig",
 		nil, // no parameters
 	)
 }

@@ -418,6 +418,8 @@ func init() {
 		"@cdktf/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketIpFilterOutputReference",
 		reflect.TypeOf((*DataGoogleStorageBucketIpFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allowAllServiceAgentAccess", GoGetter: "AllowAllServiceAgentAccess"},
+			_jsii_.MemberProperty{JsiiProperty: "allowCrossOrgVpcs", GoGetter: "AllowCrossOrgVpcs"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},

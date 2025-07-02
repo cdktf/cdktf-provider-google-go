@@ -9,13 +9,13 @@ type MonitoringAlertPolicyDocumentationLinks struct {
 	//
 	// The display name must not be empty or exceed 63 characters. Example: "playbook".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/monitoring_alert_policy#display_name MonitoringAlertPolicy#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/monitoring_alert_policy#display_name MonitoringAlertPolicy#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
 	// The url of a webpage.
 	//
 	// A url can be templatized by using variables in the path or the query parameters. The total length of a URL should not exceed 2083 characters before and after variable expansion. Example: "https://my_domain.com/playbook?name=${resource.name}".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/monitoring_alert_policy#url MonitoringAlertPolicy#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/monitoring_alert_policy#url MonitoringAlertPolicy#url}
 	Url *string `field:"optional" json:"url" yaml:"url"`
 }
 

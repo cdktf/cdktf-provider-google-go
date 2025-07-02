@@ -131,6 +131,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutGatewayApiConfigParameters(value
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutGkeAutoUpgradeConfigParameters(value *ContainerClusterGkeAutoUpgradeConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutIdentityServiceConfigParameters(value *ContainerClusterIdentityServiceConfig) error {
 	return nil
 }

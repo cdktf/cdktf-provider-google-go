@@ -59,6 +59,10 @@ func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) validateSetConfidentialInstanceTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

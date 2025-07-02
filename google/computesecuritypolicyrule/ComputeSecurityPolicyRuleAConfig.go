@@ -34,57 +34,57 @@ type ComputeSecurityPolicyRuleAConfig struct {
 	//
 	// * throttle: limit client traffic to the configured threshold. Configure parameters for this action in rateLimitOptions. Requires rateLimitOptions to be set for this.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_security_policy_rule#action ComputeSecurityPolicyRuleA#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_security_policy_rule#action ComputeSecurityPolicyRuleA#action}
 	Action *string `field:"required" json:"action" yaml:"action"`
 	// An integer indicating the priority of a rule in the list.
 	//
 	// The priority must be a positive value between 0 and 2147483647.
 	// Rules are evaluated from highest to lowest priority where 0 is the highest priority and 2147483647 is the lowest priority.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_security_policy_rule#priority ComputeSecurityPolicyRuleA#priority}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_security_policy_rule#priority ComputeSecurityPolicyRuleA#priority}
 	Priority *float64 `field:"required" json:"priority" yaml:"priority"`
 	// The name of the security policy this rule belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_security_policy_rule#security_policy ComputeSecurityPolicyRuleA#security_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_security_policy_rule#security_policy ComputeSecurityPolicyRuleA#security_policy}
 	SecurityPolicy *string `field:"required" json:"securityPolicy" yaml:"securityPolicy"`
 	// An optional description of this resource. Provide this property when you create the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_security_policy_rule#description ComputeSecurityPolicyRuleA#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_security_policy_rule#description ComputeSecurityPolicyRuleA#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// header_action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_security_policy_rule#header_action ComputeSecurityPolicyRuleA#header_action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_security_policy_rule#header_action ComputeSecurityPolicyRuleA#header_action}
 	HeaderAction *ComputeSecurityPolicyRuleHeaderActionA `field:"optional" json:"headerAction" yaml:"headerAction"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_security_policy_rule#id ComputeSecurityPolicyRuleA#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_security_policy_rule#id ComputeSecurityPolicyRuleA#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// match block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_security_policy_rule#match ComputeSecurityPolicyRuleA#match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_security_policy_rule#match ComputeSecurityPolicyRuleA#match}
 	Match *ComputeSecurityPolicyRuleMatchA `field:"optional" json:"match" yaml:"match"`
 	// preconfigured_waf_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_security_policy_rule#preconfigured_waf_config ComputeSecurityPolicyRuleA#preconfigured_waf_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_security_policy_rule#preconfigured_waf_config ComputeSecurityPolicyRuleA#preconfigured_waf_config}
 	PreconfiguredWafConfig *ComputeSecurityPolicyRulePreconfiguredWafConfigA `field:"optional" json:"preconfiguredWafConfig" yaml:"preconfiguredWafConfig"`
 	// If set to true, the specified action is not enforced.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_security_policy_rule#preview ComputeSecurityPolicyRuleA#preview}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_security_policy_rule#preview ComputeSecurityPolicyRuleA#preview}
 	Preview interface{} `field:"optional" json:"preview" yaml:"preview"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_security_policy_rule#project ComputeSecurityPolicyRuleA#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_security_policy_rule#project ComputeSecurityPolicyRuleA#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// rate_limit_options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_security_policy_rule#rate_limit_options ComputeSecurityPolicyRuleA#rate_limit_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_security_policy_rule#rate_limit_options ComputeSecurityPolicyRuleA#rate_limit_options}
 	RateLimitOptions *ComputeSecurityPolicyRuleRateLimitOptionsA `field:"optional" json:"rateLimitOptions" yaml:"rateLimitOptions"`
 	// redirect_options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_security_policy_rule#redirect_options ComputeSecurityPolicyRuleA#redirect_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_security_policy_rule#redirect_options ComputeSecurityPolicyRuleA#redirect_options}
 	RedirectOptions *ComputeSecurityPolicyRuleRedirectOptionsA `field:"optional" json:"redirectOptions" yaml:"redirectOptions"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_security_policy_rule#timeouts ComputeSecurityPolicyRuleA#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_security_policy_rule#timeouts ComputeSecurityPolicyRuleA#timeouts}
 	Timeouts *ComputeSecurityPolicyRuleTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

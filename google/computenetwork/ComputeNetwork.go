@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_network google_compute_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_network google_compute_network}.
 type ComputeNetwork interface {
 	cdktf.TerraformResource
 	AutoCreateSubnetworks() interface{}
@@ -87,6 +87,8 @@ type ComputeNetwork interface {
 	// The tree node.
 	Node() constructs.Node
 	NumericId() *string
+	Params() ComputeNetworkParamsOutputReference
+	ParamsInput() *ComputeNetworkParams
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -155,6 +157,7 @@ type ComputeNetwork interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutParams(value *ComputeNetworkParams)
 	PutTimeouts(value *ComputeNetworkTimeouts)
 	ResetAutoCreateSubnetworks()
 	ResetBgpAlwaysCompareMed()
@@ -171,6 +174,7 @@ type ComputeNetwork interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetProject()
 	ResetRoutingMode()
 	ResetTimeouts()
@@ -582,6 +586,26 @@ func (j *jsiiProxy_ComputeNetwork) NumericId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ComputeNetwork) Params() ComputeNetworkParamsOutputReference {
+	var returns ComputeNetworkParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeNetwork) ParamsInput() *ComputeNetworkParams {
+	var returns *ComputeNetworkParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeNetwork) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -713,7 +737,7 @@ func (j *jsiiProxy_ComputeNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_network google_compute_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_network google_compute_network} Resource.
 func NewComputeNetwork(scope constructs.Construct, id *string, config *ComputeNetworkConfig) ComputeNetwork {
 	_init_.Initialize()
 
@@ -731,7 +755,7 @@ func NewComputeNetwork(scope constructs.Construct, id *string, config *ComputeNe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_network google_compute_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_network google_compute_network} Resource.
 func NewComputeNetwork_Override(c ComputeNetwork, scope constructs.Construct, id *string, config *ComputeNetworkConfig) {
 	_init_.Initialize()
 
@@ -1328,6 +1352,17 @@ func (c *jsiiProxy_ComputeNetwork) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_ComputeNetwork) PutParams(value *ComputeNetworkParams) {
+	if err := c.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeNetwork) PutTimeouts(value *ComputeNetworkTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1439,6 +1474,14 @@ func (c *jsiiProxy_ComputeNetwork) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeNetwork) ResetParams() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParams",
 		nil, // no parameters
 	)
 }

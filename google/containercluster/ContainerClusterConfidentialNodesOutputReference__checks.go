@@ -166,6 +166,14 @@ func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) validateSetConfidentialInstanceTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) validateSetEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

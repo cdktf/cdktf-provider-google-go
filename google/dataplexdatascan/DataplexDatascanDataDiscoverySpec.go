@@ -7,11 +7,11 @@ package dataplexdatascan
 type DataplexDatascanDataDiscoverySpec struct {
 	// bigquery_publishing_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/dataplex_datascan#bigquery_publishing_config DataplexDatascan#bigquery_publishing_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/dataplex_datascan#bigquery_publishing_config DataplexDatascan#bigquery_publishing_config}
 	BigqueryPublishingConfig *DataplexDatascanDataDiscoverySpecBigqueryPublishingConfig `field:"optional" json:"bigqueryPublishingConfig" yaml:"bigqueryPublishingConfig"`
 	// storage_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/dataplex_datascan#storage_config DataplexDatascan#storage_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/dataplex_datascan#storage_config DataplexDatascan#storage_config}
 	StorageConfig *DataplexDatascanDataDiscoverySpecStorageConfig `field:"optional" json:"storageConfig" yaml:"storageConfig"`
 }
 

@@ -91,6 +91,10 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutNamedPortParameters(v
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutResourcePoliciesParameters(value *ComputeInstanceGroupManagerResourcePolicies) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutStandbyPolicyParameters(value *ComputeInstanceGroupManagerStandbyPolicy) error {
 	return nil
 }

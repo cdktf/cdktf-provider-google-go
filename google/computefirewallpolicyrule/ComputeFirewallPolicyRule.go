@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_firewall_policy_rule google_compute_firewall_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_firewall_policy_rule google_compute_firewall_policy_rule}.
 type ComputeFirewallPolicyRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -90,6 +90,8 @@ type ComputeFirewallPolicyRule interface {
 	TargetResources() *[]*string
 	SetTargetResources(val *[]*string)
 	TargetResourcesInput() *[]*string
+	TargetSecureTags() ComputeFirewallPolicyRuleTargetSecureTagsList
+	TargetSecureTagsInput() interface{}
 	TargetServiceAccounts() *[]*string
 	SetTargetServiceAccounts(val *[]*string)
 	TargetServiceAccountsInput() *[]*string
@@ -148,6 +150,7 @@ type ComputeFirewallPolicyRule interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMatch(value *ComputeFirewallPolicyRuleMatch)
+	PutTargetSecureTags(value interface{})
 	PutTimeouts(value *ComputeFirewallPolicyRuleTimeouts)
 	ResetDescription()
 	ResetDisabled()
@@ -158,6 +161,7 @@ type ComputeFirewallPolicyRule interface {
 	ResetOverrideLogicalId()
 	ResetSecurityProfileGroup()
 	ResetTargetResources()
+	ResetTargetSecureTags()
 	ResetTargetServiceAccounts()
 	ResetTimeouts()
 	ResetTlsInspect()
@@ -559,6 +563,26 @@ func (j *jsiiProxy_ComputeFirewallPolicyRule) TargetResourcesInput() *[]*string 
 	return returns
 }
 
+func (j *jsiiProxy_ComputeFirewallPolicyRule) TargetSecureTags() ComputeFirewallPolicyRuleTargetSecureTagsList {
+	var returns ComputeFirewallPolicyRuleTargetSecureTagsList
+	_jsii_.Get(
+		j,
+		"targetSecureTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRule) TargetSecureTagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"targetSecureTagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeFirewallPolicyRule) TargetServiceAccounts() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -650,7 +674,7 @@ func (j *jsiiProxy_ComputeFirewallPolicyRule) TlsInspectInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_firewall_policy_rule google_compute_firewall_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_firewall_policy_rule google_compute_firewall_policy_rule} Resource.
 func NewComputeFirewallPolicyRule(scope constructs.Construct, id *string, config *ComputeFirewallPolicyRuleConfig) ComputeFirewallPolicyRule {
 	_init_.Initialize()
 
@@ -668,7 +692,7 @@ func NewComputeFirewallPolicyRule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_firewall_policy_rule google_compute_firewall_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_firewall_policy_rule google_compute_firewall_policy_rule} Resource.
 func NewComputeFirewallPolicyRule_Override(c ComputeFirewallPolicyRule, scope constructs.Construct, id *string, config *ComputeFirewallPolicyRuleConfig) {
 	_init_.Initialize()
 
@@ -1243,6 +1267,17 @@ func (c *jsiiProxy_ComputeFirewallPolicyRule) PutMatch(value *ComputeFirewallPol
 	)
 }
 
+func (c *jsiiProxy_ComputeFirewallPolicyRule) PutTargetSecureTags(value interface{}) {
+	if err := c.validatePutTargetSecureTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTargetSecureTags",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeFirewallPolicyRule) PutTimeouts(value *ComputeFirewallPolicyRuleTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1306,6 +1341,14 @@ func (c *jsiiProxy_ComputeFirewallPolicyRule) ResetTargetResources() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTargetResources",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeFirewallPolicyRule) ResetTargetSecureTags() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTargetSecureTags",
 		nil, // no parameters
 	)
 }

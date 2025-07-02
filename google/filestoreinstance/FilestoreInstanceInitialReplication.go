@@ -7,11 +7,11 @@ package filestoreinstance
 type FilestoreInstanceInitialReplication struct {
 	// replicas block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/filestore_instance#replicas FilestoreInstance#replicas}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/filestore_instance#replicas FilestoreInstance#replicas}
 	Replicas interface{} `field:"optional" json:"replicas" yaml:"replicas"`
 	// The replication role. Default value: "STANDBY" Possible values: ["ROLE_UNSPECIFIED", "ACTIVE", "STANDBY"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/filestore_instance#role FilestoreInstance#role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/filestore_instance#role FilestoreInstance#role}
 	Role *string `field:"optional" json:"role" yaml:"role"`
 }
 

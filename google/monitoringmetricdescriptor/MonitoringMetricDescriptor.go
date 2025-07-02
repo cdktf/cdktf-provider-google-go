@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/monitoring_metric_descriptor google_monitoring_metric_descriptor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/monitoring_metric_descriptor google_monitoring_metric_descriptor}.
 type MonitoringMetricDescriptor interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -142,6 +142,8 @@ type MonitoringMetricDescriptor interface {
 	PutLabels(value interface{})
 	PutMetadata(value *MonitoringMetricDescriptorMetadata)
 	PutTimeouts(value *MonitoringMetricDescriptorTimeouts)
+	ResetDescription()
+	ResetDisplayName()
 	ResetId()
 	ResetLabels()
 	ResetLaunchStage()
@@ -591,7 +593,7 @@ func (j *jsiiProxy_MonitoringMetricDescriptor) ValueTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/monitoring_metric_descriptor google_monitoring_metric_descriptor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/monitoring_metric_descriptor google_monitoring_metric_descriptor} Resource.
 func NewMonitoringMetricDescriptor(scope constructs.Construct, id *string, config *MonitoringMetricDescriptorConfig) MonitoringMetricDescriptor {
 	_init_.Initialize()
 
@@ -609,7 +611,7 @@ func NewMonitoringMetricDescriptor(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/monitoring_metric_descriptor google_monitoring_metric_descriptor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/monitoring_metric_descriptor google_monitoring_metric_descriptor} Resource.
 func NewMonitoringMetricDescriptor_Override(m MonitoringMetricDescriptor, scope constructs.Construct, id *string, config *MonitoringMetricDescriptorConfig) {
 	_init_.Initialize()
 
@@ -1170,6 +1172,22 @@ func (m *jsiiProxy_MonitoringMetricDescriptor) PutTimeouts(value *MonitoringMetr
 		m,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MonitoringMetricDescriptor) ResetDescription() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MonitoringMetricDescriptor) ResetDisplayName() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDisplayName",
+		nil, // no parameters
 	)
 }
 

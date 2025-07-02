@@ -13,6 +13,8 @@ import (
 
 type DataGoogleStorageBucketIpFilterOutputReference interface {
 	cdktf.ComplexObject
+	AllowAllServiceAgentAccess() cdktf.IResolvable
+	AllowCrossOrgVpcs() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -80,6 +82,26 @@ type DataGoogleStorageBucketIpFilterOutputReference interface {
 // The jsii proxy struct for DataGoogleStorageBucketIpFilterOutputReference
 type jsiiProxy_DataGoogleStorageBucketIpFilterOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucketIpFilterOutputReference) AllowAllServiceAgentAccess() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowAllServiceAgentAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleStorageBucketIpFilterOutputReference) AllowCrossOrgVpcs() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowCrossOrgVpcs",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleStorageBucketIpFilterOutputReference) ComplexObjectIndex() interface{} {

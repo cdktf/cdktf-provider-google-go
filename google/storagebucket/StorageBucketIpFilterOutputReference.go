@@ -13,6 +13,12 @@ import (
 
 type StorageBucketIpFilterOutputReference interface {
 	cdktf.ComplexObject
+	AllowAllServiceAgentAccess() interface{}
+	SetAllowAllServiceAgentAccess(val interface{})
+	AllowAllServiceAgentAccessInput() interface{}
+	AllowCrossOrgVpcs() interface{}
+	SetAllowCrossOrgVpcs(val interface{})
+	AllowCrossOrgVpcsInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -73,6 +79,8 @@ type StorageBucketIpFilterOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPublicNetworkSource(value *StorageBucketIpFilterPublicNetworkSource)
 	PutVpcNetworkSources(value interface{})
+	ResetAllowAllServiceAgentAccess()
+	ResetAllowCrossOrgVpcs()
 	ResetPublicNetworkSource()
 	ResetVpcNetworkSources()
 	// Produce the Token's value at resolution time.
@@ -88,6 +96,46 @@ type StorageBucketIpFilterOutputReference interface {
 // The jsii proxy struct for StorageBucketIpFilterOutputReference
 type jsiiProxy_StorageBucketIpFilterOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_StorageBucketIpFilterOutputReference) AllowAllServiceAgentAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAllServiceAgentAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketIpFilterOutputReference) AllowAllServiceAgentAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAllServiceAgentAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketIpFilterOutputReference) AllowCrossOrgVpcs() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowCrossOrgVpcs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketIpFilterOutputReference) AllowCrossOrgVpcsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowCrossOrgVpcsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_StorageBucketIpFilterOutputReference) ComplexObjectIndex() interface{} {
@@ -245,6 +293,28 @@ func NewStorageBucketIpFilterOutputReference_Override(s StorageBucketIpFilterOut
 		"@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
+	)
+}
+
+func (j *jsiiProxy_StorageBucketIpFilterOutputReference)SetAllowAllServiceAgentAccess(val interface{}) {
+	if err := j.validateSetAllowAllServiceAgentAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowAllServiceAgentAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucketIpFilterOutputReference)SetAllowCrossOrgVpcs(val interface{}) {
+	if err := j.validateSetAllowCrossOrgVpcsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowCrossOrgVpcs",
+		val,
 	)
 }
 
@@ -519,6 +589,22 @@ func (s *jsiiProxy_StorageBucketIpFilterOutputReference) PutVpcNetworkSources(va
 		s,
 		"putVpcNetworkSources",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageBucketIpFilterOutputReference) ResetAllowAllServiceAgentAccess() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAllowAllServiceAgentAccess",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucketIpFilterOutputReference) ResetAllowCrossOrgVpcs() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAllowCrossOrgVpcs",
+		nil, // no parameters
 	)
 }
 

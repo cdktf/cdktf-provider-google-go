@@ -14,6 +14,8 @@ func init() {
 		"@cdktf/provider-google.computeRegionDisk.ComputeRegionDisk",
 		reflect.TypeOf((*ComputeRegionDisk)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accessMode", GoGetter: "AccessMode"},
+			_jsii_.MemberProperty{JsiiProperty: "accessModeInput", GoGetter: "AccessModeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "asyncPrimaryDisk", GoGetter: "AsyncPrimaryDisk"},
@@ -84,6 +86,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "replicaZones", GoGetter: "ReplicaZones"},
 			_jsii_.MemberProperty{JsiiProperty: "replicaZonesInput", GoGetter: "ReplicaZonesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccessMode", GoMethod: "ResetAccessMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAsyncPrimaryDisk", GoMethod: "ResetAsyncPrimaryDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreateSnapshotBeforeDestroy", GoMethod: "ResetCreateSnapshotBeforeDestroy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreateSnapshotBeforeDestroyPrefix", GoMethod: "ResetCreateSnapshotBeforeDestroyPrefix"},

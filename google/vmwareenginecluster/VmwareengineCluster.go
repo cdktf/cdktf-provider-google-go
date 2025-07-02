@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/vmwareengine_cluster google_vmwareengine_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/vmwareengine_cluster google_vmwareengine_cluster}.
 type VmwareengineCluster interface {
 	cdktf.TerraformResource
 	AutoscalingSettings() VmwareengineClusterAutoscalingSettingsOutputReference
@@ -461,7 +461,7 @@ func (j *jsiiProxy_VmwareengineCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/vmwareengine_cluster google_vmwareengine_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/vmwareengine_cluster google_vmwareengine_cluster} Resource.
 func NewVmwareengineCluster(scope constructs.Construct, id *string, config *VmwareengineClusterConfig) VmwareengineCluster {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewVmwareengineCluster(scope constructs.Construct, id *string, config *Vmwa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/vmwareengine_cluster google_vmwareengine_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/vmwareengine_cluster google_vmwareengine_cluster} Resource.
 func NewVmwareengineCluster_Override(v VmwareengineCluster, scope constructs.Construct, id *string, config *VmwareengineClusterConfig) {
 	_init_.Initialize()
 

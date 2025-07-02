@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job}.
 type DatabaseMigrationServiceMigrationJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -767,7 +767,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceMigrationJob) VpcPeeringConnectivityI
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job} Resource.
 func NewDatabaseMigrationServiceMigrationJob(scope constructs.Construct, id *string, config *DatabaseMigrationServiceMigrationJobConfig) DatabaseMigrationServiceMigrationJob {
 	_init_.Initialize()
 
@@ -785,7 +785,7 @@ func NewDatabaseMigrationServiceMigrationJob(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job} Resource.
 func NewDatabaseMigrationServiceMigrationJob_Override(d DatabaseMigrationServiceMigrationJob, scope constructs.Construct, id *string, config *DatabaseMigrationServiceMigrationJobConfig) {
 	_init_.Initialize()
 

@@ -79,6 +79,10 @@ func (c *jsiiProxy_ComputeFirewallPolicyRule) validatePutMatchParameters(value *
 	return nil
 }
 
+func (c *jsiiProxy_ComputeFirewallPolicyRule) validatePutTargetSecureTagsParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeFirewallPolicyRule) validatePutTimeoutsParameters(value *ComputeFirewallPolicyRuleTimeouts) error {
 	return nil
 }

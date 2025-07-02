@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/cloud_identity_group_membership google_cloud_identity_group_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/cloud_identity_group_membership google_cloud_identity_group_membership}.
 type CloudIdentityGroupMembership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,9 @@ type CloudIdentityGroupMembership interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateIgnoreAlreadyExists() interface{}
+	SetCreateIgnoreAlreadyExists(val interface{})
+	CreateIgnoreAlreadyExistsInput() interface{}
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -123,6 +126,7 @@ type CloudIdentityGroupMembership interface {
 	PutPreferredMemberKey(value *CloudIdentityGroupMembershipPreferredMemberKey)
 	PutRoles(value interface{})
 	PutTimeouts(value *CloudIdentityGroupMembershipTimeouts)
+	ResetCreateIgnoreAlreadyExists()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -182,6 +186,26 @@ func (j *jsiiProxy_CloudIdentityGroupMembership) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudIdentityGroupMembership) CreateIgnoreAlreadyExists() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createIgnoreAlreadyExists",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudIdentityGroupMembership) CreateIgnoreAlreadyExistsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createIgnoreAlreadyExistsInput",
 		&returns,
 	)
 	return returns
@@ -448,7 +472,7 @@ func (j *jsiiProxy_CloudIdentityGroupMembership) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/cloud_identity_group_membership google_cloud_identity_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/cloud_identity_group_membership google_cloud_identity_group_membership} Resource.
 func NewCloudIdentityGroupMembership(scope constructs.Construct, id *string, config *CloudIdentityGroupMembershipConfig) CloudIdentityGroupMembership {
 	_init_.Initialize()
 
@@ -466,7 +490,7 @@ func NewCloudIdentityGroupMembership(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/cloud_identity_group_membership google_cloud_identity_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/cloud_identity_group_membership google_cloud_identity_group_membership} Resource.
 func NewCloudIdentityGroupMembership_Override(c CloudIdentityGroupMembership, scope constructs.Construct, id *string, config *CloudIdentityGroupMembershipConfig) {
 	_init_.Initialize()
 
@@ -495,6 +519,17 @@ func (j *jsiiProxy_CloudIdentityGroupMembership)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudIdentityGroupMembership)SetCreateIgnoreAlreadyExists(val interface{}) {
+	if err := j.validateSetCreateIgnoreAlreadyExistsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createIgnoreAlreadyExists",
 		val,
 	)
 }
@@ -950,6 +985,14 @@ func (c *jsiiProxy_CloudIdentityGroupMembership) PutTimeouts(value *CloudIdentit
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudIdentityGroupMembership) ResetCreateIgnoreAlreadyExists() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCreateIgnoreAlreadyExists",
+		nil, // no parameters
 	)
 }
 

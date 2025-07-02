@@ -23,6 +23,9 @@ type ContainerClusterConfidentialNodesOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfidentialInstanceType() *string
+	SetConfidentialInstanceType(val *string)
+	ConfidentialInstanceTypeInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -67,6 +70,7 @@ type ContainerClusterConfidentialNodesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetConfidentialInstanceType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -97,6 +101,26 @@ func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) ComplexObje
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) ConfidentialInstanceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"confidentialInstanceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) ConfidentialInstanceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"confidentialInstanceTypeInput",
 		&returns,
 	)
 	return returns
@@ -218,6 +242,17 @@ func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference)SetComplexOb
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterConfidentialNodesOutputReference)SetConfidentialInstanceType(val *string) {
+	if err := j.validateSetConfidentialInstanceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"confidentialInstanceType",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) Interpolati
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) ResetConfidentialInstanceType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetConfidentialInstanceType",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_ContainerClusterConfidentialNodesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

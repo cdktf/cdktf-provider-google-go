@@ -75,6 +75,10 @@ func (c *jsiiProxy_ComputeNetwork) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (c *jsiiProxy_ComputeNetwork) validatePutParamsParameters(value *ComputeNetworkParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeNetwork) validatePutTimeoutsParameters(value *ComputeNetworkTimeouts) error {
 	return nil
 }

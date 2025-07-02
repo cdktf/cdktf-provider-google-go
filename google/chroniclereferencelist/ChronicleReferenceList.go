@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/chronicle_reference_list google_chronicle_reference_list}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/chronicle_reference_list google_chronicle_reference_list}.
 type ChronicleReferenceList interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -562,7 +562,7 @@ func (j *jsiiProxy_ChronicleReferenceList) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/chronicle_reference_list google_chronicle_reference_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/chronicle_reference_list google_chronicle_reference_list} Resource.
 func NewChronicleReferenceList(scope constructs.Construct, id *string, config *ChronicleReferenceListConfig) ChronicleReferenceList {
 	_init_.Initialize()
 
@@ -580,7 +580,7 @@ func NewChronicleReferenceList(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/chronicle_reference_list google_chronicle_reference_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/chronicle_reference_list google_chronicle_reference_list} Resource.
 func NewChronicleReferenceList_Override(c ChronicleReferenceList, scope constructs.Construct, id *string, config *ChronicleReferenceListConfig) {
 	_init_.Initialize()
 

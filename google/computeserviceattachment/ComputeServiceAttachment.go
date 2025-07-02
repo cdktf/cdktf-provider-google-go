@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_service_attachment google_compute_service_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_service_attachment google_compute_service_attachment}.
 type ComputeServiceAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -698,7 +698,7 @@ func (j *jsiiProxy_ComputeServiceAttachment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_service_attachment google_compute_service_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_service_attachment google_compute_service_attachment} Resource.
 func NewComputeServiceAttachment(scope constructs.Construct, id *string, config *ComputeServiceAttachmentConfig) ComputeServiceAttachment {
 	_init_.Initialize()
 
@@ -716,7 +716,7 @@ func NewComputeServiceAttachment(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_service_attachment google_compute_service_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_service_attachment google_compute_service_attachment} Resource.
 func NewComputeServiceAttachment_Override(c ComputeServiceAttachment, scope constructs.Construct, id *string, config *ComputeServiceAttachmentConfig) {
 	_init_.Initialize()
 

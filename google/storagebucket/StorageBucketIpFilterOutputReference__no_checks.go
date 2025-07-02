@@ -59,6 +59,14 @@ func (s *jsiiProxy_StorageBucketIpFilterOutputReference) validateResolveParamete
 	return nil
 }
 
+func (j *jsiiProxy_StorageBucketIpFilterOutputReference) validateSetAllowAllServiceAgentAccessParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageBucketIpFilterOutputReference) validateSetAllowCrossOrgVpcsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBucketIpFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

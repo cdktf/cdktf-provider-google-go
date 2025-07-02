@@ -71,6 +71,10 @@ func (j *jsiiProxy_SpannerBackupScheduleEncryptionConfigOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_SpannerBackupScheduleEncryptionConfigOutputReference) validateSetKmsKeyNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpannerBackupScheduleEncryptionConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

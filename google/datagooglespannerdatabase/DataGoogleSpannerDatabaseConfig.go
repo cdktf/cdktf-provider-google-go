@@ -24,20 +24,20 @@ type DataGoogleSpannerDatabaseConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The instance to create the database on.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/data-sources/spanner_database#instance DataGoogleSpannerDatabase#instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/data-sources/spanner_database#instance DataGoogleSpannerDatabase#instance}
 	Instance *string `field:"required" json:"instance" yaml:"instance"`
 	// A unique identifier for the database, which cannot be changed after the instance is created.
 	//
 	// Values are of the form '[a-z][-_a-z0-9]*[a-z0-9]'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/data-sources/spanner_database#name DataGoogleSpannerDatabase#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/data-sources/spanner_database#name DataGoogleSpannerDatabase#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/data-sources/spanner_database#id DataGoogleSpannerDatabase#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/data-sources/spanner_database#id DataGoogleSpannerDatabase#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/data-sources/spanner_database#project DataGoogleSpannerDatabase#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/data-sources/spanner_database#project DataGoogleSpannerDatabase#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

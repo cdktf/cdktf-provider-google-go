@@ -61,6 +61,8 @@ type ComputeFirewallPolicyRuleMatchOutputReference interface {
 	SrcRegionCodes() *[]*string
 	SetSrcRegionCodes(val *[]*string)
 	SrcRegionCodesInput() *[]*string
+	SrcSecureTags() ComputeFirewallPolicyRuleMatchSrcSecureTagsList
+	SrcSecureTagsInput() interface{}
 	SrcThreatIntelligences() *[]*string
 	SetSrcThreatIntelligences(val *[]*string)
 	SrcThreatIntelligencesInput() *[]*string
@@ -97,6 +99,7 @@ type ComputeFirewallPolicyRuleMatchOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLayer4Configs(value interface{})
+	PutSrcSecureTags(value interface{})
 	ResetDestAddressGroups()
 	ResetDestFqdns()
 	ResetDestIpRanges()
@@ -106,6 +109,7 @@ type ComputeFirewallPolicyRuleMatchOutputReference interface {
 	ResetSrcFqdns()
 	ResetSrcIpRanges()
 	ResetSrcRegionCodes()
+	ResetSrcSecureTags()
 	ResetSrcThreatIntelligences()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -367,6 +371,26 @@ func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) SrcRegionCodes
 	_jsii_.Get(
 		j,
 		"srcRegionCodesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) SrcSecureTags() ComputeFirewallPolicyRuleMatchSrcSecureTagsList {
+	var returns ComputeFirewallPolicyRuleMatchSrcSecureTagsList
+	_jsii_.Get(
+		j,
+		"srcSecureTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) SrcSecureTagsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"srcSecureTagsInput",
 		&returns,
 	)
 	return returns
@@ -802,6 +826,17 @@ func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) PutLayer4Confi
 	)
 }
 
+func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) PutSrcSecureTags(value interface{}) {
+	if err := c.validatePutSrcSecureTagsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSrcSecureTags",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) ResetDestAddressGroups() {
 	_jsii_.InvokeVoid(
 		c,
@@ -870,6 +905,14 @@ func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) ResetSrcRegion
 	_jsii_.InvokeVoid(
 		c,
 		"resetSrcRegionCodes",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) ResetSrcSecureTags() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSrcSecureTags",
 		nil, // no parameters
 	)
 }

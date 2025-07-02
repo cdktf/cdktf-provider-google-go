@@ -32,26 +32,26 @@ type ComputeStoragePoolConfig struct {
 	// and all following characters must be a dash, lowercase letter, or digit,
 	// except the last character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_storage_pool#name ComputeStoragePool#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_storage_pool#name ComputeStoragePool#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Size, in GiB, of the storage pool. For more information about the size limits, see https://cloud.google.com/compute/docs/disks/storage-pools.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_storage_pool#pool_provisioned_capacity_gb ComputeStoragePool#pool_provisioned_capacity_gb}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_storage_pool#pool_provisioned_capacity_gb ComputeStoragePool#pool_provisioned_capacity_gb}
 	PoolProvisionedCapacityGb *string `field:"required" json:"poolProvisionedCapacityGb" yaml:"poolProvisionedCapacityGb"`
 	// Provisioned throughput, in MB/s, of the storage pool. Only relevant if the storage pool type is 'hyperdisk-balanced' or 'hyperdisk-throughput'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_storage_pool#pool_provisioned_throughput ComputeStoragePool#pool_provisioned_throughput}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_storage_pool#pool_provisioned_throughput ComputeStoragePool#pool_provisioned_throughput}
 	PoolProvisionedThroughput *string `field:"required" json:"poolProvisionedThroughput" yaml:"poolProvisionedThroughput"`
 	// Type of the storage pool. For example, the following are valid values:.
 	//
 	// * 'https://www.googleapis.com/compute/v1/projects/{project_id}/zones/{zone}/storagePoolTypes/hyperdisk-balanced'
 	// * 'hyperdisk-throughput'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_storage_pool#storage_pool_type ComputeStoragePool#storage_pool_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_storage_pool#storage_pool_type ComputeStoragePool#storage_pool_type}
 	StoragePoolType *string `field:"required" json:"storagePoolType" yaml:"storagePoolType"`
 	// Provisioning type of the byte capacity of the pool. Possible values: ["STANDARD", "ADVANCED"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_storage_pool#capacity_provisioning_type ComputeStoragePool#capacity_provisioning_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_storage_pool#capacity_provisioning_type ComputeStoragePool#capacity_provisioning_type}
 	CapacityProvisioningType *string `field:"optional" json:"capacityProvisioningType" yaml:"capacityProvisioningType"`
 	// Whether Terraform will be prevented from destroying the StoragePool.
 	//
@@ -59,29 +59,29 @@ type ComputeStoragePoolConfig struct {
 	// or 'terraform destroy' that would delete the StoragePool will fail.
 	// When the field is set to false, deleting the StoragePool is allowed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_storage_pool#deletion_protection ComputeStoragePool#deletion_protection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_storage_pool#deletion_protection ComputeStoragePool#deletion_protection}
 	DeletionProtection interface{} `field:"optional" json:"deletionProtection" yaml:"deletionProtection"`
 	// A description of this resource. Provide this property when you create the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_storage_pool#description ComputeStoragePool#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_storage_pool#description ComputeStoragePool#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// Provisioning type of the performance-related parameters of the pool, such as throughput and IOPS. Possible values: ["STANDARD", "ADVANCED"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_storage_pool#performance_provisioning_type ComputeStoragePool#performance_provisioning_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_storage_pool#performance_provisioning_type ComputeStoragePool#performance_provisioning_type}
 	PerformanceProvisioningType *string `field:"optional" json:"performanceProvisioningType" yaml:"performanceProvisioningType"`
 	// Provisioned IOPS of the storage pool. Only relevant if the storage pool type is 'hyperdisk-balanced'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_storage_pool#pool_provisioned_iops ComputeStoragePool#pool_provisioned_iops}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_storage_pool#pool_provisioned_iops ComputeStoragePool#pool_provisioned_iops}
 	PoolProvisionedIops *string `field:"optional" json:"poolProvisionedIops" yaml:"poolProvisionedIops"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_storage_pool#project ComputeStoragePool#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_storage_pool#project ComputeStoragePool#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_storage_pool#timeouts ComputeStoragePool#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_storage_pool#timeouts ComputeStoragePool#timeouts}
 	Timeouts *ComputeStoragePoolTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// A reference to the zone where the storage pool resides.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/compute_storage_pool#zone ComputeStoragePool#zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/compute_storage_pool#zone ComputeStoragePool#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
 

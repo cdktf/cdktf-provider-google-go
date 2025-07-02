@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/service_networking_connection google_service_networking_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/service_networking_connection google_service_networking_connection}.
 type ServiceNetworkingConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_ServiceNetworkingConnection) UpdateOnCreationFailInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/service_networking_connection google_service_networking_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/service_networking_connection google_service_networking_connection} Resource.
 func NewServiceNetworkingConnection(scope constructs.Construct, id *string, config *ServiceNetworkingConnectionConfig) ServiceNetworkingConnection {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewServiceNetworkingConnection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.41.0/docs/resources/service_networking_connection google_service_networking_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/service_networking_connection google_service_networking_connection} Resource.
 func NewServiceNetworkingConnection_Override(s ServiceNetworkingConnection, scope constructs.Construct, id *string, config *ServiceNetworkingConnectionConfig) {
 	_init_.Initialize()
 
