@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/memorystore_instance google_memorystore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/memorystore_instance google_memorystore_instance}.
 type MemorystoreInstance interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -90,6 +90,7 @@ type MemorystoreInstance interface {
 	MaintenanceSchedule() MemorystoreInstanceMaintenanceScheduleList
 	ManagedBackupSource() MemorystoreInstanceManagedBackupSourceOutputReference
 	ManagedBackupSourceInput() *MemorystoreInstanceManagedBackupSource
+	ManagedServerCa() MemorystoreInstanceManagedServerCaList
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
@@ -707,6 +708,16 @@ func (j *jsiiProxy_MemorystoreInstance) ManagedBackupSourceInput() *MemorystoreI
 	return returns
 }
 
+func (j *jsiiProxy_MemorystoreInstance) ManagedServerCa() MemorystoreInstanceManagedServerCaList {
+	var returns MemorystoreInstanceManagedServerCaList
+	_jsii_.Get(
+		j,
+		"managedServerCa",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MemorystoreInstance) Mode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1048,7 +1059,7 @@ func (j *jsiiProxy_MemorystoreInstance) ZoneDistributionConfigInput() *Memorysto
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
 func NewMemorystoreInstance(scope constructs.Construct, id *string, config *MemorystoreInstanceConfig) MemorystoreInstance {
 	_init_.Initialize()
 
@@ -1066,7 +1077,7 @@ func NewMemorystoreInstance(scope constructs.Construct, id *string, config *Memo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/memorystore_instance google_memorystore_instance} Resource.
 func NewMemorystoreInstance_Override(m MemorystoreInstance, scope constructs.Construct, id *string, config *MemorystoreInstanceConfig) {
 	_init_.Initialize()
 

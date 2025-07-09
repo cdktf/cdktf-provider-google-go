@@ -10,7 +10,7 @@ type ContainerClusterGkeAutoUpgradeConfig struct {
 	// Accepted values are:
 	// * ACCELERATED: Upgrades to the latest available patch version in a given minor and release channel.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/container_cluster#patch_mode ContainerCluster#patch_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/container_cluster#patch_mode ContainerCluster#patch_mode}
 	PatchMode *string `field:"required" json:"patchMode" yaml:"patchMode"`
 }
 

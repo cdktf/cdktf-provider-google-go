@@ -7,17 +7,17 @@ package networksecurityauthzpolicy
 type NetworkSecurityAuthzPolicyHttpRules struct {
 	// from block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/network_security_authz_policy#from NetworkSecurityAuthzPolicy#from}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/network_security_authz_policy#from NetworkSecurityAuthzPolicy#from}
 	From *NetworkSecurityAuthzPolicyHttpRulesFrom `field:"optional" json:"from" yaml:"from"`
 	// to block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/network_security_authz_policy#to NetworkSecurityAuthzPolicy#to}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/network_security_authz_policy#to NetworkSecurityAuthzPolicy#to}
 	To *NetworkSecurityAuthzPolicyHttpRulesTo `field:"optional" json:"to" yaml:"to"`
 	// CEL expression that describes the conditions to be satisfied for the action.
 	//
 	// The result of the CEL expression is ANDed with the from and to. Refer to the CEL language reference for a list of available attributes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/network_security_authz_policy#when NetworkSecurityAuthzPolicy#when}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/network_security_authz_policy#when NetworkSecurityAuthzPolicy#when}
 	When *string `field:"optional" json:"when" yaml:"when"`
 }
 

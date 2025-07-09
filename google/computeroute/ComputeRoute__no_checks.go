@@ -75,6 +75,10 @@ func (c *jsiiProxy_ComputeRoute) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRoute) validatePutParamsParameters(value *ComputeRouteParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRoute) validatePutTimeoutsParameters(value *ComputeRouteTimeouts) error {
 	return nil
 }

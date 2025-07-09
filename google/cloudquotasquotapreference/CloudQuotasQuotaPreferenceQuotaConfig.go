@@ -9,7 +9,7 @@ type CloudQuotasQuotaPreferenceQuotaConfig struct {
 	//
 	// Must be greater than or equal to -1. If set to -1, it means the value is "unlimited".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/cloud_quotas_quota_preference#preferred_value CloudQuotasQuotaPreference#preferred_value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/cloud_quotas_quota_preference#preferred_value CloudQuotasQuotaPreference#preferred_value}
 	PreferredValue *string `field:"required" json:"preferredValue" yaml:"preferredValue"`
 	// The annotations map for clients to store small amounts of arbitrary data.
 	//
@@ -17,7 +17,7 @@ type CloudQuotasQuotaPreferenceQuotaConfig struct {
 	//
 	// An object containing a list of "key: value" pairs. Example: '{ "name": "wrench", "mass": "1.3kg", "count": "3" }'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/cloud_quotas_quota_preference#annotations CloudQuotasQuotaPreference#annotations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/cloud_quotas_quota_preference#annotations CloudQuotasQuotaPreference#annotations}
 	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
 }
 

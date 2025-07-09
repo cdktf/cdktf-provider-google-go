@@ -139,6 +139,10 @@ func (j *jsiiProxy_ComputeBackendBucket) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
+func (j *jsiiProxy_ComputeBackendBucket) validateSetLoadBalancingSchemeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeBackendBucket) validateSetNameParameters(val *string) error {
 	return nil
 }

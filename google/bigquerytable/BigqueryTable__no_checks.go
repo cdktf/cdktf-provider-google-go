@@ -171,6 +171,10 @@ func (j *jsiiProxy_BigqueryTable) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryTable) validateSetIgnoreSchemaChangesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryTable) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }

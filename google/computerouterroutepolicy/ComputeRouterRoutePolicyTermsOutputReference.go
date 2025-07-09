@@ -74,7 +74,6 @@ type ComputeRouterRoutePolicyTermsOutputReference interface {
 	PutActions(value interface{})
 	PutMatch(value *ComputeRouterRoutePolicyTermsMatch)
 	ResetActions()
-	ResetMatch()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -526,14 +525,6 @@ func (c *jsiiProxy_ComputeRouterRoutePolicyTermsOutputReference) ResetActions() 
 	_jsii_.InvokeVoid(
 		c,
 		"resetActions",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ComputeRouterRoutePolicyTermsOutputReference) ResetMatch() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetMatch",
 		nil, // no parameters
 	)
 }

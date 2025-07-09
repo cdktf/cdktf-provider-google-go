@@ -75,6 +75,10 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecretVersion) validateSetCountParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleSecretManagerSecretVersion) validateSetFetchSecretDataParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleSecretManagerSecretVersion) validateSetIdParameters(val *string) error {
 	return nil
 }

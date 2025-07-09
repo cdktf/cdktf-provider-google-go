@@ -28,10 +28,28 @@ type DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutP
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableImageAnnotation() interface{}
+	SetEnableImageAnnotation(val interface{})
+	EnableImageAnnotationInput() interface{}
+	EnableTableAnnotation() interface{}
+	SetEnableTableAnnotation(val interface{})
+	EnableTableAnnotationInput() interface{}
+	ExcludeHtmlClasses() *[]*string
+	SetExcludeHtmlClasses(val *[]*string)
+	ExcludeHtmlClassesInput() *[]*string
+	ExcludeHtmlElements() *[]*string
+	SetExcludeHtmlElements(val *[]*string)
+	ExcludeHtmlElementsInput() *[]*string
+	ExcludeHtmlIds() *[]*string
+	SetExcludeHtmlIds(val *[]*string)
+	ExcludeHtmlIdsInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig
 	SetInternalValue(val *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig)
+	StructuredContentTypes() *[]*string
+	SetStructuredContentTypes(val *[]*string)
+	StructuredContentTypesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +82,12 @@ type DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutP
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEnableImageAnnotation()
+	ResetEnableTableAnnotation()
+	ResetExcludeHtmlClasses()
+	ResetExcludeHtmlElements()
+	ResetExcludeHtmlIds()
+	ResetStructuredContentTypes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -109,6 +133,106 @@ func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsin
 	return returns
 }
 
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) EnableImageAnnotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableImageAnnotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) EnableImageAnnotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableImageAnnotationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) EnableTableAnnotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableTableAnnotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) EnableTableAnnotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableTableAnnotationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) ExcludeHtmlClasses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeHtmlClasses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) ExcludeHtmlClassesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeHtmlClassesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) ExcludeHtmlElements() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeHtmlElements",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) ExcludeHtmlElementsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeHtmlElementsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) ExcludeHtmlIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeHtmlIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) ExcludeHtmlIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludeHtmlIdsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -124,6 +248,26 @@ func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsin
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) StructuredContentTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"structuredContentTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) StructuredContentTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"structuredContentTypesInput",
 		&returns,
 	)
 	return returns
@@ -199,6 +343,61 @@ func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsin
 	)
 }
 
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference)SetEnableImageAnnotation(val interface{}) {
+	if err := j.validateSetEnableImageAnnotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableImageAnnotation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference)SetEnableTableAnnotation(val interface{}) {
+	if err := j.validateSetEnableTableAnnotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableTableAnnotation",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference)SetExcludeHtmlClasses(val *[]*string) {
+	if err := j.validateSetExcludeHtmlClassesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeHtmlClasses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference)SetExcludeHtmlElements(val *[]*string) {
+	if err := j.validateSetExcludeHtmlElementsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeHtmlElements",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference)SetExcludeHtmlIds(val *[]*string) {
+	if err := j.validateSetExcludeHtmlIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludeHtmlIds",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference)SetInternalValue(val *DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -206,6 +405,17 @@ func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsin
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference)SetStructuredContentTypes(val *[]*string) {
+	if err := j.validateSetStructuredContentTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"structuredContentTypes",
 		val,
 	)
 }
@@ -416,6 +626,54 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsin
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) ResetEnableImageAnnotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnableImageAnnotation",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) ResetEnableTableAnnotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnableTableAnnotation",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) ResetExcludeHtmlClasses() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExcludeHtmlClasses",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) ResetExcludeHtmlElements() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExcludeHtmlElements",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) ResetExcludeHtmlIds() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetExcludeHtmlIds",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) ResetStructuredContentTypes() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStructuredContentTypes",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

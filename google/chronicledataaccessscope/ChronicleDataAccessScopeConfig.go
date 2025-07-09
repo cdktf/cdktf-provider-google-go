@@ -28,17 +28,17 @@ type ChronicleDataAccessScopeConfig struct {
 	// of the scope resource.
 	// Needs to be compliant with https://google.aip.dev/122
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/chronicle_data_access_scope#data_access_scope_id ChronicleDataAccessScope#data_access_scope_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/chronicle_data_access_scope#data_access_scope_id ChronicleDataAccessScope#data_access_scope_id}
 	DataAccessScopeId *string `field:"required" json:"dataAccessScopeId" yaml:"dataAccessScopeId"`
 	// The unique identifier for the Chronicle instance, which is the same as the customer ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/chronicle_data_access_scope#instance ChronicleDataAccessScope#instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/chronicle_data_access_scope#instance ChronicleDataAccessScope#instance}
 	Instance *string `field:"required" json:"instance" yaml:"instance"`
 	// The location of the resource.
 	//
 	// This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/chronicle_data_access_scope#location ChronicleDataAccessScope#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/chronicle_data_access_scope#location ChronicleDataAccessScope#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// Optional.
 	//
@@ -51,30 +51,30 @@ type ChronicleDataAccessScopeConfig struct {
 	// to see all data except data labeled with A and data labeled with B and data
 	// with labels A and B.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/chronicle_data_access_scope#allow_all ChronicleDataAccessScope#allow_all}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/chronicle_data_access_scope#allow_all ChronicleDataAccessScope#allow_all}
 	AllowAll interface{} `field:"optional" json:"allowAll" yaml:"allowAll"`
 	// allowed_data_access_labels block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/chronicle_data_access_scope#allowed_data_access_labels ChronicleDataAccessScope#allowed_data_access_labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/chronicle_data_access_scope#allowed_data_access_labels ChronicleDataAccessScope#allowed_data_access_labels}
 	AllowedDataAccessLabels interface{} `field:"optional" json:"allowedDataAccessLabels" yaml:"allowedDataAccessLabels"`
 	// denied_data_access_labels block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/chronicle_data_access_scope#denied_data_access_labels ChronicleDataAccessScope#denied_data_access_labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/chronicle_data_access_scope#denied_data_access_labels ChronicleDataAccessScope#denied_data_access_labels}
 	DeniedDataAccessLabels interface{} `field:"optional" json:"deniedDataAccessLabels" yaml:"deniedDataAccessLabels"`
 	// Optional. A description of the data access scope for a human reader.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/chronicle_data_access_scope#description ChronicleDataAccessScope#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/chronicle_data_access_scope#description ChronicleDataAccessScope#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/chronicle_data_access_scope#id ChronicleDataAccessScope#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/chronicle_data_access_scope#id ChronicleDataAccessScope#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/chronicle_data_access_scope#project ChronicleDataAccessScope#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/chronicle_data_access_scope#project ChronicleDataAccessScope#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/chronicle_data_access_scope#timeouts ChronicleDataAccessScope#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/chronicle_data_access_scope#timeouts ChronicleDataAccessScope#timeouts}
 	Timeouts *ChronicleDataAccessScopeTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

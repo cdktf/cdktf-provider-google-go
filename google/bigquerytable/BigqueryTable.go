@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/bigquery_table google_bigquery_table}.
 type BigqueryTable interface {
 	cdktf.TerraformResource
 	BiglakeConfiguration() BigqueryTableBiglakeConfigurationOutputReference
@@ -71,6 +71,9 @@ type BigqueryTable interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IgnoreSchemaChanges() *[]*string
+	SetIgnoreSchemaChanges(val *[]*string)
+	IgnoreSchemaChangesInput() *[]*string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -203,6 +206,7 @@ type BigqueryTable interface {
 	ResetExternalDataConfiguration()
 	ResetFriendlyName()
 	ResetId()
+	ResetIgnoreSchemaChanges()
 	ResetLabels()
 	ResetMaterializedView()
 	ResetMaxStaleness()
@@ -563,6 +567,26 @@ func (j *jsiiProxy_BigqueryTable) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) IgnoreSchemaChanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ignoreSchemaChanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BigqueryTable) IgnoreSchemaChangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ignoreSchemaChangesInput",
 		&returns,
 	)
 	return returns
@@ -1029,7 +1053,7 @@ func (j *jsiiProxy_BigqueryTable) ViewInput() *BigqueryTableView {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTableConfig) BigqueryTable {
 	_init_.Initialize()
 
@@ -1047,7 +1071,7 @@ func NewBigqueryTable(scope constructs.Construct, id *string, config *BigqueryTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.42.0/docs/resources/bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/bigquery_table google_bigquery_table} Resource.
 func NewBigqueryTable_Override(b BigqueryTable, scope constructs.Construct, id *string, config *BigqueryTableConfig) {
 	_init_.Initialize()
 
@@ -1169,6 +1193,17 @@ func (j *jsiiProxy_BigqueryTable)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BigqueryTable)SetIgnoreSchemaChanges(val *[]*string) {
+	if err := j.validateSetIgnoreSchemaChangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreSchemaChanges",
 		val,
 	)
 }
@@ -1841,6 +1876,14 @@ func (b *jsiiProxy_BigqueryTable) ResetId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BigqueryTable) ResetIgnoreSchemaChanges() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetIgnoreSchemaChanges",
 		nil, // no parameters
 	)
 }
