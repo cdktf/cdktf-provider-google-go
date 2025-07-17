@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/gemini_repository_group_iam_member google_gemini_repository_group_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/gemini_repository_group_iam_member google_gemini_repository_group_iam_member}.
 type GeminiRepositoryGroupIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_GeminiRepositoryGroupIamMember) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/gemini_repository_group_iam_member google_gemini_repository_group_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/gemini_repository_group_iam_member google_gemini_repository_group_iam_member} Resource.
 func NewGeminiRepositoryGroupIamMember(scope constructs.Construct, id *string, config *GeminiRepositoryGroupIamMemberConfig) GeminiRepositoryGroupIamMember {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewGeminiRepositoryGroupIamMember(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/gemini_repository_group_iam_member google_gemini_repository_group_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/gemini_repository_group_iam_member google_gemini_repository_group_iam_member} Resource.
 func NewGeminiRepositoryGroupIamMember_Override(g GeminiRepositoryGroupIamMember, scope constructs.Construct, id *string, config *GeminiRepositoryGroupIamMemberConfig) {
 	_init_.Initialize()
 

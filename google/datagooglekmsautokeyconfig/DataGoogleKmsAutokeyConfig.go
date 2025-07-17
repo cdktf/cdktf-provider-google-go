@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/data-sources/kms_autokey_config google_kms_autokey_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/data-sources/kms_autokey_config google_kms_autokey_config}.
 type DataGoogleKmsAutokeyConfig interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DataGoogleKmsAutokeyConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/data-sources/kms_autokey_config google_kms_autokey_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/data-sources/kms_autokey_config google_kms_autokey_config} Data Source.
 func NewDataGoogleKmsAutokeyConfig(scope constructs.Construct, id *string, config *DataGoogleKmsAutokeyConfigConfig) DataGoogleKmsAutokeyConfig {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewDataGoogleKmsAutokeyConfig(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/data-sources/kms_autokey_config google_kms_autokey_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/data-sources/kms_autokey_config google_kms_autokey_config} Data Source.
 func NewDataGoogleKmsAutokeyConfig_Override(d DataGoogleKmsAutokeyConfig, scope constructs.Construct, id *string, config *DataGoogleKmsAutokeyConfigConfig) {
 	_init_.Initialize()
 

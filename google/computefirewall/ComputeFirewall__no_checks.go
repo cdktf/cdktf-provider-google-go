@@ -87,6 +87,10 @@ func (c *jsiiProxy_ComputeFirewall) validatePutLogConfigParameters(value *Comput
 	return nil
 }
 
+func (c *jsiiProxy_ComputeFirewall) validatePutParamsParameters(value *ComputeFirewallParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeFirewall) validatePutTimeoutsParameters(value *ComputeFirewallTimeouts) error {
 	return nil
 }

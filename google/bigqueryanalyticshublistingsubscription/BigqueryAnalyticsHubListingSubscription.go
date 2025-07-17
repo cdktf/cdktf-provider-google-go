@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/bigquery_analytics_hub_listing_subscription google_bigquery_analytics_hub_listing_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/bigquery_analytics_hub_listing_subscription google_bigquery_analytics_hub_listing_subscription}.
 type BigqueryAnalyticsHubListingSubscription interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -582,7 +582,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingSubscription) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/bigquery_analytics_hub_listing_subscription google_bigquery_analytics_hub_listing_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/bigquery_analytics_hub_listing_subscription google_bigquery_analytics_hub_listing_subscription} Resource.
 func NewBigqueryAnalyticsHubListingSubscription(scope constructs.Construct, id *string, config *BigqueryAnalyticsHubListingSubscriptionConfig) BigqueryAnalyticsHubListingSubscription {
 	_init_.Initialize()
 
@@ -600,7 +600,7 @@ func NewBigqueryAnalyticsHubListingSubscription(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/bigquery_analytics_hub_listing_subscription google_bigquery_analytics_hub_listing_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/bigquery_analytics_hub_listing_subscription google_bigquery_analytics_hub_listing_subscription} Resource.
 func NewBigqueryAnalyticsHubListingSubscription_Override(b BigqueryAnalyticsHubListingSubscription, scope constructs.Construct, id *string, config *BigqueryAnalyticsHubListingSubscriptionConfig) {
 	_init_.Initialize()
 

@@ -12,23 +12,23 @@ type ComputeUrlMapPathMatcherPathRule struct {
 	// does not include any text after the first ? or #, and those chars are not
 	// allowed here.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/compute_url_map#paths ComputeUrlMap#paths}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_url_map#paths ComputeUrlMap#paths}
 	Paths *[]*string `field:"required" json:"paths" yaml:"paths"`
 	// custom_error_response_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/compute_url_map#custom_error_response_policy ComputeUrlMap#custom_error_response_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_url_map#custom_error_response_policy ComputeUrlMap#custom_error_response_policy}
 	CustomErrorResponsePolicy *ComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicy `field:"optional" json:"customErrorResponsePolicy" yaml:"customErrorResponsePolicy"`
 	// route_action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/compute_url_map#route_action ComputeUrlMap#route_action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_url_map#route_action ComputeUrlMap#route_action}
 	RouteAction *ComputeUrlMapPathMatcherPathRuleRouteAction `field:"optional" json:"routeAction" yaml:"routeAction"`
 	// The backend service or backend bucket to use if any of the given paths match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/compute_url_map#service ComputeUrlMap#service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_url_map#service ComputeUrlMap#service}
 	Service *string `field:"optional" json:"service" yaml:"service"`
 	// url_redirect block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/compute_url_map#url_redirect ComputeUrlMap#url_redirect}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_url_map#url_redirect ComputeUrlMap#url_redirect}
 	UrlRedirect *ComputeUrlMapPathMatcherPathRuleUrlRedirect `field:"optional" json:"urlRedirect" yaml:"urlRedirect"`
 }
 

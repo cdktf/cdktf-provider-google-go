@@ -127,6 +127,10 @@ func (c *jsiiProxy_ComputeBackendService) validatePutTimeoutsParameters(value *C
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendService) validatePutTlsSettingsParameters(value *ComputeBackendServiceTlsSettings) error {
+	return nil
+}
+
 func validateComputeBackendService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

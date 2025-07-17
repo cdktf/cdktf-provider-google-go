@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/data-sources/lustre_instance google_lustre_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/data-sources/lustre_instance google_lustre_instance}.
 type DataGoogleLustreInstance interface {
 	cdktf.TerraformDataSource
 	CapacityGib() *string
@@ -501,7 +501,7 @@ func (j *jsiiProxy_DataGoogleLustreInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/data-sources/lustre_instance google_lustre_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/data-sources/lustre_instance google_lustre_instance} Data Source.
 func NewDataGoogleLustreInstance(scope constructs.Construct, id *string, config *DataGoogleLustreInstanceConfig) DataGoogleLustreInstance {
 	_init_.Initialize()
 
@@ -519,7 +519,7 @@ func NewDataGoogleLustreInstance(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/data-sources/lustre_instance google_lustre_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/data-sources/lustre_instance google_lustre_instance} Data Source.
 func NewDataGoogleLustreInstance_Override(d DataGoogleLustreInstance, scope constructs.Construct, id *string, config *DataGoogleLustreInstanceConfig) {
 	_init_.Initialize()
 

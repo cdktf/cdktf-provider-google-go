@@ -35,6 +35,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "detectMd5Hash", GoGetter: "DetectMd5Hash"},
 			_jsii_.MemberProperty{JsiiProperty: "eventBasedHold", GoGetter: "EventBasedHold"},
+			_jsii_.MemberProperty{JsiiProperty: "forceEmptyContentType", GoGetter: "ForceEmptyContentType"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},

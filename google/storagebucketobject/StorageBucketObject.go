@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/storage_bucket_object google_storage_bucket_object}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/storage_bucket_object google_storage_bucket_object}.
 type StorageBucketObject interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -61,6 +61,9 @@ type StorageBucketObject interface {
 	EventBasedHold() interface{}
 	SetEventBasedHold(val interface{})
 	EventBasedHoldInput() interface{}
+	ForceEmptyContentType() interface{}
+	SetForceEmptyContentType(val interface{})
+	ForceEmptyContentTypeInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -180,6 +183,7 @@ type StorageBucketObject interface {
 	ResetCustomerEncryption()
 	ResetDetectMd5Hash()
 	ResetEventBasedHold()
+	ResetForceEmptyContentType()
 	ResetId()
 	ResetKmsKeyName()
 	ResetMetadata()
@@ -465,6 +469,26 @@ func (j *jsiiProxy_StorageBucketObject) EventBasedHoldInput() interface{} {
 	_jsii_.Get(
 		j,
 		"eventBasedHoldInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketObject) ForceEmptyContentType() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceEmptyContentType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageBucketObject) ForceEmptyContentTypeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceEmptyContentTypeInput",
 		&returns,
 	)
 	return returns
@@ -841,7 +865,7 @@ func (j *jsiiProxy_StorageBucketObject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
 func NewStorageBucketObject(scope constructs.Construct, id *string, config *StorageBucketObjectConfig) StorageBucketObject {
 	_init_.Initialize()
 
@@ -859,7 +883,7 @@ func NewStorageBucketObject(scope constructs.Construct, id *string, config *Stor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/storage_bucket_object google_storage_bucket_object} Resource.
 func NewStorageBucketObject_Override(s StorageBucketObject, scope constructs.Construct, id *string, config *StorageBucketObjectConfig) {
 	_init_.Initialize()
 
@@ -995,6 +1019,17 @@ func (j *jsiiProxy_StorageBucketObject)SetEventBasedHold(val interface{}) {
 	_jsii_.Set(
 		j,
 		"eventBasedHold",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageBucketObject)SetForceEmptyContentType(val interface{}) {
+	if err := j.validateSetForceEmptyContentTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceEmptyContentType",
 		val,
 	)
 }
@@ -1579,6 +1614,14 @@ func (s *jsiiProxy_StorageBucketObject) ResetEventBasedHold() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEventBasedHold",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageBucketObject) ResetForceEmptyContentType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetForceEmptyContentType",
 		nil, // no parameters
 	)
 }

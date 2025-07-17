@@ -155,6 +155,10 @@ func (j *jsiiProxy_FirestoreDatabase) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_FirestoreDatabase) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FirestoreDatabase) validateSetTypeParameters(val *string) error {
 	return nil
 }

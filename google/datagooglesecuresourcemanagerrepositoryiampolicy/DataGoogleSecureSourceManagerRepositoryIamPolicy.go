@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/data-sources/secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/data-sources/secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy}.
 type DataGoogleSecureSourceManagerRepositoryIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataGoogleSecureSourceManagerRepositoryIamPolicy) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/data-sources/secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/data-sources/secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy} Data Source.
 func NewDataGoogleSecureSourceManagerRepositoryIamPolicy(scope constructs.Construct, id *string, config *DataGoogleSecureSourceManagerRepositoryIamPolicyConfig) DataGoogleSecureSourceManagerRepositoryIamPolicy {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewDataGoogleSecureSourceManagerRepositoryIamPolicy(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/data-sources/secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/data-sources/secure_source_manager_repository_iam_policy google_secure_source_manager_repository_iam_policy} Data Source.
 func NewDataGoogleSecureSourceManagerRepositoryIamPolicy_Override(d DataGoogleSecureSourceManagerRepositoryIamPolicy, scope constructs.Construct, id *string, config *DataGoogleSecureSourceManagerRepositoryIamPolicyConfig) {
 	_init_.Initialize()
 

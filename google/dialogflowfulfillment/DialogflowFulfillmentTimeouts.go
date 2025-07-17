@@ -5,11 +5,11 @@ package dialogflowfulfillment
 
 
 type DialogflowFulfillmentTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/dialogflow_fulfillment#create DialogflowFulfillment#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/dialogflow_fulfillment#create DialogflowFulfillment#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/dialogflow_fulfillment#delete DialogflowFulfillment#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/dialogflow_fulfillment#delete DialogflowFulfillment#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/dialogflow_fulfillment#update DialogflowFulfillment#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/dialogflow_fulfillment#update DialogflowFulfillment#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

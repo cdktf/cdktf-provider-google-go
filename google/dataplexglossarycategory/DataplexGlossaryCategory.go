@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/dataplex_glossary_category google_dataplex_glossary_category}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/dataplex_glossary_category google_dataplex_glossary_category}.
 type DataplexGlossaryCategory interface {
 	cdktf.TerraformResource
 	CategoryId() *string
@@ -590,7 +590,7 @@ func (j *jsiiProxy_DataplexGlossaryCategory) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/dataplex_glossary_category google_dataplex_glossary_category} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/dataplex_glossary_category google_dataplex_glossary_category} Resource.
 func NewDataplexGlossaryCategory(scope constructs.Construct, id *string, config *DataplexGlossaryCategoryConfig) DataplexGlossaryCategory {
 	_init_.Initialize()
 
@@ -608,7 +608,7 @@ func NewDataplexGlossaryCategory(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/dataplex_glossary_category google_dataplex_glossary_category} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/dataplex_glossary_category google_dataplex_glossary_category} Resource.
 func NewDataplexGlossaryCategory_Override(d DataplexGlossaryCategory, scope constructs.Construct, id *string, config *DataplexGlossaryCategoryConfig) {
 	_init_.Initialize()
 

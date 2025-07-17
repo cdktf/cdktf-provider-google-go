@@ -38,6 +38,9 @@ type ComputeReservationSpecificReservationOutputReference interface {
 	InternalValue() *ComputeReservationSpecificReservation
 	SetInternalValue(val *ComputeReservationSpecificReservation)
 	InUseCount() *float64
+	SourceInstanceTemplate() *string
+	SetSourceInstanceTemplate(val *string)
+	SourceInstanceTemplateInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,6 +74,8 @@ type ComputeReservationSpecificReservationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutInstanceProperties(value *ComputeReservationSpecificReservationInstanceProperties)
+	ResetInstanceProperties()
+	ResetSourceInstanceTemplate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -186,6 +191,26 @@ func (j *jsiiProxy_ComputeReservationSpecificReservationOutputReference) InUseCo
 	return returns
 }
 
+func (j *jsiiProxy_ComputeReservationSpecificReservationOutputReference) SourceInstanceTemplate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstanceTemplate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeReservationSpecificReservationOutputReference) SourceInstanceTemplateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstanceTemplateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ComputeReservationSpecificReservationOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -274,6 +299,17 @@ func (j *jsiiProxy_ComputeReservationSpecificReservationOutputReference)SetInter
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ComputeReservationSpecificReservationOutputReference)SetSourceInstanceTemplate(val *string) {
+	if err := j.validateSetSourceInstanceTemplateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceInstanceTemplate",
 		val,
 	)
 }
@@ -494,6 +530,22 @@ func (c *jsiiProxy_ComputeReservationSpecificReservationOutputReference) PutInst
 		c,
 		"putInstanceProperties",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeReservationSpecificReservationOutputReference) ResetInstanceProperties() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetInstanceProperties",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeReservationSpecificReservationOutputReference) ResetSourceInstanceTemplate() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSourceInstanceTemplate",
+		nil, // no parameters
 	)
 }
 

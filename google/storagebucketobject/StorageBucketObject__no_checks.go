@@ -147,6 +147,10 @@ func (j *jsiiProxy_StorageBucketObject) validateSetEventBasedHoldParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_StorageBucketObject) validateSetForceEmptyContentTypeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBucketObject) validateSetIdParameters(val *string) error {
 	return nil
 }

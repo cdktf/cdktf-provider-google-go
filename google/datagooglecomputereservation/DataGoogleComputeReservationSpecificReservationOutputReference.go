@@ -35,6 +35,7 @@ type DataGoogleComputeReservationSpecificReservationOutputReference interface {
 	InternalValue() *DataGoogleComputeReservationSpecificReservation
 	SetInternalValue(val *DataGoogleComputeReservationSpecificReservation)
 	InUseCount() *float64
+	SourceInstanceTemplate() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -157,6 +158,16 @@ func (j *jsiiProxy_DataGoogleComputeReservationSpecificReservationOutputReferenc
 	_jsii_.Get(
 		j,
 		"inUseCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeReservationSpecificReservationOutputReference) SourceInstanceTemplate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstanceTemplate",
 		&returns,
 	)
 	return returns

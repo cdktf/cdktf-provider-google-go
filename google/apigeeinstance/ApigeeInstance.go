@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/apigee_instance google_apigee_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/apigee_instance google_apigee_instance}.
 type ApigeeInstance interface {
 	cdktf.TerraformResource
+	AccessLoggingConfig() ApigeeInstanceAccessLoggingConfigOutputReference
+	AccessLoggingConfigInput() *ApigeeInstanceAccessLoggingConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -139,7 +141,9 @@ type ApigeeInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAccessLoggingConfig(value *ApigeeInstanceAccessLoggingConfig)
 	PutTimeouts(value *ApigeeInstanceTimeouts)
+	ResetAccessLoggingConfig()
 	ResetConsumerAcceptList()
 	ResetDescription()
 	ResetDiskEncryptionKeyName()
@@ -167,6 +171,26 @@ type ApigeeInstance interface {
 // The jsii proxy struct for ApigeeInstance
 type jsiiProxy_ApigeeInstance struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ApigeeInstance) AccessLoggingConfig() ApigeeInstanceAccessLoggingConfigOutputReference {
+	var returns ApigeeInstanceAccessLoggingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"accessLoggingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApigeeInstance) AccessLoggingConfigInput() *ApigeeInstanceAccessLoggingConfig {
+	var returns *ApigeeInstanceAccessLoggingConfig
+	_jsii_.Get(
+		j,
+		"accessLoggingConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ApigeeInstance) CdktfStack() cdktf.TerraformStack {
@@ -580,7 +604,7 @@ func (j *jsiiProxy_ApigeeInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/apigee_instance google_apigee_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/apigee_instance google_apigee_instance} Resource.
 func NewApigeeInstance(scope constructs.Construct, id *string, config *ApigeeInstanceConfig) ApigeeInstance {
 	_init_.Initialize()
 
@@ -598,7 +622,7 @@ func NewApigeeInstance(scope constructs.Construct, id *string, config *ApigeeIns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/apigee_instance google_apigee_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/apigee_instance google_apigee_instance} Resource.
 func NewApigeeInstance_Override(a ApigeeInstance, scope constructs.Construct, id *string, config *ApigeeInstanceConfig) {
 	_init_.Initialize()
 
@@ -1140,6 +1164,17 @@ func (a *jsiiProxy_ApigeeInstance) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_ApigeeInstance) PutAccessLoggingConfig(value *ApigeeInstanceAccessLoggingConfig) {
+	if err := a.validatePutAccessLoggingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAccessLoggingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_ApigeeInstance) PutTimeouts(value *ApigeeInstanceTimeouts) {
 	if err := a.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1148,6 +1183,14 @@ func (a *jsiiProxy_ApigeeInstance) PutTimeouts(value *ApigeeInstanceTimeouts) {
 		a,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ApigeeInstance) ResetAccessLoggingConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAccessLoggingConfig",
+		nil, // no parameters
 	)
 }
 

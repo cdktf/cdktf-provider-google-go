@@ -7,35 +7,35 @@ package computeurlmap
 type ComputeUrlMapDefaultRouteAction struct {
 	// cors_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
 	CorsPolicy *ComputeUrlMapDefaultRouteActionCorsPolicy `field:"optional" json:"corsPolicy" yaml:"corsPolicy"`
 	// fault_injection_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
 	FaultInjectionPolicy *ComputeUrlMapDefaultRouteActionFaultInjectionPolicy `field:"optional" json:"faultInjectionPolicy" yaml:"faultInjectionPolicy"`
 	// max_stream_duration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
 	MaxStreamDuration *ComputeUrlMapDefaultRouteActionMaxStreamDuration `field:"optional" json:"maxStreamDuration" yaml:"maxStreamDuration"`
 	// request_mirror_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
 	RequestMirrorPolicy *ComputeUrlMapDefaultRouteActionRequestMirrorPolicy `field:"optional" json:"requestMirrorPolicy" yaml:"requestMirrorPolicy"`
 	// retry_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
 	RetryPolicy *ComputeUrlMapDefaultRouteActionRetryPolicy `field:"optional" json:"retryPolicy" yaml:"retryPolicy"`
 	// timeout block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
 	Timeout *ComputeUrlMapDefaultRouteActionTimeout `field:"optional" json:"timeout" yaml:"timeout"`
 	// url_rewrite block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
 	UrlRewrite *ComputeUrlMapDefaultRouteActionUrlRewrite `field:"optional" json:"urlRewrite" yaml:"urlRewrite"`
 	// weighted_backend_services block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
 	WeightedBackendServices interface{} `field:"optional" json:"weightedBackendServices" yaml:"weightedBackendServices"`
 }
 

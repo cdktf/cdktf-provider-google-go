@@ -163,6 +163,14 @@ func (j *jsiiProxy_ComputeRegionDisk) validateSetProjectParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_ComputeRegionDisk) validateSetProvisionedIopsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_ComputeRegionDisk) validateSetProvisionedThroughputParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeRegionDisk) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

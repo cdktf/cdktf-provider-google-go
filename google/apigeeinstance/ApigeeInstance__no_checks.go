@@ -75,6 +75,10 @@ func (a *jsiiProxy_ApigeeInstance) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (a *jsiiProxy_ApigeeInstance) validatePutAccessLoggingConfigParameters(value *ApigeeInstanceAccessLoggingConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApigeeInstance) validatePutTimeoutsParameters(value *ApigeeInstanceTimeouts) error {
 	return nil
 }

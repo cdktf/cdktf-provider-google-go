@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/iap_web_cloud_run_service_iam_binding google_iap_web_cloud_run_service_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/iap_web_cloud_run_service_iam_binding google_iap_web_cloud_run_service_iam_binding}.
 type IapWebCloudRunServiceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_IapWebCloudRunServiceIamBinding) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/iap_web_cloud_run_service_iam_binding google_iap_web_cloud_run_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/iap_web_cloud_run_service_iam_binding google_iap_web_cloud_run_service_iam_binding} Resource.
 func NewIapWebCloudRunServiceIamBinding(scope constructs.Construct, id *string, config *IapWebCloudRunServiceIamBindingConfig) IapWebCloudRunServiceIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewIapWebCloudRunServiceIamBinding(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/iap_web_cloud_run_service_iam_binding google_iap_web_cloud_run_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/iap_web_cloud_run_service_iam_binding google_iap_web_cloud_run_service_iam_binding} Resource.
 func NewIapWebCloudRunServiceIamBinding_Override(i IapWebCloudRunServiceIamBinding, scope constructs.Construct, id *string, config *IapWebCloudRunServiceIamBindingConfig) {
 	_init_.Initialize()
 

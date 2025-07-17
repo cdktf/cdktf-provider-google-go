@@ -11,14 +11,14 @@ type FirebaseAppHostingDomainServeRedirect struct {
 	// prepended to the original request path. URI without a scheme are
 	// assumed to be HTTPS.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/firebase_app_hosting_domain#uri FirebaseAppHostingDomain#uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/firebase_app_hosting_domain#uri FirebaseAppHostingDomain#uri}
 	Uri *string `field:"required" json:"uri" yaml:"uri"`
 	// The status code to use in a redirect response.
 	//
 	// Must be a valid HTTP 3XX
 	// status code. Defaults to 302 if not present.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/resources/firebase_app_hosting_domain#status FirebaseAppHostingDomain#status}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/firebase_app_hosting_domain#status FirebaseAppHostingDomain#status}
 	Status *string `field:"optional" json:"status" yaml:"status"`
 }
 

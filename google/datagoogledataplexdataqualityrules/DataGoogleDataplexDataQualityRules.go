@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/data-sources/dataplex_data_quality_rules google_dataplex_data_quality_rules}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/data-sources/dataplex_data_quality_rules google_dataplex_data_quality_rules}.
 type DataGoogleDataplexDataQualityRules interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DataGoogleDataplexDataQualityRules) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/data-sources/dataplex_data_quality_rules google_dataplex_data_quality_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/data-sources/dataplex_data_quality_rules google_dataplex_data_quality_rules} Data Source.
 func NewDataGoogleDataplexDataQualityRules(scope constructs.Construct, id *string, config *DataGoogleDataplexDataQualityRulesConfig) DataGoogleDataplexDataQualityRules {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewDataGoogleDataplexDataQualityRules(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.43.0/docs/data-sources/dataplex_data_quality_rules google_dataplex_data_quality_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/data-sources/dataplex_data_quality_rules google_dataplex_data_quality_rules} Data Source.
 func NewDataGoogleDataplexDataQualityRules_Override(d DataGoogleDataplexDataQualityRules, scope constructs.Construct, id *string, config *DataGoogleDataplexDataQualityRulesConfig) {
 	_init_.Initialize()
 
