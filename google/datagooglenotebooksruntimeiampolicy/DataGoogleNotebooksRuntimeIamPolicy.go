@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/data-sources/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy}.
 type DataGoogleNotebooksRuntimeIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataGoogleNotebooksRuntimeIamPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/data-sources/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy} Data Source.
 func NewDataGoogleNotebooksRuntimeIamPolicy(scope constructs.Construct, id *string, config *DataGoogleNotebooksRuntimeIamPolicyConfig) DataGoogleNotebooksRuntimeIamPolicy {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewDataGoogleNotebooksRuntimeIamPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/data-sources/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy} Data Source.
 func NewDataGoogleNotebooksRuntimeIamPolicy_Override(d DataGoogleNotebooksRuntimeIamPolicy, scope constructs.Construct, id *string, config *DataGoogleNotebooksRuntimeIamPolicyConfig) {
 	_init_.Initialize()
 

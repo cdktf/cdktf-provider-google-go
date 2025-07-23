@@ -5,11 +5,11 @@ package bigqueryrowaccesspolicy
 
 
 type BigqueryRowAccessPolicyTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/bigquery_row_access_policy#create BigqueryRowAccessPolicy#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/bigquery_row_access_policy#create BigqueryRowAccessPolicy#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/bigquery_row_access_policy#delete BigqueryRowAccessPolicy#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/bigquery_row_access_policy#delete BigqueryRowAccessPolicy#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/bigquery_row_access_policy#update BigqueryRowAccessPolicy#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/bigquery_row_access_policy#update BigqueryRowAccessPolicy#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

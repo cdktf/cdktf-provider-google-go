@@ -47,6 +47,14 @@ func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) validatePutOauthConfigParameters(value *DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) validatePutSecretVersionsForRequestHeadersParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -63,11 +71,31 @@ func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) validateSetHttpMethodParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) validateSetInternalValueParameters(val *DialogflowCxWebhookServiceDirectoryGenericWebService) error {
 	return nil
 }
 
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) validateSetParameterMappingParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) validateSetRequestBodyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) validateSetRequestHeadersParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) validateSetSecretVersionForUsernamePasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) validateSetServiceAgentAuthParameters(val *string) error {
 	return nil
 }
 
@@ -80,6 +108,10 @@ func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
 }
 
 func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) validateSetUriParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) validateSetWebhookTypeParameters(val *string) error {
 	return nil
 }
 

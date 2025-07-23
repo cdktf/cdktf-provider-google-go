@@ -79,6 +79,10 @@ func (c *jsiiProxy_ComputeSubnetwork) validatePutLogConfigParameters(value *Comp
 	return nil
 }
 
+func (c *jsiiProxy_ComputeSubnetwork) validatePutParamsParameters(value *ComputeSubnetworkParams) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeSubnetwork) validatePutSecondaryIpRangeParameters(value interface{}) error {
 	return nil
 }

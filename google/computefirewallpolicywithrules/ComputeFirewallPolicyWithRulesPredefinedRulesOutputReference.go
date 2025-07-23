@@ -42,6 +42,7 @@ type ComputeFirewallPolicyWithRulesPredefinedRulesOutputReference interface {
 	RuleName() *string
 	SecurityProfileGroup() *string
 	TargetResources() *[]*string
+	TargetSecureTag() ComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagList
 	TargetServiceAccounts() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
@@ -236,6 +237,16 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesPredefinedRulesOutputReference)
 	_jsii_.Get(
 		j,
 		"targetResources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesPredefinedRulesOutputReference) TargetSecureTag() ComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagList {
+	var returns ComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagList
+	_jsii_.Get(
+		j,
+		"targetSecureTag",
 		&returns,
 	)
 	return returns

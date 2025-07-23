@@ -12,15 +12,15 @@ type MemorystoreInstanceCrossInstanceReplicationConfig struct {
 	// 3. 'PRIMARY': This instance serves as the replication source for secondary instance that are replicating from it. Any data written to it is automatically replicated to its secondary clusters. It allows both reads and writes.
 	// 4. 'SECONDARY': This instance replicates data from the primary instance. It allows only reads. Possible values: ["INSTANCE_ROLE_UNSPECIFIED", "NONE", "PRIMARY", "SECONDARY"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/memorystore_instance#instance_role MemorystoreInstance#instance_role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/memorystore_instance#instance_role MemorystoreInstance#instance_role}
 	InstanceRole *string `field:"optional" json:"instanceRole" yaml:"instanceRole"`
 	// primary_instance block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/memorystore_instance#primary_instance MemorystoreInstance#primary_instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/memorystore_instance#primary_instance MemorystoreInstance#primary_instance}
 	PrimaryInstance *MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance `field:"optional" json:"primaryInstance" yaml:"primaryInstance"`
 	// secondary_instances block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/memorystore_instance#secondary_instances MemorystoreInstance#secondary_instances}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/memorystore_instance#secondary_instances MemorystoreInstance#secondary_instances}
 	SecondaryInstances interface{} `field:"optional" json:"secondaryInstances" yaml:"secondaryInstances"`
 }
 

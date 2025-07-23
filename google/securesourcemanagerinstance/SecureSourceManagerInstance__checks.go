@@ -370,6 +370,14 @@ func (j *jsiiProxy_SecureSourceManagerInstance) validateSetCountParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_SecureSourceManagerInstance) validateSetDeletionPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecureSourceManagerInstance) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -51,6 +51,10 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validatePutCont
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validatePutNodeSelectorParameters(value *CloudRunV2JobTemplateTemplateNodeSelector) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validatePutVolumesParameters(value interface{}) error {
 	return nil
 }

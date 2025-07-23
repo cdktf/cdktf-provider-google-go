@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigOutputReference) va
 	return nil
 }
 
+func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigOutputReference) validatePutIdentityConfigParameters(value *DataprocClusterClusterConfigSecurityConfigIdentityConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigOutputReference) validatePutKerberosConfigParameters(value *DataprocClusterClusterConfigSecurityConfigKerberosConfig) error {
 	return nil
 }

@@ -24,38 +24,38 @@ type ChronicleRetrohuntConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The unique identifier for the Chronicle instance, which is the same as the customer ID.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/chronicle_retrohunt#instance ChronicleRetrohunt#instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/chronicle_retrohunt#instance ChronicleRetrohunt#instance}
 	Instance *string `field:"required" json:"instance" yaml:"instance"`
 	// The location of the resource.
 	//
 	// This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/chronicle_retrohunt#location ChronicleRetrohunt#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/chronicle_retrohunt#location ChronicleRetrohunt#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// process_interval block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/chronicle_retrohunt#process_interval ChronicleRetrohunt#process_interval}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/chronicle_retrohunt#process_interval ChronicleRetrohunt#process_interval}
 	ProcessInterval *ChronicleRetrohuntProcessInterval `field:"required" json:"processInterval" yaml:"processInterval"`
 	// The Rule ID of the rule.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/chronicle_retrohunt#rule ChronicleRetrohunt#rule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/chronicle_retrohunt#rule ChronicleRetrohunt#rule}
 	Rule *string `field:"required" json:"rule" yaml:"rule"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/chronicle_retrohunt#id ChronicleRetrohunt#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/chronicle_retrohunt#id ChronicleRetrohunt#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/chronicle_retrohunt#project ChronicleRetrohunt#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/chronicle_retrohunt#project ChronicleRetrohunt#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The retrohunt ID of the Retrohunt.
 	//
 	// A retrohunt is an execution of a Rule over a time range in the past.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/chronicle_retrohunt#retrohunt ChronicleRetrohunt#retrohunt}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/chronicle_retrohunt#retrohunt ChronicleRetrohunt#retrohunt}
 	Retrohunt *string `field:"optional" json:"retrohunt" yaml:"retrohunt"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/chronicle_retrohunt#timeouts ChronicleRetrohunt#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/chronicle_retrohunt#timeouts ChronicleRetrohunt#timeouts}
 	Timeouts *ChronicleRetrohuntTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

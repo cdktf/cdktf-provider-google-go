@@ -43,6 +43,8 @@ type CloudRunV2JobTemplateTemplateOutputReference interface {
 	MaxRetries() *float64
 	SetMaxRetries(val *float64)
 	MaxRetriesInput() *float64
+	NodeSelector() CloudRunV2JobTemplateTemplateNodeSelectorOutputReference
+	NodeSelectorInput() *CloudRunV2JobTemplateTemplateNodeSelector
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -86,12 +88,14 @@ type CloudRunV2JobTemplateTemplateOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutContainers(value interface{})
+	PutNodeSelector(value *CloudRunV2JobTemplateTemplateNodeSelector)
 	PutVolumes(value interface{})
 	PutVpcAccess(value *CloudRunV2JobTemplateTemplateVpcAccess)
 	ResetContainers()
 	ResetEncryptionKey()
 	ResetExecutionEnvironment()
 	ResetMaxRetries()
+	ResetNodeSelector()
 	ResetServiceAccount()
 	ResetTimeout()
 	ResetVolumes()
@@ -236,6 +240,26 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) MaxRetriesInput
 	_jsii_.Get(
 		j,
 		"maxRetriesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) NodeSelector() CloudRunV2JobTemplateTemplateNodeSelectorOutputReference {
+	var returns CloudRunV2JobTemplateTemplateNodeSelectorOutputReference
+	_jsii_.Get(
+		j,
+		"nodeSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) NodeSelectorInput() *CloudRunV2JobTemplateTemplateNodeSelector {
+	var returns *CloudRunV2JobTemplateTemplateNodeSelector
+	_jsii_.Get(
+		j,
+		"nodeSelectorInput",
 		&returns,
 	)
 	return returns
@@ -676,6 +700,17 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) PutContainers(v
 	)
 }
 
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) PutNodeSelector(value *CloudRunV2JobTemplateTemplateNodeSelector) {
+	if err := c.validatePutNodeSelectorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNodeSelector",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) PutVolumes(value interface{}) {
 	if err := c.validatePutVolumesParameters(value); err != nil {
 		panic(err)
@@ -726,6 +761,14 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) ResetMaxRetries
 	_jsii_.InvokeVoid(
 		c,
 		"resetMaxRetries",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) ResetNodeSelector() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNodeSelector",
 		nil, // no parameters
 	)
 }

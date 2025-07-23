@@ -33,11 +33,30 @@ type DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference interfa
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HttpMethod() *string
+	SetHttpMethod(val *string)
+	HttpMethodInput() *string
 	InternalValue() *DialogflowCxWebhookServiceDirectoryGenericWebService
 	SetInternalValue(val *DialogflowCxWebhookServiceDirectoryGenericWebService)
+	OauthConfig() DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference
+	OauthConfigInput() *DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig
+	ParameterMapping() *map[string]*string
+	SetParameterMapping(val *map[string]*string)
+	ParameterMappingInput() *map[string]*string
+	RequestBody() *string
+	SetRequestBody(val *string)
+	RequestBodyInput() *string
 	RequestHeaders() *map[string]*string
 	SetRequestHeaders(val *map[string]*string)
 	RequestHeadersInput() *map[string]*string
+	SecretVersionForUsernamePassword() *string
+	SetSecretVersionForUsernamePassword(val *string)
+	SecretVersionForUsernamePasswordInput() *string
+	SecretVersionsForRequestHeaders() DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList
+	SecretVersionsForRequestHeadersInput() interface{}
+	ServiceAgentAuth() *string
+	SetServiceAgentAuth(val *string)
+	ServiceAgentAuthInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -49,6 +68,9 @@ type DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference interfa
 	Uri() *string
 	SetUri(val *string)
 	UriInput() *string
+	WebhookType() *string
+	SetWebhookType(val *string)
+	WebhookTypeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,8 +95,18 @@ type DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutOauthConfig(value *DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig)
+	PutSecretVersionsForRequestHeaders(value interface{})
 	ResetAllowedCaCerts()
+	ResetHttpMethod()
+	ResetOauthConfig()
+	ResetParameterMapping()
+	ResetRequestBody()
 	ResetRequestHeaders()
+	ResetSecretVersionForUsernamePassword()
+	ResetSecretVersionsForRequestHeaders()
+	ResetServiceAgentAuth()
+	ResetWebhookType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -150,11 +182,91 @@ func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
 	return returns
 }
 
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) HttpMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) HttpMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpMethodInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) InternalValue() *DialogflowCxWebhookServiceDirectoryGenericWebService {
 	var returns *DialogflowCxWebhookServiceDirectoryGenericWebService
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) OauthConfig() DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference {
+	var returns DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference
+	_jsii_.Get(
+		j,
+		"oauthConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) OauthConfigInput() *DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig {
+	var returns *DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig
+	_jsii_.Get(
+		j,
+		"oauthConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ParameterMapping() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"parameterMapping",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ParameterMappingInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"parameterMappingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) RequestBody() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestBody",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) RequestBodyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"requestBodyInput",
 		&returns,
 	)
 	return returns
@@ -175,6 +287,66 @@ func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
 	_jsii_.Get(
 		j,
 		"requestHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) SecretVersionForUsernamePassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretVersionForUsernamePassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) SecretVersionForUsernamePasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretVersionForUsernamePasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) SecretVersionsForRequestHeaders() DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList {
+	var returns DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList
+	_jsii_.Get(
+		j,
+		"secretVersionsForRequestHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) SecretVersionsForRequestHeadersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secretVersionsForRequestHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ServiceAgentAuth() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAgentAuth",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ServiceAgentAuthInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAgentAuthInput",
 		&returns,
 	)
 	return returns
@@ -215,6 +387,26 @@ func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
 	_jsii_.Get(
 		j,
 		"uriInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) WebhookType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webhookType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) WebhookTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webhookTypeInput",
 		&returns,
 	)
 	return returns
@@ -281,6 +473,17 @@ func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
 	)
 }
 
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference)SetHttpMethod(val *string) {
+	if err := j.validateSetHttpMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpMethod",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference)SetInternalValue(val *DialogflowCxWebhookServiceDirectoryGenericWebService) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -292,6 +495,28 @@ func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
 	)
 }
 
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference)SetParameterMapping(val *map[string]*string) {
+	if err := j.validateSetParameterMappingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parameterMapping",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference)SetRequestBody(val *string) {
+	if err := j.validateSetRequestBodyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestBody",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference)SetRequestHeaders(val *map[string]*string) {
 	if err := j.validateSetRequestHeadersParameters(val); err != nil {
 		panic(err)
@@ -299,6 +524,28 @@ func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
 	_jsii_.Set(
 		j,
 		"requestHeaders",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference)SetSecretVersionForUsernamePassword(val *string) {
+	if err := j.validateSetSecretVersionForUsernamePasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretVersionForUsernamePassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference)SetServiceAgentAuth(val *string) {
+	if err := j.validateSetServiceAgentAuthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAgentAuth",
 		val,
 	)
 }
@@ -332,6 +579,17 @@ func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
 	_jsii_.Set(
 		j,
 		"uri",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference)SetWebhookType(val *string) {
+	if err := j.validateSetWebhookTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"webhookType",
 		val,
 	)
 }
@@ -522,6 +780,28 @@ func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
 	return returns
 }
 
+func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) PutOauthConfig(value *DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig) {
+	if err := d.validatePutOauthConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putOauthConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) PutSecretVersionsForRequestHeaders(value interface{}) {
+	if err := d.validatePutSecretVersionsForRequestHeadersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putSecretVersionsForRequestHeaders",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ResetAllowedCaCerts() {
 	_jsii_.InvokeVoid(
 		d,
@@ -530,10 +810,74 @@ func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
 	)
 }
 
+func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ResetHttpMethod() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHttpMethod",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ResetOauthConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOauthConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ResetParameterMapping() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetParameterMapping",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ResetRequestBody() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRequestBody",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ResetRequestHeaders() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRequestHeaders",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ResetSecretVersionForUsernamePassword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSecretVersionForUsernamePassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ResetSecretVersionsForRequestHeaders() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSecretVersionsForRequestHeaders",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ResetServiceAgentAuth() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServiceAgentAuth",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) ResetWebhookType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWebhookType",
 		nil, // no parameters
 	)
 }

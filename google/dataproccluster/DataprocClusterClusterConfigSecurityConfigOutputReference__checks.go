@@ -93,6 +93,17 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigOutputReference) va
 	return nil
 }
 
+func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigOutputReference) validatePutIdentityConfigParameters(value *DataprocClusterClusterConfigSecurityConfigIdentityConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigOutputReference) validatePutKerberosConfigParameters(value *DataprocClusterClusterConfigSecurityConfigKerberosConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

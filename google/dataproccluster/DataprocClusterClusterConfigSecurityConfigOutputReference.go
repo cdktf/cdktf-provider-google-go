@@ -30,6 +30,8 @@ type DataprocClusterClusterConfigSecurityConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdentityConfig() DataprocClusterClusterConfigSecurityConfigIdentityConfigOutputReference
+	IdentityConfigInput() *DataprocClusterClusterConfigSecurityConfigIdentityConfig
 	InternalValue() *DataprocClusterClusterConfigSecurityConfig
 	SetInternalValue(val *DataprocClusterClusterConfigSecurityConfig)
 	KerberosConfig() DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference
@@ -66,7 +68,10 @@ type DataprocClusterClusterConfigSecurityConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutIdentityConfig(value *DataprocClusterClusterConfigSecurityConfigIdentityConfig)
 	PutKerberosConfig(value *DataprocClusterClusterConfigSecurityConfigKerberosConfig)
+	ResetIdentityConfig()
+	ResetKerberosConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -117,6 +122,26 @@ func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigOutputReference) Fq
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigOutputReference) IdentityConfig() DataprocClusterClusterConfigSecurityConfigIdentityConfigOutputReference {
+	var returns DataprocClusterClusterConfigSecurityConfigIdentityConfigOutputReference
+	_jsii_.Get(
+		j,
+		"identityConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocClusterClusterConfigSecurityConfigOutputReference) IdentityConfigInput() *DataprocClusterClusterConfigSecurityConfigIdentityConfig {
+	var returns *DataprocClusterClusterConfigSecurityConfigIdentityConfig
+	_jsii_.Get(
+		j,
+		"identityConfigInput",
 		&returns,
 	)
 	return returns
@@ -441,6 +466,17 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigOutputReference) In
 	return returns
 }
 
+func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigOutputReference) PutIdentityConfig(value *DataprocClusterClusterConfigSecurityConfigIdentityConfig) {
+	if err := d.validatePutIdentityConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putIdentityConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigOutputReference) PutKerberosConfig(value *DataprocClusterClusterConfigSecurityConfigKerberosConfig) {
 	if err := d.validatePutKerberosConfigParameters(value); err != nil {
 		panic(err)
@@ -449,6 +485,22 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigOutputReference) Pu
 		d,
 		"putKerberosConfig",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigOutputReference) ResetIdentityConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIdentityConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigOutputReference) ResetKerberosConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKerberosConfig",
+		nil, // no parameters
 	)
 }
 

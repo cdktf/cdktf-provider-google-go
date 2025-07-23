@@ -523,6 +523,14 @@ func (j *jsiiProxy_SecretManagerSecret) validateSetSecretIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_SecretManagerSecret) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecretManagerSecret) validateSetTtlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

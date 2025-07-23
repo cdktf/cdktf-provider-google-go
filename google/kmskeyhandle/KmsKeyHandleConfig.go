@@ -24,26 +24,26 @@ type KmsKeyHandleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location for the KeyHandle. A full list of valid locations can be found by running 'gcloud kms locations list'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/kms_key_handle#location KmsKeyHandle#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/kms_key_handle#location KmsKeyHandle#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The resource name for the KeyHandle.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/kms_key_handle#name KmsKeyHandle#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/kms_key_handle#name KmsKeyHandle#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Selector of the resource type where we want to protect resources. For example, 'storage.googleapis.com/Bucket'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/kms_key_handle#resource_type_selector KmsKeyHandle#resource_type_selector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/kms_key_handle#resource_type_selector KmsKeyHandle#resource_type_selector}
 	ResourceTypeSelector *string `field:"required" json:"resourceTypeSelector" yaml:"resourceTypeSelector"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/kms_key_handle#id KmsKeyHandle#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/kms_key_handle#id KmsKeyHandle#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/kms_key_handle#project KmsKeyHandle#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/kms_key_handle#project KmsKeyHandle#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/kms_key_handle#timeouts KmsKeyHandle#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/kms_key_handle#timeouts KmsKeyHandle#timeouts}
 	Timeouts *KmsKeyHandleTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

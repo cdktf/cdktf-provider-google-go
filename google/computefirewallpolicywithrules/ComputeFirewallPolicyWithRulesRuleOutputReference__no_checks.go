@@ -51,6 +51,10 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validatePu
 	return nil
 }
 
+func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validatePutTargetSecureTagParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

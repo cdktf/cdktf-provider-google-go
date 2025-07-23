@@ -151,6 +151,10 @@ func (j *jsiiProxy_SecretManagerSecret) validateSetSecretIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_SecretManagerSecret) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretManagerSecret) validateSetTtlParameters(val *string) error {
 	return nil
 }

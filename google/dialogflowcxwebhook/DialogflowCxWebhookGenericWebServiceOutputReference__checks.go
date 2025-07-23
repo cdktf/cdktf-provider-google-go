@@ -93,6 +93,48 @@ func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validate
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validatePutOauthConfigParameters(value *DialogflowCxWebhookGenericWebServiceOauthConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validatePutSecretVersionsForRequestHeadersParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders:
+		value := value.(*[]*DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders:
+		value_ := value.([]*DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -174,6 +216,14 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validateSetHttpMethodParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validateSetInternalValueParameters(val *DialogflowCxWebhookGenericWebService) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -182,7 +232,39 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validateSetParameterMappingParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validateSetRequestBodyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validateSetRequestHeadersParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validateSetSecretVersionForUsernamePasswordParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validateSetServiceAgentAuthParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -207,6 +289,14 @@ func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validate
 }
 
 func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validateSetUriParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DialogflowCxWebhookGenericWebServiceOutputReference) validateSetWebhookTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

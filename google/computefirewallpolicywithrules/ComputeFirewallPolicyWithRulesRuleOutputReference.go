@@ -61,6 +61,8 @@ type ComputeFirewallPolicyWithRulesRuleOutputReference interface {
 	TargetResources() *[]*string
 	SetTargetResources(val *[]*string)
 	TargetResourcesInput() *[]*string
+	TargetSecureTag() ComputeFirewallPolicyWithRulesRuleTargetSecureTagList
+	TargetSecureTagInput() interface{}
 	TargetServiceAccounts() *[]*string
 	SetTargetServiceAccounts(val *[]*string)
 	TargetServiceAccountsInput() *[]*string
@@ -100,6 +102,7 @@ type ComputeFirewallPolicyWithRulesRuleOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutMatch(value *ComputeFirewallPolicyWithRulesRuleMatch)
+	PutTargetSecureTag(value interface{})
 	ResetDescription()
 	ResetDirection()
 	ResetDisabled()
@@ -107,6 +110,7 @@ type ComputeFirewallPolicyWithRulesRuleOutputReference interface {
 	ResetRuleName()
 	ResetSecurityProfileGroup()
 	ResetTargetResources()
+	ResetTargetSecureTag()
 	ResetTargetServiceAccounts()
 	ResetTlsInspect()
 	// Produce the Token's value at resolution time.
@@ -369,6 +373,26 @@ func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) TargetReso
 	_jsii_.Get(
 		j,
 		"targetResourcesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) TargetSecureTag() ComputeFirewallPolicyWithRulesRuleTargetSecureTagList {
+	var returns ComputeFirewallPolicyWithRulesRuleTargetSecureTagList
+	_jsii_.Get(
+		j,
+		"targetSecureTag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) TargetSecureTagInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"targetSecureTagInput",
 		&returns,
 	)
 	return returns
@@ -835,6 +859,17 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) PutMatch(v
 	)
 }
 
+func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) PutTargetSecureTag(value interface{}) {
+	if err := c.validatePutTargetSecureTagParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTargetSecureTag",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
@@ -887,6 +922,14 @@ func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) ResetTarge
 	_jsii_.InvokeVoid(
 		c,
 		"resetTargetResources",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ComputeFirewallPolicyWithRulesRuleOutputReference) ResetTargetSecureTag() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTargetSecureTag",
 		nil, // no parameters
 	)
 }

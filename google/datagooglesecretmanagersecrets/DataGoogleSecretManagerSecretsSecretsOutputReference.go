@@ -44,6 +44,7 @@ type DataGoogleSecretManagerSecretsSecretsOutputReference interface {
 	Replication() DataGoogleSecretManagerSecretsSecretsReplicationList
 	Rotation() DataGoogleSecretManagerSecretsSecretsRotationList
 	SecretId() *string
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -261,6 +262,16 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecretsSecretsOutputReference) SecretI
 	_jsii_.Get(
 		j,
 		"secretId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSecretManagerSecretsSecretsOutputReference) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"tags",
 		&returns,
 	)
 	return returns

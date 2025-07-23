@@ -7,11 +7,11 @@ package computeregionurlmap
 type ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicy struct {
 	// abort block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_region_url_map#abort ComputeRegionUrlMap#abort}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_region_url_map#abort ComputeRegionUrlMap#abort}
 	Abort *ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbort `field:"optional" json:"abort" yaml:"abort"`
 	// delay block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_region_url_map#delay ComputeRegionUrlMap#delay}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_region_url_map#delay ComputeRegionUrlMap#delay}
 	Delay *ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelay `field:"optional" json:"delay" yaml:"delay"`
 }
 

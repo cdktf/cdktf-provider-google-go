@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/network_services_tcp_route google_network_services_tcp_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/network_services_tcp_route google_network_services_tcp_route}.
 type NetworkServicesTcpRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -555,7 +555,7 @@ func (j *jsiiProxy_NetworkServicesTcpRoute) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/network_services_tcp_route google_network_services_tcp_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/network_services_tcp_route google_network_services_tcp_route} Resource.
 func NewNetworkServicesTcpRoute(scope constructs.Construct, id *string, config *NetworkServicesTcpRouteConfig) NetworkServicesTcpRoute {
 	_init_.Initialize()
 
@@ -573,7 +573,7 @@ func NewNetworkServicesTcpRoute(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/network_services_tcp_route google_network_services_tcp_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/network_services_tcp_route google_network_services_tcp_route} Resource.
 func NewNetworkServicesTcpRoute_Override(n NetworkServicesTcpRoute, scope constructs.Construct, id *string, config *NetworkServicesTcpRouteConfig) {
 	_init_.Initialize()
 

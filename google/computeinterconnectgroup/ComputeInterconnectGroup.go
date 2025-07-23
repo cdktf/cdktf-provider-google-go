@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_interconnect_group google_compute_interconnect_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_interconnect_group google_compute_interconnect_group}.
 type ComputeInterconnectGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_ComputeInterconnectGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_interconnect_group google_compute_interconnect_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_interconnect_group google_compute_interconnect_group} Resource.
 func NewComputeInterconnectGroup(scope constructs.Construct, id *string, config *ComputeInterconnectGroupConfig) ComputeInterconnectGroup {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewComputeInterconnectGroup(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs/resources/compute_interconnect_group google_compute_interconnect_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/compute_interconnect_group google_compute_interconnect_group} Resource.
 func NewComputeInterconnectGroup_Override(c ComputeInterconnectGroup, scope constructs.Construct, id *string, config *ComputeInterconnectGroupConfig) {
 	_init_.Initialize()
 

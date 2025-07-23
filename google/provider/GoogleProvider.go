@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs google}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs google}.
 type GoogleProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -382,6 +382,9 @@ type GoogleProvider interface {
 	ModelArmorCustomEndpoint() *string
 	SetModelArmorCustomEndpoint(val *string)
 	ModelArmorCustomEndpointInput() *string
+	ModelArmorGlobalCustomEndpoint() *string
+	SetModelArmorGlobalCustomEndpoint(val *string)
+	ModelArmorGlobalCustomEndpointInput() *string
 	MonitoringCustomEndpoint() *string
 	SetMonitoringCustomEndpoint(val *string)
 	MonitoringCustomEndpointInput() *string
@@ -699,6 +702,7 @@ type GoogleProvider interface {
 	ResetMigrationCenterCustomEndpoint()
 	ResetMlEngineCustomEndpoint()
 	ResetModelArmorCustomEndpoint()
+	ResetModelArmorGlobalCustomEndpoint()
 	ResetMonitoringCustomEndpoint()
 	ResetNetappCustomEndpoint()
 	ResetNetworkConnectivityCustomEndpoint()
@@ -3211,6 +3215,26 @@ func (j *jsiiProxy_GoogleProvider) ModelArmorCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleProvider) ModelArmorGlobalCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelArmorGlobalCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleProvider) ModelArmorGlobalCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelArmorGlobalCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleProvider) MonitoringCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -4482,7 +4506,7 @@ func (j *jsiiProxy_GoogleProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs google} Resource.
 func NewGoogleProvider(scope constructs.Construct, id *string, config *GoogleProviderConfig) GoogleProvider {
 	_init_.Initialize()
 
@@ -4500,7 +4524,7 @@ func NewGoogleProvider(scope constructs.Construct, id *string, config *GooglePro
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.44.0/docs google} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs google} Resource.
 func NewGoogleProvider_Override(g GoogleProvider, scope constructs.Construct, id *string, config *GoogleProviderConfig) {
 	_init_.Initialize()
 
@@ -5468,6 +5492,14 @@ func (j *jsiiProxy_GoogleProvider)SetModelArmorCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"modelArmorCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleProvider)SetModelArmorGlobalCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"modelArmorGlobalCustomEndpoint",
 		val,
 	)
 }
@@ -7036,6 +7068,14 @@ func (g *jsiiProxy_GoogleProvider) ResetModelArmorCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetModelArmorCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleProvider) ResetModelArmorGlobalCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetModelArmorGlobalCustomEndpoint",
 		nil, // no parameters
 	)
 }
