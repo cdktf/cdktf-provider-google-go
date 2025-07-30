@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutput
 	return nil
 }
 
+func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validatePutAuthenticationConfigParameters(value *DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -56,6 +60,10 @@ func (j *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutput
 }
 
 func (j *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validateSetIdleTtlParameters(val *string) error {
 	return nil
 }
 

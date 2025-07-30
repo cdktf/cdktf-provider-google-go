@@ -7,7 +7,7 @@ package networkserviceshttproute
 type NetworkServicesHttpRouteRulesActionDestinations struct {
 	// The URL of a BackendService to route traffic to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/network_services_http_route#service_name NetworkServicesHttpRoute#service_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/network_services_http_route#service_name NetworkServicesHttpRoute#service_name}
 	ServiceName *string `field:"optional" json:"serviceName" yaml:"serviceName"`
 	// Specifies the proportion of requests forwarded to the backend referenced by the serviceName field.
 	//
@@ -16,7 +16,7 @@ type NetworkServicesHttpRouteRulesActionDestinations struct {
 	// If weights are specified for any one service name, they need to be specified for all of them.
 	// If weights are unspecified for all services, then, traffic is distributed in equal proportions to all of them.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/network_services_http_route#weight NetworkServicesHttpRoute#weight}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/network_services_http_route#weight NetworkServicesHttpRoute#weight}
 	Weight *float64 `field:"optional" json:"weight" yaml:"weight"`
 }
 

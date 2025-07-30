@@ -107,6 +107,10 @@ func (j *jsiiProxy_SecureSourceManagerRepository) validateSetCountParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_SecureSourceManagerRepository) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecureSourceManagerRepository) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

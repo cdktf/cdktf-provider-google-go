@@ -56,6 +56,8 @@ type WorkbenchInstanceGceSetupOutputReference interface {
 	MetadataInput() *map[string]*string
 	NetworkInterfaces() WorkbenchInstanceGceSetupNetworkInterfacesList
 	NetworkInterfacesInput() interface{}
+	ReservationAffinity() WorkbenchInstanceGceSetupReservationAffinityOutputReference
+	ReservationAffinityInput() *WorkbenchInstanceGceSetupReservationAffinity
 	ServiceAccounts() WorkbenchInstanceGceSetupServiceAccountsList
 	ServiceAccountsInput() interface{}
 	ShieldedInstanceConfig() WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference
@@ -103,6 +105,7 @@ type WorkbenchInstanceGceSetupOutputReference interface {
 	PutContainerImage(value *WorkbenchInstanceGceSetupContainerImage)
 	PutDataDisks(value *WorkbenchInstanceGceSetupDataDisks)
 	PutNetworkInterfaces(value interface{})
+	PutReservationAffinity(value *WorkbenchInstanceGceSetupReservationAffinity)
 	PutServiceAccounts(value interface{})
 	PutShieldedInstanceConfig(value *WorkbenchInstanceGceSetupShieldedInstanceConfig)
 	PutVmImage(value *WorkbenchInstanceGceSetupVmImage)
@@ -116,6 +119,7 @@ type WorkbenchInstanceGceSetupOutputReference interface {
 	ResetMachineType()
 	ResetMetadata()
 	ResetNetworkInterfaces()
+	ResetReservationAffinity()
 	ResetServiceAccounts()
 	ResetShieldedInstanceConfig()
 	ResetTags()
@@ -380,6 +384,26 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) NetworkInterfacesIn
 	_jsii_.Get(
 		j,
 		"networkInterfacesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ReservationAffinity() WorkbenchInstanceGceSetupReservationAffinityOutputReference {
+	var returns WorkbenchInstanceGceSetupReservationAffinityOutputReference
+	_jsii_.Get(
+		j,
+		"reservationAffinity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ReservationAffinityInput() *WorkbenchInstanceGceSetupReservationAffinity {
+	var returns *WorkbenchInstanceGceSetupReservationAffinity
+	_jsii_.Get(
+		j,
+		"reservationAffinityInput",
 		&returns,
 	)
 	return returns
@@ -875,6 +899,17 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutNetworkInterface
 	)
 }
 
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutReservationAffinity(value *WorkbenchInstanceGceSetupReservationAffinity) {
+	if err := w.validatePutReservationAffinityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putReservationAffinity",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) PutServiceAccounts(value interface{}) {
 	if err := w.validatePutServiceAccountsParameters(value); err != nil {
 		panic(err)
@@ -984,6 +1019,14 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ResetNetworkInterfa
 	_jsii_.InvokeVoid(
 		w,
 		"resetNetworkInterfaces",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) ResetReservationAffinity() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetReservationAffinity",
 		nil, // no parameters
 	)
 }

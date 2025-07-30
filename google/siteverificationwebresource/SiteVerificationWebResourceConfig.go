@@ -24,22 +24,22 @@ type SiteVerificationWebResourceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// site block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/site_verification_web_resource#site SiteVerificationWebResource#site}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/site_verification_web_resource#site SiteVerificationWebResource#site}
 	Site *SiteVerificationWebResourceSite `field:"required" json:"site" yaml:"site"`
 	// The verification method for the Site Verification system to use to verify this site or domain.
 	//
 	// Possible values: ["ANALYTICS", "DNS_CNAME", "DNS_TXT", "FILE", "META", "TAG_MANAGER"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/site_verification_web_resource#verification_method SiteVerificationWebResource#verification_method}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/site_verification_web_resource#verification_method SiteVerificationWebResource#verification_method}
 	VerificationMethod *string `field:"required" json:"verificationMethod" yaml:"verificationMethod"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/site_verification_web_resource#id SiteVerificationWebResource#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/site_verification_web_resource#id SiteVerificationWebResource#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/site_verification_web_resource#timeouts SiteVerificationWebResource#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/site_verification_web_resource#timeouts SiteVerificationWebResource#timeouts}
 	Timeouts *SiteVerificationWebResourceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

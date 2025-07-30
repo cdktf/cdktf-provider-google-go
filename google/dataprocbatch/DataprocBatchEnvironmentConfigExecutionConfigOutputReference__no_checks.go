@@ -47,6 +47,10 @@ func (d *jsiiProxy_DataprocBatchEnvironmentConfigExecutionConfigOutputReference)
 	return nil
 }
 
+func (d *jsiiProxy_DataprocBatchEnvironmentConfigExecutionConfigOutputReference) validatePutAuthenticationConfigParameters(value *DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocBatchEnvironmentConfigExecutionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

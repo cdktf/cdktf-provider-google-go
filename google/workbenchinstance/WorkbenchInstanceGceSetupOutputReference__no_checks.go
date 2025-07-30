@@ -71,6 +71,10 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutNetworkI
 	return nil
 }
 
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutReservationAffinityParameters(value *WorkbenchInstanceGceSetupReservationAffinity) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutServiceAccountsParameters(value interface{}) error {
 	return nil
 }

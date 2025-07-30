@@ -151,6 +151,14 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) validateSetNetworkParameter
 	return nil
 }
 
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) validateSetOdbNetworkParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) validateSetOdbSubnetParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) validateSetProjectParameters(val *string) error {
 	return nil
 }

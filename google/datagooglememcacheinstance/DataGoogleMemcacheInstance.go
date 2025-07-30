@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/memcache_instance google_memcache_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/data-sources/memcache_instance google_memcache_instance}.
 type DataGoogleMemcacheInstance interface {
 	cdktf.TerraformDataSource
 	AuthorizedNetwork() *string
@@ -523,7 +523,7 @@ func (j *jsiiProxy_DataGoogleMemcacheInstance) Zones() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/memcache_instance google_memcache_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/data-sources/memcache_instance google_memcache_instance} Data Source.
 func NewDataGoogleMemcacheInstance(scope constructs.Construct, id *string, config *DataGoogleMemcacheInstanceConfig) DataGoogleMemcacheInstance {
 	_init_.Initialize()
 
@@ -541,7 +541,7 @@ func NewDataGoogleMemcacheInstance(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/memcache_instance google_memcache_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/data-sources/memcache_instance google_memcache_instance} Data Source.
 func NewDataGoogleMemcacheInstance_Override(d DataGoogleMemcacheInstance, scope constructs.Construct, id *string, config *DataGoogleMemcacheInstanceConfig) {
 	_init_.Initialize()
 

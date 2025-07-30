@@ -7,7 +7,7 @@ package vertexaiendpointwithmodelgardendeployment
 type VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResources struct {
 	// machine_spec block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#machine_spec VertexAiEndpointWithModelGardenDeployment#machine_spec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#machine_spec VertexAiEndpointWithModelGardenDeployment#machine_spec}
 	MachineSpec *VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpec `field:"required" json:"machineSpec" yaml:"machineSpec"`
 	// The minimum number of machine replicas that will be always deployed on.
 	//
@@ -16,11 +16,11 @@ type VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResources str
 	// If traffic increases, it may dynamically be deployed onto more replicas,
 	// and as traffic decreases, some of these extra replicas may be freed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#min_replica_count VertexAiEndpointWithModelGardenDeployment#min_replica_count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#min_replica_count VertexAiEndpointWithModelGardenDeployment#min_replica_count}
 	MinReplicaCount *float64 `field:"required" json:"minReplicaCount" yaml:"minReplicaCount"`
 	// autoscaling_metric_specs block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#autoscaling_metric_specs VertexAiEndpointWithModelGardenDeployment#autoscaling_metric_specs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#autoscaling_metric_specs VertexAiEndpointWithModelGardenDeployment#autoscaling_metric_specs}
 	AutoscalingMetricSpecs interface{} `field:"optional" json:"autoscalingMetricSpecs" yaml:"autoscalingMetricSpecs"`
 	// The maximum number of replicas that may be deployed on when the traffic against it increases.
 	//
@@ -36,7 +36,7 @@ type VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResources str
 	// number of cores in the selected machine type) and (max_replica_count *
 	// number of GPUs per replica in the selected machine type).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#max_replica_count VertexAiEndpointWithModelGardenDeployment#max_replica_count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#max_replica_count VertexAiEndpointWithModelGardenDeployment#max_replica_count}
 	MaxReplicaCount *float64 `field:"optional" json:"maxReplicaCount" yaml:"maxReplicaCount"`
 	// Number of required available replicas for the deployment to succeed.
 	//
@@ -46,11 +46,11 @@ type VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResources str
 	// the replicas will be retried. If not set, the default
 	// required_replica_count will be min_replica_count.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#required_replica_count VertexAiEndpointWithModelGardenDeployment#required_replica_count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#required_replica_count VertexAiEndpointWithModelGardenDeployment#required_replica_count}
 	RequiredReplicaCount *float64 `field:"optional" json:"requiredReplicaCount" yaml:"requiredReplicaCount"`
 	// If true, schedule the deployment workload on [spot VMs](https://cloud.google.com/kubernetes-engine/docs/concepts/spot-vms).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#spot VertexAiEndpointWithModelGardenDeployment#spot}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#spot VertexAiEndpointWithModelGardenDeployment#spot}
 	Spot interface{} `field:"optional" json:"spot" yaml:"spot"`
 }
 

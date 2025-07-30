@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/alloydb_instance google_alloydb_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/data-sources/alloydb_instance google_alloydb_instance}.
 type DataGoogleAlloydbInstance interface {
 	cdktf.TerraformDataSource
 	ActivationPolicy() *string
@@ -656,7 +656,7 @@ func (j *jsiiProxy_DataGoogleAlloydbInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/alloydb_instance google_alloydb_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/data-sources/alloydb_instance google_alloydb_instance} Data Source.
 func NewDataGoogleAlloydbInstance(scope constructs.Construct, id *string, config *DataGoogleAlloydbInstanceConfig) DataGoogleAlloydbInstance {
 	_init_.Initialize()
 
@@ -674,7 +674,7 @@ func NewDataGoogleAlloydbInstance(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/data-sources/alloydb_instance google_alloydb_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/data-sources/alloydb_instance google_alloydb_instance} Data Source.
 func NewDataGoogleAlloydbInstance_Override(d DataGoogleAlloydbInstance, scope constructs.Construct, id *string, config *DataGoogleAlloydbInstanceConfig) {
 	_init_.Initialize()
 

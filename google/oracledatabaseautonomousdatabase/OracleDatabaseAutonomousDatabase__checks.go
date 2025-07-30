@@ -459,6 +459,22 @@ func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) validateSetNetworkParameter
 	return nil
 }
 
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) validateSetOdbNetworkParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) validateSetOdbSubnetParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OracleDatabaseAutonomousDatabase) validateSetProjectParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

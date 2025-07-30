@@ -5,11 +5,11 @@ package sccprojectnotificationconfig
 
 
 type SccProjectNotificationConfigTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/scc_project_notification_config#create SccProjectNotificationConfig#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/scc_project_notification_config#create SccProjectNotificationConfig#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/scc_project_notification_config#delete SccProjectNotificationConfig#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/scc_project_notification_config#delete SccProjectNotificationConfig#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/scc_project_notification_config#update SccProjectNotificationConfig#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/scc_project_notification_config#update SccProjectNotificationConfig#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

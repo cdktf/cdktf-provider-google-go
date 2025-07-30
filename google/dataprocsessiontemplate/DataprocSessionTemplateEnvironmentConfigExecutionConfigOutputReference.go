@@ -13,6 +13,8 @@ import (
 
 type DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference interface {
 	cdktf.ComplexObject
+	AuthenticationConfig() DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference
+	AuthenticationConfigInput() *DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,6 +32,9 @@ type DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference inte
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdleTtl() *string
+	SetIdleTtl(val *string)
+	IdleTtlInput() *string
 	InternalValue() *DataprocSessionTemplateEnvironmentConfigExecutionConfig
 	SetInternalValue(val *DataprocSessionTemplateEnvironmentConfigExecutionConfig)
 	KmsKey() *string
@@ -82,6 +87,9 @@ type DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAuthenticationConfig(value *DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig)
+	ResetAuthenticationConfig()
+	ResetIdleTtl()
 	ResetKmsKey()
 	ResetNetworkTags()
 	ResetServiceAccount()
@@ -101,6 +109,26 @@ type DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference inte
 // The jsii proxy struct for DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference
 type jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) AuthenticationConfig() DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference {
+	var returns DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"authenticationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) AuthenticationConfigInput() *DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig {
+	var returns *DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig
+	_jsii_.Get(
+		j,
+		"authenticationConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -138,6 +166,26 @@ func (j *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutput
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) IdleTtl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idleTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) IdleTtlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idleTtlInput",
 		&returns,
 	)
 	return returns
@@ -339,6 +387,17 @@ func (j *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutput
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference)SetIdleTtl(val *string) {
+	if err := j.validateSetIdleTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"idleTtl",
 		val,
 	)
 }
@@ -626,6 +685,33 @@ func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutput
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) PutAuthenticationConfig(value *DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig) {
+	if err := d.validatePutAuthenticationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAuthenticationConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) ResetAuthenticationConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAuthenticationConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) ResetIdleTtl() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIdleTtl",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) ResetKmsKey() {

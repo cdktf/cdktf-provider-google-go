@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloud_run_domain_mapping google_cloud_run_domain_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/cloud_run_domain_mapping google_cloud_run_domain_mapping}.
 type CloudRunDomainMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_CloudRunDomainMapping) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloud_run_domain_mapping google_cloud_run_domain_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/cloud_run_domain_mapping google_cloud_run_domain_mapping} Resource.
 func NewCloudRunDomainMapping(scope constructs.Construct, id *string, config *CloudRunDomainMappingConfig) CloudRunDomainMapping {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewCloudRunDomainMapping(scope constructs.Construct, id *string, config *Cl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/cloud_run_domain_mapping google_cloud_run_domain_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/cloud_run_domain_mapping google_cloud_run_domain_mapping} Resource.
 func NewCloudRunDomainMapping_Override(c CloudRunDomainMapping, scope constructs.Construct, id *string, config *CloudRunDomainMappingConfig) {
 	_init_.Initialize()
 

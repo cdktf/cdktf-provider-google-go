@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/model_armor_template google_model_armor_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/model_armor_template google_model_armor_template}.
 type ModelArmorTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -530,7 +530,7 @@ func (j *jsiiProxy_ModelArmorTemplate) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/model_armor_template google_model_armor_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/model_armor_template google_model_armor_template} Resource.
 func NewModelArmorTemplate(scope constructs.Construct, id *string, config *ModelArmorTemplateConfig) ModelArmorTemplate {
 	_init_.Initialize()
 
@@ -548,7 +548,7 @@ func NewModelArmorTemplate(scope constructs.Construct, id *string, config *Model
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.45.0/docs/resources/model_armor_template google_model_armor_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/model_armor_template google_model_armor_template} Resource.
 func NewModelArmorTemplate_Override(m ModelArmorTemplate, scope constructs.Construct, id *string, config *ModelArmorTemplateConfig) {
 	_init_.Initialize()
 

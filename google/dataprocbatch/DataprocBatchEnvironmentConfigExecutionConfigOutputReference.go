@@ -13,6 +13,8 @@ import (
 
 type DataprocBatchEnvironmentConfigExecutionConfigOutputReference interface {
 	cdktf.ComplexObject
+	AuthenticationConfig() DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference
+	AuthenticationConfigInput() *DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -85,6 +87,8 @@ type DataprocBatchEnvironmentConfigExecutionConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAuthenticationConfig(value *DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfig)
+	ResetAuthenticationConfig()
 	ResetKmsKey()
 	ResetNetworkTags()
 	ResetNetworkUri()
@@ -105,6 +109,26 @@ type DataprocBatchEnvironmentConfigExecutionConfigOutputReference interface {
 // The jsii proxy struct for DataprocBatchEnvironmentConfigExecutionConfigOutputReference
 type jsiiProxy_DataprocBatchEnvironmentConfigExecutionConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataprocBatchEnvironmentConfigExecutionConfigOutputReference) AuthenticationConfig() DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference {
+	var returns DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"authenticationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataprocBatchEnvironmentConfigExecutionConfigOutputReference) AuthenticationConfigInput() *DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfig {
+	var returns *DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfig
+	_jsii_.Get(
+		j,
+		"authenticationConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataprocBatchEnvironmentConfigExecutionConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -661,6 +685,25 @@ func (d *jsiiProxy_DataprocBatchEnvironmentConfigExecutionConfigOutputReference)
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataprocBatchEnvironmentConfigExecutionConfigOutputReference) PutAuthenticationConfig(value *DataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfig) {
+	if err := d.validatePutAuthenticationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAuthenticationConfig",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataprocBatchEnvironmentConfigExecutionConfigOutputReference) ResetAuthenticationConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAuthenticationConfig",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataprocBatchEnvironmentConfigExecutionConfigOutputReference) ResetKmsKey() {

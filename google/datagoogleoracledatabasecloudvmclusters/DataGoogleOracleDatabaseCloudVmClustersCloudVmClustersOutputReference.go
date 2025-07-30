@@ -13,6 +13,7 @@ import (
 
 type DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersOutputReference interface {
 	cdktf.ComplexObject
+	BackupOdbSubnet() *string
 	BackupSubnetCidr() *string
 	Cidr() *string
 	CloudVmClusterId() *string
@@ -45,6 +46,8 @@ type DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersOutputReference inter
 	Location() *string
 	Name() *string
 	Network() *string
+	OdbNetwork() *string
+	OdbSubnet() *string
 	Project() *string
 	Properties() DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersPropertiesList
 	// Experimental.
@@ -93,6 +96,16 @@ type DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersOutputReference inter
 // The jsii proxy struct for DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersOutputReference
 type jsiiProxy_DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersOutputReference) BackupOdbSubnet() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupOdbSubnet",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersOutputReference) BackupSubnetCidr() *string {
@@ -270,6 +283,26 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersOutputR
 	_jsii_.Get(
 		j,
 		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersOutputReference) OdbNetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersOutputReference) OdbSubnet() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"odbSubnet",
 		&returns,
 	)
 	return returns
