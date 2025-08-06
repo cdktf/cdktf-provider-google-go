@@ -83,6 +83,10 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validateSetExec
 	return nil
 }
 
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validateSetGpuZonalRedundancyDisabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudRunV2JobTemplateTemplateOutputReference) validateSetInternalValueParameters(val *CloudRunV2JobTemplateTemplate) error {
 	return nil
 }

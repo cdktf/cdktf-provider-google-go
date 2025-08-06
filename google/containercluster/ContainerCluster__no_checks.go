@@ -207,6 +207,10 @@ func (c *jsiiProxy_ContainerCluster) validatePutPrivateClusterConfigParameters(v
 	return nil
 }
 
+func (c *jsiiProxy_ContainerCluster) validatePutRbacBindingConfigParameters(value *ContainerClusterRbacBindingConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerCluster) validatePutReleaseChannelParameters(value *ContainerClusterReleaseChannel) error {
 	return nil
 }

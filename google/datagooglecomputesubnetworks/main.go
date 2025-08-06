@@ -121,6 +121,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ipCidrRange", GoGetter: "IpCidrRange"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "network", GoGetter: "Network"},
+			_jsii_.MemberProperty{JsiiProperty: "networkName", GoGetter: "NetworkName"},
 			_jsii_.MemberProperty{JsiiProperty: "networkSelfLink", GoGetter: "NetworkSelfLink"},
 			_jsii_.MemberProperty{JsiiProperty: "privateIpGoogleAccess", GoGetter: "PrivateIpGoogleAccess"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

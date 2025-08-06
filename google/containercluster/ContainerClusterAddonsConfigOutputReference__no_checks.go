@@ -83,6 +83,10 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutHttpL
 	return nil
 }
 
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutLustreCsiDriverConfigParameters(value *ContainerClusterAddonsConfigLustreCsiDriverConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutNetworkPolicyConfigParameters(value *ContainerClusterAddonsConfigNetworkPolicyConfig) error {
 	return nil
 }

@@ -40,6 +40,7 @@ type DataGoogleContainerClusterNodePoolNetworkConfigOutputReference interface {
 	PodCidrOverprovisionConfig() DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigList
 	PodIpv4CidrBlock() *string
 	PodRange() *string
+	Subnetwork() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -212,6 +213,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNetworkConfigOutputReferenc
 	_jsii_.Get(
 		j,
 		"podRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNetworkConfigOutputReference) Subnetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetwork",
 		&returns,
 	)
 	return returns

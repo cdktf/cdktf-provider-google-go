@@ -36,6 +36,7 @@ type DataGoogleComputeSubnetworksSubnetworksOutputReference interface {
 	IpCidrRange() *string
 	Name() *string
 	Network() *string
+	NetworkName() *string
 	NetworkSelfLink() *string
 	PrivateIpGoogleAccess() cdktf.IResolvable
 	SelfLink() *string
@@ -171,6 +172,16 @@ func (j *jsiiProxy_DataGoogleComputeSubnetworksSubnetworksOutputReference) Netwo
 	_jsii_.Get(
 		j,
 		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeSubnetworksSubnetworksOutputReference) NetworkName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkName",
 		&returns,
 	)
 	return returns

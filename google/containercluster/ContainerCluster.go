@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/container_cluster google_container_cluster}.
 type ContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() ContainerClusterAddonsConfigOutputReference
@@ -219,6 +219,8 @@ type ContainerCluster interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RbacBindingConfig() ContainerClusterRbacBindingConfigOutputReference
+	RbacBindingConfigInput() *ContainerClusterRbacBindingConfig
 	ReleaseChannel() ContainerClusterReleaseChannelOutputReference
 	ReleaseChannelInput() *ContainerClusterReleaseChannel
 	RemoveDefaultNodePool() interface{}
@@ -332,6 +334,7 @@ type ContainerCluster interface {
 	PutNotificationConfig(value *ContainerClusterNotificationConfig)
 	PutPodAutoscaling(value *ContainerClusterPodAutoscaling)
 	PutPrivateClusterConfig(value *ContainerClusterPrivateClusterConfig)
+	PutRbacBindingConfig(value *ContainerClusterRbacBindingConfig)
 	PutReleaseChannel(value *ContainerClusterReleaseChannel)
 	PutResourceUsageExportConfig(value *ContainerClusterResourceUsageExportConfig)
 	PutSecretManagerConfig(value *ContainerClusterSecretManagerConfig)
@@ -407,6 +410,7 @@ type ContainerCluster interface {
 	ResetPrivateClusterConfig()
 	ResetPrivateIpv6GoogleAccess()
 	ResetProject()
+	ResetRbacBindingConfig()
 	ResetReleaseChannel()
 	ResetRemoveDefaultNodePool()
 	ResetResourceLabels()
@@ -1897,6 +1901,26 @@ func (j *jsiiProxy_ContainerCluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ContainerCluster) RbacBindingConfig() ContainerClusterRbacBindingConfigOutputReference {
+	var returns ContainerClusterRbacBindingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"rbacBindingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerCluster) RbacBindingConfigInput() *ContainerClusterRbacBindingConfig {
+	var returns *ContainerClusterRbacBindingConfig
+	_jsii_.Get(
+		j,
+		"rbacBindingConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerCluster) ReleaseChannel() ContainerClusterReleaseChannelOutputReference {
 	var returns ContainerClusterReleaseChannelOutputReference
 	_jsii_.Get(
@@ -2208,7 +2232,7 @@ func (j *jsiiProxy_ContainerCluster) WorkloadIdentityConfigInput() *ContainerClu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster(scope constructs.Construct, id *string, config *ContainerClusterConfig) ContainerCluster {
 	_init_.Initialize()
 
@@ -2226,7 +2250,7 @@ func NewContainerCluster(scope constructs.Construct, id *string, config *Contain
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/container_cluster google_container_cluster} Resource.
 func NewContainerCluster_Override(c ContainerCluster, scope constructs.Construct, id *string, config *ContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -3395,6 +3419,17 @@ func (c *jsiiProxy_ContainerCluster) PutPrivateClusterConfig(value *ContainerClu
 	)
 }
 
+func (c *jsiiProxy_ContainerCluster) PutRbacBindingConfig(value *ContainerClusterRbacBindingConfig) {
+	if err := c.validatePutRbacBindingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRbacBindingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerCluster) PutReleaseChannel(value *ContainerClusterReleaseChannel) {
 	if err := c.validatePutReleaseChannelParameters(value); err != nil {
 		panic(err)
@@ -4002,6 +4037,14 @@ func (c *jsiiProxy_ContainerCluster) ResetProject() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerCluster) ResetRbacBindingConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRbacBindingConfig",
 		nil, // no parameters
 	)
 }

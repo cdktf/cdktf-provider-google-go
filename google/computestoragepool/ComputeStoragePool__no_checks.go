@@ -115,6 +115,10 @@ func (j *jsiiProxy_ComputeStoragePool) validateSetDescriptionParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_ComputeStoragePool) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComputeStoragePool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

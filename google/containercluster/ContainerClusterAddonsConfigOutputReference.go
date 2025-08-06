@@ -50,6 +50,8 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	HttpLoadBalancingInput() *ContainerClusterAddonsConfigHttpLoadBalancing
 	InternalValue() *ContainerClusterAddonsConfig
 	SetInternalValue(val *ContainerClusterAddonsConfig)
+	LustreCsiDriverConfig() ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference
+	LustreCsiDriverConfigInput() *ContainerClusterAddonsConfigLustreCsiDriverConfig
 	NetworkPolicyConfig() ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference
 	NetworkPolicyConfigInput() *ContainerClusterAddonsConfigNetworkPolicyConfig
 	ParallelstoreCsiDriverConfig() ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference
@@ -99,6 +101,7 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	PutGkeBackupAgentConfig(value *ContainerClusterAddonsConfigGkeBackupAgentConfig)
 	PutHorizontalPodAutoscaling(value *ContainerClusterAddonsConfigHorizontalPodAutoscaling)
 	PutHttpLoadBalancing(value *ContainerClusterAddonsConfigHttpLoadBalancing)
+	PutLustreCsiDriverConfig(value *ContainerClusterAddonsConfigLustreCsiDriverConfig)
 	PutNetworkPolicyConfig(value *ContainerClusterAddonsConfigNetworkPolicyConfig)
 	PutParallelstoreCsiDriverConfig(value *ContainerClusterAddonsConfigParallelstoreCsiDriverConfig)
 	PutRayOperatorConfig(value interface{})
@@ -112,6 +115,7 @@ type ContainerClusterAddonsConfigOutputReference interface {
 	ResetGkeBackupAgentConfig()
 	ResetHorizontalPodAutoscaling()
 	ResetHttpLoadBalancing()
+	ResetLustreCsiDriverConfig()
 	ResetNetworkPolicyConfig()
 	ResetParallelstoreCsiDriverConfig()
 	ResetRayOperatorConfig()
@@ -356,6 +360,26 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) LustreCsiDriverConfig() ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference {
+	var returns ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference
+	_jsii_.Get(
+		j,
+		"lustreCsiDriverConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) LustreCsiDriverConfigInput() *ContainerClusterAddonsConfigLustreCsiDriverConfig {
+	var returns *ContainerClusterAddonsConfigLustreCsiDriverConfig
+	_jsii_.Get(
+		j,
+		"lustreCsiDriverConfigInput",
 		&returns,
 	)
 	return returns
@@ -829,6 +853,17 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutHttpLoadBalan
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutLustreCsiDriverConfig(value *ContainerClusterAddonsConfigLustreCsiDriverConfig) {
+	if err := c.validatePutLustreCsiDriverConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putLustreCsiDriverConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) PutNetworkPolicyConfig(value *ContainerClusterAddonsConfigNetworkPolicyConfig) {
 	if err := c.validatePutNetworkPolicyConfigParameters(value); err != nil {
 		panic(err)
@@ -941,6 +976,14 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ResetHttpLoadBal
 	_jsii_.InvokeVoid(
 		c,
 		"resetHttpLoadBalancing",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) ResetLustreCsiDriverConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLustreCsiDriverConfig",
 		nil, // no parameters
 	)
 }

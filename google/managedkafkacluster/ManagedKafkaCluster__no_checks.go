@@ -91,6 +91,10 @@ func (m *jsiiProxy_ManagedKafkaCluster) validatePutTimeoutsParameters(value *Man
 	return nil
 }
 
+func (m *jsiiProxy_ManagedKafkaCluster) validatePutTlsConfigParameters(value *ManagedKafkaClusterTlsConfig) error {
+	return nil
+}
+
 func validateManagedKafkaCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -207,7 +207,29 @@ func (c *jsiiProxy_CloudfunctionsFunction) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (c *jsiiProxy_CloudfunctionsFunction) validatePutAutomaticUpdatePolicyParameters(value *CloudfunctionsFunctionAutomaticUpdatePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CloudfunctionsFunction) validatePutEventTriggerParameters(value *CloudfunctionsFunctionEventTrigger) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudfunctionsFunction) validatePutOnDeployUpdatePolicyParameters(value *CloudfunctionsFunctionOnDeployUpdatePolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

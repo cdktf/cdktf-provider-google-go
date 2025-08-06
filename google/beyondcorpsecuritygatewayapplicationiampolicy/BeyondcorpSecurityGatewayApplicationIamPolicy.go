@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy}.
 type BeyondcorpSecurityGatewayApplicationIamPolicy interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationIamPolicy) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy} Resource.
 func NewBeyondcorpSecurityGatewayApplicationIamPolicy(scope constructs.Construct, id *string, config *BeyondcorpSecurityGatewayApplicationIamPolicyConfig) BeyondcorpSecurityGatewayApplicationIamPolicy {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewBeyondcorpSecurityGatewayApplicationIamPolicy(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy} Resource.
 func NewBeyondcorpSecurityGatewayApplicationIamPolicy_Override(b BeyondcorpSecurityGatewayApplicationIamPolicy, scope constructs.Construct, id *string, config *BeyondcorpSecurityGatewayApplicationIamPolicyConfig) {
 	_init_.Initialize()
 

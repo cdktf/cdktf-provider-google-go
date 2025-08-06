@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function}.
 type DataGoogleCloudfunctionsFunction interface {
 	cdktf.TerraformDataSource
+	AutomaticUpdatePolicy() DataGoogleCloudfunctionsFunctionAutomaticUpdatePolicyList
 	AvailableMemoryMb() *float64
 	BuildEnvironmentVariables() cdktf.StringMap
 	BuildServiceAccount() *string
@@ -65,6 +66,7 @@ type DataGoogleCloudfunctionsFunction interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OnDeployUpdatePolicy() DataGoogleCloudfunctionsFunctionOnDeployUpdatePolicyList
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -145,6 +147,16 @@ type DataGoogleCloudfunctionsFunction interface {
 // The jsii proxy struct for DataGoogleCloudfunctionsFunction
 type jsiiProxy_DataGoogleCloudfunctionsFunction struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunction) AutomaticUpdatePolicy() DataGoogleCloudfunctionsFunctionAutomaticUpdatePolicyList {
+	var returns DataGoogleCloudfunctionsFunctionAutomaticUpdatePolicyList
+	_jsii_.Get(
+		j,
+		"automaticUpdatePolicy",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleCloudfunctionsFunction) AvailableMemoryMb() *float64 {
@@ -457,6 +469,16 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunction) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudfunctionsFunction) OnDeployUpdatePolicy() DataGoogleCloudfunctionsFunctionOnDeployUpdatePolicyList {
+	var returns DataGoogleCloudfunctionsFunctionOnDeployUpdatePolicyList
+	_jsii_.Get(
+		j,
+		"onDeployUpdatePolicy",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleCloudfunctionsFunction) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -688,7 +710,7 @@ func (j *jsiiProxy_DataGoogleCloudfunctionsFunction) VpcConnectorEgressSettings(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function} Data Source.
 func NewDataGoogleCloudfunctionsFunction(scope constructs.Construct, id *string, config *DataGoogleCloudfunctionsFunctionConfig) DataGoogleCloudfunctionsFunction {
 	_init_.Initialize()
 
@@ -706,7 +728,7 @@ func NewDataGoogleCloudfunctionsFunction(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function} Data Source.
 func NewDataGoogleCloudfunctionsFunction_Override(d DataGoogleCloudfunctionsFunction, scope constructs.Construct, id *string, config *DataGoogleCloudfunctionsFunctionConfig) {
 	_init_.Initialize()
 

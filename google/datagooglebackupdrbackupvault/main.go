@@ -20,6 +20,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
 			_jsii_.MemberProperty{JsiiProperty: "backupCount", GoGetter: "BackupCount"},
 			_jsii_.MemberProperty{JsiiProperty: "backupMinimumEnforcedRetentionDuration", GoGetter: "BackupMinimumEnforcedRetentionDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "backupRetentionInheritance", GoGetter: "BackupRetentionInheritance"},
 			_jsii_.MemberProperty{JsiiProperty: "backupVaultId", GoGetter: "BackupVaultId"},
 			_jsii_.MemberProperty{JsiiProperty: "backupVaultIdInput", GoGetter: "BackupVaultIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},

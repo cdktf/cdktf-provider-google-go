@@ -115,6 +115,10 @@ func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange) validateSetDescriptionParam
 	return nil
 }
 
+func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange) validateSetDiscoveryTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigqueryAnalyticsHubDataExchange) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

@@ -139,6 +139,10 @@ func (j *jsiiProxy_StorageBucketObject) validateSetCountParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_StorageBucketObject) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageBucketObject) validateSetDetectMd5HashParameters(val *string) error {
 	return nil
 }

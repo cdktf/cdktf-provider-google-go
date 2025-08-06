@@ -23,6 +23,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "deployConfig", GoGetter: "DeployConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "deployConfigInput", GoGetter: "DeployConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "deployedModelDisplayName", GoGetter: "DeployedModelDisplayName"},
+			_jsii_.MemberProperty{JsiiProperty: "deployedModelId", GoGetter: "DeployedModelId"},
 			_jsii_.MemberProperty{JsiiProperty: "endpoint", GoGetter: "Endpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "endpointConfig", GoGetter: "EndpointConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "endpointConfigInput", GoGetter: "EndpointConfigInput"},

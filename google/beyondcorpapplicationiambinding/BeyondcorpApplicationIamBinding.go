@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/beyondcorp_application_iam_binding google_beyondcorp_application_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/beyondcorp_application_iam_binding google_beyondcorp_application_iam_binding}.
 type BeyondcorpApplicationIamBinding interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -461,7 +461,7 @@ func (j *jsiiProxy_BeyondcorpApplicationIamBinding) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/beyondcorp_application_iam_binding google_beyondcorp_application_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/beyondcorp_application_iam_binding google_beyondcorp_application_iam_binding} Resource.
 func NewBeyondcorpApplicationIamBinding(scope constructs.Construct, id *string, config *BeyondcorpApplicationIamBindingConfig) BeyondcorpApplicationIamBinding {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewBeyondcorpApplicationIamBinding(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/resources/beyondcorp_application_iam_binding google_beyondcorp_application_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/beyondcorp_application_iam_binding google_beyondcorp_application_iam_binding} Resource.
 func NewBeyondcorpApplicationIamBinding_Override(b BeyondcorpApplicationIamBinding, scope constructs.Construct, id *string, config *BeyondcorpApplicationIamBindingConfig) {
 	_init_.Initialize()
 

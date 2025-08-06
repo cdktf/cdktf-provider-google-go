@@ -111,6 +111,10 @@ func (j *jsiiProxy_BackupDrBackupVault) validateSetBackupMinimumEnforcedRetentio
 	return nil
 }
 
+func (j *jsiiProxy_BackupDrBackupVault) validateSetBackupRetentionInheritanceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupDrBackupVault) validateSetBackupVaultIdParameters(val *string) error {
 	return nil
 }

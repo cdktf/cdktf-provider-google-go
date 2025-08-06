@@ -75,7 +75,15 @@ func (c *jsiiProxy_CloudfunctionsFunction) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (c *jsiiProxy_CloudfunctionsFunction) validatePutAutomaticUpdatePolicyParameters(value *CloudfunctionsFunctionAutomaticUpdatePolicy) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfunctionsFunction) validatePutEventTriggerParameters(value *CloudfunctionsFunctionEventTrigger) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfunctionsFunction) validatePutOnDeployUpdatePolicyParameters(value *CloudfunctionsFunctionOnDeployUpdatePolicy) error {
 	return nil
 }
 

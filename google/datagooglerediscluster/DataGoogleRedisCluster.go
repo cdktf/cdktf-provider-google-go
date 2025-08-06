@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/data-sources/redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/redis_cluster google_redis_cluster}.
 type DataGoogleRedisCluster interface {
 	cdktf.TerraformDataSource
+	AllowFewerZonesDeployment() cdktf.IResolvable
 	AuthorizationMode() *string
 	AutomatedBackupConfig() DataGoogleRedisClusterAutomatedBackupConfigList
 	BackupCollection() *string
@@ -141,6 +142,16 @@ type DataGoogleRedisCluster interface {
 // The jsii proxy struct for DataGoogleRedisCluster
 type jsiiProxy_DataGoogleRedisCluster struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGoogleRedisCluster) AllowFewerZonesDeployment() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowFewerZonesDeployment",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleRedisCluster) AuthorizationMode() *string {
@@ -644,7 +655,7 @@ func (j *jsiiProxy_DataGoogleRedisCluster) ZoneDistributionConfig() DataGoogleRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/data-sources/redis_cluster google_redis_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/redis_cluster google_redis_cluster} Data Source.
 func NewDataGoogleRedisCluster(scope constructs.Construct, id *string, config *DataGoogleRedisClusterConfig) DataGoogleRedisCluster {
 	_init_.Initialize()
 
@@ -662,7 +673,7 @@ func NewDataGoogleRedisCluster(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.46.0/docs/data-sources/redis_cluster google_redis_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/redis_cluster google_redis_cluster} Data Source.
 func NewDataGoogleRedisCluster_Override(d DataGoogleRedisCluster, scope constructs.Construct, id *string, config *DataGoogleRedisClusterConfig) {
 	_init_.Initialize()
 

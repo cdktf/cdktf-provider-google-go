@@ -28,6 +28,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "crc32C", GoGetter: "Crc32C"},
 			_jsii_.MemberProperty{JsiiProperty: "customerEncryption", GoGetter: "CustomerEncryption"},
+			_jsii_.MemberProperty{JsiiProperty: "deletionPolicy", GoGetter: "DeletionPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "detectMd5Hash", GoGetter: "DetectMd5Hash"},
 			_jsii_.MemberProperty{JsiiProperty: "eventBasedHold", GoGetter: "EventBasedHold"},
