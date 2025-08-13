@@ -67,6 +67,10 @@ func (j *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference) validateSetPsaWriteEndpointParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

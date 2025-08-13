@@ -111,6 +111,10 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) validateSetSingleProcessOomKillParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

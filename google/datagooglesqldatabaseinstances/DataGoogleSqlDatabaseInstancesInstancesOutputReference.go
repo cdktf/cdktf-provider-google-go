@@ -46,6 +46,7 @@ type DataGoogleSqlDatabaseInstancesInstancesOutputReference interface {
 	MaintenanceVersion() *string
 	MasterInstanceName() *string
 	Name() *string
+	NodeCount() *float64
 	PrivateIpAddress() *string
 	Project() *string
 	PscServiceAttachmentLink() *string
@@ -292,6 +293,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) Name(
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference) NodeCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"nodeCount",
 		&returns,
 	)
 	return returns

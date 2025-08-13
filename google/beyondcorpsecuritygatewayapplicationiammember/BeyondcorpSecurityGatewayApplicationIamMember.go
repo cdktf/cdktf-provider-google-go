@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/beyondcorp_security_gateway_application_iam_member google_beyondcorp_security_gateway_application_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/beyondcorp_security_gateway_application_iam_member google_beyondcorp_security_gateway_application_iam_member}.
 type BeyondcorpSecurityGatewayApplicationIamMember interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -461,7 +461,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationIamMember) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/beyondcorp_security_gateway_application_iam_member google_beyondcorp_security_gateway_application_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/beyondcorp_security_gateway_application_iam_member google_beyondcorp_security_gateway_application_iam_member} Resource.
 func NewBeyondcorpSecurityGatewayApplicationIamMember(scope constructs.Construct, id *string, config *BeyondcorpSecurityGatewayApplicationIamMemberConfig) BeyondcorpSecurityGatewayApplicationIamMember {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewBeyondcorpSecurityGatewayApplicationIamMember(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/beyondcorp_security_gateway_application_iam_member google_beyondcorp_security_gateway_application_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/beyondcorp_security_gateway_application_iam_member google_beyondcorp_security_gateway_application_iam_member} Resource.
 func NewBeyondcorpSecurityGatewayApplicationIamMember_Override(b BeyondcorpSecurityGatewayApplicationIamMember, scope constructs.Construct, id *string, config *BeyondcorpSecurityGatewayApplicationIamMemberConfig) {
 	_init_.Initialize()
 

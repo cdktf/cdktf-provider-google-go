@@ -7,11 +7,11 @@ package developerconnectinsightsconfig
 type DeveloperConnectInsightsConfigArtifactConfigs struct {
 	// google_artifact_analysis block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/developer_connect_insights_config#google_artifact_analysis DeveloperConnectInsightsConfig#google_artifact_analysis}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/developer_connect_insights_config#google_artifact_analysis DeveloperConnectInsightsConfig#google_artifact_analysis}
 	GoogleArtifactAnalysis *DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysis `field:"optional" json:"googleArtifactAnalysis" yaml:"googleArtifactAnalysis"`
 	// google_artifact_registry block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/developer_connect_insights_config#google_artifact_registry DeveloperConnectInsightsConfig#google_artifact_registry}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/developer_connect_insights_config#google_artifact_registry DeveloperConnectInsightsConfig#google_artifact_registry}
 	GoogleArtifactRegistry *DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistry `field:"optional" json:"googleArtifactRegistry" yaml:"googleArtifactRegistry"`
 	// The URI of the artifact that is deployed.
 	//
@@ -19,7 +19,7 @@ type DeveloperConnectInsightsConfigArtifactConfigs struct {
 	// The URI does not include the tag / digest because it captures a lineage of
 	// artifacts.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/developer_connect_insights_config#uri DeveloperConnectInsightsConfig#uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/developer_connect_insights_config#uri DeveloperConnectInsightsConfig#uri}
 	Uri *string `field:"optional" json:"uri" yaml:"uri"`
 }
 

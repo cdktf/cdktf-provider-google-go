@@ -159,6 +159,10 @@ func (j *jsiiProxy_SqlDatabaseInstance) validateSetNameParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_SqlDatabaseInstance) validateSetNodeCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqlDatabaseInstance) validateSetProjectParameters(val *string) error {
 	return nil
 }

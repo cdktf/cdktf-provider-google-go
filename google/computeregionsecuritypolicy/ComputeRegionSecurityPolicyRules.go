@@ -17,38 +17,38 @@ type ComputeRegionSecurityPolicyRules struct {
 	//
 	// * throttle: limit client traffic to the configured threshold. Configure parameters for this action in rateLimitOptions. Requires rateLimitOptions to be set for this.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/compute_region_security_policy#action ComputeRegionSecurityPolicy#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/compute_region_security_policy#action ComputeRegionSecurityPolicy#action}
 	Action *string `field:"required" json:"action" yaml:"action"`
 	// An integer indicating the priority of a rule in the list.
 	//
 	// The priority must be a positive value between 0 and 2147483647.
 	// Rules are evaluated from highest to lowest priority where 0 is the highest priority and 2147483647 is the lowest priority.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/compute_region_security_policy#priority ComputeRegionSecurityPolicy#priority}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/compute_region_security_policy#priority ComputeRegionSecurityPolicy#priority}
 	Priority *float64 `field:"required" json:"priority" yaml:"priority"`
 	// An optional description of this resource. Provide this property when you create the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/compute_region_security_policy#description ComputeRegionSecurityPolicy#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/compute_region_security_policy#description ComputeRegionSecurityPolicy#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// match block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/compute_region_security_policy#match ComputeRegionSecurityPolicy#match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/compute_region_security_policy#match ComputeRegionSecurityPolicy#match}
 	Match *ComputeRegionSecurityPolicyRulesMatch `field:"optional" json:"match" yaml:"match"`
 	// network_match block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/compute_region_security_policy#network_match ComputeRegionSecurityPolicy#network_match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/compute_region_security_policy#network_match ComputeRegionSecurityPolicy#network_match}
 	NetworkMatch *ComputeRegionSecurityPolicyRulesNetworkMatch `field:"optional" json:"networkMatch" yaml:"networkMatch"`
 	// preconfigured_waf_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/compute_region_security_policy#preconfigured_waf_config ComputeRegionSecurityPolicy#preconfigured_waf_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/compute_region_security_policy#preconfigured_waf_config ComputeRegionSecurityPolicy#preconfigured_waf_config}
 	PreconfiguredWafConfig *ComputeRegionSecurityPolicyRulesPreconfiguredWafConfig `field:"optional" json:"preconfiguredWafConfig" yaml:"preconfiguredWafConfig"`
 	// If set to true, the specified action is not enforced.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/compute_region_security_policy#preview ComputeRegionSecurityPolicy#preview}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/compute_region_security_policy#preview ComputeRegionSecurityPolicy#preview}
 	Preview interface{} `field:"optional" json:"preview" yaml:"preview"`
 	// rate_limit_options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/compute_region_security_policy#rate_limit_options ComputeRegionSecurityPolicy#rate_limit_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/compute_region_security_policy#rate_limit_options ComputeRegionSecurityPolicy#rate_limit_options}
 	RateLimitOptions *ComputeRegionSecurityPolicyRulesRateLimitOptions `field:"optional" json:"rateLimitOptions" yaml:"rateLimitOptions"`
 }
 

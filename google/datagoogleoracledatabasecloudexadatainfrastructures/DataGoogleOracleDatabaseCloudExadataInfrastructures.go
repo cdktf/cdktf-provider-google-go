@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/oracle_database_cloud_exadata_infrastructures google_oracle_database_cloud_exadata_infrastructures}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/oracle_database_cloud_exadata_infrastructures google_oracle_database_cloud_exadata_infrastructures}.
 type DataGoogleOracleDatabaseCloudExadataInfrastructures interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -323,7 +323,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructures) Terrafor
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/oracle_database_cloud_exadata_infrastructures google_oracle_database_cloud_exadata_infrastructures} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/oracle_database_cloud_exadata_infrastructures google_oracle_database_cloud_exadata_infrastructures} Data Source.
 func NewDataGoogleOracleDatabaseCloudExadataInfrastructures(scope constructs.Construct, id *string, config *DataGoogleOracleDatabaseCloudExadataInfrastructuresConfig) DataGoogleOracleDatabaseCloudExadataInfrastructures {
 	_init_.Initialize()
 
@@ -341,7 +341,7 @@ func NewDataGoogleOracleDatabaseCloudExadataInfrastructures(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/oracle_database_cloud_exadata_infrastructures google_oracle_database_cloud_exadata_infrastructures} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/oracle_database_cloud_exadata_infrastructures google_oracle_database_cloud_exadata_infrastructures} Data Source.
 func NewDataGoogleOracleDatabaseCloudExadataInfrastructures_Override(d DataGoogleOracleDatabaseCloudExadataInfrastructures, scope constructs.Construct, id *string, config *DataGoogleOracleDatabaseCloudExadataInfrastructuresConfig) {
 	_init_.Initialize()
 

@@ -33,6 +33,7 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigOutp
 	Fqn() *string
 	InternalValue() *DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfig
 	SetInternalValue(val *DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfig)
+	NetworkAttachmentUri() *string
 	PscAutoConnections() DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigPscAutoConnectionsList
 	PscEnabled() cdktf.IResolvable
 	// Experimental.
@@ -137,6 +138,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfiguratio
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsIpConfigurationPscConfigOutputReference) NetworkAttachmentUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAttachmentUri",
 		&returns,
 	)
 	return returns

@@ -120,6 +120,14 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) validateSetCloudfrontDomainParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

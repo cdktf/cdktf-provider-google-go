@@ -22,24 +22,24 @@ type IapWebCloudRunServiceIamMemberConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/iap_web_cloud_run_service_iam_member#cloud_run_service_name IapWebCloudRunServiceIamMember#cloud_run_service_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/iap_web_cloud_run_service_iam_member#cloud_run_service_name IapWebCloudRunServiceIamMember#cloud_run_service_name}.
 	CloudRunServiceName *string `field:"required" json:"cloudRunServiceName" yaml:"cloudRunServiceName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/iap_web_cloud_run_service_iam_member#member IapWebCloudRunServiceIamMember#member}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/iap_web_cloud_run_service_iam_member#member IapWebCloudRunServiceIamMember#member}.
 	Member *string `field:"required" json:"member" yaml:"member"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/iap_web_cloud_run_service_iam_member#role IapWebCloudRunServiceIamMember#role}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/iap_web_cloud_run_service_iam_member#role IapWebCloudRunServiceIamMember#role}.
 	Role *string `field:"required" json:"role" yaml:"role"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/iap_web_cloud_run_service_iam_member#condition IapWebCloudRunServiceIamMember#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/iap_web_cloud_run_service_iam_member#condition IapWebCloudRunServiceIamMember#condition}
 	Condition *IapWebCloudRunServiceIamMemberCondition `field:"optional" json:"condition" yaml:"condition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/iap_web_cloud_run_service_iam_member#id IapWebCloudRunServiceIamMember#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/iap_web_cloud_run_service_iam_member#id IapWebCloudRunServiceIamMember#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/iap_web_cloud_run_service_iam_member#location IapWebCloudRunServiceIamMember#location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/iap_web_cloud_run_service_iam_member#location IapWebCloudRunServiceIamMember#location}.
 	Location *string `field:"optional" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/iap_web_cloud_run_service_iam_member#project IapWebCloudRunServiceIamMember#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/iap_web_cloud_run_service_iam_member#project IapWebCloudRunServiceIamMember#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

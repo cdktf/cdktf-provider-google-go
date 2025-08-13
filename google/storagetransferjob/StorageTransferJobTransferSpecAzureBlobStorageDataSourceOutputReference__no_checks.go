@@ -51,6 +51,10 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutpu
 	return nil
 }
 
+func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) validatePutFederatedIdentityConfigParameters(value *StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -64,6 +68,10 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutpu
 }
 
 func (j *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) validateSetContainerParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) validateSetCredentialsSecretParameters(val *string) error {
 	return nil
 }
 

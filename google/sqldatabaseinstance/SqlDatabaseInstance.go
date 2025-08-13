@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/sql_database_instance google_sql_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/sql_database_instance google_sql_database_instance}.
 type SqlDatabaseInstance interface {
 	cdktf.TerraformResource
 	AvailableMaintenanceVersions() *[]*string
@@ -77,6 +77,9 @@ type SqlDatabaseInstance interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NodeCount() *float64
+	SetNodeCount(val *float64)
+	NodeCountInput() *float64
 	PrivateIpAddress() *string
 	Project() *string
 	SetProject(val *string)
@@ -178,6 +181,7 @@ type SqlDatabaseInstance interface {
 	ResetMaintenanceVersion()
 	ResetMasterInstanceName()
 	ResetName()
+	ResetNodeCount()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -548,6 +552,26 @@ func (j *jsiiProxy_SqlDatabaseInstance) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_SqlDatabaseInstance) NodeCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"nodeCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance) NodeCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"nodeCountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SqlDatabaseInstance) PrivateIpAddress() *string {
 	var returns *string
 	_jsii_.Get(
@@ -849,7 +873,7 @@ func (j *jsiiProxy_SqlDatabaseInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/sql_database_instance google_sql_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/sql_database_instance google_sql_database_instance} Resource.
 func NewSqlDatabaseInstance(scope constructs.Construct, id *string, config *SqlDatabaseInstanceConfig) SqlDatabaseInstance {
 	_init_.Initialize()
 
@@ -867,7 +891,7 @@ func NewSqlDatabaseInstance(scope constructs.Construct, id *string, config *SqlD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/sql_database_instance google_sql_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/sql_database_instance google_sql_database_instance} Resource.
 func NewSqlDatabaseInstance_Override(s SqlDatabaseInstance, scope constructs.Construct, id *string, config *SqlDatabaseInstanceConfig) {
 	_init_.Initialize()
 
@@ -1011,6 +1035,17 @@ func (j *jsiiProxy_SqlDatabaseInstance)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SqlDatabaseInstance)SetNodeCount(val *float64) {
+	if err := j.validateSetNodeCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeCount",
 		val,
 	)
 }
@@ -1557,6 +1592,14 @@ func (s *jsiiProxy_SqlDatabaseInstance) ResetName() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SqlDatabaseInstance) ResetNodeCount() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNodeCount",
 		nil, // no parameters
 	)
 }

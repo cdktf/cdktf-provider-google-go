@@ -33,6 +33,11 @@ type StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference int
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CredentialsSecret() *string
+	SetCredentialsSecret(val *string)
+	CredentialsSecretInput() *string
+	FederatedIdentityConfig() StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigOutputReference
+	FederatedIdentityConfigInput() *StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig
 	// Experimental.
 	Fqn() *string
 	InternalValue() *StorageTransferJobTransferSpecAzureBlobStorageDataSource
@@ -76,6 +81,10 @@ type StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference int
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAzureCredentials(value *StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentials)
+	PutFederatedIdentityConfig(value *StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig)
+	ResetAzureCredentials()
+	ResetCredentialsSecret()
+	ResetFederatedIdentityConfig()
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -157,6 +166,46 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutpu
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) CredentialsSecret() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialsSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) CredentialsSecretInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialsSecretInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) FederatedIdentityConfig() StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigOutputReference {
+	var returns StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigOutputReference
+	_jsii_.Get(
+		j,
+		"federatedIdentityConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) FederatedIdentityConfigInput() *StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig {
+	var returns *StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig
+	_jsii_.Get(
+		j,
+		"federatedIdentityConfigInput",
 		&returns,
 	)
 	return returns
@@ -299,6 +348,17 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutpu
 	_jsii_.Set(
 		j,
 		"container",
+		val,
+	)
+}
+
+func (j *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference)SetCredentialsSecret(val *string) {
+	if err := j.validateSetCredentialsSecretParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialsSecret",
 		val,
 	)
 }
@@ -552,6 +612,41 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutpu
 		s,
 		"putAzureCredentials",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) PutFederatedIdentityConfig(value *StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig) {
+	if err := s.validatePutFederatedIdentityConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putFederatedIdentityConfig",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) ResetAzureCredentials() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAzureCredentials",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) ResetCredentialsSecret() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCredentialsSecret",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) ResetFederatedIdentityConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetFederatedIdentityConfig",
+		nil, // no parameters
 	)
 }
 

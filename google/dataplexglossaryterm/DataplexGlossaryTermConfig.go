@@ -24,29 +24,29 @@ type DataplexGlossaryTermConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location where the glossary term should reside.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/dataplex_glossary_term#location DataplexGlossaryTerm#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dataplex_glossary_term#location DataplexGlossaryTerm#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The immediate parent of the GlossaryTerm in the resource-hierarchy.
 	//
 	// It can either be a Glossary or a Term. Format: projects/{projectId}/locations/{locationId}/glossaries/{glossaryId} OR projects/{projectId}/locations/{locationId}/glossaries/{glossaryId}/terms/{termId}
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/dataplex_glossary_term#parent DataplexGlossaryTerm#parent}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dataplex_glossary_term#parent DataplexGlossaryTerm#parent}
 	Parent *string `field:"required" json:"parent" yaml:"parent"`
 	// The user-mutable description of the GlossaryTerm.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/dataplex_glossary_term#description DataplexGlossaryTerm#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dataplex_glossary_term#description DataplexGlossaryTerm#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// User friendly display name of the GlossaryTerm.
 	//
 	// This is user-mutable. This will be same as the termId, if not specified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/dataplex_glossary_term#display_name DataplexGlossaryTerm#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dataplex_glossary_term#display_name DataplexGlossaryTerm#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
 	// The glossary id for creation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/dataplex_glossary_term#glossary_id DataplexGlossaryTerm#glossary_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dataplex_glossary_term#glossary_id DataplexGlossaryTerm#glossary_id}
 	GlossaryId *string `field:"optional" json:"glossaryId" yaml:"glossaryId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/dataplex_glossary_term#id DataplexGlossaryTerm#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dataplex_glossary_term#id DataplexGlossaryTerm#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -56,17 +56,17 @@ type DataplexGlossaryTermConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/dataplex_glossary_term#labels DataplexGlossaryTerm#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dataplex_glossary_term#labels DataplexGlossaryTerm#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/dataplex_glossary_term#project DataplexGlossaryTerm#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dataplex_glossary_term#project DataplexGlossaryTerm#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The term id for creation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/dataplex_glossary_term#term_id DataplexGlossaryTerm#term_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dataplex_glossary_term#term_id DataplexGlossaryTerm#term_id}
 	TermId *string `field:"optional" json:"termId" yaml:"termId"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/dataplex_glossary_term#timeouts DataplexGlossaryTerm#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dataplex_glossary_term#timeouts DataplexGlossaryTerm#timeouts}
 	Timeouts *DataplexGlossaryTermTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

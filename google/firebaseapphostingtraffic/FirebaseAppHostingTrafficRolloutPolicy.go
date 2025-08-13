@@ -9,11 +9,11 @@ type FirebaseAppHostingTrafficRolloutPolicy struct {
 	//
 	// If not set, no automatic rollouts will happen.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/firebase_app_hosting_traffic#codebase_branch FirebaseAppHostingTraffic#codebase_branch}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/firebase_app_hosting_traffic#codebase_branch FirebaseAppHostingTraffic#codebase_branch}
 	CodebaseBranch *string `field:"optional" json:"codebaseBranch" yaml:"codebaseBranch"`
 	// A flag that, if true, prevents rollouts from being created via this RolloutPolicy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/firebase_app_hosting_traffic#disabled FirebaseAppHostingTraffic#disabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/firebase_app_hosting_traffic#disabled FirebaseAppHostingTraffic#disabled}
 	Disabled interface{} `field:"optional" json:"disabled" yaml:"disabled"`
 }
 

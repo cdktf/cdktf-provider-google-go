@@ -207,6 +207,17 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicy) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionSecurityPolicy) validatePutAdvancedOptionsConfigParameters(value *ComputeRegionSecurityPolicyAdvancedOptionsConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionSecurityPolicy) validatePutDdosProtectionConfigParameters(value *ComputeRegionSecurityPolicyDdosProtectionConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

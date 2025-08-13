@@ -30,24 +30,24 @@ type SccV2OrganizationSourceConfig struct {
 	// with a letter or digit, may contain letters, digits, spaces, hyphens,
 	// and underscores, and can be no longer than 32 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/scc_v2_organization_source#display_name SccV2OrganizationSource#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/scc_v2_organization_source#display_name SccV2OrganizationSource#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// The organization whose Cloud Security Command Center the Source lives in.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/scc_v2_organization_source#organization SccV2OrganizationSource#organization}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/scc_v2_organization_source#organization SccV2OrganizationSource#organization}
 	Organization *string `field:"required" json:"organization" yaml:"organization"`
 	// The description of the source (max of 1024 characters).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/scc_v2_organization_source#description SccV2OrganizationSource#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/scc_v2_organization_source#description SccV2OrganizationSource#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/scc_v2_organization_source#id SccV2OrganizationSource#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/scc_v2_organization_source#id SccV2OrganizationSource#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/scc_v2_organization_source#timeouts SccV2OrganizationSource#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/scc_v2_organization_source#timeouts SccV2OrganizationSource#timeouts}
 	Timeouts *SccV2OrganizationSourceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

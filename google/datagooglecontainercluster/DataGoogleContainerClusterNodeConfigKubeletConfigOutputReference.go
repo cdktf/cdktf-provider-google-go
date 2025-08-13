@@ -44,6 +44,7 @@ type DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference interface 
 	InternalValue() *DataGoogleContainerClusterNodeConfigKubeletConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodeConfigKubeletConfig)
 	PodPidsLimit() *float64
+	SingleProcessOomKill() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -256,6 +257,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputRefere
 	_jsii_.Get(
 		j,
 		"podPidsLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference) SingleProcessOomKill() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"singleProcessOomKill",
 		&returns,
 	)
 	return returns

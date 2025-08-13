@@ -32,18 +32,18 @@ type DataGoogleComputeRegionSslPolicyConfig struct {
 	// characters must be a dash, lowercase letter, or digit, except the last
 	// character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/compute_region_ssl_policy#name DataGoogleComputeRegionSslPolicy#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/compute_region_ssl_policy#name DataGoogleComputeRegionSslPolicy#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/compute_region_ssl_policy#id DataGoogleComputeRegionSslPolicy#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/compute_region_ssl_policy#id DataGoogleComputeRegionSslPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/compute_region_ssl_policy#project DataGoogleComputeRegionSslPolicy#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/compute_region_ssl_policy#project DataGoogleComputeRegionSslPolicy#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The region where the regional SSL policy resides.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/compute_region_ssl_policy#region DataGoogleComputeRegionSslPolicy#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/compute_region_ssl_policy#region DataGoogleComputeRegionSslPolicy#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

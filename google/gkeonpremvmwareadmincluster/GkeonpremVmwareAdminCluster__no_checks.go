@@ -155,6 +155,10 @@ func (j *jsiiProxy_GkeonpremVmwareAdminCluster) validateSetDescriptionParameters
 	return nil
 }
 
+func (j *jsiiProxy_GkeonpremVmwareAdminCluster) validateSetEnableAdvancedClusterParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GkeonpremVmwareAdminCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

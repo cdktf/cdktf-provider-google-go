@@ -15,6 +15,8 @@ type ContainerClusterNodeConfigOutputReference interface {
 	cdktf.ComplexObject
 	AdvancedMachineFeatures() ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference
 	AdvancedMachineFeaturesInput() *ContainerClusterNodeConfigAdvancedMachineFeatures
+	BootDisk() ContainerClusterNodeConfigBootDiskOutputReference
+	BootDiskInput() *ContainerClusterNodeConfigBootDisk
 	BootDiskKmsKey() *string
 	SetBootDiskKmsKey(val *string)
 	BootDiskKmsKeyInput() *string
@@ -173,6 +175,7 @@ type ContainerClusterNodeConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAdvancedMachineFeatures(value *ContainerClusterNodeConfigAdvancedMachineFeatures)
+	PutBootDisk(value *ContainerClusterNodeConfigBootDisk)
 	PutConfidentialNodes(value *ContainerClusterNodeConfigConfidentialNodes)
 	PutContainerdConfig(value *ContainerClusterNodeConfigContainerdConfig)
 	PutEphemeralStorageLocalSsdConfig(value *ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig)
@@ -192,6 +195,7 @@ type ContainerClusterNodeConfigOutputReference interface {
 	PutWindowsNodeConfig(value *ContainerClusterNodeConfigWindowsNodeConfig)
 	PutWorkloadMetadataConfig(value *ContainerClusterNodeConfigWorkloadMetadataConfig)
 	ResetAdvancedMachineFeatures()
+	ResetBootDisk()
 	ResetBootDiskKmsKey()
 	ResetConfidentialNodes()
 	ResetContainerdConfig()
@@ -263,6 +267,26 @@ func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) AdvancedMachineFea
 	_jsii_.Get(
 		j,
 		"advancedMachineFeaturesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) BootDisk() ContainerClusterNodeConfigBootDiskOutputReference {
+	var returns ContainerClusterNodeConfigBootDiskOutputReference
+	_jsii_.Get(
+		j,
+		"bootDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodeConfigOutputReference) BootDiskInput() *ContainerClusterNodeConfigBootDisk {
+	var returns *ContainerClusterNodeConfigBootDisk
+	_jsii_.Get(
+		j,
+		"bootDiskInput",
 		&returns,
 	)
 	return returns
@@ -1701,6 +1725,17 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutAdvancedMachine
 	)
 }
 
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutBootDisk(value *ContainerClusterNodeConfigBootDisk) {
+	if err := c.validatePutBootDiskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putBootDisk",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) PutConfidentialNodes(value *ContainerClusterNodeConfigConfidentialNodes) {
 	if err := c.validatePutConfidentialNodesParameters(value); err != nil {
 		panic(err)
@@ -1903,6 +1938,14 @@ func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetAdvancedMachi
 	_jsii_.InvokeVoid(
 		c,
 		"resetAdvancedMachineFeatures",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodeConfigOutputReference) ResetBootDisk() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBootDisk",
 		nil, // no parameters
 	)
 }

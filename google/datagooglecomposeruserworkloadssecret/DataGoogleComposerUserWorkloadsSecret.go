@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/composer_user_workloads_secret google_composer_user_workloads_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/composer_user_workloads_secret google_composer_user_workloads_secret}.
 type DataGoogleComposerUserWorkloadsSecret interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataGoogleComposerUserWorkloadsSecret) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/composer_user_workloads_secret google_composer_user_workloads_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/composer_user_workloads_secret google_composer_user_workloads_secret} Data Source.
 func NewDataGoogleComposerUserWorkloadsSecret(scope constructs.Construct, id *string, config *DataGoogleComposerUserWorkloadsSecretConfig) DataGoogleComposerUserWorkloadsSecret {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataGoogleComposerUserWorkloadsSecret(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/composer_user_workloads_secret google_composer_user_workloads_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/composer_user_workloads_secret google_composer_user_workloads_secret} Data Source.
 func NewDataGoogleComposerUserWorkloadsSecret_Override(d DataGoogleComposerUserWorkloadsSecret, scope constructs.Construct, id *string, config *DataGoogleComposerUserWorkloadsSecretConfig) {
 	_init_.Initialize()
 

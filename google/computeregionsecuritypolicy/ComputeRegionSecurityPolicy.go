@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/compute_region_security_policy google_compute_region_security_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/compute_region_security_policy google_compute_region_security_policy}.
 type ComputeRegionSecurityPolicy interface {
 	cdktf.TerraformResource
+	AdvancedOptionsConfig() ComputeRegionSecurityPolicyAdvancedOptionsConfigOutputReference
+	AdvancedOptionsConfigInput() *ComputeRegionSecurityPolicyAdvancedOptionsConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -134,10 +136,12 @@ type ComputeRegionSecurityPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAdvancedOptionsConfig(value *ComputeRegionSecurityPolicyAdvancedOptionsConfig)
 	PutDdosProtectionConfig(value *ComputeRegionSecurityPolicyDdosProtectionConfig)
 	PutRules(value interface{})
 	PutTimeouts(value *ComputeRegionSecurityPolicyTimeouts)
 	PutUserDefinedFields(value interface{})
+	ResetAdvancedOptionsConfig()
 	ResetDdosProtectionConfig()
 	ResetDescription()
 	ResetId()
@@ -166,6 +170,26 @@ type ComputeRegionSecurityPolicy interface {
 // The jsii proxy struct for ComputeRegionSecurityPolicy
 type jsiiProxy_ComputeRegionSecurityPolicy struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ComputeRegionSecurityPolicy) AdvancedOptionsConfig() ComputeRegionSecurityPolicyAdvancedOptionsConfigOutputReference {
+	var returns ComputeRegionSecurityPolicyAdvancedOptionsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"advancedOptionsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ComputeRegionSecurityPolicy) AdvancedOptionsConfigInput() *ComputeRegionSecurityPolicyAdvancedOptionsConfig {
+	var returns *ComputeRegionSecurityPolicyAdvancedOptionsConfig
+	_jsii_.Get(
+		j,
+		"advancedOptionsConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ComputeRegionSecurityPolicy) CdktfStack() cdktf.TerraformStack {
@@ -569,7 +593,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicy) UserDefinedFieldsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/compute_region_security_policy google_compute_region_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/compute_region_security_policy google_compute_region_security_policy} Resource.
 func NewComputeRegionSecurityPolicy(scope constructs.Construct, id *string, config *ComputeRegionSecurityPolicyConfig) ComputeRegionSecurityPolicy {
 	_init_.Initialize()
 
@@ -587,7 +611,7 @@ func NewComputeRegionSecurityPolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/compute_region_security_policy google_compute_region_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/compute_region_security_policy google_compute_region_security_policy} Resource.
 func NewComputeRegionSecurityPolicy_Override(c ComputeRegionSecurityPolicy, scope constructs.Construct, id *string, config *ComputeRegionSecurityPolicyConfig) {
 	_init_.Initialize()
 
@@ -1085,6 +1109,17 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicy) OverrideLogicalId(newLogicalId *
 	)
 }
 
+func (c *jsiiProxy_ComputeRegionSecurityPolicy) PutAdvancedOptionsConfig(value *ComputeRegionSecurityPolicyAdvancedOptionsConfig) {
+	if err := c.validatePutAdvancedOptionsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAdvancedOptionsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ComputeRegionSecurityPolicy) PutDdosProtectionConfig(value *ComputeRegionSecurityPolicyDdosProtectionConfig) {
 	if err := c.validatePutDdosProtectionConfigParameters(value); err != nil {
 		panic(err)
@@ -1126,6 +1161,14 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicy) PutUserDefinedFields(value inter
 		c,
 		"putUserDefinedFields",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ComputeRegionSecurityPolicy) ResetAdvancedOptionsConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAdvancedOptionsConfig",
+		nil, // no parameters
 	)
 }
 

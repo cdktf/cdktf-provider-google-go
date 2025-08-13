@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster}.
 type GkeonpremVmwareAdminCluster interface {
 	cdktf.TerraformResource
 	AddonNode() GkeonpremVmwareAdminClusterAddonNodeOutputReference
@@ -52,7 +52,9 @@ type GkeonpremVmwareAdminCluster interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveAnnotations() cdktf.StringMap
-	EnableAdvancedCluster() cdktf.IResolvable
+	EnableAdvancedCluster() interface{}
+	SetEnableAdvancedCluster(val interface{})
+	EnableAdvancedClusterInput() interface{}
 	Endpoint() *string
 	Etag() *string
 	Fleet() GkeonpremVmwareAdminClusterFleetList
@@ -184,6 +186,7 @@ type GkeonpremVmwareAdminCluster interface {
 	ResetBootstrapClusterMembership()
 	ResetControlPlaneNode()
 	ResetDescription()
+	ResetEnableAdvancedCluster()
 	ResetId()
 	ResetImageType()
 	ResetLoadBalancer()
@@ -444,11 +447,21 @@ func (j *jsiiProxy_GkeonpremVmwareAdminCluster) EffectiveAnnotations() cdktf.Str
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminCluster) EnableAdvancedCluster() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_GkeonpremVmwareAdminCluster) EnableAdvancedCluster() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"enableAdvancedCluster",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GkeonpremVmwareAdminCluster) EnableAdvancedClusterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAdvancedClusterInput",
 		&returns,
 	)
 	return returns
@@ -895,7 +908,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminCluster) VcenterInput() *GkeonpremVmwareA
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
 func NewGkeonpremVmwareAdminCluster(scope constructs.Construct, id *string, config *GkeonpremVmwareAdminClusterConfig) GkeonpremVmwareAdminCluster {
 	_init_.Initialize()
 
@@ -913,7 +926,7 @@ func NewGkeonpremVmwareAdminCluster(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
 func NewGkeonpremVmwareAdminCluster_Override(g GkeonpremVmwareAdminCluster, scope constructs.Construct, id *string, config *GkeonpremVmwareAdminClusterConfig) {
 	_init_.Initialize()
 
@@ -983,6 +996,17 @@ func (j *jsiiProxy_GkeonpremVmwareAdminCluster)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GkeonpremVmwareAdminCluster)SetEnableAdvancedCluster(val interface{}) {
+	if err := j.validateSetEnableAdvancedClusterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableAdvancedCluster",
 		val,
 	)
 }
@@ -1625,6 +1649,14 @@ func (g *jsiiProxy_GkeonpremVmwareAdminCluster) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GkeonpremVmwareAdminCluster) ResetEnableAdvancedCluster() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableAdvancedCluster",
 		nil, // no parameters
 	)
 }

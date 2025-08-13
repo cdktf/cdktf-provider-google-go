@@ -75,6 +75,10 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicy) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionSecurityPolicy) validatePutAdvancedOptionsConfigParameters(value *ComputeRegionSecurityPolicyAdvancedOptionsConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionSecurityPolicy) validatePutDdosProtectionConfigParameters(value *ComputeRegionSecurityPolicyDdosProtectionConfig) error {
 	return nil
 }

@@ -7,7 +7,7 @@ package cloudrundomainmapping
 type CloudRunDomainMappingMetadata struct {
 	// In Cloud Run the namespace must be equal to either the project ID or project number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/cloud_run_domain_mapping#namespace CloudRunDomainMapping#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/cloud_run_domain_mapping#namespace CloudRunDomainMapping#namespace}
 	Namespace *string `field:"required" json:"namespace" yaml:"namespace"`
 	// Annotations is a key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata.
 	//
@@ -20,7 +20,7 @@ type CloudRunDomainMappingMetadata struct {
 	// **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 	// Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/cloud_run_domain_mapping#annotations CloudRunDomainMapping#annotations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/cloud_run_domain_mapping#annotations CloudRunDomainMapping#annotations}
 	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
 	// Map of string keys and values that can be used to organize and categorize (scope and select) objects.
 	//
@@ -31,7 +31,7 @@ type CloudRunDomainMappingMetadata struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/cloud_run_domain_mapping#labels CloudRunDomainMapping#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/cloud_run_domain_mapping#labels CloudRunDomainMapping#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 }
 

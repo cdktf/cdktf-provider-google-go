@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/iap_web_type_app_engine_iam_policy google_iap_web_type_app_engine_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/iap_web_type_app_engine_iam_policy google_iap_web_type_app_engine_iam_policy}.
 type IapWebTypeAppEngineIamPolicy interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_IapWebTypeAppEngineIamPolicy) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/iap_web_type_app_engine_iam_policy google_iap_web_type_app_engine_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/iap_web_type_app_engine_iam_policy google_iap_web_type_app_engine_iam_policy} Resource.
 func NewIapWebTypeAppEngineIamPolicy(scope constructs.Construct, id *string, config *IapWebTypeAppEngineIamPolicyConfig) IapWebTypeAppEngineIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewIapWebTypeAppEngineIamPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/resources/iap_web_type_app_engine_iam_policy google_iap_web_type_app_engine_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/iap_web_type_app_engine_iam_policy google_iap_web_type_app_engine_iam_policy} Resource.
 func NewIapWebTypeAppEngineIamPolicy_Override(i IapWebTypeAppEngineIamPolicy, scope constructs.Construct, id *string, config *IapWebTypeAppEngineIamPolicyConfig) {
 	_init_.Initialize()
 

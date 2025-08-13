@@ -59,6 +59,10 @@ func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) validateSetCloudfrontDomainParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

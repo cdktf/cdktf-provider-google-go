@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/compute_lb_ip_ranges google_compute_lb_ip_ranges}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/compute_lb_ip_ranges google_compute_lb_ip_ranges}.
 type DataGoogleComputeLbIpRanges interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DataGoogleComputeLbIpRanges) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/compute_lb_ip_ranges google_compute_lb_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/compute_lb_ip_ranges google_compute_lb_ip_ranges} Data Source.
 func NewDataGoogleComputeLbIpRanges(scope constructs.Construct, id *string, config *DataGoogleComputeLbIpRangesConfig) DataGoogleComputeLbIpRanges {
 	_init_.Initialize()
 
@@ -305,7 +305,7 @@ func NewDataGoogleComputeLbIpRanges(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/compute_lb_ip_ranges google_compute_lb_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/compute_lb_ip_ranges google_compute_lb_ip_ranges} Data Source.
 func NewDataGoogleComputeLbIpRanges_Override(d DataGoogleComputeLbIpRanges, scope constructs.Construct, id *string, config *DataGoogleComputeLbIpRangesConfig) {
 	_init_.Initialize()
 

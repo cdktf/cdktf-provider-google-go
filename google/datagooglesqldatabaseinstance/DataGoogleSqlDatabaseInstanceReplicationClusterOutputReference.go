@@ -34,6 +34,7 @@ type DataGoogleSqlDatabaseInstanceReplicationClusterOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleSqlDatabaseInstanceReplicationCluster
 	SetInternalValue(val *DataGoogleSqlDatabaseInstanceReplicationCluster)
+	PsaWriteEndpoint() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -146,6 +147,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceReplicationClusterOutputReferenc
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceReplicationClusterOutputReference) PsaWriteEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"psaWriteEndpoint",
 		&returns,
 	)
 	return returns

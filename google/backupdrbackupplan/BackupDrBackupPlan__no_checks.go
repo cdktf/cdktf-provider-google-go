@@ -131,6 +131,10 @@ func (j *jsiiProxy_BackupDrBackupPlan) validateSetLocationParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_BackupDrBackupPlan) validateSetLogRetentionDaysParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupDrBackupPlan) validateSetProjectParameters(val *string) error {
 	return nil
 }

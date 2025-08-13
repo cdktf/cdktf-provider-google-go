@@ -24,18 +24,18 @@ type DataGoogleGkeHubFeatureConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/gke_hub_feature#location DataGoogleGkeHubFeature#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/gke_hub_feature#location DataGoogleGkeHubFeature#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The full, unique name of this Feature resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/gke_hub_feature#name DataGoogleGkeHubFeature#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/gke_hub_feature#name DataGoogleGkeHubFeature#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/gke_hub_feature#id DataGoogleGkeHubFeature#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/gke_hub_feature#id DataGoogleGkeHubFeature#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.47.0/docs/data-sources/gke_hub_feature#project DataGoogleGkeHubFeature#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/gke_hub_feature#project DataGoogleGkeHubFeature#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

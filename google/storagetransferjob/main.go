@@ -776,6 +776,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "awsAccessKeyInput", GoGetter: "AwsAccessKeyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
 			_jsii_.MemberProperty{JsiiProperty: "bucketNameInput", GoGetter: "BucketNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudfrontDomain", GoGetter: "CloudfrontDomain"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudfrontDomainInput", GoGetter: "CloudfrontDomainInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -799,6 +801,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAwsAccessKey", GoMethod: "PutAwsAccessKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsAccessKey", GoMethod: "ResetAwsAccessKey"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCloudfrontDomain", GoMethod: "ResetCloudfrontDomain"},
 			_jsii_.MemberMethod{JsiiMethod: "resetManagedPrivateNetwork", GoMethod: "ResetManagedPrivateNetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPath", GoMethod: "ResetPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRoleArn", GoMethod: "ResetRoleArn"},
@@ -857,6 +860,46 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig",
+		reflect.TypeOf((*StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigOutputReference",
+		reflect.TypeOf((*StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
+			_jsii_.MemberProperty{JsiiProperty: "clientIdInput", GoGetter: "ClientIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "tenantId", GoGetter: "TenantId"},
+			_jsii_.MemberProperty{JsiiProperty: "tenantIdInput", GoGetter: "TenantIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference",
 		reflect.TypeOf((*StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference)(nil)).Elem(),
@@ -869,6 +912,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "container", GoGetter: "Container"},
 			_jsii_.MemberProperty{JsiiProperty: "containerInput", GoGetter: "ContainerInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "credentialsSecret", GoGetter: "CredentialsSecret"},
+			_jsii_.MemberProperty{JsiiProperty: "credentialsSecretInput", GoGetter: "CredentialsSecretInput"},
+			_jsii_.MemberProperty{JsiiProperty: "federatedIdentityConfig", GoGetter: "FederatedIdentityConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "federatedIdentityConfigInput", GoGetter: "FederatedIdentityConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -885,6 +932,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
 			_jsii_.MemberProperty{JsiiProperty: "pathInput", GoGetter: "PathInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAzureCredentials", GoMethod: "PutAzureCredentials"},
+			_jsii_.MemberMethod{JsiiMethod: "putFederatedIdentityConfig", GoMethod: "PutFederatedIdentityConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAzureCredentials", GoMethod: "ResetAzureCredentials"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCredentialsSecret", GoMethod: "ResetCredentialsSecret"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFederatedIdentityConfig", GoMethod: "ResetFederatedIdentityConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPath", GoMethod: "ResetPath"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "storageAccount", GoGetter: "StorageAccount"},

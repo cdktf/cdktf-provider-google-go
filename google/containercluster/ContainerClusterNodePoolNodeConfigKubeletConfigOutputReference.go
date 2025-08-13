@@ -68,6 +68,9 @@ type ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference interface {
 	PodPidsLimit() *float64
 	SetPodPidsLimit(val *float64)
 	PodPidsLimitInput() *float64
+	SingleProcessOomKill() interface{}
+	SetSingleProcessOomKill(val interface{})
+	SingleProcessOomKillInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -112,6 +115,7 @@ type ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference interface {
 	ResetImageMinimumGcAge()
 	ResetInsecureKubeletReadonlyPortEnabled()
 	ResetPodPidsLimit()
+	ResetSingleProcessOomKill()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -417,6 +421,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) SingleProcessOomKill() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"singleProcessOomKill",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) SingleProcessOomKillInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"singleProcessOomKillInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -626,6 +650,17 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	_jsii_.Set(
 		j,
 		"podPidsLimit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference)SetSingleProcessOomKill(val interface{}) {
+	if err := j.validateSetSingleProcessOomKillParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"singleProcessOomKill",
 		val,
 	)
 }
@@ -930,6 +965,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReferenc
 	_jsii_.InvokeVoid(
 		c,
 		"resetPodPidsLimit",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) ResetSingleProcessOomKill() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSingleProcessOomKill",
 		nil, // no parameters
 	)
 }

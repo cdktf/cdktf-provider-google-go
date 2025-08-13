@@ -45,6 +45,7 @@ type DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference interface {
 	DiskSize() *float64
 	DiskType() *string
 	Edition() *string
+	EffectiveAvailabilityType() *string
 	EnableDataplexIntegration() cdktf.IResolvable
 	EnableGoogleMlIntegration() cdktf.IResolvable
 	// Experimental.
@@ -305,6 +306,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReferenc
 	_jsii_.Get(
 		j,
 		"edition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsOutputReference) EffectiveAvailabilityType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveAvailabilityType",
 		&returns,
 	)
 	return returns

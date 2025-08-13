@@ -72,6 +72,7 @@ type SqlDatabaseInstanceSettingsOutputReference interface {
 	Edition() *string
 	SetEdition(val *string)
 	EditionInput() *string
+	EffectiveAvailabilityType() *string
 	EnableDataplexIntegration() interface{}
 	SetEnableDataplexIntegration(val interface{})
 	EnableDataplexIntegrationInput() interface{}
@@ -564,6 +565,16 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EditionInput() *s
 	_jsii_.Get(
 		j,
 		"editionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsOutputReference) EffectiveAvailabilityType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveAvailabilityType",
 		&returns,
 	)
 	return returns

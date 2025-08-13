@@ -51,6 +51,10 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutAdvanc
 	return nil
 }
 
+func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutBootDiskParameters(value *ContainerNodePoolNodeConfigBootDisk) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerNodePoolNodeConfigOutputReference) validatePutConfidentialNodesParameters(value *ContainerNodePoolNodeConfigConfidentialNodes) error {
 	return nil
 }
