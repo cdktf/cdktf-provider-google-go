@@ -12,11 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/folder google_folder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/folder google_folder}.
 type DataGoogleFolder interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConfiguredCapabilities() *[]*string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -53,6 +54,7 @@ type DataGoogleFolder interface {
 	LookupOrganization() interface{}
 	SetLookupOrganization(val interface{})
 	LookupOrganizationInput() interface{}
+	ManagementProject() *string
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -124,6 +126,16 @@ func (j *jsiiProxy_DataGoogleFolder) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleFolder) ConfiguredCapabilities() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"configuredCapabilities",
 		&returns,
 	)
 	return returns
@@ -309,6 +321,16 @@ func (j *jsiiProxy_DataGoogleFolder) LookupOrganizationInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleFolder) ManagementProject() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managementProject",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleFolder) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -400,7 +422,7 @@ func (j *jsiiProxy_DataGoogleFolder) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/folder google_folder} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/folder google_folder} Data Source.
 func NewDataGoogleFolder(scope constructs.Construct, id *string, config *DataGoogleFolderConfig) DataGoogleFolder {
 	_init_.Initialize()
 
@@ -418,7 +440,7 @@ func NewDataGoogleFolder(scope constructs.Construct, id *string, config *DataGoo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/data-sources/folder google_folder} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/folder google_folder} Data Source.
 func NewDataGoogleFolder_Override(d DataGoogleFolder, scope constructs.Construct, id *string, config *DataGoogleFolderConfig) {
 	_init_.Initialize()
 

@@ -131,6 +131,10 @@ func (j *jsiiProxy_ApikeysKey) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_ApikeysKey) validateSetServiceAccountEmailParameters(val *string) error {
+	return nil
+}
+
 func validateNewApikeysKeyParameters(scope constructs.Construct, id *string, config *ApikeysKeyConfig) error {
 	return nil
 }

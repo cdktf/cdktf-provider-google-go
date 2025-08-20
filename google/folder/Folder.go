@@ -12,11 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/folder google_folder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/folder google_folder}.
 type Folder interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConfiguredCapabilities() *[]*string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -55,6 +56,7 @@ type Folder interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LifecycleState() *string
+	ManagementProject() *string
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -156,6 +158,16 @@ func (j *jsiiProxy_Folder) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Folder) ConfiguredCapabilities() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"configuredCapabilities",
 		&returns,
 	)
 	return returns
@@ -331,6 +343,16 @@ func (j *jsiiProxy_Folder) LifecycleState() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Folder) ManagementProject() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managementProject",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Folder) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -472,7 +494,7 @@ func (j *jsiiProxy_Folder) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/folder google_folder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/folder google_folder} Resource.
 func NewFolder(scope constructs.Construct, id *string, config *FolderConfig) Folder {
 	_init_.Initialize()
 
@@ -490,7 +512,7 @@ func NewFolder(scope constructs.Construct, id *string, config *FolderConfig) Fol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/folder google_folder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/folder google_folder} Resource.
 func NewFolder_Override(f Folder, scope constructs.Construct, id *string, config *FolderConfig) {
 	_init_.Initialize()
 

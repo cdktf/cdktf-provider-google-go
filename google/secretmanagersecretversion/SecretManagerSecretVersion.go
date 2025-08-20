@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version}.
 type SecretManagerSecretVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -78,9 +78,9 @@ type SecretManagerSecretVersion interface {
 	SecretDataWo() *string
 	SetSecretDataWo(val *string)
 	SecretDataWoInput() *string
-	SecretDataWoVersion() *float64
-	SetSecretDataWoVersion(val *float64)
-	SecretDataWoVersionInput() *float64
+	SecretDataWoVersion() *string
+	SetSecretDataWoVersion(val *string)
+	SecretDataWoVersionInput() *string
 	SecretInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -454,8 +454,8 @@ func (j *jsiiProxy_SecretManagerSecretVersion) SecretDataWoInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion) SecretDataWoVersion() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SecretManagerSecretVersion) SecretDataWoVersion() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"secretDataWoVersion",
@@ -464,8 +464,8 @@ func (j *jsiiProxy_SecretManagerSecretVersion) SecretDataWoVersion() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion) SecretDataWoVersionInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SecretManagerSecretVersion) SecretDataWoVersionInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"secretDataWoVersionInput",
@@ -545,7 +545,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource.
 func NewSecretManagerSecretVersion(scope constructs.Construct, id *string, config *SecretManagerSecretVersionConfig) SecretManagerSecretVersion {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewSecretManagerSecretVersion(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource.
 func NewSecretManagerSecretVersion_Override(s SecretManagerSecretVersion, scope constructs.Construct, id *string, config *SecretManagerSecretVersionConfig) {
 	_init_.Initialize()
 
@@ -719,7 +719,7 @@ func (j *jsiiProxy_SecretManagerSecretVersion)SetSecretDataWo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SecretManagerSecretVersion)SetSecretDataWoVersion(val *float64) {
+func (j *jsiiProxy_SecretManagerSecretVersion)SetSecretDataWoVersion(val *string) {
 	if err := j.validateSetSecretDataWoVersionParameters(val); err != nil {
 		panic(err)
 	}

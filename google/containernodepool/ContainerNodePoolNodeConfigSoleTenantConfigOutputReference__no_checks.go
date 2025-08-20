@@ -67,6 +67,10 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigOutputReference) validateSetMinNodeCpusParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

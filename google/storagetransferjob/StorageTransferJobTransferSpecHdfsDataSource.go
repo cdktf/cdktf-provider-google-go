@@ -7,7 +7,7 @@ package storagetransferjob
 type StorageTransferJobTransferSpecHdfsDataSource struct {
 	// Directory path to the filesystem.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
 	Path *string `field:"required" json:"path" yaml:"path"`
 }
 

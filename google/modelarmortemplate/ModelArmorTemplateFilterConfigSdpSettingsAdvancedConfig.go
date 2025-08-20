@@ -15,7 +15,7 @@ type ModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig struct {
 	// e.g.
 	// 'projects/{project}/locations/{location}/deidentifyTemplates/{deidentify_template}'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/model_armor_template#deidentify_template ModelArmorTemplate#deidentify_template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/model_armor_template#deidentify_template ModelArmorTemplate#deidentify_template}
 	DeidentifyTemplate *string `field:"optional" json:"deidentifyTemplate" yaml:"deidentifyTemplate"`
 	// Sensitive Data Protection inspect template resource name If only inspect template is provided (de-identify template not provided), then Sensitive Data Protection InspectContent action is performed during Sanitization.
 	//
@@ -24,7 +24,7 @@ type ModelArmorTemplateFilterConfigSdpSettingsAdvancedConfig struct {
 	// e.g:-
 	// 'projects/{project}/locations/{location}/inspectTemplates/{inspect_template}'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/model_armor_template#inspect_template ModelArmorTemplate#inspect_template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/model_armor_template#inspect_template ModelArmorTemplate#inspect_template}
 	InspectTemplate *string `field:"optional" json:"inspectTemplate" yaml:"inspectTemplate"`
 }
 

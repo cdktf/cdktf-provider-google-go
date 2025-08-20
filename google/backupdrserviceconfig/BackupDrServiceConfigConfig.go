@@ -24,22 +24,22 @@ type BackupDrServiceConfigConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location in which the Service config is to be initialized.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/backup_dr_service_config#location BackupDrServiceConfig#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/backup_dr_service_config#location BackupDrServiceConfig#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The resource type to which the default service config will be applied.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/backup_dr_service_config#resource_type BackupDrServiceConfig#resource_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/backup_dr_service_config#resource_type BackupDrServiceConfig#resource_type}
 	ResourceType *string `field:"required" json:"resourceType" yaml:"resourceType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/backup_dr_service_config#id BackupDrServiceConfig#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/backup_dr_service_config#id BackupDrServiceConfig#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/backup_dr_service_config#project BackupDrServiceConfig#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/backup_dr_service_config#project BackupDrServiceConfig#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/backup_dr_service_config#timeouts BackupDrServiceConfig#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/backup_dr_service_config#timeouts BackupDrServiceConfig#timeouts}
 	Timeouts *BackupDrServiceConfigTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

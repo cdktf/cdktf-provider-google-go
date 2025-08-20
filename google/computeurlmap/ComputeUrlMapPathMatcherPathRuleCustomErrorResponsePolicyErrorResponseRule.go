@@ -13,13 +13,13 @@ type ComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule 
 	//
 	// Values must be unique within matchResponseCodes and across all errorResponseRules of CustomErrorResponsePolicy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/compute_url_map#match_response_codes ComputeUrlMap#match_response_codes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/compute_url_map#match_response_codes ComputeUrlMap#match_response_codes}
 	MatchResponseCodes *[]*string `field:"optional" json:"matchResponseCodes" yaml:"matchResponseCodes"`
 	// The HTTP status code returned with the response containing the custom error content.
 	//
 	// If overrideResponseCode is not supplied, the same response code returned by the original backend bucket or backend service is returned to the client.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/compute_url_map#override_response_code ComputeUrlMap#override_response_code}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/compute_url_map#override_response_code ComputeUrlMap#override_response_code}
 	OverrideResponseCode *float64 `field:"optional" json:"overrideResponseCode" yaml:"overrideResponseCode"`
 	// The full path to a file within backendBucket .
 	//
@@ -28,7 +28,7 @@ type ComputeUrlMapPathMatcherPathRuleCustomErrorResponsePolicyErrorResponseRule 
 	// If the file is not available in backendBucket or the load balancer cannot reach the BackendBucket, a simple Not Found Error is returned to the client.
 	// The value must be from 1 to 1024 characters
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/compute_url_map#path ComputeUrlMap#path}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/compute_url_map#path ComputeUrlMap#path}
 	Path *string `field:"optional" json:"path" yaml:"path"`
 }
 

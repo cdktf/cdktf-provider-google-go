@@ -7,15 +7,15 @@ package eventarcpipeline
 type EventarcPipelineDestinationsOutputPayloadFormat struct {
 	// avro block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/eventarc_pipeline#avro EventarcPipeline#avro}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/eventarc_pipeline#avro EventarcPipeline#avro}
 	Avro *EventarcPipelineDestinationsOutputPayloadFormatAvro `field:"optional" json:"avro" yaml:"avro"`
 	// json block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/eventarc_pipeline#json EventarcPipeline#json}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/eventarc_pipeline#json EventarcPipeline#json}
 	Json *EventarcPipelineDestinationsOutputPayloadFormatJson `field:"optional" json:"json" yaml:"json"`
 	// protobuf block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/eventarc_pipeline#protobuf EventarcPipeline#protobuf}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/eventarc_pipeline#protobuf EventarcPipeline#protobuf}
 	Protobuf *EventarcPipelineDestinationsOutputPayloadFormatProtobuf `field:"optional" json:"protobuf" yaml:"protobuf"`
 }
 

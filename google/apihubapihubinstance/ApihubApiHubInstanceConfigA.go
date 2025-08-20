@@ -13,11 +13,11 @@ type ApihubApiHubInstanceConfigA struct {
 	// where the location must match the instance location.
 	// If the CMEK is not provided, a GMEK will be created for the instance.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/apihub_api_hub_instance#cmek_key_name ApihubApiHubInstance#cmek_key_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/apihub_api_hub_instance#cmek_key_name ApihubApiHubInstance#cmek_key_name}
 	CmekKeyName *string `field:"optional" json:"cmekKeyName" yaml:"cmekKeyName"`
 	// Optional. If true, the search will be disabled for the instance. The default value is false.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/apihub_api_hub_instance#disable_search ApihubApiHubInstance#disable_search}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/apihub_api_hub_instance#disable_search ApihubApiHubInstance#disable_search}
 	DisableSearch interface{} `field:"optional" json:"disableSearch" yaml:"disableSearch"`
 	// Optional.
 	//
@@ -29,11 +29,11 @@ type ApihubApiHubInstanceConfigA struct {
 	// GMEK
 	// CMEK
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/apihub_api_hub_instance#encryption_type ApihubApiHubInstance#encryption_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/apihub_api_hub_instance#encryption_type ApihubApiHubInstance#encryption_type}
 	EncryptionType *string `field:"optional" json:"encryptionType" yaml:"encryptionType"`
 	// Optional. The name of the Vertex AI location where the data store is stored.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/apihub_api_hub_instance#vertex_location ApihubApiHubInstance#vertex_location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/apihub_api_hub_instance#vertex_location ApihubApiHubInstance#vertex_location}
 	VertexLocation *string `field:"optional" json:"vertexLocation" yaml:"vertexLocation"`
 }
 

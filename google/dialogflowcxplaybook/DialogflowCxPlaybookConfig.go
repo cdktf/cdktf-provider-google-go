@@ -24,44 +24,44 @@ type DialogflowCxPlaybookConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The human-readable name of the playbook, unique within an agent.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dialogflow_cx_playbook#display_name DialogflowCxPlaybook#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/dialogflow_cx_playbook#display_name DialogflowCxPlaybook#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// High level description of the goal the playbook intend to accomplish.
 	//
 	// A goal should be concise since it's visible to other playbooks that may reference this playbook.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dialogflow_cx_playbook#goal DialogflowCxPlaybook#goal}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/dialogflow_cx_playbook#goal DialogflowCxPlaybook#goal}
 	Goal *string `field:"required" json:"goal" yaml:"goal"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dialogflow_cx_playbook#id DialogflowCxPlaybook#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/dialogflow_cx_playbook#id DialogflowCxPlaybook#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// instruction block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dialogflow_cx_playbook#instruction DialogflowCxPlaybook#instruction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/dialogflow_cx_playbook#instruction DialogflowCxPlaybook#instruction}
 	Instruction *DialogflowCxPlaybookInstruction `field:"optional" json:"instruction" yaml:"instruction"`
 	// llm_model_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dialogflow_cx_playbook#llm_model_settings DialogflowCxPlaybook#llm_model_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/dialogflow_cx_playbook#llm_model_settings DialogflowCxPlaybook#llm_model_settings}
 	LlmModelSettings *DialogflowCxPlaybookLlmModelSettings `field:"optional" json:"llmModelSettings" yaml:"llmModelSettings"`
 	// The agent to create a Playbook for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dialogflow_cx_playbook#parent DialogflowCxPlaybook#parent}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/dialogflow_cx_playbook#parent DialogflowCxPlaybook#parent}
 	Parent *string `field:"optional" json:"parent" yaml:"parent"`
 	// Type of the playbook. Possible values: ["PLAYBOOK_TYPE_UNSPECIFIED", "TASK", "ROUTINE"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dialogflow_cx_playbook#playbook_type DialogflowCxPlaybook#playbook_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/dialogflow_cx_playbook#playbook_type DialogflowCxPlaybook#playbook_type}
 	PlaybookType *string `field:"optional" json:"playbookType" yaml:"playbookType"`
 	// The resource name of tools referenced by the current playbook in the instructions.
 	//
 	// If not provided explicitly, they are will be implied using the tool being referenced in goal and steps.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dialogflow_cx_playbook#referenced_tools DialogflowCxPlaybook#referenced_tools}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/dialogflow_cx_playbook#referenced_tools DialogflowCxPlaybook#referenced_tools}
 	ReferencedTools *[]*string `field:"optional" json:"referencedTools" yaml:"referencedTools"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/dialogflow_cx_playbook#timeouts DialogflowCxPlaybook#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/dialogflow_cx_playbook#timeouts DialogflowCxPlaybook#timeouts}
 	Timeouts *DialogflowCxPlaybookTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

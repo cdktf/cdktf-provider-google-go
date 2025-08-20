@@ -12,7 +12,7 @@ type VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupPro
 	// need to explicitly call out to that shell. Exit status of 0 is treated as
 	// live/healthy and non-zero is unhealthy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#command VertexAiEndpointWithModelGardenDeployment#command}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/vertex_ai_endpoint_with_model_garden_deployment#command VertexAiEndpointWithModelGardenDeployment#command}
 	Command *[]*string `field:"optional" json:"command" yaml:"command"`
 }
 

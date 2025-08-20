@@ -32,6 +32,9 @@ type ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference interface
 	Fqn() *string
 	InternalValue() *ContainerClusterNodePoolNodeConfigSoleTenantConfig
 	SetInternalValue(val *ContainerClusterNodePoolNodeConfigSoleTenantConfig)
+	MinNodeCpus() *float64
+	SetMinNodeCpus(val *float64)
+	MinNodeCpusInput() *float64
 	NodeAffinity() ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList
 	NodeAffinityInput() interface{}
 	// Experimental.
@@ -67,6 +70,7 @@ type ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutNodeAffinity(value interface{})
+	ResetMinNodeCpus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -127,6 +131,26 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputRefer
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference) MinNodeCpus() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minNodeCpus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference) MinNodeCpusInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minNodeCpusInput",
 		&returns,
 	)
 	return returns
@@ -229,6 +253,17 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputRefer
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference)SetMinNodeCpus(val *float64) {
+	if err := j.validateSetMinNodeCpusParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minNodeCpus",
 		val,
 	)
 }
@@ -449,6 +484,14 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputRefer
 		c,
 		"putNodeAffinity",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference) ResetMinNodeCpus() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMinNodeCpus",
+		nil, // no parameters
 	)
 }
 

@@ -24,11 +24,11 @@ type ModelArmorFloorsettingConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// filter_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/model_armor_floorsetting#filter_config ModelArmorFloorsetting#filter_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/model_armor_floorsetting#filter_config ModelArmorFloorsetting#filter_config}
 	FilterConfig *ModelArmorFloorsettingFilterConfig `field:"required" json:"filterConfig" yaml:"filterConfig"`
 	// Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/model_armor_floorsetting#location ModelArmorFloorsetting#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/model_armor_floorsetting#location ModelArmorFloorsetting#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// Will be any one of these:.
 	//
@@ -36,32 +36,32 @@ type ModelArmorFloorsettingConfig struct {
 	// * 'folders/{folder}'
 	// * 'organizations/{organizationId}'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/model_armor_floorsetting#parent ModelArmorFloorsetting#parent}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/model_armor_floorsetting#parent ModelArmorFloorsetting#parent}
 	Parent *string `field:"required" json:"parent" yaml:"parent"`
 	// ai_platform_floor_setting block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/model_armor_floorsetting#ai_platform_floor_setting ModelArmorFloorsetting#ai_platform_floor_setting}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/model_armor_floorsetting#ai_platform_floor_setting ModelArmorFloorsetting#ai_platform_floor_setting}
 	AiPlatformFloorSetting *ModelArmorFloorsettingAiPlatformFloorSetting `field:"optional" json:"aiPlatformFloorSetting" yaml:"aiPlatformFloorSetting"`
 	// Floor Settings enforcement status.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/model_armor_floorsetting#enable_floor_setting_enforcement ModelArmorFloorsetting#enable_floor_setting_enforcement}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/model_armor_floorsetting#enable_floor_setting_enforcement ModelArmorFloorsetting#enable_floor_setting_enforcement}
 	EnableFloorSettingEnforcement interface{} `field:"optional" json:"enableFloorSettingEnforcement" yaml:"enableFloorSettingEnforcement"`
 	// floor_setting_metadata block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/model_armor_floorsetting#floor_setting_metadata ModelArmorFloorsetting#floor_setting_metadata}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/model_armor_floorsetting#floor_setting_metadata ModelArmorFloorsetting#floor_setting_metadata}
 	FloorSettingMetadata *ModelArmorFloorsettingFloorSettingMetadata `field:"optional" json:"floorSettingMetadata" yaml:"floorSettingMetadata"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/model_armor_floorsetting#id ModelArmorFloorsetting#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/model_armor_floorsetting#id ModelArmorFloorsetting#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// List of integrated services for which the floor setting is applicable.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/model_armor_floorsetting#integrated_services ModelArmorFloorsetting#integrated_services}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/model_armor_floorsetting#integrated_services ModelArmorFloorsetting#integrated_services}
 	IntegratedServices *[]*string `field:"optional" json:"integratedServices" yaml:"integratedServices"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/model_armor_floorsetting#timeouts ModelArmorFloorsetting#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/model_armor_floorsetting#timeouts ModelArmorFloorsetting#timeouts}
 	Timeouts *ModelArmorFloorsettingTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

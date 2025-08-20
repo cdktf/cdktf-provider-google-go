@@ -32,6 +32,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference
 	Fqn() *string
 	InternalValue() *DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfig
 	SetInternalValue(val *DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfig)
+	MinNodeCpus() *float64
 	NodeAffinity() DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList
 	// Experimental.
 	TerraformAttribute() *string
@@ -125,6 +126,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigO
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference) MinNodeCpus() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minNodeCpus",
 		&returns,
 	)
 	return returns

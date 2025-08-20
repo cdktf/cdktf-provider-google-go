@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/storage_insights_dataset_config google_storage_insights_dataset_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/storage_insights_dataset_config google_storage_insights_dataset_config}.
 type StorageInsightsDatasetConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -780,7 +780,7 @@ func (j *jsiiProxy_StorageInsightsDatasetConfig) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/storage_insights_dataset_config google_storage_insights_dataset_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/storage_insights_dataset_config google_storage_insights_dataset_config} Resource.
 func NewStorageInsightsDatasetConfig(scope constructs.Construct, id *string, config *StorageInsightsDatasetConfigConfig) StorageInsightsDatasetConfig {
 	_init_.Initialize()
 
@@ -798,7 +798,7 @@ func NewStorageInsightsDatasetConfig(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/storage_insights_dataset_config google_storage_insights_dataset_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/storage_insights_dataset_config google_storage_insights_dataset_config} Resource.
 func NewStorageInsightsDatasetConfig_Override(s StorageInsightsDatasetConfig, scope constructs.Construct, id *string, config *StorageInsightsDatasetConfigConfig) {
 	_init_.Initialize()
 

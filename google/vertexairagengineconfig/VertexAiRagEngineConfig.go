@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/vertex_ai_rag_engine_config google_vertex_ai_rag_engine_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/vertex_ai_rag_engine_config google_vertex_ai_rag_engine_config}.
 type VertexAiRagEngineConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_VertexAiRagEngineConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/vertex_ai_rag_engine_config google_vertex_ai_rag_engine_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/vertex_ai_rag_engine_config google_vertex_ai_rag_engine_config} Resource.
 func NewVertexAiRagEngineConfig(scope constructs.Construct, id *string, config *VertexAiRagEngineConfigConfig) VertexAiRagEngineConfig {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewVertexAiRagEngineConfig(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.48.0/docs/resources/vertex_ai_rag_engine_config google_vertex_ai_rag_engine_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/vertex_ai_rag_engine_config google_vertex_ai_rag_engine_config} Resource.
 func NewVertexAiRagEngineConfig_Override(v VertexAiRagEngineConfig, scope constructs.Construct, id *string, config *VertexAiRagEngineConfigConfig) {
 	_init_.Initialize()
 

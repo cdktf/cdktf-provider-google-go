@@ -68,7 +68,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAppEngineRoutingOverride", GoMethod: "ResetAppEngineRoutingOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpTarget", GoMethod: "ResetHttpTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRateLimits", GoMethod: "ResetRateLimits"},
