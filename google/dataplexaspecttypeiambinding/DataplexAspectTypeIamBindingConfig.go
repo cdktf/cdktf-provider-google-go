@@ -22,24 +22,24 @@ type DataplexAspectTypeIamBindingConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/dataplex_aspect_type_iam_binding#aspect_type_id DataplexAspectTypeIamBinding#aspect_type_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/dataplex_aspect_type_iam_binding#aspect_type_id DataplexAspectTypeIamBinding#aspect_type_id}.
 	AspectTypeId *string `field:"required" json:"aspectTypeId" yaml:"aspectTypeId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/dataplex_aspect_type_iam_binding#members DataplexAspectTypeIamBinding#members}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/dataplex_aspect_type_iam_binding#members DataplexAspectTypeIamBinding#members}.
 	Members *[]*string `field:"required" json:"members" yaml:"members"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/dataplex_aspect_type_iam_binding#role DataplexAspectTypeIamBinding#role}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/dataplex_aspect_type_iam_binding#role DataplexAspectTypeIamBinding#role}.
 	Role *string `field:"required" json:"role" yaml:"role"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/dataplex_aspect_type_iam_binding#condition DataplexAspectTypeIamBinding#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/dataplex_aspect_type_iam_binding#condition DataplexAspectTypeIamBinding#condition}
 	Condition *DataplexAspectTypeIamBindingCondition `field:"optional" json:"condition" yaml:"condition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/dataplex_aspect_type_iam_binding#id DataplexAspectTypeIamBinding#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/dataplex_aspect_type_iam_binding#id DataplexAspectTypeIamBinding#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/dataplex_aspect_type_iam_binding#location DataplexAspectTypeIamBinding#location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/dataplex_aspect_type_iam_binding#location DataplexAspectTypeIamBinding#location}.
 	Location *string `field:"optional" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/dataplex_aspect_type_iam_binding#project DataplexAspectTypeIamBinding#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/dataplex_aspect_type_iam_binding#project DataplexAspectTypeIamBinding#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

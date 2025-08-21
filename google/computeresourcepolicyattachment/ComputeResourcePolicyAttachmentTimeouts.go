@@ -5,9 +5,9 @@ package computeresourcepolicyattachment
 
 
 type ComputeResourcePolicyAttachmentTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/compute_resource_policy_attachment#create ComputeResourcePolicyAttachment#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/compute_resource_policy_attachment#create ComputeResourcePolicyAttachment#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/compute_resource_policy_attachment#delete ComputeResourcePolicyAttachment#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/compute_resource_policy_attachment#delete ComputeResourcePolicyAttachment#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

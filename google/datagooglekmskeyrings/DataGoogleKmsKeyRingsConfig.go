@@ -24,7 +24,7 @@ type DataGoogleKmsKeyRingsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The canonical id for the location. For example: "us-east1".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/kms_key_rings#location DataGoogleKmsKeyRings#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/kms_key_rings#location DataGoogleKmsKeyRings#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The filter argument is used to add a filter query parameter that limits which keys are retrieved by the data source: ?filter={{filter}}. Example values:.
 	//
@@ -34,16 +34,16 @@ type DataGoogleKmsKeyRingsConfig struct {
 	// [See the documentation about using filters](https://cloud.google.com/kms/docs/sorting-and-filtering)
 	//
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/kms_key_rings#filter DataGoogleKmsKeyRings#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/kms_key_rings#filter DataGoogleKmsKeyRings#filter}
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/kms_key_rings#id DataGoogleKmsKeyRings#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/kms_key_rings#id DataGoogleKmsKeyRings#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Project ID of the project.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/kms_key_rings#project DataGoogleKmsKeyRings#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/kms_key_rings#project DataGoogleKmsKeyRings#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

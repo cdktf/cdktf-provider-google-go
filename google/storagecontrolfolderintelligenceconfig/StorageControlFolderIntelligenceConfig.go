@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config}.
 type StorageControlFolderIntelligenceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_StorageControlFolderIntelligenceConfig) UpdateTime() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config} Resource.
 func NewStorageControlFolderIntelligenceConfig(scope constructs.Construct, id *string, config *StorageControlFolderIntelligenceConfigConfig) StorageControlFolderIntelligenceConfig {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewStorageControlFolderIntelligenceConfig(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config} Resource.
 func NewStorageControlFolderIntelligenceConfig_Override(s StorageControlFolderIntelligenceConfig, scope constructs.Construct, id *string, config *StorageControlFolderIntelligenceConfigConfig) {
 	_init_.Initialize()
 

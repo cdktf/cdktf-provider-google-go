@@ -38,9 +38,9 @@ type BigqueryDataTransferConfigSensitiveParamsOutputReference interface {
 	SecretAccessKeyWo() *string
 	SetSecretAccessKeyWo(val *string)
 	SecretAccessKeyWoInput() *string
-	SecretAccessKeyWoVersion() *string
-	SetSecretAccessKeyWoVersion(val *string)
-	SecretAccessKeyWoVersionInput() *string
+	SecretAccessKeyWoVersion() *float64
+	SetSecretAccessKeyWoVersion(val *float64)
+	SecretAccessKeyWoVersionInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -181,8 +181,8 @@ func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) Sec
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) SecretAccessKeyWoVersion() *string {
-	var returns *string
+func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) SecretAccessKeyWoVersion() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"secretAccessKeyWoVersion",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) Sec
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) SecretAccessKeyWoVersionInput() *string {
-	var returns *string
+func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) SecretAccessKeyWoVersionInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"secretAccessKeyWoVersionInput",
@@ -304,7 +304,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference)SetS
 	)
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference)SetSecretAccessKeyWoVersion(val *string) {
+func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference)SetSecretAccessKeyWoVersion(val *float64) {
 	if err := j.validateSetSecretAccessKeyWoVersionParameters(val); err != nil {
 		panic(err)
 	}

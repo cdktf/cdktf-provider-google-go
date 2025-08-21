@@ -71,7 +71,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) validateSetSecretAccessKeyWoVersionParameters(val *string) error {
+func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) validateSetSecretAccessKeyWoVersionParameters(val *float64) error {
 	return nil
 }
 

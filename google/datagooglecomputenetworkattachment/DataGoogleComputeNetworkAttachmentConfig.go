@@ -26,15 +26,15 @@ type DataGoogleComputeNetworkAttachmentConfig struct {
 	//
 	// Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])? which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/compute_network_attachment#name DataGoogleComputeNetworkAttachment#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/compute_network_attachment#name DataGoogleComputeNetworkAttachment#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// URL of the region where the network attachment resides.
 	//
 	// This field applies only to the region resource. You must specify this field as part of the HTTP request URL. It is not settable as a field in the request body.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/compute_network_attachment#region DataGoogleComputeNetworkAttachment#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/compute_network_attachment#region DataGoogleComputeNetworkAttachment#region}
 	Region *string `field:"required" json:"region" yaml:"region"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/compute_network_attachment#project DataGoogleComputeNetworkAttachment#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/compute_network_attachment#project DataGoogleComputeNetworkAttachment#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

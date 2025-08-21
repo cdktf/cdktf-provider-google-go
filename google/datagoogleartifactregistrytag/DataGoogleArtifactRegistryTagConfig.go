@@ -22,20 +22,20 @@ type DataGoogleArtifactRegistryTagConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/artifact_registry_tag#location DataGoogleArtifactRegistryTag#location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/artifact_registry_tag#location DataGoogleArtifactRegistryTag#location}.
 	Location *string `field:"required" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/artifact_registry_tag#package_name DataGoogleArtifactRegistryTag#package_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/artifact_registry_tag#package_name DataGoogleArtifactRegistryTag#package_name}.
 	PackageName *string `field:"required" json:"packageName" yaml:"packageName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/artifact_registry_tag#repository_id DataGoogleArtifactRegistryTag#repository_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/artifact_registry_tag#repository_id DataGoogleArtifactRegistryTag#repository_id}.
 	RepositoryId *string `field:"required" json:"repositoryId" yaml:"repositoryId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/artifact_registry_tag#tag_name DataGoogleArtifactRegistryTag#tag_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/artifact_registry_tag#tag_name DataGoogleArtifactRegistryTag#tag_name}.
 	TagName *string `field:"required" json:"tagName" yaml:"tagName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/artifact_registry_tag#id DataGoogleArtifactRegistryTag#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/artifact_registry_tag#id DataGoogleArtifactRegistryTag#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/artifact_registry_tag#project DataGoogleArtifactRegistryTag#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/artifact_registry_tag#project DataGoogleArtifactRegistryTag#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

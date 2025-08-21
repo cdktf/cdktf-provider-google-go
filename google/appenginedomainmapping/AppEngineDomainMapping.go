@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/app_engine_domain_mapping google_app_engine_domain_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/app_engine_domain_mapping google_app_engine_domain_mapping}.
 type AppEngineDomainMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_AppEngineDomainMapping) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/app_engine_domain_mapping google_app_engine_domain_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/app_engine_domain_mapping google_app_engine_domain_mapping} Resource.
 func NewAppEngineDomainMapping(scope constructs.Construct, id *string, config *AppEngineDomainMappingConfig) AppEngineDomainMapping {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewAppEngineDomainMapping(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/app_engine_domain_mapping google_app_engine_domain_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/app_engine_domain_mapping google_app_engine_domain_mapping} Resource.
 func NewAppEngineDomainMapping_Override(a AppEngineDomainMapping, scope constructs.Construct, id *string, config *AppEngineDomainMappingConfig) {
 	_init_.Initialize()
 

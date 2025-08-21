@@ -190,7 +190,7 @@ func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) validateSetSecretAccessKeyWoVersionParameters(val *string) error {
+func (j *jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference) validateSetSecretAccessKeyWoVersionParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

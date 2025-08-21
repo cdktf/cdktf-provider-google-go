@@ -22,20 +22,20 @@ type DataGoogleComputeMachineTypesConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/compute_machine_types#filter DataGoogleComputeMachineTypes#filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/compute_machine_types#filter DataGoogleComputeMachineTypes#filter}.
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/compute_machine_types#id DataGoogleComputeMachineTypes#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/compute_machine_types#id DataGoogleComputeMachineTypes#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Project ID for this request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/compute_machine_types#project DataGoogleComputeMachineTypes#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/compute_machine_types#project DataGoogleComputeMachineTypes#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// The name of the zone for this request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/data-sources/compute_machine_types#zone DataGoogleComputeMachineTypes#zone}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/compute_machine_types#zone DataGoogleComputeMachineTypes#zone}
 	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
 

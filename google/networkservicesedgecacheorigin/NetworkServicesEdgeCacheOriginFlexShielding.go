@@ -9,7 +9,7 @@ type NetworkServicesEdgeCacheOriginFlexShielding struct {
 	//
 	// You must specify exactly one FlexShieldingRegion. Possible values: ["AFRICA_SOUTH1", "ME_CENTRAL1"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/network_services_edge_cache_origin#flex_shielding_regions NetworkServicesEdgeCacheOrigin#flex_shielding_regions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/network_services_edge_cache_origin#flex_shielding_regions NetworkServicesEdgeCacheOrigin#flex_shielding_regions}
 	FlexShieldingRegions *[]*string `field:"optional" json:"flexShieldingRegions" yaml:"flexShieldingRegions"`
 }
 

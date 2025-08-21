@@ -10,7 +10,7 @@ type ComputeRegionBackendServiceHaPolicyLeaderNetworkEndpoint struct {
 	// The instance must
 	// already be attached to the NEG specified in the haPolicy.leader.backendGroup.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.0/docs/resources/compute_region_backend_service#instance ComputeRegionBackendService#instance}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/compute_region_backend_service#instance ComputeRegionBackendService#instance}
 	Instance *string `field:"optional" json:"instance" yaml:"instance"`
 }
 
