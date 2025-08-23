@@ -7,7 +7,7 @@ package sccmanagementfoldersecurityhealthanalyticscustommodule
 type SccManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutput struct {
 	// properties block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/scc_management_folder_security_health_analytics_custom_module#properties SccManagementFolderSecurityHealthAnalyticsCustomModule#properties}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/scc_management_folder_security_health_analytics_custom_module#properties SccManagementFolderSecurityHealthAnalyticsCustomModule#properties}
 	Properties interface{} `field:"optional" json:"properties" yaml:"properties"`
 }
 

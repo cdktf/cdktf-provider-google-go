@@ -11,7 +11,7 @@ type ComputeNetworkParams struct {
 	// same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
 	// and values are in the format tagValues/456.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/compute_network#resource_manager_tags ComputeNetwork#resource_manager_tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/compute_network#resource_manager_tags ComputeNetwork#resource_manager_tags}
 	ResourceManagerTags *map[string]*string `field:"optional" json:"resourceManagerTags" yaml:"resourceManagerTags"`
 }
 

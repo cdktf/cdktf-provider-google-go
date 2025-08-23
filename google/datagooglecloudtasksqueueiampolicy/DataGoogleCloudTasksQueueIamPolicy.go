@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/cloud_tasks_queue_iam_policy google_cloud_tasks_queue_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/data-sources/cloud_tasks_queue_iam_policy google_cloud_tasks_queue_iam_policy}.
 type DataGoogleCloudTasksQueueIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataGoogleCloudTasksQueueIamPolicy) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/cloud_tasks_queue_iam_policy google_cloud_tasks_queue_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/data-sources/cloud_tasks_queue_iam_policy google_cloud_tasks_queue_iam_policy} Data Source.
 func NewDataGoogleCloudTasksQueueIamPolicy(scope constructs.Construct, id *string, config *DataGoogleCloudTasksQueueIamPolicyConfig) DataGoogleCloudTasksQueueIamPolicy {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewDataGoogleCloudTasksQueueIamPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/cloud_tasks_queue_iam_policy google_cloud_tasks_queue_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/data-sources/cloud_tasks_queue_iam_policy google_cloud_tasks_queue_iam_policy} Data Source.
 func NewDataGoogleCloudTasksQueueIamPolicy_Override(d DataGoogleCloudTasksQueueIamPolicy, scope constructs.Construct, id *string, config *DataGoogleCloudTasksQueueIamPolicyConfig) {
 	_init_.Initialize()
 

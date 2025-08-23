@@ -7,7 +7,7 @@ package beyondcorpapplication
 type BeyondcorpApplicationUpstreamsEgressPolicy struct {
 	// Required. List of regions where the application sends traffic to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/beyondcorp_application#regions BeyondcorpApplication#regions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/beyondcorp_application#regions BeyondcorpApplication#regions}
 	Regions *[]*string `field:"required" json:"regions" yaml:"regions"`
 }
 

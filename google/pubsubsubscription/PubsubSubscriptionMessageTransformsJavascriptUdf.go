@@ -22,7 +22,7 @@ type PubsubSubscriptionMessageTransformsJavascriptUdf struct {
 	Code *string `field:"required" json:"code" yaml:"code"`
 	// Name of the JavaScript function that should be applied to Pub/Sub messages.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/pubsub_subscription#function_name PubsubSubscription#function_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/pubsub_subscription#function_name PubsubSubscription#function_name}
 	FunctionName *string `field:"required" json:"functionName" yaml:"functionName"`
 }
 

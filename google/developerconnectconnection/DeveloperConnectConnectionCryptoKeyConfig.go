@@ -11,7 +11,7 @@ type DeveloperConnectConnectionCryptoKeyConfig struct {
 	// in Cloud KMS, the key should be in the format of
 	// 'projects/* /locations/* /keyRings/* /cryptoKeys/*'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/developer_connect_connection#key_reference DeveloperConnectConnection#key_reference}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/developer_connect_connection#key_reference DeveloperConnectConnection#key_reference}
 	//
 	// Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 	KeyReference *string `field:"required" json:"keyReference" yaml:"keyReference"`

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/gkeonprem_bare_metal_node_pool google_gkeonprem_bare_metal_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/gkeonprem_bare_metal_node_pool google_gkeonprem_bare_metal_node_pool}.
 type GkeonpremBareMetalNodePool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -597,7 +597,7 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePool) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/gkeonprem_bare_metal_node_pool google_gkeonprem_bare_metal_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/gkeonprem_bare_metal_node_pool google_gkeonprem_bare_metal_node_pool} Resource.
 func NewGkeonpremBareMetalNodePool(scope constructs.Construct, id *string, config *GkeonpremBareMetalNodePoolConfig) GkeonpremBareMetalNodePool {
 	_init_.Initialize()
 
@@ -615,7 +615,7 @@ func NewGkeonpremBareMetalNodePool(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/gkeonprem_bare_metal_node_pool google_gkeonprem_bare_metal_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/gkeonprem_bare_metal_node_pool google_gkeonprem_bare_metal_node_pool} Resource.
 func NewGkeonpremBareMetalNodePool_Override(g GkeonpremBareMetalNodePool, scope constructs.Construct, id *string, config *GkeonpremBareMetalNodePoolConfig) {
 	_init_.Initialize()
 

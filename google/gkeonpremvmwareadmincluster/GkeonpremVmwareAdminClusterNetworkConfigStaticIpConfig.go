@@ -7,7 +7,7 @@ package gkeonpremvmwareadmincluster
 type GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfig struct {
 	// ip_blocks block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/gkeonprem_vmware_admin_cluster#ip_blocks GkeonpremVmwareAdminCluster#ip_blocks}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/gkeonprem_vmware_admin_cluster#ip_blocks GkeonpremVmwareAdminCluster#ip_blocks}
 	IpBlocks interface{} `field:"optional" json:"ipBlocks" yaml:"ipBlocks"`
 }
 

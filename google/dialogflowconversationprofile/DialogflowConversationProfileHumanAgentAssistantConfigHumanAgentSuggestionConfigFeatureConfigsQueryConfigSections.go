@@ -9,7 +9,7 @@ type DialogflowConversationProfileHumanAgentAssistantConfigHumanAgentSuggestionC
 	//
 	// Possible values: ["SECTION_TYPE_UNSPECIFIED", "SITUATION", "ACTION", "RESOLUTION", "REASON_FOR_CANCELLATION", "CUSTOMER_SATISFACTION", "ENTITIES"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/dialogflow_conversation_profile#section_types DialogflowConversationProfile#section_types}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/dialogflow_conversation_profile#section_types DialogflowConversationProfile#section_types}
 	SectionTypes *[]*string `field:"optional" json:"sectionTypes" yaml:"sectionTypes"`
 }
 

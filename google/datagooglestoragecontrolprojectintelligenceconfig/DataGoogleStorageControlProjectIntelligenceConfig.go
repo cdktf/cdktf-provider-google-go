@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/data-sources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config}.
 type DataGoogleStorageControlProjectIntelligenceConfig interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_DataGoogleStorageControlProjectIntelligenceConfig) UpdateTime
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/data-sources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config} Data Source.
 func NewDataGoogleStorageControlProjectIntelligenceConfig(scope constructs.Construct, id *string, config *DataGoogleStorageControlProjectIntelligenceConfigConfig) DataGoogleStorageControlProjectIntelligenceConfig {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewDataGoogleStorageControlProjectIntelligenceConfig(scope constructs.Const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/data-sources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/data-sources/storage_control_project_intelligence_config google_storage_control_project_intelligence_config} Data Source.
 func NewDataGoogleStorageControlProjectIntelligenceConfig_Override(d DataGoogleStorageControlProjectIntelligenceConfig, scope constructs.Construct, id *string, config *DataGoogleStorageControlProjectIntelligenceConfigConfig) {
 	_init_.Initialize()
 

@@ -22,24 +22,24 @@ type IapWebCloudRunServiceIamBindingConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/iap_web_cloud_run_service_iam_binding#cloud_run_service_name IapWebCloudRunServiceIamBinding#cloud_run_service_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/iap_web_cloud_run_service_iam_binding#cloud_run_service_name IapWebCloudRunServiceIamBinding#cloud_run_service_name}.
 	CloudRunServiceName *string `field:"required" json:"cloudRunServiceName" yaml:"cloudRunServiceName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/iap_web_cloud_run_service_iam_binding#members IapWebCloudRunServiceIamBinding#members}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/iap_web_cloud_run_service_iam_binding#members IapWebCloudRunServiceIamBinding#members}.
 	Members *[]*string `field:"required" json:"members" yaml:"members"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/iap_web_cloud_run_service_iam_binding#role IapWebCloudRunServiceIamBinding#role}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/iap_web_cloud_run_service_iam_binding#role IapWebCloudRunServiceIamBinding#role}.
 	Role *string `field:"required" json:"role" yaml:"role"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/iap_web_cloud_run_service_iam_binding#condition IapWebCloudRunServiceIamBinding#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/iap_web_cloud_run_service_iam_binding#condition IapWebCloudRunServiceIamBinding#condition}
 	Condition *IapWebCloudRunServiceIamBindingCondition `field:"optional" json:"condition" yaml:"condition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/iap_web_cloud_run_service_iam_binding#id IapWebCloudRunServiceIamBinding#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/iap_web_cloud_run_service_iam_binding#id IapWebCloudRunServiceIamBinding#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/iap_web_cloud_run_service_iam_binding#location IapWebCloudRunServiceIamBinding#location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/iap_web_cloud_run_service_iam_binding#location IapWebCloudRunServiceIamBinding#location}.
 	Location *string `field:"optional" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/iap_web_cloud_run_service_iam_binding#project IapWebCloudRunServiceIamBinding#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/iap_web_cloud_run_service_iam_binding#project IapWebCloudRunServiceIamBinding#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/compute_network_firewall_policy_with_rules google_compute_network_firewall_policy_with_rules}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/compute_network_firewall_policy_with_rules google_compute_network_firewall_policy_with_rules}.
 type ComputeNetworkFirewallPolicyWithRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -505,7 +505,7 @@ func (j *jsiiProxy_ComputeNetworkFirewallPolicyWithRules) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/compute_network_firewall_policy_with_rules google_compute_network_firewall_policy_with_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/compute_network_firewall_policy_with_rules google_compute_network_firewall_policy_with_rules} Resource.
 func NewComputeNetworkFirewallPolicyWithRules(scope constructs.Construct, id *string, config *ComputeNetworkFirewallPolicyWithRulesConfig) ComputeNetworkFirewallPolicyWithRules {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewComputeNetworkFirewallPolicyWithRules(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/compute_network_firewall_policy_with_rules google_compute_network_firewall_policy_with_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/compute_network_firewall_policy_with_rules google_compute_network_firewall_policy_with_rules} Resource.
 func NewComputeNetworkFirewallPolicyWithRules_Override(c ComputeNetworkFirewallPolicyWithRules, scope constructs.Construct, id *string, config *ComputeNetworkFirewallPolicyWithRulesConfig) {
 	_init_.Initialize()
 

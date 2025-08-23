@@ -10,7 +10,7 @@ type ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilization struct {
 	// Must
 	// be a positive float value. If not defined, the default is 0.8.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/compute_autoscaler#target ComputeAutoscaler#target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/compute_autoscaler#target ComputeAutoscaler#target}
 	Target *float64 `field:"required" json:"target" yaml:"target"`
 }
 

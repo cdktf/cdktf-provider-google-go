@@ -5,11 +5,11 @@ package pubsubschemaiambinding
 
 
 type PubsubSchemaIamBindingCondition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/pubsub_schema_iam_binding#expression PubsubSchemaIamBinding#expression}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/pubsub_schema_iam_binding#expression PubsubSchemaIamBinding#expression}.
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/pubsub_schema_iam_binding#title PubsubSchemaIamBinding#title}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/pubsub_schema_iam_binding#title PubsubSchemaIamBinding#title}.
 	Title *string `field:"required" json:"title" yaml:"title"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/pubsub_schema_iam_binding#description PubsubSchemaIamBinding#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/pubsub_schema_iam_binding#description PubsubSchemaIamBinding#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 

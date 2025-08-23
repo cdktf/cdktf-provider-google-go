@@ -24,19 +24,19 @@ type ClouddeployDeployPolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/clouddeploy_deploy_policy#location ClouddeployDeployPolicy#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/clouddeploy_deploy_policy#location ClouddeployDeployPolicy#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// Name of the 'DeployPolicy'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/clouddeploy_deploy_policy#name ClouddeployDeployPolicy#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/clouddeploy_deploy_policy#name ClouddeployDeployPolicy#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/clouddeploy_deploy_policy#rules ClouddeployDeployPolicy#rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/clouddeploy_deploy_policy#rules ClouddeployDeployPolicy#rules}
 	Rules interface{} `field:"required" json:"rules" yaml:"rules"`
 	// selectors block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/clouddeploy_deploy_policy#selectors ClouddeployDeployPolicy#selectors}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/clouddeploy_deploy_policy#selectors ClouddeployDeployPolicy#selectors}
 	Selectors interface{} `field:"required" json:"selectors" yaml:"selectors"`
 	// User annotations.
 	//
@@ -45,13 +45,13 @@ type ClouddeployDeployPolicyConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 	// Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/clouddeploy_deploy_policy#annotations ClouddeployDeployPolicy#annotations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/clouddeploy_deploy_policy#annotations ClouddeployDeployPolicy#annotations}
 	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
 	// Description of the 'DeployPolicy'. Max length is 255 characters.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/clouddeploy_deploy_policy#description ClouddeployDeployPolicy#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/clouddeploy_deploy_policy#description ClouddeployDeployPolicy#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/clouddeploy_deploy_policy#id ClouddeployDeployPolicy#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/clouddeploy_deploy_policy#id ClouddeployDeployPolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -63,17 +63,17 @@ type ClouddeployDeployPolicyConfig struct {
 	// **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 	// Please refer to the field 'effective_labels' for all of the labels present on the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/clouddeploy_deploy_policy#labels ClouddeployDeployPolicy#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/clouddeploy_deploy_policy#labels ClouddeployDeployPolicy#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/clouddeploy_deploy_policy#project ClouddeployDeployPolicy#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/clouddeploy_deploy_policy#project ClouddeployDeployPolicy#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// When suspended, the policy will not prevent actions from occurring, even if the action violates the policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/clouddeploy_deploy_policy#suspended ClouddeployDeployPolicy#suspended}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/clouddeploy_deploy_policy#suspended ClouddeployDeployPolicy#suspended}
 	Suspended interface{} `field:"optional" json:"suspended" yaml:"suspended"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/clouddeploy_deploy_policy#timeouts ClouddeployDeployPolicy#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/clouddeploy_deploy_policy#timeouts ClouddeployDeployPolicy#timeouts}
 	Timeouts *ClouddeployDeployPolicyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

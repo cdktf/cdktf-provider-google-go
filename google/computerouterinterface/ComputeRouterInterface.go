@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/compute_router_interface google_compute_router_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/compute_router_interface google_compute_router_interface}.
 type ComputeRouterInterface interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -596,7 +596,7 @@ func (j *jsiiProxy_ComputeRouterInterface) VpnTunnelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/compute_router_interface google_compute_router_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/compute_router_interface google_compute_router_interface} Resource.
 func NewComputeRouterInterface(scope constructs.Construct, id *string, config *ComputeRouterInterfaceConfig) ComputeRouterInterface {
 	_init_.Initialize()
 
@@ -614,7 +614,7 @@ func NewComputeRouterInterface(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.1/docs/resources/compute_router_interface google_compute_router_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/compute_router_interface google_compute_router_interface} Resource.
 func NewComputeRouterInterface_Override(c ComputeRouterInterface, scope constructs.Construct, id *string, config *ComputeRouterInterfaceConfig) {
 	_init_.Initialize()
 
