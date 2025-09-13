@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/bigquery_analytics_hub_data_exchange_iam_member google_bigquery_analytics_hub_data_exchange_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/bigquery_analytics_hub_data_exchange_iam_member google_bigquery_analytics_hub_data_exchange_iam_member}.
 type BigqueryAnalyticsHubDataExchangeIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeIamMember) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/bigquery_analytics_hub_data_exchange_iam_member google_bigquery_analytics_hub_data_exchange_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/bigquery_analytics_hub_data_exchange_iam_member google_bigquery_analytics_hub_data_exchange_iam_member} Resource.
 func NewBigqueryAnalyticsHubDataExchangeIamMember(scope constructs.Construct, id *string, config *BigqueryAnalyticsHubDataExchangeIamMemberConfig) BigqueryAnalyticsHubDataExchangeIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewBigqueryAnalyticsHubDataExchangeIamMember(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/bigquery_analytics_hub_data_exchange_iam_member google_bigquery_analytics_hub_data_exchange_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/bigquery_analytics_hub_data_exchange_iam_member google_bigquery_analytics_hub_data_exchange_iam_member} Resource.
 func NewBigqueryAnalyticsHubDataExchangeIamMember_Override(b BigqueryAnalyticsHubDataExchangeIamMember, scope constructs.Construct, id *string, config *BigqueryAnalyticsHubDataExchangeIamMemberConfig) {
 	_init_.Initialize()
 

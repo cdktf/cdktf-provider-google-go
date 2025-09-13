@@ -5,11 +5,11 @@ package storageinsightsdatasetconfig
 
 
 type StorageInsightsDatasetConfigTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/storage_insights_dataset_config#create StorageInsightsDatasetConfig#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/storage_insights_dataset_config#create StorageInsightsDatasetConfig#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/storage_insights_dataset_config#delete StorageInsightsDatasetConfig#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/storage_insights_dataset_config#delete StorageInsightsDatasetConfig#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/storage_insights_dataset_config#update StorageInsightsDatasetConfig#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/storage_insights_dataset_config#update StorageInsightsDatasetConfig#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

@@ -7,7 +7,7 @@ package modelarmorfloorsetting
 type ModelArmorFloorsettingFilterConfigRaiSettings struct {
 	// rai_filters block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/model_armor_floorsetting#rai_filters ModelArmorFloorsetting#rai_filters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/model_armor_floorsetting#rai_filters ModelArmorFloorsetting#rai_filters}
 	RaiFilters interface{} `field:"required" json:"raiFilters" yaml:"raiFilters"`
 }
 

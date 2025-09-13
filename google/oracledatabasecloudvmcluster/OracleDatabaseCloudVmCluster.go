@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster}.
 type OracleDatabaseCloudVmCluster interface {
 	cdktf.TerraformResource
 	BackupOdbSubnet() *string
@@ -722,7 +722,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Resource.
 func NewOracleDatabaseCloudVmCluster(scope constructs.Construct, id *string, config *OracleDatabaseCloudVmClusterConfig) OracleDatabaseCloudVmCluster {
 	_init_.Initialize()
 
@@ -740,7 +740,7 @@ func NewOracleDatabaseCloudVmCluster(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Resource.
 func NewOracleDatabaseCloudVmCluster_Override(o OracleDatabaseCloudVmCluster, scope constructs.Construct, id *string, config *OracleDatabaseCloudVmClusterConfig) {
 	_init_.Initialize()
 

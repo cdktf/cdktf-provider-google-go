@@ -5,11 +5,11 @@ package dialogflowcxwebhook
 
 
 type DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/dialogflow_cx_webhook#key DialogflowCxWebhook#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/dialogflow_cx_webhook#key DialogflowCxWebhook#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
 	// The SecretManager secret version resource storing the header value. Format: 'projects/{project}/secrets/{secret}/versions/{version}'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/dialogflow_cx_webhook#secret_version DialogflowCxWebhook#secret_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/dialogflow_cx_webhook#secret_version DialogflowCxWebhook#secret_version}
 	SecretVersion *string `field:"required" json:"secretVersion" yaml:"secretVersion"`
 }
 

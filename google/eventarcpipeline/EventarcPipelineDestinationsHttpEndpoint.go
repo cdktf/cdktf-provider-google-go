@@ -11,7 +11,7 @@ type EventarcPipelineDestinationsHttpEndpoint struct {
 	// Examples: 'https://svc.us-central1.p.local:8080/route'.
 	// Only the HTTPS protocol is supported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/eventarc_pipeline#uri EventarcPipeline#uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/eventarc_pipeline#uri EventarcPipeline#uri}
 	Uri *string `field:"required" json:"uri" yaml:"uri"`
 	// The CEL expression used to modify how the destination-bound HTTP request is constructed.
 	//
@@ -179,7 +179,7 @@ type EventarcPipelineDestinationsHttpEndpoint struct {
 	// standard CloudEvent format. If it doesn't then the outgoing message
 	// request may fail with a persistent error.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/eventarc_pipeline#message_binding_template EventarcPipeline#message_binding_template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/eventarc_pipeline#message_binding_template EventarcPipeline#message_binding_template}
 	MessageBindingTemplate *string `field:"optional" json:"messageBindingTemplate" yaml:"messageBindingTemplate"`
 }
 

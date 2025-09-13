@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group}.
 type NetworkSecurityMirroringDeploymentGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -574,7 +574,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringDeploymentGroup) UpdateTime() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group} Resource.
 func NewNetworkSecurityMirroringDeploymentGroup(scope constructs.Construct, id *string, config *NetworkSecurityMirroringDeploymentGroupConfig) NetworkSecurityMirroringDeploymentGroup {
 	_init_.Initialize()
 
@@ -592,7 +592,7 @@ func NewNetworkSecurityMirroringDeploymentGroup(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group} Resource.
 func NewNetworkSecurityMirroringDeploymentGroup_Override(n NetworkSecurityMirroringDeploymentGroup, scope constructs.Construct, id *string, config *NetworkSecurityMirroringDeploymentGroupConfig) {
 	_init_.Initialize()
 

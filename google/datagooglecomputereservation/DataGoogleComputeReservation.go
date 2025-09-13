@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/data-sources/compute_reservation google_compute_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/compute_reservation google_compute_reservation}.
 type DataGoogleComputeReservation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -456,7 +456,7 @@ func (j *jsiiProxy_DataGoogleComputeReservation) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/data-sources/compute_reservation google_compute_reservation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/compute_reservation google_compute_reservation} Data Source.
 func NewDataGoogleComputeReservation(scope constructs.Construct, id *string, config *DataGoogleComputeReservationConfig) DataGoogleComputeReservation {
 	_init_.Initialize()
 
@@ -474,7 +474,7 @@ func NewDataGoogleComputeReservation(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/data-sources/compute_reservation google_compute_reservation} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/compute_reservation google_compute_reservation} Data Source.
 func NewDataGoogleComputeReservation_Override(d DataGoogleComputeReservation, scope constructs.Construct, id *string, config *DataGoogleComputeReservationConfig) {
 	_init_.Initialize()
 

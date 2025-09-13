@@ -7,7 +7,7 @@ package apigeeaddonsconfig
 type ApigeeAddonsConfigAddonsConfigMonetizationConfig struct {
 	// Flag that specifies whether the Monetization add-on is enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

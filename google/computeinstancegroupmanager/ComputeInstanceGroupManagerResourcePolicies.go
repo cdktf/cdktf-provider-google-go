@@ -9,7 +9,7 @@ type ComputeInstanceGroupManagerResourcePolicies struct {
 	//
 	// It can be a full or partial URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/compute_instance_group_manager#workload_policy ComputeInstanceGroupManager#workload_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/compute_instance_group_manager#workload_policy ComputeInstanceGroupManager#workload_policy}
 	WorkloadPolicy *string `field:"optional" json:"workloadPolicy" yaml:"workloadPolicy"`
 }
 

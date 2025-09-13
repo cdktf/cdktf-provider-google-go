@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/discovery_engine_target_site google_discovery_engine_target_site}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/discovery_engine_target_site google_discovery_engine_target_site}.
 type DiscoveryEngineTargetSite interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -563,7 +563,7 @@ func (j *jsiiProxy_DiscoveryEngineTargetSite) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/discovery_engine_target_site google_discovery_engine_target_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/discovery_engine_target_site google_discovery_engine_target_site} Resource.
 func NewDiscoveryEngineTargetSite(scope constructs.Construct, id *string, config *DiscoveryEngineTargetSiteConfig) DiscoveryEngineTargetSite {
 	_init_.Initialize()
 
@@ -581,7 +581,7 @@ func NewDiscoveryEngineTargetSite(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/discovery_engine_target_site google_discovery_engine_target_site} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/discovery_engine_target_site google_discovery_engine_target_site} Resource.
 func NewDiscoveryEngineTargetSite_Override(d DiscoveryEngineTargetSite, scope constructs.Construct, id *string, config *DiscoveryEngineTargetSiteConfig) {
 	_init_.Initialize()
 

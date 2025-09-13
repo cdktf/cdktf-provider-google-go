@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/discovery_engine_cmek_config google_discovery_engine_cmek_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/discovery_engine_cmek_config google_discovery_engine_cmek_config}.
 type DiscoveryEngineCmekConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -542,7 +542,7 @@ func (j *jsiiProxy_DiscoveryEngineCmekConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/discovery_engine_cmek_config google_discovery_engine_cmek_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/discovery_engine_cmek_config google_discovery_engine_cmek_config} Resource.
 func NewDiscoveryEngineCmekConfig(scope constructs.Construct, id *string, config *DiscoveryEngineCmekConfigConfig) DiscoveryEngineCmekConfig {
 	_init_.Initialize()
 
@@ -560,7 +560,7 @@ func NewDiscoveryEngineCmekConfig(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/discovery_engine_cmek_config google_discovery_engine_cmek_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/discovery_engine_cmek_config google_discovery_engine_cmek_config} Resource.
 func NewDiscoveryEngineCmekConfig_Override(d DiscoveryEngineCmekConfig, scope constructs.Construct, id *string, config *DiscoveryEngineCmekConfigConfig) {
 	_init_.Initialize()
 

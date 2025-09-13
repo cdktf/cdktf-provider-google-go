@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/pubsub_topic google_pubsub_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/pubsub_topic google_pubsub_topic}.
 type PubsubTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -571,7 +571,7 @@ func (j *jsiiProxy_PubsubTopic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/pubsub_topic google_pubsub_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/pubsub_topic google_pubsub_topic} Resource.
 func NewPubsubTopic(scope constructs.Construct, id *string, config *PubsubTopicConfig) PubsubTopic {
 	_init_.Initialize()
 
@@ -589,7 +589,7 @@ func NewPubsubTopic(scope constructs.Construct, id *string, config *PubsubTopicC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/pubsub_topic google_pubsub_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/pubsub_topic google_pubsub_topic} Resource.
 func NewPubsubTopic_Override(p PubsubTopic, scope constructs.Construct, id *string, config *PubsubTopicConfig) {
 	_init_.Initialize()
 

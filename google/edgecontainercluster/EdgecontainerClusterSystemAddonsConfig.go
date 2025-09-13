@@ -7,7 +7,7 @@ package edgecontainercluster
 type EdgecontainerClusterSystemAddonsConfig struct {
 	// ingress block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/edgecontainer_cluster#ingress EdgecontainerCluster#ingress}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/edgecontainer_cluster#ingress EdgecontainerCluster#ingress}
 	Ingress *EdgecontainerClusterSystemAddonsConfigIngress `field:"optional" json:"ingress" yaml:"ingress"`
 }
 

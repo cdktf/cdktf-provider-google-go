@@ -9,7 +9,7 @@ type VertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestination stru
 	//
 	// When only the project is specified, the Dataset and Table is created. When the full table reference is specified, the Dataset must exist and table must not exist. Accepted forms: - BigQuery path. For example: 'bq://projectId' or 'bq://projectId.bqDatasetId' or 'bq://projectId.bqDatasetId.bqTableId'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/vertex_ai_endpoint#output_uri VertexAiEndpoint#output_uri}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/vertex_ai_endpoint#output_uri VertexAiEndpoint#output_uri}
 	OutputUri *string `field:"optional" json:"outputUri" yaml:"outputUri"`
 }
 

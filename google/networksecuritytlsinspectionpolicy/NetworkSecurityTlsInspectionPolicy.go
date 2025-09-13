@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/network_security_tls_inspection_policy google_network_security_tls_inspection_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/network_security_tls_inspection_policy google_network_security_tls_inspection_policy}.
 type NetworkSecurityTlsInspectionPolicy interface {
 	cdktf.TerraformResource
 	CaPool() *string
@@ -594,7 +594,7 @@ func (j *jsiiProxy_NetworkSecurityTlsInspectionPolicy) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource.
 func NewNetworkSecurityTlsInspectionPolicy(scope constructs.Construct, id *string, config *NetworkSecurityTlsInspectionPolicyConfig) NetworkSecurityTlsInspectionPolicy {
 	_init_.Initialize()
 
@@ -612,7 +612,7 @@ func NewNetworkSecurityTlsInspectionPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource.
 func NewNetworkSecurityTlsInspectionPolicy_Override(n NetworkSecurityTlsInspectionPolicy, scope constructs.Construct, id *string, config *NetworkSecurityTlsInspectionPolicyConfig) {
 	_init_.Initialize()
 

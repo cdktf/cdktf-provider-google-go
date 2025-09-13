@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/chronicle_data_access_label google_chronicle_data_access_label}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/chronicle_data_access_label google_chronicle_data_access_label}.
 type ChronicleDataAccessLabel interface {
 	cdktf.TerraformResource
 	Author() *string
@@ -540,7 +540,7 @@ func (j *jsiiProxy_ChronicleDataAccessLabel) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/chronicle_data_access_label google_chronicle_data_access_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/chronicle_data_access_label google_chronicle_data_access_label} Resource.
 func NewChronicleDataAccessLabel(scope constructs.Construct, id *string, config *ChronicleDataAccessLabelConfig) ChronicleDataAccessLabel {
 	_init_.Initialize()
 
@@ -558,7 +558,7 @@ func NewChronicleDataAccessLabel(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/chronicle_data_access_label google_chronicle_data_access_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/chronicle_data_access_label google_chronicle_data_access_label} Resource.
 func NewChronicleDataAccessLabel_Override(c ChronicleDataAccessLabel, scope constructs.Construct, id *string, config *ChronicleDataAccessLabelConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ type DialogflowConversationProfileHumanAgentAssistantConfigEndUserSuggestionConf
 	//
 	// Format: projects/<Project ID>/locations/<Location ID>/agent.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/dialogflow_conversation_profile#agent DialogflowConversationProfile#agent}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/dialogflow_conversation_profile#agent DialogflowConversationProfile#agent}
 	Agent *string `field:"optional" json:"agent" yaml:"agent"`
 }
 

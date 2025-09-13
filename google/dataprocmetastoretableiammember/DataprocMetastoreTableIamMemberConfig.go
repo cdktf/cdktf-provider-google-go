@@ -22,28 +22,28 @@ type DataprocMetastoreTableIamMemberConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/dataproc_metastore_table_iam_member#database_id DataprocMetastoreTableIamMember#database_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/dataproc_metastore_table_iam_member#database_id DataprocMetastoreTableIamMember#database_id}.
 	DatabaseId *string `field:"required" json:"databaseId" yaml:"databaseId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/dataproc_metastore_table_iam_member#member DataprocMetastoreTableIamMember#member}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/dataproc_metastore_table_iam_member#member DataprocMetastoreTableIamMember#member}.
 	Member *string `field:"required" json:"member" yaml:"member"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/dataproc_metastore_table_iam_member#role DataprocMetastoreTableIamMember#role}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/dataproc_metastore_table_iam_member#role DataprocMetastoreTableIamMember#role}.
 	Role *string `field:"required" json:"role" yaml:"role"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/dataproc_metastore_table_iam_member#service_id DataprocMetastoreTableIamMember#service_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/dataproc_metastore_table_iam_member#service_id DataprocMetastoreTableIamMember#service_id}.
 	ServiceId *string `field:"required" json:"serviceId" yaml:"serviceId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/dataproc_metastore_table_iam_member#table DataprocMetastoreTableIamMember#table}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/dataproc_metastore_table_iam_member#table DataprocMetastoreTableIamMember#table}.
 	Table *string `field:"required" json:"table" yaml:"table"`
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/dataproc_metastore_table_iam_member#condition DataprocMetastoreTableIamMember#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/dataproc_metastore_table_iam_member#condition DataprocMetastoreTableIamMember#condition}
 	Condition *DataprocMetastoreTableIamMemberCondition `field:"optional" json:"condition" yaml:"condition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/dataproc_metastore_table_iam_member#id DataprocMetastoreTableIamMember#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/dataproc_metastore_table_iam_member#id DataprocMetastoreTableIamMember#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/dataproc_metastore_table_iam_member#location DataprocMetastoreTableIamMember#location}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/dataproc_metastore_table_iam_member#location DataprocMetastoreTableIamMember#location}.
 	Location *string `field:"optional" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/resources/dataproc_metastore_table_iam_member#project DataprocMetastoreTableIamMember#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/dataproc_metastore_table_iam_member#project DataprocMetastoreTableIamMember#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/data-sources/firestore_document google_firestore_document}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/firestore_document google_firestore_document}.
 type DataGoogleFirestoreDocument interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_DataGoogleFirestoreDocument) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/data-sources/firestore_document google_firestore_document} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/firestore_document google_firestore_document} Data Source.
 func NewDataGoogleFirestoreDocument(scope constructs.Construct, id *string, config *DataGoogleFirestoreDocumentConfig) DataGoogleFirestoreDocument {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewDataGoogleFirestoreDocument(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/data-sources/firestore_document google_firestore_document} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/firestore_document google_firestore_document} Data Source.
 func NewDataGoogleFirestoreDocument_Override(d DataGoogleFirestoreDocument, scope constructs.Construct, id *string, config *DataGoogleFirestoreDocumentConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/data-sources/cloud_asset_search_all_resources google_cloud_asset_search_all_resources}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/cloud_asset_search_all_resources google_cloud_asset_search_all_resources}.
 type DataGoogleCloudAssetSearchAllResources interface {
 	cdktf.TerraformDataSource
 	AssetTypes() *[]*string
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DataGoogleCloudAssetSearchAllResources) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/data-sources/cloud_asset_search_all_resources google_cloud_asset_search_all_resources} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/cloud_asset_search_all_resources google_cloud_asset_search_all_resources} Data Source.
 func NewDataGoogleCloudAssetSearchAllResources(scope constructs.Construct, id *string, config *DataGoogleCloudAssetSearchAllResourcesConfig) DataGoogleCloudAssetSearchAllResources {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewDataGoogleCloudAssetSearchAllResources(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.2/docs/data-sources/cloud_asset_search_all_resources google_cloud_asset_search_all_resources} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/cloud_asset_search_all_resources google_cloud_asset_search_all_resources} Data Source.
 func NewDataGoogleCloudAssetSearchAllResources_Override(d DataGoogleCloudAssetSearchAllResources, scope constructs.Construct, id *string, config *DataGoogleCloudAssetSearchAllResourcesConfig) {
 	_init_.Initialize()
 
