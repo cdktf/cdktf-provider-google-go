@@ -9,7 +9,7 @@ type StorageTransferJobTransferSpecHttpDataSource struct {
 	//
 	// This file must allow public access. Currently, only URLs with HTTP and HTTPS schemes are supported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/storage_transfer_job#list_url StorageTransferJob#list_url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#list_url StorageTransferJob#list_url}
 	ListUrl *string `field:"required" json:"listUrl" yaml:"listUrl"`
 }
 

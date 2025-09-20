@@ -7,7 +7,7 @@ package memorystoreinstancedesiredusercreatedendpoints
 type MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnections struct {
 	// psc_connection block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/memorystore_instance_desired_user_created_endpoints#psc_connection MemorystoreInstanceDesiredUserCreatedEndpoints#psc_connection}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/memorystore_instance_desired_user_created_endpoints#psc_connection MemorystoreInstanceDesiredUserCreatedEndpoints#psc_connection}
 	PscConnection *MemorystoreInstanceDesiredUserCreatedEndpointsDesiredUserCreatedEndpointsConnectionsPscConnection `field:"optional" json:"pscConnection" yaml:"pscConnection"`
 }
 

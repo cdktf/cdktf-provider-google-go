@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/healthcare_fhir_store_iam_policy google_healthcare_fhir_store_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/healthcare_fhir_store_iam_policy google_healthcare_fhir_store_iam_policy}.
 type DataGoogleHealthcareFhirStoreIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DataGoogleHealthcareFhirStoreIamPolicy) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/healthcare_fhir_store_iam_policy google_healthcare_fhir_store_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/healthcare_fhir_store_iam_policy google_healthcare_fhir_store_iam_policy} Data Source.
 func NewDataGoogleHealthcareFhirStoreIamPolicy(scope constructs.Construct, id *string, config *DataGoogleHealthcareFhirStoreIamPolicyConfig) DataGoogleHealthcareFhirStoreIamPolicy {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewDataGoogleHealthcareFhirStoreIamPolicy(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/healthcare_fhir_store_iam_policy google_healthcare_fhir_store_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/healthcare_fhir_store_iam_policy google_healthcare_fhir_store_iam_policy} Data Source.
 func NewDataGoogleHealthcareFhirStoreIamPolicy_Override(d DataGoogleHealthcareFhirStoreIamPolicy, scope constructs.Construct, id *string, config *DataGoogleHealthcareFhirStoreIamPolicyConfig) {
 	_init_.Initialize()
 

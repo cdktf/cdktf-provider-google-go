@@ -353,6 +353,14 @@ func (j *jsiiProxy_BigtableTableIamPolicy) validateSetInstanceParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_BigtableTableIamPolicy) validateSetInstanceNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BigtableTableIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

@@ -26,34 +26,34 @@ type ApikeysKeyConfig struct {
 	//
 	// The name must be unique within the project, must conform with RFC-1034, is restricted to lower-cased letters, and has a maximum length of 63 characters. In another word, the name must match the regular expression: `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/apikeys_key#name ApikeysKey#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apikeys_key#name ApikeysKey#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Human-readable display name of this API key. Modifiable by user.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/apikeys_key#display_name ApikeysKey#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apikeys_key#display_name ApikeysKey#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/apikeys_key#id ApikeysKey#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apikeys_key#id ApikeysKey#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The project for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/apikeys_key#project ApikeysKey#project}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apikeys_key#project ApikeysKey#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// restrictions block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/apikeys_key#restrictions ApikeysKey#restrictions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apikeys_key#restrictions ApikeysKey#restrictions}
 	Restrictions *ApikeysKeyRestrictions `field:"optional" json:"restrictions" yaml:"restrictions"`
 	// The email of the service account the key is bound to.
 	//
 	// If this field is specified, the key is a service account bound key and auth enabled. See [Documentation](https://cloud.devsite.corp.google.com/docs/authentication/api-keys?#api-keys-bound-sa) for more details.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/apikeys_key#service_account_email ApikeysKey#service_account_email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apikeys_key#service_account_email ApikeysKey#service_account_email}
 	ServiceAccountEmail *string `field:"optional" json:"serviceAccountEmail" yaml:"serviceAccountEmail"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/apikeys_key#timeouts ApikeysKey#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apikeys_key#timeouts ApikeysKey#timeouts}
 	Timeouts *ApikeysKeyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

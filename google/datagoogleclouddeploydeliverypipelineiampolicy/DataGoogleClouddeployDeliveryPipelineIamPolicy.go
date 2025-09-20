@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy}.
 type DataGoogleClouddeployDeliveryPipelineIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataGoogleClouddeployDeliveryPipelineIamPolicy) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy} Data Source.
 func NewDataGoogleClouddeployDeliveryPipelineIamPolicy(scope constructs.Construct, id *string, config *DataGoogleClouddeployDeliveryPipelineIamPolicyConfig) DataGoogleClouddeployDeliveryPipelineIamPolicy {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewDataGoogleClouddeployDeliveryPipelineIamPolicy(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy} Data Source.
 func NewDataGoogleClouddeployDeliveryPipelineIamPolicy_Override(d DataGoogleClouddeployDeliveryPipelineIamPolicy, scope constructs.Construct, id *string, config *DataGoogleClouddeployDeliveryPipelineIamPolicyConfig) {
 	_init_.Initialize()
 

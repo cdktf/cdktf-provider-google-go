@@ -7,31 +7,31 @@ package datastreamconnectionprofile
 type DatastreamConnectionProfileOracleProfile struct {
 	// Database for the Oracle connection.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/datastream_connection_profile#database_service DatastreamConnectionProfile#database_service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/datastream_connection_profile#database_service DatastreamConnectionProfile#database_service}
 	DatabaseService *string `field:"required" json:"databaseService" yaml:"databaseService"`
 	// Hostname for the Oracle connection.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/datastream_connection_profile#hostname DatastreamConnectionProfile#hostname}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/datastream_connection_profile#hostname DatastreamConnectionProfile#hostname}
 	Hostname *string `field:"required" json:"hostname" yaml:"hostname"`
 	// Username for the Oracle connection.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/datastream_connection_profile#username DatastreamConnectionProfile#username}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/datastream_connection_profile#username DatastreamConnectionProfile#username}
 	Username *string `field:"required" json:"username" yaml:"username"`
 	// Connection string attributes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/datastream_connection_profile#connection_attributes DatastreamConnectionProfile#connection_attributes}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/datastream_connection_profile#connection_attributes DatastreamConnectionProfile#connection_attributes}
 	ConnectionAttributes *map[string]*string `field:"optional" json:"connectionAttributes" yaml:"connectionAttributes"`
 	// Password for the Oracle connection.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/datastream_connection_profile#password DatastreamConnectionProfile#password}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/datastream_connection_profile#password DatastreamConnectionProfile#password}
 	Password *string `field:"optional" json:"password" yaml:"password"`
 	// Port for the Oracle connection.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/datastream_connection_profile#port DatastreamConnectionProfile#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/datastream_connection_profile#port DatastreamConnectionProfile#port}
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 	// A reference to a Secret Manager resource name storing the user's password.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/datastream_connection_profile#secret_manager_stored_password DatastreamConnectionProfile#secret_manager_stored_password}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/datastream_connection_profile#secret_manager_stored_password DatastreamConnectionProfile#secret_manager_stored_password}
 	SecretManagerStoredPassword *string `field:"optional" json:"secretManagerStoredPassword" yaml:"secretManagerStoredPassword"`
 }
 

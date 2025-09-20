@@ -111,6 +111,10 @@ func (j *jsiiProxy_BigtableTableIamBinding) validateSetInstanceParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_BigtableTableIamBinding) validateSetInstanceNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BigtableTableIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

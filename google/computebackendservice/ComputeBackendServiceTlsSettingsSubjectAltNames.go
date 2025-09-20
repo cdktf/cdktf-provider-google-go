@@ -7,11 +7,11 @@ package computebackendservice
 type ComputeBackendServiceTlsSettingsSubjectAltNames struct {
 	// The SAN specified as a DNS Name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/compute_backend_service#dns_name ComputeBackendService#dns_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#dns_name ComputeBackendService#dns_name}
 	DnsName *string `field:"optional" json:"dnsName" yaml:"dnsName"`
 	// The SAN specified as a URI.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/compute_backend_service#uniform_resource_identifier ComputeBackendService#uniform_resource_identifier}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#uniform_resource_identifier ComputeBackendService#uniform_resource_identifier}
 	UniformResourceIdentifier *string `field:"optional" json:"uniformResourceIdentifier" yaml:"uniformResourceIdentifier"`
 }
 

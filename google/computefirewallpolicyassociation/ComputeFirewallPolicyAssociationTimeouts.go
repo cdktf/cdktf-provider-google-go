@@ -5,11 +5,11 @@ package computefirewallpolicyassociation
 
 
 type ComputeFirewallPolicyAssociationTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/compute_firewall_policy_association#create ComputeFirewallPolicyAssociation#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_firewall_policy_association#create ComputeFirewallPolicyAssociation#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/compute_firewall_policy_association#delete ComputeFirewallPolicyAssociation#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_firewall_policy_association#delete ComputeFirewallPolicyAssociation#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/compute_firewall_policy_association#update ComputeFirewallPolicyAssociation#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_firewall_policy_association#update ComputeFirewallPolicyAssociation#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

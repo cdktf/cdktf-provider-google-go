@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault}.
 type BackupDrBackupVault interface {
 	cdktf.TerraformResource
 	AccessRestriction() *string
@@ -834,7 +834,7 @@ func (j *jsiiProxy_BackupDrBackupVault) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
 func NewBackupDrBackupVault(scope constructs.Construct, id *string, config *BackupDrBackupVaultConfig) BackupDrBackupVault {
 	_init_.Initialize()
 
@@ -852,7 +852,7 @@ func NewBackupDrBackupVault(scope constructs.Construct, id *string, config *Back
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
 func NewBackupDrBackupVault_Override(b BackupDrBackupVault, scope constructs.Construct, id *string, config *BackupDrBackupVaultConfig) {
 	_init_.Initialize()
 

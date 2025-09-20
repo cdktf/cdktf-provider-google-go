@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/apigee_security_monitoring_condition google_apigee_security_monitoring_condition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_security_monitoring_condition google_apigee_security_monitoring_condition}.
 type ApigeeSecurityMonitoringCondition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -505,7 +505,7 @@ func (j *jsiiProxy_ApigeeSecurityMonitoringCondition) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/apigee_security_monitoring_condition google_apigee_security_monitoring_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_security_monitoring_condition google_apigee_security_monitoring_condition} Resource.
 func NewApigeeSecurityMonitoringCondition(scope constructs.Construct, id *string, config *ApigeeSecurityMonitoringConditionConfig) ApigeeSecurityMonitoringCondition {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewApigeeSecurityMonitoringCondition(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/apigee_security_monitoring_condition google_apigee_security_monitoring_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_security_monitoring_condition google_apigee_security_monitoring_condition} Resource.
 func NewApigeeSecurityMonitoringCondition_Override(a ApigeeSecurityMonitoringCondition, scope constructs.Construct, id *string, config *ApigeeSecurityMonitoringConditionConfig) {
 	_init_.Initialize()
 

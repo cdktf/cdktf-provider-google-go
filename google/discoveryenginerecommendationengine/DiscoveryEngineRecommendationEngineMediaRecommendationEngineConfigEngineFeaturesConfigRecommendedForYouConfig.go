@@ -14,7 +14,7 @@ type DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFea
 	// 'media-complete'. Currently supported for the 'recommended-for-you'
 	// engine. Currently supported values: 'view-home-page', 'generic'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/discovery_engine_recommendation_engine#context_event_type DiscoveryEngineRecommendationEngine#context_event_type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_recommendation_engine#context_event_type DiscoveryEngineRecommendationEngine#context_event_type}
 	ContextEventType *string `field:"optional" json:"contextEventType" yaml:"contextEventType"`
 }
 

@@ -9,15 +9,15 @@ type DatastreamStreamSourceConfigSalesforceSourceConfig struct {
 	//
 	// The interval at which new changes will be polled for each object. The duration must be between 5 minutes and 24 hours.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/datastream_stream#polling_interval DatastreamStream#polling_interval}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/datastream_stream#polling_interval DatastreamStream#polling_interval}
 	PollingInterval *string `field:"required" json:"pollingInterval" yaml:"pollingInterval"`
 	// exclude_objects block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/datastream_stream#exclude_objects DatastreamStream#exclude_objects}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/datastream_stream#exclude_objects DatastreamStream#exclude_objects}
 	ExcludeObjects *DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjects `field:"optional" json:"excludeObjects" yaml:"excludeObjects"`
 	// include_objects block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/datastream_stream#include_objects DatastreamStream#include_objects}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/datastream_stream#include_objects DatastreamStream#include_objects}
 	IncludeObjects *DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjects `field:"optional" json:"includeObjects" yaml:"includeObjects"`
 }
 

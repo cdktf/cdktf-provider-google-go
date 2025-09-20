@@ -24,15 +24,15 @@ type DataGoogleApphubApplicationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Required. The Application identifier.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/apphub_application#application_id DataGoogleApphubApplication#application_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/apphub_application#application_id DataGoogleApphubApplication#application_id}
 	ApplicationId *string `field:"required" json:"applicationId" yaml:"applicationId"`
 	// Part of 'parent'. See documentation of 'projectsId'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/apphub_application#location DataGoogleApphubApplication#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/apphub_application#location DataGoogleApphubApplication#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/apphub_application#project DataGoogleApphubApplication#project}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/apphub_application#project DataGoogleApphubApplication#project}.
 	Project *string `field:"required" json:"project" yaml:"project"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/apphub_application#id DataGoogleApphubApplication#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/apphub_application#id DataGoogleApphubApplication#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

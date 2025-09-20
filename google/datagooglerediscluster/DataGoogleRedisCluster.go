@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster google_redis_cluster}.
 type DataGoogleRedisCluster interface {
 	cdktf.TerraformDataSource
 	AllowFewerZonesDeployment() cdktf.IResolvable
@@ -655,7 +655,7 @@ func (j *jsiiProxy_DataGoogleRedisCluster) ZoneDistributionConfig() DataGoogleRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/redis_cluster google_redis_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster google_redis_cluster} Data Source.
 func NewDataGoogleRedisCluster(scope constructs.Construct, id *string, config *DataGoogleRedisClusterConfig) DataGoogleRedisCluster {
 	_init_.Initialize()
 
@@ -673,7 +673,7 @@ func NewDataGoogleRedisCluster(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/data-sources/redis_cluster google_redis_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster google_redis_cluster} Data Source.
 func NewDataGoogleRedisCluster_Override(d DataGoogleRedisCluster, scope constructs.Construct, id *string, config *DataGoogleRedisClusterConfig) {
 	_init_.Initialize()
 

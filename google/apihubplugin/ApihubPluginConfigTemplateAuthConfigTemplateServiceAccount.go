@@ -10,7 +10,7 @@ type ApihubPluginConfigTemplateAuthConfigTemplateServiceAccount struct {
 	// The 'iam.serviceAccounts.getAccessToken' permission should be granted on
 	// this service account to the impersonator service account.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/apihub_plugin#service_account ApihubPlugin#service_account}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apihub_plugin#service_account ApihubPlugin#service_account}
 	ServiceAccount *string `field:"required" json:"serviceAccount" yaml:"serviceAccount"`
 }
 

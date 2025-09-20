@@ -5,11 +5,11 @@ package computeregionbackendservice
 
 
 type ComputeRegionBackendServiceTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/compute_region_backend_service#create ComputeRegionBackendService#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#create ComputeRegionBackendService#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/compute_region_backend_service#delete ComputeRegionBackendService#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#delete ComputeRegionBackendService#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/compute_region_backend_service#update ComputeRegionBackendService#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#update ComputeRegionBackendService#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

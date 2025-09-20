@@ -9,11 +9,11 @@ type DialogflowCxPlaybookInstructionSteps struct {
 	//
 	// This field uses JSON data as a string. The value provided must be a valid JSON representation documented in [Step](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projects.locations.agents.playbooks#step).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/dialogflow_cx_playbook#steps DialogflowCxPlaybook#steps}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_playbook#steps DialogflowCxPlaybook#steps}
 	Steps *string `field:"optional" json:"steps" yaml:"steps"`
 	// Step instruction in text format.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/dialogflow_cx_playbook#text DialogflowCxPlaybook#text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_playbook#text DialogflowCxPlaybook#text}
 	Text *string `field:"optional" json:"text" yaml:"text"`
 }
 

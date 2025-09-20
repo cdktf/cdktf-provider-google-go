@@ -7,27 +7,27 @@ package containercluster
 type ContainerClusterNodeConfigKubeletConfigEvictionSoft struct {
 	// Defines percentage of soft eviction threshold for imagefs.available.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
 	ImagefsAvailable *string `field:"optional" json:"imagefsAvailable" yaml:"imagefsAvailable"`
 	// Defines percentage of soft eviction threshold for imagefs.inodesFree.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
 	ImagefsInodesFree *string `field:"optional" json:"imagefsInodesFree" yaml:"imagefsInodesFree"`
 	// Defines quantity of soft eviction threshold for memory.available.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
 	MemoryAvailable *string `field:"optional" json:"memoryAvailable" yaml:"memoryAvailable"`
 	// Defines percentage of soft eviction threshold for nodefs.available.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
 	NodefsAvailable *string `field:"optional" json:"nodefsAvailable" yaml:"nodefsAvailable"`
 	// Defines percentage of soft eviction threshold for nodefs.inodesFree.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
 	NodefsInodesFree *string `field:"optional" json:"nodefsInodesFree" yaml:"nodefsInodesFree"`
 	// Defines percentage of soft eviction threshold for pid.available.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.49.3/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
 	PidAvailable *string `field:"optional" json:"pidAvailable" yaml:"pidAvailable"`
 }
 
