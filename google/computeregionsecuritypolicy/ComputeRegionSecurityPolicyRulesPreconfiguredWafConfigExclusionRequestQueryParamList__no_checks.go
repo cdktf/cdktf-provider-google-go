@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusi
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParamList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesPreconfiguredWafConfigExclusionRequestQueryParamList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

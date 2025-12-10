@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesEmptyDirOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadResourcesList) validateGetParameters(
 	return nil
 }
 
-func (a *jsiiProxy_AssuredWorkloadsWorkloadResourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AssuredWorkloadsWorkloadResourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

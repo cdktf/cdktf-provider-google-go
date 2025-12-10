@@ -65,12 +65,12 @@ type CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigOutput
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCertificateAuthorityServiceConfig(value *CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigCertificateAuthorityServiceConfig)
 	ResetCertificateAuthorityServiceConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -426,8 +426,8 @@ func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfigCertificateAuthori
 	return returns
 }
 
-func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -435,7 +435,7 @@ func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfigCertificateAuthori
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -461,8 +461,8 @@ func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfigCertificateAuthori
 	)
 }
 
-func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfigCertificateAuthorityConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -470,7 +470,7 @@ func (c *jsiiProxy_CertificateManagerCertificateIssuanceConfigCertificateAuthori
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

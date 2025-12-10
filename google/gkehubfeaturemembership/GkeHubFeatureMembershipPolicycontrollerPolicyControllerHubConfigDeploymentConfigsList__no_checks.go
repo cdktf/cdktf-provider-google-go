@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubCon
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

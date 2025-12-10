@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerStatusVersionTargetList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerStatusVersionTargetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceGroupManagerStatusVersionTargetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

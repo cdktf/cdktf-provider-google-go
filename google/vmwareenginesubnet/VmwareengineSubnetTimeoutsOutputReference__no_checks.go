@@ -43,11 +43,11 @@ func (v *jsiiProxy_VmwareengineSubnetTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineSubnetTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VmwareengineSubnetTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineSubnetTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareengineSubnetTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

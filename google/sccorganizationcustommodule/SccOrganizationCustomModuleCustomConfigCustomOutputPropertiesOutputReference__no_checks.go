@@ -43,7 +43,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputProperties
 	return nil
 }
 
-func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputProperties
 	return nil
 }
 
-func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputPropertiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAdditionalVariab
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

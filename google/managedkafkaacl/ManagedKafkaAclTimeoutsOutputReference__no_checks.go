@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagedKafkaAclTimeoutsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKafkaAclTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedKafkaAclTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKafkaAclTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedKafkaAclTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

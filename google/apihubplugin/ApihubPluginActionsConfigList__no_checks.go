@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApihubPluginActionsConfigList) validateGetParameters(index *f
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginActionsConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApihubPluginActionsConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

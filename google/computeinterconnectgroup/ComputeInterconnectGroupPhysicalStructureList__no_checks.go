@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureList) validateGetPar
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

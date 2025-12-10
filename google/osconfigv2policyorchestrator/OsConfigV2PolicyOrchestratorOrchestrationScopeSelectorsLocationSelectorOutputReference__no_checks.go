@@ -43,11 +43,11 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsLocati
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsLocationSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsLocationSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsLocationSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsLocationSelectorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

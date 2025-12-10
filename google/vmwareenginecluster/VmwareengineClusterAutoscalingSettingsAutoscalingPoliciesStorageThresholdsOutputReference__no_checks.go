@@ -43,11 +43,11 @@ func (v *jsiiProxy_VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStor
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareengineClusterAutoscalingSettingsAutoscalingPoliciesStorageThresholdsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

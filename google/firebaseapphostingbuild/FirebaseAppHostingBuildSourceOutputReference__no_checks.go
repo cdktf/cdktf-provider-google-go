@@ -43,7 +43,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuildSourceOutputReference) validateGetStri
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBuildSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirebaseAppHostingBuildSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuildSourceOutputReference) validatePutCont
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBuildSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaseAppHostingBuildSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

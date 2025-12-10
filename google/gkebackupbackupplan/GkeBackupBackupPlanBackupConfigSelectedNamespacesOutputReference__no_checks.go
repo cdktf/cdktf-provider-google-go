@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedNamespacesOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

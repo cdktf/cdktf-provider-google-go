@@ -43,7 +43,7 @@ func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesOutputReference) validatePut
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

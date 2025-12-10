@@ -15,7 +15,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicyIngres
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicyIngressFromSourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunIngressPolicyIngressFromSourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

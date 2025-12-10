@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeList) validateGetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

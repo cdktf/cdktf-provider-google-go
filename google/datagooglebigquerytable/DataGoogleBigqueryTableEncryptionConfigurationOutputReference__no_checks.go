@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleBigqueryTableEncryptionConfigurationOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTableEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleBigqueryTableEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTableEncryptionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryTableEncryptionConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

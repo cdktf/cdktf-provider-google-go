@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageInsightsReportConfigTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageInsightsReportConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageInsightsReportConfigTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

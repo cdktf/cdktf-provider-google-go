@@ -15,7 +15,7 @@ func (v *jsiiProxy_VmwareenginePrivateCloudNsxList) validateGetParameters(index 
 	return nil
 }
 
-func (v *jsiiProxy_VmwareenginePrivateCloudNsxList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareenginePrivateCloudNsxList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

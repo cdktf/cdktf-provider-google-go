@@ -43,11 +43,11 @@ func (d *jsiiProxy_DialogflowConversationProfileNewMessageEventNotificationConfi
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowConversationProfileNewMessageEventNotificationConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

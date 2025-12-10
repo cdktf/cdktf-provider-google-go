@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryDockerImagesDockerImagesOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryDockerImagesDockerImagesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleArtifactRegistryDockerImagesDockerImagesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryDockerImagesDockerImagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleArtifactRegistryDockerImagesDockerImagesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

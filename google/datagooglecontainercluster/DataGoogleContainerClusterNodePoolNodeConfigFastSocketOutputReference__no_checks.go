@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigFastSocketOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

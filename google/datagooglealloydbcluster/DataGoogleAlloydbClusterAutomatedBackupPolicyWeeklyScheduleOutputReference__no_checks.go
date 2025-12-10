@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

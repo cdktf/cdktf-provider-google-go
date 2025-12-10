@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatusStatefulList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatusStatefulList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatusStatefulList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

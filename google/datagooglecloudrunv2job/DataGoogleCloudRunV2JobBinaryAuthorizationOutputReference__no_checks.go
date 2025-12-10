@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudRunV2JobBinaryAuthorizationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

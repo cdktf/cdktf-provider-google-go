@@ -83,7 +83,7 @@ type DataprocJobPrestoConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutLoggingConfig(value *DataprocJobPrestoConfigLoggingConfig)
 	ResetClientTags()
 	ResetContinueOnFailure()
@@ -94,7 +94,7 @@ type DataprocJobPrestoConfigOutputReference interface {
 	ResetQueryList()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -636,8 +636,8 @@ func (d *jsiiProxy_DataprocJobPrestoConfigOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (d *jsiiProxy_DataprocJobPrestoConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataprocJobPrestoConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -645,7 +645,7 @@ func (d *jsiiProxy_DataprocJobPrestoConfigOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -719,8 +719,8 @@ func (d *jsiiProxy_DataprocJobPrestoConfigOutputReference) ResetQueryList() {
 	)
 }
 
-func (d *jsiiProxy_DataprocJobPrestoConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataprocJobPrestoConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -728,7 +728,7 @@ func (d *jsiiProxy_DataprocJobPrestoConfigOutputReference) Resolve(_context cdkt
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

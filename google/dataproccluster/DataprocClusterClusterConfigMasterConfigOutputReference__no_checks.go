@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

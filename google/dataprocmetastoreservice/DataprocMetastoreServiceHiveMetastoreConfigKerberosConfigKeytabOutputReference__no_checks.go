@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeyt
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

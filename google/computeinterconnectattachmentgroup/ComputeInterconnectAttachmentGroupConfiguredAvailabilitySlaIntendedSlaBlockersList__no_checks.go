@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIn
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

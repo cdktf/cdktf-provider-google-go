@@ -43,7 +43,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestorAttestationAuthorityNoteOutputRefe
 	return nil
 }
 
-func (b *jsiiProxy_BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BinaryAuthorizationAttestorAttestationAuthorityNoteOutputRefe
 	return nil
 }
 
-func (b *jsiiProxy_BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

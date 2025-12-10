@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionNetworkEndpointGroupPscDataOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkEndpointGroupPscDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionNetworkEndpointGroupPscDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkEndpointGroupPscDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionNetworkEndpointGroupPscDataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

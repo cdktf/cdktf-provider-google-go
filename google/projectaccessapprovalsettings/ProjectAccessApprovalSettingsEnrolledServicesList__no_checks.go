@@ -15,7 +15,7 @@ func (p *jsiiProxy_ProjectAccessApprovalSettingsEnrolledServicesList) validateGe
 	return nil
 }
 
-func (p *jsiiProxy_ProjectAccessApprovalSettingsEnrolledServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectAccessApprovalSettingsEnrolledServicesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

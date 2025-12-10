@@ -15,7 +15,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesList) valid
 	return nil
 }
 
-func (k *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

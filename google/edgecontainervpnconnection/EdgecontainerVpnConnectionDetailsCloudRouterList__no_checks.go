@@ -15,7 +15,7 @@ func (e *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudRouterList) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudRouterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerVpnConnectionDetailsCloudRouterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleRedirectOptionsList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleRedirectOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleRedirectOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

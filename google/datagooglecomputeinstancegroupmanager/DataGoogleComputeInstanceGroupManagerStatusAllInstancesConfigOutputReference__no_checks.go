@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatusAllInstancesConfig
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

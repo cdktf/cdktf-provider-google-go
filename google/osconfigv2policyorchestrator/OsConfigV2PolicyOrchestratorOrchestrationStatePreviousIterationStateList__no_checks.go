@@ -15,7 +15,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterati
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

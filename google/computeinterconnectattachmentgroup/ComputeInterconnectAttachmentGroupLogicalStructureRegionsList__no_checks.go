@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInterconnectAttachmentGroupLogicalStructureRegionsList
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectAttachmentGroupLogicalStructureRegionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectAttachmentGroupLogicalStructureRegionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

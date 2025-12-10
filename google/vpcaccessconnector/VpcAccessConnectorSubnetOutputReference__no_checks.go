@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) validateGetStringMap
 	return nil
 }
 
-func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcAccessConnectorSubnetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

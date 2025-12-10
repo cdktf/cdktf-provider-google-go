@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeNodeTemplateAcceleratorsList) validateGetParameters(in
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeTemplateAcceleratorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeNodeTemplateAcceleratorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapList) validateGetParam
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeNodeGroupShareSettingsProjectMapList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

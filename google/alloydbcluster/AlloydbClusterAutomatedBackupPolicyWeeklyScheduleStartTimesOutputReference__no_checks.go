@@ -43,11 +43,11 @@ func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesOu
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

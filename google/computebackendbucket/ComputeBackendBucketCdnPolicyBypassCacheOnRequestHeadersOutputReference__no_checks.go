@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutpu
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

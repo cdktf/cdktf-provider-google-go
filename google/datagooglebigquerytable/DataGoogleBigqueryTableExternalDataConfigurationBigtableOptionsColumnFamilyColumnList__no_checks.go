@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationBigtableOptio
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

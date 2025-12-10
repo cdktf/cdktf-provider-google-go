@@ -43,7 +43,7 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignmentRolloutOutputReference) validateGet
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigOsPolicyAssignmentRolloutOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OsConfigOsPolicyAssignmentRolloutOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignmentRolloutOutputReference) validatePut
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigOsPolicyAssignmentRolloutOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsConfigOsPolicyAssignmentRolloutOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

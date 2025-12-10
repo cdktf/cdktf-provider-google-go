@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) vali
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (d *jsiiProxy_DnsManagedZonePeeringConfigOutputReference) validateGetString
 	return nil
 }
 
-func (d *jsiiProxy_DnsManagedZonePeeringConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DnsManagedZonePeeringConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DnsManagedZonePeeringConfigOutputReference) validatePutTarget
 	return nil
 }
 
-func (d *jsiiProxy_DnsManagedZonePeeringConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsManagedZonePeeringConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

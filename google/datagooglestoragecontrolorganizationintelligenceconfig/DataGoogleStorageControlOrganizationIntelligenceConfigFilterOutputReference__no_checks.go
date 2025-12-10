@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfigFilterO
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfigFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfigFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfigFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfigFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

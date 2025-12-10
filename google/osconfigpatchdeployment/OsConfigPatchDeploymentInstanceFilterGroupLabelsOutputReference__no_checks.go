@@ -43,11 +43,11 @@ func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReferen
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

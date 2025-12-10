@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesSecretList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesSecretList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

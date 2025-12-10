@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeBackendServiceBackendCustomMetricsList) validateGetPar
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceBackendCustomMetricsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeBackendServiceBackendCustomMetricsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowOutputReference) v
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowOutputReference) v
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyWindowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

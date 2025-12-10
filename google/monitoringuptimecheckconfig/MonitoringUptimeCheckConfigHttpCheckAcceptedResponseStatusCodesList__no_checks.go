@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCod
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanageme
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

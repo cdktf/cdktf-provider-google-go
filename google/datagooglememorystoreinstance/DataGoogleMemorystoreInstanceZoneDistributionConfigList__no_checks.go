@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleMemorystoreInstanceZoneDistributionConfigList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMemorystoreInstanceZoneDistributionConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMemorystoreInstanceZoneDistributionConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

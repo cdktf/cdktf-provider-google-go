@@ -43,7 +43,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolProviderX509OutputReference) validateG
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolProviderX509OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamWorkloadIdentityPoolProviderX509OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolProviderX509OutputReference) validateP
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolProviderX509OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamWorkloadIdentityPoolProviderX509OutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

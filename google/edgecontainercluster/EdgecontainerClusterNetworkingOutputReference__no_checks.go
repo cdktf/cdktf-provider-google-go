@@ -43,11 +43,11 @@ func (e *jsiiProxy_EdgecontainerClusterNetworkingOutputReference) validateGetStr
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterNetworkingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EdgecontainerClusterNetworkingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterNetworkingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerClusterNetworkingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

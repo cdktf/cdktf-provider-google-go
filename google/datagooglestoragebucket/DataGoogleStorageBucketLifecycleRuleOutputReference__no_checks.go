@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleStorageBucketLifecycleRuleOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketLifecycleRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleStorageBucketLifecycleRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketLifecycleRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleStorageBucketLifecycleRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

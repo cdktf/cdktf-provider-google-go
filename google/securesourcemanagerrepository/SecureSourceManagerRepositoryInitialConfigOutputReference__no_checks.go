@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryInitialConfigOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_SecureSourceManagerRepositoryInitialConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecureSourceManagerRepositoryInitialConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecureSourceManagerRepositoryInitialConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecureSourceManagerRepositoryInitialConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

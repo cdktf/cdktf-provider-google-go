@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersTieringPoli
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

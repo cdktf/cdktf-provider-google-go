@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRouterPeerMd5AuthenticationKeyOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterPeerMd5AuthenticationKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRouterPeerMd5AuthenticationKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterPeerMd5AuthenticationKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRouterPeerMd5AuthenticationKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutpu
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

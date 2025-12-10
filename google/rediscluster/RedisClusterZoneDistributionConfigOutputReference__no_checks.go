@@ -43,11 +43,11 @@ func (r *jsiiProxy_RedisClusterZoneDistributionConfigOutputReference) validateGe
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterZoneDistributionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedisClusterZoneDistributionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterZoneDistributionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterZoneDistributionConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

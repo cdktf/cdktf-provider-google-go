@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsPubSubOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

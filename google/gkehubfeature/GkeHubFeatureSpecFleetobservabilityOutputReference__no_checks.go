@@ -43,7 +43,7 @@ func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityOutputReference) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityOutputReference) validateP
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

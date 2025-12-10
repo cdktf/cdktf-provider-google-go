@@ -43,7 +43,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayHubsOutputReference) validateGetStri
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayHubsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayHubsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayHubsOutputReference) validatePutInte
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayHubsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayHubsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

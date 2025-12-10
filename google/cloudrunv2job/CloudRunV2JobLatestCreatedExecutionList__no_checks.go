@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudRunV2JobLatestCreatedExecutionList) validateGetParameter
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2JobLatestCreatedExecutionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2JobLatestCreatedExecutionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

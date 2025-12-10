@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretRotationList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretRotationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretRotationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

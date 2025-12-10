@@ -87,7 +87,7 @@ type ComputeUrlMapDefaultRouteActionCorsPolicyOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAllowCredentials()
 	ResetAllowHeaders()
 	ResetAllowMethods()
@@ -98,7 +98,7 @@ type ComputeUrlMapDefaultRouteActionCorsPolicyOutputReference interface {
 	ResetMaxAge()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -682,8 +682,8 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCorsPolicyOutputReference) Int
 	return returns
 }
 
-func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCorsPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCorsPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -691,7 +691,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCorsPolicyOutputReference) Int
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -762,8 +762,8 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCorsPolicyOutputReference) Res
 	)
 }
 
-func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCorsPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCorsPolicyOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -771,7 +771,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCorsPolicyOutputReference) Res
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

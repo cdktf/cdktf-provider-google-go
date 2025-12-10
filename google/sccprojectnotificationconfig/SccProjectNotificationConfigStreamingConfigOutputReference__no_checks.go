@@ -43,11 +43,11 @@ func (s *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

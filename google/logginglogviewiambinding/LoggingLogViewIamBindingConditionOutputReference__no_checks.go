@@ -43,11 +43,11 @@ func (l *jsiiProxy_LoggingLogViewIamBindingConditionOutputReference) validateGet
 	return nil
 }
 
-func (l *jsiiProxy_LoggingLogViewIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingLogViewIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoggingLogViewIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingLogViewIamBindingConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

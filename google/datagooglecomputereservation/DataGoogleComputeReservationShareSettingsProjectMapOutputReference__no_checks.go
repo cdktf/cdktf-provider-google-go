@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeReservationShareSettingsProjectMapOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservationShareSettingsProjectMapOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeReservationShareSettingsProjectMapOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservationShareSettingsProjectMapOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeReservationShareSettingsProjectMapOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

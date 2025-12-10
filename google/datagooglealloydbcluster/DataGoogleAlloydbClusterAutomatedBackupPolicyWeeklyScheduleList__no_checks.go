@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleLi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

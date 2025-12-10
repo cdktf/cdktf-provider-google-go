@@ -43,11 +43,11 @@ func (f *jsiiProxy_FirestoreBackupScheduleTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreBackupScheduleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirestoreBackupScheduleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreBackupScheduleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirestoreBackupScheduleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

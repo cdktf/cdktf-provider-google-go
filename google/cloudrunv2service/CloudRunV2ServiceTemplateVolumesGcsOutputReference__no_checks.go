@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesGcsOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesGcsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesGcsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesGcsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesGcsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

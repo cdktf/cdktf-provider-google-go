@@ -83,7 +83,7 @@ type DataprocClusterClusterConfigWorkerConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAccelerators(value interface{})
 	PutDiskConfig(value *DataprocClusterClusterConfigWorkerConfigDiskConfig)
 	ResetAccelerators()
@@ -95,7 +95,7 @@ type DataprocClusterClusterConfigWorkerConfigOutputReference interface {
 	ResetNumInstances()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -636,8 +636,8 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) Inte
 	return returns
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -645,7 +645,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) Inte
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -730,8 +730,8 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) Rese
 	)
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -739,7 +739,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigOutputReference) Reso
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

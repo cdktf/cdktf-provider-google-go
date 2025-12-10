@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersionsVersionsOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersionsVersionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersionsVersionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersionsVersionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersionsVersionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

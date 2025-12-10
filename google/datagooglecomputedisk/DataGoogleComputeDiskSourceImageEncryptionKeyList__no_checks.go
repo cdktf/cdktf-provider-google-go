@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeDiskSourceImageEncryptionKeyList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeDiskSourceImageEncryptionKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeDiskSourceImageEncryptionKeyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

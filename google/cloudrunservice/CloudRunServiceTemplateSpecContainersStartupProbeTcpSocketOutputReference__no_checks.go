@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOut
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

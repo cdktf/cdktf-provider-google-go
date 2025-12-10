@@ -43,7 +43,7 @@ func (b *jsiiProxy_BigqueryConnectionCloudSqlOutputReference) validateGetStringM
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionCloudSqlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryConnectionCloudSqlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BigqueryConnectionCloudSqlOutputReference) validatePutCredent
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionCloudSqlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryConnectionCloudSqlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

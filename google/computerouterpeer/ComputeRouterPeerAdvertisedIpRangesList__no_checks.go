@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesList) validateGetParameter
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRouterPeerAdvertisedIpRangesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

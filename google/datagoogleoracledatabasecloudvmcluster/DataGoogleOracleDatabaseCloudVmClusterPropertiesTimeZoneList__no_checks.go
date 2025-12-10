@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneList)
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleOracleDatabaseCloudVmClusterPropertiesTimeZoneList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

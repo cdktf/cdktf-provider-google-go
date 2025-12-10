@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApihubPluginInstanceActionsHubInstanceActionLastExecutionList
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceActionsHubInstanceActionLastExecutionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApihubPluginInstanceActionsHubInstanceActionLastExecutionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

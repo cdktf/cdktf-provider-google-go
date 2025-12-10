@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigErrorsOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfigErrorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigErrorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfigErrorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigErrorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

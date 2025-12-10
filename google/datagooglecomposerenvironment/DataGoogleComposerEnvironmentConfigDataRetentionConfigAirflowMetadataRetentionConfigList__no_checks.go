@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigDataRetentionConfigAirflow
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

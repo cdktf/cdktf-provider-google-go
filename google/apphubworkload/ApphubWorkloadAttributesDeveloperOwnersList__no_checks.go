@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApphubWorkloadAttributesDeveloperOwnersList) validateGetParam
 	return nil
 }
 
-func (a *jsiiProxy_ApphubWorkloadAttributesDeveloperOwnersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApphubWorkloadAttributesDeveloperOwnersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

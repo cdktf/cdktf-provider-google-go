@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesSqlAssertionOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesSqlAssertionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesSqlAssertionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesSqlAssertionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesSqlAssertionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

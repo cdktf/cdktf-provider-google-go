@@ -43,11 +43,11 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesCustomerContactsOut
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

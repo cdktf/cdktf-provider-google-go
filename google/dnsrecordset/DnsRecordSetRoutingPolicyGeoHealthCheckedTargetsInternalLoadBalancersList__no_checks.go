@@ -15,7 +15,7 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadB
 	return nil
 }
 
-func (d *jsiiProxy_DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesRegexExpectationOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

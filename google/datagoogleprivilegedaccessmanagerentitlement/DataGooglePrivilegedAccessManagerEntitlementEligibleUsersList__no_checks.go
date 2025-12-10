@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementEligibleUsersList
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementEligibleUsersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementEligibleUsersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

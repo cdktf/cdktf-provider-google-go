@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeGlobalAddressTimeoutsOutputReference) validateGetStrin
 	return nil
 }
 
-func (c *jsiiProxy_ComputeGlobalAddressTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeGlobalAddressTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeGlobalAddressTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeGlobalAddressTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

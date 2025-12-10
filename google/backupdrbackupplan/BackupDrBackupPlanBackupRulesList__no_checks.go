@@ -15,7 +15,7 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesList) validateGetParameters(inde
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanBackupRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupDrBackupPlanBackupRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

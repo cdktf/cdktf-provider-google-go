@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicyOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

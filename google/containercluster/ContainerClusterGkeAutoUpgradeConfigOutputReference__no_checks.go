@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterGkeAutoUpgradeConfigOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterGkeAutoUpgradeConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterGkeAutoUpgradeConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterGkeAutoUpgradeConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterGkeAutoUpgradeConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

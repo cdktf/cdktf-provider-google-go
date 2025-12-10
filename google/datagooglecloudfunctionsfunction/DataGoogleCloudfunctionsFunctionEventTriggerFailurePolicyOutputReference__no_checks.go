@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

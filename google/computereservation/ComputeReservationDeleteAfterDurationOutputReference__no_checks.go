@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeReservationDeleteAfterDurationOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationDeleteAfterDurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeReservationDeleteAfterDurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationDeleteAfterDurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeReservationDeleteAfterDurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

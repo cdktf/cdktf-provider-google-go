@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeBackupBackupChannelTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupBackupChannelTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeBackupBackupChannelTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupBackupChannelTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeBackupBackupChannelTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

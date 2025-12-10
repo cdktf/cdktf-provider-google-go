@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

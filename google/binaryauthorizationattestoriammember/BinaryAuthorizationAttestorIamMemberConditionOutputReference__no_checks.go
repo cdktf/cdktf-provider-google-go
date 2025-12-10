@@ -43,11 +43,11 @@ func (b *jsiiProxy_BinaryAuthorizationAttestorIamMemberConditionOutputReference)
 	return nil
 }
 
-func (b *jsiiProxy_BinaryAuthorizationAttestorIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BinaryAuthorizationAttestorIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BinaryAuthorizationAttestorIamMemberConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

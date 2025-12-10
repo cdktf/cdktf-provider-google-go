@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecMulticlusteringressOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecMulticlusteringressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecMulticlusteringressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecMulticlusteringressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecMulticlusteringressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventarcGoogleApiSourceTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (e *jsiiProxy_EventarcGoogleApiSourceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventarcGoogleApiSourceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventarcGoogleApiSourceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcGoogleApiSourceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

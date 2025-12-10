@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocMetastoreFederationBackendMetastoresOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederationBackendMetastoresOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocMetastoreFederationBackendMetastoresOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederationBackendMetastoresOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocMetastoreFederationBackendMetastoresOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

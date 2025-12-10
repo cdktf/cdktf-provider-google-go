@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessG
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

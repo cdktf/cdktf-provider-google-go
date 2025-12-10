@@ -15,7 +15,7 @@ func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxIntentTrainingPhrasesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

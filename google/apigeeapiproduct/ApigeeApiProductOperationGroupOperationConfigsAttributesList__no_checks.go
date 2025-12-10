@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigeeApiProductOperationGroupOperationConfigsAttributesList)
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeApiProductOperationGroupOperationConfigsAttributesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeApiProductOperationGroupOperationConfigsAttributesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

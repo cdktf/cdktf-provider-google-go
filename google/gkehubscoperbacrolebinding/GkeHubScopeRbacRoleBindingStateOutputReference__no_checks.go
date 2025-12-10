@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeHubScopeRbacRoleBindingStateOutputReference) validateGetSt
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubScopeRbacRoleBindingStateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeHubScopeRbacRoleBindingStateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubScopeRbacRoleBindingStateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubScopeRbacRoleBindingStateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (k *jsiiProxy_KmsCryptoKeyPrimaryList) validateGetParameters(index *float64
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyPrimaryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsCryptoKeyPrimaryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

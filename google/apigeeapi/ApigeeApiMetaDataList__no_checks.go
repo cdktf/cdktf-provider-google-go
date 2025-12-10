@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigeeApiMetaDataList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeApiMetaDataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeApiMetaDataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeHubMembershipBindingStateList) validateGetParameters(index
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubMembershipBindingStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubMembershipBindingStateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

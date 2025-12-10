@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStopSc
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

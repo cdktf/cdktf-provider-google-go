@@ -85,17 +85,17 @@ func (s *jsiiProxy_SccV2OrganizationSourceIamBindingConditionOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_SccV2OrganizationSourceIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_SccV2OrganizationSourceIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (s *jsiiProxy_SccV2OrganizationSourceIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SccV2OrganizationSourceIamBindingConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

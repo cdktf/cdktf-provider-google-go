@@ -43,7 +43,7 @@ func (b *jsiiProxy_BigqueryTableExternalCatalogTableOptionsOutputReference) vali
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableExternalCatalogTableOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryTableExternalCatalogTableOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BigqueryTableExternalCatalogTableOptionsOutputReference) vali
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableExternalCatalogTableOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryTableExternalCatalogTableOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesScheduledOperationD
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStopTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStopTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStopTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStopTimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

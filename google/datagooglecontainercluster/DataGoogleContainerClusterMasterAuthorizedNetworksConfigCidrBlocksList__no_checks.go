@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrB
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

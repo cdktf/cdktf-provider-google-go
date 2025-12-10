@@ -43,7 +43,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionConfigVariableOutputReference)
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionConfigVariableOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionConfigVariableOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionConfigVariableOutputReference)
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionConfigVariableOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionConfigVariableOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

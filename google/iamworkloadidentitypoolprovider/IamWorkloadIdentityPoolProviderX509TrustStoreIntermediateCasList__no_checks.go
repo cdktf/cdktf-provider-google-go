@@ -15,7 +15,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasL
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamWorkloadIdentityPoolProviderX509TrustStoreIntermediateCasList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

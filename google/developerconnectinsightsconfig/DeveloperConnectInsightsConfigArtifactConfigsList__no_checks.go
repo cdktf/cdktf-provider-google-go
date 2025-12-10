@@ -15,7 +15,7 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

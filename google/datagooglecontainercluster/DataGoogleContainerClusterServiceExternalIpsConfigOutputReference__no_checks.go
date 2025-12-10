@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterServiceExternalIpsConfigOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterServiceExternalIpsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleContainerClusterServiceExternalIpsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterServiceExternalIpsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterServiceExternalIpsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

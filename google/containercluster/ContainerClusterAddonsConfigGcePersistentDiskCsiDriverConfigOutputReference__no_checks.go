@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigO
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

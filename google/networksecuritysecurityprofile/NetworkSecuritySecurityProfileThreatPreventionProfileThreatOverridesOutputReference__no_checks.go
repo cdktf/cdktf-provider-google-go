@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileThreatOv
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollecti
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

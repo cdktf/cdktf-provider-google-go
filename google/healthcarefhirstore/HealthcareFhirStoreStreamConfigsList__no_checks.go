@@ -15,7 +15,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsList) validateGetParameters(i
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

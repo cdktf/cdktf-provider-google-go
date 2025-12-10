@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudRunV2ServiceBinaryAuthorizationOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceBinaryAuthorizationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunV2ServiceBinaryAuthorizationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceBinaryAuthorizationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2ServiceBinaryAuthorizationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) validateG
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableAppProfileStandardIsolationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_EndpointsServiceConsumersIamMemberConditionOutputReference) v
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsServiceConsumersIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EndpointsServiceConsumersIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsServiceConsumersIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EndpointsServiceConsumersIamMemberConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

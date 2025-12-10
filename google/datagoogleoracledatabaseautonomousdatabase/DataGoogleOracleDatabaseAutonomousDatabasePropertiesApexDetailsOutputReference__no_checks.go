@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesApexDetai
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesApexDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesApexDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesApexDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesApexDetailsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

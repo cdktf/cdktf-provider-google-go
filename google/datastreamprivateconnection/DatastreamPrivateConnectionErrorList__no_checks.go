@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatastreamPrivateConnectionErrorList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamPrivateConnectionErrorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamPrivateConnectionErrorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

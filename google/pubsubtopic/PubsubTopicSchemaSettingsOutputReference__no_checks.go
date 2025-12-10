@@ -43,11 +43,11 @@ func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PubsubTopicSchemaSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

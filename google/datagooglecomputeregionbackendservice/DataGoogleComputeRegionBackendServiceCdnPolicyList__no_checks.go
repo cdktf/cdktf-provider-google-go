@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceCdnPolicyList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceCdnPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceCdnPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

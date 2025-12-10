@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApphubApplicationAttributesOperatorOwnersList) validateGetPar
 	return nil
 }
 
-func (a *jsiiProxy_ApphubApplicationAttributesOperatorOwnersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApphubApplicationAttributesOperatorOwnersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

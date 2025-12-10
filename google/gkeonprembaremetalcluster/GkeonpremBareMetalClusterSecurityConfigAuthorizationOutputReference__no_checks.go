@@ -43,7 +43,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterSecurityConfigAuthorizationOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterSecurityConfigAuthorizationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeonpremBareMetalClusterSecurityConfigAuthorizationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterSecurityConfigAuthorizationOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterSecurityConfigAuthorizationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremBareMetalClusterSecurityConfigAuthorizationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

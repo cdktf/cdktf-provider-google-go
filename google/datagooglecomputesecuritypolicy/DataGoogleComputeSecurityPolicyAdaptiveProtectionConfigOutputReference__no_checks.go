@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeSecurityPolicyAdaptiveProtectionConfigOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeSecurityPolicyAdaptiveProtectionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeSecurityPolicyAdaptiveProtectionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeSecurityPolicyAdaptiveProtectionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeSecurityPolicyAdaptiveProtectionConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

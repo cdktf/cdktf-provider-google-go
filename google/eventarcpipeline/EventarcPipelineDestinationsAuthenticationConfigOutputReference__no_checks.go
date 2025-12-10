@@ -43,7 +43,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigOutputReferen
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigOutputReferen
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

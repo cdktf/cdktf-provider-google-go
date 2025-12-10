@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

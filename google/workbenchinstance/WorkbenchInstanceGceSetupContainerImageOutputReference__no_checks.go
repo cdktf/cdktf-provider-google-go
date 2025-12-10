@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) valid
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

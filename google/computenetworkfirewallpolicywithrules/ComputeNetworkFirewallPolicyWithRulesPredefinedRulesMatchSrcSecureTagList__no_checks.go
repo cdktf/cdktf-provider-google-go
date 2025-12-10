@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesPredefinedRulesMatchSrcS
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeNetworkFirewallPolicyWithRulesPredefinedRulesMatchSrcSecureTagList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

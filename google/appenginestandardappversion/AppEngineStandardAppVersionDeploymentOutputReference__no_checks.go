@@ -43,7 +43,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionDeploymentOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineStandardAppVersionDeploymentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppEngineStandardAppVersionDeploymentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionDeploymentOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineStandardAppVersionDeploymentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppEngineStandardAppVersionDeploymentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

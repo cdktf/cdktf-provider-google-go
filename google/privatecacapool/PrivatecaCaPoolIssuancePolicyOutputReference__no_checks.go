@@ -43,7 +43,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateGetStri
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validatePutIden
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

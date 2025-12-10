@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryRepositoryCleanupPoliciesList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryRepositoryCleanupPoliciesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleArtifactRegistryRepositoryCleanupPoliciesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

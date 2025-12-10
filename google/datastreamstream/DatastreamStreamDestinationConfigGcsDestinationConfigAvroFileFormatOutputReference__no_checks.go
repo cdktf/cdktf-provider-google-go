@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatastreamStreamDestinationConfigGcsDestinationConfigAvroFile
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

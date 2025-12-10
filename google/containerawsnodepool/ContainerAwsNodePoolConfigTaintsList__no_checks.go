@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigTaintsList) validateGetParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolConfigTaintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAwsNodePoolConfigTaintsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

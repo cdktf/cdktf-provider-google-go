@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

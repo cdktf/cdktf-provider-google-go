@@ -43,7 +43,7 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesOutputReference) validateGetString
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstanceFileSharesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FilestoreInstanceFileSharesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FilestoreInstanceFileSharesOutputReference) validatePutNfsExp
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstanceFileSharesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FilestoreInstanceFileSharesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

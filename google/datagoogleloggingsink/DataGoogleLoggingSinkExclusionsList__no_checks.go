@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleLoggingSinkExclusionsList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleLoggingSinkExclusionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleLoggingSinkExclusionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

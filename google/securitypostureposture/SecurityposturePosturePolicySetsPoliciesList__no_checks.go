@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesList) validateGetPara
 	return nil
 }
 
-func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityposturePosturePolicySetsPoliciesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

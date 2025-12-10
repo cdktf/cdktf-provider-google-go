@@ -85,17 +85,17 @@ func (c *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputRefe
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

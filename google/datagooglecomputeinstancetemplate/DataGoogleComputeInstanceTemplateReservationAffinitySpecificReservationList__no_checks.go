@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceTemplateReservationAffinitySpecificR
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceTemplateReservationAffinitySpecificReservationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceTemplateReservationAffinitySpecificReservationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleApphubApplicationAttributesEnvironmentList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleApphubApplicationAttributesEnvironmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleApphubApplicationAttributesEnvironmentList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroupManagerStatefulDiskList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroupManagerStatefulDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroupManagerStatefulDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

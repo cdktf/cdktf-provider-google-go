@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference)
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

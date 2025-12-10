@@ -15,7 +15,7 @@ func (s *jsiiProxy_StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudSt
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

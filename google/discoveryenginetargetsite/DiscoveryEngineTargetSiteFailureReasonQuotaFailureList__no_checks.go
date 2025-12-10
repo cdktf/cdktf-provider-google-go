@@ -15,7 +15,7 @@ func (d *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonQuotaFailureList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonQuotaFailureList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonQuotaFailureList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

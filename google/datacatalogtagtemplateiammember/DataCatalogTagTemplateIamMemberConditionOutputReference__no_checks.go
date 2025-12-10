@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCatalogTagTemplateIamMemberConditionOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCatalogTagTemplateIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCatalogTagTemplateIamMemberConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) validat
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerClusterControlPlaneLocalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

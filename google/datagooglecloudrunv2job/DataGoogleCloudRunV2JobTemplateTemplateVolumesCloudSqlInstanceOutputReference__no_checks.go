@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanc
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstanceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

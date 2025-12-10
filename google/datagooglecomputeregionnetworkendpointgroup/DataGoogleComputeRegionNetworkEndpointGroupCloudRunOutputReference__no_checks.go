@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupCloudRunOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupCloudRunOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupCloudRunOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupCloudRunOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupCloudRunOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

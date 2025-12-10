@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeRouterBgpAdvertisedIpRangesList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterBgpAdvertisedIpRangesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRouterBgpAdvertisedIpRangesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

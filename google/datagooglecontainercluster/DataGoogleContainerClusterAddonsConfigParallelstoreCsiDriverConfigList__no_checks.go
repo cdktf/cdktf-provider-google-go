@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverC
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

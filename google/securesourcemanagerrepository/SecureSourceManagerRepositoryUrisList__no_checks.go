@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecureSourceManagerRepositoryUrisList) validateGetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SecureSourceManagerRepositoryUrisList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecureSourceManagerRepositoryUrisList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

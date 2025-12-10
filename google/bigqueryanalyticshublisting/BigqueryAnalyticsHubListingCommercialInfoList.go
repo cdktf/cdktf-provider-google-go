@@ -39,7 +39,7 @@ type BigqueryAnalyticsHubListingCommercialInfoList interface {
 	Get(index *float64) BigqueryAnalyticsHubListingCommercialInfoOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList) Get(index *flo
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoList) Resolve(_conte
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

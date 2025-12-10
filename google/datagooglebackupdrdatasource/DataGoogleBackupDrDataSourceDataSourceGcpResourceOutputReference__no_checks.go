@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSourceDataSourceGcpResourceOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrDataSourceDataSourceGcpResourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleBackupDrDataSourceDataSourceGcpResourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrDataSourceDataSourceGcpResourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBackupDrDataSourceDataSourceGcpResourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

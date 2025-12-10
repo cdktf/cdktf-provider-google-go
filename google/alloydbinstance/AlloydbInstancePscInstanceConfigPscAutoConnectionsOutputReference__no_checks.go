@@ -43,11 +43,11 @@ func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputRefer
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

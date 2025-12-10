@@ -43,7 +43,7 @@ func (p *jsiiProxy_PubsubLiteTopicPartitionConfigOutputReference) validateGetStr
 	return nil
 }
 
-func (p *jsiiProxy_PubsubLiteTopicPartitionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PubsubLiteTopicPartitionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PubsubLiteTopicPartitionConfigOutputReference) validatePutCap
 	return nil
 }
 
-func (p *jsiiProxy_PubsubLiteTopicPartitionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PubsubLiteTopicPartitionConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

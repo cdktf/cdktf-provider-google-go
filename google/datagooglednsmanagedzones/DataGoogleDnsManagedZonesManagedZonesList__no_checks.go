@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

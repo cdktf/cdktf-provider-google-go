@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusio
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

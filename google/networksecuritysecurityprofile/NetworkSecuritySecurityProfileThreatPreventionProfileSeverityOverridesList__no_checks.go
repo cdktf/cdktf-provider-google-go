@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileSeverity
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverridesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

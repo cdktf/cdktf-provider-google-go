@@ -43,11 +43,11 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoffOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoffOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoffOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoffOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesLiveAgentHandoffOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

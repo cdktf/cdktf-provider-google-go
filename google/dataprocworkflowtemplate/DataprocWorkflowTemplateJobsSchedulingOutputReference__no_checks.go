@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsSchedulingOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsSchedulingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsSchedulingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsSchedulingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsSchedulingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

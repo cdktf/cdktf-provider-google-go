@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleMemcacheInstanceMaintenancePolicyList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMemcacheInstanceMaintenancePolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMemcacheInstanceMaintenancePolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

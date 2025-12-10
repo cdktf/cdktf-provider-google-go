@@ -85,17 +85,17 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStanda
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardPredeployOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

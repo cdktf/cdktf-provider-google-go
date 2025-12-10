@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpannerInstancePartitionTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstancePartitionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpannerInstancePartitionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstancePartitionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpannerInstancePartitionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

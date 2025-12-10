@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigMasterAuthorizedNetworksCo
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

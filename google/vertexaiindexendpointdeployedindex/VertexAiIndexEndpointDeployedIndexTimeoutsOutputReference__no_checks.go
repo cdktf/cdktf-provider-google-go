@@ -43,11 +43,11 @@ func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexTimeoutsOutputReference) va
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

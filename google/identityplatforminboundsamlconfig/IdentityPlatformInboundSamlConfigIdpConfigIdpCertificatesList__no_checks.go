@@ -15,7 +15,7 @@ func (i *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

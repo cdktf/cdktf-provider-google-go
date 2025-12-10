@@ -43,7 +43,7 @@ func (c *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestNotebookExecuti
 	return nil
 }
 
-func (c *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestNotebookExecuti
 	return nil
 }
 
-func (c *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

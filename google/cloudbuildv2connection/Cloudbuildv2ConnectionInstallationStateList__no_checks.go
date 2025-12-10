@@ -15,7 +15,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList) validateGetParam
 	return nil
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_Cloudbuildv2ConnectionInstallationStateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

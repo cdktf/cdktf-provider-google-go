@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeNodeGroupShareSettingsOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeGroupShareSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeNodeGroupShareSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ComputeNodeGroupShareSettingsOutputReference) validatePutProj
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeGroupShareSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeNodeGroupShareSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

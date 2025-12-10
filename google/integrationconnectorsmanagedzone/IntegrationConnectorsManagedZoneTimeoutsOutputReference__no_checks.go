@@ -43,11 +43,11 @@ func (i *jsiiProxy_IntegrationConnectorsManagedZoneTimeoutsOutputReference) vali
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsManagedZoneTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationConnectorsManagedZoneTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsManagedZoneTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsManagedZoneTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

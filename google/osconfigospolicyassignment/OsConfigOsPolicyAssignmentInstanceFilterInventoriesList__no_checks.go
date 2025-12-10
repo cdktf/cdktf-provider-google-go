@@ -15,7 +15,7 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList) vali
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInventoriesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

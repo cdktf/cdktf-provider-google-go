@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateNetworkInterfaceAccessConfigList
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateNetworkInterfaceAccessConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateNetworkInterfaceAccessConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

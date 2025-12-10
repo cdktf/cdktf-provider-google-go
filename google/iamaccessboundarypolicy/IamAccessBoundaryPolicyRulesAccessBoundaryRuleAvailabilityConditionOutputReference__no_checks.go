@@ -43,11 +43,11 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityCon
 	return nil
 }
 
-func (i *jsiiProxy_IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

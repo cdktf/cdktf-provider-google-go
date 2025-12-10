@@ -43,11 +43,11 @@ func (d *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonQuotaFailureOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonQuotaFailureOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonQuotaFailureOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonQuotaFailureOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonQuotaFailureOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInterconnectGroupIntentOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectGroupIntentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInterconnectGroupIntentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectGroupIntentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectGroupIntentOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

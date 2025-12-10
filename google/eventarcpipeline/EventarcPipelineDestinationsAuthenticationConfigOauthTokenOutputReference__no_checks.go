@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigOauthTokenOut
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigOauthTokenOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigOauthTokenOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigOauthTokenOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigOauthTokenOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

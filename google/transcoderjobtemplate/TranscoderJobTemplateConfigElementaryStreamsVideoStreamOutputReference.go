@@ -65,12 +65,12 @@ type TranscoderJobTemplateConfigElementaryStreamsVideoStreamOutputReference inte
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutH264(value *TranscoderJobTemplateConfigElementaryStreamsVideoStreamH264)
 	ResetH264()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -426,8 +426,8 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamOutput
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -435,7 +435,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamOutput
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -461,8 +461,8 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamOutput
 	)
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -470,7 +470,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsVideoStreamOutput
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

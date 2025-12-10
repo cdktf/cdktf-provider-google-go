@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

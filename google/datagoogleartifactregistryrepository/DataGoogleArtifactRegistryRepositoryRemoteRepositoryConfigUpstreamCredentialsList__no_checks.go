@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigUps
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

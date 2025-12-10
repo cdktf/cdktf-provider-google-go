@@ -43,11 +43,11 @@ func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) validateGe
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

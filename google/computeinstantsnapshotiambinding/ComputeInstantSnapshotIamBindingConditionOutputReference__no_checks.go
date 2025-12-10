@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInstantSnapshotIamBindingConditionOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstantSnapshotIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstantSnapshotIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstantSnapshotIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstantSnapshotIamBindingConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (v *jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesOutputReferen
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (v *jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesOutputReferen
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiDeploymentResourcePoolDedicatedResourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

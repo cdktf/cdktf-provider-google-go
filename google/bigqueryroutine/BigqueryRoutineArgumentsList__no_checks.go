@@ -15,7 +15,7 @@ func (b *jsiiProxy_BigqueryRoutineArgumentsList) validateGetParameters(index *fl
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryRoutineArgumentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryRoutineArgumentsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

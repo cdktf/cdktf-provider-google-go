@@ -43,7 +43,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

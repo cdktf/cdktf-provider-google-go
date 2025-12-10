@@ -43,7 +43,7 @@ func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutput
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutput
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

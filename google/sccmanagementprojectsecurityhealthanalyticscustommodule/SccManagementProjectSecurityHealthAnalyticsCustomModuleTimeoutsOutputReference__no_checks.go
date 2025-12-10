@@ -43,11 +43,11 @@ func (s *jsiiProxy_SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeou
 	return nil
 }
 
-func (s *jsiiProxy_SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

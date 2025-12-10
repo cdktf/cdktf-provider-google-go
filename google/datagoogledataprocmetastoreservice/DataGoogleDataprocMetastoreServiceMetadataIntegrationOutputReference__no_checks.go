@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceMetadataIntegrationOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceMetadataIntegrationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceMetadataIntegrationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceMetadataIntegrationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceMetadataIntegrationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

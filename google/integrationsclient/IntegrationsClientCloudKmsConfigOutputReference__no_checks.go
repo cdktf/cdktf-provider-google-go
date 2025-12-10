@@ -43,11 +43,11 @@ func (i *jsiiProxy_IntegrationsClientCloudKmsConfigOutputReference) validateGetS
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationsClientCloudKmsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationsClientCloudKmsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationsClientCloudKmsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationsClientCloudKmsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExcl
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

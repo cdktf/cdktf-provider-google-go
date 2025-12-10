@@ -15,7 +15,7 @@ func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) validateG
 	return nil
 }
 
-func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

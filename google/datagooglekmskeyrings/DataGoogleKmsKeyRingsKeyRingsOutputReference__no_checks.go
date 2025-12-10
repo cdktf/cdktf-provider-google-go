@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleKmsKeyRingsKeyRingsOutputReference) validateGetStri
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleKmsKeyRingsKeyRingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleKmsKeyRingsKeyRingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleKmsKeyRingsKeyRingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleKmsKeyRingsKeyRingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

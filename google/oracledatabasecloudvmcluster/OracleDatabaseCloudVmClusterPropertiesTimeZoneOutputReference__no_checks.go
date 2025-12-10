@@ -43,11 +43,11 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

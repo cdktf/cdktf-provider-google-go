@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

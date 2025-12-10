@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsError
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsErrorInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectivityServiceConnectionPolicyPscConnectionsErrorInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

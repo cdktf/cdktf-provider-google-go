@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudRunV2JobTerminalConditionOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2JobTerminalConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunV2JobTerminalConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2JobTerminalConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2JobTerminalConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

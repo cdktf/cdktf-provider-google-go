@@ -43,11 +43,11 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentHandoffConfigLivePerso
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowConversationProfileHumanAgentHandoffConfigLivePersonConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

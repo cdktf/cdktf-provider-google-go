@@ -15,7 +15,7 @@ func (b *jsiiProxy_BigqueryBiReservationPreferredTablesList) validateGetParamete
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryBiReservationPreferredTablesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryBiReservationPreferredTablesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

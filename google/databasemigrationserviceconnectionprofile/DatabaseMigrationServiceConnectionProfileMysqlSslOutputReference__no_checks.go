@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAu
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudioOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudioOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudioOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudioOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

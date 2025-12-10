@@ -85,9 +85,9 @@ func (b *jsiiProxy_BigqueryJobQueryOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (b *jsiiProxy_BigqueryJobQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -168,9 +168,9 @@ func (b *jsiiProxy_BigqueryJobQueryOutputReference) validatePutUserDefinedFuncti
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (b *jsiiProxy_BigqueryJobQueryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

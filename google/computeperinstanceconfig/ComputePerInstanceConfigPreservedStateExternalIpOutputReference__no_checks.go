@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

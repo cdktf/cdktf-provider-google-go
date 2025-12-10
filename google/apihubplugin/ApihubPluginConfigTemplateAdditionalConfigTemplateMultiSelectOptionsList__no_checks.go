@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelect
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateMultiSelectOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

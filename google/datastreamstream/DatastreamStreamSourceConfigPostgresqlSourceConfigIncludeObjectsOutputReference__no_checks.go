@@ -43,7 +43,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObje
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObje
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

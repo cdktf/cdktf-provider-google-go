@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigContentMatchersOutputReference) va
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfigContentMatchersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringUptimeCheckConfigContentMatchersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigContentMatchersOutputReference) va
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfigContentMatchersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringUptimeCheckConfigContentMatchersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

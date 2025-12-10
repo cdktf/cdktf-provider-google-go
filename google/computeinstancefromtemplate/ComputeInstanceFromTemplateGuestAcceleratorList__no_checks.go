@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateGuestAcceleratorList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateGuestAcceleratorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateGuestAcceleratorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList) v
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

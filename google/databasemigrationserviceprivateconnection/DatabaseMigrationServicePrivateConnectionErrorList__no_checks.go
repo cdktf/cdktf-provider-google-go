@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionErrorList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionErrorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionErrorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeRouterNatSubnetworkList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterNatSubnetworkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRouterNatSubnetworkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

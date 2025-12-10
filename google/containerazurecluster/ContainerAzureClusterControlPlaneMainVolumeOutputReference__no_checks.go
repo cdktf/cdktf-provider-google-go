@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneMainVolumeOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterControlPlaneMainVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAzureClusterControlPlaneMainVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterControlPlaneMainVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAzureClusterControlPlaneMainVolumeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateReservationAffinityOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateReservationAffinityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateReservationAffinityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateReservationAffinityOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateReservationAffinityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateReservationAffinityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

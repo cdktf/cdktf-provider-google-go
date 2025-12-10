@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleMemorystoreInstanceEndpointsList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMemorystoreInstanceEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMemorystoreInstanceEndpointsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

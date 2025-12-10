@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigeeDeveloperAttributesList) validateGetParameters(index *f
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeDeveloperAttributesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeDeveloperAttributesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterFleetList) validateGetParameters(ind
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterFleetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremBareMetalClusterFleetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

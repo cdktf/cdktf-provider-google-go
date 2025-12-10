@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalS
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalSsdsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalSsdsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

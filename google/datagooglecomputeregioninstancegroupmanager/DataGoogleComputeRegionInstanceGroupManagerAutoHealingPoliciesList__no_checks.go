@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroupManagerAutoHealingPolicie
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

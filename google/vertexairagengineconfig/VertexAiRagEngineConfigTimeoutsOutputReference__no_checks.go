@@ -43,11 +43,11 @@ func (v *jsiiProxy_VertexAiRagEngineConfigTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiRagEngineConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiRagEngineConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiRagEngineConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiRagEngineConfigTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

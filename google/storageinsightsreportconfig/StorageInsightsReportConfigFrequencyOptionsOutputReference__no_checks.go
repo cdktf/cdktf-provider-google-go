@@ -43,7 +43,7 @@ func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

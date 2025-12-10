@@ -67,14 +67,14 @@ type Cloudfunctions2FunctionBuildConfigSourceOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutRepoSource(value *Cloudfunctions2FunctionBuildConfigSourceRepoSource)
 	PutStorageSource(value *Cloudfunctions2FunctionBuildConfigSourceStorageSource)
 	ResetRepoSource()
 	ResetStorageSource()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -450,8 +450,8 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceOutputReference) Inte
 	return returns
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -459,7 +459,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceOutputReference) Inte
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceOutputReference) Rese
 	)
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceOutputReference) Reso
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventarcPipelineRetryPolicyOutputReference) validateGetString
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineRetryPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventarcPipelineRetryPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineRetryPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcPipelineRetryPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

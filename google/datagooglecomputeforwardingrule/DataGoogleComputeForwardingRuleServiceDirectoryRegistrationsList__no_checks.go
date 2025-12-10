@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsL
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

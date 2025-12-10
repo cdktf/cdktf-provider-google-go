@@ -43,7 +43,7 @@ func (c *jsiiProxy_ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeek
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeek
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddeployDeployPolicyRulesRolloutRestrictionTimeWindowsWeeklyWindowsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

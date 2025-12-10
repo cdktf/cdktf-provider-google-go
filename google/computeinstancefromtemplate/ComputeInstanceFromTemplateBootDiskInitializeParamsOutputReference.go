@@ -103,7 +103,7 @@ type ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference interfac
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutSourceImageEncryptionKey(value *ComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKey)
 	PutSourceSnapshotEncryptionKey(value *ComputeInstanceFromTemplateBootDiskInitializeParamsSourceSnapshotEncryptionKey)
 	ResetArchitecture()
@@ -122,7 +122,7 @@ type ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference interfac
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -870,8 +870,8 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -879,7 +879,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1020,8 +1020,8 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1029,7 +1029,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsOutputRefe
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

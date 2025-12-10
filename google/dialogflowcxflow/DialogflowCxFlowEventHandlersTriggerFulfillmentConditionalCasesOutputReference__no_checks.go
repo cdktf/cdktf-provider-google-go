@@ -43,11 +43,11 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCas
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

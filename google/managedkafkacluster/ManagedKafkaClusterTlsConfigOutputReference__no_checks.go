@@ -43,7 +43,7 @@ func (m *jsiiProxy_ManagedKafkaClusterTlsConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKafkaClusterTlsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedKafkaClusterTlsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_ManagedKafkaClusterTlsConfigOutputReference) validatePutTrust
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKafkaClusterTlsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedKafkaClusterTlsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

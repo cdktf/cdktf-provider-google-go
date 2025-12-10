@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutOut
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeManagedSslCertificateTimeoutsOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ComputeManagedSslCertificateTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeManagedSslCertificateTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeManagedSslCertificateTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeManagedSslCertificateTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

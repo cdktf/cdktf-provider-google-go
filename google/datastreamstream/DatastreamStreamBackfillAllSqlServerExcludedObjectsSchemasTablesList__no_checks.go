@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTab
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

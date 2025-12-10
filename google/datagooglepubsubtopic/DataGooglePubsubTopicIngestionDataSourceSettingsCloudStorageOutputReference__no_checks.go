@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageO
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

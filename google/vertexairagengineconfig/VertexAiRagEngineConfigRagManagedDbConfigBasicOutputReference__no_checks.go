@@ -43,11 +43,11 @@ func (v *jsiiProxy_VertexAiRagEngineConfigRagManagedDbConfigBasicOutputReference
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiRagEngineConfigRagManagedDbConfigBasicOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiRagEngineConfigRagManagedDbConfigBasicOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiRagEngineConfigRagManagedDbConfigBasicOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiRagEngineConfigRagManagedDbConfigBasicOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

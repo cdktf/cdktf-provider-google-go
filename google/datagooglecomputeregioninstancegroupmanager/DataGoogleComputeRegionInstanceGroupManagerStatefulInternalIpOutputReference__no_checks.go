@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroupManagerStatefulInternalIp
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroupManagerStatefulInternalIpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroupManagerStatefulInternalIpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroupManagerStatefulInternalIpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroupManagerStatefulInternalIpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

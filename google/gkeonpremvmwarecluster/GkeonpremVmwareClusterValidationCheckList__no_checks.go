@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterValidationCheckList) validateGetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterValidationCheckList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterValidationCheckList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

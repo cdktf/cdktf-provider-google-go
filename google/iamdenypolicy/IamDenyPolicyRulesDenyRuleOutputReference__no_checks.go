@@ -43,7 +43,7 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) validateGetStringM
 	return nil
 }
 
-func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) validatePutDenialC
 	return nil
 }
 
-func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

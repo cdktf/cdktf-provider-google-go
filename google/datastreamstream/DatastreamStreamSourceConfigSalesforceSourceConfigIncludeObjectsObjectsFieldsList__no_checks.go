@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObje
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

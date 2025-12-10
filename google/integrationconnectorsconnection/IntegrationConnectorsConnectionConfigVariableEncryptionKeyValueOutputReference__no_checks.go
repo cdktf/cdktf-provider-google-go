@@ -43,11 +43,11 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionConfigVariableEncryptionKeyVal
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

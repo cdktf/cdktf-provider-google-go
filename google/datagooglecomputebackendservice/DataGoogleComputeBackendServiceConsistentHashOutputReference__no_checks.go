@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceConsistentHashOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceConsistentHashOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceConsistentHashOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceConsistentHashOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceConsistentHashOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

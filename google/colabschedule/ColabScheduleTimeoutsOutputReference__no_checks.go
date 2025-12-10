@@ -43,11 +43,11 @@ func (c *jsiiProxy_ColabScheduleTimeoutsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (c *jsiiProxy_ColabScheduleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ColabScheduleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ColabScheduleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ColabScheduleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

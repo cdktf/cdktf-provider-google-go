@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocWorkflowTemplateEncryptionConfigOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateEncryptionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateEncryptionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateEncryptionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateEncryptionConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

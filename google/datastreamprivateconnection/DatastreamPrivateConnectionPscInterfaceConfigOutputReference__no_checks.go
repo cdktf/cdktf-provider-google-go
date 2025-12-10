@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatastreamPrivateConnectionPscInterfaceConfigOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamPrivateConnectionPscInterfaceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamPrivateConnectionPscInterfaceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamPrivateConnectionPscInterfaceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamPrivateConnectionPscInterfaceConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

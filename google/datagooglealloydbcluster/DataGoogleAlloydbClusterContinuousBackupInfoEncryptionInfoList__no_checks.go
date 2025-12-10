@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleAlloydbClusterContinuousBackupInfoEncryptionInfoLis
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbClusterContinuousBackupInfoEncryptionInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleAlloydbClusterContinuousBackupInfoEncryptionInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

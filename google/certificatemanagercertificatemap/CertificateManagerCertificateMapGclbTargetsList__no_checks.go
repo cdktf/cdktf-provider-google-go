@@ -15,7 +15,7 @@ func (c *jsiiProxy_CertificateManagerCertificateMapGclbTargetsList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerCertificateMapGclbTargetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CertificateManagerCertificateMapGclbTargetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

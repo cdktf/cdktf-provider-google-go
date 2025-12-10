@@ -73,7 +73,7 @@ type GkeonpremBareMetalClusterLoadBalancerOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutBgpLbConfig(value *GkeonpremBareMetalClusterLoadBalancerBgpLbConfig)
 	PutManualLbConfig(value *GkeonpremBareMetalClusterLoadBalancerManualLbConfig)
 	PutMetalLbConfig(value *GkeonpremBareMetalClusterLoadBalancerMetalLbConfig)
@@ -84,7 +84,7 @@ type GkeonpremBareMetalClusterLoadBalancerOutputReference interface {
 	ResetMetalLbConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -520,8 +520,8 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerOutputReference) Interpo
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -529,7 +529,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerOutputReference) Interpo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -615,8 +615,8 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerOutputReference) ResetMe
 	)
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -624,7 +624,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterLoadBalancerOutputReference) Resolve
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

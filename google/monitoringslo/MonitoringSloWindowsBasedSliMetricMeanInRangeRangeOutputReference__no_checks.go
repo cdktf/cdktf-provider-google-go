@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputRefer
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (r *jsiiProxy_RedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartT
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

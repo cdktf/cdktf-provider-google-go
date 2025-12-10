@@ -15,7 +15,7 @@ func (f *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesD
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDesiredCheckErrorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesDesiredCheckErrorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

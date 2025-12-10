@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionSecretVolumesVersionsList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionSecretVolumesVersionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionSecretVolumesVersionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

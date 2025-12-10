@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetwo
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleAlloydbInstanceNetworkConfigAuthorizedExternalNetworksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigRaiSettingsOutputReference)
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigRaiSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigRaiSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigRaiSettingsOutputReference)
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigRaiSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigRaiSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersList)
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

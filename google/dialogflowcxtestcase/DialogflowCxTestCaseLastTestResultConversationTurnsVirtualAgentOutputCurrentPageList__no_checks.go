@@ -15,7 +15,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAge
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputCurrentPageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsVirtualAgentOutputCurrentPageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

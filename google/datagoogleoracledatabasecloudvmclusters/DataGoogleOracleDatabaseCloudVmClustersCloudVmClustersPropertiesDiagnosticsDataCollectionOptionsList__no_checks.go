@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersPropert
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersPropertiesDiagnosticsDataCollectionOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleOracleDatabaseCloudVmClustersCloudVmClustersPropertiesDiagnosticsDataCollectionOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

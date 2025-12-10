@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterControlPlaneApiServerArgsList) valid
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterControlPlaneApiServerArgsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremBareMetalClusterControlPlaneApiServerArgsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) validatePutRou
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

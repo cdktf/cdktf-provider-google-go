@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhCon
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

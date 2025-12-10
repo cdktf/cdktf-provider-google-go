@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigBootDiskList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigBootDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigBootDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

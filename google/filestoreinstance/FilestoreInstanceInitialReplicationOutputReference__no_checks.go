@@ -43,7 +43,7 @@ func (f *jsiiProxy_FilestoreInstanceInitialReplicationOutputReference) validateG
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstanceInitialReplicationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FilestoreInstanceInitialReplicationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FilestoreInstanceInitialReplicationOutputReference) validateP
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstanceInitialReplicationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FilestoreInstanceInitialReplicationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

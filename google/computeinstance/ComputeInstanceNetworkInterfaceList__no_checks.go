@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInstanceNetworkInterfaceList) validateGetParameters(in
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceNetworkInterfaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceNetworkInterfaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

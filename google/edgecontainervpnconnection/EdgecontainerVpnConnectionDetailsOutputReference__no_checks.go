@@ -43,11 +43,11 @@ func (e *jsiiProxy_EdgecontainerVpnConnectionDetailsOutputReference) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerVpnConnectionDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EdgecontainerVpnConnectionDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerVpnConnectionDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerVpnConnectionDetailsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerNamedPortOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerNamedPortOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerNamedPortOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerNamedPortOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerNamedPortOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

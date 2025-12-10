@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceSecuritySettingsAwsV4Authentic
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceSecuritySettingsAwsV4AuthenticationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceSecuritySettingsAwsV4AuthenticationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

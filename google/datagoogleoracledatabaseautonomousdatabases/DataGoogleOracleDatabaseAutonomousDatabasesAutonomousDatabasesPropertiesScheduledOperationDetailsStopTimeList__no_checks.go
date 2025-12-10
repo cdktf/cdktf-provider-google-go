@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabase
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesPropertiesScheduledOperationDetailsStopTimeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasesAutonomousDatabasesPropertiesScheduledOperationDetailsStopTimeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

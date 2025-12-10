@@ -15,7 +15,7 @@ func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsList) validateGetParamet
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotebooksRuntimeSoftwareConfigKernelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

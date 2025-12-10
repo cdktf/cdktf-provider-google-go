@@ -15,7 +15,7 @@ func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsList) validateGetParamet
 	return nil
 }
 
-func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingFolderBucketConfigIndexConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

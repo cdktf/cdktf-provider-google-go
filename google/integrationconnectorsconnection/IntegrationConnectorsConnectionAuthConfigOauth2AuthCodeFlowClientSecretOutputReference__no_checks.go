@@ -43,11 +43,11 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowCl
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

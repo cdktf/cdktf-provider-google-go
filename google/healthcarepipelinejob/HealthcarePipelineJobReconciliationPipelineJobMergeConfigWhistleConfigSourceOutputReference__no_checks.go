@@ -43,11 +43,11 @@ func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigWhis
 	return nil
 }
 
-func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HealthcarePipelineJobReconciliationPipelineJobMergeConfigWhistleConfigSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

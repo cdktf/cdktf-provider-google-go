@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfoDimensionsInfosOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfoDimensionsInfosOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfoDimensionsInfosOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfoDimensionsInfosOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfoDimensionsInfosOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

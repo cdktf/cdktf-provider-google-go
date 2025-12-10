@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudSchedulerJobHttpTargetOidcTokenOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CloudSchedulerJobHttpTargetOidcTokenOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudSchedulerJobHttpTargetOidcTokenOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudSchedulerJobHttpTargetOidcTokenOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudSchedulerJobHttpTargetOidcTokenOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

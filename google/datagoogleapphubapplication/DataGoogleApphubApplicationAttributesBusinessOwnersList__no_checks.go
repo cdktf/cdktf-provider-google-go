@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleApphubApplicationAttributesBusinessOwnersList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleApphubApplicationAttributesBusinessOwnersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleApphubApplicationAttributesBusinessOwnersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

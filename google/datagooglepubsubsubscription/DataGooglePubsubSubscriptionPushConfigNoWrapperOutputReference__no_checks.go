@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

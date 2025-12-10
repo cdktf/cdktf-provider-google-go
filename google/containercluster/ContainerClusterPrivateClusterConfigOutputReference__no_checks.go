@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

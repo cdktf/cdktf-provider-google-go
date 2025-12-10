@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectRetentionList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketObjectRetentionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleStorageBucketObjectRetentionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

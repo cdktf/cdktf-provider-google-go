@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigMaintenanceWindowList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigMaintenanceWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigMaintenanceWindowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

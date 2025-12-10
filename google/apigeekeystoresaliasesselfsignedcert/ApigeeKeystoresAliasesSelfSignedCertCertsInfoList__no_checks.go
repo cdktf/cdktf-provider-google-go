@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertCertsInfoList) validateGe
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertCertsInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertCertsInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

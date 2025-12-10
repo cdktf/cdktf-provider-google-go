@@ -43,11 +43,11 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigUserPasswordPassword
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

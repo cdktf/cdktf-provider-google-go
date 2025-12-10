@@ -43,11 +43,11 @@ func (l *jsiiProxy_LoggingFolderSinkBigqueryOptionsOutputReference) validateGetS
 	return nil
 }
 
-func (l *jsiiProxy_LoggingFolderSinkBigqueryOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingFolderSinkBigqueryOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoggingFolderSinkBigqueryOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingFolderSinkBigqueryOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

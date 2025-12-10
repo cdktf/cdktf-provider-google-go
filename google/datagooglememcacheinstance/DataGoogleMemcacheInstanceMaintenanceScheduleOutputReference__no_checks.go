@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleMemcacheInstanceMaintenanceScheduleOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMemcacheInstanceMaintenanceScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleMemcacheInstanceMaintenanceScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMemcacheInstanceMaintenanceScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMemcacheInstanceMaintenanceScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

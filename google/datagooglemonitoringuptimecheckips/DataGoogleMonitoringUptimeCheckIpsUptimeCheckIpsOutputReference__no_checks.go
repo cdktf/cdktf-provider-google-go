@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

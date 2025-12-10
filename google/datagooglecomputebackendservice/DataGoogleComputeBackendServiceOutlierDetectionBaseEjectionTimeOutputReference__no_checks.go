@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceOutlierDetectionBaseEjectionTi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

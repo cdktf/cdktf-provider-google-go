@@ -15,7 +15,7 @@ func (t *jsiiProxy_TranscoderJobConfigMuxStreamsList) validateGetParameters(inde
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigMuxStreamsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobConfigMuxStreamsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

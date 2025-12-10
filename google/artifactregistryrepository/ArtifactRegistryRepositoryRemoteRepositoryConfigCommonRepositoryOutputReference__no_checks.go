@@ -43,11 +43,11 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigCommonReposit
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

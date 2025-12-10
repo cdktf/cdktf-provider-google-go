@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerAzureNodePoolConfigAOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureNodePoolConfigAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAzureNodePoolConfigAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_ContainerAzureNodePoolConfigAOutputReference) validatePutSshC
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureNodePoolConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAzureNodePoolConfigAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

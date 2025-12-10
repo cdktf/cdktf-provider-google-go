@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsMaintenanceWindowList) v
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsMaintenanceWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsMaintenanceWindowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

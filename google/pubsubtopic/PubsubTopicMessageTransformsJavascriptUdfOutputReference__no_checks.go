@@ -43,11 +43,11 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) val
 	return nil
 }
 
-func (p *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

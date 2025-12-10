@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsList) validate
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

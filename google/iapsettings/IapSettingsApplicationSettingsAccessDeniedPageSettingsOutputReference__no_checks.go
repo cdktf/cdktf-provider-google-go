@@ -43,11 +43,11 @@ func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	return nil
 }
 
-func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActio
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

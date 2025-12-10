@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersEnvOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersEnvOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersEnvOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersEnvOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersEnvOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersEnvOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

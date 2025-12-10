@@ -15,7 +15,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsList) validateGetParame
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

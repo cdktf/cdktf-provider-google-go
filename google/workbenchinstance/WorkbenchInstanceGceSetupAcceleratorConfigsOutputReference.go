@@ -69,12 +69,12 @@ type WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetCoreCount()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -472,8 +472,8 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) I
 	return returns
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -481,7 +481,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) I
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -504,8 +504,8 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) R
 	)
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -513,7 +513,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) R
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

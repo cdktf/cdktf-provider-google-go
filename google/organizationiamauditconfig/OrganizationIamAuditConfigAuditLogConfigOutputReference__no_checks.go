@@ -43,11 +43,11 @@ func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) vali
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

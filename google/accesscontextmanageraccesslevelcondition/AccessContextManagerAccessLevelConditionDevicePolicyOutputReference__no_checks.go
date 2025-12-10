@@ -43,7 +43,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputRef
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputRef
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

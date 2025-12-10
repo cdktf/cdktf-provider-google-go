@@ -15,7 +15,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFa
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

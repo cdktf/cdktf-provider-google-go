@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigLi
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

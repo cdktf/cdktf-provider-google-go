@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePo
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

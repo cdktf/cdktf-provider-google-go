@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkConnectivitySpokeReasonsOutputReference) validateGetSt
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpokeReasonsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkConnectivitySpokeReasonsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpokeReasonsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectivitySpokeReasonsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

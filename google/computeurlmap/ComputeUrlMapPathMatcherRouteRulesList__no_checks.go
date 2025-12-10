@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesList) validateGetParameters
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeUrlMapPathMatcherRouteRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

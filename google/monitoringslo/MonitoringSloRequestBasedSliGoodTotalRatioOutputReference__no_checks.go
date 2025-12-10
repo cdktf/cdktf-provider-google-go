@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference) va
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

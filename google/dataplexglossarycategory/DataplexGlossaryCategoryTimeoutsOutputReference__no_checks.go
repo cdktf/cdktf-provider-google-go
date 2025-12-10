@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataplexGlossaryCategoryTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataplexGlossaryCategoryTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexGlossaryCategoryTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataplexGlossaryCategoryTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexGlossaryCategoryTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

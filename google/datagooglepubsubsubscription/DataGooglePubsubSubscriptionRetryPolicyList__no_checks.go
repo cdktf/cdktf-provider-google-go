@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionRetryPolicyList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionRetryPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionRetryPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

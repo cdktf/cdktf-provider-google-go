@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAzureClusterTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAzureClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAzureClusterTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstanceReplicationClusterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

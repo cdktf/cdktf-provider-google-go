@@ -81,7 +81,7 @@ type CloudRunV2ServiceTemplateContainersStartupProbeOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutGrpc(value *CloudRunV2ServiceTemplateContainersStartupProbeGrpc)
 	PutHttpGet(value *CloudRunV2ServiceTemplateContainersStartupProbeHttpGet)
 	PutTcpSocket(value *CloudRunV2ServiceTemplateContainersStartupProbeTcpSocket)
@@ -94,7 +94,7 @@ type CloudRunV2ServiceTemplateContainersStartupProbeOutputReference interface {
 	ResetTimeoutSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -614,8 +614,8 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeOutputReferenc
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -623,7 +623,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeOutputReferenc
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -719,8 +719,8 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeOutputReferenc
 	)
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -728,7 +728,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeOutputReferenc
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

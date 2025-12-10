@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataplexLakeIamMemberConditionOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataplexLakeIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexLakeIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataplexLakeIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexLakeIamMemberConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

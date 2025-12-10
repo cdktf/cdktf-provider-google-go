@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAttachedClusterWorkloadIdentityConfigList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAttachedClusterWorkloadIdentityConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAttachedClusterWorkloadIdentityConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

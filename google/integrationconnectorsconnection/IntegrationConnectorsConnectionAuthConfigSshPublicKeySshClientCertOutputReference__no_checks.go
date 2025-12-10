@@ -43,11 +43,11 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClien
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

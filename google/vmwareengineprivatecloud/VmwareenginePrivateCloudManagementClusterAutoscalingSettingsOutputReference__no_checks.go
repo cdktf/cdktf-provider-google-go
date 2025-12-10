@@ -43,7 +43,7 @@ func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterAutoscalingSettingsO
 	return nil
 }
 
-func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterAutoscalingSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterAutoscalingSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterAutoscalingSettingsO
 	return nil
 }
 
-func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterAutoscalingSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareenginePrivateCloudManagementClusterAutoscalingSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

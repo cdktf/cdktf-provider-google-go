@@ -15,7 +15,7 @@ func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigList) validateGetParameters
 	return nil
 }
 
-func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

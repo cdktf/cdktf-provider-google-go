@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitoringSloBasicSliLatencyOutputReference) validateGetStrin
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloBasicSliLatencyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringSloBasicSliLatencyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloBasicSliLatencyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringSloBasicSliLatencyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

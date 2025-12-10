@@ -15,7 +15,7 @@ func (d *jsiiProxy_DialogflowCxToolDataStoreSpecDataStoreConnectionsList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolDataStoreSpecDataStoreConnectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxToolDataStoreSpecDataStoreConnectionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

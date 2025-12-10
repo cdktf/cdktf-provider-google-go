@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageInsightsReportConfigParquetOptionsOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfigParquetOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageInsightsReportConfigParquetOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfigParquetOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageInsightsReportConfigParquetOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

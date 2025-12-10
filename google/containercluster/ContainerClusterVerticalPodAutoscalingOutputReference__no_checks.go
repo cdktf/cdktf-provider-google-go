@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterVerticalPodAutoscalingOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterVerticalPodAutoscalingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterVerticalPodAutoscalingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterVerticalPodAutoscalingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterVerticalPodAutoscalingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

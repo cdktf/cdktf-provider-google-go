@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageControlProjectIntelligenceConfigFilterExcludedCloudSto
 	return nil
 }
 
-func (s *jsiiProxy_StorageControlProjectIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageControlProjectIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageControlProjectIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageControlProjectIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

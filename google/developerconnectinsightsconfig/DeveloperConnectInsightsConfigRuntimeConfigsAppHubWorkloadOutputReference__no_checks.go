@@ -43,11 +43,11 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOut
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

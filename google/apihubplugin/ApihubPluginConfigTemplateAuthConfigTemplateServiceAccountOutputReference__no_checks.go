@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOut
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApihubPluginConfigTemplateAuthConfigTemplateServiceAccountOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

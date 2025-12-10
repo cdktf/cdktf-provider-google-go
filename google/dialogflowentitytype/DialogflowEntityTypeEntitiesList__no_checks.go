@@ -15,7 +15,7 @@ func (d *jsiiProxy_DialogflowEntityTypeEntitiesList) validateGetParameters(index
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowEntityTypeEntitiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowEntityTypeEntitiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

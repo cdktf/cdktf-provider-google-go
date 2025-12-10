@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRouteWarningsDataList) validateGetParameters(index *fl
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouteWarningsDataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRouteWarningsDataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

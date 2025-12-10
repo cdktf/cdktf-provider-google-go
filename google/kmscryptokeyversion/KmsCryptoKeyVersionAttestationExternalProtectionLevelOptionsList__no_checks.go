@@ -15,7 +15,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsL
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

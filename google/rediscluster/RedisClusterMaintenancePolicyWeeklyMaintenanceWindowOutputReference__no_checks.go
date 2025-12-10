@@ -43,7 +43,7 @@ func (r *jsiiProxy_RedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputRef
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (r *jsiiProxy_RedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputRef
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOut
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

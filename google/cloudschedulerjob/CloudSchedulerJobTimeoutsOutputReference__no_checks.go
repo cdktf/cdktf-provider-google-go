@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudSchedulerJobTimeoutsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (c *jsiiProxy_CloudSchedulerJobTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudSchedulerJobTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudSchedulerJobTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudSchedulerJobTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

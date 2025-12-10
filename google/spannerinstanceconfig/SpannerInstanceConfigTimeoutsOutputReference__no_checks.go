@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpannerInstanceConfigTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstanceConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpannerInstanceConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstanceConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpannerInstanceConfigTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

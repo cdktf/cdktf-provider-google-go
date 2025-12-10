@@ -15,7 +15,7 @@ func (b *jsiiProxy_BigtableGcPolicyMaxVersionList) validateGetParameters(index *
 	return nil
 }
 
-func (b *jsiiProxy_BigtableGcPolicyMaxVersionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableGcPolicyMaxVersionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

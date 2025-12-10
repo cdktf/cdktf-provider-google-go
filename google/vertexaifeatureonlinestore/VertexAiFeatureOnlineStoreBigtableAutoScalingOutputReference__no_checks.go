@@ -43,11 +43,11 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreBigtableAutoScalingOutputReference)
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStoreBigtableAutoScalingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreBigtableAutoScalingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStoreBigtableAutoScalingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreBigtableAutoScalingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

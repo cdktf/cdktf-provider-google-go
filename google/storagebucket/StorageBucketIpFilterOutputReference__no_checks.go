@@ -43,7 +43,7 @@ func (s *jsiiProxy_StorageBucketIpFilterOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketIpFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageBucketIpFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_StorageBucketIpFilterOutputReference) validatePutVpcNetworkSo
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketIpFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageBucketIpFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

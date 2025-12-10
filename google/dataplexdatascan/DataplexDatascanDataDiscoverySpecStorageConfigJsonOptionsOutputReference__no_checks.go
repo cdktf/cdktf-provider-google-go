@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

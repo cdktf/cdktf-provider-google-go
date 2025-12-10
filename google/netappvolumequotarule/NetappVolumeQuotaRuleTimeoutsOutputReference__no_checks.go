@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetappVolumeQuotaRuleTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeQuotaRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappVolumeQuotaRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeQuotaRuleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappVolumeQuotaRuleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

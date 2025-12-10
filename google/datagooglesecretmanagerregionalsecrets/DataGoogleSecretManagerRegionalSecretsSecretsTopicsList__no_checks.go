@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsTopicsList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsTopicsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsTopicsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

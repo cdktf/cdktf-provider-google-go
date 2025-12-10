@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterMonitoringConfigManagedPrometheusAu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

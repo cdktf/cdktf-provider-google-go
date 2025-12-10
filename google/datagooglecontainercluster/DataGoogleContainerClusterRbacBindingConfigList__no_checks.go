@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterRbacBindingConfigList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterRbacBindingConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterRbacBindingConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

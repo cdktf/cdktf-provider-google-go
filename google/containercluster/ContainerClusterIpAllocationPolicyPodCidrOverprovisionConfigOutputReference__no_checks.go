@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigO
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -86,7 +86,7 @@ type DataprocJobHadoopConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutLoggingConfig(value *DataprocJobHadoopConfigLoggingConfig)
 	ResetArchiveUris()
 	ResetArgs()
@@ -98,7 +98,7 @@ type DataprocJobHadoopConfigOutputReference interface {
 	ResetProperties()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -671,8 +671,8 @@ func (d *jsiiProxy_DataprocJobHadoopConfigOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (d *jsiiProxy_DataprocJobHadoopConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataprocJobHadoopConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -680,7 +680,7 @@ func (d *jsiiProxy_DataprocJobHadoopConfigOutputReference) InterpolationForAttri
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -762,8 +762,8 @@ func (d *jsiiProxy_DataprocJobHadoopConfigOutputReference) ResetProperties() {
 	)
 }
 
-func (d *jsiiProxy_DataprocJobHadoopConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataprocJobHadoopConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -771,7 +771,7 @@ func (d *jsiiProxy_DataprocJobHadoopConfigOutputReference) Resolve(_context cdkt
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

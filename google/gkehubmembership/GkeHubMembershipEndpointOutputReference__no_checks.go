@@ -43,7 +43,7 @@ func (g *jsiiProxy_GkeHubMembershipEndpointOutputReference) validateGetStringMap
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubMembershipEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeHubMembershipEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (g *jsiiProxy_GkeHubMembershipEndpointOutputReference) validatePutGkeCluste
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubMembershipEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubMembershipEndpointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

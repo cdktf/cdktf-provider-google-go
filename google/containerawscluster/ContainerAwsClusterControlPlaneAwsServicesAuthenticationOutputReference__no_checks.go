@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneAwsServicesAuthenticationOutpu
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

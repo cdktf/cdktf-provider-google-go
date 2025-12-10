@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoList) validateGetParamet
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionDiskTimeoutsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionDiskTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionDiskTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionDiskTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionDiskTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

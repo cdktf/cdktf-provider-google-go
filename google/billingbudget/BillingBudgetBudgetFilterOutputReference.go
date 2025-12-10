@@ -89,7 +89,7 @@ type BillingBudgetBudgetFilterOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCustomPeriod(value *BillingBudgetBudgetFilterCustomPeriod)
 	ResetCalendarPeriod()
 	ResetCreditTypes()
@@ -102,7 +102,7 @@ type BillingBudgetBudgetFilterOutputReference interface {
 	ResetSubaccounts()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -706,8 +706,8 @@ func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) InterpolationAsList
 	return returns
 }
 
-func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -715,7 +715,7 @@ func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -805,8 +805,8 @@ func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) ResetSubaccounts() 
 	)
 }
 
-func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -814,7 +814,7 @@ func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

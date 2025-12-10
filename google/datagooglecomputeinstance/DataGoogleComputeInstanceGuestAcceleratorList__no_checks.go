@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGuestAcceleratorList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGuestAcceleratorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceGuestAcceleratorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (v *jsiiProxy_VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOut
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

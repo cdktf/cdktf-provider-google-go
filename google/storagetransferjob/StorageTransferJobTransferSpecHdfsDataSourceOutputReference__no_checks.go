@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecHdfsDataSourceOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecHdfsDataSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageTransferJobTransferSpecHdfsDataSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecHdfsDataSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageTransferJobTransferSpecHdfsDataSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

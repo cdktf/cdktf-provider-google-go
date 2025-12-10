@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList) validateGet
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

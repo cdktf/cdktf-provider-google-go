@@ -15,7 +15,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigAdditi
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

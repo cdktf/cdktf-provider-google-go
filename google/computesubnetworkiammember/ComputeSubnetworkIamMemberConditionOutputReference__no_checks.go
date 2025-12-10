@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeSubnetworkIamMemberConditionOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSubnetworkIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeSubnetworkIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSubnetworkIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeSubnetworkIamMemberConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

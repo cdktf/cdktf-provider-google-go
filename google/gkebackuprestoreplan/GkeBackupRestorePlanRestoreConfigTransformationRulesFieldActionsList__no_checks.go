@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActi
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

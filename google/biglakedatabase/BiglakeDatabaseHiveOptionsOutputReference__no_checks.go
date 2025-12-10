@@ -43,11 +43,11 @@ func (b *jsiiProxy_BiglakeDatabaseHiveOptionsOutputReference) validateGetStringM
 	return nil
 }
 
-func (b *jsiiProxy_BiglakeDatabaseHiveOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BiglakeDatabaseHiveOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BiglakeDatabaseHiveOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BiglakeDatabaseHiveOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigEffectiveIntellig
 	return nil
 }
 
-func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

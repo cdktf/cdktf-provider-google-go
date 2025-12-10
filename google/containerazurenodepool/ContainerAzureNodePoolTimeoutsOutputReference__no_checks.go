@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAzureNodePoolTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureNodePoolTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAzureNodePoolTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureNodePoolTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAzureNodePoolTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

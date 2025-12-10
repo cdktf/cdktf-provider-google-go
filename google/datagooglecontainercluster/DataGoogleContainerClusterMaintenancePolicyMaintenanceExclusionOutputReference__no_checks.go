@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

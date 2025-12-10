@@ -66,11 +66,11 @@ type ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsOutputReference
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetFilterEnforcement()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -437,8 +437,8 @@ func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsO
 	return returns
 }
 
-func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -446,7 +446,7 @@ func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsO
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -461,8 +461,8 @@ func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsO
 	)
 }
 
-func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -470,7 +470,7 @@ func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettingsO
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

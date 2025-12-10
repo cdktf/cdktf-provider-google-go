@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitoringSloRequestBasedSliDistributionCutRangeOutputReferen
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloRequestBasedSliDistributionCutRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringSloRequestBasedSliDistributionCutRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloRequestBasedSliDistributionCutRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringSloRequestBasedSliDistributionCutRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

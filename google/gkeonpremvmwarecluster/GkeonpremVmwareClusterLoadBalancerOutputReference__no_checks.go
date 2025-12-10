@@ -43,7 +43,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterLoadBalancerOutputReference) validateGe
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterLoadBalancerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterLoadBalancerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterLoadBalancerOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterLoadBalancerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterLoadBalancerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

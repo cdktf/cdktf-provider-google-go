@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleMonitoringMeshIstioServiceTelemetryList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringMeshIstioServiceTelemetryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMonitoringMeshIstioServiceTelemetryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

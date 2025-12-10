@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesSecretItemsOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesSecretItemsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesSecretItemsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesSecretItemsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesSecretItemsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

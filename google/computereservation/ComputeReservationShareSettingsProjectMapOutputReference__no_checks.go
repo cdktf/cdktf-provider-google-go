@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

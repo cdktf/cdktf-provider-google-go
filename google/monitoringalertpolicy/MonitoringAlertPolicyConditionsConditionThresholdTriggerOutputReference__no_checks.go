@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdTriggerOutpu
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

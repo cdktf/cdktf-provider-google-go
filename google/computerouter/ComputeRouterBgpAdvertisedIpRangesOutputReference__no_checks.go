@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRouterBgpAdvertisedIpRangesOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterBgpAdvertisedIpRangesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRouterBgpAdvertisedIpRangesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterBgpAdvertisedIpRangesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRouterBgpAdvertisedIpRangesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

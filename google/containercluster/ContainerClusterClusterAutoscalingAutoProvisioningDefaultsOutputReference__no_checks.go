@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

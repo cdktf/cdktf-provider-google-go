@@ -43,11 +43,11 @@ func (k *jsiiProxy_KmsSecretCiphertextTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (k *jsiiProxy_KmsSecretCiphertextTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KmsSecretCiphertextTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KmsSecretCiphertextTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsSecretCiphertextTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

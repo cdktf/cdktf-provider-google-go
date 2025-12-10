@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUs
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesKeyUsageBaseKeyUsageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

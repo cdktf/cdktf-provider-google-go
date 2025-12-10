@@ -43,11 +43,11 @@ func (p *jsiiProxy_ParallelstoreInstanceTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (p *jsiiProxy_ParallelstoreInstanceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_ParallelstoreInstanceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_ParallelstoreInstanceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ParallelstoreInstanceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

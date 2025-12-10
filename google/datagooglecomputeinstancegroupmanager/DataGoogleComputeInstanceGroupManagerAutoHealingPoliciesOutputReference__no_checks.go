@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

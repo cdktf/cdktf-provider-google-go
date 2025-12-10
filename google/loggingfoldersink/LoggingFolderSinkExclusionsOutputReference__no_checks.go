@@ -43,11 +43,11 @@ func (l *jsiiProxy_LoggingFolderSinkExclusionsOutputReference) validateGetString
 	return nil
 }
 
-func (l *jsiiProxy_LoggingFolderSinkExclusionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingFolderSinkExclusionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoggingFolderSinkExclusionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingFolderSinkExclusionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesApexDetai
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesApexDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesApexDetailsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

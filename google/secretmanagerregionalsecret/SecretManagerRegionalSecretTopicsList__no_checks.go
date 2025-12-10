@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretTopicsList) validateGetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretTopicsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecretManagerRegionalSecretTopicsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

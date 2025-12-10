@@ -15,7 +15,7 @@ func (b *jsiiProxy_BeyondcorpAppGatewayAllocatedConnectionsList) validateGetPara
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpAppGatewayAllocatedConnectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BeyondcorpAppGatewayAllocatedConnectionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

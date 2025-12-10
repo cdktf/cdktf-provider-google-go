@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsList) valid
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAzureClusterControlPlaneReplicaPlacementsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

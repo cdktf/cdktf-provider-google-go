@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCertificateManagerCertificatesCertificatesManagedAu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCertificateManagerCertificatesCertificatesManagedAuthorizationAttemptInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCertificateManagerCertificatesCertificatesManagedAuthorizationAttemptInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

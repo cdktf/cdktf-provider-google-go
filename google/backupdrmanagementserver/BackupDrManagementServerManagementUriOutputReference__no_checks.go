@@ -43,11 +43,11 @@ func (b *jsiiProxy_BackupDrManagementServerManagementUriOutputReference) validat
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrManagementServerManagementUriOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupDrManagementServerManagementUriOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrManagementServerManagementUriOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupDrManagementServerManagementUriOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

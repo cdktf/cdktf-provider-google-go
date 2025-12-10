@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

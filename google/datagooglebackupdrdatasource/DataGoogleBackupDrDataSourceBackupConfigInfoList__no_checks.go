@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

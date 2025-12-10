@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

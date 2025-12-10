@@ -43,7 +43,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDepende
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDepende
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

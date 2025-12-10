@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigHttpLoadBalancingList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigHttpLoadBalancingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigHttpLoadBalancingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

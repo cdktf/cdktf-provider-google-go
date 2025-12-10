@@ -39,7 +39,7 @@ type FirebaseAppHostingDomainCustomDomainStatusIssuesList interface {
 	Get(index *float64) FirebaseAppHostingDomainCustomDomainStatusIssuesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (f *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusIssuesList) Get(ind
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusIssuesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusIssuesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (f *jsiiProxy_FirebaseAppHostingDomainCustomDomainStatusIssuesList) Resolve
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

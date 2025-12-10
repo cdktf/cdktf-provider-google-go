@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgradeOutp
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgradeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgradeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgradeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesUpgradeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigEnvOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigEnvOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigEnvOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigEnvOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigEnvOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

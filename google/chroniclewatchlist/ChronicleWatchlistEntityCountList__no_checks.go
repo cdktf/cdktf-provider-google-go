@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChronicleWatchlistEntityCountList) validateGetParameters(inde
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleWatchlistEntityCountList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleWatchlistEntityCountList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

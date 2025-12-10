@@ -43,11 +43,11 @@ func (d *jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCrede
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

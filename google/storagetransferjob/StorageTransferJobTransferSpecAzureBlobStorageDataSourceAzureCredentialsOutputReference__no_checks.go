@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzure
 	return nil
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

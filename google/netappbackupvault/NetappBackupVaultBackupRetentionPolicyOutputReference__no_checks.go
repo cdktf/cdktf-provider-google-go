@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) valida
 	return nil
 }
 
-func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

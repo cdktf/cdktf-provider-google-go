@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) valid
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappVolumeHybridReplicationParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

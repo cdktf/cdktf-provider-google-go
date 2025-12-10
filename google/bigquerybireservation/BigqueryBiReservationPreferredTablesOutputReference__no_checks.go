@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryBiReservationPreferredTablesOutputReference) validate
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryBiReservationPreferredTablesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryBiReservationPreferredTablesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryBiReservationPreferredTablesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryBiReservationPreferredTablesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

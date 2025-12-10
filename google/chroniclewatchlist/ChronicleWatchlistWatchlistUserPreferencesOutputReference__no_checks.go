@@ -43,11 +43,11 @@ func (c *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleWatchlistWatchlistUserPreferencesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsEndDateOutputRefer
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsEndDateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsEndDateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsEndDateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsEndDateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

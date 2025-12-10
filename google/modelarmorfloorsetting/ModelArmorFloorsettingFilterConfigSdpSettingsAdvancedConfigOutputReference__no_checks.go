@@ -43,11 +43,11 @@ func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfigOu
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

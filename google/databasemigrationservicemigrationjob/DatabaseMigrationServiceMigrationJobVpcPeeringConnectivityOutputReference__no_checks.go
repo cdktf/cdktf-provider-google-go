@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobVpcPeeringConnectivityOut
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobVpcPeeringConnectivityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobVpcPeeringConnectivityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobVpcPeeringConnectivityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobVpcPeeringConnectivityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

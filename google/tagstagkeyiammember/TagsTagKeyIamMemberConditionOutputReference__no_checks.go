@@ -43,11 +43,11 @@ func (t *jsiiProxy_TagsTagKeyIamMemberConditionOutputReference) validateGetStrin
 	return nil
 }
 
-func (t *jsiiProxy_TagsTagKeyIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TagsTagKeyIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TagsTagKeyIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TagsTagKeyIamMemberConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

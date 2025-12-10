@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

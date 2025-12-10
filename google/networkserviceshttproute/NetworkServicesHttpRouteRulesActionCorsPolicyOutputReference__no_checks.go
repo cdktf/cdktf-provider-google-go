@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference)
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionCorsPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

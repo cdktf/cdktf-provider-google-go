@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

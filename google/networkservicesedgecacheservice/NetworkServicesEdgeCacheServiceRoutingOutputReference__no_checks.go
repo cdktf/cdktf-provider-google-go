@@ -43,7 +43,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingOutputReference) valida
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingOutputReference) valida
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheServiceRoutingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

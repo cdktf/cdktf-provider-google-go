@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReferenc
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

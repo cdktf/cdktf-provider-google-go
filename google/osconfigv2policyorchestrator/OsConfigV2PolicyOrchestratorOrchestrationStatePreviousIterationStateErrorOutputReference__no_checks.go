@@ -43,11 +43,11 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterati
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

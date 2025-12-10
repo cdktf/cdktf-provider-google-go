@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupPscDataList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupPscDataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupPscDataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

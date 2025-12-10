@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataplexAssetResourceSpecOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_DataplexAssetResourceSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexAssetResourceSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataplexAssetResourceSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexAssetResourceSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

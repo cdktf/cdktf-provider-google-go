@@ -43,7 +43,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigUserPa
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigUserPa
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsHostsOutputRef
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsHostsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsHostsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsHostsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyHttpRulesToOperationsHostsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

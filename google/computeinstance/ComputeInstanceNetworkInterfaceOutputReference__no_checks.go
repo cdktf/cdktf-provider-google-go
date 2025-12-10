@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validatePutIp
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceNetworkInterfaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

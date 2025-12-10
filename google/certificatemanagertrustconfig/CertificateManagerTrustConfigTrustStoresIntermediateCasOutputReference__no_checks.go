@@ -43,11 +43,11 @@ func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresIntermediateCasOutput
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

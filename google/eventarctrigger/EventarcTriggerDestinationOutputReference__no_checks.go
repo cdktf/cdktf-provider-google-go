@@ -43,7 +43,7 @@ func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) validateGetStringM
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) validatePutNetwork
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcTriggerDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

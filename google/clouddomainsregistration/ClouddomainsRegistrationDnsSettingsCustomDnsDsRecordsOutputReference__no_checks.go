@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputRe
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

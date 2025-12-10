@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfig
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

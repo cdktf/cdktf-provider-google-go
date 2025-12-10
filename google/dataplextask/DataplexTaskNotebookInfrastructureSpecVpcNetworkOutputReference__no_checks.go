@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecVpcNetworkOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

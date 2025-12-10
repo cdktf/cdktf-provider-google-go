@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolic
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigPolicyBindingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

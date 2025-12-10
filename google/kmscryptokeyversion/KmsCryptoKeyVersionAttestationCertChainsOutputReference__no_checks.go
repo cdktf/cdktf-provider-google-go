@@ -43,11 +43,11 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsOutputReference) vali
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsCryptoKeyVersionAttestationCertChainsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesUniquenessExpectationL
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesUniquenessExpectationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesUniquenessExpectationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriver
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

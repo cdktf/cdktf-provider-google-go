@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsOutputReference) validateGetStrin
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateFieldsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCatalogTagTemplateFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsOutputReference) validatePutTypeP
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCatalogTagTemplateFieldsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

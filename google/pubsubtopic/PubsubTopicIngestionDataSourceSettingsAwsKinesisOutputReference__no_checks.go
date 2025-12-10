@@ -43,11 +43,11 @@ func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReferen
 	return nil
 }
 
-func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

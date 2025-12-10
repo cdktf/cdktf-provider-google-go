@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleGkeHubMembershipBindingStateOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleGkeHubMembershipBindingStateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleGkeHubMembershipBindingStateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleGkeHubMembershipBindingStateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleGkeHubMembershipBindingStateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

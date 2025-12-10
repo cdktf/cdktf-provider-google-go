@@ -43,7 +43,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

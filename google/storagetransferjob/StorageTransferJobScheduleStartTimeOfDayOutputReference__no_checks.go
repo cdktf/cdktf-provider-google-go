@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageTransferJobScheduleStartTimeOfDayOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_StorageTransferJobScheduleStartTimeOfDayOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageTransferJobScheduleStartTimeOfDayOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageTransferJobScheduleStartTimeOfDayOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageTransferJobScheduleStartTimeOfDayOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

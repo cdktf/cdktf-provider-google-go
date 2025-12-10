@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCod
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

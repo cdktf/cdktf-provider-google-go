@@ -43,7 +43,7 @@ func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) validateGetStr
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) validatePutUse
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecretManagerSecretReplicationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

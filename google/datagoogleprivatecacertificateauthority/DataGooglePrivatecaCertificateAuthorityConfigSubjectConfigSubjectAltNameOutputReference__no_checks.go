@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSub
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectAltNameOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectAltNameOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectAltNameOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectAltNameOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

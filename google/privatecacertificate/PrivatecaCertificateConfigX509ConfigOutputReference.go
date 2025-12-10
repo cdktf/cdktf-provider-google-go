@@ -76,7 +76,7 @@ type PrivatecaCertificateConfigX509ConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAdditionalExtensions(value interface{})
 	PutCaOptions(value *PrivatecaCertificateConfigX509ConfigCaOptions)
 	PutKeyUsage(value *PrivatecaCertificateConfigX509ConfigKeyUsage)
@@ -89,7 +89,7 @@ type PrivatecaCertificateConfigX509ConfigOutputReference interface {
 	ResetPolicyIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -556,8 +556,8 @@ func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigOutputReference) Interpol
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -565,7 +565,7 @@ func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigOutputReference) Interpol
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -667,8 +667,8 @@ func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigOutputReference) ResetPol
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -676,7 +676,7 @@ func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigOutputReference) Resolve(
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

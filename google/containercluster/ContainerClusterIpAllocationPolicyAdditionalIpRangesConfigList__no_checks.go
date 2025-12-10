@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigLis
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

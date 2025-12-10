@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerStatusStatefulOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerStatusStatefulOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstanceGroupManagerStatusStatefulOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerStatusStatefulOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceGroupManagerStatusStatefulOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

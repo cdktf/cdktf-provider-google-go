@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditi
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	return nil
 }
 
-func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputRefer
 	return nil
 }
 
-func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

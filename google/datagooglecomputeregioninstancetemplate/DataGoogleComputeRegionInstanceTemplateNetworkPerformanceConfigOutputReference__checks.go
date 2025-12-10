@@ -85,17 +85,17 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateNetworkPerformanceConf
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateNetworkPerformanceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateNetworkPerformanceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateNetworkPerformanceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateNetworkPerformanceConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

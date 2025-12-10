@@ -43,7 +43,7 @@ func (l *jsiiProxy_LookerInstancePscConfigOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstancePscConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LookerInstancePscConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LookerInstancePscConfigOutputReference) validatePutServiceAtt
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstancePscConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LookerInstancePscConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

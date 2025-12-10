@@ -43,7 +43,7 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyOutputReference) validateGet
 	return nil
 }
 
-func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyOutputReference) validatePut
 	return nil
 }
 
-func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

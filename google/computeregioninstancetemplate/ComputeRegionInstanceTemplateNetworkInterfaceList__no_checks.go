@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateNetworkInterfaceList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateNetworkInterfaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateNetworkInterfaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

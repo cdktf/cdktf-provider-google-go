@@ -15,7 +15,7 @@ func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetList) validateGetParameter
 	return nil
 }
 
-func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

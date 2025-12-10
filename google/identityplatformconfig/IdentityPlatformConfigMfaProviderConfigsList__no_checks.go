@@ -15,7 +15,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsList) validateGetPara
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

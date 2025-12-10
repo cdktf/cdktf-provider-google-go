@@ -43,11 +43,11 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWin
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysList) validateGetParame
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectMacsecPreSharedKeysList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

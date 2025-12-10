@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateReservationAffinityOut
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateReservationAffinityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateReservationAffinityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateReservationAffinityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateReservationAffinityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

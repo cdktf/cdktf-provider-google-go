@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

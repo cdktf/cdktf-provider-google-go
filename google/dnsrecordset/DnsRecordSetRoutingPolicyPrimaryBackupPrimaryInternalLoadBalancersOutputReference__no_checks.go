@@ -43,11 +43,11 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBala
 	return nil
 }
 
-func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

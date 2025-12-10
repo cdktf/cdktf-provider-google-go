@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsPysparkJobOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsPysparkJobOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsPysparkJobOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsPysparkJobOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsPysparkJobOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsPysparkJobOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

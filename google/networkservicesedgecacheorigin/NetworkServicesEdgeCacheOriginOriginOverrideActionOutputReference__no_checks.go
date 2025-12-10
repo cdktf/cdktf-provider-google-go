@@ -43,7 +43,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionOutputRefer
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionOutputRefer
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

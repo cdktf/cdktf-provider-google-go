@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAwsNodePoolMaxPodsConstraintOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolMaxPodsConstraintOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAwsNodePoolMaxPodsConstraintOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolMaxPodsConstraintOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAwsNodePoolMaxPodsConstraintOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

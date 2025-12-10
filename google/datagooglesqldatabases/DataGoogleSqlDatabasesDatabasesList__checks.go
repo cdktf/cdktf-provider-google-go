@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataGoogleSqlDatabasesDatabasesList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabasesDatabasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataGoogleSqlDatabasesDatabasesList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

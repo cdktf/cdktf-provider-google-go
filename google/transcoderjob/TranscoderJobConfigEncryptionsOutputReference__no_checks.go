@@ -43,7 +43,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsOutputReference) validateGetStr
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigEncryptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscoderJobConfigEncryptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsOutputReference) validatePutSec
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigEncryptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobConfigEncryptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCatalogTaxonomyIamBindingConditionOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogTaxonomyIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCatalogTaxonomyIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogTaxonomyIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCatalogTaxonomyIamBindingConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

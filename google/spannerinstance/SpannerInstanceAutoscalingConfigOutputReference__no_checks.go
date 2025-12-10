@@ -43,7 +43,7 @@ func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) validateGetS
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) validatePutA
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpannerInstanceAutoscalingConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

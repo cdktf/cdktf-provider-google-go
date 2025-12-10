@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFusionInstanceEventPublishConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

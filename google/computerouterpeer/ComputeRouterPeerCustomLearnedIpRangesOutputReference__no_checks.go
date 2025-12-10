@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRouterPeerCustomLearnedIpRangesOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterPeerCustomLearnedIpRangesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRouterPeerCustomLearnedIpRangesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterPeerCustomLearnedIpRangesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRouterPeerCustomLearnedIpRangesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

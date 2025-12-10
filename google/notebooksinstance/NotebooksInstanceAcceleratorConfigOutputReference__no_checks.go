@@ -43,11 +43,11 @@ func (n *jsiiProxy_NotebooksInstanceAcceleratorConfigOutputReference) validateGe
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksInstanceAcceleratorConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotebooksInstanceAcceleratorConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksInstanceAcceleratorConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotebooksInstanceAcceleratorConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

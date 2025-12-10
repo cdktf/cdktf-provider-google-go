@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradePostConditionsOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradePostConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradePostConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradePostConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradePostConditionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

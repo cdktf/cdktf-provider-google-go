@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskSourceSnapshotEncr
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

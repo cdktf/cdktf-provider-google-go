@@ -43,11 +43,11 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsDrmSystemsFairplayOutpu
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsDrmSystemsFairplayOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsDrmSystemsFairplayOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsDrmSystemsFairplayOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsDrmSystemsFairplayOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

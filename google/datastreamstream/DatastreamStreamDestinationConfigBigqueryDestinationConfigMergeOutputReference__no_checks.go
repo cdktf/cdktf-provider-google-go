@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigMer
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigMergeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigMergeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigMergeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamDestinationConfigBigqueryDestinationConfigMergeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInterconnectExpectedOutagesList) validateGetParameters
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectExpectedOutagesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectExpectedOutagesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

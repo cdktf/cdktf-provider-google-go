@@ -43,7 +43,7 @@ func (e *jsiiProxy_EventarcPipelineInputPayloadFormatOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineInputPayloadFormatOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventarcPipelineInputPayloadFormatOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (e *jsiiProxy_EventarcPipelineInputPayloadFormatOutputReference) validatePu
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineInputPayloadFormatOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcPipelineInputPayloadFormatOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

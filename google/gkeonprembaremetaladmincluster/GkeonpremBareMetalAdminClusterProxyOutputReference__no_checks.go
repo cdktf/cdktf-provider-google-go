@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterProxyOutputReference) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalAdminClusterProxyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeonpremBareMetalAdminClusterProxyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalAdminClusterProxyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremBareMetalAdminClusterProxyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

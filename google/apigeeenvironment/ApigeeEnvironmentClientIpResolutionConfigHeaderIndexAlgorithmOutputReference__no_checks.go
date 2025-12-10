@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApigeeEnvironmentClientIpResolutionConfigHeaderIndexAlgorithm
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentClientIpResolutionConfigHeaderIndexAlgorithmOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeEnvironmentClientIpResolutionConfigHeaderIndexAlgorithmOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentClientIpResolutionConfigHeaderIndexAlgorithmOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeEnvironmentClientIpResolutionConfigHeaderIndexAlgorithmOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

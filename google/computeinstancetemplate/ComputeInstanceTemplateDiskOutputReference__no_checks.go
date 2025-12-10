@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validatePutSource
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceTemplateDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

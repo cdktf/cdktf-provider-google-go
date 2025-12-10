@@ -85,9 +85,9 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateGetStringM
 	return nil
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -124,9 +124,9 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validatePutFilesPa
 	return nil
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

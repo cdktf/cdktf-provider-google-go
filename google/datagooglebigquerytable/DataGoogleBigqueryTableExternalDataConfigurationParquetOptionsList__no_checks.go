@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationParquetOption
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationParquetOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationParquetOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

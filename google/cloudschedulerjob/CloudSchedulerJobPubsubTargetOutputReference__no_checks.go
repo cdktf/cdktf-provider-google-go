@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudSchedulerJobPubsubTargetOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_CloudSchedulerJobPubsubTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudSchedulerJobPubsubTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudSchedulerJobPubsubTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudSchedulerJobPubsubTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

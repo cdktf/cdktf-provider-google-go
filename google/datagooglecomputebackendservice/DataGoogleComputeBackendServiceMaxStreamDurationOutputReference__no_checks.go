@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceMaxStreamDurationOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceMaxStreamDurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceMaxStreamDurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceMaxStreamDurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceMaxStreamDurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

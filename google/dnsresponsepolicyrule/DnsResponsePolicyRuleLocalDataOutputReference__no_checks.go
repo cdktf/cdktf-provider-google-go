@@ -43,7 +43,7 @@ func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validatePutLoc
 	return nil
 }
 
-func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

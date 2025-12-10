@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOut
 	return nil
 }
 
-func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

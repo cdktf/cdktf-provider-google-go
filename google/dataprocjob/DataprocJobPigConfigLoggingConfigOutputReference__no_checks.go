@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocJobPigConfigLoggingConfigOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataprocJobPigConfigLoggingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocJobPigConfigLoggingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocJobPigConfigLoggingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocJobPigConfigLoggingConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

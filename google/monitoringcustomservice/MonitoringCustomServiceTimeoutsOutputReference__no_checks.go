@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitoringCustomServiceTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringCustomServiceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringCustomServiceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringCustomServiceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringCustomServiceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

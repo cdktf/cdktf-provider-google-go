@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudIdentityGroupTransitiveMembershipsMembershipsR
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudIdentityGroupTransitiveMembershipsMembershipsRolesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudIdentityGroupTransitiveMembershipsMembershipsRolesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

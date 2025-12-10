@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestSourceAppEngineVersionOutput
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagementConnectivityTestSourceAppEngineVersionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkManagementConnectivityTestSourceAppEngineVersionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagementConnectivityTestSourceAppEngineVersionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkManagementConnectivityTestSourceAppEngineVersionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

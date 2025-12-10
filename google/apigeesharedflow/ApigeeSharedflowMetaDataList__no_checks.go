@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigeeSharedflowMetaDataList) validateGetParameters(index *fl
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeSharedflowMetaDataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeSharedflowMetaDataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) validateGetS
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) validatePutB
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

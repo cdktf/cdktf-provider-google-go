@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageBucketAutoclassOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketAutoclassOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageBucketAutoclassOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketAutoclassOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageBucketAutoclassOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

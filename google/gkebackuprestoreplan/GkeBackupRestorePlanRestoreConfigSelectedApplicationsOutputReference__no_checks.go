@@ -43,7 +43,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

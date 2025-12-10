@@ -43,11 +43,11 @@ func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationC
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationsAuthConfigDecryptedCredentialOauth2AuthorizationCodeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

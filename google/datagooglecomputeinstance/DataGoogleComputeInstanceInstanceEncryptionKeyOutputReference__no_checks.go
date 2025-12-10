@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeInstanceInstanceEncryptionKeyOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceInstanceEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceInstanceEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceInstanceEncryptionKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceInstanceEncryptionKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

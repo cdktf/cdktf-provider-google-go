@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolBinaryAuthorizationList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolBinaryAuthorizationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolBinaryAuthorizationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

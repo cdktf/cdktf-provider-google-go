@@ -15,7 +15,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationList) validateGetParameters(ind
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersionAttestationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsCryptoKeyVersionAttestationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

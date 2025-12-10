@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInterconnectAttachmentPrivateInterconnectInfoOutputRef
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

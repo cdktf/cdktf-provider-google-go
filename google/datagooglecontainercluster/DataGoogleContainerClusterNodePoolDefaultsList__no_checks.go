@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

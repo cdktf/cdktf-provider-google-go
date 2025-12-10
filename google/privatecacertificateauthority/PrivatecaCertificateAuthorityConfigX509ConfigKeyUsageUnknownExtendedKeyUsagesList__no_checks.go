@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigKeyUsageUnknownE
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

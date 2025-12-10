@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

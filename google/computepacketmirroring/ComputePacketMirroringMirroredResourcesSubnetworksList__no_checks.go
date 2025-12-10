@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksList) valid
 	return nil
 }
 
-func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

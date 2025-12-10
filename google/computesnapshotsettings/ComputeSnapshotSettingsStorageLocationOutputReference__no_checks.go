@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeSnapshotSettingsStorageLocationOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSnapshotSettingsStorageLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeSnapshotSettingsStorageLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ComputeSnapshotSettingsStorageLocationOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSnapshotSettingsStorageLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeSnapshotSettingsStorageLocationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

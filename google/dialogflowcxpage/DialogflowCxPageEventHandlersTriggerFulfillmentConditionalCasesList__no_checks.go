@@ -15,7 +15,7 @@ func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentConditionalCas
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentConditionalCasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentConditionalCasesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredServiceServiceReferenceList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleApphubDiscoveredServiceServiceReferenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleApphubDiscoveredServiceServiceReferenceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

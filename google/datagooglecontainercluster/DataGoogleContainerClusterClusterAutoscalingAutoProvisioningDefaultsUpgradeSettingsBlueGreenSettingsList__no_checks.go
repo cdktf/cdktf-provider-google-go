@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningD
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

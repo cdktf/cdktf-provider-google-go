@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyDocumentationLinksList) validateGetParam
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyDocumentationLinksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringAlertPolicyDocumentationLinksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

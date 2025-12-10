@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleVmwareengineSubnetDhcpAddressRangesOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineSubnetDhcpAddressRangesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleVmwareengineSubnetDhcpAddressRangesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineSubnetDhcpAddressRangesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVmwareengineSubnetDhcpAddressRangesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

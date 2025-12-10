@@ -43,11 +43,11 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference)
 	return nil
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

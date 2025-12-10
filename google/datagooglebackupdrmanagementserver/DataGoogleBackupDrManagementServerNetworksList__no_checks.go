@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleBackupDrManagementServerNetworksList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrManagementServerNetworksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBackupDrManagementServerNetworksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

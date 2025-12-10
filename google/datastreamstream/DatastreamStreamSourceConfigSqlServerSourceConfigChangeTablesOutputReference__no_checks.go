@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigChangeTables
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

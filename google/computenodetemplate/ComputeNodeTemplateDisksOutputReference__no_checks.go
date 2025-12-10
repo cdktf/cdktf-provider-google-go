@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeNodeTemplateDisksOutputReference) validateGetStringMap
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeTemplateDisksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeNodeTemplateDisksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeTemplateDisksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeNodeTemplateDisksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

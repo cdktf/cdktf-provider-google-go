@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyNotificationRateLimitOutput
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

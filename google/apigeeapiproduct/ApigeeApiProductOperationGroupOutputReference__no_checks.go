@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) validateGetStr
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) validatePutOpe
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeApiProductOperationGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

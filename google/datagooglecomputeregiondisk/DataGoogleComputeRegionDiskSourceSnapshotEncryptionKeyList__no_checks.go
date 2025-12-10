@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionDiskSourceSnapshotEncryptionKeyList) v
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionDiskSourceSnapshotEncryptionKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionDiskSourceSnapshotEncryptionKeyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

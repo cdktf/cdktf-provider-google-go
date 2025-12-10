@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionCommercialInfoCloudMar
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionCommercialInfoCloudMarketplaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionCommercialInfoCloudMarketplaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionCommercialInfoCloudMarketplaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionCommercialInfoCloudMarketplaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

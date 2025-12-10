@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTime
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionSqlDailyExecutionTimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesStatisticRangeExpectat
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesStatisticRangeExpectationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesStatisticRangeExpectationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesStatisticRangeExpectationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesStatisticRangeExpectationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

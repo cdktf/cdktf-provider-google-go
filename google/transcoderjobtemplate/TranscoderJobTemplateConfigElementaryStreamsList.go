@@ -41,7 +41,7 @@ type TranscoderJobTemplateConfigElementaryStreamsList interface {
 	Get(index *float64) TranscoderJobTemplateConfigElementaryStreamsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsList) Get(index *
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsList) Resolve(_co
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

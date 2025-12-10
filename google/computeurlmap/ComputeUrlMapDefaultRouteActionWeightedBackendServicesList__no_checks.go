@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionWeightedBackendServicesList) v
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionWeightedBackendServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionWeightedBackendServicesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

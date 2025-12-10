@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildSourceStorageSourceList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildSourceStorageSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildSourceStorageSourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

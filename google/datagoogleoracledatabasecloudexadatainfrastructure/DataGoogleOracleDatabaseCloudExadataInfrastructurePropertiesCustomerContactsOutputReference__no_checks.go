@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesC
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

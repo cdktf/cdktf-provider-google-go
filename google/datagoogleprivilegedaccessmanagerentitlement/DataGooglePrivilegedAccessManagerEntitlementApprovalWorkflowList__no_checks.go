@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowL
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

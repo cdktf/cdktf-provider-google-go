@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeSubnetworkSecondaryIpRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

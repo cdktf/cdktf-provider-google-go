@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleBeyondcorpAppConnectionApplicationEndpointList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBeyondcorpAppConnectionApplicationEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBeyondcorpAppConnectionApplicationEndpointList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

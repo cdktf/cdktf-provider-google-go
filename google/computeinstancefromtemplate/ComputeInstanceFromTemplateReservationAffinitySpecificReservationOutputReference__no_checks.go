@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateReservationAffinitySpecificReserva
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateReservationAffinitySpecificReservationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateReservationAffinitySpecificReservationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateReservationAffinitySpecificReservationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateReservationAffinitySpecificReservationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

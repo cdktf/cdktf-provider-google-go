@@ -15,7 +15,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionConfigVariableList) validateGe
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionConfigVariableList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionConfigVariableList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

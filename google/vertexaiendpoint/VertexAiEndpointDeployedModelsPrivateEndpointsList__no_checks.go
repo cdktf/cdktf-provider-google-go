@@ -15,7 +15,7 @@ func (v *jsiiProxy_VertexAiEndpointDeployedModelsPrivateEndpointsList) validateG
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiEndpointDeployedModelsPrivateEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiEndpointDeployedModelsPrivateEndpointsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

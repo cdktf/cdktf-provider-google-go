@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleRedisInstanceServerCaCertsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleRedisInstanceServerCaCertsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleRedisInstanceServerCaCertsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleRedisInstanceServerCaCertsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleRedisInstanceServerCaCertsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

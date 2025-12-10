@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkSecurityAddressGroupIamBindingConditionOutputReference
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityAddressGroupIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkSecurityAddressGroupIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityAddressGroupIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkSecurityAddressGroupIamBindingConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

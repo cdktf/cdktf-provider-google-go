@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleAlloydbClusterInitialUserList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbClusterInitialUserList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleAlloydbClusterInitialUserList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

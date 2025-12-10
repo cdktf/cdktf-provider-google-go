@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeStoragePoolResourceStatusList) validateGetParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_ComputeStoragePoolResourceStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeStoragePoolResourceStatusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

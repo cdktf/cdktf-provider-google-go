@@ -85,9 +85,9 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -124,9 +124,9 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) validateP
 	return nil
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

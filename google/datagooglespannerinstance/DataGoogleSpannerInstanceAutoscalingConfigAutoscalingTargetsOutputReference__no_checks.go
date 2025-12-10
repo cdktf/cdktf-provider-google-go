@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsO
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

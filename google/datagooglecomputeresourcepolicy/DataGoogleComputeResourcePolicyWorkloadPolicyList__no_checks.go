@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeResourcePolicyWorkloadPolicyList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeResourcePolicyWorkloadPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeResourcePolicyWorkloadPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

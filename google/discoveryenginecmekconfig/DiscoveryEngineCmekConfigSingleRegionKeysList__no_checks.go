@@ -15,7 +15,7 @@ func (d *jsiiProxy_DiscoveryEngineCmekConfigSingleRegionKeysList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineCmekConfigSingleRegionKeysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineCmekConfigSingleRegionKeysList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

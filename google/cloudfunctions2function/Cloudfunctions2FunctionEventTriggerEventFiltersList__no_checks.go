@@ -15,7 +15,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersList) validate
 	return nil
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

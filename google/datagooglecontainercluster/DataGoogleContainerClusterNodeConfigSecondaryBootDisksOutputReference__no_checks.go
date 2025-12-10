@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigSecondaryBootDisksOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigSecondaryBootDisksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigSecondaryBootDisksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigSecondaryBootDisksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigSecondaryBootDisksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

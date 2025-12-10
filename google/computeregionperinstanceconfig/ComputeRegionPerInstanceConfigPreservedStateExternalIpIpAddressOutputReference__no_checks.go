@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddre
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfigCmekSettingsOutputReference)
 	return nil
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfigCmekSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingBillingAccountBucketConfigCmekSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfigCmekSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingBillingAccountBucketConfigCmekSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

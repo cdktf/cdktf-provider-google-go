@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

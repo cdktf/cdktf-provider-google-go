@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesPolicyIdsList) va
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesPolicyIdsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesPolicyIdsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

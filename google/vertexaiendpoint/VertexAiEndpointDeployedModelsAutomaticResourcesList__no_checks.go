@@ -15,7 +15,7 @@ func (v *jsiiProxy_VertexAiEndpointDeployedModelsAutomaticResourcesList) validat
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiEndpointDeployedModelsAutomaticResourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiEndpointDeployedModelsAutomaticResourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

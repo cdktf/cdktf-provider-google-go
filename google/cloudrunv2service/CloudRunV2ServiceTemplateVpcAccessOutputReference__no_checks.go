@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVpcAccessOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateVpcAccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateVpcAccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVpcAccessOutputReference) validatePu
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateVpcAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateVpcAccessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupPscDataOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupPscDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupPscDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupPscDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupPscDataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

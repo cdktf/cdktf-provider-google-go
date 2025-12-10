@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterStatusConditionsList) validateGetParame
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterStatusConditionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterStatusConditionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

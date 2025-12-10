@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionSqlDailyOutputReferen
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionSqlDailyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionSqlDailyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionSqlDailyOutputReferen
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionSqlDailyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionSqlDailyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

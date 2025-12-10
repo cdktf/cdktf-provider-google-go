@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeReasonsList) validateGetParameters(in
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpokeReasonsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectivitySpokeReasonsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

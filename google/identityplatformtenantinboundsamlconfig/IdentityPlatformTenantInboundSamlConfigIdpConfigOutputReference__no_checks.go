@@ -43,7 +43,7 @@ func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigOutputReferen
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigOutputReferen
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

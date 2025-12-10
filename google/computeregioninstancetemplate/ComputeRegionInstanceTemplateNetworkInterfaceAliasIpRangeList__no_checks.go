@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateNetworkInterfaceAliasIpRangeList
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateNetworkInterfaceAliasIpRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateNetworkInterfaceAliasIpRangeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -72,12 +72,12 @@ type BigqueryJobCopySourceTablesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetDatasetId()
 	ResetProjectId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -506,8 +506,8 @@ func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -515,7 +515,7 @@ func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -538,8 +538,8 @@ func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) ResetProjectId() 
 	)
 }
 
-func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -547,7 +547,7 @@ func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

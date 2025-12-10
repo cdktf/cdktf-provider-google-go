@@ -15,7 +15,7 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasList) validateGetParameters(inde
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstanceConfigReplicasList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpannerInstanceConfigReplicasList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

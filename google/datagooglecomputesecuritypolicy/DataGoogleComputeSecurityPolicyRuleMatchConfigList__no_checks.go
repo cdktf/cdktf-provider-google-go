@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleMatchConfigList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleMatchConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleMatchConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

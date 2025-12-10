@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleProjectAncestryAncestorsList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleProjectAncestryAncestorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleProjectAncestryAncestorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

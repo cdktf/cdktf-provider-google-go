@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocJobPlacementOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DataprocJobPlacementOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocJobPlacementOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocJobPlacementOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocJobPlacementOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

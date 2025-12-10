@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodesDbNodesPropertiesOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodesDbNodesPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodesDbNodesPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodesDbNodesPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodesDbNodesPropertiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

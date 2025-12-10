@@ -15,7 +15,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputProperties
 	return nil
 }
 
-func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputPropertiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputPropertiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

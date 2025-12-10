@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminUsersOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminUsersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminUsersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminUsersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminUsersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

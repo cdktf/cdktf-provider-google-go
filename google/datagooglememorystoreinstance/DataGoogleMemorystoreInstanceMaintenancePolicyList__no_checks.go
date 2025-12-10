@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleMemorystoreInstanceMaintenancePolicyList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMemorystoreInstanceMaintenancePolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMemorystoreInstanceMaintenancePolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

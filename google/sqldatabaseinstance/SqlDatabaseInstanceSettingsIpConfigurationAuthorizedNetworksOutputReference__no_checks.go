@@ -43,11 +43,11 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksO
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

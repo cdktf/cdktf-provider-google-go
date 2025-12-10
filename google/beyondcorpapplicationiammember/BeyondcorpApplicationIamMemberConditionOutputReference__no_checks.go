@@ -43,11 +43,11 @@ func (b *jsiiProxy_BeyondcorpApplicationIamMemberConditionOutputReference) valid
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpApplicationIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BeyondcorpApplicationIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpApplicationIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BeyondcorpApplicationIamMemberConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

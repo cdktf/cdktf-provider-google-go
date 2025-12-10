@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRe
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

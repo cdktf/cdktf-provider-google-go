@@ -15,7 +15,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationEndpointMatchersList) val
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationEndpointMatchersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationEndpointMatchersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

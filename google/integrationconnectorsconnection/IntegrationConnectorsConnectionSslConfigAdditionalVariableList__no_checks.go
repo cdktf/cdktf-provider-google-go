@@ -15,7 +15,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableLis
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

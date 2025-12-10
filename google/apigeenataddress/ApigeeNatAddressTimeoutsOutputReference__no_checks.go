@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApigeeNatAddressTimeoutsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeNatAddressTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeNatAddressTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeNatAddressTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeNatAddressTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

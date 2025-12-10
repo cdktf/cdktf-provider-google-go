@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeSubnetworkSecondaryIpRangeList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeSubnetworkSecondaryIpRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeSubnetworkSecondaryIpRangeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (b *jsiiProxy_BigqueryConnectionAwsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionAwsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryConnectionAwsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BigqueryConnectionAwsOutputReference) validatePutAccessRolePa
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionAwsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryConnectionAwsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

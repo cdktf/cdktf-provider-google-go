@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatc
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

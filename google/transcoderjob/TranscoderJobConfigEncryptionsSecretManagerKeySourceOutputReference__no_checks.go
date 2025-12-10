@@ -43,11 +43,11 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsSecretManagerKeySourceOutputRef
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigEncryptionsSecretManagerKeySourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscoderJobConfigEncryptionsSecretManagerKeySourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigEncryptionsSecretManagerKeySourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobConfigEncryptionsSecretManagerKeySourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

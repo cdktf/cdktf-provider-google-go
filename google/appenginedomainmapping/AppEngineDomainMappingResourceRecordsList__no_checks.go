@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppEngineDomainMappingResourceRecordsList) validateGetParamet
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineDomainMappingResourceRecordsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppEngineDomainMappingResourceRecordsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

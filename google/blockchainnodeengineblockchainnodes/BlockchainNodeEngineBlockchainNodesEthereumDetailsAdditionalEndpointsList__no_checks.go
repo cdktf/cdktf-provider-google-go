@@ -15,7 +15,7 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsAdditionalE
 	return nil
 }
 
-func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsAdditionalEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesEthereumDetailsAdditionalEndpointsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

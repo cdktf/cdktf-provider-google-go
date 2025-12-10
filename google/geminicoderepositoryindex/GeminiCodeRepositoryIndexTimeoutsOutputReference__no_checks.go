@@ -43,11 +43,11 @@ func (g *jsiiProxy_GeminiCodeRepositoryIndexTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GeminiCodeRepositoryIndexTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GeminiCodeRepositoryIndexTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GeminiCodeRepositoryIndexTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GeminiCodeRepositoryIndexTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

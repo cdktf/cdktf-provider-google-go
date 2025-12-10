@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalS
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

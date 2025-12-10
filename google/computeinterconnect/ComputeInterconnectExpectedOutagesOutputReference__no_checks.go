@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInterconnectExpectedOutagesOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectExpectedOutagesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInterconnectExpectedOutagesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectExpectedOutagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectExpectedOutagesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

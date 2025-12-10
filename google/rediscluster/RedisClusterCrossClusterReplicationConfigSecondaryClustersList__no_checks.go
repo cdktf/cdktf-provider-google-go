@@ -15,7 +15,7 @@ func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigSecondaryClustersLis
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigSecondaryClustersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigSecondaryClustersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

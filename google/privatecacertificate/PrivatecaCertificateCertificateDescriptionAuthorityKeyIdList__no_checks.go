@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrivatecaCertificateCertificateDescriptionAuthorityKeyIdList)
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateCertificateDescriptionAuthorityKeyIdList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCertificateCertificateDescriptionAuthorityKeyIdList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

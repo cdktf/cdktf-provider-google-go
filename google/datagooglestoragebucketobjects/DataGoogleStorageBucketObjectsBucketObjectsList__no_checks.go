@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectsBucketObjectsList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketObjectsBucketObjectsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleStorageBucketObjectsBucketObjectsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

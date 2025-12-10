@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVolumesSecretItemsList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVolumesSecretItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVolumesSecretItemsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesList) valida
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

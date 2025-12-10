@@ -43,7 +43,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutpu
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutpu
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

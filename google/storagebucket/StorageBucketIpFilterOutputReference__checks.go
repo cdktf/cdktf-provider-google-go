@@ -85,9 +85,9 @@ func (s *jsiiProxy_StorageBucketIpFilterOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketIpFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_StorageBucketIpFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -135,9 +135,9 @@ func (s *jsiiProxy_StorageBucketIpFilterOutputReference) validatePutVpcNetworkSo
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketIpFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_StorageBucketIpFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

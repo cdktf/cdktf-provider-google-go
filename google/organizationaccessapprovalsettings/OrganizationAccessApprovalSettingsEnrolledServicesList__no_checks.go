@@ -15,7 +15,7 @@ func (o *jsiiProxy_OrganizationAccessApprovalSettingsEnrolledServicesList) valid
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationAccessApprovalSettingsEnrolledServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrganizationAccessApprovalSettingsEnrolledServicesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

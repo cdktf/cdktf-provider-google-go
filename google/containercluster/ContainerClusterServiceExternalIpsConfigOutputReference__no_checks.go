@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterServiceExternalIpsConfigOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterServiceExternalIpsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterServiceExternalIpsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterServiceExternalIpsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterServiceExternalIpsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

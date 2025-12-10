@@ -43,11 +43,11 @@ func (v *jsiiProxy_VertexAiFeatureGroupBigQueryBigQuerySourceOutputReference) va
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeatureGroupBigQueryBigQuerySourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiFeatureGroupBigQueryBigQuerySourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeatureGroupBigQueryBigQuerySourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiFeatureGroupBigQueryBigQuerySourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

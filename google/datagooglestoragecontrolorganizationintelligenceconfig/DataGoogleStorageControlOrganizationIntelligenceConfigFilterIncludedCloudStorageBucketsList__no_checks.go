@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfigFilterI
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBucketsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBucketsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

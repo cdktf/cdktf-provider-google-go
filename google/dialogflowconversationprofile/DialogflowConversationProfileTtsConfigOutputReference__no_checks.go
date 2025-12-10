@@ -43,7 +43,7 @@ func (d *jsiiProxy_DialogflowConversationProfileTtsConfigOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowConversationProfileTtsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowConversationProfileTtsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DialogflowConversationProfileTtsConfigOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowConversationProfileTtsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowConversationProfileTtsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

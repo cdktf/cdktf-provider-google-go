@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionCommitmentLicenseResourceOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionCommitmentLicenseResourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionCommitmentLicenseResourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionCommitmentLicenseResourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionCommitmentLicenseResourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

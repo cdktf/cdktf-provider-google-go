@@ -43,11 +43,11 @@ func (i *jsiiProxy_IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputRefe
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

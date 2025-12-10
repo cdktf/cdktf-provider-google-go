@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesOutputRefe
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateVpcAccessNetworkInterfacesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

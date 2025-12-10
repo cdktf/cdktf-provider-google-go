@@ -15,7 +15,7 @@ func (c *jsiiProxy_CertificateManagerCertificateManagedAuthorizationAttemptInfoL
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerCertificateManagedAuthorizationAttemptInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CertificateManagerCertificateManagedAuthorizationAttemptInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

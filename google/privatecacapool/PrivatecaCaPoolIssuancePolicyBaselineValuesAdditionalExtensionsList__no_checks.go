@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensio
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

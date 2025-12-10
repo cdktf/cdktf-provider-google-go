@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateGetStringM
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -95,7 +95,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validatePutWorkloa
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecOutputReference) validatePut
 	return nil
 }
 
-func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

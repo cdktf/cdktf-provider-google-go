@@ -43,11 +43,11 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputR
 	return nil
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_Cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_Cloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

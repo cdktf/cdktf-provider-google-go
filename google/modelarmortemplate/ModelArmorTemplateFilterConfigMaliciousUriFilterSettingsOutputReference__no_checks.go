@@ -43,11 +43,11 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigMaliciousUriFilterSettingsOutpu
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorTemplateFilterConfigMaliciousUriFilterSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelArmorTemplateFilterConfigMaliciousUriFilterSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorTemplateFilterConfigMaliciousUriFilterSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelArmorTemplateFilterConfigMaliciousUriFilterSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMes
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsLocalizedMessageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

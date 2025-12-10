@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigEncryptionConfigList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigEncryptionConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigEncryptionConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

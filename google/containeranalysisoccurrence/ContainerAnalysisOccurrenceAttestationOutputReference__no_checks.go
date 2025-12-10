@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerAnalysisOccurrenceAttestationOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAnalysisOccurrenceAttestationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAnalysisOccurrenceAttestationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ContainerAnalysisOccurrenceAttestationOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAnalysisOccurrenceAttestationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAnalysisOccurrenceAttestationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

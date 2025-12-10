@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectCustomerEncryptionList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketObjectCustomerEncryptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleStorageBucketObjectCustomerEncryptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

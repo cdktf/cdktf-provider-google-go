@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetr
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesZonesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectAttachmentGroupLogicalStructureRegionsMetrosFacilitiesZonesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

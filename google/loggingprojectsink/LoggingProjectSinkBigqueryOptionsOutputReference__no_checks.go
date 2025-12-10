@@ -43,11 +43,11 @@ func (l *jsiiProxy_LoggingProjectSinkBigqueryOptionsOutputReference) validateGet
 	return nil
 }
 
-func (l *jsiiProxy_LoggingProjectSinkBigqueryOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingProjectSinkBigqueryOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoggingProjectSinkBigqueryOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingProjectSinkBigqueryOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

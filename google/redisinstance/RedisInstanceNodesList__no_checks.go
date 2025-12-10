@@ -15,7 +15,7 @@ func (r *jsiiProxy_RedisInstanceNodesList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (r *jsiiProxy_RedisInstanceNodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisInstanceNodesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

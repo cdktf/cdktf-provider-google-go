@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructuresCloudExada
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructuresCloudExadataInfrastructuresPropertiesCustomerContactsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructuresCloudExadataInfrastructuresPropertiesCustomerContactsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) validateGetStrin
 	return nil
 }
 
-func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLossPreventionJobTriggerInspectJobOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

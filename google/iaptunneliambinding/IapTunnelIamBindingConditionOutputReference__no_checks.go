@@ -43,11 +43,11 @@ func (i *jsiiProxy_IapTunnelIamBindingConditionOutputReference) validateGetStrin
 	return nil
 }
 
-func (i *jsiiProxy_IapTunnelIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IapTunnelIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IapTunnelIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IapTunnelIamBindingConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

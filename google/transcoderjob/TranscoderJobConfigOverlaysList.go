@@ -41,7 +41,7 @@ type TranscoderJobConfigOverlaysList interface {
 	Get(index *float64) TranscoderJobConfigOverlaysOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -231,8 +231,8 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysList) Get(index *float64) Transcod
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobConfigOverlaysList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TranscoderJobConfigOverlaysList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -240,7 +240,7 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysList) Resolve(_context cdktf.IReso
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

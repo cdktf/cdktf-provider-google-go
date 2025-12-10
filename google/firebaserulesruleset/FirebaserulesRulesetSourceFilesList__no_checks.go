@@ -15,7 +15,7 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceFilesList) validateGetParameters(in
 	return nil
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetSourceFilesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaserulesRulesetSourceFilesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

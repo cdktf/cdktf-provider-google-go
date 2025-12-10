@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowO
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

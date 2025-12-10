@@ -15,7 +15,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionConnectorVersionInfraConfigLis
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionConnectorVersionInfraConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionConnectorVersionInfraConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

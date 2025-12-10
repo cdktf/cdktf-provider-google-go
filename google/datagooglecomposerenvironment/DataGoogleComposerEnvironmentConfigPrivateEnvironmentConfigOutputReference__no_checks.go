@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigPrivateEnvironmentConfigOu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

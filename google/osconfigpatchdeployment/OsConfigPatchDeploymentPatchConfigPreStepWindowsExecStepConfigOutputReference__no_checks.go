@@ -43,7 +43,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfi
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfi
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

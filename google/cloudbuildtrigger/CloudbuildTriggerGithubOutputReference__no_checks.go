@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudbuildTriggerGithubOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerGithubOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudbuildTriggerGithubOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_CloudbuildTriggerGithubOutputReference) validatePutPushParame
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerGithubOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildTriggerGithubOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

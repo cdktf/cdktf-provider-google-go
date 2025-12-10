@@ -43,7 +43,7 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) validatePutT
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecr
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecr
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

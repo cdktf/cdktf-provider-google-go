@@ -15,7 +15,7 @@ func (b *jsiiProxy_BigtableTableColumnFamilyList) validateGetParameters(index *f
 	return nil
 }
 
-func (b *jsiiProxy_BigtableTableColumnFamilyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableTableColumnFamilyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

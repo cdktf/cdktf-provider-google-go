@@ -15,7 +15,7 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficCurrentSplitsList) validateGetParame
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingTrafficCurrentSplitsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaseAppHostingTrafficCurrentSplitsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

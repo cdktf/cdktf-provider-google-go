@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList) validateGetParam
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateAttachedDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

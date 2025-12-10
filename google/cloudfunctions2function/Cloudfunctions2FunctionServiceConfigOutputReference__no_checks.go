@@ -43,7 +43,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

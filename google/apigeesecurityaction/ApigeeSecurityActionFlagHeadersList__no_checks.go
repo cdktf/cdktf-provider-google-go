@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigeeSecurityActionFlagHeadersList) validateGetParameters(in
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeSecurityActionFlagHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeSecurityActionFlagHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

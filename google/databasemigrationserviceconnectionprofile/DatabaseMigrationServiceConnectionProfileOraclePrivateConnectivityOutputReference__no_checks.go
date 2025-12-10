@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOraclePrivateConnect
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOraclePrivateConnectivityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOraclePrivateConnectivityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOraclePrivateConnectivityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOraclePrivateConnectivityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

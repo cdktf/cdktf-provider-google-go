@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventarcMessageBusTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (e *jsiiProxy_EventarcMessageBusTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventarcMessageBusTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventarcMessageBusTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcMessageBusTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

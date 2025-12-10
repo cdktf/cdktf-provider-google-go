@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApikeysKeyRestrictionsApiTargetsList) validateGetParameters(i
 	return nil
 }
 
-func (a *jsiiProxy_ApikeysKeyRestrictionsApiTargetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApikeysKeyRestrictionsApiTargetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerOu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

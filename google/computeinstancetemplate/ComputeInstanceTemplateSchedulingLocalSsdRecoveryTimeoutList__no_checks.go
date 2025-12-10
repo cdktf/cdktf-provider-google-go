@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList)
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceTemplateSchedulingLocalSsdRecoveryTimeoutList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

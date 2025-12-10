@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsALis
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

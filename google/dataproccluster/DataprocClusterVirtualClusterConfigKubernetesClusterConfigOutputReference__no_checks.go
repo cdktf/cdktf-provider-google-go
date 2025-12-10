@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataprocClusterVirtualClusterConfigKubernetesClusterConfigOut
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataprocClusterVirtualClusterConfigKubernetesClusterConfigOut
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

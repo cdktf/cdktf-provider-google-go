@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeonpremVmwareClusterLoadBalancerManualLbConfigOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterLoadBalancerManualLbConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterLoadBalancerManualLbConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterLoadBalancerManualLbConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterLoadBalancerManualLbConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

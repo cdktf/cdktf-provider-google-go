@@ -43,11 +43,11 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionC
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

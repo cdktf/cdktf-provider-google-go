@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudTasksQueueHttpTargetOidcTokenOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CloudTasksQueueHttpTargetOidcTokenOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudTasksQueueHttpTargetOidcTokenOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudTasksQueueHttpTargetOidcTokenOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudTasksQueueHttpTargetOidcTokenOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

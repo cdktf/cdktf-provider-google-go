@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutput
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

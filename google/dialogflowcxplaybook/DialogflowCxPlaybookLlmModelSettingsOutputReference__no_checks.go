@@ -43,11 +43,11 @@ func (d *jsiiProxy_DialogflowCxPlaybookLlmModelSettingsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxPlaybookLlmModelSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxPlaybookLlmModelSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxPlaybookLlmModelSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxPlaybookLlmModelSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

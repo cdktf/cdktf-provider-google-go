@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputRe
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputRe
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

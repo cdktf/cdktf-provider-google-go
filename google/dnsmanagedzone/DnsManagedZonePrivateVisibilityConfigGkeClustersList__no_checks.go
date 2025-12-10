@@ -15,7 +15,7 @@ func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

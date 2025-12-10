@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeaders
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

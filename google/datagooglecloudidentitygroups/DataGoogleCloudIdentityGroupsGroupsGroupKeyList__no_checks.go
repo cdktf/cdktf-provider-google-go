@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudIdentityGroupsGroupsGroupKeyList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudIdentityGroupsGroupsGroupKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudIdentityGroupsGroupsGroupKeyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

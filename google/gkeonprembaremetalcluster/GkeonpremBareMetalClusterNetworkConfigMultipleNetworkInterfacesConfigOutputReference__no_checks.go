@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigMultipleNetworkInterfac
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigMultipleNetworkInterfacesConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigMultipleNetworkInterfacesConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigMultipleNetworkInterfacesConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigMultipleNetworkInterfacesConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -71,11 +71,11 @@ type MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference int
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutStartTime(value *MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -493,8 +493,8 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	return returns
 }
 
-func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -502,7 +502,7 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -520,8 +520,8 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	)
 }
 
-func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -529,7 +529,7 @@ func (m *jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutpu
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

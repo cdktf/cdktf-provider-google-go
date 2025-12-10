@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleVpcAccessConnectorSubnetList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVpcAccessConnectorSubnetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVpcAccessConnectorSubnetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestH
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

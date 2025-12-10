@@ -43,11 +43,11 @@ func (e *jsiiProxy_EdgenetworkNetworkTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (e *jsiiProxy_EdgenetworkNetworkTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EdgenetworkNetworkTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EdgenetworkNetworkTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgenetworkNetworkTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

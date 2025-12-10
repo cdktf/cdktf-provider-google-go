@@ -43,7 +43,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicyEgressT
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicyEgressToOperationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicyEgressToOperationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicyEgressT
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicyEgressToOperationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicyEgressToOperationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

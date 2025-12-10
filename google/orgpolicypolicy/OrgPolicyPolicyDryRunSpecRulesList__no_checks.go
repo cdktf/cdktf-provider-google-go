@@ -15,7 +15,7 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) validateGetParameters(ind
 	return nil
 }
 
-func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

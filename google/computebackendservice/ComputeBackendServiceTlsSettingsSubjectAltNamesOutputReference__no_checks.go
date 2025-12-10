@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

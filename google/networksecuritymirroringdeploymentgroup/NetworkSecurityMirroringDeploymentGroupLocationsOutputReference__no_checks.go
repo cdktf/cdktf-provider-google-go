@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeploymentGroupLocationsOutputReferen
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringDeploymentGroupLocationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkSecurityMirroringDeploymentGroupLocationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringDeploymentGroupLocationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkSecurityMirroringDeploymentGroupLocationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

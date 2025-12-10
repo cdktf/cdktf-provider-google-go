@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeServiceAttachmentConnectedEndpointsList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_ComputeServiceAttachmentConnectedEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeServiceAttachmentConnectedEndpointsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

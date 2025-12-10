@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

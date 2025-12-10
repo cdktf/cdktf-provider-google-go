@@ -43,7 +43,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMy
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMy
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

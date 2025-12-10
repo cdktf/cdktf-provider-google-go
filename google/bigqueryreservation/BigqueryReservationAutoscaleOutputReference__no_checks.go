@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryReservationAutoscaleOutputReference) validateGetStrin
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryReservationAutoscaleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryReservationAutoscaleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryReservationAutoscaleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryReservationAutoscaleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

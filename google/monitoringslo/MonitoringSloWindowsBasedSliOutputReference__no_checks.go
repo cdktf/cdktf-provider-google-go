@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) validateGetStrin
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) validatePutMetri
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringSloWindowsBasedSliOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BigqueryReservationReplicationStatusErrorList) validateGetPar
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryReservationReplicationStatusErrorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryReservationReplicationStatusErrorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

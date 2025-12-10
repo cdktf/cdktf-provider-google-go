@@ -43,7 +43,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSmsRegionConfigOutputReference) validat
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSmsRegionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformConfigSmsRegionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSmsRegionConfigOutputReference) validat
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSmsRegionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigSmsRegionConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

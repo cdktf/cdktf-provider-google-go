@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPo
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVmwareengineClusterAutoscalingSettingsAutoscalingPoliciesCpuThresholdsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

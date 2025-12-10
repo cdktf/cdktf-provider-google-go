@@ -15,7 +15,7 @@ func (m *jsiiProxy_MemorystoreInstanceDesiredPscAutoConnectionsList) validateGet
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceDesiredPscAutoConnectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceDesiredPscAutoConnectionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

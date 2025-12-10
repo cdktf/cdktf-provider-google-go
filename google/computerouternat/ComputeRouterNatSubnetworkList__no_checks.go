@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRouterNatSubnetworkList) validateGetParameters(index *
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterNatSubnetworkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRouterNatSubnetworkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

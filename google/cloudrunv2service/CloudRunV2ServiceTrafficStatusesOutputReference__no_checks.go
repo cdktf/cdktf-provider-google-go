@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudRunV2ServiceTrafficStatusesOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTrafficStatusesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunV2ServiceTrafficStatusesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTrafficStatusesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2ServiceTrafficStatusesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

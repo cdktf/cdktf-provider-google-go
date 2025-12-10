@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -103,7 +103,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutState
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

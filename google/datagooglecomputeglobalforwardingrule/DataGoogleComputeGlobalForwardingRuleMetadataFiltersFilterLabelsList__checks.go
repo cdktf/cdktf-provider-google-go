@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataGoogleComputeGlobalForwardingRuleMetadataFiltersFilterLab
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataGoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

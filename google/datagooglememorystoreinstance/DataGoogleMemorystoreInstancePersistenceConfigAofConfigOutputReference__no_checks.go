@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleMemorystoreInstancePersistenceConfigAofConfigOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMemorystoreInstancePersistenceConfigAofConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleMemorystoreInstancePersistenceConfigAofConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMemorystoreInstancePersistenceConfigAofConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMemorystoreInstancePersistenceConfigAofConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

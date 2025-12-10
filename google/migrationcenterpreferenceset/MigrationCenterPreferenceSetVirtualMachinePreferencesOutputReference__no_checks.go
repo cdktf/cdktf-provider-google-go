@@ -43,7 +43,7 @@ func (m *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesOutputRe
 	return nil
 }
 
-func (m *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (m *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesOutputRe
 	return nil
 }
 
-func (m *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

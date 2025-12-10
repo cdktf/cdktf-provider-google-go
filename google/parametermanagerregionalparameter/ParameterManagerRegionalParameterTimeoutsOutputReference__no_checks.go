@@ -43,11 +43,11 @@ func (p *jsiiProxy_ParameterManagerRegionalParameterTimeoutsOutputReference) val
 	return nil
 }
 
-func (p *jsiiProxy_ParameterManagerRegionalParameterTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_ParameterManagerRegionalParameterTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_ParameterManagerRegionalParameterTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ParameterManagerRegionalParameterTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

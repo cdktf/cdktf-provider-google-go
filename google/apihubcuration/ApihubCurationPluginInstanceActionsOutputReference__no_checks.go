@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApihubCurationPluginInstanceActionsOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_ApihubCurationPluginInstanceActionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApihubCurationPluginInstanceActionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApihubCurationPluginInstanceActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApihubCurationPluginInstanceActionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

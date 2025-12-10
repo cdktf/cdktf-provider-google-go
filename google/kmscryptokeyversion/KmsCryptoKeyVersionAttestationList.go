@@ -39,7 +39,7 @@ type KmsCryptoKeyVersionAttestationList interface {
 	Get(index *float64) KmsCryptoKeyVersionAttestationOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationList) Get(index *float64) KmsCr
 	return returns
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersionAttestationList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := k.validateResolveParameters(_context); err != nil {
+func (k *jsiiProxy_KmsCryptoKeyVersionAttestationList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (k *jsiiProxy_KmsCryptoKeyVersionAttestationList) Resolve(_context cdktf.IR
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

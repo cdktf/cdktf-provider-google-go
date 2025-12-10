@@ -43,7 +43,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validateGetString
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validatePutSqlSer
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamBackfillAllOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

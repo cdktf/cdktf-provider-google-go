@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsO
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

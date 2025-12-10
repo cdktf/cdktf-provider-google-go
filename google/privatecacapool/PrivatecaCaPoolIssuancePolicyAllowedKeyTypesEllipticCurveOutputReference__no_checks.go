@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutp
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

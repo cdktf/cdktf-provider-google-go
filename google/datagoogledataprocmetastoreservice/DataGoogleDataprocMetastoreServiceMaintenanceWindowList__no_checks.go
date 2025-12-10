@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceMaintenanceWindowList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceMaintenanceWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceMaintenanceWindowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

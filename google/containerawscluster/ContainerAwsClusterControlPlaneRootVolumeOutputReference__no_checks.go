@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneRootVolumeOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsClusterControlPlaneRootVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAwsClusterControlPlaneRootVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsClusterControlPlaneRootVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAwsClusterControlPlaneRootVolumeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetappVolumeMountOptionsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeMountOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappVolumeMountOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeMountOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappVolumeMountOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

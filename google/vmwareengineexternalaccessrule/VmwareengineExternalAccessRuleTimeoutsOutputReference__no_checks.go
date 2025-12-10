@@ -43,11 +43,11 @@ func (v *jsiiProxy_VmwareengineExternalAccessRuleTimeoutsOutputReference) valida
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VmwareengineExternalAccessRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRuleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareengineExternalAccessRuleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputRefere
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputRefere
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

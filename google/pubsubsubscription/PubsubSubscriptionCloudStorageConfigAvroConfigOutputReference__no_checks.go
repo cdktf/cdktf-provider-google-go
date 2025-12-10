@@ -43,11 +43,11 @@ func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference
 	return nil
 }
 
-func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

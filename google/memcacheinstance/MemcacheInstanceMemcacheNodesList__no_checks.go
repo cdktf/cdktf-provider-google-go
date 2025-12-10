@@ -15,7 +15,7 @@ func (m *jsiiProxy_MemcacheInstanceMemcacheNodesList) validateGetParameters(inde
 	return nil
 }
 
-func (m *jsiiProxy_MemcacheInstanceMemcacheNodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemcacheInstanceMemcacheNodesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (d *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineChatEngineChatEngineConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

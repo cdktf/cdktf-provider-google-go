@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigOu
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigOu
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -74,7 +74,7 @@ type DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference interfac
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutDiskConfig(value *DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig)
 	PutInstanceFlexibilityPolicy(value *DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy)
 	ResetDiskConfig()
@@ -83,7 +83,7 @@ type DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference interfac
 	ResetPreemptibility()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -531,8 +531,8 @@ func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -540,7 +540,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigOutputRefe
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -601,8 +601,8 @@ func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigOutputRefe
 	)
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -610,7 +610,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigOutputRefe
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

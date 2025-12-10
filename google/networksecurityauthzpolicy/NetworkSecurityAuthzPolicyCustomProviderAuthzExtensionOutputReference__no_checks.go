@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderAuthzExtensionOutputR
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderAuthzExtensionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderAuthzExtensionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderAuthzExtensionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderAuthzExtensionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

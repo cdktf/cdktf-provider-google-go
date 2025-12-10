@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateList) valid
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

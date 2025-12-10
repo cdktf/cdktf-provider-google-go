@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplatePassthroughExtensionsAdditionalEx
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

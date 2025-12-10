@@ -85,17 +85,17 @@ func (c *jsiiProxy_ChronicleRetrohuntExecutionIntervalOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleRetrohuntExecutionIntervalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_ChronicleRetrohuntExecutionIntervalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleRetrohuntExecutionIntervalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_ChronicleRetrohuntExecutionIntervalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

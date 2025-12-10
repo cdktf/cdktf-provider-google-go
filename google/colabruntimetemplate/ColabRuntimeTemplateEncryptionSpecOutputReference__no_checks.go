@@ -43,11 +43,11 @@ func (c *jsiiProxy_ColabRuntimeTemplateEncryptionSpecOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateEncryptionSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ColabRuntimeTemplateEncryptionSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateEncryptionSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ColabRuntimeTemplateEncryptionSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

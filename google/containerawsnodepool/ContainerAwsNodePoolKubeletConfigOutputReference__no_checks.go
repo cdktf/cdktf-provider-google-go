@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAwsNodePoolKubeletConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

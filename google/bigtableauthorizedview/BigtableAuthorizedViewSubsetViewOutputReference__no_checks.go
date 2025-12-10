@@ -43,7 +43,7 @@ func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validateGetS
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validatePutF
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

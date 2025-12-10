@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingResourceLimitsOut
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingResourceLimitsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingResourceLimitsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingResourceLimitsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingResourceLimitsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

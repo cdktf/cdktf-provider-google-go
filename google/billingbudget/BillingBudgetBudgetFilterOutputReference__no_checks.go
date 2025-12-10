@@ -43,7 +43,7 @@ func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateGetStringMa
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validatePutCustomPe
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BillingBudgetBudgetFilterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

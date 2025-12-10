@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutpu
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

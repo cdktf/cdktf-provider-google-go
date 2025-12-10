@@ -43,7 +43,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

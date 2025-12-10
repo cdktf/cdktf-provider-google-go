@@ -43,11 +43,11 @@ func (e *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) val
 	return nil
 }
 
-func (e *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

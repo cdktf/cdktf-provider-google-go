@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApigeeApiProductAttributesOutputReference) validateGetStringM
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeApiProductAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeApiProductAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeApiProductAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeApiProductAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

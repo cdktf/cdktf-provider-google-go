@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementRequesterJustific
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

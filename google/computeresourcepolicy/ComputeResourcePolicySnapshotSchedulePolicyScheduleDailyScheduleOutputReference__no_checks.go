@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicyScheduleDailySched
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

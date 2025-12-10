@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsList) validateGetPara
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceCustomMetricsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

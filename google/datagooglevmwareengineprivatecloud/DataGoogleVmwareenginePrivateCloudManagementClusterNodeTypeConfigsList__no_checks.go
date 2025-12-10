@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeCo
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

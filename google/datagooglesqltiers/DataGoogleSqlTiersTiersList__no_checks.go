@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleSqlTiersTiersList) validateGetParameters(index *flo
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSqlTiersTiersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSqlTiersTiersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

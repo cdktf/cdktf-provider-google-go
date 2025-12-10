@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeRouterNatRulesActionOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterNatRulesActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeRouterNatRulesActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterNatRulesActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRouterNatRulesActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

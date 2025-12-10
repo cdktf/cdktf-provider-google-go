@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) validateGetStringMa
 	return nil
 }
 
-func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableTableColumnFamilyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicySnapshot
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

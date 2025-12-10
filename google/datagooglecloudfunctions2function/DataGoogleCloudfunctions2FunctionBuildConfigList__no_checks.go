@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

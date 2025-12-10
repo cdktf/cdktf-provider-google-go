@@ -43,11 +43,11 @@ func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTextOu
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTextOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTextOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTextOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTextOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (l *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) validateGetPar
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LookerInstancePscConfigServiceAttachmentsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ChronicleReferenceListScopeInfoOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleReferenceListScopeInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChronicleReferenceListScopeInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleReferenceListScopeInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleReferenceListScopeInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRouterNatRulesList) validateGetParameters(index *float
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterNatRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRouterNatRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

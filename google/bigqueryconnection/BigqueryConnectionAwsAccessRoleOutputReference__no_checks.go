@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) validateGetSt
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

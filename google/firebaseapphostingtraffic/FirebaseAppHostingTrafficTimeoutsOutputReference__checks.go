@@ -85,17 +85,17 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingTrafficTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (f *jsiiProxy_FirebaseAppHostingTrafficTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingTrafficTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (f *jsiiProxy_FirebaseAppHostingTrafficTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

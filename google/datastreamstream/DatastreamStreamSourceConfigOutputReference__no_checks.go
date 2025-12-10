@@ -43,7 +43,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutSqlSe
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

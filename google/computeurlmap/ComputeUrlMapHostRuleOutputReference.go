@@ -72,11 +72,11 @@ type ComputeUrlMapHostRuleOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -505,8 +505,8 @@ func (c *jsiiProxy_ComputeUrlMapHostRuleOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (c *jsiiProxy_ComputeUrlMapHostRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeUrlMapHostRuleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -514,7 +514,7 @@ func (c *jsiiProxy_ComputeUrlMapHostRuleOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -529,8 +529,8 @@ func (c *jsiiProxy_ComputeUrlMapHostRuleOutputReference) ResetDescription() {
 	)
 }
 
-func (c *jsiiProxy_ComputeUrlMapHostRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeUrlMapHostRuleOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -538,7 +538,7 @@ func (c *jsiiProxy_ComputeUrlMapHostRuleOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

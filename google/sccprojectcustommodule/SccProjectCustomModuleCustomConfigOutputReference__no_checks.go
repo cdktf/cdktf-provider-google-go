@@ -43,7 +43,7 @@ func (s *jsiiProxy_SccProjectCustomModuleCustomConfigOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_SccProjectCustomModuleCustomConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SccProjectCustomModuleCustomConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (s *jsiiProxy_SccProjectCustomModuleCustomConfigOutputReference) validatePu
 	return nil
 }
 
-func (s *jsiiProxy_SccProjectCustomModuleCustomConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SccProjectCustomModuleCustomConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

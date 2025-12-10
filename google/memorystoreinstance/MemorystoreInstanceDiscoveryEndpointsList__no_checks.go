@@ -15,7 +15,7 @@ func (m *jsiiProxy_MemorystoreInstanceDiscoveryEndpointsList) validateGetParamet
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceDiscoveryEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceDiscoveryEndpointsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

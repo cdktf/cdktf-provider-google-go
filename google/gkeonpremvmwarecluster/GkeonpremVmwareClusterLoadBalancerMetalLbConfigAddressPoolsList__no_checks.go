@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsLi
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

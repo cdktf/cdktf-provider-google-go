@@ -15,7 +15,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuildSourceCodebaseAuthorList) validateGetP
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBuildSourceCodebaseAuthorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaseAppHostingBuildSourceCodebaseAuthorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

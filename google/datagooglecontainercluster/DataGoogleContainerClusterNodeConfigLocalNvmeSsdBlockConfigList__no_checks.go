@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigLi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

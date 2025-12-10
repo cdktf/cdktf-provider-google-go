@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChronicleRuleCompilationDiagnosticsPositionList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleRuleCompilationDiagnosticsPositionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleRuleCompilationDiagnosticsPositionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

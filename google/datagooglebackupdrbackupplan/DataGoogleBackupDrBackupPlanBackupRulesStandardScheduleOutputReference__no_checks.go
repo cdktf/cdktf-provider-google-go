@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupPlanBackupRulesStandardScheduleOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBackupDrBackupPlanBackupRulesStandardScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

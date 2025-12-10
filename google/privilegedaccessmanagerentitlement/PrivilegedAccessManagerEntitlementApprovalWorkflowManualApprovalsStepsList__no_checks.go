@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowManualAppro
 	return nil
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

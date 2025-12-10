@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageManagedFolderIamMemberConditionOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_StorageManagedFolderIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageManagedFolderIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageManagedFolderIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageManagedFolderIamMemberConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

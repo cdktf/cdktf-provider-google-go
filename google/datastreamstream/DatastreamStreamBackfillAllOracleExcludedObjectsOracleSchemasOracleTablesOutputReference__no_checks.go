@@ -43,7 +43,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

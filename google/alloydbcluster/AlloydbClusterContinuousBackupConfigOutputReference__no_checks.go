@@ -43,7 +43,7 @@ func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigOutputReference) validate
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigOutputReference) validate
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

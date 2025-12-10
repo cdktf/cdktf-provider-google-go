@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationJsonOptionsLi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationJsonOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationJsonOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

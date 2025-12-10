@@ -39,7 +39,7 @@ type VmwareenginePrivateCloudVcenterList interface {
 	Get(index *float64) VmwareenginePrivateCloudVcenterOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (v *jsiiProxy_VmwareenginePrivateCloudVcenterList) Get(index *float64) Vmwa
 	return returns
 }
 
-func (v *jsiiProxy_VmwareenginePrivateCloudVcenterList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VmwareenginePrivateCloudVcenterList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (v *jsiiProxy_VmwareenginePrivateCloudVcenterList) Resolve(_context cdktf.I
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

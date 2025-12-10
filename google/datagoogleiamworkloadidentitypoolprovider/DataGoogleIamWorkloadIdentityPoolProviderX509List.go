@@ -39,7 +39,7 @@ type DataGoogleIamWorkloadIdentityPoolProviderX509List interface {
 	Get(index *float64) DataGoogleIamWorkloadIdentityPoolProviderX509OutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderX509List) Get(index 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderX509List) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderX509List) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderX509List) Resolve(_c
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

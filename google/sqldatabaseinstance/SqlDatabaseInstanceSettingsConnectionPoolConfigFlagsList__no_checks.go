@@ -15,7 +15,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList) val
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

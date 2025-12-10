@@ -43,7 +43,7 @@ func (d *jsiiProxy_DnsManagedZoneForwardingConfigOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DnsManagedZoneForwardingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DnsManagedZoneForwardingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DnsManagedZoneForwardingConfigOutputReference) validatePutTar
 	return nil
 }
 
-func (d *jsiiProxy_DnsManagedZoneForwardingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsManagedZoneForwardingConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

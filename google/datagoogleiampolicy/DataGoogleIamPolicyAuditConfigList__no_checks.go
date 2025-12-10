@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleIamPolicyAuditConfigList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleIamPolicyAuditConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleIamPolicyAuditConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

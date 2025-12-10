@@ -43,11 +43,11 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) val
 	return nil
 }
 
-func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

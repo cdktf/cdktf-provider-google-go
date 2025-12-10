@@ -43,11 +43,11 @@ func (d *jsiiProxy_DialogflowEncryptionSpecTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowEncryptionSpecTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowEncryptionSpecTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowEncryptionSpecTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowEncryptionSpecTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

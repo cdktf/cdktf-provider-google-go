@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConf
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigNodeConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigNodeConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

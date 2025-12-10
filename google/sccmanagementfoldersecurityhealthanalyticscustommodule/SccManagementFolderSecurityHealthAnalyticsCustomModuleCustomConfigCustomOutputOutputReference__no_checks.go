@@ -43,7 +43,7 @@ func (s *jsiiProxy_SccManagementFolderSecurityHealthAnalyticsCustomModuleCustomC
 	return nil
 }
 
-func (s *jsiiProxy_SccManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SccManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SccManagementFolderSecurityHealthAnalyticsCustomModuleCustomC
 	return nil
 }
 
-func (s *jsiiProxy_SccManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SccManagementFolderSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

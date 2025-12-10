@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceLocalityLbPoliciesCustomPolicy
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

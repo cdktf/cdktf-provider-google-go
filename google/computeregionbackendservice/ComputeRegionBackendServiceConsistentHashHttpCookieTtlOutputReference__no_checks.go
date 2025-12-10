@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionBackendServiceConsistentHashHttpCookieTtlOutputR
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceConsistentHashHttpCookieTtlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceConsistentHashHttpCookieTtlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceConsistentHashHttpCookieTtlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceConsistentHashHttpCookieTtlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

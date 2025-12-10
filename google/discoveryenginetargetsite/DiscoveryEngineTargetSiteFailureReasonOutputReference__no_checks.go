@@ -43,11 +43,11 @@ func (d *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

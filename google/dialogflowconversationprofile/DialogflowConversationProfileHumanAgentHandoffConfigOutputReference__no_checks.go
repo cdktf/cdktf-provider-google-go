@@ -43,7 +43,7 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentHandoffConfigOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowConversationProfileHumanAgentHandoffConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowConversationProfileHumanAgentHandoffConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DialogflowConversationProfileHumanAgentHandoffConfigOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowConversationProfileHumanAgentHandoffConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowConversationProfileHumanAgentHandoffConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

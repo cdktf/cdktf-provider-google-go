@@ -43,11 +43,11 @@ func (d *jsiiProxy_DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

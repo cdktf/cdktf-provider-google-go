@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeReservationReservationSharingPolicyOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationReservationSharingPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeReservationReservationSharingPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationReservationSharingPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeReservationReservationSharingPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

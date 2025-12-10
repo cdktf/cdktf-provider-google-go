@@ -15,7 +15,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadComplianceStatusList) validateGetPara
 	return nil
 }
 
-func (a *jsiiProxy_AssuredWorkloadsWorkloadComplianceStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AssuredWorkloadsWorkloadComplianceStatusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

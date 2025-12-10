@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataprocBatchEnvironmentConfigOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataprocBatchEnvironmentConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocBatchEnvironmentConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataprocBatchEnvironmentConfigOutputReference) validatePutPer
 	return nil
 }
 
-func (d *jsiiProxy_DataprocBatchEnvironmentConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocBatchEnvironmentConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

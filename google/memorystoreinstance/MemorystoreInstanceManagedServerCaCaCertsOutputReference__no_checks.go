@@ -43,11 +43,11 @@ func (m *jsiiProxy_MemorystoreInstanceManagedServerCaCaCertsOutputReference) val
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceManagedServerCaCaCertsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MemorystoreInstanceManagedServerCaCaCertsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceManagedServerCaCaCertsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceManagedServerCaCaCertsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

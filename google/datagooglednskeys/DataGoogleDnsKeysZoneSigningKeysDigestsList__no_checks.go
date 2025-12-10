@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysDigestsList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysDigestsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDnsKeysZoneSigningKeysDigestsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

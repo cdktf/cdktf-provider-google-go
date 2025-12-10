@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleProjectOrganizationPolicyRestorePolicyOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleProjectOrganizationPolicyRestorePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleProjectOrganizationPolicyRestorePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleProjectOrganizationPolicyRestorePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleProjectOrganizationPolicyRestorePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

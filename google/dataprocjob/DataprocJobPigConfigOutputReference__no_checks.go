@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataprocJobPigConfigOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DataprocJobPigConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocJobPigConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataprocJobPigConfigOutputReference) validatePutLoggingConfig
 	return nil
 }
 
-func (d *jsiiProxy_DataprocJobPigConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocJobPigConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

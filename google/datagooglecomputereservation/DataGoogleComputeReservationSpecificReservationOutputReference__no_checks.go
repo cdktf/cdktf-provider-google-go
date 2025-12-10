@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeReservationSpecificReservationOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservationSpecificReservationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeReservationSpecificReservationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservationSpecificReservationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeReservationSpecificReservationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

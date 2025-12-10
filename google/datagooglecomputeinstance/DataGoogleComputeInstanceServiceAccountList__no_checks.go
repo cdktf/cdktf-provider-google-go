@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceServiceAccountList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceServiceAccountList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceServiceAccountList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

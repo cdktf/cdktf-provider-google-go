@@ -15,7 +15,7 @@ func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsList) validateGetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SourcerepoRepositoryPubsubConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

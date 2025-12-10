@@ -43,7 +43,7 @@ func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsO
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsO
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

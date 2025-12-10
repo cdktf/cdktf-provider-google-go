@@ -15,7 +15,7 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

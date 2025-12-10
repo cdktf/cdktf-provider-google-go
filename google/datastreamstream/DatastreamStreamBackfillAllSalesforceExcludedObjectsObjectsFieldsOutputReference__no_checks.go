@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFi
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

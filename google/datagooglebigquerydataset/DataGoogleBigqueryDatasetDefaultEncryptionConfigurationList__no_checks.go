@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleBigqueryDatasetDefaultEncryptionConfigurationList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryDatasetDefaultEncryptionConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryDatasetDefaultEncryptionConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

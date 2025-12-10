@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsNpmPackagesList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsNpmPackagesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsNpmPackagesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

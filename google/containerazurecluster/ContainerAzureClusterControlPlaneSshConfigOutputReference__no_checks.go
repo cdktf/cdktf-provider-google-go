@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneSshConfigOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterControlPlaneSshConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAzureClusterControlPlaneSshConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterControlPlaneSshConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAzureClusterControlPlaneSshConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

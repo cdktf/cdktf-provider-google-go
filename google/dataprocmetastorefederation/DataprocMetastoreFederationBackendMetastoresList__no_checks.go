@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataprocMetastoreFederationBackendMetastoresList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreFederationBackendMetastoresList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocMetastoreFederationBackendMetastoresList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

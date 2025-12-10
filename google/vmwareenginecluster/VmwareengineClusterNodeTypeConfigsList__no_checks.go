@@ -15,7 +15,7 @@ func (v *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) validateGetParameters
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareengineClusterNodeTypeConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceAttachedDiskList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceAttachedDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceAttachedDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (f *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validateGetS
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validatePutF
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirestoreIndexFieldsVectorConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

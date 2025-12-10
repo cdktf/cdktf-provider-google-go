@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryConnectionIamBindingConditionOutputReference) validat
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryConnectionIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryConnectionIamBindingConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -80,7 +80,7 @@ type GkeonpremVmwareAdminClusterNetworkConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutDhcpIpConfig(value *GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfig)
 	PutHaControlPlaneConfig(value *GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfig)
 	PutHostConfig(value *GkeonpremVmwareAdminClusterNetworkConfigHostConfig)
@@ -92,7 +92,7 @@ type GkeonpremVmwareAdminClusterNetworkConfigOutputReference interface {
 	ResetVcenterNetwork()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -601,8 +601,8 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigOutputReference) Inte
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -610,7 +610,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigOutputReference) Inte
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -701,8 +701,8 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigOutputReference) Rese
 	)
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -710,7 +710,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterNetworkConfigOutputReference) Reso
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

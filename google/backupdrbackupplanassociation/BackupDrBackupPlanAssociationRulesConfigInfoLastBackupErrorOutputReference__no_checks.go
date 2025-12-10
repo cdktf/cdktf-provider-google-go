@@ -43,11 +43,11 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorOu
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

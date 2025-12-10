@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencySche
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleRedisClusterAutomatedBackupConfigFixedFrequencyScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

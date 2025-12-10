@@ -29,9 +29,9 @@ func (t *jsiiProxy_TranscoderJobConfigManifestsList) validateGetParameters(index
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigManifestsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (t *jsiiProxy_TranscoderJobConfigManifestsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructureTimeoutsOutputReferen
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructureTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructureTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructureTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructureTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

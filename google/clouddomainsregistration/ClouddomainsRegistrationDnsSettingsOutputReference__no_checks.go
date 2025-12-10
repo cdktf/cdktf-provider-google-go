@@ -43,7 +43,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsOutputReference) validateP
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

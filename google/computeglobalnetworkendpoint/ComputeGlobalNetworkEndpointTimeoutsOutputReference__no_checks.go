@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeGlobalNetworkEndpointTimeoutsOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ComputeGlobalNetworkEndpointTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeGlobalNetworkEndpointTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeGlobalNetworkEndpointTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeGlobalNetworkEndpointTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

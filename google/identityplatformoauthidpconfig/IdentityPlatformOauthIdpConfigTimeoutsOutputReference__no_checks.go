@@ -43,11 +43,11 @@ func (i *jsiiProxy_IdentityPlatformOauthIdpConfigTimeoutsOutputReference) valida
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformOauthIdpConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformOauthIdpConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformOauthIdpConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformOauthIdpConfigTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

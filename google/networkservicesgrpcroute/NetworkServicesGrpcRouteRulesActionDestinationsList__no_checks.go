@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkServicesGrpcRouteRulesActionDestinationsList) validate
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesGrpcRouteRulesActionDestinationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesGrpcRouteRulesActionDestinationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

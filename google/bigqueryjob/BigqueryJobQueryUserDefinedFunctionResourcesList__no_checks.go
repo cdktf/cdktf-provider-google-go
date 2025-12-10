@@ -15,7 +15,7 @@ func (b *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesList) validateGet
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

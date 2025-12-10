@@ -43,11 +43,11 @@ func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

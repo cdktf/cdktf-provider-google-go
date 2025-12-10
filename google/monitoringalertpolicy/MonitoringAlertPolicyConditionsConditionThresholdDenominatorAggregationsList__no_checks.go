@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorA
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

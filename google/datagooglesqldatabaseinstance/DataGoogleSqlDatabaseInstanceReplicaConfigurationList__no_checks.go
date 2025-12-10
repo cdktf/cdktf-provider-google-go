@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceReplicaConfigurationList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceReplicaConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceReplicaConfigurationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

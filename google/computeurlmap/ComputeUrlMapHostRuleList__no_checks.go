@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeUrlMapHostRuleList) validateGetParameters(index *float
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapHostRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeUrlMapHostRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

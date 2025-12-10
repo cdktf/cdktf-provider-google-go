@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionRequestMirrorPolicyOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

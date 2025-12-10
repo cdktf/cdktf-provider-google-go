@@ -43,11 +43,11 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociationTimeoutsOutputReference) validat
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupDrBackupPlanAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupDrBackupPlanAssociationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

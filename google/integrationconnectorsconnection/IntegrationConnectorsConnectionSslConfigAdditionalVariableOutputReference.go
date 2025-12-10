@@ -79,7 +79,7 @@ type IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference i
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutEncryptionKeyValue(value *IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValue)
 	PutSecretValue(value *IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValue)
 	ResetBooleanValue()
@@ -89,7 +89,7 @@ type IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference i
 	ResetStringValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -589,8 +589,8 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOut
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -598,7 +598,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOut
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -667,8 +667,8 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOut
 	)
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -676,7 +676,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOut
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

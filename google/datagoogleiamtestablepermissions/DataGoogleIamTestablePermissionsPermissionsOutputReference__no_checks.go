@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissionsPermissionsOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleIamTestablePermissionsPermissionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleIamTestablePermissionsPermissionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleIamTestablePermissionsPermissionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleIamTestablePermissionsPermissionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

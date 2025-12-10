@@ -43,11 +43,11 @@ func (c *jsiiProxy_ChronicleWatchlistTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleWatchlistTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChronicleWatchlistTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleWatchlistTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleWatchlistTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

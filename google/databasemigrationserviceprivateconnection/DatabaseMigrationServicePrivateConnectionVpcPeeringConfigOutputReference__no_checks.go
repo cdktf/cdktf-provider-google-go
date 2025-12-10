@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutp
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

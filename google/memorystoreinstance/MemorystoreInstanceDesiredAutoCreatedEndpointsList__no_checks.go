@@ -15,7 +15,7 @@ func (m *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsList) validateG
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceDesiredAutoCreatedEndpointsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

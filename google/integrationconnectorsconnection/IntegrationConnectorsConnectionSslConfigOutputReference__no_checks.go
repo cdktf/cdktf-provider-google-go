@@ -43,7 +43,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) vali
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) vali
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

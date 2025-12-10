@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedC
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

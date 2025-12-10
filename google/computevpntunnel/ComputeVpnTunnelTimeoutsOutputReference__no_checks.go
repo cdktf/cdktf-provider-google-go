@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeVpnTunnelTimeoutsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (c *jsiiProxy_ComputeVpnTunnelTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeVpnTunnelTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeVpnTunnelTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeVpnTunnelTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

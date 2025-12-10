@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterNodeConfigGuestAcceleratorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

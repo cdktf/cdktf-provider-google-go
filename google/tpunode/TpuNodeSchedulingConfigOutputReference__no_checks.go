@@ -43,11 +43,11 @@ func (t *jsiiProxy_TpuNodeSchedulingConfigOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (t *jsiiProxy_TpuNodeSchedulingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TpuNodeSchedulingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TpuNodeSchedulingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TpuNodeSchedulingConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

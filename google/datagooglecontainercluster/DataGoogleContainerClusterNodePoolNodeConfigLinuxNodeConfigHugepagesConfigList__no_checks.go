@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

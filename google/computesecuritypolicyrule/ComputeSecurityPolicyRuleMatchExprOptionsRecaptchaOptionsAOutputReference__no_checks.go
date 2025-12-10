@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsAOut
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDnsManagedZonesManagedZonesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

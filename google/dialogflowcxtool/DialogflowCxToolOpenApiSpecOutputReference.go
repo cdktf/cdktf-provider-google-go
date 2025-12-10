@@ -72,7 +72,7 @@ type DialogflowCxToolOpenApiSpecOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAuthentication(value *DialogflowCxToolOpenApiSpecAuthentication)
 	PutServiceDirectoryConfig(value *DialogflowCxToolOpenApiSpecServiceDirectoryConfig)
 	PutTlsConfig(value *DialogflowCxToolOpenApiSpecTlsConfig)
@@ -81,7 +81,7 @@ type DialogflowCxToolOpenApiSpecOutputReference interface {
 	ResetTlsConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -508,8 +508,8 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -517,7 +517,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) InterpolationForA
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -581,8 +581,8 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) ResetTlsConfig() 
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -590,7 +590,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPosta
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

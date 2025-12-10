@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesTagCondit
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

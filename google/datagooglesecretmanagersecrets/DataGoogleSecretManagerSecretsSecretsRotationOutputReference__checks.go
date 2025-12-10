@@ -85,17 +85,17 @@ func (d *jsiiProxy_DataGoogleSecretManagerSecretsSecretsRotationOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerSecretsSecretsRotationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataGoogleSecretManagerSecretsSecretsRotationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerSecretsSecretsRotationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataGoogleSecretManagerSecretsSecretsRotationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

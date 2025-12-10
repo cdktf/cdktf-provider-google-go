@@ -43,7 +43,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsOutputReference) validateGetS
 	return nil
 }
 
-func (s *jsiiProxy_SecurityposturePosturePolicySetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityposturePosturePolicySetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsOutputReference) validatePutP
 	return nil
 }
 
-func (s *jsiiProxy_SecurityposturePosturePolicySetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityposturePosturePolicySetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

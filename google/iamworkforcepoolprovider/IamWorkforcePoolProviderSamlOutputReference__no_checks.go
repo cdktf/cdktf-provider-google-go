@@ -43,11 +43,11 @@ func (i *jsiiProxy_IamWorkforcePoolProviderSamlOutputReference) validateGetStrin
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkforcePoolProviderSamlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamWorkforcePoolProviderSamlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkforcePoolProviderSamlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamWorkforcePoolProviderSamlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

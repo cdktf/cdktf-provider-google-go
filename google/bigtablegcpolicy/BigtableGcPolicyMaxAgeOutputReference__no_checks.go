@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigtableGcPolicyMaxAgeOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (b *jsiiProxy_BigtableGcPolicyMaxAgeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigtableGcPolicyMaxAgeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigtableGcPolicyMaxAgeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableGcPolicyMaxAgeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

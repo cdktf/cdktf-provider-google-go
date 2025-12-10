@@ -43,11 +43,11 @@ func (n *jsiiProxy_NotebooksRuntimeMetricsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeMetricsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotebooksRuntimeMetricsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeMetricsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotebooksRuntimeMetricsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

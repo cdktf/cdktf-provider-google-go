@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceHaPolicyLeaderNetworkEnd
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

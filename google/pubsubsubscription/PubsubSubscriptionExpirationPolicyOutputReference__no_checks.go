@@ -43,11 +43,11 @@ func (p *jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference) validateGe
 	return nil
 }
 
-func (p *jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

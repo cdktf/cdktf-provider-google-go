@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeVsphereConfigList) vali
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeVsphereConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeVsphereConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

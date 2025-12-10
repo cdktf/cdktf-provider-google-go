@@ -15,7 +15,7 @@ func (a *jsiiProxy_AppEngineStandardAppVersionHandlersList) validateGetParameter
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineStandardAppVersionHandlersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppEngineStandardAppVersionHandlersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

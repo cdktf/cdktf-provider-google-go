@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageBucketCustomPlacementConfigOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketCustomPlacementConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageBucketCustomPlacementConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketCustomPlacementConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageBucketCustomPlacementConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

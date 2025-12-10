@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

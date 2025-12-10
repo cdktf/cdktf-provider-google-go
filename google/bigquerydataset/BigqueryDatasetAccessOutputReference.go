@@ -89,7 +89,7 @@ type BigqueryDatasetAccessOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCondition(value *BigqueryDatasetAccessCondition)
 	PutDataset(value *BigqueryDatasetAccessDataset)
 	PutRoutine(value *BigqueryDatasetAccessRoutine)
@@ -106,7 +106,7 @@ type BigqueryDatasetAccessOutputReference interface {
 	ResetView()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -708,8 +708,8 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -717,7 +717,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) InterpolationForAttribu
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -848,8 +848,8 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) ResetView() {
 	)
 }
 
-func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -857,7 +857,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

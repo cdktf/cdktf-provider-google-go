@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCatalogEntryBigqueryDateShardedSpecOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogEntryBigqueryDateShardedSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCatalogEntryBigqueryDateShardedSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogEntryBigqueryDateShardedSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCatalogEntryBigqueryDateShardedSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

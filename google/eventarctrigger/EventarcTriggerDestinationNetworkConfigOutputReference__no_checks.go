@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventarcTriggerDestinationNetworkConfigOutputReference) valid
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTriggerDestinationNetworkConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventarcTriggerDestinationNetworkConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTriggerDestinationNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcTriggerDestinationNetworkConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

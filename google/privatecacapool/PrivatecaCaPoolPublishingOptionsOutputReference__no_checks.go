@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) validateGetS
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

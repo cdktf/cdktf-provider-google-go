@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigOu
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

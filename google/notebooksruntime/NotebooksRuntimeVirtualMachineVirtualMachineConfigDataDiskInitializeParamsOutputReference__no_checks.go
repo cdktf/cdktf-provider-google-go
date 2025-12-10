@@ -43,11 +43,11 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskIni
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

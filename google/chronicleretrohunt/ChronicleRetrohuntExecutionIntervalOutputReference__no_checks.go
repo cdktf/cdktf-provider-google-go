@@ -43,11 +43,11 @@ func (c *jsiiProxy_ChronicleRetrohuntExecutionIntervalOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleRetrohuntExecutionIntervalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChronicleRetrohuntExecutionIntervalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleRetrohuntExecutionIntervalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleRetrohuntExecutionIntervalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateGetStringMa
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validatePutCommonNa
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeTargetServerSSlInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) validateGet
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigMultiTenantOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

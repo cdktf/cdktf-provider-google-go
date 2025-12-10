@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineNetworkPolicyInternetAccessList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineNetworkPolicyInternetAccessList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVmwareengineNetworkPolicyInternetAccessList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

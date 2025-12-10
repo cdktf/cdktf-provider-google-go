@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesWarningsOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesWarningsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesWarningsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesWarningsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesWarningsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

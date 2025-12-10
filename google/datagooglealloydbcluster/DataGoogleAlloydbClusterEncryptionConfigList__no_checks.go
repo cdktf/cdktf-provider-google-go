@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleAlloydbClusterEncryptionConfigList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbClusterEncryptionConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleAlloydbClusterEncryptionConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

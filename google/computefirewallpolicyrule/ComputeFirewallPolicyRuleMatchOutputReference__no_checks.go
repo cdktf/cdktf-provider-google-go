@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validatePutSrc
 	return nil
 }
 
-func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

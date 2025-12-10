@@ -39,7 +39,7 @@ type RedisInstanceMaintenanceScheduleList interface {
 	Get(index *float64) RedisInstanceMaintenanceScheduleOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (r *jsiiProxy_RedisInstanceMaintenanceScheduleList) Get(index *float64) Red
 	return returns
 }
 
-func (r *jsiiProxy_RedisInstanceMaintenanceScheduleList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RedisInstanceMaintenanceScheduleList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (r *jsiiProxy_RedisInstanceMaintenanceScheduleList) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

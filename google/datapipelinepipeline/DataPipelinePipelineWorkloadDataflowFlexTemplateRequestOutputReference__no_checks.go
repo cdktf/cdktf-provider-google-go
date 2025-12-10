@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigYumOutputReference) validat
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigYumOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigYumOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigYumOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigYumOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

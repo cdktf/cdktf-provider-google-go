@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterResourceUsageExportConfigBigqueryDe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterResourceUsageExportConfigBigqueryDestinationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterResourceUsageExportConfigBigqueryDestinationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleBigqueryDatasetExternalDatasetReferenceList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryDatasetExternalDatasetReferenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryDatasetExternalDatasetReferenceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

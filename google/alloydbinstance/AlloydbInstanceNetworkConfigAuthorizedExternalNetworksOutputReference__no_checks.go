@@ -43,11 +43,11 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputR
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

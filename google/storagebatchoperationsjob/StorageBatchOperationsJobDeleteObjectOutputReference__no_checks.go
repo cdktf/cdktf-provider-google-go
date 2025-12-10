@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageBatchOperationsJobDeleteObjectOutputReference) validat
 	return nil
 }
 
-func (s *jsiiProxy_StorageBatchOperationsJobDeleteObjectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageBatchOperationsJobDeleteObjectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageBatchOperationsJobDeleteObjectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageBatchOperationsJobDeleteObjectOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

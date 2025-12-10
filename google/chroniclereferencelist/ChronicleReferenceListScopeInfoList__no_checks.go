@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChronicleReferenceListScopeInfoList) validateGetParameters(in
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleReferenceListScopeInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleReferenceListScopeInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

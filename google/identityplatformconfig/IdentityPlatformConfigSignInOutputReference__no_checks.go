@@ -43,7 +43,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) validateGetStrin
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) validatePutPhone
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigSignInOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

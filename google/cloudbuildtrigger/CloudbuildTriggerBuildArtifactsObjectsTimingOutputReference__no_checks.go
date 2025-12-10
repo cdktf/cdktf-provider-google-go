@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

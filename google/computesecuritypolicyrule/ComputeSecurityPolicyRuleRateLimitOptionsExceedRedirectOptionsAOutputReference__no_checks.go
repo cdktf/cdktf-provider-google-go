@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOption
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

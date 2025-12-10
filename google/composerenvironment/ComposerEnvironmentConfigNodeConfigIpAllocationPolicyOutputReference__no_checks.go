@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputRe
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

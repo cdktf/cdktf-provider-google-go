@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigO
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

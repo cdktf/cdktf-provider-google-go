@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleCloudbuildTriggerWebhookConfigOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTriggerWebhookConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCloudbuildTriggerWebhookConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTriggerWebhookConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudbuildTriggerWebhookConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

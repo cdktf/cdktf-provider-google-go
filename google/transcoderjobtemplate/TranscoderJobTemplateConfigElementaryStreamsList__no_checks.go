@@ -15,7 +15,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsList) validateGet
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigElementaryStreamsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

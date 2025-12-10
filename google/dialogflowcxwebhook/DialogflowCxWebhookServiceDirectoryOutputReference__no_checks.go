@@ -43,7 +43,7 @@ func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryOutputReference) validateP
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxWebhookServiceDirectoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

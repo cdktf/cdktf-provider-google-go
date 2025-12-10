@@ -43,11 +43,11 @@ func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsVideoStreamH264HlgOutputR
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsVideoStreamH264HlgOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsVideoStreamH264HlgOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsVideoStreamH264HlgOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsVideoStreamH264HlgOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

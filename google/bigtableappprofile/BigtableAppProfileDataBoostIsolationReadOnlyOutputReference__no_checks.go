@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigtableAppProfileDataBoostIsolationReadOnlyOutputReference) 
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAppProfileDataBoostIsolationReadOnlyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigtableAppProfileDataBoostIsolationReadOnlyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAppProfileDataBoostIsolationReadOnlyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableAppProfileDataBoostIsolationReadOnlyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleOrganizationsOrganizationsList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOrganizationsOrganizationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleOrganizationsOrganizationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

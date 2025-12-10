@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinit
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

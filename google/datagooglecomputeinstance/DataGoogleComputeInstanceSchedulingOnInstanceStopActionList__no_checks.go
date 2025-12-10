@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingOnInstanceStopActionList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingOnInstanceStopActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingOnInstanceStopActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

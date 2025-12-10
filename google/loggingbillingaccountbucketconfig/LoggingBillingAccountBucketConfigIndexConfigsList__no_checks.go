@@ -15,7 +15,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsList) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

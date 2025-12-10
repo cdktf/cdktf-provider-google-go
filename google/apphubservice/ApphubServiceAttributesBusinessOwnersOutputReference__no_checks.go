@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApphubServiceAttributesBusinessOwnersOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_ApphubServiceAttributesBusinessOwnersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApphubServiceAttributesBusinessOwnersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApphubServiceAttributesBusinessOwnersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApphubServiceAttributesBusinessOwnersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

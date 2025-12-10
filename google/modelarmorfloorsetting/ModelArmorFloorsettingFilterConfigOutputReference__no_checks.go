@@ -43,7 +43,7 @@ func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigOutputReference) validateGe
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigOutputReference) validatePu
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

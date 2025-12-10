@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionCommitmentResourcesOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionCommitmentResourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionCommitmentResourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionCommitmentResourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionCommitmentResourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

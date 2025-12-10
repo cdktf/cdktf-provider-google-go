@@ -43,11 +43,11 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstra
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

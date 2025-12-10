@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoList) valid
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

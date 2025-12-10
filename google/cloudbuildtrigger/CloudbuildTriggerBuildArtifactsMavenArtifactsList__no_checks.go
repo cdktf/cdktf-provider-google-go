@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

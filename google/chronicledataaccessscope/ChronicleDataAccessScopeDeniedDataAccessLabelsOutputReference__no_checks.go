@@ -43,7 +43,7 @@ func (c *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

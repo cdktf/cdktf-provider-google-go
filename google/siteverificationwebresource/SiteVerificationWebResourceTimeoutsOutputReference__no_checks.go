@@ -43,11 +43,11 @@ func (s *jsiiProxy_SiteVerificationWebResourceTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SiteVerificationWebResourceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SiteVerificationWebResourceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SiteVerificationWebResourceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SiteVerificationWebResourceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageHmacKeyTimeoutsOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (s *jsiiProxy_StorageHmacKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageHmacKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageHmacKeyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageHmacKeyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

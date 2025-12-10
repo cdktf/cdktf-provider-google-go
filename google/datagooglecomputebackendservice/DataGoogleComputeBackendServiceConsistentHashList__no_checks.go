@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceConsistentHashList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceConsistentHashList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceConsistentHashList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

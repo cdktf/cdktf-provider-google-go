@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOut
 	return nil
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOut
 	return nil
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryConnectionAzureOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

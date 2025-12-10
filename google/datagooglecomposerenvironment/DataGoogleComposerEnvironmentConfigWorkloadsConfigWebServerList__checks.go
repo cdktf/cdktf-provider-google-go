@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerLi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

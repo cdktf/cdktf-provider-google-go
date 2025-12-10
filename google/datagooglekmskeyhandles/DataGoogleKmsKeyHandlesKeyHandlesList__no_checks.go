@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleKmsKeyHandlesKeyHandlesList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleKmsKeyHandlesKeyHandlesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleKmsKeyHandlesKeyHandlesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

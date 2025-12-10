@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkConnectivityInternalRangeAllocationOptionsOutputRefere
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRangeAllocationOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkConnectivityInternalRangeAllocationOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRangeAllocationOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectivityInternalRangeAllocationOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

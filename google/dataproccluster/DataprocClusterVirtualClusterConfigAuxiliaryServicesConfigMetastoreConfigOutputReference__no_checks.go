@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMet
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

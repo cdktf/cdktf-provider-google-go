@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestina
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

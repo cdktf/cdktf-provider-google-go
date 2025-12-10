@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateOutputReference) validateGetStrin
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateOutputReference) validatePutVpcAc
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

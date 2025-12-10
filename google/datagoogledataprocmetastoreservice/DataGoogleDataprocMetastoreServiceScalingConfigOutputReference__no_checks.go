@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceScalingConfigOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceScalingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceScalingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceScalingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceScalingConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

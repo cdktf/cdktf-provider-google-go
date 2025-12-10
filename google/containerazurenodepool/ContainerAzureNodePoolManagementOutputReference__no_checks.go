@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAzureNodePoolManagementOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureNodePoolManagementOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAzureNodePoolManagementOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureNodePoolManagementOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAzureNodePoolManagementOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

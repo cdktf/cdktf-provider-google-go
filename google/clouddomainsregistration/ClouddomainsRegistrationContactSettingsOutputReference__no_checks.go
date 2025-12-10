@@ -43,7 +43,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

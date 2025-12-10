@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudbuildTriggerWebhookConfigOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerWebhookConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudbuildTriggerWebhookConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerWebhookConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildTriggerWebhookConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeHubFeatureResourceStateOutputReference) validateGetStringM
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureResourceStateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeHubFeatureResourceStateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureResourceStateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubFeatureResourceStateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

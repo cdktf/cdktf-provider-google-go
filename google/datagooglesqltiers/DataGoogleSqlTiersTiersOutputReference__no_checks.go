@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleSqlTiersTiersOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSqlTiersTiersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleSqlTiersTiersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSqlTiersTiersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSqlTiersTiersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

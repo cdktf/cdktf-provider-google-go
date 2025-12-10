@@ -85,9 +85,9 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -104,9 +104,9 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validatePutApplication
 	return nil
 }
 
-func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

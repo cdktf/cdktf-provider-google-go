@@ -43,7 +43,7 @@ func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

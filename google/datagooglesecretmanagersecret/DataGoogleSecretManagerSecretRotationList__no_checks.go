@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerSecretRotationList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerSecretRotationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSecretManagerSecretRotationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

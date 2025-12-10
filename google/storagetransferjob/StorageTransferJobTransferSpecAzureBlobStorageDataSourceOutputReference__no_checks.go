@@ -43,7 +43,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutpu
 	return nil
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutpu
 	return nil
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

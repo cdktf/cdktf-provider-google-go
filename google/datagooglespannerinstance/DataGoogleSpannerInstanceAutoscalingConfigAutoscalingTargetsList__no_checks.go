@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsL
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSpannerInstanceAutoscalingConfigAutoscalingTargetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

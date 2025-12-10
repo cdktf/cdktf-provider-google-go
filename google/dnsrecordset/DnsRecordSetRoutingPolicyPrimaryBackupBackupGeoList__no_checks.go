@@ -15,7 +15,7 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

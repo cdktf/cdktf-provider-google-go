@@ -43,11 +43,11 @@ func (c *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputRefe
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

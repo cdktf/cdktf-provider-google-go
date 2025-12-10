@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleBigqueryTableExternalCatalogTableOptionsStorageDesc
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

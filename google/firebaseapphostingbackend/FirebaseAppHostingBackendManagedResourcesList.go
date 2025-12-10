@@ -39,7 +39,7 @@ type FirebaseAppHostingBackendManagedResourcesList interface {
 	Get(index *float64) FirebaseAppHostingBackendManagedResourcesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesList) Get(index *flo
 	return returns
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesList) Resolve(_conte
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

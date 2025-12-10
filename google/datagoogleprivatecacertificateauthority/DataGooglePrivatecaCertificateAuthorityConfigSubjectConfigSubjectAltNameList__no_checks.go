@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSub
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectAltNameList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectAltNameList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

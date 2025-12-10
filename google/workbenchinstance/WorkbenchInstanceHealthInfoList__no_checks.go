@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkbenchInstanceHealthInfoList) validateGetParameters(index 
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceHealthInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkbenchInstanceHealthInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

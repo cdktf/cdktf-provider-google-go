@@ -43,11 +43,11 @@ func (s *jsiiProxy_SqlUserPasswordPolicyStatusOutputReference) validateGetString
 	return nil
 }
 
-func (s *jsiiProxy_SqlUserPasswordPolicyStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlUserPasswordPolicyStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SqlUserPasswordPolicyStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlUserPasswordPolicyStatusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (v *jsiiProxy_VmwareenginePrivateCloudTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (v *jsiiProxy_VmwareenginePrivateCloudTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VmwareenginePrivateCloudTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VmwareenginePrivateCloudTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareenginePrivateCloudTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

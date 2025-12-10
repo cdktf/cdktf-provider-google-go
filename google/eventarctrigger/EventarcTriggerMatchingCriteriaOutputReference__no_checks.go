@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) validateGetSt
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

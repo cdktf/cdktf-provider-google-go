@@ -43,7 +43,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReferenc
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

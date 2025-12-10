@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppEngineStandardAppVersionAutomaticScalingStandardSchedulerS
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

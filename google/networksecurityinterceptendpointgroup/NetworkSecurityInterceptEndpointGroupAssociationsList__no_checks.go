@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationsList) valida
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

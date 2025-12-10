@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

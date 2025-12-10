@@ -15,7 +15,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfigAllowlistedCertificatesList) val
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfigAllowlistedCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CertificateManagerTrustConfigAllowlistedCertificatesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

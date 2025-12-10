@@ -15,7 +15,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigList) vali
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationPscConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

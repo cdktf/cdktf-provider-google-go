@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyCo
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

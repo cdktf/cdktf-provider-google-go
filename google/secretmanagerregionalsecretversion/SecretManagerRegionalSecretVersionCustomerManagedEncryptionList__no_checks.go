@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecretManagerRegionalSecretVersionCustomerManagedEncryptionLi
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretVersionCustomerManagedEncryptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecretManagerRegionalSecretVersionCustomerManagedEncryptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistorySe
 	return nil
 }
 
-func (d *jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

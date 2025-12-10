@@ -43,7 +43,7 @@ func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validateP
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

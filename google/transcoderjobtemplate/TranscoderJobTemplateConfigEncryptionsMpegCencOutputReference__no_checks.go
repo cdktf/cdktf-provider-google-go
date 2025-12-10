@@ -43,11 +43,11 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsMpegCencOutputReference
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsMpegCencOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsMpegCencOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsMpegCencOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsMpegCencOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

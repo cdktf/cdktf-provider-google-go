@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateGetStri
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

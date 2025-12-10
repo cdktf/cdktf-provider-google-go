@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionEventingRuntimeDataStatusList)
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionEventingRuntimeDataStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionEventingRuntimeDataStatusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

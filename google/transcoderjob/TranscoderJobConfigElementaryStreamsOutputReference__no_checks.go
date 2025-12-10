@@ -43,7 +43,7 @@ func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) validate
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) validate
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

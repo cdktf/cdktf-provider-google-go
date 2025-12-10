@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigO
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

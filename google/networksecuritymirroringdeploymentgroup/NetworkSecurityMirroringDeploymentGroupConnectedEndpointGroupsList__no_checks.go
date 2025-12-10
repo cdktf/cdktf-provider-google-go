@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringDeploymentGroupConnectedEndpointGroup
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringDeploymentGroupConnectedEndpointGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkSecurityMirroringDeploymentGroupConnectedEndpointGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

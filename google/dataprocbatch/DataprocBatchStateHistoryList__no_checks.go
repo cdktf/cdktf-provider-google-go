@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataprocBatchStateHistoryList) validateGetParameters(index *f
 	return nil
 }
 
-func (d *jsiiProxy_DataprocBatchStateHistoryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocBatchStateHistoryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

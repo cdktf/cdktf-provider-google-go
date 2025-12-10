@@ -43,11 +43,11 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadPartnerPermissionsOutputReference) va
 	return nil
 }
 
-func (a *jsiiProxy_AssuredWorkloadsWorkloadPartnerPermissionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AssuredWorkloadsWorkloadPartnerPermissionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AssuredWorkloadsWorkloadPartnerPermissionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AssuredWorkloadsWorkloadPartnerPermissionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

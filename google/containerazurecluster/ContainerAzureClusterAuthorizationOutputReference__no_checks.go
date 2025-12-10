@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) validatePu
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAzureClusterAuthorizationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

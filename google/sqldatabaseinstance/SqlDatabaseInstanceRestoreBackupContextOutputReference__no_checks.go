@@ -43,11 +43,11 @@ func (s *jsiiProxy_SqlDatabaseInstanceRestoreBackupContextOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceRestoreBackupContextOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlDatabaseInstanceRestoreBackupContextOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceRestoreBackupContextOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstanceRestoreBackupContextOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

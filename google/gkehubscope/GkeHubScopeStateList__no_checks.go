@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeHubScopeStateList) validateGetParameters(index *float64) e
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubScopeStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubScopeStateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

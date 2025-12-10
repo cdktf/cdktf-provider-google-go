@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleRedisInstancePersistenceConfigList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleRedisInstancePersistenceConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleRedisInstancePersistenceConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

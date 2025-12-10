@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleVmwareengineExternalAccessRuleSourceIpRangesOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineExternalAccessRuleSourceIpRangesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleVmwareengineExternalAccessRuleSourceIpRangesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineExternalAccessRuleSourceIpRangesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVmwareengineExternalAccessRuleSourceIpRangesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

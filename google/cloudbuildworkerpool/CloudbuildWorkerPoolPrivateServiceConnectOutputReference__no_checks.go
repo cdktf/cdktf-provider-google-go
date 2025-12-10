@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (b *jsiiProxy_BillingBudgetAmountOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudgetAmountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BillingBudgetAmountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BillingBudgetAmountOutputReference) validatePutSpecifiedAmoun
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudgetAmountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BillingBudgetAmountOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

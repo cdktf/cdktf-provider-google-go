@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsJavascriptUdfList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsJavascriptUdfList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsJavascriptUdfList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

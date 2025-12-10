@@ -43,11 +43,11 @@ func (f *jsiiProxy_FirebaseAppHostingTrafficTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingTrafficTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirebaseAppHostingTrafficTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingTrafficTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaseAppHostingTrafficTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

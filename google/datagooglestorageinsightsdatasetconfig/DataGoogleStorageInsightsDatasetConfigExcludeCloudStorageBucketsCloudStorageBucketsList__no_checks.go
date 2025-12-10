@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleStorageInsightsDatasetConfigExcludeCloudStorageBuck
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleStorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

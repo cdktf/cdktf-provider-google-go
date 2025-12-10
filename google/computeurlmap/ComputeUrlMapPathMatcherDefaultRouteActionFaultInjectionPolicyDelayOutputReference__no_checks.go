@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionFaultInjectionPolic
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionFaultInjectionPolic
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

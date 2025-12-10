@@ -15,7 +15,7 @@ func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsL
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAsymmetricAutoscalingOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -85,17 +85,17 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPosta
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

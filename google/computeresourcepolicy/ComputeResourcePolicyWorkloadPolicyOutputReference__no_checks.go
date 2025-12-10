@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeResourcePolicyWorkloadPolicyOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResourcePolicyWorkloadPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeResourcePolicyWorkloadPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResourcePolicyWorkloadPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeResourcePolicyWorkloadPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

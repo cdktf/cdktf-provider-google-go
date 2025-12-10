@@ -43,7 +43,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

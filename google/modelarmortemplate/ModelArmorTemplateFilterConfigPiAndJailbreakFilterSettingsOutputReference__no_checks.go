@@ -43,11 +43,11 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigPiAndJailbreakFilterSettingsOut
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorTemplateFilterConfigPiAndJailbreakFilterSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelArmorTemplateFilterConfigPiAndJailbreakFilterSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorTemplateFilterConfigPiAndJailbreakFilterSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelArmorTemplateFilterConfigPiAndJailbreakFilterSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

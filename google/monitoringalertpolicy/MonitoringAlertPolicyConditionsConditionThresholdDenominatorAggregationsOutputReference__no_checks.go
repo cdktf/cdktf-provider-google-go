@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorA
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

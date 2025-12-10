@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

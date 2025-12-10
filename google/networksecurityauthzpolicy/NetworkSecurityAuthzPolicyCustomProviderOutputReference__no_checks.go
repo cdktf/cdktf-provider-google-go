@@ -43,7 +43,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) vali
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) vali
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkSecurityAuthzPolicyCustomProviderOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

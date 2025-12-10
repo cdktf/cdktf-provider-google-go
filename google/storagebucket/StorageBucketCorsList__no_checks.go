@@ -15,7 +15,7 @@ func (s *jsiiProxy_StorageBucketCorsList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketCorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageBucketCorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

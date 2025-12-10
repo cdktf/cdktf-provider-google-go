@@ -43,11 +43,11 @@ func (b *jsiiProxy_BillingAccountIamBindingConditionOutputReference) validateGet
 	return nil
 }
 
-func (b *jsiiProxy_BillingAccountIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BillingAccountIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BillingAccountIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BillingAccountIamBindingConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

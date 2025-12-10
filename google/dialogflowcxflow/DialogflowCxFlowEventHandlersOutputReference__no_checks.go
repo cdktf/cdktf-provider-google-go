@@ -43,7 +43,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) validateGetStri
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) validatePutTrig
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

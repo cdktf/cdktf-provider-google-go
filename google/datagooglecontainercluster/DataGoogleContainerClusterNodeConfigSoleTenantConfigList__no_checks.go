@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigSoleTenantConfigList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigSoleTenantConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigSoleTenantConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

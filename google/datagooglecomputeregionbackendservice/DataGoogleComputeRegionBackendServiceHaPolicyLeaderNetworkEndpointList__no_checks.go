@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceHaPolicyLeaderNetworkEnd
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

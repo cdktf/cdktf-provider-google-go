@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutp
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutp
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

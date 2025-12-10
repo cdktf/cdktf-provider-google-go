@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigContentMatchersList) validateGetPa
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfigContentMatchersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringUptimeCheckConfigContentMatchersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

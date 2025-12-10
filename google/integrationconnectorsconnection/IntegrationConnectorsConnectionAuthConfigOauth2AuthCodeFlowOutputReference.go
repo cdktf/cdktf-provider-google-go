@@ -77,7 +77,7 @@ type IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference 
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutClientSecret(value *IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecret)
 	ResetAuthUri()
 	ResetClientId()
@@ -86,7 +86,7 @@ type IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference 
 	ResetScopes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -566,8 +566,8 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOu
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -575,7 +575,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOu
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -633,8 +633,8 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOu
 	)
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -642,7 +642,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOu
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

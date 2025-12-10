@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterWorkloadIdentityConfigList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterWorkloadIdentityConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterWorkloadIdentityConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

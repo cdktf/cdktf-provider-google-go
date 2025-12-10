@@ -43,7 +43,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) validateGetSt
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) validatePutSe
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

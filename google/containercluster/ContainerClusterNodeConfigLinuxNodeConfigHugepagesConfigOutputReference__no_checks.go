@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutpu
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

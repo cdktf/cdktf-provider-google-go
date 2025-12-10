@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeImageGuestOsFeaturesOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_ComputeImageGuestOsFeaturesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeImageGuestOsFeaturesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeImageGuestOsFeaturesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeImageGuestOsFeaturesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

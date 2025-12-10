@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputePacketMirroringMirroredResourcesSubnetworksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

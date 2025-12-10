@@ -15,7 +15,7 @@ func (t *jsiiProxy_TranscoderJobConfigOverlaysList) validateGetParameters(index 
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigOverlaysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobConfigOverlaysList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

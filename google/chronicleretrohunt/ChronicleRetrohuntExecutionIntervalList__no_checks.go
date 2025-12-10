@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChronicleRetrohuntExecutionIntervalList) validateGetParameter
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleRetrohuntExecutionIntervalList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleRetrohuntExecutionIntervalList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

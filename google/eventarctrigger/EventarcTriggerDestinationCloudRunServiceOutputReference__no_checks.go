@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference) val
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersionsVersionsList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersionsVersionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleKmsCryptoKeyVersionsVersionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

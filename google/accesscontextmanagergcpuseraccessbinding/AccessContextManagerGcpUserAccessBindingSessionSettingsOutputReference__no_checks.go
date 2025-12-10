@@ -43,11 +43,11 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutput
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

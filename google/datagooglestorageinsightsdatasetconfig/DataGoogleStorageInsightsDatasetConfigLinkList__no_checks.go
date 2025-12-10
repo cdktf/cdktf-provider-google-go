@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleStorageInsightsDatasetConfigLinkList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageInsightsDatasetConfigLinkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleStorageInsightsDatasetConfigLinkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

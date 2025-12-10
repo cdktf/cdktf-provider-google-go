@@ -43,11 +43,11 @@ func (r *jsiiProxy_RecaptchaEnterpriseKeyTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (r *jsiiProxy_RecaptchaEnterpriseKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RecaptchaEnterpriseKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RecaptchaEnterpriseKeyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RecaptchaEnterpriseKeyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

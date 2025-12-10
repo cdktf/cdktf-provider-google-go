@@ -43,11 +43,11 @@ func (k *jsiiProxy_KmsKeyRingTimeoutsOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (k *jsiiProxy_KmsKeyRingTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KmsKeyRingTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KmsKeyRingTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsKeyRingTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) val
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryDataTransferConfigScheduleOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -85,9 +85,9 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) valid
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -126,9 +126,9 @@ func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) valid
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (n *jsiiProxy_NetworkManagementConnectivityTestSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

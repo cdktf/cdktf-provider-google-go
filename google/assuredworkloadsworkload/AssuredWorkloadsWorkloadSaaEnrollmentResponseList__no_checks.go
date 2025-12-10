@@ -15,7 +15,7 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadSaaEnrollmentResponseList) validateGe
 	return nil
 }
 
-func (a *jsiiProxy_AssuredWorkloadsWorkloadSaaEnrollmentResponseList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AssuredWorkloadsWorkloadSaaEnrollmentResponseList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

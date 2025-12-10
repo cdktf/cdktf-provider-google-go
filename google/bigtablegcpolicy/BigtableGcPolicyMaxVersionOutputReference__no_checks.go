@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigtableGcPolicyMaxVersionOutputReference) validateGetStringM
 	return nil
 }
 
-func (b *jsiiProxy_BigtableGcPolicyMaxVersionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigtableGcPolicyMaxVersionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigtableGcPolicyMaxVersionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableGcPolicyMaxVersionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

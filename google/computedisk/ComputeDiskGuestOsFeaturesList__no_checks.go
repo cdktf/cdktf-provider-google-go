@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeDiskGuestOsFeaturesList) validateGetParameters(index *
 	return nil
 }
 
-func (c *jsiiProxy_ComputeDiskGuestOsFeaturesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeDiskGuestOsFeaturesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

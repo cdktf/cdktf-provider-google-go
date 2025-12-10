@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeDiskSourceImageEncryptionKeyOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ComputeDiskSourceImageEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeDiskSourceImageEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeDiskSourceImageEncryptionKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeDiskSourceImageEncryptionKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

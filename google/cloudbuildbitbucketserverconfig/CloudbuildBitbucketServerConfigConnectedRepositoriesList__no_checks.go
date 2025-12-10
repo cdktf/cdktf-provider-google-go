@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfigConnectedRepositoriesList) val
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfigConnectedRepositoriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildBitbucketServerConfigConnectedRepositoriesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

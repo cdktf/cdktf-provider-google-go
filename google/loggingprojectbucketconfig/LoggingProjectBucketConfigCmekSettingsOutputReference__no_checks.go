@@ -43,11 +43,11 @@ func (l *jsiiProxy_LoggingProjectBucketConfigCmekSettingsOutputReference) valida
 	return nil
 }
 
-func (l *jsiiProxy_LoggingProjectBucketConfigCmekSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingProjectBucketConfigCmekSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoggingProjectBucketConfigCmekSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingProjectBucketConfigCmekSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

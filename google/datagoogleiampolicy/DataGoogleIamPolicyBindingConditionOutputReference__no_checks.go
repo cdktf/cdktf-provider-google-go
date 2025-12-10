@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleIamPolicyBindingConditionOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleIamPolicyBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleIamPolicyBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleIamPolicyBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleIamPolicyBindingConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

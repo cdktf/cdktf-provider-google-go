@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBl
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

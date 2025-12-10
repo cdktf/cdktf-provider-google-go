@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleStorageControlProjectIntelligenceConfigEffectiveInt
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageControlProjectIntelligenceConfigEffectiveIntelligenceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleStorageControlProjectIntelligenceConfigEffectiveIntelligenceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageControlProjectIntelligenceConfigEffectiveIntelligenceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleStorageControlProjectIntelligenceConfigEffectiveIntelligenceConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

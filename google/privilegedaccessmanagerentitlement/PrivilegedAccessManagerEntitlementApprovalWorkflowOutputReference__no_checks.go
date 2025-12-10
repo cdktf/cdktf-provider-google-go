@@ -43,7 +43,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputRefer
 	return nil
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputRefer
 	return nil
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

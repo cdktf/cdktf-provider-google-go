@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOv
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesContainersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksIpsO
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksIpsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksIpsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksIpsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksIpsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

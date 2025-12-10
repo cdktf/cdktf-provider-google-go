@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApphubServiceServicePropertiesList) validateGetParameters(ind
 	return nil
 }
 
-func (a *jsiiProxy_ApphubServiceServicePropertiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApphubServiceServicePropertiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePoolNodePoolConfigNodeConfigsList) vali
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalNodePoolNodePoolConfigNodeConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremBareMetalNodePoolNodePoolConfigNodeConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

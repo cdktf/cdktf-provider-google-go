@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketLifecycleRuleConditionList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketLifecycleRuleConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleStorageBucketLifecycleRuleConditionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

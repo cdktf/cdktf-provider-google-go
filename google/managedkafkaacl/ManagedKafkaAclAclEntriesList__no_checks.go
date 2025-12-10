@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagedKafkaAclAclEntriesList) validateGetParameters(index *f
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKafkaAclAclEntriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedKafkaAclAclEntriesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

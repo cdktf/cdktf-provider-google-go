@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterDefaultSnatStatusOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterDefaultSnatStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleContainerClusterDefaultSnatStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterDefaultSnatStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterDefaultSnatStatusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

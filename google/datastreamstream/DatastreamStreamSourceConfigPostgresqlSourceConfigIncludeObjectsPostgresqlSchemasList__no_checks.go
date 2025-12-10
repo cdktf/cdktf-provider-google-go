@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObje
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

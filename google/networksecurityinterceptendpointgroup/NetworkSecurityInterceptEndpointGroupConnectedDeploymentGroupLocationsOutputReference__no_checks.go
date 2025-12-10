@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroup
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupLocationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupLocationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupLocationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupConnectedDeploymentGroupLocationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpOutputRe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeResizeRequestStatusErrorErrorsErrorDetailsHelpOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilizat
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

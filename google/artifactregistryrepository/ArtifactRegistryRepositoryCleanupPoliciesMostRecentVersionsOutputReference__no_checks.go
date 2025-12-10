@@ -43,11 +43,11 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOu
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterMaintenancePolicyRecurringWindowLis
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterMaintenancePolicyRecurringWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterMaintenancePolicyRecurringWindowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

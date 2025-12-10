@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

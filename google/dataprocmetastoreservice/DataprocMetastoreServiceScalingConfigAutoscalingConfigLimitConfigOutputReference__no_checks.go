@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitCo
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

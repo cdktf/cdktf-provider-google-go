@@ -15,7 +15,7 @@ func (r *jsiiProxy_RedisClusterStateInfoUpdateInfoList) validateGetParameters(in
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterStateInfoUpdateInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterStateInfoUpdateInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

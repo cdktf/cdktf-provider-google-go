@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestA
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

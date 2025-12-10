@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

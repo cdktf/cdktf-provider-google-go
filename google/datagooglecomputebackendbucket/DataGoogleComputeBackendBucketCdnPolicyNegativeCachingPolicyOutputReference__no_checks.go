@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyO
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

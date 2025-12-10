@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterAuthenticatorGroupsConfigList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterAuthenticatorGroupsConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterAuthenticatorGroupsConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

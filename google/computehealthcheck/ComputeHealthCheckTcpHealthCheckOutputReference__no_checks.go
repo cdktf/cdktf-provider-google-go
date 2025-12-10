@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeHealthCheckTcpHealthCheckOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_ComputeHealthCheckTcpHealthCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeHealthCheckTcpHealthCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeHealthCheckTcpHealthCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeHealthCheckTcpHealthCheckOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

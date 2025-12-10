@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleAlloydbInstanceMachineConfigList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbInstanceMachineConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleAlloydbInstanceMachineConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

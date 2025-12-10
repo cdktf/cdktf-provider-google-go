@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpList) validat
 	return nil
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

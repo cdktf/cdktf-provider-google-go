@@ -43,7 +43,7 @@ func (b *jsiiProxy_BeyondcorpApplicationUpstreamsOutputReference) validateGetStr
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpApplicationUpstreamsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BeyondcorpApplicationUpstreamsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (b *jsiiProxy_BeyondcorpApplicationUpstreamsOutputReference) validatePutNet
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpApplicationUpstreamsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BeyondcorpApplicationUpstreamsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

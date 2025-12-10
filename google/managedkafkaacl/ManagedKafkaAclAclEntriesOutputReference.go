@@ -75,12 +75,12 @@ type ManagedKafkaAclAclEntriesOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetHost()
 	ResetPermissionType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -540,8 +540,8 @@ func (m *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) InterpolationAsList
 	return returns
 }
 
-func (m *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -549,7 +549,7 @@ func (m *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) InterpolationForAtt
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -572,8 +572,8 @@ func (m *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) ResetPermissionType
 	)
 }
 
-func (m *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -581,7 +581,7 @@ func (m *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

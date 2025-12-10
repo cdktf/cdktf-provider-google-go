@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

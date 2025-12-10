@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointOutpu
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleAlloydbClusterSecondaryConfigOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbClusterSecondaryConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleAlloydbClusterSecondaryConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbClusterSecondaryConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleAlloydbClusterSecondaryConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

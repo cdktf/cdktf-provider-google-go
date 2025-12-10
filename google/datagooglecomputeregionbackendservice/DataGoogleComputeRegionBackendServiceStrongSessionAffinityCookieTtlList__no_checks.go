@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceStrongSessionAffinityCoo
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceStrongSessionAffinityCookieTtlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceStrongSessionAffinityCookieTtlList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

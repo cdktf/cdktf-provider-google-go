@@ -15,7 +15,7 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamList) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

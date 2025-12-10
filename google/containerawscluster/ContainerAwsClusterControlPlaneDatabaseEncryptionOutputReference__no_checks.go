@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneDatabaseEncryptionOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validatePutApplication
 	return nil
 }
 
-func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerStandbyPolicyOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerStandbyPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstanceGroupManagerStandbyPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerStandbyPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceGroupManagerStandbyPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

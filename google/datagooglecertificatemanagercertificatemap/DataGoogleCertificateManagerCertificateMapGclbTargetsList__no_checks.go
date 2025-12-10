@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCertificateManagerCertificateMapGclbTargetsList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCertificateManagerCertificateMapGclbTargetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCertificateManagerCertificateMapGclbTargetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

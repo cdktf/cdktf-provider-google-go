@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleCloudIdentityGroupTransitiveMembershipsMembershipsR
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudIdentityGroupTransitiveMembershipsMembershipsRolesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCloudIdentityGroupTransitiveMembershipsMembershipsRolesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudIdentityGroupTransitiveMembershipsMembershipsRolesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudIdentityGroupTransitiveMembershipsMembershipsRolesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

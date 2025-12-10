@@ -15,7 +15,7 @@ func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsList) valid
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscAutoConnectionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

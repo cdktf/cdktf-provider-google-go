@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppEngineServiceSplitTrafficSplitOutputReference) validateGet
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineServiceSplitTrafficSplitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppEngineServiceSplitTrafficSplitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineServiceSplitTrafficSplitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppEngineServiceSplitTrafficSplitOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

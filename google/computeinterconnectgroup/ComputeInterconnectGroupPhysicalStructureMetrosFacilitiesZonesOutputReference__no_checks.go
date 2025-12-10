@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZone
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigtableTableAutomatedBackupPolicyOutputReference) validateGe
 	return nil
 }
 
-func (b *jsiiProxy_BigtableTableAutomatedBackupPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigtableTableAutomatedBackupPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigtableTableAutomatedBackupPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableTableAutomatedBackupPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

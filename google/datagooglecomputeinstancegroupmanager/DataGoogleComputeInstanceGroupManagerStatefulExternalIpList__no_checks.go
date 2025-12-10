@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatefulExternalIpList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatefulExternalIpList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatefulExternalIpList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

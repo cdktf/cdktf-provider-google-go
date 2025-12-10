@@ -43,11 +43,11 @@ func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) validateGetString
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

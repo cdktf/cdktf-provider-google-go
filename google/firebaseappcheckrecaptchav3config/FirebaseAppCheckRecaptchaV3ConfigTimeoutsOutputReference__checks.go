@@ -85,17 +85,17 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) val
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

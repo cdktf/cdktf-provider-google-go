@@ -43,11 +43,11 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

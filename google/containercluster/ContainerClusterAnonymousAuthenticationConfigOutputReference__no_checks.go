@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterAnonymousAuthenticationConfigOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAnonymousAuthenticationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterAnonymousAuthenticationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAnonymousAuthenticationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterAnonymousAuthenticationConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

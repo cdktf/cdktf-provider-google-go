@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWind
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

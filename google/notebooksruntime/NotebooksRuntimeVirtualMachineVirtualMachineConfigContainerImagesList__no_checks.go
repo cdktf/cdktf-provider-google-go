@@ -15,7 +15,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerIm
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

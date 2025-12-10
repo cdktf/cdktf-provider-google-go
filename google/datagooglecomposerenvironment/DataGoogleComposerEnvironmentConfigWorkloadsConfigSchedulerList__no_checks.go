@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigSchedulerLi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigSchedulerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigSchedulerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

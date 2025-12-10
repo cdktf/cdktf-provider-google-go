@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminUsersList) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminUsersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminUsersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

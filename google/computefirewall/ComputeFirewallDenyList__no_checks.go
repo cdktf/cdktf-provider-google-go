@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeFirewallDenyList) validateGetParameters(index *float64
 	return nil
 }
 
-func (c *jsiiProxy_ComputeFirewallDenyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeFirewallDenyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

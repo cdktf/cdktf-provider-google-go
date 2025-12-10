@@ -43,7 +43,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutput
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutput
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

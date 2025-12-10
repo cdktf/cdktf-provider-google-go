@@ -15,7 +15,7 @@ func (s *jsiiProxy_StorageBucketIpFilterVpcNetworkSourcesList) validateGetParame
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketIpFilterVpcNetworkSourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageBucketIpFilterVpcNetworkSourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsPscConfigList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsPscConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsPscConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

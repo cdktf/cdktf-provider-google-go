@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeBackendServiceStrongSessionAffinityCookieTtlOutputRefe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceStrongSessionAffinityCookieTtlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeBackendServiceStrongSessionAffinityCookieTtlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceStrongSessionAffinityCookieTtlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeBackendServiceStrongSessionAffinityCookieTtlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataplexTaskExecutionStatusLatestJobList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataplexTaskExecutionStatusLatestJobList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexTaskExecutionStatusLatestJobList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (f *jsiiProxy_FirestoreDatabaseCmekConfigOutputReference) validateGetString
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreDatabaseCmekConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirestoreDatabaseCmekConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreDatabaseCmekConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirestoreDatabaseCmekConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

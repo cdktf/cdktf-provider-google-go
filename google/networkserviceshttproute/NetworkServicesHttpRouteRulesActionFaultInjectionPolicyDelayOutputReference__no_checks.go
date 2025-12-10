@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayO
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

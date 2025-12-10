@@ -43,7 +43,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) validate
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) validate
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

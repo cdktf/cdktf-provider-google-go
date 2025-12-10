@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

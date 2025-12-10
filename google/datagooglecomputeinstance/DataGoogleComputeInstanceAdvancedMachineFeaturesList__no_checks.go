@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceAdvancedMachineFeaturesList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceAdvancedMachineFeaturesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceAdvancedMachineFeaturesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

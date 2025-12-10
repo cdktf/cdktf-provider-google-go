@@ -43,7 +43,7 @@ func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

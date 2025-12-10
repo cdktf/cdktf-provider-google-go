@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceIapOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

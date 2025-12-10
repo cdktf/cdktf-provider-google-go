@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleDataAccessScopeDeniedDataAccessLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

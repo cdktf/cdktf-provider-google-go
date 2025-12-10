@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

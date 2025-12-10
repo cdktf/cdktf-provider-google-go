@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleBigqueryTablesTablesList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTablesTablesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryTablesTablesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

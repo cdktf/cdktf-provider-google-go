@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateServiceAccountOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

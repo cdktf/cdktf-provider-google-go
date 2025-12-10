@@ -43,11 +43,11 @@ func (g *jsiiProxy_GeminiRepositoryGroupIamBindingConditionOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GeminiRepositoryGroupIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GeminiRepositoryGroupIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GeminiRepositoryGroupIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GeminiRepositoryGroupIamBindingConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

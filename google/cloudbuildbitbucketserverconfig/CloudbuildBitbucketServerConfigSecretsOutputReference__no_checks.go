@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfigSecretsOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfigSecretsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudbuildBitbucketServerConfigSecretsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfigSecretsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildBitbucketServerConfigSecretsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (v *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) validateGetString
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (v *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) validatePutAlgori
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiIndexMetadataConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

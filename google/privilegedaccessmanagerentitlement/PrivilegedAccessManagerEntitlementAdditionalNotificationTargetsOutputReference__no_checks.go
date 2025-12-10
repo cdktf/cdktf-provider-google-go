@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementAdditionalNotificationTarge
 	return nil
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

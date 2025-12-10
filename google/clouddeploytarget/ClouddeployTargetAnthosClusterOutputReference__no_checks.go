@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClouddeployTargetAnthosClusterOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployTargetAnthosClusterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddeployTargetAnthosClusterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployTargetAnthosClusterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddeployTargetAnthosClusterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (r *jsiiProxy_RedisClusterMaintenanceScheduleList) validateGetParameters(in
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterMaintenanceScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterMaintenanceScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

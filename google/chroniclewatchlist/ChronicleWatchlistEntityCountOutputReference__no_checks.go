@@ -43,11 +43,11 @@ func (c *jsiiProxy_ChronicleWatchlistEntityCountOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleWatchlistEntityCountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChronicleWatchlistEntityCountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleWatchlistEntityCountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleWatchlistEntityCountOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

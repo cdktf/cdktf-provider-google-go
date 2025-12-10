@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsDenyMaintenanc
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsDenyMaintenancePeriodList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsDenyMaintenancePeriodList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

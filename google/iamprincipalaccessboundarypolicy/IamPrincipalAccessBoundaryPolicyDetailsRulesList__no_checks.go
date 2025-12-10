@@ -15,7 +15,7 @@ func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsRulesList) validateGet
 	return nil
 }
 
-func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyDetailsRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

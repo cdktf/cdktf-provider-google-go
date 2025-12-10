@@ -43,11 +43,11 @@ func (v *jsiiProxy_VmwareengineClusterNodeTypeConfigsOutputReference) validateGe
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineClusterNodeTypeConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VmwareengineClusterNodeTypeConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineClusterNodeTypeConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareengineClusterNodeTypeConfigsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

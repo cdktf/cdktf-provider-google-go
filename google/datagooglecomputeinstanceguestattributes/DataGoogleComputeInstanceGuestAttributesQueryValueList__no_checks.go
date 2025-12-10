@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGuestAttributesQueryValueList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGuestAttributesQueryValueList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceGuestAttributesQueryValueList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

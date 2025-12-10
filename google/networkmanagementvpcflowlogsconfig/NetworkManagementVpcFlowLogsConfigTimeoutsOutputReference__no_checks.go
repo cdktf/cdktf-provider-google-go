@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkManagementVpcFlowLogsConfigTimeoutsOutputReference) va
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagementVpcFlowLogsConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkManagementVpcFlowLogsConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkManagementVpcFlowLogsConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkManagementVpcFlowLogsConfigTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

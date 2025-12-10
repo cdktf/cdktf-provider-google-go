@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

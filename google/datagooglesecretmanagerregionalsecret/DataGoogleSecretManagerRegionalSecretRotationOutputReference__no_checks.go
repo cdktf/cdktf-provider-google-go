@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretRotationOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretRotationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretRotationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretRotationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretRotationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

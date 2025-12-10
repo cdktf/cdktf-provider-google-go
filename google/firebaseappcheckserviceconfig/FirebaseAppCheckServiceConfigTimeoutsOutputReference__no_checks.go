@@ -43,11 +43,11 @@ func (f *jsiiProxy_FirebaseAppCheckServiceConfigTimeoutsOutputReference) validat
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppCheckServiceConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirebaseAppCheckServiceConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppCheckServiceConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaseAppCheckServiceConfigTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

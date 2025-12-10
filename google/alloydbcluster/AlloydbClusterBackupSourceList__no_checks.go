@@ -15,7 +15,7 @@ func (a *jsiiProxy_AlloydbClusterBackupSourceList) validateGetParameters(index *
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterBackupSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbClusterBackupSourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterLoggingConfigList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterLoggingConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterLoggingConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataplexEntryEntrySourceAncestorsList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataplexEntryEntrySourceAncestorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexEntryEntrySourceAncestorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

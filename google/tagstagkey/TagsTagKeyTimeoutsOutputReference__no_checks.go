@@ -43,11 +43,11 @@ func (t *jsiiProxy_TagsTagKeyTimeoutsOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (t *jsiiProxy_TagsTagKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TagsTagKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TagsTagKeyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TagsTagKeyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutput
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutput
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

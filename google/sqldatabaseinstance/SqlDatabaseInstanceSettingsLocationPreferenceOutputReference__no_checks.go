@@ -43,11 +43,11 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsLocationPreferenceOutputReference)
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsLocationPreferenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsLocationPreferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsLocationPreferenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsLocationPreferenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

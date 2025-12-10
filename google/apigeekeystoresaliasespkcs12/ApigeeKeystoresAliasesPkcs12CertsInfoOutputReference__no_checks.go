@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

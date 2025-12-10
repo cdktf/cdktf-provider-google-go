@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModule
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGitOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

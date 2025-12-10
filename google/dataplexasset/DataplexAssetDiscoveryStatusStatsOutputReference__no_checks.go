@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataplexAssetDiscoveryStatusStatsOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataplexAssetDiscoveryStatusStatsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexAssetDiscoveryStatusStatsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataplexAssetDiscoveryStatusStatsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexAssetDiscoveryStatusStatsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

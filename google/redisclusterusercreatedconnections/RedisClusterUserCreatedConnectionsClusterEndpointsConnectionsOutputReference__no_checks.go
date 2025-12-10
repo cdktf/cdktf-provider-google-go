@@ -43,7 +43,7 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

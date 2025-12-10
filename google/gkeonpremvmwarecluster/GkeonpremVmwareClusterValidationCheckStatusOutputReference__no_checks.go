@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeonpremVmwareClusterValidationCheckStatusOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterValidationCheckStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterValidationCheckStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterValidationCheckStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterValidationCheckStatusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

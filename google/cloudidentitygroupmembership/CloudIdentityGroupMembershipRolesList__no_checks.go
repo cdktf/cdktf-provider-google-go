@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesList) validateGetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_CloudIdentityGroupMembershipRolesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudIdentityGroupMembershipRolesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

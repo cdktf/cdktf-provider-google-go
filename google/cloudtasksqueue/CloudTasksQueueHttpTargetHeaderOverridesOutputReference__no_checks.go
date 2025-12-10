@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

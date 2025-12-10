@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

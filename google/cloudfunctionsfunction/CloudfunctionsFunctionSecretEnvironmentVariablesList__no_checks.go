@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesList) validat
 	return nil
 }
 
-func (c *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

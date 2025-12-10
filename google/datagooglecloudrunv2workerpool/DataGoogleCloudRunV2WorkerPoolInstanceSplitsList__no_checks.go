@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolInstanceSplitsList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolInstanceSplitsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudRunV2WorkerPoolInstanceSplitsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -72,7 +72,7 @@ type RedisClusterCrossClusterReplicationConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutPrimaryCluster(value *RedisClusterCrossClusterReplicationConfigPrimaryCluster)
 	PutSecondaryClusters(value interface{})
 	ResetClusterRole()
@@ -80,7 +80,7 @@ type RedisClusterCrossClusterReplicationConfigOutputReference interface {
 	ResetSecondaryClusters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -507,8 +507,8 @@ func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigOutputReference) Int
 	return returns
 }
 
-func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -516,7 +516,7 @@ func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigOutputReference) Int
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -569,8 +569,8 @@ func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigOutputReference) Res
 	)
 }
 
-func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -578,7 +578,7 @@ func (r *jsiiProxy_RedisClusterCrossClusterReplicationConfigOutputReference) Res
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

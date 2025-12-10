@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageBucketVersioningOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketVersioningOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageBucketVersioningOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketVersioningOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageBucketVersioningOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

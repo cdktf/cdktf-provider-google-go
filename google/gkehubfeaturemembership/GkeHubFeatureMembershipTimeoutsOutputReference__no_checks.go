@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeHubFeatureMembershipTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureMembershipTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeHubFeatureMembershipTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureMembershipTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubFeatureMembershipTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

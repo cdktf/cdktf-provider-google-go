@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutput
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcPipelineDestinationsOutputPayloadFormatProtobufOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

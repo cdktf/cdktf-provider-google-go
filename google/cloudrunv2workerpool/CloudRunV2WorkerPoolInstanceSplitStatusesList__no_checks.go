@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolInstanceSplitStatusesList) validateGetPar
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolInstanceSplitStatusesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2WorkerPoolInstanceSplitStatusesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

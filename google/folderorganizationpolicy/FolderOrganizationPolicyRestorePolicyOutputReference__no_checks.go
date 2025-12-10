@@ -43,11 +43,11 @@ func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) validat
 	return nil
 }
 
-func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

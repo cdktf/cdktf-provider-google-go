@@ -43,11 +43,11 @@ func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOut
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcPipelineDestinationsAuthenticationConfigGoogleOidcOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

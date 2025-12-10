@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutp
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

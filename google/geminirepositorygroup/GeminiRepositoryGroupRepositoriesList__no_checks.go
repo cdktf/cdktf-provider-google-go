@@ -15,7 +15,7 @@ func (g *jsiiProxy_GeminiRepositoryGroupRepositoriesList) validateGetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GeminiRepositoryGroupRepositoriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GeminiRepositoryGroupRepositoriesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

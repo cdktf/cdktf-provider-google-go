@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeImageRawDiskOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (c *jsiiProxy_ComputeImageRawDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeImageRawDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeImageRawDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeImageRawDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

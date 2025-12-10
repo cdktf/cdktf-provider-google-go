@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesList) valid
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

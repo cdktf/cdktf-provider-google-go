@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigtableAuthorizedViewTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAuthorizedViewTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigtableAuthorizedViewTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAuthorizedViewTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableAuthorizedViewTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

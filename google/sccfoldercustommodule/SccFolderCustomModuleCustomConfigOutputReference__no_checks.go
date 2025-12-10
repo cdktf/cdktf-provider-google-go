@@ -43,7 +43,7 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) validatePut
 	return nil
 }
 
-func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SccFolderCustomModuleCustomConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

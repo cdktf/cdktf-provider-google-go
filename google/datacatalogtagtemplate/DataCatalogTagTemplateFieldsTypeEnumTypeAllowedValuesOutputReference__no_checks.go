@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

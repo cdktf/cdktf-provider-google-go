@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

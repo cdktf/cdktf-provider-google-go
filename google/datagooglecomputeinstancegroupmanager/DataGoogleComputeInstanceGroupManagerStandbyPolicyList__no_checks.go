@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStandbyPolicyList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStandbyPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStandbyPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

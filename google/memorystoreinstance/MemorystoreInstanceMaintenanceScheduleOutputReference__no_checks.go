@@ -43,11 +43,11 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) valida
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

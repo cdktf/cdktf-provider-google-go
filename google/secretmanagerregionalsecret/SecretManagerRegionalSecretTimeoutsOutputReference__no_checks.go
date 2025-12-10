@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecretManagerRegionalSecretTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecretManagerRegionalSecretTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerRegionalSecretTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecretManagerRegionalSecretTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

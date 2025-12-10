@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -67,7 +67,7 @@ func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validatePutServerKeyRe
 	return nil
 }
 
-func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

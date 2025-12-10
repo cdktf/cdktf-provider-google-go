@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceList) validateGetParameters
 	return nil
 }
 
-func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeExternalVpnGatewayInterfaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

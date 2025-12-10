@@ -43,7 +43,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOu
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOu
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

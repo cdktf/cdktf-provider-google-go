@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataplexEntryAspectsOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DataplexEntryAspectsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexEntryAspectsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataplexEntryAspectsOutputReference) validatePutAspectParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataplexEntryAspectsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexEntryAspectsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

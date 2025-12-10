@@ -43,11 +43,11 @@ func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) validateGetSt
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

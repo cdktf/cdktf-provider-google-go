@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRange
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

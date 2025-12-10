@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionCloudStorageConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

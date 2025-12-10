@@ -15,7 +15,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceIpAddressList) validateGetParameters(index
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceIpAddressList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstanceIpAddressList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

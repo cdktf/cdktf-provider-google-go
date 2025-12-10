@@ -43,11 +43,11 @@ func (d *jsiiProxy_DiscoveryEngineChatEngineChatEngineMetadataOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineChatEngineChatEngineMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DiscoveryEngineChatEngineChatEngineMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineChatEngineChatEngineMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineChatEngineChatEngineMetadataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

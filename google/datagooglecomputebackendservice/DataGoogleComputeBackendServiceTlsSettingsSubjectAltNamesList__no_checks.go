@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceTlsSettingsSubjectAltNamesList
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceTlsSettingsSubjectAltNamesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceTlsSettingsSubjectAltNamesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

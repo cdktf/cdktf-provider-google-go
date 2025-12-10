@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryTableBiglakeConfigurationOutputReference) validateGet
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableBiglakeConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryTableBiglakeConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableBiglakeConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryTableBiglakeConfigurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

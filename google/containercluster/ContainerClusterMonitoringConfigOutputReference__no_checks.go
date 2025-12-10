@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) validatePutM
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterMonitoringConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

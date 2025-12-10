@@ -43,11 +43,11 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutpu
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

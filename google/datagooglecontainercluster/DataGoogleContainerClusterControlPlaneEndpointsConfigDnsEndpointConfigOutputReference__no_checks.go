@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpo
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

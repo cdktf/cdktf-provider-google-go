@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHea
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

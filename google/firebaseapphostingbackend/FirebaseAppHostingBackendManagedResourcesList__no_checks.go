@@ -15,7 +15,7 @@ func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesList) validateGetPar
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

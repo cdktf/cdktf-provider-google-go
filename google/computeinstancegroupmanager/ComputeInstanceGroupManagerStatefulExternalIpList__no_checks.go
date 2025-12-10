@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulExternalIpList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulExternalIpList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulExternalIpList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

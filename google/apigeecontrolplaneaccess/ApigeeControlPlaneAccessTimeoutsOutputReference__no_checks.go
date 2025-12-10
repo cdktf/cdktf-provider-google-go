@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApigeeControlPlaneAccessTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeControlPlaneAccessTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeControlPlaneAccessTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeControlPlaneAccessTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeControlPlaneAccessTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

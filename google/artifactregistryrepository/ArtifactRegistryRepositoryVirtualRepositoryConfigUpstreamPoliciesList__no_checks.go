@@ -15,7 +15,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoli
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

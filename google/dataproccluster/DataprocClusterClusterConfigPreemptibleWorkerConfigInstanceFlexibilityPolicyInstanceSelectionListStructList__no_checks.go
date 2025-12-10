@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFl
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

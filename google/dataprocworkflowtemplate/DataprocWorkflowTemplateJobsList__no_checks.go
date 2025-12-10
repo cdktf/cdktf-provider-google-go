@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsList) validateGetParameters(index
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

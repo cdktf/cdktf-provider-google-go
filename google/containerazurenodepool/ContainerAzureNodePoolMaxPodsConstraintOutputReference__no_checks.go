@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAzureNodePoolMaxPodsConstraintOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureNodePoolMaxPodsConstraintOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAzureNodePoolMaxPodsConstraintOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureNodePoolMaxPodsConstraintOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAzureNodePoolMaxPodsConstraintOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

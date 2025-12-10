@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validatePutPy
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

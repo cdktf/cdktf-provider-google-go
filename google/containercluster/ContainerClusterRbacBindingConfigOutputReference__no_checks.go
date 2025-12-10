@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterRbacBindingConfigOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterRbacBindingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterRbacBindingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterRbacBindingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterRbacBindingConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

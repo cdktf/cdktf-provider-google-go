@@ -43,7 +43,7 @@ func (b *jsiiProxy_BigqueryConnectionSparkOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionSparkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryConnectionSparkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (b *jsiiProxy_BigqueryConnectionSparkOutputReference) validatePutSparkHisto
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionSparkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryConnectionSparkOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

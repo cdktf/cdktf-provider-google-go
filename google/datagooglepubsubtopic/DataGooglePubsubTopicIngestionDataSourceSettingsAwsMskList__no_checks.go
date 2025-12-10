@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList) v
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

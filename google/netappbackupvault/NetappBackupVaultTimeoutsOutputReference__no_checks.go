@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetappBackupVaultTimeoutsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (n *jsiiProxy_NetappBackupVaultTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappBackupVaultTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetappBackupVaultTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappBackupVaultTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateScratchDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

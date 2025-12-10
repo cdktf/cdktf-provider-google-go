@@ -43,11 +43,11 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) valida
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryDockerConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

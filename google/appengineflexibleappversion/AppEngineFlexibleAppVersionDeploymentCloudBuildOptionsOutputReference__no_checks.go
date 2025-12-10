@@ -43,11 +43,11 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputR
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

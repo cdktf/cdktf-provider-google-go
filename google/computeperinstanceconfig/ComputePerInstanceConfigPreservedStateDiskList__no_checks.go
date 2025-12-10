@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

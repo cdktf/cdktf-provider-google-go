@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigErrorsDetailsList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfigErrorsDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigErrorsDetailsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

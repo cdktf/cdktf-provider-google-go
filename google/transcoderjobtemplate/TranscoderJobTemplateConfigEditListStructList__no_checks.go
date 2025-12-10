@@ -15,7 +15,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigEditListStructList) validateGetPar
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigEditListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigEditListStructList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

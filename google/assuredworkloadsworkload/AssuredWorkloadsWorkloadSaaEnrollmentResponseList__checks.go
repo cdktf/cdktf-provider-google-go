@@ -27,9 +27,9 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadSaaEnrollmentResponseList) validateGe
 	return nil
 }
 
-func (a *jsiiProxy_AssuredWorkloadsWorkloadSaaEnrollmentResponseList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AssuredWorkloadsWorkloadSaaEnrollmentResponseList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

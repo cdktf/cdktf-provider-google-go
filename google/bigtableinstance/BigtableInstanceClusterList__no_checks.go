@@ -15,7 +15,7 @@ func (b *jsiiProxy_BigtableInstanceClusterList) validateGetParameters(index *flo
 	return nil
 }
 
-func (b *jsiiProxy_BigtableInstanceClusterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableInstanceClusterList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

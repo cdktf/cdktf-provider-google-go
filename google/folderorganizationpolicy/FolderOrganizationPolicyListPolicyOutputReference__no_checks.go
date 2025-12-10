@@ -43,7 +43,7 @@ func (f *jsiiProxy_FolderOrganizationPolicyListPolicyOutputReference) validateGe
 	return nil
 }
 
-func (f *jsiiProxy_FolderOrganizationPolicyListPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FolderOrganizationPolicyListPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (f *jsiiProxy_FolderOrganizationPolicyListPolicyOutputReference) validatePu
 	return nil
 }
 
-func (f *jsiiProxy_FolderOrganizationPolicyListPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FolderOrganizationPolicyListPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

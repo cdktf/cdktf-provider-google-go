@@ -27,9 +27,9 @@ func (c *jsiiProxy_CertificateManagerCertificateManagedAuthorizationAttemptInfoL
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerCertificateManagedAuthorizationAttemptInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_CertificateManagerCertificateManagedAuthorizationAttemptInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

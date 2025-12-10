@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionIntervalOutputRefe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionIntervalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionIntervalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionIntervalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionIntervalOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

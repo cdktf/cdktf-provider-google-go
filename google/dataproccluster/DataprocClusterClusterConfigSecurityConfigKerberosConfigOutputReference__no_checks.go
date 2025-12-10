@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

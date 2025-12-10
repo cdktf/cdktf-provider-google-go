@@ -43,11 +43,11 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInHashConfigOutputReference) valida
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSignInHashConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformConfigSignInHashConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSignInHashConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigSignInHashConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

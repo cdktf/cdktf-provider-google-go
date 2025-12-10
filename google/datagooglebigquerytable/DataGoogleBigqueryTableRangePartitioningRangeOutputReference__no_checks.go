@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleBigqueryTableRangePartitioningRangeOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTableRangePartitioningRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleBigqueryTableRangePartitioningRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTableRangePartitioningRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryTableRangePartitioningRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigTaintList) validateGetParameters(in
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigTaintList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterNodeConfigTaintList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

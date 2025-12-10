@@ -43,11 +43,11 @@ func (i *jsiiProxy_IapSettingsAccessSettingsCorsSettingsOutputReference) validat
 	return nil
 }
 
-func (i *jsiiProxy_IapSettingsAccessSettingsCorsSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IapSettingsAccessSettingsCorsSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IapSettingsAccessSettingsCorsSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IapSettingsAccessSettingsCorsSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

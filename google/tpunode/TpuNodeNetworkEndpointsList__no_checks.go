@@ -15,7 +15,7 @@ func (t *jsiiProxy_TpuNodeNetworkEndpointsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (t *jsiiProxy_TpuNodeNetworkEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TpuNodeNetworkEndpointsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MemorystoreInstancePersistenceConfigAofConfigOutputReference)
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstancePersistenceConfigAofConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MemorystoreInstancePersistenceConfigAofConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstancePersistenceConfigAofConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstancePersistenceConfigAofConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

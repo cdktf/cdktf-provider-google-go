@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsList) validateGetP
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

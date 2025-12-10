@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutp
 	return nil
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

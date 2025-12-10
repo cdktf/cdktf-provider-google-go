@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservability
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

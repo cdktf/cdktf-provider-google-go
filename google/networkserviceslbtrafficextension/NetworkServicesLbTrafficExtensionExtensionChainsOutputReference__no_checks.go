@@ -43,7 +43,7 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsOutputReferen
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsOutputReferen
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesLbTrafficExtensionExtensionChainsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

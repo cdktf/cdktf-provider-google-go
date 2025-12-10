@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventarcTriggerMatchingCriteriaList) validateGetParameters(in
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTriggerMatchingCriteriaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcTriggerMatchingCriteriaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

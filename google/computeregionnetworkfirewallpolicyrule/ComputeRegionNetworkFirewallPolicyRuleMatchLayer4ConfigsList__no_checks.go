@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchLayer4ConfigsList)
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchLayer4ConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchLayer4ConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

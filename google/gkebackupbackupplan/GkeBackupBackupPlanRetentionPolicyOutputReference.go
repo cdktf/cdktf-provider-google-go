@@ -72,13 +72,13 @@ type GkeBackupBackupPlanRetentionPolicyOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetBackupDeleteLockDays()
 	ResetBackupRetainDays()
 	ResetLocked()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -507,8 +507,8 @@ func (g *jsiiProxy_GkeBackupBackupPlanRetentionPolicyOutputReference) Interpolat
 	return returns
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanRetentionPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GkeBackupBackupPlanRetentionPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -516,7 +516,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanRetentionPolicyOutputReference) Interpolat
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -547,8 +547,8 @@ func (g *jsiiProxy_GkeBackupBackupPlanRetentionPolicyOutputReference) ResetLocke
 	)
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanRetentionPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GkeBackupBackupPlanRetentionPolicyOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (g *jsiiProxy_GkeBackupBackupPlanRetentionPolicyOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

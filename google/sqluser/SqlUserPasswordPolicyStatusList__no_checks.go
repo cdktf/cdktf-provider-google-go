@@ -15,7 +15,7 @@ func (s *jsiiProxy_SqlUserPasswordPolicyStatusList) validateGetParameters(index 
 	return nil
 }
 
-func (s *jsiiProxy_SqlUserPasswordPolicyStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlUserPasswordPolicyStatusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

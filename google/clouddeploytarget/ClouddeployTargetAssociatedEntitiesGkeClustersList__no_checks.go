@@ -15,7 +15,7 @@ func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

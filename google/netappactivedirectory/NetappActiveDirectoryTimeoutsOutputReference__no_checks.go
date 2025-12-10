@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (n *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

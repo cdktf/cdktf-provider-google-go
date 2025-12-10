@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApihubPluginInstanceAuthConfigOutputReference) validateGetStr
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceAuthConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApihubPluginInstanceAuthConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (a *jsiiProxy_ApihubPluginInstanceAuthConfigOutputReference) validatePutUse
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceAuthConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApihubPluginInstanceAuthConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

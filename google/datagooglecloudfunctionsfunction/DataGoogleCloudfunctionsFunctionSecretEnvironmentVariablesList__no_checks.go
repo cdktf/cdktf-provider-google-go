@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionSecretEnvironmentVariablesLis
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionSecretEnvironmentVariablesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudfunctionsFunctionSecretEnvironmentVariablesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

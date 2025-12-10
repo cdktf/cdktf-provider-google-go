@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIamMemberConditionOutputReference
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCertificateTemplateIamMemberConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

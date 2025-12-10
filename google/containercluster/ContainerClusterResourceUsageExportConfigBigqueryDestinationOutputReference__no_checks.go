@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigBigqueryDestinationO
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

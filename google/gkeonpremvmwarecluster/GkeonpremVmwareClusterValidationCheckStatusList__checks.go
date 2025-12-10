@@ -27,9 +27,9 @@ func (g *jsiiProxy_GkeonpremVmwareClusterValidationCheckStatusList) validateGetP
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterValidationCheckStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GkeonpremVmwareClusterValidationCheckStatusList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

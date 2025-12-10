@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudQuotasQuotaPreferenceTimeoutsOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CloudQuotasQuotaPreferenceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudQuotasQuotaPreferenceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudQuotasQuotaPreferenceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudQuotasQuotaPreferenceTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

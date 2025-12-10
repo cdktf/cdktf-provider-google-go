@@ -43,11 +43,11 @@ func (b *jsiiProxy_BiglakeDatabaseTimeoutsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (b *jsiiProxy_BiglakeDatabaseTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BiglakeDatabaseTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BiglakeDatabaseTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BiglakeDatabaseTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

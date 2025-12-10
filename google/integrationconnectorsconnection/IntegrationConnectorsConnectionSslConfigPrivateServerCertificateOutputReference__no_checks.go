@@ -43,11 +43,11 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigPrivateServerCertific
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

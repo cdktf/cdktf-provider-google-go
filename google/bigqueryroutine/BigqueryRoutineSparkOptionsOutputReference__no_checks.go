@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) validateGetString
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryRoutineSparkOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

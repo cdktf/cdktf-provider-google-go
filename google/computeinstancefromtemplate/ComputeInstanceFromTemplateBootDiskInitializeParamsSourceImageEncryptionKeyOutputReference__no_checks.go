@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsSourceImag
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceFromTemplateBootDiskInitializeParamsSourceImageEncryptionKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

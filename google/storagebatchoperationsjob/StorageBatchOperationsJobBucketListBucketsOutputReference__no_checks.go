@@ -43,7 +43,7 @@ func (s *jsiiProxy_StorageBatchOperationsJobBucketListBucketsOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_StorageBatchOperationsJobBucketListBucketsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageBatchOperationsJobBucketListBucketsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (s *jsiiProxy_StorageBatchOperationsJobBucketListBucketsOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_StorageBatchOperationsJobBucketListBucketsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageBatchOperationsJobBucketListBucketsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

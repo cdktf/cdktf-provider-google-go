@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTierTimeoutsOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ComputeProjectCloudArmorTierTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeProjectCloudArmorTierTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeProjectCloudArmorTierTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeProjectCloudArmorTierTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

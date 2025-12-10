@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleRedisClusterAutomatedBackupConfigList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleRedisClusterAutomatedBackupConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleRedisClusterAutomatedBackupConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -68,12 +68,12 @@ type AccessContextManagerAccessLevelsAccessLevelsBasicOutputReference interface 
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutConditions(value interface{})
 	ResetCombiningFunction()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -460,8 +460,8 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicOutputRefere
 	return returns
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -469,7 +469,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicOutputRefere
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -495,8 +495,8 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicOutputRefere
 	)
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -504,7 +504,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsBasicOutputRefere
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

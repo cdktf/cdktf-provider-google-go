@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataplexAssetResourceStatusList) validateGetParameters(index 
 	return nil
 }
 
-func (d *jsiiProxy_DataplexAssetResourceStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexAssetResourceStatusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

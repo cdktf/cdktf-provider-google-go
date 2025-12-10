@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

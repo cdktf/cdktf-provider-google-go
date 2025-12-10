@@ -43,11 +43,11 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesConnectionInfoOutputRefere
 	return nil
 }
 
-func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesConnectionInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesConnectionInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesConnectionInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesConnectionInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

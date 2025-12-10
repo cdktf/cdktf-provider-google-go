@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterEnableK8SBetaApisOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterEnableK8SBetaApisOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterEnableK8SBetaApisOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterEnableK8SBetaApisOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterEnableK8SBetaApisOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

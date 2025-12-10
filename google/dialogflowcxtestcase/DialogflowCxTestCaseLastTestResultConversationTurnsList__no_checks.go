@@ -15,7 +15,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxTestCaseLastTestResultConversationTurnsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

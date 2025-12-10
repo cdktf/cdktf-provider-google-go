@@ -15,7 +15,7 @@ func (b *jsiiProxy_BackupDrManagementServerManagementUriList) validateGetParamet
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrManagementServerManagementUriList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupDrManagementServerManagementUriList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

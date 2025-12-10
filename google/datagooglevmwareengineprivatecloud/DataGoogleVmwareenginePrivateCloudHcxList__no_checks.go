@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudHcxList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudHcxList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudHcxList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

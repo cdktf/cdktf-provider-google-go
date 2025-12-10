@@ -43,11 +43,11 @@ func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfigSpConfigSpCertificates
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkConnectivityInternalRangeTimeoutsOutputReference) vali
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRangeTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkConnectivityInternalRangeTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRangeTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectivityInternalRangeTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

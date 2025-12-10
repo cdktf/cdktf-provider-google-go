@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) validateGetStr
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryConnectionCloudSpannerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

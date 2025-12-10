@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

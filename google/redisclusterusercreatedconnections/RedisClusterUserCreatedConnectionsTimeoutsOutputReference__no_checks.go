@@ -43,11 +43,11 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsTimeoutsOutputReference) va
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterUserCreatedConnectionsTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedisClusterUserCreatedConnectionsTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterUserCreatedConnectionsTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterUserCreatedConnectionsTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

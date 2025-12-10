@@ -43,11 +43,11 @@ func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) validateGe
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterManagedServerCaCaCertsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

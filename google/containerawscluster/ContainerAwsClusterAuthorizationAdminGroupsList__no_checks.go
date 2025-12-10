@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAwsClusterAuthorizationAdminGroupsList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsClusterAuthorizationAdminGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAwsClusterAuthorizationAdminGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceCloneList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceCloneList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceCloneList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MlEngineModelDefaultVersionOutputReference) validateGetString
 	return nil
 }
 
-func (m *jsiiProxy_MlEngineModelDefaultVersionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MlEngineModelDefaultVersionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MlEngineModelDefaultVersionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MlEngineModelDefaultVersionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

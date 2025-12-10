@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRouterPeerBfdOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterPeerBfdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRouterPeerBfdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterPeerBfdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRouterPeerBfdOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

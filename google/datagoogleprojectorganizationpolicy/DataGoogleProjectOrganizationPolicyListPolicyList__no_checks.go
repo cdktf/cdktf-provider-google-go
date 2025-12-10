@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

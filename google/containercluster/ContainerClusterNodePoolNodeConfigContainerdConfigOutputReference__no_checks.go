@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigNetworksOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigNetworksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigNetworksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigNetworksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigNetworksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

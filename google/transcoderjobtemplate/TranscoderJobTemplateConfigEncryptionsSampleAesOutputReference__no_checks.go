@@ -43,11 +43,11 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsSampleAesOutputReferenc
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsSampleAesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsSampleAesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsSampleAesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsSampleAesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginRedirectOutputReference) 
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginRedirectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginRedirectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginRedirectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginRedirectOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

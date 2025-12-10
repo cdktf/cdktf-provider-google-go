@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyDdosProtectionConfigOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyDdosProtectionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyDdosProtectionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyDdosProtectionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyDdosProtectionConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

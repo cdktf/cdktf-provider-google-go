@@ -15,7 +15,7 @@ func (m *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTena
 	return nil
 }
 
-func (m *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

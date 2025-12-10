@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapTestList) validateGetParameters(index *flo
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapTestList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionUrlMapTestList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

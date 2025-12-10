@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReferenc
 	return nil
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlementEligibleUsersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

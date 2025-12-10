@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigStatefulHaConfigOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

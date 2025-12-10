@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobReverseSshConnectivityOut
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

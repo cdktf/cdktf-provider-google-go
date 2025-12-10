@@ -15,7 +15,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayHubsList) validateGetParameters(inde
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayHubsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayHubsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

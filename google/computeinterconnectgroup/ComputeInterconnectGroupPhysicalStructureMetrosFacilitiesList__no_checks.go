@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesList
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

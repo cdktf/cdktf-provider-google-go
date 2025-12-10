@@ -43,7 +43,7 @@ func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodOutputReference) validateG
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodOutputReference) validateP
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

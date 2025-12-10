@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleVmwareengineClusterAutoscalingSettingsOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineClusterAutoscalingSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleVmwareengineClusterAutoscalingSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineClusterAutoscalingSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVmwareengineClusterAutoscalingSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

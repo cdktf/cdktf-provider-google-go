@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleMemorystoreInstanceCrossInstanceReplicationConfigMe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

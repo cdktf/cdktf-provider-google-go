@@ -15,7 +15,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsGlueRecordsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

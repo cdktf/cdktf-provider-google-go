@@ -43,7 +43,7 @@ func (b *jsiiProxy_BigqueryTableRangePartitioningOutputReference) validateGetStr
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableRangePartitioningOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryTableRangePartitioningOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (b *jsiiProxy_BigqueryTableRangePartitioningOutputReference) validatePutRan
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableRangePartitioningOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryTableRangePartitioningOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

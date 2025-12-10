@@ -15,7 +15,7 @@ func (e *jsiiProxy_EventarcPipelineMediationsList) validateGetParameters(index *
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineMediationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcPipelineMediationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

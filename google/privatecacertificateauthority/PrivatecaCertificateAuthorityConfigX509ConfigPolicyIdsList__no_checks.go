@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigPolicyIdsList) v
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigPolicyIdsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCertificateAuthorityConfigX509ConfigPolicyIdsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

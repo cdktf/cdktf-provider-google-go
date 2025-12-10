@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryDataTransferConfigTimeoutsOutputReference) validateGe
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryDataTransferConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryDataTransferConfigTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

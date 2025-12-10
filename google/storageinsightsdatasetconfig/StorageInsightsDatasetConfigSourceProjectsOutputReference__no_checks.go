@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestA
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

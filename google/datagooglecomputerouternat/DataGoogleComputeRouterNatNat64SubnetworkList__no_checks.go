@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeRouterNatNat64SubnetworkList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterNatNat64SubnetworkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRouterNatNat64SubnetworkList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigOutputReference) valida
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

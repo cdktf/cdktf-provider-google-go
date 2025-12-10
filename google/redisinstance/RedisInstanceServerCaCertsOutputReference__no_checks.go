@@ -43,11 +43,11 @@ func (r *jsiiProxy_RedisInstanceServerCaCertsOutputReference) validateGetStringM
 	return nil
 }
 
-func (r *jsiiProxy_RedisInstanceServerCaCertsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedisInstanceServerCaCertsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedisInstanceServerCaCertsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisInstanceServerCaCertsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

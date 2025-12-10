@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigControlPlaneV2ConfigContro
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigControlPlaneV2ConfigControlPlaneIpBlockIpsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigControlPlaneV2ConfigControlPlaneIpBlockIpsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestH
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

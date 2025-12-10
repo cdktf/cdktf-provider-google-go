@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataplexLakeMetastoreStatusList) validateGetParameters(index 
 	return nil
 }
 
-func (d *jsiiProxy_DataplexLakeMetastoreStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexLakeMetastoreStatusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

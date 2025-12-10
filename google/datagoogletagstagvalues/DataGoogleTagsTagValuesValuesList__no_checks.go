@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleTagsTagValuesValuesList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleTagsTagValuesValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleTagsTagValuesValuesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

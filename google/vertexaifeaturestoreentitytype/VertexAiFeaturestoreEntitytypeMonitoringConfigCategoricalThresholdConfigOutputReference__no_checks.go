@@ -43,11 +43,11 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThre
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApikeysKeyRestrictionsApiTargetsOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_ApikeysKeyRestrictionsApiTargetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApikeysKeyRestrictionsApiTargetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApikeysKeyRestrictionsApiTargetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApikeysKeyRestrictionsApiTargetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

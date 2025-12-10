@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

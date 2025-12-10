@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleNetworkManagementConnectivityTestRunReachabilityDet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

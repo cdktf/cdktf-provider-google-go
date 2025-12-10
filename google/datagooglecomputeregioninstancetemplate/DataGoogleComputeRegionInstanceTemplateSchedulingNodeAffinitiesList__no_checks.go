@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingNodeAffiniti
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingNodeAffinitiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingNodeAffinitiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

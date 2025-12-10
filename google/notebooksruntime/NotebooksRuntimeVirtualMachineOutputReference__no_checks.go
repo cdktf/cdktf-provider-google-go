@@ -43,7 +43,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validateGetStr
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validatePutVir
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotebooksRuntimeVirtualMachineOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

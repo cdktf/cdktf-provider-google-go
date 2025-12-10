@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

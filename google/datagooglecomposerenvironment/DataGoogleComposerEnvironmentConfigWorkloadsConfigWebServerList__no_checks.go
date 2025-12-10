@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerLi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigWebServerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

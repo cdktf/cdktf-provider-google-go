@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocBatchRuntimeInfoApproximateUsageOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataprocBatchRuntimeInfoApproximateUsageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocBatchRuntimeInfoApproximateUsageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocBatchRuntimeInfoApproximateUsageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocBatchRuntimeInfoApproximateUsageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) valida
 	return nil
 }
 
-func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IapSettingsAccessSettingsOauthSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterBinaryAuthorizationList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterBinaryAuthorizationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterBinaryAuthorizationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

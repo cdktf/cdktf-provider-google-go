@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigsList
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

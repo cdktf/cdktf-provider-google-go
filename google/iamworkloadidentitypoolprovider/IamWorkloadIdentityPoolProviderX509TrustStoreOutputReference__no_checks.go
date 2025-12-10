@@ -43,7 +43,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolProviderX509TrustStoreOutputReference)
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolProviderX509TrustStoreOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamWorkloadIdentityPoolProviderX509TrustStoreOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolProviderX509TrustStoreOutputReference)
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolProviderX509TrustStoreOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamWorkloadIdentityPoolProviderX509TrustStoreOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

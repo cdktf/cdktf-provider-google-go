@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudIdentityGroupAdditionalGroupKeysOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CloudIdentityGroupAdditionalGroupKeysOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudIdentityGroupAdditionalGroupKeysOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudIdentityGroupAdditionalGroupKeysOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudIdentityGroupAdditionalGroupKeysOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

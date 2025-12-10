@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetention
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

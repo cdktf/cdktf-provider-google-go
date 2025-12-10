@@ -43,11 +43,11 @@ func (o *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesAsPathsList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesAsPathsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesAsPathsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

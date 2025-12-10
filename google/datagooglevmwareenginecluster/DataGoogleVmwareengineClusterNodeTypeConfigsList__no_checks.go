@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineClusterNodeTypeConfigsList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineClusterNodeTypeConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVmwareengineClusterNodeTypeConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

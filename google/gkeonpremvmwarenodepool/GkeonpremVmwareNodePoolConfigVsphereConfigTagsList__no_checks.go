@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsList) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

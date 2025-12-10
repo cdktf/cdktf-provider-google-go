@@ -43,11 +43,11 @@ func (o *jsiiProxy_OsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

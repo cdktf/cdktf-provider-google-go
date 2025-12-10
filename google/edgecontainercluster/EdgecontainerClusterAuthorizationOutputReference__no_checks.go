@@ -43,7 +43,7 @@ func (e *jsiiProxy_EdgecontainerClusterAuthorizationOutputReference) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterAuthorizationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EdgecontainerClusterAuthorizationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EdgecontainerClusterAuthorizationOutputReference) validatePut
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterAuthorizationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerClusterAuthorizationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

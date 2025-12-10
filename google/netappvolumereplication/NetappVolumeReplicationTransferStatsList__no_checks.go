@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetappVolumeReplicationTransferStatsList) validateGetParamete
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeReplicationTransferStatsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappVolumeReplicationTransferStatsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

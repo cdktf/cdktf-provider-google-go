@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleBackupDrManagementServerManagementUriList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrManagementServerManagementUriList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBackupDrManagementServerManagementUriList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

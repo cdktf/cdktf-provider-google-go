@@ -43,11 +43,11 @@ func (f *jsiiProxy_FirestoreBackupScheduleWeeklyRecurrenceOutputReference) valid
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreBackupScheduleWeeklyRecurrenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirestoreBackupScheduleWeeklyRecurrenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreBackupScheduleWeeklyRecurrenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirestoreBackupScheduleWeeklyRecurrenceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

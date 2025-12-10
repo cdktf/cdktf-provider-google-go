@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingMaxRunDurationOutputRe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingMaxRunDurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingMaxRunDurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingMaxRunDurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingMaxRunDurationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -66,11 +66,11 @@ type IamProjectsPolicyBindingTargetOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetPrincipalSet()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -437,8 +437,8 @@ func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) InterpolationA
 	return returns
 }
 
-func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -446,7 +446,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) InterpolationF
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -461,8 +461,8 @@ func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) ResetPrincipal
 	)
 }
 
-func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -470,7 +470,7 @@ func (i *jsiiProxy_IamProjectsPolicyBindingTargetOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeBackendBucketSignedUrlKeyTimeoutsOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendBucketSignedUrlKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeBackendBucketSignedUrlKeyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendBucketSignedUrlKeyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeBackendBucketSignedUrlKeyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

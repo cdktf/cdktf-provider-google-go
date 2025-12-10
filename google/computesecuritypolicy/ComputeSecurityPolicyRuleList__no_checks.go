@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleList) validateGetParameters(index *f
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

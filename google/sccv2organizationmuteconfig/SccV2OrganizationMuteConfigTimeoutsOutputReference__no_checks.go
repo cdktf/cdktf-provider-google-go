@@ -43,11 +43,11 @@ func (s *jsiiProxy_SccV2OrganizationMuteConfigTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SccV2OrganizationMuteConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SccV2OrganizationMuteConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SccV2OrganizationMuteConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SccV2OrganizationMuteConfigTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

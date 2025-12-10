@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApigeeSecurityActionFlagOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeSecurityActionFlagOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeSecurityActionFlagOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApigeeSecurityActionFlagOutputReference) validatePutHeadersPa
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeSecurityActionFlagOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeSecurityActionFlagOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

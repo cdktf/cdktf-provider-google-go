@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInterconnectAttachmentPrivateInterconnectInfoList) val
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectAttachmentPrivateInterconnectInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectAttachmentPrivateInterconnectInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsList) validat
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

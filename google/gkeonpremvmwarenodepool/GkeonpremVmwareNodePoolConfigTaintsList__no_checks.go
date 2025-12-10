@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigTaintsList) validateGetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigTaintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigTaintsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

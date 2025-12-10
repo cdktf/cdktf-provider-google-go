@@ -43,11 +43,11 @@ func (d *jsiiProxy_DiscoveryEngineRecommendationEngineCommonConfigOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineRecommendationEngineCommonConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DiscoveryEngineRecommendationEngineCommonConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineRecommendationEngineCommonConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineRecommendationEngineCommonConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

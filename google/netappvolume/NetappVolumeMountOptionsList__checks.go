@@ -27,9 +27,9 @@ func (n *jsiiProxy_NetappVolumeMountOptionsList) validateGetParameters(index *fl
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeMountOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (n *jsiiProxy_NetappVolumeMountOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

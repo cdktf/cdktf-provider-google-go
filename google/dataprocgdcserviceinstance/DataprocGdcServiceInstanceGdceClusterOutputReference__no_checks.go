@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocGdcServiceInstanceGdceClusterOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataprocGdcServiceInstanceGdceClusterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocGdcServiceInstanceGdceClusterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocGdcServiceInstanceGdceClusterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocGdcServiceInstanceGdceClusterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

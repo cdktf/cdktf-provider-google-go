@@ -43,11 +43,11 @@ func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigFixedFrequencySchedul
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

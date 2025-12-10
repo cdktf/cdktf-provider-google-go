@@ -43,11 +43,11 @@ func (a *jsiiProxy_AccessContextManagerEgressPolicyTimeoutsOutputReference) vali
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerEgressPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessContextManagerEgressPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerEgressPolicyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessContextManagerEgressPolicyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

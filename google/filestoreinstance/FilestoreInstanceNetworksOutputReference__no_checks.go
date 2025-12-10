@@ -43,11 +43,11 @@ func (f *jsiiProxy_FilestoreInstanceNetworksOutputReference) validateGetStringMa
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstanceNetworksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FilestoreInstanceNetworksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstanceNetworksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FilestoreInstanceNetworksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

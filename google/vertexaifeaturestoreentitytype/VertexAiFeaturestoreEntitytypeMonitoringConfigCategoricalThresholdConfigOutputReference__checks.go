@@ -85,17 +85,17 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThre
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

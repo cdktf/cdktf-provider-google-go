@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeFirewallAllowOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (c *jsiiProxy_ComputeFirewallAllowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeFirewallAllowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeFirewallAllowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeFirewallAllowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

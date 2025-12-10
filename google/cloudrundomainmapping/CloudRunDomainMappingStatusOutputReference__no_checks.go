@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudRunDomainMappingStatusOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunDomainMappingStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunDomainMappingStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunDomainMappingStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunDomainMappingStatusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

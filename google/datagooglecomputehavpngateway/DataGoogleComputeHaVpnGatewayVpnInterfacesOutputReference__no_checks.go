@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeHaVpnGatewayVpnInterfacesOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeHaVpnGatewayVpnInterfacesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeHaVpnGatewayVpnInterfacesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeHaVpnGatewayVpnInterfacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeHaVpnGatewayVpnInterfacesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

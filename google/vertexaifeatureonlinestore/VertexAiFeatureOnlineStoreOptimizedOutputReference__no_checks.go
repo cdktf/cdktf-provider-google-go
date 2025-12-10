@@ -43,11 +43,11 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreOptimizedOutputReference) validateG
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStoreOptimizedOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreOptimizedOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStoreOptimizedOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreOptimizedOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

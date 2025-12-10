@@ -43,7 +43,7 @@ func (n *jsiiProxy_NetappVolumeSnapshotPolicyOutputReference) validateGetStringM
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeSnapshotPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappVolumeSnapshotPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (n *jsiiProxy_NetappVolumeSnapshotPolicyOutputReference) validatePutWeeklyS
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeSnapshotPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappVolumeSnapshotPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

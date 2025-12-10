@@ -43,7 +43,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputR
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputR
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

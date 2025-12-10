@@ -43,11 +43,11 @@ func (v *jsiiProxy_VmwareengineNetworkVpcNetworksOutputReference) validateGetStr
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineNetworkVpcNetworksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VmwareengineNetworkVpcNetworksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineNetworkVpcNetworksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareengineNetworkVpcNetworksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

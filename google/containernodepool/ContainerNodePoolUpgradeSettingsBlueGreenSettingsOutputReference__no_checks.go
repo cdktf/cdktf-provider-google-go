@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

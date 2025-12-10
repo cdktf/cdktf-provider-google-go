@@ -43,11 +43,11 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicyOutp
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

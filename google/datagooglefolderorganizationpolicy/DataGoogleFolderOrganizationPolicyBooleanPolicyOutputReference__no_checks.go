@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicyBooleanPolicyOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

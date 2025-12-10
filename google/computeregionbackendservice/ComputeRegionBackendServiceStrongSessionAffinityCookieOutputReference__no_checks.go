@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceStrongSessionAffinityCookieOutputR
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceStrongSessionAffinityCookieOutputR
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

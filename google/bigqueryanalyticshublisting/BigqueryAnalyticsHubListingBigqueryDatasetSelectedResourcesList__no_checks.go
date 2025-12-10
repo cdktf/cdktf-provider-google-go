@@ -15,7 +15,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesLi
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

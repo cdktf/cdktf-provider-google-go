@@ -43,11 +43,11 @@ func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) validateGetStrin
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceGcsSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

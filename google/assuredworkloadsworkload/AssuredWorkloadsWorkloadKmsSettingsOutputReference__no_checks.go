@@ -43,11 +43,11 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadKmsSettingsOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_AssuredWorkloadsWorkloadKmsSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AssuredWorkloadsWorkloadKmsSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AssuredWorkloadsWorkloadKmsSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AssuredWorkloadsWorkloadKmsSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

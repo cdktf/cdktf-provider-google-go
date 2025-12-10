@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleBigqueryTableTableConstraintsForeignKeysList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTableTableConstraintsForeignKeysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryTableTableConstraintsForeignKeysList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

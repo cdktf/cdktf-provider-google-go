@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeSecurityPolicyAdvancedOptionsConfigList) val
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeSecurityPolicyAdvancedOptionsConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeSecurityPolicyAdvancedOptionsConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeHealthCheckGrpcHealthCheckOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeHealthCheckGrpcHealthCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeHealthCheckGrpcHealthCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeHealthCheckGrpcHealthCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeHealthCheckGrpcHealthCheckOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

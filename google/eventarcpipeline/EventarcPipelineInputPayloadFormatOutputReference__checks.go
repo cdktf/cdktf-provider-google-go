@@ -85,9 +85,9 @@ func (e *jsiiProxy_EventarcPipelineInputPayloadFormatOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineInputPayloadFormatOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (e *jsiiProxy_EventarcPipelineInputPayloadFormatOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -126,9 +126,9 @@ func (e *jsiiProxy_EventarcPipelineInputPayloadFormatOutputReference) validatePu
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineInputPayloadFormatOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (e *jsiiProxy_EventarcPipelineInputPayloadFormatOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

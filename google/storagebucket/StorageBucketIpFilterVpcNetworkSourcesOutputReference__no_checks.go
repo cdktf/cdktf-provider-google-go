@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageBucketIpFilterVpcNetworkSourcesOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketIpFilterVpcNetworkSourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageBucketIpFilterVpcNetworkSourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketIpFilterVpcNetworkSourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageBucketIpFilterVpcNetworkSourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

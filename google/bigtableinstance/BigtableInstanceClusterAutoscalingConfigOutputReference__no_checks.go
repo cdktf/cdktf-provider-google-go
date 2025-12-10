@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) vali
 	return nil
 }
 
-func (b *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableInstanceClusterAutoscalingConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

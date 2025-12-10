@@ -43,11 +43,11 @@ func (t *jsiiProxy_TranscoderJobConfigMuxStreamsSegmentSettingsOutputReference) 
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigMuxStreamsSegmentSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscoderJobConfigMuxStreamsSegmentSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigMuxStreamsSegmentSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobConfigMuxStreamsSegmentSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

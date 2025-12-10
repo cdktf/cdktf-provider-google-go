@@ -43,11 +43,11 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsTriggersOutputReferenc
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsTriggersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsTriggersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsTriggersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsTriggersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

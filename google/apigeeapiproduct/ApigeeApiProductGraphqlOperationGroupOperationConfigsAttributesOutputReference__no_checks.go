@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsAttribut
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

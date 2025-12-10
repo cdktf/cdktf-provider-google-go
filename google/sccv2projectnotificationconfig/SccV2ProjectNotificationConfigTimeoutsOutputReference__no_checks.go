@@ -43,11 +43,11 @@ func (s *jsiiProxy_SccV2ProjectNotificationConfigTimeoutsOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_SccV2ProjectNotificationConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SccV2ProjectNotificationConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SccV2ProjectNotificationConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SccV2ProjectNotificationConfigTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

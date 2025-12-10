@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

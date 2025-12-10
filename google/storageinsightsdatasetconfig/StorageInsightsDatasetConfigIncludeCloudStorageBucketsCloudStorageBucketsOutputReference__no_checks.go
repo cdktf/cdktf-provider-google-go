@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudSt
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

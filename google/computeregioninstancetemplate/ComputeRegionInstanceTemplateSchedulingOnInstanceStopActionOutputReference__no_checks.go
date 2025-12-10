@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOnInstanceStopActionOu
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOnInstanceStopActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOnInstanceStopActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOnInstanceStopActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateSchedulingOnInstanceStopActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

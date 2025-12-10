@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetappVolumeSnapshotPolicyHourlyScheduleOutputReference) vali
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeSnapshotPolicyHourlyScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappVolumeSnapshotPolicyHourlyScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeSnapshotPolicyHourlyScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappVolumeSnapshotPolicyHourlyScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

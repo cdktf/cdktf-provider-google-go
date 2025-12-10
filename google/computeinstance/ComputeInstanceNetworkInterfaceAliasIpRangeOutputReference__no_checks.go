@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInstanceNetworkInterfaceAliasIpRangeOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceNetworkInterfaceAliasIpRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstanceNetworkInterfaceAliasIpRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceNetworkInterfaceAliasIpRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceNetworkInterfaceAliasIpRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConf
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConf
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsDataStoreConnection
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsDataStoreConnectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxPageKnowledgeConnectorSettingsDataStoreConnectionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

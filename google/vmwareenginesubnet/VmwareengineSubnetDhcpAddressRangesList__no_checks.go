@@ -15,7 +15,7 @@ func (v *jsiiProxy_VmwareengineSubnetDhcpAddressRangesList) validateGetParameter
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineSubnetDhcpAddressRangesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareengineSubnetDhcpAddressRangesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

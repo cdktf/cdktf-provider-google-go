@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) validateGe
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

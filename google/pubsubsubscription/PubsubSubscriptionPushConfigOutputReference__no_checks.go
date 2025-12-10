@@ -43,7 +43,7 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) validatePutOidcT
 	return nil
 }
 
-func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PubsubSubscriptionPushConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

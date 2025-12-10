@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustA
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

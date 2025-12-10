@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimu
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

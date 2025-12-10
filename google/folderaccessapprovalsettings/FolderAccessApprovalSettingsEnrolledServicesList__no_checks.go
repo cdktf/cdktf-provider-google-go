@@ -15,7 +15,7 @@ func (f *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesList) validateGet
 	return nil
 }
 
-func (f *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

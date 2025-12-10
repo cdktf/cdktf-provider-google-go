@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersList) validateGetP
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesMatchesHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

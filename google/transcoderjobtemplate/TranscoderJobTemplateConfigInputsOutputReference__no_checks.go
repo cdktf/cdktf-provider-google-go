@@ -43,11 +43,11 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigInputsOutputReference) validateGet
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigInputsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigInputsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigInputsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigInputsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigOut
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

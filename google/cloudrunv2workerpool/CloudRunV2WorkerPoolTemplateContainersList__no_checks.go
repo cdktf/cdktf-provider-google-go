@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersList) validateGetParame
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

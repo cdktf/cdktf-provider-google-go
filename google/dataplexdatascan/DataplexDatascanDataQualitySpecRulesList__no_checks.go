@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexDatascanDataQualitySpecRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataprocBatchRuntimeInfoCurrentUsageList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataprocBatchRuntimeInfoCurrentUsageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocBatchRuntimeInfoCurrentUsageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

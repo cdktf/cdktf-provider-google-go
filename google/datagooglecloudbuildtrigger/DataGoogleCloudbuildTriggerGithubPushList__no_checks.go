@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTriggerGithubPushList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTriggerGithubPushList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudbuildTriggerGithubPushList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

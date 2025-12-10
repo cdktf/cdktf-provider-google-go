@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionMonitoringQueryLangua
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionMonitoringQueryLangua
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

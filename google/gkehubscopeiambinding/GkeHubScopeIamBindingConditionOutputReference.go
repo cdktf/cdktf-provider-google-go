@@ -72,11 +72,11 @@ type GkeHubScopeIamBindingConditionOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -505,8 +505,8 @@ func (g *jsiiProxy_GkeHubScopeIamBindingConditionOutputReference) InterpolationA
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubScopeIamBindingConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GkeHubScopeIamBindingConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -514,7 +514,7 @@ func (g *jsiiProxy_GkeHubScopeIamBindingConditionOutputReference) InterpolationF
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -529,8 +529,8 @@ func (g *jsiiProxy_GkeHubScopeIamBindingConditionOutputReference) ResetDescripti
 	)
 }
 
-func (g *jsiiProxy_GkeHubScopeIamBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GkeHubScopeIamBindingConditionOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -538,7 +538,7 @@ func (g *jsiiProxy_GkeHubScopeIamBindingConditionOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

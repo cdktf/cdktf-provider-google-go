@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesP
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesPostConditionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecClusterupgradeGkeUpgradeOverridesPostConditionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

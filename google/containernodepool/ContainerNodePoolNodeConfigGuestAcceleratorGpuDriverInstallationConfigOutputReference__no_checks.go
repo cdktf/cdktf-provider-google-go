@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallat
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

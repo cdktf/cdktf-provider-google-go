@@ -15,7 +15,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList) vali
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

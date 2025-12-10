@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageInsightsReportConfigObjectMetadataReportOptionsStorage
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

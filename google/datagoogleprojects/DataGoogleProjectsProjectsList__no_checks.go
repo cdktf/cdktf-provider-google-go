@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleProjectsProjectsList) validateGetParameters(index *
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleProjectsProjectsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleProjectsProjectsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

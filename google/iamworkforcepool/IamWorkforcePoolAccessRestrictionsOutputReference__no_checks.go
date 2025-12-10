@@ -43,7 +43,7 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) validateGe
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) validatePu
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

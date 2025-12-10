@@ -43,7 +43,7 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

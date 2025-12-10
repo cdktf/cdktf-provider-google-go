@@ -15,7 +15,7 @@ func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigList) validateGetPara
 	return nil
 }
 
-func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrganizationIamAuditConfigAuditLogConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

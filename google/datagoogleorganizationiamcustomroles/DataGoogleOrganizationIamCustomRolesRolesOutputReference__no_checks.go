@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleOrganizationIamCustomRolesRolesOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOrganizationIamCustomRolesRolesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleOrganizationIamCustomRolesRolesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOrganizationIamCustomRolesRolesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleOrganizationIamCustomRolesRolesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

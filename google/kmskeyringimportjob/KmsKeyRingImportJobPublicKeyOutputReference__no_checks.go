@@ -43,11 +43,11 @@ func (k *jsiiProxy_KmsKeyRingImportJobPublicKeyOutputReference) validateGetStrin
 	return nil
 }
 
-func (k *jsiiProxy_KmsKeyRingImportJobPublicKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KmsKeyRingImportJobPublicKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KmsKeyRingImportJobPublicKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsKeyRingImportJobPublicKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

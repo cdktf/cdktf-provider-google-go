@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasList) valida
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

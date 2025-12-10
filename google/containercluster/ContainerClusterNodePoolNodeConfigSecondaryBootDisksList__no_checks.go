@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigSecondaryBootDisksList) val
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigSecondaryBootDisksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigSecondaryBootDisksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

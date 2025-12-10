@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingNodeAffinitiesList) validate
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateSchedulingNodeAffinitiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceTemplateSchedulingNodeAffinitiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptions
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

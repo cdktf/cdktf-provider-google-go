@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeGlobalForwardingRuleTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ComputeGlobalForwardingRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeGlobalForwardingRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeGlobalForwardingRuleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeGlobalForwardingRuleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

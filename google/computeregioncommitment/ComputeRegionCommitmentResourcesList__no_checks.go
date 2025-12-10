@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRegionCommitmentResourcesList) validateGetParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionCommitmentResourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionCommitmentResourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

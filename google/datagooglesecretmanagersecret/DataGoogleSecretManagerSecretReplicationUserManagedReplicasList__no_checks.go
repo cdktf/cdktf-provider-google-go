@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerSecretReplicationUserManagedReplicasLi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerSecretReplicationUserManagedReplicasList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSecretManagerSecretReplicationUserManagedReplicasList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

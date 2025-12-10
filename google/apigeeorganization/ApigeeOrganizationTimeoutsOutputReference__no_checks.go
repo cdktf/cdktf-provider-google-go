@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApigeeOrganizationTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeOrganizationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeOrganizationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeOrganizationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeOrganizationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

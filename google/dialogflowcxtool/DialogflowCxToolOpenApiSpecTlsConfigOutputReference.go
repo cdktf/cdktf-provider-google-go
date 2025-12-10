@@ -65,11 +65,11 @@ type DialogflowCxToolOpenApiSpecTlsConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutCaCerts(value interface{})
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -425,8 +425,8 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -434,7 +434,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigOutputReference) Interpol
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -452,8 +452,8 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigOutputReference) PutCaCer
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -461,7 +461,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigOutputReference) Resolve(
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

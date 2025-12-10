@@ -43,11 +43,11 @@ func (d *jsiiProxy_DnsPolicyAlternativeNameServerConfigTargetNameServersOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

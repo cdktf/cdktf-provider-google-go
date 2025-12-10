@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsObjectsTimingList) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsObjectsTimingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsObjectsTimingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

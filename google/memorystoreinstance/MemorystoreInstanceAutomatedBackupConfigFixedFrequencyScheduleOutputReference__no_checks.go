@@ -43,7 +43,7 @@ func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigFixedFrequencySchedul
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigFixedFrequencySchedul
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

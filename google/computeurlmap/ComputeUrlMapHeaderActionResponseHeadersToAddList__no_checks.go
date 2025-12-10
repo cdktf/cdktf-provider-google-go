@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeUrlMapHeaderActionResponseHeadersToAddList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapHeaderActionResponseHeadersToAddList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeUrlMapHeaderActionResponseHeadersToAddList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterDatabaseEncryptionList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterDatabaseEncryptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterDatabaseEncryptionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

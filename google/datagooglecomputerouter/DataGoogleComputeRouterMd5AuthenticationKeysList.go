@@ -39,7 +39,7 @@ type DataGoogleComputeRouterMd5AuthenticationKeysList interface {
 	Get(index *float64) DataGoogleComputeRouterMd5AuthenticationKeysOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataGoogleComputeRouterMd5AuthenticationKeysList) Get(index *
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterMd5AuthenticationKeysList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleComputeRouterMd5AuthenticationKeysList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataGoogleComputeRouterMd5AuthenticationKeysList) Resolve(_co
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

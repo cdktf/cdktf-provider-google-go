@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validateGetSt
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validatePutCo
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

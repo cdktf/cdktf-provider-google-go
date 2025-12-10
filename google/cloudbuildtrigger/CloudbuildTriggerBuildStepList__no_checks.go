@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildStepList) validateGetParameters(index *
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildStepList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildStepList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

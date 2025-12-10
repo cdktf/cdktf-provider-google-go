@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteRelatedUrlList) validateGetParameters(in
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteRelatedUrlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAnalysisNoteRelatedUrlList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

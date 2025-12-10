@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleRedisClusterPscConfigsList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleRedisClusterPscConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleRedisClusterPscConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

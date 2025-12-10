@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleMemorystoreInstanceAutomatedBackupConfigFixedFreque
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleMemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

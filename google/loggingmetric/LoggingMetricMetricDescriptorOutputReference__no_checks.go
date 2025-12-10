@@ -43,7 +43,7 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateGetStri
 	return nil
 }
 
-func (l *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validatePutLabe
 	return nil
 }
 
-func (l *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

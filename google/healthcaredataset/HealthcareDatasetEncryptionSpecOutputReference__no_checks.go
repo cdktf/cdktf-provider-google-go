@@ -43,11 +43,11 @@ func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) validateGetSt
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HealthcareDatasetEncryptionSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

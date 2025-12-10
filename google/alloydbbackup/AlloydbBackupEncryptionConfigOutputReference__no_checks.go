@@ -43,11 +43,11 @@ func (a *jsiiProxy_AlloydbBackupEncryptionConfigOutputReference) validateGetStri
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbBackupEncryptionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlloydbBackupEncryptionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbBackupEncryptionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbBackupEncryptionConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

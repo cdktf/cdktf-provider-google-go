@@ -43,7 +43,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

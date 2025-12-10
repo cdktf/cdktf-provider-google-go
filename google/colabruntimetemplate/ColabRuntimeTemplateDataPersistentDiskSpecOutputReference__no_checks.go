@@ -43,11 +43,11 @@ func (c *jsiiProxy_ColabRuntimeTemplateDataPersistentDiskSpecOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateDataPersistentDiskSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ColabRuntimeTemplateDataPersistentDiskSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateDataPersistentDiskSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ColabRuntimeTemplateDataPersistentDiskSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

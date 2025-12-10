@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsOutputReference) validateGetStri
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableTableConstraintsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryTableTableConstraintsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsOutputReference) validatePutPrim
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableTableConstraintsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryTableTableConstraintsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

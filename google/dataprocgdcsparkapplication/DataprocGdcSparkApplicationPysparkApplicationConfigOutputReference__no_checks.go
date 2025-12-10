@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocGdcSparkApplicationPysparkApplicationConfigOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataprocGdcSparkApplicationPysparkApplicationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocGdcSparkApplicationPysparkApplicationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocGdcSparkApplicationPysparkApplicationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocGdcSparkApplicationPysparkApplicationConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

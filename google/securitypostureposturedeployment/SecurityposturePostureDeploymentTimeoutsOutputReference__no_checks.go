@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecurityposturePostureDeploymentTimeoutsOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_SecurityposturePostureDeploymentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityposturePostureDeploymentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityposturePostureDeploymentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityposturePostureDeploymentTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

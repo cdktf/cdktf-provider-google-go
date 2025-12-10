@@ -43,11 +43,11 @@ func (a *jsiiProxy_AlloydbInstanceReadPoolConfigOutputReference) validateGetStri
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbInstanceReadPoolConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlloydbInstanceReadPoolConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbInstanceReadPoolConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbInstanceReadPoolConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

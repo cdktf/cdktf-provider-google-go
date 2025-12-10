@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

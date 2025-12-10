@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRolesRolesList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleProjectIamCustomRolesRolesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleProjectIamCustomRolesRolesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

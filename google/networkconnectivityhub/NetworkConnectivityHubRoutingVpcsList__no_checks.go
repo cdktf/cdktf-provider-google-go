@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkConnectivityHubRoutingVpcsList) validateGetParameters(
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubRoutingVpcsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectivityHubRoutingVpcsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

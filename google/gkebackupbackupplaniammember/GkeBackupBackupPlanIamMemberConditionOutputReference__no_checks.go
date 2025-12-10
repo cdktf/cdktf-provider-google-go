@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeBackupBackupPlanIamMemberConditionOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeBackupBackupPlanIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupBackupPlanIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeBackupBackupPlanIamMemberConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

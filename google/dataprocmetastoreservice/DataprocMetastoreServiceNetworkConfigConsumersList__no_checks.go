@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceNetworkConfigConsumersList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceNetworkConfigConsumersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocMetastoreServiceNetworkConfigConsumersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerNodePoolTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

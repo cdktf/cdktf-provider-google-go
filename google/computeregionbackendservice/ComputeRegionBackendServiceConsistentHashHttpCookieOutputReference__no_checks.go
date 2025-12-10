@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceConsistentHashHttpCookieOutputRefe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceConsistentHashHttpCookieOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceConsistentHashHttpCookieOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceConsistentHashHttpCookieOutputRefe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceConsistentHashHttpCookieOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceConsistentHashHttpCookieOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigeeApiProductOperationGroupOperationConfigsList) validateG
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeApiProductOperationGroupOperationConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeApiProductOperationGroupOperationConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

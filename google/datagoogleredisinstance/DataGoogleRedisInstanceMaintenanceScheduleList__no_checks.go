@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleRedisInstanceMaintenanceScheduleList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleRedisInstanceMaintenanceScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleRedisInstanceMaintenanceScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

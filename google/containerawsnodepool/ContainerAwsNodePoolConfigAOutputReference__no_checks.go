@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) validatePutTaints
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAwsNodePoolConfigAOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

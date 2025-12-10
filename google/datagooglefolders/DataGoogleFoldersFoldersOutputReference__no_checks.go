@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleFoldersFoldersOutputReference) validateGetStringMap
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleFoldersFoldersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleFoldersFoldersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleFoldersFoldersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleFoldersFoldersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

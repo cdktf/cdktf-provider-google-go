@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionNetworkEndpointGroupAppEngineOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkEndpointGroupAppEngineOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionNetworkEndpointGroupAppEngineOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkEndpointGroupAppEngineOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionNetworkEndpointGroupAppEngineOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

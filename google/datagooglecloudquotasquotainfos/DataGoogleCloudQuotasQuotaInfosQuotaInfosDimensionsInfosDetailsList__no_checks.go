@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosDetai
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosDetailsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

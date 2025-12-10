@@ -43,7 +43,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutp
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutp
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInEmailOutputReference) validateGet
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSignInEmailOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformConfigSignInEmailOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSignInEmailOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigSignInEmailOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

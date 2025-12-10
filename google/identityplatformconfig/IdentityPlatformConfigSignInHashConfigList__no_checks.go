@@ -15,7 +15,7 @@ func (i *jsiiProxy_IdentityPlatformConfigSignInHashConfigList) validateGetParame
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSignInHashConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigSignInHashConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

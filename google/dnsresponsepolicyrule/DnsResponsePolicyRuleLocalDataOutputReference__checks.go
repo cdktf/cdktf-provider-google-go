@@ -85,9 +85,9 @@ func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -124,9 +124,9 @@ func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validatePutLoc
 	return nil
 }
 
-func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DnsResponsePolicyRuleLocalDataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

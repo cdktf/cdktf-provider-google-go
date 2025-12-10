@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCdnPolicyOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceCdnPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceCdnPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceCdnPolicyOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceCdnPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceCdnPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

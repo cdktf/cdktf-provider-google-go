@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeNodeTemplateNodeTypeFlexibilityOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeTemplateNodeTypeFlexibilityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeNodeTemplateNodeTypeFlexibilityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeTemplateNodeTypeFlexibilityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeNodeTemplateNodeTypeFlexibilityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

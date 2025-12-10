@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterDefaultSnatStatusOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterDefaultSnatStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterDefaultSnatStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterDefaultSnatStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterDefaultSnatStatusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

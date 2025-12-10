@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) validatePutS
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeBackendServiceTlsSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

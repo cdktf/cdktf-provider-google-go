@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudbuildTriggerBuildStepVolumesOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildStepVolumesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildStepVolumesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildStepVolumesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildStepVolumesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

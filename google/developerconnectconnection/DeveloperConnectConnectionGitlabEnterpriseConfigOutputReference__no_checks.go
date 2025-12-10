@@ -43,7 +43,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

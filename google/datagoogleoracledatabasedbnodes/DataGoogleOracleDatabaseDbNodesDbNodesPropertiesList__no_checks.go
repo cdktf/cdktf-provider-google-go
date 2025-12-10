@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodesDbNodesPropertiesList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodesDbNodesPropertiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleOracleDatabaseDbNodesDbNodesPropertiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

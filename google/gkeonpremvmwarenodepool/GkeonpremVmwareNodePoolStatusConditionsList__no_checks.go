@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolStatusConditionsList) validateGetParam
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareNodePoolStatusConditionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareNodePoolStatusConditionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

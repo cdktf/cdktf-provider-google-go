@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOut
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

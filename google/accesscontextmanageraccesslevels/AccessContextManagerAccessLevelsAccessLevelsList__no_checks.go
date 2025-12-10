@@ -15,7 +15,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsList) validateGet
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

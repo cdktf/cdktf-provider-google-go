@@ -15,7 +15,7 @@ func (d *jsiiProxy_DnsManagedZoneDnssecConfigDefaultKeySpecsList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DnsManagedZoneDnssecConfigDefaultKeySpecsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsManagedZoneDnssecConfigDefaultKeySpecsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

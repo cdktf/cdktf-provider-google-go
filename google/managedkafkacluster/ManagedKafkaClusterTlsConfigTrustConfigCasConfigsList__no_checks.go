@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagedKafkaClusterTlsConfigTrustConfigCasConfigsList) valida
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKafkaClusterTlsConfigTrustConfigCasConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedKafkaClusterTlsConfigTrustConfigCasConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

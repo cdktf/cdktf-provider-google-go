@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleMonitoringNotificationChannelSensitiveLabelsList) v
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringNotificationChannelSensitiveLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMonitoringNotificationChannelSensitiveLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

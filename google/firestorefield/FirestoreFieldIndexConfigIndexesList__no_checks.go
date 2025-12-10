@@ -15,7 +15,7 @@ func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesList) validateGetParameters(i
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

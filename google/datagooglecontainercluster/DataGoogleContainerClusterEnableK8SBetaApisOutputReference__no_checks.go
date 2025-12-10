@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterEnableK8SBetaApisOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterEnableK8SBetaApisOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleContainerClusterEnableK8SBetaApisOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterEnableK8SBetaApisOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterEnableK8SBetaApisOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

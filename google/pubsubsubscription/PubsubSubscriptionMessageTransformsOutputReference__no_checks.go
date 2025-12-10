@@ -43,7 +43,7 @@ func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) validateG
 	return nil
 }
 
-func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) validateP
 	return nil
 }
 
-func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

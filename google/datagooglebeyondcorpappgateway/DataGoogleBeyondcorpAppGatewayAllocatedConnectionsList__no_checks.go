@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleBeyondcorpAppGatewayAllocatedConnectionsList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBeyondcorpAppGatewayAllocatedConnectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBeyondcorpAppGatewayAllocatedConnectionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) va
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryDataTransferConfigEmailPreferencesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

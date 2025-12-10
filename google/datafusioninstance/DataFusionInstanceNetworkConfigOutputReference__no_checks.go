@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validatePutPr
 	return nil
 }
 
-func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataFusionInstanceNetworkConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

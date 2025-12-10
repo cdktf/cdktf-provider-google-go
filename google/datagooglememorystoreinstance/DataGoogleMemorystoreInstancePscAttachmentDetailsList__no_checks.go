@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleMemorystoreInstancePscAttachmentDetailsList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMemorystoreInstancePscAttachmentDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMemorystoreInstancePscAttachmentDetailsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

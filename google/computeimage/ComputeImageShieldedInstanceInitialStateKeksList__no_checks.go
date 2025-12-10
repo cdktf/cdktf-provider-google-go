@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateKeksList) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateKeksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateKeksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

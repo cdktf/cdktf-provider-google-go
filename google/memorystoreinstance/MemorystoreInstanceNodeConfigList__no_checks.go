@@ -15,7 +15,7 @@ func (m *jsiiProxy_MemorystoreInstanceNodeConfigList) validateGetParameters(inde
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceNodeConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceNodeConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) vali
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

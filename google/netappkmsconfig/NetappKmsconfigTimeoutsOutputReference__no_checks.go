@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetappKmsconfigTimeoutsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (n *jsiiProxy_NetappKmsconfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappKmsconfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetappKmsconfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappKmsconfigTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

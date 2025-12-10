@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironme
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

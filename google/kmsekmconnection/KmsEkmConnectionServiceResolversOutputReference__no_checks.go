@@ -43,7 +43,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateGetS
 	return nil
 }
 
-func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validatePutS
 	return nil
 }
 
-func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

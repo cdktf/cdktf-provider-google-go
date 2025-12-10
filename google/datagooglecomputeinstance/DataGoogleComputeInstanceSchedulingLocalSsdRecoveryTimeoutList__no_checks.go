@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutLis
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingLocalSsdRecoveryTimeoutList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

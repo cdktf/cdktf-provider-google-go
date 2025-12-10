@@ -43,11 +43,11 @@ func (s *jsiiProxy_SccV2FolderSccBigQueryExportTimeoutsOutputReference) validate
 	return nil
 }
 
-func (s *jsiiProxy_SccV2FolderSccBigQueryExportTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SccV2FolderSccBigQueryExportTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SccV2FolderSccBigQueryExportTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SccV2FolderSccBigQueryExportTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

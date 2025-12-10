@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList)
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

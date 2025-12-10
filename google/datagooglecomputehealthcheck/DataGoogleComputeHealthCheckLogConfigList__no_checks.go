@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeHealthCheckLogConfigList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeHealthCheckLogConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeHealthCheckLogConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

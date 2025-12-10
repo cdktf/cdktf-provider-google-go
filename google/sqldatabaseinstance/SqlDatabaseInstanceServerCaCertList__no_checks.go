@@ -15,7 +15,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceServerCaCertList) validateGetParameters(in
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceServerCaCertList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstanceServerCaCertList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

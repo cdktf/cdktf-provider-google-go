@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecRbacrolebindingactuationOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecRbacrolebindingactuationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecRbacrolebindingactuationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecRbacrolebindingactuationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecRbacrolebindingactuationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

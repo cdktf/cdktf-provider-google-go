@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobLoggingConfigOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobLoggingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobLoggingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobLoggingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobLoggingConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

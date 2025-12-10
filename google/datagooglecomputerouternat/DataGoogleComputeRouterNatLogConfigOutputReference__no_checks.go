@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeRouterNatLogConfigOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterNatLogConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeRouterNatLogConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterNatLogConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRouterNatLogConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

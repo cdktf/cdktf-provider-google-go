@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecContainerImageOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecContainerImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecContainerImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecContainerImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexTaskNotebookInfrastructureSpecContainerImageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceOutputRefe
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

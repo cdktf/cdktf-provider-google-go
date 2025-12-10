@@ -43,7 +43,7 @@ func (n *jsiiProxy_NetworkServicesTcpRouteRulesOutputReference) validateGetStrin
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesTcpRouteRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesTcpRouteRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (n *jsiiProxy_NetworkServicesTcpRouteRulesOutputReference) validatePutMatch
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesTcpRouteRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesTcpRouteRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

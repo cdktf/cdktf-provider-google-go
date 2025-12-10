@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRouterPeerCustomLearnedIpRangesList) validateGetParame
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterPeerCustomLearnedIpRangesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRouterPeerCustomLearnedIpRangesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

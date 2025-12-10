@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyUserDefinedFieldsList) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyUserDefinedFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyUserDefinedFieldsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

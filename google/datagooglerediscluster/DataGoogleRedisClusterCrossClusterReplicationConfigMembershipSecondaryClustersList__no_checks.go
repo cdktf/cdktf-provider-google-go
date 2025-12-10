@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigMembership
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

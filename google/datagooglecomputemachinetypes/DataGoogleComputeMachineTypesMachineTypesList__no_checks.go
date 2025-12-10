@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeMachineTypesMachineTypesList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeMachineTypesMachineTypesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeMachineTypesMachineTypesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

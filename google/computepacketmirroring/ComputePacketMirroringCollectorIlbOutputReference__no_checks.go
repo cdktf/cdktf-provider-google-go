@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputePacketMirroringCollectorIlbOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ComputePacketMirroringCollectorIlbOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputePacketMirroringCollectorIlbOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputePacketMirroringCollectorIlbOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputePacketMirroringCollectorIlbOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

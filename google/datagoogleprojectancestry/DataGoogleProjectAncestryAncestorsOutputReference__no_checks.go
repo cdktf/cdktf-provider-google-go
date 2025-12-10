@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleProjectAncestryAncestorsOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleProjectAncestryAncestorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleProjectAncestryAncestorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleProjectAncestryAncestorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleProjectAncestryAncestorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleDnsKeysKeySigningKeysOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDnsKeysKeySigningKeysOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleDnsKeysKeySigningKeysOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDnsKeysKeySigningKeysOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDnsKeysKeySigningKeysOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

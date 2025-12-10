@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (m *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigSecondaryIns
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeSubnetworksSubnetworksList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeSubnetworksSubnetworksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeSubnetworksSubnetworksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

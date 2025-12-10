@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterFleetList) validateGetParameters(index 
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterFleetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterFleetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

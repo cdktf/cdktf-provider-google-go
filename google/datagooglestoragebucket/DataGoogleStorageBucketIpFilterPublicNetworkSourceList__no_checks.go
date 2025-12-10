@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketIpFilterPublicNetworkSourceList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketIpFilterPublicNetworkSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleStorageBucketIpFilterPublicNetworkSourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

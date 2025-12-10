@@ -78,12 +78,12 @@ type IntegrationsClientCloudKmsConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetKeyVersion()
 	ResetKmsProjectId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -574,8 +574,8 @@ func (i *jsiiProxy_IntegrationsClientCloudKmsConfigOutputReference) Interpolatio
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationsClientCloudKmsConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IntegrationsClientCloudKmsConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -583,7 +583,7 @@ func (i *jsiiProxy_IntegrationsClientCloudKmsConfigOutputReference) Interpolatio
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -606,8 +606,8 @@ func (i *jsiiProxy_IntegrationsClientCloudKmsConfigOutputReference) ResetKmsProj
 	)
 }
 
-func (i *jsiiProxy_IntegrationsClientCloudKmsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IntegrationsClientCloudKmsConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -615,7 +615,7 @@ func (i *jsiiProxy_IntegrationsClientCloudKmsConfigOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

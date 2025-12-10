@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterAuthorizationViewerUsersList) vali
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterAuthorizationViewerUsersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterAuthorizationViewerUsersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

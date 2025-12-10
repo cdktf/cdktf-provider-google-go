@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGooglePubsubTopicSchemaSettingsList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicSchemaSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePubsubTopicSchemaSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

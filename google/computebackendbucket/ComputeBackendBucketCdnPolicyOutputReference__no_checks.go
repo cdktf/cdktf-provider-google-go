@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeBackendBucketCdnPolicyOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendBucketCdnPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeBackendBucketCdnPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_ComputeBackendBucketCdnPolicyOutputReference) validatePutNega
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendBucketCdnPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeBackendBucketCdnPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeReservationShareSettingsProjectMapList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservationShareSettingsProjectMapList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeReservationShareSettingsProjectMapList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

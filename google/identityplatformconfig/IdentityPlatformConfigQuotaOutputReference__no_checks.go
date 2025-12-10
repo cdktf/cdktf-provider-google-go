@@ -43,7 +43,7 @@ func (i *jsiiProxy_IdentityPlatformConfigQuotaOutputReference) validateGetString
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigQuotaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformConfigQuotaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IdentityPlatformConfigQuotaOutputReference) validatePutSignUp
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigQuotaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigQuotaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

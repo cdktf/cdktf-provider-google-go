@@ -43,7 +43,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputOu
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputOu
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

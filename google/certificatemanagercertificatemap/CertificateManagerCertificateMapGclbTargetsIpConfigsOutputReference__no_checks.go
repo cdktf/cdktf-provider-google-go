@@ -43,11 +43,11 @@ func (c *jsiiProxy_CertificateManagerCertificateMapGclbTargetsIpConfigsOutputRef
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerCertificateMapGclbTargetsIpConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CertificateManagerCertificateMapGclbTargetsIpConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerCertificateMapGclbTargetsIpConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CertificateManagerCertificateMapGclbTargetsIpConfigsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

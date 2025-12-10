@@ -15,7 +15,7 @@ func (a *jsiiProxy_AlloydbBackupExpiryQuantityList) validateGetParameters(index 
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbBackupExpiryQuantityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbBackupExpiryQuantityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

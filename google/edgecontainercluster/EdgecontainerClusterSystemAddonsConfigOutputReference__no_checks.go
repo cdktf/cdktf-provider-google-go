@@ -43,7 +43,7 @@ func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigOutputReference) valida
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigOutputReference) valida
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

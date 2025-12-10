@@ -43,7 +43,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateGetStringMa
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -87,7 +87,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validatePutVmImageP
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

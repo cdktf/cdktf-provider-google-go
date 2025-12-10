@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) 
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryDatasetExternalCatalogDatasetOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

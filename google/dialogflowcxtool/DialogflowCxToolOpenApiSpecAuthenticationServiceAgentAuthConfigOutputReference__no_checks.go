@@ -43,11 +43,11 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConf
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

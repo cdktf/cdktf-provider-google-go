@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleMemorystoreInstanceAutomatedBackupConfigFixedFreque
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

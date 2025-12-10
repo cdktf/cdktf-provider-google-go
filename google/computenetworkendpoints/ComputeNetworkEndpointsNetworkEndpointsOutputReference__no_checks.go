@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeNetworkEndpointsNetworkEndpointsOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNetworkEndpointsNetworkEndpointsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeNetworkEndpointsNetworkEndpointsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNetworkEndpointsNetworkEndpointsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeNetworkEndpointsNetworkEndpointsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

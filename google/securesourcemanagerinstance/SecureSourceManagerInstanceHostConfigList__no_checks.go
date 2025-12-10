@@ -15,7 +15,7 @@ func (s *jsiiProxy_SecureSourceManagerInstanceHostConfigList) validateGetParamet
 	return nil
 }
 
-func (s *jsiiProxy_SecureSourceManagerInstanceHostConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecureSourceManagerInstanceHostConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

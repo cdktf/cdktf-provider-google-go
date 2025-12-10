@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference)
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

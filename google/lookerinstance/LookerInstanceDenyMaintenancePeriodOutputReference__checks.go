@@ -85,9 +85,9 @@ func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodOutputReference) validateG
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -126,9 +126,9 @@ func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodOutputReference) validateP
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

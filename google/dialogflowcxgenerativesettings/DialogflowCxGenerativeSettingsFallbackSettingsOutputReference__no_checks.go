@@ -43,7 +43,7 @@ func (d *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxGenerativeSettingsFallbackSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsList) validateGetParameters(index
 	return nil
 }
 
-func (p *jsiiProxy_PubsubTopicMessageTransformsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PubsubTopicMessageTransformsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

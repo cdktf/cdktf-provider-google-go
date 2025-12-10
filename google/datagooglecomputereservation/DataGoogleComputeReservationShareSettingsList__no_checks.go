@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeReservationShareSettingsList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservationShareSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeReservationShareSettingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

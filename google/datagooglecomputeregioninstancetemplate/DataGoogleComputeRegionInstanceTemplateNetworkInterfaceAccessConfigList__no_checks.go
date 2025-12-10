@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateNetworkInterfaceAccess
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateNetworkInterfaceAccessConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateNetworkInterfaceAccessConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

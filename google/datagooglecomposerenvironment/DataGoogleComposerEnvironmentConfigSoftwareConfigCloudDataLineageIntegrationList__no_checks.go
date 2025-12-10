@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigSoftwareConfigCloudDataLin
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsLis
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

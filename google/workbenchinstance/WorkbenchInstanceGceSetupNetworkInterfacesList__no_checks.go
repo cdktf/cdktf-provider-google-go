@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesList) validateGetPa
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

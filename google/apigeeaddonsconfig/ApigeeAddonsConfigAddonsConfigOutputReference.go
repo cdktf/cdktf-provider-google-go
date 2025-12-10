@@ -73,7 +73,7 @@ type ApigeeAddonsConfigAddonsConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAdvancedApiOpsConfig(value *ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig)
 	PutApiSecurityConfig(value *ApigeeAddonsConfigAddonsConfigApiSecurityConfig)
 	PutConnectorsPlatformConfig(value *ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig)
@@ -86,7 +86,7 @@ type ApigeeAddonsConfigAddonsConfigOutputReference interface {
 	ResetMonetizationConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -522,8 +522,8 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigOutputReference) InterpolationA
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -531,7 +531,7 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigOutputReference) InterpolationF
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -633,8 +633,8 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigOutputReference) ResetMonetizat
 	)
 }
 
-func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -642,7 +642,7 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

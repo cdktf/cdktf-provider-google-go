@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementBinauthzOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementBinauthzOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementBinauthzOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementBinauthzOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubFeatureMembershipConfigmanagementBinauthzOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

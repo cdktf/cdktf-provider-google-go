@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChronicleRuleSeverityList) validateGetParameters(index *float
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleRuleSeverityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleRuleSeverityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

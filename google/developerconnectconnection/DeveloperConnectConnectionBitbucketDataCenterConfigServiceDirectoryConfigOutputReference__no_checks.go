@@ -43,11 +43,11 @@ func (d *jsiiProxy_DeveloperConnectConnectionBitbucketDataCenterConfigServiceDir
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) validateGe
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableAuthorizedViewSubsetViewFamilySubsetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

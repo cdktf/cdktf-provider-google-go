@@ -71,7 +71,7 @@ type StorageControlProjectIntelligenceConfigFilterOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutExcludedCloudStorageBuckets(value *StorageControlProjectIntelligenceConfigFilterExcludedCloudStorageBuckets)
 	PutExcludedCloudStorageLocations(value *StorageControlProjectIntelligenceConfigFilterExcludedCloudStorageLocations)
 	PutIncludedCloudStorageBuckets(value *StorageControlProjectIntelligenceConfigFilterIncludedCloudStorageBuckets)
@@ -82,7 +82,7 @@ type StorageControlProjectIntelligenceConfigFilterOutputReference interface {
 	ResetIncludedCloudStorageLocations()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -498,8 +498,8 @@ func (s *jsiiProxy_StorageControlProjectIntelligenceConfigFilterOutputReference)
 	return returns
 }
 
-func (s *jsiiProxy_StorageControlProjectIntelligenceConfigFilterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_StorageControlProjectIntelligenceConfigFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -507,7 +507,7 @@ func (s *jsiiProxy_StorageControlProjectIntelligenceConfigFilterOutputReference)
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -590,8 +590,8 @@ func (s *jsiiProxy_StorageControlProjectIntelligenceConfigFilterOutputReference)
 	)
 }
 
-func (s *jsiiProxy_StorageControlProjectIntelligenceConfigFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_StorageControlProjectIntelligenceConfigFilterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -599,7 +599,7 @@ func (s *jsiiProxy_StorageControlProjectIntelligenceConfigFilterOutputReference)
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecBigqueryPublishingConfigOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecBigqueryPublishingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecBigqueryPublishingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecBigqueryPublishingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecBigqueryPublishingConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

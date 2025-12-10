@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataprocJobPysparkConfigOutputReference) validateGetStringMap
 	return nil
 }
 
-func (d *jsiiProxy_DataprocJobPysparkConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocJobPysparkConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataprocJobPysparkConfigOutputReference) validatePutLoggingCo
 	return nil
 }
 
-func (d *jsiiProxy_DataprocJobPysparkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocJobPysparkConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

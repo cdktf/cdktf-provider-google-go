@@ -27,9 +27,9 @@ func (k *jsiiProxy_KmsCryptoKeyPrimaryList) validateGetParameters(index *float64
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyPrimaryList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (k *jsiiProxy_KmsCryptoKeyPrimaryList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

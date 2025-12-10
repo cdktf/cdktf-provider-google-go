@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecureSourceManagerInstanceWorkforceIdentityFederationConfigO
 	return nil
 }
 
-func (s *jsiiProxy_SecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecureSourceManagerInstanceWorkforceIdentityFederationConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

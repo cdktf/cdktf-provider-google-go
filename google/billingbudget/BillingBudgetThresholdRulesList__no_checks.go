@@ -15,7 +15,7 @@ func (b *jsiiProxy_BillingBudgetThresholdRulesList) validateGetParameters(index 
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudgetThresholdRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BillingBudgetThresholdRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigDataRetentionConfigTaskLog
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

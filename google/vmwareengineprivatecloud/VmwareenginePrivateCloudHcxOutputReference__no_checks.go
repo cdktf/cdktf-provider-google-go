@@ -43,11 +43,11 @@ func (v *jsiiProxy_VmwareenginePrivateCloudHcxOutputReference) validateGetString
 	return nil
 }
 
-func (v *jsiiProxy_VmwareenginePrivateCloudHcxOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VmwareenginePrivateCloudHcxOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VmwareenginePrivateCloudHcxOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareenginePrivateCloudHcxOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

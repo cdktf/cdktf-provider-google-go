@@ -43,11 +43,11 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesA
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

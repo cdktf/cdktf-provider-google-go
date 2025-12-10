@@ -15,7 +15,7 @@ func (r *jsiiProxy_RedisInstanceServerCaCertsList) validateGetParameters(index *
 	return nil
 }
 
-func (r *jsiiProxy_RedisInstanceServerCaCertsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisInstanceServerCaCertsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

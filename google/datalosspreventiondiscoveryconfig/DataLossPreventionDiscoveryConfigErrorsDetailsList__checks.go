@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigErrorsDetailsList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfigErrorsDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigErrorsDetailsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

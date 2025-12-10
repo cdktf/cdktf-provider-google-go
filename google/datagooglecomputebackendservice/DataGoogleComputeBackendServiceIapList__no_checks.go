@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceIapList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceIapList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceIapList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

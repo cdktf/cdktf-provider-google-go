@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryTableTableConstraintsPrimaryKeyOutputReference) valid
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableTableConstraintsPrimaryKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryTableTableConstraintsPrimaryKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableTableConstraintsPrimaryKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryTableTableConstraintsPrimaryKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

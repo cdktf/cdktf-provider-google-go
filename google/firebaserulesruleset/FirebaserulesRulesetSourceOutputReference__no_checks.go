@@ -43,7 +43,7 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateGetStringM
 	return nil
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validatePutFilesPa
 	return nil
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

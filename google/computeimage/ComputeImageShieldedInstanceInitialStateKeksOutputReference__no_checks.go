@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateKeksOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateKeksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateKeksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateKeksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateKeksOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

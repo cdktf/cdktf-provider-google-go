@@ -15,7 +15,7 @@ func (d *jsiiProxy_DialogflowCxGeneratorPlaceholdersList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxGeneratorPlaceholdersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxGeneratorPlaceholdersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

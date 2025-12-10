@@ -15,7 +15,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksL
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

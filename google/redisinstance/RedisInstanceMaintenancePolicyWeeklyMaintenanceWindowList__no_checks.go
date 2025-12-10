@@ -15,7 +15,7 @@ func (r *jsiiProxy_RedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList) va
 	return nil
 }
 
-func (r *jsiiProxy_RedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkSecurityClientTlsPolicyServerValidationCaList) validat
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityClientTlsPolicyServerValidationCaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkSecurityClientTlsPolicyServerValidationCaList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

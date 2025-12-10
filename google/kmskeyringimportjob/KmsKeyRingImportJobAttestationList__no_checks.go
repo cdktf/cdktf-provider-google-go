@@ -15,7 +15,7 @@ func (k *jsiiProxy_KmsKeyRingImportJobAttestationList) validateGetParameters(ind
 	return nil
 }
 
-func (k *jsiiProxy_KmsKeyRingImportJobAttestationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsKeyRingImportJobAttestationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

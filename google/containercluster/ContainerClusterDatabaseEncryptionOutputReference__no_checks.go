@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterDatabaseEncryptionOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterDatabaseEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterDatabaseEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterDatabaseEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterDatabaseEncryptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

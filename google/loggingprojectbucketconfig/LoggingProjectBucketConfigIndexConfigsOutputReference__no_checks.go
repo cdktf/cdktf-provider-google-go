@@ -43,11 +43,11 @@ func (l *jsiiProxy_LoggingProjectBucketConfigIndexConfigsOutputReference) valida
 	return nil
 }
 
-func (l *jsiiProxy_LoggingProjectBucketConfigIndexConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingProjectBucketConfigIndexConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoggingProjectBucketConfigIndexConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingProjectBucketConfigIndexConfigsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (l *jsiiProxy_LookerInstanceMaintenanceWindowOutputReference) validateGetSt
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstanceMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LookerInstanceMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (l *jsiiProxy_LookerInstanceMaintenanceWindowOutputReference) validatePutSt
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstanceMaintenanceWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LookerInstanceMaintenanceWindowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

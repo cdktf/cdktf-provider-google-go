@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentAggregationsOut
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

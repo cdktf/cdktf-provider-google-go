@@ -15,7 +15,7 @@ func (l *jsiiProxy_LoggingFolderSinkExclusionsList) validateGetParameters(index 
 	return nil
 }
 
-func (l *jsiiProxy_LoggingFolderSinkExclusionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingFolderSinkExclusionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

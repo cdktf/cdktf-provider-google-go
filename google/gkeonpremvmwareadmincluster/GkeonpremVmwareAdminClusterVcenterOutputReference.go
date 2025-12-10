@@ -90,7 +90,7 @@ type GkeonpremVmwareAdminClusterVcenterOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetAddress()
 	ResetCaCertData()
 	ResetCluster()
@@ -102,7 +102,7 @@ type GkeonpremVmwareAdminClusterVcenterOutputReference interface {
 	ResetStoragePolicyName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -717,8 +717,8 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) Interpolat
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -726,7 +726,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) Interpolat
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -805,8 +805,8 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) ResetStora
 	)
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -814,7 +814,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterVcenterOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

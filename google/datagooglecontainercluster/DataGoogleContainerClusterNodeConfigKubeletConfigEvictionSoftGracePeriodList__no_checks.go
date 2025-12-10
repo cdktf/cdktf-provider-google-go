@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoft
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

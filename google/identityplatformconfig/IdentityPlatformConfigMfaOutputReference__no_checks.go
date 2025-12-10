@@ -43,7 +43,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaOutputReference) validateGetStringMa
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMfaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformConfigMfaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaOutputReference) validatePutProvider
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMfaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigMfaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -73,7 +73,7 @@ type GkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoo
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutNodeConfigs(value interface{})
 	PutTaints(value interface{})
 	ResetLabels()
@@ -82,7 +82,7 @@ type GkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoo
 	ResetTaints()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -520,8 +520,8 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoo
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -529,7 +529,7 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoo
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -590,8 +590,8 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoo
 	)
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -599,7 +599,7 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoo
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesNetworkMatchOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesNetworkMatchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesNetworkMatchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesNetworkMatchOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesNetworkMatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesNetworkMatchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

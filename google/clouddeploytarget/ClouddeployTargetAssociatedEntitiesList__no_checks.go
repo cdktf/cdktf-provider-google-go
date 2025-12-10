@@ -15,7 +15,7 @@ func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesList) validateGetParameter
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

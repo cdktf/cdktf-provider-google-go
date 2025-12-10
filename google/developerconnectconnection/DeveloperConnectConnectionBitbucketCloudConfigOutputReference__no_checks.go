@@ -43,7 +43,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

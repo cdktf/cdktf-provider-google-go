@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfigTimeoutsOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudbuildBitbucketServerConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildBitbucketServerConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildBitbucketServerConfigTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

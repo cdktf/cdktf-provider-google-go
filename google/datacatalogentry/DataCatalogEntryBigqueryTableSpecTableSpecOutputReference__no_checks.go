@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecTableSpecOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecTableSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecTableSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecTableSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecTableSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

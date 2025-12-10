@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsConnectionPoolConfigFlag
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

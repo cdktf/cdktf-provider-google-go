@@ -43,11 +43,11 @@ func (k *jsiiProxy_KmsKeyRingIamMemberConditionOutputReference) validateGetStrin
 	return nil
 }
 
-func (k *jsiiProxy_KmsKeyRingIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KmsKeyRingIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KmsKeyRingIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsKeyRingIamMemberConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

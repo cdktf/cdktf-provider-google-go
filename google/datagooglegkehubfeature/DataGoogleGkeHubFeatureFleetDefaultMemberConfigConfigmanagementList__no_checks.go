@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanageme
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

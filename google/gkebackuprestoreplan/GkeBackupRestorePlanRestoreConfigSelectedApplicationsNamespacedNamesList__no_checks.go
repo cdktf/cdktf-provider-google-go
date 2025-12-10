@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespac
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

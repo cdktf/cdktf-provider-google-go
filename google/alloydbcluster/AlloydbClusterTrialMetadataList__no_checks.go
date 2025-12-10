@@ -15,7 +15,7 @@ func (a *jsiiProxy_AlloydbClusterTrialMetadataList) validateGetParameters(index 
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterTrialMetadataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbClusterTrialMetadataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

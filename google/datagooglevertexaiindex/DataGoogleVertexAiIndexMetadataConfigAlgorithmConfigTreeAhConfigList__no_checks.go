@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhCon
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

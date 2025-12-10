@@ -43,7 +43,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigSecretVolumesOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigSecretVolumesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigSecretVolumesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigSecretVolumesOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigSecretVolumesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigSecretVolumesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

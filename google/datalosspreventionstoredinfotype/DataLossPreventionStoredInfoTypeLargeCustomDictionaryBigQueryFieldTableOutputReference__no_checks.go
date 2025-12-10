@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQuery
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTableOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

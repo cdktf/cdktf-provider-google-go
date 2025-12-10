@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeDiskAsyncPrimaryDiskOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_ComputeDiskAsyncPrimaryDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeDiskAsyncPrimaryDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeDiskAsyncPrimaryDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeDiskAsyncPrimaryDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

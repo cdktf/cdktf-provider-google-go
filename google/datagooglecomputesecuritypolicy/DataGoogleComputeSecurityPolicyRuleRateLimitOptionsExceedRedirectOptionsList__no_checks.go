@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleRateLimitOptionsExceedRedi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

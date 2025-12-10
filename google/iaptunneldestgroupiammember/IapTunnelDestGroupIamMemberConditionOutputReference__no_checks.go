@@ -43,11 +43,11 @@ func (i *jsiiProxy_IapTunnelDestGroupIamMemberConditionOutputReference) validate
 	return nil
 }
 
-func (i *jsiiProxy_IapTunnelDestGroupIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IapTunnelDestGroupIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IapTunnelDestGroupIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IapTunnelDestGroupIamMemberConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

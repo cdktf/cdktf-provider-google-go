@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerVersionOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerVersionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstanceGroupManagerVersionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerVersionOutputReference) validatePu
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerVersionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceGroupManagerVersionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

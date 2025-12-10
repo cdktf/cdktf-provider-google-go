@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDa
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

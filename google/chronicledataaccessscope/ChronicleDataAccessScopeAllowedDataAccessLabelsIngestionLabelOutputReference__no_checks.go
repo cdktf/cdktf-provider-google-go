@@ -43,11 +43,11 @@ func (c *jsiiProxy_ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabel
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

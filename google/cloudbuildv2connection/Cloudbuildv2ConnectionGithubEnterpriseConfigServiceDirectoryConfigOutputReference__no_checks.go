@@ -43,11 +43,11 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryC
 	return nil
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_Cloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

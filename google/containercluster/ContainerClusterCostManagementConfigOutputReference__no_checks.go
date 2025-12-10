@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterCostManagementConfigOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterCostManagementConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterCostManagementConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterCostManagementConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterCostManagementConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildStepVolumesList) validateGetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildStepVolumesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildStepVolumesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

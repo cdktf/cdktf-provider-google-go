@@ -15,7 +15,7 @@ func (a *jsiiProxy_AlloydbClusterEncryptionInfoList) validateGetParameters(index
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterEncryptionInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbClusterEncryptionInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

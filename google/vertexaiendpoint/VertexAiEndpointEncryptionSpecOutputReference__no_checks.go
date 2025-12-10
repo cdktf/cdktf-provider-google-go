@@ -43,11 +43,11 @@ func (v *jsiiProxy_VertexAiEndpointEncryptionSpecOutputReference) validateGetStr
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiEndpointEncryptionSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiEndpointEncryptionSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiEndpointEncryptionSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiEndpointEncryptionSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

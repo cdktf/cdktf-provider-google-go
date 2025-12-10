@@ -43,7 +43,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validateGetStr
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validatePutSdp
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

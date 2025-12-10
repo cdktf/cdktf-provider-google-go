@@ -15,7 +15,7 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesDeployParamete
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

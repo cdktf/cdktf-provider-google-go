@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigHttpLoadBalancingOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigHttpLoadBalancingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterAddonsConfigHttpLoadBalancingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigHttpLoadBalancingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterAddonsConfigHttpLoadBalancingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BigqueryJobStatusErrorResultList) validateGetParameters(index
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobStatusErrorResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryJobStatusErrorResultList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

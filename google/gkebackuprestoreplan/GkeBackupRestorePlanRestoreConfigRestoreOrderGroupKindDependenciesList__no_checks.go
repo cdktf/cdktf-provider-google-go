@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDepende
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoCloudMarketplaceList
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoCloudMarketplaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoCloudMarketplaceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

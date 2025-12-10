@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorize
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

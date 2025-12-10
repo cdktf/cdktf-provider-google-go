@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutpu
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

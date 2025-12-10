@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobTimeoutsOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

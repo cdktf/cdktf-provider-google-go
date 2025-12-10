@@ -43,11 +43,11 @@ func (i *jsiiProxy_IapTunnelDestGroupTimeoutsOutputReference) validateGetStringM
 	return nil
 }
 
-func (i *jsiiProxy_IapTunnelDestGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IapTunnelDestGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IapTunnelDestGroupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IapTunnelDestGroupTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

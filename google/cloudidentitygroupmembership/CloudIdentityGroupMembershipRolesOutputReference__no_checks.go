@@ -43,7 +43,7 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) validatePut
 	return nil
 }
 
-func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudIdentityGroupMembershipRolesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

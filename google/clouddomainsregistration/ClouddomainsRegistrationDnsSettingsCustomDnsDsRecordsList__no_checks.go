@@ -15,7 +15,7 @@ func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsList) va
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddomainsRegistrationDnsSettingsCustomDnsDsRecordsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

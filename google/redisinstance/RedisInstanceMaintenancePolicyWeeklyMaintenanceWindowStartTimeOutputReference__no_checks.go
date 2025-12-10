@@ -43,11 +43,11 @@ func (r *jsiiProxy_RedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTim
 	return nil
 }
 
-func (r *jsiiProxy_RedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

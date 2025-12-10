@@ -43,7 +43,7 @@ func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validat
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validat
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

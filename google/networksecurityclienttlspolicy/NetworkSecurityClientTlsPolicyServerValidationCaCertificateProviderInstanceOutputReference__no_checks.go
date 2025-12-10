@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkSecurityClientTlsPolicyServerValidationCaCertificatePr
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstanceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstanceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstanceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstanceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

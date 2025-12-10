@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesSecretItemsList) validate
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesSecretItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVolumesSecretItemsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

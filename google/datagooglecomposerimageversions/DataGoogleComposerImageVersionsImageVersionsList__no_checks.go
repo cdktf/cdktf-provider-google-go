@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComposerImageVersionsImageVersionsList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerImageVersionsImageVersionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComposerImageVersionsImageVersionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

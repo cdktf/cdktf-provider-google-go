@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) validateGetStringMa
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedKafkaAclAclEntriesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryTableExternalCatalogTableOptionsStorageDescriptorSerd
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

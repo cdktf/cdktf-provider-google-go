@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleBigqueryDatasetAccessDatasetList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryDatasetAccessDatasetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryDatasetAccessDatasetList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

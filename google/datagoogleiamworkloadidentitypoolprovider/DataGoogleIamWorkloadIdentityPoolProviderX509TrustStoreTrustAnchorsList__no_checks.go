@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustA
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

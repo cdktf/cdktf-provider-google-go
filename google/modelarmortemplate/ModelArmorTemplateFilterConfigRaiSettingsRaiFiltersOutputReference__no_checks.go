@@ -43,11 +43,11 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersOutputRefe
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

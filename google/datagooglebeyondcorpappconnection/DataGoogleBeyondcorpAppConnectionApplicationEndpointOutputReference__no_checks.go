@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleBeyondcorpAppConnectionApplicationEndpointOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBeyondcorpAppConnectionApplicationEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleBeyondcorpAppConnectionApplicationEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBeyondcorpAppConnectionApplicationEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBeyondcorpAppConnectionApplicationEndpointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

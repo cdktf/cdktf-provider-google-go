@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateParametersOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateParametersOutputReference) validatePu
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateParametersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

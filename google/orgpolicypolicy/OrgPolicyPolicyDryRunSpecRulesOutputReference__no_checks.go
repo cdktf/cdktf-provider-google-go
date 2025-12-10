@@ -43,7 +43,7 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesOutputReference) validateGetStr
 	return nil
 }
 
-func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesOutputReference) validatePutVal
 	return nil
 }
 
-func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

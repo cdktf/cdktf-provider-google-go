@@ -43,11 +43,11 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

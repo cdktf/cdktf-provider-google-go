@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesList) validateGetPara
 	return nil
 }
 
-func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

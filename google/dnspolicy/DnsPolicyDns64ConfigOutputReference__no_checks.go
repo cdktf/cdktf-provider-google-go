@@ -43,7 +43,7 @@ func (d *jsiiProxy_DnsPolicyDns64ConfigOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DnsPolicyDns64ConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DnsPolicyDns64ConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DnsPolicyDns64ConfigOutputReference) validatePutScopeParamete
 	return nil
 }
 
-func (d *jsiiProxy_DnsPolicyDns64ConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsPolicyDns64ConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

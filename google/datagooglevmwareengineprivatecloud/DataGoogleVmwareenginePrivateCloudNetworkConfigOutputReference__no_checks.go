@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudNetworkConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

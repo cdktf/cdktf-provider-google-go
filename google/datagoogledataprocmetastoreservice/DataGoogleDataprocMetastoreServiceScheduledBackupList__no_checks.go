@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceScheduledBackupList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceScheduledBackupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceScheduledBackupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

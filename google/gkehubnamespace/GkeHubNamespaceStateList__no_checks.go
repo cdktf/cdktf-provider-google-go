@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeHubNamespaceStateList) validateGetParameters(index *float6
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubNamespaceStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubNamespaceStateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

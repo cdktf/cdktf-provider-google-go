@@ -43,7 +43,7 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobLoadOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryJobLoadOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (b *jsiiProxy_BigqueryJobLoadOutputReference) validatePutTimePartitioningPa
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobLoadOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryJobLoadOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

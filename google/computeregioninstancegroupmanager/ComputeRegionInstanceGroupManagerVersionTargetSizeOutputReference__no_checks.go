@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManagerVersionTargetSizeOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceGroupManagerVersionTargetSizeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionInstanceGroupManagerVersionTargetSizeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceGroupManagerVersionTargetSizeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionInstanceGroupManagerVersionTargetSizeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

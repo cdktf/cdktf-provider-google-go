@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleParameterManagerRegionalParametersParametersPolicyM
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleParameterManagerRegionalParametersParametersPolicyMemberList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleParameterManagerRegionalParametersParametersPolicyMemberList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

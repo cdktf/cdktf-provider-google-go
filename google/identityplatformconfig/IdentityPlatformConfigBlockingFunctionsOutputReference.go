@@ -67,13 +67,13 @@ type IdentityPlatformConfigBlockingFunctionsOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutForwardInboundCredentials(value *IdentityPlatformConfigBlockingFunctionsForwardInboundCredentials)
 	PutTriggers(value interface{})
 	ResetForwardInboundCredentials()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -449,8 +449,8 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsOutputReference) Inter
 	return returns
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -458,7 +458,7 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsOutputReference) Inter
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -495,8 +495,8 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsOutputReference) Reset
 	)
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -504,7 +504,7 @@ func (i *jsiiProxy_IdentityPlatformConfigBlockingFunctionsOutputReference) Resol
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

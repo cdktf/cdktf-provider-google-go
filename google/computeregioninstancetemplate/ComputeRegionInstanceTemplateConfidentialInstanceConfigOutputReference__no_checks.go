@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateConfidentialInstanceConfigOutput
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateConfidentialInstanceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateConfidentialInstanceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateConfidentialInstanceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateConfidentialInstanceConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerCo
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

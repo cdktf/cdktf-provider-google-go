@@ -15,7 +15,7 @@ func (n *jsiiProxy_NotebooksRuntimeMetricsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeMetricsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotebooksRuntimeMetricsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

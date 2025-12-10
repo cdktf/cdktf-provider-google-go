@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpH
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

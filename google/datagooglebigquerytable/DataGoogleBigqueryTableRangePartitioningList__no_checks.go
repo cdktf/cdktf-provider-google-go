@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleBigqueryTableRangePartitioningList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTableRangePartitioningList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryTableRangePartitioningList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

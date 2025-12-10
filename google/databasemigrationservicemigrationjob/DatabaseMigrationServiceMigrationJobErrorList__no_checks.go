@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobErrorList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobErrorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServiceMigrationJobErrorList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

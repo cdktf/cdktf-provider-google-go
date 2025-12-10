@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

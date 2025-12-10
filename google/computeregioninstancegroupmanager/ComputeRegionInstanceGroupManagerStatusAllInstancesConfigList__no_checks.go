@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManagerStatusAllInstancesConfigList
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceGroupManagerStatusAllInstancesConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionInstanceGroupManagerStatusAllInstancesConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DocumentAiWarehouseLocationTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DocumentAiWarehouseLocationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DocumentAiWarehouseLocationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DocumentAiWarehouseLocationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DocumentAiWarehouseLocationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

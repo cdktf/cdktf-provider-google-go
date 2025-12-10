@@ -43,7 +43,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

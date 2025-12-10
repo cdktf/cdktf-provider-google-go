@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigeeOrganizationPropertiesPropertyList) validateGetParamete
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeOrganizationPropertiesPropertyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeOrganizationPropertiesPropertyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

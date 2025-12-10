@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroupInstancesNamedPortsList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroupInstancesNamedPortsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceGroupInstancesNamedPortsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageTransferAgentPoolBandwidthLimitOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_StorageTransferAgentPoolBandwidthLimitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageTransferAgentPoolBandwidthLimitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageTransferAgentPoolBandwidthLimitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageTransferAgentPoolBandwidthLimitOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

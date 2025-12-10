@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketAutoclassList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketAutoclassList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleStorageBucketAutoclassList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

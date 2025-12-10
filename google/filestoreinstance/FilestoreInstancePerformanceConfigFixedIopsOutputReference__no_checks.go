@@ -43,11 +43,11 @@ func (f *jsiiProxy_FilestoreInstancePerformanceConfigFixedIopsOutputReference) v
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstancePerformanceConfigFixedIopsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FilestoreInstancePerformanceConfigFixedIopsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstancePerformanceConfigFixedIopsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FilestoreInstancePerformanceConfigFixedIopsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

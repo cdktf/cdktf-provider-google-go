@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

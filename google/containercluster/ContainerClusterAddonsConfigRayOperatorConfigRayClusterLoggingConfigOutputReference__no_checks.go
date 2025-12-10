@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggin
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

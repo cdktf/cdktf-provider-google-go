@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterResourceUsageExportConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

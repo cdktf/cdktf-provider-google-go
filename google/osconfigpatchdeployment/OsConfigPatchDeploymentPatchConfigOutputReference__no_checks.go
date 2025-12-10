@@ -43,7 +43,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validateGe
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validatePu
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

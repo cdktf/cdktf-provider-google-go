@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInstanceSchedulingNodeAffinitiesOutputReference) valid
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceSchedulingNodeAffinitiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstanceSchedulingNodeAffinitiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceSchedulingNodeAffinitiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceSchedulingNodeAffinitiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

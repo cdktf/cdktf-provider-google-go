@@ -43,11 +43,11 @@ func (k *jsiiProxy_KmsCryptoKeyVersionExternalProtectionLevelOptionsOutputRefere
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersionExternalProtectionLevelOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KmsCryptoKeyVersionExternalProtectionLevelOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KmsCryptoKeyVersionExternalProtectionLevelOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsCryptoKeyVersionExternalProtectionLevelOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

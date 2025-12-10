@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleAlloydbClusterRestoreContinuousBackupSourceList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbClusterRestoreContinuousBackupSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleAlloydbClusterRestoreContinuousBackupSourceList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

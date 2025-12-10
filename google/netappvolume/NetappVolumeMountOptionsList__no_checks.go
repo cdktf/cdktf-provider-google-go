@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetappVolumeMountOptionsList) validateGetParameters(index *fl
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeMountOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappVolumeMountOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

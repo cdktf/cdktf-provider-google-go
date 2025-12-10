@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleMonitoringClusterIstioServiceTelemetryOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringClusterIstioServiceTelemetryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleMonitoringClusterIstioServiceTelemetryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringClusterIstioServiceTelemetryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMonitoringClusterIstioServiceTelemetryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleFilestoreInstanceEffectiveReplicationReplicasOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleFilestoreInstanceEffectiveReplicationReplicasOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleFilestoreInstanceEffectiveReplicationReplicasOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleFilestoreInstanceEffectiveReplicationReplicasOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleFilestoreInstanceEffectiveReplicationReplicasOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

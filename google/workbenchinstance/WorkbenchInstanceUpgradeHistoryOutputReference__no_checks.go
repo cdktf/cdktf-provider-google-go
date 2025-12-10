@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) validateGetSt
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

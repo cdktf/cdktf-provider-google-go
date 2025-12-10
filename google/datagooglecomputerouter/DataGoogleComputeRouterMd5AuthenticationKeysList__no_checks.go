@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeRouterMd5AuthenticationKeysList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterMd5AuthenticationKeysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRouterMd5AuthenticationKeysList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

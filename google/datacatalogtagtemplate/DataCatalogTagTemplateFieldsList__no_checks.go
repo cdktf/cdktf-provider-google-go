@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsList) validateGetParameters(index
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCatalogTagTemplateFieldsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

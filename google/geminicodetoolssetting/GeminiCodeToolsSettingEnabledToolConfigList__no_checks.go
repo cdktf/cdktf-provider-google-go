@@ -15,7 +15,7 @@ func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) validateGetParam
 	return nil
 }
 
-func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

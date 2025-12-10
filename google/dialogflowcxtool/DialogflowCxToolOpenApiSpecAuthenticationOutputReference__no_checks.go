@@ -43,7 +43,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

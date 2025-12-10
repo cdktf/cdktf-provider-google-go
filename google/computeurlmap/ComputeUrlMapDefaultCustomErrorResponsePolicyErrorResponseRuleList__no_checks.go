@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRul
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeUrlMapDefaultCustomErrorResponsePolicyErrorResponseRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (o *jsiiProxy_OsConfigPatchDeploymentOneTimeScheduleOutputReference) valida
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentOneTimeScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentOneTimeScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentOneTimeScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentOneTimeScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

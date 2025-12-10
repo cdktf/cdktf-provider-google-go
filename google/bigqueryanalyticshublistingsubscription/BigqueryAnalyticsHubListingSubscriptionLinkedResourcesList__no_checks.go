@@ -15,7 +15,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionLinkedResourcesList) v
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionLinkedResourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingSubscriptionLinkedResourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

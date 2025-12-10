@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudRunServiceTrafficList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunServiceTrafficList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudRunServiceTrafficList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowLi
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

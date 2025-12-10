@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingCon
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_MemorystoreInstanceEndpointsConnectionsPscAutoConnectionOutpu
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceEndpointsConnectionsPscAutoConnectionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MemorystoreInstanceEndpointsConnectionsPscAutoConnectionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceEndpointsConnectionsPscAutoConnectionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceEndpointsConnectionsPscAutoConnectionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

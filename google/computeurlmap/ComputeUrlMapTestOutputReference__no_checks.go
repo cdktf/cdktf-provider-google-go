@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeUrlMapTestOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapTestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeUrlMapTestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ComputeUrlMapTestOutputReference) validatePutHeadersParameter
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapTestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeUrlMapTestOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

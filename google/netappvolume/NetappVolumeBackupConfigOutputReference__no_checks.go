@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetappVolumeBackupConfigOutputReference) validateGetStringMap
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeBackupConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappVolumeBackupConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeBackupConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappVolumeBackupConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

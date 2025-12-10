@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataprocAutoscalingPolicyBasicAlgorithmOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataprocAutoscalingPolicyBasicAlgorithmOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocAutoscalingPolicyBasicAlgorithmOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataprocAutoscalingPolicyBasicAlgorithmOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataprocAutoscalingPolicyBasicAlgorithmOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocAutoscalingPolicyBasicAlgorithmOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

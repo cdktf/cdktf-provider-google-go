@@ -43,11 +43,11 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesOutputRefer
 	return nil
 }
 
-func (k *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

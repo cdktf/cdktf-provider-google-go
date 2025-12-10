@@ -15,7 +15,7 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesConnectionInfoList) valida
 	return nil
 }
 
-func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesConnectionInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesConnectionInfoList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

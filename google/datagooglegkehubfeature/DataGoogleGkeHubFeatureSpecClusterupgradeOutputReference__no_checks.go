@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecClusterupgradeOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecClusterupgradeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecClusterupgradeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecClusterupgradeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecClusterupgradeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

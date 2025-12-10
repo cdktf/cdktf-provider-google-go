@@ -43,7 +43,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

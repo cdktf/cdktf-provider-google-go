@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHub
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

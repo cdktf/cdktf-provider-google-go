@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigConfidentialNodesOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigConfidentialNodesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigConfidentialNodesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigConfidentialNodesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigConfidentialNodesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

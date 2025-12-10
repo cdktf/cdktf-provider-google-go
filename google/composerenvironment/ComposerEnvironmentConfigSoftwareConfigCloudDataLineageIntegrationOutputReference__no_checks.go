@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegr
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

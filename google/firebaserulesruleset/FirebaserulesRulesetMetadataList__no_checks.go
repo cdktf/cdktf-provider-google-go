@@ -15,7 +15,7 @@ func (f *jsiiProxy_FirebaserulesRulesetMetadataList) validateGetParameters(index
 	return nil
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetMetadataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaserulesRulesetMetadataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

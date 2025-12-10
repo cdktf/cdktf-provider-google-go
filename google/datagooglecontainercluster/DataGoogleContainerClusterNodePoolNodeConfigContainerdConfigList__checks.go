@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigL
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

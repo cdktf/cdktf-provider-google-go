@@ -43,11 +43,11 @@ func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference)
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

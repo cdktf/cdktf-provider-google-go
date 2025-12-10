@@ -43,11 +43,11 @@ func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyNotificationChannelStrategy
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

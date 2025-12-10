@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesRegexExpectationList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesRegexExpectationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesRegexExpectationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

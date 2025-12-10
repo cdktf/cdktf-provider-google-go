@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) validateGetParam
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

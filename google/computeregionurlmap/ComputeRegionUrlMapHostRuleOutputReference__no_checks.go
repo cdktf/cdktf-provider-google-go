@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionUrlMapHostRuleOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapHostRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionUrlMapHostRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapHostRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionUrlMapHostRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

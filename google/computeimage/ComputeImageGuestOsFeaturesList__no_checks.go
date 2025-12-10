@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeImageGuestOsFeaturesList) validateGetParameters(index 
 	return nil
 }
 
-func (c *jsiiProxy_ComputeImageGuestOsFeaturesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeImageGuestOsFeaturesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

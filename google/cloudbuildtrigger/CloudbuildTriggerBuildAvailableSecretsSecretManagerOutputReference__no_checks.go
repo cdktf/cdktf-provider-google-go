@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputRefe
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

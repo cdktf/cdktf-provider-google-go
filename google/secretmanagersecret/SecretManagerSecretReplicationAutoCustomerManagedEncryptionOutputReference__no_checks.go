@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecretManagerSecretReplicationAutoCustomerManagedEncryptionOu
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

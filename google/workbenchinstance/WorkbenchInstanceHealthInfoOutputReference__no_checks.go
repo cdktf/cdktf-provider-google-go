@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkbenchInstanceHealthInfoOutputReference) validateGetString
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceHealthInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkbenchInstanceHealthInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceHealthInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkbenchInstanceHealthInfoOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

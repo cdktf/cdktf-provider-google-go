@@ -43,7 +43,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsOutputReference) 
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsOutputReference) 
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

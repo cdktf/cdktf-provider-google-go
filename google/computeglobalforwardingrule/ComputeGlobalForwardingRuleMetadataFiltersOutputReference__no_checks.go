@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeGlobalForwardingRuleMetadataFiltersOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ComputeGlobalForwardingRuleMetadataFiltersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeGlobalForwardingRuleMetadataFiltersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ComputeGlobalForwardingRuleMetadataFiltersOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ComputeGlobalForwardingRuleMetadataFiltersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeGlobalForwardingRuleMetadataFiltersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

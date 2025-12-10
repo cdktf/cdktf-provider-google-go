@@ -43,11 +43,11 @@ func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOut
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

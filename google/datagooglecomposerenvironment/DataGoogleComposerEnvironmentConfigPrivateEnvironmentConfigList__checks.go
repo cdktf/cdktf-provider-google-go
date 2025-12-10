@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigPrivateEnvironmentConfigLi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigPrivateEnvironmentConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigPrivateEnvironmentConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

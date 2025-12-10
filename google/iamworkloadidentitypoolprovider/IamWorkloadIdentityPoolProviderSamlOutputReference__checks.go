@@ -85,17 +85,17 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolProviderSamlOutputReference) validateG
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolProviderSamlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (i *jsiiProxy_IamWorkloadIdentityPoolProviderSamlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolProviderSamlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (i *jsiiProxy_IamWorkloadIdentityPoolProviderSamlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleSpannerDatabaseEncryptionConfigList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSpannerDatabaseEncryptionConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSpannerDatabaseEncryptionConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

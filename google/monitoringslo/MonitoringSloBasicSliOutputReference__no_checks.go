@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitoringSloBasicSliOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloBasicSliOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringSloBasicSliOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (m *jsiiProxy_MonitoringSloBasicSliOutputReference) validatePutLatencyParam
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloBasicSliOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringSloBasicSliOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

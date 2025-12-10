@@ -15,7 +15,7 @@ func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersList) 
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelArmorFloorsettingFilterConfigRaiSettingsRaiFiltersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

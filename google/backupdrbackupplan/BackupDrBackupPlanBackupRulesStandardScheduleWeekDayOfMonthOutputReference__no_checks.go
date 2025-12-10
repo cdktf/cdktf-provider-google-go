@@ -43,11 +43,11 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOu
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

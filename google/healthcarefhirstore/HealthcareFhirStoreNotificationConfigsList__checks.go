@@ -29,9 +29,9 @@ func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsList) validateGetParame
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

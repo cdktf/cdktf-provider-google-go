@@ -43,11 +43,11 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutput
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

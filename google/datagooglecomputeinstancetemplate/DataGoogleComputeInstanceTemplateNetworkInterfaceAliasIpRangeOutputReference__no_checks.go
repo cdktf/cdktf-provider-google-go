@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRange
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

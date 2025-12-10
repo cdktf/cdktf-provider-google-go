@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigLis
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

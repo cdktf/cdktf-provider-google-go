@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatusAllInstancesConfig
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatusAllInstancesConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerStatusAllInstancesConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

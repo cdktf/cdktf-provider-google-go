@@ -43,11 +43,11 @@ func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirect
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

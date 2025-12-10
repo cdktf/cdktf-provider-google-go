@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsList) validateGetP
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

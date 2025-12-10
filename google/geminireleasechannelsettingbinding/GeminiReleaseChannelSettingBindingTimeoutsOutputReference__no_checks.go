@@ -43,11 +43,11 @@ func (g *jsiiProxy_GeminiReleaseChannelSettingBindingTimeoutsOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GeminiReleaseChannelSettingBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GeminiReleaseChannelSettingBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GeminiReleaseChannelSettingBindingTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GeminiReleaseChannelSettingBindingTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

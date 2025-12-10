@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigConfigEncryptionOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolConfigConfigEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAwsNodePoolConfigConfigEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolConfigConfigEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAwsNodePoolConfigConfigEncryptionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

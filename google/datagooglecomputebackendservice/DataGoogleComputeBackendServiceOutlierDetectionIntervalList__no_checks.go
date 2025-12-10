@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceOutlierDetectionIntervalList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceOutlierDetectionIntervalList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceOutlierDetectionIntervalList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

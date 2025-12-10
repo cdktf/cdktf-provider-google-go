@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsMan
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

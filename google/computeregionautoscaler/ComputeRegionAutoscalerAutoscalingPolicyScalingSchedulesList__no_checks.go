@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList)
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

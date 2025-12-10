@@ -43,11 +43,11 @@ func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingLimitsOutputRefere
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpannerInstanceAutoscalingConfigAutoscalingLimitsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

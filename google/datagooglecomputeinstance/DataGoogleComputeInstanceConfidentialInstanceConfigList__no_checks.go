@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

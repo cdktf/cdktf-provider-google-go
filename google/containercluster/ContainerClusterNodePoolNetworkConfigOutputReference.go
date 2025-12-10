@@ -84,7 +84,7 @@ type ContainerClusterNodePoolNetworkConfigOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutAdditionalNodeNetworkConfigs(value interface{})
 	PutAdditionalPodNetworkConfigs(value interface{})
 	PutNetworkPerformanceConfig(value *ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig)
@@ -99,7 +99,7 @@ type ContainerClusterNodePoolNetworkConfigOutputReference interface {
 	ResetPodRange()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -649,8 +649,8 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Interpo
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -658,7 +658,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Interpo
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -773,8 +773,8 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) ResetPo
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -782,7 +782,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNetworkConfigOutputReference) Resolve
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateVolumesEmptyDirList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateVolumesEmptyDirList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateVolumesEmptyDirList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

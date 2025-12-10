@@ -15,7 +15,7 @@ func (c *jsiiProxy_ChronicleDataAccessScopeAllowedDataAccessLabelsList) validate
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDataAccessScopeAllowedDataAccessLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleDataAccessScopeAllowedDataAccessLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

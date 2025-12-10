@@ -15,7 +15,7 @@ func (s *jsiiProxy_SqlUserSqlServerUserDetailsList) validateGetParameters(index 
 	return nil
 }
 
-func (s *jsiiProxy_SqlUserSqlServerUserDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlUserSqlServerUserDetailsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudRunServiceStatusConditionsList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunServiceStatusConditionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudRunServiceStatusConditionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

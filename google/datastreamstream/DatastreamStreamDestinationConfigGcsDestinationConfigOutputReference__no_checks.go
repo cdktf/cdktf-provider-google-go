@@ -43,7 +43,7 @@ func (d *jsiiProxy_DatastreamStreamDestinationConfigGcsDestinationConfigOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamDestinationConfigGcsDestinationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamStreamDestinationConfigGcsDestinationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DatastreamStreamDestinationConfigGcsDestinationConfigOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamDestinationConfigGcsDestinationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamDestinationConfigGcsDestinationConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersPortsList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersPortsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecContainersPortsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

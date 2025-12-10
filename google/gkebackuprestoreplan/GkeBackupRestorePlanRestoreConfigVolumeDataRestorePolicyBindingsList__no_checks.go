@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindi
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterSecurityConfigAuthorizationAdmi
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalAdminClusterSecurityConfigAuthorizationAdminUsersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremBareMetalAdminClusterSecurityConfigAuthorizationAdminUsersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

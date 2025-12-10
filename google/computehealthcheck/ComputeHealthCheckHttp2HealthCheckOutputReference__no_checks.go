@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeHealthCheckHttp2HealthCheckOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeHealthCheckHttp2HealthCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeHealthCheckHttp2HealthCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeHealthCheckHttp2HealthCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeHealthCheckHttp2HealthCheckOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

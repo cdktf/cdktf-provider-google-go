@@ -43,11 +43,11 @@ func (g *jsiiProxy_GeminiDataSharingWithGoogleSettingBindingTimeoutsOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GeminiDataSharingWithGoogleSettingBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GeminiDataSharingWithGoogleSettingBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GeminiDataSharingWithGoogleSettingBindingTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GeminiDataSharingWithGoogleSettingBindingTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

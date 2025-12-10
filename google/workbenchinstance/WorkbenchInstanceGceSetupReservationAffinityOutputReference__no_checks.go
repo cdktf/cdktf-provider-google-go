@@ -43,11 +43,11 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupReservationAffinityOutputReference) 
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupReservationAffinityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupReservationAffinityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupReservationAffinityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupReservationAffinityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

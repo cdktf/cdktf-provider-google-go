@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutpu
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

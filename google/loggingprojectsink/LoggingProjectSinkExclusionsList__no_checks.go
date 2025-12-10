@@ -15,7 +15,7 @@ func (l *jsiiProxy_LoggingProjectSinkExclusionsList) validateGetParameters(index
 	return nil
 }
 
-func (l *jsiiProxy_LoggingProjectSinkExclusionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingProjectSinkExclusionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareNodePoolTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeonpremVmwareNodePoolTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareNodePoolTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareNodePoolTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

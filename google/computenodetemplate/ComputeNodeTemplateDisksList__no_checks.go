@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeNodeTemplateDisksList) validateGetParameters(index *fl
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeTemplateDisksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeNodeTemplateDisksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

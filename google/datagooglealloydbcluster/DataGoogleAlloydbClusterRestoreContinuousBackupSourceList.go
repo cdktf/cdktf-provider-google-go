@@ -39,7 +39,7 @@ type DataGoogleAlloydbClusterRestoreContinuousBackupSourceList interface {
 	Get(index *float64) DataGoogleAlloydbClusterRestoreContinuousBackupSourceOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataGoogleAlloydbClusterRestoreContinuousBackupSourceList) Ge
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbClusterRestoreContinuousBackupSourceList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleAlloydbClusterRestoreContinuousBackupSourceList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataGoogleAlloydbClusterRestoreContinuousBackupSourceList) Re
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

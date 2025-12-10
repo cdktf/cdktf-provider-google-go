@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeRegionDiskAsyncPrimaryDiskOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionDiskAsyncPrimaryDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeRegionDiskAsyncPrimaryDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionDiskAsyncPrimaryDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionDiskAsyncPrimaryDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

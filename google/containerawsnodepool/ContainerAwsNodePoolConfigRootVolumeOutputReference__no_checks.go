@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAwsNodePoolConfigRootVolumeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

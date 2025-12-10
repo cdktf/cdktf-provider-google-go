@@ -43,11 +43,11 @@ func (m *jsiiProxy_ModelArmorFloorsettingFloorSettingMetadataMultiLanguageDetect
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorFloorsettingFloorSettingMetadataMultiLanguageDetectionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelArmorFloorsettingFloorSettingMetadataMultiLanguageDetectionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorFloorsettingFloorSettingMetadataMultiLanguageDetectionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelArmorFloorsettingFloorSettingMetadataMultiLanguageDetectionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

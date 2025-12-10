@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeReservationSpecificReservationOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationSpecificReservationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeReservationSpecificReservationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ComputeReservationSpecificReservationOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationSpecificReservationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeReservationSpecificReservationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

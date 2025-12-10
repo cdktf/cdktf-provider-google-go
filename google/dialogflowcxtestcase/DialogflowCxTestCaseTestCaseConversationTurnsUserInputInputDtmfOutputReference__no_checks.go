@@ -43,11 +43,11 @@ func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDt
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmfOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmfOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmfOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxTestCaseTestCaseConversationTurnsUserInputInputDtmfOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

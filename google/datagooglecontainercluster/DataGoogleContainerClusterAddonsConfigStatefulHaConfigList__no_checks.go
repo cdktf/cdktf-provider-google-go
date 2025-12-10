@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigStatefulHaConfigList) v
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigStatefulHaConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigStatefulHaConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

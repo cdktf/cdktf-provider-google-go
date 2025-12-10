@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutpu
 	return nil
 }
 
-func (c *jsiiProxy_ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

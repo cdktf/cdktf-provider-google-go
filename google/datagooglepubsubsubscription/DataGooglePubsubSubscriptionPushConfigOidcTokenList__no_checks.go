@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigOidcTokenList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigOidcTokenList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigOidcTokenList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceMetadataIntegrationList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceMetadataIntegrationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceMetadataIntegrationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthen
 	return nil
 }
 
-func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

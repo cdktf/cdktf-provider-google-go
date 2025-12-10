@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

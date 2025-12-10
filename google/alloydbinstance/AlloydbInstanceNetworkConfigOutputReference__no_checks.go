@@ -43,7 +43,7 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) validatePutAutho
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbInstanceNetworkConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

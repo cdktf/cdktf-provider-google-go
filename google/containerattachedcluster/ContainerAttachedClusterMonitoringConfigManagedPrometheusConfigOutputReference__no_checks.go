@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAttachedClusterMonitoringConfigManagedPrometheusConf
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAttachedClusterMonitoringConfigManagedPrometheusConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAttachedClusterMonitoringConfigManagedPrometheusConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAttachedClusterMonitoringConfigManagedPrometheusConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAttachedClusterMonitoringConfigManagedPrometheusConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

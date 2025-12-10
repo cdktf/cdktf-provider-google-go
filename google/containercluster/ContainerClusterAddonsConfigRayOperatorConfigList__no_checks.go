@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterAddonsConfigRayOperatorConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

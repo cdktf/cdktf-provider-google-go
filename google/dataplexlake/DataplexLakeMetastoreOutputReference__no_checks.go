@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataplexLakeMetastoreOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (d *jsiiProxy_DataplexLakeMetastoreOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexLakeMetastoreOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataplexLakeMetastoreOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexLakeMetastoreOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

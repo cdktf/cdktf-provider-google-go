@@ -15,7 +15,7 @@ func (b *jsiiProxy_BigqueryJobCopySourceTablesList) validateGetParameters(index 
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobCopySourceTablesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryJobCopySourceTablesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

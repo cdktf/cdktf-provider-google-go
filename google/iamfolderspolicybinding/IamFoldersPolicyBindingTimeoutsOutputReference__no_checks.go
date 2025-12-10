@@ -43,11 +43,11 @@ func (i *jsiiProxy_IamFoldersPolicyBindingTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (i *jsiiProxy_IamFoldersPolicyBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamFoldersPolicyBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IamFoldersPolicyBindingTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamFoldersPolicyBindingTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

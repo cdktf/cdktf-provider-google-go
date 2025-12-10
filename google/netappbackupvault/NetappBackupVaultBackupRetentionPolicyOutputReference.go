@@ -78,14 +78,14 @@ type NetappBackupVaultBackupRetentionPolicyOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetDailyBackupImmutable()
 	ResetManualBackupImmutable()
 	ResetMonthlyBackupImmutable()
 	ResetWeeklyBackupImmutable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -576,8 +576,8 @@ func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) Interp
 	return returns
 }
 
-func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -585,7 +585,7 @@ func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) Interp
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -624,8 +624,8 @@ func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) ResetW
 	)
 }
 
-func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -633,7 +633,7 @@ func (n *jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference) Resolv
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

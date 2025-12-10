@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRouteAsPathsList) validateGetParameters(index *float64
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouteAsPathsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRouteAsPathsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

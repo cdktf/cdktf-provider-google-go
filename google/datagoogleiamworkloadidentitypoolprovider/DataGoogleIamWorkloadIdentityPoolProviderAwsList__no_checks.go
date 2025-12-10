@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderAwsList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderAwsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderAwsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

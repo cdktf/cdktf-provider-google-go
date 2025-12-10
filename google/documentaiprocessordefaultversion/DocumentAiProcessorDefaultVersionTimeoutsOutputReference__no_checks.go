@@ -43,11 +43,11 @@ func (d *jsiiProxy_DocumentAiProcessorDefaultVersionTimeoutsOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DocumentAiProcessorDefaultVersionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DocumentAiProcessorDefaultVersionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DocumentAiProcessorDefaultVersionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DocumentAiProcessorDefaultVersionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

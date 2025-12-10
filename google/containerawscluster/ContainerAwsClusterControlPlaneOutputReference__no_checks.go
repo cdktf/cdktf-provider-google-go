@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -75,7 +75,7 @@ func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) validatePutSs
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAwsClusterControlPlaneOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

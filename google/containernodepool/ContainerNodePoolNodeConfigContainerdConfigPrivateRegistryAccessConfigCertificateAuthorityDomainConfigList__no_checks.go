@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAcc
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

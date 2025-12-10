@@ -15,7 +15,7 @@ func (v *jsiiProxy_VertexAiIndexIndexStatsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiIndexIndexStatsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiIndexIndexStatsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

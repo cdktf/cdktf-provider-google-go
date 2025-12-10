@@ -43,7 +43,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference
 	return nil
 }
 
-func (i *jsiiProxy_IamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference
 	return nil
 }
 
-func (i *jsiiProxy_IamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

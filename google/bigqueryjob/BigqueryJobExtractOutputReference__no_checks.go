@@ -43,7 +43,7 @@ func (b *jsiiProxy_BigqueryJobExtractOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobExtractOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryJobExtractOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (b *jsiiProxy_BigqueryJobExtractOutputReference) validatePutSourceTablePara
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobExtractOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryJobExtractOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

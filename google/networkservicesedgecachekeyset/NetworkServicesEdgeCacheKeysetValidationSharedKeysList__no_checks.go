@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetValidationSharedKeysList) valid
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetValidationSharedKeysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetValidationSharedKeysList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

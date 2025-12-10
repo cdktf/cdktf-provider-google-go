@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocAutoscalingPolicyWorkerConfigOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataprocAutoscalingPolicyWorkerConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocAutoscalingPolicyWorkerConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocAutoscalingPolicyWorkerConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocAutoscalingPolicyWorkerConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

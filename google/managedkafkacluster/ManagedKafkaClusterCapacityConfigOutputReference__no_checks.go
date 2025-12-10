@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagedKafkaClusterCapacityConfigOutputReference) validateGet
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKafkaClusterCapacityConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedKafkaClusterCapacityConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKafkaClusterCapacityConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedKafkaClusterCapacityConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

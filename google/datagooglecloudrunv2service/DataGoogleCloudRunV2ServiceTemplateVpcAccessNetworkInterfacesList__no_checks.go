@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateVpcAccessNetworkInterfaces
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateVpcAccessNetworkInterfacesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

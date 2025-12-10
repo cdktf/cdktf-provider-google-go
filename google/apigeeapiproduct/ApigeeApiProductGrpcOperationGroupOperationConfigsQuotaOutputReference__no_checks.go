@@ -43,11 +43,11 @@ func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutput
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

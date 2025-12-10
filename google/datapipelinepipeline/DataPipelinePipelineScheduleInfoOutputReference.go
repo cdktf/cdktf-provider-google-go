@@ -70,12 +70,12 @@ type DataPipelinePipelineScheduleInfoOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetSchedule()
 	ResetTimeZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -483,8 +483,8 @@ func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) Interpolatio
 	return returns
 }
 
-func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -492,7 +492,7 @@ func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) Interpolatio
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -515,8 +515,8 @@ func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) ResetTimeZon
 	)
 }
 
-func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -524,7 +524,7 @@ func (d *jsiiProxy_DataPipelinePipelineScheduleInfoOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

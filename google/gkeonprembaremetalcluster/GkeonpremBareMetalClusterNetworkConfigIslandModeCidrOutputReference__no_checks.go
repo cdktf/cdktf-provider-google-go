@@ -43,11 +43,11 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigIslandModeCidrOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigIslandModeCidrOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigIslandModeCidrOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigIslandModeCidrOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremBareMetalClusterNetworkConfigIslandModeCidrOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

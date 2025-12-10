@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

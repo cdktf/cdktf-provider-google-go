@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleApphubDiscoveredWorkloadWorkloadPropertiesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

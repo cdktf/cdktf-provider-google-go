@@ -43,7 +43,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeOutputReference) 
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeOutputReference) 
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringSloWindowsBasedSliMetricSumInRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

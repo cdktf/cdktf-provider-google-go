@@ -43,11 +43,11 @@ func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyTimeoutsOutputReference) vali
 	return nil
 }
 
-func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

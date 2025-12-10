@@ -43,11 +43,11 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterStatusVpcAccessibleServic
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterStatusVpcAccessibleServicesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessContextManagerServicePerimeterStatusVpcAccessibleServicesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerServicePerimeterStatusVpcAccessibleServicesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessContextManagerServicePerimeterStatusVpcAccessibleServicesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

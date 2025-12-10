@@ -43,11 +43,11 @@ func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

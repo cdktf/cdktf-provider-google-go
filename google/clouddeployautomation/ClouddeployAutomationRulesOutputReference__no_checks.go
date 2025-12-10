@@ -43,7 +43,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) validateGetStringM
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -63,7 +63,7 @@ func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) validatePutTimedPr
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddeployAutomationRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReferen
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

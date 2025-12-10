@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceBackendCustomMetricsList
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceBackendCustomMetricsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceBackendCustomMetricsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

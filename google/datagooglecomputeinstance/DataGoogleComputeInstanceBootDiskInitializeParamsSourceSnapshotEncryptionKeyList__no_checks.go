@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsSourceSnapsh
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsSourceSnapshotEncryptionKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsSourceSnapshotEncryptionKeyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

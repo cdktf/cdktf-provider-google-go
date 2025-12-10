@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRegionInstanceGroupManagerNamedPortOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceGroupManagerNamedPortOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionInstanceGroupManagerNamedPortOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceGroupManagerNamedPortOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionInstanceGroupManagerNamedPortOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

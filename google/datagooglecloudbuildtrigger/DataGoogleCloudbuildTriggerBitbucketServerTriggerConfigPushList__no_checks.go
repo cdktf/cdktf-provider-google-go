@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushLi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

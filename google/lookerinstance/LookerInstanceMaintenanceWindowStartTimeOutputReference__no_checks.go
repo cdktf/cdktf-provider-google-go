@@ -43,11 +43,11 @@ func (l *jsiiProxy_LookerInstanceMaintenanceWindowStartTimeOutputReference) vali
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstanceMaintenanceWindowStartTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LookerInstanceMaintenanceWindowStartTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstanceMaintenanceWindowStartTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LookerInstanceMaintenanceWindowStartTimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

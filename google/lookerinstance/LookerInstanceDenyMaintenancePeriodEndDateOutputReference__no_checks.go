@@ -43,11 +43,11 @@ func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) va
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LookerInstanceDenyMaintenancePeriodEndDateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

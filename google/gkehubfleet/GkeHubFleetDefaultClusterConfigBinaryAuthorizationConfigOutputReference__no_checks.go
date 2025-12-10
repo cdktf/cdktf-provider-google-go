@@ -43,7 +43,7 @@ func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

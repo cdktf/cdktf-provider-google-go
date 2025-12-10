@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateDiskList) validat
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateDiskList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

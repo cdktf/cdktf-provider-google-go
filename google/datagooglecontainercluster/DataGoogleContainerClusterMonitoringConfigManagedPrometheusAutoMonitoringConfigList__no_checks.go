@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterMonitoringConfigManagedPrometheusAu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

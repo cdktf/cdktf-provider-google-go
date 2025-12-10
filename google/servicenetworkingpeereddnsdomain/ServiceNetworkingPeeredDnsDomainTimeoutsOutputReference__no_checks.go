@@ -43,11 +43,11 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

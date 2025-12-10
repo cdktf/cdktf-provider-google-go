@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleTagsTagKeysKeysOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

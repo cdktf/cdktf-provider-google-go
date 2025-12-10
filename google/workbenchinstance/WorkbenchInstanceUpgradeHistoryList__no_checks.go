@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryList) validateGetParameters(in
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkbenchInstanceUpgradeHistoryList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

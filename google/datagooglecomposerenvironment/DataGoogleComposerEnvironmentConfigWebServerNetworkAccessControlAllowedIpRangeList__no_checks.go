@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWebServerNetworkAccessCont
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

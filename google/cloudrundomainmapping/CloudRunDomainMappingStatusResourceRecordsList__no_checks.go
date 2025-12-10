@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudRunDomainMappingStatusResourceRecordsList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunDomainMappingStatusResourceRecordsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunDomainMappingStatusResourceRecordsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

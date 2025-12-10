@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -103,7 +103,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validatePutWorke
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

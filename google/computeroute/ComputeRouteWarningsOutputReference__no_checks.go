@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRouteWarningsOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouteWarningsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRouteWarningsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouteWarningsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRouteWarningsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

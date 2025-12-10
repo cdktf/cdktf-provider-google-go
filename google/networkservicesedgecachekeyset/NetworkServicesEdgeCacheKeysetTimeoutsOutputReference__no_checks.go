@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetTimeoutsOutputReference) valida
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

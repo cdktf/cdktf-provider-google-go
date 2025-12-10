@@ -43,11 +43,11 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusOutputRefe
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

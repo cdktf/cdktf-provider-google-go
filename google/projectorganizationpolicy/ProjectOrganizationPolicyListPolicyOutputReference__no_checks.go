@@ -43,7 +43,7 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) validateG
 	return nil
 }
 
-func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) validateP
 	return nil
 }
 
-func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectOrganizationPolicyListPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

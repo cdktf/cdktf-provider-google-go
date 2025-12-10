@@ -43,7 +43,7 @@ func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigOutputReference) vali
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigOutputReference) vali
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceAutomatedBackupConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

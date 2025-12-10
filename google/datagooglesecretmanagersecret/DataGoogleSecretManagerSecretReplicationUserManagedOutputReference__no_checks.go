@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleSecretManagerSecretReplicationUserManagedOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerSecretReplicationUserManagedOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleSecretManagerSecretReplicationUserManagedOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerSecretReplicationUserManagedOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSecretManagerSecretReplicationUserManagedOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

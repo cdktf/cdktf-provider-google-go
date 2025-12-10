@@ -43,11 +43,11 @@ func (d *jsiiProxy_DialogflowCxSecuritySettingsTimeoutsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxSecuritySettingsTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxSecuritySettingsTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxSecuritySettingsTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxSecuritySettingsTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

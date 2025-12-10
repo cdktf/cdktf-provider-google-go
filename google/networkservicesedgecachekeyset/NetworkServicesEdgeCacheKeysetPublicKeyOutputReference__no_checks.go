@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) valid
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheKeysetPublicKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

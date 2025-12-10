@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigDiskConfigOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

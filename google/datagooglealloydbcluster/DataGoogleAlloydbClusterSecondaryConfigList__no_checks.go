@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleAlloydbClusterSecondaryConfigList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbClusterSecondaryConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleAlloydbClusterSecondaryConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

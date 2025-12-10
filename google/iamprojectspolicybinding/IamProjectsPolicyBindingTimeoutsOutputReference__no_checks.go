@@ -43,11 +43,11 @@ func (i *jsiiProxy_IamProjectsPolicyBindingTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (i *jsiiProxy_IamProjectsPolicyBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamProjectsPolicyBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IamProjectsPolicyBindingTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamProjectsPolicyBindingTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetention
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

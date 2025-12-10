@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataCatalogTaxonomyTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogTaxonomyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCatalogTaxonomyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogTaxonomyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCatalogTaxonomyTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

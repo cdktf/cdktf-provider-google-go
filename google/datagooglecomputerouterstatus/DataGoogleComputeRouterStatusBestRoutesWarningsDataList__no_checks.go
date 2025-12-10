@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesWarningsDataList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesWarningsDataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesWarningsDataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

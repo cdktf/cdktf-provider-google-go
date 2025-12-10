@@ -43,7 +43,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validatePu
 	return nil
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

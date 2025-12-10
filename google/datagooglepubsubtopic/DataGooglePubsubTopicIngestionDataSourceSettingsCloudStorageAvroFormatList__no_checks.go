@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageA
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

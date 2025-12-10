@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigsOutp
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

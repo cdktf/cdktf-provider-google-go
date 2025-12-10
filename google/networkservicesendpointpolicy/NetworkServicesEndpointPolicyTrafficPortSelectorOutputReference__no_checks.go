@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkServicesEndpointPolicyTrafficPortSelectorOutputReferen
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEndpointPolicyTrafficPortSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesEndpointPolicyTrafficPortSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEndpointPolicyTrafficPortSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesEndpointPolicyTrafficPortSelectorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

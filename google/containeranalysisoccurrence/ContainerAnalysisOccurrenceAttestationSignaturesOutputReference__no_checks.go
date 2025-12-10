@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAnalysisOccurrenceAttestationSignaturesOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAnalysisOccurrenceAttestationSignaturesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAnalysisOccurrenceAttestationSignaturesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAnalysisOccurrenceAttestationSignaturesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAnalysisOccurrenceAttestationSignaturesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

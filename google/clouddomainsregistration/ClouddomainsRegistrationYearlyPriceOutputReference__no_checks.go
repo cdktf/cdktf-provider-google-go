@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClouddomainsRegistrationYearlyPriceOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationYearlyPriceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddomainsRegistrationYearlyPriceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationYearlyPriceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddomainsRegistrationYearlyPriceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

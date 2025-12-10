@@ -43,11 +43,11 @@ func (l *jsiiProxy_LookerInstancePscConfigServiceAttachmentsOutputReference) val
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstancePscConfigServiceAttachmentsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LookerInstancePscConfigServiceAttachmentsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstancePscConfigServiceAttachmentsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LookerInstancePscConfigServiceAttachmentsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

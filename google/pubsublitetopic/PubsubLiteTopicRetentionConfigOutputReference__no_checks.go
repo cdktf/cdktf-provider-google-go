@@ -43,11 +43,11 @@ func (p *jsiiProxy_PubsubLiteTopicRetentionConfigOutputReference) validateGetStr
 	return nil
 }
 
-func (p *jsiiProxy_PubsubLiteTopicRetentionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PubsubLiteTopicRetentionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PubsubLiteTopicRetentionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PubsubLiteTopicRetentionConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

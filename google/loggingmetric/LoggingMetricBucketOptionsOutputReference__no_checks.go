@@ -43,7 +43,7 @@ func (l *jsiiProxy_LoggingMetricBucketOptionsOutputReference) validateGetStringM
 	return nil
 }
 
-func (l *jsiiProxy_LoggingMetricBucketOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingMetricBucketOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (l *jsiiProxy_LoggingMetricBucketOptionsOutputReference) validatePutLinearB
 	return nil
 }
 
-func (l *jsiiProxy_LoggingMetricBucketOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingMetricBucketOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

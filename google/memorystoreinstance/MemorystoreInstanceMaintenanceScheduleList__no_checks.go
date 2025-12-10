@@ -15,7 +15,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleList) validateGetParame
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceMaintenanceScheduleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -85,17 +85,17 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationEndpointMatchersOutputRef
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationEndpointMatchersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationEndpointMatchersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationEndpointMatchersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationEndpointMatchersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

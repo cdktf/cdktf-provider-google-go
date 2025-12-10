@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAcc
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

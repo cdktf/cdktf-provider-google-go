@@ -43,7 +43,7 @@ func (d *jsiiProxy_DialogflowCxPageFormOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxPageFormOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxPageFormOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DialogflowCxPageFormOutputReference) validatePutParametersPar
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxPageFormOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxPageFormOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

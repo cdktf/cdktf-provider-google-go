@@ -15,7 +15,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionInstallationStateList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionInstallationStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeveloperConnectConnectionInstallationStateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

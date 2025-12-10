@@ -15,7 +15,7 @@ func (d *jsiiProxy_DialogflowCxPageFormParametersList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxPageFormParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxPageFormParametersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -85,17 +85,17 @@ func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) validateGetStringMap
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (n *jsiiProxy_NotebooksInstanceVmImageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

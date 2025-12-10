@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerNamedPortList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerNamedPortList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerNamedPortList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

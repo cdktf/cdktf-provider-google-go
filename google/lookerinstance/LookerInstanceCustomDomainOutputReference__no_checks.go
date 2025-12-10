@@ -43,11 +43,11 @@ func (l *jsiiProxy_LookerInstanceCustomDomainOutputReference) validateGetStringM
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstanceCustomDomainOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LookerInstanceCustomDomainOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstanceCustomDomainOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LookerInstanceCustomDomainOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

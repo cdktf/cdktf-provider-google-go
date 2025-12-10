@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBac
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

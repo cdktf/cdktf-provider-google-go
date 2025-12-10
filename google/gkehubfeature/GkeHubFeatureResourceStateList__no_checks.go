@@ -15,7 +15,7 @@ func (g *jsiiProxy_GkeHubFeatureResourceStateList) validateGetParameters(index *
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureResourceStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubFeatureResourceStateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

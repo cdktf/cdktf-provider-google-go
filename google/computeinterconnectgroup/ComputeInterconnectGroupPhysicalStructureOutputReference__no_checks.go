@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

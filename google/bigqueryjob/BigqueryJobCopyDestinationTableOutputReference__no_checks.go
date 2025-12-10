@@ -43,11 +43,11 @@ func (b *jsiiProxy_BigqueryJobCopyDestinationTableOutputReference) validateGetSt
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobCopyDestinationTableOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryJobCopyDestinationTableOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobCopyDestinationTableOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryJobCopyDestinationTableOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

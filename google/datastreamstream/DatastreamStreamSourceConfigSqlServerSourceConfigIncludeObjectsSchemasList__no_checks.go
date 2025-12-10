@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjec
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

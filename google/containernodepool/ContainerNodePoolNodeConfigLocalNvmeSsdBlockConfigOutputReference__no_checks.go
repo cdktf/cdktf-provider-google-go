@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

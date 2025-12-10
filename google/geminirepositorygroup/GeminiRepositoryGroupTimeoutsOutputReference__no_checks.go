@@ -43,11 +43,11 @@ func (g *jsiiProxy_GeminiRepositoryGroupTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (g *jsiiProxy_GeminiRepositoryGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GeminiRepositoryGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GeminiRepositoryGroupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GeminiRepositoryGroupTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

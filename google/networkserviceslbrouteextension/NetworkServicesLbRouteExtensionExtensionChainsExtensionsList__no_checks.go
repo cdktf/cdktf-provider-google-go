@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsList)
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsExtensionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

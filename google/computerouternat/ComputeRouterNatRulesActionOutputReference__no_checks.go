@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRouterNatRulesActionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

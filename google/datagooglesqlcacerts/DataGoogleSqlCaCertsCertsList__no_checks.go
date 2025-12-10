@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleSqlCaCertsCertsList) validateGetParameters(index *f
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSqlCaCertsCertsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSqlCaCertsCertsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

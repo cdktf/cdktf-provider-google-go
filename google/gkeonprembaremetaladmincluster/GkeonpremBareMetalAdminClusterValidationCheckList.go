@@ -39,7 +39,7 @@ type GkeonpremBareMetalAdminClusterValidationCheckList interface {
 	Get(index *float64) GkeonpremBareMetalAdminClusterValidationCheckOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterValidationCheckList) Get(index 
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalAdminClusterValidationCheckList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GkeonpremBareMetalAdminClusterValidationCheckList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterValidationCheckList) Resolve(_c
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

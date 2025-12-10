@@ -43,11 +43,11 @@ func (f *jsiiProxy_FolderAccessApprovalSettingsTimeoutsOutputReference) validate
 	return nil
 }
 
-func (f *jsiiProxy_FolderAccessApprovalSettingsTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FolderAccessApprovalSettingsTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FolderAccessApprovalSettingsTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FolderAccessApprovalSettingsTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

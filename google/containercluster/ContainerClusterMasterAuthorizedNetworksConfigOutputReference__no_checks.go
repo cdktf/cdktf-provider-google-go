@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

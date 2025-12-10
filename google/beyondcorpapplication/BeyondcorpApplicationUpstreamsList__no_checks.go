@@ -15,7 +15,7 @@ func (b *jsiiProxy_BeyondcorpApplicationUpstreamsList) validateGetParameters(ind
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpApplicationUpstreamsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BeyondcorpApplicationUpstreamsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

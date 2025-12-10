@@ -43,7 +43,7 @@ func (a *jsiiProxy_ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference) 
 	return nil
 }
 
-func (a *jsiiProxy_ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference) 
 	return nil
 }
 
-func (a *jsiiProxy_ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

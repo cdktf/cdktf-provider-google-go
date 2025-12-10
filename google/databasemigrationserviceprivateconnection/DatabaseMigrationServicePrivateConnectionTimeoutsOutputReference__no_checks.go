@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionTimeoutsOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

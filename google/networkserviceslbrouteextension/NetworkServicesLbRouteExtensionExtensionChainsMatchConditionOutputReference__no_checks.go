@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsMatchConditionO
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsMatchConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsMatchConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsMatchConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesLbRouteExtensionExtensionChainsMatchConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

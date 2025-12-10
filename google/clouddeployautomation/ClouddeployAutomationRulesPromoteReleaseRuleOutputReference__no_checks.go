@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClouddeployAutomationRulesPromoteReleaseRuleOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployAutomationRulesPromoteReleaseRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddeployAutomationRulesPromoteReleaseRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployAutomationRulesPromoteReleaseRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddeployAutomationRulesPromoteReleaseRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

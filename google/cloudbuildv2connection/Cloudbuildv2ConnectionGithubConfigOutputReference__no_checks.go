@@ -43,7 +43,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionGithubConfigOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionGithubConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_Cloudbuildv2ConnectionGithubConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionGithubConfigOutputReference) validatePu
 	return nil
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionGithubConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_Cloudbuildv2ConnectionGithubConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

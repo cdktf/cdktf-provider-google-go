@@ -15,7 +15,7 @@ func (o *jsiiProxy_OrgPolicyPolicySpecRulesList) validateGetParameters(index *fl
 	return nil
 }
 
-func (o *jsiiProxy_OrgPolicyPolicySpecRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrgPolicyPolicySpecRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

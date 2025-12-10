@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberos
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

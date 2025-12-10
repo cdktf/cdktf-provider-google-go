@@ -15,7 +15,7 @@ func (m *jsiiProxy_MemorystoreInstanceManagedServerCaCaCertsList) validateGetPar
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceManagedServerCaCaCertsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceManagedServerCaCaCertsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

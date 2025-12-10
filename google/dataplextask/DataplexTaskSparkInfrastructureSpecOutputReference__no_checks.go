@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) validateP
 	return nil
 }
 
-func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

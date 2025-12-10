@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerVersionTargetSizeOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerVersionTargetSizeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerVersionTargetSizeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerVersionTargetSizeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerVersionTargetSizeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

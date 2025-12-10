@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterNotificationConfigPubsubList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNotificationConfigPubsubList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNotificationConfigPubsubList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigPrimaryClu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

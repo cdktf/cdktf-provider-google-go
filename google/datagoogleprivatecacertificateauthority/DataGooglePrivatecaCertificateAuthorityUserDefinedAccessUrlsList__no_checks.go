@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGooglePrivatecaCertificateAuthorityUserDefinedAccessUrlsL
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePrivatecaCertificateAuthorityUserDefinedAccessUrlsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePrivatecaCertificateAuthorityUserDefinedAccessUrlsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

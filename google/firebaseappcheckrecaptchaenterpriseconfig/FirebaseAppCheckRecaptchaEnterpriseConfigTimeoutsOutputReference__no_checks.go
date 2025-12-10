@@ -43,11 +43,11 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfigTimeoutsOutputRefere
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaEnterpriseConfigTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DnsResponsePolicyNetworksList) validateGetParameters(index *f
 	return nil
 }
 
-func (d *jsiiProxy_DnsResponsePolicyNetworksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsResponsePolicyNetworksList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

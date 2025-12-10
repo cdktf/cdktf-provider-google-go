@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryVersionRelatedTagsOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryVersionRelatedTagsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleArtifactRegistryVersionRelatedTagsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryVersionRelatedTagsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleArtifactRegistryVersionRelatedTagsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

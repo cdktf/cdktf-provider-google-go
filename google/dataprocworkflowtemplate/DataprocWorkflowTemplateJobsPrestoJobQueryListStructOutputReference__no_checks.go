@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

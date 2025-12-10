@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnK
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

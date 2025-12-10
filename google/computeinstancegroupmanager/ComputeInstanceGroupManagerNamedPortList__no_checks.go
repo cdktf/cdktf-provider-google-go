@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerNamedPortList) validateGetParamete
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerNamedPortList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceGroupManagerNamedPortList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

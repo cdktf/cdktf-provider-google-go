@@ -43,11 +43,11 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

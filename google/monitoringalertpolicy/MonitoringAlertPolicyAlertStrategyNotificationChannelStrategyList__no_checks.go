@@ -15,7 +15,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyNotificationChannelStrategy
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

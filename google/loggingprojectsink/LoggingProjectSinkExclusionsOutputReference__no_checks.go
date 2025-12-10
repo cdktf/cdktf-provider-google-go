@@ -43,11 +43,11 @@ func (l *jsiiProxy_LoggingProjectSinkExclusionsOutputReference) validateGetStrin
 	return nil
 }
 
-func (l *jsiiProxy_LoggingProjectSinkExclusionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingProjectSinkExclusionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoggingProjectSinkExclusionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingProjectSinkExclusionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

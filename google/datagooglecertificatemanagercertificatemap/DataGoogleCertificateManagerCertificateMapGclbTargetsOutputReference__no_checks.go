@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleCertificateManagerCertificateMapGclbTargetsOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCertificateManagerCertificateMapGclbTargetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCertificateManagerCertificateMapGclbTargetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCertificateManagerCertificateMapGclbTargetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCertificateManagerCertificateMapGclbTargetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

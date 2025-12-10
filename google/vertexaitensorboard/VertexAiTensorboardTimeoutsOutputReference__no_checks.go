@@ -43,11 +43,11 @@ func (v *jsiiProxy_VertexAiTensorboardTimeoutsOutputReference) validateGetString
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiTensorboardTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiTensorboardTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiTensorboardTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiTensorboardTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersVolumeMountsList) validate
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersVolumeMountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersVolumeMountsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

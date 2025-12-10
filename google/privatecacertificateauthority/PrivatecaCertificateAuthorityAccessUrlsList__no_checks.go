@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrivatecaCertificateAuthorityAccessUrlsList) validateGetParam
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateAuthorityAccessUrlsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCertificateAuthorityAccessUrlsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (f *jsiiProxy_FirebaserulesRulesetTimeoutsOutputReference) validateGetStrin
 	return nil
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirebaserulesRulesetTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaserulesRulesetTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeri
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

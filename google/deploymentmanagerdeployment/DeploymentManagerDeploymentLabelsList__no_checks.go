@@ -15,7 +15,7 @@ func (d *jsiiProxy_DeploymentManagerDeploymentLabelsList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentManagerDeploymentLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentManagerDeploymentLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

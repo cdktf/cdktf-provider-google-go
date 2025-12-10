@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeNodeGroupMaintenanceWindowOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeGroupMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeNodeGroupMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeGroupMaintenanceWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeNodeGroupMaintenanceWindowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

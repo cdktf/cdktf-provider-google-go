@@ -97,7 +97,7 @@ type ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutLayer4Configs(value interface{})
 	PutSrcSecureTags(value interface{})
 	ResetDestAddressGroups()
@@ -113,7 +113,7 @@ type ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference interface {
 	ResetSrcThreatIntelligences()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -799,8 +799,8 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) I
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -808,7 +808,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) I
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -925,8 +925,8 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) R
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -934,7 +934,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) R
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

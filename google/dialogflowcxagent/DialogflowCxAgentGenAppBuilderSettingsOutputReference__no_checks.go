@@ -43,11 +43,11 @@ func (d *jsiiProxy_DialogflowCxAgentGenAppBuilderSettingsOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxAgentGenAppBuilderSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxAgentGenAppBuilderSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxAgentGenAppBuilderSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxAgentGenAppBuilderSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

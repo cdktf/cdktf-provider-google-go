@@ -15,7 +15,7 @@ func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsList) validateGetParam
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HealthcareHl7V2StoreNotificationConfigsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (r *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validateGetStri
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (r *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validatePutRdbC
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

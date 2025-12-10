@@ -43,7 +43,7 @@ func (d *jsiiProxy_DiscoveryEngineRecommendationEngineMediaRecommendationEngineC
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DiscoveryEngineRecommendationEngineMediaRecommendationEngineC
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

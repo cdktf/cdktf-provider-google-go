@@ -43,11 +43,11 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineConditionPipelineReadyConditionOut
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployDeliveryPipelineConditionPipelineReadyConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddeployDeliveryPipelineConditionPipelineReadyConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployDeliveryPipelineConditionPipelineReadyConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddeployDeliveryPipelineConditionPipelineReadyConditionOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

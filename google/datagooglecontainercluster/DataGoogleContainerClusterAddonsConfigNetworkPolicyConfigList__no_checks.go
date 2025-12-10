@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

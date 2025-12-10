@@ -15,7 +15,7 @@ func (b *jsiiProxy_BigqueryDatasetAccessList) validateGetParameters(index *float
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryDatasetAccessList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryDatasetAccessList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

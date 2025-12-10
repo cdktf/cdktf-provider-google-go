@@ -85,9 +85,9 @@ func (c *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -115,9 +115,9 @@ func (c *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validatePutOidcTo
 	return nil
 }
 
-func (c *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

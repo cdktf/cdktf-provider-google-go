@@ -15,7 +15,7 @@ func (d *jsiiProxy_DialogflowFulfillmentFeaturesList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowFulfillmentFeaturesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowFulfillmentFeaturesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

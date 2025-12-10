@@ -43,11 +43,11 @@ func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartT
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsStartTimeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

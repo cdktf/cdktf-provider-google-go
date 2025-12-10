@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceNetworkConfigOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceNetworkConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocMetastoreServiceNetworkConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceNetworkConfigOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocMetastoreServiceNetworkConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenan
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

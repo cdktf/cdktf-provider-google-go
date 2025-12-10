@@ -43,7 +43,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -71,7 +71,7 @@ func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) validatePutWorkforc
 	return nil
 }
 
-func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IapSettingsAccessSettingsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

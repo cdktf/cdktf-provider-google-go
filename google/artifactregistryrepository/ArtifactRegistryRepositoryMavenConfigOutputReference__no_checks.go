@@ -43,11 +43,11 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryMavenConfigOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryMavenConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryMavenConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryMavenConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryMavenConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

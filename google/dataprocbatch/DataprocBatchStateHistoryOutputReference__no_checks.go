@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataprocBatchStateHistoryOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_DataprocBatchStateHistoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocBatchStateHistoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocBatchStateHistoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocBatchStateHistoryOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

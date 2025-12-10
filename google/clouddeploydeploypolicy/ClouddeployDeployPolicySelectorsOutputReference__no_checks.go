@@ -43,7 +43,7 @@ func (c *jsiiProxy_ClouddeployDeployPolicySelectorsOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployDeployPolicySelectorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddeployDeployPolicySelectorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ClouddeployDeployPolicySelectorsOutputReference) validatePutT
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployDeployPolicySelectorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddeployDeployPolicySelectorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

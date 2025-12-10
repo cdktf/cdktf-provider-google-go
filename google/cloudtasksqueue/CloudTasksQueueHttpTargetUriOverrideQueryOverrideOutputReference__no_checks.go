@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudTasksQueueHttpTargetUriOverrideQueryOverrideOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_CloudTasksQueueHttpTargetUriOverrideQueryOverrideOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudTasksQueueHttpTargetUriOverrideQueryOverrideOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudTasksQueueHttpTargetUriOverrideQueryOverrideOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudTasksQueueHttpTargetUriOverrideQueryOverrideOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

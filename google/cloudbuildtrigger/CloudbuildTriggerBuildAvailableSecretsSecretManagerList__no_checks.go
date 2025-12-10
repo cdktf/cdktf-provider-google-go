@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerList) vali
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

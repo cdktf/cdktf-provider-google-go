@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInterconnectCircuitInfosOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectCircuitInfosOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInterconnectCircuitInfosOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectCircuitInfosOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectCircuitInfosOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

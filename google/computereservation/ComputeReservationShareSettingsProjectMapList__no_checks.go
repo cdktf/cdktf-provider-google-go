@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapList) validateGetPar
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

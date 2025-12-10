@@ -15,7 +15,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupServiceAccountsList) validateGetPara
 	return nil
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupServiceAccountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupServiceAccountsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleBigqueryTableExternalCatalogTableOptionsList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTableExternalCatalogTableOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryTableExternalCatalogTableOptionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

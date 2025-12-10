@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbsList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

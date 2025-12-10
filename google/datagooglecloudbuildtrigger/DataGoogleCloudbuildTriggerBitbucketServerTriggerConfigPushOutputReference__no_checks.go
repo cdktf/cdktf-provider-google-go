@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushOu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageBucketHierarchicalNamespaceOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketHierarchicalNamespaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageBucketHierarchicalNamespaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketHierarchicalNamespaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageBucketHierarchicalNamespaceOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

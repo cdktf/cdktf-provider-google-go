@@ -43,11 +43,11 @@ func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

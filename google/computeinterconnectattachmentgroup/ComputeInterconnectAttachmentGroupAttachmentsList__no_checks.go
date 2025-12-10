@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeInterconnectAttachmentGroupAttachmentsList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectAttachmentGroupAttachmentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectAttachmentGroupAttachmentsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

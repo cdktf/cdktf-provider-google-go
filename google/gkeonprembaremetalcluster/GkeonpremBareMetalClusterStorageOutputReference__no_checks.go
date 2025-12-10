@@ -43,7 +43,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateGetS
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (g *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validatePutL
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremBareMetalClusterStorageOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

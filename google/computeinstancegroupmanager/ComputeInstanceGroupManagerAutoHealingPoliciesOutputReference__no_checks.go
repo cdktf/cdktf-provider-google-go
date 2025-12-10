@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

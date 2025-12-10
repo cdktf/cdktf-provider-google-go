@@ -15,7 +15,7 @@ func (c *jsiiProxy_ComputeRouterRoutePolicyTermsList) validateGetParameters(inde
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterRoutePolicyTermsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRouterRoutePolicyTermsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

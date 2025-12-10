@@ -43,7 +43,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateGetS
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validatePutR
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

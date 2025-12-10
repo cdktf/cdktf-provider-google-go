@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceReservationAffinityList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceReservationAffinityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceReservationAffinityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

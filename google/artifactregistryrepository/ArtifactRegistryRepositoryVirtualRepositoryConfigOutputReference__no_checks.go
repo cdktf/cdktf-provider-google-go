@@ -43,7 +43,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryVirtualRepositoryConfigOutputRefere
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryVirtualRepositoryConfigOutputRefere
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

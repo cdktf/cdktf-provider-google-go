@@ -15,7 +15,7 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusList) vali
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

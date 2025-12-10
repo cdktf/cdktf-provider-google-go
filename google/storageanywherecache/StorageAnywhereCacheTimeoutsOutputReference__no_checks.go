@@ -43,11 +43,11 @@ func (s *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateGetStrin
 	return nil
 }
 
-func (s *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageAnywhereCacheTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

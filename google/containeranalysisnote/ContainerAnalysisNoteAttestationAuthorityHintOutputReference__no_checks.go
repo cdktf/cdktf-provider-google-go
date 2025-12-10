@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityHintOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

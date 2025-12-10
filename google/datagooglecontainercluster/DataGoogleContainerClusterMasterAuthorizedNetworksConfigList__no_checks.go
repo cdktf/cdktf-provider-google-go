@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterMasterAuthorizedNetworksConfigList)
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterMasterAuthorizedNetworksConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterMasterAuthorizedNetworksConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

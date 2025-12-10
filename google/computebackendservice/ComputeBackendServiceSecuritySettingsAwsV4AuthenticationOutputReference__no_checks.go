@@ -43,11 +43,11 @@ func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutpu
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

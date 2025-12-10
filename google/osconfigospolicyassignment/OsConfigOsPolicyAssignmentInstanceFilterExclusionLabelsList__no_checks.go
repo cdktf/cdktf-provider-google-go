@@ -15,7 +15,7 @@ func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterExclusionLabelsList) 
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterExclusionLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterExclusionLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

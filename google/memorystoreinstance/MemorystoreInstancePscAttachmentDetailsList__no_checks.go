@@ -15,7 +15,7 @@ func (m *jsiiProxy_MemorystoreInstancePscAttachmentDetailsList) validateGetParam
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstancePscAttachmentDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstancePscAttachmentDetailsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CloudIdentityGroupAdditionalGroupKeysList) validateGetParamet
 	return nil
 }
 
-func (c *jsiiProxy_CloudIdentityGroupAdditionalGroupKeysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudIdentityGroupAdditionalGroupKeysList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validatePutA
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAwsClusterAuthorizationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

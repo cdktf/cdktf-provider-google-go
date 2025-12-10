@@ -27,9 +27,9 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoCloudMarketplaceList
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoCloudMarketplaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (b *jsiiProxy_BigqueryAnalyticsHubListingCommercialInfoCloudMarketplaceList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
